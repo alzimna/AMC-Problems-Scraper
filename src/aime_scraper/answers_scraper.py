@@ -13,37 +13,19 @@ import json
 from pathlib import Path
 from itertools import batched
 
-user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
 
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument(f'--user-agent={user_agent}') 
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-gpu')
-options.add_argument('--window-size=1420,1080')
-
-from .scraper import (print_message,
-                        get_contest_metadata,
-                        check_retrieved_file,
-                        get_soup,
-                        _generate_all_and_pairs)
-
-PATTERN_VERSION = r'title=\d{4}_AIME_([IVX]+)?'
-
-VSWAIT = 1
-SWAIT = 3
-MWAIT = 5
-LWAIT = 10
-
-OUTPUT_DIR = Path(r'../data')
-PROBLEMS_FULL = 'problems_full.json'
-ANSWERS_FULL = 'answers_full.json'
-
+from .utils import *
+from .config import *
 
 def get_answers_from_url(s,msg = True) :
-    soup,problem_title,url = get_soup(s,'a',msg)
+    content,problem_title,url = get_soup(s,'a',msg)
 
-    ol_elem = soup.find('ol')
+    
+    if content is None:
+        print(f"Failed to get soup: {url}")
+        return None
+    
+    ol_elem = content.find('ol')
     li_list = ol_elem.find_all('li')
 
     if(len(li_list)>=15 and msg):
@@ -57,17 +39,17 @@ def get_answers_from_url(s,msg = True) :
         ans = dict()
         ans['source'] = url
         ans['version'] = vers
-        ans['number'] = number+1
+        ans['problem_number'] = number+1
         ans['answer'] = answer.decode_contents()
         answers.append(ans)
     return answers 
 
 def get_answers_full(contest_metadata,
                     save_json = False,
-                    chunk_size = 2) :
+                    chunk_size = 5) :
     
     downloaded = check_retrieved_file('a')
-    all,pairs = _generate_all_and_pairs('a',
+    all,pairs = generate_all_and_pairs('a',
                                     contest_metadata,
                                     downloaded)
 
@@ -79,6 +61,7 @@ def get_answers_full(contest_metadata,
                 for ans in anss :
                     ans['year'] = year
                 answers+=anss
+                time.sleep(SWAIT)
             time.sleep(VSWAIT)
             print_message(f"Chunk {i+1} Retrieved")
     except :
