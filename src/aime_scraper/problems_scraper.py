@@ -13,37 +13,16 @@ import json
 from pathlib import Path
 from itertools import batched
 
-user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
+from .utils import *
+from .config import *
 
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument(f'--user-agent={user_agent}') 
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-gpu')
-options.add_argument('--window-size=1420,1080')
+def get_problems_from_source(s,msg = True) :
+    content,problem_title,url = get_soup(s,'p',msg)
 
-from .scraper import (print_message,
-                        get_contest_metadata,
-                        check_retrieved_file,
-                        get_soup,
-                        _generate_all_and_pairs)
-
-CONTENT_SELECTOR = '#mw-content-text > div'
-PATTERN_VERSION = r'title=\d{4}_AIME_([IVX]+)?'
-PATTERN_HEADLINE_ID = r'^Problem_(\d+)$'
-
-VSWAIT = 1
-SWAIT = 3
-MWAIT = 5
-LWAIT = 10
-
-OUTPUT_DIR = Path(r'../data')
-PROBLEMS_FULL = 'problems_full.json'
-
-def get_problems_from_url(s,msg = True) :
-    soup,problem_title,url = get_soup(s,'p',msg)
-
-    content = soup.select_one(CONTENT_SELECTOR)
+    if content is None:
+        print(f"Failed to get soup: {url}")
+        return None
+    
     problems_by_number = {}
     current_number = None
 
@@ -75,29 +54,30 @@ def get_problems_from_url(s,msg = True) :
         prob = dict()
         prob['source'] = url
         prob['version'] = vers
-        prob['number'] = number
-        prob['problem'] = ''.join(problems_by_number[number])
+        prob['problem_number'] = number
+        prob['problem_statement'] = ''.join(problems_by_number[number])
         problems.append(prob)
-    return problems    
+    return problems
 
 def get_problems_full(contest_metadata,
                     save_json = False,
-                    chunk_size = 2) :
+                    chunk_size = 5) :
     
     downloaded = check_retrieved_file('p')
-    all,pairs = _generate_all_and_pairs('p',
+    all,pairs = generate_all_and_pairs('p',
                                         contest_metadata,
                                         downloaded)
 
     problems = []
     
     try :
-        for i,chunk in enumerate(batched(pairs[:2],chunk_size)) :
+        for i,chunk in enumerate(batched(pairs,chunk_size)) :
             for year,source in chunk :
-                probs = get_problems_from_url(source,msg = False)
+                probs = get_problems_from_source(source,msg = False)
                 for prob in probs :
                     prob['year'] = year
                 problems+=probs
+                time.sleep(SWAIT)
             time.sleep(VSWAIT)
             print_message(f"Chunk {i+1} Retrieved")
     except :
