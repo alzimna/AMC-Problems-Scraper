@@ -12,6 +12,7 @@ import json
 
 from pathlib import Path
 from itertools import batched
+from tqdm import tqdm
 
 from .utils import *
 from .config import *
@@ -74,10 +75,16 @@ def get_solutions_full(contest_metadata,
                                     contest_metadata,
                                     downloaded)
 
+    pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
     solutions = []
+    bar = tqdm(list(enumerate(batched(pairs,chunk_size))),
+            desc = 'Progress',
+            unit = 'chunk',
+            position = 0,
+            leave = True)
 
     try :
-        for i,chunk in enumerate(batched(pairs,chunk_size)) :
+        for i,chunk in bar :
             for year,source in chunk :
                 sols = get_solutions_from_source(source)
                 temp = re.search(PATTERN_VERSION,source)
@@ -87,9 +94,11 @@ def get_solutions_full(contest_metadata,
                     sol['version'] = vers
                 solutions+=sols
             time.sleep(VSWAIT)
-            print_message(f"Chunk {i+1} Retrieved")
-    except :
-        print_message('Error_occured')
+            bar.set_postfix(downloaded = f'{len(solutions)}',
+                last_year = solutions[-1]['year'],
+                last_version = solutions[-1]['version'])
+    except Exception as e :
+        print_message(f'Error : {e}')
         if len(solutions) > 0 :
             last = solutions[-1]
             last_year = last["year"]
@@ -105,5 +114,5 @@ def get_solutions_full(contest_metadata,
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent = 4)
 
-    return merged
+    return pairs,merged
 
