@@ -13,6 +13,8 @@ import json
 from pathlib import Path
 import os
 
+from tqdm import tqdm
+
 from .config import *
 
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
@@ -24,10 +26,10 @@ options.add_argument('--no-sandbox')
 options.add_argument('--disable-gpu')
 options.add_argument('--window-size=1420,1080')
 
-def print_message(msg) :
+def print_message(msg, end = '\n') :
     n = len(msg)
     nsym = (98-n)//2
-    print(f"{'='*nsym} {msg} {'='*nsym}")
+    print(f"{'='*nsym} {msg} {'='*nsym}",end = end)
 
 def wait_for_visible_count(locator, min_count):
     def check(d):
@@ -103,7 +105,7 @@ def get_first_soup() :
     if soup == None :
         time.sleep(VSWAIT)
         browser = webdriver.Chrome(options=options)
-        print_message("Retrieving AIME Wiki Page Using Selenium")
+        print_message("Retrieving AIME Wiki Page Using Selenium",'\r')
         try:
             browser.get(URL)
             wait = WebDriverWait(browser,
@@ -115,6 +117,8 @@ def get_first_soup() :
                 )
             html_source = browser.page_source
             soup = BeautifulSoup(html_source,'html.parser')
+        except Exception as e :
+            print_message(f'Error : {e}')
         finally:
             browser.quit()
     return soup
@@ -131,10 +135,12 @@ def get_soup(s,type,msg = True,retries = 5) :
     else :
         url = s
         msg = False
-        problem_title = url.split('Problems/')[-1].replace('_',' ')
+        match = re.search(r'title=(.*?)_Problems/(.*)',url)
+        text = match.group(1)+" "+match.group(2)
+        problem_title = "Solution " + text.replace('_',' ')
 
     if msg :
-        print_message(f"Retrieving {problem_title} Using Selenium")
+        print_message(f"Retrieving {problem_title} Using Selenium",'\r')
 
     if type == 'a' :
         selector = [(By.TAG_NAME, 'ol'),1]
@@ -160,9 +166,10 @@ def get_soup(s,type,msg = True,retries = 5) :
                             )
             html_source =  browser.page_source            
             soup = BeautifulSoup(html_source,'html.parser')
-        except :
+        except Exception as e :
+            print_message(f'Error : {e}','\r')
+            print_message(f"Retrieving {problem_title} Failed Retrying...({attempt})",'\r')
             soup = None
-            print_message(f"Retrieving {problem_title} Failed Retrying...({attempt})")
         finally:
             browser.quit()
         time.sleep(VSWAIT)

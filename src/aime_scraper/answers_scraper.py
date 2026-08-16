@@ -12,6 +12,7 @@ import json
 
 from pathlib import Path
 from itertools import batched
+from tqdm import tqdm
 
 
 from .utils import *
@@ -52,10 +53,18 @@ def get_answers_full(contest_metadata,
     all,pairs = generate_all_and_pairs('a',
                                     contest_metadata,
                                     downloaded)
-
+    
+    pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
     answers = []
+
+        
+    bar = tqdm(list(enumerate(batched(pairs,chunk_size))),
+                desc = 'Progress',
+                unit = 'chunk',
+                position = 0,
+                leave = True)
     try :
-        for i,chunk in enumerate(batched(pairs[:3],chunk_size)) :
+        for i,chunk in bar :
             for year,source in chunk :
                 anss = get_answers_from_url(source,msg = False)
                 for ans in anss :
@@ -63,9 +72,11 @@ def get_answers_full(contest_metadata,
                 answers+=anss
                 time.sleep(SWAIT)
             time.sleep(VSWAIT)
-            print_message(f"Chunk {i+1} Retrieved")
-    except :
-        print_message('Error_occured')
+            bar.set_postfix(downloaded = f'{len(answers)}',
+                            last_year = answers[-1]['year'],
+                            last_version = answers[-1]['version'])
+    except Exception as e :
+        print_message(f'Error : {e}')
         if len(answers) > 0 :
             last = answers[-1]
             last_year = last["year"]
@@ -83,4 +94,4 @@ def get_answers_full(contest_metadata,
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent = 4)
 
-    return merged
+    return pairs,merged
