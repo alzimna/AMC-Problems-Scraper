@@ -17,10 +17,10 @@ from tqdm import tqdm
 
 from .utils import *
 from .config import *
+from .scraper import *
 
 def get_answers_from_url(s,msg = True) :
     content,problem_title,url = get_soup(s,'a',msg)
-
     
     if content is None:
         print(f"Failed to get soup: {url}")
@@ -45,19 +45,16 @@ def get_answers_from_url(s,msg = True) :
         answers.append(ans)
     return answers 
 
-def get_answers_full(contest_metadata,
+def get_answers_full(contest,
                     save_json = False,
                     chunk_size = 5) :
-    
-    downloaded = check_retrieved_file('a')
-    all,pairs = generate_all_and_pairs('a',
-                                    contest_metadata,
-                                    downloaded)
-    
+    x = generate_all_and_pairs('a',contest)
+    pairs = x[1]
     pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
+    
+    downloaded = check_retrieved_file('a',contest)
     answers = []
 
-        
     bar = tqdm(list(enumerate(batched(pairs,chunk_size))),
                 desc = 'Progress',
                 unit = 'chunk',
@@ -70,7 +67,7 @@ def get_answers_full(contest_metadata,
                 for ans in anss :
                     ans['year'] = year
                 answers+=anss
-                time.sleep(SWAIT)
+                time.sleep(VSWAIT)
             time.sleep(VSWAIT)
             bar.set_postfix(downloaded = f'{len(answers)}',
                             last_year = answers[-1]['year'],
@@ -87,11 +84,11 @@ def get_answers_full(contest_metadata,
         else :
             print_message('No Data Retrieved')
 
+    merged = downloaded + answers
     if save_json :
         OUTPUT_DIR.mkdir(parents=True,exist_ok=True)
-        merged = downloaded + answers
-        file_path = OUTPUT_DIR / ANSWERS_FULL
+        file_path = OUTPUT_DIR / contest / ANSWERS_FULL
         with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(merged, f, ensure_ascii=False, indent = 4)
+            json.dump(merged, f, ensure_ascii=True, indent = 4)
 
     return pairs,merged

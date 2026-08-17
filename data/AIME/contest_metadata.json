@@ -1,0 +1,499 @@
+{
+    "AIME 2026 I": {
+        "contest": "AIME",
+        "year": "2026",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2026_AIME_I"
+    },
+    "AIME 2026 II": {
+        "contest": "AIME",
+        "year": "2026",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2026_AIME_II"
+    },
+    "AIME 2025 I": {
+        "contest": "AIME",
+        "year": "2025",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2025_AIME_I"
+    },
+    "AIME 2025 II": {
+        "contest": "AIME",
+        "year": "2025",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2025_AIME_II"
+    },
+    "AIME 2024 I": {
+        "contest": "AIME",
+        "year": "2024",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2024_AIME_I"
+    },
+    "AIME 2024 II": {
+        "contest": "AIME",
+        "year": "2024",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2024_AIME_II"
+    },
+    "AIME 2023 I": {
+        "contest": "AIME",
+        "year": "2023",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2023_AIME_I"
+    },
+    "AIME 2023 II": {
+        "contest": "AIME",
+        "year": "2023",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2023_AIME_II"
+    },
+    "AIME 2022 I": {
+        "contest": "AIME",
+        "year": "2022",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2022_AIME_I"
+    },
+    "AIME 2022 II": {
+        "contest": "AIME",
+        "year": "2022",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2022_AIME_II"
+    },
+    "AIME 2021 I": {
+        "contest": "AIME",
+        "year": "2021",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2021_AIME_I"
+    },
+    "AIME 2021 II": {
+        "contest": "AIME",
+        "year": "2021",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2021_AIME_II"
+    },
+    "AIME 2020 I": {
+        "contest": "AIME",
+        "year": "2020",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2020_AIME_I"
+    },
+    "AIME 2020 II": {
+        "contest": "AIME",
+        "year": "2020",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2020_AIME_II"
+    },
+    "AIME 2019 I": {
+        "contest": "AIME",
+        "year": "2019",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2019_AIME_I"
+    },
+    "AIME 2019 II": {
+        "contest": "AIME",
+        "year": "2019",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2019_AIME_II"
+    },
+    "AIME 2018 I": {
+        "contest": "AIME",
+        "year": "2018",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2018_AIME_I"
+    },
+    "AIME 2018 II": {
+        "contest": "AIME",
+        "year": "2018",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2018_AIME_II"
+    },
+    "AIME 2017 I": {
+        "contest": "AIME",
+        "year": "2017",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2017_AIME_I"
+    },
+    "AIME 2017 II": {
+        "contest": "AIME",
+        "year": "2017",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2017_AIME_II"
+    },
+    "AIME 2016 I": {
+        "contest": "AIME",
+        "year": "2016",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2016_AIME_I"
+    },
+    "AIME 2016 II": {
+        "contest": "AIME",
+        "year": "2016",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2016_AIME_II"
+    },
+    "AIME 2015 I": {
+        "contest": "AIME",
+        "year": "2015",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2015_AIME_I"
+    },
+    "AIME 2015 II": {
+        "contest": "AIME",
+        "year": "2015",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2015_AIME_II"
+    },
+    "AIME 2014 I": {
+        "contest": "AIME",
+        "year": "2014",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2014_AIME_I"
+    },
+    "AIME 2014 II": {
+        "contest": "AIME",
+        "year": "2014",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2014_AIME_II"
+    },
+    "AIME 2013 I": {
+        "contest": "AIME",
+        "year": "2013",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2013_AIME_I"
+    },
+    "AIME 2013 II": {
+        "contest": "AIME",
+        "year": "2013",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2013_AIME_II"
+    },
+    "AIME 2012 I": {
+        "contest": "AIME",
+        "year": "2012",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_I"
+    },
+    "AIME 2012 II": {
+        "contest": "AIME",
+        "year": "2012",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_II"
+    },
+    "AIME 2011 I": {
+        "contest": "AIME",
+        "year": "2011",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2011_AIME_I"
+    },
+    "AIME 2011 II": {
+        "contest": "AIME",
+        "year": "2011",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2011_AIME_II"
+    },
+    "AIME 2010 I": {
+        "contest": "AIME",
+        "year": "2010",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2010_AIME_I"
+    },
+    "AIME 2010 II": {
+        "contest": "AIME",
+        "year": "2010",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2010_AIME_II"
+    },
+    "AIME 2009 I": {
+        "contest": "AIME",
+        "year": "2009",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2009_AIME_I"
+    },
+    "AIME 2009 II": {
+        "contest": "AIME",
+        "year": "2009",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2009_AIME_II"
+    },
+    "AIME 2008 I": {
+        "contest": "AIME",
+        "year": "2008",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2008_AIME_I"
+    },
+    "AIME 2008 II": {
+        "contest": "AIME",
+        "year": "2008",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2008_AIME_II"
+    },
+    "AIME 2007 I": {
+        "contest": "AIME",
+        "year": "2007",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2007_AIME_I"
+    },
+    "AIME 2007 II": {
+        "contest": "AIME",
+        "year": "2007",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2007_AIME_II"
+    },
+    "AIME 2006 I": {
+        "contest": "AIME",
+        "year": "2006",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2006_AIME_I"
+    },
+    "AIME 2006 II": {
+        "contest": "AIME",
+        "year": "2006",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2006_AIME_II"
+    },
+    "AIME 2005 I": {
+        "contest": "AIME",
+        "year": "2005",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2005_AIME_I"
+    },
+    "AIME 2005 II": {
+        "contest": "AIME",
+        "year": "2005",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2005_AIME_II"
+    },
+    "AIME 2004 I": {
+        "contest": "AIME",
+        "year": "2004",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2004_AIME_I"
+    },
+    "AIME 2004 II": {
+        "contest": "AIME",
+        "year": "2004",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2004_AIME_II"
+    },
+    "AIME 2003 I": {
+        "contest": "AIME",
+        "year": "2003",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2003_AIME_I"
+    },
+    "AIME 2003 II": {
+        "contest": "AIME",
+        "year": "2003",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2003_AIME_II"
+    },
+    "AIME 2002 I": {
+        "contest": "AIME",
+        "year": "2002",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2002_AIME_I"
+    },
+    "AIME 2002 II": {
+        "contest": "AIME",
+        "year": "2002",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2002_AIME_II"
+    },
+    "AIME 2001 I": {
+        "contest": "AIME",
+        "year": "2001",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2001_AIME_I"
+    },
+    "AIME 2001 II": {
+        "contest": "AIME",
+        "year": "2001",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2001_AIME_II"
+    },
+    "AIME 2000 I": {
+        "contest": "AIME",
+        "year": "2000",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2000_AIME_I"
+    },
+    "AIME 2000 II": {
+        "contest": "AIME",
+        "year": "2000",
+        "version": "II",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2000_AIME_II"
+    },
+    "AIME 1999 I": {
+        "contest": "AIME",
+        "year": "1999",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1999_AIME"
+    },
+    "AIME 1998 I": {
+        "contest": "AIME",
+        "year": "1998",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1998_AIME"
+    },
+    "AIME 1997 I": {
+        "contest": "AIME",
+        "year": "1997",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1997_AIME"
+    },
+    "AIME 1996 I": {
+        "contest": "AIME",
+        "year": "1996",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1996_AIME"
+    },
+    "AIME 1995 I": {
+        "contest": "AIME",
+        "year": "1995",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1995_AIME"
+    },
+    "AIME 1994 I": {
+        "contest": "AIME",
+        "year": "1994",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1994_AIME"
+    },
+    "AIME 1993 I": {
+        "contest": "AIME",
+        "year": "1993",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1993_AIME"
+    },
+    "AIME 1992 I": {
+        "contest": "AIME",
+        "year": "1992",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1992_AIME"
+    },
+    "AIME 1991 I": {
+        "contest": "AIME",
+        "year": "1991",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1991_AIME"
+    },
+    "AIME 1990 I": {
+        "contest": "AIME",
+        "year": "1990",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1990_AIME"
+    },
+    "AIME 1989 I": {
+        "contest": "AIME",
+        "year": "1989",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1989_AIME"
+    },
+    "AIME 1988 I": {
+        "contest": "AIME",
+        "year": "1988",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1988_AIME"
+    },
+    "AIME 1987 I": {
+        "contest": "AIME",
+        "year": "1987",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1987_AIME"
+    },
+    "AIME 1986 I": {
+        "contest": "AIME",
+        "year": "1986",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1986_AIME"
+    },
+    "AIME 1985 I": {
+        "contest": "AIME",
+        "year": "1985",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1985_AIME"
+    },
+    "AIME 1984 I": {
+        "contest": "AIME",
+        "year": "1984",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1984_AIME"
+    },
+    "AIME 1983 I": {
+        "contest": "AIME",
+        "year": "1983",
+        "version": "I",
+        "number of problems": 15,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=1983_AIME"
+    }
+}

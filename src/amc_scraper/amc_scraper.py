@@ -20,3 +20,5 @@ from .answers_scraper import *
 from .solutions_scraper import *
 from .builder import *
 from .downloader import *
+from .scraper import *
+

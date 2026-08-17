@@ -16,6 +16,7 @@ from tqdm import tqdm
 
 from .utils import *
 from .config import *
+from .scraper import *
 
 def get_problems_from_source(s,msg = True) :
     content,problem_title,url = get_soup(s,'p',msg)
@@ -60,15 +61,15 @@ def get_problems_from_source(s,msg = True) :
         problems.append(prob)
     return problems
 
-def get_problems_full(contest_metadata,
+def get_problems_full(contest,
                     save_json = False,
                     chunk_size = 5) :
     
-    downloaded = check_retrieved_file('p')
-    all,pairs = generate_all_and_pairs('p',
-                                        contest_metadata,
-                                        downloaded)
+    x = generate_all_and_pairs('p',contest)
+    pairs = x[1]
     pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
+    downloaded = check_retrieved_file('p',contest)
+
     problems = []
     
     bar = tqdm(list(enumerate(batched(pairs,chunk_size))),
@@ -83,7 +84,7 @@ def get_problems_full(contest_metadata,
                 for prob in probs :
                     prob['year'] = year
                 problems+=probs
-                time.sleep(SWAIT)
+                time.sleep(VSWAIT)
             time.sleep(VSWAIT)
             bar.set_postfix(downloaded = f'{len(problems)}',
                             last_year = problems[-1]['year'],
@@ -98,11 +99,11 @@ def get_problems_full(contest_metadata,
             print_message(f'Last Retrieved Data is {last_year}: {last_source}')
         else :
             print_message('No Data Retrieved')
-
+    merged = downloaded + problems
+    
     if save_json :
         OUTPUT_DIR.mkdir(parents=True,exist_ok=True)
-        merged = downloaded + problems
-        file_path = OUTPUT_DIR / PROBLEMS_FULL
+        file_path = OUTPUT_DIR / contest / PROBLEMS_FULL
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent = 4)
 
