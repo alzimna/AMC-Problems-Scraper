@@ -16,6 +16,7 @@ from tqdm import tqdm
 
 from .utils import *
 from .config import *
+from .scraper import *
 
 def get_solutions_from_page(source,number) :
     s = rf"{source}_Problems/Problem_{number}"
@@ -67,15 +68,14 @@ def get_solutions_from_source(source) :
         solutions.append(solution)
     return solutions
 
-def get_solutions_full(contest_metadata,
-                        save_json=False,
-                        chunk_size=5) :
-    downloaded = check_retrieved_file('s')
-    all,pairs = generate_all_and_pairs('s',
-                                    contest_metadata,
-                                    downloaded)
-
+def get_solutions_full(contest,
+                    save_json=False,
+                    chunk_size=5) :
+    x = generate_all_and_pairs('s',contest)
+    pairs = x[1]
     pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
+    downloaded = check_retrieved_file('s',contest)
+
     solutions = []
     bar = tqdm(list(enumerate(batched(pairs,chunk_size))),
             desc = 'Progress',
@@ -107,10 +107,10 @@ def get_solutions_full(contest_metadata,
         else :
             print_message('No Data Retrieved')
 
+    merged = downloaded + solutions
     if save_json :
         OUTPUT_DIR.mkdir(parents=True,exist_ok=True)
-        merged = downloaded + solutions
-        file_path = OUTPUT_DIR / SOLUTIONS_FULL
+        file_path = OUTPUT_DIR / contest / SOLUTIONS_FULL
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent = 4)
 

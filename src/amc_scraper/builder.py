@@ -15,27 +15,28 @@ from tqdm import tqdm
 from .utils import *
 from .config import *
 
-def build_index() :  
+def build_index(contest = 'AIME') :  
     DATA_PATH.mkdir(parents=True,exist_ok=True)
 
     with open(PROBLEM_PATH,'r',encoding = 'utf-8') as file :
         data = json.load(file)
         
     df_index = pd.DataFrame(data)[['year','version','problem_number']]
-    df_index['contest'] = 'AIME'
+    df_index['contest'] = contest
     df_index['id']=(df_index['contest']+"_"+
                     df_index['year'].astype(str)+"_"+
                     df_index['version'].astype(str)+"_"+
                     df_index['problem_number'].astype(str))
+    indexpath = DATA_PATH / contest / INDEX_NAME
     (df_index.set_index('id')
-            .to_json(INDEX_PATH,orient = 'index',indent=4)
+            .to_json(indexpath,orient = 'index',indent=4)
             )
     
     return df_index
 
-def build_full() :
+def build_full(contest = 'AIME') :
     output = [PROBLEM_PATH, ANSWER_PATH, SOLUTION_PATH ]
-    df_full = build_index()
+    df_full = build_index(contest)
 
     for path in output :
         with open(path,'r',encoding='utf-8') as f :
@@ -45,7 +46,8 @@ def build_full() :
                             how = 'left',
                             on = ['year','version','problem_number']))
 
-        (df_full.to_json(FULL_PATH,orient = 'records',indent=4)
+        fullpath = DATA_PATH / contest / FULL_NAME
+        (df_full.to_json(fullpath,orient = 'records',indent=4)
             )
         
     return df_full

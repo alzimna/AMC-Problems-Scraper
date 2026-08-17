@@ -1,11 +1,22 @@
 from pathlib import Path
+from selenium import webdriver
+
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
+
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+options.add_argument(f'--user-agent={USER_AGENT}') 
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-gpu')
+options.add_argument('--window-size=1420,1080')
+options.page_load_strategy = 'eager'
+options.add_argument("--disable-extensions")
+
 
 VSWAIT = 1
 SWAIT = 3
 MWAIT = 5
 LWAIT = 10
-
-URL = "https://artofproblemsolving.com/wiki/index.php/AIME_Problems_and_Solutions"
 
 TABLE_SELECTOR = "#mw-content-text > div > table"
 COLUMN_YEAR_SELECTOR = "#mw-content-text > div > table > tbody > tr > td:nth-child(1)"
@@ -18,7 +29,7 @@ PATTERN_VERSION = r'title=\d{4}_AIME_([IVX]+)?'
 PATTERN_HEADLINE_ID = r'^Problem_(\d+)$'
 PATTERN_SOLUTION_ID = r'^Solution'
 
-OUTPUT_DIR = Path(r'../output')
+OUTPUT_DIR = Path(r'../output/')
 PROBLEMS_FULL = 'problems_full.json'
 ANSWERS_FULL = 'answers_full.json'
 SOLUTIONS_FULL = 'solutions_full.json'
@@ -29,6 +40,7 @@ SOLUTION_PATH = OUTPUT_DIR / SOLUTIONS_FULL
 
 DATA_PATH = Path(r'../data')
 INDEX_NAME = 'index.json'
-INDEX_PATH = DATA_PATH / INDEX_NAME
 FULL_NAME = 'full.json'
-FULL_PATH = DATA_PATH / FULL_NAME
+CONTEST_METADATA_NAME = 'contest_metadata.json'
+
+FIGURE_PATH = Path(r'../figures')
