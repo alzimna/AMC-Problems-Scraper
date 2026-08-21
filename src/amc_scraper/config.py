@@ -11,11 +11,13 @@ options.add_argument('--disable-gpu')
 options.add_argument('--window-size=1420,1080')
 options.page_load_strategy = 'eager'
 options.add_argument("--disable-extensions")
+options.add_argument("--disable-dev-shm-usage")
+
 
 
 VSWAIT = 1
 SWAIT = 3
-MWAIT = 5
+MWAIT = 8
 LWAIT = 10
 
 TABLE_SELECTOR = "#mw-content-text > div > table"
@@ -34,13 +36,15 @@ PROBLEMS_FULL = 'problems_full.json'
 ANSWERS_FULL = 'answers_full.json'
 SOLUTIONS_FULL = 'solutions_full.json'
 
-PROBLEM_PATH = OUTPUT_DIR / PROBLEMS_FULL
-ANSWER_PATH = OUTPUT_DIR / ANSWERS_FULL
-SOLUTION_PATH = OUTPUT_DIR / SOLUTIONS_FULL
-
 DATA_PATH = Path(r'../data')
 INDEX_NAME = 'index.json'
 FULL_NAME = 'full.json'
 CONTEST_METADATA_NAME = 'contest_metadata.json'
 
 FIGURE_PATH = Path(r'../figures')
+TEX_PATH = Path('../Tex')
+
+FIG_CONDITION = lambda tag : ((tag.name == 'img') and 
+                            ((tag.get('class') == ['mw-file-element']) or
+                            ((tag.get('class') == ['latexcenter']) and '[asy]' in tag.get('alt')))
+                            )

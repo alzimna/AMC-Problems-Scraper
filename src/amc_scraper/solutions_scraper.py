@@ -1,18 +1,14 @@
-import webbrowser, bs4, requests,time
+import time
 
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-
-from bs4 import BeautifulSoup
 import re
 import json
 
-from pathlib import Path
 from itertools import batched
 from tqdm import tqdm
+from bs4 import Tag
+
+from concurrent.futures import ThreadPoolExecutor
+
 
 from .utils import *
 from .config import *
@@ -23,57 +19,70 @@ def get_solutions_from_page(source,number) :
     content = get_soup(s,'s')
 
     if content is None:
-        print(f"Failed to get soup: {s}")
-        return None
+        raise Exception(f'Failed to get soup: {s}')
 
     solutions_by_number = {}
     current_number = None
-    for child in content.find_all(re.compile('^h|p'), recursive=False) :
-        if re.match('h',child.name) :
-            next_tag = child.find_next_sibling()
+    for child in content.children :
+        if child.name is None :
+            continue
+
+        if re.match('^h',child.name) :
             headline = child.select_one('.mw-headline')
             match = re.match(PATTERN_SOLUTION_ID, headline.get('id', '')) if headline else None
-
-            if next_tag.name == 'p' and match :
+            if match :
                 if current_number == None :
-                    current_number = 1
+                        current_number = 1
                 else :
                     current_number+=1
                 solutions_by_number.setdefault(f"solution_{current_number}",{})
-                solutions_by_number[f"solution_{current_number}"]['content'] = []
+                solutions_by_number[f"solution_{current_number}"]['content'] = ""
                 solutions_by_number[f"solution_{current_number}"]['headline'] = headline.text
                 continue
-            else :
-                continue
-
+            
         if current_number is None:
             continue
 
-        solutions_by_number[f"solution_{current_number}"]['content'].append(child.decode_contents())
+        if not isinstance(child, Tag):
+            continue
+
+        if re.match(r'^~',child.text) :
+            continue
+        
+        if "wikitable" in (child.get("class") or []):
+            break
+
+        span = child.find("span")
+        if span is not None and span.get("id", "").lower() == "see_also":
+            break
+
+        solutions_by_number[f"solution_{current_number}"]["content"] += str(child)
     return solutions_by_number
 
-def get_solutions_from_source(source) :
+def get_solutions_from_source(source, workers = 3) :
     solutions = []
 
-    for i in range(15) :
-        solution = dict()
-        number = i+1
-        s = rf"{source}_Problems/Problem_{number}"
-        record = get_solutions_from_page(source,number)
+    numbers = range(1, 16)
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        records = pool.map(lambda n: get_solutions_from_page(source, n), numbers)
+    
 
-        solution["problem_number"] = number
-        solution["source"] = s
-        solution["solutions"] = record
+    for n,rec in zip(numbers,records) :
+        solution = dict()
+        solution["problem_number"] = n
+        solution["source"] = rf"{source}_Problems/Problem_{n}"
+        solution["solutions"] = rec
 
         solutions.append(solution)
     return solutions
 
 def get_solutions_full(contest,
                     save_json=False,
-                    chunk_size=5) :
-    x = generate_all_and_pairs('s',contest)
-    pairs = x[1]
-    pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
+                    chunk_size=3,
+                    num = 15,
+                    workers = 3) :
+    _,pairs = generate_all_and_pairs('s',contest)
+    pairs = pairs[:min(num,len(pairs))]
     downloaded = check_retrieved_file('s',contest)
 
     solutions = []
@@ -86,7 +95,7 @@ def get_solutions_full(contest,
     try :
         for i,chunk in bar :
             for year,source in chunk :
-                sols = get_solutions_from_source(source)
+                sols = get_solutions_from_source(source,workers)
                 temp = re.search(PATTERN_VERSION,source)
                 vers = temp.group(1) if (temp and temp.group(1)) else 'I'
                 for sol in sols :

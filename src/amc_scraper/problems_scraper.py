@@ -1,18 +1,14 @@
-import webbrowser, bs4, requests,time
+import time
 
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-
-from bs4 import BeautifulSoup
 import re
 import json
 
-from pathlib import Path
 from itertools import batched
 from tqdm import tqdm
+from bs4 import Tag
+
+
+from concurrent.futures import ThreadPoolExecutor
 
 from .utils import *
 from .config import *
@@ -28,7 +24,8 @@ def get_problems_from_source(s,msg = True) :
     problems_by_number = {}
     current_number = None
 
-    for child in content.find_all(['h2', 'p'], recursive=False):
+    sol_num = 0
+    for child in content.children:
         if child.name == 'h2':
             headline = child.select_one('.mw-headline')
             match = re.match(PATTERN_HEADLINE_ID, headline.get('id', '')) if headline else None
@@ -38,16 +35,21 @@ def get_problems_from_source(s,msg = True) :
         if current_number is None:
             continue
 
-        if re.search('>Solution<', str(child)):
+        if re.search(r'>\s?Solution<', str(child)):
+            sol_num+=1
+            if sol_num<15 :
+                continue
+            else :
+                break
+
+        if isinstance(child, Tag) :
+            if child.get('class') == 'wikitable' or child.get('id') in ['See_also','See_Also'] :
+                break
+            (problems_by_number.setdefault(current_number, [])
+                                .append(str(child))
+            )
+        else :
             continue
-
-        (problems_by_number.setdefault(current_number, [])
-                            .append(child.decode_contents())
-        )
-
-    if(len(problems_by_number)>=15 and msg):
-        print_message(f"{problem_title} Retrieved")
-
     temp = re.search(PATTERN_VERSION,url)
     vers = temp.group(1) if (temp and temp.group(1)) else 'I'
 
@@ -63,11 +65,11 @@ def get_problems_from_source(s,msg = True) :
 
 def get_problems_full(contest,
                     save_json = False,
-                    chunk_size = 5) :
+                    chunk_size = 5,
+                    num = 15) :
     
-    x = generate_all_and_pairs('p',contest)
-    pairs = x[1]
-    pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
+    _,pairs = generate_all_and_pairs('p',contest)
+    pairs = pairs[:min(num,len(pairs))]
     downloaded = check_retrieved_file('p',contest)
 
     problems = []
@@ -85,7 +87,7 @@ def get_problems_full(contest,
                     prob['year'] = year
                 problems+=probs
                 time.sleep(VSWAIT)
-            time.sleep(VSWAIT)
+            time.sleep(SWAIT)
             bar.set_postfix(downloaded = f'{len(problems)}',
                             last_year = problems[-1]['year'],
                             last_version = problems[-1]['version'])
