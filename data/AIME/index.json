@@ -2,1351 +2,5326 @@
     "AIME_2026_I_1":{
         "year":"2026",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2026_I_2":{
         "year":"2026",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2026_I_3":{
         "year":"2026",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2026_I_4":{
         "year":"2026",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2026_I_5":{
         "year":"2026",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2026_I_6":{
         "year":"2026",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2026_I_7":{
         "year":"2026",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2026_I_8":{
         "year":"2026",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2026_I_9":{
         "year":"2026",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2026_I_10":{
         "year":"2026",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2026_I_11":{
         "year":"2026",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2026_I_12":{
         "year":"2026",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2026_I_13":{
         "year":"2026",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2026_I_14":{
         "year":"2026",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2026_I_15":{
         "year":"2026",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_2026_II_1":{
         "year":"2026",
         "version":"II",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2026_II_2":{
         "year":"2026",
         "version":"II",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2026_II_3":{
         "year":"2026",
         "version":"II",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2026_II_4":{
         "year":"2026",
         "version":"II",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2026_II_5":{
         "year":"2026",
         "version":"II",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2026_II_6":{
         "year":"2026",
         "version":"II",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2026_II_7":{
         "year":"2026",
         "version":"II",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2026_II_8":{
         "year":"2026",
         "version":"II",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2026_II_9":{
         "year":"2026",
         "version":"II",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2026_II_10":{
         "year":"2026",
         "version":"II",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2026_II_11":{
         "year":"2026",
         "version":"II",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2026_II_12":{
         "year":"2026",
         "version":"II",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2026_II_13":{
         "year":"2026",
         "version":"II",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2026_II_14":{
         "year":"2026",
         "version":"II",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2026_II_15":{
         "year":"2026",
         "version":"II",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_2025_I_1":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2025_I_2":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2025_I_3":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2025_I_4":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2025_I_5":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2025_I_6":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2025_I_7":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2025_I_8":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2025_I_9":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2025_I_10":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2025_I_11":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2025_I_12":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2025_I_13":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2025_I_14":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2025_I_15":{
+        "year":"2025",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2025_II_1":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2025_II_2":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2025_II_3":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2025_II_4":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2025_II_5":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2025_II_6":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2025_II_7":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2025_II_8":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2025_II_9":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2025_II_10":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2025_II_11":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2025_II_12":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2025_II_13":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2025_II_14":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2025_II_15":{
+        "year":"2025",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2024_I_1":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2024_I_2":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2024_I_3":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2024_I_4":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2024_I_5":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2024_I_6":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2024_I_7":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2024_I_8":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2024_I_9":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2024_I_10":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2024_I_11":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2024_I_12":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2024_I_13":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2024_I_14":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2024_I_15":{
+        "year":"2024",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2024_II_1":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2024_II_2":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2024_II_3":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2024_II_4":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2024_II_5":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2024_II_6":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2024_II_7":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2024_II_8":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2024_II_9":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2024_II_10":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2024_II_11":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2024_II_12":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2024_II_13":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2024_II_14":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2024_II_15":{
+        "year":"2024",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2023_I_1":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2023_I_2":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2023_I_3":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2023_I_4":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2023_I_5":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2023_I_6":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2023_I_7":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2023_I_8":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2023_I_9":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2023_I_10":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2023_I_11":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2023_I_12":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2023_I_13":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2023_I_14":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2023_I_15":{
+        "year":"2023",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2023_II_1":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2023_II_2":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2023_II_3":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2023_II_4":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2023_II_5":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2023_II_6":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2023_II_7":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2023_II_8":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2023_II_9":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2023_II_10":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2023_II_11":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2023_II_12":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2023_II_13":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2023_II_14":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2023_II_15":{
+        "year":"2023",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2022_I_1":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2022_I_2":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2022_I_3":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2022_I_4":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2022_I_5":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2022_I_6":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2022_I_7":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2022_I_8":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2022_I_9":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2022_I_10":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2022_I_11":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2022_I_12":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2022_I_13":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2022_I_14":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2022_I_15":{
+        "year":"2022",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2022_II_1":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2022_II_2":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2022_II_3":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2022_II_4":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2022_II_5":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2022_II_6":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2022_II_7":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2022_II_8":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2022_II_9":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2022_II_10":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2022_II_11":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2022_II_12":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2022_II_13":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2022_II_14":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2022_II_15":{
+        "year":"2022",
+        "version":"II",
+        "problem_number":15
     },
     "AIME_2021_I_1":{
         "year":"2021",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2021_I_2":{
         "year":"2021",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2021_I_3":{
         "year":"2021",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2021_I_4":{
         "year":"2021",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2021_I_5":{
         "year":"2021",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2021_I_6":{
         "year":"2021",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2021_I_7":{
         "year":"2021",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2021_I_8":{
         "year":"2021",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2021_I_9":{
         "year":"2021",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2021_I_10":{
         "year":"2021",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2021_I_11":{
         "year":"2021",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2021_I_12":{
         "year":"2021",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2021_I_13":{
         "year":"2021",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2021_I_14":{
         "year":"2021",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2021_I_15":{
         "year":"2021",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_2021_II_1":{
         "year":"2021",
         "version":"II",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2021_II_2":{
         "year":"2021",
         "version":"II",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2021_II_3":{
         "year":"2021",
         "version":"II",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2021_II_4":{
         "year":"2021",
         "version":"II",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2021_II_5":{
         "year":"2021",
         "version":"II",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2021_II_6":{
         "year":"2021",
         "version":"II",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2021_II_7":{
         "year":"2021",
         "version":"II",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2021_II_8":{
         "year":"2021",
         "version":"II",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2021_II_9":{
         "year":"2021",
         "version":"II",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2021_II_10":{
         "year":"2021",
         "version":"II",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2021_II_11":{
         "year":"2021",
         "version":"II",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2021_II_12":{
         "year":"2021",
         "version":"II",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2021_II_13":{
         "year":"2021",
         "version":"II",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2021_II_14":{
         "year":"2021",
         "version":"II",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2021_II_15":{
         "year":"2021",
         "version":"II",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_2020_I_1":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2020_I_2":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2020_I_3":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2020_I_4":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2020_I_5":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2020_I_6":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2020_I_7":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2020_I_8":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2020_I_9":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2020_I_10":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2020_I_11":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2020_I_12":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2020_I_13":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2020_I_14":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2020_I_15":{
+        "year":"2020",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2020_II_1":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2020_II_2":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2020_II_3":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2020_II_4":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2020_II_5":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2020_II_6":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2020_II_7":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2020_II_8":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2020_II_9":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2020_II_10":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2020_II_11":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2020_II_12":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2020_II_13":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2020_II_14":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2020_II_15":{
+        "year":"2020",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2019_I_1":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2019_I_2":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2019_I_3":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2019_I_4":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2019_I_5":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2019_I_6":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2019_I_7":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2019_I_8":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2019_I_9":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2019_I_10":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2019_I_11":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2019_I_12":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2019_I_13":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2019_I_14":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2019_I_15":{
+        "year":"2019",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2019_II_1":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2019_II_2":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2019_II_3":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2019_II_4":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2019_II_5":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2019_II_6":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2019_II_7":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2019_II_8":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2019_II_9":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2019_II_10":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2019_II_11":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2019_II_12":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2019_II_13":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2019_II_14":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2019_II_15":{
+        "year":"2019",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2018_I_1":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2018_I_2":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2018_I_3":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2018_I_4":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2018_I_5":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2018_I_6":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2018_I_7":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2018_I_8":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2018_I_9":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2018_I_10":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2018_I_11":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2018_I_12":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2018_I_13":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2018_I_14":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2018_I_15":{
+        "year":"2018",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2018_II_1":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2018_II_2":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2018_II_3":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2018_II_4":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2018_II_5":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2018_II_6":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2018_II_7":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2018_II_8":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2018_II_9":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2018_II_10":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2018_II_11":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2018_II_12":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2018_II_13":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2018_II_14":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2018_II_15":{
+        "year":"2018",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2017_I_1":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2017_I_2":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2017_I_3":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2017_I_4":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2017_I_5":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2017_I_6":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2017_I_7":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2017_I_8":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2017_I_9":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2017_I_10":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2017_I_11":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2017_I_12":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2017_I_13":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2017_I_14":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2017_I_15":{
+        "year":"2017",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2017_II_1":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2017_II_2":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2017_II_3":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2017_II_4":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2017_II_5":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2017_II_6":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2017_II_7":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2017_II_8":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2017_II_9":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2017_II_10":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2017_II_11":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2017_II_12":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2017_II_13":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2017_II_14":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2017_II_15":{
+        "year":"2017",
+        "version":"II",
+        "problem_number":15
     },
     "AIME_2016_I_1":{
         "year":"2016",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2016_I_2":{
         "year":"2016",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2016_I_3":{
         "year":"2016",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2016_I_4":{
         "year":"2016",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2016_I_5":{
         "year":"2016",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2016_I_6":{
         "year":"2016",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2016_I_7":{
         "year":"2016",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2016_I_8":{
         "year":"2016",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2016_I_9":{
         "year":"2016",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2016_I_10":{
         "year":"2016",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2016_I_11":{
         "year":"2016",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2016_I_12":{
         "year":"2016",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2016_I_13":{
         "year":"2016",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2016_I_14":{
         "year":"2016",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2016_I_15":{
         "year":"2016",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_2016_II_1":{
         "year":"2016",
         "version":"II",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2016_II_2":{
         "year":"2016",
         "version":"II",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2016_II_3":{
         "year":"2016",
         "version":"II",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2016_II_4":{
         "year":"2016",
         "version":"II",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2016_II_5":{
         "year":"2016",
         "version":"II",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2016_II_6":{
         "year":"2016",
         "version":"II",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2016_II_7":{
         "year":"2016",
         "version":"II",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2016_II_8":{
         "year":"2016",
         "version":"II",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2016_II_9":{
         "year":"2016",
         "version":"II",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2016_II_10":{
         "year":"2016",
         "version":"II",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2016_II_11":{
         "year":"2016",
         "version":"II",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2016_II_12":{
         "year":"2016",
         "version":"II",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2016_II_13":{
         "year":"2016",
         "version":"II",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2016_II_14":{
         "year":"2016",
         "version":"II",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2016_II_15":{
         "year":"2016",
         "version":"II",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_2015_I_1":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2015_I_2":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2015_I_3":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2015_I_4":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2015_I_5":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2015_I_6":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2015_I_7":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2015_I_8":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2015_I_9":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2015_I_10":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2015_I_11":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2015_I_12":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2015_I_13":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2015_I_14":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2015_I_15":{
+        "year":"2015",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2015_II_1":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2015_II_2":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2015_II_3":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2015_II_4":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2015_II_5":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2015_II_6":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2015_II_7":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2015_II_8":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2015_II_9":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2015_II_10":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2015_II_11":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2015_II_12":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2015_II_13":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2015_II_14":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2015_II_15":{
+        "year":"2015",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2014_I_1":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2014_I_2":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2014_I_3":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2014_I_4":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2014_I_5":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2014_I_6":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2014_I_7":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2014_I_8":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2014_I_9":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2014_I_10":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2014_I_11":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2014_I_12":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2014_I_13":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2014_I_14":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2014_I_15":{
+        "year":"2014",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2014_II_1":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2014_II_2":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2014_II_3":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2014_II_4":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2014_II_5":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2014_II_6":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2014_II_7":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2014_II_8":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2014_II_9":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2014_II_10":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2014_II_11":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2014_II_12":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2014_II_13":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2014_II_14":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2014_II_15":{
+        "year":"2014",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2013_I_1":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2013_I_2":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2013_I_3":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2013_I_4":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2013_I_5":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2013_I_6":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2013_I_7":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2013_I_8":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2013_I_9":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2013_I_10":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2013_I_11":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2013_I_12":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2013_I_13":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2013_I_14":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2013_I_15":{
+        "year":"2013",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2013_II_1":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2013_II_2":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2013_II_3":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2013_II_4":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2013_II_5":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2013_II_6":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2013_II_7":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2013_II_8":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2013_II_9":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2013_II_10":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2013_II_11":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2013_II_12":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2013_II_13":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2013_II_14":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2013_II_15":{
+        "year":"2013",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2012_I_1":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2012_I_2":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2012_I_3":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2012_I_4":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2012_I_5":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2012_I_6":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2012_I_7":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2012_I_8":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2012_I_9":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2012_I_10":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2012_I_11":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2012_I_12":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2012_I_13":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2012_I_14":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2012_I_15":{
+        "year":"2012",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2012_II_1":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2012_II_2":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2012_II_3":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2012_II_4":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2012_II_5":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2012_II_6":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2012_II_7":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2012_II_8":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2012_II_9":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2012_II_10":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2012_II_11":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2012_II_12":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2012_II_13":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2012_II_14":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2012_II_15":{
+        "year":"2012",
+        "version":"II",
+        "problem_number":15
     },
     "AIME_2011_I_1":{
         "year":"2011",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2011_I_2":{
         "year":"2011",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2011_I_3":{
         "year":"2011",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2011_I_4":{
         "year":"2011",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2011_I_5":{
         "year":"2011",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2011_I_6":{
         "year":"2011",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2011_I_7":{
         "year":"2011",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2011_I_8":{
         "year":"2011",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2011_I_9":{
         "year":"2011",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2011_I_10":{
         "year":"2011",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2011_I_11":{
         "year":"2011",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2011_I_12":{
         "year":"2011",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2011_I_13":{
         "year":"2011",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2011_I_14":{
         "year":"2011",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2011_I_15":{
         "year":"2011",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_2011_II_1":{
         "year":"2011",
         "version":"II",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2011_II_2":{
         "year":"2011",
         "version":"II",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2011_II_3":{
         "year":"2011",
         "version":"II",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2011_II_4":{
         "year":"2011",
         "version":"II",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2011_II_5":{
         "year":"2011",
         "version":"II",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2011_II_6":{
         "year":"2011",
         "version":"II",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2011_II_7":{
         "year":"2011",
         "version":"II",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2011_II_8":{
         "year":"2011",
         "version":"II",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2011_II_9":{
         "year":"2011",
         "version":"II",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2011_II_10":{
         "year":"2011",
         "version":"II",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2011_II_11":{
         "year":"2011",
         "version":"II",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2011_II_12":{
         "year":"2011",
         "version":"II",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2011_II_13":{
         "year":"2011",
         "version":"II",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2011_II_14":{
         "year":"2011",
         "version":"II",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2011_II_15":{
         "year":"2011",
         "version":"II",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_2010_I_1":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2010_I_2":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2010_I_3":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2010_I_4":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2010_I_5":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2010_I_6":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2010_I_7":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2010_I_8":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2010_I_9":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2010_I_10":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2010_I_11":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2010_I_12":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2010_I_13":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2010_I_14":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2010_I_15":{
+        "year":"2010",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2010_II_1":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2010_II_2":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2010_II_3":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2010_II_4":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2010_II_5":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2010_II_6":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2010_II_7":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2010_II_8":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2010_II_9":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2010_II_10":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2010_II_11":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2010_II_12":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2010_II_13":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2010_II_14":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2010_II_15":{
+        "year":"2010",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2009_I_1":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2009_I_2":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2009_I_3":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2009_I_4":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2009_I_5":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2009_I_6":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2009_I_7":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2009_I_8":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2009_I_9":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2009_I_10":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2009_I_11":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2009_I_12":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2009_I_13":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2009_I_14":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2009_I_15":{
+        "year":"2009",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2009_II_1":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2009_II_2":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2009_II_3":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2009_II_4":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2009_II_5":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2009_II_6":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2009_II_7":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2009_II_8":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2009_II_9":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2009_II_10":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2009_II_11":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2009_II_12":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2009_II_13":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2009_II_14":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2009_II_15":{
+        "year":"2009",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2008_I_1":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2008_I_2":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2008_I_3":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2008_I_4":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2008_I_5":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2008_I_6":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2008_I_7":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2008_I_8":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2008_I_9":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2008_I_10":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2008_I_11":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2008_I_12":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2008_I_13":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2008_I_14":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2008_I_15":{
+        "year":"2008",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2008_II_1":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2008_II_2":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2008_II_3":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2008_II_4":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2008_II_5":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2008_II_6":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2008_II_7":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2008_II_8":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2008_II_9":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2008_II_10":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2008_II_11":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2008_II_12":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2008_II_13":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2008_II_14":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2008_II_15":{
+        "year":"2008",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2007_I_1":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2007_I_2":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2007_I_3":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2007_I_4":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2007_I_5":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2007_I_6":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2007_I_7":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2007_I_8":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2007_I_9":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2007_I_10":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2007_I_11":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2007_I_12":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2007_I_13":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2007_I_14":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2007_I_15":{
+        "year":"2007",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2007_II_1":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2007_II_2":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2007_II_3":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2007_II_4":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2007_II_5":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2007_II_6":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2007_II_7":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2007_II_8":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2007_II_9":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2007_II_10":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2007_II_11":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2007_II_12":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2007_II_13":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2007_II_14":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2007_II_15":{
+        "year":"2007",
+        "version":"II",
+        "problem_number":15
     },
     "AIME_2006_I_1":{
         "year":"2006",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2006_I_2":{
         "year":"2006",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2006_I_3":{
         "year":"2006",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2006_I_4":{
         "year":"2006",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2006_I_5":{
         "year":"2006",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2006_I_6":{
         "year":"2006",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2006_I_7":{
         "year":"2006",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2006_I_8":{
         "year":"2006",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2006_I_9":{
         "year":"2006",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2006_I_10":{
         "year":"2006",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2006_I_11":{
         "year":"2006",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2006_I_12":{
         "year":"2006",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2006_I_13":{
         "year":"2006",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2006_I_14":{
         "year":"2006",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2006_I_15":{
         "year":"2006",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_2006_II_1":{
         "year":"2006",
         "version":"II",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2006_II_2":{
         "year":"2006",
         "version":"II",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2006_II_3":{
         "year":"2006",
         "version":"II",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2006_II_4":{
         "year":"2006",
         "version":"II",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2006_II_5":{
         "year":"2006",
         "version":"II",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2006_II_6":{
         "year":"2006",
         "version":"II",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2006_II_7":{
         "year":"2006",
         "version":"II",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2006_II_8":{
         "year":"2006",
         "version":"II",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2006_II_9":{
         "year":"2006",
         "version":"II",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2006_II_10":{
         "year":"2006",
         "version":"II",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2006_II_11":{
         "year":"2006",
         "version":"II",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2006_II_12":{
         "year":"2006",
         "version":"II",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2006_II_13":{
         "year":"2006",
         "version":"II",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2006_II_14":{
         "year":"2006",
         "version":"II",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2006_II_15":{
         "year":"2006",
         "version":"II",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_2005_I_1":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2005_I_2":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2005_I_3":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2005_I_4":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2005_I_5":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2005_I_6":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2005_I_7":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2005_I_8":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2005_I_9":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2005_I_10":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2005_I_11":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2005_I_12":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2005_I_13":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2005_I_14":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2005_I_15":{
+        "year":"2005",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2005_II_1":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2005_II_2":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2005_II_3":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2005_II_4":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2005_II_5":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2005_II_6":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2005_II_7":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2005_II_8":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2005_II_9":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2005_II_10":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2005_II_11":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2005_II_12":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2005_II_13":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2005_II_14":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2005_II_15":{
+        "year":"2005",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2004_I_1":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2004_I_2":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2004_I_3":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2004_I_4":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2004_I_5":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2004_I_6":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2004_I_7":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2004_I_8":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2004_I_9":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2004_I_10":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2004_I_11":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2004_I_12":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2004_I_13":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2004_I_14":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2004_I_15":{
+        "year":"2004",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2004_II_1":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2004_II_2":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2004_II_3":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2004_II_4":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2004_II_5":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2004_II_6":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2004_II_7":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2004_II_8":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2004_II_9":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2004_II_10":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2004_II_11":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2004_II_12":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2004_II_13":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2004_II_14":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2004_II_15":{
+        "year":"2004",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2003_I_1":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2003_I_2":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2003_I_3":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2003_I_4":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2003_I_5":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2003_I_6":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2003_I_7":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2003_I_8":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2003_I_9":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2003_I_10":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2003_I_11":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2003_I_12":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2003_I_13":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2003_I_14":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2003_I_15":{
+        "year":"2003",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2003_II_1":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2003_II_2":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2003_II_3":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2003_II_4":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2003_II_5":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2003_II_6":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2003_II_7":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2003_II_8":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2003_II_9":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2003_II_10":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2003_II_11":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2003_II_12":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2003_II_13":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2003_II_14":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2003_II_15":{
+        "year":"2003",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_2002_I_1":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2002_I_2":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2002_I_3":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2002_I_4":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2002_I_5":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2002_I_6":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2002_I_7":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2002_I_8":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2002_I_9":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2002_I_10":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2002_I_11":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2002_I_12":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2002_I_13":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2002_I_14":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2002_I_15":{
+        "year":"2002",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2002_II_1":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2002_II_2":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2002_II_3":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2002_II_4":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2002_II_5":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2002_II_6":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2002_II_7":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2002_II_8":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2002_II_9":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2002_II_10":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2002_II_11":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2002_II_12":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2002_II_13":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2002_II_14":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2002_II_15":{
+        "year":"2002",
+        "version":"II",
+        "problem_number":15
     },
     "AIME_2001_I_1":{
         "year":"2001",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2001_I_2":{
         "year":"2001",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2001_I_3":{
         "year":"2001",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2001_I_4":{
         "year":"2001",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2001_I_5":{
         "year":"2001",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2001_I_6":{
         "year":"2001",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2001_I_7":{
         "year":"2001",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2001_I_8":{
         "year":"2001",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2001_I_9":{
         "year":"2001",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2001_I_10":{
         "year":"2001",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2001_I_11":{
         "year":"2001",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2001_I_12":{
         "year":"2001",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2001_I_13":{
         "year":"2001",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2001_I_14":{
         "year":"2001",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2001_I_15":{
         "year":"2001",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_2001_II_1":{
         "year":"2001",
         "version":"II",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_2001_II_2":{
         "year":"2001",
         "version":"II",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_2001_II_3":{
         "year":"2001",
         "version":"II",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_2001_II_4":{
         "year":"2001",
         "version":"II",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_2001_II_5":{
         "year":"2001",
         "version":"II",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_2001_II_6":{
         "year":"2001",
         "version":"II",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_2001_II_7":{
         "year":"2001",
         "version":"II",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_2001_II_8":{
         "year":"2001",
         "version":"II",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_2001_II_9":{
         "year":"2001",
         "version":"II",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_2001_II_10":{
         "year":"2001",
         "version":"II",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_2001_II_11":{
         "year":"2001",
         "version":"II",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_2001_II_12":{
         "year":"2001",
         "version":"II",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_2001_II_13":{
         "year":"2001",
         "version":"II",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_2001_II_14":{
         "year":"2001",
         "version":"II",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_2001_II_15":{
         "year":"2001",
         "version":"II",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_2000_I_1":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_2000_I_2":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_2000_I_3":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_2000_I_4":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_2000_I_5":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_2000_I_6":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_2000_I_7":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_2000_I_8":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_2000_I_9":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_2000_I_10":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_2000_I_11":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_2000_I_12":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_2000_I_13":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_2000_I_14":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_2000_I_15":{
+        "year":"2000",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_2000_II_1":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":1
+    },
+    "AIME_2000_II_2":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":2
+    },
+    "AIME_2000_II_3":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":3
+    },
+    "AIME_2000_II_4":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":4
+    },
+    "AIME_2000_II_5":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":5
+    },
+    "AIME_2000_II_6":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":6
+    },
+    "AIME_2000_II_7":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":7
+    },
+    "AIME_2000_II_8":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":8
+    },
+    "AIME_2000_II_9":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":9
+    },
+    "AIME_2000_II_10":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":10
+    },
+    "AIME_2000_II_11":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":11
+    },
+    "AIME_2000_II_12":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":12
+    },
+    "AIME_2000_II_13":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":13
+    },
+    "AIME_2000_II_14":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":14
+    },
+    "AIME_2000_II_15":{
+        "year":"2000",
+        "version":"II",
+        "problem_number":15
+    },
+    "AIME_1999_I_1":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1999_I_2":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1999_I_3":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1999_I_4":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1999_I_5":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1999_I_6":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1999_I_7":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1999_I_8":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1999_I_9":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1999_I_10":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1999_I_11":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1999_I_12":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1999_I_13":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1999_I_14":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1999_I_15":{
+        "year":"1999",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1998_I_1":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1998_I_2":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1998_I_3":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1998_I_4":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1998_I_5":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1998_I_6":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1998_I_7":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1998_I_8":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1998_I_9":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1998_I_10":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1998_I_11":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1998_I_12":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1998_I_13":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1998_I_14":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1998_I_15":{
+        "year":"1998",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1997_I_1":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1997_I_2":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1997_I_3":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1997_I_4":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1997_I_5":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1997_I_6":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1997_I_7":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1997_I_8":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1997_I_9":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1997_I_10":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1997_I_11":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1997_I_12":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1997_I_13":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1997_I_14":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1997_I_15":{
+        "year":"1997",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1996_I_1":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1996_I_2":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1996_I_3":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1996_I_4":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1996_I_5":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1996_I_6":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1996_I_7":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1996_I_8":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1996_I_9":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1996_I_10":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1996_I_11":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1996_I_12":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1996_I_13":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1996_I_14":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1996_I_15":{
+        "year":"1996",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1995_I_1":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1995_I_2":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1995_I_3":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1995_I_4":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1995_I_5":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1995_I_6":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1995_I_7":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1995_I_8":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1995_I_9":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1995_I_10":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1995_I_11":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1995_I_12":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1995_I_13":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1995_I_14":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1995_I_15":{
+        "year":"1995",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1994_I_1":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1994_I_2":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1994_I_3":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1994_I_4":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1994_I_5":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1994_I_6":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1994_I_7":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1994_I_8":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1994_I_9":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1994_I_10":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1994_I_11":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1994_I_12":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1994_I_13":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1994_I_14":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1994_I_15":{
+        "year":"1994",
+        "version":"I",
+        "problem_number":15
     },
     "AIME_1993_I_1":{
         "year":"1993",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_1993_I_2":{
         "year":"1993",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_1993_I_3":{
         "year":"1993",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_1993_I_4":{
         "year":"1993",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_1993_I_5":{
         "year":"1993",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_1993_I_6":{
         "year":"1993",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_1993_I_7":{
         "year":"1993",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_1993_I_8":{
         "year":"1993",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_1993_I_9":{
         "year":"1993",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_1993_I_10":{
         "year":"1993",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_1993_I_11":{
         "year":"1993",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_1993_I_12":{
         "year":"1993",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_1993_I_13":{
         "year":"1993",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_1993_I_14":{
         "year":"1993",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_1993_I_15":{
         "year":"1993",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     },
     "AIME_1992_I_1":{
         "year":"1992",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_1992_I_2":{
         "year":"1992",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_1992_I_3":{
         "year":"1992",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_1992_I_4":{
         "year":"1992",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_1992_I_5":{
         "year":"1992",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_1992_I_6":{
         "year":"1992",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_1992_I_7":{
         "year":"1992",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_1992_I_8":{
         "year":"1992",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_1992_I_9":{
         "year":"1992",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_1992_I_10":{
         "year":"1992",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_1992_I_11":{
         "year":"1992",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_1992_I_12":{
         "year":"1992",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_1992_I_13":{
         "year":"1992",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_1992_I_14":{
         "year":"1992",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_1992_I_15":{
         "year":"1992",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
+    },
+    "AIME_1991_I_1":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1991_I_2":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1991_I_3":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1991_I_4":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1991_I_5":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1991_I_6":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1991_I_7":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1991_I_8":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1991_I_9":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1991_I_10":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1991_I_11":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1991_I_12":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1991_I_13":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1991_I_14":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1991_I_15":{
+        "year":"1991",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1990_I_1":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1990_I_2":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1990_I_3":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1990_I_4":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1990_I_5":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1990_I_6":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1990_I_7":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1990_I_8":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1990_I_9":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1990_I_10":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1990_I_11":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1990_I_12":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1990_I_13":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1990_I_14":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1990_I_15":{
+        "year":"1990",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1989_I_1":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1989_I_2":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1989_I_3":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1989_I_4":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1989_I_5":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1989_I_6":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1989_I_7":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1989_I_8":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1989_I_9":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1989_I_10":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1989_I_11":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1989_I_12":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1989_I_13":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1989_I_14":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1989_I_15":{
+        "year":"1989",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1988_I_1":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1988_I_2":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1988_I_3":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1988_I_4":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1988_I_5":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1988_I_6":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1988_I_7":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1988_I_8":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1988_I_9":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1988_I_10":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1988_I_11":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1988_I_12":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1988_I_13":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1988_I_14":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1988_I_15":{
+        "year":"1988",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1987_I_1":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1987_I_2":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1987_I_3":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1987_I_4":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1987_I_5":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1987_I_6":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1987_I_7":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1987_I_8":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1987_I_9":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1987_I_10":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1987_I_11":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1987_I_12":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1987_I_13":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1987_I_14":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1987_I_15":{
+        "year":"1987",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1986_I_1":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1986_I_2":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1986_I_3":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1986_I_4":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1986_I_5":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1986_I_6":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1986_I_7":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1986_I_8":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1986_I_9":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1986_I_10":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1986_I_11":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1986_I_12":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1986_I_13":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1986_I_14":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1986_I_15":{
+        "year":"1986",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1985_I_1":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1985_I_2":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1985_I_3":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1985_I_4":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1985_I_5":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1985_I_6":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1985_I_7":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1985_I_8":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1985_I_9":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1985_I_10":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1985_I_11":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1985_I_12":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1985_I_13":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1985_I_14":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1985_I_15":{
+        "year":"1985",
+        "version":"I",
+        "problem_number":15
+    },
+    "AIME_1984_I_1":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":1
+    },
+    "AIME_1984_I_2":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":2
+    },
+    "AIME_1984_I_3":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":3
+    },
+    "AIME_1984_I_4":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":4
+    },
+    "AIME_1984_I_5":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":5
+    },
+    "AIME_1984_I_6":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":6
+    },
+    "AIME_1984_I_7":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":7
+    },
+    "AIME_1984_I_8":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":8
+    },
+    "AIME_1984_I_9":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":9
+    },
+    "AIME_1984_I_10":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":10
+    },
+    "AIME_1984_I_11":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":11
+    },
+    "AIME_1984_I_12":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":12
+    },
+    "AIME_1984_I_13":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":13
+    },
+    "AIME_1984_I_14":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":14
+    },
+    "AIME_1984_I_15":{
+        "year":"1984",
+        "version":"I",
+        "problem_number":15
     },
     "AIME_1983_I_1":{
         "year":"1983",
         "version":"I",
-        "problem_number":1,
-        "contest":"AIME"
+        "problem_number":1
     },
     "AIME_1983_I_2":{
         "year":"1983",
         "version":"I",
-        "problem_number":2,
-        "contest":"AIME"
+        "problem_number":2
     },
     "AIME_1983_I_3":{
         "year":"1983",
         "version":"I",
-        "problem_number":3,
-        "contest":"AIME"
+        "problem_number":3
     },
     "AIME_1983_I_4":{
         "year":"1983",
         "version":"I",
-        "problem_number":4,
-        "contest":"AIME"
+        "problem_number":4
     },
     "AIME_1983_I_5":{
         "year":"1983",
         "version":"I",
-        "problem_number":5,
-        "contest":"AIME"
+        "problem_number":5
     },
     "AIME_1983_I_6":{
         "year":"1983",
         "version":"I",
-        "problem_number":6,
-        "contest":"AIME"
+        "problem_number":6
     },
     "AIME_1983_I_7":{
         "year":"1983",
         "version":"I",
-        "problem_number":7,
-        "contest":"AIME"
+        "problem_number":7
     },
     "AIME_1983_I_8":{
         "year":"1983",
         "version":"I",
-        "problem_number":8,
-        "contest":"AIME"
+        "problem_number":8
     },
     "AIME_1983_I_9":{
         "year":"1983",
         "version":"I",
-        "problem_number":9,
-        "contest":"AIME"
+        "problem_number":9
     },
     "AIME_1983_I_10":{
         "year":"1983",
         "version":"I",
-        "problem_number":10,
-        "contest":"AIME"
+        "problem_number":10
     },
     "AIME_1983_I_11":{
         "year":"1983",
         "version":"I",
-        "problem_number":11,
-        "contest":"AIME"
+        "problem_number":11
     },
     "AIME_1983_I_12":{
         "year":"1983",
         "version":"I",
-        "problem_number":12,
-        "contest":"AIME"
+        "problem_number":12
     },
     "AIME_1983_I_13":{
         "year":"1983",
         "version":"I",
-        "problem_number":13,
-        "contest":"AIME"
+        "problem_number":13
     },
     "AIME_1983_I_14":{
         "year":"1983",
         "version":"I",
-        "problem_number":14,
-        "contest":"AIME"
+        "problem_number":14
     },
     "AIME_1983_I_15":{
         "year":"1983",
         "version":"I",
-        "problem_number":15,
-        "contest":"AIME"
+        "problem_number":15
     }
 }

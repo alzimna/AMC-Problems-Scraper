@@ -8,9 +8,7 @@ import pandas as pd
 from .config import *
 
 def print_message(msg, end = '\n') :
-    n = len(msg)
-    nsym = (98-n)//2
-    print(f"{'='*nsym} {msg} {'='*nsym}",end = end)
+    print(f" {msg} ".center(98,'='),end)
 
 def wait_for_visible_count(locator, min_count):
     def check(d):
@@ -46,9 +44,7 @@ def generate_all_and_pairs(type,contest) :
     else :
         print_message("Metadata Not Retrieved Yet")
 
-    all = []
-    for id,record in contest_metadata.items() :
-        all.append((record['year'],record['source']))
+    all = [(r['year'], r['source']) for r in contest_metadata.values()]
 
     if type == 'p' :
         pattern = r'(.*?)_Problems$'
@@ -64,9 +60,7 @@ def generate_all_and_pairs(type,contest) :
         df = pd.DataFrame(downloaded)[['year','source']]
         df['source'] = df['source'].map(lambda x:re.search(pattern,x).group(1))
         df = df.drop_duplicates(ignore_index=True)
-        d = set()
-        for i in range(len(df)) :
-            d.add((df.loc[i,'year'],df.loc[i,'source']))
-
-        pairs = list(set(all)-set(d))
+        d = set(zip(df['year'], df['source']))
+        pairs = sorted(list(set(all)-set(d)),reverse = True)
     return all,pairs
+

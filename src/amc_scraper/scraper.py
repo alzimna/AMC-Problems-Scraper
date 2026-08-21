@@ -1,4 +1,4 @@
-import webbrowser, requests,time
+import time
 
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,12 +10,11 @@ from bs4 import BeautifulSoup
 import re
 
 import json
-from pathlib import Path
-import os
 from itertools import batched
 
 from .config import *
 from .utils import *
+
 
 def get_first_soup(contest = 'AIME') :
     URL = f"https://artofproblemsolving.com/wiki/index.php/{contest}_Problems_and_Solutions"
@@ -41,7 +40,7 @@ def get_first_soup(contest = 'AIME') :
 def get_soup(source,
             type,
             msg = True,
-            max_retries = 3,
+            max_retries = 5,
             contest = 'AIME') :
     
     if type == 'a' :
@@ -53,7 +52,7 @@ def get_soup(source,
         url = rf"{source}_{temp}"
         problem_title = url.split('title=')[-1].replace('_',' ')
     else :
-        url = source
+        url = "view-source:"+source
         msg = False
         match = re.search(r'title=(.*?)_Problems/(.*)',url)
         text = match.group(1)+" "+match.group(2)
@@ -72,13 +71,16 @@ def get_soup(source,
     for attempt in range(1,max_retries+1) :
         browser = webdriver.Chrome(options=options)
         wait = WebDriverWait(browser,
-                            timeout=SWAIT,
-                            poll_frequency=0.2,
+                            timeout= MWAIT,
+                            poll_frequency=1,
                             ignored_exceptions=[NoSuchElementException])
         try:
             browser.get(url)
-            wait.until(wait_for_visible_count(*selector))
-            html_source =  browser.page_source            
+            if type != 's' :
+                wait.until(wait_for_visible_count(*selector))
+                html_source =  browser.page_source
+            else :
+                html_source = browser.execute_script("return document.body.textContent")
             soup = BeautifulSoup(html_source,'html.parser')
 
             content = soup.select_one(CONTENT_SELECTOR) if soup is not None else None

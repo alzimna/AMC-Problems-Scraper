@@ -1,16 +1,8 @@
-import webbrowser, bs4, requests,time
+import time
 
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-
-from bs4 import BeautifulSoup
 import re
 import json
 
-from pathlib import Path
 from itertools import batched
 from tqdm import tqdm
 
@@ -48,10 +40,7 @@ def get_answers_from_url(s,msg = True) :
 def get_answers_full(contest,
                     save_json = False,
                     chunk_size = 5) :
-    x = generate_all_and_pairs('a',contest)
-    pairs = x[1]
-    pairs = [pairs[i] for i in range(len(pairs)) if (i%10 == 0 or i%10==1)]
-    
+    _,pairs = generate_all_and_pairs('a',contest)
     downloaded = check_retrieved_file('a',contest)
     answers = []
 
@@ -68,7 +57,7 @@ def get_answers_full(contest,
                     ans['year'] = year
                 answers+=anss
                 time.sleep(VSWAIT)
-            time.sleep(VSWAIT)
+            time.sleep(SWAIT)
             bar.set_postfix(downloaded = f'{len(answers)}',
                             last_year = answers[-1]['year'],
                             last_version = answers[-1]['version'])

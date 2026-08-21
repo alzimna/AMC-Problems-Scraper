@@ -21,4 +21,42 @@ from .solutions_scraper import *
 from .builder import *
 from .downloader import *
 from .scraper import *
+from .parser import *
 
+def generate_tex_json(contest) :
+    pipeline = [
+        build_full,
+        build_index,
+        add_figure_list,
+        parsing_prob_to_tex,
+        parsing_sol_to_tex
+    ]
+    for pipe in pipeline :
+        pipe(contest)
+
+def generate_tex_folder(contest, type = 'nosol') :
+    generate_tex_json(contest)
+
+    metadatapath = DATA_PATH / contest / CONTEST_METADATA_NAME
+    with open(metadatapath,'r',encoding = 'utf-8') as f :
+        data = json.load(f)
+
+    if type == 'nosol' :
+        temp = 'Problem'
+    elif type == 'withsolution' :
+        temp = 'Problem and Solution'
+    else :
+        raise Exception('Type not found')
+    
+    folderpath = TEX_PATH / contest / temp
+    folderpath.mkdir(parents = True, exist_ok = True)
+
+    with open(folderpath / 'copas.txt','w',encoding = 'utf-8') as f :
+        for rec in list(data.values())[::-1]:
+            filename = rec['year']+"_"+rec['version']+".tex"
+            if type == "withsolution" :
+                filename = rec['year']+"_"+rec['version']+"_with_solution.tex"
+            output = folderpath / filename
+            
+            build_tex(type,'AIME',rec['year'],rec['version'],output)
+            f.write(rf'\input{{{filename}}}'+'\n')

@@ -1,0 +1,2047 @@
+\section{AIME I 2026}
+        \begin{enumerate}
+        	\item (\textit{AIME I 2026}) Patrick started walking at a constant speed along a straight road from his school to the park. One hour after Patrick left, Tanya started running at a constant speed of $2$ miles per hour faster than Patrick walked, following the same straight road from the school to the park. One hour after Tanya left, José started bicycling at a constant speed of $7$ miles per hour faster than Tanya ran, following the same straight road from the school to the park. All three people arrived at the park at the same time. The distance from the school to the park is $\frac{m}{n}$ miles, where $m$ and $n$ are relatively prime positive integers. Find $m+n$. 
+
+
+ 
+ \textbf{Answer: }277
+
+
+
+\textbf{Solution 1}
+
+We set up the equation in units of time, with Patrick's speed as $s$ and the distance to the park as $d$:
+
+ $\frac{d}{s} = \frac{d}{s+2} + 1 = \frac{d}{s+9} + 2$
+
+ From the first two expressions, you get $ds + 2d = sd - s^2 - 2s$. From the first and third expressions, you get $ds + 9d = sd - s^2 - 9s$.
+
+ After solving this system of equations, we get $d = \frac{252}{25}$, or $\boxed{277}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+Let Faraz's speed be R and his time spent walking to the part be T. Let the distance of his school to the park be D. So, we can write the equation $D=RT.$ After going through the problem, we can write that $D=(R+2)(T-1)$ and $D=(R+9)(T-2).$ We can substitute the last two equations to get 
+ \[(R+2)(T-1)=(R+9)(T-2)\] 
+ \[RT+2T-R-2=RT+9T-2R-18.\] Simplifying this, we can find $R=7T-16.$ We can plug the two equations $D=RT$ and $D=(R+2)(T-1)$ to get 
+ \[RT=RT+2T-R-2.\] We can substitute $R=7T-16$ to get 
+ \[(7T-16)T=(7T-16)T+2T-(7T-16)-2.\] Simplifying, we have 
+ \[5T=14\] or $T=\frac{14}{5}.$ We can now find that $R=7\left(\frac{14}{5} \right)-16=\frac{18}{5}.$ Since $D=RT,$ $D=\frac{18}{5} \cdot \frac{14}{5}=\frac{252}{25}.$ That means that $m+n=\boxed{277}.$
+
+ 
+
+
+
+
+
+\textbf{Solution 3}
+
+Let Faraz's speed be $p$. Tanya runs $2$ mph faster, and Jose bikes $9$ mph faster.
+
+ Faraz walks for $1$ hour before Tanya starts, creating a gap of $p$ miles. Since Tanya gains on him at $2$ mph, the time it takes her to catch Faraz is
+ \[\frac{p}{2}\].
+
+ Tanya then runs for $1$ hour before Jose starts, creating a gap of $p+2$ miles. Jose gains on her at $7$ mph, so the time it takes him to catch Tanya is
+ \[\frac{p+2}{7}\].
+
+ Since they arrive at the park at the same time and Jose started $1$ hour later,
+ \[\frac{p}{2} - \frac{p+2}{7} = 1\].
+
+ Solving,
+ \begin{align*} 7p - 2(p+2) &= 14 \\ 5p &= 18 \\ p &= \frac{18}{5} \end{align*}
+
+
+ Faraz's total travel time is $\frac{p}{2}+1=\frac{14}{5}$ hours, so the distance is
+ \[D = \frac{18}{5}\cdot\frac{14}{5}=\frac{252}{25}\]
+
+ Thus,
+ \[m+n=\boxed{277}.\]
+
+ \textbf{Interesting note} This problem is identical to the 2020 Purple Comet Middle School \#8:\href{https://purplecomet.org/views/data/2020MSSolutions.pdf}{https://purplecomet.org/views/data/2020MSSolutions.pdf}
+
+ 
+
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Find the number of positive integer palindromes written in base $10$, with no zero digits, and whose digits add up to $13$. For example, $42124$ has these properties. Recall that a palindrome is a number whose representation reads the same from left to right as from right to left.
+
+
+ 
+ \textbf{Answer: }062
+
+
+
+\textbf{Solution 1}
+
+Let $d$ be the digit in the middle. The possible values are $d=1,3,5,7,9$. Considering the digits to the right of the middle digit, they must sum to $d'=6,5,4,3,2$ respectively. Notice this is the same as having $d'$ balls and putting a divider in any subset of the gaps between the balls, so in each case there are $2^{d'-1}$ possibilities. The answer is
+ \[2^5+2^4+2^3+2^2+2^1=\boxed{062}\]
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+To count possible numbers in a structured manner, we can split the casework depending on how many digits the number has. Only numbers with an odd number of digits are possible, because numbers with an even number of digits will have digits adding up to an even number, and 13 is odd.
+
+ \textbf{13 digits} There is one case for this, $1111111111111$.
+
+ \textbf{11 digits} We have $6$ possibilities: $5$ arrangements of $11112121111$ and one arrangement of $11111311111$.
+
+ \textbf{9 digits} There are $15$ possibilities: $6$ arrangements of $112212211$, $4$ arrangements of $111313111$, $4$ arrangements of $111232111$, and $1$ arrangement of $111151111$.
+
+ \textbf{7 digits} There are $20$ possibilities: $3$ arrangements of $1141411$, $1$ arrangement of $2221222$, $6$ arrangements of $1231321$, $3$ arrangements of $3113113$, $3$ arrangements of $1223221$, $3$ arrangements of $1125211$, and $1$ arrangement of $1117111$.
+
+ \textbf{5 digits} There are $15$ possibilities: $2$ arrangements of $15151$, $2$ arrangements of $42124$, $1$ arrangement of $33133$, $2$ arrangements of $13431$, $2$ arrangements of $32323$, $2$ arrangements of $13531$, $1$ arrangement of $22522$, $2$ arrangements of $12721$, and $1$ arrangement of $11911$.
+
+ \textbf{3 digits} There are $5$ possibilities: $292$, $373$, $454$, $535$, and $616$.
+
+ Since there are no other possibilities, the total number of possibilities is $1 + 6 + 15 + 20 + 15 + 5 = \boxed{062}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 3}
+
+In order for the sum of the digits of a palindrome to be odd, there must be an odd number of digits, and the middle digit must be odd.
+
+ We can construct all palindromes whose digits sum to 13 in the following way: 
+
+ Start with the digit $\overline{1}$.
+
+ We define the following 2 moves:
+
+ $A$: Increase the digits left-most and right-most digit by $1$ each. Note that if we only have $1$ digit, it is considered both the left-most and right-most digit, so we increase it by $2$.
+
+ 
+ \[\overline{abc\dots cba} \stackrel{A}{\rightarrow}\overline{(a+1)bc\dots cb(a+1)}\]
+
+ $B$: Add two digits of $1$ to surround our number.
+ \[\overline{abc\dots cba} \stackrel{B}{\rightarrow} \overline{1abc\dots cba1}\]
+
+ $A$ and $B$ contribute $2$ to a palindrome's sum. Therefore, we must apply $A$ or $B$ $6$ times to create a palindrome whose digits sum to $13$.
+
+ For example, here is the palindrome created by $AABBAB$:
+ \[\overline{1} \stackrel{A}{\rightarrow} \overline{3} \stackrel{A}{\rightarrow} \overline{5} \stackrel{B}{\rightarrow} \overline{151} \stackrel{B}{\rightarrow} \overline{11511}\stackrel{A}{\rightarrow} \overline{21512} \stackrel{B}{\rightarrow} \overline{1215121}\]
+
+ The total number of distinct palindromes are the number of ways to choose $A$ or $B$ $6$ times, which is $2^6 = 64$ ways.
+
+ However, we must account for exceptions, namely when a digit exceeds $9$ (number is no longer base 10)This will happen in two scenarios: $AAAAAA$ and $AAAAAB$.
+
+ Therefore, we will have a total of $64-2 = \boxed{062}$ valid palindromes.
+
+ 
+
+
+
+
+
+\textbf{Solution 4}
+
+The conclusions made at the beginning of Solution 3 are noted here: the number must have an odd number of digits and an odd number at its center.Let the central digit be $d$, and let the number have $2n + 1$ digits.Note that the sum of the digits at either side of the central digit must be equal to $\frac{13 - d}{2}$Each of these configurations corresponds to a star-and-bars case with no nonzero components where there are $\frac{13 - d}{2}$ stars and $n$ bars.Therefore, the number of ways to distribute them is ${\frac{13-d}{2} - 1 \choose n - 1}$The maximum value of $\frac{13-d}{2}$ is equal to $6$ where $d=1$, and the total number of cases in the case where there are $n$ digits can be expressed as:${6 - 1 \choose n - 1} + {5 - 1 \choose n - 1} + ... + {n - 1 \choose n - 1}$This is the case for only one such $d$ for one such $n$. The total number of valid palindromes for any given $n$ is equal to ${6 \choose n}$ by the Hockey-Stick Identity. The possible values of $n$ are $1$ through $6$ (the number can't be 1 - digit)However, the case where $n = 1$ and $d = 11$ is omitted because $11$ isn't a valid digit.Finally, we have a final total sum of ${6 \choose 1} +{6 \choose 2} + ... + {6 \choose 6} - 1 = \boxed{062}$ palindromes
+
+ 
+
+
+
+
+
+\textbf{Solution 5}
+
+Any palindrome with an odd sum must have an odd number of digits. For a positive integer $n$, the number of palindromic compositions of $n$ is
+ \[2^{\lfloor n/2 \rfloor}\]
+
+ For $n=13$, this gives
+ \[2^{\lfloor 13/2 \rfloor} = 2^6 = 64.\]
+
+ Since the digits are in base $10$, no part of the composition may be $10$ or greater. The digits on the sides cannot exceed $9$, since the maximum possible sum on each side is
+ \[\frac{13-1}{2} = 6.\]Thus, the only possible violations occur when the middle digit is at least $10$.
+
+ Because the total sum is $13$, the middle digit must be odd. The only invalid odd middle digits are $11$ and $13$, giving the following invalid palindromes:- $(13)$- $(1,11,1)$
+
+ Subtracting these from the total,
+ \[64 - 2 = 62.\]
+
+ Therefore, the final answer is $\boxed{062}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 6 (similar to 4)}
+
+Suppose we can construct such a palindrome via choosing specific subsets of 1, 2, 3, 4, 5, 6 elements each and adding an additional element of the set $S = \{a,b,c,d,\dots,g \}$. While casework is most definitely an option, and is most plausible, just consider how the casework would look. All elements of $S$ must contribute an odd number as 13 is odd. So, suppose 13 digits for instance, and thus $a+b+c+d+e+f = \frac{13-g}{2} = 6,5,4,3,2$. Obviously, the LHS has six digits, so the RHS must have $\le 6$ digits. When the casework continues, the sets proceed in a downward momentum, particularly, subtracting one element from the LHS and adding in the greatest integer less than the previous integer every time. So, we obtain $a+b+c+d+e = 6,5$, $\dots$, $a = 6,5,4,3,2,1$. In each of these cases, we have $\binom{6-1}{6-1} + \binom{6-1}{5-1} + \binom{5-1}{5-1} + \dots + \binom{1}{0}$. Through Hockey Stick Identity, each of these cases provide $\binom{5}{5} + \binom{6}{2} + \binom{6}{3} + \binom{6}{4} + \binom{6}{5} + 5 = 2^6 - 2$ cases, or $\boxed{62}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 7}
+
+First, we immediately notice that a number with an even number of digits doesn't work. Because if the number has an even number of digits, it will be of the form $a_1 b_1 c_1 \cdots c_1 b_1 a_1$, which, in short, means that there will be two copies of each digit in the number. But then the sum of the digits most certainly will be even, and $13$ is not even. Thus, the palindrome must have an odd number of digits. Note that the minimum digit, since each digit is nonzero, is $1$. Thus, the maximum number of digits is contained in the number $111\cdots1$ which has exactly 13 digits. So we only need to consider a couple of cases.
+
+ Case 1: $1$ digit numberThis isn't possible, as it will require that digit to be $13$, but digits only go up to $9$. 
+
+ Case 2:$3$ digit number
+
+ We have $aba$ as the $3$ digit palindrome. Thus, $2a + b = 13$. From here, we note $2a = 13 - b$. Note that $13 - b \geq 13 - 1 = 12$ and $13 - b \leq 13 - 9 = 4$. Thus, $4 \leq 2a \leq 12 \implies 2 \leq a \leq 6$. This gives us $6 - 2 + 1 = 5$ numbers.
+
+ Case 3: $5$ digit number
+
+ We have $abcba$ as the $5$ digit palindrome. Thus, $2a + 2b + c = 13 \implies 2(a + b) + c = 13$. Again, we note that $2(a + b) = 13 - c$ and $13 - c$ ranges from $4$ to $12$ as $c$ is a nonzero digit. Thus, $a + b$ ranges from $2$ to $6$. Now, we can apply Stars and Bars. Since $a, b$ are nonzero, let's replace $a$ with $a_1 + 1$ and $b$ with $b_1 + 1$ so that $a_1 + 1 + b_1 + 1$ ranges from $2$ to $6$. This means $a_1 + b_1$ ranges from $0$ to $4$. Now, by Stars and Bars, we get
+
+ $\binom{0 + 2 - 1}{2 - 1} + \binom{1 + 2 - 1}{2 - 1} + \cdots + \binom{4 + 2 - 1}{2 - 1} \implies 1 + 2 + 3 + 4 + 5 = 15$ numbers.
+
+ Case 4: $7$ digit number
+
+ We have $abcdcba$ as the $7$ digit palindrome. Thus, $2(a + b + c) + d = 13$. From here, we should automatically convert to noting that $a + b + c$ ranges from $2$ to $6$. Again, we replace everything by $a_1 + 1, b_1 + 1, c_1 + 1$ to get
+
+ $a_1 + b_1 + c_1$ ranges from $-1$ to $3$. We can discard $-1$ and get that $a_1 + b_1 + c_1$ ranges from $0$ to $3$. Thus, by Stars and Bars, we get
+
+ $\binom{0 + 3 - 1}{3 - 1} + \cdots + \binom{3 + 3 - 1}{3 - 1} = \binom{2}{2} + \binom{3}{2} + \binom{4}{2} + \binom{5}{2} = \binom{6}{3} = 20$ numbers where the last step follows from Hockey-Stick Identity. 
+
+ Case 5: $9$ digit number
+
+ We have $abcdedcba$ as the $9$ digit palindrome. Thus, $a + b + c + d$ ranges from $2$ to $6$ and by replacing each variable to change it to nonnegative numbers to apply Stars and Bars, we get
+
+ $a_1 + b_1 + c_1 + d_1$ ranges from $-2$ to $2$ and we discard $-2$ and $-1$ so we get that the expression ranges from $0$ to $2$. Once again, by Stars and Bars, we get
+
+ $\binom{0 + 4 - 1}{4 - 1} + \cdots + \binom{2 + 2 - 1}{2 - 1} = \binom{3}{3} + \binom{4}{3} + \binom{5}{3} = \binom{6}{4} = 15$ numbers where the last step follows from Hockey-Stick Identity.
+
+ Case 6: $11$ digit number
+
+ We have $abcdefedcba$ as the $11$ digit palindrome. We perform all the above steps and eventually get $a_1 + b_1 + \cdots + e_1$ ranges from $-3$ to $1$. So we only take $0$ and $1$. By Stars and Bars, we get
+
+ $\binom{0 + 5 - 1}{5 - 1} + \binom{1 + 5 - 1}{5 - 1} = \binom{4}{4} + \binom{5}{4} = \binom{6}{5} = 6$ numbers where the last step again follows from Hockey-Stick Identity.
+
+ Case 7: $13$ digit number
+
+ We have $abcdefgfedcba$ as the $13$ digit number. Again, by going through all the steps, we get $a_1 + \cdots + f_1$ ranges from $-4$ to $0$. Thus, we only consider $0$. By Stars and Bars, we get
+
+ $\binom{0 + 6 - 1}{6 - 1} = \binom{5}{5} = 1$ number.
+
+ As we established earlier that for this problem, $13$ digits was the limit, we have covered all the cases. Finally, we add up to get
+
+ $5 + 15 + 20 + 15 + 6 + 1 = \boxed{062}$
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) A hemisphere with radius $200$ sits on top of a horizontal circular disk with radius $200$, and the hemisphere and disk have the same center. Let $\mathcal{T}$ be the region of points $P$ in the disk such that a sphere of radius $42$ can be placed on top of the disk at $P$ and lie completely inside the hemisphere. The area of $\mathcal{T}$ divided by the area of the disk is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
+
+
+ 
+ \textbf{Answer: }079
+
+
+
+\textbf{Solution 1}
+
+$\mathcal T$ will be the shape of a circle by symmetry. To find the radius, imagine the case in which the sphere is in contact with the very edge of $\mathcal T$. Let the center of the sphere be $S$, and the center of the hemisphere be $H$. Imagine the vertical plane containing $S$ and $H$.
+
+ 
+On the plane, a right triangle exists with vertices $S$, $H$, and $P$ (the point of tangency between sphere and disk). We know $SH$ is $200 - 42 = 158$, and $SP$ is $42$, the radius of the sphere. 
+
+ 
+Now we can use the Pythagorean theorem to get the radius of $\mathcal T$ as $2\sqrt{5800}$. Finding the area of $\mathcal T$ and dividing by the area of the disk will give you a final answer of $\frac{29}{50}$, or $\boxed{079}$.
+
+ 
+Note: Using the Pythagorean theorem on big numbers can be tricky, so we can scale down the triangle by a factor of two and rescale it when we find the third side.
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+By symmetry, $\mathcal T$ is a disk. Consider the boundary case where the sphere of radius $42$ is internally tangent to the hemisphere. Let $H$ be the center of the hemisphere, $A$ the point of tangency, and let line $HA$ intersect the small sphere again at $M$. Let $P$ be the point on the disk directly below the center of the small sphere.
+
+ Since the hemisphere has radius $200$, $HA=200$. The diameter of the small sphere is $84$,so $HM=200-84=116$. By Power of a Point at $H$, $HP^2=HA\cdot HM=200\cdot116.$
+
+ Thus the radius $r$ of $\mathcal T$ satisfies $r^2=200\cdot116$.
+
+ Our desired ratio is
+
+ $\frac{\pi r^2}{\pi(200)^2}=\frac{200\cdot116}{200^2}=\frac{29}{50}$. Therefore, $p+q=\boxed{79}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (Sol 1 + Diagram)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ $\mathcal{T}$ is the circle in which the centre of the sphere of radius 42 can be placed through rotational symmetry: When we revolve the circle along the hemisphere's point of tangency with the regular sphere inclusive with the circles point of tangency with the plane $P$, we obtain a circle, as shown above.
+
+ Consider the cross section $\mathcal{P}$ of the plane consisting of the centre of both the Hemisphere and the circle. 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ We find the area of this region. We approach like in solution 1, using the Pythagorean Theorem and finding the radius of $\mathcal{T}$ as $20\sqrt{58}$. The area of $\mathcal{T}$ is then $23200 \pi$ and the area of the disk is $40000\pi$ so the ration is $\frac{232}{400} = \frac{29}{50} \implies \boxed{79}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Find the number of integers less than or equal to $100$ that are equal to $a+b+ab$ for some choice of distinct positive integers $a$ and $b$.
+
+
+ 
+ \textbf{Answer: }070
+
+
+
+\textbf{Solution 1}
+
+Let $x$ be equal to $a+b+ab$. Adding 1 to both sides, we get $a+b+ab+1=(a+1)(b+1)=x+1$. Because we know $a$ and $b$ have to be positive, this means that $x+1$ cannot be prime. We have $25$ primes less than $100$, but we have to also count $101$ since $x=100$ is still in the range of $1$ to $100$. Another thing we can notice is that perfect squares of primes don’t work either. The primes whose squares are less than $100$ are $2$,$3$,$5$, and $7$. Therefore, the answer is $100-26-4=\boxed{070}$.
+
+ - ChickensEatGrass
+
+ 
+
+
+
+
+
+\textbf{Solution 2 (Basically equivalent to solution 1, but a little more explanation)}
+
+Rewrite the expression as$a + b + ab = (a + 1)(b + 1)-1$.
+
+ Let $x = a + 1$ and $y = b + 1$. Then $x$ and $y$ are integers at least $2$, and since $a$ and $b$ are distinct, $x \neq y$. The expression becomes $xy - 1$, and the condition that the value be at most $100$ is equivalent to $xy \leq 101$.
+
+ Thus we are counting the integers of the form $xy-1$ with $x$ and $y$ distinct integers at least $2$ and product at most $101$. Different choices of $x$ and $y$ that give the same product produce the same value, so this reduces to counting integers $m = xy \neq 101$ that can be written as a product of two distinct integers at least $2$.
+
+ The number $m$ cannot be $1$ or a prime. Most composite numbers work, but the exception is when $m$ is a perfect square whose only factorization uses equal factors, since that would force $x = y$, which is not allowed. The only such squares at most $101$ are $4$, $9$, $25$, and $49$. Every other composite number at most $101$ has a factorization with two distinct factors at least $2$.
+
+ There are $101$ integers from $1$ to $101$. Removing $1$ leaves $100$. Among these, $26$ are prime, so there are $74$ composite numbers. Excluding the four squares $4$, $9$, $25$, and $49$ leaves $70$ valid values of $m$. Each gives a distinct integer $m - 1$ at most $100$.
+
+ Therefore, the number of integers less than or equal to $100$ that can be written in the specified form is $\boxed{070}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (Bash)}
+
+We take inspiration from the \href{https://artofproblemsolving.com/wiki/index.php?title=Sieve\_of\_Eratosthenes}{Sieve of Eratosthenes}
+
+ Case 1: $a=1$ and $b>1 \rightarrow 1+2b$ 
+
+ We can do two things (and more generally for $a=2, 3,$ etc)1. We find the smallest value that satisfies the expression $1+2b$, and use the period of $2$ to box numbers that are $2$ more than that minimum2. Cross out any number below $1+2b$ that is not circled.Boxing $5$ and crossing out $1,2,3,4$ and circling all $5,7,9, \dots, 97, 99$ gives us the following:
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & 6 & \boxed{7} & 8 & \boxed{9} & 10 \\ \hline\boxed{11} & 12 & \boxed{13} & 14 & \boxed{15} & 16 & \boxed{17} & 18 & \boxed{19} & 20 \\ \hline\boxed{21} & 22 & \boxed{23} & 24 & \boxed{25} & 26 & \boxed{27} & 28 & \boxed{29} & 30 \\ \hline\boxed{31} & 32 & \boxed{33} & 34 & \boxed{35} & 36 & \boxed{37} & 38 & \boxed{39} & 40 \\ \hline\boxed{41} & 42 & \boxed{43} & 44 & \boxed{45} & 46 & \boxed{47} & 48 & \boxed{49} & 50 \\ \hline\boxed{51} & 52 & \boxed{53} & 54 & \boxed{55} & 56 & \boxed{57} & 58 & \boxed{59} & 60 \\ \hline\boxed{61} & 62 & \boxed{63} & 64 & \boxed{65} & 66 & \boxed{67} & 68 & \boxed{69} & 70 \\ \hline\boxed{71} & 72 & \boxed{73} & 74 & \boxed{75} & 76 & \boxed{77} & 78 & \boxed{79} & 80 \\ \hline\boxed{81} & 82 & \boxed{83} & 84 & \boxed{85} & 86 & \boxed{87} & 88 & \boxed{89} & 90 \\ \hline\boxed{91} & 92 & \boxed{93} & 94 & \boxed{95} & 96 & \boxed{97} & 98 & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+Case 2: we have $a=2, b>2 \rightarrow 2+3b$ 
+
+ 1. minimum is $b=3 \rightarrow 11.$
+
+ 2. we cross out $6, 8, 10.$ 
+
+ 3 we add $14, 20, 26 \dots$ etc.
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & 12 & \boxed{13} & \boxed{14} & \boxed{15} & 16 & \boxed{17} & 18 & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & 22 & \boxed{23} & 24 & \boxed{25} & \boxed{26} & \boxed{27} & 28 & \boxed{29} & 30 \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & 34 & \boxed{35} & 36 & \boxed{37} & \boxed{38} & \boxed{39} & 40 \\ \hline\boxed{41} & 42 & \boxed{43} & \boxed{44} & \boxed{45} & 46 & \boxed{47} & 48 & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & 52 & \boxed{53} & 54 & \boxed{55} & \boxed{56} & \boxed{57} & 58 & \boxed{59} & 60 \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & 64 & \boxed{65} & 66 & \boxed{67} & \boxed{68} & \boxed{69} & 70 \\ \hline\boxed{71} & 72 & \boxed{73} & \boxed{74} & \boxed{75} & 76 & \boxed{77} & 78 & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & 82 & \boxed{83} & 84 & \boxed{85} & \boxed{86} & \boxed{87} & 88 & \boxed{89} & 90 \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & 94 & \boxed{95} & 96 & \boxed{97} & \boxed{98} & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+
+
+ Case 3: $3+4b.$
+
+ 1. minimum is $19.$
+
+ 2. note nothing extra gets boxed (odd).
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & 12 & \boxed{13} & \boxed{14} & \boxed{15} & \cancel{16} & \boxed{17} & \cancel{18} & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & 22 & \boxed{23} & 24 & \boxed{25} & \boxed{26} & \boxed{27} & 28 & \boxed{29} & 30 \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & 34 & \boxed{35} & 36 & \boxed{37} & \boxed{38} & \boxed{39} & 40 \\ \hline\boxed{41} & 42 & \boxed{43} & \boxed{44} & \boxed{45} & 46 & \boxed{47} & 48 & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & 52 & \boxed{53} & 54 & \boxed{55} & \boxed{56} & \boxed{57} & 58 & \boxed{59} & 60 \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & 64 & \boxed{65} & 66 & \boxed{67} & \boxed{68} & \boxed{69} & 70 \\ \hline\boxed{71} & 72 & \boxed{73} & \boxed{74} & \boxed{75} & 76 & \boxed{77} & 78 & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & 82 & \boxed{83} & 84 & \boxed{85} & \boxed{86} & \boxed{87} & 88 & \boxed{89} & 90 \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & 94 & \boxed{95} & 96 & \boxed{97} & \boxed{98} & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+Case 4: $4+5b.$
+
+ 1. minimum is $29.$
+
+ 2. column of $4$ gets boxed. 
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & \cancel{12} & \boxed{13} & \boxed{14} & \boxed{15} & \cancel{16} & \boxed{17} & \cancel{18} & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & \cancel{22} & \boxed{23} & \cancel{24} & \boxed{25} & \boxed{26} & \boxed{27} & \cancel{28} & \boxed{29} & 30 \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & \boxed{34} & \boxed{35} & 36 & \boxed{37} & \boxed{38} & \boxed{39} & 40 \\ \hline\boxed{41} & 42 & \boxed{43} & \boxed{44} & \boxed{45} & 46 & \boxed{47} & 48 & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & 52 & \boxed{53} & \boxed{54} & \boxed{55} & \boxed{56} & \boxed{57} & 58 & \boxed{59} & 60 \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & \boxed{64} & \boxed{65} & 66 & \boxed{67} & \boxed{68} & \boxed{69} & 70 \\ \hline\boxed{71} & 72 & \boxed{73} & \boxed{74} & \boxed{75} & 76 & \boxed{77} & 78 & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & 82 & \boxed{83} & \boxed{84} & \boxed{85} & \boxed{86} & \boxed{87} & 88 & \boxed{89} & 90 \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & \boxed{94} & \boxed{95} & 96 & \boxed{97} & \boxed{98} & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+Case 5: $5+6b.$
+
+ 1. minimum is $41.$
+
+ 2. no boxes (odd). 
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & \cancel{12} & \boxed{13} & \boxed{14} & \boxed{15} & \cancel{16} & \boxed{17} & \cancel{18} & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & \cancel{22} & \boxed{23} & \cancel{24} & \boxed{25} & \boxed{26} & \boxed{27} & \cancel{28} & \boxed{29} & \cancel{30} \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & \boxed{34} & \boxed{35} & \cancel{36} & \boxed{37} & \boxed{38} & \boxed{39} & \cancel{40} \\ \hline\boxed{41} & 42 & \boxed{43} & \boxed{44} & \boxed{45} & 46 & \boxed{47} & 48 & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & 52 & \boxed{53} & \boxed{54} & \boxed{55} & \boxed{56} & \boxed{57} & 58 & \boxed{59} & 60 \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & \boxed{64} & \boxed{65} & 66 & \boxed{67} & \boxed{68} & \boxed{69} & 70 \\ \hline\boxed{71} & 72 & \boxed{73} & \boxed{74} & \boxed{75} & 76 & \boxed{77} & 78 & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & 82 & \boxed{83} & \boxed{84} & \boxed{85} & \boxed{86} & \boxed{87} & 88 & \boxed{89} & 90 \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & \boxed{94} & \boxed{95} & 96 & \boxed{97} & \boxed{98} & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+Case 6: $6+7b.$
+
+ 1. minimum is $55.$
+
+ 2. no trick here (it's a bash what do you expect).
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & \cancel{12} & \boxed{13} & \boxed{14} & \boxed{15} & \cancel{16} & \boxed{17} & \cancel{18} & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & \cancel{22} & \boxed{23} & \cancel{24} & \boxed{25} & \boxed{26} & \boxed{27} & \cancel{28} & \boxed{29} & \cancel{30} \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & \boxed{34} & \boxed{35} & \cancel{36} & \boxed{37} & \boxed{38} & \boxed{39} & \cancel{40} \\ \hline\boxed{41} & \cancel{42} & \boxed{43} & \boxed{44} & \boxed{45} & \cancel{46} & \boxed{47} & \cancel{48} & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & \cancel{52} & \boxed{53} & \boxed{54} & \boxed{55} & \boxed{56} & \boxed{57} & 58 & \boxed{59} & 60 \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & \boxed{64} & \boxed{65} & 66 & \boxed{67} & \boxed{68} & \boxed{69} & 70 \\ \hline\boxed{71} & 72 & \boxed{73} & \boxed{74} & \boxed{75} & \boxed{76} & \boxed{77} & 78 & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & 82 & \boxed{83} & \boxed{84} & \boxed{85} & \boxed{86} & \boxed{87} & 88 & \boxed{89} & \boxed{90} \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & \boxed{94} & \boxed{95} & 96 & \boxed{97} & \boxed{98} & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+Case 7: $7+8b.$
+
+ 1. minimum is $71.$
+
+ 2. no box (odd).
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & \cancel{12} & \boxed{13} & \boxed{14} & \boxed{15} & \cancel{16} & \boxed{17} & \cancel{18} & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & \cancel{22} & \boxed{23} & \cancel{24} & \boxed{25} & \boxed{26} & \boxed{27} & \cancel{28} & \boxed{29} & \cancel{30} \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & \boxed{34} & \boxed{35} & \cancel{36} & \boxed{37} & \boxed{38} & \boxed{39} & \cancel{40} \\ \hline\boxed{41} & \cancel{42} & \boxed{43} & \boxed{44} & \boxed{45} & \cancel{46} & \boxed{47} & \cancel{48} & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & \cancel{52} & \boxed{53} & \boxed{54} & \boxed{55} & \boxed{56} & \boxed{57} & \cancel{58} & \boxed{59} & \cancel{60} \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & \boxed{64} & \boxed{65} & \cancel{66} & \boxed{67} & \boxed{68} & \boxed{69} & \cancel{70} \\ \hline\boxed{71} & 72 & \boxed{73} & \boxed{74} & \boxed{75} & \boxed{76} & \boxed{77} & 78 & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & 82 & \boxed{83} & \boxed{84} & \boxed{85} & \boxed{86} & \boxed{87} & 88 & \boxed{89} & \boxed{90} \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & \boxed{94} & \boxed{95} & 96 & \boxed{97} & \boxed{98} & \boxed{99} & 100 \\ \hline\end{array}
+
+ 
+Case 8: $8+9b.$
+
+ 1. minimum $89.$
+
+ 2. (case 9 exceeds 100) so we can cross everything out now.
+
+ 
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\hline\cancel{1} & \cancel{2} & \cancel{3} & \cancel{4} & \boxed{5} & \cancel{6} & \boxed{7} & \cancel{8} & \boxed{9} & \cancel{10} \\ \hline\boxed{11} & \cancel{12} & \boxed{13} & \boxed{14} & \boxed{15} & \cancel{16} & \boxed{17} & \cancel{18} & \boxed{19} & \boxed{20} \\ \hline\boxed{21} & \cancel{22} & \boxed{23} & \cancel{24} & \boxed{25} & \boxed{26} & \boxed{27} & \cancel{28} & \boxed{29} & \cancel{30} \\ \hline\boxed{31} & \boxed{32} & \boxed{33} & \boxed{34} & \boxed{35} & \cancel{36} & \boxed{37} & \boxed{38} & \boxed{39} & \cancel{40} \\ \hline\boxed{41} & \cancel{42} & \boxed{43} & \boxed{44} & \boxed{45} & \cancel{46} & \boxed{47} & \cancel{48} & \boxed{49} & \boxed{50} \\ \hline\boxed{51} & \cancel{52} & \boxed{53} & \boxed{54} & \boxed{55} & \boxed{56} & \boxed{57} & \cancel{58} & \boxed{59} & \cancel{60} \\ \hline\boxed{61} & \boxed{62} & \boxed{63} & \boxed{64} & \boxed{65} & \cancel{66} & \boxed{67} & \boxed{68} & \boxed{69} & \cancel{70} \\ \hline\boxed{71} & \cancel{72} & \boxed{73} & \boxed{74} & \boxed{75} & \boxed{76} & \boxed{77} & \cancel{78} & \boxed{79} & \boxed{80} \\ \hline\boxed{81} & \cancel{82} & \boxed{83} & \boxed{84} & \boxed{85} & \boxed{86} & \boxed{87} & \cancel{88} & \boxed{89} & \boxed{90} \\ \hline\boxed{91} & \boxed{92} & \boxed{93} & \boxed{94} & \boxed{95} & \cancel{96} & \boxed{97} & \boxed{98} & \boxed{99} & \cancel{100} \\ \hline\end{array}
+
+ 
+Counting the ones that are boxed we get $\boxed{070}$ numbers.
+
+ 
+
+
+
+
+
+\textbf{Solution 4 (Simon's favorite factoring trick!)}
+
+Using Simon's favorite factoring trick, $a+b+ab+1\leq 101$, or $(a+1)(b+1)\leq 101$. Because $a, b$ are distinct, all squares that don't have a non square representation, which at or below $100$ are removed from the set, which are only five of them $(1^2, 2^2, 3^2, 5^2, 7^2)$. This means $95$ remain.
+
+ More can be removed, such as primes, that cannot be factorized into a number less than or equal to $101$.By beast academy memorization, there are 25 primes less than or equal to 101. $95 - 25 = \fbox{070}$, which is the answer.
+
+ 
+
+
+
+
+
+\textbf{Solution 5 (SFFT + Solution 1, Proving no other cases exist)}
+
+Consider $k \in \{1, 2, \dots, 100 \}$. Then, $a + b + ab = k$ so $(a+1)(b+1) = k+1$. That implies $k+1 \in \{2, 3, \dots, 101 \}$. All primes in this list fail as one of $a, b = 0$ which is not considered a positive integer, in which a quick counting check gives 74. However, perfect squares of PRIMES also fail as both $a$ and $b$ would be forced to the same prime number $p$ in which we have 4 cases, so 74. We now show all other cases work.
+
+ If primes don't work, check cubes, in which we can factor to $p$ and $p^2$ anyways. Check fourth powers, which can be a cube times another power. For any $p^n$ for $n \ge 3$, we can factor into $p^{n-1}$ and $p$, which works. Therefore, all other values work.
+
+ For any integer that has a prime factorization with more than 2 primes, say $x$ and $y$ to some $n$, each going to be less than 101, simply give those values to $a$ and $b$ to obtain a valid ordering.
+
+ The answer is $74-4 = \boxed{70}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) A plane contains points $A$ and $B$ with $AB=1$. Point $A$ is rotated in the plane counterclockwise through an acute angle $\theta$ around point $B$ to point $A'$. Then $B$ is rotated in the plane clockwise through angle $\theta$ around point $A'$ to point $B'$. Suppose $AB'=\frac{4}{3}$. The value of $\cos\theta$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
+
+
+ 
+ \textbf{Answer: }065
+
+
+
+\textbf{Solution 1}
+
+The points $A$, $B$, $A'$, $B'$, make a parallelogram (because we have a pair of equal parallel sides) with one pair of sides of length $1$, diagonals of $\frac{4}{3}$ and $1$. The diagonals split the parallelogram into four triangles. Because parallelogram diagonals bisect each other, we know that one of the triangles containing $\theta$ will have side lengths of $\frac{2}{3}$ opposite of $\frac{1}{2}$, and $1$. Using law of cosines, we can find that $cos(\theta)=29/36$, and the answer is $\boxed{065}$.
+
+ 
+Note: We have diagonals of length $1$ because a rotated point sweeps out a with radius $1$. Here, the wedge is the circle with center $A$ and arc $BB'$.~math660
+
+ 
+
+
+
+
+
+\textbf{Solution 2 (Straight to the point)}
+
+Notice that $\angle ABA ' = \theta$, $\angle A ' B B ' = 90 - \frac{\theta}{2}$, so $\angle ABB ' = 90 + \frac{\theta}{2}$. Law of Cosines on $\triangle ABB '$ gives $\sin ^2 (\frac{\theta}{2}) = \frac{7}{72}$, so double angle formula shows $\cos \theta = \frac{29}{36}$ and the sum is $29 + 36 = \boxed {065}$. 
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (Outline how to solve)}
+
+Drawing the diagram we get parallel lines (due to congruent angles). We can then use congruent triangles to realize that the side lengths of the triangle are $1, 1/2,$ and $2/3$. (1/2 is half of 1 and 2/3 is half of 4/3).We then use law of cosines on this triangle and get cos theta =$\frac{29}{36}$ we then get $\boxed{065}$ by answer extraction
+
+ 
+
+
+
+
+
+\textbf{Solution 4 (Pythagorean Theorem, no fancy LoC)}
+
+Drawing the diagram out and placing an altitude from $A'$ perpendicular to $AB$, we can see that $AB'$ is simply a diagonal of the parallelogram. 
+
+ Therefore, we can create an equation in terms of $\theta$. The total horizontal distance is equal to $1 + 1 - (overlap)$, and we can see that overlap is simply just $\cos \theta$ (by simple right-triangle trigonometry definitions). Thus, the total horizontal distance is $2 - \cos \theta$. 
+
+ Next, we can see that the total vertical distance is just $\sin \theta$, so now we can create our equation: 
+
+ $(2 - \cos \theta) ^2 + (\sin \theta) ^2 = (4/3)^2$. 
+
+ Now, we let $\cos \theta = a$, and $\sin \theta$ as $\sqrt{1-a^2}$ (by the Pythagorean Identity). 
+
+ This eventually turns into a linear equation and we can see that the answer is $29/36$ thus $\boxed{065}$. 
+
+ 
+
+
+
+
+
+\textbf{Solution 5 (Complex Plane Solution Outline)}
+
+Let the complex numbers that represent $A,B,A',B'$ be $a,b,a',b'$. Let $b=0,a=1$, then, after the first rotation:
+
+ 
+ \[a'=a\cdot e^{i\theta}=e^{i\theta}.\]
+
+ Now perform the second rotation keeping in mind that it is clockwise:
+
+ 
+ \[b'=e^{i(-\theta)}(b-a')+a'.\]
+
+ With enough patience, this simplifies to:
+
+ 
+ \[b'=e^{i\theta}-1.\]
+
+ Now compute the distance $AB'$:
+
+ 
+ \[|b'-a|=|e^{i\theta}-2|=|(\cos\theta-2)+i\sin\theta|=\frac{4}{3}\]
+
+ 
+ \[\sqrt{(\cos\theta-2)^2+(\sin\theta})^2=\frac{4}{3}\]
+
+ After some hacking at the equation, this does give the desired answer of $\cos(\theta)=\frac{29}{36}$.
+
+ -TheMathCanadian
+
+ 
+
+
+
+
+
+\textbf{Solution 6 (Inspired by 2026 AIME I Q10)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_5_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Let $A=(0,0)$ and $B=(1,0)$. Then, note rotating a point $P$ about a point $Q$ counterclockwise is $P' = P + R_{\theta}(P-Q)$ where $R_{\theta}(x,y)= (\cos(\theta)x - \sin(\theta)y, \sin(\theta)x + \cos(\theta)y)$. Applying this gives $A' = (0,0) + R_\theta(-1,0)$ which evaluates to $A'(1-\cos(\theta), -\sin(\theta))$. Now, rotate $B$ about $A'$ clockwise, and we have $B' = (1,0) + R_{\theta'}(B-A')$ where $R_{\theta'}(x,y) = (\cos(\theta)x + \sin(\theta)y, -\sin(\theta)x + \cos(\theta)y)$, so $B' = (2 - \cos(\theta), -\sin(\theta))$. The distance $AB'$ is $\frac{4}{3}$ so we have $AB'^2 = (2-\cos(\theta))^2 + \sin^2(\theta)$ so $\frac{16}{9} = 5 - 4\cos(\theta)$. That means $-4\cos(\theta) = -\frac{29}{9}$ and so $\cos(\theta) = \frac{29}{36}$. The answer is $\boxed{65}$
+
+ 
+
+
+
+
+
+\textbf{Solution 7 (Pythagorean Theorem Only)}
+
+Let $C$ be the intersection point of $AB'$ and $A'B$. Let $D$ be the point on $AB'$ such that $A'D$ is perpendicular to $AB'$. Let $CD=x$ and $A'D=y$. We know that $B'C=\frac{1}{2}$(because AA'B'B is a parallelogram), $A'B'=1$, and $A'C=\frac{2}{3}$. Then, by applying pythagorean theorem on $\triangle A'DB'$ and $\triangle A'DC$, we know that
+ \[(x+\frac{1}{2})^2+y^2=1^2\]
+ \[x^2+y^2=(\frac{2}{3})^2\]Solve for $x$ and get $x=\frac{11}{36}$For $\triangle ADC$, $\cos(\theta)=\frac{x+\frac{1}{2}}{1}=\frac{29}{36}$The answer is therefore $\boxed{065}$
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) The product of all positive real numbers $x$ satisfying the equation 
+
+ \[\sqrt[20]{x^{\log_{2026}x}}=26x\]
+is an integer $P$. Find the number of positive integer divisors of $P$.
+
+
+ 
+ \textbf{Answer: }441
+
+
+
+\textbf{Solution 1}
+
+Raising both sides to the power of 20, we have 
+ \[x^{\log_{2026}x} = (26x)^{20}\] Taking log base $x$ of both sides, we obtain 
+ \[\log_{2026}x = 20 \log_{x}26+20\] Rewrite in log base $e$: 
+ \[\dfrac{\ln x}{\ln 2026} = \dfrac{20 \ln 26}{\ln x} + 20\] Let $y = \ln x$. Substituting and multiplying both sides by $y \cdot \ln 2026$, we obtain 
+ \[y^2 = 20 \ln 26 \ln 2026 + 20 \ln 2026 \cdot y\] This becomes 
+ \[y^2 - 20  \ln 2026 \cdot y - 20 \ln 26 \ln 2026 = 0\] Note that there are $2$ solutions $x_1$ and $x_2$. We wish to find $x_1 \cdot x_2$, or $e^{y_1 + y_2}$. By Vieta's, 
+ \[y_1 + y_2 = 20 \ln 2026\] Then 
+ \[e^{y_1 + y_2} = e^{20 \ln 2026} = (e^{\ln 2026})^{20} = 2026^{20} = 1013^{20} \cdot 2^{20}\] Then our answer is 
+ \[21 \cdot 21 = \boxed{441} \text{. } \square\]~BrocSoc
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+Raising both sides to the $20^{\text{th}}$ power:
+ \[x^{\log_{2026} x}=26^{20}x^{20}\]Let $x=2026^u$. Now the equation becomes:
+ \[2026^{u^2}=26^{20}2026^{20u}\]
+ \[2026^{u^2-20u}=26^{20}\]The sum of all $u$ is $20$, therefore the product of all $x$ is $2026^{20}=2^{20}\cdot 1013^{20}$ which has $\boxed{441}$ factors. 
+
+ Another version of solution 2 (more in depth) is found in solution 5.
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (Cheese)}
+
+Just guess $2026^{20}$ or $26^{20}$.Each of these have  $21 * 21 = \boxed{441}$ factors.
+
+ Note to author: it is not intuitively clear why one should guess these numbers, please provide more rationale
+
+ Note to note: there are actually not even that many to try. If we only use the numbers $20,26, 2026$, and raise one to the power of another, we see that anything raised to $2026$ will have way too many factors for the AIME answer extraction, and $20^{26}$ also has too many factors for the answer extraction. $2026^{26}$, as it turns out, has $729$ factors, but as long as you don't pull the unlucky d3 (if you choose one of these three options that give an available answer extraction), you actually will get $441$. 
+
+ 
+
+
+
+
+
+\textbf{Solution 4 (Similar to Solution 2)}
+
+Consider the substitution $y=\log_{2026} x$, so $2026^y=x$. Then we have$x^y=2026^{y^2}$, so$2026^{\frac{y^2}{20}}=26\cdot 2026^y$, which implies$2026^{\frac{y^2}{20-y}}=26$.Thus,$\frac{y^2}{20-y}=\log_{2026} 26$, so$y^2-20y-20\log_{2026} 26=0$.We see that this quadratic has real solutions. Let the corresponding solutions for $x$ be $2026^{y_1}$ and $2026^{y_2}$. Then the product of the solutions for $x$ is$2026^{y_1+y_2}$.By Vieta’s formulas, $y_1+y_2=20$, so the product of the solutions for $x$ is$2026^{20}$.Factoring, $2026=2\cdot 1013$, so$2026^{20}=2^{20}\cdot 1013^{20}$, which has$(20+1)(20+1)=441$ divisors.
+
+ 
+
+
+
+
+
+\textbf{Solution 5}
+
+Take the 20th power on both sides to obtain
+ \[x^{\log_{2026}x} = (26x)^{20}\]Given the condition $\log_{2026}(x)$, we find that this equals $a$. Then, $x = 2026^a$. Thus the expression simplifies to
+ \[2026^{a^2} = (26 \cdot 2026^a)^{20}\]
+ \[2026^{a^2} = 26^{20} \cdot 2026^{20a}\]In which we may divide by $2026^{20a}$ on both sides to obtain
+ \[\frac{2026^{a^2}}{2026^{20a}} = 26^{20}\]
+ \[2026^{a^2 - 20a} = 26^{20}\]Taking the logarithm base $2026$ on both sides results in the quadratic
+ \[a^2 - 20a - \log_{2026}(26^{20}) = 0\]in simplest form is
+ \[a^2 - 20a - 20 \log_{2026}(26) = 0.\]The values of $a$ are determined by
+ \[a = \frac{20 \pm \sqrt{20^2 + 4 \cdot 20 \log_{2026}(26)}}{2}\]Notice that the values of $x$ are equivalent to $2026^a$. We require $x \in \mathbb{R}^+$. Thus, any real value $a$, positive or negative, is permitted. Thus two values $x_1 = 2026^{a_1}$ and $x_2 = 2026^{a_2}$ exist. When we take their product, it is equivalent to $2026^{a_1} \cdot 2026^{a_2} = 2026^{a_1+a_2}$, in which we can see that the discriminant of $a$ cancels out. Thus, if we let $b = \sqrt{20^2 + 4 \cdot 20 \log_{2026}(26)}$, then we have $a_1 = \frac{20 + b}{2}$, and $a_2 = \frac{20 - b}{2}$, we see that the product of all $x$ is just $2026^{20}$.
+
+ Thus we have $P = 2026^{20}$, whose prime factorization is $P = 1013^{20} \cdot 2^{20}$. The number of factors of a number with prime factorization $p_1^{e_1} \cdot p_2^{e_2} \cdot \ldots \cdot p_n^{e_n}$ is determined by $(e_1+1)(e_2+1)\ldots(e_n+1)$. Thus, the number of factors of $P$ is just $(20+1)(20+1) = 21^2 = \boxed{441}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 6}
+
+Let $y=\log_{2026}x$. Raise both sides to the $20$th power and take log base $2026$ of both sides.
+
+ 
+ \[\log_{2026}(x^{\log_{2026}x}) = \log_{2026}(26x)^{20}\]By the power rule of logarithms we have
+ \[\log_{2026}x \cdot \log_{2026}x = 20(\log_{2026}(26 \cdot x))\]By the product rule of logarithms,
+ \[\log_{2026}x \cdot \log_{2026}x = 20\log_{2026}26 + 20\log_{2026}x\]Plugging in $y$ we have
+ \[y^2 = 20y + 20\log_{2026}26\]
+ \[y^2 - 20y - 20\log_{2026}26 = 0\]Let's say the roots of this equation are $y_1$ and $y_2$, then the product of the values of $x$ is
+ \[2026^{y_1} \cdot 2026^{y_2} = 2026^{y_1 + y_2}\]By Vieta's we know that $y_1+y_2$ is just 20, so the product of the values of $x$ is $2026^{20}$
+ \[2026^{20} = 2^{20} \cdot 1013^{20}\]So the number of factors of $2026^{20} (P)$ is $(20 + 1)(20 + 1) = 21^2 = \boxed{441}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Find the number of functions $\pi$ mapping the set $A=\{1,2,3,4,5,6\}$ onto $A$ such that for every $a\in A$, 
+
+ \[\pi(\pi(\pi(\pi(\pi(\pi(a))))))=a.\]
+
+
+ 
+ \textbf{Answer: }396
+
+
+
+\textbf{Solution 1}
+
+We note that the function must cycle groups of non-overlapping subsets of A. Since $\pi^6(a)=a$, the cycles must be factors of 6, so they can be 1, 2, 3, or 6. We can split the 6 elements of A into: one cycle of 6, two cycles of 3, three cycles of 2, six cycles of 1, one cycle of 3 and three cycles of 1, one cycle of 2 and four cycles of 1, two cycles of 2 and two cycles of 1, and one cycle of 3 and one cycle of 2 and one cycle of 1.
+
+ Case 1:
+
+ $\binom{6}{6}*\frac{6!}{6}=5!=120$
+
+ Case 2:
+
+ $\frac{\binom{6}{3}\binom{3}{3}}{2!}*(\frac{3!}{3})^2=40$
+
+ Case 3:
+
+ $\frac{\binom{6}{2}\binom{4}{2}\binom{2}{2}}{3!}*(\frac{2!}{2})^3=15$
+
+ Case 4:
+
+ For six cycles of 1, there is only $1$ way.
+
+ Case 5:
+
+ $\binom{6}{3}*\frac{3!}{3}=40$
+
+ Case 6:
+
+ $\binom{6}{2}*\frac{2!}{2}=15$
+
+ Case 7:
+
+ $\frac{\binom{6}{2}\binom{4}{2}}{2!}*(\frac{2!}{2})^2=45$
+
+ Case 8:
+
+ $\binom{6}{3}\binom{3}{2}*\frac{3!}{3}*\frac{2!}{2}=120$
+
+ Summing up our cases, we get $120+40+15+1+40+15+45+120=\boxed{396}$
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+We have that the cycles of our function must be in lengths which are factors of 6, so that $\pi^6(a) = a$We can then case on what cycles there are
+
+ Case 1: 1 cycle of Length 6:
+
+ We have $5!=120$ ways to do this (Just think circular rotations)
+
+ Case 2: 2 cycles of length 3:
+
+ We have $\binom63$ ways to choose what is in the first cycle, then $2! = 2$ ways to arrange it. Then 3 choose 3 times 2!. We have to divide by 2! due to symmetry. We get $\frac{20 * 2! * 1 * 2!}{2!} = 40$
+
+ Case 3: One cycle of length 3, one of length 2 and one length 1:
+
+ We have $\binom63$ ways to choose what is in the first cycle, then $2! = 2$ ways to arrange it.Then $\binom32\cdot1!$ for length 2 cycle and then 1 way for the length 1 cycle. This is $20 \cdot 2 \cdot 3 = 120$.
+
+ Case 4: 1 Cycle of Length 3 and 3 of length 1:
+
+ We have $\binom63$ ways to choose what is in the first cycle, then $2! = 2$ ways to arrange it. Then only one way for the other 3 cycles because each has to go with itself. This is $20 \cdot 2! = 40$ ways.
+
+ Case 5: 3 Cycles of Length 2:
+
+ We have $\binom62$ ways to choose what is in the first cycle, then $1! = 1$ ways to arrange it. Then $\binom42$ for the next cycle and $\binom22$ for the last. We divide by $3! = 6$ due to symmetry. We get $15 \cdot 6/6 = 15$ ways.
+
+ Case 6: 2 cycles of length 2, 2 cycles of length 1:
+
+ We have $\binom62$ ways to choose what is in the first cycle, then $1! = 1$ ways to arrange it. Then $\binom42$ for the next cycle and one way for the last two. We divide by $2! = 2$ due to symmetry. We get $15 \cdot 6/2  = 45$ ways.
+
+ Case 7: 1 cycle of length 2, 4 cycles of length 1:
+
+ We have $\binom62=15$ ways to choose what is in the first cycle, then $1! = 1$ ways to arrange it. There is only one way for the other 4 cycles. So we have $15$ ways.
+
+ Case 8: 6 cycles of length 1:
+
+ There is just one way.
+
+ Adding these up we get $\boxed{396}$
+
+ 
+
+
+
+
+
+\textbf{Solution 3}
+
+Alternatively, we can use complementary counting. Obviously it must be a permutation, giving $6!=720$ total possibilities. However, note that if there is a cycle of length 4 or 5, since they aren't a factor of 6, the problem statement will not be satisfied. This is because if there is a cycle of 4, for the numbers involved in the cycle, $\pi(\pi(\pi(\pi(a))))=a.$ Similarly for numbers involved in a cycle of 5, $\pi(\pi(\pi(\pi(\pi(a)))))=a$. We can subtract the possibilities where cycles of $\{4,1,1\},\{4,2\},\{5,1\}$ are formed. We get
+ \[720-\binom64\cdot3!-\binom64\cdot3!-\binom65\cdot4!=720-90-90-144=\boxed{396}\] Dinga linga doo, edited by mathdivine
+
+ 
+
+
+
+
+
+\textbf{Solution 4 (Partitioning and Circular Casework)}
+
+The number of cyclic connotations is the number of partitions of \( 6 \) using only the numbers \( 1, 2, 3, \) or \( 6 \). These partitions represent the number of cycles, as partition count is cyclic.
+
+ Thus, we have 8 different cycles:
+
+ 
+ \[1+1+1+1+1+1\]
+ \[2+1+1+1+1\]
+ \[2+2+1+1\]
+ \[2+2+2\]
+ \[3+1+1+1\]
+ \[3+2+1\]
+ \[3+3\]
+ \[\text{and}~ 6\]
+
+ Label them top down cases \( A, B, C, \dots, H \). 
+
+ Case A: \( 1+1+1+1+1+1 \)
+
+ We need all cycles of \( 1 \). This implies that \( f(a)=a \) for all \( 6 \) elements. There is \( 1 \) mapping.
+
+ Case B: \( 2+1+1+1+1 \)
+
+ We need a cycle of \( 2 \) and \( 4 \) cycles of \( 1 \). This implies that for \( 4 \) values, we have \( f(a)=a \), which is done in $\binom{6}{4} = 15$ ways. The remaining two values map on to one another, giving us \( (2-1)! \) cases and the number of ways is $15 \cdot 1 = 15$.
+
+ Case C: \( 2+2+1+1 \)
+
+ We need \( 2 \) cycles of \( 2 \) and \( 2 \) cycles of \( 1 \). This implies that for \( 2 \) values, we have \( f(a)=a \), which is done in $\binom{6}{2} = 15$ ways. For the remaining two cycles, we distribute upon \( 4 \) numbers. Then, say the cycles are in an ordered pair \( ((a,b),(c,d)) \). Then, \( ((a,b),(c,d)) = ((c,d),(a,b)) \), thus we choose two elements from the remaining \( 4 \), and divide by \( 2 \) permutations, giving us a total of \( 3 \) different sets, and a total of $15 \cdot 3 = 45$ cases.
+
+ Case D: \( 2+2+2 \)
+
+ We have \( 3 \) cycles of \( 2 \). Imagine the ordered triplet \( ((a,b),(c,d),(e,f)) \), in which each is uniquely determined from the set \( \{1, 2, 3, 4, 5, 6\} \). We choose \( 2 \) from \( 6 \) elements, \( 2 \) from the remaining \( 4 \), and the last two are determined uniquely. Then, we have that all \( 3! = 6 \) permutations of this triplet are the same. Thus, we divide by \( 6 \) and obtain $\frac{90}{6} = 15$ cases.
+
+ Case E: \( 3+1+1+1 \)
+
+ We have \( 3 \) one cycles and one \( 3 \) cycle. For the first, we just determine 
+ \[\binom{6}{3} = 20\] cases. For the one cycle, we order the remaining as \( (a,b,c) \). The orientation remains the same except when the two endpoints (\( a \) and \( c \)) are switched. Thus, there are \( (3-1)! = 2! = 2 \) cases that work here, for a total 
+ \[20 \cdot 2 = 40\] cases.
+
+ Case F: \( 3+2+1 \)
+
+ We have one \( 3 \) cycle, one \( 2 \) cycle, and one \( 1 \) cycle. There are \( 6 \) ways to choose the \( 1 \) cycle. From the remaining \( 5 \), we choose \( 2 \), giving \( 10 \) cases. However, we must be careful to not undercount and naively divide by \( 2 \), as when we select only one pair. For the remaining \( 3 \), we continue as in previous case to obtain \( 2 \) ways (as once again, we have \( (a,b,c) \), and swapping \( a \) and \( c \) given they map to one another is the same). Thus there is $6 \cdot 10 \cdot 2 = 120$ cases.
+
+ Case G: \( 3+3 \)
+
+ Two cycles of \( 3 \). For the first, we have $\binom{6}{3} = 20$ ways. For the second, only \( 2 \). Then, we have \( 40 \) cases.
+
+ Case H: \( 6 \)
+
+ One cycle of \( 6 \). We have \( (a,b,c,d,e,f) \), but swapping the endpoints are the same due to cyclic rotations. For the six elements there are \( 6 \) cases for the two that get swapped, and thus we divide the overcount by \( 6 \). Then, there are \( (6-1)! = 5! = 120 \) possibilities.
+
+ Alas, we have to add all \( 8 \) partitions, to obtain
+
+ 
+ \[1 + 15 + 45 + 15 + 40 + 120 + 40 + 120 = 396\]
+
+ The answer is clearly $\boxed{396}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Let $N$ be the number of positive integer divisors of $17017^{17}$ that leave a remainder of $5$ upon division by $12$. Find the remainder when $N$ is divided by $1000$.
+
+
+ 
+ \textbf{Answer: }244
+
+
+
+\textbf{Solution 1}
+
+First, observe that $17017^{17}=7^{17}\cdot 11^{17}\cdot 13^{17}\cdot 17^{17}$. Thus, every factor of this must be in the form $7^a\cdot 11^b\cdot 13^c\cdot 17^d$. For a factor to be $5\pmod{12}$, it must be both $2\pmod{3}$ and $1\pmod{4}$. Now, since 
+ \[7^a\cdot 11^b\cdot 13^c\cdot 17^d\equiv (-1)^{b+d}\pmod{3}\] and 
+ \[7^a\cdot 11^b\cdot 13^c\cdot 17^d\equiv (-1)^{a+b}\pmod{4},\]we must have that $b+d$ odd and $a+b$ is even.
+
+ Notice that since $c\in \{0, 1, ..., 17\}$, there are $18$ choices for $c$. Also, for every $b\in\{0, 1, ..., 17\}$there are always $9$ choices for $a$ and $9$ choices for $d$. Hence, the answer is $18\cdot 18\cdot 9\cdot 9\equiv \boxed{\textbf{244}}\pmod{1000}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+Note $17017=17\cdot1001=7\cdot11\cdot13\cdot17$.
+
+ By taking each of the factors mod $12$ we get:
+
+ $7\equiv-5\pmod{12}$, $11\equiv-1\pmod{12}$, $13\equiv1\pmod{12}$, $17\equiv5\pmod{12}$.
+
+ Let a factor $n=7^a11^b13^c17^d$.
+
+ By noting $5^2\equiv1\pmod{12}$ and $(-1)^2\equiv1\pmod{12}$ and the fact that we want $n\equiv5\pmod{12}$, we need $a+d$ to be odd and $a+b$ to be even. From here, we compute that for a fixed $a$, there are $9$ options for $b$ and $9$ options for $d$. As $a$ and $c$ may be $18$ options, the answer is $9\cdot9\cdot18\cdot18=26244$. The requested remainder is $244$.
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (Easy to understand, only basic mod needed)}
+
+We have $17017  = 17 * 1001 = 7 * 11 * 13 * 17$Take all powers $\pmod{ 12}$. We get some nice patterns. For example, taking all powers of 7 mod 12 we get:
+
+ (7, 1, 7, 1, 7, 1....) so we have a pattern!
+
+ Now for 11, we get that 11 is $-1$ mod 12, so:
+
+ (11, 1, 11, 1, 11, 1...) is a pattern
+
+ For 13, it is 1 mod 12 so:
+
+ (1, 1, 1, 1, 1, ...)
+
+ For 17 it is 5 mod 12 so:
+
+ (5, 1, 5, 1....)
+
+ We realize to get 5 mod 12 we either have 1 * 1 * 1 * 5 or 7 * 11 * 1 * 1.
+
+ For both cases we have 9 (9 powers of 7 from $7^0$ to $7^{17}$ are congruent to 1 mod 12) * 9 (9 powers of 11 from $11^0$ to $11^{17}$ are congruent to 1 mod 12)* 9 (9 powers of 17 are congruent to 5 mod 12) * 18 (18 powers of 13 are 1 mod 12) ways to do it.
+
+ So we have 122*2 (mod 1000)
+
+ So finding this mod 1000 we get $\boxed{244}$
+
+ 
+
+
+
+
+
+\textbf{Solution 4}
+
+We factor$17017 = 7 \cdot 11 \cdot 13 \cdot 17$.
+
+ We convert the factors into modulo $12$,$7 \equiv -5 \pmod{12}$,$11 \equiv -1 \pmod{12}$,$13 \equiv 1 \pmod{12}$,and$17 \equiv 5 \pmod{12}$.
+
+ 
+Since $5$ raised to an odd power is congruent to $5 \pmod{12}$, we split into cases.
+
+ 
+Case 1: odd exponent of $7$ and even exponent of $17$.
+
+ 
+There are $9$ choices for the odd exponent of $7$, $9$ choices for the odd exponent of $11$, $18$ choices for the exponent of $13$ as it is $1 \pmod{12}$, and $9$ choices for the even exponent of $17$.
+
+ 
+This yields$9 \cdot 9 \cdot 18 \cdot 9 = 13{,}122$ values.
+
+ 
+Case 2: even exponent of $7$ and odd exponent of $17$.
+
+ 
+There are $9$ choices for the even exponent of $7$, $9$ choices for the even exponent of $11$, $18$ choices for the exponent of $13$ as it is $1 \pmod{12}$, and $9$ choices for the odd exponent of $17$.This also yields$9 \cdot 9 \cdot 18 \cdot 9 = 13{,}122$ values.
+
+ 
+Thus, the total number is$13{,}122 + 13{,}122 = 26{,}244 \equiv \boxed{244} \pmod{1000}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Joanne has a blank fair six-sided die and six stickers each displaying a different integer from $1$ to $6$. Joanne rolls the die and then places the sticker labeled $1$ on the top face of the die. She then rolls the die again, places the sticker labeled $2$ on the top face, and continues this process to place the rest of the stickers in order. If the die ever lands with a sticker already on its top face, the new sticker is placed to cover the old sticker. Let $p$ be the conditional probability that at the end of the process exactly one face has been left blank, given that all the even-numbered stickers are visible on faces of the die. Then $p$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
+
+
+ 
+ \textbf{Answer: }029
+
+
+
+\textbf{Solution 1}
+
+Before we continue, let's rephrase the problem as such: There are six slots labeled "$A, B, C, D, E, F$" to put plates in (it's just easier to think about it as a row instead of a die). We know that $2, 4, 6$ must be the top plates. WLOG, let them be the top plates of slots $A, B, C$. The game mechanics make it so that if, say, plates $1, 2,$ and $5$ are in a particular slot, we must have plate $1$ underneath plate $2$ underneath plate $5$ (because she puts the stickers on from lowest number to highest). 
+
+ Let's count the total number of ways we can have $2,4,6$ showing on the top. Plate $5$ has $4$ options: hide under plate $6$ or take an empty spot. Similarly, plate $3$ has $5$ options and plate $1$ has all $6$ options, making $120$ total ways. For there to be exactly one face left blank, we have three simple cases:
+
+ 1. Plates $1$ and $3$ occupy the unused spaces: $6\cdot 1=6$
+
+ 2. Plates $1$ and $5$ occupy the unused spaces: $6\cdot 3=18$
+
+ 3. Plates $3$ and $5$ occupy the unused spaces: $6\cdot 5=30$
+
+ Hence the answer is $\frac{6+18+30}{120}=\frac{9}{20}\implies \boxed{\textbf{029}}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+Let the six faces of the die be labeled abstractly, and let $f_i$ denote the face that lands on top when sticker $i$ is placed. A sticker is visible at the end exactly when that face is never used again later.
+
+ We condition on the event that stickers $2,4,6$ are visible. This means $f_3,f_4,f_5,f_6 \neq f_2$ and $f_5,f_6 \neq f_4$, so in particular $f_2,f_4,f_6$ are all different faces.
+
+ First count all outcomes consistent with this condition. Choose $f_2$ in $6$ ways, then $f_4 \neq f_2$ in $5$ ways, then $f_6 \neq f_2,f_4$ in $4$ ways. Next choose $f_3 \neq f_2$ in $5$ ways, $f_5 \neq f_2,f_4$ in $4$ ways, and finally $f_1$ freely in $6$ ways. Thus the total number of outcomes with all even stickers visible is
+ \[6\cdot5\cdot4\cdot5\cdot4\cdot6=14400.\]
+
+ Now count those outcomes that leave exactly one face blank. Since $f_2,f_4,f_6$ are distinct, they occupy three faces; call them $A,B,C$. The remaining faces are $D,E,F$. To have exactly one blank face at the end, among $D,E,F$ exactly two must appear in $\{f_1,f_3,f_5\}$.
+
+ There are $6\cdot5\cdot4=120$ choices for $(A,B,C)$. Fix such a choice. Choose which of $D,E,F$ is the blank face; there are $3$ choices. Without loss of generality, suppose $F$ is blank. Then $f_3\in\{B,C,D,E\}$, $f_5\in\{C,D,E\}$, and $f_1\in\{A,B,C,D,E\}$. This gives $4\cdot3\cdot5=60$ possibilities. From these subtract the cases where $D$ is never used ($24$ cases) and where $E$ is never used ($24$ cases), and add back the cases where neither $D$ nor $E$ is used ($6$ cases). Hence the number of valid triples $(f_1,f_3,f_5)$ is
+ \[60-24-24+6=18.\]Multiplying by the $3$ choices of the blank face gives $54$ favorable outcomes for each fixed $(A,B,C)$.
+
+ Therefore the number of favorable outcomes is
+ \[120\cdot54=6480.\]
+
+ The desired conditional probability is
+ \[p=\frac{6480}{14400}=\frac{9}{20}.\]Thus $m+n=9+20=\boxed{029}.$
+
+ 
+
+
+
+
+
+\textbf{Solution 3}
+
+To solve this problem, we can count two things: how many ways there can be one blank face and all the even digits visible, and how many ways all the even digits can be visible. For simplicity, we will consider rotations and reflections to be different.
+
+ 
+To compute the first value, we can split it into two cases; the sole covered value can either be covered by an odd sticker or by an even sticker.
+
+ 
+Case $1$: The one covered sticker is covered by an odd sticker.
+
+ Place the odd stickers first, since they cannot cover any even stickers. There are $3$ different pairs of stickers that can work here: the $3$ covers the $1$, the $5$ covers the $1$, or the $5$ covers the $3$. In any of these cases, there are 6 ways to place the covered sticker and 5 ways to place the sticker that won't cover it. This yields $3 \cdot 6 \cdot 5 = 90$ ways to place the odd stickers. There are now $4$ open faces of the die, and $3$ even numbers to place. This can be done in $4 \cdot 3 \cdot 2 = 24$ ways. This yields a total of $90 \cdot 24 = 2160$ ways for this case.
+
+ 
+Case $2$: The one covered sticker is covered by an even sticker.
+
+ Once again, place the odd stickers first. This time, there can be no coverups, so the amount of ways to do this is merely $6 \cdot 5 \cdot 4 = 120$. For the even stickers, we need to keep in mind that we cannot, for instance, have the $2$ cover the $3$; the covering sticker must be greater than the covered sticker. There are $6$ total pairs that work here; $2$ covers $1$, $4$ covers $1$, $6$ covers $1$, $4$ covers $3$, $6$ covers $3$, and $6$ covers $5$. In all of these cases, once the covering sticker is placed, the remaining $2$ stickers have $3$ open faces left, yielding $3 \cdot 2 = 6$ total placements. This yields a total of $120 \cdot 6 \cdot 6 = 4320$ ways for this case. Adding these two yields a total of $6480$ for the first value.
+
+ 
+To compute the second value, go in sequential order. There are $6$ ways to place the $1$, $6$ ways to place the $2$ (since it could cover up the $1$), $5$ ways to place the $3$ (since it can't cover up the $2$), $5$ ways to place the $4$, $4$ ways to place the $5$, and $4$ ways to place the $6$, yielding a total of $6 \cdot 6 \cdot 5 \cdot 5 \cdot 4 \cdot 4 \cdot = 14400$ ways for this to be accomplished.
+
+ 
+Finally, to obtain the requested probability, we merely divide the former by the latter; $\frac{m}{n} = \frac{6480}{14400} = \frac{9}{20}$. $m + n = \boxed{029}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 4}
+
+We will first determine the probability that all even stickers are left uncovered. We can place stickers $1$ and $2$ anywhere, $3$ and $4$ cannot cover $2$, and $5$ and $6$ cannot cover $2$ or $4$. Thus, the probability is $1\cdot 1\cdot \frac{5}{6}\cdot \frac{5}{6} \cdot \frac{2}{3}\cdot \frac{2}{3}=\frac{25}{81}$.
+
+ 
+We then split the condition that there is exactly one blank face into cases. Notice that exactly one sticker must be covered at some point.
+
+ Case 1: A sticker is covered on the second roll
+
+ Sticker $2$ covers sticker $1$, and the rest must go on blank faces, giving a probability of $\frac{1}{6}\cdot \frac{5}{6} \cdot \frac{2}{3}\cdot \frac{1}{2} \cdot \frac{1}{3}= \frac{5}{324}$.
+
+ 
+Case 2: A sticker is covered on the third roll
+
+ Sticker $3$ must go on top of sticker $1$, so the probability is $\frac{5}{6}\cdot \frac{1}{6} \cdot \frac{2}{3}\cdot \frac{1}{2} \cdot \frac{1}{3}= \frac{5}{324}$.
+
+ 
+Case 3: A sticker is covered on the fourth roll
+
+ Sticker $4$ can cover either sticker $1$ or $3$, so we get a probability of $\frac{5}{6}\cdot \frac{2}{3} \cdot \frac{1}{3}\cdot \frac{1}{2} \cdot \frac{1}{3}= \frac{5}{162}$.
+
+ 
+Case 4: A sticker is covered on the fifth roll
+
+ Sticker $5$ can cover sticker $1$ or sticker $3$, so the probability in this case is $\frac{5}{6}\cdot \frac{2}{3} \cdot \frac{1}{2}\cdot \frac{1}{3} \cdot \frac{1}{3}= \frac{5}{162}$.
+
+ 
+Case 5: A sticker is covered on the final roll
+
+ Sticker $6$ covers sticker $1$, $3$, or $5$, giving us $\frac{5}{6}\cdot \frac{2}{3} \cdot \frac{1}{2}\cdot \frac{1}{3} \cdot \frac{1}{2}= \frac{5}{108}$.
+
+ 
+Adding our probabilities for all cases, the probability that all even stickers are visible and there is exactly one blank face is $\frac{5}{36}$. Dividing this by $\frac{25}{81}$ means the desired conditional probability is $\frac{405}{900}$, which simplifies to $\frac{9}{20}$, so our final answer is $9+20=\boxed{029}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 5}
+
+We will find the probability that all even numbered stickers are visible and the probability that exactly one face has been left blank and all even numbered stickers are visible. 
+
+ Notice that there are 6 ways to place 1 and 2. However, to place 3 it cannot be on top of 2, so there are 5 ways. Similarly, there are 5, 4 and 4 ways to place 4, 5 and 6. This means that there are $6*6*5*5*4*4$ ways to place the stickers such that all even numbered stickers are visible, and the probability is $\frac{6*6*5*5*4*4}{6^6}$.
+
+ Notice that for one face to be blank and all even numbered stickers to be visible, there has to be a face with two overlapping stickers such that the bottom sticker is odd. There are 6 ways to choose the blank face and 5 ways to choose the overlapping face. Notice that the number on the top sticker of the overlapping stickers has to be more that the number on the bottom sticker, so we will do casework on the bottom sticker.
+
+ Case 1. The bottom sticker is 1. Then, all arrangements of the visible stickers are possible giving $5!=120$ arrangements.
+
+ Case 2. The bottom sticker is 3. There are 4 ways to place the 2, and 3 ways to place the 1 because it cannot be on top of the 3 nor the 2. There are 3 spots remaining, so 4, 5 and 6 can be permuted in these spots to get $3!=6$ arrangements. In total, there are $4*3*6=72$ arrangements in this case.
+
+ Case 3. The bottom sticker is 5. Then, the sticker above the 5 has to be 6, and the 1, 2, 3 and 4 have to not be on the 5 or 6, giving $4!=24$ arrangements.
+
+ Thus, there are $6*5*(120+72+24)=6*5*216$ ways to place the stickers such that one face is blank and all even numbered stickers to be visible. Hence, the probability is $\frac{6*5*216}{6^4}$.
+
+ By conditional probability, the answer is the quotient of these two values, so it is
+ \[\frac{\frac{6*5*216}{6^4}}{\frac{6*6*5*5*4*4}{6^4}}=\frac{216}{6*5*4*4}=\frac{36}{5*4*4}=\frac{9}{20},\]answer extraction gives $9+20=\boxed{029}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 6 (5 minutes)}
+
+Consider the $6$ sides of the dice ordered from $1$ to $6$ (for simplicity, order matters here). We will count the number of cases that satisfies each condition and divide them.
+
+ To let all the even numbers visible, you'll have $6$ choices for $1$ and $2$ because you don't care about whether $1$ gets overlapped or not. You then have $5$ choices for $3$ and $4$, because you cannot put over $2$. You then have $4$ choices for $5$ and $6$, because $2$ and $4$ cannot be overlapped. This gives a total of $6\times6\times5\times5\times4\times4$ ways of doing this.
+
+ To let all the even numbers visible AND exactly $1$ blank face, we consider putting all the even numbers on the dice first without overlapping, and then insert $1$ of the odd numbers behind $1$ of the larger numbers, and then cover the remaining $3$ faces with $2$ odd numbers (all cases are valid because at most you will have an even number above an odd number which is valid for any combination). There are $6\times5\times4$ ways of choosing $3$ faces to put even numbers, $5 + 3 + 1$ ways of inserting an odd behind a larger number, and finally $3\times2$ ways of putting the remaining odd numbers, for a total of $6\times5\times4\times3\times3\times3\times2$ ways of doing this.
+
+ Therefore, the desired probability is $\frac{6\times5\times4\times3\times3\times3\times2}{6\times6\times5\times5\times4\times4}=\frac{9}{20}$, yielding an answer of $\boxed{029}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 7 (Similar to solution 4)}
+
+Let's first calculate the total number of cases criteria. This shouldn't be too difficult. 
+
+ There are \( 6 \) ways to put number \( 1 \). Then, we don't care where number \( 2 \) goes, as it can cover \( 1 \) or go away from \( 1 \), so \( 6 \) ways. Similarly, for \( 3 \), we cannot have it cover \( 2 \). But, it doesn't matter if it covers \( 1 \) or not, so \( 5 \) ways. \( 4 \) is also \( 5 \) ways. \( 5 \) is then \( 4 \) ways, and \( 6 \) is also \( 4 \) ways. The total number of cases is \( 6^2 \times 5^2 \times 4^2 \).
+
+ Now, onto the criterion. We need that one face must be empty, which implies that one number must be covered. This number can be either \( 1, 3, \) or \( 5 \). We could do casework, or notice something intriguing.
+
+ Take \( 5 \). We see that the only number that can cover it (as we go in numerical order), is \( 6 \). Then, the total number of ways is \( 6 \times 5 \times 4 \times 3 \times 2 \times 1 \), or \( 6! \). (We have \( 6 \times 5 \) and \( 4 \times 3 \) due to the fact that none of \( 1 \) or \( 3 \) may be covered). The number of cases in this is \( 6! \).
+
+ Then, notice that if we take \( 3 \), only \( 4, 5, \) or \( 6 \) may cover it. Then, the number of cases is \( 6 \times 5 \times 4 \times 1 \times 3 \times 2 + 6 \times 5 \times 4 \times 3 \times 1 \times 2 + 6 \times 5 \times 4 \times 3 \times 2 \times 1 \), or \( 3 \times 6! \). All these cases of such are just \( 6! \). (As an exercise to the reader, I leave it to you to prove how. Check sub-solution for answer).
+
+ Then, for \( 1 \), we have that it may be covered by \( 2, 3, 4, 5, \) or \( 6 \). Thus, we have the total number of cases as \( 5 \times 6! \).
+
+ Our conditional probability \( p \) is then 
+ \[\frac{1 \times 6! + 3 \times 6! + 5 \times 6!}{6 \times 6 \times 5 \times 5 \times 4 \times 4}, \text{ or } \frac{6!(9)}{6 \times 6 \times 5 \times 5 \times 4 \times 4}, \text{ or } \frac{9}{5 \times 4}, \text{ or } \frac{9}{20}.\]Then, our answer is \( 9+20 = \boxed{029} \).
+
+ \textbf{Answer to Reader Problem} Consider a die with \( n \) faces. Note that when we map a number to fill in the gaps of the others, the remaining numbers cannot map onto the other, or we will break the rule that five faces are filled. Thus, we must have that the remaining numbers fall into the open slots. However, the remaining slots for such numbers include the new number itself, so we subtract 1 from the count. Thus, we are just left with \( n! \). Now, notice that if we choose an odd number \( k \) to replace, any integer greater than \( k \) but less than or equal to \( n \) can cover \( k \) up. Thus, the result is just \( n - k \) slots for each of the \( 6! \) permutations. Thus the number of cases obtained is \( (n - k)(n!) \). $\square$
+
+ 
+
+
+
+
+
+\textbf{Solution 8}
+
+I will denote $\substack{\textstyle i \\ \textstyle j}$ as $j$ getting replaced by $i$. Note that the conditional probability theorem states that $P(A|B) = \frac{P(A \cap B)}{P(B)}$ where $A$ is the event of just one face staying blank and $B$ is the event of all the event numbers being shown. First, we will find the numerator. Note that for any $i < j$, the event of $\substack{\textstyle i \\ \textstyle j}$ happening is impossible. This is because as $i < j$, $i$ will get placed on the die before $j$ will and therefore it is impossible that $i$ can replace $j$ in this case. Knowing this, we realize that for the numerator, we need one face to stay blank and all the even numbers to show. Thus, we can break it up into the odd and even numbers namely the stickers $1, 3, 5$ and the stickers $2, 4, 6$. Either an odd sticker can replace another odd sticker or an even sticker can replace an odd sticker. We can list out the following cases knowing this
+
+ 1 $\substack{\textstyle 5 \\ \textstyle 3}$ 2 4 6
+
+ 1 $\substack{\textstyle 3 \\ \textstyle 5}$ 2 4 6
+
+ $\substack{\textstyle 5 \\ \textstyle 1}$ 2 4 6
+
+ $\substack{\textstyle 3 \\ \textstyle 1}$ 2 4 6
+
+ $\substack{\textstyle 1 \\ \textstyle 5}$ 2 4 6
+
+ $\substack{\textstyle 1 \\ \textstyle 3}$ 2 4 6
+
+ $\substack{\textstyle 2 \\ \textstyle 1}$ 3 5 4 6
+
+ 1 $\substack{\textstyle 2 \\ \textstyle 3}$ 5 4 6
+
+ 1 3 $\substack{\textstyle 2 \\ \textstyle 5}$ 4 6
+
+ $\substack{\textstyle 4 \\ \textstyle 1}$ 3 2 4 6
+
+ 1 $\substack{\textstyle 4 \\ \textstyle 3}$ 5 4 6
+
+ 1 3 $\substack{\textstyle 4 \\ \textstyle 5}$ 2 6
+
+ $\substack{\textstyle 6 \\ \textstyle 1}$ 3 5 2 4
+
+ 1 $\substack{\textstyle 6 \\ \textstyle 3}$ 5 2 4
+
+ 1 3 $\substack{\textstyle 6 \\ \textstyle 5}$ 2 4
+
+ These are all the cases of which either an odd replaces an odd or an even replaces an odd. However, recall that for any $i < j$, $i$ replacing $j$ is impossible. Therefore we can remove some cases and get our final case list
+
+ 1 $\substack{\textstyle 5 \\ \textstyle 3}$ 2 4 6 
+
+ $\substack{\textstyle 5 \\ \textstyle 1}$ 2 4 6
+
+ $\substack{\textstyle 3 \\ \textstyle 1}$ 2 4 6
+
+ $\substack{\textstyle 2 \\ \textstyle 1}$ 3 5 4 6
+
+ $\substack{\textstyle 4 \\ \textstyle 1}$ 3 2 4 6
+
+ 1 $\substack{\textstyle 4 \\ \textstyle 3}$ 5 4 6
+
+ $\substack{\textstyle 6 \\ \textstyle 1}$ 3 5 2 4
+
+ 1 $\substack{\textstyle 6 \\ \textstyle 3}$ 5 2 4
+
+ 1 3 $\substack{\textstyle 6 \\ \textstyle 5}$ 2 4
+
+ This gives us $9$ cases. Now, note that for each $\substack{\textstyle i \\ \textstyle j}$, we can treat this as one block. The reason why we're doing this is so that we can count the number of permutations of each of the $9$ cases. Treating these as one block makes it easier to count the permutations. For each case, we have $6$ ways to arrange that one block and $5 \cdot 4 \cdot 3 \cdot 2$ to arrange the rest of the numbers. We can therefore write $9 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2$ total ways. Thus, $P(A \cap B) = \frac{9 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2}{6^6}$. 
+
+ Now, finding $P(B)$ is easier. Note that since we're just counting the probability that the even numbers are showing, we can just note that this is basically finding the probability that the even numbers replace at least one of the odd numbers. Essentially, we don't care if the odd numbers get replaced by the even numbers or not. So we have $6$ ways to place the $1$. We have $6$ ways to place the $2$ since we don't care if $2$ covers the $1$ or not. For $3$, we can place it anywhere but the place where the $2$ is there so we have $5$ ways. Similarly, $5$ ways to place the $4$. Finally, there are $4$ ways to place the $5$ and $4$ ways to place the $6$ giving us$6 \cdot 6 \cdot 5 \cdot 5 \cdot 4 \cdot 4 = 6 \cdot 5 \cdot 4 \cdot 120$. Thus,$P(B) = \frac{6 \cdot 5 \cdot 4 \cdot 120}{6^6}$.
+
+ Finally, the answer is
+
+ $\frac{\frac{9 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2}{6^6}}{\frac{6 \cdot 5 \cdot 4 \cdot 120}{6^6}} = \frac{9}{20} \implies 9 + 20 = \boxed{29}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Let $\triangle ABC$ have side lengths $AB=13$, $BC=14$, and $CA=15$. Triangle $\triangle A'B'C'$ is obtained by rotating $\triangle ABC$ about its circumcenter so that $\overline{A'C'}$ is perpendicular to $\overline{BC}$, with $A'$ and $B$ not on the same side of line $B'C'$. Find the integer closest to the area of hexagon $AA'CC'BB'$.
+
+
+ 
+ \textbf{Answer: }156
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_10_Solution_Figure_1.png}
+                    \end{figure}
+                    Since a $13$-$14$-$15$ triangle is composed of a $5$-$12$-$13$ triangle connected to a $9$-$12$-$15$ triangle, we set up coordinates
+ \[A = (5,12),\quad B = (0,0),\quad C = (14,0).\]
+
+ From this we have
+ \[[ABC] = \frac{1}{2} \cdot 14 \cdot 12 = 84,\]and thus
+ \[R = \frac{abc}{4[ABC]} = \frac{65}{8}.\]
+
+ We compute the circumcenter as the intersection of two perpendicular bisectors. The perpendicular bisector of $BC$ is clearly
+ \[x = 7.\]
+
+ The perpendicular bisector of $AB$ passes through $\left(\frac{5}{2}, 6\right)$ and has slope $-\frac{5}{12}$, so its equation is
+ \[y - 6 = -\frac{5}{12}\left(x - \frac{5}{2}\right).\]
+
+ The intersection is
+ \[O = \left(7,\frac{33}{8}\right).\]
+
+ If the triangle is rotated by $\theta$, then the rotation maps $(9,-12)$ to
+ \[\left(9\cos\theta + 12\sin\theta,\; 9\sin\theta - 12\cos\theta\right).\]
+
+ Since $BC$ is horizontal, $A'C'$ must be vertical, so the $x$-component is $0$:
+ \[9\cos\theta + 12\sin\theta = 0.\]
+
+ Thus
+ \[3\cos\theta + 4\sin\theta = 0,\]giving
+ \[\tan\theta = -\frac{3}{4}.\]
+
+ We take
+ \[\cos\theta = \frac{4}{5}, \quad \sin\theta = -\frac{3}{5}.\]
+
+ To rotate about $O = \left(7,\frac{33}{8}\right)$, for any point $P$ we use
+ \[P' = O + R_\theta(P - O),\]where
+ \[R_\theta(x,y) = \left( \frac{4}{5}x + \frac{3}{5}y,\; -\frac{3}{5}x + \frac{4}{5}y \right).\]
+
+ Compute vectors from $O$:
+ \[A - O = \left(-2,\frac{63}{8}\right),\]
+ \[B - O = \left(-7,-\frac{33}{8}\right),\]
+ \[C - O = \left(7,-\frac{33}{8}\right).\]
+
+ Rotate:
+
+ 
+ \[R_\theta(A - O) = \left( \frac{4}{5}(-2) + \frac{3}{5}\cdot\frac{63}{8},\; -\frac{3}{5}(-2) + \frac{4}{5}\cdot\frac{63}{8} \right) = \left(\frac{25}{8},\frac{15}{2}\right),\]
+
+ 
+ \[R_\theta(C - O) = \left(\frac{25}{8},-\frac{15}{2}\right),\]
+
+ 
+ \[R_\theta(B - O) = \left(-\frac{323}{40},\frac{9}{10}\right).\]
+
+ Hence
+ \[A' = \left(\frac{81}{8},\frac{93}{8}\right),\]
+ \[C' = \left(\frac{81}{8},-\frac{27}{8}\right),\]
+ \[B' = \left(-\frac{43}{40},\frac{201}{40}\right).\]
+
+ Using the shoelace formula on hexagon $A,A',C,C',B,B'$ gives area
+ \[\frac{1557}{10}.\]
+
+ The closest integer is
+ \[\boxed{156}.\]
+
+ - \href{https://artofproblemsolving.com/wiki/index.php/User:Spectraldragon8}{spectraldragon8}
+
+ 
+
+
+
+
+
+\textbf{Solution 2 (No words)}
+
+
+ \[s=\frac{13+14+15}{2}=21\]
+
+ 
+ \[[ABC]=\sqrt{21\cdot8\cdot7\cdot6}=84\]
+
+ 
+ \[[ABC]=\frac{13\cdot14\cdot15}{4R}\]
+
+ 
+ \[R=\frac{65}{8}\]
+
+ 
+ \[\angle AOB=\gamma,\quad \angle BOC=\beta,\quad \angle COA=\alpha,\quad \alpha+\beta+\gamma=2\pi\]
+
+ 
+ \[13^2=2R^2(1-\cos\gamma),\quad 14^2=2R^2(1-\cos\beta),\quad 15^2=2R^2(1-\cos\alpha)\]
+
+ 
+ \[\cos\gamma=-\frac{7}{25},\quad \cos\beta=-\frac{2047}{4225},\quad \cos\alpha=-\frac{119}{169}\]
+
+ 
+ \[\cos\frac{\gamma}{2}=\sqrt{\frac{1+\cos\gamma}{2}}=\frac{3}{5},\quad \sin\frac{\gamma}{2}=\sqrt{\frac{1-\cos\gamma}{2}}=\frac{4}{5}\]
+
+ 
+ \[\cos\theta=\frac{4}{5},\quad \sin\theta=-\frac{3}{5}\]
+
+ 
+ \[[POP']=\frac12R^2\sin\theta\]
+
+ 
+ \[[AA'CC'BB'] =\frac12R^2\left( 3\sin\theta-\sin(\alpha+\theta)-\sin(\beta+\theta)-\sin(\gamma+\theta) \right)\]
+
+ 
+ \[[AA'CC'BB'] =\frac12\left(\frac{65}{8}\right)^2\cdot\frac{99648}{21125}\]
+
+ 
+ \[[AA'CC'BB']=\frac{1557}{10}\]
+
+ 
+ \[\boxed{156}\]
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (minimal trig)}
+
+Let $A’C’$ and $BC$ intersect at $P$, and connect $A’B$. 
+
+ First, we will find the angle of rotation. Since the angle between $AC$ and $BC$ and the angle between $A’C’$ and $BC$ differ by $90^{\circ}-\angle ACB$, that is the angle of rotation, which we will denote by $\theta$. Thus, we have $\angle AOA’ = \angle COC’ = \angle BOB’ = \theta$. Also, by the inscribed angle theorem, $\angle CA’C’=\angle BCC’=\theta/2$. 
+
+ By drawing the altitude from $A$ to $BC$ in $\triangle ABC$, we derive that $\sin{\theta}=3/5$. We can use the half angle formula or draw an angle bisector in a $3$-$4$-$5$ triangle to find $\sin({\theta/2})$, which is $1/\sqrt{10}$, so $\tan{\theta/2}=1/3$. Now, let $CP=x$ and $C’P=y$. We know that $A’C’=15$ and $BC=14$, so $3x+y=15$ and $3y+x=14$. Solving, $x=\frac{31}{8}$ and $y=\frac{27}{8}$. Using Pythagorean Theorem on $\triangle CPC’$ gives $CC’=\frac{13\sqrt{10}}{8}$, and because $AA’$, $BB’$, and $CC’$ are all on the arc of measure $\theta$, $AA’=BB’=\frac{13\sqrt{10}}{8}$. Also, $\triangle ABP$ is similar to $\triangle CPC’$ with ratio $3$, so $A’B= \frac{39\sqrt{10}}{8}$.
+
+ 
+By the inscribed angle theorem, $\angle AA’B=\angle ACB=\angle A’C’B’=\angle A’BB’$. As opposite angles in a cyclic quadrilateral are supplementary, $\angle A’BB’+\angle AB’B=\angle AA’B+\angle AB’B=180^{\circ}$. Thus, $AB’ \parallel A’B$, which makes $AA’BB’$ a trapezoid with equal base angles, or an isosceles trapezoid. Draw the altitudes of the trapezoid from $A$ and $B’$, and denote the feet as $M$ and $N$, respectively. We also have $\sin {\angle AA’B}=4/5$, so $AM=B’N= \frac{13\sqrt{10}}{10}$, and $A’M=BN= \frac{39\sqrt{10}}{40}$. Subtracting twice the latter value from $A’B$ yields $AB’= \frac{117\sqrt{10}}{40}$. Finally, we use the area formula for a trapezoid, which gives us $[AA’BB’]=50.7$.
+
+ 
+The diagonals of $A’CC’B$ are perpendicular and have lengths $15$ and $14$, so it has area $\frac{1}{2}\cdot{15}\cdot{14}=105$. The area of hexagon $AA’CC’BB’$ is the sum of the areas of $A’CC’B$ and $AA’BB’$, which is $155.7$, and that rounds to $\boxed{156}$.
+
+ 
+If sin theta = 3/5, wouldn't sin theta/2 = 1/sqrt(10)?Sorry I meant tan, fixed it
+
+ 
+
+
+
+
+
+\textbf{Solution 4 (lots of trig)}
+
+We first have a claim.
+
+ Claim. The area of an isosceles triangle with vertex $\alpha$ and leg length $R$ is $\frac{R^2\sin\alpha}{2}$.
+
+ Proof. Notice that the height is $\cos\frac{\alpha}{2}*R$ and the base is $2*\sin\frac{\alpha}{2}*R$. Thus, the area of the triangle is
+ \[\frac{1}{2}*\cos\frac{\alpha}{2}*R*2*\sin\frac{\alpha}{2}*R=\cos\frac{\alpha}{2}*\sin\frac{\alpha}{2}*R^2=\frac{R^2\sin\alpha}{2}\]
+
+ ---
+
+ Let the new triangle be rotated by $\theta$ clockwise.
+
+ Notice that now the area of $AA'BB'CC'$ can be represented as the sum of the areas of six isosceles triangles. So, we will find the sines of the vertices of the six isosceles triangles to calculate their areas.
+
+ Let $A'C'$ and $AC$ intersect at $E$ and $A'C'$ and $BC$ intersect at $D$. Then, since $A'B'C'$ is $ABC$ rotated by $\theta$, the angle between $A'C'$ and $AC$ is $\theta$. Also, because $\angle A'DC=90^{\circ}$ by the problem statement, $\theta=90^{\circ}-C$. Notice that by the law of cosines $\sin C=\frac{4}{5}$ and $\cos C=\frac{3}{5}$, so $\sin\theta=\sin(90-C)=\cos C=\frac{3}{5}$ and $\cos \theta=\sin C=\frac{4}{5}$.
+
+ Notice that $\angle BOC'=\angle BOC-\angle COC'=2A-\theta$. Similarly, $\angle AOB'=2C-\theta$ and $\angle A'OC=2B-\theta$. So,
+ \[\sin\angle BOC'=\sin(2A)\cos \theta-\cos(2A)\sin\theta\]
+ \[=2\cos A\sin A\cos\theta-(2\cos^2A-1)\sin\theta\]
+
+ by the formulas for $\sin(x+y)$ and $\cos(x+y)$. By the law of cosines, $\cos A=\frac{33}{65}$, so $\sin A=\frac{\sqrt{65^2-33^2}}{65}=\frac{56}{65}$. So,
+ \[\sin\angle BOC'=2*\frac{33}{65}*\frac{56}{65}*\frac{4}{5}-(2*\frac{33^2}{65^2}-1)*\frac{3}{5}\]
+ \[=\frac{2*33*56*4-(2*33^2-65^2)*3}{65^2*5}\]
+ \[=\frac{20925}{65^2*5}\]
+ \[=\frac{837}{845}\]
+
+ similarly,
+ \[\sin\angle A'OC=2\cos B\sin B\cos\theta-(2\cos^2B-1)\sin\theta\]
+ \[=2*\frac{5}{13}*\frac{12}{13}*\frac{4}{5}-(2*\frac{5^2}{13^2}-1)*\frac{3}{5}\]
+ \[=\frac{2*5*12*4-(2*5^2-13^2)*3}{13^2*5}\]
+ \[=\frac{837}{845}\]
+
+ 
+ \[\sin\angle AOB'=2\cos C\sin C\cos\theta-(2\cos^2C-1)\sin\theta\]
+ \[=2*\frac{3}{5}*\frac{4}{5}*\frac{4}{5}-(2*\frac{9}{25}-1)*\frac{3}{5}\]
+ \[=\frac{96-(18-25)*3}{125}\]
+ \[=\frac{117}{125}\]
+
+ Now, we will use the claim to calculate the areas of the six isosceles triangles.
+ \[[AA'BB'CC'] =[AOA']+[A'OB]+[BOB']+[B'OC]+[COC']+[C'OA]\]
+ \[=\frac12R^2\bigl(3\sin\theta+\sin\angle BOC'+\sin\angle A'OC+\sin\angle AOB'\bigr)\]
+ \[=\frac12R^2\left(3\cdot\frac35+\frac{837}{845}+\frac{837}{845}+\frac{117}{125}\right)\]
+ \[=\frac12R^2\cdot\frac{99648}{21125} =R^2\cdot\frac{49824}{21125}.\]
+
+ By the circumradius formula, $R=\frac{65}{8}$, so
+ \[[AA'BB'CC']=\frac{4225}{64}*\frac{49824}{21125}=\frac{1557}{10}=155.7,\]answer extraction gives $\boxed{156}.$
+
+ 
+
+
+
+
+
+\textbf{Solution 5 (Almost No Trigonometry)}
+
+Connect $A'B$. This divides the hexagon $AA'CC'BB'$ into two quadrilaterals: $A'BC'C$ and $AA'BB'$.
+
+ First, compute the area of quadrilateral $A'BC'C$. We have$[A'BC'C] = \frac{1}{2} \cdot BC \cdot A'C' = \frac{1}{2} \cdot 14 \cdot 15 = 105.$
+
+ Let $M = AB \cap A'B'$ and $Q = BC \cap B'C'$. Then the area of quadrilateral $AA'BB'$ can be expressed as$[AA'BB'] = \frac{1}{2} \cdot AB \cdot A'B' \cdot \sin \angle BMB'.$
+
+ Observe that $\angle BMB' = \angle BQB'=\angle CQC'$.  Therefore,$\sin \angle BMB' = \sin \angle BQB' = \sin \angle CQC'=\cos \angle A'C'B'.$
+
+ In $\triangle A'C'B'$, we know $A'C' = 15$, $B'C' = 14$, and $A'B' = 13$. By the Law of Cosines,$\cos \angle A'C'B' = \frac{14^2 + 15^2 - 13^2}{2 \cdot 14 \cdot 15} = \frac{196 + 225 - 169}{420} = \frac{252}{420} = \frac{3}{5}.$Thus $\sin \angle BMB' = \frac{3}{5}$.
+
+ Now compute the area:$[AA'BB'] = \frac{1}{2} \cdot 13 \cdot 13 \cdot \frac{3}{5} = \frac{507}{10} = 50.7.$
+
+ Finally, the area of hexagon $AA'CC'BB'$ is$[AA'CC'BB'] = [A'BC'C] + [AA'BB'] = 105 + 50.7 = 155.7.$
+
+ Rounding to the nearest integer gives $\boxed{156}$.
+
+ - \href{https://WUGOUYU.com/wiki/index.php/User:WUGOUYU}{WUGOUYU}
+
+ 
+
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) The integers from $1$ to $64$ are placed in some order into an $8\times 8$ grid of cells with one number in each cell. Let $a_{i,j}$ be the number placed in the cell in row $i$ and column $j$, and let $M$ be the sum of the absolute differences between adjacent cells. That is,
+
+ \[M=\sum^{8}_{i=1}\sum^{7}_{j=1}\left(|a_{i,j+1}-a_{i,j}|+|a_{j+1,i}-a_{j,i}|\right).\]
+Find the remainder when the maximum possible value of $M$ is divided by $1000$.
+
+
+ 
+ \textbf{Answer: }896
+
+
+
+\textbf{Solution 1}
+
+As a general intuition, we want larger numbers to be next to smaller numbers (and vice versa) to maximize this sum. The best way to do this is in a checkerboard pattern, so that all numbers in the lower half are next to higher numbers.
+
+ We then split the numbers into two sets: Small numbers $\{1,2,\dots32\}$ and large numbers $\{33,34,\dots 64\}$ (note that all large numbers are greater than all small numbers). We wish to determine where to put these numbers to maximize the differences.
+
+ We now examine this problem from a local view: Suppose we have large numbers, $A,B$ and small numbers $a,b,c\dots h$ such that $A$ is surrounded by $a,b,c,d$ and $B$ is surrounded by $e,f,g,h$. Then the sum of the differences with $A,B$ is $4A-(a+b+c+d)+4B-(e+f+g+h)$.
+
+ Notice that if we swap $A$ with $B$, the sum is $4B-(a+b+c+d)+4A-(e+f+g+h)$ which is the same. The same logic goes for if a small number is surrounded by larger numbers. Therefore, the key observation is that swapping two numbers that are surrounded by the same amount of numbers yields the same sum.
+
+ However, if $A$ is only surrounded by $a,b,c$ (as it would be if it was in an edge position), while $B$ is surrounded by $e,f,g,h$, then the initial sum would be $3A-(a+b+c)+4B-(e+f+g+h)$, while swapping $A$ and $B$ would yield the different sum $3B-(a+b+c)+4A-(e+f+g+h)$.
+
+ As we wish to maximize the sum, we want the greater number to have a coefficient of $4$, and therefore we want the greater extremes (e.g. 1 and 64) to be bordering four numbers, with the rest being at the edges.
+
+ With this intuition, we may see that the best arrangement is in the aforementioned checkerboard formation, with $31,32,33,34$ being in the corners, $19,20,\dots30$ and $35,36\dots46$ being on the edges, and the rest $1,2,\dots18$ and $47,48,\dots64$ being in the middle.
+
+ We now calculate the sum for this which is 
+ \[4((47+48+\dots+64)-(1+2+\dots+18))+3((35+36+\dots+46)-(19+20+\dots+30))+2((33+34)-(31+32))=3896.\]The requested remainder is $\boxed{896}$.
+
+ It isn't correct.
+
+ fixed it, ty
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+Like in Solution 1, make a checkerboard pattern with the numbers $\{1, 2, \dots, 32\}$ in the dark squares and $\{33, 34, \dots, 64\}$ in the light squares. Now, place $32.5$ on every line between adjacent squares. The absolute difference between any two adjacent squares is the sum of the difference between the first square and $32.5$ and the difference between $32.5$ and the second square. So, we can decompose our sum as
+ \[\sum_{x = 1}^{64} |x - 32.5| \cdot \#\text{neighbors of }x.\]Most squares have $4$ neighbors, but squares on the edges have $3$ neighbors, and squares in the corners have $2$. Clearly, then, we want to put the numbers closest to $32.5$ in the corners and edges. There are $4$ corner squares, $24$ edge squares, and $36$ squares in the middle.
+
+ Let's put $\{31, 32, 33, 34\}$ in the corners, and $\{19, 20, \dots, 30\} \cup \{35, 36, \dots, 46\}$ along the edges. The remaining numbers $\{1, 2, \dots, 18\} \cup \{47, 48, \dots, 64\}$ go in the middle.
+
+ The average distance of the corner numbers from $32.5$ is $1$. The average distance of the edge numbers from $32.5$ is $8$. The average distance of the middle numbers from $32.5$ is $23$. This gives us a total of
+ \[36 \cdot 23 \cdot 4 + 24 \cdot 8 \cdot 3 + 4 \cdot 1 \cdot 2 = 3896,\]giving an answer of $\boxed{896}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Triangle $\triangle ABC$ lies in plane $\mathcal{P}$ with $AB=6$, $AC=4$, and $\angle BAC=90^{\circ}$. Let $D$ be the reflection across $\overline{BC}$ of the centroid of $\triangle ABC$. Four spheres, all on the same side of $\mathcal{P}$, have radii $1$, $2$, $3$, and $r$ and are tangent to $\mathcal{P}$ at points $A$, $B$, $C$, and $D$, respectively. The four spheres are also each tangent to a second plane $\mathcal{T}$ and are all on the same side of $\mathcal{T}$. The value of $r$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
+
+
+ 
+ \textbf{Answer: }161
+
+
+
+\textbf{Solution 1 (5 min Coordbash)}
+
+In plane $P$ let $A$ be the origin and point $B$ be $(6,0)$ and $C$ be $(0,4)$. We see that the centroid is point $\left(2, \frac{4}{3}\right)$. Consequently, the line that is perpendicular to $BC$ passing through the centroid is $y= \frac{3}{2} (x - 2) + \frac{4}{3}$. This intersects $BC$ at $\left(\frac{34}{13}, \frac{88}{39}\right)$. Thus, $D= \left(\frac{42}{13}, \frac{124}{39}\right)$. We see that the centers of the spheres are $(0,0,1)$, $(6,0, 2)$, $(0,4,3)$, $\left(\frac{42}{13}, \frac{124}{39}, r\right)$. The condition about tangent planes show that the four centers are coplanar. By some easy linear algebra and cross product calculations, we obtain that the plane is $-x - 3y + 6z = 6$. Plugging in the coordinates of $D$, we find that $r=z= \frac{122}{39}$ so the sum is $122 + 39 = \boxed{161}$.
+
+ made the parentheses bigger ~math\_cool123
+
+ 
+
+
+
+
+
+\textbf{Solution 2 (Coordbash using Tangency Condition)}
+
+Begin by imposing a coordinate system where point $A$ is at $(0,0)$, point $B$ is at $(6,0)$, and point $C$ is at $(0,4)$. Then the centroid is$G=\left(\frac{6}{3},\frac{4}{3}\right)=\left(2,\frac{4}{3}\right)$.
+
+ Consider the sphere tangent to point $A$. Its center, denoted $A'$, will be at $(0,0,1)$ as it has a radius of $1$ and will therefore be a distance of $1$ from point $A$. Similarly, our other spheres will have centers $(6,0,2)$ and $(0,4,3)$ at points $B$ and $C$, respectively. We will also denote the centers of the spheres tangent to points $B$ and $C$ as $B'$ and $C'$, respectively.
+
+ Now, consider the additional plane which is tangent to all the spheres. The center of the sphere at $A$ will be a distance of $1$ (its radius) from this plane. Similarly, the center of the sphere at $B$ will be a distance of $2$, and the center of the sphere at $C$ will be a distance of $3$ from this plane. Say our additional plane has equation $ax+by+cz+d=0$, and WLOG, $a^2+b^2+c^2=1$. Then, by the point-to-plane distance formula, we get
+
+ $c+d=1$ from $A'$,$6a+2c+d=2$ from $B'$, and$4b+3c+d=3$ from $C'$.Solving this system, we get $d=\frac{36}{23}$, $c=-\frac{13}{23}$, $b=\frac{18}{23}$, and $a=\frac{6}{23}$. Therefore, the equation of our plane is $6x+18y-13z+36=0$ as we scaled up by a factor of $23$.
+
+ Now, we must find $D$, the result of reflecting $G$ over $BC$. Line $BC$ has equation $2x+3y=12$, so reflecting gives $D=\left(\frac{42}{13},\frac{124}{39}\right)$. Now,$D'=\left(\frac{126}{39},\frac{124}{39},r\right)$,and it also has a distance of $r$ from the plane $6x+18y-13z+36=0$. By the point-to-plane distance formula, we get$\frac{6(\frac{126}{39})+18(\frac{124}{39})-13r+36}{23}=r$.
+
+ Thus, $\frac{2988}{39}-13r+36=23r$, so $\frac{2988}{39}+36=36r$, and $r=\frac{122}{39}$, giving a requested answer of $\boxed{161}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (Slightly more Efficient)}
+
+Notice that spheres can be replaced with heights from $A,B,C,D$ with lengths $1,2,3,r$. This is because planes are flat and increase linearly based on moving up or right. Now we determine the coordinates of $D$. To start off, assign coordinates as follows:
+ \[A=(0,0)\]
+ \[B=(0,6)\]
+ \[C=(4,0)\]Note that the centroid is the average of the $3$ coordinates of $A,B,C$:
+ \[G=\left(\frac{4}{3},2\right)\]The equation of $BC$ is:
+ \[y=-\frac{3}{2}x+6\]The projection of $G$ to $BC$ is the intersection of the following lines:
+ \[y=-\frac{3}{2}x+6\]
+ \[y=\frac{2}{3}x+\frac{10}{9}\]This intersection increases the $x$ coordinate by $\frac{11}{12}$. Now we find how much our radius increases when increasing the $x$ and $y$ by $1$. Notice that $AC=4$ and the incerase is $2$, therefore every $1$ added to the $x$ coordinate increases the radius by $\frac{1}{2}$. Similarly, every increase in the $y$ coordinate increases the radius by $\frac{1}{6}$. The radius of the centroid is $\frac{1+2+3}{3}=2$. Therefore our radius is:
+ \[r=2+2\cdot\frac{12}{13}\cdot\frac{1}{2}+2\cdot\frac{12}{13}\cdot\frac{2}{3}\cdot\frac{1}{6}=\frac{122}{39}\]This gives us $\boxed{161}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 4}
+
+Try to find that line of intersection of the 2 planes. If we look from a "sideways" perspective of the 2 planes, we would see this:
+
+ Set a coordinate system with points $A$,$B$,$C$
+
+ $A=(0,0)$
+
+ $B=(6,0)$
+
+ $C=(0,4)$
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_12_Solution_Figure_1.png}
+                    \end{figure}
+                    By similar triangles, we discovered that the distances from the line of intersection to the 3 bottom points of the spheres have same ratios as their radius. So, in simple words, we are trying to find a line that has distances with ratios of $1:2:3$, corresponding to points $A$,$B$,$C$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_12_Solution_Figure_1.png}
+                    \end{figure}
+                    We discovered that this line passes through $(-2,0)$ and is actually parallel to the midline of $\triangle ABC$ from point $B$. The line is 
+
+ 
+ \[x+3y+6=0\]
+
+ We get that the centroid of the triangle should be $G(2,\frac{4}{3})$, flipping it across $BC$ makes $D(\frac{42}{13},\frac{124}{39})$. Its distance compared to the distance of $A$ to the intersection line gives us our desired radius. So $\frac{\left|\frac{42}{13}+3\cdot\frac{124}{39}+6\right|}{6} = \frac{122}{39}$, giving us $\boxed{161}$.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) For each nonnegative integer $r$ less than $502$, define
+
+ \[S_r=\sum_{m\geq 0}\binom{10,000}{502m+r},\]
+where $\binom{10,000}{n}$ is defined to be $0$ when $n>10,000$. That is, $S_r$ is the sum of all the binomial coefficients of the form $\binom{10,000}{k}$ for which $0\leq k\leq 10,000$ and $k-r$ is a multiple of $502$. Find the number of integers in the list $S_0,S_1,S_2,\dots,S_{501}$ that are multiples of the prime number $503$.
+
+
+ 
+ \textbf{Answer: }039
+
+
+
+\textbf{Solution 1}
+
+Consider polynomials in $\mathbb F_{503}[x]$, that is, polynomials with integer coefficients taken modulo $503$. When viewed as functions $\mathbb F_{503}^\times \to \mathbb F_{503}$ (note that we have removed $0$ from the domain), it turns out that every such polynomial is equivalent to a unique polynomial of degree at most $501$. For example, $x^{502}$ is equivalent to $1$ by Fermat's little theorem. This equivalent polynomial with smaller coefficients can always be constructed by simply taking all exponents modulo $502$. The uniqueness of the reduced polynomial can be proven by using a finite field Fourier transform: If we expand any polynomial $p(x)$ of degree at most $501$,
+ \[p(x) = a_0 + a_1x + \cdots + a_{501}x^{501},\]then
+ \[a_k \equiv -\sum_{i=1}^{502} i^{-k} p(i) \pmod{503}.\]This lets us determine the coefficients of $p(x)$ exactly by evaluating it on $i = 1, 2, \dots, 502$, so the polynomial must be unique.
+
+ The problem statement tells us the $S_r$ are the coefficients of the reduction of $(1 + x)^{10,000}$:
+ \[(1 + x)^{10,000} \equiv \sum_{r = 0}^{501} S_r x^r \pmod{x^{502} - 1}.\]We can use Fermat's little theorem to reduce $(1 + x)^{10,000}$ in a different way. For all $x \in \{1, 2, \dots, 502\}$, we can evaluate that $(1 + x)^{10,000} \equiv (1 + x)^{462} \pmod{503}$. Because reductions are unique, this means that $(1 + x)^{462}$ is the reduction we seek. Equating coefficients,
+ \[\sum_{r = 0}^{501} S_r x^r \equiv (1 + x)^{462} \pmod{503},\]we get that $S_r \equiv \binom{462}{r} \pmod{503}$. Because $503$ is prime and $462$ is less than $503$, none of the binomial coefficients $\binom{462}{0}, \binom{462}{1}, \dots, \binom{462}{462}$ are equivalent to zero. So, $S_r$ is zero exactly when $r > 462$, i.e., $r \in \{463, 464, \dots, 501\}$. There are $501 - 463 + 1 = \boxed{039}$ such $r$. ~Gray\_Wolf
+
+ 
+
+
+
+
+
+\textbf{Solution 2 ~ Jesse Zhang (FUNKCCP)}
+
+Let $p = 503$. Since $p$ is a prime number, the field $\mathbb{F}_p$ is a finite field of order $p$. Let $N = 10,000$ and $d = 502$. Observe that $d = p - 1$.The problem asks for the number of indices $r \in \{0, 1, \dots, d-1\}$ such that $S_r \equiv 0 \pmod{p}$.
+
+ The sum $S_r$ corresponds to the sum of every $d$-th coefficient of the binomial expansion of $(1+x)^N$. Specifically, consider the polynomial $P(x) = (1+x)^N$ in the polynomial ring $\mathbb{F}_p[x]$. By the binomial theorem,
+ \[P(x) = \sum_{k=0}^N \binom{N}{k} x^k.\]To isolate the coefficients where the exponent $k$ satisfies $k \equiv r \pmod{d}$, we analyze the polynomial modulo $x^d - 1$. In the quotient ring $\mathbb{F}_p[x] / \langle x^d - 1 \rangle$, we have the identity $x^d = 1$, which implies $x^k = x^{k \pmod d}$. Consequently, the reduction of $P(x)$ is given by
+ \[P(x) \pmod{x^d - 1} = \sum_{r=0}^{d-1} \left( \sum_{m \ge 0} \binom{N}{dm+r} \right) x^r = \sum_{r=0}^{d-1} S_r x^r.\]We proceed to compute the explicit form of $(1+x)^N \pmod{x^d - 1}$. The polynomial $x^d - 1 = x^{p-1} - 1$ splits completely in $\mathbb{F}_p$, and its roots are exactly the non-zero elements of $\mathbb{F}_p$, denoted $\mathbb{F}_p^\times = \{1, 2, \dots, p-1\}$. Let $\alpha \in \mathbb{F}_p^\times$ be any such root. By Fermat's Little Theorem, for any $\alpha \neq 0$, we have $\alpha^{p-1} = 1$.
+
+ We evaluate the polynomial $(1+x)^N$ at an arbitrary root $\alpha$ of $x^d - 1$.First, we express $N$ in terms of $d$:
+ \[10,000 = 19 \times 502 + 462.\]Thus, $N = 19d + 462$.Then, the value of the polynomial at $x = \alpha$ is:
+ \[(1+\alpha)^N = (1+\alpha)^{19d + 462} = \left[ (1+\alpha)^d \right]^{19} (1+\alpha)^{462}.\]We distinguish two cases for $\alpha$:
+
+ \begin{verbatim}
+$\bullet$ \textbf{Case 1:} $\alpha \neq -1$.   Then $1+\alpha \in \mathbb{F}_p^\times$. Since the order of the multiplicative group is $d = p-1$, we have $(1+\alpha)^d = 1$. The expression simplifies to:   
+ \[(1+\alpha)^N = 1^{19} \cdot (1+\alpha)^{462} = (1+\alpha)^{462}.\]   $\bullet$ \textbf{Case 2:} $\alpha = -1$.   Then $1+\alpha = 0$. The left side becomes $0^N = 0$ (since $N \ge 1$). The term $(1+\alpha)^{462} = 0^{462} = 0$. Thus, the equality $(1+\alpha)^N = (1+\alpha)^{462}$ holds strictly.
+\end{verbatim}In both cases, $(1+\alpha)^N = (1+\alpha)^{462}$ for all roots $\alpha$ of $x^d - 1$. Let $Q(x) = (1+x)^{462}$. Since the polynomials $\sum S_r x^r$ and $Q(x)$ agree on all $d$ distinct roots of $x^d - 1$, and the degree of $Q(x)$ is $462$, which is strictly less than $d=502$, Lagrange interpolation implies that these polynomials are identical in $\mathbb{F}_p[x]$.
+
+ Therefore, equating the coefficients of $x^r$:
+ \[S_r \equiv \binom{462}{r} \pmod{503}.\]We seek the number of integers $r \in \{0, 1, \dots, 501\}$ such that $S_r \equiv 0 \pmod{503}$.The binomial coefficient $\binom{n}{k}$ modulo a prime $p$ is zero if and only if $k > n$ (assuming $n < p$). Here, $n = 462$.
+
+ \begin{verbatim}
+$\bullet$ For $0 \le r \le 462$, $\binom{462}{r} \not\equiv 0 \pmod{503}$.   $\bullet$ For $463 \le r \le 501$, $\binom{462}{r} = 0$, so $S_r \equiv 0 \pmod{503}$.
+\end{verbatim}The values of $r$ satisfying the condition are exactly the integers in the range $[463, 501]$. The count is:
+ \[501 - 463 + 1 = 39.\]
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_13_Solution_Figure_1.png}
+                    \end{figure}
+                    The number of integers in the list $S_0, S_1, \dots, S_{501}$ that are multiples of $503$ is $39$.
+
+ 
+
+
+
+
+
+\textbf{Solution 3(Simpler)}
+
+First, we will try to write out the sum of $S_r$. First, we note that anytime $502m + r > 10,000$ the binomial coefficiant evaluates to be $0$ so we can solve this inequality and not have to worry about other values of $m$. Essentially, noticing $502 \cdot 19 = 9538$ and $502 \cdot 20 = 10040$ we realize that anytime $m \geq 20$ we don't have to worry. Essentially, we only consider $0 \leq m \leq 19$ so the sum simply becomes
+
+ $S_r = \binom{10, 000}{r} + \binom{10, 000}{502 + r} + \cdots + \binom{10,000}{9538 + r}$
+
+ Now we will use Lucas's Theorem to find $S_r$ mod $503$. Note that we're essentially finding
+
+ $\binom{10, 000}{502m + r}$ mod $503$
+
+ Using Lucas's Theorem we find $10,000$ in base $503$ is $503^1 \cdot 19 + 503^0 \cdot 443$. For $502m + r$ we can write
+
+ $502m + r = (503 - 1)m + r = 503m + (r - m) = 503^1 \cdot m + 503^0 \cdot (r - m)$ where as $0 \leq m \leq 19 < 503$ and the maximum possible value of $r - m$ being $501 - 0 = 501 \implies r - m \leq 501 < 503$ these can both be digits in base $503$. Therefore, we've found our base representations for each of these numbers and we can apply Lucas's Theorem.
+
+ We have
+
+ $(\binom{19}{m})(\binom{443}{r - m})$ is the expression modulo $503$. So we just have the sum reduced modulo $503$ as
+
+ $(\binom{19}{0})(\binom{443}{r}) + (\binom{19}{1})(\binom{443}{r - 1}) + \cdots + (\binom{19}{19})(\binom{443}{r - 19})$
+
+ Recall Vandermonde's Identity which states that for nonnegative integers $r, m, n$ for which $r \leq m + n$, we have
+
+ $(\binom{m}{0})(\binom{n}{r}) + (\binom{m}{1})(\binom{n}{r - 1}) + \cdots + (\binom{m}{r})(\binom{n}{0}) = \binom{m + n}{r}$
+
+ In this case our $r$ remains the same and $m = 19$ and $n = 443$. Therefore, the expression beautifully simplifies to
+
+ $\binom{19 + 443}{r} = \binom{462}{r}$
+
+ In other words, $S_r$ modulo $503$ is simply $\binom{462}{r}$
+
+ Finally, we can finish the problem. We note that $S_r$ modulo $503$ must be $0$ in order for $S_r$ to be a multiple of $503$. Therefore, $\binom{462}{r}$ must be $0$. This only happens when $r = 463$ all the way to the limit of $r = 501$. We just need to count how many numbers are there between $463$ and $501$. This is simply $501 - 463 + 1 = \boxed{039}$
+
+ 
+
+
+
+
+
+\textbf{Solution 4 (Easiest, Beginner Friendly)}
+
+Evaluate the indexes. All such indexes differ by some multiple of 502, that plus $r$. Consider the function $(1+x)^{10000} = \sum_{k=0}^{10000} \binom{10000}{k}x^k$. How do we make all $k$ start at $r$ and move by increments 502? Simple! Define $k = 502m+r$. WLOG say $m=1$. Then, we require $x^{502+r} = x^{r}$. Division yields $x^{502} = 1$, so $x$ is a 502'nd root of unity.
+
+ Now, consider $(1+x)^{10000} \pmod{x^{502} - 1}$. We only require $S_r$ after reduction. Then, we rewrite as
+
+ 
+ \[(1+x)^{10000}=\sum_{k=0}^{10000}\binom{10000}{k}x^k\]
+ \[(1+x)^{10000}=\sum_{r=0}^{501}\sum_{m\ge0}\binom{10000}{502m+r}x^{502m+r}\].
+
+ We can do this as each $k$ is dependent on the value $r$, varying from 0 to 501. Note that this modulo $x^{502}-1$ reduces $x^{502m+r}$ to $x^r$, and the inner sum is exactly $S_r$. Therefore,
+
+ 
+ \[(1+x)^{10000}=\sum_{r=0}^{501}S_rx^{r} \pmod{x^{502}-1}\].
+
+ Note that through Euclidean Algorithm, $10000 = 19 \cdot 502 + 462$. So, $(1+x)^{10000}= (1+x)^{502^{19}} \cdot (1+x)^{462}$. Note that through Fermat's Little Theorem, $(1+x)^{502^{19}} \equiv 1^{19} \pmod{503} = 1$, so we just consider $(1+x)^{462} \pmod{503}$. That is exactly $(1+x)^{462} = \sum_{r=0}^{462} \binom{462}{r}x^r$. We simplify this the same way as before with $(1+x)^{10000}$. Now note that the modulus $503$ is greater than 462 and all $r < 502$, residues will only change if $x^r$ has a power greater than 502 (or 503). Therefore, in exact terminology we have corresponded $\binom{462}{r}$ to the remainder when $S_r$ is divided by 503. Obviously, the interval $[463, 501]$ yields $0 \pmod{503}$, so we have $\boxed{39}$ solutions.
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) In an equiangular pentagon, the sum of the squares of the side lengths equals $308$, and the sum of the squares of the diagonal lengths equals $800$. The square of the perimeter of the pentagon can be expressed as $m\sqrt{n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m+n$.
+
+
+ 
+ \textbf{Answer: }681
+
+
+
+\textbf{Solution 1}
+
+Let the vertices of the pentagon be $A, B, C, D,$ and $E$. Since the pentagon is equiangular, each interior angle is $108^\circ$. Let $a=AB, b=BC, c=CD, d=DE, e=EA$.We define the following:$\phi = \frac{1+\sqrt{5}}{2}$ is the golden ratio, satisfying $\phi^2 = \phi + 1$ and $\phi^3 = 2\phi + 1$.$J = ab+bc+cd+de+ea$ is the sum of the products of adjacent sides. $K = ac+bd+ce+da+eb$ is the sum of the products of non-adjacent sides (diagonals). The idea will be to use the law of cosines and take cyclic sums. We want $(a+b+c+d+e)^2 = a^2 + b^2 + c^2 + d^2 + e^2 + 2J + 2K = 308 + 2J + 2K$.
+
+ \textbf{Finding the value of J} By the law of cosines on triangle $ABC$, we have: $AC^2 = a^2 + b^2 - 2ab \cos(108^\circ)$. Taking the cyclic sum over all five triangles ($ABC, BCD, CDE, DEA, EAB$) gives:\begin{align*}\sum AC^2 &= \sum (a^2 + b^2) - 2\cos(108^\circ) \sum ab \end{align*}
+ \begin{align*} 800 &= 308 + 308 - 2\cos(108^\circ)J \end{align*}
+ Using $\cos(108^\circ) = \frac{1-\sqrt{5}}{4} = \frac{1-\phi}{2}$:\begin{align*}800 &= 616 - 2\left(\frac{1-\phi}{2}\right)J \end{align*}
+ \begin{align*} 184 &= (\phi - 1)J\end{align*}
+Since $\phi - 1 = \frac{1}{\phi}$, we have $J = 184\phi$.
+
+ \textbf{Finding the value of K} Extend line $EA$ through $A$ and $CB$ through $B$ to intersect at point $F$. Since the interior angles are $108^\circ$, the exterior angles $\angle FAB$ and $\angle FBA$ are both $72^\circ$. Consequently, in $\triangle FAB$, we find $\angle AFB = 180^\circ - 72^\circ - 72^\circ = 36^\circ$. Applying the Law of Sines in $\triangle FAB$ with side $AB=a$ and $AF=FB$, we determine the relationship to the golden ratio: $AF = a\phi = FB$. We obtain $FE = e + a\phi, FC = b + a\phi$. Using the Law of Cosines on $\triangle CFE$ for diagonal $CE$: 
+ \[CE^2 = (e+a\phi)^2 + (b+a\phi)^2 - 2(e+a\phi)(b+a\phi)\cos(36^\circ).\]Expanding the expression: 
+ \[CE^2 = e^2 + b^2 + 2ea\phi + 2ab\phi + 2a^2\phi^2 - 2eb\cos(36^\circ) - 2ea\phi\cos(36^\circ) - 2ab\phi\cos(36^\circ) - 2a^2\phi^2\cos(36^\circ).\]Taking the cyclic sum across all five diagonals ($CE, DA, EB, AC, BD$) gives: 
+ \[\sum CE^2 = 2\sum a^2 + 4\phi J + 2\phi^2 \sum a^2 - 2\cos(36^\circ) K - 4\phi\cos(36^\circ) J - 2\phi^2\cos(36^\circ) \sum a^2\]Substitute $\sum a^2 = 308$, $\cos(36^\circ) = \frac{\phi}{2}$, and by the definitions of $J$ and $K$ we find\begin{align*} 800 &= 2(308) + 4\phi J + 2\phi^2(308) - 2\left(\frac{\phi}{2}\right)K - 4\phi\left(\frac{\phi}{2}\right)J - 2\phi^2\left(\frac{\phi}{2}\right)(308) \end{align*}
+ \begin{align*} 800 &= 616 + 4\phi J + 616\phi^2 - \phi K - 2\phi^2 J - 308\phi^3\end{align*}
+ Simplify using $\phi^2 = \phi + 1$ and $\phi^3 = 2\phi + 1$:\begin{align*}800 &= 616 + 4\phi J + 616(\phi + 1) - \phi K - 2(\phi + 1)J - 308(2\phi + 1) \end{align*}
+ \begin{align*} 800 &= 616 + 4\phi J + 616\phi + 616 - \phi K - 2\phi J - 2J - 616\phi - 308 \end{align*}
+ \begin{align*} 800 &= 924 + 2\phi J - 2J - \phi K \end{align*}
+ \begin{align*} 800 &= 924 + 2J(\phi - 1) - \phi K\end{align*}
+Substitute $J(\phi - 1) = 184$:\begin{align*}800 &= 924 + 2(184) - \phi K \end{align*}
+ \begin{align*} 800 &= 1292 - \phi K  \end{align*}
+ \begin{align*} \phi K &= 492 \implies K = \frac{492}{\phi}\end{align*}
+Using $1/\phi = \phi - 1$, we obtain $K = 492(\phi - 1) = 492\phi - 492$.
+
+ \textbf{Square of the Perimeter} \begin{align*} P^2 &= 308 + 2(184\phi) + 2(492\phi - 492) \end{align*}
+ \begin{align*} P^2 &= 308 + 368\phi + 984\phi - 984 \end{align*}
+ \begin{align*} P^2 &= 1352\phi - 676\end{align*}
+ Substitute $\phi = \frac{1+\sqrt{5}}{2}$:\begin{align*}P^2 &= 1352\left(\frac{1+\sqrt{5}}{2}\right) - 676 \end{align*}
+ \begin{align*} P^2 &= 676(1+\sqrt{5}) - 676 = 676\sqrt{5}\end{align*}
+ With $m = 676$ and $n = 5$, we have $m + n = 676 + 5 = \boxed{681}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+idk what the above guy is doing butWe can use complex numbers. Let $\omega=e^{2\pi i/5}$. Let $a,b,c,d,e$ be the side lengths in order. The first condition gives
+
+ 
+ \[a^2+b^2+c^2+d^2+e^2=308,\]
+
+ and as $|x|^2=x\overline x$, the second condition gives
+
+ 
+ \[\sum_\text{cyc}(a+b\omega)(a+b\omega^{-1})=2(a^2+b^2+c^2+d^2+e^2)+(\omega+\omega^{-1})(ab+bc+cd+de+ea)=800.\]
+
+ This is as, for example, the vector $AC$ is the vector $AB$ plus the vector $BC$. Alternatively, the vector $AC$ is also the vector $AE$ plus the vector $ED$ plus the vector $DC$, so the second condition also gives
+
+ 
+ \[\sum_\text{cyc}(a+b\omega+c\omega^2)(a+b\omega^{-1}+c\omega^{-2})=3(a^2+b^2+c^2+d^2+e^2)+2(\omega+\omega^{-1})(ab+bc+cd+de+ea)+(\omega^2+\omega^{-2})(ac+bd+ce+da+eb)\]
+
+ We can just solve for $a^2+b^2+c^2+d^2+e^2,ab+bc+cd+de+ea,ac+bd+ce+da+eb$ as this is a system of three variables and three equations. Then we want to find
+
+ 
+ \[(a+b+c+d+e)^2=a^2+b^2+c^2+d^2+e^2+2(ab+bc+cd+de+ea)+2(ac+bd+ce+da+eb).\]
+
+ Notice that $\omega+\omega^{-1}=2\cos72^\circ,\omega^2+\omega^{-2}=2\cos144^\circ$. I highly recommend memorizing these useful values if a similar problem pops up in the future.
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (very smart cheese)}
+
+From the previous two solutions (reading those two before this one is highly suggested), it is easy to see that the square of the perimeter should equal $308+184(1+\sqrt{5})+X$. The problem is to find this value of $X$.
+
+ This is definitely the hardest part of the problem, so what we do instead is try to guess. Simplify the answer expression to $492+184\sqrt{5}+X$. We know the final answer must be of the form $m\sqrt{n}$, and in this case, we can easily see that $n$ should be $5$. Also, it is intuitive that $X=Y(\sqrt{5}-1)$ for some value of $Y$. If one can't see why, it's still quite straightforward to observe that this makes the most sense. Then, the answer expression should simplify to $(492-Y)+(184+Y)\sqrt{5}$. In order to get the answer as the product of an integer and $\sqrt{5}$, the rational part, $492-Y$, must equal to $0$. Thus, $Y=492$, and the answer expression should be $(184+492)\sqrt{5}=676\sqrt{5}$, making the final answer $676+5=\boxed{681}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 4}
+
+Let the five sides have length $a,b,c,d,e$. Then, we have $a^2+b^2+c^2+d^2+e^2=308$. Let $x=\sin(18^{\circ})=-\cos(108^{\circ})=\frac{\sqrt5-1}{4}$, so the diagonal connecting the endpoints of $a,b$ has length $a^2+b^2-2ab\cos(108^{\circ})=a^2+b^2+2abx$. Thus, the second condition is
+ \[2(a^2+b^2+c^2+d^2+e^2)+2x(ab+bc+cd+de+ea)=800\]so $ab+bc+cd+de+ea=\frac{92}{x}=92\sqrt5+92$.
+
+ We want to find the value of $(a+b+c+d+e)^2=308+2(ab+bc+cd+de+ea)+2(ac+bd+ce+da+be)$, so we want to find $ac+bd+ce+da+be$. 
+
+ Let the extensions of $a$ and $c$ intersect at point $P$ and the extensions of $a$ and $d$ intersect at point $Q$. Let $c$ and $d$ intersect at $A$. Then, clearly $\angle PQA=36^{\circ}$, $\angle QPA=36^{\circ}$ by the fact that the pentagon is equiangular. So, $PAQ$ is isosceles, and $PA=QA$. Notice that by the definition of the sine, $QA=\frac{e}{2x}+d$ and $PA=\frac{b}{2x}+c$. Thus, 
+ \[\frac{e}{2x}+d=\frac{b}{2x}+c\]To form $ac$, we want to multiply the equation by another thing that has a term of $\frac{b}{2x}+a$. Using the same method for another two sides, we get
+ \[\frac{b}{2x}+a=\frac{d}{2x}+e\]multiplying these two give
+ \[(\frac{b}{2x}+c)(\frac{b}{2x}+a)=(\frac{e}{2x}+d)(\frac{d}{2x}+e)\]
+ \[\frac{b^2}{4x^2}+\frac{bc}{2x}+\frac{ab}{2x}+ac=\frac{de}{4x^2}+de+\frac{e^2}{2x}+\frac{d^2}{2x}\]
+ \[ac=\frac{de}{4x^2}+de+\frac{e^2}{2x}+\frac{d^2}{2x}-\frac{b^2}{4x^2}-\frac{bc}{2x}-\frac{ab}{2x}\]we want to find $ac+bd+ce+da+be$, so we can add all equations of this type cyclically, obtaining
+ \[\sum_{cyc}ac=(\frac{1}{4x^2}-\frac{1}{x}+1)\sum_{cyc}ab+(\frac{1}{x}-\frac{1}{4x^2})\sum_{cyc}a^2\]
+ \[\sum_{cyc}ac=(92\sqrt5+92)(\frac{1}{4x^2}-\frac{1}{x}+1)+308(\frac{1}{x}-\frac{1}{4x^2})\]Now, $x=\frac{\sqrt5-1}{4}$, so $\frac{1}{x}=\sqrt5+1$ and $\frac{1}{4x^2}=\frac{3+\sqrt5}{2}$. So,
+ \[\sum_{cyc}ac=(92\sqrt5+92)(\frac{3+\sqrt5}{2}-\sqrt5-1+1)+308(\sqrt5+1-\frac{3+\sqrt5}{2})\]
+ \[\sum_{cyc}ac=(92\sqrt5+92)(\frac{3-\sqrt5}{2})+308(\frac{\sqrt5-1}{2})\]
+ \[\sum_{cyc}ac=246\sqrt5-246\]Plugging this back into $(a+b+c+d+e)^2=308+2(ab+bc+cd+de+ea)+2(ac+bd+ce+da+be)$ we have
+ \[(a+b+c+d+e)^2=308+184\sqrt5+184+492\sqrt5-492=676\sqrt5\]answer extraction gives $676+5=\boxed{681}$.
+
+ 
+
+
+
+
+
+\textbf{Solution 5 ~ Jesse Zhang (FUNKCCP)}
+
+Consider an equiangular pentagon in the complex plane with vertices $V_1, V_2, V_3, V_4, V_5$ in counterclockwise order. Let the side lengths be $a_k = |V_{k+1} - V_k|$ for $k=1, \dots, 5$ (indices modulo 5), and let the diagonal lengths be $d_k = |V_{k+2} - V_k|$. 
+
+ Since the pentagon is equiangular, each interior angle is given by $\dfrac{(5-2) \times 180^\circ}{5} = 108^\circ$.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_14_Solution_Figure_1.png}
+                    \end{figure}
+                    We first establish a relationship between the side lengths and the diagonal lengths using the Law of Cosines on triangle $\triangle V_k V_{k+1} V_{k+2}$. The sides of this triangle are $a_k$, $a_{k+1}$, and the diagonal $d_k$. The included angle at vertex $V_{k+1}$ is $108^\circ$.
+ \[d_k^2 = a_k^2 + a_{k+1}^2 - 2 a_k a_{k+1} \cos(108^\circ).\]We define the golden ratio $\phi = \frac{1+\sqrt{5}}{2}$. Recall that $\cos(108^\circ) = -\sin(18^\circ) = -\frac{\sqrt{5}-1}{4} = -\frac{1}{2\phi}$. Substituting this value, the equation becomes:
+ \[d_k^2 = a_k^2 + a_{k+1}^2 + \frac{1}{\phi} a_k a_{k+1}.\]Let $S_1 = \sum_{k=1}^5 a_k^2$ and $S_2 = \sum_{k=1}^5 a_k a_{k+1}$. Summing the expression for $d_k^2$ over $k=1, \dots, 5$, we obtain the sum of the squares of the diagonals, denoted as $D^2$:
+ \[\sum_{k=1}^5 d_k^2 = \sum_{k=1}^5 a_k^2 + \sum_{k=1}^5 a_{k+1}^2 + \frac{1}{\phi} \sum_{k=1}^5 a_k a_{k+1}\]
+ \[D^2 = 2 S_1 + \frac{1}{\phi} S_2.\]Given $S_1 = 308$ and $D^2 = 800$, we substitute these values:
+ \[800 = 2(308) + \frac{1}{\phi} S_2 \implies 800 = 616 + \frac{S_2}{\phi} \implies 184 = \frac{S_2}{\phi}.\]Thus, $S_2 = 184\phi$.
+
+ Next, we utilize the geometric closure of the pentagon. Viewing the sides as vectors in the complex plane, let $\omega = e^{i 72^\circ}$. The vector corresponding to side $a_k$ points in the direction of $\omega^{k-1}$ (up to a global rotation). The condition $\sum_{k=1}^5 a_k \omega^{k-1} = 0$ implies:
+ \[\left| \sum_{k=1}^5 a_k \omega^{k-1} \right|^2 = 0.\]Expanding this squared modulus:
+ \[\sum_{j=1}^5 \sum_{k=1}^5 a_j a_k \omega^{j-k} = 0.\]We group the terms by the difference in indices $m \equiv j-k \pmod 5$. Let $S_3 = \sum_{k=1}^5 a_k a_{k+2}$. The coefficients are powers of $\omega$:
+
+ \begin{verbatim}
+$\bullet$ For $m=0$, the coefficient is $\omega^0 = 1$. The sum is $S_1$.   $\bullet$ For $m=\pm 1$, the coefficient is $\omega + \omega^{-1} = 2\cos(72^\circ) = \frac{1}{\phi}$. The sum is $S_2$.   $\bullet$ For $m=\pm 2$, the coefficient is $\omega^2 + \omega^{-2} = 2\cos(144^\circ) = -\phi$. The sum is $S_3$.
+\end{verbatim}The closure equation becomes:
+ \[S_1 + \frac{1}{\phi}S_2 - \phi S_3 = 0.\]Substituting the known values $S_1 = 308$ and $\frac{S_2}{\phi} = 184$:
+ \[308 + 184 - \phi S_3 = 0 \implies 492 = \phi S_3 \implies S_3 = \frac{492}{\phi}.\]
+
+ We are asked to find the square of the perimeter $P = \sum_{k=1}^5 a_k$.
+ \[P^2 = \left( \sum_{k=1}^5 a_k \right)^2 = \sum_{k=1}^5 a_k^2 + 2 \sum_{k=1}^5 a_k a_{k+1} + 2 \sum_{k=1}^5 a_k a_{k+2}.\]
+ \[P^2 = S_1 + 2 S_2 + 2 S_3.\]Substituting the expressions in terms of $\phi$:
+ \[P^2 = 308 + 2(184\phi) + 2\left(\frac{492}{\phi}\right).\]Using the identity $\frac{1}{\phi} = \phi - 1$:
+ \[P^2 = 308 + 368\phi + 984(\phi - 1) = 308 + 368\phi + 984\phi - 984.\]
+ \[P^2 = 1352\phi - 676.\]Finally, substitute $\phi = \frac{1+\sqrt{5}}{2}$:
+ \[P^2 = 1352\left(\frac{1+\sqrt{5}}{2}\right) - 676 = 676(1+\sqrt{5}) - 676 = 676 + 676\sqrt{5} - 676.\]
+ \[P^2 = 676\sqrt{5}.\]This is in the form $m\sqrt{n}$ with $m = 676$ and $n = 5$. Since $5$ is a prime number, it is square-free.The value $m+n$ is:
+ \[m+n = 676 + 5 = 681.\]
+
+ 
+
+
+
+
+	\item (\textit{AIME I 2026}) Let $a, b,$ and $n$ be positive integers with both $a$ and $b$ greater than or equal to $2$ and less than or equal to $2n.{}$ Define an $a \times b$ cell loop in a $2n \times 2n$ grid of cells to be the $2a + 2b - 4$ cells that surround an $(a - 2) \times (b - 2)$ (possibly empty) rectangle of cells in the grid. For example, the following diagram shows a way to partition a $6 \times 6$ grid of cells into $4$ cell loops.
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AIME_2026_I_15_Problem_Figure_1.png}
+                    \end{figure}
+                    
+Find the number of ways to partition a ${}10 \times 10$ grid of cells into $5$ cell loops so that every cell of the grid belongs to exactly one cell loop.
+
+
+ 
+ \textbf{Answer: }083
+
+
+
+\textbf{Solution 1}
+
+(This solution has two parts: a computational part and a proof part. Readers who only care about the main idea may focus on the first part.)
+
+ A loop is defined to be the border of an axis-aligned rectangle of cells, with both dimensions at least $2$.
+
+ In any partition of the $10\times10$ grid into $5$ loops, the loop containing the corner cell $(1,1)$ must span an entire side of the grid; otherwise, uncovered boundary cells force too many loops (this will be proved later). Hence that loop must be one of size $10\times2$, $10\times4$, $10\times6$, $10\times8$, or $10\times10$. Odd widths are impossible, and smaller shapes fail; these facts will also be proved later.
+
+ If the corner loop is $10\times10$, then removing it leaves an $8\times8$ square, which has already been shown by direct casework to admit exactly $27$ partitions into $4$ loops.
+
+ If the corner loop is $10\times8$, then removing it leaves a $10\times2$ strip and an $8\times6$ rectangle. The strip is forced to be one loop, and the $8\times6$ rectangle has already been shown to admit exactly $5$ partitions into $3$ loops. This gives $5$ partitions in this case.
+
+ If the corner loop is $10\times6$, then removing it leaves a $10\times4$ strip and an $8\times4$ rectangle. Each of these must use exactly $2$ loops. A $10\times4$ rectangle can be partitioned into $2$ loops in $2$ ways, and an $8\times4$ rectangle can be partitioned into $2$ loops in $2$ ways, giving $2\cdot2=4$ partitions.
+
+ If the corner loop is $10\times4$, then removing it leaves a $10\times6$ rectangle and an $8\times2$ strip. The strip is forced to be one loop, and the $10\times6$ rectangle admits exactly $5$ partitions into $3$ loops, giving $5$ partitions.
+
+ If the corner loop is $10\times2$, then removing it leaves a $10\times8$ rectangle, which has already been shown to admit exactly $14$ partitions into $4$ loops.
+
+ By symmetry, the horizontal cases $2\times10$, $4\times10$, $6\times10$, and $8\times10$ contribute the same numbers as $10\times2$, $10\times4$, $10\times6$, and $10\times8$ respectively, while the $10\times10$ case is self-symmetric and counted once.
+
+ Adding all cases gives $27+2(14+5+4+5)=\boxed{083}.$
+
+ Thus, there are exactly $83$ ways to partition the $10\times10$ grid into $5$ loops.
+
+ \textbf{Proof, for those who care} Lemma 1. In any partition of the $10\times10$ grid into five rectangular cell loops, the loop containing the cell $(1,1)$ must contain either the entire top row or the entire left column.
+
+ Proof.Let $L$ be the loop containing $(1,1)$. Since every loop is the border of an axis-aligned rectangle of cells, $L$ is the border of some $r\times c$ rectangle whose top-left corner is $(1,1)$. Thus $L$ occupies the cells $(1,j)$ for $1\le j\le c$ and $(i,1)$ for $1\le i\le r$.
+
+ Suppose for contradiction that $L$ contains neither the entire top row nor the entire left column, so $r\le9$ and $c\le9$. Then the boundary cells $(1,c+1),(1,c+2),\dots,(1,10)$ are uncovered, as are the boundary cells $(r+1,1),(r+2,1),\dots,(10,1)$.
+
+ Any loop containing one of the uncovered cells on the top row must have its rectangular border’s top edge on row $1$ and cannot intersect $L$, so such cells force the existence of a loop disjoint from $L$ and lying entirely to the right of $L$. Similarly, the uncovered cells on the left column force the existence of a loop disjoint from $L$ and lying entirely below $L$. These two loops are distinct, since a single rectangle border cannot cover both separated boundary portions without crossing $L$.
+
+ If $r\ge3$ and $c\ge3$, then $L$ encloses an interior rectangle of size $(r-2)\times(c-2)$, which is a connected component separated from the rest of the grid and therefore must be covered by at least one loop contained entirely inside $L$. There also remain uncovered cells outside $L$ that are not contained in the two boundary-forced loops, so the exterior region requires at least one additional loop.
+
+ Thus at least five loops are already forced, leaving no slack, and in fact the interior or exterior regions are not themselves rectangular borders and therefore require more than one loop, giving a contradiction. If $r=2$ or $c=2$, then $L$ already contains the entire top row or entire left column. Hence the assumed situation is impossible, and $L$ must contain the entire top row or the entire left column.
+
+ Lemma 2. In a partition of the $10\times10$ grid into five rectangular cell loops, the loop containing $(1,1)$ cannot be the border of a $10\times k$ or $k\times10$ rectangle with $k$ odd.
+
+ Proof.By symmetry, it suffices to rule out a $10\times k$ corner loop with $k$ odd and $k\le9$. Let $L$ be such a loop. Removing the border of $L$ leaves two regions: a right strip of size $10\times(10-k)$ and an interior rectangle of size $8\times(k-2)$. Since $k$ is odd, both $10-k$ and $k-2$ are odd.
+
+ We claim that no rectangle of even height at least $4$ and odd width can be partitioned into rectangular cell loops. Assuming this claim, either the right strip, which has height $10$ and odd width at least $1$, or the interior rectangle, which has height $8$ and odd width when $k\ge5$ (and width $1$ when $k=3$), is not loop-partitionable. This contradicts the assumption that the original grid was partitioned into loops. Thus $k$ cannot be odd.
+
+ To prove the claim, suppose an $m\times w$ rectangle with $m\ge4$ even and $w$ odd can be partitioned into loops. Consider the loop containing its top-left corner. If this loop spans the full width $w$, then it has height at least $3$ and encloses an interior rectangle of width $w-2$, which is still odd, and height at least $1$. If the height is $3$, the interior has height $1$ and cannot be tiled by loops; if the height is larger, we obtain a smaller even-by-odd rectangle, contradicting minimality.
+
+ If instead the corner loop spans the full height $m$ with some width $t$, then removing it leaves an $m\times(w-t)$ rectangle with $w-t$ odd. Since $t\ge2$, this reduces the odd width by at least $2$ while preserving even height at least $4$. Repeating this process eventually produces an $m\times1$ or $m\times3$ rectangle, neither of which can be partitioned into loops, since every loop has width at least $2$ and any attempt creates an interior strip of width $1$.
+
+ This contradiction proves the claim and hence the lemma.
+
+ 
+
+
+
+
+
+\textbf{Solution 2}
+
+After building some intuition for this problem, we can see that all loops must be either "vertical" (with $a\geq b$ or "horizontal" (with $b\geq a$), except for the case where 5 loops are all nested within each other (which has both). We may do this using an area argument: [it's hard to state but just trust me. placeholder box] Each loop may complete 2 rows or 2 columns at maximum. Therefore we may consider the vertical case.
+
+ We may then pose an equivalent problem:  Let us represent each loop as a pair of parentheses. For example, ()()()()() represents 5 loops such that none are nested, ((((())))) represents all the loops being nested. Then, this is the same as the 5th \href{https://artofproblemsolving.com/wiki/index.php?title=Catalan\_number}{Catalan number} which is $42$. The answer is therefore $42\cdot2-1=\boxed{083}.$
+
+ 
+
+
+ 
+
+
+
+
+
+\textbf{Solution 3 (similar to solution 2, different beginning)}
+
+Every loop is defined as a "integer configuration". In other words, every loop consists of at minimum four one-by-one grids. An example is the one below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_15_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Therefore, by definition in the problem, all such loops consist of grids, and therefore have one vertical and one horizontal component.
+
+ Now, we have three cases. Let $a$ denote the length of the vertical portions of the grid and $b$ be the length of the horizontals.
+
+ So, either $a>b$, $b>a$ or $a=b$. The number of ways to count this is the number of ways to count rectangles that satisfy $a \ge b$ or $b \ge a$, in which 2 such rectangles are formed for $a \neq b$, and 1 rectangle is overcounted if $a = b$. So, say that we can form $n$ $l$-loops in an $m \times m$ grid. Then, $2n-1$ is the final count.
+
+ Now, we imply the bijection to solve for $n$ when $l=5$. We put a "marker" on one end of a loop, and a marker on one of the ends right next to it, like the figure below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_15_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Let the left white marker be an open parentheses ( and the right white marker be a closed parentheses ). Then, every () denotes a closed valid loop. So, we require valid orderings of open and closed parentheses such that no closed parentheses is found before an open parentheses, left to right. One valid ordering looks like (())()()() as five loops, two of which are nested within one another (like the $2 \times 4$ and the $2 \times 2$, like the one below).
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2026_I_15_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ That is, we look for the Catalan Parentheses Pattern. That is the fifth catalan number, or 42.
+
+ The count is $2 \cdot 42 - 1 =\boxed{83}$.
+
+ Similar Solution, but the beginning is slightly easier to come across than solution 2.
+
+ \textbf{Engineer's induction doesn't work} If one solves the same problem but with $1$ cell loop and a $2 \times 2$ grid, $2$ cell loops and a $4 \times 4$ grid, $3$ cell loops and a $6 \times 6$ grid, and $4$ cell loops and a $8 \times 8$ grid, one obtains the answers $1$, $3$, $9$, and $27$. But the answer to the actual AIME problem is not $81$.
+
+ 
+
+
+ 
+
+
+
+
+\end{enumerate}
