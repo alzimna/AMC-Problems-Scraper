@@ -61,7 +61,7 @@ AMC-Problems-Scraper
 
 | File/Folder | Path | Note |
 | :--- | :--- | :--- |
-| `answers_full.json`, `problems_full.json`, `solutions_full.json` | `output/AIME` | Raw data scraped directly from the contest source. Tips : You can open json file using Excel or your favorite programming langauge |
+| `answers_full.json`, `problems_full.json`, `solutions_full.json` | `output/AIME` | Raw data scraped directly from the contest source. Tips : You can open/load json files using Excel or your favorite programming language |
 | `contest_metadata.json` | `data/AIME` | Metadata for each contest instance, including the source URL and problem count. |
 | `full.json` | `data/AIME` | The compiled version, with problems, answers, and solutions merged together. |
 | `index.json` | `data/AIME` | Lightweight problem metadata, saved for a future project. |
