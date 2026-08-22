@@ -142,9 +142,10 @@ def decode_img(df,row,statement_tex,type) :
     else :
         raise Exception('Type not found')
 
-    img_counter = 0
+    img_counter = -1
     for tag in statement_soup.find_all('img') :
         if FIG_CONDITION(tag) :
+            img_counter += 1
             figure_name = figs[img_counter]
             if type == 'p' :
                 figure_name = "Problem/"+figure_name
