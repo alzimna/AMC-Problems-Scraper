@@ -5,6 +5,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import lxml.etree as ET
 import re
+import copy
 
 
 from .config import *
@@ -22,7 +23,10 @@ ACT_PROB = {
     'i' : lambda target,item : target.replace(str(item),rf'\textit{{{item.decode_contents()}}}'),
     'br': lambda target,item : target.replace(str(item),'\n'),
     'hr': lambda target,item : target.replace(str(item),''),
+}
 
+ACT_PROB_HTML = {
+    'a' : lambda target,item : decode_link_html(target,item),
 }
 
 FIG_CONDITION = lambda tag : ((tag.name == 'img') and 
@@ -237,11 +241,11 @@ def parsing_prob_to_tex(contest) :
         
     df = pd.DataFrame(data)
 
-    df['problem_statement_tex'] = (df['problem_statement'].apply(decode_math)
-                                                        .apply(decode_tag)
-                                                        .apply(decode_dldd)
-                                                        .apply(decode_list)
-                                                        )
+    df['problem_statement_html'] = (df['problem_statement'].apply(decode_math)
+                                                    .apply(decode_tag)
+                                                    .apply(decode_dldd)
+                                                    .apply(decode_list)
+                                                    )                                                 
     
     prob_tex = []
     for i in range(len(df)) :
@@ -310,17 +314,125 @@ def parsing_sol_to_tex(contest) :
 
     return df
 
-def xml_method(text):
 
-    text = re.sub(r"(\$\$.*?\$\$)", " ", text) 
+def decode_img_html(df,row,statement_html,type) :
+    statement_soup = BeautifulSoup(statement_html,'html.parser')
+    if type == 'p' :
+        figs = df.loc[row,'figures_problem']
+    elif type == 's' :
+        figs = df.loc[row,'figures_solution']
+    else :
+        raise Exception('Type not found')
 
-    mml_codes = re.findall(r"(<math.*?<\/math>)", text)
-    for mml_code in mml_codes:
-        mml_ns = mml_code.replace('<math>', '<math xmlns="http://www.w3.org/1998/Math/MathML">') #Required.
-        mml_dom = ET.fromstring(mml_ns)
-        xslt = ET.parse("mmltex/mmltex.xsl")
-        transform = ET.XSLT(xslt)
-        mmldom = transform(mml_dom)
-        latex_code = str(mml_dom)
-        text = text.replace(mml_code, latex_code)
-    return text
+    img_counter = -1
+    for tag in statement_soup.find_all('img') :
+        if FIG_CONDITION(tag) :
+            img_counter += 1
+            figure_name = figs[img_counter]
+            if type == 'p' :
+                figure_name = "Problem/"+figure_name
+            elif type == 's' :
+                figure_name = "Solution/"+figure_name
+            repl = f'<img src="figure/{df.loc[row,'contest']}/{figure_name}" style="display:block; width:400px; max-width:100%; height:auto; margin:20px auto 0;"> '
+            statement_html = statement_html.replace(str(tag),repl)
+        else :
+            temp = tag.get('alt','')+' '
+            statement_html = statement_html.replace(str(tag),temp)
+    return statement_html
+
+
+def decode_tag_html(statement) :
+    statement_soup = BeautifulSoup(statement,'html.parser')
+    statement_cleaned = statement
+    for tag,action in ACT_PROB_HTML.items() :
+        pattern = re.compile(tag)
+        for item in statement_soup.find_all(lambda x: x.name and pattern.fullmatch(x.name)) :
+            statement_cleaned = action(statement_cleaned,item)
+    return statement_cleaned
+
+def decode_link_html(target,item) :
+    if item.find('img') :
+        return target.replace(str(item),item.decode_contents())
+    else :
+        href = item.get("href")        
+        temp = r"https://artofproblemsolving.com"
+        if href is not None and (temp in href or "https" in href):
+            temp = href
+        else :
+            temp = temp + href
+        item_cleaned = copy.copy(item)
+        item_cleaned['href'] = temp
+        return target.replace(str(item),str(item_cleaned))
+
+def parsing_prob_to_html(contest) :
+    filename = DATA_PATH / contest / 'full.json'
+    with open(filename,'r',encoding='utf-8') as f :
+        data = json.load(f)
+
+    df = pd.DataFrame(data)
+    df['problem_statement_html'] = df['problem_statement'].apply(decode_tag_html)
+
+    prob_html = []
+    for i in range(len(df)) :
+        prob_state = df.loc[i,'problem_statement_html']
+        prob_state_cleaned = decode_img_html(df,i,prob_state,'p')
+        prob_state_cleaned = cleaning_tex(prob_state_cleaned)
+        prob_html.append(prob_state_cleaned)
+
+    df['problem_statement_html'] = prob_html
+    fullhtmlpath = DATA_PATH / contest / 'full_html.json'
+    (df.to_json(fullhtmlpath,orient = 'records',indent=4))
+    return df
+
+def parsing_sol_statement_to_html(statement) :
+    pipeline = [
+        decode_video,
+        decode_tag_html,
+    ]
+    statement_html = statement
+    for pipe in pipeline :
+        statement_html = pipe(statement_html)
+    return statement_html
+
+def parsing_sol_to_html(contest) :
+    filename = DATA_PATH / contest / 'full_html.json'
+
+    if filename.is_file() and filename.stat().st_size > 0:
+        with open(filename,'r',encoding='utf-8') as f :
+            data = json.load(f)
+        df = pd.DataFrame(data)
+    else :
+        df = parsing_prob_to_html(contest)
+
+    solutions_html = []
+    for i in range(len(df)) :
+        solutions = df.loc[i,'solutions']
+        
+        res = dict()
+        if len(solutions) == 0 :
+            solutions_html.append(res)
+            continue
+
+        subs = 0
+        for key,value in solutions.items() :
+            headline = value['headline']
+            solution = value['content']
+            if len(solution) == 0 :
+                subs+=1
+                continue
+            countrev = int(key.split("_")[-1])-subs
+            key = f"solution_{countrev}"
+            solution_html = parsing_sol_statement_to_html(solution)
+            temp = rf'''<h2>{headline}</h2>{solution_html}
+                        '''
+
+            temp = decode_img_html(df,i,temp,'s')
+            res[key] = cleaning_tex(temp)
+        solutions_html.append(res)
+
+    df['solutions_statement_html'] = solutions_html
+    fullhtmlpath = DATA_PATH / contest / 'full_html.json'
+    (df.to_json(fullhtmlpath,orient = 'records',indent=4))
+
+    return df
+

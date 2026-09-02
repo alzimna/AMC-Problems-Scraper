@@ -60,3 +60,14 @@ def generate_tex_folder(contest, type = 'nosol') :
             
             build_tex(type,'AIME',rec['year'],rec['version'],output)
             f.write(rf'\input{{{filename}}}'+'\n')
+
+def generate_html_json(contest) :
+    pipeline = [
+        build_full,
+        build_index,
+        add_figure_list,
+        parsing_prob_to_html,
+        parsing_sol_to_html
+    ]
+    for pipe in pipeline :
+        pipe(contest)

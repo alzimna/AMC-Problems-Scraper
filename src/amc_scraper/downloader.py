@@ -139,11 +139,11 @@ def download_figures(download, type, contest) :
 
 
 def get_figures_problem(contest) :
-    download = get_download_list_problem(contest)
+    download,_ = get_download_list_problem(contest)
     download_figures(download,'p',contest)
 
 def get_figures_solution(contest) :
-    download = get_download_list_solution(contest)
+    download,_ = get_download_list_solution(contest)
     download_figures(download,'s',contest)
 
 def add_figure_list(contest) :
