@@ -17,8 +17,8 @@ def build_full(contest = 'AIME') :
 
     df_full['contest'] = contest
     df_full['id']=(df_full['contest']+"_"+
-                    df_full['year'].astype(str)+"_"+
                     df_full['version'].astype(str)+"_"+
+                    df_full['year'].astype(str)+"_"+
                     df_full['problem_number'].astype(str))
 
     for path in output :

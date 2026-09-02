@@ -129,7 +129,7 @@ The recursive formula suggests telescoping. Indeed, if we add $x_n$ and $x_{n-1}
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_4_Solution_Figure_1.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_4_Solution_Figure_1.png}
                     \end{figure}
                     The coordinates of $P$ can be written as $\left(8a, 15a\right)$ and the coordinates of point $Q$ can be written as $\left(10b, 3b\right)$. By the midpoint formula, we have $8a+10b=16$ and $15a+3b=12$. Substituting $b=4-5a$ we derive $a = \frac{4}{7}$ and $b = \frac{8}{7}$. Thus $P$ is $\left(\frac{32}7, \frac{60}7\right)$, Q is $\left(\frac{80}7, \frac{24}7\right)$, and the coordinates form a 3-4-5 triangle dilated by $\frac{12}7$. Finally the distance $PQ$ must be $\frac{60}{7}$ so the answer is $\boxed{067}$.
 
@@ -177,7 +177,7 @@ Begin by drawing another square congruent to $EFGH$ but on side $AB$ instead of 
  
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_6_Solution_Figure_1.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_6_Solution_Figure_1.png}
                     \end{figure}
                     By Power of a Point on point $F$, we find that 
 
@@ -200,7 +200,7 @@ Let $O$ be the center of the circle, $2a$ be the side length of square $ABCD$, a
  
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_6_Solution_Figure_2.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_6_Solution_Figure_2.png}
                     \end{figure}
                     Now let $I$ be the midpoint of $\overline{GH}$, giving $\overline{GI} = \frac{2b}{2} = b$, and let $J$ be the point where $\overline{OI}$ intersects $\overline{CD}$. We observe that since a diameter bisects a chord perpendicular to it, $\overline{GH}$ must be perpendicular to the diameter passing through $I$. This means that triangle $OGI$ has a right angle at $I$, and that $\overline{OJ}$ and $\overline{JI}$ are both parallel to $\overline{BC}$ and $\overline{FG}$. As the horizontal displacement of $C$ from $O$ is $a$ (from above), it follows that $\overline{OJ} = a$, and hence 
  \[\overline{OI} = \overline{OJ}+\overline{JI} = a+\overline{FG} = a+2b,\] so by the Pythagorean Theorem again,
@@ -253,7 +253,7 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_7_Solution_Figure_1.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_7_Solution_Figure_1.png}
                     \end{figure}
                     Let $P = (0,0)$ be at the origin. Using the formula $A = rs$ on $\triangle PQR$, where $r_{1}$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Inradius}{inradius} (similarly define $r_2, r_3$ to be the radii of $C_2, C_3$), $s = \frac{PQ + QR + RP}{2} = 180$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Semiperimeter}{semiperimeter}, and $A = \frac 12 bh = 5400$ is the area, we find $r_{1} = \frac As = 30$. Or, the inradius could be directly by using the formula $\frac{a+b-c}{2}$, where $a$ and $b$ are the legs of the right triangle and $c$ is the hypotenuse. (This formula should be used \textit{only for right triangles}.) Thus $ST, UV$ lie respectively on the lines $y = 60, x = 60$, and so $RS = 60, UQ = 30$.  
 
@@ -275,7 +275,7 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_7_Solution_Figure_2.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_7_Solution_Figure_2.png}
                     \end{figure}
                     We compute $r_1 = 30, r_2 = 15, r_3 = 10$ as above. Let $A_1, A_2, A_3$ respectively the points of tangency of $C_1, C_2, C_3$ with $QR$. 
 
@@ -354,7 +354,7 @@ Iterating the condition $f(3x) = 3f(x)$, we find that $f(x) = 3^kf\left(\frac{x}
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_8_Solution_Figure_1.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_8_Solution_Figure_1.png}
                     \end{figure}
                     First, we start by graphing the function when $1\leq{x}\leq3$, which consists of the lines $y=x-1$ and $y=3-x$ that intersect at $(2,1)$. Similarly, using $f(3x)=3f(x)$, we get a dilation of our initial figure by a factor of 3 for the next interval and so on.Observe that the intersection of two lines always has coordinates $(2y,y)$ where $y=3^a$ for some $a$. First, we compute $f(2001)$. The nearest intersection point is $(1458,729)$ when $a=7$. Therefore, we can safely assume that $f(2001)$ is somewhere on the line with a slope of $-1$ that intersects at that nearest point. Using the fact that the slope of the line is $-1$, we compute $f(2001)=729-543=186$. However, we want the minimum value such that $f(x)=186$ and we see that there is another intersection point on the left which has a $y>186$, namely $(486,243)$. Therefore, we want the point that lies on the line with slope $1$ that intersects this point. Once again, since the slope of the line is $1$, we get $x=486-57=\boxed{429}$.
 
@@ -697,7 +697,7 @@ Notice that $\angle BAD = \angle ADC$ and $\angle ABD = \angle DCB$, which motiv
  
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_13_Solution_Figure_1.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_13_Solution_Figure_1.png}
                     \end{figure}
                     Using the similarity, we have:
 
@@ -818,12 +818,12 @@ $z$ can be written in the form $\text{cis\,}\theta$. Rearranging, we find that  
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_15_Solution_Figure_1.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_15_Solution_Figure_1.png}
                     \end{figure}
                                  
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_2001_II_15_Solution_Figure_2.png}
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_15_Solution_Figure_2.png}
                     \end{figure}
                     Set the coordinate system so that vertex $E$, where the drilling starts, is at $(8,8,8)$. Using a little visualization (involving some \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar triangles}, because we have parallel lines) shows that the tunnel meets the bottom face (the xy plane one) in the line segments joining $(1,0,0)$ to $(2,2,0)$, and $(0,1,0)$ to $(2,2,0)$, and similarly for the other three faces meeting at the origin (by symmetry). So one face of the tunnel is the polygon with vertices (in that order), $S(1,0,0), T(2,0,2), U(8,6,8), V(8,8,6), W(2,2,0)$, and the other two faces of the tunnel are congruent to this shape. 
 
