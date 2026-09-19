@@ -1,0 +1,1096 @@
+\section{AHSME 1998}
+        \begin{enumerate}
+        	\item (\textit{AHSME 1998}) Each of the sides of five congruent rectangles is labeled with an integer. In rectangle A, $w = 4, x = 1, y = 6, z = 9$. In rectangle B, $w = 1, x = 0, y = 3, z = 6$. In rectangle C, $w = 3, x = 8, y = 5, z = 2$. In rectangle D, $w = 7, x = 5, y = 4, z = 8$. In rectangle E, $w = 9, x = 2, y = 7, z = 0$. These five rectangles are placed, without rotating or reflecting, in position as below. Which of the rectangle is the top leftmost one?
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1998_1_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+ $\mathrm{(A)\ } A \qquad \mathrm{(B) \ }B \qquad \mathrm{(C) \  } C \qquad \mathrm{(D) \  } D \qquad \mathrm{(E) \  }E$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+Looking at the list of $w$ and $y$ values that must match up left-to-right, we have $(w,y) = A(4,6), B(1,3), C(3,5), D(7,4), E(9,7)$.  Looking for digits that only appear once, we see that $9$, $6$, $1$, and $5$ cannot match up to other digits, and thus must appear on the ends.  $1$ and $9$ only appear on the left, and thus their respective blocks $B$ and $E$ must appear on the left.  Similarly, $6$ and $5$ only appear on the right, and thus their blocks $A$ and $C$ must appear on the right-most block of their row.  Therefore, $D$, the only block without a unique digit, must be the top-center block.
+
+ Now that we have placed one block, $D$, we can only place block $E$ to the left of $D$, and block $A$ to the right of $D$.  Thus, $\boxed{E}$ is the right answer.
+
+ Completing the puzzle, the top boxes read $EDA$, while the bottom two boxes read $BC$.     
+
+ 
+
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Letters $A,B,C,$ and $D$ represent four different digits selected from $0,1,2,\ldots ,9.$ If $(A+B)/(C+D)$ is an integer that is as large as possible, what is the value of $A+B$?
+
+
+ $\mathrm{(A) \  }13 \qquad \mathrm{(B) \  }14 \qquad \mathrm{(C) \  } 15\qquad \mathrm{(D) \  }16 \qquad \mathrm{(E) \  } 17$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+If we want $\frac{A+B}{C+D}$ to be as large as possible, we want to try to maximize the numerator $A+B$ and minimize the denominator $C+D$.  Picking $A=9$ and $B=8$ will maximize the numerator, and picking $C=0$ and $D=1$ will minimize the denominator.  
+
+ Checking to make sure the fraction is an integer, $\frac{A+B}{C+D} = \frac{17}{1} = 17$, and so the values are correct, and $A+B = 17$, giving the answer $\boxed{E}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) If $\texttt{a,b,}$ and $\texttt{c}$ are digits for which
+
+
+ 
+ \[\begin{array}{rccc}&\ \texttt{7}& \texttt{a}&\texttt{2}\\ -&\ \texttt{4}&\texttt{8}&\texttt{b} \\  \hline  &\ \texttt{c}&\texttt{7}& \texttt{3} \end{array}\]
+
+
+ then $\texttt{a+b+c =}$
+
+
+ $\mathrm{(A) \  }14 \qquad \mathrm{(B) \  }15 \qquad \mathrm{(C) \  }16 \qquad \mathrm{(D) \  }17 \qquad \mathrm{(E) \  }18$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Working from right to left, we see that $2 - b = 3$.  Clearly if $b$ is a single digit integer, this cannot be possible.  Therefore, there must be some borrowing from $a$.  Borrow $1$ from the digit $a$, and you get $12 - b = 3$, giving $b = 9$.
+
+ Since $1$ was borrowed from $a$, we have from the tens column $(a-1) - 8 = 7$.  Again for single digit integers this will not work.  Again, borrow $1$ from $7$, giving $10 + (a-1) - 8 = 7$.  Solving for $a$:
+
+ $10 + a - 1 - 8 = 7$
+
+ $1 + a = 7$
+
+ $a = 6$
+
+ Finally, since $1$ was borrowed from the hundreds column, we have $7 - 1 - 4 = c$, giving $c = 2$.
+
+ As a check, the problem is $762 - 489 = 273$, which is a true sentence.
+
+ The desired quantity is $a + b + c = 6 + 9 + 2 = 17$, and the answer is $\boxed{D}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Define $[a,b,c]$ to mean $\frac {a+b}c$, where $c \neq 0$. What is the value of 
+
+
+ $\left[[60,30,90],[2,1,3],[10,5,15]\right]?$
+
+ $\mathrm{(A) \ }0 \qquad \mathrm{(B) \ }0.5 \qquad \mathrm{(C) \ }1 \qquad \mathrm{(D) \ }1.5 \qquad \mathrm{(E) \ }2$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+Note that $[ta,tb,tc] = \frac{ta+tb}{tc} = \frac{t(a+b)}{tc} = \frac{a+b}{c} = [a,b,c]$. 
+
+ Thus $[60,30,90] = [2,1,3] = [10,5,15] = \frac{2+1}{3} = 1$, and $[1,1,1] = \frac{1+1}{1} = 2 \Longrightarrow \mathbf{(E)}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) If $2^{1998}-2^{1997}-2^{1996}+2^{1995} = k \cdot 2^{1995},$ what is the value of $k$?
+
+
+ $\mathrm{(A) \ } 1 \qquad \mathrm{(B) \ } 2 \qquad \mathrm{(C) \ } 3 \qquad \mathrm{(D) \ } 4 \qquad \mathrm{(E) \ } 5$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+$2^{1998} - 2^{1997} - 2^{1996} + 2^{1995}$
+
+ Factor out $2^{1995}$:
+
+ $2^{1995}(2^{3} - 2^{2} - 2^{1} + 1)$
+
+ Simplify:
+
+ $2^{1995}\cdot (8 - 4 - 2 + 1)$
+
+ $2^{1995}\cdot (3)$
+
+ By comparing the answer with the original equation, $k=3$, and the answer is $\text{(C)}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Divide both sides of the original equation by $2^{1995}$, giving:
+
+ $2^3 - 2^2 - 2^1 + 1 = k$
+
+ $k = 3$, and the answer is $\boxed{C}$
+
+ 
+
+
+	\item (\textit{AHSME 1998}) If $1998$ is written as a product of two positive integers whose difference is as small as possible, then the difference is 
+
+
+ $\mathrm{(A) \ }8 \qquad \mathrm{(B) \ }15 \qquad \mathrm{(C) \ }17 \qquad \mathrm{(D) \ }47 \qquad \mathrm{(E) \ } 93$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+If we want the difference of the two factors to be as small as possible, then the two numbers must be as close to $\sqrt{1998}$ as possible.
+
+ Since $45^2 = 2025$, the factors should be as close to $44$ or $45$ as possible.
+
+ Breaking down $1998$ into its prime factors gives $1998 = 2\cdot 3^3 \cdot 37$.  
+
+ $37$ is relatively close to $44$, and no numbers between $38$ and $44$ are factors of $1998$.  Thus, the two factors are $37$ and $2\cdot 3^3 = 54$, and the difference is $54 - 37 = 17$, and the answer is $\boxed{C}$
+
+ 
+
+
+	\item (\textit{AHSME 1998}) If $N > 1$, then $\sqrt[3]{N\sqrt[3]{N\sqrt[3]{N}}} =$
+
+
+ $\mathrm{(A) \ } N^{\frac 1{27}} \qquad \mathrm{(B) \ } N^{\frac 1{9}} \qquad \mathrm{(C) \ } N^{\frac 1{3}} \qquad \mathrm{(D) \ } N^{\frac {13}{27}} \qquad \mathrm{(E) \ } N$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+The key identities are $\sqrt[3]{x^n} = x^{\frac{n}{3}}$ and $x \cdot x^{\frac{a}{b}} = x^{1 + \frac{a}{b}}$
+
+ $\sqrt[3]{N\sqrt[3]{N\sqrt[3]{N}}}$
+
+ $\sqrt[3]{N\sqrt[3]{N\cdot N^{\frac{1}{3}}}}$
+
+ $\sqrt[3]{N\sqrt[3]{N^{\frac{4}{3}}}}$
+
+ $\sqrt[3]{N\cdot{N^{\frac{4}{9}}}}$
+
+ $\sqrt[3]{{N^{\frac{13}{9}}}}$
+
+ $N^{\frac{13}{27}}$, thus the answer is $\boxed{D}$
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A square with sides of length $1$ is divided into two congruent trapezoids and a pentagon, which have equal areas, by joining the center of the square with points on three of the sides, as shown. Find $x$, the length of the longer parallel side of each trapezoid. 
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1998_8_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+ $\mathrm{(A) \ } \frac 35 \qquad \mathrm{(B) \ } \frac 23 \qquad \mathrm{(C) \ } \frac 34 \qquad \mathrm{(D) \ } \frac 56 \qquad \mathrm{(E) \ } \frac  78$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_8_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Then $2[I]+2[II] = [I]+3[II] \Longrightarrow [I]=[II]$. Let the shorter side of $I$ be $m$ and the base of $II$ be $n$ such that $m+2n = x$; then $[I]=[II]$ implies that $2m=n$, and since $2m + 2n = 1$ it follows that $m = \frac 16$ and $x = \frac 56 \Longrightarrow \mathbf{(D)}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The area of the trapezoid is $\frac{1}{3}$, and the shorter base and height are both $\frac{1}{2}$.  Therefore, 
+ \[\frac{1}{3}=\frac{1}{2}\cdot \frac{1}{2}\cdot \left(\frac{1}{2}+x\right) \Rightarrow x=\frac{5}{6}\rightarrow \boxed{\text{D}}\]
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Divide the pentagon into 2 small congruent trapezoids by extending the common shorter base of the 2 larger trapezoids.
+
+ Since each of the smaller trapezoids has its area half each of the larger trapezoids, and each of them has a base $\frac{1}{2}$, we have
+ \[b_{large}+\frac{1}{2}=2(b_{small}+ \frac{1}{2})\]
+ \[x+\frac{1}{2}=2((1-x)+\frac{1}{2})\]
+ \[x=\frac{5}{6}\boxed{D}\]
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A speaker talked for sixty minutes to a full auditorium. Twenty percent of the audience heard the entire talk and ten percent slept through the entire talk. Half of the remainder heard one third of the talk and the other half heard two thirds of the talk. What was the average number of minutes of the talk heard by members of the audience?
+
+
+ $\mathrm{(A) \ } 24 \qquad \mathrm{(B) \ } 27\qquad \mathrm{(C) \ }30 \qquad \mathrm{(D) \ }33 \qquad \mathrm{(E) \ }36$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Assume that there are $100$ people in the audience.
+
+ $20$ people heard $60$ minutes of the talk, for a total of $20\cdot 60 = 1200$ minutes heard.
+
+ $10$ people heard $0$ minutes.
+
+ $\frac{70}{2} = 35$ people heard $20$ minutes of the talk, for a total of $35\cdot 20 = 700$ minutes.
+
+ $35$ people heard $40$ minutes of the talk, for a total of $1400$ minutes.
+
+ Altogether, there were $1200 + 0 + 700 + 1400 = 3300$ minutes heard among $100$ people.
+
+ Thus, the average is $\frac{3300}{100} = 33$ minutes, and the answer is $\boxed{D}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A large square is divided into a small square surrounded by four congruent rectangles as shown. The perimeter of each of the congruent rectangles is $14$. What is the area of the large square?
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1998_10_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+ $\mathrm{(A) \ }49 \qquad \mathrm{(B) \ }64 \qquad \mathrm{(C) \ }100 \qquad \mathrm{(D) \ }121 \qquad \mathrm{(E) \ }196$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Let the length of the longer side be $x$, and the length of the shorter side be $y$.  We are given that $2x+2y=14\implies x+y=7$.  However, note that $x+y$ is also the length of a side of the larger square.  Thus the area of the larger square is $(x+y)^2=7^2=\boxed{49\text{ (A)}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Expand the small square so it basically equals the area of the large square.  Two of the sides of the rectangles shrink to zero.  The other two sides expand to equal the length of the large outer square, and have a length of $\frac{14}{2} = 7$.  Thus, the area of the larger square is $7^2=\boxed{49\text{ (A)}}$
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Let $R$ be a rectangle. How many circles in the plane of $R$ have a diameter both of whose endpoints are vertices of $R$?
+
+
+ $\mathrm{(A) \ }1 \qquad \mathrm{(B) \ }2 \qquad \mathrm{(C) \ }4 \qquad \mathrm{(D) \ }5 \qquad \mathrm{(E) \ }6$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+There are $6$ pairs of vertices of $R$. However, both diagonals determine the same circle, therefore the answer is $\boxed{5}$.
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_11_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+
+	\item (\textit{AHSME 1998}) How many different prime numbers are factors of $N$ if
+
+
+ $\log_2 ( \log_3 ( \log_5 (\log_ 7 N))) = 11?$
+
+ $\mathrm{(A) \ }1 \qquad \mathrm{(B) \ }2 \qquad \mathrm{(C) \ }3 \qquad \mathrm{(D) \ } 4\qquad \mathrm{(E) \ }7$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+Re-writing as exponents, we have $\log_3 ( \log_5 (\log_ 7 N)) = 2^{11}$, and so forth, such that $N = 7^{5^{3^{2^{11}}}}$, which only has $7$ as a prime factor $\mathbf{(A)}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Walter rolls four standard six-sided dice and finds that the product of the numbers of the upper faces is $144$. Which of he following could \textbf{not } be the sum of the upper four faces? 
+
+
+ $\mathrm{(A) \ }14 \qquad \mathrm{(B) \ }15 \qquad \mathrm{(C) \ }16 \qquad \mathrm{(D) \ }17 \qquad \mathrm{(E) \ }18$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+We have $144 = 2^4 3^2$.
+
+ As the numbers on the dice are less than $9$, the two $3$s must come from different dice. This leaves us with three cases: $(6,6,a,b)$, $(6,3,a,b)$, and $(3,3,a,b)$.
+
+ In the first case we have $ab=2^2$, leading to the solutions $(6,6,4,1)$ and $(6,6,2,2)$.
+
+ In the second case we have $ab=2^3$, leading to the only solution $(6,3,4,2)$.
+
+ In the third case we have $ab=2^4$, leading to the only solution $(3,3,4,4)$.
+
+ We found all four possibilities for the numbers on the upper faces of the dice. The sums of these numbers are $17$, $16$, $15$, and $14$.Therefore the answer is $\mathrm{(E)}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A parabola has vertex of $(4,-5)$ and has two $x-$intercepts, one positive, and one negative. If this parabola is the graph of $y = ax^2 + bx + c,$ which of $a,b,$ and $c$ must be positive?
+
+
+ $\mathrm{(A) \ } \text{only}\ a \qquad \mathrm{(B) \ } \text{only}\ b \qquad \mathrm{(C) \ } \text{only}\ c \qquad \mathrm{(D) \ } a\ \text{and}\ b\ \text{only} \qquad \mathrm{(E) \ } \text{none}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1 (Vieta's Formulas)}
+
+The vertex of the parabola is at $(4,-5)$.  Since there are two x-intercepts, it must open upwards.  If it opened downard, there would be no roots.  Thus, $a > 0$.
+
+ The x-coordinate of the vertex is $\frac{-b}{2a}$.  Since $a$ is positive, and the x-intercept is positive, the value $-b$ must be positive too, and $b$ is negative.
+
+ By Vieta, the product of the two roots is $\frac{c}{a}$.  Since the two roots are a positive number and a negative number, the product is negative.  Since $a$ is positive, that means $c$ must be negative.
+
+ Thus $\boxed{A}$ is the right answer - only $a$ is positive.
+
+ 
+
+
+
+\textbf{Solution 2 (Inequality Logic)}
+
+The vertex is given to be $(4, -5)$. This means the equation can be written as $y = a(x - 4)^2 - 5$.
+
+ Since there are 2 $x$-intercepts, the parabola must open up and so $a > 0$.
+
+ Expanding the vertex form gives:
+ \[y = a(x^2 - 8x + 16) - 5\]
+ \[y = ax^2 - 8ax + 16a - 5\]
+
+ Thus we have $b = -8a$ and $c = 16a - 5$.
+
+ Since $a > 0$, we must have that $-8a < 0$ and thus that $b < 0$.
+
+ To determine the sign of $c$, we find the $x$-intercepts by setting $y = 0$:
+ \[a(x - 4)^2 - 5 = 0\]
+ \[a(x - 4)^2 = 5\]
+ \[(x - 4)^2 = \frac{5}{a}\]
+ \[x = 4 \pm \sqrt{\frac{5}{a}}\]
+
+ The problem states there is exactly one negative root. This means the smaller of the two roots must be less than zero:
+ \[4 - \sqrt{\frac{5}{a}} < 0\]
+ \[4 < \sqrt{\frac{5}{a}}\]
+
+ Since both sides are strictly positive, we can square the inequality:
+ \[16 < \frac{5}{a}\]
+
+ Because $a > 0$, we can multiply by $a$ without changing the direction of the inequality sign:
+ \[16a < 5\]
+ \[16a - 5 < 0\]
+
+ Since our expansion gave that $c = 16a - 5$, this shows that $c < 0$. Therefore, $\boxed{\text{only } a \text{ is positive}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A regular hexagon and an equilateral triangle have equal areas. What is the ratio of the length of a side of the triangle to the length of a side of the hexagon?
+
+
+ $\mathrm{(A) \ }\sqrt{3} \qquad \mathrm{(B) \ }2 \qquad \mathrm{(C) \ }\sqrt{6} \qquad \mathrm{(D) \ }3 \qquad \mathrm{(E) \ }6$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+$A_{\triangle} = \frac{s_t^2\sqrt{3}}{4}$
+
+ $A_{hex} = \frac{6s_h^2\sqrt{3}}{4}$ since a regular hexagon is just six equilateral triangles.
+
+ Setting the areas equal, we get:
+
+ $s_t^2 = 6s_h^2$
+
+ $\left(\frac{s_t}{s_h}\right)^2 = 6$
+
+ $\frac{s_t}{s_h} = \sqrt{6}$, and the answer is $\boxed{C}$.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AHSME 1998}) The figure shown is the union of a circle and two semicircles of diameters $a$ and $b$, all of whose centers are collinear. The ratio of the area, of the shaded region to that of the unshaded region is
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1998_16_Problem_Figure_1.png}
+                    \end{figure}
+                    \#\#\#px$\mathrm{(A) \ } \sqrt{\frac ab} \qquad \mathrm{(B) \ }\frac ab \qquad \mathrm{(C) \ } \frac{a^2}{b^2} \qquad \mathrm{(D) \ }\frac{a+b}{2b} \qquad \mathrm{(E) \ } \frac{a^2 + 2ab}{b^2 + 2ab}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+To simplify calculations, double the radius of the large circle from $\frac{a + b}{2}$ to $a + b$.  Each region is similar to the old region, so this should not change the ratio of any areas.
+
+ In other words, relabel $a$ and $b$ to $2a$ and $2b$.
+
+ 
+The area of the whole circle is $A_{\mathrm{big}} = \pi\cdot (a + b)^2$
+
+ The area of the white area is about $\frac{A_{big}}{2}$, which is the bottom half of the circle.  However, you need to subtract the little shaded semicircle on the bottom, and add the area of the big unshaded semicircle on top.  Thus, it is actually $A_{white} = \frac{1}{2}\pi\cdot (a+b)^2 - \frac{1}{2}\pi a^2 + \frac{1}{2}\pi b^2$
+
+ Factoring gives $A_{white} = \frac{\pi}{2}\cdot (a^2 + 2ab + b^2 - a^2 + b^2)$
+
+ Simplfying the inside gives $A_{white} = \frac{\pi}{2}\cdot (2ab + 2b^2)$
+
+ $A_{white} = \pi(ab + b^2)$
+
+ With similar calculations, or noting the symmetry of the situation, $A_{grey} = \pi(ab + a^2)$
+
+ The desired ratio is thus $\frac{ab + a^2}{ab + b^2} = \frac{a(a+b)}{b(a+b)}$, which is option $\boxed{B}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Let $f(x)$ be a function with the two properties:
+
+
+ 
+            \begin{enumerate}[label=(\roman*)]
+                \item  for any two real numbers $x$ and $y$, $f(x+y) = x + f$, and
+\item  $f(0) = 2.$
+            \end{enumerate}
+            What is the value of $f(1998)?$
+
+
+ $\mathrm{(A)}\ 0  \qquad\mathrm{(B)}\ 2  \qquad\mathrm{(C)}\ 1996 \qquad\mathrm{(D)}\ 1998  \qquad\mathrm{(E)}\ 2000$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+
+ \[f(1998 + 0) = 1998 + f(0) = 2000 \Rightarrow \mathrm{(E)}\]
+
+ The function $f(x) = x+2$ satisfies these properties. 
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A right circular cone of volume $A$, a right circular cylinder of volume $M$, and a sphere of volume $C$ all have the same radius, and the common height of the cone and the cylinder is equal to the diameter of the sphere. Then
+
+
+ $\mathrm{(A) \ } A-M+C = 0 \qquad \mathrm{(B) \ } A+M=C \qquad \mathrm{(C) \ } 2A = M+C \qquad \mathrm{(D) \ }A^2 - M^2 + C^2 = 0 \qquad \mathrm{(E) \ } 2A + 2M = 3C$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+Using the radius $r$ the three volumes can be computed as follows:
+
+ $A = \frac 13 (\pi r^2) \cdot 2r$
+
+ $M = (\pi r^2) \cdot 2r$
+
+ $C = \frac 43 \pi r^3$
+
+ Clearly, $M = A+C \Longrightarrow$ the correct answer is $\mathrm{(A)}$.
+
+ The other linear combinations are obviously non-zero, and the left hand side of $\mathrm{(D)}$ evaluates to $(\pi r^3)^2 \cdot \left( \frac 49 - 4 + \frac {16}9 \right)$ which is negative. Thus $\mathrm{(A)}$ is indeed the only correct answer.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) How many triangles have area $10$ and vertices at $(-5,0),(5,0)$ and $(5\cos \theta, 5\sin \theta)$ for some angle $\theta$?
+
+
+ $\mathrm{(A) \ }0 \qquad \mathrm{(B) \ }2 \qquad \mathrm{(C) \ }4 \qquad \mathrm{(D) \ }6 \qquad \mathrm{(E) \ } 8$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+The triangle can be seen as having the base on the $x$ axis and height $|5\sin\theta|$. The length of the base is $10$, thus the height must be $2$. The equation $|\sin\theta| = \frac 25$ has $\boxed{4}$ solutions, one in each quadrant.
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_19_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+Visually, the set of points of the form $(5\cos \theta, 5\sin \theta)$ is a circle centered at $(0,0)$ with radius 5. The missing vertex of the triangle must lie on this circle. At the same time, its distance from the $x$ axis must be 2. The set of all such points are precisely the lines $y=2$ and $y=-2$, and each of these lines intersects the circle in two points.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Alternatively, we use shoelace to get:
+ \[\frac {1}{2}|(-5*0+5*5\sin (\theta)+5 \cos (\theta) *0)-(0*5+0*5 \cos (\theta)-5*5\sin (\theta))|=10 \implies \frac {1}{2}|50\sin (\theta)|=10\]This means $\sin (\theta)=\pm \frac {2}{5}$. We see that if it equals $\frac {2}{5}$, then $\cos (\theta)=\pm \frac {\sqrt {21}}{5}$. Likewise, we see that if $\sin (\theta)=-\frac {2}{5}$, then $\cos (\theta)$ has $2$ solutions. Thus, there are $\boxed {4}$ unique points such that the triangle has an area of $10$, or $C$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Three cards, each with a positive integer written on it, are lying face-down on a table. Casey, Stacy, and Tracy are told that
+
+
+ 
+            \begin{enumerate}[label=(\roman*)]
+                \item  the numbers are all different,
+\item  they sum to $13$, and
+\item  they are in increasing order, left to right.
+            \end{enumerate}
+            First, Casey looks at the number on the leftmost card and says, "I don't have enough information to determine the other two numbers."  Then Tracy looks at the number on the rightmost card and says, "I don't have enough information to determine the other two numbers."  Finally, Stacy looks at the number on the middle card and says, "I don't have enough information to determine the other two numbers."  Assume that each person knows that the other two reason perfectly and hears their comments.  What number is on the middle card?
+
+
+ $\textrm{(A)}\ 2 \qquad \textrm{(B)}\ 3 \qquad \textrm{(C)}\ 4 \qquad \textrm{(D)}\ 5 \qquad \textrm{(E)}\ \text{There is not enough information to determine the number.}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Initially, there are the following possibilities for the numbers on the cards: $(1,2,10)$, $(1,3,9)$, $(1,4,8)$, $(1,5,7)$, $(2,3,8)$, $(2,4,7)$, $(2,5,6)$, and $(3,4,6)$.
+
+ If Casey saw the number $3$, she would have known the other two numbers. As she does not, we eliminated the possibility $(3,4,6)$.
+
+ At this moment, if the last card contained a $10$, $9$, or a $6$, Tracy would know the other two numbers. (Note that Tracy is aware of the fact that $(3,4,6)$ was eliminated. If she saw the number $6$, she would know that the other two are $2$ and $5$.) This eliminates three more possibilities.
+
+ Thus before Stacy took her look, we are left with four possible cases: $(2,4,7)$, $(1,4,8)$, $(1,5,7)$, and $(2,3,8)$. As Stacy could not find out the exact combination, the middle number must be $\boxed{4}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) In an $h$-meter race, Sunny is exactly $d$ meters ahead of Windy when Sunny finishes the race. The next time they race, Sunny sportingly starts $d$ meters behind Windy, who is at the starting line. Both runners run at the same constant speed as they did in the first race. How many meters ahead is Sunny when Sunny finishes the second race?
+
+
+ $\mathrm{(A) \ } \frac dh \qquad \mathrm{(B) \ } 0 \qquad \mathrm{(C) \ } \frac {d^2}h \qquad \mathrm{(D) \ } \frac {h^2}d \qquad \mathrm{(E) \ } \frac{d^2}{h-d}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Let $s$ and $w$ be the speeds of Sunny and Windy. From the first race we know that $\frac sw = \frac h{h-d}$. In the second race, Sunny's track length is $h+d$. She will finish this track in $\frac{h+d}s$. In this time, Windy will run the distance $w\cdot \frac{h+d}s = \frac{(h+d)(h-d)}h$. This is less than $h$, therefore Sunny is ahead. The exact distance between Windy and the finish is $h - \frac{(h+d)(h-d)}h = \frac{ h^2 - (h^2-d^2) }h = \boxed{\frac{d^2}h}$.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AHSME 1998}) What is the value of the expression
+
+
+ $\frac {1}{\log_{2}100!} + \frac {1}{\log_{3}100!} + \frac {1}{\log_{4}100!} + \cdots + \frac {1}{\log_{100}100!}$
+
+ $\mathrm{(A) \ }0.01 \qquad \mathrm{(B) \ }0.1 \qquad \mathrm{(C) \ }1 \qquad \mathrm{(D) \ }2 \qquad \mathrm{(E) \ } 10$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+By the change-of-base formula, 
+ \[\log_{k} 100! = \frac{\log 100!}{\log k}\]  Thus (because if $x=y$, then $\frac{1}{x}=\frac{1}{y}$)
+ \[\frac{1}{\log_k 100!} = \frac{\log k}{\log 100!}\]Thus the sum is 
+ \[\left(\frac{1}{\log 100!}\right)(\log 2 + \log 3 + \cdots + \log 100) = \frac{1}{\log 100!} \cdot \log 100! = 1 \Rightarrow \mathrm{(C)}\]
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Since $1=\log_{k} k$,
+
+ 
+ \[\frac{1}{\log_{k}100!}=\frac{\log_{k}k}{\log_{k}100!}=\log_{100!} k\]
+
+ We add:
+
+ 
+ \[\log_{100!} 1 +\log_{100!} 2 +\log_{100!} 3 +\cdots + \log_{100!} 100=\log_{100!}100!=1 \Rightarrow \mathrm{(C)}\]
+
+ 
+
+
+
+\textbf{Solution 3 (similar to other solutions)}
+
+Note that $\frac{1}{\log_a (b)} = \log_b(a)$. So,
+ \[\frac{1}{\log_2(100!)} + \frac{1}{\log_3(100!)}+ \dots + \frac{1}{\log_{100}(100!)}\]is just
+ \[\log_{100!}(2) + \log_{100!}(3) + \dots + \log_{100!}(100)\]which is
+ \[\log_{100!}(2 \cdot 3 \cdot \dots \cdot 100) = \log_{100!}(100!) = \boxed{\textbf{(C)}\ 1}.\]
+
+ 
+
+
+	\item (\textit{AHSME 1998}) The graphs of $x^2 + y^2 = 4 + 12x + 6y$ and $x^2 + y^2 = k + 4x + 12y$ intersect when $k$ satisfies $a \le k \le b$, and for no other values of $k$. Find $b-a$.
+
+
+ $\mathrm{(A) \ }5 \qquad \mathrm{(B) \ }68 \qquad \mathrm{(C) \ }104 \qquad \mathrm{(D) \ }140 \qquad \mathrm{(E) \ }144$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Both sets of points are quite obviously circles. To show this, we can rewrite each of them in the form $(x-x_0)^2 + (y-y_0)^2 = r^2$.
+
+ The first curve becomes $(x-6)^2 + (y-3)^2 = 7^2$, which is a circle centered at $(6,3)$ with radius $7$.
+
+ The second curve becomes $(x-2)^2 + (y-6)^2 = 40+k$, which is a circle centered at $(2,6)$ with radius $r=\sqrt{40+k}$.
+
+ The distance between the two centers is $5$, and therefore the two circles intersect if $2\leq r \leq 12$.
+
+ From $\sqrt{40+k} \geq 2$ we get that $k\geq -36$. From $\sqrt{40+k}\leq 12$ we get $k\leq 104$. 
+
+ Therefore $b-a = 104 - (-36) = \boxed{140}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) Call a $7$-digit telephone number $d_1d_2d_3-d_4d_5d_6d_7$ \textit{memorable} if the prefix sequence $d_1d_2d_3$ is exactly the same as either of the sequences $d_4d_5d_6$ or $d_5d_6d_7$ (possibly both). Assuming that each $d_i$ can be any of the ten decimal digits $0,1,2, \ldots 9$, the number of different memorable telephone numbers is 
+
+
+ $\mathrm{(A) \ } 19,810 \qquad \mathrm{(B) \ } 19,910 \qquad \mathrm{(C) \ } 19,990 \qquad \mathrm{(D) \ } 20,000 \qquad \mathrm{(E) \ } 20,100$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution A}
+
+In this problem, we only need to consider the digits $\overline{d_4d_5d_6d_7}$. Each possibility of $\overline{d_4d_5d_6d_7}$ gives $2$ possibilities for $\overline{d_1d_2d_3}$, which are $\overline{d_1d_2d_3}=\overline{d_4d_5d_6}$ and $\overline{d_1d_2d_3}=\overline{d_5d_6d_7}$ with the exception of the case of $d_4=d_5=d_6=d_7$, which only gives one sequence. After accounting for overcounting, the answer is $(10 \times 10 \times 10 \times 10) \times 2 - 10=19990 \Rightarrow \boxed{\mathrm{(C)}}$
+
+ 
+
+
+
+\textbf{Solution B}
+
+Let $A$ represent the set of telephone numbers with $\overline{d_1d_2d_3} = \overline{d_4d_5d_6}$ (of which there are $1000$ possibilities for $\overline{d_1d_2d_3}$ and $10$ for $d_7$), and $B$ those such that $\overline{d_1d_2d_3} = \overline{d_5d_6d_7}$. Then $A \cap B$ (the telephone numbers that belong to both $A$ and $B$) is the set of telephone numbers such that $d_1 = d_2 = d_3 = d_4 = d_5 = d_6 = d_7$, of which there are $10$ possibilities. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Principle\_of\_Inclusion-Exclusion}{Principle of Inclusion-Exclusion},
+
+ 
+ \[|A \cup B| = |A| + |B| - |A \cap B| = 1000 \times 10 + 1000 \times 10 - 10 = 19990 \Rightarrow \mathrm{(C)}\]
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A piece of graph paper is folded once so that $(0,2)$ is matched with $(4,0)$, and $(7,3)$ is matched with $(m,n)$. Find $m+n$.
+
+
+ $\mathrm{(A) \ }6.7 \qquad \mathrm{(B) \ }6.8 \qquad \mathrm{(C) \ }6.9 \qquad \mathrm{(D) \ }7.0 \qquad \mathrm{(E) \ }8.0$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+The line of the fold is the perpendicular bisector of the segment that connects $(0,2)$ and $(4,0)$. The point $(m,n)$ is the image of the point $(7,3)$ according to this axis.The situation looks as follows.
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_25_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+Now, we will compute the coordinates of the point $D$, using the following facts:
+
+ 
+                \begin{itemize}
+                    \item The triangles $SCT$ and $SDT$ are congruent.\item $|SD| = |SC|$\item $m$ is positive
+                \end{itemize}
+
+
+                As the triangles $SCT$ and $SDT$ are congruent, their areas are equal. The area of the triangle $SCT$ is $1/2$ of the size of the vector product $\overrightarrow{SC}\times\overrightarrow{ST}$, and the area of $SDT$ is $1/2$ of the size of $\overrightarrow{ST}\times\overrightarrow{SD}$.
+
+ We get that $\overrightarrow{SC}\times\overrightarrow{ST} = \overrightarrow{ST}\times\overrightarrow{SD}$.
+
+ The equality remains valid if we multiply the vector $\overrightarrow{ST}$ by any constant. In other words, instead of $\overrightarrow{ST}$ we can use any vector with the same direction.
+
+ The axis of symmetry is perpendicular to $\overrightarrow{AB}$. Thus its direction is $(2,4)=(1,2)$.
+
+ We get that $\overrightarrow{SC}\times (1,2) = (1,2) \times\overrightarrow{SD}$. 
+
+ Substituting the coordinates $\overrightarrow{SC}=(5,2)$ and $\overrightarrow{SD}=(m-2,n-1)$ we get $5\cdot 2 - 2\cdot 1 = 1\cdot (n-1) - 2\cdot(m-2)$. This simplifies to $n=2m+5$.
+
+ We just discovered that the coordinates of $D$ are $(m,2m+5)$. We will now use the second two facts mentioned above to find $m$.
+
+ We have $|SD| = |SC|$ and therefore $|SD|^2 = |SC|^2$. We know that $|SC|^2 = 5^2 + 2^2 = 29$, and $|SD|^2 = (m-2)^2 + (2m+4)^2$. Simplifying, we get the equation $5m^2 + 12m - 9 = 0$. This has exactly one positive root $m=0.6$.
+
+ It follows that $D=(0.6,6.2)$, and that $m+n = 6.2 + 0.6 = \boxed{6.8}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Note that the fold is the perpendicular bisector of $(0,2)$ and $(4,0)$.  Thus, the fold goes through the midpoint $(2,1)$. 
+
+ The fold also has a slope of $-\frac{1}{m}$, where the $m$ is the slope of the line connecting these two points.  We find $m = \frac{0 - 2}{4 - 0} = -\frac{1}{2}$. Thus, the slope of the fold is $2$ and goes through $(2,1)$, so the equation of the fold is $y = 2x - 3$.
+
+ We want the line connecting $(7,3)$ and $(m,n)$ to have the same fold as a perpendicular bisector. The slope should be $-\frac{1}{2}$, so we get $\frac{n - 3}{m - 7} = -\frac{1}{2}$, which leads to $m = 13 -2n$.
+
+ We also want $y = 2x - 3$ to bisect the segment from $(7,3)$ to $(m,n)$. Thus, the midpoint $(x,y) = \left(\dfrac{7 + m}{2}, \frac{3 + n}{2}\right)$ must lie on the line. Plugging into the equation of the line, we find $\frac{3 + n}{2} = (7 + m) - 3$, which simplifies to $n = 5 + 2m$
+
+ Solving the system of two equations in two variables $m = 13 - 2n$ and $n = 5 + 2m$ gives $m = \frac{3}{5}$ and $n = \frac{31}{5}$ , for a sum of $\boxed{\mathrm{(B) \ }6.8}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) In quadrilateral $ABCD$, it is given that $\angle A = 120^{\circ}$, angles $B$ and $D$ are right angles, $AB = 13$, and $AD = 46$. Then $AC=$
+
+
+ $\mathrm{(A) \ } 60 \qquad \mathrm{(B) \ }62 \qquad \mathrm{(C) \ }64 \qquad \mathrm{(D) \ }65 \qquad \mathrm{(E) \ } 72$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Let the extensions of $\overline{DA}$ and $\overline{CB}$ be at $E$. Since $\angle BAD = 120^{\circ}$, $\angle BAE = 60^{\circ}$ and $\triangle ABE$ is a $30-60-90$ triangle. Also, $\triangle ABE \sim \triangle CDE$, so $\triangle CDE$ is also a $30-60-90$ triangle.
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_26_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+Thus $AE = 2AB = 26$, and $CD = \frac{26 + 46}{\sqrt{3}} = 24\sqrt{3}$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} on $\triangle ACD$, 
+ \[AC = \sqrt{(46)^2 + (24\sqrt{3})^2} = 62 \Rightarrow \mathrm{(B)}.\]
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_26_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Opposite angles add up to $180^{\circ}$, so $ABCD$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Cyclic\_quadrilateral}{cyclic quadrilateral}. Also, $\angle B = \angle D = 90^{\circ}$, from which it follows that $\overline{AC}$ is a diameter of the circumscribing circle. We can apply the extended version of the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines}{Law of Sines} on $\triangle ABD$:
+
+ 
+ \[AC = 2R = \frac{BD}{\sin 120^{\circ}} = \frac{2}{\sqrt{3}} BD\] 
+
+ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on $\triangle ABD$:
+
+ 
+ \[BD^2 = 13^2 + 46^2 - 2 \cdot 13 \cdot 46 \cdot \cos 120^{\circ} = 2883\]
+
+ So $AC = \frac{2}{\sqrt{3}} \cdot \sqrt{2883} = 62$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A $9 \times 9 \times 9$ cube is composed of twenty-seven $3 \times 3 \times 3$ cubes. The big cube is ‘tunneled’ as follows: First the six $3 \times 3 \times 3$ cubes which make up the center of each face as well as the center $3 \times 3 \times 3$ cube are removed as shown. Second, each of the twenty remaining $3 \times 3 \times 3$ cubes is diminished in the same way. That is, the center facial unit cubes as well as each center cube are removed. The surface area of the final figure is 
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1998_27_Problem_Figure_1.png}
+                    \end{figure}
+                    $\mathrm{(A) \ } 384 \qquad \mathrm{(B) \ } 729 \qquad \mathrm{(C) \ } 864 \qquad \mathrm{(D) \ } 1024 \qquad \mathrm{(E) \ } 1056$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+Each $3 \times 3 \times 3$ cube has eight faces on each side, for a surface area of $6 \cdot 8 \cdot (1 \cdot 1) = 48$ on the outside. Each face also has to count the surface area in the inside area of the removed cube, for an additional surface area of $6 \cdot 4 \cdot (1 \cdot 1) = 24$. Thus the total surface area for each $3 \times 3 \times 3$ is $72$.
+
+ There are $20$ of these cubes, for an area of $72 \cdot 20 = 1440$. However, many of the cubes share a common face; each corner $3\times 3\times 3$ cube has three hidden faces and each edge cube has two hidden faces, for a total of $8\cdot 3 + 12\cdot 2 = 48$ hidden faces. Each hidden face has a surface area of $8$, so the surface area of the final figure is $1440 - 48 \cdot 8 = 1056 \Rightarrow \mathrm{(E)}$.  
+
+ 
+
+
+
+\textbf{Solution 2}
+
+After the first step, twenty $3 \times 3 \times 3$ cubes remain, with $8$ corner cubes and $12$ edge cubes. Each one of these $3 \times 3 \times 3$ corner cubes contributes $27$ square units of area, and each edge cube contributes $36$ square units of area. 
+
+ The second stage takes away $3$ square units of area ($1$ for each exposed face) from each of the eight $3 \times 3 \times 3$ corner cubes, and adds an additional $24$ more units from the center facial cubes removed. Similarly, the twelve $3\times 3\times 3$ edge cubes each lose $4$ square units but gain $24$ units. Thus, the total surface area is 
+ \[8 \cdot (27 - 3 + 24) + 12 \cdot (36 - 4 + 24) = 1056\]
+
+ 
+
+
+	\item (\textit{AHSME 1998}) In triangle $ABC$, angle $C$ is a right angle and $CB > CA$. Point $D$ is located on $\overline{BC}$ so that angle $CAD$ is twice angle $DAB$. If $AC/AD = 2/3$, then $CD/BD = m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
+
+
+ $\mathrm{(A) \ }10 \qquad \mathrm{(B) \ }14 \qquad \mathrm{(C) \ }18 \qquad \mathrm{(D) \ }22 \qquad \mathrm{(E) \ } 26$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Let $\theta = \angle DAB$, so $2\theta = \angle CAD$ and $3 \theta = \angle CAB$. Then, it is given that $\cos 2\theta = \frac{AC}{AD} = \frac{2}{3}$ and
+
+ 
+
+
+ $\frac{BD}{CD} = \frac{AC(\tan 3\theta - \tan 2\theta)}{AC \tan 2\theta} = \frac{\tan 3\theta}{\tan 2\theta} - 1.$
+
+ 
+Now, through the use of trigonometric identities, $\cos 2\theta = 2\cos^2 \theta - 1 = \frac{2}{\sec ^2 \theta} - 1 = \frac{1 - \tan^2 \theta}{1 + \tan ^2 \theta} = \frac{2}{3}$. Solving yields that $\tan^2 \theta = \frac 15$. Using the tangent addition identity, we find that $\tan 2\theta = \frac{2\tan \theta}{1 - \tan ^2 \theta},\ \tan 3\theta = \frac{3\tan \theta - \tan^3 \theta}{1 - 3\tan^2 \theta}$, and
+
+ 
+
+
+ $\frac{BD}{CD} = \frac{\tan 3\theta}{\tan 2\theta} - 1 = \frac{(3 - \tan^2 \theta)(1-\tan ^2 \theta)}{2(1 - 3\tan^2 \theta)} - 1 = \frac{(1 + \tan^2 \theta)^2}{2(1 - 3\tan^2 \theta)} = \frac{9}{5}$
+
+ 
+and $\frac{CD}{BD} = \frac{5}{9} \Longrightarrow m+n = 14 \Longrightarrow \mathbf{(B)}$. (This also may have been done on a calculator by finding $\theta$ directly)
+
+ 
+
+
+
+\textbf{Solution 2}
+
+By the application of ratio lemma for $\frac{CD}{BD}$, we get $\frac{CD}{BD} = 2\cos{3A}\cos{A}$, where we let $A = \angle{DAB}$. We already know $\cos{2A}$ hence the rest is easy
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let $AC=2$ and $AD=3$. By the Pythagorean Theorem, $CD=\sqrt{5}$. Let point $P$ be on segment $CD$ such that $AP$ bisects $\angle CAD$. Thus, angles $CAP$, $PAD$, and $DAB$ are congruent. Applying the angle bisector theorem on $ACD$, we get that $CP=\frac{2\sqrt{5}}{5}$ and $PD=\frac{3\sqrt{5}}{5}$. Pythagorean Theorem gives $AP=\frac{\sqrt{5}\sqrt{24}}{5}$.
+
+ Let $DB=x$. By the Pythagorean Theorem, $AB=\sqrt{(x+\sqrt{5})^{2}+2^2}$. Applying the angle bisector theorem again on triangle $APB$, we have 
+ \[\frac{\sqrt{(x+\sqrt{5})^{2}+2^2}}{x}=\frac{\frac{\sqrt{5}\sqrt{24}}{5}}{\frac{3\sqrt{5}}{5}}\]The right side simplifies to$\frac{\sqrt{24}}{3}$. Cross multiplying, squaring, and simplifying, we get a quadratic: 
+ \[5x^2-6\sqrt{5}x-27=0\] Solving this quadratic and taking the positive root gives 
+ \[x=\frac{9\sqrt{5}}{5}\] Finally, taking the desired ratio and canceling the roots gives $\frac{CD}{BD}=\frac{5}{9}$. The answer is $\fbox{(B) 14}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let $AC = 2$, $AD = 3$. $\cos \angle CAD = \frac23$
+
+ By the pythagorean theorem $CD = \sqrt{3^2-2^2} = \sqrt{5}$
+
+ $\sin \angle BDA = \sin (180^{\circ} - \angle BDA) = \sin \angle CDA = \cos \angle (90^{\circ} - CDA) = \cos \angle CAD = \frac23$
+
+ $\sin \angle BAD = \sqrt{ \frac{1-cos (2\angle BAD)}{2} } = \sqrt{ \frac{1-\cos \angle CAD}{2} } = \sqrt{ \frac{1-\frac23}{2} } = \frac{\sqrt{6}}{6}$
+
+ By the Law of Sine, $\frac{ \sin \angle BDA }{AB} = \frac{ \sin \angle BAD }{BD}$
+
+ $\frac{ \frac23 }{ \sqrt{2^2 + ( \sqrt{5} + BD)^2} } = \frac{ \frac{\sqrt{6}}{6} }{BD}$
+
+ $8BD^2 = 3(9+ 2BD \sqrt{5} + BD^2)$
+
+ $5BD^2 - 6 BD \sqrt{5} -27=0$
+
+ As $BD>0$, $BD = \frac{6 \sqrt{5} + \sqrt{ (6 \sqrt{5})^2 - 4 \cdot 5 (-27) } }{10} = \frac{9\sqrt{5}}{5}$
+
+ $\frac{CD}{BD} = \frac{\sqrt{5}}{\frac{9\sqrt{5}}{5}} = \frac59$.
+
+ $5+9=\boxed{\textbf{(B) } 14}$.
+
+ 
+
+
+	\item (\textit{AHSME 1998}) A point $(x,y)$ in the plane is called a lattice point if both $x$ and $y$ are integers. The area of the largest square that contains exactly three lattice points in its interior is closest to
+
+
+ $\mathrm{(A) \ } 4.0 \qquad \mathrm{(B) \ } 4.2 \qquad \mathrm{(C) \ } 4.5 \qquad \mathrm{(D) \ } 5.0 \qquad \mathrm{(E) \ }  5.6$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1998_29_Solution_Figure_1.png}
+                    \end{figure}
+                    The best square's side length is slightly less than $\sqrt 5$, yielding an answer of $\boxed{\textbf{(D) }5.0}$
+
+ 
+
+
+	\item (\textit{AHSME 1998}) For each positive integer $n$, let 
+
+
+ $a_n = \frac{(n+9)!}{(n-1)!}$
+
+ Let $k$ denote the smallest positive integer for which the rightmost nonzero digit of $a_k$ is odd. The rightmost nonzero digit of $a_k$ is
+
+
+ $\mathrm{(A) \ }1 \qquad \mathrm{(B) \ }3 \qquad \mathrm{(C) \ }5 \qquad \mathrm{(D) \ } 7 \qquad \mathrm{(E) \ } 9$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+We have $a_n = n(n+1)\dots (n+9)$.
+
+ The value $a_n$ can be written as $2^{x_n} 5^{y_n} r_n$, where $r_n$ is not divisible by 2 and 5. The number of trailing zeroes is $z_n = \min(x_n,y_n)$. The last non-zero digit is the last digit of $2^{x_n-z_n} 5^{y_n-z_n} r_n$.
+
+ Clearly, the last non-zero digit is even iff $x_n - z_n > 0$ iff $x_n > y_n$.
+
+ Thus we are looking for the smallest $n$ such that the power of $5$ that divides $a_n$ is at least equal to the power of $2$ that divides $a_n$.
+
+ The number $a_n$ is a product of $10$ consecutive integers. Out of these, $5$ are divisible by $2$. Out of those $5$, at least $2$ are divisible by $4$, and out of those $2$, one is divisible by $8$. Therefore $x_n\geq 5+2+1=8$ for all $n$.
+
+ On the other hand, exactly $2$ of our ten integers are divisible by $5$, and at most one of them can be divisible by a higher power of $5$. As we need $y_n\geq x_n\geq 8$, one of the integers from $n$ to $n+9$ must be divisible by $5^7 = 78125$. Therefore $n\geq 78116$. 
+
+ We can now take numbers starting with $78116$, and write each of them in the form $2^x 5^y r$. We are looking for 10 consecutive rows where the sum of $y$s is at least equal to the sum of $x$s.
+
+ \begin{verbatim}
+number   x  y  z 78116    2  0  19529 78117    0  0  78117 78118    1  0  39059 78119:   0  0  78119 78120:   3  1  1953 78121:   0  0  78121 78122:   1  0  39061 78123:   0  0  78123 78124:   2  0  19531 78125:   0  7  1 78126:   1  0  39063
+\end{verbatim}
+
+At this point we can stop, as we just found out that $a_{78117}$ is of the form $2^8 5^8 r_{78117}$. Therefore the $k$ we seek is $k=78117$.
+
+ Now all we need to do is to compute the last non-zero digit. As the powers of $2$ and $5$ that divide $a_{78117}$ are equal, the last non-zero digit is simply the product of the last digits of the ten $z$s. This is $7\cdot 9\cdot 9\cdot 3\cdot 1\cdot 1\cdot 3\cdot 1\cdot 1\cdot 3 \equiv\boxed{9}$.
+
+ 
+
+
+\end{enumerate}

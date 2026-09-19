@@ -1,0 +1,1117 @@
+\section{AHSME 1973}
+        \begin{enumerate}
+        	\item (\textit{AHSME 1973}) A chord which is the perpendicular bisector of a radius of length 12 in a circle, has length 
+
+
+  $\textbf{(A)}\ 3\sqrt3\qquad\textbf{(B)}\ 27\qquad\textbf{(C)}\ 6\sqrt3\qquad\textbf{(D)}\ 12\sqrt3\qquad\textbf{(E)}\ \text{ none of these}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_1_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Draw a diagram as shown.  Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} (or by using 30-60-90 triangles), half of the chord length is $6\sqrt{3}$, so the chord’s length is $\boxed{\textbf{(D) } 12\sqrt{3}}$.  One can also find the length directly by using the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) One thousand unit cubes are fastened together to form a large cube with edge length 10 units; this is painted and then separated into the original cubes. The number of these unit cubes which have at least one face painted is 
+
+
+  $\textbf{(A)}\ 600\qquad\textbf{(B)}\ 520\qquad\textbf{(C)}\ 488\qquad\textbf{(D)}\ 480\qquad\textbf{(E)}\ 400$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The total number of cubes is $10^3$ or $1000$. Because each surface of the large cube is one cube deep, the number of the unpainted cubes is $8^3 = 512$, since we subtract two from the side lengths of the cube itself, and cube it to find the volume of that cube. So there are $1000-512=\boxed{\textbf{(C) } 488}$ cubes that have at least one face painted.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Each face has $100$ cubes, so multiply by six to get $600$.  However, we overcounted each small cube on the edge but not on corner of the big cube once and each small cube on the corner of the big cube twice.  Thus, there are $600 - (12 \cdot 8 + 2 \cdot 8) = \boxed{\textbf{(C) } 488}$ cubes that have at least one face painted.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The stronger Goldbach conjecture states that any even integer greater than 7 can be written as the sum of two different prime numbers. For such representations of the even number 126, the largest possible difference between the two primes is 
+
+
+  $\textbf{(A)}\ 112\qquad\textbf{(B)}\ 100\qquad\textbf{(C)}\ 92\qquad\textbf{(D)}\ 88\qquad\textbf{(E)}\ 80$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution (Trial and Error)}
+
+We can guess and check small primes, subtract it from $126$, and see if the result is a prime because the further away the two numbers are, the greater the difference will be.  Since $126 = 2 \cdot 3^2 \cdot 7$, we can eliminate $2$, $3$, and $7$ as an option because subtracting these would result in a composite number.
+
+ If we subtract $5$, then the resulting number is $121$, which is not prime.  If we subtract $11$, then the resulting number is $115$, which is also not prime.  But when we subtract $13$, the resulting number is $113$, a prime number.  The largest possible difference is $113-13=\boxed{\textbf{(B) } 100}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Two congruent 30-60-90 are placed so that they overlap partly and their hypotenuses coincide. If the hypotenuse of each triangle is 12, the area common to both triangles is 
+
+
+  $\textbf{(A)}\ 6\sqrt3\qquad\textbf{(B)}\ 8\sqrt3\qquad\textbf{(C)}\ 9\sqrt3\qquad\textbf{(D)}\ 12\sqrt3\qquad\textbf{(E)}\ 24$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_4_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Note that the altitude of the shared region bisects the hypotenuse of the original two right triangles (this can be confirmed by using AAS on the two right triangles with that altitude of the shared region).  By using 30-60-90 triangles, the altitude’s length is $2\sqrt{3}$.  The area of the shared region is $\frac12 \cdot 12 \cdot 2\sqrt{3} = \boxed{\textbf{(D)}\ 12\sqrt3}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Of the following five statements, I to V, about the binary operation of averaging (arithmetic mean), 
+
+
+ $\text{I. Averaging is associative }$
+
+
+ $\text{II. Averaging is commutative }$
+
+
+ $\text{III. Averaging distributes over addition }$
+
+
+ $\text{IV. Addition distributes over averaging }$
+
+
+ $\text{V. Averaging has an identity element }$
+
+
+ those which are always true are 
+
+
+ $\textbf{(A)}\ \text{All}\qquad\textbf{(B)}\ \text{I and II only}\qquad\textbf{(C)}\ \text{II and III only}$
+
+
+ $\textbf{(D)}\ \text{II and IV only}\qquad\textbf{(E)}\ \text{II and V only}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+We can consider each statement independently and see which ones are true. The average of two numbers $x$ and $y$ is $avg(x, y) = \frac{x + y}{2}$.
+
+ \textbf{Statement I}
+ \[avg(avg(x, y), z) = avg(x, avg(y, z))\]
+ \[\frac{\frac{x + y}{2} + z}{2} = \frac{x + \frac{y + z}{2}}{2}\]
+ \[\frac{x + y + 2z}{4} = \frac{2x + y + z}{4}\]The above statement is not true for all $(x, y, z)$, so Statement I is false.
+
+ 
+\textbf{Statement II}
+ \[avg(x, y) = avg(y, x)\]
+ \[\frac{x + y}{2} = \frac{y + x}{2}\]Since addition is commutative, the above is true for all $(x,y)$, so Statement II is true.
+
+ 
+\textbf{Statement III}
+ \[avg(x, y + z) = avg(x, y) + avg(x, z)\]
+ \[\frac{x + y + z}{2} = \frac{x + y}{2} + \frac{x + z}{2}\]
+ \[\frac{x + y + z}{2} = \frac{2x + y + z}{2}\]The above statement is not true for all $(x, y, z)$, so Statement III is false.
+
+ 
+\textbf{Statement IV}
+ \[x + avg(y, z) = avg(x + y, x + z)\]
+ \[x + \frac{y + z}{2} = \frac{2x + y + z}{2}\]
+ \[\frac{2x + y + z}{2} = \frac{2x + y + z}{2}\]The left side and the right side are equivalent expressions, so Statement IV is true.
+
+ 
+\textbf{Statement V}Let $i$ be the identity element. If such $i$ exists, then the following is true:
+ \[avg(x, i) = x\]
+ \[\frac{x + i}{2} = x\]
+ \[x + i = 2x\]
+ \[i = x\]However, since $x$ is a variable, but $i$ must be a constant, fixed number, there is no identity element for the binary operation of averaging. Therefore, Statement V is false.
+
+ Statements II and IV are true, so the answer is $\boxed{\textbf{(D)} \text{II and IV only}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If 554 is the base $b$ representation of the square of the number whose base $b$ representation is 24, then $b$, when written in base 10, equals 
+
+
+ $\textbf{(A)}\ 6\qquad\textbf{(B)}\ 8\qquad\textbf{(C)}\ 12\qquad\textbf{(D)}\ 14\qquad\textbf{(E)}\ 16$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Write out the numbers using the definition of \href{https://artofproblemsolving.com/wiki/index.php?title=Base\_numbers}{base numbers}.
+ \[554_b = 5b^2 + 5b + 4\]
+ \[24_b = 2b+4\]Since $554_b = (24_b)^2$, we can write an equation.
+ \[5b^2 + 5b + 4 = (2b+4)^2\]
+ \[5b^2 + 5b + 4 = 4b^2 + 16b + 16\]
+ \[b^2 - 11b - 12 = 0\]
+ \[(b-12)(b+1) = 0\]Since base numbers must be positive, $b$ in base 10 equals $\boxed{\textbf{(C)}\ 12}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The sum of all integers between 50 and 350 which end in 1 is 
+
+
+  $\textbf{(A)}\ 5880\qquad\textbf{(B)}\ 5539\qquad\textbf{(C)}\ 5208\qquad\textbf{(D)}\ 4877\qquad\textbf{(E)}\ 4566$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+The numbers that we are adding are $51,61,71 \cdots 341$.  The numbers are part of an arithmetic series with first term $51$, last term $341$, common difference $10$, and $30$ terms.  Using the arithmetic series formula, the sum of the terms is $\frac{30 \cdot 392}{2} = \boxed{\textbf{(A)}\ 5880}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If 1 pint of paint is needed to paint a statue 6 ft. high, then the number of pints it will take to paint (to the same thickness) 540 statues similar to the original but only 1 ft. high is 
+
+
+ $\textbf{(A)}\ 90\qquad\textbf{(B)}\ 72\qquad\textbf{(C)}\ 45\qquad\textbf{(D)}\ 30\qquad\textbf{(E)}\ 15$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+The statues are similar, and since the height if the smaller statue is $\frac{1}{6}$ of the original statue, the surface area is $\frac{1}{36}$ of the original statue.  Thus, $\frac{1}{36}$ pints of paint is needed for one 1 ft. statue, so painting 540 of these statues requires $\frac{540}{36} = \boxed{\textbf{(E)}\ 15}$ pints of paint.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) In  $\triangle ABC$ with right angle at $C$, altitude $CH$ and median $CM$ trisect the right angle. If the area of $\triangle CHM$ is $K$, then the area of $\triangle ABC$ is 
+
+
+  $\textbf{(A)}\ 6K\qquad\textbf{(B)}\ 4\sqrt3\ K\qquad\textbf{(C)}\ 3\sqrt3\ K\qquad\textbf{(D)}\ 3K\qquad\textbf{(E)}\ 4K$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_9_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Draw diagram as shown (note that $A$ and $B$ can be interchanged, but it doesn’t change the solution).
+
+ Note that because $CM$ is a median, $AM = BM$.  Also, by ASA Congruency, $\triangle CHA = \triangle CHM$, so $AH = HM$.  That means $HM = \frac{1}{4} \cdot AB$, and since $\triangle CHM$ and $\triangle ABC$ share an altitude, $[ABC] = \boxed{\textbf{(E)}\ 4K}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If $n$ is a real number, then the simultaneous system 
+
+
+ $nx+y = 1$
+
+
+ $ny+z = 1$
+
+
+ $x+nz = 1$
+
+
+ has no solution if and only if $n$ is equal to 
+
+
+ $\textbf{(A)}\ -1\qquad\textbf{(B)}\ 0\qquad\textbf{(C)}\ 1\qquad\textbf{(D)}\ 0\text{ or }1\qquad\textbf{(E)}\ \frac{1}2$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Add up all three equations to get
+ \[(n+1)(x+y+z) = 3\]If $n = -1$, then equation results in $0 = 3$.  That has no solutions, so the answer is $\boxed{\textbf{(A)}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+From the first equation,
+ \[y = 1 - nx\]Substitute that in the second equation to get
+ \[n(1-nx) + z = 1\]
+ \[z = 1 - n + n^2 x\]Substitute that in the third equation to get
+ \[x + n(1-n+n^2 x) = 1\]
+ \[(1+n^3)x + n - n^2 = 1\]If $n = -1$, then equation results in $-2 = 1$.  That has no solutions, so the answer is $\boxed{\textbf{(A)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) A circle with a circumscribed and an inscribed square centered at the origin  of a rectangular coordinate system with positive  and  axes  and  is shown in each figure  to  below.
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1973_11_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ The inequalities
+
+
+ 
+ \[|x|+|y|\leq\sqrt{2(x^{2}+y^{2})}\leq 2\mbox{Max}(|x|, |y|)\]
+
+
+ are represented geometrically* by the figure numbered
+
+
+ $\textbf{(A)}\ I\qquad\textbf{(B)}\ II\qquad\textbf{(C)}\ III\qquad\textbf{(D)}\ IV\qquad\textbf{(E)}\ \mbox{none of these}$
+
+
+ * An inequality of the form $f(x, y) \leq g(x, y)$, for all $x$ and $y$ is represented geometrically by a figure showing the containment
+
+
+ $\{\mbox{The set of points }(x, y)\mbox{ such that }g(x, y) \leq a\} \subset\\ \{\mbox{The set of points }(x, y)\mbox{ such that }f(x, y) \leq a\}$
+
+
+ for a typical real number $a$.	
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+First, note that the following inequality 
+ \[|x|+|y|\leq\sqrt{2(x^{2}+y^{2})}\leq 2\mbox{Max}(|x|, |y|)\]represents the graphs $|x| + |y| = a$, $\sqrt{2(x^{2}+y^{2})} = a$, and $2\mbox{Max}(|x|, |y|) = a$. We don't actually have to worry about the inequality, we just want to find the picture that graphs those $3$ equations for some constant $a$. 
+
+ WLOG, we can set $a=1$. To make our life easier, we can also focus entirely on the first quadrant, since all $4$ graphs have different shapes in the first quadrant. Therefore, $x \geq 0$ and $y \geq 0$. 
+
+ First, we have $|x| + |y| = 1$. Since $x \geq 0$ and $y \geq 0$, this becomes $x + y = 1$. After a bit of rearranging, we get 
+ \[y = -x + 1\].
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_11_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ This eliminates $III$, which does not have a diagonal line in the first quadrant.
+
+ Next, we have $\sqrt{2(x^{2}+y^{2})} = 1$. Squaring both sides and dividing by $2$, we get 
+ \[x^2+y^2=\frac{\sqrt{2}}{2}^2\]Note that this describes a circle with the center $(0,0)$ and radius $\frac{\sqrt{2}}{2}$. We can find that $(\frac{1}{2}, \frac{1}{2})$ is on the circle, which is also on the line $y = -x + 1$. Therefore, the circle intersects the line at that point. We can graph this as follows:
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_11_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ This eliminates $I$, which does not include the intersection point listed above.
+
+ Finally, we have $2\mbox{Max}(|x|, |y|) = 1$. Rearranging and substituting $x$ for $|x|$ and likewise for $y$, we get 
+ \[\mbox{Max}(x, y) = \frac{1}{2}\]Note that this equation means that either $x \leq y = \frac{1}{2}$ or $y \leq x = \frac{1}{2}$. Therefore, from $x = 0$ to $x = \frac{1}{2}$, the graph looks like the line $y = \frac{1}{2}$. Then, from $y = 0$ to $y = \frac{1}{2}$, the graph looks like the line $x = \frac{1}{2}$. Graphing this, we get:
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_11_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ Thus, we can eliminate $IV$. However, at this point, we don't know if the answer is $II$ or none of the graphs, since this entire time we were only graphing in the first quadrant to simplify things. However, note that no matter what sign $x$ or $y$ is, the equations all surround the variables with absolute value signs or exponents and make the values positive. Therefore, the graphs are symmetric about the $x$ and $y$ axes. As a result, the final graph looks like this:
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_11_Solution_Figure_4.png}
+                    \end{figure}
+                    
+
+ Therefore, we can choose $\boxed{\textbf{B}}$ as our answer.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The average (arithmetic mean) age of a group consisting of doctors and lawyers in 40. If the doctors average 35 and the lawyers 50 years old, then the ratio of the numbers of doctors to the number of lawyers is 
+
+
+ $\textbf{(A)}\ 3: 2\qquad\textbf{(B)}\ 3: 1\qquad\textbf{(C)}\ 2: 3\qquad\textbf{(D)}\ 2: 1\qquad\textbf{(E)}\ 1: 2$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Let $d$ be the number of doctors and $l$ be the number of lawyers.  The average age of the doctors is $35$, so the sum of the doctors' ages is $35d$.  The average age of the lawyers is $50$, so the sum of the lawyers' ages is $50l$.  With the two information, we can write an equation.
+
+ 
+ \[\frac{35d+50l}{d+l} = 40\]
+ \[35d+50l=40d+40l\]
+ \[10l=5d\]
+ \[\frac{d}{l} = 2\]The ratio of the number of doctors to the number of lawyers is $\boxed{\textbf{(D)}\ 2: 1}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The fraction $\frac{2(\sqrt2+\sqrt6)}{3\sqrt{2+\sqrt3}}$ is equal to 
+
+
+ $\textbf{(A)}\ \frac{2\sqrt2}{3} \qquad \textbf{(B)}\ 1 \qquad \textbf{(C)}\ \frac{2\sqrt3}3 \qquad \textbf{(D)}\ \frac43 \qquad \textbf{(E)}\ \frac{16}{9}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Squaring the expression and taking the positive square root (since numerator and denominator are positive) of the result yields
+ \[\sqrt{\left(\frac{2(\sqrt2+\sqrt6)}{3\sqrt{2+\sqrt3}}\right)^2}\]
+ \[\sqrt{\frac{4(2+4\sqrt{3}+6)}{9(2+\sqrt{3})}}\]
+ \[\sqrt{\frac{4(8+4\sqrt{3})}{9(2+\sqrt{3})}}\]
+ \[\sqrt{\frac{16}{9}}\]
+ \[\frac43\]
+
+ The answer is $\boxed{\textbf{(D)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Each valve $A$, $B$, and $C$, when open, releases water into a tank at its own constant rate. With all three valves open, the tank fills in 1 hour, with only valves $A$ and $C$ open it takes 1.5 hours, and with only valves $B$ and $C$ open it takes 2 hours. The number of hours required with only valves $A$ and $B$ open is 
+
+
+  $\textbf{(A)}\ 1.1\qquad\textbf{(B)}\ 1.15\qquad\textbf{(C)}\ 1.2\qquad\textbf{(D)}\ 1.25\qquad\textbf{(E)}\ 1.75$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Let the rate of water flowing through valve $A$ be $a$, the rate of water flowing through valve $B$ be $b$, and the rate of water flowing through valve $C$ be $c$.  \href{https://artofproblemsolving.com/wiki/index.php?title=WLOG}{WLOG}, let the volume of the tank be 1 liter, and let the units for the rates be liters per hour.  With this information, we can write three equations.
+ \[\frac{1}{a+b+c} = 1\]
+ \[\frac{1}{a+c} = \frac{3}{2}\]
+ \[\frac{1}{b+c} = 2\]Manipulate each equation to get
+ \[1 = a+b+c\]
+ \[\frac{2}{3} = a+c\]
+ \[\frac{1}{2} = b+c\]Solving for $a$ yields $a = \frac{1}{2}$, and solving for $b$ yields $b = \frac{1}{3}$.  The number of hours to fill the tub with only valves $A$ and $B$ on is $\frac{1}{\frac{1}{2} + \frac{1}{3}} = \frac{6}{5} = \boxed{\textbf{(C)}\ 1.2}$.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AHSME 1973}) A sector with acute central angle $\theta$ is cut from a circle of radius 6. The radius of the circle circumscribed about the sector is 
+
+
+ $\textbf{(A)}\ 3\cos\theta \qquad \textbf{(B)}\ 3\sec\theta \qquad \textbf{(C)}\ 3 \cos \frac12 \theta \qquad \textbf{(D)}\ 3 \sec \frac12 \theta \qquad \textbf{(E)}\ 3$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Let $O$ be the center of the circle and $A,B$ be two points on the circle such that $\angle AOB = \theta$.  If the circle circumscribes the sector, then the circle must circumscribe $\triangle AOB$.
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_15_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Draw the perpendicular bisectors of $OA$ and $OB$ and mark the intersection as point $C$, and draw a line from $C$ to $O$.  By HL Congruency and CPCTC, $\angle AOC = \angle BOC = \theta /2$.
+
+ Let $R$ be the circumradius of the triangle.  Using the definition of cosine for right triangles,
+ \[\cos (\theta /2) = \frac{3}{R}\]
+ \[R = \frac{3}{\cos (\theta /2)}\]
+ \[R = 3 \sec (\theta /2)\]Answer choices A, C, and E are smaller, so they are eliminated.  However, as $\theta$ aproaches $90^\circ$, the value $3\sec\theta$ would approach infinity while $3\sec \frac12 \theta$ would approach $\frac{3\sqrt{2}}{2}$.  A super large circle would definitely not be a circumcircle if $\theta$ is close to $90^\circ$, so we can confirm that the answer is $\boxed{\textbf{(D)}\ 3 \sec \frac12 \theta}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If the sum of all the angles except one of a convex polygon is $2190^{\circ}$, then the number of sides of the polygon must be 
+
+
+ $\textbf{(A)}\ 13 \qquad \textbf{(B)}\ 15 \qquad \textbf{(C)}\ 17 \qquad \textbf{(D)}\ 19 \qquad \textbf{(E)}\ 21$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+Let $n$ be the number of sides in the polygon.  The number of interior angles in the polygon is $180(n-2)$.  We know that the sum of all but one of them is $2190^{\circ}$, so the sum of all the angles is more than that.
+ \[180(n-2) > 2190\]
+ \[n-2 > 12 \frac{1}{6}\]
+ \[n > 14 \frac{1}{6}\]
+
+ The sum of the angles in a 15-sided polygon is $2340^{\circ}$, making the remaining angle $150^{\circ}$.  The angles of a convex polygon are all less than $180^{\circ}$, and since adding one more side means adding $180^{\circ}$ to the measure of the remaining angle, we can confirm that there are $\boxed{\textbf{(B)}\ 15}$ sides in the polygon.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If $\theta$ is an acute angle and $\sin \frac12 \theta = \sqrt{\frac{x-1}{2x}}$, then $\tan \theta$ equals 
+
+
+ $\textbf{(A)}\ x \qquad \textbf{(B)}\ \frac1{x} \qquad \textbf{(C)}\ \frac{\sqrt{x-1}}{x+1} \qquad \textbf{(D)}\ \frac{\sqrt{x^2-1}}{x} \qquad \textbf{(E)}\ \sqrt{x^2-1}$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+Since $\frac{\theta}{2}$ is acute and $\cos \frac{\theta}{2} = \sqrt{1 - \sin (\frac{\theta}{2})^2}$,
+ \[\cos \frac{\theta}{2} = \sqrt{1 - (\frac{x-1}{2x})}\]
+ \[\cos \frac{\theta}{2} = \sqrt{\frac{x+1}{2x}}\]Using the definition of tangent,
+ \[\tan \frac{\theta}{2} = \sqrt{\frac{x-1}{2x}} \div \sqrt{\frac{x+1}{2x}}\]
+ \[\tan \frac{\theta}{2} = \sqrt{\frac{x-1}{x+1}}\]Finally, by using the Double Angle Identity for Tangent,
+ \[\tan \theta = \frac{2 \cdot \sqrt{\frac{x-1}{x+1}}}{1 - \frac{x-1}{x+1}}\]
+ \[\tan \theta = \frac{\frac{2\sqrt{x^2-1}}{x+1}}{\frac{2}{x+1}}\]
+ \[\tan \theta = \sqrt{x^2-1}\]The answer is $\boxed{\textbf{(E)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If $p \geq 5$ is a prime number, then $24$ divides $p^2 - 1$ without remainder 
+
+
+ $\textbf{(A)}\ \text{never} \qquad \textbf{(B)}\ \text{sometimes only} \qquad \textbf{(C)}\ \text{always} \qquad$
+
+
+ $\textbf{(D)}\ \text{only if } p =5 \qquad \textbf{(E)}\ \text{none of these}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Starting with some experimentation, substituting $p=5$ results in $24$, substituting $p=7$ results in $48$, and substituting $p=11$ results in $120$.  For these primes, the resulting numbers are multiples of $24$.
+
+ To show that all primes we devise the following proof:
+
+ $Proof:$$p \ge 5$ result in $p^2 -1$ being a multiple of $24$, we can use modular arithmetic.  Note that $p^2 - 1 = (p+1)(p-1)$.  Since $p^2 \equiv 0,1,2,3 \mod 4$, $p^2 - 1$ is a multiple of $8$.  Also, since $p^2 \equiv 0,1,2 \mod 3$, $p^2 - 1$ is a multiple of $3$.  Thus, $p^2 -1$ is a multiple of $24$, so the answer is $\boxed{\textbf{(C)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Define $n_a!$ for $n$ and $a$ positive to be 
+
+
+ 
+ \[n_a ! = n (n-a)(n-2a)(n-3a)...(n-ka)\]
+
+
+ where $k$ is the greatest integer for which $n>ka$. Then the quotient $72_8!/18_2!$ is equal to 
+
+
+ $\textbf{(A)}\ 4^5 \qquad \textbf{(B)}\ 4^6 \qquad \textbf{(C)}\ 4^8 \qquad \textbf{(D)}\ 4^9 \qquad \textbf{(E)}\ 4^{12}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Using the definition of $n_a!$, the quotient can be rewritten as
+ \[\frac{72 \cdot 64 \cdot 56 \cdots 8}{18 \cdot 16 \cdot 14 \cdots 2}\]Note that for a given integer $x$, $\frac{72-8x}{18-2x} = 4$.  Since $0 \le x \le 8$, the quotient simplifies to $\boxed{\textbf{(D)}\ 4^9}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) A cowboy is 4 miles south of a stream which flows due east. He is also 8 miles west and 7 miles north of his cabin. He wishes to water his horse at the stream and return home. The shortest distance (in miles) he can travel and accomplish this is 
+
+
+ $\textbf{(A)}\ 4+\sqrt{185} \qquad \textbf{(B)}\ 16 \qquad \textbf{(C)}\ 17 \qquad \textbf{(D)}\ 18 \qquad \textbf{(E)}\ \sqrt{32}+\sqrt{137}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+First, you draw a reflection of the cowboy across the river. Then, you draw the straight line from the "cowboy" to his cabin. This will be a $8, 15, 17$ Pythagorean triple, so the answer is $17$, which is $\boxed{\textbf{(C)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The number of sets of two or more consecutive positive integers whose sum is 100 is
+
+
+ $\textbf{(A)}\ 1 \qquad \textbf{(B)}\ 2 \qquad \textbf{(C)}\ 3 \qquad \textbf{(D)}\ 4 \qquad \textbf{(E)}\ 5$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+If the first number of a group of $n$ consecutive numbers is $a$, the $n^\text{th}$ number is $a+n-1$.  We know that the sum of the group of numbers is $100$, so
+ \[\frac{n(2a+n-1)}{2} = 100\]
+ \[2a+n-1=\frac{200}{n}\]
+ \[2a = 1-n + \frac{200}{n}\]We know that $n$ and $a$ are positive integers, so we check values of $n$ that are a factor of $200$.  Of these values, the only ones that result in a positive integer $a$ is when $n = 5$ or when $n = 8$, so there are $\boxed{\textbf{(B)}\ 2}$ sets of two or more consecutive positive integers whose sum is $100$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The set of all real solutions of the inequality 
+
+
+ 
+ \[|x - 1| + |x + 2| < 5\]
+
+
+ is 
+
+
+ $\textbf{(A)}\ x \in ( - 3,2) \qquad \textbf{(B)}\ x \in ( - 1,2) \qquad \textbf{(C)}\ x \in ( - 2,1) \qquad$
+
+
+ $\textbf{(D)}\ x \in \left( - \frac32,\frac72\right) \qquad \textbf{(E)}\ \O \text{ (empty})$
+
+
+ [Note: I updated the notation on this problem.]	
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+We can do casework upon the value of $x$. First, consider the case where both absolute values are positive, which is when $x \geq 1$. In this case, the equation becomes $2x + 1 < 5$. This turns into $x < 2$. Combining this with our original assumption, we get the solutions $1 \leq x < 2$. 
+
+ Next, consider the case when both absolute values are negative, which is when $x < -2$. This yields $-1 - 2x < 5$, or $x > -3$. Combining this with our original assumption, we get $-3 < x < -2$
+
+ The next case is when the first absolute value is positive and the second is negative. This occurs when $x \geq 1$ and $x < -2$. Obviously, this has no solutions, since the inequalities do not overlap.
+
+ The final case is when the first absolute value is negative and the second is positive. This occurs when $x < 1$ and $x \geq -2$. This yields $3 < 5$, which is always true. Therefore, we also get the solutions $-2 \leq x < 1$.
+
+ Therefore, after combining all of our solutions, we get the range $-3 < x < 2$, which is $\boxed{\textbf{A}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) There are two cards; one is red on both sides and the other is red on one side and blue on the other. The cards have the same probability (1/2) of being chosen, and one is chosen and placed on the table. If the upper side of the card on the table is red, then the probability that the under-side is also red is 
+
+
+ $\textbf{(A)}\ \frac14 \qquad \textbf{(B)}\ \frac13 \qquad \textbf{(C)}\ \frac12 \qquad \textbf{(D)}\ \frac23 \qquad \textbf{(E)}\ \frac34$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+There are three red faces, and two are on the card that is completely red, so our answer is $\frac{2}{3}$, which is $\boxed{\textbf{(D)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The check for a luncheon of 3 sandwiches, 7 cups of coffee and one piece of pie came to $\$3.15$. The check for a luncheon consisting of 4 sandwiches, 10 cups of coffee and one piece of pie came to $\$4.20$ at the same place. The cost of a luncheon consisting of one sandwich, one cup of coffee, and one piece of pie at the same place will come to 
+
+
+ $\textbf{(A)}\ \$1.70 \qquad \textbf{(B)}\ \$1.65 \qquad \textbf{(C)}\ \$1.20 \qquad \textbf{(D)}\ \$1.05 \qquad \textbf{(E)}\ \$0.95$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Let $s$ be the cost of one sandwich, $c$ be the cost of one cup of coffee, and $p$ be the price of one piece of pie.  With the information,
+
+ 
+ \[3s+7c+p=3.15\]
+ \[4s+10c+p=4.20\]
+
+ Subtract the first equation from the second to get
+
+ 
+ \[s+3c=1.05\]
+
+ That means $s=1.05-3c$.  Substituting it back in the second equation results in.
+
+ 
+ \[4.20-12c+10c+p=4.20\]
+
+ Solving for $p$ yields $p=2c$.  With the substitutions, the cost of one sandwich, one cup of coffee, and one slice of pie is $(1.05-3c)+c+(2c) = \boxed{\textbf{(D)}\ \$1.05}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) A circular grass plot 12 feet in diameter is cut by a straight gravel path 3 feet wide, one edge of which passes through the center of the plot. The number of square feet in the remaining grass area is 
+
+
+ $\textbf{(A)}\ 36\pi-34 \qquad \textbf{(B)}\ 30\pi - 15 \qquad \textbf{(C)}\ 36\pi - 33 \qquad$
+
+
+ $\textbf{(D)}\ 35\pi - 9\sqrt3 \qquad \textbf{(E)}\ 30\pi - 9\sqrt3$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_25_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ The wanted area can be divided into a semicircle and a circular segment.  The area of the semicircle is $\frac12 \cdot \pi \cdot 6^2 = 18\pi$ square feet.  To find the area of the circular segment, note that by using 30-60-90 triangles (or \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}), the chord's length is $6\sqrt{3}$ ft, and the angle of the sector is $120^\circ$.  That means the area of the circular segment is $(\frac13 \cdot \pi \cdot 6^2) - (\frac12 \cdot 6\sqrt{3} \cdot 3) = 12\pi - 9\sqrt{3}$ square feet.  Thus, the area of the remaining grassy area is $\boxed{\textbf{(E)}\ 30\pi - 9\sqrt3}$ square feet.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The number of terms in an A.P. (Arithmetic Progression) is even. The sum of the odd and even-numbered terms are 24 and 30, respectively. If the last term exceeds the first by 10.5, the number of terms in the A.P. is 
+
+
+ $\textbf{(A)}\ 20 \qquad \textbf{(B)}\ 18 \qquad \textbf{(C)}\ 12 \qquad \textbf{(D)}\ 10 \qquad \textbf{(E)}\ 8$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+Let $a$ be the first term, $n$ be the number of terms, and $d$ be the common difference.  That means the last term is $a+r(n-1)$.
+
+ We can write an equation on the difference between the last and first term based on the conditions.
+ \[a+r(n-1)-a =10.5\]
+ \[rn-r=10.5\]Also, half of the terms add up to $24$ while the other half of the terms add up to $30$, so
+ \[24 + r\frac{n}{2} = 30\]
+ \[nr = 12\]Substituting the value back to a previous equation,
+ \[12-r=10.5\]
+ \[r=1.5\]Substituting to a previous equation again,
+ \[1.5n-1.5=10.5\]
+ \[n=8\]Thus, there are $\boxed{\textbf{(E)}\ 8}$ terms in the arithmetic sequence.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Cars A and B travel the same distance. Car A travels half that distance at $u$ miles per hour and half at $v$ miles per hour. Car B travels half the time at $u$ miles per hour and half at $v$ miles per hour. The average speed of Car A is $x$ miles per hour and that of Car B is $y$ miles per hour. Then we always have 
+
+
+ $\textbf{(A)}\ x \leq y\qquad \textbf{(B)}\ x \geq y \qquad \textbf{(C)}\ x=y \qquad \textbf{(D)}\ x<y\qquad \textbf{(E)}\ x>y$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+Let $t$ be the total number of time in hours that Car B took to drive the distance.  This means that for have the time Car B traveled $\frac{ut}{2}$ miles and for half the time Car B traveled $\frac{vt}{2}$ miles.  That means the total distance traveled is $\frac{ut+vt}{2}$ miles, so
+ \[y = \frac{\frac{ut+vt}{2}}{t}\]
+ \[y = \frac{u+v}{2}\]Because both cars traveled the same distance, for half the distance Car A took $\frac{ut+vt}{4u}$ hours and for half the distance Car A took $\frac{ut+vt}{4v}$ hours.  That means
+ \[x = \frac{\frac{ut+vt}{2}}{\frac{ut+vt}{4u} + \frac{ut+vt}{4v}}\]
+ \[x = \frac{2}{\frac{1}{u} + \frac{1}{v}}\]In order to compare $x$ and $y$, we need to compare the values that $x$ and $y$ are equal to.
+ \[\frac{2}{\frac{1}{u} + \frac{1}{v}} \bigcirc \frac{u+v}{2}\]Since the denominators of both numbers are positive, cross-multiplying won’t change the comparison sign.
+ \[4 \bigcirc 2 + \frac{u}{v} + \frac{v}{u}\]
+ \[2 \bigcirc  \frac{u}{v} + \frac{v}{u}\]Because $uv$ is positive, the comparison sign does not need to be changed either.
+ \[2uv \bigcirc u^2 + v^2\]
+ \[0 \bigcirc (u-v)^2\]By the \href{https://artofproblemsolving.com/wiki/index.php?title=Trivial\_Inequality}{Trivial Inequality}, $0 \le (u-v)^2$.  All of the steps are reversible, so $\boxed{\textbf{(A)}\ x \leq y}$.  This can be confirmed by testing values of $u$ and $v$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) If $a$, $b$, and $c$ are in geometric progression (G.P.) with $1 < a < b < c$ and $n>1$ is an integer, then $\log_an$, $\log_bn$, $\log_cn$ form a sequence 
+
+
+ $\textbf{(A)}\ \text{which is a G.P} \qquad$
+
+
+ $\textbf{(B)}\ \text{which is an arithmetic progression (A.P)} \qquad$
+
+
+ $\textbf{(C)}\ \text{in which the reciprocals of the terms form an A.P} \qquad$
+
+
+ $\textbf{(D)}\ \text{in which the second and third terms are the }n\text{th powers of the first and second respectively} \qquad$
+
+
+ $\textbf{(E)}\ \text{none of these}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Using the change of base formula, the three logarithmic terms can be written as
+ \[\frac{\log n}{\log a},  \frac{\log n}{\log b}, \frac{\log n}{\log c}\]Since $a$, $b$, and $c$ are members of a geometric sequence, $b = ar$ and $c = ar^2$.  That means the three logarithmic terms can be rewritten as
+ \[\frac{\log n}{\log a},  \frac{\log n}{\log ar}, \frac{\log n}{\log ar^2}\]
+ \[\frac{\log n}{\log a},  \frac{\log n}{\log a + \log r}, \frac{\log n}{\log a + 2 \log r}\]Note that if we take the reciprocals of each term, the next term can be derived from the previous term by adding $\frac{\log r}{\log n}$, so the answer is $\boxed{\textbf{(C)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Two boys start moving from the same point A on a circular track but in opposite directions. Their speeds are 5 ft. per second and 9 ft. per second. If they start at the same time and finish when they first meet at the point A again, then the number of times they meet, excluding the start and finish, is 
+
+
+ $\textbf{(A)}\ 13 \qquad \textbf{(B)}\ 25 \qquad \textbf{(C)}\ 44 \qquad \textbf{(D)}\ \text{infinity} \qquad \textbf{(E)}\ \text{none of these}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+Let $d$ be the length of the track in feet and $x$ be the number of laps that one of the boys did, so time one of the boys traveled before the two finish is $\frac{dx}{5}$.  Since the time elapsed for both boys is equal, one boy ran $5(\frac{dx}{5})$ feet while the other boy ran $9(\frac{dx}{5})$ feet.  Because both finished at the starting point, both ran an integral number of laps, so $5(\frac{dx}{5})$ and $9(\frac{dx}{5})$ are multiples of $d$.  Because both stopped when both met at the start for the first time, $x = 5$.
+
+ Note that between the time a runner finishes a lap and a runner (can be same) finishes a lap, both runners must meet each other.  When $0 < x \le 5$ and either $5(\frac{dx}{5})$ or $9(\frac{dx}{5})$ is a multiple of $d$, one of the runners completed a lap.  This is achieved when $x = \frac59, 1, \frac{10}{9}, \frac{15}{9}, 2, \frac{20}{9}, \frac{25}{9}, 3, \frac{30}{9}, \frac{35}{9}, 4, \frac{40}{9}, 5$, so the two meet each other (excluding start and finish) a total of $\boxed{\textbf{(A)}\ 13}$ times.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) Let $[t]$ denote the greatest integer $\leq t$ where $t \geq 0$ and $S = \{(x,y): (x-T)^2 + y^2 \leq T^2 \text{ where } T = t - [t]\}$. Then we have 
+
+
+ $\textbf{(A)}\ \text{the point } (0,0) \text{ does not belong to } S \text{ for any } t \qquad$
+
+
+ $\textbf{(B)}\ 0 \leq \text{Area } S \leq \pi \text{ for all } t \qquad$
+
+
+ $\textbf{(C)}\ S \text{ is contained in the first quadrant for all } t \geq 5 \qquad$
+
+
+ $\textbf{(D)}\ \text{the center of } S \text{ for any } t \text{ is on the line } y=x \qquad$
+
+
+ $\textbf{(E)}\ \text{none of the other statements is true}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+The region $S$ is a circle radius $T$ and center $(T,0)$.  Since $T = t-[t]$, $0 \le T < 1$.  That means the area of the circle is less than $\pi$, and since the region can also be just a dot (achieved when $t$ is integer), the answer is $\boxed{\textbf{(B)}}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) In the following equation, each of the letters represents uniquely a different digit in base ten: 
+
+
+ 
+ \[(YE) \cdot (ME) = TTT\]
+
+
+ The sum $E+M+T+Y$ equals 
+
+
+ $\textbf{(A)}\ 19 \qquad \textbf{(B)}\ 20 \qquad \textbf{(C)}\ 21 \qquad \textbf{(D)}\ 22 \qquad \textbf{(E)}\ 24$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+The right side of the equation can be rewritten as $111T = 37 \cdot 3T$.  With trial and error and prime factorization as a guide, we can test different digits of $T$ to see if we can find two two-digit numbers that have the same units digit and multiply to $111T$.
+
+ The only possibility that works is $37 \cdot 27 = 999$.  That means $E+M+T+Y = \boxed{\textbf{(C)}\ 21}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) The volume of a pyramid whose base is an equilateral triangle of side length 6 and whose other edges are each of length $\sqrt{15}$ is 
+
+
+ $\textbf{(A)}\ 9 \qquad \textbf{(B)}\ 9/2 \qquad \textbf{(C)}\ 27/2 \qquad \textbf{(D)}\ \frac{9\sqrt3}{2} \qquad \textbf{(E)}\ \text{none of these}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_32_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Draw an altitude towards the equilateral triangle base.  By symmetry (this can also be proved by HL), the base of the altitude is equidistant from the three points of the equilateral triangle.  This means that the distance from the base of the altitude to one of the points of the equilateral triangle is $2\sqrt{3}$.
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_32_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, the length of the altitude is $\sqrt{3}$, so the volume of the triangular pyramid is $\frac13 \cdot \frac{6^2 \cdot \sqrt{3}}{4} \cdot \sqrt{3} = \boxed{\textbf{(A)}\ 9}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) When one ounce of water is added to a mixture of acid and water, the new mixture is $20\%$ acid. When one ounce of acid is added to the new mixture, the result is $33\frac13\%$ acid. The percentage of acid in the original mixture is
+
+
+ $\textbf{(A)}\ 22\% \qquad \textbf{(B)}\ 24\% \qquad \textbf{(C)}\ 25\% \qquad \textbf{(D)}\ 30\% \qquad \textbf{(E)}\ 33\frac13 \%$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Let $a$ be the original number of ounces of acid and $w$ be the original number of ounces of water.  We can write two equations since we know the percentage of acid after some water and acid.
+ \[\frac{a}{a+w+1} = \frac{1}{5}\]
+ \[\frac{a+1}{a+w+2} = \frac{1}{3}\]Cross-multiply to get rid of the fractions.
+ \[5a = a+w+1\]
+ \[3a+3=a+w+1\]Solve the system to get $a=1$ and $w=3$.  The percentage of acid in the original mixture is $\frac{1}{1+3} = \boxed{\textbf{(C)}\ 25\%}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) A plane flew straight against a wind between two towns in 84 minutes and returned with that wind in 9 minutes less than it would take in still air. The number of minutes (2 answers) for the return trip was
+
+
+ $\textbf{(A)}\ 54 \text{ or } 18 \qquad \textbf{(B)}\ 60 \text{ or } 15 \qquad \textbf{(C)}\ 63 \text{ or } 12 \qquad \textbf{(D)}\ 72 \text{ or } 36 \qquad \textbf{(E)}\ 75 \text{ or } 20$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Let $d$ be the distance between the two towns, $p$ be the speed of the plane, and $w$ be the speed of the wind.  Since the time it took to fly against the wind towards the other town is $84$ minutes,
+ \[\frac{d}{p-w} = 84\]
+ \[d = 84p-84w\]Since flying with the wind on the return trip takes $9$ minutes less compared to the return trip without wind,
+ \[\frac{d}{p+w} + 9 = \frac{d}{p}\]Substitute $d$ and substitute $p$ and $w$
+ \[\frac{84p-84w}{p+w} + 9 = \frac{84p-84w}{p}\]
+ \[\frac{93p-75w}{p+w} = \frac{84p-84w}{p}\]
+ \[93p^2 - 75pw = 84p^2 + 84pw - 84pw - 84w^2\]
+ \[9p^2 - 75pw + 84w^2 = 0\]
+ \[3p^2 - 25pw + 28w^2 = 0\]
+ \[(3p-4w)(p-7w)=0\]That means $p = \frac{4}{3}w$ or $p = 7w$.  If $p = \frac{4}{3}w$, then $\frac{112w-84w}{\frac{7}{3}w} = 12$.  If $p=7w$, then $\frac{84(7w)-84w}{8w} = 63$.  The number of minutes for the return trip can be $\boxed{\textbf{(C)}\ 63 \text{ or } 12}$.
+
+ 
+
+
+	\item (\textit{AHSME 1973}) In the unit circle shown in the figure, chords $PQ$ and $MN$ are parallel to the unit radius $OR$ of the circle with center at $O$. Chords $MP$, $PQ$, and $NR$ are each $s$ units long and chord $MN$ is $d$ units long. 
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AHSME_I_1973_35_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ Of the three equations
+
+
+ 
+ \[\textbf{I.}\ d-s=1, \qquad \textbf{II.}\ ds=1, \qquad \textbf{III.}\ d^2-s^2=\sqrt{5}\]
+
+
+ those which are necessarily true are
+
+
+ $\textbf{(A)}\ \textbf{I}\ \text{only} \qquad\textbf{(B)}\ \textbf{II}\ \text{only} \qquad\textbf{(C)}\ \textbf{III}\ \text{only} \qquad\textbf{(D)}\ \textbf{I}\ \text{and}\ \textbf{II}\ \text{only} \qquad\textbf{(E)}\ \textbf{I, II}\ \text{and} \textbf{ III}$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_35_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ First, let $S$ be on circle $O$ so $RS$ is a diameter.  In order to prove that the three statements are true (or false), we first show that $SM = QN = s,$ and then we examine each statement one by one.
+
+ 
+\textbf{Lemma 1: $SM = QN = s$}
+Since $OM = ON,$ by the Base Angle Theorem, $\angle OMN = \angle ONM.$  By the Alternate Interior Angles Theorem, $\angle MOS = \angle NMO = \angle MNO = \angle NOR,$ making $\triangle MOS \cong NOR$ by SAS Congruency.  That means $SM = NR = s$ by CPCTC.
+
+ 
+Because $PQNM$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Cyclic\_quadrilateral}{cyclic quadrilateral}, $\angle MPQ + \angle QNM = 180^\circ$, but we are given that $PQ$ is parallel to $MN$, so $\angle MPQ + \angle PMN = 180^\circ$. Therefore, $\angle PMN = \angle QNM.$  That makes $PQNM$ an \href{https://artofproblemsolving.com/wiki/index.php?title=Isosceles\_trapezoid}{isosceles trapezoid}, so $MP = QN = s.$
+
+ 
+\textbf{Lemma 2: Showing Statement I is (or isn’t) true}
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_35_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Let $X$ be the intersection of $MN$ and $PR.$  By SSS Congruency, $\triangle POQ \cong \triangle QON \cong \triangle NOR,$ so $\angle PQN = \angle QNR.$  We know that $PQNR$ is a cyclic quadrilateral, so $\angle PQN + \angle PRN = \angle QNR + \angle PRN = 180^\circ,$ so $QN \parallel PR.$  That makes $PQNX$ a \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelogram}, so $XN = s.$  Thus, $MX = d-s.$
+
+ 
+In addition, $PX = s,$ and by the Base Anlge Theorem and \href{https://artofproblemsolving.com/wiki/index.php?title=Vertical\_Angle\_Theorem}{Vertical Angle Theorem}, $\angle PMX = \angle MXP = \angle NXR = \angle NRX.$  That means by AAS Congruency, $\triangle MXP = \triangle RXN,$ so $MX = XR = d-s$.
+
+ 
+By the Base Angle Theorem and the Alternating Interior Angle Theorem, $\angle XRM = \angle XMR = \angle MRO = \angle RMO,$ so by ASA Congruency, $\angle MXR = \angle MOR.$  Thus, $MX = OR = d-s = 1.$  Statement I is true.
+
+ 
+\textbf{Lemma 3: Showing Statement II is (or isn’t) true}
+
+
+ 
+                    \begin{figure}[H]
+                        centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AHSME_I_1973_35_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ From Lemma 2, we have $PX + XR = s + (d-s) = d$.  Draw point $Y$ on $SR$ such that $YR = d,$ making $YO = s.$
+
+ 
+Since $PQ \parallel YO,$ we have $\angle QPO = \angle POY.$  Additionally, $PQ = YO$ and $PO = PO,$ so by SAS Congruency, $\triangle PQY \cong \triangle OYQ.$  That means $PY = OQ = 1.$
+
+ 
+Since $\angle PRS$ is an inscribed angle, $\angle POS = 2 \cdot \angle PRS.$  Additionally, $\triangle SOM \cong \triangle MOP$, so $MO$ bisects $\angle SOP.$  Thus, $\angle SOM = \angle PRS,$ making $\triangle PRY \sim \triangle MOS$ by SAS Similarity.
+
+ 
+By using the similarity, we find that
+ \begin{align*} \frac{1}{s} &= \frac{d}{1} \\ ds &= 1 \end{align*}
+Thus, Statement II is true.
+
+ 
+\textbf{Lemma 4: Showing Statement III is (or isn’t) true}
+From Lemmas 2 and 3, we have $d-s = 1$ and $ds = 1$.  Squaring the first equation results in
+ \[d^2 - 2ds + s^2 = 1.\]Adding $4ds = 4$ to both sides results in
+ \begin{align*} d^2 + 2ds + s^2 &= 5 \\ (d+s)^2 &= 5 \end{align*}
+Since $d+s$ is positive, we find that $d+s = \sqrt{5},$ which confirms that Statement III is true.
+
+ 
+In summary, all three statements are true, so the answer is $\boxed{\textbf{(E)}}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+It is a well-known fact that any cyclic trapezoid has its legs equal. Therefore, $QN = s$. Now, extend $OR$ to meet the circle again at $T$. By similar reasoning, $MT = s$. Furthermore, since $\angle MOT, \angle POM, \angle POQ, \angle QON,$ and $\angle NOR$ sum to $180$ and are equal, they have measure $36$ degrees. It trivially follows that $2 \sin 18 = s \Longleftrightarrow s= 2\left(\frac{-1+\sqrt{5}}{4} \right)$. Dropping the altitude from $O$ to $MN$, we see that $d = 2\sin 54 \Longleftrightarrow d = 2\left(\frac{1+\sqrt{5}}{4} \right)$. Therefore, $d-s=1$, $ds=1$, and $d^2-s^2 = \sqrt{5}$.
+
+ 
+
+
+\end{enumerate}
