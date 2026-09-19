@@ -79,7 +79,6 @@ def get_problems_from_source(s,vers,numprob,msg = True) :
                 for child2 in child.children :
                     if re.search(r'>\s*Solution\s*<', str(child2)) :
                         child2.decompose()
-
             else :
                 break
 

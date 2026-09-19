@@ -114,11 +114,14 @@ def get_contest_metadata_from_link(contest,elem) :
     title = elem.get('title')
     year = re.search(PATTERN_TITLE[contest],title).group(1)
 
-    temp = re.search(PATTERN_VERSION[contest],link)
     if contest == 'AIME' :
+        temp = re.search(PATTERN_VERSION[contest],link)
         vers = temp.group(1) if (temp and temp.group(1)) else 'I'
     elif contest == 'AMC_8' :
+        temp = re.search(PATTERN_VERSION[contest],link)
         vers = temp.group(1).split('_')[0]
+    else :
+        vers = 'I'
 
     for attempt in range(1,4) :
         browser = webdriver.Chrome(options=options)
@@ -140,12 +143,12 @@ def get_contest_metadata_from_link(contest,elem) :
                         )
                     selector = '#mw-content-text > div > table > tbody > tr:nth-child(3) > td'
                 html_source = browser.page_source
-            elif contest == 'AMC_8' :
+            else :
                 wait.until(
                         EC.visibility_of_element_located((By.ID,'mw-content-text'))
                         )
                 html_source = browser.page_source
-                selector = "#mw-content-text > div > ul > li:nth-child(2) > ul"
+                selector = "#mw-content-text > div > ul"
             soup = BeautifulSoup(html_source,'html.parser')
             element = soup.select_one(selector)
 
@@ -155,13 +158,14 @@ def get_contest_metadata_from_link(contest,elem) :
                     problems_num = len(element.find_all(condition)) if element != None else 0
                 else :
                     problems_num = len(element.find_all('a')) if element != None else 0
-            elif contest == 'AMC_8' :
-                problems_num = len([child for child in element.children if isinstance(child,Tag)]) if element != None else 0
+            else :
+                condition = lambda tag : tag.name == 'a' and re.search(r'Problem\s+',tag.text)
+                problems_num = len(element.find_all(condition)) if element != None else 0
 
             if problems_num > 0 :
                 break
             else :
-                print_message(f"Retrieving Failed: content selector not found, retrying...({attempt})",'\r')
+                print_message(f"Retrieving {elem} Failed: content selector not found, retrying...({attempt})",'\r')
         except Exception as e :
             print_message(f"Error occured, retrying...({attempt})",'\r')
         finally:
