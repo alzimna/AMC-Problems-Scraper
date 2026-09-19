@@ -29,6 +29,10 @@ def decode_par(statement) :
         for item in soup.find_all(c) :
             item.append("\n\n ")
             item.unwrap()
+
+    for item in soup.find_all(re.compile(r"^h\d+")) :
+        if "day" in item.text.lower() :
+            item.decompose()
     return str(soup)
 
 ACT_PROB = {
@@ -232,6 +236,8 @@ def decode_list(statement) :
 
 
 def cleaning_tex(statement):
+    pattern = r"\\cent(?!ering)"
+    statement = re.sub(pattern, "cent", statement)
     return (
         statement
         .replace(r'\rm', r'\textrm')
@@ -243,6 +249,10 @@ def cleaning_tex(statement):
         .replace('\\end{align*}','\\end{align*}\n')
         .replace('（','(')
         .replace('）',')')
+        .replace('\u2264', r'$\leq$')
+        .replace('\u2265', r'$\geq$')
+        .replace('\u03d5', r'$\phi$')
+        .replace('\u2211', r'$\sum$')
         .replace('\u200b', '')
         .replace('\u202f', ' ')
         .replace('\uff1f', '?')
@@ -257,7 +267,7 @@ def cleaning_tex(statement):
         .replace('\u2713', '(True)')
         .replace('\u2212', '-')
         .replace('\u301c', r'$\sim$')
-        .replace(r'\cent', 'cent')
+        .replace('\ufffd', '')
         .replace('…', r'\ldots')
         .replace(r'\usepackage{gensymb}', '')
         .replace(r'\begin{array}{lc}\text{Least number}',r'\begin{array}{lccccc}\text{Least number}')

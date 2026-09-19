@@ -10,7 +10,12 @@ def build_full(contest = 'AIME') :
     PROBLEM_PATH = OUTPUT_DIR / contest / PROBLEMS_FULL
     ANSWER_PATH = OUTPUT_DIR / contest / ANSWERS_FULL
     SOLUTION_PATH = OUTPUT_DIR / contest / SOLUTIONS_FULL
-    output = [ANSWER_PATH, SOLUTION_PATH]
+
+    if contest not in ["USAMO","USAJMO"] :
+        output = [ANSWER_PATH, SOLUTION_PATH]
+    else :
+        output = [SOLUTION_PATH]
+
     with open(PROBLEM_PATH,'r',encoding='utf-8') as f :
         data = json.load(f)
         df_full = pd.DataFrame(data).drop(columns=['source'])
@@ -110,11 +115,15 @@ def build_tex(type,contest,year,version,output) :
         )
         for i in range(len(df)) :
             item = df.loc[i,'problem_statement_tex']
-            ans =  df.loc[i,'answer']
             sols = df.loc[i,'solutions_statement_tex']
 
+            if contest not in ['USAMO','USAJMO'] :
+                ans = + "\n" + r" \textbf{Answer: }"+ df.loc[i,'answer']
+            else :
+                ans = ""
+
             if type == 'withsolution' :
-                item = r'\item '+ item + "\n"+r" \textbf{Answer: }"+ans+"\n\n"+sols+"\n"
+                item = r'\item '+ item+ans+"\n\n"+sols+"\n"
             elif type == 'nosol' :
                 item = r'\item '+ item + "\n\n"
             else :

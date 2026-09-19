@@ -44,6 +44,7 @@ def get_first_soup(contest = 'AIME') :
 
 def get_soup(source,
             type,
+            numprob = 15,
             msg = True,
             max_retries = 5,
             contest = 'AIME') :
@@ -69,7 +70,7 @@ def get_soup(source,
     if type == 'a' :
         selector = [(By.TAG_NAME, 'ol'),1]
     elif type == 'p' :
-        selector = [(By.CLASS_NAME, 'mw-headline'),15]
+        selector = [(By.CLASS_NAME, 'mw-headline'),numprob]
     else :
         selector = [(By.CLASS_NAME,'wikitable'),1]
 

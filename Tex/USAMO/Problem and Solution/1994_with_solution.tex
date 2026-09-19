@@ -1,0 +1,262 @@
+\section{USAMO 1994}
+        \begin{enumerate}
+        	\item (\textit{USAMO 1994}) Let $\, k_1 < k_2 < k_3 < \cdots \,$ be positive integers, no two consecutive, and let $\, s_m = k_1 + k_2 + \cdots + k_m \,$ for $\, m = 1,2,3, \ldots \; \;$.  Prove that, for each positive integer $\, n, \,$ the interval $\, [s_n, s_{n + 1}) \,$ contains at least one perfect square.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We want to show that the distance between $s_n$ and $s_{n+1}$ is greater than the distance between $s_n$ and the next perfect square following $s_n$.
+
+ Given $s_n=\sum_{i=1}^{n}k_i$, where no $k_i$ are consecutive, we can put a lower bound on $k_n$. This occurs when all $k_{i+1}=k_i+2$:
+
+ 
+ \begin{align*} s_n&=(k_{n,min})+(k_{n,min}-2)+(k_{n,min}-4)+\dots+(k_{n,min}-2n+2)\\ &=nk_{n,min}-\sum_{i=1}^{n-1}2i\\ &=nk_{n,min}-2\sum_{i=1}^{n}i+2n\\ &=nk_{n,min}-n(n+1)+2n\\ &=nk_{n,min}-n^2+n\\ \end{align*}
+
+
+ Rearranging, $k_{n,min}=\frac{s_n}{n}+n-1$. So, $k_n\geq\frac{s_n}{n}+n-1$, and the distance between $s_n$ and $s_{n+1}$ is $k_{n+1}\geq k_n+2\geq\frac{s_n}{n}+n+1$.
+
+ Also, let $d(s_n)$ be the distance between $s_n$ and the next perfect square following $s_n$. Let's look at the function $d(x)$ for all positive integers $x$.
+
+ When $x$ is a perfect square, it is easy to see that $d(x)=2\sqrt{x}+1$.Proof: Choose $x=m^2$. $d(m^2)=(m+1)^2-m^2=2m+1=2\sqrt{m^2}+1$.
+
+ When $x$ is not a perfect square, $d(x)<2\sqrt{x}+1$.Proof: Choose $x=m^2+p$ with $0<p<2m+1$. $d(m^2+p)=(m+1)^2-m^2-p=2m+1-p<2m+1=2\sqrt{m^2}+1<2\sqrt{m^2+p}+1$.
+
+ So, $d(x)\leq 2\sqrt{x}+1$ for all $x$ and $d(s_n)\leq 2\sqrt{s_n}+1$ for all $s_n$.
+
+ Now, it suffices to show that $k_{n+1}\geq d(s_n)$ for all $n$.
+
+ 
+ \begin{align*} k_{n+1}-d(s_n)&\geq \frac{s_n}{n}+n+1-2\sqrt{s_n}-1\\ &=\frac{1}{n}(s_n+n^2-2n\sqrt{s_n})\\ &=\frac{s_n^2+n^4+2n^2s_n-4n^2s_n}{n(s_n+n^2+2n\sqrt{s_n})}\\ &=\frac{(s_n-n^2)^2}{n(s_n+n^2+2n\sqrt{s_n})}\\ &\geq 0 \end{align*}
+
+
+ So, $k_{n+1}\geq d(s_n)$ and all intervals between $s_n$ and $s_{n+1}$ will contain at least one perfect square.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We see that by increasing $n$ by some amount, we simply shift our interval by a finite amount. It suffices to consider the case $n=1$ (since this can be inducted across all positive integers). Let $k_1=x$. We want the smallest interval, so we have $[x, 2x+2]$. Simple induction reveals that the ration of consecutive squares grows slower than our linear bound. We now consider sufficiently small $x$ (where $\frac{(n+1)^2}{n^2}<2$). This first happens at $n=3$. By simple casework, our answer is as desired $\blacksquare$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We will first prove by Induction on $n\in\mathbb{N}$ that $(k_{n}+1)^2\geq4(k_1+k_2+\cdots +k_{n}).$ Denote this statement by $P(n).$
+
+ For the Base Case let $n=1,$ we know that;
+ \[(k_1-1)^2\geq 0\]
+ \[\Rightarrow k_1^2-2k_1+1\geq 0\]
+ \[\Rightarrow k_1^2+2k_1+1\geq 4k_1\]
+ \[\Rightarrow (k_1+1)^2\geq 4k_1.\]
+
+ Hence, the Base Case holds.
+
+ For the Inductive Step, suppose that $P(m)$ holds for some $k\in\mathbb{N},$ we will prove that $P(m+1)$ holds as well.
+
+ Assume for contradiction that $P(m+1)$ doesn't hold, then we know that;
+ \[(k_m+1)^2<4(k_1+k_2+\cdots +k_m)\]
+ \[\Rightarrow k_m^2+2k_m+1<4(k_1+k_2+\cdots +k_{m-1})+4k_m\]
+ \[\Rightarrow k_m^2-2k_m+1<4(k_1+k_2+\cdots +k_{m-1})\]
+ \[\Rightarrow (k_m-1)^2<4(k_1+k_2+\cdots +k_{m-1}).\]
+
+ We know that since $k_m$ and $k_{m-1}$ are not consecutive, we have;
+ \[k_{m-1}\geq k_m-2\]
+ \[\Rightarrow k_{m-1}+1\leq k_m-1\]
+ \[\Rightarrow (k_{m-1}+1)^2\leq (k_m-1)^2\]
+ \[\Rightarrow (k_{m-1}+1)^2\leq (k_m-1)^2<4(k_1+k_2+\cdots +k_{m-1}).\]
+
+ But this contradicts the Inductive Hypothesis that 
+ \[\Rightarrow (k_{m-1}+1)^2\geq 4(k_1+k_2+\cdots +k_{m-1}),\] thus our assumption was false and the Inductive Step is complete.
+
+ Hence, we have proved that $P(n)$ holds, and we will use $P(n)$ to solve the original problem.
+
+ 
+Now suppose that for some positive integer $n$, the interval $\, [s_n, s_{n+1})\,$ does not contain any perfect square, then we know that there must exist two perfect squares of consecutive integers, such that the smaller one is lesser than $s_n$ and the larger one greater than or equal to $s_{n+1}.$
+
+ We thus know that there exists some $x\in\mathbb{N}$ such that;
+ \begin{eqnarray} x^2<s_n \\ \text{and }(x+1)^2\geq s_{n+1} \end{eqnarray}
+
+ By Inequality 1;
+ \begin{align*} x &<\sqrt{s_n}\\ &=\sqrt{k_1+k_2+\cdots+k_n}.\\ \end{align*}
+
+
+ 
+Hence, we know that;
+ \begin{align*} (x+1)^2 &<(\sqrt{k_1+k_2+\cdots+k_n}+1)^2\\ &=k_1+k_2+\cdots+k_n+2\sqrt{k_1+k_2+\cdots+k_n}+1. \end{align*}
+
+
+ Combining this with Inequality 2 gives;
+ \[s_{n+1}\leq (x+1)^2<k_1+k_2+\cdots+k_n+2\sqrt{k_1+k_2+\cdots+k_n}+1\]
+ \[\Rightarrow k_1+k_2+\cdots+k_n+k_{n+1}<k_1+k_2+\cdots+k_n+2\sqrt{k_1+k_2+\cdots+k_n}+1\]
+ \[\Rightarrow k_{n+1}<2\sqrt{k_1+k_2+\cdots+k_n}+1\]
+ \[\Rightarrow k_{n+1}-1<2\sqrt{k_1+k_2+\cdots+k_n}.\]
+
+ 
+We know that since $k_{n+1}$ are not consecutive, $k_n+1\leq k_{n+1}-1,$ hence, we have;
+ \[k_{n+1}\leq k_{n+1}-1<2\sqrt{k_1+k_2+\cdots+k_n}\]
+ \[k_{n+1}<2\sqrt{k_1+k_2+\cdots+k_n}\]
+ \[(k_{n+1}^2<4(k_1+k_2+\cdots+k_n).\]
+
+ 
+But this contradicts the statement $P(n)$ which was proved earlier.$\square$
+
+ 
+
+
+	\item (\textit{USAMO 1994}) The sides of a 99-gon are initially colored so that consecutive sides are red, blue, red, blue, ...  red, blue, yellow. We make a sequence of modifications in the coloring, changing the color of one side at a time to one of the three given colors (red, blue, yellow), under the constraint that no two adjacent sides may be the same color. By making a sequence of such modifications, is it possible to arrive at the coloring in which consecutive sides 
+are red, blue, red, blue, red, blue, ...  red, yellow, blue?
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We proceed by representing the colors as numbers, i.e. Red = 0, Blue = 1, Yellow = 2. Thus, we start with some sequence 0101...012 and are trying to end up with the sequence 1010...0102. Generate a second sequence of terms by subtracting each term by the following term and taking it modulus 3, i.e. (1-0, 0-1, 1-0, 0-1, ... 0-1, 1-0, 0-2, 2-1) = 1212...2111 is the sequence generated using the start sequence. The sequence generated using the end sequence is (0-1, 1-0, 0-1, 1-0, ... 1-0, 0-1, 1-2, 2-0) = 2121...2122. Observe that the sum of terms generated by the start sequence is different from the sum of terms generated by the end sequence.
+
+ We must now prove that changing the color of a side does not change the sum of the generated sequence. We do this by noting that we can only change the color of a side if its adjacent sides have the same color as each other. Thus, changing a side does not change the sum of terms in the generated sequence, as the term generated by the changing side and the side to its left is simply the "negative" of the term generated by the changing side and the side to its right (i.e. 212 to 202 changes 12 to 21).
+
+ Since it is impossible to change the sum of terms in the generated sequence, and the sequences generated by the start and end sequences have two different sums, it is impossible to perform a series of such modifications that change the start sequence to the end sequence.
+
+ 
+
+
+	\item (\textit{USAMO 1994}) A convex hexagon $ABCDEF$ is inscribed in a circle such that $AB = CD = EF$ and diagonals $AD$, $BE$, and $CF$ are concurrent. Let $P$ be the intersection of $AD$ and $CE$. Prove that $CP/PE = (AC/CE)^2$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let the diagonals $AD$, $BE$, $CF$ meet at $Q$.
+
+ First, let's show that the triangles $\triangle AEC$ and $\triangle QED$ are similar.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1994_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+ $\angle ACE=\angle ADE$ because $A$,$C$,$D$ and $E$ all lie on the circle, and $\angle ADE=\angle QDE$. $\angle AEB=\angle CED$ because $AB=CD$, and $A$,$B$,$C$,$D$ and $E$ all lie on the circle. Then,
+
+ $\angle AEB=\angle CED \rightarrow \angle AEB+\angle BEC=\angle CED+\angle BEC \rightarrow \angle AEC=\angle QED$
+
+ Therefore, $\triangle AEC$ and $\triangle QED$ are similar, so $AC/CE=QD/DE$.
+
+ Next, let's show that $\triangle AEC$ and $\triangle CDQ$ are similar.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1994_3_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ 
+
+ $\angle AEC=\angle ADC$ because $A$,$C$,$D$ and $E$ all lie on the circle, and $\angle ADC=\angle CDQ$. $\angle EAD=\angle ECD$ because $A$,$C$,$D$ and $E$ all lie on the circle. $\angle DAC=\angle ECF$ because $CD=EF$, and $A$,$C$,$D$,$E$ and $F$ all lie on the circle. Then,
+
+ $\angle EAC=\angle EAD+\angle DAC=\angle ECD+\angle ECF=\angle DCQ$
+
+ Therefore, $\triangle AEC$ and $\triangle CDQ$ are similar, so $AC/CE=CQ/QD$.
+
+ Lastly, let's show that $\triangle CPQ$ and $\triangle EPD$ are similar.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1994_3_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ 
+
+ Because $CD=EF$ and $C$,$D$,$E$ and $F$ all lie on the circle, $CF$ is parallel to $DE$. So, $\triangle CPQ$ and $\triangle EPD$ are similar, and $CQ/DE=CP/PE$.
+
+ Putting it all together, $\frac{CP}{PE}=\frac{CQ}{DE}=\frac{AC}{CE}\cdot \frac{QD}{DE}=(\frac{AC}{CE})^2$.
+
+ Borrowed from \href{https://mks.mff.cuni.cz/kalva/usa/usoln/usol943.html}{https://mks.mff.cuni.cz/kalva/usa/usoln/usol943.html}
+
+ 
+
+
+	\item (\textit{USAMO 1994}) Let $\, a_1, a_2, a_3, \ldots \,$ be a sequence of positive real numbers satisfying $\, \sum_{j = 1}^n a_j \geq \sqrt {n} \,$ for all $\, n \geq 1$. Prove that, for all $\, n \geq 1, \,$
+
+
+ 
+ \[\sum_{j = 1}^n a_j^2 > \frac {1}{4} \left( 1 + \frac {1}{2} + \cdots + \frac {1}{n} \right).\]
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Note that if we try to minimize $(a_j)^2$, we would try to make the $a_j$ as equal as possible. However, by the condition given in the problem, this isn't possible, the $a_j$'s have to be an increasing sequence. Thinking of minimizing sequences, we realize that the optimal equation is $a_n = \sqrt{n} - \sqrt{n-1} = 1/(\sqrt{n} + \sqrt{n-1})$. Note that this is strictly greater than $1/(2\sqrt{n})$. So it is greater than the sum of $(1/\sqrt{4n})^2$ over all n from 1 to $\infty$. So the sum we are looking to minimize is strictly greater than the sum of $1/4n$ over all $n$ from 1 to $\infty$, which is what we wanted to do.
+
+ ——Dear the critical link here is missing: to prove that the optimal equation is a(n)=√n-√(n-1). It is therefore incomplete.~T
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Consider a sequence $b_n = \sqrt{n} - \sqrt{n-1}$. 
+
+ \textbf{Lemma: $b_n$ minimizes $\sum_{k=1}^n a_k^2$ over the term $S_k=a_1+\cdots+a_k\ge \sqrt{k}$}.
+
+ \textbf{Proof of the Lemma:}
+
+ Note $b_k=\sqrt{k}-\sqrt{k-1}$. We show that if $S_k\ge\sqrt{k}$, then $\sum a_k^2\ge\sum b_k^2$. Define $c_k=S_k-\sqrt{k}\ge0$ the extra amount over equality. Then $a_k-b_k=(S_k-S_{k-1})-(\sqrt{k}-\sqrt{k-1}) =c_k-c_{k-1}$. Hence in other words, $a_k$ is just the equality sequence $b_k$ plus $c_k$. Now, $\sum a_k^2=\sum(b_k+c_k-c_{k-1})^2 = \sum b_k^2 + \sum(c_k-c_{k-1})^2+2\sum b_k(c_k-c_{k-1})$. Now we must show that $\sum(c_k-c_{k-1})^2+2\sum b_k(c_k-c_{k-1}) \geq 0$. The first term is trivial. The second one, rewrite as $b_nc_n+\sum_{k=1}^{n-1}(b_k-b_{k+1})c_k$ in which $c_k \geq 0, b_n \geq 0,$ and $b_k \geq b_{k+1}$, as it is concave. Hence, each term, when summed, yields $\geq 0$. Hence we are done. $\blacksquare$
+
+ \textbf{USAMO 1994/4:}
+
+ Consider $a_j$. Notice that $\sqrt j-\sqrt{j-1}=\frac{j-(j-1)}{\sqrt j+\sqrt{j-1}}=\frac1{\sqrt j+\sqrt{j-1}}$. Squaring, $(\sqrt j-\sqrt{j-1})^2=\frac1{(\sqrt j+\sqrt{j-1})^2}$. Also, $\sqrt j+\sqrt{j-1}<2\sqrt j$ is trivial by $\sqrt{j-1}<\sqrt j$ hence $(\sqrt j+\sqrt{j-1})^2<4j$. Also, $(\sqrt j-\sqrt{j-1})^2=\frac1{(\sqrt j+\sqrt{j-1})^2}$ and thus $\frac1{(\sqrt j+\sqrt{j-1})^2}>\frac1{4j}$. Therefore, $(\sqrt j-\sqrt{j-1})^2>\frac1{4j}$. Taking the sum 1 through $n$ gives the desired result. $\square$
+
+ 
+
+
+	\item (\textit{USAMO 1994}) Let $\, |U|, \, \sigma(U) \,$ and $\, \pi(U) \,$ denote the number of elements, the sum, and the product, respectively, of a finite set $\, U \,$ of positive integers.  (If $\, U \,$ is the empty set, $\, |U| = 0, \, \sigma(U) = 0, \, \pi(U) = 1$.) Let $\, S \,$ be a finite set of positive integers. As usual, let $\, \binom{n}{k} \,$ denote $\, n! \over k! \, (n-k)!$. Prove that 
+ \[\sum_{U \subseteq S} (-1)^{|U|} \binom{m - \sigma(U)}{|S|} = \pi(S)\] for all integers $\, m \geq \sigma(S)$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let, for $|S|\geq k \geq 1$, $A_k$ be a collection of sets such that $\left|\bigcap_{k \in U}A_k\right| = \binom{m- \sigma(U)}{|S|}$. We'll try to find such a collection to prove $\left|\bigcup_{k \in U}A_k\right| = \binom{m}{|S|}-\pi(S)$, since we can use PIE to show that $\left|\bigcup_{k \in U}A_k\right| = \sum_{\emptyset \neq U \subseteq S} (-1)^{|U|+1}\left|\bigcap_{k \in U}A_k\right|$.
+
+ Let $Z$ be the set of binary sequences with size $m$, which we'll divide into blocks, in particular, with $S=\{x_1, x_2, ..., x_n\}$, the first block has size $x_1$, the next has size $x_2$ and so on, until we reach $\sigma(S)$, the last few we shall consider as an extra block with size $m-\sigma(S)=R$. 
+
+ Now we perceive that the $\sigma(U)$ function has the property, that, for $U \subseteq S$, $\sigma(S)-\sigma(U)= \sigma(S\setminus U)$, so, $m- \sigma(U)= \sigma(S\setminus U)+R$.
+
+ Let $A_k$ be the number of binary sequences with exactly $|S|$ times $1$, but no appearances of $1$ in the $k$-th block. It is easy to see that $\bigcap_{k \in U}A_k$ is all of the binary sequences with exactly $|S|$ times $1$, but no appearances of $1$ in any of the $k$-th blocks, for $k \in U$. So, we can simply eliminate those blocks, with is equivalent to eliminating $U$ from $S$ , so we are left with $\sigma(S\setminus U)+R$ places to put the $1$'s $|S|$ times. This is $\binom{\sigma(S\setminus U)+R}{|S|}$, and we saw that is is equal to $\binom{m- \sigma(U)}{|S|}$. So, we've found a collection that fits the description.
+
+ The number of ways to pick $1$'s $|S|$ times from $m$ places is $\binom{m}{|S|}$. But we don't want for the $1$'s to fill every block, since this is not in the union. We have $\pi(S)$ ways to put the $1$'s $|S|$ times, where each $1$ is in exacty one block ($x_1$ places $\times$ $x_2$ places and so on). So, we find that $| \bigcup_{k \in U}A_k | = \binom{m}{|S|}-\pi(S)$. Which implies, by the Principle of Inclusion Exclusion, $\binom{m}{|S|}-\pi(S) = \sum_{\emptyset \neq U \subseteq S} (-1)^{|U|+1}\binom{m- \sigma(U)}{|S|} \iff \pi(S) = \sum_{U \subseteq S} (-1)^{|U|}\binom{m- \sigma(U)}{|S|}$
+
+ 
+
+
+\end{enumerate}

@@ -1,0 +1,222 @@
+\section{USAMO 1997}
+        \begin{enumerate}
+        	\item (\textit{USAMO 1997}) Let $p_1,p_2,p_3,...$ be the prime numbers listed in increasing order, and let $x_0$ be a real number between $0$ and $1$. For positive integer $k$, define
+
+
+ $x_{k}=\begin{cases}0&\text{ if }x_{k-1}=0\\ \left\{\frac{p_{k}}{x_{k-1}}\right\}&\text{ if }x_{k-1}\ne0\end{cases}$
+
+
+ where $\{x\}$ denotes the fractional part of $x$. (The fractional part of $x$ is given by $x-\lfloor{x}\rfloor$ where $\lfloor{x}\rfloor$ is the greatest integer less than or equal to $x$.) Find, with proof, all $x_0$ satisfying $0<x_0<1$ for which the sequence $x_0,x_1,x_2,...$ eventually becomes $0$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+All rational numbers between 0 and 1 inclusive will eventually yield some $x_k = 0$. To begin, note that by definition, all rational numbers can be written as a quotient of coprime integers. Let $x_0 = \frac{m}{n}$, where $m,n$ are coprime positive integers. Since $0<x_0<1$, $0<m<n$. Now 
+ \[x_1 = \left\{\frac{p_1}{\frac{m}{n}}\right\}=\left\{\frac{np_1}{m}\right\}.\] From this, we can see that applying the iterative process will decrease the value of the denominator, since $m<n$. Moreover, the numerator is always smaller than the denominator, thanks to the fractional part operator. So we have a strictly decreasing denominator that bounds the numerator. Thus, the numerator will eventually become 0.
+
+ On the other hand, if $x_0$ is irrational, then a simple induction will show that $x_k$ will always be irrational. Indeed, the base case has been established, and, if $x_k$ is irrational, then $\dfrac{p_{k+1}}{x_k}$ must be too, and likewise for its fractional portion, which differs from it by an integer. Hence $x_{k+1}$ is irrational, completing the proof.
+
+ 
+
+
+	\item (\textit{USAMO 1997}) Let $ABC$ be a triangle, and draw isosceles triangles $BCD, CAE, ABF$ externally to $ABC$, with $BC, CA, AB$ as their respective bases. Prove that the lines through $A,B,C$ perpendicular to the lines $\overleftrightarrow{EF},\overleftrightarrow{FD},\overleftrightarrow{DE}$, respectively, are concurrent.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let the perpendicular from A meet FE at A'. Define B' and C' similiarly. By \href{https://artofproblemsolving.com/wiki/index.php?title=Carnot\%27s\_Theorem}{Carnot's Theorem}, The three lines are \href{https://artofproblemsolving.com/wiki/index.php?title=Concurrent}{concurrent} if
+
+ $FA'^2-EA'^2+EC'^2-DC'^2+DB'^2-FB'^2 = AF^2-AE^2+CE^2-CD^2+BD^2-BF^2 = 0$
+
+ But this is clearly true, since D lies on the perpendicular bisector of BC, BD = DC.
+
+ QED
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We split this into two cases:
+
+ Case 1: $D,E,F$ are non-collinear
+
+ Observe that since $D,E,F$ lie on perpendicular bisectors, then we get that $DC=DB$, $EC=EA$, and $FA=FB$. This motivates us to construct a circle $\omega_1$ centered at $D$ with radius $DC$, and similarly construct $\omega_2$ and $\omega_3$ respectively for $E$ and $F$. 
+
+ Now, clearly $\omega_1$ and $\omega_2$ intersect at $C$ and some other point. Now, we know that $DE$ is the line containing the two centers. So, the line perpendicular to $DE$ and passing through $C$ must be the radical axis of $\omega_1$ and $\omega_2$, which is exactly the line that the problem describes! We do this similarly for the others pairs of circles.
+
+ Now by the radical lemma, the pairwise radical axes of $\omega_1,\omega_2,\omega_3$ are concurrent, as desired, and they intersect at the radical center.
+
+ Case 2: $D,E,F$ are collinear
+
+ Now, we are drawing perpendicular lines from $A$, $B$, and $C$ onto the single line $DEF$. Clearly, these lines are parallel and concur at the point of infinity.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Notice that $DEF$ and $ABC$ are orthologic, so the perpendiculars concur at the opposite center of orthology.
+
+ 
+
+
+	\item (\textit{USAMO 1997}) Prove that for any integer $n$, there exists a unique polynomial $Q$ with coefficients in $\{0,1,...,9\}$ such that $Q(-2)=Q(-5)=n$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+The problem implies that $Q(x) = (x+2)(x+5) \cdot H_y(x) + n$. We define $H_y(x) = a_0 + a_1x + ... + a_nx^n$. Then, after expanding, the coefficient of $x^k$ is $10a_k + 7a_{k-1} + a_{k-2}$ where $2 \le k \le n$. The constant term is $10a_0 + n$. Since this has to be within the set ${0,1,...,9}$, $a_0$ must be unique according to $n$. The linear term is determined by $10a_1 + 7a_0$, which also must be within the set ${0,1,...,9}$. Since $a_0$ is determined uniquely by $n$, in order to keep the linear coefficient in the set ${0,1,...,9}$, $a_1$ is also determined uniquely. With $a_0$ and $a_1$ determined uniquely, we move on to the general coefficient. 
+
+ Note that $10a_k + 7a_{k-1} + a_{k-2}$ is in the set ${0,1,...,9}$. We define $J_h(x)$ to be a function determining the remainder when $x$ is divided by $10$. Thus, for all $x$, $0 \le J_h(x) \le 9$. Note also that $J_h(10a_k + 7a_{k-1} + a_{k-2}) = 10a_k + 7a_{k-1} + a_{k-2}$, since $10a_k + 7a_{k-1} + a_{k-2}$ is in the range of $J_h(x)$. Therefore, $J_h(7a_{k-1} + a_{k-2}) = 10a_k + 7a_{k-1} + a_{k-2}$, which results in $a_k = \lfloor \frac{7a_{k-1} + a_{k-2}}{10} \rfloor$ for all $2 \le k \le n$. Thus, $a_k$ is determined uniquely, since all coefficients $a_i$ where $0 \le i < k$ are uniquely determined, which in turn determines a unique polynomial $Q(x)$.
+
+ 
+
+
+	\item (\textit{USAMO 1997}) To \textit{clip} a convex $n$-gon means to choose a pair of consecutive sides $AB, BC$ and to replace them by three segments $AM, MN,$ and $NC,$ where $M$ is the midpoint of $AB$ and $N$ is the midpoint of $BC$. In other words, one cuts off the triangle $MBN$ to obtain a convex $(n+1)$-gon. A regular hexagon $P_6$ of area $1$ is clipped to obtain a heptagon $P_7$. Then $P_7$ is clipped (in one of the seven possible ways) to obtain an octagon $P_8$, and so on. Prove that no matter how the clippings are done, the area of $P_n$ is greater than $\frac{1}{3}$, for all $n\ge6$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1997_4_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ $\textbf{Claim:}$  It is impossible to choose two non-adjacent sides and clip a whole part of it off.
+
+ $\textbf{Proof:}$  If you clip adjacent sides, you can cut off at most up to the blue lines; Clipping more is impossible due to the degrees getting larger and larger and more and more circular.
+
+ Thus, after infinitely many clips, the hexagon bounded by the blue lines is left, so after finitely many clips, the area left is more than that hexagon.
+
+ The side length of that hexagon is $\frac{\sqrt{3}}{3}$ of the large one, because of 30-30-120 triangles. Thus, the area is $\frac13$ of the larger one, so we are done.
+
+ 
+
+
+	\item (\textit{USAMO 1997}) Prove that, for all positive real numbers $a, b, c,$
+
+
+ $\frac{1}{a^3+b^3+abc}+\frac{1}{b^3+c^3+abc}+\frac{1}{a^3+c^3+abc} \le \frac{1}{abc}$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Because the inequality is homogenous (i.e. $(a, b, c)$ can be replaced with $(ka, kb, kc)$ without changing the inequality other than by a factor of $k^n$ for some $n$), without loss of generality, let $abc = 1$.
+
+ Lemma:
+ \[\frac{1}{a^3 + b^3 + 1} \le \frac{c}{a + b + c}.\]Proof: Rearranging gives $(a^3 + b^3) c + c \ge a + b + c$, which is a simple consequence of $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$ and
+ \[(a^2 - ab + b^2)c \ge (2ab - ab)c = abc = 1.\]
+
+ Thus, by $abc = 1$:
+ \[\frac{1}{a^3 + b^3 + abc} + \frac{1}{b^3 + c^3 + abc} + \frac{1}{c^3 + a^3 + abc}\]
+ \[\le \frac{c}{a + b + c} + \frac{a}{a + b + c} + \frac{b}{a + b + c} = 1 = \frac{1}{abc}.\]
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Rearranging the AM-HM inequality, we get $\frac{1}{x}+\frac{1}{y}+\frac{1}{z} \le \frac{9}{x+y+z}$. Letting $x=a^{3}+b^{3}+abc$, $y=b^{3}+c^{3}+abc$, and $z=c^{3}+a^{3}+abc$, we get 
+ \[\frac{1}{a^{3}+b^{3}+abc}+\frac{1}{b^{3}+c^{3}+abc}+\frac{1}{c^{3}+a^{3}+abc} \le \frac{9}{2a^{3}+2b^{3}+2c^{3}+3abc}.\] By AM-GM on $a^{3}$, $b^{3}$, and $c^{3}$, we have 
+ \[a^{3}+b^{3}+c^{3} \ge 3abc \Rightarrow 2a^{3}+2b^{3}+2c^{3}+3abc \ge 9abc \Rightarrow \frac{9}{2a^{3}+2b^{3}+2c^{3}+3abc} \le \frac{1}{abc}.\] So, $\frac{1}{a^{3}+b^{3}+abc}+\frac{1}{b^{3}+c^{3}+abc}+\frac{1}{c^{3}+a^{3}+abc} \le \frac{1}{abc}$.-Tigerzhang
+
+ $\textbf{WARNING:}$
+
+ This solution doesn’t work because $(x+y+z)\left(\frac{1}{x}+\frac{1}{y}+\frac{1}{z}\right)\geq 9$, so $\frac{1}{x}+\frac{1}{y}+\frac{1}{z}\geq \frac{9}{x+y+z}$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+If we multiply each side by $abc$, we get that we must just prove that 
+ \[\frac{abc}{a^3+b^3+abc} + \frac{abc}{b^3+c^3+abc} + \frac{abc}{c^3+a^3+abc} \leq 1\] If we divide our LHS equation, we get that 
+ \[\frac{1}{\frac{a^3+b^3+abc}{abc}} +\frac{1}{\frac{b^3+c^3+abc}{abc}} + \frac{1}{\frac{c^3+a^3+abc}{abc}}\] 
+ \[= \frac{1}{\frac{a^2}{bc} + \frac{b^2}{ac} + 1} +\frac{1}{\frac{b^2}{ac} + \frac{c^2}{ab} + 1}  + \frac{1}{\frac{c^2}{ab} + \frac{a^2}{bc} + 1}\] Make the astute observation that by Titu's Lemma, 
+ \[\frac{a^2}{bc} + \frac{b^2}{ac} \geq \frac{\left(a+b\right)^2}{bc+ ac}\] 
+ \[\sum_{cyc}\frac{\left(a+b\right)^2}{bc+ ac} \leq \sum_{cyc}\frac{a^2}{bc} + \frac{b^2}{ac}\] Therefore: 
+ \[\sum_{cyc} \frac{1}{\frac{\left(a+b\right)^2}{c\left(a+b\right)  }+1} \geq \sum_{cyc} \frac{1}{\frac{a^2}{bc} + \frac{b^2}{ac} + 1}\] If we expand it out, we get that 
+ \[\sum_{cyc} \frac{1}{\frac{\left(a+b\right)^2}{c\left(a+b\right)  }+1}  = \frac{a+b+c}{a+b+c} = 1\] Since our original equation is less than this, we get that 
+ \[\sum_{cyc} \frac{1}{\frac{a^2}{bc} + \frac{b^2}{ac} + 1} \leq 1\] 
+ \[\sum_{cyc} \frac{abc}{a^3+b^3+abc}\leq 1\] 
+ \[\sum_{cyc} \frac{1}{a^3+b^3+abc} \leq \frac{1}{abc}\]
+
+ -KEVIN\_LIU
+
+ 
+
+
+	\item (\textit{USAMO 1997}) Suppose the sequence of nonnegative integers $a_1,a_2,...,a_{1997}$ satisfies 
+
+
+ $a_i+a_j \le a_{i+j} \le a_i+a_j+1$
+
+
+ for all $i, j \ge 1$ with $i+j \le 1997$. Show that there exists a real number $x$ such that $a_n=\lfloor{nx}\rfloor$ (the greatest integer $\le x$) for all $1 \le n \le 1997$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Given nonnegative integers $a_1,a_2,\dots, a_{1997}$ satisfying the given inequalities, let $I_n$ be the set of all $x$ such that $a_n=\lfloor nx\rfloor$. Therefore,
+ \[I_n=\{x\,:\,a_n\le nx<a_n+1\}.\]We can rewrite this as
+ \[I_n=\left[\frac{a_n}{n},\frac{a_n+1}{n}\right).\tag{1}\]So we know that each $I_n$ is an interval. We start by proving that if $n$ and $k$ are positive integers, then $I_n\cap I_{k}\ne \emptyset$. To prove this, we need the following lemma.
+
+ \textbf{Lemma 1:} If $n$ and $k$ are positive integers, then
+ \[na_k< k(a_n+1)\tag{2}\]
+
+ \textbf{Proof:} We prove this by induction. If $k=1$, then we wish to show that $na_1< a_n+1$. By the given lower bound, we know that
+ \[a_n\ge a_{n-1}+a_1\ge (a_{n-2}+a_1)+a_1\ge \cdots \ge na_1.\]Therefore, $na_1\le a_n<a_n+1$, so the hypothesis is true for $k=1$. If $n=1$, then we wish to prove that $a_k < k(a_1+1)$. By the given upper bound, we know that
+ \[a_k\le a_{k-1}+(a_1+1)\le (a_{k-2}+(a_1+1))+(a_1+1)\le\cdots\le ka_1+(k-1).\]Therefore, $a_k<ka_1+k=k(a_1+1)$, so the hypothesis is true for $n=1$.
+
+ Now suppose that (2) holds for all $k,n<j$. If $k=n=j$, then (2) is equivalent to $0<j$, which is obviously true. If $n=j>k$, then by the division algorithm, we can write $n=qk+r$ for nonnegative integers $q$ and $r$ with $0\le r<k$. Thus by applying the lower bound repeatedly (with one of the indices equal to $1$), we find
+ \[k(a_n+1)\ge k(qa_k+a_r+1)=kqa_k+k(a_r+1).\tag{3}\]But then as $k,r<j$, we can apply the inductive hypothesis with $n=r$ and $k=k$ to find $k(a_r+1)> ra_k$. Substituting this into (3), we find
+ \[k(a_n+1)> kqa_k+ra_k=(kq+r)a_k=na_k.\]This proves the hypothesis for $n=j>k$.
+
+ Suppose that $k=j>n$. Then by the division algorithm, we can write $k=qn+r$ for nonnegative integers $q$ and $r$ with $0\le r<n$. Then by applying the upper bound repeatedly (with one of the indices equal to $1$), we find
+ \[na_k\le n(qa_n+a_r+q)=nqa_n+na_r+nq.\tag{4}\]But as $n,r<j$, we can apply the inductive hypothesis with $n=n$ and $k=r$, finding that $na_r< r(a_n+1)$. Subsituting this into (4), we find
+ \[na_k< nqa_n+r(a_n+1)+nq=(nq+r)(a_n+1)=k(a_n+1).\]This proves the hypothesis for $k=j>n$.
+
+ Therefore, if the hypothesis is true for all $k,n<j$, then it must be true for all $k,n\le j$. Hence by induction, it must be true for all positive integers $k$ and $n$. $\hfill\ensuremath{\square}$
+
+ Now suppose for the sake of contradiction that $I_n$ and $I_k$ are disjoint intervals. Without loss of generality, we may assume that $I_n$ precedes $I_k$ on the number line. Hence the upper bound of $I_n$ is less than or equal to the minimum value of $I_k$, or rather
+ \[\frac{a_{n}+1}{n}\le \frac{a_k}{k}.\]This simplifies to $na_k\ge k(a_n+1)$. But this contradicts the statement of Lemma 1. Therefore, $I_k\cap I_n\ne \emptyset$.
+
+ Now we claim that $I_1\cap I_2\cap \cdots \cap I_{1997}\ne \emptyset$. We prove this by induction. By the above, we know that $I_1\cap I_2\ne \emptyset$. Now suppose that $I_1\cap I_2\cap\cdots\cap I_k\ne \emptyset$. The intersection of two overlapping intervals of the form $[a,b)$ and $[c,d)$ is an interval of the form $[e,f)$, where $e=\max\{a,c\}$ and $f=\min\{b,d\}$. Therefore, by induction, we know that if the intersection of $k$ overlapping intervals is nonempty, then it must also be an interval, say
+ \[I_1\cap I_2\cap\cdots\cap I_k=[x_k,y_k).\]If $I_{k+1}$ does not intersect $[x_k,y_k)$, then as an interval, it must appear either completely before $x_k$ or completely after $y_k$.  If $I_{k+1}$ appears completely before $x_k$, then it has a nonempty intersection with each of $I_1, I_2, \dots, I_k$. But we also know that $x_k$ is a lower bound of one of the intervals, hence $I_{k+1}$ cannot intersect that interval, a contradiction. A similar contradiction arises if $I_{k+1}$ appears completely after $y_k$. Therefore,
+ \[I_1\cap I_2\cap\cdots\cap I_{k+1}\ne \emptyset.\]Thus by induction, $I_1\cap I_2\cap\cdots\cap I_{1997}\ne \emptyset$. So let $x\in I_1\cap I_2\cap\cdots\cap I_{1997}$. Then by the definition of $I_n$, we know that $a_n=\lfloor nx\rfloor$ for all $1\le n\le 1997$, and we are done.
+
+ 
+
+
+\end{enumerate}

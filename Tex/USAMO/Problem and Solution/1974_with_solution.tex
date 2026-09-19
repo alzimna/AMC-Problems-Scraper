@@ -1,0 +1,503 @@
+\section{USAMO 1974}
+        \begin{enumerate}
+        	\item (\textit{USAMO 1974}) Let $a$, $b$, and $c$ denote three distinct integers, and let $P$ denote a polynomial having all integral coefficients.  Show that it is impossible that $P(a)=b$, $P(b)=c$, and $P(c)=a$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+It suffices to show that if $a,b,c$ are integers such that $P(a) = b$, $P(b)=c$, and $P(c)= a$, then $a=b=c$.
+
+ We note that
+ \[a-b \mid P(a) - P(b) = b-c \mid P(b)-P(c) = c-a \mid P(c) - P(a) = a-b ,\]so the quanitities $(a-b), (b-c), (c-a)$ must be equal in absolute value.  In fact, two of them, say $(a-b)$ and $(b-c)$, must be equal.  Then
+ \[0 = \lvert (a-b) + (b-c) + (c-a) \rvert = \lvert 2(a-b) + (c-a) \rvert \ge 2 \lvert a-b \rvert - \lvert c-a \rvert = \lvert a-b \rvert ,\]so $a=b= P(a)$, and $c= P(b) = P(a) = b$, so $a$, $b$, and $c$ are equal, as desired.  $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 1b}
+
+Let $k$ be the value $(a-b), (b-c), (c-a)$ are equal to in absolute value. Assume $k$ is nonzero. Then each of $(a-b), (b-c), (c-a)$ is equal to $k$ or $-k$, so 
+ \[0 = (a-b) + (b-c) + (c-a) = mk,\] where $m$ is one of -3, -1, 1, or 3. In particular, neither $m$ nor $k$ is zero, contradiction. Hence, $k = 0$, and $a, b, c$ are equal, yielding a final contradiction of the existence of these variables. $\blacksquare$
+
+ In fact, this approach generalizes readily. Suppose that $n$ is an odd integer, and that there exist $n$ distinct integers $a_1, a_2, ..., a_n$ such that $P(a_i) = a_{i+1}$ and $P(a_n) = 1$, for $1 \le i \le n-1$. Then we have 
+ \[a_1 - a_2 | a_2 - a_3 | ... | a_n - a_1 | a_1 - a_2,\] so the differences are all equal in absolute value and thus equal to $k$ or $-k$ for some integer $k$. Adding the differences (in the order they are written) gives $0 = mk$ for some odd integer $m$, so $m$ is nonzero and hence $k = 0$. Thus, all the $a_i$ are equal, a contradiction of their distinctness, so the sequence $a_i$ cannot exist.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Consider the polynomial $Q(x) = (b-a)P(x) - (c-b)x - b^2 + ac.$ By using the facts that $P(a) = b$ and $P(b) = c$, we find that $Q(a) = Q(b) = 0.$ Thus, the polynomial $Q(x)$ has a and b as roots, and we can write $Q(x) = (x-a)(x-b)R(x)$ for some polynomial $R(x)$. Because $Q(x)$ and $(x-a)(x-b)$ are monic polynomials with integral coefficients, their quotient, $R(x)$, must also have integral coefficients, as can be demonstrated by simulating the long division. Thus, $Q(c)$, and hence $Q(c) - (x-a)(x-b)$, must be divisible by $(c-a)(c-b)$. But if $x=c-a$ and $y=c-b$, then we must have, after rearranging terms and substitution, that $(x-y)^2$ is divisible by $xy$. Equivalently, $S = x^2 + y^2$ is divisible by $xy$ (after canceling the $2xy$ which is clearly divisble by $xy$). Because S must be divisible by both x and y, we quickly deduce that x is divisible by y and y is divisible by x. Thus, x and y are equal in absolute value. A similar statement holds for a cyclic pemutation of the variables, and so x, y, and z are all equal in absolute value. The conclusion follows as in the first solution.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Assume for the sake of contradiction that is possible for unique integers $a,b,c$. Let $P(x)=d_1x^n+d_2x^{n-1}+\cdots+d_n.$ Note that  
+ \[b=P(a)=d_1a^n+d_2a^{n-1}+\cdots+d_n\]
+ \[c=P(b)=d_1b^n+d_2b^{n-1}+\cdots+d_n\]
+ \[a=P(c)=d_1c^n+d_2c^{n-1}+\cdots+d_n\]Subtracting the second from the first, third from second, and first from third gives 
+ \[b-c=P(a)-P(b)=d_1(a^n-b^n)+d_2(a^{n-1}-b^{n-1})+\cdots+ d_{n-1}(a-b)\]
+ \[c-a=P(b)-P(c)=d_1(b^n-c^n)+d_2(b^{n-1}-c^{n-1})+\cdots +d_{n-1}(b-c)\]
+ \[a-b=P(c)-P(a)=d_1(c^n-a^n)+d_2(c^{n-1}-a^{n-1})+\cdots +d_{n-1}(c-a)\] By the RHS, note that $a-b\mid P(a)-P(b)$ so $\lvert{a-b}\rvert\leq\lvert{b-c}\rvert.$  Similarly, $\lvert{b-c}\rvert\leq\lvert{c-a}\rvert$ and $\lvert{c-a}\rvert\leq\lvert{a-b}\rvert.$  Hence, $\lvert{a-b}\rvert\leq\lvert{b-c}\rvert\leq\lvert{c-a}\rvert\leq\lvert{a-b}\rvert$ so $\lvert{a-b}\rvert=\lvert{b-c}\rvert=\lvert{c-a}\rvert.$  Assume WLOG that $a>b>c$ so $a-b=a-c$ and $b-c=c-a.$  From the first equation, we get $b=c$ and substituting this in the second gives $c=a.$  Hence, $a=b=c$, contradicting the uniqueness of $a,b,c.$ $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Assume that $a, b$ and $c$ are distinct integers which satisfy the given conditions. Then we have $P(c) = P(P(b)) = P(P(P(a))) = a$. Similarly $P(P(P(b))) = b$ and $P(P(P(c))) = c$. Since the polynomial has integer coefficients, this implies that the polynomial $P$ is $P(x) = x$. But this is a contradiction since then $P(a) = b$ can only be true if $a = b$ which contradicts the fact that $a, b$ and $c$ are distinct integers. 
+
+ 
+
+
+
+\textbf{Solution 5}
+
+We get that $a-b|b-c, b-c|c-a, c-a|a-b$. Thus, we can say that $(b-c) = (a-b)k, (c-a) = (b-c)j, (a-b) = (c-a)m$, for non zero integers, not necesarily positive, k, j, and m. Multiplying these equations and canceling, we get that $kjm$=1. This means that either k=1, m=1, j=1, or two of the variables are equal to 1 and the other is equal to -1. If all of the variables are equal to zero, plugging in gives us that $a=b=c$, contradictory to the conditions given in the problem statement. If two of the variables are equal to -1, and the other is equal to 1, then WLOG let $k=m=-1, j=1$. But this implies that the distinct integer condition is not satisfied, and hence, this case is invalid. Thus, it is impossible. $\blacksquare$<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1974}) Prove that if $a$, $b$, and $c$ are positive real numbers, then
+
+
+ $a^ab^bc^c\ge (abc)^{(a+b+c)/3}$
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Consider the function $f(x)=x\ln{x}$. $f''(x)=\frac{1}{x}>0$ for $x>0$; therefore, it is a convex function and we can apply \href{https://artofproblemsolving.com/wiki/index.php?title=Jensen\%27s\_Inequality}{Jensen's Inequality}:
+
+ $\frac{a\ln{a}+b\ln{b}+c\ln{c}}{3}\ge \left(\frac{a+b+c}{3}\right)\ln\left(\frac{a+b+c}{3}\right)$
+
+ Apply \href{https://artofproblemsolving.com/wiki/index.php?title=AM-GM}{AM-GM} to get
+
+ $\frac{a+b+c}{3}\ge \sqrt[3]{abc}$
+
+ which implies
+
+ $\frac{a\ln{a}+b\ln{b}+c\ln{c}}{3}\ge \left(\frac{a+b+c}{3}\right)\ln\left(\sqrt[3]{abc}\right)$
+
+ Rearranging,
+
+ $a\ln{a}+b\ln{b}+c\ln{c}\ge\left(\frac{a+b+c}{3}\right)\ln\left(abc\right)$
+
+ Because $f(x) = e^x$ is an increasing function, we can conclude that:
+
+ $e^{a\ln{a}+b\ln{b}+c\ln{c}}\ge{e}^{\ln\left(abc\right)(a+b+c)/3}$
+
+ which simplifies to the desired inequality.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Note that $(a^ab^bc^c)(a^bb^cc^a)(a^cb^ac^b)=\left((abc)^{(a+b+c)/3}\right)^3$.
+
+ So if we can prove that $a^ab^bc^c\ge a^bb^cc^a$ and $a^ab^bc^c\ge a^cb^ac^b$, then we are done.
+
+ WLOG let $a\ge b\ge c$.
+
+ Note that $(a^ab^bc^c)\cdot \left(\dfrac{c}{a}\right)^{a-b}\cdot \left(\dfrac{c}{b}\right)^{b-c}=a^bb^cc^a$. Since $\dfrac{c}{a} \le  1$, $\dfrac{c}{b} \le  1$, $a-b \ge 0$, and $b-c \ge 0$, it follows that $a^ab^bc^c \ge a^bb^cc^a$.
+
+ Note that $(a^ab^bc^c)\cdot \left(\dfrac{b}{a}\right)^{a-b}\cdot \left(\dfrac{c}{a}\right)^{b-c}=a^cb^ac^b$. Since $\dfrac{b}{a} \le  1$, $\dfrac{c}{a} \le  1$, $a-b \ge 0$, and $b-c \ge 0$, it follows that $a^ab^bc^c \ge a^cb^ac^b$.
+
+ Thus, $(a^ab^bc^c)^3\ge (a^ab^bc^c)(a^bb^cc^a)(a^cb^ac^b)=\left((abc)^{(a+b+c)/3}\right)^3$, and cube-rooting both sides gives $a^ab^bc^c\ge (abc)^{(a+b+c)/3}$ as desired.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+WLOG let $a\ge b\ge c$. Let $b = ax$ and $c = ay$, where $x \ge 1$ and $y \ge 1$.
+
+ We want to prove that $(a)^{a}(ax)^{ax}(ay)^{ay} \ge (a \cdot ax \cdot ay)^{\frac{a + ax + ay}{3}}$.
+
+ Simplifying and combining terms on each side, we get $a^{a + ax + ay}x^{ax}y^{ay} \ge a^{a + ax + ay}(xy)^{\frac{a + ax + ay}{3}}$.
+
+ Since $a > 0$, we can divide out $a^{a + ax + ay}$ to get $x^{ax}y^{ay} \ge (xy)^{\frac{a + ax + ay}{3}}$.
+
+ Take the $a$th root of each side and then cube both sides to get $x^{3x}y^{3y} \ge (xy)^{1 + x + y}$.
+
+ This simplifies to $x^{2x-1}y^{2y-1} \ge x^{y}y^{x}$.
+
+ Since $2x - 1 \ge x$ and $2y - 1 \ge y$, we only need to prove $x^{x}y^{y} \ge x^{y}y^{x}$ for our given $x, y$.
+
+ WLOG, let $y \ge x$ and $y =kx$ for $k \ge 1$. Then our expression becomes 
+
+ $x^{x}(xk)^{xk} \ge x^{xk}(xk)^{x}$
+
+ $x^{x+xk}k^{xk} \ge x^{x+xk}k^{x}$
+
+ $k^{xk} \ge k^{x}$
+
+ $k^k \ge k$
+
+ This is clearly true for $k \ge 1$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+WLOG let $a\ge b\ge c$. Then sequence $(a,b,c)$ majorizes $(\frac{a+b+c}{3},\frac{a+b+c}{3},\frac{a+b+c}{3})$. Thus by Muirhead's Inequality, we have $\sum_{sym} a^ab^bc^c \ge \sum_{sym} a^{\frac{a+b+c}{3}}b^{\frac{a+b+c}{3}}c^{\frac{a+b+c}{3}}$, so $a^ab^bc^c \ge (abc)^{\frac{a+b+c}{3}}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Let $x=\frac{a}{\sqrt[3]{abc}},$ $y=\frac{b}{\sqrt[3]{abc}}$ and $z=\frac{c}{\sqrt[3]{abc}}.$ Then $xyz=1$ and a straightforward calculation reduces the problem to 
+ \[x^xy^yz^z \ge 1.\]WLOG, assume $x\ge y\ge z.$ Then $x\ge 1,$ $z\le 1$ and $xy=\frac{1}{z} \ge 1.$ Therefore,
+ \[x^xy^yz^z=x^{x-y}(xy)^{y-z}(xyz)^z \ge 1.\]
+
+ J.Z.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+Cubing both sides of the given inequality gives 
+ \[a^{3a}b^{3b}c^{3c}\ge(abc)^{a+b+c}\]If we take $a^{3a}b^{3b}c^{3c}$ as the product of $3a$ $a$'s, $3b$ $b$'s, and $3c$ $c's$, we get that 
+
+ $\sqrt[3(a+b+c)]{a^{3a}b^{3b}c^{3c}}\ge\frac{3(a+b+c)}{\frac{3a}{a}+\frac{3b}{b}+\frac{3c}{c}}=\frac{a+b+c}{3}\ge\sqrt[3]{abc}$
+
+ 
+
+ by GM-HM, as desired.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+Replacing $a$ with $ak$, $b$ with $bk$, and $c$ with $ck$, for some positive real $k$ we get:$a^{ak}k^{ak}b^{bk}k^{bk}c^{ck}k^{ck} = a^{ak}b^{bk}c^{ck}k^{ak+bk+ck} \ge {k^3abc}^{{ak+bk+ck}/3} = k^{ak+bk+ck}{abc}^{{ak+bk+ck}/3}$This means that this inequality is homogeneous since both sides have the same power of $k$ as a factor. Since the inequality is homogeneous, we can scale $abc$ so that their product is $1$, i.e. $abc = 1$. This makes the inequality turn into something much more nicer to deal with. Now we have to prove:$a^ab^bc^c \ge 1$ given that $abc = 1$.Note that $a^a \ge a$ even if $a \le 1$. Therefore $a^a \ge a$, $b^b \ge b$, and $c^c \ge c$. Multiplying these together we get:$a^ab^bc^c \ge abc = 1$. This proves the desired result. Equality holds when $a = b = c = 1$.
+
+ 
+
+
+
+\textbf{Solution 8 (Rearrangement)}
+
+Let $\log_2a=x$, $\log_2b=y$ and $\log_2c=z$, and WLOG $a\ge b\ge c >0$. Then we have both $a\ge b\ge c$ and $x\ge y \ge z$.By the rearrangement inequality, $ax+by+cz\ge ay + bz +cx$ and $ax+by +cz\ge az+bx+cy$.Summing, $2(ax+by+cz)\ge a(y+z)+b(x+z)+c(x+y)$Adding $ax+by+cz$,we get$ax+by+cz\ge \frac{(a+b+c)(x+y+z)}{3}$.Now we substitute back for $x,y,z$ to get:$\log_2a^ab^bc^c\ge \log_2(abc)^{\frac{a+b+c}{3}}$.Raising $2$ to the power of each side, we get$a^ab^bc^c\ge (abc)^{\frac{a+b+c}{3}}$
+
+ 
+
+
+
+\textbf{Solution 9}
+
+Assume without loss of generality that $a\le b\le c$. Then, we have
+ \[b/a\ge 1, c/a\ge 1, c/b\ge 1, b-a\ge 0, c-a\ge 0, c-b\ge 0.\]It follows that
+ \[(b/a)^{(b-a)/3}\cdot (c/a)^{(c-a)/3}\cdot (c/b)^{(c-b)/3}\ge 1.\]We can "distribute" the exponents, which gives
+ \[\dfrac{b^{(b-a)/3}}{a^{(b-a)/3}}\cdot \dfrac{c^{(c-a)/3}}{a^{(c-a)/3}}\cdot \dfrac{c^{(c-b)/3}}{b^{(c-b)/3}}\ge 1.\]Notice that in the $b^{(c-b)/3}$ in the denominator of the third fraction can be brought out of the denominator by negating its exponent. This gives
+ \[\dfrac{b^{(b-a)/3}}{a^{(b-a)/3}}\cdot \dfrac{c^{(c-a)/3}}{a^{(c-a)/3}}\cdot c^{(c-b)/3} \cdot b^{(b-c)/3}\ge 1.\]We can move around terms on the left to get
+ \[\left(\dfrac{b^{(b-a)/3}\cdot b^{(b-c)/3}}{a^{(b-a)/3}}\right)\left(\dfrac{c^{(c-a)/3}\cdot c^{(c-b)/3}}{a^{(c-a)/3}}\right)\ge 1.\]Now we combine the exponents in the numerators. This gives
+ \[\left(\dfrac{b^{(2b-c-a)/3}}{a^{(b-a)/3}}\right)\left(\dfrac{c^{(2c-b-a)/3}}{a^{(c-a)/3}}\right)\ge 1.\]We multiply both sides by $\left(a^{(b-a)/3}\right)\left(a^{(c-a)/3}\right),$ which gives
+ \[\left(b^{(2b-c-a)/3}\right)\left(c^{(2c-b-a)/3}\right)\ge \left(a^{(b-a)/3}\right)\left(a^{(c-a)/3}\right).\]We then multiply both sides by $\left(b^{(c-a)/3}\right)\left(c^{(b-a)/3}\right):$
+ \[\left(b^{(2b-2a)/3}\right)\left(c^{(2c-2a)/3}\right)\ge \left(a^{(b-a)/3}\right)\left(c^{(b-a)/3}\right)\left(a^{(c-a)/3}\right)\left(b^{(c-a)/3}\right).\]Multiplying both sides by $\left(b^{(b-a)/3}\right)\left(c^{(c-a)/3}\right),$ then simplifying both sides with exponent laws, gives
+ \[b^{b-a}\cdot c^{c-a}\ge (abc)^{(b+c-2a)/3}.\]Finally, we multiply both sides by $(abc)^a.$ Combining exponents one last time gives the desired
+ \[a^a b^b c^c\ge (abc)^{(a+b+c)/3}.\]--MenuThreeOne
+
+ 
+
+
+
+\textbf{Solution 10}
+
+As in solution 2:
+
+ 
+ \[a^ab^bc^c \cdot a^bb^cc^a \cdot a^cb^ac^b = (abc)^{(\frac{a+b+c}{3})^3}\]
+
+ We show 
+ \[a^ab^bc^c \ge a^bb^cc^a\] and 
+ \[a^ab^bc^c \ge a^cb^ac^b\].
+
+ By definition, the first inequality is trivial via the Rearrangement Inequality:
+
+ 
+ \[a\ln(a)+b\ln(b)+c\ln(c) \ge b\ln(a) + c\ln(b) + a\ln(c)\].
+
+ Similarly, the second:
+
+ 
+ \[a\ln(a)+b\ln(b)+c\ln(c) \ge c\ln(a) + a\ln(b) + b\ln(c)\]
+
+ Hence the two results are proved. As in solution 2:
+
+ 
+ \[(a^ab^bc^c)^3\ge (a^ab^bc^c)(a^bb^cc^a)(a^cb^ac^b)=\left((abc)^{(a+b+c)/3}\right)^3\]
+
+ and through cube roots the result $a^ab^bc^c\ge (abc)^{(a+b+c)/3}$ is obtained.
+
+ 
+
+
+	\item (\textit{USAMO 1974}) Two boundary points of a ball of radius 1 are joined by a curve contained in the ball and having length less than 2. Prove that the curve is contained entirely within some hemisphere of the given ball.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+\textbf{Question: Why is the curve necessarily on a great circle? The curve is arbitrary–in space. Also, there is only one great circle through the two points, as three points determine a plane–a counterexample to this claim would then be readily found.}Draw a \href{https://artofproblemsolving.com/wiki/index.php?title=Great\_Circle&action=edit&redlink=1}{Great Circle} containing the two points and the curve. Then connect the two points with a chord in the circle. The circle has radius 1, so the circle has diameter 2, so the two points are all but diametrically opposite. Therefore we can draw a diameter $EF$ parallel to the chord but not on it.
+
+ \begin{verbatim}
+<geogebra>e6603728dd656bd9b9e39f2b656ced562f94332c</geogebra> 
+\end{verbatim}
+
+Now take the plane through EF perpendicular to AG. This creates two hemispheres, and the curve is in one and only one of them.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let the curve intersect the sphere at points A and B. Let B' be the point diametrically opposite A, and let $Q$ be the plane through the center O of the sphere perpendicular to $BB'$ and passing through the midpoint of $BB'$. We claim that the curve must be in the hemisphere divided by $Q$ containing points A and B.
+
+ Assume the contrary and suppose that the curve intersects $Q$ at point C. Reflect the portion of the curve from C to B to obtain a same-length curve from C to B'. Then the length of the curve equals the length of the new curve from A to B', which is at least the distance from A to B', or 2. This is a contradiction to the claim that the length of the curve is less than 2, so the curve must be contained in the hemisphere divided by $Q$ containing points A and B.
+
+ <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1974}) A father, mother and son hold a family tournament, playing a two person board game with no ties. The tournament rules are:
+
+
+ (i) The weakest player chooses the first two contestants.
+
+
+ (ii) The winner of any game plays the next game against the person left out.
+
+
+ (iii) The first person to win two games wins the tournament.
+
+
+ The father is the weakest player, the son the strongest, and it is assumed that any player's probability of winning an individual game from another player does not change during the tournament. Prove that the father's optimal strategy for winning the tournament is to play the first game with his wife.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+There are three possible strategies for the father:
+
+ 1)  Sit out the first game
+
+ 2)  Play the first game against the weaker of the other two players (the mother).  This person is referred to throughout the solution as "the weaker player".
+
+ 3)  Play the first game against the stronger of the other two players (the son).  This person is referred to throughout the solution as "the stronger player".
+
+ 
+Strategy 1 is dominated by both strategy 2 and strategy 3.  If strategy 1 is used and the weaker player wins the first game, it becomes strategy 2, but with the father starting behind 0-1.  Likewise, if strategy 1 is used and the stronger player wins the first game, it becomes strategy 3, but with the father again starting behind 0-1.
+
+ 
+Thus, the father must play the first game.
+
+ 
+By the pigeonhole principle, there may be no more than 4 games; once the 4th game is finished, someone will have won two games.  Let $W$ denote a game the father wins, let $L$ denote a game the father loses, and let $x$ denote a game the father does not participate in.  Then, with the knowledge that the father plays the first game, the following ways for the father to win two games are possible:
+
+ (A)  $WW$
+
+ (B)  $WLxW$
+
+ (C)  $LxWW$
+
+ If the father wins the first game, then he must either win the second game (A), or sit out the third game to win the fourth game (B).If the father loses the first game, then he must sit out the second game and win the third and fourth games (C).
+
+ Now we must determine which gives the largest probability of the father winning: playing the first game against the weaker player or the stronger player.  We define the following probabilities:
+
+ $x$ is the chance of the father defeating the weaker player.  $(1-x)$ is the chance of the weaker player defeating the father.
+
+ $y$ is the chance of the father defeating the stronger player.  $(1-y)$ is the chance of the stronger player defeating the father.
+
+ $z$ is the chance of the weaker player defeating the stronger player.  $(1-z)$ is the chance of the stronger player defeating the weaker player.
+
+ Note that $x > y$, and all of $x, y$ and $z$ are less than $0.5$.
+
+ If the father plays the weaker player first, we split the probability of winning the tournament in the three mutually exclusive cases above:
+
+ $P(A) = xy$ because the father must defeat the weaker player, then the father must defeat the stronger player.
+
+ $P(B) = x(1-y)zx$ because the father must defeat the weaker player, then stronger player must defeat the father.  Third, the weaker player must defeat the stronger player (because if the stronger player wins a second game, the tournament is over).  Fourth, the father plays the weaker player a second time and must win.
+
+ $P(C) = (1-x)(1-z)yx$ because the weaker player must defeat the father, followed by the stronger player defeating the weaker player (because if the weaker player wins two in a row, he wins the tournament).  The father must then defeat the stronger player and the weaker player in the third and fourth game, respectively.
+
+ From this, the total probability of the father winning by playing the weaker player first is:
+
+ $P(TOTAL) = P(A) + P(B) + P(C) = xy + x(1-y)zx + (1-x)(1-z)yx$
+
+ Likewise, we compute the probability of the father winning if he plays the stronger player first.  We do this by symmetry:
+
+ All $x$ will turn into $y$, because whenever the father defeated the weaker player before, he must defeat the stronger player now.
+
+ All $y$ will turn into $x$, because whenever the father defeated the stronger player before, he must defeat the weaker player now.
+
+ All $z$ will turn into $(1-z)$, because whenever the weaker player defeated the stronger player, now the stronger player must defeat the weaker player.
+
+ All $(1-z)$ will turn into $z$, because whenever the stronger player defeated the weaker player, now the weaker player must defeat the stronger player.
+
+ Applying these transformations and calling the new probabilities $P'$, we find that:
+
+ $P'(TOTAL) = P'(A) + P'(B) + P'(C) = yx + y(1-x)(1-z)y + (1-y)zxy$
+
+ We compare these probabilities.
+
+ $P(A) = P'(A)$.  This makes sense, as the probabilitiy of the father winning the first two games is the same, regardless of the order in which they are played.
+
+ $P(B) > P'(C)$:  Calculating $P(B) / P'(C)$, we get $x^2(1-y)z / xy(1-y)z$, which simplifies to $x/y$.  
+
+ Since $x > y$
+
+ $x/y > 1$
+
+ $P(B) / P'(C) > 1$
+
+ so $P(B) > P'(C)$.
+
+ $P(C) > P'(B)$:  Calculating $P(C) / P'(B)$, we get $(1-x)(1-z)yx / (1-x)(1-z)y^2$, which simpllifies again to $x/y$.  Thus, $P(C) > P'(B)$ 
+
+ Adding the above equations and inequalities, we see that $P(TOTAL) > P'(TOTAL)$, and thus the father is better off playing the weaker of the two players (ie the mother) first.
+
+ \textbf{TL;DR} Let the probability of the father winning against the son be $a$, the father winning against the mother be $b$, and the son winning against the mother be $c$. Here $a<b<\frac{1}{2}$ and $c>\frac{1}{2}$.
+
+ We define three first game cases as above:
+
+ 1. Father vs Mother
+
+ 2. Father vs Son
+
+ 3. Mother vs Son
+
+ The probability that the father wins (1) (by casework or tree) is $P(1)=ab+b^2(1-a)(1-c)+(1-b)abc$.
+
+ The probability that the father wins (2) is $P(2)=ab+a^2c(1-b)+ab(1-a)(1-c)$.
+
+ The probability that the father wins (3) is $P(3)=ab$.
+
+ Evidently $P(1)>P(3)$, so all that is left is to prove that $P(1)>P(2)$.
+
+ $P(1)>P(2)$
+
+ $ab+b^2(1-a)(1-c)+(1-b)abc>ab+a^2c(1-b)+ab(1-a)(1-c)$
+
+ $b^2(1-a)(1-c)+(1-b)abc>a^2c(1-b)+ab(1-a)(1-c)$
+
+ $b(b-a)(1-a)(1-c)>ac(a-b)(1-b)$
+
+ Using the fact that $a<b$, we easily find that the LHS is positive while the RHS is negative, proving the inequality.
+
+ <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1974}) Consider the two triangles $\triangle ABC$ and $\triangle PQR$ shown in Figure 1.  In $\triangle ABC$, $\angle ADB = \angle BDC = \angle CDA = 120^\circ$.  Prove that $x=u+v+w$.
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/USAMO_I_1974_5_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We rotate figure $PRQM$ by a clockwise angle of $\pi/3$ about $Q$ to obtain figure $RR'QM'$:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1974_5_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Evidently, $MM'Q$ is an equilateral triangle, so triangles $MRM'$ and $ABC$ are congruent.  Also, triangles $PMQ$ and $RM'Q$ are congruent, since they are images of each other under rotations.  Then
+ \[[ABC] + \frac{b^2 \sqrt{3}}{4} = [MRM'] + [MM'Q] = [QMR] + [RM'Q] = [QMR] + [PMQ] .\]Then by symmetry,
+ \[3 [ABC] + \frac{(a^2+b^2+c^2)\sqrt{3}}{4} = 2\bigl( [PMQ] + [QMR] + [RMP] \bigr) = 2 [PRQ] .\]
+
+ But $ABC$ is composed of three smaller triangles.  The one with sides $w,v,a$ has area $\frac{1}{2} wv \sin 120^\circ = \frac{wv \sqrt{3}}{4}$.  Therefore, the area of $ABC$ is
+ \[\frac{(wv+vu+uw)\sqrt{3}}{4} .\]Also, by the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on that small triangle of $ABC$, $a^2 = w^2 + wv+ v^2$, so by symmetry,
+ \[\frac{(a^2 + b^2 + c^2)\sqrt{3}}{4} = \frac{\bigl[2(u^2+w^2+v^2) + wv + vu + uw \bigr] \sqrt{3}}{4}.\]Therefore
+ \begin{align*}  \frac{(u+v+w)^2 \sqrt{3}}{2} &= 3 \frac{(wv+vu+uw)\sqrt{3}}{4} + \frac{\bigl[2(u^2+w^2+v^2) + wv + vu + uw \bigr] \sqrt{3}}{4} \\ &= 3 [ABC] + \frac{(a^2+b^2+c^2)\sqrt{3}}{4} = 2[PQR] . \end{align*}
+But the area of triangle $PQR$ is $x^2 \sqrt{3}/4$.  It follows that $u+v+w=x$, as desired.  $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Rotate $\triangle ABC$ $60$ degrees clockwise about $A$ to get $\triangle AB'C'$. Observe that $\triangle ADD'$ is equilateral, which means $D'D=AD=u$. Also, $B',D',D,C$ are collinear because $\angle B'D'A + \angle AD'D = 120+60=180$ and $\angle CDA + \angle DD'A = 120+60=180$. The resulting $\triangle B'AC$ has side lengths $b,c,u+v+w$ and the angle opposite side $u+v+w$ has magnitude $A+60$.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1974_5_Solution_Figure_2.png}
+                    \end{figure}
+                    If we perform the rotation about points $B$ and $C$, we get two triangles. One has side lengths $a,c,u+v+w$ and the angle opposite side $u+v+w$ has magnitude $B+60$, and the other has side lengths $b,c,u+v+w$ and the angle opposite side $u+v+w$ has magnitude $C+60$.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1974_5_Solution_Figure_3.png}
+                    \end{figure}
+                    These three triangles fit together because $(A+60)+(B+60)+(C+60) = 360$. The result is an equilateral triangle of side length $u+v+w$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1974_5_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ As in the first solution, we rotate and establish that $\triangle MRM' \cong \triangle ABC$.
+
+ Let $X$ and $Y$ be points on $\overline{RQ}$ and $\overline{PQ}$, respectively, such that $M$ lies on $\overline{XY}$ and $\overline{XY}\parallel \overline{PR}$.  We note that $m\angle RXM = 120^\circ$.  The rotation then takes $Y$ to $X$, so $m\angle RXM'=m\angle PYM = 120^\circ$.It follows that $RX=BD=v$, $MX=AD=u$, $M'X=CD=w$.
+
+ Since $m\angle MXM' = 120^\circ$ and $m\angle MQM' = 60^\circ$, $MXM'Q$ is cyclic.By Ptolemy's theorem,
+ \begin{align*} (MX)(M'Q) + (XM')(QM) &= (MM')(XQ) \\ XQ &= MX + M'X \\ &= u+w. \end{align*}
+Finally, $RQ = RX+XQ = u+v+w$, as desired.
+
+ 
+
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_5&action=edit}{add it} to this page.</i>
+
+ 
+
+
+\end{enumerate}

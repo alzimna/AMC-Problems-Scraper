@@ -1,0 +1,399 @@
+\section{USAMO 2000}
+        \begin{enumerate}
+        	\item (\textit{USAMO 2000}) Call a real-valued function $f$ very convex if
+
+
+ 
+ \[\frac {f(x) + f(y)}{2} \ge f\left(\frac {x + y}{2}\right) + |x - y|\]
+
+
+ holds for all real numbers $x$ and $y$. Prove that no very convex function exists.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $y \ge x$, and substitute $a = x, 2b = y-x$. Then a function is very convex if $\frac{f(a) + f(a+2b)}{2} \ge f(a + b) + 2b$, or rearranging,
+
+ 
+ \[\left[\frac{f(a+2b)-f(a+b)}{b}\right]-\left[\frac{f(a+b)-f(a)}{b}\right] \ge 4\]
+
+ Let $g(a) = \frac{f(a+b) - f(a)}{b}$, which is the slope of the secant between $(a,f(a))(a+b,f(a+b))$. Let $b$ be arbitrarily small; then it follows that $g(a+b) - g(a) > 4$, $g(a+2b) - g(a+b) > 4,\, \cdots, g(a+kb) - g(a+ [k-1]b) > 4$. Summing these inequalities yields $g(a+kb)-g(a) > 4k$. As $k \rightarrow \infty$ (but $b << \frac{1}{k}$, so $bk < \epsilon$ is still arbitrarily small), we have $\lim_{k \rightarrow \infty} g(a+kb) - g(a) = g(a + \epsilon) - g(a) > \lim_{k \rightarrow \infty} 4k = \infty$. This implies that in the vicinity of any $a$, the function becomes vertical, which contradicts the definition of a function. Hence no very convex function exists.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Suppose, for the sake of contradiction, that there exists a very convex function $f.$ Notice that $f(x)$ is convex if and only if $f(x) + C$ is convex, where $C$ is a constant. Thus, we may set $f(0) = 0$ for convenience.
+
+ Suppose that $f(1) = A$ and $f(-1) = B.$ By the very convex condition,
+ \[\frac{f(0) + f\left(2^{-n}\right)}{2} \ge f\left(2^{-(n+1)}\right) + \frac{1}{2^n}.\]A straightforward induction shows that:
+ \[f\left(2^{-n}\right) \le \frac{A - 2n}{2^n}\]for all nonnegative integers $n.$Using a similar line of reasoning as above,
+ \[f\left(-2^{-n}\right) \le \frac{B - 2n}{2^n}.\]Therefore, for every nonnegative integer $n,$
+ \[f\left(2^{-n}\right) + f\left(-2^{-n}\right) \le \frac{A+B-4n}{2^n}.\]Now, we choose $n$ large enough such that $n > \frac{A+B}{4} - 1.$ This is always possible because $A$ and $B$ are fixed for any particular function $f.$ It follows that:
+ \[f\left(2^{-n}\right) + f\left(-2^{-n}\right) < \frac{1}{2^{n-2}}.\]However, by the very convex condition,
+ \[f\left(2^{-n}\right) + f\left(-2^{-n}\right) \ge \frac{1}{2^{n-2}}.\]This is a contradiction. It follows that no very convex function exists.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Define the symmetric average
+ \[F(x, y) = \frac{f(x) + f(y)}{2}.\]Then the inequality becomes
+ \[F(x, y) \ge f\left( \frac{x + y}{2} \right) + |x - y|.\]
+
+ Because $|x - y|$ is not differentiable along the line $x = y$, the surface defined by $F(x, y)$ must have a permanent kink along the diagonal. A kink is a sharp crease where the surface fails to have a well-defined tangent plane.
+
+ If f were a true function on $\mathbb{R}$ satisfying the inequality at all scales, then this kink would have to persist no matter how closely x and y are chosen. That means the graph of F never becomes smooth near the diagonal.
+
+ But every differentiable real-valued function f produces a smooth symmetric average F. Therefore, the presence of a permanent kink contradicts the assumption that f is differentiable at any scale. The kink cannot be removed by local smoothing.
+
+ Hence, the geometric shape of the inequality forces a kink that no function f can produce, so no function can be very convex.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Assume, for contradiction, that $f:\mathbb{R}\to\mathbb{R}$ satisfies
+ \[\frac{f(x)+f(y)}{2}\geq f\!\left(\frac{x+y}{2}\right)+|x-y| \qquad \text{for all } x,y\in\mathbb{R}.\]
+
+ Set $x=a-h$ and $y=a+h$. Then
+ \[f(a+h)+f(a-h)-2f(a)\geq 4|h| \qquad \text{for all } a,h\in\mathbb{R}.\]
+
+ Thus
+ \[\Delta_h^2 f(a):=f(a+h)+f(a-h)-2f(a)\geq 0 \qquad \text{for all } a,h\in\mathbb{R},\]so $f$ is convex. Let $\mu=f''$ in the distributional sense. Then $\mu$ is a nonnegative locally finite Borel measure.
+
+ For $h>0$, the second difference can be written as
+ \[\Delta_h^2 f(a)=\int_{\mathbb{R}} 2(h-|x-a|)_+\,d\mu(x),\]where
+ \[(t)_+=\max\{t,0\}.\]
+
+ Since
+ \[(h-|x-a|)_+\leq h\,\mathbf{1}_{[a-h,a+h]}(x),\]we get
+ \[\Delta_h^2 f(a)\leq 2h\,\mu([a-h,a+h]).\]
+
+ On the other hand, the hypothesis gives
+ \[\Delta_h^2 f(a)\geq 4h.\]Hence
+ \[\mu([a-h,a+h])\geq 2 \qquad \text{for every } h>0.\]
+
+ Letting $h\downarrow 0$, continuity from above yields
+ \[\mu(\{a\})\geq 2.\]
+
+ Since $a$ was arbitrary, every point of $\mathbb{R}$ is an atom of $\mu$ of mass at least $2$, contradicting local finiteness of $\mu$.
+
+ Therefore no function $f:\mathbb{R}\to\mathbb{R}$ satisfies
+ \[\frac{f(x)+f(y)}{2}\geq f\!\left(\frac{x+y}{2}\right)+|x-y| \qquad \text{for all } x,y\in\mathbb{R}.\]
+
+ 
+
+
+	\item (\textit{USAMO 2000}) Let $S$ be the set of all triangles $ABC$ for which
+
+
+ 
+ \[5 \left( \dfrac{1}{AP} + \dfrac{1}{BQ} + \dfrac{1}{CR} \right) - \dfrac{3}{\min\{ AP, BQ, CR \}} = \dfrac{6}{r},\]
+
+
+ where $r$ is the inradius and $P, Q, R$ are the points of tangency of the incircle with sides $AB, BC, CA,$ respectively. Prove that all triangles in $S$ are isosceles  and similar to one another.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We let $x = AP = s - a, y = BQ = s-b, z = CR = s-c$, and \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{without loss of generality} let $x \le y \le z$. Then $x + y + z = 3s - (a+b+c) = s$, so $r = \frac {A}{s} = \frac{\sqrt{(x+y+z)xyz}}{x+y+z} = \sqrt{\frac{xyz}{x+y+z}}$. Thus, 
+
+ 
+ \[6\sqrt{\frac{x+y+z}{xyz}} = \frac{2yz + 5xy + 5xz}{xyz}\] 
+
+ Squaring and simplifying yields (after much grueling work)
+
+ 
+ \[0 = 4y^2z^2 + 25x^2y^2 + 25x^2z^2 - 16xy^2z - 16xyz^2 + 14x^2yz\]
+
+ We claim that the inequality 
+
+ 
+ \begin{align}0 \le 4y^2z^2 + 25x^2y^2 + 25x^2z^2 - 16xy^2z - 16xyz^2 + 14x^2yz \tag{*} \end{align}
+
+ holds true, with equality \href{https://artofproblemsolving.com/wiki/index.php?title=Iff}{iff} $4x = y = z$.
+
+ 
+Note that $(*)$ is homogeneous in $x,y,z$, so without loss of generality, scale so that $x=1$. Then 
+
+ 
+ \[0 \le y^2 (4z^2 - 16z + 25) + y(14z - 16z^2) + 25z^2\]
+
+ which is a quadratic in $y$. As $4z^2 - 16z + 25 = 4(z-4)^2 + 9 \ge 0$, it suffices to show that the quadratic cannot have more than one root, or the \href{https://artofproblemsolving.com/wiki/index.php?title=Discriminant}{discriminant} $\Delta \le 0$. Then,
+
+ 
+ \[\Delta = z^2(14-16z)^2 - 4(4z^2 - 16z + 25)(25z^2) = -144(z-4)^2 \le 0\]
+
+ as desired. Equality comes when $z = 4$; since $(*)$ is symmetric in $y$ and $z$, it follows that $y = 4$ is also necessary for equality. Reversing our scaling, it follows that $x:y:z = 1:4:4$.
+
+ Then $s = x+y+z = 9x$, and $s-a = x, s-b = 4x, s-c = 4x$ yields $a:b:c = 8:5:5$. Thus, we have proved that all possible ABC are isosceles (as b = c), and that they are similar to a 5-5-8 triangle.$\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $A$, $B$, $C$ be the three angles of the triangle, then $r/AP = \tan{(A/2)}$, $r/BQ=\tan{(B/2)}$, and $r/CR=\tan{(C/2)}$. Without loss of generality, assume $A \leq B \leq C$, then $CR=min{(AP,BQ,CR)}$. Denote $x=\tan{(A/2)}$, $x=\tan{(B/2)}$, $z=\tan{(C/2)}$, then we have,
+ \[5(x+y+z)- 3z=6 \qquad \qquad (1)\]Meanwhile,
+ \[z = \tan{(C/2)} = \tan{(90- (A+B)/2))} = \frac{1-xy}{x+y}\]Substitute $z$ in $(1)$, we get
+ \[5x^{2}+8xy+5y^{2} - 6x - 6y+2=0 \qquad \qquad (2)\]Treating (2) as a quadratic equation for $x$, the discriminant is:
+ \[\Delta = (8y-6)^2 - 4*5(5y^2-6y+2)=-36y^2+24y-4 = -(6y-2)^2 \leq 0\]For $x$, $y$ to be both real numbers, $\Delta$ must not be negative, so $\Delta = 0$, which yields $y=1/3$. Solving for x, we get $x=\frac{-(8y-6)}{2*5}=1/3$. Using the formula $\tan(A)=\frac{2\tan(A/2)}{1-\tan^2(A/2)}$, we have $\tan(A)=\tan(B)=3/4$. Therefore $A=B=\arctan{(3/4)}$. This proves that all possible triangle $ABC$ are isosceles with the same set of angles, i.e., they are similar to each other. 
+
+ It's inconsequential to the proof, but it can be easily found that, since $tan(A) = 3/4$, the altitude to the base of the isosceles triangle divides the triangle into two 3-4-5 right triangles with $4$ on the base; therefore, the entire triangle is 5-5-8. $\square$.
+
+ Solution by $Mathdummy$.
+
+ 
+
+
+	\item (\textit{USAMO 2000}) A game of solitaire is played with $R$ red cards, $W$ white cards, and $B$ blue cards. A player plays all the cards one at a time. With each play he accumulates a penalty. If he plays a blue card, then he is charged a penalty which is the number of white cards still in his hand. If he plays a white card, then he is charged a penalty which is twice the number of red cards still in his hand. If he plays a red card, then he is charged a penalty which is three times the number of blue cards still in his hand. Find, as a function of $R, W,$ and $B,$ the minimal total penalty a player can amass and all the ways in which this minimum can be achieved.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We claim (inductively) that the minimum is just going to be $\min(BW,2WR,3RB)$. We'll start our induction with the case where one of the three quantities is zero, in which case we verify that we can indeed get away without any penalty by, for example, discarding blue if we are out of white.
+
+ Now, for the inductive step, let $f(B,W,R)$ be the minimum we seek. Note that
+ \[f(B,W,R) = \min(W+f(B-1,W,R),2R+f(B,W-1,R),3B+f(B,W,R-1))\]By our inductive hypothesis, $f(B-1,W,R) = \min((B-1)W,2WR,3R(B-1))$. In order for this to cause our inductive step not to hold, we would require that $W+\min((B-1)W,2WR,3R(B-1)) < \min(BW,2WR,3RB)$. It is evident that the first two entries in the $min$ expression cannot cause this to happen, so that we need only consider $W+3R(B-1) < \min(BW,2WR,3RB)$. So $W+3R(B-1) < BW$, whence $3R < W$. But $W+3R(B-1) < 3RB$, so that $W < 3R$, a contradiction.
+
+ For the other two cases, we can get similar contradictions, so that our inductive step must hold, and so $f(B,W,R)$ is indeed $\min(BW,2WR,3RB)$.
+
+ We now need only establish how many ways to do this. If one of these quantities is smaller, our induction and the fact that it is eventually zero guarantees that it will continue to be the smallest quantity as cards are discarded. (For example, if it is currently optimal to discard a blue card, it will continue to be so until we run out of blue cards.) Therefore, assuming that there is currently only one best choice of card to discard, this will continue to be so in the future, whence if $BW \neq 2WR \neq 3RB$, there is only $1$ optimal strategy.
+
+ Suppose, now, that $BW = 2WR$. It is thus optimal to discard either a $B$ or $W$ card. If we ever discard a blue card, then we will cause $BW < 2WR$, whence there is only one possible strategy from then on. However, if we discard a white card, then we will still have $BW = 2WR$, meaning that we continue to have the choice of discarding a white or blue card. Since we can discard a white card at most $W$ times, there are $W+1$ choices for how many $W$ cards to discard ($0$ to $W$), meaning that there are $W+1$ optimal strategies.
+
+ By similar logic, we get $R+1$ optimal strategies if $2WR = 3RB$, and $B+1$ optimal strategies if $3RB = BW$.
+
+ The final case, then, is if $BW = 2WR = 3RB$. In this case, if we first discard a white card, we are left with the $BW = 2WR$ case, and similarly for a blue and red card. The total number of optimal strategies in this case is then the sum of the optimal strategies in those cases, or, in other words, $B+W+R$.
+
+ To summarize:The minimum penalty is $\min(BW,2WR,3RB)$.If $BW \neq 2WR \neq 3RB$, there is $1$ optimal strategy.If $BW = 2WR < 3RB$, there are $W+1$ strategies.If $2WR = 3RB < BW$, there are $R+1$ strategies.If $3RB = BW < 2WR$, there are $B+1$ strategies.If $BW = 2WR = 3RB$, there are $R+B+W$ strategies.
+
+ By J Steinhardt, from AoPS Community
+
+ 
+
+
+	\item (\textit{USAMO 2000}) Find the smallest positive integer $n$ such that if $n$ squares of a $1000\times 1000$ chessboard are colored, then there will exist three colored squares whose centers form a right triangle with legs parallel to the edges of the board.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We claim that $n = 1999$ is the smallest such number. For $n \le 1998$, we can simply color any of the $1998$ squares forming the top row and the left column, but excluding the top left corner square.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2000_4_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ We now show that no configuration with no colored right triangles exists for $n = 1999$. We call a row or column \textit{filled} if all $1000$ of its squares are colored. Then any of the remaining $999$ colored squares must share a column or row, respectively, with one of the colored squares in a filled row or column. These two squares, and any other square in the filled row or column, form a colored right triangle, giving us a contradiction. Hence, no filled row or column may exist.
+
+ Let $m$ be the number of columns with $1$ colored square. Then there are $1999-m$ colored squares in the remaining columns, and in each of these $< 1999-m$ columns that have a colored square must have at least two colored squares in them. These two colored squares will form a triangle with any other colored square in either of the rows containing the colored squares. Hence, each of the $1999-m$ colored squares must be placed in different rows, but as there are only $1000$ rows, the inequality $1999 - m \le 1000 \Longrightarrow m \ge 999$ holds. If $m = 1000$, then each column only has $1$ colored square, leaving no place for the remaining $999$, contradiction. If $m = 999$, then each of the $1000$ rows has $1$ black square, leaving no place for the other $999$, contradiction. Hence $n = \boxed{1999}$ is the minimal value.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+I claim that we can color at minimality 1999 squares and end up with one triangle whose legs are parallel to the sides of the chessboard.
+
+ \textbf{Lemma 1:} $n \leq 1998$ is impossible for all configurations of the $n$ pieces.
+
+ Suppose one colors at maximum 1998 squares. From any configuration, there must never exist a configuration for which no such right triangle exists. However, one can color the $999+999 = 1998$ edge grids, exclusion of the corner, and now we show no right triangle is possible. Because the edges of the chessboard intersect at 90 degrees, the conjoined centres of the squares must also intersect at 90 degrees. Therefore, we can only form such a right triangle by using the corner piece. However, this was excluded from our original coloring. Hence, $n = 1998$ does not work. Then, one may arrange all the other $n \leq 1997$ colored squares in the same configuration such that the corner piece is not colored whereas the edges are, and no such triangle can be formed by the centres. 
+
+ \textbf{Lemma 2:} $n = 1999$ is possible for all configurations of the 1999 pieces.
+
+ We show that three pieces must form a right triangle whose sides are parallel to the grid. Suppose each distinct row obtains a colored piece. If we want to refute the claim, we put each of the 1000 squares on the diagonal, so now no two are shared. But now, no matter where we place the last colored piece, by the Pigeonhole Principle, this piece lies in the same row as another, and the same column as another. If we don't place the original 1000 squares on the diagonal, then at minimum two squares will be collinear. From there, we can place the 999 remaining squares anywhere, and by the Pigeonhole Principle, at least two pairs of squares share a common square that form a 90 degree triangle.
+
+ \textbf{2000 USAMO/Q4:}
+
+ We must color a minimum of $n = \boxed{1999}$ squares.
+
+ 
+
+
+	\item (\textit{USAMO 2000}) Let $A_1A_2A_3$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} and let $\omega_1$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circle} in its plane passing through $A_1$ and $A_2.$ Suppose there exist circles $\omega_2, \omega_3, \dots, \omega_7$ such that for $k = 2, 3, \dots, 7,$ $\omega_k$ is externally \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_(geometry)}{tangent} to $\omega_{k - 1}$ and passes through $A_k$ and $A_{k + 1},$  where $A_{n + 3} = A_{n}$ for all $n \ge 1$. Prove that $\omega_7 = \omega_1.$
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let the \href{https://artofproblemsolving.com/wiki/index.php?title=Circumcenter}{circumcenter} of $\triangle ABC$ be $O$, and let the center of $\omega_k$ be $O_k$. $\omega_k$ and $\omega_{k-1}$ are externally tangent at the point $A_k$, so $O_k, A_k, O_{k-1}$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Collinear}{collinear}. 
+
+ $O$ is the intersection of the perpendicular bisectors of $\overline{A_1A_2}, \overline{A_2A_3}, \overline{A_3A_1}$, and each of the centers $O_k$ lie on the perpendicular bisector of the side of the triangle that determines $\omega_k$. It follows from $OA_k = OA_{k+1}, O_kA_k = O_kA_{k+1}, OO_k = OO_k \Longrightarrow \triangle OA_kO_k \cong \triangle OA_{k+1}O_k$ that $\angle OA_kO_k = \angle OA_{k+1}O_k$. 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2000_5_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Since $O, A_k$, and the perpendicular bisector of $\overline{A_kA_{k+1}}$ are fixed, the angle $OA_kO_k$ determines the position of $O_k$ (since $O_k$ lies on the perpendicular bisector). Let $\theta_k = m\angle OA_kO_k$; then, $\theta_i = \theta_j$ and $i \equiv j \pmod{3}$ together imply that $O_i \equiv O_j$.
+
+ Now $\theta_1 = \angle OA_1O_1 = \angle OA_2O_1 = 180 - \angle OA_2O_2 = 180 - \theta_2$ (due to collinearility). Hence, we have the recursion $\theta_k = 180 - \theta_{k-1}$, and so $\theta_k = \theta_{k-2}$. Thus, $\theta_{1} = \theta_{7}$.
+
+ $\theta_{1} = \theta_{7}$ implies that $O_1 \equiv O_7$, and circles $\omega_1$ and $\omega_7$ are the same circle since they have the same center and go through the same two points.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Using the collinearity of certain points and the fact that $A_k A_{k+1} O_k$ is isosceles, we quickly deduce that
+ \[\angle{A_1 A_2 O_1} = 180^\circ - \angle{A_2} - (180^\circ - \angle{A_3}) + (180^\circ - \angle{A_1}) - (180^\circ - \angle{A_2}) + (180^\circ - \angle{A_3}) - (180^\circ - \angle{A_1}) + \angle{A_7 A_8 O_7}.\]From ASA Congruence we deduce that $A_1 A_2 O_1$ and $A_7 A_8 O_7$ are congruent triangles, and so $O_1 A_1 = O_7 A_7$, that is $\omega_1 = \omega_7$.
+
+ 
+
+
+	\item (\textit{USAMO 2000}) Let $a_1, b_1, a_2, b_2, \dots , a_n, b_n$ be nonnegative real numbers. Prove that
+
+
+ 
+ \[\sum_{i, j = 1}^{n} \min\{a_ia_j, b_ib_j\} \le \sum_{i, j = 1}^{n} \min\{a_ib_j, a_jb_i\}.\]
+
+
+ 
+
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+\textit{Credit for this solution goes to Ravi Boppana.}
+
+ \textbf{Lemma 1:} If $r_1, r_2, \ldots , r_n$ are non-negative reals and $x_1, x_2, \ldots x_n$ are reals, then
+
+ 
+ \[\sum_{i, j}\min(r_{i}, r_{j}) x_{i}x_{j}\ge 0.\]
+
+ \textbf{Proof:} Without loss of generality assume that the sequence $\{r_i\}$ is increasing. For convenience, define $r_0=0$. The LHS of our inequality becomes
+
+ 
+ \[\sum_{i}r_{i}x_{i}^{2}+2\sum_{i < j}r_{i}x_{i}x_{j}\, .\]
+
+ This expression is equivalent to the sum
+
+ 
+ \[\sum_{i}(r_{i}-r_{i-1})\biggl(\sum_{j=i}^{n}x_{j}\biggr)^{2}\, .\]
+
+ Each term in the summation is non-negative, so the sum itself is non-negative. $\blacksquare$
+
+ We now define $r_i=\frac{\max(a_i,b_i)}{\min(a_i,b_i)}-1$. If $\min(a_i,b_i)=0$, then let $r_i$ be any non-negative number. Define $x_i=\text{sgn}(a_i-b_i)\min(a_i,b_i)$.
+
+ \textbf{Lemma 2:} $\min(a_{i}b_{j}, a_{j}b_{i})-\min(a_{i}a_{j}, b_{i}b_{j}) =\min(r_{i}, r_{j}) x_{i}x_{j}$
+
+ \textbf{Proof:} Switching the signs of $a_i$ and $b_i$ preserves inequality, so we may assume that $a_i>b_i$. Similarly, we can assume that $a_j>b_j$. If $b_ib_j=0$, then both sides are zero, so we may assume that $b_i$ and $b_j$ are positive. We then have from the definitions of $r_i$ and $x_i$ that
+
+ 
+ \begin{eqnarray*}r_{i}& = &\frac{a_{i}}{b_{i}}-1\\ r_{j}& = &\frac{a_{j}}{b_{j}}-1\\ x_{i}& = & b_{i}\\ x_{j}& = & b_{j}\, .\end{eqnarray*}
+
+ This means that
+
+ 
+ \begin{eqnarray*}\min(r_{i}, r_{j}) x_{i}x_{j}& = &\min\bigl(\frac{a_{i}}{b_{i}}-1,\frac{a_{j}}{b_{j}}-1\bigr) b_{i}b_{j}\\ & = &\min(a_{i}b_{j}, a_{j}b_{i})-b_{i}b_{j}\\ & = &\min(a_{i}b_{j}, a_{j}b_{i})-\min(a_{i}a_{j}, b_{i}b_{j})\, .\end{eqnarray*}
+
+ This concludes the proof of Lemma 2. $\blacksquare$
+
+ We can then apply Lemma 2 and Lemma 1 in order to get that
+
+ 
+ \begin{eqnarray*}\sum_{i,j}\min(a_{i}b_{j}, a_{j}b_{i})-\sum_{i, j}\min(a_{i}a_{j}, b_{i}b_{j}) & = &\sum_{i, j}\left[\min(a_{i}b_{j}, a_{j}b_{i})-\min(a_{i}a_{j}, b_{i}b_{j})\right]\\ & = &\sum_{i, j}\min(r_{i}, r_{j}) x_{i}x_{j}\\ &\ge & 0\, .\end{eqnarray*}
+
+ This implies the desired inequality.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+WLOG let both sequences be increasing. Furthermore allow the sequence $a_i \leq b_i$. Hence, it is sufficient to show that
+
+ 
+ \[\sum_{i,j = 1}^n a_ia_j \leq \sum_{i,j = 1}^n \min(a_ib_j, a_jb_i)\]. 
+
+ \textbf{Lemma 1:} $\min(a_ib_j, a_jb_i) =  a_ib_j$ for $i \leq j$.
+
+ \textbf{Proof of Lemma 1:}
+
+ Through the Rearrangement Inequality,
+
+ 
+ \[a_i b_i+a_j b_j\ge a_i b_j+a_j b_i\]
+ \[a_i b_i+a_j b_j-a_i b_j-a_j b_i\ge0\]
+ \[(a_j-a_i)(b_j-b_i)\ge0\]
+
+ As both sequences are increasing, the property holds.
+
+ (Note: A proof by contradiction of assuming that the other inequality is true derives the fact that $a_i, b_i$ is decreasing which goes against our WLOG).
+
+ \textbf{Lemma 2:} $\min(a_ib_j, a_jb_i) =  a_jb_i$  for $i > j$
+
+ For space reasons, the proof is similar to that of Lemma 1. 
+
+ \textbf{2000 USAMO Q6:}
+
+ Rewrite the sum as 
+
+ 
+ \[\sum_{i,j=1}^{n}\min(a_i b_j,a_jb_i)=\sum_{i=j}\min(a_i b_i,a_i b_i)+\sum_{i<j}\min(a_i b_j,a_jb_i)+\sum_{i>j}\min(a_i b_j,a_jb_i)\]
+
+ Obviously, $2n$ is even hence form the $n \times n$ matrix. The RHS sum $\sum_{i\le j}a_i b_j+\sum_{i>j}a_jb_i$ then satisfies $\sum_{i>j}a_jb_i=\sum_{i<j}a_i b_j$. This is trivial by considering all values $a_jb_i$ below the diagonal of the matrix, $a_ib_j$ above the diagonal, and all $a_ib_i$ in the diagonal itself. It is then clear that the RHS simplifies to 
+
+ 
+ \[\sum_i a_i b_i+2\sum_{i<j}a_i b_j\].
+
+ Note that 
+
+ 
+ \[\sum_{i,j=1}^n a_i a_j=\sum_i a_i^2+2\sum_{i<j}a_i a_j\].
+
+ Because $a_i \leq b_i$, we have $a_i^2 \leq a_ib_i$ via Rearrangement Inequality. For $i < j$, $a_ia_j \leq a_ib_j$ by the Lemma's. Hence, through inequality equivalencies,
+
+ 
+ \[\sum_i a_i^2+2\sum_{i<j}a_i a_j\le \sum_i a_i b_i+2\sum_{i<j}a_i b_j\]
+ \[\iff  \sum_{i,j=1}^n a_i a_j \le \sum_{i,j=1}^n\min(a_i b_j,a_jb_i)\]
+
+ as desired. $\square$
+
+ 
+
+
+\end{enumerate}
