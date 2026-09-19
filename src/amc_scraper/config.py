@@ -20,14 +20,36 @@ SWAIT = 3
 MWAIT = 8
 LWAIT = 10
 
-TABLE_SELECTOR = "#mw-content-text > div > table"
-COLUMN_YEAR_SELECTOR = "#mw-content-text > div > table > tbody > tr > td:nth-child(1)"
-LINK_SELECTOR = '#mw-content-text > div > table > tbody > tr > td > a'
+TABLE_SELECTOR = {
+    'AIME' : "#mw-content-text > div > table",
+    'AMC_8' : "#mw-content-text > div > ul:nth-child(2)"
+}
+
+COLUMN_YEAR_SELECTOR = {
+    'AIME' : "#mw-content-text > div > table > tbody > tr > td:nth-child(1)",
+    'AMC_8' : "#mw-content-text > div > ul:nth-child(2) > li > a"
+}
+
+
+LINK_SELECTOR = {
+    'AIME' : '#mw-content-text > div > table > tbody > tr > td > a',
+    'AMC_8' : "#mw-content-text > div > ul:nth-child(2) > li > a"
+}
+
+PATTERN_TITLE = {
+    'AIME' : r'(^\d{4}).*?([IVX]+)?$',
+    'AMC_8' : r'(^\d{4})'
+    }
+
+PATTERN_VERSION = {
+    'AIME' : r'title=\d{4}_AIME_([IVX]+)?',
+    'AMC_8' : r'title=\d{4}_(.*)'
+}
+
 CONTENT_SELECTOR = '#mw-content-text > div'
 
-PATTERN_YEAR = r'^\d{4}$'
-PATTERN_TITLE = r'(^\d{4}).*?([IVX]+)?$'
-PATTERN_VERSION = r'title=\d{4}_AIME_([IVX]+)?'
+PATTERN_YEAR = r'^\d{4}'
+
 PATTERN_HEADLINE_ID = r'^Problem_(\d+)$'
 PATTERN_SOLUTION_ID = r'^Solution'
 

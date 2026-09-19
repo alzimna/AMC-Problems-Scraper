@@ -19,8 +19,6 @@ Let $r$ represent the rate Tom swims in miles per minute. Then we have
  
 
 
-
-
 	\item (\textit{AIME I 2013}) Find the number of five-digit positive integers, $n$, that satisfy the following conditions:
 
 
@@ -40,8 +38,6 @@ Let $r$ represent the rate Tom swims in miles per minute. Then we have
 The number takes a form of $\overline{5xyz5}$, in which $5|(x+y+z)$. Let $x$ and $y$ be arbitrary digits. For each pair of $x,y$, there are exactly two values of $z$ that satisfy the condition of $5|(x+y+z)$. Therefore, the answer is $10\times10\times2=\boxed{200}$
 
  
-
-
 
 
 
@@ -69,8 +65,6 @@ We know the number will take the form $\overline{5xyz5}$ because of the first tw
 
 
 
-
-
 \textbf{Solution 3 (less casework)}
 
 Again, from the first two conditions we know the number takes the form $\overline{5xyz5}$, and the third condition implies that $5|(x+y+z)$. Assume that $x$, $y$, and $z$ are less than 5. Now, we will proceed with casework on the sum $x+y+z$. 
@@ -84,8 +78,6 @@ Again, from the first two conditions we know the number takes the form $\overlin
  Due to our assumption that $x, y, z < 5$, $x+y+z$ cannot be 15, so our casework is done. Summing, we find a total of $1+18+6=25$. However, for each of $x$, $y$, and $z$, we can add $5$ without violating the conditions. So, we can either choose to add $5$ or not, so we have to multiply $2$ to our cases three times for $x$, $y$, and $z$. This yields $25 \cdot 2 \cdot 2 \cdot 2 = \boxed{200}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) Let $ABCD$ be a square, and let $E$ and $F$ be points on $\overline{AB}$ and $\overline{BC},$ respectively. The line through $E$ parallel to $\overline{BC}$ and the line through $F$ parallel to $\overline{AB}$ divide $ABCD$ into two squares and two nonsquare rectangles. The sum of the areas of the two squares is $\frac{9}{10}$ of the area of square $ABCD.$ Find $\frac{AE}{EB} + \frac{EB}{AE}.$
@@ -112,8 +104,6 @@ It's important to note that $\dfrac{AE}{EB} + \dfrac{EB}{AE}$ is equivalent to $
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the side of the square be $1$.  Therefore the area of the square is also $1$.   We label $AE$ as $a$ and $EB$ as $b$.  Notice that what we need to find is equivalent to: $\frac{a^2+b^2}{ab}$.Since the sum of the two squares ($a^2+b^2$) is $\frac{9}{10}$ (as stated in the problem) the area of the whole square, it is clear that the sum of the two rectangles is $1-\frac{9}{10} \implies \frac{1}{10}$.  Since these two rectangles are congruent, theyeach have area:  $\frac{1}{20}$.  Also note that the area of this is $ab$.  Plugging this into our equation we get:
@@ -127,15 +117,11 @@ Let the side of the square be $1$.  Therefore the area of the square is also $1$
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $AE$ be $x$, and $EB$ be $1$. Then we are looking for the value $x+\frac{1}{x}$. The areas of the smaller squares add up to $9/10$ of the area of the large square, $(x+1)^2$. Cross multiplying and simplifying we get $x^2-18x+1=0$. Rearranging, we get $x+\frac{1}{x}=\boxed{018}$
 
  
-
-
 
 
 
@@ -147,8 +133,6 @@ As before, $\dfrac{AE}{EB} + \dfrac{EB}{AE}$ is equivalent to $\dfrac{AE^2 + EB^
 
 
 
-
-
 \textbf{Solution 5 (Fast)}
 
 Let $AE = x$ and $BE = y$. From this, we get $AB = x + y$. The problem is asking for $\frac{x}{y} + \frac{y}{x}$, which can be rearranged to give $\frac{x^2 + y^2}{xy}$. The problem tells us that $x^2 + y^2 = \frac{9(x+y)^2}{10}$. We simplify to get $x^2 + y^2 = 18xy$. Finally, we divide both sides by $xy$ to get $\frac{x^2 + y^2}{xy} = \boxed{018}$. - Spacesam
@@ -157,15 +141,11 @@ Let $AE = x$ and $BE = y$. From this, we get $AB = x + y$. The problem is asking
 
 
 
-
-
 \textbf{Solution 5 (A faster Vieta's)}
 
 After we get the polynomial $x^2 - 18x + 1,$ we want to find $x + \frac 1 {x}.$ Since the product of the roots of the polynomial is 1, the roots of the polynomial are simply $x, \frac 1 {x}.$ Hence $x + \frac 1 {x}$ is just $18$ by Vieta's formula, or $\boxed{018}$
 
  
-
-
 
 
 
@@ -179,8 +159,6 @@ We have the equation $x^2 + y^2$ = $\frac {9}{10} \cdot (x+y)^2$. We get $x^2 + 
 
 
 
-
-
 \textbf{Solution 7}
 
 Set side length of square to be $10$, $AE = x$ and $EB = y$. From this, we get $y+x=10$, and since the area of the square will be 100, the area of the two rectangles will be $2xy = 10$. We can substitute and say that $2xy = x+y$, and subtract $y$ from both sides, and then divide by $y$, getting the equation $\frac {x}{y} = 2x-1$, and doing the same thing with $x$ to get $\frac {y}{x} = 2y-1$. Adding these equations, we get the desired sum to be $2(x+y) - 2$, or $20-2$ which is equal to $\boxed {018}$.
@@ -189,15 +167,11 @@ Set side length of square to be $10$, $AE = x$ and $EB = y$. From this, we get $
 
 
 
-
-
 \textbf{Solution 8 (Quadratic Equation)}
 
 You can call the side length of the square 1. Call length AE x and solve the quadratic equation x\textasciicircum{}2+1-2x+x\textasciicircum{}2=9/10 with the quadratic formula.
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) In the array of $13$ squares shown below, $8$ squares are colored red, and the remaining $5$ squares are colored blue. If one of all possible such colorings is chosen at random, the probability that the chosen colored array appears the same when rotated $90^{\circ}$ around the central square is $\frac{1}{n}$ , where $n$ is a positive integer. Find $n$.
@@ -228,8 +202,6 @@ When the array appears the same after a 90-degree rotation, the top formation mu
 
 
 
-
-
 \textbf{Solution 2}
 
 By the Pigeonhole Principle, if the middle square isn't blue, than any 90 degree rotation won't map onto itself because one extra blue square will be mapped onto a red square. Therefore, we have to have 1 blue square in the middle and 1 blue square in each of the 4 seperate containers(think if there is two in each a 90 degree rotation wouldn't move it to the other side). There are 3 places in each of the seperate tilings for it and everything else will be red. Therefore, there are only 3 good combinations. Now the total amount is 13choose5, so we lead to the answer: $\frac{3}{\binom{13}{5}}$ = $\frac{1}{429}$ , so \textit{$n$} = $\boxed{429}$
@@ -238,15 +210,11 @@ By the Pigeonhole Principle, if the middle square isn't blue, than any 90 degree
 
 
 
-
-
 \textbf{Solution 3}
 
 We use the same idea as the other solutions, knowing the middle square must be blue, which has probability $\frac{5}{13}$, the next blue square can go anywhere; then the last three must go in the three spots they rotate in, giving us $\frac{3!}{11*10*9}$. Multiplying yields $\boxed{429}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) The real root of the equation $8x^3-3x^2-3x-1=0$ can be written in the form $\frac{\sqrt[3]{a}+\sqrt[3]{b}+1}{c}$, where $a$, $b$, and $c$ are positive integers. Find $a+b+c$.
@@ -269,15 +237,11 @@ We note that $8x^3 - 3x^2 - 3x - 1 = 9x^3 - x^3 - 3x^2 - 3x - 1 = 9x^3 - (x + 1)
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $r$ be the real root of the given \href{https://artofproblemsolving.com/wiki/index.php?title=Polynomial}{polynomial}. Now define the cubic polynomial $Q(x)=-x^3-3x^2-3x+8$. Note that $1/r$ must be a root of $Q$. However we can simplify $Q$ as $Q(x)=9-(x+1)^3$, so we must have that $(\frac{1}{r}+1)^3=9$. Thus $\frac{1}{r}=\sqrt[3]{9}-1$, and $r=\frac{1}{\sqrt[3]{9}-1}$. We can then multiply the numerator and denominator of $r$ by $\sqrt[3]{81}+\sqrt[3]{9}+1$ to rationalize the denominator, and we therefore have $r=\frac{\sqrt[3]{81}+\sqrt[3]{9}+1}{8}$, and the answer is $\boxed{98}$.
 
  
-
-
 
 
 
@@ -291,16 +255,12 @@ It is clear that for the algebraic degree of $x$ to be $3$ that there exists som
 
 
 
-
-
 \textbf{Solution 4}
 
 We have $cx-1=\sqrt[3]{a}+\sqrt[3]{b}.$ Therefore $(cx-1)^3=(\sqrt[3]{a}+\sqrt[3]{b})^3=a+b+3\sqrt[3]{ab}(\sqrt[3]{a}+\sqrt[3]{b})=a+b+3\sqrt[3]{ab}(cx-1).$ We have 
  \[c^3x^3-3c^2x^2-(3c\sqrt[3]{ab}-3c)x-(a+b+1-3\sqrt[3]{ab})=0.\]We will find $a,b,c$ so that the equation is equivalent to the original one. Let $\dfrac{3c^2}{c^3}=\dfrac{3}{8}, \dfrac{3c\sqrt[3]{ab}-3c}{c^3}=\dfrac{3}{8}, \dfrac{a+b+1-3\sqrt[3]{ab}}{c^3}=\dfrac{1}{8}.$ Easily, $c=8, \sqrt[3]{ab}=9,$ and $a+b=90.$ So $a + b + c = 90+8=\boxed{98}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) Melinda has three empty boxes and $12$ textbooks, three of which are mathematics textbooks. One box will hold any three of her textbooks, one will hold any four of her textbooks, and one will hold any five of her textbooks. If Melinda packs her textbooks into these boxes in random order, the probability that all three mathematics textbooks end up in the same box can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -323,8 +283,6 @@ The total ways the textbooks can be arranged in the 3 boxes is $12\textbf{C}3\cd
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider the books as either math or not-math where books in each category are indistiguishable from one another. Then, there are $\,_{12}C_{3}$ total distinguishable ways to pack the books. Now, in order to determine the desired propability, we must find the total number of ways the condition that all math books are in the same box can be satisfied. We proceed with casework for each box:
@@ -338,8 +296,6 @@ Consider the books as either math or not-math where books in each category are i
  So, the total ways the condition can be satisfied is $\binom{3}{3} + \binom{4}{3} + \binom{5}{3}$. This can be simplified to $\binom{6}{4} = \binom{6}{2}$ by the \href{https://artofproblemsolving.com/wiki/index.php?title=Hockey\_Stick\_Identity}{Hockey Stick Identity}. Therefore, the desired probability is $\dfrac{\dbinom{6}{2} }{\dbinom{12}{3}}$ = $\dfrac{3}{44}$, and $m+n=3+44=\boxed{047}$.
 
  
-
-
 
 
 
@@ -357,15 +313,11 @@ There are three cases as follows. Note these are PERMUTATIONS, as the books are 
 
 
 
-
-
 \textbf{Solution 4}
 
 Assume that the $9$ other books are all distinct. The number of ways to place the other $9$ books and the $3$ is $\frac {12!}{3!}$. The number of ways to put all the $3$ math books into the box that holds $3$ books is $9!$. The number of ways to put all the $3$ math books into the box that holds $4$ books is $\binom {4}{3} \cdot 9!$, and the number of ways to put all the $3$ math books into the box that holds $5$ books is $\binom {5}{3} \cdot 9!$. The number of desired outcomes is $15 \cdot 9!$, and the total number of outcomes is $\frac {12!}{6}$. Simplifying, we get the answer is $\frac {3}{44}$, so our answer is $\boxed {047}$.
 
  
-
-
 
 
 
@@ -400,16 +352,12 @@ Adding all these cases and dividing by the total number of ways yields $\frac{12
 
 
 
-
-
 \textbf{Solution 6 (No Words)}
 
 
  \[\dfrac{\frac{9!}{(3-3)!4!5!} + \frac{9!}{3!(4-3)!5!} + \frac{9!}{3!4!(5-3)!}}{\frac{12!}{3!4!5!}} = \dfrac{3}{44}\implies\boxed{47}.\]
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) A rectangular box has width $12$ inches, length $16$ inches, and height $\frac{m}{n}$ inches, where $m$ and $n$ are relatively prime positive integers. Three faces of the box meet at a corner of the box. The center points of those three faces are the vertices of a triangle with an area of $30$ square inches. Find $m+n$.
@@ -444,8 +392,6 @@ Let the height of the box be $x$.
 
 
 
-
-
 \textbf{Solution 2 (Vectors)}
 
 We may use vectors. Let the height of the box be $2h$. Without loss of generality, let the front bottom left corner of the box be $(0,0,0)$. Let the center point of the bottom face be $P_1$, the center of the left face be $P_2$ and the center of the front face be $P_3$.
@@ -470,8 +416,6 @@ We may use vectors. Let the height of the box be $2h$. Without loss of generalit
 
 
 
-
-
 \textbf{Solution 3}
 
 Let the height of the box be $x$.
@@ -490,8 +434,6 @@ Let the height of the box be $x$.
 
 
 
-
-
 \textbf{Solution 4 (de Gua's)}
 
 It isn't hard to see that the triangle connecting the centers of the faces of the rectangular prism is congruent to the triangle connecting the midpoints of three edges that concur. So we can now apply de Gua's theorem (\href{https://en.wikipedia.org/wiki/De\_Gua\%27s\_theorem}{https://en.wikipedia.org/wiki/De\_Gua\%27s\_theorem}) to see that:
@@ -507,8 +449,6 @@ It isn't hard to see that the triangle connecting the centers of the faces of th
  ---Solution 4 contributed by Siddharth Namachivayam
 
  
-
-
 
 
 
@@ -531,8 +471,6 @@ Let half the height be $a$ (we want to find $2a$), then we see that the three si
 
 
 
-
-
 \textbf{Solution 6 (Heron's Formula Application)}
 
 Let $x$ be $\frac12$ the height of the box. We will solve for $x$ and then multiply by $2$ at the end. The three side lengths of the triangle, by the Pythagorean Theorem, are $\sqrt{x^2+6^2},\sqrt{x^2+8^2},$ and $10$.
@@ -552,8 +490,6 @@ Let $x$ be $\frac12$ the height of the box. We will solve for $x$ and then multi
  Now multiplying by $2$, we get that the height is $\frac{36}5$, and $m+n=36+5=\boxed{041}$
 
  
-
-
 
 
 
@@ -591,8 +527,6 @@ Let the rectangular prism be $ABCDEFGH$ with $AB=12$, $AC=16$, and $AD=\alpha$ e
 
 
 
-
-
 \textbf{Solution 8 (Similar to Solution 5)}
 
 Again, consider the total height as $2x$, which leads to the side lengths of the triangle being $10$, $\sqrt{x^2 + 64}$, and $\sqrt{x^2 + 36}$. Consider the angle $\theta$ between the two sides of $\sqrt{x^2+36}$ and $10$. 
@@ -609,8 +543,6 @@ Again, consider the total height as $2x$, which leads to the side lengths of the
  Thus, our answer is $\boxed{041}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) The domain of the function $f(x) = \arcsin(\log_{m}(nx))$ is a closed interval of length $\frac{1}{2013}$ , where $m$ and $n$ are positive integers and $m>1$. Find the remainder when the smallest possible sum $m+n$ is divided by $1000$.
@@ -638,68 +570,11 @@ Again, consider the total height as $2x$, which leads to the side lengths of the
 
 
 
-
-
 \textbf{Solution 2}
 
-We know that the domain of $\text{arcsin}$ is $[-1, 1]$, so $-1 \le \log_m nx \le 1$. Now we can apply the definition of logarithms:
- \[m^{-1} = \frac1m \le nx \le m\] 
- \[\implies \frac{1}{mn} \le x \le \frac{m}{n}\]Since the domain of $f(x)$ has length $\frac{1}{2013}$, we have that
- \[\frac{m}{n} - \frac{1}{mn} = \frac{1}{2013}\] 
- \[\implies \frac{m^2 - 1}{mn} = \frac{1}{2013}\]
-
- A larger value of $m$ will also result in a larger value of $n$ since $\frac{m^2 - 1}{mn} \approx  \frac{m^2}{mn}=\frac{m}{n}$ meaning $m$ and $n$ increase about linearly for large $m$ and $n$. So we want to find the smallest value of $m$ that also results in an integer value of $n$. The problem states that $m > 1$. Thus, first we try $m = 2$:
- \[\frac{3}{2n} = \frac{1}{2013} \implies 2n = 3 \cdot 2013 \implies n \notin \mathbb{Z}\]  Now, we try $m=3$:
- \[\frac{8}{3n} = \frac{1}{2013} \implies 3n = 8 \cdot 2013 \implies n = 8 \cdot 671 = 5368\]Since $m=3$ is the smallest value of $m$ that results in an integral $n$ value, we have minimized $m+n$, which is $5368 + 3 = 5371 \equiv \boxed{371} \pmod{1000}$.
+We know that the domain of $\text{arcsin}$ is $[-1, 1]$, so 
 
  
-
-
-
-
-
-\textbf{Solution 3}
-
-We start with the same method as above. The domain of the arcsin function is $[-1, 1]$, so $-1 \le \log_{m}(nx) \le 1$. 
-
- 
- \[\frac{1}{m} \le nx \le m\] 
- \[\frac{1}{mn} \le x \le \frac{m}{n}\] 
- \[\frac{m}{n} - \frac{1}{mn} = \frac{1}{2013}\] 
- \[n = 2013m - \frac{2013}{m}\]
-
- For $n$ to be an integer, $m$ must divide $2013$, and $m > 1$. To minimize $n$, $m$ should be as small as possible because increasing $m$ will decrease $\frac{2013}{m}$, the amount you are subtracting, and increase $2013m$, the amount you are adding; this also leads to a small $n$ which clearly minimizes $m+n$.
-
- We let $m$ equal $3$, the smallest factor of $2013$ that isn't $1$. Then we have $n = 2013*3 - \frac{2013}{3} = 6039 - 671 = 5368$
-
- $m + n = 5371$, so the answer is $\boxed{371}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Operation Quadratics)}
-
-Note that we need $-1\le f(x)\le 1$, and this eventually gets to $\frac{m^2-1}{mn}=\frac{1}{2013}$. From there, break out the quadratic formula and note that 
- \[m= \frac{n+\sqrt{n^2+4026^2}}{2013\times 2}.\] Then we realize that the square root, call it $a$, must be an integer. Then $(a-n)(a+n)=4026^2.$ 
-
- Observe carefully that $4026^2 = 2\times 2\times 3\times 3\times 11\times 11\times 61\times 61$! It is not difficult to see that to minimize the sum, we want to minimize $n$ as much as possible. Seeing that $2a$ is even, we note that a $2$ belongs in each factor. Now, since we want to minimize $a$ to minimize $n$, we want to distribute the factors so that their ratio is as small as possible (sum is thus minimum). The smallest allocation of $2, 61, 61$ and $2, 11, 3, 3, 11$ fails; the next best is $2, 61, 11, 3, 3$ and $2, 61, 11$, in which $a=6710$ and $n=5368$. That is our best solution, upon which we see that $m=3$, thus $\boxed{371}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5 (Factor! and slightly cheese)}
-
-By considering the range of $\arcsin$, we obtain $-1 \leq\log_{m} (nx) \leq 1 \Rightarrow \frac{1}{mn} \leq x \leq \frac{m}{n}$. Hence we consider the difference: $\frac{m}{n} - \frac{1}{mn} = \frac{m^2 - 1}{mn} = \frac{1}{2013}$. Now just cross multiply to obtain $2013(m-1)(m+1) = mn$, and that $2013 = 3 \cdot 11 \cdot 61$. We could try a few cases: $m = 3$, for instance, yields $n = 671 \cdot 8 = 5368$. Adding $3$ gives $5371$. Now, if we consider greater $m$, we see that the term $(m-1)(m+1)$ grows very fast: this is also due to the fact that $61,11 \gg 3$. Hence, we may just conclude that the answer is $5371 \Rightarrow \boxed{371}$.
-
- 
-
-
 
 
 	\item (\textit{AIME I 2013}) A paper equilateral triangle $ABC$ has side length $12$. The paper triangle is folded so that vertex $A$ touches a point on side $\overline{BC}$ a distance $9$ from point $B$. The length of the line segment along which the triangle is folded can be written as $\frac{m\sqrt{p}}{n}$, where $m$, $n$, and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m+n+p$.
@@ -738,8 +613,6 @@ Then
  The answer is $39 + 39 + 35 = \boxed{113}$.
 
  
-
-
 
 
 
@@ -783,8 +656,6 @@ Let $P$ and $Q$ be the points on $\overline{AB}$ and $\overline{AC}$, respective
 
 
 
-
-
 \textbf{Solution 3}
 
 Proceed with the same labeling as in Solution 1. 
@@ -819,8 +690,6 @@ Proceed with the same labeling as in Solution 1.
 
 
 
-
-
 \textbf{Solution 4 (Coordinate Bash)}
 
 We let the original position of $A$ be $A$, and the position of $A$ after folding be $D$. Also, we put the triangle on the coordinate plane such that $A=(0,0)$, $B=(-6,-6\sqrt3)$, $C=(6,-6\sqrt3)$, and $D=(3,-6\sqrt3)$.
@@ -849,8 +718,6 @@ We let the original position of $A$ be $A$, and the position of $A$ after foldin
 
 
 
-
-
 \textbf{Solution 5}
 
 Note: this requires lots of calculations that increase your chance of errors, but it only requires simple understanding of areas, similar triangles, and Heron's formula. I'll just put the strategy here because I am too lazy to calculate it myself right now. 
@@ -866,8 +733,6 @@ Note: this requires lots of calculations that increase your chance of errors, bu
  -EmilyQ, minor latex edits by Voidling
 
  
-
-
 
 
 
@@ -918,8 +783,6 @@ Thanks to Solution 1 for the diagram below:
 
 
 
-
-
 \textbf{Solution 7 (LoC)}
 
 
@@ -927,7 +790,9 @@ Thanks to Solution 1 for the diagram below:
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2013_9_Solution_Figure_4.png}
                     \end{figure}
-                    As shown in the diagram, let $MA'=x$. Since the triangle is equilateral, we have $BM=12-x$. Similarly, let $NA'=y$, so $NC=12-y$.
+                    
+
+ As shown in the diagram, let $MA'=x$. Since the triangle is equilateral, we have $BM=12-x$. Similarly, let $NA'=y$, so $NC=12-y$.
 
  Because $\angle MBA=\angle NCA=60^\circ$, we may apply the Law of Cosines in the form $a^2+b^2-ab=c^2$. (Note that we could also find these side lengths through similar triangles as mentioned in the previous solutions)
 
@@ -952,11 +817,7 @@ Thanks to Solution 1 for the diagram below:
  Since the problem asks for $m+n+p$ when the length is written as $\frac{m\sqrt{p}}{n}$, we have
  \[m+n+p=39+39+35=\boxed{113}.\]
 
- This video is private for some reason ~get-rickrolled
-
  
-
-
 
 
 	\item (\textit{AIME I 2013}) There are nonzero integers $a$, $b$, $r$, and $s$ such that the complex number $r+si$ is a zero of the polynomial $P(x)={x}^{3}-a{x}^{2}+bx-65$. For each possible combination of $a$ and $b$, let ${p}_{a,b}$ be the sum of the zeros of $P(x)$. Find the sum of the ${p}_{a,b}$'s for all possible combinations of $a$ and $b$.
@@ -1006,8 +867,6 @@ Since $r+si$ is a root, by the Complex Conjugate Root Theorem, $r-si$ must be th
  
 
 
-
-
 	\item (\textit{AIME I 2013}) Ms. Math's kindergarten class has $16$ registered students. The classroom has a very large number, $N$, of play blocks which satisfies the conditions:
 
 
@@ -1053,8 +912,6 @@ $N$ must be some multiple of $\text{lcm}(14, 15, 16)= 2^{4}\cdot 3\cdot 5\cdot 7
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that the number of play blocks is a multiple of the LCM of $16$, $15$, and $14$. The value of this can be found to be $(16)(15)(7) = 1680$. This number is also divisible by $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $10$, and $12$, thus, the three numbers $x, y, z$ are $9, 11, 13$.
@@ -1073,8 +930,6 @@ Note that the number of play blocks is a multiple of the LCM of $16$, $15$, and 
 
 
 
-
-
 \textbf{Solution 3}
 
 It is obvious that $N=a\cdot 2^4 \cdot 3\cdot 5\cdot 7$ and so the only mod $3$ number of students are $9, 11, 13$. Therefore, $N=1287\cdot k+3$. Try some approaches and you will see that this one is one of the few successful ones:
@@ -1086,8 +941,6 @@ It is obvious that $N=a\cdot 2^4 \cdot 3\cdot 5\cdot 7$ and so the only mod $3$ 
  You also get $c=13d+4$, at which point $k=171+560d$. $d$ cannot be equal to $0$. Therefore, $c=4, b=43, a=131$, and we know the prime factors of $N$ are $2, 3, 5, 7, 131$ so the answer is $\boxed{148}$.
 
  
-
-
 
 
 
@@ -1108,8 +961,6 @@ We start by noticing that $N = a\textbf{lcm}(14, 15, 16) = 1680a$ for some integ
 
 
 
-
-
 \textbf{Solution 5}
 
 As the problem stated, the number of boxes is definitely a multiple of $lcm(14,15,16)=1680$, so we assume total number of boxes is $1680k$
@@ -1124,8 +975,6 @@ As the problem stated, the number of boxes is definitely a multiple of $lcm(14,1
 
 
  
-
-
 
 
 
@@ -1145,8 +994,6 @@ From part (a), we know that $2^4\cdot3\cdot5\cdot7 | N$. From part (b), we know 
 
 
 
-
-
 \textbf{Solution 7 (similar to solution 6)}
 
 Define $N_b$ to be the base value of $N$. In other terms, we call $N_b$ the "skeleton". We proceed with an archeological approach.
@@ -1158,8 +1005,6 @@ Define $N_b$ to be the base value of $N$. In other terms, we call $N_b$ the "ske
  So, $N_b \ | \ N$ and $N \equiv 3 \pmod{9}, N \equiv 3 \pmod{11}, N \equiv 3 \pmod{13}, N \equiv 0 \pmod{1680}$. Then, $N \equiv 3 \pmod{1287}$. Then, $1287k \equiv 1677 \pmod{1680}$. Dividing everything by 3, we have $429k \equiv 559 \pmod{560}$. We solve via modular inverse rather than CRT, and the modular inverse of 429 through Bézout’s (or extended Euclidean) is 389. So, $k \equiv 171 \pmod{560}$. Substitution, we have $N = 3 + 1287(171)$ or $N = 220080$. The prime factorization of this is $N = 2^4\cdot3\cdot5\cdot7\cdot131$, and the value is $2+3+5+7+131= \boxed{148}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) Let $\bigtriangleup PQR$ be a triangle with $\angle P = 75^o$ and $\angle Q = 60^o$. A regular hexagon $ABCDEF$ with side length 1 is drawn inside $\triangle PQR$ so that side $\overline{AB}$ lies on $\overline{PQ}$, side $\overline{CD}$ lies on $\overline{QR}$, and one of the remaining vertices lies on $\overline{RP}$. There are positive integers $a, b, c,$ and $d$ such that the area of $\triangle PQR$ can be expressed in the form $\frac{a+b\sqrt{c}}{d}$, where $a$ and $d$ are relatively prime, and c is not divisible by the square of any prime. Find $a+b+c+d$.
@@ -1183,8 +1028,6 @@ First, find that $\angle R = 45^\circ$.Draw $ABCDEF$. Now draw $\bigtriangleup P
 
 
 
-
-
 \textbf{Solution 2 (Cartesian Variation)}
 
 Use coordinates. Call $Q$ the origin and $QP$ be on the x-axis. It is easy to see that $F$ is the vertex on $RP$. After labeling coordinates (noting additionally that $QBC$ is an equilateral triangle), we see that the area is $QP$ times $0.5$ times the coordinate of $R$. Draw a perpendicular of $F$, call it $H$, and note that $QP = 1 + \sqrt{3}$ after using the trig functions for $75$ degrees.
@@ -1192,8 +1035,6 @@ Use coordinates. Call $Q$ the origin and $QP$ be on the x-axis. It is easy to se
  Now, get the lines for $QR$ and $RP$: $y=\sqrt{3}x$ and $y=-(2+\sqrt{3})x + (5+\sqrt{3})$, whereupon we get the ordinate of $R$ to be $\frac{3+2\sqrt{3}}{2}$, and the area is $\frac{5\sqrt{3} + 9}{4}$, so our answer is $\boxed{021}$.
 
  
-
-
 
 
 
@@ -1216,8 +1057,6 @@ Angle chasing yields that both triangles $PAF$ and $PQR$ are $75$-$60$-$45$ tria
  Evaluating and reducing, we get $\frac{9 + 5\sqrt{3}}{4},$thus the answer is $\boxed{021}$
 
  
-
-
 
 
 
@@ -1274,8 +1113,6 @@ To get $\overline{RQ}$ and $\overline{Pb}$, we first work bit by bit.
 
 
 
-
-
 \textbf{Solution 5 (Trig)}
 
 
@@ -1291,15 +1128,11 @@ To get $\overline{RQ}$ and $\overline{Pb}$, we first work bit by bit.
 
 
 
-
-
 \textbf{Solution 6 (Elementary Geo)}
 
 We can find that $AF || CD || QR$. This means that the perpendicular from $P$ to $QR$ is perpendicular to $AF$ as well, so let that perpendicular intersect $AF$ at $G$, and the perpendicular intersect $QR$ at $H$. Set $AP=x$. Note that $\angle {PAG} = 60^\circ$, so $AG=\frac{x}{2}$ and $PG = GF = \frac{x\sqrt3}{2}$. Also, $1=AF=AG+GF=\frac{x}{2} + \frac{x\sqrt{3}}{2}$, so $x=\sqrt{3} - 1$. It's easy to calculate the area now, because the perpendicular from $P$ to $QR$ splits $\triangle{PQR}$ into a $30-60-90$ (PHQ) and a $45-45-90$ (PHR). From these triangles' ratios, it should follow that $QH=\frac{\sqrt{3} + 1}{2}, PH=HR=\frac{\sqrt{3}+3}{2}$, so the area is $\frac{1}{2} * PH * QR = \frac{1}{2} * PH * (QH + HR) = \frac{1}{2} * \frac{\sqrt{3} + 3}{2} * \frac{2\sqrt{3}+4}{2} = \boxed{\frac{9+5\sqrt{3}}{4}}$. $9+5+3+4=021$.By Mathscienceclass
 
  
-
-
 
 
 
@@ -1311,8 +1144,6 @@ We can observe that $RD=DF$ (because $\angle R$ & $\angle RFD$ are both $45^\cir
 
 
 
-
-
 \textbf{Solution 8 (Area Ratios + Trig)}
 
 Note that $\triangle PAF \sim \triangle PQR$. Let $X$ be the foot of an altitude dropped from $F$ to $PQ$. Using trigonometry, we find that $PA = \sqrt3 - 1$ and $FX = \frac{\sqrt3}{2}$, thus the area of $\triangle PAF$ is $\frac{3 - \sqrt3}{4}$. Since $QA$ is clearly $2$, the scale factor between $\triangle PAF$ and $\triangle PQR$ is $\frac{\sqrt3 + 1}{\sqrt3 - 1}$, and thus $[PQR] = \frac{3 - \sqrt3}{4} \cdot \left( \frac{\sqrt3 + 1}{\sqrt3 - 1} \right)^2 = \frac{9 + 5\sqrt3}{4}$, and we extract $\boxed{021}$. ~ostriches88
@@ -1321,15 +1152,11 @@ Note that $\triangle PAF \sim \triangle PQR$. Let $X$ be the foot of an altitude
 
 
 
-
-
 \textbf{Solution 9 (I'm not sure if this has been posted before)}
 
 Let $F$ be the point on $RP$. Drop the perpendicular $FD$, and notice the length of this is $\sqrt{3}$. Consider the $45-45-90$ triangle $\triangle FDR$. The area is clearly $\frac{3}{2}$. This also takes away a sixth of the original hexagon, so we add $\frac{5}{6} \cdot \frac{1^2 \sqrt{3}}{4}$. The equilateral triangle $\triangle BCQ$ has area $\frac{3}{4}$. Finally, the upper triangle, $\triangle PAF$, has $1$ side facing the $75^{\circ}$ angle, so consequently by law of sines we obtain the side opposing the $45$ degree angle has side length $\sqrt{3} - 1$ (recall that $\sin 75^{\circ} = \frac{\sqrt{6} + \sqrt{2}}{4}$). Then, we have $\frac{1}{2} (\sqrt{3} - 1)(1) \sin(60^{\circ}) = \frac{3-\sqrt{3}}{4}$. Adding the four areas together, we obtain $\frac{9 + 5\sqrt{3}}{4}$. (Don't forget that the area of the 45-45-90 triangle is not in fact $3$, unless you want a final answer of $27$ instead of the actual $\boxed{21}$).
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) Triangle $AB_0C_0$ has side lengths $AB_0 = 12$, $B_0C_0 = 17$, and $C_0A = 25$. For each positive integer $n$, points $B_n$ and $C_n$ are located on $\overline{AB_{n-1}}$ and $\overline{AC_{n-1}}$, respectively, creating three similar triangles $\triangle AB_nC_n \sim \triangle B_{n-1}C_nC_{n-1} \sim \triangle AB_{n-1}C_{n-1}$. The area of the union of all triangles $B_{n-1}C_nB_n$ for $n\geq1$ can be expressed as $\frac pq$, where $p$ and $q$ are relatively prime positive integers. Find $q$.
@@ -1352,8 +1179,6 @@ Note that every $B_nC_n$ is parallel to each other for any nonnegative $n$. Also
 
 
 
-
-
 \textbf{Solution 2}
 
 Using Heron's Formula we can get the area of the triangle $\Delta AB_0C_0 = 90$. 
@@ -1363,8 +1188,6 @@ Using Heron's Formula we can get the area of the triangle $\Delta AB_0C_0 = 90$.
  Therefore, the area of $\Delta B_0C_1C_0$ is $(\dfrac{17}{25})^2(90)$. Also, the dimensions of the other sides of the $\Delta B_0C_1C_0$ can beeasily computed: $\overline{B_0C_1}= \dfrac{17}{25}(12)$ and $\overline{C_1C_0} = \dfrac{17^2}{25}$. This allows us to compute one side of the triangle $\Delta AB_0C_0$, $\overline{AC_1} = 25 - \dfrac{17^2}{25} = \dfrac{25^2 - 17^2}{25}$. Therefore, the scale factor $\Delta AB_1C_1$ to $\Delta AB_0C_0$ is $\dfrac{25^2 - 17^2}{25^2}$ , which yields the length of $\overline{B_1C_1}$ as $\dfrac{25^2 - 17^2}{25^2}(17)$. Therefore, the scale factor for $\Delta B_1C_2C_1$ to $\Delta B_0C_1C_0$ is $\dfrac{25^2 - 17^2}{25^2}$. Some more algebraic manipulation will show that  $\Delta B_nC_{n+1}C_n$ to $\Delta B_{n-1}C_nC_{n-1}$ is still $\dfrac{25^2 - 17^2}{25^2}$.  Also, since the triangles are disjoint, the area of the union is the sum of the areas. Therefore, the area is the geometric series $\dfrac{90 \cdot 17^2}{25^2} \sum_{n=0}^{\infty} (\dfrac{25^2-17^2}{25^2})^2$At this point, it may be wise to "simplify" $25^2 - 17^2 = (25-17)(25+17) = (8)(42) = 336$.So the geometric series converges to $\dfrac{90 \cdot 17^2}{25^2} \dfrac{1}{1 - \dfrac{336^2}{625^2}} = \dfrac{90 \cdot 17^2}{25^2} \dfrac{625^2}{625^2 - 336^2}$.Using the difference of squares, we get $\dfrac{90 \cdot 17^2}{25^2}\dfrac{625^2}{(625 - 336)(625 + 336)}$, which simplifies to  $\dfrac{90 \cdot 17^2}{25^2} \dfrac{625^2}{(289)(961)}$. Cancelling all common factors, we get the reduced fraction  $= \dfrac{90 \cdot 25^2}{31^2}$. So $\frac{p}{q}=1-\frac{90 \cdot 25^2}{31^2}=\frac{90 \cdot 336}{961}$, yielding the answer $\fbox{961}$.
 
  
-
-
 
 
 
@@ -1397,8 +1220,6 @@ For this problem, the key is to find the $\frac{[\triangle{B_nB_{n-1}C_n}]}{[\tr
 
 
 
-
-
 \textbf{Solution 4}
 
 
@@ -1427,11 +1248,6 @@ For this problem, the key is to find the $\frac{[\triangle{B_nB_{n-1}C_n}]}{[\tr
 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2013}) For $\pi \le \theta < 2\pi$, let
@@ -1475,8 +1291,6 @@ after adding term-by-term. Similar term-by-term adding yields
 
 
 
-
-
 \textbf{Solution 2}
 
 Use sum to product formulas to rewrite $P$ and $Q$
@@ -1498,8 +1312,6 @@ Use sum to product formulas to rewrite $P$ and $Q$
  \[\sin\theta = -\frac{17}{19} \implies \boxed{036}\]
 
  
-
-
 
 
 
@@ -1540,8 +1352,6 @@ Note that
 
 
 
-
-
 \textbf{Solution 4}
 
 A bit similar to Solution 3. We use $\phi = \theta+90^\circ$ because the progression cycles in $P\in (\sin 0\theta,\cos 1\theta,-\sin 2\theta,-\cos 3\theta\dots)$. So we could rewrite that as $P\in(\sin 0\phi,\sin 1\phi,\sin 2\phi,\sin 3\phi\dots)$.
@@ -1566,8 +1376,6 @@ A bit similar to Solution 3. We use $\phi = \theta+90^\circ$ because the progres
  Since $y<0$ because $\pi<\theta<2\pi$, $y=\sin\theta=-\frac{51}{57}=-\frac{17}{19}$. Adding up, $17+19=\boxed{036}$.
 
  
-
-
 
 
 
@@ -1598,8 +1406,6 @@ We notice $\sin\theta=-\frac{i}{2}(e^{i\theta}-e^{-i\theta})$ and $\cos\theta=\f
 
 
 
-
-
 \textbf{Solution 6}
 
 Follow solution 3, up to the point of using the geometric series formula
@@ -1625,8 +1431,6 @@ Follow solution 3, up to the point of using the geometric series formula
 
 
  
-
-
 
 
 	\item (\textit{AIME I 2013}) Let $N$ be the number of ordered triples $(A,B,C)$ of integers satisfying the conditions: 
@@ -1663,8 +1467,6 @@ Now we return to condition $\text{(c)}$, which now implies that $(A,B,C)\equiv(-
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $(A, B, C) = (B-x, B, B+x)$ and $(b, a, c) = (a-y, a, a+y)$. Now the 3 differences would be 
@@ -1691,8 +1493,6 @@ The difference between $(4)$ and $(5)$ is $x+1$, which should be divisible by 3.
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $d=B-A=C-B$ and $e=a-b=c-a$ be the common difference of the two sequences. We have \begin{align*}A=a+pi\\B=b+pj\\C=c+pk\end{align*}
@@ -1710,8 +1510,6 @@ Subtracting the two equations again, we find
  \[16+16+15+15+\ldots+1+1=\boxed{272}\]
 
  
-
-
 
 
 \end{enumerate}

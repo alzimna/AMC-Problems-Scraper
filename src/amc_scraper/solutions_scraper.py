@@ -14,6 +14,32 @@ from .utils import *
 from .config import *
 from .scraper import *
 
+def video_condition(tag) :
+    if tag.name in ['h2','h3'] :
+        if len(tag.find_all('span')) > 0 :
+            for child in tag.children :
+                x = child.get('id','').lower()
+                cek = ['video','mathtalks','megamath']
+                for c in cek :
+                    if c in x :
+                        return True
+        return False
+    
+    if tag.name in ['p','ul'] :
+        if tag.find_all('a') == 0 :
+            return False
+
+        links = tag.find_all('a')
+        for temp in links :            
+            if temp.name == 'a' :
+                cek = ['youtu','acad','bilibili','euclideanmathcircle']
+                x = temp.get('href','')
+                for c in cek :
+                    if c in x :
+                        return True
+    return False
+
+
 def get_solutions_from_page(source,number) :
     s = rf"{source}_Problems/Problem_{number}"
     content = get_soup(s,'s')
@@ -48,6 +74,9 @@ def get_solutions_from_page(source,number) :
 
         if re.match(r'^~',child.text) :
             continue
+
+        if video_condition(child) :
+            break
         
         if "wikitable" in (child.get("class") or []):
             break
@@ -59,13 +88,12 @@ def get_solutions_from_page(source,number) :
         solutions_by_number[f"solution_{current_number}"]["content"] += str(child)
     return solutions_by_number
 
-def get_solutions_from_source(source, workers = 3) :
+def get_solutions_from_source(source, numprob, workers = 3) :
     solutions = []
 
-    numbers = range(1, 16)
+    numbers = range(1, numprob+1)
     with ThreadPoolExecutor(max_workers=workers) as pool:
         records = pool.map(lambda n: get_solutions_from_page(source, n), numbers)
-    
 
     for n,rec in zip(numbers,records) :
         solution = dict()
@@ -79,8 +107,8 @@ def get_solutions_from_source(source, workers = 3) :
 def get_solutions_full(contest,
                     save_json=False,
                     chunk_size=3,
-                    num = 15,
-                    workers = 3) :
+                    num = 15) :
+    
     _,pairs = generate_all_and_pairs('s',contest)
     pairs = pairs[:min(num,len(pairs))]
     downloaded = check_retrieved_file('s',contest)
@@ -94,10 +122,8 @@ def get_solutions_full(contest,
 
     try :
         for i,chunk in bar :
-            for year,source in chunk :
-                sols = get_solutions_from_source(source,workers)
-                temp = re.search(PATTERN_VERSION,source)
-                vers = temp.group(1) if (temp and temp.group(1)) else 'I'
+            for year,source,vers,numprob in chunk :
+                sols = get_solutions_from_source(source,numprob,chunk_size)
                 for sol in sols :
                     sol['year'] = year
                     sol['version'] = vers

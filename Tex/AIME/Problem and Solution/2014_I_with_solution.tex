@@ -16,8 +16,6 @@ The rectangle is divided into three smaller rectangles with a width of 50 mm and
  
 
 
-
-
 	\item (\textit{AIME I 2014}) An urn contains $4$ green balls and $6$ blue balls. A second urn contains $16$ green balls and $N$ blue balls. A single ball is drawn at random from each urn. The probability that both balls are of the same color is $0.58$. Find $N$.
 
 
@@ -41,8 +39,6 @@ First, we find the probability both are green, then the probability both are blu
  
 
 
-
-
 	\item (\textit{AIME I 2014}) Find the number of rational numbers $r$, $0<r<1,$ such that when $r$ is written as a fraction in lowest terms, the numerator and the denominator have a sum of $1000$.
 
 
@@ -59,16 +55,12 @@ Let the numerator and denominator $x,y$ with $\gcd(x,y)=1$ and $x+y = 1000.$ Now
 
 
 
-
-
 \textbf{Solution 2}
 
 If the initial manipulation is not obvious, consider the Euclidean Algorithm. Instead of using $\frac{n}{m}$ as the fraction to use the Euclidean Algorithm on, we can rewrite this as $\frac{500-x}{500+x}$ or 
  \[\gcd(500+x,500-x)=\gcd((500+x)+(500-x),500-x)=\gcd(1000,500-x).\] Thus, we want $\gcd(1000,500-x)=1$. You can either proceed as Solution $1$, or consider that no even numbers work, limiting us to $250$ choices of numbers and restricting $x$ to be odd. If $x$ is odd, $500-x$ is odd, so the only possible common factors $1000$ and $500-x$ can share are multiples of $5$. Thus, we want to avoid these. There are $50$ odd multiples of $5$ less than $500$, so the answer is $250-50=\boxed{200}$.
 
  
-
-
 
 
 
@@ -80,15 +72,11 @@ Say $r=\frac{d}{1000-d}$; then $1\leq d\leq499$. If this fraction is reducible, 
 
 
 
-
-
 \textbf{Solution 4}
 
 We know that the numerator of the fraction cannot be even, because the denominator would also be even. We also know that the numerator cannot be a multiple of $5$ because the denominator would also be a multiple of $5$. Proceed by listing out all the other possible fractions and we realize that the numerator and denominator are always relatively prime. We have $499$ fractions to start with, and $250$ with odd numerators. Subtract $50$ to account for the multiples of $5$, and we get $\boxed{200}$.
 
  
-
-
 
 
 
@@ -114,8 +102,6 @@ We know that the set of these rational numbers is from $\dfrac{1}{999}$ to $\dfr
 
 
 
-
-
 \textbf{Solution 6}
 
 We notice that there are a total of $400$ fractions that are in simplest form where the numerator and denominator add up to $1000$. Because the numerator and denominator have to be relatively prime, there are $\varphi(1000)=400$ fractions. Half of these are greater than $1$, so the answer is $400\div2=\boxed{200}$
@@ -123,8 +109,6 @@ We notice that there are a total of $400$ fractions that are in simplest form wh
  - bedwarsnoob
 
  
-
-
 
 
 
@@ -137,8 +121,6 @@ Our fraction can be written in the form $\frac{1000 - a}{a} = \frac{1000}{a} - 1
 
 
 
-
-
 \textbf{Solution 8 (Simplest)}
 
 Suppose our fraction is $\frac{a}{b}$. The given condition means $a+b=1000$. Now, if $a$ and $b$ share a common factor greater than $1$, then the expression $a+b$ must also contain that common factor. This means our fraction cannot have a factor of $5$ or be even.
@@ -148,6 +130,12 @@ Suppose our fraction is $\frac{a}{b}$. The given condition means $a+b=1000$. Now
  
 
 
+
+\textbf{Solution 9}
+
+We can see that by picking a numerator for the fraction, the denominator will be forced. For the condition of the problem to be true, the numerator and denominator must be relatively prime. We know that the numerator can not be even, eliminating $249$ fractions out of the total $499$ possible. We now have $250$ fractions left. We notice that we must eliminate all multiples of 5 in the numerator, as these fractions will simplify. We subtract the $50$ multiples of $5$ to get our answer of $\boxed{200}$.~jamespudi
+
+ 
 
 
 	\item (\textit{AIME I 2014}) Jon and Steve ride their bicycles along a path that parallels two side-by-side train tracks running the east/west direction. Jon rides east at $20$ miles per hour, and Steve rides west at $20$ miles per hour. Two trains of equal length, traveling in opposite directions at constant but different speeds each pass the two riders. Each train takes exactly $1$ minute to go past Jon. The westbound train takes $10$ times as long as the eastbound train to go past Steve. The length of each train is $\frac{m}{n}$ miles, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -166,11 +154,68 @@ For the purposes of this problem, we will use miles and minutes as our units; th
 
  Consider the problem from the bikers' moving frame of reference. In order to pass Jon, the first train has to cover a distance equal to its own length, at a rate of $r_1 - \dfrac{1}{3}$. Similarly, the second train has to cover a distance equal to its own length, at a rate of $r_2 + \dfrac{1}{3}$. Since the times are equal and $d = rt$, we have that $\dfrac{d}{r_1 - \dfrac{1}{3}} = \dfrac{d}{r_2 + \dfrac{1}{3}}$. Solving for $r_1$ in terms of $r_2$, we get that $r_1 = r_2 + \dfrac{2}{3}$.
 
- Now, let's examine the times it takes the trains to pass Steve. This time, we augment train 1's speed by $\dfrac{1}{3}$
+ Now, let's examine the times it takes the trains to pass Steve. This time, we augment train 1's speed by $\dfrac{1}{3}$, and decrease train 2's speed by $\dfrac{1}{3}$. Thus, we have that $\dfrac{d}{r_2 - \dfrac{1}{3}} = 10\dfrac{d}{r_1 + \dfrac{1}{3}}$.
+
+ Multiplying this out and simplifying, we get that $r_1 = 10r_2 - \dfrac{11}{3}$. Since we now have 2 expressions for $r_1$ in terms of $r_2$, we can set them equal to each other:
+
+ $r_2 + \dfrac{2}{3} = 10r_2 - \dfrac{11}{3}$. Solving for $r_2$, we get that $r_2 = \dfrac{13}{27}$. Since we know that it took train 2 1 minute to pass Jon, we know that $1 = \dfrac{d}{r_2 + \dfrac{1}{3}}$. Plugging in $\dfrac{13}{27}$ for $r_2$ and solving for $d$, we get that $d = \dfrac{22}{27}$, and our answer is $27 + 22 = \boxed{049}$.
 
  
 
 
+
+\textbf{Solution 2}
+
+Using a similar approach to Solution 1, let the speed of the east bound train be $a$ and the speed of the west bound train be $b$.
+
+ So $a-20=b+20$ and $a+20=10(b-20)$.
+
+ From the first equation, $a=b+40$. Substituting into the second equation,
+ \[b+60=10b-200\]
+ \[260=9b\]
+ \[b=\frac{260}{9}\text{ mph}\]This means that 
+ \[a=\frac{260}{9}+40=\frac{620}{9}\text{ mph}\]Checking, we get that the common difference in Jon's speed and trains' speeds is $\frac{440}{9}$ and the differences for Steve is $\frac{800}{9}$ and $\frac{80}{9}$.
+
+ This question assumes the trains' lengths in MILES:
+ \[\frac{440}{9}\cdot \frac{1}{60}=\frac{440}{540}=\frac{22}{27}\text{ miles}\]Adding up, we get $22+27=\boxed{049}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let the length of the trains be $L$, let the rate of the westward train be $W_{R}$, ;et the rate of the eastward train be $E_{R}$, and let the time it takes for the eastward train to pass Steve be $E_{T}$.
+
+ We have that
+
+ $L=(\frac{1}{60})(W_{R}+20)$
+
+ $L=(\frac{1}{60})(E_{R}-20)$.
+
+ Adding both of the equations together, we get that 
+
+ $2L=\frac{W_{R}}{60}+\frac{E_{R}}{60}\implies 120L=W_{R}+E_{R}$.
+
+ Now, from the second part of the problem, we acquire that
+
+ $L=(E_{T})(E_{R}+20)$
+
+ $L=(10E_{T})(W_{R}-20)$
+
+ Dividing the second equation by the first, we get that...$1=\frac{10(W_{R}-20)}{E_{R}+20}\implies E_{R}+20=10W_{R}-200\implies E_{R}+220=10W_{R}\implies E_{R}=10W_{R}-220$.
+
+ Now, substituting into the $120L=W_{R}+E_{R}$.
+
+ $120L=W_{R}+(10W_{R}-220)\implies 120L= 11W_{R}-220\implies W_{R}=\frac{120L+220}{11}$.
+
+ Finally, plugging this back into our very first equation..
+
+ $L=(\frac{1}{60})((\frac{120L+220}{11})+20)\implies 660L=120L+440\implies 540L=440\implies L=\frac{22}{27}$.
+
+ Hence, the answer is $22+27=\boxed{049}$.
+
+ 
 
 
 	\item (\textit{AIME I 2014}) Let the set $S = \{P_1, P_2, \dots, P_{12}\}$ consist of the twelve vertices of a regular $12$-gon. A subset $Q$ of $S$ is called communal if there is a circle such that all points of $Q$ are inside the circle, and all points of $S$ not in $Q$ are outside of the circle. How many communal subsets are there? (Note that the empty set is a communal subset.)
@@ -188,6 +233,12 @@ By looking at the problem and drawing a few pictures, it quickly becomes obvious
  
 
 
+
+\textbf{Solution 2}
+
+There are $12$ possible choices for the starting vertex. We notice that the vertices we choose must be in a string and not disjoint. There are now $11$ choices for how long you want your string of vertices to be. We multiply $12$ by $11$. We also must add the empty set, as well as the set of all vertices, so we get our answer of $\boxed{134}$.~jamespudi
+
+ 
 
 
 	\item (\textit{AIME I 2014}) The graphs $y = 3(x-h)^2 + j$ and $y = 2(x-h)^2 + k$ have y-intercepts of $2013$ and $2014$, respectively, and each graph has two positive integer x-intercepts. Find $h$.
@@ -215,8 +266,6 @@ $\textbf{Can someone explain the logic of guessing 36?}$
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $x=0$ and $y=2013$ for the first equation, resulting in $j=2013-3h^2$.  Substituting back in to the original equation, we get $y=3(x-h)^2+2013-3h^2$.
@@ -230,8 +279,6 @@ Let $x=0$ and $y=2013$ for the first equation, resulting in $j=2013-3h^2$.  Subs
  Note on the previous note: we still must use the second equation since we could also use $671=671\times1$, yielding $h=336.$ This answer however does not check out with the second equation which is why it is invalid.
 
  
-
-
 
 
 
@@ -265,8 +312,6 @@ Similar to the first two solutions, we deduce that $\text{(-)}j$ and $\text{(-)}
 
 
 
-
-
 \textbf{Solution 4}
 
 First, we expand both equations to get $y=3x^2-6hx+3h^2+j$ and $y=2x^2-4hx+2h^2+k$. The $y$-intercept for the first equation can be expressed as $3h^2+j$. From this, the x-intercepts for the first equation can be written as 
@@ -282,8 +327,6 @@ First, we expand both equations to get $y=3x^2-6hx+3h^2+j$ and $y=2x^2-4hx+2h^2+
  Thus, $h=\boxed{036}$.
 
  
-
-
 
 
 
@@ -311,15 +354,11 @@ We have the equation $y=3(x-h)^2 + j.$
 
 
 
-
-
 \textbf{Solution 6 (Vieta's solution)}
 
 First, we start of exactly like solutions above and we find out that $j=2013-3h^2$ and $k=2014-2h^2$ We then plug j and k into $3(x-h)^2+j$ and $y=2(x-h)^2+k$ respectively. After that, we get two equations, $y=3x^2-6xh+2013$ and $y=2x^2-4xh+2014$. We can apply Vieta's. Let the roots of the first equation be $a, b$ and the roots of the second equation be $c, d$. Thus, we have that $a\cdot b=1007$, $a+b=2h$ and $c\cdot d=671$, $c+d=2h$. Simple evaluations finds that $\boxed{h=36}$
 
  
-
-
 
 
 
@@ -329,8 +368,6 @@ Note that the resulting quadratics can be rewritten as $3x^2-6xh+2013$ and $2x^2
  \[r_1+r_2=s_1+s_2=2h,\,\,\, r_1r_2=671=61\times 11,\,\,\,\text{and}\,\,\, s_1s_2=1007=19\times 53.\]It so happens that $61+11=19+53=72$, so $2h=72\implies h=\boxed{036}$.
 
  
-
-
 
 
 
@@ -345,8 +382,6 @@ Not my solution, please take it down if it violates rules but this is copied fro
  \[2h = 61 + 11 = 19 + 53 = 72,\]so $h = \boxed{36}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2014}) Let $w$ and $z$ be complex numbers such that $|w| = 1$ and $|z| = 10$. Let $\theta = \arg \left(\frac{w-z}{z}\right)$. The maximum possible value of $\tan^2 \theta$ can be written as $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$. (Note that $\arg(w)$, for $w \neq 0$, denotes the measure of the angle that the ray from $0$ to $w$ makes with the positive real axis in the complex plane.)
@@ -380,8 +415,6 @@ Let $w = \operatorname{cis}{(\alpha)}$ and $z = 10\operatorname{cis}{(\beta)}$. 
 
 
 
-
-
 \textbf{Solution 2}
 
 Without the loss of generality, one can let $z$ lie on the positive x axis and since $arg(\theta)$ is a measure of the angle if $z=10$ then $arg(\dfrac{w-z}{z})=arg(w-z)$ and we can see that the question is equivalent to having a triangle $OAB$ with sides $OA =10$ $AB=1$ and $OB=t$ and trying to maximize the angle $BOA$
@@ -400,8 +433,6 @@ Without the loss of generality, one can let $z$ lie on the positive x axis and s
  Note: You can also realize that the max $\theta$ is when the line from $0$ is tangent to the circle of radius $1$ centered at $10.$
 
  
-
-
 
 
 
@@ -425,8 +456,6 @@ Note that $\frac{w-z}{z}=\frac{w}{z}-1$, and that $\left|\frac{w}{z}\right|=\fra
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $\omega = a+bi$ and $z = c+di$. Note 
@@ -435,8 +464,6 @@ Let $\omega = a+bi$ and $z = c+di$. Note
  \[\tan^2{\theta}= \frac{(-ad+bc)^2}{(ac+bd-100)^2} = \frac{100-x^2}{(100-x)^2}\] Taking the derivative and setting equal to zero (or via substitution and quadratic simplification), we obtain max occurs at $x = 1$. Substituting back in gives $\tan^2\theta = \frac{1}{99}$, and an answer of $1+99=\boxed{100}$.
 
  
-
-
 
 
 
@@ -457,11 +484,6 @@ Thus, $10k=\sqrt{1+k^2}\cos{(x+\phi)}$. It follows that
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME I 2014}) The positive integers $N$ and $N^2$ both end in the same sequence of four digits $abcd$ when written in base 10, where digit $a$ is not zero. Find the three-digit number $abc$.
 
 
@@ -478,8 +500,6 @@ We have that $N^2 - N = N(N - 1)\equiv 0\mod{10000}$
  \[N-1 \equiv -1 \pmod {16}.\] Since $625 \equiv 1 \pmod{16}$, we know that $15 \cdot 625 = 9375 \equiv 15 \equiv -1 \mod{16}$. Thus, $N-1 = 9375$, so $N = 9376$, and our answer is $\boxed{937}$.
 
  
-
-
 
 
 
@@ -574,8 +594,6 @@ let $N= 10000t+1000a+100b+10c+d$ for positive integer values $t,a,b,c,d$.When we
 
 
 
-
-
 \textbf{Solution 3 (general)}
 
 By the Chinese Remainder Theorem, the equation $N(N-1)\equiv 0\pmod{10000}$ is equivalent to the two equations:
@@ -595,8 +613,6 @@ Since $N$ and $N-1$ are coprime, the only solutions are when $(N\mod{16},N\mod{6
  The four candidate digit strings $abcd$ are then $0000,0001,0625,9376$. Of those, only $9376$ has nonzero first digit, and therefore the answer is $\boxed{937}$.
 
  
-
-
 
 
 
@@ -638,15 +654,11 @@ Since $N$ and $N-1$ are coprime, the only solutions are when $(N\mod{16},N\mod{6
 
 
 
-
-
 \textbf{Solution 5 (easy observations)}
 
 We are given that $abcd^2$ ends in $abcd$, which means that $d^2$ ends in $d$. The only possible values for which this works is $d=0,1,5,6$. Notice that if we set $d=0$, we will have $c=0, b=0, a=0$, which is not valid since $a\neq0$. Furthermore, we can see that $d\neq1$ by quickly going over $11^2, 12^2, ..., 19^2$ and seeing that none of those numbers work. From number sense, we know that $B25^2$ ends in $...625$ regardless of $B$. So, in this case, $b=6$. However, notice that $76^2$ ends in $...76$, and we can quickly find that $376^2=141376$. Going back to $A625^2$, we notice that no matter what $A$ is, $A625^2=...0625$. Since $A\neq0$, this case is not valid (write out $A625^2$ and multiply to see that the thousands digit is $5a+3+2+5+5a=10a+10$ which always ends in $0$). We turn our focus to $A376^2$. Write out $376^2$ and multiply it out to see that the thousands digit is $6a+2+6+2+6a+1=12a+1$. There is an extra $1$ due to carry over. Quickly testing numbers, the only possible value for $A$ is $9$. So, $abcd=9376$ and our answer is $abc=\boxed{937}$.
 
  
-
-
 
 
 
@@ -672,8 +684,6 @@ If $N\equiv 1\pmod{16}$ and $N\equiv 0\pmod{625}$, then $N\equiv 625\pmod{10000}
  
 
 
-
-
 	\item (\textit{AIME I 2014}) Let $x_1< x_2 < x_3$ be the three real roots of the equation $\sqrt{2014} x^3 - 4029x^2 + 2 = 0$. Find $x_2(x_1+x_3)$.
 
 
@@ -691,8 +701,6 @@ Substituting $n$ for $2014$, we get
  \[(\sqrt{n}x - 1)(x^2 - 2(\sqrt{n}x+1))\] This means that $\frac{1}{\sqrt{n}}$ is a root, and the other two roots are the roots of $x^2 - 2\sqrt{n}x - 2$. Note that the constant term of the quadratic is negative, so one of the two roots is positive and the other is negative. In addition, by Vieta's Formulas, the roots sum to $2\sqrt{n}$, so the positive root must be greater than $2\sqrt{n}$ in order to produce this sum when added to a negative value. Since $0 < \frac{1}{\sqrt{2014}} < 2\sqrt{2014}$ is clearly true, $x_2 = \frac{1}{\sqrt{2014}}$ and $x_1 + x_3 = 2\sqrt{2014}$. Multiplying these values together, we find that $x_2(x_1+x_3) = \boxed{002}$.
 
  
-
-
 
 
 
@@ -719,8 +727,6 @@ From Vieta's formula, we know that
 
 
 
-
-
 \textbf{Solution 3}
 
 Observing the equation, we notice that the coefficient for the middle term $-4029$ is equal to 
@@ -744,8 +750,6 @@ Observing the equation, we notice that the coefficient for the middle term $-402
 
 
 
-
-
 \textbf{Solution 4}
 
 By Vieta's, we are seeking to find $x_2(x_1+x_3)=x_1x_2+x_2x_3=-x_1x_3=\frac{2}{\sqrt{2014}x_2}$.
@@ -761,8 +765,6 @@ By Vieta's, we are seeking to find $x_2(x_1+x_3)=x_1x_2+x_2x_3=-x_1x_3=\frac{2}{
  Stormersyle & mathleticguyyy
 
  
-
-
 
 
 
@@ -782,8 +784,6 @@ Let $x =\frac{y}{\sqrt{2014}}.$
 
 
 
-
-
 \textbf{Solution 6}
 
 $a=\sqrt{2014}$ looks arbitrary and related to $b=-4019$ ($b=-(2a^2+1)$), so let k = $\sqrt{2014}$.
@@ -799,8 +799,6 @@ $a=\sqrt{2014}$ looks arbitrary and related to $b=-4019$ ($b=-(2a^2+1)$), so let
  In the second case, $x^2 - 2\sqrt{2014} - 2 = 0$. The solutions are $\sqrt{2014} \pm \sqrt{2016}$. The sum of these 2 solutions is $2 \sqrt{2014}$, and $\frac{1}{\sqrt{2014}}$ is the middle solution, and thus, $(x_1 + x_3) \cdot x_2 = 2$
 
  
-
-
 
 
 
@@ -837,8 +835,6 @@ We calculate that the minimum possible value of $x_2(x_1 + x_3)$ is $\frac{88-\f
 
 
 
-
-
 \textbf{Solution 8}
 
 Let $a=x\sqrt{2014}$. We have $\sqrt{2014}x^3-4029x^2+2=ax^2-2a^2-x^2+2=x^2(a-1)-2(a^2-1)=x^2(a-1)-2(a-1)(a+1)=(a-1)(x^2-2a-2)=0$, so $a=x\sqrt{2014}=1$ or $x^2-2a-2=x^2-2\sqrt{2014}x-2=0$. As such, the solutions are at $x=\frac{1}{\sqrt{2014}}$ and $x=\frac{2\sqrt{2014}\pm\sqrt{4\cdot2014+8}}{2}$. Note that $\frac{2\sqrt{2014}-\sqrt{4\cdot2014+8}}{2}<0<\frac{1}{\sqrt{2014}}<\sqrt{2014}<\frac{2\sqrt{2014}+\sqrt{4\cdot2014+8}}{2}$, so $x_2(x_1+x_3)=\frac{x_1+x_3}{\sqrt{2014}}=\frac{2\sqrt{2014}}{\sqrt{2014}}=\boxed{2}$. ($x_1+x_3=2\sqrt{2014}$ by vietas.)
@@ -846,8 +842,6 @@ Let $a=x\sqrt{2014}$. We have $\sqrt{2014}x^3-4029x^2+2=ax^2-2a^2-x^2+2=x^2(a-1)
  -zhoujef000
 
  
-
-
 
 
 
@@ -870,8 +864,6 @@ Rewrite the polynomial as $nx^3 - (2n^2+1)x^2 + 2 = 0$. The answer probably hold
 Don't use this solution. If you substitute $n=0$ into $nx^3 - (2n^2+1)x^2+2=0,$ it actually becomes $-x^2+2=0,$ not $x^2+2=0.$ So this solution is just wrong, because their answer comes out to be $-2,$ which is wrong.
 
  
-
-
 
 
 	\item (\textit{AIME I 2014}) A disk with radius $1$ is externally tangent to a disk with radius $5$. Let $A$ be the point where the disks are tangent, $C$ be the center of the smaller disk, and $E$ be the center of the larger disk. While the larger disk remains fixed, the smaller disk is allowed to roll along the outside of the larger disk until the smaller disk has turned through an angle of $360^\circ$. That is, if the center of the smaller disk has moved to the point $D$, and the point on the smaller disk that began at $A$ has now moved to point $B$, then $\overline{AC}$ is parallel to $\overline{BD}$. Then $\sin^2(\angle BEA)=\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -916,8 +908,6 @@ Don't use this solution. If you substitute $n=0$ into $nx^3 - (2n^2+1)x^2+2=0,$ 
 
 
 
-
-
 \textbf{Solution 2}
 
 First, we determine how far the small circle goes. For the small circle to rotate completely around the circumference, it must rotate $5$ times (the circumference of the small circle is $2\pi$ while the larger one has a circumference of $10\pi$) plus the extra rotation the circle gets for rotating around the circle, for a total of $6$ times. Therefore, one rotation will bring point $D$ $60^\circ$ from $C$.
@@ -946,8 +936,6 @@ First, we determine how far the small circle goes. For the small circle to rotat
 
 
 
-
-
 \textbf{Solution 3}
 
 We could use coordbash to solve this problem.Assume that $E$ is the origin, and $E, A, C$ are collinear points on the x-axis. Then it's trivial to see that $D=(6\cos(60^\circ),6\sin(60^\circ))$, and since $BD$ is parallel to $AC$, $B=(6\cos(60^\circ)-1,6\sin(60^\circ))$. After simplifying, we get $B=(2,3\sqrt{3})$.
@@ -957,8 +945,6 @@ We could use coordbash to solve this problem.Assume that $E$ is the origin, and 
  -Marchk26
 
  
-
-
 
 
 	\item (\textit{AIME I 2014}) A token starts at the point $(0,0)$ of an $xy$-coordinate grid and then makes a sequence of six moves. Each move is 1 unit in a direction parallel to one of the coordinate axes. Each move is selected randomly from the four possible directions and independently of the other moves. The probability the token ends at a point on the graph of $|y|=|x|$ is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -979,8 +965,6 @@ Perform the coordinate transformation $(x, y)\rightarrow (x+y, x-y)$. Then we ca
 
 
  
-
-
 
 
 
@@ -1034,8 +1018,6 @@ We have 4 possible moves: U, D, R, and L. The total number of paths that could b
 
 
 
-
-
 \textbf{Solution 3 (Casework)}
 
 We split this into cases by making a chart. In each row, the entries $(\pm1)$ before the dividing line represent the right or left steps (without regard to order), and the entries after the dividing line represent the up or down steps (again, without regard to order). This table only represents the cases where the ending position $(x,y)$ satisfies $x=y$.
@@ -1051,8 +1033,6 @@ We split this into cases by making a chart. In each row, the entries $(\pm1)$ be
  Thus, there are $800 + 840 + 480 + 40 = 2160$ possibilities where $|x|=|y|$. Because there are $4^6$ total possibilities, the probability is $\frac{2160}{4^6} = \frac{135}{256}$, so the answer is $\boxed{391}.$
 
  
-
-
 
 
 
@@ -1085,8 +1065,6 @@ Denote $(x, y)_n$ the probability that starting from point $(x, y)$, the token r
 
 
 
-
-
 \textbf{Solution 5 (Generating Functions)}
 
 For any point $(x,y)$ on the coordinate plane, we can represent it as the term $a^xb^y$. Then, moving right is equivalent to multiplying by $a$, moving left is equivalent to multiplying by $1/a$, and similarly for up/down with $b$ and $1/b$. Because, on every move, the possibilities are these four directions, and each is equally likely, each move can be represented by multiplying by $a+\frac{1}{a}+b+\frac{1}{b}$. Thus, the possibilities after $6$ moves are the same as the coefficients of $\left(a+\frac{1}{a}+b+\frac{1}{b}\right)^6$. By symmetry, we just need to find the number of ways for the token to reach $(0,0),(1,1),(2,2),\text{ and }(3,3)$. By the multinomial theorem, the coefficient of $a^3b^3$ is $\binom{6}{3,3}=20$. Similarly, the coefficient of $a^2b^2$ is $2\binom{6}{3,2,1}=120$. The coefficient of $ab$ is $\binom{6}{2,2,1,1}+2\binom{6}{3,2,1}=300$. Finally, the constant term is $2\binom{6}{2,2,1,1}+2\binom{6}{3,3}=400$. Because the total number of possibilities is $4^6$, the probability is 
@@ -1096,8 +1074,6 @@ For any point $(x,y)$ on the coordinate plane, we can represent it as the term $
 
 
  
-
-
 
 
 	\item (\textit{AIME I 2014}) Let $A=\{1,2,3,4\}$, and $f$ and $g$ be randomly chosen (not necessarily distinct) functions from $A$ to $A$. The probability that the range of $f$ and the range of $g$ are disjoint is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m$.
@@ -1123,8 +1099,6 @@ The natural way to go is casework. And the natural process is to sort $f$ and $g
  Total, divided by $4^8$, gets $\frac{3 * (1 + 2 * 7^2 + 2^2 * 7 + 2^3 * 3)}{4^7}$, with numerator $\boxed{453}$.
 
  
-
-
 
 
 
@@ -1213,8 +1187,6 @@ We note there are $4^4 = 256$ possibilities for each of $f$ and $g$ from $A$ to 
 
 
 
-
-
 \textbf{Solution 3 (simplification of Solution 2)}
 
 As before, there are 4 functions with a range of size 1, 84 with a range of size 2, and 144 with a range of size 3. If the range of $f$ has size $k$, the codomain of $g$ is restricted to a set of size $4 - k$. Any function from $A$ into this codomain will do, so there are $(4 - k)^4$ possibilities for $g$ given a function $f$. The probability of $f$ and $g$ having disjoint ranges is then
@@ -1224,11 +1196,6 @@ As before, there are 4 functions with a range of size 1, 84 with a range of size
 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2014}) On square $ABCD$, points $E,F,G$, and $H$ lie on sides $\overline{AB},\overline{BC},\overline{CD},$ and $\overline{DA},$ respectively, so that $\overline{EG} \perp \overline{FH}$ and $EG=FH = 34$. Segments $\overline{EG}$ and $\overline{FH}$ intersect at a point $P$, and the areas of the quadrilaterals $AEPH, BFPE, CGPF,$ and $DHPG$ are in the ratio $269:275:405:411.$ Find the area of square $ABCD$.
@@ -1269,8 +1236,6 @@ Let $s$ be the side length of $ABCD$, let $Q$, and $R$ be the midpoints of $\ove
 
 
 
-
-
 \textbf{Solution 1}
 
 Let $s$ be the side length of $ABCD$, let $[ABCD]=1360a$. Let $Q$ and $R$ be the midpoints of $\overline{EG}$ and $\overline{FH}$, respectively; because $269+411=275+405$, $Q$ is also the center of the square. Draw $\overline{IJ} \parallel \overline{HF}$ through $Q$, with $I$ on $\overline{AD}$, $J$ on $\overline{BC}$. 
@@ -1286,8 +1251,6 @@ Let $s$ be the side length of $ABCD$, let $[ABCD]=1360a$. Let $Q$ and $R$ be the
  \[16a^2+\frac 94 =\frac{68}{5}a,\quad \text{i.e.}\quad 320a^2-272a+45=0,\] with roots $a=\frac 9{40}$ or $a=\frac58$. The former leads to a square with diagonal less than $34$, which can't be, since $EG=FH=34$; therefore $a=\frac 58$ and $[ABCD]=850$.
 
  
-
-
 
 
 
@@ -1315,8 +1278,6 @@ $269+275+405+411=1360$, a multiple of $17$. In addition, $EG=FH=34$, which is $1
 
 
 
-
-
 \textbf{Solution 3}
 
 Continue in the same way as solution 1 to get that $POK$ has area $3a$, and $OK = \frac{d}{10}$. You can then find $PK$ has length $\frac 32$.
@@ -1339,8 +1300,6 @@ Continue in the same way as solution 1 to get that $POK$ has area $3a$, and $OK 
  -Alexlikemath
 
  
-
-
 
 
 
@@ -1372,8 +1331,6 @@ Let $O$ be the center of the square. Then let $Q$ be on $HF$ susch that $OQ \per
 
 
 
-
-
 \textbf{Solution 5 (Coordinate Geometry)}
 
 Let $s$ be the side length of $ABCD$. We see that quadrilaterals $BCGE$ and $ADGE$ each occupies half the area of $ABCD$. This follows that $BE=DG$. Let $a=AF,b=BE,c=AH$. We establish a coordiante system with $B$ being the origin. Here is our setup:\begin{align*}A&=(0,s)\\B&=(0,0)\\C&=(s,0)\\D&=(s,s)\\E&=(0,b)\\F&=(a,0)\\G&=(s,s-b)\\H&=(c,s)\\P&=(p,q)\\FH&:y=-\frac{s}{a-c}(x-a)\end{align*}
@@ -1395,11 +1352,6 @@ Pluging in the expressions for $p',q'$, we have
  \[s^2=\frac{34^2}{1+u^2}=34^2\cdot\frac{25}{34}=\boxed{850}\]
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2014}) Let $m$ be the largest real solution to the equation
@@ -1457,8 +1409,6 @@ Note: When $x$ is barely larger than $19$, then $\frac{19}{x-19}$ is very large,
 
 
 
-
-
 \textbf{Solution 2}
 
 Proceed as with Solution 1 until we get the following.
@@ -1481,8 +1431,6 @@ Proceed as with Solution 1 until we get the following.
 
 
 
-
-
 \textbf{Solution 3}
 
 Stolen from forums
@@ -1493,15 +1441,16 @@ Stolen from forums
 
 
 
-
-
 \textbf{Solution 4}
 
-We first consider adding $1$ to each fraction, which yields $\frac{x}{x-3} + \frac{x}{x-5} + \frac{x}{x-17} + \frac{x}{x-19} = x^2-11x$. We now divide by $x$ on both sides to yield $\frac{1}{x-3}+\frac{1}{x-5}+\frac{1}{x-17}+\frac{1}{x-19} = x-11$. Next, consider grouping the $\frac{1}{x-3}$ and $\frac{1}{x-19}$, as well as the $\frac{1}{x-5}$ and $\frac{1}{x-17}$. If we combine these, we get $\frac{2x-22}{(x-3)(x-19)} + \frac{2x-22}{(x-15)(x-7)} = x-11$. Now, let us divide by $2x-22$ on both sides to yield $\frac{1}{(x-3)(x-19)} + \frac{1}{(x-15)(x-7)} = \frac{1}{2}$. We $\frac{(x-3)(x-19)+(x-15)(x-17)}{(x-3)(x-19)(x-5)(x-17)} = \frac{1}{2}$. Doing a bit of algebra bash yields $2(2x^2-44x+142)$ on the LHS after also cross multiplying. As for the RHS, we get $(x^2-22x+85)(x^2-22x+57)$. Now, let $a=x^2-22x+71$. We get $2(2a)=(a-14)(a+14)$, or $a^2-4a-196$. Thus, $a=2+10\sqrt2$ or $a=2-10\sqrt2$. We drop the latter as it is smaller. Next, we get $2+10\sqrt{2}=x^2-22x+71$, or $x^2-22x+(69-10\sqrt2)$. We now complete the square to get $(x-11)^2 - 52 -10\sqrt2=0$. Bringing that to the RHS gives $(x-11)^2=52+10\sqrt2$, so $x=11+\sqrt{52+10\sqrt{2}}$. However, we need to expand the last square root to get $x=11+\sqrt{52+\sqrt{200}}$. Thus, $a+b+c=11+52+200=263$.
+We first consider adding $1$ to each fraction, which yields 
+ \[\frac{x}{x-3} + \frac{x}{x-5} + \frac{x}{x-17} + \frac{x}{x-19} = x^2-11x\]. We now divide by $x$ on both sides to yield 
+ \[\frac{1}{x-3}+\frac{1}{x-5}+\frac{1}{x-17}+\frac{1}{x-19} = x-11\]. Next, consider grouping the $\frac{1}{x-3}$ and $\frac{1}{x-19}$, as well as the $\frac{1}{x-5}$ and $\frac{1}{x-17}$. If we combine these, we get 
+ \[\frac{2x-22}{(x-3)(x-19)} + \frac{2x-22}{(x-15)(x-7)} = x-11\]. Now, let us divide by $2x-22$ on both sides to yield 
+ \[\frac{1}{(x-3)(x-19)} + \frac{1}{(x-15)(x-7)} = \frac{1}{2}\]. We get 
+ \[\frac{(x-3)(x-19)+(x-15)(x-17)}{(x-3)(x-19)(x-5)(x-17)} = \frac{1}{2}\]. Doing a bit of algebra bash yields $2(2x^2-44x+142)$ on the LHS after also cross multiplying. As for the RHS, we get $(x^2-22x+85)(x^2-22x+57)$. Now, let $a=x^2-22x+71$. We get $2(2a)=(a-14)(a+14)$, or $a^2-4a-196$. Thus, $a=2+10\sqrt2$ or $a=2-10\sqrt2$. We drop the latter as it is smaller. Next, we get $2+10\sqrt{2}=x^2-22x+71$, or $x^2-22x+(69-10\sqrt2)$. We now complete the square to get $(x-11)^2 - 52 -10\sqrt2=0$. Bringing that to the RHS gives $(x-11)^2=52+10\sqrt2$, so $x=11+\sqrt{52+10\sqrt{2}}$. However, we need to expand the last square root to get $x=11+\sqrt{52+\sqrt{200}}$. Thus, $a+b+c=11+52+200=263$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2014}) In $\triangle ABC, AB = 3, BC = 4,$ and $CA = 5$. Circle $\omega$ intersects $\overline{AB}$ at $E$ and $B, \overline{BC}$ at $B$ and $D,$ and $\overline{AC}$ at $F$ and $G$. Given that $EF=DF$ and $\frac{DG}{EG} = \frac{3}{4},$ length $DE=\frac{a\sqrt{b}}{c},$ where $a$ and $c$ are relatively prime positive integers, and $b$ is a positive integer not divisible by the square of any prime. Find $a+b+c$.
@@ -1522,8 +1471,6 @@ Since $\angle DBE = 90^\circ$, $DE$ is the diameter of $\omega$. Then $\angle DF
  \[\left(3-\frac{5x}{\sqrt{2}}\right)^2 + \left(4-\frac{5x}{\sqrt{2}}\right)^2 = (5x)^2\]Solving for $x$, we get that $x=\frac{5\sqrt{2}}{14}$, so $DE= 5x =\frac{25 \sqrt{2}}{14}$. Thus, the answer is $25+2+14=\boxed{041}$.
 
  
-
-
 
 
 
@@ -1552,8 +1499,6 @@ Also: $FG=\frac{20}{7}-\frac{5}{2}=\frac{5}{2}-\frac{15}{7}=\frac{5}{14}$. We ca
 
 
 
-
-
 \textbf{Solution 3}
 
 Call $DE=x$ and as a result $DF=EF=\frac{x\sqrt{2}}{2}, EG=\frac{4x}{5}, GD=\frac{3x}{5}$. Since $EFGD$ is cyclic we just need to get $DG$ and using LoS(for more detail see the $2$nd paragraph of Solution $2$) we get $AG=\frac{5}{2}$ and using a similar argument(use LoS again) and subtracting you get $FG=\frac{5}{14}$ so you can use Ptolemy to get $x=\frac{25\sqrt{2}}{14} \implies \boxed{041}$.~
@@ -1562,15 +1507,11 @@ Call $DE=x$ and as a result $DF=EF=\frac{x\sqrt{2}}{2}, EG=\frac{4x}{5}, GD=\fra
 
 
 
-
-
 \textbf{Solution 4}
 
 See inside the $\triangle DEF$, we can find that $AG>AF$ since if $AG<AF$, we can see that Ptolemy Theorem inside cyclic quadrilateral $EFGD$ doesn't work. Now let's see when $AG>AF$, since  $\frac{DG}{EG} = \frac{3}{4}$, we can assume that $EG=4x;GD=3x;ED=5x$, since we know $EF=FD$ so $\triangle EFD$ is isosceles right triangle. We can denote $DF=EF=\frac{5x\sqrt{2}}{2}$.Applying Ptolemy Theorem inside the cyclic quadrilateral $EFGD$ we can get the length of $FG$ can be represented as $\frac{x\sqrt{2}}{2}$. After observing, we can see $\angle AFE=\angle EDG$, whereas $\angle A=\angle EDG$ so we can see $\triangle AEF$ is isosceles triangle. Since $\triangle ABC$ is a $3-4-5$ triangle so we can directly know that the length of AF can be written in the form of $3x\sqrt{2}$. Denoting a point $J$ on side $AC$ with that $DJ$ is perpendicular to side $AC$. Now with the same reason, we can see that $\triangle DJG$ is a isosceles right triangle, so we can get $GJ=\frac{3x\sqrt{2}}{2}$ while the segment $CJ$ is $2x\sqrt{2}$ since its 3-4-5 again. Now adding all those segments together we can find that $AC=5=7x\sqrt{2}$ and $x=\frac{5\sqrt{2}}{14}$ and the desired $ED=5x=\frac{25\sqrt{2}}{14}$which our answer is $\boxed{041}$ ~bluesoul
 
  
-
-
 
 
 
@@ -1594,8 +1535,6 @@ See inside the $\triangle DEF$, we can find that $AG>AF$ since if $AG<AF$, we ca
  \[r = \frac {25 \cdot \sqrt{2}}{28}\implies ED = 2r =  \frac {25 \cdot \sqrt{2}}{14}\implies  \boxed{\textbf{041}}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -1626,8 +1565,6 @@ See inside the $\triangle DEF$, we can find that $AG>AF$ since if $AG<AF$, we ca
 
 
 
-
-
 \textbf{Solution 7}
 
 Let $(BEFGD) = \omega$.By Incenter-Excenter(Fact $5$), $F$ is the angle bisector of $\angle B$.Then by Ratio Lemma we have
@@ -1642,8 +1579,6 @@ Let $(BEFGD) = \omega$.By Incenter-Excenter(Fact $5$), $F$ is the angle bisector
 
 
 
-
-
 \textbf{Solution 8 (funny angle chase & trig)}
 
 Since $\angle EBD$ is right, $DE$ is clearly the diameter. Let $EF=DF=x, ED=x\sqrt{2}, DG=\frac{3x\sqrt{2}}{5}, EG=\frac{4x\sqrt{2}}{5}$. Then, let $\angle DEG=\alpha$. Therefore, $\angle EFG=\angle EFD+\angle DFG=90^{\circ}+\alpha,$ and $\angle EFA=90^{\circ}-\alpha$. However, $\triangle DGE \sim \triangle ABC$ so $\angle AFE$ also equals $90^{\circ}-\alpha$. Thus, $\triangle AEF$ is isosceles with $\angle FAE \cong \angle EFA \implies AE=EF=x.$
@@ -1652,8 +1587,6 @@ Since $\angle EBD$ is right, $DE$ is clearly the diameter. Let $EF=DF=x, ED=x\sq
  \[x=\frac{25}{14} \implies DE=x\sqrt{2}=\frac{25\sqrt{2}}{14},\] so our desired answer is $\boxed{041}.$
 
  
-
-
 
 
 
@@ -1707,8 +1640,6 @@ Since $\angle EBD$ is right, $DE$ is clearly the diameter. Let $EF=DF=x, ED=x\sq
  $25+2+14=\boxed{041}$
 
  
-
-
 
 
 
@@ -1770,8 +1701,6 @@ As noted in Solution 1, $DE$ is in fact the diameter of the circle. The proof is
 
 
 
-
-
 \textbf{Solution 11 (Coordinate Geometry)}
 
 We are given that points $E,B,D,G,F$ are cyclic and $DF=EF$. Hence, we have $\angle EBF=\angle DBF$. We establish a coordinate system with $B$ being the origin. Here is our setup:\begin{align*}A&=(0,3)\\B&=(0,0)\\C&=(4,0)\\D&=(x_1,0)\\E&=(0,y_1)\\F&=(x_2,y_2)\\G&=(x_3,y_3)\\AC&:y=-\frac{3}{4}x+3\\\omega&: \left(x-\frac{x_{1}}{2}\right)^2+\left(y-\frac{y_{1}}{2}\right)^2=r^2\end{align*}
@@ -1785,9 +1714,7 @@ Therefore,
  \[\frac{DG^2}{EG^2}=\frac{\frac{18}{1225}(4+7y_{1})^2}{\frac{32}{25}(3-y_{1})^2}=\frac{9}{16\cdot 49}\frac{(4+7y_{1})^2}{(3-y_{1})^2}=\frac{9}{16}\]Taking the positive solution from $\left\lvert\frac{4+7y_{1}}{3-y_{1}}\right\rvert=7$, we have $y_{1}=\frac{17}{14}$ and $x_{1}=\frac{31}{14}$. Therefore,
  \[DE=\sqrt{x_1^2+y_1^2}=\sqrt{\left(\frac{31}{14}\right)^2+\left(\frac{17}{14}\right)^2}=\frac{25\sqrt{2}}{14}\]The requested sum is $25+2+14=\boxed{041}$.
 
- \textbf{Fast Video Solution} 
-
-
+ 
 
 
 \end{enumerate}

@@ -16,8 +16,6 @@ Assume that the largest geometric number starts with a $9$. We know that the com
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider the three-digit number $abc$. If its digits form a geometric progression, we must have that ${a \over b} = {b \over c}$, that is, $b^2 = ac$. 
@@ -32,15 +30,11 @@ Consider the three-digit number $abc$. If its digits form a geometric progressio
 
 
 
-
-
 \textbf{Solution 3}
 
 The smallest geometric number is $124$ because $123$ and any number containing a zero does not work. $964$ is the largest geometric number because the middle digit cannot be 8 or 7. Subtracting the numbers gives $\boxed{840}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that
@@ -88,8 +82,6 @@ Let $z = a + 164i$.
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -122,8 +114,6 @@ Let $z = a + 164i$.
 
 
 
-
-
 \textbf{Solution 3 (Not Highly Recommended)}
 
 Below is an image of the complex plane. Let $\operatorname{Im}(z)$ denote the imaginary part of a complex number $z$.
@@ -143,8 +133,6 @@ Below is an image of the complex plane. Let $\operatorname{Im}(z)$ denote the im
 
 
 
-
-
 \textbf{Solution 4 (fast)}
 
 Taking the reciprocal of our equation gives us $1 + \frac{n}{z} = \frac{1}{4i}.$ Therefore, 
@@ -152,8 +140,6 @@ Taking the reciprocal of our equation gives us $1 + \frac{n}{z} = \frac{1}{4i}.$
  \[\frac{n}{z} = \frac{697}{-656 + 164i}.\] Therefore, we can conclude the real part of $z$ is $-656$ and $n = \boxed{697}.$ (it wasn't necessary to find the real part)
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) A coin that comes up heads with probability $p > 0$ and tails with probability $1 - p > 0$ independently on each flip is flipped eight times. Suppose the probability of three heads and five tails is equal to $\frac {1}{25}$ of the probability of five heads and three tails. Let $p = \frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -178,8 +164,6 @@ The probability of three heads and five tails is $\binom {8}{3}p^3(1-p)^5$ and t
 
 
 
-
-
 \textbf{Solution 2}
 
 We start as shown above. However, when we get to $25(1-p)^2=p^2$, we square root both sides to get $5(1-p)=p$. We can do this because we know that both $p$ and $1-p$ are between $0$ and $1$, so they are both positive. Now, we have: 
@@ -191,8 +175,6 @@ We start as shown above. However, when we get to $25(1-p)^2=p^2$, we square root
  Now, we get $5+6=\boxed{011}$.
 
  
-
-
 
 
 
@@ -209,8 +191,6 @@ Rewrite it as : $(P)^3$$(1-P)^5=\frac {1}{25}$ $(P)^5$$(1-P)^3$
  Therefore, the answer is $5+6$ = $\boxed {011}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) In parallelogram $ABCD$, point $M$ is on $\overline{AB}$ so that $\frac {AM}{AB} = \frac {17}{1000}$ and point $N$ is on $\overline{AD}$ so that $\frac {AN}{AD} = \frac {17}{2009}$. Let $P$ be the point of intersection of $\overline{AC}$ and $\overline{MN}$. Find $\frac {AC}{AP}$.
@@ -233,8 +213,6 @@ One of the ways to solve this problem is to make this parallelogram a straight l
 
 
 
-
-
 \textbf{Solution 2}
 
 Draw a diagram with all the given points and lines involved. Construct parallel lines $\overline{DF_2F_1}$ and $\overline{BB_1B_2}$ to $\overline{MN}$, where for the lines the endpoints are on $\overline{AM}$ and $\overline{AN}$, respectively, and each point refers to an intersection. Also, draw the median of quadrilateral $BB_2DF_1$ $\overline{E_1E_2E_3}$ where the points are in order from top to bottom. Clearly, by similar triangles, $BB_2 = \frac {1000}{17}MN$ and $DF_1 = \frac {2009}{17}MN$. It is not difficult to see that $E_2$ is the center of quadrilateral $ABCD$ and thus the midpoint of $\overline{AC}$ as well as the midpoint of $\overline{B_1}{F_2}$ (all of this is easily proven with symmetry). From more triangle similarity, $E_1E_3 = \frac12\cdot\frac {3009}{17}MN\implies AE_2 = \frac12\cdot\frac {3009}{17}AP\implies AC = 2\cdot\frac12\cdot\frac {3009}{17}AP$$= \boxed{177}AP$.
@@ -243,15 +221,11 @@ Draw a diagram with all the given points and lines involved. Construct parallel 
 
 
 
-
-
 \textbf{Solution 3}
 
 Using vectors, note that $\overrightarrow{AM}=\frac{17}{1000}\overrightarrow{AB}$ and $\overrightarrow{AN}=\frac{17}{2009}\overrightarrow{AD}$.  Note that $\overrightarrow{AP}=\frac{x\overrightarrow{AM}+y\overrightarrow{AN}}{x+y}$ for some positive x and y, but at the same time is a scalar multiple of $\overrightarrow{AB}+\overrightarrow{AD}$.  So, writing the equation $\overrightarrow{AP}=\frac{x\overrightarrow{AM}+y\overrightarrow{AN}}{x+y}$ in terms of $\overrightarrow{AB}$ and $\overrightarrow{AD}$, we have $\overrightarrow{AP}=\frac{\frac{17x}{1000}\overrightarrow{AB}+\frac{17y}{2009}\overrightarrow{AD}}{x+y}$.  But the coefficients of the two vectors must be equal because, as already stated, $\overrightarrow{AP}$ is a scalar multiple of $\overrightarrow{AB}+\overrightarrow{AD}$.  We then see that $\frac{x}{x+y}=\frac{1000}{3009}$ and $\frac{y}{x+y}=\frac{2009}{3009}$. Finally, we have $\overrightarrow{AP}=\frac{17}{3009}(\overrightarrow{AB}+\overrightarrow{AD})$ and, simplifying, $\overrightarrow{AB}+\overrightarrow{AD}=177\overrightarrow{AP}$ and the desired quantity is $177$.
 
  
-
-
 
 
 
@@ -270,8 +244,6 @@ We approach the problem using mass points on triangle $ABD$ as displayed below.
 
 
 
-
-
 \textbf{Solution 5}
 
 Assume, for the ease of computation, that $AM=AN=17$, $AB=1000$, and $AD=2009$.  Now, let line $MN$ intersect line $CD$ at point $X$ and let $Y$ be a point such that $XY\parallel AD$ and $AY\parallel DX$.  As a result, $ADXY$ is a parallelogram.  By construction, $\triangle MAN\sim \triangle MYX$ so 
@@ -279,8 +251,6 @@ Assume, for the ease of computation, that $AM=AN=17$, $AB=1000$, and $AD=2009$. 
  \[\frac{PC}{PA}=\frac{CX}{AM}=\frac{DX+CD}{AM}=\frac{2009-17+1000}{17}=176.\]  Hence, $\frac{AC}{AP}=\frac{PC}{PA}+1=\boxed{177}.$
 
  
-
-
 
 
 
@@ -302,8 +272,6 @@ Assign $A = (0,0)$. Since there are no constraints in the problem against this, 
  \textbf{Note} It is possible to use \href{https://artofproblemsolving.com/wiki/index.php?title=Coordinate\_geometry}{coordinate geometry} without setting $ABCD$ as a rectangle, either by projecting the plane onto another (tilted) plane or removing the restriction that the \href{https://artofproblemsolving.com/wiki/index.php?title=Axes}{axes} have to be \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular}.
 
  
-
-
 
 
 
@@ -330,8 +298,6 @@ Let $ABCD$ be a square with side length $1$ where $D = (0,0)$, $A = (0,1)$, $B =
  
 
 
-
-
 	\item (\textit{AIME I 2009}) Triangle $ABC$ has $AC = 450$ and $BC = 300$. Points $K$ and $L$ are located on $\overline{AC}$ and $\overline{AB}$ respectively so that $AK = CK$, and $\overline{CL}$ is the angle bisector of angle $C$. Let $P$ be the point of intersection of $\overline{BK}$ and $\overline{CL}$, and let $M$ be the point on line $BK$ for which $K$ is the midpoint of $\overline{PM}$. If $AM = 180$, find $LP$.
 
 
@@ -347,7 +313,9 @@ Let $ABCD$ be a square with side length $1$ where $D = (0,0)$, $A = (0,1)$, $B =
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2009_5_Solution_Figure_1.png}
                     \end{figure}
-                    Since $K$ is the midpoint of $\overline{PM}$ and $\overline{AC}$, quadrilateral $AMCP$ is a parallelogram, which implies $AM||LP$ and  $\bigtriangleup{AMB}$ is similar to $\bigtriangleup{LPB}$
+                    
+
+ Since $K$ is the midpoint of $\overline{PM}$ and $\overline{AC}$, quadrilateral $AMCP$ is a parallelogram, which implies $AM||LP$ and  $\bigtriangleup{AMB}$ is similar to $\bigtriangleup{LPB}$
 
  Thus,
 
@@ -387,8 +355,6 @@ Using the diagram above, we can solve this problem by using mass points. By angl
  By the SAS congruence, $\triangle MKA$ = $\triangle PKC$. So, $MA$ = $CP$ = $180$.Since $LP=\frac{2}{5}CP$, $LP = \frac{2}{5}(180) = \boxed{072}$
 
  
-
-
 
 
 
@@ -435,22 +401,6 @@ Using the diagram from solution $1$, we can also utilize the fact that $AMCP$ fo
  
 
 
-
-
-
-\textbf{Solution 4(Area Ratios)}
-
-Note that we are given that $\overline{MK} = \overline{KP}$, that $\overline{AK} = \overline{CK}.$ Note then that $\angle MKA = \angle CKB$ by vertical angles. From this, we have $\triangle MKA \cong PKC.$ This means that $\overline{CP}$ is 180. Applying angle bisector theorem on $\triangle ACB$ gives $\frac{\overline{AL}}{\overline{LB}} = \frac{450}{300} = \frac{3}{2}.$ Applying it on $\triangle KCB$ yields
- \[\frac{\overline{KP}}{\overline{PB}} = \frac{225}{300} = \frac{3}{4}\]Now we can proceed with area ratios. Suppose the area of $\triangle ACB = A.$ This means that 
- \[[\triangle AKL] = \left(\frac{225}{225+225}\right)\left(\frac{3}{5}\right)A = \frac{3}{10}A\]Continuing on $\triangle LPB$ we have 
- \[[\triangle LPB] = \left(\frac{2}{2+3}\right)\left(\frac{1}{2}\right)\left(\frac{4}{4+3}\right) = \frac{4}{35}A\]Since $\overline{AK}=\overline{KC}$ $[\triangle KPL] = [\triangle AKB]-[\triangle AKL] - [\triangle LPB] = \frac{1}{2}A - \frac{3}{10}A - \frac{4}{35}A = \frac{3}{35}A.$Area ratios on $\triangle KCP$ yield $[\triangle KCP] = \left(\frac{1}{2}\right)\left(\frac{3}{3+4}\right) = \frac{3}{14}.$ Now, suppose $\overline{LP} = x.$ We have that the ratio of areas of $\triangle LKP$ and $\triangle PKC$ is $\frac{x}{180}$and is also $\frac{\frac{3}{35}}{\frac{3}{14}}$ and equating these gives 
- \[x = \boxed{72}\]
-
- 
-
-
-
-
 	\item (\textit{AIME I 2009}) How many positive integers $N$ less than $1000$ are there such that the equation $x^{\lfloor x\rfloor} = N$ has a solution for $x$?
 
 
@@ -491,15 +441,11 @@ First, $x$ must be less than $5$, since otherwise $x^{\lfloor x\rfloor}$ would b
 
 
 
-
-
 \textbf{Solution 2}
 
 For a positive integer $k$, we find the number of positive integers $N$ such that $x^{\lfloor x\rfloor}=N$ has a solution with ${\lfloor x\rfloor}=k$. Then $x=\sqrt[k]{N}$, and because $k \le x < k+1$, we have $k^k \le x^k < (k+1)^k$, and because $(k+1)^k$ is an integer, we get $k^k \le x^k \le (k+1)^k-1$. The number of possible values of $x^k$ is equal to the number of integers between $k^k$ and $(k+1)^k-1$ inclusive, which is equal to the larger number minus the smaller number plus one or $((k+1)^k-1)-(k^k)+1$, and this is equal to $(k+1)^k-k^k$. If $k>4$, the value of $x^k$ exceeds $1000$, so we only need to consider $k \le 4$. The requested number of values of $N$ is the same as the number of values of $x^k$, which is $\sum^{4}_{k=1} [(k+1)^k-k^k]=2-1+9-4+64-27+625-256=\boxed{412}$.
 
- \textbf{Video Solution 1} \textbf{Video Solution 2} \textbf{Video Solution 3} 
-
-
+ 
 
 
 	\item (\textit{AIME I 2009}) The sequence $(a_n)$ satisfies $a_1 = 1$ and $5^{(a_{n + 1} - a_n)} - 1 = \frac {1}{n + \frac {2}{3}}$ for $n \geq 1$. Let $k$ be the least integer greater than $1$ for which $a_k$ is an integer. Find $k$.
@@ -529,8 +475,6 @@ The best way to solve this problem is to get the iterated part out of the expone
 
 
 
-
-
 \textbf{Solution 2 (Telescoping)}
 
 We notice that by multiplying the equation from an arbitrary $a_n$ all the way to $a_1$, we get:
@@ -549,15 +493,11 @@ We notice that by multiplying the equation from an arbitrary $a_n$ all the way t
 
 
 
-
-
 \textbf{Solution 3 (I did too many FE's)}
 
 The given recursion is equivalent to $\frac{5^{a_{n+1}}}{3(n+1)+2}=\frac{5^{a_n}}{3n+2}$. By a simple inductive argument, the value $\frac{5^{a_k}}{3k+2}$ is constant for all naturals $k$. In particular, when $k=1$, the expression is equal to $1$, so $\frac{5^{a_k}}{3k+2}=1$ for all naturals $k$. Therefore, $a_k=\log_5(3k+2)$, and testing powers of $5$ yields $k=\boxed{41}$ as the answer, which is when $a_{41}=\log_5(3\cdot41+2)=\log_5(125)=3$.
 
  
-
-
 
 
 
@@ -585,8 +525,6 @@ Note that
  
 
 
-
-
 	\item (\textit{AIME I 2009}) Let $S = \{2^0,2^1,2^2,\ldots,2^{10}\}$. Consider all possible positive differences of pairs of elements of $S$. Let $N$ be the sum of all of these differences. Find the remainder when $N$ is divided by $1000$.
 
 
@@ -604,8 +542,6 @@ When computing $N$, the number $2^x$ will be added $x$ times (for terms $2^x-2^0
 
 
  
-
-
 
 
 
@@ -627,15 +563,11 @@ This solution can be generalized to apply when $10$ is replaced by other positiv
 
 
 
-
-
 \textbf{Solution 3}
 
 Consider the unique differences $2^{a + n} - 2^a$. Simple casework yields a sum of $\sum_{n = 1}^{10}(2^n - 1)(2^{11 - n} - 1) = \sum_{n = 1}^{10}2^{11} + 1 - 2^n - 2^{11 - n} = 10\cdot2^{11} + 10 - 2(2 + 2^2 + \cdots + 2^{10})$$= 10\cdot2^{11} + 10 - 2^2(2^{10} - 1)\equiv480 + 10 - 4\cdot23\equiv\boxed{398}\pmod{1000}$. This method generalizes nicely as well.
 
  
-
-
 
 
 
@@ -648,8 +580,6 @@ Find the positive differences in all $55$ pairs and you will get $\boxed{398}$. 
  1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2, 6, 14, 30, 62, 126, 254, 510, 1022, 4, 12, 28, 60, 124, 252, 508, 1020, 8, 24, 56, 120, 248, 504, 1016, 16, 48, 112, 240, 496, 1008, 32, 96, 224, 480, 992, 64, 192, 448, 960, 128, 384, 896, 256, 768, 512
 
  
-
-
 
 
 
@@ -672,8 +602,6 @@ Every value $2^a - 2^b$ is guaranteed to be different if for all pairs of number
  \[\boxed{398} \pmod{1000}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) A game show offers a contestant three prizes A, B and C, each of which is worth a whole number of dollars from $\text{\textdollar}1$ to $\text{\textdollar}9999$ inclusive. The contestant wins the prizes by correctly guessing the price of each prize in the order A, B, C. As a hint, the digits of the three prices are given. On a particular day, the digits given were $1, 1, 1, 1, 3, 3, 3$. Find the total number of possible guesses for all three prizes consistent with the hint.
@@ -716,8 +644,6 @@ Every value $2^a - 2^b$ is guaranteed to be different if for all pairs of number
 
 
 
-
-
 \textbf{Solution 1a (Casework)}
 
 Follow Solution 1 until the partitioning of all the possible strings into 3 groups. Another way to partition the strings is by casework. 
@@ -733,8 +659,6 @@ Follow Solution 1 until the partitioning of all the possible strings into 3 grou
  -unhappyfarmer
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) The Annual Interplanetary Mathematics Examination (AIME) is written by a committee of five Martians, five Venusians, and five Earthlings.  At meetings, committee members sit at a round table with chairs numbered from $1$ to $15$ in clockwise order.  Committee rules state that a Martian must occupy chair $1$ and an Earthling must occupy chair $15$.  Furthermore, no Earthling can sit immediately to the left of a Martian, no Martian can sit immediately to the left of a Venusian, and no Venusian can sit immediately to the left of an Earthling.  The number of possible seating arrangements for the committee is $N \cdot (5!)^3$.  Find $N$.
@@ -767,8 +691,6 @@ Since the 5 members of each planet committee are distinct we get that the number
 
 
 
-
-
 \textbf{Solution 2}
 
 The arrangements must follow the pattern MVEMVE....... where each MVE consists of some Martians followed by some Venusians followed by some Earthlings, for $1, 2, 3, 4,$ or $5$ MVE's. If there are $k$ MVE's, then by stars and bars, there are ${4 \choose k-1}$ choices for the Martians in each block, and the same goes for the Venusians and the Earthlings. Thus, we have $N = 1^3+4^3+6^3+4^3+1^3 = \boxed{346}$ - aops5234
@@ -779,11 +701,6 @@ The arrangements must follow the pattern MVEMVE....... where each MVE consists o
 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2009}) Consider the set of all triangles $OPQ$ where $O$ is the origin and $P$ and $Q$ are distinct points in the plane with nonnegative integer coordinates $(x,y)$ such that $41x + y = 2009$. Find the number of such distinct triangles whose area is a positive integer.
@@ -815,8 +732,6 @@ Let the two points $P$ and $Q$ be defined with coordinates; $P=(x_1,y_1)$ and $Q
 
 
 
-
-
 \textbf{Solution 2}
 
 As in Solution 1, let the two points $P$ and $Q$ be defined with coordinates; $P=(x_1,y_1)$ and $Q=(x_2,y_2)$. Let the line $41x+y=2009$ intersect the x-axis at $X$ and the y-axis at $Y$. $X$ has coordinates $(49,0)$, and $Y$ has coordinates $(0,2009)$. As such, there are exactly $50$ lattice points on this line that can be used for $P$ and $Q$.
@@ -835,8 +750,6 @@ Returning to $41x+y=2009$, we notice that integer pairs of $x$ and $y$ that sati
  Out of the $50$ usable lattice points for $P$ and $Q$, $25$ have even x-coordinates and $25$ have odd x-coordinates. Since we must pick two points with even x-coordinates or two points with odd x-coordinates, our desired answer is $\binom{25}{2}+\binom{25}{2}=300+300=\fbox{600}$.
 
  
-
-
 
 
 
@@ -931,8 +844,6 @@ If the coordinates of $P$ and $Q$ have nonnegative integer coordinates, $P$ and 
 
 
 
-
-
 \textbf{Solution 4}
 
 We present a non-analytic solution; consider the lattice points on the line $41x+y=2009$. The line has intercepts $(0, 2009)$ and $(49, 0)$, so the lattice points for $x=0, 1, \ldots, 49$ divide the line into $49$ equal segments. Call the area of the large triangle $A$. Any triangle formed with the origin having a base of one of these segments has area $A/49$ (call this value $B$) because the height is the same as that of large triangle, and the bases are in the ratio $1:49$. A segment comprised of $n$ small segments (all adjacent to each other) will have area $nB$. Rewriting in terms of the original area, $A=(\frac{1}{2})(49)(2009)$, $B=\frac{2009}{2}$, and $nB=n(\frac{2009}{2})$. It is clear that in order to have a nonnegative integer for $nB$ as desired, $n$ must be even. This is equivalent to finding the number of ways to choose two distinct $x$-values $x_1$ and $x_2$ ($0 \leq x_1, x_2 \leq 49$) such that their positive difference ($n$) is even. Follow one of the previous methods above to choose these pairs and arrive at the answer of 600.
@@ -941,15 +852,11 @@ We present a non-analytic solution; consider the lattice points on the line $41x
 
 
 
-
-
 \textbf{Solution 5 (Shoelace Theorem)}
 
 Label point $P$ and $Q$ as $(x_1, 2009 - 41x_1)$ and $(x_2, 2009 - 41x_2)$ respectively. Now, we shall use Shoelace Theorem to calculate the area of the triangle. After doing the calculations and simplifications with the coordinates, you will get the area of the triangle to be $\frac{2009|x_1-x_2|}{2}$. Based on this, in order for the area of the triangle to be an integer, $|x_1-x_2|$ needs to be even. The only way for this to happen is that either $x_1$ and $x_2$ are both even are both odd. From the equation from the problem, we can know that $0 \le x_1, x_2 \le 49$. There are $_{25}C_2$ ways to choose 2 even integers in that range or 2 odd numbers in that range. Thus, the answer is $2(_{25}C_2)$ which is $\boxed{600}$.
 
  
-
-
 
 
 
@@ -966,8 +873,6 @@ Dividing by 41 on both sides yields
  
 
 
-
-
 	\item (\textit{AIME I 2009}) In right $\triangle ABC$ with hypotenuse $\overline{AB}$, $AC = 12$, $BC = 35$, and $\overline{CD}$ is the altitude to $\overline{AB}$. Let $\omega$ be the circle having $\overline{CD}$ as a diameter. Let $I$ be a point outside $\triangle ABC$ such that $\overline{AI}$ and $\overline{BI}$ are both tangent to circle $\omega$. The ratio of the perimeter of $\triangle ABI$ to the length $AB$ can be expressed in the form $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
@@ -979,10 +884,151 @@ Dividing by 41 on both sides yields
 \textbf{Solution 1}
 
 First, note that $AB=37$; let the tangents from $I$ to $\omega$ have length $x$. Then the perimeter of $\triangle ABI$ is equal to 
+ \[2(x+AD+DB)=2(x+37).\] It remains to compute $\dfrac{2(x+37)}{37}=2+\dfrac{2}{37}x$.
+
+ Observe $CD=\dfrac{12\cdot 35}{37}=\dfrac{420}{37}$, so the radius of $\omega$ is $\dfrac{210}{37}$. We may also compute $AD=\dfrac{12^{2}}{37}$ and $DB=\dfrac{35^{2}}{37}$ by similar triangles. Let $O$ be the center of $\omega$; notice that 
+ \[\tan(\angle DAO)=\dfrac{DO}{AD}=\dfrac{210/37}{144/37}=\dfrac{35}{24}\] so it follows 
+ \[\sin(\angle DAO)=\dfrac{35}{\sqrt{35^{2}+24^{2}}}=\dfrac{35}{\sqrt{1801}}\] while $\cos(\angle DAO)=\dfrac{24}{\sqrt{1801}}$. By the double-angle formula $\sin(2\theta)=2\sin\theta\cos\theta$, it turns out that 
+ \[\sin(\angle BAI)=\sin(2\angle DAO)=\dfrac{2\cdot 35\cdot 24}{1801}=\dfrac{1680}{1801}\]
+
+ Using the area formula $\dfrac{1}{2}ab\sin(C)$ in $\triangle ABI$, 
+ \[[ABI]=\left(\dfrac{1}{2}\right)\left(\dfrac{144}{37}+x\right)(37)\left(\dfrac{1680}{1801}\right)=\left(\dfrac{840}{1801}\right)(144+37x).\] But also, using $rs$, 
+ \[[ABI]=\left(\dfrac{210}{37}\right)(37+x).\] Now we can get 
+ \[\dfrac{[ABI]}{210}=\dfrac{4(144+37x)}{1801}=\dfrac{37+x}{37}\] so multiplying everything by $37\cdot 1801=66637$ lets us solve for $x$: 
+ \[21312+5476x=66637+1801x.\] We have $x=\dfrac{66637-21312}{5476-1801}=\dfrac{45325}{3675}=\dfrac{37}{3}$, and now 
+ \[2+\dfrac{2}{37}x=2+\dfrac{2}{3}=\dfrac{8}{3}\] giving the answer, $\boxed{011}$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2009_12_Solution_Figure_1.png}
+                    \end{figure}
+                    
 
  
 
 
+
+\textbf{Solution 2}
+
+Let $O$ be center of the circle and $P$,$Q$ be the two points of tangent such that $P$ is on $BI$ and $Q$ is on $AI$. We know that $AD:CD = CD:BD = 12:35$.
+
+ Since the ratios between corresponding lengths of two similar diagrams are equal, we can let $AD = 144, CD = 420$ and $BD = 1225$. Hence $AQ = 144, BP = 1225, AB = 1369$ and the radius $r = OD = 210$. 
+
+ Since we have $\tan OAB = \frac {35}{24}$ and $\tan OBA = \frac{6}{35}$ , we have $\sin {(OAB + OBA)} = \frac {1369}{\sqrt {(1801*1261)}},$$\cos {(OAB + OBA)} = \frac {630}{\sqrt {(1801*1261)}}$.
+
+ Hence $\sin I = \sin {(2OAB + 2OBA)} = \frac {2*1369*630}{1801*1261}$. let $IP = IQ = x$ , then we have Area$(IBC)$ = $(2x + 1225*2 + 144*2)*\frac {210}{2}$ = $(x + 144)(x + 1225)* \sin {\frac {I}{2}}$. Then we get $x + 1369 = \frac {3*1369*(x + 144)(x + 1225)}{1801*1261}$.
+
+ Now the equation looks very complex but we can take a guess here. Assume that $x$ is a rational number(If it's not then the answer to the problem would be irrational which can't be in the form of $\frac {m}{n}$) that can be expressed as $\frac {a}{b}$ such that $(a,b) = 1$. Look at both sides; we can know that $a$ has to be a multiple of $1369$ and not of $3$ and it's reasonable to think that $b$ is divisible by $3$ so that we can cancel out the $3$ on the right side of the equation.
+
+ Let's see if $x = \frac {1369}{3}$ fits. Since $\frac {1369}{3} + 1369 = \frac {4*1369}{3}$, and $\frac {3*1369*(x + 144)(x + 1225)}{1801*1261} = \frac {3*1369* \frac {1801}{3} * \frac {1261*4}{3}} {1801*1261} = \frac {4*1369}{3}$. Amazingly it fits!
+
+ Since we know that $3*1369*144*1225 - 1369*1801*1261 < 0$, the other solution of this equation is negative which can be ignored. Hence $x = 1369/3$. 
+
+ Hence the perimeter is $1225*2 + 144*2 + \frac {1369}{3} *2 = 1369* \frac {8}{3}$, and $BC$ is $1369$. Hence $\frac {m}{n} = \frac {8}{3}$, $m + n = 11$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+As in Solution $1$, let $P$ and $Q$ be the intersections of $\omega$ with $BI$ and $AI$ respectively.
+
+ First, by pythagorean theorem, $AB = \sqrt{12^2+35^2} = 37$.  Now the area of $ABC$ is $1/2*12*35 = 1/2*37*CD$, so $CD=\frac{420}{37}$ and the inradius of $\triangle ABI$ is $r=\frac{210}{37}$.
+
+ Now from $\triangle CDB \sim \triangle ACB$ we find that $\frac{BC}{BD} = \frac{AB}{BC}$ so $BD = BC^2/AB = 35^2/37$ and similarly, $AD = 12^2/37$.
+
+ Note $IP=IQ=x$, $BP=BD$, and $AQ=AD$. So we have $AI = 144/37+x$, $BI = 1225/37+x$.  Now we can compute the area of $\triangle ABI$ in two ways: by heron's formula and by inradius times semiperimeter, which yields
+
+ $rs=210/37(37+x) = \sqrt{(37+x)(37-144/37)(37-1225/37)x}$
+
+ $210/37(37+x) = 12*35/37 \sqrt{x(37+x)}$
+
+ $37+x = 2 \sqrt{x(x+37)}$
+
+ $x^2+74x+1369 = 4x^2 + 148x$
+
+ $3x^2 + 74x - 1369 = 0$
+
+ The quadratic formula now yields $x=37/3$.  Plugging this back in, the perimeter of $ABI$ is $2s=2(37+x)=2(37+37/3) = 37(8/3)$ so the ratio of the perimeter to $AB$ is $8/3$ and our answer is $8+3=\boxed{011}$
+
+ Note: If you don't want to solve the quadratic, you can continue with $37+x = 2 \sqrt{x(x+37)}$ and divide both sides by $\sqrt{x+37}$ to get $\sqrt{37+x} = 2 \sqrt{x}$. Square both sides to get $37+x = 4x$ and solve to get $x=\frac{37}{3}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+As in Solution $2$, let $P$ and $Q$ be the intersections of $\omega$ with $BI$ and $AI$ respectively.
+
+ Recall that the distance from a point outside a circle to that circle is the same along both tangent lines to the circle drawn from the point.
+
+ Recall also that the length of the altitude to the hypotenuse of a right-angle triangle is the geometric mean of the two segments into which it cuts the hypotenuse.
+
+ Let $x = \overline{AD} = \overline{AQ}$. Let $y = \overline{BD} = \overline{BP}$. Let $z = \overline{PI} = \overline{QI}$. The semi-perimeter of $ABI$ is $x + y + z$.Since the lengths of the sides of $ABI$ are $x + y$, $y + z$ and $x + z$, the square of its area by Heron's formula is $(x+y+z)xyz$.
+
+ The radius $r$ of $\omega$ is $\overline{CD}/2$. Therefore $r^2 = xy/4$. As $\omega$ is the in-circle of $ABI$, the area of $ABI$ is also $r(x+y+z)$, and so the square area is $r^2(x+y+z)^2$.
+
+ Therefore 
+ \[(x+y+z)xyz = r^2(x+y+z)^2 = \frac{xy(x+y+z)^2}{4}\] Dividing both sides by $xy(x+y+z)/4$ we get: 
+ \[4z = (x+y+z),\] and so $z = (x+y)/3$. The semi-perimeter of $ABI$ is therefore $\frac{4}{3}(x+y)$ and the whole perimeter is $\frac{8}{3}(x+y)$. Now $x + y = \overline{AB}$, so the ratio of the perimeter of $ABI$ to the hypotenuse $\overline{AB}$ is $8/3$ and our answer is $8+3=\boxed{011}$
+
+ 
+
+
+
+\textbf{Solution 5}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2009_12_Solution_Figure_2.png}
+                    \end{figure}
+                    Let $AP=AD=x$, let $BQ=BD=y$, and let $IP=IQ=z$. Let $OD=r$. We find  $AB=37$. Let $\alpha$, $\beta$, and $\theta$ be the angles $OAD$, $OBD$, and $OPI$ respectively. Then $\alpha + \beta + \theta = 90^\circ$, so 
+ \[\theta = 90^\circ - (\alpha+\beta).\]The perimeter of $\triangle ABI$ is $2(x+y+z)=2(37+z)$. The desired ratio is then
+ \[\rho = 2\left(1+\frac z{37}\right)\]We need to find $z$. In $\triangle OPI$, $z=r\cot\theta = r\tan (\alpha+\beta)$. We get 
+ \[\tan\alpha = \frac{OD}{AD} = \frac 12 \frac{CD}{AD} = \frac 12  \tan A = \frac 12 \frac{BC}{AC} = \frac{35}{24}.\] Similarly, $\tan\beta = \frac 6{35}$. Then 
+ \[z = r\cdot \tan (\alpha+\beta) = r\cdot \frac{\tan\alpha + \tan\beta}{1-\tan\alpha\tan\beta}= \frac{37^2\cdot r}{18\cdot 35}\]Computing $[ABC]$ in two ways we get $CD = \frac{12\cdot 35}{37}$, so $r=\frac{6\cdot 35}{37}$. Using this value of $r$ we get $z=\frac {37}3$. Thus 
+ \[\rho = 2\left(1+\frac 1{3}\right) = \frac 8{3},\]and $8+3=\boxed{011}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+This solution is not a real solution and is solving the problem with a ruler and compass.
+
+ Draw $AC = 4.8, BC = 14, AB = 14.8$. Then, drawing the tangents and intersecting them, we get that $IA$ is around $6.55$ and $IB$ is around $18.1$. We then find the ratio to be around $\frac{39.45}{14.8}$. Using long division, we find that this ratio is approximately 2.666, which you should recognize as $\frac{8}{3}$. Since this seems reasonable, we find that the answer is $\boxed{11}$ ~ilp
+
+ 
+
+
+
+\textbf{Solution 7}
+
+Denoting three tangents has length $h_1,h_2,h_3$ while $h_1,h_3$ lies on $AB$ with $h_1>h_3$.The area of $ABC$ is $1/2*12*35 = 1/2*37*CD$, so $CD=\frac{420}{37}$ and the inradius of $\triangle ABI$ is $r=\frac{210}{37}$.As we know that the diameter of the circle is the height of $\triangle ACB$ from $C$ to $AB$. Assume that $\tan\alpha=\frac{h_1}{r}$ and $\tan\beta=\frac{h_3}{r}$ and $\tan\omega=\frac{h_2}{r}$. But we know that $\tan(\alpha+\beta)=-\tan(180-\alpha-\beta)=-\tan\omega$ According to the basic computation, we can get that $\tan(\alpha)=\frac{35}{6}$; $\tan(\beta)=\frac{24}{35}$So we know that $\tan(\omega)=\frac{1369}{630}$ according to the tangent addition formula. Hence, it is not hard to find that the length of $h_2$ is $\frac{37}{3}$. According to basic addition and division, we get the answer is $\frac{8}{3}$ which leads to $8+3=\boxed{11}$ ~bluesoul
+
+ 
+
+
+
+\textbf{Solution 8 (same as solution 3)}
+
+Notice $CD$ is the altitude of $\triangle ABC$, and so $CD = \frac{AC \cdot BC}{AB} = \frac{210}{37}.$ This means in the inradius of the circle is $r=\frac{CD}{2}=\frac{210}{37}.$
+
+ Next, by $\triangle ABC \sim \triangle ACD \sim \triangle CBD$, we have $AD=CD \cdot \frac{12}{35} = \frac{144}{37}$ and $BD = CD \cdot \frac{35}{12} = \frac{1225}{37}$. 
+
+ Lastly, denote the tangent point of $AI, BI$ with the circle as $P, Q$ respectively. Then by the properties of inscribed circles, we have that $AP=AD=\frac{144}{37}$ and $BQ=BD=\frac{1225}{37}$, and $PI=QI=x$. We want to make an algebraic expression utilizing what we know about ABI. 
+
+ We use the inradius formula: $r = \frac{[\triangle ABI]}{s}$. We have $s=37+x$. With Heron's (very basic calculations) we get $[\triangle ABI] = \sqrt{(x+37)(x)(\frac{1225}{37})(\frac{144}{37})} = \frac{420}{37} \sqrt{x(37+x)}.$ Using the inradius formula, we get 
+ \[\frac{210}{37} = \frac{\frac{420}{37} \sqrt{x(37+x)}}{37+x}\] which simplifies to $x=\frac{37}{3}$. The answer is then $\frac{8}{3}. \boxed{11}$~ brocolimanx
+
+ \textbf{Side Note} It can be shown that the value of $\frac83$ does not actually depend on the sides of the triangle. That is, if we do this same construction with any right triangle and compute the ratio, we will get $\frac83$. ~Puck\_0
+
+ 
 
 
 	\item (\textit{AIME I 2009}) The terms of the sequence $\{a_i\}$ defined by $a_{n + 2} = \frac {a_n + 2009} {1 + a_{n + 1}}$ for $n \ge 1$ are positive integers. Find the minimum possible value of $a_1 + a_2$.
@@ -1008,8 +1054,6 @@ Our expression is
  \[\frac{a_1+2009}{1+a_2}=a_3=a_1 \Rightarrow a_1 a_2 = 2009.\]By AM-GM, to minimize this, we have to make $a_1$ and $a_2$ factors as close as possible. Hence, the smallest possible sum is $41+49=90.$
 
  
-
-
 
 
 
@@ -1102,8 +1146,6 @@ Thus, our answer $= 41+49=\boxed {090}$
 
 
 
-
-
 \textbf{Solution 3}
 
 If $a_{n} \ne \frac {2009}{a_{n+1}}$, then either
@@ -1125,8 +1167,6 @@ If $a_{n} \ne \frac {2009}{a_{n+1}}$, then either
 
 
 
-
-
 \textbf{Solution 4 (BS Solution)}
 
 Essentially you see that it must be an integer for infinite numbers, which doesn't quite seem probable. The most logical explanation is that the sequence repeats, and the numbers in the sequence that repeat are integers. We list out some terms.
@@ -1136,8 +1176,6 @@ The terms get more and more wacky, so we just solve for $a,b$ such that $a_{1}=a
  Solving we find both equations end up to the equation $ab=2009$ in which we see to minimize we see that $a = 49$ and $b=41$ or vice versa for an answer of $\boxed{90}.$ This solution is VERY non rigorous and not recommended.
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) For $t = 1, 2, 3, 4$, define $S_t = \sum_{i = 1}^{350}a_i^t$, where $a_i \in \{1,2,3,4\}$. If $S_1 = 513$ and $S_4 = 4745$, find the minimum possible value for $S_2$.
@@ -1161,8 +1199,6 @@ Because the order of the $a$'s doesn't matter, we simply need to find the number
  \[5y + 21z = 195\]Since $y$ and $z$ are integers, the two solutions to this are $(y,z) = (39,0)$ or $(18,5)$.If you plug both these solutions in to $S_2$ it is apparent that the second one returns a smaller value. It turns out that $w = 215$, $x = 112$, $y = 18$, and $z = 5$, so $S_2 = 215 + 4*112 + 9*18 + 16*5 = 215 + 448 + 162 + 80 = \boxed{905}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2009}) In triangle $ABC$, $AB = 10$, $BC = 14$, and $CA = 16$. Let $D$ be a point in the interior of $\overline{BC}$. Let points $I_B$ and $I_C$ denote the incenters of triangles $ABD$ and $ACD$, respectively. The circumcircles of triangles $BI_BD$ and $CI_CD$ meet at distinct points $P$ and $D$. The maximum possible area of $\triangle BPC$ can be expressed in the form $a - b\sqrt {c}$, where $a$, $b$, and $c$ are positive integers and $c$ is not divisible by the square of any prime. Find $a + b + c$.
@@ -1195,8 +1231,6 @@ First, by the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of
 
 
 
-
-
 \textbf{Solution 2}
 
 From Law of Cosines on $\triangle{ABC}$, 
@@ -1212,15 +1246,11 @@ From Law of Cosines on $\triangle{ABC}$,
 
 
 
-
-
 \textbf{Solution 3}
 
 Proceed as in Solution 2 until you find $\angle CPB = 150$. The locus of points $P$ that give $\angle CPB = 150$ is a fixed arc from $B$ to $C$ ($P$ will move along this arc as $D$ moves along $BC$) and we want to maximise the area of [$\triangle BPC$]. This means we want $P$ to be farthest distance away from $BC$ as possible, so we put $P$ in the middle of the arc (making $\triangle BPC$ isosceles). We know that $BC=14$ and $\angle CPB = 150$, so $\angle PBC = \angle PCB = 15$. Let $O$ be the foot of the perpendicular from $P$ to line $BC$. Then the area of [$\triangle BPC$] is the same as $7OP$ because base $BC$ has length $14$. We can split $\triangle BPC$ into two $15-75-90$ triangles $BOP$ and $COP$, with $BO=CO=7$ and $OP=7 \tan 15=7(2-\sqrt{3})=14-7\sqrt3$. Then, the area of [$\triangle BPC$] is equal to $7 \cdot OP=98-49\sqrt{3}$, and so the answer is $98+49+3=\boxed{150}$.   
 
  
-
-
 
 
 \end{enumerate}

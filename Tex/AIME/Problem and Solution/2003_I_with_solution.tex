@@ -3,7 +3,9 @@
         	\item (\textit{AIME I 2003}) Given that
 
 
- $\frac{((3!)!)!}{3!} = k \cdot n!,$where $k$ and $n$ are positive integers and $n$ is as large as possible, find $k + n.$
+ $\frac{((3!)!)!}{3!} = k \cdot n!,$
+
+ where $k$ and $n$ are positive integers and $n$ is as large as possible, find $k + n.$
 
 
  
@@ -17,8 +19,6 @@ Note that
  \[{{\left((3!)!\right)!}\over{3!}}= {{(6!)!}\over{6}}={{720!}\over6}={{720\cdot719!}\over6}=120\cdot719!.\]Because $120\cdot719!<720!$, we can conclude that $n < 720$. Thus, the maximum value of $n$ is $719$. The requested value of $k+n$ is therefore $120+719=\boxed{839}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) One hundred concentric circles with radii $1, 2, 3, \dots, 100$ are drawn in a plane. The interior of the circle of radius 1 is colored red, and each region bounded by consecutive circles is colored either red or green, with no two adjacent regions the same color. The ratio of the total area of the green regions to the area of the circle of radius 100 can be expressed as $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
@@ -67,15 +67,11 @@ To get the green area, we can color all the circles of radius $100$ or below gre
 
 
 
-
-
 \textbf{Solution 2 (synergy)}
 
 We want to find $\frac{\sum\limits_{n=1}^{50} (4n-1)\pi}{10000\pi}=\frac{\sum\limits_{n=1}^{50} (4n-1)}{10000}=\frac{(\sum\limits_{n=1}^{50} (4n) )-50}{10000}=\frac{101}{200} \rightarrow 101+200=\boxed{301}$
 
  
-
-
 
 
 
@@ -92,8 +88,6 @@ The sum of the areas of the green regions is
  \[{1\over2}\cdot{{100\cdot101\pi}\over{100^2\pi}}={101\over200},\]and $m+n=\boxed{301}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) Let the set $\mathcal{S} = \{8, 5, 1, 13, 34, 3, 21, 2\}.$ Susan makes a list as follows: for each two-element subset of $\mathcal{S},$ she writes on her list the greater of the set's two elements. Find the sum of the numbers on the list.
@@ -127,8 +121,6 @@ Order the numbers in the set from greatest to least to reduce error: $\{34, 21, 
 
 
 
-
-
 \textbf{Solution}
 
 Thinking of this problem algorithmically, one can "sort" the array to give:
@@ -145,8 +137,6 @@ Thinking of this problem algorithmically, one can "sort" the array to give:
  \[609 - 125 = \boxed{484}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) Given that $\log_{10} \sin x + \log_{10} \cos x = -1$ and that $\log_{10} (\sin x + \cos x) = \frac{1}{2} (\log_{10} n - 1),$ find $n.$
@@ -169,8 +159,6 @@ Using the properties of \href{https://artofproblemsolving.com/wiki/index.php?tit
  By the Pythagorean identities, $\sin ^2 x + \cos ^2 x = 1$, and we can substitute the value for $\sin x \cos x$ from $(*)$. $1 + 2\left(\frac{1}{10}\right) = \frac{n}{10} \Longrightarrow n = \boxed{012}$.
 
  
-
-
 
 
 
@@ -205,8 +193,6 @@ Examining the first equation, we simplify as the following:
 
 
 
-
-
 \textbf{Solution 3}
 
 By the first equation, we get that $\sin(x)*\cos(x)=10^{-1}$. We can let $\sin(x)=a$, $\cos(x)=b$. Thus $ab=\frac{1}{10}$. By the identity $\sin^2x+\cos^2x=1$, we get that $a^2+b^2=1$. Solving this, we get $a+b=\sqrt{\frac{12}{10}}$. So we have
@@ -221,8 +207,6 @@ By the first equation, we get that $\sin(x)*\cos(x)=10^{-1}$. We can let $\sin(x
  From here it is obvious that $\boxed{n=012}$.
 
  
-
-
 
 
 
@@ -248,8 +232,6 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
  
 
 
-
-
 	\item (\textit{AIME I 2003}) Consider the set of points that are inside or within one unit of a rectangular parallelepiped (box) that measures 3 by 4 by 5 units. Given that the volume of this set is $\frac{m + n \pi}{p},$ where $m, n,$ and $p$ are positive integers, and $n$ and $p$ are relatively prime, find $m + n + p.$
 
 
@@ -265,7 +247,9 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_5_Solution_Figure_1.png}
                     \end{figure}
-                    The set can be broken into several parts: the big $3\times 4 \times 5$ parallelepiped, $6$ external parallelepipeds that each share a face with the large parallelepiped and have a height of $1$, the $1/8$ \href{https://artofproblemsolving.com/wiki/index.php?title=Sphere}{spheres} (one centered at each \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{vertex} of the large parallelepiped), and the $1/4$ \href{https://artofproblemsolving.com/wiki/index.php?title=Cylinder}{cylinders} connecting each adjacent pair of spheres.
+                    
+
+ The set can be broken into several parts: the big $3\times 4 \times 5$ parallelepiped, $6$ external parallelepipeds that each share a face with the large parallelepiped and have a height of $1$, the $1/8$ \href{https://artofproblemsolving.com/wiki/index.php?title=Sphere}{spheres} (one centered at each \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{vertex} of the large parallelepiped), and the $1/4$ \href{https://artofproblemsolving.com/wiki/index.php?title=Cylinder}{cylinders} connecting each adjacent pair of spheres.
 
  
                 \begin{itemize}
@@ -278,8 +262,6 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
  
 
 
-
-
 	\item (\textit{AIME I 2003}) The sum of the areas of all triangles whose vertices are also vertices of a 1 by 1 by 1 cube is $m + \sqrt{n} + \sqrt{p},$ where $m, n,$ and $p$ are integers. Find $m + n + p.$
 
 
@@ -290,7 +272,7 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
 
 \textbf{Solution}
 
-<center>
+
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_6_Solution_Figure_1.png}
@@ -311,7 +293,9 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
                     \end{figure}
                     
 
- </center>Since there are $8$ \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{ vertices} of a \href{https://artofproblemsolving.com/wiki/index.php?title=Cube\_(geometry)}{ cube}, there are ${8 \choose 3} = 56$ total \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangles} to consider.  They fall into three categories: there are those which are entirely contained within a single \href{https://artofproblemsolving.com/wiki/index.php?title=Face}{face} of the cube (whose sides are two \href{https://artofproblemsolving.com/wiki/index.php?title=Edge}{edges} and one face \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal}), those which lie in a \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{plane} \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular} to one face of the cube (whose sides are one edge, one face diagonal and one space diagonal of the cube) and those which lie in a plane \href{https://artofproblemsolving.com/wiki/index.php?title=Oblique&action=edit&redlink=1}{oblique} to the edges of the cube, whose sides are three face diagonals of the cube.  
+ 
+
+ Since there are $8$ \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{ vertices} of a \href{https://artofproblemsolving.com/wiki/index.php?title=Cube\_(geometry)}{ cube}, there are ${8 \choose 3} = 56$ total \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangles} to consider.  They fall into three categories: there are those which are entirely contained within a single \href{https://artofproblemsolving.com/wiki/index.php?title=Face}{face} of the cube (whose sides are two \href{https://artofproblemsolving.com/wiki/index.php?title=Edge}{edges} and one face \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal}), those which lie in a \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{plane} \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular} to one face of the cube (whose sides are one edge, one face diagonal and one space diagonal of the cube) and those which lie in a plane \href{https://artofproblemsolving.com/wiki/index.php?title=Oblique&action=edit&redlink=1}{oblique} to the edges of the cube, whose sides are three face diagonals of the cube.  
 
  Each face of the cube contains ${4\choose 3} = 4$ triangles of the first type, and there are $6$ faces, so there are $24$ triangles of the first type. Each of these is a \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle} with legs of length $1$, so each triangle of the first type has area $\frac 12$.
 
@@ -322,8 +306,6 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
  Thus the total area of all these triangles is $24 \cdot \frac12 + 24\cdot\frac{\sqrt2}2 + 8\cdot\frac{\sqrt3}2 = 12 + 12\sqrt2 + 4\sqrt3 = 12 + \sqrt{288} + \sqrt{48}$ and the answer is $12 + 288 + 48 = \boxed{348}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) Point $B$ is on $\overline{AC}$ with $AB = 9$ and $BC = 21.$ Point $D$ is not on $\overline{AC}$ so that $AD = CD,$ and $AD$ and $BD$ are integers. Let $s$ be the sum of all possible perimeters of $\triangle ACD.$ Find $s.$
@@ -341,15 +323,15 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_7_Solution_Figure_1.png}
                     \end{figure}
-                    Denote the height of $\triangle ACD$ as $h$, $x = AD = CD$, and $y = BD$. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_theorem}{Pythagorean theorem}, we find that $h^2 = y^2 - 6^2$ and $h^2 = x^2 - 15^2$. Thus, $y^2 - 36 = x^2 - 225 \Longrightarrow x^2 - y^2 = 189$. The LHS is \href{https://artofproblemsolving.com/wiki/index.php?title=Difference\_of\_squares}{difference of squares}, so $(x + y)(x - y) = 189$. As both $x,\ y$ are integers, $x+y,\ x-y$ must be integral divisors of $189$. 
+                    
+
+ Denote the height of $\triangle ACD$ as $h$, $x = AD = CD$, and $y = BD$. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_theorem}{Pythagorean theorem}, we find that $h^2 = y^2 - 6^2$ and $h^2 = x^2 - 15^2$. Thus, $y^2 - 36 = x^2 - 225 \Longrightarrow x^2 - y^2 = 189$. The LHS is \href{https://artofproblemsolving.com/wiki/index.php?title=Difference\_of\_squares}{difference of squares}, so $(x + y)(x - y) = 189$. As both $x,\ y$ are integers, $x+y,\ x-y$ must be integral divisors of $189$. 
 
  The pairs of divisors of $189$ are $(1,189)\ (3,63)\ (7,27)\ (9,21)$. This yields the four potential sets for $(x,y)$ as $(95,94)\ (33,30)\ (17,10)\ (15,6)$. The last is not a possibility since it simply \href{https://artofproblemsolving.com/wiki/index.php?title=Degenerate}{degenerates} into a \href{https://artofproblemsolving.com/wiki/index.php?title=Line}{line}. The sum of the three possible perimeters of $\triangle ACD$ is equal to $3(AC) + 2(x_1 + x_2 + x_3) = 90 + 2(95 + 33 + 17) = \boxed{380}$.
 
  \textbf{Note} One can also conclude $(15,6)$ doesn't work as it violates the triangle inequality.
 
  
-
-
 
 
 
@@ -367,8 +349,6 @@ Let $AD=c$ and $BD=d$, then by \href{https://artofproblemsolving.com/wiki/index.
 
 
 
-
-
 \textbf{Solution 3 (Law of Cosines)}
 
 Drop an altitude from point $D$ to side $AC$. Let the intersection point be $E$. Since triangle $ADC$ is isosceles, AE is half of $AC$, or $15$. Then, label side AD as $x$. Since $AED$ is a right triangle, you can figure out $\cos A$ with adjacent divided by hypotenuse, which in this case is $AE$ divided by $x$, or $\frac{15}{x}$. Now we apply law of cosines. Label $BD$ as $y$. Applying law  of cosines, $y^2 = x^2+9^2- 2 \cdot x \cdot 9 \cdot \cos A$. Since $\cos A$ is equal to $\frac{15}{x}$, $y^2 = x^2+9^2- 2 \cdot x \cdot 9 \cdot \frac{15}{x}$, which can be simplified to $x^2-y^2=189$. The solution proceeds as the first solution does.
@@ -376,8 +356,6 @@ Drop an altitude from point $D$ to side $AC$. Let the intersection point be $E$.
  -intelligence\_20
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) In an increasing sequence of four positive integers, the first three terms form an arithmetic progression, the last three terms form a geometric progression, and the first and fourth terms differ by $30.$ Find the sum of the four terms.
@@ -395,135 +373,9 @@ Denote the first term as $a$, and the common difference between the first three 
  Since the first and fourth terms differ by $30$, we have that $\frac{(a + 2d)^2}{a + d} - a = 30$. Multiplying out by the denominator, 
  \[(a^2 + 4ad + 4d^2) - a(a + d) = 30(a + d).\] This simplifies to $3ad + 4d^2 = 30a + 30d$, which upon rearranging yields $2d(2d - 15) = 3a(10 - d)$.
 
- Both $a$ and $d$ are positive integers, so $2d - 15$ and $10 - d$ must have the same sign. Try if they are both \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} (notice if they are both \href{https://artofproblemsolving.com/wiki/index.php?title=Negative}{negative}, then $d > 10$ and $d < \frac{15}{2}$, which is a contradiction). Then, $d = 8, 9$. Directly substituting and testing shows that $d \neq 8$, but that if $d = 9$ then $a = 18$. Alternatively, note that $3|2d$ or $3|2d-15$ implies that $3|d$, so only $9$ may work. Hence, the four terms are $18,\ 27,\ 36,\ 48$, which indeed fits the given conditions. Their sum is $\boxed{129}$.
+ Both $a$ and $d$ are positive integers, so $2d - 15$ and $10 - d$ must have the same sign. Try if they are both \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} (notice if they are both \href{https://artofproblemsolving.com/wiki/index.php?title=Negative}{negative}, then $d > 10$ and $d < \frac{15}{2}$, which is a contradiction). Then, $d = 8, 9$. Directly substituting and testing shows that $d \neq 8$, but that if 
 
  
-Postscript
-
- As another option, $3ad + 4d^2 = 30a + 30d$ could be rewritten as follows:
-
- 
-$d(3a + 4d) = 30(a + d)$
-
- 
-$d(3a + 3d)+ d^2 = 30(a + d)$
-
- 
-
-
- $3d(a + d)+ d^2 = 30(a + d)$
-
- 
-$(3d - 30)(a + d)+ d^2 = 0$
-
- 
-$3(d - 10)(a + d)+ d^2 = 0$
-
- 
-This gives another way to prove $d<10$, and when rewritten one last time:
-
- 
-$3(10 -d)(a + d) = d^2$
-
- 
-shows that $d$ must contain a factor of 3.
-
- 
--jackshi2006
-
- EDIT by NealShrestha:Note that once we reach $3ad + 4d^2 = 30a + 30d$ this implies $3|d$ since all other terms are congruent to $0\mod 3$.
-
- 
-
-
-
-
-
-\textbf{Solution 2}
-
-The sequence is of the form $a-d,$ $a,$ $a+d,$ $\frac{(a+d)^2}{a}$. Since the first and last terms differ by 30, we have 
- \[\frac{(a+d)^2}{a}-a+d=30\]
- \[d^2+3ad=30a\]
- \[d^2+3ad-30a=0\]
- \[d=\frac{-3a + \sqrt{9a^2+120a}}{2}.\]Let $9a^2+120a=x^2$, where $x$ is an integer. This yields the following: 
- \[9a^2+120a-x^2=0\]
- \[a=\frac{-120 + \sqrt{14400+36x^2}}{18}\]
- \[a=\frac{-20 + \sqrt{400+x^2}}{3}.\]We then set $400+x^2=y^2$, where $y$ is an integer. Factoring using difference of squares, we have 
- \[400=2^4 \cdot 5^2=(y+x)(y-x).\]Then, noticing that $y+x > y-x$, we set up several systems of equations involving the factors of $400$. The second system we set up in this manner, 
- \[y+x=2^3 \cdot 5^2\] 
- \[y-x=2,\]yields the solution $y=101, x=99$. Plugging back in, we get that $a=27 \implies d=9$, so the sequence is $18,$ $27,$ $36,$ $48,$ and the answer is $\boxed{129}.$
-
- 
-                \begin{itemize}
-                    \item Note: we do not have to check the other systems since the $x$ and $y$ values obtained via this system yield integers for $a$, $d$, and this must be the only possible answer since this is an AIME problem. We got very lucky in this sense :)
-                \end{itemize}
-
-
-                -Fasolinka
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Guesswork)}
-
-We represent the values as $a-d$, $a$, $a+d$, and $\frac{(a+d)^2}{a}$Take the difference between the first and last values
- \[\frac{(a+d)^2}{a}-a+d=30\]Manipulating the values by expanding and then long division we see
- \[\frac{a^2+2ad+d^2}{a}-a+d=30\]
- \[\frac{(a+2d)a+d^2}{a}-a+d=30\]
- \[a+2d+\frac{d^2}{a}-a+d=30\]Combining like terms we get
- \[3d+\frac{d^2}{a}=30\]And looking at the values we know that since the second term must be positive (since both a and d are positive), $d$ must be a maximum of 9, which offers 9 possible values (since $d$ must be a positive integer.) We can resort to guesswork by this time, and thus receive the result of of $d=9$ at which $a=27$. The solution is thus $\boxed{129}.$
-
- 
-                \begin{itemize}
-                    \item We could also lay down some further parameters for the value of $d$. as $a$ must be greater than $d$ (for the first term to be positive), we can substitite in a "borderline" value of a=d (which itself is just over the limit). This gives us:
-                \end{itemize}
-
-
-                
- \[3d+\frac{d^2}{d}=30\]
- \[3d+d=30\]
- \[4d=30\]Thus, d must be greater than 7.5, which gives us only 2 values left (8 and 9). We can then plug in any of the two to see if an integer value is attainable. In the end, 8 doesn't work and 9 does, which gives the solution of $\boxed{129}.$
-
- 
-                \begin{itemize}
-                    \item Note: This solution is similar to Solution 2
-                \end{itemize}
-
-
-                -PMaldonado13
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Using Solution 1 Ideas on the Method of Solutions 2 and 3)}
-
-We represent the values as $a-d$, $a$, $a+d$, and $\frac{(a+d)^2}{a}$
-
- Take the difference between the first and last values $\frac{(a+d)^2}{a}-a+d=30$, then expand and rearrange $a^2-ad+30a=a^2+2ad+d^2$ which simplifies to $d^2=3a(10-d)$.
-
- Notice $d^2$ is a multiple of $3$ from the equation, so $d$ is a multiple of $3$. $d^2$ is positive so $10-d$ is positive giving $d<10$. 
-
- Plug in values of $d$ into the equation, remembering both $a$ and $d$ must be positive integers and $a>d$ because the first term is positive.
-
- $d=3$: $a$ is fractional and less than $d$.
-
- $d=6$: $a$ is less than $d$.
-
- $d=9$: $a=27$ works. 
-
- Plug values of $a$ and $d$ back in the sequence and sum for an answer of $\boxed{129}.$
-
- -unhappyfarmer
-
- 
-
-
 
 
 	\item (\textit{AIME I 2003}) An integer between $1000$ and $9999,$ inclusive, is called balanced if the sum of its two leftmost digits equals the sum of its two rightmost digits. How many balanced integers are there?
@@ -541,8 +393,6 @@ If the common sum of the first two and last two digits is $n$, such that $1 \leq
  Both summations may be calculated using the formula for the \href{https://artofproblemsolving.com/wiki/index.php?title=Perfect\_square}{sum of consecutive squares}, namely $\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$.
 
  
-
-
 
 
 
@@ -584,8 +434,6 @@ Call the number $\overline{abcd}$. Then $a+b=c+d$. Set $a+b=x$.
 
 
 
-
-
 \textbf{Solution 3}
 
 We ignore the requirement that the first digit is non-zero, and do casework on the sum of the sum of the pairs of digits.
@@ -610,8 +458,6 @@ We ignore the requirement that the first digit is non-zero, and do casework on t
  
 
 
-
-
 	\item (\textit{AIME I 2003}) Triangle $ABC$ is isosceles with $AC = BC$ and $\angle ACB = 106^\circ.$ Point $M$ is in the interior of the triangle so that $\angle MAC = 7^\circ$ and $\angle MCA = 23^\circ.$ Find the number of degrees in $\angle CMB.$
 
 
@@ -627,15 +473,15 @@ We ignore the requirement that the first digit is non-zero, and do casework on t
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_10_Solution_Figure_1.png}
                     \end{figure}
-                    Take point $N$ inside $\triangle ABC$ such that $\angle CBN = 7^\circ$ and $\angle BCN = 23^\circ$.
+                    
+
+ Take point $N$ inside $\triangle ABC$ such that $\angle CBN = 7^\circ$ and $\angle BCN = 23^\circ$.
 
  $\angle MCN = 106^\circ - 2\cdot 23^\circ = 60^\circ$. Also, since $\triangle AMC$ and $\triangle BNC$ are congruent (by ASA), $CM = CN$. Hence $\triangle CMN$ is an \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral triangle}, so $\angle CNM = 60^\circ$.
 
  Then $\angle MNB = 360^\circ - \angle CNM - \angle CNB = 360^\circ - 60^\circ - 150^\circ = 150^\circ$. We now see that $\triangle MNB$ and $\triangle CNB$ are congruent. Therefore, $CB = MB$, so $\angle CMB = \angle MCB = \boxed{83^\circ}$.
 
  
-
-
 
 
 
@@ -662,8 +508,6 @@ From the givens, we have the following \href{https://artofproblemsolving.com/wik
 
 
 
-
-
 \textbf{Solution 3}
 
 \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{Without loss of generality}, let $AC = BC = 1$.  Then, using the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines}{Law of Sines} in triangle $AMC$, we get $\frac {1}{\sin 150} = \frac {MC}{\sin 7}$, and using the sine addition formula to evaluate $\sin 150 = \sin (90 + 60)$, we get $MC = 2 \sin 7$.  
@@ -674,8 +518,6 @@ From the givens, we have the following \href{https://artofproblemsolving.com/wik
 
 
 
-
-
 \textbf{Solution 4}
 
 Note: A diagram would be much appreciated; I cannot make one since I'm bad at asymptote. Also, please make this less cluttered :) ~tauros
@@ -683,8 +525,6 @@ Note: A diagram would be much appreciated; I cannot make one since I'm bad at as
  First, take point $E$ outside of $\triangle{ABC}$ so that $\triangle{CEB}$ is equilateral. Then, connect $A$, $C$, and $M$ to $E$. Also, let $ME$ intersect $AB$ at $F$. $\angle{MCE} = 83^\circ - 60^\circ = 23^\circ$, $CE = AB$, and (trivially) $CM = CM$, so $\triangle{MCE} \cong  \triangle{MCA}$ by SAS congruence. Also, $\angle{CMA} = \angle{CME} = 150^\circ$, so $\angle{AME} = 60^\circ$, and $AM = ME$,making $\triangle{AME}$ also equilateral. (it is isosceles with a $60^\circ$ angle) $\triangle{MAF} \cong \triangle{EAF}$ by SAS ($MA = AE$, $AF = AF$, and $m\angle{MAF} = m\angle{EAF} = 30^\circ$), and $\triangle{MAB} \cong \triangle{EAB}$ by SAS ($MA = AE$, $AB = AB$, and $m\angle{MAB} = m\angle{EAB} = 30^\circ$). Thus, $\triangle{BME}$ is isosceles, with $m\angle{BME} = m\angle{BEM} = 60^\circ + 7^\circ = 67^\circ$. Also, $\angle{EMB} + \angle {CMB} = \angle{CME} = 150^\circ$, so $\angle{CME} = 150^\circ - 67^\circ  = \boxed{83^\circ}$.
 
  
-
-
 
 
 
@@ -707,15 +547,11 @@ Noticing that we have three concurrent cevians, we apply Ceva's theorem:
 
 
 
-
-
 \textbf{Solution 6}
 
 Let $\angle{APC} = \theta^{\circ}$Using sine rule on $\triangle{APB}, \triangle{APC}$, letting $AP=d$ we get :$\frac{d}{1} = \frac{\sin{7^{\circ}}}{\sin{150^{\circ}}} = 2\sin{7^{\circ}}= \frac{\sin{14^{\circ}}}{\cos{7^{\circ}}}= \frac{\sin{14^{\circ}}}{\sin{83^{\circ}}}= \frac{\sin{(97-\theta)^{\circ}}}{\sin{\theta^{\circ}}}$Simplifying, we get that$\cos{(14-\theta)^{\circ}}-\cos{(14+\theta)^{\circ}}=\cos{(14-\theta)^{\circ}}-\cos{(180-\theta)^{\circ}},$ from where $\cos{(14-\theta)^{\circ}}=\cos{(180-\theta)^{\circ}}$Simplifying more, we get that $\sin{97^{\circ}} \cdot \sin{(\theta-83)^{\circ}} = 0$, so $\theta = 83^{\circ}$NOTE: The simplifications were carried out by the product-to-sum and sum-to-product identities ~Prabh1512
 
  
-
-
 
 
 
@@ -743,8 +579,6 @@ Let $\angle{APC} = \theta^{\circ}$Using sine rule on $\triangle{APB}, \triangle{
  \[\angle{CMB}=\angle{CM'A}=\angle{CM'M}+\angle{MM'A}=60+23=\boxed{083}\]~Stereotypicalmathnerd
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) An angle $x$ is chosen at random from the interval $0^\circ < x < 90^\circ.$ Let $p$ be the probability that the numbers $\sin^2 x, \cos^2 x,$ and $\sin x \cos x$ are not the lengths of the sides of a triangle. Given that $p = d/n,$ where $d$ is the number of degrees in $\arctan m$ and $m$ and $n$ are positive integers with $m + n < 1000,$ find $m + n.$
@@ -775,8 +609,6 @@ Note that the three expressions are symmetric with respect to interchanging $\si
  The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that $x$ lies in this range is $\frac 1{45} \cdot \left(\frac 12 \arctan 2\right) = \frac{\arctan 2}{90}$ so that $m = 2$, $n = 90$ and our answer is $\boxed{092}$.
 
  
-
-
 
 
 
@@ -813,8 +645,6 @@ Next, we examine the third inequality, $\cos^2 x + \sin x \cos x > \sin^2 x$. On
  
 
 
-
-
 	\item (\textit{AIME I 2003}) In convex quadrilateral $ABCD, \angle A \cong \angle C, AB = CD = 180,$ and $AD \neq BC.$ The perimeter of $ABCD$ is 640. Find $\lfloor 1000 \cos A \rfloor.$ (The notation $\lfloor x \rfloor$ means the greatest integer that is less than or equal to $x.$)
 
 
@@ -830,7 +660,9 @@ Next, we examine the third inequality, $\cos^2 x + \sin x \cos x > \sin^2 x$. On
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_12_Solution_Figure_1.png}
                     \end{figure}
-                    By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on $\triangle ABD$ at angle $A$ and on $\triangle BCD$ at angle $C$ (note $\angle C = \angle A$),
+                    
+
+ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on $\triangle ABD$ at angle $A$ and on $\triangle BCD$ at angle $C$ (note $\angle C = \angle A$),
 
  
  \[180^2 + AD^2 - 360 \cdot AD \cos A = 180^2 + BC^2 - 360 \cdot BC \cos A\]
@@ -844,8 +676,6 @@ Next, we examine the third inequality, $\cos^2 x + \sin x \cos x > \sin^2 x$. On
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice that $AB = CD$, and $BD = DB$, and $\angle{DAB} \cong \angle{BCD}$, so we have side-side-angle matching on triangles $ABD$ and $CDB$.  Since the problem does not allow $\triangle{ABD} \cong \triangle{CDB}$, we know that $\angle{ADB}$ is not a right angle, and there is a unique other triangle with the matching side-side-angle.
@@ -855,15 +685,15 @@ Notice that $AB = CD$, and $BD = DB$, and $\angle{DAB} \cong \angle{BCD}$, so we
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_12_Solution_Figure_2.png}
                     \end{figure}
-                    Overlay the triangles $\triangle BDA$ and $\triangle BDC$ on each other as in the diagram above (where the red labels correspond to $\triangle BDA$ and the blue labels correspond to $\triangle BDC$). Here we assume without loss of generality that $BC>AD$. Furthermore, let $\theta$ be the angle $A$ referenced in the problem; we need to find $\lfloor 1000\cos\theta\rfloor$.
+                    
+
+ Overlay the triangles $\triangle BDA$ and $\triangle BDC$ on each other as in the diagram above (where the red labels correspond to $\triangle BDA$ and the blue labels correspond to $\triangle BDC$). Here we assume without loss of generality that $BC>AD$. Furthermore, let $\theta$ be the angle $A$ referenced in the problem; we need to find $\lfloor 1000\cos\theta\rfloor$.
 
  Since the perimeter of $ABCD$ is $640$, we have $AD+BC=640-360=280$. Thus let $BC=a$ and $AD=280-a$ for some positive real number $a$. But the sides that correspond to $\overline{BD}$ above are congruent, so we can drop a perpendicular from the topmost point to a point $E$, where the base of the isosceles triangle is bisected. Notice that the base of the isosceles triangle has length $a-(280-a)=2a-280$, so in the diagram above, $AE=280-a+\frac{1}{2}(2a-280)=280-a+a-140=140$.
 
  Looking above at the right triangle containing $\theta$, we see that $\cos\theta=\frac{AE}{180}=\frac{140}{180}=\frac{7}{9}$. Hence $\left\lfloor 1000\cdot\frac{7}{9}\right\rfloor=\boxed{777}$ is our answer.
 
  
-
-
 
 
 
@@ -875,8 +705,6 @@ Start the same as solution 1. We get
  \[360 \cos A = 280 \Rightarrow \cos A = \frac{280}{360} \Rightarrow \cos A = \frac{7}{9} \Rightarrow \lfloor 1000 \cos A \rfloor = \boxed{777}.\]
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) Let $N$ be the number of positive integers that are less than or equal to 2003 and whose base-2 representation has more 1's than 0's. Find the remainder when $N$ is divided by 1000.
@@ -896,8 +724,6 @@ In base-$2$ representation, all positive numbers have a leftmost digit of $1$. T
  The sum of the elements on or to the right of the line of symmetry is thus $\frac{2047 + 351}{2} = 1199$. However, we also counted the $44$ numbers from $2004$ to $2^{11}-1 = 2047$. Indeed, all of these numbers have at least $6$ $1$'s in their base-$2$ representation, as all of them are greater than $1984 = 11111000000_2$, which has $5$ $1$'s. Therefore, our answer is $1199 - 44 = 1155$, and the remainder is $\boxed{155}$.
 
  
-
-
 
 
 
@@ -927,15 +753,11 @@ We seek the number of allowed numbers which have $k$ 1's, not including the lead
 
 
 
-
-
 \textbf{Solution 3}
 
 We will count the number of it $< 2^{11}=2048$ instead of $2003$ (In other words, the length of the base-2 representation is at most $11$. If there are even digits, $2n$, then the leftmost digit is $1$, the rest, $2n-1$, has odd number of digits. In order for the base-2 representation to have more $1$'s, we will need more $1$ in the remaining $2n-1$ than $0$'s. Using symmetry, this is equal to$\frac{2^9+2^7+..+2^1}{2}$Using similar argument where there are odd amount of digits. The remaining even amount of digit must contains the number of $1$'s at least as the number of $0$'s. So it's equal to$\frac{\binom{10}{5}+2^{10}+\binom{8}{4}+2^8+\binom{6}{3}+2^6+...+\binom{0}{0}+2^0}{2}$Summing both cases, we have $\frac{2^0+2^1+..+2^{10}+\binom{0}{0}+..+\binom{10}{5}}{2} = 199$. There are $44$ numbers between $2004$ and $2047$ inclusive that satisfy it. So the answer is $199-44=\boxed{155}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) The decimal representation of $m/n,$ where $m$ and $n$ are relatively prime positive integers and $m < n,$ contains the digits 2, 5, and 1 consecutively, and in that order. Find the smallest value of $n$ for which this is possible.
@@ -955,11 +777,11 @@ Otherwise, suppose the number is in the form of $\frac{m}{n} = 0.X251 \ldots$, w
 
  Thus we have $\frac{m'}{n} = 0.251\ldots$, or 
 
- $\frac{251}{1000} \le \frac{m'}{n} < \frac{252}{1000} \Longleftrightarrow 251n \le 1000m' < 252n \Longleftrightarrow n \le 250(4m'-n) < 2n.$As $4m' > n$, we know that the minimum value of $4m' - n$ is $1$; hence we need $250 < 2n \Longrightarrow 125 < n$. Since $4m' - n = 1$, we need $n + 1$ to be divisible by $4$, and this first occurs when $n = \boxed{ 127 }$ (note that if $4m'-n > 1$, then $n > 250$). Indeed, this gives $m' = 32$ and the fraction $\frac {32}{127}\approx 0.25196 \ldots$).
+ $\frac{251}{1000} \le \frac{m'}{n} < \frac{252}{1000} \Longleftrightarrow 251n \le 1000m' < 252n \Longleftrightarrow n \le 250(4m'-n) < 2n.$
+
+ As $4m' > n$, we know that the minimum value of $4m' - n$ is $1$; hence we need $250 < 2n \Longrightarrow 125 < n$. Since $4m' - n = 1$, we need $n + 1$ to be divisible by $4$, and this first occurs when $n = \boxed{ 127 }$ (note that if $4m'-n > 1$, then $n > 250$). Indeed, this gives $m' = 32$ and the fraction $\frac {32}{127}\approx 0.25196 \ldots$).
 
  
-
-
 
 
 
@@ -972,8 +794,6 @@ Rewrite the problem as having the smallest $n$ such that we can find an positive
  Rewriting $n$ as $4k+3$, we get that $251(4k+3)+(4k+2)$ turns into $8k+755$, and this has to be greater than or equal to $1000$. The least $k$ that satisfies this is $31$, and we consequently get that the least value of $n$ is $127$. -dragoon -minor edits by Mathkiddie
 
  
-
-
 
 
 	\item (\textit{AIME I 2003}) In $\triangle ABC, AB = 360, BC = 507,$ and $CA = 780.$ Let $M$ be the midpoint of $\overline{CA},$ and let $D$ be the point on $\overline{CA}$ such that $\overline{BD}$ bisects angle $ABC.$ Let $F$ be the point on $\overline{BC}$ such that $\overline{DF} \perp \overline{BD}.$ Suppose that $\overline{DF}$ meets $\overline{BM}$ at $E.$ The ratio $DE: EF$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
@@ -995,7 +815,9 @@ In the following, let the name of a point represent the mass located there. Sinc
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_15_Solution_Figure_1.png}
                     \end{figure}
-                    As $BD$ is an angle bisector of both triangles $BAC$ and $BF'F$, we know that $F'$ lies on $AB$. We can now balance triangle $BF'C$ at point $D$ using mass points.
+                    
+
+ As $BD$ is an angle bisector of both triangles $BAC$ and $BF'F$, we know that $F'$ lies on $AB$. We can now balance triangle $BF'C$ at point $D$ using mass points.
 
  By the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_Bisector\_Theorem}{Angle Bisector Theorem}, we can place \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{mass points} on $C,D,A$ of $120,\,289,\,169$ respectively. Thus, a mass of $\frac {289}{2}$ belongs at both $F$ and $F'$ because BD is a median of triangle $BF'F$ . Therefore, $CB/FB=\frac{289}{240}$.
 
@@ -1004,8 +826,6 @@ In the following, let the name of a point represent the mass located there. Sinc
  \[\frac {DE}{EF} = \frac {F}{D} = \frac {F}{C}\cdot\frac {C}{D} = \frac {289}{240}\cdot\frac {49}{289} = \boxed{\frac {49}{240}}\]and the answer is $49 + 240 = \boxed{289}$.
 
  
-
-
 
 
 
@@ -1025,8 +845,6 @@ By the Angle Bisector Theorem, we know that $[CBD]=\frac{169}{289}[ABC]$. Theref
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $\angle{DBM}=\theta$ and $\angle{DBC}=\alpha$. Then because $BM$ is a median we have $360\sin{(\alpha+\theta)}=507\sin{(\alpha-\theta)}$. Now we know 
@@ -1036,8 +854,6 @@ Let $\angle{DBM}=\theta$ and $\angle{DBC}=\alpha$. Then because $BM$ is a median
  \[\dfrac{360\cdot BD(DF+DE)}{BF\cdot BE}=\dfrac{507\cdot BD\cdot EF}{BF\cdot BE}\] so $\dfrac{DF+DE}{EF}=\dfrac{507}{360}$. But $DF=DE+EF$, so this simplifies to $1+\dfrac{2DE}{EF}=\dfrac{507}{360}=\dfrac{169}{120}$, and thus $\dfrac{DE}{EF}=\dfrac{49}{240}$, and $m+n=\boxed{289}$.
 
  
-
-
 
 
 
@@ -1062,15 +878,11 @@ Firstly, angle bisector theorem yields $\frac{CD}{AD} = \frac{507}{360} = \frac{
 
 
 
-
-
 \textbf{Solution 5 (Menelaus + Mass Points)}
 
 Extend $DF$ to intersect with the extension of $AB$ at $G$. Notice that $\triangle{BDF} \cong \triangle{BDG}$, so $GD=DF$. We now use Menelaus on $\triangle{GBF}$, as $A$, $D$, and $C$ are collinear; this gives us $\frac{GA}{BA} \cdot \frac{BC}{FC} \cdot \frac{DF}{GD}=1$. As $GD=DF$, we have $\frac{GA}{AB}=\frac{FC}{BC}$, hence $\frac{GA}{120}=\frac{FC}{169}$. Reflect $G$ over $A$ to $G'$. Note that $\frac{G'A}{BA}=\frac{FC}{BC}$, and reflexivity, hence $\triangle{ABC} \sim \triangle{BG'F}$. It's easily concluded from this that $G'F \parallel AC$, hence $G'F \parallel AD$. As $GD=DF$, we have $AD$ is a midsegment of $\triangle{GG'F}$, thus $G'F = 2AD$. We now focus on the ratio $\frac{BF}{BC}$. From similarity, we have $\frac{BF}{BC}=\frac{G'F}{AC}=\frac{2AD}{AC}$. By the angle bisector theorem, we have $AD:DC=120:169$, hence $AD:AC=120:289$, so $\frac{BF}{BC}=\frac{240}{289}$. We now work out the ratio $\frac{DM}{MC}$. $\frac{DM}{MC}=\frac{CD-MC}{MC}=\frac{CD}{MC}-1=\frac{2CD}{AC}-1=\frac{338}{289}-1=\frac{49}{289}$. We now use mass points on $\triangle{BDC}$. We let the mass of $C$ be $240\cdot 49$, so the mass of $B$ is $49 \cdot 49$ and the mass of $D$ is $289\cdot 240$. Hence, the mass of $F$ is $289\cdot 49$, so the ratio $\frac{DE}{EF}=\frac{49}{240}$. Extracting gives $49+240=\boxed{289}.$
 
  
-
-
 
 
 \end{enumerate}

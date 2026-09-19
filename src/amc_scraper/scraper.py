@@ -6,11 +6,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 import re
 
 import json
 from itertools import batched
+
+from concurrent.futures import ThreadPoolExecutor
+
 
 from .config import *
 from .utils import *
@@ -19,6 +22,8 @@ from .utils import *
 def get_first_soup(contest = 'AIME') :
     URL = f"https://artofproblemsolving.com/wiki/index.php/{contest}_Problems_and_Solutions"
     browser = webdriver.Chrome(options=options)
+    selector = TABLE_SELECTOR[contest]
+    
     print_message(f"Retrieving {contest} Wiki Page Using Selenium",'\r')
     try:
         browser.get(URL)
@@ -27,7 +32,7 @@ def get_first_soup(contest = 'AIME') :
                             poll_frequency=2, 
                             ignored_exceptions=[NoSuchElementException])
         element = wait.until(
-            EC.visibility_of_element_located((By.CSS_SELECTOR,TABLE_SELECTOR))
+            EC.visibility_of_element_located((By.CSS_SELECTOR,selector))
             )
         html_source = browser.page_source
         soup = BeautifulSoup(html_source,'html.parser')
@@ -101,92 +106,103 @@ def get_soup(source,
     print_message(f"Max-Retries Achieved, {problem_title} Failed to Retrieve")
     return None
 
+
+def get_contest_metadata_from_link(contest,elem) :
+    link = rf"https://artofproblemsolving.com{elem.get('href')}"
+    problems_num = 0
+
+    title = elem.get('title')
+    year = re.search(PATTERN_TITLE[contest],title).group(1)
+
+    temp = re.search(PATTERN_VERSION[contest],link)
+    if contest == 'AIME' :
+        vers = temp.group(1) if (temp and temp.group(1)) else 'I'
+    elif contest == 'AMC_8' :
+        vers = temp.group(1).split('_')[0]
+
+    for attempt in range(1,4) :
+        browser = webdriver.Chrome(options=options)
+        wait = WebDriverWait(browser,
+                        timeout=5,
+                        poll_frequency=1, 
+                        ignored_exceptions=[NoSuchElementException])
+        try:
+            browser.get(link)
+            if contest == 'AIME' :
+                if (year == "2026") and (vers == 'II') :
+                    wait.until(
+                            EC.visibility_of_element_located((By.ID,'mw-content-text'))
+                            )
+                    selector = '#mw-content-text > div > ul > li:nth-child(2) > ul'
+                else :
+                    wait.until(
+                        EC.visibility_of_element_located((By.CLASS_NAME,'wikitable'))
+                        )
+                    selector = '#mw-content-text > div > table > tbody > tr:nth-child(3) > td'
+                html_source = browser.page_source
+            elif contest == 'AMC_8' :
+                wait.until(
+                        EC.visibility_of_element_located((By.ID,'mw-content-text'))
+                        )
+                html_source = browser.page_source
+                selector = "#mw-content-text > div > ul > li:nth-child(2) > ul"
+            soup = BeautifulSoup(html_source,'html.parser')
+            element = soup.select_one(selector)
+
+            if contest == 'AIME' :
+                if (year == '2026') and (vers == 'II') :
+                    condition = lambda tag : tag.name == 'a' and re.search(r'^Problem',tag.text)
+                    problems_num = len(element.find_all(condition)) if element != None else 0
+                else :
+                    problems_num = len(element.find_all('a')) if element != None else 0
+            elif contest == 'AMC_8' :
+                problems_num = len([child for child in element.children if isinstance(child,Tag)]) if element != None else 0
+
+            if problems_num > 0 :
+                break
+            else :
+                print_message(f"Retrieving Failed: content selector not found, retrying...({attempt})",'\r')
+        except Exception as e :
+            print_message(f"Error occured, retrying...({attempt})",'\r')
+        finally:
+            browser.quit()
+
+    if problems_num == 0 :
+        print_message(f"content selector not found",'\r')
+
+    record = {}       
+    record['id'] = " ".join([contest.replace('_',' '),vers,year])
+    record['contest'] = contest.replace('_',' ')
+    record['year'] = year
+    record['version'] = vers
+    record['number of problems'] = problems_num
+    record['source'] = link
+
+    return record
+    
 def get_contest_metadata(contest = 'AIME',
-                        save_json = False) :
+                        save_json = False,
+                        chunk_size = 3) :
     soup = get_first_soup(contest)
-
-    tds_year = soup.select(COLUMN_YEAR_SELECTOR)
-    years = [tds_year[i].text.strip() 
-            for i in range(len(tds_year)) 
-            if re.search(PATTERN_YEAR,tds_year[i].text)
-            ]
-    metadata = {}
-
-    link_elements = soup.select(LINK_SELECTOR)
-
-    bar = tqdm(list(enumerate(batched(link_elements,5))),
+    metadata = []
+    link_elements = soup.select(LINK_SELECTOR[contest])
+    bar = tqdm(list(enumerate(batched(link_elements,chunk_size))),
                 desc = 'Progress',
                 unit = 'source',
                 position = 0,
                 leave = True)
 
-    success = 0
+    metadata = []
     for j,chunk in bar :
-        for elem in chunk :
-            record = {}
-            link = rf"https://artofproblemsolving.com{elem.get('href')}"
+        with ThreadPoolExecutor(max_workers=chunk_size) as pool:
+            records = pool.map(lambda elem : get_contest_metadata_from_link(contest,elem), chunk)
+            for rec in records :
+                metadata.append(rec)
+        time.sleep(SWAIT)
+        bar.set_postfix(downloaded = f"{len(metadata)}",
+                        last_year = metadata[-1]['year'],
+                        last_version = metadata[-1]['version'])
 
-            title = elem.get('title')
-            year = re.search(PATTERN_TITLE,title).group(1)
-
-            temp = re.search(PATTERN_VERSION,link)
-            vers = temp.group(1) if (temp and temp.group(1)) else 'I'
-
-            for attempt in range(1,4) :
-                browser = webdriver.Chrome(options=options)
-                wait = WebDriverWait(browser,
-                                timeout=5,
-                                poll_frequency=0.2, 
-                                ignored_exceptions=[NoSuchElementException])
-                try:
-                    browser.get(link)
-                    if (year == "2026") and (vers == 'II') :
-                        wait.until(
-                                EC.visibility_of_element_located((By.ID,'mw-content-text'))
-                                )
-                        selector = '#mw-content-text > div > ul > li:nth-child(2) > ul'
-                    else :
-                        wait.until(
-                            EC.visibility_of_element_located((By.CLASS_NAME,'wikitable'))
-                            )
-                        selector = '#mw-content-text > div > table > tbody > tr:nth-child(3) > td'
-                        
-                    html_source = browser.page_source
-                    soup = BeautifulSoup(html_source,'html.parser')
-                    element = soup.select_one(selector)
-
-                    if (year == '2026') and (vers == 'II') :
-                        condition = lambda tag : tag.name == 'a' and re.search(r'^Problem',tag.text)
-                        problems_num = len(element.find_all(condition)) if element != None else 0
-                    else :
-                        problems_num = len(element.find_all('a')) if element != None else 0
-
-                    if problems_num > 0 :
-                        time.sleep(1)
-                        success+=1
-                        break
-                    else :
-                        print_message(f"Retrieving Failed: content selector not found, retrying...({attempt})",'\r')
-                except Exception as e :
-                    print_message(f"Error occured, retrying...({attempt})",'\r')
-                finally:
-                    browser.quit()
-
-            if problems_num == 0 :
-                print_message(f"content selector not found",'\r')
-
-            record['contest'] = contest
-            record['year'] = year
-            record['version'] = vers
-            record['number of problems'] = problems_num
-            record['source'] = link
-
-            id = "_".join([contest,year,vers])
-            metadata[id] = record
-        time.sleep(3)
-        bar.set_postfix(downloaded = f"{success}",
-                            last_year = f"{year}",
-                            last_version = f"{vers}")
     if(len(metadata) != 0) :
         print_message("metadata retrieved")
 

@@ -37,8 +37,6 @@ The sum of the areas of the \href{https://artofproblemsolving.com/wiki/index.php
  
 
 
-
-
 	\item (\textit{AIME I 1995}) Find the last three digits of the product of the positive roots of
 $\sqrt{1995}x^{\log_{1995}x}=x^2.$
 
@@ -80,8 +78,6 @@ Instead of taking $\log_{1995}$, we take $\log_x$ of both sides and simplify:
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $y=\log_{1995}x$. Rewriting the equation in terms of $y$, we have
@@ -92,8 +88,6 @@ Let $y=\log_{1995}x$. Rewriting the equation in terms of $y$, we have
  \[y=\frac{4\pm\sqrt{16-\left(4\right)\left(2\right)\left(1\right)}}{4}=\frac{4\pm\sqrt{8}}{4}=\frac{2\pm\sqrt{8}}{2}={1\pm\sqrt{2}}\]Thus, the product of the positive roots is $\left(1995^{\frac{2+\sqrt{8}}{2}}\right)\left(1995^{\frac{2-\sqrt{8}}{2}}\right)=1995^2=\left(2000-5\right)^2$, so the last three digits are $\boxed{025}$.
 
  
-
-
 
 
 
@@ -122,8 +116,6 @@ Set \( y = \log_{1995}(x) \).
  
 
 
-
-
 	\item (\textit{AIME I 1995}) Starting at $(0,0),$ an object moves in the coordinate plane via a sequence of steps, each of length one.  Each step is left, right, up, or down, all four equally likely.  Let $p$ be the probability that the object reaches $(2,2)$ in six or fewer steps.  Given that $p$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
 
@@ -143,8 +135,6 @@ It takes an even number of steps for the object to reach $(2,2)$, so the number 
  The total probability is $\frac{6}{4^4} + \frac{96}{4^6} = \frac{3}{64}$, and $m+n= \boxed{067}$.
 
  
-
-
 
 
 
@@ -170,8 +160,6 @@ Let's let the object wander for 6 steps so we get a constant denominator of $4^{
  
 
 
-
-
 	\item (\textit{AIME I 1995}) Circles of radius $3$ and $6$ are externally tangent to each other and are internally tangent to a circle of radius $9$. The circle of radius $9$ has a chord that is a common external tangent of the other two circles. Find the square of the length of this chord.
 
 
@@ -192,7 +180,7 @@ We label the points as following: the centers of the circles of radii $3,6,9$ ar
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -203,13 +191,13 @@ We label the points as following: the centers of the circles of radii $3,6,9$ ar
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1995_4_Solution_Figure_2.png}
                     \end{figure}
-                    Let $A$ be defined as the origin of a coordinate plane with the $y$-axis running across the chord and $C(6\sqrt{2},0)$ by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}. Then we have $D(0,-6)$ and $F(6\sqrt{2},-3)$, and since $\frac{DE}{DF}=\frac{1}{3}$, the point $E$ is one-third of the way from $D$ to $F$, so point $E$ has coordinates $(2\sqrt{2},-5)$. $E$ is the center of the circle with radius $9$, so the equation of this circle is $(x-2\sqrt{2})^2+(y+5)^2=81$. Since the chord's equation is $y=0$, we must find all values of $x$ satisfying the equation of the circle such that $y=0$. We find that $x-2\sqrt{2}=\pm\sqrt{56}$, so the chord has length $|\sqrt{56}+2\sqrt{2}-(-\sqrt{56}+2\sqrt{2})|=2\sqrt{56}$ and the answer is $(2\sqrt{56})^2=\boxed{224}$.
+                    
+
+ Let $A$ be defined as the origin of a coordinate plane with the $y$-axis running across the chord and $C(6\sqrt{2},0)$ by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}. Then we have $D(0,-6)$ and $F(6\sqrt{2},-3)$, and since $\frac{DE}{DF}=\frac{1}{3}$, the point $E$ is one-third of the way from $D$ to $F$, so point $E$ has coordinates $(2\sqrt{2},-5)$. $E$ is the center of the circle with radius $9$, so the equation of this circle is $(x-2\sqrt{2})^2+(y+5)^2=81$. Since the chord's equation is $y=0$, we must find all values of $x$ satisfying the equation of the circle such that $y=0$. We find that $x-2\sqrt{2}=\pm\sqrt{56}$, so the chord has length $|\sqrt{56}+2\sqrt{2}-(-\sqrt{56}+2\sqrt{2})|=2\sqrt{56}$ and the answer is $(2\sqrt{56})^2=\boxed{224}$.
 
  \textbf{Note} For more practice, try 2005 AIME II \#8. The idea is identical and it is just more work. 
 
  
-
-
 
 
 	\item (\textit{AIME I 1995}) For certain real values of $a, b, c,$ and $d_{},$  the equation $x^4+ax^3+bx^2+cx+d=0$ has four non-real roots.  The product of two of these roots is $13+i$ and the sum of the other two roots is $3+4i,$ where $i=\sqrt{-1}.$  Find $b.$
@@ -229,46 +217,14 @@ Since the \href{https://artofproblemsolving.com/wiki/index.php?title=Coefficient
 
 
 
-
-
 \textbf{Solution 2}
 
 Let's assume that the 2 roots multiplied together are p+qi, and r+si, and the two roots added together are the conjugates of the previous roots. Using Vieta, we get 
  \[b = (p+qi)(r+si) + (p+qi)(r-si) + (p-qi)(r+si) + (p-qi)(r-si) + (p+qi)(p-qi) + (r+si)(r-si) =\]
 
  
- \[(p+qi+p-qi)(r+si+r-si) + (p+qi)(p-qi) + (r+si)(r-si) =\]
 
  
- \[(2p)(2r) + p^2 + q^2 + r^2 + s^2 = 4pr + p^2 + q^2 + r^2 + s^2 = (p+r)^2 + 2pr + q^2 + s^2\] 
-
- We are now stuck. We can't simplify further. But, we look back to the problem and see that the two roots that are multiplied together give a product of $13+i$, and the two roots that are added give $3+4i$. This gets three equations necessary for solving the problem. 
- \[p+r = 3\] 
- \[pr-qs = 13\] 
- \[-q-s = 4\] So, alright. Let's use the first equation to get that $(p+r)^2 = 9$, and substitute that in.  Now, the equation becomes:
-
- 
- \[b = 9 + 2pr + q^2 + s^2\]
-
- We wish that we can turn the 2pr into 2qs. Fortunately, we can do that. By using the second equation, we can manipulate it to be $pr = 13+qs$, and substitute that in.
-
- 
- \[b = 9 + 2(13+qs) + q^2 + s^2 = 9 + 26 + 2qs + q^2 + s^2 = 35 + (q+s)^2\]
-
- We can square both sides of the third equation, and get $(q+s)^2 = 16$ We substitute that in and we get 
-
- 
- \[b = 35+16 = \boxed{051}\]
-
- - AlexLikeMath
-
- - Corrections by VSPuzzler
-
- - minor edit by (Marshall\_Huang)
-
- 
-
-
 
 
 	\item (\textit{AIME I 1995}) Let $n=2^{31}3^{19}.$  How many positive integer divisors of $n^2$ are less than $n_{}$ but do not divide $n_{}$?
@@ -284,8 +240,6 @@ Let's assume that the 2 roots multiplied together are p+qi, and r+si, and the tw
 We know that $n^2 = 2^{62}3^{38}$ must have $(62+1)\times (38+1)$ \href{https://artofproblemsolving.com/wiki/index.php?title=Factor}{factors} by its \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorization}{prime factorization}. If we group all of these factors (excluding $n$) into pairs that multiply to $n^2$, then one factor per pair is less than $n$, and so there are $\frac{63\times 39-1}{2} = 1228$ factors of $n^2$ that are less than $n$. There are $32\times20-1 = 639$ factors of $n$, which clearly are less than $n$, but are still factors of $n$. Therefore, using complementary counting, there are $1228-639=\boxed{589}$ factors of $n^2$ that do not divide $n$.
 
  
-
-
 
 
 
@@ -307,8 +261,6 @@ Let $n=p_1^{k_1}p_2^{k_2}$ for some primes $p_1,p_2$. Then $n^2$ has $\frac{(2k_
 
 
 
-
-
 \textbf{Solution 3}
 
 Consider divisors of $n^2: a,b$ such that $ab=n^2$.WLOG, let $b\ge{a}$ and $b=\frac{n}{a}$
@@ -323,17 +275,15 @@ Consider divisors of $n^2: a,b$ such that $ab=n^2$.WLOG, let $b\ge{a}$ and $b=\f
 
  Therefore, the answer is $1228-639=\boxed{589}$.
 
- Note: the problem where this is linked is covered 0:13-1:15
-
  
-
-
 
 
 	\item (\textit{AIME I 1995}) Given that $(1+\sin t)(1+\cos t)=5/4$ and
 
 
- $(1-\sin t)(1-\cos t)=\frac mn-\sqrt{k},$where $k, m,$ and $n_{}$ are positive integers with $m_{}$ and $n_{}$ relatively prime, find $k+m+n.$
+ $(1-\sin t)(1-\cos t)=\frac mn-\sqrt{k},$
+
+ where $k, m,$ and $n_{}$ are positive integers with $m_{}$ and $n_{}$ relatively prime, find $k+m+n.$
 
 
  
@@ -349,15 +299,11 @@ From the givens, $2\sin t \cos t + 2 \sin t + 2 \cos t = \frac{1}{2}$, and addin
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $(1 - \sin t)(1 - \cos t) = x$. Multiplying $x$ with the given equation, $\frac{5x}{4} = (1 - \sin^2 t)(1 - \cos^2 t) = \sin^2 t \cos ^2 t$, and $\frac{\sqrt{5x}}{2} = \sin t \cos t$. Simplifying and rearranging the given equation, $\sin t + \cos t = \frac{5}{4} - (\sin^2 t + \cos^2 t) - \sin t \cos t = \frac{1}{4} - \frac{\sqrt{5x}}{2}$. Notice that $(1 + \sin t)(1 + \cos t) - 2(\sin t + \cos t) = x$, and substituting, $x = \frac{5}{4} - 2( \frac{1}{4} - \frac{\sqrt{5x}}{2}) = \frac{3}{4} + \sqrt{5x}$. Rearranging and squaring, $5x = x^2 - \frac{3}{2} x + \frac{9}{16}$, so $x^2 - \frac{13}{2} x + \frac{9}{16} = 0$, and $x = \frac{13}{4} \pm \sqrt{10}$, but clearly, $0 \leq x < 4$. Therefore, $x = \frac{13}{4} - \sqrt{10}$, and the answer is $13 + 4 + 10 = \boxed{027}$.
 
  
-
-
 
 
 
@@ -374,8 +320,6 @@ We want $1+\sin t \cos t-\sin t-\cos t$. However, note that we only need to find
  $\frac{5}{4} - 2(\frac{-2+\sqrt{10}}{2}) = \frac{13}{4}-\sqrt{10} \rightarrow 13+10+4=\boxed{027}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1995}) For how many ordered pairs of positive integers $(x,y),$ with $y<x\le 100,$ are both $\frac xy$ and $\frac{x+1}{y+1}$ integers?
@@ -403,8 +347,6 @@ Since $y|x$, $y+1|x+1$, then $\text{gcd}\,(y,x)=y$ (the bars indicate \href{http
 
 
 
-
-
 \textbf{Solution 2}
 
 We know that $x \equiv 0 \mod y$ and  $x+1 \equiv 0 \mod y+1$.
@@ -416,8 +358,6 @@ We know that $x \equiv 0 \mod y$ and  $x+1 \equiv 0 \mod y+1$.
  Finding all possible values of $a$ such that $y<x<100$, we get $49 + 16 + 8 + 4 + 3 + 2 + 1 + 1 + 1 = \boxed{085}.$
 
  
-
-
 
 
 
@@ -452,8 +392,6 @@ We use casework:
  
 
 
-
-
 	\item (\textit{AIME I 1995}) Triangle $ABC$ is isosceles, with $AB=AC$ and altitude $AM=11.$  Suppose that there is a point $D$ on $\overline{AM}$ with $AD=10$ and $\angle BDC=3\angle BAC.$  Then the perimeter of $\triangle ABC$ may be written in the form $a+\sqrt{b},$ where $a$ and $b$ are integers.  Find $a+b.$
 
 
@@ -479,15 +417,11 @@ Let $x=\angle CAM$, so $3x=\angle CDM$. Then, $\frac{\tan 3x}{\tan x}=\frac{CM/1
 
 
 
-
-
 \textbf{Solution 2}
 
 In a similar fashion, we encode the angles as complex numbers, so if $BM=x$, then $\angle BAD=\text{Arg}(11+xi)$ and $\angle BDM=\text{Arg}(1+xi)$. So we need only find $x$ such that $\text{Arg}((11+xi)^3)=\text{Arg}(1331-33x^2+(363x-x^3)i)=\text{Arg}(1+xi)$. This will happen when $\frac{363x-x^3}{1331-33x^2}=x$,  which simplifies to $121x-4x^3=0$. Therefore, $x=\frac{11}{2}$. By the Pythagorean Theorem, $AB=\frac{11\sqrt{5}}{2}$, so the perimeter is $11+11\sqrt{5}=11+\sqrt{605}$, giving us our answer, $\boxed{616}$.
 
  
-
-
 
 
 
@@ -498,8 +432,6 @@ Let $\angle BAD=\alpha$, so $\angle BDM=3\alpha$, $\angle BDA=180-3\alpha$, and 
  \[22x(10-x)^2=x^2(22x-120)\] which simplifies to $x=\frac{55}{8}.$ Substituting this in for x in the equations for $BA$ and $BM$ yields $BA=\frac{\sqrt{605}}{2}$ and $BM=\frac{11}{2}.$ Thus the perimeter is $11+\sqrt{605}$, and the answer is $\boxed{616}$.
 
  
-
-
 
 
 
@@ -577,8 +509,6 @@ The triangle is symmetrical so we can split it in half ($\triangle ABM$ and $\tr
 
 
 
-
-
 \textbf{Solution 5}
 
 Suppose $\angle BAM=\angle CAM =x$, since $\angle BDC=3\angle BAC$, we have $\angle BDM=\angle MDC = 3x$. Therefore, $\angle DBC=\angle DCB = 90^\circ -3x$ and $\angle ABD=\angle DCA=2x$. As a result, $\triangle KAC$ is isosceles, $KC=KA$.
@@ -592,8 +522,6 @@ Suppose $\angle BAM=\angle CAM =x$, since $\angle BDC=3\angle BAC$, we have $\an
  \[\sqrt{36a^2-121}=\sqrt{36b^2-1}\] Since $a=\frac{11}{5}b$, we have $b=\frac{5\sqrt{5}}{12}$ and $a=\frac{11\sqrt{5}}{12}$. Consequently, $BM=\frac{11}{2}$ and $AB=\frac{11\sqrt{5}}{2}$. Thus, the perimeter of $\triangle ABC$ is $11+\sqrt{605}$, and the answer is $\boxed{616}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1995}) What is the largest positive integer that is not the sum of a positive integral multiple of 42 and a positive composite integer?
@@ -621,8 +549,6 @@ The requested number $\mod {42}$ must be a prime number. Also, every number that
 
 
 
-
-
 \textbf{Solution 2}
 
 Let our answer be $n$. Write $n = 42a + b$, where $a, b$ are positive integers and $0 \leq b < 42$. Then note that $b, b + 42, ... , b + 42(a-1)$ are all primes. 
@@ -640,8 +566,6 @@ Let our answer be $n$. Write $n = 42a + b$, where $a, b$ are positive integers a
  Our answer is $\boxed{215}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1995}) A right rectangular prism $P_{}$ (i.e., a rectangular parallelepiped) has sides of integral length $a, b, c,$ with $a\le b\le c.$  A plane parallel to one of the faces of $P_{}$ cuts $P_{}$ into two prisms, one of which is similar to $P_{},$ and both of which have nonzero volume.  Given that $b=1995,$ for how many ordered triples $(a, b, c)$ does such a plane exist?
@@ -669,8 +593,6 @@ Let $P'$ be the prism similar to $P$, and let the sides of $P'$ be of length $x,
  
 
 
-
-
 	\item (\textit{AIME I 1995}) Pyramid $OABCD$ has square base $ABCD,$ congruent edges $\overline{OA}, \overline{OB}, \overline{OC},$ and $\overline{OD},$ and $\angle AOB=45^\circ.$  Let $\theta$ be the measure of the dihedral angle formed by faces $OAB$ and $OBC.$  Given that $\cos \theta=m+\sqrt{n},$ where $m_{}$ and $n_{}$ are integers, find $m+n.$
 
 
@@ -686,97 +608,11 @@ Let $P'$ be the prism similar to $P$, and let the sides of $P'$ be of length $x,
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1995_12_Solution_Figure_1.png}
                     \end{figure}
-                    The angle $\theta$ is the angle formed by two \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendiculars} drawn to $BO$, one on the plane determined by $OAB$ and the other by $OBC$. Let the perpendiculars from $A$ and $C$ to $\overline{OB}$ meet $\overline{OB}$ at $P.$ \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{Without loss of generality}, let $AP = 1.$ It follows that $\triangle OPA$ is a $45-45-90$ \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}, so $OP = AP = 1,$ $OB = OA = \sqrt {2},$ and $AB = \sqrt {4 - 2\sqrt {2}}.$ Therefore, $AC = \sqrt {8 - 4\sqrt {2}}.$
+                    
 
- From the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}, $AC^{2} = AP^{2} + PC^{2} - 2(AP)(PC)\cos \theta,$ so
-
- 
- \[8 - 4\sqrt {2} = 1 + 1 - 2\cos \theta \Longrightarrow \cos \theta = - 3 + 2\sqrt {2} = - 3 + \sqrt{8}.\]
-
- Thus $m + n = \boxed{005}$.
+ The angle $\theta$ is the angle formed by two \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendiculars} drawn to 
 
  
-
-
-
-
-
-\textbf{Solution 2 (analytical/vectors)}
-
-Without loss of generality, place the pyramid in a 3-dimensional coordinate system such that $A = (1,0,0),$ $B = (0,1,0),$ $C = ( - 1,0,0),$ $D = (0, - 1,0),$ and $O = (0,0,z),$ where $z$ is unknown.
-
- We first find $z.$ Note that
-
- 
- \[\overrightarrow{OA}\cdot \overrightarrow{OB} = \parallel \overrightarrow{OA}\parallel \parallel \overrightarrow{OB}\parallel \cos 45^\circ.\]
-
- Since $\overrightarrow{OA} =\, <1,0, - z>$ and $\overrightarrow{OB} =\, <0,1, - z> ,$ this simplifies to
-
- 
- \[z^{2}\sqrt {2} = 1 + z^{2}\implies z^{2} = 1 + \sqrt {2}.\]
-
- Now let's find $\cos \theta.$ Let $\vec{u}$ and $\vec{v}$ be normal vectors to the planes containing faces $OAB$ and $OBC,$ respectively. From the definition of the \href{https://artofproblemsolving.com/wiki/index.php?title=Dot\_product}{dot product} as $\vec{u}\cdot \vec{v} = \parallel \vec{u}\parallel \parallel \vec{v}\parallel \cos \theta$, we will be able to solve for $\cos \theta.$ A cross product yields (alternatively, it is simple to find the equation of the planes $OAB$ and $OAC$, and then to find their normal vectors)
-
- 
- \[\vec{u} = \overrightarrow{OA}\times \overrightarrow{OB} = \left| \begin{array}{ccc}\hat{i} & \hat{j} & \hat{k} \\ 1 & 0 & - z \\ 0 & 1 & - z \end{array}\right| =\, < z,z,1 > .\]
-
- Similarly,
-
- 
- \[\vec{v} = \overrightarrow{OB}\times \overrightarrow{OC} - \left|\begin{array}{ccc}\hat{i} & \hat{j} & \hat{k} \\ 0 & 1 & - z \\ - 1 & 0 & - z \end{array}\right| =\, < - z,z,1 > .\]
-
- Hence, taking the dot product of $\vec{u}$ and $\vec{v}$ yields
-
- 
- \[\cos \theta = \frac{ \vec{u} \cdot \vec{v} }{ \parallel \vec{u} \parallel \parallel \vec{v} \parallel } = \frac{- z^{2} + z^{2} + 1}{(\sqrt {1 + 2z^{2}})^{2}} =  \frac {1}{3 + 2\sqrt {2}} = 3 - 2\sqrt {2} = 3 - \sqrt {8}.\]
-
- Flipping the signs (we found the cosine of the supplement angle) yields $\cos \theta = - 3 + \sqrt {8},$ so the answer is $\boxed{005}$.
-
- 
-
-
-
-
-
-\textbf{Solution 3 (bashy trig)}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1995_12_Solution_Figure_1.png}
-                    \end{figure}
-                    Similar to Solution 1, $\angle APC$ is the dihedral angle we want. WLOG, we will let $AB=1,$ meaning $AC=\sqrt{2}$.
-
- Because $\triangle OAB,\triangle OBC$ are isosceles, $\angle ABP = 67.5^{\circ}$ $PC=PA=\cos(\angle PAB)=\cos(22.5^{\circ})$.
-
- Thus by the half-angle identity,
-
- 
- \[PA=\cos\left(\frac{45}{2}\right) = \sqrt{\frac{1+\cos(45^{\circ})}{2}}\]
- \[= \sqrt{\frac{2+\sqrt{2}}{4}}.\]
-
- Now looking at triangle $\triangle PAC,$ we drop the perpendicular from $P$ to $AC$, and call the foot $H$. Then $\angle CPH = \theta / 2.$ By Pythagoreas,
- \[PH=\sqrt{\frac{2+\sqrt{2}}{4}-\frac{1}{2}}=\frac{\sqrt[4]{2}}{2}.\]
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1995_12_Solution_Figure_3.png}
-                    \end{figure}
-                    We have that
- \[\cos\left(\frac{\theta}{2}\right)=\frac{\sqrt[4]{2}}{\sqrt{2+\sqrt{2}}},\text{ so}\]
- \[\cos(\theta)=2\cos^{2}\left(\frac{\theta}{2}\right)-1\]
- \[=2\left(\frac{\sqrt{2}}{2+\sqrt{2}}\right)-1\]
- \[=2(\frac{2\sqrt{2}-2}{2})-1\]
- \[=-3+\sqrt{8}.\]
-
- Because $m$ and $n$ can be negative integers, our answer is $(-3)+8=\boxed{005.}$
-
- Notice that $-1\le \cos(\theta) \le 1$ as well.
-
- 
-
-
 
 
 	\item (\textit{AIME I 1995}) Let $f(n)$ be the integer closest to $\sqrt[4]{n}.$  Find $\sum_{k=1}^{1995}\frac 1{f(k)}.$
@@ -803,15 +639,11 @@ When $\left(k - \frac {1}{2}\right)^4 \leq n < \left(k + \frac {1}{2}\right)^4$,
 
 
 
-
-
 \textbf{Solution 2}
 
 This is a pretty easy problem just to bash. Since the max number we can get is $7$, we just need to test $n$ values for $1.5,2.5,3.5,4.5,5.5$ and $6.5$. Then just do how many numbers there are times $\frac{1}{\lfloor n \rfloor}$, which should be $5+17+37+65+101+145+30 = \boxed{400}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1995}) In a circle of radius 42, two chords of length 78 intersect at a point whose distance from the center is 18.  The two chords divide the interior of the circle into four regions.  Two of these regions are bordered by segments of unequal lengths, and the area of either of them can be expressed uniquely in the form $m\pi-n\sqrt{d},$ where $m, n,$ and $d_{}$ are positive integers and $d_{}$ is not divisible by the square of any prime number.  Find $m+n+d.$
@@ -831,9 +663,13 @@ Let the center of the circle be $O$, and the two chords be $\overline{AB}, \over
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1995_14_Solution_Figure_1.png}
                     \end{figure}
-                    By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, $OF = \sqrt{OB^2 - BF^2} = \sqrt{42^2 - 39^2} = 9\sqrt{3}$, and $EF = \sqrt{OE^2 - OF^2} = 9$. Then $OEF$ is a $30-60-90$ \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}, so $\angle OEB = \angle OED = 60^{\circ}$. Thus $\angle BEC = 60^{\circ}$, and by the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines},
+                    
 
- $BC^2 = BE^2 + CE^2 - 2 \cdot BE \cdot CE \cos 60^{\circ} = 42^2.$It follows that $\triangle BCO$ is an \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral triangle}, so $\angle BOC = 60^{\circ}$. The desired area can be broken up into two regions, $\triangle BCE$ and the region bounded by $\overline{BC}$ and minor arc $\stackrel{\frown}{BC}$. The former can be found by \href{https://artofproblemsolving.com/wiki/index.php?title=Heron\%27s\_formula}{Heron's formula} to be $[BCE] = \sqrt{60(60-48)(60-42)(60-30)} = 360\sqrt{3}$. The latter is the difference between the area of \href{https://artofproblemsolving.com/wiki/index.php?title=Sector}{sector} $BOC$ and the equilateral $\triangle BOC$, or $\frac{1}{6}\pi (42)^2 - \frac{42^2 \sqrt{3}}{4} = 294\pi - 441\sqrt{3}$. 
+ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, $OF = \sqrt{OB^2 - BF^2} = \sqrt{42^2 - 39^2} = 9\sqrt{3}$, and $EF = \sqrt{OE^2 - OF^2} = 9$. Then $OEF$ is a $30-60-90$ \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}, so $\angle OEB = \angle OED = 60^{\circ}$. Thus $\angle BEC = 60^{\circ}$, and by the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines},
+
+ $BC^2 = BE^2 + CE^2 - 2 \cdot BE \cdot CE \cos 60^{\circ} = 42^2.$
+
+ It follows that $\triangle BCO$ is an \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral triangle}, so $\angle BOC = 60^{\circ}$. The desired area can be broken up into two regions, $\triangle BCE$ and the region bounded by $\overline{BC}$ and minor arc $\stackrel{\frown}{BC}$. The former can be found by \href{https://artofproblemsolving.com/wiki/index.php?title=Heron\%27s\_formula}{Heron's formula} to be $[BCE] = \sqrt{60(60-48)(60-42)(60-30)} = 360\sqrt{3}$. The latter is the difference between the area of \href{https://artofproblemsolving.com/wiki/index.php?title=Sector}{sector} $BOC$ and the equilateral $\triangle BOC$, or $\frac{1}{6}\pi (42)^2 - \frac{42^2 \sqrt{3}}{4} = 294\pi - 441\sqrt{3}$. 
 
  Thus, the desired area is $360\sqrt{3} + 294\pi - 441\sqrt{3} = 294\pi - 81\sqrt{3}$, and $m+n+d = \boxed{378}$.
 
@@ -842,8 +678,6 @@ Let the center of the circle be $O$, and the two chords be $\overline{AB}, \over
  -NL008
 
  
-
-
 
 
 	\item (\textit{AIME I 1995}) Let $p_{}$ be the probability that, in the process of repeatedly flipping a fair coin, one will encounter a run of 5 heads before one encounters a run of 2 tails.  Given that $p_{}$ can be written in the form $m/n$ where $m_{}$ and $n_{}$ are relatively prime positive integers, find $m+n$.
@@ -864,21 +698,21 @@ Think of the problem as a sequence of <tt>H</tt>'s and <tt>T</tt>'s. No two <tt>
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $p_H, p_T$ respectively denote the probabilities that a string beginning with <tt>H</tt>'s(H-string) and <tt>T</tt>'s(T-string) are successful. Notice that a T-string is just a T followed by an H-string. Thus, 
 
- $p_T = \frac 12p_H.$A successful string can either be the string HHHHH, start with 1 to 4 H's and then revert to a T, start with a T and then continue with a string starting with <tt>H</tt> (as there cannot be $2$ <tt>T</tt>'s in a row).
+ $p_T = \frac 12p_H.$
+
+ A successful string can either be the string HHHHH, start with 1 to 4 H's and then revert to a T, start with a T and then continue with a string starting with <tt>H</tt> (as there cannot be $2$ <tt>T</tt>'s in a row).
 
  There is a $\frac{1}{2^5} = \frac{1}{32}$ probability we roll <tt>HHHHH</tt>. On the other hand, there is a $\frac{15}{16}$ probability we roll a <tt>H, HH, HHH, or HHHH</tt>, and then a probability of $p_T$ to follow that up with a string starting with <tt>T</tt>. Thus, 
 
- $p_H = \left(\frac{15}{16}\right) \cdot \left(\frac 12\right) p_H + \frac{1}{32} \Longrightarrow p_H = \frac{1}{17}.$The answer is $p_H + p_T = \frac{3}{2}p_H = \frac{3}{34}$, and $m+n = \boxed{037}$.
+ $p_H = \left(\frac{15}{16}\right) \cdot \left(\frac 12\right) p_H + \frac{1}{32} \Longrightarrow p_H = \frac{1}{17}.$
+
+ The answer is $p_H + p_T = \frac{3}{2}p_H = \frac{3}{34}$, and $m+n = \boxed{037}$.
 
  
-
-
 
 
 
@@ -890,9 +724,11 @@ For simplicity, let's compute the complement, namely the probability of getting 
 
  Consider solving for $t_{1}$. If we have 1 consecutive tail, then (a) rolling a head gets us to 1 consecutive head and (b) rolling a tail gets us to 2 consecutive tails. So, we must have:
 
- <center>$t_{1} = \frac{1}{2} t_{2} + \frac{1}{2} h_{1}$
+ $t_{1} = \frac{1}{2} t_{2} + \frac{1}{2} h_{1}$
 
- </center>Applying similar logic, we get the equations:
+ 
+
+ Applying similar logic, we get the equations:
 
  
  \begin{align*} h_{1} &= \frac{1}{2} h_{2} + \frac{1}{2} t_{1}\\ h_{2} &= \frac{1}{2} h_{3} + \frac{1}{2} t_{1}\\ h_{3} &= \frac{1}{2} h_{4} + \frac{1}{2} t_{1}\\ h_{4} &= \frac{1}{2} h_{5} + \frac{1}{2} t_{1} \end{align*}
@@ -908,8 +744,6 @@ For simplicity, let's compute the complement, namely the probability of getting 
 
 
 
-
-
 \textbf{Solution 4(fast)}
 
 Consider what happens in the "endgame" or what ultimately leads to the end. Let A denote that a head has been flipped, and let B denote that a tail has been flipped. The endgame outcomes are AAAAA, BAAAAA, BB, ABB, AABB, AAABB, AAAABB. The probabilities of each of these are $\frac{1}{32},\frac{1}{64},\frac{1}{4},\frac{1}{8},\frac{1}{16},\frac{1}{32},\frac{1}{64}$ respectively. The ones where there is five heads are AAAAA and BAAAAA. The sum of these probabilities are $\frac{3}{64}$. The sum of all these endgame outcomes are $\frac{34}{64}$, hence the desired probability is $\frac{3}{34}$, and in this case $m=3,n=34$ so we have $m+n=\boxed{037}$-vsamc
@@ -918,15 +752,11 @@ Consider what happens in the "endgame" or what ultimately leads to the end. Let 
 
 
 
-
-
 \textbf{Solution 5}
 
 There can be 1-4 heads and 1 tails in any grouping, so we write $h_5,th_5,h_nth_5,th_nth_5,\ldots$ etc., where $1\leq n\leq 4$ and subscript $n$ means there are $n$ of that state in a row. We see that this gives us 2 geometric sequences: one with first term $\frac{1}{2^5}$ and common ratio $\frac{1}{2}*\left(1/2+1/4+1/8+1/16\right)$ and one with first term $\frac{1}{2^6}$ and the same common ratio. Therefore we get $\frac{3}{34}$ or $\fbox{037}$~joeythetoey
 
  
-
-
 
 
 \end{enumerate}

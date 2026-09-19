@@ -10,11 +10,9 @@
 
 \textbf{Solution 1}
 
-Solving for $m$ gives us $m = \frac{503-3n}{5},$ so in order for $m$ to be an integer, we must have $3n \equiv 503 \mod 5 \longrightarrow n \equiv 1 \mod 5.$ The smallest possible value of $n$ is obviously $1,$ and the greatest is $\frac{503 - 5}{3} = 166,$ so the total number of solutions is $\frac{166-1}{5}+1 = \boxed{34}$
+Solving for $m$ gives us $m = \frac{503-3n}{5},$ so in order for $m$ to be an integer, we must have $3n \equiv 503 \mod 5 \longrightarrow n \equiv 1 \mod 5.$ The smallest possible value of $n$ is obviously $1,$ and the greatest is $\frac{503 - 5}{3} = 166,$ so the total number of solutions is $\frac{166-1}{5}+1 = \boxed{034}$
 
  
-
-
 
 
 
@@ -48,15 +46,11 @@ Dividing by $4$ gives us $5m + 3n = 503$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Because the x-intercept of the equation is $\frac{2012}{20}$, and the y-intercept is $\frac{2012}{12}$, the slope is $\frac{\frac{-2012}{12}}{\frac{2012}{20}} = \frac{-5}{3}$. Now, notice the first obvious solution: (100,1). From it, we derive all the other solutions by applying the slope in reverse, i.e: $(100,1), (97,6), (94,11)...$ Because the solutions are only positive, we can generate only 33 more solutions, so in total we have $33+1=\boxed{34}$ solutions.
 
  
-
-
 
 
 
@@ -85,8 +79,6 @@ Note that a positive integer is divisible by 20 if it ends in 0.
  
 
 
-
-
 	\item (\textit{AIME II 2012}) Two geometric sequences $a_1, a_2, a_3, \ldots$ and $b_1, b_2, b_3, \ldots$ have the same common ratio, with $a_1 = 27$, $b_1=99$, and $a_{15}=b_{11}$. Find $a_9$.
 
 
@@ -100,8 +92,6 @@ Note that a positive integer is divisible by 20 if it ends in 0.
 Call the common ratio $r.$ Now since the $n$th term of a geometric sequence with first term $x$ and common ratio $y$ is $xy^{n-1},$ we see that $a_1 \cdot r^{14} = b_1 \cdot r^{10} \implies r^4 = \frac{99}{27} = \frac{11}{3}.$ But $a_9$ equals $a_1 \cdot r^8 = a_1 \cdot (r^4)^2=27\cdot {\left(\frac{11}{3}\right)}^2=27\cdot \frac{121} 9=\boxed{363}$.
 
  
-
-
 
 
 
@@ -124,8 +114,6 @@ Let the ratio be \( r \). From \( \frac{a_{15}}{b_{11}} = \frac{a_{15}}{b_{11}} 
  $\boxed{363}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) At a certain university, the division of mathematical sciences consists of the departments of mathematics, statistics, and computer science. There are two male and two female professors in each department. A committee of six professors is to contain three men and three women and must also contain two professors from each of the three departments. Find the number of possible committees that can be formed subject to these requirements.
@@ -154,15 +142,11 @@ There are two cases:
 
 
 
-
-
 \textbf{Solution 2}
 
 Use \href{https://artofproblemsolving.com/wiki/index.php?title=Generating\_functions}{generating functions}. For each department, there is 1 way to pick 2 males, 4 ways to pick one of each, and 1 way to pick 2 females. Since there are three departments in total, and we wish for three males and three females, the answer will be equal to the coefficient of $x^3y^3$ in the expansion of $(x^2+4xy+y^2)^3$. The requested coefficient is $\boxed{088}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Ana, Bob, and Cao bike at constant rates of $8.6$ meters per second, $6.2$ meters per second, and $5$ meters per second, respectively. They all begin biking at the same time from the northeast corner of a rectangular field whose longer side runs due west. Ana starts biking along the edge of the field, initially heading west, Bob starts biking along the edge of the field, initially heading south, and Cao bikes in a straight line across the field to a point $D$ on the south edge of the field. Cao arrives at point $D$ at the same time that Ana and Bob arrive at $D$ for the first time. The ratio of the field's length to the field's width to the distance from point $D$ to the southeast corner of the field can be represented as $p : q : r$, where $p$, $q$, and $r$ are positive integers with $p$ and $q$ relatively prime. Find $p+q+r$.
@@ -203,8 +187,6 @@ Use \href{https://artofproblemsolving.com/wiki/index.php?title=Generating\_funct
  Note that in our diagram, we labeled the part of the bottom $b$ and the side $c$. However, these labels are interchangeable. We can cancel out the case where the side is $4.8$ and the part of the bottom is $1.4$ by noting a restriction of the problem: "...a rectangular field whose longer side runs due west." If we had the side be $4.8$, then the entire bottom would be $1.2+1.4=2.6$, clearly less than $4.8$ and therefore violating our restriction.
 
  
-
-
 
 
 
@@ -284,8 +266,6 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
  
 
 
-
-
 	\item (\textit{AIME II 2012}) In the accompanying figure, the outer square $S$ has side length $40$. A second square $S'$ of side length $15$ is constructed inside $S$ with the same center as $S$ and with sides parallel to those of $S$. From each midpoint of a side of $S$, segments are drawn to the two closest vertices of $S'$. The result is a four-pointed starlike figure inscribed in $S$. The star figure is cut out and then folded to form a pyramid with base $S'$. Find the volume of this pyramid.
 
 
@@ -295,6 +275,8 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_II_2012_5_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }750
 
 
@@ -314,8 +296,6 @@ When the pyramid is made, you see that the height is the one of the legs of a ri
  Finally, $V=\frac{1}{3}bh=\frac{1}{3}(225)(10)=\boxed{750}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Let $z=a+bi$ be the complex number with $\vert z \vert = 5$ and $b > 0$ such that the distance between $(1+2i)z^3$ and $z^5$ is maximized, and let $z^4 = c+di$. Find $c+d$.
@@ -343,8 +323,6 @@ Let's consider the maximization constraint first: we want to maximize the value 
  Squaring, we get $z^4 = 5 (25 - 100 + 100i) = -375 + 500i$. Finally, $c+d = -375 + 500 = \boxed{125}$
 
  
-
-
 
 
 
@@ -391,15 +369,11 @@ WLOG, let $z_{1}=5(\cos{\theta_{1}}+i\sin{\theta_{1}})$ and
 
 
 
-
-
 \textbf{Solution 3}
 
 Clearly, we want $\arg((1+2i)z^3) = \pi + \arg(z^5)$. This is equivalent to $\arg(1+2i) = \pi + 2 \arg(z)$ by the additive property of the argument in complex multiplication. Because we want to find $z^4$, we want an expression for $\arg(z^4)$. We now have $2\arg(1+2i) = 2\pi + 4 \arg(z) \rightarrow \arg(-3+4i) = 4\arg(z)$. Thus, $z^4$ is in the direction of $-3 + 4i$. To achieve a magnitude of 5\textasciicircum{}4, we need to multiple $-3+4i$ by 125, so $z^4 = 125(-3+4i)$ and the answer is thus $\boxed{125}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Let $S$ be the increasing sequence of positive integers whose binary representation has exactly $8$ ones. Let $N$ be the 1000th number in $S$. Find the remainder when $N$ is divided by $1000$.
@@ -419,11 +393,7 @@ Okay, an exercise in counting (lots of binomials to calculate!).  In base 2, the
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{Math Problem Solving Skills}
-
  
-
-
 
 
 	\item (\textit{AIME II 2012}) The complex numbers $z$ and $w$ satisfy the system 
@@ -456,8 +426,6 @@ Also, $|z|^2=a^2+b^2$ and $|w|^2=c^2+d^2$. Therefore:
  \textbf{mathboy282}
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Let $x$ and $y$ be real numbers such that $\frac{\sin x}{\sin y} = 3$ and $\frac{\cos x}{\cos y} = \frac12$. The value of $\frac{\sin 2x}{\sin 2y} + \frac{\cos 2x}{\cos 2y}$ can be expressed in the form $\frac pq$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -520,8 +488,6 @@ Examine the first term in the expression we want to evaluate, $\frac{\sin 2x}{\s
 
 
 
-
-
 \textbf{Solution 2}
 
 As mentioned above, the first term is clearly $\frac{3}{2}.$ For the second term, we first wish to find $\frac{\cos 2x}{\cos 2y} =\frac{2\cos^2 x - 1}{2 \cos^2y -1}.$ Now we first square the first equation getting $\frac{\sin^2x}{\sin^2y} =\frac{1-\cos^2x}{1 - \cos^2y} =9.$ Squaring the second equation yields $\frac{\cos^2x}{\cos^2y} =\frac{1}{4}.$ Let $\cos^2x = a$ and $\cos^2y = b.$ We have the system of equations
@@ -529,8 +495,6 @@ As mentioned above, the first term is clearly $\frac{3}{2}.$ For the second term
 Multiplying the first equation by $4$ yields $4-4a = 36 - 36b$ and so $4-b =36 - 36b \implies b =\frac{32}{35}.$ We then find $a =\frac{8}{35}.$ Therefore the second fraction ends up being $\frac{\frac{64}{35}-1}{\frac{16}{35}-1} = -\frac{19}{29}$ so that means our desired sum is $\frac{49}{58}$ so the desired sum is $\boxed{107}.$
 
  
-
-
 
 
 
@@ -561,8 +525,6 @@ Multiplying the first equation by $4$ yields $4-4a = 36 - 36b$ and so $4-b =36 -
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $a = \sin(x), b = \sin(y)$The first equation yields $\frac{a}{b} = 3.$ Using $sin^2(x) + cos^2(x) = 1$ the second equation yields 
@@ -576,8 +538,6 @@ Let $a = \sin(x), b = \sin(y)$The first equation yields $\frac{a}{b} = 3.$ Using
 
 
 
-
-
 \textbf{Solution 5}
 
 We can calculate the first term $\frac{\sin 2x}{\sin 2y} = \frac{2 \sin x \cos x}{2 \sin y \cos y} = 3 \cdot \frac{1}{2} = \frac{3}{2}.$To calculate the second term, we need to use the identity $\sin^2 x + \cos^2 x = 1.$ From the first and second equations, we can rewrite then as $\sin x = 3 \sin y$ and $\cos x = \frac{1}{2} \cos y$ respectively. Now, we can use the identity and make the equation $9 \sin^2 y + \frac{1}{4} \cos^2 y = 1$ We now multiply both sides by 4 and get the equation $36 \sin^2 y + \cos^2 y = 4.$ Using the identity again, we realize that we can subtract 1 from both sides and obtain $35 \sin^2 y = 3$. Now, we can figure out that $\sin^2 y = \frac{3}{35}$. Another identity that is useful for this problem is $\cos 2x = 1 - 2 \sin^2 x$. Now, we can find the value of $\cos 2y$ 
@@ -585,8 +545,6 @@ We can calculate the first term $\frac{\sin 2x}{\sin 2y} = \frac{2 \sin x \cos x
  which is $1 - 2(\frac{3}{35}) = \frac{29}{35}$. Our main problem now is finding $\cos 2x$. We can use the identity so that we just need to find $\sin^2 x$. Using our first equation stated in the problem, we can multiply both sides by itself and get the equation $\frac{\sin^2 x}{\sin^2 y} = 9$. Plug in $\frac{3}{35}$ for $\sin^2 y$ and solve the equation to get the value of $\sin^2 x$ as $\frac{27}{35}$. Next, we use the identity and find $\cos 2x$ as $-\frac{19}{35}$. We can find the second term as we have $\cos 2x$ and $\cos 2y$. Thus, the total sum is $\frac{3}{2} + \frac{-19}{29} = \frac{49}{58}$. The question asks the sum of the numerator and the denominator so the answer is $49 + 58 = \boxed{107}$.
 
  
-
-
 
 
 
@@ -601,8 +559,6 @@ This is similar to solution 1.
  The requested value is $\frac{3}{2} - \frac{19}{29} = \frac{49}{58} \implies \boxed{107}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Find the number of positive integers $n$ less than $1000$ for which there exists a positive real number $x$ such that $n=x\lfloor x \rfloor$.
@@ -635,11 +591,96 @@ Let $x = a + \frac{b}{c}$ where $a,b,c$ are nonnegative integers and $0 \le b < 
  $a = 3 \implies\frac{b}{c} =\frac{0}{3},\frac{1}{3},\frac{2}{3}$
 
  
-The pattern continues up to $a = 31$. Note
+The pattern continues up to $a = 31$. Note that if $a = 32$, then $n > 1000$. However if $a = 31$, the largest possible $x$ is $31 + \frac{30}{31}$, in which $n$ is still less than $1000$. Therefore the number of positive integers for $n$ is equal to $1+2+3+...+31 = \frac{31 \cdot 32}{2} = \boxed{496}.$
 
  
 
 
+
+\textbf{Solution 2}
+
+Notice that $x\lfloor x\rfloor$ is continuous over the region $x \in [k, k+1)$ for any integer $k$. Therefore, it takes all values in the range $[k\lfloor k\rfloor, (k+1)\lfloor k+1\rfloor) = [k^2, (k+1)k)$ over that interval. Note that if $k>32$ then $k^2 > 1000$ and if $k=31$, the maximum value attained is $31*32 < 1000$. It follows that the answer is $\sum_{k=1}^{31} (k+1)k-k^2  = \sum_{k=1}^{31} k = \frac{31\cdot 32}{2} = \boxed{496}.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Bounding gives $x^2\le n<x^2+x$. Thus there are a total of $x$ possible values for $n$, for each value of $x^2$. Checking, we see $31^2+31=992<1000$, so there are 
+ \[1+2+3+...+31= \boxed{496}\] such values for $n$.
+
+ Here writer's x and question's x are different.
+Here writer means [x] everywhere he writes x
+so you can let [x] = k and then use the inequality $k^2\le n<k^2+k$.
+this inequality comes from [x] = k
+$k\le x<k+1$
+$k[x]\le x[x]<(k+1)[x]$
+$k^2\le n<(k+1)k$
+ further you can proceed.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+After a bit of experimenting, we let $n=l^2+s, s < 2n+1$. We claim that I (the integer part of $x$) = $l$ . (Prove it yourself using contradiction !) so now we get that $x=l+\frac{s}{l}$. This implies that solutions exist iff $s<l$, or for all natural numbers of the form $l^2+s$ where $s<l$. Hence, 1 solution exists for $l=1$! 2 for $l=2$ and so on. Therefore our final answer is $31+30+\dots+1= \boxed{496}$
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Notice we can write $\lfloor x \rfloor$ as $x - \{x\}$. Since $n$ is a positive integer less than $1000$, 
+
+ 
+ \[1 \leq x(x - \{x\}) \leq 999.\]
+
+ We now have 
+
+ 
+ \[1 \leq x^{2} - x\{x\} \leq 999.\]
+
+ Since $x\{x\}$ ranges from $0$ to $x$, we can rewrite as 
+
+ 
+ \[1 \leq x^{2} \leq 999 + x.\]
+
+ Notice all $x$ that satisfy this inequality range from $1$ to $32$. 
+
+ Now every range from $y$ to $y+1$ for $x$ results in exactly $y$ solutions that give a positive integer solution for $n$. The first range is $1$ to $2$ and the last range is $31$ to $32$. 
+
+ Thus, by using our above lemma, we can find the total number of solutions:
+
+ 
+ \[1+2+\cdots+31 = \frac{31 \cdot 32}{2} = \boxed{496}.\]
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 6}
+
+Let $x = a + \alpha$ where $a$ is a positive integer and $0 \leq \alpha < 1$. Then we have
+
+ $(a + \alpha)(a) = n$ since $\lfloor a + \alpha \rfloor = a$ 
+
+ Now we get
+
+ $a^2 + a \alpha = n \implies \alpha = \frac{n - a^2}{a}$ so we get
+
+ $0 \leq \frac{n - a^2}{a} < 1 \implies a^2 \leq n < a^2 + a$
+
+ Since $n$ is an integer, it means all $n$ possible are between $a^2$ and $a^2 + a - 1$ inclusive. The number of possibilities here is $a^2 + a - 1 - a^2 + 1 = a$. Since $n < 1000$ we get $a^2 < 1000 \implies a \leq 31$. Therefore, for each $1 \leq a \leq 31$, as $a$ is a positive integer, we get $a$ solutions for $n$. In other words, we simply have
+
+ $1 + 2 + \cdots + 31 = \boxed{496}$
+
+ 
 
 
 	\item (\textit{AIME II 2012}) Let $f_1(x) = \frac23 - \frac3{3x+1}$, and for $n \ge 2$, define $f_n(x) = f_1(f_{n-1}(x))$. The value of $x$ that satisfies $f_{1001}(x) = x-3$ can be expressed in the form $\frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -658,8 +699,6 @@ After evaluating the first few values of $f_k (x)$, we obtain $f_4(x) = f_1(x) =
 $\frac{3x+7}{6-9x} = x-3 \Rightarrow x = \frac{5}{3}$. The answer is thus $5+3 = \boxed{008}$.
 
  
-
-
 
 
 
@@ -682,11 +721,7 @@ $\frac{3x+7}{6-9x} = x-3 \Rightarrow x = \frac{5}{3}$. The answer is thus $5+3 =
 
  Because $1001 \equiv 2 \pmod{3}$, $f_{1001}(x) = x-3$, we have $x-3 = f_2(x) = \frac{-3x-7}{9x-6}$, so $(x-3)(9x-6) = -(3x+7)$. In other words, $9x^2 -30x+25 = 0$. Notice that $30 = 3 \cdot 2 \cdot 5$ so we factor into $(3x-5)^2 =0$, Then, $x = \frac{5}{3} \implies \boxed{8}$.
 
- This video is now private.
-
  
-
-
 
 
 	\item (\textit{AIME II 2012}) For a positive integer $p$, define the positive integer $n$ to be $p$\textit{-safe} if $n$ differs in absolute value by more than $2$ from all multiples of $p$. For example, the set of $10$-safe numbers is $\{ 3, 4, 5, 6, 7, 13, 14, 15, 16, 17, 23, \ldots\}$. Find the number of positive integers less than or equal to $10,000$ which are simultaneously $7$-safe, $11$-safe, and $13$-safe.
@@ -716,8 +751,6 @@ We see that a number $n$ is $p$-safe if and only if the residue of $n \mod p$ is
 
 
 
-
-
 \textbf{Solution 2}
 
 We want the number of integers $n\le 10000$ such that\begin{align*}n&\equiv 3,4\bmod{7}\\n&\equiv 3,4,5,6,7,8,\bmod{11}\\n&\equiv 3,4,5,6,7,8,9,10\bmod{13}\end{align*}
@@ -731,8 +764,6 @@ By the Chinese Remainder Theorem, the map
                     However, this accounts the case when $n=10006,10007$, which are out-of-range. Therefore, the total is $960-2=\boxed{958}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Equilateral $\triangle ABC$ has side length $\sqrt{111}$. There are four distinct triangles $AD_1E_1$, $AD_1E_2$, $AD_2E_3$, and $AD_2E_4$, each congruent to $\triangle ABC$,
@@ -756,8 +787,6 @@ Let $\angle BAD_1 = \angle BAD_2 = \theta$. By law of cosines,
  -sillybone
 
  
-
-
 
 
 
@@ -790,8 +819,6 @@ Angle $E_4AC = \theta$; by the Law of Cosines,
 Substituting $11$ for $222(1 - \cos\theta)$ gives the solution $666 + 11 = \framebox{677}.$
 
  
-
-
 
 
 
@@ -831,8 +858,6 @@ This problem is pretty much destroyed by complex plane geometry, which is simila
 
 
 
-
-
 \textbf{Solution 4}
 
 This method uses complex numbers with $A$ as the origin. Let $A=0$, $B=\sqrt{111}$, $C = \sqrt{111}\theta$, where $\theta = e^{i \pi/3} = \frac{1}{2} + \frac{\sqrt{3}}{2}i$.
@@ -863,8 +888,6 @@ This method uses complex numbers with $A$ as the origin. Let $A=0$, $B=\sqrt{111
  \[22+444+2\sqrt{111}Re(x) = 22+444+211 = \framebox{677}.\]
 
  
-
-
 
 
 
@@ -911,8 +934,6 @@ This method uses the observation that every point is equidistant from $A$. Witho
 
 
 
-
-
 \textbf{Solution 6}
 
 
@@ -936,8 +957,6 @@ This method uses the observation that every point is equidistant from $A$. Witho
 
 
 
-
-
 \textbf{Solution 7}
 
 Let $D_2, E_2, E_4$ be on the same side of $AB$ as $C.$ It is clear that $CE_2=CE_4=\sqrt{11}.$ Then, consider quadrilateral $CE_3BD_2.$ Since $\triangle BD_2E_3$ and $\triangle D_2BC$ are congruent, $D_2BE_3C$ is cyclic because $\angle BE_3D_2\cong\angle BCD_2.$ By Ptolemy's Theorem, we have $CE_3=\frac{111-CD_2^2}{\sqrt{11}}.$ Similarly, $CE_1=\frac{CD_1^2-111}{\sqrt{11}}.$
@@ -950,8 +969,6 @@ Therefore, our desired answer is\begin{align*}CE_1^2+CE_2^2+CE_3^2+CE_4^2&=CE_1^
  -pieMax2713
 
  
-
-
 
 
 
@@ -1006,8 +1023,6 @@ Therefore, our desired answer is\begin{align*}CE_1^2+CE_2^2+CE_3^2+CE_4^2&=CE_1^
 
 
 
-
-
 \textbf{Solution 9 (Coordinate Geometry)}
 
 Note that $D_1,D_2$ are the intersection of the circle with radius $\sqrt{11}$ centered at $B$ and the circle with radius $\sqrt{111}$ centered at $A$. Let these circle be $\omega, \Omega$. We establish a complex plane with $B$ being the origin. Here is out setup:\begin{align*}A&=\left(\frac{\sqrt{111}}{2},\frac{3\sqrt{37}}{2}\right)\\B&=(0,0)\\C&=(\sqrt{111},0)\\D_1&=(x_1,y_1)\\D_2&=(x_2,y_2)\\\omega &: x^2+y^2=11\\\Omega &: \left(x-\frac{\sqrt{111}}{2}\right)^2+\left(y-\frac{3\sqrt{37}}{2}\right)^2=111\end{align*}
@@ -1022,8 +1037,6 @@ Subtracting the equation of $\omega$ from the equation of $\Omega$, we see that
  \[\sum_{k=1}^{4}(CE_k)^2=710-3\sqrt{37}\cdot \frac{33\sqrt{37}}{222}-3\sqrt{111}\cdot\frac{11\sqrt{111}}{222}=\boxed{677}\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2012}) In a group of nine people each person shakes hands with exactly two of the other people from the group. Let $N$ be the number of ways this handshaking can occur. Consider two handshaking arrangements different if and only if at least two people who shake hands under one arrangement do not shake hands under the other arrangement. Find the remainder when $N$ is divided by $1000$.
@@ -1055,8 +1068,6 @@ Given that each person shakes hands with two people, we can view all of these th
  However, for all the other three cases, the configurations are not symmetric and so dividing by $2!$ or like would be incorrect. It is not possible to configure A, B, C such that they can be both a group of 3 and a group of 6, since {A, B, C} only has 3 elements. 
 
  
-
-
 
 
 
@@ -1105,11 +1116,7 @@ Let $f_N$ be the number of ways a group of $N$ people can shake hands with exact
 
  which gives us the answer of $\boxed{016}$
 
- \textbf{Similar Problems} 2006 HMMT feb. combo \#9.
-
  
-
-
 
 
 	\item (\textit{AIME II 2012}) Triangle $ABC$ is inscribed in circle $\omega$ with $AB=5$, $BC=7$, and $AC=3$. The bisector of angle $A$ meets side $\overline{BC}$ at $D$ and circle $\omega$ at a second point $E$. Let $\gamma$ be the circle with diameter $\overline{DE}$. Circles $\omega$ and $\gamma$ meet at $E$ and a second point $F$. Then $AF^2 = \frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1140,8 +1147,6 @@ Let $\tau$ be $\sqrt{bc}$-inversion. $\tau$ sends $B \leftrightarrow C$ and $D\l
 
 
 
-
-
 \textbf{Solution 2}
 
 Use the angle bisector theorem to find $CD=\frac{21}{8}$, $BD=\frac{35}{8}$, and use Stewart's Theorem to find $AD=\frac{15}{8}$. Use Power of Point $D$ to find $DE=\frac{49}{8}$, and so $AE=8$. Use law of cosines to find $\angle CAD = \frac{\pi} {3}$, hence $\angle BAD = \frac{\pi}{3}$ as well, and $\triangle BCE$ is equilateral, so $BC=CE=BE=7$.
@@ -1157,8 +1162,6 @@ Use the angle bisector theorem to find $CD=\frac{21}{8}$, $BD=\frac{35}{8}$, and
  \[8^2 = AF^2 + \frac{49}{225}  AF^2 + \frac 2{15} AF^2 = \frac{225+49+30}{225}\cdot AF^2\]Thus $AF^2 = \frac{900}{19}$. The answer is $\boxed{919}$.~Shen Kislay Kai
 
  
-
-
 
 
 
@@ -1178,8 +1181,6 @@ Let $a = BC$, $b = CA$, $c = AB$ for convenience. Let $M$ be the midpoint of seg
  \textbf{-Solution by thecmd999}
 
  
-
-
 
 
 
@@ -1204,8 +1205,6 @@ Use the angle bisector theorem to find $CD=\frac{21}{8}$, $BD=\frac{35}{8}$, and
 
 
 
-
-
 \textbf{Solution 5}
 
 Use Law of Cosines in $\triangle ABC$ to get $\angle BAC=120^\circ$. Because $AE$ bisects $\angle A$, $E$ is the midpoint of major arc $BC$ so $BE=CE,$ and $\angle BEC=60^\circ.$ Thus $\triangle BEC$ is equilateral. Notice now that $\angle BFC=\angle BFE= 60^\circ.$ But $\angle DFE=90^\circ$ so $FD$ bisects $\angle BFC.$ Thus, 
@@ -1214,8 +1213,6 @@ Use Law of Cosines in $\triangle ABC$ to get $\angle BAC=120^\circ$. Because $AE
  \[15k+15k=7\cdot AF, \qquad \Longrightarrow\qquad AF= \frac{30}{\sqrt{19}},\] so $AF^2=\frac{900}{19}$ and the answer is $900+19=919$ 
 
  
-
-
 
 
 
@@ -1263,8 +1260,6 @@ Use Law of Cosines in $\triangle ABC$ to get $\angle BAC=120^\circ$. Because $AE
 
 
 
-
-
 \textbf{Solution 7}
 
 To do this, we first define the intersection of $EF$ and $BC$ to be $K$. 
@@ -1282,8 +1277,6 @@ To do this, we first define the intersection of $EF$ and $BC$ to be $K$.
 
 
 
-
-
 \textbf{Solution 8 (Coordinate Geometry)}
 
 By the Angle Bisector Theorem, $CD=\frac{21}{8}$. Let $H$ be the foot of the perpendicular from $A$ to $\overline{BC}$. By the Pythagorean Theorem, $CH=\frac{33}{14}$, $AH=\frac{15\sqrt{3}}{14}$. By the Law of Cosines and the Law of Sines, 
@@ -1294,8 +1287,6 @@ Subtracting the equation of $\omega$ from that of $\gamma$, we obtain\begin{gath
 The requested sum is $900+19=\boxed{919}$.
 
  
-
-
 
 
 \end{enumerate}

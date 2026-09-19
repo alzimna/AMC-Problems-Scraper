@@ -16,8 +16,6 @@ Because there aren't that many perfect squares or cubes, let's look for the smal
 
 
 
-
-
 \textbf{Solution 2}
 
 This solution is similar as Solution 1, but to get the intuition why we chose to consider $23^2 = 529$, consider this:
@@ -27,8 +25,6 @@ This solution is similar as Solution 1, but to get the intuition why we chose to
  Firstly, we clearly need $n > 500$, so we substitute n for the smallest square or cube greater than $500$. However, if we use $n=8^3=512$, the number of terms in $T$ will exceed $n-500$. Therefore, $n=23^2=529$, and the number of terms in $T$ is $23+8-2=29$ by the \href{https://artofproblemsolving.com/wiki/index.php?title=Principle\_of\_Inclusion-Exclusion}{Principle of Inclusion-Exclusion}, fulfilling our original requirement of $n-T=500$.As a result, our answer is $529-1 = \boxed{528}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) Find the value of $(52+6\sqrt{43})^{3/2}-(52-6\sqrt{43})^{3/2}$.
@@ -49,8 +45,6 @@ Suppose that $52+6\sqrt{43}$ is in the form of $(a + b\sqrt{43})^2$. \href{https
 
 
 
-
-
 \textbf{Solution 2}
 
 The $3/2$ power is quite irritating to work with so we look for a way to eliminate that. Notice that squaring the expression will accomplish that. Let $S$ be the sum of the given expression. 
@@ -58,8 +52,6 @@ The $3/2$ power is quite irritating to work with so we look for a way to elimina
  \[S^2 = (52+6\sqrt{43})^{3} + (52-6\sqrt{43})^{3} - 2((52+6\sqrt{43})(52-6\sqrt{43}))^{3/2}\]After doing the arithmetic (note that the first two terms will have some cancellation and that the last term will simplify quickly using difference of squares), we arrive at $S^2 = 685584$ which gives $S=\boxed{828}$.
 
  
-
-
 
 
 
@@ -81,8 +73,6 @@ Factor as a difference of cubes.
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $x=52+6\sqrt{43}$, $y=52-6\sqrt{43}$. Similarly to solution 2, we let 
@@ -95,8 +85,6 @@ Thus $S=\sqrt{685584}=\boxed{828}$.
  I don't believe we get 685584 from 104(138)(70) + 2*34\textasciicircum{}3 though?
 
  
-
-
 
 
 
@@ -117,8 +105,6 @@ Thus $S=\sqrt{685584}=\boxed{828}$.
 
 
 
-
-
 \textbf{Solution 6}
 
 (Similar to Solution 1, but expanding the cubes instead)
@@ -132,8 +118,6 @@ Thus $S=\sqrt{685584}=\boxed{828}$.
  Note: We have that $\sqrt{52 - 6\sqrt{43}} = \sqrt{43} - 3$ because we need the square root to be positive and $\sqrt{43} > 3$ since $43$ is obviously greater than $9.$ So we have $\sqrt{52 - 6\sqrt{43}} = \sqrt{43} - 3.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) Let $P_1^{}$ be a regular $r~\mbox{gon}$ and $P_2^{}$ be a regular $s~\mbox{gon}$ $(r\geq s\geq 3)$ such that each interior angle of $P_1^{}$ is $\frac{59}{58}$ as large as each interior angle of $P_2^{}$. What's the largest possible value of $s_{}^{}$?
@@ -155,8 +139,6 @@ The formula for the interior angle of a regular sided \href{https://artofproblem
  This is achievable because the denominator is $1$, making $r$ a positive number $116 \cdot 117$ and $s = \boxed{117}$.
 
  
-
-
 
 
 
@@ -210,8 +192,6 @@ $s = \boxed{117}$
 
 
 
-
-
 \textbf{Solution 3}
 
 As in above, we have $rs = 118r - 116s.$ This means that $rs + 116s - 118r = 0.$ Using SFFT we obtain $s(r+116) - 118(r+116) = -118 \cdot 116 \implies (s-118)(r+116) = -118 \cdot 116.$ Since $r+116$ is always positive, we know that $s-118$ must be negative. Therefore the maximum value of $s$ must be $\boxed{117}$ which indeed yields an integral value of $r.$
@@ -219,12 +199,12 @@ As in above, we have $rs = 118r - 116s.$ This means that $rs + 116s - 118r = 0.$
  
 
 
-
-
 	\item (\textit{AIME I 1990}) Find the positive solution to
 
 
  $\frac 1{x^2-10x-29}+\frac1{x^2-10x-45}-\frac 2{x^2-10x-69}=0$
+
+ 
  \textbf{Answer: }013
 
 
@@ -243,8 +223,6 @@ We could clear out the denominators by multiplying, though that would be unneces
  
 
 
-
-
 	\item (\textit{AIME I 1990}) Let $n^{}_{}$ be the smallest positive integer that is a multiple of $75_{}^{}$ and has exactly $75_{}^{}$ positive integral divisors, including $1_{}^{}$ and itself. Find $\frac{n}{75}$.
 
 
@@ -257,13 +235,20 @@ We could clear out the denominators by multiplying, though that would be unneces
 
 The \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorization}{prime factorization} of $75 = 3^15^2 = (2+1)(4+1)(4+1)$. For $n$ to have exactly $75$ integral divisors, we need to have $n = p_1^{e_1-1}p_2^{e_2-1}\cdots$ such that $e_1e_2 \cdots = 75$. Since $75|n$, two of the \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime} \href{https://artofproblemsolving.com/wiki/index.php?title=Factor}{factors} must be $3$ and $5$. To minimize $n$, we can introduce a third prime factor, $2$. Also to minimize $n$, we want $5$, the greatest of all the factors, to be raised to the least power. Therefore, $n = 2^43^45^2$ and $\frac{n}{75} = \frac{2^43^45^2}{3 \cdot 5^2} = 16 \cdot 27 = \boxed{432}$.
 
- $\textbf{ Note: the smallest integer n which has 75 factors, happens to be a multiple of 75 anyway  }$
-
- Note: the problem where this is linked is covered 0:40-1:40
+ $\textbf{ Note: the smallest integer n which has 75 factors happens to be a multiple of 75 anyway  }$
 
  
 
 
+ 
+
+
+
+\textbf{Solution 2}
+
+We see that $n$ must have a prime factorization of $(z^2)(x^4)(k^4)$ since this will lead to $n$ having $75$ factors. $n$ has $(5^2)(3)$ as a factor. To minimize $n$ we can see that $z$ must be $5$ and either $x$ or $k$ will be $3$. We can let whichever the last variable is be $2$ to minimize and when we divide $n$ by $75$ the results is $(3^3)(2^4)$ or $\boxed{432}$.
+
+ 
 
 
 	\item (\textit{AIME I 1990}) A biologist wants to calculate the number of fish in a lake. On May 1 she catches a random sample of 60 fish, tags them, and releases them. On September 1 she catches a random sample of 70 fish and finds that 3 of them are tagged. To calculate the number of fish in the lake on May 1, she assumes that 25\% of these fish are no longer in the lake on September 1 (because of death and emigrations), that 40\% of the fish were not in the lake May 1 (because of births and immigrations), and that the number of untagged fish and tagged fish in the September 1 sample are representative of the total population. What does the biologist calculate for the number of fish in the lake on May 1? 
@@ -284,8 +269,6 @@ Of the $70$ fish caught in September, $40\%$ were not there in May, so $42$ fish
 
 
 
-
-
 \textbf{Solution 2}
 
 First, we notice that there are 45 tags left, after 25\% of the original fish have went away/died. Then, some $x$ percent of fish have been added such that $\frac{x}{x+75} = 40 \%$, or $\frac{2}{5}$. Solving for $x$, we get that $x = 50$, so the total number of fish in September is $125 \%$, or $\frac{5}{4}$ times the total number of fish in May.
@@ -293,8 +276,6 @@ First, we notice that there are 45 tags left, after 25\% of the original fish ha
  Since $\frac{3}{70}$ of the fish in September were tagged, $\frac{45}{5n/4} = \frac{3}{70}$, where $n$ is the number of fish in May. Solving for $n$, we see that $n = \boxed{840}$
 
  
-
-
 
 
 
@@ -306,8 +287,6 @@ Let $k$ be the number of fish in the lake on May 1, and $n$ be the number of fis
  \[\frac{3}{70}=\frac{60\cdot\frac{3}{4}}{\frac{5\cdot k}{4}}\] because 25\% of the 60 fishes tagged on May 1st are now gone, for the numerator, and for the deonominator we have $n$, which we found is $\frac{5}{4}\cdot k$. Solving, we get $k= \boxed{840}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) A triangle has vertices $P_{}^{}=(-8,5)$, $Q_{}^{}=(-15,-19)$, and $R_{}^{}=(1,-7)$. The equation of the bisector of $\angle P$ can be written in the form $ax+2y+c=0_{}^{}$. Find $a+c_{}^{}$.
@@ -326,8 +305,6 @@ Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Distance\_for
 
 
 
-
-
 \textbf{Solution 1}
 
 
@@ -335,13 +312,13 @@ Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Distance\_for
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1990_7_Solution_Figure_1.png}
                     \end{figure}
-                    Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector\_theorem}{angle bisector theorem} to find that the angle bisector of $\angle P$ divides $QR$ into segments of length $\frac{25}{x} = \frac{15}{20 -x} \Longrightarrow x = \frac{25}{2},\ \frac{15}{2}$. It follows that $\frac{QP'}{RP'} = \frac{5}{3}$, and so $P' = \left(\frac{5x_R + 3x_Q}{8},\frac{5y_R + 3y_Q}{8}\right) = (-5,-23/2)$.
+                    
+
+ Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector\_theorem}{angle bisector theorem} to find that the angle bisector of $\angle P$ divides $QR$ into segments of length $\frac{25}{x} = \frac{15}{20 -x} \Longrightarrow x = \frac{25}{2},\ \frac{15}{2}$. It follows that $\frac{QP'}{RP'} = \frac{5}{3}$, and so $P' = \left(\frac{5x_R + 3x_Q}{8},\frac{5y_R + 3y_Q}{8}\right) = (-5,-23/2)$.
 
  The desired answer is the equation of the line $PP'$. $PP'$ has slope $\frac{-11}{2}$, from which we find the equation to be $11x + 2y + 78 = 0$. Therefore, $a+c = \boxed{089}$. 
 
  
-
-
 
 
 
@@ -352,11 +329,11 @@ Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Distance\_for
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1990_7_Solution_Figure_2.png}
                     \end{figure}
-                    Extend $PR$ to a point $S$ such that $PS = 25$. This forms an \href{https://artofproblemsolving.com/wiki/index.php?title=Isosceles\_triangle}{isosceles triangle} $PQS$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Coordinate}{coordinates} of $S$, using the slope of $PR$ (which is $-4/3$), can be determined to be $(7,-15)$. Since the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector}{angle bisector} of $\angle P$ must touch the midpoint of $QS \Rightarrow (-4,-17)$, we have found our two points. We reach the same answer of $11x + 2y + 78 = 0$.
+                    
+
+ Extend $PR$ to a point $S$ such that $PS = 25$. This forms an \href{https://artofproblemsolving.com/wiki/index.php?title=Isosceles\_triangle}{isosceles triangle} $PQS$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Coordinate}{coordinates} of $S$, using the slope of $PR$ (which is $-4/3$), can be determined to be $(7,-15)$. Since the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector}{angle bisector} of $\angle P$ must touch the midpoint of $QS \Rightarrow (-4,-17)$, we have found our two points. We reach the same answer of $11x + 2y + 78 = 0$.
 
  
-
-
 
 
 
@@ -367,13 +344,13 @@ Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Distance\_for
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1990_7_Solution_Figure_3.png}
                     \end{figure}
-                    By the angle bisector theorem as in solution 1, we find that $QP' = 25/2$. If we draw the right triangle formed by $Q, P',$ and the point directly to the right of $Q$ and below $P'$, we get another $3-4-5 \triangle$ (since the slope of $QR$ is $3/4$). Using this, we find that the horizontal projection of $QP'$ is $10$ and the vertical projection of $QP'$ is $15/2$. 
+                    
+
+ By the angle bisector theorem as in solution 1, we find that $QP' = 25/2$. If we draw the right triangle formed by $Q, P',$ and the point directly to the right of $Q$ and below $P'$, we get another $3-4-5 \triangle$ (since the slope of $QR$ is $3/4$). Using this, we find that the horizontal projection of $QP'$ is $10$ and the vertical projection of $QP'$ is $15/2$. 
 
  Thus, the angle bisector touches $QR$ at the point $\left(-15 + 10, -19 + \frac{15}{2}\right) = \left(-5,-\frac{23}{2}\right)$, from where we continue with the first solution.
 
  
-
-
 
 
 
@@ -385,8 +362,6 @@ This solution uses terminology from the other solutions. The incenter is a much 
 
 
 
-
-
 \textbf{Solution 5 (Trigonometry)}
 
 
@@ -394,7 +369,9 @@ This solution uses terminology from the other solutions. The incenter is a much 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1990_7_Solution_Figure_4.png}
                     \end{figure}
-                    Transform triangle $PQR$ so that $P$ is at the origin. Note that the slopes do not change when we transform the triangle.
+                    
+
+ Transform triangle $PQR$ so that $P$ is at the origin. Note that the slopes do not change when we transform the triangle.
 
  
 We know that the slope of $PQ$ is $\frac{24}{7}$ and the slope of $PR$ is $-\frac{4}{3}$. Thus, in the complex plane, they are equivalent to $\tan(\alpha)=\frac{24}{7}$ and $\tan(\beta)=-\frac{4}{3}$, respectively. Here $\alpha$ is the angle formed by the $x$-axis and $PQ$, and $\beta$ is the angle formed by the $x$-axis and $PR$. The equation of the angle bisector is $\tan\left(\frac{\alpha+\beta}{2}\right)$.
@@ -418,8 +395,6 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\
 Finally, the equation of the angle bisector is $y-5=-\frac{11}{2}(x+8)$ or $y=-\frac{11}{2}x-39$. Rearranging, we get $11x+2y+78=0$, so our sum is $a+c=11+78=\boxed{089}$. ~eevee9406
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) In a shooting match, eight clay targets are arranged in two hanging columns of three targets each and one column of two targets. A marksman is to break all the targets according to the following rules: 
@@ -480,8 +455,6 @@ Clearly, the marksman must shoot the left column three times, the middle column 
  </ol>
 
 
-
-
 	\item (\textit{AIME I 1990}) A fair coin is to be tossed $10_{}^{}$ times. Let $i/j^{}_{}$, in lowest terms, be the probability that heads never occur on consecutive tosses. Find $i+j_{}^{}$. 
 
 
@@ -506,8 +479,6 @@ Clearly, at least $5$ tails must be flipped; any less, then by the \href{https:/
 
 
 
-
-
 \textbf{Solution 2 (Recursion)}
 
 Call the number of ways of flipping $n$ coins and not receiving any consecutive heads $S_n$. Notice that tails must be received in at least one of the first two flips.
@@ -522,9 +493,7 @@ Call the number of ways of flipping $n$ coins and not receiving any consecutive 
 
 
 
-
-
-\textbf{Solution 3}
+\textbf{Solution 3 (basically the first solution)}
 
 We can also split the problem into casework.
 
@@ -559,8 +528,6 @@ We can also split the problem into casework.
  
 
 
-
-
 	\item (\textit{AIME I 1990}) The sets $A = \{z : z^{18} = 1\}$ and $B = \{w : w^{48} = 1\}$ are both sets of complex roots of unity.  The set $C = \{zw : z \in A ~ \mbox{and} ~ w \in B\}$ is also a set of complex roots of unity.  How many distinct elements are in $C^{}_{}$?
 
 
@@ -581,8 +548,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Least\_common\_mu
 
 
 
-
-
 \textbf{Solution 2}
 
 The 18 and 48th roots of $1$ can be found by \href{https://artofproblemsolving.com/wiki/index.php?title=De\_Moivre\%27s\_Theorem}{De Moivre's Theorem}. They are $\text{cis}\,\left(\frac{2\pi k_1}{18}\right)$ and $\text{cis}\,\left(\frac{2\pi k_2}{48}\right)$ respectively, where $\text{cis}\,\theta = \cos \theta + i \sin \theta$ and $k_1$ and $k_2$ are integers from $0$ to $17$ and $0$ to $47$, respectively. 
@@ -595,15 +560,11 @@ The 18 and 48th roots of $1$ can be found by \href{https://artofproblemsolving.c
 
 
 
-
-
 \textbf{Solution 3}
 
 The values in polar form will be $(1, 20x)$ and $(1, 7.5x)$. Multiplying these gives $(1, 27.5x)$. Then, we get $27.5$, $55$, $82.5$, $110$, $...$ up to $3960$ $(\text{lcm}(55,360)) \implies \frac{3960 \cdot 2}{55}=\boxed{144}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) Someone observed that $6! = 8 \cdot 9 \cdot 10$.  Find the largest positive integer $n^{}_{}$ for which $n^{}_{}!$ can be expressed as the product of $n - 3_{}^{}$ consecutive positive integers.
@@ -616,11 +577,9 @@ The values in polar form will be $(1, 20x)$ and $(1, 7.5x)$. Multiplying these g
 
 \textbf{Solution 1}
 
-The product of $n - 3$ consecutive integers can be written as $\frac{(n - 3 + a)!}{a!}$ for some integer $a$. Thus, $n! = \frac{(n - 3 + a)!}{a!}$, from which it  becomes evident that $a \ge 3$. Since $(n - 3 + a)! > n!$, we can rewrite this as $\frac{n!(n+1)(n+2) \ldots (n-3+a)}{a!} = n! \Longrightarrow (n+1)(n+2) \ldots (n-3+a) = a!$. For $a = 4$, we get $n + 1 = 4!$ so $n = 23$. For greater values of $a$, we need to find the product of $a-3$ consecutive integers that equals $a!$. $n$ can be approximated as $^{a-3}\sqrt{a!}$, which decreases as $a$ increases. Thus, $n = 23$ is the greatest possible value to satisfy the given conditions.
+The product of $n - 3$ consecutive integers can be written as $\frac{(n - 3 + a)!}{a!}$ for some integer $a$. Thus, $n! = \frac{(n - 3 + a)!}{a!}$, from which it  becomes evident that $a \ge 3$. Since $(n - 3 + a)! > n!$, we can rewrite this as $\frac{n!(n+1)(n+2) \ldots (n-3+a)}{a!} = n! \Longrightarrow (n+1)(n+2) \ldots (n-3+a) = a!$. For $a = 4$, we get $n + 1 = 4!$ so $n = 23$. For greater values of $a$, we need to find the product of $a-3$ consecutive integers that equals $a!$. $n$ can be approximated as $^{a-3}\sqrt{a!}$, which is a monotonically decreasing function. Thus, $n = \boxed{023}$ is the greatest possible value to satisfy the given conditions.
 
  
-
-
 
 
 
@@ -632,7 +591,7 @@ Let the largest of the $n-3$ consecutive positive integers be $k$. Clearly $k$ c
 
  So the $n-3$ consecutive positive integers are $5, 6, 7\ldots, n+1$
 
- So we have $\frac{(n+1)!}{4!} = n!$$\Longrightarrow  n+1 = 24$$\Longrightarrow  n = 23$
+ So we have $\frac{(n+1)!}{4!} = n!$$\Longrightarrow  n+1 = 24$$\Longrightarrow  n = \boxed{023}$
 
  \textbf{Generalization} Largest positive integer $n$ for which $n!$ can be expressed as the product of $n-a$ consecutive positive integers is $(a+1)! - 1$
 
@@ -651,12 +610,12 @@ Let the largest of the $n-3$ consecutive positive integers be $k$. Clearly $k$ c
  
 
 
-
-
 	\item (\textit{AIME I 1990}) A regular 12-gon is inscribed in a circle of radius 12.  The sum of the lengths of all sides and diagonals of the 12-gon can be written in the form
 
 
- $a + b \sqrt{2} + c \sqrt{3} + d \sqrt{6},$where $a^{}_{}$, $b^{}_{}$, $c^{}_{}$, and $d^{}_{}$ are positive integers.  Find $a + b + c + d^{}_{}$.
+ $a + b \sqrt{2} + c \sqrt{3} + d \sqrt{6},$
+
+ where $a^{}_{}$, $b^{}_{}$, $c^{}_{}$, and $d^{}_{}$ are positive integers.  Find $a + b + c + d^{}_{}$.
 
 
  
@@ -686,8 +645,6 @@ Let the largest of the $n-3$ consecutive positive integers be $k$. Clearly $k$ c
  $= 12(12 + 12\sqrt{2} + 12\sqrt{3} + 12\sqrt{6}) + 144 = 288 + 144\sqrt{2} + 144\sqrt{3} + 144\sqrt{6}$. Thus, the answer is $144 \cdot 5 = \boxed{720}$.
 
  
-
-
 
 
 
@@ -751,15 +708,11 @@ Thus, the desired quantity is $144\cdot 5 = \boxed{720}$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Begin as in solution 2, drawing a triangle connecting the center of the 12-gon to two vertices of the 12-gon. Apply law of cosines on $\theta = {30^{\circ}, 60^{\circ}, 90^{\circ}, 120^{\circ}, 150^{\circ}, 180^{\circ}}$ to get $d^2 = 288 - 288 \cos \theta$ where $d$ is the diagonal or sidelength distance between two points on the 12-gon. Now, $d=\sqrt{288-288 \cos \theta}$. Instead of factoring out $288$ as in solution 2, factor out $\sqrt{576}$ instead-the motivation for this is to make the expression look like the half angle identity, and the fact that $\sqrt{576}$ is an integer doesn't hurt. Now, we have that $d=24 \sin \frac{\theta}{2}$, which simplifies things quite nicely. Continue as in solution 2, computing half-angle sines instead of nested radicals, to obtain $\boxed{720}$.
 
  
-
-
 
 
 
@@ -770,8 +723,6 @@ Plotting this regular $12$-gon on the complex plane with center as origin, and a
  The rest follows as Solution 1.
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) Let $T = \{9^k : k ~ \mbox{is an integer}, 0 \le k \le 4000\}$.  Given that $9^{4000}_{}$ has 3817 digits and that its first (leftmost) digit is 9, how many elements of $T_{}^{}$ have 9 as their leftmost digit?
@@ -795,8 +746,6 @@ Using this lemma, out of the 4001 powers of 9 in T, exactly 3817 must not begin 
 
 
 
-
-
 \textbf{Solution 2}
 
 Let's divide all elements of $T$ into sections. Each section ranges from $10^{i}$ to $10^{i+1}$ And, each section must have 1 or 2 elements. So, let's consider both cases. 
@@ -813,15 +762,11 @@ Let's divide all elements of $T$ into sections. Each section ranges from $10^{i}
 
 
 
-
-
 \textbf{Solution 3}
 
 We know that $9$ is very close to $10$. But we also know that for all $k \in \mathbb{Z}^+$, $10^k$ has $k+1$ digits. Hence $10^{4000}$ has $4001$ digits. Now, notice that if a power of $9^n$ has $9$ as the leftmost digit, then $9^{n-1}$ has $1$ as the leftmost digit and will preserve the same number of digits (just due to division). Hence we find that consecutive powers of $9$ are "supposed" to increase by one digit, however, when consecutive powers of $9$ have leading digit $1$ then leading digit $9$ they "lose" this one digit. Therefore, it suffices to find the number of times that $9^k$ has "lost" a digit since the number of times that this occurs shows us the number of pairs where the leading digit of $9^k$ is $1$ and the leading digit of $9^{k+1}$ is $9$. Hence, we find that $9^{4000}$ is "supposed" to have $4001$ digits, but only has $3817$ digits. Thus, the number of times $9^k$ has lost a digit is $4001-3817 = 184$. Thus, $\boxed{184}$ elements of $T$ have $9$ as their leading digit.
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) The rectangle $ABCD^{}_{}$ below has dimensions $AB^{}_{} = 12 \sqrt{3}$ and $BC^{}_{} = 13 \sqrt{3}$.  Diagonals $\overline{AC}$ and $\overline{BD}$ intersect at $P^{}_{}$.  If triangle $ABP^{}_{}$ is cut out and removed, edges $\overline{AP}$ and $\overline{BP}$ are joined, and the figure is then creased along segments $\overline{CP}$ and $\overline{DP}$, we obtain a triangular pyramid, all four of whose faces are isosceles triangles.  Find the volume of this pyramid.
@@ -872,8 +817,6 @@ We know that $9$ is very close to $10$. But we also know that for all $k \in \ma
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $\triangle{ABC}$ (or the triangle with sides $12\sqrt {3}$, $13\sqrt {3}$, $13\sqrt {3}$) be the base of our tetrahedron. We set points $C$ and $D$ as $(6\sqrt {3}, 0, 0)$ and $( - 6\sqrt {3}, 0, 0)$, respectively. Using Pythagoras, we find $A$ as $(0, \sqrt {399}, 0)$. We know that the \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{vertex} of the tetrahedron ($P$) has to be of the form $(x, y, z)$, where $z$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Altitude}{altitude} of the tetrahedron. Since the distance from $P$ to points $A$, $B$, and $C$ is $\frac {\sqrt {939}}{2}$, we can write three equations using the \href{https://artofproblemsolving.com/wiki/index.php?title=Distance\_formula}{distance formula}:
@@ -885,8 +828,6 @@ Let $\triangle{ABC}$ (or the triangle with sides $12\sqrt {3}$, $13\sqrt {3}$, $
  Subtracting the last two equations, we get $x = 0$. Solving for $y,z$ with a bit of effort, we eventually get $x = 0$, $y = \frac {291}{2\sqrt {399}}$, $z = \frac {99}{\sqrt {133}}$.Since the area of a triangle is $\frac {1}{2}\cdot bh$, we have the base area as $18\sqrt {133}$. Thus, the volume is $V = \frac {1}{3}\cdot18\sqrt {133}\cdot\frac {99}{\sqrt {133}} = 6\cdot99 = 594$.
 
  
-
-
 
 
 
@@ -906,8 +847,6 @@ Let $X$ be the apex of the pyramid and $M$ be the midpoint of $\overline{CD}$. W
  \[=\frac{132\sqrt3}{13\sqrt{313}}\]Thus, the height of the pyramid is $PX\sin\theta=\frac{\sqrt{939}}{2}\cdot\frac{132\sqrt3}{13\sqrt{313}}=\frac{66\cdot3}{13}$. Since $[CPD]=3\sqrt{3}\cdot13\sqrt{3}=9\cdot13$, the volume of the pyramid is $\frac13 \cdot 9\cdot13\cdot \frac{66\cdot3}{13}=\boxed{594}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1990}) Find $ax^5 + by^5$ if the real numbers $a,b,x,$ and $y$ satisfy the equations
@@ -947,66 +886,13 @@ Set $S = (x + y)$ and $P = xy$. Then the relationship
 
 
 
-
-
 \textbf{Solution 2}
 
 A \href{https://artofproblemsolving.com/wiki/index.php?title=Linear\_recurrence}{ recurrence} of the form $T_n=AT_{n-1}+BT_{n-2}$ will have the closed form $T_n=ax^n+by^n$, where $x,y$ are the values of the starting term that make the sequence geometric, and $a,b$ are the appropriately chosen constants such that those special starting terms linearly combine to form the actual starting terms and match the original equations.
 
- Suppose we have such a recurrence with $T_1=3$ and $T_2=7$. Then $T_3=ax^3+by^3=16=7A+3B$, and $T_4=ax^4+by^4=42=16A+7B$. 
-
- Solving these simultaneous equations for $A$ and $B$, we see that $A=-14$ and $B=38$. So, $ax^5+by^5=T_5=-14(42)+38(16)= \boxed{020}$.
-
- Edits-Amon26
+ Suppose we have such a recurrence with 
 
  
-
-
-
-
-
-\textbf{Solution 3}
-
-Using factoring formulas, the terms can be grouped. First take the first three terms and sum them, getting:
-
- $a(x^3 + x^2 + x) + b(y^3 + y^2 + y) = 16$
-
- $ax\left( \frac{x^3-1}{x-1} \right) + by\left( \frac{y^3-1}{y-1} \right) = 16$.
-
- Similarly take the first two terms, yielding:
-
- $ax \left( \frac{x^2-1}{x-1} \right) + by \left( \frac{y^2-1}{y-1} \right) = 10$.
-
- Lastly take an alternating three-term sum,
-
- $a(x^3 - x^2 + x) + b(y^3 - y^2 + y) = 12$$ax \left( \frac{x^3+1}{x+1} \right) + by \left( \frac{y^3+1}{y+1} \right) = 12$.
-
- Now to get the solution, let the answer be $k$, so 
-
- $ax \left( \frac{x^4-1}{x-1} \right) + by \left(\frac{y^4-1}{y-1} \right) = 68$.
-
- Multiplying out this expression gets the answer term and then a lot of other expressions, which can be eliminatedas done in the first solution.
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-We first let the answer to this problem be $k.$ Multiplying the first equation by $x$ gives $ax^2 + bxy=3x$.
-
- Subtracting this equation from the second equation gives $by^2-bxy=7-3x$. Similarly, doing the same for the other equations, we obtain:$by^2-bxy=7-3x$, $by^3-bxy^2=16-7x$, $by^4-bxy^3=42-16x$, and $by^5-bxy^4=k-42x$
-
- 
-Now lets take the first equation. Multiplying this by $y$ and subtracting this from the second gives us  $by^3-bxy^2=(7-3x)y$. We can also obtain  $by^4-bxy^3=(16-7x)y$. 
-
- Now we can solve for $x$ and $y$! $(7-3x)y = 16-7x$ and $(16-7x)y=42-16x$. Solving for $x$ and $y$ gives us $(-7+\sqrt{87},-7-\sqrt{87})$ (It can be switched, but since the given equations are symmetric, it doesn't matter). $k-42x= (42-16x)y$, and solving for $k$ gives us $k= \boxed{020}$.
-
- 
-
-
 
 
 \end{enumerate}

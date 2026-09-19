@@ -16,8 +16,6 @@ Every triangle is uniquely determined by 3 points. There are $\binom{15}{3}=455$
 
 
 
-
-
 \textbf{Solution 2}
 
 We simply choose $3$ points from $15$ to begin with, since a triangle consists of $3$ points and there are $15$ points total. That gives us $\binom{15}{3}$. Now, we need to remove the degenerate triangles from this total. The degenerate triangles are just the triangles that are collinear. We can count the number of degenerate triangles on each side of $ABC$, then subtract it from $\binom{15}{3}$. For $\overline{AB}$, we have $\binom{5}{3}$ degenerate triangles (don't forget $A$ and $B$). Then, for $\overline{BC}$, we have $\binom{6}{3}$ degenerate triangles, and for $\overline{AC}$, we have $\binom{7}{3}$ degenerate triangles. So, our final answer is $\binom{15}{3} - \binom{7}{3} - \binom{6}{3} - \binom{5}{3} = \boxed{390}$
@@ -25,8 +23,6 @@ We simply choose $3$ points from $15$ to begin with, since a triangle consists o
  -jb2015007 and cnwyshi (minor edits like grammar)
 
  
-
-
 
 
 
@@ -79,11 +75,6 @@ We will use casework based on the number of common vertices to solve this proble
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME I 2017}) When each of $702$, $787$, and $855$ is divided by the positive integer $m$, the remainder is always the positive integer $r$. When each of $412$, $722$, and $815$ is divided by the positive integer $n$, the remainder is always the positive integer $s \neq r$. Find $m+n+r+s$.
 
 
@@ -105,8 +96,6 @@ Let's work on both parts of the problem separately. First,
 
 
 
-
-
 \textbf{Solution 2}
 
 We know that $702 = am + r, 787 = bm + r,$ and $855 = cm+r$ where $a-c$ are integers.
@@ -125,8 +114,6 @@ We know that $702 = am + r, 787 = bm + r,$ and $855 = cm+r$ where $a-c$ are inte
 
 
 
-
-
 \textbf{Solution 3 (Sol. 1 but possibly more clear)}
 
 As in Solution 1, we are given $855\equiv787\equiv702\equiv r\pmod{m}$ and $815\equiv722\equiv412\equiv s\pmod{n}.$ Tackling the first equation, we can simply look at $855\equiv787\equiv702\pmod{m}$. We subtract $702$ from each component of the congruency to get $153\equiv85\equiv0\pmod{m}$. Thus, we know that $153$ and $85$ must both be divisible by $m$. The only possible $m$, in this case, become $17$ and $1$; obviously, $m\neq1$, so we know $m=17$. We go back to the original equation, plug in $m$, and we find that $r=5$. 
@@ -136,8 +123,6 @@ As in Solution 1, we are given $855\equiv787\equiv702\equiv r\pmod{m}$ and $815\
  Thus, our answer is $\boxed{062}$. 
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) For a positive integer $n$, let $d_n$ be the units digit of $1 + 2 + \dots + n$. Find the remainder when
@@ -156,8 +141,6 @@ We see that $d_n$ appears in cycles of $20$ and the cycles are
  \[1,3,6,0,5,1,8,6,5,5,6,8,1,5,0,6,3,1,0,0,\] adding a total of $70$ each cycle.Since $\left\lfloor\frac{2017}{20}\right\rfloor=100$, we know that by $2017$, there have been $100$ cycles and $7000$ has been added. This can be discarded as we're just looking for the last three digits.Adding up the first $17$ of the cycle of $20$, we can see that the answer is $\boxed{069}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) A pyramid has a triangular base with side lengths $20$, $20$, and $24$. The three edges of the pyramid from the three corners of the base to the fourth vertex of the pyramid all have length $25$. The volume of the pyramid is $m\sqrt{n}$, where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n$.
@@ -244,8 +227,6 @@ NOTE : If you don’t know or remember the formula for the volume of a triangul
 
 
 
-
-
 \textbf{Solution 2 (Coordinates)}
 
 We can place a three dimensional coordinate system on this pyramid. WLOG assume the vertex across from the line that has length $24$ is at the origin, or $(0, 0, 0)$. Then, the two other vertices can be $(-12, -16, 0)$ and $(12, -16, 0)$. Let the fourth vertex have coordinates of $(x, y, z)$. We have the following $3$ equations from the distance formula.
@@ -264,8 +245,6 @@ We can place a three dimensional coordinate system on this pyramid. WLOG assume 
  \textbf{-RootThreeOverTwo}
 
  
-
-
 
 
 
@@ -293,8 +272,6 @@ Label the four vertices of the tetrahedron and the midpoint of $\overline {AB}$,
 
 
 
-
-
 \textbf{Solution 4 (Symmetry)}
 
 
@@ -313,8 +290,6 @@ Label the four vertices of the tetrahedron and the midpoint of $\overline {AB}$,
  \[V = \frac{h\cdot CM \cdot c}{3}= \frac{16\cdot 25 \sqrt{3} \cdot 12}{3} = 800 \sqrt{3} \implies \boxed {803}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -337,8 +312,6 @@ Label the four vertices of the tetrahedron and the midpoint of $\overline {AB}$,
  Through simple formulae the circumradius is $\frac{25}{2}$. Therefore, the triangle containing $AOD$ is 30-60-90 and $DO = \frac{25\sqrt{3}}{2}$. From there, the area of the base triangle $ABC$ is 192, so we find $32 \cdot 25\sqrt{3} = 800\sqrt{3} \implies \boxed{803}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) A rational number written in base eight is $\underline{a} \underline{b} . \underline{c} \underline{d}$, where all digits are nonzero. The same number in base twelve is $\underline{b} \underline{b} . \underline{b} \underline{a}$. Find the base-ten number $\underline{a} \underline{b} \underline{c}$.
@@ -369,15 +342,11 @@ First, note that the first two digits will always be a positive number. We will 
 
 
 
-
-
 \textbf{Solution 2}
 
 The parts before and after the decimal points must be equal. Therefore $8a + b = 12b + b$ and $c/8 + d/64 = b/12 + a/144$.  Simplifying the first equation gives $a = (3/2)b$.  Plugging this into the second equation gives $3b/32 = c/8 + d/64$. Multiplying both sides by 64 gives $6b = 8c + d$.  $a$ and $b$ are both digits between 1 and 7 (they must be a single non-zero digit in base eight) so using $a = 3/2b$, $(a,b) = (3,2)$ or $(6,4)$.  Testing these gives that $(6,4)$ doesn't work, and $(3,2)$ gives $a = 3, b = 2, c = 1$, and $d = 4$.  Therefore $abc = \boxed{321}$
 
  
-
-
 
 
 
@@ -433,8 +402,6 @@ Converting to base $10$ we get
 
 
 
-
-
 \textbf{Solution 4 (modular congruency/nt bash)}
 
 In the problem, we are given that 
@@ -461,8 +428,6 @@ In the problem, we are given that
  by Technodoggo
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) A circle circumscribes an isosceles triangle whose two congruent angles have degree measure $x$. Two points are chosen independently and uniformly at random on the circle, and a chord is drawn between them. The probability that the chord intersects the triangle is $\frac{14}{25}$. Find the difference between the largest and smallest possible values of $x$.
@@ -499,15 +464,11 @@ Note:
 
 
 
-
-
 \textbf{Solution 2 (Not Complementary Counting method)}
 
 Because we know that we have an isosceles triangle with angles of $x$ (and we know that x is an inscribed angle), that means that the arc that is intercepted by this angle is $2x$. We form this same conclusion for the other angle $x$, and $180-2x$. Therefore we get $3$ arcs, namely, $2x$, $2x$, and $360-4x$. To have the chords intersect the triangle, we need the two points selected (to make a chord) to be on completely different arcs. An important idea to understand is that order matters in this case, so we have the equation $2$ * $\frac{2x}{360}$ * $\frac{2x}{360}$ + $2$ * $2$ * $\frac{2x}{360}$ * $\frac{360-4x}{360}$ = $\frac{14}{25}$ which using trivial algebra gives you $x^2-120x+3024$ and factoring gives you $(x-84)(x-36)$ and so your answer is $\boxed{048}$. ~jske25
 
  
-
-
 
 
 
@@ -535,8 +496,6 @@ After constructing the circumscribed circle, realize that the only time when the
  
 
 
-
-
 	\item (\textit{AIME I 2017}) For nonnegative integers $a$ and $b$ with  $a + b \leq 6$, let $T(a, b) = \binom{6}{a} \binom{6}{b} \binom{6}{a + b}$. Let $S$ denote the sum of all $T(a, b)$, where  $a$ and $b$ are nonnegative integers with $a + b \leq 6$. Find the remainder when $S$ is divided by $1000$.
 
 
@@ -555,8 +514,6 @@ Let $c=6-(a+b)$, and note that $\binom{6}{a + b}=\binom{6}{c}$. The problem thus
 
 
 
-
-
 \textbf{Solution 1 but different (Committee Forming)}
 
 Alternatively, one can note that we can consider groups where $a+b$ is constant, say $c$. Fix any value of $c$. Then the sum of all of the values of $T(a,b)$ such that $a+b=c$ is $\binom{6}{a+b} \sum_{a+b=c} \binom{6}{a}\binom{6}{b}$ which by Vandermonde's is $\binom{6}{a+b}\binom{12}{a+b}$. Remember, that expression is the resulting sum for a fixed $a+b$. So, for $a+b\le 6$, we want $\sum_{c=0}^{6} \binom{6}{c}\binom{12}{c}$. This is (by Vandermonde's or committee forming) $\binom{18}{6} = 18564 \implies \boxed{564}$ ~ firebolt360
@@ -564,8 +521,6 @@ Alternatively, one can note that we can consider groups where $a+b$ is constant,
  \textbf{Note} Now just a quick explanation for people who don't fully understand Vandermonde's. Take the first part, $\sum_{a+b=c} \binom{6}{a}\binom{6}{b}$. Consider $2$ different groups, $A$ and $B$ both of size $6$ people. We wish to chose $a$ peoples from $A$ and $b=c-a$ people from $B$. In total, we chose $c-a+a=c$ people. We can then draw a bijection towards choosing $c$ people from $A\cup B$, which has size $12$. So, it is $\binom{12}{c}=\binom{12}{a+b}$. Similarly, for $\sum_{c=6} \binom{6}{c}\binom{12}{c}$, we see that $\binom{6}{c}=\binom{6}{6-c}$. Now the total is $18$, and the sum is $6$. So, we get $\binom{18}{6}$. See \href{https://artofproblemsolving.com/wiki/index.php?title=Committee\_forming}{committee forming} for more information ~ firebolt360
 
  
-
-
 
 
 
@@ -580,8 +535,6 @@ Treating $a+b$ as $n$, this problem asks for
  \[\sum_{n=0}^{6} \left[\binom{6}{n} \binom{12}{n}\right] = \sum_{n=0}^{6} \left[\binom{6}{6-n} \binom{12}{n}\right] = \binom{6+12}{6} = \binom{18}{6}.\]- Awsomness2000
 
  
-
-
 
 
 
@@ -629,8 +582,6 @@ Case 1: $a<b$.
 
 
 
-
-
 \textbf{Solution 4}
 
 We begin as in solution 1 to rewrite the sum as $\binom{6}{a} \binom{6}{b} \binom{6}{c}$ over all $a,b,c$ such that $a+b+c=6$.Consider the polynomial $P(x)=\left(\binom{6}{0} + \binom{6}{1}x + \binom{6}{2}x^2 + \binom{6}{3}x^3 + \cdot \cdot \cdot + \binom{6}{6}x^6\right)^3$.We can see the sum we wish to compute is just the coefficient of the $x^6$ term. However $P(x)=((1+x)^6)^3=(1+x)^{18}$. Therefore, the coefficient of the $x^6$ term is just $\binom{18}{6} = 18564$ so the answer is $\boxed{564}$.
@@ -638,8 +589,6 @@ We begin as in solution 1 to rewrite the sum as $\binom{6}{a} \binom{6}{b} \bino
  - mathymath
 
  
-
-
 
 
 
@@ -652,8 +601,6 @@ Let $c=6-(a+b)$. Then $\binom{6}{a+b}=\binom{6}{c}$, and $a+b+c=6$. The problem 
 
 
 
-
-
 \textbf{Solution 5 but different (Committee Forming)}
 
 Since $\binom{6}{n}=\binom{6}{6-n}$, we can rewrite $T(a,b)$ as $\binom{6}{a}\binom{6}{b}\binom{6}{6-(a+b)}$. Consider the number of ways to choose a committee of 6 people from a group of 6 democrats, 6 republicans, and 6 independents. We can first pick $a$ democrats, then pick $b$ republicans, provided that $a+b \leq 6$. Then we can pick the remaining $6-(a+b)$ people from the independents. But this is just $T(a,b)$, so the sum of all $T(a,b)$ is equal to the number of ways to choose this committee.On the other hand, we can simply pick any 6 people from the $6+6+6=18$ total politicians in the group. Clearly, there are $\binom{18}{6}$ ways to do this. So the desired quantity is equal to $\binom{18}{6}$. We can then compute (routinely) the last 3 digits of $\binom{18}{6}$ as $\boxed{564}$.
@@ -662,15 +609,11 @@ Since $\binom{6}{n}=\binom{6}{6-n}$, we can rewrite $T(a,b)$ as $\binom{6}{a}\bi
 
 
 
-
-
 \textbf{Solution 6(NICE Journal)}
 
 Note that $\binom{6}{a+b} = \binom{6}{6-a-b}$. So we have $\binom{6}{a}\binom{6}{b}\binom{6}{6-a-b}$. If we think about this this is essentially choosing a group of $a$ people from $6$ people, a group of $b$ people from $6$ people, and a group of $6 - a -b$ from another group of $6$ people. This is nothing but choosing $6$ people from a group of $18$ people. This is nothing but $\binom{18}{6} = 18564 \Rightarrow 564$.~coolmath\_2018
 
  
-
-
 
 
 
@@ -742,8 +685,6 @@ Obviously, one can do this on an AIME, this just took me 20 mins, mainly because
 
 
 
-
-
 \textbf{Solution 8 (Bijectivity)}
 
 Consider set $A = \{1,2,3,4,5,6\}$, set $B = \{7,8,9,10,11,12 \}$. Define $S(a,b) = \binom{6}{a} \cdot \binom{6}{b}$, so $T(a,b) = S(a,b) \cdot \binom{6}{a+b}$. Define $C = \{13,14,15,16,17,18 \}$. Literally, we choose $a$ elements from $A$, $b$ from $B$, and then $a+b$ elements from $C$, conjoin them to this one big set $A_a \cup B_b \cup C_{a+b}$ of $2a+2b$ elements. Consider $A \cup B \cup C$. Then, out of 18 such elements we literally choose at maximum 12 of them, at minimum 0, so there are $\binom{18}{0} + \binom{18}{2} + \binom{18}{4} + \dots + \binom{18}{12}$ such sets. Now the problem does NOT ask for the number of sets. It asks for $\sum T(a,b)$, which can be obtained by any subset of $\binom{18}{12}$ elements, as such a subset can yield all plausible cases for the remainder of the sets. So, the requested value is $\binom{18}{12} \pmod{1000} \equiv \boxed{564}$.
@@ -757,8 +698,6 @@ Consider set $A = \{1,2,3,4,5,6\}$, set $B = \{7,8,9,10,11,12 \}$. Define $S(a,b
  \[\sum _{k_1+\cdots +k_p=m}\binom{n_1}{k_1} \binom{n_2}{k_2} \cdots \binom{n_p}{k_p} = \binom{n_1+ \cdots +n_p}{m}.\]~eibc
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) Two real numbers $a$ and $b$ are chosen independently and uniformly at random from the interval $(0, 75)$. Let $O$ and $P$ be two points on the plane with $OP = 200$. Let $Q$ and $R$ be on the same side of line $OP$ such that the degree measures of $\angle POQ$ and $\angle POR$ are $a$ and $b$ respectively, and $\angle OQP$ and $\angle ORP$ are both right angles. The probability that $QR \leq 100$ is equal to $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -783,8 +722,6 @@ Noting that $\angle OQP$ and $\angle ORP$ are right angles, we realize that we c
 
 
 
-
-
 \textbf{Solution 2 (Trig Bash)}
 
 Put $\triangle POQ$ and $\triangle POR$ with $O$ on the origin and the triangles on the $1^{st}$ quadrant.The coordinates of $Q$ and $P$ is $(200 \cos^{2}a,200 \cos a\sin a )$, $(200\cos^{2}b,200\cos(b)\sin b)$. So $PQ^{2}$ = $(200 \cos^{2} a - 200 \cos^{2} b)^{2} +(200 \cos a \sin a - 200 \cos b \sin b)^{2}$, which we want to be less then $100^{2}$.So $(200 \cos^{2} a - 200 \cos^{2} b)^{2} +(200 \cos a \sin a - 200 \cos b \sin b)^{2} \le 100^{2}$
@@ -799,8 +736,6 @@ Put $\triangle POQ$ and $\triangle POR$ with $O$ on the origin and the triangles
  Solution by Leesisi
 
  
-
-
 
 
 
@@ -825,15 +760,11 @@ Put $\triangle POQ$ and $\triangle POR$ with $O$ on the origin and the triangles
 
 
 
-
-
 \textbf{Solution 4}
 
 Scale the circle down from radius 100 (diameter 200) to radius 6 (diameter 12). Then we want the probability that $PQ \le 6$. Now note that all possible $P$ and $Q$ lie on a $5\pi$ interval on the circumference of the circle. But for $PQ<6$, $P$ and $Q$ must be less than $2\pi$ apart on the circumference of the circle. Simple geometric probability gives us $\frac{16}{25}$, so the answer is $\fbox{41}$. (Professor-Mom)
 
  
-
-
 
 
 
@@ -850,8 +781,6 @@ slightly edited
 
 
  
-
-
 
 
 
@@ -886,8 +815,6 @@ WLOG, let $b\ge a$. It does not actually matter, but it is necessary for this pa
 
 
 
-
-
 \textbf{Solution 7}
 
 We notice that the arc $QR=2a-2b$. We let $M$ be the midpoint of $OP$ and the center of the semicircle shown in the diagram in Solution 3. From arc $QR$, we find $\angle QMR=2a-2b$. Because the radius of the semicircle is 100, we can use law of cosines to find the length of $QR$ giving us, 
@@ -901,8 +828,6 @@ We notice that the arc $QR=2a-2b$. We let $M$ be the midpoint of $OP$ and the ce
  \[\frac{75^2-45^2}{75^2}=\frac{16}{25}.\] We add the numerator and denominator of our resulting fraction giving us the answer $41$. $\square$ -mark888
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) Let $a_{10} = 10$, and for each positive integer $n >10$ let $a_n = 100a_{n - 1} + n$. Find the least positive $n > 10$ such that $a_n$ is a multiple of $99$.
@@ -927,8 +852,6 @@ Writing out the recursive statement for $a_n, a_{n-1}, \dots, a_{10}$ and summin
  \[1,1,...\] Since there are 3 rows we know it is a quadratic and we can continue, by finding the quadratic passing through $(10,10),(11,21),(12,33)$ to get $\frac{(n^2+n-90)}{2}.$-mathkiddus
 
  
-
-
 
 
 
@@ -985,8 +908,6 @@ Hmmm... let's write our some of the terms, and convert into terms with $a_{10}$,
 
 
 
-
-
 \textbf{Solution 3}
 
 
@@ -1012,8 +933,6 @@ Hmmm... let's write our some of the terms, and convert into terms with $a_{10}$,
 
 
 
-
-
 \textbf{Solution 4 (quadratic)}
 
 Take the mods of the first few terms: $a_{10} \equiv 10 \pmod{99}$, $a_{11} \equiv 21 \pmod{99}$, $a_{12} \equiv 33 \pmod{99}$, $a_{13} \equiv 46 \pmod{99}$, etc.
@@ -1025,8 +944,6 @@ Take the mods of the first few terms: $a_{10} \equiv 10 \pmod{99}$, $a_{11} \equ
  \[n = \frac{-1 \pm \sqrt{1^2 - 4(1)(-(90+198x))}}{2} = \frac{-1 \pm \sqrt{1 + 360 + 792x}}{2} = \frac{-1 \pm \sqrt{361 + 792x}}{2}.\] So now the problem becomes finding the least $x$ such that $361 + 792x$ is a perfect square, say $p^2.$ Rearranging gives $(p - 19)(p + 19) = 792x.$ We can prime factorize $792$ to get $2^3 \cdot 3^2 \cdot 11.$ So we need to multiply this with some number $x$ so that two factors multiplying to $792x$ differ by $38.$ We find that the least $x$ that works is $x = 10$ (we can have $110 \cdot 72 = 7920$). Then $n = \frac{-1 \pm 91}{2} = \xcancel{-46}, \boxed{45}.$
 
  
-
-
 
 
 
@@ -1044,8 +961,6 @@ $a_n=a_{n-1} + n \pmod{99}$.  Using the steps of the previous solution we get up
 
 
 
-
-
 \textbf{Solution 5.5 (not good, risky)}
 
 We just notice that $100 \equiv 1 \pmod{99}$, so we are just trying to find $10 + 11 + 12 + \cdots + n$ modulo $99$, or $\dfrac{n(n+1)}{2} - 45$ modulo $99$. Also, the sum to $44$ is divisible by $99$, and is the first one that is. Thus, if we sum to $45$ the $45$ is cut off and thus is just a sum to $44$.
@@ -1053,8 +968,6 @@ We just notice that $100 \equiv 1 \pmod{99}$, so we are just trying to find $10 
  Without checking whether there are other sums congruent to $45 \pmod{99}$, we can just write the answer to be $\boxed{045}$.
 
  
-
-
 
 
 
@@ -1069,8 +982,6 @@ Let $b_n = 2a_{n+10}$. We can find a formula for $b_n$:
  -AlexLikeMath
 
  
-
-
 
 
 
@@ -1103,8 +1014,6 @@ In any number generated, if the numbers don't go beyond $20$, then the highest n
 
 
 
-
-
 \textbf{Solution 8 (Timekilling plain Bash!!!!!!!!!!!!!!!!!)}
 
 We will work$\mod 99$. The recursive formula now becomes $a_n=a_{n-1}+n$. Now, we will bash. For convenience, everything is taken $\mod 99$. The sequence is
@@ -1112,8 +1021,6 @@ We will work$\mod 99$. The recursive formula now becomes $a_n=a_{n-1}+n$. Now, w
  Hence the least number $n$ is $n=45$.
 
  
-
-
 
 
 
@@ -1168,8 +1075,6 @@ Taking the recurrence mod $99$, we have
  
 
 
-
-
 	\item (\textit{AIME I 2017}) Let $z_1 = 18 + 83i$, $z_2 = 18 + 39i,$ and $z_3 = 78 + 99i,$ where $i = \sqrt{-1}$. Let $z$ be the unique complex number with the properties that $\frac{z_3 - z_1}{z_2 - z_1} \cdot \frac{z - z_2}{z - z_3}$ is a real number and the imaginary part of $z$ is the greatest possible. Find the real part of $z$.
 
 
@@ -1207,8 +1112,6 @@ $\angle Z_3Z_1Z_2$ looks similar to $\angle Z_3ZZ_2$, so let’s try to prove th
 
 
 
-
-
 \textbf{Solution 1.1}
 
 Let’s look back at the information given to us. The problem states that $\frac{z_3-z_1}{z_2-z_1}~\cdot~\frac{z-z_2}{z-z_3}$ is a real number. Let the real number be some constant, $c$. Rearranging yields $\frac{z_3-z_1}{z_2-z_1} = c~\cdot~\frac{z-z_3}{z-z_2}$.But how do we relate this expression to our angles? Well, let’s take a look at the divisions themselves.
@@ -1229,8 +1132,6 @@ Let’s look back at the information given to us. The problem states that $\frac
 
 
 
-
-
 \textbf{Solution 1.2}
 
 Let us write $\frac{z_3 - z_1}{z_2 - z_1}$ as some complex number with form $r_1 (\cos \theta_1 + i \sin \theta_1).$ Similarly, we can write $\frac{z-z_2}{z-z_3}$ as some $r_2 (\cos \theta_2 + i \sin \theta_2).$
@@ -1243,8 +1144,6 @@ Let us write $\frac{z_3 - z_1}{z_2 - z_1}$ as some complex number with form $r_1
  is real. The imaginary part of this is $(\cos \theta_1 \sin \theta_2 + \cos \theta_2 \sin \theta_1),$ which we recognize as $\sin(\theta_1 + \theta_2).$ This is only $0$ when $\theta_1 + \theta_2 = k\pi$ for some integer $k$. Here $\theta_2$ represents the major angle$\angle Z_3ZZ_2$, and the angle we want is the minor angle, so we can rewrite the equation as $\theta_1 + 2\pi - \theta_2 = k\pi \implies \theta_1 - \theta_2 = (k-2)\pi$. We can see from the diagram that both $\theta_1$ and $\theta_2$ are obtuse, so therefore $\theta_1 - \theta_2 = 0 \implies \boxed{\theta_1 = \theta_2}$.
 
  
-
-
 
 
 
@@ -1286,8 +1185,6 @@ Now that we’ve proven this fact, we know that all four points lie on a circle 
 
 
 
-
-
 \textbf{Solution 3}
 
 Algebra Bash
@@ -1318,8 +1215,6 @@ Algebra Bash
 
 
 
-
-
 \textbf{Solution 4 (algebra but much cleaner)}
 
 We see that $\frac{z_3-z_1}{z_2-z_1}=\frac{60+16i}{-44i}=\frac{15i-4}{11}$. 
@@ -1342,15 +1237,11 @@ We see that $\frac{z_3-z_1}{z_2-z_1}=\frac{60+16i}{-44i}=\frac{15i-4}{11}$.
 
 
 
-
-
 \textbf{Solution 5}
 
 We will just bash. Let $z=a+bi$ where $a,b\in\mathbb{R}$. We see that $\frac{z_3-z_1}{z_2-z_1}=\frac{-4+15i}{11}$ after doing some calculations. We also see that $\frac{[(a-18)+(b-39)i][(a-78)-(b-99)i]}{\text{some real stuff}}.$ We note that $[(a-18)+(b-39)i][(a-78)-(b-99)i]$ is a multiple of $-4-15i$ because the numerator has to be real. Thus, expanding it out, we see that $(a-18)(a-78)+(b-39)(b-99)=-4k \\ (a-78)(b-39)-(a-18)(b-99)=-15k.$ Hence, $(a-18)(a-78)+(b-39)(b-99)=\frac{4}{15}[(a-78)(b-39)-(a-18)(b-99)] \implies a^2-96a+b^2-138b+5265=16a-16b+336 \\ (a-56)^2+(b-61)^2=1928.$ To maximize the imaginary part, $(a-56)^2$ must equal $0$ so hence, $a=\boxed{056}$.
 
  
-
-
 
 
 
@@ -1362,11 +1253,7 @@ If you've read Evan Chen's book EGMO (Euclidean Geometry in Mathematical Olympia
 
  To find the center of the circumcircle, find the intersection of the perpendicular bisectors. One of them is just $y=61$, and the second is $y=-x+117$. So we have the point (56, 61) as the center of the circle. The distance from this point to all three points is $\sqrt{22^2+38^2}$. The square of the radius of this circle is $22^2+38^2=1928$. So the equation for the circle is $(x-56)^2+(y-61)^2=1928$. To maximize the y-coordinate, which does not have to be a positive integer, but $x$ does (per AIME rules given it's the answer), by the trivial inequality $(x-56)^2 \geq 0$, so $\boxed{056}$ is the answer.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
 
 
 	\item (\textit{AIME I 2017}) Consider arrangements of the $9$ numbers $1, 2, 3, \dots, 9$ in a $3 \times 3$ array. For each such arrangement, let $a_1$, $a_2$, and $a_3$ be the medians of the numbers in rows $1$, $2$, and $3$ respectively, and let $m$ be the median of $\{a_1, a_2, a_3\}$. Let $Q$ be the number of arrangements for which $m = 5$. Find the remainder when $Q$ is divided by $1000$.
@@ -1381,11 +1268,171 @@ If you've read Evan Chen's book EGMO (Euclidean Geometry in Mathematical Olympia
 
 Assume that $5 \in \{a_1, a_2, a_3\}$, $m \neq 5$, and WLOG, $\max{(a_1, a_2, a_3)} = 5$. Then we know that the other two medians in $\{a_1, a_2, a_3\}$ and the smallest number of rows 1, 2, and 3 are all less than 5. But there are only 4 numbers less than 5 in $1, 2, 3, \dots, 9$, a Contradiction. Thus, if $5 \in \{a_1, a_2, a_3\}$, then $m = 5$.
 
- WLOG, assume $5$ is in the upper left corner. One of the two other values in the top row needs to be below $5$, and the other needs to be above $5$. This can be done in 
+ WLOG, assume $5$ is in the upper left corner. One of the two other values in the top row needs to be below $5$, and the other needs to be above $5$. This can be done in $4\cdot4\cdot2=32$ ways.The other $6$ can be arranged in $6!=720$ ways.Finally, accounting for when $5$ is in every other space, our answer is $32\cdot720\cdot9$, which is $207360$. But we only need the last $3$ digits, so $\boxed{360}$ is our answer.
+
+ \textbf{Alternative Proof} \textbf{Claim:} As long as one median is equal to $5,$ the overall median is equal to $5.$
+
+ \textbf{Proof:} Notice that to obtain a median of $5,$ we need one number greater and one number lesser than $5$ along with $5.$
+
+ Thus, we remain with 3 numbers greater than $5$ and 3 less than $5,$ meaning that the overall median, no matter the distribution, of the remaining two rows must be $5.$
+
+ mathboy282
 
  
 
 
+
+\textbf{Solution 2}
+
+(Complementary Counting with probability)
+
+ Notice that m can only equal 4, 5, or 6, and 4 and 6 are symmetric. 
+
+ WLOG let $m=4$
+
+ 1. There is a $\frac{15}{28}$ chance that exactly one of 1, 2, 3 is in the same row with 4.
+
+ There are 3 ways to select which of the smaller numbers will get in the row, and then 5 
+
+ ways to select the number larger than 4.
+
+ $\frac{\dbinom{3}{1}\cdot\dbinom{5}{1}}{\dbinom{8}{2}} = \frac{15}{28}$
+
+ 2. There is a $\frac{2}{5}$ chance that the other two smaller numbers end up in the same row.
+
+ There are 2 ways to select the row that the two smaller number are in, and then $\dbinom{3}{2}$ ways 
+
+ to place the smaller numbers in the row.
+
+ $\frac{\dbinom{2}{1}\cdot\dbinom{3}{2}}{\dbinom{6}{2}} = \frac{2}{5}$
+
+ $9!(1-2*\frac{15}{28}*\frac{2}{5})=362880*\frac{4}{7}=207\boxed{360}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We will make sure to multiply by $3!$ in the end to account for all the possible permutation of the rows.
+
+ 
+WLOG, let $5$ be present in the Row \#$1$.
+
+ 
+Notice that $5$ MUST be placed with a number lower than it and a number higher than it.
+
+ 
+This happens in $4\cdot4$ ways. You can permutate Row \#$1$ in $3!$ ways.
+
+ 
+Now, take a look at Row $2$ and Row $3$.
+
+ 
+Because there are $6$ numbers to choose from now, you can assign \#'s to Row's \#2&3 in 
+
+ 
+$\frac{\binom{6}{3}\cdot\binom{3}{3}}{2}$ ways. There are $3!\cdot3!$ ways to permute the numbers in the individual Rows.
+
+ Hence, our answer is $3!(4\cdot4\cdot3!\cdot{10}\cdot{3!}\cdot{3!})=3!(16\cdot60\cdot36)=3!(34560)\implies{207\boxed{360}}$
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We see that if one of the medians is 5, then there are two remaining numbers greater than 5 and two less than 5, so it follows that $m=5$. There are 3 ways to choose which row to have 5 in, $4\cdot 4=16$ ways to choose the other two numbers in that row, $3!=6$ ways to arrange the numbers in that row, and $6!=720$ ways for the remaining numbers, for our answer is $3\cdot 16\cdot 6\cdot 720=207\boxed{360}$.-Stormersyle
+
+ 
+
+
+
+\textbf{Solution 5}
+
+We take the grid, and we do a bunch of stuff with it. First, we sort each row, smallest on the left, largest on the right, then we arrange these 3 rows such that the middle \#s are increasing, from top to bottom. Thus, we get that the cell in the very center of the grid must be 5. (We need to multiply by 1296 at the end)
+
+ Let S mean a number that is < 5, L mean a number > 5.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2017_11_Solution_Figure_1.jpg}
+                    \end{figure}
+                    
+
+ In the 2 blank corners, one can be S, and the other one has to be L.
+
+ If the top right corner is S, there are 16 ways, otherwise, there are 144 ways. (This is left as an exercise to the reader).
+
+ Thus, there are 160 * 1296 total configurations, which gets us an answer of $207\boxed{360}$
+
+ -AlexLikeMath
+
+ 
+
+
+
+\textbf{Solution 6}
+
+We note that if $5$ is a median of one of the rows, then $m=5$. First, focus on the row with $5$ in it. There are $4^2$ ways to choose the other numbers in that row and then $3!$ ways to order it. Now, clearly, there are $6!$ ways to put the other $6$ numbers into the remaining slots so $Q=6!\cdot3!\cdot4^2\cdot3=207360$. Hence, our answer is $\boxed{360}$.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+Let $A = \{1,2,3,4\}$ and $B = \{6,7,8,9\}$. WLOG, if we let 5 be on the first row, then $m=5$ if and only if $a_1=5$. Thus, the two other numbers that are on row 1 $p, q$ satisfies one of the two following conditions:
+
+ 
+ \[(1) \quad p\in A \quad \textrm{and} \quad q\in B\]or
+ \[(2) \quad p\in B \quad \textrm{and} \quad q\in A\]
+
+ The probability of this happening can be calculated through $\frac{4^2}{{8 \choose 2}} = \frac{4}{7}$. Therefore, 
+ \[Q = 9! \cdot \frac{4}{7} = 207360 \equiv \boxed{360} \pmod {1000} .\]
+
+ 
+
+
+
+\textbf{Solution  8}
+
+We consider all possible combinations for which the medians lie on the 2nd column in increasing order, and the numbers in each row are strictly increasing. There are nine cases for the remaining two medians $(a_1,a_3)$:
+
+ \textbf{Case 1: }$(a_1,a_3)=(2,6)$Note that $7,8,9$ must all lie in the 3rd column. This yields $2!\cdot 3!=12$ combinations.
+
+ \textbf{Case 2: }$(a_1,a_3)=(2,7)$Note that $1$ must lie on the first cell and $8,9$ must all lie on the 3rd column. If $3$ lie on the 3rd column, there are $2!$ ways to permute $8,9$, while the remaining numbers are fixed.
+
+ If $4$ lie on the 3rd column, there are $2!$ ways to permute $8,9$, while the remaining numbers are fixed.
+
+ If $6$ lie on the 3rd column, there are $2!$ ways to choose where $6$ lie, $2!$ ways to permute $8,9$, $2!$ ways to permute $3,4$. There are hence $12$ combinations in this case.
+
+ \textbf{Case 3: }$(a_1,a_3)=(2,8)$There are $2\cdot2=4$ ways to choose the 2rd row, and there are $2!$ ways to permute the remaining numbers. This yields $2\cdot 4=8$ combinations.
+
+ \textbf{Case 4: }$(a_1,a_3)=(3,6)$Note that $7,8,9$ must all lie in the 3rd column, and there are $2!$ ways to choose where $4$ lie. Thus, there are $3!\cdot2!\cdot2=24$ combinations in this case.
+
+ \textbf{Case 5: }$(a_1,a_3)=(3,7)$Note that $1,2$ must lie on the first cell and $8,9$ must all lie on the 3rd column. If $4$ lies on the 1st column, there are $2\cdot2=4$ ways to permute $1,2,4$ as $4$ cannot lie next to 3. There are $4$ ways to permute $6,8,9$ for a similar reason. There are $4\cdot4=16$ combinations.
+
+ If $4$ lies on the 3rd column, it can only lie next to $3$, resulting in $2$ permutations of $8,9$, the 1st column is permuted similarly. This yields $2\cdot 2=4$ combinations. In total, there are $16+4=20$ combinations in this case.
+
+ \textbf{Case 6: }$(a_1,a_3)=(3,8)$Note that $1,2$ must lie on the 1st column and $9$ is fixed. If $4$ lies on the 1st column, there are $2$ ways to choose where $4$ lies, $2$ ways to permute $1,2$, $2$ ways to permute $6,7$. This yields $8$ combinations in this case.
+
+ If $6$ lies on the 1st column, we see that $6$ is fixed and $4,7$ are fixed, from which there are $2$ ways to permute $1,2$.
+
+ If $7$ lies on the 1st column, we see that $7$ is fixed and $4,6$ are fixed, from which there are $2$ ways to permute $1,2$. In total, there are $8+2+2=12$ combinations in this case.
+
+ \textbf{Case 7: }$(a_1,a_3)=(4,6)$Note that $1,2,3$ must lie on the 1st column and $7,8,9$ must all lie in the 3rd column. This yields $3!\cdot3!=36$ combinations in this case.
+
+ \textbf{Case 8: }$(a_1,a_3)=(4,7)$Note that $1,2,3$ must lie on the 1st column and $6,8,9$ must all lie in the 3rd column. There are $2!$ ways to choose where $6$ lies. This yields $3!\cdot 2\cdot 2!=24$ combinations in this case.
+
+ \textbf{Case 9: }$(a_1,a_3)=(4,8)$Note that $1,2,3$ must lie on the 1st column and $6,7,9$ must all lie in the 3rd column, where $9$ is fixed. There are $2!$ ways to permute where $6,7$ lies. This yields $3!\cdot 2=12$ combinations in this case.
+
+ There are $12+12+8+24+20+12+36+24+12=160$ combinations in total. For each of our combinations, there are $3!$ ways to permute each of the rows. There are also $3!$ ways to decide the order of the rows. Therefore, $Q=1296\cdot 160=207360$.
+
+ The requested answer is $\boxed{360}$.
+
+ 
 
 
 	\item (\textit{AIME I 2017}) Call a set $S$ product-free if there do not exist $a, b, c \in S$ (not necessarily distinct) such that $a b = c$. For example, the empty set and the set $\{16, 20\}$ are product-free, whereas the sets $\{4, 16\}$ and $\{2, 8, 16\}$ are not product-free. Find the number of product-free subsets of the set $\{1, 2, 3, 4, \ldots, 7, 8, 9, 10\}$.
@@ -1410,8 +1457,6 @@ We shall solve this problem by doing casework on the lowest element of the subse
 
 
 
-
-
 \textbf{Solution 2 (PIE)}
 
 We will consider the $2^9 = 512$ subsets that do not contain 1. A subset is product-free if and only if it does not contain one of the groups $\{2, 4\}, \{3, 9\}, \{2, 3, 6\},$ or $\{2, 5, 10\}$. There are $2^7$ subsets that contain 2 and 4 since each of the seven elements other than 2 and 4 can either be in the subset or not. Similarly, there are $2^7$ subsets that contain 3 and 9, $2^6$ subsets that contain 2, 3, and 6, and $2^6$ subsets that contain 2, 5, and 10. The number of sets that contain one of the groups is:
@@ -1422,8 +1467,6 @@ We will consider the $2^9 = 512$ subsets that do not contain 1. A subset is prod
  \[512 - 384 + 160 - 40 + 4 = \boxed{252}\].
 
  
-
-
 
 
 
@@ -1445,8 +1488,6 @@ Let $X$ be a product-free subset, and note that 1 is not in $x$. We consider fou
 
 
 
-
-
 \textbf{Solution 4}
 
 First, ignore 7 as it does not affect any of the other numbers; we can multiply by 2 later (its either in or out).
@@ -1462,8 +1503,6 @@ First, ignore 7 as it does not affect any of the other numbers; we can multiply 
  Summing over the 8 cases we get $2 + 4 + 8 + 16 + 16 + 16 + 32 + 32 = 126.$ Multiplying by $2$ because of the $7$ gives $252.$
 
  
-
-
 
 
 
@@ -1497,8 +1536,6 @@ Note that if any element $s\geq6$ makes an invalid set, it must be $c$ of $ab=c$
 
 
 
-
-
 \textbf{Solution 6 (simpler casework)}
 
 As before, every set with the property cannot contain $(2, 3, 6), (2, 5, 10), (3, 9)$, or $(2, 4)$.
@@ -1508,8 +1545,6 @@ As before, every set with the property cannot contain $(2, 3, 6), (2, 5, 10), (3
  \textbf{Case 2}: $S$ does not contain 2.The only excluded pair possible is $(3, 9)$.  Split the set $[3, 4, 5, 6, 7, 8, 9, 10]$ into $[3, 9]$ and $[4, 5, 6, 7, 8, 10]$.  The first has $2^2-1=3$ choices, excluding $(3, 9)$, and the second has $2^6=64$.  Multiplying, we have $192+60=\boxed{252}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) For every $m \geq 2$, let $Q(m)$ be the least positive integer with the following property: For every $n \geq Q(m)$, there is always a perfect cube $k^3$ in the range $n < k^3 \leq mn$. Find the remainder when
@@ -1549,8 +1584,6 @@ Lemma 1: The ratio between $k^3$ and $(k+1)^3$ decreases as $k$ increases.
 
 
 
-
-
 \textbf{Solution 2}
 
 We claim that $Q(m) = 1$ when $m \ge 8$. 
@@ -1574,8 +1607,6 @@ We claim that $Q(m) = 1$ when $m \ge 8$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that the problem is just asking for every $m \geq 2$, find the least $n$ such that there lies a perfect cube in between of $n$ and $mn$ for every $n$ after that minimum including the minimum. We consider $m = 2$ first. Then, we need to find the least $n$ such that for every $n$ after this minimum $n$, including the minimum, there lies a perfect cube in between of $n$ and $2n$. Let's denote the range notation as $(n, 2n)$. Hence, we start with $n = 1$ to get the range of $(1, 2)$. Clearly, no perfect cube lies between these numbers. Then we go to $n = 2$ to get $(2, 4)$ and here also nothing works. We can see that the perfect cubes are $1, 8, 27 64, 125, 216, 343, 512, 729, 1000, ...$. Because $1$ can't lie between two positive integers, we need to find the minimum $n$ such that $8$ is between $n$ and $2n$. Clearly, $n = 4$ will yield this case. We have the range $(4, 8)$. This works. We now list every $n$ starting from $4$ and see if all of these ranges host a perfect cube in between them. We have $(5, 10)$ works, $(6, 12)$ works $(7, 14)$ works, but $(8, 16)$ doesn't work. This is because the next perfect cube has to be $27$. Aha! Now we see the case. If we have a range in the following form $(\frac{a^{3}}{2}, a^{3})$, this will clearly host a perfect cube between them which is $a^{3}$. But as we keep going, we need to put the next perfect cube after $a^{3}$ into the range which is $(a + 1)^{3}$. We know that the next range after $(\frac{a^{3}}{2}, a^{3})$ is just $(a^{3}, 2a^{3})$ because we double everything. Hence, $(a + 1)^{3}$ must be in this range. If the perfect cube in between $a^{3}$ and $2a^{3}$ is of the form $a^{3} + \alpha$, we know that this added constant $\alpha$ is greater than or equal to $(a + 1)^{3} - a^{3} = 3a^{2} + 3a + 1$. Hence, we let $\alpha = a$ to solve $a^{3} \geq 3a^{2} + 3a + 1$ and for integer solutions, we claim the answer is $a \geq 4$. We can prove this by induction.
@@ -1587,8 +1618,6 @@ Note that the problem is just asking for every $m \geq 2$, find the least $n$ su
  What we have just shown now is that $a \geq 4$. Now note that the minimum range we found that worked was $(\frac{a^{3}}{2}, a^{3})$ where $n = \frac{a^{3}}{2}$. We plug in $a = 4$ to get $n = 32$ and hence $Q(2) = 32$. We can now apply the same procedure to the other numbers and finish as the above solutions.
 
  
-
-
 
 
 	\item (\textit{AIME I 2017}) Let $a > 1$ and $x > 1$ satisfy $\log_a(\log_a(\log_a 2) + \log_a 24 - 128) = 128$ and $\log_a(\log_a x) = 256$. Find the remainder when $x$ is divided by $1000$.
@@ -1665,8 +1694,6 @@ The first condition implies
 
 
 
-
-
 \textbf{Solution 2 (Another way to find a)}
 
 
@@ -1722,8 +1749,6 @@ The first condition implies
  
 
 
-
-
 	\item (\textit{AIME I 2017}) The area of the smallest equilateral triangle with one vertex on each of the sides of the right triangle with side lengths $2\sqrt3$, $5$, and $\sqrt{37}$, as shown, is $\frac{m\sqrt{p}}{n}$, where $m$, $n$, and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m+n+p$.
 
 
@@ -1760,8 +1785,6 @@ Lemma: If $x,y$ satisfy $px+qy=1$, then the minimal value of $\sqrt{x^2+y^2}$ is
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $AB=2\sqrt{3}, BC=5$, $D$ lies on $BC$, $F$ lies on $AB$ and $E$ lies on $AC$
@@ -1773,8 +1796,6 @@ Let $AB=2\sqrt{3}, BC=5$, $D$ lies on $BC$, $F$ lies on $AB$ and $E$ lies on $AC
  Now the rest is easy with C-S inequality, $(a^2+b^2)(147+121)\geq (7\sqrt{3}a+11b)^2, a^2+b^2\geq \frac{300}{67}$ so the smallest area is $\frac{\sqrt{3}}{4}\cdot \frac{300}{67}=\frac{75\sqrt{3}}{67}$, and the answer is $\boxed{145}$
 
  
-
-
 
 
 
@@ -1810,8 +1831,6 @@ Let $\triangle ABC$ be the right triangle with sides $AB = x$, $AC = y$, and $BC
 
 
 
-
-
 \textbf{Solution 4 (Trigonometry)}
 
 
@@ -1840,8 +1859,6 @@ Let $\triangle ABC$ be the right triangle with sides $AB = x$, $AC = y$, and $BC
 
 
 
-
-
 \textbf{Solution 5 (Complex numbers)}
 
 We will use complex numbers. Set the vertex at the right angle to be the origin, and set the axes so the other two vertices are $5$ and $2\sqrt{3}i$, respectively. Now let the vertex of the equilateral triangle on the real axis be $a$ and let the vertex of the equilateral triangle on the imaginary axis be $bi$. Then, the third vertex of the equilateral triangle is given by:
@@ -1856,8 +1873,6 @@ We will use complex numbers. Set the vertex at the right angle to be the origin,
  Thus, the minimum we seek is simply $\frac{\sqrt{3}}{4}\cdot\frac{1200}{268}=\frac{75\sqrt{3}}{67}$, so the desired answer is $\boxed{145}$.
 
  
-
-
 
 
 
@@ -1878,8 +1893,6 @@ This quadratic is minimized when $e = \frac{840}{2 \cdot 268} = \frac{105}{67},$
 
 
 
-
-
 \textbf{Solution 7}
 
 We can use complex numbers. Set the origin at the right angle. Let the point on the real axis be $a$ and the point on the imaginary axis be $bi$. Then, we see that $(a-bi)\left(\text{cis}\frac{\pi}{3}\right)+bi=(a-bi)\left(\frac{1}{2}+i\frac{\sqrt{3}}{2}\right)+bi=\left(\frac{1}{2}a+\frac{\sqrt{3}}{2}b\right)+i\left(\frac{\sqrt{3}}{2}a+\frac{1}{2}b\right).$ Now we switch back to Cartesian coordinates. The equation of the hypotenuse is $y=-\frac{2\sqrt{3}}{5}x+2\sqrt{3}.$ This means that the point $\left(\frac{1}{2}a+\frac{\sqrt{3}}{2}b,\frac{\sqrt{3}}{2}a+\frac{1}{2}b\right)$ is on the line. Plugging the numbers in, we have $\frac{\sqrt{3}}{2}a+\frac{1}{2}b=-\frac{\sqrt{3}}{5}a-\frac{3}{5}b+2\sqrt{3} \implies 7\sqrt{3}a+11b=20\sqrt{3}.$ Now, we note that the side length of the equilateral triangle is $a^2+b^2$ so it suffices to minimize that. By Cauchy-Schwarz, we have $(a^2+b^2)(147+121)\geq(7\sqrt{3}a+11b)^2 \implies (a^2+b^2)\geq\frac{300}{67}.$ Thus, the area of the smallest triangle is $\frac{300}{67}\cdot\frac{\sqrt{3}}{4}=\frac{75\sqrt{3}}{67}$ so our desired answer is $\boxed{145}$.
@@ -1890,15 +1903,11 @@ We can use complex numbers. Set the origin at the right angle. Let the point on 
 
 
 
-
-
 \textbf{Solution 8}
 
 Employ the same complex bash as in Solution 5, but instead note that minimizing $x^2+y^2$ is the same as minimizing the distance from 0,0 to x,y, since they are the same quantity. We use point to plane instead, which gives you the required distance.
 
  
-
-
 
 
 
@@ -1942,8 +1951,6 @@ Let $S$ be the triangle with side lengths $2\sqrt{3},~5,$ and $\sqrt{37}$.
 
 
 
-
-
 \textbf{Solution 10}
 
 Let the right triangle's lower-left point be at $O(0,0)$. Notice the 2 other points will determine a unique equilateral triangle. Let 2 points be on the $x$-axis ($B$) and the $y$-axis ($A$) and label them $(b, 0)$ and $(0, a)$ respectively.  The third point ($C$) will then be located on the hypotenuse.  We proceed to find the third point's coordinates in terms of $a$ and $b$. 
@@ -1973,8 +1980,6 @@ Let the right triangle's lower-left point be at $O(0,0)$. Notice the 2 other poi
 
 
 
-
-
 \textbf{Solution 11}
 
 
@@ -1994,8 +1999,6 @@ Let the right triangle's lower-left point be at $O(0,0)$. Notice the 2 other poi
  \textbf{Note} The proof of the formula can be done in a similar fashion as Solution 4, where instead of using specific values, we define variables, $m$ and $n$ in this case, as per the formula.
 
  
-
-
 
 
 
@@ -2022,8 +2025,6 @@ Let the right triangle's lower-left point be at $O(0,0)$. Notice the 2 other poi
 
 
 
-
-
 \textbf{Solution 13 (Kinematics+Geometry)}
 
 
@@ -2047,8 +2048,6 @@ Let the right triangle's lower-left point be at $O(0,0)$. Notice the 2 other poi
  \[\frac {\sqrt {3}}{4} \cdot x_{min}^2 = \frac {\sqrt {3} AC^2}{4 (\cot ^2 \alpha + \sqrt {3} \cot \alpha + 1)} = \frac{75 \sqrt{3}}{67}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -2080,8 +2079,6 @@ Let the right triangle be $\triangle ABC$ with $BC=2\sqrt{3}$, $AC=5$, and $AB=\
 
 
 
-
-
 \textbf{Solution 15 (Trig & Basic Calc)}
 
 We label the points such that $AB=2\sqrt3$, $BC=5$, and $AC=\sqrt{37}$. Let the point where the equilateral triangle hits $AB$ be $D$, the point where the triangle hits $BC$ be $E$, and the point where the triangle hits $AC$ be $F$. Finally, let the side length of the equilateral triangle be $x$ and $\angle{BDE}=\theta$.
@@ -2100,6 +2097,62 @@ We label the points such that $AB=2\sqrt3$, $BC=5$, and $AC=\sqrt{37}$. Let the 
  
 
 
+
+\textbf{Solution 16}
+
+Label the triangle as $\triangle ABC$ where $AB = 2\sqrt{3}, BC = 5, CA = \sqrt{37}$. Label the point where the equilateral triangle intersects with $BC$ as $D$ and the point where it intersects with $AC$ at $E$ and the last point as $F$. 
+
+ Define points $G$ and $H$ on $EF$ and $BC$ respectively such that $\angle DGF = \angle EHD = 90^{\circ}$. 
+
+ Let $\angle FDB = \theta$ and let $FG = GE = x$. Then, $FD = 2x$ and $FB = 2x\sin(\theta)$ and $DB = 2x\cos(\theta)$. 
+
+ By simple angle chasing, we find $\angle EDH = 120^{\circ} - \theta$ and $\angle AFE = \theta + 30^{\circ}$. Thus, we have
+
+ $DC = BC - BD = 5 - 2x\cos(\theta), AF = AB - BF = 2\sqrt{3} - 2x\sin(\theta), EH = 2x\sin(120^{\circ} - \theta)$. 
+
+ We will now find the area of $\triangle ABC$ using these smaller triangles. 
+
+ Area of FBD: This equals $\frac{1}{2} \cdot 2x\sin(\theta) \cdot 2x\cos(\theta) = 2x^2 \sin(\theta) \cos(\theta)$.
+
+ Area of DEF: This equals $\frac{\sqrt{3}}{4} \cdot (2x)^2 = x^2 \sqrt{3}$.
+
+ Area of DEC: This equals $\frac{1}{2} \cdot 2x\sin(120^{\circ} - \theta) \cdot (5 - 2x\cos(\theta)) = (5 - 2x\cos(\theta))(x\sin(120^{\circ} - \theta)$.
+
+ Area of AFE: Use $\angle AFE$ as the central angle. This would give $\frac{1}{2} \cdot 2x \cdot (2\sqrt{3} - 2x\sin(\theta)) \cdot \sin(\theta + 30^{\circ}) = x(2\sqrt{3} - 2x\sin(\theta))(\sin(\theta + 30^{\circ}))$.
+
+ Thus, the total area gives $2x^2 \sin(\theta) \cos(\theta) + x^2 \sqrt{3} + (5 - 2x\cos(\theta))(x\sin(120^{\circ} - \theta)) + x(2\sqrt{3} - 2x\sin(\theta))(\sin(\theta + 30^{\circ}))$.
+
+ I am going to simplify the $x^2$ terms first. Factor out an $x^2$ from all the $x^2$ terms.
+
+ This simplifies to
+
+ $x^2(2\sin(\theta)\cos(\theta) + \sqrt{3} - 2\cos(\theta)\sin(120^{\circ} - \theta) - 2\sin(\theta)\sin(\theta + 30^{\circ}) = x^2(2\sin(\theta)\cos(\theta) + \sqrt{3} - 2\cos(\theta)(\frac{\sqrt{3}}{2} \cos(\theta) + \frac{1}{2} \sin(\theta)) - 2\sin(\theta)(\frac{\sqrt{3}}{2} \sin(\theta) + \frac{1}{2} \cos(\theta))$.
+
+ This gives
+
+ $x^2(2\sin(\theta)\cos(\theta) + \sqrt{3} - \cos^2(\theta) \sqrt{3} - \cos(\theta)\sin(\theta) - \sin^2(\theta) \sqrt{3} - \sin(\theta)\cos(\theta)) = x^2(2\sin(\theta)\cos(\theta) + \sqrt{3} - \sqrt{3}(\sin^2(\theta) + \cos^2(\theta)) - 2\sin(\theta)\cos(\theta)) = x^2(0) = 0$. 
+
+ Finally, we're just left with all the $x$ terms namely
+
+ $5x\sin(120^{\circ} - \theta) + 2x\sqrt{3} \sin(\theta + 30^{\circ})$
+
+ Recall that this entire expression is just the area of $\triangle ABC$ which equals $\frac{1}{2} \cdot AB \cdot BC = \frac{1}{2} \cdot 2\sqrt{3} \cdot 5 = 5\sqrt{3}$. Thus, we get
+
+ $5x(\frac{\sqrt{3}}{2} \cos(\theta) + \frac{1}{2} \sin(\theta)) + 2x\sqrt{3}(\frac{\sqrt{3}}{2} \sin(\theta) + \frac{1}{2} \cos(\theta)) = 5\sqrt{3} \implies 11x\sin(\theta) + 7x\sqrt{3}\cos(\theta) = 10\sqrt{3}$.
+
+ Therefore
+
+ $x = \frac{10\sqrt{3}}{11\sin(\theta) + 7\sqrt{3} \cos(\theta)}$
+
+ Recall that the area of the equilateral triangle is $x^2 \sqrt{3}$ and we want to minimize this. Thus, we want to maximize the denominator of $x$. By Cauchy-Schwarz Inequality
+
+ $(11^2 + (7\sqrt{3})^2)(\sin^2(\theta) + \cos^2(\theta)) \geq (11\sin(\theta) + 7\sqrt{3} \cos(\theta))^2 \implies (11\sin(\theta) + 7\sqrt{3} \cos(\theta)) \leq 2\sqrt{67}$. 
+
+ Thus, $x \geq \frac{10\sqrt{3}}{2\sqrt{67}} = \frac{5\sqrt{3}}{\sqrt{67}} \implies x^2 \geq \frac{75}{67}$.
+
+ Thus the minimum area is $x^2 \sqrt{3} = \frac{75\sqrt{3}}{67} \implies 75 + 3 + 67 = \boxed{145}$
+
+ 
 
 
 \end{enumerate}

@@ -16,8 +16,6 @@ Recall that the arithmetic mean of all the $n$ digit palindromes is just the ave
 
 
 
-
-
 \textbf{Solution 2}
 
 For any palindrome $\underline{ABA},$ note that $\underline{ABA}$ is $100A + 10B + A = 101A + 10B.$ The average for $A$ is $5$ since $A$ can be any of $1, 2, 3, 4, 5, 6, 7, 8,$ or $9.$ The average for $B$ is $4.5$ since $B$ is either $0, 1, 2, 3, 4, 5, 6, 7, 8,$ or $9.$ Therefore, the answer is $505 + 45 = \boxed{550}.$
@@ -25,8 +23,6 @@ For any palindrome $\underline{ABA},$ note that $\underline{ABA}$ is $100A + 10B
  - ARCTICTURN
 
  
-
-
 
 
 
@@ -45,8 +41,6 @@ and so on.
  By the Multiplication Principle, there are $9\cdot10=90$ three-digit palindromes in total. Their sum is $1100\cdot45=49500,$ as we can match them into $45$ pairs such that each pair sums to $1100.$
 
  
-
-
 
 
 
@@ -70,15 +64,11 @@ We notice that a three-digit palindrome looks like this: $\underline{aba}.$
 
 
 
-
-
 \textbf{Solution 5 (Extremely Fast Solution)}
 
 The possible values of the first and last digits each are $1, 2, ..., 8, 9$ with a sum of $45$ so the average value is $5.$ The middle digit can be any digit from $0$ to $9$ with a sum of $45,$ so the average value is $4.5.$ The average of all three-digit palindromes is $5\cdot 10^2+4.5\cdot 10+5=\boxed{550}.$
 
  
-
-
 
 
 
@@ -100,11 +90,7 @@ The possible values of the first and last digits each are $1, 2, ..., 8, 9$ with
 
  \textbf{Remark} Visit the \href{https://artofproblemsolving.com/wiki/index.php/Talk:2021\_AIME\_II\_Problems/Problem\_1}{Discussion Page} for questions and further generalizations.
 
- speedy 2 min video
-
  
-
-
 
 
 	\item (\textit{AIME II 2021}) Equilateral triangle $ABC$ has side length $840$. Point $D$ lies on the same side of line $BC$ as $A$ such that $\overline{BD} \perp \overline{BC}$. The line $\ell$ through $D$ parallel to line $BC$ intersects sides $\overline{AB}$ and $\overline{AC}$ at points $E$ and $F$, respectively. Point $G$ lies on $\ell$ such that $F$ is between $E$ and $G$, $\triangle AFG$ is isosceles, and the ratio of the area of $\triangle AFG$ to the area of $\triangle BED$ is $8:9$. Find $AF$.
@@ -141,8 +127,6 @@ Since $0<x<840,$ it is clear that $\frac{x}{840-x}>0.$ Therefore, we take the po
 
 
 
-
-
 \textbf{Solution 2}
 
 We express the areas of $\triangle BED$ and $\triangle AFG$ in terms of $AF$ in order to solve for $AF.$
@@ -160,8 +144,6 @@ To make further calculations easier, we scale everything down by $420$ (while ke
 Thus $x = \frac{4}{5}.$ Because we scaled down everything by $420,$ the actual value of $AF$ is $\frac{4}{5}(420) = \boxed{336}.$
 
  
-
-
 
 
 
@@ -194,8 +176,6 @@ Now, as we know that the ratio of the areas of $\Delta AFG$ and $\Delta BED$ is 
 
 
 
-
-
 \textbf{Solution 4 (Similar Triangles)}
 
 Since $\triangle AFG$ is isosceles, $AF = FG$, and since $\triangle AEF$ is equilateral, $AF = EF$. Thus, $EF = FG$, and since these triangles share an altitude, they must have the same area.
@@ -206,8 +186,6 @@ Since $\triangle AFG$ is isosceles, $AF = FG$, and since $\triangle AEF$ is equi
 
 
 
-
-
 \textbf{Solution 5 (No Trig, Straightforward)}
 
 Draw the perpendicular segment from $A$ to $BC$. Call its intersection with $EF$ as point $H$ and its intersection with $BC$ as point $I$. Because $AFH$ is a $30-60-90$ triangle, $AH = \frac{\sqrt{3}}{2}x$. Call $DB = HI$ as $h$. Because $ABI$ is a $30-60-90$ triangle, $AI = \frac{\sqrt{3}}{2}x + h = 420\sqrt{3}$. $DE = \frac{h}{\sqrt{3}}$ because $DBE$ is a $30-60-90$ triangle. We know from the problem statement that $9[AFG]= \frac{9}{2}(\frac{\sqrt{3}}{2}x^2) = \frac{8}{2\sqrt{3}}h^2 = 8[BED]$. By simplifying this equation, $h = \frac{3\sqrt{3}x}{4}$. Substituting $h$ into the first equation yields $x = \boxed{336}$.
@@ -215,8 +193,6 @@ Draw the perpendicular segment from $A$ to $BC$. Call its intersection with $EF$
  -unhappyfarmer
 
  
-
-
 
 
 
@@ -231,8 +207,6 @@ Drop an altitude from $F$ to $\overline{AG}$ which intersects $\overline{AG}$ at
  Therefore, $\overline{EB} = 540$, and $\overline{AB} = \boxed{336}$ 
 
  
-
-
 
 
 
@@ -254,8 +228,6 @@ Drop an altitude from $F$ to $BC$ and notice that the triangle is congruent to t
  
 
 
-
-
 	\item (\textit{AIME II 2021}) Find the number of permutations $x_1, x_2, x_3, x_4, x_5$ of numbers $1, 2, 3, 4, 5$ such that the sum of five products 
  \[x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_1 + x_5x_1x_2\] is divisible by $3$.
 
@@ -273,8 +245,6 @@ Since $3$ is one of the numbers, a product with a $3$ in it is automatically div
 
 
 
-
-
 \textbf{Solution 2 (Symmetry and Casework)}
 
 The expression $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_1 + x_5x_1x_2$ has symmetry. Without the loss of generality, let $x_1=3.$ It follows that $\{x_2,x_3,x_4,x_5\}=\{1,2,4,5\}.$ We have:
@@ -289,8 +259,6 @@ The expression $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_1 + x_5x_1x_2$ has s
  Together, we get $4\cdot4=16$ permutations for the case $x_1=3.$ By symmetry, the cases $x_2=3, x_3=3, x_4=3,$ and $x_5=3$ all have the same count. Therefore, the total number of permutations $x_1, x_2, x_3, x_4, x_5$ is $16\cdot5=\boxed{080}.$
 
  
-
-
 
 
 
@@ -320,8 +288,6 @@ WLOG, let $x_{3} = 3$So, the terms $x_{1}x_{2}x_{3}, x_{2}x_{3}x_{4},x_{3}x_{4}x
 
 
 
-
-
 \textbf{Solution 4 (Proportion)}
 
 WLOG, let $x_{3} = 3$. Then:
@@ -334,8 +300,6 @@ WLOG, let $x_{3} = 3$. Then:
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -366,8 +330,6 @@ We have $4$ possibilities from above. Since we can also have $5+1$ or $2+4,$ the
  
 
 
-
-
 	\item (\textit{AIME II 2021}) There are real numbers $a, b, c,$ and $d$ such that $-20$ is a root of $x^3 + ax + b$ and $-21$ is a root of $x^3 + cx^2 + d.$ These two polynomials share a complex root $m + \sqrt{n} \cdot i,$ where $m$ and $n$ are positive integers and $i = \sqrt{-1}.$ Find $m+n.$
 
 
@@ -389,8 +351,6 @@ Applying Vieta's Formulas to $x^3+ax+b,$ we have $-20+z+\overline{z}=0.$ Substit
  Finally, the answer is $m+n=\boxed{330}.$
 
  
-
-
 
 
 
@@ -441,8 +401,6 @@ Consider case of $c = 1$:
 
 
 
-
-
 \textbf{Solution 3 (Heavy Calculation Solution)}
 
 We start off by applying Vieta's, and we find that $a=m^2+n-40m$, $b=20m^2+20n$, $c=21-2m$, and $d=21m^2+21n$. After that, we use the fact that $-20$ and $-21$ are roots of $x^3+ax+b$ and $x^3+cx^2+d$, respectively. Since substituting the roots back into the function returns zero, we have that $(-20)^3-20a+b=0$ and $(-21)^3+c\cdot (-21)^2+d=0$. Setting these two equations equal to each other while also substituting the values of $a$, $b$, $c$, and $d$ above gives us $21m^2+21n-1682m+8000=0$. We then rearrange the equation into $21n = -21m^2+1682m-8000$.
@@ -450,8 +408,6 @@ We start off by applying Vieta's, and we find that $a=m^2+n-40m$, $b=20m^2+20n$,
  With this property, we know that $-21m^2+1682m-8000$ is divisible by $21$, so $1682m-8000=0 \pmod{21}$. This results in $2m-20=0 \pmod{21}$, which finally gives us $m=10 \pmod{21}$. We can test the first obvious value of $m$, which is $10$, to find that this works, and we get $m=10$ and $n=320$. Therefore, the answer is $m + n = 10 + 320 = \boxed{330}.$
 
  
-
-
 
 
 
@@ -473,8 +429,6 @@ We note that $x^3 + ax + b = (x+20)P(x)$ and $x^3 + cx^2 + d = (x+21)Q(x)$ for s
 
 
 
-
-
 \textbf{Solution 5 (Fast and Easy)}
 
 We plug -20 into the equation obtaining $(-20)^3-20a+b$, likewise, plugging -21 into the second equation gets $(-21)^3+441c+d$.
@@ -483,9 +437,7 @@ We plug -20 into the equation obtaining $(-20)^3-20a+b$, likewise, plugging -21 
 
 
 
-
-
-\textbf{Solution 6 (solution by integralarefun)}
+\textbf{Solution 6 (Solution by integralarefun)}
 
 Since $m+i\sqrt{n}$ is a common root and all the coefficients are real, $m-i\sqrt{n}$ must be a common root, too.
 
@@ -504,8 +456,6 @@ Since $m+i\sqrt{n}$ is a common root and all the coefficients are real, $m-i\sqr
  
 
 
-
-
 	\item (\textit{AIME II 2021}) For positive real numbers $s$, let $\tau(s)$ denote the set of all obtuse triangles that have area $s$ and two sides with lengths $4$ and $10$. The set of all $s$ for which $\tau(s)$ is nonempty, but all triangles in $\tau(s)$ are congruent, is an interval $[a,b)$. Find $a^2+b^2$.
 
 
@@ -519,8 +469,6 @@ Since $m+i\sqrt{n}$ is a common root and all the coefficients are real, $m-i\sqr
 We start by defining a triangle. The two small sides MUST add to a larger sum than the long side. We are given $4$ and $10$ as the sides, so we know that the $3$rd side is between $6$ and $14$, exclusive. We also have to consider the word OBTUSE triangles. That means that the two small sides squared is less than the $3$rd side. So the triangles' sides are between $6$ and $\sqrt{84}$ exclusive, and the larger bound is between $\sqrt{116}$ and $14$, exclusive. The area of these triangles are from $0$ (straight line) to $2\sqrt{84}$ on the first "small bound" and the larger bound is between $0$ and $20$. $0 < s < 2\sqrt{84}$ is our first equation, and $0 < s < 20$ is our $2$nd equation. Therefore, the area is between $\sqrt{336}$ and $\sqrt{400}$, so our final answer is $\boxed{736}$.
 
  
-
-
 
 
 
@@ -571,8 +519,6 @@ If $a,b,$ and $c$ are the side-lengths of an obtuse triangle with $a\leq b\leq c
 
 
 
-
-
 \textbf{Solution 3}
 
 We have the diagram below.
@@ -601,16 +547,12 @@ We have the diagram below.
 
 
 
-
-
 \textbf{Solution 4}
 
 Note: Archimedes15 Solution which I added an answerhere are two cases. Either the $4$ and $10$ are around an obtuse angle or the $4$ and $10$ are around an acute triangle. If they are around the obtuse angle, the area of that triangle is $<20$ as we have $\frac{1}{2} \cdot 40 \cdot \sin{\alpha}$ and $\sin$ is at most $1$. Note that for the other case, the side lengths around the obtuse angle must be $4$ and $x$ where we have $16+x^2 < 100 \rightarrow x < 2\sqrt{21}$. Using the same logic as the other case, the area is at most $4\sqrt{21}$. Square and add $4\sqrt{21}$ and $20$ to get the right answer 
  \[a^2+b^2= \boxed{736}\Box\]
 
  
-
-
 
 
 
@@ -650,8 +592,6 @@ For $\triangle ABC,$ we fix $AB=10$ and $BC=4.$ Without the loss of generality, 
 
 
 
-
-
 \textbf{Solution 6}
 
 Let a triangle in $\tau(s)$ be $ABC$, where $AB = 4$ and $BC = 10$. We will proceed with two cases:
@@ -665,8 +605,6 @@ Let a triangle in $\tau(s)$ be $ABC$, where $AB = 4$ and $BC = 10$. We will proc
  Alternatively, refer to Solution 5 for the geometric interpretation.
 
  
-
-
 
 
 
@@ -693,8 +631,6 @@ Let a triangle in $\tau(s)$ be $ABC$, where $AB = 4$ and $BC = 10$. We will proc
 
 
 
-
-
 \textbf{Solution 8}
 
 If $4$ and $10$ are the shortest sides and $\angle C$ is the included angle, then the area is 
@@ -705,8 +641,6 @@ If $4$ and $10$ are the shortest sides and $\angle C$ is the included angle, the
  So, the answer is $20^2+\left(4\sqrt{21}\right)^2=\boxed{736}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2021}) For any finite set $S$, let $|S|$ denote the number of elements in $S$. Find the number of ordered pairs $(A,B)$ such that $A$ and $B$ are (not necessarily distinct) subsets of $\{1,2,3,4,5\}$ that satisfy
@@ -724,8 +658,6 @@ If $4$ and $10$ are the shortest sides and $\angle C$ is the included angle, the
 By PIE, $|A|+|B|-|A \cap B| = |A \cup B|$. Substituting into the equation and factoring, we get that $(|A| - |A \cap B|)(|B| - |A \cap B|) = 0$, so therefore $A \subseteq B$ or $B \subseteq A$. WLOG $A\subseteq B$, then for each element there are $3$ possibilities, either it is in both $A$ and $B$, it is in $B$ but not $A$, or it is in neither $A$ nor $B$. This gives us $3^{5}$ possibilities, and we multiply by $2$ since it could have also been the other way around. Now we need to subtract the overlaps where $A=B$, and this case has $2^{5}=32$ ways that could happen. It is $32$ because each number could be in the subset or it could not be in the subset. So the final answer is $2\cdot 3^5 - 2^5 = \boxed{454}$.
 
  
-
-
 
 
 
@@ -786,8 +718,6 @@ We denote $\Omega = \left\{ 1 , 2 , 3 , 4 , 5 \right\}$.We denote $X = A \cap B$
 
 
 
-
-
 \textbf{Solution 3 (Principle of Inclusion-Exclusion)}
 
 By the \textbf{Principle of Inclusion-Exclusion (abbreviated as PIE)}, we have $|A \cup B|=|A|+|B|-|A \cap B|,$ from which we rewrite the given equation as 
@@ -822,8 +752,6 @@ from which at least one of the following is true:
 
 
 
-
-
 \textbf{Solution 3.1 (Binomial Theorem)}
 
 The answer is 
@@ -834,8 +762,6 @@ The answer is
 
 
 
-
-
 \textbf{Solution 3.2 (Bash)}
 
 The answer is 
@@ -843,8 +769,6 @@ The answer is
 ~MRENTHUSIASM
 
  
-
-
 
 
 
@@ -866,8 +790,6 @@ Proceed with Solution 1 to get $(|A| - |A \cap B|)(|B| - |A \cap B|) = 0$. WLOG,
  
 
 
-
-
 	\item (\textit{AIME II 2021}) Let $a, b, c,$ and $d$ be real numbers that satisfy the system of equations
 
  \begin{align*} a + b &= -3, \\ ab + bc + ca &= -4, \\ abc + bcd + cda + dab &= 14, \\ abcd &= 30. \end{align*}
@@ -887,8 +809,6 @@ There exist relatively prime positive integers $m$ and $n$ such that
 From the fourth equation we get $d=\frac{30}{abc}.$ Substitute this into the third equation and you get $abc + \frac{30(ab + bc + ca)}{abc} = abc - \frac{120}{abc} = 14$. Hence $(abc)^2 - 14(abc)-120 = 0$. Solving, we get $abc = -6$ or $abc = 20$. From the first and second equation, we get $ab + bc + ca = ab-3c = -4 \Longrightarrow ab = 3c-4$. If $abc=-6$, substituting we get $c(3c-4)=-6$. If you try solving this you see that this does not have real solutions in $c$, so $abc$ must be $20$. So $d=\frac{3}{2}$. Since $c(3c-4)=20$, $c=-2$ or $c=\frac{10}{3}$. If $c=\frac{10}{3}$, then the system $a+b=-3$ and $ab = 6$ does not give you real solutions. So $c=-2$. Since you already know $d=\frac{3}{2}$ and $c=-2$, so you can solve for $a$ and $b$ pretty easily and see that $a^{2}+b^{2}+c^{2}+d^{2}=\frac{141}{4}$. So the answer is $\boxed{145}$.
 
  
-
-
 
 
 
@@ -924,8 +844,6 @@ Note that $ab + bc + ca = -4$ can be rewritten as $ab + c(a+b) = -4$. Hence, $ab
 
 
 
-
-
 \textbf{Solution 3}
 
 For simplicity purposes, we number the given equations $(1),(2),(3),$ and $(4),$ in that order.
@@ -948,8 +866,6 @@ If $ab=6,$ then combining this with $(1),$ we know that $a$ and $b$ are the solu
 
 
 
-
-
 \textbf{Solution 4 (Way Too Long)}
 
 Let the four equations from top to bottom be listed 1 through 4 respectively. We factor equation 3 like so: 
@@ -961,8 +877,6 @@ Let the four equations from top to bottom be listed 1 through 4 respectively. We
 
 
 
-
-
 \textbf{Solution 5}
 
 Let the four equations from top to bottom be listed $(1)$ through $(4)$ respectively. Multiplying both sides of $(3)$ by $d$ and factoring some terms gives us $abcd + d^2(ab + ac + bc) = 14d$. Substituting using equations $(4)$ and $(2)$ gives us $30 -4 d^2 = 14d$, and solving gives us $d = -5$ or $d = \frac{3}{2}$. Plugging this back into $(3)$ gives us $abc + d(ab + ac + bc) = abc + (-5)(-4) = abc + 20 = 14$, or using the other solution for $d$ gives us $abc - 6 = 14$. Solving both of these equations gives us $abc = -6$ when $d = -5$ and $abc = 20$ when $d = \frac{3}{2}$. 
@@ -970,8 +884,6 @@ Let the four equations from top to bottom be listed $(1)$ through $(4)$ respecti
  Multiplying both sides of $(2)$ by $c$ and factoring some terms gives us $abc + c^2 (a + b) = abc -3c^2 = -4c$. Testing $abc = -6$ will give us an imaginary solution for $c$, so therefore $abc = 20$ and $d = \frac{3}{2}$. This gets us $20 - 3c^2 = -4c$. Solving for $c$ gives us $c = \frac{3}{10}$ or $c = -2$. With a bit of testing, we can see that the correct value of $c$ is $c=-2$. Now we know $a+b = -3$ and $ab + bc + ca = ab + c(a+b) = ab + 6 = -4$, $ab = -10$, and it is obvious that $a = -5$ and $b = 2$ or the other way around, and therefore, $a^2 + b^2 + c^2 + d^2 = 25 + 4 + 4 + \frac{9}{4} = \frac{141}{4}$, giving us the answer $141 + 4 = \boxed{145}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2021}) An ant makes a sequence of moves on a cube where a move consists of walking from one vertex to an adjacent vertex along an edge of the cube. Initially the ant is at a vertex of the bottom face of the cube and chooses one of the three adjacent vertices to move to as its first move. For all moves after the first move, the ant does not return to its previous vertex, but chooses to move to one of the other two adjacent vertices. All choices are selected at random so that each of the possible moves is equally likely. The probability that after exactly $8$ moves that ant is at a vertex of the top face on the cube is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
@@ -1048,8 +960,6 @@ Using these equations, we recursively fill out the table below:
 
 
 
-
-
 \textbf{Solution 2 (Markov Chain and Dynamic Programming)}
 
 Let the state from bottom to top be $B2T,$ from top to top be $T2T,$ from top to bottom be $T2B,$ and from bottom to bottom be $B2B.$ We can draw the following State Transition Diagram with \href{https://en.wikipedia.org/wiki/Markov\_chain}{Markov Chain}. The numbers on the transition arc are the transition probabilities. 
@@ -1068,8 +978,6 @@ Those probabilities are calculated by \href{https://en.wikipedia.org/wiki/Dynami
 
 
 
-
-
 \textbf{Solution 3 (One-Variable Recursion)}
 
 Note that we don't care which exact vertex the ant is located at, just which level (either top face or bottom face).Consider the ant to be on any of the two levels and having moved at least one move. Define $p_i$ to be the probability that after $i$ moves, the ant ends up on the level it started on.
@@ -1082,8 +990,6 @@ Note that we don't care which exact vertex the ant is located at, just which lev
  Computing $p_i$ with the starting conditions $p_0 = 1$ and $p_1 = \frac{1}{2}$, we obtain $p_6 = \frac{33}{64}$ and $p_7 = \frac{59}{128}$. Hence $P = \frac{2}{3}(1 - p_7) + \frac{1}{3}p_6= \frac{17}{32}$ as desired; $\boxed{049}$.
 
  
-
-
 
 
 
@@ -1106,8 +1012,6 @@ On each move, we can either stay on the level we previously were (stay on the bo
             Our probability is then $\frac{176 + 28}{3 \cdot 2^7} = \frac{17}{32}$, so the answer is $17+32=\boxed{049}$.
 
  
-
-
 
 
 
@@ -1134,15 +1038,15 @@ Let $p(n)$ be the probability that we are on the top when you get to the $n$th m
 
 
 
-
-
 \textbf{Solution 6 (Casework)}
 
 Illustration as
 
  \begin{verbatim}
 T3\_\_\_\_\_\_\_\_\_T4|\          |\| \         | \|  \        |  \|  T2\_\_\_\_\_\_\_\_\_\_\_T1|   |       |   |B3\_ | \_\_\_\_\_B4   |\   |        \  | \  |         \ |  \ |          \|   \B2\_\_\_\_\_\_\_\_\_\_B1
-\end{verbatim}WLOG we assume the ant starts from B1. After 8 moves, it will arrive on one of T2, T4, B1 and B3. And apparently T2/T4/B1 has the same possibility. In the other word, if we can find out the possibililty of arrival of $P(B1)$, $P(T2)=P(T4)=P(B3)=\frac{1}{3} (1-P(B1))$
+\end{verbatim}
+
+WLOG we assume the ant starts from B1. After 8 moves, it will arrive on one of T2, T4, B1 and B3. And apparently T2/T4/B1 has the same possibility. In the other word, if we can find out the possibililty of arrival of $P(B1)$, $P(T2)=P(T4)=P(B3)=\frac{1}{3} (1-P(B1))$
 
  After 8 moves, there are $3\times 2^7$ cases. Now we consider the cases the ant can arrive B1.
 
@@ -1202,8 +1106,6 @@ T3\_\_\_\_\_\_\_\_\_T4|\          |\| \         | \|  \        |  \|  T2\_\_\_\_
  
 
 
-
-
 	\item (\textit{AIME II 2021}) Find the number of ordered pairs $(m, n)$ such that $m$ and $n$ are positive integers in the set $\{1, 2, ..., 30\}$ and the greatest common divisor of $2^m + 1$ and $2^n - 1$ is not $1$.
 
 
@@ -1233,8 +1135,6 @@ which implies that $n$ must have more factors of $2$ than $m$ does.
  \item If $m$ has $3$ factors of $2,$ then $m$ has $2$ options and $n$ has $1$ option. So, this case has $2\cdot1=2$ ordered pairs.</ol>Together, the answer is $225+56+12+2=\boxed{295}.$
 
  
-
-
 
 
 
@@ -1270,110 +1170,11 @@ Since $u^{\gcd(a,b)}-1$ is a common divisor of $u^a-1$ and $u^b-1,$ we conclude 
  
 
 
-
-
 	\item (\textit{AIME II 2021}) Two spheres with radii $36$ and one sphere with radius $13$ are each externally tangent to the other two spheres and to two different planes $\mathcal{P}$ and $\mathcal{Q}$. The intersection of planes $\mathcal{P}$ and $\mathcal{Q}$ is the line $\ell$. The distance from line $\ell$ to the point where the sphere with radius $13$ is tangent to plane $\mathcal{P}$ is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
  
  \textbf{Answer: }335
-
-
-
-\textbf{Solution 1 (Similar Triangles and Pythagorean Theorem)}
-
-This solution refers to the \textbf{Diagram} section.
-
- As shown below, let $O_1,O_2,O_3$ be the centers of the spheres (where sphere $O_3$ has radius $13$) and $T_1,T_2,T_3$ be their respective points of tangency to plane $\mathcal{P}.$ Let $\mathcal{R}$ be the plane that is determined by $O_1,O_2,$ and $O_3.$ Suppose $A$ is the foot of the perpendicular from $O_3$ to line $\ell,$ so $\overleftrightarrow{O_3A}$ is the perpendicular bisector of $\overline{O_1O_2}.$ We wish to find $T_3A.$
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_10_Solution_Figure_1.png}
-                    \end{figure}
-                    Note that:
-
- <ol style="margin-left: 1.5em;"> \item In $\triangle O_1O_2O_3,$ we get $O_1O_2=72$ and $O_1O_3=O_2O_3=49.$ 
-
- \item Both $\triangle O_1O_2O_3$ and $\overline{O_3A}$ lie in plane $\mathcal{R}.$ Both $\triangle T_1T_2T_3$ and $\overline{T_3A}$ lie in plane $\mathcal{P}.$ 
-
- \item By symmetry, since planes $\mathcal{P}$ and $\mathcal{Q}$ are reflections of each other about plane $\mathcal{R},$ the three planes are concurrent to line $\ell.$ 
-
- \item Since $\overline{O_1T_1}\perp\mathcal{P}$ and $\overline{O_3T_3}\perp\mathcal{P},$ it follows that $\overline{O_1T_1}\parallel\overline{O_3T_3},$ from which $O_1,O_3,T_1,$ and $T_3$ are coplanar.
-
- </ol>Now, we focus on cross-sections $O_1O_3T_3T_1$ and $\mathcal{R}:$
-
- <ol style="margin-left: 1.5em;"> <li><i>\textbf{In the three-dimensional space, the intersection of a line and a plane must be exactly one of the empty set, a point, or a line.}</i>Clearly, cross-section $O_1O_3T_3T_1$ intersects line $\ell$ at exactly one point. Furthermore, as the intersection of planes $\mathcal{R}$ and $\mathcal{P}$ is line $\ell,$ we conclude that $\overrightarrow{O_1O_3}$ and $\overrightarrow{T_1T_3}$ must intersect line $\ell$ at the same point. Let $B$ be the point of concurrency of $\overrightarrow{O_1O_3},\overrightarrow{T_1T_3},$ and line $\ell.$
-
- </li> \item In cross-section $\mathcal{R},$ let $C$ be the foot of the perpendicular from $O_1$ to line $\ell,$ and $D$ be the foot of the perpendicular from $O_3$ to $\overline{O_1C}.$
-
- </ol>We have the following diagram:
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_10_Solution_Figure_2.png}
-                    \end{figure}
-                    In cross-section $O_1O_3T_3T_1,$ since $\overline{O_1T_1}\parallel\overline{O_3T_3}$ as discussed, we obtain $\triangle O_1T_1B\sim\triangle O_3T_3B$ by AA, with the ratio of similitude $\frac{O_1T_1}{O_3T_3}=\frac{36}{13}.$ Therefore, we get $\frac{O_1B}{O_3B}=\frac{49+O_3B}{O_3B}=\frac{36}{13},$ or $O_3B=\frac{637}{23}.$
-
- In cross-section $\mathcal{R},$ note that $O_1O_3=49$ and $DO_3=\frac{O_1O_2}{2}=36.$ Applying the Pythagorean Theorem to right $\triangle O_1DO_3,$ we have $O_1D=\sqrt{1105}.$ Moreover, since $\ell\perp\overline{O_1C}$ and $\overline{DO_3}\perp\overline{O_1C},$ we obtain $\ell\parallel\overline{DO_3}$ so that $\triangle O_1CB\sim\triangle O_1DO_3$ by AA, with the ratio of similitude $\frac{O_1B}{O_1O_3}=\frac{49+\frac{637}{23}}{49}.$ Therefore, we get $\frac{O_1C}{O_1D}=\frac{\sqrt{1105}+DC}{\sqrt{1105}}=\frac{49+\frac{637}{23}}{49},$ or $DC=\frac{13\sqrt{1105}}{23}.$
-
- Finally, note that $\overline{O_3T_3}\perp\overline{T_3A}$ and $O_3T_3=13.$ Since quadrilateral $DCAO_3$ is a rectangle, we have $O_3A=DC=\frac{13\sqrt{1105}}{23}.$ Applying the Pythagorean Theorem to right $\triangle O_3T_3A$ gives $T_3A=\frac{312}{23},$ from which the answer is $312+23=\boxed{335}.$
-
- 
-
-
-
-
-
-\textbf{Solution 2 (Pythagorean Theorem)}
-
-The centers of the three spheres form a $49$-$49$-$72$ triangle. Consider the points at which the plane is tangent to the two bigger spheres; the line segment connecting these two points should be parallel to the $72$ side of this triangle. Take its midpoint $M$, which is $36$ away from the midpoint $A$ of the $72$ side, and connect these two midpoints.
-
- Now consider the point at which the plane is tangent to the small sphere, and connect $M$ with the small sphere's tangent point $B$. Extend $\overline{MB}$ through $B$ until it hits the ray from $A$ through the center of the small sphere (convince yourself that these two intersect). Call this intersection $D$, the center of the small sphere $C$, we want to find $BD$.
-
- By Pythagoras, $AC=\sqrt{49^2-36^2}=\sqrt{1105}$, and we know that $MA=36$ and $BC=13$. We know that $\overline{MA}$ and $\overline{BC}$ must be parallel, using ratios we realize that $CD=\frac{13}{23}\sqrt{1105}$. Apply the Pythagorean theorem to $\triangle BCD$, $BD=\frac{312}{23}$, so $312 + 23 = \boxed{335}$.
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Proportion)}
-
-This solution refers to the \textbf{Diagram} section.
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_10_Solution_Figure_3.png}
-                    \end{figure}
-                    The isosceles triangle of centers $O_1 O_2 O$ ($O$ is the center of sphere of radii $13$) has sides  $O_1 O = O_2 O = 36 + 13 = 49,$ and  $O_1 O_2 = 36 + 36 = 72.$ 
-
- Let $N$ be the midpoint  $O_1 O_2$.
-
- The isosceles triangle of points of tangency $T_1 T_2 T$  has sides $T_1 T = T_2 T = 2 \sqrt{13 \cdot 36} = 12 \sqrt{13}$ and $T_1 T_2 = 72.$ 
-
- Let $M$ be the midpoint $T_1 T_2.$
-
- The height $TM$  is $\sqrt {12^2 \cdot 13 - 36^2} = 12 \sqrt {13-9} = 24.$
-
- The tangents of the half-angle between the planes is $\frac {TO}{AT} = \frac {MN - TO}{TM},$ so $\frac {13}{AT} = \frac {36 - 13}{24},$ 
- \[AT = \frac{24\cdot 13}{23} = \frac {312}{23} \implies  312 + 23 = \boxed{335}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Coordinate Geometry)}
-
-Let the centers of the spheres be $O_1,O_2,O_3$. We establish a 3D coordinate system with $\mathcal{P}$ being the $x-y$ plane, and here is our setup:\begin{align*}O_1&=(0,-36,36)\\O_2&=(0,36,36)\\O_3&=(x_1,0,13)\end{align*}
-By the distance formula, 
- \[x_{1}^{2}+36^2+23^2=49^2\implies x_{1}=24.\]Let the equation of $\mathcal{Q}$ be $ax+by+cz+d=0$. WLOG, we can assume $\sqrt{a^{2}+b^{2}+c^2}=1$. Applying the distance formula on the $3$ centers yields the system\begin{align*}\lvert -36b+36c+d\rvert=36\\\lvert 36b+36c+d\rvert=36\\\lvert 24a+13c+d\rvert=13\end{align*}
-By symmetry, $\mathcal{Q}$ is parallel to the $y$-axis, hence $b=0$. Furthermore, since all spheres lie entirely on one side of $\mathcal{Q}$, we can choose the direction of the normal vector such that the inner expressions are positive. Dropping the absolute values gives\begin{align*}36c+d=36\\24a+13c+d=13\\a^{2}+c^{2}=1\end{align*}
-Solving yields $a=-\frac{1104}{1105},c=-\frac{47}{1105},d=\frac{41472}{1105}$.To find the intersection line $\ell$ between $\mathcal{Q}$ and $\mathcal{P}$, we set $z=0$, which gives the equation $x=-\frac{d}{a}=\frac{864}{23}$. The small sphere touches $\mathcal{P}$ at $(24,0,0)$. The distance from this point of tangency to $\ell$ is thus 
- \[\frac{864}{23}-24=\frac{312}{23}\]The requested sum is $312+23=\boxed{335}$.
-
- 
-
-
 
 
 	\item (\textit{AIME II 2021}) A teacher was leading a class of four perfectly logical students. The teacher chose a set $S$ of four integers and gave a different number in $S$ to each student. Then the teacher announced to the class that the numbers in $S$ were four consecutive two-digit positive integers, that some number in $S$ was divisible by $6$, and a different number in $S$ was divisible by $7$. The teacher then asked if any of the students could deduce what $S$ is, but in unison, all of the students replied no.
@@ -1412,8 +1213,6 @@ Note that $\operatorname{lcm}(6,7)=42.$ It is clear that $42\not\in S$ and $84\n
 
 
 
-
-
 \textbf{Solution 2}
 
 We know right away that $42\not\in S$ and $84\not\in S$ as stated in Solution 1.
@@ -1423,8 +1222,6 @@ We know right away that $42\not\in S$ and $84\not\in S$ as stated in Solution 1.
  Now we read the student input. Each student says they can’t figure out what $S$ is just based on the teacher’s information, which means each student has to have a number that would be in 2 or 3 of the possible sets (This is based off of the first line of student input). However, now that each student knows that all of them have numbers that fit into more than one possible set, this means that S cannot have two possible sets because otherwise, when shifting from one set to the other, one of the end numbers would not be in the shifted set, but we know each number has to fall in two or more possible sets. For example, take $\{11,12,13,14\}$ and $\{12,13,14,15\}$. The numbers at the end, 11 and 15, only fall in one set, but each number must fall in at least two sets. This means that there must be three possible sets of S, in which case the actual S would be the middle S.Take for example $\{33,34,35,36\}$, $\{34,35,36,37\}$, and $\{35,36,37,38\}$. 37 and 34 fall in two sets while 35 and 36 fall in all three sets, so the condition is met. Now, this means that the multiple of 6 and 7 must differ by 1. Since 42 means the difference is 0, when you add/subtract 6 and 7, you will obtain the desired difference of 1, and similarly adding/subtracting 6 or 7 from 84 will also obtain the difference of 1. Thus there are four possible sets of $S$; $\{34,35,36,37\}$, $\{47,48,49,50\}$, $\{76,77,78,79\}$ and $\{89,90,91,92.\}$. Therefore the sum of the greatest elements of the possible sets $S$ is $37+50+79+92=\boxed{258}$
 
  
-
-
 
 
 
@@ -1448,8 +1245,6 @@ In a solution that satisfies these constraints, the multiple of 6 must be adjace
 
 
 
-
-
 \textbf{Solution 4 (Logic)}
 
 Consider the tuple $(a, a+1, a+2, a+3)$ as a possible $S$. If one of the values in $S$ is $3$ or $4 \pmod{7}$, observe the student will be able to deduce $S$ with no additional information. This is because, if a value is $b = 3 \pmod{7}$ and $S$ contains a $0 \pmod{7}$, then the values of $S$ must be $(b-3, b-2, b-1, b)$. Similarly, if we are given a $b \equiv 4 \pmod{7}$ and we know that $0 \pmod{7}$ is in $S$, $S$ must be $(b, b+1, b+2, b+3).$ Hence, the only possibility for $a$ is $5, 6 \pmod{7}.$
@@ -1468,8 +1263,6 @@ Consider the tuple $(a, a+1, a+2, a+3)$ as a possible $S$. If one of the values 
 
 
 
-
-
 \textbf{Solution 5 (THINK)}
 
 Start by writing down every two-digit multiple of $6$ and $7$. First, $42$ and $84$ will not be in $S$ because we need two distinct numbers where one is a multiple of $6$ and ANOTHER is a multiple of $7$. Furthermore, it is clear at this point that if the multiples of $6$ and $7$ are exactly $3$ apart, then it will be obvious what $S$ is; it is just the smaller multiple to the larger multiple. Therefore, we cross out numbers $18, 21, 24, 60, 63, 66$. 
@@ -1478,9 +1271,7 @@ Start by writing down every two-digit multiple of $6$ and $7$. First, $42$ and $
 
  Specifically, these are pairs $(35, 36), (48, 49), (77, 78),$ and $(90, 91)$. In each of these pairs, respectively, the largest number will be one greater than the larger multiple, namely $37, 50, 79, 92$. Therefore, our answer is $37 + 50 + 79 + 92 = \boxed{258}$. 
 
- \textbf{Animated Solution by Interstigation} 
-
-
+ 
 
 
 	\item (\textit{AIME II 2021}) A convex quadrilateral has area $30$ and side lengths $5, 6, 9,$ and $7,$ in that order. Denote by $\theta$ the measure of the acute angle formed by the diagonals of the quadrilateral. Then $\tan \theta$ can be written in the form $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -1517,8 +1308,6 @@ From here we see that $\cos \theta = \frac{21/2}{ab + bc + cd + da}$.
 
 
 
-
-
 \textbf{Solution 2 (Right Triangles)}
 
 In convex quadrilateral $ABCD,$ let $AB=5,BC=6,CD=9,$ and $DA=7.$ Let $A'$ and $C'$ be the feet of the perpendiculars from $A$ and $C,$ respectively, to $\overline{BD}.$ We obtain the following diagram:
@@ -1540,8 +1329,6 @@ from which the answer is $40+7=\boxed{047}.$
 
 
 
-
-
 \textbf{Solution 3 (Bretschneider's Formula)}
 
 \textbf{Bretschneider's Formula} 
@@ -1556,8 +1343,6 @@ from which the answer is $40+7=\boxed{047}.$
 
 
 
-
-
 \textbf{Solution}
 
 By Bretschneider's Formula, 
@@ -1566,8 +1351,6 @@ By Bretschneider's Formula,
  \[\tan{\theta}=\frac{\sin{\theta}}{\cos{\theta}}=\frac{40}{7},\] for a final answer of $\boxed{047}$. 
 
  
-
-
 
 
 
@@ -1609,8 +1392,6 @@ By Bretschneider's Formula,
  
 
 
-
-
 	\item (\textit{AIME II 2021}) Find the least positive integer $n$ for which $2^n + 5^n - n$ is a multiple of $1000$.
 
 
@@ -1643,8 +1424,6 @@ Recall that $1000$ divides this expression if $8$ and $125$ both divide it. It s
 
 
 
-
-
 \textbf{Solution 2}
 
 We have that $2^n + 5^n \equiv n\pmod{1000}$, or $2^n + 5^n \equiv n \pmod{8}$ and $2^n + 5^n \equiv n \pmod{125}$ by CRT. It is easy to check $n < 3$ don't work, so we have that $n \geq 3$. Then, $2^n \equiv 0 \pmod{8}$ and $5^n \equiv 0 \pmod{125}$, so we just have $5^n \equiv n \pmod{8}$ and $2^n \equiv n \pmod{125}$. Let us consider both of these congruences separately.
@@ -1656,8 +1435,6 @@ We have that $2^n + 5^n \equiv n\pmod{1000}$, or $2^n + 5^n \equiv n \pmod{8}$ a
  Now, we are finally ready to plug $n$ into the congruence modulo $125$. Plugging in, we get $2^{200s-3} \equiv 200s - 3 \pmod{125}$. By ETT, we get $2^{100} \equiv 1 \pmod{125}$, so $2^{200s- 3} \equiv 2^{-3} \equiv 47 \pmod{125}$. Then, $200s \equiv 50 \pmod{125} \implies s \equiv 4 \pmod{5} \implies s = 5y+4$. Plugging this in, we get $n = 200(5y+4) - 3 = 1000y+797$, implying the smallest value of $n$ is simply $\boxed{797}$. 
 
  
-
-
 
 
 
@@ -1692,8 +1469,6 @@ Since $125\equiv0\pmod{5},$ it follows that
 
 
 
-
-
 \textbf{Solution 4 (Minimal Computation)}
 
 
@@ -1702,8 +1477,6 @@ Since $125\equiv0\pmod{5},$ it follows that
  \[2^{197+200k} \equiv 2^{197} \equiv 2^{-3} \equiv \underbrace{47}_{\text{Extended Euclidean Algorithm}}\pmod{125}\]Easy to check that only $\boxed{797}\equiv 47\pmod{125},{1797}\equiv 47\pmod{125},{2797}\equiv 47\pmod{125},...$
 
  
-
-
 
 
 
@@ -1763,8 +1536,6 @@ If $n = 5^k,$ then $n > k,$ each term is  a multiple of $5n$.
 
 
 
-
-
 \textbf{Solution 6 (Art of Enumeration)}
 
 Problem require us to find minimum $n$ where $2^n + 5^n - n$ is a multiple of $1000$.
@@ -1811,13 +1582,7 @@ Problem require us to find minimum $n$ where $2^n + 5^n - n$ is a multiple of $1
 
  $119{,}975{,}745{,}111{,}650{,}476{,}385{,}411{,}555{,}010{,}245{,}228{,}283{,}196{,}935{,}699{,}128{,}663{,}834{,}$$986{,}755{,}809{,}416{,}868{,}468{,}175{,}224{,}221{,}677{,}450{,}271{,}793{,}186{,}899{,}399{,}171{,}810{,}240{,}$$468{,}879{,}630{,}691{,}320{,}210{,}517{,}618{,}332{,}910{,}064{,}430{,}017{,}422{,}410{,}572{,}497{,}874{,}327{,}$$116{,}662{,}273{,}049{,}144{,}209{,}532{,}072{,}513{,}248{,}821{,}826{,}125{,}454{,}909{,}131{,}367{,}242{,}561{,}$$087{,}064{,}439{,}357{,}641{,}814{,}942{,}784{,}478{,}465{,}638{,}163{,}997{,}895{,}630{,}266{,}780{,}260{,}171{,}$$070{,}180{,}244{,}384{,}687{,}160{,}174{,}154{,}618{,}815{,}254{,}719{,}975{,}476{,}350{,}789{,}415{,}969{,}908{,}$$281{,}131{,}044{,}034{,}581{,}864{,}573{,}596{,}962{,}567{,}993{,}948{,}922{,}431{,}587{,}652{,}735{,}290{,}158{,}$$293{,}666{,}986{,}616{,}531{,}419{,}688{,}663{,}485{,}548{,}648{,}995{,}509{,}247{,}893{,}796{,}528{,}146{,}109{,}$$144{,}143{,}744{,}650{,}882{,}271{,}050{,}771{,}309{,}301{,}498{,}467{,}898{,}226{,}649{,}089{,}924{,}520{,}539{,}$$820{,}344{,}035{,}886{,}481{,}987{,}499{,}589{,}845{,}734{,}228{,}834{,}491{,}187.$
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
- Did not use any advanced method, easily understandable:
-
  
-
-
 
 
 	\item (\textit{AIME II 2021}) Let $\Delta ABC$ be an acute triangle with circumcenter $O$ and centroid $G$. Let $X$ be the intersection of the line tangent to the circumcircle of $\Delta ABC$ at $A$ and the line perpendicular to $GO$ at $G$. Let $Y$ be the intersection of lines $XG$ and $BC$. Given that the measures of $\angle ABC, \angle BCA,$ and $\angle XOY$ are in the ratio $13 : 2 : 17,$ the degree measure of $\angle BAC$ can be written as $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1858,15 +1623,11 @@ Finally, we obtain $\angle BAC=13k=\frac{585}{7},$ from which the answer is $585
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $M$ be the midpoint of $BC$. Because $\angle{OAX}=\angle{OGX}=\angle{OGY}=\angle{OMY}=90^o$, $AXOG$ and $OMYG$ are cyclic, so $O$ is the center of the spiral similarity sending $AM$ to $XY$, and $\angle{XOY}=\angle{AOM}$. Because $\angle{AOM}=2\angle{BCA}+\angle{BAC}$, it's easy to get $\frac{585}{7} \implies \boxed{592}$ from here.
 
  
-
-
 
 
 
@@ -1880,8 +1641,6 @@ Firstly, let $M$ be the midpoint of $BC$. Then, $\angle OMB = 90^o$. Now, note t
  \[\angle BAC = 180 - 15 \alpha = 180 \cdot \left(1 - \frac{15}{28}\right) = 180 \cdot \frac{13}{28} = \frac{585}{7},\] so our final answer is $585+7=\boxed{592}$.
 
  
-
-
 
 
 
@@ -1940,8 +1699,6 @@ Firstly, let $M$ be the midpoint of $BC$. Then, $\angle OMB = 90^o$. Now, note t
 
 
 
-
-
 \textbf{Solution 5}
 
 Extend $XA$ and meet line $CB$ at $P$. Extend $AG$ to meet $BC$ at $F$. Since $AF$ is the median from $A$ to $BC$, $A,G,F$ are collinear. Furthermore, $OF$ is perpendicular to $BC$
@@ -1949,8 +1706,6 @@ Extend $XA$ and meet line $CB$ at $P$. Extend $AG$ to meet $BC$ at $F$. Since $A
  Draw the circumcircle of $\triangle{XPY}$, as $OA\bot XP, OG\bot XY, OF\bot PY$, $A,G,F$ are collinear, $O$ lies on the circumcircle of $\triangle{XPY}$ as $AGF$ is the Simson line of $\triangle{XPY}$. Thus, $\angle{P}=180-17x, \angle{PAB}=\angle{C}=2x, 180-15x=13x, x=\frac{45}{7}$, the answer is $180-15\cdot \frac{45}{7}=\frac{585}{7}$ which is $\boxed{592}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2021}) Let $f(n)$ and $g(n)$ be functions satisfying
@@ -1969,11 +1724,185 @@ for positive integers $n$. Find the least positive integer $n$ such that $\frac{
 
 \textbf{Solution 1}
 
-Consider what happens when we try to calculate $f(n)$ where n is not a square. If $k^2<n<(k+1)^2$ for (positive) integer k, recursively calculating the value of the function gives us $f(n)=(k+1)^2-n+f((k+1)^2)=k^2+3k+2-n$. Note that this formula also returns the correct value when $n=(k+1)^2$, but not when $n=k^2$. Thus $f(n)=k^2+3k+2-n$ for 
+Consider what happens when we try to calculate $f(n)$ where n is not a square. If $k^2<n<(k+1)^2$ for (positive) integer k, recursively calculating the value of the function gives us $f(n)=(k+1)^2-n+f((k+1)^2)=k^2+3k+2-n$. Note that this formula also returns the correct value when $n=(k+1)^2$, but not when $n=k^2$. Thus $f(n)=k^2+3k+2-n$ for $k^2<n \leq (k+1)^2$.
+
+ If $2 \mid (k+1)^2-n$, $g(n)$ returns the same value as $f(n)$. This is because the recursion once again stops at $(k+1)^2$. We seek a case in which $f(n)<g(n)$, so obviously this is not what we want. We want $(k+1)^2,n$ to have a different parity, or $n, k$ have the same parity. When this is the case, $g(n)$ instead returns $(k+2)^2-n+g((k+2)^2)=k^2+5k+6-n$.
+
+ Write $7f(n)=4g(n)$, which simplifies to $3k^2+k-10=3n$. Notice that we want the LHS expression to be divisible by 3; as a result, $k \equiv 1 \pmod{3}$. We also want n to be strictly greater than $k^2$, so $k-10>0, k>10$. The LHS expression is always even (since $3k^2+k-10$ factors to $k(3k+1)-10$, and one of $k$ and $3k+1$ will be even), so to ensure that $k$ and $n$ share the same parity, $k$ should be even. Then the least $k$ that satisfies these requirements is $k=16$, giving $n=258$.
+
+ Indeed - if we check our answer, it works. Therefore, the answer is $\boxed{258}$.
+
+ -Ross Gao
 
  
 
 
+
+\textbf{Solution 2 (Four Variables)}
+
+We consider $f(n)$ and $g(n)$ separately:
+
+ <ul style="list-style-type:square;"> <li>$\boldsymbol{f(n)}$We restrict $n$ in which $k^2<n\leq(k+1)^2$ for some positive integer $k,$ or 
+ \[n=(k+1)^2-p\hspace{40mm}(1)\] for some integer $p$ such that $0\leq p<2k+1.$ By recursion, we get
+ \begin{align*} f\left((k+1)^2\right)&=k+1, \\ f\left((k+1)^2-1\right)&=k+2, \\ f\left((k+1)^2-2\right)&=k+3, \\ & \ \vdots \\ f\bigl(\phantom{ }\underbrace{(k+1)^2-p}_{n}\phantom{ }\bigr)&=k+p+1. \hspace{19mm}(2) \\ \end{align*}
+
+
+ </li> 
+
+ <li>$\boldsymbol{g(n)}$If $n$ and $(k+1)^2$ have the same parity, then we get $g(n)=f(n)$ by a similar process from $g\left((k+1)^2\right)=k+1.$ This contradicts the precondition $\frac{f(n)}{g(n)} = \frac{4}{7}.$ Therefore, $n$ and $(k+1)^2$ must have different parities, from which $n$ and $(k+2)^2$ must have the same parity. 
+
+ It follows that $k^2<n<(k+2)^2,$ or 
+ \[n=(k+2)^2-2q\hspace{38.25mm}(3)\] for some integer $q$ such that $0<q<2k+2.$ By recursion, we get
+ \begin{align*} g\left((k+2)^2\right)&=k+2, \\ g\left((k+2)^2-2\right)&=k+4, \\ g\left((k+2)^2-4\right)&=k+6, \\ & \ \vdots \\ g\bigl(\phantom{ }\underbrace{(k+2)^2-2q}_{n}\phantom{ }\bigr)&=k+2q+2. \hspace{15.5mm}(4) \\ \end{align*}
+
+
+ </li> 
+
+ <li>\textbf{Answer}By $(2)$ and $(4),$ we have 
+ \[\frac{f(n)}{g(n)}=\frac{k+p+1}{k+2q+2}=\frac{4}{7}. \hspace{27mm}(5)\]From $(1)$ and $(3),$ equating the expressions for $n$ gives $(k+1)^2-p=(k+2)^2-2q.$ Solving for $k$ produces 
+ \[k=\frac{2q-p-3}{2}. \hspace{41.25mm}(6)\]We substitute $(6)$ into $(5),$ then simplify, cross-multiply, and rearrange:
+ \begin{align*} \frac{\frac{2q-p-3}{2}+p+1}{\frac{2q-p-3}{2}+2q+2}&=\frac{4}{7} \\ \frac{p+2q-1}{-p+6q+1}&=\frac{4}{7} \\ 7p+14q-7&=-4p+24q+4 \\ 11p-11&=10q \\ 11(p-1)&=10q. \hspace{29mm}(7) \end{align*}
+Since $\gcd(11,10)=1,$ we know that $p-1$ must be divisible by $10,$ and $q$ must be divisible by $11.$ 
+
+  Recall that the restrictions on $(1)$ and $(2)$ are $0\leq p<2k+1$ and $0<q<2k+2,$ respectively. Substituting $(6)$ into either inequality gives $p+1<q.$ Combining all these results produces 
+ \[0<p+1<q<2k+2. \hspace{28mm}(8)\]To minimize $n$ in either $(1)$ or $(3),$ we minimize $k,$ so we minimize $p$ and $q$ in $(8).$ From $(6)$ and $(7),$ we construct the following table:
+ \[\begin{array}{c|c|c|c} & & & \\ [-2.5ex] \boldsymbol{p} & \boldsymbol{q} & \boldsymbol{k} & \textbf{Satisfies }\boldsymbol{(8)?} \\ [0.5ex] \hline & & & \\ [-2ex] 11 & 11 & 4 & \\ 21 & 22 & 10 & \\ 31 & 33 & 16 & \checkmark \\ \geq41 & \geq44 & \geq22 & \checkmark \\ \end{array}\]Finally, we have $(p,q,k)=(31,33,16).$ Substituting this result into either $(1)$ or $(3)$ generates $n=\boxed{258}.$
+
+ </li> 
+
+ <li>\textbf{Remark}We can verify that 
+ \[\frac{f(258)}{g(258)}=\frac{1\cdot31+f(258+1\cdot31)}{2\cdot33+g(258+2\cdot33)}=\frac{31+\overbrace{f(289)}^{17}}{66+\underbrace{g(324)}_{18}}=\frac{48}{84}=\frac47.\]
+
+ </li>
+
+ </ul>
+
+
+
+\textbf{Solution 3}
+
+Since $n$ isn't a perfect square, let $n=m^2+k$ with $0<k<2m+1$. If $k$ is odd, then $f(n)=g(n)$. If $k$ is even, then
+ \begin{align*} f(n)&=(m+1)^2-(m^2+k)+(m+1)=3m+2-k, \\ g(n)&=(m+2)^2-(m^2+k)+(m+2)=5m+6-k, \end{align*}
+from which
+ \begin{align*} 7(3m+2-k)&=4(5m+6-k) \\ m&=3k+10. \end{align*}
+Since $k$ is even, $m$ is even. Since $k\neq 0$, the smallest $k$ is $2$ which produces the smallest $n$: 
+ \[k=2 \implies m=16 \implies n=16^2+2=\boxed{258}.\]~Afo
+
+ 
+
+
+
+\textbf{Solution 4 (Quadratics With Two Variables)}
+
+To begin, note that if $n$ is a perfect square, $f(n)=g(n)$, so $f(n)/g(n)=1$, so we must look at values of $n$ that are not perfect squares (what a surprise). First, let the distance between $n$ and the first perfect square greater than or equal to it be $k$, making the values of $f(n+k)$ and $g(n+k)$ integers. Using this notation, we see that $f(n)=k+f(n+k)$, giving us a formula for the numerator of our ratio. However, since the function of $g(n)$ does not add one to the previous inputs in the function until a perfect square is achieved, but adds values of two, we can not achieve the value of $\sqrt{n+k}$ in $g(n)$ unless $k$ is an even number. However, this is impossible, since if $k$ was an even number, $f(n)=g(n)$, giving a ratio of one. Thus, $k$ must be an odd number.
+
+ Thus, since $k$ must be an odd number, regardless of whether $n$ is even or odd, to get an integral value in $g(n)$, we must get to the next perfect square after $n+k$. To make matters easier, let $z^2=n+k$. Thus, in $g(n)$, we want to achieve $(z+1)^2$. 
+
+ Expanding $(z+1)^2$ and substituting in the fact that $z=\sqrt{n+k}$ yields:
+
+ 
+ \[(z+1)^2=z^2+2z+1=n+k+2\sqrt{n+k}+1\]
+
+ Thus, we must add the quantity $k+2z+1$ to $n$ to achieve a integral value in the function $g(n)$. Thus.
+
+ 
+ \[g(n)=(k+2z+1)+\sqrt{n+k+2\sqrt{n+k}+1}\]
+
+ However, note that the quantity within the square root is just $(z+1)^2$, and so:
+
+ 
+ \[g(n)=k+3z+2\]
+
+ Thus,
+ \[\frac{f(n)}{g(n)}=\frac{k+z}{k+3z+2}\]
+
+ Since we want this quantity to equal $\frac{4}{7}$, we can set the above equation equal to this number and collect all the variables to one side to achieve
+
+ 
+ \[3k-5z=8\]
+
+ Substituting back in that $z=\sqrt{n+k}$, and then separating variables and squaring yields that
+
+ 
+ \[9k^2-73k+64=25n\]
+
+ Now, if we treat $n$ as a constant, we can use the quadratic formula in respect to $k$ to get an equation for $k$ in terms of $n$ (without all the squares). Doing so yields
+
+ 
+ \[\frac{73\pm\sqrt{3025+900n}}{18}=k\]
+
+ Now, since $n$ and $k$ are integers, we want the quantity within the square root to be a perfect square. Note that $55^2=3025$. Thus, assume that the quantity within the root is equal to the perfect square, $m^2$. Thus, after using a difference of squares, we have
+ \[(m-55)(m+55)=900n\]Since we want $n$ to be an integer, we know that the $LHS$ should be divisible by five, so, let's assume that we should have $m$ divisible by five. If so, the quantity $18k-73$ must be divisible by five, meaning that $k$ leaves a remainder of one when divided by 5 (if the reader knows LaTeX well enough to write this as a modulo argument, please go ahead and do so!). 
+
+ Thus, we see that to achieve integers $n$ and $k$ that could potentially satisfy the problem statement, we must try the values of $k$ congruent to one modulo five. However, if we recall a statement made earlier in the solution, we see that we can skip all even values of $k$ produced by this modulo argument.
+
+ Also, note that $k=1,6$ won't work, as they are too small, and will give an erroneous value for $n$. After trying $k=11,21,31$, we see that $k=31$ will give a value of $m=485$, which yields $n=\boxed{258}$, which, if plugged in to for our equations of $f(n)$ and $g(n)$, will yield the desired ratio, and we're done.
+
+ Side Note: If any part of this solution is not rigorous, or too vague, please label it in the margin with "needs proof". If you can prove it, please add a lemma to the solution doing so :)
+
+ -Azeem H. (mathislife52)
+
+ 
+
+
+
+\textbf{Solution 5 (Basic Substitutions)}
+
+First of all, if $n$ is a perfect square, $f(n)=g(n)=\sqrt{n}$ and their quotient is $1.$ So, for the rest of this solution, assume $n$ is not a perfect square.
+
+ Let $a^2$ be the smallest perfect square greater than $n$ and let $b^2$ be the smallest perfect square greater than $n$ with the same parity as $n,$ and note that either $b=a$ or $b=a+1.$ Notice that $(a-1)^2 < n < a^2.$
+
+ With a bit of inspection, it becomes clear that $f(n) = a+(a^2-n)$ and $g(n) = b+(b^2-n).$
+
+ If $a$ and $n$ have the same parity, we get $a=b$ so $f(n) = g(n)$ and their quotient is $1.$ So, for the rest of this solution, we let $a$ and $n$ have opposite parity. We have two cases to consider.
+
+ Case 1: $n$ is odd and $a$ is even
+
+ Here, we get $a=2k$ for some positive integer $k.$ Then, $b = 2k+1.$ We let $n = a^2-(2m+1)$ for some positive integer $m$ so $f(n) = 2k+2m+1$ and $g(n) = 2k+1+2m+1+4k+1 = 6k+2m+3.$
+
+ We set $\frac{2k+2m+1}{6k+2m+3}=\frac{4}{7},$ cross multiply, and rearrange to get $6m-10k=5.$ Since $k$ and $m$ are integers, the LHS will always be even and the RHS will always be odd, and thus, this case yields no solutions.
+
+ Case 2: $n$ is even and $a$ is odd
+
+ Here, we get $a=2k+1$ for some positive ineger $k.$ Then, $b=2k+2.$ We let $n = a^2-(2m+1)$ for some positive integer $m$ so $f(n)=2k+1+2m+1=2k+2m+2$ and $g(n)=2k+2+2m+1+4k+3 = 6k+2m+6.$
+
+ We set $\frac{2k+2m+2}{6k+2m+6} = \frac{4}{7},$ cross multiply, and rearrange to get $5k=3m-5,$ or $k=\frac{3}{5}m-1.$ Since $k$ and $m$ are integers, $m$ must be a multiple of $5.$ Some possible solutions for $(k,m)$ with the least $k$ and $m$ are $(2,5), (5,10), (8,15),$ and $(11,20).$
+
+ We wish to minimize $k$ since $a=2k+1.$ One thing to keep in mind is the initial assumption $(a-1)^2 < n < a^2.$
+
+ The pair $(2,5)$ gives $a=2(2)+1=5$ and $n=5^2-(2(5)+1)=14.$ But $4^2<14<5^2$ is clearly false, so we discard this case.
+
+ The pair $(5,10)$ gives $a=2(5)+1=11$ and $n=11^2-(2(10)+1)=100,$ which is a perfect square and therefore can be discarded.
+
+ The pair $(8,15)$ gives $a=2(8)+1=17$ and $n=17^2-(2(15)+1)=258,$ which is between $16^2$ and $17^2$ so it is our smallest solution.
+
+ So, $\boxed{258}$ is the correct answer.
+
+ 
+
+
+
+\textbf{Solution 6 (Short)}
+
+Say the answer is in the form $n^{2}-x$, then $x$ must be odd or else $f(x) = g(x)$. Say $y = n^{2}-x$. $f(y) = x+n$, $g(y) = 3n+2+x$. Because $f(y)/g(y)$ = $4$*(an integer)/$7$*(an integer),  $f(y)$ is $4$*(an integer) so $n$ must be odd or else $f(y)$ would be odd. Solving for $x$ in terms of $n$ gives integer $x = (5/3)n+8/3$ which means $n$ is $2$ mod $3$, because $n$ is also odd, $n$ is $5$ mod $6$. $x$ must be less than $2n-1$ or else the minimum square above $y$ would be $(n-1)^{2}$. We set an inequality $(5/3)n+8/3<2n-1 => 5n+8<6n-3 => n>11$.   Since $n$ is $5$ mod $6$, $n = 17$ and $x = 31$ giving $17^{2}-31$ = $\boxed{258}$.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+Define a nonnegative integer $k$ such that $g(n)-f(n)$ = $k$. Since $\frac{f(n)}{g(n)} = \frac{4}{7},$ $k$ is a positive integer. Now, suppose 3 consecutive integers $a-1$, $a$, and $a+1$, and $(a-1)^2 < n < a^2$. When $g(n) > f(n)$, $g(n)$ must have a different parity than $a$, so that $f(n)$'s recursive sequence ends on $a^2$, while $g(n)$ continues to $(a+1)^2$. If this condition is satisfied, we can figure out the value of $k$ based on $a$. According to the definitions of $f(n)$ and $g(n)$, $f(n) = a+a^2-n,$ and $g(n) = (a+1)+(a+1)^2-n,$ which gives $k = 2a+2$. And because of $f(n) + k = g(n)$, $\frac{k}{g(n)} = \frac{3}{7},$ so cross multiplying gives $3g(n) = 14a+14$. This means that $14a+14$ is divisible by 3, and thus $a \equiv 2 \pmod{3}$. The final thing left is to find the smallest $a$ such that the corresponding value of $g(n)$ exist. Simple guess and check should give that the smallest value of $a$ is $a = 17$, which yields an answer of $n = \boxed{258}$.
+
+ 
+
+
+
+\textbf{Solution 8 (Fast)}
+
+Let $n=k^2-x$, where $0 \leq x \leq 2k-2$. This means that $f(n)=k+x$.For $g(x)$, note that $x$ must be odd, otherwise $f(n)=g(n)$. This means that $g(n)$ must 'skip' one perfect square (being $k^2$), and go to $(k+1)^2$. This will take $(k+1)^2-k^2+x+k+1=3k+x+2$. We have $\frac{k+x}{3k+x+2}=\frac{4}{7}$. Cross multiplying and simplifying we get $3x-5k=8$. Taking $mod 5$ we have $3x=3 \mod 5$ or $x = 1 \mod 5$. Note that the inequality $0 \leq x \leq 2k-2$ when $x=5t+1$ and $t \geq 5$. Trying out $t=5$, we get $x=26$ which doesn't work as x is even. Trying out $t=6$, we get $x=31$ and $k=17$, which satisfies all conditions, meaning the answer is $17^2-31=\boxed{258}.$
+
+ 
 
 
 \end{enumerate}

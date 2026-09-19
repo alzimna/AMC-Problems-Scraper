@@ -18,8 +18,6 @@ If an integer is divisible by $36$, it must also be divisible by $9$ since $9$ i
  
 
 
-
-
 	\item (\textit{AIME II 2010}) A point $P$ is chosen at random in the interior of a unit square $S$. Let $d(P)$ denote the distance from $P$ to the closest side of $S$. The probability that $\frac{1}{5}\le d(P)\le\frac{1}{3}$ is equal to $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -37,15 +35,15 @@ Any point outside the square with side length $\frac{1}{3}$ that has the same ce
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2010_2_Solution_Figure_1.png}
                     \end{figure}
-                    Since the area of the unit square is $1$, the probability of a point $P$ with $\frac{1}{5}\le d(P)\le\frac{1}{3}$ is the area of the shaded region, which is the difference of the area of two squares.
+                    
+
+ Since the area of the unit square is $1$, the probability of a point $P$ with $\frac{1}{5}\le d(P)\le\frac{1}{3}$ is the area of the shaded region, which is the difference of the area of two squares.
 
  $\left(\frac{3}{5}\right)^2-\left(\frac{1}{3}\right)^2=\frac{9}{25}-\frac{1}{9}=\frac{56}{225}$
 
  Thus, the answer is $56 + 225 = \boxed{281}.$
 
  
-
-
 
 
 
@@ -60,15 +58,11 @@ First, let's figure out $d(P) \geq \frac{1}{3}$ which is
 
 
 
-
-
 \textbf{Solution 3}
 
 First, lets assume that point $P$ is closest to a side $S$ of the square. If it is $\frac{1}{5}$ far from $S$, then it should be at least $\frac{1}{5}$ from both the adjacent sides of $S$ in the square. This leaves a segment of $1 - 2 \cdot \frac{1}{5} = \frac{3}{5}$. If the distance from $P$ to $S$ is $\frac{1}{3}$, then notice the length of the side-ways segment for $P$ is $1 - 2 \cdot \frac{1}{3} = \frac{1}{3}$. Notice that as the distance from $P$ to $S$ increases, the possible points for the side-ways decreases. This produces a trapezoid with parallel sides $\frac{3}{5}$ and $\frac{1}{3}$ with height $\frac{1}{3} - \frac{1}{5} = \frac{2}{15}$. This trapezoid has area (or probability for one side) $\frac{1}{2} \cdot \left(\frac{1}{3}+\frac{3}{5}\right)\cdot \frac{2}{15} = \frac{14}{225}$. Since the square has $4$ sides, we multiply by $4$. Hence, the probability is $\frac{56}{225}$. The answer is $\boxed{281}$.               ~Saucepan\_man02
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Let $K$ be the product of all factors $(b-a)$ (not necessarily distinct) where $a$ and $b$ are integers satisfying $1\le a < b \le 20$. Find the greatest positive integer $n$ such that $2^n$ divides $K$.
@@ -161,8 +155,6 @@ In general, there are $20-n$ pairs of integers $(a, b)$ that differ by $n$ becau
  
 
 
-
-
 	\item (\textit{AIME II 2010}) Dave arrives at an airport which has twelve gates arranged in a straight line with exactly $100$ feet between adjacent gates. His departure gate is assigned at random. After waiting at that gate, Dave is told the departure gate has been changed to a different gate, again at random. Let the probability that Dave walks $400$ feet or less to the new gate be a fraction $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -182,8 +174,6 @@ There are $12 \cdot 11 = 132$ possible situations ($12$ choices for the initiall
 
 
 
-
-
 \textbf{Solution 2}
 
 As before, derive that there are $132$ possibilities for Dave's original and replacement gates.
@@ -194,8 +184,6 @@ As before, derive that there are $132$ possibilities for Dave's original and rep
  \[2\cdot 11 + 2\cdot 10 + 2\cdot 9 + 2\cdot 8 = 76\] and so the requested probability is $\frac{19}{33}$ for a final answer of $\boxed{052}$.
 
  
-
-
 
 
 
@@ -226,8 +214,6 @@ We can just manually count via each probability.
 
 
 
-
-
 \textbf{Solution 4 (fast)}
 
 We can count the favorable outcomes. Note that it doesn't matter which is the starting and ending gate, only the gap between them matters. 
@@ -235,8 +221,6 @@ We can count the favorable outcomes. Note that it doesn't matter which is the st
  For an outcome to be favorable, the two gates must have a gap \( \leq 4 \). There are 11 ways to have gap 1, 10 for gap 2, 9 for gap 3, and 8 for gap 4, giving us \( 11 + 10 + 9 + 8 = 38 \) favorable outcomes. There are \( \binom{12}{2} = 66 \) total outcomes, and so the probability of getting a favorable outcome is \( \frac{38}{66} = \frac{19}{33} \). $19+33=\boxed{052}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Positive numbers $x$, $y$, and $z$ satisfy $xyz = 10^{81}$ and $(\log_{10}x)(\log_{10} yz) + (\log_{10}y) (\log_{10}z) = 468$. Find $\sqrt {(\log_{10}x)^2 + (\log_{10}y)^2 + (\log_{10}z)^2}$.
@@ -258,8 +242,6 @@ Using the properties of logarithms, $\log_{10}xyz = 81$ by taking the log base 1
  However, we want to find $\sqrt {(\log_{10}x)^2 + (\log_{10}y)^2 + (\log_{10}z)^2}$, so we take the square root of $\ 5625$, or $\boxed{075}$.
 
  
-
-
 
 
 
@@ -288,8 +270,6 @@ Let $a=\log_{10}x$, $b=\log_{10}y,$ and $c=\log_{10}z$.
  $=\boxed{075}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Find the smallest positive integer $n$ with the property that the polynomial $x^4 - nx + 63$ can be written as a product of two nonconstant polynomials with integer coefficients.
@@ -321,15 +301,11 @@ You can factor the polynomial into two quadratic factors or a linear and a cubic
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $x^4-nx+63=(x^2+ax+b)(x^2+cx+d)$. From this, we get that $bd=63\implies d=\frac{63}{b}$ and $a+c=0\implies c=-a$. Plugging this back into the equation, we get $x^4-nx+63=(x^2+ax+b)\left(x^2-ax+\frac{63}{b}\right)$. Expanding gives us $x^4-nx+63=x^4+\left(-a^2+b+\frac{63}{b}\right)x^2+\left(\frac{63a}{b}-ab\right)x+63$. Therefore $-a^2+b+\frac{63}{b}=0$. Simplifying gets us $b(a^2-b)=63$. Since $a$ and $b$ must be integers, we can use guess and check for values of $b$ because $b$ must be a factor of $63$. Note that $b$ cannot be negative because $a$ would be imaginary. After guessing and checking, we find that the possible values of $(a,b)$ are $(\pm 8, 1), (\pm 4, 7), (\pm 4, 9),$ and $(\pm 8, 63)$. We have that $n=ab-\frac{63a}{b}$. Plugging in our values for $a$ and $b$, we get that the smallest positive integer value $n$ can be is $\boxed{008}$.-Heavytoothpaste
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Let $P(z)=z^3+az^2+bz+c$, where $a$, $b$, and $c$ are real. There exists a complex number $w$ such that the three roots of $P(z)$ are $w+3i$, $w+9i$, and $2w-4$, where $i^2=-1$. Find $|a+b+c|$.
@@ -360,15 +336,11 @@ Set $w=x+yi$, so $x_1 = x+(y+3)i$, $x_2 = x+(y+9)i$, $x_3 = 2x-4+2yi$.
 
 
 
-
-
 \textbf{Solution 1b}
 
 Same as solution 1 except that when you get to $x_1 = x$, $x_2 = x+6i$, $x_3 = 2x-4-6i$, you don't need to find the imaginary part of $c$. We know that $x_1$ is a real number, which means that $x_2$ and $x_3$ are complex conjugates. Therefore, $x=2x-4$.
 
  
-
-
 
 
 
@@ -390,8 +362,6 @@ Note that at least one of $w+3i$, $w+9i$, or $2w-4$ is real by complex conjugate
 
 
 
-
-
 \textbf{Solution 3}
 
 By Vieta's we know the sum of the roots must be $-a$, a real number. That means $4w+12i-4$ is a real number, meaning $w$ has an imaginary component of $-3i$.
@@ -404,8 +374,6 @@ By Vieta's we know the sum of the roots must be $-a$, a real number. That means 
 -skibbysiggy
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Let $N$ be the number of ordered pairs of nonempty sets $\mathcal{A}$ and $\mathcal{B}$ that have the following properties:
@@ -446,8 +414,6 @@ Let us \href{https://artofproblemsolving.com/wiki/index.php?title=Partition}{par
 
 
 
-
-
 \textbf{Solution 2}
 
 Regardless of the size $n$ of $A$ (ignoring the case when $n = 6$), $n$ must not be in $A$ and $12 - n$ must be in $A$. 
@@ -459,8 +425,6 @@ Regardless of the size $n$ of $A$ (ignoring the case when $n = 6$), $n$ must not
  Thus, our answer is $2^{10} - \dbinom{10}{5} = 1024 - 252 = \boxed{772}$
 
  
-
-
 
 
 
@@ -481,8 +445,6 @@ The total number of possible subsets is $\sum_{i=1}^{11}\dbinom{12}{i}$, which i
  Adding this with case one gives us $2^{11}+2^{10}+250$. Subtracting this from $2^{12}-2$ gives $1024-252=\boxed{772}$.
 
  
-
-
 
 
 
@@ -509,8 +471,6 @@ Case 1: Set A has 1 element. Set B has 11 elements. 11 must be in set A, so ther
 
 
                 
-
-
 
 
 	\item (\textit{AIME II 2010}) Let $ABCDEF$ be a regular hexagon. Let $G$, $H$, $I$, $J$, $K$, and $L$ be the midpoints of sides $AB$, $BC$, $CD$, $DE$, $EF$, and $FA$, respectively. The segments $\overline{AH}$, $\overline{BI}$, $\overline{CJ}$, $\overline{DK}$, $\overline{EL}$, and $\overline{FG}$ bound a smaller regular hexagon. Let the ratio of the area of the smaller hexagon to the area of $ABCDEF$ be expressed as a fraction $\frac {m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -543,8 +503,6 @@ Without loss of generality, let $BC=2.$
  Thus, the answer is $4 + 7 = \boxed{011}.$
 
  
-
-
 
 
 
@@ -596,15 +554,11 @@ Diagram (by dragoon)\href{https://services.artofproblemsolving.com/download.php?
 
 
 
-
-
 \textbf{Solution 3}
 
 Use the diagram. Now notice that all of the "overlapping triangles" are congruent. You can use the AA similarity to see that the small triangles are similar to the large triangles. Now you can proceed as in Solution 1.
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Find the number of second-degree polynomials $f(x)$ with integer coefficients and integer zeros for which $f(0)=2010$.
@@ -641,15 +595,11 @@ Let $f(x) = a(x-r)(x-s)$. Then $ars=2010=2\cdot3\cdot5\cdot67$. First consider t
 
 
 
-
-
 \textbf{Solution 2}
 
 We use \href{https://artofproblemsolving.com/wiki/index.php?title=Burnside\%27s\_Lemma}{Burnside's Lemma}. The set being acted upon is the set of integer triples $(a,r,s)$ such that $ars=2010$. Because $r$ and $s$ are indistinguishable, the permutation group consists of the identity and the permutation that switches $r$ and $s$. In cycle notation, the group consists of $(a)(r)(s)$ and $(a)(r \: s)$. There are $4 \cdot 3^4$ fixed points of the first permutation (after distributing the primes among $a$, $r$, $s$ and then considering their signs. We have 4 ways since we can keep them all positive, first 2 negative, first and third negative, or last two negative) and $2$ fixed points of the second permutation ($r=s=\pm 1$). By Burnside's Lemma, there are $\frac{1}{2} (4 \cdot 3^4+2)= \boxed{163}$ distinguishable triples $(a,r,s)$.Note: The permutation group is isomorphic to $\mathbb{Z}/2\mathbb{Z}$.
 
  
-
-
 
 
 
@@ -674,8 +624,6 @@ If $|k|$ is the product of two factors of $2010$, there are $8$ ways for each. T
 
 
 
-
-
 \textbf{Solution 4 (Vieta's)}
 
 All polynomials are of the form $ax^2 + bx + 2010$.
@@ -687,8 +635,6 @@ All polynomials are of the form $ax^2 + bx + 2010$.
  This example of "unaffecting via rotation" is an example of a repeated (double) root, which is an example of a fixed orbit via Burnsides Lemma.
 
  
-
-
 
 
 	\item (\textit{AIME II 2010}) Define a \textit{T-grid} to be a $3\times3$ matrix which satisfies the following two properties:
@@ -774,8 +720,6 @@ The \textit{T-grid} can be considered as a tic-tac-toe board: five $1$'s (or X's
 
 
 
-
-
 \textbf{Solution 2}
 
 We can use \href{https://artofproblemsolving.com/wiki/index.php?title=Generating\_functions}{generating functions} to compute the case that no row or column is completely filled with $1$'s. Given a row, let $a$, $b$, $c$ be the events that the first, second, third respective squares are $1$'s. Then the generating function representing the possible events that exclude a row of $1,1,1$ or $0,0,0$ from occuring is
@@ -790,8 +734,6 @@ We can use \href{https://artofproblemsolving.com/wiki/index.php?title=Generating
  Thus the answer is $44+24=\boxed{68}$.
 
  
-
-
 
 
 
@@ -821,8 +763,6 @@ We proceed by complimentary counting.
  
 
 
-
-
 	\item (\textit{AIME II 2010}) Two noncongruent integer-sided isosceles triangles have the same perimeter and the same area. The ratio of the lengths of the bases of the two triangles is $8: 7$. Find the minimum possible value of their common perimeter.
 
 
@@ -835,17 +775,17 @@ We proceed by complimentary counting.
 
 Let $s$ be the semiperimeter of the two triangles. Also, let the base of the longer triangle be $16x$ and the base of the shorter triangle be $14x$ for some arbitrary factor $x$. Then, the dimensions of the two triangles must be $s-8x,s-8x,16x$ and $s-7x,s-7x,14x$. By Heron's Formula, we have 
 
- <center>
+ 
  \[\sqrt{s(8x)(8x)(s-16x)}=\sqrt{s(7x)(7x)(s-14x)}\]
  \[8\sqrt{s-16x}=7\sqrt{s-14x}\]
  \[64s-1024x=49s-686x\]
  \[15s=338x\]
 
- </center>Since $15$ and $338$ are coprime, to minimize, we must have $s=338$ and $x=15$. However, we want the minimum perimeter. This means that we must multiply our minimum semiperimeter by $2$, which gives us a final answer of $\boxed{676}$.
-
  
 
+ Since $15$ and $338$ are coprime, to minimize, we must have $s=338$ and $x=15$. However, we want the minimum perimeter. This means that we must multiply our minimum semiperimeter by $2$, which gives us a final answer of $\boxed{676}$.
 
+ 
 
 
 
@@ -860,8 +800,6 @@ Let the first triangle have sides $16n,a,a$, so the second has sides $14n,a+n,a+
 
 
  
-
-
 
 
 
@@ -922,8 +860,6 @@ We use $16x$ and $14x$ instead of $8x$ and $7x$ to ensure that the triangle has 
  
 
 
-
-
 	\item (\textit{AIME II 2010}) The $52$ cards in a deck are numbered $1, 2, \cdots, 52$. Alex, Blair, Corey, and Dylan each pick a card from the deck randomly and without replacement. The two people with lower numbered cards form a team, and the two people with higher numbered cards form another team. Let $p(a)$ be the probability that Alex and Dylan are on the same team, given that Alex picks one of the cards $a$ and $a+9$, and Dylan picks the other of these two cards. The minimum value of $p(a)$ for which $p(a)\ge\frac{1}{2}$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -940,8 +876,6 @@ Once the two cards are drawn, there are $\dbinom{50}{2} = 1225$ ways for the oth
  So $b> 13$ or $b< -13$, and $a=22+b<9$ or $a>35$, so $a=8$ or $a=36$. Thus, $p(8) = \frac{616}{1225} = \frac{88}{175}$, and the answer is $88+175 = \boxed{263}$.
 
  
-
-
 
 
 
@@ -977,8 +911,6 @@ Given that Alex and Dylan hold the cards $a$ and $a+9$, we need to calculate the
  
 
 
-
-
 	\item (\textit{AIME II 2010}) Triangle $ABC$ with right angle at $C$, $\angle BAC < 45^\circ$ and $AB = 4$. Point $P$ on $\overline{AB}$ is chosen such that $\angle APC = 2\angle ACP$ and $CP = 1$. The ratio $\frac{AP}{BP}$ can be represented in the form $p + q\sqrt{r}$, where $p$, $q$, $r$ are positive integers and $r$ is not divisible by the square of any prime. Find $p+q+r$.
 
 
@@ -1007,7 +939,7 @@ Let $O$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Circum
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -1035,8 +967,6 @@ We equate these expressions for $\cos\theta$ to find that $xy=2$. Since $x+y=AB=
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $\angle{ACP}$ be equal to $x$. Then by Law of Sines, $PB = -\frac{\cos{x}}{\cos{3x}}$ and $AP = \frac{\sin{x}}{\sin{3x}}$. We then obtain $\cos{3x} = 4\cos^3{x} - 3\cos{x}$ and $\sin{3x} = 3\sin{x} - 4\sin^3{x}$. Solving, we determine that $\sin^2{x} = \frac{4 \pm \sqrt{2}}{8}$. Plugging this in gives that $\frac{AP}{PB} = \frac{\sqrt{2}+1}{\sqrt{2}-1} = 3 + 2\sqrt{2}$. The answer is $\boxed{007}$.
@@ -1045,8 +975,6 @@ Let $\angle{ACP}$ be equal to $x$. Then by Law of Sines, $PB = -\frac{\cos{x}}{\
 (You can derive that $\cos{3x} = 4\cos^3{x} - 3\cos{x},$ and similarly for $\sin{3x},$ by considering the expansion of $(\text{cis}(x))^3,$ equating real parts to $\cos{x}$ and imaginary parts to $\sin{x},$ then substituting with $1-\sin^2{x}$ to finish. ~happypi31415)
 
  
-
-
 
 
 
@@ -1068,8 +996,6 @@ Let $\alpha=\angle{ACP}$, $\beta=\angle{ABC}$, and $x=BP$. By Law of Sines,
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $\angle{ACP}=x$. Then, $\angle{APC}=2x$ and $\angle{A}=180-3x$. Let the foot of the angle bisector of $\angle{APC}$ on side $AC$ be $D$. Then,
@@ -1087,8 +1013,6 @@ Let $\angle{ACP}=x$. Then, $\angle{APC}=2x$ and $\angle{A}=180-3x$. Let the foot
  The answer is $\boxed{007}$.
 
  
-
-
 
 
 
@@ -1119,8 +1043,6 @@ Let $O$ be the circumcenter of $\triangle ABC$. Since $\triangle ABC$ is a right
  
 
 
-
-
 	\item (\textit{AIME II 2010}) In triangle $ABC$, $AC=13$, $BC=14$, and $AB=15$. Points $M$ and $D$ lie on $AC$ with $AM=MC$ and $\angle ABD = \angle DBC$. Points $N$ and $E$ lie on $AB$ with $AN=NB$ and $\angle ACE = \angle ECB$. Let $P$ be the point, other than $A$, of intersection of the circumcircles of $\triangle AMN$ and $\triangle ADE$. Ray $AP$ meets $BC$ at $Q$. The ratio $\frac{BQ}{CQ}$ can be written in the form $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m-n$.
 
 
@@ -1143,8 +1065,6 @@ The Angle Bisector Theorem implies that $E$ lies on $\overline{AN}$ and $D$ lies
 
 
 
-
-
 \textbf{Solution 2 (Linearity)}
 
 Define the function $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$ by 
@@ -1154,8 +1074,6 @@ Define the function $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$ by
  so $m-n=\boxed{218}$.
 
  
-
-
 
 
 
@@ -1190,15 +1108,11 @@ Let $Y = MN \cap AQ$. $\frac {BQ}{QC} = \frac {NY}{MY}$ since $\triangle AMN \si
 
 
 
-
-
 \textbf{Solution 4}
 
 This problem can be solved with barycentric coordinates. Let triangle $ABC$ be the reference triangle with $A=(1,0,0)$, $B=(0,1,0)$, and $C=(0,0,1)$. Thus, $N=(1:1:0)$ and $M=(1:0:1)$. Using the Angle Bisector Theorem, we can deduce that $D=(14:0:15)$ and $E = (14:13:0)$. Plugging the coordinates for triangles $ANM$ and $AED$ into the circle formula, we deduce that the equation for triangle $ANM$ is $-a^2yz-b^2zx-c^2xy+(\frac{c^2}{2}y+\frac{b^2}{2}z)(x+y+z)=0$ and the equation for triangle $AED$ is $-a^2yz-b^2zx-c^2xy+(\frac{14c^2}{27}y+\frac{14b^2}{29}z)(x+y+z)=0$. Solving the system of equations, we get that $\frac{c^2y}{54}=\frac{b^2z}{58}$. This equation determines the radical axis of circles $ANM$ and $AED$, on which points $P$ and $Q$ lie. Thus, solving for $\frac{z}{y}$ gets the desired ratio of lengths, and $\frac{z}{y}=\frac{58c^2}{54b^2}$ and plugging in the lengths $b=13$ and $c=15$ gets $\frac{725}{507}$. From this we get the desired answer of $725-507=\boxed{218}$.-wertguk
 
  
-
-
 
 
 
@@ -1217,8 +1131,6 @@ Observe that $P$ is the center of spiral symmetry of segments $DM$ and $EN$.
  This can be proven using Ceva's theorem and the work done in this problem, which effectively allows us to compute the ratio that line $AA'$ divides the opposite side $BC$ into and similarly for the other two sides.
 
  
-
-
 
 
 \end{enumerate}

@@ -44,7 +44,8 @@ def generate_all_and_pairs(type,contest) :
     else :
         print_message("Metadata Not Retrieved Yet")
 
-    all = [(r['year'], r['source']) for r in contest_metadata.values()]
+    num = { r['year'] : r['number of problems'] for r in contest_metadata}
+    all = [(r['year'], r['source'], r['version'], r['number of problems']) for r in contest_metadata]
 
     if type == 'p' :
         pattern = r'(.*?)_Problems$'
@@ -57,10 +58,15 @@ def generate_all_and_pairs(type,contest) :
     if len(downloaded) == 0 :
         pairs = all
     else :
-        df = pd.DataFrame(downloaded)[['year','source']]
+        df = pd.DataFrame(downloaded)[['year','source','version']]
         df['source'] = df['source'].map(lambda x:re.search(pattern,x).group(1))
         df = df.drop_duplicates(ignore_index=True)
-        d = set(zip(df['year'], df['source']))
+
+        x = []
+        for i in range(len(df)) :
+            x.append(num[df.loc[i,'year']])
+        df['number of problems'] = x
+        d = set(zip(df['year'], df['source'], df['version'], df['number of problems']))
         pairs = sorted(list(set(all)-set(d)),reverse = True)
     return all,pairs
 

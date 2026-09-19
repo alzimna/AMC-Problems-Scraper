@@ -18,15 +18,11 @@ If $N$ is $22$ percent less than one integer $k$, then $N=\frac{78}{100}k=\frac{
 
 
 
-
-
 \textbf{Solution 2}
 
 Continuing from Solution 1, we have $N=\frac{39}{50}k$ and $N=\frac{29}{25}m$. It follows that $k=\frac{50}{39}N$ and $m=\frac{25}{29}N$. Both $m$ and $k$ have to be integers, so, in order for that to be true, $N$ has to cancel the denominators of both $\frac{50}{39}$ and $\frac{25}{29}$. In other words, $N$ is a multiple of both $29$ and $39$. That makes $N=\operatorname{lcm}(29,39)=29\cdot39=1131$. The answer is $\boxed{131}$.
 
  
-
-
 
 
 
@@ -39,11 +35,6 @@ We can express $N$ as $0.78a$ and $1.16b$, where $a$ and $b$ are some positive i
  We know that any possible value of $N$ will be an integral multiple of this value; the smallest such $N$ is achieved by multiplying this value by $25.$ We arrive at $1131$, which is $\boxed{131}\mod1000.$ 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2015}) In a new school, $40$ percent of the students are freshmen, $30$ percent are sophomores, $20$ percent are juniors, and $10$ percent are seniors. All freshmen are required to take Latin, and $80$ percent of sophomores, $50$ percent of the juniors, and $20$ percent of the seniors elect to take Latin. The probability that a randomly chosen Latin student is a sophomore is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -62,18 +53,11 @@ We see that $40\% \cdot 100\% + 30\% \cdot 80\% + 20\% \cdot 50\% + 10\% \cdot 2
 
 
 
-
-
 \textbf{Solution 2}
 
 Assume that there are $100$ students in the school. There are $40$ freshmen taking Latin, $24$ sophomores taking Latin, $10$ juniors taking Latin, and $2$ seniors taking Latin. We get the probability to be the number of sophomores taking Latin over the total number of students taking Latin, or $\dfrac{24}{76}$. Simplifying, we get $\dfrac{6}{19}$. Adding, we get $\boxed{025}$.
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2015}) Let $m$ be the least positive integer divisible by $17$ whose digits sum to $17$. Find $m$.
@@ -95,8 +79,6 @@ The three-digit integers divisible by $17$, and their digit sum:
 
 
 
-
-
 \textbf{Solution 2 (Shortcut)}
 
 We can do the same thing as solution 1, except note the following fact: $102$ is a multiple of $17$ and its digits sum to $3$. 
@@ -106,8 +88,6 @@ We can do the same thing as solution 1, except note the following fact: $102$ is
  (Comment from another person: Actually, this doesn't work because you can't be sure there are no numbers between 374 and 476 that work. This solution just lucks out.)
 
  
-
-
 
 
 
@@ -125,8 +105,6 @@ The digit sum of a base $10$ integer $m$ is just $m\pmod{9}$. In this problem, w
 
 
 
-
-
 \textbf{Solution 4}
 
 Since the sum of the digits in the base-10 representation of $m$ is $17$, we must have $m\equiv 17 \pmod{9}$ or $m\equiv -1\pmod{9}$.We also know that since $m$ is divisible by 17, $m\equiv 0 \pmod{17}$.
@@ -136,8 +114,6 @@ Since the sum of the digits in the base-10 representation of $m$ is $17$, we mus
  Finally, since $m\equiv 17\pmod{153}$, we repeatedly add multiples of $153$ until we get a number in which its digits sum to 17, which first happens when $m=\boxed{476}$.
 
  
-
-
 
 
 
@@ -162,8 +138,6 @@ We proceed by casework on the number of digits. Clearly the answer must have at 
  Note: We have $11a+b \equiv \mod(17)$. Doing some experimentation for the smallest value of $a$, since we want to minimize $abc_{10}$, we get $11a+b=51 \implies a=4, b=7, c=6$. Trying $17$ and $34$ don't work, because $0 \leq c \leq 9$. Also, one can use long division to verify that $17$ is a divisor of $476$, specifically $17 \cdot 28=476$. So the answer is $476$.~First
 
  
-
-
 
 
 
@@ -193,11 +167,6 @@ Let $m$ be the integer with digits $\overline{a_n a_{n-1} \dots a_1}$ such that 
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME II 2015}) In an isosceles trapezoid, the parallel bases have lengths $\log 3$ and $\log 192$, and the altitude to these bases has length $\log 16$. The perimeter of the trapezoid can be written in the form $\log 2^p 3^q$, where $p$ and $q$ are positive integers. Find $p + q$.
 
 
@@ -221,8 +190,6 @@ Call the trapezoid $ABCD$ with $AB$ as the smaller base and $CD$ as the longer. 
 
 
 
-
-
 \textbf{Solution 2 (gratuitous wishful thinking)}
 
 Set the base of the log as 2. Then call the trapezoid $ABCD$ with $CD$ as the longer base. Then have the two feet of the altitudes be $E$ and $F$, with $E$ and $F$ in position from left to right respectively. Then, $CF$ and $ED$ are $\log 192 - \log 3 = \log 64$ (from the log subtraction identity. Then $CF=EF=3$ (isosceles trapezoid and $\log 64$ being 6. Then the 2 legs of the trapezoid is $\sqrt{3^2+4^2}=5=\log 32$.
@@ -234,8 +201,6 @@ Set the base of the log as 2. Then call the trapezoid $ABCD$ with $CD$ as the lo
  -dragoon
 
  
-
-
 
 
 
@@ -271,8 +236,6 @@ Let $ABCD$ be the trapezoid, where $\overline{AB} || \overline{CD}$ and $AB = \l
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $a=\log2$ and $b=\log3$ so that the base lengths are $\log3=b$ and $\log192=\log(3\cdot64)=\log3+\log\left(2^6\right)=6a+b$ and the altitudes are $\log16=4a$. Then we have the following picture: 
@@ -287,11 +250,6 @@ Let $a=\log2$ and $b=\log3$ so that the base lengths are $\log3=b$ and $\log192=
  Note that we have the two right triangles to the side; one of each of their bases is an altitude, which we know the length to be $4a$. The length of the other base can be calculated as $\dfrac{(6a+b)-b}2=3a$ via simple isosceles trapezoid geometry; it is clear that each right triangle is actually a $3-4-5$ triangle, so we know their hypotenuses (and the remaining unknown sides of our original trapezoid) have length $5a$ (because of the $3a$ and $4a$ bases). Our answer is therefore $5a+5a+b+6a+b=16a+2b=16\log2+2\log3=\log\left(2^{16}3^2\right)$; $p+q=16+2=\boxed{018}$. QED. 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2015}) Two unit squares are selected at random without replacement from an $n \times n$ grid of unit squares. Find the least positive integer $n$ such that the probability that the two selected unit squares are horizontally or vertically adjacent is less than $\frac{1}{2015}$.
@@ -313,8 +271,6 @@ Call the given grid "Grid A". Consider Grid B, where the vertices of Grid B fall
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider a $3 \times 3$ grid, where there are $4$ corner squares, $4$ edge squares, and $1$ center square. A $4 \times 4$ grid has $4$ corner squares, $8$ edge squares, and $4$ center squares. By examining simple cases, we can conclude that for a grid that is $n \times n$, there are always $4$ corners squares, $4(n-2)$ edge squares, and $n^2-4n+4$ center squares. 
@@ -330,8 +286,6 @@ Consider a $3 \times 3$ grid, where there are $4$ corner squares, $4$ edge squar
 
 
 
-
-
 \textbf{Solution 3}
 
 There are 3 cases in this problem. Number one, the center squares. Two, the edges, and three, the corners. The probability of getting one center square and an adjacent square is $\frac{(n-2)(n-2)}{n^2}$ multiplied by $\frac{4}{n^2 -1}$. Add that to the probability of an edge and an adjacent square( $\frac{4n-8}{n^2}$ multiplied by  $\frac{3}{n^2-1}$) and the probability of a corner and an adjacent square( $\frac{4}{n^2}$ multiplied by  $\frac{2}{n^2-1}$) to get  $\frac{4n^2-4n}{n^4-n^2}$. Simplify to get  $\frac{4}{n^2+n}$. With some experimentation, we realize that the smallest value of n is $\boxed{090}$.
@@ -343,15 +297,11 @@ There are 3 cases in this problem. Number one, the center squares. Two, the edge
 
 
 
-
-
 \textbf{Solution 4 (cheese)}
 
 Notice how a chosen unit square on the grid has 4 vertically & horizontally adjacent squares around it (not counting corners or sides.) That's $\frac{4}{n^2}$. Using this, we rewrite $\frac{1}{2015}$ as $\frac{4}{8060}$. Notice that the denominator $8060$ is really close to $90^2$, and the problem is asking for the least positive integer less than $\frac{1}{2015}$. Therefore, the closest possible estimation is $\boxed{090}$. We can check this by adding in our corners and sides. Easy multiplication and simplification finds us with $\boxed{090}$ as the correct answer.
 
  
-
-
 
 
 
@@ -365,11 +315,6 @@ Lets start with some simpler cases. For example, lets use a 2x2. We have $2$ hor
  -jb2015007
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2015}) Steve says to Jon, "I am thinking of a polynomial whose roots are all positive integers. The polynomial has the form $P(x) = 2x^3-2ax^2+(a^2-81)x-c$ for some positive integers $a$ and $c$. Can you tell me the values of $a$ and $c$?"
@@ -411,52 +356,9 @@ We call the three roots (some may be equal to one another) $x_1$, $x_2$, and $x_
 
  We can then list out all the triples of positive integers whose squares sum to $81$:
 
- We get $(1, 4, 8)$, $(3, 6, 6)$, and $(4, 4, 7)$.  
-
- These triples give $a$ values of $13$, $15$, and $15$, respectively, and $c$ values of $64$, $216$, and $224$, respectively.  
-
- We know that Jon still found two possible values of $c$ when Steve told him the $a$ value, so the $a$ value must be $15$.  Thus, the two $c$ values are $216$ and $224$, which sum to $\boxed{\text{440}}$.
+ We get 
 
  
-
-
-
-
-
-\textbf{Solution 2 (Algebra + Brute Force)}
-
-First things first. Vietas gives us the following:
-
- 
- \begin{align} x_1+x_2+x_3 = a\\ x_1 \cdot x_2+x_1 \cdot x_3+x_2 \cdot x_3 = \frac{a^2-81}{2}\\ x_1 \cdot x_2 \cdot x_3 = \frac{c}{2} \end{align}
-
- From $(2)$, $a$ must have odd parity, meaning $a^2-81$ must be a multiple of $4$, which implies that both sides of $(2)$ are even. Then, from $(1)$, we see that an odd number of $x_1$, $x_2$, and $x_3$ must be odd, because we have already deduced that $a$ is odd. In order for both sides of $(2)$ to be even, there must only be one odd number and two even numbers.
-
- Now, the theoretical maximum value of the left side of $(2)$ is $3 \cdot \biggl(\frac{a}{3}\biggr)^2=\frac{a^2}{3}$. That means that the maximum bound of $a$ is where
- \[\frac{a^2}{3} > \frac{a^2-81}{2},\]which simplifies to $\sqrt{243} > a$, meaning
- \[16 > a.\]So now we have that $9<a$ from $(2)$, $a<16$, and $a$ is odd from $(2)$. This means that $a$ could equal $11$, $13$, or $15$. At this point, we have simplified the problem to the point where we can casework+ brute force. As said above, we arrive at our solutions of  $(1, 4, 8)$, $(3, 6, 6)$, and $(4, 4, 7)$, of which the last two return equal $a$ values. Then, $2(3 \cdot 6 \cdot 6+4 \cdot 4 \cdot 7)=\boxed{440}$ AWD.
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Basic calculus)}
-
-Since each of the roots is positive, the local maximum of the function must occur at a positive value of $x$. Taking $\frac{d}{dx}$ of the polynomial yields $6x^2-4ax+a^2-81$, which is equal to $0$ at the local maximum. Since this is a quadratic in $a$, we can find an expression for $a$ in terms of $x$. The quadratic formula gives $a=\frac{4x\pm\sqrt{324-8x^2}}{2}$, which simplifies to $a=2x\pm\sqrt{81-2x^2}$. We know that $a$ is a positive integer, and testing small positive integer values of $x$ yields $a=15$ or $a=1$ when $x=4$, and $a=15$ or $a=9$ when $x=6$. Because the value of $a$ alone does not determine the polynomial, $a$, $a$ must equal $15$.
-
- Now our polynomial equals $2x^3-30x^2+144x-c$. Because one root is less than (or equal to) the $x$ value at the local maximum (picture the graph of a cubic equation), it suffices to synthetically divide by small integer values of $x$ to see if the resulting quadratic also has positive integer roots. Dividing by $x=3$ leaves a quotient of $2x^2-24x+72=2(x-6)^2$, and dividing by $x=4$ leaves a quotient of $2x^2-22x+56=2(x-4)(x-7)$. Thus, $c=2\cdot 3\cdot 6\cdot 6=216$, or $c=2\cdot 4\cdot 4\cdot 7=224$. Our answer is $216+224=\boxed{440}$ ~bad\_at\_mathcounts
-
- 
-
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2015}) Triangle $ABC$ has side lengths $AB = 12$, $BC = 25$, and $CA = 17$. Rectangle $PQRS$ has vertex $P$ on $\overline{AB}$, vertex $Q$ on $\overline{AC}$, and vertices $R$ and $S$ on $\overline{BC}$. In terms of the side length $PQ = w$, the area of $PQRS$ can be expressed as the quadratic polynomial
@@ -502,8 +404,6 @@ If $\omega = 25$,  the area of rectangle $PQRS$ is $0$, so
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -537,8 +437,6 @@ If $\omega = 25$,  the area of rectangle $PQRS$ is $0$, so
 
 
 
-
-
 \textbf{Solution 3}
 
 Heron's Formula gives $[ABC] = \sqrt{27 \cdot 15 \cdot 10 \cdot 2} = 90,$ so the altitude from $A$ to $BC$ has length $\dfrac{2[ABC]}{BC} = \dfrac{36}{5}.$
@@ -550,15 +448,11 @@ Heron's Formula gives $[ABC] = \sqrt{27 \cdot 15 \cdot 10 \cdot 2} = 90,$ so the
 
 
 
-
-
 \textbf{Solution 4}
 
 Using the diagram from Solution 2 above, label $AF$ to be $h$. Through Heron's formula, the area of $\triangle ABC$ turns out to be $90$, so using $AE$ as the height and $BC$ as the base yields $AE=\frac{36}{5}$. Now, through the use of similarity between $\triangle APQ$ and $\triangle ABC$, you find $\frac{w}{25}=\frac{h}{36/5}$. Thus, $h=\frac{36w}{125}$. To find the height of the rectangle, subtract $h$ from $\frac{36}{5}$ to get $\left(\frac{36}{5}-\frac{36w}{125}\right)$, and multiply this by the other given side $w$ to get $\frac{36w}{5}-\frac{36w^2}{125}$ for the area of the rectangle. Finally, $36+125=\boxed{161}$.
 
  
-
-
 
 
 
@@ -593,15 +487,11 @@ $[PQRS]=\frac{3w}{5}(12-(\frac{12W}{25}))\implies \frac{3w}{5}(\frac{300-12W}{25
 
 
 
-
-
 \textbf{Solution 6}
 
 Proceed as in solution 1. When $\omega$ is equal to zero, $\alpha - \beta\omega=\alpha$ is equal to the altitude. This means that $25\beta$ is equal to $\frac{36}{5}$, so $\beta = \frac{36}{125}$, yielding $\boxed{161}$.
 
  
-
-
 
 
 
@@ -612,8 +502,6 @@ Using the diagram in Solution 2, the area of $PQRS$ is ($w$)($PR$), we only need
  fixed latex errors, ~eqb5000
 
  
-
-
 
 
 
@@ -666,11 +554,6 @@ We are given that the area of rectangle $PQRS$ is a quadratic polynomial in term
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME II 2015}) Let $a$ and $b$ be positive integers satisfying $\frac{ab+1}{a+b} < \frac{3}{2}$. The maximum possible value of $\frac{a^3b^3+1}{a^3+b^3}$ is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
 
 
@@ -695,8 +578,6 @@ To avoid the possibility that $a = 1$, we want to find values of $b$ such that $
 
 
 
-
-
 \textbf{Solution 2 (nifty solution)}
 
 
@@ -715,15 +596,11 @@ To avoid the possibility that $a = 1$, we want to find values of $b$ such that $
 
 
 
-
-
 \textbf{Solution 3}
 
 Notice that for $\frac{a^3b^3+1}{a^3+b^3}$ to be maximized, $\frac{ab+1}{a+b}$ has to be maximized. We simplify as above to $2ab + 2 < 3a + 3b$, which is $(a-\frac{3}{2})(b-\frac{3}{2}) < \frac{5}{4}$. To maximize, $a$ has to be as close to $b$ as possible, making $a$ close to $\frac{3+\sqrt{5}}{2}$. Because $a$ and $b$ are positive integers, $a = 3$, and checking back gives $b = 2$ as the maximum or the other way around, which the answer is thus $\frac{216+1}{27+8} = \frac{217}{35} = \frac{31}{5} \rightarrow \boxed{036}$.
 
  
-
-
 
 
 
@@ -735,15 +612,11 @@ Guess and check a few values of $a$ and $b$ you will find two things. One, that 
 
 
 
-
-
 \textbf{Solution 5}
 
 WLOG, assume $a \geq b$. We solve for $a$ from the original equation to get $a < \frac{3b - 2}{2b - 3}$. Since $b \leq a$, we can solve $b < \frac{3b - 2}{2b - 3}$. Solving, we get $\frac{3 - \sqrt{5}}{2} < b < \frac{3 + \sqrt{5}}{2}$. Approximating values, we get $1 \leq b < 3$. Thus, $b = 1, 2$. Now, plugging back $a < \frac{3b - 2}{2b - 3}$, we see that $b = 1$ doesn't work. Thus, we plug in $b = 2$ to get $2 \leq a < 4$. Thus, $a = 2, 3$. Clearly, we can plug in $(a, b) = (2, 2), (3, 2)$ and see that $(3, 2)$ gives you the maximum of $\frac{31}{5}$. Thus, the answer is $\boxed{036}$.
 
  
-
-
 
 
 
@@ -754,8 +627,6 @@ Firstly, if we assume that $a=1$, we see that $\frac{a^{3}b^{3}+1}{a^{3}+b^{3}} 
  Starting with $\frac{ab+1}{a+b}<\frac{3}{2}$, cross multiply and move the variables to the right to obtain $2ab-3a-3b<-2$. After multiplying both sides by 2, Simon's favorite factoring trick (SFFT) is applicable, giving us $(2a-3)(2b-3)<5$. Now, we assume $a=2$. Then we see that $b$ can equal 2 or 3. If $a=3$, the only possible $b$ value is 2, and there are no other possible values for $b$ if $a>3$. So the possible ordered pairs for $(a,b)$ are $(2,2), (2,3)$, and $(3,2)$. It is easily noticeable that $(2,3)$ and $(3,2)$ both produce $\frac{a^{3}b^{3}+1}{a^{3}+b^{3}}=\frac{31}{5}$, which is the maximum value. We then add $31+5=\fbox{036}$
 
  
-
-
 
 
 
@@ -771,11 +642,6 @@ Firstly, if we assume that $a=1$, we see that $\frac{a^{3}b^{3}+1}{a^{3}+b^{3}} 
  For maximality to be reached, the points must lie on or near the quadratic, while in the blue region and red region overlap. Therefore, we can test points $(x,y) = (1,0), (2,1), (3,2), (4,4), (5,6)$. Note that every other point lies farther away from the quadratic starting $x = 6$, so no use in checking them. Also, the line $3x=2y+2$ only intersects the quadratic at two points, and so afterward, values of $x$ and $y$ force the inequality too minor. We can manually plug and chug the values $x$ and $y$ into the requested result $\frac{y^3 + 1}{x(x^2 - 3y)}$, and see that the maximum occurs at $(5,6)$ (duh...). So, we have $\frac{217}{35} = \frac{31}{5}$, which occurs when $a = 2,3$ and $b=3,2$ respectively. The answer is $\boxed{36}$.
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2015}) A cylindrical barrel with radius $4$ feet and height $10$ feet is full of water. A solid cube with side length $8$ feet is set into the barrel so that the diagonal of the cube is vertical. The volume of water thus displaced is $v$ cubic feet. Find $v^2$.
@@ -823,8 +689,6 @@ Our aim is to find the volume of the part of the cube submerged in the cylinder.
 
 
 
-
-
 \textbf{Solution 2 (No trig)}
 
 Visualizing the corner which is submerged in the cylinder, we can see that it's like slicing off a corner, where they slice an equal part off every edge, to make a tetrahedron where there are 3 right isosceles triangles and one equilateral triangle. With this out of the way, we can now just find the area of that equilateral triangle, using the fact that the circle of radius $4$ is the circumcircle of the equilateral triangle. Using equilateral triangle properties, you can find that the height of the triangle is $6$, and the side length is $\frac{6}{\sqrt{3}}=2\sqrt{3} \cdot 2=4\sqrt{3}$. As the other faces are right isosceles triangles, they are $\frac{4\sqrt{3}}{\sqrt{2}}=2\sqrt{6}$. Therefore the volume of this tetrahedron is
@@ -845,8 +709,6 @@ Note: The height of the cylinder and the side length of the cube had no effect o
 
 
 
-
-
 \textbf{Solution 3 (Also trig-less)}
 
 We can use the same method as in Solution 2 to find the side length of the equilateral triangle, which is $4\sqrt3$. From here, its area is
@@ -863,8 +725,6 @@ We can use the same method as in Solution 2 to find the side length of the equil
 
 
 
-
-
 \textbf{Solution 4 (De Gua's, no trig)}
 
 Since the diagonal is perpendicular to the base of the cylinder, all three edges and faces can be treated symmetrically.
@@ -876,8 +736,6 @@ Since the diagonal is perpendicular to the base of the cylinder, all three edges
  The height of the pyramid is then $\sqrt{(2\sqrt{6})^2-4^2}=2\sqrt{2}$, by the Pythagorean Theorem (using the slant height and circumradius). The volume is then $v=\frac{1}{3}\cdot 12\sqrt{3} \cdot 2\sqrt{2}=8\sqrt{6}$, and the requested answer is $v^2=(8\sqrt{6})^2=\boxed{384}$. ~bad\_at\_mathcounts
 
  
-
-
 
 
 
@@ -897,8 +755,6 @@ First, note the diagonal is vertical so that the tetrahedron of cube in water is
  \[v_{1}^2 = 384\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2015}) Call a permutation $a_1, a_2, \ldots, a_n$ of the integers $1, 2, \ldots, n$ \textit{quasi-increasing} if $a_k \leq a_{k+1} + 2$ for each $1 \leq k \leq n-1$. For example, $53421$ and $14253$ are quasi-increasing permutations of the integers $1, 2, 3, 4, 5$, but $45123$ is not. Find the number of quasi-increasing permutations of the integers $1, 2, \ldots, 7$.
@@ -931,8 +787,6 @@ The simple recurrence can be found.
 
 
 
-
-
 \textbf{Solution 2 (Breif Solution of Solution 1)}
 
 Now consider an integer $n$. We need to attach it to a permutation of length $n-1$. The integer $n$ should be placed before $n-1$ or $n-2$ or it should be completely placed at the end of the permutation of length $n-1$. Why? To satisfy the property that $a_k \leq a_{k+1} + 2$.
@@ -959,8 +813,6 @@ Now consider an integer $n$. We need to attach it to a permutation of length $n-
  
 
 
-
-
 	\item (\textit{AIME II 2015}) The circumcircle of acute $\triangle ABC$ has center $O$. The line passing through point $O$ perpendicular to $\overline{OB}$ intersects lines $AB$ and $BC$ at $P$ and $Q$, respectively. Also $AB=5$, $BC=4$, $BQ=4.5$, and $BP=\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -977,15 +829,11 @@ Call $M$ and $N$ the feet of the altitudes from $O$ to $BC$ and $AB$, respective
 
 
 
-
-
 \textbf{Solution 2 (fastest)}
 
 Minor arc $BC = 2A$ so $\angle{BOC}=2A$. Since $\triangle{BOC}$ is isosceles ($BO$ and $OC$ are radii), $\angle{CBO}=(180-2A)/2=90-A$. $\angle{CBO}=90-A$, so $\angle{BQO}=A$. From this we get that $\triangle{BPQ}\sim \triangle{BCA}$. So $\dfrac{BP}{BC}=\dfrac{BQ}{BA}$, plugging in the given values we get $\dfrac{BP}{4}=\dfrac{4.5}{5}$, so $BP=\dfrac{18}{5}$, and $m+n=\boxed{023}$.
 
  
-
-
 
 
 
@@ -1000,8 +848,6 @@ Let $r=BO$. Drawing perpendiculars, $BM=MC=2$ and $BN=NA=2.5$. From there,
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $\angle{BQO}=\alpha$. Extend $OB$ to touch the circumcircle at a point $K$. Then, note that $\angle{KAC}=\angle{CBK}=\angle{QBO}=90^\circ-\alpha$. But since $BK$ is a diameter, $\angle{KAB}=90^\circ$, implying $\angle{CAB}=\alpha$. It follows that $APCQ$ is a cyclic quadrilateral.
@@ -1010,8 +856,6 @@ Let $\angle{BQO}=\alpha$. Extend $OB$ to touch the circumcircle at a point $K$. 
  \[5x=4\cdot\frac 9 2\implies x=\frac{18}{5}.\]The answer is $18+5=\boxed{023}$.
 
  
-
-
 
 
 
@@ -1024,8 +868,6 @@ $\textit{Note: This is not a very good solution, but it is relatively natural an
  Using Power of a Point on $Q$ relative to circle $O$, we get that $x(x+2r) = 0.5 \cdot 4.5 = \frac{9}{4}$. Using Pythagorean Theorem on triangle $QOB$ to get $(x + r)^2 + r^2 = \frac{81}{4}$. Subtracting the first equation from the second, we get that $2r^2 = 18$ and therefore $r = 3$. Now, set $\cos{ABC} = y$. Using law of cosines on $ABC$ to find $AC$ in terms of $y$ and plugging that into the extended law of sines, we get $\frac{\sqrt{4^2 + 5^2 - 2 \cdot 4 \cdot 5 x}}{\sqrt{1 - x^2}} = 2R = 6$. Squaring both sides and cross multiplying, we get $36x^2 - 40x + 5 = 0$. Now, we get $x = \frac{10 \pm \sqrt{55}}{18}$ using quadratic formula. If you drew a decent diagram, $B$ is acute and therefore $x = \frac{10 + \sqrt{55}}{18}$(You can also try plugging in both in the end and seeing which gives a rational solution). Note that $BP = 3\frac{1}{\sin{OPB}} = \frac{3}{\cos{\angle ABC - \angle QBO}}.$ Using the cosine addition formula and then plugging in what we know about $QBO$, we get that $BP = \frac{162}{2\cos{B} + \sqrt{5}\sin{B}}$. Now, the hard part is to find what $\sin{B}$ is. We therefore want $\frac{\sqrt{324 - (10 + \sqrt{55})^2}}{18} = \frac{\sqrt{169 - 20\sqrt{55}}}{18}$. For the numerator, by inspection $(a + b\sqrt{55})^2$ will not work for integers $a$ and $b$. The other case is if there is $(a\sqrt{5} + b\sqrt{11})^2$. By inspection, $5\sqrt{5} - 2\sqrt{11}$ works. Therefore, plugging all this in yields the answer, $\frac{18}{5} \rightarrow \boxed{23}$. Solution by hyxue
 
  
-
-
 
 
 
@@ -1042,8 +884,6 @@ $\textit{Note: This is not a very good solution, but it is relatively natural an
 
 
 
-
-
 \textbf{Solution 7 (Coordinate Geometry)}
 
 Let $M$ be the midpoint of $AB$, and let $\ell$ be the perpendicular bisector of $\overline{AB}$. We establish a coordinate system with $B$ being the origin and $\overline{BC}$ being the $x$-axis. Here is our setup:\begin{align*}A&=(5\cos{B},5\sin{B})\\B&=(0,0)\\C&=(4,0)\\Q&=\left(\frac{9}{2},0\right)\\M&=\left(\frac{5}{2}\cos{B},\frac{5}{2}\sin{B}\right)\\O&=(x_{1},y_{1})\\P&=(x_{2},y_{2})\\AB&: y=\tan{B}x\\\ell&: y=-\frac{1}{\tan{B}}\left(x-\frac{5}{2}\cos{B}\right)+\frac{5}{2}\sin{B}\\\end{align*}
@@ -1055,6 +895,26 @@ We see that $x_2=BP\cdot \cos{B}$. Therefore, $BP=\frac{18}{5}$, and the request
  
 
 
+
+\textbf{Solution 8}
+
+Let $\omega$ be the circumcircle of $ABC$Let rays $OQ$ and $OP$ intersect $\omega$ at $X$ and $Y$, respectively. Power of a point on $Q$ with $\omega$ gives 
+ \[QX \cdot QY = QC \cdot QB = 0.5 \cdot 4.5 = 2.25,\] as $Q$ is outside $\omega$.Let $a=QX$ and $b=OX=OB$. Then the previous equation becomes 
+ \[a(a+2b)=a^2+2ab=2.25. \qquad {(1)}\]
+
+ Now, Pythagorean Theorem on triangle $QOB$ gives 
+ \[BO^2+OQ^2=BQ^2=4.5^2=20.25 \Rightarrow b^2+(a+b)^2=a^2+2ab+2b^2=20.25. \qquad{(2)}\]
+
+ Plugging equation $(1)$ into equation $(2)$ gives $2.25+2b^2=20.25$, or $b^2=9$. Thus $b=3$ (as lengths are positive).Plugging this back in equation $(1)$ gives 
+ \[a^2+6a=2.25 \Rightarrow a^2+6a-2.25=0 \Rightarrow 4a^2+24a-9=0.\]The quadratic equation yields 
+ \[a=\frac{-24\pm \sqrt{24^2-4(4)(-9)}}{8}=\frac{-24 \pm \sqrt{720}}{8}=\frac{-24 \pm 12\sqrt{5}}{8}=\frac{-6 \pm 3\sqrt{5}}{2}.\] Since lengths are positive, $a=\frac{3\sqrt{5}-6}{2}$.
+
+ Apply PoP on $P$ with respect to $\omega$ to get 
+ \[PY \cdot PX = PB \cdot PA = PB(5-PB) \Rightarrow PY\cdot PX = (YO-PO)(XO+PO) = (b-PO)(b+PO) = 9-PO^2 = PB(5-PB).\] Subtracting $9$ from both sides, we obtain 
+ \[9-PO^2-9=PB(5-PB)-9 \Rightarrow 18-(PO^2+9)=PB(5-PB) \Rightarrow 18-(PO^2+BO^2)=PB(5-PB).\] Because $\angle POB = 90^\circ$, we have $PO^2+OB^2=PB^2$. Therefore, 
+ \[18-PB^2=5PB-PB^2 \Rightarrow 18=5PB \Rightarrow PB=\frac{18}{5} \Rightarrow \boxed{23}.\]
+
+ 
 
 
 	\item (\textit{AIME II 2015}) There are $2^{10} = 1024$ possible $10$-letter strings in which each letter is either an A or a B. Find the number of such strings that do not have more than $3$ adjacent letters that are identical.
@@ -1093,8 +953,6 @@ So $f(n) = f(n-1) + f(n-2) + f(n-3)$. We can calculate the base cases pretty eas
 
 
 
-
-
 \textbf{Solution 2}
 
 This is a recursion problem. Let $a_n$ be the number of valid strings of $n$ letters, where the last letter is $A$.  Similarly, let $b_n$ be the number of valid strings of $n$ letters, where the last letter is $B$.
@@ -1125,8 +983,6 @@ This is a recursion problem. Let $a_n$ be the number of valid strings of $n$ let
 
 
 
-
-
 \textbf{Solution 3 (Without Recursion)}
 
 Playing around with strings gives this approach: We have a certain number of As, then Bs, and so on. Therefore, what if we denoted each solution with numbers like $(3,3,3,1)$ to denote AAABBBAAAB or vice versa (starting with Bs)? Every string can be represented like this!
@@ -1150,8 +1006,6 @@ Playing around with strings gives this approach: We have a certain number of As,
  Adding them all up gives you 274; multiplying by 2 gives $\boxed{548}$.
 
  
-
-
 
 
 
@@ -1181,8 +1035,6 @@ We are going to build the string, 1 character at a time. And, we are going to on
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $S_n$ be the number of n-letter strings satisfying the problem criteria. Then we can easily see $S_1 = 2, S_2 = 4, S_3 = 8, S_4 = 16-2 =14$. For $n \ge 4$ consider the last three elements of the list. For example to get $S_5$ we could try to take $S_4$ and multiply by 2 since for each $S_4$ string we have two choices for the fifth character. However we have to be careful if the last three characters of $S_4$ are all the same, as in that case we would be overcounting, (i.e if we have a string $\dots aaa$, we can only add $b$ to the end so that the problem criteria is satisfied. Additionally strings such as $\dots aaa$ or $\dots bbb$ should only be counted once as we only have one choice for the $n$th character to add ($b$ and $a$ respectively). 
@@ -1193,8 +1045,6 @@ Let $S_n$ be the number of n-letter strings satisfying the problem criteria. The
  \[S_5 = 2S_4 - S_1 = 26, S_6 = 2(26)-4 = 48, S_7 = 2(48) - 8 = 88, S_8 = 2(88) - 14 = 162, S_9 = 2(162) - 26 = 298, S_{10} = 2S_9 - 48 = \boxed{548}\]
 
  
-
-
 
 
 
@@ -1230,8 +1080,6 @@ Hence, the answer is\begin{align*}2\sum_{n=4}^{10} [x^{10-n}]  \frac{(1-x^3)^n}{
  
 
 
-
-
 	\item (\textit{AIME II 2015}) Define the sequence $a_1, a_2, a_3, \ldots$ by $a_n = \sum\limits_{k=1}^n \sin{k}$, where $k$ represents radian measure. Find the index of the 100th term for which $a_n < 0$.
 
 
@@ -1257,8 +1105,6 @@ If $n = 1$, $a_n = \sin(1) > 0$.  Then if $n$ satisfies $a_n < 0$, $n \ge 2$, an
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice that $a_n$ is the imaginary part of $\sum_{k=1}^n e^{ik}$, by Euler's formula. Using the geometric series formula, we find that this sum is equal to 
@@ -1267,8 +1113,6 @@ Notice that $a_n$ is the imaginary part of $\sum_{k=1}^n e^{ik}$, by Euler's for
  \[\frac{(\sin(n+1) \cos 1 - \cos(n+1) \sin 1) - \sin 1 \cos 1 + \sin 1 - \sin (n+1) + \sin 1 \cos 1}{2-2 \cos 1} = \frac{\sin n - \sin(n+1) + \sin 1}{2-2 \cos 1}\]Since $\cos 1 < 1$, $2-2 \cos 1 > 0$, so the denominator is positive. Thus, in order for the whole fraction to be negative, we must have $\sin (n+1) - \sin n > \sin 1 \implies 2 \cos \left(n + \frac{1}{2} \right) \sin \frac{1}{2} > \sin 1 \implies \cos \left( n + \frac{1}{2} \right) > \frac{\sin 1}{2 \sin{\frac{1}{2}}} = \cos \left(\frac{1}{2} \right),$ by sum to product. This only holds when $n$ is between $2\pi k - 1$ and $2\pi k$ for integer $k$ [continuity proof here], and since this has exactly one integer solution for every such interval, the $100$th such $n$ is $\lfloor 200\pi \rfloor = \boxed{628}$.
 
  
-
-
 
 
 
@@ -1290,8 +1134,6 @@ Similar to solution 2, we set a complex number $z=\cos 1+i\sin 1$. We start from
 
 
 
-
-
 \textbf{Solution 4}
 
 By the product-to-sum formula,
@@ -1301,8 +1143,6 @@ Then $a_n < 0$ when $\cos \frac{1}{2} < \cos \frac{2n + 1}{2}.$ This occurs if a
  \[2 \pi k - 1 < n < 2 \pi k.\]In other words, $n = \lfloor 2 \pi k \rfloor.$ The 100th index of this form is then $\lfloor 2 \pi \cdot 100 \rfloor = \boxed{628}.$
 
  
-
-
 
 
 	\item (\textit{AIME II 2015}) Let $x$ and $y$ be real numbers satisfying $x^4y^5+y^4x^5=810$ and $x^3y^6+y^3x^6=945$. Evaluate $2x^3+(xy)^3+2y^3$.
@@ -1325,15 +1165,11 @@ The expression we want to find is $2(x^3+y^3) + x^3y^3$.
 
 
 
-
-
 \textbf{Solution 2}
 
 Factor the given equations as $x^4y^4(x+y) = 810$ and $x^3y^3(x+y)(x^2-xy+y^2)=945$, respectively. By the first equation, $x+y=\frac{810}{x^4y^4}$. Plugging this in to the second equation and simplifying yields $(\frac{x}{y}-1+\frac{y}{x})=\frac{7}{6}$. Now substitute $\frac{x}{y}=a$. Solving the quadratic in $a$, we get $a=\frac{x}{y}=\frac{2}{3}$ or $\frac{3}{2}$ As both of the original equations were symmetric in $x$ and $y$, WLOG, let $\frac{x}{y}=\frac{2}{3}$, so $x=\frac{2}{3}y$. Now plugging this in to either one of the equations, we get the solutions $y=\frac{3(2^{\frac{2}{3}})}{2}$, $x=2^{\frac{2}{3}}$. Now plugging into what we want, we get $8+54+27=\boxed{089}$
 
  
-
-
 
 
 
@@ -1345,15 +1181,11 @@ Add three times the first equation to the second equation and factor to get $(xy
 
 
 
-
-
 \textbf{Solution 4}
 
 As with the other solutions, factor. But this time, let $a=xy$ and $b=x+y$. Then $a^4b=810$. Notice that $x^3+y^3 = (x+y)(x^2-xy+y^2) = b(b^2-3a)$, so we are looking for $2b(b^2-3a)+a^3$. Now, if we divide the second equation by the first one, we get $7/6 = \frac{b^2-3a}{a}$; then $\frac{b^2}{a}=\frac{25}{6}$. Therefore, $a = \frac{6}{25}b^2$. Substituting $\frac{6}{25}b^2$ for $a$ in equation 1, simplifying, and then taking the cube root gives us $b^3 = \frac{5^3}{2}.$ Finding $a^3$ by cubing $a = \frac{6}{25}b^2$ on both sides and simplifying using our previous substitution, we get $a^3 = 54$. Substituting this into the first equation and then dividing by $27$, we get $2b(b^2 - 3a) = 35$. Our final answer is $35+54=\boxed{089}$.
 
  
-
-
 
 
 
@@ -1392,8 +1224,6 @@ Factor the given equations as:
 
 
 
-
-
 \textbf{Solution 6}
 
 Factor the first and second equations as $(xy)^4(x+y)=810$ and $(xy)^3(x+y)(x^2-xy+y^2)=945$, respectively. Dividing them (allowed, since neither are $0$), we have
@@ -1403,8 +1233,6 @@ Factor the first and second equations as $(xy)^4(x+y)=810$ and $(xy)^3(x+y)(x^2-
  \[\left(\frac{3}{2}y\right)^4\left(\frac52 y\right)=810 \implies y^3 = 4 .\]Plugging this result (and the one for $x$ in terms of $y$) into our desired expression, we have
 
  
-
-
 
 
 
@@ -1426,8 +1254,6 @@ Take $w=x+y$ and $z=xy$. Remark that
 
 
 
-
-
 \textbf{Solution 8}
 
 $x^4y^4(x+y)=810; x^3y^3(x^3+y^3)=945, \frac{x^2-xy+y^2}{xy}=\frac{7}{6}, \frac{x^2+y^2}{xy}=\frac{13}{6}$
@@ -1440,15 +1266,11 @@ $x^4y^4(x+y)=810; x^3y^3(x^3+y^3)=945, \frac{x^2-xy+y^2}{xy}=\frac{7}{6}, \frac{
 
 
 
-
-
 \textbf{Solution 9}
 
 Let's first put the left hand sides of the equations in factored forms. Doing this we obtain $(xy)^4 \cdot (x + y) = 810$ and $(xy)(x + y)(x^2 - xy + y^2) = 945$. Now, we will subtract and add the equations to gather information on $x$ and $y$. When we subtract the equations and clean it up via factoring, we yield $(xy)^3 \cdot (x + y) \cdot (x - y)^2 = 115$, and when we add them, we yield $(xy)^3 \cdot (x + y) \cdot (x^2 + y^2) = 1755$. Now with some intuition, you should divide the equations to obtain $\frac{(x^2 + y^2)}{(x - y)^2} = 13$. Now, we clean this up to obtain the following factoring of $0 = 2 \cdot (2x - 3y) \cdot (3x - 2y)$. This implies that $x = \frac{3y}{2}$. We plug that into the target expression to reduce it down to one variable, and get that target expression is $2x^3 + (xy)^3 + 2y^3 = \frac{27}{4} \cdot y^3 + \frac{27}{8} \cdot y^6 + 2y^3$. This means that if we can find a way to get $y^3$, then the rest is trivial. We get $y^3$ by plugging in $x = \frac{3y}{2}$ into $x^3 \cdot y^6 + y^3 \cdot x^6 = 945$. However, this time we only factor as $(xy)^3 \cdot (x^3 + y^3)$ because we particularly want a cubic degree on $y$. Plugging in $x = \frac{3y}{2}$ we get $y^3 = 4$. Now lets plug this into our target expression to get $\frac{27}{4} \cdot 4 + \frac{27}{8} \cdot 4^2 + 2 \cdot 4 = \boxed{89}$.
 
  
-
-
 
 
 
@@ -1465,8 +1287,6 @@ Let $x, y$ be roots of some polynomial $P(\alpha)$. Then we have that $P(\alpha)
  -th1nq3r
 
  
-
-
 
 
 	\item (\textit{AIME II 2015}) Circles $\mathcal{P}$ and $\mathcal{Q}$ have radii $1$ and $4$, respectively, and are externally tangent at point $A$. Point $B$ is on $\mathcal{P}$ and point $C$ is on $\mathcal{Q}$ such that $BC$ is a common external tangent of the two circles. A line $\ell$ through $A$ intersects $\mathcal{P}$ again at $D$ and intersects $\mathcal{Q}$ again at $E$. Points $B$ and $C$ lie on the same side of $\ell$, and the areas of $\triangle DBA$ and $\triangle ACE$ are equal. This common area is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1503,8 +1323,6 @@ Let $M$ be the intersection of $\overline{BC}$ and the common internal tangent o
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -1529,8 +1347,6 @@ Then we can find the coordinates of $D$ by finding the point $(x,y)$ other than 
 
 
 
-
-
 \textbf{Solution 3}
 
 By \href{https://artofproblemsolving.com/wiki/index.php?title=Homothety}{homothety}, we deduce that $AE = 4 AD$. (The proof can also be executed by similar triangles formed from dropping perpendiculars from the centers of $P$ and $Q$ to $l$.) Therefore, our equality of area condition, or the equality of base times height condition, reduces to the fact that the distance from $B$ to $l$ is four times that from $C$ to $l$. Let the distance from $C$ be $x$ and the distance from $B$ be $4x$.
@@ -1548,8 +1364,6 @@ By \href{https://artofproblemsolving.com/wiki/index.php?title=Homothety}{homothe
  \textbf{Alternate Path to x} Call the intersection of lines $l$ and $BC$ $E$.You can use similar triangles to find that the distance from $B$ to $E$ is four times the distance from $C$ to $E$. Then draw a perpendicular from $A$ to $BC$ and call the point $F$. $AF = \frac{8}{5}$ and $FE = FC + CE = \frac{16}{5} + \frac{4}{3} = \frac{68}{15}$, so by the Pythagorean Theorem, $AE = \dfrac{20\sqrt{13}}{5}$. You can now use similar triangles to find that $x =  \dfrac{8}{5\sqrt{13}}$ and continue on like in solution 2.
 
  
-
-
 
 
 
@@ -1582,8 +1396,6 @@ Thus, $[\triangle CEG]=64/65\cdot 8\div 2=256/65$. The area of the whole cyclic 
 
 
 
-
-
 \textbf{Solution 5 (HARD computation)}
 
 
@@ -1613,8 +1425,6 @@ Thus, $[\triangle CEG]=64/65\cdot 8\div 2=256/65$. The area of the whole cyclic 
 
 
 
-
-
 \textbf{Solution 6 (Simple computation)}
 
 Let $K$ be the intersection of $BC$ and $AE$. Since the radii of the two circles are 1:4, so we have $AD:AE=1:4$, and the distance from $B$ to line $l$ and the distance from $C$ to line $l$ are in a ratio of 4:1, so $BK:CK=4:1$. We can easily calculate the length of $BC$ to be 4, so $CK=\frac{4}{3}$. Let $J$ be the foot of perpendicular line from $A$ to $BC$, we can know that $BJ:CJ=1:4$, so $BJ = 0.8$, $CJ=3.2$, $AJ=1.6$, and $AK=\sqrt{1.6^2+\left(3.2+\frac{4}{3}\right)^2}=\frac{4}{3}\sqrt{13}$. Since $CK^2 = EK\cdot AK$, so $EK=\frac{4}{39}\sqrt{13}$, and $AE = \frac{4}{3}\sqrt{13} - \frac{4}{39}\sqrt{13}= \frac{16}{13}\sqrt{13}$. $\sin\angle AKB=\frac{AJ}{AK} = \frac{1.6}{\frac{4}{3}\sqrt{13}}=\frac{1.2}{\sqrt{13}}$, so the distance from $C$ to line $l$ is $d=CK\cdot \sin\angle AKB = \frac{4}{3}\cdot \frac{1.2}{\sqrt{13}}=\frac{1.6}{\sqrt{13}}$. so the area is
@@ -1623,8 +1433,6 @@ Let $K$ be the intersection of $BC$ and $AE$. Since the radii of the two circles
  --- by Dan Li
 
  
-
-
 
 
 
@@ -1658,15 +1466,11 @@ Consider the common tangent from $A$ to both circles. Let this intersect $BC$ at
 
 
 
-
-
 \textbf{Solution 8 (Synthetic-Trigonometry)}
 
 Add in the line $k$ as the internal tangent between the two circles. Let $M$ be the midpoint of $BC$; It is well-known that $M$ is on $k$ and because $k$ is the radical axis of the two circles, $AM=BM=CM$. Therefore because $M$ is the circumcenter of $\triangle{BAC}$, $\angle{BAC}=90^{\circ}$. Let $O_P$ be the center of circle $\mathcal{P}$ and likewise let $O_Q$ be the center of circle $\mathcal{Q}$. It is well known that by homothety $O_P, A,$ and $O_Q$ are collinear. It is well-known that $\angle{ABC}=\angle{ADB}=b$, and likewise $\angle{ACB}=\angle{AEC}=c$. By homothety, $AD=4AE$, therefore since the two triangles mentioned in the problem, the length of the altitude from $B$ to $AD$ is four times the length of the altitude from $C$ to $AE$. Using the Pythagorean Theorem, $BC = 4$. By angle-chasing, $O_{P}AMB$ is cyclic, and likewise $O_{Q}CMA$ is cyclic. Use the Pythagorean Theorem for $\triangle{O_{P}BM}$ to get $O_{P}M=\sqrt{5}$. Then by Ptolemy's Theorem $AB=\frac{4\sqrt{5}}{5} \implies AC=\frac{8\sqrt{5}}{5}$. Now to compute the area, using what we know about the length of the altitude from $B$ to $AD$ is four times the length of the altitude from $C$ to $AE$, letting $x$ be the length of the altitude from $C$ to $AE$, $x=\frac{8}{5\sqrt{13}}$. From the Law of Sines, $\frac{BD}{\sin{A}}=2 \implies \sin{A}=\frac{4x}{AB} \implies BD=\frac{8x}{AB}=\frac{16\sqrt{65}}{65}$. Then use the Pythagorean Theorem twice and add up the lengths to get $AD=\frac{4}{\sqrt{13}}$. Use the formula $\frac{b \times h}{2}$ to get $\frac{64}{65} = \boxed{129}$ as the answer.
 
  
-
-
 
 
 
@@ -1701,8 +1505,6 @@ Add in the line $k$ as the internal tangent between the two circles. Let $M$ be 
  \[[ACE]  = 8\left( \frac{16}{65}+\frac{4}{5} - \frac{4}{5}\cdot \frac{63}{65} - \frac{3}{5}\cdot \frac{16}{65}\right) = \frac{64}{65}\implies \boxed {129}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -1749,8 +1551,6 @@ We begin by extending $\overline{AB}$ upwards until it intersects Circle $\mathc
 
 
 
-
-
 \textbf{Solution 11 (Trig)}
 
 Let the center of the larger circle be $O,$ and the center of the smaller circle be $P.$ It is not hard to find the areas of $ACO$ and $ABP$ using pythagorean theorem, which are $\frac{32}{5}$ and $\frac{2}{5}$ respectively. Assign $\angle AOC=a,\angle COE=c,\angle DPB=d,\angle BPA=b.$ We can figure out that $\angle AOE=\angle DOA=\theta$ using vertical angles and isosceles triangles. Now, using $[ABC]=\frac{1}{2}ab\sin C$
@@ -1762,8 +1562,6 @@ Let the center of the larger circle be $O,$ and the center of the smaller circle
  \[[ACE]=[DAB]=\dfrac{64}{65},\] which means the answer is $64+65=\boxed{129}.$
 
  
-
-
 
 
 
@@ -1811,8 +1609,6 @@ Let the center of the larger circle be $O,$ and the center of the smaller circle
  Now, we can compute the area of $\triangle DBA$: $[DBA] = \dfrac{\frac{8}{5} \cdot \frac{68}{65} -\frac{4}{5} \cdot \frac{68}{65} \cdot \left(-\frac{6}{17}\right)}{2}=\dfrac{\frac{8\cdot68+4\cdot4\cdot6}{5\cdot65}}{2}=\frac{64}{65} \implies m+m=\boxed{129}$.
 
  
-
-
 
 
 
@@ -1872,8 +1668,6 @@ $BC = \sqrt{(1+4)^2-(4-1)^2} = 4$
 
 
 
-
-
 \textbf{Solution 14 (Coordinate Geometry)}
 
 Let $O_1, O_2$ be the center of circles $\mathcal{P},\mathcal{Q}$, respectively. Note that $A=O_1+\frac{1}{5}\overrightarrow{O_{1}O_{2}}$. Let $X$ be the intersection of $\overline{DE}$ and $\overline{BC}$. We establish a coordinate system with $B$ being the origin and $\overline{BC}$ being the $x$-axis. After some minor calculations, here is our setup:\begin{align*}A&=(\frac{4}{5},\frac{8}{5})\\B&=(0,0)\\C&=(4,0)\\O_1&=(0,1)\\O_2&=(4,4)\\X&=(x_1,0)\\D&=(x_2,y_2)\\E&=(x_3,y_3)\\DE&: y=-k(x-\frac{4}{5})+\frac{8}{5}\\\mathcal{P}&: x^2+(y-1)^2=1\\\mathcal{Q}&: (x-4)^2+(y-4)^2=16\end{align*}
@@ -1888,8 +1682,6 @@ Solving $(1)$, we have
 The requested sum is $64+65=\boxed{129}$.
 
  
-
-
 
 
 \end{enumerate}

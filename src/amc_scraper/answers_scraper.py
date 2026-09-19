@@ -6,12 +6,13 @@ import json
 from itertools import batched
 from tqdm import tqdm
 
+from concurrent.futures import ThreadPoolExecutor
 
 from .utils import *
 from .config import *
 from .scraper import *
 
-def get_answers_from_url(s,msg = True) :
+def get_answers_from_url(s,vers,numprob,msg = True) :
     content,problem_title,url = get_soup(s,'a',msg)
     
     if content is None:
@@ -21,11 +22,9 @@ def get_answers_from_url(s,msg = True) :
     ol_elem = content.find('ol')
     li_list = ol_elem.find_all('li')
 
-    if(len(li_list)>=15 and msg):
-        print_message(f"{problem_title} Answer Key Retrieved")
 
-    temp = re.search(PATTERN_VERSION,url)
-    vers = temp.group(1) if (temp and temp.group(1)) else 'I'
+    if(len(li_list)>=numprob and msg):
+        print_message(f"{problem_title} Answer Key Retrieved")
 
     answers = []
     for number,answer in enumerate(li_list):
@@ -51,12 +50,12 @@ def get_answers_full(contest,
                 leave = True)
     try :
         for i,chunk in bar :
-            for year,source in chunk :
-                anss = get_answers_from_url(source,msg = False)
-                for ans in anss :
-                    ans['year'] = year
-                answers+=anss
-                time.sleep(VSWAIT)
+            with ThreadPoolExecutor(max_workers=chunk_size) as pool:
+                records = pool.map(lambda p : get_answers_from_url(p[1],p[2],p[3],msg = False), chunk)
+                for p,l in zip(chunk,records) :
+                    for ans in l :
+                        ans['year'] = p[0]
+                    answers+=l
             time.sleep(SWAIT)
             bar.set_postfix(downloaded = f'{len(answers)}',
                             last_year = answers[-1]['year'],

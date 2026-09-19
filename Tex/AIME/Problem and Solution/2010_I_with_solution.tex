@@ -17,8 +17,6 @@ $2010^2 = 2^2\cdot3^2\cdot5^2\cdot67^2$. Thus there are $(2+1)^4$ divisors, $(1+
 
 
 
-
-
 \textbf{Solution 2 (Using a Bit More Counting)}
 
 The prime factorization of $2010^2$ is $67^2\cdot3^2\cdot2^2\cdot5^2$. Therefore, the number of divisors of $2010^2$ is $3^4$ or $81$, $16$ of which are perfect squares. The number of ways we can choose $1$ perfect square from the two distinct divisors is $\binom{16}{1}\binom{81-16}{1}$. The total number of ways to pick two divisors is $\binom{81}{2}$
@@ -30,8 +28,6 @@ The prime factorization of $2010^2$ is $67^2\cdot3^2\cdot2^2\cdot5^2$. Therefore
 
 
 
-
-
 \textbf{Solution 3 (Using a Bit Bit more counting)}
 
 The prime factorization of $2010^2$ is $67^2\cdot3^2\cdot2^2\cdot5^2$. So, there are $3^4 = 81$ divisors. Now, consider the subset $\{2,3,5,67 \}$. Take a subset of this set. Then, square and multiply the elements. We have a perfect square that is a divisor of $2010^2$. From that information, we include the empty set as $\{ \} = 1$ is a viable option. That is 16 possible squares.
@@ -39,8 +35,6 @@ The prime factorization of $2010^2$ is $67^2\cdot3^2\cdot2^2\cdot5^2$. So, there
  So, the probability (as in solution 1) is $\frac{16}{81} \cdot \frac{80-15}{80} = \frac{16}{81} \cdot \frac{13}{16} = \frac{13}{81}$. Times two due to the number of permutations, we have $p = \frac{26}{81} \implies \boxed{107}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2010}) Find the remainder when $9 \times 99 \times 999 \times \cdots \times \underbrace{99\cdots9}_{\text{999 9's}}$ is divided by $1000$.
@@ -59,8 +53,6 @@ Note that $999\equiv 9999\equiv\dots \equiv\underbrace{99\cdots9}_{\text{999 9's
 
 
 
-
-
 \textbf{Solution 2}
 
 The expression also equals $(10-1)(100-1)\dots({10^{999}}-1)$. To find its modular 1,000, remove all terms from 1,000 and after. Then the expression becomes $(10-1)(100-1)(-1) \pmod{1000} \equiv -891 \pmod{1000} \equiv \boxed{109}\pmod{1000}$
@@ -68,8 +60,6 @@ The expression also equals $(10-1)(100-1)\dots({10^{999}}-1)$. To find its modul
  By maxamc
 
  
-
-
 
 
 	\item (\textit{AIME I 2010}) Suppose that $y = \frac34x$ and $x^y = y^x$. The quantity $x + y$ can be expressed as a rational number $\frac {r}{s}$, where $r$ and $s$ are relatively prime positive integers. Find $r + s$.
@@ -96,14 +86,14 @@ Substitute $y = \frac34x$ into $x^y = y^x$ and solve.
 
 
 
-
-
 \textbf{Solution 2}
 
 We solve in general using $c$ instead of $3/4$. Substituting $y = cx$, we have:
 
  
- \[x^{cx} = (cx)^x \Longrightarrow (x^x)^c = c^x\cdot x^x\]Dividing by $x^x$, we get $(x^x)^{c - 1} = c^x$.
+ \[x^{cx} = (cx)^x \Longrightarrow (x^x)^c = c^x\cdot x^x\]
+
+ Dividing by $x^x$, we get $(x^x)^{c - 1} = c^x$.
 
  Taking the $x$th root, $x^{c - 1} = c$, or $x = c^{1/(c - 1)}$.
 
@@ -113,22 +103,24 @@ We solve in general using $c$ instead of $3/4$. Substituting $y = cx$, we have:
 
 
 
-
-
 \textbf{Solution 3}
 
 Taking the logarithm base $x$ of both sides, we arrive with:
 
  
- \[y = \log_x y^x \Longrightarrow \frac{y}{x} = \log_{x} y = \log_x \frac{3}{4}x = \frac{3}{4}\]Where the last two simplifications were made since $y = \frac{3}{4}x$. Then,
+ \[y = \log_x y^x \Longrightarrow \frac{y}{x} = \log_{x} y = \log_x \frac{3}{4}x = \frac{3}{4}\]
+
+ Where the last two simplifications were made since $y = \frac{3}{4}x$. Then,
 
  
- \[x^{\frac{3}{4}} = \frac{3}{4}x \Longrightarrow x^{\frac{1}{4}} = \frac{4}{3} \Longrightarrow x = \left(\frac{4}{3}\right)^4\]Then, $y = \left(\frac{4}{3}\right)^3$, and thus:
+ \[x^{\frac{3}{4}} = \frac{3}{4}x \Longrightarrow x^{\frac{1}{4}} = \frac{4}{3} \Longrightarrow x = \left(\frac{4}{3}\right)^4\]
+
+ Then, $y = \left(\frac{4}{3}\right)^3$, and thus:
 
   
  \[x+y = \left(\frac{4}{3}\right)^3 \left(\frac{4}{3} + 1 \right) = \frac{448}{81} \Longrightarrow 448 + 81 = \boxed{529}\] 
 
-
+ 
 
 
 
@@ -146,8 +138,6 @@ Taking the logarithm base $x$ of both sides, we arrive with:
  \[\Longleftrightarrow x = \left(\frac{4}{3}\right)^4=\frac{256}{81}\]Then find $y$ as in solution 3, and we get $\boxed{529}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2010}) Jackie and Phil have two fair coins and a third coin that comes up heads with probability $\frac47$. Jackie flips the three coins, and then Phil flips the three coins. Let $\frac {m}{n}$ be the probability that Jackie gets the same number of heads as Phil, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -173,8 +163,6 @@ This can be solved quickly and easily with \href{https://artofproblemsolving.com
  $123 + 392 = \boxed{515}$
 
  
-
-
 
 
 
@@ -239,8 +227,6 @@ We perform \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{
  
 
 
-
-
 	\item (\textit{AIME I 2010}) Positive integers $a$, $b$, $c$, and $d$ satisfy $a > b > c > d$, $a + b + c + d = 2010$, and $a^2 - b^2 + c^2 - d^2 = 2010$. Find the number of possible values of $a$.
 
 
@@ -263,8 +249,6 @@ Note: We can also find that $b=a-1$ in another way. We know
 
 
 
-
-
 \textbf{Solution 2}
 
 Since $a+b$ must be greater than $1005$, it follows that the only possible value for $a-b$ is $1$ (otherwise the quantity $a^2 - b^2$ would be greater than $2010$). Therefore the only possible ordered pairs for $(a,b)$ are $(504, 503)$, $(505, 504)$, ... , $(1004, 1003)$, so  $a$ has $\boxed{501}$ possible values. Hence the answer is 500+1=501
@@ -273,8 +257,6 @@ Since $a+b$ must be greater than $1005$, it follows that the only possible value
 
 
  
-
-
 
 
 
@@ -320,8 +302,6 @@ Let $x = a-b$, $y = b-c$, and $z = c-d$. Since $a > b > c > d \ge 1$, then $x, y
  
 
 
-
-
 	\item (\textit{AIME I 2010}) Let $P(x)$ be a quadratic polynomial with real coefficients satisfying $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$ for all real  numbers $x$, and suppose $P(11) = 181$. Find $P(16)$.
 
 
@@ -337,7 +317,9 @@ Let $x = a-b$, $y = b-c$, and $z = c-d$. Since $a > b > c > d \ge 1$, then $x, y
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2010_6_Solution_Figure_1.png}
                     \end{figure}
-                    Let $Q(x) = x^2 - 2x + 2$, $R(x) = 2x^2 - 4x + 3$. \href{https://artofproblemsolving.com/wiki/index.php?title=Completing\_the\_square}{Completing the square}, we have $Q(x) = (x-1)^2 + 1$, and $R(x) = 2(x-1)^2 + 1$, so it follows that $P(x) \ge Q(x) \ge 1$ for all $x$ (by the \href{https://artofproblemsolving.com/wiki/index.php?title=Trivial\_Inequality}{Trivial Inequality}). 
+                    
+
+ Let $Q(x) = x^2 - 2x + 2$, $R(x) = 2x^2 - 4x + 3$. \href{https://artofproblemsolving.com/wiki/index.php?title=Completing\_the\_square}{Completing the square}, we have $Q(x) = (x-1)^2 + 1$, and $R(x) = 2(x-1)^2 + 1$, so it follows that $P(x) \ge Q(x) \ge 1$ for all $x$ (by the \href{https://artofproblemsolving.com/wiki/index.php?title=Trivial\_Inequality}{Trivial Inequality}). 
 
  Also, $1 = Q(1) \le P(1) \le R(1) = 1$, so $P(1) = 1$, and $P$ obtains its minimum at the point $(1,1)$. Then $P(x)$ must be of the form $c(x-1)^2 + 1$ for some constant $c$; substituting $P(11) = 181$ yields $c = \frac 95$. Finally, $P(16) = \frac 95 \cdot (16 - 1)^2 + 1 = \boxed{406}$.
 
@@ -345,17 +327,15 @@ Let $x = a-b$, $y = b-c$, and $z = c-d$. Since $a > b > c > d \ge 1$, then $x, y
 
 
 
-
-
 \textbf{Solution 2}
 
 It can be seen that the function $P(x)$ must be in the form $P(x) = ax^2 - 2ax + c$ for some real $a$ and $c$. This is because the \href{https://artofproblemsolving.com/wiki/index.php?title=Derivative}{derivative} of $P(x)$ is $2ax - 2a$, and a global minimum occurs only at $x = 1$ (in addition, because of this derivative, the vertex of any quadratic polynomial occurs at $\frac{-b}{2a}$). Substituting $(1,1)$ and $(11, 181)$ we obtain two equations:
 
- $P(11) = 99a + c = 181$, and $P(1) = -a + c = 1$.Solving, we get $a = \frac{9}{5}$ and $c = \frac{14}{5}$, so $P(x) = \frac{9}{5}x^2 - \frac{18}{5}x + \frac {14}{5}$. Therefore, $P(16) = \boxed{406}$.
+ $P(11) = 99a + c = 181$, and $P(1) = -a + c = 1$.
+
+ Solving, we get $a = \frac{9}{5}$ and $c = \frac{14}{5}$, so $P(x) = \frac{9}{5}x^2 - \frac{18}{5}x + \frac {14}{5}$. Therefore, $P(16) = \boxed{406}$.
 
  
-
-
 
 
 
@@ -381,8 +361,6 @@ Let $y = x^2 - 2x + 2$; note that $2y - 1 = 2x^2 - 4x + 3$. Setting $y = 2y - 1$
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $Q(x) = P(x) - (x^2-2x+2)$, then $0\le Q(x) \le (x-1)^2$ (note this is derived from the given inequality chain).  Therefore, $0\le Q(x+1) \le x^2 \Rightarrow Q(x+1) = Ax^2$ for some real value A.
@@ -395,15 +373,11 @@ Let $Q(x) = P(x) - (x^2-2x+2)$, then $0\le Q(x) \le (x-1)^2$ (note this is deriv
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $P(x) = ax^2 + bx + c$. Plugging in $x = 1$ to the expressions on both sides of the inequality, we see that $a + b + c = 1$. We see from the problem statement that $121a + 11b + c = 181$. Since we know the vertex of $P(x)$ lies at $x = 1$, by symmetry we get $81a -9b + c = 181$ as well. Since we now have three equations, we can solve this trivial system and get our answer of $\boxed{406}$.
 
  
-
-
 
 
 
@@ -415,15 +389,11 @@ Similar to Solution 5, let $P(x) = ax^2 + bx + c$. Note that $(1,1)$ is a vertex
 
 
 
-
-
 \textbf{Solution 7}
 
 Very similar to Solution 6, start by noticing that $P(x)$ is between two polynomials, we try to set them equal to find a point where the two polynomials intersect, meaning that $P(x)$ would also have to intersect that point (it must be between the two graphs). Setting $x^2 - 2x + 2 = 2x^2 - 4x + 3$, we find that $x = 1$. Note that both of these graphs have the same vertex (at $x = 1$), and so $P(x)$ must also have the same vertex $(1, 1)$. Setting $P(x) = ax^2 - 2ax + a + 1$ (this is where we have a vertex at $(1, 1)$), we plug in $11$ and find that $a = 1.8$. Evaluating $1.8x^2 - 3.6x + 2.8$ when $x = 16$ (our intended goal), we find that $P(16) = \boxed{406}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2010}) Define an ordered triple $(A, B, C)$ of sets to be \textit{minimally intersecting} if $|A \cap B| = |B \cap C| = |C \cap A| = 1$ and $A \cap B \cap C = \emptyset$. For example, $(\{1,2\},\{2,3\},\{1,3,4\})$ is a minimally intersecting triple. Let $N$ be the number of minimally intersecting ordered triples of sets for which each set is a subset of $\{1,2,3,4,5,6,7\}$. Find the remainder when $N$ is divided by $1000$.
@@ -448,8 +418,6 @@ Let each pair of two sets have one element in common. Label the common elements 
  
 
 
-
-
 	\item (\textit{AIME I 2010}) For a real number $a$, let $\lfloor a \rfloor$ denote the greatest integer less than or equal to $a$. Let $\mathcal{R}$ denote the region in the coordinate plane consisting of points $(x,y)$ such that $\lfloor x \rfloor ^2 + \lfloor y \rfloor ^2 = 25$. The region $\mathcal{R}$ is completely contained in a disk of radius $r$ (a disk is the union of a circle and its interior). The minimum value of $r$ can be written as $\frac {\sqrt {m}}{n}$, where $m$ and $n$ are integers and $m$ is not divisible by the square of any prime. Find $m + n$.
 
 
@@ -469,7 +437,7 @@ The desired region consists of 12 boxes, whose lower-left corners are integers s
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -488,8 +456,6 @@ When observing the equation $\lfloor x \rfloor ^2 + \lfloor y \rfloor ^2 = 25$, 
  
 
 
-
-
 	\item (\textit{AIME I 2010}) Let $(a,b,c)$ be a real solution of the system of equations $x^3 - xyz = 2$, $y^3 - xyz = 6$, $z^3 - xyz = 20$. The greatest possible value of $a^3 + b^3 + c^3$ can be written in the form $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
@@ -506,15 +472,11 @@ Add the three equations to get $a^3 + b^3 + c^3 = 28 + 3abc$.  Now, let $abc = p
 
 
 
-
-
 \textbf{Solution 2}
 
 This is almost the same as solution 1. Note $a^3 + b^3 + c^3 = 28 + 3abc$. Next, let $k = a^3$. Note that $b = \sqrt [3]{k + 4}$ and  $c = \sqrt [3]{k + 18}$, so we have $28 + 3\sqrt [3]{k(k+4)(k+18)} = 28+3abc=a^3+b^3+c^3=3k+22$. Move 28 over, divide both sides by 3, then cube to get $k^3-6k^2+12k-8 = k^3+22k^2+18k$. The $k^3$ terms cancel out, so solve the quadratic to get $k = -2, -\frac{1}{7}$. We maximize $abc$ by choosing $k = -\frac{1}{7}$, which gives us $a^3+b^3+c^3 = 3k + 22 = \frac{151}{7}$. Thus, our answer is $151+7=\boxed{158}$.
 
  
-
-
 
 
 
@@ -525,13 +487,7 @@ We have that $x^3 = 2 + xyz$, $y^3 = 6 + xyz$, and $z^3 = 20 + xyz$. Multiplying
  
 
 
- \textbf{Remark} It is tempting to add the equations and then use the well-known factorization $x^3+y^3+z^3-3xyz = (x+y+z)(x^2+y^2+z^2-xy-xz-yz)$. Unfortunately such a factorization is just a red herring: it doesn't give much information on $a^3+b^3+c^3$.
-
- \textbf{Another Remark} The real problem with adding the equations is that $x, y, z$ are real numbers based on the problem, but the adding trick only works when $x, y, z$ are integers.
-
  
-
-
 
 
 	\item (\textit{AIME I 2010}) Let $N$ be the number of ways to write $2010$ in the form $2010 = a_3 \cdot 10^3 + a_2 \cdot 10^2 + a_1 \cdot 10 + a_0$, where the $a_i$'s are integers, and $0 \le a_i \le 99$. An example of such a representation is $1\cdot 10^3 + 3\cdot 10^2 + 67\cdot 10^1 + 40\cdot 10^0$. Find $N$.
@@ -550,15 +506,11 @@ If we choose $a_3$ and $a_1$ such that $(10^3)(a_3) + (10)(a_1) \leq 2010$ there
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that $a_2\cdot 10^2 + a_0$ is the base $100$ representation of any number from $0$ to $9999$, and similarly $10(a_3\cdot 10^2 + a_1)$ is ten times the base $100$ representation of any number from $0$ to $9999$. Thus, the number of solutions is just the number of solutions to $2010 = 10a+b$ where $0\le a, b\le 9999$, which is equal to $\boxed{202}$ as $a$ can range from $0$ to $201$.
 
  
-
-
 
 
 
@@ -578,8 +530,6 @@ Note that $a_0 \equiv 2010\ (\textrm{mod}\ 10)$ and $a_1 \equiv 2010 - a_0\  (\t
 
 
 
-
-
 \textbf{Solution 4: Casework and Brute Force}
 
 We immediately see that $a_3$ can only be $0$, $1$ or $2$. We also note that the maximum possible value for $10a_1 + a_0$ is $990 + 99 = 1089$. We then split into cases:
@@ -596,8 +546,6 @@ We immediately see that $a_3$ can only be $0$, $1$ or $2$. We also note that the
 
 
 
-
-
 \textbf{Solution 5: Generating Functions}
 
 We will represent the problem using generating functions. Consider the generating function 
@@ -605,8 +553,6 @@ We will represent the problem using generating functions. Consider the generatin
  \[f(x) = \frac{\cancel{x^{100}-1}}{x-1} \cdot \frac{\cancel{x^{1000}-1}}{x^{10}-1} \cdot \frac{x^{10000}-1}{\cancel{x^{100}-1}} \cdot \frac{x^{100000}-1}{\cancel{x^{1000}-1}}=\frac{x^{10000}-1}{x-1} \cdot \frac{x^{100000}-1}{x^{10}-1} = (1+x+x^2+\cdots + x^{9999})(1+x^{10}+x^{20}+\cdots+x^{99990})\]The coefficient of $x^{2010}$ in this is simply $\boxed{202}$, as we can choose any of the first 202 terms from the second factor and pair it with exactly one term in the first factor.
 
  
-
-
 
 
 
@@ -622,15 +568,11 @@ Now, each integer between $0$ and $201$ inclusive can be represented in exactly 
 
 
 
-
-
 \textbf{Solution 6}
 
 Just note that this corresponds to $0 \leq 10^3 \cdot a_3 + 10^2 \cdot a_2 + 10^1 \cdot a_1 \leq 2010$, because we can use $a_0$ to fill in the remaining gap. Then, dividing by $10$, we have $0 \leq \overline{a_3 a_2 a_1} \leq 201$, of which there are $\boxed{202}$ solutions.
 
  
-
-
 
 
 
@@ -655,8 +597,6 @@ Note that $1000a_3 + 100a_2 + 10a_1$ is always a multiple of 10. Then, if the su
  
 
 
-
-
 	\item (\textit{AIME I 2010}) Let $\mathcal{R}$ be the region consisting of the set of points in the coordinate plane that satisfy both $|8 - x| + y \le 10$ and $3y - x \ge 15$. When $\mathcal{R}$ is revolved around the line whose equation is $3y - x = 15$, the volume of the resulting solid is $\frac {m\pi}{n\sqrt {p}}$, where $m$, $n$, and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m + n + p$.
 
 
@@ -672,18 +612,20 @@ Note that $1000a_3 + 100a_2 + 10a_1$ is always a multiple of 10. Then, if the su
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2010_11_Solution_Figure_1.png}
                     \end{figure}
-                    The \href{https://artofproblemsolving.com/wiki/index.php?title=Inequality}{inequalities} are equivalent to $y \ge x/3 + 5, y \le 10 - |x - 8|$. We can set them equal to find the two points of intersection, $x/3 + 5 = 10 - |x - 8| \Longrightarrow |x - 8| = 5 - x/3$. This implies that one of $x - 8, 8 - x = 5 - x/3$, from which we find that $(x,y) = \left(\frac 92, \frac {13}2\right), \left(\frac{39}{4}, \frac{33}{4}\right)$. The region $\mathcal{R}$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle}, as shown above. When revolved about the line $y = x/3+5$, the resulting solid is the union of two right \href{https://artofproblemsolving.com/wiki/index.php?title=Cone}{cones} that share the same base and axis. 
+                    
+
+ The \href{https://artofproblemsolving.com/wiki/index.php?title=Inequality}{inequalities} are equivalent to $y \ge x/3 + 5, y \le 10 - |x - 8|$. We can set them equal to find the two points of intersection, $x/3 + 5 = 10 - |x - 8| \Longrightarrow |x - 8| = 5 - x/3$. This implies that one of $x - 8, 8 - x = 5 - x/3$, from which we find that $(x,y) = \left(\frac 92, \frac {13}2\right), \left(\frac{39}{4}, \frac{33}{4}\right)$. The region $\mathcal{R}$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle}, as shown above. When revolved about the line $y = x/3+5$, the resulting solid is the union of two right \href{https://artofproblemsolving.com/wiki/index.php?title=Cone}{cones} that share the same base and axis. 
 
  
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2010_11_Solution_Figure_2.png}
                     \end{figure}
-                    Let $h_1,h_2$ denote the height of the left and right cones, respectively (so $h_1 > h_2$), and let $r$ denote their common radius. The volume of a cone is given by $\frac 13 Bh$; since both cones share the same base, then the desired volume is $\frac 13 \cdot \pi r^2 \cdot (h_1 + h_2)$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Distance}{distance} from the point $(8,10)$ to the line $x - 3y + 15 = 0$ is given by $\left|\frac{(8) - 3(10) + 15}{\sqrt{1^2 + (-3)^2}}\right| = \frac{7}{\sqrt{10}}$. The distance between $\left(\frac 92, \frac {13}2\right)$ and $\left(\frac{39}{4}, \frac{33}{4}\right)$ is given by $h_1 + h_2 = \sqrt{\left(\frac{18}{4} - \frac{39}{4}\right)^2 + \left(\frac{26}{4} - \frac{33}{4}\right)^2} = \frac{7\sqrt{10}}{4}$. Thus, the answer is $\frac{343\sqrt{10}\pi}{120} = \frac{343\pi}{12\sqrt{10}} \Longrightarrow 343 + 12 + 10 = \boxed{365}$.
+                    
+
+ Let $h_1,h_2$ denote the height of the left and right cones, respectively (so $h_1 > h_2$), and let $r$ denote their common radius. The volume of a cone is given by $\frac 13 Bh$; since both cones share the same base, then the desired volume is $\frac 13 \cdot \pi r^2 \cdot (h_1 + h_2)$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Distance}{distance} from the point $(8,10)$ to the line $x - 3y + 15 = 0$ is given by $\left|\frac{(8) - 3(10) + 15}{\sqrt{1^2 + (-3)^2}}\right| = \frac{7}{\sqrt{10}}$. The distance between $\left(\frac 92, \frac {13}2\right)$ and $\left(\frac{39}{4}, \frac{33}{4}\right)$ is given by $h_1 + h_2 = \sqrt{\left(\frac{18}{4} - \frac{39}{4}\right)^2 + \left(\frac{26}{4} - \frac{33}{4}\right)^2} = \frac{7\sqrt{10}}{4}$. Thus, the answer is $\frac{343\sqrt{10}\pi}{120} = \frac{343\pi}{12\sqrt{10}} \Longrightarrow 343 + 12 + 10 = \boxed{365}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2010}) Let $m \ge 3$ be an integer and let $S = \{3,4,5,\ldots,m\}$. Find the smallest value of $m$ such that for every partition of $S$ into two subsets, at least one of the subsets contains integers $a$, $b$, and $c$ (not necessarily distinct) such that $ab = c$.
@@ -707,8 +649,6 @@ We claim that $243$ is the minimal value of $m$. Let the two partitioned sets be
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider $\{3,4,12\}$. We could have any two of the three be together in the same set, and the third in the other set. Thus, we have $\{3,4\}, \{3,12\}, \{4,12\}$. We will try to 'place' numbers in either set such that we never have $a\cdot b = c$, until we reach a point where we MUST have $a\cdot b =c$. 
@@ -721,14 +661,7 @@ Consider $\{3,4,12\}$. We could have any two of the three be together in the sam
 
  Thus, $\boxed{243}$ is the minimum $m$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2010}) Rectangle $ABCD$ and a semicircle with diameter $AB$ are coplanar and have nonoverlapping interiors. Let $\mathcal{R}$ denote the region enclosed by the semicircle and the rectangle. Line $\ell$ meets the semicircle, segment $AB$, and segment $CD$ at distinct points $N$, $U$, and $T$, respectively. Line $\ell$ divides region $\mathcal{R}$ into two regions with areas in the ratio $1: 2$. Suppose that $AU = 84$, $AN = 126$, and $UB = 168$. Then $DA$ can be represented as $m\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$.
@@ -748,7 +681,7 @@ Consider $\{3,4,12\}$. We could have any two of the three be together in the sam
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -796,8 +729,6 @@ The center of the semicircle is also the midpoint of $AB$. Let this point be O. 
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $O$ be the center of the semicircle. It follows that $AU + UO = AN = NO = 126$, so triangle $ANO$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral}{equilateral}.
@@ -837,8 +768,6 @@ Let $O$ be the center of the semicircle. It follows that $AU + UO = AN = NO = 12
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that the total area of $\mathcal{R}$ is $252DA + \frac {126^2 \pi}{2}$ and thus one of the regions has area $84DA + \frac {126^2 \pi}{6}$
@@ -863,8 +792,6 @@ Note that the total area of $\mathcal{R}$ is $252DA + \frac {126^2 \pi}{2}$ and 
 
 
 
-
-
 \textbf{Solution 4 (Coordinates)}
 
 Like above solutions, note that $ANO$ is equilateral with side length $126,$ where $O$ is the midpoint of $AB.$ Then, if we let $DA=a$ and set origin at $D=(0,0),$ we get $N=(63,a+63\sqrt{3}), U=(84,a).$ Line $NU$ is then $y-a=\sqrt{27}(x-84),$ so it intersects $CA,$ the $x$-axis, at $x=(a/\sqrt{27}+84),$ giving us point $T.$ Now the area of region $R$ is $252a+\pi(126)^2 / 2,$ so one third of that is $84a+\pi(126)^2 / 6.$
@@ -872,8 +799,6 @@ Like above solutions, note that $ANO$ is equilateral with side length $126,$ whe
  The area of the smaller piece of $R$ is $[AUTD] + [ANU] + [\text{lune} AN] = \frac{1}{2} \cdot a(84+\frac{a}{\sqrt{27}}+84)+\frac{1}{2} \cdot 84 \cdot 63 \sqrt{3}+ \frac{\pi (126)^2}{6}-\frac{1}{2} \cdot 126 \cdot 63 \sqrt{2}$$=\frac{a^2}{2\sqrt{27}}+84a-21\cdot 63\sqrt{2} + \frac{\pi(126)^2}{6}.$Setting this equal to $84a+\pi(126)^2 / 6$ and canceling the $84a + \pi(126)^2$ yields$\frac{a^2}{2\sqrt{27}}=21 \cdot 63 \sqrt{3},$ so $a = 63 \sqrt{6}$ and the anser is $\boxed{069}.$~ rzlng
 
  
-
-
 
 
 
@@ -887,14 +812,7 @@ Once we establish that $\Delta ANO$ is equilateral, we have
  Now, $UO=42, NU=21 \Rightarrow [UT'T]=[NUO]=2[NN'U]$. Also $\Delta UT'T \sim \Delta NN'U$. Therefore,
  \[DA=UT'=\sqrt{2} NN'=\sqrt{2} \left(\frac{\sqrt{3}}{2}\cdot 126\right)=63\sqrt{6}\longrightarrow \boxed {069}\]
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2010}) For each positive integer $n,$ let $f(n) = \sum_{k = 1}^{100} \lfloor \log_{10} (kn) \rfloor$. Find the largest value of $n$ for which $f(n) \le 300$.
@@ -918,15 +836,11 @@ Observe that $f$ is strictly increasing in $n$. We realize that we need $100$ te
 
 
 
-
-
 \textbf{Solution 2}
 
 Because we want the value for which $f(n)=300$, the average value of the 100 terms of the sequence should be around $3$. For the value of $\lfloor \log_{10} (kn) \rfloor$ to be $3$, $1000 \le kn < 10000$. We want kn to be around the middle of that range, and for k to be in the middle of 0 and 100, let $k=50$, so $50n=\frac{10000+1000}{2}=\frac{11000}{2}=5500$, and $n = 110$. $f(110) = 301$, so we want to lower $n$. Testing $109$ yields $300$, so our answer is still $\boxed{109}$.
 
  
-
-
 
 
 
@@ -943,8 +857,6 @@ For any $n$ where the sum is close to $300$, all the terms in the sum must be eq
 
 
 
-
-
 \textbf{Solution 4 (similar to Solution 1, but with more detail)}
 
 Since we're working with base-$10$ logarithms, we can start by testing out $n$'s that are powers of $10$. For $n = 1$, the terms in the sum are $\lfloor \log_{10} (1)\rfloor, \lfloor \log_{10} (2)\rfloor, \lfloor \log_{10} (3) \rfloor , . . . , \lfloor \log_{10} (100) \rfloor$. For numbers $1$-$9$, $\lfloor \log_{10} (kn) \rfloor = 0$. Then we have $90$ numbers, namely $10$-$99$, for which $\lfloor \log_{10} (kn) \rfloor = 1$. The last number we have is $100$, which gives us $\lfloor \log_{10} (kn) \rfloor = 2$. This sum gives us only $90 + 2 = 92$, which is much too low. However, applying the same counting technique for $n = 10$, our sum comes out to be $9 + 180 + 3 = 192$, since there are $9$ terms for which $\lfloor \log_{10} (kn) \rfloor = 1$, $90$ terms for which $\lfloor \log_{10} (kn) \rfloor = 2$, and one term for which $\lfloor \log_{10} (kn) \rfloor = 3$. So we go up one more power of $10$ and get $18 + 270 + 4 = 292$, which is very close to what we are looking for. 
@@ -954,14 +866,7 @@ Since we're working with base-$10$ logarithms, we can start by testing out $n$'s
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2010}) In $\triangle{ABC}$ with $AB = 12$, $BC = 13$, and $AC = 15$, let $M$ be a point on $\overline{AC}$ such that the incircles of $\triangle{ABM}$ and $\triangle{BCM}$ have equal radii. Then $\frac{AM}{CM} = \frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p + q$.
@@ -983,8 +888,6 @@ Let $AM = x$, then $CM = 15 - x$. Also let $BM = d$ Clearly, $\frac {[ABM]}{[CBM
  Legitimately solving that quartic, note that $x = 0$ and $x = 15$ should clearly be solutions, corresponding to the sides of the triangle and thus degenerate cevians. Factoring those out, we get $0 = 4x(x - 15)(3x^2 - 40x + 132) = x(x - 15)(x - 6)(3x - 22).$ The only solution in the desired range is thus $\frac {22}3$. Then $CM = \frac {23}3$, and our desired ratio $\frac {AM}{CM} = \frac {22}{23}$, giving us an answer of $\boxed{045}$.
 
  
-
-
 
 
 
@@ -1011,8 +914,6 @@ Let $AM = 2x$ and $BM = 2y$ so $CM = 15 - 2x$. Let the \href{https://artofproble
 
 
 
-
-
 \textbf{Solution 3}
 
 Let the incircle of $ABM$ hit $AM$, $AB$, $BM$ at $X_{1},Y_{1},Z_{1}$, and let the incircle of $CBM$ hit $MC$, $BC$, $BM$ at $X_{2},Y_{2},Z_{2}$. Draw the incircle of $ABC$, and let it be tangent to $AC$ at $X$. Observe that we have a homothety centered at A sending the incircle of $ABM$ to that of $ABC$, and one centered at $C$ taking the incircle of $BCM$ to that of $ABC$. These have the same power, since they take incircles of the same size to the same circle. Also, the power of the homothety is $AX_{1}/AX=CX_{2}/CX$.
@@ -1030,8 +931,6 @@ Let the incircle of $ABM$ hit $AM$, $AB$, $BM$ at $X_{1},Y_{1},Z_{1}$, and let t
  \[4(1-x)^2 = x^2\]We get $x=\frac{2}{3}$ or $x=2$.
 
  
-
-
 
 
 
@@ -1075,8 +974,6 @@ Suppose the incircle of $ABM$ touches $AM$ at $X$, and the incircle of $CBM$ tou
 
 
 
-
-
 \textbf{Solution 5}
 
 Let the common inradius equal r, $BM = x$, $AM = y$, $MC = z$
@@ -1093,7 +990,9 @@ Let the common inradius equal r, $BM = x$, $AM = y$, $MC = z$
 
  \begin{verbatim}
 $r = \frac{S_{ABC}}{20 + x}$
-\end{verbatim}By drawing an altitude from $I_1$ down to a point $H_1$ and from $I_2$ to $H_2$, we can get:
+\end{verbatim}
+
+By drawing an altitude from $I_1$ down to a point $H_1$ and from $I_2$ to $H_2$, we can get:
 
  $r \cdot cot(\frac{\angle A}{2}) =r \cdot A H_1 = r \cdot \frac{12+y-x}{2}$  and
 
@@ -1105,11 +1004,15 @@ $r = \frac{S_{ABC}}{20 + x}$
 
  \begin{verbatim}
 $r = \frac{20-x}{cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})}$
-\end{verbatim}Now, we have 2 values equal to r, we can set them equal to each other:
+\end{verbatim}
+
+Now, we have 2 values equal to r, we can set them equal to each other:
 
  \begin{verbatim}
 $\frac{S_{ABC}}{20 + x} = \frac{20-x}{cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})}$ 
-\end{verbatim}If we let R denote the incircle of ABC, note:
+\end{verbatim}
+
+If we let R denote the incircle of ABC, note:
 
  AC = $(cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})) \cdot R = 15$ and
 
@@ -1119,21 +1022,25 @@ $\frac{S_{ABC}}{20 + x} = \frac{20-x}{cot(\frac{\angle A}{2})+cot(\frac{\angle C
 
  \begin{verbatim}
 $400 - x^2 = (cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})) \cdot S_{ABC} = (cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})) \cdot R \cdot 20 = 15 \cdot 20 = 300$
-\end{verbatim}We can find out x:
+\end{verbatim}
+
+We can find out x:
 
  \begin{verbatim}
 $x = 10$.
-\end{verbatim}Now, we can find ratio of y and z:
+\end{verbatim}
+
+Now, we can find ratio of y and z:
 
  \begin{verbatim}
 $\frac{AM}{CM} = \frac{y}{z} = \frac{S_{ABM}}{S_{BCM}} = \frac{r \cdot \frac{22+y}{2} }{r \cdot \frac{23+z}{2}} = \frac{22+y}{23+z} = \frac{22}{23}$ 
-\end{verbatim}The answer is $\boxed{045}$. 
+\end{verbatim}
+
+The answer is $\boxed{045}$. 
 
  -Alexlikemath
 
  
-
-
 
 
 
@@ -1153,8 +1060,6 @@ Let $CM=x, AM=rx, BM=d$. $x+rx=15\Rightarrow x=\frac{15}{1+r}$.
 
 
 
-
-
 \textbf{Solution 7 (No Stewart's or trig, fast + clever)}
 
 Let $BM = d, AM = x, CM = 15 - x$. Observe that we have the equation by the incircle formula:
@@ -1162,11 +1067,7 @@ Let $BM = d, AM = x, CM = 15 - x$. Observe that we have the equation by the inci
  \[\frac{AP}{7} = \frac{CQ}{8} \implies 8(AP) = 7(CQ) \implies 8(12 + x - d) = 7(13 + 15 - x - d) \implies d = 15x - 100.\]Substituting into the first equation derived earlier it is left to solve
  \[\frac{x}{15 - x} = \frac{15x - 88}{15x - 87} \implies 3x^2 - 40x + 132 \implies (x - 6)(3x - 22) = 0.\]Now $x = 6$ yields $d = -10$ which is invalid, hence $x = \frac{22}{3}$ so $\frac{AM}{CM} = \frac{\frac{22}{3}}{15 - \frac{22}{3}} = \frac{22}{23}.$ The requested sum is $22 + 23 = \boxed{45}$. ~blueprimes
 
- \textbf{Sidenote} In the problem, $BM=10$ and the equal inradius of the two triangles happens to be $\frac {2\sqrt{14}}{3}$.
-
  
-
-
 
 
 \end{enumerate}

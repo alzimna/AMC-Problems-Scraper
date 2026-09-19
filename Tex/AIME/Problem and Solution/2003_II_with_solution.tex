@@ -15,8 +15,6 @@ Let the three integers be $a, b, c$.  $N = abc = 6(a + b + c)$ and $c = a + b$. 
  
 
 
-
-
 	\item (\textit{AIME II 2003}) Let $N$ be the greatest integer multiple of 8, whose digits are all different. What is the remainder when $N$ is divided by 1000?
 
 
@@ -34,8 +32,6 @@ We want a number with no digits repeating, so we can only use the digits $0-9$ o
  Note: The number is $9876543120$
 
  
-
-
 
 
 
@@ -70,8 +66,6 @@ We notice that the number doesn't matter after the thousands place because any p
  
 
 
-
-
 	\item (\textit{AIME II 2003}) Define a $\text{good word}$ as a sequence of letters that consists only of the letters $A$, $B$, and $C$ - some of these letters may not appear in the sequence - and in which $A$ is never immediately followed by $B$, $B$ is never immediately followed by $C$, and $C$ is never immediately followed by $A$. How many seven-letter good words are there?
 
 
@@ -90,15 +84,11 @@ There are three letters to make the first letter in the sequence. However, after
 
 
 
-
-
 \textbf{Solution 2 (Recursion)}
 
 We solve this problem using recursion. Let $f(x)$ be the number of $x$-letter good words. Thus $f(1) = 3$ (A, B or C) and the answer is just $f(7)$.  The recurrence relation can be found by considering the last letter of one of the valid strings of length $x - 1$.  There are $2$ possibilities for the next letter and thus $f(x) = 2 \cdot f(x-1)$.  Now we can find a closed form as $f(x) = 3 \cdot 2 ^{x-1}$  (easy to prove by induction) and thus $f(7) = 64 * 3 = \boxed{192}$ seven-letter good words.  ~AK2006
 
  
-
-
 
 
 
@@ -110,8 +100,6 @@ This restriction forces the letters to appear in $\emph{blocks}$ in a fixed cycl
  The word's structure is therefore determined by the starting letter and where the block transitions occur. In a $7$ letter word, there are $6$ gaps between the letters. At each gap, we can either stay in the block or move on to the next. This gives $2$ choices for each gap, or $2^6$ possibilities. Multiply this by the $3$ possible starting letters to get $3*2^6 = \boxed{192}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2003}) In a regular tetrahedron, the centers of the four faces are the vertices of a smaller tetrahedron. The ratio of the volume of the smaller tetrahedron to that of the larger is $m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -135,8 +123,6 @@ This restriction forces the letters to appear in $\emph{blocks}$ in a fixed cycl
 
 
 
-
-
 \textbf{Solution 1}
 
 Embed the tetrahedron in 4-space to make calculations easier.Its vertices are$(1,0,0,0)$, $(0,1,0,0)$, $(0,0,1,0)$, $(0,0,0,1)$.
@@ -153,8 +139,6 @@ Embed the tetrahedron in 4-space to make calculations easier.Its vertices are$(1
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the large tetrahedron be $ABCD$, and the small tetrahedron be $WXYZ$, with $W$ on $ABC$, $X$ on $BCD$, $Y$ on $ACD$, and $Z$ on $ABD$. Clearly, the two regular tetrahedrons are similar, so if we can find the ratio of the sides, we can find the ratio of the volumes. Let $AB=1$, for our convenience. Dropping an altitude from $W$ to $BC$, and calling the foot $M$, we have $WM=XM=\frac{\sqrt3}{6}$. Since $\cos\angle{WMX}=\cos\angle{AMX}=MX/AM=1/3$. By Law of Cosines, we have $WX=\sqrt{1/12+1/12-2(1/12)(1/3)}=1/3$. Hence, the ratio of the volumes is $\left(\frac{1}{3}\right)^3=1/27$. $m+n=1+27=\boxed{028}$
@@ -163,17 +147,11 @@ Let the large tetrahedron be $ABCD$, and the small tetrahedron be $WXYZ$, with $
 
 
 
-
-
 \textbf{Solution 3}
 
 Consider the large tetrahedron $ABCD$ and the smaller tetrahedron $WXYZ$.  Label the points as you wish, but dropping an altitude from the top vertex of $ABCD$, we see it hits the center of the base face of $ABCD$.  This center is also one vertex of $WXYZ$.  Consider a "side" face of $ABCD$, and the center of that face, which is another vertex of $WXYZ$.  Draw the altitude of this side face (which is an equilateral triangle).  These two altitudes form a right triangle.  Since the center of the Side face splits the altitude of the side face into segments in the ratio of $2:1$ (centroid), and since the bases of $WXYZ$ and $ABCD$ are parallel, we can say that the altitudes of tetrahedron $ABCD$ and $WXYZ$ are in the ratio $3:1$.  Thus we compute $\left(\frac{1}{3}\right)^3$, and find $\frac{1}{27}$.  The sum of the numerator and denominator is thus $28$.
 
- \textbf{Video Solution by Sal Khan} - AMBRIGGS
-
  
-
-
 
 
 	\item (\textit{AIME II 2003}) A cylindrical log has diameter $12$ inches. A wedge is cut from the log by making two planar cuts that go entirely through the log. The first is perpendicular to the axis of the cylinder, and the plane of the second cut forms a $45^\circ$ angle with the plane of the first cut. The intersection of these two planes has exactly one point in common with the log. The number of cubic inches in the wedge can be expressed as $n\pi$, where n is a positive integer. Find $n$.
@@ -188,11 +166,7 @@ Consider the large tetrahedron $ABCD$ and the smaller tetrahedron $WXYZ$.  Label
 
 The volume of the wedge is half the volume of a cylinder with height $12$ and radius $6$. (Imagine taking another identical wedge and sticking it to the existing one).  Thus, $V=\dfrac{6^2\cdot 12\pi}{2}=216\pi$, so $n=\boxed{216}$.
 
- - AMBRIGGS
-
  
-
-
 
 
 	\item (\textit{AIME II 2003}) In triangle $ABC,$ $AB = 13,$ $BC = 14,$ $AC = 15,$ and point $G$ is the intersection of the medians. Points $A',$ $B',$ and $C',$ are the images of $A,$ $B,$ and $C,$ respectively, after a $180^\circ$ rotation about $G.$ What is the area of the union of the two regions enclosed by the triangles $ABC$ and $A'B'C'?$
@@ -207,56 +181,9 @@ The volume of the wedge is half the volume of a cylinder with height $12$ and ra
 
 Since a $13-14-15$ triangle is a $5-12-13$ triangle and a $9-12-15$ triangle "glued" together on the $12$ side, $[ABC]=\frac{1}{2}\cdot12\cdot14=84$. 
 
- There are six points of intersection between $\Delta ABC$ and $\Delta A'B'C'$. Connect each of these points to $G$. 
+ There are six points of intersection between $\Delta ABC$ and 
 
  
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2003_6_Solution_Figure_1.png}
-                    \end{figure}
-                    
-
- There are $12$ smaller congruent triangles which make up the desired area. Also, $\Delta ABC$ is made up of $9$ of such triangles. Therefore, $\left[\Delta ABC \bigcup \Delta A'B'C'\right] = \frac{12}{9}[\Delta ABC]= \frac{4}{3}\cdot84=\boxed{112}$.
-
- 
-
-
-
-
-
-\textbf{Solution 2(Doesn’t require good diagram)}
-
-First, find the area of $\Delta ABC$ either like the first solution or by using Heron’s Formula. Then, draw the medians from $G$ to each of $A, B, C, A’, B’,$ and $C’$. Since the medians of a triangle divide the triangle into 6 triangles with equal area, we can find that each of the 6 outer triangles have equal area. (Proof: Since I’m too lazy to draw out a diagram, I’ll just have you borrow the one above. Draw medians $GA$ and $GB’$, and let’s call the points that $GA$ intersects $C’B’$ “$H$” and the point $GB’$ intersects $AC$ “$I$”. From the previous property and the fact that both $\Delta ABC$ and $\Delta A’B’C’$ are congruent, $\Delta GHB’$ has the same area as $\Delta GIA$. Because of that, both “half” triangles created also have the same area. The same logic can be applied to all other triangles).Also, since the centroid of a triangle divides each median with the ratio $2:1$, along with the previous fact, each outer triangle has $1/9$ the area of $\Delta ABC$ and $\Delta A’B’C’$. Thus, the area of the region required is $\frac{4}{3}$ times the area of $\Delta ABC$ which is $\boxed {112}$.
-
- Solution by Someonenumber011
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Rigorous)}
-
-$[ABC]$ can be calculated as 84 using Heron's formula or other methods. Since a $180^{\circ}$ rotation is equivalent to reflection through a point, we have a homothety with scale factor $-1$ from $ABC$ to $A'B'C'$ through the centroid $G$. Let $M$ be the midpoint of $BC$ which maps to $M'$ and note that $A'G=AG=2GM,$ implying that $GM=MA'.$ Similarly, we have $AM'=M'G=GM=MA'.$ Also let $D$ and $E$ be the intersections of $BC$ with $A'B'$ and $A'C',$ respectively. The homothety implies that we must have $DE || B'C',$ so there is in fact another homothety centered at $A'$ taking $A'DE$ to $A'B'C'$. Since $A'M'=3A'M,$ the scale factor of this homothety is 3 and thus $[A'DE]=\frac{1}{9}[A'B'C']=\frac{1}{9}[ABC].$ We can apply similar reasoning to the other small triangles in $A'B'C'$ not contained within $ABC$, so our final answer is $[ABC]+3\cdot\frac{1}{9}[ABC]=\boxed{112.}$
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-We determine the area of $\triangle ABC$ to be 84 via Heron's Formulae. A "$180^\circ$ rotation" is the same as just reflecting the figure by centroid $G$. Also, a rotation (or reflection by $G$), simply forms a new triangle that is exactly congruent through SSS to the original. We have established $ABC$ and $A'B'C'$ are congruent.
-
- Now, we show that the partitioning from the consecutive cuts of the two triangles results in twelve congruent triangles (three triangles formed by each line. Each line, $AB$, $A'B'$, so on so forth are parallel, forming transversals. Repeated parallel base theorems give the desired result.
-
- Exactly nine of these congruent triangles form the interior of the triangle $ABC$. Say these all have area $T$. Then, $9T = 84$ so $T = 28/3$. Then, multiplying by the 12 triangles, the answer is $28 \cdot 4 = \boxed{112}$.
-
- 
-
-
 
 
 	\item (\textit{AIME II 2003}) Find the area of rhombus $ABCD$ given that the radii of the circles circumscribed around triangles $ABD$ and $ACD$ are $12.5$ and $25$, respectively.
@@ -277,8 +204,6 @@ The diagonals of the rhombus perpendicularly bisect each other. Call half of dia
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $\theta=\angle BDA$. Let $AB=BC=CD=x$. By the extended law of sines,
@@ -288,8 +213,6 @@ Let $\theta=\angle BDA$. Let $AB=BC=CD=x$. By the extended law of sines,
  \[2x^2\sin\theta\cos\theta=\boxed{400}\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2003}) Find the eighth term of the sequence $1440,$ $1716,$ $1848,\ldots,$ whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.
@@ -333,8 +256,6 @@ Note: WHO WROTE THIS?! ITS THE BIG '26!!~Aarav22
 
 
 
-
-
 \textbf{Solution 1 (faster)}
 
 Use the same rationale as in solution 0.67; instead of using terms $1,2,3$, we use $-1,0,1$ and solve the $6$th term.
@@ -354,8 +275,6 @@ Use the same rationale as in solution 0.67; instead of using terms $1,2,3$, we u
  -maxamc
 
  
-
-
 
 
 
@@ -388,8 +307,6 @@ Setting one of the sequences as $a+nr_1$ and the other as $b+nr_2$, we can set u
  $(a+7r_1)(b+7r_2) = ab + 7(ar_2 + br_1) + 49r_1r_2 = 1440 + 7(348) + 49(-72) = \boxed{348}$.
 
  
-
-
 
 
 
@@ -428,8 +345,6 @@ Let the first sequence be
  $C_8 - C_7 = -588 \rightarrow \boxed{C_8 = 348}$.
 
  
-
-
 
 
 
@@ -476,8 +391,6 @@ Start by labeling the two sequences:
  
 
 
-
-
 	\item (\textit{AIME II 2003}) Consider the polynomials $P(x) = x^{6} - x^{5} - x^{3} - x^{2} - x$ and $Q(x) = x^{4} - x^{3} - x^{2} - 1.$ Given that $z_{1},z_{2},z_{3},$ and $z_{4}$ are the roots of $Q(x) = 0,$ find $P(z_{1}) + P(z_{2}) + P(z_{3}) + P(z_{4}).$
 
 
@@ -508,8 +421,6 @@ When we use long division to divide $P(x)$ by $Q(x)$, the remainder is $x^2-x+1$
  So finally$P(z_2)+P(z_1)+P(z_3)+P(z_4)=3+4-1=\boxed{006}.$
 
  
-
-
 
 
 
@@ -555,8 +466,6 @@ By using long division to divide $P(x)$ by $Q(x)$, we find that $P(x) = Q(x)(x^2
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $S_k=z_1^k+z_2^k+z_3^k+z_4^k$ then by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formula}{Vieta's Formula} we have
@@ -572,8 +481,6 @@ Let $S_k=z_1^k+z_2^k+z_3^k+z_4^k$ then by \href{https://artofproblemsolving.com/
 
 
 
-
-
 \textbf{Solution 4}
 
 $P(x) = x^{2}Q(x)+x^{4}-x^{3}-x.$
@@ -586,15 +493,11 @@ $P(x) = x^{2}Q(x)+x^{4}-x^{3}-x.$
 
 
 
-
-
 \textbf{Solution 5}
 
 If we scale $Q(x)$ by $x^2$, we get $x^6-x^5-x^4-x^2$. In order to get to $P(x)$, we add $x^4-x^3-x$. Therefore, our answer is $\sum_{n=1}^{4} z^4_n-z^3_n-z_n$. However, rearranging $Q(z_n) = 0$, makes our final answer $\sum_{n=1}^{4} z^2_n-z_n+1$. The sum of the squares of the roots is $1^2-2(-1) = 3$ and the sum of the roots is $1$. Adding 4 to our sum, we get $3-1+4 = \boxed{006}$.
 
  
-
-
 
 
 
@@ -624,8 +527,6 @@ Let $S_k$ = $z_1^k+z_2^k+z_3^k+z_4^k$
 
 
 
-
-
 \textbf{Solution 7 (if you don't know how to divide polynomials directly)}
 
 $P(x)$ and $Q(x)$  look very similar, so let's try subtracting $Q(x)$ multiplied with something from $P(x)$ since we know $Q(z_n) = 0$. To make the degrees the same, let's first multiply $Q(x)$ with $x^2$: 
@@ -637,13 +538,6 @@ $P(x)$ and $Q(x)$  look very similar, so let's try subtracting $Q(x)$ multiplied
  By \href{https://artofproblemsolving.com/wiki/index.php?title=Newton\%27s\_Sums}{Newton's Sums} the sum of the squares of the roots is 3, and by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formulas}{Vieta's Formulas} the sum of the roots is 1. So our answer is $3 - 1  + 4 = \boxed{006}$. 
 
  
-[rule]
-
- Nice!-sleepypuppy
-
- 
-
-
 
 
 	\item (\textit{AIME II 2003}) Two positive integers differ by $60.$ The sum of their square roots is the square root of an integer that is not a perfect square. What is the maximum possible sum of the two integers?
@@ -659,8 +553,6 @@ $P(x)$ and $Q(x)$  look very similar, so let's try subtracting $Q(x)$ multiplied
 Call the two integers $b$ and $b+60$, so we have $\sqrt{b}+\sqrt{b+60}=\sqrt{c}$. Square both sides to get $2b+60+2\sqrt{b^2+60b}=c$. Thus, $b^2+60b$ must be a square, so we have $b^2+60b=n^2$, and $(b+n+30)(b-n+30)=900$. The sum of these two factors is $2b+60$, so they must both be even. To maximize $b$, we want to maximixe $b+n+30$, so we let it equal $450$ and the other factor $2$, but solving gives $b=196$, which by a quick check yields perfect square $c=900$, so we have to keep going. In order to keep both factors even, we let the larger one equal $150$ and the other $6$, which gives $b=48$. This checks, so the solution is $48+108=\boxed{156}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2003}) Triangle $ABC$ is a right triangle with $AC = 7,$ $BC = 24,$ and right angle at $C.$ Point $M$ is the midpoint of $AB,$ and $D$ is on the same side of line $AB$ as $C$ so that $AD = BD = 15.$ Given that the area of triangle $CDM$ may be expressed as $\frac {m\sqrt {n}}{p},$ where $m,$ $n,$ and $p$ are positive integers, $m$ and $p$ are relatively prime, and $n$ is not divisible by the square of any prime, find $m + n + p.$
@@ -695,8 +587,6 @@ We use the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorea
 
 
 
-
-
 \textbf{Solution 2}
 
 By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} in $\Delta AMD$, we get $DM=\frac{5\sqrt{11}} {2}$. Since $ABC$ is a right triangle, $M$ is the circumcenter and thus, $CM=\frac{25} {2}$. We let $\angle CMD=\theta$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines},
@@ -709,15 +599,11 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_T
 
 
 
-
-
 \textbf{Solution 3}
 
 Suppose $ABC$ is plotted on the \href{https://artofproblemsolving.com/wiki/index.php?title=Cartesian\_plane}{cartesian plane} with $C$ at $(0,0)$, $A$ at $(0,7)$, and $B$ at $(24,0)$.Then $M$ is at $(12,3.5)$. Since $\Delta ABD$ is isosceles, $MD$ is perpendicular to $AM$, and since $AM=12.5$ and $AD=15, MD=2.5\sqrt{11}$.The slope of $AM$ is $-\frac{7}{24}$ so the slope of $MD$ is $\frac{24}{7}$.Draw a vertical line through $M$ and a horizontal line through $D$. Suppose these two lines meet at $X$. then $MX=\frac{24}{7}DX$ so $MD=\frac{25}{7}DX=\frac{25}{24}MD$ by the pythagorean theorem.So $MX=2.4\sqrt{11}$ and $DX=.7\sqrt{11}$ so the coordinates of D are $(12-.7\sqrt{11},\, 3.5-2.4\sqrt{11})$.Since we know the coordinates of each of the vertices of $\Delta CMD$, we can apply the \href{https://artofproblemsolving.com/wiki/index.php?title=Shoelace\_Theorem}{Shoelace Theorem} to find the area of $\Delta CMD, \frac{527 \sqrt{11}}{40}$.
 
  
-
-
 
 
 
@@ -728,8 +614,6 @@ Let $E$ be the intersection of lines $BC$ and $DM$.  Since triangles $\Delta CME
  Solution by someonenumber011.
 
  
-
-
 
 
 
@@ -753,8 +637,6 @@ Let $E$ be the intersection of lines $BC$ and $DM$.  Since triangles $\Delta CME
  \[[\triangle{CMD}]=42-\frac{49\sqrt{11}}{20}+\frac{125\sqrt{11}}{8}-42=\frac{625\sqrt{11}-98\sqrt{11}}{40}=\frac{527\sqrt{11}}{40}\implies m+n+p = 527+11+40=\boxed{\textbf{578}}\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2003}) The members of a distinguished committee were choosing a president, and each member gave one vote to one of the $27$ candidates. For each candidate, the exact percentage of votes the candidate got was smaller by at least $1$ than the number of votes for that candidate. What is the smallest possible number of members of the committee?
@@ -789,15 +671,11 @@ Let $v_i$ be the number of votes candidate $i$ received, and let $s=v_1+\cdots+v
 
 
 
-
-
 \textbf{Solution 2}
 
 Let there be $N$ members of the committee.Suppose candidate $n$ gets $a_n$ votes.Then $a_n$ as a percentage out of $N$ is $100\frac{a_n}{N}$. Setting up the inequality $a_n \geq 1 + 100\frac{a_n}{N}$ and simplifying,$a_n \geq \lceil(\frac{N}{N - 100})\rceil$ (the ceiling function is there because $a_n$ is an integer.Note that if we set all $a_i$ equal to $\lceil(\frac{N}{N - 100})\rceil$ we have $N \geq 27\lceil(\frac{N}{N - 100})\rceil$. Starting from $101$, try greater values of $N$ to find which value is large enough. It helps to try $N$ with multiples of $5$ or $10$ for ease of computation.Then when $N=125$, the RHS equals $27(5)=135$, which is pretty close. As soon as the ceiling part equals $4$, RHS equals $108\le N$. Solving $\frac{N}{N - 100}\leq4$ yields $N = 134$ as the least such number that satisfies this inequality. Now we must show that we can find suitable $a_i$. We can let 26 of them equal to $5$ and one of them equal to $4$ or 26 equal $4$ and one equal $30$. Therefore, $N = \boxed{134}$ is the answer.- whatRthose
 
  
-
-
 
 
 
@@ -809,8 +687,6 @@ Let $n$ be the total number of people in the committee, and $a_i$ be the number 
  \[a_i \geq \frac{127}{27} \approx 4.7 \implies a_i \geq 5 \implies \sum^{27}_{a_i} a_i \geq 5 \cdot 27 = 135 \geq 127,\]a contradiction.  Bashing out a few more, we find that $\boxed{n = 134}$ works perfectly fine.
 
  
-
-
 
 
 	\item (\textit{AIME II 2003}) A bug starts at a vertex of an equilateral triangle. On each move, it randomly selects one of the two vertices where it is not currently located, and crawls along a side of the triangle to that vertex. Given that the probability that the bug moves to its starting vertex on its tenth move is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m + n.$
@@ -830,8 +706,6 @@ Let $P_n$ represent the probability that the bug is at its starting vertex after
  Thus the answer is $171+512=$$\boxed{683}$
 
  
-
-
 
 
 
@@ -868,8 +742,6 @@ Let $Q_{N}$ be the probability of starting at one point and ending at another fo
 
 
 
-
-
 \textbf{Solution 2 (also easiest)}
 
 Consider there to be a clockwise and a counterclockwise direction around the triangle.  Then, in order for the ant to return to the original vertex, the net number of clockwise steps must be a multiple of 3, i.e., $\#CW - \#CCW \equiv 0 \pmod{3}$.  Since $\#CW + \#CCW = 10$, it is only possible that $(\#CW,\, \#CCW) = (5,5), (8,2), (2,8)$.
@@ -877,8 +749,6 @@ Consider there to be a clockwise and a counterclockwise direction around the tri
  In the first case, we pick $5$ out of the ant's $10$ steps to be clockwise, for a total of ${10 \choose 5}$ paths.  In the second case, we choose $8$ of the steps to be clockwise, and in the third case we choose $2$ to be clockwise.  Hence the total number of ways to return to the original vertex is ${10 \choose 5} + {10 \choose 8} + {10 \choose 2} = 252 + 45 + 45 = 342$.  Since the ant has two possible steps at each point, there are $2^{10}$ routes the ant can take, and the probability we seek is $\frac{342}{2^{10}} = \frac{171}{512}$, and the answer is $\boxed{683}$.
 
  
-
-
 
 
 
@@ -902,8 +772,6 @@ Label the vertices of the triangle $A,B,C$ with the ant starting at $A$. We will
 
 
 
-
-
 \textbf{Solution 4}
 
 Notice that this problem can be converted into a Markov Chain transition matrix.
@@ -911,8 +779,6 @@ Notice that this problem can be converted into a Markov Chain transition matrix.
  The transition matrix is { {0,1,1}, {1,0,1} , {1,1,0} } * (1/2) . Then use the exponentiation method of squaring ( A*A---(A\textasciicircum{}2)*(A\textasciicircum{}2)---(A\textasciicircum{}4*A\textasciicircum{}4)--(A\textasciicircum{}8*A\textasciicircum{}2) to get the transition value of 342. Divide by 2\textasciicircum{}10 for the probability, reduce fractions, for the result of 171+512 = 683.
 
  
-
-
 
 
 
@@ -953,15 +819,11 @@ As a note, do NOT do this on the exam as it will eat up your time, but feel free
 
 
 
-
-
 \textbf{Solution 5 (guess & check)}
 
 This method does not rigorously get the answer, but it works. As the bug makes more and more moves, the probability of it going back to the origin approaches closer and closer to 1/3. Therefore, after 10 moves, the probability gets close to $341.33/1024$. We can either round up or down. If we round down, we see $341/1024$ cannot be reduced any further and because the only answers on the AIME are below 1000, this cannot be the right answer. However, if we round up, $342/1024$ can be reduced to $171/512$ where the sum 171+512= $\boxed{683}$ is an accepted answer.
 
  
-
-
 
 
 
@@ -977,17 +839,13 @@ The generating function for this is $(x+x^2)$ since an ant on any vertex of the 
 
 
 
-
-
 \textbf{Solution 7 (trees)}
 
 Start of with any vertex, say $A$. Denote $a_n$ the number of paths ending where it started. Then notice that for a path to end in the vertex you started on, you must have for the $(n-1)$ case that of the $2^{n-1}$ total paths, we must take away the paths that end in the $(n-1)$-st term where it started off. (Because imagine on the $(n-1)$ move that it landed on vertex $A$. Then if we wanted to find the number of length $n$ paths that end at $A$, we would be able to find that path, because on the $(n-1)$-st move it landed at $A$. You can't go from $A$ to $A$). Hence we have the recursion $a_n=2^{n-1}-a_{n-1}$, with $a_3 = 2$. Now reiterating gives us $a_{10} = 342$, so that the probability is $\frac{342}{2^{10}} = \frac{171}{512}$. So we have $171 + 512 = \boxed{683}$.~th1nq3r
 
  (Note: One might be confused because you might think maybe "But we only did it for case $A$. Now for $B$ and $C$. Oh wait they are symmetric. So then if this is the correct answer, why am I wrong, or what happened to that factor of $3$?" Well truth be told, I skipped a somewhat major step. Notice that the total amount $2^n$ only comes from if we START OFF at vertex $A$. So we really need to multiply $2^n$ by $3$ to get $3(2^n)$ as the TRUE total amount. However this factor of $3$ doesn't matter because now that we do case work, let $a_n$ once again denote the number of paths starting at vertex $A$. Then abusing symmetry, we have that the number of paths ending where it started as $3(a_n)=3(2^{n-1}-a_{n-1})$. So now when we take the probability, we cancel the factor of $3$, and obtain the same answer as if it were for all three vertices).
 
- \textbf{Video Solution by Sal Khan} 
-
-
+ 
 
 
 	\item (\textit{AIME II 2003}) Let $A = (0,0)$ and $B = (b,2)$ be points on the coordinate plane. Let $ABCDEF$ be a convex equilateral hexagon such that $\angle FAB = 120^\circ,$ $\overline{AB}\parallel \overline{DE},$ $\overline{BC}\parallel \overline{EF,}$ $\overline{CD}\parallel \overline{FA},$ and the y-coordinates of its vertices are distinct elements of the set $\{0,2,4,6,8,10\}.$ The area of the hexagon can be written in the form $m\sqrt {n},$ where $m$ and $n$ are positive integers and n is not divisible by the square of any prime. Find $m + n.$
@@ -1014,8 +872,6 @@ The y-coordinate of $F$ must be $4$.  All other cases yield non-convex and/or de
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -1034,7 +890,9 @@ The y-coordinate of $F$ must be $4$.  All other cases yield non-convex and/or de
 
  Let the angle between the $x$-axis and segment $AB$ be  $\theta$, as shown above. Thus, as $\angle FAB=120^\circ$, the angle between the $x$-axis and segment $AF$ is $60-\theta$, so $\sin{(60-\theta)}=2\sin{\theta}$. Expanding, we have
 
- $\sin{60}\cos{\theta}-\cos{60}\sin{\theta}=\frac{\sqrt{3}\cos{\theta}}{2}-\frac{\sin{\theta}}{2}=2\sin{\theta}$Isolating $\sin{\theta}$ we see that $\frac{\sqrt{3}\cos{\theta}}{2}=\frac{5\sin{\theta}}{2}$, or $\cos{\theta}=\frac{5}{\sqrt{3}}\sin{\theta}$. Using the fact that $\sin^2{\theta}+\cos^2{\theta}=1$, we have $\frac{28}{3}\sin^2{\theta}=1$, or $\sin{\theta}=\sqrt{\frac{3}{28}}$. Letting the side length of the hexagon be $y$, we have $\frac{2}{y}=\sqrt{\frac{3}{28}}$. After simplification we find that that $y=\frac{4\sqrt{21}}{3}$. 
+ $\sin{60}\cos{\theta}-\cos{60}\sin{\theta}=\frac{\sqrt{3}\cos{\theta}}{2}-\frac{\sin{\theta}}{2}=2\sin{\theta}$
+
+ Isolating $\sin{\theta}$ we see that $\frac{\sqrt{3}\cos{\theta}}{2}=\frac{5\sin{\theta}}{2}$, or $\cos{\theta}=\frac{5}{\sqrt{3}}\sin{\theta}$. Using the fact that $\sin^2{\theta}+\cos^2{\theta}=1$, we have $\frac{28}{3}\sin^2{\theta}=1$, or $\sin{\theta}=\sqrt{\frac{3}{28}}$. Letting the side length of the hexagon be $y$, we have $\frac{2}{y}=\sqrt{\frac{3}{28}}$. After simplification we find that that $y=\frac{4\sqrt{21}}{3}$. 
 
  In particular, note that by the Pythagorean theorem, $b^2+2^2=y^2$, hence $b=10\sqrt{3}/3$. Also, if $C=(c,6)$, then $y^2=BC^2=4^2+(c-b)^2$, hence $c-b=8\sqrt{3}/3,$ and thus $c=18\sqrt{3}/3$. Using similar methods (or symmetry), we determine that $D=(10\sqrt{3}/3,10)$, $E=(0,8)$, and $F=(-8\sqrt{3}/3,4)$. By the Shoelace theorem,
  \[[ABCDEF]=\frac12\left|\begin{array}{cc} 0&0\\ 10\sqrt{3}/3&2\\ 18\sqrt{3}/3&6\\ 10\sqrt{3}/3&10\\ 0&8\\ -8\sqrt{3}/3&4\\ 0&0\\ \end{array}\right|=\frac12|60+180+80-36-60-(-64)|\sqrt{3}/3=48\sqrt{3}.\]
@@ -1044,8 +902,6 @@ The y-coordinate of $F$ must be $4$.  All other cases yield non-convex and/or de
  \textbf{Note} By symmetry the area of $ABCDEF$ is twice the area of $ABCF$. Therefore, you only need to calculate the coordinates of $B$, $C$, and $F$. 
 
  
-
-
 
 
 
@@ -1077,8 +933,6 @@ This is similar to solution 2 but faster and easier.First off we see that the y 
 
 
 
-
-
 \textbf{Solution 4 (No Trig)}
 
 
@@ -1093,13 +947,13 @@ This is similar to solution 2 but faster and easier.First off we see that the y 
  
 
 
-
-
 	\item (\textit{AIME II 2003}) Let 
  \[P(x) = 24x^{24} + \sum_{j = 1}^{23}(24 - j)(x^{24 - j} + x^{24 + j}).\] Let $z_{1},z_{2},\ldots,z_{r}$ be the distinct zeros of $P(x),$ and let $z_{k}^{2} = a_{k} + b_{k}i$ for $k = 1,2,\ldots,r,$ where $a_{k}$ and $b_{k}$ are real numbers. Let
 
 
- $\sum_{k = 1}^{r}|b_{k}| = m + n\sqrt {p},$where $m, n,$ and $p$ are integers and $p$ is not divisible by the square of any prime. Find $m + n + p.$
+ $\sum_{k = 1}^{r}|b_{k}| = m + n\sqrt {p},$
+
+ where $m, n,$ and $p$ are integers and $p$ is not divisible by the square of any prime. Find $m + n + p.$
 
 
  
@@ -1143,8 +997,6 @@ This can be factored as:
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that $x^k + x^{k-1} + \dots + x + 1 = \frac{x^{k+1} - 1}{x - 1}$. Our sum can be reformed as 
@@ -1171,8 +1023,6 @@ Note that $x^k + x^{k-1} + \dots + x + 1 = \frac{x^{k+1} - 1}{x - 1}$. Our sum c
 
 
 
-
-
 \textbf{Solution 3}
 
 As in Solution 1, we find that the roots of $P(x)$ we care about are the 24th roots of unity except $1$. Therefore, the squares of these roots are the 12th roots of unity. In particular, every 12th root of unity is counted twice, except for $1$, which is only counted once. 
@@ -1183,11 +1033,7 @@ As in Solution 1, we find that the roots of $P(x)$ we care about are the 24th ro
 
  The answer is $8+4+3=\boxed{015}$.
 
- - AMBRIGGS
-
  
-
-
 
 
 \end{enumerate}

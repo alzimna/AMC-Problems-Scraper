@@ -23,8 +23,6 @@ The number of ways to draw six cards from $n$ is given by the \href{https://arto
  
 
 
-
-
 	\item (\textit{AIME II 2005}) A hotel packed breakfast for each of three guests. Each breakfast should have consisted of three types of rolls, one each of nut, cheese, and fruit rolls. The preparer wrapped each of the nine rolls and once wrapped, the rolls were indistinguishable from one another. She then randomly put three rolls in a bag for each of the guests. Given that the probability each guest got one roll of each type is $\frac mn,$ where $m$ and $n$ are relatively prime integers, find $m+n.$
 
 
@@ -55,15 +53,11 @@ Use \href{https://artofproblemsolving.com/wiki/index.php?title=Construction}{con
 
 
 
-
-
 \textbf{Solution 2}
 
 Call the three different types of rolls as A, B, and C. We need to arrange 3As, 3Bs, and 3Cs in a string such that A, B, and C appear in the first three, second three, and the third three like ABCABCABC or BCABACCAB. This can occur in $\left(\frac{3!}{1!1!1!}\right)^3 = 6^3 = 216$ different manners. The total number of possible strings is $\frac{9!}{3!3!3!} = 1680$. The solution is therefore $\frac{216}{1680} = \frac{9}{70}$, and $m + n = \boxed{79}$.
 
  
-
-
 
 
 
@@ -83,8 +77,6 @@ The denominator of m/n is equal to the total amount of possible roll configurati
 
 
 
-
-
 \textbf{Solution 4}
 
 Let the objects be $A_1$, $A_2$, $A_3$ with similar labeling for $B$ and $C$. There are $9!$ ways to order these nine objects in a line.
@@ -94,8 +86,6 @@ Let the objects be $A_1$, $A_2$, $A_3$ with similar labeling for $B$ and $C$. Th
  Thus the desired probability is $\frac{6^6}{9!}=\frac{9}{70}$, so the answer is $9+70=\boxed{79}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) An infinite geometric series has sum 2005. A new series, obtained by squaring each term of the original series, has 10 times the sum of the original series. The common ratio of the original series is $\frac mn$ where $m$ and $n$ are relatively prime integers. Find $m+n.$
@@ -116,15 +106,11 @@ Let's call the first term of the original \href{https://artofproblemsolving.com/
 
 
 
-
-
 \textbf{Solution 2}
 
 We can write the sum of the original series as $a + a\left(\dfrac{m}{n}\right) + a\left(\dfrac{m}{n}\right)^2 + \ldots = 2005$, where the common ratio is equal to $\dfrac{m}{n}$. We can also write the sum of the second series as $a^2 + a^2\left(\dfrac{m}{n}\right)^2 + a^2\left(\left(\dfrac{m}{n}\right)^2\right)^2 + \ldots = 20050$. Using the formula for the sum of an infinite geometric series $S=\dfrac{a}{1-r}$, where $S$ is the sum of the sequence, $a$ is the first term of the sequence, and $r$ is the ratio of the sequence, the sum of the original series can be written as $\dfrac{a}{1-\frac{m}{n}}=\dfrac{a}{\frac{n-m}{n}}=\dfrac{a \cdot n}{n-m}=2005\;\text{(1)}$, and the second sequence can be written as $\dfrac{a^2}{1-\frac{m^2}{n^2}}=\dfrac{a^2}{\frac{n^2-m^2}{n^2}}=\dfrac{a^2\cdot n^2}{(n+m)(n-m)}=20050\;\text{(2)}$. Dividing $\text{(2)}$ by $\text{(1)}$, we obtain $\dfrac{a\cdot n}{m+n}=10$, which can also be written as $a\cdot n=10(m+n)$. Substitute this value for $a\cdot n$ back into $\text{(1)}$, we obtain $10\cdot \dfrac{n+m}{n-m}=2005$. Dividing both sides by 10 yields $\dfrac{n+m}{n-m}=\dfrac{401}{2}$ we can now write a system of equations with $n+m=401$ and $n-m=2$, but this does not output integer solutions. However, we can also write $\dfrac{n+m}{n-m}=\dfrac{401}{2}$ as $\dfrac{n+m}{n-m}=\dfrac{802}{4}$. This gives the system of equations $m+n=802$ and $n-m=4$, which does have integer solutions. Our answer is therefore $m+n=\boxed{802}$ (Solving for $m$ and $n$ gives us $399$ and $403$, respectively, which are co-prime).
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) Find the number of positive integers that are divisors of at least one of $10^{10},15^7,18^{11}.$
@@ -157,8 +143,6 @@ $10^{10} = 2^{10}\cdot 5^{10}$ so $10^{10}$ has $11\cdot11 = 121$ \href{https://
 
 
 
-
-
 \textbf{Solution 2}
 
 We can rewrite the three numbers as $10^{10} = 2^{10}\cdot 5^{10}$, $15^7 = 3^7\cdot5^7$, and $18^{11} = 2^{11}\cdot3^{22}$.Assume that $n$ (a positive integer) is a divisor of one of the numbers. Therefore, $n$ can be expressed as ${p_1}^{e_1}$ or as ${p_2}^{e_2}{p_3}^{e_3}$ where $p_1$, $p_2$ are in $\{2,3,5\}$ and $e_1$, $e_2$ are positive integers.
@@ -172,8 +156,6 @@ We can rewrite the three numbers as $10^{10} = 2^{10}\cdot 5^{10}$, $15^7 = 3^7\
  -alpha\_2
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) Determine the number of ordered pairs $(a,b)$ of integers such that $\log_a b + 6\log_b a=5, 2 \leq a \leq 2005,$ and $2 \leq b \leq 2005.$
@@ -202,8 +184,6 @@ The equation can be rewritten as $\frac{\log b}{\log a} + 6 \frac{\log a}{\log b
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $k=\log_a b$. Then our equation becomes $k+\frac{6}{k}=5$. Multiplying through by $k$ and solving the quadratic gives us $k=2$ or $k=3$. Hence $a^2=b$ or $a^3=b$.  
@@ -220,15 +200,11 @@ Thus the total number of possible values is $43+11=\boxed{54}$.
 
 
 
-
-
 \textbf{Solution 3(similar to solution 2)}
 
 Using the change of base formula on the second equation to change to base $a$, we get $\log_a(b) + \frac{6 \log_a(a)}{\log_a(b)}$. If we substitute $x$ for $\log_a(b)$, we get $x + \frac{6}{x}$. Multiplying by $x$ on both sides and solving, we get $x=3,2$. Substituting back in, we get $\log_a(b) = 3,2$. That means $a^3 = b$ or $a^2 = b$. Since $b \leq 2005$, we can see that for the cubed case, the maximum $a$ can be without exceeding 2005 is 12(because $13^3 = 2197$) and for the squared case it can be a maximum of 44. Since $a \neq 1$, the number of values is $(44-1)+(12-1) = \boxed{54}$. 
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) The cards in a stack of $2n$ cards are numbered consecutively from 1 through $2n$ from top to bottom. The top $n$ cards are removed, kept in order, and form pile $A.$ The remaining cards form pile $B.$ The cards are then restacked by taking cards alternately from the tops of pile $B$ and $A,$ respectively. In this process, card number $(n+1)$ becomes the bottom card of the new stack, card number 1 is on top of this card, and so on, until piles $A$ and $B$ are exhausted. If, after the restacking process, at least one card from each pile occupies the same position that it occupied in the original stack, the stack is named magical. Find the number of cards in the magical stack in which card number 131 retains its original position.
@@ -247,16 +223,12 @@ Since a card from B is placed on the bottom of the new stack, notice that cards 
 
 
 
-
-
 \textbf{Solution 2}
 
 If you index the final stack $1,2,\dots,2n$, you notice that pile A resides only in the odd indices and has maintained its original order aside from flipping over. The same has happened to pile B except replace odd with even. Thus, if 131 is still at index 131, an odd number, then 131 must be from pile A. The numbers in pile A are the consecutive integers $1,2,\dots, n$. This all leads us to the following equation.
  \[131=2n-2(131)+1\implies2n=\boxed{392}\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) Let $x=\frac{4}{(\sqrt{5}+1)(\sqrt[4]{5}+1)(\sqrt[8]{5}+1)(\sqrt[16]{5}+1)}.$ Find $(x+1)^{48}.$
@@ -271,17 +243,19 @@ If you index the final stack $1,2,\dots,2n$, you notice that pile A resides only
 
 We note that in general,
 
- <center>${} (\sqrt[2^n]{5} + 1)(\sqrt[2^n]{5} - 1) = (\sqrt[2^n]{5})^2 - 1^2 = \sqrt[2^{n-1}]{5} - 1$.
-
- </center>It now becomes apparent that if we multiply the \href{https://artofproblemsolving.com/wiki/index.php?title=Numerator}{numerator} and \href{https://artofproblemsolving.com/wiki/index.php?title=Denominator}{denominator} of $\frac{4}{ (\sqrt{5}+1) (\sqrt[4]{5}+1) (\sqrt[8]{5}+1) (\sqrt[16]{5}+1) }$ by $(\sqrt[16]{5} - 1)$, the denominator will \href{https://artofproblemsolving.com/wiki/index.php?title=Telescope}{telescope} to $\sqrt[1]{5} - 1 = 4$, so 
-
- <center>$x = \frac{4(\sqrt[16]{5} - 1)}{4} = \sqrt[16]{5} - 1$.
-
- </center>It follows that $(x + 1)^{48} = (\sqrt[16]5)^{48} = 5^3 = \boxed{125}$.
+ ${} (\sqrt[2^n]{5} + 1)(\sqrt[2^n]{5} - 1) = (\sqrt[2^n]{5})^2 - 1^2 = \sqrt[2^{n-1}]{5} - 1$.
 
  
 
+ It now becomes apparent that if we multiply the \href{https://artofproblemsolving.com/wiki/index.php?title=Numerator}{numerator} and \href{https://artofproblemsolving.com/wiki/index.php?title=Denominator}{denominator} of $\frac{4}{ (\sqrt{5}+1) (\sqrt[4]{5}+1) (\sqrt[8]{5}+1) (\sqrt[16]{5}+1) }$ by $(\sqrt[16]{5} - 1)$, the denominator will \href{https://artofproblemsolving.com/wiki/index.php?title=Telescope}{telescope} to $\sqrt[1]{5} - 1 = 4$, so 
 
+ $x = \frac{4(\sqrt[16]{5} - 1)}{4} = \sqrt[16]{5} - 1$.
+
+ 
+
+ It follows that $(x + 1)^{48} = (\sqrt[16]5)^{48} = 5^3 = \boxed{125}$.
+
+ 
 
 
 
@@ -309,8 +283,6 @@ First, multiply the denominator $\sqrt{5} + 1$ term by its conjugate, and obtain
 
 
 
-
-
 \textbf{Solution 3 (Bashing)}
 
 Let $y=\sqrt[16]{5}$, then expanding the denominator results in:
@@ -324,8 +296,6 @@ Let $y=\sqrt[16]{5}$, then expanding the denominator results in:
  It is evident that $x+1 = (y-1)+1 = \sqrt[16]5$  as Solution 1 states.
 
  
-
-
 
 
 
@@ -344,8 +314,6 @@ Like Solution $3$, let $z=\sqrt[16]{5}$Then, the expression becomes
  
 
 
-
-
 	\item (\textit{AIME II 2005}) Circles $C_1$ and $C_2$ are externally tangent, and they are both internally tangent to circle $C_3.$ The radii of $C_1$  and $C_2$ are 4 and 10, respectively, and the centers of the three circles are all collinear. A chord of $C_3$ is also a common external tangent of $C_1$ and $C_2.$ Given that the length of the chord is $\frac{m\sqrt{n}}p$ where $m,n,$ and $p$ are positive integers, $m$ and $p$ are relatively prime, and $n$ is not divisible by the square of any prime, find $m+n+p.$
 
 
@@ -361,7 +329,9 @@ Like Solution $3$, let $z=\sqrt[16]{5}$Then, the expression becomes
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_8_Solution_Figure_1.png}
                     \end{figure}
-                    ————Let $O_1, O_2, O_3$ be the centers and $r_1 = 4, r_2 = 10,r_3 = 14$ the radii of the circles $C_1, C_2, C_3$. Let $T_1, T_2$ be the points of tangency from the common external tangent of $C_1, C_2$, respectively, and let the extension of $\overline{T_1T_2}$ intersect the extension of $\overline{O_1O_2}$ at a point $H$. Let the endpoints of the chord/tangent be $A,B$, and the foot of the perpendicular from $O_3$ to $\overline{AB}$ be $T$. From the similar \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangles} $\triangle HO_1T_1 \sim \triangle HO_2T_2 \sim \triangle HO_3T$,
+                    
+
+ ————Let $O_1, O_2, O_3$ be the centers and $r_1 = 4, r_2 = 10,r_3 = 14$ the radii of the circles $C_1, C_2, C_3$. Let $T_1, T_2$ be the points of tangency from the common external tangent of $C_1, C_2$, respectively, and let the extension of $\overline{T_1T_2}$ intersect the extension of $\overline{O_1O_2}$ at a point $H$. Let the endpoints of the chord/tangent be $A,B$, and the foot of the perpendicular from $O_3$ to $\overline{AB}$ be $T$. From the similar \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangles} $\triangle HO_1T_1 \sim \triangle HO_2T_2 \sim \triangle HO_3T$,
 
  
  \[\frac{HO_1}{4} = \frac{HO_1+14}{10} = \frac{HO_1+10}{O_3T}.\]
@@ -379,8 +349,6 @@ Like Solution $3$, let $z=\sqrt[16]{5}$Then, the expression becomes
 
 
 
-
-
 \textbf{Solution 2}
 
 Call our desired length $x$. Note for any $X$ on $\overline{AB}$ and $Y$ on $\overline{O_1O_2}$ such that $\overline{XY}\perp\overline{AB}$ that the function $f$ such that $f(\overline{O_1Y})=\overline{XY}$ is linear. Since $(0,4)$ and $(14,10)$, we can quickly interpolate that $f(10)=\overline{O_3T}=\frac{58}{7}$. Then, extend $\overline{O_3T}$ until it reaches the circle on both sides; call them $P,Q$. By Power of a Point,$\overline{PT}\cdot\overline{TQ}=\overline{AT}\cdot\overline{TB}$.Since $\overline{AT}=\overline{TB}=\frac{1}{2}x$,
@@ -392,8 +360,6 @@ Call our desired length $x$. Note for any $X$ on $\overline{AB}$ and $Y$ on $\ov
  \textbf{Note to Ambitious Learners} Yes, we have found the length of the common external tangent. What is the length of the chord that is the common internal tangent of $C_1$ and $C_2$?
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) For how many positive integers $n$ less than or equal to 1000 is $(\sin t + i \cos t)^n = \sin nt + i \cos nt$ true for all real $t$?
@@ -410,11 +376,91 @@ We know by \href{https://artofproblemsolving.com/wiki/index.php?title=De\_Moivre
 
  Recall the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\_identities}{trigonometric identities} $\cos \left(\frac{\pi}2 - u\right) = \sin u$ and $\sin \left(\frac{\pi}2 - u\right) = \cos u$ hold for all real $u$.  If our original equation holds for all $t$, it must certainly hold for $t = \frac{\pi}2 - u$.  Thus, the question is equivalent to asking for how many \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integers} $n \leq 1000$ we have that $\left(\sin\left(\frac\pi2 - u\right) + i \cos\left(\frac\pi 2 - u\right)\right)^n = \sin n \left(\frac\pi2 -u \right) + i\cos n \left(\frac\pi2 - u\right)$ holds for all real $u$.
 
- $\left(\sin\left(\frac\pi2 - u\right) + i \cos\left(\frac\pi 2 - u\right)\right)^n = \left(\cos u + i \sin u\right)^n = \cos nu + i\sin nu$.  We know that two \href{https://artofproblemsolving.com/wiki/index.php?title=Complex\_number}{complex numbers} are equal if and only if both their \href{https://artofproblemsolving.com/wiki/index.php?title=Real\_part}{real part} and \href{https://artofproblemsolving.com/wiki/index.php?title=Imaginary\_part}{imaginary part} are equal.  Thus, we need to find all $n$ such that 
+ $\left(\sin\left(\frac\pi2 - u\right) + i \cos\left(\frac\pi 2 - u\right)\right)^n = \left(\cos u + i \sin u\right)^n = \cos nu + i\sin nu$.  We know that two \href{https://artofproblemsolving.com/wiki/index.php?title=Complex\_number}{complex numbers} are equal if and only if both their \href{https://artofproblemsolving.com/wiki/index.php?title=Real\_part}{real part} and \href{https://artofproblemsolving.com/wiki/index.php?title=Imaginary\_part}{imaginary part} are equal.  Thus, we need to find all $n$ such that $\cos n u = \sin n\left(\frac\pi2 - u\right)$ and $\sin nu = \cos n\left(\frac\pi2 - u\right)$ hold for all real $u$.
+
+ $\sin x = \cos y$ if and only if either $x + y = \frac \pi 2 + 2\pi \cdot k$ or $x - y = \frac\pi2 + 2\pi\cdot k$ for some integer $k$.  So from the equality of the real parts we need either $nu + n\left(\frac\pi2 - u\right) = \frac\pi 2 + 2\pi \cdot k$, in which case $n = 1 + 4k$, or we need $-nu + n\left(\frac\pi2 - u\right) = \frac\pi 2 + 2\pi \cdot k$, in which case $n$ will depend on $u$ and so the equation will not hold for all real values of $u$.  Checking $n = 1 + 4k$ in the equation for the imaginary parts, we see that it works there as well, so exactly those values of $n$ congruent to $1 \pmod 4$ work.  There are $\boxed{250}$ of them in the given range.
 
  
 
 
+
+\textbf{Solution 2}
+
+This problem begs us to use the familiar identity $e^{it} = \cos(t) + i \sin(t)$. Notice, $\sin(t) + i \cos(t) = i(\cos(t) - i \sin(t)) = i e^{-it}$ since $\sin(-t) = -\sin(t)$. Using this, $(\sin(t) + i \cos(t))^n = \sin(nt) + i \cos(nt)$ is recast as $(i e^{-it})^n = i e^{-itn}$. Hence we must have $i^n = i \Rightarrow i^{n-1} = 1 \Rightarrow n \equiv 1 \bmod{4}$. Thus since $1000$ is a multiple of $4$ exactly one quarter of the residues are congruent to $1$ hence we have $\boxed{250}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can rewrite $\sin(t)$ as $\cos\left(\frac{\pi}{2}-t\right)$ and $\cos(t)$ as $\sin\left(\frac{\pi}{2}-t\right)$. This means that $\sin t + i\cos t = e^{i\left(\frac{\pi}{2}-t\right)}=\frac{e^{\frac{\pi i}{2}}}{e^{it}}$. This theorem also tells us that $e^{\frac{\pi i}{2}}=i$, so $\sin t + i\cos t = \frac{i}{e^{it}}$. By the same line of reasoning, we have $\sin nt + i\cos nt = \frac{i}{e^{int}}$.
+
+ For the statement in the question to be true, we must have $\left(\frac{i}{e^{it}}\right)^n=\frac{i}{e^{int}}$. The left hand side simplifies to $\frac{i^n}{e^{int}}$. We cancel the denominators and find that the only thing that needs to be true is that $i^n=i$. This is true if $n\equiv1\pmod{4}$, and there are $\boxed{250}$ such numbers between $1$ and $1000$. Solution by Zeroman
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We are using degrees in this solution instead of radians. I just process stuff better that way.
+
+ We can see that the LHS is $cis(n(90^{\circ}-t))$, and the RHS is $cis(90^{\circ}-nt)$ So, $n(90-t) \equiv 90-nt \mod 360$ Expanding and canceling the nt terms, we will get $90n \equiv 90 \mod 360$. Canceling gets $n \equiv 1 \mod 4$, and thus there are $\boxed{250}$ values of n.
+
+ -AlexLikeMath
+
+ 
+
+
+
+\textbf{Solution 5(CHEAP)}
+
+Let $t=0$. Then, we have $i^n=i$ which means $n\equiv 1\pmod{4}$. Thus, the answer is $\boxed{250}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+We factor out $i^n$ from $(\sin t + i \cos t)^n = i^n (\cos(t) - i \sin t)= i^n(\cos(nt) - i\sin nt).$ We know the final expression must be the same as $\sin nt + i \cos nt$ so we must have $i^n(\cos(nt) - i\sin nt) = \sin nt + i \cos nt$ in which testing yields $n \equiv 1 \pmod{4}$ is the only mod that works, so we have a total of $1000 \cdot\frac{1}{4} = \boxed{250}$ integers $n$ that work.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+Note that this looks like de Moivre's except switched around. Using de Moivre's as motivation we try to convert the given expression into de Moivre's. Note that $\sin t = \cos(90 - t)$ and $\cos t = \sin(90 - t)$. So we rewrite the expression and setting it equal to the given expression in the problem, we get $\cos(90 - nt) + i\sin(90 - nt) = \cos(90n - nt) + i\sin(90n - nt)$. Now we can just look at the imaginary parts. Doing so and simplifying, we see that $1 + 4k= n$. From this we see that $n \equiv 1\pmod{4}$. So there are $\boxed{250}$ solutions. 
+
+ 
+
+
+
+\textbf{Solution 8}
+
+$(\sin\theta + i\cos\theta)^{n} = i^{n} (\cos\theta - i\sin\theta)^n$
+
+ Hence the required condition is just $i^{n} = i$ which is true for exactly 1 in 4 consecutive numbers. Thus $\boxed{250}$ 
+
+ 
+
+
+
+\textbf{Solution 9}
+
+Note that this equation is extremely similar to De Moivre's Theorem. If we can find a way to flip the $\cos$ and $\sin$, we'll be good. So we just need to relate $\cos$ and $\sin$ to each other. Ah-ha! We know that $\cos{x}=\sin{\left(\dfrac{\pi}{2}-x\right)}$, and $\sin{x}=\cos{\left(\dfrac{\pi}{2}-x\right)}$. So, substituting gives us 
+ \[\left[\cos{\left(\dfrac{\pi}{2}-x\right)}+i\sin{\left(\dfrac{\pi}{2}-x\right)}\right]^n=\cos{ \left(\dfrac{n\pi}{2}-nt\right)}+i\sin{ \left(\dfrac{n\pi}{2}-nt\right)}=\sin{nt}+i\cos{nt}.\] Let us compare the real parts since they must be equal (we could also do the same for the imaginary parts, as well). So, we have 
+ \[\cos{\left(\dfrac{n\pi}{2}-nt\right)}=\sin{nt}=\cos{\left(\dfrac{\pi}{2}-nt\right)}\] 
+ \[\Longrightarrow \dfrac{n\pi}{2}-nt=\dfrac{\pi}{2}-nt+2\pi{k}, k \in \mathbb{Z}.\] Solving, we find, 
+ \[\dfrac{(n-1)\pi}{2}=2\pi{k}\] 
+ \[\Longrightarrow n=4k+1\] 
+ \[\Longrightarrow n=1,5,9,...,997 \Longrightarrow \boxed{250}.\]
+
+ -jb2015007
+
+ 
 
 
 	\item (\textit{AIME II 2005}) Given that $O$ is a regular octahedron, that $C$ is the cube whose vertices are the centers of the faces of $O,$ and that the ratio of the volume of $O$ to that of $C$ is $\frac mn,$ where $m$ and $n$ are relatively prime integers, find $m+n.$
@@ -434,7 +480,7 @@ We know by \href{https://artofproblemsolving.com/wiki/index.php?title=De\_Moivre
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -448,8 +494,6 @@ Let the side of the octahedron be of length $s$.  Let the \href{https://artofpro
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the octahedron have vertices $(\pm 3, 0, 0), (0, \pm 3, 0), (0, 0, \pm 3)$.  Then the vertices of the cube lie at the centroids of the faces, which have coordinates $(\pm 1, \pm 1, \pm 1)$.  The cube has volume 8.  The region of the octahedron lying in each octant is a \href{https://artofproblemsolving.com/wiki/index.php?title=Tetrahedron}{tetrahedron} with three edges mutually perpendicular and of length 3.  Thus the octahedron has volume $8 \cdot \left(\frac 16 \cdot3^3\right) = 36$, so the ratio is $\frac {36}{8} = \frac 92$ and so the answer is $\boxed{011}$.
@@ -458,15 +502,11 @@ Let the octahedron have vertices $(\pm 3, 0, 0), (0, \pm 3, 0), (0, 0, \pm 3)$. 
 
 
 
-
-
 \textbf{Solution 3}
 
 Continue Solution 2 until realizing the volume of the cube is 8. The side length of the octahedron through distance formulae is $3\sqrt{2}$. One can quickly derive the volume of a octahedron by multiplying two times the volume of a tetrahedron. The height of the top tetrahedron is 3, and the area of the square is 18, so the volume of the top tetrahedron is 18, and the total volume of the octahedron is 36. So, the ratio is $\frac {36}{8} = \frac{9}{2}$ and so the answer is $\boxed{011}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) Let $m$ be a positive integer, and let $a_0, a_1,\ldots,a_m$ be a sequence of reals such that $a_0 = 37, a_1 = 72, a_m = 0,$ and $a_{k+1} = a_{k-1} - \frac 3{a_k}$ for $k = 1,2,\ldots, m-1.$ Find $m.$
@@ -481,16 +521,16 @@ Continue Solution 2 until realizing the volume of the cube is 8. The side length
 
 For $0 < k < m$, we have
 
- <center>$a_{k}a_{k+1} = a_{k-1}a_{k} - 3$.
+ $a_{k}a_{k+1} = a_{k-1}a_{k} - 3$.
 
- </center>Thus the product $a_{k}a_{k+1}$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Monovariant}{monovariant}: it decreases by 3 each time $k$ increases by 1.  For $k = 0$ we have $a_{k}a_{k+1} = 37\cdot 72$, so when $k = \frac{37 \cdot 72}{3} = 888$, $a_{k}a_{k+1}$ will be zero for the first time, which implies that $m = \boxed{889}$, our answer.
+ 
+
+ Thus the product $a_{k}a_{k+1}$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Monovariant}{monovariant}: it decreases by 3 each time $k$ increases by 1.  For $k = 0$ we have $a_{k}a_{k+1} = 37\cdot 72$, so when $k = \frac{37 \cdot 72}{3} = 888$, $a_{k}a_{k+1}$ will be zero for the first time, which implies that $m = \boxed{889}$, our answer.
 
  
 Note: In order for $a_{m} = 0$ we need $a_{m-2}a_{m-1}=3$ simply by the recursion definition.
 
  
-
-
 
 
 
@@ -504,15 +544,11 @@ Plugging in $k = m-1$ to the given relation, we get $0 = a_{m-2} - \frac {3}{a_{
 
 
 
-
-
 \textbf{Solution 3 (Telescoping)}
 
 Note that $a_{k+1}\cdot a_{k} - a_{k}\cdot a_{k-1} = - 3$. Then, we can generate a sum of series of equations such that $\sum_{k=1}^{m-1} a_{k+1}\cdot a_{k} - a_{k}\cdot a_{k-1} = - 3(m-1)$. Then, note that all but the first and last terms on the LHS cancel out, leaving us with $a_m\cdot a_{m-1} - a_1\cdot a_0 = -3(m-1)$. Plugging in $a_m=0$, $a_0=37$, $a_1=72$, we have $-37\cdot 72 = -3(m-1)$. Solving for $m$ gives $m=\boxed{889}$. ~sigma
 
  
-
-
 
 
 
@@ -532,8 +568,6 @@ Note that $a_{k+1}\cdot a_{k} - a_{k}\cdot a_{k-1} = - 3$. Then, we can generate
  We don't see a clean homogenous equation, so we end our recurrence seeking here. However, now we have enough information. Because $a_n(a_{n+1}) = 2664-3n$, we just need the $m$ such that $a_m(a_{m+1}) = 2664-3m$. However, $a_{m+1}$ is undefined. Therefore, we must consider $a_{m-1}a_{m} = 2664-3(m-1)$. We know $a_m = 0$, so $0 = 2664-3(m-1)$, implying $m = \boxed{889}$.
 
  
-
-
 
 
 
@@ -570,8 +604,6 @@ $\textbf{Lemma}:$
  
 
 
-
-
 	\item (\textit{AIME II 2005}) Square $ABCD$ has center $O, AB=900, E$ and $F$ are on $AB$ with $AE<BF$ and $E$ between $A$ and $F, m\angle EOF =45^\circ,$ and $EF=400.$ Given that $BF=p+q\sqrt{r},$ where $p,q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p+q+r.$
 
 
@@ -587,7 +619,9 @@ $\textbf{Lemma}:$
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_12_Solution_Figure_1.png}
                     \end{figure}
-                    Let $G$ be the foot of the \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular} from $O$ to $AB$. Denote $x = EG$ and $y = FG$, and $x > y$ (since $AE < BF$ and $AG = BG$). Then $\tan \angle EOG = \frac{x}{450}$, and $\tan \angle FOG = \frac{y}{450}$.
+                    
+
+ Let $G$ be the foot of the \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular} from $O$ to $AB$. Denote $x = EG$ and $y = FG$, and $x > y$ (since $AE < BF$ and $AG = BG$). Then $\tan \angle EOG = \frac{x}{450}$, and $\tan \angle FOG = \frac{y}{450}$.
 
  By the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\_identity}{tangent addition rule} $\left( \tan (a + b) = \frac{\tan a + \tan b}{1 - \tan a \tan b} \right)$, we see that 
  \[\tan 45 = \tan (EOG + FOG) = \frac{\frac{x}{450} + \frac{y}{450}}{1 - \frac{x}{450} \cdot \frac{y}{450}}.\] Since $\tan 45 = 1$, this simplifies to $1 - \frac{xy}{450^2} = \frac{x + y}{450}$. We know that $x + y = 400$, so we can substitute this to find that $1 - \frac{xy}{450^2} = \frac 89 \Longrightarrow xy = 150^2$.
@@ -600,8 +634,6 @@ $\textbf{Lemma}:$
 
 
 
-
-
 \textbf{Solution 2 (synthetic)}
 
 
@@ -609,7 +641,9 @@ $\textbf{Lemma}:$
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_12_Solution_Figure_2.png}
                     \end{figure}
-                    Label $BF=x$, so $EA =$ $500 - x$. Rotate $\triangle{OEF}$ about $O$ until $EF$ lies on $BC$. Now we know that $\angle{EOF}=45^\circ$ therefore $\angle BOF+\angle AOE=45^\circ$ also since $O$ is the center of the square.  Label the new triangle that we created $\triangle OGJ$.  Now we know that rotation preserves angles and side lengths, so $BG=500-x$ and $JC=x$.  Draw $GF$ and $OB$. Notice that $\angle BOG =\angle OAE$ since rotations preserve the same angles so $\angle{FOG}=45^\circ$ too. By SAS we know that $\triangle FOE\cong \triangle FOG,$ so $FG=400$. Now we have a right $\triangle BFG$ with legs $x$ and $500-x$ and hypotenuse $400$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, 
+                    
+
+ Label $BF=x$, so $EA =$ $500 - x$. Rotate $\triangle{OEF}$ about $O$ until $EF$ lies on $BC$. Now we know that $\angle{EOF}=45^\circ$ therefore $\angle BOF+\angle AOE=45^\circ$ also since $O$ is the center of the square.  Label the new triangle that we created $\triangle OGJ$.  Now we know that rotation preserves angles and side lengths, so $BG=500-x$ and $JC=x$.  Draw $GF$ and $OB$. Notice that $\angle BOG =\angle OAE$ since rotations preserve the same angles so $\angle{FOG}=45^\circ$ too. By SAS we know that $\triangle FOE\cong \triangle FOG,$ so $FG=400$. Now we have a right $\triangle BFG$ with legs $x$ and $500-x$ and hypotenuse $400$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, 
 
  
  \begin{align*} (500-x)^2+x^2&=400^2 \\ 250000-1000x+2x^2&=16000 \\ 90000-1000x+2x^2&=0 \end{align*}
@@ -618,8 +652,6 @@ $\textbf{Lemma}:$
  and applying the \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_formula}{quadratic formula} we get that $x=250\pm 50\sqrt{7}$.  Since $BF > AE,$ we take the positive root, and our answer is $p+q+r = 250 + 50 + 7 = 307$.
 
  
-
-
 
 
 
@@ -638,8 +670,6 @@ $\textbf{Lemma}:$
 
 
 
-
-
 \textbf{Solution 4 (Abusing Stewart)}
 
 Let $x = BF$, so $AE = 500-x$. Let $a = OE$, $b = OF$. Applying Stewart's Theorem on triangles $AOB$ twice, first using $E$ as the base point and then $F$, we arrive at the equations 
@@ -653,8 +683,6 @@ Let $x = BF$, so $AE = 500-x$. Let $a = OE$, $b = OF$. Applying Stewart's Theore
 
 
 
-
-
 \textbf{Solution 5 (Complex Numbers)}
 
 Let lower case letters be the complex numbers correspond to their respective upper case points in the complex plane, with $o = 0, a = -450 + 450i, b = 450 + 450i$, and $f = x + 450i$. Since $EF$ = 400, $e = (x-400) + 450i$. From $\angle{EOF} = 45^{\circ}$, we can deduce that the rotation of point $F$ 45 degrees counterclockwise, $E$, and the origin are collinear. In other words, 
@@ -665,8 +693,6 @@ Let lower case letters be the complex numbers correspond to their respective upp
  -MP8148
 
  
-
-
 
 
 
@@ -694,8 +720,6 @@ Let lower case letters be the complex numbers correspond to their respective upp
 
 
 
-
-
 \textbf{Solution 7 (Using a Circle)}
 
 
@@ -703,7 +727,9 @@ Let lower case letters be the complex numbers correspond to their respective upp
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_12_Solution_Figure_5.png}
                     \end{figure}
-                    We know that G is on the perpendicular bisector of $EF$, which means that $EJ=JF=200$, $EG=GF=200\sqrt{2}$ and $GH=250$. Now, let $HO$ be equal to $x$. We can set up an equation with the Pythagorean Theorem: 
+                    
+
+ We know that G is on the perpendicular bisector of $EF$, which means that $EJ=JF=200$, $EG=GF=200\sqrt{2}$ and $GH=250$. Now, let $HO$ be equal to $x$. We can set up an equation with the Pythagorean Theorem: 
 
  
  \begin{align*} \sqrt{x^2+250^2}&=(200\sqrt{2})^2 \\ x^2+62500&=80000 \\ x^2&=17500 \\ x&=50\sqrt{7} \end{align*}
@@ -724,8 +750,6 @@ Let lower case letters be the complex numbers correspond to their respective upp
  This means that our answer would be $250+50+7=\boxed{307}$
 
  
-
-
 
 
 
@@ -751,15 +775,11 @@ From AA similarity we have
 
 
 
-
-
 \textbf{Solution 9}
 
 We use ratio lemma and Stewart's theorem:Connect $OA, OE, OF, OB$ and let $AE = x$ and $BF = 500 - x.$Let angle $AOE = y,$ hence $BOF = 45 - y.$Now, we apply Stewart's theorem in triangles $AOF$ and $BOE$ to get $OE$ and $OF$ in terms of $x$finally, calculate $x/400$ and $500-x/400$ using ratio lemma to find $x$ and $y$
 
  
-
-
 
 
 
@@ -773,8 +793,6 @@ Draw AO, OB, and extend OB to D. Let $\angle{FOB} = \alpha.$ Then, after angle c
  \[p+q+r=\boxed{307}\]-dchang0524
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) Let $P(x)$ be a polynomial with integer coefficients that satisfies $P(17)=10$ and $P(24)=17.$ Given that $P(n)=n+3$ has two distinct integer solutions $n_1$ and $n_2,$ find the product $n_1\cdot n_2.$
@@ -796,8 +814,6 @@ We define $Q(x)=P(x)-x+7$, noting that it has roots at $17$ and $24$. Hence $P(x
 
 
 
-
-
 \textbf{Solution 2}
 
 We know that $P(n)-(n+3)=0$ so $P(n)$ has two distinct solutions so $P(x)$ is at least quadratic. Let us first try this problem out as if $P(x)$ is a quadratic polynomial. Thus $P(n)-(n+3)= an^2+(b-1)n+(c-3)=0$ because $P(n)=an^2+bn+c$ where $a,b,c$ are all integers. Thus $P(x)=ax^2+bx+c$ where $a,b,c$ are all integers. We know that $P(17)$ or $289a+17b+c=10$ and $P(24)$ or $576a+24b+c=17$. By doing $P(24)-P(17)$ we obtain that $287a+7b=7$ or $41a+b=1$ or $-41a=b-1$. Thus $P(n)=an^2- (41a)n+(c-3)=0$.  Now we know that $b=-41a+1$, we have $289a+17(-41a+1)+c=10$ or $408a=7+c$ which makes $408a-10=c-3$. Thus $P(n)=an^2-(41a)n+(408a-10)=0$. By Vieta's formulas, we know that the sum of the roots($n$) is equal to 41 and the product of the roots($n$) is equal to $408-\frac{10}{a}$. Because the roots are integers $\frac{10}{a}$ has to be an integer, so $a=1,2,5,10,-1,-2,-5,-10$. Thus the product of the roots is equal to one of the following: $398,403,406,407,409,410,413,418$. Testing every potential product of the roots, we find out that the only product that can have divisors that sum up to $41$ is $\boxed{418}$.
@@ -805,8 +821,6 @@ We know that $P(n)-(n+3)=0$ so $P(n)$ has two distinct solutions so $P(x)$ is at
  -David Camacho
 
  
-
-
 
 
 
@@ -821,8 +835,6 @@ We have $P(n_1) = n_1+3$. Using the property that $a - b \mid P(a) - P(b)$ whene
 
 
 
-
-
 \textbf{Solution 4}
 
 Based on the second part of the problem statement, $P(n)$ is at least a quadratic. So, we can test that out. Plugging in our known values, we know that $P(24)=576a+24b+c=17$ and $P(17)=289a+17b+c=10$. So, $P(24)-P(17)=287a+7b=7$ and $41a+b=1$. Plugging in the working $n_1$ and $n_2$ values, we get that $an_1^2+bn_1+c=n_1+3$ and $an_2^2+bn_2+c=n_2+3$. Subtracting the two equations gives that $a(n_1^2-n_2^2)+b(n_1-n_2)=n_1-n_2 \implies a(n_1+n_2)+b=1=41a+b \implies n_1+n_2=41$.  Adding the two previous equations gives that $47=2c+41b+a(n_1^2+n_2^2)$ and adding the two equations we were given gives us $27=2c+41b+865a$. Subtracting implies that $20=a(n_1^2+n_2^2-865)=a((n_1+n_2)^2-2n_1 \cdot n_2-865) = a(1681-865-2n_1 \cdot n_2)=a(816-2n_1 \cdot n_2)$. 
@@ -832,8 +844,6 @@ Based on the second part of the problem statement, $P(n)$ is at least a quadrati
  Plugging in values that satisfy $n_1+n_2=41$ gives us that the only possible solution is $n_1\cdot n_2=\boxed{418}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) In triangle $ABC, AB=13, BC=15,$ and $CA = 14.$ Point $D$ is on $\overline{BC}$ with $CD=6.$ Point $E$ is on $\overline{BC}$ such that $\angle BAE\cong \angle CAD.$ Given that $BE=\frac pq$ where $p$ and $q$ are relatively prime positive integers, find $q.$
@@ -851,7 +861,9 @@ Based on the second part of the problem statement, $P(n)$ is at least a quadrati
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_14_Solution_Figure_1.png}
                     \end{figure}
-                    By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines}{Law of Sines} and since $\angle BAE = \angle CAD, \angle BAD = \angle CAE$, we have
+                    
+
+ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines}{Law of Sines} and since $\angle BAE = \angle CAD, \angle BAD = \angle CAE$, we have
 
  
  \begin{align*}  \frac{CD \cdot CE}{AC^2} &= \frac{\sin CAD}{\sin ADC} \cdot \frac{\sin CAE}{\sin AEC}  \\ &= \frac{\sin BAE \sin BAD}{\sin ADB \sin AEB} \\ &= \frac{\sin BAE}{\sin AEB} \cdot \frac{\sin BAD}{\sin ADB}\\ &= \frac{BE \cdot BD}{AB^2} \end{align*}
@@ -860,8 +872,6 @@ Based on the second part of the problem statement, $P(n)$ is at least a quadrati
  Substituting our knowns, we have $\frac{CE}{BE} = \frac{3 \cdot 14^2}{2 \cdot 13^2} = \frac{BC - BE}{BE} = \frac{15}{BE} - 1 \Longrightarrow BE = \frac{13^2 \cdot 15}{463}$. The answer is $q = \boxed{463}$.
 
  
-
-
 
 
 
@@ -883,8 +893,6 @@ Drop the altitude from A and call the base of the altitude Q. Also, drop the alt
 
 
 
-
-
 \textbf{Solution 3 (LoC and LoS bash)}
 
 Let $\angle CAD = \angle BAE = \theta$. Note by Law of Sines on $\triangle BEA$ we have
@@ -902,8 +910,6 @@ Let $\angle CAD = \angle BAE = \theta$. Note by Law of Sines on $\triangle BEA$ 
  \[\frac{BE}{\sin{\theta}} = \frac{13}{\sin{BEA}} \Rightarrow \frac{BE}{\frac{6}{\sqrt{205}}} = \frac{13}{\frac{926}{65\sqrt{205}}} \Rightarrow \frac{BE}{6} = \frac{13 \cdot 65}{926} \Rightarrow \frac{13 \cdot 65 \cdot 6}{926} = BE = \frac{2535}{463}.\]It follows that the answer is $\boxed{463}$.
 
  
-
-
 
 
 
@@ -933,8 +939,6 @@ Let $AK$ be the angle bisector of $\angle A$ such that $K$ is on $BC$.
 
 
 
-
-
 \textbf{Solution 5 (Isogonal lines with respect to A angle bisesector)}
 
 Since $AE$ and $AD$ are isogonal with respect to the $A$ angle bisector, we have 
@@ -950,8 +954,6 @@ Since $AE$ and $AD$ are isogonal with respect to the $A$ angle bisector, we have
 
 
 
-
-
 \textbf{Solution 6 (Tangent subtraction formulas)}
 
 Note: We first recall some helpful tips regarding 13, 14, 15 triangles. Drawing an altitude H from B to AC results in AHB being a 5-12-13 right triangle and CHB being a 3-4-5 (9-12-15) right triangle. 
@@ -961,13 +963,13 @@ Note: We first recall some helpful tips regarding 13, 14, 15 triangles. Drawing 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_14_Solution_Figure_2.png}
                     \end{figure}
-                    Now we start by drawing altitudes from D and E onto AC, labeling them as F and G, and labelling $\angle DAG = \alpha$. Now we know that $\overline{DF} = \frac{24}{5}$ and $\overline{FC} = \frac{18}{5}$. Therefore, $\overline{AF} = \frac{52}{5}$, so $\tan{(\alpha)} = \frac{6}{13}$. Our goal now is to use tangent $\angle EAG$ in triangle $AEG$. We set $\overline{BE}$ to $x$, so $\overline{ED} = 9 - x$ and $\overline{EC} = 15 - x$, so $\overline{EG} = \frac{4}{5}(15-x)$ and $\overline{GC} = \frac{3}{5}(15-x)$ so $\overline{AG} = \frac{3x+25}{5}$. Now we just need tangent of $\angle EAG$. 
+                    
+
+ Now we start by drawing altitudes from D and E onto AC, labeling them as F and G, and labelling $\angle DAG = \alpha$. Now we know that $\overline{DF} = \frac{24}{5}$ and $\overline{FC} = \frac{18}{5}$. Therefore, $\overline{AF} = \frac{52}{5}$, so $\tan{(\alpha)} = \frac{6}{13}$. Our goal now is to use tangent $\angle EAG$ in triangle $AEG$. We set $\overline{BE}$ to $x$, so $\overline{ED} = 9 - x$ and $\overline{EC} = 15 - x$, so $\overline{EG} = \frac{4}{5}(15-x)$ and $\overline{GC} = \frac{3}{5}(15-x)$ so $\overline{AG} = \frac{3x+25}{5}$. Now we just need tangent of $\angle EAG$. 
 
  We find this using $\tan{(EAG)} = \tan{(A - \alpha)} = \frac{\tan{A} - \tan{\alpha}}{1 + \tan{A}\tan{\alpha}}$, which is $\frac{\frac{12}{5} - \frac{6}{13}}{1 + \frac{12}{5} \cdot \frac{6}{13}}$ or $\frac{126}{137}$. Now we solve the equation $\tan{\angle EAG} = \frac{126}{137} = \frac{\frac{60-4x}{5}}{\frac{3x+25}{5}}$, so $x = \frac{2535}{463}$
 
  
-
-
 
 
 
@@ -976,8 +978,6 @@ Note: We first recall some helpful tips regarding 13, 14, 15 triangles. Drawing 
 Let $ED = x$, such that $BE = 9-x$. Since $\overline{AE}$ and $\overline{AD}$ are isogonal, we get $\frac{9-x}{6+x} \cdot \frac{9}{6} = \frac{13^2}{14^2} \Rightarrow 588(9 - x) = 338(6 + x)$, and we can solve to get $x = \frac{1632}{463}$(and $BE = \frac{2535}{463}$). Hence, our answer is $\boxed{463}$. - Spacesam
 
  
-
-
 
 
 
@@ -990,7 +990,9 @@ Diagram borrowed from Solution 1.
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_14_Solution_Figure_1.png}
                     \end{figure}
-                    Applying \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on $\bigtriangleup ABC$ with respect to $\angle C$ we have
+                    
+
+ Applying \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on $\bigtriangleup ABC$ with respect to $\angle C$ we have
  \[AB^2=AC^2+BC^2-2(AC)(BC)\cos C\]Solving gets $\cos C=\frac{3}{5}$, which implies that 
  \[\sin C=\sqrt{1-\cos C}=\frac{4}{5}\]Applying \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} with \href{https://artofproblemsolving.com/wiki/index.php?title=Cevian}{cevian} $AD$ we have
  \[(BC)(AD)^2+(BC)(BD)(CD)=(CD)(AB)^2+(BD)(AC)^2\]Solving gets $AD=\frac{4\sqrt{205}}{5}$.
@@ -1014,15 +1016,11 @@ Diagram borrowed from Solution 1.
 
 
 
-
-
 \textbf{Solution 10}
 
 Making perpendicular lines from $D$ to $AC$, meeting at $N$; from $E$ to $AB$, meeting at $J$. According to LOC, we can get that $\cos\angle{C}=\frac{3}{5}$. So we get that $CN=\frac{18}{5};DN=\frac{24}{5};AN=AC-CN=\frac{52}{5}$. Now we can see that $\tan\angle{DAN}=\frac{DN}{AN}=\frac{6}{13}$. Now we see that in $\triangle{EJA}$, assuming $EJ=6x;AJ=13x$ since $\tan\angle{JAE}=\tan\angle{DAN}$. Now we need to find the tangent of $\angle{B}$. Making a perpendicular line from $C$ to $AB$ at $M$. We can see that $CM=\frac{168}{13};AM=\frac{70}{13};BM=AB-AM=13-\frac{70}{13}=\frac{99}{13}$. We get that $\tan\angle{B}=\frac{56}{33}$ so $BJ=\frac{33}{56}*6x=\frac{99x}{28}$. After getting AJ and BJ, we can get that $AB=AJ+BJ=\frac{463x}{28}=13$, which means that $x=\frac{364}{463}$. According to the similarity, $\frac{CM}{BC}=\frac{JE}{BE};BE=\frac{2535}{463}$ which $\boxed{463}$ is our answer~bluesoul
 
  
-
-
 
 
 
@@ -1034,8 +1032,6 @@ First, apply Stewart's theorem to triangle $ABC$ with cevian $AD$, from which we
 
 
 
-
-
 \textbf{Solution 12 (Clean)}
 
 
@@ -1043,7 +1039,9 @@ First, apply Stewart's theorem to triangle $ABC$ with cevian $AD$, from which we
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_14_Solution_Figure_4.png}
                     \end{figure}
-                    We begin by drawing a line through point $B$ parallel to side $AC$. Extend Lines $AE$ and $AD$ to meet the new parallel line at points $F$ and $G$, respectively. This will help us create a lot of similar triangles. 
+                    
+
+ We begin by drawing a line through point $B$ parallel to side $AC$. Extend Lines $AE$ and $AD$ to meet the new parallel line at points $F$ and $G$, respectively. This will help us create a lot of similar triangles. 
 
  The first pair of similar triangles that is easy to spot is triangle $ACD$ and triangle $GBD$ by AA similarity ($\angle{ADC}=\angle{GDB}$ by vertical angles, and $\angle{DAC}=\angle{DGB}$ by alternate interior angles). With the ratios $\frac{AC}{BG}=\frac{CD}{BD}$ $\rightarrow$ $\frac{14}{BG}=\frac{6}{9}$ $\rightarrow$ $BG=21$. 
 
@@ -1052,8 +1050,6 @@ First, apply Stewart's theorem to triangle $ABC$ with cevian $AD$, from which we
  The last pair of similar triangles we need is triangle $BEF$ and triangle $CAE$ by AA similarity (similar by vertical angles and alternate interior angles). With the ratios $\frac{AC}{BF}=\frac{CE}{BE}$ $\rightarrow$ $\frac{14}{\frac{169}{21}}=\frac{15-x}{x}$ $\rightarrow$ $x=\frac{169*15}{463}$. This cannot be simplified further, and the problem asks for the denominator, so the answer is $\boxed{463}$. 
 
  
-
-
 
 
 	\item (\textit{AIME II 2005}) Let $w_1$ and $w_2$ denote the circles $x^2+y^2+10x-24y-87=0$ and $x^2 +y^2-10x-24y+153=0,$ respectively. Let $m$ be the smallest positive value of $a$ for which the line $y=ax$ contains the center of a circle that is externally tangent to $w_2$ and internally tangent to $w_1.$ Given that $m^2=\frac pq,$ where $p$ and $q$ are relatively prime integers, find $p+q.$
@@ -1089,7 +1085,9 @@ Rewrite the given equations as $(x+5)^2 + (y-12)^2 = 256$ and $(x-5)^2 + (y-12)^
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_15_Solution_Figure_1.png}
                     \end{figure}
-                    Since the center lies on the line $y = ax$, we substitute for $y$ and expand: 
+                    
+
+ Since the center lies on the line $y = ax$, we substitute for $y$ and expand: 
  \[1 = \frac{x^2}{100} + \frac{(ax-12)^2}{75} \Longrightarrow (3+4a^2)x^2 - 96ax + 276 = 0.\]
 
  We want the value of $a$ that makes the line $y=ax$ tangent to the ellipse, which will mean that for that choice of $a$ there is only one solution to the most recent equation. But a quadratic has one solution \href{https://artofproblemsolving.com/wiki/index.php?title=Iff}{iff} its discriminant is $0$, so $(-96a)^2 - 4(3+4a^2)(276) = 0$.
@@ -1097,8 +1095,6 @@ Rewrite the given equations as $(x+5)^2 + (y-12)^2 = 256$ and $(x-5)^2 + (y-12)^
  Solving yields $a^2 = \frac{69}{100}$, so the answer is $\boxed{169}$.
 
  
-
-
 
 
 
@@ -1113,7 +1109,9 @@ As above, we rewrite the equations as $(x+5)^2 + (y-12)^2 = 256$ and $(x-5)^2 + 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2005_15_Solution_Figure_2.png}
                     \end{figure}
-                    By the reflection property of ellipses (i.e., the angle of incidence to a tangent line is equal to the angle of reflection for any path that travels between the foci), we know that $F_1$, $T$, and $F_2'$ are collinear, and similarly, $F_2$, $T$ and $F_1'$ are collinear. Therefore, $OF_1F_2F_2'F_1'$ is a pentagon with $OF_1=OF_2=OF_1'=OF_2'=13$, $F_1F_2=F_1'F_2'=10$, and $F_1F_2'=F_1'F_2=20$. Note that $\ell$ bisects $\angle F_1'OF_1$. We can bisect this angle by bisecting $\angle F_1'OF_2$ and $F_2OF_1$ separately.
+                    
+
+ By the reflection property of ellipses (i.e., the angle of incidence to a tangent line is equal to the angle of reflection for any path that travels between the foci), we know that $F_1$, $T$, and $F_2'$ are collinear, and similarly, $F_2$, $T$ and $F_1'$ are collinear. Therefore, $OF_1F_2F_2'F_1'$ is a pentagon with $OF_1=OF_2=OF_1'=OF_2'=13$, $F_1F_2=F_1'F_2'=10$, and $F_1F_2'=F_1'F_2=20$. Note that $\ell$ bisects $\angle F_1'OF_1$. We can bisect this angle by bisecting $\angle F_1'OF_2$ and $F_2OF_1$ separately.
 
  We proceed using complex numbers. Triangle $F_2OF_1'$ is isosceles with side lengths $13,13,20$. The height of this from the base of $20$ is $\sqrt{69}$. Therefore, the complex number $\sqrt{69}+10i$ represents the bisection of $\angle F_1'OF_2$.
 
@@ -1122,8 +1120,6 @@ As above, we rewrite the equations as $(x+5)^2 + (y-12)^2 = 256$ and $(x-5)^2 + 
  \[(-5+12i)(\sqrt{69}-10i)(12-5i)=169(10+i\sqrt{69}).\]In particular, note that the tangent of the argument of this complex number is $\sqrt{69}/10$, which must be the slope of the tangent line. Hence $a^2=69/100$, and the answer is $\boxed{169}$.
 
  
-
-
 
 
 
@@ -1143,8 +1139,6 @@ We use the same reflection as in Solution 2. As $OF_1'=OF_2=13$, we know that $\
  Now as $OF_1=OF_2'=13$, we know that $\triangle OF_1F_2'$ is isosceles, and as $F_1F_2'=20$, we can drop an altitude to $F_1F_2'$ to easily find that $\tan \angle OF_1T=\sqrt{69}/10$. Therefore, $\tan\angle XOT$, which is the desired slope, must also be $\sqrt{69}/10$. As before, we conclude that the answer is $\boxed{169}$.
 
  
-
-
 
 
 
@@ -1168,8 +1162,6 @@ We use the same reflection as in Solution 2. As $OF_1'=OF_2=13$, we know that $\
 
 
 
-
-
 \textbf{Solution 5 (probably fastest)}
 
 Like before, notice that the distances from the centers of the given circles to the desired center are $4+r$ and $16-r$, which add up to $20$. This means that the possible centers of the third circle lie on an ellipse with foci $(-5, 12)$ and $(5, 12)$. Using the fact that the sum of the distances from the foci is $20$, we find that the semi-major axis has length $10$ and the semi-minor axis has length $5\sqrt{3}$. Therefore, the equation of the ellipse is 
@@ -1182,15 +1174,11 @@ We proceed to find $m$ using the same method as Solution 1.
 
 
 
-
-
 \textbf{Solution 6}
 
 First, obtain the equation of the ellipse as laid out in previous solutions. We now scale the coordinate plane in the $x$ direction by a factor of $\frac{\sqrt{3}}{2}$ centered at $x=0.$ This takes the ellipse to a circle centered at $(0,12)$ with radius $5\sqrt{3}$ and takes the line $y=ax$ to $y=\left( \frac{\sqrt{3}}{2} \right)^{-1} ax.$ The tangent point of our line to the circle with positive slope forms a right triangle with the origin and the center of the circle. Thus, the distance from this tangent point to the origin is $\sqrt{69}.$ By similar triangles, the slope of this line is then $\frac{\sqrt{69}}{5\sqrt{3}}.$ We multiply this by $\frac{\sqrt{3}}{2}$ to get $a=\frac{\sqrt{69}}{10},$ so our final answer is $\boxed{169.}$
 
  
-
-
 
 
 \end{enumerate}

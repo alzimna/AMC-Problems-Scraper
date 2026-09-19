@@ -97,8 +97,11 @@ def build_tex(type,contest,year,version,output) :
 
     df = df[(df['contest'] == contest)  & (df['year'] == int(year)) & (df['version'] == version)].reset_index(drop = True)
 
+    if contest == 'AIME' :
+        section_name = " ".join([contest,version,str(year)])
+    else :
+        section_name = " ".join([contest.replace("_"," "),str(year)])
 
-    section_name = " ".join([contest,version,str(year)])
     with open(output,'w',encoding = 'utf-8') as file :
         file.write(
         rf'''\section{{{section_name}}}

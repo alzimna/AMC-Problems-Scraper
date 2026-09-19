@@ -17,8 +17,6 @@ The sum of an infinite geometric series is $\frac{a}{1-r}\rightarrow \frac{12}{1
 
 
 
-
-
 \textbf{Solution 2}
 
 There is a clear infinite geometric series, so we use the geometric series formula $S = \frac{a}{1-r}$. However, adjusted for the context of this specific series, $S(a)=\frac{12}{1-a}$. 
@@ -32,8 +30,6 @@ There is a clear infinite geometric series, so we use the geometric series formu
  We can use the fact that dividing by $(1-a)(1+a)$ is equivalent to multiplying by 14 in this scenario, as we have a constant term, 24, in the numerator of the second fraction. Multiplying this by 14 results in $24 \times 14 = \boxed{336}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) Two dice appear to be normal dice with their faces numbered from $1$ to $6$, but each dice is weighted so that the probability of rolling the number $k$ is directly proportional to $k$. The probability of rolling a $7$ with this pair of dice is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -54,15 +50,11 @@ It is easier to think of the dice as $21$ sided dice with $6$ sixes, $5$ fives, 
 
 
 
-
-
 \textbf{Solution 2}
 
 Since the probability of rolling any number is 1, and the problem tells us the dice are unfair, we can assign probabilities to the individual faces. The probability of rolling $n$ is $\frac{n}{21}$ because $21=\frac{6 \cdot 7}{2}$Next, we notice that 7 can be rolled by getting individual results of 1 and 6, 2 and 5, or 3 and 4 on the separate dice. The probability that 7 is rolled is now $2(\frac{1}{21} \cdot \frac{6}{21}+\frac{2}{21} \cdot \frac{5}{21} + \frac{3}{21} \cdot \frac{4}{21})$ which is equal to $\frac{56}{441}=\frac{8}{63}$.  Therefore the answer is $8+63=\boxed{071}$~PEKKA
 
  
-
-
 
 
 
@@ -73,8 +65,6 @@ Since the probability of rolling a $1$ is $\frac{1}{21}$, the probability of rol
  We have: $2 \cdot (\frac{1}{21} \cdot \frac{2}{7}$ $+$ $\frac{2}{21} \cdot \frac{5}{21}$ $+$ $\frac{1}{7} \cdot \frac{4}{21})$ $=$ $2 \cdot (\frac{2}{147} + \frac{10}{441} + \frac{4}{147})$ = $2 \cdot \frac{4}{63} = \frac{8}{63}$. Therefore, the answer is $8 + 63$ = $\boxed{071}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) A \textit{regular icosahedron} is a $20$-faced solid where each face is an equilateral triangle and five triangles meet at every vertex. The regular icosahedron shown below has one vertex at the top, one vertex at the bottom, an upper pentagon of five vertices all adjacent to the top vertex and all in the same horizontal plane, and a lower pentagon of five vertices all adjacent to the bottom vertex and all in another horizontal plane. Find the number of paths from the top vertex to the bottom vertex such that each part of a path goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated.
@@ -99,8 +89,6 @@ Think about each plane independently. From the top vertex, we can go down to any
 
 
 
-
-
 \textbf{Solution 2: Casework}
 
 Assume an ant is on the top of this icosahedron. Note that the icosahedron has two pentagon planes and two points where the ant starts and ends. Also note that when the ant hits a vertex of the pentagon, there is only two ways to go down. When the ant ends up at the last vertex and is about to head down, there is only one way to go down.
@@ -119,8 +107,6 @@ Assume an ant is on the top of this icosahedron. Note that the icosahedron has t
 
 
 
-
-
 \textbf{Solution 3}
 
 Go to \href{https://artofproblemsolving.com/wiki/index.php/2020\_AMC\_10A\_Problems/Problem\_19}{2020 AMC 10A \#19}, and connect all of the centers of the faces on the dodecahedron to get the icosahedron. The answer is $\boxed{810}$.
@@ -128,6 +114,20 @@ Go to \href{https://artofproblemsolving.com/wiki/index.php/2020\_AMC\_10A\_Probl
  
 
 
+
+\textbf{Solution 4}
+
+We find the number of ways to go down from the top vertex to the pentagon with rotating around, then moving down to the second pentagon and rotating around a certain number of ways to be $640$ by saying there are $5$ ways to choose the first vertex to move down to, then $2$ choices for the direction to move in, and $4$ ways to chose how many vertices you will cross over, after multiplying by $2$ for the number of ways to get to the second pentagon and then by $2$ for direction and $4$ for number of vertices again we prove that the number of ways is $640$. 
+
+ We then find the number of ways to rotate on the first pentagon and then go straight down to be $5$ times $2$ times $4$ times $2$, which is $80$.
+
+ The number of ways to go straight from the top vertex to the second pentagon is $5$ times $2$ times $2$ times $4$, which is again $80$. 
+
+ Lastly, we must find the number of ways to go straight from the top vertex to the bottom without rotating around any pentagon at all. This is done by multiplying $5$ by $2$, which is $10$. 
+
+ We add these up to get our answer of $\boxed{810}$.~jamespudi
+
+ 
 
 
 	\item (\textit{AIME I 2016}) A right prism with height $h$ has bases that are regular hexagons with sides of length $12$. A vertex $A$ of the prism and its three adjacent vertices are the vertices of a triangular pyramid. The dihedral angle (the angle between the two planes) formed by the face of the pyramid that lies in a base of the prism and the face of the pyramid that does not contain $A$ measures $60^\circ$. Find $h^2$.
@@ -146,8 +146,6 @@ Let $B$ and $C$ be the vertices adjacent to $A$ on the same base as $A$, and let
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $B$ and $C$ be the vertices adjacent to $A$ on the same base as $A$, and let $D$ be the last vertex of the triangular pyramid. Notice that we can already find some lengths. We have $AB=AC=12$ (given) and $BC=BD=\sqrt{144+h^2}$ by the Pythagorean Theorem. Let $M$ be the midpoint of $BC$. Then, we have $AM=6$ ($30-60-90$) triangles and $DM=\sqrt{36+h^2}$ by the Pythagorean Theorem. Applying the Law of Cosines, since $\angle AMD=60^{\circ}$, we get 
@@ -156,8 +154,6 @@ Let $B$ and $C$ be the vertices adjacent to $A$ on the same base as $A$, and let
  -someone
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) Anh read a book. On the first day she read $n$ pages in $t$ minutes, where $n$ and $t$ are positive integers. On the second day Anh read $n + 1$ pages in $t + 1$ minutes. Each day thereafter Anh read one more page than she read on the previous day, and it took her one more minute than on the previous day until she completely read the $374$ page book. It took her a total of $319$ minutes to read the book. Find $n + t$.
@@ -178,15 +174,11 @@ Let $d$ be the number of days Anh reads for.  Because the difference between the
 
 
 
-
-
 \textbf{Solution 2}
 
 We could see that both $374$ and $319$ are divisible by $11$ in the outset, and that $34$ and $29$, the quotients, are relatively prime. Both are the $average$ number of minutes across the $11$ days, so we need to subtract $\left \lfloor{\frac{11}{2}}\right \rfloor=5$ from each to get $(n,t)=(29,24)$ and $29+24=\boxed{053}$.
 
  
-
-
 
 
 
@@ -198,15 +190,11 @@ If we let $k$ be equal to the number of days it took to read the book, the sum o
 
 
 
-
-
 \textbf{Solution 4}
 
 Notice $374=34\cdot 11$ and $319=29\cdot 11$. Also, note the sum of an arithmetic series is $\frac{2n+k}{2} \cdot b$, where $n$ is our first term, $n+k$ is our final term, and $b$ is the number of terms. Since we know both sequences of $n$ and $t$ have the same length, and since $11$ is prime and shared by both $319$ and $374$, we deduce that $b=11$. Thus from here we know $2n+k=68$ and $2t+k=58$ by using our other factors $34$ and $29$. Finally, we add the two systems up and we get $2t+2k+2n=126$. But, notice that $k=b-1$, since the first term has $k=0$, and our last term has $k=b-1$. Plugging this back into our equation we get $2n+2t=106 \implies n+t=\boxed{053}$
 
  
-
-
 
 
 
@@ -220,8 +208,6 @@ Note that $374$ and $319$ have a GCD of $11,$ now combining this with our equati
  \[(n,t)=(29,24) \Rightarrow n+t=29+24=\boxed{053}.\]Note: We see that because n-t=5, it becomes impossible for n+k/2 and t+k/2 to both be multiples of 11. Thus, this satisfies our condition. Thus k+1 must be 11 to satisfy the common factor 11 constraint.\textbf{mathboy282}
 
  
-
-
 
 
 
@@ -242,8 +228,6 @@ Denote $d$ to be the number of days it takes Ana to read her book. Now, notice t
  The possible ordered pairing is $d = 5, n-t = 11$, $d = 11, n-t = 5$, $d = 55, n-t = 1$, or $d=1, n-t = 55$. Obviously the latter case doesn't work as obviously $373 +374 \neq 374$, and the second to last case won't work as $n$ would be negative. The first case won't work as $n$ is not an integer. The last case gives $(n,t) = (29,24)$ which satisfies the constraints so the answer is $\boxed{053}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) In $\triangle ABC$ let $I$ be the center of the inscribed circle, and let the bisector of $\angle ACB$ intersect $\overline{AB}$ at $L$. The line through $C$ and $L$ intersects the circumscribed circle of $\triangle ABC$ at the two points $C$ and $D$. If $LI=2$ and $LD=3$, then $IC= \frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -267,8 +251,6 @@ Suppose we label the angles as shown below.
 
 
 
-
-
 \textbf{Solution 2 (Incenter/Excenter)}
 
 See the diagram in Solution 1.
@@ -276,8 +258,6 @@ See the diagram in Solution 1.
  Let $\Delta ABC$'s $C$-excenter be $J_C$. Since $CI$ is an angle bisector, $\angle ACD = \angle BCD$, meaning that $D$ is the midpoint of arc $\overarc{AB}$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Incenter/Excenter\_Lemma}{Incenter/Excenter Lemma}, $DA=DI=DB=DJ_C=2+3=5$, and applying Power of a Point on circle $D$ gives $AL\cdot LB = LI\cdot LJ_C = 2(3+5) = 16$. Applying Power of a Point again on $\Delta ABC$'s circumcircle gives $AL\cdot LB = LC\cdot LD = 16$, and since $LD = 3$, $LC = \frac{16}{3}$. Thus $IC = LC-LI = \frac{16}{3}-2 = \frac{10}{3}$. We submit $10+3=\boxed{013}$.- NamelyOrange
 
  
-
-
 
 
 
@@ -289,15 +269,11 @@ WLOG assume $\triangle ABC$ is isosceles. Then, $L$ is the midpoint of $AB$, and
 
 
 
-
-
 \textbf{Solution 4}
 
 WLOG assume $\triangle ABC$ is isosceles (with vertex $C$). Let $O$ be the center of the circumcircle, $R$ the circumradius, and $r$ the inradius. A simple sketch will reveal that $\triangle ABC$ must be obtuse (as an acute triangle will result in $LI$ being greater than $DL$) and that $O$ and $I$ are collinear. Next, if $OI=d$, $DO+OI=R+d$ and $R+d=DL+LI=5$. Euler gives us that $d^{2}=R(R-2r)$, and in this case, $r=LI=2$. Thus, $d=\sqrt{R^{2}-4R}$. Solving for $d$, we have $R+\sqrt{R^{2}-4R}=5$, then $R^{2}-4R=25-10R+R^{2}$, yielding $R=\frac{25}{6}$. Next, $R+d=5$ so $d=\frac{5}{6}$. Finally, $OC=OI+IC$ gives us $R=d+IC$, and $IC=\frac{25}{6}-\frac{5}{6}=\frac{10}{3}$. Our answer is then $\boxed{013}$.
 
  
-
-
 
 
 
@@ -309,15 +285,11 @@ Since $\angle{LAD} = \angle{BDC}$ and $\angle{DLA}=\angle{DCB}$, $\triangle{DLA}
 
 
 
-
-
 \textbf{Solution 6}
 
 Since $\angle BCD$ and $\angle BAD$ both intercept arc $BD$, it follows that $\angle BAD=\gamma$. Note that $\angle AID=\alpha+\gamma$ by the external angle theorem. It follows that $\angle DAI=\angle AID=\alpha+\gamma$, so we must have that $\triangle AID$ is isosceles, yielding $AD=ID=5$. Note that $\triangle DLA \sim \triangle DAC$, so $\frac{DA}{DL} = \frac{DC}{DA}$. This yields $DC = \frac{25}{3}$. It follows that $CI = DC - DI = \frac{10}{3}$, giving a final answer of $\boxed{013}$.
 
  
-
-
 
 
 
@@ -331,15 +303,11 @@ Let $I_C$ be the excenter opposite to $C$ in $ABC$. By the incenter-excenter lem
 
 
 
-
-
 \textbf{Solution 8}
 
 We can just say that quadrilateral $ADBC$ is a right kite with right angles at $A$ and $B$. Let us construct another similar right kite with the points of tangency on $AC$ and $BC$ called $E$ and $F$ respectively, point $I$, and point $C$. Note that we only have to look at one half of the circle since the diagram is symmetrical. Let us call $CI$ $x$ for simplicity's sake. Based on the fact that $\triangle BCD$ is similar to $\triangle FCI$ we can use triangle proportionality to say that $BD$ is $2\frac{x+5}{x}$. Using geometric mean theorem we can show that $BL$ must be $\sqrt{3x+6}$. With Pythagorean Theorem we can say that $3x+6+9=4{(\frac{x+5}{x})}^2$. Multiplying both sides by $x^2$ and moving everything to LHS will give you $3{x}^3+11{x}^2-40x-100=0$ Since $x$ must be in the form $\frac{p}{q}$ we can assume that $x$ is most likely a positive fraction in the form $\frac{p}{3}$ where $p$ is a factor of $100$. Testing the factors in synthetic division would lead $x = \frac{10}{3}$, giving us our desired answer $\boxed{013}$. ~Lopkiloinm
 
  
-
-
 
 
 
@@ -382,8 +350,6 @@ We can just say that quadrilateral $ADBC$ is a right kite with right angles at $
 
 
 
-
-
 \textbf{Solution 10(Visual)}
 
 
@@ -397,15 +363,11 @@ We can just say that quadrilateral $ADBC$ is a right kite with right angles at $
 
 
 
-
-
 \textbf{Solution 11}
 
 Let $AB=c,BC=a,CA=b$, and $x=\frac{a+b}{c}$. Then, notice that $\frac{CI}{IL}=\frac{a+b}{c}=x$, so $CI=IL\cdot{}x=2x$. Also, by the incenter-excenter lemma, $AD=BD=ID=IL+LD=5$. Therefore, by Ptolemy's Theorem on cyclic quadrilateral $ABCD$, $5a+5b=c(2x+5)$, so $5\left(\frac{a+b}{c}\right)=2x+5$, so $5x=2x+5$. Solving, we get that $x=\frac{5}{3}$, so $CI=\frac{10}{3}$ and the answer is $10+3=\boxed{013}$.
 
  
-
-
 
 
 
@@ -433,15 +395,11 @@ Perform a $\sqrt{bc}$ Inversion followed by a reflection along the angle bisecto
 
 
 
-
-
 \textbf{Solution 13}
 
 Without loss of generality, let $\triangle ABC$ be isosceles. Note that by the incenter-excenter lemma, $DI = DA = DB.$ Hence, $DA=DB=5.$ Let the point of tangency of the incircle and $\overline{BC}$ be $F$ and the point of tangency of the incircle and $\overline{AC}$ be $E.$ We note that $\angle ALC = \angle BLC = 90^\circ$ and $LA=LB=4,$ which immediately gives $AE=BF=4.$ Applying the Pythagorean Theorem on $\triangle ALC$ and $\triangle IEC$ gives $2^2+x^2=y^2$ and $4^2+(2+y)^2 = (4+x)^2.$ Solving for $y$ gives us $y=\frac{10}{3}.$ Therefore, $IC = \frac{10}{3}$ so the answer is $\boxed{13}.$ 
 
  
-
-
 
 
 
@@ -456,8 +414,6 @@ Let $C_1\in AB$ be the point such that $IC_1\perp AB$, and let $D_1\in AB$ be de
  Let $C_2\in AB$ such that $CC_2\perp AB$. Then $CC_2=\frac{2[ABC]}{c}$. Using the area formula $[ABC]=rs$ and our fact from above yields $CC_2=\frac{8}{3}r$. We then notice that $\triangle CC_2L\sim\triangle IC_1L$, so if we let $x=CI$, by triangle ratios we find that $\frac{\frac{8}{3}r}{x+2}=\frac{r}{2}$, leading to $x=\frac{10}{3}$. Thus the answer is $10+3=\boxed{013}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) For integers $a$ and $b$ consider the complex number 
@@ -491,8 +447,6 @@ We consider two cases:
  
 
 
-
-
 	\item (\textit{AIME I 2016}) For a permutation $p = (a_1,a_2,\ldots,a_9)$ of the digits $1,2,\ldots,9$, let $s(p)$ denote the sum of the three $3$-digit numbers $a_1a_2a_3$ , $a_4a_5a_6$, and $a_7a_8a_9$. Let $m$ be the minimum value of $s(p)$ subject to the condition that the units digit of $s(p)$ is $0$. Let $n$ denote the number of permutations $p$ with $s(p) = m$. Find $|m - n|$.
 
 
@@ -508,8 +462,6 @@ To minimize $s(p)$, the numbers $1$, $2$, and $3$ (which sum to $6$) must be in 
  To find $n$, realize that there are $3!=6$ ways of ordering the numbers in each of the places.  Additionally, there are three possibilities for the numbers in the ones place: $(4,7,9)$, $(5,7,8)$, and $(5,6,9)$.  Therefore there are $6^3\times3=648$ ways in total. $|m-n|=|810-648|=\fbox{162}$.
 
  
-
-
 
 
 
@@ -531,8 +483,6 @@ Like solution 1, to minimize \( s(p) \), we must have the hundreds digits to be 
 
 
 
-
-
 \textbf{Solution 3(Similar to above solutions)}
 
 We note that $a_3 + a_6 + a_9 \equiv 0\mod 10$. Since the maximum possible sum of these three digits if $9 + 8 + 7 = 24$ and the minimum is $1 + 2 + 3 = 6$ the only possible values for this sum is $10, 20$. Now, intuitively, to minimize $s(p)$ we need the hundred's digit of the final sum $s(p)$ to be minimized. Thus, the hundred's digits for each of the three summands must be minimized and we intuitively guess $1, 2, 3$. What I'm trying to say here is that we want the largest possible digits to be already used up as the unit's digits so that the smaller digits are left for the larger parts of the sums. So if we want to minimize $s(p)$ we want to maximize $a_3, a_6, a_9$ which in turn maximizes the final unit's digit sum. Out of $10, 20$ the maximum sum is $20$. We established earlier that we wanted to only use $1, 2, 3$ as the hundred's digits of each of the summands. Thus we can only use $4, 5, \cdots, 9$ as the only digits to sum to $20$. There are only $3$ ways namely $(6, 5, 9), (8, 5, 7), (9, 7, 4)$ for the unit's digits. There are $3$ ways to choose the unit's digits row just by choosing any of these $3$ ordered triplets and there are $3!$ ways to arrange each of the numbers within the triplets. Since we fixed $1, 2, 3$ as the hundred's digits there are $3!$ ways to arrange $1, 2, 3$ leaving only a fixed triplet for the ten's digits leaving only $3!$ ways to arrange these numbers. Ultimately, we have
@@ -544,8 +494,6 @@ We note that $a_3 + a_6 + a_9 \equiv 0\mod 10$. Since the maximum possible sum o
  $|810 - 648| = \boxed{162}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) Triangle $ABC$ has $AB=40,AC=31,$ and $\sin{A}=\frac{1}{5}$. This triangle is inscribed in rectangle $AQRS$ with $B$ on $\overline{QR}$ and $C$ on $\overline{RS}$. Find the maximum possible area of $AQRS$.
@@ -561,8 +509,6 @@ We note that $a_3 + a_6 + a_9 \equiv 0\mod 10$. Since the maximum possible sum o
 Note that if angle $BAC$ is obtuse, it would be impossible for the triangle to inscribed in a rectangle. This can easily be shown by drawing triangle ABC, where $A$ is obtuse. Therefore, angle A is acute. Let angle $CAS=n$ and angle $BAQ=m$. Then, $\overline{AS}=31\cos(n)$ and $\overline{AQ}=40\cos(m)$. Then the area of rectangle $AQRS$ is $1240\cos(m)\cos(n)$. By product-to-sum, $\cos(m)\cos(n)=\frac{1}{2}(\cos(m+n)+\cos(m-n))$. $\cos(m+n)=\sin(90-m-n)=\sin(BAC)=\frac{1}{5}$. The maximum possible value of $\cos(m-n)$ is 1, which occurs when $m=n$. Thus the maximum possible value of $\cos(m)\cos(n)$ is $\frac{1}{2}(\frac{1}{5}+1)=\frac{3}{5}$ so the maximum possible area of $AQRS$ is $1240\times{\frac{3}{5}}=\fbox{744}$.
 
  
-
-
 
 
 
@@ -593,8 +539,6 @@ We start by drawing a diagram;
 
 
 
-
-
 \textbf{Solution 3}
 
 As above, we note that angle $A$ must be acute. Therefore, let $A$ be the origin, and suppose that $Q$ is on the positive $x$ axis and $S$ is on the positive $y$ axis. We approach this using complex numbers. Let $w=\text{cis} A$, and let $z$ be a complex number with $|z|=1$, $\text{Arg}(z)\ge 0^\circ$  and $\text{Arg}(zw)\le90^\circ$. Then we represent $B$ by $40z$ and $C$ by $31zw$. The coordinates of $Q$ and $S$ depend on the real part of $40z$ and the imaginary part of $31zw$. Thus
@@ -602,8 +546,6 @@ As above, we note that angle $A$ must be acute. Therefore, let $A$ be the origin
  \[[AQRS]=620\left(\frac{z^2w-\overline{z^2w}+w-\overline{w}}{2i}\right)=620(\Im(z^2w)+\Im(w)).\]Now as $w=\text{cis}A$, we know that $\Im(w)=\frac15$. Also, $|z^2w|=1$, so the maximum possible imaginary part of $z^2w$ is $1$. This is clearly achievable under our conditions on $z$. Therefore, the maximum possible area of $AQRS$ is $620(1+\frac15)=\boxed{744}$.
 
  
-
-
 
 
 
@@ -619,8 +561,6 @@ Let $\theta$ be the angle $\angle BAQ$. The height of the rectangle then can be 
  \[620 (\sin 90^\circ + \sin A) = 620 \cdot \frac{6}{5} = \boxed{744}\].
 
  
-
-
 
 
 
@@ -667,8 +607,6 @@ Let $\alpha$ be the angle $\angle CAS$ and $\beta$ be the angle $\angle BAQ$. Th
  
 
 
-
-
 	\item (\textit{AIME I 2016}) A strictly increasing sequence of positive integers $a_1$, $a_2$, $a_3$, $\cdots$ has the property that for every positive integer $k$, the subsequence $a_{2k-1}$, $a_{2k}$, $a_{2k+1}$ is geometric and the subsequence $a_{2k}$, $a_{2k+1}$, $a_{2k+2}$ is arithmetic. Suppose that $a_{13} = 2016$. Find $a_1$.
 
 
@@ -690,8 +628,6 @@ We first create a similar sequence where $a_1=1$ and $a_2=2$. Continuing the seq
 
 
 
-
-
 \textbf{Solution 2}
 
 Setting $a_1 = a$ and $a_2 = ka$, the sequence becomes:
@@ -705,15 +641,11 @@ Setting $a_1 = a$ and $a_2 = ka$, the sequence becomes:
 
 
 
-
-
 \textbf{Solution 3}
 
 Instead of setting $a_1$ equal to something and $a_2$ equal to something, note that it is rather easier to set $a_1=x^2$ and $a_3=y^2$ so that $a_2=xy,a_4=y(2y-x),a_5=(2y-x)^2$ and so on until you reached $a_{13}=(6y-5x)^2$ (Or simply notice the pattern), so $6y-5x=\sqrt{2016}=12\sqrt{14}$. Note that since each of the terms has degree 2 so if you multiply $x$ and $y$ by $\sqrt{14}$ you multiply each term by $14$ so each term is still a integer if the terms are already integers before you multiply $x$ and $y$ by $\sqrt{14}$, so let $w=\frac{x}{\sqrt{14}}$ and $z=\frac{y}{\sqrt{14}}$ so $6z-5w=12$. Then, for the sequence to be strictly increasing positive integers we have $(w,z)=(6,7)$ so $x=6\sqrt{14}$ and $a_1=x^2=6^2 \cdot 14=\boxed{504}$~\href{https://artofproblemsolving.com/wiki/index.php?title=Ddk001}{Ddk001}
 
  
-
-
 
 
 
@@ -724,8 +656,6 @@ The thirteenth term of the sequence is $2016$, which makes that fourteenth term 
  -Pleaseletmewin
 
  
-
-
 
 
 
@@ -740,8 +670,6 @@ Let $a_{2k-1}=s$ where $k=1$. Then, $a_{2k}=sr \Longrightarrow a_{2k+1}=sr^2$. C
  If $6r-5=2^1$, $r=\frac{7}{6}$. If $6r-5=2^2$, $r=\frac{3}{2}$. Note that the latter cannot work since $a_{2k+1}=s(\frac{9}{4}) \Longrightarrow 4\mid{s}$ but $N=1 \Longrightarrow s=2\cdot3^2\cdot7$ in this scenario. Therefore, $r=\frac{7}{6} \Longrightarrow s=\frac{2016}{2^2}=504$. Plugging back $k=1$, $a_1=s=\boxed{504}$
 
  
-
-
 
 
 
@@ -761,15 +689,11 @@ Bash all the way from $a_1$ and $a_2$ to $a_{13}=2016$ to get to the equation $a
 
 
 
-
-
 \textbf{Solution 7}
 
 Let $a_{11} = x$. Then, $a_{12} = xr$ and $a_{13} = xr^2 = 2016$. Note, in order to alternate between arithmetic and geometric sequences, you would want $r$ to be as small as possible so our sequence is always positive as stated in the question. Since $2016 = 2^5 \cdot 3^2 \cdot 7$, the smallest ratio, r, (which must be greater than 1 as the sequence is strictly increasing) must satisfy that $a_12 = \frac{2016}{r}$ and $a_11 = \frac{2016}{r^2}$ are both integers. Therefore, $\frac{1}{r}$ can at min be $\frac{m}{2^2 \cdot 3}$. To minimize this we have $m = 11$ so $r = \frac{12}{11}$. Doing this and working backwards, we get the sequence$a_1 = 504 a_2 = 588 a_3 = 686 a_4 = 784 a_5 = 896 a_6 = 1008 a_7 = 1134 a_8 = 1260 a_9 = 1400 a_{10} = 1540 a_{11} = 1694 a_{12} = 1848 a_{13} = 2016$so $a_1 = \boxed{504}$~Sid-darth-vater
 
  
-
-
 
 
 
@@ -794,8 +718,6 @@ We see a pattern for the 2 sequences consisting of the odd terms and even terms 
  
 
 
-
-
 	\item (\textit{AIME I 2016}) Let $P(x)$ be a nonzero polynomial such that $(x-1)P(x+1)=(x+2)P(x)$ for every real $x$, and $\left(P(2)\right)^2 = P(3)$. Then $P(\frac72)=\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
@@ -810,93 +732,9 @@ Plug in $x=1$ to get $(1-1)P(1+1) = 0 = (1+2)P(1) \Rightarrow P(1) = 0$. Plug in
  \[(x-1)P(x+1) = (x+2)P(x)\]
  \[(x-1)((x+1)(x+1-1)(x+1+1)Q(x+1)) = (x+2)((x)(x-1)(x+1)Q(x))\]
  \[(x-1)(x+1)(x)(x+2)Q(x+1) = (x+2)(x)(x-1)(x+1)Q(x)\]
- \[Q(x+1) = Q(x)\]From here, we know that $Q(x) = C$ for a constant $C$ ($Q(x)$ cannot be periodic since it is a polynomial), so $P(x) = Cx(x-1)(x+1)$. We know that $\left(P(2)\right)^2 = P(3)$. Plugging those into our definition of $P(x)$: $(C \cdot 2 \cdot (2-1) \cdot (2+1))^2 = C \cdot 3 \cdot (3-1) \cdot (3+1) \Rightarrow (6C)^2 = 24C \Rightarrow 36C^2 - 24C = 0 \Rightarrow C = 0$ or $\frac{2}{3}$. So we know that $P(x) = \frac{2}{3}x(x-1)(x+1)$. So $P(\frac{7}{2}) = \frac{2}{3} \cdot \frac{7}{2} \cdot (\frac{7}{2} - 1) \cdot (\frac{7}{2} + 1) = \frac{105}{4}$. Thus, the answer is $105 + 4 = \boxed{109}$.
+ \[Q(x+1) = Q(x)\]From here, we know that 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-From the equation we see that $x-1$ divides $P(x)$ and $(x+2)$ divides $P(x+1)$ so we can conclude that $x-1$ and $x+1$ divide $P(x)$ (if we shift the function right by 1, we get $(x-2)P(x) = (x+1)P(x-1)$, and from here we can see that $x+1$ divides $P(x)$). This means that $1$ and $-1$ are roots of $P(x)$. Plug in $x = 0$ and we see that $P(0) = 0$ so $0$ is also a root. 
-
- Suppose we had another root that is not one of those $3$. Notice that the equation above indicates that if $r$ is a root then $r+1$ and $r-1$ is also a root. Then we'd get an infinite amount of roots! So that is bad. So we cannot have any other roots besides those three. 
-
- That means $P(x) = cx(x-1)(x+1)$. We can use $P(2)^2 = P(3)$ to get $c = \frac{2}{3}$. Plugging in $\frac{7}{2}$ is now trivial and we see that it is $\frac{105}{4}$ so our answer is $\boxed{109}$
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-Although this may not be the most mathematically rigorous answer, we see that $\frac{P(x+1)}{P(x)}=\frac{x+2}{x-1}$. Using a bit of logic, we can make a guess that $P(x+1)$ has a factor of $x+2$, telling us $P(x)$ has a factor of $x+1$. Similarly, we guess that $P(x)$ has a factor of $x-1$, which means $P(x+1)$ has a factor of $x$. Now, since $P(x)$ and $P(x+1)$ have so many factors that are off by one, we may surmise that when you plug $x+1$ into $P(x)$, the factors "shift over," i.e. $P(x)=(A)(A+1)(A+2)...(A+n)$, which goes to $P(x+1)=(A+1)(A+2)(A+3)...(A+n+1)$. This is useful because these, when divided, result in $\frac{P(x+1)}{P(x)}=\frac{A+n+1}{A}$. If $\frac{A+n+1}{A}=\frac{x+2}{x-1}$, then we get $A=x-1$ and $A+n+1=x+2$, $n=2$. This gives us $P(x)=(x-1)x(x+1)$ and $P(x+1)=x(x+1)(x+2)$, and at this point we realize that there has to be some constant $a$ multiplied in front of the factors, which won't affect our fraction $\frac{P(x+1)}{P(x)}=\frac{x+2}{x-1}$ but will give us the correct values of $P(2)$ and $P(3)$. Thus $P(x)=a(x-1)x(x+1)$, and we utilize $P(2)^2=P(3)$ to find $a=\frac{2}{3}$. Evaluating $P \left ( \frac{7}{2} \right )$ is then easy, and we see it equals $\frac{105}{4}$, so the answer is $\boxed{109}$
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Substituting $x=2$ into the given equation, we find that $P(3)=4P(2)=P(2)^2$. Therefore, either $P(2)=0$ or $P(2)=4$. Now for integers $n\ge 2$, we know that
- \[P(n+1)=\frac{n+2}{n-1}P(n).\]Applying this repeatedly, we find that
- \[P(n+1)=\frac{(n+2)!/3!}{(n-1)!}P(2).\]If $P(2)=0$, this shows that $P(x)$ has infinitely many roots, meaning that $P(x)$ is identically equal to zero. But this contradicts the problem statement. Therefore, $P(2)=4$, and we find $P(n+1)=\frac{2}{3}(n+2)(n+1)n$ for all positive integers $n\ge2$. This cubic polynomial matches the values $P(n+1)$ for infinitely many numbers, hence the two polynomials are identically equal. In particular, $P\left(\frac72\right)=\frac23\cdot\frac92\cdot\frac72\cdot\frac52=\frac{105}{4}$, and the answer is $\boxed{109}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-We can find zeroes of the polynomial by making the first given equation $0 = 0$. Plugging in $x = 1$ and $x = -2$ gives us the zeroes $1$ and $-1$, respectively. Now we can plug in these zeros to get more zeroes. $x = -1$ gives us the zero $0$ (no pun intended). $x = 1$ makes the equation $0 \cdot P(2) = 0$, which means $P(2)$ is not necessarily $0$. If $P(2) = 0$, then plugging in $2$ to the equation yields $P(3) = 0$, plugging in $3$ to the equation yields $P(4) = 0$, and so on, a contradiction of "nonzero polynomial". So $2$ is not a zero. Note that plugging in $x = 0$ to the equation does not yield any additional zeros. Thus, the only zeroes of $P(x)$ are $-1, 0,$ and $1$, so $P(x) = a(x + 1)x(x - 1)$ for some nonzero constant $a$. We can plug in $2$ and $3$ into the polynomial and use the second given equation to find an equation for $a$. $P(2) = 6a$ and $P(3) = 24a$, so:
- \[(6a)^2  = 24a \implies 36a^2 = 24a \implies a = \frac23\]Plugging in $\frac72$ into the polynomial $\frac23(x + 1)x(x - 1)$ yields $\frac{105}{4}$. $105 + 4 = \boxed{109}$.
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-Plug in $x=2$ yields $P(3)=4P(2)$. Since also $(P(2))^2=P(3)$, we have $P(2)=4$ and $P(3)=16$. Plug in $x=3$ yields $2P(4)=5P(3)$ so $P(4)=40$. 
-
- Repeat the action gives $P(2)=4$, $P(3)=16$, $P(4)=40$, $P(5)=80$, and $P(6)=140$.
-
- Since $P(x)$ is a polynomial, the $k$th difference is constant, where $k=\deg(P(x))$. Thus we can list out the 0th, 1st, 2nd, 3rd, ... differences until we obtain a constant.
-
- 
- \[4,16,40,80,140\]
- \[12,24,40,60\]
- \[12,16,20\]
- \[4,4,4\]
-
- Since the 3rd difference of $P(x)$ is constant, we can conclude that $\deg(P(x))=3$.
-
- Let $P(x)=a_3x^3+a_2x^2+a_1x+a_0$. Plug in the values for $x$ and solve the system of 4 equations gives $(a_3,a_2,a_1,a_0)=(\frac{2}{3},0,-\frac{2}{3},0)$
-
- Thus $P(x)=\frac{2}{3}x^3-\frac{2}{3}x$ and $P(\frac{7}{2})=\frac{105}{4}\Longrightarrow m+n=\boxed{109}$
-
- -Note that the coefficient of $x^3$ is $\frac{2}{3}$ because $\frac{2}{3}\cdot\deg(x^3)!=\frac{2}{3}\cdot3!=4$, the 3rd difference of P(x).~inaccessibles
-
- \textbf{Note(Key Idea)} Their are a couple of solution methods such as constant $n$th differences and using intuition on the roots. But the main idea in this problem was the fact that, $P(\frac{7}{2})$ is hard to get by itself, cause we can only find the output for integral input values from the information we have. This is crucial as it helps solves this mischievous problem.
-
- Thus, we can solve for $P(x)$, and this is best approached by finding its roots.
-
- 
-== See also 
-
- 
-
-
 
 
 	\item (\textit{AIME I 2016}) Find the least positive integer $m$ such that $m^2 - m + 11$ is a product of at least four not necessarily distinct primes. 
@@ -917,8 +755,6 @@ $m(m-1)$ is the product of two consecutive integers, so it is always even. Thus 
 
 
 
-
-
 \textbf{Solution 1a}
 
 Suppose $p=11$; then $m^2-m+11=11qrs$. Reducing modulo 11, we get $m\equiv  1,0 \pmod{11}$ so $k(11k\pm 1)+1 = qrs$. 
@@ -933,16 +769,12 @@ Suppose $p=11$; then $m^2-m+11=11qrs$. Reducing modulo 11, we get $m\equiv  1,0 
 
 
 
-
-
 \textbf{Solution 1b}
 
 Let $m^2 - m + 11 = pqrs$ for primes $p, q, r, s\ge11$. If $p, q, r, s = 11$, then $m^2-m+11=11^4$. We can multiply this by $4$ and complete the square to find $(2m-1)^2=4\cdot 11^4-43$. But 
  \[(2\cdot 11^2-1)^2=4\cdot 11^4-4\cdot 11^2+1 <4\cdot 11^4-43<(2\cdot 11^2)^2,\]hence we have pinned a perfect square $(2m-1)^2=4\cdot 11^4-43$ strictly between two consecutive perfect squares, a contradiction. Hence $pqrs \ge 11^3 \cdot 13$. Thus $m^2-m+11\ge 11^3\cdot 13$, or $(m-132)(m+131)\ge0$. From the inequality, we see that $m \ge 132$. $132^2 - 132 + 11 = 11^3 \cdot 13$, so $m = \boxed{132}$ and we are done.
 
  
-
-
 
 
 
@@ -956,20 +788,19 @@ First, we can show that $2,3,5,7$ $\not |$ $m^2 - m + 11$. This can be done by j
 
  \begin{verbatim}
 	$m^2 - m + 11  \equiv 2(2 \cdot k^2 - k + 5) +1 \equiv 1 \mod 2$
-\end{verbatim}Case 2: m = 2k+1  
+\end{verbatim}
+
+Case 2: m = 2k+1  
 
  \begin{verbatim}
 	$m^2 - m + 11  \equiv 2(2 \cdot k^2 + k + 5) +1 \equiv 1 \mod 2$
-\end{verbatim}Now, we can test $m^2 - m + 11 = 11^4$, which fails, so we test $m^2 - m + 11 = 11^3 \cdot 13$, and we get m = $132$.
+\end{verbatim}
+
+Now, we can test $m^2 - m + 11 = 11^4$, which fails, so we test $m^2 - m + 11 = 11^3 \cdot 13$, and we get m = $132$.
 
  -AlexLikeMath
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2016}) Freddy the frog is jumping around the coordinate plane searching for a river, which lies on the horizontal line $y = 24$. A fence is located at the horizontal line $y = 0$. On each jump Freddy randomly chooses a direction parallel to one of the coordinate axes and moves one unit in that direction. When he is at a point where $y=0$, with equal likelihoods he chooses one of three directions where he either jumps parallel to the fence or jumps away from the fence, but he never chooses the direction that would have him cross over the fence to where $y < 0$. Freddy starts his search at the point $(0, 21)$ and will stop once he reaches a point on the river. Find the expected number of jumps it will take Freddy to reach the river.
@@ -990,8 +821,6 @@ Clearly Freddy's $x$-coordinate is irrelevant, so we let $E(y)$ be the expected 
 
 
 
-
-
 \textbf{Solution 2 (Cancellation)}
 
 As in Solution $1$, let $E(y)$ be the expected value of jumps it takes Freddy to reach the river from the specific $y$ coordinate. We can set up a system of equations. The equation for $E(0)$ is $E(0)=\frac{2}{3}(E(0)+1)+\frac{1}{3}(E(1)+1)$, which, rearranging, gives $E(0)=E(1)+3.$ The equation for $E(23)$ is $E(23)=\frac{1}{2}(E(23)+1)+\frac{1}{4}(E(22)+1)+\frac{1}{4}$ (since $E(24)=0$), and rearranging gives $2E(23)=E(22)+4$.
@@ -1003,8 +832,6 @@ For any other $y$ such that $0<y<23$, we can get the equation $E(y)=\frac{1}{2}(
  Adding all the equations and cancelling results in $E(23)=3+4(23)=95$. From the first equation, $E(22)=2\cdot 95-4=186$, and from the second equation, $E(21)=2\cdot 186-95-4=\boxed{273}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2016}) Centered at each lattice point in the coordinate plane are a circle radius $\frac{1}{10}$ and a square with sides of length $\frac{1}{5}$ whose sides are parallel to the coordinate axes. The line segment from $(0,0)$ to $(1001, 429)$ intersects $m$ of the squares and $n$ of the circles. Find $m + n$.
@@ -1030,8 +857,6 @@ First note that $1001 = 143 \cdot 7$ and $429 = 143 \cdot 3$ so every point of t
 
 
 
-
-
 \textbf{Solution 2}
 
 See if you can solve the problem with the following.
@@ -1047,15 +872,11 @@ See if you can solve the problem with the following.
 
 
 
-
-
 \textbf{Solution to Solution 2}
 
 This is mostly a clarification to Solution 1, but let's take the diagram for the origin to $(7,3)$. We have the origin circle and square intersected, then two squares, then the circle and square at $(7,3)$. If we take the circle and square at the origin out of the diagram, we will be able to repeat the resulting segment (with its circles and squares) end to end from $(0,0)$ to $(1001,429)$, which forms the line we need without overlapping. Since $143$ of these segments are needed to do this, and $3$ squares and $1$ circle are intersected with each, there are $143 \cdot (3+1) = 572$ squares and circles intersected. Adding the circle and square that are intersected at the origin back into the picture, we get that there are $572+2=\boxed{574}$ squares and circles intersected in total.
 
  
-
-
 
 
 
@@ -1066,11 +887,6 @@ This solution is a more systematic approach for finding when the line intersects
  -Patrick4President
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2016}) Circles $\omega_1$ and $\omega_2$ intersect at points $X$ and $Y$. Line $\ell$ is tangent to $\omega_1$ and $\omega_2$ at $A$ and $B$, respectively, with line $AB$ closer to point $X$ than to $Y$. Circle $\omega$ passes through $A$ and $B$ intersecting $\omega_1$ again at $D \neq A$ and intersecting $\omega_2$ again at $C \neq B$. The three points $C$, $Y$, $D$ are collinear, $XC = 67$, $XY = 47$, and $XD = 37$. Find $AB^2$.
@@ -1105,8 +921,6 @@ Using the radical axis theorem, the lines $\overline{AD}, \overline{BC}, \overli
 
 
 
-
-
 \textbf{Solution 1}
 
 Let $Z = XY \cap AB$. By the radical axis theorem $AD, XY, BC$ are concurrent, say at $P$. Moreover, $\triangle DXP \sim \triangle PXC$ by simple angle chasing. Let $y = PX, x = XZ$. Then 
@@ -1120,8 +934,6 @@ Let $Z = XY \cap AB$. By the radical axis theorem $AD, XY, BC$ are concurrent, s
 
 
 
-
-
 \textbf{Solution 2}
 
 By the Radical Axis Theorem $AD, XY, BC$ concur at point $E$.
@@ -1132,8 +944,6 @@ By the Radical Axis Theorem $AD, XY, BC$ concur at point $E$.
  \[XE^2 - XY^2 = (XE + XY)(XE - XY) = EY \cdot 2XS = 2SY \cdot 2SX = 4SA^2 = AB^2.\]Hence $AB^2 = 37 \cdot 67 - 47^2 = \boxed{270}.$
 
  
-
-
 
 
 
@@ -1163,8 +973,6 @@ First, we note that as $\triangle XDY$ and $\triangle XYC$ have bases along the 
 
 
 
-
-
 \textbf{Solution 4}
 
 
@@ -1191,8 +999,6 @@ First, we note that as $\triangle XDY$ and $\triangle XYC$ have bases along the 
 
 
 
-
-
 \textbf{Solution 5 (not too different)}
 
 Let $E = DA \cap CB$. By Radical Axes, $E$ lies on $XY$. Note that $EAXB$ is cyclic as $X$ is the Miquel point of $\triangle EDC$ in this configuration.
@@ -1212,8 +1018,6 @@ Let $E = DA \cap CB$. By Radical Axes, $E$ lies on $XY$. Note that $EAXB$ is cyc
 
 
  
-
-
 
 
 
@@ -1237,8 +1041,6 @@ Let $E = DA \cap CB$. By Radical Axes, $E$ lies on $XY$. Note that $EAXB$ is cyc
 
 
 
-
-
 \textbf{Solution 7 (Linearity of Power of a Point)}
 
 Extend $\overline{AD}$ and $\overline{BC}$ to meet at point $P$. Let $M$ be the midpoint of segment $AB$. Then by radical axis on $(ADY)$, $(BCY)$ and $(ABCD)$, $P$ lies on $XY$. By the bisector lemma, $M$ lies on $XY$. It is well-known that $P$, $A$, $X$, and $B$ are concyclic. By Power of a point on $M$ with respect to $(PAXB)$ and $(ADY)$, 
@@ -1252,8 +1054,6 @@ Extend $\overline{AD}$ and $\overline{BC}$ to meet at point $P$. Let $M$ be the 
  By Stewart's theorem on $\triangle DXC$, $DY \cdot YC=37 \cdot 67 - 47^2 = 270$, so $AB^2=\boxed{270}$. 
 
  
-
-
 
 
 \end{enumerate}

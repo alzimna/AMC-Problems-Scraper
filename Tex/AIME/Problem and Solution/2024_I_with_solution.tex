@@ -41,18 +41,11 @@ $\frac{9}{s} + t = 4$ in hours and $\frac{9}{s+2} + t = 2.4$ in hours.
 
 
 
-
-
 \textbf{Solution 2}
 
 The amount of hours spent while walking on the first travel is $\frac{240-t}{60}$. Thus, we have the equation $(240-t)(s) = 540$, and by the same logic, the second equation yields $(144-t)(s+2) = 540$. We have $240s-st = 540$, and $288+144s-2t-st = 540$. We subtract the two equations to get $96s+2t-288 = 0$, so we have $48s+t = 144$, so $t = 144-48s$, and now we have $(96+48s)(s) = 540$. The numerator of $s$ must evenly divide 540, however, $s$ must be less than 3. We can guess that $s = 2.5$. Now, $2.5+0.5 = 3$. Taking $\frac{9}{3} = 3$, we find that it will take three hours for the 9 kilometers to be traveled. The t minutes spent at the coffee shop can be written as $144-48(2.5)$, so t = 24. $180 + 24 =  \framebox{204}$. -sepehr2010
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) There exist real numbers $x$ and $y$, both greater than 1, such that $\log_x(y^x) = \log_y(x^{4y}) = 10.$ Find $xy$.
@@ -81,8 +74,6 @@ By properties of logarithms, we can simplify the given equation to $x\log_xy=4y\
 
 
 
-
-
 \textbf{Solution 2}
 
 Convert the two equations into exponents:
@@ -91,118 +82,9 @@ Convert the two equations into exponents:
  \[x^{10}=y^x~(1)\]
  \[y^{10}=x^{4y}~(2).\]
 
- Take $(1)$ to the power of $\frac{1}{x}$:
+ Take $(1)$ to the power of $\frac{1}{x}$
 
  
- \[x^{\frac{10}{x}}=y.\]
-
- Plug this into $(2)$:
-
- 
- \[x^{(\frac{10}{x})(10)}=x^{4(x^{\frac{10}{x}})}\]
- \[{\frac{100}{x}}={4x^{\frac{10}{x}}}\]
- \[{\frac{25}{x}}={x^{\frac{10}{x}}}=y,\]
-
- So $xy=\boxed{025}$
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-Similar to solution 2, we have:
-
- $x^{10}=y^x$ and $y^{10}=x^{4y}$
-
- Take the tenth root of the first equation to get 
-
- $x=y^{\frac{x}{10}}$ 
-
- Substitute into the second equation to get 
-
- $y^{10}=y^{\frac{4xy}{10}}$
-
- This means that $10=\frac{4xy}{10}$, or $100=4xy$, meaning that $xy=\boxed{025}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-The same with other solutions, we have obtained $x^{10}=y^x$ and $y^{10}=x^{4y}$. Then, $x^{10}y^{10}=y^xx^{4y}$. So, an obvious solution is to have $x^{10}=x^{4y}$ and $y^{10}=y^{x}$. Solving, we get $x=10$ and $y=2.5$.So $xy = \boxed{025}$.
-
- Note: This is not a correct solution. Plugging in $x=10$ and $y=2.5$ does not satisfy the equations.
-
- 
-
-
-
-
-
-\textbf{Solution 5(fakesolve)}
-
-Using the first expression, we see that $x^{10} = y^x$. Now, taking the log of both sides, we get $\log_y(x^{10}) = \log_y(y^x)$. This simplifies to $10 \log_y(x) = x$. This is still equal to the second equation in the problem statement, so $10 \log_y(x) = x = 4y \log_y(x)$. Dividing by $\log_y(x)$ on both sides, we get $x = 4y = 10$. Therefore, $x = 10$ and $y = 2.5$, so $xy = \boxed{025}$.
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-Let 
- \[y=x^a\].We see: 
- \[ax=10\] and 
- \[4x^a/a=10\]which gives rise to 
- \[xy = \boxed{025}\].
-
- 
-
-
-
-
-
-\textbf{Solution 7 (log rules)}
-
-Split into 2 equations to get 
- \[\log_x\left(y^x\right)=10\] 
- \[\log_y\left(x^{4y}\right)=10\]Now use the logarithm power rule and the change of base rule to obtain 
- \[x*\frac{\log y}{\log x}=10\] 
- \[4y*\frac{\log x}{\log y}=10\] Multiplying both equations to cancel $\log x$ and $\log y$, we get 
- \[4xy = 100\] 
- \[xy = \boxed{025}\]
-
- 
-
-
- 
-
-
-
-
-
-\textbf{Solution 8 (Exponential Form)}
-
-We can convert the equality chain into two equations in exponential form, which gives 
- \[x^{10} = y^{x}\] and 
- \[y^{10} = x^{4y}\]To obtain an equation which involves exponents of only one variable, we can raise to first equation to power of 10, and raise the second equation to the power of x, which gives 
- \[x^{100} = y^{10x}\] and 
- \[x^{4xy} = y^{10x}\] Now we can deduce that $x^{4xy} = x^{100}$, which must mean that $4xy = 100$ and the desired value of 
- \[xy = \boxed{025}\]
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) Alice and Bob play the following game. A stack of $n$ tokens lies before them. The players take turns with Alice going first. On each turn, the player removes $1$ token or $4$ tokens from the stack. The player who removes the last token wins. Find the number of positive integers $n$ less than or equal to $2024$ such that there is a strategy that guarantees that Bob wins, regardless of Alice’s moves.
@@ -224,8 +106,6 @@ Let's first try some experimentation. Alice obviously wins if there is one coin.
  So we have to find the number of numbers less than or equal to $2024$ that are either congruent to $0$ mod $5$ or $2$ mod $5$. There are $404$ numbers in the first category: $5, 10, 15, \dots, 2020$. For the second category, there are $405$ numbers. $2, 7, 12, 17, \dots, 2022$. So the answer is $404 + 405 = \boxed{809}$
 
  
-
-
 
 
 
@@ -269,8 +149,6 @@ Let's use winning and losing positions, where $W$ marks a win for Alice.
 
 
 
-
-
 \textbf{Solution 3}
 
 Denote by $A_i$ and $B_i$ Alice's or Bob's $i$th moves, respectively.
@@ -307,8 +185,6 @@ Denote by $A_i$ and $B_i$ Alice's or Bob's $i$th moves, respectively.
 
 
  
-
-
 
 
 
@@ -378,8 +254,6 @@ We have proven the inductive hypothesis. QED.
 
 
 
-
-
 \textbf{Solution 5 (no modular arithmetic)}
 
 We start with $n$ as some of the smaller values. After seeing the first 4 where Bob wins automatically, with trial and error we see that $2, 5, 7,$ and $10$ are spaced alternating in between 2 and 3 apart. This can also be proven with modular arithmetic, but  this is an easier solution for some people. We split them into 2 different sets with common difference 5: {2,7,12 ...} and {5,10,15...}. Counting up all the numbers in each set can be done as follows:
@@ -408,8 +282,6 @@ And because we forgot 2022 we add 1 more.
 
 
 
-
-
 \textbf{Solution 6 (Easiest, Very Intuitive, Fast)}
 
 The trivial case is all 0 (mod 5)s because for every 1 or 4 Alice chooses Bob can choose the opposite and they always sum to 5. Now we test 1, 2, 3, 4 (mod 5). 4 (mod 5) does not work because Alice would take all 4, 3 (mod 5) does not work because it would go A-B-A, in which Alice wins, 2 (mod 5) works because since Alice has to go first, she has to take 1 then Bob wins, 1 (mod 5) does not work because Alice would just take the remainder of 1. 
@@ -417,8 +289,6 @@ The trivial case is all 0 (mod 5)s because for every 1 or 4 Alice chooses Bob ca
  Thus, only 0 (mod 5) and 2 (mod 5)s work. This is 809. 
 
  
-
-
 
 
 	\item (\textit{AIME I 2024}) Jen enters a lottery by selecting $4$ distinct elements of $S=\{1,2,3,\cdots,9,10\}.$ Then four elements of $S$ are drawn at random. Jen wins a prize if at least two of her numbers were drawn, and wins the grand prize if all four of her numbers are drawn. The probability that Jen wins the grand prize given that Jen wins a prize is $\frac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -452,8 +322,6 @@ This is a conditional probability problem. Bayes' Theorem states that
 
 
 
-
-
 \textbf{Solution 2(quick)}
 
 One may also use complimentary counting as a shortcut to calculate the probability of winning a prize, in which the cases are that either one number is shared or no numbers are shared. There are $4 \cdot { {10 - 4} \choose {4-1}} = 4 \cdot 20 = 80$ ways to choose the former and ${{10-4} \choose 4} = 15$ ways for the latter. Therefore, there are $95$ ways to NOT choose a prize, so there are $210-95 = 115$ ways to choose a prize, and the answer follows.
@@ -461,8 +329,6 @@ One may also use complimentary counting as a shortcut to calculate the probabili
  - \href{https://artofproblemsolving.com/wiki/index.php/User:Spectraldragon8}{spectraldragon8}
 
  
-
-
 
 
 
@@ -479,11 +345,6 @@ For getting all $4$ right, there is only $1$ way.
  Therefore, the answer is $1+115 = \boxed{116}$
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) Rectangle $ABCD$ has dimensions $AB = 107$ and $BC = 16$, and rectangle $EFGH$ has dimensions $EF = 184$ and $FG = 17$. Points $D$, $E$, $C$, and $F$ lie on line $DF$ in that order, and $A$ and $H$ lie on opposite sides of line $DF$, as shown. Points $A$, $D$, $H$, and $G$ lie on a common circle. Find $CE$.
@@ -538,8 +399,6 @@ We use simple geometry to solve this problem.
 
 
 
-
-
 \textbf{Solution 2}
 
 Suppose $DE=x$. Extend $AD$ and $GH$ until they meet at $P$. From the \href{https://artofproblemsolving.com/wiki/index.php?title=Power\_of\_a\_Point\_Theorem}{Power of a Point Theorem}, we have $(PH)(PG)=(PD)(PA)$. Substituting in these values, we get $(x)(x+184)=(17)(33)=561$. We can use guess and check to find that $x=3$, so $EC=\boxed{104}$.
@@ -555,8 +414,6 @@ Suppose $DE=x$. Extend $AD$ and $GH$ until they meet at $P$. From the \href{http
 
 
 
-
-
 \textbf{Solution 3}
 
 We find that 
@@ -565,8 +422,6 @@ We find that
  Let $x = DE$ and $T = FG \cap AB$. By similar triangles $\triangle DHE \sim \triangle GAT$ we have $\frac{DE}{EH} = \frac{GT}{AT}$. Substituting lengths we have $\frac{x}{17} = \frac{16 + 17}{184 + x}.$ Solving, we find $x = 3$ and thus $CE = 107 - 3 = \boxed{104}.$~AtharvNaphade ~coolruler ~eevee9406
 
  
-
-
 
 
 
@@ -582,8 +437,6 @@ One liner: $107-\sqrt{92^2+25^2-8^2}+92=\boxed{104}$
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $\angle{DHE} = \theta.$ This means that $DE = 17\tan{\theta}.$ Since quadrilateral $ADHG$ is cyclic, $\angle{DAG} = 180 - \angle{DHG} = 90 - \theta.$
@@ -593,8 +446,6 @@ Let $\angle{DHE} = \theta.$ This means that $DE = 17\tan{\theta}.$ Since quadril
  Since we want $CE = CD - DE = 107 - 17\tan{\theta},$ we only need to solve for $\tan{\theta}$ in this system of equations. Solving yields $\tan{\theta} = \frac{3}{17},$ so $CE = \boxed{104.}$
 
  
-
-
 
 
 
@@ -608,17 +459,13 @@ Using a ruler (also acting as a straight edge), draw the figure to scale with on
 
 
 
-
-
 \textbf{Solution 7(Ptolemy's Theorem)}
 
 Since ADHG is cyclic, AH*DG=AD*HG+DH*AG,let DE be x, we represent the equation in terms of x,and you get $x=3, 107-3= \boxed{104.}$
 
  Ps: extremely time consuming, do not use on the test
 
- \textbf{Fast Video Solution by Do Math or Go Home} 
-
-
+ 
 
 
 	\item (\textit{AIME I 2024}) Consider the paths of length $16$ that follow the lines from the lower left corner to the upper right corner on an $8\times 8$ grid. Find the number of such paths that change direction exactly four times, as in the examples shown below.
@@ -653,15 +500,11 @@ Thus our answer is $7\cdot21\cdot2=\boxed{294}$.
 
 
 
-
-
 \textbf{Solution 2}
 
 Draw a few examples of the path. However, notice one thing in common - if the path starts going up, there will be 3 "segments" where the path goes up, and two horizontal "segments." Similarly, if the path starts going horizontally, we will have three horizontal segments and two vertical segments. Those two cases are symmetric, so we only need to consider one. If our path starts going up, by stars and bars, we can have $\binom{7}{2}$ ways to split the 8 up's into 3 lengths, and have $\binom{7}{1}$ to split the 8-horizontals into 2 lengths. We multiply them together, and multiply by 2 for symmetry, giving us $2*\binom{7}{2}*\binom{7}{1}=294.$
 
  
-
-
 
 
 
@@ -681,15 +524,11 @@ Notice that the $RURUR$ case and the $URURU$ case is symmetrical. WLOG, let's co
 
 
 
-
-
 \textbf{Solution 4}
 
 Starting at the origin, you can either first go up or to the right. If you go up first, you will end on the side opposite to it (the right side) and if you go right first, you will end up on the top. It can then be observed that if you choose the turning points in the middle $7 \times 7$ grid, that will automatically determine your start and ending points. For example, in the diagram if you choose the point $(3,2)$ and $(5,3)$, you must first move three up or two right, determining your first point, and move 5 up or 3 right, determining your final point. Knowing this is helpful because if we first move anywhere horizontally, we have $7$ points on each column to choose from and starting from left to right, we have $6,5,4,3,2,1$ points on that row to choose from. This gives us $7(6)+7(5)+7(4)+7(3)+7(2)+7(1)$ which simplifies to $7\cdot21$. The vertical case is symmetrical so we have $7\cdot21\cdot2 = \boxed{294}$
 
  
-
-
 
 
 
@@ -705,15 +544,11 @@ As in Solution 1, there are two cases: $RURUR$ or $URURU$. We will work with the
 
 
 
-
-
 \textbf{Solution 6}
 
 We note that we either start with $R$ or $U$ and that these cases are symmetric, so we will simply consider the $R$ case and multiply by $2$ at the end. We make the key observation that making a path is the same as choosing two vertical lines and one horizontal line to mark our path; this gives us a unique path. Because we change directions exactly 4 times, we must travel at least 1 unit before turning, and we also must end by traveling at least one unit, so we cannot choose vertical lines that are on the edge of our grid. Similarly, we cannot do that for the horizontal line. Our final answer is simply choosing 2 vertical lines from 7 total, and choosing one horizontal line from 7 total, all multiplied by two. $2 \cdot \binom{7}{2} \cdot \binom{7}{1} = \boxed{294}.$
 
  
-
-
 
 
 
@@ -738,9 +573,7 @@ Our path must either go right, up, right, up, and right (RURUR) or up, right, up
 
  Finally, we multiply by 2 to account for the URURU case, which gives us a total of $21 \cdot 7 \cdot 2 = \boxed{294}$  paths.
 
- \textbf{Fast Video Solution (no stars and bars)} 
-
-
+ 
 
 
 	\item (\textit{AIME I 2024}) Find the largest possible real part of 
@@ -762,8 +595,6 @@ Let $z=4e^{i\theta}$. Then the expression becomes
 
 
 
-
-
 \textbf{Solution 2a (Cauchy-Schwarz and vector algebra)}
 
 Simplify rectangular form as in Solution 1 until we get $\text{Re}(w)=81a-108b = 27(3a-4b)$. 
@@ -775,8 +606,6 @@ Simplify rectangular form as in Solution 1 until we get $\text{Re}(w)=81a-108b =
  Combining what remains, we get answer $= 27 |z| |v|  = 27(4)(5)=\boxed{540}$.
 
  
-
-
 
 
 
@@ -798,8 +627,6 @@ Simplify rectangular form as in Solution 1 until we get $\text{Re}(w)=81x-108y =
 
 
 
-
-
 \textbf{Solution 2c (Dot product)}
 
 Let $z = a + bi.$ Simplify until we get to maximizing $81a - 108b$ given $a^2 +b^2 = 16.$ We can write $81a - 108b$ as the \href{https://artofproblemsolving.com/wiki/index.php/Vector?srsltid=AfmBOoqdT29SM62x\_yUNcVA7yUtSecmXlpmyOtury4Rl4Y\_Bo-6fLXh4}{Dot Product} of two vectors:  
@@ -814,8 +641,6 @@ Let $z = a + bi.$ Simplify until we get to maximizing $81a - 108b$ given $a^2 +b
                     
 
  
-
-
 
 
 
@@ -836,15 +661,11 @@ Using the previous fact, we can use the \href{https://artofproblemsolving.com/wi
 
 
 
-
-
 \textbf{Solution 4 (Simple Quadratic Discriminant)}
 
 Similar to the solutions above, we find that $Re((75+117i)z+\frac{96+144i}{z})=81a-108b=27(3a-4b)$, where $z=a+bi$. To maximize this expression, we must maximize $3a-4b$. Let this value be $x$. Solving for $a$ yields $a=\frac{x+4b}{3}$. From the given information we also know that $a^2+b^2=16$. Substituting $a$ in terms of $x$ and $b$ gives us $\frac{x^2+8bx+16b^2}{9}+b^2=16$. Combining fractions, multiplying, and rearranging, gives $25b^2+8xb+(x^2-144)=0$. This is useful because we want the maximum value of $x$ such that this quadratic has real roots which is easy to find using the discriminant. For the roots to be real, $(8x)^2-4(25)(x^2-144) \ge 0$. Now all that is left to do is to solve this inequality. Simplifying this expression, we get $-36x^2+14400 \ge 0$ which means $x^2 \le 400$ and $x \le 20$. Therefore the maximum value of $x$ is $20$ and $27 \cdot 20 = \boxed{540}$
 
  
-
-
 
 
 
@@ -873,8 +694,6 @@ First, recognize the relationship between the reciprocal of a complex number $z$
 
 
 
-
-
 \textbf{Solution 6 (Cauchy-Schwarz Inequality ) (Fastest)}
 
 Follow as solution 1 would to obtain $81a + 108\sqrt{16-a^2}.$
@@ -898,15 +717,11 @@ Follow as solution 1 would to obtain $81a + 108\sqrt{16-a^2}.$
 
 
 
-
-
 \textbf{Solution 7 (Geometry)}
 
 Follow solution 2 to get that we want to find the line $81a-108b=k$ tangent to circle $a^2+b^2=16$. The line turns into $a=\frac{k}{81}+\frac{4b}{3}$	Connect the center of the circle to the tangency point and the y-intercept of the line. Let the tangency point be $A$, the y-intercept be $C$, and the center be $B$. Drop the perpendicular from $A$ to $BC$ and call it $D$. Let $AD=3x$, $DC=4x$. Then, $BD=\sqrt{AB^2-AD^2}=\sqrt{16-9x^2}$. By similar triangles, get that $\frac{BD}{AD}=\frac{AD}{DC}$, so $\frac{\sqrt{16-9x^2}}{3x}=\frac{3x}{4x}$. Solve this to get that $x=\frac{16}{15}$, so $BC=\frac{20}{3}$ and $\frac{k}{81}=\frac{20}{3}$, so $k=\boxed{540}$~ryanbear
 
  
-
-
 
 
 
@@ -929,8 +744,6 @@ Because $|z|=4$, we can let $z=4e^{i\theta}$. Then, substituting $i=e^{\frac{i\p
 
 
 
-
-
 \textbf{Solution 9 (Calc semi-bash)}
 
 Let $c$ denote value of the above expression such that $\mathsf{Re} (c)$ is maximized. We write $z=4e^{i\theta}$ and multiply the second term in the expression by $\overline{z} = 4e^{-i\theta},$ turning the expression into
@@ -948,8 +761,6 @@ so $\tan\theta = -\dfrac{468}{324} = -\dfrac{4}{3},$ which is reminiscent of a $
 
 
 
-
-
 \textbf{Solution 10 (Lagrange multipliers)}
 
 With $z = a + bi$ such that $a^2 + b^2 = 16,$ we have 
@@ -960,8 +771,6 @@ so
  \[a^2 + \frac{16}{9}a^2 = \frac{25}{9}a^2 = 16 \implies \frac{5}{3}a = 4 \implies a = \frac {12}5, b = -\frac{16}{5}\]and we have $3a - 4b = \frac{36}{5} + \frac{64}{5} = 20,$ so the maximum is $27 \cdot 20 = \boxed{540}.$-centslordm
 
  
-
-
 
 
 
@@ -980,8 +789,6 @@ Proceeding as with Solution 10, we aim to maximize $27(3a-4b)$ under the constra
 
 
 
-
-
 \textbf{Solution 12 (Wave function)}
 
 Note that we can scale down the expression by a factor of $3$, namely, we compute the maximum possible real part of ${25+39i}z+{32+48i\over z}$ for $|z|=4$ and multiply this result by 3. Write $z=4(\cos t+i\sin t)$ we have
@@ -994,8 +801,6 @@ Note that we can scale down the expression by a factor of $3$, namely, we comput
  The function $3\cos t-4\sin t$ oscillates with amplitude $5$, so the maximum value of the scaled-down expression is $36\cdot 5=180$. Hence, our requested answer is $180\cdot 3=\boxed{540}$.
 
  
-
-
 
 
 
@@ -1042,8 +847,6 @@ Suppose $z = 4e^{i\theta}$
 
 
 
-
-
 \textbf{Solution 14 (Dot Product Maximality, The Hadamard Vector)}
 
 Let $z=4e^{i \theta}$. We have
@@ -1066,8 +869,6 @@ Let $z=4e^{i \theta}$. We have
  
 
 
-
-
 	\item (\textit{AIME I 2024}) Eight circles of radius $34$ can be placed tangent to $\overline{BC}$ of $\triangle ABC$ so that the circles are sequentially tangent to each other, with the first circle being tangent to $\overline{AB}$ and the last circle being tangent to $\overline{AC}$, as shown. Similarly, $2024$ circles of radius $1$ can be placed tangent to $\overline{BC}$ in the same manner. The inradius of $\triangle ABC$ can be expressed as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -1086,89 +887,9 @@ Let $z=4e^{i \theta}$. We have
 
 \textbf{Solution 1}
 
-Draw an altitude from both end circles of the diagram with the circles of radius one, and call the lengths at the end cut off by the altitudes the altitudes of the circles down to $BC$ $a$ and $b$. Now we have the length of side $BC$ of being $(2)(2022)+1+1+a+b$. However, the side $BC$ can also be written as $(6)(68)+34+34+34a+34b$, due to similar triangles from the second diagram. If we set the equations equal, we have $\frac{1190}{11} = a+b$. Call the radius of the incircle $r$, then we have the side BC to be $r(a+b)$. We find $r$ as $\frac{4046+\frac{1190}{11}}{\frac{1190}{11}}$, which simplifies to $\frac{10+((34)(11))}{10}$,so we have $\frac{192}{5}$, which sums to $\boxed{197}$.
+Draw an altitude from both end circles of the diagram with the circles of radius one, and call the lengths at the end cut off by the altitudes the altitudes of the circles down to $BC$ $a$ and $b$. Now we have the length of side $BC$ of being $(2)(2022)+1+1+a+b$. However, the side $BC$ can also be written as $(6)(68)+34+34+34a+34b$, 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-Assume that $ABC$ is isosceles with $AB=AC$.
-
- If we let $P_1$ be the intersection of $BC$ and the leftmost of the eight circles of radius $34$, $N_1$ the center of the leftmost circle, and $M_1$ the intersection of the leftmost circle and $AB$, and we do the same for the $2024$ circles of radius $1$, naming the points $P_2$, $N_2$, and $M_2$, respectively, then we see that $BP_1N_1M_1\sim BP_2N_2M_2$. The same goes for vertex $C$, and the corresponding quadrilaterals are congruent.
-
- Let $x=BP_2$. We see that $BP_1=34x$ by similarity ratios (due to the radii). The corresponding figures on vertex $C$ are also these values. If we combine the distances of the figures, we see that $BC=2x+4046$ and $BC=68x+476$, and solving this system, we find that $x=\frac{595}{11}$.
-
- If we consider that the incircle of $\triangle ABC$ is essentially the case of $1$ circle with $r$ radius (the inradius of $\triangle ABC$), we can find that $BC=2rx$. From $BC=2x+4046$, we have:
-
- 
- \[r=1+\frac{2023}{x}=1+\frac{11\cdot2023}{595}=1+\frac{187}{5}=\frac{192}{5}\]
-
- Thus the answer is $192+5=\boxed{197}$.
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-Let $x = \cot{\frac{B}{2}} + \cot{\frac{C}{2}}$. By representing $BC$ in two ways, we have the following:
- \[34x + 7\cdot 34\cdot 2 = BC\]
- \[x + 2023 \cdot 2 = BC\]
-
- Solving we find $x = \frac{1190}{11}$. Now draw the inradius, let it be $r$. We find that $rx =BC$, hence 
- \[xr = x + 4046 \implies r-1 = \frac{11}{1190}\cdot 4046 = \frac{187}{5}.\]Thus 
- \[r = \frac{192}{5} \implies \boxed{197}.\]~AtharvNaphade
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-First, let the circle tangent to $AB$ and $BC$ be $O$ and the other circle that is tangent to $AC$ and $BC$ be $R$. Let $x$ be the distance from the tangency point on line segment $BC$ of the circle $O$ to $B$. Also, let $y$ be the distance of the tangency point of circle $R$ on the line segment $BC$ to point $C$. Realize that we can let $n$ be the number of circles tangent to line segment $BC$ and $r$ be the corresponding radius of each of the circles. Also, the circles that are tangent to $BC$ are similar. So, we can build the equation $BC = (x+y+2(n-1)) \times r$. Looking at the given information, we see that when $n=8$, $r=34$, and when $n=2024$, $r=1$, and we also want to find the radius $r$ in the case where $n=1$. Using these facts, we can write the following equations:
-
- $BC = (x+y+2(8-1)) \times 34 = (x+y+2(2024-1)) \times 1 = (x+y+2(1-1)) \times r$
-
- We can find that $x+y = \frac{1190}{11}$ . Now, let $(x+y+2(2024-1)) \times 1 = (x+y+2(1-1)) \times r$. 
-
- Substituting $x+y = \frac{1190}{11}$ in, we find that 
- \[r = \frac{192}{5} \implies \boxed{197}.\]
-
- 
-
-
-
-
-
-\textbf{Solution 5 (one variable)}
-
-Define $I, x_1, x_8, y_1, y_{2024}$ to be the incenter and centers of the first and last circles of the $8$ and $2024$ tangent circles to $BC,$ and define $r$ to be the inradius of triangle $\bigtriangleup ABC.$ We calculate $\overline{x_1x_8} = 34 \cdot 14$ and $\overline{y_1y_{2024}} = 1 \cdot 4046$ because connecting the center of the circles voids two extra radii.
-
- 
-We can easily see that $B, x_1, y_1,$ and $I$ are collinear, and the same follows for $C, x_8, y_{2024},$ and $I$ (think angle bisectors).
-
- 
-We observe that triangles $\bigtriangleup I x_1 x_8$ and $\bigtriangleup I y_1 y_{2024}$ are similar, and therefore the ratio of the altitude to the base is the same, so we note
-
- 
- \[\frac{\text{altitude}}{\text{base}} = \frac{r-34}{34\cdot 14} = \frac{r-1}{1\cdot 4046}.\]
-
- 
-Solving yields $r = \frac{192}{5},$ so the answer is $192+5 = \boxed{197}.$
-
- -\href{https://artofproblemsolving.com/wiki/index.php/User:Spectraldragon8}{spectraldragon8}
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) Let $A$, $B$, $C$, $D$ be points on the hyperbola  $\frac{x^2}{20}-\frac{y^2}{24}=1$ such that $ABCD$ is a rhombus whose diagonals intersect at the origin. Find the largest number less than $BD^2$ for all rhombuses $ABCD$.
@@ -1190,21 +911,11 @@ Plugging $y = mx$ into the equation for the hyperbola yields $x^2 = \frac{120}{6
 
 
 
-
-
 \textbf{Solution 2}
 
 Assume that $AC$ is the asymptote of the hyperbola, in which case $BD$ is minimized. The expression of $BD$ is $y=-\sqrt{\frac{5}{6}}x$. Thus, we could get $\frac{x^2}{20}-\frac{y^2}{24}=1\implies x^2=\frac{720}{11}$. The desired value is $4\cdot \frac{11}{6}x^2=480$. This case can't be achieved, so all $BD^2$ would be greater than $\boxed{480}$
 
  
-
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) Let $\triangle ABC$ have side lengths $AB=5$, $BC=9$, $CA=10$. The tangents to circumcircle of $\triangle ABC$ at $B$ and $C$ intersect at point $D$, and $\overline{AD}$ intersects the circumcircle at $P \neq A$. The length of $AP$ is equal to $\frac{m}{n}$, where $m$ and $n$ are relatively prime integers. Find $m + n$.
@@ -1220,8 +931,6 @@ Assume that $AC$ is the asymptote of the hyperbola, in which case $BD$ is minimi
 We have $\let\angle BCD = \let\angle CBD = \let\angle A$ from the tangency condition. With LoC we have $\cos(A) = \frac{25+100-81}{2*5*10} = \frac{11}{25}$ and $\cos(B) = \frac{81+25-100}{2*9*5} = \frac{1}{15}$. Then, $CD = \frac{\frac{9}{2}}{\cos(A)} = \frac{225}{22}$. Using LoC we can find $AD$: $AD^2 = AC^2 + CD^2 - 2(AC)(CD)\cos(A+C) = 10^2+(\frac{225}{22})^2 + 2(10)\frac{225}{22}\cos(B) = 100 + \frac{225^2}{22^2} + 2(10)\frac{225}{22}*\frac{1}{15} = \frac{5^4*13^2}{484}$. Thus, $AD = \frac{5^2*13}{22}$. By Power of a Point, $DP*AD = CD^2$ so $DP*\frac{5^2*13}{22} = (\frac{225}{22})^2$ which gives $DP = \frac{5^2*9^2}{13*22}$. Finally, we have $AP = AD - DP = \frac{5^2*13}{22} - \frac{5^2*9^2}{13*22} = \frac{100}{13}$. So the answer is $\boxed{113}$.
 
  
-
-
 
 
 
@@ -1244,8 +953,6 @@ We have $\let\angle BCD = \let\angle CBD = \let\angle A$ from the tangency condi
 
 
 
-
-
 \textbf{Solution 3}
 
 
@@ -1265,8 +972,6 @@ We have $\let\angle BCD = \let\angle CBD = \let\angle A$ from the tangency condi
 
 
 
-
-
 \textbf{Solution 4}
 
 Extend sides $\overline{AB}$ and $\overline{AC}$ to points $E$ and $F$, respectively, such that $B$ and $C$ are the feet of the altitudes in $\triangle AEF$. Denote the feet of the altitude from $A$ to $\overline{EF}$ as $X$, and let $H$ denote the orthocenter of $\triangle AEF$. Call $M$ the midpoint of segment $\overline{EF}$. By the Three Tangents Lemma, we have that $MB$ and $MC$ are both tangents to $(ABC)$ $\implies$ $M = D$, and since $M$ is the midpoint of $\overline{EF}$, $MF = MB$. Additionally, by angle chasing, we get that: 
@@ -1279,8 +984,6 @@ Extend sides $\overline{AB}$ and $\overline{AC}$ to points $E$ and $F$, respecti
  \[AP = AM - MP = \frac{13 \cdot 25}{22} - \frac{225 \cdot 9}{22 \cdot 13} = \frac{100}{13}\]Therefore, the answer is $\boxed{113}$.
 
  
-
-
 
 
 
@@ -1300,8 +1003,6 @@ Connect lines $\overline{PB}$ and $\overline{PC}$. From the angle by tangent for
  Solving, we find $\overline{AP}=\frac{100}{13}$, so our desired answer is $100+13=\boxed{113}$.
 
  
-
-
 
 
 
@@ -1339,15 +1040,11 @@ Therefore, the answer is $100 + 13 = \boxed{\textbf{(113) }}$.
 
 
 
-
-
 \textbf{Solution 7}
 
 Note that since P is a symmedian, $(AP;BC)$ are harmonic. As a result, $\frac{BP}{PC} = \frac{BA}{CA}$. As a result, $2(BP) = PC$. Call $BP = x$. Then, $PC = 2x$. Since $cos A = \frac{11}{25}$, $cos BPC = - \frac{11}{25}$. Use LOC to find $x = \frac{45}{13}$. Finish with Ptolemy on ABPC, and finish to get $\frac{100}{13}$.
 
  
-
-
 
 
 
@@ -1361,15 +1058,11 @@ Note that $AD$ is the A-symmedian in $\triangle ABC$. Let $M$ be the midpoint of
 
 
 
-
-
 \textbf{Solution 9 (Inversion)}
 
 Take a $\sqrt{bc}$ inversion, and note that the circumcircle of $\triangle ABC$ gets mapped to $\overline{BC}$. Therefore, $P$ is mapped to a point on $\overline{BC}$. Also, the tangents map to circles that pass through $A$ and are tangent to $\overline{BC}$ at $B$ or $C$. The radical axis of the two circles therefore passes through the midpoint of $\overline{BC}$, and thus $P$ is mapped to the midpoint of $\overline{BC}$. By Stewart's, $AM=\frac{13}{2}$, so $AP=\frac{AB*AC}{AM}=\frac{100}{13}$. Therefore, the answer is $\boxed{113}$. 
 
  
-
-
 
 
 
@@ -1384,8 +1077,6 @@ Therefore,
  \[AP=\frac{1100}{507}\cdot\frac{39}{11}=\frac{100}{13}.\]The requested sum is $100+13=\boxed{113}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2024}) Each vertex of a regular octagon is independently colored either red or blue with equal probability. The probability that the octagon can then be rotated so that all of the blue vertices end up at positions where there had been red vertices is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1488,8 +1179,6 @@ Notice that the question's condition mandates all blues to go to reds, but reds 
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $r$ be the number of red vertices and $b$ be the number of blue vertices, where $r+b=8$. By the Pigeonhole Principle, $r\geq{b} \Longrightarrow b\leq4$ if a configuration is valid.
@@ -1518,8 +1207,6 @@ Let $r$ be the number of red vertices and $b$ be the number of blue vertices, wh
  
 
 
-
-
 	\item (\textit{AIME I 2024}) Define $f(x)=|| x|-\frac{1}{2}|$ and $g(x)=|| x|-\frac{1}{4}|$. Find the number of intersections of the graphs of $y=4g(f(\sin (2 \pi x)))$ and $x=4g(f(\cos (3 \pi y)))$.
 
 
@@ -1540,8 +1227,6 @@ If we graph $4g(f(x))$, we see it forms a sawtooth graph that oscillates between
 
 
 
-
-
 \textbf{Solution 2}
 
 We will denote $h(x)=4g(f(x))$ for simplicity. Denote $p(x)$ as the first equation and $q(y)$ as the graph of the second. We notice that both $f(x)$ and $g(x)$ oscillate between 0 and 1. The intersections are thus all in the square $(0,0)$, $(0,1)$, $(1,1)$, and $(1,0)$. Every $p(x)$ wave going up and down crosses every $q(y)$ wave. Now, we need to find the number of times each wave touches 0 and 1.
@@ -1553,8 +1238,6 @@ We notice that $h(x)=0$ occurs at $x=-\frac{3}{4}, -\frac{1}{4}, \frac{1}{4}, \f
 However, we have to be very careful when counting around $(1, 1)$. At this point, $q(y)$ has an infinite downwards slope and $p(x)$ is slanted, giving us an extra intersection; thus, we need to add 1 to our answer to get $\boxed{385}$.
 
  
-
-
 
 
 
@@ -1599,16 +1282,6 @@ We can easily see that only $x, y \in \left[0,1 \right]$ may satisfy both functi
  
 
 
- \textbf{Drawing of two solutions near $\left( 1, 1 \right)$} \href{https://artofproblemsolving.com/wiki/index.php/File:2024\_AIME\_I\_Problem\_12,\_two\_solutions\_near\_(1,1).png}{https://artofproblemsolving.com/wiki/index.php/File:2024\_AIME\_I\_Problem\_12,\_two\_solutions\_near\_(1,1).png}
-
- 
-
-
- 
-
-
-
-
 	\item (\textit{AIME I 2024}) Let $p$ be the least prime number for which there exists an integer $n$ such that $n^{4}+1$ is divisible by $p^{2}$. Find the least positive integer $m$ such that $m^{4}+1$ is divisible by $p^{2}$.
 
 
@@ -1630,106 +1303,9 @@ If \(p=2\), then \(4\mid n^4+1\) for some integer \(n\). But \(\left(n^2\right)^
  Here, \(\gcd(p-1,8)\) mustn't be divide into \(4\) or otherwise \(p\mid n^{\gcd(p-1,8)}-1\mid n^4-1\), which contradicts. So \(\gcd(p-1,8)=8\), and so \(8\mid p-1\). The smallest such prime is clearly \(p=17=2\times8+1\).
 
  
-\textbf{Second Method using orders.} Notice that the order modulo $p^2$ of $n^4$ must be $8$, so $8\mid\varphi(p^2)=p(p-1)$. Hence $8\mid p-1$, so $p\equiv 1\pmod{8}$. The smallest such prime is $p=17$. ~eevee9406
+\textbf{Second Method using orders.} Notice that the order modulo $p^2$ of $n^4$ must be $8$, so $8\mid\varphi(p^2)=p(p-1)$. Hence $8\mid p-1$, so $p\equiv 1\pmod{8}$. The smallest such prime is 
 
  
-So we have to find the smallest positive integer \(m\) such that \(17\mid m^4+1\). We first find the remainder of \(m\) divided by \(17\) by doing
-
- \begin{array}{|c|cccccccccccccccc|}\hline\vphantom{\frac11}x\bmod{17}&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16\\\hline\vphantom{\dfrac11}\left(x^4\right)+1\bmod{17}&2&0&14&2&14&5&5&0&0&5&5&14&2&14&0&2\\\hline\end{array}
-
- So \(m\equiv\pm2\), \(\pm8\pmod{17}\). If \(m\equiv2\pmod{17}\), let \(m=17k+2\), by the binomial theorem,
-
- \begin{align*}0&\equiv(17k+2)^4+1\equiv\mathrm {4\choose 1}(17k)(2)^3+2^4+1=17(1+32k)\pmod{17^2}\\[3pt]\implies0&\equiv1+32k\equiv1-2k\pmod{17}.\end{align*}
-
-
- So the smallest possible \(k=9\), and \(m=155\).
-
- If \(m\equiv-2\pmod{17}\), let \(m=17k-2\), by the binomial theorem,
-
- \begin{align*}0&\equiv(17k-2)^4+1\equiv\mathrm {4\choose 1}(17k)(-2)^3+2^4+1=17(1-32k)\pmod{17^2}\\[3pt]\implies0&\equiv1-32k\equiv1+2k\pmod{17}.\end{align*}
-
-
- So the smallest possible \(k=8\), and \(m=134\).
-
- If \(m\equiv8\pmod{17}\), let \(m=17k+8\), by the binomial theorem,
-
- \begin{align*}0&\equiv(17k+8)^4+1\equiv\mathrm {4\choose 1}(17k)(8)^3+8^4+1=17(241+2048k)\pmod{17^2}\\[3pt]\implies0&\equiv241+2048k\equiv3+8k\pmod{17}.\end{align*}
-
-
- So the smallest possible \(k=6\), and \(m=110\).
-
- If \(m\equiv-8\pmod{17}\), let \(m=17k-8\), by the binomial theorem,
-
- \begin{align*}0&\equiv(17k-8)^4+1\equiv\mathrm {4\choose 1}(17k)(-8)^3+8^4+1=17(241-2048k)\pmod{17^2}\\[3pt]\implies0&\equiv241-2048k\equiv3+9k\pmod{17}.\end{align*}
-
-
- So the smallest possible \(k=11\), and \(m=179\).
-
- In conclusion, the smallest possible \(m\) is \(\boxed{110}\).
-
- <font size="2">Solution by Quantum-Phantom</font>
-
- 
-
-
-
-
-
-\textbf{Solution 2 (Hensel's Lemma)}
-
-We know, from Solution 1, that by Fermat's Little Theorem, $p\equiv 1\pmod{8}$, and that the smallest $p$ satisfying such is $17$. Thus, we have $p^2=289$ and we are attempting to lift modulo $17$ to modulo $289$.
-
- Given in the problem, it is established that $p^2\mid m^4 +1$ holds true, so we can guarantee that $m^4\equiv 1\pmod{289}$. Testing for roots $r_0$ modulo $17$ gives us the solutions $r_0= \pm 2$, $\pm 8$, which satisfy $r_0^4\equiv -1 \pmod{17}$. 
-
- Note that we can now use Hensel's Lemma, by defining a function $f(x)=x^4+1$, giving $f'(x)=4x^3$. We know firstly that, though $f(r_0)$ for all roots $r_0$ we found is congruent to $0\pmod{17}$, this does not hold true for $f'(r_0)$, so we guarantee that there is one lift by Hensel's Lemma to $289$ that we can perform, defined for root $r_1$ that $r_1 = r_0-\frac{f(r_0)}{f'(r_0)}\pmod{p^k}$. We now break our work into four cases:
-
- 
-            \begin{enumerate}
-                \item $r_0 = 2$. $f(2)=17$ and $f'(2)=32$, so $r_1=2-\frac{17}{32}\pmod{289}$, and we need to find the inverse of $32\equiv 15$ modulo $17$. By the extended Euclidean algorithm, we find that $8\cdot 15\equiv 1 \pmod{17}$, and thus $r_1=2-17\cdot 8\equiv 155 \pmod{289}$.\item $r_0 = -2$, or equivalent, $15$. $f(-2)=17$ and $f'(-2)=-32$, so $r_1=-2+\frac{17}{32}\pmod{289}$. We already found the inverse of $32$ modulo $17$, so this case has $r_1=-1+17\cdot 8\equiv 134 \pmod{289}$.\item $r_0 = 8$. $f(8)=4097$ and $f'(8)=2048$, so $r_1=-2+\frac{4097}{2048}\pmod{289}$, and we need to find the inverse of $32\equiv 8$ modulo $17$. We already know the inverse of $8$ is $15$, so we end up with $r_1=8-4097\cdot 15\equiv 110\pmod{289}$.\item $r_0 = -8$, or equivalent, $9$. $f(-8)=4097$ and $f'(-8)=-2048$, so $r_1=-8+\frac{4097}{2048}\pmod{289}$. We already found the inverse of $2048$ modulo $17$, so this case has $r_1=-8+4097\cdot 15\equiv 179\pmod{289}$.
-            \end{enumerate}
-            Thus, out of our four values for $m$, the smallest is $\boxed{110}$. Solution by \href{https://artofproblemsolving.com/wiki/index.php?title=User:Juwushu}{juwushu}.
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Easy, given specialized knowledge)}
-
-Note that $n^4 + 1 \equiv 0 \pmod{p}$ means $\text{ord}_{p}(n) = 8 \mid p-1.$ The smallest prime that does this is $17$ and $2^4 + 1 = 17$ for example. Now let $g$ be a primitive root of $17^2.$ The satisfying $n$ are of the form, $g^{\frac{p(p-1)}{8}}, g^{3\frac{p(p-1)}{8}}, g^{5\frac{p(p-1)}{8}}, g^{7\frac{p(p-1)}{8}}.$ So if we find one such $n$, then all $n$ are $n, n^3, n^5, n^7.$ Consider the $2$ from before. Note $17^2 \mid 2^{4 \cdot 17} + 1$ by LTE. Hence the possible $n$ are, $2^{17}, 2^{51}, 2^{85}, 2^{119}.$ Some modular arithmetic yields that $2^{51} \equiv \boxed{110}$ is the least value. 
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Unfinished)}
-
-We work in the ring \(\mathbb Z/289\mathbb Z\) and use the formula
- \[\sqrt[4]{-1}=\pm\sqrt{\frac12}\pm\sqrt{-\frac12}.\]Since \(-\frac12=144\), the expression becomes \(\pm12\pm12i\), and it is easily calculated via Hensel that \(i=38\), thus giving an answer of \(\boxed{110}\).
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-Alternative Beginning to Solution 1.
-
- Note $n^4 + 1 \equiv 0 \pmod{p^2}$ implies $n^4 + 1 \equiv 0 \pmod{p}$, so $n^4 \equiv p-1 \pmod{p}$. Also, $p$ must satisfy $p^2 - 1 \pmod{p} \equiv n^4$. The first constraint implies the smallest values of $p$ are $p = 2,17$. However, if $p = 2$, then $p^2 - 1 \equiv 3 \pmod{4}$. However, all quartic residues (as in solution 1), are $0, 1 \pmod{4}$, so 2 is impossible. Try $p = 17$. We see that $n = 2$ satisfies the two equations, as $16 \equiv 17-1 \pmod{17}$, and $289 - 1 \pmod{289} \equiv n^4$ is a possible quartic residue, as $288 \pmod{289} \equiv -1 \pmod{289}$ which has a solution modulo 17, specifically when $n = 2$ in which we let $x = 2+17k$, which when raised to the fourth taken modulo 289, we obtain $x^4 \equiv 16 + 544k \pmod{289}$. Reduce 544 and obtain $x^4 \equiv 16 + 255k \pmod{289}$. Now, assume this takes the form $16 + 255k \equiv -1 \equiv 288 \pmod{289}$. Then, $255k \equiv 272 \pmod{289}$ must have solutions. Divide by 17, and obtain $15k \equiv 16 \pmod{17}$. The inverse of $15k$ is 8, so $k \equiv 9 \pmod{17}$. Because solutions for $k$ exist, that directly implies 288 is a valid quartic residue, so $p = 17$ is our smallest prime.
-
- Continue as in solution 1 to obtain $\boxed{110}$.
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) Let $ABCD$ be a tetrahedron such that $AB = CD = \sqrt{41}$, $AC = BD = \sqrt{80}$, and $BC = AD = \sqrt{89}$. There exists a point $I$ inside the tetrahedron such that the distances from $I$ to each of the faces of the tetrahedron are all equal. This distance can be written in the form $\frac{m \sqrt{n}}{p}$, when $m$, $n$, and $p$ are positive integers, $m$ and $p$ are relatively prime, and $n$ is not divisible by the square of any prime. Find $m+n+p$.
@@ -1760,8 +1336,6 @@ Notice that \(41=4^2+5^2\), \(89=5^2+8^2\), and \(80=8^2+4^2\), let \(A~(0,0,0)\
  <font size="2">Solution by Quantum-Phantom</font>
 
  
-
-
 
 
 
@@ -1805,8 +1379,6 @@ Inscribe tetrahedron $ABCD$ in an rectangular prism as shown above.
 
 
 
-
-
 \textbf{Solution 3(Formula Abuse)}
 
 We use the formula for the volume of iscoceles tetrahedron. $V = \sqrt{(a^2 + b^2 - c^2)(b^2 + c^2 - a^2)(a^2 + c^2 - b^2)/72}$
@@ -1823,8 +1395,6 @@ We use the formula for the volume of iscoceles tetrahedron. $V = \sqrt{(a^2 + b^
  \[V = \frac{4AR}{3}.\] Plugging in and simplifying, we get $R = \frac{20\sqrt{21}}{63}$ for an answer of $20 + 21 + 63 = \boxed{104}$
 
  
-
-
 
 
 
@@ -1892,8 +1462,6 @@ Let $AH$ be perpendicular to $BCD$ that meets this plane at point $H$.Let $AP$, 
 
 
 
-
-
 \textbf{Solution 5(A quicker method to compute the height from  to plane )}
 
 We put the solid to a 3-d coordinate system. Let $B = \left( 0, 0, 0 \right)$, $D = \left( \sqrt{80}, 0, 0 \right)$.We put $C$ on the $x-o-y$ plane.Now, we compute the coordinates of $C$.
@@ -1932,8 +1500,6 @@ We put the solid to a 3-d coordinate system. Let $B = \left( 0, 0, 0 \right)$, $
 
 
 
-
-
 \textbf{Solution 6 (Different Perspective)}
 
 Consider the following construction of the tetrahedron. Place $AB$ on the floor. Construct an isosceles vertical triangle with $AB$ as its base and $M$ as the top vertex. Place $CD$ on the top vertex parallel to the ground with midpoint $M.$ Observe that $CD$ can rotate about its midpoint. At a certain angle, we observe that the lengths satisfy those given in the problem. If we project $AB$ onto the plane of $CD$, let the minor angle $\theta$ be this discrepancy.
@@ -1956,15 +1522,11 @@ Consider the following construction of the tetrahedron. Place $AB$ on the floor.
 
 
 
-
-
 \textbf{Solution 7 (simplest way to calculate [ABCD])}
 
 After finding that $ABCD$ can be inscribed in a $4\times5\times8$ box, note that $[ABCD]=\mathbf{box}-(\frac{1}{2})(\frac{4}{3})(4)(5)(8)=\frac{160}{3}$, where the third term describes the area of 4 congruent right tetrahedrons whose right angle is at the apex and whose apex lengths are 4, 5, and 8. Then proceed as in Solution 3.
 
  
-
-
 
 
 
@@ -1976,36 +1538,11 @@ Observe that $ABCD$ can be inscribed in a $4\times5\times8$ box, which gives the
 
 
 
-
-
 \textbf{Solution 9 (Analytical Geometry)}
 
 Like in Solution 1, we have $A = (0,0,0)$, $B = (4,5,0)$, $C = (0,5,8)$, $D = (4,0,8)$. If we let the inradius be $r$, then the volume of the tetrahedron is equal to $\frac{1}{3}[ABC]r + \frac{1}{3}[BCD]r + \frac{1}{3}[ABD]r + \frac{1}{3}[ACD]r = V$ by the formula $V = \frac{1}{3}Ah$. Also note that $[ABC] = [BCD] = [ABD] = [ACD]$ because they all have the same side lengths. So, if we let $[ABC] = A$, then $\frac{4}{3}Ar = V$, so $r = \frac{3V}{4A}$. Now, all we need to do is to find V and A. We note that the area of the triangle $[ABC] = |\frac{\overrightarrow{AB}\times\overrightarrow{AC}}{2}|$. Also, if we let the normal vector from $\Delta ABC$ to be $\bold{n}$, the height $h$ from $D$ to $\Delta ABC$ is $\overrightarrow{AD} \cdot \hat{\bold{n}} = \frac{\overrightarrow{AD} \cdot \bold{n}}{\bold{|n|}}$. Therefore, the volume of the tetrahedron is equal to $\frac{1}{3}[ABC]h = \frac{1}{3}|\frac{\overrightarrow{AB}\times\overrightarrow{AC}}{2}|\frac{\overrightarrow{AD} \cdot \bold{n}}{\bold{|n|}} = \frac{1}{6}|\overrightarrow{AB}\times\overrightarrow{AC}|\frac{\overrightarrow{AD} \cdot \bold{n}}{\bold{|n|}}$. Now, we notice that $\overrightarrow{AB}\times\overrightarrow{AC}$ is a normal vector of the $\Delta ABC$ because the cross product of two vectors is always perpendicular to both of the vectors, and both of the vectors lie in the plane of $\Delta ABC$. This means that we can let $\bold{n} = \overrightarrow{AB}\times\overrightarrow{AC}$. So, the volume of the tetrahedron is $V = \frac{1}{6}|\overrightarrow{AB}\times\overrightarrow{AC}|\frac{\overrightarrow{AD} \cdot (\bold{\overrightarrow {AB}\times\overrightarrow{AC}})}{\bold{|\overrightarrow{AB}\times\overrightarrow{AC}|}} = \frac{1}{6}\overrightarrow{AD} \cdot (\bold{\overrightarrow{AB}\times\overrightarrow{AC}})$. The expression $\overrightarrow{AD} \cdot (\bold{\overrightarrow{AB}\times\overrightarrow{AC}})$ is more commonly known as a box product and can be used to find the volume of any parallelepiped. We know that $\overrightarrow{AB} = (4,5,0)$, $\overrightarrow{AC} = (0,5,8)$, and $\overrightarrow{AD} = (4,0,8)$. Now, $\overrightarrow{AB} \times \overrightarrow{AC} = (8*5-5*0, 0*0-8*4, 4*5-5*0) = (40, -32, 20)$. So, $\overrightarrow{AD} \cdot (\bold{\overrightarrow{AB}\times\overrightarrow{AC}}) = (4,0,8) \cdot (40,-32,20) = 4*40 + 0*-32 + 8*20 = 320$. So, $V = \frac{1}{6}\overrightarrow{AD} \cdot (\bold{\overrightarrow{AB}\times\overrightarrow{AC}}) = \frac{320}{6} = \frac{160}{3}$. Now $[ABC]$ is just equal to $\frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|$ as it is half the parallelogram. So, we have $A = \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \frac{1}{2}|(40,-32,20)| = \frac{1}{2}\sqrt{3024}$. So, $r = \frac{3V}{4A} = \frac{160}{2\sqrt{3024}}$. This expression can be simplified to $\frac{20\sqrt{21}}{63}$. So, our answer is $20 + 63 + 21 = \boxed{104}$.
 
  
-
-
-
-
-
-\textbf{Solution 10 (simplest)}
-
-Obviously, $ABCD$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Disphenoid}{disphenoid}, and it follows that its circumscribing rectangular prism with nonadjacent vertices $A$, $B$, $C$, and $D$ has a length, width, and height of $4$, $5$, and $8$. Thus, 
- \[[ABCD]=4\cdot 5\cdot 8\left(1-4\cdot\frac 16\right)=\frac{160}{3}.\] Since the distances from $I$ to the faces of $ABCD$ are all equal, let this common value be $x$ and WLOG it follows that
-
- \begin{align*}\frac 13x[ABC]&=[IABC],\\2x\sqrt{21}&=\frac 14\cdot\frac{160}{3},\\x&=\frac{20\sqrt{21}}{63}\\\end{align*}
-
-
- through Heron's formula, so the desired value is $\boxed{104}$.
-
- -pieMax2713
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2024}) Let $\mathcal{B}$ be the set of rectangular boxes with surface area $54$ and volume $23$. Let $r$ be the radius of the smallest sphere that can contain each of the rectangular boxes that are elements of $\mathcal{B}$. The value of $r^2$ can be written as $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -2039,8 +1576,6 @@ Observe that the "worst" possible box is one of the maximum possible length. By 
  As we expect, the remainder is $0$, and we are left with the polynomial $x^2+2x-23$. We can now simply use the quadratic formula and find that the remaining roots are $\dfrac{-2\pm\sqrt{4-4(-23)}}2=\dfrac{-2\pm\sqrt{96}}2=\dfrac{-2\pm4\sqrt{6}}2=-1\pm2\sqrt6$. We want the smallest $a$ to maximize $L$, and it turns out that $a=2$ is in fact the smallest root. Thus, we let $a=2$. Substituting this into $L=\dfrac{23}{a^2}$, we find that $L=\dfrac{23}4$. However, this is not our answer! This is simply the length of the box; we want the radius of the sphere enclosing it. We know that the diameter of the sphere is the diagonal of the box, and the 3D Pythagorean Theorem can give us the space diagonal. Applying it, we find that the diagonal has length $\sqrt{2^2+2^2+\left(\dfrac{23}4\right)^2}=\sqrt{8+\dfrac{529}{16}}=\sqrt{\dfrac{128+529}{16}}=\dfrac{\sqrt{657}}4$. This is the diameter; we halve it to find the radius, $\dfrac{\sqrt{657}}8$. We then square this and end up with $\dfrac{657}{64}$, giving us an answer of $657+64=\boxed{721}$. 
 
  
-
-
 
 
 
@@ -2100,8 +1635,6 @@ Denote by $x$, $y$, $z$ the length, width, and height of a rectangular box.We ha
  Therefore, the answer is$657 + 64 = \boxed{\textbf{(721) }}$.
 
  
-
-
 
 
 
@@ -2171,8 +1704,6 @@ $657+64=\boxed{721}$.
 
 
 
-
-
 \textbf{Solution 3a (Derivative)}
 
 to find the maximum m for $x^3-mx^2+27x-23=0$
@@ -2190,8 +1721,6 @@ to find the maximum m for $x^3-mx^2+27x-23=0$
 
 
 
-
-
 \textbf{Solution 4}
 
 This question looks complex, but once converted into a number theory problem, it becomes elementary. We know, if the dimensions are taken to be numbers in the form of coprime numbers p/q,q/r, and r, it is immediately obvious that p=23.And solving we get: 
@@ -2205,8 +1734,6 @@ This question looks complex, but once converted into a number theory problem, it
 
 
 
-
-
 \textbf{Solution 5}
 
 This problem essentially boils down to maximizing the value of $x+y+z$ (where $x$, $y$, and $z$ denote the dimensions of the box) given $xy+xz+yz=27$ and $xyz=23$. After doing so, we can calculate $r^2$ using $r^2=\frac{(x+y+z)^2-54}{4}$ (as in Solution 2). We can turn $x+y+z$ into an expression in terms of only $x$ and use the method of critical points. Since $xyz=23$, we have $yz=\frac{23}{x}$ and thus $xy+xz+yz=x(y+z)+\frac{23}{x}=27$. Isolating $y+z$, we find $y+z=\frac{27-\frac{23}{x}}{x}$, so
@@ -2215,8 +1742,6 @@ This problem essentially boils down to maximizing the value of $x+y+z$ (where $x
  \[\frac{(\frac{39}{4})^2-54}{4}=\frac{657}{64} \implies p+q=\boxed{721}.\]
 
  
-
-
 
 
 
@@ -2240,8 +1765,6 @@ From the previous solutions we can see that we have to maximize $m$ in the expre
  The remaining expression is $(x - \frac{23}{4})(-92x^2 + 200x - 92)$. We can quickly see using the quadratic formula that $\frac{23}{4}$ is the largest root, meaning that $r=\frac{23}{4}$ is the largest value that a root of $x^3 - mx^2 + 27x - 23 = 0$ can have for which $x^3 - mx^2 + 27x - 23=0$ has $3$ positive, real solutions. From here, we can substitute this value back into the expression for $m$, giving us $m = \frac{39}{4}$. The length of the radius squared is $\frac{m^2-54}{4}=\frac{657}{64}$ and $657+64=\boxed{721}$ 
 
  
-
-
 
 
 \end{enumerate}

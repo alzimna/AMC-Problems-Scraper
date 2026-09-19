@@ -16,8 +16,6 @@ A positive integer is divisible by $4$ if and only if its last two digits are di
 
 
 
-
-
 \textbf{Solution 2}
 
 A number is divisible by four if its last two digits are divisible by 4. Thus, we require that $10b + a$ and $10b + c$ are both divisible by $4$. If $b$ is odd, then $a$ and $c$ must both be $2 \pmod 4$ meaning that $a$ and $c$ are $2$ or $6$. If $b$ is even, then $a$ and $c$ must be $0 \pmod 4$ meaning that $a$ and $c$ are $4$ or $8$. For each choice of $b$ there are $2$ choices for $a$ and $2$ for $c$ for a total of $10 \cdot 2 \cdot 2 = \boxed{040}$ numbers.
@@ -26,17 +24,11 @@ A number is divisible by four if its last two digits are divisible by 4. Thus, w
 
 
 
-
-
 \textbf{Solution 3}
 
 For this number to fit the requirements $bc$ and $ba$ must be divisible by 4. So $bc = 00, 04, 08, 12, 16, ... , 92, 96$ and so must $ba$ for each two digits of $bc$. There are two possibilities for $ba$ if $b$ is odd and three possibilities if $b$ is even. So there are $2^{2} \cdot 5+3^{2} \cdot 4 = 65$ possibilities but this overcounts when $a$ or $c = 0$. So when $bc = 00, 20, 40, 60, 80$ and the corresponding $ba$ should be removed, so $65 - 5 \cdot 3 = 50$. But we are still overcounting when $b$ is even because then $a$ can be 0. So the answer is $50 - 10 \cdot 1 = \boxed{040}$ 
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/289}{https://artofproblemsolving.com/videos/amc/2012aimei/289}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) The terms of an arithmetic sequence add to $715$. The first term of the sequence is increased by $1$, the second term is increased by $3$, the third term is increased by $5$, and in general, the $k$th term is increased by the $k$th odd positive integer. The terms of the new sequence add to $836$. Find the sum of the first, last, and middle term of the original sequence.
@@ -58,15 +50,11 @@ Alternatively, notice that in the original sequence, $11a_1 + 55d = 715$, from w
 
 
 
-
-
 \textbf{Solution 2}
 
 After the adding of the odd numbers, the total of the sequence increases by $836 - 715 = 121 = 11^2$. Since the sum of the first $n$ positive odd numbers is $n^2$, there must be $11$ terms in the sequence, so the mean of the sequence is $\dfrac{715}{11} = 65$. Since the first, last, and middle terms are centered around the mean, our final answer is $65 \cdot 3 = \boxed{195}$
 
  
-
-
 
 
 
@@ -78,17 +66,11 @@ Proceed as in Solution 2 until it is noted that there are 11 terms in the sequen
 
 
 
-
-
 \textbf{Solution 4 (Similar to the above solutions)}
 
 Let the sequence be $a,a+d,a+2d,..., a+(k-1)d$. Since there are $k$ terms, we have an equation $k^2 = 836-715 = 121$. Solving, we get $k$ as $11$. Replacing $k$ in our sequence with $11$, we get $a,a+d,a+2d,..., a+10d$. The sum of this sequence is equal to $715$, or $\frac{(2a+10d)(11)}{2} = 715$, and by simplifying we get $a+5d=65$. We are asked for the first, middle, and end terms, which are $a$,$a+5d$, and $a+10d$ respectively. Their sum is $3a+15$, or $3 \cdot (a+5d)$. Our desired answer is $65 \cdot 3 = \boxed{195}$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/298}{https://artofproblemsolving.com/videos/amc/2012aimei/298}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Nine people sit down for dinner where there are three choices of meals. Three people order the beef meal, three order the chicken meal, and three order the fish meal. The waiter serves the nine meals in random order. Find the number of ways in which the waiter could serve the meal types to the nine people so that exactly one person receives the type of meal ordered by that person.
@@ -117,17 +99,11 @@ Call a beef meal $B,$ a chicken meal $C,$ and a fish meal $F.$ Now say the nine 
 
 
 
-
-
 \textbf{Solution 2}
 
 First, choose the person that gets the correct meal. There's obviously $9$ ways to do that. Then, we can casework on who gets what type of meal. WLOG the person who had the correct meal had the chicken meal. The remaining chicken meals can be distributed to either one person who ordered beef and another who ordered fish, or can be distributed to two people who ordered the same type of meal that is not chicken. For the first case, it's apparent that there are $9$ ways of choosing who gets the two chicken meal, and two ways to order the remaining meals. For the second case, there are $6$ ways to choose who gets the two chicken meals and only $1$ way of ordering the remaining meals. Therefore, the answer is $9 \cdot (9 \cdot 2 + 6 \cdot 1) = \boxed {216}$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/331}{https://artofproblemsolving.com/videos/amc/2012aimei/331}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Butch and Sundance need to get out of Dodge. To travel as quickly as possible, each alternates walking and riding their only horse, Sparky, as follows. Butch begins by walking while Sundance rides. When Sundance reaches the first of the hitching posts that are conveniently located at one-mile intervals along their route, he ties Sparky to the post and begins walking. When Butch reaches Sparky, he rides until he passes Sundance, then leaves Sparky at the next hitching post and resumes walking, and they continue in this manner. Sparky, Butch, and Sundance walk at $6,$ $4,$ and $2.5$ miles per hour, respectively. The first time Butch and Sundance meet at a milepost, they are $n$ miles from Dodge, and they have been traveling for $t$ minutes. Find $n + t$.
@@ -149,11 +125,7 @@ When they meet at the milepost, Sparky has been ridden for $n$ miles total. Assu
 
  Note that this solution is not rigorous because it is not guaranteed that they will switch properly to form this combination.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/332}{https://artofproblemsolving.com/videos/amc/2012aimei/332}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Let $B$ be the set of all binary integers that can be written using exactly $5$ zeros and $8$ ones where leading zeros are allowed. If all possible subtractions are performed in which one element of $B$ is subtracted from another, find the number of times the answer $1$ is obtained.
@@ -169,8 +141,6 @@ When they meet at the milepost, Sparky has been ridden for $n$ miles total. Assu
 When $1$ is subtracted from a binary number, the number of digits will remain constant if and only if the original number ended in $10.$ Therefore, every subtraction involving two numbers from $B$ will necessarily involve exactly one number ending in $10.$ To solve the problem, then, we can simply count the instances of such numbers. With the $10$ in place, the seven remaining $1$'s can be distributed in any of the remaining $11$ spaces, so the answer is ${11 \choose 7} = \boxed{330}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2012}) The complex numbers $z$ and $w$ satisfy $z^{13} = w,$ $w^{11} = z,$ and the imaginary part of $z$ is $\sin{\frac{m\pi}{n}}$, for relatively prime positive integers $m$ and $n$ with $m<n.$ Find $n.$
@@ -189,8 +159,6 @@ Substituting the first equation into the second, we find that $(z^{13})^{11} = z
 
 
 
-
-
 \textbf{Solution 2}
 
 This is similar to solution 1.
@@ -198,8 +166,6 @@ This is similar to solution 1.
  As before, determine $z^{143} = z$, so $z^{142} = 1 \implies \Im(z^{142}) = 0$. So, $\sin(142\theta) = 0$, which can only happen if $142\theta = 2k\pi$ for some $k$. So, $\theta = \frac{k\pi}{71}$. 71 is prime, so $k$ is relatively prime to all $k < 71$ through Euler Totient. Note $\Im(z) = \sin(\theta)$, so the requested imaginary part is $\sin(\frac{k\pi}{71})$, and $n = \boxed{71}$.
 
  
-
-
 
 
 
@@ -213,8 +179,6 @@ Giving the same exponent of $w$ gives $z^{143}=w^{11}=z \Longrightarrow z^{143}=
  
 
 
-
-
 	\item (\textit{AIME I 2012}) At each of the sixteen circles in the network below stands a student. A total of $3360$ coins are distributed among the sixteen students. All at once, all students give away all their coins by passing an equal number of coins to each of their neighbors in the network. After the trade, all students have the same number of coins as they started with. Find the number of coins the student standing at the center circle had originally.
 
 
@@ -224,6 +188,8 @@ Giving the same exponent of $w$ gives $z^{143}=w^{11}=z \Longrightarrow z^{143}=
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_2012_7_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }280
 
 
@@ -250,8 +216,6 @@ Say the student in the center starts out with $a$ coins, the students neighborin
 
 
 
-
-
 \textbf{Solution 2}
 
 Since the students give the same number of gifts of coins as they receive and still end up the same number of coins, we can assume that every gift of coins has the same number of coins. Let $x$ be the number of coins in each gift of coins. There $10$ people who give $4$ gifts of coins, $5$ people who give $3$ gifts of coins, and $1$ person who gives $5$ gifts of coins. Thus,
@@ -264,8 +228,6 @@ Therefore the answer is $5(56) = \boxed{280}.$
 
 
 
-
-
 \textbf{Solution 3}
 
 Mark the number of coins from inside to outside as $a$, $b_1$, $b_2$, $b_3$, $b_4$, $b_5$, $c_1$, $c_2$, $c_3$, $c_4$, $c_5$, $d_1$, $d_2$, $d_3$, $d_4$, $d_5$.Then, we obtain
@@ -273,8 +235,6 @@ Mark the number of coins from inside to outside as $a$, $b_1$, $b_2$, $b_3$, $b_
 Letting $D = d_1 + d_2 + d_3 + d_4 + d_5$, $C = c_1 + c_2 + c_3 + c_4 + c_5$ gets us $D = \frac{D}{4} + \frac{D}{4} + \frac{C}{4} + \frac{C}{4}$ and $D = C$.In the same way, $C = \frac{D}{4} + \frac{D}{4} + \frac{B}{3} + \frac{B}{3}$, $B = \frac{3D}{4}$, $B = \frac{C}{4} + \frac{C}{4} + a$, $a = \frac{D}{4}$.Then, with $a + B + C + D = 3360$, $D = 1120$, $a = \boxed{280}$.
 
  
-
-
 
 
 
@@ -296,11 +256,7 @@ Define $x$ as the number of coins the student in the middle has. Since this stud
 
  We defined $x$ to be the number of coins that the center person has, so the answer is $x$, which is $\boxed{280}$
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/343}{https://artofproblemsolving.com/videos/amc/2012aimei/343}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Cube $ABCDEFGH,$ labeled as shown below, has edge length $1$ and is cut by a plane passing through vertex $D$ and the midpoints $M$ and $N$ of $\overline{AB}$ and $\overline{CG}$ respectively. The plane divides the cube into two solids. The volume of the larger of the two solids can be written in the form $\frac{p}{q},$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$
@@ -312,6 +268,8 @@ Define $x$ as the number of coins the student in the middle has. Since this stud
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_2012_8_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }089
 
 
@@ -330,16 +288,12 @@ Define a coordinate system with $D$ at the origin and $C,$ $A,$ and $H$ on the $
 
 
 
-
-
 \textbf{Solution 2}
 
 Define a coordinate system with $D = (0,0,0)$, $M = (1, \frac{1}{2}, 0)$, $N = (0,1,\frac{1}{2})$. The plane formed by $D$, $M$, and $N$ is $z = \frac{y}{2} - \frac{x}{4}$. It intersects the base of the unit cube at $y = \frac{x}{2}$. The z-coordinate of the plane never exceeds the height of the unit cube for $0 \leq x \leq 1, 0 \leq y \leq 1$. Therefore, the volume of one of the two regions formed by the plane is
  \[\int_0^1 \int_{\frac{x}{2}}^1 \int_0^{\frac{y}{2}-\frac{x}{4}}dz\,dy\,dx = \frac{7}{48}\]Since $\frac{7}{48} < \frac{1}{2}$, our answer is $1-\frac{7}{48} = \frac{41}{48} \rightarrow p+q = \boxed{089}$.
 
  
-
-
 
 
 
@@ -382,8 +336,6 @@ Same coordinate system, but we will use domains instead of using triple integral
 
 
 
-
-
 \textbf{Solution outside visual}
 
 
@@ -397,17 +349,11 @@ Same coordinate system, but we will use domains instead of using triple integral
 
 
 
-
-
 \textbf{Solution 7}
 
 We use a coordinate system with $C = (0,0,0)$, $D = (1,0,0)$, $M = (\frac{1}{2},1,0)$, $N = (0,0,\frac{1}{2})$. Then the plane going through $D$, $M$, and $N$ has equation $z = \frac{1}{2} - \frac{1}{2}x - \frac{1}{4}y$. We set up a double integral in this coordinate system. Consider the region to be integrated over in the $xy$-plane. From $x=0$ to $x=\frac{1}{2}$, the upper bound of the region is $y = 1$. From $x= \frac{1}{2}$ to $x=1$, the upper bound of the region is $y = 2 - 2x$. In both cases, the lower bound of the region is $y = 0$. Thus, we have the double integral $\int_{0}^{\frac{1}{2}} \int_{0}^{1} \frac{1}{2} - \frac{1}{2}x - \frac{1}{4}y dydx + \int_{\frac{1}{2}}^{1} \int_{0}^{2-2x} \frac{1}{2} - \frac{1}{2}x - \frac{1}{4}y dydx$. We find that this sum evaluates to $\frac{7}{48}$. However, this is the volume of the smaller region, so the larger region's volume is that of the cube minus that of the smaller region. Since the cube has side length $1$, its volume is $1$, so the volume of the larger region is $1 - \frac{7}{48} = \frac{41}{48}$. Thus, our answer is $41 + 48 = \boxed{089}$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/344}{https://artofproblemsolving.com/videos/amc/2012aimei/344}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Let $x,$ $y,$ and $z$ be positive real numbers that satisfy
@@ -432,8 +378,6 @@ Solving these equations, we quickly see that $4x^8 = (2y)(4z) = x(2x) \rightarro
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice that $2y\cdot 4z=8yz$, $2\log_2(2y)=\log_2\left(4y^2\right)$ and $2\log_2(4z)=\log_2\left(16z^2\right)$.
@@ -454,8 +398,6 @@ Notice that $2y\cdot 4z=8yz$, $2\log_2(2y)=\log_2\left(4y^2\right)$ and $2\log_2
 
 
 
-
-
 \textbf{Solution 3}
 
 Since $x, y, z$ are positive real numbers, $x, y$, and $z$ can be expressed as powers of two.  We shall thus let $x = 2^X$, $y = 2^Y$, and $z = 2^Z$.  Let $a = \log_{2^X}(2^{Y+1})$.  From this we get the system of equations: 
@@ -469,8 +411,6 @@ Since $x, y, z$ are positive real numbers, $x, y$, and $z$ can be expressed as p
  Knowing this, we may substitute $\frac{-1}{6}$ for $X$ in equations $(1)$ and $(2)$, yielding $\frac{-a}{6} = Y + 1$ and $\frac{5a}{6} = Z + 2$.  Thus, we have that $-5(Y + 1) = Z + 2 \rightarrow 5Y + Z = -7$.  We are looking for $xy^5z = 2^{X+ 5Y + Z}$. $X = \frac{-1}{6}$ and $5Y + Z = -7$, so $xy^5z = 2^{-43/6} = \frac{1}{2^{43/6}}$.  The answer is $43+6=\boxed{049}$.
 
  
-
-
 
 
 
@@ -488,8 +428,6 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Mediant\_theor
  \[xy^5z=2^{-1/6} \cdot 2^{-65/12} \cdot 2^{-19/12}=2^{-43/6} \Rightarrow p+q=\boxed{049}.\]
 
  
-
-
 
 
 
@@ -525,11 +463,7 @@ Dividing equation $(3)$ by equation $(2)$ yields
  
 Thus, $xy^5z = 2^{-\frac{1}{6}} y^5 2^{-7}y^{-5} = 2^{-\frac{43}{6}} = \dfrac{1}{2^{\frac{43}{6}}} \implies p+q = \boxed{49}$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/348}{https://artofproblemsolving.com/videos/amc/2012aimei/348}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Let $\mathcal{S}$ be the set of all perfect squares whose rightmost three digits in base $10$ are $256$. Let $\mathcal{T}$ be the set of all numbers of the form $\frac{x-256}{1000}$, where $x$ is in $\mathcal{S}$. In other words, $\mathcal{T}$ is the set of numbers that result when the last three digits of each number in $\mathcal{S}$ are truncated. Find the remainder when the tenth smallest element of $\mathcal{T}$ is divided by $1000$.
@@ -545,8 +479,6 @@ Thus, $xy^5z = 2^{-\frac{1}{6}} y^5 2^{-7}y^{-5} = 2^{-\frac{43}{6}} = \dfrac{1}
 It is apparent that for a perfect square $s^2$ to satisfy the constraints, we must have $s^2 - 256 = 1000n$ or $(s+16)(s-16) = 1000n.$ Now in order for $(s+16)(s-16)$ to be a multiple of $1000,$ at least one of $s+16$ and $s-16$ must be a multiple of $5,$ and since $s+16 \not\equiv s-16 \pmod{5},$ one term must have all the factors of $5$ and thus must be a multiple of $125.$ Furthermore, each of $s+16$ and $s-16$ must have at least two factors of $2,$ since otherwise $(s+16)(s-16)$ could not possibly be divisible by $8.$ So therefore the conditions are satisfied if either $s+16$ or $s-16$ is divisible by $500,$ or equivalently if $s = 500n \pm 16.$ Counting up from $n=0$ to $n=5,$ we see that the tenth value of $s$ is $500 \cdot 5 - 16 = 2484$ and thus the corresponding element in $\mathcal{T}$ is $\frac{2484^2 - 256}{1000} = 6170 \rightarrow \boxed{170.}$
 
  
-
-
 
 
 
@@ -566,8 +498,6 @@ Notice that is $16^2=256$, $1016^2$ ends in $256$. In general, if $x^2$ ends in 
 
 
 
-
-
 \textbf{Solution 3}
 
 The condition implies $x^2\equiv 256 \pmod{1000}$. Rearranging and factoring, 
@@ -579,8 +509,6 @@ The condition implies $x^2\equiv 256 \pmod{1000}$. Rearranging and factoring,
 
 
 
-
-
 \textbf{Solution 4}
 
 An element in S can be represented by $y^2 = 1000a + 256$, where $y^2$ is the element in S. Since the right hand side must be even, we let $y = 2y_1$ and substitute to get $y_1^2 = 250a + 64$. However, the right hand side is still even, so we make the substitution $y_1 = 2y_2$ to get $y_2^2 = 125a/2 + 16$. Because both sides must be an integer, we know that $a = 2a_1$ for some integer $a_1$. Our equation then becomes $y_2^2 = 125a_1 + 16$, and we can simplify no further.
@@ -588,8 +516,6 @@ An element in S can be represented by $y^2 = 1000a + 256$, where $y^2$ is the el
  Rearranging terms, we get $y_2^2 - 16 = 125a_1$, whence difference of squares gives $(y_2 + 4)(y_2 - 4) = 125a_1$. Note that this equation tells us that one of $y_2 + 4$ and $y_2 - 4$ contains a nonnegative multiple of $125$. Hence, listing out the smallest possible values of $y_2$, we have $y_2 = 4, 121, 129, \cdots, 621$. The tenth term is $621$, whence $y = 4y_2 = 2484$. The desired result can then be calculated to be $\boxed{170}$. - Spacesam
 
  
-
-
 
 
 
@@ -616,11 +542,7 @@ From the conditions, we can let every element in $\mathcal{S}$ be written as $y^
  In whole, the values of $x$ (i.e. the elements in $\mathcal{T}$) are of the form 
  \[x=2k(125k\pm8)\] where $k$ is any integer. It can easily be seen that if $k<0$, then $x$ is negative, thus $k\geq0$. Also, note that when $k=0$, there is only one value, because one of the factors is $0$ ($k$). Thus the $10^{th}$ smallest number in the set $\mathcal{T}$ is when the $\pm$ sign takes the minus side and $k=5$, giving $6170$, so the answer is $\boxed{170}$
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/349}{https://artofproblemsolving.com/videos/amc/2012aimei/349}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) A frog begins at $P_0 = (0,0)$ and makes a sequence of jumps according to the following rule: from $P_n = (x_n, y_n),$ the frog jumps to $P_{n+1},$ which may be any of the points $(x_n + 7, y_n + 2),$ $(x_n + 2, y_n + 7),$ $(x_n - 5, y_n - 10),$ or $(x_n - 10, y_n - 5).$ There are $M$ points $(x, y)$ with $|x| + |y| \le 100$ that can be reached by a sequence of such jumps. Find the remainder when $M$ is divided by $1000.$
@@ -670,11 +592,7 @@ $\textbf{Proof:}$ Denote the total amounts of each specific transformation in th
 
  So there are $34$ possible odd values and $33$ possible even values for $n,$ and $20$ possible odd values and $21$ possible even values for $m.$ Every pair of lines described above will yield a valid accessible point for all pairs of $m$ and $n$ with the same parity, and the number of points $M$ is thus $34 \cdot 20 + 33 \cdot 21 = 1373 \rightarrow \boxed{373}$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/351}{https://artofproblemsolving.com/videos/amc/2012aimei/351}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Let $\triangle ABC$ be a right triangle with right angle at $C.$ Let $D$ and $E$ be points on $\overline{AB}$ with $D$ between $A$ and $E$ such that $\overline{CD}$ and $\overline{CE}$ trisect $\angle C.$ If $\frac{DE}{BE} = \frac{8}{15},$ then $\tan B$ can be written as $\frac{m \sqrt{p}}{n},$ where $m$ and $n$ are relatively prime positive integers, and $p$ is a positive integer not divisible by the square of any prime. Find $m+n+p.$
@@ -694,11 +612,11 @@ We have $\angle BCE = \angle ECD = \angle DCA = \frac 13 \cdot 90^\circ = 30^\ci
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2012_12_Solution_Figure_1.png}
                     \end{figure}
-                    Let $CD = 8a$. Using angle bisector theorem on $\triangle CDB$, we get $CB = 15a$. Now $CDF$ is a $30$-$60$-$90$ triangle, so $CF = 4a$, $FD = 4a\sqrt{3}$, and $FB = 11a$.  Finally, $\tan{B} = \frac{DF}{FB}=\frac{4\sqrt{3}a}{11a} = \frac{4\sqrt{3}}{11}$. Our final answer is $4 + 3 + 11 = \boxed{018}$.
+                    
+
+ Let $CD = 8a$. Using angle bisector theorem on $\triangle CDB$, we get $CB = 15a$. Now $CDF$ is a $30$-$60$-$90$ triangle, so $CF = 4a$, $FD = 4a\sqrt{3}$, and $FB = 11a$.  Finally, $\tan{B} = \frac{DF}{FB}=\frac{4\sqrt{3}a}{11a} = \frac{4\sqrt{3}}{11}$. Our final answer is $4 + 3 + 11 = \boxed{018}$.
 
  
-
-
 
 
 
@@ -711,8 +629,6 @@ Without loss of generality, set $CB = 1$. Then, by the Angle Bisector Theorem on
  Our final answer is $4+3+11 = \boxed{018}$.
 
  
-
-
 
 
 
@@ -744,8 +660,6 @@ Without loss of generality, set $CB = 1$. Then, by the Angle Bisector Theorem on
 
 
 
-
-
 \textbf{Solution 4}
 
 (This solution avoids advanced trigonometry)
@@ -761,8 +675,6 @@ Without loss of generality, set $CB = 1$. Then, by the Angle Bisector Theorem on
  Thus $\tan \angle B = \frac{x}{\frac{11\sqrt{3}}{12}x}=\frac{4\sqrt{3}}{11}$, and our answer is $4+3+11=\boxed{018}$.
 
  
-
-
 
 
 
@@ -782,8 +694,6 @@ Without loss of generality, set $CB = 1$. Then, by the Angle Bisector Theorem on
 
 
 
-
-
 \textbf{Solution 6}
 
 Let $CB = 1$, and let the feet of the altitudes from $D$ and $E$ to $\overline{CB}$ be $D'$ and $E'$, respectively. Also, let $DE = 8k$ and $EB = 15k$. We see that $BD' = 15k\cos B$ and $BE' = 23k\cos B$ by right triangles $\triangle{BDD'}$ and $\triangle{BEE'}$. From this we have that $D'E' = 8k\cos B$. With the same triangles we have $DD' = 23k\sin B$ and $EE' = 15k\sin B$. From 30-60-90 triangles $\triangle{CDD'}$ and $\triangle{CEE'}$, we see that $CD' = \frac{23k\sqrt{3}\sin B}{3}$ and $CE' = 15k\sqrt{3}\sin B$, so $D'E' = \frac{22k\sqrt{3}\sin B}{3}$. From our two values of $D'E'$ we get:$8k\cos B = \frac{22k\sqrt{3}\sin B}{3}$
@@ -792,56 +702,7 @@ Let $CB = 1$, and let the feet of the altitudes from $D$ and $E$ to $\overline{C
 
  $\tan B = \frac{8}{\frac{22\sqrt{3}}{3}} = \frac{24}{22\sqrt{3}} = \frac{8\sqrt{3}}{22} = \frac{4\sqrt{3}}{11}$Our answer is then $4+3+11 = \boxed{018}$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/352}{https://artofproblemsolving.com/videos/amc/2012aimei/352}
-
  
-
-
-
-
-
-\textbf{Solution 7}
-
-WLOG, let $DE=8$ and $BE=15$. First, by the Law of Sines on $\triangle CEB$, we find that 
- \[\frac{\sin\angle B}{CE}=\frac{\sin\angle ECB}{BE}=\frac{1}{30}\implies \sin\angle B=\frac{CE}{30}.\]Now, we will find $CE$. Consider the following diagram:
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2012_12_Solution_Figure_2.png}
-                    \end{figure}
-                     We have constructed equilateral triangle $\triangle BDP$, and its circumcircle. Since $\angle DCB=\angle DPB=60^\circ$, $C$ lies on $(BDP)$ as well. Let $Q$ be the point diametrically opposite $P$ on $(BCD)$, and let $R$ be the foot of $Q$ on $BD$ (this is the midpoint of $BD$). It is easy to compute that $RQ=\frac{23}{2\sqrt3}$ and $ER=\frac{23}{2}-8=\frac{7}{2}$. Therefore, by the Pythagorean Theorem, $EQ=\frac{13}{\sqrt{3}}$. Now, by Power of a Point, we know that $(DE)(BE)=(EQ)(EC)$, which means that
- \[120=\frac{13EC}{\sqrt{3}}\implies EC=\frac{120\sqrt{3}}{13}.\]From before, we know that $\sin\angle B=\frac{EC}{30}\implies \sin\angle B=\frac{4\sqrt3}{13}$. It's now easy to compute $\cos\angle B$ as well using the Pythagorean identity; we find that $\cos\angle B=\frac{11}{13}$, and thus $\tan\angle B=\frac{4\sqrt3}{11}$ for an answer of $\boxed{018}$.-brainiacmaniac31
-
- 
-
-
-
-
-
-\textbf{Solution 8}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2012_12_Solution_Figure_3.png}
-                    \end{figure}
-                    \textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
-
-\textbf{Solution 9}
-
-WLOG, let $DE=8$ and $EB=15$. (this will be redefined later)Define points $A'$, $D'$, $E'$, and $B'$ such that $A'$ is on $AC$, $B'$ is on $CB$ and $D'$ and $E'$ are the intersections of $A'B'$ with $CD$ and $CE$, with $CD' = CE' = 1$, respectively. From cross ratios, we have:\begin {align*}\frac{(AE)(DB)}{(AB)(DE)} &= \frac{(A'E')(D'B')}{(A'B')(D'E')} \\\frac{(AD+8)(23)}{(AD+23)(8)} & =  \frac{(\cos(15)+\sin(15))\textasciicircum{}2}{(2 \cos(15))(2 \sin(15))} \\& \implies AD = 92/11\end {align*}For simplicity, scale everything by $11$, so $AD=92$, $DE=88$ and $EB = 165$.From the ratio lemma, we have:\begin {align*}\frac{AC}{CB} &= \frac{AD \sin{\angle BCD}}{DB \sin{\angle ACD}} \\\tan B &= \frac{92 \cdot \sqrt{3}/2}{253 \cdot 1/2} \\\tan B &= \frac{4 \sqrt{3}}{2}\\&\implies \boxed{018}.\end{align*}
-~ boxtheanswer
-
- 
-
-
 
 
 	\item (\textit{AIME I 2012}) Three concentric circles have radii $3,$ $4,$ and $5.$ An equilateral triangle with one vertex on each circle has side length $s.$ The largest possible area of the triangle can be written as $a + \frac{b}{c} \sqrt{d},$ where $a,$ $b,$ $c,$ and $d$ are positive integers, $b$ and $c$ are relatively prime, and $d$ is not divisible by the square of any prime. Find $a+b+c+d.$
@@ -861,7 +722,9 @@ Reinterpret the problem in the following manner. Equilateral triangle $ABC$ has 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2012_13_Solution_Figure_1.png}
                     \end{figure}
-                    Note that angle $XAX'$ is $60$ and $XA = X'A = 5$ which tells us that triangle $XAX'$ is equilateral and that $XX' = 5.$ We now notice that $XC = 3$ and $X'C = 4$ (recall that $C$ is the image of $B$ after rotation) which tells us that angle $XCX'$ is $90$ because there is a $3$-$4$-$5$ Pythagorean triple. Now note that $\angle ABC + \angle ACB = 120^\circ$ and $\angle XCA + \angle XBA = 90^\circ,$ so $\angle XCB+\angle XBC = 30^\circ$ and $\angle BXC = 150^\circ.$ Applying the law of cosines on triangle $BXC$ yields
+                    
+
+ Note that angle $XAX'$ is $60$ and $XA = X'A = 5$ which tells us that triangle $XAX'$ is equilateral and that $XX' = 5.$ We now notice that $XC = 3$ and $X'C = 4$ (recall that $C$ is the image of $B$ after rotation) which tells us that angle $XCX'$ is $90$ because there is a $3$-$4$-$5$ Pythagorean triple. Now note that $\angle ABC + \angle ACB = 120^\circ$ and $\angle XCA + \angle XBA = 90^\circ,$ so $\angle XCB+\angle XBC = 30^\circ$ and $\angle BXC = 150^\circ.$ Applying the law of cosines on triangle $BXC$ yields
 
  
  \[BC^2 = BX^2+CX^2 - 2 \cdot BX \cdot CX \cdot \cos150^\circ = 4^2+3^2-24 \cdot \frac{-\sqrt{3}}{2} = 25+12\sqrt{3}\]
@@ -872,8 +735,6 @@ Reinterpret the problem in the following manner. Equilateral triangle $ABC$ has 
  so our final answer is $3+4+25+9 = \boxed{041}.$
 
  
-
-
 
 
 
@@ -894,8 +755,6 @@ Here is a proof that shows that there are 2 distinct equilateral triangles (up t
 
 
 
-
-
 \textbf{Solution 3}
 
 
@@ -903,15 +762,15 @@ Here is a proof that shows that there are 2 distinct equilateral triangles (up t
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2012_13_Solution_Figure_2.png}
                     \end{figure}
-                    Let's call the circle center $X$. It has a distance of 3, 4, 5 to an equilateral triangle $LMN$. Consider $X$’s pedal triangle $ABC$. Since $X$’s antipedal triangle is equilateral, $X$ must be the one of the isogonic centers of $\triangle{ABC}$. We’ll take the one inside $ABC$, i.e., the Fermat point, because it leads to larger $\triangle LMN$. Now we construct the three equilateral triangles $ABD$, $ACE$, and $BCF$, the same way the Fermat point is constructed. Then we have $\angle DXE = \angle EXF = \angle FXE = 120$. Since $AEMCX$ is concyclic with $XM$=4 as diameter, we have $AC=4\sin(60)$. Similarly, $AB=3\sin(60)$, and $BC=5\sin(60)$. So $\triangle ABC$ is a 3-4-5 right triangle with $\angle BAC=90$. With some more angle chasing we get 
+                    
+
+ Let's call the circle center $X$. It has a distance of 3, 4, 5 to an equilateral triangle $LMN$. Consider $X$’s pedal triangle $ABC$. Since $X$’s antipedal triangle is equilateral, $X$ must be the one of the isogonic centers of $\triangle{ABC}$. We’ll take the one inside $ABC$, i.e., the Fermat point, because it leads to larger $\triangle LMN$. Now we construct the three equilateral triangles $ABD$, $ACE$, and $BCF$, the same way the Fermat point is constructed. Then we have $\angle DXE = \angle EXF = \angle FXE = 120$. Since $AEMCX$ is concyclic with $XM$=4 as diameter, we have $AC=4\sin(60)$. Similarly, $AB=3\sin(60)$, and $BC=5\sin(60)$. So $\triangle ABC$ is a 3-4-5 right triangle with $\angle BAC=90$. With some more angle chasing we get 
  \[\angle MXC+\angle LXB = \angle MAC + \angle LAB = 180 – \angle BAC = 90\]
  \[\angle LXM = 360 – (\angle MXC + \angle LXB + \angle BXC) = 360 –(90+120)=150\]By Law of Cosines, we have 
  \[LM^2 = 3^2+4^2-2*3*4\cos(150)=25+12\sqrt 3\]And the area follows.
  \[[LMN] = \frac{25}{4}\sqrt{3} + 9; \boxed{041}.\] By Mathdummy
 
  
-
-
 
 
 
@@ -926,8 +785,6 @@ Let $ABC$ be the equilateral triangle with $AB=BC=CA=x.$ Assume the coordinates 
  -JZ
 
  
-
-
 
 
 
@@ -950,8 +807,6 @@ Let $ABC$ be the equilateral triangle with $AB=BC=CA=x.$ Assume the coordinates 
 
 
 
-
-
 \textbf{Solution 6 (fastest)}
 
 We note that this question is equivalent to finding the area of an equilateral triangle $ABC$ where there exists a point $P$ inside the triangle where $PA = 3$, $PB=4$, $PC=5$. Now, we reflect $P$ across $AB$, $BC$, and $CA$, call these points $D$, $E$, and $F$, respectively. It is obvious that hexagon $[ADBECF] = 2[ABC]$, so we try to find the area of this hexagon. Note that angle $DAF$ is equal to the sum of angles $DAP$ and $PAF$, which are equal to $2\angle{BAP}$ and $2\angle{PAC}$, respectively. Because $\angle{BAP} + \angle{PAC} = 60$, we have that $\angle{DAF} = 120$. By similar reasoning, we know $\angle{DAF} = \angle{EBD} = \angle{FCE} = 120$. Now, split this hexagon into 4 triangles, $DAF$, $EBD$, $FCE$, and $DEF$. It is easy to see that $DAF$, $EBD$, $FCE$ are 30-30-120 triangles with areas $\dfrac{9\sqrt{3}}{4}$, $4\sqrt{3}$, and $\dfrac{25\sqrt{3}}{4}$, respectively. We note that $DEF$ is a 3-4-5 right triangle, with side lengths $3\sqrt{3}$, $4\sqrt{3}$, and $5\sqrt{3}$, meaning that $DEF$ has area $18$.
@@ -961,8 +816,6 @@ We note that this question is equivalent to finding the area of an equilateral t
  Thus, $[ABC] = 9+\dfrac{25\sqrt{3}}{4}$, $9+25+3+4 = \boxed{41}$
 
  
-
-
 
 
 
@@ -985,11 +838,7 @@ Label the center of the circles $X$, and proceed with Solution 1 until out of th
  
  \[\frac{s^2\sqrt{3}}{4} = \frac{\sqrt{3}}{4}(25 + 12\sqrt{3}) = 9 + \frac{25\sqrt{3}}{4}, \Longrightarrow 9+25+3+4 = \boxed{041}.\]
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/353}{https://artofproblemsolving.com/videos/amc/2012aimei/353}
-
  
-
-
 
 
 	\item (\textit{AIME I 2012}) Complex numbers $a,$ $b,$ and $c$ are zeros of a polynomial $P(z) = z^3 + qz + r,$ and $|a|^2 + |b|^2 + |c|^2 = 250.$ The points corresponding to $a,$ $b,$ and $c$ in the complex plane are the vertices of a right triangle with hypotenuse $h.$ Find $h^2.$
@@ -1008,8 +857,6 @@ By Vieta's formula, the sum of the roots is equal to 0, or $a+b+c=0$. Therefore,
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that by vieta's, the sum of the roots is $0,$ so the centroid (at (a+b+c)/3) of the right triangle is at the origin. This is all that is required by the structure of the polynomial. Let $A,B,C$ be the vertices of the triangle corresponding to roots $a,b,c$ with (WLOG) $\angle ACB=0.$ Let $O$ be the centroid of the triangle, and let $Z$ be the midpoint of $AB.$ By the property of the centroid as the intersection of the medians, $C,O,$ and $Z$ are collinear in that order. Also, by properties of medians and right triangles $AZ=BZ=CZ$ and $OC=2ZO.$ Then, set $AZ=BZ=CZ=3k$ and $OZ=k$ and $CO=2k.$ Stewart's theorem on ACZ and BCZ and rearranging gets
@@ -1024,8 +871,6 @@ Note that by vieta's, the sum of the roots is $0,$ so the centroid (at (a+b+c)/3
 
 
 
-
-
 \textbf{Solution 3}
 
 Assume $q$ and $r$ are real, so at least one of $a,$ $b,$ and $c$ must be real, with the remaining roots being pairs of complex conjugates. Without loss of generality, we assume $a$ is real and $b$ and $c$ are $x + yi$ and $x - yi$ respectively. By symmetry, the triangle described by $a,$ $b,$ and $c$ must be isosceles and is thus an isosceles right triangle with hypotenuse $\overline{bc}.$ Now since $P(z)$ has no $z^2$ term, we must have $a+b+c = a + (x + yi) + (x - yi) = 0$ and thus $a = -2x.$ Also, since the length of the altitude from the right angle of an isosceles triangle is half the length of the hypotenuse, $a-x=y$ and thus $y=-3x.$ We can then solve for $x$:
@@ -1037,8 +882,6 @@ Assume $q$ and $r$ are real, so at least one of $a,$ $b,$ and $c$ must be real, 
  Now $h$ is the distance between $b$ and $c,$ so $h = 2y = -6x$ and thus $h^2 = 36x^2 = 36 \cdot \frac{250}{24} = \boxed{375.}$
 
  
-
-
 
 
 
@@ -1094,8 +937,6 @@ Let the roots $a$, $b$, and $c$ each be represented by complex numbers $m + ni$,
 
 
 
-
-
 \textbf{Solution 5 (clean)}
 
 As noted in the previous solutions, $a+b+c = 0$.Let $a = a_1+a_2 i$, $b = b_1+b_2 i$, $c = c_1+c_2 i$ and we have $a_1 + b_1 + c_1 = a_2 + b_2 + c_2 = 0$. Then the given $|a|^2 + |b|^2 + |c|^2 = 250$ translates to $\sum_{} ( {a_1}^2 + {a_2}^2 ) = 250.$Note that in a right triangle, the sum of the squares of the three sides is equal to two times the square of the hypotenuse, by the pythagorean theorem.Thus, we have 
@@ -1105,8 +946,6 @@ As noted in the previous solutions, $a+b+c = 0$.Let $a = a_1+a_2 i$, $b = b_1+b_
  \[= 500 - (0^2 + 0^2 - 250)\]so $h^2 = \boxed{375}$ and we may conclude.~ rzlng
 
  
-
-
 
 
 
@@ -1130,8 +969,6 @@ First, note that the roots of this cubic will be $a, b$ and $-(a+b)$ due to Viet
  - in this specific problem this logic is incorrect, as the coefficients of the polynomial can be complex. If a question specified real roots, then this would be appropriate. In this case, it is just wishful thinking as stated above
 
  
-
-
 
 
 
@@ -1181,9 +1018,7 @@ As shown in the other solutions, $a+b+c = 0$.
 
 
 
-
-
-\textbf{Solution 6(similar to solution 4)}
+\textbf{Solution 6 (similar to solution 4)}
 
 Note that the roots of the polynomial $(a,b,c)$ must sum to $0$ due to the $z^2$ coefficient equaling $0$ because of Vieta's Formulas. This tells us that $a+b+c = 0$ and $\overline{a} + \overline{b} + \overline{c} = 0$ so $(a+b+c)(\overline{a+b+c}) = |a|^2 + |b|^2 + |c|^2 + a\overline{b} + \overline{a}b + b\overline{c} + \overline{b}c + c\overline{a} + \overline{c}a = 250 + a\overline{b} + \overline{a}b + b\overline{c} + \overline{b}c + c\overline{a} + \overline{c}a =  0$ so $a\overline{b} + \overline{a}b + b\overline{c} + \overline{b}c + c\overline{a} + \overline{c}a = -250.$
 
@@ -1194,11 +1029,20 @@ Note that the roots of the polynomial $(a,b,c)$ must sum to $0$ due to the $z^2$
 
  As a result we know that $h^2 = \boxed{375}$~SailS
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/354}{https://artofproblemsolving.com/videos/amc/2012aimei/354}
-
  
 
 
+
+\textbf{Solution 7}
+
+By Vieta's formula, $a+b+c=0$. Let $a=x_1+y_1i,b=x_2+y_2i,c=x_3+y_3i$. Adding and equating the real part and the imaginary part with $0$, we have\begin{gather*}x_1+x_2+x_3=0 \tag{1}\\y_1+y_2+y_3=0 \tag{2}\end{gather*}It is given that $x_1^2+x_2^2+x_3^2+y_1^2+y_2^2+y_2^2=250$. By symmetry, we can construct the right triangle $\triangle ABC$, which satisfies $\angle B=90^\circ$, with the following coordinates:\begin{align*}A&=(x_1,y_1)\\B&=(x_2,y_2)\\C&=(x_3,y_3)\end{align*}
+We have established $\overline{AB}\perp \overline{BC}$, which means the dot product of vectors $\vec{u}=(x_2-x_1, y_2-y_1)$ and $\vec{v}=(x_3-x_2, y_3-y_2)$ evaluates to $0$:\begin{gather*}(x_2-x_1)(x_3-x_2)+(y_2-y_1)(y_3-y_2)=0\\x_1x_2+x_2x_3-x_2^2+x_1x_3+y_1y_2+y_2y_3-y_2^2+y_1y_3=0\\\end{gather*}Simplifying with $x_1+x_3=-x_2$ and $y_1+y_3=-y_2$, the above equation is equivalent to\begin{gather*}2(x^2+y^2)=-(x_1x_3+y_1y_3) \tag{3}\end{gather*}Squaring $(1)$ and $(2)$ and adding, we have
+ \[x_1^2+x_2^2+x_3^2+y_1^2+y_2^2+y_2^2+2(x_1x_2+x_2x_3+x_3x_1+y_1y_2+y_2y_3+y_3y_1)=0\]Or
+ \[250-2(x_2^2+y_2^2)+2(x_3x_1+y_3y_1)=0\]Substituting $(3)$ gives $x_2^2+y_2^2=\frac{125}{3}$.
+
+ Solving for $AC^2$, we see that $h^2=(x_3-x_1)^2+(y_3-y_1)^2=250+3(x_2^2+y_2^2)=\boxed{375}$.
+
+ 
 
 
 	\item (\textit{AIME I 2012}) There are $n$ mathematicians seated around a circular table with $n$ seats numbered $1,$ $2,$ $3,$ $...,$ $n$ in clockwise order. After a break they again sit around the table. The mathematicians note that there is a positive integer $a$ such that
@@ -1229,11 +1073,33 @@ It is a well-known fact that the set $0, a, 2a, ... (n-1)a$ forms a complete set
  
 Note: another way to find that $(a-1)$ and $(a+1)$ have to be relative prime to $n$ is the following: start with $ap-aq \not \equiv \pm(p-q) \pmod n$. Then, we can divide by $p-q$ to get $a \not \equiv \pm 1$ modulo $\frac{n}{\gcd(n, p-q)}$. Since $\gcd(n, p-q)$ ranges through all the divisors of $n$, we get that $a \not \equiv \pm 1$ modulo the divisors of $n$ or $\gcd(a-1, n) = \gcd(a+1, n) = 1$.
 
- \href{https://artofproblemsolving.com/videos/amc/2012aimei/355}{https://artofproblemsolving.com/videos/amc/2012aimei/355}
-
  
 
 
+
+\textbf{Solution 2}
+
+We see that $\gcd(a, n)=1$. Let $f(x)=ax\bmod{n}$ detote the seat number after the break.The second condition implies that for $b,c\in\{1,2,\ldots, n\}, b\neq c$, we have\begin{align*}\lvert b-c\rvert -1 &\neq \lvert f(b)-f(c)\rvert -1\\\lvert b-c\rvert -1 &\neq n- \lvert f(b)-f(c)\rvert -1\\n-\lvert b-c\rvert -1 &\neq n- \lvert f(b)-f(c)\rvert -1\\n-\lvert b-c\rvert -1 &\neq n- \lvert f(b)-f(c)\rvert -1\end{align*}
+Or\begin{gather}\lvert b-c\rvert \neq \lvert a(b-c)\bmod{n}\rvert\\\lvert b-c\rvert \neq n - \lvert a(b-c)\bmod{n}\rvert\\\end{gather}WLOG let $u = (b-c)\in\{1,2,\ldots n-1\}$.
+
+ \textbf{Case 1: }$\gcd{(u,n)}=1$
+
+ The integers $a$ that violates the equations above satisfy the following:
+ \[a\equiv 1, -1\bmod{n}\]
+
+ \textbf{Case 2: }$\gcd{(u,n)}=d>1$
+
+ Let $u=d\cdot t_1, n=d\cdot t_2, \gcd(t_1,t_2)=1$. The undesired $a$ satisfy\begin{align*}d\cdot t_1=ad\cdot t_1\bmod{d\cdot t_2}\\d\cdot t_1=d\, (at_1\bmod{t_2})\\0=(a-1)t_1\bmod{t_2}\end{align*}
+This means $a\equiv 1\bmod{t_2}$. Similarly, we obtain $a\equiv -1\bmod{t_2}$ from $(2)$.
+
+ Let $d_i\ge 2$ be a positive divisor of $n$. We want the number of valid $n$ such that there exists an integer $a$ satisfying
+ \[a\not\equiv -1, 0, 1 \pmod{d_i}\]Clearly no such $a$ exists when $2\mid n$ or $3\mid n$. Otherwise, the system\begin{align*}a&\equiv 2,3,\ldots d_1 -2\bmod{d_1}\\a&\equiv 2,3,\ldots d_2 -2\bmod{d_2}\\&\ldots\\a&\equiv 2,3,\ldots d_k -2\bmod{d_k}\\\end{align*}
+guarantees a solution for $a$ modulo $n$ residue that is relatively prime with $n$, such as $a=2$. 
+
+ Counting the integers $n\in\{2,3,\ldots 999\}$ that are divisible by neither $2$ nor $3$, we have
+ \[998-499-333+166=\boxed{332}\]
+
+ 
 
 
 \end{enumerate}

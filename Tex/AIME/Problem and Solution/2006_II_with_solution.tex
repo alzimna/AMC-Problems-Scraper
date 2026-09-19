@@ -35,8 +35,6 @@ Let the side length be called $x$, so $x=AB=BC=CD=DE=EF=AF$.
 
 
 
-
-
 \textbf{Solution 2}
 
 Because $\angle B$, $\angle C$, $\angle E$, and $\angle F$ are congruent, the degree-measure of each of them is ${{720-2\cdot90}\over4}= 135$. Lines $BF$ and $CE$ divide the hexagonal region into two right triangles and a rectangle. Let $AB=x$. Then $BF=x\sqrt2$. Thus
@@ -54,15 +52,11 @@ so $x^2=2116$, and $x=\boxed{046}$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Extend lines $AB$ and $CD$ to intersect at $G$ and $AF$ and $DE$ to intersect at $H$. Angles $B$, $C$, $E$, and $F$ are 135 degrees, so minor angles $B$, $C$, $E$, $F$ apart of triangles $G$ and $H$ respectively are 45 degrees. Let $GB = GC = HE = HF = a$, so we have that $AB = BC = \dots = FA = a\sqrt{2}$. The two side lengths of quadrilateral $AGDH$ are equal and the measure in degrees of all figures are 90, so the quadrilateral $AGDH$ is a square. It follows that the side length of this square is $a + a\sqrt{2} = a(\sqrt{2}+1)$, and the area of this figure is $(a(\sqrt{2}+1))^2$. The area of the hexagon is then $(a(\sqrt{2}+1))^2 - a^2$, so we have $a^2((\sqrt{2}+1)^2 - 1) = 2116(\sqrt{2}+1)$, so we have $2a^2(\sqrt{2}+1) = 2116(\sqrt{2}+1)$, then $\sqrt{2}a = 46$, so $a = \frac{46}{\sqrt{2}}$. The side length is $a\sqrt{2}$, so the answer is $\frac{46}{\sqrt{2}} \cdot \sqrt{2} = \boxed{046}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) The lengths of the sides of a triangle with positive area are $\log_{10} 12$, $\log_{10} 75$, and $\log_{10} n$, where $n$ is a positive integer. Find the number of possible values for $n$.
@@ -77,7 +71,7 @@ Extend lines $AB$ and $CD$ to intersect at $G$ and $AF$ and $DE$ to intersect at
 
 By the \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle\_Inequality}{Triangle Inequality} and applying the well-known logarithmic property $\log_{c} a + \log_{c} b = \log_{c} ab$, we have that
 
- $\log_{10} 12 + \log_{10} n > \log_{10} 75$
+ <div style="text-align:center;">$\log_{10} 12 + \log_{10} n > \log_{10} 75$
 
  $\log_{10} 12n > \log_{10} 75$
 
@@ -85,15 +79,15 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle\_Ineq
 
  $n > \frac{75}{12} = \frac{25}{4} = 6.25$
 
- Also, 
+ </div>Also, 
 
- $\log_{10} 12 + \log_{10} 75 > \log_{10} n$
+ <div style="text-align:center;">$\log_{10} 12 + \log_{10} 75 > \log_{10} n$
 
  $\log_{10} 12\cdot75 > \log_{10} n$
 
  $n < 900$ 
 
- Combining these two inequalities: 
+ </div>Combining these two inequalities: 
 
  
  \[6.25 < n < 900\]
@@ -104,15 +98,11 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle\_Ineq
 
 
 
-
-
 \textbf{Solution 1 Clarified}
 
 Triangle Inequality on the upper bound of $n$ yields $n < 900$, which is when $\log(n) > \log(75), \log(12)$, say case 1. For the lower bound, we have that $\log(12) < \log(75)$ so case 2 is when $\log(75)$ is the longest side, hence $n > 6.25$. Otherwise, we cannot have $n > \frac{12}{75}$ as the lower bound because $\log(12)$ can never be the longest side of a triangle with another side $\log(75)$. Hence we continue by counting integral values $n \in [7,899]$ which is $\boxed{893}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) Let $P$ be the product of the first 100 positive odd integers. Find the largest integer $k$ such that $P$ is divisible by $3^k$.
@@ -150,8 +140,6 @@ Note that the product of the first $100$ positive odd integers can be written as
 
 
 
-
-
 \textbf{Solution 2}
 
 We count the multiples of $3^k$ below 200 and subtract the count of multiples of $2\cdot 3^k$:
@@ -161,8 +149,6 @@ We count the multiples of $3^k$ below 200 and subtract the count of multiples of
  \[= 66 - 33 + 22 - 11 + 7 - 3 + 2 - 1 = 49.\]
 
  
-
-
 
 
 
@@ -190,8 +176,6 @@ We can use a modified version of Legendre's Formula. First, we count the number 
 
 
 
-
-
 \textbf{Solution 4}
 
 We are obviously searching for multiples of three set S of odd numbers 1-199. Starting with 3, every number $\equiv 2 \pmod{3}$ in set S will be divisible by 3. In other words, every number $\equiv 3 \pmod{6}$. This is because the LCM must be divisible by 3, and 2, because the set is comprised of only odd numbers. Using some simple math, there are 33 numbers that fit this description. All you have to do is find the largest odd number that is divisible by 3 and below 200, then add 3 and divide by 6. Next, we find the number of odd digits below 200 that are divisible by 9. The same strategy works, and gives us 11. 27 gives 3, and 81 gives 1. $33 + 11 + 4 + 1 = \boxed{49}$.
@@ -203,8 +187,6 @@ We are obviously searching for multiples of three set S of odd numbers 1-199. St
 
 
 
-
-
 \textbf{Solution 5 (simpler solution 4)}
 
 Consider all integers from 1 - 200. Because $3 \ \not | \ 200$, we just count number of integers from 1 - 200 divisble by 3. Half of those would be even, so we divide by 2, and we have the odd numbers with at least one power of 3. Between all odd numbers 1 - 200, we have 33 factors of 3. From 1 - 200, we have 11 factors of 9. From 1 - 200, we have 4 powers of 27 (found as $200 \pmod{27} = 11 < 13 \pmod{27}$), and 1 power of 81. So, the count total is $33 + 11 + 4 + 1 = \boxed{049}$.
@@ -212,12 +194,12 @@ Consider all integers from 1 - 200. Because $3 \ \not | \ 200$, we just count nu
  
 
 
-
-
 	\item (\textit{AIME II 2006}) Let $(a_1,a_2,a_3,\ldots,a_{12})$ be a permutation of $(1,2,3,\ldots,12)$ for which
 
 
- $a_1>a_2>a_3>a_4>a_5>a_6 \mathrm{\  and \ } a_6<a_7<a_8<a_9<a_{10}<a_{11}<a_{12}.$An example of such a permutation is $(6,5,4,3,2,1,7,8,9,10,11,12).$ Find the number of such permutations.
+ $a_1>a_2>a_3>a_4>a_5>a_6 \mathrm{\  and \ } a_6<a_7<a_8<a_9<a_{10}<a_{11}<a_{12}.$
+
+ An example of such a permutation is $(6,5,4,3,2,1,7,8,9,10,11,12).$ Find the number of such permutations.
 
 
  
@@ -233,15 +215,11 @@ Clearly, $a_6=1$.  Now, consider selecting $5$ of the remaining $11$ values.  So
 
 
 
-
-
 \textbf{Solution 2}
 
 There are $\binom{12}{6}$ ways to choose 6 numbers from $(1,2,3,\ldots,12)$, and then there will only be one way to order them. And since that $a_6<a_7$, only half of the choices will work, so the answer is $\frac{\binom{12}{6}}{2}=462$ 12-tuples - mathleticguyyyI’maSTAY
 
  
-
-
 
 
 
@@ -265,8 +243,6 @@ Case 2: $a_{12} = 12$
 -jackshi2006
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) When rolling a certain unfair six-sided die with faces numbered $1, 2, 3, 4, 5$, and $6$, the probability of obtaining face $F$ is greater than $\frac{1}{6}$, the probability of obtaining the face opposite is less than $\frac{1}{6}$, the probability of obtaining any one of the other four faces is $\frac{1}{6}$, and the sum of the numbers on opposite faces is 7. When two such dice are rolled, the probability of obtaining a sum of 7 is $\frac{47}{288}$. Given that the probability of obtaining face $F$  is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
@@ -307,8 +283,6 @@ We know that $A(6)>\frac{1}{6}$, so it can't be $\frac{1}{8}$. Therefore, the pr
 
 
 
-
-
 \textbf{Solution 2}
 
 We have that the cube probabilities to land on its faces are $\frac{1}{6}$, $\frac{1}{6}$, $\frac{1}{6}$, $\frac{1}{6}$ ,$\frac{1}{6}+x$ ,$\frac{1}{6}-x$we also know that the sum could be 7 only when the faces in each of the two tosses are opposite hence the probability to get a 7 is:
@@ -317,8 +291,6 @@ We have that the cube probabilities to land on its faces are $\frac{1}{6}$, $\fr
  \[\frac{1}{16}=36x^2 \longrightarrow x=\frac{1}{24}\]so the probability F  which is greater than $\frac{1}{6}$ is equal $\frac{1}{6}+\frac{1}{24}=\frac{5}{24}\longrightarrow 24+5=\boxed{29}$
 
  
-
-
 
 
 
@@ -334,8 +306,6 @@ Let $p(a,b)$ denote the probability of obtaining $a$ on the first die and $b$ on
  Then $2x^2=1/288$, and so $x=1/24$. The probability of obtaining face $F$ is therefore $(1/6)+(1/24)=5/24$, and $m+n=\boxed{29}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) Square $ABCD$ has sides of length 1. Points $E$ and $F$ are on $\overline{BC}$ and $\overline{CD},$ respectively, so that $\triangle AEF$ is equilateral. A square with vertex $B$ has sides that are parallel to those of $ABCD$ and a vertex on $\overline{AE}.$ The length of a side of this smaller square is $\frac{a-\sqrt{b}}{c},$ where $a, b,$ and $c$ are positive integers and $b$ is not divisible by the square of any prime. Find $a+b+c.$
@@ -363,8 +333,6 @@ Let $p(a,b)$ denote the probability of obtaining $a$ on the first die and $b$ on
 
 
 
-
-
 \textbf{Solution 2}
 
 Since $\triangle AFE$ is equilateral, $\overline{AE} = \overline{AF}$. It follows that $\overline{FC} = \overline{EC}$. Let $\overline{FC} = x$. Then, $\overline{EF} = x\sqrt{2}$ and $\overline{DF} = 1-x$.
@@ -389,8 +357,6 @@ Since $\triangle AFE$ is equilateral, $\overline{AE} = \overline{AF}$. It follow
 
 
 
-
-
 \textbf{Solution 3}
 
 Suppose $\overline{AB} = \overline{AD} = x.$ Note that $\angle EAF = 60$ since the triangle is equilateral, and by symmetry, $\angle BAE = \angle DAF = 15.$ Note that if $\overline{AD} = x$ and $\angle BAE = 15$, then $\overline{AA'}=\frac{x}{\tan(15)}.$ Also note that 
@@ -400,8 +366,6 @@ Suppose $\overline{AB} = \overline{AD} = x.$ Note that $\angle EAF = 60$ since t
  \textbf{Elegant Solution} Why not solve in terms of the side $x$ only (single-variable beauty)? By similar triangles we obtain that $BE=\frac{x}{1-x}$, therefore $CE=\frac{1-2x}{1-x}$. Then $AE=\sqrt{2}*\frac{1-2x}{1-x}$. Using Pythagorean Theorem on $\triangle{ABE}$ yields $\frac{x^2}{(1-x)^2} + 1 = 2 * \frac{(1-2x)^2}{(1-x)^2}$. This means $6x^2-6x+1=0$, and it's clear we take the smaller root: $x=\frac{3-\sqrt{3}}{6}$. Answer: $\boxed{12}$.
 
  
-
-
 
 
 
@@ -418,8 +382,6 @@ Since $AEF$ is equilateral, $AE=EF$. Let $BE=x$. By the \href{https://artofprobl
 
 
 
-
-
 \textbf{Solution 6 (substitution)}
 
 The equilateral triangle formed is symmetric about the centre of the square. Therefore, $DF = BE = a$ and $FC = CE = b$, so we have $a+b = 1$ and $2b^2 = a^2 +1$. Solving, the only viable solution is $a = 2 -\sqrt{3}$ and $b = \sqrt{3} - 1$.
@@ -427,8 +389,6 @@ The equilateral triangle formed is symmetric about the centre of the square. The
  Now, let the side length of the second square be $p$ and the remaining side length that composes $a$ be $q$. Then, through similarity, we have $\frac{p}{1-p} = p+q$ and $p+q = 2 - \sqrt{3}$. Substituting, we have $p = (2-\sqrt{3})(1-p)$ and solving gives $p = \frac{3-\sqrt{3}}{6} \implies \boxed{012}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) Find the number of ordered pairs of positive integers $(a,b)$ such that $a+b=1000$ and neither $a$ nor $b$ has a zero digit.
@@ -449,21 +409,19 @@ There are $\left\lfloor\frac{999}{10}\right\rfloor = 99$ numbers up to 1000 that
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $a = \overline{cde}$ and $b = \overline{fgh}$ be 3 digit numbers:
 
  \begin{verbatim}
 cde+fgh----1000
-\end{verbatim}$e$ and $h$ must add up to $10$, $d$ and $g$ must add up to $9$, and $c$ and $f$ must add up to $9$. Since none of the digits can be 0, there are $9 \times 8 \times 8=576$ possibilites if both numbers are three digits.
+\end{verbatim}
+
+$e$ and $h$ must add up to $10$, $d$ and $g$ must add up to $9$, and $c$ and $f$ must add up to $9$. Since none of the digits can be 0, there are $9 \times 8 \times 8=576$ possibilites if both numbers are three digits.
 
  There are two other scenarios. $a$ and $b$ can be a three digit number and a two digit number, or a three digit number and a one digit number. For the first scenario, there are $9 \times 8 \times 2=144$ possibilities (the two accounting for whether $a$ or $b$ has three digits) and for the second case there are $9 \times 2=18$ possibilities. Thus, thus total possibilities for $(a,b)$ is $576+144+18=738$.
 
  
-
-
 
 
 
@@ -478,8 +436,6 @@ We first must notice that we can find all the possible values of $a$ between $1$
  Doubling this yields $369\times2= 738$.
 
  
-
-
 
 
 
@@ -504,8 +460,6 @@ We proceed by casework on the number of digits of $a.$
  Solution by Ilikeapos
 
  
-
-
 
 
 
@@ -536,8 +490,6 @@ For every $a \in [1, 999]$, $(a, 1000 - a)$ is a potential candidate for a solut
 
 
 
-
-
 \textbf{Solution 6 (Casework and Constructive Counting, similar to 4)}
 
 Analyze three digit $a$ and $b$ is forced three digits. It follows that the possible units digits would be $(1,9), (2,8), \dots, (9,1)$ which is 9 options total. Then, we carry a 1, so the possible tens digits would be $(1,8), (2,7), \dots, (8,1)$, which is 8 options. We again carry a 1, and the possible hundreds digits is the same as the possible tens digits, so another 8 cases. We have $9 \cdot 8 \cdot 8 = 576$ cases here.
@@ -547,8 +499,6 @@ Analyze three digit $a$ and $b$ is forced three digits. It follows that the poss
  Thus there are $576+144+18 = \boxed{738}$ ordered pairs.
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) There is an unlimited supply of congruent equilateral triangles made of colored paper. Each triangle is a solid color with the same color on both sides of the paper. A large equilateral triangle is constructed from four of these paper triangles. Two large triangles are considered distinguishable if it is not possible to place one on the other, using translations, rotations, and/or reflections, so that their corresponding small triangles are of the same color.
@@ -590,9 +540,103 @@ If two of our big equilateral triangles have the same color for their center tri
  
 Thus, in total we have $6\cdot(20 + 30 + 6) = \boxed{336}$ total possibilities.
 
- \textbf{} 
+ 
 
 
+
+\textbf{Solution 2 (Burnside's Lemma)}
+
+We apply \href{https://artofproblemsolving.com/wiki/index.php?title=Burnside\%27s\_Lemma}{Burnside's Lemma} and consider 3 rotations of 120 degrees, 240 degrees, and 0 degrees. We also consider three reflections from the three lines of symmetry in the triangle. Thus, we have to divide by $3+3=6$ for our final count. 
+
+ Case 1: 0 degree rotation. This is known as the identity rotation, and there are $6^4=1296$ choices because we don't have any restrictions.
+
+ Case 2: 120 degree rotation. Note that the three "outer" sides of the triangle have to be the same during this, and the middle one can be anything. We have $6*6=36$ choices from this. 
+
+ Case 3: 240 degree rotation. Similar to the 120 degree rotation, each must be the same except for the middle. We have $6*6=36$ choices from this.
+
+ Case 4: symmetry about lines. We multiply by 3 for these because the amount of colorings fixed under symmetry are the exact same each time. Two triangles do not change under this, and they must be the same. The other two triangles (1 middle and 1 outer) can be anything because they stay the same during the reflection. We have $6*6*6=216$ ways for one symmetry. There are 3 symmetries, so there are $216*3=648$ combinations in all.
+
+ 
+Now, we add our cases up: $1296+36+36+648=2016$. We have to divide by 6, so $2016/6=\boxed{336}$ distinguishable ways to color the triangle.
+
+ 
+
+
+
+\textbf{Solution 3 (stars and bars)}
+
+There are $6$ choices for the center triangle. Note that given any $3$ colors, there is a unique way to assign them to the corner triangles. We have $6$ different colors to choose from, so the number of ways to color the corner triangles is the same as the number of ways to arrange $6 - 1 = 5$ dividers and $3$ identical items. Therefore, our answer is 
+ \[6 \binom{5 + 3}{3} = 6\binom{8}{3} = \boxed{336}.\]
+
+ -MP8148
+
+ Explanation of the bijection by WIlliamgolly:Let 1,2,3,4,5,6 be the colors, and WLOG assume that the middle triangle has a color of 6.  Now, the color bijection can be formed as follows: Pick the colors to the immediate right of a divider.  If there is no color to the immediate right of a divider, then that color is 6.  
+
+ For example, ||12345| would represent the colors 1,1,6 as the colors chosen. Note for any three colors, there is only one way to fix it on the triangle, thus forming our stars and bars bijection.
+
+ 
+
+
+
+\textbf{Solution 4 (Brute Force Casework)}
+
+If there is one color in total: there are $6$ ways.
+
+ 
+If there are two colors in total:
+
+ 
+Subcase 1: one color occupies 1 triangle and the other occupies 3 triangles:
+
+ 
+Subsubcase 1: One color occupies the center triangle and the other occupies the three outer triangles: $6\cdot5=30$ ways.
+
+ Subsubcase 2: One color occupies a corner triangle and the other occupies the three other triangles: $6\cdot5=30$ ways.
+
+ 
+Subcase 2: one color occupies 2 triangles and the other also occupies 2 triangles: this means one color must occupy the center and one outer triangle, the other color must occupy two outer triangles: $6\cdot5=30$ ways.
+
+ 
+If there are three colors in total:
+
+ Subcase 1: one color occupies the center triangle, another occupies an outer triangle, the last color occupies the remaining two outer triangles: $6\cdot5\cdot4=120$ ways.
+
+ Subcase 2: one color occupies an outer triangle, another occupies an outer triangle, the last color occupies the center triangle and the remaining outer triangle: $6\cdot10=60$ ways.
+
+ 
+If there are four colors in total:
+
+ Choose a color for the center triangle and choose three distinct colors from the five remaining colors to fill the three outer triangles: $6\binom{5}{3}=60$ ways. 
+
+ 
+Add the total number of ways from each case for the answer: $6+90+180+60=\boxed{336}$
+
+ -unhappyfarmer
+
+ 
+
+
+
+\textbf{Solution 5 (Burnsides for Beginners)}
+
+Consider any coloring of a triangle. Inclusive rotations and reflections, we have 3 cases obtained per one case for rotations, and 3 cases obtained per one case for reflections. So, we divide all possible orderings by 6 possible rotations and reflections. These are called \textbf{orbits}, like the pack of gum.
+
+ Consider specific cases of partial (meaning not 360 degrees) rotations. We have a rotation by 0 degrees, called the identity case, which has 1296 possible colorings. We have a 120 degree rotation, called the cycle case (1). In this 120 degree rotation, we preserve the center of the grid, call it $D$, and swap the corners, say $A, B, C$. So, our cycle looks like $(ABC)(D)$. Here, parentheses are nothing to be scared of. That just defines "cyclic". For each of $A,B,C$, we have 6 cases, and for $D$, we have 6 cases. Therefore, we have 36 cases total. Now, considering 240 degrees, that again is the same as 120 degrees! So, another 36 cases arise.
+
+ Great! We have counted out our cyclic cases per ROTATION. Now, we must consider reflections. On the figure, we have three \textbf{lines of symmetry}, meaning we have 3 cases for reflection. When we reflect the figure, we swap two of the corner pieces while maintaining the third corner piece and the centre. That means, our cycle structure looks like $(AB)(C)(D)$. There are 6 choices for each of the three, which is 216 choices total. (remember, because we account for BOTH rotations and reflections here, we can assume that this case will equal one of the previous rotating cases, as we divide by the orbits!) So, we have $3 \cdot 216$ total cases.
+
+ All in all, we have 
+
+ 
+ \[\frac1{6}\Big(\underbrace{1296}_{0^\circ} +\underbrace{36}_{120^\circ} +\underbrace{36}_{240^\circ} +\underbrace{216+216+216}_{\text{3 reflections}}\Big)\]
+
+ which we can quickly evaluate to $\boxed{336}$. 
+
+ For the case of this big triangle, the number of rotations and reflections upon this triangle is denoted as $D_3$, where $D$ is called the \textbf{dihedral group}, and 3 represents the number of plausible rotations upon this group (of course, accounting reflections of course ;) ).
+
+ The process of applying the above information to any given dihedral group $D_n$ is called the \href{https://artofproblemsolving.com/wiki/index.php?title=Burnside\%27s\_Lemma}{Burnside's Lemma}.
+
+ 
 
 
 	\item (\textit{AIME II 2006}) Circles $\mathcal{C}_1, \mathcal{C}_2,$ and $\mathcal{C}_3$ have their centers at $(0,0)$, $(12,0)$, and $(24,0)$, and have radii 1, 2, and 4, respectively. Line $t_1$ is a common internal tangent to $\mathcal{C}_1$ and $\mathcal{C}_2$ and has a positive slope, and line $t_2$ is a common internal tangent to $\mathcal{C}_2$ and $\mathcal{C}_3$ and has a negative slope. Given that lines $t_1$ and $t_2$ intersect at $(x,y),$ and that $x=p-q\sqrt{r},$ where $p, q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p+q+r.$
@@ -624,8 +668,6 @@ Thus, in total we have $6\cdot(20 + 30 + 6) = \boxed{336}$ total possibilities.
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -644,8 +686,6 @@ Thus, in total we have $6\cdot(20 + 30 + 6) = \boxed{336}$ total possibilities.
  
 
 
-
-
 	\item (\textit{AIME II 2006}) Seven teams play a soccer tournament in which each team plays every other team exactly once. No ties occur, each team has a $50\%$ chance of winning each game it plays, and the outcomes of the games are independent. In each game, the winner is awarded a point and the loser gets 0 points. The total points are accumulated to decide the ranks of the teams. In the first game of the tournament, team $A$ beats team $B.$ The probability that team $A$ finishes with more points than team $B$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
 
@@ -662,11 +702,11 @@ The results of the five remaining games are independent of the first game, so by
 
  There are ${5\choose k}$ ways to $A$ to have $k$ victories, and ${5\choose k}$ ways for $B$ to have $k$ victories. Summing for all values of $k$,
 
- $1-2p = \frac{1}{2^{5} \times 2^{5}}\left(\sum_{k=0}^{5} {5\choose k}^2\right) = \frac{1^2+5^2+10^2+10^2+5^2+1^2}{1024} = \frac{126}{512}.$Thus $p = \frac 12 \left(1-\frac{126}{512}\right) = \frac{193}{512}$. The desired probability is the sum of the cases when $|A| \ge |B|$, so the answer is $\frac{126}{512} + \frac{193}{512} = \frac{319}{512}$, and $m+n = \boxed{831}$.
+ $1-2p = \frac{1}{2^{5} \times 2^{5}}\left(\sum_{k=0}^{5} {5\choose k}^2\right) = \frac{1^2+5^2+10^2+10^2+5^2+1^2}{1024} = \frac{126}{512}.$
+
+ Thus $p = \frac 12 \left(1-\frac{126}{512}\right) = \frac{193}{512}$. The desired probability is the sum of the cases when $|A| \ge |B|$, so the answer is $\frac{126}{512} + \frac{193}{512} = \frac{319}{512}$, and $m+n = \boxed{831}$.
 
  
-
-
 
 
 
@@ -716,8 +756,6 @@ You can break this into cases based on how many rounds $A$ wins out of the remai
 
 
 
-
-
 \textbf{Solution 3}
 
 We can apply the concept of generating functions here. 
@@ -726,7 +764,9 @@ We can apply the concept of generating functions here.
 
  \begin{verbatim}
 ${(1 + 0x)(1 + x)^{5}} = (1 + 5x^{1} + 10x^{2} + 10x^{3} + 5x^{4} + x^{5})$.
-\end{verbatim}The generating function for $A$ is the same except that it is multiplied by $x$ instead of $(1+0x)$. Thus, the generating function for $A$ is 
+\end{verbatim}
+
+The generating function for $A$ is the same except that it is multiplied by $x$ instead of $(1+0x)$. Thus, the generating function for $A$ is 
 
  $1x + 5x^{2} + 10x^{3} + 10x^{4} + 5x^{5} + x^{6}$. 
 
@@ -742,8 +782,6 @@ ${(1 + 0x)(1 + x)^{5}} = (1 + 5x^{1} + 10x^{2} + 10x^{3} + 5x^{4} + x^{5})$.
 
 
 
-
-
 \textbf{Solution 4}
 
 After the first game, there are $10$ games we care about-- those involving $A$ or $B$. There are $3$ cases of these $10$ games: $A$ wins more than $B$, $B$ wins more than $A$, or $A$ and $B$ win the same number of games. Also, there are $2^{10} = 1024$ total outcomes. By symmetry, the first and second cases are equally likely, and the third case occurs $\binom{5}{0}^2+\binom{5}{1}^2+\binom{5}{2}^2+\binom{5}{3}^2+\binom{5}{4}^2+\binom{5}{5}^2 = \binom{10}{5} = 252$ times, by \href{https://artofproblemsolving.com/wiki/index.php?title=Combinatorial\_identity\#Another\_Identity}{a special case of Vandermonde's Identity}. There are therefore $\frac{1024-252}{2} = 386$ possibilities for each of the other two cases.
@@ -753,6 +791,23 @@ After the first game, there are $10$ games we care about-- those involving $A$ o
  
 
 
+
+\textbf{Solution 5}
+
+Like Solution 3, we use generating functions, but instead to calculate the difference between $A$'s and $B$'s scores. There is a $\frac{1}{2}$ probability both win, giving a net result $0$, a $\frac{1}{4}$ probability the difference increases by $1$, and a $\frac{1}{4}$ probability it decreases by $1$.
+
+ Since there are $5$ more games for each of $A$ and $B$, the game outcomes are independent, and $A$ starts off having won $1$ more, the generating function is
+
+ 
+ \[x\cdot \left(\dfrac{1}{4}x+\dfrac{1}{2}+\dfrac{1}{4}x^{-1}\right)^5\]
+
+ Simplifying gives $\dfrac{1}{1024} \cdot x^{-4} \cdot (x+1)^{10}$
+
+ We wish to find the sum of all coefficients of $x,x^2,\ldots,x^6,$ so by the Binomial Formula this is $\dfrac{\binom{10}{5}+\binom{10}{6}+\binom{10}{7}+\binom{10}{8}+\binom{10}{9}+\binom{10}{10}}{1024}=\dfrac{638}{1024}=\dfrac{319}{512}.$
+
+ Hence the answer is $\boxed{831}$.
+
+ 
 
 
 	\item (\textit{AIME II 2006}) A sequence is defined as follows $a_1=a_2=a_3=1,$ and, for all positive integers $n, a_{n+3}=a_{n+2}+a_{n+1}+a_n.$ Given that $a_{28}=6090307, a_{29}=11201821,$ and $a_{30}=20603361,$ find the remainder when $\sum^{28}_{k=1} a_k$ is divided by 1000.
@@ -767,11 +822,11 @@ After the first game, there are $10$ games we care about-- those involving $A$ o
 
 Define the sum as $s$. Since $a_n\ = a_{n + 3} - a_{n + 2} - a_{n + 1}$, the sum will be:
 
- $s = a_{28} + \sum^{27}_{k=1} (a_{k+3}-a_{k+2}-a_{k+1}) \\ s = a_{28} + \left(\sum^{30}_{k=4} a_{k} - \sum^{29}_{k=3} a_{k}\right) - \left(\sum^{28}_{k=2} a_{k}\right)\\ s = a_{28} + (a_{30} - a_{3}) - \left(\sum^{28}_{k=2} a_{k}\right) = a_{28} + a_{30} - a_{3} - (s - a_{1})\\ s = -s + a_{28} + a_{30}$Thus $s = \frac{a_{28} + a_{30}}{2}$, and $a_{28},\,a_{30}$ are both given; the last four digits of their sum is $3668$, and half of that is $1834$. Therefore, the answer is $\boxed{834}$.−	
+ $s = a_{28} + \sum^{27}_{k=1} (a_{k+3}-a_{k+2}-a_{k+1}) \\ s = a_{28} + \left(\sum^{30}_{k=4} a_{k} - \sum^{29}_{k=3} a_{k}\right) - \left(\sum^{28}_{k=2} a_{k}\right)\\ s = a_{28} + (a_{30} - a_{3}) - \left(\sum^{28}_{k=2} a_{k}\right) = a_{28} + a_{30} - a_{3} - (s - a_{1})\\ s = -s + a_{28} + a_{30}$
+
+ Thus $s = \frac{a_{28} + a_{30}}{2}$, and $a_{28},\,a_{30}$ are both given; the last four digits of their sum is $3668$, and half of that is $1834$. Therefore, the answer is $\boxed{834}$.-	
 
  
-
-
 
 
 
@@ -790,8 +845,6 @@ Since the problem only asks for the first 28 terms and we only need to calculate
 
 
 
-
-
 \textbf{Solution 3 (some guessing involved)/"Engineer's Induction"}
 
 All terms in the sequence are sums of previous terms, so the sum of all terms up to a certain point must be some linear combination of the first three terms. Also, we are given $a_{28}, a_{29},$ and $a_{30}$, so we can guess that there is some way to use them in a formula. Namely, we guess that there exists some $p, q, r$ such that $\sum_{k=1}^{n}{a_k} = pa_n+qa_{n+1}+ra_{n+2}$. From here, we list out the first few terms of the sequence and the cumulative sums, and with a little bit of substitution and algebra we see that $(p, q, r) = (\frac{1}{2}, 0, \frac{1}{2})$, at least for the first few terms. From this, we have that $\sum_{k=1}^{28}{a_k} = \frac{a_{28}+a_{30}}{2} \equiv{\boxed{834}}\pmod {1000}$.
@@ -802,8 +855,6 @@ All terms in the sequence are sums of previous terms, so the sum of all terms up
 
 
  
-
-
 
 
 
@@ -834,8 +885,6 @@ By the Chinese remainder theorem, each number under 1000 is uniquely determined 
  
 
 
-
-
 	\item (\textit{AIME II 2006}) Equilateral $\triangle ABC$ is inscribed in a circle of radius 2. Extend $\overline{AB}$ through $B$ to point $D$ so that $AD=13,$ and extend $\overline{AC}$ through $C$ to point $E$ so that $AE = 11.$ Through $D,$ draw a line $l_1$ parallel to $\overline{AE},$ and through $E,$ draw a line $l_2$ parallel to $\overline{AD}.$ Let $F$ be the intersection of $l_1$ and $l_2.$ Let $G$ be the point on the circle that is collinear with $A$ and $F$ and distinct from $A.$ Given that the area of $\triangle CBG$ can be expressed in the form $\frac{p\sqrt{q}}{r},$  where $p, q,$ and $r$ are positive integers, $p$ and $r$  are relatively prime, and $q$ is not divisible by the square of any prime, find $p+q+r.$
 
 
@@ -851,7 +900,9 @@ By the Chinese remainder theorem, each number under 1000 is uniquely determined 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2006_12_Solution_Figure_1.png}
                     \end{figure}
-                    Notice that $\angle{E} = \angle{BGC} = 120^\circ$ because $\angle{A} = 60^\circ$. Also, $\angle{GBC} = \angle{GAC} = \angle{FAE}$ because they both correspond to arc ${GC}$. So $\Delta{GBC} \sim \Delta{EAF}$.
+                    
+
+ Notice that $\angle{E} = \angle{BGC} = 120^\circ$ because $\angle{A} = 60^\circ$. Also, $\angle{GBC} = \angle{GAC} = \angle{FAE}$ because they both correspond to arc ${GC}$. So $\Delta{GBC} \sim \Delta{EAF}$.
 
  
  \[[EAF] = \frac12 (AE)(EF)\sin \angle AEF  = \frac12\cdot11\cdot13\cdot\sin{120^\circ} = \frac {143\sqrt3}4.\]
@@ -859,8 +910,6 @@ By the Chinese remainder theorem, each number under 1000 is uniquely determined 
  Because the ratio of the area of two similar figures is the square of the ratio of the corresponding sides, $[GBC] = \frac {BC^2}{AF^2}\cdot[EAF] = \frac {12}{11^2 + 13^2 - 2\cdot11\cdot13\cdot\cos120^\circ}\cdot\frac {143\sqrt3}4 = \frac {429\sqrt3}{433}$. Therefore, the answer is $429+433+3=\boxed{865}$.
 
  
-
-
 
 
 
@@ -876,15 +925,11 @@ Solution by e\_power\_pi\_times\_i/edited by srisainandan6
 
 
 
-
-
 \textbf{Solution 3: Trig}
 
 Lines $l_1$ and $l_2$ are constructed such that $AEFD$ is a parallelogram, hence $DF = 13$. Since $BAC$ is equilateral with angle of $60^{\circ}$, angle $D$ is $120^{\circ}$. Use law of cosines to find $AF = \sqrt{433}$. Then use law of sines to find angle $BAG$ and $GAC$. Next we use Ptolemy's Theorem on $ABGC$ to find that $CG + BG = AG$. Next we use law of cosine on triangles $BAG$ and $GAC$, solving for BG and CG respectively. Subtract the two equations and divide out a $BG + CG$ to find the value of $CG - BG$. Next, $AG = 2\cdot R \cos{\theta}$, where R is radius of circle $= 2$ and $\theta =$ angle $BAG$. We already know sine of the angle so find cosine, hence we have found $AG$. At this point it is system of equation yielding $CG = \frac{26\sqrt{3}}{\sqrt{433}}$ and $BG = \frac{22\sqrt{3}}{\sqrt{433}}$. Given $[CBG] = \frac{BC \cdot CG \cdot BG}{4R}$, and $BC = 2\sqrt{3}$ by $30-60-90$ triangle, we can evaluate to find $[CBG] = \frac{429\sqrt{3}}{433}$, to give answer = $\boxed{865}$.
 
  
-
-
 
 
 
@@ -899,8 +944,6 @@ Note that $AB=2\sqrt3$, $DF=11$, and $EF=13$. If we take a homothety of the para
 
 
 
-
-
 \textbf{Solution 5: Easy Similar triangles}
 
 First, by properties of cyclic quadrilterals, $<BGC = 180-<BAC=120$. Next, we notice quadrilateral AEFD is a parallelogram, and opposites angles are supplementary, and therefore $<ADF = 180-<BAC = 120$. Finally, by inscribed angles, $<BAG = <BCG$. Thus we can conclude $\triangle CBG \sim \triangle AFD$ by AA similarity. 
@@ -908,8 +951,6 @@ First, by properties of cyclic quadrilterals, $<BGC = 180-<BAC=120$. Next, we no
  Because $\triangle FAE \cong \triangle AFD$, $\triangle FAE \sim \triangle CBG$ aswell. So, we can write $\frac{BC}{AF} = \frac{BG}{DF} \to \frac{2\sqrt{3}}{\sqrt{433}} = \frac{BG}{11}$ since $AF = \sqrt{433}$ by the Law of Cosines. This gives $BG = \frac{22\sqrt{3}}{\sqrt{433}}$ and doing an identical process yields $CG = \frac{26\sqrt{3}}{\sqrt{433}}$. Thus, $[CBG] = \frac{26\sqrt{3}}{\sqrt{433}} \cdot \frac{22\sqrt{3}}{\sqrt{433}} \cdot \sin 120 = \frac{429\sqrt{3}}{433} \to p+q+r = \boxed{865}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) How many integers $N$ less than 1000 can be written as the sum of $j$ consecutive positive odd integers from exactly 5 values of $j\ge 1$?
@@ -969,8 +1010,6 @@ Let the first odd integer be $2n+1$, $n\geq 0$. Then the final odd integer is $2
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the largest odd number below the sequence be the $q$th positive odd number, and the largest odd number in the sequence be the $p$th positive odd number. Therefore, the sum is $p^2-q^2=(p+q)(p-q)$ by sum of consecutive odd numbers. Note that $p+q$ and $p-q$ have the same parity, and $q$ can equal $0$. We then perform casework based on the parity of $p-q$. 
@@ -984,8 +1023,6 @@ Let the largest odd number below the sequence be the $q$th positive odd number, 
  Therefore, there are $10+5=\boxed{015}$ possibilities for $p^2-q^2=N$ ~sigma
 
  
-
-
 
 
 	\item (\textit{AIME II 2006}) Let $S_n$ be the sum of the reciprocals of the non-zero digits of the integers from $1$ to $10^n$ inclusive. Find the smallest positive integer $n$ for which $S_n$ is an integer.
@@ -1002,13 +1039,13 @@ Let $K = \sum_{i=1}^{9}{\frac{1}{i}}$.  Examining the terms in $S_1$, we see tha
 
  In general, we will have that
 
- $S_n = (n10^{n-1})K + 1$because each digit will appear $10^{n - 1}$ times in each place in the numbers $1, 2, \ldots, 10^{n} - 1$, and there are $n$ total places.  
+ $S_n = (n10^{n-1})K + 1$
+
+ because each digit will appear $10^{n - 1}$ times in each place in the numbers $1, 2, \ldots, 10^{n} - 1$, and there are $n$ total places.  
 
  The denominator of $K$ is $D = 2^3\cdot 3^2\cdot 5\cdot 7$.  For $S_n$ to be an integer, $n10^{n-1}$ must be divisible by $D$.  Since $10^{n-1}$ only contains the factors $2$ and $5$ (but will contain enough of them when $n \geq 3$), we must choose $n$ to be \href{https://artofproblemsolving.com/wiki/index.php?title=Divisible}{divisible} by $3^2\cdot 7$.  Since we're looking for the smallest such $n$, the answer is $\boxed{063}$.
 
  
-
-
 
 
 
@@ -1085,8 +1122,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Semiperimeter}{se
 
 
 
-
-
 \textbf{Solution 2 (Heron Bash)}
 
 We can rewrite the equations as follows:
@@ -1099,8 +1134,6 @@ We can rewrite the equations as follows:
  \[A=\sqrt{(15A)(7A)(5A)(3A)}=15A^2\sqrt{7}\]Therefore $A=\frac{1}{15\sqrt{7}}$. Hence $x+y+z=30A=\frac{2}{\sqrt{7}}\Rightarrow\boxed{009}$.
 
  
-
-
 
 
 
@@ -1140,11 +1173,6 @@ Note that none of $x,y,z$ can be zero.
  And thus the answer is $\boxed{009}$
 
  
-
-
- 
-
-
 
 
 \end{enumerate}

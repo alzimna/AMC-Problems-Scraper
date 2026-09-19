@@ -20,8 +20,6 @@ A brute-force solution to this question is fairly quick, but we'll try something
 
 
 
-
-
 \textbf{Solution 2}
 
 There are only $7$ possible values of $n$: $3210, 4321, 5432, \cdots, 9876$. 
@@ -31,8 +29,6 @@ There are only $7$ possible values of $n$: $3210, 4321, 5432, \cdots, 9876$.
  Therefore, our answer is $28 + 29 + 30 + 31 + 32 + 33 + 34 = \frac{28 + 34}{2} \cdot 7 = \boxed{217}$.~Viliciri
 
  
-
-
 
 
 	\item (\textit{AIME I 2004}) Set $A$ consists of $m$ consecutive integers whose sum is $2m,$ and set $B$ consists of $2m$ consecutive integers whose sum is $m.$ The absolute value of the difference between the greatest element of $A$ and the greatest element of $B$ is 99. Find $m.$
@@ -57,8 +53,6 @@ Note that since set $A$ has $m$ consecutive integers that sum to $2m$, the middl
 
 
 
-
-
 \textbf{Solution 2}
 
 Let us give the \href{https://artofproblemsolving.com/wiki/index.php?title=Element}{elements} of our sets names:$A = \{x, x + 1, x + 2, \ldots, x + m - 1\}$ and $B = \{y, y + 1, \ldots, y + 2m - 1\}$.  So we are given that
@@ -68,8 +62,6 @@ Let us give the \href{https://artofproblemsolving.com/wiki/index.php?title=Eleme
  Then by the given, $99 = |(x + m - 1) - (y + 2m - 1)| = \left|\frac{m + 3}2 - m\right| = \left|\frac{m - 3}2\right|$.  $m$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integer} so we must have $99 = \frac{m - 3}2$ and so $m = \boxed{201}$.
 
  
-
-
 
 
 
@@ -108,8 +100,6 @@ The thing about this problem is, you have some "choices" that you can make freel
 
 
 
-
-
 \textbf{Solution 4 (Sketchy Solution for Speedrunners)}
 
 First, calculate the average of set $A$ and set $B$. It's obvious that they are $2$ and $1/2$ respectively. Let's look at both sets. Obviously, there is an odd number of integers in the set with $2$ being in the middle, which means that $m$ is an odd number and that the number of consecutive integers on each side of $2$ are equal. In set $B$, it is clear that it contains an even number of integers, but since the number in the middle is $1/2$, we know that the range of the consecutive numbers on both sides will be $(x$ to $0)$ and $(1$ to $-y)$. 
@@ -125,8 +115,6 @@ First, calculate the average of set $A$ and set $B$. It's obvious that they are 
 
 
 
-
-
 \textbf{Solution 5}
 
 Let the first term of $A$ be $a$ and the first term of $B$ be $b$. There are $m$ elements in $A$ so $A$ is $a, a+1, a+2,...,a+m-1$. Adding these up, we get $\frac{2a+m-1}{2}\cdot m = 2m \implies 2a+m=5$. Set $B$ contains the numbers $b, b+1, b+2,...,b+2m-1$. Summing these up, we get $\frac{2b+2m-1}{2}\cdot 2m =m \implies 2b+2m=2$. The problem gives us that the absolute value of the difference of the largest terms in $A$ and $B$ is $99$. The largest term in $A$ is $a+m-1$ and the largest term in $B$ is $b+2m-1$ so $|b-a+m|=99$. From the first two equations we get, we can get that $2(b-a)+m=-3$. Now, we make a guess and assume that $b-a+m=99$ (if we get a negative value for $m$, we can try $b-a+m=-99$). From here we get that $b-a=-102$. Solving for $m$, we get that the answer is $\boxed{201}$
@@ -134,8 +122,6 @@ Let the first term of $A$ be $a$ and the first term of $B$ be $b$. There are $m$
  -Heavytoothpaste
 
  
-
-
 
 
 
@@ -158,8 +144,6 @@ Let the first element of $\mathcal{A}$ be $p$ and the first element of $\mathcal
  
 
 
-
-
 	\item (\textit{AIME I 2004}) A convex polyhedron $P$ has 26 vertices, 60 edges, and 36 faces, 24 of which are triangular, and 12 of which are quadrilaterals. A space diagonal is a line segment connecting two non-adjacent vertices that do not belong to the same face. How many space diagonals does $P$ have?
 
 
@@ -173,8 +157,6 @@ Let the first element of $\mathcal{A}$ be $p$ and the first element of $\mathcal
 Every pair of \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{ vertices} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Polyhedron}{polyhedron} determines either an \href{https://artofproblemsolving.com/wiki/index.php?title=Edge}{edge}, a face \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal} or a space diagonal.  We have ${26 \choose 2} = \frac{26\cdot25}2 = 325$ total \href{https://artofproblemsolving.com/wiki/index.php?title=Line\_segment}{line segments} determined by the vertices.  Of these, $60$ are edges.  Each \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangular} face has $0$ face diagonals and each \href{https://artofproblemsolving.com/wiki/index.php?title=Quadrilateral}{quadrilateral} face has $2$, so there are $2 \cdot 12 = 24$ face diagonals.  This leaves $325 - 60 - 24 = \boxed{241}$ segments to be the space diagonals.
 
  
-
-
 
 
 	\item (\textit{AIME I 2004}) A square has sides of length 2. Set $S$ is the set of all line segments that have length 2 and whose endpoints are on adjacent sides of the square. The midpoints of the line segments in set $S$ enclose a region whose area to the nearest hundredth is $k.$ Find $100k.$
@@ -194,11 +176,11 @@ Without loss of generality, let $(0,0)$, $(2,0)$, $(0,2)$, and $(2,2)$ be the \h
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2004_4_Solution_Figure_1.png}
                     \end{figure}
-                    The set of all midpoints forms a quarter circle at each corner of the square.  The area enclosed by all of the midpoints is $4-4\cdot \left(\frac{\pi}{4}\right)=4-\pi \approx .86$ to the nearest hundredth. Thus $100\cdot k=\boxed{86}$
+                    
+
+ The set of all midpoints forms a quarter circle at each corner of the square.  The area enclosed by all of the midpoints is $4-4\cdot \left(\frac{\pi}{4}\right)=4-\pi \approx .86$ to the nearest hundredth. Thus $100\cdot k=\boxed{86}$
 
  
-
-
 
 
 
@@ -209,7 +191,9 @@ Without loss of generality, let $(0,0)$, $(2,0)$, $(0,2)$, and $(2,2)$ be the \h
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2004_4_Solution_Figure_2.png}
                     \end{figure}
-                    If we imagine an arbitrary line with length $2$ connecting two sides of the square, we can draw the rectangle formed by drawing a perpendicular from where that line touches the square. 
+                    
+
+ If we imagine an arbitrary line with length $2$ connecting two sides of the square, we can draw the rectangle formed by drawing a perpendicular from where that line touches the square. 
 
  Drawing the other diagonal of the rectangle, it also has length two, and it bisects with the original line. Since their intersection is the midpoint of both lines, the distance from the corner to the midpoint is always $1$, which forms a circle with radius $1$ centered at the corner of the square. 
 
@@ -222,8 +206,6 @@ Without loss of generality, let $(0,0)$, $(2,0)$, $(0,2)$, and $(2,2)$ be the \h
 
 
 
-
-
 \textbf{Solution 3}
 
 To imagine the area, think of a ladder with a length of $2$ sliding down a wall. It is known that as a ladder slides down a wall, its midpoint traces a quarter circle (if you don't believe me, try it with your pencil). There are $4$ quarter circles, so their area is one circle or $\pi$. Thus, they enclose the area of the square minus the area of the quarter circles, which is $4-\pi \approx 0.86$, so $100k = \boxed{086}$. ~Extremelysupercooldude
@@ -232,15 +214,11 @@ To imagine the area, think of a ladder with a length of $2$ sliding down a wall.
 
 
 
-
-
 \textbf{Solution 4}
 
 Consider the right triangle formed by the line segment and the vertex on the two sides it intersects. Since this right triangle has hypotenuse $2$, its circumradius is $1$. Since the circumcenter of a right triangle is the midpoint of the hypotenuse, the distance between the vertex of the square and the midpoint of the line segment is always $1$. Thus, $S$ forms $4$ quarter-circles of radius $1$ around the vertices of the square. Combined, these quarter-circles have total area of $\pi$, so the area enclosed by $S$ is $4-\pi \approx .86$, and the answer is $\boxed{86}$. ~A\_MatheMagician
 
  
-
-
 
 
 	\item (\textit{AIME I 2004}) Alpha and Beta both took part in a two-day problem-solving competition. At the end of the second day, each had attempted questions worth a total of $500$ points. Alpha scored $160$ points out of $300$ points attempted on the first day, and scored $140$ points out of $200$ points attempted on the second day. Beta who did not attempt $300$ points on the first day, had a positive integer score on each of the two days, and Beta's daily success rate (points scored divided by points attempted) on each day was less than Alpha's on that day. Alpha's two-day success ratio was $\frac{300}{500} = \frac{3}{5}$. The largest possible two-day success ratio that Beta could achieve is $m/n,$ where $m$ and $n$ are relatively prime positive integers. What is $m+n$?
@@ -276,8 +254,6 @@ Let $q$ be the number of questions Beta takes on day 1 and $a$ be the number he 
  
 
 
-
-
 	\item (\textit{AIME I 2004}) An integer is called snakelike if its decimal representation $a_1a_2a_3\cdots a_k$ satisfies $a_i<a_{i+1}$ if $i$ is odd and $a_i>a_{i+1}$ if $i$ is even. How many snakelike integers between 1000 and 9999 have four distinct digits?
 
 
@@ -296,15 +272,11 @@ We divide the problem into two cases: one in which zero is not one of the digits
 
 
 
-
-
 \textbf{Solution 2}
 
 Let's create the snakelike number from digits $a < b < c < d$, and, if we already picked the digits there are 5 ways to do so, as said in the first solution. And, let's just pick the digits from 0-9. This get's a total count of $5\cdot{10 \choose 4}$ But, this over-counts since it counts numbers like 0213. We can correct for this over-counting. Lock the first digit as 0 and permute 3 other chosen digits $a < b < c$. There are 2 ways to permute to make the number snakelike, b-a-c, or c-a-b. And, we pick a,b,c from 1 to 9, since 0 has already been chosen as one of the digits. So, the amount we have overcounted by is $2\cdot{9 \choose 3}$. Thus our answer is $5\cdot{10 \choose 4} - 2\cdot{9 \choose 3} = \boxed{882}$
 
  
-
-
 
 
 
@@ -333,8 +305,6 @@ We will first decide the order of the 4 digits, greatest to least. To do this, w
  
 
 
-
-
 	\item (\textit{AIME I 2004}) Let $C$ be the coefficient of $x^2$ in the expansion of the product $(1 - x)(1 + 2x)(1 - 3x)\cdots(1 + 14x)(1 - 15x).$ Find $|C|.$
 
 
@@ -359,19 +329,17 @@ Let our \href{https://artofproblemsolving.com/wiki/index.php?title=Polynomial}{p
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $S$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} of integers $\{-1,2,-3,\ldots,14,-15\}$. The coefficient of $x^2$ in the expansion is equal to the sum of the product of each pair of distinct terms, or $C = \sum_{1 \le i \neq j}^{15} S_iS_j$. Also, we know that 
  \begin{align*}\left(\sum_{i=1}^{n} S_i\right)^2 &= \left(\sum_{i=1}^{n} S_i^2\right) + 2\left(\sum_{1 \le i \neq j}^{15} S_iS_j\right)\\ (-8)^2 &= \frac{15(15+1)(2\cdot 15+1)}{6} + 2C\end{align*}
 where the left-hand sum can be computed from:
 
- $\sum_{i=1}^{15} S_i = S_{15} + \left(\sum_{i=1}^{7} S_{2i-1} + S_{2i}\right) = -15 + 7 = -8$and the right-hand sum comes from the formula for the sum of the first $n$ perfect squares. Therefore, $|C| = \left|\frac{64-1240}{2}\right| = \boxed{588}$.
+ $\sum_{i=1}^{15} S_i = S_{15} + \left(\sum_{i=1}^{7} S_{2i-1} + S_{2i}\right) = -15 + 7 = -8$
+
+ and the right-hand sum comes from the formula for the sum of the first $n$ perfect squares. Therefore, $|C| = \left|\frac{64-1240}{2}\right| = \boxed{588}$.
 
  
-
-
 
 
 
@@ -383,8 +351,6 @@ Consider the set $[-1, 2,-3,4,-5,6,-7,8,-9,10,-11,12,-13,14,-15]$. Denote by $S$
 
 
 
-
-
 \textbf{Solution 4 (Easy)}
 
 We know that this polynomial has roots $1, -\frac{1}{2}, \frac{1}{3},\ldots$ and the coefficient of $x^2$ will be the sum of the product taken by $13$. However, since this is closer to the constant side, we can create a new polynomial with the reciprocal roots which will make $C$ the coefficient of $x^{13}$ and thus the sum of the reciprocal roots taken by 2. We can calculate this with $1\cdot(8-1)-2\cdot(8-(-2))+\ldots+15(8-15)$. This will give us $2C = -1176$ giving us a final answer of $|C| = \fbox{588}$.
@@ -393,8 +359,6 @@ We know that this polynomial has roots $1, -\frac{1}{2}, \frac{1}{3},\ldots$ and
 
 
  
-
-
 
 
 
@@ -441,8 +405,6 @@ In this polynomial, we can see that by Vieta’s Formulae, the coefficient of $x
 
 
 
-
-
 \textbf{Solution 4}
 
 Let set $N$ be $\{-1, -3, \ldots -15\}$ and set $P$ be $\{2, 4, \ldots 14\}$. The sum of the negative $x^2$ coefficients is the sum of the products of the elements in all two element sets such that one element is from $N$ and the other is from $P$. Each summand is a term in the expansion of
@@ -452,8 +414,6 @@ Let set $N$ be $\{-1, -3, \ldots -15\}$ and set $P$ be $\{2, 4, \ldots 14\}$. Th
 
 
  
-
-
 
 
 
@@ -467,8 +427,6 @@ We can find out the coefficient of $x^2$ by multiplying every pair of two coeffi
 
 
 
-
-
 \textbf{Solution 6}
 
 This is just another way of summing the subsets of 2 from $[-1, 2, -3, 4, -5, 6, -7, 8, -9, 10, -11, 12, -13, 14, -15]$. Start from the right and multiply -15 to everything on its left. Use the distributive property and add all the 14 integers together to get 7. This gives us $-15 * 7$. Doing this for 14 gives us $14 * -7$, and for -13 we get $-13 * 6$. This pattern repeats where every two integers will multiple 7, 6,... to 0. Combining and simplifying the pattern give us this: $-(29 * 7 + 25 * 6 + 21 * 5 + 17 * 4 + 13 * 3 + 9 * 2 + 5*1)$. Calculate directly or notice that this sum is just $-\sum_{i=1}^{7} i(4i+1) = -4\sum_{i=1}^{7} i^2 -\sum_{i=1}^{7} i = -4\cdot\frac{(7)(8)(15)}{6} - \frac{(7)(8)}{2}$. The expression gives us -588, or $C = \boxed{588}$. This is a good solution because it guarantees we never add a product twice, and the pattern is simple to add by hand.
@@ -479,8 +437,6 @@ This is just another way of summing the subsets of 2 from $[-1, 2, -3, 4, -5, 6,
 
 
 
-
-
 \textbf{Solution 7}
 
 We expand and obtain $\left(x-1\right)\left(2x-1\right)\left(3x-1\right)\cdots\left(15x-1\right) =  1307674368000x^{15} - 948550176000x^{14} - 689324826240x^{13} + 2733483288464x^{12} + 82808260416x^{11} - 23038684088x^{10} - 3811851848x^9 + 828730833x^8 + 81228128x^7 - 14661124x^6 - 853104x^5 + 132902x^4 + 4256x^3 - \boxed{588}x^2 - 8x + 1.$
@@ -488,8 +444,6 @@ We expand and obtain $\left(x-1\right)\left(2x-1\right)\left(3x-1\right)\cdots\l
  Do not do this in an actual competition.
 
  
-
-
 
 
 
@@ -504,8 +458,6 @@ Notice a pattern betweenthe x cooeficient and the x\textasciicircum{}2
  x\textasciicircum{}2={0, -2, -5, -13,....} you get $\boxed{588}$
 
  
-
-
 
 
 
@@ -539,8 +491,6 @@ Let $f(x)$ be the function that determines the previous coefficient of a polynom
  Note that $|f(15)| = |C|$. So the answer is $\boxed{588}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2004}) Define a regular $n$-pointed star to be the union of $n$ line segments $P_1P_2, P_2P_3,\ldots, P_nP_1$ such that
@@ -590,15 +540,11 @@ We use the \href{https://artofproblemsolving.com/wiki/index.php?title=Principle\
 
 
 
-
-
 \textbf{Solution 2}
 
 Continue as before by cyclically constructing a star by taking every $k$-th point. We can think of this construction as the orbit of a point by a rotation $R^k\in D_{1000}$. Then, we want $|R^k|=1000$, meaning that $k\in (\mathbb Z/1000\mathbb Z)^\times$. Then, $k$ is coprime to $1000$, meaning $k$ may take on $\phi(1000)=400$ possible values. For any $R^k$, the dihedral symmetry $TR^k$ defines the figure-preserving bijection $R^k\mapsto R^{-k}$, meaning half of our possible values of $k$ are similar. Finally, the condition that each edge must intersect another rules out $k=1$, giving a total of $\frac{400}2-1=\boxed{199}$ pointed stars.
 
  
-
-
 
 
 
@@ -626,8 +572,6 @@ Consider the $n$-vertex regular polygon. This polygon has exactly $\frac{n(n-3)}
  
 
 
-
-
 	\item (\textit{AIME I 2004}) Let $ABC$ be a triangle with sides 3, 4, and 5, and $DEFG$ be a 6-by-7 rectangle. A segment is drawn to divide triangle $ABC$ into a triangle $U_1$ and a trapezoid $V_1$ and another segment is drawn to divide rectangle $DEFG$ into a triangle $U_2$ and a trapezoid $V_2$ such that $U_1$ is similar to $U_2$ and $V_1$ is similar to $V_2.$ The minimum value of the area of $U_1$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
 
@@ -642,7 +586,7 @@ We let $AB=3, AC=4, DE=6, DG=7$ for the purpose of labeling. Clearly, the dividi
 
  Suppose we find the ratio $r$ of the smaller base to the larger base for $V_2$, which consequently is the same ratio for $V_1$. By similar triangles, it follows that $U_1 \sim \triangle ABC$ by the same ratio $r$, and since the ratio of the areas of two similar figures is equal to the square of the ratio of their corresponding lengths, it follows that $[U_1] = r^2 \cdot [ABC] = 6r^2$.
 
- <center><table><tbody><tr><td>
+ <table><tbody><tr><td>
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2004_9_Solution_Figure_1.png}
@@ -666,7 +610,9 @@ We let $AB=3, AC=4, DE=6, DG=7$ for the purpose of labeling. Clearly, the dividi
                     \end{figure}
                     
 
- </td></tr></tbody></table></center>
+ </td></tr></tbody></table>
+
+ 
                 \begin{itemize}
                     \item If $D'$ lies on $\overline{EF}$, then $ED' = \frac34 \cdot 6 = \frac{9}{2},\, 8$ from maintaining the $3-4-5$ triangular ratio; the latter ($\frac43 \cdot 6 = 8$) can be discarded as extraneous since we need $ED'<EF$. Therefore, $D'F = \frac{5}{2}$, and the ratio $r = \frac{D'F}{DG} = \frac{5}{14}$. The area of $[U_1] = 6\left(\frac{5}{14}\right)^2$ in this case.
                 \end{itemize}
@@ -681,8 +627,6 @@ We let $AB=3, AC=4, DE=6, DG=7$ for the purpose of labeling. Clearly, the dividi
                 Of the two cases, the second is smaller; the answer is $\frac{3}{32}$, and $m+n = \boxed{035}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2004}) A circle of radius 1 is randomly placed in a 15-by-36 rectangle $ABCD$ so that the circle lies completely within the rectangle. Given that the probability that the circle will not touch diagonal $AC$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m + n.$
@@ -706,8 +650,6 @@ We let $AB=3, AC=4, DE=6, DG=7$ for the purpose of labeling. Clearly, the dividi
 
 
 
-
-
 \textbf{Solution 1}
 
 The location of the center of the circle must be in the $34 \times 13$ rectangle that is one unit away from the sides of rectangle $ABCD$. We want to find the area of the \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle} with \href{https://artofproblemsolving.com/wiki/index.php?title=Hypotenuse}{hypotenuse} one unit away from $\overline{AC}$. Let this triangle be $A'B'C'$.
@@ -717,8 +659,6 @@ The location of the center of the circle must be in the $34 \times 13$ rectangle
  The probability is $\frac{2[A'B'C']}{34 \times 13} = \frac{375}{442}$, and $m + n = \boxed{817}$.  
 
  
-
-
 
 
 
@@ -736,8 +676,6 @@ The location of the center of the circle must be in the $34 \times 13$ rectangle
  We can apply the same principle again to find that $PT = 27/2$, and since $QT = 1$, we find that $PQ = 27/2 - 1 = 25/2$. The locus of all possible centers of the circle on this "half" of the rectangle is triangle $\triangle OPQ$. There exists another congruent triangle that is symmetric over $AC$ that has the same area as triangle $\triangle OPQ$. $\triangle APQ$ has area $\frac {1}{2}\cdot OP \cdot PQ = \frac {1}{2}\cdot 30\cdot \frac {25}{2}$, since $\angle OQP$ is right. Thus the total area that works is $30\cdot \frac {25}{2} = 375$, and the area of the locus of all centers of any circle with radius 1 is $34\cdot 13 = 442$. Hence, the desired probability is $\frac {375}{442}$, and our answer is $\boxed {817}$.
 
  
-
-
 
 
 
@@ -771,8 +709,6 @@ The location of the center of the circle must be in the $34 \times 13$ rectangle
  
 
 
-
-
 	\item (\textit{AIME I 2004}) A solid in the shape of a right circular cone is 4 inches tall and its base has a 3-inch radius. The entire surface of the cone, including its base, is painted. A plane parallel to the base of the cone divides the cone into two solids, a smaller cone-shaped solid $C$ and a frustum-shaped solid $F,$ in such a way that the ratio between the areas of the painted surfaces of $C$ and $F$ and the ratio between the volumes of $C$ and $F$ are both equal to $k.$ Given that $k=m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
 
@@ -785,27 +721,9 @@ The location of the center of the circle must be in the $34 \times 13$ rectangle
 
 Our original solid has volume equal to $V = \frac13 \pi r^2 h = \frac13 \pi 3^2\cdot 4 = 12 \pi$ and has \href{https://artofproblemsolving.com/wiki/index.php?title=Surface\_area}{surface area} $A = \pi r^2 + \pi r \ell$, where $\ell$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Slant\_height}{slant height} of the cone.  Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, we get $\ell = 5$ and $A = 24\pi$.
 
- Let $x$ denote the \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} of the small cone. Let $A_c$ and $A_f$ denote the area of the painted surface on cone $C$ and frustum $F$, respectively, and let $V_c$ and $V_f$ denote the volume of cone $C$ and frustum $F$, respectively.  Because the plane cut is parallel to the base of our solid, $C$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Similar}{similar} to the uncut solid and so the height and slant height of cone $C$ are $\frac{4}{3}x$ and $\frac{5}{3}x$, respectively. Using the formula for lateral surface area of a cone, we find that $A_c=\frac{1}{2}c\cdot \ell=\frac{1}{2}(2\pi x)\left(\frac{5}{3}x\right)=\frac{5}{3}\pi x^2$. By subtracting $A_c$ from the surface area of the original solid, we find that $A_f=24\pi - \frac{5}{3}\pi x^2$. 
-
- Next, we can calculate $V_c=\frac{1}{3}\pi r^2h=\frac{1}{3}\pi x^2 \left(\frac{4}{3}x\right)=\frac{4}{9}\pi x^3$.  Finally, we subtract $V_c$ from the volume of the original cone to find that $V_f=12\pi - \frac{4}{9}\pi x^3$. We know that $\frac{A_c}{A_f}=\frac{V_c}{V_f}=k.$ Plugging in our values for $A_c$, $A_f$, $V_c$, and $V_f$, we obtain the equation $\frac{\frac{5}{3}\pi x^2}{24\pi - \frac{5}{3}\pi x^2}=\frac{\frac{4}{9}\pi x^3}{12\pi - \frac{4}{9}\pi x^3}$.  We can take \href{https://artofproblemsolving.com/wiki/index.php?title=Reciprocal}{reciprocals} of both sides to simplify this \href{https://artofproblemsolving.com/wiki/index.php?title=Equation}{equation} to $\frac{72}{5x^2} - 1 = \frac{27}{x^3} - 1$ and so $x = \frac{15}{8}$.  Then $k = \frac{\frac{5}{3}\pi x^2}{24\pi - \frac{5}{3}\pi x^2}= \frac{125}{387} = \frac mn$ so the answer is $m+n=125+387=\boxed{512}$.
+ Let $x$ denote the \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} of the small cone. Let $A_c$ and 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-Our original solid $V$ has \href{https://artofproblemsolving.com/wiki/index.php?title=Surface\_area}{surface area} $A_v = \pi r^2 + \pi r \ell$, where $\ell$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Slant\_height}{slant height} of the cone. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} or Pythagorean Triple knowledge, we obtain $\ell = 5$ and lateral area $A_\ell = 15\pi$. The area of the base is $A_B = 3^2\pi = 9\pi$.
-
- $V$ and $C$ are similar cones, because the plane that cut out $C$ was parallel to the base of $V$. Let $x$ be the scale factor between the original cone and the small cone $C$ in one dimension. Because the scale factor is uniform in all dimensions, $x^2$ relates corresponding areas of $C$ and $V$, and $x^3$ relates corresponding volumes. Then, the ratio of the painted areas $\frac{A_c}{A_f}$ is $\frac{15\pi x^2}{9\pi + 15\pi - 15\pi x^2} = \frac{5 x^2}{8 - 5 x^2} = k$ and the ratio of the volumes $\frac{V_c}{V_f}$ is $\frac{x^3}{1 - x^3} = k$. Since both ratios are equal to $k$, they are equal to each other. Therefore, $\frac{5 x^2}{8 - 5 x^2} = \frac{x^3}{1 - x^3}$.
-
- Now we must merely solve for x and substitute back into either ratio. Cross multiplying gives $5 x^2(1 - x^3) = x^3(8 - 5 x^2)$. Dividing both sides by $x^2$ and distributing the $x$ on the right, we have $5 - 5 x^3 = 8 x - 5 x^3$, and so $8 x = 5$ and $x = \frac{5}{8}$. Substituting back into the easier ratio, we have $\frac{(\frac{5}{8})^3}{1 - (\frac{5}{8})^3} = \frac{\frac{125}{512}}{\frac{387}{512}} = \frac{125}{387}$. And so we have $m + n = 125 + 387 = \boxed{512}$.
-
- 
-
-
 
 
 	\item (\textit{AIME I 2004}) Let $S$ be the set of ordered pairs $(x, y)$ such that $0 < x \le 1, 0<y\le 1,$ and $\left \lfloor{\log_2{\left(\frac 1x\right)}}\right \rfloor$ and $\left \lfloor{\log_5{\left(\frac 1y\right)}}\right \rfloor$ are both even. Given that the area of the graph of $S$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$ The notation $\left \lfloor{z}\right \rfloor$ denotes the greatest integer that is less than or equal to $z.$
@@ -838,8 +756,6 @@ $\left\lfloor\log_2\left(\frac{1}{x}\right)\right\rfloor$ is even when
  
 
 
-
-
 	\item (\textit{AIME I 2004}) The polynomial $P(x)=(1+x+x^2+\cdots+x^{17})^2-x^{17}$ has 34 complex roots of the form $z_k = r_k[\cos(2\pi a_k)+i\sin(2\pi a_k)], k=1, 2, 3,\ldots, 34,$ with $0 < a_1 \le a_2 \le a_3 \le \cdots \le a_{34} < 1$ and $r_k>0.$ Given that $a_1 + a_2 + a_3 + a_4 + a_5 = m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
 
@@ -866,8 +782,6 @@ We see that the expression for the \href{https://artofproblemsolving.com/wiki/in
 
 
 
-
-
 \textbf{Solution 2 (similar to 1)}
 
 
@@ -891,8 +805,6 @@ We see that the expression for the \href{https://artofproblemsolving.com/wiki/in
  
 
 
-
-
 	\item (\textit{AIME I 2004}) A unicorn is tethered by a 20-foot silver rope to the base of a magician's cylindrical tower whose radius is 8 feet. The rope is attached to the tower at ground level and to the unicorn at a height of 4 feet. The unicorn has pulled the rope taut, the end of the rope is 4 feet from the nearest point on the tower, and the length of the rope that is touching the tower is $\frac{a-\sqrt{b}}c$ feet, where $a, b,$ and $c$ are positive integers, and $c$ is prime. Find $a+b+c.$
 
 
@@ -908,14 +820,18 @@ We see that the expression for the \href{https://artofproblemsolving.com/wiki/in
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2004_14_Solution_Figure_1.png}
                     \end{figure}
-                    Looking from an overhead view, call the \href{https://artofproblemsolving.com/wiki/index.php?title=Center}{center} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circle} $O$, the tether point to the unicorn $A$ and the last point where the rope touches the tower $B$.  $\triangle OAB$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle} because $OB$ is a radius and $BA$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_line}{tangent line} at point $B$.  We use the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} to find the horizontal component of $AB$ has length $4\sqrt{5}$.  
+                    
+
+ Looking from an overhead view, call the \href{https://artofproblemsolving.com/wiki/index.php?title=Center}{center} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circle} $O$, the tether point to the unicorn $A$ and the last point where the rope touches the tower $B$.  $\triangle OAB$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle} because $OB$ is a radius and $BA$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_line}{tangent line} at point $B$.  We use the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} to find the horizontal component of $AB$ has length $4\sqrt{5}$.  
 
  
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2004_14_Solution_Figure_2.png}
                     \end{figure}
-                    Now look at a side view and "unroll" the cylinder to be a flat surface. Let $C$ be the bottom tether of the rope, let $D$ be the point on the ground below $A$, and let $E$ be the point directly below $B$.  \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{Triangles} $\triangle CDA$ and $\triangle CEB$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar}{similar} \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangles}.  By the Pythagorean Theorem $CD=8\cdot\sqrt{6}$.  
+                    
+
+ Now look at a side view and "unroll" the cylinder to be a flat surface. Let $C$ be the bottom tether of the rope, let $D$ be the point on the ground below $A$, and let $E$ be the point directly below $B$.  \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{Triangles} $\triangle CDA$ and $\triangle CEB$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar}{similar} \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangles}.  By the Pythagorean Theorem $CD=8\cdot\sqrt{6}$.  
 
  Let $x$ be the length of $CB$. 
  \[\frac{CA}{CD}=\frac{CB}{CE}\implies \frac{20}{8\sqrt{6}}=\frac{x}{8\sqrt{6}-4\sqrt{5}}\implies x=\frac{60-\sqrt{750}}{3}\] 
@@ -926,15 +842,11 @@ We see that the expression for the \href{https://artofproblemsolving.com/wiki/in
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that by Power of a Point, the point the unicorn is at has power $4 \cdot 20 = 80$ which implies that the tangent from that point to the tower is of length $\sqrt{80}=4\sqrt{5},$ however this is length of the rope projected into 2-D. If we let $\theta$ be the angle between the horizontal and the rope, we have that $\cos\theta=\frac{1}{5}$ which implies that $\sin\theta=\frac{2\sqrt{6}}{5}.$ Note that the portion of rope not on the tower is $4\sqrt{5} \cdot \frac{5}{2\sqrt{6}}= \frac{5\sqrt{30}}{3},$ the requested length of rope is $20-\frac{5\sqrt{30}}{3}=\frac{60-\sqrt{750}}{3}$ thus the requested sum is $\boxed{813}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2004}) For all positive integers $x$, let
@@ -966,8 +878,6 @@ We backcount the number of ways. Namely, we start at $x_{20} = 1$, which can onl
 
 
 
-
-
 \textbf{Solution 2}
 
 We approach the problem by \href{https://artofproblemsolving.com/wiki/index.php?title=Recursion}{recursion}. We \href{https://artofproblemsolving.com/wiki/index.php?title=Partition}{partition} the positive integers into the sets
@@ -988,14 +898,7 @@ Let $S_n=\sum_{k=0}^9 A_{n,k}$. Then by adding the above equations (valid if $n\
  \[\begin{array}{c|cccccccccc|c} n&A_{n,1}&A_{n,2}&A_{n,3}&A_{n,4}&A_{n,5}&A_{n,6}&A_{n,7}&A_{n,8}&A_{n,9}&A_{n,0}&S_{n}\\\hline 1&1&0&0&0&0&0&0&0&0&0&1\\ 2&0&0&0&0&0&0&0&0&0&1&1\\ 3&0&0&0&0&0&0&0&0&1&1&2\\ 4&0&0&0&0&0&0&0&1&1&2&4\\ 5&0&0&0&0&0&0&1&1&2&4&8\\ 6&0&0&0&0&0&1&1&2&4&8&16\\ 7&0&0&0&0&1&1&2&4&8&16&32\\ 8&0&0&0&1&1&2&4&8&16&32&64\\ 9&0&0&1&1&2&4&8&16&32&64&128\\ 10&0&1&1&2&4&8&16&32&64&128&256\\ 11&\boxed{0}&1&2&4&8&16&32&64&128&256&511\\ 12&1&2&4&8&16&32&64&128&256&511&1022\\ \end{array}\]After this, we can simply use the recurrence relation for $S_n$, finding
  \[\begin{array}{c|l} n&S_n\\\hline 1&1\\ 2&1\\ 3&2^1\\ 4&2^2\\ 5&2^3\\ 6&2^4\\ 7&2^5\\ 8&2^6\\ 9&2^7\\ 10&2^8\\ 11&2^9-1\\ 12&2^{10}-2\\ 13&2^{11}-1\cdot 5\\ 14&2^{12}-2\cdot 6\\ 15&2^{13}-4\cdot 7\\ 16&2^{14}-8\cdot 8\\ 17&2^{15}-16\cdot 9\\ 18&2^{16}-32\cdot 10\\ 19&2^{17}-64\cdot 11\\ 20&2^{18}-128\cdot 12. \end{array}\]Therefore, there are $2^{18}- 2^9\cdot 3$ positive integers $x$ with $d(x)=20$. This factors as $2^9(2^{9}-3)=2^9(509)$, where $509$ is prime. Thus the answer is $\boxed{511}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 \end{enumerate}

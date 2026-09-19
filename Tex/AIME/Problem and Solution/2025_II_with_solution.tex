@@ -23,8 +23,6 @@
 
 
 
-
-
 \textbf{Solution 2 (Law of Cosines)}
 
 We need to solve for the lengths of $AB$, $BC$, $CD$, $DE$, and $EF$.  Let $AB = a$, $BC = b$, $CD = c$, $DE = d$, and $EF = e$.  We are given the following system of equations:
@@ -84,8 +82,6 @@ We need to solve for the lengths of $AB$, $BC$, $CD$, $DE$, and $EF$.  Let $AB =
 
 
 
-
-
 \textbf{Solution 3 (planar cutting, similar to 1, not using ratios however)}
 
 
@@ -107,8 +103,6 @@ We need to solve for the lengths of $AB$, $BC$, $CD$, $DE$, and $EF$.  Let $AB =
  Triangle \( \triangle  GCD \), has a height $h$ that is shared by triangle $\triangle BGE$. The area of \( \triangle  GCD \) through Heron's Formula is 168 square units. One can quickly find the height to be 24. The area of $\triangle BGE$ is then $\frac{1}{2} \cdot 39 \cdot 24 = 39 \cdot 12 = \boxed{468}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2025}) Find the sum of all positive integers $n$ such that $n+2$ divides the product $3(n+3)(n^2+9).$
@@ -143,87 +137,9 @@ $\frac{3(n+3)(n^{2}+9) }{n+2} \in \mathbb{Z}$
 
  Since $n$ is positive, $n = 1$, $11$ and $37$.
 
- $1 + 11 + 37 = \framebox{049}$ is the correct answer
-
- ～\href{https://artofproblemsolving.com/wiki/index.php/User:Tonyttian}{Tonyttian}
+ $1 + 11 + 37 = \framebox{049}$ is the cor
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-We observe that $n+2$ and $n+3$ share no common prime factor, so $n+2$ divides $3(n+3)(n^2+9)$ if and only if $n+2$ divides $3(n^2+9)$.
-
- By dividing $\frac{3(n^2+9)}{n+2}$ either with long division or synthetic division, one obtains $3n-6+\frac{39}{n+2}$. This quantity is an integer if and only if $\frac{39}{n+2}$ is an integer, so $n+2$ must be a factor of 39. As in Solution 1, $n \in \{1,11,37\}$ and the sum is $\boxed{049}$.
-
- \begin{verbatim}
-NOTE: If you don't observe that it divides if and only if $n+2$ divides $3(n^2+9)$ you can still do synthetic division by expanding $3(n+3)(n^2+9)$ into $3n^3+9n^2+27n+81$ and get the same remainder. -unhappyfarmer
-\end{verbatim}
-
-
-
-
-
-\textbf{Solution 3 (modular arithmetic)}
-
-Let's express the right-hand expression in terms of mod $n + 2$.
-
- $3 \equiv 3 \pmod{n + 2}$.
-
- $n + 3 \equiv 1 \pmod{n + 2}$.
-
- $n^2 + 9 \equiv 13 \pmod{n + 2}$ since $n^2 - 4 \equiv 0 \pmod{n + 2}$ with a quotient $n - 2$
-
- $3(n + 3)(n^2 + 9) \equiv 3(1)(13) \pmod{n + 2} \equiv 39 \pmod{n + 2}$
-
- This means $39 = (n + 2)k \pmod{n + 2}$ where k is some integer.
-
- Note that $n + 2$ is positive, meaning $n + 2 \geq 3$.
-
- $n + 2$ is one of the factors of 39, so $n + 2 = 3, 13,$ or $39$, so $n = 1, 11,$ or $37$.
-
- The sum of all possible $n$ is $1 + 11 + 37 = \boxed{049}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4(Polynomial Remainder Theorem) fast and easy}
-
-For $n+2$ to be a divisor, the remainder needs to be divisible by $n+2$. Using polynomial remainder theorem, we can plug in $-2$ to get $39$ as our remainder. $\frac{39}{n+2}$ is an integer only when $n = 1, 11, 37$. Hence, the sum of all possible $n$ is $1 + 11 + 37 = \boxed{049}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5 (Synthetic Division on the Entire Polynomial)}
-
-
- \[3(n+3)(n^2+9)\]
- \[3(n^3 +3n^2 +9n + 27)\]
- \[3n^3 + 9n^2 + 27n + 81\].
- \[n+2 \ | \ 3n^3 + 9n^2 + 27n + 81\]
- \[\begin{array}{r|rrrr} -2 & 3 & 9 & 27 & 81 \\    &   & -6 & -6 & -42 \\ \hline    & 3 & 3 & 21 & \boxed{39} \end{array}\]
-
- 
- \[n+2 \ | \ 39\]
- \[n + 2 = \not{1}, 3, 13, 39 \ : \ n \in \mathbb{Z}^+\]
- \[n = 1, 11, 37\]
- \[\sum n = 1+11+37 = \boxed{\mathbf{49}}\].
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2025}) Four unit squares form a $2 \times 2$ grid. Each of the $12$ unit line segments forming the sides of the squares is colored either red or blue in such a way that each unit square has $2$ red sides and $2$ blue sides. One example is shown below (red is solid, blue is dashed). Find the number of such colorings.
@@ -302,8 +218,6 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
  
 
 
-
-
 	\item (\textit{AIME II 2025}) The product
  \[\prod^{63}_{k=4} \frac{\log_k (5^{k^2 - 1})}{\log_{k + 1} (5^{k^2 - 4})} = \frac{\log_4 (5^{15})}{\log_5 (5^{12})} \cdot \frac{\log_5 (5^{24})}{\log_6 (5^{21})}\cdot \frac{\log_6 (5^{35})}{\log_7 (5^{32})} \cdots \frac{\log_{63} (5^{3968})}{\log_{64} (5^{3965})}\]is equal to $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
 
@@ -329,8 +243,6 @@ Desired answer: $93 + 13 = \boxed{106}$
 
 
 
-
-
 \textbf{Solution 2}
 
 We can move the exponents to the front of the logarithms like this:\begin{align*}\frac{\log_4 (5^{15})}{\log_5 (5^{12})} \cdot \frac{\log_5 (5^{24})}{\log_6 (5^{21})}\cdot \frac{\log_6 (5^{35})}{\log_7 (5^{32})} \cdots = \frac{15\log_4 (5)}{12\log_5 (5)} \cdot \frac{24\log_5 (5)}{21\log_6 (5)}\cdot \frac{35\log_6 (5)}{32\log_7 (5)} \cdots\end{align*}
@@ -342,16 +254,12 @@ Multiplying these together gets us the original product, which is $\frac{31}{13}
 
 
 
-
-
 \textbf{Solution 3}
 
 Using logarithmic identities and the change of base formula, the product can be rewritten as 
  \[\prod_{k=4}^{63}\frac{k^2-1}{k^2-4}\frac{\log(k+1)}{\log(k)}\]. Then we can separate this into two series. The latter series is a telescoping series, and it can be pretty easily evaluated to be $\frac{\log(64)}{\log(4)}=3$. The former can be factored as $\frac{(k-1)(k+1)}{(k-2)(k+2)}$, and writing out the first terms could tell us that this is a telescoping series as well. Cancelling out the terms would yield $\frac{5}{2}\cdot\frac{62}{65}=\frac{31}{13}$. Multiplying the two will give us $\frac{93}{13}$, which tells us that the answer is $\boxed{106}$.
 
  
-
-
 
 
 
@@ -365,8 +273,6 @@ The product is equal to $\prod^{63}_{k=4} \frac{(k-1)(k+1)\log_k 5}{(k-2)(k+2)\l
  Thus the answer is $93+13=\boxed{106}$. 
 
  
-
-
 
 
 	\item (\textit{AIME II 2025}) Suppose $\triangle ABC$ has angles $\angle BAC = 84^\circ, \angle ABC=60^\circ,$ and $\angle ACB = 36^\circ.$ Let $D, E,$ and $F$ be the midpoints of sides $\overline{BC}, \overline{AC},$ and $\overline{AB},$ respectively. The circumcircle of $\triangle DEF$ intersects $\overline{BD}, \overline{AE},$ and $\overline{AF}$ at points $G, H,$ and $J,$ respectively. The points $G, D, E, H, J,$ and $F$ divide the circumcircle of $\triangle DEF$ into six minor arcs, as shown. Find $\widehat{DE}+2\cdot \widehat{HJ} + 3\cdot\widehat{FG},$ where the arcs are measured in degrees.
@@ -410,8 +316,6 @@ Notice that due to midpoints and properties of medial triangle, $\triangle DEF\s
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice that $\triangle ABC \sim \triangle FHE \sim \triangle DEF$ because $FE \parallel BC$ and $DE \parallel AB,$ so all angles in each triangle will be equal by the Midline Theorem. Therefore, we have $\widehat{DE} = 2 \cdot 36^\circ = 72^\circ.$ Now, quadrilateral $FHED$ is cyclic, so opposite angles add to $180^\circ.$ Since we know from similar triangles that $\angle{FED} = 60^\circ + 36^\circ = 96^\circ,$ we see that $\angle{HFD} = 84^\circ.$ We also know that $\angle{JFE} = 60^\circ + 36^\circ = 96^\circ,$ so that means $\angle{JFH} = 96^\circ - 84^\circ = 12^\circ \implies \widehat{JH} = 24^\circ.$ Finally, $\angle{B} = 60^\circ = \frac{\widehat{JED} - \widehat{FG}}{2}.$ 
@@ -423,8 +327,6 @@ NOTE: Several of the letters appear to be misused. For example, $\angle{FED}=60^
  NOTE2: It should be $\angle{HED}=60^\circ + 36^\circ = 96^\circ$ and $\angle{HFD} = 180^\circ - \angle{HED} = 84^\circ$. The same for $\angle{JFD}$, not $\angle{JFE}$.
 
  
-
-
 
 
 
@@ -444,8 +346,6 @@ Triangle $DEF$ is the median triangle of $ABC$. It's known that the circumcircle
  The purpose of this solution is to bring up the existence of the nine-point circle. Consequently, points $G$, $H$, and $J$ are not random, but are the intersections of the altitudes dropped from $A$, $B$, and $C$ respectively. It may not be used in this problem specifically, but is great information for the long run.
 
  
-
-
 
 
 	\item (\textit{AIME II 2025}) Circle $\omega_1$ with radius $6$ centered at point $A$ is internally tangent at point $B$ to circle $\omega_2$ with radius $15$. Points $C$ and $D$ lie on $\omega_2$ such that $\overline{BC}$ is a diameter of $\omega_2$ and ${\overline{BC} \perp \overline{AD}}$. The rectangle $EFGH$ is inscribed in $\omega_1$ such that $\overline{EF} \perp \overline{BC}$, $C$ is closer to $\overline{GH}$ than to $\overline{EF}$, and $D$ is closer to $\overline{FG}$ than to $\overline{EH}$, as shown. Triangles $\triangle {DGF}$ and $\triangle {CHG}$ have equal areas. The area of rectangle $EFGH$ is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -484,8 +384,6 @@ Let $GH=2x$ and $GF=2y$. Notice that since $\overline{BC}$ is perpendicular to $
 
 
 
-
-
 \textbf{Solution 2 (Faster)}
 
 Denote the intersection of $BC$ and $w_1$ as $P$, the intersection of $BC$ and $GH$ be $Q$, and the center of $w_2$ to be $O$. Additionally, let $EF = GH = a, FG = EH = b$. We have that $CP = 18$ and $PQ = 6-\frac{b}{2}$. Considering right triangle $OAD$, $AD = 12$. Letting $R$ be the intersection of $AD$ and $FG$, $DR = 12 - \frac{a}{2}$. Using the equivalent area ratios: 
@@ -494,8 +392,6 @@ Denote the intersection of $BC$ and $w_1$ as $P$, the intersection of $BC$ and $
  This equation gives $b=2a$. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} on triangle $GHE$ gives that $a^2+b^2 = 144$. Plugging the reuslt $b=2a$ into this equation gives that the area of the triangle is $\frac{288}{5} \to \boxed{293}$.
 
  
-
-
 
 
 
@@ -509,8 +405,6 @@ You can use your ruler to check that $GF=2GH.$ Then, we have $GF^2+GH^2=36,$ and
 
 
  
-
-
 
 
 
@@ -538,6 +432,12 @@ Squaring the second equation above gives
  
 
 
+
+\textbf{Solution 5(basic trig)}
+
+Let $m \angle AFB=\theta$. Then $GF=12\cos(\theta)$, and $FE=12\sin(\theta)$. Let $x=\cos(\theta)$, and $y=\sin(\theta)$. Then the area of rectangle $EFGH$ is $12x \cdot 12y = 144xy$. Let $O$ be the center of the biggest circle. Then $OA=9$, so $DA=12$ by the Pythagorean theorem. Let the intersection of $DA$ and $GF$ be $X$. Then the area of the top triangle is $\dfrac{DX \cdot GF}{2}=\dfrac{(12-6y)(12x)}{2}=18(2x-xy)$. Proceed similarly with the other triangle to get $[CGH]=18(4y-xy)$. Since these are equal, we can just set them equal and find $x$ and $y$. Setting them equal(divide by $18$ first) yields $4y-xy=2x-xy$, or $x=2y$. We also know by the definitions of sine and cosine that $x^2+y^2=1$, so $y=\dfrac{\sqrt{5}}{5}$ and $x=\dfrac{2\sqrt{5}}{5}$. Therefore, $144xy=144\cdot \dfrac{2}{5}=\dfrac{288}{5}$ which means that the answer is $288+5=\boxed{293}$.
+
+ 
 
 
 	\item (\textit{AIME II 2025}) Let $A$ be the set of positive integer divisors of $2025$. Let $B$ be a randomly selected subset of $A$. The probability that $B$ is a nonempty set with the property that the least common multiple of its elements is $2025$ is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -574,16 +474,12 @@ We split into different conditions:
 
 
 
-
-
 \textbf{Solution 2}
 
 We take the complement and use PIE. Suppose the LCM of the elements of the set is NOT $2025$. Since $2025=3^4 \cdot 5^2$, it must be that no element $x$ in the subset satisfies $v_3(x)=4$ OR no element $x$ in the subset satisfies $v_5(x)=2$ (in this case, $v_p(n)$ gives the exponent of $p$ in the prime factorization of $n$). For the first case, there are $4 \cdot 3 = 12$ possible divisors that could be in our subset ($v_3(x)=0,1,2,3,v_5(x)=0,1,2$ are possible), for a total count of $2^{12}$ subsets. In the second case, there are $5 \cdot 2 = 10$ possible divisors that could be in our subset, for a total count of $2^{10}$ subsets. However, if both conditions are violated, then there are $4 \cdot 2 = 8$ divisors that could be in our subset, for a total count of $2^8$ subsets. Hence, by PIE, the number of subsets whose LCM is NOT $2025$ is equal to $2^{12}+2^{10}-2^8$. The answer is then 
  \[1-\frac{2^{12}+2^{10}-2^8}{2^{5 \cdot 3}}=\frac{109}{128} \implies \boxed{237}.\]
 
  
-
-
 
 
 
@@ -603,8 +499,6 @@ Write numbers in the form of $3^{a}5^{b}$ where $0\leq a\leq 4; 0\leq b\leq 2$
  The answer is then $\frac{2^8(15+30+64)}{2^{15}}=\frac{109}{128}\implies \boxed{237}$.
 
  
-
-
 
 
 
@@ -636,8 +530,6 @@ $\textbf{Case 2}$: $2025$ is not in $B$.
  Therefore, the desired probability is $\frac{2^{14}+3\cdot15\cdot2^8}{2^{15}}=\frac{2^{6}+3\cdot15}{2^{7}}=\frac{64+45}{128}=\frac{109}{128}$, so $m+n=109+128=\boxed{237}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2025}) From an unlimited supply of $1$-cent coins, $10$-cent coins, and $25$-cent coins, Silas wants to find a collection of coins that has a total value of $N$ cents, where $N$ is a positive integer. He uses the so-called $\textit{greedy algorithm}$, successively choosing the coin of greatest value that does not cause the value of his collection to exceed $N$. For example, to get $42$ cents, Silas will choose a $25$-cent coin, then a $10$-cent coin, then $7$ $1$-cent coins. However, this collection of $9$ coins uses more coins than necessary to get a total of $42$ cents; indeed, choosing $4$ $10$-cent coins and $2$ $1$-cent coins achieves the same total value with only $6$ coins. 
@@ -691,14 +583,7 @@ We begin by noting that all values of $N \leq 25$ work without issue.
 
  The base case of $n=30$ or equivalently $m=0$ is shown in Solution 1. Then, if the claim is true for $m=k$ for some non-negative integer $k$, then consider that for $m=k+1$ (i.e $n$ is increased by $25$), the greedy algorithm will first choose a $25$ cent coin for each of the $25$ numbers in the list, which reduces the problem to finding the numbers that succeeds for $m=k$. Hence, by induction, the claim is true.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2025}) There are $n$ values of $x$ in the interval $0<x<2\pi$ where $f(x)=\sin(7\pi\cdot\sin(5x))=0$. For $t$ of these $n$ values of $x$, the graph of $y=f(x)$ is tangent to the $x$-axis. Find $n+t$.
@@ -722,8 +607,6 @@ We know that $-1\le \sin{5x} \le 1$, so clearly $k$ takes all values $-7\le k \l
 
 
 
-
-
 \textbf{Solution 2 (Calculus)}
 
 For $f(x)=0$, we must have $7\pi\cdot\sin(5x)=k\pi$ for some integer $k$. Then $\sin(5x)=\frac{k}{7}$ always satisfies the equation. Notice that on each period of $\sin(5x)$, each $k\in\{-6,-5,\ldots,5,6\}$ is a $y$-value at two distinct points, and each $k=\pm7$ is a $y$-value at one point each. Thus each period has $13\cdot2+2\cdot1=28$ points satisfying the equation. Since the period is $\frac{2\pi}{5}$ and the domain has a length of $2\pi$, we find that $5$ periods occur in our domain if we include $x=0,2\pi$. Adding the case where $x=0$, there are a total of $28\cdot5+1=141$ roots over $x\in[0,2\pi]$. Subtracting the cases at $x=0$ and $x=2\pi$ yields $139$ total roots. This is our $n$.
@@ -741,8 +624,6 @@ Next, we take the derivative of $f(x)$; using a hideous combination of chain rul
  As a result, $t=10+0=10$, so $n+t=139+10=\boxed{149}$. 
 
  
-
-
 
 
 	\item (\textit{AIME II 2025}) Sixteen chairs are arranged in a row. Eight people each select a chair in which to sit so that no person sits next to two other people. Let $N$ be the number of subsets of $16$ chairs that could be selected. Find the remainder when $N$ is divided by $1000$.
@@ -899,15 +780,11 @@ Finally,
 
 
 
-
-
 \textbf{Solution 2 and 3 Remark}
 
 There is a clarification for solution 2, but really solution 2 and 3 follow the same two main concepts. Casework and stars and bars. Solution 2 directly solves each case while solution 3 includes each case in its summation.~Bigbrain\_2009
 
  
-
-
 
 
 
@@ -938,8 +815,6 @@ Let's split the problem into a few cases:
 
 
 
-
-
 \textbf{Solution 3 (Stars-and-bars)}
 
 Let $n$ be the number of groups of adjacent people.
@@ -950,14 +825,7 @@ Let $n$ be the number of groups of adjacent people.
 
  Thus, the total number of arrangements is $\binom{n}{8-n} \binom{9}{9-n}$. Summing this from $n=4$ to $n=8$ yields $\sum_{n=4}^{8} \binom{n}{8-n} \binom{9}{9-n} = 2907 \equiv \boxed{907} \pmod{1000}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2025}) Let $S$ be the set of vertices of a regular $24$-gon. Find the number of ways to draw $12$ segments of equal lengths so that each vertex in $S$ is an endpoint of exactly one of the $12$ segments.
@@ -990,11 +858,56 @@ The segments we draw must be of equal length, corresponding to a specific step s
 
  ($k = 4$): $\gcd(4, 24) = 4$, cycle length 6, $(2^4 = 16)$ matchings.
 
- ($k = 5$): 
+ ($k = 5$): $\gcd(5, 24) = 1$, cycle length 24, 2 matchings.
+
+ ($k = 6$): $\gcd(6, 24) = 6$, cycle length 4, $(2^6 = 64)$ matchings.
+
+ ($k = 7$): $\gcd(7, 24) = 1$, cycle length 24, 2 matchings.
+
+ ($k = 8$): $\gcd(8, 24) = 8$, cycle length 3 (invalid, no matchings).
+
+ ($k = 9$): $\gcd(9, 24) = 3$, cycle length 8, $(2^3 = 8)$ matchings.
+
+ ($k = 10$): $\gcd(10, 24) = 2$, cycle length 12, $(2^2 = 4)$ matchings.
+
+ ($k = 11$): $\gcd(11, 24) = 1$, cycle length 24, 2 matchings.
+
+ ($k = 12$): $\gcd(12, 24) = 12$, cycle length 2, 1 matching.
+
+ Summing these values: $2 + 4 + 8 + 16 + 2 + 64 + 2 + 0 + 8 + 4 + 2 + 1 = \boxed{113}$.
 
  
 
 
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_11_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ As daunting as it seems, there is actually a very nice way to approach this problem. In the 24-gon, we have a total of 252 diagonals.
+
+ The problem simply asks for how many possible diagonals can we use to connect all vertices exactly once so that all such connections are of equal length.
+
+ To solve this, consider the 12-gons that are inscribed in the 24-gon. We have two such 12-gons that could exist, ones with vertices on the even indices, and ones with vertices on the odd indices. Every single 12-gon contributes 54 diagonals, all of which are shared by both the 24-gon and 12-gon. This implies that because the 12-gon shares these vertices with the 24-gon, not enough diagonals of that length can actually be formed to conjoin two vertices in $S$. So, we have to subtract these.
+
+ WLOG consider the dodecagon with vertices on odd indices. The octagon with sides on the even vertices of this dodecagon also contribute 20 diagonals that are shared within the 24-gon not apart of the 12-gon particularly. We have to "overcount" here because if we were to consider the octagon apart of the 24-gon set instead of the 12-gon set, we do not consider the diagonals of the 12-gon set. So by technicality, not overcounting is undercounting here. Only one such octagon can be formed as otherwise we will overcount if the octagon is on the same odd indices of the dodecagon, as NOW if we remove the dodecagon, the diagonals of the octagon are already considered in the dodecagon. 
+
+ By now one can see the pattern. Consider the hexagon inscribed within the octagon, and it must have its vertices on the odd indices. This doesn't overcount as they aren't relative to any diagonal part of the dodecagon, they are just inscribed within the octagon. We have 9 diagonals.
+
+ Finally, consider the square inscribed in the hexagon, we have 2 diagonals.
+
+ Because the two diagonals of the square are equal, the next polygon cannot be inscribed within the square, and therefore the counting ends here.
+
+ The number of remaining diagonals can all be used to create sets, that satisfy the problem requirements. The number of ways we can construct such sets is the number of remaining diagonals, or $252- 2\cdot 54 - 20 - 9 - 2 =  \boxed{113}$.
+
+ We do not multiply $54+20+9+2$ by 2 because the octagon, hexagon, etc. formed are all uniquely determined not dependent on the dodecagon placement itself, rather on the diagonals of the dodecagon.
+
+ 
 
 
 	\item (\textit{AIME II 2025}) Let $A_1A_2\dots A_{11}$ be an $11$-sided non-convex simple polygon with the following properties:
@@ -1027,8 +940,6 @@ Taking the positive solution gives $m + n + p + q = 1 + 9 + 5 + 4 = \boxed{\text
  -Benedict T (countmath1)
 
  
-
-
 
 
 
@@ -1084,8 +995,6 @@ Let $A_1 A_2 = a_1, A_1 A_3 = a_2, ... A_1 A_{10} = a_9, A_1 A_11 a_{10}$. Now t
  
 
 
-
-
 	\item (\textit{AIME II 2025}) Let the sequence of rationals $x_1,x_2,\dots$ be defined such that $x_1=\frac{25}{11}$ and
 
  \[x_{k+1}=\frac{1}{3}\left(x_k+\frac{1}{x_k}-1\right)\] for all $k \geq 1$. Then $x_{2025}$ can be expressed as $\frac{m}{n}$ for relatively prime positive integers $m$ and $n$. Find the remainder when $m+n$ is divided by $1000$.
@@ -1135,8 +1044,6 @@ This problem can be split into three parts, listed below:
 
 
 
-
-
 \textbf{Solution 2 (Faster)}
 
 Note that $x_{k+1} = \frac{1}{3}\left( \frac{(x_k)^{2} - x_k + 1}{x_k} \right)$. An astute reader might recognize the top part as one part of a sum of cubes. I multiplied the entire expression by $x_k + 1$, moved things around a bit, simplified, and was left with the following generalization:$x_{k+1} = \frac{(x_k)^{3} + 1}{3x_k(x_k + 1)}$. Now, we do the following:Set $x_k = \frac{m_k}{n_k}$. Therefore, $x_{k+1} = \frac{m_{k+1}}{n_{k+1}}$. We plug these expressions into the $x_k$ and $x_{k+1}$ and simplify to get: $\frac{m_{k+1}}{n_{k+1}} = \frac{(m_k)^{3} + (n_k)^{3}}{3(m_k)(n_k)(m_k + n_k)}$. Now, as we are looking for the sum of the numerators and denominators of $x_{2025}$, this is great! Now, recall that we want the fraction to be simplest. So we have to cancel out anything we can. Canceling out the factor of $m_k + n_k$ from the numerator and denominator leaves us with $\frac{m_{k+1}}{n_{k+1}} = \frac{(m_k)^{2} - (m_k)(n_k) + (n_k)^{2}}{3(m_k)(n_k)}$. Now, adding the numerator and denominator as well as keeping the extra factor of $3$, we get: 3($m_{k+1} + n_{k+1}) = (m_k)^{2} + 2(m_k)(n_k) + (n_k)^{2}$. Nicely, we get the recursion that $m_{k+1} + n_{k+1} = \frac{(m_k + n_k)^{2}}{3}$. Now, by listing out terms using this recursion and doing mod(1000), we get our answer of $\boxed{248}$.
@@ -1168,14 +1075,7 @@ Note: this works, but why are we able to add the numerator and denominator? What
 
  $\frac{m_{k + 1}}{n_{k + 1}} = \frac{m_k^2 - m_k n_k + n_k^2}{3m_k n_k} = \frac{\frac{m_k^2 - m_k n_k + n_k^2}{3}}{m_k n_k}$ and thus $m_{k + 1} + n_{k + 1} = \frac{m_k^2 - m_k n_k + n_k^2}{3} + m_k n_k = \frac{m_k^2 - m_k n_k + n_k^2 + 3m_k n_k}{3} = \frac{(m_k + n_k)^2}{3}$ but recall that this was only true if $3 | (x + y)^2 = (m_k + n_k)^2$ and thus this would always be an integer. So this proves the claim. A similar argument follows when $3$ does not divide $(x + y)^2$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2025}) Let ${\triangle ABC}$ be a right triangle with $\angle A = 90^\circ$ and $BC = 38.$ There exist points $K$ and $L$ inside the triangle such
@@ -1201,8 +1101,6 @@ From the given condition, we get $\angle{LAK}=60^{\circ}$ and $\triangle{LCA}, \
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -1225,8 +1123,6 @@ From the given condition, we get $\angle{LAK}=60^{\circ}$ and $\triangle{LCA}, \
 
 
 
-
-
 \textbf{Solution 3 (coordinates and bashy algebra)}
 
 By drawing out the triangle, I set $A$ to be $(0, 0)$ in the coordinate plane. I set $C$ to be $(x, 0)$ and B to be $(0, y)$. I set $K$ to be $(a, b)$ and $L$ to be $(c, d)$. Then, since all of these distances are $14$, I used coordinate geometry to set up the following equations:$a^{2} + b^{2} = 196$; $a^{2} + (b - y)^{2} = 196$; $(a - c)^{2} + (b - d)^{2} = 196$; $c^{2} + d^{2} = 196$; $(c - x)^{2} + d^{2} = 196$. Notice by merging the first two equations, the only possible way for it to work is if $b - y = -b$ which means $y = 2b$. Next, since the triangle is right, and we know one leg is $2b$ as $y = 2b$, the other leg, $x$, is $\sqrt{38^{2} - (2b)^{2}}$.We now have:
@@ -1242,8 +1138,6 @@ By drawing out the triangle, I set $A$ to be $(0, 0)$ in the coordinate plane. I
  Expanding equation (4) and simplifying, we end with $38^{2} - 4b^{2} = 2c \cdot \sqrt{38^{2} - 4b^{2}}$. Next, squaring both sides and canceling terms, we have $4 \cdot 19^{2} - 4b^{2} = 4c^{2}$ which tells us that $c^{2} = 19^{2} - b^{2}$. Now, plugging this value in into equation (3) tells us that $d^{2} = 196 - 19^{2} + b^{2}$. We expand equation (2) to get $a^{2} - 2ac + c^{2} + b^{2} - 2bd + d^{2} = 196$. Using equation (1), we can cancel terms and shift things over to get $196 = 2ac + 2bd$ which means $98 = ac + bd$. From equation (1), we have $a^{2} = 196 - b^{2}$. Now, plugging in all of our variables in terms of $b$ to this new equation, we have $98 = \sqrt{(361 - b^{2})(196 - b^{2})} + b\sqrt{b^{2} - 165}$. We now move things over to get $98 - b\sqrt{b^{2} - 165} = \sqrt{(361 - b^{2})(196 - b^{2})}$. Squaring both sides and canceling, we have $98^{2} - 196b\sqrt{b^{2} - 165} = (361)(196) - 392b^{2}$. We can now divide both sides by $196$ to get $49 - b\sqrt{b^{2} - 165} = 361 - 2b^{2}$. Rearranging and simplifying, we now have $2b^{2} - 312 = b\sqrt{b^{2} - 165}$. Squaring both sides and combining like terms, we have $3b^{4} - 1083b^{2} + 312^{2} = 0$. This part will be a bit of a bash. Quadratic Formula tells us that $b^{2} = \frac{1083 \pm \sqrt{1083^{2} - 12 \cdot 312^{2}}}{6}$. The discriminant nicely simplifies to $\sqrt{4761} = 69$(this will be an extremely long bash but it's worth it). In fact, after computing, we end up with $b^{2} = 192, 169$. This leads us to solutions of $b = 8\sqrt{3}, 13$. If we choose $b = 8\sqrt{3}$, then $c^{2} = 361 - b^{2} = 361 - 192 = 169$ which tells us that $c = 13$.(In fact if you choose $b = 13$, then $c = 8\sqrt{3}$ so it's symmetrical and doesn't matter which one you choose). Next, $a^{2} = 196 - b^{2} = 196 - 192 = 4$ which tells us that $a = 2$. Finally, $d^{2} = 196 - c^{2} = 196 - 169 = 27$ which tells us that $d = 3\sqrt{3}$. Therefore, after all the bashing, our solution quadruple is $a = 2, b = 8\sqrt{3}, c = 13, d = 3\sqrt{3}$. Now plugging in all the points and using the Pythagorean Theorem, we get the coordinates of the quadrilateral which are $(0, 16\sqrt{3}), (2, 8\sqrt{3}), (13, 3\sqrt{3})$, and $(26, 0)$. By Shoelace, our area is $104\sqrt{3}$. Thus, the answer is $\boxed{104}$.
 
  
-
-
 
 
 
@@ -1277,8 +1171,6 @@ By drawing out the triangle, I set $A$ to be $(0, 0)$ in the coordinate plane. I
  We see that $n=\boxed{104}$.
 
  
-
-
 
 
 
@@ -1327,8 +1219,6 @@ By drawing out the triangle, I set $A$ to be $(0, 0)$ in the coordinate plane. I
  Therefore, $n=\boxed{104}$.
 
  
-
-
 
 
 
@@ -1405,8 +1295,6 @@ Consider a diagram to the original problem (credit to solution 4):
 
 
 
-
-
 \textbf{Solution 7 (analytic geometry with roots of unity)}
 
 
@@ -1465,8 +1353,6 @@ Consider a diagram to the original problem (credit to solution 4):
 
 
 
-
-
 \textbf{Solution 8}
 
 
@@ -1491,15 +1377,11 @@ Consider a diagram to the original problem (credit to solution 4):
 
 
 
-
-
 \textbf{Solution 9}
 
 $\triangle KAL$ is clearly equilateral, and $\triangle AKB$ and $\triangle ALC$ are clearly isosceles. Now, we can do a bit of angle chasing. Say $\angle AKB = 2\theta$. Then, since $\triangle AKB$ is isosceles, $\angle ABK = 90^\circ - \theta$. $\angle KAL = 60^\circ$, so $\angle LAC = \theta - 60^\circ$, so $\angle ALC = 300^\circ - 2\theta$, so $\angle KLC = 2\theta$. Since the angles are congruent, $\triangle AKB$ is congruent to $\triangle KLC$ by SAS. As such, we can rotate it around the center of $\triangle KAL$ onto side $\overline{AL}$ to produce $\triangle LAD$. Because all the triangles are congruent, connecting the congruent corners will all produce the same length. From $BC$, we see that this same length is $38$, so $\triangle BCD$ is equilateral with side length $38$. This triangle is comprised of 3 quadrilaterals and $\triangle KAL$ in the center, and it's easy to see that each quadrilateral is congruent to $BKLC$. As such, $[BKLC] = \frac{[BCD]-[KAL]}{3} = \frac{361 \sqrt{3} - 49 \sqrt{3}}{3} = 104 \sqrt{3}$, giving an answer of $\boxed{104}$. 
 
  
-
-
 
 
 
@@ -1510,7 +1392,9 @@ $\triangle KAL$ is clearly equilateral, and $\triangle AKB$ and $\triangle ALC$ 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_14_Solution_Figure_9.png}
                     \end{figure}
-                    We observe that the desired area can be found by subtracting the areas of the three smaller triangles $\triangle BAK$, $\triangle KAL$, and $\triangle LAC$ from the area of the large triangle $\triangle ABC$. This can be expressed as \([ABC]-[BAK]-[KAL]-[LAC]\). Thus, our goal is to compute these four areas.
+                    
+
+ We observe that the desired area can be found by subtracting the areas of the three smaller triangles $\triangle BAK$, $\triangle KAL$, and $\triangle LAC$ from the area of the large triangle $\triangle ABC$. This can be expressed as \([ABC]-[BAK]-[KAL]-[LAC]\). Thus, our goal is to compute these four areas.
 
  Since $\triangle KAL$ is equilateral with side length $14$, its area is
  \[[KAL]=\frac{14^2\sqrt{3}}{4}=49\sqrt{3}.\]
@@ -1565,8 +1449,6 @@ $\triangle KAL$ is clearly equilateral, and $\triangle AKB$ and $\triangle ALC$ 
 
 
 
-
-
 \textbf{Solution 12}
 
 Suppose the coordinates of $A(0, 0)$, $B(0, 2b)$, $C(2a, 0)$, $K(d, b)$, $L(a, c)$ because $K$ and $L$ lie on the perpendicular bisector of $AB$ and $AC$ respectively. According to the lengths given, we have
@@ -1584,11 +1466,7 @@ Suppose the coordinates of $A(0, 0)$, $B(0, 2b)$, $C(2a, 0)$, $K(d, b)$, $L(a, c
 
  The answer is $\boxed{104}$.
 
- \textbf{Remarks} This problem can be approached either by analytic geometry or by trigonometric manipulation. The characteristics of this problem make it highly similar to \href{https://artofproblemsolving.com/wiki/index.php?title=2017\_AIME\_I\_Problems/Problem\_15}{2017 AIME I Problem 15}.
-
  
-
-
 
 
 	\item (\textit{AIME II 2025}) There are exactly three positive real numbers $k$ such that the function
@@ -1633,8 +1511,6 @@ This can be done because $n$ is a constant, and for the equation to be true for 
 
 
 
-
-
 \textbf{Solution 2 (AM-GM)}
 
 Consider the function\begin{align*}f(x) = \frac{(x - 18)(x - 98)(x - 72)(x - k)}{x^2}.\end{align*}
@@ -1670,8 +1546,6 @@ Thus, \(y_1 = y_2 \) gives \( 2(\sqrt{98 \times k})-(98+k) = -18 \), and the min
 
 
 
-
-
 \textbf{Solution 3 (elegant polynomial)}
 
 We first do the same thing as Solution 1 did, but in mathematical language.
@@ -1695,8 +1569,6 @@ We first do the same thing as Solution 1 did, but in mathematical language.
  $8+32+200=\boxed{240}$
 
  
-
-
 
 
 
@@ -1750,14 +1622,7 @@ What this problem is asking is to choose $k$ for which there exists a real $c$ w
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 \end{enumerate}

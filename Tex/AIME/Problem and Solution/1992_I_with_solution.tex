@@ -18,8 +18,6 @@ There are 8 \href{https://artofproblemsolving.com/wiki/index.php?title=Fraction}
 
 
 
-
-
 \textbf{Solution 2}
 
 By \href{https://artofproblemsolving.com/wiki/index.php?title=Euler\%27s\_Totient\_Function}{Euler's Totient Function}, there are $8$ numbers that are relatively prime to $30$, less than $30$. Note that they come in pairs $(m,30-m)$ which result in sums of $1$; thus the sum of the smallest $8$ rational numbers satisfying this is $\frac12\cdot8\cdot1=4$. Now refer to solution 1.
@@ -28,15 +26,11 @@ By \href{https://artofproblemsolving.com/wiki/index.php?title=Euler\%27s\_Totien
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that if $x$ is a solution, then $(300-x)$ is a solution. We know that $\phi(300) = 80.$ Therefore the answer is $\frac{80}{2} \cdot\frac{300}{30} = \boxed{400}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) A positive integer is called ascending if, in its decimal representation, there are at least two digits and each digit is less than any digit to its right. 
@@ -62,18 +56,6 @@ Note that an ascending number is exactly determined by its \href{https://artofpr
  
 
 
-
-
-
-\textbf{Solution 2}
-
-We see that we can express the number of ways for a 2 digit number as $\binom{8}{1}+\binom{7}{1}...\binom{1}{1}$ and a 3 digit number as $\binom{8}{2}+\binom{7}{2}+...\binom{2}{2}$ this is because once we choose the first number the next two numbers can be any two of the numbers above it. Using the hockey stick identity repeatedly we can get $\binom{9}{2}+\binom{9}{3}+...+\binom{9}{9}$. We know that $\binom{n}{0}+\binom{n}{1}+...\binom{n}{n}=2^n$ this can be proved easily by story. If you have n people and you want to know how many ways you can make a group of any size you could do this $2$ ways. You could count everyone is binary in or out so $2^n$ or you could count each case individually: $\binom{n}{0}+\binom{n}{1}+...\binom{n}{n}$ so the 2 statements are equivalent. Therfore we have $2^9-\binom{9}{1}-\binom{9}{0}=\boxed{502}$Note how you could have skipped the hockey stick step by choosing all the numbers first.
-
- 
-
-
-
-
 	\item (\textit{AIME I 1992}) A tennis player computes her win ratio by dividing the number of matches she has won by the total number of matches she has played. At the start of a weekend, her win ratio is exactly $0.500$. During the weekend, she plays four matches, winning three and losing one. At the end of the weekend, her win ratio is greater than $.503$. What's the largest number of matches she could've won before the weekend began?
 
 
@@ -92,16 +74,12 @@ Let $n$ be the number of matches won, so that $\frac{n}{2n}=\frac{1}{2}$, and $\
 
 
 
-
-
 \textbf{Solution 2 (same as solution 1)}
 
 Let $n$ be the number of matches she won before the weekend began. Since her win ratio started at exactly .$500 = \frac{1}{2},$ she must have played exactly $2n$ games total before the weekend began. After the weekend, she would have won $n+3$ games out of $2n+4$ total. Therefore, her win ratio would be $(n+3)/(2n+4).$ This means that
  \[\frac{n+3}{2n+4} > .503 = \frac{503}{1000}.\]Cross-multiplying, we get $1000(n+3) > 503(2n+4),$ which is equivalent to $n < \frac{988}{6} = 164.\overline{6}.$ Since $n$ must be an integer, the largest possible value for $n$ is $\boxed{164}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) In Pascal's Triangle, each entry is the sum of the two entries above it. The first few rows of the triangle are shown below.
@@ -144,8 +122,6 @@ Consider what the ratio means. Since we know that they are consecutive terms, we
 
 
 
-
-
 \textbf{Solution 2}
 
 Call the row $x=t+k$, and the position of the terms $t-1, t, t+1$. Call the middle term in the ratio $N = \dbinom{t+k}{t} = \frac{(t+k)!}{k!t!}$. The first term is $N \frac{t}{k+1}$, and the final term is $N \frac{k}{t+1}$. Because we have the ratio $3:4:5$,
@@ -161,11 +137,6 @@ Call the row $x=t+k$, and the position of the terms $t-1, t, t+1$. Call the midd
  -Solution and LaTeX by jackshi2006, variables and algebra simplified by oinava
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 1992}) Let $S^{}_{}$ be the set of all rational numbers $r^{}_{}$, $0^{}_{}<r<1$, that have a repeating decimal expansion in the form $0.abcabcabc\ldots=0.\overline{abc}$, where the digits $a^{}_{}$, $b^{}_{}$, and $c^{}_{}$ are not necessarily distinct. To write the elements of $S^{}_{}$ as fractions in lowest terms, how many different numerators are required?
@@ -203,8 +174,6 @@ We consider the method in which repeating decimals are normally converted to fra
  
 
 
-
-
 	\item (\textit{AIME I 1992}) For how many pairs of consecutive integers in $\{1000,1001,1002^{}_{},\ldots,2000\}$ is no carrying required when the two integers are added?
 
 
@@ -224,8 +193,6 @@ For one such pair of consecutive integers, let the smaller integer be $\underlin
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider what carrying means: If carrying is needed to add two numbers with digits $abcd$ and $efgh$, then $h+d\ge 10$ or $c+g\ge 10$ or $b+f\ge 10$. 6.  Consider $c \in \{0, 1, 2, 3, 4\}$. $1abc + 1ab(c+1)$ has no carry if $a, b \in \{0, 1, 2, 3, 4\}$. This gives $5^3=125$ possible solutions. 
@@ -236,8 +203,6 @@ Consider what carrying means: If carrying is needed to add two numbers with digi
 
 
 
-
-
 \textbf{Solution 3}
 
 Consider the ordered pair $(1abc , 1abc - 1)$ where $a,b$ and $c$ are digits. We are trying to find all ordered pairs where $(1abc) + (1abc - 1)$ does not require carrying. For the addition to require no carrying, $2a,2b < 10$, so $a,b < 5$ unless $1abc$ ends in $00$, which we will address later.  Clearly, if $c \in \{0, 1, 2, 3, 4 ,5\}$, then adding $(1abc) + (1abc - 1)$ will require no carrying. We have $5$ possibilities for the value of $a$, $5$ for $b$, and $6$ for $c$, giving a total of $(5)(5)(6) = 150$, but we are not done yet.
@@ -245,8 +210,6 @@ Consider the ordered pair $(1abc , 1abc - 1)$ where $a,b$ and $c$ are digits. We
  We now have to consider the cases where $b,c = 0$, specifically when $1abc \in \{1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000\}$. We can see that $1100, 1200, 1300, 1400, 1500$, and $2000$ all work, giving a grand total of $150 + 6 = \boxed{156}$ ordered pairs.
 
  
-
-
 
 
 
@@ -263,8 +226,6 @@ Since there are $2000-1000+1 = 1001$ numbers in the set, this means that there a
  In total, there are $1000 - 499 - 245 - 100 = \boxed{156}$ consecutive pairs.
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) Faces $ABC^{}_{}$ and $BCD^{}_{}$ of tetrahedron $ABCD^{}_{}$ meet at an angle of $30^\circ$. The area of face $ABC^{}_{}$ is $120^{}_{}$, the area of face $BCD^{}_{}$ is $80^{}_{}$, and $BC=10^{}_{}$. Find the volume of the tetrahedron.
@@ -285,8 +246,6 @@ Since the area $BCD=80=\frac{1}{2}\cdot10\cdot16$, the perpendicular from $D$ to
 
 
 
-
-
 \textbf{Solution 2}
 
 The area of $ABC$ is 120 and $BC$=10, the slant height is 24. Height from $A$ to $BCD$ is $24 \cdot \sin 30^\circ=12$. Since area of $BCD$ is 80, the volume of tetrahedron $ABCD$= $\frac{80\cdot12}{3}=\boxed{320}$.
@@ -295,8 +254,6 @@ The area of $ABC$ is 120 and $BC$=10, the slant height is 24. Height from $A$ to
 
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) For any sequence of real numbers $A=(a_1,a_2,a_3,\ldots)$, define $\Delta A^{}_{}$ to be the sequence $(a_2-a_1,a_3-a_2,a_4-a_3,\ldots)$, whose $n^{th}$ term is $a_{n+1}-a_n^{}$. Suppose that all of the terms of the sequence $\Delta(\Delta A^{}_{})$ are $1^{}_{}$, and that $a_{19}=a_{92}^{}=0$. Find $a_1^{}$.
@@ -316,8 +273,6 @@ Note that the $\Delta$s are reminiscent of differentiation; from the condition $
  Thus, $a_1=\frac{1}{2}(1-19)(1-92)=\boxed{819}$.
 
  
-
-
 
 
 
@@ -341,8 +296,6 @@ Let $\Delta^1 A=\Delta A$, and $\Delta^n A=\Delta(\Delta^{(n-1)}A)$.
 
 
 
-
-
 \textbf{Solution 3}
 
 The sequence $\Delta(\Delta A)$ is the second finite difference sequence, and the first $k-1$ terms of this sequence can be computed in terms of the original sequence as shown below.
@@ -363,8 +316,6 @@ The sequence $\Delta(\Delta A)$ is the second finite difference sequence, and th
  Kris17
 
  
-
-
 
 
 
@@ -396,8 +347,6 @@ Start with this (from Solution 3):
 
 
 
-
-
 \textbf{Solution 4}
 
 Since all terms of $\Delta(\Delta A)$ are 1, we know that $\Delta A$ looks like $(k,k+1,k+2,...)$ for some $k$. This means $A$ looks like $(a_1,a_1+k,a_1+2k+1,a_1+3k+3,a_1+4k+6,...)$. More specifically, $A_n=a_1+k(n-1)+\frac{(n-1)(n-2)}{2}$. Plugging in $a_{19}=a_{92}=0$, we have the following linear system: 
@@ -411,15 +360,11 @@ Since all terms of $\Delta(\Delta A)$ are 1, we know that $\Delta A$ looks like 
 
 
 
-
-
 \textbf{Solution 5}
 
 Since the result of two finite differences of some sequence is a constant sequence, we know that sequence is a quadratic. Furthermore, we know that $f(19) = f(92) = 0$ so the quadratic is $f(x) = a(x-19)(x-92)$ for some constant $a.$ Now we use the conditions that the finite difference is $1$ to find $a.$ We know $f(19) = 0$ and $f(20) = -72a$ and $f(18) = 74a.$ Therefore applying finite differences once yields the sequence $-74a,-72a$ and then applying finite differences one more time yields $2a$ so $a =\frac{1}{2}.$ Therefore $f(1) = 9 \cdot 91 = \boxed{819}.$
 
  
-
-
 
 
 
@@ -438,8 +383,6 @@ Now, cross multiplying, we find that
  
 
 
-
-
 	\item (\textit{AIME I 1992}) Trapezoid $ABCD^{}_{}$ has sides $AB=92^{}_{}$, $BC=50^{}_{}$, $CD=19^{}_{}$, and $AD=70^{}_{}$, with $AB^{}_{}$ parallel to $CD^{}_{}$. A circle with center $P^{}_{}$ on $AB^{}_{}$ is drawn tangent to $BC^{}_{}$ and $AD^{}_{}$. Given that $AP^{}_{}=\frac mn$, where $m^{}_{}$ and $n^{}_{}$ are relatively prime positive integers, find $m+n^{}_{}$.
 
 
@@ -456,99 +399,6 @@ Let $AP=x$ so that $PB=92-x.$ Extend $AD, BC$ to meet at $X,$ and note that $XP$
  \[\frac{xy-70}{y(92-x)-50} = \frac{XD}{XC} = \frac{ED}{EC}=\frac{AP}{PB} = \frac{x}{92-x},\] which we can rearrange, expand and cancel to get $120x=70\cdot 92,$ hence $AP=x=\frac{161}{3}$. This gives us a final answer of $161+3=\boxed{164}$
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-Let $AB$ be the base of the trapezoid and consider angles $A$ and $B$.  Let $x=AP$ and let $h$ equal the height of the trapezoid.  Let $r$ equal the radius of the circle.
-
- Then
-
- 
- \[\sin{A}= \frac{r}{x} = \frac{h}{70}\qquad\text{ and }\qquad\sin{B}= \frac{r}{92-x}  =  \frac{h}{50}.\tag{1}\]
-
- Let $z$ be the distance along $AB$ from $A$ to where the perp from $D$ meets $AB$. 
-
- Then $h^2 +z^2 =70^2$  and $(73-z)^2 + h^2 =50^2$  so $h =\frac{\sqrt{44710959}}{146}$. We can substitute this into $(1)$ to find that $x= \frac{11753}{219} = \frac{161}{3}$ and $m+n = 164$.
-
- \textbf{Remark:} One can come up with the equations in $(1)$ without directly resorting to trig. From similar triangles, $h/r = 70/x$  and $h/r = 50/ (92-x)$. This implies that $70/x =50/(92-x)$, so $x = 161/3$.
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-From $(1)$ above, $x = \frac{70r}{h}$ and $92-x = \frac{50r}{h}$. Adding these equations yields $92 = \frac{120r}{h}$. Thus, $x = \frac{70r}{h} = \frac{7}{12}\cdot\frac{120r}{h} = \frac{7}{12}\cdot92 = \frac{161}{3}$, and $m+n = \boxed{164}$.
-
- We can use $(1)$ from Solution 1 to find that $h/r = 70/x$  and $h/r = 50/ (92-x)$.
-
- This implies that  $70/x =50/(92-x)$ so $x = 161/3$
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Extend $AD$ and $BC$ to meet at a point $X$. Since $AB$ and $CD$ are parallel, $\triangle XCD \sim \triangle XAB$. If $XA$ is further extended to a point $A'$ and $XB$ is extended to a point $B'$ such that $A'B'$ is tangent to circle $P$, we discover that circle $P$ is the incircle of triangle $XA'B'$. Then line $XP$ is the angle bisector of $\angle AXB$. By homothety, $P$ is the intersection of the angle bisector of $\triangle XAB$ with $AB$. By the angle bisector theorem, 
-
- 
- \begin{align*} \frac{AX}{AP} &= \frac{XB}{BP}\\ \frac{AX}{AP} - \frac{XD}{AP} &= \frac{XB}{BP} - \frac{XC}{BP}\\ \frac{AD}{AP} &= \frac{BC}{BP}\\ &=\frac{7}{5} \end{align*}
-
-
- Let $7a = AP$, then $AB = 7a + 5a = 12a$. $AP = \frac{7}{12}(AB) = \frac{92\times 7}{12} = \frac{161}{3}$. Thus, $m + n = 164$.
-
- Note: this solution shows that the length of $CD$ is irrelevant as long as there still exists a circle as described in the problem.
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-The area of the trapezoid is $\frac{(19+92)h}{2}$, where $h$ is the height of the trapezoid.
-
- Draw lines $CP$ and $BP$. We can now find the area of the trapezoid as the sum of the areas of the three triangles $BPC$, $CPD$, and $PBA$.
-
- $[BPC] = \frac{1}{2} \cdot 50 \cdot r$ (where $r$ is the radius of the tangent circle.)
-
- $[CPD] = \frac{1}{2} \cdot 19 \cdot h$
-
- $[PBA] = \frac{1}{2} \cdot 70 \cdot r$
-
- $[BPC] + [CPD] + [PBA] = 60r + \frac{19h}{2} = [ABCD] = \frac{(19+92)h}{2}$
-
- $60r = 46h$
-
- $r = \frac{23h}{30}$
-
- From Solution 1 above, $\frac{h}{70} = \frac{r}{x}$
-
- Substituting $r = \frac{23h}{30}$, we find $x = \frac{161}{3}$, hence the answer is $\boxed{164}$.
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-As the problem tells, the circle is tangent to both sides $AD,BC$, we can make it up to a triangle $QAB$ and $P$ must lie on its angular bisector. Then we know that $AP:BP=7:5$, which makes $AP = \frac{7}{12}(AB) = \frac{92\times 7}{12} = \frac{161}{3}$. Thus, $m + n = 164$.
-
- 
-
-
 
 
 	\item (\textit{AIME I 1992}) Consider the region $A^{}_{}$ in the complex plane that consists of all points $z^{}_{}$ such that both $\frac{z^{}_{}}{40}$ and $\frac{40^{}_{}}{\overline{z}}$ have real and imaginary parts between $0^{}_{}$ and $1^{}_{}$, inclusive. What is the integer that is nearest the area of $A^{}_{}$?
@@ -575,7 +425,9 @@ Let $z=a+bi \implies \frac{z}{40}=\frac{a}{40}+\frac{b}{40}i$. Since $0\leq \fra
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1992_10_Solution_Figure_1.png}
                     \end{figure}
-                    To find the area outside the two circles but inside the square, we want to find the unique area of the two circles. We can do this by adding the area of the two circles and then subtracting out their overlap. There are two methods of finding the area of overlap:
+                    
+
+ To find the area outside the two circles but inside the square, we want to find the unique area of the two circles. We can do this by adding the area of the two circles and then subtracting out their overlap. There are two methods of finding the area of overlap:
 
  1. Consider that the area is just the quarter-circle with radius $20$ minus an isosceles right triangle with base length $20$, and then doubled (to consider the entire overlapped area)
 
@@ -586,8 +438,6 @@ Let $z=a+bi \implies \frac{z}{40}=\frac{a}{40}+\frac{b}{40}i$. Since $0\leq \fra
  $\boxed{572}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) Lines $l_1^{}$ and $l_2^{}$ both pass through the origin and make first-quadrant angles of $\frac{\pi}{70}$ and $\frac{\pi}{54}$ radians, respectively, with the positive x-axis. For any line $l^{}_{}$, the transformation $R(l)^{}_{}$ produces another line as follows: $l^{}_{}$ is reflected in $l_1^{}$, and the resulting line is reflected in $l_2^{}$. Let $R^{(1)}(l)=R(l)^{}_{}$ and $R^{(n)}(l)^{}_{}=R\left(R^{(n-1)}(l)\right)$. Given that $l^{}_{}$ is the line $y=\frac{19}{92}x^{}_{}$, find the smallest positive integer $m^{}_{}$ for which $R^{(m)}(l)=l^{}_{}$.
@@ -611,8 +461,6 @@ Let $l$ be a line that makes an angle of $\theta$ with the positive $x$-axis. Le
  Therefore, $R^{(m)}(l)=l$ iff $\frac{8m\pi}{945}$ is an integral multiple of $\pi$. Thus, $8m \equiv 0\pmod{945}$. Since $\gcd(8,945)=1$, $m \equiv 0 \pmod{945}$, so the smallest positive integer $m$ is $\boxed{945}$. 
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) In a game of \textit{Chomp}, two players alternately take bites from a 5-by-7 grid of unit squares. To take a bite, a player chooses one of the remaining squares, then removes ("eats") all squares in the quadrant defined by the left edge (extended upward) and the lower edge (extended rightward) of the chosen square. For example, the bite determined by the shaded square in the diagram would remove the shaded square and the four squares marked by $\times.$ (The squares with two or more dotted edges have been removed from the original board in previous moves.) 
@@ -646,8 +494,6 @@ By drawing possible examples of the subset, one can easily see that making one s
 
 
 
-
-
 \textbf{Solution 2}
 
 If any square is eaten, the squares to the right of it must also be eaten. Thus, if $a_i$ is the number of squares remaining on row $i$, there is exactly one way the row can be configured (the leftmost $a_i$ squares are uneaten and the ones to the right are eaten.) Additionally, the squares above an eaten square must be eaten, so $\{a_i\}$ is nondecreasing. We can thus write $0 \leq a_1 \leq a_2 \leq \dots \leq a_5 \leq 7$; the number of sequences $\{a_i\}$ satisfying this inequality may be found by Stars and Bars to be $\binom{7+6-1}{6-1} = \boxed{792}$.
@@ -657,8 +503,6 @@ If any square is eaten, the squares to the right of it must also be eaten. Thus,
  \textbf{Links to Branches of Mathematics} This question is one case of the problem of counting \href{https://artofproblemsolving.com/wiki/index.php?title=Order\_ideal&action=edit&redlink=1}{order ideals} or \href{https://artofproblemsolving.com/wiki/index.php?title=Antichain&action=edit&redlink=1}{antichains} in \href{https://artofproblemsolving.com/wiki/index.php?title=Poset}{posets}.  Specifically, it ask for the number of order ideals of the \href{https://artofproblemsolving.com/wiki/index.php?title=Product\_poset&action=edit&redlink=1}{product poset} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Chain}{chain} of length $4$ and the chain of length $6$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) Triangle $ABC^{}_{}$ has $AB=9^{}_{}$ and $BC: AC=40: 41^{}_{}$. What's the largest area that this triangle can have?
@@ -689,8 +533,6 @@ First, consider the \href{https://artofproblemsolving.com/wiki/index.php?title=T
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the three sides be $9,40x,41x$, so the area is $\frac14\sqrt {(81^2 - 81x^2)(81x^2 - 1)}$ by Heron's formula. By AM-GM, $\sqrt {(81^2 - 81x^2)(81x^2 - 1)}\le\frac {81^2 - 1}2$, and the maximum possible area is $\frac14\cdot\frac {81^2 - 1}2 = \frac18(81 - 1)(81 + 1) = 10\cdot82 = \boxed{820}$. This occurs when $81^2 - 81x^2 = 81x^2 - 1\implies x = \frac {\sqrt {3281}}9$.
@@ -701,8 +543,6 @@ Let the three sides be $9,40x,41x$, so the area is $\frac14\sqrt {(81^2 - 81x^2)
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $A, B$ be the endpoints of the side with length $9$. Let $\Gamma$ be the Apollonian Circle of $AB$ with ratio $40:41$; let this intersect $AB$ at $P$ and $Q$, where $P$ is inside $AB$ and $Q$ is outside. Then because $(A, B; P, Q)$ describes a harmonic set, $AP/AQ=BP/BQ\implies \dfrac{\frac{41}{9}}{BQ+9}=\dfrac{\frac{40}{9}}{BQ}\implies BQ=360$. Finally, this means that the radius of $\Gamma$ is $\dfrac{360+\frac{40}{9}}{2}=180+\dfrac{20}{9}$.
@@ -710,8 +550,6 @@ Let $A, B$ be the endpoints of the side with length $9$. Let $\Gamma$ be the Apo
  Since the area is maximized when the altitude to $AB$ is maximized, clearly we want the last vertex to be the highest point of $\Gamma$, which just makes the altitude have length $180+\dfrac{20}{9}$. Thus, the area of the triangle is $\dfrac{9\cdot \left(180+\frac{20}{9}\right)}{2}=\boxed{820}$
 
  
-
-
 
 
 
@@ -737,15 +575,11 @@ We can apply Heron's on this triangle after letting the two sides equal $40x$ an
 
 
 
-
-
 \textbf{Solution 5}
 
 We can start how we did above in solution 4 to get$\frac{9}{4} * \sqrt{(81x^2-1)(81-x^2)}$.Then, we can notice the inside is a quadratic in terms of $x^2$, which is$-81(x^2)^2+6562x^2-81$. This is maximized when $x^2 = \frac{3281}{81}$.If we plug it into the equation, we get $\frac{9}{4} \cdot \frac{3280}{9} = \boxed{820}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) In triangle $ABC^{}_{}$, $A'$, $B'$, and $C'$ are on the sides $BC$, $AC^{}_{}$, and $AB^{}_{}$, respectively. Given that $AA'$, $BB'$, and $CC'$ are concurrent at the point $O^{}_{}$, and that $\frac{AO^{}_{}}{OA'}+\frac{BO}{OB'}+\frac{CO}{OC'}=92$, find $\frac{AO}{OA'}\cdot \frac{BO}{OB'}\cdot \frac{CO}{OC'}$.
@@ -771,8 +605,6 @@ Let $K_A=[BOC], K_B=[COA],$ and $K_C=[AOB].$  Due to triangles $BOC$ and $ABC$ h
 
 
 
-
-
 \textbf{Solution 2 (Mass Points)}
 
 Using \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{mass points}, let the weights of $A$, $B$, and $C$ be $a$, $b$, and $c$ respectively. 
@@ -789,15 +621,11 @@ Using \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{m
 
 
 
-
-
 \textbf{Solution 3}
 
 As in above solutions, find $\sum_{cyc} \frac{y+z}{x}=92$ (where $O=(x:y:z)$ in barycentric coordinates). Now letting $y=z=1$ we get $\frac{2}{x}+2(x+1)=92 \implies x+\frac{1}{x}=45$, and so $\frac{2}{x}(x+1)^2=2(x+\frac{1}{x}+2)=2 \cdot 47 = 94$.
 
  
-
-
 
 
 
@@ -810,8 +638,6 @@ A consequence of Ceva's theorem sometimes attributed to Gergonne is that $\frac{
 
 
  
-
-
 
 
 	\item (\textit{AIME I 1992}) Define a positive integer $n^{}_{}$ to be a factorial tail if there is some positive integer $m^{}_{}$ such that the decimal representation of $m!$ ends with exactly $n$ zeroes. How many positive integers less than $1992$ are not factorial tails?
@@ -836,8 +662,6 @@ Let the number of zeros at the end of $m!$ be $f(m)$. We have $f(m) = \left\lflo
 
 
 
-
-
 \textbf{Solution 2}
 
 After testing various values of $m$ in $f(m)$ of solution 1 to determine $m$ for which $f(m) = 1992$, we find that $m \in \{7980, 7981, 7982, 7983, 7984\}$. WLOG, we select $7980$. Furthermore, note that every time $k$ reaches a multiple of $25$, $k!$ will gain two or more additional factors of $5$ and will thus skip one or more numbers.
@@ -845,8 +669,6 @@ After testing various values of $m$ in $f(m)$ of solution 1 to determine $m$ for
  With this logic, we realize that the desired quantity is simply $\left \lfloor \frac{7980}{25} \right \rfloor + \left \lfloor \frac{7980}{125} \right \rfloor \cdots$, where the first term accounts for every time $1$ number is skipped, the second term accounts for each time $2$ numbers are skipped, and so on. Evaluating this gives us $319 + 63 + 12 + 2 = \boxed{396}$. - Spacesam(edited by srisainandan6)
 
  
-
-
 
 
 \end{enumerate}

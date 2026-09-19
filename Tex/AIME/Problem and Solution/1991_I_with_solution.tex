@@ -19,15 +19,11 @@ Define $a = x + y$ and $b = xy$. Then $a + b = 71$ and $ab = 880$. Solving these
 
 
 
-
-
 \textbf{Solution 2}
 
 Since $xy + x + y + 1 = 72$, this can be factored to $(x + 1)(y + 1) = 72$. As $x$ and $y$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, the possible sets for $(x,y)$ (ignoring cases where $x > y$ since it is symmetrical) are $(1, 35),\ (2, 23),\ (3, 17),\ (5, 11),\ (7,8)$. The second equation factors to $(x + y)xy = 880 = 2^4 \cdot 5 \cdot 11$. The only set with a factor of $11$ is $(5,11)$, and checking shows that it is correct.
 
  
-
-
 
 
 
@@ -42,15 +38,11 @@ After finding the \href{https://artofproblemsolving.com/wiki/index.php?title=Pri
 
 
 
-
-
 \textbf{Solution 4}
 
 From the first equation, we know $x+y=71-xy$. We factor the second equation as $xy(71-xy)=880$. Let $a=xy$ and rearranging we get $a^2-71a+880=(a-16)(a-55)=0$. We have two cases: (1) $x+y=16$ and $xy=55$ OR (2) $x+y=55$ and $xy=16$. We find the former is true for $(x,y) = (5,11)$. $x^2+y^2=121+25=146$.
 
  
-
-
 
 
 
@@ -63,8 +55,6 @@ First, notice that you can factor $x^2y + xy^2$ as $xy(x + y)$. From this, we no
  \[256 = (x^2 + y^2) + 110\]so $x^2 + y^2 = \boxed{146}$. (If we were to go with the pair $(55, 16)$, then the $(x + y)^2$ would be absurdly out of bounds)
 
  
-
-
 
 
 	\item (\textit{AIME I 1991}) Rectangle $ABCD_{}^{}$ has sides $\overline {AB}$ of length 4 and $\overline {CB}$ of length 3. Divide $\overline {AB}$ into 168 congruent segments with points $A_{}^{}=P_0, P_1, \ldots, P_{168}=B$, and divide $\overline {CB}$ into 168 congruent segments with points $C_{}^{}=Q_0, Q_1, \ldots, Q_{168}=B$. For $1_{}^{} \le k \le 167$, draw the segments $\overline {P_kQ_k}$. Repeat this construction on the sides $\overline {AD}$ and $\overline {CD}$, and then draw the diagonal $\overline {AC}$. Find the sum of the lengths of the 335 parallel segments drawn.
@@ -82,11 +72,11 @@ First, notice that you can factor $x^2y + xy^2$ as $xy(x + y)$. From this, we no
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1991_2_Solution_Figure_1.png}
                     \end{figure}
-                    The length of the diagonal is $\sqrt{3^2 + 4^2} = 5$ (a 3-4-5 \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}). For each $k$, $\overline{P_kQ_k}$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Hypotenuse}{hypotenuse} of a $3-4-5$ right triangle with sides of $3 \cdot \frac{168-k}{168}, 4 \cdot \frac{168-k}{168}$. Thus, its length is $5 \cdot \frac{168-k}{168}$. Let $a_k=\frac{5(168-k)}{168}$. We want to find $2\sum\limits_{k=1}^{168} a_k-5$ since we are over counting the diagonal.$2\sum\limits_{k=1}^{168} \frac{5(168-k)}{168}-5 =2\frac{(0+5)\cdot169}{2}-5 =168\cdot5 =\boxed{840}$
+                    
+
+ The length of the diagonal is $\sqrt{3^2 + 4^2} = 5$ (a 3-4-5 \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}). For each $k$, $\overline{P_kQ_k}$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Hypotenuse}{hypotenuse} of a $3-4-5$ right triangle with sides of $3 \cdot \frac{168-k}{168}, 4 \cdot \frac{168-k}{168}$. Thus, its length is $5 \cdot \frac{168-k}{168}$. Let $a_k=\frac{5(168-k)}{168}$. We want to find $2\sum\limits_{k=1}^{168} a_k-5$ since we are over counting the diagonal.$2\sum\limits_{k=1}^{168} \frac{5(168-k)}{168}-5 =2\frac{(0+5)\cdot169}{2}-5 =168\cdot5 =\boxed{840}$
 
  
-
-
 
 
 
@@ -103,8 +93,6 @@ Using the above diagram, we have that $\Delta ABC \sim \Delta P_k B Q_k$ and eac
 
 
 
-
-
 \textbf{Solution 3}
 
 First, count the diagonal which has length $5$. For the rest of the segments, think about pairing them up so that each pair makes $5$. For example, the parallel lines closest to the diagonal would have length $\frac{167}{168}\cdot{5}$ while the parallel line closest to the corner of the rectangle would have length $\frac{1}{168}\cdot{5}$ by similar triangles. If you add the two lengths together, it is $\frac{167}{168}\cdot{5} + \frac{1}{168}\cdot{5} = 5.$ There are $\frac{335-1}{2}$ pairs of these segments, for a total of $5+(167)(5)=168(5)=\boxed{840}.$~justlearningmathog
@@ -112,12 +100,14 @@ First, count the diagonal which has length $5$. For the rest of the segments, th
  
 
 
-
-
 	\item (\textit{AIME I 1991}) Expanding $(1+0.2)^{1000}_{}$ by the binomial theorem and doing no further manipulation gives
 
 
- ${1000 \choose 0}(0.2)^0+{1000 \choose 1}(0.2)^1+{1000 \choose 2}(0.2)^2+\cdots+{1000 \choose 1000}(0.2)^{1000}$$= A_0 + A_1 + A_2 + \cdots + A_{1000},$where $A_k = {1000 \choose k}(0.2)^k$ for $k = 0,1,2,\ldots,1000$. For which $k_{}^{}$ is $A_k^{}$ the largest?
+ ${1000 \choose 0}(0.2)^0+{1000 \choose 1}(0.2)^1+{1000 \choose 2}(0.2)^2+\cdots+{1000 \choose 1000}(0.2)^{1000}$
+
+ $= A_0 + A_1 + A_2 + \cdots + A_{1000},$
+
+ where $A_k = {1000 \choose k}(0.2)^k$ for $k = 0,1,2,\ldots,1000$. For which $k_{}^{}$ is $A_k^{}$ the largest?
 
 
  
@@ -192,8 +182,6 @@ $\textbf{Lemma:}$
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $0<x_{}^{}<1$. Then we may write $A_{k}^{}={N\choose k}x^{k}=\frac{N!}{k!(N-k)!}x^{k}=\frac{(N-k+1)!}{k!}x^{k}$. Taking logarithms in both sides of this last equation and using the well-known fact $\log(a_{}^{}b)=\log a + \log b$ (valid if $a_{}^{},b_{}^{}>0$), we have
@@ -205,8 +193,6 @@ Let $0<x_{}^{}<1$. Then we may write $A_{k}^{}={N\choose k}x^{k}=\frac{N!}{k!(N-
  In summary, substituting $N_{}^{}=1000$ and $x_{}^{}=0.2$ we finally find that $k=\boxed{166}$.
 
  
-
-
 
 
 
@@ -240,8 +226,6 @@ We know that once we have found the largest value of $k$, all values after $A_k$
 
 
 
-
-
 \textbf{Solution 4}
 
 We know that $A_k$ will increase as $k$ increases until certain $k=m$, where $A_0 < A_1 < A_2 < \dots < A_{m-2} < A_{m-1} < A_m$ and  
@@ -262,8 +246,6 @@ We know that $A_k$ will increase as $k$ increases until certain $k=m$, where $A_
 
 
 
-
-
 \textbf{Solution 5}
 
 Notice that the expansion is the largest the moment BEFORE the $nC_p < 5$ (this reasoning can probably be found in the other solutions; basically, if we have a number k and then k+1, the value is the largest when k+1 is larger than k, or in other words $nC_p*\frac{1}{5} > 1$)
@@ -278,8 +260,6 @@ Notice that the expansion is the largest the moment BEFORE the $nC_p < 5$ (this 
  Note: It may be more intuitive to equate $x=5y$ and then use test points to figure out which side of the inequality to lie on.
 
  
-
-
 
 
 
@@ -299,8 +279,6 @@ Notice the relation between $A_m$ and $A_{m+1}$. We have that: $A_{m+1}  = A_m \
  
 
 
-
-
 	\item (\textit{AIME I 1991}) How many real numbers $x^{}_{}$ satisfy the equation $\frac{1}{5}\log_2 x = \sin (5\pi x)$?
 
 
@@ -316,13 +294,13 @@ Notice the relation between $A_m$ and $A_{m+1}$. We have that: $A_{m+1}  = A_m \
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1991_4_Solution_Figure_1.png}
                     \end{figure}
-                    The \href{https://artofproblemsolving.com/wiki/index.php?title=Range}{range} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Sine}{sine} function is $-1 \le y \le 1$. It is \href{https://artofproblemsolving.com/wiki/index.php?title=Periodic\_function}{periodic} (in this problem) with a period of $\frac{2}{5}$. 
+                    
+
+ The \href{https://artofproblemsolving.com/wiki/index.php?title=Range}{range} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Sine}{sine} function is $-1 \le y \le 1$. It is \href{https://artofproblemsolving.com/wiki/index.php?title=Periodic\_function}{periodic} (in this problem) with a period of $\frac{2}{5}$. 
 
  Thus, $-1 \le \frac{1}{5} \log_2 x \le 1$, and $-5 \le \log_2 x \le 5$. The solutions for $x$ occur in the domain of $\frac{1}{32} \le x \le 32$. When $x > 1$ the \href{https://artofproblemsolving.com/wiki/index.php?title=Logarithm}{logarithm} function returns a \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} value; up to $x = 32$ it will pass through the sine curve. There are exactly 10 intersections of five periods (every two integral values of $x$) of the sine curve and another curve that is $< 1$, so there are $\frac{32}{2} \cdot 10 - 6 = 160 - 6 = 154$ values (the subtraction of 6 since all the “intersections” when $x < 1$ must be disregarded). When $y = 0$, there is exactly $1$ touching point between the two functions: $\left(\frac{1}{5},0\right)$. When $y < 0$ or $x < 1$, we can count $4$ more solutions. The solution is $154 + 1 + 4 = \boxed{159}$.
 
  
-
-
 
 
 
@@ -331,8 +309,6 @@ Notice the relation between $A_m$ and $A_{m+1}$. We have that: $A_{m+1}  = A_m \
 Notice that the equation is satisfied twice for every sine period (which is $\frac{2}{5}$), except in the sole case when the two equations equate to $0$. In that case, the equation is satisfied twice but only at the one instance when $y=0$. Hence, it is double-counted in our final solution, so we have to subtract it out. We then compute:$32 \cdot \frac{5}{2} \cdot 2 - 1 = \boxed {159}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1991}) Given a rational number, write it as a fraction in lowest terms and calculate the product of the resulting numerator and denominator. For how many rational numbers between 0 and 1 will  $20_{}^{}!$ be the resulting product? 
@@ -350,12 +326,12 @@ If the fraction is in the form $\frac{a}{b}$, then $a < b$ and $\gcd(a,b) = 1$. 
  
 
 
-
-
 	\item (\textit{AIME I 1991}) Suppose $r^{}_{}$ is a real number for which
 
 
- $\left\lfloor r + \frac{19}{100} \right\rfloor + \left\lfloor r + \frac{20}{100} \right\rfloor + \left\lfloor r + \frac{21}{100} \right\rfloor + \cdots + \left\lfloor r + \frac{91}{100} \right\rfloor = 546.$Find $\lfloor 100r \rfloor$. (For real $x^{}_{}$, $\lfloor x \rfloor$ is the greatest integer less than or equal to $x^{}_{}$.)
+ $\left\lfloor r + \frac{19}{100} \right\rfloor + \left\lfloor r + \frac{20}{100} \right\rfloor + \left\lfloor r + \frac{21}{100} \right\rfloor + \cdots + \left\lfloor r + \frac{91}{100} \right\rfloor = 546.$
+
+ Find $\lfloor 100r \rfloor$. (For real $x^{}_{}$, $\lfloor x \rfloor$ is the greatest integer less than or equal to $x^{}_{}$.)
 
 
  
@@ -371,8 +347,6 @@ There are $91 - 19 + 1 = 73$ numbers in the \href{https://artofproblemsolving.co
 
 
 
-
-
 \textbf{Solution 2 (Faster)}
 
 Recall by Hermite's Identity that $\lfloor x\rfloor +\lfloor x+\frac{1}{n}\rfloor +...+\lfloor x+\frac{n-1}{n}\rfloor = \lfloor nx\rfloor$ for positive integers $n$, and real $x$. Similar to above, we quickly observe that the last 35 take the value of 8, and remaining first ones take a value of 7. So, $\lfloor r\rfloor \le ...\le \lfloor r+\frac{18}{100}\rfloor \le 7$ and $\lfloor r+1\rfloor \ge ...\ge \lfloor r+\frac{92}{100}\rfloor \ge 8$. We can see that $\lfloor r\rfloor +1=\lfloor r+1\rfloor$. Because $\lfloor r\rfloor$ is at most 7, and $\lfloor r+1\rfloor$ is at least 8, we can clearly see their values are $7$ and $8$ respectively. So,  $\lfloor r\rfloor = ... = \lfloor r+\frac{18}{100}\rfloor = 7$, and $\lfloor r+\frac{92}{100}\rfloor = ...= \lfloor r+1\rfloor = 8$. Since there are 19 terms in the former equation and 8 terms in the latter, our answer is $\lfloor nx\rfloor = 546+19\cdot 7+8\cdot 8=\boxed{743}$
@@ -380,8 +354,6 @@ Recall by Hermite's Identity that $\lfloor x\rfloor +\lfloor x+\frac{1}{n}\rfloo
  \textbf{Note} In the contest, you would just observe this mentally, and then calculate $546+19\cdot 7+8\cdot 8= 743$, hence the speed at which one can carry out this solution.
 
  
-
-
 
 
 
@@ -411,8 +383,6 @@ Notice how all terms in this series is in the form \( \lfloor r + \frac{k}{100} 
 
 
 
-
-
 \textbf{Solution 4 (Very Intuitive)}
 
 Let $k = \lfloor r \rfloor \text{, for some integer } k \in \mathbb{Z}$.Plugging in into the expression simplifies into,
@@ -427,12 +397,12 @@ Let $k = \lfloor r \rfloor \text{, for some integer } k \in \mathbb{Z}$.Plugging
  
 
 
-
-
 	\item (\textit{AIME I 1991}) Find $A^2_{}$, where $A^{}_{}$ is the sum of the absolute values of all roots of the following equation:
 
 
  $x = \sqrt{19} + \frac{91}{{\sqrt{19}+\frac{91}{{\sqrt{19}+\frac{91}{{\sqrt{19}+\frac{91}{{\sqrt{19}+\frac{91}{x}}}}}}}}}$
+
+ 
  \textbf{Answer: }383
 
 
@@ -461,8 +431,6 @@ $x=\sqrt{19}+\underbrace{\frac{91}{\sqrt{19}+\frac{91}{\sqrt{19}+\frac{91}{\sqrt
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $f(x) = \sqrt{19} + \frac{91}{x}$. Then $x = f(f(f(f(f(x)))))$, from which we realize that $f(x) = x$. This is because if we expand the entire expression, we will get a fraction of the form $\frac{ax + b}{cx + d}$ on the right hand side, which makes the equation simplify to a quadratic. As this quadratic will have two roots, they must be the same roots as the quadratic $f(x)=x$.
@@ -470,8 +438,6 @@ Let $f(x) = \sqrt{19} + \frac{91}{x}$. Then $x = f(f(f(f(f(x)))))$, from which w
  The given finite expansion can then be easily seen to reduce to the \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_equation}{quadratic equation}, $x_{}^{2}-\sqrt{19}x-91=0$. The solutions are $x_{\pm}^{}=$$\frac{\sqrt{19}\pm\sqrt{383}}{2}$. Therefore, $A_{}^{}=\vert x_{+}\vert+\vert x_{-}\vert=\sqrt{383}$. We conclude that $A_{}^{2}=\boxed{383}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1991}) For how many real numbers $a^{}_{}$ does the quadratic equation $x^2 + ax^{}_{} + 6a=0$ have only integer roots for $x^{}_{}$?
@@ -495,8 +461,6 @@ Let $x^2 + ax + 6a = (x - s)(x - r)$. Vieta's yields $s + r = - a, sr = 6a$.
 
 
 
-
-
 \textbf{Solution 2}
 
 By \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's formulas}, $x_1 + x_2 = -a$ where $x_1, x_2$ are the roots of the quadratic, and since $x_1,x_2$ are integers, $a$ must be an integer. Applying the \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_formula}{quadratic formula}, 
@@ -517,8 +481,6 @@ By \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formul
  The pairs of factors of $144$ are $(\pm1,\pm144),( \pm 2, \pm 72),( \pm 3, \pm 48),( \pm 4, \pm 36),( \pm 6, \pm 24),( \pm 8, \pm 18),( \pm 9, \pm 16),( \pm 12, \pm 12)$; since $c$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Mean}{average} of each respective pair and is also an integer, the pairs that work must have the same \href{https://artofproblemsolving.com/wiki/index.php?title=Parity}{parity}. Thus we get $\boxed{10}$ pairs (counting positive and negative) of factors that work, and substituting them backwards show that they all work.
 
  
-
-
 
 
 	\item (\textit{AIME I 1991}) Suppose that $\sec x+\tan x=\frac{22}7$ and that $\csc x+\cot x=\frac mn,$ where $\frac mn$ is in lowest terms.  Find $m+n^{}_{}.$
@@ -554,8 +516,6 @@ Use the two \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonome
 
 
 
-
-
 \textbf{Solution 2}
 
 Recall that $\sec^2 x - \tan^2 x = 1$, from which we find that $\sec x - \tan x = 7/22$. Adding the equations
@@ -571,8 +531,6 @@ Recall that $\sec^2 x - \tan^2 x = 1$, from which we find that $\sec x - \tan x 
  so $m + n = 044$.
 
  
-
-
 
 
 
@@ -596,8 +554,6 @@ By the given,$\frac {1}{\cos x} + \frac {\sin x}{\cos x} = \frac {22}{7}$ and$\f
 
 
 
-
-
 \textbf{Solution 4}
 
 Make the substitution $u = \tan \frac x2$ (a substitution commonly used in calculus). By the half-angle identity for tangent, $\tan \frac x2 = \frac{\sin x}{1+\cos x}$, so $\csc x + \cot x = \frac{1+\cos x}{\sin x} = \frac1u = \frac mn$. Also, we have $\sec x + \tan x = \frac{1 + \sin x}{\cos x}.$ Now note the following:
@@ -617,15 +573,11 @@ Make the substitution $u = \tan \frac x2$ (a substitution commonly used in calcu
 
 
 
-
-
 \textbf{Solution 5}
 
 We are given that $\frac{1+\sin x}{\cos x}=\frac{22}7\implies\frac{1+\sin x}{\cos x}\cdot\frac{1-\sin x}{1-\sin x}=\frac{1-\sin^2x}{\cos x(1-\sin x)}=\frac{\cos^2x}{\cos x(1-\sin x)}$$=\frac{\cos x}{1-\sin x}$, or equivalently, $\cos x=\frac{7+7\sin x}{22}=\frac{22-22\sin x}7\implies\sin x=\frac{22^2-7^2}{22^2+7^2}$$\implies\cos x=\frac{2\cdot22\cdot7}{22^2+7^2}$. Note that what we want is just $\frac{1+\cos x}{\sin x}=\frac{1+\frac{2\cdot22\cdot7}{22^2+7^2}}{\frac{22^2-7^2}{22^2+7^2}}=\frac{22^2+7^2+2\cdot22\cdot7}{22^2-7^2}=\frac{(22+7)^2}{(22-7)(22+7)}=\frac{22+7}{22-7}$$=\frac{29}{15}\implies m+n=29+15=\boxed{044}$.
 
  
-
-
 
 
 
@@ -661,8 +613,6 @@ Assign a right triangle with angle $x$, hypotenuse $c$, adjacent side $a$, and o
 
 
 
-
-
 \textbf{Solution 7}
 
 We know that $\sec(x) = \frac{h}{a}$ and that $\tan(x) = \frac{o}{a}$ where $h$, $a$, $o$ represent the hypotenuse, adjacent, and opposite (respectively) to angle $x$ in a right triangle. Thus we have that $\sec(x) + \tan(x) = \frac{h+o}{a}$. We also have that $\csc(x) + \cot(x) = \frac{h}{o} + \frac{a}{o} = \frac{h+a}{o}$. Set $\sec(x) + \tan(x) = \alpha$ and csc(x)+cot(x) = $\beta$. Then, notice that $\alpha + \beta = \frac{h+o}{a} + \frac{h+a}{o} = \frac{oh+ah+o^2 + a^2}{oa} = \frac{h(o+a+h)}{oa}$ ( This is because of the Pythagorean Theorem, recall $o^2 +a^2 = h^2$). But then notice that $\alpha \cdot \beta = \frac{(o+h)(a+h)}{oa} = \frac{oa +oh +ha +h^2}{oa} = 1+ \frac{h(o+a+h)}{oa} = 1+ \alpha + \beta$. From the information provided in the question, we can substitute $\alpha$ for $\frac{22}{7}$. Thus, $\frac{22 \beta}{7}= \beta + \frac{29}{7} \Longrightarrow 22 \beta = 7 \beta + 29 \Longrightarrow 15 \beta = 29 \Longrightarrow \beta = \frac{29}{15}$. Since, essentially we are asked to find the sum of the numerator and denominator of $\beta$, we have $29 + 15 = \boxed{044}$.
@@ -671,8 +621,6 @@ We know that $\sec(x) = \frac{h}{a}$ and that $\tan(x) = \frac{o}{a}$ where $h$,
 
 
  
-
-
 
 
 
@@ -692,8 +640,6 @@ Firstly, we write $\sec x+\tan x=a/b$ where $a=22$ and $b=7$. This will allow us
  \[\csc x+\cot x=\frac{29}{15}=\frac{p}{q}\] so $p+q=15+29=\boxed{44}$
 
  
-
-
 
 
 
@@ -754,8 +700,6 @@ Rewriting $\sec{x}$ and $\tan{x}$ in terms of $\sin{x}$ and $\cos{x}$, we know t
 
 
 
-
-
 \textbf{Solution 10}
 
 First note that
@@ -763,8 +707,6 @@ First note that
  \[\frac{22}{7}=\sec{x} + \tan{x} = \frac{1+\sin{x}}{\cos{x}} = \frac{(\sin{\frac{x}{2}} + \cos{\frac{x}{2}})^2}{\cos^2{\frac{x}{2}} - \sin^2{\frac{x}{2}}}=\frac{\sin{\frac{x}{2}} + \cos{\frac{x}{2}}}{\cos{\frac{x}{2}} -\sin{\frac{x}{2}}} = \frac{\cot{\frac{x}{2}}+1}{\cot{\frac{x}{2}}-1}.\]Solving this, we have $\cot{x}=\frac{29}{15}.$ Thus, the answer is $\boxed{044}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1991}) Two three-letter strings, $aaa^{}_{}$ and $bbb^{}_{}$, are transmitted electronically. Each string is sent letter by letter. Due to faulty equipment, each of the six letters has a 1/3 chance of being received incorrectly, as an $a^{}_{}$ when it should have been a $b^{}_{}$, or as a $b^{}_{}$ when it should be an $a^{}_{}$. However, whether a given letter is received correctly or incorrectly is independent of the reception of any other letter. Let $S_a^{}$ be the three-letter string received when $aaa^{}_{}$ is transmitted and let $S_b^{}$ be the three-letter string received when $bbb^{}_{}$ is transmitted. Let $p$ be the probability that $S_a^{}$ comes before $S_b^{}$ in alphabetical order. When $p$ is written as a fraction in lowest terms, what is its numerator?
@@ -786,8 +728,6 @@ Let us make a chart of values in alphabetical order, where $P_a,\ P_b$ are the p
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $S(a,n)$ be the $n$th letter of string $S(a)$.Compare the first letter of the string $S(a)$ to the first letter of the string $S(b)$.There is a $(2/3)^2=4/9$ chance that $S(a,1)$ comes before $S(b,1)$.There is a $2(1/3)(2/3)=4/9$ that $S(a,1)$ is the same as $S(b,1)$.
@@ -802,8 +742,6 @@ Let $S(a,n)$ be the $n$th letter of string $S(a)$.Compare the first letter of th
 
 
 
-
-
 \textbf{Solution 3}
 
 Consider $n$ letter strings instead. If the first letters all get transmitted correctly, then the $a$ string will be first. Otherwise, the only way is for both of the first letters to be the same, and then we consider the next $n-1$ letter string following the first letter. This easily leads to a recursion: $p_n=\frac23\cdot\frac23+2\cdot\frac23\cdot\frac13p_{n-1}=\frac49+\frac49p_{n-1}$. Clearly, $p_0=0\implies p_1=\frac49\implies p_2=\frac{52}{81}\implies p_3=\frac{532}{729}$. Therefore, the answer is $\boxed{532}$.
@@ -812,15 +750,11 @@ Consider $n$ letter strings instead. If the first letters all get transmitted co
 
 
 
-
-
 \textbf{Solution 4 (a more explicit Solution 3)}
 
 The probability that $S_a$ will take the form $a$ \_ \_ and that $S_b$ will take the form $b$ \_ \_ is $\frac{2}{3}\cdot\frac{2}{3} = \frac{4}{9}$. Then, the probability that both $S_a$ and $S_b$ will share the same first digit is $2\cdot\frac{2}{3}\cdot\frac{1}{3} = \frac{4}{9}$. Now if the first digits of either sequence are the same, then we must now consider these same probabilities for the second letter of each sequence. The probability that when the first two letters of both sequences are the same, that the second letter of $S_a$ is $a$ and that the second letter of $S_b$ is $b$ is $\frac{2}{3}\cdot\frac{2}{3}=\frac{4}{9}$. Similarly, the probability that when the first two letters of both sequences are the same, that the second set of letters in both sets of sequences are the same is $2\cdot\frac{2}{3}\cdot\frac{1}{3} = \frac{4}{9}$. Now, if the last case is true then the probability that $S_a$ precedes $S_b$ is $\frac{2}{3}\cdot\frac{2}{3} = \frac{4}{9}$. Therefore the total probability would be: $\frac{4}{9} + \frac{4}{9}\left(\frac{4}{9} + \frac{4}{9}\left(\frac{4}{9}\right)\right) = \frac{4}{9}+\frac{4}{9}\left(\frac{52}{81}\right) = \frac{4}{9} + \frac{208}{729} = \frac{532}{729}$. Therefore the answer is $\boxed{532}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1991}) Twelve congruent disks are placed on a circle $C^{}_{}$ of radius 1 in such a way that the twelve disks cover $C^{}_{}$, no two of the disks overlap, and so that each of the twelve disks is tangent to its two neighbors. The resulting arrangement of disks is shown in the figure below.  The sum of the areas of the twelve disks can be written in the form $\pi(a-b\sqrt{c})$, where $a,b,c^{}_{}$ are positive integers and $c^{}_{}$ is not divisible by the square of any prime. Find $a+b+c^{}_{}$.
@@ -859,8 +793,6 @@ We wish to find the radius of one circle, so that we can find the total area.
  
 
 
-
-
 	\item (\textit{AIME I 1991}) Rhombus $PQRS^{}_{}$ is inscribed in rectangle $ABCD^{}_{}$ so that vertices $P^{}_{}$, $Q^{}_{}$, $R^{}_{}$, and $S^{}_{}$ are interior points on sides $\overline{AB}$, $\overline{BC}$, $\overline{CD}$, and $\overline{DA}$, respectively. It is given that $PB^{}_{}=15$, $BQ^{}_{}=20$, $PR^{}_{}=30$, and $QS^{}_{}=40$. Let $m/n^{}_{}$, in lowest terms, denote the perimeter of $ABCD^{}_{}$. Find $m+n^{}_{}$.
 
 
@@ -886,8 +818,6 @@ Let $O$ be the center of the rhombus. Via \href{https://artofproblemsolving.com/
 
 
 
-
-
 \textbf{Solution 2}
 
 From above, we have $OB = 24$ and $BD = 48$. Returning to $BPQO,$ note that $\angle PQO\cong \angle PBO \cong ABD.$ Hence, $\triangle ABD \sim \triangle OQP$ by $AA$ \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangle&action=edit&redlink=1}{similarity}. From here, it's clear that
@@ -895,8 +825,6 @@ From above, we have $OB = 24$ and $BD = 48$. Returning to $BPQO,$ note that $\an
  \[\frac {AB}{BD} = \frac {IQ}{PQ}\implies \frac {AB}{48} = \frac {20}{25}\implies AB = \frac {192}{5}.\]Therefore, the perimeter of rectangle $ABCD$ is $2(AB + AD) = 2\left(\frac {192}{5} + \frac {144}{5}\right) = \frac {672}{5}.$
 
  
-
-
 
 
 
@@ -920,15 +848,11 @@ The triangles $QOB,OBC$ are \href{https://artofproblemsolving.com/wiki/index.php
 
 
 
-
-
 \textbf{Solution 4}
 
 For convenience, let $\angle PQS = \theta$. Since the opposite triangles are congruent we have that $\angle BQR = 3\theta$, and therefore $\angle QRC = 3\theta - 90$. Let $QC = a$, then we have $\sin{(3\theta - 90)} = \frac {a}{25}$, or $- \cos{3\theta} = \frac {a}{25}$. Expanding with the formula $\cos{3\theta} = 4\cos^3{\theta} - 3\cos{\theta}$, and since we have $\cos{\theta} = \frac {4}{5}$, we can solve for $a$. The rest then follows similarily from above.
 
  
-
-
 
 
 
@@ -944,15 +868,11 @@ We can just find coordinates of the points.  After drawing a picture, we can see
 
 
 
-
-
 \textbf{Solution 6}
 
 We can just use areas. Let $AP = b$ and $AS = a$. $a^2 + b^2 = 625$. Also, we can add up the areas of all 8 right triangles and let that equal the total area of the rectangle, $(a+20)(b+15)$. This gives $3a + 4b = 120$. Solving this system of equation gives $\frac{44}{5} = a$, $\frac{117}{5} = b$, from which it is straightforward to find the answer, $2(a+b+35) \Rightarrow \frac{672}{5}$. Thus, $m+n = \frac{672}{5}\implies\boxed{677}$
 
  
-
-
 
 
 
@@ -972,8 +892,6 @@ We will bash with trigonometry.
 
 
 
-
-
 \textbf{Solution 8 (Pythagorean Theorem Bash)}
 
 
@@ -981,7 +899,9 @@ We will bash with trigonometry.
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1991_12_Solution_Figure_1.png}
                     \end{figure}
-                    Note that this is a modified version of the original diagram. By the Pythagorean theorem, the side length of the rhombus is $25$. Since a rhombus is a parallelogram, its diagonals bisect each other. Thus, $\triangle PBQ \cong \triangle RDS$ and $\triangle QCR \cong \triangle SAP$ by symmetry.
+                    
+
+ Note that this is a modified version of the original diagram. By the Pythagorean theorem, the side length of the rhombus is $25$. Since a rhombus is a parallelogram, its diagonals bisect each other. Thus, $\triangle PBQ \cong \triangle RDS$ and $\triangle QCR \cong \triangle SAP$ by symmetry.
 
  Let $RC=x$ and $QC=y$. Applying the Pythagorean theorem to $\triangle QCR$, we obtain
  \[x^2+y^2=625.\]
@@ -1014,7 +934,7 @@ We will bash with trigonometry.
                     \end{figure}
                     
 
-
+ 
 
 
 	\item (\textit{AIME I 1991}) A drawer contains a mixture of red socks and blue socks, at most 1991 in all. It so happens that, when two socks are selected randomly without replacement, there is a probability of exactly $\frac{1}{2}$ that both are red or both are blue. What is the largest possible number of red socks in the drawer that is consistent with this data? 
@@ -1045,8 +965,6 @@ Let $r$ and $b$ denote the number of red and blue socks, respectively. Also, let
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $r$ and $b$ denote the number of red and blue socks such that $r+b\le1991$. Then by complementary counting, the number of ways to get a red and a blue sock must be equal to $1-\frac12=\frac12=\frac{2rb}{(r+b)(r+b-1)}\implies4rb=(r+b)(r+b-1)$$=(r+b)^2-(r+b)\implies r^2+2rb+b^2-r-b=4rb\implies r^2-2rb+b^2$$=(r-b)^2=r+b$, so $r+b$ must be a perfect square $k^2$. Clearly, $r=\frac{k^2+k}2$, so the larger $k$, the larger $r$: $k^2=44^2$ is the largest perfect square below $1991$, and our answer is $\frac{44^2+44}2=\frac12\cdot44(44+1)=22\cdot45=11\cdot90=\boxed{990}$.
@@ -1055,8 +973,6 @@ Let $r$ and $b$ denote the number of red and blue socks such that $r+b\le1991$. 
 
 
  
-
-
 
 
 
@@ -1084,8 +1000,6 @@ Let $r$ and $b$ denote the number of red and blue socks, respectively. In additi
 
 
 
-
-
 \textbf{Solution 4}
 
 As above, let $r$, $b$, and $t$ denote the number of red socks, the number of blue socks, and the total number of socks, respectively. We see that $\frac{r(r-1)}{t(t-1)}+\frac{b(b-1)}{t(t-1)}=\frac{1}{2}$, so $r^2+b^2-r-b=\frac{t(t-1)}{2}=r^2+b^2-t=\frac{t^2}{2}-\frac{t}{2}$. 
@@ -1097,8 +1011,6 @@ As above, let $r$, $b$, and $t$ denote the number of red socks, the number of bl
  Solution by Zeroman
 
  
-
-
 
 
 
@@ -1119,8 +1031,6 @@ Let $r$ be the number of socks that are red, and $t$ be the total number of sock
  - AlexLikeMath
 
  
-
-
 
 
 
@@ -1171,8 +1081,6 @@ Let $r$ and $b$ denote the red socks and blue socks, respectively. Thus the equa
  
 
 
-
-
 	\item (\textit{AIME I 1991}) A hexagon is inscribed in a circle. Five of the sides have length 81 and the sixth, denoted by $\overline{AB}$, has length 31. Find the sum of the lengths of the three diagonals that can be drawn from $A_{}^{}$.
 
 
@@ -1188,13 +1096,13 @@ Let $r$ and $b$ denote the red socks and blue socks, respectively. Thus the equa
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1991_14_Solution_Figure_1.png}
                     \end{figure}
-                    Let $x=AC=BF$, $y=AD=BE$, and $z=AE=BD$.
+                    
+
+ Let $x=AC=BF$, $y=AD=BE$, and $z=AE=BD$.
 
  \href{https://artofproblemsolving.com/wiki/index.php?title=Ptolemy\%27s\_Theorem}{Ptolemy's Theorem} on $ABCD$ gives $81y+31\cdot 81=xz$, and Ptolemy on $ACDF$ gives $x\cdot z+81^2=y^2$.Subtracting these equations give $y^2-81y-112\cdot 81=0$, and from this $y=144$. Ptolemy on $ADEF$ gives $81y+81^2=z^2$, and from this $z=135$. Finally, plugging back into the first equation gives $x=105$, so $x+y+z=105+144+135=\boxed{384}$.
 
  
-
-
 
 
 
@@ -1226,8 +1134,6 @@ Let $\theta$ be the inscribed angle in each of the 5 sides of length 81, so $d \
 
 
 
-
-
 \textbf{Solution 3 (Risky)}
 
 This solution refers to the diagram given in Solution 1.
@@ -1254,12 +1160,12 @@ This solution refers to the diagram given in Solution 1.
  
 
 
-
-
 	\item (\textit{AIME I 1991}) For positive integer $n_{}^{}$, define $S_n^{}$ to be the minimum value of the sum
 
 
- $\sum_{k=1}^n \sqrt{(2k-1)^2+a_k^2},$where $a_1,a_2,\ldots,a_n^{}$ are positive real numbers whose sum is 17. There is a unique positive integer $n^{}_{}$ for which $S_n^{}$ is also an integer. Find this $n^{}_{}$.
+ $\sum_{k=1}^n \sqrt{(2k-1)^2+a_k^2},$
+
+ where $a_1,a_2,\ldots,a_n^{}$ are positive real numbers whose sum is 17. There is a unique positive integer $n^{}_{}$ for which $S_n^{}$ is also an integer. Find this $n^{}_{}$.
 
 
  
@@ -1277,16 +1183,12 @@ Consider $n$ right triangles joined at their vertices, with bases $a_1,a_2,\ldot
 
 
 
-
-
 \textbf{Solution 2}
 
 The inequality 
  \[S_n \ge \sqrt {\left(\sum_{k = 1}^n (2k - 1)\right)^2 + \left(\sum_{k = 1}^n a_k\right)^2}.\]is a direct result of the \href{https://artofproblemsolving.com/wiki/index.php?title=Minkowski\_Inequality}{Minkowski Inequality}. Continue as above.
 
  
-
-
 
 
 
@@ -1300,8 +1202,6 @@ Let $a_{i} = (2i - 1) \tan{\theta_{i}}$ for $1 \le i \le n$ and $0 \le \theta_{i
 
 
 
-
-
 \textbf{Solution 4 (Vector)}
 
 Observe the sum and apply it to the Cartesian plane, we can see that it is basically calculating distance between the origin and two points. Therefore we can assume every $\sqrt{(2k-1)^2+a_k^2}$ to be a vector from the origin to point $(2k-1, a_k)$. Now we can do sum inside the vector so we get $((1+3+5+\ldots+2k-1,   a_1+a_2+a_3+\ldots+a_k)$, with $a_1+\ldots+a_k$ to be $17$ and $1+3+\ldots+2k-1$ to be $k^2$. Then we calculate the length of the vector to be $\sqrt{k^4+289}$. Since the sum needs to be an integer, we assume $k^4+289$ equals to $s^2$. Applying difference between squares, we get that $k^2-s=289$ and $k^2+s=-1$. Therfore $2k^2$ is $288$ and $k=n=12$ to be the final answer.
@@ -1309,8 +1209,6 @@ Observe the sum and apply it to the Cartesian plane, we can see that it is basic
  JINZHENQIAN
 
  
-
-
 
 
 \end{enumerate}

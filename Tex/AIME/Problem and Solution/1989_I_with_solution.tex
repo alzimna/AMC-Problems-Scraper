@@ -16,15 +16,11 @@ Note that the four numbers to multiply are symmetric with the center at $29.5$. 
 
 
 
-
-
 \textbf{Solution 2 (Symmetry)}
 
 Notice that $(a+1)^2 = a \cdot (a+2) +1$. Then we can notice that $30 \cdot 29 =870$ and that $31 \cdot 28 = 868$. Therefore, $\sqrt{(31)(30)(29)(28) +1} = \sqrt{(870)(868) +1} = \sqrt{(868 +1)^2} = \boxed{869}$. This is because we have that $a=868$ as per the equation $(a+1)^2 = a \cdot (a+2) +1$.
 
  
-
-
 
 
 
@@ -39,15 +35,11 @@ At $a=28,$ we have
 
 
 
-
-
 \textbf{Solution 4 (Symmetry with Generalization)}
 
 Similar to Solution 1 above, call the consecutive integers $\left(n-\frac{3}{2}\right), \left(n-\frac{1}{2}\right), \left(n+\frac{1}{2}\right), \left(n+\frac{3}{2}\right)$ to make use of symmetry.  Note that $n$ itself is not an integer - in this case, $n = 29.5$.  The expression becomes $\sqrt{\left(n-\frac{3}{2}\right)\left(n + \frac{3}{2}\right)\left(n - \frac{1}{2}\right)\left(n + \frac{1}{2}\right) + 1}$.  Distributing each pair of difference of squares first, and then distributing the two resulting quadratics and adding the constant, gives $\sqrt{n^4 - \frac{5}{2}n^2 + \frac{25}{16}}$.  The inside is a perfect square trinomial, since $b^2 = 4ac$.  It's equal to $\sqrt{\left(n^2 - \frac{5}{4}\right)^2}$, which simplifies to $n^2 - \frac{5}{4}$.  You can plug in the value of $n$ from there, or further simplify to $\left(n - \frac{1}{2}\right)\left(n + \frac{1}{2}\right) - 1$, which is easier to compute.  Either way, plugging in $n=29.5$ gives $\boxed{869}$.
 
  
-
-
 
 
 
@@ -63,8 +55,6 @@ We have $(31)(30)(29)(28)+1=755161.$ Since the alternating sum of the digits $7-
 
 
 
-
-
 \textbf{Solution 6 (Observation)}
 
 The last digit under the radical is $1$, so the square root must either end in $1$ or $9$, since $x^2  = 1\pmod {10}$ means $x = \pm 1$.  Additionally, the number must be near $29 \cdot 30 = 870$, narrowing the reasonable choices to $869$ and $871$.
@@ -75,15 +65,11 @@ The last digit under the radical is $1$, so the square root must either end in $
 
 
 
-
-
 \textbf{Solution 7 (Brute force)}
 
 $31 \times 30 \times 29 \times 28$ is $755160$. $755160 + 1=755161$, and $\sqrt{755161}=869$. So the answer is $\boxed{869}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1989}) Ten points are marked on a circle. How many distinct convex polygons of three or more sides can be drawn using some (or all) of the ten points as vertices?
@@ -103,12 +89,12 @@ Any \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subset} o
  
 
 
-
-
 	\item (\textit{AIME I 1989}) Suppose $n_{}^{}$ is a positive integer and $d_{}^{}$ is a single digit in base 10. Find $n_{}^{}$ if
 
 
  $\frac{n}{810}=0.d25d25d25\ldots$
+
+ 
  \textbf{Answer: }750
 
 
@@ -123,8 +109,6 @@ We can express $0.\overline{d25}$ as $\frac{100d+25}{999}$. We set up the given 
 
 
 
-
-
 \textbf{Solution 2}
 
 Repeating decimals represent \href{https://artofproblemsolving.com/wiki/index.php?title=Rational\_number}{rational numbers}.  To figure out which rational number, we sum an \href{https://artofproblemsolving.com/wiki/index.php?title=Infinite}{infinite} \href{https://artofproblemsolving.com/wiki/index.php?title=Geometric\_series}{geometric series}, $0.d25d25d25\ldots = \sum_{n = 1}^\infty \frac{d25}{1000^n} = \frac{100d + 25}{999}$.  Thus $\frac{n}{810} = \frac{100d + 25}{999}$ so $n = 30\frac{100d + 25}{37} =750\frac{4d + 1}{37}$.  Since 750 and 37 are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime}, $4d + 1$ must be \href{https://artofproblemsolving.com/wiki/index.php?title=Divisible}{divisible} by 37, and the only digit for which this is possible is $d = 9$.  Thus $4d + 1 = 37$ and $n = \boxed{750}$.
@@ -136,15 +120,11 @@ Repeating decimals represent \href{https://artofproblemsolving.com/wiki/index.ph
 
 
 
-
-
 \textbf{Solution 3}
 
 To get rid of repeating decimals, we multiply the equation by 1000. We get $\frac{1000n}{810} = d25.d25d25...$ We subtract the original equation from the second to get $\frac{999n}{810}=d25$ We simplify to $\frac{37n}{30} = d25$ Since $\frac{37n}{30}$ is an integer, $n=(30)(5)(2k+1)$ because $37$ is relatively prime to $30$, and d25 is divisible by $5$ but not $10$. The only odd number that yields a single digit $d$ and 25 at the end of the three digit number is $k=2$, so the answer is $\boxed{750}$.
 
  
-
-
 
 
 
@@ -160,8 +140,6 @@ Similar to Solution 2, we start off by writing that $\frac{1000n}{810} = d25.d25
  Since $37$ is prime, we can apply \href{https://artofproblemsolving.com/wiki/index.php?title=Euclid\%27s\_Lemma}{Euclid's Lemma} to realize that $37 \mid d25$, since $37 \nmid 30$. Then we can expand $d25$ as $25 \cdot (4d +1)$. Since $37 \nmid 25$, by Euclid, we can arrive at $37 \mid 4d+1 \Longrightarrow d=9$. From this we know that $n= 25 \cdot 30 = \boxed{750}$. (This is true because $37n = 925 \cdot 30 \rightarrow n= 25 \cdot 30 = 750$)
 
  
-
-
 
 
 
@@ -189,8 +167,6 @@ Thus $n$ divides 25 and 30. The only solution for this under 1000 is $\boxed{750
  
 
 
-
-
 	\item (\textit{AIME I 1989}) If $a<b<c<d<e^{}_{}$ are consecutive positive integers such that $b+c+d$ is a perfect square and $a+b+c+d+e^{}_{}$ is a perfect cube, what is the smallest possible value of $c^{}_{}$?
 
 
@@ -204,8 +180,6 @@ Thus $n$ divides 25 and 30. The only solution for this under 1000 is $\boxed{750
 Since the middle term of an \href{https://artofproblemsolving.com/wiki/index.php?title=Arithmetic\_progression}{arithmetic progression} with an odd number of terms is the average of the series, we know $b + c + d = 3c$ and $a + b + c + d + e = 5c$. Thus, $c$ must be in the form of $3 \cdot x^2$ based upon the first part and in the form of $5^2 \cdot y^3$ based upon the second part, with $x$ and $y$ denoting an \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}. $c$ is minimized if it’s \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorization}{prime factorization} contains only $3,5$, and since there is a cubed term in $5^2 \cdot y^3$, $3^3$ must be a factor of $c$. $3^35^2 = \boxed{675}$, which works as the solution.
 
  
-
-
 
 
 
@@ -242,15 +216,11 @@ $c = \boxed{675}$
 
 
 
-
-
 \textbf{Solution 3}
 
 Let the numbers be $a,a+1,a+2,a+3,a+4.$ When then know $3a+6$ is a perfect cube and $5a+10$ is perfect cube. Since $5a+10$ is divisible by $5$ we know that $5a+10 = (5k)^3$ since otherwise we get a contradiction. This means $a = 25k^3 - 2$ in which plugging into the other expression we know $3(25k^3 - 2) + 6 = 75k^3$ is a perfect square. We know $75 = 5^2 \cdot 3$ so we let $k = 3$ to obtain the perfect square. This means that $c = a+2 = (25 \cdot 27 - 2)+2 = 25 \cdot 27 = \boxed{675}.$
 
  
-
-
 
 
 
@@ -285,8 +255,6 @@ Let the numbers be $a,a+1,a+2,a+3,a+4.$ When then know $3a+6$ is a perfect cube 
  
 
 
-
-
 	\item (\textit{AIME I 1989}) When a certain biased coin is flipped five times, the probability of getting heads exactly once is not equal to $0$ and is the same as that of getting heads exactly twice. Let $\frac ij^{}_{}$, in lowest terms, be the probability that the coin comes up heads in exactly $3$ out of $5$ flips. Find $i+j^{}_{}$.
 
 
@@ -306,15 +274,11 @@ Denote the probability of getting a heads in one flip of the biased coin as $h$.
 
 
 
-
-
 \textbf{Solution 2}
 
 Denote the probability of getting a heads in one flip of the biased coins as $h$ and the probability of getting a tails as $t$. Based upon the problem, note that ${5\choose1}(h)^1(t)^4 = {5\choose2}(h)^2(t)^3$. After cancelling out terms, we end up with $t = 2h$. To find the probability getting $3$ heads, we need to find ${5\choose3}\dfrac{(h)^3(t)^2}{(h + t)^5} =10\cdot\dfrac{(h)^3(2h)^2}{(h + 2h)^5}$ (recall that $h$ cannot be $0$). The result after simplifying is $\frac{40}{243}$, so $i + j = 40 + 243 = \boxed{283}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1989}) Two skaters, Allie and Billie, are at points $A$ and $B$, respectively, on a flat, frozen lake. The distance between $A$ and $B$ is $100$ meters. Allie leaves $A$ and skates at a speed of $8$ meters per second on a straight line that makes a $60^\circ$ angle with $AB$. At the same time Allie leaves $A$, Billie leaves $B$ at a speed of $7$ meters per second and follows the straight path that produces the earliest possible meeting of the two skaters, given their speeds. How many meters does Allie skate before meeting Billie?
@@ -326,6 +290,8 @@ Denote the probability of getting a heads in one flip of the biased coins as $h$
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1989_6_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }160
 
 
@@ -340,6 +306,8 @@ Label the point of \href{https://artofproblemsolving.com/wiki/index.php?title=In
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_6_Solution_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \begin{align*}(7t)^2 &= (8t)^2 + 100^2 - 2 \cdot 8t \cdot 100 \cdot \cos 60^\circ\\ 0 &= 15t^2 - 800t + 10000 = 3t^2 - 160t + 2000\\ t &= \frac{160 \pm \sqrt{160^2 - 4\cdot 3 \cdot 2000}}{6} = 20, \frac{100}{3}.\end{align*}
 
 
@@ -351,8 +319,6 @@ Label the point of \href{https://artofproblemsolving.com/wiki/index.php?title=In
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -360,7 +326,9 @@ Label the point of \href{https://artofproblemsolving.com/wiki/index.php?title=In
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_6_Solution_Figure_2.png}
                     \end{figure}
-                    Let $P$ be the point of intersection between the skaters, Allie and Billie. We can draw a line that goes through $P$ and is parallel to $\overline{AB}$. Letting this line be the $x$-axis, we can reflect $B$ over the $x$-axis to get $B'$. As reflections preserve length, $B'X = XB$.
+                    
+
+ Let $P$ be the point of intersection between the skaters, Allie and Billie. We can draw a line that goes through $P$ and is parallel to $\overline{AB}$. Letting this line be the $x$-axis, we can reflect $B$ over the $x$-axis to get $B'$. As reflections preserve length, $B'X = XB$.
 
  We then draw lines $BB'$ and $PB'$. We can let the foot of the perpendicular from $P$ to $BB'$ be $X$, and we can let the foot of the perpendicular from $P$ to $AB$ be $Y$. In doing so, we have constructed rectangle $PXBY$.
 
@@ -371,8 +339,6 @@ Label the point of \href{https://artofproblemsolving.com/wiki/index.php?title=In
  Our answer, $AP$, is equivalent to $8t$. Thus, $AP = 8 \cdot 20 = \boxed{160}$.
 
  
-
-
 
 
 
@@ -411,8 +377,6 @@ We can define $x$ to be the time elapsed since both Allie and Billie moved away 
 
 
 
-
-
 \textbf{Solution 4}
 
 
@@ -425,8 +389,6 @@ We can define $x$ to be the time elapsed since both Allie and Billie moved away 
  Drop the altitude from $M$ to $AB$, and call it $P$. $\triangle AMP$ is a $30-60-90$ triangle, so $AP = 4t$ and $MP = 4\sqrt{3}t$, and by the Pythagorean theorem on $\triangle MPB$, $PB = t$. $AP + BP = AB$, so $t=20$. Therefore, $8t = \boxed{160}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1989}) If the integer $k$ is added to each of the numbers $36$, $300$, and $596$, one obtains the squares of three consecutive terms of an arithmetic series. Find $k$.
@@ -449,8 +411,6 @@ Call the terms of the \href{https://artofproblemsolving.com/wiki/index.php?title
 
 
 
-
-
 \textbf{Solution 2 (Straighforward, but has big numbers)}
 
 Since terms in an arithmetic progression have constant differences, 
@@ -468,15 +428,11 @@ Since terms in an arithmetic progression have constant differences,
 
 
 
-
-
 \textbf{Solution 3}
 
 Let the arithmetic sequence be $a-d$, $a$, and $a+d$. Then $(a+d)^2-a^2 = 296$, but using the difference of squares, $d(2a+d)=296$. Also, $a^2-(a-d)^2 = 264$, and using the difference of squares we get $d(2a-d) = 264$. Subtracting both equations gives $2d^2 = 32$, $d = 4$, and $a = 35$. Since $a = 35$, $a^2 = 1225 = 300+k$ and $k = \boxed{925}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1989}) Assume that $x_1,x_2,\ldots,x_7$ are real numbers such that
@@ -513,8 +469,6 @@ By either substitution or elimination, we get $a=50$ and $b=-139.$ Substituting 
 
 
 
-
-
 \textbf{Solution 2 (Linear Combination)}
 
 For simplicity purposes, we number the given equations $(1),(2),$ and $(3),$ in that order. Let 
@@ -525,8 +479,6 @@ Subtracting $(5)$ from $(6)$ and subtracting $(6)$ from $(7),$ we obtain the fol
 Finally, applying the Transitive Property to $(8)$ and $(9)$ gives $S-234=100,$ from which $S=\boxed{334}.$
 
  
-
-
 
 
 
@@ -560,8 +512,6 @@ Note that the second differences of all quadratic sequences must be constant (bu
 
 
 
-
-
 \textbf{Solution 4 (Finite Differences by Algebra)}
 
 Notice that we may rewrite the equations in the more compact form as:
@@ -576,8 +526,6 @@ where $c_1=1, c_2=12, c_3=123,$ and $c_4$ is what we are trying to find.
  \[c_4 = {3 \choose 2}f(2) - {3 \choose 1}f(1) + {3 \choose 0}f(0) =334.\]
 
  
-
-
 
 
 
@@ -597,8 +545,6 @@ The idea is to multiply the first, second and third equations by $a,b,$ and $c,$
 
 
 
-
-
 \textbf{Solution 6 (Assumption)}
 
 We let $(x_4,x_5,x_6,x_7)=(0,0,0,0)$. Thus, we have 
@@ -609,46 +555,13 @@ Grinding this out, we have $(x_1,x_2,x_3)=\left(\frac{797}{4},-229,\frac{319}{4}
 
 
 
-
-
 \textbf{Solution 7 (Similar to Solutions 3 and 4)}
 
 Let $s_n = n^2$ be the sequence of perfect squares.By either expanding or via finite differences, one can prove the miraculous recursion
  \[s_n = 3s_{n-1} - 3s_{n-2} + s_{n-3}.\]Hence, the answer is simply
  \[3 \cdot 123 - 3 \cdot 12 + 1 = \boxed{334}.\]
 
- Note: You can prove this recursion through considering the coefficients for each $x_i$ as $a^2, (a+1)^2, (a+2)^2$ for the equations respectively.
-
- All we are left to do is find $(a+3)^2$ in terms of the above $3$ quadratics. Because we have an $a^2$ as one, we don't have to worry about the $a^2$ term, we can just manipulate it by adding or subtracting any number of the first quadratic.
-
- We are left to find a combination of the second and third quadratics that have the linear term and constant of $(a+3)^2$. With little experimentation we find that $3(a+2)^2 - 3(a+1)^2 = 6a+9$. All we have to add back is one $a^2$.
-
- Thus, the recursion holds. That for any term $x_i$ the coefficients would be recursible by $a^2$ = $3(a-1)^2 - 3(a-2)^2 + (a-3)$(Where we have set $a$ as $a-3$)
-
  
-
-
-
-
-
-\textbf{Solution 8}
-
-We number our equations with $(n)$ denoting equation $n$
- \begin{align*} x_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1  &(1)\\ 4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12  &(2) \\ 9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123   &(3) \end{align*}
-See that we want to find the value of 
- \[7x_{1}+9x_{2}+11x_{3}+13x_{4}+15x_{5}+17x_{6}+19x_{7}\] and add that to $(3)$. Keep this in mind. 
-
- 
-Subtracting $(1)$ from $(2)$ yields
- \[3x_{1}+5x_{2}+7x_{3}+9x_{4}+11x_{5}+13x_{6}+15x_{7} = 11 \ \ (4)\]and subtracting $(2)$ from $(3)$ yields
- \[5x_{1}+7x_{2}+9x_{3}+11x_{4}+13x_{5}+15x_{6}+17x_{7} = 111 \ \ \ (5)\]subtracting $(4)$ from $(5)$ yields
- \[2x_{1}+2x_{2}+2x_{3}+2x_{4}+2x_{5}+2x_{6}+2x_{7} = 100 \ \ \ (6)\]Adding this back to $(5)$ yields
- \[7x_{1}+9x_{2}+11x_{3}+13x_{4}+15x_{5}+17x_{6}+19x_{7}=211 \ \ \ (7)\]Now, simply adding $(7)$ to $(3)$ yields
- \[16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7 = \boxed{334}\]~shockfront99(omg this is my first AIME solve)
-
- 
-
-
 
 
 	\item (\textit{AIME I 1989}) One of Euler's conjectures was disproved in the 1960s by three American mathematicians when they showed there was a positive integer such that 
@@ -680,8 +593,6 @@ which arrives at a contradiction. Therefore, we conclude that $n=\boxed{144}.$
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that $n$ is even, since the LHS consists of two odd and two even numbers. By Fermat's Little Theorem, we know $n^5\equiv n\pmod{5}.$ Hence, 
@@ -689,8 +600,6 @@ Note that $n$ is even, since the LHS consists of two odd and two even numbers. B
  \[n\equiv1-1+0+0\equiv0\pmod{3}.\]Thus, $n$ is divisible by three and leaves a remainder of four when divided by $5.$ It is obvious that $n>133,$ so the only possibilities are $n = 144$ or $n \geq 174.$ It quickly becomes apparent that $174$ is much too large, so $n$ must be $\boxed{144}.$
 
  
-
-
 
 
 
@@ -703,8 +612,6 @@ We can cheat a little bit and approximate, since we are dealing with such large 
  Note that $134$ will obviously be too small, so we try $144$ and get $\left(\frac{144}{27}\right)^5=\left(\frac{16}{3}\right)^5.$ Bashing through the division, we find that $\frac{1048576}{243}\approx 4315,$ which is very close to $4393.$ It is clear that $154$ will not give any closer of an answer, given the rate that fifth powers grow, so we can safely assume that $\boxed{144}$ is the answer.
 
  
-
-
 
 
 
@@ -724,8 +631,6 @@ By observations, $n=194$ is obviously an overestimate. So, the answer is $n=\box
 
 
 
-
-
 \textbf{Solution 5}
 
 First, we take mod $2$ on both sides to get $n^5\equiv 0\pmod{2}\implies n\equiv 0\pmod{2}$. Mod $3$ gives $n^5\equiv 0\pmod{3}\implies n\equiv 0\pmod{3}$. Also, mod $5$ gives $n^5\equiv -1\pmod{5}\implies n\equiv -1\pmod{5}$ (by FLT). Finally, note that mod $7$ gives $n^5\equiv 2\pmod{7}\implies n^{-1}\equiv 2\pmod{7}\implies n\equiv 4\pmod{7}$. Thus,
@@ -736,16 +641,12 @@ By CRT, $n\equiv 144\pmod{210}$, so $n$ is one of $144, 354, ...$. However, $133
 
 
 
-
-
 \textbf{Solution 6 (Brute Force)}
 
 We have 
  \[n^5 = 133^5 + 110^5 + 84^5 +27^5 = 61917364224,\] for which $n = \sqrt [5]{61917364224} = \boxed{144}.$
 
  
-
-
 
 
 
@@ -759,15 +660,11 @@ By approximation, $110 \approx \frac{5}{6}\cdot133$, $84 \approx \frac{7}{11}\cd
 
 
 
-
-
 \textbf{Solution 8 (Guesswork or Bash)}
 
 We know that $a^5 \equiv a \pmod{10}$ for all a. You can prove this later. So we know the number ends with 4. Since 133 is the biggest number, while everything else is small, we can safely assume that it is $\boxed{144}$, because 5th powers vary wildly. It is not 134 because $110^5$ plays a role in the sum.  We can also just take $130^5$ and the other numbers $110^5, 80^5,20^5$, add them up, and we realize that $140^5$ is close to this. Then we also get $\boxed{144}$ 
 
  
-
-
 
 
 
@@ -780,12 +677,12 @@ The number should be around 140, and since most solutions in the AIME are 'round
  
 
 
-
-
 	\item (\textit{AIME I 1989}) Let $a$, $b$, $c$ be the three sides of a triangle, and let $\alpha$, $\beta$, $\gamma$, be the angles opposite them. If $a^2+b^2=1989c^2$, find
 
 
  $\frac{\cot \gamma}{\cot \alpha+\cot \beta}$
+
+ 
  \textbf{Answer: }994
 
 
@@ -799,7 +696,9 @@ We draw the \href{https://artofproblemsolving.com/wiki/index.php?title=Altitude}
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_10_Solution_Figure_1.png}
                     \end{figure}
-                    Then $\cot{\alpha}+\cot{\beta}=\frac{c}{h}$, from the definition of the \href{https://artofproblemsolving.com/wiki/index.php?title=Cotangent}{cotangent}.
+                    
+
+ Then $\cot{\alpha}+\cot{\beta}=\frac{c}{h}$, from the definition of the \href{https://artofproblemsolving.com/wiki/index.php?title=Cotangent}{cotangent}.
 
  Let $K$ be the area of $\triangle ABC.$ Then $h=\frac{2K}{c}$, so $\cot{\alpha}+\cot{\beta}=\frac{c^2}{2K}$.
 
@@ -814,8 +713,6 @@ Adding the last two equations, subtracting the first, and dividing by 2, we get
 
 
 
-
-
 \textbf{Solution 2}
 
 By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_cosines}{law of cosines},
@@ -824,8 +721,6 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_cosin
  \[\frac{\cot \gamma}{\cot \alpha + \cot \beta} = \frac{a^2 + b^2 - c^2}{(-a^2 + b^2 + c^2) + (a^2 - b^2 + c^2)} = \frac{a^2 + b^2 - c^2}{2c^2}.\]We can then finish as in solution 1.
 
  
-
-
 
 
 
@@ -845,8 +740,6 @@ We start as in solution 1, though we'll write $A$ instead of $K$ for the area.  
  Then $\frac{\cot \gamma}{\cot \alpha+\cot \beta}=\frac{\frac{1988c^2}{4A}}{\frac{c^2}{2A}}=\frac{1988}{2}=\boxed{994}$.
 
  
-
-
 
 
 
@@ -874,8 +767,6 @@ We start as in solution 1, though we'll write $A$ instead of $K$ for the area.  
 
 
 
-
-
 \textbf{Solution 5}
 
 Use Law of cosines to give us $c^2=a^2+b^2-2ab\cos(\gamma)$ or therefore $\cos(\gamma)=\frac{994c^2}{ab}$.  Next, we are going to put all the sin's in term of $\sin(a)$.  We get $\sin(\gamma)=\frac{c\sin(a)}{a}$.  Therefore, we get $\cot(\gamma)=\frac{994c}{b\sin a}$.
@@ -890,8 +781,6 @@ Use Law of cosines to give us $c^2=a^2+b^2-2ab\cos(\gamma)$ or therefore $\cos(\
 
 
  
-
-
 
 
 
@@ -914,8 +803,6 @@ Let $\gamma$ be $(180-\alpha-\beta)$
 
 
 
-
-
 \textbf{Solution 7}
 
 As in Solution 1, drop an altitude $h$ to $c$. Let $h$ meet $c$ at $P$, and let $AP = x, BP = y$.
@@ -925,7 +812,9 @@ As in Solution 1, drop an altitude $h$ to $c$. Let $h$ meet $c$ at $P$, and let 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_10_Solution_Figure_2.png}
                     \end{figure}
-                    Then, $\cot{\alpha} = \frac{1}{\tan{\alpha}} = \frac{x}{h}$, $\cot{\beta} = \frac{1}{\tan{\beta}} = \frac{y}{h}$. We can calculate $\cot{\gamma}$ using the \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_addition\_formula}{tangent addition formula}, after noticing that $\cot{\gamma} = \frac{1}{\tan{\gamma}}$. So, we find that \begin{align*}\cot{\gamma} &= \frac{1}{\tan{\gamma}} \\&= \frac{1}{\frac{\frac{x}{h} + \frac{y}{h}}{1 - \frac{xy}{h^2}}} \\&= \frac{1}{\frac{(x+y)h}{h^2 - xy}} \\&= \frac{h^2 - xy}{(x+y)h}.\end{align*}
+                    
+
+ Then, $\cot{\alpha} = \frac{1}{\tan{\alpha}} = \frac{x}{h}$, $\cot{\beta} = \frac{1}{\tan{\beta}} = \frac{y}{h}$. We can calculate $\cot{\gamma}$ using the \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_addition\_formula}{tangent addition formula}, after noticing that $\cot{\gamma} = \frac{1}{\tan{\gamma}}$. So, we find that \begin{align*}\cot{\gamma} &= \frac{1}{\tan{\gamma}} \\&= \frac{1}{\frac{\frac{x}{h} + \frac{y}{h}}{1 - \frac{xy}{h^2}}} \\&= \frac{1}{\frac{(x+y)h}{h^2 - xy}} \\&= \frac{h^2 - xy}{(x+y)h}.\end{align*}
 
 
  So now we can simplify our original expression:\begin{align*}\frac{\cot{\gamma}}{\cot{\alpha} + \cot{\beta}} &= \frac{\frac{h^2 - xy}{(x+y)h}}{\frac{x + y}{h}} \\&= \frac{h^2 - xy}{(x+y)^2}.\end{align*}
@@ -940,8 +829,6 @@ As in Solution 1, drop an altitude $h$ to $c$. Let $h$ meet $c$ at $P$, and let 
 
 
  
-
-
 
 
 
@@ -966,8 +853,6 @@ Since no additional information is given, we can assume that triangle ABC is rig
 
 
 
-
-
 \textbf{Solution 9 (Quick and Easy), similar idea to Solution 8}
 
 Assume the triangle is isosceles and $c=1$.  Since $a=b$, $2a^2=1989$, $\rightarrow a=b=\sqrt{\frac{1989}{2}}$
@@ -981,8 +866,6 @@ Assume the triangle is isosceles and $c=1$.  Since $a=b$, $2a^2=1989$, $\rightar
  Plugging this in, almost everything cancels and we get $\frac{1988}{2} = \boxed{994}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1989}) A sample of 121 integers is given, each between 1 and 1000 inclusive, with repetitions allowed. The sample has a unique mode (most frequent value). Let $D^{}_{}$ be the difference between the mode and the arithmetic mean of the sample. What is the largest possible value of $\lfloor D^{}_{}\rfloor$? (For real $x^{}_{}$, $\lfloor x^{}_{}\rfloor$ is the greatest integer less than or equal to $x^{}_{}$.)
@@ -999,47 +882,11 @@ Let the mode be $x$, which we let appear $n > 1$ times. We let the arithmetic me
  \begin{align*} D &= \left|M-x\right| = \left|\frac{S+xn}{121}-x\right| = \left|\frac{S}{121}-\left(\frac{121-n}{121}\right)x\right| \end{align*}
 As $S$ is essentially independent of $x$, it follows that we wish to minimize or maximize $x$ (in other words, $x \in \{1,1000\}$). Indeed, $D(x)$ is symmetric about $x = 500.5$; consider replacing all of numbers $x_i$ in the sample with $1001-x_i$, and the value of $D$ remains the same. So, \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{without loss of generality}, let $x=1$. Now, we would like to maximize the quantity 
 
- $\frac{S}{121}-\left(\frac{121-n}{121}\right)(1) = \frac{S+n}{121}-1$$S$ contains $121-n$ numbers that may appear at most $n-1$ times. Therefore, to maximize $S$, we would have $1000$ appear $n-1$ times, $999$ appear $n-1$ times, and so forth. We can thereby represent $S$ as the sum of $n-1$ arithmetic series of $1000, 999, \ldots, 1001 - \left\lfloor \frac{121-n}{n-1} \right\rfloor$. We let $k = \left\lfloor \frac{121-n}{n-1} \right\rfloor$, so
+ $\frac{S}{121}-\left(\frac{121-n}{121}\right)(1) = \frac{S+n}{121}-1$
 
- $S = (n-1)\left[\frac{k(1000 + 1001 - k)}{2}\right] + R(n)$where $R(n)$ denotes the sum of the remaining $121-(n-1)k$ numbers, namely $R(n) = (121-(n-1)k)(1000-k)$. 
-
- At this point, we introduce the crude estimate<sup>[\href{https://artofproblemsolving.com\#note\_1}{1}]</sup> that $k=\frac{121-n}{n-1}$, so $R(n) = 0$ and
- \begin{align*}2S+2n &= (121-n)\left(2001-\frac{121-n}{n-1}\right)+2n = (120-(n-1))\left(2002-\frac{120}{n-1}\right)\end{align*}
-Expanding (ignoring the constants, as these do not affect which $n$ yields a maximum) and scaling, we wish to minimize the expression $5(n-1) + \frac{36}{n-1}$. By \href{https://artofproblemsolving.com/wiki/index.php?title=AM-GM}{AM-GM}, we have $5(n-1) + \frac{36}{n-1} \ge 2\sqrt{5(n-1) \cdot \frac{36}{n-1}}$, with equality coming when $5(n-1) = \frac{36}{n-1}$, so $n-1 \approx 3$. Substituting this result and some arithmetic gives an answer of $\boxed{947}$.
-
- In less formal language, it quickly becomes clear after some trial and error that in our sample, there will be $n$ values equal to one and $n-1$ values each of $1000, 999, 998 \ldots$. It is fairly easy to find the \href{https://artofproblemsolving.com/wiki/index.php?title=Maximum}{maximum}. Try $n=2$, which yields $924$, $n=3$, which yields $942$,  $n=4$, which yields $947$, and $n=5$, which yields $944$. The maximum difference occurred at $n=4$, so the answer is $947$.
+ $S$ contains $121-n$ numbers that may appear at most $n-1$ times. Therefore, to maximize $S$, we would have 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-With the same reasoning as Solution 1, in order to get largest possible value of D, we can construct that our set of numbers as $\underbrace{1,1,1...1,}_\text{n times}\underbrace{2,2,2...2,}_\text{n times}\underbrace{3,3,3...3,}_\text{n times}........\underbrace{1000,1000,1000....}_\text{n+1  times}$ And, we need to find the value of n that makes the sum as low as possible. And, we can create a formula to make it easier. It isn't hard to find the sum. The numbers which are not 1000, average to $\frac{120}{2n}$ or $\frac{60}{n}$, and there are $120-n$ of them. So, they sum to $\frac{60}{n}(120-n)$. And, the sum of the numbers that are 1000 is $1000(n+1)$ so, our total sum gets us $1000(n+1)+120/2n(120-n)$ We want to minimize it, since the mode will always be 1000. And, testing the values n = 1, n = 2, n = 3, n = 4, we get these results.
-
- $n = 1: 2000+60*119 = 9140$
-
- $n = 2: 3000+30*118 = 6540$
-
- $n = 3: 4000+20*117 = 6340$
-
- $n = 4: 5000+15*116 = 6740$
-
- And, as n grows larger and larger from 4, the values will start increasing. Thus, the lowest possible sum is 6340. Dividing by 121, the lowest possible mean is 52.396...., and thus, the highest possible value of $D$ is 947.604, and the floor of that is $\boxed{947}$
-
- - AlexLikeMath
-
- \textbf{Notes} 
-                \begin{itemize}
-                    \item \href{https://artofproblemsolving.com\#ref\_1}{\textasciicircum{}} In fact, when $n = 2,3,4,5$ (which some simple testing shows that the maximum will occur around), it turns out that $\frac{121-n}{n-1}$ is an integer anyway, so indeed $k = \left\lfloor \frac{121-n}{n-1} \right\rfloor = \frac{121-n}{n-1}$.
-                \end{itemize}
-
-
-                
-
-
 
 
 	\item (\textit{AIME I 1989}) Let $ABCD$ be a tetrahedron with $AB=41$, $AC=7$, $AD=18$, $BC=36$, $BD=27$, and $CD=13$, as shown in the figure. Let $d$ be the distance between the midpoints of edges $AB$ and $CD$. Find $d^{2}$.
@@ -1078,15 +925,11 @@ Call the midpoint of $\overline{AB}$ $M$ and the midpoint of $\overline{CD}$ $N$
 
 
 
-
-
 \textbf{Solution 2}
 
 Let M be the midpoint of AB.DM is a median of triangle ABD and CM is a median of triangle ABCWe find that CM\textasciicircum{}2 = 1009/4 and DM\textasciicircum{}2 = 425/4We can then find the median of triangle CDM squared from the 3 side lengths of the triangle which gives us 137.Therefore \(d^2 = \boxed{137}.\)
 
  
-
-
 
 
 	\item (\textit{AIME I 1989}) Let $S^{}_{}$ be a subset of $\{1,2,3^{}_{},\ldots,1989\}$ such that no two members of $S^{}_{}$ differ by $4$ or $7$. What is the largest number of elements $S^{}_{}$ can have?
@@ -1108,18 +951,22 @@ We first show that we can choose at most 5 numbers from $\{1, 2, \ldots , 11\}$ 
  
 
 
-
-
 	\item (\textit{AIME I 1989}) Given a positive integer $n^{}_{}$, it can be shown that every complex number of the form $r+si^{}_{}$, where $r^{}_{}$ and $s^{}_{}$ are integers, can be uniquely expressed in the base $-n+i^{}_{}$ using the integers $0,1,2^{}_{},\ldots,n^2$ as digits. That is, the equation
 
 
- $r+si=a_m(-n+i)^m+a_{m-1}(-n+i)^{m-1}+\cdots +a_1(-n+i)+a_0$is true for a unique choice of non-negative integer $m^{}_{}$ and digits $a_0,a_1^{},\ldots,a_m$ chosen from the set $\{0^{}_{},1,2,\ldots,n^2\}$, with $a_m\ne 0^{}{}$. We write
+ $r+si=a_m(-n+i)^m+a_{m-1}(-n+i)^{m-1}+\cdots +a_1(-n+i)+a_0$
+
+ is true for a unique choice of non-negative integer $m^{}_{}$ and digits $a_0,a_1^{},\ldots,a_m$ chosen from the set $\{0^{}_{},1,2,\ldots,n^2\}$, with $a_m\ne 0^{}{}$. We write
 
 
- $r+si=(a_ma_{m-1}\ldots a_1a_0)_{-n+i}$to denote the base $-n+i^{}_{}$ expansion of $r+si^{}_{}$. There are only finitely many integers $k+0i^{}_{}$ that have four-digit expansions
+ $r+si=(a_ma_{m-1}\ldots a_1a_0)_{-n+i}$
+
+ to denote the base $-n+i^{}_{}$ expansion of $r+si^{}_{}$. There are only finitely many integers $k+0i^{}_{}$ that have four-digit expansions
 
 
- $k=(a_3a_2a_1a_0)_{-3+i^{}_{}}~~~~a_3\ne 0.$Find the sum of all such $k^{}_{}$.
+ $k=(a_3a_2a_1a_0)_{-3+i^{}_{}}~~~~a_3\ne 0.$
+
+ Find the sum of all such $k^{}_{}$.
 
 
  
@@ -1170,8 +1017,6 @@ First, we find the first three powers of $-3+i$:
  
 
 
-
-
 	\item (\textit{AIME I 1989}) Point $P$ is inside $\triangle ABC$. Line segments $APD$, $BPE$, and $CPF$ are drawn with $D$ on $BC$, $E$ on $AC$, and $F$ on $AB$ (see the figure below). Given that $AP=6$, $BP=9$, $PD=6$, $PE=3$, and $CF=20$, find the area of $\triangle ABC$.
 
 
@@ -1194,7 +1039,9 @@ Let $[RST]$ be the area of polygon $RST$.  We'll make use of the following fact:
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_15_Solution_Figure_1.png}
                     \end{figure}
-                    This is true because triangles $XPY$ and $YPL$ have their areas in ratio $XP:PL$ (as they share a common height from $Y$), and the same is true of triangles $ZPY$ and $LPZ$.
+                    
+
+ This is true because triangles $XPY$ and $YPL$ have their areas in ratio $XP:PL$ (as they share a common height from $Y$), and the same is true of triangles $ZPY$ and $LPZ$.
 
  We'll also use the related fact that $\dfrac{[XPY]}{[ZPX]} = \dfrac{YL}{LZ}$.  This is slightly more well known, as it is used in the standard proof of \href{https://artofproblemsolving.com/wiki/index.php?title=Ceva\%27s\_theorem}{Ceva's theorem}.
 
@@ -1205,7 +1052,9 @@ Let $[RST]$ be the area of polygon $RST$.  We'll make use of the following fact:
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_15_Solution_Figure_2.png}
                     \end{figure}
-                    Since $AP = PD = 6$, this means that $[APB] + [APC] = [BPC]$; thus $\triangle BPC$ has half the area of $\triangle ABC$.  And since $PE = 3 = \dfrac{1}{3}BP$, we can conclude that $\triangle APC$ has one third of the combined areas of triangle $BPC$ and $APB$, and thus $\dfrac{1}{4}$ of the area of $\triangle ABC$.  This means that $\triangle APB$ is left with $\dfrac{1}{4}$ of the area of triangle $ABC$:
+                    
+
+ Since $AP = PD = 6$, this means that $[APB] + [APC] = [BPC]$; thus $\triangle BPC$ has half the area of $\triangle ABC$.  And since $PE = 3 = \dfrac{1}{3}BP$, we can conclude that $\triangle APC$ has one third of the combined areas of triangle $BPC$ and $APB$, and thus $\dfrac{1}{4}$ of the area of $\triangle ABC$.  This means that $\triangle APB$ is left with $\dfrac{1}{4}$ of the area of triangle $ABC$:
  \[[BPC]: [APC]: [APB] = 2:1:1.\]Since $[APC] = [APB]$, and since $\dfrac{[APC]}{[APB]} = \dfrac{CD}{DB}$, this means that $D$ is the midpoint of $BC$.
 
  Furthermore, we know that $\dfrac{CP}{PF} = \dfrac{[APC] + [BPC]}{[APB]} = 3$, so $CP = \dfrac{3}{4} \cdot CF = 15$.
@@ -1216,8 +1065,6 @@ Let $[RST]$ be the area of polygon $RST$.  We'll make use of the following fact:
 Happily, $BP^2 + PD^2 = 81 + 36$ is also equal to 117.  Therefore $\triangle BPD$ is a right triangle with a right angle at $P$; its area is thus $\dfrac{1}{2} \cdot 9 \cdot 6 = 27$.  As $PD$ is a median of $\triangle BPC$, the area of $BPC$ is twice this, or 54.  And we already know that $\triangle BPC$ has half the area of $\triangle ABC$, which must therefore be $\boxed{108}$.
 
  
-
-
 
 
 
@@ -1257,8 +1104,6 @@ We first assign masses:  Let $M(B) = 1$.  Then: $M(E) = 3$, $M(P) = 4$, $M(A) = 
 
 
 
-
-
 \textbf{Solution 3 (Mass Points, Stewart's Theorem, Heron's Formula)}
 
 Because we're given three concurrent \href{https://artofproblemsolving.com/wiki/index.php?title=Cevian}{cevians} and their lengths, it seems very tempting to apply \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{Mass points}. We immediately see that $w_E = 3$, $w_B = 1$, and $w_A = w_D = 2$. Now, we recall that the masses on the three sides of the triangle must be balanced out, so $w_C = 1$ and $w_F = 3$. Thus, $CP = 15$ and $PF = 5$. 
@@ -1279,8 +1124,6 @@ Because we're given three concurrent \href{https://artofproblemsolving.com/wiki/
 
 
 
-
-
 \textbf{Solution 4 (Ceva's Theorem, Stewart's Theorem)}
 
 Using a different form of \href{https://artofproblemsolving.com/wiki/index.php?title=Ceva\%27s\_Theorem}{Ceva's Theorem}, we have $\frac {y}{x + y} + \frac {6}{6 + 6} + \frac {3}{3 + 9} = 1\Longleftrightarrow\frac {y}{x + y} = \frac {1}{4}$
@@ -1297,15 +1140,11 @@ Using a different form of \href{https://artofproblemsolving.com/wiki/index.php?t
 
 
 
-
-
 \textbf{Solution 5 (Stewart's Theorem)}
 
 First, let $[AEP]=a, [AFP]=b,$ and $[ECP]=c.$ Thus, we can easily find that $\frac{[AEP]}{[BPD]}=\frac{3}{9}=\frac{1}{3} \Leftrightarrow [BPD]=3[AEP]=3a.$ Now, $\frac{[ABP]}{[BPD]}=\frac{6}{6}=1\Leftrightarrow [ABP]=3a.$ In the same manner, we find that $[CPD]=a+c.$ Now, we can find that $\frac{[BPC]}{[PEC]}=\frac{9}{3}=3 \Leftrightarrow \frac{(3a)+(a+c)}{c}=3 \Leftrightarrow c=2a.$ We can now use this to find that $\frac{[APC]}{[AFP]}=\frac{[BPC]}{[BFP]}=\frac{PC}{FP} \Leftrightarrow \frac{3a}{b}=\frac{6a}{3a-b} \Leftrightarrow a=b.$ Plugging this value in, we find that $\frac{FC}{FP}=3 \Leftrightarrow PC=15, FP=5.$ Now, since $\frac{[AEP]}{[PEC]}=\frac{a}{2a}=\frac{1}{2},$ we can find that $2AE=EC.$ Setting $AC=b,$ we can apply \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} on triangle $APC$ to find that $(15)(15)(\frac{b}{3})+(6)(6)(\frac{2b}{3})=(\frac{2b}{3})(\frac{b}{3})(b)+(b)(3)(3).$ Solving, we find that $b=\sqrt{405} \Leftrightarrow AE=\frac{b}{3}=\sqrt{45}.$ But, $3^2+6^2=45,$ meaning that $\angle{APE}=90 \Leftrightarrow [APE]=\frac{(6)(3)}{2}=9=a.$ Since $[ABC]=a+a+2a+2a+3a+3a=12a=(12)(9)=108,$ we conclude that the answer is $\boxed{108}$.
 
  
-
-
 
 
 
@@ -1328,8 +1167,6 @@ Firstly, since they all meet at one single point, denoting the mass of them sepa
 
 
 
-
-
 \textbf{Solution 7 (easier version of Solution 5)}
 
 In Solution 5, instead of finding all of $x, y, z$, we only need $y, z$. This is because after we solve for $y, z$, we can notice that $\triangle BAD$ is isosceles with $AB = BD$. Because $P$ is the midpoint of the base, $BP$ is an altitude of $\triangle BAD$. Therefore, $[BAD] = \frac{(AD)(BP)}{2} = \frac{12 \cdot 9}{2} = 54$. Using the same altitude property, we can find that $[ABC] = 2[BAD] = 2 \cdot 54 = \boxed{108}$.
@@ -1340,15 +1177,11 @@ In Solution 5, instead of finding all of $x, y, z$, we only need $y, z$. This is
 
 
 
-
-
 \textbf{Solution 8 (Mass Points, Stewart's Theorem, Simple Version)}
 
 Set $AF=x,$ and use \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{mass points} to find that $PF=5$ and $BF=2x.$ Using \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} on $APB,$ we find that $AB=3\sqrt{13}.$ Then we notice that $APB$ is right, which means the area of $APB$ is $27.$ Because $CF=4\cdot PF,$ the area of $ABC$ is $4$ times the area of $APB,$ which means the area of $ABC=4\cdot 27=\boxed{108}.$
 
  
-
-
 
 
 
@@ -1363,8 +1196,6 @@ We try to solve this using only elementary concepts. Let the areas of triangles 
 
 
 
-
-
 \textbf{Solution 10 (Just Trig Bash)}
 
 We start with mass points as in Solution 2, and receive $BF:AF = 2$, $BD:CD = 1$, $CE:AE = 2$. \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on triangles $ADB$ and $ADC$ with $\theta = \angle ADB$ and $BD=DC=x$ gives
@@ -1376,8 +1207,6 @@ We start with mass points as in Solution 2, and receive $BF:AF = 2$, $BD:CD = 1$
 
 
 
-
-
 \textbf{Solution 11 (Assumption)}
 
 APB looks really close to a right triangle so we use the Pythagorean Theorem and we get $AB=\sqrt{117}$; therefore the area of the triangle is equal to $\frac{\sqrt{117}\cdot 20}{2}$, which is around $\boxed{108}$.
@@ -1386,8 +1215,6 @@ APB looks really close to a right triangle so we use the Pythagorean Theorem and
 
 
  
-
-
 
 
 \end{enumerate}

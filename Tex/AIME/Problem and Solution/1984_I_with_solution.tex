@@ -19,8 +19,6 @@ One approach is to sum an \href{https://artofproblemsolving.com/wiki/index.php?t
 
 
 
-
-
 \textbf{Solution 2}
 
 If $a_1$ is the first term, then $a_1+a_2+a_3 + \cdots + a_{98} = 137$ can be rewritten as:
@@ -39,8 +37,6 @@ If $a_1$ is the first term, then $a_1+a_2+a_3 + \cdots + a_{98} = 137$ can be re
 
 
 
-
-
 \textbf{Solution 3}
 
 A better approach to this problem is to notice that from $a_{1}+a_{2}+\cdots a_{98}=137$ that each element with an odd subscript is 1 from each element with an even subscript. Thus, we note that the sum of the odd elements must be $\frac{137-49}{2}$. Thus, if we want to find the sum of all of the even elements we simply add $49$ common differences to this giving us $\frac{137-49}{2}+49=\fbox{93}$.
@@ -48,8 +44,6 @@ A better approach to this problem is to notice that from $a_{1}+a_{2}+\cdots a_{
  Or, since the sum of the odd elements is 44, then the sum of the even terms must be $\fbox{93}$.
 
  
-
-
 
 
 
@@ -65,8 +59,6 @@ We want to find the value of $a_2+a_4+a_6+a_8+\ldots+a_{98}$, which can be rewri
 
 
 
-
-
 \textbf{Solution 5}
 
 Since we are dealing with an arithmetic sequence, 
@@ -75,8 +67,6 @@ Since we are dealing with an arithmetic sequence,
  \[a_1 = a_{50}-49 \Rightarrow 98a_{50}-49 = 137\]Thus, $49a_{50} = \frac{137 + 49}{2} = \boxed{93}$
 
  
-
-
 
 
 
@@ -95,8 +85,6 @@ The sum of an arithmetic sequence of $n$ terms is $S_n = \frac{n}{2}(a_1 + a_n)$
  And putting this into the second equation,$S = \frac{49}{2}(1 + \frac{137}{49}) = \fbox{093}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) The integer $n$ is the smallest positive multiple of $15$ such that every digit of $n$ is either $8$ or $0$. Compute $\frac{n}{15}$.
@@ -125,8 +113,6 @@ The sum of the digits of any multiple of 3 must be \href{https://artofproblemsol
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice how $8 \cdot 10^k \equiv 8 \cdot (-5)^k \equiv 5 \pmod{15}$ for all integers $k \geq 2$. Since we are restricted to only the digits $8,0$, because $8\equiv -7 \pmod{15}$ we can't have an $8$ in the optimal smallest number. We can just 'add' fives to quickly get $15 \equiv 0 \pmod{15}$ to get our answer. Thus n is $80+800+8000=8880$ and $n/15=8880/15=\boxed{592}$
@@ -135,15 +121,11 @@ Notice how $8 \cdot 10^k \equiv 8 \cdot (-5)^k \equiv 5 \pmod{15}$ for all integ
 
 
 
-
-
 \textbf{Solution 3}
 
 Any number that consists only of the digits $8$ and $0$ is itself divisible by $8$. $n$ therefore is divisible by $8$. Furthermore, $n$ must end in $0$ since it is divisible by $15$, and all multiples of $15$ will end in $5$ or $0$. Therefore may write $2^3 \cdot 3 \cdot 5 \cdot k = 15m$ to express that $n$ is simultaneously a multiple of $8$ and $15$. Going up by multiples of $120$, among three digit numbers we only have to check $840$ which clearly does not satisfy the condition of our problem. Among four digit numbers, you encounter $8040, 8160, 8280, 8400, 8520, 8640, 8760, 8880$ -- this last number corresponds to $k = 74$ or $m =  \boxed{592}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) A point $P$ is chosen in the interior of $\triangle ABC$ such that when lines are drawn through $P$ parallel to the sides of $\triangle ABC$, the resulting smaller triangles $t_{1}$, $t_{2}$, and $t_{3}$ in the figure, have areas $4$, $9$, and $49$, respectively. Find the area of $\triangle ABC$.
@@ -170,15 +152,11 @@ By the transversals that go through $P$, all four triangles are \href{https://ar
 
 
 
-
-
 \textbf{Solution 2}
 
 Alternatively, since the triangles are similar by $AA$, then the ratios between the bases and the heights of each of the three triangles would all be equal. The areas of each of the triangles are all perfect squares, so we could assume $\dfrac{base}{height} = \dfrac{2}{1}.$ That means that the base of $t_{1}$ is 4, the base of $t_{2}$ is 6, and the base of $t_{3}$ is 14. Since the quadrilaterals underneath $t_{1}$ and $t_{2}$ are both parallelograms, and opposite sides of a parallelogram are congruent, the base of the large triangle is $4 + 14 + 6 = 24$. Therefore, the height of the entire triangle would be twelve, so therefore, the area of the large triangle is $\dfrac{1}{2} \cdot 24 \cdot 12 = \boxed{144}$.
 
  
-
-
 
 
 
@@ -195,8 +173,6 @@ The base of $\triangle{ABC}$ is $BC$. Let the base of $t_1$ be $x$, the base of 
 
 
 
-
-
 \textbf{Solution 4}
 
 Since the three lines through $P$ are parallel to the sides, $t_1$, $t_2$, $t_3$, and $\triangle{ABC}$ are similar by $AA$ similarity. Suppose the area of $\triangle{ABC}$ is $x^2$, so the ratio of the base of $t_1$ to the base of $t_2$ to the base of $t_3$ to the base of $\triangle{ABC}$ is $2:3:7:x$. Because the quadrilaterals below $t_1$ and $t_2$ are parallelograms, the base of $\triangle{ABC}$ is equal to the sum of the bases of $t_1, t_2,$ and $t_3$. Therefore, $x$ equals $2+3+7=12$ so the area of $\triangle{ABC}$ equals $x^2=12^2=\boxed{144}.$
@@ -206,6 +182,20 @@ Since the three lines through $P$ are parallel to the sides, $t_1$, $t_2$, $t_3$
  
 
 
+
+\textbf{Solution 5}
+
+Let the longest leg of $t3$ be $x$, and the other leg be $\frac{98}{x}$; we see that all $3$ triangles are similar, and we take the square root of their area ratios to find that the side ratio of $t3$ to $t2$ is $\frac{7}{3}$ and the ratio of $t3$ to $t1$ is $\frac{7}{2}$.
+
+ We see that the two legs of $t2$ will be $\frac{3x}{7}$ and $\frac{42}{x}$, the two legs of $t1$ will be $\frac{2x}{7}$ and $\frac{28}{x}$. The rectangle above these two triangles will have an area of $\frac{2x}{7}$ times  $\frac{42}{x}$, or $12$. We can now create two rectangles, each with a base being one leg of $t3$ and one with a height of the longer leg of $t1$, and the other with a height of the shorter leg of $t2$. To create these rectangles, we get rid of 2 triangles from the bottom left and right of the figure. We assume these triangles are congruent to $t2$ and $t1$, respectively.
+
+ The area of rectangle one, with a height of the longest leg of $t1$ and a base of the shortest leg of $t3$, will be $\frac{98}{x}$ times $\frac{2x}{7}$, or $28$. 
+
+ The area of the second rectangle will be $x$ times $\frac{42}{x}$, or $42$. The remaining $2$ triangles will have a combined area of $13$ as they are identical to $t1$ and $t2$. We now sum the areas of the top rectangle, our $2$ rectangles, $t3$, and the bottom $2$ triangles.
+
+ $12+28+42+49+13=\boxed{144}$
+
+ 
 
 
 	\item (\textit{AIME I 1984}) Let $S$ be a list of positive integers--not necessarily distinct--in which the number $68$ appears. The average (arithmetic mean) of the numbers in $S$ is $56$. However, if $68$ is removed, the average of the remaining numbers drops to $55$. What is the largest number that can appear in $S$?
@@ -232,8 +222,6 @@ Subtracting the equations, we get $68=n+56,$ from which $n=12.$ It follows that 
 
 
 
-
-
 \textbf{Solution 2 (One Variable)}
 
 Suppose that $S$ has $n$ numbers other than the $68.$ We have the following table:
@@ -241,8 +229,6 @@ Suppose that $S$ has $n$ numbers other than the $68.$ We have the following tabl
  \[56(n+1)-68=55n,\] from which $n=12.$ It follows that the sum of the remaining numbers in $S$ is $55n=660.$ We continue with the last paragraph of Solution 1 to get the answer $\boxed{649}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) Determine the value of $ab$ if $\log_8a+\log_4b^2=5$ and $\log_8b+\log_4a^2=7$.
@@ -261,8 +247,6 @@ Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Change\_of\_b
 
 
 
-
-
 \textbf{Solution 2}
 
 We can simplify our expressions by changing everything to a common base and by pulling exponents out of the logarithms. The given equations then become $\frac{\ln a}{\ln 8} + \frac{2 \ln b}{\ln 4} = 5$ and $\frac{\ln b}{\ln 8} + \frac{2 \ln a}{\ln 4} = 7$. Adding the equations and factoring, we get $(\frac{1}{\ln 8}+\frac{2}{\ln 4})(\ln a+ \ln b)=12$. Rearranging we see that $\ln ab = \frac{12}{\frac{1}{\ln 8}+\frac{2}{\ln 4}}$. Again, we pull exponents out of our logarithms to get $\ln ab = \frac{12}{\frac{1}{3 \ln 2} + \frac{2}{2 \ln 2}} = \frac{12 \ln 2}{\frac{1}{3} + 1} = \frac{12 \ln 2}{\frac{4}{3}} = 9 \ln 2$. This means that $\frac{\ln ab}{\ln 2} = 9$. The left-hand side can be interpreted as a base-2 logarithm, giving us $ab = 2^9 = \boxed{512}$.
@@ -271,15 +255,11 @@ We can simplify our expressions by changing everything to a common base and by p
 
 
 
-
-
 \textbf{Solution 3}
 
 This solution is very similar to the above two, but it utilizes the well-known fact that $\log_{m^k}{n^k}= \log_m{n}.$ Thus, $\log_8a+\log_4b^2=5 \Rightarrow  \log_{2^3}{(\sqrt[3]{a})^3} + \log_{2^2}{b^2} = 5 \Rightarrow \log_2{\sqrt[3]{a}} + \log_2{b} = 5 \Rightarrow \log_2{\sqrt[3]{a}b} = 5.$ Similarly, $\log_8b+\log_4a^2=7 \Rightarrow \log_2{\sqrt[3]{b}a} = 7.$ Adding these two equations, we have $\log_2{a^{\frac{4}{3}}b^{\frac{4}{3}}} = 12 \Rightarrow ab = 2^{12\times\frac{3}{4}} = 2^9 = \boxed{512}$.
 
  
-
-
 
 
 
@@ -293,15 +273,11 @@ We can change everything to a common base, like so: $\log_8{a} + \log_8{b^3} = 5
 
 
 
-
-
 \textbf{Solution 5}
 
 Add the two equations to get $\log_8 {a}+ \log_8 {b}+ \log_{a^2}+\log_{b^2}=12$. This can be simplified with the log property $\log_n {x}+\log_n {y}=log_n {xy}$. Using this, we get $\log_8 {ab}+ \log_4 {a^2b^2}=12$. Now let $\log_8 {ab}=c$ and $\log_4 {a^2b^2}=k$. Converting to exponents, we get $8^c=ab$ and $4^k=(ab)^2$. Sub in the $8^c$ to get $k=3c$. So now we have that $k+c=12$ and $k=3c$ which gives $c=3$, $k=9$. This means $\log_4 {a^2b^2}=9$ so $4^9=(ab)^2 \implies ab=(2^2)^9 \implies 2^9 \implies \boxed {512}$
 
  
-
-
 
 
 
@@ -313,8 +289,6 @@ Add the equations and use the facts that $\log{a} +\log{b}=\log{ab}$ and $\log{k
  \[\frac{4}{3}\log_2{ab}=12\]Solving gives, $\boxed{ab=2^9=512}$
 
  
-
-
 
 
 
@@ -334,16 +308,12 @@ By properties of logarithms, we know that $\log_8 {a}+ \log_4 {b ^ 2} = \log_2 {
 
 
 
-
-
 \textbf{Solution 8}
 
 Adding both of the equations, we get 
  \[\log_8{ab} +2\log_4{ab}=12\]Furthermore, we see that $\log_4 {ab}$ is $\frac{3}{2}$ times $\log_8 {ab}.$ Substituting $\log_8 {ab}$ as $x,$ we get $x+3x=12,$ so $x=3.$ Therefore, we have $\log_8 {ab} = 3,$ so $ab= 8^3=\boxed{512}$ ~ math\_comb01
 
  
-
-
 
 
 
@@ -373,8 +343,6 @@ Change all equations to base 64. We then get:
  \[ab = 8^3 = 512.\]
 
  
-
-
 
 
 
@@ -426,15 +394,11 @@ Given:- $\log_8 a + \log_4 b^2 = 5$- $\log_8 b + \log_4 a^2 = 7$
 
 
 
-
-
 \textbf{Solution 11}
 
 Let us convert everything from the first equation to log base-2. We get $\frac{\log_2{a}}{3} + \frac{\log_2{b^2}}{2} = 5$. Multiplying by $6$, we get $2\log_2{a} + 3\log_2{b^2} = 30$. By the properties of logarithms, $\log_2{a^2b^6} = 30$, so $a^2b^6 = 2^{30}$. We can use the exact same process for the next equation. We have $\log_2{b^2a^6} = 42$, so $a^6b^2 = 2^{42}$. We can now multiply our two equations of products of powers of $a$ and $b$ to get $a^8b^8 = 2^{42} \cdot 2^{30} = 2^{72}$. Taking the $8$-th root of both sides, we get $ab = 2^{\frac{72}{8}} = 2^9 = \boxed{512}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) Three circles, each of radius $3$, are drawn with centers at $(14, 92)$, $(17, 76)$, and $(19, 84)$. A line passing through $(17,76)$ is such that the total area of the parts of the three circles to one side of the line is equal to the total area of the parts of the three circles to the other side of it. What is the absolute value of the slope of this line?
@@ -468,8 +432,6 @@ Let us convert everything from the first equation to log base-2. We get $\frac{\
 
 
 
-
-
 \textbf{Solution 2}
 
 First of all, we can translate everything downwards by $76$ and to the left by $14$. Then, note that a line passing through a given point intersecting a circle with a center as that given point will always cut the circle in half, so we can re-phrase the problem:
@@ -491,8 +453,6 @@ First of all, we can translate everything downwards by $76$ and to the left by $
 
 
 
-
-
 \textbf{Solution 3 (non-rigorous)}
 
 Consider the region of the plane between $x=16$ and $x=17$. The parts of the circles centered at $(14,92)$ and $(19,84)$ in this region have equal area. This is by symmetry- the lines defining the region are 2 units away from the centers of each circle and therefore cut off congruent segments. We will draw the line in a way that uses this symmetry and makes identical cuts on the circles. Since $(17,76)$ is $8$ units below the center of the lower circle, we will have the line exit the region $8$ units above the center of the upper circle, at $(16,100)$. We then find that the slope of the line is $-24$ and our answer is $\boxed{024}$.
@@ -500,8 +460,6 @@ Consider the region of the plane between $x=16$ and $x=17$. The parts of the cir
  (Note: this solution does not feel rigorous when working through it, but it can be checked easily. In the above diagram, the point $M$ is marked. Rotate the aforementioned region of the plane $180^\circ$ about point $M$, and the fact that certain areas are equal is evident.)
 
  
-
-
 
 
 
@@ -515,16 +473,12 @@ We can redefine the coordinate system so that the center of the center circle is
 
 
 
-
-
 \textbf{Solution 5 (Easy to understand)}
 
 Notice that any line that passes through the bottom circle's center cuts it in half, so all we really care about are the top two circles. Suppose $\ell$ is the desired line. Draw lines $\ell_1$ and $\ell_2$ both parallel to $\ell$ such that $\ell_1$ passes through $(14,92)$ and $\ell_2$ passes through $(19,84)$. Clearly, $\ell$ must be the "average" of $\ell_1$ and $\ell_2$. Suppose $\ell:=y=mx+b, \ell_1:=y=mx+c, \ell_2:=y=mx+d$. Then $b=76-17m, c=92-14m, d=84-19m$. So we have that 
  \[76-17m=\frac{92-14m+84-19m}{2},\]which yields $m=-24$ for an answer of $\boxed{024}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) The function f is defined on the set of integers and satisfies
@@ -554,8 +508,6 @@ So this function reiterates with a period of 2 for $x$. It might be tempting at 
 
 
 
-
-
 \textbf{Solution 2}
 
 We start by finding values of the function right under $1000$ since they require iteration of the function.
@@ -569,8 +521,6 @@ We start by finding values of the function right under $1000$ since they require
  Soon we realize the $f(k)$ for integers $k<1000$ either equal $998$ or $997$ based on its parity. (If short on time, a guess of $998$ or $997$ can be taken now.)If $k$ is even, $f(k)=997$. If $k$ is odd, $f(k)=998$. $84$ has even parity, so $f(84)=997$.The result may be rigorously shown through induction.
 
  
-
-
 
 
 
@@ -591,8 +541,6 @@ Assume that $f(84)$ is to be performed $n+1$ times. Then we have
 
 
 
-
-
 \textbf{Solution 4 (really a solution, DO THIS ON A REAL TEST)}
 
 Open up a coding IDE and use \href{https://artofproblemsolving.com/wiki/index.php?title=Recursion}{recursion} to do this problem. The idea is to define a function (I called it $f$, you can call it whatever you want) with parameter $n$ (or 84 in this case) and say if $n$ is greater than 1000, then return $n-3$. Else, return $f(f(n + 5))$. Python code:
@@ -600,17 +548,19 @@ Open up a coding IDE and use \href{https://artofproblemsolving.com/wiki/index.ph
  \begin{verbatim}
 def f(n):       if n >= 1000:           return n - 3       else:           return f(f(n + 5))   print(f(84))
 \end{verbatim}
+
+
 Or [python]def f(n):
 
  \begin{verbatim}
 if n < 1000:       return f(f(n + 5))  else:      return n-3
-\end{verbatim}print(f(84))[/python]
+\end{verbatim}
+
+print(f(84))[/python]
 
  Note:"Do THIS ON A REAL TEST" does not mean open up python on the real AIME(hopefully)
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) The equation $z^6+z^3+1=0$ has complex roots with argument $\theta$ between $90^\circ$ and $180^\circ$ in the complex plane. Determine the degree measure of $\theta$.
@@ -633,8 +583,6 @@ We shall introduce another factor to make the equation easier to solve. If $r$ i
 
 
 
-
-
 \textbf{Solution 2}
 
 The substitution $y=z^3$ simplifies the equation to $y^2+y+1 = 0$. Applying the quadratic formula gives roots $y=-\frac{1}{2}\pm \frac{\sqrt{3}i}{2}$, which have arguments of $120$ and $240,$ respectively. We can write them as $z^3 = \cos 240^\circ + i\sin 240^\circ$ and $z^3 = \cos 120^\circ + i\sin 120^\circ$. So we can use \href{https://artofproblemsolving.com/wiki/index.php?title=De\_Moivre\%27s\_theorem}{De Moivre's theorem} (which I would suggest looking at if you never heard of it before) to find the fractional roots of the expressions above! For $\cos 240^\circ + i\sin 240$ we have $(\cos 240^\circ + i\sin 240^\circ)^{1/3}$ $\Rightarrow$ $\cos 80^\circ + i\sin 80^\circ, \cos 200^\circ + i\sin200^\circ,$ and $\cos 320^\circ + i\sin320^\circ.$Similarly for $(\cos 120^\circ + i\sin 120^\circ)^{1/3}$, we have $\cos 40^\circ + i\sin 40^\circ, \cos 160^\circ + i\sin 160^\circ,$ and $\cos 280^\circ + i\sin 280^\circ.$ The only argument out of all these roots that fits the description is $\theta = \boxed{160}$
@@ -645,15 +593,11 @@ The substitution $y=z^3$ simplifies the equation to $y^2+y+1 = 0$. Applying the 
 
 
 
-
-
 \textbf{Solution 3}
 
 As in Solution 2, make the substitution $u=z^3$. Then we are left with $u^2+u+1=0$, and we would have the solutions $e^{\frac{2\pi}{3}i},e^{\frac{4\pi}{3}i},e^{\frac{8\pi}{3}i},e^{\frac{10}{3}\pi}$. The latter two solutions are obtained by adding one extra revolution around the unit circle. (Notice how we omitted $e^{\frac{6\pi}{3}i}$, since this would yield $e^{2i\pi}=1$ and does not satisfy the equation.) Now, we substitute back, which gives us $z^3=e^{\frac{2\pi}{3}i},e^{\frac{4\pi}{3}i},e^{\frac{10}{3}\pi}\implies z=e^{\frac{2\pi}{9}i},e^{\frac{4\pi}{9}i},e^{\frac{8\pi}{9}i},e^{\frac{10\pi}{9}i}$. The only root in the range $\frac{\pi}{2}<\theta<\pi$ is achieved when $\theta=\frac{8\pi}{9}=\boxed{160^\circ}$.Note that there are 6 solutions to $z$ in this equation, and they are obtained by simply adding more revolutions around the unit circle and dividing by 3.
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) In tetrahedron $ABCD$, edge $AB$ has length 3 cm. The area of face $ABC$ is $15\mbox{cm}^2$ and the area of face $ABD$ is $12 \mbox { cm}^2$. These two faces meet each other at a $30^\circ$ angle. Find the volume of the tetrahedron in $\mbox{cm}^3$.
@@ -671,11 +615,11 @@ As in Solution 2, make the substitution $u=z^3$. Then we are left with $u^2+u+1=
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1984_9_Solution_Figure_1.png}
                     \end{figure}
-                    Position face $ABC$ on the bottom. Since $[\triangle ABD] = 12 = \frac{1}{2} \cdot AB \cdot h_{ABD}$, we find that $h_{ABD} = 8$. Because the problem does not specify, we may assume both $ABC$ and $ABD$ to be isosceles triangles. Thus, the height of $ABD$ forms a $30-60-90$ with the height of the tetrahedron. So, $h = \frac{1}{2} (8) = 4$. The volume of the tetrahedron is thus $\frac{1}{3}Bh = \frac{1}{3} \cdot15 \cdot 4 = \boxed{020}$.
+                    
+
+ Position face $ABC$ on the bottom. Since $[\triangle ABD] = 12 = \frac{1}{2} \cdot AB \cdot h_{ABD}$, we find that $h_{ABD} = 8$. Because the problem does not specify, we may assume both $ABC$ and $ABD$ to be isosceles triangles. Thus, the height of $ABD$ forms a $30-60-90$ with the height of the tetrahedron. So, $h = \frac{1}{2} (8) = 4$. The volume of the tetrahedron is thus $\frac{1}{3}Bh = \frac{1}{3} \cdot15 \cdot 4 = \boxed{020}$.
 
  
-
-
 
 
 
@@ -686,8 +630,6 @@ It is clear that $DX=8$ and $CX=10$ where $X$ is the foot of the perpendicular f
  (Note this actually isn't rigorous because they never proved that the height from $D$ to $XC$ is the altitude of the tetrahedron.
 
  
-
-
 
 
 
@@ -703,15 +645,11 @@ Drop an altitude from $C$ to $X$ on triangle $ABC$. Through definition of height
 
 
 
-
-
 \textbf{Solution 3 (Sketchy)}
 
 Make faces $ABC$ and $ABD$ right triangles. This makes everything a lot easier. Then do everything in solution 1.
 
  
-
-
 
 
 
@@ -740,8 +678,6 @@ We can use 3D coordinates.
  
 
 
-
-
 	\item (\textit{AIME I 1984}) Mary told John her score on the American High School Mathematics Examination (AHSME), which was over $80$. From this, John was able to determine the number of problems Mary solved correctly. If Mary's score had been any lower, but still over $80$, John could not have determined this. What was Mary's score? (Recall that the AHSME consists of $30$ multiple choice problems and that one's score, $s$, is computed by the formula $s=30+4c-w$, where $c$ is the number of correct answers and $w$ is the number of wrong answers. Students are not penalized for problems left unanswered.)
 
 
@@ -759,8 +695,6 @@ Therefore, Mary could not have left at least five blank; otherwise, one more cor
  It follows that $c+w\geq 26$ and $w\leq 3$, so $c\geq 23$ and $s=30+4c-w\geq 30+4(23)-3=119$. So Mary scored at least $119$. To see that no result other than $23$ right/$3$ wrong produces $119$, note that $s=119\Rightarrow 4c-w=89$ so $w\equiv 3\pmod{4}$. But if $w=3$, then $c=23$, which was the result given; otherwise $w\geq 7$ and $c\geq 24$, but this implies at least $31$ questions, a contradiction. This makes the minimum score $\boxed{119}$.
 
  
-
-
 
 
 
@@ -786,8 +720,6 @@ A less technical approach that still gets the job done:
 
 
 
-
-
 \textbf{Solution 3 (Table)}
 
 Based on the value of $c,$ we construct the following table:
@@ -805,47 +737,11 @@ Based on the value of $c,$ we construct the following table:
 
 
 
-
-
 \textbf{Solution 4 (Less Rigorous Version of Solution 1)}
 
 Given that Mary's score is $30+4c-w$, two other ways to get that score are $30+4(c+1)-(w+4)$ and $30+4(c-1)-(w-4)$.Since it is clear that $c>1$, we must have $w<4$. In order to minimize the score, assume that $w=3$.The number of problems left blank must be less than $5$ because of the $30+4(c+1)-(w+4)$ case. In order to minimize the score, assume that the number of problems left blank is $4$, making the number of correct problems $23$.Substituting, we get that $s=30+23{\,\cdot\,}4-3$, so $s=\boxed{119}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
-
-
-
-\textbf{Solution 6 (Modular Arithmetic)}
-
-Let $p$ represent the number of questions passed. We thus have $c+w+p=30$, which means we can express $s$ as follows:
- \begin{align*} s&=30+4c-w \\ s&=c+w+p+4c-w\\ s&=5c+p \hspace{4cm} (1)\\ \end{align*}
-
-
- Now, suppose there are at least two triplets (c,w,p) that achieve a score of $s$. Then we have, for distinct values of $c_1, \ c_2, \ w_1, \ w_2, \ p_1, \ p_2$:
-
- 
- \begin{align*} 30+4c_1-w_1&=30+4c_2-w_2 \\ 4c_1-4c_2&=w_1-w_2\\ 4(c_1-c_2)&=w_1-w_2\\ \end{align*}
-
-
- Thus, $w_1 \equiv w_2 \ (mod \ 4)$. We also see that $w$ increases if and only if $c$ increases. We can do the same thing with equation (1):
-
- 
- \begin{align*} 5c_1+p_1 &= 5c_2+p_2\\ 5(c_1-c_2)&=p_2-p_1\\ \end{align*}
-
-
- Thus, $p_1 \equiv p_2 \ (mod \ 5)$. We also see that $p$ increases if and only if $c$ decreases. Therefore, if a particular value of $s$ permits two solutions, then it must be the case that $p$ can differ by 5, or that $w$ can differ by 4.
-
- If we thus make $w$ strictly less than 4, and we make $p$ strictly less than 5, then it won't be possible for them to differ enough to permit more than one solution (note that the same can be said if we restrict $w$ to be above 26, or $p$ to be above 25, but these solutions give scores clearly less than 80). It is clear that we won't be able to decrease $w$ by 4 nor decrease $p$ by  5 under these conditions. We also can't increase $w$ by 4, as we would need to increase $c$ by at least 1 ($w$ and $c$ increase in tandem), which necessitates decreasing $p$ by at least 5. We also cannot increase $p$ by 5, as this would require $c$ to decrease by $1$ and $w$ to decrease by 4. 
-
- The lowest possible score under these conditions is when $c$ is minimized, i.e. $c=23$,  $w=3$,  and  $p=4$, which gives a score of $\boxed{119}$.
-
- 
-
-
 
 
 	\item (\textit{AIME I 1984}) A gardener plants three maple trees, four oaks, and five birch trees in a row. He plants them in random order, each arrangement being equally likely. Let $\frac m n$ in lowest terms be the probability that no two birch trees are next to one another. Find $m+n$.
@@ -875,8 +771,6 @@ First notice that there is no difference between the maple trees and the oak tre
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $b$, $n$ denote birch tree and not-birch tree, respectively. Notice that we only need $4$ $n$s to separate the $5$ $b$s. Specifically,
@@ -897,8 +791,6 @@ Let $b$, $n$ denote birch tree and not-birch tree, respectively. Notice that we 
  Thus the probability equals $\frac{56}{792}=\frac{7}{99}\Longrightarrow m+n=7+99=\boxed{106}$.
 
  
-
-
 
 
 
@@ -931,15 +823,11 @@ Therefore, the desired result is given by $7+99 = \boxed{106}$.
 
 
 
-
-
 \textbf{Solution 4}
 
 Here is a solution leaving out nothing. This solution is dedicated to those that are in self study and wish to learn the most they can. I will make it as elementary as possible and intuition based.Arrange first the $3$ maple and $4$ oaks as $MMMOOOO$. We then notice that for none of the $5$ birch trees to be adjacent, they must be put in between these $M$'s and $O$'s. We then see that there are $8$ spots to put these $5$ birch trees in. So we can select $5$ spots for these birch trees in $\binom{8}{5}$. But then, we can rearrange the $M$'s and $O$'s in $7!/(3!4!)=\binom{7}{3}$ ways. So then there are $\binom{8}{5}\binom{7}{3}$ valid arrangements with no given consecutive birch trees.There are then a total of $\frac{12!}{3!4!5!}$ different total arrangements. Therefore the probability is given as $\frac{\binom{8}{5}\binom{7}{3}}{\frac{12!}{3!4!5!}}=\frac{7}{99}$, so the answer is $7+99=\boxed{106}$.
 
  
-
-
 
 
 
@@ -951,8 +839,6 @@ Let's remove all of the birch trees so that were left with $3$ maple trees and $
  -jb2015007
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) A function $f$ is defined for all real numbers and satisfies $f(2+x)=f(2-x)$ and $f(7+x)=f(7-x)$ for all $x$. If $x=0$ is a root for $f(x)=0$, what is the least number of roots $f(x)=0$ must have in the interval $-1000\leq x \leq 1000$?
@@ -977,8 +863,6 @@ If $f(2+x)=f(2-x)$, then substituting $t=2+x$ gives $f(t)=f(4-t)$. Similarly, $f
 
 
 
-
-
 \textbf{Solution 2 (non-rigorous)}
 
 We notice that the function has reflectional symmetry across both $x=2$ and $x=7$. We also use the fact that $x=0$ is a root. This shows that $x=4$ and $x=14$ are also roots. We then apply the reflection across the other axis to form $x=\pm 10$ as roots. Continuing this shows that the roots are $0 \mod 10$ or $4 \mod 10$. There are 200 positive roots and 200 negative roots. 0 is also a root, and adding these gives a result of $\boxed{401}$. $QED \blacksquare$
@@ -986,8 +870,6 @@ We notice that the function has reflectional symmetry across both $x=2$ and $x=7
  Solution by \href{https://artofproblemsolving.com/wiki/index.php?title=User:A1b2}{a1b2}
 
  
-
-
 
 
 
@@ -999,15 +881,11 @@ Since this is a recursive problem, list out the functions f(2) and f(7) and figu
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $z$ be an arbitrary zero. If $z=2-x$, then $x=2-z$ and $2+x=4-z$. Repeat with other equation to find if $z$ is a zero then so are $4-z$ and $14-z$. From $0$, we get $4$ and $14$. Now note that applying either of these twice will return $z$, so we must apply them in an alternating fashion for distinct roots. Doing so to $4$ and $14$ returns $10$ and $-10$, respectively. A pattern will emerge of each path hitting a multiple of $10$ after $2$ moves. Hence, we will reach $\pm 1000$ after $200$ jumps in either direction. Including zero, there are $2\cdot200+1=\boxed{401}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) Find the value of $10\cot(\cot^{-1}3+\cot^{-1}7+\cot^{-1}13+\cot^{-1}21).$
@@ -1022,25 +900,31 @@ Let $z$ be an arbitrary zero. If $z=2-x$, then $x=2-z$ and $2+x=4-z$. Repeat wit
 
 We know that $\tan(\arctan(x)) = x$ so we can repeatedly apply the addition formula, $\tan(x+y) = \frac{\tan(x)+\tan(y)}{1-\tan(x)\tan(y)}$. Let $a = \cot^{-1}(3)$, $b=\cot^{-1}(7)$, $c=\cot^{-1}(13)$, and $d=\cot^{-1}(21)$. We have
 
- <center>$\tan(a)=\frac{1}{3},\quad\tan(b)=\frac{1}{7},\quad\tan(c)=\frac{1}{13},\quad\tan(d)=\frac{1}{21}$,
-
- </center>so
-
- <center>$\tan(a+b) = \frac{\frac{1}{3}+\frac{1}{7}}{1-\frac{1}{21}} = \frac{1}{2}$
-
- </center>and
-
- <center>$\tan(c+d) = \frac{\frac{1}{13}+\frac{1}{21}}{1-\frac{1}{273}} = \frac{1}{8}$,
-
- </center>so
-
- <center>$\tan((a+b)+(c+d)) = \frac{\frac{1}{2}+\frac{1}{8}}{1-\frac{1}{16}} = \frac{2}{3}$.
-
- </center>Thus our answer is $10\cdot\frac{3}{2}=\boxed{015}$.
+ $\tan(a)=\frac{1}{3},\quad\tan(b)=\frac{1}{7},\quad\tan(c)=\frac{1}{13},\quad\tan(d)=\frac{1}{21}$,
 
  
 
+ so
 
+ $\tan(a+b) = \frac{\frac{1}{3}+\frac{1}{7}}{1-\frac{1}{21}} = \frac{1}{2}$
+
+ 
+
+ and
+
+ $\tan(c+d) = \frac{\frac{1}{13}+\frac{1}{21}}{1-\frac{1}{273}} = \frac{1}{8}$,
+
+ 
+
+ so
+
+ $\tan((a+b)+(c+d)) = \frac{\frac{1}{2}+\frac{1}{8}}{1-\frac{1}{16}} = \frac{2}{3}$.
+
+ 
+
+ Thus our answer is $10\cdot\frac{3}{2}=\boxed{015}$.
+
+ 
 
 
 
@@ -1052,15 +936,11 @@ Apply the formula $\cot^{-1}x + \cot^{-1} y = \cot^{-1}\left(\frac {xy-1}{x+y}\r
 
 
 
-
-
 \textbf{Solution 3}
 
 On the coordinate plane, let $O=(0,0)$, $A_1=(3,0)$, $A_2=(3,1)$, $B_1=(21,7)$, $B_2=(20,10)$, $C_1=(260,130)$, $C_2=(250,150)$, $D_1=(5250,3150)$, $D_2=(5100,3400)$, and $H=(5100,0)$. We see that $\cot^{-1}(\angle A_2OA_1)=3$, $\cot^{-1}(\angle B_2OB_1)=7$, $\cot^{-1}(\angle C_2OC_1)=13$, and $\cot^{-1}(\angle D_2OD_1)=21$. The sum of these four angles forms the angle of triangle $OD_2H$, which has a cotangent of $\frac{5100}{3400}=\frac{3}{2}$, which must mean that $\cot( \cot^{-1}3+\cot^{-1}7+\cot^{-1}13+\cot^{-1}21)=\frac{3}{2}$. So the answer is $10\cdot\left(\frac{3}{2}\right)=\boxed{015}.$
 
  
-
-
 
 
 
@@ -1083,8 +963,6 @@ Recall that $\cot^{-1}\theta = \frac{\pi}{2} - \tan^{-1}\theta$ and that $\arg(a
  \[= 10 \cdot \frac{3}{2} = \boxed{015}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 1984}) What is the largest even integer that cannot be written as the sum of two odd composite numbers?
@@ -1112,8 +990,6 @@ Clearly, if $x \ge 44$, it can be expressed as a sum of 2 odd composites. Howeve
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $n$ be an integer that cannot be written as the sum of two odd composite numbers. If $n>33$, then $n-9,n-15,n-21,n-25,n-27,$ and $n-33$ must all be prime (or $n-33=1$, which yields $n=34=9+25$ which does not work). Thus $n-9,n-15,n-21,n-27,$ and $n-33$ form a prime quintuplet. However, only one prime quintuplet exists as exactly one of those 5 numbers must be divisible by 5.This prime quintuplet is $5,11,17,23,$ and $29$, yielding a maximal answer of 38. Since $38-25=13$, which is prime, the answer is $\boxed{038}$.
@@ -1122,15 +998,11 @@ Let $n$ be an integer that cannot be written as the sum of two odd composite num
 
 
 
-
-
 \textbf{Solution 3 (bash)}
 
 Let $2n$ be an even integer. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Chicken\_McNugget\_Theorem}{Chicken McNugget Theorem} on the two smallest odd composite integers that are relatively prime from each other, 9 and 25, show that the maximum is 191, and the maximum even integer is 190 or lower. We use the fact that sufficiently high multiples of 6, 10, 14, 22, etc. can be represented as $n+n$. We bash each case until we find one that works.
 
  
-
-
 
 
 
@@ -1159,8 +1031,6 @@ Claim: The answer is $\boxed{038}$.
  -Alexlikemath
 
  
-
-
 
 
 
@@ -1208,8 +1078,6 @@ All numbers that could possibly work must be $2 \cdot p$ where $p$ is prime. As 
 
 
 
-
-
 \textbf{Solution 6 (casework)}
 
 As stated above, all numbers that could possibly work must be $2 \cdot p$ where $p$ is prime. If $p$ > 30, we consider $p$ by modulo 30. $p$ could be 1,7,11,13,17,19,23,29 modulo 30. $2 \cdot p$ can be expressed as ($p$+$q$)+($p$-$q$) for some positive, even $q$ less then $p$.
@@ -1234,20 +1102,21 @@ As stated above, all numbers that could possibly work must be $2 \cdot p$ where 
 
  From here, just try all possible p and find the answer is $\boxed {038}$
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 1984}) Determine $w^2+x^2+y^2+z^2$ if
 
 
- $\frac{x^2}{2^2-1}+\frac{y^2}{2^2-3^2}+\frac{z^2}{2^2-5^2}+\frac{w^2}{2^2-7^2}=1$$\frac{x^2}{4^2-1}+\frac{y^2}{4^2-3^2}+\frac{z^2}{4^2-5^2}+\frac{w^2}{4^2-7^2}=1$$\frac{x^2}{6^2-1}+\frac{y^2}{6^2-3^2}+\frac{z^2}{6^2-5^2}+\frac{w^2}{6^2-7^2}=1$$\frac{x^2}{8^2-1}+\frac{y^2}{8^2-3^2}+\frac{z^2}{8^2-5^2}+\frac{w^2}{8^2-7^2}=1$
+ $\frac{x^2}{2^2-1}+\frac{y^2}{2^2-3^2}+\frac{z^2}{2^2-5^2}+\frac{w^2}{2^2-7^2}=1$
+
+ $\frac{x^2}{4^2-1}+\frac{y^2}{4^2-3^2}+\frac{z^2}{4^2-5^2}+\frac{w^2}{4^2-7^2}=1$
+
+ $\frac{x^2}{6^2-1}+\frac{y^2}{6^2-3^2}+\frac{z^2}{6^2-5^2}+\frac{w^2}{6^2-7^2}=1$
+
+ $\frac{x^2}{8^2-1}+\frac{y^2}{8^2-3^2}+\frac{z^2}{8^2-5^2}+\frac{w^2}{8^2-7^2}=1$
+
+ 
  \textbf{Answer: }036
 
 
@@ -1271,8 +1140,6 @@ Adding them up we get the sum as $3^2\cdot 4=\boxed{036}$.
 
 
 
-
-
 \textbf{Solution 2}
 
 As in Solution 1, we have 
@@ -1285,8 +1152,6 @@ As in Solution 1, we have
  \[x^2 + y^2 + z^2 + w^2 = 2^2 + 4^2 + 6^2 + 8^2 - 1^2 - 3^2 - 5^2 - 7^2 = \boxed{36}.\]
 
  
-
-
 
 
 
@@ -1306,8 +1171,6 @@ You might be able to see where this is going. First off, find $\text{lcm}(3,5,21
 
 
 
-
-
 \textbf{Solution 4 (Fast, Efficient, Smart, Highly Recommended, Best)}
 
 Notice how on each line, we have equations of the form $\frac{x^2}{a-1^2}+\frac{y^2}{a-3^2}+\frac{z^2}{a-5^2}+\frac{w^2}{a-7^2}=1$. We can let this be a polynomial, with respect to $a$. We can say that $w^2$, $x^2$, $y^2$, and $z^2$ are coefficients, and not variables. So, we can now expand the fractions to get$(a-1)(a-9)(a-25)(a-49)=x^2(a-9)(a-25)(a-49)$$+ y^2(a-1)(a-25)(a-49)$$+ z^2(a-1)(a-9)(a-49)$$+ w^2(a-1)(a-9)(a-25)$.
@@ -1317,8 +1180,6 @@ Notice how on each line, we have equations of the form $\frac{x^2}{a-1^2}+\frac{
  Well, we can look at what we want to find - $x^2+y^2+z^2+w^2$. So, we want the sum of $x^2$, $y^2$, $z^2$, and $w^2$. Looking back to our expression, we can note how on the right hand side, the $a^3$ terms add to $x^2+y^2+z^2+w^2$. Also, on the left hand side, the $a^3$ coefficient is $-84$ (which is achievable by Vieta's formulas rather than expanding if you want to save a few seconds). So, moving all the $a^3$ terms to the left hand side, then we have that by Vieta's formulas, the sum of the roots is $-84-x^2-y^2-z^2-w^2=-(2^2+4^2+6^2+8^2)$. Then, we can solve to find that $x^2+y^2+z^2+w^2=120-84=\boxed{036}$.
 
  
-
-
 
 
 \end{enumerate}

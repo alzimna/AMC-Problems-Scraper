@@ -21,8 +21,6 @@ For simplicity purposes, we consider two arrangements different even if they onl
 
 
 
-
-
 \textbf{Solution 2 (Solution 4 but more efficient)}
 
 Arranging the 14 people in a circle, one could just see that the probability depends on the men's placement, as any woman can be opposite to a man. Therefore, we just need to consider the men's arrangements.
@@ -39,8 +37,6 @@ Arranging the 14 people in a circle, one could just see that the probability dep
 
 
 
-
-
 \textbf{Solution 3}
 
 We can simply just loop through each of the men and find the probability that the person opposite from him is a woman.
@@ -51,8 +47,6 @@ We can simply just loop through each of the men and find the probability that th
  \[\frac{9}{13}\cdot\frac{8}{11}\cdot\frac{7}{9}\cdot\frac{6}{7}\cdot\frac{5}{5}=\frac{48}{143}\longrightarrow 48+143 = \boxed{191}.\]
 
  
-
-
 
 
 
@@ -71,8 +65,6 @@ This problem is equivalent to solving for the probability that no man is standin
 
 
 
-
-
 \textbf{Solution 5}
 
 Assume that rotations and reflections are distinct arrangements, and replace men and women with identical M's and W's, respectively. (We can do that because the number of ways to arrange $5$ men in a circle and the number of ways to arrange $9$ women in a circle, are constants.) The total number of ways to arrange $5$ M's and $9$ W's is $\binom{14}{5} = 2002.$ 
@@ -82,8 +74,6 @@ Assume that rotations and reflections are distinct arrangements, and replace men
  Therefore, the probability that an arrangement is valid is $\frac{672}{2002} = \frac{48}{143}$ for an answer of $\boxed{191}.$
 
  
-
-
 
 
 
@@ -103,8 +93,6 @@ To start off, we calculate the total amount of ways to organize all $14$ people 
 
 
 
-
-
 \textbf{Solution 7}
 
 We will first assign seats to the men. The first man can be placed in any of the $14$ slots. The second man can be placed in any of the remaining $13$ seats, except for the one diametrically opposite to the first man. So, there are $13 - 1 = 12$ ways to seat him. With a similar argument, the third man can be seated in $10$ ways, the fourth man in $8$ ways and the last man in $6$ ways.  
@@ -115,8 +103,6 @@ We will first assign seats to the men. The first man can be placed in any of the
  \[\frac{14 \cdot 12 \cdot 10 \cdot 8 \cdot 6 \cdot 9!}{14!} = \frac{8 \cdot 6}{13 \cdot 11} = \frac{48}{143}.\]   The answer is $48 + 143 = \boxed{191}$.
 
  
-
-
 
 
 
@@ -133,15 +119,11 @@ First pin one man on one seat (to ensure no rotate situations). Then there are $
 
 
 
-
-
 \textbf{Solution 9}
 
 We get around the condition that each man can't be opposite to another man by simply considering all $7$ diagonals, and choosing $5$ where there will be a single man. For each diagonal, the man can go on either side, and there are $\binom{14}{5}$ ways to arrange the men and the women in total. Thus our answer is $\frac{\binom{7}{5}\cdot 2^5}{\binom{14}{5}} = \frac{48}{143}.$We get $48 + 143 = \boxed{191}$
 
  
-
-
 
 
 
@@ -167,8 +149,6 @@ We can find the probability of one arrangement occurring, and multiply it by the
  
 
 
-
-
 	\item (\textit{AIME I 2023}) Positive real numbers $b \not= 1$ and $n$ satisfy the equations 
  \[\sqrt{\log_b n} = \log_b \sqrt{n} \qquad \text{and} \qquad b \cdot \log_b n = \log_b (bn).\] The value of $n$ is $\frac{j}{k},$ where $j$ and $k$ are relatively prime positive integers. Find $j+k.$
 
@@ -189,15 +169,11 @@ Solving the system gives $x = 4$ and $b = \frac{5}{4}$.Therefore,
 
 
 
-
-
 \textbf{Solution 2}
 
 We can use the property that $\log(xy) = \log(x) + \log(y)$ on the first equation. We get $\log_b(bn) = 1 + \log_b(n)$. Then, subtracting $\log_b(n)$ from both sides, we get $(b-1) \log_b(n) = 1$, therefore $\log_b(n) = \frac{1}{b-1}$. Substituting that into our first equation, we get $\frac{1}{2b-2} = \sqrt{\frac{1}{b-1}}$. Squaring, reciprocating, and simplifying both sides, we get the quadratic $4b^2 - 9b + 5 = 0$. Solving for $b$, we get $\frac{5}{4}$ and $1$. Since the problem said that $b \neq 1$, $b = \frac{5}{4}$. To solve for $n$, we can use the property that $\log_b(n) = \frac{1}{b-1}$. $\log_\frac{5}{4}(n) = 4$, so $n = \frac{5^4}{4^4} = \frac{625}{256}$. Adding these together, we get $\boxed{881}$
 
  
-
-
 
 
 
@@ -211,15 +187,11 @@ There is some $x$ such that $n=b^{4x^2}$. The first equation becomes $2x=2x^2$, 
 
 
 
-
-
 \textbf{Solution 4}
 
 Squaring the first equation, we have $\log_b{n}=\left(\dfrac{1}{2}\log_b{n}\right)^2=\dfrac{1}{4}(\log_b{n})^2$, so $\log_b{n}=4$ and $b^4=n$. The second equation can be rearranged as stated in earlier solutions to $(b-1)\log_b{n}=1$, so $n^{b-1}=b$. Substituting, we have $b^{4b-4}=b$, so $b=\dfrac{5}{4}$ and thus $n=\left(\dfrac{5}{4}\right)^4=\dfrac{625}{256}$, and thus the answer is $\boxed{881.}$
 
  
-
-
 
 
 
@@ -230,8 +202,6 @@ Start the same as solution 4. Square the first equation to get $\log_b{n}=\left(
  -Supernova77
 
  
-
-
 
 
 	\item (\textit{AIME I 2023}) A plane contains $40$ lines, no $2$ of which are parallel. Suppose that there are $3$ points where exactly $3$ lines intersect, $4$ points where exactly $4$ lines intersect, $5$ points where exactly $5$ lines intersect, $6$ points where exactly $6$ lines intersect, and no points where more than $6$ lines intersect. Find the number of points where exactly $2$ lines intersect.
@@ -277,8 +247,6 @@ In this solution, let \textbf{$\boldsymbol{n}$-line points} be the points where 
  
 
 
-
-
 	\item (\textit{AIME I 2023}) The sum of all positive integers $m$ such that $\frac{13!}{m}$ is a perfect square can be written as $2^a3^b5^c7^d11^e13^f,$ where $a,b,c,d,e,$ and $f$ are positive integers. Find $a+b+c+d+e+f.$
 
 
@@ -299,8 +267,6 @@ We first rewrite $13!$ as a prime factorization, which is $2^{10}\cdot3^5\cdot5^
 
 
 
-
-
 \textbf{Solution 2}
 
 The prime factorization of $13!$ is 
@@ -315,8 +281,6 @@ The prime factorization of $13!$ is
 
 
  
-
-
 
 
 
@@ -336,8 +300,6 @@ Try smaller cases. There is clearly only one $m$ that makes $\frac{2!}{m}$ a squ
 
 
  
-
-
 
 
 	\item (\textit{AIME I 2023}) Let $P$ be a point on the circle circumscribing square $ABCD$ that satisfies $PA \cdot PC = 56$ and $PB \cdot PD = 90.$ Find the area of $ABCD.$
@@ -363,8 +325,6 @@ Try smaller cases. There is clearly only one $m$ that makes $\frac{2!}{m}$ a squ
 
 
 
-
-
 \textbf{Solution 2 (Areas and Pythagorean Theorem)}
 
 By the \textbf{Inscribed Angle Theorem}, we conclude that $\triangle PAC$ and $\triangle PBD$ are right triangles.
@@ -382,8 +342,6 @@ By the \textbf{Inscribed Angle Theorem}, we conclude that $\triangle PAC$ and $\
  \[[ABCD] = \frac{d^2}{2} = \boxed{106}.\]~MRENTHUSIASM
 
  
-
-
 
 
 
@@ -405,8 +363,6 @@ By the \textbf{Inscribed Angle Theorem}, we conclude that $\triangle PAC$ and $\
 
 
 
-
-
 \textbf{Solution 4 (Heights and Half-Angle Formula)}
 
 Drop a height from point $P$ to line $\overline{AC}$ and line $\overline{BC}$. Call these two points to be $X$ and $Y$, respectively. Notice that the intersection of the diagonals of $\square ABCD$ meets at a right angle at the center of the circumcircle, call this intersection point $O$.
@@ -422,8 +378,6 @@ Drop a height from point $P$ to line $\overline{AC}$ and line $\overline{BC}$. C
  Solving the equation above, we get that $\tan{\angle{OCP}} = -7/2$ or $2/7$. Since this value must be positive, we pick $\frac{2}{7}$. Then, $\frac{PA}{PC} = 2/7$ (since $\triangle CAP$ is a right triangle with line $\overline{AC}$ the diameter of the circumcircle) and $PA * PC = 56$. Solving we get $PA = 4$, $PC = 14$, giving us a diagonal of length $\sqrt{212}$ and area $\boxed{106}$.
 
  
-
-
 
 
 
@@ -456,8 +410,6 @@ Denote by $x$ the half length of each side of the square.We put the square to th
 
 
 
-
-
 \textbf{Solution 6 (Law of Cosines)}
 
 WLOG, let $P$ be on minor arc $\overarc {AB}$. Let $r$ and $O$ be the radius and center of the circumcircle respectively, and let $\theta = \angle AOP$.  	
@@ -475,8 +427,6 @@ WLOG, let $P$ be on minor arc $\overarc {AB}$. Let $r$ and $O$ be the radius and
  \[2r^2 = \sqrt{56^2+90^2} = 2\sqrt{28^2+45^2} = 2\sqrt{2809} = 2 \cdot 53 = \boxed{106}.\]	~OrangeQuail9
 
  
-
-
 
 
 
@@ -500,8 +450,6 @@ First draw a diagram.
 
 
 
-
-
 \textbf{Solution 8 (Coordinates and Algebraic Manipulation)}
 
 
@@ -519,8 +467,6 @@ First draw a diagram.
 
 
 
-
-
 \textbf{Solution 9 (Law of Sines)}
 
 WLOG, let $P$ be on minor arc $AD.$ Draw in $AP$, $BP$, $CP$, $DP$ and let $\angle ABP = x.$  We can see, by the inscribed angle theorem, that $\angle APB = \angle ACB = 45$, and $\angle CPD = \angle CAD = 45.$ Then, $\angle PAB = 135-x$, $\angle PCD = \angle PAD = (135-x)-90 = 45-x$, and $\angle PDC = 90+x.$ Letting $(PA, PB, PC, PD, AB) = (a,b,c,d,s)$, we can use the law of sines on triangles $PAB$ and $PCD$ to get 
@@ -533,8 +479,6 @@ WLOG, let $P$ be on minor arc $AD.$ Draw in $AP$, $BP$, $CP$, $DP$ and let $\ang
  \[s^{2} = \sqrt{(s^{2}\sin(2x))^{2} + (s^{2}\cos(2x))^{2}} = \sqrt{56^{2} + 90^{2}} = \boxed{106}.\]
 
  
-
-
 
 
 
@@ -555,8 +499,6 @@ Therefore, we have $2r^2\left(\frac{28}{53}\right) = 56$, and since the area of 
 
 
 
-
-
 \textbf{Solution 11 (Angle Chasing and Trigonometric Identities)}
 
 First, we define a few points. Let $O$ be the center of the circle, let $E$ be the intersection of diameter $AC$ and chord $PD$, and let $F$ be the intersection of diameter $BD$ and chord $PC$. We know that $A$, $B$, $C$, and $D$ are four corners of a square. Therefore, the arcs $AD$, $DC$, and $CB$ are all $90$ degrees. By inscribed angles, angle $APD$, angle $DPC$, and angle $CPB$ are $45$ degrees each. Let the measure of angle $PAC$ be $a$. Similarly, let the measure of angle $PBD$ be $b$. 
@@ -568,8 +510,6 @@ Angle chasing will lead us to the fact that $a + b = 135$, or rather, $b = 135-a
 Considering this hypothetical right triangle with legs of $28$ and $45$, the hypotenuse is $\sqrt{45^2+28^2} = 53$. Since $\sin 2a$ must be positive (since $a$ is acute), $\sin 2a = \frac{28}{53}$. Substituting this into the first of the equations, $\frac{28}{53}d^2 = 112$. From this, $d^2 = 212$. The area of square $ABCD$ is half of the square of its diagonal, which is $d$. Thus, the answer is $\frac{d^2}{2} = \boxed{106}$.
 
  
-
-
 
 
 
@@ -591,8 +531,6 @@ This solution is like solution 1, but with more algebra than actual geometry.
 
 
 
-
-
 \textbf{Solution 13 (Heavy coord bash)}
 
 Let the center of the square/circle be the origin, and assume WLOG that $P$ is on the arc connecting $A$ to $B$. Let $A=\left(\dfrac{-r\sqrt{2}}{2},\dfrac{r\sqrt{2}}{2}\right)$, and the other coordinates go in clockwise order. Finally, let $P=(x,y)$, with $x^2+y^2=r^2$.
@@ -603,8 +541,6 @@ Using $(PB)(PD)=90$, we get a very similar equation:
  \[4r^4=90^2+56^2.\]Dividing both sides by $4$, we have $r^4=45^2+28^2$, Since $28,45,$ and $53$ form a Pythagorean Triple, we have $r^2=53$. Since the side length of the square is $r\sqrt2$, the area is thus $2r^2=\boxed{106}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2023}) Alice knows that $3$ red cards and $3$ black cards will be revealed to her one at a time in random order. Before each card is revealed, Alice must guess its color. If Alice plays optimally, the expected number of cards she will guess correctly is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
@@ -676,8 +612,6 @@ We break the problem into stages, one for each card revealed, then further into 
 
 
 
-
-
 \textbf{Solution 2 (Casework)}
 
 At any point in the game, Alice should guess whichever color has come up less frequently thus far (although if both colors have come up equally often, she may guess whichever she likes); using this strategy, her probability of guessing correctly is at least $\frac{1}{2}$ on any given card, as desired.
@@ -701,8 +635,6 @@ At any point in the game, Alice should guess whichever color has come up less fr
 
 
 
-
-
 \textbf{Solution 3 (Dynamic Programming)}
 
 Denote by $N \left( a, b \right)$ the optimal expected number of cards that Alice guesses correctly, where the number of red and black cards are $a$ and $b$, respectively.
@@ -722,8 +654,6 @@ Denote by $N \left( a, b \right)$ the optimal expected number of cards that Alic
  Therefore, the answer is $41 + 10 = \boxed{\textbf{(051) }}$.
 
  
-
-
 
 
 
@@ -752,8 +682,6 @@ Denote by $N_{i,j}$ the optimal expected number of cards that Alice guesses corr
 
 
 
-
-
 \textbf{Solution 5 (Pseudo-recursion)}
 
 Denote $E_n$ the expected number of cards Alice guesses correctly given $n$ red cards and $n$ black cards. We want to find $E_3$.
@@ -771,8 +699,6 @@ Denote $E_n$ the expected number of cards Alice guesses correctly given $n$ red 
  Thus, $E_2 = \frac{17}{6}$, and after long computation, we get $E_3 = \frac{41}{10}$. The requested answer is $41 + 10 = \boxed{51}$.
 
  
-
-
 
 
 
@@ -811,8 +737,6 @@ There's a beautiful observation that for any particular game path, the expected 
  
 
 
-
-
 	\item (\textit{AIME I 2023}) Call a positive integer $n$ extra-distinct if the remainders when $n$ is divided by $2, 3, 4, 5,$ and $6$ are distinct. Find the number of extra-distinct positive integers less than $1000$.
 
 
@@ -839,8 +763,6 @@ $n$ can either be $0$ or $1$ (mod $2$).
 
 
 
-
-
 \textbf{Solution 2 (Simpler)}
 
 Because the LCM of all of the numbers we are dividing by is $60$, we know that all of the remainders are $0$ again at $60$, meaning that we have a cycle that repeats itself every $60$ numbers.
@@ -850,8 +772,6 @@ Because the LCM of all of the numbers we are dividing by is $60$, we know that a
  $48 + 1 =  \boxed{049}$.
 
  
-
-
 
 
 
@@ -913,8 +833,6 @@ $\textbf{Case 0:  } {\textrm Rem} \ \left( n, 6 \right) = 0$.
 
 
 
-
-
 \textbf{Solution 4 (Small addition to solution 2)}
 
 We need to find that $35$, $58$, and $59$ are all extra-distinct numbers smaller than $61.$
@@ -928,8 +846,6 @@ We need to find that $35$, $58$, and $59$ are all extra-distinct numbers smaller
  \textbf{vvsss}
 
  
-
-
 
 
 	\item (\textit{AIME I 2023}) Rhombus $ABCD$ has $\angle BAD < 90^\circ.$ There is a point $P$ on the incircle of the rhombus such that the distances from $P$ to the lines $DA,AB,$ and $BC$ are $9,5,$ and $16,$ respectively. Find the perimeter of $ABCD.$
@@ -973,8 +889,6 @@ We solve this system of equations to get $x=7$ and $y=12.$ Alternatively, we can
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -1000,8 +914,6 @@ We observe that $\angle FPE \cong \angle EAJ$ since right triangles $EFP$ and $E
  So the perimeter of the rhombus is $4s = 4 \cdot \frac{125}{4} = \boxed{125}$.
 
  
-
-
 
 
 
@@ -1033,8 +945,6 @@ Note that
 
 
 
-
-
 \textbf{Solution 4}
 
 Label the points of the rhombus to be $X$, $Y$, $Z$, and $W$ and the center of the incircle to be $O$ so that $9$, $5$, and $16$ are the distances from point $P$ to side $ZW$, side $WX$, and $XY$ respectively. Through this, we know that the distance from the two pairs of opposite lines of rhombus $XYZW$ is $25$ and circle $O$ has radius $\frac{25}{2}$. 
@@ -1062,8 +972,6 @@ Label the points of the rhombus to be $X$, $Y$, $Z$, and $W$ and the center of t
 
 
  
-
-
 
 
 
@@ -1100,8 +1008,6 @@ Denote by $O$ the center of $ABCD$.We drop an altitude from $O$ to $AB$ that mee
 
 
 
-
-
 \textbf{Solution 6}
 
 The center of the incircle is $O.$ Denote the points in which the incircle meets $\overline{AB},$ $\overline{BC},$ $\overline{CD},$ and $\overline{DA}$ as $W,$ $X,$ $Y,$ and $Z,$ respectively. Next, also denote the base of the perpendicular from $P$ to $\overline{AB},$ $\overline{AD},$ $\overline{OW},$ and $\overline{OZ}$ as $M,$ $N,$ $S,$ and $T,$ respectively.
@@ -1116,8 +1022,6 @@ The center of the incircle is $O.$ Denote the points in which the incircle meets
  \[\frac{125}{4}\cdot4=\boxed{125}.\]
 
  
-
-
 
 
 
@@ -1137,8 +1041,6 @@ The center of the incircle is $O.$ Denote the points in which the incircle meets
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 	\item (\textit{AIME I 2023}) Find the number of cubic polynomials $p(x) = x^3 + ax^2 + bx + c,$ where $a, b,$ and $c$ are integers in $\{-20,-19,-18,\ldots,18,19,20\},$ such that there is a unique integer $m \not= 2$ with $p(m) = p(2).$
@@ -1182,8 +1084,6 @@ This all shows that there is a total of $8+10 = 18$ amount of ordered pairs $(a,
 
 
 
-
-
 \textbf{Solution 2 (factor the difference)}
 
 $p(x)-p(2)$ is a cubic with at least two integral real roots, therefore it has three real roots, which are all integers.
@@ -1197,8 +1097,6 @@ $p(x)-p(2)$ is a cubic with at least two integral real roots, therefore it has t
  The total is $\boxed{738}$.
 
  
-
-
 
 
 
@@ -1225,11 +1123,6 @@ For the equation $p(x) = p(2)$ to have exactly two distinct real roots, the line
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME I 2023}) There exists a unique positive integer $a$ for which the sum 
  \[U=\sum_{n=1}^{2023}\left\lfloor\dfrac{n^{2}-na}{5}\right\rfloor\] is an integer strictly between $-1000$ and $1000$. For that unique $a$, find $a+U$.
 
@@ -1242,109 +1135,19 @@ For the equation $p(x) = p(2)$ to have exactly two distinct real roots, the line
 
 
 
-\textbf{Solution (Bounds and Decimal Part Analysis, Rigorous)}
+\textbf{Solution (Super Simple, Easy, & Intuitive)}
 
-Define $\left\{ x \right\} = x - \left\lfloor x \right\rfloor$.
+Since 
+ \[x = \left\lfloor x \right\rfloor + \{x\}\],\begin{align*}U &= \sum_{n=1}^{2023}\left\lfloor\frac{n^2-na}{5}\right\rfloor \\&= \frac15\left(\sum_{n=1}^{2023}n^2-a\sum_{n=1}^{2023}n\right) -\sum_{n=1}^{2023}\left\{\frac{n^2-na}{5}\right\} \\&= \frac{2023\cdot2024}{10}(1349-a) -\sum_{n=1}^{2023}\left\{\frac{n^2-na}{5}\right\}.\end{align*}
 
- First, we bound $U$.
-
- We establish an upper bound of $U$. We have
- \begin{align*} U & \leq \sum_{n=1}^{2023} \frac{n^2 - na}{5} \\ & = \frac{1}{5} \sum_{n=1}^{2023} n^2 - \frac{a}{5} \sum_{n=1}^{2023} n \\ & = \frac{1012 \cdot 2023}{5} \left( 1349 - a \right) \\ & \triangleq UB . \end{align*}
-
-
- We establish a lower bound of $U$. We have
- \begin{align*} U & =  \sum_{n=1}^{2023} \left(  \frac{n^2 - na}{5} - \left\{ \frac{n^2 - na}{5} \right\}  \right) \\ & = \sum_{n=1}^{2023} \frac{n^2 - na}{5} - \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\ & = UB -  \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\ & \geq UB -  \sum_{n=1}^{2023} \mathbf 1 \left\{ \frac{n^2 - na}{5} \notin \Bbb Z \right\} . \end{align*}
-
-
- We notice that if $5 | n$, then $\frac{n^2 - na}{5} \in \Bbb Z$.Thus,
- \begin{align*} U & \geq UB -  \sum_{n=1}^{2023} \mathbf 1 \left\{ \frac{n^2 - na}{5} \notin \Bbb Z \right\} \\ & \geq UB -  \sum_{n=1}^{2023} \mathbf 1 \left\{ 5 \nmid n \right\} \\ & = UB - \left( 2023 - \left\lfloor \frac{2023}{5} \right\rfloor \right) \\ & = UB - 1619 \\ & \triangleq LB . \end{align*}
-
-
- Because $U \in \left[ - 1000, 1000 \right]$ and $UB - LB = 1619 < \left( 1000 - \left( - 1000 \right) \right)$, we must have either $UB \in \left[ - 1000, 1000 \right]$ or $LB \in \left[ - 1000, 1000 \right]$.
-
- For $UB \in \left[ - 1000, 1000 \right]$, we get a unique $a = 1349$.For $LB \in \left[ - 1000, 1000 \right]$, there is no feasible $a$.
-
- Therefore, $a = 1349$. Thus $UB = 0$.
-
- Next, we compute $U$.
-
- Let $n = 5 q + r$, where $r = {\textrm Rem} \ \left( n, 5 \right)$.
-
- We have
- \begin{align*} \left\{ \frac{n^2 - na}{5} \right\} & = \left\{ \frac{\left( 5 q + r \right)^2 - \left( 5 q + r \right)\left( 1350 - 1 \right)}{5} \right\} \\ & = \left\{ 5 q^2 + 2 q r - \left( 5 q + r \right) 270 + q + \frac{r^2 + r}{5}  \right\} \\ & = \left\{\frac{r^2 + r}{5}  \right\} \\ & = \left\{ \begin{array}{ll} 0 & \mbox{ if } r = 0, 4 \\ \frac{2}{5} & \mbox{ if } r = 1, 3 \\ \frac{1}{5} & \mbox{ if } r = 2 \end{array} \right. . \end{align*}
-
-
- Therefore,
- \begin{align*} U & =  \sum_{n=1}^{2023} \left(  \frac{n^2 - na}{5} - \left\{ \frac{n^2 - na}{5} \right\}  \right) \\ & = UB - \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\ & = - \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\ & = - \sum_{q=0}^{404} \sum_{r=0}^4 \left\{\frac{r^2 + r}{5}  \right\} + \left\{ \frac{0^2 - 0 \cdot a}{5} \right\} + \left\{ \frac{2024^2 - 2024a}{5} \right\} \\ & = - \sum_{q=0}^{404} \left( 0 + 0 + \frac{2}{5} + \frac{2}{5} + \frac{1}{5} \right) + 0 + 0 \\ & = - 405 . \end{align*}
-
-
- Therefore, $a + U = 1349 - 405 = \boxed{\textbf{944}}$.
 
  
+Since each fractional part is in $[0,1)$, the second sum is in $[0,2023)$. Thus, for $U\in(-1000,1000)$, we must have
+ \[a=1349,\]which also proves uniqueness.
 
-
-
-
-
-\textbf{Solution 2}
-
-We define $U' = \sum^{2023}_{n=1} {\frac{n^2-na}{5}}$. Since for any real number $x$, $\lfloor x \rfloor \le x \le \lfloor x \rfloor + 1$, we have $U \le U' \le U + 2023$. Now, since $-1000 \le U \le 1000$, we have $-1000 \le U' \le 3023$.
-
- Now, we can solve for $U'$ in terms of $a$. We have:
- \begin{align*} U' &= \sum^{2023}_{n=1} {\frac{n^2-na}{5}} \\ &= \sum^{2023}_{n=1} {\frac{n^2}{5} - \frac{na}{5}} \\ &= \sum^{2023}_{n=1} {\frac{n^2}{5}} - \sum^{2023}_{n=1} {\frac{na}{5}} \\ &= \frac{\sum^{2023}_{n=1} {{n^2}} - \sum^{2023}_{n=1} {na}}{5} \\ &= \frac{\frac{2023(2023+1)(2023 \cdot 2 + 1)}{6} - \frac{a \cdot 2023(2023+1)}{2} }{5} \\ &= \frac{2023(2024)(4047-3a)}{30} \\ \end{align*}
-So, we have $U' = \frac{2023(2024)(4047-3a)}{30}$, and $-1000 \le U' \le 3023$, so we have $-1000 \le \frac{2023(2024)(4047-3a)}{30} \le 3023$, or $-30000 \le 2023(2024)(4047-3a) \le 90690$. Now, $2023 \cdot 2024$ is much bigger than $90690$ or $30000$, and since $4047-3a$ is an integer, to satsify the inequalities, we must have $4047 - 3a = 0$, or $a = 1349$, and $U' = 0$.
-
- Now, we can find $U - U'$. We have:
- \begin{align*} U - U' &= \sum^{2023}_{n=1} {\lfloor \frac{n^2-1349n}{5} \rfloor} - \sum^{2023}_{n=1} {\frac{n^2-1349n}{5}} \\ &= \sum^{2023}_{n=1} {\lfloor \frac{n^2-1349n}{5} \rfloor - \frac{n^2-1349n}{5}} \end{align*}
-.Now, if $n^2-1349n \equiv 0 \text{ (mod 5)}$, then $\lfloor \frac{n^2-1349n}{5} \rfloor - \frac{n^2-1349n}{5} = 0$, and if $n^2-1349n \equiv 1 \text{ (mod 5)}$, then $\lfloor \frac{n^2-1349n}{5} \rfloor - \frac{n^2-1349n}{5} = -\frac{1}{5}$, and so on. Testing with $n \equiv 0,1,2,3,4, \text{ (mod 5)}$, we get $n^2-1349n \equiv 0,2,1,2,0 \text{ (mod 5)}$ respectively. From 1 to 2023, there are 405 numbers congruent to 1 mod 5, 405 numbers congruent to 2 mod 5, 405 numbers congruent to 3 mod 5, 404 numbers congruent to 4 mod 5, and 404 numbers congruent to 0 mod 5. So, solving for $U - U'$, we get:
- \begin{align*} U - U' &= \sum^{2023}_{n=1} {\lfloor \frac{n^2-1349n}{5} \rfloor - \frac{n^2-1349n}{5}} \\ &= 404 \cdot 0 - 405 \cdot \frac{2}{5} - 405 \cdot \frac{1}{5} - 405 \cdot \frac{2}{5} - 404 \cdot 0 \\ &= -405(\frac{2}{5}+\frac{1}{5}+\frac{2}{5}) \\ &= -405 \end{align*}
-Since $U' = 0$, this gives $U = -405$, and we have $a + U = 1349-405 = \boxed{944}$.
+ Now $1349\equiv4\pmod5$, so
 
  
-
-
-
-
-
-\textbf{Solution 3 (Quick)}
-
-We can view the floor function in this problem as simply subtracting the remainder of $n^2 - na$ (mod $5$) from the numerator of  $\frac{n^2-na}{5}$. For example, $\left\lfloor \frac{7}{5} \right\rfloor = \frac{7-2}{5} = 1$.
-
- Note that the congruence of  $n^2 - na$ (mod $5$) loops every time $n$ increases by 5. Also, note that the congruence of $a$ (mod $5$) determines the set of congruences of $n^2 - na$ for each congruence of $n$ (mod $5$). 
-
- For example, if $a \equiv 1$ (mod $5$), the set of remainders is $(0, 2, 1, 2, 0)$ for $n \equiv 1,2,3,4,0$ (mod $5$). Let the sum of these elements be $s$. Note that for each “loop” of the numerator (mod $5$), each element of the set will be subtracted exactly once, meaning $s$ is subtracted once for each loop. The value of the numerator will loop $404$ times (mod $5$) throughout the sum, as $5 \cdot 404=2020$. Then 
-
- $U \approx \frac {\left( \frac {n(n+1)(2n+1)}{6} - \frac{(a)(n)(n+1)}{2}  -404s \right)}{5}$
-
- Where $n=2023$. Note that since $5 \cdot 404=2020$, this is an approximation for $U$ because the equation disregards the remainder (mod $5$) when $n=2021, 2022$, and $2023$ so we must subtract the first 3 terms of our set of congruences one extra time to get the exact value of $U$ (*). However, we will find that this is a negligible error when it comes to the inequality $-1000<U<1000$, so we can proceed with this approximation to solve for $a$. 
-
- Factoring our approximation gives $U \approx \frac {\frac{(n)(n+1)(2n+1 - 3a)}{6}-404s}{5}$
-
- 
-We set $a= \frac{(2n+1)}{3} = 1349$ to make $\frac{(n)(n+1)(2n+1 - 3a)}{6}=0$, accordingly minimizing $|U|$, yielding  $U \approx  \frac{-404s}{5}$
-
- If $a$ increases or decreases by $1$, then $U$ changes by $\frac {(n)(n+1)}{2 \cdot 5} = \frac {2023 \cdot 2024}{10}$which clearly breaks the inequality on $U$. Therefore $a=1349 \equiv 4$ (mod $5$) giving the set of remainders $(2,1,2,0,0)$, so $s=5$ and our approximation yields $U \approx -404$. However, we must subtract 2, 1, and 2 (*) giving us $U = - 404 - \frac{(2+1+2)}{5} = - 405$, giving an answer of $1349-405= \boxed{944}$
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Calculus)}
-
-Consider the integral
- \[\int_{0}^{2023} \dfrac{n^2-na}{5} \, dn.\]We hope this will give a good enough appoximation of $U$ to find $a.$ However, this integral can be easily evaluated to be
- \[\dfrac{1}{15}2023^3-\dfrac{a}{10}2023^2=2023^2\left(\dfrac{2023}{15}-\dfrac{a}{10}\right).\]Because we want this to be as close to $0$ as possible, we find that $a$ should equal $1349.$ Then, evaluating the sum becomes trivial. Set
- \[U'=\sum_{n=1}^{2023}\dfrac{n^2-1349n}{5}\]and
- \[U''=\sum_{n=1}^{2023}\{\dfrac{n^2-1349n}{5}\}.\]Then $U=U'-U''.$ We can evaluate $U'$ to be $0$ and $U''$ to be $-405$ (using some basic number theory). Thus, $U=-405$ and the answer is
- \[1349+(-405)=\boxed{944}.\]~BS2012
-
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
- 
-
-
 
 
 	\item (\textit{AIME I 2023}) Find the number of subsets of $\{1,2,3,\ldots,10\}$ that contain exactly one pair of consecutive integers. Examples of such subsets are $\{\mathbf{1},\mathbf{2},5\}$ and $\{1,3,\mathbf{6},\mathbf{7},10\}.$
@@ -1367,8 +1170,6 @@ Define $f(x)$ to be the number of subsets of $\{1, 2, 3, 4, \ldots x\}$ that hav
  This means that $f'(10) = 2(34) + 2(21) + 2(2)(13) + 2(3)(8) + 5^2 = \boxed{235}$.
 
  
-
-
 
 
 
@@ -1424,8 +1225,6 @@ We can solve this problem using casework, with one case for each possible pair o
 -Algebraik
 
  
-
-
 
 
 
@@ -1486,8 +1285,6 @@ Second, we compute $N_0 \left( m \right)$.
 
 
 
-
-
 \textbf{Solution 4 (Recursive)}
 
 Let $a_n$ be the number of cases from a subset ranging from $1$ - $n$.  We approach the subset from the start and the back to build up a equation. We figure out cases if $1$ and $10$ is in the subset.
@@ -1523,8 +1320,6 @@ We get our answer,  $\boxed{235}$.
 
 
 
-
-
 \textbf{Solution 5 (Similar to Solution 3)}
 
 Let $a_n$ be the number of subsets of the set $\{1,2,3,\ldots,n\}$ such that there exists exactly 1 pair of consecutive elements. Let $b_n$ be the number of subsets of the set $\{1, 2, 3\ldots, n\}$ such that there doesn't exist any pair of consecutive elements. First, lets see how we can construct $a_n.$ For each subset $S$ counted in $a_n,$ either:1. $\{n-1, n\}\subseteq S,$2. $n\not\in S$, or3. $n-1 \not\in S$ and $n\in S.$The first case counts $b_{n-3}$ subsets (as $n-1$ cannot be included and the rest cannot have any consecutive elements), The second counts $a_{n-1},$ and the third counts $a_{n-2}.$ Thus, 
@@ -1535,8 +1330,6 @@ Let $a_n$ be the number of subsets of the set $\{1,2,3,\ldots,n\}$ such that the
  \[\begin{array}{r|l} n & a_n \\ \hline 1 & 0 \\ 2 & 1\\ 3 & 2\\ 4 & 2 + 1 + F_2 = 5\\5 & 5 + 2 + F_3 = 10\\6 & 10 + 5 + F_4 = 20 \\ 7 & 20 + 10 + F_5 = 38\\ 8 & 38 + 20 + F_6 = 71 \\ 9& 71 + 38 + F_7 = 130\\ 10 & 130 + 71 + F_8 = 235 \end{array}\]Our answer is $a_{10} = \boxed{235}.$~AtharvNaphade
 
  
-
-
 
 
 
@@ -1572,8 +1365,6 @@ Note: This is a very common stars and bars application.
 
 
 
-
-
 \textbf{Solution 7 (Fibonacci)}
 
 Note that there are $F_{n+2}$ subsets of a set of $n$ consecutive integers that contains no two consecutive integers. (This can be proven by induction.)
@@ -1586,8 +1377,6 @@ Note that there are $F_{n+2}$ subsets of a set of $n$ consecutive integers that 
  \[\sum_{i=1}^9 F_i F_{10-i} = F_1F_9 + F_2F_8 + F_3F_7 + F_4F_6 + F_5 F_5 + F_6 F_4 + F_7 F_3 + F_8 F_2 + F_9 F_1 = 2(F_1F_9 + F_2F_8 + F_3F_7+F_4F_6) + F_5^2 = 2(1 \cdot 34 + 1 \cdot 21 + 2 \cdot 13 + 3 \cdot 8) + 5^2 = 2 \cdot 105+25 = \boxed{235}.\]
 
  
-
-
 
 
 
@@ -1615,8 +1404,6 @@ The problem is the same as laying out a line of  polynomoes to cover spots $0,1,
 
 
 
-
-
 \textbf{Solution 9 (Dynamic Programming)}
 
 Let $dp(i)$ be the number of subsets of a set $i$ consecutive integers such that the maximum value in the set is $i$ and there exists exactly one pair of consecutive integers. Define $dp2(i)$ similarly, but without any pair of consecutive integers. The base cases are  $dp2(1)=dp2(2)=1$, $dp(1)=0$, and $dp(2)=1$.
@@ -1637,8 +1424,6 @@ Let $dp(i)$ be the number of subsets of a set $i$ consecutive integers such that
  Summing over $dp$ yields $1+1+3+5+10+18+33+59+105=\boxed{235}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2023}) Let $\triangle ABC$ be an equilateral triangle with side length $55.$ Points $D,$ $E,$ and $F$ lie on $\overline{BC},$ $\overline{CA},$ and $\overline{AB},$ respectively, with $BD = 7,$ $CE=30,$ and $AF=40.$ Point $P$ inside $\triangle ABC$ has the property that 
@@ -1677,8 +1462,6 @@ By Miquel's theorem, $P=(AEF)\cap(BFD)\cap(CDE)$ (intersection of circles)$\text
 
 
 
-
-
 \textbf{Solution 2 (Vectors/Complex)}
 
 Denote $\theta = \angle AEP$.
@@ -1710,8 +1493,6 @@ Denote $\theta = \angle AEP$.
  Therefore, $\tan^2 \theta = \boxed{075}$.
 
  
-
-
 
 
 
@@ -1762,8 +1543,6 @@ Drop the perpendiculars from $P$ to $\overline{AB}$, $\overline{AC}$, $\overline
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -1825,8 +1604,6 @@ This solution is inspired by AIME 1999 Problem 14 Solution 2 (a similar question
 
 
 
-
-
 \textbf{Solution 5 (Combining Solutions 3 and 4)}
 
 We begin by using the fact stated in Solution 3 that, for any point in an equilateral triangle, the lengths of the three perpendicular lines dropped to the sides of the triangle add up to the altitude of that triangle. To make things simple, let's assign $\angle AEP = \angle BFP = \angle CDP = \alpha$. We can label these three perpendiculars as:
@@ -1855,8 +1632,6 @@ We begin by using the fact stated in Solution 3 that, for any point in an equila
 
 
 
-
-
 \textbf{Solution 6}
 
 By the law of cosines,
@@ -1874,15 +1649,11 @@ By the law of cosines,
 
 
 
-
-
 \textbf{Solution 7}
 
 $P$ is well known to be the Miquel point of triangle $DEF$. By Law of Cosines, $E F = 35$, $F D = 13$, $D E = 42$. Call $P D$, $P E$, $P F$: $x$, $y$, $z$ respectively. Then we obtain that $x^2+xy+y^2 = 42^2$, $x^2+xz+z^2 = 13^2$, $y^2+yz+z^2 = 35^2$. Note that since the area of the triangle by sine area formula is $(xy + xz + yz)\left(\frac{\sqrt{3}}{4}\right)$, but by Heron's formula, the area of the triangle is $\sqrt{(45)(3)(32)(10)} = (5)(3)(8)\sqrt{3} = 120\sqrt{3}$. $xy+xz+yz = 480$, and so we obtain $x+y+z = 11\sqrt{19}$ by adding all the equations together. Now, subtract any two equations from each other to obtain $(y-z)(11\sqrt{19}) = (55)(29)$, $(x-z)(11\sqrt{19}) = (7)(77)$, $x-z = \frac{49}{\sqrt{19}}$, $y-z = \frac{145}{\sqrt{19}}$, and $z = \frac{5}{\sqrt{19}}$, $y = \frac{150}{\sqrt{19}}$, and $x = \sqrt{54}{\sqrt{19}}$. Now we find PC through Ptolemy's theorem, do Law of Cosines, and we are finished.
 
  
-
-
 
 
 
@@ -1974,9 +1745,7 @@ Recall that if $\theta$ is the angle between two lines with slopes $m_1, m_2$, w
 
  Now, recall that $\tan(\theta) = \mid \frac{b}{7 - a} \mid = \mid \frac{\frac{135\sqrt{3}}{19}}{7 - \frac{160}{19}} \mid = \mid \frac{\frac{135\sqrt{3}}{19}}{\frac{133 - 160}{19}} \mid = \mid \frac{135\sqrt{3}}{-27} \mid = \mid -5\sqrt{3} \mid = 5\sqrt{3}$ as desired.
 
- \textbf{Animated Video Solution} 
-
-
+ 
 
 
 	\item (\textit{AIME I 2023}) Each face of two noncongruent parallelepipeds is a rhombus whose diagonals have lengths $\sqrt{21}$ and $\sqrt{31}$. The ratio of the volume of the larger of the two polyhedra to the volume of the smaller is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$. A parallelepiped is a solid with six parallelogram faces such as the one shown below.
@@ -2046,8 +1815,6 @@ and
 
 
 
-
-
 \textbf{Solution 2 (no trig)}
 
 Let one of the vertices be at the origin and the three adjacent vertices be $u$, $v$, and $w$. For one of the parallelepipeds, the three diagonals involving the origin have length $\sqrt {21}$. Hence, $(u+v)\cdot (u+v)=u\cdot u+v\cdot v+2u\cdot v=21$ and $(u-v)\cdot (u-v)=u\cdot u+v\cdot v-2u\cdot v=31$. Since all of $u$, $v$, and $w$ have equal length, $u\cdot u=13$, $v\cdot v=13$, and $u\cdot v=-2.5$. Symmetrically, $w\cdot w=13$, $u\cdot w=-2.5$, and $v\cdot w=-2.5$. Hence the volume of the parallelepiped is given by $\sqrt{\operatorname{det}\begin{pmatrix}13&-2.5&-2.5\\-2.5&13&-2.5\\-2.5&-2.5&13\end{pmatrix}}=\sqrt{\operatorname{det}\begin{pmatrix}15.5&-15.5&0\\-2.5&13&-2.5\\0&-15.5&15.5\end{pmatrix}}=\sqrt{15.5^2\operatorname\det\begin{pmatrix}1&-1&0\\-2.5&13&-2.5\\0&-1&1\end{pmatrix}}=\sqrt{15.5^2\cdot 8}$.
@@ -2064,8 +1831,6 @@ Let one of the vertices be at the origin and the three adjacent vertices be $u$,
  Since the determinant of the transpose of a matrix equals to the determinant of the original matrix.
 
  
-
-
 
 
 
@@ -2130,8 +1895,6 @@ Observe that both parallelepipeds have two vertices (one on each base) that have
 
 
 
-
-
 \textbf{Solution 4 (Pythagorean theorem)}
 
 Since the two parallelepipeds have the same base, all we need to do is to find their respective heights.
@@ -2181,8 +1944,6 @@ Since the two parallelepipeds have the same base, all we need to do is to find t
 
 
 
-
-
 \textbf{Solution 5 (Visual)}
 
 
@@ -2219,8 +1980,6 @@ Since the two parallelepipeds have the same base, all we need to do is to find t
 
 
 
-
-
 \textbf{Solution 6}
 
 
@@ -2234,11 +1993,6 @@ Since the two parallelepipeds have the same base, all we need to do is to find t
  \[\frac{\sqrt{\frac{936}{961}}}{\sqrt{\frac{416}{441}}} = \sqrt{\frac{936}{416}} \cdot \frac{21}{31} = \frac{3}{2} \cdot \frac{21}{31} = \frac{63}{62}\] so the answer is $63 + 62 = \boxed{125}$.
 
  
-
-
- \textbf{Animated Video Solution} 
-
-
 
 
 	\item (\textit{AIME I 2023}) The following analog clock has two hands that can move independently of each other.
@@ -2287,8 +2041,6 @@ This problem is, in essence, the following:  A $12\times12$ coordinate grid is p
 
 
 
-
-
 \textbf{Solution 2 (Simple Cyclic Permutation Analysis)}
 
 This is more of a solution sketch and lacks rigorous proof for interim steps, but illustrates some key observations that lead to a simple solution.
@@ -2315,8 +2067,6 @@ This is more of a solution sketch and lacks rigorous proof for interim steps, bu
  This yields $\boxed{\textbf{608}}$ as our desired answer.
 
  
-
-
 
 
 
@@ -2362,14 +2112,6 @@ Define a $12 \times 12$ matrix $X$.Each entry $x_{i, j}$ denotes the number of m
  
 
 
- 
-
-
- \textbf{Animated Video Solution} 
-
-
-
-
 	\item (\textit{AIME I 2023}) Find the largest prime number $p<1000$ for which there exists a complex number $z$ satisfying
 
 
@@ -2413,8 +2155,6 @@ Assume that $z=a+bi$. Then,
  \[p>(a+b)(a^2+b^2-4ab)\geq (4+18)(4^2+18^2-4\cdot 4\cdot 18)>1000\]absurd. Thus, the answer is $\boxed{349}$.
 
  
-
-
 
 
 
@@ -2502,8 +2242,6 @@ and $p = a^2 + b^2$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $z = a + b i (a,b\in I)$. $a^2 + b^2 = prime < 1000$, $(a,b) = 1$.
@@ -2583,17 +2321,6 @@ Let $z = a + b i (a,b\in I)$. $a^2 + b^2 = prime < 1000$, $(a,b) = 1$.
  We finally get that $b=5, a=18$ and $p = 5^2+18^2 = \boxed{349}$
 
  
-
-
- 
-
-
- \textbf{Animated Video Solution} 
-
-
- 
-
-
 
 
 \end{enumerate}

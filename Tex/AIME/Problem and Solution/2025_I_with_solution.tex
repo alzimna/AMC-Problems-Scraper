@@ -8,69 +8,17 @@
 
 
 
-\textbf{Solution 1 (thorough)}
+\textbf{Solution}
 
-We are tasked with finding the number of integer bases $b>9$ such that $\cfrac{9b+7}{b+7}\in\mathbb{Z}$. Notice that
- \[\cfrac{9b+7}{b+7}=\cfrac{9b+63-56}{b+7}=\cfrac{9(b+7)-56}{b+7}=9-\cfrac{56}{b+7}\]so we need only $\cfrac{56}{b+7}\in\mathbb{Z}$. Then $b+7$ is a factor of $56$.
+First do base conversion of both numbers to write them as 9b² + 7b and b² + 7b 
 
- 
-The factors of $56$ are $1,2,4,7,8,14,28,56$. Of these, only $8,14,28,56$ produce a positive $b$, namely $b=1,7,21,49$ respectively. However, we are what are you looking at that $b>9$, so only $b=21,49$ are solutions. Thus the answer is $070$ .
+ Question is asking such that 9b² + 7b/b² + 7b remainder is 0 So just cancel off one b and seperate one b from 9b and write the equation as 8b/(b+7) + 1 
 
- 
+ We only need the cases for b where 8b/(b+7) is an integer 
 
-
-
-
-
-\textbf{Solution 2}
-
-We have,$b + 7 \mid 9b + 7$ meaning $b + 7 \mid -56$ so taking divisors of $56$ under bounds to find $b = 49, 21$ meaning our answer is $49+21=\boxed{070}.$
+ Before manually putting in the values of b we observe that the denominator should have a factors of 8 to cancel so the only cases for b are b = 7,21,49 but since b > 9 then the valid cases are b = 21, 49 Final answer is 21+49 = 70
 
  
-
-
-
-
-
-\textbf{Solution 3}
-
-This means that $a(b+7)=9b+7$ where $a$ is a natural number. Rearranging we get $(a-9)(b+7)=-56$. Since $b>9$, $b=49,21$. Thus the answer is $49+21=\boxed{070}$ 
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Let $\dfrac{9b+7}{b+7} = n$. Now, we have: $\dfrac{9(b+7)-56}{b+7} = n \Longrightarrow 9-\dfrac{56}{b+7}$. Now, we can just find the factors of $56$, subtract $7$, and sum them. Listing them out, we have the only ones that are positive are $8-1 = 7, 14-7 = 7, 28-7 = 21, 56-7 = 49$. But, we have this condition: $b > 9$, so the only ones that work are $21,49 \Longrightarrow 21 + 49 = \boxed{070}$
-
- -jb2015007
-
- 
-
-
-
-
-
-\textbf{Solution 5 (Solution 4 but different approach)}
-
-We want \( 17_b \) to divide \( 97_b \). Converting to base 10 gives \( 17_b = b + 7 \) and \( 97_b = 9b + 7 \). The condition is \( b + 7 \mid 9b + 7 \). Subtracting \( 9(b + 7) \) from \( 9b + 7 \) gives \( (9b + 7) - 9(b + 7) = -56 \). So \( b + 7 \) must divide 56. Continue as in Solution 4 to get $\boxed{070}$
-
- 
-
-
-
-
-
-\textbf{Solution 6 (Similar to Solution 3)}
-
-Let's convert everything into base 10. $17_b$ becomes $b+7$ and $97_b$ becomes $9b+7$. Now we solve the equation $k(b+7)=9b+7$, where k is an integer. Now while it looks like the equation has infinite solutions, $b$ must be an positive integer. When $k=9$, the equation has no solution, and when $k>9$ the $b+7$ side is greater than the $9b+7$, leading to only negative solutions. When $k\le0$, the expression has only negative solutions, so $0<k<9$. Now we can solve for values of k by plugging in k as 8, 7, 6, 5... wait 5 has $b<9$, so our only solutions of b are 21 and 49! (that is not a factorial.) Therefore, our answer is $\boxed{070}$.
-
- \textbf{Quick & Easy Video Solution} 
-
-
 
 
 	\item (\textit{AIME I 2025}) On $\triangle ABC$ points $A$, $D$, $E$, and $B$ lie in that order on side $\overline{AB}$ 
@@ -100,8 +48,6 @@ Note that the triangles outside $\triangle ABC$ have the same height as the unsh
 
 
 
-
-
 \textbf{Solution 2}
 
 Because of reflections, and various triangles having the same bases, we can conclude that $|AFNBCEM| = |ABC|$. Through the given lengths of $4-16-8$ on the left and $13-52-26$ on the right, we conclude that the lines through $\triangle ABC$ are parallel, and the sides are in a $1:4:2$ ratio. Because these lines are parallel, we can see that $ADF,~AEG,~ABC$, are similar, and from our earlier ratio, we can give the triangles side ratios of $1:5:7$, or area ratios of $1:25:49$. Quadrilateral $DEGF$ corresponds to the $|AEG|-|ADF|$, which corresponds to the ratio $25-1=24$. Dividing $288$ by $24$, we get $12$, and finally multiplying $12 \cdot 49$ gives us our answer of $\boxed{588}$
@@ -110,15 +56,11 @@ Because of reflections, and various triangles having the same bases, we can conc
 
 
 
-
-
 \textbf{Solution 3}
 
 By area lemma, we can see that the areas of the shaded areas are equivalent to the areas of the unshaded areas. Thus, we see that the desired area is equivalent to the area of the triangle $\triangle ABC$. Since $AF : FG : GC = 1 : 4 : 2$, we have $[ADF]:[AEG]:[ABC] = 1:25:49$, meaning $[ADF]:[DEGF]:[BEGC] = 1:24:24$. Thus, since $\frac{[DEGF]}{ABC} = \frac{24}{49}$, we can calculate $[ABC] = 588$.
 
  
-
-
 
 
 
@@ -181,8 +123,6 @@ Let \( \triangle ABC \) be given with points \( D, E \) on segment \( AB \) such
 
 
 
-
-
 \textbf{Solution 5 (area ratio)}
 
 Note that the heptagon $AFNBCEM$ has the same area as $\triangle ABC$, because both trapezoids $FNEM$ and $NBCE$ have the same bases and height as trapezoids $DEGF$ and $EBCG$ respectively, and $\triangle AFM$ has the same base and height as $\triangle ADF$.
@@ -211,8 +151,6 @@ Note that the heptagon $AFNBCEM$ has the same area as $\triangle ABC$, because b
 
 
 
-
-
 \textbf{Solution 6}
 
 $DF = FM$, altitude from $A$ to $DF$ is shared, hence $ADF$ and $AFM$ have the same area.
@@ -224,8 +162,6 @@ $DF = FM$, altitude from $A$ to $DF$ is shared, hence $ADF$ and $AFM$ have the s
  Therefore, the area of heptagon $AFNBCEM$ is equal to the area of triangle $ABC$. Note triangle $ADF$ is similar to triangle $ABC$, and if the height of $ADF$ is $h$ and the base is $a$, then we let $EG=b$ so that $2(a+b)h = 288$ and so $6ah = 144$, $ah = 24$. It follows the height of $ABC = 7h$ and the base is $7a$, so $0.5 \cdot 49ah = 0.5 \cdot 49 \cdot 24 = \boxed{588}$ is the area of the heptagon.
 
  
-
-
 
 
 	\item (\textit{AIME I 2025}) The $9$ members of a baseball team went to an ice-cream parlor after their game. Each player had a single scoop cone of chocolate, vanilla, or strawberry ice cream. At least one player chose each flavor, and the number of players who chose chocolate was greater than the number of players who chose vanilla, which was greater than the number of players who chose strawberry. Let $N$ be the number of different assignments of flavors to players that meet these conditions. Find the remainder when $N$ is divided by $1000.$
@@ -252,11 +188,11 @@ Let $c$ be the number of players who choose chocolate, $v$ be the number of play
  \begin{verbatim}
 
  \[\binom{9}{4,3,2} + \binom{9}{5, 3, 1} + \binom{9}{6, 2, 1}\] 
-\end{verbatim}which gives the same answer
+\end{verbatim}
+
+which gives the same answer
 
  
-
-
 
 
 
@@ -276,15 +212,11 @@ We apply casework on the scoops the team gets.
 
 
 
-
-
 \textbf{Solution 3}
 
 Denote the number of people who chose strawberry, vanilla, or chocolate as (S, V, C). Then, as S < V < C, we just need to find values of S, V, and C such that S + V + C = 9. Notice S can only be 1 or 2 as S = 3 will result in V + C = 6 and it just won't work for S < V < C. So using these two values, we get that the possible triples of (S, V, C) are: (1, 3, 5), (2, 3, 4) and (1, 2, 6). Now, let's consider (S, V, C) = (1, 3, 5). If we start with the strawberry people, notice there are ${9\choose 1}$ possibilities.Now, we see there are 8 different people waiting to be assigned to the 3 vanilla people therefore there are ${8\choose 3}$ ways for this to work. We can now go down the list to get:${9\choose 1}{8\choose 3}{5\choose 5} + {9\choose 2}{7\choose 3}{4\choose 4} + {9\choose 1}{8\choose 2}{6\choose 6}$ which gives a grand total of $2016$ possibilities. The remainder when $N$ is divided by $1000$ is $\boxed{016}$.
 
  
-
-
 
 
 
@@ -304,8 +236,6 @@ We start by finding the only 3 possible cases, since $C>V>S$. We arrive at
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $c, v, s$ be chocolate, vanilla, and strawberry respectively. We will also use the notation $(s, v, c)$ to denote the number of chocolate, vanilla, and strawberry respectively. We have this condition, $c>v>s$. Now, we can list out the cases since there wont be a lot. First, we have: 
@@ -316,8 +246,6 @@ Let $c, v, s$ be chocolate, vanilla, and strawberry respectively. We will also u
  -jb2015007
 
  
-
-
 
 
 	\item (\textit{AIME I 2025}) Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $100$, inclusive, such that $12x^2-xy-6y^2=0$.
@@ -360,8 +288,6 @@ We begin by factoring, $12x^2-xy-6y^2=(3x+2y)(4x-3y)=0.$ Since the RHS is $0$ we
 
 
 
-
-
 \textbf{Solution 2}
 
 First, notice that $(0,0)$ is a solution.
@@ -377,8 +303,6 @@ First, notice that $(0,0)$ is a solution.
  P.S. This technique of dividing by y\textasciicircum{}2 and then substituting a variable for $\frac{x}{y}$ is called de-homogeneization.~lprado
 
  
-
-
 
 
 
@@ -425,8 +349,6 @@ You can use the quadratic formula for this equation: $12x^2 - xy - 6y^2 = 0$;Alt
  
 
 
-
-
 	\item (\textit{AIME I 2025}) There are $8!= 40320$ eight-digit positive integers that use each of the digits $1, 2, 3, 4, 5, 6, 7, 8$ exactly once. Let $N$ be the number of these integers that are divisible by $22$. Find the difference between $N$ and $2025$.
 
 
@@ -453,15 +375,11 @@ Now, we just need to find the number of positions of the remaining numbers such 
 
 
 
-
-
 \textbf{Solution 2}
 
 1. To be multiple of $11:$Total of $1,2,3,4,5,6,7,8$ is $36,$ dividing into two groups of $4$ numbers, the difference of sum of two group $x$ and $y$ need to be $0$ or multiple of $11,$ i.e. $x+y=36,$ $x-y=0,11,22\dots$ only $x=y=18$ is possible.Number $8$ can only be with $(8,1,4,5),(8,1,2,7),(8,1,3,6),(8,2,3,5).$One group of $4$ numbers make $4!$ different arrangement, two groups make $4!\cdot{4!},$ the $2$ group makes $2!$ arrangement. The two group of numbers are alternating by digits.Total number of multiple of $11$ is $4\cdot 2!\cdot 4!\cdot 4!.$2. To be multiple of $2:$We noticed in each number group, there are two odd two even.So the final answer is above divided by $2,$ $4*2!*4!*4!/2=2304.$$2304-2025=\boxed{279.}$
 
  
-
-
 
 
 
@@ -503,17 +421,11 @@ Now, we just need to find the number of positions of the remaining numbers such 
 
 
 
-
-
 \textbf{Solution 4}
 
 Let the number be $abcdefgh$, based on the rule for divisibility of 11, $(a + c + e + g) - (b+d+f+h)$ must be a multiple of 11. Since the sum of all the 8 digits is 36, and the sum of four digits is at least 10, so we can only have $a+c+e+g = b+d+f+h = 18$. There are 8 ways to sum to 18 using four digits from $1,2,3,4,5,6,7,8$. The digits on even and odd digits can be permuted, so the number of multiples of 11 is  $4! \times 4!\times 8 = 4608$, and half of these numbers have even digits on the units digit, so the number of multiple of 22 is $4608/2 = 2304$, the answer to this problem is $2304 - 2025 = \boxed{279}$.
 
- (also the person in the Youtube video wrote the final answer wrong, it was supposed to be 279 and he accidentally wrote it as 729)
-
  
-
-
 
 
 	\item (\textit{AIME I 2025}) An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the circle is $3$, and the area of the trapezoid is $72$. Let the parallel sides of the trapezoid have lengths $r$ and $s$, with $r \neq s$. Find $r^2 + s^2$.
@@ -540,8 +452,6 @@ To begin with, because of tangents from the circle to the bases, the height is $
 
 
 
-
-
 \textbf{Solution 2 (Trigonometry)}
 
 Draw angle bisectors from the bottom left vertex to the center of the circle. Call the angle formed $\theta$. Drawing a line from the center of the circle to the midway point of the bottom base of the trapezoid makes a right angle, and the other angle has to be $90^{\circ} - \theta$. Then draw a line segment from the center of the circle to the top left vertex, then you have a right triangle. The smaller angle of this triangle is $180^{\circ} - (180^{\circ} - \theta) = \theta$. This means $\frac{r}{2} = \frac{3}{\tan \theta} \implies r = \frac{6}{\tan \theta}$. This also means $\frac{s}{2} = 3 \tan \theta \implies s = 6 \tan \theta$. Note that $r^2 + s^2 = (r + s)^2 - 2rs.$ $rs = \frac{6}{\tan \theta} \cdot 6 \tan \theta = 36 \implies 2rs = 72$. The area of the trapezoid is $72 = 6 \cdot \frac{r + s}{2} \implies r + s = 24$. $(r + s)^2 - 2rs = 576 - 72 = \boxed{504}$.
@@ -559,8 +469,6 @@ Draw angle bisectors from the bottom left vertex to the center of the circle. Ca
 
 
 
-
-
 \textbf{Solution 3 (Fastest formula)}
 
 Denote the radius of the inscribed circle as $R$, and the parallel sides as $r$ and $s$.By formula, we get $R = 3 = \frac{1}{2} \cdot \sqrt{rs}$, where $rs = 36$.Also, by formula, $A = 72 = \frac{1}{2} \cdot \sqrt{rs} \cdot (r + s)$, where $r + s = 24$.Therefore, 
@@ -568,8 +476,6 @@ Denote the radius of the inscribed circle as $R$, and the parallel sides as $r$ 
 
 
  
-
-
 
 
 
@@ -596,8 +502,6 @@ Let \(\angle OAB = \alpha\), \(\tan(\alpha)=\frac{6}{s}\). By the double - angle
 
 
 
-
-
 \textbf{Solution 5}
 
 The height of the trapezoid is clearly the diameter of the circle or $6$. We let the larger base be $r$, and the smaller one be $s$. We have by the area of a trapezoid: 
@@ -606,8 +510,6 @@ The height of the trapezoid is clearly the diameter of the circle or $6$. We let
  -jb2015007
 
  
-
-
 
 
 
@@ -623,8 +525,6 @@ The height of the trapezoid is clearly the diameter of the circle or $6$. We let
  The area of the trapezoid is $\frac{r + s}{2} \cdot 6 = 72 \implies r + s = 24.$ Note that external tangents of a circle are equal. Let $a$ and $s - a$ be the two external tangents making up the bottom base and $b$ and $r - b$ be the two external tangents making up the top base. Since the trapezoid is isosceles, $a + b = r + s - (a + b) \implies a + b = 12.$ So the legs of the trapezoid have length $12.$ From here, we can apply Brahmagupta's Formula to the trapezoid since isosceles trapezoids are cyclic: $\sqrt{\frac{r + s}{2} \cdot \frac{r + s}{2} \cdot \frac{24 - r + s}{2} \cdot \frac{24 + r - s}{2}} = 72.$ Substituting $r + s = 24$ and solving, we get $(r - s)^2 = 432 \implies s - r = 12\sqrt{3}.$ Since we know $s + r = 24,$ we can just solve this system to get $s = 12 + 6\sqrt{3}$ and $r = 12 - 6\sqrt{3}.$ The answer is $(12 + 6\sqrt{3})^2 + (12 - 6\sqrt{3})^2 = \boxed{504}.$
 
  
-
-
 
 
 
@@ -666,8 +566,6 @@ Through Pitot's Theorem,
  
 
 
-
-
 	\item (\textit{AIME I 2025}) The twelve letters $A$,$B$,$C$,$D$,$E$,$F$,$G$,$H$,$I$,$J$,$K$, and $L$ are randomly grouped into six pairs of letters. The two letters in each pair are placed next to each other in alphabetical order to form six two-letter words, and then those six words are listed alphabetically. For example, a possible result is $AB$, $CJ$, $DG$, $EK$, $FL$, $HI$. The probability that the last word listed contains $G$ is $\frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -697,8 +595,6 @@ Note that order does not matter here. This is because any permutation of the $6$
  Minor latex edits by \href{https://artofproblemsolving.com/wiki/index.php?title=User:T3chn0b14d3&action=edit&redlink=1}{T3CHN0B14D3}
 
  
-
-
 
 
 
@@ -735,8 +631,6 @@ We must also take into account the number of ways to arrange the $6$ pairs relat
 
 
 
-
-
 \textbf{Solution 3 (Rigorous)}
 
 Propose the set $\mathcal{L}$ that determines all plausible cases. Within the total, we have the opportunity to arrange the 12 letters in $12!$ ways and split it into groups of 2. Within each group of 2, we have 2 permutations, only one of which is chosen, so that is $\frac{12!}{2^6}$. Now, within the total collective group, out of $6!$ arrangements, only 1 is deemed viable. Therefore, the total is $\frac{12!}{2^6 \cdot 6!} = 10395$ cases.
@@ -757,8 +651,6 @@ Propose the set $\mathcal{L}$ that determines all plausible cases. Within the to
  The rigorous proof of the count has been complete.
 
  
-
-
 
 
 	\item (\textit{AIME I 2025}) Let $k$ be a real number such that the system
@@ -791,8 +683,6 @@ For $z$ to have one solution, the perpendicular bisector of the segment connecti
  \[\frac{\frac{3}{2}-17}{k+2-29}=\frac{4}{3},\] giving $k=\frac{23}{8}$ or $\frac{123}{8}$, having a sum of $\frac{73}{4} \Longrightarrow \boxed{077}.$
 
  
-
-
 
 
 
@@ -846,8 +736,6 @@ And the second equation becomes:$(A-4-k)^2 + B^2 = (A - k)^2 + (B-3)^2$
 
 
 
-
-
 \textbf{Solution 3 (A Little Geometry)}
 
 
@@ -890,8 +778,6 @@ And the second equation becomes:$(A-4-k)^2 + B^2 = (A - k)^2 + (B-3)^2$
 
 
 
-
-
 \textbf{Solution 4 (Distance Formula, quick)}
 
 Let $z = a + bi.$ Then the system becomes $(25 - a)^2 + (20 - b)^2 = 25$ and $(a - 4 - k)^2 + b^2 = (a - k)^2 + (b - 3)^2$ $\implies b = \frac{4}{3}a - (\frac{4}{3}k + \frac{7}{6})$. For this system to have one solution for $z,$ the line $b = \frac{4}{3}a - (\frac{4}{3}k + \frac{7}{6})$ must be tangent to the circle $(25 - a)^2 + (20 - b)^2 = 25$. For a line to be tangent to a circle, the distance between the line and center must be equal to the length of the radius, which is $5$. The center of the circle is $(a,b) \rightarrow (25,20),$ and we can express the line as $8a - 6b - (8k + 7) = 0.$ So we have: 
@@ -899,8 +785,6 @@ Let $z = a + bi.$ Then the system becomes $(25 - a)^2 + (20 - b)^2 = 25$ and $(a
  \[k = \frac{23}{8}, \frac{123}{8}.\] $\frac{m}{n}$ is $\frac{146}{8} = \frac{73}{4}.$ The requested sum is $73 + 4 = \boxed{77}.$
 
  
-
-
 
 
 
@@ -913,8 +797,6 @@ Letting $z=a+bi$, the given equations become $(a-25)^2+(b-20)^2 = 25$ and $(a-4-
  Experiment with plugging in diametrically opposite pairs of points such as $(a, b)={(20, 15), (20, 25)}$ and $(a, b)={(29, 17), (21, 23)}$, which can be found using $3-4-5$ right triangles, into the previously found formula $k=\frac{8a-6b-7}{8}$. Observe that when the resulting $k$-values from each pair are added together, the value $\frac{146}{8}=\frac{73}{4}$ is obtained every time. If one assumes that this holds true for each pair of points, then it also holds true for the $2$ desired points, and the answer is $73+4=\boxed{077}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2025}) The parabola with equation $y = x^2 - 4$ is rotated $60^{\circ}$ counterclockwise around the origin. The unique point in the fourth quadrant where the original parabola and its image intersect has $y$-coordinate $\frac{a - \sqrt{b}}{c}$, where $a$, $b$, and $c$ are positive integers, and $a$ and $c$ are relatively prime. Find $a + b + c$.
@@ -953,8 +835,6 @@ We substitute $y = x^2 - 4:$
 
 
 
-
-
 \textbf{Solution 2 (Similar to Solution 1)}
 
 Note that this question is equivalent to finding a point $B$ in the fourth quadrant, such that when a point $A$ on the graph of $y = x^2 - 4$ is rotated $60^\circ$ counterclockwise around the origin, it lands on $B$, which is also on the graph.
@@ -982,8 +862,6 @@ Note that this question is equivalent to finding a point $B$ in the fourth quadr
 
 
 
-
-
 \textbf{Solution 3 (clarification needed): Rotation}
 
 Rotate the point $(x,y)$ $60^\circ$ counterclockwise about the origin. To find the resulting point $(x',y')$, use polar coordinates. Let $x=r \cos\theta$ and $y=r \sin\theta$, so $(x',y')=(r \cos({\theta+60^\circ}), r \sin({\theta+60^\circ}))$. Expanding using the angle addition identities and simplifying gives $(x',y')=\left(\frac{r\cos\theta-r\sqrt{3}\sin\theta}{2}, \frac{r\sin\theta+r\sqrt{3}\cos\theta}{2}\right)$. Substituting back in $x=r \cos\theta$ and $y=r \sin\theta$ yields $(x',y')=\left(\frac{x-y\sqrt{3}}{2}, \frac{x\sqrt{3}+y}{2}\right)$.
@@ -1002,11 +880,7 @@ Taking the solution $x=\frac{\sqrt{3}-\sqrt{19}}{2}$ (IDK why though, the $x$-va
 
  Note: It may be possible to solve the problem by substituting the coordinates $(x',y')=\left(\frac{x-y\sqrt{3}}{2}, \frac{x\sqrt{3}+y}{2}\right)$ into the equation $y=x^2-4$ to obtain the systems of equations $\frac{x\sqrt{3}+y}{2}=\left(\frac{x-y\sqrt{3}}{2}\right)^2-4, y=x^2-4$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
 
 
 	\item (\textit{AIME I 2025}) The $27$ cells of a $3 \times 9$ grid are filled in using the numbers $1$ through $9$ so that each row contains $9$ different numbers, and each of the three $3 \times 3$ blocks heavily outlined in the example below contains $9$ different numbers, as in the first three rows of a Sudoku puzzle. 
@@ -1041,8 +915,6 @@ We will fill out the grid row by row. Note that there are $9!=2^7\cdot 3^4\cdot 
  There is $1$ way to place the last numbers in with $6^3$ orderings. Thus there are $2^7\cdot 3^4\cdot 5\cdot 7 \cdot 56\cdot 6^3 \cdot 6^3 = 2^{16}\cdot 3^{10}\cdot 5^1\cdot 7^2$ ways to fill out our mini Sudoku puzzle. Thus the answer is $2\cdot 16+3\cdot 10 + 5\cdot 1+7\cdot 2 = \boxed{081}.$
 
  
-
-
 
 
 
@@ -1090,8 +962,6 @@ We will call the sudoku blocks 1-3 from left to right, and rows 1-3 from up to d
 
 
 
-
-
 \textbf{Solution 3 (Can be very quick but explained well)}
 
 First, assume the first row is ordered $1, 2, 3, 4, 5, 6, 7, 8, 9$. 
@@ -1116,8 +986,6 @@ First, assume the first row is ordered $1, 2, 3, 4, 5, 6, 7, 8, 9$.
 
 
 
-
-
 \textbf{Solution 4}
 
 Assume the first row of the grid is $123|456|789.$ Note that the numbers in each $3$x$1$ block can be ordered in $3!$ ways amongst themselves and they will still stay in the same row and $3$x$3$ block. There are $6$ unfilled $3$x$1$ blocks, so we'll multiply by $(3!)^6$ at the end. We’ll also have to multiply by $9!$ because we fixed the first row of the grid and there are $9!$ ways to permute the numbers in it.
@@ -1139,8 +1007,6 @@ Assume the first row of the grid is $123|456|789.$ Note that the numbers in each
 
 
 
-
-
 \textbf{Solution 5 (More in depth sol 1)}
 
 There are $9!$ ways to order the first row. If we choose the second row, the third row is uniquely determined.
@@ -1158,8 +1024,6 @@ There are $9!$ ways to order the first row. If we choose the second row, the thi
  That is a total $56 \cdot 6^3$ ways, and so multiplying with $9!$ and taking the prime factorization through a mix of Legendre and Bashing, we have $2^{16} \cdot 3^{10} \cdot 5^1 \cdot 7^2 \implies \boxed{81}$.
 
  
-
-
 
 
 
@@ -1212,8 +1076,6 @@ Note that the first row of the grid has to be some permutation of the numbers $(
  
 
 
-
-
 	\item (\textit{AIME I 2025}) A piecewise linear function is defined by 
  \[f(x) = \begin{cases} x & \operatorname{if} ~ -1 \leq x < 1 \\ 2 - x & \operatorname{if} ~ 1 \leq x < 3\end{cases}\] and $f(x + 4) = f(x)$ for all real numbers $x$. The graph of $f(x)$ has the sawtooth pattern depicted below.
 
@@ -1231,46 +1093,6 @@ Note that the first row of the grid has to be some permutation of the numbers $(
 
  
  \textbf{Answer: }259
-
-
-
-\textbf{Solution 1}
-
-Note that the part of $f(x)$ in the first and fourth quadrants consists of lines of the form $y = x - 4k$ and $y = 4k + 2 - x$ for integers $k \geq 0$. Plugging in $x = 34y^2$ for $y = x - 4k$, we get $-34y^2 + y + 4k = 0,$ so the sum of the roots is $\frac{1}{34}$ by Vieta’s. Similarly, in the second equation, we get a sum of $-\frac{1}{34}.$ 
-
- 
-The top peaks of the graph form the line $y = 1$ and the bottom peaks form $y = -1.$ So the parabola will cross the positive line once it reaches the point $(34,1),$ and it will cross the negative line at $(34, -1).$For $y = x - 4k,$ we find $k = \frac{33}{4}$ for the positive $y$ values and $k = \frac{35}{4}$ for the negative y values. Both round down to $8,$ so the parabola will stop intersecting $y = x - 4k$ entirely after $k = 8.$
-
- 
-Now, for $y = 4k + 2 - x,$ we find $k = \frac{33}{4}$ for the positive y values and $k = \frac{31}{4}$ for the negative y values. $\frac{33}{4}$ rounds down to $8,$ but $\frac{31}{4}$ rounds down to $7,$ so the parabola will stop intersecting the negative $y$ values of $y = 4k + 2 - x$ after $k = 7,$ but it will intersect the positive $y$ values until $k = 8.$ 
-
- 
-There are $8$ values of $k$ from $0 - 7,$ so the sum contributed by $y = 4k + 2 - x$ until $k = 7$ is $-\frac{8}{34}.$ There are $9$ values of $k$ from $0 - 8,$ so the sum contributed by $y = x - 4k$ until $k = 8$ is $\frac{9}{34}.$ Adding these together we get $\frac{1}{34}.$ 
-
- 
-Now all that's left is to figure out the positive $y$ value at $k = 8$ for the line $y = 4k + 2 - x.$ We get 
- \[34-34y^2 = y.\] 
- \[y = \frac{-1 \pm \sqrt{68^2 + 1}}{68} = \frac{-1 + 5 \sqrt{185}}{68}.\] Adding our $\frac{1}{34}$ from earlier finally gives us $\frac{1 + 5 \sqrt{185}}{68} \implies \boxed{259}$.
-
- 
-
-
-
-
-
-\textbf{Solution 2}
-
-Drawing the graph, we can use the sawtooth graph provided so nicely by MAA and draw out the parabola $x = 34y^2$. We realize that the sawtooth graph is just a bunch of lines where the positive slope lines are $y = x, y = x + 4, y = x + 8,...$. The intersections of these lines, along with the parabola are just solving the system of equations: $x = 34y^2$ and $y = x, y = x + 4, ...$. If we just take $y = x$ and $x = 34y^2$, we see that the sum of all $y$ by Vieta's is just $\frac{1}{34}$. Similarly, for $y = x + 4$, the sum of the roots by Vieta's is also $\frac{1}{34}$. So for all the positive slope lines intersecting with the parabola just gives the sum of all $y$ to continuously be $\frac{1}{34}$. Okay, now let's look at the negative slope lines. These will have equations of $y = 2 - x, y = 6 - x, y = 10 - x, ..., y = 34 - x, ...$. Similar to what we did above, we just set each of these equations along with the parabola $x = 34y^2$. The sum of all $y$ for each of these negative line intersections by Vieta's is $\frac{-1}{34}$. This keeps going for all of the lines until we reach $y = 34 - x$. Now, unfortunately, both solutions don't work as the negative solution is out of the range of $[1 , 3]$, $[5, 7]$ and so on. So we just need to take one solution for this and that being the positive one according to the graph. So we just need to solve $34 - y = 34y^2$ which means $34y^2 + y - 34 = 0$. Solving gives
- \[y = \frac{-1 \pm \sqrt{68^2 + 1}}{68} = \frac{-1 + 5 \sqrt{185}}{68}.\]So, the sums of the roots are $\frac{1}{34}$ + $\frac{-1}{34}$ + $\frac{1}{34}$ + .... + $\frac{-1}{34}$ + $\frac{1}{34}$ + $\frac{-1 + 5 \sqrt{185}}{68}.$ Nicely all the $\frac{1}{34}$ terms cancel out leaving with only one $\frac{1}{34}$ and $\frac{-1 + 5 \sqrt{185}}{68}.$ So the sum of these two is $\frac{1 + 5 \sqrt{185}}{68}.$ From there, the answer is $\boxed{259}$.
-
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2025}) The set of points in $3$-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinates satisfy the inequalities 
@@ -1303,8 +1125,6 @@ Rewriting we have $z=75-x-y.$
  \[\frac{1}{2}(39\sqrt{2})(13\sqrt{6})=507\sqrt{3}\implies\boxed{510}.\]
 
  
-
-
 
 
 
@@ -1347,8 +1167,6 @@ Now we have only two satisfactory inequalities. We now consider the third pair o
 
 
 
-
-
 \textbf{Solution 3}
 
 Decomposing the inequality chain:
@@ -1379,14 +1197,7 @@ Decomposing the inequality chain:
 
  Then, the area of the original equilateral triangle is $4\cdot\frac{(39\sqrt{2})^2\cdot\sqrt{3}}{4}=3042\sqrt{3}$. Since the original equilateral triangle is divided into $6$ congruent $30-60-90$ right triangles, each of these triangles has area $3042\sqrt{3}/6=507\sqrt{3}$. Assuming that the desired convex region includes at least $1$ of these $30-60-90$ right triangles, the possible answers are $507\sqrt{3}, 1014\sqrt{3}, 1521\sqrt{3}, ...  3042\sqrt{3}$. However, if we compare each of these possible answers to the format $a\sqrt{b}$, the only one of these answers for which $a+b$ is less than $1000$ (so it fits into the AIME answer format of $3$ digits) is $507\sqrt{3}$, yielding $a+b=507+3=\boxed{510}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2025}) Alex divides a disc into four quadrants with two perpendicular diameters intersecting at the center of the disk. He draws $25$ more line segments through the disk, drawing each segment by selecting two points at random on the perimeter of the disk in different quadrants and connecting these two points. Find the expected number of regions into which these $27$ line segments divide the disk.
@@ -1414,114 +1225,11 @@ First, we calculate the probability that two segments intersect each other. Let 
 
  
                 \begin{itemize}
-                    \item Quadrants $1$ and $2,$ $2$ and $3,$ $3$ and $4,$ and $4$ and $1$: These share one quadrant with $A,$ and it is clear that for any of them to intersect $A,$ the endpoint that shares a quadrant with an endpoint of $A$ on a certain side of that endpoint of $A$ For example, if it was quadrants $1$ and $2,$ then the point in quadrant $1$ must be closer to the $x$-axis than the endpoint of $A$ in quadrant $1.$ This happens with probability $\frac{1}{2}.$ Additionally, segment $B$ has a $\frac{1}{6}$ to have endpoints in any set of two quadrants, so this case contributes to the total probability
+                    \item Quadrants $1$ and $2,$ $2$ and $3,$ $3$ and 
                 \end{itemize}
 
 
                 
- \[\dfrac{1}{3}\left(\dfrac{1}{6}\cdot\dfrac{1}{2}+\dfrac{1}{6}\cdot\dfrac{1}{2}+\dfrac{1}{6}\cdot\dfrac{1}{2}+\dfrac{1}{6}\cdot\dfrac{1}{2}\right)=\dfrac{1}{9}\]
-
- 
-                \begin{itemize}
-                    \item Quadrants $2$ and $4.$ This always intersects segment $A,$ so this case contributes to the total probability
-                \end{itemize}
-
-
-                
- \[\dfrac{1}{3}\cdot\dfrac{1}{6}=\dfrac{1}{18}\]
-
- 
-                \begin{itemize}
-                    \item Quadrants $1$ and $3.$ We will first choose the endpoints, and then choose the segments from the endpoints. Let the endpoints of the segments in quadrant $1$ be $R_1$ and $R_2,$ and the endpoints of the segments in quadrant $3$ be $S_1$ and $S_2$ such that $R_1,R_2,S_1,$ and $S_2$ are in clockwise order. Note that the probability that $A$ and $B$ intersect is the probability that $A_1$ is paired with $B_1,$ which is $\dfrac{1}{2}.$ Thus, this case contributes to the total probability
-                \end{itemize}
-
-
-                
- \[\dfrac{1}{3}\cdot\dfrac{1}{6}\cdot\dfrac{1}{2}=\dfrac{1}{36}.\]
-
- $\textbf{Case 2:}$ Segment $A$ has endpoints in two adjacent quadrants.
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2025_13_Solution_Figure_2.png}
-                    \end{figure}
-                    
-
- This happens with probability $\frac{2}{3}.$ WLOG let the two quadrants be $1$ and $2.$ We do cases in which quadrants segment $B$ lies in.
-
- 
-                \begin{itemize}
-                    \item Quadrants $1$ and $3,$ $1$ and $4,$ $2$ and $3,$ and $2$ and $4.$ This is similar to our first case above, so this contributes to the total probability
-                \end{itemize}
-
-
-                
- \[\dfrac{2}{3}\left(\dfrac{1}{6}\cdot\dfrac{1}{2}+\dfrac{1}{6}\cdot\dfrac{1}{2}+\dfrac{1}{6}\cdot\dfrac{1}{2}+\dfrac{1}{6}\cdot\dfrac{1}{2}\right)=\dfrac{2}{9}\]
-
- 
-                \begin{itemize}
-                    \item Quadrants $3$ and $4.$ This cannot intersect segment $A.$\item Quadrants $1$ and $2,$ Similar to our third case above, this intersects segment $A$ with probability $\frac{1}{2},$ so this case contributes to the total probability
-                \end{itemize}
-
-
-                
- \[\dfrac{2}{3}\cdot\dfrac{1}{6}\cdot\dfrac{1}{2}=\dfrac{1}{18}.\]Thus, the probability that two segments intersect is 
- \[\dfrac{1}{9}+\dfrac{1}{18}+\dfrac{1}{36}+\dfrac{2}{9}+\dfrac{1}{18}=\dfrac{17}{36}.\]Next, we will compute the expected number of intersections of a segment with the axes. WLOG let a segment have an endpoint in quadrant $1.$ Then, it will intersect each axis with probability $\dfrac{2}{3}$ because two out of the three remaining quadrants let it intersect a specific axis, so the expected number of axes a segment intersects is $\frac{4}{3}.$
-
- So, why do intersections matter? Because when adding a segment, it will pass through a number of regions, and for each region it passes through, it will split that region into two and add another region. The segment starts in a region, and for each intersection, it will enter another region, so the number of regions a segment passes through is $1$ more than the number of intersections with the axes and other segments. Thus, we have that by linearity of expectation the expected number of new regions created by adding a segment is
- \[\dfrac{17}{36}\cdot(\text{number of segments already added})+\dfrac{4}{3}+1,\]so the number of new regions added in total by $25$ segments again by linearity of expectation is
- \[\sum_{k=0}^{24}\left(\dfrac{17}{36}k+\dfrac{7}{3}\right)=\dfrac{17}{36}\cdot \dfrac{24\cdot 25}{2}+\dfrac{25\cdot 7}{3}\]which simplifies to $200$ as the expected number of new regions added by the $25$ segments. The axes create $4$ regions to begin with, so our answer is
- \[200+4=\boxed{204}.\]
-
- 
-
-
-
-
-
-\textbf{Solution 2}
-
-Claim: If N line segments are drawn in the disk so that no three meet at an interior point (true with probability 1 here), thenR = 1 + N + I,where I is the total number of interior intersection points among the segments.
-
- Reason: When you draw a new segment that meets previous segments in k interior points, it is cut into k+1 pieces, creating k+1 new regions. Summing “+1” over all segments gives +N, and summing k over all segments counts each intersection once, giving +I.
-
- Here N = 27, soE[R] = 1 + 27 + E[I] = 28 + E[I].
-
- Step 1: Intersections involving the two perpendicular diameters.The two diameters intersect once at the center.
-
- Now consider a random chord: endpoints are chosen uniformly on the circle, conditioned to lie in different quadrants. Thus the unordered quadrant-pair is uniform among the C(4,2)=6 pairs.
-
- Fix one diameter (say the horizontal). A chord crosses it iff its endpoints lie in opposite half-disks, i.e. it uses one quadrant above and one below. Among the 6 quadrant-pairs, 4 have this property, soP(chord intersects a fixed diameter) = 4/6 = 2/3.
-
- There are 25 chords and 2 diameters, soE[(diameter–chord intersections)] = 25 · 2 · (2/3) = 100/3.
-
- So far:E[I] = 1 + 100/3 + E[(chord–chord intersections)].
-
- Step 2: Probability that two random chords intersect.Label the four quadrant arcs cyclically A, B, C, D. A chord type is an unordered pair of distinct arcs; there are 6 types:AB, BC, CD, DA (adjacent) and AC, BD (opposite).
-
- Because all arcs have equal length, conditioning on “different quadrants” makes the 6 chord types equally likely; hence an ordered pair of chord types is uniform among 6² = 36 cases.
-
- For each ordered type-pair:• If the two chords are AB and CD (or CD and AB), or BC and DA (or DA and BC), they cannot intersect (their endpoints lie in two disjoint arcs in a non-alternating way): probability 0. That gives 4 ordered cases.• If the two chords are AC and BD (or BD and AC), they always intersect: probability 1. That gives 2 ordered cases.• In every other ordered case, the chords share exactly one arc (e.g. AB with AC shares A, etc.). Then, whether they intersect depends only on which of the two points on that shared arc comes first along the circle, which is equally likely. So the intersection probability is 1/2. There are 36 − 4 − 2 = 30 such ordered cases.
-
- ThereforeP(two random chords intersect) = [2·1 + 30·(1/2) + 4·0] / 36= (2 + 15)/36= 17/36.
-
- There are C(25,2) = 300 chord pairs, soE[(chord–chord intersections)] = 300 · (17/36) = 425/3.
-
- Step 3: Assemble.E[I] = 1 + 100/3 + 425/3= 1 + 525/3= 1 + 175= 176.
-
- ThusE[R] = 28 + 176 = 204.
-
- Answer: 204.
-
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2025}) Let $ABCDE$ be a convex pentagon with $AB=14,$ $BC=7,$ $CD=24,$ $DE=13,$ $EA=26,$ and $\angle B=\angle E=60^{\circ}.$ For each point $X$ in the plane, define $f(X)=AX+BX+CX+DX+EX.$ The least possible value of $f(X)$ can be expressed as $m+n\sqrt{p},$ where $m$ and $n$ are positive integers and $p$ is not divisible by the square of any prime. Find $m+n+p.$
@@ -1541,8 +1249,6 @@ Assume $AX=a$, $BX=b$, $CX=c$, $DX=d$, $EX=e$, by Ptolemy inequality we have $a+
  Rewritten and edited by \href{https://artofproblemsolving.com/wiki/index.php?title=User:Juwushu}{ Juwushu}.
 
  
-
-
 
 
 
@@ -1566,8 +1272,6 @@ Assume $AX=a$, $BX=b$, $CX=c$, $DX=d$, $EX=e$, by Ptolemy inequality we have $a+
  We then have $f(X)=AX+BX+CX+DX+EX=(BX+EX)+(AX+CX+DX)=BE+AP=38+19\sqrt{3}$, which is our minimum value. Therefore, the answer to the problem is $38+19+3=\boxed{060}$.
 
  
-
-
 
 
 
@@ -1600,13 +1304,7 @@ $AE = 26$, $DE = 13$, and $\angle{E}={60}^{\circ}$, which means that $\triangle{
 
  The answer is $38+19+3=\boxed{060}$
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
- Great solution!
-
  
-
-
 
 
 	\item (\textit{AIME I 2025}) Let $N$ denote the number of ordered triples of positive integers $(a, b, c)$ such that $a, b, c \leq 3^6$ and $a^3 + b^3 + c^3$ is a multiple of $3^7$. Find the remainder when $N$ is divided by $1000$.
@@ -1626,41 +1324,69 @@ First, state the LTE Lemma for $p = 3, n = 3$, which we might use.
 
  \begin{verbatim}
 $\bullet$ $\nu_3(n) = \begin{cases}         \max \{k : 3^k \mid n\} &n\neq 0\\         \infty &n=0     \end{cases}$
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 $\bullet$ If $3 \nmid x, 3\nmid y, 3\mid x+y$, then $\nu_3(x^3+y^3) = \nu_3(x+y) + \nu_3(3) = \nu_3(x+y) + 1$      $\bullet$ If $3 \nmid x, 3\nmid y, 3\mid x-y$, then $\nu_3(x^3-y^3) = \nu_3(x-y) + \nu_3(3) = \nu_3(x-y) + 1$   
-\end{verbatim}Then we classify all cube numbers $\mod{3^7}$
+\end{verbatim}
+
+Then we classify all cube numbers $\mod{3^7}$
 
  
 
 
  \begin{verbatim}
 $\bullet$ $A = \{a : 1\leq a \leq 3^6, 9\mid a\}$
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 We can write $A = \{a: a=9k, 1\leq k \leq 3^4\}$, so $|A| = 3^4$.          $\bullet$ If $k \equiv 0 \mod{3}$, $k^3 \equiv 0 \mod{3}, a^3 \equiv 3^6k^3 \equiv 0 \mod{3^7}$, there are 27 roots.       $\bullet$ If $k \equiv 1 \mod{3}$, $k^3 \equiv 1 \mod{3}, a^3 \equiv 3^6k^3 \equiv 3^6 \mod{3^7}$, there are 27 roots.       $\bullet$ If $k \equiv 2 \mod{3}$, $k^3 \equiv 2 \mod{3}, a^3 \equiv 3^6k^3 \equiv 2\times 3^6 \mod{3^7}$, there are 27 roots.         $\bullet$ $B = \{a : 1\leq a \leq 3^6, 3\mid a, 9 \nmid a\}$
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 We can write $B = \{a: a=9k+3 \text{ or }a=9k+6, 0\leq k < 3^4\}$, so $|B| = 2 \times 3^4$. 
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 For $x,y \in \{a: a=9k+3, 0\leq k < 3^4\}$, let $x = 3a, y= 3b$ and hence $3 \nmid a, 3\nmid b, 3\mid a-b$.          $(3a)^3 - (3b)^3 \equiv 0 \mod{3^7}$       $\iff a^3 - b^3 \equiv 0 \mod{3^4}$       $\iff \nu(a^3-b^3) \geq 4$       $\iff \nu(a-b) \geq 3$       $\iff a - b\equiv 0 \mod{3^3}$       $\iff x - y\equiv 0 \mod{3^4}$      For $k = 0, ..., 8$, each has 9 roots.      Since $(9k+3)^3 \equiv 3^6k^3+3^6k^2+3^5k + 3^3 \equiv 3^5m + 3^3 \mod{3^7}$, $0\leq m \leq 8$. They are the corresponding classes.
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 Same apply to $x,y \in \{a: a=9k+6, 0\leq k < 3^4\}$. For $k = 0, ..., 8$, each has 9 roots.
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 Since $(9k+6)^3 \equiv 3^6k^3+2\times3^6k^2+4\times3^5k + 8\times3^3 \equiv 3^5m - 3^3 \mod{3^7}$, $0\leq m \leq 8$. They are the corresponding classes.
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 $\bullet$ $C = \{a : 1\leq a \leq 3^6, 3\nmid a\}$
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 We write $C = \{a: a=3k+1 \text{ or }a=3k+2, 0\leq k < 3^5\}$, so $|C| = 2 \times 3^5$.
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 For $a,b \in \{a: a=3k+1, 0\leq k < 3^5\}$, then $3 \nmid a, 3\nmid b, 3\mid a-b$.          $a^3 - b^3 \equiv 0 \mod{3^7}$       $\iff \nu(a^3-b^3) \geq 7$       $\iff \nu(a-b) \geq 6$       $\iff a - b\equiv 0 \mod{3^6}$   For $k = 0, ..., 3^5-1$, 1 root each.      $(3k+1)^3 \equiv 3^3k^3+3^3k^2+3^2k + 1 \equiv 3^2m + 1 \mod{3^7}$, $0\leq m < 3^5$. They are the corresponding classes.
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 Same apply to $x,y \in \{a: a=3k+2, 0\leq k < 3^5\}$. For $k = 0, ..., 3^5-1$, 1 root each.
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 $(3k+2)^3 \equiv 3^3k^3+2\times3^3k^2+4\times3^2k + 8 \equiv 3^2m - 1 \mod{3^7}$, $0\leq m < 3^5$. They are the corresponding classes.
 \end{verbatim}
+
+
 Summarized the results:
 
  \begin{verbatim}
 $\bullet$ $A$: If $x \equiv 0, 3^6, 2\times3^6 \mod{3^7}$, then $x$ has 27 roots. $|A| = 3^4$.   $\bullet$ $B$: If $x \equiv 3^5m \pm 3^3 \mod{3^7}$, then $x$ has 9 roots. $|B| = 2\times3^4$.   $\bullet$ $C$: If $x \equiv 3^2m \pm 1 \mod{3^7}$, then $x$ has 1 root. $|C| = 2\times3^5$.   $\bullet$ Otherwise, $x$ has no roots.
 \end{verbatim}
+
+
 We do the final combinatorial problem.
 
  
@@ -1668,7 +1394,9 @@ We do the final combinatorial problem.
 
  \begin{verbatim}
 $\bullet$ Case: $A,A,A$: $|A| \times |A| \times 27 = \boxed{3 \times 3^{10}}$   $\bullet$ Case $A,A,B$: No solution.   $\bullet$ Case $A,A,C$: No solution.   $\bullet$ Case: $A,B,B$: $3 \times |A| \times |B| \times 9 = \boxed{6 \times 3^{10}}$   $\bullet$ Case $A,A,B$: No solution.   $\bullet$ Case: $A,C,C$: $3 \times |A| \times |C| \times 1 = \boxed{2 \times 3^{10}}$   $\bullet$ Case $B,B,C$: No solution.   $\bullet$ Case $B,B,B$: No solution.   $\bullet$ Case $B,C,C$: $3 \times |B| \times |C| \times 1 = \boxed{4 \times 3^{10}}$   $\bullet$ Case $C,C,C$: No solution.    
-\end{verbatim}Total is $(3+6+2+4)3^{10}=15\times 3^{10}$.
+\end{verbatim}
+
+Total is $(3+6+2+4)3^{10}=15\times 3^{10}$.
 
  $3^5 = 243 \equiv 43 \mod{200},43^2=1600+240+9\equiv49\mod{200}$
 
@@ -1677,8 +1405,6 @@ $\bullet$ Case: $A,A,A$: $|A| \times |A| \times 27 = \boxed{3 \times 3^{10}}$   
  Answer is $\boxed{735}$.
 
  
-
-
 
 
 
@@ -1702,8 +1428,6 @@ We are given that$N = \#\{(a,b,c) \in [1,3^6]^3 : 3^7 \mid (a^3+b^3+c^3)\},$and 
  Since$3^{11}=177147,$we compute$(5 \cdot 177147) \mod 1000 = 735.$ [\textit{Note: The multiplication by 5 isn't justified. The computed $N$ above is simply wrong by a factor of 5. Unfortunately, I don't know how to fix this approach.}](context: he chat gptd the solution like recently after the test was finished so we didnt know what the real answer was. i bashed with a simple program and determined his solution was off by a factor of 5 so he just did that at the end ;-;)~shreyan.chethan
 
  
-
-
 
 
 
@@ -1773,8 +1497,6 @@ For $3^{7} \mid a^{3} + b^{3} + c^{3}$ to happen, we need $3 \mid a^{3} + b^{3} 
 
 
 
-
-
 \textbf{Solution 4(Recursion)}
 
 Let $N(n, k)$ equal to number of triples in the range $(1, 2, ..., 3^k)$ for which $3^n | a^3 + b^3 + c^3$. Define $f(n,k)$ to be the number of triples such that $3 | a,b,c$ and define $g(n,k)$ to be the number of triples otherwise. It's obvious that $N(n, k) = f(n,k) + g(n,k)$. We can actually find a nice recursive definition for $f(n,k)$. We will replace $a = 3a_1, b = 3b_1, c = 3c_1 \implies 3^n | 3^3 a_1^3 + 3^3 b_1^3 + 3^3 c_1^3 \implies 3^{n - 3} | a_1^3 + b_1^3 + c_1^3$ which implies that the number of triples for this is simply $N(n - 3, k - 1)$ since we lower the range by one exponent of $3$ since we're dividing all of $a,b,c$ by $3$. Finding $g(n,k)$ is a bit harder. Note that all the residues modulo $3$ that give $3 | a^3 + b^3 + c^3$ are $0, 1, 2$ modulo $3$ and $1,1,1$ modulo $3$ and $2,2,2$ modulo $3$. Note that if $a, b, c \equiv 1\mod 3$, then
@@ -1802,8 +1524,6 @@ Let $N(n, k)$ equal to number of triples in the range $(1, 2, ..., 3^k)$ for whi
  Finally, the answer is $N = 3 \cdot 3^{11} + 2 \cdot 3^{11} = 5 \cdot 3^{11}$ which gives an answer of $\boxed{735}$.
 
  
-
-
 
 
 \end{enumerate}

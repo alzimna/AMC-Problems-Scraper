@@ -16,7 +16,7 @@ Consider the three-digit arrangement, $\overline{aba}$. There are $10$ choices f
 
  $\frac{1}{26}+\frac{1}{10}-\frac{1}{260}=\frac{35}{260}=\frac{7}{52}\quad\Longrightarrow\quad7+52=\boxed{59}$
 
-
+ 
 
 
 
@@ -28,16 +28,12 @@ Using \href{https://artofproblemsolving.com/wiki/index.php?title=Complementary}{
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that we can pick the first and second letters/numbers freely with one choice left for the last letter/number for there to be a palindrome. Thus, the probability of no palindrome is 
  \[\frac{25}{26}\cdot \frac{9}{10}=\frac{45}{52}\] thus we have $1-\frac{45}{52}=\frac{7}{52}$ so our answer is $7+52 = \boxed{59}.$
 
  
-
-
 
 
 
@@ -55,8 +51,6 @@ We can find the probability of getting a letter and number palindrome through So
  Finally, we can add them all together to get: $\frac{9 + 25 + 1}{260} = \frac{35}{260} = \frac{7}{52} = \frac{m}{n}.$ Thus, we have $m + n = \boxed{059}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) The diagram shows twenty congruent circles arranged in three rows and enclosed in a rectangle. The circles are tangent to one another and to the sides of the rectangle as shown in the diagram. The ratio of the longer dimension of the rectangle to the shorter dimension can be written as $\frac{1}{2}\left(\sqrt{p}-q\right)$, where $p$ and $q$ are positive integers. Find $p+q$.
@@ -85,15 +79,11 @@ Let the \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radiu
 
 
 
-
-
 \textbf{Solution 2}
 
 Since we only care about the \textit{ratio} between the longer side and shorter side, we can set the longer side to $14$. So, this means that each of the radii is $1$. Now, we connect the radii of three circles such that they form an equilateral triangle with side length 4. Obviously, the height this triangle is $2\sqrt{3}$, and the shorter side of the triangle is therefore $2\sqrt{3}+2$ and we use simplification similar to as showed above, and we reach the result $\frac{1}{2} \cdot (\sqrt{147}-7)$ and the final answer is $147+7 = \boxed{154}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) Jane is 25 years old. Dick is older than Jane. In $n$ years, where $n$ is a positive integer, Dick's age and Jane's age will both be two-digit numbers and will have the property that Jane's age is obtained by interchanging the digits of Dick's age. Let $d$ be Dick's present age. How many ordered pairs of positive integers $(d,n)$ are possible?
@@ -108,11 +98,11 @@ Since we only care about the \textit{ratio} between the longer side and shorter 
 
 Let Jane's age $n$ years from now be $10a+b$, and let Dick's age be $10b+a$. If $10b+a>10a+b$, then $b>a$. The possible pairs of $a,b$ are:
 
- $(1,2), (1,3), (2,3), (1,4), (2,4), (3,4), \dots , (8,9)$That makes 36. But $10a+b>25$, so we subtract all the extraneous pairs: $(1,2), (1,3), (2,3), (1,4), (2,4), (1,5), (2,5), (1,6), (1,7), (1,8),$ and $(1,9)$. $36-11=\boxed{025}$
+ $(1,2), (1,3), (2,3), (1,4), (2,4), (3,4), \dots , (8,9)$
+
+ That makes 36. But $10a+b>25$, so we subtract all the extraneous pairs: $(1,2), (1,3), (2,3), (1,4), (2,4), (1,5), (2,5), (1,6), (1,7), (1,8),$ and $(1,9)$. $36-11=\boxed{025}$
 
  
-
-
 
 
 
@@ -126,8 +116,6 @@ Start by assuming that $n < 5$ (essentially, Jane is in the 20s when their ages 
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that for any "goal age", being $d + n$, there can only be $1$ ordered pair as Jane’s starting age is constant. We can work our way through Jane's possible ages when Dick can have a valid interchanged age without worrying about $n$. Referring to solution one, $b>a$.
@@ -138,19 +126,21 @@ Note that for any "goal age", being $d + n$, there can only be $1$ ordered pair 
 
 
  $b = \left\{6, 7, 8, 9\right\}$ which is $4$ ages for this decade.
+
+ 
 Repeating this process as $a$ gets larger, we get the sum 
 
  
 
 
  ${6 + 5 + 4 + 3 + 2 + 1}$.
+
+ 
 Adding our numbers, we get $4 + 6 + 5 + \ldots + 2 + 1 = 4 + 21 =  \boxed{025}$. -Exit
 
  \textbf{Remark} The 25 ordered pairs $(d, n)$ are:(34, 9)(34, 20)(34, 31)(34, 42)(34, 53)(34, 64)(43, 10)(43, 21)(43, 32)(43, 43)(43, 54)(52, 11)(52, 22)(52, 33)(52, 44)(61, 1)(61, 12)(61, 23)(61, 34)(70, 2)(70, 13)(70, 24)(79, 3)(79, 14)(88, 4)~Puck\_0
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) Consider the sequence defined by $a_k=\frac 1{k^2+k}$ for $k\ge 1$. Given that $a_m+a_{m+1}+\cdots+a_{n-1}=1/29$, for positive integers $m$ and $n$ with $m<n$, find $m+n$.
@@ -197,8 +187,6 @@ Note that $a_1 + a_2 + \cdots + a_i = \dfrac{i}{i+1}$. This can be proven by ind
 
 
 
-
-
 \textbf{Solution 3}
 
 To solve this problem, I need to find two positive integers $m$ and $n$ where $m < n$ and the sum of sequence terms equals $\frac{1}{29}$.
@@ -230,8 +218,6 @@ To solve this problem, I need to find two positive integers $m$ and $n$ where $m
  
 
 
-
-
 	\item (\textit{AIME I 2002}) Let $A_1, A_2, A_3, \ldots, A_{12}$ be the vertices of a regular dodecagon. How many distinct squares in the plane of the dodecagon have at least two vertices in the set $\{A_1,A_2,A_3,\ldots,A_{12}\}$?
 
 
@@ -248,15 +234,11 @@ There are 66 ways of picking two vertices. Note with any two vertices one can dr
 
 
 
-
-
 \textbf{Solution 2}
 
 Proceed as above to initially get 198 squares (with overcounting). Then note that any square with all four vertices on the dodecagon has to have three sides "between" each vertex, giving us a total of three squares. However, we counted these squares with all four of their sides plus both of their diagonals, meaning we counted them 6 times. Therefore, our answer is $198-3(6-1)=198-15=\boxed{183}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) The solutions to the system of equations
@@ -293,12 +275,12 @@ One may simplify the work by applying \href{https://artofproblemsolving.com/wiki
  
 
 
-
-
 	\item (\textit{AIME I 2002}) 
 The Binomial Expansion is valid for exponents that are not integers. That is, for all real numbers $x$, $y$, and $r$ with $|x|>|y|$, 
 
- $(x+y)^r=x^r+rx^{r-1}y^1+\frac{r(r-1)}2x^{r-2}y^2+\frac{r(r-1)(r-2)}{3!}x^{r-3}y^3+\cdots$What are the first three digits to the right of the decimal point in the decimal representation of $\left(10^{2002}+1\right)^{10/7}$?
+ $(x+y)^r=x^r+rx^{r-1}y^1+\frac{r(r-1)}2x^{r-2}y^2+\frac{r(r-1)(r-2)}{3!}x^{r-3}y^3+\cdots$
+
+ What are the first three digits to the right of the decimal point in the decimal representation of $\left(10^{2002}+1\right)^{10/7}$?
 
 
  
@@ -328,15 +310,11 @@ $1^n$ will always be 1, so we can ignore those terms, and using the definition (
 
 
 
-
-
 \textbf{Solution 2}
 
 An equivalent statement is to note that we are looking for $1000 \left\{\frac{10^{859}}{7}\right\}$, where $\{x\} = x - \lfloor x \rfloor$ is the fractional part of a number. By \href{https://artofproblemsolving.com/wiki/index.php?title=Fermat\%27s\_Little\_Theorem}{Fermat's Little Theorem}, $10^6 \equiv 1 \pmod{7}$, so $10^{859} \equiv 3^{6 \times 143 + 1} \equiv 3 \pmod{7}$; in other words, $10^{859}$ leaves a residue of $3$ after division by $7$. Then the desired answer is the first three decimal places after $\frac 37$, which are $\boxed{428}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) Find the smallest integer $k$ for which the conditions
@@ -375,8 +353,6 @@ From $(2)$, $a_9=$ $a_8+a_7=2a_7+a_6=3a_6+2a_5=5a_5+3a_4=8a_4+5a_3=13a_3+8a_2=21
 
 
 
-
-
 \textbf{Solution 1 (Alternate)}
 
 From $(2)$, $a_9=$ $a_8+a_7=2a_7+a_6=3a_6+2a_5=5a_5+3a_4=8a_4+5a_3=13a_3+8a_2=21a_2+13a_1$ $=k$
@@ -390,8 +366,6 @@ From $(2)$, $a_9=$ $a_8+a_7=2a_7+a_6=3a_6+2a_5=5a_5+3a_4=8a_4+5a_3=13a_3+8a_2=21
  Thus, $k=13(22)+21(22)=\boxed{748}$ is the smallest possible value of $k$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) Harold, Tanya, and Ulysses paint a very long picket fence. Harold starts with the first picket and paints every $h$th picket; Tanya starts with the second picket and paints every $t$th picket; and Ulysses starts with the third picket and paints every $u$th picket. Call the positive integer $100h+10t+u$ $\textit{paintable}$ when the triple $(h,t,u)$ of positive integers results in every picket being painted exactly once. Find the sum of all the paintable integers.
@@ -422,8 +396,6 @@ Note that it is impossible for any of $h,t,u$ to be $1$, since then each picket 
 
 
 
-
-
 \textbf{Solution 2}
 
 Again, note that $h,t,u \neq 1$. The three conditions state that no picket number $n$ may satisfy any two of the conditions: $n \equiv 1 \pmod{h},\ n \equiv 2 \pmod{t},\ n \equiv 3 \pmod{u}$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Chinese\_Remainder\_Theorem}{Chinese Remainder Theorem}, the \href{https://artofproblemsolving.com/wiki/index.php?title=Greatest\_common\_divisor}{greatest common divisor} of any pair of the three numbers $\{h,t,u\}$ cannot be $1$ (since otherwise \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{without loss of generality} consider $\text{gcd}\,(h,t) = 1$; then there will be a common solution $\pmod{h \times t}$). 
@@ -442,15 +414,11 @@ Again, note that $h,t,u \neq 1$. The three conditions state that no picket numbe
 
 
 
-
-
 \textbf{Solution 3}
 
 The three conditions state that no picket number $n$ may satisfy any two of the conditions: $n \equiv 1 \pmod{h},\ n \equiv 2 \pmod{t},\ n \equiv 3 \pmod{u}$. Note that the smallest number, $min \{ h,t,u \},$ divides the other $2$, and the next smallest divide the largest number, otherwise there is a common solution by the \href{https://artofproblemsolving.com/wiki/index.php?title=Chinese\_Remainder\_Theorem}{Chinese Remainder Theorem}. It is also a necessary condition so that it paints exactly once. Note that the smallest number can't be at least $5$, otherwise not all picket will be painted. We are left with few cases (we could also exclude $1$ as the possibility) which could be done quickly. Thus the answer is $333+424 = \boxed{757}$.
 
  
-
-
 
 
 
@@ -463,8 +431,6 @@ The wording of this problem is a bit dissatisfying and could have been improved 
  Since the 4th picket must henceforth be reached via t = 2, we either have the 5th picket reached via u = 2 (requiring h to be any number exceeding the number of pickets, and we're stipulating that this is not allowed), or we have the 5th picket reached via h = 4, from which it follows that u = 4. So we have accumulated the solutions 333 and 424 and we have exhausted both the space of reasonable possibilities as well as the available space before we would exceed 999.
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) In the diagram below, angle $ABC$ is a right angle. Point $D$ is on $\overline{BC}$, and $\overline{AD}$ bisects angle $CAB$. Points $E$ and $F$ are on $\overline{AB}$ and $\overline{AC}$, respectively, so that $AE=3$ and $AF=10$. Given that $EB=9$ and $FC=27$, find the integer closest to the area of quadrilateral $DCFG$.
@@ -500,8 +466,6 @@ By the Pythagorean Theorem, $BC=35$. Letting $BD=x$ we can use the Angle Bisecto
 
 
 
-
-
 \textbf{Solution 2 Bash}
 
 By the Pythagorean Theorem, $BC=35$. From now on, every number we get will be rounded to two decimal points. Using law of cosines on AEF, EF is around 9.46. Using the angle bisector theorem, GF and DC are 7.28 and (185/7), respectively. We also know the lengths of EG and BD, so a quick Stewart's Theorem for triangles ABC and AEF gives lengths 3.76 and 14.75 for AG and AD, respectively. Now we have all segments of triangles AGF and ADC. Joy! It's time for some Heron's Formula. This gives area 10.95 for triangle AGF and 158.68 for triangle ADC. Subtracting gives us 147.73. Round to the nearest whole number and we get $\boxed{148}$.
@@ -509,8 +473,6 @@ By the Pythagorean Theorem, $BC=35$. From now on, every number we get will be ro
  -jackshi2006
 
  
-
-
 
 
 
@@ -527,15 +489,11 @@ By the Pythagorean Theorem, $BC=35$. By the Angle Bisector Theorem $BD = 60/7$ a
 
 
 
-
-
 \textbf{Solution 4 No Trig}
 
 By the Pythagorean Theorem, $BC = 35$, and by the Angle Bisector Theorem $BD = 60/7$ and $DC = 185/7$. Draw a perpendicular from $F$ to $\overline{AE}$. Let the intersection of $F$ and $\overline{AE}$ be $H$. triangle $AHF$ is similar to $ABC$ by $AA$ similarity. thus, $AF/AC = HF/BC$. We find that $HF = 350/37$, so the area of $AEF = 525/37$. The area of triangle $AGF$ is $10/3$ that of triangle $AEG$, since they share a common side and angle, so the area of triangle $AGF$ is $10/13$ the area of triangle $AEF$, so the area of $AGF = 5250/481$. The area of triangle $ADC$ is $1110/7$, since the base is $185/7$ and the height is $12$. Thus, the area of $DCFG$ equals the area of $ADC - AGF$, or rounded to the nearest integer, $\boxed{148}$
 
  
-
-
 
 
 
@@ -560,8 +518,6 @@ By the Pythagorean Theorem, $BC=35$ so $[ABC]=210$.
  
 
 
-
-
 	\item (\textit{AIME I 2002}) Let $ABCD$ and $BCFG$ be two faces of a cube with $AB=12$. A beam of light emanates from vertex $A$ and reflects off face $BCFG$ at point $P$, which is $7$ units from $\overline{BG}$ and $5$ units from $\overline{BC}$. The beam continues to be reflected off the faces of the cube. The length of the light path from the time it leaves point $A$ until it next reaches a vertex of the cube is given by $m\sqrt{n}$, where $m$ and $n$ are integers and $n$ is not divisible by the square of any prime. Find $m+n$.
 
 
@@ -580,8 +536,6 @@ When a light beam reflects off a surface, the path is like that of a ball bounci
 
 
 
-
-
 \textbf{Solution 2(2D and photons)}
 
 We can use a similar trick as with reflections in 2D: Imagine that the entire space is divided into cubes identical to the one we have. Now let's follow two photons of light that start in $A$ at the same time: one of them will reflect as given in the problem statement, the second will simply fly straight through all cubes. It can easily be seen that at any moment in time the photons are in exactly the same position relative to the cubes they are inside at the moment. In other words, we can take the cube with the first photon, translate it and flip if necessary, to get the cube with the other photon.
@@ -595,8 +549,6 @@ We can use a similar trick as with reflections in 2D: Imagine that the entire sp
  Then the distance it travelled is $\sqrt{ (12\cdot 12)^2 + (7\cdot 12)^2 + (5\cdot 12)^2 } = 12\sqrt{12^2 + 7^2 + 5^2}=12\sqrt{218}$.And as the factorization of $218$ is $218=2\cdot 109$, we have $m=12$ and $n=218$, hence $m+n=\boxed{230}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) Let $F(z)=\frac{z+i}{z-i}$ for all complex numbers $z\not= i$, and let $z_n=F(z_{n-1})$ for all positive integers $n$. Given that $z_0=\frac 1{137}+i$ and $z_{2002}=a+bi$, where $a$ and $b$ are real numbers, find $a+b$.
@@ -623,15 +575,11 @@ Iterating $F$ we get:
 
 
 
-
-
 \textbf{Solution 2 (Very Risky, only attempt if you have very little time left)}
 
 Solving for $z_{1}$, we have $\frac{\frac{1}{137}+2i}{\frac{1}{137}}=1+274i$. Notice that when we solve for $z_{2}$, the result is equal to some non-integral real and imaginary part, where the value of $a+b$ for $z_{2}$ is not equal to an integer. Because this is an AIME problem, the answer must be an integer, so there is most likely a pattern or cycle that $z_{n}$ goes through, and because out of the first 3 terms, only one of which has an integral value for $a+b$, you can guess that the answer is likely $1+274=\boxed{275}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) In triangle $ABC$ the medians $\overline{AD}$ and $\overline{CE}$ have lengths 18 and 27, respectively, and $AB = 24$.  Extend $\overline{CE}$ to intersect the circumcircle of $ABC$ at $F$.  The area of triangle $AFB$ is $m\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime.  Find $m + n$.
@@ -649,26 +597,30 @@ Solving for $z_{1}$, we have $\frac{\frac{1}{137}+2i}{\frac{1}{137}}=1+274i$. No
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2002_13_Solution_Figure_1.png}
                     \end{figure}
-                    Applying \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} to medians $AD, CE$, we have:
+                    
 
- <center>
+ Applying \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} to medians $AD, CE$, we have:
+
+ 
  \begin{align*} BC^2 + 4 \cdot 18^2 &= 2\left(24^2 + AC^2\right) \\ 24^2 + 4 \cdot 27^2 &= 2\left(AC^2 + BC^2\right)  \end{align*}
 
 
- </center>Substituting the first equation into the second and simplification yields $24^2 = 2\left(3AC^2 + 2 \cdot 24^2 - 4 \cdot 18^2\right)- 4 \cdot 27^2$ $\Longrightarrow AC = \sqrt{2^5 \cdot 3 + 2 \cdot 3^5 + 2^4 \cdot 3^3 - 2^7 \cdot 3} = 3\sqrt{70}$. 
+ 
+
+ Substituting the first equation into the second and simplification yields $24^2 = 2\left(3AC^2 + 2 \cdot 24^2 - 4 \cdot 18^2\right)- 4 \cdot 27^2$ $\Longrightarrow AC = \sqrt{2^5 \cdot 3 + 2 \cdot 3^5 + 2^4 \cdot 3^3 - 2^7 \cdot 3} = 3\sqrt{70}$. 
 
  By the \href{https://artofproblemsolving.com/wiki/index.php?title=Power\_of\_a\_Point\_Theorem}{Power of a Point Theorem} on $E$, we get $EF = \frac{12^2}{27} = \frac{16}{3}$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on $\triangle ACE$ gives 
 
- <center>
+ 
  \begin{align*} \cos \angle AEC = \left(\frac{12^2 + 27^2 - 9 \cdot 70}{2 \cdot 12 \cdot 27}\right) = \frac{3}{8} \end{align*}
 
 
- </center>Hence $\sin \angle AEC = \sqrt{1 - \cos^2 \angle AEC} = \frac{\sqrt{55}}{8}$ (taking the positive square root since $0^{\circ} < \angle AEC < 180^{\circ}$, so $\sin\angle AEC > 0$). Using the identity $\sin x^{\circ} \equiv \sin\left(180-x\right)^{\circ}$, we now deduce $\sin \angle AEF = \frac{\sqrt{55}}{8}$. Finally, because $\triangle AEF, BEF$ have the same height and equal bases, they have the same area, yielding 
+ 
+
+ Hence $\sin \angle AEC = \sqrt{1 - \cos^2 \angle AEC} = \frac{\sqrt{55}}{8}$ (taking the positive square root since $0^{\circ} < \angle AEC < 180^{\circ}$, so $\sin\angle AEC > 0$). Using the identity $\sin x^{\circ} \equiv \sin\left(180-x\right)^{\circ}$, we now deduce $\sin \angle AEF = \frac{\sqrt{55}}{8}$. Finally, because $\triangle AEF, BEF$ have the same height and equal bases, they have the same area, yielding 
  \[[ABF] = 2[AEF] = 2 \cdot \frac 12 \cdot AE \cdot EF \sin \angle AEF = 12 \cdot \frac{16}{3} \cdot \frac{\sqrt{55}}{8} = 8\sqrt{55},\] and so the answer is $8 + 55 = \boxed{063}$.
 
  
-
-
 
 
 
@@ -676,47 +628,57 @@ Solving for $z_{1}$, we have $\frac{\frac{1}{137}+2i}{\frac{1}{137}}=1+274i$. No
 
 Let $AD$ and $CE$ intersect at $P$. Since medians split one another in a $2:1$ ratio, we have
 
- <center>
+ 
  \begin{align*} AP = 12, PE = 9 \end{align*}
 
 
- </center>This gives isosceles $APE$ and thus an easy area calculation. After extending the altitude to $PE$ and using the fact that it is also a median, we find
+ 
 
- <center>
+ This gives isosceles $APE$ and thus an easy area calculation. After extending the altitude to $PE$ and using the fact that it is also a median, we find
+
+ 
  \begin{align*} [APE] = \frac{27\sqrt{55}}{4} \end{align*}
 
 
- </center>Using Power of a Point, we have
+ 
 
- <center>
+ Using Power of a Point, we have
+
+ 
  \begin{align*} EF=\frac{16}{3} \end{align*}
 
 
- </center>By Same Height Different Base,
+ 
 
- <center>
+ By Same Height Different Base,
+
+ 
  \begin{align*} \frac{[AFE]}{[APE]}=\frac{[AFE]}{(\frac{27\sqrt{55}}{4})}=\frac{EF}{PE}=\frac{(\frac{16}{3})}{9}=\frac{16}{27} \end{align*}
 
 
- </center>Solving gives
+ 
 
- <center>
+ Solving gives
+
+ 
  \begin{align*} [AFE] = 4\sqrt{55} \end{align*}
 
 
- </center>and
+ 
 
- <center>
+ and
+
+ 
  \begin{align*} [AFB]=2[AFE]=8\sqrt{55} \end{align*}
 
 
- </center>Thus, our answer is $8+55=\boxed{063}$.
+ 
+
+ Thus, our answer is $8+55=\boxed{063}$.
 
  \textbf{Short Solution: Smart Similarity} Use the same diagram as in Solution 1. Call the centroid $P$. It should be clear that $PE=9$, and likewise $AP=12$, $AE=12$. Then, $\sin \angle AEP = \frac{\sqrt{55}}{8}$. Power of a Point on $E$ gives $FE=\frac{16}{3}$, and the area of $\triangle AFB$ is $AE \cdot EF \cdot \sin \angle AEP$, which is twice the area of $\triangle AEF$ or $\triangle FEB$ (they have the same area because of equal base and height), giving $8\sqrt{55}$ for an answer of $\boxed{063}$.
 
  
-
-
 
 
 
@@ -725,8 +687,6 @@ Let $AD$ and $CE$ intersect at $P$. Since medians split one another in a $2:1$ r
 Note that, as above, it is quite easy to get that $\sin \angle AEP = \frac{\sqrt{55}}{8}$ (equate Heron's and $\frac{1}{2}ab\sin C$ to find this). Now note that $\angle FEA = \angle BEC$ because they are vertical angles, $\angle FAE = \angle ECB$, and $\angle EFA = \angle ABC$ (the latter two are derived from the inscribed angle theorem). Therefore $\Delta AEF$ ~ $\Delta CEB$ and so $FE = \frac{144}{27}$ and $\sin \angle FEA = \frac{\sqrt{55}}{8}$ so the area of $\Delta BFA$ is $8\sqrt{55}$ giving us $\boxed{063}$ as our answer. (One may just get the area via triangle similarity too--this is if you are tired by the end of test and just want to bash some stuff out--it may also serve as a useful check). 
 
  
-
-
 
 
 
@@ -743,15 +703,11 @@ Substituting $c=24$ and solving with algebra now gives $a=6\sqrt{31}, b=3\sqrt{7
 
 
 
-
-
 \textbf{Solution 6 (Law of Cosines + Stewart's theorem)}
 
 Since $AD$ is the median, let $BD=BC=x$. Since $CE$ is a median, $AE=BE=12$. Applying Power of a Point with respect to point $E$, we see that $EF=\frac{16}{3}$. Applying Stewart's Theorem on triangles $\triangle ADC$ and $\triangle ABC$, we get that $x=3\sqrt{31}$ and $AC=3\sqrt{70}$. The area of $\triangle AFB$ is simply $\frac{1}{2} \cdot \sin{\angle FBA}\cdot FB\cdot AB$. We know $AB=24$. Also, we know that $\angle FBA = \angle FCA$. Then, applying Law of Cosines on triangle $EAC$, we get that $\cos{\angle FCA}=\frac{3\sqrt{70}}{28}$ which means that $\sin{\angle FCA=\angle FBA}=\frac{\sqrt{154}}{28}$. Then, applying Stewart's theorem on triangle $FBC$ with cevian $BE$ allows us to receive that $FB=\frac{4\sqrt{70}}{3}$. Now, plugging into our earlier area formula, we receive $\frac{1}{2} \cdot \frac{\sqrt{154}}{28} \cdot \frac{4\sqrt{70}}{3} \cdot 24 = 8\sqrt{55}.$ Therefore, the desired answer is $8+55=\boxed{063}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2002}) A set $\mathcal{S}$ of distinct positive integers has the following property: for every integer $x$ in $\mathcal{S},$ the arithmetic mean of the set of values obtained by deleting $x$ from $\mathcal{S}$ is an integer.  Given that 1 belongs to $\mathcal{S}$ and that 2002 is the largest element of $\mathcal{S},$ what is the greatest number of elements that $\mathcal{S}$ can have?
@@ -771,8 +727,6 @@ Let the sum of the integers in $\mathcal{S}$ be $N$, and let the size of $|\math
  
 
 
-
-
 	\item (\textit{AIME I 2002}) Polyhedron $ABCDEFG$ has six faces.  Face $ABCD$ is a square with $AB = 12;$ face $ABFG$ is a trapezoid with $\overline{AB}$ parallel to $\overline{GF},$ $BF = AG = 8,$ and $GF = 6;$ and face $CDE$ has $CE = DE = 14.$  The other three faces are $ADEG, BCEF,$ and $EFG.$  The distance from $E$ to face $ABCD$ is 12.  Given that $EG^2 = p - q\sqrt {r},$ where $p, q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p + q + r.$
 
 
@@ -788,7 +742,9 @@ Let the sum of the integers in $\mathcal{S}$ be $N$, and let the size of $|\math
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2002_15_Solution_Figure_1.png}
                     \end{figure}
-                    Let's put the polyhedron onto a coordinate plane. For simplicity, let the origin be the center of the square: $A(-6,6,0)$, $B(-6,-6,0)$, $C(6,-6,0)$ and $D(6,6,0)$. Since $ABFG$ is an isosceles trapezoid and $CDE$ is an isosceles triangle, we have symmetry about the $xz$-plane.
+                    
+
+ Let's put the polyhedron onto a coordinate plane. For simplicity, let the origin be the center of the square: $A(-6,6,0)$, $B(-6,-6,0)$, $C(6,-6,0)$ and $D(6,6,0)$. Since $ABFG$ is an isosceles trapezoid and $CDE$ is an isosceles triangle, we have symmetry about the $xz$-plane.
 
  Therefore, the $y$-component of $E$ is 0. We are given that the $z$ component is 12, and it lies over the square, so we must have $E(2,0,12)$ so $CE=\sqrt{4^2+6^2+12^2}=\sqrt{196}=14$ (the other solution, $E(10,0,12)$ does not lie over the square). Now let $F(a,-3,b)$ and $G(a,3,b)$, so $FG=6$ is parallel to $\overline{AB}$. We must have $BF=8$, so $(a+6)^2+b^2=8^2-3^2=55$.
 
@@ -808,8 +764,6 @@ Let the sum of the integers in $\mathcal{S}$ be $N$, and let the size of $|\math
 
 
 
-
-
 \textbf{Solution 2}
 
 We let $A$ be the origin, or $(0,0,0)$, $B = (0,0,12)$, and $D = (12,0,0)$. Draw the perpendiculars from F and G to AB, and let their intersections be X and Y, respectively. By symmetry, $FX = GY = \frac{12-6}2 = 3$, so $G = (a,b,3)$, where a and b are variables. 
@@ -819,8 +773,6 @@ We let $A$ be the origin, or $(0,0,0)$, $B = (0,0,12)$, and $D = (12,0,0)$. Draw
  We also know that $A,D,E,$ and $G$ are coplanar, so they all lie on the plane $z = Ax+By+C$. Since $(0,0,0)$ is on it, then $C = 0$. Also, since $(12,0,0)$ is contained, then $A = 0$. Finally, since $(8,12,6)$ is on the plane, then $B = \frac 12$. Therefore, $b = 6$. Since $GA = 8$, then $a^2+6^2+3^2=8^2$, or $a = \pm \sqrt{19}$. Therefore, the two permissible values of $EG^2$ are $(8 \pm \sqrt{19})^2+6^2+3^2 = 128 \pm 16\sqrt{19}$. The only one that satisfies the conditions of the problem is $128 - 16\sqrt{19}$, from which the answer is $128+16+19=\boxed{163}$.
 
  
-
-
 
 
 
@@ -840,8 +792,6 @@ Denote the foot of the altitude from $E$ to $ABCD$ be $X$. Let the projection of
  -RyanZhu817
 
  
-
-
 
 
 \end{enumerate}
