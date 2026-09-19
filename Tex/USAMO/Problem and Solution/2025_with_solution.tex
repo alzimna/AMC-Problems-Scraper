@@ -1,0 +1,256 @@
+\section{USAMO 2025}
+        \begin{enumerate}
+        	\item (\textit{USAMO 2025}) Let $k$ and $d$ be positive integers. Prove that there exists a positive integer $N$ such that for every odd integer $n>N$, the digits in the base-$2n$ representation of $n^k$ are all greater than $d$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We define a remainder operation $\,a \bmod b\,$ to be the remainder when $a$ is divided by $b$. Also, let $\lfloor x\rfloor$ be the usual floor function.
+
+ Base-$(2n)$ Representation:
+ \[n^k \;=\; a_{k-1}\,(2n)^{k-1} \;+\; a_{k-2}\,(2n)^{k-2} \;+\;\dots\;+\;a_1\,(2n)\;+\;a_0,\]where each $a_i$ satisfies $0 \le a_i < 2n.$  Hence, the base-$(2n)$ representation of $n^k$ is $a_{k-1}\,a_{k-2}\,\dots\,a_1\,a_0.$
+
+ Leading Digit:
+ \[a_{k-1}  \;=\;  \left\lfloor  \dfrac{n^k}{(2n)^{k-1}} \right\rfloor \;=\; \left\lfloor \dfrac{n}{2^{k-1}} \right\rfloor.\]
+
+ General Digit Formula:For $0 \le i < k,$
+ \[a_i  \;=\; \left\lfloor  \dfrac{\,n^k \bmod (2n)^{\,i+1}}{(2n)^i} \right\rfloor.\]
+
+ Because $n$ is odd, one can show 
+ \[n^k \bmod (2n)^{\,i+1} \;\ge\; n^{\,i+1},\]which implies
+ \[a_i  \;\ge\; \left\lfloor \dfrac{n^{\,i+1}}{(2n)^i} \right\rfloor \;=\; \left\lfloor \dfrac{n}{2^i} \right\rfloor \;\ge\; 2^{\,k-1-i} \left\lfloor \dfrac{n}{2^{\,k-1}} \right\rfloor.\]
+
+ As $n$ grows large, $\bigl\lfloor n / 2^{\,k-1}\bigr\rfloor$  becomes arbitrarily big, so each digit $a_i$ eventually exceeds any fixed $d.$  Hence there exists an integer $N$ such that for all odd $n > N,$ the digits $a_i$ in the base-$(2n)$ representation of $n^k$ are all $> d.$
+
+ 
+
+
+	\item (\textit{USAMO 2025}) Let $n$ and $k$ be positive integers with $k<n$. Let $P(x)$ be a polynomial of degree $n$ with real coefficients, nonzero constant term, and no repeated roots. Suppose that for any real numbers $a_0,\,a_1,\,\ldots,\,a_k$ such that the polynomial $a_kx^k+\cdots+a_1x+a_0$ divides $P(x)$, the product $a_0a_1\cdots a_k$ is zero. Prove that $P(x)$ has a nonreal root.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We proceed by contradiction. Assume that all roots of $P(x)$ are real. Let the distinct roots be $r_1, r_2, \ldots, r_n$, all nonzero since the constant term is nonzero.
+
+ Consider any subset of $k$ roots $\{r_{i_1}, r_{i_2}, \ldots, r_{i_k}\}$ and form the polynomial:
+ \[Q(x) = \prod_{j=1}^k (x - r_{i_j}) =a_{k} x^k + a_{k-1}x^{k-1} + \cdots + a_0\]
+
+ By Vieta's formulas:
+
+ $a_0 = (-1)^k \prod_{j=1}^k r_{i_j} \neq 0$$a_{k-1} = -\sum_{j=1}^k r_{i_j}$$a_{k-2} = \sum_{1\leq m<n\leq k} r_{i_m}r_{i_n}$
+
+ 
+The given condition requires that $a_0a_1\cdots a_k = 0$. Since $a_0 \neq 0$, at least one other coefficient must be zero.
+
+ Case $k=2$:For any pair of roots $(r_i, r_j)$, we have:
+ \[Q(x) = x^2 - (r_i+r_j)x + r_ir_j\]The condition implies $-r_ir_j(r_i+r_j) = 0$, so $r_i + r_j = 0$ for all pairs. But with $n \geq 3$, considering three roots $r_1, r_2, r_3$ gives:
+ \[r_1 + r_2 = 0 \quad \text{and} \quad r_1 + r_3 = 0 \implies r_2 = r_3\]contradicting distinct roots.In General:For any $k$ roots, some symmetric sum must be zero. For $k=3$, this would require:
+ \[r_i + r_j + r_m = 0 \quad \text{for all triples}\]which leads to contradictions for any $n \geq 4$ as it would force roots to be equal.
+
+ Thus, our initial assumption is false, and $P(x)$ must have at least one nonreal root.~Jonathan
+
+ 
+
+
+
+\textbf{Solution 2 (Greater detail and more straightforward)}
+
+For the sake of contradiction, assume all roots of $P(x)$ are real. Then, there exists a polynomial $Q(x)$ whose roots are subsets of the roots of $P(x)$, such that $Q(x)$ divides $P(x)$ and one of the coefficients of $Q(x)$ is 0.
+
+ Indeed, if distinct $r_1, r_2, \dots, r_n$ are the roots of $P(x)$, some subset of these roots satisfy
+ \[(x-r_{i_1})(x- r_{i_2})(\dots)(x-r_{i_k}) = a_{k} x^k + a_{k-1}x^{k-1} + \cdots + a_0\].
+
+ Here, $a_k = 1$ by method of undetermined coefficients. In addition, $a_0 \neq 0$ by the nonzero constant given in the statement. That implies some other term is 0.
+
+ Let $s_k$ denote the $k$-th symmetric summation. It follows that 
+ \[a_{k-1} = -s_1\]
+ \[a_{k-2} = s_2\]
+ \[\dots\]
+ \[a_0 = (-1)^k s_k \neq 0 \implies s_k \neq 0\].
+
+ However, that last claim implies one of $s_1, s_2, s_3, \dots, s_{k-1}$ is 0, which then implies, because $s_k = r_{i_1} r_{i_2} \dots r_{i_k} \neq 0$, none of the roots equal 0. However, notice that then if any one of $s_p \ : \ p \leq k-1$ must equal 0.
+
+ If $k$ is even, we can rewrite some of the symmetric sums by groups. For one of these to equal 0, it follows that some $\binom{n}{i}$ of the groups formed, with $i$ as the $i$th symmetric sum, and $n$ is the number of roots, has the property exactly $\frac{\binom{n}{i}}{2}$ of the sums of elements are direct opposites of the others. However, one quickly realizes that if all terms are relatively prime, it is forced at least one of the roots given is 0, which is a contradiction, or if they are not relatively prime, one can divide by the greatest common factor and obtain some root sequence that is indeed relatively prime, which either forces at least one of the roots to be 0 or two roots to equal one another, both of which are contradictions.
+
+ If $k$ is odd however, this implies one of the roots must equivalate to 0 by the Zero Product Property, a contradiction.
+
+ Because no such $k$ exists, no such subset of $k$ roots can exist, and therefore no such polynomial $Q(x)$ can exist, which implies no such $P(x)$ can exist, and therefore it follows $P(x)$ has at least one nonreal root, and so the proof is complete. $\square$
+
+ 
+
+
+	\item (\textit{USAMO 2025}) Alice the architect and Bob the builder play a game. First, Alice chooses two points $P$ and $Q$ in the plane and a subset $\mathcal{S}$ of the plane, which are announced to Bob. Next, Bob marks infinitely many points in the plane, designating each a city. He may not place two cities within distance at most one unit of each other, and no three cities he places may be collinear. Finally, roads are constructed between the cities as follows: for each pair $A,\,B$ of cities, they are connected with a road along the line segment $AB$ if and only if the following condition holds:
+For every city $C$ distinct from $A$ and $B$, there exists $R\in\mathcal{S}$ such
+that $\triangle PQR$ is directly similar to either $\triangle ABC$ or $\triangle BAC$.
+Alice wins the game if (i) the resulting roads allow for travel between any pair of cities via a finite sequence of roads and (ii) no two roads cross. Otherwise, Bob wins. Determine, with proof, which player has a winning strategy.
+
+
+ Note: $\triangle UVW$ is directly similar to $\triangle XYZ$ if there exists a sequence of rotations, translations, and dilations sending $U$ to $X$, $V$ to $Y$, and $W$ to $Z$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Alice has a winning strategy: Choose $\mathcal S$ to be the set of of points strictly outside the disk with diameter $PQ$. Then two cities $A$ and $B$ have a road between them if and only if every other city is outside the closed disk with diameter $AB$. Note that this condition is equivalent to the angle $\angle ACB$ being acute for every other city $C$. We need to prove that no matter how Bob chooses cities,
+
+ 
+            \begin{enumerate}
+                \item No roads cross, and\item All cities are connected.
+            \end{enumerate}
+            We first prove (1). Suppose for the sake of contradiction that there are roads between $A$ and $C$ and between $B$ and $D$, and that these roads cross. Then $ABCD$ is a convex quadrilateral, because its diagonals intersect. Now, recall our condition for the existence of roads between $A$ and $C$ and between $B$ and $D$: We must have that the angles $\angle ABC$, $\angle BCD$, $\angle CDA$, and $\angle DAB$ are all acute. Because $ABCD$ is a convex quadrilateral, these angles are the interior angles. Then the sum of the interior angles of $ABCD$ is less than $360^\circ$, a contradiction with the fact that the sum of the interior angles of a quadrilateral is always $360^\circ$. $\rightarrow \leftarrow$
+
+ We next prove (2). We use induction on the Euclidean distance between cities. Our base case is that two cities are less than $1$ away from each other. If this is the case, then they are the same city, and so the empty path connects them. Now, suppose for the sake of induction that any two cities less than $\sqrt n$ away from each other have a finite path between them. We will show the same is true for $\sqrt{n + 1}$. Consider any two distinct cities $A$ and $B$ less than $\sqrt{n + 1}$ away from each other. If there is a road between them, we are done. Otherwise, there must be some third city $C$ for which $\angle ACB \geq 90^\circ$.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2025_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ By the Law of Cosines, we get that
+ \[\overline{AB}^2 \geq \overline{AC}^2 + \overline{CB}^2.\]Because no two cities are closer than $1$ away from each other, both $\overline{AC}$ and $\overline{CB}$ are at least $1$. So,
+ \[\overline{AC}^2 \leq \overline{AB}^2 - \overline{CB}^2 < (n + 1) - 1 = n.\]Hence, by the inductive hypothesis, there is a finite path from $A$ to $C$. Likewise, there is a finite path from $C$ to $B$. Joining these paths together, we get a finite path from $A$ to $B$, as desired.
+
+ Hence, any two cities, no matter their distance apart, have a finite path connecting them. $\square$
+
+ Note: The graph of roads constructed by Alice's choice of $\mathcal S$ is called the \href{https://artofproblemsolving.com//en.wikipedia.org/wiki/Gabriel\_graph}{Gabriel graph}.
+
+ \textbf{Aside} It may be tempting to choose $S$ so that the graph of roads is the \href{https://artofproblemsolving.com//en.wikipedia.org/wiki/Relative\_neighborhood\_graph}{relative neighborhood graph}. This can be done by choosing $S$ to be all points outside of the intersection of the disks centered at $A$ and $B$ with radii $\overline{AB}$. However, this only works for finite sets of cities. When the set of cities is infinite, it is possible that the graph won't be connected. For example, consider the infinite set of cities at $A_n = (2n, 0)$ and $B_n = (2n + 1, \sqrt3)$ for positive integers $n$. Then perturb these cities slightly so that
+ \[\overline{B_1A_1} > \overline{A_1A_2} > \overline{A_2B_1} > \overline{B_1B_2} > \overline{B_2A_2} > \overline{A_2A_3} > \overline{A_3B_2} > \overline{B_2B_3} > \overline{B_3A_3} > \cdots.\]In this case, there are never any connections between any of the $\{A_n\}$ and the $\{B_n\}$, so the relative neighborhood graph is disconnected.
+
+ 
+
+
+	\item (\textit{USAMO 2025}) Let $H$ be the orthocenter of acute triangle $ABC$, let $F$ be the foot of the altitude from $C$ to $AB$, and let $P$ be the reflection of $H$ across $BC$. Suppose that the circumcircle of triangle $AFP$ intersects line $BC$ at two distinct points $X$ and $Y$. Prove that $C$ is the midpoint of $XY$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let AP intersects BC at D. Extend FC to the point E on the circumcircle $\omega$ of $FAP$. Since $H$ is the orthocenter of $\Delta ABC$, we know that $HD = DP$ or $HP = 2HD$, and $AH \cdot HD = CH \cdot HF$. Next we use the power of H in $\omega$: 
+
+ 
+
+
+	\item (\textit{USAMO 2025}) Determine, with proof, all positive integers $k$ such that
+ \[\frac{1}{n+1} \sum_{i=0}^n \binom{n}{i}^k\]is an integer for every positive integer $n.$
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+\href{https://artofproblemsolving.com/wiki/index.php/File:2025\_USAMO\_PROBLEM\_5\_1.jpg}{https://artofproblemsolving.com/wiki/index.php/File:2025\_USAMO\_PROBLEM\_5\_1.jpg}
+
+ \href{https://artofproblemsolving.com/wiki/index.php/File:2025\_USAMO\_PROBLEM\_5\_2.jpg}{https://artofproblemsolving.com/wiki/index.php/File:2025\_USAMO\_PROBLEM\_5\_2.jpg}
+
+ 
+
+
+
+\textbf{Solution 2 (combinatorial via Burnside’s lemma)}
+
+Let  
+ \[X=\{(A_1,\dots,A_k):A_j\subseteq\{1,\dots,n\},\;|A_1|=\cdots=|A_k|\}.\]
+
+ Then  
+ \[|X|=\sum_{i=0}^n\binom{n}{i}^k.\]
+
+ The cyclic group $C_{n+1}$ acts on $\{1,\dots,n+1\}$ by “add 1 mod $n+1$,” and hence diagonally on $X$.
+
+ By Burnside’s lemma,  
+ \[|X/C_{n+1}|=\frac1{n+1}\sum_{g\in C_{n+1}}|\mathrm{Fix}(g)|.\]
+
+ If $g$ has order $d\mid(n+1)$ then $\mathrm{Fix}(g)$ consists of choosing each $A_j$ as a union of the $(n+1)/d$ orbits of $g$, so  
+ \[|\mathrm{Fix}(g)|=\sum_{i=0}^n\binom{d}{i}^k.\]
+
+ Thus  
+ \[(n+1)\,|X/C_{n+1}|=\sum_{d\mid(n+1)}\varphi\Bigl(\frac{n+1}d\Bigr)\, \sum_{i=0}^n\binom{d}{i}^k.\]
+
+ Case 1: $k=2m$ even  
+
+ We prove by induction on the divisor‐lattice of $n+1$ that for every proper divisor $d<n+1$,  
+ \[d\mid\sum_{i=0}^n\binom{d}{i}^{2m}.\]
+
+ Then each term $\varphi\bigl((n+1)/d\bigr)\sum_i\binom{d}{i}^{2m}$ is divisible by $\varphi\bigl((n+1)/d\bigr)\,d$, and since  
+ \[\sum_{d\mid(n+1),\,d<n+1}\varphi\Bigl(\frac{n+1}d\Bigr)\,d =(n+1)-\varphi(1)\cdot1 =n+1-1,\]the entire sum on the right is congruent modulo $n+1$ to  
+ \[\varphi(1)\sum_{i=0}^n\binom{n+1}{i}^{2m} =1\cdot\sum_{i=0}^n\binom{n+1}{i}^{2m}.\]
+
+ But the left side $(n+1)\,|X/C_{n+1}|\equiv0\pmod{n+1}$, so  
+ \[n+1\;\bigm\vert\;\sum_{i=0}^n\binom{n+1}{i}^{2m}.\]
+
+ A re‐index $n+1\mapsto n$ yields  
+ \[n+1\;\bigm\vert\;\sum_{i=0}^n\binom{n}{i}^{2m},\]hence  
+ \[A_{2m}(n)=\frac1{n+1}\sum_{i=0}^n\binom{n}{i}^{2m}\in\mathbb Z.\]
+
+ Case 2: $k$ odd  
+
+ Take $n=2$.  Then  
+ \[A_k(2)=\frac{\binom21^k+\binom22^k+\binom23^k}{3} =\frac{1+2^k+1}{3} =\frac{2+2^k}{3}.\]
+
+ If $k$ is odd then $2^k\equiv2\pmod3$, so $2+2^k\equiv4\equiv1\pmod3$, whence  
+ \[A_k(2)\notin\mathbb Z.\]
+
+ Conclusion  
+
+ $A_k(n)\in\mathbb Z\text{ for all }n\ge1\iff k\text{ even.}$
+
+ 
+
+
+	\item (\textit{USAMO 2025}) Let $m$ and $n$ be positive integers with $m\geq n$. There are $m$ cupcakes of different flavors arranged around a circle and $n$ people who like cupcakes. Each person assigns a nonnegative real number score to each cupcake, depending on how much they like the cupcake. Suppose that for each person $P$, it is possible to partition the circle of $m$ cupcakes into $n$ groups of consecutive cupcakes so that the sum of $P$'s scores of the cupcakes in each group is at least $1$. Prove that it is possible to distribute the $m$ cupcakes to the $n$ people so that each person $P$ receives cupcakes of total score at least $1$ with respect to $P$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Arbitrarily pick any one person — call her Pip — and her $n$ arcs. The initial idea is to try to apply Hall’s marriage lemma to match the $n$ people with Pip’s arcs (such that each such person is happy with their matched arc). To that end, construct the obvious bipartite graph $\mathcal{G}$ between the people and the arcs for Pip. We now consider the following algorithm, which takes several steps.  
+
+ 
+                \begin{itemize}
+                    \item If a perfect matching of $\mathcal{G}$ exists, we’re done!
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item We’re probably not that lucky. Per Hall’s condition, this means there is a \textit{bad} set $\mathcal{B}_1$ of people, who are compatible with fewer than $|\mathcal{B}_1|$ of the arcs. Then delete $\mathcal{B}_1$ and the neighbors of $\mathcal{B}_1$, then try to find a matching on the remaining graph.
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If a matching exists now, terminate the algorithm. Otherwise, that means there’s another \textit{bad} set $\mathcal{B}_2$ for the remaining graph. We again delete $\mathcal{B}_2$and the fewer than $\mathcal{B}_2$ neighbors.
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item Repeat until some perfect matching $\mathcal{M}$ is possible in the remaining graph, i.e. there are no more bad sets (and then terminate once that occurs).
+                \end{itemize}
+
+
+                Since Pip is a universal vertex, it
+
+ 
+
+
+\end{enumerate}

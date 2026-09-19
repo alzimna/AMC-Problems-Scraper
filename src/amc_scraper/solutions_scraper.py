@@ -40,9 +40,9 @@ def video_condition(tag) :
     return False
 
 
-def get_solutions_from_page(source,number) :
+def get_solutions_from_page(source,numprob,number) :
     s = rf"{source}_Problems/Problem_{number}"
-    content = get_soup(s,'s')
+    content = get_soup(s,'s',numprob)
 
     if content is None:
         raise Exception(f'Failed to get soup: {s}')
@@ -93,7 +93,7 @@ def get_solutions_from_source(source, numprob, workers = 3) :
 
     numbers = range(1, numprob+1)
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        records = pool.map(lambda n: get_solutions_from_page(source, n), numbers)
+        records = pool.map(lambda n: get_solutions_from_page(source, numprob, n), numbers)
 
     for n,rec in zip(numbers,records) :
         solution = dict()

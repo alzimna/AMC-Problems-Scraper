@@ -1,0 +1,244 @@
+\section{USAMO 2021}
+        \begin{enumerate}
+        	\item (\textit{USAMO 2021}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ $(*)$ Rectangles $BCC_1B_2,$ $CAA_1C_2,$ and $ABB_1A_2$ are erected outside an acute triangle $ABC.$ Suppose that
+ \[\angle BC_1C+\angle CA_1A+\angle AB_1B=180^{\circ}.\]Prove that lines $B_1C_2,$ $C_1A_2,$ and $A_1B_2$ are concurrent.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2021_1_Solution_Figure_1.png}
+                    \end{figure}
+                    Let $D$ be the second point of intersection of the circles $(AB_1B)$ and $(AA_1C).$ Then:
+ \begin{align*} \angle ADB &= 180^\circ – \angle AB_1B,&\angle ADC &= 180^\circ – \angle AA_1C\\ \angle BDC &= 360^\circ – \angle ADB – \angle ADC\\ &= 360^\circ – (180^\circ – \angle AB_1B) – (180^\circ – \angle AA_1C)\\ &= \angle AB_1B + \angle AA_1C\\ \angle BDC + \angle BC_1C &= 180^\circ \end{align*}
+Therefore, $BDCC_1B_2$ is cyclic with diameters $BC_1$ and $CB_2$, and thus $\angle CDB_2 = 90^\circ.$Similarly, $\angle CDA_1 = 90^\circ$, meaning points $A_1$, $D$, and $B_2$ are collinear.
+
+ Similarly, the points $A_2, D, C_1$ and $C_2, D, B_1$ are collinear.
+
+ (After USAMO 2021 Solution Notes – Evan Chen)
+
+ \textbf{vladimir.shelomovskii@gmail.com, vvsss}
+
+ 
+
+
+	\item (\textit{USAMO 2021}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ The Planar National Park is a subset of the Euclidean plane consisting of several trails which meet at junctions. Every trail has its two endpoints at two different junctions whereas each junction is the endpoint of exactly three trails. Trails only intersect at junctions (in particular, trails only meet at endpoints). Finally, no trails begin and end at the same two junctions. 
+
+
+ A visitor walks through the park as follows: she begins at a junction and starts walking along a trail. At the end of that first trail, she enters a junction and turns left. On the next junction she turns right, and so on, alternating left and right turns at each junction. She does this until she gets back to the junction where she started. What is the largest possible number of times she could have entered any junction during her walk, over all possible layouts of the park?
+
+
+ 
+
+
+	\item (\textit{USAMO 2021}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ Let $n \geq 2$ be an integer. An $n \times n$ board is initially empty. Each minute, you may perform one of three moves:
+If there is an L-shaped tromino region of three cells without stones on the board (see figure; rotations not allowed), you may place a stone in each of those cells.
+If all cells in a column have a stone, you may remove all stones from that column.
+If all cells in a row have a stone, you may remove all stones from that row.
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/USAMO_I_2021_3_Problem_Figure_1.png}
+                    \end{figure}
+                    
+For which $n$ is it possible that, after some non-zero number of moves, the board has no stones?
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Label the bottom right cell as $\omega^0$ where $\omega = e^{i2\pi/3}$. Then label each cell with $\omega^d$ where $d$ is the \textit{Manhattan distance} of the current cell from the bottom right cell.
+
+ No matter where an L-shaped tromino is placed, the sum of the labels in the cells is,
+
+ 
+ \[\omega^0 + \omega^1 + \omega^2 = \frac{\omega^3 - 1}{\omega - 1} = \frac{0}{\omega - 1} = 0\]
+
+ If $n = 3k + 1$. Then the sum of all the labels in the cells in a row or column is,
+
+ 
+ \[k(\omega^0 + \omega^1 + \omega^2)+\omega^0 = 1\]
+
+ If $n = 3k + 2$. Then the sum of all the labels in cells in a row or column is,
+
+ 
+ \[k(\omega^0 + \omega^1 + \omega^2) + \omega^0 + \omega^1 = 1 + \omega\]
+
+ Let $S$ be the sum of all the labels of cells containing a stone. In either above case, placing an L-shaped Tromino leaves $S$ invariant but removing a row or column of stone causes $\textrm{Re}(S)$ to decrease (by $1$ or $1/2$ in each case). However the empty grid has $S=0$, so this can't be reached.
+
+ Hence $n=3k$. We now provide a sequence of moves which empties the grid. Divide the grid into $3\times 3$ grids and do the following to every sub-grid. <em>(When I refer to placing an L-shaped tromino on a cell, I am refering to the position of the bottom left stone)</em>
+
+ 
+                \begin{itemize}
+                    \item Add an L-shaped tromino to the bottom left cell and middle cell\item Remove the middle row\item Add an L-shaped tromino to the middle left cell\item Remove the left and middle columns
+                \end{itemize}
+
+
+                and we're done, the grid is empty
+
+ 
+
+
+	\item (\textit{USAMO 2021}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ A finite set $S$ of positive integers has the property that, for each $s \in S,$ and each positive integer divisor $d$ of $s$, there exists a unique element $t \in S$ satisfying $\text{gcd}(s, t) = d$. (The elements $s$ and $t$ could be equal.)
+
+
+ Given this information, find all possible values for the number of elements of $S$.
+
+
+ 
+
+
+	\item (\textit{USAMO 2021}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ Let $n \geq 4$ be an integer. Find all positive real solutions to the following system of $2n$ equations:
+
+
+ 
+ \begin{align*} a_{1} &=\frac{1}{a_{2 n}}+\frac{1}{a_{2}}, & a_{2}&=a_{1}+a_{3}, \\ a_{3}&=\frac{1}{a_{2}}+\frac{1}{a_{4}}, & a_{4}&=a_{3}+a_{5}, \\ a_{5}&=\frac{1}{a_{4}}+\frac{1}{a_{6}}, & a_{6}&=a_{5}+a_{7} \\ &\vdots & &\vdots \\ a_{2 n-1}&=\frac{1}{a_{2 n-2}}+\frac{1}{a_{2 n}}, & a_{2 n}&=a_{2 n-1}+a_{1} \end{align*}
+
+
+
+ 
+
+
+
+\textbf{Solution}
+
+The unique positive real solution is $a_{2k-1} = 1$ and $a_{2k} = 2$ for all $1 \le k \le n$.
+
+ First, substitute $a_{2k-1} = \frac{1}{a_{2k-2}} + \frac{1}{a_{2k}}$ into $\sum_{k=1}^n a_{2k-1}^2$:
+ \[\sum_{k=1}^n a_{2k-1}^2 = \sum_{k=1}^n a_{2k-1}\left(\frac{1}{a_{2k-2}} + \frac{1}{a_{2k}}\right) = \sum_{k=1}^n \frac{a_{2k-1} + a_{2k+1}}{a_{2k}}\]
+
+ Using $a_{2k} = a_{2k-1} + a_{2k+1}$, this simplifies to:
+ \[\sum_{k=1}^n a_{2k-1}^2 = \sum_{k=1}^n \frac{a_{2k}}{a_{2k}} = n\]
+
+ Next, expand $\sum_{k=1}^n a_{2k-1} a_{2k}$ in two ways:
+ \[\sum_{k=1}^n a_{2k-1} a_{2k} = \sum_{k=1}^n a_{2k}\left(\frac{1}{a_{2k-2}} + \frac{1}{a_{2k}}\right) = n + \sum_{k=1}^n \frac{a_{2k}}{a_{2k-2}}\]
+ \[\sum_{k=1}^n a_{2k-1} a_{2k} = \sum_{k=1}^n a_{2k-1}(a_{2k-1} + a_{2k+1}) = \sum_{k=1}^n a_{2k-1}^2 + \sum_{k=1}^n a_{2k-1} a_{2k+1} = n + \sum_{k=1}^n a_{2k-1} a_{2k+1}\]
+
+ Equating the two expressions gives:
+ \[\sum_{k=1}^n a_{2k-1} a_{2k+1} = \sum_{k=1}^n \frac{a_{2k}}{a_{2k-2}}\]
+
+ By AM-GM and Cauchy-Schwarz:
+ \[\sum_{k=1}^n \frac{a_{2k}}{a_{2k-2}} \ge n \sqrt[n]{\prod_{k=1}^n \frac{a_{2k}}{a_{2k-2}}} = n\]
+ \[\sum_{k=1}^n a_{2k-1} a_{2k+1} \le \sqrt{\sum_{k=1}^n a_{2k-1}^2} \sqrt{\sum_{k=1}^n a_{2k+1}^2} = n\]
+
+ Thus $n \le \sum \frac{a_{2k}}{a_{2k-2}} = \sum a_{2k-1} a_{2k+1} \le n$, forcing equality everywhere:
+
+ 
+                \begin{itemize}
+                    \item Equality in AM-GM gives $a_2 = a_4 = \dots = a_{2n} = E$.\item Equality in Cauchy-Schwarz gives $a_1 = a_3 = \dots = a_{2n-1} = O$.
+                \end{itemize}
+
+
+                From $a_2 = a_1 + a_3$ and $a_1 = \frac{1}{a_{2n}} + \frac{1}{a_2}$, we get $E = 2O$ and $O = \frac{2}{E}$.
+
+ Solving $2O^2 = 2$ yields $O = 1$ and $E = 2$.
+
+ Hence, $a_{2k-1} = 1$ and $a_{2k} = 2$ for all $1 \le k \le n$.
+
+ 
+
+
+	\item (\textit{USAMO 2021}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ $(*)$ Let $ABCDEF$ be a convex hexagon satisfying $\overline{AB} \parallel \overline{DE}$, $\overline{BC} \parallel \overline{EF}$, $\overline{CD} \parallel \overline{FA}$, and
+
+ \[AB \cdot DE = BC \cdot EF = CD \cdot FA.\]
+Let $X$, $Y$, and $Z$ be the midpoints of $\overline{AD}$, $\overline{BE}$, and $\overline{CF}$. Prove that the circumcenter of $\triangle ACE$, the circumcenter of $\triangle BDF$, and the orthocenter of $\triangle XYZ$ are collinear.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $M_1$, $M_2$, and $M_3$ be the midpoints of $CE$, $AE$, $AC$ and $N_1$, $N_2$, and $N_3$ be the midpoints of $DF$, $BF$, and $BD$. Also, let $H$ be the orthocenter of $XYZ$. Note that we can use parallel sides to see that $X$, $Z$, and $M_3$ are collinear. Thus we have 
+ \[\text{Pow}(M_3,(XYZ)) = M_3Z \cdot M_3X = \frac 14 AB \cdot DE\] by midlines. Applying this argument cyclically, and noting the condition $AB \cdot DE = BC \cdot EF = CD \cdot FA$, $M_1$, $M_2$, $M_3$, $N_1$, $N_2$, $N_3$ all lie on a circle concentric with $(XYZ)$. 
+
+ Next, realize that basic orthocenter properties imply that the circumcenter $O_1$ of $(ACE)$ is the orthocenter of $\triangle M_1M_2M_3$, and likewise the circumcenter $O_2$ of $(BDF)$ is the orthocenter of $\triangle N_1N_2N_3$.
+
+ The rest is just complex numbers; toss on the complex plane so that the circumcenter of $\triangle XYZ$ is the origin. Then we have 
+ \[o_1 = m_1+m_2+m_3 = (c+e)/2+(a+e)/2+(a+c)/2=a+c+e\] 
+ \[o_2 = n_1+n_2+n_3 = (b+d)/2+(d+f)/2+(b+f)/2=b+d+f\] 
+ \[h = x+y+z = (a+d)/2+(b+e)/2+(c+f)/2=(a+b+c+d+e+f)/2.\]Note that from the above we have $h=\frac{o_1+o_2}{2}$, so $H$ is the midpoint of segment $O_1O_2$. In particular, $H$, $O_1$, and $O_2$ are collinear, as required.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2021_6_Solution_Figure_1.png}
+                    \end{figure}
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2021_6_Solution_Figure_2.png}
+                    \end{figure}
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2021_6_Solution_Figure_3.png}
+                    \end{figure}
+                    We construct two equal triangles, prove that triangle $XYZ$ is the same as medial triangle of both this triangles. We use property of medial triangle and prove that circumcenters of constructed triangles coincide with given circumcenters.
+
+ Denote $A' =  C + E – D, B' = D + F – E, C' =  A+ E – F,$$D' =  F+ B – A, E' =  A + C – B, F' =  B+ D – C.$Then $A' – D'  =  C + E – D –  ( F+ B – A) = (A + C + E ) – (B+ D + F).$
+
+ Denote  $D' – A' = 2\vec V.$ 
+
+ Similarly we get $B' – E' = F' – C' =  D' – A'  \implies$$\triangle A'C'E' = \triangle D'F'B'.$
+
+ The translation vector maps $\triangle A'C'E'$ into $\triangle D'F'B'$ is $2\vec {V.}$$X = \frac {A+D}{2} =  \frac { (A+ E – F) + (D + F – E)}{2} =  \frac {C' + B'}{2} = \frac {E' + F'}{2},$
+
+ so $X$ is midpoint of $AD, B'C',$ and $E'F'.$ Symilarly $Y$ is the midpoint of $BE, A'F',$ and $C'D', Z$ is the midpoint of $CF, A'B',$ and $D'E'.$$Z + V =  \frac {A' + B'}{2}+ \frac {D' – A'}{2} =  \frac {B' + D'}{2} = Z'$ is the midpoint of $B'D'.$
+
+ Similarly $X' = X + V$  is the midpoint of $B'F',Y'= Y + V$  is the midpoint of $D'F'.$
+
+ Therefore $\triangle X'Y'Z'$ is the medial triangle of $\triangle B'D'F'.$
+
+ $\triangle XYZ$ is $\triangle X'Y'Z'$ translated on $– \vec {V}.$
+
+ It is known (see diagram) that circumcenter of triangle coincide with orthocenter of the medial triangle. Therefore  orthocenter $H$ of $\triangle XYZ$ is circumcenter of $\triangle B'D'F'$ translated on $– \vec {V}.$
+
+ It is the midpoint of segment $OO'$ connected circumcenters of $\triangle B'D'F'$ and $\triangle A'C'E'.$
+
+ According to the definition of points $A', C', E',$ quadrangles $ABCE', CDEA',$ and $AFEC'$ are parallelograms. Hence
+ \[AC' = FE, AE' = BC, CE' = AB, CA' = DE, EA' = CD, EC' = AF \implies\]
+ \[AC' \cdot AE' = CE' \cdot CA' = EA' \cdot EC' = AB \cdot DE \implies\] Power of points A,C, and E with respect circumcircle $\triangle A'C'E'$ is equal, hence distances between these points and circumcenter of $\triangle A'C'E'$ are the same. Therefore circumcenter  $\triangle ACE$ coincide with circumcenter  $\triangle A'C'E'.$
+
+ Similarly circumcenter of $\triangle BDF$ coincide with circumcenter of $\triangle B'D'F'.$
+
+ \textbf{vladimir.shelomovskii@gmail.com, vvsss}
+
+ 
+
+
+\end{enumerate}

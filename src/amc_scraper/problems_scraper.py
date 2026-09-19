@@ -15,7 +15,7 @@ from .config import *
 from .scraper import *
 
 def get_problems_from_source(s,vers,numprob,msg = True) :
-    content,problem_title,url = get_soup(s,'p',msg)
+    content,problem_title,url = get_soup(s,'p',numprob,msg)
     
     if content is None:
         print(f"Failed to get soup: {url}")

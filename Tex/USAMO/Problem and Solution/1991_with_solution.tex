@@ -1,0 +1,212 @@
+\section{USAMO 1991}
+        \begin{enumerate}
+        	\item (\textit{USAMO 1991}) In triangle $\, ABC, \,$ angle $\,A\,$ is twice angle $\,B,\,$ angle $\,C\,$ is obtuse, and the three side lengths $\,a,b,c\,$ are integers.  Determine, with proof, the minimum possible perimeter.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1991_1_Solution_Figure_1.png}
+                    \end{figure}
+                    (diagram by integralarefun)
+
+ After drawing the triangle, also draw the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector}{angle bisector} of $\angle A$, and let it intersect $\overline{BC}$ at $D$. Notice that $\triangle ADC\sim \triangle BAC$, and let $AD=x$. Now from similarity,
+ \[x=\frac{bc}{a}\]However, from the angle bisector theorem, we have 
+ \[BD=\frac{ac}{b+c}\]but $\triangle ABD$ is isosceles, so
+
+ 
+
+
+	\item (\textit{USAMO 1991}) For any nonempty set $\,S\,$ of numbers, let $\,\sigma(S)\,$ and $\,\pi(S)\,$ denote the sum and product, respectively, of the elements of $\,S\,$.  Prove that
+
+ \[\sum \frac{\sigma(S)}{\pi(S)} = (n^2 + 2n) - \left( 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} \right)  (n+1),\]
+where "$\Sigma$" denotes a sum involving all nonempty subsets $S$ of $\{1,2,3, \ldots,n\}$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let $N(m)$ denote the set $\{1, \dotsc, m\}$.  Since $\sigma(\varnothing)$, the empty sum, is equal to zero, and $\pi(\varnothing)$, the empty product, is equal to 1, the equation
+ \[\sum_{S \subseteq N(n)} \frac{\sigma(S)}{\pi(S)} = (n+1)^2 -1 - (n+1)\sum_{k=1}^n \frac{1}{k}\]is equivalent to the desired equation when $n >0$.  We will prove this equation, but first, we prove a lemma.
+
+ \textbf{Lemma.}  For all nonnegative integers $n$, $\sum_{S \subseteq N(n)} \frac{1}{\pi(S)} = n+1$.
+
+ \textit{Proof.} Evidently,
+ \[\sum_{S \subseteq N(n)} \frac{1}{\pi(S)} = \sum_{k=0}^n \sum_{S \subseteq N(n), |S| =k} \frac{1}{\pi(S)} .\]But the terms of this sum are the coefficients of the polynomial $P(x) = \prod_{k=1}^n (x + 1/k)$, and the sum of the coefficients of this polynomial is
+ \[P(1) = \prod_{k=1}^n(1 + 1/k) = \prod_{k=1}^n \frac{k+1}{k} = \frac{n+1}{1} = n+1,\]as desired.  $\blacksquare$
+
+ We now prove our equation by induction on $n$.  For $n=0$, we have the simple equation 0=0.
+
+ Suppose the equation holds when $n=a$.  Then
+ \begin{align*} \sum_{S \subseteq N(a+1)} \frac{\sigma(S)}{\pi(S)} &= \sum_{S \subseteq N(a)} \frac{\sigma(S)}{\pi(S)} + \sum_{S \subseteq N(a)} \frac{\sigma(S \cup \{a+1\})}{\pi(S \cup \{a+1\})} \\ &= \sum_{S \subseteq N(a)} \frac{\sigma(S)}{\pi(S)} + \sum_{S \subseteq N(a)} \frac{\sigma(S) + (a+1)}{(a+1) \cdot \pi(S)}  \\ &= \frac{a+2}{a+1} \sum_{S\subseteq N(a)} \frac{\sigma(S)}{\pi(S)} + \sum_{S \subseteq N(a)} \frac{1}{\pi(S)} . \end{align*}
+By inductive hypothesis,
+ \begin{align*} \frac{a+2}{a+1} \sum_{S \subseteq N(a)} \frac{\sigma(S)}{\pi(S)} &= \frac{a+2}{a+1} \left[ (a+1)^2 -1 - (a+1) \sum_{k=1}^a \frac{1}{k} \right] \\ &= (a+2)(a+1)  - \frac{a+2}{a+1} - (a+2) \sum_{k=1}^a \frac{1}{k} \\ &= (a+2)(a+1) - (a+2) \sum_{k=1}^{a+1} \frac{1}{k}, \end{align*}
+and by the lemma,
+ \[\sum_{S \subseteq N(a)} \frac{1}{\pi(S)} = a+1 .\]Since $(a+2)(s+1) = (a+3)(a+1) = (a+2)^2 -1$, our equation thus holds by induction.  Thus the problem statement is proven.  $\blacksquare$
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1991}) Show that, for any fixed integer $\,n \geq 1,\,$ the sequence
+
+ \[2, \; 2^2, \; 2^{2^2}, \; 2^{2^{2^2}}, \ldots  \pmod{n}\]
+is eventually constant. 
+
+
+ [The tower of exponents is defined by $a_1 = 2, \; a_{i+1} = 2^{a_i}$. Also $a_i \pmod{n}$ means the remainder which results from dividing $\,a_i\,$ by $\,n$.]
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Suppose that the problem statement is false for some integer $n \ge 1$.  Then there is a least $n$, which we call $b$, for which the statement is false.
+
+ Since all integers are equivalent mod 1, $b\neq 1$.
+
+ Note that for all integers $b$, the sequence $2^0, 2^1, 2^2, \dotsc$ eventually becomes cyclic mod $b$.  Let $k$ be the period of this cycle.  Since there are $k-1$ nonzero residues mod $b$. $1 \le k\le b-1 < b$.  Since
+ \[2, 2^2, 2^{2^2}, 2^{2^{2^2}}, \dotsc\]does not become constant mod $b$, it follows the sequence of exponents of these terms, i.e., the sequence
+ \[1, 2, 2^2, 2^{2^{2}}, \dotsc\]does not become constant mod $k$.  Then the problem statement is false for $n=k$.  Since $k<b$, this is a contradiction.  Therefore the problem statement is true.  $\blacksquare$
+
+ Note that we may replace 2 with any other positive integer, and both the problem and this solution remain valid.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We’ll prove by strong induction that for every natural number $n$, the sequence $a_1, a_2, \ldots$ is eventually constant. Since every term of the sequence is $0 \mathrm{\ mod\ } 1$, the claim is true when $n = 1$. Assuming that it’s true for $1, \ldots, n$, we’ll now show that it’s true for $n + 1$ as well.
+
+ Suppose first that $n + 1$ is odd. Since $\varphi(n + 1) < n + 1$, by our inductive hypothesis there exists an $m$ such that
+
+ 
+ \[a_m = a_{m + 1} = a_{m + 2} = \cdots \pmod{\varphi(n + 1)}.\]
+
+ Since $n + 1$ is coprime to powers of $2$, it follows by Euler’s Totient theorem that 
+
+ 
+ \[2^{a_m} = 2^{a_{m + 1}} = 2^{a_{m + 2}} = \cdots \pmod{n + 1},\]
+
+ or equivalently
+
+ 
+ \[a_{m + 1} = a_{m + 2} = a_{m + 3} = \cdots \pmod{n + 1},\]
+
+ which is what we wanted to show.
+
+ Now suppose that $n + 1$ is even. Write $n + 1 = 2^{k} \cdot s$, where $1 \leq s < n + 1$ is odd. The series must eventually be constant $\textrm{mod\ } 2^k$, since $a_m = 0 \textrm{\ mod\ } {2^k}$ for large enough $m$. And by our inductive hypothesis, the series must also eventually be constant $\textrm{mod\ } s$. So for large enough $m$, 
+
+ 
+ \[a_m = a_{m + 1} = a_{m + 2} = \cdots \pmod{2^k},\]
+ \[a_m = a_{m + 1} = a_{m + 2} = \cdots \pmod{s}.\]
+
+ Since $2^k$ and $s$ are coprime, these equations are also true modulo $2^k \cdot s = n + 1$. So
+
+ 
+ \[a_m = a_{m + 1} = a_{m + 2} = \cdots \pmod{n + 1},\]
+
+ which completes the proof.
+
+ 
+
+
+	\item (\textit{USAMO 1991}) Let $\, a =(m^{m+1} + n^{n+1})/(m^m + n^n), \,$ where $\,m\,$ and $\,n\,$ are positive integers.  Prove that $\,a^m + a^n \geq m^m + n^n$.
+
+
+ [You may wish to analyze the ratio $\,(a^N - N^N)/(a-N),$ for real $\, a \geq 0 \,$ and integer $\, N \geq 1$.]
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let us assume without loss of generality that $m\ge n$.  We then note that
+ \[m-a = \frac{m^{m+1} + m \cdot n^n}{m^m+n^n} - \frac{m^{m+1} - n^{n+1}}{m^m+n^n} = n^n \frac{m-n}{m^m+n^n} \qquad (*) .\]Similarly,
+ \[a-n = m^m \frac{m-n}{m^m+n^n} \qquad (**) .\]
+
+ We note that equations $(*)$ and $(**)$ imply that $n \le a \le m$.  Then $a/m \le 1 \le a/n$, so
+ \[\frac{1}{m} \sum_{i=0}^{m-1} (a/m)^i \le 1 \le \frac{1}{n} \sum_{i=0}^{n-1} (a/n)^i .\]Multiplying this inequality by $m^m n^n(m-n)/(m^m+n^n)$, we have
+ \[n^n \frac{(m-n)}{m^m+n^n} \sum_{i=0}^{m-1} a^i m^{m-1-i} \le m^m \frac{(m-n)}{m^m+n^n} \sum_{i=0}^{n-1} a^i n^{n-1-i} .\]It then follows that
+ \begin{align*} m^m - a^m &= (m-a) \sum_{i=0}^{m-1} a^i m^{m-1-i} = n^n \frac{m-n}{m^m+n^n} \sum_{i=0}^{m-1} a^i m^{m-1-i} \\ &\le m^m \frac{m-n}{m^m+n^n} \sum_{i=0}^{n-1} a^i n^{n-1-i} = (a-n) \sum_{i=0}^{n-1} a^i n^{n-1-i} \\ &= a^n - n^n . \end{align*}
+Rearranging this inequality, we find that $a^m + a^n \ge m^m + n^n$, as desired.  $\blacksquare$
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1991}) Let $\, D \,$ be an arbitrary point on side $\, AB \,$ of a given triangle $\, ABC, \,$ and let $\, E \,$ be the interior point where $\, CD \,$ intersects the external common tangent to the incircles of triangles $\, ACD \,$ and $\, BCD$. As $\, D \,$ assumes all positions between $\, A \,$ and $\, B \,$, prove that the point $\, E \,$ traces the arc of a circle.
+
+
+ 
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/USAMO_I_1991_5_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let the incircle of $ACD$ and the incircle of $BCD$ touch line $AB$ at points $D_a,D_b$, respectively; let these circles touch $CD$ at $C_a$, $C_b$, respectively; and let them touch their common external tangent containing $E$ at $T_a,T_b$, respectively, as shown in the diagram below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1991_5_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+ We note that
+ \[CE = CC_a - EC_a = CC_b - EC_b = \frac{CC_a + CC_b - (EC_a + EC_b)}{2} .\]On the other hand, since $EC_a$ and $ET_a$ are tangents from the same point to a common circle, $EC_a = T_aE$, and similarly $EC_b = ET_b$, so
+ \[EC_a + EC_b = T_aE + ET_b = T_a T_b .\]On the other hand, the segments $T_a T_b$ and $D_a D_b$ evidently have the same length, and $D_a D_b = D_aD + DD_b$, so $EC_a + EC_b = D_aD + DD_b$. Thus
+ \[CE = \frac{CC_a + CC_b - (EC_a + EC_b)}{2} = \frac{CC_a + CC_b - D_aD - DD_b}{2} .\]If we let $s_a$ be the semiperimeter of triangle $ACD$, then $CC_a = s_a - AD$, and $D_aD = s_a - AC$, so
+ \[CC_a - D_aD = (s_a - AD) - (s_a - AC) = AC - AD .\]Similarly,
+ \[CC_b - DD_b = BC - DB,\]so that
+ \begin{align*} CE &= \frac{CC_a + CC_b - D_aD - DD_b}{2} = \frac{AC + BC - (AD+DB)}{2} \\ &= \frac{AC + BC - AB}{2} . \end{align*}
+Thus $E$ lies on the arc of the circle with center $C$ and radius $(AB+BC-AB)/2$ intercepted by segments $CA$ and $CB$.  If we choose an arbitrary point $X$ on this arc and let $D$ be the intersection of lines $CX$ and $AB$, then $X$ becomes point $E$ in the diagram, so every point on this arc is in the locus of $E$. $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Define the same points as in the first solution.  First extend $T_aT_b$ to intersect $AB$ at a point $P$; without loss of generality let $A$ lie in between $B$ and $P$.  Then the incircle of $\triangle ACD$ is also the incircle of $\triangle PED$, while the incircle of $\triangle BCD$ is the $P$-excircle of $\triangle PED$.  It follows that $EC_a = C_bD$; denote this equality by $(*)$.
+
+ Now remark that
+ \[CC_a + CC_b = \frac{AC+AD-CD}2 + \frac{BC+DC-BD}2 = \frac{AC+BC-AB}2 + CD.\]Hence
+ \[CC_a + CC_b - CD = CC_a - C_bD \stackrel{(*)}= CC_a - C_aE = CE\]is a constant equal to $r := \frac{AC+BC-AB}2$, and so $C$ lies on the circle with center $C$ and radius $r$.
+
+ 
+
+
+\end{enumerate}

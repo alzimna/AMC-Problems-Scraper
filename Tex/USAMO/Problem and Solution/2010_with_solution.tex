@@ -1,0 +1,523 @@
+\section{USAMO 2010}
+        \begin{enumerate}
+        	\item (\textit{USAMO 2010}) Let $AXYZB$ be a convex pentagon inscribed in a semicircle of diameter $AB$. Denote by $P$, $Q$, $R$, $S$ the feet of the perpendiculars from $Y$ onto lines $AX$, $BX$, $AZ$, $BZ$, respectively.  Prove that the acute angle formed by lines $PQ$ and $RS$ is half the size of $\angle XOZ$, where $O$ is the midpoint of segment $AB$.
+
+
+ 
+
+
+
+\textbf{Solution 0 (play like a God)}
+
+Angles are directed mod 180 {don't worry}(take so that the solution can be applied to any configuration) Let the intersection of pq and rs is M.
+
+ $m\angle ARM=m\angle ZRS =m \angle ZYS =m\angle YZR = m\angle YZA = m \angle YXP = m \angle XYQ =m \angle XPQ = m \angle APM$ This implies APRM is cyclic So: $m \angle PMR = m \angle PAR =m \angle XAZ = \frac{m\angle XOZ}{2}$ and we are done. For any concern mail on harshsahu1098@gmail.com
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $\alpha = \angle BAZ$, $\beta = \angle ABX$.Since $XY$ is a chord of the circle with diameter $AB$,$\angle XAY = \angle XBY = \gamma$. From the chord $YZ$,we conclude $\angle YAZ = \angle YBZ = \delta$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2010_1_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+ Triangles $BQY$ and $APY$ are both right-triangles, and share theangle $\gamma$, therefore they are similar, and so the ratio $PY : YQ = AY : YB$. Now by \href{https://artofproblemsolving.com/wiki/index.php?title=Thales\%27\_theorem}{Thales' theorem} the angles $\angle AXB = \angle AYB = \angle AZB$ are all right-angles. Also, $\angle PYQ$,being the fourth angle in a quadrilateral with 3 right-angles isagain a right-angle.  Therefore $\triangle PYQ \sim \triangle AYB$ and$\angle YQP = \angle YBA = \gamma + \beta$.Similarly, $RY : YS = AY : YB$, and so $\angle YRS = \angle YAB = \alpha + \delta$.
+
+ Now $RY$ is perpendicular to $AZ$ so the direction $RY$ is $\alpha$ counterclockwise from the vertical, and since $\angle YRS = \alpha + \delta$ we see that $SR$ is $\delta$ clockwise from the vertical. (Draw an actual vertical line segment if necessary.)
+
+ Similarly, $QY$ is perpendicular to $BX$ so the direction $QY$ is $\beta$ clockwise from the vertical, and since $\angle YQP$ is $\gamma + \beta$ we see that $QY$ is $\gamma$ counterclockwise from the vertical.
+
+ Therefore the lines $PQ$ and $RS$ intersect at an angle $\chi = \gamma + \delta$. Now by the central angle theorem $2\gamma = \angle XOY$and $2\delta = \angle YOZ$, and so $2(\gamma + \delta) = \angle XOZ$,and we are done.
+
+ \textit{Note that $RTQY$ is a quadrilateral whose angles sum to 360°; can you find a faster approach using this fact?}
+
+ \textbf{Footnote} We can prove a bit more. Namely, the extensions of the segments$RS$ and $PQ$ meet at a point on the diameter $AB$ that is verticallybelow the point $Y$.
+
+ Since $YR = AY \sin(\delta)$ and is inclined $\alpha$ counterclockwisefrom the vertical, the point $S$ is $AY \sin(\delta) \sin(\alpha)$horizontally to the right of $Y$.
+
+ Now $AS = AY \cos(\delta)$, so $S$ is $AS \sin(\alpha) = AY \cos(\delta)\sin(\alpha)$ vertically above the diameter $AB$. Also,the segment $SR$ is inclined $\delta$ clockwise from the vertical,so if we extend it down from $S$ towards the diameter $AB$ it willmeet the diameter at a point which is$AY \cos(\delta)\sin(\alpha)\tan(\delta) = AY \sin(\delta)\sin(\alpha)$horizontally to the left of $S$. This places the intersection pointof $RS$ and $AB$ vertically below $Y$.
+
+ Similarly, and by symmetry the intersection point of $PQ$ and $AB$is directly below $Y$ on $AB$, so the lines through $PQ$ and $RS$meet at a point $T$ on the diameter that is vertically below $Y$.
+
+ \textbf{Footnote to the Footnote} The Footnote's claim is more easily proved as follows.
+
+ Note that because $\angle{QPY}$ and $\angle{YAB}$ are both complementary to $\beta + \gamma$, they must be equal. Now, let $PQ$ intersect diameter $AB$ at $T'$. Then $PYT'A$ is cyclic and so $\angle{YT'A} = 180^\circ - \angle{APY} = 90^\circ$. Hence $T'YSB$ is cyclic as well, and so we deduce that $\angle{YST'} = \angle{YBT'} = 90^\circ - \alpha - \delta = \angle{YSR}.$ Hence $S, R, T'$ are collinear and so $T = T'$. This proves the Footnote.
+
+ \textbf{Footnote to the Footnote to the Footnote} The Footnote's claim can be proved even more easily as follows.
+
+ Drop an altitude from $Y$ to $AB$ at point $T$.  Notice that $P, Q, T$ are collinear because they form the Simson line of $\triangle AXB$ from $Y$.  Also notice that $P, Q, T$ are collinear because they form the Simson line of $\triangle AZB$ from $Y$.  Since $T$ is at the diameter $AB$, lines $PQ$ and $SR$ must intersect at the diameter.
+
+ \textbf{Footnote to the Fourth Power} There is another, simpler solution using Simson lines. Can you find it?
+
+ \textbf{Operation Diagram} Of course, as with any geometry problem, DRAW A HUGE DIAGRAM spanning at least one page. And label all your right angles, noting rectangles $PXQY$ and $YSZR$. It looks like there are a couple of key angles we need to diagram. Let's take $\angle{ZAB} = \alpha, \angle{XBA} = \beta, \angle{YAZ} = \angle{YBZ} = \delta$. From there $\angle{XOZ}=180^\circ - \angle{XOA}-\angle{ZOB}=180-2(\beta + \alpha)$.
+
+ Move on to the part about the intersection of $PQ$ and $RS$. Call the intersection $J$. Note that by Simson Lines from point $Y$ to $\triangle{ABX}$ and $\triangle{AZB}$, $YJ$ is perpendicular to $AB$ and $J$ lies on $AB$. Immediately note that we are trying to show that $\angle{PJS} = 90 - \beta - \alpha$. 
+
+ It suffices to show that referencing quadrilateral $QR~J$, where $~$ represents the intersection of $XB, AZ$, we have reflex $\angle{Q~R} + \angle{BQJ} + \angle{ARJ} = 270 + \alpha + \beta$. Note that the reflex angle is $180^\circ + \angle{A~X} = 180^\circ + (90^\circ - \angle{XA*}) = 270^\circ - ((90 - \beta) - \alpha) = 180 ^\circ + \alpha + \beta$, therefore it suffices to show that $\angle{BQJ} + \angle{ARJ} = 90^\circ$. To make this proof more accessible, note that via (cyclic) rectangles $PXQY$ and $YSZR$, it suffices to prove $\angle{YPJ} + \angle{YSJ} = 90^\circ$.
+
+ Note $\angle{YPJ} = \angle{YPQ} = \angle{YXQ} = \angle{YXB} = \angle{YAB} = \alpha + \delta$.Note $\angle{YSJ} = \angle{YSR} = \angle{YZR} = \angle{YZA} = \angle{YBA} = \angle{YBX} + \angle{XBA} = ((90^\circ - \alpha) - \delta - \beta) + \beta = 90^\circ - \alpha - \delta$, which completes the proof.
+
+ \textbf{Footnote to Operation Diagram} For reference/feasibility records: took expiLnCalc ~56 minutes (consecutively).During the problem expiLnCalc realized that the inclusion of $\delta$ was necessary when trying to show that $\angle{YSJ}+\angle{YPJ}=90^\circ$. Don't be afraid to attempt several different strategies, and always be humble!
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2010_1_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Let $T$ be the foot of the perpendicular from $Y$ to $\overline{AB}$, let $O$ be the center of the semi-circle.
+
+ Since we have a semi-circle, if we were to reflect it over $\overline {AB}$, we would have a full circle, with $\triangle{AXB}$ and $\triangle{AZB}$ inscribed in it. Now, notice that $Y$ is a point on that full circle, so we can say that $T$ lies on the Simson Line $\overline{PQ}$ from $Y$ to $\triangle AXB$ and that it also lies on the Simson line $\overline {RS}$ from $Y$ to $\triangle AZB$. Thus, $T$ lies on two distinct lines in a plane, which means that $T=\overline{PQ}\cap\overline{RS}$. Therefore, it suffices to show that $\angle PTS=\frac{1}{2}\angle XOZ$. 
+
+ Since $m\angle YTA + m\angle YPA = 90^\circ + 90^\circ = 180^\circ$ and $m \angle YTB + m \angle YSB = 90^\circ + 90^\circ = 180^\circ$, we know that $TAPY$ and $TBSY$ are cyclic quadrilaterals. 
+
+ We use this fact to get 
+ \[\angle PTS=\angle PTY+\angle YTS=\angle PAY+\angle YBS=\angle XAY+\angle YBZ. \space \space (1)\] \\Now note that $\angle XAY$ is the inscribed angle of minor arc $\overset{\huge\frown}{PY}$, and $\angle XOY$ is the central angle of minor arc $\overset{\huge\frown}{AB}$, so $\angle XAY = \frac{\overset{\huge\frown}{PY}}{2} = \frac{\angle XOY}{2}$. Similarly, $\angle YBZ = \frac{\overset{\huge\frown}{YZ}}{2}=\frac{\angle YOZ}{2}$. Thus we can say 
+ \[\angle XAY + \angle YBZ = \frac{\angle XOY}{2} + \frac{\angle YOZ}{2}=\frac{\angle XOY + \angle YOZ}{2} = \frac{\angle XOZ}{2}. \space \space (2)\] 
+
+ 
+Combining statements $(1)$ and $(2)$, we can say that $\angle PTS = \frac{\angle XOZ}{2}$, as desired. $\square$ 
+
+ 
+
+
+	\item (\textit{USAMO 2010}) There are $n$ students standing in a circle, one behind the other. The students have heights $h_1<h_2<\dots <h_n$. If a student with height $h_k$ is standing directly behind a student with height $h_{k-2}$ or less, the two students are permitted to switch places. Prove that it is not possible to make more than $\binom{n}{3}$ such switches before reaching a position in which no further switches are possible.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We adopt the usual convention that $\binom{i}{j} = 0$ unless $0 \le j \le i$.With this, the binomial coefficients are defined for all integers via therecursion:
+
+ 
+ \[\binom{0}{0} = 1, \quad \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}\]
+
+ 
+
+ It is clear that the circle is oriented and all the students are facing in same direction (clockwise or counterclockwise). We'll call this direction \textit{forward}.
+
+ In any switch consider the taller student to have moved \textit{forward} and the shorter student to have remained \textit{stationary}. No backward motion is allowed. With this definition of forward motion, the first two students with heights $h_1$ and $h_2$ are always stationary, while other students potentially move past them.
+
+ For $k > 2$, the student with height $h_k$ can never switch places with the student with height $h_{k-1}$, and the former can make at most $k-2$ more forward moves than the latter (when all the students of heights $h_1, \ldots h_{k-2}$ are between $h_k$ and $h_{k-1}$ in the forward direction).
+
+ Therefore, if the $(k-1)^{\mathrm{st}}$ student can make $s_{k-1}$ forward steps, the $k^{\mathrm{th}}$ student can make at most $s_{k-1} + k - 2$ steps. With $s_1 = s_2 = 0$ and $s_3 = 0 + (3-2) = 1$, and a constant second difference of $1$, we quickly see that $s_k = \binom{k-1}{2}$.
+
+ With $n$ students in all, the total number of steps is therefore at most $\sum_{i=3}^{n}\binom{i-1}{2} = \binom{n}{3}$, by the \href{https://artofproblemsolving.com/wiki/index.php?title=Hockey\_Stick\_Theorem}{Hockey Stick Theorem}
+
+ 
+
+
+
+\textbf{Solution 2}
+
+WLOG, let $h_k=k$.  Now, we find the end arrangement with the most switches possible.  We claim that the arrangement will be $n,n-1,n-2,\dots ,1$, where the left to right direction is the "backwards" direction.  To prove this makes the most switches, we show that there is always at least one more switch that can be done for any other arrangement.  This is elementary to show.  There will always be one height $x$ such that the number to its right is $2$ less than $x$, unless every number has $x-1$ to the right of $x$ (other than $2$ and $1$).  The exception occurs at our claim, so our claim is proven.  Now we want to find the maximum ways we can "undo" our arrangement.  But undoing a switch is just doing a switch from our arrangement in the opposite direction.  So, the start arrangement with the most possible switches is the reverse of the end arrangement or $1,2,3,\dots ,n$.We want to find how many switches must be done to get from the start arrangement to the end arrangement.  We start by switching $n$ around until it cannot be switched anymore.  We find that we can switch $n$ $n-2$ times.  When we are switching (or, in other words, moving to the right) the number $k$, we can switch it $k-2$ times before it is to the left of $k-1$.  But then we can also switch each of $k+1,k+2,\dots ,n$ (in that order) $k-2$ times before they get stopped again.  Let $x=n-k+2$.  Then, the sum of the switches is $\sum\limits_{x=2}^{n-1} (n-x)(x-1)=\sum\limits_{x=1}^{n} (n-x)(x-1)$.
+
+ Rearranging and summing, we get 
+ \[\sum\limits_{x=1}^{n} x(n+1)-\sum\limits_{x=1}^{n} n -\sum\limits_{x=1}^{n} x^2=\frac{n(n+1)^2}2-n^2-\frac{n(n+1)(2n+1)}6=\frac{3n(n^2+1)}6-\frac{n(n+1)(2n+1)}6=\frac{n(n^2-3n+2)}6=\frac{n(n-1)(n-2)}{3!}=\binom{n}{3}\]
+
+ \textbf{Comment} This process of switching is very similar to Bubble Sort, except that the terms must be in consecutive decreasing order, and wraps around $2,1,n,n-1\dots$. This answer seems to disagree, though, because the worst case efficiency is $\mathcal{O}(n^2)$, not $\mathcal{O}(n^3)$.
+
+ \href{https://en.wikipedia.org/wiki/Bubble\_sort}{https://en.wikipedia.org/wiki/Bubble\_sort}
+
+ 
+
+
+	\item (\textit{USAMO 2010}) The 2010 positive numbers $a_1, a_2, \ldots , a_{2010}$ satisfy the inequality $a_ia_j\leq i+j$ for all distinct indices $i, j$. Determine, with proof, the largest possible value of the product $a_1a_2\ldots a_{2010}$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+The largest possible value is
+ \[\prod_{i=1}^{1005}(4i-1) = 3\times 7 \times \ldots \times 4019.\]
+
+ \textbf{Proof} No larger value is possible, since for each consecutive pair of elements:$(a_{2i-1},a_{2i}), 1\le i \le 1005$, the product is at most$(2i-1) + 2i = 4i - 1$, and so the product of all the pairs is at most:
+
+ 
+ \[\prod_{i=1}^{1005}(4i-1).\]
+
+ 
+
+ If we can demonstrate a sequence in which for all $1 \le i \le 1005$ the product$a_{2i-1}a_{2i} = 4i-1$, and all the inequalities are satisfied, the aboveupper bound will be achieved and the proof complete.
+
+ We will construct sequences of an arbitrarily large even length $2n \ge 4$,in which:
+
+ 
+ \[\begin{cases}   a_ia_j = i+j = 2i+1 & j=i+1, \\   a_ia_j = i+j = 2n-2 & j = i+2 = 2n, \\   a_ia_j < i+j            & i \ne 2n-2, \mbox{ and } i < j-1. \end{cases}\]
+
+ 
+
+ Given $a_1$, from the equations $a_ia_{i+1} = 2i+1,\; 1\le i\le 2n-1$,we obtain the whole sequence recursively:$a_1 = a_1,\; a_2 = 3/a_1,\; a_3 = 5/a_2 = 5a_1/3,\; a_4 = 7/a_3 = (3\cdot 7)/(5a_1) \ldots.$ And as a result:
+
+ 
+ \[a_{i+2} = a_i \cdot \frac{2i+3}{2i+1}\quad 1 \le i \le 2n-2.\]
+
+ 
+
+ The same equations $a_ia_{i+1} = 2i+1$ can be used to compute thewhole sequence from any other known term.
+
+ We will often need to compare fractions in which the numerator and denominatorare both positive, with fractions in which a positive term is added to both.Suppose $p, q, r$ are three positive real numbers, then:
+
+ 
+ \begin{align*} p &> q \implies & \frac{p+r}{q+r} &< \frac{p}{q} \\ p &< q \implies & \frac{p+r}{q+r} &> \frac{p}{q} \\    &  \mbox{and always} & \frac{p+r}{q} &> \frac{p}{q} \end{align*}
+
+
+ 
+
+ Returning to the problem in hand, for $i < j$, $a_ia_j \le i+j \implies a_ia_{j+2} < i+j+2$.If it were otherwise, we would have for some $i < j$:
+
+ 
+ \[\frac{a_{j+2}}{a_j} \ge \frac{i+j+2}{i+j} > \frac{j+j+2}{j+j} = \frac{2j+2}{2j} > \frac{2j+3}{2j+1} = \frac{a_{j+2}}{a_j},\]
+
+ 
+
+ so our assumption is impossible.
+
+ Therefore, we need only verify inequalities with an index difference of$1$ or $2$, as these imply the rest.
+
+ Now, when the indices differ by $1$ we have ensured equality (andhence the desired inequalities) by construction. So, we only needto prove the inequalities for successive even index and successiveodd index pairs, i.e. for every index $i > 2$, prove $a_{i-2}a_i \le 2i-2$.
+
+ We now compare $a_ia_{i+2}/(2i+2)$ with $a_{i+2}a_{i+4}/(2i+6)$. By ourrecurrence relations:
+
+ 
+ \begin{align*}   \frac{a_{i+2}a_{i+4}}{2i+6}     &= \frac{a_ia_{i+2}}{2i+2} \cdot          \frac{2i+2}{2i+6} \cdot          \frac{a_{i+4}}{a_{i+2}}\cdot          \frac{a_{i+2}}{a_i} \\     &= \frac{a_ia_{i+2}}{2i+2}\cdot          \frac{i+1}{i+3}\cdot          \frac{2i+7}{2i+5}\cdot          \frac{2i+3}{2i+1} \\     &= \frac{a_ia_{i+2}}{2i+2}\cdot          \frac{(i+1)(2i+7)(2i+3)}{(i+3)(2i+5)(2i+1)} \\     &= \frac{a_ia_{i+2}}{2i+2}\cdot          \frac{4i^3+24i^2+41i+21}{4i^3+24i^2+41i+15} \\     &= \frac{a_ia_{i+2}}{2i+2}\cdot          \left(1+\frac{6}{4i^3+24i^2+41i+15}\right) \\     &> \frac{a_ia_{i+2}}{2i+2}. \end{align*}
+
+
+ 
+
+ So, for both odd and even index pairs, the strict inequality$a_ia_{i+2} < 2i+2$ follows from $a_{i+2}a_{i+4} \le 2i+6$and we need only prove the inequalities $a_{2n-3}a_{2n-1} \le 4n-4$ and$a_{2n-2}a_{2n} \le 4n-2$, the second of which holds (as an equality)by construction, so only the first remains.
+
+ We have not yet used the equation $a_{2n-2}a_{2n} = 4n-2$, with thiswe can solve for the last three terms (or equivalently their squares)and thus compute the whole sequence. From the equations:
+
+ 
+ \begin{align*}   a_{2n-1}a_{2n} &= 4n-1 \\   a_{2n-2}a_{2n} &= 4n-2 \\   a_{2n-2}a_{2n-1} &= 4n-3 \end{align*}
+
+
+ 
+
+ multiplying any two and dividing by the third, we get:
+
+ 
+ \begin{align*}   a_{2n}^2     &= \frac{(4n-2)(4n-1)}{4n-3} \\   a_{2n-1}^2  &= \frac{(4n-3)(4n-1)}{4n-2} \\   a_{2n-2}^2  &= \frac{(4n-3)(4n-2)}{4n-1} \end{align*}
+
+
+ 
+
+ from which,
+
+ 
+ \[a_{2n-3}^2 = \frac{(4n-5)^2}{a_{2n-2}^2} = \frac{(4n-5)^2(4n-1)}{(4n-3)(4n-2)}\]
+
+ 
+
+ With the squares of the last four terms in hand, we can now verifythe only non-redundant inequality:
+
+ 
+ \begin{align*} a_{2n-3}^2a_{2n-1}^2   &= \frac{(4n-5)^2}{a_{2n-2}^2}a_{2n-1}^2 \\   &= \left(\frac{(4n-5)(4n-1)}{4n-2}\right)^2 \\   &= \left(\frac{16n^2 -24n + 5}{4n-2}\right)^2 \\   &< \left(\frac{16n^2 -24n + 8}{4n-2}\right)^2 \\   &= (4n-4)^2. \end{align*}
+
+
+ 
+
+ The inequality above follows because the numerator and denominator are both positive for $n > 1$.
+
+ This completes the construction and the proof of all the inequalities,which miraculously reduced to just one inequality for the last pairof odd indices.
+
+ \textbf{Additional observations} If we choose a different first term, say $a_1' = M\cdot a_1$, thesequence $a_i'$ will have the form:
+
+ 
+ \begin{align*} 	a_{2i-1}' &= Ma_{2i-1} \\ 	a_{2i}' &= \frac{a_{2i}}{M} \end{align*}
+
+
+ 
+
+ the same holds if we have a longer sequence, at every index of theshorter sequence, the longer sequence will be a constant multiple(for all the odd terms) or dividend (for all the even terms)of the corresponding term of shorter sequence.
+
+ We observe that our solution is not unique, indeed for any $k>0$,the same construction with $2n+2k$ terms, truncated to just thefirst $2n$ terms, yields a sequence $a'_i$ which also satisfies allthe required conditions, but in this case $a'_{2n-2}a'{2n} < 4n-2$.
+
+ We could have constructed this alternative solution directly,by replacing the right hand side in the equation $a_{2n-2}a_{2n} = 4n-2$with any smaller value for which we still get $a_{2n-3}a_{2n-1} \le 4n-4$.
+
+ In the modified construction, for some constant $M > 1$, we have:
+
+ 
+ \begin{align*} 	a_{2n}^2 &= \frac{1}{M}\cdot \frac{(4n-2)(4n-1)}{4n-3} \\ 	a_{2n-1}^2 &= M\cdot \frac{(4n-3)(4n-1)}{4n-2} \\ 	a_{2n-2}^2 &= \frac{1}{M}\cdot \frac{(4n-3)(4n-2)}{4n-1} \end{align*}
+
+
+ 
+
+ and so:
+
+ 
+ \begin{align*} 	a_{2n-3}^2a_{2n-1}^2 &= \frac{(4n-5)^2}{a_{2n-2}^2}a_{2n-1}^2 \\ 	    &= M^2\left(\frac{(4n-5)(4n-1)}{4n-2}\right)^2 \\ 	    &= M^2\left(\frac{16n^2 -24n + 5}{4n-2}\right)^2 \\ 	    &= M^2\left(\frac{16n^2 -24n + 5}{16n^2 -24n + 8}\right)^2 		    \cdot \left(\frac{16n^2 -24n + 8}{4n-2}\right)^2 \\ 	    &= M^2\left(\frac{16n^2 -24n + 5}{16n^2 -24n + 8}\right)^2 		\cdot (4n-4)^2. \end{align*}
+
+
+ 
+
+ which satisfies the required inequality provided:
+
+ 
+ \begin{align*}     M^2 &\le \frac{16n^2 -24n + 8}{16n^2 -24n + 5} \\         &= \frac{(4n-4)(4n-2)}{(4n-5)(4n-1)} = M_{\mathrm{max}}^2. \end{align*}
+
+
+ 
+
+ The ratio $M_{\mathrm{max}}$, between the largest and smallestpossible value of $a_{2n-3}$ is in fact the ratio between the largest andsmallest values of $a_1$ that yield a sequence that meets theconditions for at least $2n$ terms.
+
+ In the $n=2$ case, the equation for $a_{2n-3}$ gives: $a_1^2 = \frac{21}{10}$. We will next consider what happens to $a_1^2$, andthe sequence of squares in general, as $n$ increases.
+
+ Let $A_{n,2i-1}, A_{n,2i}$ denote the $i^{\mathrm{th}}$ odd andeven terms, respectively, of the unique sequence which satisfies ouroriginal equations and has $2n$ terms in total.Let $A_{n+1,2i-1}, A_{n+1,2i}$ be the odd and even termsof the solution with $2n+2$ terms. We already noted that theremust exist a constant $M_n$ (that depends on $n$, but not on $i$),such that:
+
+ 
+ \[\begin{cases} 	A_{n+1,2i-1} = M_n\cdot A_{n,2i-1},& 1 \le i \le n \\ 	A_{n+1,2i} = \dfrac{A_{n,2i}}{M_n},& 1 \le i \le n \end{cases}\]
+
+ 
+
+ This constant is found explicitly by comparing the squares of the lastterm $A_{n,2n}$ of the solution of length $2n$ with the square ofthe third last term $A_{n+1,2n}$ of the solution of length $2n+2$:
+
+ 
+ \begin{align*} 	(1/M_n)^2 &= \frac{A_{n+1,2n}^2}{A_{n,2n}^2} \\ 	      &= \frac{(4n+1)(4n+2)}{4n+3} \cdot \frac{4n-3}{(4n-2)(4n-1)} \\ 	      &= \frac{32n^3 - 14n - 3}{32n^3 - 14n + 3} \end{align*}
+
+
+ 
+
+ Clearly $M_n > 1$ for all positive $n$, and so for fixed $i$, theodd index terms $A_{n,2i-1}$ strictly increase with $n$, whilethe even index terms $A_{n,2i}$ decrease with $n$.
+
+ Therefore, for $n \ge 2$,
+
+ 
+ \[A_{n,1}^2 = \frac{21}{10} \prod_{k=2}^{n-1} M_k^2 =     \frac{21}{10} \cdot       \prod_{k=2}^{n-1} 	\frac{(k+\frac{3}{4})(k-\frac{1}{2})(k-\frac{1}{4})} 	     {(k-\frac{3}{4})(k+\frac{1}{2})(k+\frac{1}{4})}\]
+
+ 
+
+ The product converges to a finite value even if taken infinitelyfar, and we can conclude (by a simple continuity argument) thatthere is a unique infinite positive sequence $A_\omega$, in which$A_{\omega,i}A_{\omega,i+1} = 2i+1$, that satisfies all theinequalities $A_{\omega,i}A_{\omega,j} < i+j,\; i \le j - 2$.  Thesquare of the first term of the infinite sequence is:
+
+ 
+ \begin{align*} A_{\omega,1}^2   &=     \frac{21}{10} \cdot \lim_{n \to \infty}       \prod_{k=2}^{n-1} 	\frac{(k+\frac{3}{4})(k-\frac{1}{2})(k-\frac{1}{4})} 	     {(k-\frac{3}{4})(k+\frac{1}{2})(k+\frac{1}{4})} \\   &=     \frac{21}{10} \cdot \lim_{n \to \infty}       \left(       \frac{\Gamma(\frac{5}{4})  \Gamma(\frac{5}{2})  \Gamma(\frac{9}{4})} 	   {\Gamma(\frac{11}{4}) \Gamma(\frac{3}{2})  \Gamma(\frac{7}{4})}\cdot       \frac{\Gamma(n+\frac{3}{4})\Gamma(n-\frac{1}{2})\Gamma(n-\frac{1}{4})} 	   {\Gamma(n-\frac{3}{4})\Gamma(n+\frac{1}{2})\Gamma(n+\frac{1}{4})}       \right) \\   &=     \frac{1}{4} \cdot \frac{\Gamma^2(\frac{1}{4})}{\Gamma^2(\frac{3}{4})} \cdot       \lim_{n \to \infty} 	\frac{\Gamma(n+\frac{3}{4})\Gamma(n-\frac{1}{2})\Gamma(n-\frac{1}{4})} 	     {\Gamma(n-\frac{3}{4})\Gamma(n+\frac{1}{2})\Gamma(n+\frac{1}{4})} \\   &= \frac{1}{4} \cdot \frac{\Gamma^2(\frac{1}{4})}{\Gamma^2(\frac{3}{4})}      \cdot 1 \quad \mbox{(Stirling's approximation)}\\   &= \frac{\Gamma^4(\frac{1}{4})}{8\pi^2}     = \frac{\pi}{\mathrm{AGM}^2(\sqrt{2}, 1)}     \approx 2.1884396152264766\ldots \end{align*}
+
+
+ 
+
+ In summary, if we set $a_1 = \frac{\sqrt{\pi}}{\mathrm{AGM}(\sqrt{2}, 1)}$,and then recursively set $a_{i+1} = (2i + 1)/a_i$, we get an infinitesequence that, for all $n \ge 1$, yields the maximum possible product$a_1a_2\cdots a_{2n}$, subject to the conditions $a_ia_j \le i+j,\; 1 \le i < j \le 2n$.
+
+ 
+
+
+	\item (\textit{USAMO 2010}) Let $ABC$ be a triangle with $\angle A=90^{\circ}$. Points $D$ and $E$ lie on sides $AC$ and $AB$, respectively, such that $\angle ABD=\angle DBC$ and $\angle ACE=\angle ECB$. Segments $BD$ and $CE$ meet at $I$. Determine whether or not it is possible for segments $AB$, $AC$, $BI$, $ID$, $CI$, $IE$ to all have integer side lengths.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We know that angle $BIC = 135^{\circ}$, as the other two angles in triangle $BIC$ add to $45^{\circ}$. Assume that only $AB, AC, BI$, and $CI$ are integers. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on triangle BIC,
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2010_4_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+ $BC^2 = BI^2 + CI^2 - 2BI\cdot CI \cdot \cos 135^{\circ}$. Observing that $BC^2 = AB^2 + AC^2$ is an integer and that $\cos 135^{\circ} = -\frac{\sqrt{2}}{2},$ we have
+
+ 
+ \[BC^2 - BI^2 - CI^2 = BI\cdot CI\cdot \sqrt{2}\]
+
+ 
+
+ and therefore,
+
+ 
+ \[\sqrt{2} = \frac{BC^2 - BI^2 - CI^2}{BI\cdot CI}\]
+
+ 
+
+ The LHS ($\sqrt{2}$) is irrational, while the RHS is the quotient of the division of two integers and thus is rational. Clearly, there is a contradiction. Therefore, it is impossible for $AB, AC, BI$, and $CI$ to all be integers, which invalidates the original claim that all six lengths are integers, and we are done.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The answer is no.
+
+ Suppose otherwise. It is easy to see (through simple angle chasing) that $\angle DIC=45^{\circ}$. Also, since $I$ is the incenter, we have $\angle IAC = 45^{\circ}$. Using the Law of Cosines, we have 
+ \[CD^2=IC^2+ID^2-\sqrt{2}(IC)(ID),\] so that $CD$ is irrational. But $\triangle IAC \sim \triangle DIC$, thus $IC^2=CD\cdot AC$, implying that $CD$ is rational, contradiction. $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The result can be also proved without direct appeal to trigonometry,via just the angle bisector theorem and the structure of Pythagoreantriples. (This is a lot more work).
+
+ A triangle in which all the required lengths are integers exists if andonly if there exists a triangle in which $AB$ and $AC$ arerelatively-prime integers and the lengths of the segments $BI, ID, CI, IE$ are all rational(we divide all the lengths by the $\gcd(AB, AC)$ orconversely multiply all the lengths by the least common multipleof the denominators of the rational lengths).
+
+ Suppose there exists a triangle in which the lengths $AB$ and $AC$ arerelatively-prime integers and the lengths $IB, ID, CI, IE$ are all rational.
+
+ Since $CE$ is the bisector of $\angle ACB$, by the angle bisectortheorem, the ratio $IB : ID = CB : CD$, and since $BD$ is thebisector of $\angle ABC$, $CB : CD = (AB + BC) : AC$. Therefore,$IB : ID = (AB + BC) : AC$. Now $IB : ID$ is by assumption rational,so $(AB + BC) : AC$ is rational, but $AB$ and $AC$ are assumed integersso $BC : AC$ must also be rational. Since $BC$ is the hypotenuse ofa right-triangle, its length is the square root of an integer,and thus either an integer or irrational, so $BC$ must be an integer.
+
+ With $AB$ and $AC$ relatively-prime, we conclude that the sidelengths of $\triangle ABC$ must be a Pythagorean triple: $(2pq, p^2 - q^2, p^2 + q^2)$, with $p > q$ relatively-prime positive integersand $p+q$ odd.
+
+ Without loss of generality, $AC = 2pq, AB = p^2 - q^2, BC = p^2+q^2$.By the angle bisector theorem,
+
+ 
+ \begin{align*} AE &= \dfrac{AB \cdot AC}{AC + CB} = \dfrac{2pq(p^2-q^2)}{p^2 + q^2 + 2pq}    = \dfrac{2pq(p-q)}{p+q} \end{align*}
+
+
+ 
+
+ Since $\triangle CAE$ is a right-triangle, we have:
+
+ 
+ \begin{align*}   CE^2 &= AC^2 + AE^2        = 4p^2q^2 + \left(\dfrac{2pq(p-q)}{p+q}\right)^2        = 4p^2q^2\left[1 + \left(\dfrac{p-q}{p+q}\right)^2\right] \\        &= \frac{4p^2q^2}{(p+q)^2}\left[(p+q)^2 + (p-q)^2\right]        = \frac{4p^2q^2}{(p+q)^2}(2p^2 + 2q^2) \end{align*}
+
+
+ 
+
+ and so $CE$ is rational if and only if $2p^2 + 2q^2$ is a perfect square.
+
+ Also by the angle bisector theorem,
+
+ 
+ \begin{align*} AD &= \dfrac{AB \cdot AC}{AB + BC} = \dfrac{2pq(p^2-q^2)}{p^2 + q^2 + p^2 - q^2}     = \dfrac{q(p^2-q^2)}{p} \end{align*}
+
+
+ 
+
+ and therefore, since $\triangle DAB$ is a right-triangle, we have:
+
+ 
+ \begin{align*}   BD^2 &= AB^2 + AD^2        = (p^2-q^2)^2 + \left(\dfrac{q(p^2-q^2)}{p}\right)^2 \\        &= (p^2-q^2)^2\left[1 + \frac{q^2}{p^2}\right]        = \frac{(p^2-q^2)^2}{p^2}(p^2 + q^2) \end{align*}
+
+
+ 
+
+ and so $BD$ is rational if and only if $p^2 + q^2$ is a perfect square.
+
+ Combining the conditions on $CE$ and $BD$, we see that$2p^2+2q^2$ and $p^2+q^2$ must both be perfect squares. If it were so,their ratio, which is $2$, would be the square of a rational number,but $\sqrt{2}$ is irrational, and so the assumed triangle cannot exist.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We proceed by contradiction.
+
+ FTSOC, let $AB, BI, ID$ have integer lengths. Then $BD = BI + ID \in \mathbb{Z}$ as well. By trigonometry, 
+ \[BD = \frac{AB}{\cos{(\frac{\angle ABC}{2})}}.\]Rearranging we find $\cos{(\frac{\angle ABC}{2})} = \frac{AB}{BD} \in \mathbb{Q}$. As $0 < \angle ABC < \frac{\pi}{2}$ so $0 < \frac{\angle ABC}{2} < \frac{\pi}{4}$ but there are no possible angles in the interval that result in a rational cosine by Niven's theorem. So we have contradiction.
+
+ 
+
+
+	\item (\textit{USAMO 2010}) Let $q = \dfrac{3p-5}{2}$ where $p$ is an odd prime, and let
+
+
+ 
+
+ \[S_q =    \frac{1}{2\cdot 3 \cdot 4} +   \frac{1}{5\cdot 6 \cdot 7} + \cdots +   \frac{1}{q\cdot (q+1) \cdot (q+2)}.\]
+
+
+ 
+
+
+ Prove that if $\dfrac{1}{p}-2S_q = \dfrac{m}{n}$ for relatively prime integers
+$m$ and $n$, then $m-n$ is divisible by $p$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Since $p$ is an odd prime, $p = 2r + 1$, for a suitable positive integer $r$, and consequently $q = 3r - 1$.
+
+ The partial-fraction decomposition of the general term of $S_q$ is:
+
+ 
+ \begin{align*} \frac{1}{(3k-1)3k(3k+1)} &= \frac{1}{2}\left(\frac{1}{3k-1} - \frac{2}{3k} + \frac{1}{3k+1}\right) \\ &= \frac{1}{2}\left(\frac{1}{3k-1} + \frac{1}{3k} - \frac{1}{k} + \frac{1}{3k+1}\right) \\ &= \frac{1}{2}\left[\left(\frac{1}{3k-1} + \frac{1}{3k} + \frac{1}{3k+1}\right) - \frac{1}{k}\right], \end{align*}
+
+
+ 
+
+ therefore
+
+ 
+ \begin{align*} \frac{1}{p} - 2S_q &= \frac{1}{2r+1} - \left(\sum_{k=2}^{3r+1}\frac{1}{k} - \sum_{k=1}^{r} \frac{1}{k}\right) \\ &= \frac{1}{2r+1} - \left[\left(\sum_{k=r+1}^{3r+1}\frac{1}{k}\right)- 1\right] \\ &= 1 - \left(\sum_{k=r+1}^{2r}\frac{1}{k} + \sum_{k=2r+2}^{3r+1}\frac{1}{k}\right) \\ &= 1 - \sum_{k=1}^{r}\left(\frac{1}{(2r+1) - k} + \frac{1}{(2r+1) + k}\right) \\ &= 1 - \sum_{k=1}^{r}\frac{2p}{(p - k)(p + k)} \\ &= 1 - \frac{a}{b} = \frac{b - a}{b} \end{align*}
+
+
+ 
+
+ with $a$ and $b$ positive relatively-prime integers.
+
+ Since $r < p$ and $p$ is a prime, in the final sum all the denominators are relatively prime to $p$, but all the numerators are divisible by $p$, and therefore the numerator $a$ of the reduced fraction $\frac{a}{b}$ will be divisible by $p$. Since the sought difference $m - n = (b-a) - b = -a$, we conclude that $p$ divides $m-n$ as required.
+
+ \textbf{Alternative Calculation} We can obtain the result in a slightly different way:
+
+ 
+ \begin{align*} \frac{1}{p} - 2S_q &= \frac{1}{2r+1} - \left(\sum_{k=2}^{3r+1}\frac{1}{k} - \sum_{k=1}^{r} \frac{1}{k}\right) \\ &= \frac{1}{2r+1} - \left(\sum_{k=r+1}^{3r+1}\frac{1}{k} - 1\right) \\ &= 1 - \left(\sum_{k=r+1}^{2r}\frac{1}{k} + \sum_{k=2r+2}^{3r+1}\frac{1}{k}\right) \end{align*}
+
+
+ 
+
+ In the above sum the denominators of the fractions represent each non-zero remainder $\pmod p$ exactly once. Multiplying all the denominators yields a number $N$ that is $p-1 \pmod p$. The numerator $\pmod p$ is $N$ times the sum of the $\pmod p$ inverses of each non-zero remainder, and since this sum is $0 \pmod p$, the numerator is $0 \pmod p$. The rest of the argument is as before.
+
+ 
+
+
+	\item (\textit{USAMO 2010}) A blackboard contains 68 pairs of nonzero integers.  Suppose that for each positive integer $k$ at most one of the pairs $(k, k)$ and $(-k, -k)$ is written on the blackboard.  A student erases some of the 136 integers, subject to the condition that no two erased integers may add to 0.  The student then scores one point for each of the 68 pairs in which at least one integer is erased.  Determine, with proof, the largest number $N$ of points that the student can guarantee to score regardless of which 68 pairs have been written on the board.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Answer: 43
+
+ 
+
+
+ Attainability: Consider 8 distinct positive numbers. Let there be 5 pairs for each of the numbers including 2 clones of that number. Let there also be 28 pairs that include the negatives of those numbers such that each negative associates with another negative once and exactly once (in graph theoretic terms, a K8). Let x be the number of positives chosen out of these 8 (assume the other chosen numbers are negatives) for erasing; then, the number of points the student scores is $28 + 5x - {x \choose 2}$, which is maximized at x=5 and x=6, and the maximum value is $43$. Choosing the first 5 numbers as positive and the other three as negative attains this. Hence, 43 is a possible maximum possible score.
+
+ 
+
+
+ Bounding: We use expected values. WLOG all the pairs of numbers with both numbers identical have only positive values. Consider flipping a weighted coin whether to choose the positive number or its negation for each positive number; it chooses positive with probability p. The pairs with both numbers same are chosen with probability p, the pairs (k, -k) are chosen with probability 1, and the pairs (x, y) for distinct x and y that sum to a nonzero number are chosen with probability $1-p^2$. We are trying to minimize the expected value, so we can assume that no pairs (k, -k) exist. Let A be the number of (k, k) pairs, and 68-A be the number of (x, y) pairs. The expected number of points scored is $Ap + (68-A)(1-p^2)$. We want to prove this is larger than 42 at all times for some choice of p. If $A < 36$, $1/2$ works for p to give this bound. If $A > 36$, $5/8$ works for p for p to give the desired bound. If $A = 36$, we can use $3/5$ for p to get the desired bound. Hence, in any case, the expected value for the number of points scored across all of these weighted processes is larger than 42, so there exists some case that gives a score of 43. Hence, bounding is complete. We are done with both parts. Q.E.D.
+
+ -Solution by thanosaops
+
+ 
+
+
+\end{enumerate}

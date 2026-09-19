@@ -1,0 +1,264 @@
+\section{USAMO 1975}
+        \begin{enumerate}
+        	\item (\textit{USAMO 1975}) (a) Prove that
+
+
+ $[5x]+[5y]\ge [3x+y]+[3y+x]$,
+
+ where $x,y\ge 0$ and $[u]$ denotes the greatest integer $\le u$ (e.g., $[\sqrt{2}]=1$).
+
+
+ (b) Using (a) or otherwise, prove that
+
+
+ $\frac{(5m)!(5n)!}{m!n!(3m+n)!(3n+m)!}$
+
+ is integral for all positive integral $m$ and $n$.
+
+
+ 
+
+
+	\item (\textit{USAMO 1975}) Let $A,B,C,D$ denote four points in space and $AB$ the distance between $A$ and $B$, and so on. Show that
+
+ \[AC^2+BD^2+AD^2+BC^2\ge AB^2+CD^2.\]
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1975_2_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ If we project points $A,B,C,D$ onto the plane parallel to $\overline{AB}$ and $\overline{CD}$, $AB$ and $CD$ stay the same but $BC, AC, AD, BD$ all decrease, making the inequality sharper. Thus, it suffices to prove the inequality when $A,B,C,D$ are coplanar:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1975_2_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Let $AD=a, AC=b, BC=c, BD=d, AB=m, CD=n$. We wish to prove that $a^2+b^2+c^2+d^2\ge m^2+n^2$. Let us fix $\triangle BCD$ and the length $AB$ and let $A$ vary on the circle centered at $B$ with radius $m$. If we find the minimum value of $a^2+b^2$, which is the only variable quantity, and prove that it is larger than $m^2+n^2-c^2-d^2$, we will be done.
+
+ First, we express $a^2+b^2$ in terms of $c,d,m,\theta,\phi$, using the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}:
+ \begin{align*}  a^2+b^2 &= c^2+d^2+2m^2-2cm\cos(\theta)-2dm\cos(\phi-\theta) \\ (a^2+b^2-c^2-d^2-2m^2)^2 &= 4m^2(c^2\cos^2(\theta)+d^2\cos^2(\phi-\theta)+2cd\cos(\theta)\cos(\phi-\theta)) \end{align*}
+$a^2+b^2$ is a function of $\theta$, so we take the derivative with respect to $\theta$ and obtain that $a^2+b^2$ takes a minimum when 
+ \begin{align*} c\sin(\theta)-d\sin(\phi-\theta) &= 0 \\ c^2\sin^2(\theta)+d^2\sin^2(\phi-\theta)-2cd\sin(\theta)\sin(\phi-\theta) &= 0 \\ (a^2+b^2-c^2-d^2-2m^2)^2 &= 4m^2(c^2+d^2+2cd(\cos(\theta)\cos(\phi-\theta)-\sin(\theta)\sin(\phi-\theta))) \\ &= 4m^2(c^2+d^2+2cd\cos{\phi})\\ &= 4m^2(2c^2+2d^2-n^2) \end{align*}
+
+
+ Define $p=a^2+b^2$ and $q=c^2+d^2$:
+
+ 
+ \begin{align*} (p-q-2m^2)^2 &= 4m^2(2q-n^2) \\ p^2+q^2+4m^4-4m^2p+4m^2q-2pq &= 8m^2q-4m^2n^2 \\ p^2+q^2+4m^4-4m^2p-4m^2q-2pq &= -4m^2n^2 \\ p^2-2pq+q^2-4m^2(p+q) &= -4m^2(m^2+n^2) \\ \frac{(p-q)^2}{m^2} &= p+q-m^2-n^2\geq 0 \\ a^2+b^2+c^2+d^2 &\geq m^2+n^2 \\ \end{align*}
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let
+
+ 
+ \begin{align*} A &= (0,0,0) \\ B &= (1,0,0) \\ C &= (a,b,c) \\ D &= (x,y,z). \end{align*}
+
+
+ It is clear that every other case can be reduced to this.Then, with the distance formula and expanding,
+
+ 
+ \begin{align*} AC^2 + BD^2 + AD^2 + BC^2 - AB^2 - CD^2 &= x^2-2x+1+y^2+z^2+a^2-2a+b^2+c^2+2ax+2by+2cz \\ &= (x+a-1)^2 + (y+b)^2 + (z+c)^2. \\ &\geq 0, \end{align*}
+which rearranges to the desired inequality.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Because the distances are all squared, we must only prove the result in one dimension, and then we can just add up the three individual inequalities for the $x$, $y$, and $z$ dimension to get the desired result. Let $x_a$, $x_b$, $x_c$, and $x_d$ be the positions of $A$, $B$, $C$, and $D$ respectively. Then we must show that,
+
+ 
+ \begin{align*} (x_a - x_c)^2 + (x_b-x_d)^2 + (x_a - x_d)^2 + (x_b - x_c)^2 &\geq (x_a - x_b)^2 + (x_c-x_d)^2 \\ x_a^2 + x_b^2 + x_c^2 + x_d^2 &\geq 2x_a x_c + 2x_b x_d + 2x_a x_d + 2x_b x_c - 2x_a x_b - 2x_c x_d \\ (x_a + x_b)^2 + (x_c + x_d)^2 &\geq 2(x_a +x_b)(x_c + x_d)\\ (x_a + x_b - x_c - x_d)^2 &\geq 0. \end{align*}
+So we are done.
+
+ 
+
+
+
+\textbf{Solution 4 (Vector bash)}
+
+Let $a$, $b$, $c$, $d$ correspond to the position vectors of points A, B, C, and D, respectively, with respect to an arbitrary origin O. Let us also for simplicity define $a^2 = a \cdot a = ||a||^2$, where $||a||$ is the magnitude of vector $a$. Because squares are non-negative, $a^2$ is non-negative for all vectors $a$. Thus,
+ \[(a + b - c - d)^2 \ge 0\]Because dot product is linear, we expand to obtain
+ \[a^2 + b^2 + c^2 + d^2 + 2a \cdot b + 2 c \cdot d - 2 a \cdot c - 2 a \cdot d - 2 b \cdot c - 2 c \cdot d \ge 0,\]from which we add $a^2 + b^2 + c^2 + d^2$ to both sides, rearrange, and complete the square to get
+ \[(a-c)^2 + (a-d)^2 + (b-c)^2 + (b-d)^2 \ge (a-b)^2 + (c-d)^2.\]As $(a-b)^2 = ||a-b||^2 = ||AB||^2 = AB^2$ and likewise for the others,
+ \[AC^2 + AD^2 + BC^2 + BD^2 \ge AB^2 + CD^2,\]which is what we wanted to prove.
+
+ \textit{NOTES:}
+
+ 1. Equality holds when the vector equality $a + b = c + d$ holds, which occurs when A, B, C, and D are the vertices of a (planar) parallelogram, in that order.
+
+ 2. The algebra employed here is almost identical to the algebra used in Solution 3, which means that Solution 3 is just a simplification of this solution.
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1975}) If $P(x)$ denotes a polynomial of degree $n$ such that $P(k)=k/(k+1)$ for $k=0,1,2,\ldots,n$, determine $P(n+1)$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $Q(x) = (x+1)P(x) - x$, and clearly, $Q(x)$ has a degree of $n+1$. 
+
+ Then, for $k=0,1,2,\ldots,n$, $Q(k) = (k+1)P(k) - k = (k+1)\cdot \dfrac{k}{k+1} - k = 0$. 
+
+ Thus, $k=0,1,2,\ldots,n$ are the roots of $Q(x)$. 
+
+ Since these are all $n+1$ of the roots of the $n+1^{\text{th}}$ degree polynomial, by the \href{https://artofproblemsolving.com/wiki/index.php?title=Factor\_Theorem}{Factor Theorem}, we can write $Q(x)$ as 
+ \[Q(x) = c(x)(x-1)(x-2) \cdots (x-n)\] where $c$ is a constant. 
+
+ Thus, 
+ \[(x+1)P(x) - x = c(x)(x-1)(x-2) \cdots (x-n).\]
+
+ We plug in $x = -1$ to cancel the $(x+1)P(x)$ and find $c$: 
+
+ 
+ \begin{align*} -(-1) &= c(-1)(-1-1)(-1-2) \cdots (-1-n) \\ 1 &= c(-1)^{n+1}(1)(2) \cdots (n+1) \\ c &= (-1)^{n+1}\dfrac{1}{(n+1)!} \\ \end{align*}
+
+
+ Finally, plugging in $x = n+1$ to find $P(n+1)$ gives: 
+
+ 
+ \begin{align*} Q(n+1)&=(n+2)P(n+1)-(n+1)\\ (-1)^{n+1}\dfrac{1}{(n+1)!}\cdot(n+1)! &=(n+2)P(n+1)-(n+1)\\ (-1)^{n+1}&=(n+2)P(n+1)-(n+1)\\ (-1)^{n+1}+(n+1)&=(n+2)P(n+1)\\ P(n+1) &= \dfrac{(-1)^{n+1} + (n+1)}{n+2}\\ \end{align*}
+
+
+ If $n$ is even, this simplifies to $P(n+1) = \dfrac{n}{n+2}$. If $n$ is odd, this simplifies to $P(n+1) = 1$. $\Box$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+It is fairly natural to use Lagrange's Interpolation Formula on this problem:
+
+ 
+ \begin{align*} P(n+1) &= \sum_{k=0}^n \frac{k}{k+1} \prod_{j \ne k} \frac{n+1-j}{k-j} \\ &= \sum_{k=0}^n \frac{k}{k+1} \cdot \frac{\frac{(n+1)!}{n+1-k}}{k(k-1)(k-2) \dots 1\cdot (-1)(-2) \dots (k-n)} \\ &= \sum_{k=0}^n \frac{k}{k+1} (-1)^{n-k}\cdot \frac{(n+1)!}{k!(n+1-k)!} \\ &= \sum_{k=0}^n (-1)^{n-k} \binom{n+1}{k} - \sum_{k=0}^n \frac{(n+1)!(-1)^{n-k}}{(k+1)!(n+1-k)!} \\ &= -\left(\sum_{k=0}^{n+1} (-1)^{n+1-k} \binom{n+1}{k} - 1\right) + \frac{1}{n+2} \cdot \sum_{k=0}^n (-1)^{n+1-k} \binom{n+2}{k+1} \\ &= 1 + \frac{1}{n+2} \left(\sum_{k=-1}^{n+1} (-1)^{n+2 - (k+1)} \binom{n+2}{k+1} - (-1)^{n+2} - 1\right) \\ &= \boxed{1 - \frac{(-1)^n + 1}{n+2}} \end{align*}
+through usage of the Binomial Theorem. $\square$
+
+ <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1975}) Two given circles intersect in two points $P$ and $Q$. Show how to construct a segment $AB$ passing through $P$ and terminating on the two circles such that $AP\cdot PB$ is a maximum.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/USAMO_I_1975_4_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ 
+
+
+
+\textbf{Solution}
+
+A maximum $AP \cdot PB$ cannot be attained if $AB$ intersects segment $O_1O_2$ because a larger value can be attained by making one of $A$ or $B$ diametrically opposite $P$, which (as is easily checked) increases the value of both $AP$ and $PB$. Thus, assume $AB$ does not intersect $O_1O_2$.
+
+ Let $E$ and $F$ be the centers of the small and big circles, respectively, and $r$ and $R$ be their respective radii.
+
+ Let $M$ and $N$ be the feet of $E$ and $F$ to $AB$, and $\alpha = \angle APE$ and $\epsilon = \angle BPF$
+
+ We have:
+
+ 
+ \[AP \times PB = 2r \cos{\alpha} \times 2R \cos{\epsilon} = 4 rR \cos{\alpha} \cos{\epsilon}\]
+
+ $AP\times PB$ is maximum when the product $\cos{\alpha} \cos{\epsilon}$ is a maximum.
+
+ We have $\cos{\alpha} \cos{\epsilon}= \frac{1}{2} [\cos(\alpha +\epsilon) + \cos(\alpha -\epsilon)]$
+
+ But $\alpha +\epsilon = 180^{\circ} - \angle EPF$ and is fixed, so is $\cos(\alpha +\epsilon)$.
+
+ So its maximum depends on $cos(\alpha -\epsilon)$ which occurs when $\alpha=\epsilon$. To draw the line $AB$:
+
+ Draw a circle with center $P$ and radius $PE$ to cut the radius $PF$ at $H$. Draw the line parallel to $EH$ passing through $P$. This line meets the small and big circles at $A$ and $B$, respectively.
+
+ 
+
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
+
+ 
+
+
+	\item (\textit{USAMO 1975}) A deck of $n$ playing cards, which contains three aces, is shuffled at random (it is assumed that all possible card distributions are equally likely). The cards are then turned up one by one from the top until the second ace appears. Prove that the expected (average) number of cards to be turned up is $(n+1)/2$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We begin by induction. Our base case is naturally when $n = 3$, as there can be no less than $3$ cards in the deck. The only way to turn up the second ace is to turn up the first, and then turn up the second, which requires $2$ moves. This indeed is equal to $(3 + 1)/2$. Next, we assume that the expected number of cards required to pull the second ace from a deck of n cards is in fact $(n + 1)/2$. Now, we see that to simulate the case with $n + 1$ cards, we simply must add a card to our deck. By our assumption, we can expect to turn up $(n + 1)/2$ cards to be turned up, including our second ace. Thus ahead of our second ace, we expect $(n - 1)/2$ cards , and after it $(n - 1)/2$ as well. When we add our card, it is ahead of the second ace half the time, and behind if half the time. Therefore we expect to add one card to the number of cards drawn half the time, and add nothing for half the time. Hence we expect to add half a card, and the expected value is now $((n + 1)/2) + 1/2)$, or $(n + 2)/2$, the desired outcome for the $n + 1$ case.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Although we can induct as in the situation above, we can use a more direct approach.
+
+ Consider a deck.  The second ace is in the $k$th place.  If we draw the deck backwards (which has equal probability as drawing it forwards), then we will draw it in the $n+1-k$th place, since the $n$th place will become the first, the $n-1$th the second, etc.
+
+ Also, note that when second ace is still the second ace when we draw the deck backwards. (we need to note this, else this argument holds for the first ace and third ace as well)
+
+ Now, this implies that the expected location of the second ace is in the $(k+n+1-k)/2=(n+1)/2$ place.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Like Solution 2, this solution is also a direct solution.
+
+ The three aces divide the deck into four piles with a non-negative number of cards. Let $a$, $b$, $c$, and $d$ be the number of cards in the first, second, third, and fourth piles, respectively, given a random deck $D$. Also, let $E(a), E(b), E(c), E(d)$ denote the expected value of $a$, $b$, $c$, and $d$ over all decks $D$. Then $a + b + c + d = n - 3$ (the deck minus the three aces).
+
+ For every deck $D$, there must exist other decks that permute the values of $a$, $b$, $c$, $d$. (i.e. if there is a deck with $a = 2, b = 3, c = 1, d = 4,$ there exists a deck with $a = 1, b = 2, c = 3, d = 4$.) Therefore, the value of $a$ over all decks $D$ is a permutation of the value of $b$ over all such decks, and as a result $E(a) = E(b)$. A similar result holds for $b$, $c$, and $d$, and so $E(a) = E(b) = E(c) = E(d)$. Because 
+ \[E(a) + E(b) + E(c) + E(d) = E(a + b + c + d) = E(n-3) = n-3,\] $E(a) = E(b) = \frac{n-3}{4}$. We want to compute the number of cards up to and including the second ace, which is just 
+ \[E(a) + 1 + E(b) + 1 = \frac{n-3}{2} + 2 = \frac{n+1}{2},\] as desired.
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_5&action=edit}{add it} to this page.</i>
+
+ 
+
+
+\end{enumerate}
