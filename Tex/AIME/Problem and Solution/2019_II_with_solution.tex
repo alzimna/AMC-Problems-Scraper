@@ -18,166 +18,9 @@
                     - Diagram by Brendanb4321
 
  
-Extend $AB$ to form a right triangle with legs $6$ and $8$ such that $AD$ is the hypotenuse and connect the points $CD$ so that you have a rectangle. (We know that $\triangle ADE$ is a $6-8-10$, since $\triangle DEB$ is an $8-15-17$.) The base $CD$ of the rectangle will be $9+6+6=21$. Now, let $O$ be the intersection of $BD$ and $AC$. This means that $\triangle ABO$ and $\triangle DCO$ are similar with ratio $\frac{21}{9}=\frac73$. Set up a proportion, knowing that the two heights add up to 8. We will let $y$ be the height from $O$ to $DC$, and $x$ be the height of $\triangle ABO$.
- \[\frac{7}{3}=\frac{y}{x}\]
- \[\frac{7}{3}=\frac{8-x}{x}\]
- \[7x=24-3x\]
- \[10x=24\]
- \[x=\frac{12}{5}\]
-
- This means that the area is $A=\frac{1}{2}(9)(\frac{12}{5})=\frac{54}{5}$. This gets us $54+5=\boxed{059}.$
-
- -Solution by the Math Wizard, Number Magician of the Second Order, Head of the Council of the Geometers
+Extend $AB$ to form a right triangle with legs $6$ and 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-Using the diagram in Solution 1, let $E$ be the intersection of $BD$ and $AC$. We can see that angle $C$ is in both $\triangle BCE$ and $\triangle ABC$. Since $\triangle BCE$ and $\triangle ADE$ are congruent by AAS, we can then state $AE=BE$ and $DE=CE$. It follows that $BE=AE$ and $CE=17-BE$. We can now state that the area of $\triangle ABE$ is the area of $\triangle ABC-$ the area of $\triangle BCE$. Using Heron's formula, we compute the area of $\triangle ABC=36$. Using the Law of Cosines on angle $C$, we obtain 
-
- 
- \[9^2=17^2+10^2-2(17)(10)cosC\]
- \[-308=-340cosC\]
- \[cosC=\frac{308}{340}\](For convenience, we're not going to simplify.) 
-
- Applying the Law of Cosines on $\triangle BCE$ yields 
- \[BE^2=10^2+(17-BE)^2-2(10)(17-BE)cosC\]
- \[BE^2=389-34BE+BE^2-20(17-BE)(\frac{308}{340})\]
- \[0=389-34BE-(340-20BE)(\frac{308}{340})\]
- \[0=389-34BE+\frac{308BE}{17}\]
- \[0=81-\frac{270BE}{17}\]
- \[81=\frac{270BE}{17}\]
- \[BE=\frac{51}{10}\] This means $CE=17-BE=17-\frac{51}{10}=\frac{119}{10}$. Next, apply Heron's formula to get the area of $\triangle BCE$, which equals $\frac{126}{5}$ after simplifying. Subtracting the area of $\triangle BCE$ from the area of $\triangle ABC$ yields the area of $\triangle ABE$, which is $\frac{54}{5}$, giving us our answer, which is $54+5=\boxed{059}.$-Solution by flobszemathguy
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Very quick)}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_1_Solution_Figure_2.png}
-                    \end{figure}
-                    - Diagram by Brendanb4321 extended by Duoquinquagintillion
-
- Begin with the first step of solution 1, seeing $AD$ is the hypotenuse of a $6-8-10$ triangle and calling the intersection of $DB$ and $AC$ point $E$. Next, notice $DB$ is the hypotenuse of an $8-15-17$ triangle. Drop an altitude from $E$ with length $h$, so the other leg of the new triangle formed has length $4.5$. Notice we have formed similar triangles, and we can solve for $h$.
-
- 
- \[\frac{h}{4.5} = \frac{8}{15}\]
- \[h = \frac{36}{15} = \frac{12}{5}\]
-
- So $\triangle ABE$ has area 
- \[\frac{ \frac{12}{5} \cdot 9}{2} = \frac{54}{5}\]And $54+5=\boxed{059}.$- Solution by Duoquinquagintillion
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Let $a = \angle{CAB}$. By Law of Cosines,
- \[\cos a = \frac{17^2+9^2-10^2}{2*9*17} = \frac{15}{17}\]
- \[\sin a = \sqrt{1-\cos^2 a} = \frac{8}{17}\]
- \[\tan a = \frac{8}{15}\]
- \[A = \frac{1}{2}* 9*\frac{9}{2}\tan a = \frac{54}{5}\]And $54+5=\boxed{059}.$
-
- - by Mathdummy
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-Because $AD = BC$ and $\angle BAD = \angle ABC$, quadrilateral $ABCD$ is cyclic. So, Ptolemy's theorem tells us that
- \[AB \cdot CD + BC \cdot AD = AC \cdot BD \implies 9 \cdot CD + 10^2 = 17^2 \implies CD = 21.\]
-
- From here, there are many ways to finish which have been listed above. If we let $AB \cap CD = P$, then 
- \[\triangle APB \sim \triangle CPD \implies \frac{AP}{AB} = \frac{CP}{CD} \implies \frac{AP}{9} = \frac{17-AP}{21} \implies AP = 5.1.\]
-
- Using Heron's formula on $\triangle ABP$, we see that 
- \[[ABC] = \sqrt{9.6(9.6-5.1)(9.6-5.1)(9.6-9)} = 10.8 = \frac{54}{5}.\]
-
- Thus, our answer is $059$. ~a.y.711
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-Let $A=(0,0), B=(9,0)$. Now consider $C$, and if we find the coordinates of $C$, by symmetry about $x=4.5$, we can find the coordinates of D. 
-
- So let $C=(a,b)$. So the following equations hold:
-
- $\sqrt{(a-9)^2+(b)^2}=17$.
-
- $\sqrt{a^2+b^2}=10$.
-
- Solving by squaring both equations and then subtracting one from the other to eliminate $b^2$, we get $C=(-6,8)$ because $C$ is in the second quadrant.
-
- Now by symmetry, $D=(16, 8)$.
-
- So now you can proceed by finding the intersection and then calculating the area directly. We get $\boxed{059}$.
-
- 
-
-
-
-
-
-\textbf{Solution 7}
-
-Since the figure formed by connecting the vertices of the congruent triangles is a isoceles trapezoid, by Ptolemys, the other base of the trapezoid is $21.$ Then, dropping altitudes to the base of $21$ and using pythagorean theorem, we have the height is $8,$ and we can use similar triangles to finish.
-
- 
-
-
-
-
-
-\textbf{Solution 8 (Very, very, quick, but for observant people only)}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_1_Solution_Figure_3.png}
-                    \end{figure}
-                    
-
- First, let's define H as the intersection of CB and DA, and define G as the midpoint of AB. Next, let E and F be the feet of the perpendicular lines from C and D to line AB respectively. We get a pleasing line of symmetry HG where A maps to B, C maps to D, and E maps to F. We notice that 8-15-17 and 8-6-10 are both pythagorean triples and we test that theory. Then, we find AB = 15 - 6 = 9 and GB = 4.5. Since △CEB~△HGB, we find that HG = 2.4. Then, the area of △HGB is 5.4 and the total overlap is 10.8 = 54/5. Noting that GCD(54,5)=1, we add them to get 59.
-
- Note: I omitted some computation
-
- 
-
-
-
-
-
-\textbf{Solution 9 ( Slightly easier than some of the solutions)}
-
-Proceed the same as solution one to get the ratio of $\triangle ABO$ to $\triangle DCO$ is $\frac37$. Call BO as x and call DO as $\frac73$*x. Notice how they sum to $17$ as DB=$17$. This means that $\frac73$*x+ x =$17$. Solve the linear equation to get x=$5.1$. Notice how triangle $ABC$ is isosceles with height $\sqrt{5.1^2-4.5^2} or 2.4$. The area is $2.4$*$9$/$2$ or $54/5$. Therefore, the answer is $54+5=\boxed{059}.$
-
- -AD\_12
-
- 
-
-
 
 
 	\item (\textit{AIME II 2019}) Lily pads $1,2,3,\ldots$ lie in a row on a pond. A frog makes a sequence of jumps starting on pad $1$. From any pad $k$ the frog jumps to either pad $k+1$ or pad $k+2$ chosen randomly with probability $\frac{1}{2}$ and independently of other jumps. The probability that the frog visits pad $7$ is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -201,8 +44,6 @@ Let $P_n$ be the probability the frog visits pad $7$ starting from pad $n$. Then
 
 
 
-
-
 \textbf{Solution 2 (Casework)}
 
 Define a one jump to be a jump from $k$ to $k + 1$ and a two jump to be a jump from $k$ to $k + 2$. 
@@ -223,8 +64,6 @@ Define a one jump to be a jump from $k$ to $k + 1$ and a two jump to be a jump f
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $P_n$ be the probability that the frog lands on lily pad $n$. The probability that the frog never lands on pad $n$ is $\frac{1}{2}P_{n-1}$, so $1-P_n=\frac{1}{2}P_{n-1}$. This rearranges to $P_n=1-\frac{1}{2}P_{n-1}$, and we know that $P_1=1$, so we can compute $P_7$.
@@ -232,8 +71,6 @@ Let $P_n$ be the probability that the frog lands on lily pad $n$. The probabilit
 We calculate $P_7$ to be $\frac{43}{64}$, meaning that our answer is $\boxed{107}$.
 
  
-
-
 
 
 
@@ -247,8 +84,6 @@ For any point $n$, let the probability that the frog lands on lily pad $n$ be $P
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $a$ represent the number of two-step jumps (hopping over two lily pads) and $b$ represent the number of one-step jumps (hopping over one lily pad). We get the equation $2a + b = 6$, which has 4 integer solutions: $(3,0)$, $(2,2)$, $(1,4)$, and $(0,6)$. For $(2,2)$, there are $\frac{4!}{2!2!} = 6$ ways to permute the jumps, and for $(1,4)$ there are $\frac{5!}{1!4!} = 5$ ways. So we get:
@@ -259,8 +94,6 @@ Let $a$ represent the number of two-step jumps (hopping over two lily pads) and 
  $43 + 64 = \boxed{107}$
 
  
-
-
 
 
 
@@ -291,26 +124,11 @@ Let $a$ be the number of 2-unit jumps and $b$ the number of 1-unit jumps. In thi
 
 
 
-
-
 \textbf{Solution 7  (Recursion)}
 
 We can solve this problem by looking at the probabilities of landing on each individual lily pad. Lily pad number one has a probability of 1, lily pad number 2 has a probability of 1/2. We can see from quick casework on lily pad number 3(yielding 3/4) that the probability for any lily pad N is $\frac{N_{n-2}}{2}+\frac{N_{n-1}}{2}$. Quickly working this out, we see that the probability is $\frac{43}{64}$, so the answer is $\boxed{107}$..
 
  
-
-
-
-
-
-\textbf{Solution in portuguese}
-
-
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2019}) Find the number of $7$-tuples of positive integers $(a,b,c,d,e,f,g)$ that satisfy the following system of equations: 
@@ -335,8 +153,6 @@ Note $c \mid 70, 71 \implies c \mid \text{gcd} (70, 71) = 1$ which implies $c=1$
 
 
 
-
-
 \textbf{Solution 2}
 
 We know that any two consecutive numbers are coprime. Using this, we can figure out that $c=1$ and $e=1$. $d$ then has to be $71$. Now we have two equations left. $ab=70$ and $fg=72$. To solve these we just need to figure out all of the factors. Doing the prime factorization of $70$ and $72$, we find that they have $8$ and $12$ factors, respectively. The answer is $8 \times 12=\boxed{096}$
@@ -345,15 +161,11 @@ We know that any two consecutive numbers are coprime. Using this, we can figure 
 
 
 
-
-
 \textbf{Solution 3}
 
 $c|70,71$ and $\gcd(70,71)=1$, so $c=1$. By similar logic, we find that $e=1$. $\newline$ Since $c=e=1$, the number of solutions is the number of factors of $70$ multiplied by the number of factors of $72$. $70=2^1 \times 5^1 \times7^1$, giving $(1+1)^3=8$ factors. $72=2^3 \times 3^2$, giving $(3+1)\times(2+1)=12$ factors. $\newline$ Thus, the final answer is $8\times12=\boxed{96}$. $\newline$ ~pandapower24
 
  
-
-
 
 
 	\item (\textit{AIME II 2019}) A standard six-sided fair die is rolled four times. The probability that the product of all four numbers rolled is a perfect square is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -386,8 +198,6 @@ Notice that, other than the number 5, the remaining numbers 1, 2, 3, 4, 6 are on
  -scrabbler94
 
  
-
-
 
 
 
@@ -428,8 +238,6 @@ We can solve this without finding the amount of cases. Notice when we roll a 1 o
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that rolling a 1/4 will not affect whether or not the product is a perfect square. This means that in order for the product to be a perfect square, all non 1/4 numbers rolled must come in pairs, with the only exception being the triplet 2,3, 6. Now we can do casework:
@@ -444,8 +252,6 @@ Note that rolling a 1/4 will not affect whether or not the product is a perfect 
 
 
 
-
-
 \textbf{Solution 4 (Casework)}
 
 Another way to solve this problem is to do casework on all the perfect squares from $1^2$ to $36^2$, and how many ways they can be ordered$1^2$- $1,1,1,1$- $1$ way.$2^2$- $4,1,1,1$ or $2,2,1,1$- $\binom{4}{2}+4=10$ ways.$3^2$- $3,3,1,1$- $\binom{4}{2}=6$ ways.$4^2$- $4,4,1,1$, $2,2,2,2$, or $2,2,4,1$- $\binom{4}{2}+1+12=19$ ways.$5^2$- $5,5,1,1$- $\binom{4}{2}=6$ ways.$6^2$- $6,6,1,1$, $1,2,3,6$, $2,3,2,3$, $3,3,4,1$- $2*\binom{4}{2}+4!+12=48$ ways.$7^2$- Since there is a prime greater than 6 in its prime factorization there are $0$ ways.$8^2$- $4,4,4,1$ or $2,4,2,4$- $\binom{4}{2}+4=10$ ways.$9^2$- $3,3,3,3$- $1$ way.$10^2$- $2,2,5,5$ or $1,4,5,5$- $6+12=18$ ways.$11^2$- $0$ ways for the same reason as $7^2$.$12^2$- $6,6,2,2$, $4,4,3,3$, $2,3,4,6$, or $1,4,6,6$- $2*\binom{4}{2}+4!+12=48$ ways.$13^2$- $0$ ways.$14^2$- $0$ ways.$15^2$- $3,3,5,5$- $\binom{4}{2}=6$ ways.$16^2$- $4,4,4,4$- $1$ way.$17^2$- $0$ ways.$18^2$- $3,3,6,6$- $\binom{4}{2}=6$ ways.$19^2$- $0$ ways.$20^2$- $4,4,5,5$- $\binom{4}{2}=6$ ways.$21^2$- $0$ ways.$22^2$- $0$ ways.$23^2$- $0$ ways.$24^2$-$4,4,6,6$- $\binom{4}{2}=6$ ways.$25^2$- $5,5,5,5$- $1$ way.$26^2$- $0$ ways.$27^2$- $0$ ways.$28^2$- $0$ ways.$29^2$- $0$ ways.$30^2$- $5,5,6,6$- $\binom{4}{2}$ ways.$31^2$- $0$ ways.$32^2$- $0$ ways.$33^2$- $0$ ways.$34^2$- $0$ ways.$35^2$- $0$ ways.$36^2$- $6,6,6,6$- $1$ way.
@@ -453,8 +259,6 @@ Another way to solve this problem is to do casework on all the perfect squares f
  There are $6^4=1296$ ways that the dice can land. Summing up the ways, it is easy to see that there are $200$ ways. This results in a probability of $\frac{200}{1296}=\frac{25}{162}\implies\boxed{187}$-superninja2000
 
  
-
-
 
 
 
@@ -527,8 +331,6 @@ We can do recursion on the number of rolls to find the number of ways we can get
 
 
 
-
-
 \textbf{Solution 6}
 
 Consider all the distinct "fundamental" groups of integers from $1$ to $6$ whose product is a perfect square. A "fundamental" group is one that cannot be broken into two smaller groups that each have a perfect square product. For example, $\{2,2\}$ is a fundamental group, while $\{3,3,4\}$ is not, because it can be broken up into $\{3,3\}$ and $\{4\}$.
@@ -555,43 +357,53 @@ Consider all the distinct "fundamental" groups of integers from $1$ to $6$ whose
 
 
 
-
-
 \textbf{Solution 7(Generating functions)}
 
 Let's look at the prime factorization of some of these rolls:
 
  \begin{verbatim}
 01 => 2\textasciicircum{}0*3\textasciicircum{}0*5\textasciicircum{}0 02 => 2\textasciicircum{}1*3\textasciicircum{}0*5\textasciicircum{}0 03 => 2\textasciicircum{}0*3\textasciicircum{}1*5\textasciicircum{}0 04 => 2\textasciicircum{}2*3\textasciicircum{}0*5\textasciicircum{}0 05 => 2\textasciicircum{}0*3\textasciicircum{}0*5\textasciicircum{}1 06 => 2\textasciicircum{}1*3\textasciicircum{}1*5\textasciicircum{}0
-\end{verbatim}Now, using multi-variable generating functions, we get:
+\end{verbatim}
+
+Now, using multi-variable generating functions, we get:
 
  \begin{verbatim}
 f(x,y,z)=1+x+y+x\textasciicircum{}2+z+xy            | |           \| |/            'v' f(x,y,z)=1+x+y+z+x\textasciicircum{}2+xy   =(for our purposes)       =2+x+y+z+xy
-\end{verbatim}Let's square that!
+\end{verbatim}
+
+Let's square that!
 
  \begin{verbatim}
 4+2x+2y+2z+2xy+2x+x\textasciicircum{}2+xy+xz+x\textasciicircum{}2y+2y+xy+y\textasciicircum{}2+yz+xy\textasciicircum{}2+2z+xz+yz+z\textasciicircum{}2+xyz+2xy+x\textasciicircum{}2y+xy\textasciicircum{}2+xyz+x\textasciicircum{}2y\textasciicircum{}2 Combining like terms . . . 4+4x+4y+4z+x\textasciicircum{}2+y\textasciicircum{}2+z\textasciicircum{}2+6xy+2xz+2yz+2xyz+2x\textasciicircum{}2y+2xy\textasciicircum{}2+x\textasciicircum{}2y\textasciicircum{}2
-\end{verbatim}Since we only want the parity of each of the exponents, we can collapse it again.
+\end{verbatim}
+
+Since we only want the parity of each of the exponents, we can collapse it again.
 
  \begin{verbatim}
 8+6x+6y+4z+6xy+2xz+2yz+2xyz
-\end{verbatim}Last simplification: factor out a factor of two and save it for later. 
+\end{verbatim}
+
+Last simplification: factor out a factor of two and save it for later. 
 
  \begin{verbatim}
 4+3x+3y+2z+3xy+xz+yz+xyz
-\end{verbatim}Let's take a better approach this time.
+\end{verbatim}
+
+Let's take a better approach this time.
 
  \begin{verbatim}
 \_\_\_ term :4*4+3*3+3*3+2*2+3*3+1*1+1*1+1*1=16+09+09+04+09+01+01+01=50 \_\_x term :4*3+3*4+3*3+2*1+3*3+1*2+1*1+1*1=12+12+09+02+09+02+01+01=48 \_\_y term :4*3+3*3+3*4+2*1+3*3+1*1+1*2+1*1=12+09+12+02+09+01+02+01=48 \_\_z term :4*2+3*1+3*1+2*4+3*1+1*3+1*3+1*3=08+03+03+08+03+03+03+03=34 \_xy term :4*3+3*3+3*3+2*1+3*4+1*1+1*1+1*2=12+09+09+02+12+01+01+02=48 \_xz term :4*1+3*2+3*1+2*3+3*1+1*4+1*3+1*3=04+06+03+06+03+04+03+03=32 \_yz term :4*1+3*1+3*2+2*3+3*1+1*3+1*4+1*3=04+03+06+06+03+03+04+03=32 xyz term :4*1+3*1+3*1+2*3+3*2+1*3+1*3+1+4=04+03+03+06+06+03+03+04=32  Result: 50+48x+48y+34z+48xy+32xz+32yz+32xyz
-\end{verbatim}I know we could use vectors and dot products to make it look neater but \textit{come on}. It \textbf{already} looks neat enough.Also, we didn't \textit{need} the other parts, but it just <i>looks \textbf{nicer}</i>.Now let's stick back the two that turned into a four.
+\end{verbatim}
+
+I know we could use vectors and dot products to make it look neater but \textit{come on}. It \textbf{already} looks neat enough.Also, we didn't \textit{need} the other parts, but it just <i>looks \textbf{nicer}</i>.Now let's stick back the two that turned into a four.
 
  \begin{verbatim}
 200+192x+192y+136z+192xy+128xz+128yz+128xyz
-\end{verbatim}We seek the constant term which is 200. 200/1296=100/648=50/324=25/162, 25+162=187
+\end{verbatim}
+
+We seek the constant term which is 200. 200/1296=100/648=50/324=25/162, 25+162=187
 
  
-
-
 
 
 
@@ -689,8 +501,6 @@ Therefore the probability is
 
 
 
-
-
 \textbf{Solution 9 (Clean Generating Functions and Roots of Unity Filter)}
 
 Recall that a number is a perfect square iff every prime in its prime factorization has even multiplicity. We can use multi-variable generating functions to track the contribution of each prime (namely 2, 3, 5) in one roll. Let $f(a,b,c)$ be the generating function such that the coefficient of each term $a^xb^yc^z$ is the number of ways to get a product of $2^x3^y5^z$ when rolling 4 dice.  For each roll, we can either roll a 1 (basically contribute nothing), roll a 2 (contribute a factor of 2), roll a 3 (contribute a factor of 3), roll a 4 (contribute two factors of 2), roll a 5 (contribute a factor of 5), or roll a 6 (contribute a factor of 2 and a factor of 3), so the generating function for one roll is $1+a+b+a^2+c+ab$. Hence, $f(a,b,c)= (1+a+b+a^2+c+ab)^4$. We seek the sum of coefficients of the $a^{2p}b^{2q}c^{2r}$ terms $(p, q, r, \in \mathbb{Z}*)$. $\newline$
@@ -701,8 +511,6 @@ Recall that a number is a perfect square iff every prime in its prime factorizat
  \[\frac{h(1)+h(-1)}{2}=\frac{6^4+3(2)^4+4^4}{8}.\] The requested probability is $\frac{6^4+3(2)^4+4^4}{8\cdot 6^4}=\frac{25}{162} \implies \boxed{187}.$
 
  
-
-
 
 
 	\item (\textit{AIME II 2019}) Four ambassadors and one advisor for each of them are to be seated at a round table with $12$ chairs numbered in order $1$ to $12$. Each ambassador must sit in an even-numbered chair. Each advisor must sit in a chair adjacent to his or her ambassador. There are $N$ ways for the $8$ people to be seated at the table under these conditions. Find the remainder when $N$ is divided by $1000$.
@@ -718,8 +526,6 @@ Recall that a number is a perfect square iff every prime in its prime factorizat
 Suppose first that the chairs weren't numbered, and rotation doesn't matter. Then if we let the ambassador-advisor pairs act as a single person, we essentially want to pick $4$ seats out of $8$ seats, and fixing one pair gives $7 \cdot 6 \cdot 5$ ways. However, now we want to number the seats, in which there are $12$ possibilities (for some pair of people, we choose the order and then we choose which even spot the ambassador sits in, giving $2\cdot 6.$) However, the order of the other pairs is then uniquely determined, so this method works, giving us $7 \cdot 6 \cdot 5 \cdot 12 = 2520$ ways. We are asked to find the remainder when $\textit{N}$ is divided by $1000$, which is $\boxed{520}$.~Maximilian113 ~Minor edits by Hiphopfrog1
 
  
-
-
 
 
 
@@ -739,8 +545,6 @@ Let us first consider the $4$ ambassadors and the $6$ even-numbered chairs. If w
 
 
 
-
-
 \textbf{Solution 2}
 
 \begin{verbatim}
@@ -750,7 +554,9 @@ Let us first consider the $4$ ambassadors and the $6$ even-numbered chairs. If w
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_5_Solution_Figure_1.png}
                     \end{figure}
                     
-\end{verbatim}In the diagram, the seats are numbered 1...12.  Rather than picking seats for each person, however, each ambassador/assistant team picks a gap between the seats (A...L) and the ambassador sits in the even seat while the assistant sits in the odd seat.  For example, if team 1 picks gap C then Ambassador 1 will sit in seat 2 while assistant 1 will sit in seat 3.  No two teams can pick adjacent gaps.  For example, if team 1 chooses gap C then team 2 cannot pick gaps B,C or D.  In the diagram, the teams have picked gaps C, F, H and J.  Note that the gap-gaps - distances between the chosen gaps - (in the diagram, 2, 1, 1, 4) must sum to 8.  So, to get the number of seatings, we:
+\end{verbatim}
+
+In the diagram, the seats are numbered 1...12.  Rather than picking seats for each person, however, each ambassador/assistant team picks a gap between the seats (A...L) and the ambassador sits in the even seat while the assistant sits in the odd seat.  For example, if team 1 picks gap C then Ambassador 1 will sit in seat 2 while assistant 1 will sit in seat 3.  No two teams can pick adjacent gaps.  For example, if team 1 chooses gap C then team 2 cannot pick gaps B,C or D.  In the diagram, the teams have picked gaps C, F, H and J.  Note that the gap-gaps - distances between the chosen gaps - (in the diagram, 2, 1, 1, 4) must sum to 8.  So, to get the number of seatings, we:
 
  
             \begin{enumerate}
@@ -764,15 +570,11 @@ Let us first consider the $4$ ambassadors and the $6$ even-numbered chairs. If w
 
 
 
-
-
 \textbf{Solution 3 (PIE)}
 
 There are $6\cdot5\cdot4\cdot3\cdot2^4$ (placing the ambassadors and then choosing the locations of the advisors) total ways to let everyone sit. However, this may lead to advisors sitting in the same chair, leading to awkward situations. So we find how many ways this happens. There are $\dbinom{4}{2} = 6$ ways to choose which advisors end up sitting together, times $6\cdot2=12$ ways to find neighboring even seats (order matters), and for the other two ambassadors, there are $\dbinom{4}{2} \cdot 2 = 12$ ways to sit and 4 ways for their advisors to sit. This results in $6\cdot12\cdot12\cdot4=3456$ ways for this to happen. However, we overcounted the case when all four of the advisors run out of room to sit, where there are $\frac{6\cdot3}{2!}=9$ to choose the places the ambassadors sit and 4! ways to arrange the ambassadors. $9\cdot4!=216$ ways to happen. So the answer is $5760 - 3456 + 216 = 2520$, which has a remainder of $\boxed{520}$ when divided by 1000.
 
  
-
-
 
 
 
@@ -794,8 +596,6 @@ We see that for every 2 adjacent spots on the table, there is exactly one way fo
 
 
 
-
-
 \textbf{Solution 5 (Lots of diagrams)}
 
 
@@ -813,8 +613,6 @@ We see that for every 2 adjacent spots on the table, there is exactly one way fo
                     Now, we are ready to tackle the original problem. If we forget about the numbers and the uniqueness of people, we will have the three configurations shown above. In the first configuration, there is a single red blob of four ambassadors. Let's stretch them out onto a line. Now, it's the same situation as the simpler problem and there are (4+1)! = 5! = 120 ways to seat the people. However, we need to multiply that by 6 because there are 6 orientations. Therefore, we have 720 outcomes for this case. In the second configuration, there is a orange blob and a green blob, each of the case n=2, resulting in (2+1)! * (2+1)! which equals 36. Multiplying the number of orientations, 3, we arrive at 108. Wait! We need to multiply by 6 to account for the many ways that we can choose 2 of the ambassadors to be in the orange blob. Therefore, we have 648 outcomes. Last but not least, we have the final configuration which is a blob of 1 and a blob of 3. Applying the formula results in (1+1)! * (3+1)! which evaluates to 48. Then, we multiply by 4, the number of ways to choose the blobs, and 6, the number of orientations. Our result is 1152. Finally, adding the numbers, we get 2520 and taking mod 1000, we get 520.
 
  
-
-
 
 
 	\item (\textit{AIME II 2019}) In a Martian civilization, all logarithms whose bases are not specified are assumed to be base $b$, for some fixed $b\ge2$. A Martian student writes down
@@ -856,8 +654,6 @@ Using change of base on the second equation to base b,
 
 
 
-
-
 \textbf{Solution 2}
 
 We start by simplifying the first equation to 
@@ -873,8 +669,6 @@ We start by simplifying the first equation to
  \[b=36^{\frac{3}{2}}=6^3=\boxed{216}\]-ktong
 
  
-
-
 
 
 
@@ -899,8 +693,6 @@ Apply change of base to
 
 
 
-
-
 \textbf{Solution 4}
 
 1st equation: 
@@ -917,8 +709,6 @@ Apply change of base to
  -Stormersyle
 
  
-
-
 
 
 
@@ -941,8 +731,6 @@ Let $y = \log _{b} x$Then we have
 
 
 
-
-
 \textbf{Solution 6 (Also Substitution)}
 
 This system of equations looks complicated to work with, so we let $a=\log_bx$ to make it easier for us to read. 
@@ -960,8 +748,6 @@ This system of equations looks complicated to work with, so we let $a=\log_bx$ t
  Finally, that gives us that $\frac{b^{\frac{56}3}}{b^{18}}=36\implies b^{\frac{56}{3}-18}=b^{\frac{56}{3}-\frac{54}{3}}=b^{\frac 23}=36\implies b=36^{\frac 32}=6^3$. Thus, $b=\boxed{216}$.
 
  
-
-
 
 
 
@@ -991,8 +777,6 @@ Using change of base on the second equation, we have
 
 
 
-
-
 \textbf{Solution 8 (Definition of Logarithm)}
 
 The second equation implies that
@@ -1005,8 +789,6 @@ The second equation implies that
  
 
 
-
-
 	\item (\textit{AIME II 2019}) Triangle $ABC$ has side lengths $AB=120,BC=220$, and $AC=180$. Lines $\ell_A,\ell_B$, and $\ell_C$ are drawn parallel to $\overline{BC},\overline{AC}$, and $\overline{AB}$, respectively, such that the intersections of $\ell_A,\ell_B$, and $\ell_C$ with the interior of $\triangle ABC$ are segments of lengths $55,45$, and $15$, respectively. Find the perimeter of the triangle whose sides lie on lines $\ell_A,\ell_B$, and $\ell_C$.
 
 
@@ -1017,86 +799,9 @@ The second equation implies that
 
 \textbf{Solution 1}
 
-Let the points of intersection of $\ell_A, \ell_B,\ell_C$ with $\triangle ABC$ divide the sides into consecutive segments $BD,DE,EC,CF,FG,GA,AH,HI,IB$. Furthermore, let the desired triangle be $\triangle XYZ$, with $X$ closest to side $BC$, $Y$ closest to side $AC$, and $Z$ closest to side $AB$. Hence, the desired perimeter is $XE+EF+FY+YG+GH+HZ+ZI+ID+DX=(DX+XE)+(FY+YG)+(HZ+ZI)+115$ since $HG=55$, $EF=15$, and $ID=45$. 
-
- Note that $\triangle AHG\sim \triangle BID\sim \triangle EFC\sim \triangle ABC$, so using similar triangle ratios, we find that $BI=HA=30$, $BD=HG=55$, $FC=\frac{45}{2}$, and $EC=\frac{55}{2}$. 
-
- We also notice that $\triangle EFC\sim \triangle YFG\sim \triangle EXD$ and $\triangle BID\sim \triangle HIZ$. Using similar triangles, we get that 
- \[FY+YG=\frac{GF}{FC}\cdot \left(EF+EC\right)=\frac{225}{45}\cdot \left(15+\frac{55}{2}\right)=\frac{425}{2}\]
- \[DX+XE=\frac{DE}{EC}\cdot \left(EF+FC\right)=\frac{275}{55}\cdot \left(15+\frac{45}{2}\right)=\frac{375}{2}\]
- \[HZ+ZI=\frac{IH}{BI}\cdot \left(ID+BD\right)=2\cdot \left(45+55\right)=200\]Hence, the desired perimeter is $200+\frac{425+375}{2}+115=600+115=\boxed{715}$-ktong
+Let the points of intersection of 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-Let the diagram be set up like that in Solution 1.
-
- By similar triangles we have 
- \[\frac{AH}{AB}=\frac{GH}{BC}\Longrightarrow AH=30\]
- \[\frac{IB}{AB}=\frac{DI}{AC}\Longrightarrow IB=30\]Thus 
- \[HI=AB-AH-IB=60\]
-
- Since $\bigtriangleup IHZ\sim\bigtriangleup ABC$ and $\frac{HI}{AB}=\frac{1}{2}$, the altitude of $\bigtriangleup IHZ$ from $Z$ is half the altitude of $\bigtriangleup ABC$ from $C$, say $\frac{h}{2}$. Also since $\frac{EF}{AB}=\frac{1}{8}$, the distance from $\ell_C$ to $AB$ is $\frac{7}{8}h$. Therefore the altitude of $\bigtriangleup XYZ$ from $Z$ is
- \[\frac{1}{2}h+\frac{7}{8}h=\frac{11}{8}h\].
-
- By triangle scaling, the perimeter of $\bigtriangleup XYZ$ is $\frac{11}{8}$ of that of $\bigtriangleup ABC$, or
- \[\frac{11}{8}(220+180+120)=\boxed{715}\]
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_7_Solution_Figure_1.png}
-                    \end{figure}
-                    Notation shown on diagram. By similar triangles we have
- \[k_1 = \frac{EF}{BC} = \frac{AE}{AB} = \frac {AF}{AC} = \frac {1}{4},\]
- \[k_2 = \frac{F''E''}{AC} = \frac {BF''}{AB} = \frac{1}{4},\] 
- \[k_3 = \frac{E'F'}{AB} = \frac{E'C }{AC} = \frac{1}{8}.\]So, 
- \[\frac{ZE}{BC} = \frac{F''E}{AB} = \frac{AB - AE - BF''}{AB} = 1 - k_1 - k_2,\]
- \[\frac{FY}{BC} = \frac{FE'}{AC} = \frac{AC - AF - CE'}{AC} = 1 - k_1 - k_3.\]
- \[k = \frac{ZY}{BC} = \frac{ZE + EF + FY}{BC} = (1 - k_1 - k_2) + k_1 + (1 - k_1 - k_3)\]
- \[k = 2 -  k_1 - k_2 - k_3 = 2 - \frac{1}{4} - \frac{1}{4}  - \frac{1}{8} = \frac{11}{8}.\]
- \[\frac{ZY+YX +XZ}{BC +AB + AC} = k \implies ZY + YX + XZ =\frac{11}{8} (220 + 120 + 180) = \boxed {715}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Way too short, just keep track of which side is which)}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_7_Solution_Figure_2.png}
-                    \end{figure}
-                    
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_7_Solution_Figure_3.png}
-                    \end{figure}
-                    
-
- Let's squish a triangle with side lengths 15, 22.5, and 27.5 into a equilateral triangle with side length 1. Then, the original triangle gets turned into a equilateral triangle with side length 8. Since 15 is one eighth of 120, it has a length of one. Since 45 and 55 are one fourth of 180 and 220 respectively, they are both two long. We extend the three segments to form a big equilateral triangle shown in black. Notice it has a side length of 11. Now that our task is done, let's undo the distortion. We get 11(15+22.5+27.5)=11(65)=715.
-
- 
-
-
 
 
 	\item (\textit{AIME II 2019}) The polynomial $f(z)=az^{2018}+bz^{2017}+cz^{2016}$ has real coefficients not exceeding $2019,$ and $f\left(\frac{1+\sqrt3i}{2}\right)=2015+2019\sqrt3i$. Find the remainder when $f(1)$ is divided by $1000$.
@@ -1123,8 +828,6 @@ We have $\frac{1+\sqrt{3}i}{2} = \omega$ where $\omega = e^{\frac{i\pi}{3}}$ is 
 
 
 
-
-
 \textbf{Solution 2}
 
 Denote $\frac{1+\sqrt{3}i}{2}$ with $\omega$.
@@ -1143,8 +846,6 @@ Denote $\frac{1+\sqrt{3}i}{2}$ with $\omega$.
 
 
  
-
-
 
 
 
@@ -1187,8 +888,6 @@ Calculate the first few powers of $\frac{1+\sqrt{3}i}{2}$.
  
 
 
-
-
 	\item (\textit{AIME II 2019}) Call a positive integer $n$ $k$-\textit{pretty} if $n$ has exactly $k$ positive divisors and $n$ is divisible by $k$. For example, $18$ is $6$-pretty. Let $S$ be the sum of the positive integers less than $2019$ that are $20$-pretty. Find $\frac{S}{20}$.
 
 
@@ -1215,8 +914,6 @@ Every 20-pretty integer can be written in form $n = 2^a 5^b k$, where $a \ge 2$,
 
 
 
-
-
 \textbf{Solution 2}
 
 For $n$ to have exactly $20$ positive divisors, $n$ can only take on certain prime factorization forms: namely, $p^{19}, p^9q, p^4q^3, p^4qr$ where $p,q,r$ are primes. No number that is a multiple of $20$ can be expressed in the first form because 20 has \textit{two} primes in its prime factorization, while the first form has only \textit{one}, and the only integer divisible by $20$ that has the second form is $2^{9}5$, which is 2560, greater than $2019$. 
@@ -1230,8 +927,6 @@ For $n$ to have exactly $20$ positive divisors, $n$ can only take on certain pri
  Rephrased for clarity by Afly
 
  
-
-
 
 
 
@@ -1288,8 +983,6 @@ We have the number being $20k = 2^2 \cdot 5 \cdot k$. We will consider some case
  
 
 
-
-
 	\item (\textit{AIME II 2019}) There is a unique angle $\theta$ between $0^\circ$ and $90^\circ$ such that for nonnegative integers $n,$ the value of $\tan(2^n\theta)$ is positive when $n$ is a multiple of $3$, and negative otherwise. The degree measure of $\theta$ is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
 
 
@@ -1315,8 +1008,6 @@ Note that if $\tan \theta$ is positive, then $\theta$ is in the first or third q
  Thus, $\theta = \frac{540}{7}^{\circ}$, and a quick check verifies that it does work. Our desired answer is $540 + 7 = \boxed{547}$.
 
  
-
-
 
 
 
@@ -1346,15 +1037,11 @@ As in the previous solution, we note that $\tan \theta$ is positive when $\theta
 
 
 
-
-
 \textbf{Solution 3}
 
 Since $\tan\left(\theta\right) > 0$, $0 < \theta < 90$.  Since $\tan\left(2\theta\right) < 0$, $\theta$ has to be in the second half of the interval (0, 90) ie (45, 90).  Since $\tan\left(4\theta\right) < 0$, $\theta$ has to be in the second half of that interval ie (67.5, 90).  And since $\tan\left(8\theta\right) > 0$, $\theta$ has to be in the first half of (67.5, 90).  Inductively, the pattern repeats: $\theta$ is in the second half of the second half of the first half of the second half of the second half... of the interval (0, 90).  Consider the binary representation of numbers in the interval (0, 1).  Numbers in the first half of the interval start with 0.0... and numbers in the second half start with 0.1... .  Similarly, numbers in the second half of the second half start with 0.11... etc.  So if we want a number in the first half of the second half of the second half... of the interval, we want its binary representation to be $0.11011011011..._2 = \frac{6}{7}_{10}$.  So we want the number which is 6/7 of the way through the interval (0, 90) so $\theta = \frac{6}{7}\cdot 90 = \frac{540}{7}$ and $p+q = 540 + 7 = \boxed{547}$
 
  
-
-
 
 
 
@@ -1366,15 +1053,11 @@ With some simple arithmetic and guess and check, we can set the lower bound and 
 
 
 
-
-
 \textbf{Solution 5}
 
 Since $7$ is the only number n such that f(x) = $2^{\lfloor x\rfloor}$ $\text{(mod 7)}$  has a period of 3, we find that $\theta$ is a multiple of ${\frac{180}{7}}^\circ$. Note that the tangents of ${\frac{180}{7}}^\circ$, ${\frac{360}{7}}^\circ$, ${\frac{540}{7}}^\circ$ are positive while those of ${\frac{720}{7}}^\circ$, ${\frac{900}{7}}^\circ$, and ${\frac{1080}{7}}^\circ$ are negative. With a bit of trial and error, we find $\theta$ is ${\frac{540}{7}}^\circ$ and $540+7$ is $\boxed{547}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2019}) Triangle $ABC$ has side lengths $AB=7,BC=8,$ and $CA=9.$ Circle $\omega_1$ passes through $B$ and is tangent to line $AC$ at $A.$ Circle $\omega_2$ passes through $C$ and is tangent to line $AB$ at $A.$ Let $K$ be the intersection of circles $\omega_1$ and $\omega_2$ not equal to $A.$ Then $AK=\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
@@ -1400,8 +1083,6 @@ Since $7$ is the only number n such that f(x) = $2^{\lfloor x\rfloor}$ $\text{(m
  -sillybone
 
  
-
-
 
 
 
@@ -1461,8 +1142,6 @@ Note that from the tangency condition that the supplement of $\angle CAB$ with r
 
 
 
-
-
 \textbf{Solution 3 (Inversion)}
 
 Consider an inversion with center $A$ and radius $r=AK$. Then, we have $AB\cdot AB^*=AK^2$, or $AB^*=\frac{AK^2}{7}$. Similarly, $AC^*=\frac{AK^2}{9}$. Notice that $AB^*KC^*$ is a parallelogram, since $\omega_1$ and $\omega_2$ are tangent to $AC$ and $AB$, respectively. Thus, $AC^*=B^*K$. Now, we get that
@@ -1473,8 +1152,6 @@ Consider an inversion with center $A$ and radius $r=AK$. Then, we have $AB\cdot 
  \[\Rightarrow AK=\frac{9}{2}\]Then, our answer is $9+2=\boxed{11}$. -brianzjk
 
  
-
-
 
 
 
@@ -1501,176 +1178,6 @@ Let the centers of the circles be $O_{1}$ and $O_{2}$ where the $O_{1}$ has the 
  -minor edits by faliure167
 
  
-
-
-
-
-
-\textbf{Solution 5 (Video)}
-
-
-
-
-
-
-
-\textbf{Solution 6 (Olympiad Geometry)}
-
-By the definition of $K$, it is the spiral center mapping $BA\to AC$, which means that it is the midpoint of the $A$-symmedian chord. In particular, if $M$ is the midpoint of $BC$ and $M'$ is the reflection of $A$ across $K$, we have $\triangle ABM'\sim\triangle AMC$. By Stewart's Theorem, it then follows that
- \[AK = \frac{AM'}{2} = \frac{AC\cdot AB}{2AM} = \frac{7\cdot 9}{2\sqrt{\frac{9^2\cdot 4 + 7^2\cdot 4 - 4^2\cdot 8}{8}}} = \frac{7\cdot 9}{2\sqrt{49}} = \frac{9}{2}\implies m + n = \boxed{11}.\]
-
- 
-
-
-
-
-
-\textbf{Solution 7 (Inversion simplified)}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2019_11_Solution_Figure_3.png}
-                    \end{figure}
-                    The median of $\triangle ABC$ is $AM = \sqrt{\frac {AB^2 +  AC^2 }{2} – \frac{BC^2}{4}} = 7$ (via Stewart's Theorem).
-
- Consider an inversion with center $A$ and radius $AK$ (inversion with respect the red circle). Let $K, B',$ and $C'$ be inverse points for $K, B,$ and $C,$ respectively.
-
- Image of line $AB$ is line $AB, B'$ lies on this line. 
-
- Image of $\omega_2$ is line $KC'||AB$ (circle $\omega_2$ passes through K, C and is tangent to the line $AB$ at point $A.$ Diagram shows circle and its image using same color).
-
- Similarly, $AC||B'K (B'K$ is the image of the circle $\omega_1$).
-
- Therefore $AB'KC'$ is a parallelogram, $AF$ is median of $\triangle AB'C'$ and $AK = 2 AF.$Then, we have $AB'=\frac{AK^2}{7}$.  $\triangle ABC \sim \triangle AC'B'$ with coefficient $k =\frac {AB'}{AC} = \frac{AK^2}{7\cdot 9}.$
-
- So median 
- \[AF = k AM \implies \frac {AK}{2} = AM \cdot k = 7\cdot  \frac{AK^2}{7\cdot 9} \implies  AK = \frac{9}{2}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
-
-\textbf{Solution 8 (Heavy Bash)}
-
-We start by assigning coordinates to point $A$, labeling it $(0,0)$ and point $B$ at $(7,0)$, and letting point $C$ be above the $x$-axis. Through an application of the Pythagorean Theorem and dropping an altitude to side $AB$, it is easy to see that $C$ has coordinates $(33/7, 24\sqrt{5}/7)$.
-
- Let $O1$ be the center of circle $\omega_1$  and $O2$ be the center of circle $\omega_2$. Since circle $\omega_1$ contains both points $A$ and $B$, $O1$ must lie on the perpendicular bisector of line $AB$, and similarly $O2$ must lie on the perpendicular bisector of line $AC$. Through some calculations, we find that the perpendicular bisector of $AB$ has equation $x = 3.5$, and the perpendicular bisector of $AC$ has equation $y = {-11\sqrt{5}/40 \cdot x} + 189\sqrt{5}/80$. 
-
- Since circle $\omega_1$ is tangent to line $AC$ at $A$, its radius must be perpendicular to $AC$ at $A$. Therefore, the radius has equation $y = {{-11\cdot\sqrt{5}/40} \cdot x}$. Substituting the $x$-coordinate of $O1$ into this, we find the y-coordinate of $O1 = {{-11 \cdot \sqrt{5}/40} \cdot 7/2} = {-77 \cdot \sqrt{5}/80}$. 
-
- Similarly, since circle $\omega_2$ is tangent to line $AB$ at $A$, its radius must be perpendicular to $AB$ at $A$. Therefore, the radius has equation $x = 0$ and combining with the previous result for $O2$ we get that the coordinates of $O2$ are $(0, 189\sqrt{5}/80)$. 
-
- We now find the slope of $O1O2$, the line joining the centers of circles $\omega_1$ and $\omega_2$, which turns out to be ${({266 \cdot \sqrt{5} / 80}) \cdot -2/7} = {-19 \cdot \sqrt{5}/20}$. Since the $y$-intercept of that line is at $O2(0,189\sqrt{5}/80)$, the equation is $y = {{-19 \cdot \sqrt{5}/20} \cdot x} + {189 \cdot \sqrt{5}/80}$.  Since circles $\omega_1$ and $\omega_2$ intersect at points $A$ and $K$, line $AK$ is the radical axis of those circles, and since the radical axis is always perpendicular to the line joining the centers of the circles, $AK$ has slope ${4 \cdot \sqrt{5}/19}$. Since point $A$ is $(0,0)$, this line has a $y$-intercept of $0$, so it has equation $y$ = ${{4 \cdot \sqrt{5}/19} \cdot x}$. 
-
- We set ${{4 \cdot \sqrt{5}/19} \cdot x} = {{-19 \cdot \sqrt{5}/20} \cdot x} + {189 \cdot \sqrt{5}/80}$ in order to find the intersection $I$ of the radical axis $AK$ and $O1O2$. Through some moderate bashing, we find that the intersection point is $I(57/28, {3 \cdot \sqrt{5}/7})$. We know that either intersection point of two circles is the same distance from the intersection of radical axis and line joining the centers of those circles, so reflecting $A$ over $I$ yields $K$ and $AK$ = $2AI$ = (This is the most tedious part of the bash) ${2 \cdot \sqrt{(57/28)^2 + ({3 \cdot \sqrt{5}/7)^2)}}} = {2 \cdot \sqrt{3969/784}} = {2 \cdot 63/28} = {2 \cdot 9/4} = 9/2$. Therefore the answer is $9 + 2 = \boxed{011}.$
-
- 
-
-
- 
-
-
-
-
-
-\textbf{Solution 9 (Barybash)}
-
-We use barycentric coordinates with $A=(1,\,0,\,0)$, $B=(0,\,1,\,0)$, $C=(0,\,0,\,1)$, $a:=BC$, $b:=CA$, $c:=AB$. Suppose $\omega_1$ is given by $-a^2yz-b^2zx-c^2xy+wz=0$. For $t\neq 0$, the power of $D=(1-t,\,0,\,t)$ with respect to $\omega_1$ should always be positive since $D$ lies outside $\omega_1$. Hence $-b^2t(1-t)+wt>0$ for all $t$. It follows that $w=b^2$. Similarly, $\omega_2$ is given by $-a^2yz-b^2zx-c^2xy+c^2y=0$. Let $K=:(p,\,q,\,r)$. Then $c^2q=b^2r$ so $r=\frac{c^2}{b^2}q$ and $p=1-q-\frac{c^2}{b^2}q$. Plugging these into $\omega_2$ yields\begin{align*}-a^2&\left(\frac{c^2}{b^2}\right)q^2-b^2\left(\frac{c^2}{b^2}\right)q\left(1-q-\frac{c^2}{b^2}q\right)q-c^2q\left(1-q-\frac{c^2}{b^2}q\right)q+c^2q=0\\\implies q&=\frac{b^2}{2b^2+2c^2-a^2}\\\implies r&=\frac{c^2}{2b^2+2c^2-a^2}.\end{align*}
-Now $\overrightarrow{AK}=(-q-r,\,q,\,r)$ so\begin{align*}AK^2&=\left(\frac{1}{2b^2+2c^2-a^2}\right)^2(-a^2b^2c^2-b^2c^2(-b^2-c^2)-c^2b^2(-b^2-c^2))\\&=\frac{b^2c^2}{2b^2+2c^2-a^2}\\&=\frac{63^2}{196}.\end{align*}
-Thus $AK=\frac{9}{2}\implies\boxed{011}$.
-
- - KevinYang2.71
-
- 
-
-
-
-
-
-\textbf{Solution 10 (for the memes)}
-
-We begin by trying to place $\triangle ABC$ in the coordinate plane. The semiperimeter is $\dfrac{7+8+9}{2}=12$, so the area of $\triangle ABC$ is $\sqrt{12 \cdot 5 \cdot 4 \cdot 3}=12\sqrt{5}$. 
-
- So, if we let $\overline{BC}$ be the base, then the height of the triangle must be $\frac{12 \sqrt 5}{\frac{1}{2} \cdot 8}=3 \sqrt{5}$. Therefore, we can let $B=(0,0)$, $C=(8,0)$, and $A=(2, 3\sqrt5)$.
-
- Now, we can find the equations of $\omega_1$ and $\omega_2$. 
-
- $\omega_1$ passes through $A$ and $B$, so its center lies on the perpendicular bisector of $\overline{AB}$. It is easy to determine that the equation of this perpendicular bisector is $y=\frac{-2\sqrt5}{15}x+\frac{49\sqrt5}{30}$, so the coordinates of the center can be expressed as $\left(k, -\frac{2\sqrt5}{15}k+\frac{49\sqrt5}{30} \right)$.
-
- Since the distance from the center to $A$ must be equal to the distance from line $AC$ (which has equation $x\sqrt{5}+2y-8\sqrt{5}=0$), we can say that
- \[k^2+\left(-\frac{2\sqrt5}{15} k+\frac{49\sqrt5}{30} \right)^2=\frac{1}{(\sqrt{5})^2+2^2} \left(k\sqrt{5}+2 \left(-\frac{2\sqrt5}{15}k+\frac{49\sqrt5}{30} \right)-8\sqrt5 \right)^2\] 
- \[k^2+\left(-\frac{2\sqrt{5}}{15}k+\frac{49\sqrt5}{30} \right)^2-\frac{1}{9} \left(\frac{11\sqrt5}{15}k-\frac{71\sqrt5}{15} \right)^2=0\]However, since we know that $\omega_1$ is tangent to $AC$, this equation has only one solution. So, rather than solving the quadratic like one normally would, we can instead use Vieta's formulas.
-
- It is easy to determine that the coefficient of $k^2$ in this equation is $\frac{64}{81}$ and that the coefficient of $k$ is $\frac{136}{81}$. So, the sum of the solutions to this equation is $-\frac{136}{64}=-\frac{17}{8}$. However, because these two solutions are the same, $k=-\frac{17}{16}$ and the center thus has coordinates $\left(-\frac{17}{16}, \frac{71\sqrt5}{40} \right)$. From this, it is easy to determine that the equation of $\omega_1$ is 
- \[\left(x+\frac{17}{16} \right)^2+\left(y-\frac{71\sqrt{5}}{40} \right)^2=\frac{21609}{1280}\]
-
- We can determine the equation for $\omega_2$ in a similar manner. The perpendicular bisector of $\overline{AC}$ has equation $y=\frac{2\sqrt5}{5}x-\frac{\sqrt 5}{2}$, so the center has coordinates of the form $\left(m, \frac{2\sqrt5}{5}m-\frac{\sqrt5}{2} \right)$.
-
- Again, the distance from the center to $C$ must be the same as the distance from the center to $AB$ (which has equation $3\sqrt{5}x-2y=0$). So, 
- \[(m-8)^2+\left(\frac{2\sqrt5}{5} m-\frac{\sqrt 5}{2} \right)^2=\frac{1}{(3\sqrt5)^2+2^2} \left(3\sqrt{5} m-2 \left(\frac{2\sqrt5}{5}m -\frac{\sqrt5}{2} \right) \right)^2\] 
- \[(m-8)^2+\left(\frac{2\sqrt5}{5} m-\frac{\sqrt 5}{2} \right)^2-\frac{1}{49} \left(\frac{11\sqrt5}{5}m+\sqrt 5 \right)^2=0\]
-
- Once again, the coefficient of $m^2$ in this equation is $\frac{64}{49}$ and the coefficient of $m$ is $-\frac{904}{49}$. So, the value of $m$ is $-\frac{1}{2} \cdot \frac{-904}{64}=\frac{113}{16}$ and the coordinatees of the center of $\omega_2$ are thus $\left(\frac{113}{16}, \frac{93\sqrt5}{40} \right)$. It follows that the equation of $\omega_2$ is 
- \[\left(x-\frac{113}{16} \right)^2+\left(y-\frac{93\sqrt5}{40} \right)^2=\frac{35721}{1280}\]
-
- Now, to find the coordinates of the intersection point $K$, we begin by finding the line that the two intersection points lie on.
-
- Subtracting the equations of the two circles and using the difference of squares factorization yields 
- \[(2x-6) \left(\frac{65}{8} \right)+\left(2y-\frac{41\sqrt5}{10} \right) \left(\frac{11\sqrt5}{20} \right)=-\frac{441}{40}\] 
- \[y=-\frac{65\sqrt5}{22}x+\frac{98\sqrt5}{11}\] 
-
- Substituting this back into the equation of $\omega_1$ yields 
- \[\left(x+\frac{17}{16} \right)^2+\left(\frac{65\sqrt5}{22}x-\frac{3139\sqrt5}{440} \right)^2-\frac{21609}{1280}=0\]
-
- Now, we can use Vieta's formulas again rather than solving the quadratic. Since these circles intersect at $A$, one of the solutions to the equation is $x=2$. So, we can subtract $2$ from the sum of the solutions to obtain the $x$-coordinate of $K$.
-
- The coefficient of $x^2$ in this equation is $\frac{21609}{484}$ and the coefficient of $x$ in this equation is $\frac{-100989}{484}$. So, the sum of the solutions to the equation is $\frac{100989}{21609}=\frac{229}{49}$ and the $x$-coordinate of $K$ is thus $\frac{229}{49}-2=\frac{131}{49}$. It is easy to determine that the $y$-coordinate of $K$ is $\frac{99\sqrt5}{98}$.
-
- To conclude, the length $AK$ is 
- \[\sqrt{\left(\frac{33}{49} \right)^2+\left(\frac{195 \sqrt 5}{98} \right)^2}=\frac{3}{98} \sqrt{21609}=\frac{9}{2}\] The requested sum is $m+n=9+2=\boxed{011}$.
-
- 
-
-
-
-
-
-\textbf{Solution 10 (Dumpty Point)}
-
-We recognize by the configuration that point $K$ is the A-dumpty point of $\triangle ABC$, and is thus the midpoint of the chord formed by the A-symmedian. Consider the point where the A-symmedian intersects the circumcircle of $\triangle ABC$, which we can denote as point $E$. Then, we know that $K$ is the midpoint of $AE$. Furthermore, draw the midpoint of $BC$, which we can denote as point $M$. 
-
- We note that $AM$ and $AE$ are the median and the symmedian, respectively, meaning that $AM$ and $AE$ are isogonal. In other words, we have $\angle BAM = \angle CAE$. Furthermore, we have $\angle ABM = \angle AEC$, meaning that $\triangle ABM \sim \triangle AEC$.
-
- 
-Thus, we have $\frac{AE}{AB} = \frac{AC}{AM}$, so $AE = \frac{(AB)(AC)}{AM} = \frac{63}{AM}$. Since $K$ is the midpoint of $AE$, we have $AK = \frac{63}{2(AM)}$. Thus, it suffices to find the length of $AM$. 
-
- 
-By Stewart's Theorem, we have 
- \[4(4)(8)+8(AM)^2 = 4(7)^2+4(9)^2.\] Dividing by $4$, we have $32+2(AM)^2 = 130,$ so $2(AM)^2 = 98$ and 
- \[AM = 7.\] Substituting back into the expression $AK = \frac{63}{2(AM)}$, we get our final length of $AK = \boxed{\frac{9}{2}}$ which gives us the final answer $9+2 = \boxed{011}$. We are done. 
-
- -cweu001
-
- 
-
-
-
-
-
-\textbf{Solution 12 (Desperate Ruler-and-Compass Construction)}
-
-We can use the information given in the problem to construct a to-scale diagram with a ruler and compass. First, mark a point A, then draw two circles of radii of $7$ and $9$ of any given unit, to represent the lengths $AB$ and $AC$, respectively. Pick a point on the circle of radius $7$ and draw a circle of radius $8$, and where it intersects the circle of radius $9$ is point $C$ (that point being $8$ away from $B$ and $9$ away from $A$).
-
- We know that $\omega_1$ passes through points $B$ and $A$, so its center must be on the perpendicular bisector of $A$ and $B$, which is easily constructable. We also know that it is tangent to line $AB$ at $A$, meaning that the center must also lie on the perpendicular line to $AC$ at $A$. This line is also easily constructable. The intersection of these two lines is the center of $\omega_1$, and we can use a compass to draw it. These steps are repeated on the right side of the diagram to draw $\omega_2$.
-
- Note point $K$ where $\omega_1$ and $\omega_2$ intersect, and use a ruler to measure length $AK$. If the diagram is drawn accurate and large enough, you should get $AK$ to be $4.5 = {\frac{9}{2}}$, giving an answer of $9+2 = \boxed{011}$.
-
- 
-
-
 
 
 	\item (\textit{AIME II 2019}) For $n\ge1$ call a finite sequence $(a_1,a_2,\ldots,a_n)$ of positive integers \textit{progressive} if $a_i<a_{i+1}$ and $a_i$ divides $a_{i+1}$ for $1\le i\le n-1$. Find the number of progressive sequences such that the sum of the terms in the sequence is equal to $360.$
@@ -1703,11 +1210,6 @@ Thus the answer is $N = 15+6+8+6+4+3+2+2+1 = \boxed{047}$.
  -scrabbler94
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2019}) Regular octagon $A_1A_2A_3A_4A_5A_6A_7A_8$ is inscribed in a circle of area $1.$ Point $P$ lies inside the circle so that the region bounded by $\overline{PA_1},\overline{PA_2},$ and the minor arc $\widehat{A_1A_2}$ of the circle has area $\frac{1}{7},$ while the region bounded by $\overline{PA_3},\overline{PA_4},$ and the minor arc $\widehat{A_3A_4}$ of the circle has area $\frac{1}{9}.$ There is a positive integer $n$ such that the area of the region bounded by $\overline{PA_6},\overline{PA_7},$ and the minor arc $\widehat{A_6A_7}$ of the circle is equal to $\frac{1}{8}-\frac{\sqrt2}{n}.$ Find $n.$
@@ -1752,8 +1254,6 @@ The actual size of the diagram doesn't matter. To make calculation easier, we di
 
 
 
-
-
 \textbf{Solution 2}
 
 Instead of considering the actual values of the areas, consider only the changes in the areas that result from moving point $P$ from the center of the circle. We will proceed by coordinates. Set the origin at the center of the circle and refer to the following diagram, where the octagon is oriented so as $A_1A_2$ is horizontal (and therefore $A_3A_4$ is vertical). Note that the area bounded by $\overline{A_iA_j}$ and the arc $\widehat{A_iA_j}$ is fixed, so we only need to consider the relevant triangles.
@@ -1778,8 +1278,6 @@ Instead of considering the actual values of the areas, consider only the changes
 
 
 
-
-
 \textbf{Solution 3 (Shoelace)}
 
 Let $r=1/\sqrt{\pi}$ be the radius of the circle, and plot the octagon on the Cartesian plane such that $A_i = (r\cos(\pi i/4),r\sin(\pi i/4))$ for each $i$. Let $P$ have coordinates $(x,y)$. Note that the area bounded by the circle and any segment of the form $A_iA_{i+1}$ is 
@@ -1792,8 +1290,6 @@ Note that $[A_1A_2P] = \frac{1}{7}-S$ and $[A_3A_4P] = \frac{1}{9}-S$. Let $X=rx
 The requested integer is $n=\boxed{504}.$~TThB0501
 
  
-
-
 
 
 	\item (\textit{AIME II 2019}) Find the sum of all positive integers $n$ such that, given an unlimited supply of stamps of denominations $5,n,$ and $n+1$ cents, $91$ cents is the greatest postage that cannot be formed.
@@ -1845,8 +1341,6 @@ The two valid values we found were $47$ and $24,$ so the answer is $47 + 24 = \b
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice that if we let $n + 1$ be a multiple of $5,$ then by the Chicken McNugget Theorem we have $5n - (n + 5) = 91 \implies n = 24.$ We find this is the smallest possible value of $n$.
@@ -1873,8 +1367,6 @@ Notice that if we let $n + 1$ be a multiple of $5,$ then by the Chicken McNugget
 
 
 
-
-
 \textbf{Solution 3}
 
 Notice that once we hit all residues $\bmod 5$, we'd be able to get any number greater (since we can continually add $5$ to each residue). Furthermore, $n\not\equiv 0,1\pmod{5}$ since otherwise $91$ is obtainable (by repeatedly adding $5$ to either $n$ or $n+1$) Since the given numbers are $5$, $n$, and $n+1$, we consider two cases: when $n\equiv 4\pmod{5}$ and when $n$ is not that. 
@@ -1889,8 +1381,6 @@ Notice that once we hit all residues $\bmod 5$, we'd be able to get any number g
 
 
 
-
-
 \textbf{Solution 4}
 
 Obviously $n\le 90$. We see that the problem's condition is equivalent to: 96 is the smallest number that can be formed which is 1 mod 5, and 92, 93, 94 can be formed (95 can always be formed). Now divide this up into cases. If $n\equiv 0\pmod{5}$, then 91 can be formed by using $n+1$ and some 5's, so there are no solutions for this case. If $n\equiv 1\pmod{5}$, then 91 can be formed by using $n$ and some 5's, so there are no solutions for this case either.
@@ -1898,8 +1388,6 @@ Obviously $n\le 90$. We see that the problem's condition is equivalent to: 96 is
  For $n\equiv 2\pmod{5}$, $2n+2$ is the smallest value that can be formed which is 1 mod 5, so $2n+2=96$ and $n=47$. We see that $92=45+47$, $93=48+45$, and $94=47+47$, so $n=47$ does work. If $n\equiv 3\pmod{5}$, then the smallest value that can be formed which is 1 mod 5 is $2n$, so $2n=96$ and $n=48$. We see that $94=49+45$ and $93=48+45$, but 92 cannot be formed, so there are no solutions for this case. If $n\equiv 4\pmod{5}$, then we can just ignore $n+1$ since it is a multiple of 5, meaning that the Chicken McNugget theorem is a both necessary and sufficient condition, and it states that $5n-n-5=91$ meaning $4n=96$ and $n=24$.Hence, the only two $n$ that work are $n=24$ and $n=47$, so our answer is $24+47=\boxed{071}$.-Stormersyle
 
  
-
-
 
 
 
@@ -1916,8 +1404,6 @@ Now for $n = 24$ clearly $91$ is unobtainable since we need a $4 \pmod {5}$ amou
  - blueprimes
 
  
-
-
 
 
 
@@ -1983,8 +1469,6 @@ We can use the formula $g = \left( \max_{j \in \{1, 2, \ldots, a_1-1\}} R_j \rig
  
 
 
-
-
 	\item (\textit{AIME II 2019}) In acute triangle $ABC,$ points $P$ and $Q$ are the feet of the perpendiculars from $C$ to $\overline{AB}$ and from $B$ to $\overline{AC}$, respectively. Line $PQ$ intersects the circumcircle of $\triangle ABC$ in two distinct points, $X$ and $Y$. Suppose $XP=10$, $PQ=25$, and $QY=15$. The value of $AB\cdot AC$ can be written in the form $m\sqrt n$ where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n$.
 
 
@@ -2009,8 +1493,6 @@ First we have $a\cos A=PQ=25$, and $(a\cos A)(c\cos C)=(a\cos C)(c\cos A)=AP\cdo
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $BC=a$, $AC=b$, and $AB=c$. Let $\cos\angle A=k$. Then $AP=bk$ and $AQ=ck$. 
@@ -2027,8 +1509,6 @@ Let $BC=a$, $AC=b$, and $AB=c$. Let $\cos\angle A=k$. Then $AP=bk$ and $AQ=ck$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $AP=p$, $PB=q$, $AQ=r$, and $QC=s$.  By Power of a Point, 
@@ -2040,8 +1520,6 @@ Let $AP=p$, $PB=q$, $AQ=r$, and $QC=s$.  By Power of a Point,
  By asr41
 
  
-
-
 
 
 
@@ -2079,8 +1557,6 @@ This solution is directly based of @CantonMathGuy's solution.We start off with a
 
 
 
-
-
 \textbf{Solution 5}
 
 
@@ -2094,8 +1570,6 @@ This solution is directly based of @CantonMathGuy's solution.We start off with a
 
 
 
-
-
 \textbf{Solution 6}
 
 Certainly $\triangle AQP\sim\triangle ABC$. Let $k=AP$ and $\ell=AQ$, and let $c$ be the constant with $BC = PQ\cdot c = 25c$. Then $PB = \ell c-k$ and $QC = kc-\ell$. By Power of a Point at $P$ and $Q$, we obtain the equations\begin{align*}AP\cdot PB &= k(\ell c-k) = k\ell c-k^2 = 400,\\AQ\cdot QC &= \ell(kc-\ell) = k\ell c-\ell^2 = 525.\end{align*}
@@ -2106,8 +1580,6 @@ Equating the two and simplifying, we arrive at the equation
 The answer is $560+14 = \boxed{574}.$
 
  
-
-
 
 
 
@@ -2151,17 +1623,7 @@ Let the circumcircle of $\triangle ABC$ be $\omega$. We know that
 
  $\frac{1400 \cdot 1400}{50 \cdot \sqrt{10} \cdot \sqrt{35}} = \frac{28 \cdot 1400}{\sqrt{10} \cdot \sqrt{35}} = \frac{28 \cdot 1400}{\sqrt{5} \cdot \sqrt{2} \cdot \sqrt{5} \cdot \sqrt{7}} = \frac{28 \cdot 1400}{5 \cdot \sqrt{14}} = \frac{28 \cdot 280 \cdot \sqrt{14}}{14} = 560\sqrt{14}$ thus the answer is $560 + 14 = \boxed{574}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
- 
-
-
 
 
 \end{enumerate}

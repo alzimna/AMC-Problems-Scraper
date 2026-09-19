@@ -1,0 +1,1307 @@
+\section{AMC 8 2022}
+        \begin{enumerate}
+        	\item (\textit{AMC 8 2022}) The Math Team designed a logo shaped like a multiplication symbol, shown below on a grid of 1-inch squares. What is the area of the logo in square inches?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_1_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ $\textbf{(A) } 10 \qquad \textbf{(B) } 12 \qquad \textbf{(C) } 13 \qquad \textbf{(D) } 14 \qquad \textbf{(E) } 15$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1 (A quick solution.)}
+
+We can see that there are 4 whole squares, since the area of each square will be 1, 4 * 1 = 4. Next, there are 12 half squares, and 2 half squares are 1 whole square, so 12/2 = 6 whole squares. The area of this will be 6 * 1 = 6. Finally, we can add the 2 numbers. 4 + 6  = $\boxed{\textbf{(A)} ~10}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Draw the following four lines as shown:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_1_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ We see these lines split the figure into five squares with side length $\sqrt2$. Thus, the area is $5\cdot\left(\sqrt2\right)^2=5\cdot 2 = \boxed{\textbf{(A) } 10}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+There are $5$ lattice points in the interior of the logo and $12$ lattice points on the boundary of the logo. Because of Pick's Theorem, the area of the logo is $5+\frac{12}{2}-1=\boxed{\textbf{(A) } 10}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Notice that the area of the figure is equal to the area of the $4 \times 4$ square subtracted by the $12$ triangles that are half the area of each square, which is $1$. The total area of the triangles not in the figure is $12 \cdot \frac{1}{2} = 6$, so the answer is $16-6 = \boxed{\textbf{(A) } 10}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Draw the following four lines as shown:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_1_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ The area of the big square is $4$, and the area of each triangle is $0.5$. There are $12$ of these triangles, so the total area of all the triangles is $0.5\cdot12=6$. Therefore, the area of the entire figure is $4+6=\boxed{\textbf{(A) } 10}$. 
+
+ 
+
+
+
+\textbf{Solution 6 (Shoelace Theorem)}
+
+The coordinates are $(1,2), (2,1), (3,2), (4,1), (5,2), (4,3), (5,4), (4,5), (3,4), (2,5), (1,4), (2,3)$Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Shoelace\_Theorem}{Shoelace Theorem} to get $\boxed{\textbf{(A)} ~10}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Quick)}
+
+If the triangles are rearranged such that the gaps are filled, there would be a $4$ by $2$ rectangle, and two $1$ by $1$ squares are present. Thus, the answer is $\boxed{\textbf{(A)} ~10}$. 
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Consider these two operations:
+
+ \begin{align*} a \, \blacklozenge \, b &= a^2 - b^2\\ a \, \bigstar \, b &= (a - b)^2 \end{align*}
+
+What is the value of $(5 \, \blacklozenge \, 3) \, \bigstar \, 6?$
+
+
+ $\textbf{(A) } {-}20 \qquad \textbf{(B) } 4 \qquad \textbf{(C) } 16 \qquad \textbf{(D) } 100 \qquad \textbf{(E) } 220$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+We can find a general solution to any $((a \, \blacklozenge \, b) \, \bigstar \, c)$.
+ \[((a \, \blacklozenge \, b) \, \bigstar \, c)\]
+ \[=((a^2-b^2) \, \bigstar \, c)\]
+ \[=(a^2-b^2-c)^2\]
+ \[=a^4+b^4-(a^2)(b^2)-2(a^2)(c)-(b^2)(a^2)+2(b^2)(c)+c^2\]
+ \[=5^4+3^4-(5^2)(3^2)-2(5^2)(6)-(3^2)(5^2)+2(3^2)(6)+6^2\]
+ \[=625+81-225-300-225+108+36\]
+ \[=\boxed{\textbf{(D) } 100}\]
+
+ To time wasting
+
+ just go to solution 2
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The problem is basically ((5\textasciicircum{}2-3\textasciicircum{}2)-6)\textasciicircum{}2
+
+ =(16-6)\textasciicircum{}2=10\textasciicircum{}2100 = option D
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) When three positive integers $a$, $b$, and $c$ are multiplied together, their product is $100$. Suppose $a < b < c$. In how many ways can the numbers be chosen?
+
+
+ $\textbf{(A) } 0 \qquad \textbf{(B) } 1\qquad\textbf{(C) } 2\qquad\textbf{(D) } 3\qquad\textbf{(E) } 4$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+The positive divisors of $100$ are 
+ \[1,2,4,5,10,20,25,50,100.\]It is clear that $10\leq c\leq50,$ so we apply casework to $c:$
+
+ 
+                \begin{itemize}
+                    \item If $c=10,$ then $(a,b,c)=(2,5,10).$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If $c=20,$ then $(a,b,c)=(1,5,20).$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If $c=25,$ then $(a,b,c)=(1,4,25).$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If $c=50,$ then $(a,b,c)=(1,2,50).$
+                \end{itemize}
+
+
+                Together, the numbers $a,b,$ and $c$ can be chosen in $\boxed{\textbf{(E) } 4}$ ways.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The positive divisors of $100$ are 
+ \[1,2,4,5,10,20,25,50,100.\]We apply casework to $a$:
+
+ If $a=1$, then there are $3$ cases:
+
+ 
+                \begin{itemize}
+                    \item $b=2,c=50$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item $b=4,c=25$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item $b=5,c=20$
+                \end{itemize}
+
+
+                If $a=2$, then there is only $1$ case:
+
+ 
+                \begin{itemize}
+                    \item $b=5,c=10$
+                \end{itemize}
+
+
+                In total, there are $3+1=\boxed{\textbf{(E) } 4}$ ways to choose distinct positive integer values of $a,b,c$.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) The letter \textbf{M} in the figure below is first reflected over the line $q$ and then reflected over the line $p$. What is the resulting image?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_4_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_4_Problem_Figure_2.png}
+                    \end{figure}
+                    
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+When \textbf{M} is first reflected over the line $q,$ we obtain the following diagram:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_4_Solution_Figure_1.png}
+                    \end{figure}
+                    When \textbf{M} is then reflected over the line $p,$ we obtain the following diagram:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_4_Solution_Figure_2.png}
+                    \end{figure}
+                    Therefore, the answer is $\boxed{\textbf{(E)}}.$
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Anna and Bella are celebrating their birthdays together. Five years ago, when Bella turned $6$ years old, she received a newborn kitten as a birthday present. Today the sum of the ages of the two children and the kitten is $30$ years. How many years older than Bella is Anna?
+
+
+ $\textbf{(A) } 1 \qquad \textbf{(B) } 2 \qquad \textbf{(C) } 3 \qquad \textbf{(D) } 4 \qquad \textbf{(E) } ~5$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Five years ago, Bella was $6$ years old, and the kitten was $0$ years old.
+
+ Today, Bella is $11$ years old, and the kitten is $5$ years old. It follows that Anna is $30-11-5=14$ years old.
+
+ Therefore, Anna is $14-11=\boxed{\textbf{(C) } 3}$ years older than Bella.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We assume that
+
+ a)the current age of Anna = a
+
+ b) the current age of Bella = b
+
+ b-5=6
+
+ Thus, b = 11 
+
+ Kitten = 5 (as the it got it 5 years ago)
+
+ Since the total age of kitten and girls = 30, 
+
+ then a = 30-(11+5)
+
+ =30 - 16
+
+ =14 years.
+
+ BUT THIS IS NOT THE FINAL ANSWER!!!
+
+ a-b = 14-11 = 3 = option C
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Three positive integers are equally spaced on a number line. The middle number is $15,$ and the largest number is $4$ times the smallest number. What is the smallest of these three numbers? 
+
+
+ $\textbf{(A) } 4 \qquad \textbf{(B) } 5 \qquad \textbf{(C) } 6 \qquad \textbf{(D) } 7 \qquad \textbf{(E) } 8$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let the smallest number be $x.$ It follows that the largest number is $4x.$
+
+ Since $x,15,$ and $4x$ are equally spaced on a number line, we have
+ \begin{align*} 4x-15 &= 15-x \\ 5x &= 30 \\ x &= \boxed{\textbf{(C) } 6}. \end{align*}
+~MRENTHUSIASM
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let the common difference of the arithmetic sequence be $d$. Consequently, the smallest number is $15-d$ and the largest number is $15+d$. As the largest number is $4$ times the smallest number, $15+d=60-4d\implies d=9$. Finally, we find that the smallest number is $15-9=\boxed{\textbf{(C) } 6}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let the smallest number be $x$. Because $x$ and $4x$ are equally spaced from $15$, $15$ must be the average. By adding $x$ and $4x$ and dividing by $2$, we get that the mean is also $2.5x$. We get that $2.5x=15$, and solving gets $x=\boxed{\textbf{(C) } 6}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Since the problem is giving us the options, we can try all of them. The differences MUST be equal because the numbers have to be evenly spaced on the number line. We see that 4 cannot work because 15 - 4 = 11, and 4 * 4 = 16. 16 - 15 is not 11, so this option does not work. Next, we can try 5. We see that this also does not work because 15 - 5 = 10, and 5 * 4 = 20. 20 - 15 = 5, and this is not 10. We can then try 6 to see that it does work. 15 - 6 = 9, and 6 * 4 = 24. 24 - 15 = 9. The differences are equivalent, so we can see that 6 indeed does work. Therefore, the answer is $\boxed{\textbf{(C)} ~6}$.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) When the World Wide Web first became popular in the $1990$s, download speeds reached a maximum of about $56$ kilobits per second. Approximately how many minutes would the download of a $4.2$-megabyte song have taken at that speed? (Note that there are $8000$ kilobits in a megabyte.)
+
+
+ $\textbf{(A) } 0.6 \qquad \textbf{(B) } 10 \qquad \textbf{(C) } 1800 \qquad \textbf{(D) } 7200 \qquad \textbf{(E) } 36000$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Notice that the number of kilobits in this song is $4.2 \cdot 8000 = 8 \cdot 7 \cdot 6 \cdot 100.$
+
+ We must divide this by $56$ in order to find out how many seconds this song would take to download: $\frac{\cancel{8}\cdot\cancel{7}\cdot6\cdot100}{\cancel{56}} = 600.$
+
+ Finally, we divide  this number by $60$ because this is the number of <i>\textbf{seconds}</i> to get the answer $\frac{600}{60}=\boxed{\textbf{(B) } 10}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We seek a value of $x$ that makes the following equation true, since every other quantity equals $1$.
+
+ 
+ \[\frac{x\ \text{min}}{4.2\ \text{mb}} \cdot \frac{56\ \text{kb}}{1\ \text{sec}} \cdot \frac{1\ \text{mb}}{8000\ \text{kb}} \cdot \frac{60\ \text{sec}}{1\ \text{min}} = 1.\]Solving yields $x=\boxed{\textbf{(B) } 10}$.
+
+ -Benedict T (countmath1)
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) What is the value of 
+ \[\frac{1}{3}\cdot\frac{2}{4}\cdot\frac{3}{5}\cdots\frac{18}{20}\cdot\frac{19}{21}\cdot\frac{20}{22}?\]
+
+
+ $\textbf{(A) } \frac{1}{462} \qquad \textbf{(B) } \frac{1}{231} \qquad \textbf{(C) } \frac{1}{132} \qquad \textbf{(D) } \frac{2}{213} \qquad \textbf{(E) } \frac{1}{22}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Note that common factors (from $3$ to $20,$ inclusive) of the numerator and the denominator cancel. Therefore, the original expression becomes 
+ \[\frac{1}{\cancel{3}}\cdot\frac{2}{\cancel{4}}\cdot\frac{\cancel{3}}{\cancel{5}}\cdots\frac{\cancel{18}}{\cancel{20}}\cdot\frac{\cancel{19}}{21}\cdot\frac{\cancel{20}}{22}=\frac{1\cdot2}{21\cdot22}=\frac{1}{21\cdot11}=\boxed{\textbf{(B) } \frac{1}{231}}.\]
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The original expression becomes 
+ \[\frac{20!}{22!/2!} = \frac{20! \cdot 2!}{22!} = \frac{20! \cdot 2}{20! \cdot 21 \cdot 22} = \frac{2}{21 \cdot 22} = \frac{1}{21 \cdot 11} = \boxed{\textbf{(B) } \frac{1}{231}}.\]~hh99754539
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) A cup of boiling water ($212^{\circ}\text{F}$) is placed to cool in a room whose temperature remains constant at $68^{\circ}\text{F}$. Suppose the difference between the water temperature and the room temperature is halved every $5$ minutes. What is the water temperature, in degrees Fahrenheit, after $15$ minutes?
+
+
+ $\textbf{(A)} ~77\qquad\textbf{(B)} ~86\qquad\textbf{(C)} ~92\qquad\textbf{(D)} ~98\qquad\textbf{(E)} ~104$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+Initially, the difference between the water temperature and the room temperature is $212-68=144$ degrees Fahrenheit.
+
+ After $5$ minutes, the difference between the temperatures is $144\div2=72$ degrees Fahrenheit.
+
+ After $10$ minutes, the difference between the temperatures is $72\div2=36$ degrees Fahrenheit.
+
+ After $15$ minutes, the difference between the temperatures is $36\div2=18$ degrees Fahrenheit. At this point, the water temperature is $68+18=\boxed{\textbf{(B) } 86}$ degrees Fahrenheit.
+
+ <u>\textbf{Remark}</u>
+
+ Alternatively, we can condense the solution above into the following equation: 
+ \[68+(212-68)\cdot\left(\frac12\right)^{\frac{15}{5}}=86.\]~MRENTHUSIASM ~MathFun1000
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) One sunny day, Ling decided to take a hike in the mountains. She left her house at $8 \, \textsc{am}$, drove at a constant speed of $45$ miles per hour, and arrived at the hiking trail at $10 \, \textsc{am}$. After hiking for $3$ hours, Ling drove home at a constant speed of $60$ miles per hour. Which of the following graphs best illustrates the distance between Ling’s car and her house over the course of her trip?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_10_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1 (Analysis)}
+
+Note that:
+
+ <ul style="list-style-type:square;"> \item \textbf{At $\boldsymbol{8 \, \footnotesize\textbf{AM},}$ Ling's car was $\boldsymbol{0}$ miles from her house.} 
+
+ \item From $8 \, \textsc{am}$ to $10 \, \textsc{am},$ Ling drove to the hiking trail at a constant speed of $45$ miles per hour. \textbf{It follows that at $\boldsymbol{10 \, \footnotesize\textbf{AM},}$ Ling's car was $\boldsymbol{45\cdot2=90}$ miles from her house.}
+
+  
+
+ \item From $10 \, \textsc{am}$ to $1 \, \textsc{pm},$ Ling did not move her car. \textbf{It follows that at $\boldsymbol{1 \, \footnotesize\textbf{PM},}$ Ling's car was still $\boldsymbol{90}$ miles from her house.}
+
+  
+
+ \item From $1 \, \textsc{pm},$ Ling drove home at a constant speed of $60$ miles per hour. So, she arrived home $90\div60=1.5$ hour later. \textbf{It follows that at $\boldsymbol{2:30 \, \footnotesize\textbf{PM},}$ Ling's car was $\boldsymbol{0}$ miles from her house.}
+
+ 
+
+ </ul>Therefore, the answer is $\boxed{\textbf{(E)}}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Elimination)}
+
+Ling's trip took $2$ hours, thus she traveled for $2 \times 45=90$ miles. Choices $\textbf{(B)}$, $\textbf{(C)}$, and $\textbf{(D)}$ are eliminated. Ling drove $45$ miles per hour (mph) to the mountains, and $60$ mph back to her house, so the rightmost slope must be steeper than the leftmost one. Choice $\textbf {(A)}$ is eliminated.This leaves us with $\boxed{\textbf{(E)}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Elimination)}
+
+Using the $\text{speed} = \frac{\text{distance}}{\text{time}}$ formula, and plugging in the values $45$ mph and $2$ hrs, we get that the distance from Ling's house to the mountains is $90$ miles. That means the first slope ends at $90,$ so choices $\textbf{(B)}, \textbf{(C)},$ and $\textbf{(D)}$ are eliminated.
+
+ Furthermore, if the distance is $90$ miles, and Ling is returning home at $60$ mph, it must have taken her $1.5$ hours. Adding $1.5$ and $3$ (how long she hiked for) to her arrival time, $10$ AM, we see she must have come back home at $2:30$ PM. Choice $\textbf{(A)}$ is eliminated, so the only valid choice left is choice $\boxed{\textbf{(E)}}.$
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Henry the donkey has a very long piece of pasta. He takes a number of bites of pasta, each time eating $3$ inches of pasta from the middle of one piece. In the end, he has $10$ pieces of pasta whose total length is $17$ inches. How long, in inches, was the piece of pasta he started with?
+
+
+ $\textbf{(A)} ~34\qquad\textbf{(B)} ~38\qquad\textbf{(C)} ~41\qquad\textbf{(D)} ~44\qquad\textbf{(E)} ~47$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Let's say that the first strand of pasta he had is x. The first time he takes a bite of this strand will make it 2 pieces. This is x - 3. The second time he takes the bites of EACH strand will become (x - 3) * 3(2). The 2 is for the two bites he took, 1 for each strand. This equation is showing that for every bite that he is taking, he is taking off 3 inches. This is being showed in the 3(2). He took 2 bites, each taking off 3 inches. Now, the problem is stating that their are 10 pieces of pasta and the TOTAL length is 17 inches. We have to plug in the total number of bites to the equation (x - 3) * 3( ). To find this out, we can see that for the number of strands there are, he took 1 less bite than that number. For example, if there are 2 pieces, he took 1 bite to get those. Since there are 10 pieces, he took 9 bites. The equation then becomes, (x - 3) * 3(9) = 17. To solve this, x = 44. Therefore, the answer is $\boxed{\textbf{(D) } 44}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+If there are $10$ pieces of pasta, Henry took $10-1=9$ bites. Each of these $9$ bites took $3$ inches of pasta out, so all his bites in total took away $9\cdot 3 = 27$ inches of pasta. Thus, the original piece of pasta was $27+17=\boxed{\textbf{(D) } 44}$ inches long.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) The arrows on the two spinners shown below are spun. Let the number $N$  equal $10$ times the number on Spinner $\text{A}$, added to the number on Spinner $\text{B}$. What is the probability that $N$ is a perfect square number?
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_12_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A)} ~\dfrac{1}{16}\qquad\textbf{(B)} ~\dfrac{1}{8}\qquad\textbf{(C)} ~\dfrac{1}{4}\qquad\textbf{(D)} ~\dfrac{3}{8}\qquad\textbf{(E)} ~\dfrac{1}{2}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+First, we calculate that there are a total of $4\cdot4=16$ possibilities. Now, we list all of two-digit perfect squares. $64$ and $81$ are the only ones that can be made using the spinner. Consequently, there is a $\frac{2}{16}=\boxed{\textbf{(B) }\dfrac{1}{8}}$ probability that the number formed by the two spinners is a perfect square.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+There are $4 \cdot 4 = 16$ total possibilities of $N$. We know $N=10A+B$, which $A$ is a number from spinner $A$, and $B$ is a number from spinner $B$. Also, notice that there are no perfect squares in the $50$s or $70$s, so only  $4-2=2$ values of N work, namely $64$ and $81$. Hence, $\frac{2}{16}=\boxed{\textbf{(B) }\dfrac{1}{8}}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+\begin{verbatim}
+We can see that the smallest number on the spinner 1 is 5. Possibilities for 5 are 51,52,53, and 54
+\end{verbatim}
+
+Second one is 6 in which we get 61,62,63,64. We see that 64 is a square number.The next number is 7. Possibilities are 71,72,73, and 74. None of them are squares.Finally, we have 8. 81,82,83, and 84 are the numbers possible. 81 is a perfect square.As our trusty probability formula tells us, probability is the number of desired outcomes over possible outcomes.The possible outcomes are 16 and the desired outcomes are 2. The fraction is 2/16. In simplest terms, it is 1/8.Bringing to answer choice (B)~ I would like to stay anonymous
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) How many positive integers can fill the blank in the sentence below?
+
+
+ “One positive integer is \_\_\_\_\_ more than twice another, and the sum of the two numbers is $28$.”
+
+
+ $\textbf{(A) } 6 \qquad \textbf{(B) } 7 \qquad \textbf{(C) } 8 \qquad \textbf{(D) } 9 \qquad \textbf{(E) } 10$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Let $m$ and $n$ be positive integers such that $m>n$ and $m+n=28.$ It follows that $m=2n+d$ for some positive integer $d.$ We wish to find the number of possible values for $d.$
+
+ By substitution, we have $(2n+d)+n=28,$ from which $d=28-3n.$ Note that $n=1,2,3,\ldots,9$ each generate a positive integer for $d,$ so there are $\boxed{\textbf{(D) } 9}$ possible values for $d.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let the positive integer be $x$, \_\_\_\_ be $z$ and twice another $2y$. We can form the following equations:
+
+ $x$ + $y$ = $28$
+
+ $x$ - $2y$ = $z$
+
+ We use elimination to get this equation:$3y$ = 28 - $z$. The smallest that $z$ can be is $1$ ($28$ - $1$ = $27$ (True)), and the largest $25$ ($28$ - $25$ = $3$ (True)). $25$ - $1$ = 24, and since we only want multiples of $3$ this will occur every 3 numbers. 24 / 3 = 8. We are missing the $1$ which we subtracted earlier, so our final answer will be 9 numbers, or $\boxed{\textbf{(D) } 9}$. 
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) In how many ways can the letters in $\textbf{BEEKEEPER}$ be rearranged so that two or more $\textbf{E}$s do not appear together?
+
+
+ $\textbf{(A) } 1 \qquad \textbf{(B) } 4 \qquad \textbf{(C) } 12 \qquad \textbf{(D) } 24 \qquad \textbf{(E) } 120$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+All valid arrangements of the letters must be of the form 
+ \[\textbf{E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E}.\]The problem is equivalent to counting the arrangements of $\textbf{B},\textbf{K},\textbf{P},$ and $\textbf{R}$ into the four blanks, in which there are $4!=\boxed{\textbf{(D) } 24}$ ways.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Laszlo went online to shop for black pepper and found thirty different black pepper options varying in weight and price, shown in the scatter plot below. In ounces, what is the weight of the pepper that offers the lowest price per ounce?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_15_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ $\textbf{(A) }1\qquad\textbf{(B) }2\qquad\textbf{(C) }3\qquad\textbf{(D) }4\qquad\textbf{(E) }5$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Elimination)}
+
+By the answer choices, we can disregard the points that do not have integer weights. As a result, we obtain the following diagram:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_15_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ We then proceed in the same way that we had done in Solution 1. Following the steps, we figure out the blue dot that yields the lowest slope, along with passing the origin. We then can look at the x-axis(in this situation, the weight) and figure out it has $\boxed{\textbf{(C) } 3}$ ounces.
+
+ 
+
+
+
+\textbf{Solution 2 (Elimination)}
+
+We can find the lowest point in each line ($1$, $2$, $3$, $4$, or $5$) and find the price per pound. (Note that we don't need to find the points higher than the points below since we are finding the lowest price per pound.)
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_15_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ The red dot has a price per pound of something that is larger than $1$. The green dot has a price per pound of $1$. The blue dot has a price per pound of something like $\frac{2.5}{3}$. The orange dot has a price per pound that is less than $1$, but is very close to it. The purple dot has a price per pound of something like $\frac{4.5}{5}$. We see that choices $\textbf{(A)}$, $\textbf{(B)}$,and $\textbf{(D)}$ are eliminated. Also, $\frac{4.5}{5} > \frac{2.5}{3}$ thus the answer is $\boxed{\textbf{(C) } 3}$.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Four numbers are written in a row. The average of the first two is $21,$ the average of the middle two is $26,$ and the average of the last two is $30.$ What is the average of the first and last of the numbers?
+
+
+ $\textbf{(A) } 24 \qquad \textbf{(B) } 25 \qquad \textbf{(C) } 26 \qquad \textbf{(D) } 27 \qquad \textbf{(E) } 28$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1 (Arithmetic)}
+
+Note that the sum of the first two numbers is $21\cdot2=42,$ the sum of the middle two numbers is $26\cdot2=52,$ and the sum of the last two numbers is $30\cdot2=60.$
+
+ It follows that the sum of the four numbers is $42+60=102,$ so the sum of the first and last numbers is $102-52=50.$ Therefore, the average of the first and last numbers is $50\div2=\boxed{\textbf{(B) } 25}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Algebra)}
+
+Let $a,b,c,$ and $d$ be the four numbers in that order. We are given that
+ \begin{align*} \frac{a+b}{2} &= 21, &(1) \\ \frac{b+c}{2} &= 26, &(2) \\ \frac{c+d}{2} &= 30, &(3) \end{align*}
+and we wish to find $\frac{a+d}{2}.$
+
+ We add $(1)$ and $(3),$ then subtract $(2)$ from the result: 
+ \[\frac{a+d}{2}=21+30-26=\boxed{\textbf{(B) } 25}.\]~MRENTHUSIASM
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let $a,b,c,$ and $d$ be the four numbers in that order. We are given that
+ \begin{align*} \frac{a+b}{2} &= 21, &(1) \\ \frac{b+c}{2} &= 26, &(2) \\ \frac{c+d}{2} &= 30, &(3) \end{align*}
+and we wish to find $\frac{a+d}{2}.$
+
+ If we subtract $(2)$ from $(3)$, we get 
+ \[\frac{c+d}{2}-\frac{b+c}{2}=\frac{d-b}{2}=4.\]So if we multiply by $2$ then we get $d=b+8.$ Looking at our question: 
+ \[\frac{a+d}{2}=\frac{a+b+8}{2}=\frac{a+b}{2}+\frac{8}{2}=21+4=\boxed{\textbf{(B) } 25}.\]
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let’s label these $4$ numbers $A$,$B$,$C$, and $D$. 
+
+ 
+$A$ + $B$ = $42$
+
+ $B$ + $C$ = $52$
+
+ $C$ + $D$ = $60$
+
+ 
+We can use elimination to solve this: $A$ - $C$ = $-10$
+
+ and since 
+
+ $D$ + $C$ = $60$
+
+ then
+
+ $A$ + $D$ = $50$
+
+ 
+Finally, to find the average, divide by $2$. The answer is $25$, or $B$
+
+ -OddPeppyBoots
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) If $n$ is an even positive integer, the $\emph{double factorial}$ notation $n!!$ represents the product of all the even integers from $2$ to $n$. For example, $8!! = 2 \cdot 4 \cdot 6 \cdot 8$. What is the units digit of the following sum? 
+ \[2!! + 4!! + 6!! + \cdots + 2018!! + 2020!! + 2022!!\]
+
+
+ $\textbf{(A)} ~0\qquad\textbf{(B)} ~2\qquad\textbf{(C)} ~4\qquad\textbf{(D)} ~6\qquad\textbf{(E)} ~8$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Notice that once $n>8,$ the units digit of $n!!$ will be $0$ because there will be a factor of $10.$ Thus, we only need to calculate the units digit of 
+ \[2!!+4!!+6!!+8!! = 2+8+48+48\cdot8.\] We only care about units digits, so we have $2+8+8+8\cdot8,$ which has the same units digit as $2+8+8+4.$ The answer is $\boxed{\textbf{(B) } 2}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Solution 1 worded differently)}
+
+We can see that after $8!!$ in the sequence, the units digit is always $0$ (every value after $8!!$ is a multiple of $10$). Therefore, our answer is the sum of the units digits of $2!!, 4!!, 6!!,$ and $8!!$ respectively. This sum is equal to $2 + 8 + 8 + 4$, or $\boxed{\textbf{(B) } 2}.$
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) The midpoints of the four sides of a rectangle are $(-3,0), (2,0), (5,4),$ and $(0,4).$ What is the
+area of the rectangle? 
+
+
+ $\textbf{(A) } 20 \qquad \textbf{(B) } 25 \qquad \textbf{(C) } 40 \qquad \textbf{(D) } 50 \qquad \textbf{(E) } 80$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The midpoints of the four sides of every rectangle are the vertices of a rhombus whose area is half the area of the rectangle: Note that the diagonals of the rhombus have the same lengths as the sides of the rectangle.
+
+ Let $A=(-3,0), B=(2,0), C=(5,4),$ and $D=(0,4).$ Note that $A,B,C,$ and $D$ are the vertices of a rhombus whose diagonals have lengths $AC=4\sqrt{5}$ and $BD=2\sqrt{5}.$ It follows that the dimensions of the rectangle are $4\sqrt{5}$ and $2\sqrt{5},$ so the area of the rectangle is $4\sqrt{5}\cdot2\sqrt{5}=\boxed{\textbf{(C) } 40}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+If a rectangle has area $K,$ then the area of the quadrilateral formed by its midpoints is $\frac{K}{2}.$
+
+ Define points $A,B,C,$ and $D$ as Solution 1 does. Since $A,B,C,$ and $D$ are the midpoints of the rectangle, the rectangle's area is $2[ABCD].$ Now, note that $ABCD$ is a parallelogram since $AB=CD$ and $\overline{AB}\parallel\overline{CD}.$ As the parallelogram's height from $D$ to $\overline{AB}$ is $4$ and $AB=5,$ its area is $4\cdot5=20.$ Therefore, the area of the rectangle is $20\cdot2=\boxed{\textbf{(C) } 40}.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Graph paper is not permitted on the AMC 8. Still, blank scratch paper is provided, and with that, you can draw a makeshift coordinate plane and "graph" some dots. It doesn't have to be very exact, but do make reasonable estimates on the locations of the points. Once you graph the dots and look around, it becomes apparent that the only rectangle that would make sense would be if the length were from (-3,0) to (5,4), and the width would have to be from (0,4) to (2,0). With that in mind, use the distance formula to solve for the length and width. The distance formula is as follows:
+
+ $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+
+ 
+Simply put the coordinates into the formula to get the distance between the two points. Using the formula, the length is $\sqrt{80}$, and the width is $\sqrt{20}$. Now, multiply the length and width together to get $\boxed{\textbf{(C) } 40}.$ ~Evžen D.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Mr. Ramos gave a test to his class of $20$ students. The dot plot below shows the distribution of test scores.
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_19_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ Later Mr. Ramos discovered that there was a scoring error on one of the questions. He regraded the tests, awarding some of the students $5$ extra points, which increased the median test score to $85$. What is the minimum number of students who received extra points?
+
+
+ (Note that the \textit{median} test score equals the average of the $2$ scores in the middle if the $20$ test scores are arranged in increasing order.)
+
+
+ $\textbf{(A)} ~2\qquad\textbf{(B)} ~3\qquad\textbf{(C)} ~4\qquad\textbf{(D)} ~5\qquad\textbf{(E)} ~6\qquad$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+We notice that $13$ students have scores under $85$ currently, and only $5$ have scores over $85$. We find the median of these two numbers, getting:
+
+ 
+ \[13-5=8\]
+ \[\frac{8}{2}=4\]
+ \[13-4=9\]
+
+ Thus, we realize that $4$ students must have their score increased by $5$.
+
+ So, the correct answer is $\boxed{\textbf{(C)}4}$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We notice that if we number each of the dots from bottom to top in each column ($65$'s, $70$'s, $75$'s, etc.) to find the median, the second and third dots in the "$80$'s" column correspond to the tenth and eleventh values in the set (or the closest values to the median). To make the median now $85$, we must add $5$ to the tenth and eleventh values in the set (or the second and third dots in the "$80$'s" column), as well as all the dots above it in the "$80$'s" column. So, the correct answer is $\boxed{\textbf{(C)}4}$. ~nidharshana29
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) The grid below is to be filled with integers in such a way that the sum of the numbers in each row and the sum of the numbers in each column are the same. Four numbers are missing. The number $x$ in the lower left corner is larger than the other three missing numbers. What is the smallest possible value of $x$?
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_20_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A) } {-}1 \qquad \textbf{(B) } 5 \qquad \textbf{(C) } 6 \qquad \textbf{(D) } 8 \qquad \textbf{(E) } 9$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+The sum of the numbers in each row is $12$. Consider the second row. In order for the sum of the numbers in this row to equal $12$, the two shaded numbers must add up to $13$:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_20_Solution_Figure_1.png}
+                    \end{figure}
+                    If two numbers add up to $13$, one of them must be at least $7$: If both shaded numbers are no more than $6$, their sum can be at most $12$. Therefore, for $x$ to be larger than the three missing numbers, $x$ must be at least $8$. We can construct a working scenario where $x=8$:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_20_Solution_Figure_2.png}
+                    \end{figure}
+                    So, our answer is $\boxed{\textbf{(D) } 8}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The sum of the numbers in each row is $-2+9+5=12,$ and the sum of the numbers in each column is $5+(-1)+8=12.$
+
+ Let $y$ be the number in the lower middle. It follows that $x+y+8=12,$ or $x+y=4.$
+
+ We express the other two missing numbers in terms of $x$ and $y,$ as shown below:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_20_Solution_Figure_3.png}
+                    \end{figure}
+                    We have $x>x-1, x>y+10,$ and $x>y.$ Note that the first inequality is true for all values of $x.$ We only need to solve the second inequality so that the third inequality is true for all values of $x.$ By substitution, we get $x>(4-x)+10,$ from which $x>7.$
+
+ Therefore, the smallest possible value of $x$ is $\boxed{\textbf{(D) } 8}.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+This is based on the Solution 2 above and it is perhaps a little simpler than that.
+
+ Let $y$ be the number in the lower middle. Applying summation to first two columns yields the following.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_20_Solution_Figure_4.png}
+                    \end{figure}
+                    
+
+ Since $x$ is greater than the other three, we have $x>14-x,$ or $x>7.$
+
+ Therefore, the smallest possible value of $x$ is $\boxed{\textbf{(D) } 8}.$
+
+ 
+
+
+
+\textbf{Solution 4 (Answer Choices)}
+
+Note that the sum of the rows and columns must be $8+5-1=12$. We proceed to test the answer choices.
+
+ Testing $\textbf{(A)}$, when $x = -1$, the number above $x$ must be $15$, which contradicts the precondition that the numbers surrounding $x$ is less than $x$.
+
+ Testing $\textbf{(B)}$, the number above $x$ is $9$, which does not work.
+
+ Testing $\textbf{(C)}$, the number above $x$ is $8$, which does not work.
+
+ Testing $\textbf{(D)}$, the number above $x$ is $6$, which \textit{does} work. Hence, the answer is $\boxed{\textbf{(D) }8}$.
+
+ We do not need to test $\textbf{(E)}$, because the problem asks for the \textbf{smallest} value of $x$.
+
+ 
+
+
+
+\textbf{Solution 5 (Super fast! No algebra and no testing any of the answer choices!)}
+
+The sum of the numbers in each column and row should be $5+(-1)+8=12$. If we look at the $1^{\text{st}}$ column, the gray squares (shown below) sum to $12-(-2)=14$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_20_Solution_Figure_5.png}
+                    \end{figure}
+                    
+
+ \textbf{If} square $x$ has to be \textbf{greater than or equal to} the three blank squares, then the least $x$ can be is half the sum of the value of the gray squares, which is $14\div2=7$. But square $x$ has to be \textbf{greater than} and <i>\textbf{not}</i> \textbf{greater than or equal to} the three blank squares, so the least $x$ can be is $7+1=8$. Testing for the other rows and columns (it might be smaller than the other two squares!), we find that the smallest $x$ can be is indeed $8$; the other two squares are less than $8$. Therefore, the answer is $\boxed{\text{(D) }8}$.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) Steph scored $15$ baskets out of $20$ attempts in the first half of a game, and $10$ baskets out of $10$ attempts in the second half. Candace took $12$ attempts in the first half and $18$ attempts in the second. In each half, Steph scored a higher percentage of baskets than Candace. Surprisingly they ended with the same overall percentage of baskets scored. How many more baskets did Candace score in the second half than in the first? 
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_21_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A) } 7\qquad\textbf{(B) } 8\qquad\textbf{(C) } 9\qquad\textbf{(D) } 10\qquad\textbf{(E) } 11$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Inequalities)}
+
+Let $x$ be the number of shots that Candace made in the first half, and let $y$ be the number of shots Candace made in the second half. Since Candace and Steph took the same number of attempts, with an equal percentage of baskets scored, we have $x+y=10+15=25.$ In addition, we have the following inequalities: 
+ \[\frac{x}{12}<\frac{15}{20} \implies x<9,\] and 
+ \[\frac{y}{18}<\frac{10}{10} \implies y<18.\] Pairing this up with $x+y=25$ we see the <i>\textbf{only}</i> possible solution is $(x,y)=(8,17),$ for an answer of $17-8 = \boxed{\textbf{(C) } 9}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Answer Choices)}
+
+Clearly, Steph made $15 + 10 = 25$ shots in total. Also, due to parity reasons, the difference between the amount of shots Candace made in the first and second half must be odd. Thus, we can just test 7, 9, and 11, and after doing so we find that the answer is $\boxed{\textbf{(C) } 9}.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Steph made 75 percent of his shots in the first half. He makes all of his shots in the second half. The most baskets Candace could have made in the first half is 8 baskets. The most she could have made in the second half is 17 baskets. Steph makes 25 and misses 5 baskets and the only way for Candace to make 25 shots is to make 8 in the first half and 17 in the second. Thus, $17 - 8 = \boxed{\textbf{(C) } 9}.$
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) A bus takes $2$ minutes to drive from one stop to the next, and waits $1$ minute at each stop to let passengers board. Zia takes $5$ minutes to walk from one bus stop to the next. As Zia reaches a bus stop, if the bus is at the previous stop or has already left the previous stop, then she will wait for the bus. Otherwise she will start walking toward the next stop. Suppose the bus and Zia start at the same time toward the library, with the bus $3$ stops behind. After how many minutes will Zia board the bus?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_22_Problem_Figure_1.png}
+                    \end{figure}
+                    $\textbf{(A) } 17 \qquad \textbf{(B) } 19 \qquad \textbf{(C) } 20 \qquad \textbf{(D) } 21 \qquad \textbf{(E) } 23$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Initially, suppose that the bus is at Stop $0$ (starting point) and Zia is at Stop $3.$
+
+ We construct the following table of $5$-minute intervals:
+ \[\begin{array}{c||c|c} & & \\ [-2.5ex] \textbf{Time} & \textbf{Bus's Location} & \textbf{Zia's Location} \\ [0.5ex] \hline & & \\ [-2ex] \boldsymbol{5} \ \textbf{Minutes} & \text{Stop} \ 2 \ \text{(Waiting)} & \text{Stop} \ 4 \\ \boldsymbol{10} \ \textbf{Minutes} & \text{Midpoint of Stops} \ 3 \ \text{and} \ 4 & \text{Stop} \ 5 \\ \boldsymbol{15} \ \textbf{Minutes} & \text{Stop} \ 5 \ \text{(Leaving)} & \text{Stop} \ 6 \end{array}\]Note that Zia will wait for the bus after $15$ minutes, and the bus will arrive $2$ minutes later.
+
+ Therefore, the answer is $15+2=\boxed{\textbf{(A) } 17}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Since Zia will wait for the bus if the bus is at the previous stop, we can create an equation to solve for when the bus is at the previous stop. The bus travels $\frac{1}{3}$ of a stop per minute, and Zia travels $\frac{1}{5}$ of a stop per minute. Now we create the equation, $\frac{1}{3}m = \frac{1}{5}m + 3 - 1$ (the $-1$ accounts for us wanting to find when the bus reaches the stop before Zia's). Solving, we find that $m=15.$ Now Zia has to wait $2$ minutes for the bus to reach her, so our answer is $15+2=\boxed{\textbf{(A) } 17}.$
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) A $\triangle$ or $\bigcirc$ is placed in each of the nine squares in a $3$-by-$3$ grid. Shown below is a sample configuration with three $\triangle$s in a line.
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_23_Problem_Figure_1.png}
+                    \end{figure}
+                    
+How many configurations will have three $\triangle$s in a line and three $\bigcirc$s in a line?
+
+
+ $\textbf{(A) } 39 \qquad \textbf{(B) } 42 \qquad \textbf{(C) } 78 \qquad \textbf{(D) } 84 \qquad \textbf{(E) } 96$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+We will only consider cases where the three identical symbols are the same column, but at the end we shall double our answer as the same holds true for rows. There are $3$ ways to choose a column with all $\bigcirc$'s and $2$ ways to choose a column with all $\triangle$'s. The third column can be filled in $2^3=8$ ways. Therefore, we have a total of $3\cdot2\cdot8=48$ cases. However, we overcounted the cases with $2$ complete columns of with one symbol and $1$ complete column with another symbol. This happens in $2\cdot3=6$ cases. $48-6=42$. However, we have to remember to double our answer, giving us $\boxed{\textbf{(D) }84}$ ways to complete the grid.
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) The figure below shows a polygon $ABCDEFGH$, consisting of rectangles and right triangles. When cut out and folded on the dotted lines, the polygon forms a triangular prism. Suppose that $AH = EF = 8$ and $GH = 14$. What is the volume of the prism?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_24_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ $\textbf{(A)} ~112\qquad\textbf{(B)} ~128\qquad\textbf{(C)} ~192\qquad\textbf{(D)} ~240\qquad\textbf{(E)} ~288$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+While imagining the folding, $\overline{AB}$ goes on $\overline{BC},$ $\overline{AH}$ goes on $\overline{CI},$ and $\overline{EF}$ goes on $\overline{FG}.$ So, $BJ=CI=8$ and $FG=BC=8.$ Also, $\overline{HJ}$ becomes an edge parallel to $\overline{FG},$ so that means $HJ=8.$
+
+ Since $GH=14,$ then $JG=14-8=6.$ So, the area of $\triangle BJG$ is $\frac{8\cdot6}{2}=24.$ If we let $\triangle BJG$ be the base, then the height is $FG=8.$ So, the volume is $24\cdot8=\boxed{\textbf{(C)} ~192}.$
+
+ \textbf{Remark} After folding polygon $ABCDEFGH$ on the dotted lines, we obtain the following triangular prism:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_24_Solution_Figure_1.png}
+                    \end{figure}
+                    ~MRENTHUSIASM
+
+ 
+
+
+	\item (\textit{AMC 8 2022}) A cricket randomly hops between $4$ leaves, on each turn hopping to one of the other $3$ leaves with equal probability. After $4$ hops, what is the probability that the cricket has returned to the leaf where it started?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_8_AMC_2022_25_Problem_Figure_1.jpg}
+                    \end{figure}
+                    $\textbf{(A) }\frac{2}{9}\qquad\textbf{(B) }\frac{19}{80}\qquad\textbf{(C) }\frac{20}{81}\qquad\textbf{(D) }\frac{1}{4}\qquad\textbf{(E) }\frac{7}{27}$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1 (Casework)}
+
+Let $A$ denote the leaf where the cricket starts and $B$ denote a region containing the other $3$ leaves. Note that:
+
+ 
+                \begin{itemize}
+                    \item If the cricket is at $A,$ then the probability that it hops to $B$ next is $1.$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If the cricket is at $B,$ then the probability that it hops to $A$ next is $\frac13.$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If the cricket is at $B,$ then the probability that it hops to $B$ next is $\frac23.$
+                \end{itemize}
+
+
+                We apply casework to the possible paths of the cricket:
+
+ <ol style="margin-left: 1.5em;"> <li>$A \rightarrow B \rightarrow A \rightarrow B \rightarrow A$ The probability for this case is $1\cdot\frac13\cdot1\cdot\frac13=\frac19.$
+
+ </li> 
+
+ <li>$A \rightarrow B \rightarrow B \rightarrow B \rightarrow A$ The probability for this case is $1\cdot\frac23\cdot\frac23\cdot\frac13=\frac{4}{27}.$
+
+ </li>
+
+ </ol>Together, the probability that the cricket returns to $A$ after $4$ hops is $\frac19+\frac{4}{27}=\boxed{\textbf{(E) }\frac{7}{27}}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Casework)}
+
+We can label the leaves as shown below:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_8_AMC_2022_25_Solution_Figure_1.png}
+                    \end{figure}
+                    Carefully counting cases, we see that there are $7$ ways for the cricket to return to leaf $A$ after four hops if its first hop was to leaf $B$:
+
+ <ol style="margin-left: 1.5em;"> \item $A \rightarrow B \rightarrow A \rightarrow B \rightarrow A$ 
+
+ \item $A \rightarrow B \rightarrow A \rightarrow C \rightarrow A$ 
+
+ \item $A \rightarrow B \rightarrow A \rightarrow D \rightarrow A$ 
+
+ \item $A \rightarrow B \rightarrow C \rightarrow B \rightarrow A$ 
+
+ \item $A \rightarrow B \rightarrow C \rightarrow D \rightarrow A$ 
+
+ \item $A \rightarrow B \rightarrow D \rightarrow B \rightarrow A$ 
+
+ \item $A \rightarrow B \rightarrow D \rightarrow C \rightarrow A$
+
+ </ol>By symmetry, we know that there are $7$ ways if the cricket's first hop was to leaf $C$, and there are $7$ ways if the cricket's first hop was to leaf $D$. So, there are $21$ ways in total for the cricket to return to leaf $A$ after four hops.
+
+ Since there are $3^4 = 81$ possible ways altogether for the cricket to hop to any other leaf four times, the answer is $\frac{21}{81} = \boxed{\textbf{(E) }\frac{7}{27}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Complement)}
+
+There are always three possible leaves to jump to every time the cricket decides to jump, so there is a total number of $3^4$ routes. Let $A$ denote the leaf cricket starts at, and $B, C, D$ be the other leaves. If we want the cricket to move to leaf $A$ for its last jump, the cricket cannot jump to leaf $A$ for its third jump. Also, considering that the cricket starts at leaf $A$, he cannot jump to leaf $A$ for its first jump. Note that there are $3\cdot2=6$ paths if the cricket moves to leaf $A$ for its third jump. Therefore, we can conclude that the total number of possible paths for the cricket to return to leaf $A$ after four jumps is $3^3 - 6 = 21$, so the answer is $\frac{21}{3^4} = \frac{21}{81}=\boxed{\textbf{(E) }\frac{7}{27}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Recursion)}
+
+Denote $P_n$ to be the probability that the cricket would return back to the first point after $n$ hops. Then, we get the recursive formula 
+ \[P_n = \frac13(1-P_{n-1})\] because if the leaf is not on the target leaf, then there is a $\frac13$ probability that it will make it back.
+
+ With this formula and the fact that $P_1=0$ (After one hop, the cricket can never be back to the target leaf.), we have 
+ \[P_2 = \frac13, P_3 = \frac29, P_4 = \frac7{27},\] so our answer is $\boxed{\textbf{(E) }\frac{7}{27}}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Dynamic Programming)}
+
+Let $A$ denote the leaf cricket starts at, and $B, C, D$ be the other leaves, similar to Solution 2.
+
+ Let $A(n)$ be the probability the cricket lands on $A$ after $n$ hops, $B(n)$ be the probability the cricket lands on $B$ after crawling $n$ hops, etc.
+
+ Note that $A(1)=0$ and $B(1)=C(1)=D(1)=\frac13.$ For $n\geq2,$ the probability that the cricket land on each leaf after $n$ hops is $\frac13$ the sum of the probability the cricket land on other leaves after $n-1$ hops. So, we have
+ \begin{align*} A(n) &= \frac13 \cdot [B(n-1) + C(n-1) + D(n-1)], \\ B(n) &= \frac13 \cdot [A(n-1) + C(n-1) + D(n-1)], \\ C(n) &= \frac13 \cdot [A(n-1) + B(n-1) + D(n-1)], \\ D(n) &= \frac13 \cdot [A(n-1) + B(n-1) + C(n-1)]. \end{align*}
+It follows that $A(n) = B(n-1) = C(n-1) = D(n-1).$
+
+ We construct the following table:
+ \[\begin{array}{c|cccc}  &  &  &  & \\ [-2ex] n & A(n) & B(n) & C(n) & D(n) \\ [1ex] \hline  &  &  &  & \\ [-1ex] 1 & 0 & \frac13 & \frac13 & \frac13 \\  &  &  &  & \\ 2 & \frac13 & \frac29 & \frac29 & \frac29 \\  &  &  &  & \\ 3 & \frac29 & \frac{7}{27} & \frac{7}{27} & \frac{7}{27} \\  &  &  &  & \\ 4 & \frac{7}{27} & \frac{20}{81} & \frac{20}{81} & \frac{20}{81} \\ [1ex] \end{array}\]Therefore, the answer is $A(4)=\boxed{\textbf{(E) }\frac{7}{27}}$.
+
+ 
+
+
+
+\textbf{Solution 6 (Generating Function)}
+
+Assign the leaves to $0, 1, 2,$ and $3$ modulo $4,$ and let $0$ be the starting leaf. We then use generating functions with relation to the change of leaves. For example, from $3$ to $1$ would be a change of $2,$ and from $1$ to $2$ would be a change of $1.$ This generating function is equal to $(x+x^2+x^3)^4.$ It is clear that we want the coefficients in the form of $x^{4n},$ where $n$ is a positive integer. One application of roots of unity filter gives us a successful case count of $\frac{81+1+1+1}{4} = 21.$
+
+ Therefore, the answer is $\frac{21}{3^4}=\boxed{\textbf{(E) }\frac{7}{27}}.$
+
+ 
+
+
+
+\textbf{Solution 7 (Also Generating Functions)}
+
+Let the leaves be $(0,0), (0,1), (1,0),$ and $(1,1)$ on the coordinate plane, with the cricket starting at $(0,0)$. Then we write a generating function. We denote $x$ a change in the x-value of the cricket, and similarly for $y$. Then our generating function is $(x+y+xy)^4,$ and we wish to compute the number of terms in which the exponents of both x and y are even. To do this, we first square to get $(x^2 + y^2 + x^2y^2 + 2xy + 2x^2y + 2xy^2)^2$. Note that every term squared will give even powers for x and y, so that gives us $3 + 4\cdot3 = 15.$ Then every combination of $x^2, y^2,$ and $x^2y^2$ will also give us even powers for x and y, so that yields $6$ more terms, for a total of $21.$ Now in total there $3^4 = 81$ possible sequences, so $21/81$ gives us the answer of $\boxed{\textbf{(E) }\frac{7}{27}}.$
+
+ \textbf{Remark} This problem is a reduced version of \href{https://artofproblemsolving.com/wiki/index.php/1985\_AIME\_Problems/Problem\_12}{1985 AIME Problem 12}, changing $7$ steps into $4$ steps.
+
+ This problem is also similar to \href{https://artofproblemsolving.com/wiki/index.php/2003\_AIME\_II\_Problems/Problem\_13}{2003 AIME II Problem 13}.
+
+ We count the number of \emph{favorable} sequences in which the cricket is on the startingleaf after the fourth hop.
+
+ ---
+
+ \textbf{Case 1: The cricket returns to the starting leaf exactly once.}
+
+ Since the cricket cannot remain on the same leaf, the only way for it to return exactly onceand still end at the starting leaf is for the return to occur on the \emph{fourth hop}.
+
+ \begin{itemize}\item Hop 1: From the starting leaf, there are $3$ choices.\item Hop 2: The cricket is on a non-starting leaf; it must avoid returning, so there are $2$ choices.\item Hop 3: Again, the cricket is on a non-starting leaf and must avoid returning, giving $2$ choices.\item Hop 4: The cricket must return to the starting leaf, which is $1$ favorable choice.\end{itemize}
+
+ Thus the number of favorable sequences in Case 1 is\[3 \cdot 2 \cdot 2 \cdot 1 = 12.\]
+
+ ---
+
+ \textbf{Case 2: The cricket returns to the starting leaf exactly twice.}
+
+ With four hops and no ability to stay in place, the only possible return pattern is\[\text{start} \to \text{other} \to \text{start} \to \text{other} \to \text{start},\]which corresponds to hops $2$ and $4$ being returns.
+
+ \begin{itemize}\item Hop 1: From the starting leaf, there are $3$ choices.\item Hop 2: The cricket must return to the starting leaf ($1$ choice).\item Hop 3: From the starting leaf, there are again $3$ choices.\item Hop 4: The cricket must return to the starting leaf ($1$ choice).\end{itemize}
+
+ Thus the number of favorable sequences in Case 2 is\[3 \cdot 1 \cdot 3 \cdot 1 = 9.\]
+
+ ---
+
+ \textbf{Conclusion.}
+
+ The total number of favorable sequences is\[12 + 9 = 21.\]Therefore, the desired probability is\[\frac{21}{81} = \boxed{\frac{7}{27}}.\]\end{solution}
+
+ 
+
+
+\end{enumerate}

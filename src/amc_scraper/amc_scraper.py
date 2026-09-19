@@ -52,13 +52,19 @@ def generate_tex_folder(contest, type = 'nosol') :
     folderpath.mkdir(parents = True, exist_ok = True)
 
     with open(folderpath / 'copas.txt','w',encoding = 'utf-8') as f :
-        for rec in list(data.values())[::-1]:
-            filename = rec['year']+"_"+rec['version']+".tex"
-            if type == "withsolution" :
-                filename = rec['year']+"_"+rec['version']+"_with_solution.tex"
+        for rec in data[::-1]:
+            if contest == 'AIME' :
+                filename = rec['year']+"_"+rec['version']+".tex"
+                if type == "withsolution" :
+                    filename = rec['year']+"_"+rec['version']+"_with_solution.tex"
+            else :
+                filename = rec['year']+".tex"
+                if type == "withsolution" :
+                    filename = rec['year']+"_with_solution.tex"
+
             output = folderpath / filename
             
-            build_tex(type,'AIME',rec['year'],rec['version'],output)
+            build_tex(type,contest,rec['year'],rec['version'],output)
             f.write(rf'\input{{{filename}}}'+'\n')
 
 def generate_html_json(contest) :

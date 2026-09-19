@@ -34,8 +34,6 @@ Then we can conclude every sequence will contain a 5 in the ones digit, so we ar
  
 
 
-
-
 	\item (\textit{AIME I 1999}) Consider the parallelogram with vertices $(10,45),$ $(10,114),$ $(28,153),$ and $(28,84).$  A line through the origin cuts this figure into two congruent polygons.  The slope of the line is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$
 
 
@@ -46,49 +44,9 @@ Then we can conclude every sequence will contain a 5 in the ones digit, so we ar
 
 \textbf{Solution 1}
 
-Let the first point on the line $x=10$ be $(10,45+a)$ where a is the height above $(10,45)$.  Let the second point on the line $x=28$ be $(28, 153-a)$. For two given points, the line will pass the origin if the coordinates are \href{https://artofproblemsolving.com/wiki/index.php?title=Proportion}{proportional} (such that $\frac{y_1}{x_1} = \frac{y_2}{x_2}$). Then, we can write that $\frac{45 + a}{10} = \frac{153 - a}{28}$. Solving for $a$ yields that $1530 - 10a = 1260 + 28a$, so $a=\frac{270}{38}=\frac{135}{19}$. The slope of the line (since it passes through the origin) is $\frac{45 + \frac{135}{19}}{10} = \frac{99}{19}$, and the solution is $m + n = \boxed{118}$.
+Let the first point on the line $x=10$ be $(10,45+a)$ where a is the height above $(10,45)$.  Let the second point on the line $x=28$ be $(28, 153-a)$. For two given points, the line will pass the origin if the coordinates are \href{https://artofproblemsolving.com/wiki/index.php?title=Proportion}{proportional} (such that $\frac{y_1}{x_1} = \frac{y_2}{x_2}$). Then, we can write that $\frac{45 + a}{10} = \frac{153 - a}{28}$. Solving for $a$ yields that $1530 - 10a = 1260 + 28a$, so $a=\frac{270}{38}=\frac{135}{19}$. The slope of the line (
 
  
-
-
-
-
-
-\textbf{Solution 2 (the best solution)}
-
-You can clearly see that a line that cuts a parallelogram into two congruent pieces must go through the center of the parallelogram. Taking the midpoint of $(10,45)$, and $(28,153)$ gives $(19,99)$, which is the center of the parallelogram. Thus the slope of the line must be $\frac{99}{19}$, and the solution is $\boxed{118}$.
-
- Edit by ngourise: if u dont think this is the best solution then smh
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Area)}
-
-Note that the area of the parallelogram is equivalent to $69 \cdot 18 = 1242,$ so the area of each of the two trapezoids with congruent area is $621.$ Therefore, since the height is $18,$ the sum of the bases of each trapezoid must be $69.$ 
-
- The points where the line in question intersects the long side of the parallelogram can be denoted as $(10, \frac{10m}{n})$ and $(28, \frac{28m}{n}),$ respectively. We see that $\frac{10m}{n} - 45 + \frac{28m}{n} - 84 = 69,$ so $\frac{38m}{n} = 198 \implies \frac{m}{n} = \frac{99}{19} \implies \boxed{118}.$
-
- Solution by Ilikeapos
-
- 
-
-
-
-
-
-\textbf{Solution 4 (centroid) (fastest way)}
-
-$(\Sigma x_i /4, \Sigma y_i /4)$ is the centroid, which generates $(19,99)$, so the answer is $\boxed{118}$. This is the fastest way because you do not need to find the opposite vertices by drawing.
-
- Solution by maxamc
-
- 
-
-
 
 
 	\item (\textit{AIME I 1999}) Find the sum of all positive integers $n$ for which $n^2-19n+99$ is a perfect square.
@@ -113,15 +71,11 @@ If $n^2-19n+99=x^2$ for some positive integer $x$, then rearranging we get $n^2-
 
 
 
-
-
 \textbf{Solution 2}
 
 Suppose there is some $k$ such that $x^2 - 19x + 99 = k^2$. Completing the square, we have that $(x - 19/2)^2 + 99 - (19/2)^2 = k^2$, that is, $(x - 19/2)^2 + 35/4 = k^2$. Multiplying both sides by 4 and rearranging, we see that $(2k)^2 - (2x - 19)^2 = 35$. Thus, $(2k - 2x + 19)(2k + 2x - 19) = 35$. We then proceed as we did in the previous solution.
 
  
-
-
 
 
 
@@ -140,8 +94,6 @@ When $n \geq 12$, we have
  We conclude that the answer is $1 + 9 + 10 + 18 = \boxed{38}.$
 
  
-
-
 
 
 
@@ -164,8 +116,6 @@ The problem states that we want to find integers $n$ such that,
  Solving the systems of equations for each factored pair gives $n = 1, 9, 10, 18$ and $1 + 9 + 10 + 18 = \boxed{38}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1999}) The two squares shown share the same center $O_{}$ and have sides of length 1. The length of $\overline{AB}$ is $\frac{43}{99}$ and the area of octagon $ABCDEFGH$ is $\frac{m}{n}$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$
@@ -192,8 +142,6 @@ Triangles $AOB$, $BOC$, $COD$, etc. are congruent by symmetry (you can prove it 
 
 
 
-
-
 \textbf{Solution 2}
 
 Define the two possible \href{https://artofproblemsolving.com/wiki/index.php?title=Distance}{distances} from one of the labeled points and the \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{corners} of the square upon which the point lies as $x$ and $y$. The area of the \href{https://artofproblemsolving.com/wiki/index.php?title=Octagon}{octagon} (by \href{https://artofproblemsolving.com/wiki/index.php?title=Subtraction}{subtraction} of areas) is $1 - 4\left(\frac{1}{2}xy\right) = 1 - 2xy$. 
@@ -214,8 +162,6 @@ Define the two possible \href{https://artofproblemsolving.com/wiki/index.php?tit
  
 
 
-
-
 	\item (\textit{AIME I 1999}) For any positive integer $x_{}$, let $S(x)$ be the sum of the digits of $x_{}$, and let $T(x)$ be $|S(x+2)-S(x)|.$  For example, $T(199)=|S(201)-S(199)|=|3-19|=16.$  How many values of $T(x)$ do not exceed 1999?
 
 
@@ -230,8 +176,6 @@ For most values of $x$, $T(x)$ will equal $2$. For those that don't, the differe
  \[|(a + 1) + 0 + 0 + 1 - (a + 9 + 9 + 9)| = |2 - 9(3)|\]And in general, the values of $T(x)$ will then be in the form of $|2 - 9n| = 9n - 2$. From $7$ to $1999$, there are $\left\lceil \frac{1999 - 7}{9}\right\rceil = 222$ solutions; including $2$ and there are a total of $\boxed{223}$ solutions.
 
  
-
-
 
 
 	\item (\textit{AIME I 1999}) A transformation of the first quadrant of the coordinate plane maps each point $(x,y)$ to the point $(\sqrt{x},\sqrt{y}).$  The vertices of quadrilateral $ABCD$ are $A=(900,300), B=(1800,600), C=(600,1800),$ and $D=(300,900).$  Let $k_{}$ be the area of the region enclosed by the image of quadrilateral $ABCD.$  Find the greatest integer that does not exceed $k_{}.$
@@ -263,8 +207,6 @@ For most values of $x$, $T(x)$ will equal $2$. For those that don't, the differe
  
 
 
-
-
 	\item (\textit{AIME I 1999}) There is a set of 1000 switches, each of which has four positions, called $A, B, C$, and $D$.  When the position of any switch changes, it is only from $A$ to $B$, from $B$ to $C$, from $C$ to $D$, or from $D$ to $A$.  Initially each switch is in position $A$.  The switches are labeled with the 1000 different integers $(2^{x})(3^{y})(5^{z})$, where $x, y$, and $z$ take on the values $0, 1, \ldots, 9$.  At step $i$ of a 1000-step process, the $i$-th switch is advanced one step, and so are all the other switches whose labels divide the label on the $i$-th switch.  After step 1000 has been completed, how many switches will be in position $A$?
 
 
@@ -277,7 +219,9 @@ For most values of $x$, $T(x)$ will equal $2$. For those that don't, the differe
 
 For each $i$th switch (designated by $x_{i},y_{i},z_{i}$), it advances \textit{itself} only one time at the $i$th step; thereafter, only a switch with larger $x_{j},y_{j},z_{j}$ values will advance the $i$th switch by one step provided $d_{i}= 2^{x_{i}}3^{y_{i}}5^{z_{i}}$ divides $d_{j}= 2^{x_{j}}3^{y_{j}}5^{z_{j}}$. Let $N = 2^{9}3^{9}5^{9}$ be the max switch label. To find the divisor multiples in the range of $d_{i}$ to $N$, we consider the exponents of the number $\frac{N}{d_{i}}= 2^{9-x_{i}}3^{9-y_{i}}5^{9-z_{i}}$. In general, the divisor-count of $\frac{N}{d}$ must be a multiple of 4 to ensure that a switch is in position A:
 
- $4n = [(9-x)+1] [(9-y)+1] [(9-z)+1] = (10-x)(10-y)(10-z)$, where $0 \le x,y,z \le 9.$We consider the cases where the 3 factors above do not contribute multiples of 4.
+ $4n = [(9-x)+1] [(9-y)+1] [(9-z)+1] = (10-x)(10-y)(10-z)$, where $0 \le x,y,z \le 9.$
+
+ We consider the cases where the 3 factors above do not contribute multiples of 4.
 
  
                 \begin{itemize}
@@ -310,8 +254,6 @@ For each $i$th switch (designated by $x_{i},y_{i},z_{i}$), it advances \textit{i
             The number of switches in position A is $1000-125-225 = \boxed{650}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1999}) Let $\mathcal{T}$ be the set of ordered triples $(x,y,z)$ of nonnegative real numbers that lie in the plane $x+y+z=1.$  Let us say that $(x,y,z)$ supports $(a,b,c)$ when exactly two of the following are true: $x\ge a, y\ge b, z\ge c.$  Let $\mathcal{S}$ consist of those triples in $\mathcal{T}$ that support $\left(\frac 12,\frac 13,\frac 16\right).$  The area of $\mathcal{S}$ divided by the area of $\mathcal{T}$ is $m/n,$  where $m_{}$ and $n_{}$ are relatively prime positive integers, find $m+n.$
@@ -349,8 +291,6 @@ This problem just requires a good diagram and strong 3D visualization.
  
 
 
-
-
 	\item (\textit{AIME I 1999}) A function $f$ is defined on the complex numbers by $f(z)=(a+bi)z,$ where $a_{}$ and $b_{}$ are positive numbers.  This function has the property that the image of each point in the complex plane is equidistant from that point and the origin.  Given that $|a+bi|=8$ and that $b^2=m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$
 
 
@@ -370,15 +310,11 @@ Suppose we pick an arbitrary point on the \href{https://artofproblemsolving.com/
 
 
 
-
-
 \textbf{Solution 2}
 
 Plugging in $z=1$ yields $f(1) = a+bi$. This implies that $a+bi$ must fall on the line $Re(z)=a=\frac{1}{2}$, given the equidistant rule. By $|a+bi|=8$, we get $a^2 + b^2 = 64$, and plugging in $a=\frac{1}{2}$ yields $b^2=\frac{255}{4}$. The answer is thus $\boxed{259}$.
 
  
-
-
 
 
 
@@ -391,8 +327,6 @@ We are given that $(a + bi)z$ is equidistant from the origin and $z.$  This tran
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $P$ and $Q$ be the points in the complex plane represented by $z$ and $(a+bi)z$, respectively.  $|a+bi| = 8$ implies $OQ = 8OP$.  Also, we are given $OQ = PQ$, so $OPQ$ is isosceles with base $OP$.  Notice that the base angle of this isosceles triangle is equal to the argument $\theta$ of the complex number $a + bi$, because $(a+bi)z$ forms an angle of $\theta$ with $z$.  Drop the altitude/median from $Q$ to base $OP$, and you end up with a right triangle that shows $\cos \theta = \frac{\frac{1}{2}OP}{8OQ} = \frac{\frac{1}{2}|z|}{8|z|} = \frac{1}{16}$.  Since $a$ and $b$ are positive, $z$ lies in the first quadrant and $\theta < \pi/2$; hence by right triangle trigonometry $\sin \theta = \frac{\sqrt{255}}{16}$.  Finally, $b = |a+bi|\sin\theta = 8\frac{\sqrt{255}}{16} = \frac{\sqrt{255}}{2}$, and $b^2 = \frac{255}{4}$, so the answer is $259$.
@@ -401,15 +335,11 @@ Let $P$ and $Q$ be the points in the complex plane represented by $z$ and $(a+bi
 
 
 
-
-
 \textbf{Solution 5}
 
 Similarly to in Solution 3, we see that $|(a + bi)z - z| = |(a + bi)z|$. Letting the point $z = c + di$, we have $\sqrt{(ab+bc-d)^2+(ac-bd-c)^2} = \sqrt{(ac-bd)^2+(ad+bc)^2}$. Expanding both sides of this equation (after squaring, of course) and canceling terms, we get $(d^2+c^2)(-2a+1) = 0$. Of course, $(d^2+c^2)$ can't be zero because this property of the function holds for all complex $z$. Therefore, $a = \frac{1}{2}$ and we proceed as above to get $\boxed{259}$.
 
  
-
-
 
 
 
@@ -426,8 +356,6 @@ This is a solution that minimizes the use of complex numbers, turning this into 
  Let's start canceling. $2ad^2+2bcd=-2ac^2+2bcd+c^2+d^2$. Subtracting, $c^2+d^2-2ac^2=2ad^2$. Thus $c^2+d^2=2ac^2+2ad^2$. Since this is an identity for any $(c,d)$, thus $2a=1$. $a=\frac{1}{2}$. Since $|a+bi|=8$, thus $a^2+b^2=64$ (or simply think of $a+bi$ as the point $(a,b)$, and $|a+bi|$ being the distance of $(a,b)$ to the origin). Thus plug in $a=\frac{1}{2}, b^2=\frac{255}{4}$. Since $255$ and $4$ are relatively prime, the final result is $255+4=\boxed{259}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1999}) Ten points in the plane are given, with no three collinear.  Four distinct segments joining pairs of these points are chosen at random, all such segments being equally likely.  The probability that some three of the segments form a triangle whose vertices are among the ten given points is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$
@@ -448,15 +376,11 @@ First, let us find the number of triangles that can be formed from the 10 points
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that 4 segments can NEVER form 2 triangles. Therefore, we just need to multiply the probability that the first three segments picked form a triangle by 4. We can pick any segment for the first choice, then only segments that share an endpoint with the first one, then the one segment that completes the triangle. Note that the fourth segment doesn't matter in this case.Note that there are $(9 - 1) \times 2 = 16$ segments that share an endpoint with the first segment. The answer is then $4 \times \frac{16}{44} \times \frac{1}{43} = \frac{16}{11} \times \frac{1}{43} = \frac{16}{473} \implies m + n = \boxed{489}$-whatRthose
 
  
-
-
 
 
 
@@ -478,8 +402,6 @@ Instead of working with the four segments, let's focus on their endpoints. When 
  --vaporwave
 
  
-
-
 
 
 	\item (\textit{AIME I 1999}) Given that $\sum_{k=1}^{35}\sin 5k=\tan \frac mn,$ where angles are measured in degrees, and $m_{}$ and $n_{}$ are relatively prime positive integers that satisfy $\frac mn<90,$ find $m+n.$
@@ -506,8 +428,6 @@ Let $s = \sum_{k=1}^{35}\sin 5k  = \sin 5 + \sin 10 + \ldots + \sin 175$. We cou
 
 
 
-
-
 \textbf{Solution 2}
 
 This solution will work entirely in degrees. Let
@@ -527,7 +447,9 @@ This solution will work entirely in degrees. Let
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1999_11_Solution_Figure_1.png}
                     \end{figure}
-                    The above diagram starts at the origin $O$ and draws the $35$ vectors. 
+                    
+
+ The above diagram starts at the origin $O$ and draws the $35$ vectors. 
 
  Note that
  \[\text{Im}(v_k) = \sin{5k}.\] Therefore, $\sum_{k=1}^{35}\sin 5k$ is simply the y-coordinate of the vector sum $v_1 + v_2 + \dots v_{35}$. In the diagram, this is the distance of the vertical blue line connecting $O$ to the topmost point.
@@ -539,8 +461,6 @@ This solution will work entirely in degrees. Let
  Recall that our sum equals $\tan{\frac{m}{n}} = \tan{\frac{175}{2}}$, so our answer is $175 + 2 = \boxed{177}$.
 
  
-
-
 
 
 
@@ -557,8 +477,6 @@ The desired answer is thus $175 + 2 = \boxed{177}$.
 
 
                 
-
-
 
 
 
@@ -582,8 +500,6 @@ Let $x=e^{\frac{i\pi}{36}}$. By Euler's Formula, $\sin{5k^\circ}=\frac{x^k-\frac
 
 
 
-
-
 \textbf{Solution 5}
 
 This solution is inspired by \href{https://artofproblemsolving.com/wiki/index.php?title=1997\_AIME\_Problems/Problem\_11}{1997 AIME Problems/Problem 11}.First of all, $\sum_{k=1}^{35}\sin 5k=\sum_{k=0}^{35}\sin 5k$ because the difference is $\sin 0 = 0$. Now consider the sum $\sum_{k=0}^{35}\cos 5k$. Since $\cos 5=-\cos 175$, $\cos 10=-\cos 170$ and so on, this simplifies to $\cos 0=1$.Now, consider the ratio
@@ -593,8 +509,6 @@ This solution is inspired by \href{https://artofproblemsolving.com/wiki/index.ph
  \[\frac{\sin \frac{175}{2}}{\cos \frac{175}{2}} = \tan{\frac{175}{2}}.\]Aha! Remembering that the original denominator $\sum_{k=0}^{35}\cos 5k$ was equal to 1, we realize that the numerator, $\sum_{k=0}^{35}\sin 5k=\tan{\frac{175}{2}}$. Since $\sum_{k=0}^{35}\sin 5k=\sum_{k=1}^{35}\sin 5k$, we get $\tan \frac{175}{2}$, or $m+n=\boxed{177}$, as our final answer. $\blacksquare$~ewei12
 
  
-
-
 
 
 	\item (\textit{AIME I 1999}) The inscribed circle of triangle $ABC$ is tangent to $\overline{AB}$ at $P_{},$  and its radius is 21.  Given that $AP=23$ and $PB=27,$ find the perimeter of the triangle.
@@ -614,7 +528,7 @@ This solution is inspired by \href{https://artofproblemsolving.com/wiki/index.ph
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -628,8 +542,6 @@ Let $Q$ be the tangency point on $\overline{AC}$, and $R$ on $\overline{BC}$. By
  We want the perimeter, which is $2s = 2\left(50 + \frac{245}{2}\right) = \boxed{345}$.
 
  
-
-
 
 
 
@@ -650,8 +562,6 @@ Let the incenter be denoted $I$.  It is commonly known that the incenter is the 
 
 
 
-
-
 \textbf{Solution 3}
 
 Let unknown side has length as $x$, Assume three sides of triangles are $a,b,c$, the area of the triangle is $S$.
@@ -666,8 +576,6 @@ Let unknown side has length as $x$, Assume three sides of triangles are $a,b,c$,
 
 
 
-
-
 \textbf{Solution 4 (Trig Bash)}
 
 
@@ -675,7 +583,9 @@ Let unknown side has length as $x$, Assume three sides of triangles are $a,b,c$,
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1999_12_Solution_Figure_2.png}
                     \end{figure}
-                    Let \(CR = CQ = x\). Using the inradius formula for the area of a triangle, we have
+                    
+
+ Let \(CR = CQ = x\). Using the inradius formula for the area of a triangle, we have
  \[[ABC] = 1050 + 21x,\]where \([ABC]\) denotes the area of \(\triangle ABC\).
 
  Next, we find \(\sin \angle CBA\). Note that
@@ -707,8 +617,6 @@ Let unknown side has length as $x$, Assume three sides of triangles are $a,b,c$,
  
 
 
-
-
 	\item (\textit{AIME I 1999}) Forty teams play a tournament in which every team plays every other ($39$ different opponents) team exactly once.  No ties occur, and each team has a $50 \%$ chance of winning any game it plays.  The probability that no two teams win the same number of games is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $\log_2 n.$
 
 
@@ -733,8 +641,6 @@ $780-38 = \boxed{742}$.
  
 
 
-
-
 	\item (\textit{AIME I 1999}) Point $P_{}$ is located inside triangle $ABC$ so that angles $PAB, PBC,$ and $PCA$ are all congruent.  The sides of the triangle have lengths $AB=13, BC=14,$ and $CA=15,$ and the tangent of angle $PAB$ is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$
 
 
@@ -752,7 +658,7 @@ $780-38 = \boxed{742}$.
                     \end{figure}
                     
 
-
+ 
 
 
 
@@ -765,7 +671,9 @@ Drop \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{p
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1999_14_Solution_Figure_2.png}
                     \end{figure}
-                    Let $BE = x, CF = y,$ and $AD = z$.  We have that
+                    
+
+ Let $BE = x, CF = y,$ and $AD = z$.  We have that
  \begin{align*}DP&=z\tan\theta\\ EP&=x\tan\theta\\ FP&=y\tan\theta\end{align*}
 We can then use the tool of calculating area in two ways
  \begin{align*}[ABC]&=[PAB]+[PBC]+[PCA]\\ &=\frac{1}{2}(13)(z\tan\theta)+\frac{1}{2}(14)(x\tan\theta)+\frac{1}{2}(15)(y\tan\theta)\\ &=\frac{1}{2}\tan\theta(13z+14x+15y)\end{align*}
@@ -777,8 +685,6 @@ We still need $13z+14x+15y$ though. We have all these \href{https://artofproblem
 Recall that we found that $[ABC]=\frac{1}{2}\tan\theta(13z+14x+15y)=84$. Plugging in $13z+14x+15y=295$, we get $\tan\theta=\frac{168}{295}$, giving us $\boxed{463}$ for an answer.
 
  
-
-
 
 
 
@@ -806,8 +712,6 @@ Thus, $m + n = 168 + 295 = \boxed{463}$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $\angle{PAB} = \angle{PBC} = \angle{PCA} = x.$ Then, using Law of Cosines on the three triangles containing vertex $P,$ we have
@@ -820,8 +724,6 @@ Add the three equations up and rearrange to obtain
 
 
  
-
-
 
 
 
@@ -841,8 +743,6 @@ Extracting yields $168 + 295 = \boxed{463}$.
 
 
 
-
-
 \textbf{Solution 5 (Coordinate Bash)}
 
 
@@ -850,7 +750,9 @@ Extracting yields $168 + 295 = \boxed{463}$.
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1999_14_Solution_Figure_3.png}
                     \end{figure}
-                    Plot $\triangle ABC$ on the coordinate plane with \(B=(0,0), C=(14,0), A=(5,12).\)Let $\angle PAB=\angle PBC=\angle PCA=a$, and let $P=(x,y)$. For convenience, define $\tan a = k$.
+                    
+
+ Plot $\triangle ABC$ on the coordinate plane with \(B=(0,0), C=(14,0), A=(5,12).\)Let $\angle PAB=\angle PBC=\angle PCA=a$, and let $P=(x,y)$. For convenience, define $\tan a = k$.
 
  Since $\angle PBC=a$, the slope of $PB$ is $k$, so \(PB:\ y=kx.\)
 
@@ -883,8 +785,6 @@ Extracting yields $168 + 295 = \boxed{463}$.
  
 
 
-
-
 	\item (\textit{AIME I 1999}) Consider the paper triangle whose vertices are $(0,0), (34,0),$ and $(16,24).$  The vertices of its midpoint triangle are the midpoints of its sides.  A triangular pyramid is formed by folding the triangle along the sides of its midpoint triangle.  What is the volume of this pyramid?
 
 
@@ -905,7 +805,9 @@ Extracting yields $168 + 295 = \boxed{463}$.
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1999_15_Solution_Figure_2.png}
                     \end{figure}
-                    As shown in the image above, let $D$, $E$, and $F$ be the midpoints of $\overline{BC}$, $\overline{CA}$, and $\overline{AB}$, respectively.  Suppose $P$ is the apex of the tetrahedron, and let $O$ be the foot of the altitude from $P$ to $\triangle ABC$.  The crux of this problem is the following lemma.
+                    
+
+ As shown in the image above, let $D$, $E$, and $F$ be the midpoints of $\overline{BC}$, $\overline{CA}$, and $\overline{AB}$, respectively.  Suppose $P$ is the apex of the tetrahedron, and let $O$ be the foot of the altitude from $P$ to $\triangle ABC$.  The crux of this problem is the following lemma.
 
  \textbf{Lemma:} The point $O$ is the orthocenter of $\triangle ABC$.
 
@@ -922,8 +824,6 @@ Extracting yields $168 + 295 = \boxed{463}$.
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider the diagram provided in the previous solution. We first note that the medial triangle has coordinates $(17, 0, 0)$, $(8, 12, 0)$, and $(25, 12, 0)$. We can compute the area of this triangle as $102$. Suppose $(x, y, z)$ are the coordinates of the vertex of the resulting pyramid. Call this point $V$. Clearly, the height of the pyramid is $z$. The desired volume is thus $\frac{102z}{3} = 34z$. 
@@ -934,8 +834,6 @@ Consider the diagram provided in the previous solution. We first note that the m
 \textbf{Remark.} It may be easier to instead consider a transformation of the medial triangle to the coordinates $(0,0,0)$, $(17,0,0)$, $(8,0,12)$ (these are simply half of the coordinates of the original triangle, moved to a 3D plane). ~eevee9406
 
  
-
-
 
 
 
@@ -962,8 +860,6 @@ Solution by D. Adrian Tanner
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $A = (0,0), B = (16, 24), C = (34,0).$ Then define $D,E,F$ as the midpoints of $BC, AC, AB$. By Pythagorean theorem, $EF = \frac{1}{2} BC = 15, DE = \frac{1}{2}AB = 4 \sqrt{13}, DF = \frac{1}{2} AC = 17.$ Then let $P$ be the point in space which is the vertex of the tetrahedron with base $DEF$. 
@@ -984,8 +880,6 @@ Note that $\triangle DEP \cong \triangle EDF$. Create point $F'$ on the plane of
 
 
 
-
-
 \textbf{Solution 5 (Formula Abuse)}
 
 The Pyramid is a disphenoid, because opposite sides have the same length. The volume of a disphenoid is given by 
@@ -1001,8 +895,6 @@ The Pyramid is a disphenoid, because opposite sides have the same length. The vo
  ~~Disphenoid\_lover
 
  
-
-
 
 
 \end{enumerate}

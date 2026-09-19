@@ -10,19 +10,17 @@
 
 \textbf{Solution 1}
 
-Let $w,x,y,z$ denote the number of residents who own $1,2,3$ and $4$ of these items, respectively. We know $w+x+y+z=900$, since there are $900$ residents in total. This simplifies to 
+Let $w,x,y,z$ denote the number of residents who own $1,2,3$ and $4$ of these items, respectively. We know $w+x+y+z=900$, since there are $900$ residents in total. This simplifies to
 
- $w+z=229$, since we know $x=437$ and $y=234$. 
+ $w+z=229$, since we know $x=437$ and $y=234$.
 
- Now, we set an equation of the total number of items. We know there are $195$ rings, $367$ clubs, $562$ spades, and $900$ candy hearts. Adding these up, there are $2024$ (wow! the year!) items in total. Thus, $w+2x+3y+4z=2024$ since we are not adding the number of items each group of people contributes, and this must be equal to the total number of items. 
+ Now, we set an equation of the total number of items. We know there are $195$ rings, $367$ clubs, $562$ spades, and $900$ candy hearts. Adding these up, there are $2024$ (wow! the year!) items in total. Thus, $w+2x+3y+4z=2024$ since we are not adding the number of items each group of people contributes, and this must be equal to the total number of items.
 
- Plugging in $x$ and $y$ once more, we get $w+4z=448$. Solving $w+z=229$ and $w+4z=448$, we get $z=\boxed{073}$ 
+ Plugging in $x$ and $y$ once more, we get $w+4z=448$. Solving $w+z=229$ and $w+4z=448$, we get $z=\boxed{073}$
 
  -Westwoodmonster
 
  
-
-
 
 
 
@@ -34,15 +32,13 @@ We know that there are $195$ diamond rings, $367$ golf clubs, and $562$ garden s
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $a$ be the number of people who have exactly one of these things and let $b$ be the number of people who have exactlty four of these objects. We have $a + 437 + 234 + d = 900,$ so $a + d = 229.$
 
  
 Including those who have more than one object, we have
- \[195 + 367 + 562 + 900 = a + 2\cdot 437 + 3\cdot 234 + 4d.\]This is because we count those who own exactly $2$ objects twice, those who own $3$ thrice, and those who own $4$ four times. Solving gives $a + 4d = 448.$ 
+ \[195 + 367 + 562 + 900 = a + 2\cdot 437 + 3\cdot 234 + 4d.\]This is because we count those who own exactly $2$ objects twice, those who own $3$ thrice, and those who own $4$ four times. Solving gives $a + 4d = 448.$
 
  
 Solving the system $a + 4d = 448, a + d = 229$ gives $3d = 219,$ so $d = \boxed{\textbf{(073)}}.$
@@ -53,6 +49,15 @@ Solving the system $a + 4d = 448, a + d = 229$ gives $3d = 219,$ so $d = \boxed{
  
 
 
+
+\textbf{Solution 4}
+
+Let $A_1,A_2,\ldots, A_n$ be sets. Define
+ \[S_k=\sum_{1\le a_1< a_2< \ldots < a_k\le n}\bigcup_{1\le i\le k}\lvert A_{a_i}\rvert\]Recall the formula for the number of elements that are in exactly $m$ of those sets.
+ \[f(m)=\sum_{m=k}^{n}(-1)^{m-k}\binom{m}{k}S_m\]For $n=4$, let $A=S_1,B=S_2,C=S_3,D=S_4$. We see that $A=195+367+562+900=2024$. By the Inclusion-Exclusion Principle, and plugging-in $m=2,3$ for the above formula, we obtain the following equations:\begin{align*}A-B+C-D&=900\\B-3C+6D&=437\\C-4D&=234\end{align*}
+Solving yields $D=\boxed{073}$.
+
+ 
 
 
 	\item (\textit{AIME II 2024}) A list of positive integers has the following properties:
@@ -89,8 +94,6 @@ The third condition implies that the list's size must be an even number, as if i
 
 
 
-
-
 \textbf{Solution 2}
 
 If there were an odd number of elements, the median would be in the set. Thus, we start with 4 elements. For 9 to be the mode, there must be 2 9s. For 9 to not be the median, either both numbers are greater than 9, or both numbers are less than 9. Clearly, both numbers must be less. From here, the numbers are clearly $(5,7,9,9)$, and we add their squares to get $\boxed{236}$ -westwoodmonster
@@ -99,8 +102,6 @@ If there were an odd number of elements, the median would be in the set. Thus, w
 
 
  
-
-
 
 
 
@@ -121,8 +122,6 @@ We can tell that the amount of integers in the list is an even number, because t
 
 
 
-
-
 \textbf{Solution 4 (complete reasoning)}
 
 Since the median is not in the list, there must not be an odd number of elements. Suppose the list has two elements. To meet the mode condition, both must equal $9$, but this does not satisfy the other conditions.
@@ -136,8 +135,6 @@ Since the median is not in the list, there must not be an odd number of elements
  -ltihoen
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Find the number of ways to place a digit in each cell of a 2x3 grid so that the sum of the two numbers formed by reading left to right is $999$, and the sum of the three numbers formed by reading top to bottom is $99$. The grid below is an example of such an arrangement because $8+991=999$ and $9+9+81=99$.
@@ -168,8 +165,6 @@ Consider this table:
 
 
 
-
-
 \textbf{Solution 2}
 
 Like above, let's label all the entries. Now note that the conditions are now equivalent to: 
@@ -179,8 +174,6 @@ Like above, let's label all the entries. Now note that the conditions are now eq
  $a + d = 9, b + e = 9, c + f = 9$ and $a + b + c = 8, d + e + f = 19$. Notice after we set a triple for $(a, b, c)$ the triple for $(d, e, f)$ is uniquely and independently set based on the triple for $(a, b, c)$. Thus all we need to do is count the number of ways $a + b + c = 8$ such that $a, b, c$ are digits. We start with $0, 0, 8$ then $0, 1, 7$ and so on until $0, 8, 0$ which gives $9$ ways. Then $1, 0, 7$ to $1, 7, 0$ which gives $8$ ways. So obviously the answer is $9 + 8 + ... + 1 = \boxed{045}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Let $x,y$ and $z$ be positive real numbers that satisfy the following system of equations:
@@ -242,8 +235,6 @@ First, let’s realize the rule that $\log{a}{b}=\log{a}+\log{b}$. If we add two
 
 
 
-
-
 \textbf{Solution 2}
 
 Denote $\log_2(x) = a$, $\log_2(y) = b$, and $\log_2(z) = c$.
@@ -253,8 +244,6 @@ Denote $\log_2(x) = a$, $\log_2(y) = b$, and $\log_2(z) = c$.
  Now, we can solve to get $a = \frac{-7}{24}, b = \frac{-3}{8}, c = \frac{-5}{12}$. Plugging these values in, we obtain $|4a + 3b + 2c|  = \frac{25}{8} \implies \boxed{033}$. ~akliu
 
  
-
-
 
 
 
@@ -280,8 +269,6 @@ $\log_2(y/xz) + \log_2(z/xy) = \log_2(1/x^2) = -2\log_2(x) = \frac{7}{12}$
 
 
 
-
-
 \textbf{Solution 4}
 
 Adding all three equations, $\log_2(\frac{1}{xyz}) = \frac{1}{2}+\frac{1}{3}+\frac{1}{4} = \frac{13}{12}$. Subtracting this from every equation, we have: 
@@ -290,8 +277,6 @@ Adding all three equations, $\log_2(\frac{1}{xyz}) = \frac{1}{2}+\frac{1}{3}+\fr
  \[2\log_2z = -\frac{5}{6}\] Our desired quantity is the absolute value of $4\log_2x+3\log_2y+2\log_2z = 2(\frac{7}{12})+3/2(\frac{3}{4})+\frac{5}{6} = \frac{25}{8}$, so our answer is $25+8 = \boxed{033}$.~Spoirvfimidf
 
  
-
-
 
 
 
@@ -316,8 +301,6 @@ You can think of the power of the powers of the expressions inside each logarith
  Finally,  $| \log_2{\left(x^4y^3z^2\right)} | = \frac{25}{8}$ and $25+8=\boxed{033}$
 
  
-
-
 
 
 
@@ -352,8 +335,6 @@ Using the rule $\log{a}{b}=\log{a}+\log{b}$ and $\log{a^b}=b\log{a}$, we turn th
 
 
 
-
-
 \textbf{Solution 7}
 
 Expanding the equations out gives 
@@ -368,8 +349,6 @@ Expanding the equations out gives
  Therefore, $x^4 y^3 z^3 = 2^{-\frac{7}{6}} \times 2^{-\frac{9}{8}} \times 2^{-\frac{5}{6}}= 2^{-\frac{25}{8}}$. $|-\frac{25}{8}|=\frac{25}{8}$ and $25+8= \textbf{\boxed{033}}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Let $ABCDEF$ be a convex equilateral hexagon in which all pairs of opposite sides are parallel. The triangle whose sides are extensions of segments $\overline{AB}$, $\overline{CD}$, and $\overline{EF}$ has side lengths $200, 240,$ and $300$. Find the side length of the hexagon.
@@ -405,8 +384,6 @@ Expanding the equations out gives
 
 
 
-
-
 \textbf{Solution 2 (Fakesolve)}
 
 Draw an accurate diagram using the allowed compass and ruler: Draw a to-scale diagram of the $(200,240,300)$ triangle (e.g. 10cm-12cm-15cm). Because of the nature of these lengths and the integer answer needed, it can be assumed that the side length of the hexagon will be divisible by 10. Therefore, a trial-and-error method can be set up, wherein line segments of length $n\cdot 10$, scaled to the same scale as the triangle, can be drawn to represent the sides of the hexagon. For instance, side $BC$ would be drawn parallel to the side of the triangle of length 300, and would have endpoints on the other sides of the triangle. Using this method, it would be evident that line segments of length 80 units, scaled proportionally (4cm using the scale above), would create a perfect equilateral hexagon when drawn parallel to the sides of the triangle. $x=\boxed{080}$. - lackolith
@@ -419,8 +396,6 @@ Draw an accurate diagram using the allowed compass and ruler: Draw a to-scale di
  -DoHumanitariansEatHumans
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Alice chooses a set $A$ of positive integers. Then Bob lists all finite nonempty sets $B$ of positive integers with the property that the maximum element of $B$ belongs to $A$. Bob's list has $2024$ sets. Find the sum of the elements of $A$.
@@ -438,8 +413,6 @@ Let $k$ be one of the elements in Alices set $A$ of positive integers. The numbe
  Note: The power of two expansion can be found from the binary form of $2024$, which is $11111101000_2$. ~cxsmi
 
  
-
-
 
 
 
@@ -462,8 +435,6 @@ Let $A = \left\{ a_1, a_2, \cdots, a_n \right\}$ with $a_1 < a_2 < \cdots < a_n$
  
 
 
-
-
 	\item (\textit{AIME II 2024}) Let $N$ be the greatest four-digit integer with the property that whenever one of its digits is changed to $1$, the resulting number is divisible by $7$. Let $Q$ and $R$ be the quotient and remainder, respectively, when $N$ is divided by $1000$. Find $Q+R$.
 
 
@@ -481,8 +452,6 @@ We note that by changing a digit to $1$ for the number $\overline{abcd}$, we are
  Applying casework on $a$, we can eventually obtain a working value of $\overline{abcd} = 5694 \implies \boxed{699}$. ~akliu
 
  
-
-
 
 
 
@@ -526,8 +495,6 @@ Let our four digit number be $abcd$. Replacing digits with $1$, we get the follo
 
 
 
-
-
 \textbf{Solution 3}
 
 Let our four digit number be $\overline{abcd}$. Replacing digits with $1$, we get the following equations:
@@ -555,8 +522,6 @@ Let our four digit number be $\overline{abcd}$. Replacing digits with $1$, we ge
  And since we know that changing each digit into $1$ will make $\overline{abcd}$ divisible by $7$, we get that $d-1$, $10c-10$, $100b-100$, and $1000a-1000$ all have a remainder of $3$ when divided by $7$. Thus, we get $a=5$, $b=6$, $c=9$, and $d=4$. Thus, we get $5694$ as $\overline{abcd}$, and the answer is $694+5=\boxed{699}$.
 
  
-
-
 
 
 
@@ -609,8 +574,6 @@ Let our four digit number be $abcd$. Replacing digits with 1, we get the followi
  Using the same methods of simplification, we get that x=2, y=5, and z=6, which means that 1000a, 100b, 10c, and d has a remainder of 2, 5, 6, and 4, respectively. Since a, b, c, and d is the largest possible number between 0 to 9, we use casework to determine the answer is a=5, b=6, c=9, and d=4, which gives us an answer of $5+694=\boxed{699}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Torus $T$ is the surface produced by revolving a circle with radius $3$ around an axis in the plane of the circle that is a distance $6$ from the center of the circle (so like a donut). 
@@ -670,8 +633,6 @@ First, let's consider a section $\mathcal{P}$ of the solids, along the axis.By s
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -686,8 +647,6 @@ First, let's consider a section $\mathcal{P}$ of the solids, along the axis.By s
  \[CC' + DD' = \frac {9}{4}+\frac {9}{7} = \frac {99}{28}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) There is a collection of $25$ indistinguishable white chips and $25$ indistinguishable black chips. Find the number of ways to place some of these chips in a $5 \times 5$ grid such that
@@ -724,8 +683,6 @@ The problem says "some", so not all cells must be occupied.We start by doing cas
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that the answer is equivalent to the number of ways to choose rows and columns that the white chips occupy, as once those are chosen, there is only one way to place the chips, and every way to place the chips corresponds to a set of rows and columns occupied by the white pieces.
@@ -735,8 +692,6 @@ Note that the answer is equivalent to the number of ways to choose rows and colu
  The number of sets of rows and columns that white can occupy are $2^{5} - 2 = 30$ each, accounting for the empty and full set.So, including the board with 25 white pieces and the board with 25 black pieces, the answer is $30^{2}+2 = \boxed{902}$
 
  
-
-
 
 
 
@@ -772,8 +727,6 @@ Say the chips were distinct. Note that when we create rows or columns of these d
  This is exactly one of the cases, particularly $(1V,1H)$ in our bijective set.
 
  
-
-
 
 
 
@@ -814,8 +767,6 @@ Case 1: All chips on the grid have the same color.
 
 
 
-
-
 \textbf{Solution 5 (Notationless Solution 4)}
 
 We rely on 3 simple observations:
@@ -828,8 +779,6 @@ We rely on 3 simple observations:
 
 
 
-
-
 \textbf{Solution 6}
 
 Observe how each grid is uniquely determined by a choice of "black rows" and "white rows." That is, every intersection of a black row with a black column will be a black cell, and likewise with the white rows and columns, but every intersection of a black row with a white column will remain empty. 
@@ -839,8 +788,6 @@ Observe how each grid is uniquely determined by a choice of "black rows" and "wh
  Hence, the number of sets of rows and columns that white can occupy are $2^{5} - 2 = 30$ each. But including the board with 25 white pieces and the board with 25 black pieces, the answer is $30^{2}+2 = \boxed{902}$.
 
  
-
-
 
 
 
@@ -889,14 +836,6 @@ We can denote X as a black pieces, O as a white pieces, and \_ as a blank pieces
  
 
 
- 
-
-
- 
-
-
-
-
 	\item (\textit{AIME II 2024}) Let $\triangle$$ABC$ have incenter $I$, circumcenter $O$, inradius $6$, and circumradius $13$. Suppose that $\overline{IA} \perp \overline{OI}$. Find $AB \cdot AC$.
 
 
@@ -923,8 +862,6 @@ We'll tackle the initial steps of the problem in two different manners, both lea
 
 
 
-
-
 \textbf{Solution 1.1}
 
 Since $I$ is the incenter, $\angle BAL \cong \angle DAC$. Furthermore, $\angle ABC$ and $\angle ADC$ are both subtended by the same arc $AC$, so $\angle ABC \cong \angle ADC.$ Therefore by AA similarity, $\triangle ABL \sim \triangle ADC$. From this we can say that 
@@ -936,8 +873,6 @@ Since $I$ is the incenter, $\angle BAL \cong \angle DAC$. Furthermore, $\angle A
  We have successfully represented $AB \cdot AC$ in terms of $AL$ and $ID$. Solution 1.2 will explain an alternate method to get a similar relationship, and then we'll rejoin and finish off the solution. 
 
  
-
-
 
 
 
@@ -971,8 +906,6 @@ $\angle ALB \cong \angle DLC$ by vertical angles and $\angle LBA \cong \angle CD
  \[BL \cdot CL = AL \cdot LD \implies AB \cdot AC = ID^2 \cdot \frac{AL}{LD}\]
 
  
-
-
 
 
 
@@ -1061,8 +994,6 @@ Now we can finish up our solution. We know that $AB \cdot AC = 3 \cdot ID^2$. Si
 
 
 
-
-
 \textbf{Solution 2 (Excenters)}
 
 By Euler's formula $OI^{2}=R(R-2r)$, we have $OI^{2}=13(13-12)=13$. Thus, by the Pythagorean theorem, $AI^{2}=13^{2}-13=156$. Let $AI$ intersect the circumcircle of $ABC$ at $M$; notice $\triangle AOM$ is isosceles and $\overline{OI}\perp\overline{AM}$ which is enough to imply that $I$ is the midpoint of $\overline{AM}$, and $M$ itself is the midpoint of $II_{a}$ where $I_{a}$ is the $A$-excenter of $\triangle ABC$. Therefore, $AI=IM=MI_{a}=\sqrt{156}$ and 
@@ -1071,8 +1002,6 @@ By Euler's formula $OI^{2}=R(R-2r)$, we have $OI^{2}=13(13-12)=13$. Thus, by the
  Note that this problem is extremely similar to \href{https://artofproblemsolving.com/wiki/index.php?title=2019\_CIME\_I\_Problems/Problem\_14}{2019 CIME I/14}.
 
  
-
-
 
 
 
@@ -1085,8 +1014,6 @@ Denote $AB=a, AC=b, BC=c$. By the given condition, $\frac{abc}{4A}=13; \frac{2A}
  Thus, we have $\frac{2A}{a+b+c}=\frac{2A}{3c}=6, A=9c$. Now, we have $\frac{abc}{4A}=\frac{abc}{36c}=\frac{ab}{36}=13\implies ab=\boxed{468}$
 
  
-
-
 
 
 
@@ -1125,8 +1052,6 @@ where the first equality follows from the law of sines, the fourth equality foll
 
 
 
-
-
 \textbf{Solution 5 (Trig)}
 
 
@@ -1149,8 +1074,6 @@ Firstly, we can construct the triangle $\triangle ABC$ by drawing the circumcirl
  -- VensL.
 
  
-
-
 
 
 
@@ -1177,8 +1100,6 @@ Firstly, we can construct the triangle $\triangle ABC$ by drawing the circumcirl
 
 
 
-
-
 \textbf{Solution 7}
 
 Call side $BC = a$, and similarly label the other sides. Note that ${OI}^2 = R^2 - 2Rr$. Also note that $AO = R$, so by the right angle, $AI = \sqrt{2Rr}$. However, we can double Angle Bisector theorem. The length of the angle bisector from A is $\sqrt{(bc)(1 - \frac{a^2}{(b+c)^2})}$. As a direct result, the length AI simplifies down to $\frac{\sqrt{(bc)(b+c-a)}}{\sqrt{{a+b+c}}}$. 
@@ -1193,8 +1114,6 @@ Call side $BC = a$, and similarly label the other sides. Note that ${OI}^2 = R^2
 
 
 
-
-
 \textbf{Solution 8}
 
 Let the intersection of the $A$-angle bisector and the circumcircle be $M$, and denote the $A$-excenter as $I_A$. Denote the tangent to the incircle from $AC$ as $E$ and the tangent to the excircle from $AC$ as $E_A$.
@@ -1204,8 +1123,6 @@ Let the intersection of the $A$-angle bisector and the circumcircle be $M$, and 
  Using areas we have that $\frac{abc}{4R} = rs$. Substituting gives $\frac{sbc}{6R} = rs \implies bc = 6Rr = \boxed{468}$ and we're done. - thoom
 
  
-
-
 
 
 
@@ -1229,15 +1146,11 @@ We know that the area of $\triangle{ABC}$ is equal to $\frac{abc}{4R}$, but is a
 
 
 
-
-
 \textbf{Solution 10}
 
 We know by Euler's theorem $OI^2=R^2-2Rr.$ Since $AO=R,$ we have $AI=\sqrt{2Rr}.$ Now, extend $AI$ to meet $BC$ at $A'$ and the circumcircle of $\Delta ABC$ at $L.$ By the Incenter-Excenter lemma, $BL=CL=IL=r_a.$ (Note that $OI \perp AL \rightarrow AI=IL=r_a\rightarrow r_a=\sqrt{2Rr}.$) Using Ptolemy in the cyclic quadrilateral $ABLC,$ we have $c\cdot r_a+b\cdot r_a=2r_a\cdot a \iff \frac{b+c}{a}=2.$ Also using the angle-bisector theorem we get, $\frac{c}{A'B}=\frac{b}{A'C}=\frac{b+c}{a}=2,$ so call $c=2m, b=2n, A'B=m, A'C=n.$ Since $\Delta AA'B \sim \Delta CA'L,$ $\frac{AB}{r_a}=\frac{A'B}{A'L}\rightarrow LA'=\frac{r_a}{2}.$ Thus, $AA'=\frac{3r_a}{2}$ (as $AL=2r_a$), and $mn=AA'\cdot LA'=\frac{3r_a^2}{4}=\frac{3Rr}{2}.$ In this problem, we want to find $4mn=6Rr,$ yielding an answer of $\boxed{468}.$
 
  
-
-
 
 
 
@@ -1250,8 +1163,6 @@ We will use solution $1$'s second diagram, except we will drop the altitude from
  $\angle BAH=90 - \angle ABC = 90- \angle AA'C= \angle OAC$. Hence, $\triangle ALH$ is similar to  $\triangle AOI$. Also, $\triangle ABH$ is similar to $\triangle AA'C$, so $AB*AC=2*AO*AI$. $\triangle IAF$ is similar to $\triangle DBE$, hence $DE=IF=IG$, and thus $L$ bisects $\overline{ID}$. It is clear $\triangle IGL$ is similar to $\triangle AHL$ Thus, $AH=3*II' = 3*6 = 18$. $AB*AC = AH*2*AO = \boxed{468}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Find the number of triples of nonnegative integers $(a, b, c)$ satisfying $a + b + c = 300$ and 
@@ -1276,15 +1187,11 @@ $ab(a+b)+bc(b+c)+ac(a+c)=300(ab+bc+ac)-3abc=6000000$$\implies 100(ab+bc+ac)-abc=
 
 
 
-
-
 \textbf{Solution 2}
 
 $a^2(b+c)+b^2(a+c)+c^2(a+b) = 6000000$, thus $a^2(300-a)+b^2(300-b)+c^2(300-c) = 6000000$. Complete the cube to get $-(a-100)^3-(b-100)^3-(c-100)^3 = 9000000-30000(a+b+c)$, which so happens to be 0. Then we have $(a-100)^3+(b-100)^3+(c-100)^3 = 0$. We can use Fermat's last theorem here to note that one of $a, b, c$ has to be 100. We have $200+200+200+1 = 601.$
 
  
-
-
 
 
 
@@ -1323,8 +1230,6 @@ The first and the fifth equalities follow from the condition that $a+b+c = 300$.
 
 
 
-
-
 \textbf{Solution 4}
 
 We will use Vieta's formulas to solve this problem. We assume $a + b + c = 300$, $ab + bc + ca = m$, and $abc = n$. Thus $a$, $b$, $c$ are the three roots of a cubic polynomial $f(x)$.
@@ -1345,8 +1250,6 @@ We will use Vieta's formulas to solve this problem. We assume $a + b + c = 300$,
 
 
 
-
-
 \textbf{Solution 5}
 
 Let's define $a=100+x$, $b=100+y$, $c=100+z$. Then we have $x+y+z=0$ and $6000000 = \sum a^2(b+c)$
@@ -1356,8 +1259,6 @@ Let's define $a=100+x$, $b=100+y$, $c=100+z$. Then we have $x+y+z=0$ and $600000
  $= \sum (20000 + 30000 x -x^3) = 6000000 - \sum x^3$, so we get $x^3 + y^3 + z^3 = 0$. Then from $x+y+z = 0$, we can find $0 = x^3+y^3+z^3 = x^3+y^3-(x+y)^3 = 3xyz$, which means that one of $a$, $b$,$c$ must be 0. There are 201 solutions for each of $a=0$, $b=0$ and $c=0$, and subtract the overcounting of 2 for solution $(200, 200, 200)$, the final result is $201 \times 3 - 2 = \boxed{601}$.
 
  
-
-
 
 
 
@@ -1387,8 +1288,6 @@ We are given in the problem that
 
 
 
-
-
 \textbf{Solution 7 (similar to 2)}
 
 
@@ -1397,8 +1296,6 @@ We are given in the problem that
  Given those, it is easy to see that $c > 100$ for instance, in which we have the numbers of some form $(a-100)^3 + (b-100)^3 = (100-c)^3$ given or $c < 100$ in which we have $(a-100)^3 + (b-100)^3 = (c-100)^3$. Through Fermat's Last Theorem, we require one of these to equal 0, as otherwise no other solutions can exist. So, there are 3 ways to choose which one is 0, WLOG say $a$, and then we have $b+c = 200$ which has $\binom{201}{1} = 201$ solutions via stars and bars. In total, that is 603 solutions. We overcount $(100,100,100)$ twice so we have $\boxed{601}$ that work.
 
  
-
-
 
 
 	\item (\textit{AIME II 2024}) Let $O(0,0),A(\frac{1}{2},0),$ and $B(0,\frac{\sqrt{3}}{2})$ be points in the coordinate plane. Let $\mathcal{F}$ be the family of segments $\overline{PQ}$ of unit length lying in the first quadrant with $P$ on the $x$-axis and $Q$ on the $y$-axis. There is a unique point $C$ on $\overline{AB},$ distinct from $A$ and $B,$ that does not belong to any segment from $\mathcal{F}$ other than $\overline{AB}$. Then $OC^2=\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -1448,8 +1345,6 @@ Other explanation: Clearly $a=\frac{1}{2}$ works because then PQ = AB. Thus, we 
 
 
 
-
-
 \textbf{Solution 2}
 
 $y=-(\tan \theta) x+\sin \theta=-\sqrt{3}x+\frac{\sqrt{3}}{2}, x=\frac{\sqrt{3}-2\sin \theta}{2\sqrt{3}-2\tan \theta}$
@@ -1457,8 +1352,6 @@ $y=-(\tan \theta) x+\sin \theta=-\sqrt{3}x+\frac{\sqrt{3}}{2}, x=\frac{\sqrt{3}-
  Now, we want to find $\lim_{\theta\to\frac{\pi}{3}}\frac{\sqrt{3}-2\sin \theta}{2\sqrt{3}-2\tan \theta}$. By L'Hôpital's rule, we get $x=\lim_{\theta\to\frac{\pi}{3}}\frac{\sqrt{3}-2\sin \theta}{2\sqrt{3}-2\tan \theta}=\lim_{\theta\to\frac{\pi}{3}}\cos^3{\theta}=\frac{1}{8}$. This means that $y=\frac{3\sqrt{3}}{8}\implies OC^2=\frac{7}{16}$, so we get $\boxed{023}$.
 
  
-
-
 
 
 
@@ -1504,8 +1397,6 @@ The equation of line $AB$ is
 
 
 
-
-
 \textbf{Solution 4 (coordinate bash)}
 
 Let $s$ be a segment in $\mathcal{F}$ with x-intercept $a$ and y-intercept $b$. We can write $s$ as\begin{align*}\frac{x}{a} + \frac{y}{b} &= 1 \\y &= b(1 - \frac{x}{a}).\end{align*}
@@ -1521,8 +1412,6 @@ We take the limit as $da \to 0$ to get
  \[OC^2 = x^2 + y^2 = (\frac{1}{8})^2 + (\frac{3\sqrt{3}}{8})^2 = \frac{7}{16} = \frac{p}{q},\]so $p + q = 7 + 16 = \boxed{023}$.
 
  
-
-
 
 
 
@@ -1543,8 +1432,6 @@ We take the limit as $da \to 0$ to get
 
 
 
-
-
 \textbf{Solution 6(trig identities and questionable rigidity)}
 
 Let's try to find the general form of a line that is in $\mathcal{F}$ based on what angle it makes with the x-axis, $OP = \cos{\theta}$, and $OQ = \sin{\theta}$ so its slope is $-\tan{\theta}$ and due to us knowing its y-intercept we know that our line has form $y = -\tan{\theta}x + \sin{\theta}.$ 
@@ -1562,8 +1449,6 @@ Let's try to find the general form of a line that is in $\mathcal{F}$ based on w
  While this solution may seem long all of these steps come naturally.
 
  
-
-
 
 
 
@@ -1601,8 +1486,6 @@ Let's try to find the general form of a line that is in $\mathcal{F}$ based on w
 
 
 
-
-
 \textbf{Solution 8 (intuitive elementary calculus solution)}
 
 First, we find the equation of the line $\overline{AB}:$ 
@@ -1627,8 +1510,6 @@ Now, we can plug in $x = \dfrac{1}{8}$ into the equation of $\overline{AB}$:\beg
 So point C is located at $(\dfrac{1}{8},\dfrac{3\sqrt{3}}{8})$The question asks for $OC^2$, so we simply apply the Pythagorean Theorem:\begin{align*}OC^2 &= (\dfrac{1}{8})^2 + (\dfrac{3\sqrt{3}}{2})^2 \\OC^2 &= \dfrac{7}{16}\\7 + 16 &= \boxed{23}\end{align*}
 
 
- (no calculus)
-
  \textbf{Geometry Solution} 
                     \begin{figure}[H]
                         \centering
@@ -1645,6 +1526,34 @@ So point C is located at $(\dfrac{1}{8},\dfrac{3\sqrt{3}}{8})$The question asks 
  
 
 
+
+\textbf{Solution 10 (Rigorous)}
+
+Let $\theta=\angle QPO\implies P=(\cos\theta, 0)$. We see that the equations for $PQ$ and $AB$ are
+ \[PQ: y=-\tan\theta x+\sin \theta,\qquad AB: y=-\sqrt{3}x+\frac{\sqrt{3}}{2}\]Solving the system of equations, we obtain the $x$-coordinate of the intersection of $PQ$ and $AB$:
+ \[x_0=\frac{\sin\theta -\frac{\sqrt{3}}{2}}{\tan\theta -\sqrt{3}}\]Let's analyze the function $f(\theta)=\frac{\sin\theta -\frac{\sqrt{3}}{2}}{\tan\theta -\sqrt{3}}$. Taking the derivative:\begin{align*}f'(\theta)&=\frac{\cos\theta(\tan\theta -\sqrt{3})-\sec^2\theta(\sin\theta -\frac{\sqrt{3}}{2})}{(\tan\theta -\sqrt{3})^2}\\&=\frac{\sec^2\theta}{(\tan\theta -\sqrt{3})^2}\left(\sin\theta\cos^2\theta-\sqrt{3}\cos^3\theta-\sin\theta+\frac{\sqrt{3}}{2}\right)\\&=\frac{\sec^2\theta}{(\tan\theta -\sqrt{3})^2}\left(\sin\theta(\cos^2\theta-1)-\sqrt{3}\cos^3\theta+\frac{\sqrt{3}}{2}\right)\\&=\frac{\sec^2\theta}{(\tan\theta -\sqrt{3})^2}\left(\frac{\sqrt{3}}{2}-\sin^3\theta-\sqrt{3}\cos^3\theta\right)\end{align*}
+Let $g(\theta)=\sin^3\theta+\sqrt{3}\cos^3\theta$. Taking the derivative:\begin{align*}g'(\theta)&=3\sin^2\theta\cos\theta-3\sqrt{3}\cos^2\theta\sin\theta\\&=3\sin\theta\cos\theta(\sin\theta-\sqrt{3}\cos\theta)\\&=3\sin{2\theta}\cdot\sin{\left(\theta -\frac{\pi}{3}\right)}\end{align*}
+We know that $\theta\in \left(0,\dfrac \pi 3\right)\cup \left(\dfrac \pi 3,\dfrac \pi 2\right)$, so $\sin 2\theta > 0$. This means $g$ is decreasing when $\theta\in\left(0,\dfrac\pi 3\right)$ and increasing when $\theta\in\left(\dfrac\pi 3,\dfrac\pi 2\right)$. We see that $\sin^3\dfrac \pi 3+\sqrt{3}\cos^3\dfrac \pi 3=\frac{\sqrt{3}}{2}$. Therefore, 
+ \[\frac{\sqrt{3}}{2}-g(\theta)< 0\implies f\text{ is strictly decreasing on }\left(0,\dfrac\pi 3\right),\text{ as well as on } \left(\dfrac\pi 3, \dfrac\pi 2\right)\]We have
+ \[\lim_{\theta\to 0^+}f(\theta)=\dfrac 12, \qquad \lim_{\theta\to \frac{\pi}{2}^-}f(\theta)=0\]
+
+ Also, evaluating the limit $L$ of $f(\theta)$ as $\theta\to \frac{\pi}{3}$:
+ \[L=\lim_{\theta\to\frac{\pi}{3}}\frac{\sin\theta -\frac{\sqrt{3}}{2}}{\tan\theta-\sqrt{3}}\]Or
+ \[L=\lim_{\theta\to\frac{\pi}{3}}\frac{\sin\theta -\sin\dfrac\pi 3}{\tan\theta-\tan\dfrac\pi 3}\]By the Mean Value Theorem, there exists $c_1,c_2$ that lies between $\theta$ and $\frac{\pi}{3}$ such that
+ \[\sin\theta -\sin\dfrac\pi 3=\cos c_1 \cdot\left(\theta-\dfrac\pi 3\right),\qquad \tan\theta-\tan\dfrac\pi 3=\sec^2 c_2\cdot\left(\theta-\dfrac\pi 3\right)\]As $\theta\to\dfrac\pi 3, c_1,c_2\to \dfrac\pi 3$. Substituting,
+ \[L=\lim_{\theta\to\frac{\pi}{3}}\frac{\cos c_1}{\sec^2 c_2}=\cos^3\dfrac \pi 3=\dfrac 18\]Because $f$ is continuous and strictly decreasing on each of the interval $\left(0,\dfrac \pi 3\right)$ and $\left(\dfrac \pi 3,\dfrac \pi 2\right)$, we have $f(\theta)\in\left(0,\frac{1}{8}\right)\cup\left(\frac{1}{8},\frac{1}{2}\right)$. 
+
+ Therefore, the unique point $C$ that does not belong to any segments in $\mathcal{F}$ is at $x_0=\frac{1}{8}$.We have $y_0=\frac{3\sqrt{3}}{8}$. Hence,
+ \[OC^2=x_0^2+y_0^2=\frac{7}{16}\]The requested sum is $7+16=\boxed{023}$.
+
+ Note: To ensure that the intersection of $PQ$ and $AB$ lies on the segment $PQ$ (instead of the case that it lies on the extended line of $PQ$), we need to prove that
+ \[0< f(\theta) < \cos\theta\]This is obviously true for $0<\theta <\frac{\pi}{3}$, as
+ \[0<f(\theta)<\frac{1}{2}<\cos\theta\]
+
+ When $\frac{\pi}{3}<\theta<\dfrac\pi 2$, we need to prove
+ \[\frac{\sin\theta -\frac{\sqrt{3}}{2}}{\tan\theta -\sqrt{3}}<\cos\theta\iff \frac{1}{2}>\cos\theta\]This is still true, and we know that our previous analysis is valid.
+
+ 
 
 
 	\item (\textit{AIME II 2024}) Let $\omega\neq 1$ be a $13$th root of unity. Find the remainder when
@@ -1684,8 +1593,6 @@ is divided by $1000$.
 
 
 
-
-
 \textbf{Solution 2}
 
 To find $\prod_{k=0}^{12} (2 - 2w^k + w^{2k})$, where $w\neq1$ and $w^{13}=1$, rewrite this is as
@@ -1702,8 +1609,6 @@ To find $\prod_{k=0}^{12} (2 - 2w^k + w^{2k})$, where $w\neq1$ and $w^{13}=1$, r
 
 
  
-
-
 
 
 
@@ -1734,8 +1639,6 @@ The third equality follows from the above permutation property.
 
 
 
-
-
 \textbf{Solution 4}
 
 Since $\omega \ne 1$ is a $13^\text{th}$ root of unity, and $13$ is a prime, we have
@@ -1753,8 +1656,6 @@ Since $\omega \ne 1$ is a $13^\text{th}$ root of unity, and $13$ is a prime, we 
  
 
 
-
-
 	\item (\textit{AIME II 2024}) Let $b \geq 2$ be an integer. Call a positive integer $n$ $b\textit{-eautiful}$ if it has exactly two digits when expressed in base $b$, and these two digits sum to $\sqrt{n}$. For example, $81$ is $13$-eautiful because $81=\underline{6}$$\underline{3}_{13}$ and $6+3=\sqrt{81}$. Find the least integer $b\geq 2$ for which there are more than ten $b$-eautiful integers.  
 
 
@@ -1763,7 +1664,7 @@ Since $\omega \ne 1$ is a $13^\text{th}$ root of unity, and $13$ is a prime, we 
 
 
 
-\textbf{Solution}
+\textbf{Solution 1}
 
 We write the base-$b$ two-digit integer as $\left( xy \right)_b$.Thus, this number satisfies
  \[ \left( x + y \right)^2 = b x + y \]with $x \in \left\{ 1, 2, \cdots , b-1 \right\}$ and $y \in \left\{ 0, 1, \cdots , b - 1 \right\}$.
@@ -1778,39 +1679,9 @@ We write the base-$b$ two-digit integer as $\left( xy \right)_b$.Thus, this numb
 
  Next, for each $b'$, we solve Equation (1).
 
- We write $b'$ in the prime factorization form as $b' = \Pi_{i=1}^n p_i^{k_i}$.Let $\left(A, \bar A \right)$ be any ordered partition of $\left\{ 1, 2, \cdots , n \right\}$ (we allow one set to be empty).Denote $P_A = \Pi_{i \in A} p_i^{k_i}$ and $P_{\bar A} = \Pi_{i \in \bar A} p_i^{k_i}$.
-
- Because ${\textrm gcd} \left( z, z-1 \right) = 1$, there must exist such an ordered partition, such that $P_A | z$ and $P_{\bar A} | z-1$.
-
- Next, we prove that for each ordered partition $\left( A, \bar A \right)$, if a solution of $z$ exists, then it must be unique.
-
- Suppose there are two solutions of $z$ under partition $\left( A, \bar A \right)$: $z_1 = c_1 P_A$, $z_1 - 1 = d_1 P_{\bar A}$, and $z_2 = c_2 P_A$, $z_2 - 1 = d_2 P_{\bar A}$.W.L.O.G., assume $c_1 < c_2$.Hence, we have
- \[ \left( c_2 - c_1 \right) P_A = \left( d_2 - d_1 \right) P_{\bar A} . \]
-
- Because ${\textrm gcd} \left( P_A, P_{\bar A} \right) = 1$ and $c_1 < c_2$, there exists a positive integer $m$, such that $c_2 = c_1 + m P_{\bar A}$ and $d_2 = d_1 + m P_A$.Thus,\begin{align*}z_2 & = z_1 + m P_A P_{\bar A} \\& = z_1 + m b' \\& > b' .\end{align*}
-
-
- However, recall $z_2 \leq b'$. We get a contradiction.Therefore, under each ordered partition for $b'$, the solution of $z$ is unique.
-
- Note that if $b'$ has $n$ distinct prime factors, the number of ordered partitions is $2^n$.Therefore, to find a $b'$ such that the number of solutions of $z$ is more than 10, the smallest $n$ is 4.
-
- With $n = 4$, the smallest number is $2 \cdot 3 \cdot 5 \cdot 7 = 210$.Now, we set $b' = 210$ and check whether the number of solutions of $z$ under this $b'$ is more than 10.
-
- We can easily see that all ordered partitions (except $A = \emptyset$) guarantee feasible solutions of $z$.Therefore, we have found a valid $b'$.Therefore, $b = b' + 1 = \boxed{\textbf{(211) }}$.
-
- \textbf{I can't comprehend the end!} Continue until reaching 
- \[ z \left( z - 1 \right) = b' x , \hspace{1cm} (1) \]where $z \in \left\{ 2, 3, \cdots , b' \right\}$ and $x \in \left\{ 1, 2, \cdots , b' \right\}$. Notice that $x$ must divide into $z(z-1)$ as $b'x = z(z-1)$. Then, notice that $\gcd(z,z-1) = 1$, and thus either $x~|~ z$ or $x ~ | ~ z-1$.
-
- Every solution then corresponds to a rough divisor of $b'$. Thus, suppose $b'$ has $n$ positive prime divisors. Then, every divisor can be distributed to $z$ or $z-1$, contributing a total of $2^n$ choices.  To obtain more than 10 solutions, one must find $2^n > 10$, in which $n \ge 4$. 
-
- The smallest $b'$ occurs with the four smallest prime divisors, those being, 2, 3, 5, 7, giving $b' = 210$, and thus $b = b' + 1 = \boxed{211}$.
+ We write $b'$ in the prime factorization form as $b' = \Pi_{i=1}^n p_i^{k_i}$.Let 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2024}) Find the number of rectangles that can be formed inside a fixed regular dodecagon ($12$-gon) where each side of the rectangle lies on either a side or a diagonal of the dodecagon. The diagram below shows three of those rectangles.
@@ -1855,8 +1726,6 @@ By Furaken
 
 
 
-
-
 \textbf{Solution 2}
 
 Using the same diagram as Solution 1, we can get the number of rectangles from Case 1 by adding the number of rectangles of $A_2$ $A_8$ $A_8$ $A_{10}$ and $A_1$ $A_5$ $A_7$ $A_{11}$ and then subtracting the overlaps,
@@ -1872,8 +1741,6 @@ Using the same diagram as Solution 1, we can get the number of rectangles from C
  \[= 54\]Multiply that by 3 and add it to Case 1 to get $\boxed{315}$.
 
  
-
-
 
 
 
@@ -1922,11 +1789,6 @@ Case 2: $k = \tan 15^\circ$, $\tan 45^\circ$, $\tan 75^\circ$.
 Putting all cases together, the total number of rectangles is $162 + 153 = \boxed{\textbf{(315) }}$.
 
  
-
-
- 
-
-
 
 
 \end{enumerate}

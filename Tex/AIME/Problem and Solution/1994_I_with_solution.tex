@@ -15,8 +15,6 @@ One less than a perfect square can be represented by $n^2 - 1 = (n+1)(n-1)$. Eit
  
 
 
-
-
 	\item (\textit{AIME I 1994}) A circle with diameter $\overline{PQ}\,$ of length 10 is internally tangent at $P^{}_{}$ to a circle of radius 20. Square $ABCD\,$ is constructed with $A\,$ and $B\,$ on the larger circle, $\overline{CD}\,$ tangent at $Q\,$ to the smaller circle, and the smaller circle outside $ABCD\,$. The length of $\overline{AB}\,$ can be written in the form $m + \sqrt{n}\,$, where $m\,$ and $n\,$ are integers. Find $m + n\,$.
 
 
@@ -47,12 +45,12 @@ One less than a perfect square can be represented by $n^2 - 1 = (n+1)(n-1)$. Eit
  
 
 
-
-
 	\item (\textit{AIME I 1994}) The function $f_{}^{}$ has the property that, for each real number $x,\,$
 
 
- $f(x)+f(x-1) = x^2\,$.
+ $f(x)+f(x-1) = x^2\,$
+
+ .
 
 
  If $f(19)=94,\,$ what is the remainder when $f(94)\,$ is divided by 1000?
@@ -75,8 +73,6 @@ One less than a perfect square can be represented by $n^2 - 1 = (n+1)(n-1)$. Eit
 
 
 
-
-
 \textbf{Solution 2}
 
 Those familiar with triangular numbers and some of their properties will quickly recognize the equation given in the problem. It is well-known (and easy to show) that the sum of two consecutive triangular numbers is a perfect square; that is,
@@ -89,12 +85,12 @@ Those familiar with triangular numbers and some of their properties will quickly
  
 
 
-
-
 	\item (\textit{AIME I 1994}) Find the positive integer $n\,$ for which
 
 
- $\lfloor \log_2{1}\rfloor+\lfloor\log_2{2}\rfloor+\lfloor\log_2{3}\rfloor+\cdots+\lfloor\log_2{n}\rfloor=1994$.
+ $\lfloor \log_2{1}\rfloor+\lfloor\log_2{2}\rfloor+\lfloor\log_2{3}\rfloor+\cdots+\lfloor\log_2{n}\rfloor=1994$
+
+ .
 
 
  (For real $x\,$, $\lfloor x\rfloor\,$ is the greatest integer $\le x.\,$)
@@ -125,8 +121,6 @@ Note that if $2^x \le a<2^{x+1}$ for some $x\in\mathbb{Z}$, then $\lfloor\log_2{
 
 
 
-
-
 \textbf{Solution 2}
 
 For this solution, we notice that values between ranges of $2^n$ are the same. Let's look at these ranges and their total value. It is trivial to conclude $\log_2{1} = 0$ so we will not write that.
@@ -136,8 +130,6 @@ For this solution, we notice that values between ranges of $2^n$ are the same. L
  Sum of the values up to $1$ less than $2^k$ is $1538$. This seems close enough to our desired value of $1994$ as any additional groups would exceed $1994$. The difference is $1996 - 1538 = 456$. Since the next numbers of the sequence will always be 8 since $\lfloor \log_2{2^8 + n < 2^9} \rfloor = 8$, we can just find the number of '8's, which is $\frac{456}{8} = 57$. So there are exactly 57 integers in that range. The largest integer, which is $a$, is equal to $2^8 + 56 = \boxed{312}$. ~Totient4Breakfast
 
  
-
-
 
 
 
@@ -156,12 +148,12 @@ Like in solution 1, continue upon realization that we get the series \( 0 + 2(1)
  
 
 
-
-
 	\item (\textit{AIME I 1994}) Given a positive integer $n\,$, let $p(n)\,$ be the product of the non-zero digits of $n\,$.  (If $n\,$ has only one digit, then $p(n)\,$ is equal to that digit.)  Let
 
 
- $S=p(1)+p(2)+p(3)+\cdots+p(999)$.
+ $S=p(1)+p(2)+p(3)+\cdots+p(999)$
+
+ .
 
 
  What is the largest prime factor of $S\,$?
@@ -176,11 +168,11 @@ Like in solution 1, continue upon realization that we get the series \( 0 + 2(1)
 
 Suppose we write each number in the form of a three-digit number (so $5 \equiv 005$), and since our $p(n)$ ignores all of the zero-digits, replace all of the $0$s with $1$s. Now note that in the expansion of 
 
- $(1+ 1 +2+3+4+5+6+7+8+9) (1+ 1 +2+3+\cdots+9) (1+ 1 +2+3+\cdots+9)$we cover every permutation of every product of $3$ digits, including the case where that first $1$ represents the replaced $0$s. However, since our list does not include $000$, we have to subtract $1$. Thus, our answer $\boxed{103}$.
+ $(1+ 1 +2+3+4+5+6+7+8+9) (1+ 1 +2+3+\cdots+9) (1+ 1 +2+3+\cdots+9)$
+
+ we cover every permutation of every product of $3$ digits, including the case where that first $1$ represents the replaced $0$s. However, since our list does not include $000$, we have to subtract $1$. Thus, our answer $\boxed{103}$.
 
  
-
-
 
 
 
@@ -191,12 +183,12 @@ Note that $p(1)=p(11), p(2)=p(12), p(3)=p(13), \cdots p(19)=p(9)$, and $p(37)=3p
  
 
 
-
-
 	\item (\textit{AIME I 1994}) The graphs of the equations
 
 
- $y=k, \qquad y=\sqrt{3}x+2k, \qquad y=-\sqrt{3}x+2k,$are drawn in the coordinate plane for $k=-10,-9,-8,\ldots,9,10.\,$  These 63 lines cut part of the plane into equilateral triangles of side $2/\sqrt{3}$.  How many such triangles are formed?
+ $y=k, \qquad y=\sqrt{3}x+2k, \qquad y=-\sqrt{3}x+2k,$
+
+ are drawn in the coordinate plane for $k=-10,-9,-8,\ldots,9,10.\,$  These 63 lines cut part of the plane into equilateral triangles of side $2/\sqrt{3}$.  How many such triangles are formed?
 
 
  
@@ -223,8 +215,6 @@ We note that the lines partition the hexagon of the six extremal lines into disj
 
 
 
-
-
 \textbf{Solution 2}
 
 There are three types of lines: horizontal, upward-slanting diagonal, and downward-slanting diagonal. There are $21$ of each type of line, and a unit equilateral triangle is determined by exactly one of each type of line. Given an upward-slanting diagonal and a downward-slanting diagonal, they determine exactly two unit equilateral triangles as shown below.
@@ -248,8 +238,6 @@ There are three types of lines: horizontal, upward-slanting diagonal, and downwa
 
 
 
-
-
 \textbf{Solution 3 Elementary Counting}
 
 Picturing the diagram in your head should give you an illustration similar to the one above. The distance from parallel sides of the center hexagon is 20 units, and by extending horizontal lines to the sides of the hexagon. This shows that for every side of the hexagon there are 10 spaces. Therefore the side length of the biggest triangle (imagine one of the overlapping triangles in the Star of David) is 30. The total number of triangles in the hexagon can be found by finding the number of triangles in the extended triangle and subtracting the 3 corner triangles. This gives us $30^2 - 10^2 - 10^2- 10^2 = 600$. That is the number of triangles in the hexagon. The remaining triangles form in groups of 10 on the exterior of each side. $600 + 6 * 10 = \boxed{660}$.
@@ -260,12 +248,14 @@ Picturing the diagram in your head should give you an illustration similar to th
  
 
 
-
-
 	\item (\textit{AIME I 1994}) For certain ordered pairs $(a,b)\,$ of real numbers, the system of equations
 
 
- $ax+by=1\,$$x^2+y^2=50\,$has at least one solution, and each solution is an ordered pair $(x,y)\,$ of integers.  How many such ordered pairs $(a,b)\,$ are there?
+ $ax+by=1\,$
+
+ $x^2+y^2=50\,$
+
+ has at least one solution, and each solution is an ordered pair $(x,y)\,$ of integers.  How many such ordered pairs $(a,b)\,$ are there?
 
 
  
@@ -292,8 +282,6 @@ The equation $x^2+y^2=50$ is that of a circle of radius $\sqrt{50}$, centered at
  \[66-6+12=\boxed{72}.\]
 
  
-
-
 
 
 	\item (\textit{AIME I 1994}) The points $(0,0)\,$, $(a,11)\,$, and $(b,37)\,$ are the vertices of an equilateral triangle.  Find the value of $ab\,$.
@@ -325,8 +313,6 @@ Consider the points on the \href{https://artofproblemsolving.com/wiki/index.php?
 
 
 
-
-
 \textbf{Solution 2}
 
 Using the Pythagorean theorem with these beastly numbers doesn't seem promising. How about properties of equilateral triangles? $\sqrt{3}$ and perpendiculars inspires this solution:
@@ -342,15 +328,11 @@ We see this displacement from $M$ to $A$ is $\left[\frac{a-b}{2}, 13\right]$ as 
 
 
 
-
-
 \textbf{Solution 3}
 
 Plot this equilateral triangle on the complex plane.Translate the equilateral triangle so that its centroid is located at the origin. (The centroid can be found by taking the average of the three vertices of the triangle, which gives $\left(\frac{a+b}{3}, 16i\right)$. The new coordinates of the equilateral triangle are $\left(-\frac{a+b}{3}-16i\right), \left(a-\frac{a+b}{3}-5i\right), \left(b-\frac{a+b}{3}+21i\right)$. These three vertices are solutions of a cubic polynomial of form $x^3 + C$. By Vieta's Formulas, the sum of the paired roots of the cubic polynomial are zero. (Or for the three roots $r_1, r_2,$ and $r_3,$$\, r_1r_2 + r_2r_3 + r_3r_1 = 0$.) The vertices of the equilateral triangle represent the roots of a polynomial, so the vertices can be plugged into the above equation. Because both the real and complex components of the equation have to sum to zero, you really have two equations. Multiply out the equation given by Vieta's Formulas and isolate the ones with imaginary components. Simplify that equation, and that gives the equation $5a = 21b.$Now use the equation with only real parts. This should give you a quadratic $a^2 - ab + b^2 = 1083$. Use your previously obtained equation to plug in for $a$ and solve for $b$, which should yield $5\sqrt{3}$. $a$ is then $\frac{21}{5}\sqrt{3}$. Multiplying $a$ and $b$ yields $\boxed{315}$.
 
  
-
-
 
 
 
@@ -375,8 +357,6 @@ Just using the Pythagorean Theorem, we get that $a^2 + 11^2 = (b-a)^2 + 26^2 = b
  
 
 
-
-
 	\item (\textit{AIME I 1994}) A solitaire game is played as follows.  Six distinct pairs of matched tiles are placed in a bag.  The player randomly draws tiles one at a time from the bag and retains them, except that matching tiles are put aside as soon as they appear in the player's hand.  The game ends if the player ever holds three tiles, no two of which match; otherwise the drawing continues until the bag is empty.  The probability that the bag will be emptied is $p/q,\,$ where $p\,$ and $q\,$ are relatively prime positive integers.  Find $p+q.\,$
 
 
@@ -398,8 +378,6 @@ Let $P_k$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Prob
                 Therefore, we obtain the \href{https://artofproblemsolving.com/wiki/index.php?title=Recursion}{recursion} $P_k = \frac {3}{2k - 1}P_{k - 1}$. Iterating this for $k = 6,5,4,3,2$ (obviously $P_1 = 1$), we get $\frac {3^5}{11*9*7*5*3} = \frac {9}{385}$, and $p+q=\boxed{394}$.
 
  
-
-
 
 
 
@@ -431,8 +409,6 @@ Call the case that we begin with [ABCDEF]. It doesn't matter what letter we choo
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $a_{m,n}$ represent the situation in which $n$ tiles are in your hand and $m$ pairs have been removed; i.e., there are $2m$ tiles remaining in play. We know that $a_{m,0}=a_{m,1}$ to begin with, so we find some other recursions:
@@ -458,8 +434,6 @@ Let $a_{m,n}$ represent the situation in which $n$ tiles are in your hand and $m
  
 
 
-
-
 	\item (\textit{AIME I 1994}) In triangle $ABC,\,$ angle $C$ is a right angle and the altitude from $C\,$ meets $\overline{AB}\,$ at $D.\,$  The lengths of the sides of $\triangle ABC\,$ are integers, $BD=29^3,\,$ and $\cos B=m/n\,$, where $m\,$ and $n\,$ are relatively prime positive integers.  Find $m+n.\,$
 
 
@@ -480,8 +454,6 @@ Since $\triangle ABC \sim \triangle CBD$, we have $\frac{BC}{AB} = \frac{29^3}{B
 
 
 
-
-
 \textbf{Solution 2}
 
 We will solve for $\cos B$ using $\triangle CBD$, which gives us $\cos B = \frac{29^3}{BC}$. By the Pythagorean Theorem on $\triangle CBD$, we have $BC^2 - DC^2 = (BC + DC)(BC - DC) = 29^6$. Trying out factors of $29^6$, we can either guess and check or just guess to find that $BC + DC = 29^4$ and $BC - DC = 29^2$ (The other pairs give answers over 999). Adding these, we have $2BC = 29^4 + 29^2$ and $\frac{29^3}{BC} = \frac{2*29^3}{29^2 (29^2 +1)} = \frac{58}{842} = \frac{29}{421}$, and our answer is $\boxed{450}$.
@@ -490,15 +462,11 @@ We will solve for $\cos B$ using $\triangle CBD$, which gives us $\cos B = \frac
 
 
 
-
-
 \textbf{Solution 3}
 
 Using similar right triangles, we identify that $CD = \sqrt{AD \cdot BD}$. Let $AD$ be $29 \cdot k^2$, to avoid too many radicals, getting $CD = k \cdot 29^2$. Next we know that $AC = \sqrt{AB \cdot AD}$ and that $BC = \sqrt{AB \cdot BD}$. Applying the logic with the established values of k, we get $AC = 29k \cdot \sqrt{29^2 + k^2}$ and $BC = 29^2 \cdot \sqrt{29^2 + k^2}$. Next we look to the integer requirement. Since $k$ is both outside and inside square roots, we know it must be an integer to keep all sides as integers. Let $y$ be $\sqrt{29^2 + k^2}$, thus $29^2 = y^2 - k^2$, and $29^2 = (y + k)(y - k)$. Since $29$ is prime, and $k$ cannot be zero, we find $k = 420$ and $y = 421$ as the smallest integers satisfying this quadratic Diophantine equation. Then, since $cos B$ = $\frac{29}{\sqrt{29^2 + k^2}}$. Plugging in we get $cos B = \frac{29}{421}$, thus our answer is $\boxed{450}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1994}) Ninety-four bricks, each measuring $4''\times10''\times19'',$ are to be stacked one on top of another to form a tower 94 bricks tall.  Each brick can be oriented so it contributes $4''\,$ or $10''\,$ or $19''\,$ to the total height of the tower.  How many different tower heights can be achieved using all 94 of the bricks?
@@ -528,8 +496,6 @@ We have the smallest stack, which has a height of $94 \times 4$ inches. Now when
 
 
 
-
-
 \textbf{Solution 2}
 
 Using bricks of dimensions $4''\times10''\times19''$ is comparable to using bricks of dimensions $0''\times6''\times15''$ which is comparable to using  bricks of dimensions $0''\times2''\times5''$. Using 5 bricks of height $2''$ can be replaced by using 2 bricks of height $5''$ and 3 bricks of height $0''$. 
@@ -537,8 +503,6 @@ Using bricks of dimensions $4''\times10''\times19''$ is comparable to using bric
  It follows that all tower heights can be made by using 4 or fewer bricks of height $2''$. There are $95+94+93+92+91=465$ ways to build a tower using 4 or fewer bricks of height $2''$. Taking the heights $\mod 5$, we see that towers using a different number of bricks of height $2''$ have unequal heights. Thus, all of the $\boxed{465}$ tower heights are different.
 
  
-
-
 
 
 	\item (\textit{AIME I 1994}) A fenced, rectangular field measures 24 meters by 52 meters. An agricultural researcher has 1994 meters of fence that can be used for internal fencing to partition the field into congruent, square test plots. The entire field must be partitioned, and the sides of the squares must be parallel to the edges of the field. What is the largest number of square test plots into which the field can be partitioned using all or some of the 1994 meters of fence? 
@@ -559,8 +523,6 @@ Suppose there are $n$ squares in every column of the grid, so there are $\frac{5
 
 
 
-
-
 \textbf{Solution 2}
 
 Assume each partitioned square has a side length of $1$ (just so we can get a clear image of what the formula will look like). The amount of internal fencing that is required to partition the field is clearly $52*(24+1) + 24(52+1)$. (If you are confused, just draw the square out). This is clearly greater than $1994$, so the actual side length that we are looking for is greater than $1$.
@@ -574,15 +536,17 @@ Assume each partitioned square has a side length of $1$ (just so we can get a cl
  
 
 
-
-
 	\item (\textit{AIME I 1994}) The equation
 
 
- $x^{10}+(13x-1)^{10}=0\,$has 10 complex roots $r_1, \overline{r_1}, r_2, \overline{r_2}, r_3, \overline{r_3}, r_4, \overline{r_4}, r_5, \overline{r_5},\,$ where the bar denotes complex conjugation.  Find the value of
+ $x^{10}+(13x-1)^{10}=0\,$
+
+ has 10 complex roots $r_1, \overline{r_1}, r_2, \overline{r_2}, r_3, \overline{r_3}, r_4, \overline{r_4}, r_5, \overline{r_5},\,$ where the bar denotes complex conjugation.  Find the value of
 
 
  $\frac 1{r_1\overline{r_1}}+\frac 1{r_2\overline{r_2}}+\frac 1{r_3\overline{r_3}}+\frac 1{r_4\overline{r_4}}+\frac 1{r_5\overline{r_5}}.$
+
+ 
  \textbf{Answer: }850
 
 
@@ -602,8 +566,6 @@ Let $t = 1/x$. After multiplying the equation by $t^{10}$, $1 + (13 - t)^{10} = 
  But $\cos \frac {\pi}{10} + \cos \frac {9\pi}{10} = \cos \frac {3\pi}{10} + \cos \frac {7\pi}{10} = \cos \frac {\pi}{2} = 0$ so the sum is $\boxed{850}$.
 
  
-
-
 
 
 
@@ -630,8 +592,6 @@ Divide both sides by $x^{10}$ to get
 
 
 
-
-
 \textbf{Solution 3(Ileytyn)}
 
 Let us apply difference of squares, by writing this equation as $(x^5)^2-(i[13x-1]^5)^2=0$, where $i=\sqrt{-1}$. 
@@ -642,8 +602,6 @@ Let us apply difference of squares, by writing this equation as $(x^5)^2-(i[13x-
  \[170\cdot 5 = \boxed{850}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 1994}) A beam of light strikes $\overline{BC}\,$ at point $C\,$ with angle of incidence $\alpha=19.94^\circ\,$ and reflects with an equal angle of reflection as shown.  The light beam continues its path, reflecting off line segments $\overline{AB}\,$ and $\overline{BC}\,$ according to the rule: angle of incidence equals angle of reflection.  Given that $\beta=\alpha/10=1.994^\circ\,$ and $AB=BC,\,$ determine the number of times the light beam will bounce off the two line segments.  Include the first reflection at $C\,$ in your count.
@@ -674,8 +632,6 @@ At each point of reflection, we pretend instead that the light continues to trav
  
 
 
-
-
 	\item (\textit{AIME I 1994}) Given a point $P^{}_{}$ on a triangular piece of paper $ABC,\,$ consider the creases that are formed in the paper when $A, B,\,$ and $C\,$ are folded onto $P.\,$  Let us call $P_{}^{}$ a fold point of $\triangle ABC\,$ if these creases, which number three unless $P^{}_{}$ is one of the vertices, do not intersect.  Suppose that $AB=36, AC=72,\,$ and $\angle B=90^\circ.\,$  Then the area of the set of all fold points of $\triangle ABC\,$ can be written in the form $q\pi-r\sqrt{s},\,$ where $q, r,\,$ and $s\,$ are positive integers and $s\,$ is not divisible by the square of any prime.  What is $q+r+s\,$?
 
 
@@ -702,8 +658,6 @@ Let $O_{AB}$ be the intersection of the \href{https://artofproblemsolving.com/wi
  Hence, the answer is, using the $\frac 12 ab\sin C$ definition of triangle area, $\left[\frac{\pi}{3} \cdot 18^2 - \frac{1}{2} \cdot 18^2 \sin \frac{2\pi}{3} \right] + \left[\frac{\pi}{6} \cdot \left(18\sqrt{3}\right)^2 - \frac{1}{2} \cdot (18\sqrt{3})^2 \sin \frac{\pi}{3}\right] = 270\pi - 324\sqrt{3}$, and $q+r+s = \boxed{597}$.
 
  
-
-
 
 
 \end{enumerate}

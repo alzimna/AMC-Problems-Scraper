@@ -20,8 +20,6 @@ Converting the given equations to exponential form yields $x^{24}=w$, $y^{40}=w$
 
 
 
-
-
 \textbf{Solution 2}
 
 Converting the given equations to exponential form yields. $x^{24}=w$, $y^{40}=w$, and $(xyz)^{12}=x^{12}y^{12}z^{12} = w$. 
@@ -31,8 +29,6 @@ Converting the given equations to exponential form yields. $x^{24}=w$, $y^{40}=w
  Substituting into $x^{12}y^{12}z^{12} = w$ yields $w^{\frac{1}{2}}w^{\frac{3}{10}}z^{12}=w^{\frac{4}{5}}z^{12}=w$. So $z^{12} = w^\frac{1}{5}$ and $w = z^{60}$. Therefore, $\log_{z} w =\boxed{060}$.
 
  
-
-
 
 
 
@@ -48,15 +44,11 @@ Therefore, $\frac {\log z}{\log w} = \frac 1 {12} - \frac 1 {24} - \frac 1{40} =
 
 
 
-
-
 \textbf{Solution 4}
 
 Since $\log_a b = \frac{1}{\log_b a}$, the given conditions can be rewritten as $\log_w x = \frac{1}{24}$, $\log_w y = \frac{1}{40}$, and $\log_w xyz = \frac{1}{12}$. Since $\log_a \frac{b}{c} = \log_a b - \log_a c$,  $\log_w z = \log_w xyz - \log_w x - \log_w y = \frac{1}{12}-\frac{1}{24}-\frac{1}{40}=\frac{1}{60}$. Therefore, $\log_z w = \boxed{060}$.
 
  
-
-
 
 
 
@@ -70,15 +62,11 @@ If we convert all of the equations into exponential form, we receive $x^{24}=w$,
 
 
 
-
-
 \textbf{Solution 6}
 
 Converting all of the logarithms to exponentials gives $x^{24} = w, y^{40} =w,$ and $x^{12}y^{12}z^{12}=w.$ Thus, we have $y^{40} = x^{24} \Rightarrow z^3=y^2.$ We are looking for $\log_z w,$ which by substitution, is $\log_{y^{\frac{2}{3}}} y^{40} = 40 \div \frac{2}{3} = \boxed{060}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) Let $f(x)=|x-p|+|x-15|+|x-p-15|$, where $0 < p < 15$. Determine the \href{https://artofproblemsolving.com/wiki/index.php?title=Minimum}{minimum} value taken by $f(x)$ for $x$ in the \href{https://artofproblemsolving.com/wiki/index.php?title=Interval}{interval} $p \leq x\leq15$.
@@ -101,15 +89,11 @@ It is best to get rid of the \href{https://artofproblemsolving.com/wiki/index.ph
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $p$ be equal to $15 - \varepsilon$, where $\varepsilon$ is an almost neglectable value. Because of the small value $\varepsilon$, the \href{https://artofproblemsolving.com/wiki/index.php?title=Domain}{domain} of $f(x)$ is basically the \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} ${15}$. plugging in $15$ gives $\varepsilon + 0 + 15 - \varepsilon$, or $15$, so the answer is $\boxed{015}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) What is the product of the real roots of the equation $x^2 + 18x + 30 = 2 \sqrt{x^2 + 18x + 45}$?
@@ -132,8 +116,6 @@ Let $y=x^2+18x+30$. Substituting into the original equation yields $y=2\sqrt{y+1
 
 
 
-
-
 \textbf{Solution 2}
 
 We begin by noticing that the polynomial on the left is $15$ less than the polynomial under the radical sign. Thus: 
@@ -148,8 +130,6 @@ We begin by noticing that the polynomial on the left is $15$ less than the polyn
 
 
 
-
-
 \textbf{Solution 3}
 
 Begin by completing the square on both sides of the equation, which gives 
@@ -159,8 +139,6 @@ Begin by completing the square on both sides of the equation, which gives
  \[\left(\sqrt{61}-9\right)\left(-\sqrt{61}-9\right)=81-61=\boxed{020}\]By difference of squares.
 
  
-
-
 
 
 
@@ -179,8 +157,6 @@ We are given the equation
  \[x^2+18x+20=0\]Since the discriminant $\sqrt{18^2-4\cdot20}$ is real, both the roots are real. Thus by Vieta's Formulas, the product of the roots is the constant, $\boxed{020}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) A machine-shop cutting tool has the shape of a notched circle, as shown. The radius of the circle is $\sqrt{50}$ cm, the length of $AB$ is $6$ cm and that of $BC$ is $2$ cm. The angle $ABC$ is a right angle. Find the square of the distance (in centimeters) from $B$ to the center of the circle.
@@ -208,13 +184,13 @@ Because we are given a right angle, we look for ways to apply the \href{https://
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_4_Solution_Figure_1.png}
                     \end{figure}
-                    Applying the Pythagorean Theorem, $OA^2 = OD^2 + AD^2$ and $OC^2 = EC^2 + EO^2$.
+                    
+
+ Applying the Pythagorean Theorem, $OA^2 = OD^2 + AD^2$ and $OC^2 = EC^2 + EO^2$.
 
  Thus, $\left(\sqrt{50}\right)^2 = y^2 + (6-x)^2$, and $\left(\sqrt{50}\right)^2 = x^2 + (y+2)^2$. We solve this system to get $x = 1$ and $y = 5$, such that the answer is $1^2 + 5^2 = \boxed{026}$.
 
  
-
-
 
 
 
@@ -227,7 +203,9 @@ We'll use the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_4_Solution_Figure_2.png}
                     \end{figure}
-                    We can find $\cos \angle OAB$ using angles $OAC$ and $BAC$.  First we note that by \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_theorem}{ Pythagoras},
+                    
+
+ We can find $\cos \angle OAB$ using angles $OAC$ and $BAC$.  First we note that by \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_theorem}{ Pythagoras},
  \[AC = \sqrt{AB^2 + BC^2} = \sqrt{36 + 4} = \sqrt{40} = 2 \sqrt{10}.\]If we let $M$ be the midpoint of $AC$, that mean that $AM = \sqrt{10}$.  Since $\triangle OAC$ is isosceles ($OA = OC$ from the definition of a circle), $M$ is also the foot of the altitude from $O$ to $AC.$
 
  
@@ -235,7 +213,9 @@ We'll use the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_4_Solution_Figure_3.png}
                     \end{figure}
-                    It follows that $OM = \sqrt{40} = 2 \sqrt{10}$.  Therefore
+                    
+
+ It follows that $OM = \sqrt{40} = 2 \sqrt{10}$.  Therefore
  \begin{align*} \cos \angle OAC = \frac{\sqrt{10}}{\sqrt{50}} &= \frac{1}{\sqrt{5}}, \\ \sin \angle OAC = \frac{2 \sqrt{10}}{\sqrt{50}} &= \frac{2}{\sqrt{5}}. \end{align*}
 Meanwhile, from right triangle $ABC,$ we have
  \begin{align*} \cos \angle BAC = \frac{6}{\sqrt{40}} &= \frac{3}{\sqrt{10}}, \\ \sin \angle BAC = \frac{2}{\sqrt{40}} &= \frac{1}{\sqrt{10}}. \end{align*}
@@ -253,8 +233,6 @@ Meanwhile, from right triangle $ABC,$ we have
 
 
 
-
-
 \textbf{Solution 3}
 
 Mark the midpoint $M$ of $AC$. Then, drop perpendiculars from $O$ to $AB$ (with foot $T_1$), $M$ to $OT_1$ (with foot $T_2$), and $M$ to $AB$ (with foot $T_3$).
@@ -264,11 +242,11 @@ Mark the midpoint $M$ of $AC$. Then, drop perpendiculars from $O$ to $AB$ (with 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_4_Solution_Figure_4.png}
                     \end{figure}
-                    First notice that by computation, $OAC$ is a $\sqrt {50} - \sqrt {40} - \sqrt {50}$ isosceles triangle, so $AC = MO$.Then, notice that $\angle MOT_2 = \angle T_3MO = \angle BAC$. Therefore, the two blue triangles are congruent, from which we deduce $MT_2 = 2$ and $OT_2 = 6$. As $T_3B = 3$ and $MT_3 = 1$, we subtract and get $OT_1 = 5,T_1B = 1$. Then the Pythagorean Theorem tells us that $OB^2 = \boxed{026}$.
+                    
+
+ First notice that by computation, $OAC$ is a $\sqrt {50} - \sqrt {40} - \sqrt {50}$ isosceles triangle, so $AC = MO$.Then, notice that $\angle MOT_2 = \angle T_3MO = \angle BAC$. Therefore, the two blue triangles are congruent, from which we deduce $MT_2 = 2$ and $OT_2 = 6$. As $T_3B = 3$ and $MT_3 = 1$, we subtract and get $OT_1 = 5,T_1B = 1$. Then the Pythagorean Theorem tells us that $OB^2 = \boxed{026}$.
 
  
-
-
 
 
 
@@ -289,8 +267,6 @@ Draw segment $OB$ with length $x$, and draw radius $OQ$ such that $OQ$ bisects c
 
 
 
-
-
 \textbf{Solution 5}
 
 We use coordinates. Let the circle have center $(0,0)$ and radius $\sqrt{50}$; this circle has equation $x^2 + y^2 = 50$. Let the coordinates of $B$ be $(a,b)$. We want to find $a^2 + b^2$. $A$ and $C$ with coordinates $(a,b+6)$ and $(a+2,b)$, respectively, both lie on the circle. From this we obtain the system of equations
@@ -307,8 +283,6 @@ We use coordinates. Let the circle have center $(0,0)$ and radius $\sqrt{50}$; t
 
 
 
-
-
 \textbf{Solution 6 (Trigonometry)}
 
 
@@ -316,7 +290,9 @@ We use coordinates. Let the circle have center $(0,0)$ and radius $\sqrt{50}$; t
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_4_Solution_Figure_5.png}
                     \end{figure}
-                    I will use the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_cosines}{law of cosines} in triangle $\triangle OAC$ and $\triangle OBC$.
+                    
+
+ I will use the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_cosines}{law of cosines} in triangle $\triangle OAC$ and $\triangle OBC$.
 
  $AC = \sqrt{AB^2 + BC^2} = \sqrt{6^2 + 2^2} = 2 \sqrt{10}$
 
@@ -336,8 +312,6 @@ We use coordinates. Let the circle have center $(0,0)$ and radius $\sqrt{50}$; t
 
 
 
-
-
 \textbf{Solution 7}
 
 Notice that $50=5^2+5^2=7^2+1^2$, and by the size of the diagram, it seems reasonable that $OA$ represents $5^2+5^2$, and $OC$ means the $7^1+1^2$, and indeed, the values work ($7-5=2$ and $5+1=6$), so $OB^2=5^2+1^2=\boxed{026}$
@@ -347,9 +321,10 @@ Notice that $50=5^2+5^2=7^2+1^2$, and by the size of the diagram, it seems reaso
  
 
 
-
-
 	\item (\textit{AIME I 1983}) Suppose that the sum of the squares of two complex numbers $x$ and $y$ is $7$ and the sum of the cubes is $10$. What is the largest real value that $x + y$ can have?
+
+
+ ayyy 67
 
 
  
@@ -376,8 +351,6 @@ One way to solve this problem is by \href{https://artofproblemsolving.com/wiki/i
  The largest possible solution is therefore $x+y=w=\boxed{004}$.
 
  
-
-
 
 
 
@@ -417,8 +390,6 @@ An alternate way to solve this is to let $x=a+bi$ and $y=c+di$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Begin by assuming that $x$ and $y$ are roots of some polynomial of the form $w^2+bw+c$, such that by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formulas}{Vieta's Formulas} and some algebra (left as an exercise to the reader), $b^2-2c=7$ and $3bc-b^3=10$.Substituting $c=\frac{b^2-7}{2}$, we deduce that $b^3-21b-20=0$, whose roots are $-4$, $-1$, and $5$.Since $-b$ is the sum of the roots and is maximized when $b=-4$, the answer is $-(-4)=\boxed{004}$.
@@ -427,103 +398,11 @@ Begin by assuming that $x$ and $y$ are roots of some polynomial of the form $w^2
 
 
 
-
-
 \textbf{Solution 4}
 
 $x^3 + y^3 = 10 = (x+y)(x^2-xy+y^2) = (x+y)(7-xy) \implies xy = 7 - \frac{10}{x+y}.$  Also, $(x+y)^3 = x^3 + 3x^2y+3xy^2+y^3 = 10 + 3xy(x+y).$  Substituting our above into this, we get $10 + 3(7-\frac{10}{x+y})(x+y) = 21x+21y-20 = (x+y)^3$.  Letting $p = x+y$, we have that $p^3 - 21p + 20 = 0$.  Testing $p = 1$, we find that this is a root, to get $(p-1)(p^2+p-20) = 0 \implies p = -5, 1, 4 \implies \boxed{4}$
 
  
-
-
-
-
-	\item (\textit{AIME I 1983}) Let $a_n=6^{n}+8^{n}$. Determine the remainder on dividing $a_{83}$ by $49$.
-
-
- 
- \textbf{Answer: }035
-
-
-
-\textbf{Solution 1}
-
-Firstly, we try to find a relationship between the numbers we're provided with and $49$. We notice that $49=7^2$, and both $6$ and $8$ are greater or less than $7$ by $1$. 
-
- Thus, expressing the numbers in terms of $7$, we get $a_{83} = (7-1)^{83}+(7+1)^{83}$.
-
- Applying the \href{https://artofproblemsolving.com/wiki/index.php?title=Binomial\_Theorem}{Binomial Theorem}, half of our terms cancel out and we are left with $2(7^{83}+3403\cdot7^{81}+\cdots + 83\cdot7)$. We realize that all of these terms are divisible by $49$ except the final term.
-
- After some quick division, our answer is $\boxed{035}$.
-
- \textbf{Clearer explanation of Solution 1} The key idea is to notice that $49=7^2$, and we need a way to subtract large multiples of $49$ from both $6^{83}$ and $8^{83}$ to make these numbers smaller.
-
- 
-Write $6$ as $7-1$ and $8$ as $7+1$, then do binomial expansion. In both $(7-1)^{83}$ and $(7+1)^{83}$, all the terms containing a greater power of $7$ than $7^2$ can be neglected because they are all multiples of $49$. Only the last two terms need to be considered.
-
- 
-The last two terms for $(7-1)^{83}$ is $83\times{7}\times{(-1)^{82}}+(-1)^{83}$.
-
- The last two terms for $(7+1)^{83}$ is $83\times{7}\times{(1)^{82}}+(1)^{83}$.
-
- 
-Add them together. $83\times{7}\times{(-1)^{82}}+(-1)^{83}+83\times{7}\times{(1)^{82}}+(1)^{83}$
-
- $=2\times 83\times 7$
-
- $=1162$
-
- 
-The remainder of $1162$ upon division by $49$ is $35$.
-
- 
-
-
-
-
-
-\textbf{Solution 2}
-
-Since $\phi(49) = 42$ (see \href{https://artofproblemsolving.com/wiki/index.php?title=Euler\%27s\_totient\_function}{Euler's totient function}), \href{https://artofproblemsolving.com/wiki/index.php?title=Euler\%27s\_Totient\_Theorem}{Euler's Totient Theorem} tells us that $a^{42} \equiv 1 \pmod{49}$ where $\text{gcd}(a,49) = 1$. Thus $6^{83} + 8^{83} \equiv 6^{2(42)-1}+8^{2(42)-1}$ $\equiv 6^{-1} + 8^{-1} \equiv \frac{8+6}{48}$ $\equiv \frac{14}{-1}\equiv \boxed{035} \pmod{49}$.
-
- 
-                \begin{itemize}
-                    \item Alternatively, we could have noted that $a^b\equiv a^{b\pmod{\phi{(n)}}}\pmod n$. This way, we have $6^{83}\equiv 6^{83\pmod {42}}\equiv 6^{-1}\pmod {49}$, and can finish the same way.
-                \end{itemize}
-
-
-                
-
-
-
-
-
-\textbf{Solution 3}
-
-$6^{83} + 8^{83} = (6+8)(6^{82}-6^{81}8+\ldots-8^{81}6+8^{82})$
-
- Because $7|(6+8)$, we only consider  $6^{82}-6^{81}8+\ldots-8^{81}6+8^{82}  \pmod{7}$
-
- $6^{82}-6^{81}8+\ldots-8^{81}6+8^{82} \equiv (-1)^{82} - (-1)^{81}+ \ldots - (-1)^1 + 1 = 83 \equiv 6 \pmod{7}$
-
- $6^{83} + 8^{83} \equiv 14 \cdot 6 \equiv \boxed{035} \pmod{49}$
-
- 
-
-
- 
-
-
-
-
-
-\textbf{Solution 4 last resort (bash)}
-
-Repeat the steps of taking modulo $49$ after reducing the exponents over and over again until you get a residue of $49,$ namely $35.$ This bashing takes a lot of time but it isn’t too bad. ~peelybonehead
-
- 
-
-
 
 
 	\item (\textit{AIME I 1983}) Twenty five of King Arthur's knights are seated at their customary round table. Three of them are chosen - all choices being equally likely - and are sent off to slay a troublesome dragon. Let $P$ be the probability that at least two of the three had been sitting next to each other. If $P$ is written as a fraction in lowest terms, what is the sum of the numerator and denominator?
@@ -552,8 +431,6 @@ We can use \href{https://artofproblemsolving.com/wiki/index.php?title=Complement
 
 
 
-
-
 \textbf{Solution 2}
 
 There are $(25-1)! = 24!$ configurations for the knights about the table (since configurations that are derived from each other simply by a rotation are really the same, and should not be counted multiple times). 
@@ -565,8 +442,6 @@ There are $(25-1)! = 24!$ configurations for the knights about the table (since 
  Thus, the required probability is $\frac{2 \times 3 \times 23! - 6 \times 22!}{24!} = \frac{11}{46}$, and the answer is $\boxed{057}$.
 
  
-
-
 
 
 
@@ -584,8 +459,6 @@ Number the knights around the table from $1$ to $25$. The total number of ways t
  The probability is $\frac{25\cdot22}{25\cdot23\cdot4} = \frac{11}{46}$, and the answer is $\boxed{057}$.
 
  
-
-
 
 
 
@@ -609,15 +482,11 @@ Pick an arbitrary spot for the first knight. Then pick spots for the next two kn
 
 
 
-
-
 \textbf{Solution 5}
 
 We simplify this problem by using complementary counting and fixing one knight in place. Then, either a knight can sit two spaces apart from the fixed knight, or a knight can sit more than two spaces apart from the fixed knight. The probability is then $\frac{24\left(23\right)-\left[2\left(20\right)+20\left(19\right)\right]}{24\left(23\right)}=\frac{11}{46}$, so the answer is $11+46=\boxed{057}$.
 
  
-
-
 
 
 
@@ -631,8 +500,6 @@ Let $K_1, K_2, K_3$ be the knights in clockwise order. Let $A$ be the distance b
 
 
 
-
-
 \textbf{Solution 7}
 
 There are $\binom{25}{3}=\frac{25 \cdot 24 \cdot 23}{3 \cdot 2}=2300$ ways to chose $3$ knights out of $25$ knights.
@@ -641,8 +508,6 @@ There are $\binom{25}{3}=\frac{25 \cdot 24 \cdot 23}{3 \cdot 2}=2300$ ways to ch
  \[P=\frac{550}{2300}=\frac{11}{46}\]The answer is $11+46=\boxed{\textbf{057}}$
 
  
-
-
 
 
 
@@ -669,8 +534,6 @@ $\implies$ $Case_2:$ All three knights are next to each other
 
 
 
-
-
 \textbf{Solution 9}
 
 Lets use complementary counting. First, we must find the probability that no $3$ chosen people are sitting next to each other. We claim that if there are $n$ people around the circle, and $k$ chosen people, this probability is simply 
@@ -681,9 +544,7 @@ Lets use complementary counting. First, we must find the probability that no $3$
  
 
 
-
-
-	\item (\textit{AIME I 1983}) What is the largest $2$-digit prime factor of the integer $n = {200\choose 100}$?
+	\item (\textit{AIME I 1983}) What is the smallest $2$-digit prime factor of the integer $n = {200\choose 100}$?
 
 
  
@@ -699,8 +560,6 @@ Expanding the \href{https://artofproblemsolving.com/wiki/index.php?title=Combina
 
 
 
-
-
 \textbf{Solution 1.5, half (desperate)}
 
 The only way a single prime number will be left out after all the cancelation will have to satisfy the condition that out of all the multiples of the prime number we want to find, 2 of the multiples will have to be between 100 and 200, $61$ is good for this solution (if you know your primes) because $61 \cdot 2$ and $61 \cdot 3$ both lie in the interval $(100, 200)$.
@@ -708,8 +567,6 @@ The only way a single prime number will be left out after all the cancelation wi
  The reason for this is because if 2 copies of the prime $p$ we want to find are on the numerator and one copy on the denominator (AKA it contains $p^2$ and also $\dfrac{1}{p}$), there will only be 1 copy of the prime we want to find when all the cancellation is made when reducing the original fraction (only $p$ is left after cancellation).
 
  
-
-
 
 
 
@@ -749,8 +606,6 @@ We want the largest two‑digit prime factor of
 
 
 
-
-
 \textbf{Solution 3: Clarification of Solution 1}
 
 We know that 
@@ -764,8 +619,6 @@ We know that
  \textbf{Comment} which came first, 1985 or 2023?
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) Find the minimum value of $\frac{9x^2\sin^2 x + 4}{x\sin x}$ for $0 < x < \pi$.
@@ -793,8 +646,6 @@ Let $y=x\sin{x}$. We can rewrite the expression as $\frac{9y^2+4}{y}=9y+\frac{4}
 
 
 
-
-
 \textbf{Solution 2}
 
 We can rewrite the numerator to be a perfect square by adding $-\dfrac{12x \sin x}{x \sin x}$. Thus, we must also add back $12$.
@@ -804,8 +655,6 @@ We can rewrite the numerator to be a perfect square by adding $-\dfrac{12x \sin 
  Thus, if $3x \sin x-2=0$, then the minimum is obviously $12$. We show this possible with the same methods in Solution 1; thus the answer is $\boxed{012}$.
 
  
-
-
 
 
 
@@ -823,15 +672,11 @@ Let $y = x\sin{x}$ and rewrite the expression as $f(y) = 9y + \frac{4}{y}$, simi
 
 
 
-
-
 \textbf{Solution 4 (also uses calculus)}
 
 As above, let $y = x\sin{x}$. Add $\frac{12y}{y}$ to the expression and subtract $12$, giving $f(x) = \frac{(3y+2)^2}{y} - 12$. Taking the \href{https://artofproblemsolving.com/wiki/index.php?title=Derivative}{derivative} of $f(x)$ using the \href{https://artofproblemsolving.com/wiki/index.php?title=Chain\_Rule}{Chain Rule} and \href{https://artofproblemsolving.com/wiki/index.php?title=Quotient\_Rule}{Quotient Rule}, we have $\frac{\text{d}f(x)}{\text{d}x} = \frac{6y(3y+2)-(3y+2)^2}{y^2}$. We find the minimum value by setting this to $0$. Simplifying, we have $6y(3y+2) = (3y+2)^2$ and $y = \pm{\frac{2}{3}} = x\sin{x}$. Since both $x$ and $\sin{x}$ are positive on the given interval, we can ignore the negative root. Plugging $y = \frac{2}{3}$ into our expression for $f(x)$, we have $\frac{(3(\frac{2}{3})+2)^2}{y}-12 = \frac{16}{\left(\frac{2}{3}\right)}-12 = \boxed{012}$.
 
  
-
-
 
 
 
@@ -846,16 +691,12 @@ Set $\frac{9x^2\sin^2 x + 4}{x\sin x}$ equal to $y$. Then multiply by $x\sin x$ 
 
 
 
-
-
 \textbf{Solution 6}
 
 Seeing that we need to minimize, we think inequalities, and seeing squares, we think \href{https://artofproblemsolving.com/wiki/index.php?title=RMS-AM-GM-HM}{RMS-AM-GM-HM}. From this inequality, we know that $\sqrt{\frac{(3x\sin x)^2+2^2}{2}} \geq \sqrt{(3x\sin x)(2)}$, with equality holding when $3x\sin x=2$. From this inequality, we can see the following:\begin{align*}\sqrt{\frac{(3x\sin x)^2+2^2}{2}} \geq \sqrt{(3x\sin x)(2)} \\\frac{9x^2\sin^2x+4}{2} \geq 6x\sin x \\\frac{9x^2\sin^2x+4}{x\sin x} \geq 12\end{align*}
 We can prove that the equality condition is possible as in Solution $1$. Thus, our answer is $\boxed{012}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) The numbers $1447$, $1005$ and $1231$ have something in common: each is a $4$-digit number beginning with $1$ that has exactly two identical digits. How many such numbers are there?
@@ -882,8 +723,6 @@ Suppose that the two identical digits are both $1$. Since the thousands digit mu
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider all four-digit sequences with exactly two identical digits. By symmetry, $\frac{1}{10}$ of these sequences start with $1$.
@@ -893,8 +732,6 @@ Consider all four-digit sequences with exactly two identical digits. By symmetry
  For each choice of $(A, B, C)$, there are $\frac{4!}{2!} = 12$ permutations of $AABC$.  Therefore, there are $12 \cdot 360 = 4320$ four-digit sequences with exactly two identical digits.  Of these sequences, $\frac{1}{10} \cdot 4320 = \boxed{432}$ begin with $1$.
 
  
-
-
 
 
 
@@ -918,8 +755,6 @@ We'll use complementary counting. We will split up into $3$ cases: (1) no number
 
 
 
-
-
 \textbf{Solution 4 (Easy casework)}
 
 Let us proceed by casework. 
@@ -929,8 +764,6 @@ Let us proceed by casework.
  Case 2:The last case will be the amount of numbers that have two identical digits thare are $1$. There are ${3}\choose{1}$ places to pick the $1$. For the other $2$ digits, there are $9$ and $8$ options respectively. Thus, we have $3 * 9 * 8 = 216$.Summing the two cases, we get $216 + 216 = \boxed{432}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) The solid shown has a square base of side length $s$. The upper edge is parallel to the base and has length $2s$. All other edges have length $s$. Given that $s=6\sqrt{2}$, what is the volume of the solid?
@@ -958,15 +791,15 @@ First, we find the height of the solid by dropping a perpendicular from the midp
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_11_Solution_Figure_1.png}
                     \end{figure}
-                    Next, we complete the figure into a triangular prism, and find its volume, which is $\frac{6\sqrt{2}\cdot 12\sqrt{2}\cdot 6}{2}=432$.
+                    
+
+ Next, we complete the figure into a triangular prism, and find its volume, which is $\frac{6\sqrt{2}\cdot 12\sqrt{2}\cdot 6}{2}=432$.
 
  Now, we subtract off the two extra \href{https://artofproblemsolving.com/wiki/index.php?title=Pyramid}{pyramids} that we included, whose combined volume is $2\cdot \left( \frac{6\sqrt{2}\cdot 3\sqrt{2} \cdot 6}{3} \right)=144$.
 
  Thus, our answer is $432-144=\boxed{288}$.
 
  
-
-
 
 
 
@@ -977,13 +810,13 @@ First, we find the height of the solid by dropping a perpendicular from the midp
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_11_Solution_Figure_2.png}
                     \end{figure}
-                    Extend $EA$ and $FB$ to meet at $G$, and $ED$ and $FC$ to meet at $H$. Now, we have a regular tetrahedron $EFGH$, which by symmetry has twice the volume of our original solid. This tetrahedron has side length $2s = 12\sqrt{2}$. Using the formula for the volume of a regular tetrahedron, which is $V = \frac{\sqrt{2}S^3}{12}$, where S is the side length of the tetrahedron, the volume of our original solid is:
+                    
+
+ Extend $EA$ and $FB$ to meet at $G$, and $ED$ and $FC$ to meet at $H$. Now, we have a regular tetrahedron $EFGH$, which by symmetry has twice the volume of our original solid. This tetrahedron has side length $2s = 12\sqrt{2}$. Using the formula for the volume of a regular tetrahedron, which is $V = \frac{\sqrt{2}S^3}{12}$, where S is the side length of the tetrahedron, the volume of our original solid is:
 
  $V = \frac{1}{2} \cdot \frac{\sqrt{2} \cdot (12\sqrt{2})^3}{12} = \boxed{288}$.
 
  
-
-
 
 
 
@@ -993,8 +826,6 @@ We can also find the volume by considering horizontal cross-sections of the soli
  \[\int_0^6(6\sqrt{2}-\sqrt{2}h)(6\sqrt{2}+\sqrt{2}h)\ \text{d}h =\int_0^6(72-2h^2)\ \text{d}h=72(6)-2\left(\frac{1}{3}\right)\left(6^3\right)=\boxed{288}\].
 
  
-
-
 
 
 
@@ -1008,15 +839,11 @@ Draw an altitude from a vertex of the square base to the top edge. By using $30,
 
 
 
-
-
 \textbf{Solution 5}
 
 From solution 1, the height of the solid is $6$. Construct a triangular prism with base ABCD, and with the height of the solid. The volume of this triangular prism is $( 6\sqrt{2} )^2 \cdot 6 \cdot 1/2 = 216$ Notice that the solid is symetrical, and if you remove the triangular prism described earlier and combine the two halves on each side of it, you will get a regular tetrahedron. This tetrahedron has sidelength of $6\sqrt{2}$ and since the formula for the volume of a regular tetrahedron is $\frac{s^3}{6\sqrt{2}}$ the volume of this tetrahedron is $72$. $216 + 72 = \boxed{288}$. 
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) Diameter $AB$ of a circle has length a $2$-digit integer (base ten). Reversing the digits gives the length of the perpendicular chord $CD$. The distance from their intersection point $H$ to the center $O$ is a positive rational number. Determine the length of $AB$.
@@ -1047,8 +874,6 @@ Let $AB=10x+y$ and $CD=10y+x$. It follows that $CO=\frac{AB}{2}=\frac{10x+y}{2}$
  
 
 
-
-
 	\item (\textit{AIME I 1983}) For $\{1, 2, 3, \ldots, n\}$ and each of its nonempty subsets a unique \textbf{alternating sum} is defined as follows. Arrange the numbers in the subset in decreasing order and then, beginning with the largest, alternately add and subtract succesive numbers. For example, the alternating sum for $\{1, 2, 3, 6,9\}$ is $9-6+3-2+1=5$ and for $\{5\}$ it is simply $5$. Find the sum of all such alternating sums for $n=7$.
 
 
@@ -1065,76 +890,7 @@ Let $S$ be a non-\href{https://artofproblemsolving.com/wiki/index.php?title=Empt
 
  Because there are $2^{6}=64$ of these pairs of sets, the sum of all possible subsets of our given set is $64 \cdot 7$, giving an answer of $\boxed{448}$.
 
- 
-
-
-
-
-
-\textbf{Solution 2 (almost the same as Solution 1)}
-
-Consider a given subset $T$ of $S$ that contains $7$; then there is a subset $T'$ which contains all the elements of $T$ except for $7$, and only those elements . Since each element of $T'$ has one fewer element preceding it than it does in $T$, their signs are opposite. Thus the sum of the alternating sums of $T$ and $T'$ is equal to 7. There are $2^6$ subsets containing 7, so our answer is $7 \cdot 2^6 = \boxed{448}$.
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-Denote the desired total of all alternating sums of an $n$-element set as $S_n$. We are looking for $S_7$. Notice that all alternating sums of an $n$-element set are also alternating sums of an $n+1$-element set. However, when we go from an $n$ to $n+1$ element set, for each subset with the new element, we are adding the new element and subtracting one of the alternating sums of the $n$-element set. There are $2^n$ subsets of an $n+1$-element set that includes the new element, giving us the relationship $S_{n+1} = S_n + 2^n(n+1) - S_n = 2^n(n+1)$. When $n = 6$, we therefore get $S_ 7 = 2^6(7) = \boxed{448}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-We analyze all the numbers from 1 to 7 separately to see where the number contributes its positive or negative to the sum of the alternating sums. Whenever 7 appears, which it does 64 times, it contributes a positive because it is always first. This gives a net gain of $7 \cdot 64=448$.
-
- If we look at when 6 appears, which it also does 64 times, whether it comes as positive or negative depends on the presence of 7. Half of the subsets with 6 have 7 resulting in subtracting 6 each time, while the other half does not have 7 adding 6 each time, so these contributions of sixes cancel each other out giving a net gain of 0.
-
- The same thing happens to any positive integer less than 7. This is because the determination of a positive or negative contribution is dependent on the number of larger numbers in front of it(For example, the sign of 3 is dependent on the presence of 4, 5, 6, and 7 in the subset). If the number of larger numbers is even, it gives in a positive copy while odd produces its negative. We know that the frequencies of these two cases occurring are the same because $0=(1-1)^{n}=\binom{n}{0}-\binom{n}{1}+\binom{n}{2}-...\binom{n}{n}$ via the Binomial Theorem. Therefore, all positive integers less than 7 will not have any effect and our sum will be $\boxed{448}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-Let $\mathbb{N}_n := \{1, 2, 3, \dots n\}$. Let the alternating sum of a certain subset of $S$ of $\mathbb{N}_n$ be $\xi(S),$ and let 
- \[\mathcal{A}(\mathbb{N}_n) := \sum_{S \subseteq \mathbb{N}_n} \xi(S).\] We see that 
- \[\mathcal{A}(\mathbb{N}_n) = \sum_{S \subseteq \mathbb{N}_n} \xi(S) = \sum_{n \in S, S \subseteq \mathbb{N}_n} \xi(S) + \sum_{S \subseteq \mathbb{N}_{n-1}} \xi(S) = \mathcal{A}(\mathbb{N}_{n-1}) + \sum_{n \in S, S \subseteq \mathbb{N}_n} \left( n - \xi(S - \{n\}) \right),\] as if $n \in S,$ $n$ is the largest element in $S.$ Now, we know that 
- \[\sum_{n \in S, S \subseteq \mathbb{N}_n} n - \xi(S - \{n\}) = \sum_{S \subseteq \mathbb{N}_{n-1}} n - \xi(S) = n \cdot 2^{n-1} - \sum_{S \subseteq \mathbb{N}_{n-1}} \xi(S) = n \cdot 2^{n-1} - \mathcal{A}(\mathbb{N}_{n-1}),\] so 
- \[\mathcal{A}(\mathbb{N}_{n}) = n \cdot 2^{n-1}.\]  Thus, our answer (which is the $n = 7$ case) is $\mathcal{A}(\mathbb{N}_{7}) = 7 \cdot 2^6 = \boxed{448}.$
-
- 
-
-
-
-
-
-\textbf{Solution 6 (Lucky Guess, Not Recommended)}
-
-Computing the first few $S_n$ gives, $S_1$ $=$ $1$, $S_2$ $=$ $4$, $S_3$ $=$ $12$, and $S_4$ $=$ $32$. From this, we think the formula for $S_n$ must be an exponential function in terms of $2^n$ because the amount of subsets that a set with $n$ elements has is $2^n$ and this is a question about subsets so we try $S_n$ = $2^n(x)$. Trying this formula for the first few $S_n$, gives away $x$ to be $n/2$ or more simply $S_n$ = $2^{n-1}(n)$ (try proving this by induction) . Substuiting $n = 7$ gives the requested answer of $S_ 7 = 2^6(7) = \boxed{448}$.
-
- Sidenote
-
- This solution is not a proof and since the AIME does not require proof, it is okay to finsh the answer like this. If you would like to see why the formula holds, please observe Solution 3.
-
- -ThemathCanadian
-
- 
-
-
- 
-
-
+ \textbf{} 
 
 
 	\item (\textit{AIME I 1983}) In the adjoining figure, two circles with radii $8$ and $6$ are drawn with their centers $12$ units apart. At $P$, one of the points of intersection, a line is drawn in such a way that the chords $QP$ and $PR$ have equal length. Find the square of the length of $QP$. 
@@ -1188,8 +944,6 @@ Now we have a kite $AQCP$ with $AQ=AP=8$, $CQ=CP=6$, and diagonal $AC=\sqrt{56}$
 
 
 
-
-
 \textbf{Solution 2 (Easiest)}
 
 
@@ -1211,17 +965,15 @@ Now we have a kite $AQCP$ with $AQ=AP=8$, $CQ=CP=6$, and diagonal $AC=\sqrt{56}$
 
 
 
-
-
 \textbf{Solution 3 (trig bash)}
 
 Let $QP=PR=x$. Angles $QPA$, $APB$, and $BPR$ must add up to $180^{\circ}$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}, $\angle APB=\cos^{-1}\left(\frac{{-11}}{24}\right)$. Also, angles $QPA$ and $BPR$ equal $\cos^{-1}\left(\frac{x}{16}\right)$ and $\cos^{-1}\left(\frac{x}{12}\right)$. So we have 
 
- $\cos^{-1}\left(\frac{x}{16}\right)+\cos^{-1}\left(\frac{{-11}}{24}\right)=180^{\circ}-\cos^{-1}\left(\frac{x}{12}\right).$ Taking the cosine of both sides, and simplifying using the addition formula for $\cos$ as well as the identity $\sin^{2}{x} + \cos^{2}{x} = 1$, gives $x^2=\boxed{130}$.
+ $\cos^{-1}\left(\frac{x}{16}\right)+\cos^{-1}\left(\frac{{-11}}{24}\right)=180^{\circ}-\cos^{-1}\left(\frac{x}{12}\right).$
+
+  Taking the cosine of both sides, and simplifying using the addition formula for $\cos$ as well as the identity $\sin^{2}{x} + \cos^{2}{x} = 1$, gives $x^2=\boxed{130}$.
 
  
-
-
 
 
 
@@ -1240,8 +992,6 @@ Let $QP = PR = x$. Extend the line containing the centers of the two circles to 
 
 
 
-
-
 \textbf{Solution 5 (Pythagorean Theorem and little algebraic manipulation)}
 
 
@@ -1255,8 +1005,6 @@ Let $QP = PR = x$. Extend the line containing the centers of the two circles to 
 
 
 
-
-
 \textbf{Solution 6 (Only simple geometry and algebra needed)}
 
 Looking at Drawing 2 (by the way, we don't need point $R$), we set $AM=a$ and $BN=b$, and the desired length$QP=x=PR$. We know that a radius perpendicular to a chord bisects the chord, so $MP=\frac{x}{2}$ and $PN=\frac{x}{2}$. Draw line $AP$ and $PB$, and we see that they are radii of Circles $A$ and $B$, respectively. We can write the Pythagorean relationships $a^2+\left(\frac{x}{2}\right)^2=8^2$ for triangle $AMP$ and $b^2+\left(\frac{x}{2}\right)^2=6^2$ for triangle $BNP$. We also translate segment $MN$ down so that $N$ coincides with $B$, and form another right triangle. From that triangle, you can see that the shorter leg is on the left side, having length $a-b$, the longer leg is the same as $MN=x$, and the hypotenuse is $AB=12$. We can write the Pythagorean relationship $(a-b)^2+x^2=12^2$. Solving the system of 3 unknowns and 3 equations (One of the best ways to do it is to solve for $a$ in the first equation and $b$ in the second equation, and substitute into the third equation, get an equation only in terms of $x$, and solve), you find that $x=\sqrt{130}$, so $x^2 = \boxed{130}$.
@@ -1264,8 +1012,6 @@ Looking at Drawing 2 (by the way, we don't need point $R$), we set $AM=a$ and $B
  Solution by Kinglogic
 
  
-
-
 
 
 
@@ -1311,19 +1057,19 @@ The centers are collinear, you can prove it (but that is already given in the la
 
 
 
-
-
 \textbf{Solution 8 (Coordinate Bash)}
 
 We use coordinate geometry to approach this problem. Let the center of larger circle be the origin $O_1$, the smaller circle be $O_2$, and the x-axis be $O_1O_2$. Hence, we can get the two circle equations: $x^2+y^2 = 64$ and $(x-12)^2+y^2=36$.
 
  Let point $P$ be $(a, b)$. Noting that it lies on both circles, we can plug the coordinates into both equations:
 
- $a^2 +b^2 = 64$$(a-12)^2+ b^2 \Rightarrow a^2-24a+144+b^2 = 64$Substituting $a^2+b^2 = 64$ into equation 2 and solving for $a$, we get $a = \frac{43}{6}$. The problem asks us to find $QP^2$, which is congruent to $PR^2$. Using the distance formula for $P(a, b)$ and $R(18, 0)$ (by Solution 7's collinear proof), we get $PR^2 = (18-a)^2 +b^2$. Using $a^2+b^2 = 64$, we find that $b^2 = \frac{455}{36}$. Plugging the variables $a$ and $b^2$ in, we get $PR^2 = QP^2 =  \boxed{130}$~SoilMilk
+ $a^2 +b^2 = 64$
+
+ $(a-12)^2+ b^2 \Rightarrow a^2-24a+144+b^2 = 64$
+
+ Substituting $a^2+b^2 = 64$ into equation 2 and solving for $a$, we get $a = \frac{43}{6}$. The problem asks us to find $QP^2$, which is congruent to $PR^2$. Using the distance formula for $P(a, b)$ and $R(18, 0)$ (by Solution 7's collinear proof), we get $PR^2 = (18-a)^2 +b^2$. Using $a^2+b^2 = 64$, we find that $b^2 = \frac{455}{36}$. Plugging the variables $a$ and $b^2$ in, we get $PR^2 = QP^2 =  \boxed{130}$~SoilMilk
 
  
-
-
 
 
 
@@ -1335,15 +1081,11 @@ Let the center of the circle with radius $8$ be $A,$ and let the center of the o
 
 
 
-
-
 \textbf{Solution 10 (Spiral Sym)}
 
 If you call X the second intersection of the two circles and the centers $O_1$, $O_2$ respectively, note that triangles $O_1 X O_2$ and $Q X R$ are similar by Spiral Sym. $P$ is the midpoint of segment $Q R$. If the midpoint of $O_1 O_2$ is $M$, then $\frac{X M}{O_1 M} = \frac{X P}{Q P}$. By Appolonius Median Length theorem, $X M = \sqrt{14}$. Note that $X P$ is simply two times the height from X to $O_1O_2$, and as a result, by Heron's formula, $X P = \frac{\sqrt{(7)(13)(5)}}{3}$, and from our ratio, $Q P = \sqrt{130}$. As a result, the square is $130$, and we are done. - sepehr2010
 
  
-
-
 
 
 
@@ -1358,8 +1100,6 @@ Let A and B denote the centers of the left and right circles respectively and $Q
  Subtracting $2*(1)$ from $(2),$ we get $196=2x^2-64,$ which gives $x^2=\boxed{130}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1983}) The adjoining figure shows two intersecting chords in a circle, with $B$ on minor arc $AD$. Suppose that the radius of the circle is $5$, that $BC=6$, and that $AD$ is bisected by $BC$. Suppose further that $AD$ is the only chord starting at $A$ which is bisected by $BC$. It follows that the sine of the central angle of minor arc $AB$ is a rational number. If this number is expressed as a fraction $\frac{m}{n}$ in lowest terms, what is the product $mn$?
@@ -1385,7 +1125,9 @@ As with some of the other solutions, we analyze this with a locus—but a differ
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_15_Solution_Figure_1.png}
                     \end{figure}
-                    Applied to this problem, this means that $D$ is the only point that lies on both (1) the given circle, and (2) the line through $D$ parallel to $BC$.  This means that $BC$ is parallel to the tangent to the given circle at $D$.
+                    
+
+ Applied to this problem, this means that $D$ is the only point that lies on both (1) the given circle, and (2) the line through $D$ parallel to $BC$.  This means that $BC$ is parallel to the tangent to the given circle at $D$.
 
  If we take $O$ to be the center of the given circle, then this means that $OD$ is perpendicular to $BC$.  Let $M$ be the midpoint of chord $BC,$ and let $N$ be the intersection of $OD$ with the line through $A$ parallel to $BC$.
 
@@ -1394,15 +1136,15 @@ As with some of the other solutions, we analyze this with a locus—but a differ
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_15_Solution_Figure_2.png}
                     \end{figure}
-                    Since $BC = 6,$ we know that $BM = 3$; since $OB$ (a radius of the circle) is 5, we can conclude that $\triangle BMO$ is a 3-4-5 right triangle.  Since $D$ and line $AN$ are equidistant from line $BC,$ we know that $MN = 1$, and thus $ON = 3$.  This makes $\triangle ANO$ also a 3-4-5 right triangle.
+                    
+
+ Since $BC = 6,$ we know that $BM = 3$; since $OB$ (a radius of the circle) is 5, we can conclude that $\triangle BMO$ is a 3-4-5 right triangle.  Since $D$ and line $AN$ are equidistant from line $BC,$ we know that $MN = 1$, and thus $ON = 3$.  This makes $\triangle ANO$ also a 3-4-5 right triangle.
 
  We're looking for $\sin \angle AOB$, and we can find that using the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\_identities\#Angle\_addition\_identities}{ angle subtraction formula} for sine.  We have
  \begin{align*} \sin \angle AOB &= \sin(\angle AOM - \angle BOM) \\ &= \sin \angle AOM \cos \angle BOM - \cos \angle AOM \sin \angle BOM \\ &= \frac{4}{5} \cdot \frac{4}{5}  - \frac{3}{5} \cdot \frac{3}{5} \\ &= \frac{16 - 9}{25} = \frac{7}{25}. \end{align*}
 This is in lowest terms, so our answer is $mn = 7 \cdot 25 = 175$.
 
  
-
-
 
 
 
@@ -1430,8 +1172,6 @@ This is in lowest terms, so our answer is $mn = 7 \cdot 25 = 175$.
 
 
 
-
-
 \textbf{Solution 3}
 
 This solution, while similar to Solution 2, is arguably more motivated and less contrived.
@@ -1454,8 +1194,6 @@ This solution, while similar to Solution 2, is arguably more motivated and less 
  \[\sin{\left(\angle AOM - \angle BOM\right)} = \sin \angle AOM \cos \angle BOM - \sin \angle BOM \cos \angle AOM = \left(\frac{4}{5}\right)\left(\frac{4}{5}\right)-\left(\frac{3}{5}\right)\left(\frac{3}{5}\right)=\frac{7}{25}\]Thus the answer is $7\cdot25=\boxed{175}$.
 
  
-
-
 
 
 
@@ -1509,8 +1247,6 @@ This solution, while similar to Solution 2, is arguably more motivated and less 
 
 
 
-
-
 \textbf{Solution 5}
 
 Let the center of the circle be $O$. Fix $B,C,$ and $A$. Then, as $D$ moves around the circle, the locus of the midpoints of $AD$ is clearly a circle. Since the problems gives that $AD$ is the only chord starting at $A$ bisected by $BC$, it follows that the circle with diameter $DO$ and $AO$ is tangent to $BC$.
@@ -1521,8 +1257,6 @@ Let the center of the circle be $O$. Fix $B,C,$ and $A$. Then, as $D$ moves arou
  \[DC^2 = (\sqrt{5})^2 + 5^2 -10\sqrt{5} \cdot \frac{2\sqrt{5}}{5} = 10\]Therefore, $DC = \sqrt{10} \Longleftrightarrow BA = \sqrt{2}$. Now, drop the altitude from $O$ to $BA$ and call its intersection with $BA$ $Z$. Then, by the Pythagorean theorem, $OZ = \frac{7\sqrt{2}}{2}$. Thus, $\sin (BOZ) = \frac{\sqrt{2}}{10}$ and $\cos (BOZ) = \frac{7\sqrt{2}}{10}$. As a result, $\sin (BOA) = \sin (2 BOZ) = 2\sin(BOZ)\cos(BOZ) = \frac{7}{25}$. $7 \cdot 25 = \boxed{175}$.
 
  
-
-
 
 
 
@@ -1553,8 +1287,6 @@ Let the center of the circle be $O$. Fix $B,C,$ and $A$. Then, as $D$ moves arou
 
 
 
-
-
 \textbf{Solution 7 (No Trig)}
 
 Let $O$ be the center of the circle. The locus of midpoints of chords with $A$ as a endpoint is a circle with diameter $\overline{AO}$. Additionally, this circle must be tangent to $\overline{BC}$. Let the center of this circle be $P$. Let $M$ be the midpoint of $BC$, $N$ be the foot of the perpendicular from $P$ to $\overline{BM}$, and $K$ be the foot of the perpendicular from $B$ to $\overline{AP}$. Let $x=BK$.
@@ -1575,8 +1307,6 @@ Let $O$ be the center of the circle. The locus of midpoints of chords with $A$ a
 
 
 
-
-
 \textbf{Solution 8 (Similar to 1, but with coordinates)}
 
 Let the center of the circle be O. O is at (0,0).Rotate the circle so that the line BC has slope 0, and so that C is in the 1st quadrant. Since BC = 6, and B can be reflected across the y axis to become C, we can say that B is on x=-3, and C is on x=3. Since it must lie on the circle $x^2+y^2=25$,B = (-3,4) and C = (3,4). So BC is on the line y=4.
@@ -1586,8 +1316,6 @@ Let the center of the circle be O. O is at (0,0).Rotate the circle so that the l
  We can use complex numbers to find the angle between A and B, because arguments subtract when you divide complex numbers. $\frac{-4+3i}{-3+4i} = \frac{24+7i}{25}$ Which gives us $\frac{7}{25}$. $7 \cdot 25 = \boxed{175}$
 
  
-
-
 
 
 \end{enumerate}

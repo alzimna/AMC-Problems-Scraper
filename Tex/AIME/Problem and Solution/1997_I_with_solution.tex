@@ -15,8 +15,6 @@ Notice that all odd numbers can be obtained by using $(a+1)^2-a^2=2a+1,$ where $
  
 
 
-
-
 	\item (\textit{AIME I 1997}) The nine horizontal and nine vertical lines on an $8\times8$ checkerboard form $r$ rectangles, of which $s$ are squares.  The number $s/r$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
 
@@ -37,8 +35,6 @@ To determine the two horizontal sides of a rectangle, we have to pick two of the
 
 
 
-
-
 \textbf{Solution 2}
 
 First, to find the number of squares, we can look case by case by the side length of the possible squares on the checkerboard. We see that there are $8^2$ ways to place a $1$ x $1$ square and $7^2$ for a $2$ x $2$ square. This pattern can be easily generalized and we see that the number of squares is just $\sum^8_{i=1}{i^2}$. This can be simplified by using the well-known formula for the sum of consecutive squares $\frac{n(n+1)(2n+1)}{6}$ to get $204$.
@@ -50,8 +46,6 @@ First, to find the number of squares, we can look case by case by the side lengt
  Thus, our answer is just $s + r = 17+108 = \boxed{125}$~MathWhiz35
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) Sarah intended to multiply a two-digit number and a three-digit number, but she left out the multiplication sign and simply placed the two-digit number to the left of the three-digit number, thereby forming a five-digit number.  This number is exactly nine times the product Sarah should have obtained.  What is the sum of the two-digit number and the three-digit number?
@@ -72,8 +66,6 @@ Let $x$ be the two-digit number, $y$ be the three-digit number. Putting together
 
 
 
-
-
 \textbf{Solution 2}
 
 As shown above, we have $1000x+y=9xy$, so $1000/y=9-1/x$. $1000/y$ must be just a little bit smaller than 9, so we find $y=112$, $x=14$, and the solution is $\boxed{126}$.
@@ -82,8 +74,6 @@ As shown above, we have $1000x+y=9xy$, so $1000/y=9-1/x$. $1000/y$ must be just 
 
 
  
-
-
 
 
 
@@ -119,8 +109,6 @@ Now we have to find a number that divides 1000 using prime factors 2 or 5 and is
  
 
 
-
-
 	\item (\textit{AIME I 1997}) Circles of radii 5, 5, 8, and $m/n$ are mutually externally tangent, where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
 
@@ -154,15 +142,11 @@ NOTE: It can be seen that there is no apparent need to use the variable x as a 5
 
 
 
-
-
 \textbf{Solution 2}
 
 We may also use Descartes' theorem, $k_4=k_1+k_2+k_3\pm 2\sqrt{k_1k_2+k_2k_3+k_3k_1}$ where each of $k_i$ is the curvature of a circle with radius $r_i$, and the curvature is defined as $k_i=\frac{1}{r_i}$. The larger solution for $k_4$ will give the curvature of the circle externally tangent to the other circles, while the smaller solution will give the curvature for the circle internally tangent to each of the other circles. Using Descartes' theorem, we get $k_4=\frac15+\frac15+\frac18+2\sqrt{\frac{1}{40}+\frac{1}{40}+\frac{1}{25}}=\frac{21}{40}+2\sqrt{\frac{45}{500}}=\frac{45}{40}$. Thus, $r_4=\frac{1}{k_4}=\frac{40}{45}=\frac89$, and the answer is $\boxed{017}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) The number $r$ can be expressed as a four-place decimal $0.abcd,$ where $a, b, c,$ and $d$ represent digits, any of which could be zero.  It is desired to approximate $r$ by a fraction whose numerator is 1 or 2 and whose denominator is an integer. The closest such fraction to $r$ is $\frac 27.$  What is the number of possible values for $r$?
@@ -180,8 +164,6 @@ The nearest fractions to $\frac 27$ with numerator $1$ are $\frac 13, \frac 14$;
  Thus $r$ can range between $\frac{\frac 14 + \frac{2}{7}}{2} \approx .267857$ and $\frac{\frac 13 + \frac{2}{7}}{2} \approx .309523$. At $r = .2678, .3096$, it becomes closer to the other fractions, so $.2679 \le r \le .3095$ and the number of values of $r$ is $3095 - 2679 + 1 = \boxed{417}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) Point $B$ is in the exterior of the regular $n$-sided polygon $A_1A_2\cdots A_n$, and $A_1A_2B$ is an equilateral triangle. What is the largest value of $n$ for which $A_1$, $A_n$, and $B$ are consecutive vertices of a regular polygon?
@@ -213,8 +195,6 @@ The nearest fractions to $\frac 27$ with numerator $1$ are $\frac 13, \frac 14$;
 
 
 
-
-
 \textbf{Solution 2}
 
 As above, find that $mn - 6m - 6n = 0$ using the formula for the interior angle of a polygon.  
@@ -229,15 +209,11 @@ As above, find that $mn - 6m - 6n = 0$ using the formula for the interior angle 
 
 
 
-
-
 \textbf{Solution 3}
 
 From the formula for the measure for an individual angle of a regular n-gon, $180 - \frac{360}{n}$, the measure of $\angle A_2A_1A_n = 180 - \frac{360}{n}$. Together with the fact that an equilateral triangle has angles measuring 60 degrees, the measure of $\angle A_nA_1B = 120 + \frac{360}{n}$ (Notice that this value decreases as $n$ increases; hence, we are looking for the least possible value of $\angle A_nA_1B$). For $A_n, A_1, B$ to be vertices of a regular polygon, $\angle A_nA_1B$ must be of the form $180 - \frac{360}{n}$, where $n$ is a natural number greater than or equal to 3. It is obvious that $\angle A_nA_1B > 120$. The least angle satisfying this condition is $180 - \frac{360}{7}$. Equating this with $120 + \frac{360}{n}$ and solving yields $n = \boxed{042}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) A car travels due east at $\frac 23$ miles per minute on a long, straight road. At the same time, a circular storm, whose radius is $51$ miles, moves southeast at $\frac 12\sqrt{2}$ miles per minute. At time $t=0$, the center of the storm is $110$ miles due north of the car. At time $t=t_1$ minutes, the car enters the storm circle, and at time $t=t_2$ minutes, the car leaves the storm circle. Find $\frac 12(t_1+t_2)$.
@@ -258,8 +234,6 @@ We set up a coordinate system, with the starting point of the car at the \href{h
  Noting that $\frac 12 \left(t_1+t_2 \right)$ is at the maximum point of the parabola, we can use $-\frac{b}{2a} = \frac{110}{2 \cdot \frac{5}{18}} = \boxed{198}$.
 
  
-
-
 
 
 
@@ -294,8 +268,6 @@ The problem asks for sum of solutions divided by 2 so sum is equal to:
 
 
 
-
-
 \textbf{Solution 3 (No Coordinates)}
 
 We only need to know how the storm and car move relative to each other, so we can find this by subtracting the storm's movement vector from the car's.  This gives the car's movement vector as $\left(\frac{1}{6}, \frac{1}{2}\right)$.  Labeling the car's starting position A, the storm center B, and the right triangle formed by AB with a right angle at B and the car's path, we get the following diagram, with AD as our desired length since D is the average of the points where the car enters and exits the storm.
@@ -310,8 +282,6 @@ We only need to know how the storm and car move relative to each other, so we ca
  $AB = 110$, so $CB = \frac{110}{3}$.  The Pythagorean Theorem then gives $AC = \frac{110\sqrt{10}}{3}$, and since $\bigtriangleup ABC \sim \bigtriangleup ADB$, $AD = (AB)\frac{AB}{AC} = 33\sqrt{10}$.  The Pythagorean Theorem now gives the car's speed as $\sqrt{\frac{5}{18}}$, and finally $\frac{33\sqrt{10}}{\sqrt{\frac{5}{18}}} = \boxed{198}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) How many different $4\times 4$ arrays whose entries are all 1's and -1's have the property that the sum of the entries in each row is 0 and the sum of the entries in each column is 0?
@@ -342,8 +312,6 @@ We only need to know how the storm and car move relative to each other, so we ca
 
 
 
-
-
 \textbf{Solution 2}
 
 Each row and column must have 2 1's and 2 -1's. Let's consider the first column. There are a total of $6$ ways to arrange 2 1's and 2 -1's. Let's consider the setup where the first and second indices of column 1 are 1 and the third and fourth are -1. Okay, now on the first row, there are 3 ways to arrange the one 1 and 2 -1's we have left to put. Now, we take cases on the second row's remaining elements. If the second row goes like 1,-1,1,-1, then by observation, there are 2 ways to complete the grid. If it goes like 1,1, -1, -1, there is 1 way to complete the grid. If it goes like 1, -1, -1, 1, then there are 2 ways to complete the grid. So our answer is $6*3*(2+1+2)$ = $\boxed{090}$.
@@ -351,8 +319,6 @@ Each row and column must have 2 1's and 2 -1's. Let's consider the first column.
  -pi\_is\_3.141
 
  
-
-
 
 
 
@@ -369,8 +335,6 @@ Notice that for every arrangement $A$ of the first rows of $-1$s and $1$s, we ha
  Therefore the answer is $\binom{4}{2}(\binom{4}{2}+\binom{4}{2}+\binom{4}{2}/2)$=$6(6+6+3)$=$\boxed{090}$.
 
  
-
-
 
 
 
@@ -418,8 +382,6 @@ How many orderings are possible for the first row? Well, that's easy! There are 
  
 
 
-
-
 	\item (\textit{AIME I 1997}) Given a nonnegative real number $x$, let $\langle x\rangle$ denote the fractional part of $x$; that is, $\langle x\rangle=x-\lfloor x\rfloor$, where $\lfloor x\rfloor$ denotes the greatest integer less than or equal to $x$. Suppose that $a$ is positive, $\langle a^{-1}\rangle=\langle a^2\rangle$, and $2<a^2<3$. Find the value of $a^{12}-144a^{-1}$.
 
 
@@ -442,15 +404,11 @@ Looking at the properties of the number, it is immediately guess-able that $a = 
 
 
 
-
-
 \textbf{Solution 2}
 
 Find $a$ as shown above. Note that, since $a$ is a root of the equation $a^3 - 2a - 1 = 0$, $a^3 = 2a + 1$, and $a^{12} = (2a + 1)^4$. Also note that, since $a$ is a root of $a^2 - a - 1 = 0$, $\frac{1}{a} = a - 1$. The expression we wish to calculate then becomes $(2a + 1)^4 - 144(a - 1)$. Plugging in $a = \frac{1 + \sqrt{5}}{2}$, we plug in to get an answer of $(161 + 72\sqrt{5}) + 72 - 72\sqrt{5} = 161 + 72 = \boxed{233}$.
 
  
-
-
 
 
 
@@ -463,8 +421,6 @@ Find $a$ as shown above. Note that $a$ satisfies the equation $a^2 = a+1$ (this 
  So we want $144(a-\frac1a)+89 = 144(1)+89 = \boxed{233}$ since $a-\frac1a = 1$ is equivalent to $a^2 = a+1$.
 
  
-
-
 
 
 
@@ -490,8 +446,6 @@ Another way to factor $a^3 - 2a - 1$:
 
 
 
-
-
 \textbf{Solution 5 (Dangerous)}
 
 We can estimate $a$ to 3 decimal levels of precision by plugging it in to $a^3 = 3a + 1$ (insane bash) when we get a is slightly below $1.62$. We then use $a^3 = 3a + 1$ to manipulate what we want to get ( which is $88(a - a^2) + 321$ and by plugging $1.61$ and $1.62$ to in make sense for the answer to be $\boxed{233}$ rather than $234$
@@ -499,8 +453,6 @@ We can estimate $a$ to 3 decimal levels of precision by plugging it in to $a^3 =
  Sidenote: I was really stupid and did not factor the cubic correctly because I thought it was not factorable. So do not bash it out this way.
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) Every card in a deck has a picture of one shape - circle, square, or triangle, which is painted in one of the three colors - red, blue, or green. Furthermore, each color is applied in one of three shades - light, medium, or dark. The deck has 27 cards, with every shape-color-shade combination represented. A set of three cards from the deck is called complementary if all of the following statements are true:
@@ -537,15 +489,11 @@ We can estimate $a$ to 3 decimal levels of precision by plugging it in to $a^3 =
 
 
 
-
-
 \textbf{Solution 2}
 
 Let's say we have picked two cards. We now compare their attributes to decide how we can pick the third card to make a complement set. For each of the three attributes, should the two values be the same we have one option - choose a card with the same value for that attribute. Furthermore, should the two be different there is only one option- choose the only value that is remaining. In this way, every two card pick corresponds to exactly one set, for a total of $\binom{27}{2} = 27*13 = 351$ possibilities. Note, however, that each set is generated by ${3\choose 2} = 3$ pairs, so we've overcounted by a multiple of 3 and the answer is $\frac{351}{3} = \boxed{117}$.
 
  
-
-
 
 
 
@@ -557,15 +505,11 @@ Treat the sets as ordered. Then for each of the three criterion, there are $3!=6
 
 
 
-
-
 \textbf{Solution 4 (rewording of Solution 3)}
 
 Note that for a possible valid triplet, two cards uniquely determine the third. $27$ choices for each card, so we have $27^2 = 729$ without any conditions. However, we have overcounted. The invalid triplets arise when all three cards are identical to each other, which can only happen in $3^3$ ways ($3$ ways to choose each of the attributes), so we have $729-27=702.$ However, we have overcounted by treating these as ordered, so we divide by $6,$ yielding $\frac{702}{6}=\boxed{117}.$$\newline$~martianrunner
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) Let $x=\frac{\sum\limits_{n=1}^{44} \cos n^\circ}{\sum\limits_{n=1}^{44} \sin n^\circ}$. What is the greatest integer that does not exceed $100x$?
@@ -584,180 +528,9 @@ Note that $\frac{\sum_{n=1}^{44} \cos n}{\sum_{n=1}^{44} \sin n} = \frac{\sum_{n
  \[\frac{\sum_{n=1}^{44} \cos n}{\sum_{n=1}^{44} \sin n} = \frac{\sum_{n=1}^{44} \cos n}{\sum_{n=46}^{89} \cos n} = \frac{2\cos(\frac{45}{2})[\cos(\frac{43}{2})+\cos(\frac{41}{2})+\dots+\cos(\frac{1}{2})]}{2\cos(\frac{135}{2})[\cos(\frac{43}{2})+\cos(\frac{41}{2})+\dots+\cos(\frac{1}{2})]} \Rightarrow \frac{\cos(\frac{45}{2})}{\cos(\frac{135}{2})}\]
 
  To calculate this number, use the half angle formula. Since $\cos\left(\frac{x}{2}\right) = \pm \sqrt{\frac{\cos x + 1}{2}}$, then our number becomes: 
- \[\frac{\sqrt{\frac{\frac{\sqrt{2}}{2} + 1}{2}}}{\sqrt{\frac{\frac{-\sqrt{2}}{2} + 1}{2}}}\] in which we drop the negative roots (as it is clear cosine of $22.5$ and $67.5$ are positive). We can easily simplify this:
+ \[\frac{\sqrt{\frac{\frac{\sqrt{2}}{2} + 1}{2}}}{\sqrt{\frac{\frac{-\sqrt{2}}{2} + 1}{2}}}\] in which we drop the negative roots (as it is clear cosine of 
 
  
- \begin{eqnarray*} \frac{\sqrt{\frac{\frac{\sqrt{2}}{2} + 1}{2}}}{\sqrt{\frac{\frac{-\sqrt{2}}{2} + 1}{2}}} &=& \sqrt{\frac{\frac{2+\sqrt{2}}{4}}{\frac{2-\sqrt{2}}{4}}} \\ &=& \sqrt{\frac{2+\sqrt{2}}{2-\sqrt{2}}} \cdot \sqrt{\frac{2+\sqrt{2}}{2+\sqrt{2}}} \\ &=& \sqrt{\frac{(2+\sqrt{2})^2}{2}} \\ &=& \frac{2+\sqrt{2}}{\sqrt{2}} \\ &=& \sqrt{2}+1 \end{eqnarray*}
-
- And hence our answer is $\lfloor 100x \rfloor =  \lfloor 100(1 + \sqrt {2}) \rfloor = \boxed{241}$.
-
- 
-
-
-
-
-
-\textbf{Solution 2}
-
-
- \begin{eqnarray*} x &=& \frac {\sum_{n = 1}^{44} \cos n^\circ}{\sum_{n = 1}^{44} \sin n^\circ} = \frac {\cos 1 + \cos 2 + \dots + \cos 44}{\sin 1 + \sin 2 + \dots + \sin 44}\\ &=& \frac {\cos (45 - 1) + \cos(45 - 2) + \dots + \cos(45 - 44)}{\sin 1 + \sin 2 + \dots + \sin 44} \end{eqnarray*}
-
- Using the identity $\sin a + \sin b = 2\sin \frac{a+b}2 \cos \frac{a-b}{2}$ $\Longrightarrow \sin x + \cos x$ $= \sin x + \sin (90-x)$ $= 2 \sin 45 \cos (45-x)$ $= \sqrt{2} \cos (45-x)$, that \href{https://artofproblemsolving.com/wiki/index.php?title=Summation}{summation} reduces to
-
- 
- \begin{eqnarray*}x &=& \left(\frac {1}{\sqrt {2}}\right)\left(\frac {(\cos 1 + \cos2 + \dots + \cos44) + (\sin1 + \sin2 + \dots + \sin44)}{\sin1 + \sin2 + \dots + \sin44}\right)\\ &=& \left(\frac {1}{\sqrt {2}}\right)\left(1 + \frac {\cos 1 + \cos 2 + \dots + \cos 44}{\sin 1 + \sin 2 + \dots + \sin 44}\right) \end{eqnarray*}
-
- This fraction is equivalent to $x$.  Therefore,
- \begin{eqnarray*} x &=& \left(\frac {1}{\sqrt {2}}\right)\left(1 + x\right)\\ \frac {1}{\sqrt {2}} &=& x\left(\frac {\sqrt {2} - 1}{\sqrt {2}}\right)\\ x &=& \frac {1}{\sqrt {2} - 1} = 1 + \sqrt {2}\\ \lfloor 100x \rfloor &=& \lfloor 100(1 + \sqrt {2}) \rfloor = \boxed{241}\\ \end{eqnarray*}
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-A slight variant of the above solution, note that 
-
- 
- \begin{eqnarray*} \sum_{n=1}^{44} \cos n + \sum_{n=1}^{44} \sin n &=& \sum_{n=1}^{44} \sin n + \sin(90-n)\\ &=& \sqrt{2}\sum_{n=1}^{44} \cos(45-n) = \sqrt{2}\sum_{n=1}^{44} \cos n\\ \sum_{n=1}^{44} \sin n &=& (\sqrt{2}-1)\sum_{n=1}^{44} \cos n \end{eqnarray*}
-
- This is the \href{https://artofproblemsolving.com/wiki/index.php?title=Ratio}{ratio} we are looking for. $x$ reduces to $\frac{1}{\sqrt{2} - 1} = \sqrt{2} + 1$, and $\lfloor 100(\sqrt{2} + 1)\rfloor = \boxed{241}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Consider the sum $\sum_{n = 1}^{44} \text{cis } n^\circ$. The fraction is given by the real part divided by the imaginary part.
-
- The sum can be written $- 1 + \sum_{n = 0}^{44} \text{cis } n^\circ = - 1 + \frac {\text{cis } 45^\circ - 1}{\text{cis } 1^\circ - 1}$ (by \href{https://artofproblemsolving.com/wiki/index.php?title=De\_Moivre\%27s\_Theorem}{De Moivre's Theorem} with geometric series)
-
- $= - 1 + \frac {\frac {\sqrt {2}}{2} - 1 + \frac {i \sqrt {2}}{2}}{\text{cis } 1^\circ - 1} = - 1 + \frac {\left( \frac {\sqrt {2}}{2} - 1 + \frac {i \sqrt {2}}{2} \right) (\text{cis } ( - 1^\circ) - 1)}{(\cos 1^\circ - 1)^2 + \sin^2 1^\circ}$ (after multiplying by \href{https://artofproblemsolving.com/wiki/index.php?title=Complex\_conjugate}{complex conjugate})
-
- $= - 1 + \frac {\left( \frac {\sqrt {2}}{2} - 1 \right) (\cos 1^\circ - 1) + \frac {\sqrt {2}}{2}\sin 1^\circ + i\left( \left(1 - \frac {\sqrt {2}}{2} \right) \sin 1^\circ + \frac {\sqrt {2}}{2} (\cos 1^\circ - 1)\right)}{2(1 - \cos 1^\circ)}$
-
- $= - \frac {1}{2} - \frac {\sqrt {2}}{4} - \frac {i\sqrt {2}}{4} + \frac {\sin 1^\circ \left( \frac {\sqrt {2}}{2} + i\left( 1 - \frac {\sqrt {2}}{2} \right) \right)}{2(1 - \cos 1^\circ)}$
-
- Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\_identities}{tangent half-angle formula}, this becomes $\left( - \frac {1}{2} + \frac {\sqrt {2}}{4}[\cot (1/2^\circ) - 1] \right) + i\left( \frac {1}{2}\cot (1/2^\circ) - \frac {\sqrt {2}}{4}[\cot (1/2^\circ) + 1] \right)$.
-
- Dividing the two parts and multiplying each part by 4, the fraction is $\frac { - 2 + \sqrt {2}[\cot (1/2^\circ) - 1]}{2\cot (1/2^\circ) - \sqrt {2}[\cot (1/2^\circ) + 1]}$.
-
- Although an exact value for $\cot (1/2^\circ)$ in terms of radicals will be difficult, this is easily known: it is really large!
-
- So treat it as though it were $\infty$. The fraction is approximated by $\frac {\sqrt {2}}{2 - \sqrt {2}} = \frac {\sqrt {2}(2 + \sqrt {2})}{2} = 1 + \sqrt {2}\Rightarrow \lfloor 100(1+\sqrt2)\rfloor=\boxed{241}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-Consider the sum $\sum_{n = 1}^{44} \text{cis } n^\circ$. The fraction is given by the real part divided by the imaginary part.
-
- The sum can be written as $\sum_{n=1}^{22} (\text{cis } n^\circ + \text{cis } 45-n^\circ)$. Consider the rhombus $OABC$ on the complex plane such that $O$ is the origin, $A$ represents $\text{cis } n^\circ$, $B$ represents $\text{cis } n^\circ + \text{cis } 45-n^\circ$ and $C$ represents $\text{cis } n^\circ$. Simple geometry shows that $\angle BOA = 22.5-k^\circ$, so the angle that $\text{cis } n^\circ + \text{cis } 45-n^\circ$ makes with the real axis is simply $22.5^\circ$. So $\sum_{n=1}^{22} (\text{cis } n^\circ + \text{cis } 45-n^\circ)$ is the sum of collinear complex numbers, so the angle the sum makes with the real axis is $22.5^\circ$. So our answer is $\lfloor 100 \cot(22.5^\circ) \rfloor = \boxed{241}$. 
-
- Note that the $\cot(22.5^\circ) = \sqrt2 + 1$ can be shown easily through half-angle formula.
-
- 
-
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-We write $x =\frac{\sum_{n=46}^{89} \sin n^{\circ}}{\sum_{n=1}^{44} \sin n^{\circ}}$ since $\cos x = \sin (90^{\circ}-x).$ Now, by the sine angle sum, we know that $\sin (x+45^{\circ}) = \sin 45^{\circ}(\sin x + \cos x).$ So the expression simplifies to $\sin 45^{\circ}\left(\frac{\sum_{n=1}^{44} (\sin n^{\circ}+\cos n^{\circ})}{\sum_{n=1}^{44} \sin n^{\circ}}\right) = \sin 45^{\circ}\left(1+\frac{\sum_{n=1}^{44} \cos n^{\circ}}{\sum_{n=1}^{44} \sin n^{\circ}}\right)=\sin 45^{\circ}(1+x).$ Therefore we have the equation $x = \sin 45^{\circ}(1+x) \implies x = \sqrt{2}+1.$ Finishing, we have $\lfloor 100x \rfloor = \boxed{241}.$
-
- 
-
-
-
-
-
-\textbf{Solution 7}
-
-We can pair the terms of the summations as below. 
-
- 
- \[\dfrac{(\cos{1} + \cos{44}) + (\cos{2} + \cos{43}) + (\cos{3} + \cos{42}) + \cdots + (\cos{22} + \cos{23})}{(\sin{1} + \sin{44}) + (\sin{2} + \sin{43}) + (\sin{3} + \sin{42}) + \cdots + (\sin{22} + \sin{23})}.\] 
-
- From here, we use the cosine and sine subtraction formulas as shown. 
-
- \begin{align*}&\dfrac{(\cos(45-44) + \cos(45-1)) + (\cos(45-43) + \cos(45-2))+ \cdots (\cos(45-23) + \cos(45-22))}{(\sin(45-44) + \sin(45-1)) + (\sin(45-43) + \sin(45-2))+ \cdots (\sin(45-23) + \sin(45-22))} \\  &= \dfrac{(\cos{45}\cos{44} +\sin{45}\sin{44} + \cos{45}\cos{1} + \sin{45}\sin{1})+ \cdots + (\cos{45}\cos{23} + \sin{45}\sin{23} + \cos{45}\cos{22} + \sin{45}\sin{22})}{(\sin{45}\cos{44}-\cos{45}\sin{44} + \sin{45}\cos{1} - \cos{45}\sin{1}) + \cdots + (\sin{45}\cos{23} -\cos{45}\sin{23} + \sin{45}\cos{22} - \cos{45}\sin{22})} \\ &= \dfrac{\sqrt{2}/2(\cos{44} + \sin{44} + \cos{1}+\sin{1} +\cos{43} + \sin{43} + \cos{2} + \sin{2} + \cdots + \cos{23} + \sin{23} + \cos{22} + \sin{22})}{\sqrt{2}/2(\cos{44} -\sin{44} +\cos{1} - \sin{1} + \cos{43}-\sin{43} + \cos{2} -\sin{2} +\cdots + \cos{23}-\sin{23} + \cos{22} - \sin{22})} \\ &=\dfrac{\sum\limits_{n=1}^{44} \cos n^\circ + \sum\limits_{n=1}^{44} \sin n^\circ}{\sum\limits_{n=1}^{44} \cos n^\circ - \sum\limits_{n=1}^{44} \sin n^\circ}. \end{align*}
- 
-
- Since all of these operations have been performed to ensure equality, we can set the final line of the above mess equal to our original expression. 
-
- 
- \[\dfrac{\sum\limits_{n=1}^{44} \cos n^\circ + \sum\limits_{n=1}^{44} \sin n^\circ}{\sum\limits_{n=1}^{44} \cos n^\circ - \sum\limits_{n=1}^{44} \sin n^\circ} = \frac{\sum\limits_{n=1}^{44} \cos n^\circ}{\sum\limits_{n=1}^{44} \sin n^\circ}.\] 
-
- For the sake of clarity, let $\sum\limits_{n=1}^{44} \cos n^\circ = C$ and $\sum\limits_{n=1}^{44} \sin n^\circ = S$. Then, we have 
-
- 
- \[\dfrac{C+S}{C-S} = \dfrac{C}{S} \implies CS+S^2 = C^2-CS.\]
-
- Finishing, we have $S^2+2CS=C^2$. Adding $C^2$ to both sides gives $(C+S)^2 = 2C^2$, or $C+S = \pm C\sqrt{2}$. Taking the positive case gives $S= C(\sqrt{2}-1)$. Finally, 
-
- 
- \[x=\frac{\sum\limits_{n=1}^{44} \cos n^\circ}{\sum\limits_{n=1}^{44} \sin n^\circ} = \dfrac{C}{S} = \dfrac{1}{\sqrt{2}-1} = \sqrt{2} +1 \implies \lfloor{100x\rfloor} = \boxed{241}.\] 
-
- 
-
-
-
-
-
-\textbf{Solution 8 (Integral Calculus, not rigorous)}
-
-Because the numerator and denominator are both sums, we can replace each with $44$ times the average (i.e. \href{https://artofproblemsolving.com/wiki/index.php?title=Arithmetic\_mean}{arithmetic mean}) of the terms of the respective sums. These $44$s will cancel out, leaving simply the ratio of the averages of the respective sums.
-
- Given that the sums span from $1^{\circ}\approx 0$ radians to $44^{\circ}\approx \frac\pi4$ radians, we would expect the average heights of cosine and sine on $[0,\frac\pi4]$ to be very close if not equal to the given ratio. We can use definite \href{https://artofproblemsolving.com/wiki/index.php?title=Integrals}{integrals} to calculate these averages.
-
- The average height of $\cos x$ on $[0,\frac\pi4]$ is $\frac1{\pi/4}\int^{\pi/4}_0(\cos x) dx = \frac4\pi(\sin\frac\pi4-\sin0) = \frac4\pi\cdot\frac{\sqrt2}2$.
-
- Similarly, the average height of $\sin x$ on $[0,\frac\pi4]$ is $\frac1{\pi/4}\int^{\pi/4}_0(\sin x) dx = \frac4\pi(-\cos\frac\pi4+\cos0) = \frac4\pi\cdot(1-\frac{\sqrt2}2)$.
-
- Taking the ratio of these two values yields $\frac{\sqrt2/2}{1-\sqrt2/2}=\frac1{\sqrt2-1}\cdot\frac{\sqrt2+1}{\sqrt2+1}=\frac{\sqrt2+1}{2-1}=\sqrt2+1 \approx 1.41+1 = 2.41$. Thus, our answer is $\boxed{241}$.
-
- 
-
-
-
-
-
-\textbf{Solution 9 (Telescoping)}
-
-$x=\frac{\sum\limits_{n=1}^{44} \cos n^\circ}{\sum\limits_{n=1}^{44} \sin n^\circ}=\frac{\sum\limits_{n=46}^{89} \sin n^\circ}{\sum\limits_{n=1}^{44} \sin n^\circ}$
-
- $=\frac{\sum\limits_{n=46}^{89} \sin n^\circ\sin0.5^\circ}{\sum\limits_{n=1}^{44} \sin n^\circ\sin0.5^\circ}$
-
- $=\frac{\sum\limits_{n=46}^{89}\frac{1}{2}\left(\cos(n-0.5)^\circ-\cos(n+0.5)^\circ\right)}{\sum\limits_{n=1}^{44}\frac{1}{2}\left(\cos(n-0.5)^\circ-\cos(n+0.5)^\circ\right)}$
-
- $=\frac{\frac{1}{2}(\cos45.5^\circ-\cos89.5^\circ)}{\frac{1}{2}(\cos0.5^\circ-\cos44.5^\circ)}$
-
- $=\frac{\cos45.5^\circ-\cos89.5^\circ}{\cos0.5^\circ-\cos44.5^\circ}$
-
- $=\frac{2\sin\left(\frac{45.5+89.5}{2}\right)^\circ\sin\left(\frac{45.5-89.5}{2}\right)^\circ}{2\sin\left(\frac{0.5+44.5}{2}\right)^\circ\sin\left(\frac{0.5-44.5}{2}\right)^\circ}$
-
- $=\frac{2\sin\frac{135}{2}^\circ\sin(-22)^\circ}{2\sin\frac{45}{2}^\circ\sin(-22)^\circ}$
-
- $=\frac{\sin\frac{135}{2}^\circ}{\sin\frac{45}{2}^\circ}=\tan\frac{135}{2}^\circ=\frac{1+\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1+\sqrt{2}\approx 2.4142$
-
- $\Rightarrow 100x\approx 241.42\Rightarrow\boxed{241}$
-
- 
-
-
 
 
 	\item (\textit{AIME I 1997}) The function $f$ defined by $f(x)= \frac{ax+b}{cx+d}$, where $a$, $b$, $c$ and $d$ are nonzero real numbers, has the properties $f(19)=19$, $f(97)=97$ and $f(f(x))=x$ for all values except $\frac{-d}{c}$. Find the unique number that is not in the range of $f$.
@@ -782,8 +555,6 @@ First, we use the fact that $f(f(x)) = x$ for all $x$ in the domain. Substitutin
 
 
 
-
-
 \textbf{Solution 2}
 
 First, we note that $e = \frac ac$ is the horizontal \href{https://artofproblemsolving.com/wiki/index.php?title=Asymptote\_(Geometry)}{asymptote} of the function, and since this is a linear function over a linear function, the unique number not in the range of $f$ will be $e$. $\frac{ax+b}{cx+d} = \frac{b-\frac{cd}{a}}{cx+d} + \frac{a}{c}$. \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{Without loss of generality}, let $c=1$, so the function becomes $\frac{b- \frac{d}{a}}{x+d} + e$.  
@@ -797,8 +568,6 @@ First, we note that $e = \frac ac$ is the horizontal \href{https://artofproblems
  Clearly we can discard the positive root, so $e = 58$.
 
  
-
-
 
 
 
@@ -822,8 +591,6 @@ We first note (as before) that the number not in the range of
 
 
 
-
-
 \textbf{Solution 4}
 
 Any number that is not in the domain of the inverse of $f(x)$ cannot be in the range of $f(x)$. Starting with $f(x) = \frac{ax+b}{cx+d}$, we rearrange some things to get $x = \frac{b-f(x)d}{f(x)c-a}$. Clearly, $\frac{a}{c}$ is the number that is outside the range of $f(x)$.
@@ -839,15 +606,11 @@ Since we are given $f(f(x))=x$, we have that
 
 
 
-
-
 \textbf{Solution 5}
 
 Since $f(f(x))$ is $x$, it must be symmetric across the line $y=x$. Also, since $f(19)=19$, it must touch the line $y=x$ at $(19,19)$ and $(97,97)$. $f$ a hyperbola that is a scaled and transformed version of $y=\frac{1}{x}$. Write $f(x)= \frac{ax+b}{cx+d}$ as $\frac{y}{cx+d}+z$, and z is our desired answer $\frac{a}{c}$. Take the basic hyperbola, $y=\frac{1}{x}$. The distance between points $(1,1)$ and $(-1,-1)$ is $2\sqrt{2}$, while the distance between $(19,19)$ and $(97,97)$ is $78\sqrt{2}$, so it is $y=\frac{1}{x}$ scaled by a factor of $39$. Then, we will need to shift it from $(-39,-39)$ to $(19,19)$, shifting up by $58$, or $z$, so our answer is $\boxed{58}$. Note that shifting the $x$ does not require any change from $z$; it changes the denominator of the part $\frac{1}{x-k}$.
 
  
-
-
 
 
 
@@ -859,8 +622,6 @@ From $f(f(x))=x$, it is obvious that $\frac{-d}{c}$ is the value not in the rang
 
 
 
-
-
 \textbf{Solution 7}
 
 Begin by finding the inverse function of $f(x)$, which turns out to be $f^{-1}(x)=\frac{19d-b}{a-19c}$. Since $f(f(x))=x$, $f(x)=f^{-1}(x)$, so substituting 19 and 97 yields the system, $\begin{array}{lcl} \frac{19a+b}{19c+d} & = & \frac{19d-b}{a-19c} \\ \frac{97a+b}{97c+d} & = & \frac{97d-b}{a-97c} \end{array}$, and after multiplying each equation out and subtracting equation 1 from 2, and after simplifying, you will get $116c=a-d$. Coincidentally, then $116c+d=a$, which is familiar because $f(116)=\frac{116a+b}{116c+d}$, and since $116c+d=a$, $f(116)=\frac{116a+b}{a}$. Also, $f(f(116))=\frac{a(\frac{116a+b}{a})+b}{c(\frac{116a+b}{a})+d}=116$, due to $f(f(x))=x$. This simplifies to $\frac{116a+2b}{c(\frac{116a+b}{a})+d}=116$, $116a+2b=116(c(\frac{116a+b}{a})+d)$, $116a+2b=116(c(116+\frac{b}{a})+d)$, $116a+2b=116c(116+\frac{b}{a})+116d$, and substituting $116c+d=a$ and simplifying, you get $2b=116c(\frac{b}{a})$, then $\frac{a}{c}=58$. Looking at $116c=a-d$ one more time, we get $116=\frac{a}{c}+\frac{-d}{c}$, and substituting, we get $\frac{-d}{c}=\boxed{58}$, and we are done.
@@ -869,15 +630,11 @@ Begin by finding the inverse function of $f(x)$, which turns out to be $f^{-1}(x
 
 
 
-
-
 \textbf{Solution 8 (shorter than solution 6)}
 
 Because there are no other special numbers other than $19$ and $97$, take the average to get $\boxed{58}$. (Note I solved this problem the solution one way but noticed this and this probably generalizes to all $f(x)=x, f(y)=y$ questions like these)
 
  
-
-
 
 
 
@@ -901,8 +658,6 @@ By the function definition, $f(f(x))$, $f$ is its own inverse, so the only value
 
 
 
-
-
 \textbf{Solution 9 (30-sec solve)}
 
 Notice that the function is just an \href{https://artofproblemsolving.com/wiki/index.php?title=Involution}{involution} on the real number line. Since the involution has two fixed points, namely $19$ and $97$, we know that the involution is an \href{https://artofproblemsolving.com/wiki/index.php?title=Circular\_inversion}{inversion} with respect to a circle with a diameter from $19$ to $97$. The only point that is undefined under an inversion is the center of the circle, which we know is $\frac{19+97}{2}=\boxed{58}$ in both $x$ and $y$ dimensions.
@@ -916,8 +671,6 @@ Or if you don't think about inversion: A linear rational function like this is $
 
 
 
-
-
 \textbf{Solution 10}
 
 First, consider the equation $\frac{ax+b}{cx+d}=x$. This is a quadratic in terms of $x$, and we are given that $19,97$ are solutions to this equation. Rearranging yields $cx^2-(a-d)x-b=0$, so by Vieta’s Formulas we must have $\cfrac{a-d}{c}=19+97=116$.
@@ -928,8 +681,6 @@ First, consider the equation $\frac{ax+b}{cx+d}=x$. This is a quadratic in terms
  \[\cfrac{a}{c}=58\]This is the horizontal asymptote of the function, so the function does not include this $y$-value. Thus the answer is $\boxed{58}$. ~eevee9406
 
  
-
-
 
 
 
@@ -997,12 +748,12 @@ We first substitute in $19$ and $97$.
  
 
 
-
-
 	\item (\textit{AIME I 1997}) 
 Let $S$ be the set of points in the Cartesian plane that satisfy 
 
- $\Big|\big| |x|-2\big|-1\Big|+\Big|\big| |y|-2\big|-1\Big|=1.$ If a model of $S$ were built from wire of negligible thickness, then the total length of wire required would be $a\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime number. Find $a+b$.
+ $\Big|\big| |x|-2\big|-1\Big|+\Big|\big| |y|-2\big|-1\Big|=1.$
+
+  If a model of $S$ were built from wire of negligible thickness, then the total length of wire required would be $a\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime number. Find $a+b$.
 
 
  
@@ -1015,8 +766,6 @@ Let $S$ be the set of points in the Cartesian plane that satisfy
 Let $f(x) = \Big|\big||x|-2\big|-1\Big|$, $f(x) \ge 0$. Then $f(x) + f(y) = 1 \Longrightarrow f(x), f(y) \le 1 \Longrightarrow x, y \le 4$. We only have a $4\times 4$ area, so guessing points and graphing won't be too bad of an idea. Since $f(x) = f(-x)$, there's a symmetry about all four \href{https://artofproblemsolving.com/wiki/index.php?title=Quadrant}{quadrants}, so just consider the first quadrant. We now gather some points:
 
  
-
-
 
 
 	\item (\textit{AIME I 1997}) Let $v$ and $w$ be distinct, randomly chosen roots of the equation $z^{1997}-1=0$. Let $m/n$ be the probability that $\sqrt{2+\sqrt{3}}\le |v+w|$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1056,8 +805,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\_id
 
 
 
-
-
 \textbf{Solution 2}
 
 The solutions of the equation $z^{1997} = 1$ are the $1997$th \href{https://artofproblemsolving.com/wiki/index.php?title=Roots\_of\_unity}{roots of unity} and are equal to $\text{cis}(\theta_k)$, where $\theta_k = \frac {2\pi k}{1997}$ for $k = 0,1,\ldots,1996.$ Thus, they are located at uniform intervals on the unit circle in the complex plane. 
@@ -1067,8 +814,6 @@ The solutions of the equation $z^{1997} = 1$ are the $1997$th \href{https://arto
  \[\cos\theta_k\ge \frac {\sqrt {3}}2 \qquad \Leftrightarrow \qquad -\frac {\pi}6\le \theta_k \le  \frac {\pi}6\] which is satisfied by $k = 166,165,\ldots, - 165, - 166$ (we don't include 0 because that corresponds to $v$).  So out of the $1996$ possible $k$, $332$ work.  Thus, $m/n = 332/1996 = 83/499.$  So our answer is $83 + 499 = \boxed{582}.$
 
  
-
-
 
 
 
@@ -1082,8 +827,6 @@ We can solve a geometrical interpretation of this problem.
 
 
 
-
-
 \textbf{Solution 4}
 
 Since $z^{1997}=1$, the roots will have magnitude $1$. Thus, the roots can be written as $\cos(\theta)+i\sin(\theta)$ and $\cos(\omega)+i\sin(\omega)$ for some angles $\theta$ and $\omega$. We rewrite the requirement as $\sqrt{2+\sqrt3}\le|\cos(\theta)+\cos(\omega)+i\sin(\theta)+i\sin(\omega)|$, which can now be easily manipulated to $2+\sqrt{3}\le(\cos(\theta)+\cos(\omega))^2+(\sin(\theta)+\sin(\omega))^2$. 
@@ -1091,8 +834,6 @@ Since $z^{1997}=1$, the roots will have magnitude $1$. Thus, the roots can be wr
  WLOG, let $\theta = 0$. Thus, our inequality becomes $2+\sqrt{3}\le(1+\cos(\omega))^2+(\sin(\omega))^2$, $2+\sqrt{3}\le2+2\cos(\omega)$, and finally $\cos(\omega)\ge\frac{\sqrt{3}}{2}$. Obviously, $\cos(\frac{\pi}{6})=\frac{\sqrt{3}}{2}$, and thus it follows that, on either side of a given point, $\frac{1997}{12}\approx166$ points will work. The probability is $\frac{166\times2}{1996} = \frac{83}{499}$, and thus our requested sum is $\boxed{582}$~SigmaPiE
 
  
-
-
 
 
 
@@ -1142,8 +883,6 @@ Let \(v = \operatorname{cis}\left(\frac{2\pi k}{1997}\right)\) and  \(w = \opera
  
 
 
-
-
 	\item (\textit{AIME I 1997}) The sides of rectangle $ABCD$ have lengths $10$ and $11$. An equilateral triangle is drawn so that no point of the triangle lies outside $ABCD$. The maximum possible area of such a triangle can be written in the form $p\sqrt{q}-r$, where $p$, $q$, and $r$ are positive integers, and $q$ is not divisible by the square of any prime number. Find $p+q+r$.
 
 
@@ -1167,8 +906,6 @@ Consider points on the \href{https://artofproblemsolving.com/wiki/index.php?titl
 
 
 
-
-
 \textbf{Solution 2}
 
 This is a trigonometric re-statement of the above. Let $x = \angle EAB$; by alternate interior angles, $\angle DFA=60+x$. Let $a = EB$ and the side of the equilateral triangle be $s$, so $s= \sqrt{a^2+121}$ by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}. Now $\frac{10}{s} = \sin(60+x)=  \sin {60} \cos x+ \cos {60} \sin x = \left(\frac{\sqrt{3}}2\right)\left(\frac{11}s\right)+\left(\frac 12\right)\left( \frac as \right)$. This reduces to $a=20-11\sqrt{3}$. 
@@ -1179,8 +916,6 @@ This is a trigonometric re-statement of the above. Let $x = \angle EAB$; by alte
 
 
 
-
-
 \textbf{Solution 3}
 
 Since $\angle{BAD}=90$ and $\angle{EAF}=60$, it follows that $\angle{DAF}+\angle{BAE}=90-60=30$. Rotate triangle $ADF$ $60$ degrees clockwise. Note that the image of $AF$ is $AE$. Let the image of $D$ be $D'$. Since angles are preserved under rotation, $\angle{DAF}=\angle{D'AE}$. It follows that $\angle{D'AE}+\angle{BAE}=\angle{D'AB}=30$. Since $\angle{ADF}=\angle{ABE}=90$, it follows that quadrilateral $ABED'$ is cyclic with circumdiameter $AE=s$ and thus circumradius $\frac{s}{2}$. Let $O$ be its circumcenter. By Inscribed Angles, $\angle{BOD'}=2\angle{BAD'}=60$. By the definition of circle, $OB=OD'$. It follows that triangle $OBD'$ is equilateral. Therefore, $BD'=r=\frac{s}{2}$. Applying the Law of Cosines to triangle $ABD'$, $\frac{s}{2}=\sqrt{10^2+11^2-(2)(10)(11)(\cos{30})}$. Squaring and multiplying by $\sqrt{3}$ yields $\frac{s^2\sqrt{3}}{4}=221\sqrt{3}-330\implies{p+q+r=221+3+330=\boxed{554}}$
@@ -1188,8 +923,6 @@ Since $\angle{BAD}=90$ and $\angle{EAF}=60$, it follows that $\angle{DAF}+\angle
  -Solution by \textbf{thecmd999}
 
  
-
-
 
 
 
@@ -1205,8 +938,6 @@ Clearly one vertex of the equilateral triangle is on a vertex of the rectangle, 
  - clarkculus
 
  
-
-
 
 
 \end{enumerate}

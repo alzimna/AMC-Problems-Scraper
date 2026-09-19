@@ -19,21 +19,13 @@ $20^{20} = 2^{40} \cdot 5^{20} = \left(2^2\right)^{20}\cdot\left(5^2\right)^{10}
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 Because $20^{20}=2^{40}5^{20}$, if $m^2n = 20^{20}$, there must be nonnegative integers $a$, $b$, $c$, and $d$ such that$m = 2^a5^b$ and $n = 2^c5^d$. Then
  \[2a + c = 40\]and
  \[2b+d = 20\]The first equation has $21$ solutions corresponding to $a = 0,1,2,\dots,20$, and the second equation has $11$ solutions corresponding to $b = 0,1,2,\dots,10$. Therefore there are a total of $21\cdot11 = \boxed{231}$ ordered pairs $(m,n)$ such that $m^2n = 20^{20}$.
 
- \textbf{Purple Comet Math Meet April 2020} Notice, that this was the exact same problem (with different wording of course) as Purple Comet HS problem 3 and remembering the answer, put $\boxed{231}$.
-
- \href{https://purplecomet.org/views/data/2020HSSolutions.pdf}{https://purplecomet.org/views/data/2020HSSolutions.pdf}
-
  
-
-
 
 
 	\item (\textit{AIME II 2020}) Let $P$ be a point chosen uniformly at random in the interior of the unit square with vertices at $(0,0), (1,0), (1,1)$, and $(0,1)$. The probability that the slope of the line determined by $P$ and the point $\left(\frac58, \frac38 \right)$ is greater than or equal to $\frac12$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -44,14 +36,12 @@ Because $20^{20}=2^{40}5^{20}$, if $m^2n = 20^{20}$, there must be nonnegative i
 
 
 
-\textbf{Solution}
+\textbf{Solution 1}
 
 The areas bounded by the unit square and alternately bounded by the lines through $\left(\frac{5}{8},\frac{3}{8}\right)$ that are vertical or have a slope of $1/2$ show where $P$ can be placed to satisfy the condition. One of the areas is a trapezoid with bases $1/16$ and $3/8$ and height $5/8$. The other area is a trapezoid with bases $7/16$ and $5/8$ and height $3/8$. Then, 
  \[\frac{\frac{1}{16}+\frac{3}{8}}{2}\cdot\frac{5}{8}+\frac{\frac{7}{16}+\frac{5}{8}}{2}\cdot\frac{3}{8}=\frac{86}{256}=\frac{43}{128}\implies43+128=\boxed{171}\]~mn28407
 
  
-
-
 
 
 
@@ -66,11 +56,6 @@ The line through the fixed point $\left(\frac58,\frac38\right)$ with slope $\fra
                     
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2020}) The value of $x$ that satisfies $\log_{2^x} 3^{20} = \log_{2^{x+3}} 3^{2020}$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -93,8 +78,6 @@ Let $\log _{2^x}3^{20}=\log _{2^{x+3}}3^{2020}=n$. Based on the equation, we get
 
 
 
-
-
 \textbf{Solution 2}
 
 Because $\log_a{b^c}=c\log_a{b},$ we have that $20\log_{2^x} 3 = 2020\log_{2^{x+3}} 3,$ or $\log_{2^x} 3 = 101\log_{2^{x+3}} 3.$ Since $\log_a{b}=\dfrac{1}{\log_b{a}},$ $\log_{2^x} 3=\dfrac{1}{\log_{3} 2^x},$ and $101\log_{2^{x+3}} 3=101\dfrac{1}{\log_{3}2^{x+3}},$ thus resulting in $\log_{3}2^{x+3}=101\log_{3} 2^x,$ or $\log_{3}2^{x+3}=\log_{3} 2^{101x}.$ We remove the base 3 logarithm and the power of 2 to yield $x+3=101x,$ or $x=\dfrac{3}{100}.$
@@ -105,8 +88,6 @@ Because $\log_a{b^c}=c\log_a{b},$ we have that $20\log_{2^x} 3 = 2020\log_{2^{x+
 
 
 
-
-
 \textbf{Solution 3 (Official MAA)}
 
 Using the Change of Base Formula to convert the logarithms in the given equation to base $2$ yields
@@ -114,8 +95,6 @@ Using the Change of Base Formula to convert the logarithms in the given equation
  \[\frac{20}x = \frac{2020}{x+3},\]which has solution $x = \frac3{100}.$ The requested sum is $3 + 100 = 103$.
 
  
-
-
 
 
 
@@ -143,8 +122,6 @@ $\log_{2^x} 3^{20} = 2^{xy} = 3^{20}$
 
 
 
-
-
 \textbf{Solution 5}
 
 $\textbf{Lemma}:$
@@ -160,8 +137,6 @@ $\textbf{Lemma}:$
  Apply the lemma on both sides to get $\frac{1}{x} \cdot \log_{2}{3^{20}} = \frac{1}{x+3} \cdot \log_{2}{3^{2020}}$. Then, apply the exponent property to obtain $\log_{2}{3^{\frac{20}{x}}} = \log_{2}{3^{\frac{2020}{x+3}}}$. Equivalent logarithms give $3^{\frac{20}{x}} = 3^{\frac{2020}{x+3}}$ and equivalent bases give $\frac{20}{x} = \frac{2020}{x+3}~:~x \neq -3, 0$. Then, the statement $60+20x = 2020x$ is obtained following that $x = \frac{3}{100} \implies \boxed{103}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2020}) Triangles $\triangle ABC$ and $\triangle A'B'C'$ lie in the coordinate plane with vertices $A(0,0)$, $B(0,12)$, $C(16,0)$, $A'(24,18)$, $B'(36,18)$, $C'(24,2)$. A rotation of $m$ degrees clockwise around the point $(x,y)$ where $0<m<180$, will transform $\triangle ABC$ to $\triangle A'B'C'$. Find $m+x+y$.
@@ -180,15 +155,11 @@ After sketching, it is clear a $90^{\circ}$ rotation is done about $(x,y)$. Look
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 Because the rotation sends the vertical segment $\overline{AB}$ to the horizontal segment $\overline{A'B'}$, the angle of rotation is $90^\circ$ degrees clockwise. For any point $(x,y)$ not at the origin, the line segments from $(0,0)$ to $(x,y)$ and from $(x,y)$ to $(x-y,y+x)$ are perpendicular and are the same length. Thus a $90^\circ$ clockwise rotation around the point $(x,y)$ sends the point $A(0,0)$ to the point $(x-y,y+x) = A'(24,18)$. This has the solution $(x,y) = (21,-3)$. The requested sum is $90+21-3=108$.
 
  
-
-
 
 
 
@@ -211,8 +182,6 @@ Because the rotation sends the vertical segment $\overline{AB}$ to the horizonta
 
 
 
-
-
 \textbf{Solution 4}
 
 For the above reasons, the transformation is simply a $90^\circ$ rotation. Proceed with complex numbers on the points $C$ and $C'$. Let $(x, y)$ be the origin. Thus, $C \rightarrow (16-x)+(-y)i$ and $C' \rightarrow (24-x)+(2-y)i$. The transformation from $C'$ to $C$ is a multiplication of $i$, which yields $(16-x)+(-y)i=(y-2)+(24-x)i$. Equating the real and complex terms results in the equations $16-x=y-2$ and $-y=24-x$. Solving, $(x, y) : (21, -3) \rightarrow 90+21-3=\boxed{108}$
@@ -221,77 +190,11 @@ For the above reasons, the transformation is simply a $90^\circ$ rotation. Proce
 
 
 
-
-
 \textbf{Solution 5}
 
 We know that the rotation point $P$ has to be equidistant from both $A$ and $A'$ so it has to lie on the line that is on the midpoint of the segment $AA'$ and also the line has to be perpendicular to $AA'$. Solving, we get the line is $y=\frac{-4}{3}x+25$. Doing the same for $B$ and $B'$, we get that $y=-6x+123$. Since the point $P$ of rotation must lie on both of these lines, we set them equal, solve and get: $x=21$,$y=-3$. We can also easily see that the degree of rotation is $90$ since $AB$ is initially vertical, and now it is horizontal. Also, we can just sketch this on a coordinate plane and easily realize the same. Hence, the answer is $21-3+90 = \boxed{108}$
 
  
-
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2020_4_Solution_Figure_2.png}
-                    \end{figure}
-                    We make transformation of line $AB$ into line $A'B'$ using axes symmetry. Point $D(0,18)$ is the crosspoint of this lines. Equation of line $DO$ is 
- \[x + y = 18.\]$\triangle ABC$ maps into $\triangle A''B''C''$ where 
- \[A''(18,18), B''(6,18), C''(18,2).\]
-
- We make transform of the line $A''C''$ into line $A'C'$ using axes symmetry with respect to line
- \[x  = \frac {A'' + A'}{2} = \frac {24 + 18}{2} = 21.\]The composition of two axial symmetries is a rotation through an angle twice as large as the angle between the axes $(45^o)$ around the point of their intersection $O(21, – 3).$ 
- \[m + x + y = 90 + 21 – 3 = \boxed {108}\].
-
- \textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
-
-\textbf{Solution 7 (Matrix and Transformations)}
-
-For a matrix to rotate a figure on a coordinate plane by $m$ degrees, it is written as:$\left[ {\begin{array}{cc}  \cos(m^{\circ}) & \sin(m^{\circ})  \\  -\sin(m^{\circ}) & \cos(m^{\circ})  \\  \end{array} } \right]$
-
- We can translate the whole figure so that the centre of rotation is at $(0,0)$, which is equivalent to subtracting $x$ and $y$ from all $x$-coordinates and the $y$-coordinates respectively of the given points.
-
- We then record all the points $A$, $B$, $C$ in a matrix as follows:$\left[ {\begin{array}{ccc}  0-x & 0-x & 16-x  \\  0-y & 12-y & 0-y  \\  \end{array} } \right]$
-
- and all the points $A'$, $B'$, $C'$ in a matrix as follows:$\left[ {\begin{array}{ccc}  24-x & 36-x & 24-x  \\  18-y & 18-y & 2-y  \\  \end{array} } \right]$
-
- Since $\triangle A'B'C'$ is a rotation around $(x,y)$ of $\triangle ABC$ by $m^{\circ}$, by the left multiplication rule, we can equate that:
-
- $\left[ {\begin{array}{cc}  \cos(m^{\circ}) & \sin(m^{\circ})  \\  -\sin(m^{\circ}) & \cos(m^{\circ})  \\  \end{array} } \right]$$\left[ {\begin{array}{ccc}  0-x & 0-x & 16-x  \\  0-y & 12-y & 0-y  \\  \end{array} } \right]$$=$$\left[ {\begin{array}{ccc}  24-x & 36-x & 24-x  \\  18-y & 18-y & 2-y  \\  \end{array} } \right]$
-
- We can obtain the follow equations:$\begin{cases} -x\cos(m^{\circ})-y\sin(m^{\circ})=24-x \\ -x\cos(m^{\circ})-y\sin(m^{\circ})+12\sin(m^{\circ})=36-x \\ x\sin(m^{\circ})-y\cos(m^{\circ})=24-x \end{cases}$
-
- From the first 2 equations, we get $m=90$, substituting into the 3rd equation, we get $x+y=18$.
-
- Therefore, $m+x+y=90+18=\boxed{108}$
-
- 
-
-
-
-
-
-\textbf{Solution 8}
-
-It is clear that $\bigtriangleup CPC'$ is a $45-45-90$ right triangle so $m=90$. We use the $\tan$ angle formula, $\tan{(a-b)}=\frac{\tan(a)-\tan(b)}{1+\tan(a)\tan(b)}$ to find the slope of line $CP$. We know that line $CC'$ has slope $\frac{1}{4}$ and let $b=-45^{\circ}$, then plugging both values into the formula, we find that the slope of $CP$ is $\frac{-3}{5}$. Also, $CC'$ has length $\sqrt{34}$. Create a right triangle $KCP$ where $KP$ is parallel to the $x$ axis and $CP$ is the hypotenuse. Then $CK=3x$ and $KP=5x$ and doing Pythagorean on $\bigtriangleup KCP$ gives $x=1$. Therefore, we know that $P$ is a translation 3 units down and 5 units right from $C(16,0)$, from which we obtain $P(21,-3)$. Adding the three variables, we obtain $90+21-3=\boxed{108}$
-
- 
-
-
 
 
 	\item (\textit{AIME II 2020}) For each positive integer $n$, let $f(n)$ be the sum of the digits in the base-four representation of $n$ and let $g(n)$ be the sum of the digits in the base-eight representation of $f(n)$. For example, $f(2020) = f(133210_{\text{4}}) = 10 = 12_{\text{8}}$, and $g(2020) = \text{the digit sum of }12_{\text{8}} = 3$. Let $N$ be the least value of $n$ such that the base-sixteen representation of $g(n)$ cannot be expressed using only the digits $0$ through $9$. Find the remainder when $N$ is divided by $1000$.
@@ -310,8 +213,6 @@ Let's work backwards. The minimum base-sixteen representation of $g(n)$ that can
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 First note that if $h_b(s)$ is the least positive integer whose digit sum, in some fixed base $b$, is $s$, then $h_b$ is a strictly increasing function. This together with the fact that $g(N) \ge 10$ shows that $f(N)$ is the least positive integer whose base-eight digit sum is 10. Thus $f(N) = 37_\text{eight} = 31$, and $N$ is the least positive integer whose base-four digit sum is $31.$ Therefore 
@@ -319,8 +220,6 @@ First note that if $h_b(s)$ is the least positive integer whose digit sum, in so
  \[\equiv 2\cdot24^2 - 1 \equiv 151 \pmod{1000}.\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2020}) Define a sequence recursively by $t_1 = 20$, $t_2 = 21$, and
@@ -340,8 +239,6 @@ Let $t_n=\frac{s_n}{5}$. Then, we have $s_n=\frac{s_{n-1}+1}{s_{n-2}}$ where $s_
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 More generally, let the first two terms be $a$ and $b$ and replace $5$ and $25$ in the recursive formula by $k$ and $k^2$, respectively. Then some algebraic calculation shows that
@@ -349,8 +246,6 @@ More generally, let the first two terms be $a$ and $b$ and replace $5$ and $25$ 
  \[t_{2020} = t_{5} =  \frac{20\cdot 5 +1}{21\cdot  25} = \frac{101}{525}.\]The requested sum is $101+525=626$.
 
  
-
-
 
 
 
@@ -365,8 +260,6 @@ Let us examine the first few terms of this sequence and see if we can find a pat
  Alas, we have figured this sequence is period 5! But since $2020 \equiv 5 \pmod 5$, we can state that $t_{2020} = t_5 = \frac{101}{525}$. According to the original problem statement, our answer is $\boxed{626}$. ~ nikenissan
 
  
-
-
 
 
 
@@ -395,11 +288,7 @@ Like solution 1, we will make a substitution. Let $u_n = 5t_n$. Then
 
  And thus $t_{2020} = t_5 = \frac{101}{525}$. The answer is $101 + 525 = \boxed{626}$.
 
- \textbf{Quick way to notice recursion loop} Round the first two values to both be 20. Then, the next element can be rounded to $\frac{1}{5}$. $t_4$ can then be quickly calculated to around $\frac{1}{250}$, and $t_5$ can be rounded to $\frac{1}{5}$. $t_6$ turns out to be around 20, which means that there is probably a loop with period 5. The rest of the solution proceeds normally.
-
  
-
-
 
 
 	\item (\textit{AIME II 2020}) Two congruent right circular cones each with base radius $3$ and height $8$ have axes of symmetry that intersect at right angles at a point in the interior of the cones a distance $3$ from the base of each cone. A sphere with radius $r$ lies within both cones. The maximum possible value of $r^2$ is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -426,8 +315,6 @@ Consider the cross section of the cones and sphere by a plane that contains the 
 
 
 
-
-
 \textbf{Solution (Incircles + Coordinate Bash)}
 
 
@@ -443,16 +330,12 @@ Consider the cross section of the cones and sphere by a plane that contains the 
 
 
 
-
-
 \textbf{Solution (Clean analytic geometry)}
 
 Using the diagram above, we notice that the desired length is simply the distance between the point $C$ and $\overline{AB}$. We can mark $C$ as $(3,3)$ since it is $3$ units away from each of the bases. Point $B$ is $(8,3)$. Thus, line $\overline{AB}$ is $y = \frac{3}{8}x \Rightarrow 3x + 8y = 0$. We can use the distance from point to line formula $\frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}$, where $x_0$ and $y_0$ are the coordinates of the point, and A, B, and C are the coefficients of the line in form $Ax + By + C = 0$. Plugging everything in, we get 
  \[\frac{|3(3) - 8(3)|}{\sqrt{8^2 + 3^2}} = \frac{15}{\sqrt{73}} \Rightarrow \frac{225}{73} \Rightarrow \boxed{298}\].
 
  
-
-
 
 
 
@@ -471,15 +354,11 @@ We graph this on graph paper, with the scale of $\sqrt{2}:1$. So, we can find $O
 
 
 
-
-
 \textbf{Solution 2}
 
 Using the graph drawn above in MAA solution, we see that $\sqrt{AC^2-r^2}$ + $\sqrt{BC^2-r^2}$ = $AB$. $AB$ = $\sqrt{8^2+3^2}$ = $\sqrt{73}$, $AC$ = 3$\sqrt{2}$, $AB$ = 5. Plugging in and solve for $r^2$ gives us $r^2$ = $\frac{225}{73}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2020}) Define a sequence recursively by $f_1(x)=|x-1|$ and $f_n(x)=f_{n-1}(|x-n|)$ for integers $n>1$. Find the least value of $n$ such that the sum of the zeros of $f_n$ exceeds $500,000$.
@@ -504,8 +383,6 @@ First it will be shown by induction that the zeros of $f_n$ are the integers$a, 
 
 
 
-
-
 \textbf{Solution 2 (Same idea, easier to see)}
 
 Starting from $f_1(x)=|x-1|$, we can track the solutions, the number of solutions, and their sum: 
@@ -526,8 +403,6 @@ Starting from $f_1(x)=|x-1|$, we can track the solutions, the number of solution
  100 is slightly too small, so $\boxed{101}$ works. 
 
  
-
-
 
 
 	\item (\textit{AIME II 2020}) While watching a show, Ayako, Billy, Carlos, Dahlia, Ehuang, and Frank sat in that order in a row of six chairs. During the break, they went to the kitchen for a snack. When they came back, they sat on those six chairs in such a way that if two of them sat next to each other before the break, then they did not sit next to each other after the break. Find the number of possible seating orders they could have chosen after the break.
@@ -563,8 +438,6 @@ Ayako ($A$), Billy $(B)$, Carlos $(C)$, Dahlia $(D)$, Ehuang $(E)$, and Frank $(
 
 
 
-
-
 \textbf{Solution 2 (Casework, fast method)}
 
 We proceed with casework based on the person who sits first after the break.
@@ -578,8 +451,6 @@ We proceed with casework based on the person who sits first after the break.
  Finally, the number of valid configurations for A and F, B and E, and C and D are equal by symmetry, so our final answer is 2(12 + 15 + 18), which computes to be $\boxed{090}.$ ~peace09
 
  
-
-
 
 
 
@@ -600,8 +471,6 @@ We determine the order of A, B, C, relative to each other. Then, we will insert 
  -Superdolphin~xHypotenuse
 
  
-
-
 
 
 
@@ -660,11 +529,6 @@ Note: How to get the two equations (1) and (2).
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME II 2020}) Find the sum of all positive integers $n$ such that when $1^3+2^3+3^3+\cdots +n^3$ is divided by $n+5$, the remainder is $17$.
 
 
@@ -690,8 +554,6 @@ So, $m\in\{83,166,332\}$. Testing the cases, only $332$ fails. This leaves $78+1
 
 
 
-
-
 \textbf{Solution 2 (Official MAA 1)}
 
 The sum of the cubes from 1 to $n$ is
@@ -700,8 +562,6 @@ The sum of the cubes from 1 to $n$ is
  \[n^2(n+1)^2 \equiv 4 \cdot 17= 68\hskip-.2cm \pmod{n+5}.\]But $n^2(n+1)^2 \equiv (-5)^2(-4)^2 = 400 \pmod{n+5}.$ Thus $n^2(n+1)^2$ is congruent to both $68$ and $400,$ which implies that $n+5$ divides $400-68 = 332=2^2 \cdot 83$. Because $n+5 > 17$, the only choices for $n+5$ are $83, 166,$ and $332.$ Checking all three cases verifies that $n=78$ and $n=161$ work, but $n=327$ does not. The requested sum is $78+161 = 239$.
 
  
-
-
 
 
 
@@ -714,8 +574,6 @@ The sum of the cubes of the integers from $1$ through $n$ is
  \[\frac{n^2(n+1)^2}{4} = 2(2k+3)Q + 100 \equiv 17\pmod{n+5}.\]Thus $2k+3$ divides $100-17 = 83$. It follows that $k=40$, and $n = 161$. The requested sum is $161 + 78 = 239$.
 
  
-
-
 
 
 
@@ -747,8 +605,6 @@ Therefore, the answer is $78 + 161 = \boxed{239}$.
 
 
 
-
-
 \textbf{Solution 5 (similar ideas to Solution 1, but faster)}
 
 As before, we note that $(5+a)^3 + (n-a)^3 \equiv (5+a)^3 - (n+5 - (n-a))^3 \equiv 0 \pmod {n+5}.$Thus, we can pair up the terms from $5^3$ to $n^3$ and cancel them. We have to deal with two cases:
@@ -761,11 +617,7 @@ As before, we note that $(5+a)^3 + (n-a)^3 \equiv (5+a)^3 - (n+5 - (n-a))^3 \equ
 
  - ccx09
 
- \begin{verbatim}
-There was a link to alcumus instead of a link to a video solution by OmegaLearn here. I tried to search up his video but I couldn't find it. Please find it and insert it here.
-\end{verbatim}
-
-
+ 
 
 
 	\item (\textit{AIME II 2020}) Let $P(x) = x^2 - 3x - 7$, and let $Q(x)$ and $R(x)$ be two quadratic polynomials also with the coefficient of $x^2$ equal to $1$. David computes each of the three sums $P + Q$, $P + R$, and $Q + R$ and is surprised to find that each pair of these sums has a common root, and these three common roots are distinct. If $Q(0) = 2$, then $R(0) = \frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -794,8 +646,6 @@ Let $Q(x) = x^2 + ax + 2$ and $R(x) = x^2 + bx + c$.  We can write the following
  Subtracting $(3)$ from $(1)$, we get $r - s = \dfrac{3 + b}{2}$.  Adding this to $(2)$, we get $2r = 3 \implies r = \dfrac{3}{2}$.  This gives us that $t = \dfrac{-5}{3}$ from $(4)$.  Substituting these values into $(5)$ and $(6)$, we get $s = \dfrac{c-7}{3}$ and $s = \dfrac{-3c - 6}{10}$.  Equating these values, we get $\dfrac{c-7}{3} = \dfrac{-3c-6}{10} \implies c = \dfrac{52}{19} = R(0)$.  Thus, our answer is $52 + 19 = \boxed{071}$. ~ TopNotchMath
 
  
-
-
 
 
 
@@ -828,8 +678,6 @@ We know that $P(x)=x^2-3x-7$.
 
 
 
-
-
 \textbf{Solution 3 (Official MAA)}
 
 Let the common root of $P+Q$ and $P+R$ be $p$, the common root of $P+Q$ and $Q+R$ be $q$, and the common root of $Q+R$ and $P+R$ be $r$. Because $p$ and $q$ are both roots of $P+Q$ and $P+Q$ has leading coefficient $2$, it follows that $P(x) + Q(x) = 2(x-p)(x-q).$ Similarly, $P(x) + R(x) = 2(x-p)(x-r)$ and $Q(x) + R(x) = 2(x-q)(x-r)$. Adding these three equations together and dividing by $2$ yields
@@ -841,11 +689,7 @@ Let the common root of $P+Q$ and $P+R$ be $p$, the common root of $P+Q$ and $Q+R
  \[R(x) =  x^2 - 2rx + (pr + qr - pq).\]Comparing the $x$ coefficients yields $p = \frac32$, and comparing the constant coefficients yields $-7 = pq + pr - qr = \frac32(q+r) - qr$. The fact that $Q(0) = 2$ implies that $\frac32(q-r) + qr = 2$. Adding these two equations yields $q = -\frac53$, and so substituting back in to solve for $r$ gives $r=-\frac{27}{19}$. Finally,
  \[R(0) = pr + qr - pq = \left(-\frac{27}{19}\right)\left(\frac32-\frac53\right) + \frac52 = \frac{9}{38} + \frac52 = \frac{52}{19}.\]The requested sum is $52 + 19 = 71$. Note that $Q(x) = x^2 + \frac{10}3x + 2$ and $R(x) = x^2 + \frac{54}{19}x + \frac{52}{19}$.
 
- Another one:
-
  
-
-
 
 
 	\item (\textit{AIME II 2020}) Let $m$ and $n$ be odd integers greater than $1.$ An $m\times n$ rectangle is made up of unit squares where the squares in the top row are numbered left to right with the integers $1$ through $n$, those in the second row are numbered left to right with the integers $n + 1$ through $2n$, and so on. Square $200$ is in the top row, and square $2000$ is in the bottom row. Find the number of ordered pairs $(m,n)$ of odd integers greater than $1$ with the property that, in the $m\times n$ rectangle, the line through the centers of squares $200$ and $2000$ intersects the interior of square $1099$.
@@ -860,11 +704,31 @@ Let the common root of $P+Q$ and $P+R$ be $p$, the common root of $P+Q$ and $Q+R
 
 Let us take some cases. Since $m$ and $n$ are odds, and $200$ is in the top row and $2000$ in the bottom, $m$ has to be $3$, $5$, $7$, or $9$. Also, taking a look at the diagram, the slope of the line connecting those centers has to have an absolute value of $< 1$. Therefore, $m < 1800 \mod n < 1800-m$. 
 
- If $m=3$, $n$ can range from $667$ to $999$. Howe
+ If $m=3$, $n$ can range from $667$ to $999$. However, $900$ divides $1800$, so looking at mods, we can easily eliminate $899$ and $901$. Now, counting these odd integers, we get $167 - 2 = 165$.
+
+ Similarly, let $m=5$. Then $n$ can range from $401$ to $499$. However, $450|1800$, so one can remove $449$ and $451$. Counting odd integers, we get $50 - 2 = 48$.
+
+ Take $m=7$. Then, $n$ can range from $287$ to $333$. However, $300|1800$, so one can verify and eliminate $299$ and $301$. Counting odd integers, we get $24 - 2 = 22$.
+
+ Let $m = 9$. Then $n$ can vary from $223$ to $249$. However, $225|1800$. Checking that value and the values around it, we can eliminate $225$. Counting odd integers, we get $14 - 1 = 13$.
+
+ Add all of our cases to get 
+ \[165+48+22+13 = \boxed{248}\]
+
+ -Solution by thanosaops
 
  
 
 
+
+\textbf{Solution 2 (Official MAA)}
+
+Because square $2000$ is in the bottom row, it follows that $\frac{2000}m \le n < \frac{2000}{m-1}$. Moreover, because square $200$ is in the top row, and square $2000$ is in the bottom top row, $1 < m \le 10$. In particular, because the number of rows in the rectangle must be odd, $m$ must be one of $3, 5, 7,$ or $9.$
+
+ For each possible choice of $m$ and $n$, let $\ell_{m,n}$ denote the line through the centers of squares $200$ and $2000.$ Note that for odd values of $m$, the line $\ell_{m,n}$ passes through the center of square $1100.$ Thus $\ell_{m,n}$ intersects the interior of cell $1099$ exactly when its slope is strictly between $-1$ and $1$. The line $\ell_{m,n}$ is vertical whenever square $2000$ is the $200$th square in the bottom row of the rectangle. This would happen for $m = 3, 5, 7, 9$ when $n = 900, 450, 300, 225$, respectively. When $n$ is 1 greater than or 1 less than these numbers, the slope of $\ell_{m,n}$ is $1$ or $-1$, respectively. In all other cases the slope is strictly between $-1$ and $1.$ The admissible values for $n$ for each possible value of $m$ are given in the following table.
+ \[\begin{tabular}{|c|c|c|c|c|}\hline m & minimum n & maximum n & avoided n & number of odd n\\\hline 3&667&999&899, 900, 901&165\\\hline 5&400&499&449, 450, 451&48\\\hline 7&286&333&299, 300, 301&22\\\hline 9&223&249&224, 225, 226&13\\\hline \end{tabular}\]This accounts for $165 + 48 + 22 + 13 = 248$ rectangles.
+
+ 
 
 
 	\item (\textit{AIME II 2020}) Convex pentagon $ABCDE$ has side lengths $AB=5$, $BC=CD=DE=6$, and $EA=7$. Moreover, the pentagon has an inscribed circle (a circle tangent to each side of the pentagon). Find the area of $ABCDE$.
@@ -883,8 +747,6 @@ Assume the incircle touches $AB$, $BC$, $CD$, $DE$, $EA$ at $P,Q,R,S,T$ respecti
  -Fanyuchen20020715
 
  
-
-
 
 
 
@@ -917,15 +779,11 @@ Suppose that the circle intersects $\overline{AB}$, $\overline{BC}$, $\overline{
 
 
 
-
-
 \textbf{Solution 3 (Guess 1)}
 
 This pentagon is very close to a regular pentagon with side lengths $6$. The area of a regular pentagon with side lengths $s$ is $\frac{5s^2}{4\sqrt{5-2\sqrt{5}}}$. $5-2\sqrt{5}$ is slightly greater than $\frac{1}{2}$ given that $2\sqrt{5}$ is slightly less than $\frac{9}{2}$. $4\sqrt{5-2\sqrt{5}}$ is then slightly greater than $2\sqrt{2}$. We will approximate that to be $2.9$. The area is now roughly $\frac{180}{2.9}$, but because the actual pentagon is not regular, but has the same perimeter of the regular one that we are comparing to we can say that this is an overestimate on the area and turn the $2.9$ into $3$ thus turning the area into $\frac{180}{3}$ which is $60$ and since $60$ is a multiple of the semiperimeter $15$, we can safely say that the answer is most likely $\boxed{60}$.
 
  
-
-
 
 
 
@@ -944,8 +802,6 @@ Because the AIME answers have to be a whole number it would meant the radius of 
  ...the radius could be a fraction with denominator 3, 5, or 15, and the area of the pentagon would still be an integer. - GeometryJake
 
  
-
-
 
 
 
@@ -972,8 +828,6 @@ Let $\omega$ be the inscribed circle, $I$ be its center, and $r$ be its radius. 
 
 
 
-
-
 \textbf{Solution 6 (Official MAA 2)}
 
 Define $a$, $b$, $c$, $d$, $e$, and $r$ as in Solution 5. Then, as in Solution 5, $a=3$, $b=d=2$, $c=e=4$, $\angle B= \angle D$, and $\angle C= \angle E$. Let $\alpha =\frac{\angle A}{2}$, $\beta = \frac{\angle B}{2}$, and $\gamma=\frac{\angle C}{2}$. It follows that $540^{\circ} = 2\alpha + 4 \beta + 4 \gamma$, so $270^{\circ} = \alpha + 2\beta + 2 \gamma$. Thus
@@ -986,8 +840,6 @@ Define $a$, $b$, $c$, $d$, $e$, and $r$ as in Solution 5. Then, as in Solution 5
 
 
 
-
-
 \textbf{Solution 7 (Official MAA 3)}
 
 Define $a$, $b$, $c$, $d$, $e$, and $r$ as in Solution 5. Note that
@@ -996,8 +848,6 @@ Define $a$, $b$, $c$, $d$, $e$, and $r$ as in Solution 5. Note that
  \[\operatorname{Im} \big( (r + 3i)(r+2i)^2(r+4i)^2 \big) = 0.\]Simplifying this equation gives the same quadratic equation in $r^2$ as in Solution 5.
 
  
-
-
 
 
 
@@ -1027,8 +877,6 @@ Define $a$, $b$, $c$, $d$, $e$, and $r$ as in Solution 5. Note that
 
 
 
-
-
 \textbf{Solution 9 (EASIEST)}
 
 Let $O$ be the center of the incircle and $OP$ and $OQ$ are the perpendiculars dropped from point $O$ to sides $BC$ and $CD$ respectively, making $OP = OQ = r$.
@@ -1047,11 +895,6 @@ Putting those values
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME II 2020}) For real number $x$ let $\lfloor x\rfloor$ be the greatest integer less than or equal to $x$, and define $\{x\} = x - \lfloor x \rfloor$ to be the fractional part of $x$. For example, $\{3\} = 0$ and $\{4.56\} = 0.56$. Define $f(x)=x\{x\}$, and let $N$ be the number of real-valued solutions to the equation $f(f(f(x)))=17$ for $0\leq x\leq 2020$. Find the remainder when $N$ is divided by $1000$.
 
 
@@ -1068,8 +911,61 @@ Note that the upper bound for our sum is $2019,$ and not $2020,$ because if it w
  Applying algebraic manipulation and the hockey-stick identity $3$ times gives
 
  
+ \[\sum_{x=17}^{2019} \sum_{y=x}^{2019} \sum_{z=y}^{2019} 1\]
+
+ 
+ \[=\sum_{x=17}^{2019} \sum_{y=x}^{2019} \sum_{z=y}^{2019} \binom{z-y}{0}\]
+
+ 
+ \[=\sum_{x=17}^{2019} \sum_{y=x}^{2019} \binom{2020-y}{1}\]
+
+ 
+ \[=\sum_{x=17}^{2019} \binom{2021-x}{2}\]
+
+ 
+ \[=\binom{2005}{3}\]
+
+ Hence, 
+ \[N = \frac{2005 \cdot 2004 \cdot 2003}{3 \cdot 2\cdot 1} \equiv \boxed{010} (\mathrm{mod} \hskip .2cm 1000)\]
+
+ 
 
 
+
+\textbf{Solution 2}
+
+To solve $f(f(f(x)))=17$, we need to solve $f(x) = y$ where $f(f(y))=17$, and to solve that we need to solve $f(y) = z$ where $f(z) = 17$.
+
+ It is clear to see for some integer $a \geq 17$ there is exactly one value of $z$ in the interval $[a, a+1)$ where $f(z) = 17$. To understand this, imagine the graph of $f(z)$ on the interval $[a, a+1)$ The graph starts at $0$, is continuous and increasing, and approaches $a+1$. So as long as $a+1 > 17$, there will be a solution for $z$ in the interval.
+
+ Using this logic, we can find the number of solutions to $f(x) = y$. For every interval $[a, a+1)$ where $a \geq \left \lfloor{y}\right \rfloor$ there will be one solution for $x$ in that interval. However, the question states $0 \leq x \leq 2020$, but because $x=2020$ doesn't work we can change it to $0 \leq x < 2020$. Therefore, $\left \lfloor{y}\right \rfloor  \leq a \leq 2019$, and there are $2020 - \left \lfloor{y}\right \rfloor$ solutions to $f(x) = y$.
+
+ We can solve $f(y) = z$ similarly. $0 \leq y < 2020$ to satisfy the bounds of $x$, so there are $2020 - \left \lfloor{z}\right \rfloor$ solutions to $f(y) = z$, and $0 \leq z < 2020$ to satisfy the bounds of $y$.
+
+ Going back to $f(z) = 17$, there is a single solution for z in the interval $[a, a+1)$, where $17 \leq a \leq 2019$. (We now have an upper bound for $a$ because we know $z < 2020$.) There are $2003$ solutions for $z$, and the floors of these solutions create the sequence $17, 18, 19, ..., 2018, 2019$
+
+ Lets first look at the solution of $z$ where $\left \lfloor{z}\right \rfloor = 17$. Then $f(y) = z$ would have $2003$ solutions, and the floors of these solutions would also create the sequence $17, 18, 19, ..., 2018, 2019$.
+
+ If we used the solution of $y$ where $\left \lfloor{y}\right \rfloor = 17$, there would be $2003$ solutions for $f(x) = y$. If we used the solution of $y$ where $\left \lfloor{y}\right \rfloor = 18$, there would be $2002$ solutions for $x$, and so on. So for the solution of $z$ where $\left \lfloor{z}\right \rfloor = 17$, there will be $2003 + 2002 + 2001 + ... + 2 + 1 = \binom{2004}{2}$ solutions for $x$
+
+ If we now look at the solution of $z$ where $\left \lfloor{z}\right \rfloor = 18$, there would be $\binom{2003}{2}$ solutions for $x$. If we looked at the solution of $z$ where $\left \lfloor{z}\right \rfloor = 19$, there would be $\binom{2002}{2}$ solutions for $x$, and so on.
+
+ The total number of solutions to $x$ is $\binom{2004}{2} + \binom{2003}{2} + \binom{2002}{2} + ... + \binom{3}{2} + \binom{2}{2}$. Using the hockey stick theorem, we see this equals $\binom{2005}{3}$, and when we take the remainder of that number when divided by $1000$, we get the answer, $\boxed{10}$
+
+ 
+
+
+
+\textbf{Solution 3 (Official MAA)}
+
+For any nonnegative integer $n$, the function $f$ increases on the interval $[n,n+1)$, with $f(n)=0$ and $f(x)<n+1$ for every $x$ in this interval. On this interval $f(x)=x(x-n)$, which takes on every real value in the interval $[0,n+1)$ exactly once. Thus for each nonnegative real number $y$, the equation $f(x) = y$ has exactly one solution $x \in [n, n+1)$ for every $n \ge \lfloor y \rfloor$.
+
+ For each integer $a\geq 17$ there is exactly one $x$ with $\lfloor x\rfloor=a$ such that $f(x)=17$; likewise for each integer $b\geq a\geq 17$ there is exactly one $x$ with $\lfloor f(x)\rfloor=a$ and $\lfloor x\rfloor=b$ such that $f(f(x))=17$. Finally, for each integer $c \ge b \ge a \ge 17$ there is exactly one $x$ with $\lfloor f(f(x)) \rfloor = a$, $\lfloor f(x)\rfloor=b$, and $\lfloor x\rfloor=c$ such that $f(f(f(x)))=17$.
+
+ Thus $f(f(f(x)))=17$ has exactly one solution $x$ with $0\leq x\leq 2020$ for each triple of integers $(a,b,c)$ with $17\leq a\leq b\leq c<2020$, noting that $x=2020$ is not a solution. This nondecreasing ordered triple can be identified with a multiset of three elements of the set of $2003$ integers $\{17,18,19,\ldots,2019\}$, which can be selected in $\binom{2005}3$ ways. Thus 
+ \[N=\frac{2005\cdot 2004\cdot 2003}{6}\equiv 10\hskip -.2cm \pmod{1000}.\]
+
+ 
 
 
 	\item (\textit{AIME II 2020}) Let $\triangle ABC$ be an acute scalene triangle with circumcircle $\omega$. The tangents to $\omega$ at $B$ and $C$ intersect at $T$. Let $X$ and $Y$ be the projections of $T$ onto lines $AB$ and $AC$, respectively. Suppose $BT = CT = 16$, $BC = 22$, and $TX^2 + TY^2 + XY^2 = 1143$. Find $XY^2$.
@@ -1107,8 +1003,6 @@ Let $O$ be the circumcenter of $\triangle ABC$; say $OT$ intersects $BC$ at $M$;
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 Let $M$ denote the midpoint of $\overline{BC}$. The critical claim is that $M$ is the orthocenter of $\triangle AXY$, which has the circle with diameter $\overline{AT}$ as its circumcircle. To see this, note that because $\angle BXT = \angle BMT = 90^\circ$, the quadrilateral $MBXT$ is cyclic, it follows that
@@ -1122,8 +1016,6 @@ Let $M$ denote the midpoint of $\overline{BC}$. The critical claim is that $M$ i
  \[XY^2 = \frac13(2 \cdot 1143-135) = \boxed{717}.\]
 
  
-
-
 
 
 
@@ -1147,8 +1039,6 @@ Let $H$ be the orthocenter of $\triangle AXY$.
  \[3 \cdot XY^2=2151.\]Therefore, $XY^2=\boxed{717}$. ~ MathLuis
 
  
-
-
 
 
 
@@ -1197,8 +1087,6 @@ Let $H$ be the orthocenter of $\triangle AXY$.
 
 
 
-
-
 \textbf{Solution 5 (Symmedian and Stewarts)}
 
 Let $M$ be the midpoint of $BC$. Note that $\angle XYT = \angle XAT = \angle MAC$ because $AT$ is a symmedian. Similarly, $\angle TXY = \angle MAB$. $XT = 16\sin{C}$ and $YT = 16\sin{C}$. By law of sines on $XYT$, $\frac{16\sin{C}}{\sin{XYT}} = \frac{XY}{\sin{A}}$. However by law of sines on $MAC$, $\frac{\sin{C}}{\sin{MAC}} = \frac{AM}{11}$. Combining these two yields, $\frac{16}{11} AM = \frac{XY}{\sin{A}}$. Since $\sin{A} = \frac{\sqrt{135}}{16}$, we have $XY^2 = \frac{135}{121} AM^2$.
@@ -1208,8 +1096,6 @@ Let $M$ be the midpoint of $BC$. Note that $\angle XYT = \angle XAT = \angle MAC
  By law of cosines on $XYT$ and using $XT^2 + XY^2 + YT^2 = 1143$, we have $512(\sin^2{B} + \sin^2{C}) - 1143 = -512\sin{B}\sin{C}(\frac{11}{16})$. Substituting our previous values here and using $R = \frac{176}{\sqrt{135}}$ yields a value for $d^2$, and multiplying by $\frac{135}{121}$ gives $\boxed{717}$.
 
  
-
-
 
 
 \end{enumerate}

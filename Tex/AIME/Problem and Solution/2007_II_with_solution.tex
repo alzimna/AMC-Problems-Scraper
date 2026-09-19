@@ -26,8 +26,6 @@ There are 7 different characters that can be picked, with 0 being the only numbe
 
 
 
-
-
 \textbf{Solution 2}
 
 Another approach is to first falsely assume that the zeros are distinguishable and then correct the over-counting.
@@ -43,8 +41,6 @@ Another approach is to first falsely assume that the zeros are distinguishable a
  The max number of zeros is two so we have gone through all the cases and removed the over-counted arrangements thus giving, $N = 3,720$ and $\frac{N}{10} = \boxed{372}$.
 
  
-
-
 
 
 
@@ -75,8 +71,6 @@ Another way to solve this is through brute force casework.
  
 
 
-
-
 	\item (\textit{AIME II 2007}) Find the number of ordered triples $(a,b,c)$ where $a$, $b$, and $c$ are positive \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, $a$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Factor}{factor} of $b$, $a$ is a factor of $c$, and $a+b+c=100$.
 
 
@@ -97,15 +91,11 @@ Denote $x = \frac{b}{a}$ and $y = \frac{c}{a}$. The last condition reduces to $a
 
 
 
-
-
 \textbf{Solution 2 (similar to 1, different ending)}
 
 Let $b = ak$ and $c = aj$ for $k,j \in \mathbb{Z}^+ \neq 0$, as $b,c \in \mathbb{Z}^+$. Then, factoring out $a$, we have $a(1+x+y) = 100$. $a$ is an integer, and so is $1+x+y$ by definition, so that implies $a \ | \ 100$. The possible choices for $a$ are $1, 2, 4, 5, 10, 20, 25, 50, 100$. Each of those gives options $k+j = 0,1,3,4,9,19,24,49,99$ respectively. Negate 0 and 1 as $k$ and $j$ are positive integers not equal to 0. While we can attempt to find through exclusion stars and bars the number of ways as $\binom{x-1}{y-1}$, coming to the realization that $y-1$ will always be 1 (as we have 2 variables $k,j$), and continuing by solution 1, we could also constructively overcount. By stars and bars, each two equations will have integer solutions, inclusive 0, as $\binom{x+y-1}{y-1}$. Note that $y=2$ forces the bottom of the binomial as 1, making it expendable and therefore we just consider $x+y-1$. Here, $y-1 = 1$ so we just consider $k+1$ cases total, so we sum over ALL terms and obtain $100+50+25+20+10+5+4 = 214$. However, 14 of these cases are invalid, particularly, when $k+j = 3,4,9,19,24,49,99$, and one of $k$ or $j$ is 0. There are two choice for which variable is 0, and 7 total $k+j$ values, which is $2 \cdot 7 = 14$ of the total that do not work, so the answer is $214 - 14 = \boxed{200}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2007}) \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{Square} $ABCD$ has side length $13$, and \href{https://artofproblemsolving.com/wiki/index.php?title=Point}{points} $E$ and $F$ are exterior to the square such that $BE=DF=5$ and $AE=CF=12$. Find $EF^{2}$.
@@ -132,8 +122,6 @@ Let $\angle FCD = \alpha$, so that $FB = \sqrt{12^2 + 13^2 + 2\cdot12\cdot13\sin
 
 
 
-
-
 \textbf{Solution 2}
 
 Extend $\overline{AE}, \overline{DF}$ and $\overline{BE}, \overline{CF}$ to their points of intersection. Since $\triangle ABE \cong \triangle CDF$ and are both $5-12-13$ \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangles}, we can come to the conclusion that the two new triangles are also congruent to these two (use \href{https://artofproblemsolving.com/wiki/index.php/Congruent\_(geometry)\#ASA\_Congruence}{ASA}, as we know all the sides are $13$ and the angles are mostly complementary). Thus, we create a \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square} with sides $5 + 12 = 17$.
@@ -148,8 +136,6 @@ Extend $\overline{AE}, \overline{DF}$ and $\overline{BE}, \overline{CF}$ to thei
  $\overline{EF}$ is the diagonal of the square, with length $17\sqrt{2}$; the answer is $EF^2 = (17\sqrt{2})^2 = 578$.
 
  
-
-
 
 
 
@@ -172,8 +158,6 @@ A slightly more analytic/brute-force approach:
 
 
 
-
-
 \textbf{Solution 4}
 
 Based on the symmetry, we know that $F$ is a reflection of $E$ across the center of the square, which we will denote as $O$. Since $\angle BEA$ and $\angle AOB$ are right, we can conclude that figure $AOBE$ is a cyclic quadrilateral. Pythagorean Theorem yields that $BO=AO=\frac{13\sqrt{2}}{2}$. Now, using Ptolemy's Theorem, we get that 
@@ -186,15 +170,11 @@ Based on the symmetry, we know that $F$ is a reflection of $E$ across the center
 
 
 
-
-
 \textbf{Solution 5 (Ptolemy's Theorem)}
 
 Drawing $EF$, it clearly passes through the center of $ABCD$. Letting this point be $P$, we note that $AEBP$ and $CFDP$ are congruent cyclic quadrilaterals, and that $AP=BP=CP=DP=\frac{13}{\sqrt{2}}.$ Now, from Ptolemy's, $13\cdot EP=\frac{13}{\sqrt{2}}(12+5)\implies EP=\frac{17\sqrt{2}}{2}$. Since $EF=EP+FP=2\cdot EP$, the answer is $(17\sqrt{2})^2=\boxed{578}.$
 
  
-
-
 
 
 
@@ -219,8 +199,6 @@ Place the vertices of the square as follows:\begin{align}D &= (0,\;0),\\C &= (13
 
 
 
-
-
 \textbf{Solution 7 (Trig Bash)}
 
 We first see that the whole figure is symmetrical and reflections across the center that we will denote as $O$ bring each half of the figure to the other half. Thus we consider a single part of the figure, namely $EO.$
@@ -232,8 +210,6 @@ We first see that the whole figure is symmetrical and reflections across the cen
  Note that we are looking for $4EO^2$ so we multiply $EO^2 = 12^2 + \left(\frac{13\sqrt{2}}{2}\right)^2 - 2 \cdot 12 \cdot \left(\frac{13\sqrt{2}}{2}\right) \cdot \cos{\angle EAO}$ by $4$ obtaining $4EO^2 = 576 + 338 - 8 \cdot\left(\frac{13\sqrt{2}}{2}\right) \cdot 12 \cdot\frac{7\sqrt{2}}{26} = 576 + 338 - 4  \cdot 12 \cdot  7 = \boxed{578}.$
 
  
-
-
 
 
 
@@ -251,8 +227,6 @@ We first see that the whole figure is symmetrical and reflections across the cen
  
 
 
-
-
 	\item (\textit{AIME II 2007}) The workers in a factory produce widgets and whoosits. For each product, production time is \href{https://artofproblemsolving.com/wiki/index.php?title=Constant}{constant} and identical for all workers, but not necessarily equal for the two products. In one hour, $100$ workers can produce $300$ widgets and $200$ whoosits. In two hours, $60$ workers can produce $240$ widgets and $300$ whoosits. In three hours, $50$ workers can produce $150$ widgets and $m$ whoosits. Find $m$.
 
 
@@ -267,17 +241,15 @@ Suppose that it takes $x$ hours for one worker to create one widget, and $y$ hou
 
  Therefore, we can write that (note that two hours is similar to having twice the number of workers, and so on):
 
- $100 = 300x + 200y$
+ <div style="text-align:center;">$100 = 300x + 200y$
 
  $2(60) = 240x + 300y$
 
  $3(50) = 150x + my$
 
- Solve the system of equations with the first two equations to find that $(x,y) = \left(\frac{1}{7}, \frac{2}{7}\right)$. Substitute this into the third equation to find that $1050 = 150 + 2m$, so $m = \boxed{450}$.
+ </div>Solve the system of equations with the first two equations to find that $(x,y) = \left(\frac{1}{7}, \frac{2}{7}\right)$. Substitute this into the third equation to find that $1050 = 150 + 2m$, so $m = \boxed{450}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2007}) The \href{https://artofproblemsolving.com/wiki/index.php?title=Graph}{graph} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Equation}{equation} $9x+223y=2007$ is drawn on graph paper with each \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square} representing one \href{https://artofproblemsolving.com/wiki/index.php?title=Unit\_square}{unit} in each direction. How many of the $1$ by $1$ graph paper squares have interiors lying entirely below the graph and entirely in the first \href{https://artofproblemsolving.com/wiki/index.php?title=Quadrant}{quadrant}?
@@ -300,8 +272,6 @@ There are $223 \cdot 9 = 2007$ squares in total formed by the rectangle with edg
 
 
 
-
-
 \textbf{Solution 2}
 
 Count the number of each squares in each row of the triangle. The \href{https://artofproblemsolving.com/wiki/index.php?title=Intercept&action=edit&redlink=1}{intercepts} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Line}{line} are $(223,0),\ (0,9)$.
@@ -314,8 +284,6 @@ Count the number of each squares in each row of the triangle. The \href{https://
 
 
 
-
-
 \textbf{Solution 3}
 
 From \href{https://artofproblemsolving.com/wiki/index.php?title=Pick\%27s\_Theorem}{Pick's Theorem}, $\frac{2007}{2}=\frac{233}{2}-\frac{2}{2}+\frac{2I}{2}$. In other words, $2I=1776$ and I is $888$.
@@ -323,8 +291,6 @@ From \href{https://artofproblemsolving.com/wiki/index.php?title=Pick\%27s\_Theor
  Do you see why we simply set $I$ as the answer as well? That's because every interior point, if moved down and left one (southwest direction), can have that point and the previous point create a unit square. For example, $(1, 1)$ moves to $(0, 0)$, so the square of points ${(0, 0), (1, 0), (1, 1), (0, 1)}$ is one example. This applies, of course, for $888$ points.
 
  
-
-
 
 
 
@@ -341,8 +307,6 @@ We know that the number of squares intersected in an $m\times{n}$ rectangle is $
  $\frac{2007 - 231}{2} = \frac{1776}{2} = \fbox{888}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2007}) An integer is called \textit{parity-monotonic} if its decimal representation $a_{1}a_{2}a_{3}\cdots a_{k}$ satisfies $a_{i}<a_{i+1}$ if $a_{i}$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Odd}{odd}, and $a_{i}>a_{i+1}$ if $a_{i}$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Even}{even}. How many four-digit parity-monotonic integers are there? 
@@ -365,8 +329,6 @@ Let's set up a table of values. Notice that 0 and 9 both cannot appear as any of
 
 
 
-
-
 \textbf{Solution 2 (Recursion)}
 
 This problem can be solved via recursion since we are "building a string" of numbers with some condition. We want to create a new string by adding a new digit at the front so we avoid complications ($0$ can't be at the front and no digit is greater than $9$). There are $4$ options to add no matter what$^{\ast}$ $^{\ast}$ $^{\ast}$ so the recursion is $S_n=4S_{n-1}$ where $S_n$ stands for the number of such numbers with $n$ digits. Since $S_1=10$ the answer is $\boxed{640}$.
@@ -374,8 +336,6 @@ This problem can be solved via recursion since we are "building a string" of num
  $^{\ast}$ $^{\ast}$ $^{\ast}$ divide 0-9 into groups $(E O)(E O)(E O)(E O)(E O)$. If $a_i$ is even, take an odd from a group below $a_i$'s group or an even from a group above its group as $a_{i-1}$. Do the opposite for an odd $a_i$. So for all $a_i$ there is one option for $a_{i-1}$ from each of the $4$ groups that are not $a_i$'s group.
 
  
-
-
 
 
 	\item (\textit{AIME II 2007}) Given a \href{https://artofproblemsolving.com/wiki/index.php?title=Real\_number}{real number} $x,$ let $\lfloor x \rfloor$ denote the \href{https://artofproblemsolving.com/wiki/index.php?title=Floor\_function}{greatest integer} less than or equal to $x.$ For a certain \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integer} $k,$ there are exactly $70$ positive integers $n_{1}, n_{2}, \ldots, n_{70}$ such that $k=\lfloor\sqrt[3]{n_{1}}\rfloor = \lfloor\sqrt[3]{n_{2}}\rfloor = \cdots = \lfloor\sqrt[3]{n_{70}}\rfloor$ and $k$ divides $n_{i}$ for all $i$ such that $1 \leq i \leq 70.$
@@ -401,8 +361,6 @@ For $x = 1$, we see that $\sqrt[3]{1} \ldots \sqrt[3]{7}$ all work, giving 7 int
 
 
 
-
-
 \textbf{Solution 2}
 
 Obviously $k$ is positive. Then, we can let $n_1$ equal $k^3$ and similarly let $n_i$ equal $k^3 + (i - 1)k$. 
@@ -414,14 +372,7 @@ Obviously $k$ is positive. Then, we can let $n_1$ equal $k^3$ and similarly let 
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2007}) A \href{https://artofproblemsolving.com/wiki/index.php?title=Rectangle}{rectangular} piece of paper measures 4 units by 5 units. Several \href{https://artofproblemsolving.com/wiki/index.php?title=Line}{lines} are drawn \href{https://artofproblemsolving.com/wiki/index.php?title=Parallel}{parallel} to the edges of the paper. A rectangle determined by the \href{https://artofproblemsolving.com/wiki/index.php?title=Intersection}{intersections} of some of these lines is called \textit{basic} if 
@@ -452,8 +403,6 @@ Denote the number of horizontal lines drawn as $x$, and the number of vertical l
 
 
 
-
-
 \textbf{Solution 2}
 
 We realize that drawing $x$ vertical lines and $y$ horizontal lines, the number of basic rectangles we have is $(x-1)(y-1)$. The easiest possible case to see is $223$ vertical and $223$ horizontal lines, as $(4+5)223 = 2007$. Now, for every 4 vertical lines you take away, you can add 5 horizontal lines, so you basically have the equation $(222-4x)(222+5x)$ maximize. 
@@ -464,22 +413,13 @@ We realize that drawing $x$ vertical lines and $y$ horizontal lines, the number 
 
 
 
-
-
 \textbf{Solution 3 (similar to solution 2)}
 
 Similar to solution 2, we need to maximise the equation $(x-1)(y-1)$. Starting from $x=y=223$, we simply do trial and error, adding $5$ to $x$ while subtracting $4$ from $y$ each time. We notice that the total number of basic squares increases as we increase $x$. 
 
  Thus, we simply need to find the first value for which the number of basic squares decrease or stay unchanged when we increase $x$, which occurs at $x=258$ and $y=195$, for which the total number of basic squares is $49,858$, which is less than when $x=253$ and $y=199$, which gives $49896$. Thus, our answer is $49896\mod1000 = \boxed{896}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2007}) \href{https://artofproblemsolving.com/wiki/index.php?title=Rectangle}{Rectangle} $ABCD$ is given with $AB=63$ and $BC=448.$ Points $E$ and $F$ lie on $AD$ and $BC$ respectively, such that $AE=CF=84.$ The \href{https://artofproblemsolving.com/wiki/index.php?title=Inscribed\_circle}{inscribed circle} of \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} $BEF$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent}{tangent} to $EF$ at point $P,$ and the inscribed circle of triangle $DEF$ is tangent to $EF$ at \href{https://artofproblemsolving.com/wiki/index.php?title=Point}{point} $Q.$ Find $PQ.$
@@ -503,8 +443,6 @@ Similar to solution 2, we need to maximise the equation $(x-1)(y-1)$. Starting f
 
 
 
-
-
 \textbf{Solution 1}
 
 Several \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_triple}{Pythagorean triples} exist amongst the numbers given. $BE = DF = \sqrt{63^2 + 84^2} = 21\sqrt{3^2 + 4^2} = 105$. Also, the length of $EF = \sqrt{63^2 + (448 - 2\cdot84)^2} = 7\sqrt{9^2 + 40^2} = 287$.
@@ -517,15 +455,11 @@ Several \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_
 
 
 
-
-
 \textbf{Solution 2}
 
 By the \href{https://artofproblemsolving.com/wiki/index.php?title=Two\_Tangent\_Theorem}{Two Tangent Theorem}, we have that $FY = PQ + QF$. Solve for $PQ = FY - QF$. Also, $QF = EP = EX$, so $PQ = FY - EX$. Since $BX = BY$, this can become $PQ = FY - EX + (BY - BX)$$= \left(FY + BY\right) - \left(EX + BX\right) = FB - EB$. Substituting in their values, the answer is $364 - 105 = 259$.
 
  
-
-
 
 
 
@@ -543,8 +477,6 @@ Call the incenter of $\triangle BEF$ $O_1$ and the incenter of $\triangle DFE$ $
  Now, we just have to find $O_1Q = O_2P$, which can be done with simple subtraction, and then we can use the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} to find $PQ$. 
 
  
-
-
 
 
 
@@ -568,15 +500,11 @@ Why not first divide everything by its greatest common factor, $7$? Then we're l
 
 
 
-
-
 \textbf{Solution 5}
 
 Scaling everything by 7, we have that $AE = 12, AB = 9, BF = 52$. Note that  if the perpendicular of $F$ dropped down to $ED$ is $X$, then $EX  = 52-12 = 40$. But $FX = 9$ and so we have a $9-40-41$ right triangle with $EFX$ meaning $EF = 41$. Now, by symmetry, we know that $EP = QF = a$ meaning $PF = 41-a$. If the tangent of the circle inscribed in $BEF$ is tangent to $BE$ at $Y$, then if $BY = b$ we have a system of equations. $a+b = 15, b+41-a = 52$. We can then solve for $a$, and since $PQ = 41-2a$, the rest follows.
 
  
-
-
 
 
 
@@ -628,8 +556,6 @@ Set the origin at $D(0,0)$ with $A(0, 448)$, $B(63, 448)$, and $C(63, 0)$.Points
  
 
 
-
-
 	\item (\textit{AIME II 2007}) Let $S$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} with six \href{https://artofproblemsolving.com/wiki/index.php?title=Element}{elements}. Let $\mathcal{P}$ be the set of all \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subsets} of $S.$ Subsets $A$ and $B$ of $S$, not necessarily distinct, are chosen independently and at random from $\mathcal{P}$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that $B$ is contained in one of $A$ or $S-A$ is $\frac{m}{n^{r}},$ where $m$, $n$, and $r$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, $n$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}, and $m$ and $n$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime}. Find $m+n+r.$ (The set $S-A$ is the set of all elements of $S$ which are not in $A.$)
 
 
@@ -676,8 +602,6 @@ Use \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{casewor
 
 
 
-
-
 \textbf{Solution 2}
 
 we need $B$ to be a subset of $A$ or $S-A$we can divide each element of $S$ into 4 categories:
@@ -702,15 +626,11 @@ we need $B$ to be a subset of $A$ or $S-A$we can divide each element of $S$ into
 
 
 
-
-
 \textbf{Solution 3}
 
 $B$ must be in $A$ or $B$ must be in $S-A$. This is equivalent to saying that $B$ must be in $A$ or $B$ is disjoint from $A$. The probability of this is the sum of the probabilities of each event individually minus the probability of each event occurring simultaneously. There are $\binom{6}{x}$ ways to choose $A$, where $x$ is the number of elements in $A$. From those $x$ elements, there are ${2^x}$ ways to choose $B$. Thus, the probability that $B$ is in $A$ is the sum of all the values $\binom{6}{x}({2^x})$ for values of $x$ ranging from $0$ to $6$. For the second probability, the ways to choose $A$ stays the same but the ways to choose $B$ is now ${2^{6-x}}$. We see that these two summations are simply from the Binomial Theorem and that each of them is ${(2+1)^6}$. We subtract the case where both of them are true. This only happens when $B$ is the null set. $A$ can be any subset of $S$, so there are ${2^6}$ possibilities. Our final sum of possibilities is $2\cdot 3^6-2^6$. We have ${2^6}$ total possibilities for both $A$ and $B$, so there are ${2^{12}}$ total possibilities. This reduces down to $\dfrac{2\cdot 3^6-2^6}{4^6}= \dfrac{3^6-2^5}{2^{11}}=\dfrac{697}{2^{11}}$.The answer is thus $697 + 2 + 11 = 710$.
 
  
-
-
 
 
 
@@ -730,8 +650,6 @@ Let $|S|$ denote the number of elements in a general set $S$. We use complementa
 
 
 
-
-
 \textbf{Solution 5}
 
 To begin with, we note that there are $2^6$ subsets of $S$(which we can assume is $\{1,2,3,4,5,6\}$), including the null set. This gives a total of $(2^6)^2 = 2^{12}$ total possibilities for A and B. 
@@ -747,14 +665,7 @@ To begin with, we note that there are $2^6$ subsets of $S$(which we can assume i
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2007}) Two long \href{https://artofproblemsolving.com/wiki/index.php?title=Cylinder}{cylindrical} tubes of the same length but different \href{https://artofproblemsolving.com/wiki/index.php?title=Diameter}{diameters} lie \href{https://artofproblemsolving.com/wiki/index.php?title=Parallel}{parallel} to each other on a \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{flat surface}. The larger tube has \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} $72$ and rolls along the surface toward the smaller tube, which has radius $24$. It rolls over the smaller tube and continues rolling along the flat surface until it comes to rest on the same point of its \href{https://artofproblemsolving.com/wiki/index.php?title=Circumference}{circumference} as it started, having made one complete revolution. If the smaller tube never moves, and the rolling occurs with no slipping, the larger tube ends up a \href{https://artofproblemsolving.com/wiki/index.php?title=Distance}{distance} $x$ from where it starts. The distance $x$ can be expressed in the form $a\pi+b\sqrt{c},$ where $a,$ $b,$ and $c$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers} and $c$ is not divisible by the \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square} of any \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}. Find $a+b+c.$
@@ -784,14 +695,7 @@ To begin with, we note that there are $2^6$ subsets of $S$(which we can assume i
 
  Thus, we get $144\pi - 64\pi + 96\sqrt{3} = 80\pi + 96\sqrt{3}$, and our answer is $\boxed{179}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2007}) The increasing \href{https://artofproblemsolving.com/wiki/index.php?title=Geometric\_sequence}{geometric sequence} $x_{0},x_{1},x_{2},\ldots$ consists entirely of \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integral} powers of $3.$ Given that
@@ -819,8 +723,6 @@ Let $y_n = \log_3 (x_n)$. The second equation tells us that $y_7 = 56$, since th
 
 
 
-
-
 \textbf{Solution 2}
 
 Suppose that $x_0 = a$, and that the common \href{https://artofproblemsolving.com/wiki/index.php?title=Ratio}{ratio} between the terms is $r$. 
@@ -838,15 +740,11 @@ Our solution is therefore $\log_3 (ar^{14}) = \log_3 3^x + \log_3 3^{14y} = x + 
 
 
 
-
-
 \textbf{Solution 3}
 
 All these integral powers of $3$ are all different, thus in base $3$ the sum of these powers would consist of $1$s and $0$s. Thus the largest value $x_7$ must be $3^{56}$ in order to preserve the givens. Then we find by the given that $x_7x_6x_5\dots x_0 = 3^{308}$, and we know that the exponents of $x_i$ are in an arithmetic sequence. Thus $56+(56-r)+(56-2r)+\dots +(56-7r) = 308$, and $r = 5$. Thus $\log_3 (x_{14}) = \boxed{091}$.
 
  
-
-
 
 
 
@@ -865,8 +763,6 @@ Like above, we use logarithmic identities to convert the problem into workable e
 
 
 
-
-
 \textbf{Solution 5 (dum)}
 
 Proceed as in Solution 3 for the first few steps. We have the sequence $3^{a},3^{a+n},3^{a+2n}...$. As stated above, we then get that $a+a+n+...+a+7n=308$, from which we simplify to $2a+7n=77$. From here, we just go brute force using the second statement (that $3^{56}\leq 3^{a}+...+3^{a+7n}\leq 3^{57}$). Rearranging the equation from earlier, we get
@@ -879,8 +775,6 @@ Proceed as in Solution 3 for the first few steps. We have the sequence $3^{a},3^
  \[1<2*3^{5}\]which confirms that this satisfies our upper bound. Thus $a=21,n=5$, so $x_14=3^{a+14n}\rightarrow3^{91}$. We then get the requested answer, $\log_3(3^{91})=\boxed{091}$ ~ amcrunner
 
  
-
-
 
 
 
@@ -902,8 +796,6 @@ Let $\log_3(x_n)=a_n$. Our goal is to find $a_{14}$. Since the sequence consists
  Therefore, \(a_{14}=56+7\cdot 5=\boxed{091}.\)
 
  
-
-
 
 
 	\item (\textit{AIME II 2007}) A \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangular} \href{https://artofproblemsolving.com/wiki/index.php?title=Array}{array} of \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{squares} has one square in the first row, two in the second, and in general, $k$ squares in the $k$th row for $1 \leq k \leq 11.$ With the exception of the bottom row, each square rests on two squares in the row immediately below (illustrated in given diagram). In each square of the eleventh row, a $0$ or a $1$ is placed. Numbers are then placed into the other squares, with the entry for each square being the sum of the entries in the two squares below it. For how many initial distributions of $0$'s and $1$'s in the bottom row is the number in the top square a \href{https://artofproblemsolving.com/wiki/index.php?title=Multiple}{multiple} of $3$?
@@ -946,8 +838,6 @@ Label each of the bottom squares as $x_0, x_1 \ldots x_9, x_{10}$.
 
 
 
-
-
 \textbf{Solution 2}
 
 If we label the bottom row of values $a_1,a_2,\ldots,a_11$ then the sum of the bottom row is $a_1+\ldots+a_11$, the sum of the second row is $a_1+2(a_2+\ldots+a_10)+a_11$ and this pattern continues until the top element is $(a_1+a_11)+2(a_2+a_10)+\ldots+4(a_5+a_7)+5a_6$. Then, the terms with coefficient 0 mod 3 can be anything, and we do casework on the other solutions mod 3. We get 640. ~joeythetoey
@@ -955,6 +845,7 @@ If we label the bottom row of values $a_1,a_2,\ldots,a_11$ then the sum of the b
  
 
 
+ 
 
 
 	\item (\textit{AIME II 2007}) Let $f(x)$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Polynomial}{polynomial} with real \href{https://artofproblemsolving.com/wiki/index.php?title=Coefficient}{coefficients} such that $f(0) = 1,$ $f(2)+f(3)=125,$ and for all $x$, $f(x)f(2x^{2})=f(2x^{3}+x).$ Find $f(5).$
@@ -988,8 +879,6 @@ Comment:The answer is clearly correct, but the proof has a gap, i.e. there is no
 
 
 
-
-
 \textbf{Solution * (Similar)}
 
 Let $\alpha$ be a root of $f(x)$, so $f(\alpha) = 0$. Substituting $\alpha$ into the given functional equation $f(x)f(2x^2) = f(2x^3+x)$ yields:
@@ -1014,8 +903,6 @@ Let $\alpha$ be a root of $f(x)$, so $f(\alpha) = 0$. Substituting $\alpha$ into
  \[f(5) = (5^2+1)^2 = 26^2 = \mathbf{676}\]
 
  
-
-
 
 
 
@@ -1047,8 +934,6 @@ Let $r$ be a root of $f(x).$ This means that $f(r)f(2r^2)=f(2r^3+r).$ In other w
 
 
 
-
-
 \textbf{Solution 3 (Hope and Cheese)}
 
 We find $f(1)f(2)=f(3)$, so 
@@ -1059,14 +944,7 @@ We find $f(1)f(2)=f(3)$, so
  Thus, so does $f$, and our answer is 
  \[f(5)=g(5)^2=(5^2+1)^2=\boxed{676}\]
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2007}) Four \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circles} $\omega,$ $\omega_{A},$ $\omega_{B},$ and $\omega_{C}$ with the same \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} are drawn in the interior of \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} $ABC$ such that $\omega_{A}$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent}{tangent} to sides $AB$ and $AC$, $\omega_{B}$ to $BC$ and $BA$, $\omega_{C}$ to $CA$ and $CB$, and $\omega$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Externally\_tangent}{externally tangent} to $\omega_{A},$ $\omega_{B},$ and $\omega_{C}$. If the sides of triangle $ABC$ are $13,$ $14,$ and $15,$ the radius of $\omega$ can be represented in the form $\frac{m}{n}$, where $m$ and $n$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime} positive integers. Find $m+n.$
@@ -1094,8 +972,6 @@ We find $f(1)f(2)=f(3)$, so
 \href{https://latex.artofproblemsolving.com/9/4/7/947b7f06d947dbf8bc5d8f61cdd193c330377372.png}{https://latex.artofproblemsolving.com/9/4/7/947b7f06d947dbf8bc5d8f61cdd193c330377372.png}
 
  
-
-
 
 
 
@@ -1146,8 +1022,6 @@ We find $f(1)f(2)=f(3)$, so
 
 
 
-
-
 \textbf{Solution 3 (elementary)}
 
 Let $A'$, $B'$, $C'$, and $O$ be the centers of circles $\omega_{A}$, $\omega_{B}$, $\omega_{C}$, $\omega$, respectively, and let $x$ be their radius.
@@ -1165,8 +1039,6 @@ Let $A'$, $B'$, $C'$, and $O$ be the centers of circles $\omega_{A}$, $\omega_{B
 
 
 
-
-
 \textbf{Solution 4}
 
 According to the diagram, it is easily to see that there is a small triangle made by the center of three circles which aren't in the middle. The circumradius of them is$2r$. Now denoting $AB=13;BC=14;AC=15$, and centers of circles tangent to $AB,AC;AC,BC;AB,BC$ are relatively $M,N,O$ with $OJ,NK$ both perpendicular to $BC$. It is easy to know that $tanB=\frac{12}{5}$, so $tan\angle OBJ=\frac{2}{3}$ according to half angle formula. Similarly, we can find $tan\angle NCK=\frac{1}{2}$. So we can see that $JK=ON=14-\frac{7x}{2}$. Obviously, $\frac{2x}{14-\frac{7x}{2}}=\frac{65}{112}$ . After solving, we get$x=\frac{260}{129}$, so our answer is $260+129=\boxed{389}$. ~bluesoul
@@ -1176,8 +1048,6 @@ According to the diagram, it is easily to see that there is a small triangle mad
  \[\frac{abc\cdot K}{8K^{2}+sabc},\] where $K$ is the area of the triangle and $s$ is the semiperimeter
 
  
-
-
 
 
 
@@ -1212,8 +1082,6 @@ According to the diagram, it is easily to see that there is a small triangle mad
 
 
 
-
-
 \textbf{Solution 6}
 
 Let the radius of $\omega$ be $r$, let the centers of $\omega_A$, $\omega_B$, and $\omega_C$ be $O_A$, $O_B$, and $O_C$, respectively, and let the feet of the altitudes from $O_A$ and $O_C$ onto $AC$ be $X$ and $Y$, respectively. Now, observe that $\triangle O_AO_BO_C$ has all its sides parallel to the sides of $\triangle ABC$, so the two triangles are similar. Then, we get\begin{align*}AC&=AX+XY+YC,\\15&=r\cot\frac{\angle A}{2}+O_AO_C+r\cot\frac{\angle C}{2},\\15&=r\sqrt{\frac{1+\cos A}{1-\cos A}}+4r\sin\angle B+r\sqrt{\frac{1+\cos C}{1-\cos C}},\\15&=r\sqrt{\frac{65+33}{65-33}}+\frac{48}{13}r+r\sqrt{\frac{5+3}{5-3}},\\r&=\frac{15}{\frac 74+\frac{48}{13}+2}\\&=\boxed{\frac{260}{129}}.\,\square\\\end{align*}
@@ -1222,14 +1090,7 @@ Let the radius of $\omega$ be $r$, let the centers of $\omega_A$, $\omega_B$, an
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 \end{enumerate}

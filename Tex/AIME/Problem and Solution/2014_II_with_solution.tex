@@ -16,8 +16,6 @@ From the given information, we can see that Abe can paint $\frac{1}{15}$ of the 
  
 
 
-
-
 	\item (\textit{AIME II 2014}) Arnold is studying the prevalence of three health risk factors, denoted by A, B, and C, within a population of men. For each of the three factors, the probability that a randomly selected man in the population has only this risk factor (and none of the others) is 0.1. For any two of the three factors, the probability that a randomly selected man has exactly these two risk factors (but not the third) is 0.14. The probability that a randomly selected man has all three risk factors, given that he has A and B is $\frac{1}{3}$. The probability that a man has none of the three risk factors given that he does not have risk factor A is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$. 
 
 
@@ -43,8 +41,6 @@ We first assume a population of $100$ to facilitate solving. Then we simply orga
  \[y= 100 - 3 \cdot 10 - 3 \cdot 14 - 7 = 21.\]The number of men with risk factor A is $10+2 \cdot 14+7 = 45$ (10 with only A, 28 with A and one of the others, and 7 with all three).  Thus the number of men without risk factor $A$ is 55, so the desired conditional probability is $21/55$.  So the answer is $21+55=\boxed{076}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) A rectangle has sides of length $a$ and 36. A hinge is installed at each vertex of the rectangle, and at the midpoint of each side of length 36. The sides of length $a$ can be pressed toward each other keeping those two sides parallel so the rectangle becomes a convex hexagon as shown. When the figure is a hexagon with the sides of length $a$ parallel and separated by a distance of 24, the hexagon has the same area as the original rectangle. Find $a^2$. 
@@ -83,15 +79,11 @@ When we squish the rectangle, the hexagon is composed of a rectangle and two iso
 
 
 
-
-
 \textbf{Solution 2}
 
 Alternatively, use basic geometry. First, scale everything down by dividing everything by 6. Let $a/6=p$. Then, the dimensions of the central rectangle in the hexagon is p x 4, and the original rectangle is 6 x p. By Pythagorean theorem and splitting the end triangles of the hexagon into two right triangles, the altitude of the end triangles is $\sqrt{3^2-2^2}=\sqrt{5}$ given 2 as the base of the constituent right triangles. The two end triangles form a large rectangle of area $\sqrt{5}$ x $4$. Then, the area of the hexagon is $4p+4\sqrt{5}$, and the area of the rectangle is $6p$. Equating them, $p=2\sqrt{5}$. Multiply by scale factor of 6 and square it to get $36(20)= 720 \implies a^2=\boxed{720}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) The repeating decimals $0.abab\overline{ab}$ and $0.abcabc\overline{abc}$ satisfy 
@@ -146,16 +138,12 @@ Notice repeating decimals can be written as the following:
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that $\frac{33}{37}=\frac{891}{999} = 0.\overline{891}$.  Also note that the period of $0.abab\overline{ab}+0.abcabc\overline{abc}$ is at most $6$.  Therefore, we only need to worry about the sum $0.ababab+ 0.abcabc$.  Adding the two, we get
  \[\begin{array}{ccccccc}&a&b&a&b&a&b\\ +&a&b&c&a&b&c\\ \hline &8&9&1&8&9&1\end{array}\]From this, we can see that $a=4$, $b=4$, and $c=7$, so our desired answer is $\boxed{447}$
 
  
-
-
 
 
 
@@ -190,8 +178,6 @@ Noting as above that $0.\overline{ab} = \frac{10a + b}{99}$ and $0.\overline{abc
 
 
 
-
-
 \textbf{Solution 4}
 
 We note as above that $0.\overline{ab} = \frac{10a + b}{99}$ and $0.\overline{abc} = \frac{100a + 10b + c}{999},$ so
@@ -207,8 +193,6 @@ We note as above that $0.\overline{ab} = \frac{10a + b}{99}$ and $0.\overline{ab
  Then $111a + 110a + c = 891,$ or $221a + c = 891.$ Thus $a = b = 4$ and $c = 7,$ so the three-digit integer $abc$ is $\boxed{447}.$
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) Real numbers $r$ and $s$ are roots of $p(x)=x^3+ax+b$, and $r+4$ and $s-3$ are roots of $q(x)=x^3+ax+b+240$. Find the sum of all possible values of $|b|$.
@@ -228,8 +212,6 @@ Because the coefficient of $x^2$ in both $p(x)$ and $q(x)$ is 0, the remaining r
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $r$, $s$, and $-r-s$ be the roots of $p(x)$ (per Vieta's). Then $r^3 + ar + b = 0$ and similarly for $s$. Also,
@@ -246,8 +228,6 @@ Let $r$, $s$, and $-r-s$ be the roots of $p(x)$ (per Vieta's). Then $r^3 + ar + 
  \[s = \frac{13 + 5r}{2}.\]Substitution into (*) should give $r = -5$ and $r = 1$, corresponding to $s = -6$ and $s = 9$, and $|b| = 330, 90$, for an answer of $\boxed{420}$.
 
  
-
-
 
 
 
@@ -284,8 +264,6 @@ The roots of $p(x)$ are $r$, $s$, and $-r-s$ since they sum to $0$ by Vieta's Fo
 
 
 
-
-
 \textbf{Solution 4}
 
 By Vieta's, we know that the sum of roots of $p(x)$ is $0$. Therefore,the roots of $p$ are $r, s, -r-s$. By similar reasoning, the roots of $q(x)$are $r + 4, s - 3, -r - s - 1$. Thus, $p(x) = (x - r)(x - s)(x + r + s)$and $q(x) = (x - r - 4)(x - s + 3)(x + r + s + 1)$.
@@ -299,8 +277,6 @@ By Vieta's, we know that the sum of roots of $p(x)$ is $0$. Therefore,the roots 
 This tells us that $(r, s) = (1, 9)$ or $(-5, -6)$. Since $-b$ is the product of the roots, we have that the two possibilities are $1 \cdot 9 \cdot (-10) = -90$and $(-5)(-6)11 = 330$. Adding the absolute values of these gives us$\boxed{420}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) Charles has two six-sided dice. One of the die is fair, and the other die is biased so that it comes up six with probability $\frac{2}{3}$ and each of the other five sides has probability $\frac{1}{15}$. Charles chooses one of the two dice at random and rolls it three times. Given that the first two rolls are both sixes, the probability that the third roll will also be a six is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$. 
@@ -322,8 +298,6 @@ The probability that he rolls a six twice when using the fair die is $\frac{1}{6
 
 
 
-
-
 \textbf{Solution 2 (Official Solution)}
 
 This is an incredibly simple problem if one is familiar with conditional probability (SO BE FAMILIAR WITH IT)! The conditional probability that the third roll will be a six given that the first two rolls are sixes, is the conditional probability that Charles rolls three sixes given that his first two rolls are sixes. This is thus $\frac{\frac{1}{2}(\frac{2}{3})^3+\frac{1}{2}(\frac{1}{6})^3}{\frac{1}{2}(\frac{2}{3})^2+\frac{1}{2}(\frac{1}{6})^2}= \frac{65}{102}$. The answer is therefore $65+102= \boxed {167}$.
@@ -331,8 +305,6 @@ This is an incredibly simple problem if one is familiar with conditional probabi
  Note: I have just found out that this is also the official solution. So I did not STEAL it, but as a coincidence, have come across the EXACT SAME SOLUTION. LIKE EXACTLY THE SAME. I AM SLIGHTLY FRIGHTENED. :/
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) Let $f(x)=(x^2+3x+2)^{\cos(\pi x)}$. Find the sum of all positive integers $n$ for which 
@@ -377,8 +349,6 @@ First, let's split it into two cases to get rid of the absolute value sign
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that $\cos(\pi x)$ is $-1$ when $x$ is odd and $1$ when $x$ is even.  Also note that $x^2+3x+2=(x+1)(x+2)$ for all $x$.  Therefore
@@ -388,8 +358,6 @@ Note that $\cos(\pi x)$ is $-1$ when $x$ is odd and $1$ when $x$ is even.  Also 
  \[\sum_{k=1}^n\log_{10}f(k)= -\log_{10}(n+2)-\log_{10}2=-\log_{10}2(n+2)\ \ \ \text{if }n \text{ is odd}\]Setting each of the above quantities to $1$ and $-1$ and solving for $n$, we get possible values of $n=3$ and $n=18$ so our desired answer is $3+18=\boxed{021}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) Circle $C$ with radius 2 has diameter $\overline{AB}$. Circle $D$ is internally tangent to circle $C$ at $A$. Circle $E$ is internally tangent to circle $C$, externally tangent to circle $D$, and tangent to $\overline{AB}$. The radius of circle $D$ is three times the radius of circle $E$, and can be written in the form $\sqrt{m}-n$, where $m$ and $n$ are positive integers. Find $m+n$.
@@ -402,14 +370,16 @@ Note that $\cos(\pi x)$ is $-1$ when $x$ is odd and $1$ when $x$ is even.  Also 
 
 \textbf{Solution 1}
 
-<center>
+
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2014_8_Solution_Figure_1.png}
                     \end{figure}
                     
 
- </center>Using the diagram above, let the radius of $D$ be $3r$, and the radius of $E$ be $r$. Then, $EF=r$, and $CE=2-r$, so the Pythagorean theorem in $\triangle CEF$ gives $CF=\sqrt{4-4r}$. Also, $CD=CA-AD=2-3r$, so 
+ 
+
+ Using the diagram above, let the radius of $D$ be $3r$, and the radius of $E$ be $r$. Then, $EF=r$, and $CE=2-r$, so the Pythagorean theorem in $\triangle CEF$ gives $CF=\sqrt{4-4r}$. Also, $CD=CA-AD=2-3r$, so 
  \[DF=DC+CF=2-3r+\sqrt{4-4r}.\] Noting that $DE=4r$, we can now use the Pythagorean theorem in $\triangle DEF$ to get 
  \[(2-3r+\sqrt{4-4r})^2+r^2=16r^2.\]
 
@@ -425,8 +395,6 @@ Note that $\cos(\pi x)$ is $-1$ when $x$ is odd and $1$ when $x$ is even.  Also 
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider a reflection of circle $E$ over diameter $\overline{AB}$. By symmetry, we now have three circles that are pairwise externally tangent and all internally tangent to a large circle. The small circles have radii $r$, $r$, and $3r$, and the big circle has radius $2$. 
@@ -436,8 +404,6 @@ Consider a reflection of circle $E$ over diameter $\overline{AB}$. By symmetry, 
  Note that the big circle has curvature $-\frac12$ because it is internally tangent. Solving gives $3r=\sqrt{240}-14$ for a final answer of $\boxed{254}$.
 
  
-
-
 
 
 
@@ -452,15 +418,11 @@ We use the notation of Solution 1 for triangle $\triangle DEC$
 
 
 
-
-
 \textbf{Solution 4}
 
 This problem can be very easily solved using Descartes' Circle Theorem. It states that if we have 4 circles that are all tangent with each other, $(k_1 + k_2 + k_3 + k_4)^{2} = 2(k_1^{2} + k_2^{2} + k_3^{2} + k_4^{2})$, where $k_i$ is the curvature of circle $i$, meaning $k_i = \dfrac{1}{r}$. When three of the circles are internally tangent to the fourth one, the fourth circle has a negative curvature. Suppose we reflect Circle $E$ over $\overline{AB}$. Now, we have our four circles to apply that theorem. First, lets scale our image down such that Circle $C$ has radius $1$, for ease of computation. Let the radius of Circle $D$ be $r$, so Circle $E$ has radius $\dfrac{r}{3}$. Then, we have that $(-1 + \dfrac{1}{r} + \dfrac{3}{r} + \dfrac{3}{r})^{2} = 2(1 + \dfrac{1}{r^{2}} + \dfrac{9}{r^{2}} + \dfrac{9}{r^{2}})$. This simplifies to $\dfrac{49}{r^{2}} - \dfrac{14}{r} + 1 = \dfrac{2r^{2} + 38}{r^{2}}$. Multiplying both sides by $r^{2}$, we get that $49 - 14r + r^{2} = 2r^{2} + 38$, or $r^2 + 14r - 11 = 0$. We get $r = -7 \pm 2\sqrt{15}$, but we want the positive solution, which is $r = 2\sqrt{15} - 7$. We have to rescale back up, so we get $r = 4\sqrt{15} - 14 = \sqrt{240} - 14$, so we get that our answer is $240 + 14 = \boxed{254}$.~Puck\_0
 
  
-
-
 
 
 
@@ -473,8 +435,6 @@ This solution focuses on the area of $\triangle DEC$. Because $EF$ is perpendicu
  \[\sqrt{6r^2(2-4r)} = \frac{1}{2}r(2-3r).\]This simplifies to the quadratic equation $0 = 9r^2+84r-44$. Remember that we are solving for $3r$, which we will set equal to $x$. Then we now have the equation $0 = x^2 +28x - 44$. Applying the quadratic formula, we get $x=-14 \pm 4\sqrt{15}$. We want the positive solution, so we take $4\sqrt{15}-14 = \sqrt{240}-14$. Our answer is therefore $240 + 14 = \boxed{254}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) Ten chairs are arranged in a circle. Find the number of subsets of this set of chairs that contain at least three adjacent chairs.
@@ -493,8 +453,6 @@ We know that a subset with less than $3$ chairs cannot contain $3$ adjacent chai
 
 
 
-
-
 \textbf{Solution 2 (PIE)}
 
 Starting with small cases, we see that four chairs give $4 + 1 = 5$, five chairs give $5 + 5 + 1 = 11$, and six chairs give $6 + 6 + 6 + 6 + 1 = 25.$ Thus, n chairs should give $n 2^{n-4} + 1$, as confirmed above. This claim can be verified by the principle of inclusion-exclusion: there are $n 2^{n-3}$ ways to arrange $3$ adjacent chairs, but then we subtract $n 2^{n-4}$ ways to arrange $4.$ Finally, we add $1$ to account for the full subset of chairs. Thus, for $n = 10$ we get a first count of $641.$
@@ -502,8 +460,6 @@ Starting with small cases, we see that four chairs give $4 + 1 = 5$, five chairs
  However, we overcount cases in which there are two distinct groups of three or more chairs. We have $5$ cases for two groups of $3$ directly opposite each other, $5$ for two groups of four, $20$ for two groups of $3$ not symmetrically opposite, $20$ for a group of $3$ and a group of $4$, and $10$ for a group of $3$ and a group of $5.$ Thus, we have $641 - 60 = \boxed{581}$.
 
  
-
-
 
 
 
@@ -517,15 +473,11 @@ It is possible to use recursion to count the complement. Number the chairs $1, 2
 
 
 
-
-
 \textbf{Solution 4}
 
 Let's calculate the complement. As mentioned in solution $3$, the number of ways to have a subset $n$ chairs in a line with no 3 consectuive chairs satisfies $T_n = T_{n-1} + T_{n-2} + T_{n-3}$. Setting $T_{1} = 2, T_{2} = 4$, and $T_{3} = 7$, we get that $T_{10} = 504$. Since this is in a line and not a circle, we must subtract the cases that would include 3 consecutive chairs if the endpoints of the line were put together. If chairs $1$, $2$ and $10$ are in the subset, that would not work. The same goes for if chairs $1$, $9$ and $10$ were in the subset. If chairs $1$, $2$ and $10$ are in the set then chair $3$ must not be in the set. However, chair $9$ could be in or not in the set because we only want to count what cases where no $3$ chairs are consecutive in the line but there would be consecutive chairs in a circle. If chair $9$ is not included, there are $T_{5} = 24$ ways. If chair $9$ is in the set then there are $T_{4} = 13$ ways. So we must subtract $2 \cdot (24 + 13) = 74$ However we are counting the case where chairs $1$, $2$, $9$ and $10$ are included twice. So we only have to subtract $74 - 13 = 61$. $504 - 61 = 443$. This entire time we were calculating the complement so $2^{10} - 443 = \fbox{581}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) Let $z$ be a complex number with $|z|=2014$. Let $P$ be the polygon in the complex plane whose vertices are $z$ and every $w$ such that $\frac{1}{z+w}=\frac{1}{z}+\frac{1}{w}$. Then the area enclosed by $P$ can be written in the form $n\sqrt{3}$, where $n$ is an integer. Find the remainder when $n$ is divided by $1000$. 
@@ -543,8 +495,6 @@ Notice that
  \[[P]=\frac{3}{2}\cdot 2014^2\cdot\sin\frac{\pi}3=3\cdot 1007^2\sqrt3,\]and the answer is $3\cdot 1007^2\equiv 3\cdot 7^2\equiv\boxed{147}\pmod{1000}$.
 
  
-
-
 
 
 
@@ -585,8 +535,6 @@ Note that the given equality reduces to
 
 
 
-
-
 \textbf{Solution 3 (short)}
 
 Assume $z = 2014$. Then
@@ -613,8 +561,6 @@ Assume $z = 2014$. Then
 
 
 
-
-
 \textbf{Solution 4}
 
 I find that generally, the trick to these kinds of AIME problems is to interpret the problem geometrically, and that is just what I did here.  Looking at the initial equation, this seems like a difficult task, but rearranging yields a nicer equation:
@@ -630,8 +576,6 @@ I find that generally, the trick to these kinds of AIME problems is to interpret
 
 
  
-
-
 
 
 	\item (\textit{AIME II 2014}) In $\triangle RED$, $\measuredangle DRE=75^{\circ}$ and $\measuredangle RED=45^{\circ}$. $RD=1$. Let $M$ be the midpoint of segment $\overline{RD}$. Point $C$ lies on side $\overline{ED}$ such that $\overline{RC}\perp\overline{EM}$. Extend segment $\overline{DE}$ through $E$ to point $A$ such that $CA=AR$. Then $AE=\frac{a-\sqrt{b}}{c}$, where $a$ and $c$ are relatively prime positive integers, and $b$ is a positive integer. Find $a+b+c$.
@@ -657,8 +601,6 @@ Let $P$ be the foot of the perpendicular from $A$ to $\overline{CR}$, so $\overl
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $MP = x.$ Meanwhile, since $\triangle R PM$ is similar to $\triangle RCD$ (angle, side, and side- $RP$ and $RC$ ratio), $CD$ must be 2$x$. Now, notice that $AE$ is $x$, because of the parallel segments $\overline A\overline E$ and $\overline P\overline M$.
@@ -670,8 +612,6 @@ Let $MP = x.$ Meanwhile, since $\triangle R PM$ is similar to $\triangle RCD$ (a
  We got the three sides of $\triangle AER$. Now using the Law of Cosines on $\angle AER$. There we can equate $x$ and solve for it. We got $AE=x=\frac{\sqrt{3}-1}{4\sqrt{3}+2}$. Then rationalize the denominator, we get $AE = \frac{7 - \sqrt{27}}{22}$.
 
  
-
-
 
 
 
@@ -696,8 +636,6 @@ Let $P$ be the foot of the perpendicular from $A$ to $\overline{CR}$, so $\overl
 
 
 
-
-
 \textbf{Solution 4 (No intuition)}
 
 Define the foot of the altitude from $R$ to $ED$ as $X.$ Suppose the median $EM$ is equal to $m,$ and the angle $\angle{MED}$ as $\theta.$ Using the Law of Cosines in triangle $EDM,$ we get $m^2=1+\frac{\sqrt{3}}{4}.$ By Law of Sines in $EMD,$ $\frac{m}{\sin{60^{\circ}}} = \frac{\frac{1}{2}}{\sin\theta}.$ This gives $\sin\theta = \frac{\sqrt{3}}{4m},$ and solving for $\cos\theta$ gives $\cos\theta = \sqrt{1-\frac{3}{16m^2}} = \frac{\sqrt{16m^2-3}}{4m}.$ Using the established value of $m^2,$ we have $\cos{\theta} = \frac{\sqrt{13+4\sqrt{3}}}{4m} = \frac{1+2\sqrt{3}}{4m}.$ Thus, we have $\tan\theta = \frac{\sqrt{3}}{1+2\sqrt{3}}.$ Noting that $\angle{XRC}=\theta$ as well, this gives $CX = RX \tan \theta = \frac{\sqrt{3}}{2} \cdot \frac{\sqrt{3}}{1+2\sqrt{3}} = \frac{3}{2+4\sqrt{3}}.$ Suppose $AE=n.$ Now, using Pythagorean in triangle $AXR$ gives 
@@ -707,11 +645,6 @@ Define the foot of the altitude from $R$ to $ED$ as $X.$ Suppose the median $EM$
  \[2n + \frac{3}{2+4\sqrt{3}} = \frac{1}{2}.\]Isolating $2n$ and rationalizing the denominator returns the final answer of $n=\frac{7-\sqrt{27}}{22},$ thus giving an answer of $\boxed{056}.$
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2014}) Suppose that the angles of $\triangle ABC$ satisfy $\cos(3A)+\cos(3B)+\cos(3C)=1$. Two sides of the triangle have lengths 10 and 13. There is a positive integer $m$ so that the maximum possible length for the remaining side of $\triangle ABC$ is $\sqrt{m}$. Find $m$. 
@@ -760,8 +693,6 @@ Note: We can get $x=-y$ from $(1+x)(1+y) = (1-x)(1-y)$, and plugging in $\cos{3A
 
 
 
-
-
 \textbf{Solution 2}
 
 WLOG, let C be the largest angle in the triangle.
@@ -802,8 +733,6 @@ WLOG, let C be the largest angle in the triangle.
 
 
 
-
-
 \textbf{Solution 3}
 
 
@@ -818,8 +747,6 @@ WLOG, let C be the largest angle in the triangle.
 
 
 
-
-
 \textbf{Solution 4(Fakesolve)}
 
 Let $BC$ be the unknown side length. By Law of Cosines we have that $BC = \sqrt{269-260\cos{A}}$. We notice that $\cos{A}$ should be negative to optimize $BC$ so $A$ is between $90$ and $180$ degrees. We also know that the value inside the square root is an integer $m$, so $269-260\cos{A}$ should be an integer. We can then assume that $A$ is $120$ degrees so $\cos{A} = \frac{-1}{2}$. We do this because $120$ degrees is a "common" value and it makes the value inside the square root an integer. Plugging this into $269-260\cos{A}$ for $m$ we get that it is $\boxed{399}$. 
@@ -827,11 +754,6 @@ Let $BC$ be the unknown side length. By Law of Cosines we have that $BC = \sqrt{
  -srisainandan6
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME II 2014}) Ten adults enter a room, remove their shoes, and toss their shoes into a pile. Later, a child randomly pairs each left shoe with a right shoe without regard to which shoes belong together. The probability that for every positive integer $k<5$, no collection of $k$ pairs made by the child contains the shoes from exactly $k$ of the adults is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$. 
@@ -864,16 +786,7 @@ The first case yields $9!$ working pairings. The second case yields $\frac{{10\c
  
 
 
- MathProblemSolvingSkills.com
-
  
-
-
- \textbf{Article/Blog post solution} \href{https://www.commonsensiblemath.com/the-power-of-graphing-2014-aime-ii-p13/}{https://www.commonsensiblemath.com/the-power-of-graphing-2014-aime-ii-p13/}
-
- 
-
-
 
 
 	\item (\textit{AIME II 2014}) In $\triangle ABC$, $AB=10$, $\measuredangle A=30^{\circ}$, and $\measuredangle C=45^{\circ}$. Let $H$, $D$, and $M$ be points on line $\overline{BC}$ such that $AH\perp BC$, $\measuredangle BAD=\measuredangle CAD$, and $BM=CM$. Point $N$ is the midpoint of segment $HM$, and point $P$ is on ray $AD$ such that $PN\perp BC$. Then $AP^2=\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -896,8 +809,6 @@ First, $\triangle DNP \sim \triangle DHA$, so
 
 
 
-
-
 \textbf{Solution 2}
 
 Let us just drop the perpendicular from $B$ to $AC$ and label the point of intersection $O$. We will use this point later in the problem.As we can see, $M$ is the midpoint of $BC$ and $N$ is the midpoint of $HM$,$AHC$ is a $45-45-90$ triangle, so $\angle{HAB}=15^\circ$.$AHD$ is $30-60-90$ triangle.
@@ -914,8 +825,6 @@ Let us just drop the perpendicular from $B$ to $AC$ and label the point of inter
 
 
 
-
-
 \textbf{Solution 3}
 
 Here's a solution that doesn't need $\sin 15^\circ$.
@@ -923,8 +832,6 @@ Here's a solution that doesn't need $\sin 15^\circ$.
  As above, get to $AP=HM$.  As in the figure, let $O$ be the foot of the perpendicular from $B$ to $AC$.  Then $BCO$ is a 45-45-90 triangle, and $ABO$ is a 30-60-90 triangle.  So $BO=5$ and $AO=5\sqrt{3}$; also, $CO=5$, $BC=5\sqrt2$, and $MC=\dfrac{BC}{2}=5\dfrac{\sqrt2}{2}$.  But $MO$ and $AH$ are parallel, both being orthogonal to $BC$.  Therefore $MH:AO=MC:CO$, or $MH=\dfrac{5\sqrt3}{\sqrt2}$, and we're done.
 
  
-
-
 
 
 
@@ -945,8 +852,6 @@ Break our diagram into 2 special right triangle by dropping an altitude from $B$
 
 
 
-
-
 \textbf{Solution 5}
 
 
@@ -957,8 +862,6 @@ Break our diagram into 2 special right triangle by dropping an altitude from $B$
                     Draw the $45-45-90 \triangle AHC$. Now, take the perpendicular bisector of $BC$ to intersect the circumcircle of $\triangle ABC$ and $AC$ at $F, L, G$ as shown, and denote $O$ to be the circumcenter of $\triangle ABC$. It is not difficult to see by angle chasing that $AHBGO$ is cyclic, namely with diameter $AB$. Then, by symmetry, $EH = HB$ and as $HB, OG$ are both subtended by equal arcs they are equal. Hence, $EH = GO$. Now, draw line $HL$ and intersect it at $AC$ at point $K$ in the diagram. It is not hard to use angle chase to arrive at $AEOL$ a parallelogram, and from our length condition derived earlier, $AL \parallel HG$. From here, it is clear that $AK = KG$; that is, $P$ is just the intersection of the perpendicular from $K$ down to $BC$ and $AD$! After this point, note that $AP = PF$. It is easily derived that the circumradius of $\triangle ABC$ is $\frac{10}{\sqrt{2}}$. Now, $APO$ is a $30-60-90$ triangle, and from here it is easy to arrive at the final answer of $\boxed{077}$. ~awang11's sol
 
  
-
-
 
 
 
@@ -990,8 +893,6 @@ Break our diagram into 2 special right triangle by dropping an altitude from $B$
  
 
 
-
-
 	\item (\textit{AIME II 2014}) For any integer $k\geq 1$, let $p(k)$ be the smallest prime which does not divide $k$. Define the integer function $X(k)$ to be the product of all primes less than $p(k)$ if $p(k)>2$, and $X(k)=1$ if $p(k)=2$. Let $\{x_n\}$ be the sequence defined by $x_0=1$, and $x_{n+1}X(x_n)=x_np(x_n)$ for $n\geq 0$. Find the smallest positive integer $t$ such that $x_t=2090$. 
 
 
@@ -1008,9 +909,9 @@ Note that for any $x_i$, for any prime $p$, $p^2 \nmid x_i$.  This provides moti
 
  Multiplication for the sequence $x_i$ will translate to addition for the sequence $y_i$. Thus, we see that $x_{n+1}X(x_n) = x_np(x_n)$ translates into $y_{n+1} = y_n+1$. Since $x_0=1$, and $y_0=0$, $x_i$ corresponds to $y_i$, which is $i$ in binary. Since $x_{10010101_2} = 2 \cdot 5 \cdot 11 \cdot 19 = 2090$, $t = 10010101_2$ = $\boxed{149}$.
 
+ Note: Just to clarify the step when we do the conversion $x_{n+1}X(x_n) = x_np(x_n)$ we are able to do it because adding 1 is equivalent to having one more factor of 2, adding 2 is equivalent to having one more factor of 3 and so on, and since we know there will be at most one factor of any prime, we can stay in binary, with each prime getting its own slot. Using this, we can see that $X(x_n)$ corresponds to truncating $x_n$ in our binary-prime form to the last digits which are only ones, while $p(x_n)$ corresponds to adding in a 1 to the first spot in our binary-prime form which does not have a 1. Dividing by $X(x_n)$ will remove all of the 1s in the front and add a 1 in the first 0, which is directly behind all of the 1s that dividing by $X(x_n)$ just removed. This is exactly how regular binary addition works, and thus $x_{n+1} = x_n + 1$ in the binary representation.
+
  
-
-
 
 
 
@@ -1044,8 +945,6 @@ We go through the terms and look for a pattern. We find that
 
 
 
-
-
 \textbf{Solution 3 (induction)}
 
 Let $P_k$ denote the $k$th prime.Lemma: $x_{n+2^{k-1}} = P_k \cdot x_{n}$ for all $0 \leq n \leq 2^{k-1} - 1.$
@@ -1061,11 +960,6 @@ Let $P_k$ denote the $k$th prime.Lemma: $x_{n+2^{k-1}} = P_k \cdot x_{n}$ for al
 
 
  
-
-
- 
-
-
 
 
 \end{enumerate}

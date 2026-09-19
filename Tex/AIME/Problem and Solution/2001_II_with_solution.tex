@@ -23,8 +23,6 @@ The two-digit perfect squares are $16, 25, 36, 49, 64, 81$. We try making a sequ
  
 
 
-
-
 	\item (\textit{AIME II 2001}) Each of the 2001 students at a high school studies either Spanish or French, and some study both. The number who study Spanish is between 80 percent and 85 percent of the school population, and the number who study French is between 30 percent and 40 percent. Let $m$ be the smallest number of students who could study both languages, and let $M$ be the largest number of students who could study both languages. Find $M-m$. 
 
 
@@ -53,8 +51,6 @@ Let $S$ be the number of people who study Spanish, $F$ be the number of people w
  Therefore, the answer is $M - m = 499 - 201 = \boxed{298}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2001}) Given that
@@ -86,8 +82,6 @@ We find that $x_5 = 267$ by the recursive formula. Summing the \href{https://art
 
 
 
-
-
 \textbf{Solution Variant}
 
 The recursive formula suggests telescoping. Indeed, if we add $x_n$ and $x_{n-1}$, we have $x_n + x_{n-1} = (x_{n-1} - x_{n-2} + x_{n-3} - x_{n-4}) + (x_{n-2} - x_{n-3} + x_{n-4} - x_{n-5}) = x_{n-1} - x_{n-5}$. 
@@ -114,8 +108,6 @@ The recursive formula suggests telescoping. Indeed, if we add $x_n$ and $x_{n-1}
  
 
 
-
-
 	\item (\textit{AIME II 2001}) Let $R = (8,6)$. The lines whose equations are $8y = 15x$ and $10y = 3x$ contain points $P$ and $Q$, respectively, such that $R$ is the midpoint of $\overline{PQ}$. The length of $PQ$ equals $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
@@ -131,11 +123,11 @@ The recursive formula suggests telescoping. Indeed, if we add $x_n$ and $x_{n-1}
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_4_Solution_Figure_1.png}
                     \end{figure}
-                    The coordinates of $P$ can be written as $\left(8a, 15a\right)$ and the coordinates of point $Q$ can be written as $\left(10b, 3b\right)$. By the midpoint formula, we have $8a+10b=16$ and $15a+3b=12$. Substituting $b=4-5a$ we derive $a = \frac{4}{7}$ and $b = \frac{8}{7}$. Thus $P$ is $\left(\frac{32}7, \frac{60}7\right)$, Q is $\left(\frac{80}7, \frac{24}7\right)$, and the coordinates form a 3-4-5 triangle dilated by $\frac{12}7$. Finally the distance $PQ$ must be $\frac{60}{7}$ so the answer is $\boxed{067}$.
+                    
+
+ The coordinates of $P$ can be written as $\left(8a, 15a\right)$ and the coordinates of point $Q$ can be written as $\left(10b, 3b\right)$. By the midpoint formula, we have $8a+10b=16$ and $15a+3b=12$. Substituting $b=4-5a$ we derive $a = \frac{4}{7}$ and $b = \frac{8}{7}$. Thus $P$ is $\left(\frac{32}7, \frac{60}7\right)$, Q is $\left(\frac{80}7, \frac{24}7\right)$, and the coordinates form a 3-4-5 triangle dilated by $\frac{12}7$. Finally the distance $PQ$ must be $\frac{60}{7}$ so the answer is $\boxed{067}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2001}) A set of positive numbers has the $triangle~property$ if it has three distinct elements that are the lengths of the sides of a triangle whose area is positive. Consider sets $\{4, 5, 6, \ldots, n\}$ of consecutive positive integers, all of whose ten-element subsets have the triangle property. What is the largest possible value of $n$?
@@ -160,8 +152,6 @@ Out of all ten-element subsets with distinct elements that do not possess the tr
  
 
 
-
-
 	\item (\textit{AIME II 2001}) Square $ABCD$ is inscribed in a circle. Square $EFGH$ has vertices $E$ and $F$ on $\overline{CD}$ and vertices $G$ and $H$ on the circle. The ratio of the area of square $EFGH$ to the area of square $ABCD$ can be expressed as $\frac {m}{n}$ where $m$ and $n$ are relatively prime positive integers and $m < n$. Find $10n + m$.
 
 
@@ -179,7 +169,9 @@ Begin by drawing another square congruent to $EFGH$ but on side $AB$ instead of 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_6_Solution_Figure_1.png}
                     \end{figure}
-                    By Power of a Point on point $F$, we find that 
+                    
+
+ By Power of a Point on point $F$, we find that 
 
  
  \[FC \cdot FD = FG \cdot FJ\]
@@ -188,8 +180,6 @@ Begin by drawing another square congruent to $EFGH$ but on side $AB$ instead of 
  Expanding and simplifying we get the quadratic $5s^2 +4s-1 = 0$. Factoring, we get $(5s-1)(s+1) = 0$. Therefore, $s= \frac{1}{5}$ and the ratio of the squares' areas is $\frac{1}{25}$. Our answer is therefore $10 \cdot 25 + 1 = \boxed{251}$.
 
  
-
-
 
 
 
@@ -202,7 +192,9 @@ Let $O$ be the center of the circle, $2a$ be the side length of square $ABCD$, a
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_6_Solution_Figure_2.png}
                     \end{figure}
-                    Now let $I$ be the midpoint of $\overline{GH}$, giving $\overline{GI} = \frac{2b}{2} = b$, and let $J$ be the point where $\overline{OI}$ intersects $\overline{CD}$. We observe that since a diameter bisects a chord perpendicular to it, $\overline{GH}$ must be perpendicular to the diameter passing through $I$. This means that triangle $OGI$ has a right angle at $I$, and that $\overline{OJ}$ and $\overline{JI}$ are both parallel to $\overline{BC}$ and $\overline{FG}$. As the horizontal displacement of $C$ from $O$ is $a$ (from above), it follows that $\overline{OJ} = a$, and hence 
+                    
+
+ Now let $I$ be the midpoint of $\overline{GH}$, giving $\overline{GI} = \frac{2b}{2} = b$, and let $J$ be the point where $\overline{OI}$ intersects $\overline{CD}$. We observe that since a diameter bisects a chord perpendicular to it, $\overline{GH}$ must be perpendicular to the diameter passing through $I$. This means that triangle $OGI$ has a right angle at $I$, and that $\overline{OJ}$ and $\overline{JI}$ are both parallel to $\overline{BC}$ and $\overline{FG}$. As the horizontal displacement of $C$ from $O$ is $a$ (from above), it follows that $\overline{OJ} = a$, and hence 
  \[\overline{OI} = \overline{OJ}+\overline{JI} = a+\overline{FG} = a+2b,\] so by the Pythagorean Theorem again,
 
  
@@ -223,8 +215,6 @@ Let $O$ be the center of the circle, $2a$ be the side length of square $ABCD$, a
 
 
 
-
-
 \textbf{Solution 3 (coordinates)}
 
 Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the vertices in alphabetical order going clockwise from $A$. Let $D$ have coordinates $(0,0)$ and the side length of square $ABCD$ be $a$. Let $\overline{DF} = b$, the midpoint of $\overline{EF}$ be $J$, and $\overline{PQ}$ be the diameter of the circle that passes through $J$. Since a diameter bisects a chord perpendicular to it, we deduce that $\overline{CJ} = \overline{DJ}$, while $\overline{JE} = \overline{JF}$ by the definition of the midpoint, so $\overline{CE} = \overline{CJ}+\overline{JE} = \overline{DJ}+\overline{JF} = \overline{DF} = b$. It follows that 
@@ -236,8 +226,6 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
  \[\left(\frac{a-2b}{a}\right)^2 = \left(1-2\cdot\frac{b}{a}\right)^2 = \left(1-2\cdot\frac{2}{5}\right)^2 = \left(\frac{1}{5}\right)^2 = \frac{1}{25},\] so the answer is $10 \cdot 25 + 1 = \boxed{251}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2001}) Let $\triangle{PQR}$ be a right triangle with $PQ = 90$, $PR = 120$, and $QR = 150$. Let $C_{1}$ be the inscribed circle. Construct $\overline{ST}$ with $S$ on $\overline{PR}$ and $T$ on $\overline{QR}$, such that $\overline{ST}$ is perpendicular to $\overline{PR}$ and tangent to $C_{1}$. Construct $\overline{UV}$ with $U$ on $\overline{PQ}$ and $V$ on $\overline{QR}$ such that $\overline{UV}$ is perpendicular to $\overline{PQ}$ and tangent to $C_{1}$. Let $C_{2}$ be the inscribed circle of $\triangle{RST}$ and $C_{3}$ the inscribed circle of $\triangle{QUV}$. The distance between the centers of $C_{2}$ and $C_{3}$ can be written as $\sqrt {10n}$. What is $n$?
@@ -255,7 +243,9 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_7_Solution_Figure_1.png}
                     \end{figure}
-                    Let $P = (0,0)$ be at the origin. Using the formula $A = rs$ on $\triangle PQR$, where $r_{1}$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Inradius}{inradius} (similarly define $r_2, r_3$ to be the radii of $C_2, C_3$), $s = \frac{PQ + QR + RP}{2} = 180$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Semiperimeter}{semiperimeter}, and $A = \frac 12 bh = 5400$ is the area, we find $r_{1} = \frac As = 30$. Or, the inradius could be directly by using the formula $\frac{a+b-c}{2}$, where $a$ and $b$ are the legs of the right triangle and $c$ is the hypotenuse. (This formula should be used \textit{only for right triangles}.) Thus $ST, UV$ lie respectively on the lines $y = 60, x = 60$, and so $RS = 60, UQ = 30$.  
+                    
+
+ Let $P = (0,0)$ be at the origin. Using the formula $A = rs$ on $\triangle PQR$, where $r_{1}$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Inradius}{inradius} (similarly define $r_2, r_3$ to be the radii of $C_2, C_3$), $s = \frac{PQ + QR + RP}{2} = 180$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Semiperimeter}{semiperimeter}, and $A = \frac 12 bh = 5400$ is the area, we find $r_{1} = \frac As = 30$. Or, the inradius could be directly by using the formula $\frac{a+b-c}{2}$, where $a$ and $b$ are the legs of the right triangle and $c$ is the hypotenuse. (This formula should be used \textit{only for right triangles}.) Thus $ST, UV$ lie respectively on the lines $y = 60, x = 60$, and so $RS = 60, UQ = 30$.  
 
  Note that $\triangle PQR \sim \triangle STR \sim \triangle UQV$. Since the ratio of corresponding lengths of similar figures are the same, we have 
 
@@ -268,8 +258,6 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
 
 
 
-
-
 \textbf{Solution 2 (synthetic)}
 
 
@@ -277,7 +265,9 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_7_Solution_Figure_2.png}
                     \end{figure}
-                    We compute $r_1 = 30, r_2 = 15, r_3 = 10$ as above. Let $A_1, A_2, A_3$ respectively the points of tangency of $C_1, C_2, C_3$ with $QR$. 
+                    
+
+ We compute $r_1 = 30, r_2 = 15, r_3 = 10$ as above. Let $A_1, A_2, A_3$ respectively the points of tangency of $C_1, C_2, C_3$ with $QR$. 
 
  By the \href{https://artofproblemsolving.com/wiki/index.php?title=Two\_Tangent\_Theorem}{Two Tangent Theorem}, we find that $A_{1}Q = 60$, $A_{1}R = 90$. Using the similar triangles, $RA_{2} = 45$, $QA_{3} = 20$, so $A_{2}A_{3} = QR - RA_2 - QA_3 = 85$. Thus $(O_{2}O_{3})^{2} = (15 - 10)^{2} + (85)^{2} = 7250\implies n=\boxed{725}$.
 
@@ -285,8 +275,6 @@ Let $A$ be the top-left vertex of square $ABCD$, and label the rest of the verti
 
 
  
-
-
 
 
 
@@ -303,15 +291,11 @@ Defining $P$ as $(0,0)$, $C_2$ is equal to $(60+15,15)$ or $(75,15)$. Also using
 
 
 
-
-
 \textbf{Solution 4 (easy but hard to see)}
 
 We can calculate the inradius of each triangle as with the previous solutions. Now, notice that the pentagon $PSTVU$ is a square with its corner cut off. We literally complete the square and mark the last corner as point X. Now, construct right triangle with $C_3C_2$ as its hypotenuse. The right angle will be at point $Y$. We will now find the length of each leg and use the Pythagorean Theorem to compute the desired length. We see that the length of $C_3Y$ is $50 + 15 = 65$, as seen by the inradius of $C_2$ and $10$ less than the square's side length. $C_2Y$ is $45 + 10 = 55$, which is $15$ less than the square plus the inradius of $C_3$. Our final answer is $\sqrt{65^2 + 55^2} = \sqrt{7250} = \sqrt{(10)(725)} \rightarrow \boxed{725}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2001}) A certain function $f$ has the properties that $f(3x) = 3f(x)$ for all positive real values of $x$, and that $f(x) = 1 - |x - 2|$ for $1\leq x \leq 3$. Find the smallest $x$ for which $f(x) = f(2001)$.
@@ -347,8 +331,6 @@ Iterating the condition $f(3x) = 3f(x)$, we find that $f(x) = 3^kf\left(\frac{x}
 
 
 
-
-
 \textbf{Solution 2 (Graphing)}
 
 
@@ -359,8 +341,6 @@ Iterating the condition $f(3x) = 3f(x)$, we find that $f(x) = 3^kf\left(\frac{x}
                     First, we start by graphing the function when $1\leq{x}\leq3$, which consists of the lines $y=x-1$ and $y=3-x$ that intersect at $(2,1)$. Similarly, using $f(3x)=3f(x)$, we get a dilation of our initial figure by a factor of 3 for the next interval and so on.Observe that the intersection of two lines always has coordinates $(2y,y)$ where $y=3^a$ for some $a$. First, we compute $f(2001)$. The nearest intersection point is $(1458,729)$ when $a=7$. Therefore, we can safely assume that $f(2001)$ is somewhere on the line with a slope of $-1$ that intersects at that nearest point. Using the fact that the slope of the line is $-1$, we compute $f(2001)=729-543=186$. However, we want the minimum value such that $f(x)=186$ and we see that there is another intersection point on the left which has a $y>186$, namely $(486,243)$. Therefore, we want the point that lies on the line with slope $1$ that intersects this point. Once again, since the slope of the line is $1$, we get $x=486-57=\boxed{429}$.
 
  
-
-
 
 
 
@@ -386,11 +366,7 @@ We evaluate the first few terms of f(x) to try to find a pattern.
 
  We found that $\frac{y}{243}=\frac{429}{243}$, and solving this equation gives our answer $\boxed{429}$
 
- by Coach Jay
-
  
-
-
 
 
 	\item (\textit{AIME II 2001}) Each unit square of a 3-by-3 unit-square grid is to be colored either blue or red. For each square, either color is equally likely to be used. The probability of obtaining a grid that does not have a 2-by-2 red square is $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -449,8 +425,6 @@ We can use \href{https://artofproblemsolving.com/wiki/index.php?title=Complement
 
 
 
-
-
 \textbf{Solution 2}
 
 We consider how many ways we can colour the $2 \times 2$ grid:
@@ -472,8 +446,6 @@ We consider how many ways we can colour the $2 \times 2$ grid:
  In all, there are $2^9=512$ possible ways to paint the big square, so the answer is $1-\frac{95}{512}=\frac{417}{512}$ leads to $\boxed{929}$
 
  
-
-
 
 
 
@@ -519,8 +491,6 @@ In total, there are $68+22+4+1=95$ coloring methods with 2-by-2 red squares.
  
 
 
-
-
 	\item (\textit{AIME II 2001}) How many positive integer multiples of 1001 can be expressed in the form $10^{j} - 10^{i}$, where $i$ and $j$ are integers and $0\leq i < j \leq 99$?
 
 
@@ -538,8 +508,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorizat
  If $j - i = 6, j\leq 99$, then we can have solutions of $10^6 - 10^0, 10^7 - 10^1, \dots\implies 94$ ways. If $j - i = 12$, we can have the solutions of $10^{12} - 10^{0},\dots\implies 94 - 6 = 88$, and so forth. Therefore, the answer is $94 + 88 + 82 + \dots + 4\implies 16\left(\dfrac{98}{2}\right) = \boxed{784}$.
 
  
-
-
 
 
 
@@ -567,8 +535,6 @@ Observation: We see that there is a pattern with $10^k \pmod{1001}$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that $1001=7\cdot 11\cdot 13,$ and note that $10^6 \equiv 1 \pmod{p}$ for prime $p \mid 1001$; therefore, the order of 10 modulo $7,11$, and $13$ must divide 6. A quick check on 7 reveals that it is indeed 6. Therefore we note that $i-j=6k$ for some natural number k. From here, we note that for $j=0,1,2,3,$ we have 16 options and we have 15,14,...,1 option(s) for the next 90 numbers (6 each), so our total is $4\cdot 16 + 6 \cdot \frac{15 \cdot 16}{2} = \boxed{784}$.
@@ -577,15 +543,11 @@ Note that $1001=7\cdot 11\cdot 13,$ and note that $10^6 \equiv 1 \pmod{p}$ for p
 
 
 
-
-
 \textbf{Solution 4}
 
 $10^j - 10^i \equiv 0 \pmod{1001} \iff 10^{j - i} - 1 \equiv 0 \pmod{1001} \iff 10^{j - i} \equiv 1 \pmod{1001} \iff j \equiv i \pmod 6$, by the same argument as in all the solutions above. If $j \equiv i \equiv n \pmod 6$ for $n = 0, 1, 2, 3$, there are $17$ choices for each value of $n$, yielding $4 \cdot \dbinom{17}{2} = 544$. However, if $n = 4, 5$, there are only $16$ choices, giving us $2 \cdot \dbinom{16}{2} = 240$. So, our final answer is $544 + 240 = \boxed{784}$.~Puck\_0
 
  
-
-
 
 
 	\item (\textit{AIME II 2001}) Club Truncator is in a soccer league with six other teams, each of which it plays once. In any of its 6 matches, the probabilities that Club Truncator will win, lose, or tie are each $\frac {1}{3}$. The probability that Club Truncator will finish the season with more wins than losses is $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -606,8 +568,6 @@ Note that the probability that Club Truncator will have more wins than losses is
 
 
 
-
-
 \textbf{Solution 2}
 
 At first, it wins $6$ games, only one way.
@@ -625,8 +585,6 @@ At first, it wins $6$ games, only one way.
  The answer is $\frac{1+12+60+140+75+6}{3^6}=\frac{98}{243}$ leads to $\boxed{341}$
 
  
-
-
 
 
 
@@ -659,8 +617,6 @@ This problem is symmetrical, and we should probably take advantage of that. We h
  
 
 
-
-
 	\item (\textit{AIME II 2001}) Given a triangle, its midpoint triangle is obtained by joining the midpoints of its sides. A sequence of polyhedra $P_{i}$ is defined recursively as follows: $P_{0}$ is a regular tetrahedron whose volume is 1. To obtain $P_{i + 1}$, replace the midpoint triangle of every face of $P_{i}$ by an outward-pointing regular tetrahedron that has the midpoint triangle as a face. The volume of $P_{3}$ is $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
@@ -680,8 +636,6 @@ On the first construction, $P_1$, four new tetrahedra will be constructed with s
  
 
 
-
-
 	\item (\textit{AIME II 2001}) In quadrilateral $ABCD$, $\angle{BAD}\cong\angle{ADC}$ and $\angle{ABD}\cong\angle{BCD}$, $AB = 8$, $BD = 10$, and $BC = 6$. The length $CD$ may be written in the form $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
 
 
@@ -699,7 +653,9 @@ Notice that $\angle BAD = \angle ADC$ and $\angle ABD = \angle DCB$, which motiv
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_13_Solution_Figure_1.png}
                     \end{figure}
-                    Using the similarity, we have:
+                    
+
+ Using the similarity, we have:
 
  
  \[\frac{AB}{BD} = \frac 8{10} = \frac{CD}{CE} = \frac{CD}{16} \Longrightarrow CD = \frac{64}5\]
@@ -713,15 +669,11 @@ Notice that $\angle BAD = \angle ADC$ and $\angle ABD = \angle DCB$, which motiv
 
 
 
-
-
 \textbf{Solution 2}
 
 Draw a line from $B$, parallel to $\overline{AD}$, and let it meet $\overline{CD}$ at $M$. Note that $\triangle{DAB}$ is similar to $\triangle{BMC}$ by AA similarity, since $\angle{ABD}=\angle{MCB}$ and since $BM$ is parallel to $CD$ then $\angle{BMC}=\angle{ADM}=\angle{DAB}$. Now since $ADMB$ is an isosceles trapezoid, $MD=8$. By the similarity, we have $MC=AB\cdot \frac{BC}{BD}=8\cdot \frac{6}{10}=\frac{24}{5}$, hence $CD=MC+MD=\frac{24}{5}+8=\frac{64}{5}\implies 64+5=\boxed{069}$.
 
  
-
-
 
 
 
@@ -733,15 +685,11 @@ Since $\angle{BAD}=\angle{ADM}$, if we extend AB and DC, they must meet at one p
 
 
 
-
-
 \textbf{Solution 3}
 
 Denote $\angle{BAD}=\angle{CDA}=x$, and $\angle{ABD}=\angle{BCD}=y$. Note that $\angle{ADB}=180^\circ-x-y$, and $\angle{DBC}=360^\circ-2x-2y$. This motivates us to draw the angle bisector of $\angle{DBC}$ because $\angle{DBC} = 2 \angle{ADB}$, so we do so and consider the intersection with $CD$ as $E$. By the angle bisector theorem, we have $\frac{CE}{DE} = \frac{BC}{BD} = \frac{3}{5}$, so we write $CE=3z$ and $DE=5z$. We also know that $\angle{EBC}=\angle{ADB}$ and $\angle{BCE}=\angle{DBA}$, so $\triangle{ADB} \sim \triangle{EBC}$. Hence, $\frac{CE}{BC}=\frac{AB}{BD}$, so we have $3z=\frac{24}{5}$. As $CD=8z$, it must be that $CD=\frac{64}{5}$, so the final answer is $\boxed{069}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2001}) There are $2n$ complex numbers that satisfy both $z^{28} - z^{8} - 1 = 0$ and $|z| = 1$. These numbers have the form $z_{m} = \cos\theta_{m} + i\sin\theta_{m}$, where $0\leq\theta_{1} < \theta_{2} < \ldots < \theta_{2n} < 360$ and angles are measured in degrees. Find the value of $\theta_{2} + \theta_{4} + \ldots + \theta_{2n}$.
@@ -754,55 +702,9 @@ Denote $\angle{BAD}=\angle{CDA}=x$, and $\angle{ABD}=\angle{BCD}=y$. Note that $
 
 \textbf{Solution 1 (Solution 2 more in depth)}
 
-If $|z| = 1$, then it is evident that both $|z^{28}| = |z^8| = 1$. Then, $z^{28} - z^8 = 1$. Say $z^{28} = a+bi$ and $z^8 = r+si$. Then, $a-r + (b-s)i = 1$, in which through equivalation of real and imaginary parts, $a=r+1$ and $b=s$, in which we have $z^{28} = (1+r)+si$ and $z^8 = r+si$. Then, because $|z^{28}|=|z^8|$, we have $(1+r)^2+s^2 = r^2+s^2$, in which $r=-\frac{1}{2}$. Then, substituting into the definition of $|z^8|$, we see that $s=\pm \frac{\sqrt{3}}{2}$. Thus, we have two cases.
-
- $\textbf{Case 1:}$ $z^{28}=\frac{1}{2} + \frac{\sqrt{3}}{2}i, z^8=\frac{-1}{2}+\frac{\sqrt{3}}{2}i$
-
- In this case, we rewrite everything in terms of $\text{cis}(x)$. Then, $z^{28} = \text{cis}(\frac{\pi}{3})$, $z^8=\text{cis}(\frac{2\pi}{3})$. Then, because each $z_m = \text{cis}(\theta_m)$, we have that $\text{cis}(28\theta)=\text{cis}(\frac{\pi}{3})$, and $\text{cis}(8\theta)=\text{cis}(\frac{2\pi}{3})$. Thus $28\theta \equiv \frac{\pi}{3} \mod 2\pi$, and $8\theta \equiv \frac{2\pi}{3} \mod 2\pi$.
-
- The second congruence gives us $\theta \equiv \frac{\pi}{12} \mod \frac{\pi}{4}$, or $\theta = \frac{\pi}{12} + \frac{\pi}{4}k$. Substitution into the first modulo gives us $\frac{7\pi}{3} + 7\pi k \equiv \frac{\pi}{3} \mod 2\pi$, in which subtracting $\frac{\pi}{3}$ gives us $2\pi+7\pi k\equiv 0 \mod 2\pi$. This only holds if $k=2m$, and thus we have $\theta = \frac{\pi}{12} + \frac{\pi m}{2}$. The solutions in incremental order to this case are $\frac{\pi}{12},\; \frac{7\pi}{12},\; \frac{13\pi}{12},\; \frac{19\pi}{12}$.
-
- $\textbf{Case 2:}$ $z^{28}=\frac{1}{2} - \frac{\sqrt{3}}{2}i, z^8=\frac{-1}{2}-\frac{\sqrt{3}}{2}i$
-
- Once again, conversion into $\text{cis}(x)$ form and using De Moivre's gives us $28\theta \equiv -\frac{\pi}{3} \mod 2\pi$ and $8\theta \equiv -\frac{2\pi}{3} \mod 2\pi$. Once again, the second equation gives us $\theta = -\frac{\pi}{12} + \frac{\pi}{4}k$. Substitution of $\theta$ into the first again gives us $28x=28(-\frac{\pi}{12} + \frac{\pi k}{4})=-\frac{7\pi}{3}+7\pi k$, in which reducing modulo $2\pi$ and adding $\frac{\pi}{3}$, we obtain $-\frac{2\pi}{3}+7\pi k \equiv 0 \pmod{2\pi}$. Once again, $k=2m$, and so $\theta = -\frac{\pi}{12} + \frac{\pi m}{2}$. The solutions for $\theta$ are $\frac{5\pi}{12},\;\frac{11\pi}{12},\; \frac{17\pi}{12},\; \frac{23\pi}{12}$.
-
- Converting everything into degrees and putting in incremental order, we see that each $\theta_m : 1\le m\le 8 = 15^\circ,\;75^\circ,\;105^\circ,\;165^\circ,\;195^\circ,\;255^\circ,\;285^\circ,\;345^\circ$.
-
- Adding each $\theta_{2k} : 1 \le k \le 4$, we obtain a final answer of $75+165+255+345 = \boxed{840}$.
+If $|z| = 1$, then it is evident that both $|z^{28}| = |z^8| = 1$. Then, $z^{28} - z^8 = 1$. Say $z^{28} = a+bi$ and $z^8 = r+si$. Then, $a-r + (b-s)i = 1$, in which through equivalation of real and imaginary parts, $a=r+1$ and $b=s$, in which we have $z^{28} = (1+r)+si$ and $z^8 = r+si$. Then, because $|z^{28}|=|z^8|$, we have $(1+r)^2+s^2 = r^2+s^2$, in which $r=-\frac{1}{2}$. Then, substituting into the definition of $|z^8|$, we see that 
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-$z$ can be written in the form $\text{cis\,}\theta$. Rearranging, we find that  $\text{cis\,}{28}\theta = \text{cis\,}{8}\theta+1$
-
- Since the real part of $\text{cis\,}{28}\theta$ is one more than the real part of $\text{cis\,} {8}\theta$ and their imaginary parts are equal, it is clear that either $\text{cis\,}{28}\theta = \frac{1}{2}+\frac {\sqrt{3}}{2}i$ and $\text{cis\,} {8}\theta =  -\frac{1}{2}+\frac {\sqrt{3}}{2}i$, or $\text{cis\,}{28}\theta = \frac{1}{2} - \frac{\sqrt{3}}{2}i$ and  $\text{cis\,} {8}\theta =  -\frac{1}{2}- \frac{\sqrt{3}}{2}i$
-
- 
-                \begin{itemize}
-                    \item Case 1  : $\text{cis\,}{28}\theta = \frac{1}{2}+ \frac{\sqrt{3}}{2}i$ and $\text{cis\,} {8}\theta =  -\frac{1}{2}+\frac{\sqrt{3}}{2}i$
-                \end{itemize}
-
-
-                Setting up and solving equations, $Z^{28}= \text{cis\,}{60^\circ}$ and $Z^8= \text{cis\,}{120^\circ}$, we see that the solutions common to both equations have arguments $15^\circ , 105^\circ, 195^\circ,$ and $\ 285^\circ$. We can figure this out by adding 360 repeatedly to the number 60 to try and see if it will satisfy what we need. We realize that it does not work in the integer values.
-
- 
-                \begin{itemize}
-                    \item Case 2  : $\text{cis\,}{28}\theta = \frac{1}{2} -\frac {\sqrt{3}}{2}i$ and $\text{cis\,} {8}\theta =  -\frac {1}{2} -\frac{\sqrt{3}}{2}i$
-                \end{itemize}
-
-
-                Again setting up equations ($Z^{28}= \text{cis\,}{300^\circ}$ and $Z^{8} = \text{cis\,}{240^\circ}$) we see that the common solutions have arguments of  $75^\circ, 165^\circ, 255^\circ,$ and $345^\circ$
-
- Listing all of these values, we find that $\theta_{2} + \theta_{4} + \ldots + \theta_{2n}$ is equal to $(75 + 165 + 255 + 345) ^\circ$ which is equal to $\boxed {840}$ degrees. We only want the sum of a certain number of theta, not all of it.
-
- 
-
-
 
 
 	\item (\textit{AIME II 2001}) Let $EFGH$, $EFDC$, and $EHBC$ be three adjacent square faces of a cube, for which $EC = 8$, and let $A$ be the eighth vertex of the cube. Let $I$, $J$, and $K$, be the points on $\overline{EF}$, $\overline{EH}$, and $\overline{EC}$, respectively, so that $EI = EJ = EK = 2$. A solid $S$ is obtained by drilling a tunnel through the cube. The sides of the tunnel are planes parallel to $\overline{AE}$, and containing the edges, $\overline{IJ}$, $\overline{JK}$, and $\overline{KI}$. The surface area of $S$, including the walls of the tunnel, is $m + n\sqrt {p}$, where $m$, $n$, and $p$ are positive integers and $p$ is not divisible by the square of any prime. Find $m + n + p$.
@@ -825,13 +727,13 @@ $z$ can be written in the form $\text{cis\,}\theta$. Rearranging, we find that  
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2001_15_Solution_Figure_2.png}
                     \end{figure}
-                    Set the coordinate system so that vertex $E$, where the drilling starts, is at $(8,8,8)$. Using a little visualization (involving some \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar triangles}, because we have parallel lines) shows that the tunnel meets the bottom face (the xy plane one) in the line segments joining $(1,0,0)$ to $(2,2,0)$, and $(0,1,0)$ to $(2,2,0)$, and similarly for the other three faces meeting at the origin (by symmetry). So one face of the tunnel is the polygon with vertices (in that order), $S(1,0,0), T(2,0,2), U(8,6,8), V(8,8,6), W(2,2,0)$, and the other two faces of the tunnel are congruent to this shape. 
+                    
+
+ Set the coordinate system so that vertex $E$, where the drilling starts, is at $(8,8,8)$. Using a little visualization (involving some \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar triangles}, because we have parallel lines) shows that the tunnel meets the bottom face (the xy plane one) in the line segments joining $(1,0,0)$ to $(2,2,0)$, and $(0,1,0)$ to $(2,2,0)$, and similarly for the other three faces meeting at the origin (by symmetry). So one face of the tunnel is the polygon with vertices (in that order), $S(1,0,0), T(2,0,2), U(8,6,8), V(8,8,6), W(2,2,0)$, and the other two faces of the tunnel are congruent to this shape. 
 
  Observe that this shape is made up of two congruent \href{https://artofproblemsolving.com/wiki/index.php?title=Trapezoid}{trapezoids} each with height $\sqrt {2}$ and bases $7\sqrt {3}$ and $6\sqrt {3}$. Together they make up an area of $\sqrt {2}(7\sqrt {3} + 6\sqrt {3}) = 13\sqrt {6}$. The total area of the tunnel is then $3\cdot13\sqrt {6} = 39\sqrt {6}$. Around the corner $E$ we're missing an area of $6$, the same goes for the corner opposite $E$ . So the outside area is $6\cdot 64 - 2\cdot 6 = 372$. Thus the the total surface area is $372 + 39\sqrt {6}$, and the answer is $372 + 39 + 6 = \boxed{417}$.
 
  
-
-
 
 
 \end{enumerate}

@@ -24,8 +24,6 @@ Let $R(x)=P(x)+Q(x).$ Since the $x^2$-terms of $P(x)$ and $Q(x)$ cancel, we conc
 
 
 
-
-
 \textbf{Solution 2 (Quadratic Polynomials)}
 
 Let
@@ -40,8 +38,6 @@ Let
 
 
 
-
-
 \textbf{Solution 3 (Similar to Solution 2)}
 
 Like Solution 2, we can begin by setting $P$ and $Q$ to the quadratic above, giving us
@@ -50,8 +46,6 @@ Like Solution 2, we can begin by setting $P$ and $Q$ to the quadratic above, giv
  Next, we can add $(3)$ and $(4)$ to obtain $20(a-c) + (b+d) = 106.$ By subtracting these two equations, we find that $4(a-c) = -2,$ so substituting this into equation $[(1) + (2)],$ we know that $4 \cdot (-2) + (b+d) = 108,$ so therefore $b+d = \boxed{116}.$
 
  
-
-
 
 
 
@@ -73,8 +67,6 @@ Hence, $c = 71.75$ and $d = -582.$
 
 
 
-
-
 \textbf{Solution 5}
 
 Add the equations of the polynomials $y=2x^2+ax+b$ and $y=-2x^2+cx+d$ to get $2y=(a+c)x+(b+d)$. This equation must also pass through the two points $(16,54)$ and $(20,53)$.
@@ -86,8 +78,6 @@ We are trying to solve for $n=P(0)$. Using elimination:
 Subtracting both equations, we find that $n=\boxed{116}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Find the three-digit positive integer $\underline{a}\,\underline{b}\,\underline{c}$ whose representation in base nine is $\underline{b}\,\underline{c}\,\underline{a}_{\,\text{nine}},$ where $a,$ $b,$ and $c$ are (not necessarily distinct) digits.
@@ -112,8 +102,6 @@ The only solution occurs at $(a,c)=(2,7),$ from which $b=2.$
 
 
 
-
-
 \textbf{Solution 2}
 
 As shown in Solution 1, we get $99a = 71b+8c$.
@@ -124,15 +112,11 @@ As shown in Solution 1, we get $99a = 71b+8c$.
 
 
 
-
-
 \textbf{Solution 2a}
 
 A little bit more motivation: taking mod $8$ on both sides, we find that $7a\equiv7b\pmod8\implies a\equiv b\pmod8$, so either $a=b$ or they differ by a multiple of $8$ (ok ok technically $a=b$ is a subcase of the other one, but shhhhh for the sake of clarity). $99$ and $71$ differ by $28$, so a difference of merely $8$ in $a$ and $b$ accounts for a huge difference on the scale of $28\cdot8=224$ (which is obviously unfillable by the mere $8c$), so $a=b$ is very reasonable. 
 
  
-
-
 
 
 
@@ -147,8 +131,6 @@ As shown in Solution 1, we get $99a = 71b+8c.$
 
 
 
-
-
 \textbf{Solution 4}
 
 As shown in Solution 1, we get $99a = 71b+8c$.
@@ -156,8 +138,6 @@ As shown in Solution 1, we get $99a = 71b+8c$.
  We can see that $99$ is $28$ larger than $71$, and we have an $8c$. We can clearly see that $56$ is a multiple of $8$, and any larger than $56$ would result in $c$ being larger than $9$. Therefore, our only solution is $a = 2, b = 2, c = 7$. Our answer is $\underline{a}\,\underline{b}\,\underline{c}=\boxed{227}$.
 
  
-
-
 
 
 
@@ -172,8 +152,6 @@ As shown in Solution 1, we get $99a = 71b+8c,$ which rearranges to
 
 
 
-
-
 \textbf{Solution 6}
 
 As shown in Solution 1, we have that $99a = 71b + 8c$.
@@ -181,8 +159,6 @@ As shown in Solution 1, we have that $99a = 71b + 8c$.
  Note that by the divisibility rule for $9$, we have $a+b+c \equiv a \pmod{9}$.  Since $b$ and $c$ are base-$9$ digits, we can say that $b+c = 0$ or $b+c=9$.  The former possibility can be easily eliminated, and thus $b+c=9$.  Next, we write the equation from Solution 1 as $99a = 63b + 8(b+c)$, and dividing this by $9$ gives $11a = 7b+8$.  Taking both sides modulo $7$, we have $4a \equiv 1 \pmod{7}$.  Multiplying both sides by $2$ gives $a\equiv 2 \pmod{7}$, which implies $a=2$.  From here, we can find that $b=2$ and $c=7$, giving an answer of $\boxed{227}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) In isosceles trapezoid $ABCD,$ parallel bases $\overline{AB}$ and $\overline{CD}$ have lengths $500$ and $650,$ respectively, and $AD=BC=333.$ The angle bisectors of $\angle A$ and $\angle D$ meet at $P,$ and the angle bisectors of $\angle B$ and $\angle C$ meet at $Q.$ Find $PQ.$
@@ -212,8 +188,6 @@ We have the following diagram:
 
 
 
-
-
 \textbf{Solution 2}
 
 Extend line $PQ$ to meet $AD$ at $P'$ and $BC$ at $Q'$. The diagram looks like this:
@@ -226,8 +200,6 @@ Extend line $PQ$ to meet $AD$ at $P'$ and $BC$ at $Q'$. The diagram looks like t
  Since $P'P = P'A = \frac{AD}{2}, Q'Q = Q'B = \frac{BC}{2}$ and $AD = BC = 333$, we have $P'P + Q'Q = \frac{333}{2} + \frac{333}{2} = 333$. The length of the midline of a trapezoid is the average of their bases, so $P'Q' = \frac{500+650}{2} = 575$. Finally, $PQ = 575 - 333 = \boxed{242}$.
 
  
-
-
 
 
 
@@ -247,8 +219,6 @@ We have the following diagram:
  Extend line $PQ$ to meet $\overline{AD}$ and $\overline{BC}$ at $R$ and $S$, respectively. Because of rhombus properties, $RP = QS = \frac{333}{2}$. Also, by rhombus properties, $R$ and $S$ are the midpoints of segments $AD$ and $BC$, respectively; therefore, by trapezoid properties, $RS = \frac{AB + CD}{2} = 575$. Finally, $PQ = RS - RP - QS = \boxed{242}$.
 
  
-
-
 
 
 
@@ -273,8 +243,6 @@ We have the following diagram:
 
 
 
-
-
 \textbf{Solution 5}
 
 This will be my first solution on AoPS. My apologies in advance for any errors. 
@@ -291,8 +259,6 @@ Adding the first two equations, subtracting by twice the third, and dividing by 
 
 
 
-
-
 \textbf{Solution 6}
 
 Extend line $PQ$ to meet $AD$ at $P'$ and $BC$ at $Q'$. The diagram looks like this: 
@@ -306,8 +272,6 @@ Extend line $PQ$ to meet $AD$ at $P'$ and $BC$ at $Q'$. The diagram looks like t
 
 
 
-
-
 \textbf{Solution 7 (Trigonometry)}
 
 Let $PQ = x$. Note that since $AP$ bisects $\angle{A}$ and $DP$ bisects $\angle{D}$, we have 
@@ -318,8 +282,6 @@ Let $PQ = x$. Note that since $AP$ bisects $\angle{A}$ and $DP$ bisects $\angle{
  \[\cos{(90^{\circ}-\theta)}=\sin{\theta}=\frac{\sqrt{4773}}{111}=\frac{y}{3\sqrt{4773}} \implies y=129.\] Finally, $PQ=500-2y=\boxed{242}$.
 
  
-
-
 
 
 
@@ -354,15 +316,11 @@ Let $PQ = x$. Note that since $AP$ bisects $\angle{A}$ and $DP$ bisects $\angle{
 
 
 
-
-
 \textbf{Solution 9 (Really Quick)}
 
 Extend $PQ$. Let the endpoints of this extension be $X$ and $Y$, ($X$ is closer to $P$ and $Y$ is closer to $Q$). Now let $PX = QY = a$. So, $PQ = 575-2a$. Now, by transversals, $\angle{PAB} = \angle{XPA}$. So, $\triangle{XAP}$ is isosceles with $XA = XP = a$. Now, lets look at $XD$. $XD = 333-a$. Also, by transversals, $\angle{DPX} = \angle{PDC}$. Thus, we have $XD = XP$. Aha! So, $333-a = a \Longrightarrow a = \dfrac{333}{2}$. Plugging this into our equation for $PQ$, we get $575-333 = \boxed{242}$
 
  
-
-
 
 
 
@@ -376,15 +334,11 @@ Noticing immediately that $\Delta APD$ and $\Delta BQC$ are right triangles due 
 
 
 
-
-
 \textbf{Solution 11 (Continuing on)}
 
 We notice that it is a right triangle. As mentioned by solution 2 above, we can use parallel lines to get that the length PP` is just the median of the triangle and similar for QQ` so these are just 333/2 which sum up to 333 so we have 575 - 333 = 242.
 
  
-
-
 
 
 
@@ -399,6 +353,14 @@ Notice that the desired length is equal to $500-2\overline{AP}\cos (\angle PAB)$
  
 
 
+
+\textbf{Solution 13}
+
+Using the diagram from solution $2$, we see that the midline of the trapezoid has a length of $575$, and therefore the length of $PQ$ will be $575$ minus $2$ times some unknown length. After using parallel transversal properties, we see that by extending the midline, we create two congruent isosceles triangles with side length $\frac{333}{2}$ because the congruent leg of each triangle is the upper or lower portion of the midpoint of the legs of length $333$.
+
+ The length of the segment $PQ$ will be $575$ minus $2$ of these smaller segments, so our answer is $575-333$ or $\boxed{242}$.
+
+ 
 
 
 	\item (\textit{AIME I 2022}) Let $w = \dfrac{\sqrt{3} + i}{2}$ and $z = \dfrac{-1 + i\sqrt{3}}{2},$ where $i = \sqrt{-1}.$ Find the number of ordered pairs $(r,s)$ of positive integers not exceeding $100$ that satisfy the equation $i \cdot w^r = z^s.$
@@ -445,8 +407,6 @@ Note that the values for $s+3k$ and the values for $r$ have one-to-one correspon
 
 
 
-
-
 \textbf{Solution 2}
 
 First we recognize that $w = \operatorname{cis}(30^{\circ})$ and $z = \operatorname{cis}(120^{\circ})$ because the cosine and sine sums of those angles give the values of $w$ and $z$, respectively. By De Moivre's theorem, $\operatorname{cis}(\theta)^n = \operatorname{cis}(n\theta)$. When you multiply by $i$, we can think of that as rotating the complex number $90^{\circ}$ counterclockwise in the complex plane. Therefore, by the equation we know that $30r + 90$ and $120s$ land on the same angle.
@@ -456,11 +416,7 @@ First we recognize that $w = \operatorname{cis}(30^{\circ})$ and $z = \operatorn
  \[r+3 \equiv 4s \pmod{12}.\]Notice that this means that $r$ cycles by $12$ for every value of $s$. This is because once $r$ hits $12$, we get an angle of $360^{\circ}$ and the angle laps onto itself again. By a similar reasoning, $s$ laps itself every $3$ times, which is much easier to count. By listing the possible values out, we get the pairs $(r,s)$:
  \[\begin{array}{cccccccc} (1,1) & (5,2) & (9,3) & (13,1) & (17,2) & (21,3) & \ldots & (97,1) \\ (1,4) & (5,5) & (9,6) & (13,4) & (17,5) & (21,6) & \ldots & (97,4) \\  (1,7) & (5,8) & (9,9) & (13,7) & (17,8) & (21,9) & \ldots & (97,7) \\ [-1ex] \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\ (1,100) & (5,98) & (9,99) & (13,100) & (17,98) & (21,99) & \ldots & (97,100) \end{array}\]We have $25$ columns in total: $34$ values for the first column, $33$ for the second, $33$ for the third, and then $34$ for the fourth, $33$ for the fifth, $33$ for the sixth, etc. Therefore, this cycle repeats every $3$ columns and our total sum is $(34+33+33) \cdot 8 + 34 = 100 \cdot 8 + 34 = \boxed{834}$.
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
 
 
 	\item (\textit{AIME I 2022}) A straight river that is $264$ meters wide flows from west to east at a rate of $14$ meters per minute. Melanie and Sherry sit on the south bank of the river with Melanie a distance of $D$ meters downstream from Sherry. Relative to the water, Melanie swims at $80$ meters per minute, and Sherry swims at $60$ meters per minute. At the same time, Melanie and Sherry begin swimming in straight lines to a point on the north bank of the river that is equidistant from their starting positions. The two women arrive at this point simultaneously. Find $D.$
@@ -495,8 +451,6 @@ Define $m$ as the number of minutes they swim for.
  So $D = 100m = \boxed{550}$.
 
  
-
-
 
 
 
@@ -540,8 +494,6 @@ Hence,
 
 
 
-
-
 \textbf{Solution 3 (Vectors)}
 
 We have the following diagram:
@@ -563,8 +515,6 @@ We subtract $(2)$ from $(1)$ to get $56x=2800,$ from which $x=50.$ Substituting 
 
 
 
-
-
 \textbf{Solution 4 (Vectors)}
 
 We can break down movement into two components: the $x$-component and the $y$-component. Suppose that Melanie travels a distance of $a$ in the $x$-direction and a distance of $c$ in the $y$-direction in one minute when there is no current. Similarly, suppose that Sherry travels a distance of $a$ in the $x$-direction but a distance of $b$ in the $y$-direction in one minute when there is no current. The current only affects the $x$-components because it goes in the $x$-direction. 
@@ -582,8 +532,6 @@ We can solve the system of equations to get $a = 48$ and $c = 64$. From this, we
  \[D=11\cdot50=\boxed{550}.\]~Curious\_crow
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Find the number of ordered pairs of integers $(a,b)$ such that the sequence 
@@ -614,8 +562,6 @@ Since $3,4,5,a$ and $3,4,5,b$ cannot be an arithmetic progression, $a$ or $b$ ca
 
 
 
-
-
 \textbf{Solution 2 (Rigorous)}
 
 We will follow the solution from earlier in a rigorous manner to show that there are no other cases missing.
@@ -629,8 +575,6 @@ We will follow the solution from earlier in a rigorous manner to show that there
  Our final answer is $231 - 1 - 2 = \boxed{228}$
 
  
-
-
 
 
 
@@ -700,8 +644,6 @@ Denote $S = \left\{ (a, b) : 6 \leq a < b \leq 29 \right\}$.
 
 
 
-
-
 \textbf{Solution 4}
 
 divide cases into $7\leq a<20; 21\leq a\leq28$.(Notice that $a$ can't be equal to $6,20$, that's why I divide them into two parts.There are three cases that arithmetic sequence forms: $3,12,21,30;4,16,28,40;3,5,7,9$.(NOTICE that $5,20,35,50$ IS NOT A VALID SEQUENCE!)So when $7\leq a<20$, there are $10+11+12+...+22-3-13=192$ possible ways( 3 means the arithmetic sequence and 13 means there are 13 "a" s and b cannot be 20)
@@ -711,8 +653,6 @@ divide cases into $7\leq a<20; 21\leq a\leq28$.(Notice that $a$ can't be equal t
  In all, there are $192+36=\boxed{228}$ possible sequences.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Let $a,b,c,d,e,f,g,h,i$ be distinct integers from $1$ to $9.$ The minimum possible positive value of 
@@ -738,8 +678,6 @@ To minimize a positive fraction, we minimize its numerator and maximize its deno
 
 
 
-
-
 \textbf{Solution 2 (Bash)}
 
 Obviously, to find the correct answer, we need to get the largest denominator with the smallest numerator. 
@@ -756,15 +694,11 @@ Obviously, to find the correct answer, we need to get the largest denominator wi
 
 
 
-
-
 \textbf{Solution 3 (Educated Trial and Error)}
 
 To minimize the numerator, we must have $abc - def = 1$. Thus, one of these products must be odd and the other must be even. The odd product must consist of only odd numbers. The smallest such value $(d, e, f) = (1, 3, 5)$ cannot result in a difference of $1$, and the next smallest product, $(d, e, f) = (1, 3, 7)$ cannot either, but $(d, e, f) = (1, 5, 7)$ can if $(a, b, c) = (2, 3, 6)$. Thus, the denominator must be $(g, h, i) = (4, 8, 9)$, and the smallest fraction possible is $\dfrac{36 - 35}{288} = \dfrac{1}{288}$, making the answer $1 + 288 = \boxed{289}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Equilateral triangle $\triangle ABC$ is inscribed in circle $\omega$ with radius $18.$ Circle $\omega_A$ is tangent to sides $\overline{AB}$ and $\overline{AC}$ and is internally tangent to $\omega.$ Circles $\omega_B$ and $\omega_C$ are defined analogously. Circles $\omega_A,$ $\omega_B,$ and $\omega_C$ meet in six points---two points for each pair of circles. The three intersection points closest to the vertices of $\triangle ABC$ are the vertices of a large equilateral triangle in the interior of $\triangle ABC,$ and the other three intersection points are the vertices of a smaller equilateral triangle in the interior of $\triangle ABC.$ The side length of the smaller equilateral triangle can be written as $\sqrt{a} - \sqrt{b},$ where $a$ and $b$ are positive integers. Find $a+b.$
@@ -800,8 +734,6 @@ We solve this system by subtracting to get $x = 0$. Plugging back in to the firs
 Finally, the answer is $351+27 = \boxed{378}$.
 
  
-
-
 
 
 
@@ -845,8 +777,6 @@ Finally, the answer is $351+27 = \boxed{378}$.
 
 
 
-
-
 \textbf{Solution 3 (Simple Geometry)}
 
 
@@ -871,15 +801,11 @@ Finally, the answer is $351+27 = \boxed{378}$.
 
 
 
-
-
 \textbf{Solution 4 (Mixtilinear Incircles)}
 
 Let $O$ be the center of $\omega$, $X$ be the intersection of $\omega_B,\omega_C$ further from $A$, and $O_A$ be the center of $\omega_A$. Define $Y, Z, O_B, O_C$ similarly. It is well-known that the $A$-mixtilinear inradius $R_A$ is $\frac{r}{\cos^2\left(\frac{\angle A}{2}\right)} = \frac{9}{\cos^2\left(30^{\circ}\right)} = 12$, so in particular this means that $OO_B = 18 -  R_B = 6 = OO_C$. Since $\angle O_BOO_C = \angle BOC = 120^\circ$, it follows by Law of Cosines on $\triangle OO_BO_C$ that $O_BO_C = 6\sqrt{3}$. Then the Pythagorean theorem gives that the altitude of $O_BO_CX$ is $\sqrt{117}$, so $OY = OX = \text{dist}(X, YZ) - \text{dist}(O, YZ) = \sqrt{117} - 3$ and $YZ = \frac{O_BO_C\cdot OY}{OO_B} = \frac{6\sqrt{3}(\sqrt{117} - 3)}{6}=\sqrt{351} - \sqrt{27}$ so the answer is $351 + 27 = \boxed{378}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Ellina has twelve blocks, two each of red ($\textbf{R}$), blue ($\textbf{B}$), yellow ($\textbf{Y}$), green ($\textbf{G}$), orange ($\textbf{O}$), and purple ($\textbf{P}$). Call an arrangement of blocks $\textit{even}$ if there is an even number of blocks between each pair of blocks of the same color. For example, the arrangement
@@ -903,16 +829,12 @@ Consider this position chart:
 
 
 
-
-
 \textbf{Solution 2}
 
 We can simply use constructive counting. First, let us place the red blocks; choose the first slot in $12$ ways, and the second in $6$ ways, because the number is cut in half due to the condition in the problem. This gives $12 \cdot 6$ ways to place the red blocks. Similarly, there are $10 \cdot 5$ ways to place the blue blocks, and so on, until there are $2 \cdot 1$ ways to place the purple blocks. Thus, the probability is 
  \[\frac{12 \cdot 6 \cdot 10 \cdot 5 \cdot 8 \cdot 4 \cdot 6 \cdot 3 \cdot 4 \cdot 2 \cdot 2 \cdot 1}{12!}=\frac{16}{231},\] and the desired answer is $16+231=\boxed{247}$.
 
  
-
-
 
 
 
@@ -923,8 +845,6 @@ Use constructive counting, as per above. WLOG, place the red blocks first. There
  -drag00n
 
  
-
-
 
 
 
@@ -942,8 +862,6 @@ We can divide the $12$ positions into odd and even positions. Each color needs o
 
 
 
-
-
 \textbf{Solution 5}
 
 There are a total of $\frac{12!}{(2!)^{6}}$ ways to arrange the blocks because there are $12!$ total ways to arrange the blocks but we're overcounting $2!$ ways for each of the $6$ blocks. Now, to better visualize how we can arrange these blocks, consider the first slot. There are $6$ colors to choose from. WLOG, say it's red. Now, we can easily see that the next and last red block can be put into a total of 6 slots to make sure that the number of slots between the first slot and the next slot is even. To better visualize this, I have drawn a chart type figure:
@@ -951,8 +869,6 @@ There are a total of $\frac{12!}{(2!)^{6}}$ ways to arrange the blocks because t
  RR\_ \_ \_ \_ \_ \_ \_ \_ \_ \_R \_ \_ R \_ \_ \_ \_ \_ \_ \_ \_ ...From this, you can get the idea. Counting up all these cases, it is obvious that there are $6$ ways to put the next and last red block. We continue by placing the next block into the next open slot. There are $5$ ways to choose the next color and similarly, only $5$ ways to put the next and last colored block to maintain an even number of slots. We get the idea. It seems that there are $(6!)^{2}$ ways to put the blocks. We compute $\frac{(6!)^{2} \cdot (2!)^{6}}{12!} = \frac{16}{231}$. This yields an answer of $16 + 231 = \boxed{247}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Three spheres with radii $11,$ $13,$ and $19$ are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at $A,$ $B,$ and $C,$ respectively, and the centers of the spheres all lie on the same side of this plane. Suppose that $AB^2 = 560.$ Find $AC^2.$
@@ -987,8 +903,6 @@ This solution refers to the \textbf{Diagram} section.
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the distance between the center of the sphere to the center of those circular intersections as $a,b,c$ separately.
@@ -998,8 +912,6 @@ Let the distance between the center of the sphere to the center of those circula
  The desired value is $(11+19)^2-(16-4)^2=\boxed{756}.$
 
  
-
-
 
 
 
@@ -1043,8 +955,6 @@ Denote by $r$ the radius of three congruent circles formed by the cutting plane.
  
 
 
-
-
 	\item (\textit{AIME I 2022}) Let $ABCD$ be a parallelogram with $\angle BAD < 90^\circ.$ A circle tangent to sides $\overline{DA},$ $\overline{AB},$ and $\overline{BC}$ intersects diagonal $\overline{AC}$ at points $P$ and $Q$ with $AP < AQ,$ as shown. Suppose that $AP=3,$ $PQ=9,$ and $QC=16.$ Then the area of $ABCD$ can be expressed in the form $m\sqrt{n},$ where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n.$
 
 
@@ -1058,203 +968,6 @@ Denote by $r$ the radius of three congruent circles formed by the cutting plane.
 
  
  \textbf{Answer: }150
-
-
-
-\textbf{Solution 1 (No trig)}
-
-Let's redraw the diagram, but extend some helpful lines.
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2022_11_Solution_Figure_1.png}
-                    \end{figure}
-                    
-
- We obviously see that we must use power of a point since they've given us lengths in a circle and there are intersection points. Let $T_1, T_2, T_3$ be our tangents from the circle to the parallelogram. By the secant power of a point, the power of $A = 3 \cdot (3+9) = 36$. Then $AT_2  = AT_3 = \sqrt{36} = 6$. Similarly, the power of $C = 16 \cdot (16+9) = 400$ and  $CT_1 = \sqrt{400} = 20$. We let $BT_3 = BT_1 = x$ and label the diagram accordingly.
-
- Notice that because $BC = AD, 20+x = 6+DT_2 \implies DT_2 = 14+x$. Let $O$ be the center of the circle. Since $OT_1$ and $OT_2$ intersect $BC$ and $AD$, respectively, at right angles, we have $T_2T_1CD$ is a right-angled trapezoid and more importantly, the diameter of the circle is the height of the triangle. Therefore, we can drop an altitude from $D$ to $BC$ and $C$ to $AD$, and both are equal to $2r$. Since $T_1E = T_2D$, $20 - CE = 14+x \implies CE = 6-x$. Since $CE = DF, DF = 6-x$ and $AF = 6+14+x+6-x = 26$. We can now use Pythagorean theorem on $\triangle ACF$; we have $26^2 + (2r)^2 = (3+9+16)^2 \implies 4r^2 = 784-676 \implies 4r^2 = 108 \implies 2r = 6\sqrt{3}$ and $r^2 = 27$.
-
- We know that $CD = 6+x$ because $ABCD$ is a parallelogram. Using Pythagorean theorem on $\triangle CDF$, $(6+x)^2 = (6-x)^2 + 108 \implies (6+x)^2-(6-x)^2 = 108 \implies 12 \cdot 2x = 108 \implies 2x = 9 \implies x = \frac{9}{2}$. Therefore, base $BC = 20 + \frac{9}{2} = \frac{49}{2}$. Thus the area of the parallelogram is the base times the height, which is $\frac{49}{2} \cdot 6\sqrt{3} = 147\sqrt{3}$ and the answer is $\boxed{150}$
-
- 
-
-
-
-
-
-\textbf{Solution 2}
-
-Let the circle tangent to $BC,AD,AB$ at $P,Q,M$ separately, denote that $\angle{ABC}=\angle{D}=\alpha$
-
- Using POP, it is very clear that $PC=20,AQ=AM=6$, let $BM=BP=x,QD=14+x$, using LOC in $\triangle{ABP}$,$x^2+(x+6)^2-2x(x+6)\cos\alpha=36+PQ^2$, similarly, use LOC in $\triangle{DQC}$, getting that $(14+x)^2+(6+x)^2-2(6+x)(14+x)\cos\alpha=400+PQ^2$. We use the second equation to minus the first equation, getting that $28x+196-(2x+12)\times14\times\cos\alpha=364$, we can get $\cos\alpha=\frac{2x-12}{2x+12}$.
-
- Now applying LOC in $\triangle{ADC}$, getting $(6+x)^2+(20+x)^2-2(6+x)\times(20+x)\times\frac{2x-12}{2x+12}=(3+9+16)^2$, solving this equation to get $x=\frac{9}{2}$, then $\cos\alpha=-\frac{1}{7}$, $\sin\alpha=\frac{4\sqrt{3}}{7}$, the area is $\frac{21}{2}\cdot\frac{49}{2}\cdot\frac{4\sqrt{3}}{7}=147\sqrt{3}$ leads to $\boxed{150}$
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-Denote by $O$ the center of the circle. Denote by $r$ the radius of the circle.Denote by $E$, $F$, $G$ the points that the circle meets $AB$, $CD$, $AD$ at, respectively.
-
- Because the circle is tangent to $AD$, $CB$, $AB$, $OE = OF = OG = r$, $OE \perp AD$, $OF \perp CB$, $OG \perp AB$.
-
- Because $AD \parallel CB$, $E$, $O$, $F$ are collinear. 
-
- Following from the power of a point, $AG^2 = AE^2 = AP \cdot AQ$. Hence, $AG = AE = 6$.
-
- Following from the power of a point, $CF^2 = CQ \cdot CP$. Hence, $CF = 20$.
-
- Denote $BG = x$. Because $DG$ and $DF$ are tangents to the circle, $BF = x$.
-
- Because $AEFB$ is a right trapezoid, $AB^2 = EF^2 + \left( AE - BF \right)^2$.Hence, $\left( 6 + x \right)^2 = 4 r^2 + \left( 6 - x \right)^2$.This can be simplified as 
- \[ 6 x = r^2 . \hspace{1cm} (1) \]
-
- In $\triangle ACB$, by applying the law of cosines, we have
- \begin{align*} AC^2 & = AB^2 + CB^2 - 2 AB \cdot CB \cos B \\ & = AB^2 + CB^2 + 2 AB \cdot CB \cos A \\ & = AB^2 + CB^2 + 2 AB \cdot CB \cdot \frac{AE - BF}{AB} \\ & = AB^2 + CB^2 + 2 CB \left( AE - BF \right) \\ & = \left( 6 + x \right)^2 + \left( 20 + x \right)^2 + 2 \left( 20 + x \right) \left( 6 - x \right) \\ & = 24 x + 676 . \end{align*}
-
-
- Because $AC = AP + PQ + QC = 28$, we get $x = \frac{9}{2}$.Plugging this into Equation (1), we get $r = 3 \sqrt{3}$.
-
- Therefore,
- \begin{align*} {\textrm Area} \ ABCD & = CB \cdot EF \\ & = \left( 20 + x \right) \cdot 2r \\ & = 147 \sqrt{3} . \end{align*}
-
-
- Therefore, the answer is $147 + 3 = \boxed{\textbf{(150) }}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Let $\omega$ be the circle, let $r$ be the radius of $\omega$, and let the points at which $\omega$ is tangent to $AB$, $BC$, and $AD$ be $X$, $Y$, and $Z$, respectively. Note that PoP on $A$ and $C$ with respect to $\omega$ yields $AX=6$ and $CY=20$. We can compute the area of $ABC$ in two ways:
-
- 1. By the half-base-height formula, $[ABC]=r(20+BX)$.
-
- 2. We can drop altitudes from the center $O$ of $\omega$ to $AB$, $BC$, and $AC$, which have lengths $r$, $r$, and $\sqrt{r^2-\frac{81}{4}}$. Thus, $[ABC]=[OAB]+[OBC]+[OAC]=r(BX+13)+14\sqrt{r^2-\frac{81}{4}}$.
-
- Equating the two expressions for $[ABC]$ and solving for $r$ yields $r=3\sqrt{3}$. 
-
- Let $BX=BY=a$. By the Parallelogram Law, $(a+6)^2+(a+20)^2=38^2$. Solving for $a$ yields $a=9/2$. Thus, $[ABCD]=2[ABC]=2r(20+a)=147\sqrt{3}$, for a final answer of $\boxed{150}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2022_11_Solution_Figure_2.png}
-                    \end{figure}
-                    Let $\omega$ be the circle, let $r$ be the radius of $\omega$, and let the points at which $\omega$ is tangent to $AB$, $BC$, and $AD$ be $H$, $K$, and $T$, respectively. PoP on $A$ and $C$ with respect to $\omega$ yields 
- \[AT=6, CK=20.\]
-
- Let $TG = AC, CG||AT.$
-
- In  $\triangle KGT$ $KT \perp BC,$$KT = \sqrt{GT^2 – (KC + AT)^2} = 6 \sqrt{3}=2r.$ 
-
- $\angle AOB = 90^{\circ}, OH \perp AB,  OH = r = \frac{KT}{2},$
- \[OH^2 = AH \cdot BH \implies  BH = \frac {9}{2}.\]
-
- Area is 
- \[(BK + KC) \cdot KT = (BH + KC) \cdot 2r = \frac{49}{2} \cdot 6\sqrt{3} = 147 \sqrt{3} \implies 147+3 = \boxed{\textbf{150}}.\]
-
- \textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
-
-\textbf{Solution 6 (Short and Sweet)}
-
-Let $O$ be the center of the circle. Let points $M, N$ and $L$ be the tangent points of lines $BC, AD$ and $AB$ respectively to the circle. By Power of a Point, $({MC})^2=16\cdot{25} \Longrightarrow MC=20$. Similarly, $({AL})^2=3\cdot{12} \Longrightarrow AL=6$. Notice that $AL=AN=6$ since quadrilateral $LONA$ is symmetrical. Let $AC$ intersect $MN$ at $I$. Then, $\bigtriangleup{IMC}$ is similar to $\bigtriangleup{AIN}$. Therefore, $\frac{CI}{MC}=\frac{AI}{AN}$. Let the length of $PI=l$, then $\frac{25-l}{20}=\frac{3+l}{6}$. Solving we get $l=\frac{45}{13}$. Doing the Pythagorean theorem on triangles $IMC$ and $AIN$ for sides $MI$ and $IN$ respectively, we obtain the equation $\sqrt{(\frac{280}{13})^2-400} +\sqrt{(\frac{84}{13})^2-36}=MN=2r_1$ where $r_1$ denotes the radius of the circle. Solving, we get $MN=6\sqrt{3}$. Additionally, quadrilateral $OLBM$ is symmetrical so $OL=OM$. Let $OL=OM=x$ and extend a perpendicular foot from $B$ to $AD$ and call it $R$. Then, $\bigtriangleup{ABR}$ is right with $AR=6-x$, $AB=6+x$, and $RB=2r_1=MN=6\sqrt{3}$. Taking the difference of squares, we get $108=24x \Longrightarrow x=\frac{9}{2}$. The area of $ABCD$ is $MN\cdot{BC}=(20+x)\cdot{MN} \Longrightarrow \frac{49}{2}\cdot{6\sqrt{3}}=147\sqrt{3}$. Therefore, the answer is $147+3=\boxed{150}$
-
- 
-
-
-
-
-
-\textbf{Solution 7 (Intuitive, no trig, no weird auxiliary lines)}
-
-Say that $BC$ is tangent to the circle at $X$ and $AD$ tangent at $Y$. Also, $H$ is the intersection of $XY$ (diameter) and $AC$ (diagonal). Then by power of a point with given info on $A$ and $C$ we get that $AY=6$ and $CX=20$. Note that $HAY \sim HCX$, and since $\frac{AY}{CX}=\frac{3}{10}$ we note that 
- \[\frac{AH}{CH} = \frac{AP+PH}{CQ+QH} = \frac{3+PH}{16+QH} =\frac{AY}{CX}=\frac{3}{10}\]. Since $PH+HQ=9$, we get that $PH=\frac{45}{13}$ and $QH=\frac{72}{13}$. This is the length information within the circle.The same triangle similarity also means that $\frac{YH}{XH}=\frac{3}{10}$, so if the radius of the circle is $r$ then we have $XH=\frac{20}{13}r$ and $YH = \frac{6}{13}r$. By power of a point on H, we can figure out $r$:
- \[XH\cdot YH = PH \cdot QG\]
- \[\frac{20}{13}r \cdot \frac{6}{13}r = \frac{45}{13} \cdot \frac{72}{13}\]and we get that $r = 3 \sqrt 3$. Thus, we have that the height of the parallelogram is $2r=6 \sqrt 3$ and we want to find $BC$. If $AB$ is tangent to the circle at $E$, then set $a = BX = BE$. Using pythagorean theorem, $AO^2+BO^2=AB^2$ and we can plug in diagram values: 
- \[(AY^2+OY^2)+(BX^2+OX)^2=AB^2\] 
- \[(6^2+(3 \sqrt 3)^2) + (a^2+(3 \sqrt 3)^2)=(a+6)^2.\] Solving, we get $a=\frac{9}{2}$ Finally, we have $[ABCD]=XY \cdot BC = 6 \sqrt 3 \cdot (20+\frac{9}{2}) \rightarrow \boxed{150}$
-
- 
-
-
-
-
-
-\textbf{Solution 8 (Ptolemy's Theorem + Power of Point + Pythagorean Theorem)}
-
-Let $E$, $F$, $G$ be the circle's point of tangency with sides $AD$, $AB$, and $BC$, respectively. Let $O$ be the center of the inscribed circle.
-
- By Power of a Point, $AE^2 = AP \cdot AQ = 3(3+9) = 36$, so $AE = 6$. Similarly, $GC^2 = CQ \cdot CP = 16(16+9) = 400$, so $GC = 20$.
-
- Construct $GE$, and let $I$ be the point of intersection of $GE$ and $AC$. $GE \perp BC$ and $GE \perp AD$. By AA, $\triangle IGC \sim \triangle IEA$, and we have $\frac{AI}{IC} = \frac{AE}{GC} = \frac{3}{10}$. We also know $AI + IC = AC = 28$, so $AI = \frac{84}{13}$ and $IC = \frac{280}{13}$.
-
- Using Pythagorean Theorem on $\triangle IEA$ and $\triangle CIG$, we find that $EI = \frac{18\sqrt{3}}{13}$ and $IG = \frac{60\sqrt{3}}{13}$. Thus, $GE = EI + IG = 6\sqrt{3}$, and the radius of the circle is $3\sqrt{3}$.
-
- Construct $EF$, $FG$. $\angle AFO = \angle AEO = 90^{\circ}$, so $AEOF$ is cyclic. Similarly, $BFOG$ is cyclic.
-
- Now, we attempt to set up Ptolemy. Using Pythagorean Theorem on $\triangle AEO$, we find that $AO = 3\sqrt{7}$. By Ptolemy's Theorem, $(AE)(FO) + (AF)(EO) = (AO)(FE)$, from which we have $(6)(3\sqrt{3}) + (6)(3\sqrt{3}) = (3\sqrt{7})(FE)$ and $FE = 12\frac{\sqrt{3}}{\sqrt{7}}$. From Thales' Circle, $\triangle FGE$ is a right triangle, and $EF^2 + FG^2 = GE^2$, so $FG = \frac{18}{\sqrt{7}}$.
-
- Set $BF = BG = s$. $BO = \sqrt{s^2 + (3\sqrt{3})^2} = \sqrt{s^2+27}$, so by Ptolemy's Theorem on $BFOG$, we have
-
- 
- \[(BF)(GO) + (BG)(FO) = (FG)(BO)\]
- \[(3\sqrt{3})(s) + (3\sqrt{3})(s) = (\frac{18}{\sqrt{7}})(\sqrt{s^2+27})\]Solving yields $s = \frac{9}{2}$.
-
- We know that $BC = BG + GC = 20 + \frac{9}{2} = \frac{49}{2}$, so the area of $ABCD = (\frac{49}{2})(6\sqrt{3}) = 147\sqrt{3}$. The requested answer is $147 + 3 = \boxed{150}$.
-
- 
-
-
-
-
-
-\textbf{Solution 9}
-
-Let points $E$, $F$, $G$ be the points where lines $BC$, $AB$, and $AD$ are tangent to the circle respectively. Then extend line $BC$ to point $H$ such that $AH$ is perpendicular to $BC$.
-
- According to Power of a Point, $CQ\cdot CP=CE^2\rightarrow 16\cdot 25=CE^2\rightarrow CE=20$.
-
- Similarly, $AP\cdot AQ=AF^2\rightarrow 3\cdot 12=AF^2\rightarrow AF=6$.
-
- (Note that $AG=AF=6$ because they are intersecting tangents from the same circle. Furthermore, $HE=AG=6$ due to a simple upwards translation.)
-
- Therefore, $HC=HE+EC=6+20=26$, and we already know that $AC=28$, meaning that we can use the Pythagorean Theorem on $\Delta AHC$ to obtain: $AH=6\sqrt{3}$.
-
- Let $HB=k$. Then $BE=6-HB=6-k$. Since they are intersecting tangents from the same circle, $BF=BE=6-k$.
-
- Therefore, $AB=AF+BF=6+6-k=12-k$. We have all the side lengths of $\Delta ABH$, so applying the Pythagorean Theorem: $(6\sqrt{3})^2+k^2=(12-k)^2\rightarrow k=\frac{3}{2}$.
-
- Thus, $BC=BE+EC=6-k+20=26-k=\frac{49}{2}$.
-
- $[ABCD]=AH\cdot BC=6\sqrt{3}\cdot \frac{49}{2}=147\sqrt{3}$, so the answer is $\boxed{150}$.
-
- 
-
-
 
 
 	\item (\textit{AIME I 2022}) For any finite set $X,$ let $|X|$ denote the number of elements in $X.$ Define 
@@ -1305,8 +1018,6 @@ In total, $S_3 = 18$.
 
 
 
-
-
 \textbf{Solution 2 (Linearity of Expectation)}
 
 We take cases based on the number of values in each of the subsets in the pair. Suppose we have $k$ elements in each of the subsets in a pair (for a total of n elements in the set). The expected number of elements in any random pair will be $n \cdot \frac{k}{n} \cdot \frac{k}{n}$ by linearity of expectation because for each of the $n$ elements, there is a $\frac{k}{n}$ probability that the element will be chosen. To find the sum over all such values, we multiply this quantity by  $\binom{n}{k}^2$. Summing, we get 
@@ -1317,8 +1028,6 @@ We take cases based on the number of values in each of the subsets in the pair. 
  - pi\_is\_3.14
 
  
-
-
 
 
 
@@ -1346,8 +1055,6 @@ For each element $i$, denote $x_i = \left( x_{i, A}, x_{i, B} \right) \in \left\
 
 
 
-
-
 \textbf{Solution 4}
 
 Let's ask what the contribution of an element $k\in \{1,2,\cdots,n\}$ is to the sum $S_n = \sum | A \cap B |.$
@@ -1360,8 +1067,6 @@ Let's ask what the contribution of an element $k\in \{1,2,\cdots,n\}$ is to the 
  NOTE: you may have a concern, "what if we chose the same element twice in a set?" Let us look at an example. Suppose we are partioning $S_4,$ $k=4,$ and we list out the rowstop: $1,2,3$bottom: $1,2,3$If we chose $1$ (top) $2$ (top) and $1$ (bottom), then we can distribute these numbers by sending the numbers in the top row that were chosen to set $A,$ which would be ${1,2,4},$ and set $B$ would be the numbers not chosen in the bottom row, which would be ${2,3,4}.$ To prove this rigourously, let $x$ be the number of elements in the top row chosen and $y$ be the number of elements chosen in the bottom row. Since we choose $n-1$ objects, $x+y=n-1.$ So the amount of elements in $A$ would be $1+x,$ and the amount of elements in $B$ would be $1+(n-1-y)=1+n-1-(n-1-x)=x+1.$
 
  
-
-
 
 
 
@@ -1402,8 +1107,6 @@ Assume the subset $A$ of $\{1, 2, 3, \dots, n\}$ has $k$ elements, where $k$ is 
  We seek $2022 \cdot 2 \cdot 4041 + 2021 \cdot 2021 \pmod{1000}$. This is equivalent to $22 \cdot 82 + 21 \cdot 21 \equiv 804+441 \equiv \boxed{245} \pmod{1000}$, and we are done.
 
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Let $S$ be the set of all rational numbers that can be expressed as a repeating decimal in the form $0.\overline{abcd},$ where at least one of the digits $a,$ $b,$ $c,$ or $d$ is nonzero. Let $N$ be the number of distinct numerators obtained when numbers in $S$ are written as fractions in lowest terms. For example, both $4$ and $410$ are counted among the distinct numerators for numbers in $S$ because $0.\overline{3636} = \frac{4}{11}$ and $0.\overline{1230} = \frac{410}{3333}.$ Find the remainder when $N$ is divided by $1000.$
@@ -1483,11 +1186,7 @@ Case $E$: $101|x$.
  \textbf{Sketch of Constuctive Counting Solution} If anyone wants to write this up, basically I thought to do:
  \[ \sum_{d\mid 9999}\varphi(d)=9999 \]and which is 9999 (identity), but then we must subtract all the numbers that show up multiple times in the numerator. We do this by doing casework on $n,$ like if $1111<n\leq3333$ we check how many n are coprime to 3333 in this range, giving the amount of n that show up multiple times in both $\frac{n}{3333}$ and $\frac{n}{9999}.$ repeat this bounding process and it should work.
 
- \href{https://MathProblemSolvingSkills.com}{https://MathProblemSolvingSkills.com}
-
  
-
-
 
 
 	\item (\textit{AIME I 2022}) Given $\triangle ABC$ and a point $P$ on one of its sides, call line $\ell$ the $\textit{splitting line}$ of $\triangle ABC$ through $P$ if $\ell$ passes through $P$ and divides $\triangle ABC$ into two polygons of equal perimeter. Let $\triangle ABC$ be a triangle where $BC = 219$ and $AB$ and $AC$ are positive integers. Let $M$ and $N$ be the midpoints of $\overline{AB}$ and $\overline{AC},$ respectively, and suppose that the splitting lines of $\triangle ABC$ through $M$ and $N$ intersect at $30^\circ.$ Find the perimeter of $\triangle ABC.$
@@ -1636,8 +1335,6 @@ Denote $BC = a$, $CA = b$, $AB = c$.
 
 
 
-
-
 \textbf{Solution (Number Theory Part)}
 
 We wish to solve the Diophantine equation $a^2+ab+b^2=3^2 \cdot 73^2$. It can be shown that $3|a$ and $3|b$, so we make the substitution $a=3x$ and $b=3y$ to obtain $x^2+xy+y^2=73^2$ as our new equation to solve for. 
@@ -1649,8 +1346,6 @@ We wish to solve the Diophantine equation $a^2+ab+b^2=3^2 \cdot 73^2$. It can be
  \begin{align} (8-\omega)^2(8-{\omega}^2)^2&=73^2\\ (63-17\omega)(63-17{\omega}^2)&=73^2. \end{align}Thus, by $(2)$, $(63, 17)$ is a solution to $x^2+xy+y^2=73^2$. This implies that $a=189$ and $b=51$, so our final answer is $189+51+219=\boxed{459}$.
 
  
-
-
 
 
 
@@ -1705,8 +1400,6 @@ We wish to solve the Diophantine equation $a^2+ab+b^2=3^2 \cdot 73^2$. It can be
 
 
 
-
-
 \textbf{Solution (The Geometry Part Using Menelaus)}
 
 
@@ -1756,8 +1449,6 @@ We wish to solve the Diophantine equation $a^2+ab+b^2=3^2 \cdot 73^2$. It can be
 
 
 
-
-
 \textbf{Solution (Coordinate Geometry)}
 
 Let the two $splitting \text{ }line$s be $\overline{MD}$ and $\overline{NE}$. We can approach this problem using coordinates.
@@ -1787,11 +1478,6 @@ We obtain the beautiful equation
  \[b^2+bc+c^2=219^2\]Solving it using modular arithmetic or Eisenstein integers, as shown in the previous solutions, we have $b=51,c=189$. This leads to the final answer $a+b+c=219+51+189=\boxed{459}$
 
  
-
-
- \textbf{Animated Video Solution} 
-
-
 
 
 	\item (\textit{AIME I 2022}) Let $x,$ $y,$ and $z$ be positive real numbers satisfying the system of equations:
@@ -1828,8 +1514,6 @@ First, let define a triangle with side lengths $\sqrt{2x}$, $\sqrt{2z}$, and $l$
 
 
 
-
-
 \textbf{Solution 2 (Condensed Algebraic Trig)}
 
 Let $\sin{A} = \sqrt{\frac{x}{2}}$, $\sin{B} = \sqrt{\frac{y}{2}}$, and $\sin{C} = \sqrt{\frac{z}{2}}$ for some $A,B,C \in (0^\circ,90^\circ)$; therefore, $\cos{A} = \sqrt{\frac{2-x}{2}}$, etc. Dividing all three given equations by $2$, we see that they are equivalent to\begin{align*}\sin(A+B) &= \sin(30^\circ) \\\sin(B+C) &= \sin(45^\circ) \\\sin(C+A) &= \sin(60^\circ),\end{align*}
@@ -1839,8 +1523,6 @@ producing the answer of $\boxed{033}$.
  Remark. Note that liberties have been taken in mathematical rigor in the above solution, especially when dealing with angles $A,B,C$ and the inverse sine function. However, these details do not affect the overall solution and may be carefully checked during the contest if desired; thus we feel justified in leaving them out to emphasize the elegance of the trigonometric substitution.
 
  
-
-
 
 
 
@@ -1879,8 +1561,6 @@ Let $1-x=a;1-y=b;1-z=c$, rewrite those equations
  Since $a^2=b^2+c^2-2bc=\frac{1}{2}$, $m/n = a^2b^2c^2 = a^2(bc)^2 = \frac{1}{2}\left(\frac{1}{4}\right)^2=\frac{1}{32}$  and so the final answer is $\boxed{033}$
 
  
-
-
 
 
 
@@ -1960,8 +1640,6 @@ so $(\alpha, \beta, \gamma) = (15/2^{\circ}, 45/2^{\circ}, 75/2^{\circ})$. Hence
 
 
 
-
-
 \textbf{Solution 6 (Geometric)}
 
 
@@ -1994,14 +1672,6 @@ so $(\alpha, \beta, \gamma) = (15/2^{\circ}, 45/2^{\circ}, 75/2^{\circ})$. Hence
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
- 
-
-
- 
-
-
 
 
 \end{enumerate}

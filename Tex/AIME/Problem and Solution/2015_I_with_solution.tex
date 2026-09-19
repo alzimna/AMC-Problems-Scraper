@@ -23,8 +23,6 @@ We have
 
 
 
-
-
 \textbf{Solution 2}
 
 We see that
@@ -44,8 +42,6 @@ We see that
  $=-38+4\times\frac{20\cdot 19}{2}=-38+760=\boxed{722}.$
 
  
-
-
 
 
 
@@ -107,8 +103,6 @@ Which unsurprisingly gives us $\boxed{722}.$
 
 
 
-
-
 \textbf{Solution 4 (Cheezy Peezy!)}
 
 We can stockpile A onto B, like this, so an expression like $(1 \times 2) + (3 \times 4) + (5 \times 6) + ... + (37\times 38) + 39 - [(2 \times 3) + (4 \times 5) + ... + (38 \times 39) +1]$ is formed. This can be achieved by rearranging the one in this expression to be under the 39, so that there are neat even multpiles. 
@@ -125,8 +119,6 @@ We can stockpile A onto B, like this, so an expression like $(1 \times 2) + (3 \
 
 
 
-
-
 \textbf{Solution 5 (Summation Notation)}
 
 We have\begin{align*}A&=39+\sum_{k=1}^{19}(2k-1)2k\\&=39+\sum_{k=1}^{19}4k^2-2k\\\end{align*}
@@ -135,8 +127,6 @@ Therefore,
  \[B-A=\left(\sum_{k=1}^{19}(4k^2+2k)-(4k^2-2k)\right)-38=\left(\sum_{k=1}^{19}4k\right)-38=760-38=\boxed{722}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) The nine delegates to the Economic Cooperation Conference include $2$ officials from Mexico, $3$ officials from Canada, and $4$ officials from the United States. During the opening session, three of the delegates fall asleep. Assuming that the three sleepers were determined randomly, the probability that exactly two of the sleepers are from the same country is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -181,8 +171,6 @@ One of the best ways to solve this problem is to use PIE, or the Principle of In
 
 
 
-
-
 \textbf{Solution 2}
 
 The total number of ways to pick $3$ officials from $9$ total is $\binom{9}{3} = 84$, which will be our denominator. Now we can consider the number of ways for exactly two sleepers to be from the same country for each country individually and add them to find our numerator:
@@ -196,8 +184,6 @@ The total number of ways to pick $3$ officials from $9$ total is $\binom{9}{3} =
                 Thus, the fraction is $\frac{7+18+30}{84} = \frac{55}{84}$. Since this does not reduce, the answer is $55+84=\boxed{139}$.
 
  
-
-
 
 
 
@@ -217,8 +203,6 @@ Like in the solution above, there are $84$ ways to pick  $3$ delegates. We can u
 
 
 
-
-
 \textbf{Solution 4 (Easy Casework)}
 
 Let us take this step-by-step.
@@ -232,8 +216,6 @@ Let us take this step-by-step.
  Thus, adding these up our total probability is $\frac{55}{84}$. Adding the numerator and denominator gives us our desired $55+84=\boxed{139}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) There is a prime number $p$ such that $16p+1$ is the cube of a positive integer.  Find $p$.
@@ -270,8 +252,6 @@ Let the positive integer mentioned be $a$, so that $a^3 = 16p+1$. Note that $a$ 
 
 
 
-
-
 \textbf{Solution 2 (Similar to 1)}
 
 Observe that this is the same as $16p+1=n^3$ for some integer $n$.So:
@@ -296,8 +276,6 @@ Observe that this is the same as $16p+1=n^3$ for some integer $n$.So:
 
 
 
-
-
 \textbf{Solution 3}
 
 Since $16p+1$ is odd, let $16p+1 = (2a+1)^3$. Therefore, $16p+1 = (2a+1)^3 = 8a^3+12a^2+6a+1$. From this, we get $8p=a(4a^2+6a+3)$. We know $p$ is a prime number and it is not an even number. Since $4a^2+6a+3$ is an odd number, we know that $a=8$.
@@ -305,8 +283,6 @@ Since $16p+1$ is odd, let $16p+1 = (2a+1)^3$. Therefore, $16p+1 = (2a+1)^3 = 8a^
  Therefore, $p=4a^2+6a+3=4*8^2+6*8+3=\boxed{307}$.
 
  
-
-
 
 
 
@@ -318,15 +294,11 @@ Let $16p+1=a^3$. Realize that $a$ congruent to $1\mod 4$, so let $a=4n+1$. Expan
 
 
 
-
-
 \textbf{Solution 5}
 
 Notice that $16p+1$ must be in the form $(a+1)^3 = a^3 + 3a^2 + 3a + 1$. Thus $16p = a^3 + 3a^2 + 3a$, or $16p = a\cdot (a^2 + 3a + 3)$. Since $p$ must be prime, we either have $p = a$ or $a = 16$. Upon further inspection and/or using the quadratic formula, we can deduce $p \neq a$. Thus we have $a = 16$, and $p = 16^2 + 3\cdot 16 + 3 = \boxed{307}$.
 
  
-
-
 
 
 
@@ -342,15 +314,11 @@ Notice that the cube 16p+1 is congruent to 1 mod 16. The only cubic numbers that
 
 
 
-
-
 \textbf{Solution 7}
 
 If $16p+1 =k$, we have $k \equiv 1 \mod 16$, so $k^3 \equiv 1 \mod 16$. If $k=1$ we have $p=0$, which is not prime. If $k=17$ we have $16p+1=4913$, or $p=\boxed{307}$
 
  
-
-
 
 
 
@@ -363,8 +331,6 @@ Notice that:
  Here, we can see a clear pattern that $n^3=(n-1)p+1$, where $p$ is some positive (not necessarily prime) integer. Hence, the equation $16p+1=a^3$ can interpret as $17^3 = 16p+1$. Solving it, we got $p=307$. After checking all possible divisors, we will find that $307$ is prime. Hence, we got $p=\boxed{307}$.
 
  
-
-
 
 
 
@@ -383,8 +349,6 @@ We see that $16p+1=n^3$ for a positive integer $n$. Subtracting $1$, we can turn
 
 
 
-
-
 \textbf{Solution 10 (Lengthy Brute Force)}
 
 Recognizing that AIME answers are $0$ through $999$, the numbers whose cube could even be in contention to be equal to $16p + 1$ are $4-25$. The cubes of $1-3$ are all below $17$. We might consider $1$, but that would result in a $p$ of $0$, which is not prime and does not follow our given conditions. We can also see that $16p + 1$ must be an odd number. Hence, we brute force by looking at all cubes of odd numbers in $5-25$ until we get that the cube of $17$, $4913$, works when $p=\boxed{307}$
@@ -392,8 +356,6 @@ Recognizing that AIME answers are $0$ through $999$, the numbers whose cube coul
  Solution by: armang32324
 
  
-
-
 
 
 
@@ -407,8 +369,6 @@ What if we say our perfect cube is $x^3$? Then when we solve for $p$, we get:
  \[\]~Namish Dour
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) Point $B$ lies on line segment $\overline{AC}$ with $AB=16$ and $BC=4$. Points $D$ and $E$ lie on the same side of line $AC$ forming equilateral triangles $\triangle ABD$ and $\triangle BCE$. Let $M$ be the midpoint of $\overline{AE}$, and $N$ be the midpoint of $\overline{CD}$. The area of $\triangle BMN$ is $x$. Find $x^2$.
@@ -433,8 +393,6 @@ Let $A$ be the origin, so $B=(16,0)$ and $C=(20,0).$ Using equilateral triangle 
  so $x^2=\boxed{507}.$
 
  
-
-
 
 
 
@@ -471,8 +429,6 @@ Note: A much easier way to go about finding $BM$ without having to use Stewart's
 
 
 
-
-
 \textbf{Solution 3}
 
 
@@ -501,8 +457,6 @@ Note: A much easier way to go about finding $BM$ without having to use Stewart's
 
 
 
-
-
 \textbf{Solution 4 (Computational Geometry)}
 
 Take some time understanding that this solution is not a tautology of Solution 1.
@@ -521,8 +475,6 @@ Take some time understanding that this solution is not a tautology of Solution 1
  Finally, Shoelace formula on figure $BMN$ yields the desired $\mathcal{X} = 13\sqrt{3}$, thus implying $\mathcal{X}^2 = \boxed{507}$. $\square$
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) In a drawer Sandy has $5$ pairs of socks, each pair a different color.  On Monday, Sandy selects two individual socks at random from the $10$ socks in the drawer.  On Tuesday Sandy selects $2$ of the remaining $8$ socks at random, and on Wednesday two of the remaining $6$ socks at random.  The probability that Wednesday is the first day Sandy selects matching socks is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -552,16 +504,12 @@ The order of the days doesn't matter, therefore we can solve backwards.
 
 
 
-
-
 \textbf{Solution 2}
 
 The key is to count backwards. First, choose the pair which you pick on Wednesday in $5$ ways. Then there are four pairs of socks for you to pick a pair of on Tuesday, and you don't want to pick a pair. Since there are $4$ pairs, the number of ways to do this is $\dbinom{8}{2}-4$. Then, there are two pairs and two nonmatching socks for you to pick from on Monday, a total of $6$ socks. Since you don't want to pick a pair, the number of ways to do this is $\dbinom{6}{2}-2$. Thus the answer is
  \[\dfrac{\left(5\right)\left(\dbinom{8}{2}-4\right)\left(\dbinom{6}{2}-2\right)}{\dbinom{10}{2}\dbinom{8}{2}\dbinom{6}{2}}=\dfrac{26}{315}.\]$26 + 315 = \boxed{341}$.
 
  
-
-
 
 
 
@@ -580,8 +528,6 @@ For the first sock, note that to pick two different socks, can complementary cou
 
 
 
-
-
 \textbf{Solution 4}
 
 This problem is very very similar to \href{https://artofproblemsolving.com/wiki/index.php/2014\_UNCO\_Math\_Contest\_II\_Problems/Problem\_7}{https://artofproblemsolving.com/wiki/index.php/2014\_UNCO\_Math\_Contest\_II\_Problems/Problem\_7}. I will use the results I derived there.We have already established that the probability we get a mismatch on Wednesday GIVEN that there is a mismatch on Monday, Tuesday is $\frac{112}{125}$, meaning the probability for match is $\frac{13}{125}$. Now, we find the probability that Monday,Tuesday are a mismatch and product it with this.Monday: 
@@ -591,8 +537,6 @@ This problem is very very similar to \href{https://artofproblemsolving.com/wiki/
  \[\implies P = \frac{8}{9} \cdot \frac{25}{28} \cdot \frac{13}{125} = \boxed{\frac{26}{315}}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) Point $A,B,C,D,$ and $E$ are equally spaced on a minor arc of a circle. Points $E,F,G,H,I$ and $A$ are equally spaced on a minor arc of a second circle with center $C$ as shown in the figure below. The angle $\angle ABD$ exceeds $\angle AHG$ by $12^\circ$. Find the degree measure of $\angle BAG$.
@@ -644,8 +588,6 @@ Let $O$ be the center of the circle with $ABCDE$ on it.
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $m$ be the degree measurement of $\angle GCH$. Since $G,H$ lie on a circle with center $C$, $\angle GHC=\frac{180-m}{2}=90-\frac{m}{2}$. 
@@ -668,8 +610,6 @@ Let $m$ be the degree measurement of $\angle GCH$. Since $G,H$ lie on a circle w
 
 
  
-
-
 
 
 
@@ -698,11 +638,6 @@ Let $m$ be the degree measurement of $\angle GCH$. Since $G,H$ lie on a circle w
 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2015}) In the diagram below, $ABCD$ is a square. Point $E$ is the midpoint of $\overline{AD}$. Points $F$ and $G$ lie on $\overline{CE}$, and $H$ and $J$ lie on $\overline{AB}$ and $\overline{BC}$, respectively, so that $FGHJ$ is a square. Points $K$ and $L$ lie on $\overline{GH}$, and $M$ and $N$ lie on $\overline{AD}$ and $\overline{AB}$, respectively, so that $KLMN$ is a square. The area of $KLMN$ is 99. Find the area of $FGHJ$.
@@ -747,8 +682,6 @@ Now, examine $BC$. We know $BC=BJ+JC$, and triangles $\Delta BHJ$ and $\Delta JF
  Now, it is trivial to see that $[FJGH]=\left(\frac{x}{y}\right)^2[KLMN]=\left(\frac{7}{3}\right)^2\cdot 99=\boxed{539}.$
 
  
-
-
 
 
 
@@ -807,15 +740,11 @@ Now, examine $BC$. We know $BC=BJ+JC$, and triangles $\Delta BHJ$ and $\Delta JF
 
 
 
-
-
 \textbf{Solution 3}
 
 This is the quickest solution. We see that with a ruler, $KL = \frac{3}{2}$ cm and $HG = \frac{7}{2}$ cm. Thus if $KL$ corresponds with an area of $99$, then $HG$ ($FGHJ$'s area) would correspond with $99*(\frac{7}{3})^2 = \boxed{539}$ - aops5234
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) For positive integer $n$, let $s(n)$ denote the sum of the digits of $n$.  Find the smallest positive integer satisfying $s(n) = s(n+864) = 20$.
@@ -877,8 +806,6 @@ So the answer is $\boxed{695}$ which after a quick test, does indeed work.
 
 
 
-
-
 \textbf{Solution 2}
 
 First, it is easy to verify that $695$ works and that no other numbers beginning with the digit 6 work (i.e. $686, 677, 668, 659$ do not work).
@@ -891,15 +818,11 @@ First, it is easy to verify that $695$ works and that no other numbers beginning
 
 
 
-
-
 \textbf{Solution 3}
 
 First of all, notice that the smallest $n$ with $s(n) = 20$ is $299$. Also, if $s(n + 864) = 20$, $s(n - 136) = 19$ (because subtracting $1000$ from the number removes the $1$ in the thousands place). After checking $s(n - 136)$ for various $n$ with $s(n) = 20$, we see that we need to have a carry when subtracting $136$. To have this, we must either have a $2$ in the tens place or a $5$ in the units place. The minimum $n$ for the former is $929$, and for the latter it is $695$. We check and see that $s(695-136) = s(559) = 19$, so our answer is $\boxed{695}$.
 
  
-
-
 
 
 
@@ -920,8 +843,6 @@ Observation (Lemma) : If r is the number of regroups in the addition of n+k, $S
  -AlexLikeMath
 
  
-
-
 
 
 
@@ -965,8 +886,6 @@ Now you have +1, -1, -4, +4 in the decimals, and a VERY fast trial and error giv
 
 
 
-
-
 \textbf{Solution 6 (Fast)}
 
 First, note that to compute $s(m+n)$ (for any positive integers $m$ and $n$), one can simply find the sum of $s(m)$ and $s(n)$ minus 9 times the number of times one regroups when adding $m$ to $n$.  One can see why this is by noticing that if one were to "forget" to regroup, and leave, say, a 10 in  the ones' place, the sum of the digits would be 9 higher than if one did regroup.  Anyway, one can see that the smallest 3-digit number (on AIME, all the answers are integers from 0 to 999) whose digits sum to 20 is 299.  If we add this number to 864, we have to regroup 3 times, so $s(299+864)$ will be $9=9\cdot3-(8+6+4)$ smaller than $s(299)$.  We want this difference to be 0, so we need to find a way to only regroup two times.
@@ -981,8 +900,6 @@ We find that to preventing regrouping the ones, the ones' place of our number mu
 
 
 
-
-
 \textbf{Solution 7 (Bad Solution)}
 
 Bashing out modulo $9$ and getting lucky we get that if the $8$ and $6$ carry over when adding $n$ and $864$, that $100a+10b+c \equiv 1+100(a-1)+10(b-4)+c+4 \pmod{9}$ such that $n=100a+10b+c$ and after maximizing $b$ and $c$ such that $c<6$ to not make the $4$ carry over to minimize $a$ we get that $\boxed{695}$ is our answer after confirming there are no lesser solutions.
@@ -990,8 +907,6 @@ Bashing out modulo $9$ and getting lucky we get that if the $8$ and $6$ carry ov
  Note: If the sum of the digits are equal, they are also the same modulo $9$.~SirAppel
 
  
-
-
 
 
 
@@ -1038,8 +953,6 @@ Let $n=100a+10b+c$, then we have $a+b+c=20$. Note that the digits of the number 
  
 
 
-
-
 	\item (\textit{AIME I 2015}) Let $S$ be the set of all ordered triple of integers $(a_1,a_2,a_3)$ with $1 \le a_1,a_2,a_3 \le 10$. Each ordered triple in $S$ generates a sequence according to the rule $a_n=a_{n-1}\cdot | a_{n-2}-a_{n-3} |$ for all $n\ge 4$. Find the number of such sequences for which $a_n=0$ for some $n$.
 
 
@@ -1075,8 +988,6 @@ Therefore, the only scenarios where $a_n=0$ is when any of the following are met
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that the only way for a $0$ to be produced at $a_n$ is if either $a_{n-1} = 0$ or $a_{n-2} = a_{n-3}$. Since the first one will eventually get to the first three assuming that there is no $a_{n-2} = a_{n-3}$ for any $n$, that is not possible because $a_1 , a_2 , a_3 >= 1$. Therefore, we need $a_{n - 2} = a_{n - 3}$. 
@@ -1094,8 +1005,6 @@ Note that the only way for a $0$ to be produced at $a_n$ is if either $a_{n-1} =
  Therefore, our answer is $190 + 290 + 14 = \boxed{494}$.Solution by hyxue
 
  
-
-
 
 
 
@@ -1134,11 +1043,6 @@ Note that $a_n=0$ for some index $n$ is equivalent to $a_{n-2}=a_{n-3}$. We proc
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME I 2015}) Let $f(x)$ be a third-degree polynomial with real coefficients satisfying
 
  \[|f(1)|=|f(2)|=|f(3)|=|f(5)|=|f(6)|=|f(7)|=12.\] Find $|f(0)|$.
@@ -1169,16 +1073,12 @@ Let $f(x)$ = $ax^3+bx^2+cx+d$.Since $f(x)$ is a third degree polynomial, it can 
 
 
 
-
-
 \textbf{Solution 2}
 
 By drawing the function, and similar to Solution 1, WLOG let $f(1)=f(5)=f(6)=12$. Then, $f(2)=f(3)=f(7)$. Set $g(x)+12=f(x)$. Then the roots of $g(x)$ are $1,5,6$. So, $g(x)=a(x-1)(x-5)(x-6)$. Plug in $x=2$ to find a. We know 
  \[-24=-12-12=f(2)-12=g(2)=a(1)(-3)(-4)=12a\].So, $a=-2$. Thus, $f(x)=g(x)+12=-2(x-1)(x-5)(x-6)+12$, and then $|f(0)|=60+12=\boxed{072}$.
 
  
-
-
 
 
 
@@ -1195,8 +1095,6 @@ Without loss of generality, let $f(1) = 12$. (If $f(1) = -12$, then take $-f(x)$
 
 
 
-
-
 \textbf{Solution 4}
 
 The following solution is similar to solution 3, but assumes nothing. Let $g(x)=(f(x))^2-144$. Since $f$ has degree 3, $g$ has degree 6 and has roots 1,2,3,5,6, and 7. Therefore, $g(x)=k(x-1)(x-2)(x-3)(x-5)(x-6)(x-7)$ for some $k$. Hence $|f(0)|=\sqrt{g(0)+144}=\sqrt{1260k+144}$. Note that $g(x)=(f(x)+12)(f(x)-12)$. Since $f$ has degree 3, so do $f(x)+12$ and $f(x)-12$; and both have the same leading coefficient. Hence $f(x)+12=a(x-q)(x-r)(x-s)$ and $f(x)-12=a(x-t)(x-u)(x-v)$ for some $a\neq 0$ (else $f$ is not cubic) where $\{q,r,s,t,u,v\}$ is the same as the set $\{1,2,3,5,6,7\}$. Subtracting the second equation from the first, expanding, and collecting like terms, we have that 
@@ -1206,8 +1104,6 @@ The following solution is similar to solution 3, but assumes nothing. Let $g(x)=
 
 
  
-
-
 
 
 
@@ -1226,15 +1122,11 @@ Express $f(x)$ in terms of powers of $(x-4)$:
 
 
 
-
-
 \textbf{Solution 6 (Finite differences)}
 
 Because a cubic must come in a "wave form" with two points of inflection, we can see that $f(1)=f(5)=f(6)$, and $f(2)=f(3)=f(7)$. By symmetry, $f(4)=0$. Now, WLOG let $f(1)=12$, and $f(2)=f(3)=-12$. Then, we can use finite differences to get that the third (constant) difference is $12$, and therefore $f(0)=12+(24+(24+12))=\boxed{072}$.
 
  
-
-
 
 
 
@@ -1247,8 +1139,6 @@ We can rewrite our function as two different cubics, $f(x)=k(x-a)(x-b)(x-c)\pm12
 
 
  
-
-
 
 
 
@@ -1265,15 +1155,11 @@ We can rewrite the function as $f(x) - 12 = z(x-1)(x-5)(x-6)$ and $f(x) + 12 = z
 
 
 
-
-
 \textbf{Solution 9 (Cheese Solution)}
 
 Let the leading coefficient of  $f(x)$ be $a$. Then, it is obvious that $(f(x) - 12)(f(x) + 12) = a^2(x - 1)(x - 2)(x - 3)(x - 5)(x - 6)(x - 7)$. Let us now, let $x = 0$. We then have, after cleaning it up nicely, $[f(0)]^2 = 2^2 * 3^2 * (35a^2 + 4)$. We now take the square root of both sides, to obtain $|f(0)|$. So, $|f(0)| = 6 * \sqrt{35a^2 + 4}$. Now, this is the cheese part. Since this is aime, we know that the answer must be an integer, so we assume $a = 2$. Thus, we get $|f(0)| = 6 * \sqrt{144} = 6 * 12 = 072$.
 
  
-
-
 
 
 
@@ -1304,8 +1190,6 @@ Without loss of generality, assume $f(x)$ is monic.
  Let $f(x) = c(x-1)(x-5)(x-6) + 12$ and $f(x) = c(x-2)(x-3)(x-7) - 12$. Then, we have $30c + 12 = 42c - 12$, so $c = 2$. Then, $f(0) = 2(30) + 12 = 60 + 12 = \boxed{72}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) Triangle $ABC$ has positive integer side lengths with $AB=AC$. Let $I$ be the intersection of the bisectors of $\angle B$ and $\angle C$. Suppose $BI=8$. Find the smallest possible perimeter of $\triangle ABC$.
@@ -1346,15 +1230,11 @@ Let $D$ be the midpoint of $\overline{BC}$. Then by SAS Congruence, $\triangle A
 
 
 
-
-
 \textbf{Solution 2 (No Trig)}
 
 Let $AB=x$ and the foot of the altitude from $A$ to $BC$ be point $E$ and $BE=y$. Since ABC is isosceles, $I$ is on $AE$. By Pythagorean Theorem, $AE=\sqrt{x^2-y^2}$. Let $IE=a$ and $IA=b$. By Angle Bisector theorem, $\frac{y}{a}=\frac{x}{b}$. Also, $a+b=\sqrt{x^2-y^2}$. Solving for $a$, we get $a=\frac{\sqrt{x^2-y^2}}{1+\frac{x}{y}}$. Then, using Pythagorean Theorem on $\triangle BEI$ we have $y^2+\left(\frac{\sqrt{x^2-y^2}}{1+\frac{x}{y}}\right)^2=8^2=64$. Simplifying, we have $y^2+y^2\frac{x^2-y^2}{(x+y)^2}=64$. Factoring out the $y^2$, we have $y^2\left(1+\frac{x^2-y^2}{(x+y)^2}\right)=64$. Adding 1 to the fraction and simplifying, we have $\frac{y^2x(x+y)}{(x+y)^2}=32$. Crossing out the $x+y$, and solving for $x$ yields $32y = x(y^2-32)$. Then, we continue as Solution 1 does.
 
  
-
-
 
 
 
@@ -1376,15 +1256,11 @@ Let $AB=x$, call the midpoint of $BC$ point $E$, call the point where the incirc
 
 
 
-
-
 \textbf{Solution 4}
 
 Angle bisectors motivate trig bash. Define angle $IBC = x$. Foot of perpendicular from $I$ to $BC$ is point $P$. $\overline{BC} = 2\overline{BP} = 2(8\cos(x)) = N$, where $N$ is an integer. Thus, $\cos(x) = \frac{N}{16}$. Via double angle, we calculate $\overline{AB}$ to be $\frac{8\cos(x)}{2\cos(x)^2 - 1} = \frac{64N}{N^2 - 128}$. This is to be an integer.  We can bound $N$ now, as $N > 11$ to avoid negative values and $N < 16$ due to triangle inequality. Testing, $N = 12$ works, giving $\overline{AB} = 48, \overline{BC} = 12$.Our answer is $2 * 48 + 12 = \boxed{108}$.- whatRthose
 
  
-
-
 
 
 
@@ -1410,11 +1286,6 @@ Angle bisectors motivate trig bash. Define angle $IBC = x$. Foot of perpendicula
 
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2015}) Consider all 1000-element subsets of the set $\{ 1, 2, 3, ... , 2015 \}$.  From each such subset choose the least element.  The arithmetic mean of all of these least elements is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers.  Find $p + q$.
@@ -1446,8 +1317,6 @@ Using the definition of binomial coefficient and the identity $n! = n \cdot (n-1
 
 
 
-
-
 \textbf{Solution 2}
 
 Each 1000-element subset $\left\{ a_1, a_2,a_3,...,a_{1000}\right\}$ of $\left\{1,2,3,...,2015\right\}$ with $a_1<a_2<a_3<...<a_{1000}$ contributes $a_1$ to the sum of the least element of each subset. Now, consider the set $\left\{a_1+1,a_2+1,a_3+1,...,a_{1000}+1\right\}$. There are $a_1$ ways to choose a positive integer $k$ such that $k<a_1+1<a_2+1,a_3+1<...<a_{1000}+1$ ($k$ can be anything from $1$ to $a_1$ inclusive). Thus, the number of ways to choose the set $\left\{k,a_1+1,a_2+1,a_3+1,...,a_{1000}+1\right\}$ is equal to the sum. But choosing a set $\left\{k,a_1+1,a_2+1,a_3+1,...,a_{1000}+1\right\}$ is the same as choosing a 1001-element subset from $\left\{1,2,3,...,2016\right\}$! 
@@ -1455,8 +1324,6 @@ Each 1000-element subset $\left\{ a_1, a_2,a_3,...,a_{1000}\right\}$ of $\left\{
  Thus, the average is $\frac{\binom{2016}{1001}}{\binom{2015}{1000}}=\frac{2016}{1001}=\frac{288}{143}$. Our answer is $p+q=288+143=\boxed{431}$.
 
  
-
-
 
 
 
@@ -1482,8 +1349,6 @@ Let $p$ be the size of the large set and $q$ be the size of the subset (i.e. in 
 
 
 
-
-
 \textbf{Solution 4 (short)}
 
 In the "average case", the numbers evenly partition the interval [0,2016] into 1001 parts. Then because it asks for the expected value of the least element the answer is $\frac{2016}{1001}$.
@@ -1493,8 +1358,6 @@ In the "average case", the numbers evenly partition the interval [0,2016] into 1
  VIEWER NOTE: This solution doesn't always work, for example, take $n^2$ on $[0,1]$. The "average case" is $n=\frac{1}{2}\implies n^2=\frac{1}{4}$ but integrating $n^2$ from $0$ to $1$ we see that definitely is not the case. This works only in certain situations, so maybe this solution would be better off with proof that this is one of those situations.
 
  
-
-
 
 
 
@@ -1528,11 +1391,28 @@ When it says average, it really just means expected value. Let's do casework.
 
  -jb2015007
 
- \textbf{Generalization} \href{https://artofproblemsolving.com/wiki/index.php/1981\_IMO\_Problems/Problem\_2}{https://artofproblemsolving.com/wiki/index.php/1981\_IMO\_Problems/Problem\_2}
-
  
 
 
+
+\textbf{Solution 6}
+
+By 1981 IMO P2, for a collection of $r$ elements from an $n$ element set the arithmetic mean of these smallest sets is $\frac{n+1}{r+1}$. Thus, the average is $\frac{2016}{1001} = \frac{288}{143} \implies \boxed{431}$.
+
+ We will also attempt to solve this traditionally.
+
+ There are $\binom{2015}{1000}$ subsets. The largest "minimum" element would be 1016, which appears once. The second largest would be 1015, which appears exactly $\binom{2015-1015}{999} = \binom{1000}{999}$ times. Indeed, summing over all such $k$, we see that the numerator is
+ \[\sum_{k=1}^{1016} k\binom{2015-k}{999}\].
+ \[= \sum_{j=1}^{1016} \sum_{k=j}^{1016} \binom{2015-j}{999}\]
+ \[= \sum_{j=1}^{1016} (\binom{2016-j}{1000})\]
+ \[x = 2016-j, \sum_{x=1000}^{2015} \binom{x}{1000}\]
+ \[= \binom{2016}{1001}\].
+
+ So the mean is $\frac{\binom{2016}{1001}}{\binom{2015}{1000}} = \frac{288}{143} \implies \boxed{431} \quad \square$.
+
+ I will make a proof for the IMO variant of this problem later.
+
+ 
 
 
 	\item (\textit{AIME I 2015}) With all angles measured in degrees, the product $\prod_{k=1}^{45} \csc^2(2k-1)^\circ=m^n$, where $m$ and $n$ are integers greater than 1. Find $m+n$.
@@ -1557,8 +1437,6 @@ Let $x = \cos 1^\circ + i \sin 1^\circ$. Then from the identity
  \[\frac{1}{M} = \dfrac{1}{2^{90}}|1 - x^2| |1 - x^6| \dots |1 - x^{358}| = \dfrac{1}{2^{90}} |1^{90} + 1| = \dfrac{1}{2^{89}}.\]It is easy to see that $M = 2^{89}$ and that our answer is $2 + 89 = \boxed{091}$.
 
  
-
-
 
 
 
@@ -1588,8 +1466,6 @@ Let $p=\sin1\sin3\sin5...\sin89$
 
 
 
-
-
 \textbf{Solution 3}
 
 Similar to Solution $2$, so we use $\sin{2\theta}=2\sin\theta\cos\theta$ and we find that:
@@ -1605,8 +1481,6 @@ Of course, $\sin(45)=2^{-\frac{1}{2}}$ is missing, so we multiply it to both sid
  \[\csc^2(1)\csc^2(3)\csc^2(5)\csc^2(7)\cdots\csc^2(83)\csc^2(85)\csc^2(87)\csc^2(89)=\left(\frac{1}{2^{-\frac{89}{2}}}\right)^2=\left(2^{\frac{89}{2}}\right)^2=2^{89}\]The answer is therefore $m+n=(2)+(89)=\boxed{091}$.
 
  
-
-
 
 
 
@@ -1630,8 +1504,6 @@ Let $p=\prod_{k=1}^{45} \csc^2(2k-1)^\circ$.
 
 
 
-
-
 \textbf{Solution 5}
 
 Once we have the tools of complex polynomials there is no need to use the tactical tricks. Everything is so basic (I think).
@@ -1649,8 +1521,6 @@ Once we have the tools of complex polynomials there is no need to use the tactic
 
 
 
-
-
 \textbf{Solution 6}
 
 Recall that $\sin\alpha\cdot \sin(60^{\circ}-\alpha)\cdot \sin(60^{\circ}+\alpha)=\frac{1}{4}\cdot \sin3\alpha$Since it is in csc, we can write in sin and then take reciprocal.We can group them by threes, $P=(\sin1^{\circ}\cdot \sin59^{\circ}\cdot \sin61^{\circ})\cdots(\sin29^{\circ}\cdot \sin31^{\circ}\cdot \sin89^{\circ})$. Thus
@@ -1658,8 +1528,6 @@ Recall that $\sin\alpha\cdot \sin(60^{\circ}-\alpha)\cdot \sin(60^{\circ}+\alpha
 So we take reciprocal, $\frac 1P=2^{\frac{89}{2}}$, the desired answer is $\frac{1}{P^2}=2^{89}$ leads to answer $\boxed{091}$
 
  
-
-
 
 
 
@@ -1695,8 +1563,6 @@ We have
 
 
 
-
-
 \textbf{Solution 8}
 
 Consider the product $\prod_{k=1}^{45} \csc^2(2k-1) = \prod_{k=45}^{1} \sec^2(2k-1) = \prod_{k=1}^{45} \sec^2(2k-1) =  \prod_{k=1}^{45} (1+\tan^2(2k-1))$ However, note that the $45$ numbers in the form $\sqrt{\tan^2(2k-1)} = \tan(2k-1)$ for $1\le{k}\le{45}$ are precisely the roots of the equation $\frac{1}{\tan{(\tan^{-1}{90x}})} = 0$. Thus, it suffices to find $|P(-1)|$, where $P$ is the polynomial formed by the denominator of $\tan{(\tan^{-1}{90\sqrt{x}})}$. This is true because $\prod_{k=1}^{45} (x-\tan^2(2k-1)) = \prod_{k=1}^{45} -(-x+\tan^2(2k-1))$ gives us the factored root form of the equation where $P$ is undefined, which corresponds to the equation where the denominator equals $0$. 
@@ -1706,8 +1572,6 @@ Consider the product $\prod_{k=1}^{45} \csc^2(2k-1) = \prod_{k=45}^{1} \sec^2(2k
  From here, there are two ways to finish; the first is to recognize the well known sum $\sum_{n=0} ^{k} \binom{2k}{2n} = 2^(2k-1)$, from which we may plug in $k = 45$ to see $|P(-1)| = 2^(45*2-1) = 2^{89}$ to obtain the answer of $2+89=\boxed{091}$. Otherwise, you may split the previous sum; $\sum_{n=0} ^{45} \binom{90}{2n} = \sum_{n=0} ^{45} \binom{89}{2n-1} + \binom{89}{2n} = \sum_{n=0} ^{89} \binom{89}{n} = 2^{89}$, which also gives the correct answer. $\blacksquare$
 
  
-
-
 
 
 
@@ -1725,8 +1589,6 @@ Let $g(x)=\frac{x^{90}-1}{x-1}$, we have
  \[\prod_{k=1}^{45} \csc^2(2k-1)^\circ=\frac{\left(\prod_{k=1}^{45}\sin{2k^{\circ}}\right)^{2}}{\left(\prod_{k=1}^{90}\sin{k^{\circ}}\right)^2}=\frac{90}{2^{89}}\cdot \frac{2^{179}}{180}=2^{89}\]The requested sum is $2+89=\boxed{091}$
 
  
-
-
 
 
 	\item (\textit{AIME I 2015}) For each integer $n \ge 2$, let $A(n)$ be the area of the region in the coordinate plane defined by the inequalities $1\le x \le n$ and $0\le y \le x \left\lfloor \sqrt x \right\rfloor$, where $\left\lfloor \sqrt x \right\rfloor$ is the greatest integer not exceeding $\sqrt x$. Find the number of values of $n$ with $2\le n \le 1000$ for which $A(n)$ is an integer.
@@ -1772,8 +1634,6 @@ Let $n\ge 2$ and define $a(n) = \left\lfloor \sqrt n \right\rfloor$. For $2\le n
 
 
 
-
-
 \textbf{Solution 2}
 
 By considering the graph of this function, it is shown that the graph is composed of trapezoids ranging from $a^2$ to $(a+1)^2$ with the top made of diagonal line $y=ax$. The width of each trapezoid is $3, 5, 7$, etc. Whenever $a$ is odd, the value of $A(n)$ increases by an integer value, plus $\frac{1}{2}$. Whenever $a$ is even, the value of $A(n)$ increases by an integer value. Since each trapezoid always has an odd width, every value of $n$ is not an integer when $a \pmod{4} \equiv 2$, and is an integer when $a \pmod{4} \equiv 0$. Every other value is an integer when $a$ is odd. Therefore, it is simply a matter of determining the number of values of $n$ where $a \pmod{4} \equiv 0$ ($(5^2-4^2)+(9^2-8^2)+...+(29^2-28^2)$), and adding the number of values of $n$ where $a$ is odd ($\frac{(2^2-1^2)+(4^2-3^2)+...+(30^2-29^2)+(1000-31^2)}{2}$). Adding the two values gives $231+252=\boxed{483}$.
@@ -1788,13 +1648,11 @@ By considering the graph of this function, it is shown that the graph is compose
 
 
 
-
-
 \textbf{Solution 4 (Integration)}
 
 We see that
- \[A(n)=\int_{1}^{n}x\lfloor \sqrt{x}\rfloor \,dx\]Let $n\in [a^2, (a+1)^2)$ for $1\le a \le 31$, we see that\begin{align*}\int_{1}^{n}x\lfloor \sqrt{x}\rfloor\,dx&= \left(\sum_{k=1}^{a-1}\int_{k^2}^{(k+1)^2}kx \,dx\right)+\int_{a^2}^{n}ax \,dx\\&=\left(\sum_{k=1}^{a-1}\frac{k(2k+1)\bigl[(k+1)^2+k^2\bigr]}{2}\right)+\frac{a(n^2-a^4)}{2}\end{align*}
-Let $S(a)= \sum_{k=1}^{a-1}\frac{k(2k+1)\bigl[(k+1)^2+k^2\bigr]}{2}$. Let $\{x\}=x-\lfloor x\rfloor$ denote the fractional part of $x$. We see that\begin{align*}&2\mid k \implies \frac{k(2k+1)[(k+1)^2+k^2]}{2}\in \mathbf{Z}\\&2\nmid k \implies \{\frac{k(2k+1)[(k+1)^2+k^2]}{2}\}=\frac{1}{2}\end{align*}
+ \[A(n)=\int_{1}^{n}x\lfloor \sqrt{x}\rfloor \,dx\]Let $n\in [a^2, (a+1)^2)$ for $1\le a \le 31$, computing the integral:\begin{align*}\int_{1}^{n}x\lfloor \sqrt{x}\rfloor\,dx&= \left(\sum_{k=1}^{a-1}\int_{k^2}^{(k+1)^2}kx \,dx\right)+\int_{a^2}^{n}ax \,dx\\&=\left(\sum_{k=1}^{a-1}\frac{k(2k+1)\bigl[(k+1)^2+k^2\bigr]}{2}\right)+\frac{a(n^2-a^4)}{2}\end{align*}
+Let $S(a)= \sum_{k=1}^{a-1}\frac{k(2k+1)\bigl[(k+1)^2+k^2\bigr]}{2}$. Let $\{x\}=x-\lfloor x\rfloor$ denote the fractional part of $x$. We see that\begin{align*}&2\mid k \implies \frac{k(2k+1)[(k+1)^2+k^2]}{2}\in \mathbf{Z}\\&2\nmid k \implies \left\{\frac{k(2k+1)[(k+1)^2+k^2]}{2}\right\}=\frac{1}{2}\end{align*}
 By casework on $a\bmod{4}$, we find:\begin{array}{c|c|c|c}a \bmod 4 & \{S(a)\} & \text{desired }\{\frac{a(n^2-a^4)}{2}\} & \text{condition needed for } n \\ \hline0 & 0 & 0 & \text{all }n \\1 & 0 & 0 & \text{odd} \\2 & 1/2 & 1/2 & \text{no solution} \\3 & 1/2 & 1/2 & \text{even}\end{array}There are strictly $2a+1$ integers in the interval $[a^2,(a+1)^2)$. For \textbf{Case 1}, the number of values of $n$ is
  \[\sum_{k=1}^{7}8k+1=231\]For an odd integer $a$, the number of odd integers in the interval $[a^2,(a+1)^2)$ is $a+1$. For \textbf{Case 2}, we have
  \[\sum_{k=0}^{7}4k+2=128\]There are no desired values of $n$ for \textbf{Case 3}. 
@@ -1804,14 +1662,6 @@ By casework on $a\bmod{4}$, we find:\begin{array}{c|c|c|c}a \bmod 4 & \{S(a)\} &
  \[231+128+136-1-11=\boxed{483}\]
 
  
-
-
- 
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 2015}) A block of wood has the shape of a right circular cylinder with radius $6$ and height $8$, and its entire surface has been painted blue.  Points $A$ and $B$ are chosen on the edge of one of the circular faces of the cylinder so that $\overarc{AB}$ on that face measures $120^\text{o}$.  The block is then sliced in half along the plane that passes through point $A$, point $B$, and the center of the cylinder, revealing a flat, unpainted face on each half.  The area of one of these unpainted faces is $a\cdot\pi + b\sqrt{c}$, where $a$, $b$, and $c$ are integers and $c$ is not divisible by the square of any prime.  Find $a+b+c$.
@@ -1847,8 +1697,6 @@ By casework on $a\bmod{4}$, we find:\begin{array}{c|c|c|c}a \bmod 4 & \{S(a)\} &
 
 
 
-
-
 \textbf{Solution 2}
 
 Label the points same as in the first sentence above. Consider a view of the cylinder such that height is disregarded, i.e. a top view. From this view, note that Cylinder $O$ has become a circle with $\overarc{AB}$ = $\overarc{CD}$ = $120^\text{o}$. Using 30-60-90 triangles, we get rectangle $ABCD$ to have a horizontal component of $6$. Now, consider a side view, such that $A$ and $B$ coincide at the bottom of the diagram. From this view, consider the right triangle composed of hypotenuse $AD$ and a point along the base of the viewpoint, which will be labeled as $E$. From the top view, $AE = 6$. Because of the height of the cylinder, $DE$ is equal to $8$. This makes $AD$ equal to $10$. 
@@ -1857,8 +1705,6 @@ Label the points same as in the first sentence above. Consider a view of the cyl
 Now, the use of simple calculus is required. Conceptualize an infinite number of lines perpendicular to $AE$ intersecting both $AE$ and $AD$. Consider the area between point $A$ and the first vertical line. Label the point where the line intersects AE as E', and the point where the line intersects AD as D'. The area of the part of the initial unpainted face within these two positions approaches a rectangle with length AD' and width $w$. The area of the base within these two positions approaches a rectangle with length AE' and width $w$. The ratio of AD':AE' is 10:6, since the ratio of AD:AE is 10:6. This means that the area of the initial unpainted surface within these two positions to the area of the base within these two positions is equal to 10$w$:6$w$ = 10:6. Through a similar argument, the areas between each set of vertical lines also maintains a ratio of 10:6. Therefore, the ratio of the area we wish to find to the area of the base between AB and CD (from the top perspective) is 10:6. Using 30-60-90 triangles and partial circles, the area of the base between AB and CD is calculated to be $18\sqrt{3}\ + 12 \pi$. The area of the unpainted surface therefore becomes $20\pi + 30\sqrt{3}$, and so our answer is $\boxed{053}$.
 
  
-
-
 
 
 
@@ -1884,8 +1730,6 @@ This problem can be calculus-bashed (for those like me who never noticed the sur
 
 
  
-
-
 
 
 
@@ -1917,8 +1761,6 @@ Evaluate this integral : It comes out to be
  Motivation : Notice that a cross section of any diagonal plane not going through the top or bottom face of the cylinder is an ellipse. When the plane does cross the bottom and top faces, the resulting cross section will be a portion of an ellipse. When the plane is perpendicular to its top and bottom faces, the resulting cross section is a rectangle. So, from the moment the cross section starts cutting both circular faces, to the moment it is perpendicular to the circular bases, it goes from a full ellipse, to a rectangle. Hence, the cross section we want is a part of the ellipse.
 
  
-
-
 
 
 
@@ -1961,14 +1803,7 @@ We see that $B=0, D=-4C, D=3A$. WLOG, let $C=-3$. It follows that the equation f
  Therefore, the surface area element is
  \[\boxed{dS=\sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2}\,dx\,dy}.\]
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
- 
-
-
 
 
 \end{enumerate}

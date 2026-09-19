@@ -10,12 +10,31 @@ import copy
 
 from .config import *
 
+def decode_link(target,item) :
+    if item.find('img') :
+        return target.replace(str(item),item.decode_contents())
+    else :
+        href = item.get("href")
+        temp = r"https://artofproblemsolving.com"
+        if href is not None and (temp in href or "https" in href):
+            temp = href
+        else :
+            temp = temp + href
+        return target.replace(str(item),rf'\href{{{temp}}}{{{item.text}}}')
+
+def decode_par(statement) :
+    soup = BeautifulSoup(statement,"html.parser")
+    cek = ["p","center"]
+    for c in cek :
+        for item in soup.find_all(c) :
+            item.append("\n\n ")
+            item.unwrap()
+    return str(soup)
+
 ACT_PROB = {
     'figure' : lambda target,item : target.replace(str(item),item.decode_contents()),
     'figcaption' : lambda target,item : target.replace(str(item),item.decode_contents()),
     'div' : lambda target,item : target.replace(str(item),item.decode_contents()),
-    'p' : lambda target,item : target.replace(str(item),item.decode_contents()+'\n\n '),
-    'center' : lambda target,item : target.replace(str(item),item.decode_contents()),
     r'^h\d+' :  lambda target,item : target.replace(str(item),rf'\textbf{{{item.decode_contents()}}} '),
     'span' : lambda target,item : target.replace(str(item),item.decode_contents()),
     'a' : lambda target,item : decode_link(target,item),
@@ -35,30 +54,35 @@ FIG_CONDITION = lambda tag : ((tag.name == 'img') and
                             )
 
 def video_condition(tag) :
-    if tag.name == 'h2' :
+    if tag.name in ['h2','h3'] :
         if len(tag.find_all('span')) > 0 :
             for child in tag.children :
-                if re.match(r'^video_solution',child.get('id','').lower()) :
-                    return True
+                x = child.get('id','').lower()
+                cek = ['video','mathtalks','megamath']
+                for c in cek :
+                    if c in x :
+                        return True
         return False
-    if tag.name == 'p' :
+    
+    if tag.name in ['p','ul'] :
         if tag.find_all('a') == 0 :
             return False
-        
-        temp =  tag.select_one(":first-child")
-        if temp is None :
-            return False
-        
-        if temp.name == 'a' and ('youtu' in temp.get('href','') or 'acad' in temp.get('href','')):
-            return True
+
+        links = tag.find_all('a')
+        for temp in links :            
+            if temp.name == 'a' :
+                cek = ['youtu','acad','bilibili','euclideanmathcircle']
+                x = temp.get('href','')
+                for c in cek :
+                    if c in x :
+                        return True
     return False
 
 def decode_video(statement) :
     statement_soup = BeautifulSoup(statement,'html.parser')
-    statement_cleaned = statement
     for child in statement_soup.find_all(video_condition) :
-        statement_cleaned = statement_cleaned.replace(str(child),'')
-    return statement_cleaned
+        child.decompose()
+    return str(statement_soup)
 
 
 MATH_MODE = [
@@ -119,22 +143,10 @@ def decode_verbatim(statement):
             + spaces_to_tabs(tag.decode_contents())
             + "\n"
             + rf"\end{{verbatim}}"
+            +"\n\n"
         )
 
-    return statement+"\n\n"
-
-
-def decode_link(target,item) :
-    if item.find('img') :
-        return target.replace(str(item),item.decode_contents())
-    else :
-        href = item.get("href")
-        temp = r"https://artofproblemsolving.com"
-        if href is not None and (temp in href or "https" in href):
-            temp = href
-        else :
-            temp = temp + href
-        return target.replace(str(item),rf'\href{{{temp}}}{{{item.text}}}')
+    return statement
 
 
 def decode_img(df,row,statement_tex,type) :
@@ -218,10 +230,12 @@ def decode_list(statement) :
         statement_cleaned = statement_cleaned.replace(str(item),r'\item ' + item.decode_contents())
     return statement_cleaned
 
+
 def cleaning_tex(statement):
     return (
         statement
         .replace(r'\rm', r'\textrm')
+        .replace(r'\tt', r'\texttt')
         .replace(r'\tfrac', r'\frac')
         .replace(r'&lt;',r'<')
         .replace(r'&gt;',r'>')
@@ -230,6 +244,18 @@ def cleaning_tex(statement):
         .replace('（','(')
         .replace('）',')')
         .replace('\u200b', '')
+        .replace('\u202f', ' ')
+        .replace('\uff1f', '?')
+        .replace('\u2248', r'\approx')
+        .replace('\u30c4', '')
+        .replace('\u1d458', 'k')
+        .replace('\u1d434', 'A')
+        .replace('\u1d435', 'B')
+        .replace('\u2261', r'\equiv')
+        .replace('\u21d2', r'\Rightarrow')
+        .replace('\u2705', '(True)')
+        .replace('\u2713', '(True)')
+        .replace('\u2212', '-')
         .replace('…', r'\ldots')
         .replace(r'\begin{array}{lc}\text{Least number}',r'\begin{array}{lccccc}\text{Least number}')
     )
@@ -241,11 +267,12 @@ def parsing_prob_to_tex(contest) :
         
     df = pd.DataFrame(data)
 
-    df['problem_statement_html'] = (df['problem_statement'].apply(decode_math)
-                                                    .apply(decode_tag)
-                                                    .apply(decode_dldd)
-                                                    .apply(decode_list)
-                                                    )                                                 
+    df['problem_statement_tex'] = (df['problem_statement'].apply(decode_math)
+                                                        .apply(decode_par)
+                                                        .apply(decode_tag)
+                                                        .apply(decode_dldd)
+                                                        .apply(decode_list)
+                                                        )                                             
     
     prob_tex = []
     for i in range(len(df)) :
@@ -254,7 +281,10 @@ def parsing_prob_to_tex(contest) :
         prob_state_cleaned = cleaning_tex(prob_state_cleaned)
         year = df.loc[i,'year']
         ver = df.loc[i,'version']
-        header = rf'(\textit{{{contest} {ver} {year}}}) '
+        if contest == 'AIME' :
+            header = rf'(\textit{{{contest} {ver} {year}}}) '
+        else :
+            header = rf'(\textit{{{contest.replace('_',' ')} {year}}}) '
         prob_tex.append(header+prob_state_cleaned)
 
     df['problem_statement_tex'] = prob_tex
@@ -266,19 +296,27 @@ def parsing_sol_statement_to_tex(statement) :
     pipeline = [
         decode_video,
         decode_math,
+        decode_par,
         decode_tag,
         decode_dldd,
         decode_list,
         decode_verbatim
     ]
     statement_tex = statement
+
+    soup = BeautifulSoup(statement_tex,'html.parser')
+    if soup.select_one('.no-print') :
+        soup.select_one('.no-print').decompose()
+    if soup.select_one('.print') :
+        soup.select_one('.print').decompose()
+    statement_tex = str(soup)
+
     for pipe in pipeline :
         statement_tex = pipe(statement_tex)
     return statement_tex
     
 def parsing_sol_to_tex(contest) :
     filename = DATA_PATH / contest / 'full_tex.json'
-
 
     if filename.is_file() and filename.stat().st_size > 0:
         with open(filename,'r',encoding='utf-8') as f :

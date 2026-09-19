@@ -45,8 +45,6 @@ For the next five races, Zou wins four and loses one. Let $W$ and $L$ denote a w
 
 
 
-
-
 \textbf{Solution 2 (Casework but Bashier)}
 
 We have $5$ cases, depending on which race Zou lost. Let $\text{W}$ denote a won race, and $\text{L}$ denote a lost race for Zou. The possible cases are $\text{WWWWL, WWWLW, WWLWW, WLWWW, LWWWW}$. The first case has probability $\left(\frac{2}{3} \right)^4 \cdot \frac{1}{3} = \frac{16}{3^5}$. The second case has probability $\left( \frac{2}{3} \right)^3 \cdot \frac{1}{3} \cdot \frac{1}{3} = \frac{8}{3^5}$. The third has probability $\left( \frac{2}{3} \right)^2 \cdot \frac{1}{3} \cdot \frac{1}{3} \cdot \frac{2}{3} = \frac{8}{3^5}$. The fourth has probability $\frac{2}{3} \cdot \frac{1}{3} \cdot \frac{1}{3} \cdot \left( \frac{2}{3} \right)^2 = \frac{8}{3^5}$. Lastly, the fifth has probability $\frac{1}{3} \cdot \frac{1}{3} \cdot \left( \frac{2}{3} \right)^3 = \frac{8}{3^5}$. Adding these up, the total probability is $\frac{16 + 8 \cdot 4}{3^5} = \frac{16 \cdot 3}{3^5} = \frac{16}{81}$, so $m+n = \boxed{097}$.
@@ -54,8 +52,6 @@ We have $5$ cases, depending on which race Zou lost. Let $\text{W}$ denote a won
  This is for if you're paranoid like me, and like to sometimes write out all of the cases if there are only a few.
 
  
-
-
 
 
 
@@ -79,15 +75,11 @@ We have $5$ cases, depending on which race Zou lost. Let $\text{W}$ denote a won
 
 
 
-
-
 \textbf{Solution 4 (Observations)}
 
-Note that Zou wins one race. The probability that he wins the last race is $\left(\frac{2}{3}\right)^4\left(\frac{1}{3}\right)=\frac{16}{243}.$ Now, if he doesn't win the last race, then there must be two races where the winner of the previous race loses. We can choose any $4$ of the middle races for Zou to win. So the probability for this case is $4\left(\frac{2}{3}\right)^3\left(\frac{1}{3}\right)^2=\frac{32}{243}.$ Thus, the answer is $\frac{16}{243}+\frac{32}{243}=\frac{16}{81}\implies\boxed{097}.$
+Note that Chou wins one race. The probability that he wins the last race is $\left(\frac{2}{3}\right)^4\left(\frac{1}{3}\right)=\frac{16}{243}.$ Now, if he doesn't win the last race, then there must be two races where the winner of the previous race loses. We can choose any $4$ of the middle races for Chou to win. So the probability for this case is $4\left(\frac{2}{3}\right)^3\left(\frac{1}{3}\right)^2=\frac{32}{243}.$ Thus, the answer is $\frac{16}{243}+\frac{32}{243}=\frac{16}{81}\implies\boxed{097}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) In the diagram below, $ABCD$ is a rectangle with side lengths $AB=3$ and $BC=11$, and $AECF$ is a rectangle with side lengths $AF=7$ and $FC=9,$ as shown. The area of the shaded region common to the interiors of both rectangles is $\frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -108,148 +100,9 @@ Note that Zou wins one race. The probability that he wins the last race is $\lef
 
 \textbf{Solution 1 (Similar Triangles)}
 
-Let $G$ be the intersection of $AD$ and $FC$.From vertical angles, we know that $\angle FGA= \angle DGC$. Also, because we are given that $ABCD$ and $AFCE$ are rectangles, we know that $\angle AFG= \angle CDG=90 ^{\circ}$.Therefore, by AA similarity, we know that $\triangle AFG\sim\triangle CDG$.
-
- Let $AG=x$. Then, we have $DG=11-x$. By similar triangles, we know that $FG=\frac{7}{3}(11-x)$ and $CG=\frac{3}{7}x$. We have $\frac{7}{3}(11-x)+\frac{3}{7}x=FC=9$.
-
- Solving for $x$, we have $x=\frac{35}{4}$.The area of the shaded region is just $3\cdot \frac{35}{4}=\frac{105}{4}$.
-
- Thus, the answer is $105+4=\framebox{109}$. 
+Let 
 
  
-
-
-
-
-
-\textbf{Solution 2 (Similar Triangles)}
-
-Again, let the intersection of $AE$ and $BC$ be $G$. By AA similarity, $\triangle AFG \sim \triangle CDG$ with a $\frac{7}{3}$ ratio. Define $x$ as $\frac{[CDG]}{9}$. Because of similar triangles, $[AFG] = 49x$. Using $ABCD$, the area of the parallelogram is $33-18x$. Using $AECF$, the area of the parallelogram is $63-98x$. These equations are equal, so we can solve for $x$ and obtain $x = \frac{3}{8}$. Thus, $18x = \frac{27}{4}$, so the area of the parallelogram is $33 - \frac{27}{4} = \frac{105}{4}$.
-
- Finally, the answer is $105+4=\boxed{109}$.
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Pythagorean Theorem)}
-
-Let the intersection of $AE$ and $BC$ be $G$, and let $BG=x$, so $CG=11-x$. 
-
- By the Pythagorean theorem, ${AG}^2={AB}^2+{BG}^2$, so $AG=\sqrt{x^2+9}$, and thus $EG=9-\sqrt{x^2+9}$. 
-
- By the Pythagorean theorem again, ${CG}^2={EG}^2+{CE}^2$: 
- \[11-x=\sqrt{7^2+(9-\sqrt{x^2+9})^2}.\]
-
- Solving, we get $x=\frac{9}{4}$, so the area of the parallelogram is $3\cdot\left(11-\frac{9}{4}\right)=\frac{105}{4}$, and $105+4=\framebox{109}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Pythagorean Theorem)}
-
-Let $P = AD \cap FC$, and $K = AE \cap BC$. Also let $AP = x$.
-
- $CK$ also has to be $x$ by parallelogram properties. Then $PD$ and $BK$ must be $11-x$ because the sum of the segments has to be $11$.
-
- We can easily solve for $PC$ by the Pythagorean Theorem:
- \begin{align*} DC^2 + PD^2 &= PC^2\\ 9 + (11-x)^2 &= PC^2 \end{align*}
-It follows shortly that $PC = \sqrt{x^2-22x+30}$.
-
- Also, $FC = 9$, and $FP + PC = 9$. We can then say that $PC = \sqrt{x^2-22x+30}$, so $FP = 9 - \sqrt{x^2-22x+30}$.
-
- Now we can apply the Pythagorean Theorem to $\triangle AFP$.
- \begin{align*} AF^2 + FP^2 = AP^2\\ 49 + \left(9 - \sqrt{x^2-22x+30}\right)^2 = x^2  \end{align*}
-
-
- This simplifies (not-as-shortly) to $x = \dfrac{35}{4}$. Now we have to solve for the area of $APCK$. We know that the height is $3$ because the height of the parallelogram is the same as the height of the smaller rectangle.
-
- From the area of a parallelogram (we know that the base is $\dfrac{35}{4}$ and the height is $3$), it is clear that the area is $\dfrac{105}{4}$, giving an answer of $\boxed{109}$. 
-
- 
-
-
-
-
-
-\textbf{Solution 5 (Coordinate Geometry)}
-
-Suppose $B=(0,0).$ It follows that $A=(0,3),C=(11,0),$ and $D=(11,3).$
-
- Since $AECF$ is a rectangle, we have $AE=FC=9$ and $EC=AF=7.$ The equation of the circle with center $A$ and radius $\overline{AE}$ is $x^2+(y-3)^2=81,$ and the equation of the circle with center $C$ and radius $\overline{CE}$ is $(x-11)^2+y^2=49.$
-
- We now have a system of two equations with two variables. Expanding and rearranging respectively give
- \begin{align*} x^2+y^2-6y&=72, &(1) \\ x^2+y^2-22x&=-72. &(2) \end{align*}
-Subtracting $(2)$ from $(1),$ we obtain $22x-6y=144.$ Simplifying and rearranging produce 
- \[x=\frac{3y+72}{11}. \hspace{34.5mm} (*)\]Substituting $(*)$ into $(1)$ gives 
- \[\left(\frac{3y+72}{11}\right)^2+y^2-6y=72,\] which is a quadratic of $y.$ We clear fractions by multiplying both sides by $11^2=121,$ then solve by factoring:
- \begin{align*} \left(3y+72\right)^2+121y^2-726y&=8712 \\ \left(9y^2+432y+5184\right)+121y^2-726y&=8712 \\ 130y^2-294y-3528&=0 \\ 2(5y+21)(13y-84)&=0 \\ y&=-\frac{21}{5},\frac{84}{13}. \end{align*}
-Since $E$ is in Quadrant IV, we have $E=\left(\frac{3\left(-\frac{21}{5}\right)+72}{11},-\frac{21}{5}\right)=\left(\frac{27}{5},-\frac{21}{5}\right).$ It follows that the equation of $\overleftrightarrow{AE}$ is $y=-\frac{4}{3}x+3.$ 
-
- Let $G$ be the intersection of $\overline{AD}$ and $\overline{FC},$ and $H$ be the intersection of $\overline{AE}$ and $\overline{BC}.$ Since $H$ is the $x$-intercept of $\overleftrightarrow{AE},$ we get $H=\left(\frac94,0\right).$
-
- By symmetry, quadrilateral $AGCH$ is a parallelogram. Its area is $HC\cdot AB=\left(11-\frac94\right)\cdot3=\frac{105}{4},$ from which the requested sum is $105+4=\boxed{109}.$ 
-
- 
-
-
-
-
-
-\textbf{Solution 6 (Trigonometry)}
-
-Let the intersection of $AE$ and $BC$ be $G$. It is useful to find $\tan(\angle DAE)$, because  $\tan(\angle DAE)=\frac{3}{BG}$  and  $\frac{3}{\tan(\angle DAE)}=BG$. From there, subtracting the areas of the two triangles from the larger rectangle, we get  Area = $33-3BG=33-\frac{9}{\tan(\angle DAE)}$.
-
- let $\angle CAD = \alpha$. Let $\angle CAE = \beta$. Note, $\alpha+\beta=\angle DAE$. 
-
- $\alpha=\tan^{-1}\left(\frac{3}{11}\right)$
-
- $\beta=\tan^{-1}\left(\frac{7}{9}\right)$
-
- $\tan(\angle DAE) = \tan\left(\tan^{-1}\left(\frac{3}{11}\right)+\tan^{-1}\left(\frac{7}{9}\right)\right) = \frac{\frac{3}{11}+\frac{7}{9}}{1-\frac{3}{11}\cdot\frac{7}{9}} = \frac{\frac{104}{99}}{\frac{78}{99}} = \frac{4}{3}$  
-
- $\mathrm{Area}=33-\frac{9}{\frac{4}{3}} = 33-\frac{27}{4 } = \frac{105}{4}$. The answer is $105+4=\boxed{109}$.
-
- 
-
-
-
-
-
-\textbf{Solution 7}
-
-A self-admittedly worse solution 1
-
- Construct a point at line $\overline{BC}$, and name it $G$.Let $a$ = $\overline{AG}$Let $b$ = $\overline{GE}$Let $c$ = $\overline{BG}$Let $d$ = $\overline{AB}$Let $e$ = $\overline{GC}$Let $f$ = $\overline{AF}$
-
- We know $\overline{AB} = 3$, so let $d$ = $3$. We also know that $\overline{AF} = 7$, so let $f$ = $7$.
-
- Triangle $\triangle ABG \sim \triangle ECG$ due to all the angles being equal from alternate interior angles at point G and both of the triangles having right angles. Dividing $d$ and $f$ yields the ratio of the side lengths to be $\frac{3}{7}$
-
- We will now create several equations with these variables.$d = 3$$c + e = 11$$f =  7$$a + b = 9$$\frac{d}{f} = \frac{3}{7}$$\frac{a}{e} = \frac{3}{7}$$\frac{c}{b} = \frac{3}{7}$
-
- We can find $b$ to be $9 - a$ from the fourth equation, and then find $c$ to be $7c = 3b$ from the seventh equation. Then substitute $b$ for $9 - a$ to find that $c = \frac{3}{7}\left(9 - a \right)$. Now we just substitute $c$ into our second equation, $c + e = 11$ to yield that $e$ is $e = 11 - \frac{3}{7}\left(9 - a \right)$. That's not useful right now, but will be once we look at our sixth equation, which shows that $\frac{a}{e} = \frac{3}{7}$, and we yield that $e$ is equal to $3e = 7a$ which shows that when simplified we get $e = \frac{7a}{3}$. Now we can see that we have 2 equations with 2 variables. When substituting $e$ into the first equation, which is $\frac{a}{e} = \frac{3}{7}$, we get 
- \[\frac{7a}{3} = 11 - \frac{3}{7}\left(9 - a \right)\] We then yield that $15 = 4a$, which gives us $a = \frac{15}{4}$. We then substitute $a$ into our fourth equation, which is $a + b = 9$, and then we get that $b = 9 - \frac{15}{4}$, and then we get that $b$ is equal to $\frac{21}{4}$. Then we use our seventh equation, which is $\frac{c}{b} = \frac{3}{7}$. We then get $7c = 3b$. We substitute $b$ in to get that $c$ is $\frac{9}{4}$ Then we use our second equation which is $c + e = 11$ and then we substitute $c$ into it to get that $e$ is $11 - \frac{9}{4}$. Then we get that $e = \frac{35}{4}$. Then to find the area we multiply $e$ by the height, $d$ to get $\frac{35}{4} \cdot 3$ to get $\frac{105}{4}$, which is $\frac{m}{n}$, and we get that $m = 105$ and $n = 4$, so 
- \[m + n = 105 + 4 = \boxed{109}\]
-
- 
-
-
-
-
-
-\textbf{Solution 8(Extremely simple solution)}
-
-Let $EC \cap AD = P$ and $AE \cap BC = Q$. By $AA$ similarity, $\triangle PDC \sim \triangle AFP$ with corresponding sides $CD$ and $AF$. Let $[AFP] = [QEC] = X$ and $[ABQ] = [CDP] = Y$. Let the shaded parallelogram have area $M$. We know$[AFCE] = [AFP] + M + [QEC] = 2X + M = 7 \cdot 9 = 63$ and $[ABCD] = [ABQ] + M + CDP = 2Y + M = 3 \cdot 11 = 33$ thus subtracting them gives $2X - 2Y = 63 - 33 \implies X - Y = 15 \implies Y = X - 15$. Now note $\frac{[CDP]}{[AFP]} = (\frac{CD}{AF})^2 = (\frac{3}{7})^2 = \frac{9}{49}$ but $[CDP] = Y = X - 15$ and $[AFP] = X$ thus we solve $\frac{X - 15}{X} = \frac{9}{49} \implies 49X - 49 \cdot 15 = 9X \implies 40X = 49 \cdot 15 \implies 8X = 49 \cdot 3 \implies X = \frac{49 \cdot 3}{8}$. We want $M$. However, note $2X + M = 63 \implies M = 63 - 2X \implies M = 63 - 2(\frac{49 \cdot 3}{8}) = 63 - \frac{49 \cdot 3}{4} = \frac{63 \cdot 4 - 49 \cdot 3}{4} = \frac{7(9 \cdot 4 - 7 \cdot 3)}{4} = \frac{7(36 - 21)}{4} = \frac{7 \cdot 15}{4} = \frac{105}{4} \implies \boxed{109}$
-
- 
-
-
 
 
 	\item (\textit{AIME I 2021}) Find the number of positive integers less than $1000$ that can be expressed as the difference of two integral powers of $2.$
@@ -287,8 +140,6 @@ We want to find the number of positive integers $n<1000$ which can be written in
 
 
 
-
-
 \textbf{Solution 2 (Casework)}
 
 \textbf{Case 1:} When our answer is in the form $2^n-2^i$, where $i$ is an integer such that $0\le i\le 4$. 
@@ -304,8 +155,6 @@ We want to find the number of positive integers $n<1000$ which can be written in
  Thus, our result is $9+8+7+6+5+5+4+3+2+1=(9+8+7+6+5+4+3+2+1)+5=\boxed{50}$. ~jehu26
 
  
-
-
 
 
 
@@ -329,8 +178,6 @@ We look for all positive integers of the form $2^a-2^b<1000,$ where $0\leq b<a.$
 
 
 
-
-
 \textbf{Solution 4 (Faster Way)}
 
 Because the difference is less than $1000$, we can simply list out all numbers that satisfy $2^n < 1000$. We get $0 \le n < 10$, where n is an integer. Because the sequence $2^n$ is geometric, the difference of any two terms will be unique. $\binom{10}{2}$ will be the number of differences for $0\le n < 10$. However, we also need to consider the case in which $n=10$. With simple counting, we find that $5$ numbers: $(32, 64, 128, 256, 512)$ could be subtracted from $1024$, which makes another 5 cases. There is no need to check for higher exponents since the lowest difference would be $2^{11} - 2^{10} = 1024$, which exceeds $1000$.
@@ -341,15 +188,11 @@ Because the difference is less than $1000$, we can simply list out all numbers t
 
 
 
-
-
 \textbf{Solution 5 (Faster than most other solutions, Come and Go)}
 
-Note $2^{11} - 2^{10} = 2^{10} \cdot 1 = 2^{10} > 1000 \therefore 2^a - 2^b :~ a > b~ \text{and}~ 0 \le a,b \le 10$. For the extrema $a = 10$, $2^b > 24 \implies 5 \ge b \ge 9$. For all other cases $a \neq 10$, $\#(B) = a$, where $\#(S)$ denotes the number of plausible $S$, or cardinality of $S$. Then, for $a \neq 10 \implies ~ \text{total number of possible}~b = 45$ and $a = 10 \implies ~ \text{total number of possible}~b = 5$. The count is $45+5 = \boxed{050}$.
+Note $2^{11} - 2^{10} = 2^{10} \cdot 1 = 2^{10} > 1000 \therefore 2^a - 2^b :~ a > b~ \text{and}~ 0 \le a,b \le 10$. For the extrema $a = 10$, $2^b > 24 \implies 5 \le b \le 9$. For all other cases $a \neq 10$, $\#(B) = a$, where $\#(S)$ denotes the number of plausible $S$, or cardinality of $S$. Then, for $a \neq 10 \implies ~ \text{total number of possible}~b = 45$ and $a = 10 \implies ~ \text{total number of possible}~b = 5$. The count is $45+5 = \boxed{050}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Find the number of ways $66$ identical coins can be separated into three nonempty piles so that there are fewer coins in the first pile than in the second pile and fewer coins in the second pile than in the third pile.
@@ -370,8 +213,6 @@ Suppose we have $1$ coin in the first pile. Then $(1, 2, 63), (1, 3, 62), \ldots
 
 
 
-
-
 \textbf{Solution 2}
 
 We make an equation: $a+b+c=66,$ where $a<b<c.$ We don't have a clear solution, so we'll try complementary counting. First, let's find where $a\geq b\geq c.$ By stars and bars, we have $\dbinom{65}{2}=2080$ to assign positive integer solutions to $a + b + c = 66.$ Now we need to subtract off the cases where it doesn't satisfy the condition.
@@ -381,8 +222,6 @@ We make an equation: $a+b+c=66,$ where $a<b<c.$ We don't have a clear solution, 
  We then have to divide by $6$ because there are $3!=6$ ways to order $a, b,$ and $c.$ Therefore, we have $\dfrac{\dbinom{65}{2}-96+2}{6} = \dfrac{1986}{6} = \boxed{331}.$
 
  
-
-
 
 
 
@@ -397,8 +236,6 @@ Let the piles have $a, b$ and $c$ coins, with $0 < a < b < c$. Then, let $b = a 
 as our answer.
 
  
-
-
 
 
 
@@ -424,8 +261,6 @@ Let the first pile have $a$ coins, the second $a+b$ coins, and the third $a+b+c$
 
 
 
-
-
 \textbf{Solution 5}
 
 Suppose we start with an equal pile of coins with 21, 21, and 21. There is 3 extra coins we must distribute to the third and second piles.
@@ -445,20 +280,29 @@ Suppose we start with an equal pile of coins with 21, 21, and 21. There is 3 ext
  $\frac{((2\cdot21 + 3\cdot(\frac{20*21}{2})) + -1(10))}{2} = \boxed{331}$
 
  
-                \begin{itemize}
-                    <li>
-                \begin{itemize}
-                    \item 
-                \end{itemize}
 
 
-                </li>
-                \end{itemize}
+ 
 
 
-                
 
+\textbf{Solution 6}
 
+Let the largest pile have size $x$, the second largest have size $y$, and the smallest have size $z$.
+
+ We notice a pattern for the number of ways to arrange the coins in the first and second piles as the number of coins in the largest pile decreases from $63$, which is the largest possible pile size. There is $1$ choice for the largest pile having $63$,$1$ choice for $62,2 choices for$61$,$2$choices for$ 60, and as this goes on, we realize the pattern is just simply that every $2$ pile sizes descending from $63$ will have the same number of choices, and as you descend each pair, the number of choices increases by $1$.
+
+ For example $63$ has 1 choice,$63-2$ has 2 choices, $63-4$ has $3$ choices.
+
+ This pattern will continue until the maximum number of choices for how to arrange the coins in the remaining piles is reached at $33$. This occurs at $33$ because, for any pile size greater than $33$, the two remaining piles must sum to less than $33$, and for any pile size less than $33$, there are tighter restrictions because $x+y$ must be greater than $33$, but $x$ must be less than $y$.
+
+ The smallest possible pile size for $x$ will be $23$, with one choice.
+
+ We know the number of ways all the way up until a pile size of $33$, which will have $16$ ways: $(1+1+2+2+3+3+4+4...+16)=256$.
+
+ We now just have to sum the number of ways for $x-sizes$ from $23-32$. We list out the number of ways, and there is a pattern as well. We alternate by adding $1$ way and $2$ ways with each increase in pile size. So we add $1+2+4+5+7+8+10+11+13+14$ to $256$ which gives $\boxed{331}$.
+
+ 
 
 
 	\item (\textit{AIME I 2021}) Call a three-term strictly increasing arithmetic sequence of integers special if the sum of the squares of the three terms equals the product of the middle term and the square of the common difference. Find the sum of the third terms of all special sequences.
@@ -476,8 +320,6 @@ Let the terms be $a-b$, $a$, and $a+b$. Then we want $(a-b)^2+a^2+(a+b)^2=ab^2$,
  Note: You could also use synthetic division to get $b^2=\frac{3a^2}{a-2}$.
 
  
-
-
 
 
 
@@ -502,8 +344,6 @@ $^*$To prove this, let $\sqrt{d^2-24} = k$, then $d^2-k^2=24$ which is $(d+k)(d-
 
 
 
-
-
 \textbf{Solution 3}
 
 Proceed as in solution 2, until we reach 
@@ -518,8 +358,6 @@ Proceed as in solution 2, until we reach
  -Ross Gao
 
  
-
-
 
 
 
@@ -569,8 +407,6 @@ As in Solution 1, write the three integers in the sequence as $a-d$, $a$, and $a
 
 
 
-
-
 \textbf{Solution 5}
 
 Following from previous solutions, we derive $3x^2+2a^2=xa^2.$ We divide both sides to get $3\left(\frac{x}{a}\right)^2+2=x.$ Since $x$ is an integer, $\frac{x}{a}$ must also be an integer, so we have $x=pa$, for some factor $p$. We then get $3p^2+2=pa.$ We then take this to modulo $p$, getting $2\equiv 0 \pmod p.$ The only possibilities for $p$ are therefore 1 and 2. We plug these into $3p^2+2=pa$, for $a=5$ and $x=5$, giving us the sequence $0,5,10$, or $2a=14$ and $x=14$, for the sequence $7,14,21.$ $10+21 = \boxed{031}.$
@@ -578,8 +414,6 @@ Following from previous solutions, we derive $3x^2+2a^2=xa^2.$ We divide both si
  -RYang2
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Segments $\overline{AB}, \overline{AC},$ and $\overline{AD}$ are edges of a cube and $\overline{AG}$ is a diagonal through the center of the cube. Point $P$ satisfies $BP=60\sqrt{10}$, $CP=60\sqrt{5}$, $DP=120\sqrt{2}$, and $GP=36\sqrt{7}$. Find $AP.$
@@ -602,8 +436,6 @@ Adding the first three equations together, we get $3s^2-2s(x+y+z)+3(x^2+y^2+z^2)
 
 
 
-
-
 \textbf{Solution 2 (Solution 1 with Slight Simplification)}
 
 Once the equations for the distance between point P and the vertices of the cube have been written, we can add the first, second, and third to receive, 
@@ -612,8 +444,6 @@ Once the equations for the distance between point P and the vertices of the cube
 Since point $A = (0,0,0), PA = 16$, and since we scaled the answer is $16 \cdot 12 = \boxed{192}$.
 
  
-
-
 
 
 
@@ -636,8 +466,6 @@ Let $E$ be the vertex of the cube such that $ABED$ is a square.Using the \href{h
 
 
 
-
-
 \textbf{Solution 4}
 
 For all points $X$ in space, define the function $f:\mathbb{R}^{3}\rightarrow\mathbb{R}$ by $f(X)=PX^{2}-GX^{2}$. Then $f$ is linear; let $O=\frac{2A+G}{3}$ be the center of $\triangle BCD$. Then since $f$ is linear,
@@ -650,8 +478,6 @@ where $x$ denotes the side length of the cube. Thus
 
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Find the number of pairs $(m,n)$ of positive integers with $1\le m<n\le 30$ such that there exists a real number $x$ satisfying
@@ -695,8 +521,6 @@ It is trivial that the maximum value of $\sin \theta$ is $1$, is achieved at $\t
  \textbf{Other explanation} Clearly, $mx = 90+360k$ and $nx=90+360a$. From here, we can divide both equations to get $\frac{n}{m} = \frac{1+4a}{1+4k}.$ But $m$ and $n$ might share a common factor, so let that common factor be $d.$ We get $dn \equiv dm \equiv 1 (\bmod 4).$ Taking casework on $d \bmod 4,$ we see either $d \equiv 1 (\bmod 4)$ or $d \equiv 3 (\bmod 4).$ Substituting back, we see $3n \equiv 3m \equiv 1 (\bmod 4)$ or $n \equiv m \equiv 1 (\bmod 4).$ The first case gives $n \equiv m \equiv 3 (\bmod 4),$ and the second obviously gives $n \equiv m \equiv 1 (\bmod 4).$ Now you may proceed as other solutions do. 
 
  
-
-
 
 
 
@@ -751,8 +575,6 @@ In order for $\sin(mx) + \sin(nx) = 2$, $\sin(mx) = \sin(nx) = 1$.
 
 
 
-
-
 \textbf{Solution 3}
 
 We know that the range of sine is between $-1$ and $1$, inclusive.
@@ -772,8 +594,6 @@ We know that the range of sine is between $-1$ and $1$, inclusive.
  The answer is $28+21+14 = \boxed{063}$.
 
  
-
-
 
 
 
@@ -798,8 +618,6 @@ The equation implies that $\sin(mx)=\sin(nx)=1$. Therefore, we can write $mx$ as
  Adding all the cases up, we obtain $28+21+12+2=\boxed{063}$
 
  
-
-
 
 
 
@@ -852,8 +670,6 @@ It is obvious that $f(x) = \sin(a) + \sin(b) \leq 2$ when equality holds if $a =
  
 
 
-
-
 	\item (\textit{AIME I 2021}) Find the number of integers $c$ such that the equation
  \[\left||20|x|-x^2|-c\right|=21\]has $12$ distinct real solutions.
 
@@ -892,8 +708,6 @@ We take cases for the outermost absolute value, then rearrange:
 
 
 
-
-
 \textbf{Solution 2 (Graphing)}
 
 Graph $y=|20|x|-x^2|$ (If you are having trouble, look at the description in the next two lines and/or the diagram in Solution 1). Notice that we want this to be equal to $c-21$ and $c+21$.
@@ -922,8 +736,6 @@ Graph $y=|20|x|-x^2|$ (If you are having trouble, look at the description in the
 
 
 
-
-
 \textbf{Solution 3 (Graphing)}
 
 Let $y = |x|.$ Then the equation becomes $\left|\left|20y-y^2\right|-c\right| = 21$, or $\left|y^2-20y\right| = c \pm 21$. Note that since $y = |x|$, $y$ is nonnegative, so we only care about nonnegative solutions in $y$. Notice that each positive solution in $y$ gives two solutions in $x$ ($x = \pm y$), whereas if $y = 0$ is a solution, this only gives one solution in $x$, $x = 0$. Since the total number of solutions in $x$ is even, $y = 0$ must not be a solution. Hence, we require that $\left|y^2-20y\right| = c \pm 21$ has exactly $6$ positive solutions and is not solved by $y = 0.$
@@ -940,8 +752,6 @@ Hence, the integers $c$ satisfying the conditions are those satisfying $21 < c <
 
 
 
-
-
 \textbf{Solution 4 (Algebra)}
 
 Removing the absolute value bars from the equation successively, we get
@@ -954,8 +764,6 @@ The discriminant of this equation is
  Move the slider around for $21<c<79$ to observe how they intersect for $12$ times.
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Let $ABCD$ be an isosceles trapezoid with $AD=BC$ and $AB<CD.$ Suppose that the distances from $A$ to the lines $BC,CD,$ and $BD$ are $15,18,$ and $10,$ respectively. Let $K$ be the area of $ABCD.$ Find $\sqrt2 \cdot K.$
@@ -996,8 +804,6 @@ Let $\overline{AE}, \overline{AF},$ and $\overline{AG}$ be the perpendiculars fr
 
 
 
-
-
 \textbf{Solution 2 (Similar Triangles and Pythagorean Theorem)}
 
 First, draw the diagram. Then, notice that since $ABCD$ is isosceles, $\Delta ABD \cong \Delta BAC$, and the length of the altitude from $B$ to $AC$ is also $10$. Let the foot of this altitude be $F$, and let the foot of the altitude from $A$ to $BC$ be denoted as $E$. Then, $\Delta BCF \sim \Delta ACE$. So, $\frac{BC}{AC} = \frac{BF}{AE} = \frac{2}{3}$. Now, notice that $[ABC] = \frac{10 \cdot AC} {2} = \frac{AB \cdot 18}{2} \implies AC = \frac{9 \cdot AB}{5}$, where $[ABC]$ denotes the area of triangle $ABC$. Letting $AB = x$, this equality becomes $AC = \frac{9x}{5}$. Also, from $\frac{BC}{AC} = \frac{2}{3}$, we have $BC = \frac{6x}{5}$. Now, by the Pythagorean theorem on triangles $ABF$ and $CBF$, we have $AF = \sqrt{x^{2}-100}$ and $CF = \sqrt{ \left( \frac{6x}{5} \right) ^{2}-100}$. Notice that $AC = AF + CF$, so $\frac{9x}{5} = \sqrt{x^{2}-100} + \sqrt{ \left( \frac{6x}{5} \right) ^{2}-100}$. Squaring both sides of the equation once, moving $x^{2}-100$ and $\left( \frac{6x}{5} \right) ^{2}-100$ to the right, dividing both sides by $2$, and squaring the equation once more, we are left with $\frac{32x^{4}}{25} = 324x^{2}$. Dividing both sides by $x^{2}$ (since we know $x$ is positive), we are left with $\frac{32x^{2}}{25} = 324$. Solving for $x$ gives us $x = \frac{45}{2\sqrt{2}}$. 
@@ -1007,8 +813,6 @@ First, draw the diagram. Then, notice that since $ABCD$ is isosceles, $\Delta AB
  Finally, to find $[ABCD]$, we use the formula for the area of a trapezoid: $K = [ABCD] = \frac{b_{1}+b_{2}}{2} \cdot h = \frac{AB+CD}{2} \cdot 18 = \frac{x+(CG+DG)}{2} \cdot 18 = \frac{2x+2y}{2} \cdot 18 = (x+y) \cdot 18 = \frac{63}{2\sqrt{2}} \cdot 18 = \frac{567}{\sqrt{2}}$. The problem asks us for $K \cdot \sqrt{2}$, which comes out to be $\boxed{567}$.
 
  
-
-
 
 
 
@@ -1028,8 +832,6 @@ Make $AE$ perpendicular to $BC$; $AG$ perpendicular to $BD$; $AF$ perpendicular 
 
 
 
-
-
 \textbf{Solution 4 (Cyclic Quadrilaterals, Similar Triangles, Pythagorean Theorem)}
 
 Let the foot of the altitude from $A$ to $BC$ be $P$, to $CD$ be $Q$, and to $BD$ be $R$.
@@ -1046,8 +848,6 @@ Then, $RH = QH - QR = \frac{46}{3} - 12 = \frac{10}{3}$. This gives us then from
  \[QD = \sqrt{AD^2 - AQ^2} = \sqrt{\left(\frac{27\sqrt{2}}{2}\right)^2 - 18^2} = \sqrt{\frac{81}{2}} = \frac{9\sqrt{2}}{2}.\]Then, we have the height of trapezoid $ABCD$ is $AQ = 18$, the top base is $AB = \frac{45\sqrt{2}}{4}$, and the bottom base is $CD = \frac{45\sqrt{2}}{4} + 2\cdot\frac{9\sqrt{2}}{2}$. From the equation of a trapezoid, $K = \frac{b_1+b_2}{2} \cdot h = \frac{63\sqrt{2}}{4} \cdot 18 = \frac{567\sqrt{2}}{2}$, so the answer is $K\sqrt{2} = \boxed{567}$.
 
  
-
-
 
 
 
@@ -1073,8 +873,6 @@ Let $AD=a$. We obtain from the similarities $AB = \frac{5a}{6}$ and $AC=BD=\frac
 
 
 
-
-
 \textbf{Solution 6 (Similar Triangles and Trigonometry)}
 
 Let $AD=BC=a$. Draw diagonal $AC$ and let $G$ be the foot of the perpendicular from $B$ to $AC$, $F$ be the foot of the perpendicular from $A$ to line $BC$, and $H$ be the foot of the perpendicular from $A$ to $DC$.
@@ -1085,15 +883,11 @@ Let $AD=BC=a$. Draw diagonal $AC$ and let $G$ be the foot of the perpendicular f
 
 
 
-
-
 \textbf{Solution 7 (Similar Triangles and Trigonometry)}
 
 Draw the distances in terms of $B$, as shown in the diagram. By similar triangles, $\triangle{AEC}\sim\triangle{BIC}$. As a result, let $AB=u$, then $BC=AD=\frac{6}{5}u$ and $2AC=3BC$. The triangle $ABC$ is $6-5-9$ which $\cos(\angle{ABC})=-\frac{1}{3}$. By angle subtraction, $\cos(180-\theta)=-\cos\theta$. Therefore, $AB=\frac{45}{2\sqrt{2}}=\frac{45\sqrt{2}}{4}$ and $AD=BC=\frac{27}{\sqrt{2}}$. By trapezoid area formula, the area of $ABCD$ is equal to $(AB+DF)\cdot 18=567\cdot \frac{\sqrt{2}}{2}$ which $\sqrt{2}\cdot k=\boxed{567}$.
 
  
-
-
 
 
 
@@ -1117,8 +911,6 @@ Draw the distances in terms of $B$, as shown in the diagram. By similar triangle
  \[K = [ABCD] = \frac{18}{2}(AB + (AB + 2DF)) = 18(AB + DF) = 18\left(\frac{45}{2\sqrt{2}} + \frac{18}{2\sqrt{2}}\right) = \frac{567}{\sqrt{2}},\]so $\sqrt{2}\cdot K = \boxed{567}$.
 
  
-
-
 
 
 
@@ -1156,8 +948,6 @@ We apply the Pythagorean Law to $\triangle HBC$ and get$:$
 
 
 
-
-
 \textbf{Solution 10 (Area)}
 
 Let $F$ be on $DC$ such that $AF \| DC$. Let $G$ be on $BD$ such that $AG \| BD$.
@@ -1188,8 +978,6 @@ Let $F$ be on $DC$ such that $AF \| DC$. Let $G$ be on $BD$ such that $AG \| BD$
 
 
 
-
-
 \textbf{Solution 11 (Coordinates)}
 
 By the given information, the height of the trapezoid is $18,$ but to avoid numerical calculations, call it $b.$ Label $A(-a, b)$, $B(a, b)$, $C(c, 0)$, $D(-c, 0),$ with $b>0, 0<a<c.$ We have the line equations $BD: y=\frac{b}{a+c}x + \frac{bc}{a+c}, BC: y=\frac{b}{a-c}x - \frac{bc}{a-c},$ or rewriting them, $BD: bx-(a+c)y + bc=0, BC: bx - (a-c)y-bc = 0.$ Hence applying two projection theorems gives
@@ -1212,8 +1000,6 @@ By the given information, the height of the trapezoid is $18,$ but to avoid nume
 
 
  
-
-
 
 
 
@@ -1249,8 +1035,6 @@ The answer to the problem is $567$.
 
 
 
-
-
 \textbf{Solution 13}
 
 Let the foot of the altitude from $A$ to $CD$ be $E$. Then $AE = 18$. Let the foot of the altitude from $A$ to $BD$ be $F$. Then $AF = 10$. Finally, let the foot of the altitude from $A$ to $BC$ be $G$. Then $AG = 15$. Also, let the foot of the altitude from $B$ to $CD$ be $H$. Then $AE = BH = 18$. Let $\angle CBH = \theta$. Notice $ABHE$ is a rectangle since $ABCD$ is an isosceles trapezoid. Thus, $\angle HBA = 90^{\circ}$. Notice $B, C, G$ are collinear. Thus, $\angle ABG = 180 - 90 - \theta = 90 - \theta \implies \triangle ABG \sim \triangle BCH$. Note $\triangle BCH \cong \triangle ADE$. Let $DE = CH = t$ and $BG = a$. Then by similar triangles proportions we have
@@ -1278,8 +1062,6 @@ Let the foot of the altitude from $A$ to $CD$ be $E$. Then $AE = 18$. Let the fo
  $(\frac{90}{4\sqrt{2}} + \frac{90}{4\sqrt{2}} + 2 \cdot \frac{9}{\sqrt{2}})(9) = \frac{567\sqrt{2}}{2}$. Finally, multiplying this by $\sqrt{2}$ gives $\boxed{567}$. 
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Consider the sequence $(a_k)_{k\ge 1}$ of positive rational numbers defined by $a_1 = \frac{2020}{2021}$ and for $k\ge 1$, if $a_k = \frac{m}{n}$ for relatively prime positive integers $m$ and $n$, then
@@ -1310,8 +1092,6 @@ We know that $a_{1}=\frac{t}{t+1}$ when $t=2020$ so $1$ is a possible value of $
 
 
 
-
-
 \textbf{Solution 2 (Euclidean Algorithm and Generalization)}
 
 Let $a_{j_1}, a_{j_2}, a_{j_3}, \ldots, a_{j_u}$ be all terms in the form $\frac{t}{t+1},$ where $j_1<j_2<j_3<\cdots<j_u,$ and $t$ is some positive integer.
@@ -1338,8 +1118,6 @@ Since $m-18$ and $k'+1$ are not relatively prime, and $m$ is fixed, the smallest
  \[\left(k'+1\right)(t-18)=m-18.\]Since $k'+1\geq2,$ to find the smallest $k',$ we need $k'+1$ to be the smallest prime factor of $m-18.$ Now we continue with the last two paragraphs of the solution above.
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Let $ABCD$ be a cyclic quadrilateral with $AB=4,BC=5,CD=6,$ and $DA=7.$ Let $A_1$ and $C_1$ be the feet of the perpendiculars from $A$ and $C,$ respectively, to line $BD,$ and let $B_1$ and $D_1$ be the feet of the perpendiculars from $B$ and $D,$ respectively, to line $AC.$ The perimeter of $A_1B_1C_1D_1$ is $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
@@ -1381,8 +1159,6 @@ Two solutions follow from here:
 
 
 
-
-
 \textbf{Solution 1.1 (Law of Cosines)}
 
 Note that $\cos(180^\circ-\theta)=-\cos\theta$ holds for all $\theta.$ We apply the Law of Cosines to $\triangle ABE, \triangle BCE, \triangle CDE,$ and $\triangle DAE,$ respectively:
@@ -1391,8 +1167,6 @@ Note that $\cos(180^\circ-\theta)=-\cos\theta$ holds for all $\theta.$ We apply 
 Finally, substituting this result into $(\bigstar)$ gives $22\cos\theta=\frac{242}{59},$ from which the answer is $242+59=\boxed{301}.$
 
  
-
-
 
 
 
@@ -1419,8 +1193,6 @@ Let the brackets denote areas. We find $[ABCD]$ in two different ways:
 
 
 
-
-
 \textbf{Solution 2 (Finding cos x)}
 
 The angle $\theta$ between diagonals satisfies 
@@ -1430,8 +1202,6 @@ The angle $\theta$ between diagonals satisfies
  \[22\cdot\cos{\theta}=22\cdot\frac{11}{59}=\frac{242}{59},\] and the answer is $m+n=242+59=\boxed{301}$.
 
  
-
-
 
 
 
@@ -1445,8 +1215,6 @@ We assume that the two quadrilateral mentioned in the problem are similar (due t
  \[\]$*$Indeed, the diagonals do not have length $\sqrt{59}$. However, here's why it works out: Let the length of diagonal BD be a. Then, by the same logic as given in the solution by fidgetboss\_4000, $x=\frac{33+a^{2}}{2a}$, $y=\frac{11+a^{2}}{2a}$, so $x-y=\frac{11}{a}$. Then, why does dividing by a to get a ratio work? It's because the orientation of quadrilaterals is different! In other words, instead of diagonal BD corresponding to diagonal $B_1$ $D_1$, it corresponds to diagonal $A_1$ $C_1$. Thus, to get the right ratio, we can find the ratio of the multiplied diagonals, then take the square root (this square root part is crucial. It happens because we essentially are taking something two-dimensional on the numerator and denominator, so to make it a one-dimensional similarity ratio, we must take the square root to half the dimension on each part). This yields $\sqrt{\frac{121}{a^{2}\cdot b^{2}}}$=$\frac{11}{a\cdot b}$. However, by Ptolemy, $a\cdot b$=59. Thus, the ratio is indeed $\frac{11}{59}$. ~MATH-TITAN
 
  
-
-
 
 
 
@@ -1515,8 +1283,6 @@ In accordance with \textbf{Claim 2,}
  
 
 
-
-
 	\item (\textit{AIME I 2021}) Let $A_1A_2A_3\ldots A_{12}$ be a dodecagon ($12$-gon). Three frogs initially sit at $A_4,A_8,$ and $A_{12}$. At the end of each minute, simultaneously, each of the three frogs jumps to one of the two vertices adjacent to its current position, chosen randomly and independently with both choices being equally likely. All three frogs stop jumping as soon as two frogs arrive at the same vertex at the same time. The expected number of minutes until the frogs stop jumping is $\frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -1552,8 +1318,6 @@ Substituting $(1)$ and $(3)$ into $(2),$ we obtain
 
 
 
-
-
 \textbf{Solution 2 (Markov Chain)}
 
 
@@ -1579,8 +1343,6 @@ Substituting $(1)$ and $(3)$ into $(2),$ we obtain
 
 
  
-
-
 
 
 
@@ -1746,8 +1508,6 @@ The answer to the problem is $16+3=19$.
 
 
 
-
-
 \textbf{Solution 1 Supplement}
 
 Solution 1 can be represented by the following \href{https://en.wikipedia.org/wiki/Markov\_chain}{Markov Chain}:
@@ -1828,8 +1588,6 @@ Solution 1 can be represented by the following \href{https://en.wikipedia.org/wi
  
 
 
-
-
 	\item (\textit{AIME I 2021}) Circles $\omega_1$ and $\omega_2$ with radii $961$ and $625$, respectively, intersect at distinct points $A$ and $B$. A third circle $\omega$ is externally tangent to both $\omega_1$ and $\omega_2$. Suppose line $AB$ intersects $\omega$ at two points $P$ and $Q$ such that the measure of minor arc $\widehat{PQ}$ is $120^{\circ}$. Find the distance between the centers of $\omega_1$ and $\omega_2$.
 
 
@@ -1858,8 +1616,6 @@ Therefore, $d=2(r_2-r_1) = 2(961-625)=\boxed{672}$.
 
 
 
-
-
 \textbf{Solution 2 (Linearity)}
 
 Let $O_{1}$, $O_{2}$, and $O$ be the centers of $\omega_{1}$, $\omega_{2}$, and $\omega$ with $r_{1}$, $r_{2}$, and $r$ their radii, respectively. Then, the distance from $O$ to the radical axis $\ell\equiv\overline{AB}$ of $\omega_{1}, \omega_{2}$ is equal to $\frac{1}{2}r$. Let $x=O_{1}O_{2}$ and $O^{\prime}$ the orthogonal projection of $O$ onto line $\ell$. Define the function $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$ by 
@@ -1873,8 +1629,6 @@ Let $O_{1}$, $O_{2}$, and $O$ be the centers of $\omega_{1}$, $\omega_{2}$, and 
  so $x=2(r_{1}-r_{2})$. Since $r_{1}=961$ and $r_{2}=625$, the answer is $x=2\cdot(961-625)=\boxed{672}$.
 
  
-
-
 
 
 
@@ -1898,8 +1652,6 @@ Substituting the first equality into the second one and subtracting yields
 
 
 
-
-
 \textbf{Solution 4 (Quick)}
 
 Suppose we label the points as shown \href{https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvNC9mLzRiM2JjYThjYmZlY2ViZGI0ODhjYzE4YzMyMmM0M2QyOTZlMmU5LmpwZw==&rn=MTU4ODUxMDg3XzczMDI0ODE4MTAwNjA5N184NDQzMjQxMjM3MDQ2NzQ5NjM4X24uanBn}{below}. 
@@ -1911,8 +1663,6 @@ Suppose we label the points as shown \href{https://services.artofproblemsolving.
  \[O_1O_2 = O_1Y - O_2Y = 2 \cdot 961 - 2\cdot 625 = \boxed{672}\]by similar triangles.
 
  
-
-
 
 
 
@@ -1937,8 +1687,6 @@ Like in other solutions, let $O$ be the center of $\omega$ with $r$ its radius; 
  \[O_{1}O_{2}=O_{1}T+O_{2}T=u+v\] is therefore equal to $2\cdot(961-625)=\boxed{672}$.
 
  
-
-
 
 
 
@@ -1973,8 +1721,6 @@ Like in other solutions, let $O$ be the center of $\omega$ with $r$ its radius; 
 
 
 
-
-
 \textbf{Solution 7}
 
 We are not given the radius of circle $w$, but based on the problem statement, that radius isn't important. We can set $w$ to have radius infinity (solution 8), but if you didn't observe that, you could also set the radius to be $2r$ so that the line containing the center of $w$, call it $W$, and $w_2$, call it $W_2$, is perpendicular to the line containing the center of $w_1$, call it $W_1$ and $w_2$. Let $AB = 2h$ and $W_1W_2 = x$. Also, let the projections of $W$ and $W_1$ onto line $AB$ be $X$ and $Y$, respectively.
@@ -1985,8 +1731,6 @@ We are not given the radius of circle $w$, but based on the problem statement, t
  \[h^2+(x-r)^2 = 961^2 \; (3)\]From subtracting $(2)$ and $(3)$, $x^2-2rx=961^2-625^2 \; (4)$. Rearranging $(1)$ yields $x^2-1344r = 961^2-625^2$. Plugging in our result from $(4)$, $x^2-1344r= x^2-2rx \implies 1344r = 2rx \implies x=\boxed{672}$.
 
  
-
-
 
 
 
@@ -2069,15 +1813,7 @@ Let the \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circl
  
 picture by afly
 
- Who wanted to see animated video solutions can see this. I found this really helpful. 
-
- P.S: This video is not made by me. And solution is same like below solutions.
-
- ≈@rounak138
-
  
-
-
 
 
 	\item (\textit{AIME I 2021}) For any positive integer $a,$ $\sigma(a)$ denotes the sum of the positive integer divisors of $a$. Let $n$ be the least positive integer such that $\sigma(a^n)-1$ is divisible by $2021$ for all positive integers $a$. Find the sum of the prime factors in the prime factorization of $n$.
@@ -2112,6 +1848,52 @@ We first claim that $n$ must be divisible by $42$. Since $\sigma(a^n)-1$ is divi
 
 
 
+\textbf{Solution 1 (More Polished)}
+
+We begin with the following claim to simplify the problem down. Whenever some NT function is provided, a similar step should always be taken: \textbf{99\% of NT functions are multiplicative.}
+
+ \textbf{Claim.} If for some $n$ we have $\sigma(p^n)\equiv 1\pmod{2021}$ for all primes $p$, then the statement is true for all positive integers.
+
+ 
+\textbf{Proof.} Let $a$ be a positive integer. Then, as $\sigma(a^n)$ is multiplicative, we have
+
+ 
+ \[\sigma(a^n) = \prod_p \sigma(p^n) \equiv \prod_p 1 \equiv 1 \pmod{2021},\]
+
+ as we take the product over all $p$ where $p\mid n$.
+
+ Thus, it suffices to find the least $n$ such that $\sigma(p^n)\equiv 1\pmod{2021}$ for primes $p$.
+
+ Moreover, by CRT, we may break up the desired equivalence into
+
+ \begin{align*}\sigma(p^n) &\equiv 1 \pmod{43},\\\sigma(p^n) &\equiv 1 \pmod{47}.\end{align*}
+
+
+ We handle the first case, and the second case will follow. Because $p$ is prime, we may simplify
+
+ 
+ \[\sigma(p^n)-1 = (1+p+p^2+\dots+p^n)-1 = \frac{p(p^n-1)}{p-1}.\]
+
+ Now, we must split it into two further cases, on whether $p-1$ divides $43$ or not. If not, we may use Fermat's Little Theorem (as the denominator is then irrelevant); otherwise, we must resort to advanced techniques. We may also choose to have $p\nmid 43$, as that is the more restrictive case.
+
+ \textbf{Case 1: $p-1$ does not divide $43$.}
+
+ We must have $p^n-1\equiv 0\pmod{43}$ for all $p$, so by FLT, we have
+
+ 
+ \[42\mid n.\]
+
+ \textbf{Case 2: $p-1$ divides $43$.}
+
+ In this case, the numerator must contain more factors of $43$ than the denominator. Thus, by the LTE lemma, we require
+
+ 
+ \[\nu_{43}(p^n-1) > \nu_{43}(p-1) \implies \nu_{43}(p-1)+\nu_{43}(n) > \nu_{43}(p-1) \implies \nu_{43}(n) > 0.\]Hence, $43\mid n.$.
+
+ We can conclude similarly that $46\cdot 47\mid n$. Thus, the least possible value of $n$ is $\operatorname{lcm}(42,43,46,47),$ and our answer is $\boxed{125}.$
+
+ 
+
 
 
 \textbf{Solution 2 (Along the Lines of Solution 1)}
@@ -2138,8 +1920,6 @@ $n$ only needs to satisfy $\sigma(a^n)\equiv 1 \pmod{43}$ and $\sigma(a^n)\equiv
  </ol>Similar arguments for modulo $47$ lead to $46|n$ and $47|n$. Therefore, we get $n=\operatorname{lcm}[42,43,46,47]$. Following the last paragraph of Solution 1 gives the answer $\boxed{125}$.
 
  
-
-
 
 
 
@@ -2191,15 +1971,11 @@ so the sum of its prime factors is $2+3+7+23+43+47=\boxed{125}.$
 
 
 
-
-
 \textbf{Solution 4 (Cheap)}
 
 Since the problem works for all positive integers $a$, let's plug in $a=2$ and see what we get. Since $\sigma({2^n}) = 2^{n+1}-1,$ we have $2^{n+1} \equiv 2 \pmod{2021}.$ Simplifying using CRT and \href{https://artofproblemsolving.com/wiki/index.php?title=Fermat\%27s\_Little\_Theorem}{Fermat's Little Theorem}, we get that $n \equiv 0 \pmod{42}$ and $n \equiv 0 \pmod{46}.$ Then, we can look at $a$ being a $1\pmod{43}$ prime and a $1\pmod{47}$ prime, just like in Solution 1, to find that $43$ and $47$ also divide $n$. There don't seem to be any other odd "numbers" to check, so we can hopefully assume that the answer is the sum of the prime factors of $\text{lcm(42, 43, 46, 47)}.$ From here, follow solution 1 to get the final answer $\boxed{125}$.
 
  
-
-
 
 
 
@@ -2214,8 +1990,6 @@ Warning: This solution doesn't explain why $43*47\mid n$.
  We see that this is just FLT which is $a^{p-1} \equiv 1 \pmod p$ we see that all multiples of $42$ will work for first and $46$ for the second. We can figure out that it is just $\text{lcm}(43-1,47-1)\cdot43\cdot47$ which when we add up we get that it's just the sum of the prime factors of $\text{lcm}(42,43,46,47)$ which you can just look at Solution 1 to find out the sum of the prime factors and get the answer $\boxed{125}$.
 
  
-
-
 
 
 
@@ -2246,8 +2020,6 @@ The sum of the factors of a number with prime factorization $n = p_1^{a_1} p_2^{
  \textbf{Remark (Dirichlet's Theorem)} All solutions require Dirichlet's Theorem, which states that for any coprime positive integers $k$ and $r$, there are infinitely many primes $p$ congruent to $r\pmod{k}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2021}) Let $S$ be the set of positive integers $k$ such that the two parabolas
@@ -2304,8 +2076,6 @@ We need $\frac32k-400+\frac{1}{16}+\frac{1681}{4}\leq21^2,$ from which $k\leq\le
 
 
 
-
-
 \textbf{Solution 2 (Translations, Inequalities, Circles)}
 
 Make the translation $y \rightarrow y+20$ to obtain $20+y=x^2-k$ and $x=2y^2-k$. Multiply the first equation by $2$ and sum, we see that $2(x^2+y^2)=3k+40+2y+x$. Completing the square gives us $\left(y- \frac{1}{2}\right)^2+\left(x - \frac{1}{4}\right)^2 = \frac{325+24k}{16}$; this explains why the two parabolas intersect at four points that lie on a circle*. For the upper bound, observe that $LHS \leq 21^2=441 \rightarrow 24k \leq 6731$, so $k \leq 280$. 
@@ -2323,8 +2093,6 @@ Make the translation $y \rightarrow y+20$ to obtain $20+y=x^2-k$ and $x=2y^2-k$.
 
 
                 
-
-
 
 
 
@@ -2375,8 +2143,6 @@ After simple transformations, we get $r^2 = 2(p_1^2 + p_2^2 + p_1 y_1 + p_2 x_2)
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -2434,8 +2200,6 @@ $x = 2y^2+2y-82y+800-k$
  The provided solution was incorrect because of a calculation error; I have corrected the answer and fixed latex typos.
 
  
-
-
 
 
 \end{enumerate}

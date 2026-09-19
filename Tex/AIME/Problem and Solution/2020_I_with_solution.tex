@@ -25,138 +25,6 @@
  
 
 
-
-
-
-\textbf{Solution 2}
-
-Let $\angle{BAC}$ be $x$ in degrees. $\angle{ADE}=x$.By Exterior Angle Theorem on triangle $AED$, $\angle{BED}=2x$.By Exterior Angle Theorem on triangle $ADB$, $\angle{BDC}=3x$.This tells us $\angle{BCA}=\angle{ABC}=3x$ and $3x+3x+x=180$.Thus $x=\frac{180}{7}$ and we want $\angle{ABC}=3x=\frac{540}{7}$ to get an answer of $\boxed{547}$.
-
- 
-
-
-
-
-
-\textbf{Solution 3 (Official MAA)}
-
-Let $x = \angle ABC = \angle ACB$. Because $\triangle BCD$ is isosceles, $\angle CBD = 180^\circ - 2x$. Then
- \[\angle DBE = x - \angle CBD = x - (180^\circ - 2x) =  3x - 180^\circ\!.\]Because $\triangle EDA$ and $\triangle DBE$ are also isosceles,
- \[\angle BAC =\frac12(\angle EAD + \angle ADE) = \frac12(\angle BED)= \frac12(\angle DBE)\]
- \[= \frac12 (3x - 180^\circ) = \frac32x-90^\circ\!.\]Because $\triangle ABC$ is isosceles, $\angle BAC$ is also $180^\circ-2x$, so $\frac32x - 90^\circ = 180^\circ - 2x$, and it follows that$\angle ABC = x = \left(\frac{540}7\right)^\circ$. The requested sum is $540+7 = 547$.
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_1_Solution_Figure_2.png}
-                    \end{figure}
-                    
-
- \href{https://artofproblemsolving.com/wiki/index.php/1961\_AHSME\_Problems/Problem\_25}{https://artofproblemsolving.com/wiki/index.php/1961\_AHSME\_Problems/Problem\_25}(Almost Mirrored)
-
- See here for a video solution:
-
- 
-
-
-
-
-
-\textbf{Solution 4 (writing equations)}
-
-graph soon
-
- We write equations based on the triangle sum of angles theorem. There are angles that do not need variables as the less variables the better.
-
- 
- \begin{align*} \angle A &= y \\ \angle B &= x+z \\ \angle C &= \frac{180-x}{2} \\ \end{align*}
-
-
- Then, using triangle sum of angles theorem, we find that
-
- 
- \begin{align*} \angle A + \angle B + \angle C = x+y+z+\frac{180-x}{2}=180 \\ \end{align*}
-
-
- Now we just need to find the variables.
-
- 
- \begin{align*} (180-2y)+z = 180& \\ (180-2z)+y+\frac{180-x}{2} = 180& \\ \end{align*}
-
-
- Notice how all the equations equal 180. We can use this to write
-
- 
- \begin{align*} (180-2y)+z = (180-2z)+y+\frac{180-x}{2}=x+y+z+\frac{180-x}{2} \\ \end{align*}
-
-
- Simplifying, we get
-
- 
- \begin{align*} (180-2y)+z=(180-2z)+y+\frac{180-x}{2} \\ 360-4y+2z=360-4z+2y+180-x \\ \end{align*}
-
-
- 
- \begin{align*} 6z=6y+180-x \\ x=6y-6z+180 \\ \end{align*}
-
-
- 
- \begin{align*} (180-2y)+z=6y-6z+180+y+z+\frac{180-(6y-6+180)}{2} \\ 360-4y+2z=12y-12z+360+2y+2z+180-6y+6z-180 \\ \end{align*}
-
-
- 
- \begin{align*} 6z=12y& \\ z=2y& \\ \end{align*}
-
-
- Theres more. We are at a dead end right now because we forgot that the problem states that the triangle is isosceles. With this, we can write the equation
-
- 
- \begin{align*} \frac{180-x}{2}=x+z \\ \end{align*}
-
-
- Substituting $z$ with $2y$, we get
-
- 
- \begin{align*} \frac{180-x}{2}=x+2y \\ 180-x=2x+4y \\ \end{align*}
-
- \begin{align*} 180-(6y-6z+180)=2(6y-6z+180)+4y& \\ 180-6y+12y-180=12y-24y+360+4y& \\ \end{align*}
-
- \begin{align*} 6y=-8y+360& \\ \end{align*}
-
-
- With this, we get
-
- 
- \begin{align*} y=\frac{180}{7} \\ x=\frac{180}{7} \\ z=\frac{360}{7} \\ \end{align*}
-
-
- And a final answer of $\frac{180}{7}+\frac{360}{7} = \frac{540}{7} = \boxed{547}$.
-
- 
-
-
-
-
-
-\textbf{Solution without words}
-
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_1_Solution_Figure_3.png}
-                    \end{figure}
-                    
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_1_Solution_Figure_4.png}
-                    \end{figure}
-                    \textbf{vladimir.shelomovskii@gmail.com, vvsss}
-
- 
-
-
-
-
 	\item (\textit{AIME I 2020}) There is a unique positive real number $x$ such that the three numbers $\log_8(2x),\log_4x,$ and $\log_2x,$ in that order, form a geometric progression with positive common ratio. The number $x$ can be written as $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
 
@@ -175,8 +43,6 @@ Since these form a geometric series, $\frac{\log_2{x}}{\log_4{x}}$ is the common
 
 
 
-
-
 \textbf{Solution 2}
 
 If we set $x=2^y$, we can obtain three terms of a geometric sequence through logarithm properties. The three terms are 
@@ -186,8 +52,6 @@ If we set $x=2^y$, we can obtain three terms of a geometric sequence through log
  -molocyxu
 
  
-
-
 
 
 
@@ -204,8 +68,6 @@ Let $r$ be the common ratio. We have
 
 
 
-
-
 \textbf{Solution 4 (Exponents > Logarithms)}
 
 Let $r$ be the common ratio, and let $a$ be the starting term ($a=\log_{8}{(2x)}$). We then have: 
@@ -219,8 +81,6 @@ Let $r$ be the common ratio, and let $a$ be the starting term ($a=\log_{8}{(2x)}
  \[8^{-1}=2x \implies 2x=\frac{1}{8} \implies x=\frac{1}{16}\] Therefore, $m+n=1+16=\boxed{017}$
 
  
-
-
 
 
 
@@ -251,8 +111,6 @@ We can relate the logarithms as follows:
 
 
 
-
-
 \textbf{Solution 6}
 
 If the numbers are in a geometric sequence, the middle term must be the geometric mean of the surrounding terms. We can rewrite the first two logarithmic expressions as $\frac{1+\log_2{x}}{3}$ and $\frac{1}{2}\log_2{x}$, respectively. Therefore:
@@ -269,15 +127,11 @@ If the numbers are in a geometric sequence, the middle term must be the geometri
 
 
 
-
-
 \textbf{Solution 7}
 
 Again, by the Change of Base Formula, obtain that the common ratio is 2. If we let $y$ be the exponent of $\log_8 (2x)$, then we have $8^y=2x;\:4^{2y}=x;\:2^{4y}=x.$ Wee can then divide the first equation by two to have the right side be $x$. Also, $2^{4y}=\left(2^{4}\right)^y=16^y$. Setting this equal to $\frac{8^y}{2}$, we can divide the two equations to get $2^y=\frac12$. Therefore, $y=-1$. After that, we can raise $16$ to the $-1$th power to get $x=16^{-1}\Rightarrow x=\frac1{16}$. We then get our sum of $1+16=\boxed{\textbf{017}}$.
 
  
-
-
 
 
 
@@ -291,8 +145,6 @@ By the Change of Base Formula the common ratio of the progression is
 
 
 
-
-
 \textbf{Solution 9}
 
 Let the series be $a,ar,ar^2$. So, converting these logarithms into exponents we have $8^a = 2x$, $4^{ar} = x$, and $2^{ar^2} = x$. So, setting the 2nd and 3rd equations equal, we have:
@@ -302,8 +154,6 @@ Let the series be $a,ar,ar^2$. So, converting these logarithms into exponents we
  -jb2015007
 
  
-
-
 
 
 	\item (\textit{AIME I 2020}) A positive integer $N$ has base-eleven representation $\underline{a}\kern 0.1em\underline{b}\kern 0.1em\underline{c}$ and base-eight representation $\underline1\kern 0.1em\underline{b}\kern 0.1em\underline{c}\kern 0.1em\underline{a},$ where $a,b,$ and $c$ represent (not necessarily distinct) digits. Find the least such $N$ expressed in base ten.
@@ -322,17 +172,11 @@ From the given information, $121a+11b+c=512+64b+8c+a \implies 120a=512+53b+7c$. 
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 The conditions of the problem imply that $121a + 11b + c = 512 + 64b + 8 c + a$, so $120 a = 512+ 53b+7c$. The maximum digit in base eight is $7,$ and because $120a \ge 512$, it must be that $a$ is $5, 6,$ or $7.$ When $a = 5$, it follows that $600=512 + 53b+7c$, which implies that $88 = 53b+7c$. Then $b$ must be $0$ or $1.$ If $b = 0$, then $c$ is not an integer, and if $b = 1$, then $7c = 35$, so $c = 5$. Thus $N = 515_{11}$, and $N=5\cdot 121 + 1\cdot 11 + 5 = 621$. The number $637_{11} =1376_{8} = 766$ also satisfies the conditions of the problem, but $621$ is the least such number.
 
- Minor edits by TryhardMathlete
-
  
-
-
 
 
 	\item (\textit{AIME I 2020}) Let $S$ be the set of positive integers $N$ with the property that the last four digits of $N$ are $2020,$ and when the last four digits are removed, the result is a divisor of $N.$ For example, $42{,}020$ is in $S$ because $4$ is a divisor of $42{,}020.$ Find the sum of all the digits of all the numbers in $S.$ For example, the number $42{,}020$ contributes $4+2+0+2+0=8$ to this total.
@@ -355,8 +199,6 @@ We note that any number in $S$ can be expressed as $a(10,000) + 2,020$ for some 
 
 
 
-
-
 \textbf{Solution 2 (Official MAA)}
 
 Suppose that $N$ has the required property. Then there are positive integers $k$ and $m$ such that $N = 10^4m + 2020 = k\cdot m$. Thus $(k - 10^4)m = 2020$, which holds exactly when $m$ is a positive divisor of $2020.$ The number $2020 = 2^2\cdot 5\cdot 101$ has $12$ divisors: $1, 2, 4, 5, 10, 20, 101, 202, 404, 505, 1010$, and $2020.$ The requested sum is therefore the sum of the digits in these divisors plus $12$ times the sum of the digits in $2020,$ which is
@@ -366,15 +208,11 @@ Suppose that $N$ has the required property. Then there are positive integers $k$
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that for all $N \in S$, $N$ can be written as $N=10000x+2020=20(500x+101)$ for some positive integer $x$. Because $N$ must be divisible by $x$, $\frac{20(500x+101)}{x}$ is an integer. We now let $x=ab$, where $a$ is a divisor of $20$. Then $\frac{20(500x+101)}{x}=(\frac{20}{a})( \frac{500x}{b}+\frac{101}{b})$. We know $\frac{20}{a}$ and $\frac{500x}{b}$ are integers, so for $N$ to be an integer, $\frac{101}{b}$ must be an integer. For this to happen, $b$ must be a divisor of $101$. $101$ is prime, so $b\in \left \{ 1, 101 \right \}$. Because $a$ is a divisor of $20$, $a \in \left \{ 1,2,4,5,10,20\right\}$. So $x \in \left\{1,2,4,5,10,20,101,202,404,505,1010,2020\right\}$. Be know that all $N$ end in $2020$, so the sum of the digits of each $N$ is the sum of the digits of each $x$ plus $2+0+2+0=4$. Hence the sum of all of the digits of the numbers in $S$ is $12 \cdot 4 +45=\boxed{093}$.
 
  
-
-
 
 
 
@@ -387,14 +225,6 @@ The property of all numbers will fall under the category $\mathcal{N}2020$ where
  Here, \textbf{Juxtaposition} is directly used in terms of altering the digits, showing that we may form a specific number $O^\mathcal{x}$ and remove the digits 2, 0, 2, 0 in the same order, and the resulting number must also divide the original number $O$ given that $\mathcal{N}$ is not altered. This forms a bijection, and one can then show by special usage of juxtapositions that a special orientation forces $\mathcal{N}$ as a factor of 2020, hence proven. $\square$
 
  
-                \begin{itemize}
-                    \item \href{https://youtu.be/5b9Nw4bQt\_k}{https://youtu.be/5b9Nw4bQt\_k}\item \href{https://youtu.be/djWzRC-jGYw}{https://youtu.be/djWzRC-jGYw}
-                \end{itemize}
-
-
-                
-
-
 
 
 	\item (\textit{AIME I 2020}) Six cards numbered $1$ through $6$ are to be lined up in a row. Find the number of arrangements of these six cards where one of the cards can be removed leaving the remaining five cards in either ascending or descending order.
@@ -415,8 +245,6 @@ Realize that any sequence that works (ascending) can be reversed for descending,
 
 
 
-
-
 \textbf{Solution 2 (Inspired by 2018 CMIMC Combo Round)}
 
 Similar to above, a $1-1$ correspondence between ascending and descending is established by subtracting each number from $7$.
@@ -428,8 +256,6 @@ Similar to above, a $1-1$ correspondence between ascending and descending is est
  It's not hard to see that no overcount is possible, and that the cycle is either $1$ "right" or $1$ "left." Therefore, we consider how many elements we flip by. If we flip $1$ or $2$ such elements, then there is one way to cycle them. Otherwise, we have $2$ ways. Therefore, the total number of ascending is $1 + 5 + 2(4 + 3 + 2 + 1) = 26$, and multiplying by two gives $\boxed{052}.$ 
 
  
-
-
 
 
 
@@ -450,8 +276,6 @@ We create a table with each digit in a corresponding slot. A sample one is shown
 
 
 
-
-
 \textbf{Solution 4}
 
 Similarly to Solution 2, we find the number of ascending arrangements and multiply by 2. 
@@ -465,8 +289,6 @@ Similarly to Solution 2, we find the number of ascending arrangements and multip
  Therefore, we have $36-5-5=26$ total arrangements of ascending numbers. We multiply by two (for descending) to get the answer of $\boxed{052}.$ 
 
  
-
-
 
 
 
@@ -490,15 +312,11 @@ Like in previous solutions, we will count the number of ascending arrangements a
 
 
 
-
-
 \textbf{Solution 6 (Official MAA 1)}
 
 First count the number of permutations of the cards such that if one card is removed, the remaining cards will be in ascending order. There is $1$ such permutation where all the cards appear in order: $123456.$ There are $5$ such permutations where two adjacent cards are interchanged, as in $124356.$ The other such permutations arise from removing one card from $123456$ and placing it in a position at least two away from its starting location. There are $4$ such positions to place each of the cards numbered $1$ and $6,$ and $3$ such positions for each of the cards numbered $2, 3, 4,$ and $5.$ This accounts for $2\cdot4 + 4\cdot3 =20$ permutations. Thus there are $1 + 5 + 20 = 26$ permutations where one card can be removed so that the remaining cards are in ascending order. There is an equal number of permutations that result in the cards' being in descending order. This gives the total $26 + 26 = \boxed{52}$.
 
  
-
-
 
 
 
@@ -510,15 +328,11 @@ More generally, suppose there are $n \geq 4$ cards numbered $1, 2, 3, \dots, n$ 
 
 
 
-
-
 \textbf{Solution 8 (Casework)}
 
 For ascending, if the $1$ goes in anything but the first two slots, the rest of the numbers have to go in ascending from $2$, which are $4$ cases if there are $6$ cards. If $1$ goes in the second spot, then you can put any of the rest in the first slot but then the rest are determined, so in the case of $6$ cards, that gives $5$ more. If $1$ goes in the first slot, that means that you are doing the same problem with $n-1$ cards. So the recursion is $a_n=(n-2)+(n-1)+a_{n-1}$. There's $a_1=1$ and $a_2=2$, so you get $a_3=2+3=5$, $a_4=5+5=10$, $a_5=7+10=17$, and $a_6=9+17=26$. Or you can see that $a_n=(n-1)^2+1$. We double to account for descending and get $\boxed{052}$. 
 
  
-
-
 
 
 
@@ -530,11 +344,15 @@ First, we know that ascending order and descending order are symmetrical to each
 
  Case 1: after we take out 1, the rest will be in ascending order:
 
- 2 3 4 5 6Notice that 1 can be tucked in any one of the 6 spaces, thus there are 6 scenarios.
+ 2 3 4 5 6
+
+ Notice that 1 can be tucked in any one of the 6 spaces, thus there are 6 scenarios.
 
  Case 2: after we take out 2, the rest will be in ascending order:
 
- 1 3 4 5 6Notice that if we put 2 next to 1 (to the right or to the left of 1), it will be an overcount, so there are only 4 cases for 2.
+ 1 3 4 5 6
+
+ Notice that if we put 2 next to 1 (to the right or to the left of 1), it will be an overcount, so there are only 4 cases for 2.
 
  It is easy to see that this is the same for 3, 4, 5, and 6.
 
@@ -542,8 +360,6 @@ First, we know that ascending order and descending order are symmetrical to each
  \[(6+4\times5)\times2=\boxed{052}\]~Adali
 
  
-
-
 
 
 
@@ -564,8 +380,6 @@ We start with five cards in ascending order, then insert the sixth card to obtai
 
 
 
-
-
 \textbf{Solution 11}
 
 We first realize that as long as we have an ascending sequence of $5$ numbers, we can just plug in a $6$th to make a sequence that works. For example, if we have $12345$, we can plug in a $6$ in any of $6$ spaces, before $1$, between $1$ and $2$, and so on to after $5$. We can also realize that this is completely symmetrical if the sequence is in descending order. For example, we could have $54321$, and we could plug in a 6 in 6 of the spaces. For the total number of combinations, we have 6 ascending cases multiplied by the $6$ places that can hold whatever number is missing, and multiply by 2 because there is descending and ascending number cases. 
@@ -578,8 +392,6 @@ We first realize that as long as we have an ascending sequence of $5$ numbers, w
 
 
 
-
-
 \textbf{Solution 12}
 
 Like the previous solutions, we calculate ascending possibilities then multiply by two. Then, the configuration can look like +++++ or +-+++ (the minus can go anywhere), where "+" indicates an increase, and "-" indicates a decrease. Obviously, for the first case, the only possibility is 123456. For the second case, we can start with 123456, and then take either a card after the "-" and put it before the "-", or we could take a card before the "-" and put it after the "-". This means that every card other than the one at the position of the "-" can be used in one way. There are five ways to have 4 plus's, and one minus, and for each way, there are 5 ways to rearrange 123456 to achieve that. So, our answer is $2(5\cdot5+1)=\boxed{052}$
@@ -588,15 +400,11 @@ Like the previous solutions, we calculate ascending possibilities then multiply 
 
 
 
-
-
 \textbf{Solution 13 (Undercount+add cases)}
 
 First, we select $5$ of the $6$ cards to put in ascending or descending order. Then, we must add the other card to the group to arrange the six cards such that one can be removed so that the remaining cards are in ascending or descending order. Then, it would seem that the answer is $(6C5)*2$(ascending or descending)*$6$(the number of ways to place the last card). However, this overcounts some cases. For example, 123456 and 654321 can be made with 12345 and 6, 12346 and 5, etc. Furthermore, 654312 can be made with 65432 and 1 or 65431 and 2. Therefore, we first find that $(6C5)*2*4$=$48$. Then, we add the special cases ($123456$, $654321$, $654312$, $123465$) to obtain $\boxed{052}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 2020}) A flat board has a circular hole with radius $1$ and a circular hole with radius $2$ such that the distance between the centers of the two holes is $7$. Two spheres with equal radii sit in the two holes such that the spheres are tangent to each other. The square of the radius of the spheres is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -622,8 +430,6 @@ First, we select $5$ of the $6$ cards to put in ascending or descending order. T
 Therefore, our answer is $\boxed{173}$.
 
  
-
-
 
 
 
@@ -662,8 +468,6 @@ Therefore, our answer is $\boxed{173}$.
  
 
 
-
-
 	\item (\textit{AIME I 2020}) A club consisting of $11$ men and $12$ women needs to choose a committee from among its members so that the number of women on the committee is one more than the number of men on the committee. The committee could have as few as $1$ member or as many as $23$ members. Let $N$ be the number of such committees that can be formed. Find the sum of the prime numbers that divide $N.$
 
 
@@ -680,8 +484,6 @@ Let $k$ be the number of women selected. Then, the number of men not selected is
 
 
 
-
-
 \textbf{Solution 2 (Bash)}
 
 We casework on the amount of men on the committee. 
@@ -692,85 +494,7 @@ We casework on the amount of men on the committee.
 
  All other cases proceed similarly. For example, the case with one men or ten men is equal to $\dbinom{11}{1} \cdot \dbinom{13}{2}$. Now, if we factor out a $13$, then all cases except the first two have a factor of $121$, so we can factor this out too to make our computation slightly easier. The first two cases (with $13$ factored out) give $1+66=67$, and the rest gives $121(10+75+270+504) = 103,939$. Adding the $67$ gives $104,006$. Now, we can test for prime factors. We know there is a factor of $2$, and the rest is $52,003$. We can also factor out a $7$, for $7,429$, and the rest is $17 \cdot 19 \cdot 23$. Adding up all the prime factors gives $2+7+13+17+19+23 = \boxed{081}$.
 
- \textbf{Video Solution:} 
-
-
-
-
-
-\textbf{Solution 3 (Vandermonde's identity)}
-
-Applying \href{https://artofproblemsolving.com/wiki/index.php/Combinatorial\_identity}{[1]} by setting $m=12$, $n=11$, and $r=11$, we obtain $\binom{23}{11}\implies$ $\boxed{081}$.~Lcz
-
- \textbf{Short Proof} Consider the following setup:
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_7_Solution_Figure_1.png}
-                    \end{figure}
-                    The dots to the left represent the men, and the dots to the right represent the women. Now, suppose we put a mark on $11$ people (the $*$). Those to the left of the dashed line get to be "in" on the committee if they have a mark. Those on the right side of the dashed line are already on the committee, but if they're marked they get forcibly evicted from it. If there were $x$ people marked on the left, there ends up being $12-(11-x) = x+1$ people not marked on the right. Circles represent those in the committee.
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_7_Solution_Figure_2.png}
-                    \end{figure}
-                    
-
- We have our bijection, so the number of ways will be $\binom{23}{11}$.
-
  
-
-
-
-
-
-\textbf{Solution 4}
-
-Notice that the committee can consist of $k$ boys and $k+1$ girls. Summing over all possible $k$ gives 
- \[\sum_{k=0}^{11}\binom{11}{k}\binom{12}{k+1}=\binom{11}{0}\binom{12}{1}+\binom{11}{1}\binom{12}{2}+\cdots + \binom{11}{11}\binom{12}{12}\]Using the identity $\binom{n}{k}=\binom{n}{n-k}$, and Pascal's Identity $\binom{n}{k}+\binom{n}{k+1}=\binom{n+1}{k+1}$, we get
- \[\sum_{k=0}^{11}\binom{11}{k}\binom{12}{k+1}=\binom{12}{12}+\binom{12}{1}\left(\binom{11}{0}+\binom{11}{1}\right)+\cdots\]
- \[=\binom{12}{0}^2+\binom{12}{1}^2+\binom{12}{2}^2+\binom{12}{3}^2+\binom{12}{4}^2+\binom{12}{5}^2+\frac{\binom{12}{6}^2}{2}\]
- \[=\frac{1}{2}\sum_{k=0}^{12}\binom{12}{k}^2\]Using the identity $\sum_{k=0}^n\binom{n}{k}^2=\binom{2n}{n}$, this simplifies to 
- \[\frac{1}{2}\cdot \binom{24}{12}=\frac{24\cdot 23\cdot 22\cdot 21\cdot 20\cdot 19\cdot 18\cdot 17\cdot 16\cdot 15\cdot 14\cdot 13}{2\cdot 12\cdot 11\cdot 10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2}=2\cdot 7\cdot 13\cdot 17\cdot 19\cdot 23\]so the desired answer is $2+7+13+17+19+23=\boxed{081}$ ~ktong
-
- 
-
-
-
-
-
-\textbf{Solution 5 (Official MAA)}
-
-Select any $11$ club members. That group will have $i$ men and $11-i$ women, so the number of women in the club not selected in that group is $12 - (11-i) = i+1$. Thus, if the committee includes the men who were selected and the women who were not selected, the committee would have the correct number of men and women. Conversely, for every committee that could be formed with $i$ men and $i+1$ women, the men on this committee together with the women not on the committee comprise a subset of $i + (12 - (i+1)) = 11$ club members. Thus
- \[N = \binom{23}{11}= \frac{23\cdot22\cdot21\cdot20\cdot19\cdot18\cdot17\cdot16\cdot15\cdot14\cdot13}{11\cdot10\cdot9\cdot8\cdot7\cdot6\cdot5\cdot4\cdot3\cdot2\cdot1}=23\cdot19\cdot17\cdot13\cdot7\cdot2.\]The requested sum is $23+19+17+13+7+2=\boxed{081}$.
-
- 
-
-
-
-
-
-\textbf{Solution 6}
-
-Notice that if $k$ men are picked, then $k+1$ women must be picked. Furthermore, $k$ can range from $0$ to $11$. Then, 
- \[N=\sum_{k=0}^{11} \binom{11}{k}\binom{12}{k+1}=\binom{11}{0}\binom{12}{1}+\binom{11}{1}\binom{12}{2}+\dots+\binom{11}{11}\binom{12}{12}\]Since $\binom{n}{k}=\binom{n}{n-k}$, this equals
- \[N=\binom{11}{0}\binom{12}{11}+\binom{11}{1}\binom{12}{10}+\dots+\binom{11}{11}\binom{12}{0}\]According to Vandermonde's Identity,
- \[N=\binom{11+12}{11}=\binom{23}{11}\]
- \[N=\frac{23!}{11!\cdot 12!}=\frac{2^{19}\cdot 3^9\cdot 5^4\cdot 7^3\cdot 11^2\cdot 13\cdot 17\cdot 19\cdot 23}{2^{10}\cdot 3^5\cdot 5^2\cdot 7\cdot 11\times 2^8\cdot 3^4\cdot 5^2\cdot 7\cdot 11}=2\cdot 7\cdot 13\cdot 17\cdot 19\cdot 23\rightarrow \boxed{081}\]~\href{https://artofproblemsolving.com/wiki/index.php/User:Sid2012\#User}{sid2012}
-
- 
-
-
-
-
-
-\textbf{Solution 7 ( *Rigorous* Recursion)}
-
-Test the cases where there are $0$ men $1$ woman, $1$ man $2$ women, $2$ men $3$ women ... you will get the sequence $1$, $3$, $10$, $35$. Multiply all these numbers by $2$ to get $2$, $6$, $20$, $70$, which is also $\binom{2}{1}$, $\binom{4}{2}$, $\binom{6}{3}$, $\binom{8}{4}$. Thus, continuing this pattern, the case with $11$ men and $12$ women should have $\frac{\binom{24}{12}}{2}$ ways to select the committee.-Kevin2010
-
- (Solves using both methods - Casework and Vandermonde's Identity)
-
- 
-
-
 
 
 	\item (\textit{AIME I 2020}) A bug walks all day and sleeps all night. On the first day, it starts at point $O,$ faces east, and walks a distance of $5$ units due east. Each night the bug rotates $60^\circ$ counterclockwise. Each day it walks in this new direction half as far as it walked the previous day. The bug gets arbitrarily close to the point $P.$ Then $OP^2=\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
@@ -789,8 +513,6 @@ Put the problem on the complex plane. Let $O$ be $0$. Define $\omega := \frac{1}
  -sillybone
 
  
-
-
 
 
 
@@ -820,8 +542,6 @@ Put the problem on the complex plane. Let $O$ be $0$. Define $\omega := \frac{1}
 
 
 
-
-
 \textbf{Solution 3 (Complex)}
 
 We place the ant at the origin of the complex plane with its first move being in the positive real direction.  Then the ant's journey can be represented as the infinite series
@@ -833,15 +553,11 @@ We place the ant at the origin of the complex plane with its first move being in
 
 
 
-
-
 \textbf{Solution 3 (Solution 1 Faster)}
 
 The ant goes in the opposite direction every $3$ moves, going $(1/2)^3=1/8$ the distance backwards. Using geometric series, he travels $1-1/8+1/64-1/512...=(7/8)(1+1/64+1/4096...)=(7/8)(64/63)=8/9$ the distance of the first three moves over infinity moves. Now, we use coordinates meaning $(5+5/4-5/8, 0+5\sqrt3/4+5\sqrt3/8)$ or $(45/8, 15\sqrt3/8)$. Multiplying these by $8/9$, we get $(5, 5\sqrt3/3)$ $\implies$ $\boxed{103}$ .
 
  
-
-
 
 
 
@@ -861,16 +577,12 @@ Suppose that the bug starts at the origin $(0,0)$ and travels a distance of $a$ 
 
 
 
-
-
 \textbf{Solution 6 (Official MAA 2)}
 
 Let point $O$ be the origin in the complex plane. Point $P$ is the complex sum $5(1+z+z^2+\cdots) = \frac{5}{1-z}$, where $z=\frac{1+i\sqrt3}4$. The distance squared is
  \[{OP}^2=\left|\frac5{1-\frac{1+i\sqrt3}4}\right|^{2}= \frac{(4\cdot5)^2}{\left|4-(1+i\sqrt3)\right|^2}=\frac{400}{9+3}=\frac{100}3.\]Hence the answer is $100 + 3 = \boxed{103}$.
 
  
-
-
 
 
 
@@ -881,8 +593,6 @@ The bug goes forward and backward in three directions: straight east, northeast,
  -integralarefun
 
  
-
-
 
 
 
@@ -905,13 +615,7 @@ The bug's bearings on each traversal are $0^\circ, 60^\circ, 120^\circ,$ and so 
 
  Thus, the answer is $100+3=\boxed{103}.$ --MenuThreeOne
 
- Moving Bug in AIME solution with python turtle scripts
-
- -avn
-
  
-
-
 
 
 	\item (\textit{AIME I 2020}) Let $S$ be the set of positive integer divisors of $20^9.$ Three numbers are chosen independently and at random with replacement from the set $S$ and labeled $a_1,a_2,$ and $a_3$ in the order they are chosen. The probability that both $a_1$ divides $a_2$ and $a_2$ divides $a_3$ is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m.$
@@ -931,11 +635,65 @@ The bug's bearings on each traversal are $0^\circ, 60^\circ, 120^\circ,$ and so 
                     \end{figure}
                     
 
- First, prime factorize $20^9$ as $2^{18} \cdot 5^9$. Denote $a_1$ as $2^{b_1} \cdot 5^{c_1}$, $a_2$ as $2^{b_2} \cdot 5^{c_2}$, and $a_3$ as 
+ First, prime factorize $20^9$ as $2^{18} \cdot 5^9$. Denote $a_1$ as $2^{b_1} \cdot 5^{c_1}$, $a_2$ as $2^{b_2} \cdot 5^{c_2}$, and $a_3$ as $2^{b_3} \cdot 5^{c_3}$.
+
+ In order for $a_1$ to divide $a_2$, and for $a_2$ to divide $a_3$, $b_1\le b_2\le b_3$, and $c_1\le c_2\le c_3$. We will consider each case separately. Note that the total amount of possibilities is $190^3$, as there are $(18+1)(9+1)=190$ choices for each factor.
+
+ We notice that if we add $1$ to $b_2$ and $2$ to $b_3$, then we can reach the stronger inequality $0\le b_1<b_2+1<b_3+2\le 20$. Therefore, if we pick $3$ integers from $0$ to $20$, they will correspond to a unique solution, forming a 1-1 correspondence between the numbers $b_1$, $b_2+1$, and $b_3+2$. This is also equivalent to applying stars and bars on distributing the powers of 2 and 5 through differences. The amount of solutions to this inequality is $\dbinom{21}{3}$.
+
+ The case for $c_1$,$c_2$, and $c_3$ proceeds similarly for a result of $\dbinom{12}{3}$. Therefore, the probability of choosing three such factors is 
+ \[\frac{\dbinom{21}{3} \cdot \dbinom{12}{3}}{190^3}.\] Simplification gives $\frac{77}{1805}$, and therefore the answer is $\boxed{077}$.
+
+ -molocyxu
 
  
 
 
+
+\textbf{Solution 2}
+
+Same as before, say the factors have powers of $b$ and $c$. $b_1, b_2, b_3$ can either be all distinct, all equal, or two of the three are equal. As well, we must have $b_1 \leq b_2 \leq b_3$. If they are all distinct, the number of cases is simply ${19 \choose 3}$. If they are all equal, there are only $19$ cases for the general value. If we have a pair equal, then we have $2 \cdot {19\choose 2}$. We need to multiply by $2$ because if we have two values $b_i < b_j$, we can have either $(b_i, b_i, b_j)$ or $(b_i, b_j, b_j)$. 
+
+ 
+ \[{19 \choose 3} + 2 \cdot {19 \choose 2} + 19 = 1330\]
+
+ Likewise for $c$, we get
+
+ 
+ \[{10 \choose 3} + 2 \cdot {10 \choose 2} + 10 = 220\]
+
+ The final probability is simply $\frac{1330 \cdot 220}{190^3}$. Simplification gives $\frac{77}{1805}$, and therefore the answer is $\boxed{077}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Similar to before, we calculate that there are $190^3$ ways to choose $3$ factors with replacement. Then, we figure out the number of triplets ${a,b,c}$ and ${d,f,g}$, where $a$, $b$, and $c$ represent powers of $2$ and $d$, $f$, and $g$ represent powers of $5$, such that the triplets are in non-descending order. The maximum power of $2$ is $18$, and the maximum power of $5$ is $9$. Using the Hockey Stick identity, we figure out that there are $\dbinom{12}{3}$ ways to choose $d$, $f$ and $g$, and $\dbinom{21}{3}$ ways to choose $a$, $b$, and $c$. Therefore, the probability of choosing $3$ factors which satisfy the conditions is 
+ \[\frac{\dbinom{21}{3} \cdot \dbinom{12}{3}}{190^3}.\] This simplifies to $\frac{77}{1805}$, therefore $m =$ $\boxed{077}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Official MAA)}
+
+Note that the prime factorization of $20^9$ is $2^{18}\cdot5^{9}.$ The problem reduces to selecting independently the powers of $2$ and the powers of $5$ in the numbers $a_1$, $a_2$, and $a_3$. This is equivalent to selecting $3$ exponents for the powers of $2$ and $3$ exponents for the powers of $5$ and determining in each case the probability that the 3 exponents are chosen in nondecreasing order. Given a positive integer $k$, the probability that three integers $a$, $b$, and $c$ are chosen such that $0\le a \le b\le c \le k$ is the probability that $a$, $b+1$, and $c+2$ are chosen such that $0 \le a < b+1 < c+2 \le k+2$. There are $\binom {k+3}3$ ways to choose $a$, $b+1$, and $c+2$, so the probability that the integers are chosen in order is
+ \[\frac{\binom{k+3}3}{(k+1)^3}.\]Thus the probability that three chosen divisors of $20^9$ satisfy the divisibility requirement is
+ \[\frac{\binom{12}3}{10^3}\cdot\frac{\binom{21}3}{19^3}=\frac{12\cdot11\cdot10}{6\cdot10\cdot10\cdot10}\cdot\frac{21\cdot20\cdot19}{6\cdot19\cdot19\cdot19}=\frac{77}{1805}.\]The requested numerator is $77.$
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Let $S$ be the set of positive integer divisors of $20^9.$ Three numbers are chosen independently and at random with replacement from the set $S$ and labeled $a_1,a_2,$ and $a_3$ in the order they are chosen. The probability that both $a_1$ divides $a_2$ and $a_2$ divides $a_3$ is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m.$[rule]We prime factorize $20^9$ as $2^{18}\cdot 5^9$. Let $a_1=2^x 5^y$, $a_2 = 2^{x+a} 5^{y+b}$, and $a_3 = a^{x+a+c} 5^{y+b+d}$. This choice of exponents guarantees that $a_1$ is a factor of $a_2$ and $a_2$ is a factor of $a_3$. We have that $x+a+c<18$ and $y+b+d<9$. Suppose that $x+a+c$ is equal to $n$ for some $n$ under $18$. Then there would be $\dbinom{n+3-1}{3-1} = \dbinom{n+2}{2}$ ways to pick $x$, $a$, and $c$. $y$, $b$, and $d$ can be picked similarly. So, we would like to evaluate
+ \[\left(\sum\limits_{n=0}^{18} \dbinom{n+2}{2}\right)\left(\sum\limits_{m=0}^{9} \dbinom{m+2}{2}\right).\]Since $\dbinom{n+2}{2}=\frac{(n+2)(n+1)}{2} = \frac12 (n^2+3n+2)$, we get that the numerator is equal to
+ \[\frac{1}{2}\left(\frac{(18)(19)(37)}{6} + \frac{3(18)(19)}{2} + 38\right)\left(\frac{1}{2}\right)\left(\frac{(9)(10)(19)}{6} + \frac{3(9)(10)}{2} + 18\right) = 1330\cdot220.\]The denominator is $190^3$, so after simplifying we get $\frac{77}{1805}$ so the answer is $\boxed{077}$.
+
+ 
 
 
 	\item (\textit{AIME I 2020}) Let $m$ and $n$ be positive integers satisfying the conditions
@@ -966,8 +724,6 @@ Taking inspiration from $4^4 \mid 10^{10}$ we are inspired to take $n$ to be $p^
 
 
 
-
-
 \textbf{Solution 2}
 
 We essentially have that $\gcd(m,n) \notin \{1, m, n\},$ or the set of factors of $210.$
@@ -982,8 +738,6 @@ This implies that one number must be odd and the other must be even so that they
  Therefore, the least possible value of $m + n$ is $121 + 286 = \boxed{407}.$ 
 
  
-
-
 
 
 
@@ -1003,8 +757,6 @@ Assume for the sake of contradiction that $n$ is a multiple of a single digit pr
 
 
 
-
-
 \textbf{Solution 4 (Official MAA)}
 
 Let $m$ and $n$ be positive integers where $m^m$ is a multiple of $n^n$ and $m$ is not a multiple of $n$. If a prime $p$ divides $n$, then $p$ divides $n^n$, so it also divides $m^m$, and thus $p$ divides $m$. Therefore any prime $p$ dividing $n$ also divides both $m$ and $k = m + n$. Because $k$ is relatively prime to $210=2\cdot3\cdot5\cdot7$, the primes $2$, $3$, $5$, and $7$ cannot divide $n$. Furthermore, because $m$ is divisible by every prime factor of $n$, but $m$ is not a multiple of $n$, the integer $n$ must be divisible by the square of some prime, and that prime must be at least $11$. Thus $n$ must be at least $11^2 = 121$.
@@ -1014,8 +766,6 @@ Let $m$ and $n$ be positive integers where $m^m$ is a multiple of $n^n$ and $m$ 
  It remains to consider other possible values for $n$. If $n = 13^2 = 169$, then $m$ must be divisible by $13$ but not $169$, and $m^m$ must be a multiple of $n^n = 169^{169} = 13^{338}$, so $m > 338$. Then $k = m + n > 169 + 338 = 507$. All other possible values for $n$ have $n \ge 242$, and in this case $m > n \ge 242$, so $k \ge 2 \cdot 242 = 484$. Hence no greater values of $n$ can produce lesser values for $k$, and the least possible $k$ is indeed $407$.
 
  
-
-
 
 
 
@@ -1050,11 +800,6 @@ Because $210 = 2\times3\times5\times7$, the minimum factor of $m+n$ can have is 
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME I 2020}) For integers $a,b,c$ and $d,$ let $f(x)=x^2+ax+b$ and $g(x)=x^2+cx+d.$ Find the number of ordered triples $(a,b,c)$ of integers with absolute values not exceeding $10$ for which there is an integer $d$ such that $g(f(2))=g(f(4))=0.$
 
 
@@ -1078,8 +823,6 @@ There can be two different cases for this problem, either $f(2)=f(4)$ or not. If
 
 
 
-
-
 \textbf{Solution 2 (Bash)}
 
 Define $h(x)=x^2+cx$. Since $g(f(2))=g(f(4))=0$, we know $h(f(2))=h(f(4))=-d$. Plugging in $f(x)$ into $h(x)$, we get $h(f(x))=x^4+2ax^3+(2b+a^2+c)x^2+(2ab+ac)x+(b^2+bc)$. Setting $h(f(2))=h(f(4))$, 
@@ -1099,8 +842,6 @@ Define $h(x)=x^2+cx$. Since $g(f(2))=g(f(4))=0$, we know $h(f(2))=h(f(4))=-d$. P
 
 
 
-
-
 \textbf{Solution 3 (Official MAA)}
 
 For a given ordered triple $(a, b, c)$, the value of $g(f(4)) - g(f(2))$ is uniquely determined, and a value of $d$ can be found to give $g(f(2))$ any prescribed integer value. Hence the required condition can be satisfied provided that $a$, $b$, and $c$ are chosen so that
@@ -1112,11 +853,32 @@ First suppose that $12 + 2a = 0$, so $a = -6$. In this case there are $21$ choic
  
  \[\begin{tabular}{|c|c|c|r|} \hline a  & b                  & c & triples \\ \hline -8 & \{9,10\}           & -6a - 2b - 20    &             2              \\ -7 & \{6, 7, 8, 9, 10\} &   -6a - 2b - 20  &         5                  \\ -6 & \{-10, \ldots, 10\} &  \{-10, \ldots, 10\}   &                  441        \\ -5 & \{0, \ldots, 10\}      &  -6a - 2b - 20   &    11                       \\ -4 & \{-3, \ldots, 7\}        &  -6a - 2b - 20   &   11                       \\ -3 & \{-6, \ldots, 4\}        &  -6a - 2b - 20   &   11                       \\ -2 & \{-9, \ldots, 1\}         &  -6a - 2b - 20   &   11                        \\ -1 & \{-10, \ldots, -2\}   &  -6a - 2b - 20   &           9                \\ 0  & \{-10, \ldots, -5\}        &   -6a - 2b - 20  &      6                     \\ 1  & \{-10, -9, -8\}        &  -6a - 2b - 20   &      3                     \\ \hline Total & & & 510\\ \hline \end{tabular}\]The total number of ordered triples that satisfy the required condition is $\boxed{510}$.
 
- \textbf{Notes For *} In case anyone is confused by this (as I initially was). In the case where $f(2)=f(4)$, this does not mean that g has a double root of $f(2)=f(4)=k$, ONLY that $k$ is one of the roots of g. So basically since $a=-6$ in this case, $f(2)=f(4)=b-8$, and we have $21$ choices for b and we \textit{still can} ensure c is an integer with absolute value less than or equal to 10 simply by having another integer root of g that when added to $b-8$ ensures this, and of course an integer multiplied by an integer is an integer so $d$ will still be an integer. In other words, you have can have $b$ and $c$ be any integer with absolute value less than or equal to 10 with $d$ still being an integer. Now refer back to the 1st solution.~First
-
  
 
 
+
+\textbf{Solution 4}
+
+\textbf{Case 1}
+
+ If $f(2) = f(4) \implies a = -6$ as $4+2a+b = 16+4a+b \implies 12 = -2a \implies a = -6$ and thus $b$ is expendable to all 21 integers and so is $c$. Note that $d$ must then be uniquely determined to cancel the given constants to achieve 0 and thus we have $21^2 = 441$ ordered pairs here.
+
+ \textbf{Case 2}
+
+ $f(2) = 4+2a+b$ and $f(4) = 16+4a+b$ hence $g(f(2)) = (4+2a+b)^2 + (4+2a+b)c + d = 0$ and $g(f(4)) = (16+4a+b)^2 + (16+4a+b)c + d = 0$. Thus, by Vieta's, $c = -(2b+6a+20)$. That is, we must have $2b+6a+20 \in [-10,10]$. This is more evident if one considers the bash of $g(f(4)) - g(f(2))$.
+
+ 
+ \[6a+2b \in [-30,-10]\]
+ \[3a+2b \in [-15,-5]\]
+
+ We use the table in solution 3:
+
+ 
+ \[\begin{tabular}{|c|c|c|r|} \hline a  & b                  & c & triples \\ \hline -8 & \{9,10\}           & -6a - 2b - 20    &             2              \\ -7 & \{6, 7, 8, 9, 10\} &   -6a - 2b - 20  &         5                  \\ -5 & \{0, \ldots, 10\}      &  -6a - 2b - 20   &    11                       \\ -4 & \{-3, \ldots, 7\}        &  -6a - 2b - 20   &   11                       \\ -3 & \{-6, \ldots, 4\}        &  -6a - 2b - 20   &   11                       \\ -2 & \{-9, \ldots, 1\}         &  -6a - 2b - 20   &   11                        \\ -1 & \{-10, \ldots, -2\}   &  -6a - 2b - 20   &           9                \\ 0  & \{-10, \ldots, -5\}        &   -6a - 2b - 20  &      6                     \\ 1  & \{-10, -9, -8\}        &  -6a - 2b - 20   &      3                     \\ \hline Total & & & 69\\ \hline \end{tabular}\]There are 69 pairs. The answer is $441 + 69 = \boxed{510}$ and we finish. $\square$
+
+ \textbf{Notes For *} In case anyone is confused by this (as I initially was). In the case where $f(2)=f(4)$, this does not mean that g has a double root of $f(2)=f(4)=k$, ONLY that $k$ is one of the roots of g. So basically since $a=-6$ in this case, $f(2)=f(4)=b-8$, and we have $21$ choices for b and we \textit{still can} ensure c is an integer with absolute value less than or equal to 10 simply by having another integer root of g that when added to $b-8$ ensures this, and of course an integer multiplied by an integer is an integer so $d$ will still be an integer. In other words, you have can have $b$ and $c$ be any integer with absolute value less than or equal to 10 with $d$ still being an integer. Now refer back to the 1st solution.~First
+
+ 
 
 
 	\item (\textit{AIME I 2020}) Let $n$ be the least positive integer for which $149^n-2^n$ is divisible by $3^3\cdot5^5\cdot7^7.$ Find the number of positive integer divisors of $n.$
@@ -1157,8 +919,6 @@ Now, setting $n = 4c$ (necessitated by $149^n \equiv 2^n \pmod 5$ in order to se
 
 
 
-
-
 \textbf{Solution 1.2 (LTE + Binomial)}
 
 Follow solution 1 to get that $3^2 \cdot 7^5$ is a divisor of $n$. We now take care of the $5^5$ part.Rewrite $149^n-2^n$ as $(150-1)^n-2^n$ and assume $n$ is even. Since this expression is divisible by $5^5$, we expand and get 
@@ -1174,8 +934,6 @@ Follow solution 1 to get that $3^2 \cdot 7^5$ is a divisor of $n$. We now take c
 
 
 
-
-
 \textbf{Solution 2 (Simpler, just basic mods and Fermat's theorem)}
 
 Note that for all $n$, $149^n - 2^n$ is divisible by $149-2 = 147$ by difference of $n$th powers. That is $3\cdot7^2$, so now we can clearly see that the smallest $n$ to make the expression divisible by $3^3$ is just $3^2$. Similarly, we can reason that the smallest $n$ to make the expression divisible by $7^7$ is just $7^5$. 
@@ -1185,8 +943,6 @@ Note that for all $n$, $149^n - 2^n$ is divisible by $149-2 = 147$ by difference
  Calculating the LCM of all these, one gets $2^2 \cdot 3^2 \cdot 5^4 \cdot 7^5$. Using the factor counting formula,the answer is $3\cdot3\cdot5\cdot6$ = $\boxed{270}$.
 
  
-
-
 
 
 
@@ -1226,8 +982,6 @@ For the $5^5$ case, we can see that the problem implies $149^n \equiv 2^n \pmod{
 
 
 
-
-
 \textbf{Solution 4 (Elementary and Thorough)}
 
 As usual, denote $v_p(n)$ the highest power of prime $p$ that divides $n$. For divisibility by $3^3$, notice that $v_3(149^3 - 2^3) = 2$ as $149^3 - 2^3 =$ $(147)(149^2 + 2\cdot149 + 2^2)$, and upon checking mods, $149^2 + 2\cdot149 + 2^2$ is divisible by $3$ but not $9$. In addition, $149^9 - 2^9$ is divisible by $3^3$ because $149^9 - 2^9 = (149^3 - 2^3)(149^6 + 149^3\cdot2^3 + 2^6)$, and the rightmost factor equates to $1 + 1 + 1 \pmod{3} \equiv 0 \pmod{3}$. In fact, $n = 9 = 3^2$ is the least possible choice to ensure divisibility by $3^3$ because if $n = a \cdot 3^b$, with $3 \nmid a$ and $b < 2$, we write 
@@ -1246,8 +1000,6 @@ As usual, denote $v_p(n)$ the highest power of prime $p$ that divides $n$. For d
 
 
 
-
-
 \textbf{Solution 5 (Official MAA)}
 
 Analyze each prime power separately.Start with the case of $3^3$. By the Binomial Theorem,
@@ -1263,8 +1015,6 @@ All terms after the first four are divisible by $5^5$, and the exponent of $5$ i
  
 
 
-
-
 	\item (\textit{AIME I 2020}) Point $D$ lies on side $\overline{BC}$ of $\triangle ABC$ so that $\overline{AD}$ bisects $\angle BAC.$ The perpendicular bisector of $\overline{AD}$ intersects the bisectors of $\angle ABC$ and $\angle ACB$ in points $E$ and $F,$ respectively. Given that $AB=4,BC=5,$ and $CA=6,$ the area of $\triangle AEF$ can be written as $\frac{m\sqrt{n}}p,$ where $m$ and $p$ are relatively prime positive integers, and $n$ is a positive integer not divisible by the square of any prime. Find $m+n+p$.
 
 
@@ -1278,8 +1028,6 @@ All terms after the first four are divisible by $5^5$, and the exponent of $5$ i
 Points are defined as shown (Actually Point G is a point on line BC such that $\triangle AGD$ has circumcenter F, while Point H is a point on line BC such that $\triangle AHD$ has circumcenter E). Since $\angle{AFE} = \angle{AGD}$, and $\angle{AEF} = \angle{AHD}$, it is a breakthrough to get $\triangle AFE \sim \triangle AGH$. We'd like to compare altitudes to help us compare their areas. Now, note that $AD/2$ is the altitude of $\triangle AFE$, and Stewart's theorem implies that $AD/2 = \frac{\sqrt{18}}{2}$. Similarly, the altitude of $\triangle AGH$ is the altitude of $\triangle ABC$, or $\frac{3\sqrt{7}}{2}$. However, by the symmetry axis $BE$ on quadrilateral $ABHE$, we have $BH = AB = 4$, and similarly $CG = CA = 6$, so $GB = HC = 1$, and therefore $[AGH] = [ABC]$. From here, we get that the area of $\triangle AFE$ is $\frac{15\sqrt{7}}{4}*(\frac{\frac{\sqrt{18}}{2}}{\frac{3\sqrt{7}}{2} })^2=\frac{15\sqrt{7}}{14} \implies \boxed{036}$, by similarity. ~awang11 ~gougutheorem
 
  
-
-
 
 
 
@@ -1319,15 +1067,11 @@ Then using $[XYZ] = 2R^2\sin X\sin Y\sin Z$, we can compute
 
 
 
-
-
 \textbf{Solution 3(coord bash + basic geometry)}
 
 Let $\overline{BC}$ lie on the x-axis and $B$ be the origin. $C$ is $(5,0)$. Use Heron's formula to compute the area of triangle $ABC$. We have $s=\frac{15}{2}$. and $[ABC]=\sqrt{\frac{15 \cdot 7 \cdot 5 \cdot 3}{2^4}}=\frac{15\sqrt{7}}{4}$. We now find the altitude, which is $\frac{\frac{15\sqrt{7}}{2}}{5}=\frac{3\sqrt{7}}{2}$, which is the y-coordinate of $A$. We now find the x-coordinate of $A$, which satisfies $x^2 + (\frac{3\sqrt{7}}{2})^{2}=16$, which gives $x=\frac{1}{2}$ since the triangle is acute. Now using the Angle Bisector Theorem, we have $\frac{4}{6}=\frac{BD}{CD}$ and $BD+CD=5$ to get $BD=2$. The coordinates of D are $(2,0)$.Since we want the area of triangle $AEF$, we will find equations for perpendicular bisector of AD, and the other two angle bisectors. The perpendicular bisector is not too challenging: the midpoint of AD is $(\frac{5}{4}, \frac{3\sqrt{7}}{4})$ and the slope of AD is $-\sqrt{7}$. The slope of the perpendicular bisector is $\frac{1}{\sqrt{7}}$. The equation is(in point slope form) $y-\frac{3\sqrt{7}}{4}=\frac{1}{\sqrt{7}}(x-\frac{5}{4})$.The slope of AB, or in trig words, the tangent of $\angle ABC$ is $3\sqrt{7}$.Finding $\sin{\angle ABC}=\frac{\frac{3\sqrt{7}}{2}}{4}=\frac{3\sqrt{7}}{8}$ and $\cos{\angle ABC}=\frac{\frac{1}{2}}{4}=\frac{1}{8}$. Plugging this in to half angle tangent, it gives $\frac{\frac{3\sqrt{7}}{8}}{1+\frac{1}{8}}=\frac{\sqrt{7}}{3}$ as the slope of the angle bisector, since it passes through $B$, the equation is $y=\frac{\sqrt{7}}{3}x$.Similarly, the equation for the angle bisector of $C$ will be $y=-\frac{1}{\sqrt{7}}(x-5)$.For $E$ use the B-angle bisector and the perpendicular bisector of AD equations to intersect at $(3,\sqrt{7})$.For $F$ use the C-angle bisector and the perpendicular bisector of AD equations to intersect at $(\frac{1}{2}, \frac{9}{2\sqrt{7}})$.The area of AEF is equal to $\frac{EF \cdot \frac{AD}{2}}{2}$ since AD is the altitude of that triangle with EF as the base, with $\frac{AD}{2}$ being the height. $EF=\frac{5\sqrt{2}}{\sqrt{7}}$ and $AD=3\sqrt{2}$, so $[AEF]=\frac{15}{2\sqrt{7}}=\frac{15\sqrt{7}}{14}$ which gives $\boxed{036}$. NEVER overlook coordinate bash in combination with beginner synthetic techniques.~vvluo
 
  
-
-
 
 
 
@@ -1369,8 +1113,6 @@ The desired answer is $15+7+14=\boxed{036}$ ~Imayormaynotknowcalculus
 
 
 
-
-
 \textbf{Solution 5 (Barycentric Coordinates)}
 
 
@@ -1403,8 +1145,6 @@ The desired answer is $15+7+14=\boxed{036}$ ~Imayormaynotknowcalculus
 
 
 
-
-
 \textbf{Solution 6 (geometry+trig)}
 
 
@@ -1432,8 +1172,6 @@ The desired answer is $15+7+14=\boxed{036}$ ~Imayormaynotknowcalculus
 
 
 
-
-
 \textbf{Solution 7}
 
 
@@ -1448,8 +1186,6 @@ The desired answer is $15+7+14=\boxed{036}$ ~Imayormaynotknowcalculus
  \[\big[\triangle{A'B'C'}\big]=\bigg(1+1+2+\dfrac{4}{7}\bigg)\big[\triangle{ABC}\big]=\dfrac{32}{7}\big[\triangle{ABC}\big] \implies \big[\triangle{DEF}\big]=\dfrac{2}{7}\big[\triangle{ABC}\big]=\dfrac{15\sqrt{7}}{14} \implies m+n+p = \boxed{036}\]-tkhalid
 
  
-
-
 
 
 
@@ -1488,8 +1224,6 @@ First let the incenter be $I$. Let $M$ be the midpoint of minor arc $BC$ on $(AB
 
 
 
-
-
 \textbf{Solution 9 (Official MAA 1)}
 
 Let $x = \angle BAD = \angle CAD$, $y = \angle CBE = \angle ABE$, and $z = \angle BCF = \angle ACF$. Notice that $x+y+z = 90^\circ$.
@@ -1513,8 +1247,6 @@ Let $x = \angle BAD = \angle CAD$, $y = \angle CBE = \angle ABE$, and $z = \angl
 
 
 
-
-
 \textbf{Solution 10 (Official MAA 2)}
 
 Let the point $M$ be the midpoint of $\overline{AD}$, let $I$ be the incenter of $\triangle ABC$ which is the common point of lines $AD$, $BE$, and $CF$, and let $r$ be the inradius of $\triangle ABC$. The semiperimeter of $\triangle ABC$ is
@@ -1535,8 +1267,6 @@ Let the point $M$ be the midpoint of $\overline{AD}$, let $I$ be the incenter of
 
 
 
-
-
 \textbf{Solution 11 Bash for life}
 
 Firstly, it is easy to find $BD=2,CD=3$ with angle bisector theorem.
@@ -1544,8 +1274,6 @@ Firstly, it is easy to find $BD=2,CD=3$ with angle bisector theorem.
  Using LOC and some trig formulas we get all those values:$cos\angle{B}=\frac{1}{8},sin\angle{B}=\frac{3\sqrt{7}}{8},cos\angle{\frac{B}{2}}=\frac{3}{4},cos\angle{\frac{{ACB}}{2}}=\frac{\sqrt{14}}{4}$Now we find the coordinates of points $A,E,F$ and we apply shoelace theorem later. Point A's coordinates is $(4*\frac{1}{8},4*\frac{3\sqrt{7}}{8})=(\frac{1}{2},\frac{3\sqrt{7}}{2})$, Let $AJ$ is perpendicular to $BC$, $tan\angle{JAD}=\frac{2-\frac{1}{2}}{\frac{3\sqrt{7}}{2}}=\frac{\sqrt{7}}{7}$, which means the slope of $FE$ is $\frac{\sqrt{7}}{7}$. Find the coordinate of $M$, it is easy, $(\frac{5}{4},\frac{3\sqrt{7}}{4})$, the function $EF$ is $y=\frac{\sqrt{7}x}{7}+\frac{4\sqrt{7}}{7}$. Now find the intersection of $EF,EB$, $\frac{\sqrt{7}x}{7}+\frac{4\sqrt{7}}{7}=\frac{\sqrt{7}x}{3}$, getting that $x=3,E(3,\sqrt{7})$Now we look at line segment $CF$, since $cos\angle{\frac{ACB}{2}}=\frac{\sqrt{14}}{4},tan\angle{\frac{ACB}{2}}=\frac{\sqrt{7}}{7}$. Since the line passes $(5,0)$, we can set the equation to get the $CF:y=-\frac{\sqrt{7}}{7}+\frac{5\sqrt{7}}{7}$, find the intersection of $CF,EF$,$-\frac{\sqrt{7}x}{7}+\frac{5\sqrt{7}}{7}=\frac{\sqrt{7}x}{7}+\frac{4\sqrt{7}}{7}$, getting that $F:(\frac{1}{2},\frac{9\sqrt{7}}{14})$and in the end we use shoelace theorem with coordinates of $A,F,E$ getting the area $\frac{15\sqrt{7}}{14}$ leads to the final answer $\boxed{36}$
 
  
-
-
 
 
 
@@ -1603,8 +1331,6 @@ Firstly, it is easy to find $BD=2,CD=3$ with angle bisector theorem.
 
 
 
-
-
 \textbf{Solution 13 (Trig)}
 
 Denote $I$ as the incenter of $\triangle ABC$ and $M$ as the intersecting point of $AD$ and $EF$. 
@@ -1627,8 +1353,6 @@ Firstly, let's compute the trig value of $\angle EFI$ and $\angle FEI$. Using th
  Now, we already find all the unknown values in the very beginning equation. Substituting all the values, we obtain $[\triangle AEF]=\dfrac{15\sqrt{7}}{14}$, which gives a final answer of $\boxed{036}$.
 
  
-
-
 
 
 
@@ -1657,8 +1381,6 @@ Firstly, let's compute the trig value of $\angle EFI$ and $\angle FEI$. Using th
 
 
  
-
-
 
 
 
@@ -1714,8 +1436,6 @@ Hence, $[AEF] = \frac{15\sqrt{7}}{14}$. Then the answer is just $15 + 7 + 14 = \
  
 
 
-
-
 	\item (\textit{AIME I 2020}) Let $P(x)$ be a quadratic polynomial with complex coefficients whose $x^2$ coefficient is $1.$ Suppose the equation $P(P(x))=0$ has four distinct solutions, $x=3,4,a,b.$ Find the sum of all possible values of $(a+b)^2.$
 
 
@@ -1734,8 +1454,6 @@ Either $P(3) = P(4)$ or not. We first see that if $P(3) = P(4)$ it's easy to obt
 
 
 
-
-
 \textbf{Solution 2}
 
 Let the roots of $P(x)$ be $m$ and $n$, then we can write 
@@ -1747,8 +1465,6 @@ Let the roots of $P(x)$ be $m$ and $n$, then we can write
  \[7-(m+n)=n-m \implies 2n=7 \implies n=\frac{7}{2} \implies m=-3\]Hence, $a+b=2(m+n)-7=2\cdot \frac{1}{2}-7=-6$, and so $(a+b)^2=(-6)^2=36$. Therefore, the solution is $49+36=\boxed{085}$ ~ktong
 
  
-
-
 
 
 
@@ -1769,8 +1485,6 @@ Write $P(x) = x^2+wx+z$. Split the problem into two cases: $P(3)\ne P(4)$ and $P
  Thus, our final answer is $49+36=\boxed{085}$. ~GeronimoStilton
 
  
-
-
 
 
 
@@ -1798,8 +1512,6 @@ The requested sum is $36 + 49 =\boxed{85}.$
 
 
 
-
-
 \textbf{Solution 5 (Official MAA)}
 
 Note that because $P\big(P(3)\big)=P\big(P(4)\big)= 0$, $P(3)$ and $P(4)$ are roots of $P(x)$. There are two cases.CASE 1: $P(3) = P(4)$. Then $P(x)$ is symmetric about $x=\frac72$; that is to say, $P(r) = P(7-r)$ for all $r$. Thus the remaining two roots must sum to $7$. Indeed, the polynomials $P(x) = \left(x-\frac72\right)^2 + \frac{11}4 \pm i\sqrt3$ satisfy the conditions.CASE 2: $P(3)\neq P(4)$. Then $P(3)$ and $P(4)$ are the two distinct roots of $P(x)$, so
@@ -1813,8 +1525,6 @@ Subtracting the first equation from the second gives $v - u = 7 - u - v$, yieldi
  The requested sum of squares is $7^2+(-6)^2 = \boxed{085}$.
 
  
-
-
 
 
 
@@ -1872,11 +1582,6 @@ Let $P(x) = (x-c)^2 - d$ for some $c$, $d$.
  
 
 
- 
-
-
-
-
 	\item (\textit{AIME I 2020}) Let $\triangle ABC$ be an acute triangle with circumcircle $\omega,$ and let $H$ be the intersection of the altitudes of $\triangle ABC.$ Suppose the tangent to the circumcircle of $\triangle HBC$ at $H$ intersects $\omega$ at points $X$ and $Y$ with $HA=3,HX=2,$ and $HY=6.$ The area of $\triangle ABC$ can be written in the form $m\sqrt{n},$ where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n.$
 
 
@@ -1901,8 +1606,6 @@ The following is a power of a point solution to this menace of a problem:
 
 
 
-
-
 \textbf{Solution 1a}
 
 As in the diagram, let ray $AH$ extended hits BC at L and the circumcircle at say $P$. By power of the point at H, we have $HX \cdot HY = AH \cdot HP$. The three values we are given tells us that $HP=\frac{2\cdot 6}{3}=4$. L is the midpoint of $HP$(see here: \href{https://www.cut-the-knot.org/Curriculum/Geometry/AltitudeAndCircumcircle.shtml}{https://www.cut-the-knot.org/Curriculum/Geometry/AltitudeAndCircumcircle.shtml} ), so $HL=LP=2$.
@@ -1912,8 +1615,6 @@ As in the diagram, let ray $AH$ extended hits BC at L and the circumcircle at sa
  By the Pythagorean Theorem on triangle $HKL$, $KL=\sqrt{5}$. Now continue with solution 1.
 
  
-
-
 
 
 
@@ -1948,8 +1649,6 @@ Using Power of a Point,
 
 
 
-
-
 \textbf{Solution 3 (Official MAA 1)}
 
 Extend $\overline{AH}$ to intersect $\omega$ again at $P$. The Power of a Point Theorem yields $HP = \frac{HX \cdot HY}{HA} = 4$. Because $\angle CAP=\angle CBP$, and $\angle CAP$ and $\angle CBH$ are both complements to $\angle C$, it follows that $\angle CBP = \angle CBH$, implying that $\overline{BC}$ bisects $\overline{HP}$, so the length of the altitude from $A$ to $\overline{BC}$ is $h_a = AH + \frac12 HP = 5$.
@@ -1972,15 +1671,11 @@ Extend $\overline{AH}$ to intersect $\omega$ again at $P$. The Power of a Point 
 
 
 
-
-
 \textbf{Solution 3a (slightly modified Solution 3)}
 
 Note that $\overline{BC}$ bisects $\overline{OO'}$. Using the same method from Solution 3 we find $R = \frac{21}{2\sqrt{5}}$. Let the midpoint of $\overline{BC}$ be $N$, then by the Pythagorean Theorem we have $BN^2 = OB^2 - ON^2 = R^2 - \frac{3}{2}^2$, so $BN = \frac{3\sqrt{11}}{\sqrt{5}}$. Since $h_a = 5$ we have that the area of ABC is $3\sqrt{55}$ so the answer is $3 + 55 = \boxed{58}$
 
  
-
-
 
 
 
@@ -2007,8 +1702,6 @@ Let $D$ be the intersection point of line $AH$ and $\overline{BC}$, noting that 
 
 
 
-
-
 \textbf{Solution 5 (Official MAA 3)}
 
 Define points $D$ and $P$ as above, and note that $AD=5$ and $DH=PD=AD - AH = 2$. Let the circumcircle of $\triangle BCH$ be $\omega'$.
@@ -2027,8 +1720,6 @@ Define points $D$ and $P$ as above, and note that $AD=5$ and $DH=PD=AD - AH = 2$
  \[(m+n)^2 = (m-n)^2 + 4mn = \frac{196}{5} + 40 = \frac{396}{5}.\]Thus $BC = m+n=\sqrt{\frac{396}{5}} = 6\sqrt{\frac{11}{5}}$. Therefore$[\triangle ABC] = \frac{1}{2}BC \cdot AD = 3\sqrt{55},$ as above.
 
  
-
-
 
 
 
@@ -2059,15 +1750,7 @@ Define points $D$ and $P$ as above, and note that $AD=5$ and $DH=PD=AD - AH = 2$
  The area of $ABC$
  \[[ABC]=\frac{BC}{2} \cdot (AH + HD) = 3\cdot \sqrt{55}  \implies 3+55 = \boldsymbol{\boxed{058}}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
- \textbf{Two Video Solutions by MOP 2024} 
-                \begin{itemize}
-                    \item \href{https://youtube.com/watch?v=qgM-GbAWXCc}{https://youtube.com/watch?v=qgM-GbAWXCc} (Power of a Point and Symmetry)\item \href{https://youtube.com/watch?v=XOUssYh14aw}{https://youtube.com/watch?v=XOUssYh14aw} (Geometric Transformations, Angle Chasing, Trig)
-                \end{itemize}
-
-
-                
-
-
+ 
 
 
 \end{enumerate}

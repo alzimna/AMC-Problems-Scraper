@@ -20,8 +20,6 @@ We know that in the same amount of time given, Ina will run twice the distance o
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $x$ be the distance from $A$ to $B$. Then the distance from $B$ to $C$ is $1800-x$. Since Eve is the slowest, we can call her speed $v$, so that Ina's speed is $2v$ and Paul's speed is $4v$. 
@@ -36,8 +34,6 @@ Let $x$ be the distance from $A$ to $B$. Then the distance from $B$ to $C$ is $1
 
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) Let $a_{0} = 2$, $a_{1} = 5$, and $a_{2} = 8$, and for $n > 2$ define $a_{n}$ recursively to be the remainder when $4(a_{n-1} + a_{n-2} + a_{n-3})$ is divided by $11$. Find $a_{2018} \cdot a_{2020} \cdot a_{2022}$.
@@ -61,8 +57,6 @@ When given a sequence problem, one good thing to do is to check if the sequence 
  Our answer is $7 \cdot 2 \cdot 8$ $= \boxed{112}$.
 
  
-
-
 
 
 
@@ -105,8 +99,6 @@ Notice that the characteristic polynomial of this is $x^3-4x^2-4x-4\equiv 0\pmod
  
 
 
-
-
 	\item (\textit{AIME II 2018}) Find the sum of all positive integers $b < 1000$ such that the base-$b$ integer $36_{b}$ is a perfect square and the base-$b$ integer $27_{b}$ is a perfect cube.
 
 
@@ -147,8 +139,6 @@ The first step is to convert $36_{b}$ and $27_{b}$ into base-10 numbers. Then, w
 
 
 
-
-
 \textbf{Solution 2}
 
 The conditions are:
@@ -156,8 +146,6 @@ The conditions are:
  \[2b+7 = m^3\]We can see $n$ is multiple is 3, so let $n=3k$, then $b= 3k^2-2$. Substitute $b$ into second condition and we get $m^3=3(2k^2+1)$. Now we know $m$ is both a multiple of 3 and odd. Also, $m$ must be smaller than 13 for $b$ to be smaller than 1000. So the only two possible values for $m$ are 3 and 9. Test and they both work. The final answer is $10 + 361 =$ $\boxed{371}$.-Mathdummy
 
  
-
-
 
 
 
@@ -184,8 +172,6 @@ As shown above, let
  \[10+361=\boxed{371}.\]
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) In equiangular octagon $CAROLINE$, $CA = RO = LI = NE =$ $\sqrt{2}$ and $AR = OL = IN = EC = 1$. The self-intersecting octagon $CORNELIA$ encloses six non-overlapping triangular regions. Let $K$ be the area enclosed by $CORNELIA$, that is, the total area of the six triangular regions. Then $K = \frac{a}{b}$, where $a$ and $b$ are relatively prime positive integers. Find $a + b$.
@@ -225,8 +211,6 @@ We can draw $CORNELIA$ and introduce some points.
 
 
 
-
-
 \textbf{Solution 2}
 
 $CAROLINE$ is essentially a plus sign with side length 1 with a few diagonals, which motivates us to coordinate bash. We let $N = (1, 0)$ and $E = (0, 1)$. To find $CORNELIA$'s self intersections, we take 
@@ -241,8 +225,6 @@ $CAROLINE$ is essentially a plus sign with side length 1 with a few diagonals, w
  By vertical symmetry, the other 2 points of intersection should have the same x-coordinates. We can then proceed with Solution 1 to calculate the area of the triangle (compare the $y$-coordinates of $A,R,I,N$ and $CO$ and $EL$).
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) Suppose that $x$, $y$, and $z$ are complex numbers such that $xy = -80 - 320i$, $yz = 60$, and $zx = -96 + 24i$, where $i$ $=$ $\sqrt{-1}$. Then there are real numbers $a$ and $b$ such that $x + y + z = a + bi$. Find $a^2 + b^2$.
@@ -265,8 +247,6 @@ The First (pun intended) thing to notice is that $xy$ and $zx$ have a similar st
 
 
 
-
-
 \textbf{Solution 2}
 
 First we evaluate the magnitudes. $|xy|=80\sqrt{17}$, $|yz|=60$, and $|zx|=24\sqrt{17}$. Therefore, $|x^2y^2z^2|=17\cdot80\cdot60\cdot24$, or $|xyz|=240\sqrt{34}$. Divide to find that $|z|=3\sqrt{2}$, $|x|=4\sqrt{34}$, and $|y|=10\sqrt{2}$.
@@ -284,8 +264,6 @@ First we evaluate the magnitudes. $|xy|=80\sqrt{17}$, $|yz|=60$, and $|zx|=24\sq
 
 
 
-
-
 \textbf{Solution 3 (Pretty easy, no hard stuff, just watch ur arithmetic) :)}
 
 Solve this system the way you would if the RHS of all equations were real. Multiply the first and 3rd equations out and then factor out $60$ to find $x^2$, then use standard techniques that are used to evaluate square roots of irrationals. let 
@@ -294,8 +272,6 @@ Solve this system the way you would if the RHS of all equations were real. Multi
  \[2cd = 480\] Solve to get $x$ as $20+12i$ and $-20-12i$. Both will give us the same answer, so use the positive one. Divide $-80-320i$ by  $x$, and you get $10+10i$ as $y$. This means that $z$ is a multiple of $1-i$ to get a real product, so you find $z$ is $3-3i$. Now, add the real and imaginary parts separately to get $-7-5i$, and calculate $a^2 + b^2$ to get $\boxed{074}$. ~minor latex improvements done by jske25 and jdong2006
 
  
-
-
 
 
 
@@ -309,8 +285,6 @@ Dividing the first equation by the second equation given, we find that $\frac{xy
 
 
 
-
-
 \textbf{Solution 5}
 
 We are given that $xy=-80-320i$. Thus $y=\frac{-80-320i}{x}$. We are also given that $xz= -96+24i$. Thus $z=\frac{-96+24i}{x}$. We are also given that $yz$ = $60$. Substitute $y=\frac{-80-320i}{x}$ and $z=\frac{-96+24i}{x}$ into $yz$ = $60$. We have $\frac{(-80-320i)(-96+24i)}{x^2}=60$. Multiplying out $(-80-320i)(-96+24i)$ we get $(1920)(8+15i)$. Thus  $\frac{1920(8+15i)}{x^2} =60$. Simplifying this fraction we get $\frac{32(8+15i)}{x^2}=1$. Cross-multiplying the fractions we get $x^2=32(8+15i)$ or $x^2= 256+480i$. Now we can rewrite this as $x^2-256=480i$. Let $x= (a+bi)$.Thus $x^2=(a+bi)^2$ or $a^2+2abi-b^2$. We can see that $a^2+2abi-b^2-256=480i$ and thus $2abi=480i$ or $ab=240$.We also can see that $a^2-b^2-256=0$ because there is no real term in $480i$. Thus $a^2-b^2=256$ or $(a+b)(a-b)=256$. Using the two equations $ab=240$ and $(a+b)(a-b)=256$ we solve by doing system of equations that $a=-20$ and $b=-12$. And $x=a+bi$ so $x=-20-12i$. Because $y=\frac{-80-320i}{x}$, then $y=\frac{-80-320i}{-20-12i}$. Simplifying this fraction we get $y=\frac{-80(1+4i)}{-4(5+3i)}$ or $y=\frac{20(1+4i)}{(5+3i)}$. Multiplying by the conjugate of the denominator ($5-3i$) in the numerator and the denominator and  we get $y=\frac{20(17-17i)}{34}$. Simplifying this fraction we get $y=10-10i$. Given that $yz$ = $60$ we can substitute $(10-10i)(z)=60$ We can solve for z and get $z=3+3i$. Now we know what $x$, $y$, and $z$ are, so all we have to do is plug and chug. $x+y+z= (-20-12i)+(10+10i)+(3-3i)$ or $x+y+z= -7-5i$ Now $a^2 +b^2=(-7)^2+(-5)^2$ or $a^2 +b^2 = 74$. Thus $74$ is our final answer.(David Camacho)
@@ -319,15 +293,11 @@ We are given that $xy=-80-320i$. Thus $y=\frac{-80-320i}{x}$. We are also given 
 
 
 
-
-
 \textbf{Solution 6}
 
 We observe that by multiplying $xy,$ $yz,$ and $zx,$ we get $(xyz)^2=(-80-320i)(60)(-96+24i).$ Next, we divide $(xyz)^2$ by $(yz)^2$ to get $x^2.$ We have $x^2=\frac{(-80-320i)(60)(-96+24i)}{3600}=256+480i.$ We can write $x$ in the form of $a+bi,$ so we get $(a+bi)^2=256+480i.$ Then, $a^2-b^2+2abi=256+480i,$ $a^2-b^2=256,$ and $2ab=480.$ Solving this system of equations is relatively simple. We have two cases, $a=20, b=12,$ and $a=-20, b=-12.$ Case 1: $a=20, b=12,$ so $x=20+12i.$ We solve for $y$ and $z$ by plugging in $x$ to the two equations. We see$y=\frac{-80-320i}{20+12i}=-10-10i$ and $z=\frac{-96+24i}{20+12i}=-3+3i.$ $x+y+z=7+5i,$ so $a=7$ and $b=5.$ Solving, we end up with $7^2+5^2=\boxed{074}$ as our answer. Case 2: $a=-20, b=-12,$ so $x=-20-12i.$ Again, we solve for $y$ and $z.$ We find $y=\frac{-80-320i}{-20-12i}=10+10i,$ $z=\frac{-96+24i}{-20-12i}=3-3i,$ so $x+y+z=-7-5i.$ We again have $(-7)^2+(-5)^2=\boxed{074}.$Solution by Airplane50
 
  
-
-
 
 
 
@@ -361,8 +331,6 @@ According to the Euler's Theory, we can rewrite $x$, $y$ and $z$ as
 
 
 
-
-
 \textbf{Solution 8}
 
 We can turn the expression $x+y+z$ into $\sqrt{x^2+y^2+z^2+2xy+2yz+2xz}$, and this would allow us to plug in the values after some computations.
@@ -391,15 +359,11 @@ We can turn the expression $x+y+z$ into $\sqrt{x^2+y^2+z^2+2xy+2yz+2xz}$, and th
 
 
 
-
-
 \textbf{Solution 9 (A Little Rigorous, but Straightforward and Easy)}
 
 Multiplying $xy \cdot yz \cdot zx = (xyz)^2$ we obtain $60 \cdot 960(16+30i)$ (too lazy to do $60 \cdot 960$, you don't need to). Taking the square root, we get $240\sqrt{16+30i}$. Letting $(a+bi)^2=16+30i,$ we have $a^2+2abi-b^2=16+30i.$ Thus, $(a+b)(a-b)=16,$ and $2ab=30.$ Guessing and checking, we get $a+bi=5+3i$. Therefore, $xyz=240(5+3i).$ Dividing this by each of the equations provided in the original problem, we get $x=20+12i,y=-10-10i,$ and $z=-3+3i$. $20+12i-10-10i-3+3i=7+5i$. Finally, $7^2+5^2=\boxed{074}.$
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) A real number $a$ is chosen randomly and uniformly from the interval $[-20, 18]$. The probability that the roots of the polynomial
@@ -449,8 +413,6 @@ The polynomial we are given is rather complicated, so let's use \href{https://ar
 
 
 
-
-
 \textbf{Solution 2}
 
 This solution is essentially the same as solution 1, but it offers a different approach to factoring the polynomial. 
@@ -467,9 +429,7 @@ This solution is essentially the same as solution 1, but it offers a different a
 
  The rest of the steps are the same as in Solution 1.
 
- \textbf{See Also:} 
-
-
+ 
 
 
 	\item (\textit{AIME II 2018}) Triangle $ABC$ has side lengths $AB = 9$, $BC =$ $5\sqrt{3}$, and $AC = 12$. Points $A = P_{0}, P_{1}, P_{2}, ... , P_{2450} = B$ are on segment $\overline{AB}$ with $P_{k}$ between $P_{k-1}$ and $P_{k+1}$ for $k = 1, 2, ..., 2449$, and points $A = Q_{0}, Q_{1}, Q_{2}, ... , Q_{2450} = C$ are on segment $\overline{AC}$ with $Q_{k}$ between $Q_{k-1}$ and $Q_{k+1}$ for $k = 1, 2, ..., 2449$. Furthermore, each segment $\overline{P_{k}Q_{k}}$, $k = 1, 2, ..., 2449$, is parallel to $\overline{BC}$. The segments cut the triangle into $2450$ regions, consisting of $2449$ trapezoids and $1$ triangle. Each of the $2450$ regions has the same area. Find the number of segments $\overline{P_{k}Q_{k}}$, $k = 1, 2, ..., 2450$, that have rational length.
@@ -490,8 +450,6 @@ For each $k$ between $2$ and $2450$, the area of the trapezoid with $\overline{P
 
 
 
-
-
 \textbf{Solution 2}
 
 We have that there are $2449$ trapezoids and $1$ triangle of equal area, with that one triangle being $AP_1Q_1$. Notice, if we "stack" the trapezoids on top of $\bigtriangleup AP_1Q_1$ the way they already are, we'd create a similar triangle, all of which are similar to $\bigtriangleup ABC$, and since the trapezoids and $\bigtriangleup AP_1Q_1$ have equal area, each of these similar triangles $AP_kQ_k$ have area $\frac{k}{2450}\left[ ABC\right]$, and so $\frac{\left[ AP_kQ_k\right]}{\left[ABC\right]}=\frac{k}{2450}$. We want the ratio of the side lengths $P_kQ_k:BC$. Since area is a 2-dimensional unit of measurement, and side lengths are 1-dimensional, the ratio is simply the square root of the areas, or 
@@ -501,8 +459,6 @@ We have that there are $2449$ trapezoids and $1$ triangle of equal area, with th
  \[\implies 0<n\leq 20\] so there are $\boxed{020}$ solutions. 
 
  
-
-
 
 
 
@@ -518,15 +474,11 @@ Let $T_1$ stand for $AP_1Q_1$, and $T_k = AP_kQ_k$. All triangles $T$ are simila
 
 
 
-
-
 \textbf{Solution 4: I didn't even qualify and I solved this}
 
 We can also use area ratios to get that $P_nQ_n$ is $\sqrt(n)(P_1Q_1)$. So $P_{2450}Q_{2450} = 35 \sqrt(3) = 35\sqrt(2)P_1Q_1$ so $P_1Q_1$(call this $L_1$) is $\sqrt(6)/14$. So We want $L_1\sqrt(n)$ to be rational, or that $\sqrt(n) = j\sqrt(6)$. So $j$ can range from 1 to 20, so we get $\boxed{020}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) A frog is positioned at the origin of the coordinate plane. From the point $(x, y)$, the frog can jump to any of the points $(x + 1, y)$, $(x + 2, y)$, $(x, y + 1)$, or $(x, y + 2)$. Find the number of distinct sequences of jumps in which the frog begins at $(0, 0)$ and ends at $(4, 4)$.
@@ -555,125 +507,9 @@ We solve this problem by working backwards. Notice, the only points the frog can
 
  $(2,2)=14, (2,3)=(3,2)=32, (2,4)=(4,2)=71$
 
- $(3,3)=84, (3,4)=(4,3)=207$
-
- $(4,4)=2\cdot \left( (4,2)+(4,3)\right) = 2\cdot \left( 207+71\right)=2\cdot 278=\boxed{556}$
-
- A diagram of the numbers:
-
- 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2018_8_Solution_Figure_1.png}
-                    \end{figure}
-                    
-
  
 
-
-
-
-
-\textbf{Solution 2}
-
-We'll refer to the moves $(x + 1, y)$, $(x + 2, y)$, $(x, y + 1)$, and $(x, y + 2)$ as $R_1$, $R_2$, $U_1$, and $U_2$, respectively. Then the possible sequences of moves that will take the frog from $(0,0)$ to $(4,4)$ are all the permutations of $U_1U_1U_1U_1R_1R_1R_1R_1$, $U_2U_1U_1R_1R_1R_1R_1$, $U_1U_1U_1U_1R_2R_1R_1$, $U_2U_1U_1R_2R_1R_1$, $U_2U_2R_1R_1R_1R_1$, $U_1U_1U_1U_1R_2R_2$, $U_2U_2R_2R_1R_1$, $U_2U_1U_1R_2R_2$, and $U_2U_2R_2R_2$. We can reduce the number of cases using symmetry.
-
- Case 1: $U_1U_1U_1U_1R_1R_1R_1R_1$
-
- There are $\frac{8!}{4!4!} = 70$ possibilities for this case.
-
- Case 2: $U_2U_1U_1R_1R_1R_1R_1$ or $U_1U_1U_1U_1R_2R_1R_1$
-
- There are $2 \cdot \frac{7!}{4!2!} = 210$ possibilities for this case.
-
- Case 3:  $U_2U_1U_1R_2R_1R_1$
-
- There are $\frac{6!}{2!2!} = 180$ possibilities for this case.
-
- Case 4: $U_2U_2R_1R_1R_1R_1$ or $U_1U_1U_1U_1R_2R_2$
-
- There are $2 \cdot \frac{6!}{2!4!} = 30$ possibilities for this case.
-
- Case 5: $U_2U_2R_2R_1R_1$ or $U_2U_1U_1R_2R_2$
-
- There are $2 \cdot \frac{5!}{2!2!} = 60$ possibilities for this case.
-
- Case 6: $U_2U_2R_2R_2$
-
- There are $\frac{4!}{2!2!} = 6$ possibilities for this case.
-
- Adding up all these cases gives us $70+210+180+30+60+6=\boxed{556}$ ways.
-
  
-
-
-
-
-
-\textbf{Solution 3 (General Case)}
-
-Mark the total number of distinct sequences of jumps for the frog to reach the point $(x,y)$ as $\varphi (x,y)$. Consider for each point $(x,y)$ in the first quadrant, there are only $4$ possible points in the first quadrant for frog to reach point $(x,y)$, and these $4$ points are 
- \[(x-1,y); (x-2,y); (x,y-1); (x,y-2)\]. As a result, the way to count $\varphi (x,y)$ is 
- \[\varphi (x,y)=\varphi (x-1,y)+\varphi (x-2,y)+\varphi (x,y-1)+\varphi (x,y-2)\]
-
- Also, for special cases, 
- \[\varphi (0,y)=\varphi (0,y-1)+\varphi (0,y-2)\]
-
- 
- \[\varphi (x,0)=\varphi (x-1,0)+\varphi (x-2,0)\]
-
- 
- \[\varphi (x,1)=\varphi (x-1,1)+\varphi (x-2,1)+\varphi (x,0)\]
-
- 
- \[\varphi (1,y)=\varphi (1,y-1)+\varphi (1,y-2)+\varphi (0,y)\]
-
- 
- \[\varphi (1,1)=\varphi (1,0)+\varphi (0,1)\]
-
- Start with $\varphi (0,0)=1$, use this method and draw the figure below, we can finally get 
- \[\varphi (4,4)=556\] (In order to make the LaTeX thing more beautiful to look at, I put $0$ to make every number $3$ digits)
-
- 
- \[005-020-071-207-\boxed{556}\] 
- \[003-010-032-084-207\] 
- \[002-005-014-032-071\] 
- \[001-002-005-010-020\] 
- \[001-001-002-003-005\]
-
- So the total number of distinct sequences of jumps for the frog to reach $(4,4)$ is $\boxed {556}$.
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Casework)}
-
-Casework Solution:x-distribution: 1-1-1-1 (1 way to order)y-distribution: 1-1-1-1 (1 way to order)$\dbinom{8}{4} = 70$ ways total
-
- x-distribution: 1-1-1-1 (1 way to order)y-distribution: 1-1-2 (3 ways to order)$\dbinom{7}{3} \times 3= 105$ ways total
-
- x-distribution: 1-1-1-1 (1 way to order)y-distribution: 2-2 (1 way to order)$\dbinom{6}{4} = 15$ ways total
-
- x-distribution: 1-1-2 (3 ways to order)y-distribution: 1-1-1-1 (1 way to order)$\dbinom{7}{3} \times 3= 105$ ways total
-
- x-distribution: 1-1-2 (3 ways to order)y-distribution: 1-1-2 (3 ways to order)$\dbinom{6}{3} \times 9= 180$ ways total
-
- x-distribution: 1-1-2 (3 ways to order)y-distribution: 2-2 (1 way to order)$\dbinom{5}{3} \times 3 = 30$ ways total
-
- x-distribution: 2-2 (1 way to order)y-distribution: 1-1-1-1 (1 way to order)$\dbinom{6}{4} = 15$ ways total
-
- x-distribution: 2-2 (1 way to order)y-distribution: 1-1-2 (3 ways to order)$\dbinom{5}{3} \times 3 = 30$ ways total
-
- x-distribution: 2-2 (1 way to order)y-distribution: 2-2 (1 way to order)$\dbinom{4}{2} = 6$ ways total
-
- $6+30+15+105+180+70+30+15+105=\boxed{556}$-fidgetboss\_4000
-
- 
-
-
 
 
 	\item (\textit{AIME II 2018}) Octagon $ABCDEFGH$ with side lengths $AB = CD = EF = GH = 10$ and $BC = DE = FG = HA = 11$ is formed by removing 6-8-10 triangles from the corners of a $23$ $\times$ $27$ rectangle with side $\overline{AH}$ on a short side of the rectangle, as shown. Let $J$ be the midpoint of $\overline{AH}$, and partition the octagon into 7 triangles by drawing segments $\overline{JB}$, $\overline{JC}$, $\overline{JD}$, $\overline{JE}$, $\overline{JF}$, and $\overline{JG}$. Find the area of the convex polygon whose vertices are the centroids of these 7 triangles.
@@ -708,8 +544,6 @@ We represent octagon $ABCDEFGH$ in the coordinate plane with the upper left corn
 
 
 
-
-
 \textbf{Solution 2 (Homothety)}
 
 Draw the heptagon whose vertices are the midpoints of octagon $ABCDEFGH$ except $J$.We have a homothety since:
@@ -738,15 +572,11 @@ Draw the heptagon whose vertices are the midpoints of octagon $ABCDEFGH$ except 
 
 
 
-
-
 \textbf{Solution 3 (Less bashy finish than shoelace)}
 
 Instead of bashing shoelace, we can find a clever way to calculate the area of the heptagon without using homothety. By connecting the centroids of $\bigtriangleup JAB, \bigtriangleup JCD$, $\bigtriangleup JHG, \bigtriangleup JFE$, and $\bigtriangleup JFE, \bigtriangleup JCD$. This will give us three triangles and a rectangle. The area of the rectangle is $\frac{34}{3}*\frac{38}{3}$, the top and bottom triangles each give $\frac{38}{3}*2*\frac{1}{2}$, and the triangle on the right yields $\frac{34}{3}*\frac{8}{3}*\frac{1}{2}$ by using $\frac{bh}{2}$. Summing them up, we get $\frac{1656}{9}$, which gives us $\boxed{184}$.~boppitybobii
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) Find the number of functions $f(x)$ from $\{1, 2, 3, 4, 5\}$ to $\{1, 2, 3, 4, 5\}$ that satisfy $f(f(x)) = f(f(f(x)))$ for all $x$ in $\{1, 2, 3, 4, 5\}$.
@@ -773,8 +603,6 @@ Just to visualize solution 1. If we list all possible $(x,f(x))$, from ${1,2,3,4
  So $1 + 20 + 150 + 380 + 205 = \framebox{756}$
 
  
-
-
 
 
 
@@ -858,8 +686,6 @@ We perform casework on the number of fixed points (the number of points where $f
 
 
 
-
-
 \textbf{Solution 3}
 
 We can do some caseworks about the special points of functions $f$ for $x\in\{1,2,3,4,5\}$. Let $x$, $y$ and $z$ be three different elements in set $\{1,2,3,4,5\}$. There must be elements such like $k$ in set $\{1,2,3,4,5\}$ satisfies $f(k)=k$, and we call the points such like $(k,k)$ on functions $f$ are "Good Points" (Actually its academic name is "fixed-points"). The only thing we need to consider is the "steps" to get  "Good Points". Notice that the "steps" must less than $3$ because the highest iterations of function $f$ is $3$. Now we can classify $3$ cases of “Good points” of $f$.
@@ -901,8 +727,6 @@ We can do some caseworks about the special points of functions $f$ for $x\in\{1,
  \textbf{Note (fun fact)} This exact problem showed up earlier on the 2011 Stanford Math Tournament, Advanced Topics Test.This problem also showed up on the 2010 Mock AIME 2 here: \href{https://artofproblemsolving.com/wiki/index.php/Mock\_AIME\_2\_2010\_Problems}{https://artofproblemsolving.com/wiki/index.php/Mock\_AIME\_2\_2010\_Problems}
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) Find the number of permutations of $1, 2, 3, 4, 5, 6$ such that for each $k$ with $1$ $\leq$ $k$ $\leq$ $5$, at least one of the first $k$ terms of the permutation is greater than $k$.
@@ -987,8 +811,6 @@ Grand Total : $120 + 96 + 90 + 84 + 71 = \boxed{461}$
 
 
 
-
-
 \textbf{Solution 2}
 
 If $6$ is the first number, then there are no restrictions. There are $5!$, or $120$ ways to place the other $5$ numbers.
@@ -1043,15 +865,11 @@ If $6$ is the third number, then we cannot have the following:
 
 
 
-
-
 \textbf{Solution 3 (Recursion)}
 
 Note the condition in the problem is equivalent to the following condition: for each $k$ with $1 \le k \le 5$, the first $k$ terms is not a permutation $(1, 2, \ldots, k)$ (since it would mean there must be some integer $x$ in the first $k$ terms such that $x \not \in \{1, 2, \ldots, k\} \implies x > k$). Then, let $a_n$ denote the number of permutations of $(1, 2, \ldots, n)$ satisfying the condition in the problem. We use complementary counting to find $a_n$. Notice that in order to not satisfy the condition in the problem, there are $n-1$ cases: the first $1 \le k \le n-1$ (we don't include $k = n$ since the condition in the problem only holds up to $n-1$) terms are a permutation of $(1, 2, \ldots, k)$, and for all $k+1 \le i \le n-1$, the condition in the problem still holds. Then, for each of these cases, there are $k!$ ways to arrange the first $k$ terms, and then $a_{n-k}$ ways to arrange the $k + 1$ to $n$ terms (assume by contradiction that terms from $k+1$ to $i$ is a permutation of $(k+1, k+2, \ldots, i)$. Then, since the first $k$ terms are already a permutation of $(1, 2, \ldots, k)$, the first $i$ terms form a permutation of $(1, 2, \ldots, i)$. This contradicts our assumption that for all $k+1 \le i \le n-1$, the condition still holds. Thus, we can only include the $a_{n-k}$ permutations of these terms). Now, summing the cases up and subtracting from $n!$, we have: $a_n = n! - \sum_{k=1}^{n-1} a_{n-k} k!$. From this recursion, we derive that $a_1 = 1$, $a_2 = 1$, $a_3 = 3$, $a_4 = 13$, $a_5 = 71$, and finally $a_6 = \boxed{461}$.
 
  
-
-
 
 
 
@@ -1064,8 +882,6 @@ Let $A_i$ be the set of permutations such that there is no number greater than $
 To finish, $720 - 372 + 152 - 48 + 10 - 1 = \boxed{461}$
 
  
-
-
 
 
 
@@ -1084,8 +900,6 @@ Define the function $f(p,q)$ as the amount of permutations with maximum digit $q
  \[f(5,6)=461\]Our requested answer is thus $\boxed{461}$~sigma
 
  
-
-
 
 
 
@@ -1119,8 +933,6 @@ We can also solve this problem by counting the number of permutations that do NO
 
 
 
-
-
 \textbf{Solution 7(Similar to Solutions 1 and 2 but with more depth)}
 
 We will perform cases based on the position of $6$. Notice that if $6$ is the first number, the positions of the rest of the numbers absolutely don't matter, so we have $5!$ cases here.
@@ -1150,8 +962,6 @@ We will perform cases based on the position of $6$. Notice that if $6$ is the fi
  
 
 
-
-
 	\item (\textit{AIME II 2018}) Let $ABCD$ be a convex quadrilateral with $AB = CD = 10$, $BC = 14$, and $AD = 2\sqrt{65}$. Assume that the diagonals of $ABCD$ intersect at point $P$, and that the sum of the areas of triangles $APB$ and $CPD$ equals the sum of the areas of triangles $BPC$ and $APD$. Find the area of quadrilateral $ABCD$.
 
 
@@ -1172,8 +982,6 @@ Let $AP=x$ and let $PC=\rho x$. Let $[ABP]=\Delta$ and let $[ADP]=\Lambda$. We e
  \[\cos\phi = \frac{3}{5}\qquad \implies \qquad \sin\phi = \frac{4}{5}\]which finally yields $[ABCD]=2\cdot [BCD] = 140\sin\phi = 112$.
 
  
-
-
 
 
 
@@ -1213,8 +1021,6 @@ Just to be complete -- $h_1$ and $h_2$ can actually be equal. In this case, $AP 
 
 
 
-
-
 \textbf{Solution 3 (Another way to get the middle point)}
 
 So, let the area of $4$ triangles $\triangle {ABP}=S_{1}$,  $\triangle {BCP}=S_{2}$,  $\triangle {CDP}=S_{3}$,  $\triangle {DAP}=S_{4}$. Suppose $S_{1}>S_{3}$ and $S_{2}>S_{4}$, then it is easy to show that 
@@ -1231,8 +1037,6 @@ So, let the area of $4$ triangles $\triangle {ABP}=S_{1}$,  $\triangle {BCP}=S_{
  \[S_{3}=S_{4},\] so $P$ is the midpoint of $\overline {AC}$
 
  
-
-
 
 
 
@@ -1253,8 +1057,6 @@ Denote $\angle APB$ by $\alpha$. Then $\sin(\angle APB)=\sin \alpha = \sin(\angl
 
 
 
-
-
 \textbf{Solution 5}
 
 As in all other solutions, we can first find that either $AP=CP$ or $BP=DP$, but it's an AIME problem, we can take $AP=CP$, and assume the other choice will lead to the same result (which is true). 
@@ -1266,8 +1068,6 @@ As in all other solutions, we can first find that either $AP=CP$ or $BP=DP$, but
  \[[ABCD] = 2[BCD] = BC\cdot CD\cdot \sin C = 14\cdot 10\cdot \frac 45 = \boxed{112}\]-Mathdummy
 
  
-
-
 
 
 
@@ -1284,15 +1084,11 @@ Either $PA=PC$ or $PD=PB$. Let $PD=PB=s$. Applying Stewart's Theorem on $\triang
 
 
 
-
-
 \textbf{Solution 7}
 
 Now we prove P is the midpoint of $BD$. Denote the height from $B$ to $AC$ as $h_1$, height from $D$ to $AC$ as $h_2$.According to the problem, $AP* h_1 +CP* h_2 =CP* h_1 +AP* h_2$ implies $h_1 (AP-CP)= h_2 (AP-CP), h_1 = h_2$. Then according to basic congruent triangles we get $BP=DP$Firstly, denote that $CP=a,BP=b,CP=c,AP=d$. Applying Stewart theorem, getting that $100c+196b=(b+c)(bc+a^2); 100b+260c=(b+c)(bc+c^2); 100c+196b=100b+260c, 3b=5c$, denote $b=5x,c=3x$Applying Stewart Theorem, getting $260a+100a=2a(a^2+25x^2); 196a+100a=2a(9x^2+a^2)$ solve for a, getting $a=\sqrt{130},AP=5\sqrt{2}; CP=3\sqrt{2}$Now everything is clear, we can find $cos\angle{BPA}=\frac{4}{\sqrt{65}}$ using LOC, $sin\angle{BPA}=\frac{7\sqrt{65}}{65}$, the whole area is $\sqrt{130}*8\sqrt{2}*\frac{7\sqrt{65}}{65}=\boxed{112}$
 
  
-
-
 
 
 
@@ -1316,8 +1112,6 @@ The area of quadrilateral $ABCD$ is equal to the area of triangle $ADD'$ with si
 
 
 
-
-
 \textbf{Solution 9 (Mindless Law of Cosines Bash)}
 
 Use your favorite method to get that $P$ is the midpoint of one of the two diagonals (suppose it's the midpoint of $\overline{AC}$). From here, let $x=AP=PC, y=BP, z=PD, a=\cos\theta$ where $\theta$ is the angle that the diagonals make. Then we have a system of four equations:
@@ -1337,8 +1131,6 @@ Use your favorite method to get that $P$ is the midpoint of one of the two diago
 
 
 
-
-
 \textbf{Solution 10}
 
 Note that $\angle APB = \angle CPD = 180-\angle APD = 180-\angle BPC.$(All angles are in degrees)Since $\sin(\theta)=\sin(180-\theta),$ we can use sine area formula to get the following(after some simplifying steps):
@@ -1353,8 +1145,6 @@ Even though this looks bad at first, it actually isn't too complicated to simpli
 
 
 
-
-
 \textbf{Solution 11}
 
 
@@ -1366,8 +1156,6 @@ Even though this looks bad at first, it actually isn't too complicated to simpli
  \[100 + 196 - 280 \cos{\angle BCD} = BD^2 = 128 \implies \cos{\angle BCD} = \frac{3}{5} \implies \sin{\angle BCD} = \frac{4}{5}\]Since  $AP = PD$, $[ABD] = [BCD] \implies [ABCD] = [ABD] + [BCD] = 2[BCD]$. Thus, $[ABCD] = 2[BCD] = 2 \cdot \frac{1}{2} \cdot 10 \cdot 14 \sin{\angle BCD} = 140 \cdot \frac{4}{5} = \boxed{112}$.
 
  
-
-
 
 
 
@@ -1501,8 +1289,6 @@ Let $AP = a, CP = b, BP = c, DP = d$. Also, let $\angle APB = \theta$ and the ot
 
 
 
-
-
 \textbf{Solution 13(cheese)}
 
 The $AD = 2\sqrt{65}$ condition motivates us to find right triangles with integer sides and $2\sqrt{65}$ as the hypotenuse. Indeed, we have $2^2 + 16^2 = (2\sqrt{65})^2$. Furthermore, notice that $10$ is the hypotenuse of a $6-8-10$ right triangle. It follows that quadrilateral $ABCD$ is an $8 \times 22$ rectangle with triangles of sides $6-8-10$, $2-16-2\sqrt{65}$, and $6-8-10$ cut out from three of its corners. Thus, the area of $ABCD$ is $(8)(22) - \frac{1}{2}((6)(8) + (2)(16) + (6)(8)) = \boxed{112}$.
@@ -1510,8 +1296,6 @@ The $AD = 2\sqrt{65}$ condition motivates us to find right triangles with intege
  This solution is very good for quick computational contests like AIME(I did NOT write this solution btw)~ilikemath247365
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) Misha rolls a standard, fair six-sided die until she rolls 1-2-3 in that order on three consecutive rolls. The probability that she will roll the die an odd number of times is $\dfrac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1532,8 +1316,6 @@ Let $P_n$ be the probability of getting consecutive $1,2,3$ rolls in $n$ rolls a
  \[\implies x = \frac{m}{n} = \frac{216}{431} \implies m+n=216+431= \boxed{647}\]
 
  
-
-
 
 
 
@@ -1559,15 +1341,11 @@ Let $P_{odd}=\frac{m}{n}$, with the subscript indicating an odd number of rolls.
 
 
 
-
-
 \textbf{Solution 2}
 
 Call the probability you win on a certain toss $f_n$, where $n$ is the toss number.Obviously, since the sequence has length 3, $f_1=0$ and $f_2=0$.Additionally, $f_3=\left(\frac{1}{6}\right)^3$. We can call this value $x$, to keep our further equations looking clean.We can now write our general form for $f$ as $f_n=x\left(1-\sum_{i=1}^{n-3}f_i\right)$. This factors the probability of the last 3 rolls being 1-2-3, and the important probability that the sequence has not been rolled in the past (because then the game would already be over).Note that $\sum_{i=1}^{\infty}f_i=1$ since you'll win at some point.An intermediate step here is figuring out $f_n-f_{n+1}$. This is equal to $x\left(1-\sum_{i=1}^{n-3}f_i\right)-x\left(1-\sum_{i=1}^{n-2}f_i\right)=x\left(\sum_{i=1}^{n-2}f_i-\sum_{i=1}^{n-3}f_i\right)=xf_{n-2}$.Adding up all the differences, i.e. $\sum_{i=2}^{\infty}(f_{2n-1}-f_{2n})$ will give us the amount by which the odds probability exceeds the even probability. Since they sum to 1, that means the odds probability will be half of the difference above one-half. Subbing in our earlier result from the intermediate step, the odd probability is equal to $\frac{1}{2}+\frac{1}{2}x\sum_{i=2}^{\infty}f_{2n-3}$.Another way to find the odd probability is simply summing it up, which turns out to be $\sum_{i=1}^{\infty}f_{2n-1}$. Note the infinite sums in both expressions are equal; let's call it $P$. Equating them gives $\frac{1}{2}+\frac{1}{2}xP=P$, or $P=\frac{1}{2-x}$.Finally, substituting $x=\frac{1}{216}$, we find that $P=\frac{216}{431}$, giving us a final answer of $216 + 431 = \boxed{647}$.
 
  
-
-
 
 
 
@@ -1588,15 +1366,11 @@ Solving for $P$, we obtain $P = \frac{216}{431} \implies m+n = \boxed{647}$.
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $A=\frac{1}{6} \begin{bmatrix} 5 & 1 & 0 & 0 \\ 4 & 1 & 1 & 0 \\ 4 & 1 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ \end{bmatrix}$. $A$ is a transition matrix for the prefix of 1-2-3 matched so far. The state corresponding to a complete match has no outgoing probability mass. The probability that we roll the dice exactly $k$ times is $(A^k)_{1,4}$. Thus the probability that we roll the dice an odd number of times is $1-\left(\sum_{k=0}^\infty A^{2k}\right)_{1,4} = 1-\left((I - A^2)^{-1}\right)_{1,4} = \frac{216}{431}$. Thus the answer is $216+431=\boxed{647}$.
 
  
-
-
 
 
 
@@ -1612,8 +1386,6 @@ Consider it as a contest of Odd and Even. Let $P_o$ and $P_e$ be probability tha
  -Mathdummy
 
  
-
-
 
 
 
@@ -1651,8 +1423,6 @@ Consider it as a contest of Odd and Even. Let $P_o$ and $P_e$ be probability tha
 
 
 
-
-
 \textbf{Solution 7(Blocks)}
 
 Take a block of any three possible rolls. You have $6^3$ different possibilities for a block and $6^3 - 1$ different possibilities to have a block without 1-2-3. This gives two probabilities of $\frac{6^3-1}{6^3}$ and $\frac{1}{6^3}$, respectively. To get an odd number of total rolls, we need an even number of blocks without a 1-2-3. Then, we can sum up the probabilities up to infinity to see the total probability of getting an even number of rolls.
@@ -1661,8 +1431,6 @@ Take a block of any three possible rolls. You have $6^3$ different possibilities
  \[\frac{\frac{1}{6^3}}{\frac{2\times 6^3 -1}{(6^3)^2}} = \frac{6^3}{2\times 6^3 - 1} = \frac{216}{431}\]Then, our answer is $\boxed{647}$-Mathiscool109
 
  
-
-
 
 
 
@@ -1704,8 +1472,6 @@ So $\frac{431}{216} \cdot P_e = \frac{215}{216}$, and $P_e = \frac{215}{431}$
  
 
 
-
-
 	\item (\textit{AIME II 2018}) The incircle $\omega$ of triangle $ABC$ is tangent to $\overline{BC}$ at $X$. Let $Y \neq X$ be the other intersection of $\overline{AX}$ with $\omega$. Points $P$ and $Q$ lie on $\overline{AB}$ and $\overline{AC}$, respectively, so that $\overline{PQ}$ is tangent to $\omega$ at $Y$. Assume that $AP = 3$, $PB = 4$, $AC = 8$, and $AQ = \dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
 
 
@@ -1726,16 +1492,12 @@ Let the sides $\overline{AB}$ and $\overline{AC}$ be tangent to $\omega$ at $Z$ 
 
 
 
-
-
 \textbf{Solution 2 (Projective)}
 
 Let the incircle of $ABC$ be tangent to $AB$ and $AC$ at $Z$ and $W$. By Brianchon's theorem on tangential hexagons $QWCBZP$ and $PYQCXB$, we know that $ZW,CP,BQ$ and $XY$ are concurrent at a point $O$. Let $PQ \cap BC = M$. Then by La Hire's $A$ lies on the polar of $M$ so $M$ lies on the polar of $A$. Therefore, $ZW$ also passes through $M$. Then projecting through $M$, we have
  \[-1 = (A,O;Y,X) \stackrel{M}{=} (A,Z;P,B) \stackrel{M}{=} (A,W;Q,C).\]Therefore, $\frac{AP \cdot ZB}{MP \cdot AB} = 1 \implies \frac{3 \cdot ZB}{ZP \cdot 7} = 1$. Since $ZB+ZP=4$ we know that $ZP = \frac{6}{5}$ and $ZB = \frac{14}{5}$. Therefore, $AW = AZ = \frac{21}{5}$ and $WC = 8 - \frac{21}{5} = \frac{19}{5}$. Since $(A,W;Q,C) = -1$, we also have $\frac{AQ \cdot WC}{NQ \cdot AC} = 1 \implies \frac{AQ \cdot \frac{19}{5}}{(\frac{21}{5} - AQ) \cdot 8} = 1$. Solving for $AQ$, we obtain $AQ = \frac{168}{59} \implies m+n = \boxed{227}$.😃-Vfire
 
  
-
-
 
 
 
@@ -1790,8 +1552,6 @@ Let the center of the incircle of $\triangle ABC$ be $O$. Link $OY$ and $OX$. Th
  So, the final answer of this question is $168+59=\boxed {227}$
 
  
-
-
 
 
 
@@ -1854,8 +1614,6 @@ Let the center of the incircle of $\triangle ABC$ be $O$. Link $OY$ and $OX$. Th
 
 
 
-
-
 \textbf{Solution 5}
 
 Firstly, assume $PY=x=PZ, ZB=4-x=BX, AZ=AW=3+x, CW=CX=5-x, QY=QW=y, AQ=3+x-y$
@@ -1871,8 +1629,6 @@ Firstly, assume $PY=x=PZ, ZB=4-x=BX, AZ=AW=3+x, CW=CX=5-x, QY=QW=y, AQ=3+x-y$
  The desired length is $3+x-y=\frac{168}{59}\implies \boxed{227}$
 
  
-
-
 
 
 
@@ -1911,8 +1667,6 @@ Let $\angle PAC = \theta$. Let $PY = a$ and $YQ = c$. By PoP and Stewart's Theor
  Now, note that $Pow(E) = EM \cdot EN = EY \cdot EX \implies AM^2 = EY \cdot EX + AE^2 = AE^2 + (AE - AY)(AX - AE) = AE^2 + AE \cdot AX - AE^2 - AY \cdot AX + AY \cdot AE = AE \cdot AX - AY \cdot AX + AY \cdot AE$ however note that $Pow(A) = AM^2 = AY \cdot AX$ so $AY \cdot AX = AE \cdot AX - AY \cdot AX + AY \cdot AE \implies 2 \cdot AX \cdot AY = AE(AX + AY) \implies \frac{2}{AE} = \frac{1}{AX} + \frac{1}{AY}$ which means that $AE$ is the harmonic mean of $AX$ and $AY$ and therefore $(A, E; Y, X)$ is a harmonic bundle as desired. $\square$
 
  
-
-
 
 
 	\item (\textit{AIME II 2018}) Find the number of functions $f$ from $\{0, 1, 2, 3, 4, 5, 6\}$ to the integers such that $f(0) = 0$, $f(6) = 12$, and
@@ -1962,8 +1716,6 @@ First, suppose $x = y + 1$. Then, the inequality becomes $1 \leq |f(y + 1) - f(y
 
 
 
-
-
 \textbf{Solution 2}
 
 Based on the conditions for $d_k$ obtained in Solution 1, followed by some well-known stars & bars techniques to reduce the case work. To recap, the conditions for $d_k = f(k) - f(k-1)$ are:
@@ -1985,8 +1737,6 @@ Based on the conditions for $d_k$ obtained in Solution 1, followed by some well-
  -mathdummy
 
  
-
-
 
 
 \end{enumerate}

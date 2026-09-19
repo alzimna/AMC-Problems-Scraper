@@ -19,8 +19,6 @@ Let $r$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Length
  
 
 
-
-
 	\item (\textit{AIME II 2004}) A jar has 10 red candies and 10 blue candies. Terry picks two candies at random, then Mary picks two of the remaining candies at random. Given that the probability that they get the same color combination, irrespective of order, is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
 
@@ -46,8 +44,6 @@ In the above calculations, we treated the choices as ordered; that is, Terry cho
  
 
 
-
-
 	\item (\textit{AIME II 2004}) A solid rectangular block is formed by gluing together $N$ congruent 1-cm cubes face to face. When the block is viewed so that three of its faces are visible, exactly 231 of the 1-cm cubes cannot be seen. Find the smallest possible value of $N.$
 
 
@@ -63,8 +59,6 @@ The $231$ cubes which are not visible must lie below exactly one layer of cubes.
  An alternate way to visualize the problem is to count the blocks that can be seen and subtract the blocks that cannot be seen.  In the given block with dimensions $l\times m \times n$, the three faces have $lm$, $mn$, and $ln$ blocks each.  However, $l$ blocks along the first edge, $m$ blocks along the second edge, and $n$ blocks along the third edge were counted twice, so they must be subtracted.  After subtracting these three edges, 1 block has not been counted - it was added three times on each face, but subtracted three times on each side.  Thus, the total number of visible cubes is $lm+mn+ln-l-m-n+1$, and the total number of invisible cubes is $lmn-lm-mn-ln+l+m+n-1$, which can be factored into $(l-1)(m-1)(n-1)$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) How many positive integers less than 10,000 have at most two different digits?
@@ -91,8 +85,6 @@ First, let's count numbers with only a single digit.  We have nine of these for 
 
 
 
-
-
 \textbf{Solution 2a}
 
 We use casework on the number of digits for this problem.
@@ -109,8 +101,6 @@ We use casework on the number of digits for this problem.
 Alternatively, $n$ has four digits can be calculated as follows: When $n$ has one unique digit, there are $9$ possibilities. When $n$ has two unique digits there are two cases. Case 1: two digits are the same with each other and different with the other pair of similar digits. In that case there are $\frac{\binom{4}{2}(9^2)}{2}$ numbers that work. The case had to be divided by $2$ because it counts the cases of distinct digits $(x,y)$ again when $(y,x)$ is picked. Case 2: three digits are the same and one is different. There are $4(9^2)$ numbers that work.
 
  
-
-
 
 
 
@@ -132,16 +122,12 @@ With subcases on the individual digits
 
 
 
-
-
 \textbf{Solution 3}
 
 We go with complementary counting. 3 different digits. First, we need atleast a three digit number. There are $9 \cdot 9 \cdot 8$ = 648 ways to do this with a three digit number. Note that I can simply add any one of the digits from $1-9$ to the left of any of these digits to get a 4 digit number, that has atleast 3 distinct digits (It can be either of some form like ABCA or ABCD). Thus there will be $9 \cdot 648 = 5832$ such numbers. But wait, we have missed all the cases where the third digit is $0$. There are $9 \cdot 9 \cdot 8 = 648$ such ways (There are two $9's$ there because I can repeat atleast one digit). This count came to me while typing. Originally, I just did it regularly. Take the case of all 4 distinct, then the case of two repeating where one of them is the left-most digit. Now, we are missing the cases where two digits from the last three places repeat in a 4 digit number. All the cases where the first digit repeats with any of the last 3, and the cases where all 4 are distinct have been covered. For this, we split it into two cases. First case is such that the repeating digit is not $0$. We have $\binom{3}{2} \cdot \binom{9}{1} \cdot 8 \cdot 8 = 1728$ such cases. Now, we will let $0$ be the repeating digits to get $\binom{3}{2} \cdot 9 \cdot 8 = 216$ cases.
  \[648 + 5832 + 648 + 1728 + 216 = 9072 \implies \boxed{9999 - 9072 =927}\]The question says $less$ than $10,000$, so we subtract from $9999$, not $10,000$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) In order to complete a large job, 1000 workers were hired, just enough to complete the job on schedule. All the workers stayed on the job while the first quarter of the work was done, so the first quarter of the work was completed on schedule. Then 100 workers were laid off, so the second quarter of the work was completed behind schedule. Then an additional 100 workers were laid off, so the third quarter of the work was completed still further behind schedule. Given that all workers work at the same rate, what is the minimum number of additional workers, beyond the 800 workers still on the job at the end of the third quarter, that must be hired after three-quarters of the work has been completed so that the entire project can be completed on schedule or before?
@@ -159,8 +145,6 @@ A train is traveling at $1000$ miles per hour and has one hour to reach its dest
  Solution by rocketscience
 
  
-
-
 
 
 
@@ -197,15 +181,11 @@ We then let the number of workers needed be $x$, so we have the equation $\left(
 
 
 
-
-
 \textbf{Solution 3 (Very fast, the one I used on the test)}
 
 Suppose $1000$ workers can complete one quarter of the job in one day. After the first day, there were $900$ workers remaining so the second quarter was completed in $\frac{10}{9}$ days. Now there are only $800$ workers remaining so the third quarter can be completed in $\frac{10}{8}$ days. It has been $1+\frac{10}{9}+\frac{10}{8}=\frac{121}{36}$ days since the job started, and we still have $\frac{23}{36}$ days to complete the last quarter of the job, so we need $\frac{36}{23}$ of $1000$ workers, or $1565.2173913$. Since we can’t hire fractional workers, $1566-800=\boxed{766}$ must be the answer.
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) Three clever monkeys divide a pile of bananas. The first monkey takes some bananas from the pile, keeps three-fourths of them, and divides the rest equally between the other two. The second monkey takes some bananas from the pile, keeps one-fourth of them, and divides the rest equally between the other two. The third monkey takes the remaining bananas from the pile, keeps one-twelfth of them, and divides the rest equally between the other two. Given that each monkey receives a whole number of bananas whenever the bananas are divided, and the numbers of bananas the first, second, and third monkeys have at the end of the process are in the ratio $3: 2: 1,$ what is the least possible total for the number of bananas?
@@ -231,8 +211,6 @@ In this solution, you start out the same as solution one. Convert everything int
 
 
 
-
-
 \textbf{Solution 2 (A lot of Thinking Required dEfInItELy )}
 
 Let $A,B,C$ be the fraction of bananas taken by the first, second, and third monkeys respectively. Then we have the system of equations 
@@ -242,8 +220,6 @@ Let $A,B,C$ be the fraction of bananas taken by the first, second, and third mon
  \[(A,B,C)=\left( \frac{11}{51}, \frac{13}{51}, \frac{9}{17} \right).\] We need the amount taken by the first and second monkeys to be divisible by 8 and the third by 24 (but for the third, we already have divisibility by 9). Thus our minimum is $8 \cdot 51 = \boxed{408}.$
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) $ABCD$ is a rectangular sheet of paper that has been folded so that corner $B$ is matched with point $B'$ on edge $AD.$ The crease is $EF,$ where $E$ is on $AB$ and $F$ is on $CD.$ The dimensions $AE=8, BE=17,$ and $CF=3$ are given. The perimeter of rectangle $ABCD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
@@ -269,13 +245,13 @@ Let $A,B,C$ be the fraction of bananas taken by the first, second, and third mon
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2004_7_Solution_Figure_1.png}
                     \end{figure}
-                    Since $EF$ is the perpendicular bisector of $\overline{BB'}$, it follows that $BE = B'E$ (by SAS). By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, we have $AB' = 15$. Similarly, from $BF = B'F$, we have
+                    
+
+ Since $EF$ is the perpendicular bisector of $\overline{BB'}$, it follows that $BE = B'E$ (by SAS). By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, we have $AB' = 15$. Similarly, from $BF = B'F$, we have
  \begin{align*} BC^2 + CF^2 = B'D^2 + DF^2 &\Longrightarrow BC^2 + 9 = (BC - 15)^2 + 484 \\ BC  &= \frac{70}{3} \end{align*}
 Thus the perimeter of $ABCD$ is $2\left(25 + \frac{70}{3}\right) = \frac{290}{3}$, and our answer is $m+n=\boxed{293}$.
 
  
-
-
 
 
 
@@ -285,11 +261,11 @@ Let $A = (0,0), B=(0,25)$, so $E = (0,8)$ and $F = (l,22)$, and let $l = AD$ be 
  \begin{align*} \frac{14}{l}x &= y-8 = \frac{9}{2}\\ \frac{-l}{14}x &= y-25 = -\frac{25}{2}\\ \end{align*}
 Dividing the two equations yields
 
- $l^2 = \frac{25 \cdot 14^2}{9} \Longrightarrow l = \frac{70}{3}$The answer is $\boxed{293}$ as above.
+ $l^2 = \frac{25 \cdot 14^2}{9} \Longrightarrow l = \frac{70}{3}$
+
+ The answer is $\boxed{293}$ as above.
 
  
-
-
 
 
 
@@ -300,8 +276,6 @@ Firstly, observe that if we are given that $AE=8$ and $BE=17$, the length of the
  Line EF can be written as y=$-\frac{5}{3}x+b$. Plug in the point $(8,0)$, and we get the equation of EF to be y=$_\frac{5}{3}x+\frac{40}{3}$. Since the length of $AB$=25, a point on line $EF$ lies on $DC$ when $x=25-3=22$. Plug in $x=22$ into our equation to get $y=-\frac{70}{3}$. $|y|=BC=\frac{70}{3}$. Therefore, our answer is $2(AB+BC)=2\left(25+\frac{70}{3}\right)=2\left(\frac{145}{3}\right)=\frac{290}{3}= \boxed{293}$.
 
  
-
-
 
 
 
@@ -323,8 +297,6 @@ Firstly, note that $B'E=BE=17$, so $AB'=\sqrt{17^2-8^2}=15$. Then let $\angle BE
 
 
 
-
-
 \textbf{Solution 5 (Fast, Pythagorean)}
 
 Use the prepared diagram for this solution.
@@ -334,8 +306,6 @@ Use the prepared diagram for this solution.
  -jackshi2006
 
  
-
-
 
 
 
@@ -361,8 +331,6 @@ Call the intersection of $B'C'$, $BC$, and $EF$ $G$. Since $FCBE$ and $FC'B'E$ a
  The perimeter is $\frac{140}{3}+50=\frac{290}{3},$ so our answer is $\boxed{293}$.
 
  
-
-
 
 
 
@@ -402,8 +370,6 @@ Let the endpoint of the intersection of the fold near $F$ be $G$. Since trapezoi
  
 
 
-
-
 	\item (\textit{AIME II 2004}) How many positive integer divisors of $2004^{2004}$ are divisible by exactly 2004 positive integers?
 
 
@@ -420,11 +386,11 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorizat
 
  A positive integer divisor of $2004^{2004}$ will be of the form $2^a\cdot 3^b\cdot 167^c$.  Thus we need to find how many $(a,b,c)$ satisfy 
 
- $(a+1)(b+1)(c+1)=2^2\cdot 3\cdot 167.$We can think of this as \href{https://artofproblemsolving.com/wiki/index.php?title=Partition}{partitioning} the exponents to $a+1,$ $b+1,$ and  $c+1$.  So let's partition the 2's first.  There are two 2's so this is equivalent to partitioning two items in three containers.  We can do this in ${4 \choose 2} = 6$ ways.  We can partition the 3 in three ways and likewise we can partition the 167 in three ways.  So we have $6\cdot 3\cdot 3 = \boxed{54}$ as our answer.
+ $(a+1)(b+1)(c+1)=2^2\cdot 3\cdot 167.$
+
+ We can think of this as \href{https://artofproblemsolving.com/wiki/index.php?title=Partition}{partitioning} the exponents to $a+1,$ $b+1,$ and  $c+1$.  So let's partition the 2's first.  There are two 2's so this is equivalent to partitioning two items in three containers.  We can do this in ${4 \choose 2} = 6$ ways.  We can partition the 3 in three ways and likewise we can partition the 167 in three ways.  So we have $6\cdot 3\cdot 3 = \boxed{54}$ as our answer.
 
  
-
-
 
 
 
@@ -462,8 +428,6 @@ Clearly we need to find a group of numbers that multiply to 2004. We can list th
 
 
  
-
-
 
 
 
@@ -508,8 +472,6 @@ The answer is $21 + 30 + 3 = \boxed{54}.$
 
 
 
-
-
 \textbf{Solution 4 (Stars and Bars)}
 
 
@@ -525,8 +487,6 @@ The answer is $21 + 30 + 3 = \boxed{54}.$
  Each of these must contain values that multiply to $2^2, 3^1, 167^1$. Consider the exponents of each of the values $i+1, j+1, k+1$. Then, we see that if each of $i+1 = a, j+1 = b, k+1 = c$ exists as a prime factorization $a,b,c = 2^{x_1,x_4,x_7}3^{x_2,x_5,x_8}167^{x_3,x_6,x_9}$. Therefore, we see that the solutions for $a$ exist as $x_1 + x_4 + x_7 = 2$, for $b$, $x_2 + x_5 + x_8 = 1$, and for $c$, $x_3 + x_6 + x_9 = 1$. Through stars and bars, we have $a$ has 6 choices, $b$ has 3, and so does $c$. Then, $abc$ has $6 \cdot 3 \cdot 3 = \boxed{054}$ total cases.
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) A sequence of positive integers with $a_1=1$ and $a_9+a_{10}=646$ is formed so that the first three terms are in geometric progression, the second, third, and fourth terms are in arithmetic progression, and, in general, for all $n\ge1,$ the terms $a_{2n-1}, a_{2n}, a_{2n+1}$ are in geometric progression, and the terms $a_{2n}, a_{2n+1},$ and $a_{2n+2}$ are in arithmetic progression. Let $a_n$ be the greatest term in this sequence that is less than 1000. Find $n+a_n.$
@@ -556,15 +516,11 @@ and
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $x = a_2$. It is apparent that the sequence grows relatively fast, so we start trying positive integers to see what $x$ can be. Finding that $x = 5$ works, after bashing out the rest of the terms we find that $a_{16} = 957$ and $a_{17} = 1089$, hence our answer is $957 + 16 = \boxed{973}$.
 
  
-
-
 
 
 
@@ -587,15 +543,11 @@ We can find the value of $a_{9}$ by its bounds using three conditions:
 
 
 
-
-
 \textbf{Solution 4 (quadratic)}
 
 Let $a_2 = x$. We will write the first 10 terms in terms of $x$ (this will require some rigorous polynomial division):
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) Let $S$ be the set of integers between 1 and $2^{40}$ whose binary expansions have exactly two 1's. If a number is chosen at random from $S,$ the probability that it is divisible by 9 is $p/q,$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$
@@ -636,8 +588,6 @@ Any number from 1 to $2^{40}$ can be represented in binary with 40 digits (becau
 
 
 
-
-
 \textbf{Solution 2}
 
 A positive integer $n$ has exactly two 1s in its binary representation exactly when $n = 2^j + 2^k$ for $j \neq k$ \href{https://artofproblemsolving.com/wiki/index.php?title=Nonnegative}{nonnegative} integers.  Thus, the \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} $S$ is equal to the set $\{n \in \mathbb{Z} \mid n = 2^j + 2^k \,\mathrm{ and }\, 0 \leq j < k \leq 39\}$.  (The second condition ensures simultaneously that $j \neq k$ and that each such number less than $2^{40}$ is counted exactly once.)  This means there are ${40 \choose 2} = 780$ total such numbers.
@@ -651,8 +601,6 @@ A positive integer $n$ has exactly two 1s in its binary representation exactly w
  -minor edit by Mathkiddie
 
  
-
-
 
 
 
@@ -672,8 +620,6 @@ Next, we look at powers of two exclusive from 1-39. Expressed in an equation, $2
 
 
 
-
-
 \textbf{Solution 4}
 
 Notice that in any binary expression, when we take it modulo $9$ and look at it in groups of 3 starting from the right, we get bases with modulo's $4,2,1$ in the first group and $-4,-2,-1$ in the second group. For our number to be divisible by $9$, we have to get one of the positive multipliers and its opposite to cancel out. There are a total of $7$ complete positive groups and $6$ complete negative groups and then $2^{39}$ is left which is $-1$. If we select a $1$, we have $7$ ways to negate it and $7$ ways to select it giving $49$. If we select a $2$, we have $6$ ways to negate it and $7$ ways to select it giving $42$. The same follows for selecting a $4$. In total, we need to choose $2$ out of the total $40$ digits to "activate" and turn into a $1$. In total we get 
@@ -682,8 +628,6 @@ Notice that in any binary expression, when we take it modulo $9$ and look at it 
  -Vedoral
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) A right circular cone has a base with radius 600 and height $200\sqrt{7}.$ A fly starts at a point on the surface of the cone whose distance from the vertex of the cone is 125, and crawls along the surface of the cone to a point on the exact opposite side of the cone whose distance from the vertex is $375\sqrt{2}.$ Find the least distance that the fly could have crawled.
@@ -701,8 +645,6 @@ The easiest way is to unwrap the cone into a circular sector. Center the sector 
  If the starting point $A$ is on the positive $x$-axis at $(125,0)$ then we can take the end point $B$ on $\theta$'s bisector at $\frac{3\pi}{4}$ radians along the $y=-x$ line in the second quadrant. Using the distance from the vertex puts $B$ at $(-375,-375)$. Thus the shortest distance for the fly to travel is along segment $AB$ in the sector, which gives a distance $\sqrt{(-375-125)^2+(-375-0)^2}=125\sqrt{4^2+3^2}=\boxed{625}$.
 
  
-
-
 
 
 
@@ -726,8 +668,6 @@ The easiest way is to unwrap the cone into a circular sector. Center the sector 
  
 
 
-
-
 	\item (\textit{AIME II 2004}) Let $ABCD$ be an isosceles trapezoid, whose dimensions are $AB = 6, BC=5=DA,$and $CD=4.$ Draw circles of radius 3 centered at $A$ and $B$ and circles of radius 2 centered at $C$ and $D.$ A circle contained within the trapezoid is tangent to all four of these circles. Its radius is $\frac{-k+m\sqrt{n}}p,$ where $k, m, n,$ and $p$ are positive integers, $n$ is not divisible by the square of any prime, and $k$ and $p$ are relatively prime. Find $k+m+n+p.$
 
 
@@ -745,7 +685,9 @@ Let the radius of the center circle be $r$ and its center be denoted as $O$.
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2004_12_Solution_Figure_1.png}
                     \end{figure}
-                    Clearly line $AO$ passes through the point of tangency of circle $A$ and circle $O$. Let $y$ be the height from the base of the trapezoid to $O$. From the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, 
+                    
+
+ Clearly line $AO$ passes through the point of tangency of circle $A$ and circle $O$. Let $y$ be the height from the base of the trapezoid to $O$. From the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, 
  \[3^2 + y^2 = (r + 3)^2 \Longrightarrow y = \sqrt {r^2 + 6r}.\]
 
  We use a similar argument with the line $DO$, and find the height from the top of the trapezoid to $O$, $z$, to be $z = \sqrt {r^2 + 4r}$.
@@ -755,8 +697,6 @@ Let the radius of the center circle be $r$ and its center be denoted as $O$.
  Solving this, we get $r = \frac { - 60 + 48\sqrt {3}}{23}$, and the answer is $k + m + n + p = 60 + 48 + 3 + 23 = \boxed{134}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) Let $ABCDE$ be a convex pentagon with $AB || CE, BC || AD, AC || DE, \angle ABC=120^\circ, AB=3, BC=5,$ and $DE = 15.$ Given that the ratio between the area of triangle $ABC$ and the area of triangle $EBD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
@@ -776,7 +716,9 @@ Let the intersection of $\overline{AD}$ and $\overline{CE}$ be $F$. Since $AB \p
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2004_13_Solution_Figure_1.png}
                     \end{figure}
-                    By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}, $AC^2 = 3^2 + 5^2 - 2 \cdot 3 \cdot 5 \cos 120^{\circ} = 49 \Longrightarrow AC = 7$. Thus the length similarity ratio between $\triangle ABC$ and $\triangle EFD$ is $\frac{AC}{ED} = \frac{7}{15}$. 
+                    
+
+ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}, $AC^2 = 3^2 + 5^2 - 2 \cdot 3 \cdot 5 \cos 120^{\circ} = 49 \Longrightarrow AC = 7$. Thus the length similarity ratio between $\triangle ABC$ and $\triangle EFD$ is $\frac{AC}{ED} = \frac{7}{15}$. 
 
  Let $h_{ABC}$ and $h_{BDE}$ be the lengths of the \href{https://artofproblemsolving.com/wiki/index.php?title=Altitude}{altitudes} in $\triangle ABC, \triangle BDE$ to $AC, DE$ respectively. Then, the ratio of the areas $\frac{[ABC]}{[BDE]} = \frac{\frac 12 \cdot h_{ABC} \cdot AC}{\frac 12 \cdot h_{BDE} \cdot DE} = \frac{7}{15} \cdot \frac{h_{ABC}}{h_{BDE}}$. 
 
@@ -785,8 +727,6 @@ Let the intersection of $\overline{AD}$ and $\overline{CE}$ be $F$. Since $AB \p
  \textbf{Additional Trigonometry-Free Alternative} Instead of using the Law of Cosines, we can draw a line perpendicular to line BC down from point A until it intersects BC at a point $P$. Since $\angle PBA = 60^{\circ}$, we can use the $30-60-90$ triangle to deduce that $PB = \frac{3}{2}$, and $PA = \frac{3\sqrt{3}}{2}$. From here, we can use Pythagorean theorem to deduce that $AC = 7$. Then, we can follow with the rest of the solution above.
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) Consider a string of $n$ $7$'s, $7777\cdots77,$ into which $+$ signs are inserted to produce an arithmetic expression. For example, $7+77+777+7+7=875$ could be obtained from eight $7$'s in this way. For how many values of $n$ is it possible to insert $+$ signs so that the resulting expression has value $7000$?
@@ -825,8 +765,6 @@ However, we forgot to consider the condition that $a \ge 0$. For a solution set 
 
 
 
-
-
 \textbf{Solution 2}
 
 To simplify, replace all the $7$’s with $1$’s. Because the sum is congruent to $n \pmod 9$ and 
@@ -855,8 +793,6 @@ All other elements of $S$ are possible because if any element $n$ of $S$ between
  Thus there are $\boxed{108}$ possible values for $n$.
 
  
-
-
 
 
 
@@ -921,8 +857,6 @@ It's obvious that we cannot have any number $\ge 7777$ because $7777 > 7000$ so 
 
 
 
-
-
 \textbf{Solution 4 (Construction, not counting)}
 
 First, we note that by the sun of digits and modulo 9 formula, $n \equiv 1000 \equiv 1 \pmod {9}$. Obviously, $1000 = 111+111+111+111+111+111+111+111+111+1$ with $n=28$ is the smallest possible $n$. Now, $111=10 \cdot 11 +1$, $11= 11 \cdot 1$. The first equation applied on a representation with $n$ 1's (i.e. replacing a $111$, if available, with 10 $11$'s and one 1) will increase $n$ by 18, while the second equation applied onto a representation will increase $n$ by 9 only. Thus, there are representations of $n= 46,55,64, \dots , 1000$, since for $46$ we can just replace a $111$ in $n=28$ representation with 10 $11$'s and one 1, and for the rest we use the first equation $111= 10 \cdot 11 +1$ to "increase the range" and the second equation to "fill in the gaps" of the first equation. Essentially we use the first equation for every other multiple of nine and the second for the other multiples of nine and for once the $111$'s run out. Next, obviously $n=1000$ is the maximum $n$ one can achieve. Thus, the solutions $n=28,46,55,64, \dots ,1000$ is all the solutions (one can check there are $\boxed{108}$) if we can show $37$ is impossible. But it is, since $a+b+c=37, 111a+11b+c=1000$ have no Diophantine solution, so we're done.
@@ -931,8 +865,6 @@ First, we note that by the sun of digits and modulo 9 formula, $n \equiv 1000 \e
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2004\_AIME\_II\_Problems/Problem\_14&action=edit}{add it} to this page.</i>
 
  
-
-
 
 
 	\item (\textit{AIME II 2004}) A long thin strip of paper is 1024 units in length, 1 unit in width, and is divided into 1024 unit squares. The paper is folded in half repeatedly. For the first fold, the right end of the paper is folded over to coincide with and lie on top of the left end. The result is a 512 by 1 strip of double thickness. Next, the right end of this strip is folded over to coincide with and lie on top of the left end, resulting in a 256 by 1 strip of quadruple thickness. This process is repeated 8 more times. After the last fold, the strip has become a stack of 1024 unit squares. How many of these squares lie below the square that was originally the 942nd square counting from the left?
@@ -975,8 +907,6 @@ Number the squares $0, 1, 2, 3, ... 2^{k} - 1$.  In this case $k = 10$, but we w
 
 
 
-
-
 \textbf{Solution 2}
 
 More brute force / thinking about the question logically. If the number doesn't change position, then the number of squares below it does not change. Otherwise, it changes position ($p\mapsto 2^k+1-p$ for the $k$-th fold). We just take the number of squares under it before we folded and now these are above the square. 
@@ -990,8 +920,6 @@ More brute force / thinking about the question logically. If the number doesn't 
 
 
 
-
-
 \textbf{Solution 3}
 
 We can keep track of the position of the square labeled 942 in each step. We use an $(x,y)$ coordinate system, so originally the 942 square is in the position $(942,1)$. In general, suppose that we've folded the strip into an array $r=2^k$ squares wide and $c=1024/r=2^{10-k}$ squares tall (so we've made $10-k$ folds). Then if a square occupies the location $(x,y)$, we find that after the next fold, it will be in the location described by the procedure
@@ -999,8 +927,6 @@ We can keep track of the position of the square labeled 942 in each step. We use
  \[\begin{array}{c|c|c} (x,y)&\text{rows}&\text{columns}\\\hline (942,1)&1024&1\\ (83,2)&512&2\\ (83,2)&256&4\\ (83,2)&128&8\\ (46,15)&64&16\\ (19,18)&32&32\\ (14,47)&16&64\\ (3,82)&8&128\\ (3,82)&4&256\\ (2,431)&2&512\\ (1,594)&1&1024.\\ \end{array}\]Therefore, at the end of the process, the square labeled 942 will be in the position $(1,594)$, i.e., it will be above $\boxed{593}$ squares.
 
  
-
-
 
 
 \end{enumerate}

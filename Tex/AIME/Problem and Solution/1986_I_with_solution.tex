@@ -20,8 +20,6 @@ Let $y = \sqrt[4]{x}$. Then we have\textbf{$y(7 - y) = 12$}, or, by simplifying,
  
 
 
-
-
 	\item (\textit{AIME I 1986}) Evaluate the product 
  \[\left(\sqrt{5}+\sqrt{6}+\sqrt{7}\right)\left(\sqrt{5}+\sqrt{6}-\sqrt{7}\right)\left(\sqrt{5}-\sqrt{6}+\sqrt{7}\right)\left(-\sqrt{5}+\sqrt{6}+\sqrt{7}\right).\]
 
@@ -47,8 +45,6 @@ More generally, let $(x,y,z)=\left(\sqrt5,\sqrt6,\sqrt7\right)$ so that $\left(x
 
 
 
-
-
 \textbf{Solution 2 (Algebra: Specific)}
 
 We group the first and last factors as well as the two middle factors, then apply the difference of squares repeatedly:
@@ -56,8 +52,6 @@ We group the first and last factors as well as the two middle factors, then appl
 ~Azjps (Solution)
 
  
-
-
 
 
 
@@ -72,8 +66,6 @@ Notice that in a triangle with side-lengths $2\sqrt5,2\sqrt6,$ and $2\sqrt7,$ by
  \[\frac{\sin\theta}{2}\cdot 2\sqrt5\cdot 2\sqrt6=\sqrt{\frac{26}{30}}\cdot 2\sqrt{30}=\sqrt{104},\]so our answer is $\left(\sqrt{104}\right)^2=\boxed{104}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) If $\tan x+\tan y=25$ and $\cot x + \cot y=30$, what is $\tan(x+y)$?
@@ -100,8 +92,6 @@ Since $\cot$ is the reciprocal function of $\tan$:
 
 
 
-
-
 \textbf{Solution 2}
 
 Using the formula for tangent of a sum, $\tan(x+y)=\frac{\tan x + \tan y}{1-\tan x \tan y} = \frac{25}{1-\tan x \tan y}$. We only need to find $\tan x \tan y$.
@@ -115,8 +105,6 @@ Using the formula for tangent of a sum, $\tan(x+y)=\frac{\tan x + \tan y}{1-\tan
  $\frac{25}{30} = \frac{\frac{\sin(x+y)}{\cos x \cos y}}{\frac{\sin(x+y)}{\sin x \sin y}} = \frac{\sin x \sin y}{\cos x \cos y} = \tan x \tan y = \frac{5}{6}$. Plugging in to the earlier formula, we have $\tan(x+y) = \frac{25}{1-\frac{5}{6}} = \frac{25}{\frac{1}{6}} = \boxed{150}$.
 
  
-
-
 
 
 
@@ -152,23 +140,22 @@ Let $a=\tan x$ and $b=\tan y$. This simplifies the equations to:
  
 
 
-
-
 	\item (\textit{AIME I 1986}) Determine $3x_4+2x_5$ if $x_1$, $x_2$, $x_3$, $x_4$, and $x_5$ satisfy the system of equations below.
 
+ \begin{align*} 2x_1+x_2+x_3+x_4+x_5&=6 \\ x_1+2x_2+x_3+x_4+x_5&=12 \\ x_1+x_2+2x_3+x_4+x_5&=24 \\ x_1+x_2+x_3+2x_4+x_5&=48 \\ x_1+x_2+x_3+x_4+2x_5&=96 \\ \end{align*}
 
- $2x_1+x_2+x_3+x_4+x_5=6$$x_1+2x_2+x_3+x_4+x_5=12$$x_1+x_2+2x_3+x_4+x_5=24$$x_1+x_2+x_3+2x_4+x_5=48$$x_1+x_2+x_3+x_4+2x_5=96$
+
+
+ 
  \textbf{Answer: }181
 
 
 
-\textbf{Solution}
+\textbf{Solution 1}
 
 Adding all five \href{https://artofproblemsolving.com/wiki/index.php?title=Equation}{equations} gives us $6(x_1 + x_2 + x_3 + x_4 + x_5) = 6(1 + 2 + 4 + 8 + 16)$ so $x_1 + x_2 + x_3 + x_4 + x_5 = 31$.  Subtracting this from the fourth given equation gives $x_4 = 17$ and subtracting it from the fifth given equation gives $x_5 = 65$, so our answer is $3\cdot17 + 2\cdot65 = \boxed{181}$.
 
  
-
-
 
 
 
@@ -182,8 +169,6 @@ Using the previous equations,
  \[3x_4+2x_5=3(x_1+42)+2(x_1+90)=\boxed{181}\]
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) What is that largest \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integer} $n$ for which $n^3+100$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Divisible}{divisible} by $n+10$?
@@ -202,15 +187,11 @@ If $n+10 \mid n^3+100$, $\gcd(n^3+100,n+10)=n+10$. Using the \href{https://artof
 
 
 
-
-
 \textbf{Solution 2 (Simple)}
 
 Let $n+10=k$, then $n=k-10$. Then $n^3+100 = k^3-30k^2+300k-900$ Therefore, $900$ must be divisible by $k$, which is largest when $k=900$ and $n=\boxed{890}$
 
  
-
-
 
 
 
@@ -222,15 +203,11 @@ In a similar manner, we can apply synthetic division. We are looking for $\frac{
 
 
 
-
-
 \textbf{Solution 4}
 
 The key to this problem is to realize that $n+10 \mid n^3 +1000$ for all $n$. Since we are asked to find the maximum possible $n$ such that $n+10 \mid n^3 +100$, we have: $n+10 \mid ((n^3 +1000) - (n^3 +100) \longrightarrow n+10 \mid 900$. This is because of the property that states that if $a \mid b$ and $a \mid c$, then $a \mid b \pm c$. Since, the largest factor of 900 is itself we have: $n+10=900 \Longrightarrow \boxed{n = 890}$
 
  
-
-
 
 
 
@@ -243,15 +220,11 @@ Notice that $n\equiv -10 \pmod{n+10}$. Therefore
 
 
 
-
-
 \textbf{Solution 6 (Easiest Factor)}
 
 In the problem, we can see that $n^3 + 100$ has a cube. Immediately think of sum of cubes, which leads us to add 900, resulting in $(n^3 + 10^3) - 900$ --> $(n+10)(n^2 - 10n + 100) - 900$. Since the $(n+10)(n^2 - 10n + 100)$ contains $(n+10)$, this part is divisible by $n+10$ --> therefore the 900 must be divisible by $n+10$. The largest $n$ that satisfies this is $900-10 = \boxed{890}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) The pages of a book are numbered $1$ through $n$. When the page numbers of the book were added, one of the page numbers was mistakenly added twice, resulting in an incorrect sum of $1986$. What was the number of the page that was added twice?
@@ -270,8 +243,6 @@ Denote the page number as $x$, with $x < n$. The sum formula shows that $\frac{n
 
 
 
-
-
 \textbf{Solution 2}
 
 Use the same method as above where you represent the sum of integers from $1$ to $n$ expressed as $\frac{n(n + 1)}{2}$, plus the additional page number $k$. We can establish an upper and lower bound for the number of pages contained in the book, where the upper bound maximizes the sum of the pages and the lower bound maximizes the extra page (and thus minimizes the total sum of the pages.) 
@@ -283,8 +254,6 @@ Use the same method as above where you represent the sum of integers from $1$ to
  This implies that we can plug in $62$ and come to the same conclusion as the above solution where $x = \boxed{033}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) The increasing sequence $1,3,4,9,10,12,13\cdots$ consists of all those positive integers which are \href{https://artofproblemsolving.com/wiki/index.php?title=Powers&action=edit&redlink=1}{powers} of 3 or sums of distinct powers of 3. Find the $100^{\mbox{th}}$ term of this sequence.
@@ -303,15 +272,11 @@ Rewrite all of the terms in base 3. Since the numbers are sums of \textit{distin
 
 
 
-
-
 \textbf{Solution 2}
 
 Notice that the first term of the sequence is $1$, the second is $3$, the fourth is $9$, and so on. Thus the $64th$ term of the sequence is $729$. Now out of $64$ terms which are of the form $729$ + $'''S'''$, $32$ of them include $243$ and $32$ do not. The smallest term that includes $243$, i.e. $972$, is greater than the largest term which does not, or $854$. So the $96$th term will be $972$, then $973$, then $975$, then $976$, and finally $\boxed{981}$
 
  
-
-
 
 
 
@@ -323,8 +288,6 @@ After the $n$th power of 3 in the sequence, the number of terms after that power
 
 
 
-
-
 \textbf{Solution 4}
 
 Writing out a few terms of the sequence until we reach the next power of 3 (27), we see that the $2^{nth}$ term is equal to $3^n$. From here, we can ballpark the range of the 100th term. The 64th term is $3^6$ = $729$ and the 128th term is $3^7$ = $2187$. Writing out more terms of the sequence until the next power of 3 again (81) we can see that the ($2^n$+$2^{n+1}$)/2 term is equal to $3^n$ + $3^{n-1}$. From here, we know that the 96th term is $3^6$ + $3^5$ = $972$. From here, we can construct the 100th term by following the sequence in increasing order. The 97th term is $972 + 1 = 973$, the 98th term is $972 + 3 = 975$, the 99th term is $972 + 3 + 1 = 976$, and finally the 100th term is $972 + 9 = \boxed{981}$
@@ -333,17 +296,21 @@ Writing out a few terms of the sequence until we reach the next power of 3 (27),
 
 
 
-
-
 \textbf{Solution 5}
 
 The number of terms $3^n$ produces includes each power of 3 ($1, 3^1, ..., 3^n$), the sums of two power of 3s(ex. $3^1 + 1$), three power of 3s (ex. $3^1 + 1 + 3^n$), all the way to the sum of them all. Since there are $n+1$ powers of 3, the one number sum gives us ${n+1\choose 1}$ terms, the two number ${n+1\choose 2}$ terms, all the way to the sum of all the powers which gives us ${n+1\choose n+1}$ terms. Summing all these up gives us $2^{n+1} - 1 ^ {*}$ according to the theorem 
 
- $\sum_{k=0}^N{{N}\choose{k}} = 2^N$.Since $2^6$ is the greatest power $<100$, then $n=5$ and the sequence would look like {$3^0, ..., 3^5$}, where $3^5$ or $243$ would be the $2^5 - 1 = 63$rd number. The next largest power $729$ would be the 64th number. However, its terms contributed extends beyond 100, so we break it to smaller pieces. Noting that $729$ plus any combination of lower powers ${1, 3^1 . . .3^4}$ is < $729 + 243$, so we can add all those terms($2^5 - 1 = 31$) into our sequence:
+ $\sum_{k=0}^N{{N}\choose{k}} = 2^N$.
 
- {$3^0, ..., 3^5, 729, 729 + 1, .... 729 + (1 + 3^1 + . . . +3^4)$}Our sequence now has $63 + 1 + 31 = 95$ terms. The remaining $5$ would just be the smallest sums starting with $729 + 243$ or $972$:
+ Since $2^6$ is the greatest power $<100$, then $n=5$ and the sequence would look like {$3^0, ..., 3^5$}, where $3^5$ or $243$ would be the $2^5 - 1 = 63$rd number. The next largest power $729$ would be the 64th number. However, its terms contributed extends beyond 100, so we break it to smaller pieces. Noting that $729$ plus any combination of lower powers ${1, 3^1 . . .3^4}$ is < $729 + 243$, so we can add all those terms($2^5 - 1 = 31$) into our sequence:
 
- [$972$, $972 + 1$, $972 + 3$, $972+1+3$, $972 + 9$]Hence the 100th term would be $972 + 9 = \boxed{981}$. ~SoilMilk
+ {$3^0, ..., 3^5, 729, 729 + 1, .... 729 + (1 + 3^1 + . . . +3^4)$}
+
+ Our sequence now has $63 + 1 + 31 = 95$ terms. The remaining $5$ would just be the smallest sums starting with $729 + 243$ or $972$:
+
+ [$972$, $972 + 1$, $972 + 3$, $972+1+3$, $972 + 9$]
+
+ Hence the 100th term would be $972 + 9 = \boxed{981}$. ~SoilMilk
 
  ${}^{*}$Note that there isn't a ${n+1\choose 0}$ as choosing 0 numbers will not give you a term.
 
@@ -351,8 +318,6 @@ The number of terms $3^n$ produces includes each power of 3 ($1, 3^1, ..., 3^n$)
 
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) Let $S$ be the sum of the base $10$ logarithms of all the proper divisors of $1{,}000{,}000$. What is the integer nearest to $S$?
@@ -376,8 +341,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorizat
 
 
 
-
-
 \textbf{Solution 2}
 
 Since the prime factorization of $10^6$ is $2^6 \cdot 5^6$, the number of factors in $10^6$ is $7 \cdot 7=49$. You can pair them up into groups of two so each group multiplies to $10^6$. Note that $\log n+\log{(10^6/n)}=\log{n}+\log{10^6}-\log{n}=6$. Thus, the sum of the logs of the divisors is half the number of divisors of $10^6 \cdot 6 -6$ (since they are asking only for proper divisors), and the answer is $(49/2)\cdot 6-6=\boxed{141}$.
@@ -392,15 +355,11 @@ Since the prime factorization of $10^6$ is $2^6 \cdot 5^6$, the number of factor
 
 
 
-
-
 \textbf{Solution 3}
 
 Note that we can just pair terms up such that the product is $10^{6}.$ Now, however, note that $10^{3}$ is not included. Therefore we first exclude. We have $\displaystyle\frac{49-1}{2} = 24$ pairs that all multiply to $10^{6}.$ Now we include $10^{3}$ so our current product is $24 \cdot 6 - 3.$ However we dont want to include $10^6$ since we are considering proper factors only so the final answer is $144 + 3 - 6 = \boxed{141}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) In $\triangle ABC$, $AB= 425$, $BC=450$, and $AC=510$. An interior point $P$ is then drawn, and segments are drawn through $P$ parallel to the sides of the triangle. If these three segments are of an equal length $d$, find $d$.
@@ -418,13 +377,13 @@ Note that we can just pair terms up such that the product is $10^{6}.$ Now, howe
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1986_9_Solution_Figure_1.png}
                     \end{figure}
-                    Let the points at which the segments hit the triangle be called $D, D', E, E', F, F'$ as shown above. As a result of the lines being parallel, all three smaller triangles and the larger triangle are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar} ($\triangle ABC \sim \triangle DPD' \sim \triangle PEE' \sim \triangle F'PF$). The remaining three sections are \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelograms}.
+                    
+
+ Let the points at which the segments hit the triangle be called $D, D', E, E', F, F'$ as shown above. As a result of the lines being parallel, all three smaller triangles and the larger triangle are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar} ($\triangle ABC \sim \triangle DPD' \sim \triangle PEE' \sim \triangle F'PF$). The remaining three sections are \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelograms}.
 
  By similar triangles, $BE'=\frac{d}{510}\cdot450=\frac{15}{17}d$ and $EC=\frac{d}{425}\cdot450=\frac{18}{17}d$. Since $FD'=BC-EE'$, we have $900-\frac{33}{17}d=d$, so $d=\boxed{306}$.
 
  
-
-
 
 
 
@@ -448,7 +407,7 @@ Note that we can just pair terms up such that the product is $10^{6}.$ Now, howe
 
  $d = \frac{2}{\frac{1}{AB} + \frac{1}{BC} + \frac{1}{CA}} = \frac{2}{\frac{1}{510} + \frac{1}{450} + \frac{1}{425}} = \frac{10}{\frac{1}{85}+\frac{1}{90}+\frac{1}{102}}$$= \frac{10}{\frac{1}{5}\left(\frac{1}{17}+\frac{1}{18}\right)+\frac{1}{102}}=\frac{10}{\frac{1}{5}\cdot\frac{35}{306}+\frac{3}{306}}=\frac{10}{\frac{10}{306}} = \boxed{306}$
 
-
+ 
 
 
 
@@ -459,17 +418,19 @@ Note that we can just pair terms up such that the product is $10^{6}.$ Now, howe
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1986_9_Solution_Figure_3.png}
                     \end{figure}
-                    Let the points at which the segments hit the triangle be called $D, D', E, E', F, F'$ as shown above. As a result of the lines being parallel, all three smaller triangles and the larger triangle are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar} ($\triangle ABC \sim \triangle DD'P \sim \triangle PEE' \sim \triangle F'PF$). The remaining three sections are \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelograms}.
+                    
+
+ Let the points at which the segments hit the triangle be called $D, D', E, E', F, F'$ as shown above. As a result of the lines being parallel, all three smaller triangles and the larger triangle are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar} ($\triangle ABC \sim \triangle DD'P \sim \triangle PEE' \sim \triangle F'PF$). The remaining three sections are \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelograms}.
 
  Since $PDAF'$ is a parallelogram, we find $PF' = AD$, and similarly $PE = BD'$. So $d = PF' + PE = AD + BD' = 425 - DD'$. Thus $DD' = 425 - d$. By the same logic, $EE' = 450 - d$. 
 
  Since $\triangle DPD' \sim \triangle ABC$, we have the \href{https://artofproblemsolving.com/wiki/index.php?title=Proportion}{proportion}:
 
- $\frac{425-d}{425} = \frac{PD}{510} \Longrightarrow PD = 510 - \frac{510}{425}d = 510 - \frac{6}{5}d$Doing the same with $\triangle PEE'$, we find that $PE' =510 - \frac{17}{15}d$. Now, $d = PD + PE' = 510 - \frac{6}{5}d + 510 - \frac{17}{15}d \Longrightarrow d\left(\frac{50}{15}\right) = 1020 \Longrightarrow d = \boxed{306}$.
+ $\frac{425-d}{425} = \frac{PD}{510} \Longrightarrow PD = 510 - \frac{510}{425}d = 510 - \frac{6}{5}d$
+
+ Doing the same with $\triangle PEE'$, we find that $PE' =510 - \frac{17}{15}d$. Now, $d = PD + PE' = 510 - \frac{6}{5}d + 510 - \frac{17}{15}d \Longrightarrow d\left(\frac{50}{15}\right) = 1020 \Longrightarrow d = \boxed{306}$.
 
  
-
-
 
 
 
@@ -495,15 +456,11 @@ Define the points the same as above.
 
 
 
-
-
 \textbf{Solution 5}
 
 Refer to the diagram in solution 2; let $a^2=[E'EP]$, $b^2=[D'DP]$, and $c^2=[F'FP]$. Now, note that $[E'BD]$, $[D'DP]$, and $[E'EP]$ are similar, so through some similarities we find that $\frac{E'P}{PD}=\frac{a}{b}\implies\frac{E'D}{PD}=\frac{a+b}{b}\implies[E'BD]=b^2\left(\frac{a+b}{b}\right)^2=(a+b)^2$. Similarly, we find that $[D'AF]=(b+c)^2$ and $[F'CE]=(c+a)^2$, so $[ABC]=(a+b+c)^2$. Now, again from similarity, it follows that $\frac{d}{510}=\frac{a+b}{a+b+c}$, $\frac{d}{450}=\frac{b+c}{a+b+c}$, and $\frac{d}{425}=\frac{c+a}{a+b+c}$, so adding these together, simplifying, and solving gives $d=\frac{2}{\frac{1}{425}+\frac{1}{450}+\frac{1}{510}}=\frac{10}{\frac{1}{85}+\frac{1}{90}+\frac{1}{102}}=\frac{10}{\frac{1}{5}\left(\frac{1}{17}+\frac{1}{18}\right)+\frac{1}{102}}=\frac{10}{\frac{1}{5}\cdot\frac{35}{306}+\frac{3}{306}}$$=\frac{10}{\frac{10}{306}}=\boxed{306}$.
 
  
-
-
 
 
 
@@ -514,7 +471,9 @@ Refer to the diagram in solution 2; let $a^2=[E'EP]$, $b^2=[D'DP]$, and $c^2=[F'
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1986_9_Solution_Figure_1.png}
                     \end{figure}
-                    Refer to the diagram above. Notice that because $CE'PF$, $AF'PD$, and $BD'PE$ are parallelograms, $\overline{DD'} = 425-d$, $\overline{EE'} = 450-d$, and $\overline{FF'} = 510-d$. 
+                    
+
+ Refer to the diagram above. Notice that because $CE'PF$, $AF'PD$, and $BD'PE$ are parallelograms, $\overline{DD'} = 425-d$, $\overline{EE'} = 450-d$, and $\overline{FF'} = 510-d$. 
 
  Let $F'P = x$. Then, because $\triangle ABC \sim \triangle F'PF$, $\frac{AB}{AC}=\frac{F'P}{F'F}$, so $\frac{425}{510}=\frac{x}{510-d}$. Simplifying the LHS and cross-multiplying, we have $6x=2550-5d$. From the same triangles, we can find that $FP=\frac{18}{17}x$.
 
@@ -530,8 +489,6 @@ Refer to the diagram in solution 2; let $a^2=[E'EP]$, $b^2=[D'DP]$, and $c^2=[F'
                 (Note: I chose $F'P$ to be $x$ only because that is what I had written when originally solving. The solution would work with other choices for $x$.)
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) In a parlor game, the magician asks one of the participants to think of a three digit number $(abc)$ where $a$, $b$, and $c$ represent digits in base $10$ in the order indicated. The magician then asks this person to form the numbers $(acb)$, $(bca)$, $(bac)$, $(cab)$, and $(cba)$, to add these five numbers, and to reveal their sum, $N$. If told the value of $N$, the magician can identify the original number, $(abc)$. Play the role of the magician and determine the $(abc)$ if $N= 3194$.
@@ -555,8 +512,6 @@ Let $m$ be the number $100a+10b+c$. Observe that $3194+m=222(a+b+c)$ so
 
 
 
-
-
 \textbf{Solution 2}
 
 As in Solution 1, $3194 + m \equiv 222(a+b+c) \pmod{222}$, and so as above we get $m \equiv 136 \pmod{222}$.We can also take this equation modulo $9$; note that $m \equiv a+b+c \pmod{9}$, so
@@ -573,8 +528,6 @@ As in Solution 1, $3194 + m \equiv 222(a+b+c) \pmod{222}$, and so as above we ge
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $n=abc$ then
@@ -585,8 +538,6 @@ Let $n=abc$ then
  \[14<a+b+c<19\]Checking each of the multiples of $222$ from $15\cdot222$ to $18\cdot222$ by subtracting $N$ from each $222(a+b+c)$, we quickly find $n=\boxed{358}$
 
  
-
-
 
 
 
@@ -607,8 +558,6 @@ The sum of the five numbers is $222(a+b+c)-100a-10b-c=122a+212b+221c=122(a+b+c)+
  
 
 
-
-
 	\item (\textit{AIME I 1986}) The polynomial $1-x+x^2-x^3+\cdots+x^{16}-x^{17}$ may be written in the form $a_0+a_1y+a_2y^2+\cdots +a_{16}y^{16}+a_{17}y^{17}$, where $y=x+1$ and the $a_i$'s are constants. Find the value of $a_2$.
 
 
@@ -622,8 +571,6 @@ The sum of the five numbers is $222(a+b+c)-100a-10b-c=122a+212b+221c=122(a+b+c)+
 Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Geometric\_series}{geometric series} formula, $1 - x + x^2 + \cdots - x^{17} = \frac {1 - x^{18}}{1 + x} = \frac {1-x^{18}}{y}$. Since $x = y - 1$, this becomes $\frac {1-(y - 1)^{18}}{y}$. We want $a_2$, which is the coefficient of the $y^3$ term in $-(y - 1)^{18}$ (because the $y$ in the denominator reduces the degrees in the numerator by $1$). By the \href{https://artofproblemsolving.com/wiki/index.php?title=Binomial\_Theorem}{Binomial Theorem}, this is $(-1) \cdot (-1)^{15}{18 \choose 3} = \boxed{816}$.
 
  
-
-
 
 
 
@@ -641,8 +588,6 @@ Again, notice $x = y - 1$. So
 
 
 
-
-
 \textbf{Solution 3}
 
 Again, notice $x=y-1$. Substituting $y-1$ for $x$ in $f(x)$ gives: 
@@ -650,8 +595,6 @@ Again, notice $x=y-1$. Substituting $y-1$ for $x$ in $f(x)$ gives:
 .From binomial theorem, the coefficient of the $y^2$ term is ${2\choose 0} + {3\choose 1} + \cdots + {17\choose 15}$. This is actually the sum of the first 16 triangular numbers, which evaluates to $\frac{(16)(17)(18)}{6} = \boxed{816}$.
 
  
-
-
 
 
 
@@ -678,8 +621,6 @@ Let $f(x)=1-x+x^2-x^3+\cdots+x^{16}-x^{17}$ and $g(y)=a_0+a_1y+a_2y^2+\cdots +a_
 
 
 
-
-
 \textbf{Solution 5 (Linear Algebra)}
 
 Let $V$ be the vector space of polynomials of degree $\leq 17,$ and let $B = \{1, x, x^2, ..., x^{17} \}$ and $C = \{1, (x+1), (x+1)^2, ..., (x+1)^{17} \}$ be two bases for $V$.Let $\vec{v} \in V$ be the polynomial given in the problem, and it is easy to see that $[ \vec{v} ]_B = \langle 1, -1, 1, -1, ... , 1, -1 \rangle.$
@@ -697,8 +638,6 @@ Let $V$ be the vector space of polynomials of degree $\leq 17,$ and let $B = \{1
  -fidgetboss\_4000
 
  
-
-
 
 
 	\item (\textit{AIME I 1986}) Let the sum of a set of numbers be the sum of its elements. Let $S$ be a set of positive integers, none greater than 15. Suppose no two disjoint subsets of $S$ have the same sum. What is the largest sum a set $S$ with these properties can have?
@@ -723,8 +662,6 @@ The sum of set \( S \) is \( 15(16)/2 = 120 \).
 
 
 
-
-
 \textbf{Solution 2}
 
 By using the greedy algorithm, we obtain $\boxed{061}$, with $S=\{ 15,14,13,11,8\}$. We must now prove that no such set has sum greater than 61. Suppose such a set $S$ existed. Then $S$ must have more than 4 elements, otherwise its sum would be at most $15+14+13+12=54$.  
@@ -738,11 +675,7 @@ By using the greedy algorithm, we obtain $\boxed{061}$, with $S=\{ 15,14,13,11,8
  
 
 
- \href{https://mathproblemsolvingskills.wordpress.com/}{MathProblemSolvingSkills.com}
-
  
-
-
 
 
 	\item (\textit{AIME I 1986}) In a sequence of coin tosses, one can keep a record of instances in which a tail is immediately followed by a head, a head is immediately followed by a head, and etc. We denote these by TH, HH, and etc. For example, in the sequence TTTHHTHTTTHHTTH of 15 coin tosses we observe that there are two HH, three HT, four TH, and five TT subsequences. How many different sequences of 15 coin tosses will contain exactly two HH, three HT, four TH, and five TT subsequences?
@@ -768,8 +701,6 @@ Let's consider each of the sequences of two coin tosses as an \href{https://arto
 
 
 
-
-
 \textbf{Solution 2}
 
 We need exactly four TH subsequences, so we can place additional T's and H's between four blocks of TH:
@@ -790,8 +721,6 @@ We need exactly four TH subsequences, so we can place additional T's and H's bet
                 
 
 
-
-
 	\item (\textit{AIME I 1986}) The shortest distances between an interior \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal} of a rectangular \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelepiped}{parallelepiped}, $P$, and the edges it does not meet are $2\sqrt{5}$, $\frac{30}{\sqrt{13}}$, and $\frac{15}{\sqrt{10}}$. Determine the \href{https://artofproblemsolving.com/wiki/index.php?title=Volume}{volume} of $P$.
 
 
@@ -807,7 +736,9 @@ We need exactly four TH subsequences, so we can place additional T's and H's bet
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1986_14_Solution_Figure_1.png}
                     \end{figure}
-                    In the above diagram, we focus on the line that appears closest and is parallel to $BC$. All the blue lines are perpendicular lines to $BC$ and their other points are on $AB$, the main diagonal. The green lines are projections of the blue lines onto the bottom face; all of the green lines originate in the corner and reach out to $AC$, and have the same lengths as their corresponding blue lines. So we want to find the shortest distance between $AC$ and that corner, which is $\frac {wl}{\sqrt {w^2 + l^2}}$.
+                    
+
+ In the above diagram, we focus on the line that appears closest and is parallel to $BC$. All the blue lines are perpendicular lines to $BC$ and their other points are on $AB$, the main diagonal. The green lines are projections of the blue lines onto the bottom face; all of the green lines originate in the corner and reach out to $AC$, and have the same lengths as their corresponding blue lines. So we want to find the shortest distance between $AC$ and that corner, which is $\frac {wl}{\sqrt {w^2 + l^2}}$.
 
  So we have:
  \[\frac {lw}{\sqrt {l^2 + w^2}} = \frac {10}{\sqrt {5}}\]
@@ -831,8 +762,6 @@ We need exactly four TH subsequences, so we can place additional T's and H's bet
  
 
 
-
-
 	\item (\textit{AIME I 1986}) Let triangle $ABC$ be a right triangle in the $xy$-plane with a right angle at $C_{}$. Given that the length of the hypotenuse $AB$ is $60$, and that the medians through $A$ and $B$ lie along the lines $y=x+3$ and $y=2x+4$ respectively, find the area of triangle $ABC$.
 
 
@@ -853,7 +782,9 @@ Let $\theta_1$ be the angle that the median through $A$ makes with the positive 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1986_15_Solution_Figure_1.png}
                     \end{figure}
-                    Let $M$ be the midpoint of $BC,$ let $N$ be the midpoint of $AC,$ and let $G$ be the intersection of these two medians.  Let $BC = a,$ and let $AC = b$; let $\alpha = \angle MAC$, and let $\beta = \angle BNC$.
+                    
+
+ Let $M$ be the midpoint of $BC,$ let $N$ be the midpoint of $AC,$ and let $G$ be the intersection of these two medians.  Let $BC = a,$ and let $AC = b$; let $\alpha = \angle MAC$, and let $\beta = \angle BNC$.
 
  With this setup, $\theta = \beta - \alpha$.  The reason is that $\beta$ is an exterior angle of $\triangle AGN$, and thus $\beta = \alpha + \angle AGN = \alpha + \theta$.
 
@@ -864,8 +795,6 @@ Multiplying numerator and denominator by $b^2,$ we learn that
  \[\frac{1}{2} ab = \frac{1}{9} \cdot 60^2 = (60/3)^2 = 20^2 = 400.\]~minor edits by EaZ\_Shadow
 
  
-
-
 
 
 
@@ -889,8 +818,6 @@ Note: If you don't know the determinant product for the area of a triangle, the 
 
 
 
-
-
 \textbf{Solution 3}
 
 The only relevant part about the xy plane here is that the slopes of the medians determine an angle between them that we will use.This solution uses the tangent subtraction identity $\tan(\alpha -\beta)=\frac{\tan\alpha -\tan\beta}{1+\tan\alpha \tan\beta}$. Therefore, the tangent of the acute angle between the medians from A and B will be $\frac{2-1}{1+2 \cdot 1}= \frac{1}{3}$.
@@ -902,8 +829,6 @@ The only relevant part about the xy plane here is that the slopes of the medians
  We choose the positive root and we can plug $y= \left (\frac{9 + \sqrt{65}}{4} \right )x$ into of course the PYTHAGOREAN THEOREM $x^2 + y^2 =3600$ and solve for $x^2=200(9-\sqrt{65})$. We want the area which is $\frac{xy}{2}=\frac{x^2(\frac{9 + \sqrt{65}}{4})}{2}=\frac{200(9-\sqrt{65})(\frac{9 + \sqrt{65}}{4})}{2}=\frac{200\cdot\frac{16}{4}}{2}=400$.
 
  
-
-
 
 
 
@@ -941,8 +866,6 @@ We first seek to find the angle between the lines $y = x + 3$ and $y = 2x + 4$.
  \[\frac{m^2n^2}{100^2} = 4\]But note that the area of our triangle is $2m \cdot 2n \cdot \frac {1}{2} = 2mn$. As $mn = 200$, we get a final answer of $\boxed{400}$.
 
  
-
-
 
 
 \end{enumerate}

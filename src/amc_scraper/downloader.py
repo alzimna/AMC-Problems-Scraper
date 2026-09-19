@@ -89,8 +89,10 @@ def download_figures(download, type, contest) :
     bar = tqdm(download, desc='Progress', unit='Figure',position = 0, leave=True)
     for name,url in bar:
         if type == 'p' :
+            (FIGURE_PATH / contest / 'Problem').mkdir(parents=True,exist_ok=True)
             path = FIGURE_PATH / contest / 'Problem' / name
         else :
+            (FIGURE_PATH / contest / 'Solution').mkdir(parents=True,exist_ok=True)
             path = FIGURE_PATH / contest / 'Solution' / name
 
         if path.exists() and path.stat().st_size > 0 :

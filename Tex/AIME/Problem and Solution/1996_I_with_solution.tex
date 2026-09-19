@@ -9,6 +9,8 @@
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1996_1_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }200
 
 
@@ -37,8 +39,6 @@ Let's make a table.
 
 
 
-
-
 \textbf{Solution 2}
 
 Use the table from above. Obviously $c = 114$. Hence $a+e = 115$. Similarly, $1+a = 96 + e \Rightarrow a = 95+e$.
@@ -46,8 +46,6 @@ Use the table from above. Obviously $c = 114$. Hence $a+e = 115$. Similarly, $1+
  Substitute that into the first to get $2e = 20 \Rightarrow e=10$, so $a=105$, and so the value of $x$ is just $115+x = 210 + 105 \Rightarrow x = \boxed{200}$
 
  
-
-
 
 
 
@@ -66,8 +64,6 @@ Use the table from above. Obviously $c = 114$. Hence $a+e = 115$. Similarly, $1+
  
 
 
-
-
 	\item (\textit{AIME I 1996}) For each real number $x$, let $\lfloor x \rfloor$ denote the greatest integer that does not exceed $x$. For how many positive integers $n$ is it true that $n<1000$ and that $\lfloor \log_{2} n \rfloor$ is a positive even integer?
 
 
@@ -80,16 +76,14 @@ Use the table from above. Obviously $c = 114$. Hence $a+e = 115$. Similarly, $1+
 
 For integers $k$, we want $\lfloor \log_2 n\rfloor = 2k$, or $2k \le \log_2 n < 2k+1 \Longrightarrow 2^{2k} \le n < 2^{2k+1}$. Thus, $n$ must satisfy these \href{https://artofproblemsolving.com/wiki/index.php?title=Inequality}{inequalities} (since $n < 1000$):
 
- $4\leq n <8$
+ <div style="text-align:center;">$4\leq n <8$
 $16\leq n<32$
 $64\leq n<128$
 
 
- $256\leq n<512$There are $4$ for the first inequality, $16$ for the second, $64$ for the third, and $256$ for the fourth, so the answer is $4+16+64+256=\boxed{340}$.
+ $256\leq n<512$</div>There are $4$ for the first inequality, $16$ for the second, $64$ for the third, and $256$ for the fourth, so the answer is $4+16+64+256=\boxed{340}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) Find the smallest positive integer $n$ for which the expansion of $(xy-3x+7y-21)^n$, after like terms have been collected, has at least 1996 terms.
@@ -107,8 +101,6 @@ Using \href{https://artofproblemsolving.com/wiki/index.php?title=Simon\%27s\_Fav
  Alternatively, when $n = k$, the exponents of $x$ or $y$ in $x^i y^i$ can be any integer between $0$ and $k$ inclusive. Thus, when $n=1$, there are $(2)(2)$ terms and, when $n = k$, there are $(k+1)^2$ terms. Therefore, we need to find the smallest perfect square that is greater than $1996$. From trial and error, we get $44^2 = 1936$ and $45^2 = 2025$. Thus, $k = 45\rightarrow n = \boxed{044}$.
 
  
-
-
 
 
 
@@ -137,8 +129,6 @@ Notice that the coefficients in the problem statement have no effect on how many
  
 
 
-
-
 	\item (\textit{AIME I 1996}) A wooden cube, whose edges are one centimeter long, rests on a horizontal surface. Illuminated by a point source of light that is $x$ centimeters directly above an upper vertex, the cube casts a shadow on the horizontal surface. The area of a shadow, which does not include the area beneath the cube is 48 square centimeters. Find the greatest integer that does not exceed $1000x$.
 
 
@@ -160,8 +150,6 @@ Notice that the coefficients in the problem statement have no effect on how many
 
 
 
-
-
 \textbf{Solution (with more detail)}
 
 Let a side of the shadow base not including the side length of cube be $y$. The triangle that $y$ is part of is similar to the triangle that $x$ is part of on the same side. 
@@ -178,8 +166,6 @@ ANOTHER WAY is because we know 48 square cm is the area of the shadow, it must b
  
 
 
-
-
 	\item (\textit{AIME I 1996}) Suppose that the roots of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$.
 
 
@@ -192,15 +178,15 @@ ANOTHER WAY is because we know 48 square cm is the area of the shadow, it must b
 
 By \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's formulas} on the polynomial $P(x) = x^3+3x^2+4x-11 = (x-a)(x-b)(x-c) = 0$, we have $a + b + c = s = -3$, $ab + bc + ca = 4$, and $abc = 11$. Then
 
- $t = -(a+b)(b+c)(c+a) = -(s-a)(s-b)(s-c) = -(-3-a)(-3-b)(-3-c)$This is just the definition for $-P(-3) = \boxed{23}$.
+ $t = -(a+b)(b+c)(c+a) = -(s-a)(s-b)(s-c) = -(-3-a)(-3-b)(-3-c)$
+
+ This is just the definition for $-P(-3) = \boxed{023}$.
 
  Alternatively, we can expand the expression to get
  \begin{align*} t &= -(-3-a)(-3-b)(-3-c)\\  &= (a+3)(b+3)(c+3)\\  &= abc + 3[ab + bc + ca] + 9[a + b + c] + 27\\ t &= 11 + 3(4) + 9(-3) + 27 = 23\end{align*}
 
 
  
-
-
 
 
 
@@ -223,11 +209,9 @@ A way to realize $(a+b)(b+c)(c+a) = (ab+bc+ca)(a+b+c)-abc$:
 
  $(a + b + c)(ab + bc + ac) - abc = (-3)(4) - 11 = -23$.
 
- The value of $t$ is the negation of this, which is $-(-23) = \boxed{23}$
+ The value of $t$ is the negation of this, which is $-(-23) = \boxed{023}$
 
  
-
-
 
 
 
@@ -241,11 +225,9 @@ We have that $x^3+3x^2+4x-11=0$ for roots $a,b,c.$In the second cubic function $
 
  Seeing this, we can find the value of the product of the roots by applying this to the first equation.This can be done by setting $x'=a+3,$ so, from this, we see that we should plug in $x'-3$ for $x$ in $x^3+3x^2+4x-11=0$.
 
- After simplifying, we get that the polynomial is $x'^3 - 6x'^2 + 13x' - 23 = 0.$Given that the product of the roots of this equation is equivalent to our desired value for $t$, we can apply Vieta's formulae for a third time to find that $t = -(\frac{-23}{1}) = \boxed{23}.$
+ After simplifying, we get that the polynomial is $x'^3 - 6x'^2 + 13x' - 23 = 0.$Given that the product of the roots of this equation is equivalent to our desired value for $t$, we can apply Vieta's formulae for a third time to find that $t = -(\frac{-23}{1}) = \boxed{023}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) In a five-team tournament, each team plays one game with every other team. Each team has a $50\%$ chance of winning any game it plays. (There are no ties.) Let $\dfrac{m}{n}$ be the probability that the tournament will produce neither an undefeated team nor a winless team, where $m$ and $n$ are relatively prime integers. Find $m+n$.
@@ -280,8 +262,6 @@ We can use \href{https://artofproblemsolving.com/wiki/index.php?title=Complement
 
 
 
-
-
 \textbf{Solution 2}
 
 There are $\dbinom{5}{2} = 10$ games in total, and every game can either end in a win or a loss. Therefore, there are $2^{10} = 1024$ possible outcomes.
@@ -297,8 +277,6 @@ There are $\dbinom{5}{2} = 10$ games in total, and every game can either end in 
  Solution by Ilikeapos
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) Two squares of a $7\times 7$ checkerboard are painted yellow, and the rest are painted green. Two color schemes are equivalent if one can be obtained from the other by applying a rotation in the plane board. How many inequivalent color schemes are possible?
@@ -325,13 +303,13 @@ There are ${49 \choose 2}$ possible ways to select two squares to be painted yel
                     \end{figure}
                     </td></tr><tr><td><font style="font-size:85\%">For most pairs, there will be 
  three other equivalent boards.</font></td><td><font style="font-size:85\%">For those symmetric about the center, 
- there is only one other.</font></td></tr></tbody></table>Note that a pair of yellow squares will only yield $2$ distinct boards upon rotation \href{https://artofproblemsolving.com/wiki/index.php?title=Iff}{iff} the yellow squares are rotationally symmetric about the center square; there are $\frac{49-1}{2}=24$ such pairs. There are then ${49 \choose 2}-24$ pairs that yield $4$ distinct boards upon rotation; in other words, for each of the ${49 \choose 2}-24$ pairs, there are three other pairs that yield an equivalent board.
+ there is only one other.</font></td></tr></tbody></table>
+
+ Note that a pair of yellow squares will only yield $2$ distinct boards upon rotation \href{https://artofproblemsolving.com/wiki/index.php?title=Iff}{iff} the yellow squares are rotationally symmetric about the center square; there are $\frac{49-1}{2}=24$ such pairs. There are then ${49 \choose 2}-24$ pairs that yield $4$ distinct boards upon rotation; in other words, for each of the ${49 \choose 2}-24$ pairs, there are three other pairs that yield an equivalent board.
 
  Thus, the number of inequivalent boards is $\frac{{49 \choose 2} - 24}{4} + \frac{24}{2} = \boxed{300}$. For a $(2n+1) \times (2n+1)$ board, this argument generalizes to $n(n+1)(2n^2+2n+1)$ inequivalent configurations.
 
  
-
-
 
 
 
@@ -340,8 +318,6 @@ There are ${49 \choose 2}$ possible ways to select two squares to be painted yel
 There are 4 cases: 1. The center square is occupied, in which there are $12$ cases.2. The center square isn't occupied and the two squares that are opposite to each other with respect to the center square, in which there are $12$ cases.3. The center square isn't occupied and the two squares can rotate to each other with a $90^{\circ}$ rotation with each other and with respect to the center square, in which case there are $12$ cases.4. And finally, the two squares can't rotate to each other with respect to the center square in which case there are $\dbinom{12}{2} \cdot \frac{16}{4} = 264$ cases. Add up all the values for each case to get $\boxed{300}$ as your answer.
 
  
-
-
 
 
 
@@ -360,8 +336,6 @@ Consider the group $G=\mathbb{Z}/4\mathbb{Z}$ with addition acting on set $X$, w
  Therefore, by Burnside’s Lemma there are $\frac{1176+24+0+0}{|G|}=\frac{1200}{4}=\boxed{300}$ inequivalent configurations (also known as orbits in group-theoretic terms).
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) The harmonic mean of two positive integers is the reciprocal of the arithmetic mean of their reciprocals. For how many ordered pairs of positive integers $(x,y)$ with $x<y$ is the harmonic mean of $x$ and $y$ equal to $6^{20}$?
@@ -401,6 +375,8 @@ Refer to the chart below for a more detailed view of the lockers that are left C
  \begin{verbatim}
 Note: The general form in this chart is written differently, in the same way as Yiyj1 edited, to emphasize that the modulus is multiplied by two each time he makes a pass because he skips every other locker. 
 \end{verbatim}
+
+
 NOTICE THE PATTERNS: the least numbered and the greatest numbered lockers each change every two passes. The modulus changes every two passes as well. This speeds up calculation greatly.
 
  
@@ -416,8 +392,6 @@ For the first five passes:
 
 
 
-
-
 \textbf{Solution 2}
 
 We can also solve this with recursion. Let $L_n$ be the last locker he opens given that he started with $2^n$ lockers. Let there be $2^n$ lockers. After he first reaches the end of the hallway, there are $2^{n-1}$ lockers remaining. There is a correspondence between these unopened lockers and if he began with $2^{n-1}$ lockers. The locker $y$ (if he started with $2^{n-1}$ lockers) corresponds to the locker $2^n+2-2y$ (if he started with $2^n$ lockers). It follows that $L_{n} = 2^{n} +2 -2L_{n-1}$ as they are corresponding lockers. We can compute $L_1=2$ and use the recursion to find $L_{10}=\boxed{342}$
@@ -429,8 +403,6 @@ I will illustrate this solution with a small example, and solving using a slight
 
 
 
-
-
 \textbf{Solution 3 (bash)}
 
 List all the numbers from $1$ through $1024$, then do the process yourself!!! It will take about 25 minutes (if you don't start to see the pattern), but that's okay, eventually, you will get $\boxed{342}$.
@@ -438,8 +410,6 @@ List all the numbers from $1$ through $1024$, then do the process yourself!!! It
  (Note: If you try to do this, first look through all the problems! -Guy)
 
  
-
-
 
 
 
@@ -503,8 +473,6 @@ Note that whenever the student makes a pass starting on one end, the number at t
  
 
 
-
-
 	\item (\textit{AIME I 1996}) Find the smallest positive integer solution to $\tan{19x^{\circ}}=\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}}$.
 
 
@@ -529,8 +497,6 @@ $\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}} =$
 
 
 
-
-
 \textbf{Solution 2}
 
 $\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}} = \dfrac{1 + \tan{96^{\circ}}}{1-\tan{96^{\circ}}}$which is the same as $\dfrac{\tan{45^{\circ}} + \tan{96^{\circ}}}{1-\tan{45^{\circ}}\tan{96^{\circ}}} = \tan{141{^\circ}}$.
@@ -538,8 +504,6 @@ $\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}} = 
  So $19x = 141 +180n$, for some integer $n$.Multiplying by $19$ gives $x \equiv 141 \cdot 19 \equiv 2679 \equiv 159 \pmod{180}$.The smallest positive solution of this is $x = \boxed{159}$
 
  
-
-
 
 
 
@@ -551,8 +515,6 @@ It seems reasonable to assume that $\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\c
  \[\alpha (\cos{96^{\circ}} - \sin{96^{\circ}}) = \cos{96^{\circ}} \frac{\sqrt{2}}{2} + \sin{96^{\circ}} \frac{\sqrt{2}}{2} = \cos{96^{\circ}} \cos{45^{\circ}} + \sin{96^{\circ}} \sin{45^{\circ}} = \cos({96^{\circ}  + 45^{\circ}}) = \cos{141^{\circ}}.\]This means $\theta = 141^{\circ},$ so $19x = 141 + 180k$ for some positive integer $k$ (since the period of tangent is $180^{\circ}$), or $19 x \equiv 141 \pmod{180}$. Note that the inverse of $19$ modulo $180$ is itself as $19^2 \equiv 361 \equiv 1 \pmod {180}$, so multiplying this congruence by $19$ on both sides gives $x \equiv 2679 \equiv 159 \pmod{180}.$ For the smallest possible $x$, we take $x = \boxed{159}.$
 
  
-
-
 
 
 
@@ -583,8 +545,6 @@ Multiplying the numerator and denominator of the right-hand side by$\cos(96^{\ci
 
 
 
-
-
 \textbf{Solution 5}
 
 Notice that $\sin 45^\circ = \cos 45^\circ$. Therefore, all terms in the numerator and the denominator could be multiplied by either $\sin 45^\circ$ or $\cos 45^\circ$.
@@ -594,8 +554,6 @@ Therefore, $\tan19x^\circ = \tan 141^\circ$. In other words, $19x = 141 + 180k$ 
 Substituting $k$, the smallest value of $19x$ is $141 + 180 \cdot 16$, which is $\boxed{159}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) Let $\mathrm {P}$ be the product of the roots of $z^6+z^4+z^3+z^2+1=0$ that have a positive imaginary part, and suppose that $\mathrm {P}=r(\cos{\theta^{\circ}}+i\sin{\theta^{\circ}})$, where $0<r$ and $0\leq \theta <360$. Find $\theta$.
@@ -612,9 +570,9 @@ Substituting $k$, the smallest value of $19x$ is $141 + 180 \cdot 16$, which is 
  \begin{eqnarray*} 0 &=& z^6 - z + z^4 + z^3 + z^2 + z + 1 = z(z^5 - 1) + \frac{z^5-1}{z-1}\\ 0 &=& \frac{(z^5 - 1)(z(z-1)+1)}{z-1} = \frac{(z^2-z+1)(z^5-1)}{z-1} \end{eqnarray*}
 
  
-Thus $z^5 = 1, z \neq 1 \Longrightarrow z = \mathrm{cis}\ 72, 144, 216, 288$,
+Thus $z^5 = 1, z \neq 1 \Longrightarrow z = \mathrm{cis}\ 72, \mathrm{cis}\ 144, \mathrm{cis}\ 216, \mathrm{cis}\ 288$,
 
- or $z^2 - z + 1 = 0 \Longrightarrow z = \frac{1 \pm \sqrt{-3}}{2} = \mathrm{cis}\ 60, 300$ 
+ or $z^2 - z + 1 = 0 \Longrightarrow z = \frac{1 \pm \sqrt{-3}}{2} = \mathrm{cis}\ 60, \mathrm{cis}\ 300$ 
 
  (see \href{https://artofproblemsolving.com/wiki/index.php?title=Cis}{cis}).
 
@@ -622,7 +580,9 @@ Thus $z^5 = 1, z \neq 1 \Longrightarrow z = \mathrm{cis}\ 72, 144, 216, 288$,
 
  \begin{verbatim}
 To avoid using the quadratic formula,
-\end{verbatim}$0 = \frac{(z^5 - 1)(z(z-1)+1)}{z-1} = \frac{(z^2-z+1)(z^5-1)}{z-1} = \frac{(z^3+1)(z^5-1)}{(z+1)(z-1)}$
+\end{verbatim}
+
+$0 = \frac{(z^5 - 1)(z(z-1)+1)}{z-1} = \frac{(z^2-z+1)(z^5-1)}{z-1} = \frac{(z^3+1)(z^5-1)}{(z+1)(z-1)}$
 
  Thus $z^5 = 1, z \neq 1, -1 \Longrightarrow z = \mathrm{cis}\ 72, 144, 216, 288$,
 
@@ -636,15 +596,11 @@ To avoid using the quadratic formula,
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $w =$ the fifth \href{https://artofproblemsolving.com/wiki/index.php?title=Roots\_of\_unity}{roots of unity}, except for $1$. Then $w^6 + w^4 + w^3 + w^2 + 1 = w^4 + w^3 + w^2 + w + 1 = 0$, and since both sides have the fifth roots of unity as roots, we have $z^4 + z^3 + z^2 + z + 1  | z^6 + z^4 + z^3 + z^2 + 1$. Long division quickly gives the other factor to be $z^2 - z + 1$. The solution follows as above.
 
  
-
-
 
 
 
@@ -656,8 +612,6 @@ Divide through by $z^3$. We get the equation $z^3 + \frac {1}{z^3} + z + \frac {
 
 
 
-
-
 \textbf{Solution 4 (Fakesolve)}
 
 This is just a slight variation of Solution 1.
@@ -665,8 +619,6 @@ This is just a slight variation of Solution 1.
  We start off by adding $z^5$ to both sides, to get a neat geometric sequence with $a = 1$ and $r = z$, which gives us $\frac{z^7 - 1}{z - 1} = z^5$. From here, multiply by $z - 1$ to both sides, noting that then $z \neq \cos 0 + i\sin 0$ since, then we are multiplying by $0$ which makes it undefined. We now note that $z^7 - 1 = z^6 - z^5 \implies z^7 - z^6 + z^5 = 1$. (This is the part that it becomes almost identical to Solution 1). Factor $z^5$ from the LHS, to get $z^5( z^2 - z + 1) = 1$. Call the set of roots from $z^5$ as $A$, and set of roots from $z^2 - z + 1$ as $B$. We are to find $|A \cup B| = A + B - |A \cap B|$. (Essentially, we are to find the roots that are not common to both equations/sets, or else we are overcounting a root two times, rather than once. Try out some equation to see where this might apply) Thankfully in this case, none of the roots are overcounted. From here, proceed with Solution 1.
 
  
-
-
 
 
 
@@ -688,8 +640,6 @@ We recognize that $z^6+z^5+z^4+z^3+z^2+z+1=\frac{z^7-1}{z-1}$ and strongly wish 
 
 
 
-
-
 \textbf{Solution 6}
 
 Add 1 to both sides of the equation to get $x^6+x^4+x^3+x^2+1+1=1$. We can rearrange to find that $(x^6+x^3+1)+(x^4+x^2+1)=1$. Then, using sum of a geometric series, $\frac{x^9-1}{x^3-1}+\frac{x^6-1}{x^2-1}=1$.
@@ -702,8 +652,6 @@ Add 1 to both sides of the equation to get $x^6+x^4+x^3+x^2+1+1=1$. We can rearr
 
 
 
-
-
 \textbf{Solution 7}
 
 Take accout of the $Z^3$ and use the formula $(x^n-1)(x^m+x^{m-n}+...+1) = x^{m+n}-1$
@@ -711,8 +659,6 @@ Take accout of the $Z^3$ and use the formula $(x^n-1)(x^m+x^{m-n}+...+1) = x^{m+
  Then factorise the function to solve $Z^5=1$, $Z^3 \neq 1$, $Z^2 \neq 1$
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) For each permutation $a_1,a_2,a_3,\cdots,a_{10}$ of the integers $1,2,3,\cdots,10$, form the sum
@@ -749,8 +695,6 @@ Because of symmetry, we may find all the possible values for $|a_n - a_{n - 1}|$
 
 
 
-
-
 \textbf{Solution 2}
 
 \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{Without loss of generality}, let $a_1 > a_2;\, a_3 > a_4;\, \ldots ;\, a_9 > a_{10}$. We may do this because all sums obtained from these paired sequences are also obtained in another $2^5-1$ ways by permuting the adjacent terms $\{a_1,a_2\},\{a_3,a_4\}, \cdots , \{a_9, a_{10}\}$, and thus are canceled when the average is taken. 
@@ -767,8 +711,6 @@ Because of symmetry, we may find all the possible values for $|a_n - a_{n - 1}|$
 
 
 
-
-
 \textbf{Solution 3}
 
 Similar to Solution 1, we can find the average value of $|a_2 - a_1|$, and multiply this by 5 due to symmetry.  And again due to symmetry, we can arbitrarily choose $a_2 > a_1$.  Thus there are $\binom{10}{2} = 45$ ways to pick the two values of $a_2$ and $a_1$ from the set $\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ such that $a_2 > a_1$.  First fix $a_2 = 10$, and vary $a_1$ from $1$ to $9$.  Then fix $a_2 = 9$, and vary $a_1$ from $1$ to $8$.  Continue, and you find that the sum of these $45$ ways to pick $|a_2 - a_1|$ is:
@@ -780,8 +722,6 @@ Similar to Solution 1, we can find the average value of $|a_2 - a_1|$, and multi
  The final answer is $p+q = \boxed{058}$.
 
  
-
-
 
 
 
@@ -801,23 +741,25 @@ We use expected value of one of the sums, say $|a_2 - a_1|$, since all five are 
 
 
 
-
-
 \textbf{Solution 4a (Different Take on Same Method, Maybe Easier to Understand?)}
 
 You can also think of this as a straight number line starting at 0 and ending at 11. Pick two integers from 1 to 10, which means there will be a gap from 0 to the smaller number, the smaller number to the larger number, and the larger number to 11. The expected length of the gaps are all the same, so the length of each gap is $\frac{11}{3}$ (total distance from 0 to 11 divided by 3 gaps).
 
  \begin{verbatim}
 Why start from 0 and end at 11? This is to preserve symmetry. 
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 Let the number line start at 1 and end at 10. If the smaller number was 1 and the larger number was 10, making the greatest possible middle gap, the leftmost gap would be 0 and the rightmost gap would be 0, too. However, the smallest gap possible between the smaller number and larger number is 1 (eg. 1 and 2, 2 and 3, ...)
-\end{verbatim}\begin{verbatim}
+\end{verbatim}
+
+\begin{verbatim}
 Every gap must have a minimum size of 1, because if you don't use 0 and 11, the outer gaps are allowed to be 0, but the middle gap is forced to be at least 1. Because the middle gap has a strict head start, it is fundamentally different from the others. You can no longer divide the total evenly because the rules aren't the same. By choosing 0 and 11, every single gap now has a minimum size of exactly 1. They now share identical constraints. You're still only picking integers from 1 to 10, but the way you count the differences is even now.
-\end{verbatim}Continue as in Solution 4 to find the final answer.
+\end{verbatim}
+
+Continue as in Solution 4 to find the final answer.
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) In triangle $ABC$, $AB=\sqrt{30}$, $AC=\sqrt{6}$, and $BC=\sqrt{15}$. There is a point $D$ for which $\overline{AD}$ bisects $\overline{BC}$, and $\angle ADB$ is a right angle. The ratio
@@ -845,8 +787,6 @@ Proceed by Barycentrics. Let $D = (t : 1 : 1)$, so we want $\left|\frac{1}{t+2}\
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -854,9 +794,13 @@ Proceed by Barycentrics. Let $D = (t : 1 : 1)$, so we want $\left|\frac{1}{t+2}\
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1996_13_Solution_Figure_1.png}
                     \end{figure}
-                    Let $E$ be the midpoint of $\overline{BC}$. Since $BE = EC$, then $\triangle ABE$ and $\triangle AEC$ share the same height and have equal bases, and thus have the same area. Similarly, $\triangle BDE$ and $BAE$ share the same height, and have bases in the ratio $DE : AE$, so $\frac{[BDE]}{[BAE]} = \frac{DE}{AE}$ (see \href{https://artofproblemsolving.com/wiki/index.php?title=Area\_ratios}{area ratios}). Now,
+                    
 
- $\dfrac{[ADB]}{[ABC]} = \frac{[ABE] + [BDE]}{2[ABE]} = \frac{1}{2} + \frac{DE}{2AE}.$By \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem}, $AE = \frac{\sqrt{2(AB^2 + AC^2) - BC^2}}2 = \frac{\sqrt {57}}{2}$, and by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} on $\triangle ABD, \triangle EBD$,
+ Let $E$ be the midpoint of $\overline{BC}$. Since $BE = EC$, then $\triangle ABE$ and $\triangle AEC$ share the same height and have equal bases, and thus have the same area. Similarly, $\triangle BDE$ and $BAE$ share the same height, and have bases in the ratio $DE : AE$, so $\frac{[BDE]}{[BAE]} = \frac{DE}{AE}$ (see \href{https://artofproblemsolving.com/wiki/index.php?title=Area\_ratios}{area ratios}). Now,
+
+ $\dfrac{[ADB]}{[ABC]} = \frac{[ABE] + [BDE]}{2[ABE]} = \frac{1}{2} + \frac{DE}{2AE}.$
+
+ By \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem}, $AE = \frac{\sqrt{2(AB^2 + AC^2) - BC^2}}2 = \frac{\sqrt {57}}{2}$, and by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} on $\triangle ABD, \triangle EBD$,
 
  
  \begin{align*} BD^2 + \left(DE + \frac {\sqrt{57}}2\right)^2 &= 30 \\ BD^2 + DE^2 &= \frac{15}{4} \\ \end{align*}
@@ -871,8 +815,6 @@ Proceed by Barycentrics. Let $D = (t : 1 : 1)$, so we want $\left|\frac{1}{t+2}\
 
 
 
-
-
 \textbf{Solution 3}
 
 Because the problem asks for a ratio, we can divide each side length by $\sqrt{3}$ to make things simpler. We now have a triangle with sides $\sqrt{10}$, $\sqrt{5}$, and $\sqrt{2}$.
@@ -883,17 +825,17 @@ Because the problem asks for a ratio, we can divide each side length by $\sqrt{3
 
  Using Pythagorean theorem, we get three equations,
 
- <center>$(y+x)^2 + z^2 = 10$$(y-x)^2 + z^2 = 2$
+ $(y+x)^2 + z^2 = 10$$(y-x)^2 + z^2 = 2$
 
- $x^2 + z^2 = \frac{5}{4}$</center>Adding the first and second, we obtain $x^2 + y^2 + z^2 = 6$, and then subtracting the third from this we find that $y = \frac{\sqrt{19}}{2}$. (Note, we could have used \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} to achieve this result). 
+ $x^2 + z^2 = \frac{5}{4}$
+
+ Adding the first and second, we obtain $x^2 + y^2 + z^2 = 6$, and then subtracting the third from this we find that $y = \frac{\sqrt{19}}{2}$. (Note, we could have used \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} to achieve this result). 
 
  Subtracting the first and second, we see that $xy = 2$, and then we find that $x = \frac{4}{\sqrt{19}}$ 
 
  Using base ratios, we then quickly find that the desired ratio is $\frac{27}{38}$ so our answer is $\boxed{065}$
 
  
-
-
 
 
 
@@ -904,7 +846,9 @@ Because the problem asks for a ratio, we can divide each side length by $\sqrt{3
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1996_13_Solution_Figure_2.png}
                     \end{figure}
-                    First, extend side \(AC\) to a point \(F\) such that \(AF \perp BF\).
+                    
+
+ First, extend side \(AC\) to a point \(F\) such that \(AF \perp BF\).
 
  We begin by using the Law of Cosines to find \(\cos \angle ACB\):
  \[(\sqrt{6})^2 + (\sqrt{15})^2 - 2(\sqrt{6})(\sqrt{15})\cos \angle ACB = (\sqrt{30})^2.\]Simplifying,
@@ -950,8 +894,6 @@ Because the problem asks for a ratio, we can divide each side length by $\sqrt{3
 
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) A $150\times 324\times 375$ rectangular solid is made by gluing together $1\times 1\times 1$ cubes. An internal diagonal of this solid passes through the interiors of how many of the $1\times 1\times 1$ cubes?
@@ -1001,8 +943,6 @@ The number of cubes the diagonal passes is equal to the number of points on the 
 
 
 
-
-
 \textbf{Solution 2}
 
 Consider a point travelling across the internal diagonal, and let the internal diagonal have a length of $d$. The point enters a new unit cube in the $x,y,z$ dimensions at multiples of $\frac{d}{150}, \frac{d}{324}, \frac{d}{375}$ respectively. We proceed by using PIE.
@@ -1016,8 +956,6 @@ Consider a point travelling across the internal diagonal, and let the internal d
  The total number of unit cubes entered is then $150+324+375-[\gcd(150, 324)+\gcd(324, 375)+\gcd(375, 150)] + \gcd(150, 324, 375) = \boxed{768}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1996}) In parallelogram $ABCD,$ let $O$ be the intersection of diagonals $\overline{AC}$ and $\overline{BD}$. Angles $CAB$ and $DBC$ are each twice as large as angle $DBA,$ and angle $ACB$ is $r$ times as large as angle $AOB$. Find the greatest integer that does not exceed $1000r$.
@@ -1035,9 +973,13 @@ Consider a point travelling across the internal diagonal, and let the internal d
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1996_15_Solution_Figure_1.png}
                     \end{figure}
-                    Let $\theta = \angle DBA$. Then $\angle CAB = \angle DBC = 2\theta$, $\angle AOB = 180 - 3\theta$, and $\angle ACB = 180 - 5\theta$. Since $ABCD$ is a parallelogram, it follows that $OA = OC$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines}{Law of Sines} on $\triangle ABO,\, \triangle BCO$,
+                    
 
- $\frac{\sin \angle CBO}{OC} = \frac{\sin \angle ACB}{OB} \quad \text{and} \quad \frac{\sin \angle DBA}{OC} = \frac{\sin \angle BAC}{OB}.$Dividing the two equalities yields 
+ Let $\theta = \angle DBA$. Then $\angle CAB = \angle DBC = 2\theta$, $\angle AOB = 180 - 3\theta$, and $\angle ACB = 180 - 5\theta$. Since $ABCD$ is a parallelogram, it follows that $OA = OC$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines}{Law of Sines} on $\triangle ABO,\, \triangle BCO$,
+
+ $\frac{\sin \angle CBO}{OC} = \frac{\sin \angle ACB}{OB} \quad \text{and} \quad \frac{\sin \angle DBA}{OC} = \frac{\sin \angle BAC}{OB}.$
+
+ Dividing the two equalities yields 
 
  
  \[\frac{\sin 2\theta}{\sin \theta} = \frac{\sin (180 - 5\theta)}{\sin 2\theta} \Longrightarrow \sin^2 2\theta = \sin 5\theta \sin \theta.\]
@@ -1055,8 +997,6 @@ Consider a point travelling across the internal diagonal, and let the internal d
  The only value of $\theta$ that fits in this context comes from $4 \cos^2 2\theta - 3 = 0 \Longrightarrow \cos 2\theta = \frac{\sqrt{3}}{2} \Longrightarrow \theta = 15^{\circ}$. The answer is $\lfloor 1000r \rfloor = \left\lfloor 1000 \cdot \frac{180 - 5\theta}{180 - 3\theta} \right\rfloor = \left \lfloor \frac{7000}{9} \right \rfloor = \boxed{777}$.
 
  
-
-
 
 
 
@@ -1078,19 +1018,17 @@ Define $\theta$ as above. Since $\angle CAB = \angle CBO$, it follows that $\tri
 
 
 
-
-
 \textbf{Solution 3}
 
 We will focus on $\triangle ABC$. Let $\angle ABO = x$, so $\angle BAO = \angle OBC = 2x$. Draw the \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular} from $C$ intersecting $AB$ at $H$. \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{Without loss of generality}, let $AO = CO = 1$. Then $HO = 1$, since $O$ is the \href{https://artofproblemsolving.com/wiki/index.php?title=Circumcenter}{circumcenter} of $\triangle AHC$. Then $\angle OHA = 2x$. 
 
  By the Exterior Angle Theorem, $\angle COB = 3x$ and $\angle COH = 4x$. That implies that $\angle HOB = x$. That makes $HO = HB = 1$. Then since by AA ($\angle HBC = \angle HOC = 3x$ and reflexive on $\angle OCB$), $\triangle OCB \sim \triangle BCA$.
 
- $\frac {CO}{BC} = \frac {BC}{AC} \implies 2 = BC^2 = \implies BC = \sqrt {2}.$Then by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, $1^2 + HC^2 = \left(\sqrt {2}\right)^2\implies HC = 1$. That makes $\triangle HOC$ equilateral. Then $\angle HOC = 4x = 60 \implies x = 15$. The answer follows as above. 
+ $\frac {CO}{BC} = \frac {BC}{AC} \implies 2 = BC^2 = \implies BC = \sqrt {2}.$
+
+ Then by the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem}, $1^2 + HC^2 = \left(\sqrt {2}\right)^2\implies HC = 1$. That makes $\triangle HOC$ equilateral. Then $\angle HOC = 4x = 60 \implies x = 15$. The answer follows as above. 
 
  
-
-
 
 
 \end{enumerate}

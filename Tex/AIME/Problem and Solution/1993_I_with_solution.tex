@@ -27,8 +27,6 @@ Case $2$: Thousands digit is odd
 
 
 
-
-
 \textbf{Solution 2 by PEKKA(more elaborate)}
 
 Firstly, we notice that the thousands digit could be $4$, $5$ or $6$.Since the parity of the possibilities are different, we cannot cover all cases in one operation. Therefore, we must do casework.Case $1$: 
@@ -64,8 +62,6 @@ Firstly, we notice that the thousands digit could be $4$, $5$ or $6$.Since the p
  
 
 
-
-
 	\item (\textit{AIME I 1993}) During a recent campaign for office, a candidate made a tour of a country which we assume lies in a plane. On the first day of the tour he went east, on the second day he went north, on the third day west, on the fourth day south, on the fifth day east, etc. If the candidate went $\frac{n^{2}}{2}$ miles on the $n^{\mbox{th}}_{}$ day of this tour, how many miles was he from his starting point at the end of the $40^{\mbox{th}}_{}$ day? 
 
 
@@ -84,12 +80,12 @@ Similarly, the north/south displacement is
  
 
 
-
-
 	\item (\textit{AIME I 1993}) The table below displays some of the results of last summer's Frostbite Falls Fishing Festival, showing how many contestants caught $n\,$ fish for various values of $n\,$. 
 
 
- $\begin{array}{|c|c|c|c|c|c|c|c|c|} \hline n & 0 & 1 & 2 & 3 & \dots & 13 & 14 & 15 \\ \hline \text{number of contestants who caught} \ n \ \text{fish} & 9 & 5 & 7 & 23 & \dots & 5 & 2 & 1 \\ \hline \end{array}$In the newspaper story covering the event, it was reported that 
+ $\begin{array}{|c|c|c|c|c|c|c|c|c|} \hline n & 0 & 1 & 2 & 3 & \dots & 13 & 14 & 15 \\ \hline \text{number of contestants who caught} \ n \ \text{fish} & 9 & 5 & 7 & 23 & \dots & 5 & 2 & 1 \\ \hline \end{array}$
+
+ In the newspaper story covering the event, it was reported that 
 
 
  
@@ -110,13 +106,15 @@ Similarly, the north/south displacement is
 
 Suppose that the number of fish is $x$ and the number of contestants is $y$. The $y-(9+5+7)=y-21$ fishers that caught $3$ or more fish caught a total of $x - \left(0\cdot(9) + 1\cdot(5) + 2\cdot(7)\right) = x - 19$ fish. Since they averaged $6$ fish, 
 
- $6 = \frac{x - 19}{y - 21} \Longrightarrow x - 19 = 6y - 126.$ Similarily, those who caught $12$ or fewer fish averaged $5$ fish per person, so 
+ $6 = \frac{x - 19}{y - 21} \Longrightarrow x - 19 = 6y - 126.$
 
- $5 = \frac{x - (13(5) + 14(2) + 15(1))}{y - 8} = \frac{x - 108}{y - 8} \Longrightarrow x - 108 = 5y - 40.$ Solving the two equation system, we find that $y = 175$ and $x = \boxed{943}$, the answer.
+  Similarily, those who caught $12$ or fewer fish averaged $5$ fish per person, so 
+
+ $5 = \frac{x - (13(5) + 14(2) + 15(1))}{y - 8} = \frac{x - 108}{y - 8} \Longrightarrow x - 108 = 5y - 40.$
+
+  Solving the two equation system, we find that $y = 175$ and $x = \boxed{943}$, the answer.
 
  
-
-
 
 
 
@@ -125,8 +123,6 @@ Suppose that the number of fish is $x$ and the number of contestants is $y$. The
 Let $f$ be the total number of fish caught by the contestants who didn't catch $0, 1, 2, 3, 13, 14$, or $15$ fish and let $a$ be the number of contestants who didn't catch $0, 1, 2, 3, 13, 14$, or $15$ fish. From $\text{(b)}$, we know that $\frac{69+f+65+28+15}{a+31}=6\implies f=6a+9$. From $\text{(c)}$ we have $\frac{f+69+14+5}{a+44}=5\implies f=5a+132$. Using these two equations gets us $a=123$. Plug this back into the equation to get $f=747$. Thus, the total number of fish caught is $5+14+69+f+65+28+15=\boxed{943}$ - Heavytoothpaste
 
  
-
-
 
 
 
@@ -142,8 +138,6 @@ Let $x$ be the average number of fish caught among $n$ of those who caught $4$ t
  \[747 + 1 \cdot 5 + 2 \cdot 7 + 3 \cdot 23 + 13 \cdot 5 + 14 \cdot 2 + 15 \cdot 1 = \boxed{943}\] ~Totient4Breakfast
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) How many ordered four-tuples of integers $(a,b,c,d)\,$ with $0 < a < b < c < d < 500\,$ satisfy $a + d = b + c\,$ and $bc - ad = 93\,$?
@@ -168,8 +162,6 @@ Let $k = a + d = b + c$ so $d = k-a, b=k-c$. It follows that $(k-c)c - a(k-a) = 
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $b = a + m$ and $c = a + m + n$. From $a + d = b + c$, $d = b + c - a = a + 2m + n$. 
@@ -180,8 +172,6 @@ Let $b = a + m$ and $c = a + m + n$. From $a + d = b + c$, $d = b + c - a = a + 
  For $(m,n) = (1,92)$, we know that $0 < a < a + 1 < a + 93 < a + 94 < 500$, so there are $405$ four-tuples. For $(m,n) = (3,28)$, $0 < a < a + 3 < a + 31 < a + 34 < 500$, and there are $465$ four-tuples. In total, we have $405 + 465 = \boxed{870}$ four-tuples.
 
  
-
-
 
 
 
@@ -200,8 +190,6 @@ We can plug $93$ in for $bc - ad$ to get $186$ on the left side, and also observ
  Thus, the answer is $405 + 465 = \boxed{870}$
 
  
-
-
 
 
 
@@ -225,8 +213,6 @@ Add the two conditions together to get $a+d+ad+93=b+c+bc$. Rearranging and facto
 
 
 
-
-
 \textbf{Solution 5}
 
 Let $r = d-c$. From the equation $a+d = b+c$, we have 
@@ -243,8 +229,6 @@ Let $r = d-c$. From the equation $a+d = b+c$, we have
 
 
 
-
-
 \textbf{Solution 6}
 
 Assume $d = x+m, a = x-m, c = x+n$, and $b = x-n$. This clearly satisfies the condition that $a+d = b+c$ since ($2x = 2x$) . Now plug this into $bc-ad = 93$. You get $(x+n)(x-n) - (x+m)(x-m) = 93 \Rightarrow m^2 - n^2 = 93 \Rightarrow (m-n)(m+n) = 93$
@@ -256,8 +240,6 @@ Assume $d = x+m, a = x-m, c = x+n$, and $b = x-n$. This clearly satisfies the co
  This gives us either $47 < x < 453$ or $17 < x < 483$, and using simple counting, there are $405$ values for $x$ in the first case and $465$ values for $x$ in the second case, and hence our answer is $405+465 = \boxed{870}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) Let $P_0(x) = x^3 + 313x^2 - 77x - 8\,$.  For integers $n \ge 1\,$, define $P_n(x) = P_{n - 1}(x - n)\,$.  What is the coefficient of $x\,$ in $P_{20}(x)\,$?
@@ -289,8 +271,6 @@ Using the formula for the sum of the first $n$ numbers, $1 + 2 + \cdots + 20 = \
                 Adding up the coefficients, we get $630 \cdot 210 - 626 \cdot 210 - 77 = \boxed{763}$.
 
  
-
-
 
 
 
@@ -328,8 +308,6 @@ Denote the coefficient of term $x^m$ of polynomial $P_n(x)$ as $c_{m, n}$. We ca
  
 
 
-
-
 	\item (\textit{AIME I 1993}) What is the smallest positive integer than can be expressed as the sum of nine consecutive integers, the sum of ten consecutive integers, and the sum of eleven consecutive integers?
 
 
@@ -343,8 +321,6 @@ Denote the coefficient of term $x^m$ of polynomial $P_n(x)$ as $c_{m, n}$. We ca
 Denote the first of each of the series of consecutive integers as $a,\ b,\ c$. Therefore, $n = a + (a + 1) \ldots (a + 8) = 9a + 36 = 10b + 45 = 11c + 55$. Simplifying, $9a = 10b + 9 = 11c + 19$. The relationship between $a,\ b$ suggests that $b$ is divisible by $9$. Also, $10b -10 = 10(b-1) = 11c$, so $b-1$ is divisible by $11$. We find that the least possible value of $b = 45$, so the answer is $10(45) + 45 = 495$.
 
  
-
-
 
 
 
@@ -368,8 +344,6 @@ Let the desired integer be $n$. From the information given, it can be determined
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $n$ be the desired integer. From the given information, we have
@@ -377,8 +351,6 @@ Let $n$ be the desired integer. From the given information, we have
  here, $x,$ and $y$ are the middle terms of the sequence of 9 and 11 numbers, respectively. Similarly, we have $z$ as the 4th term of the sequence. Since, $a$ is a multiple of $9$ and $11,$ it is also a multiple of $\text{lcm}[9,11]=99.$ Hence, $a=99m,$ for some $m.$ So, we have $10z + 5 = 99m.$ It follows that $99(5) = \boxed{495}$ is the smallest integer that can be represented in such a way.
 
  
-
-
 
 
 
@@ -390,8 +362,6 @@ By the method in Solution 1, we find that the number $n$ can be written as $9a+3
 
 
 
-
-
 \textbf{Solution 5}
 
 First note that the integer clearly must be divisible by $9$ and $11$ since we can use the "let the middle number be x" trick. Let the number be $99k$ for some integer $k.$ Now let the $10$ numbers be $x,x+1, \cdots x+9.$ We have $10x+45 = 99k.$ Taking mod $5$ yields $k \equiv 0 \pmod{5}.$ Since $k$ is positive, we take $k=5$ thus obtaining $99 \cdot 5 = \boxed{495}$ as our answer.
@@ -400,8 +370,6 @@ First note that the integer clearly must be divisible by $9$ and $11$ since we c
 
 
  
-
-
 
 
 
@@ -449,8 +417,6 @@ There is a total of $P(1000,6)$ possible ordered $6$-tuples $(a_1,a_2,a_3,b_1,b_
 
 
 
-
-
 \textbf{Solution 2 (Combination)}
 
 Call the six numbers selected $x_1 > x_2 > x_3 > x_4 > x_5 > x_6$. Clearly, $x_1$ must be a dimension of the box, and $x_6$ must be a dimension of the brick. 
@@ -469,15 +435,11 @@ Call the six numbers selected $x_1 > x_2 > x_3 > x_4 > x_5 > x_6$. Clearly, $x_1
 
 
 
-
-
 \textbf{Solution 3 (Hook Length Formula)}
 
 Like Solution 2, call the six numbers selected $x_1 > x_2 > x_3 > x_4 > x_5 > x_6$. Using the Hook Length Formula, the number of valid configuration is $\frac{6!}{4\cdot3\cdot2\cdot3\cdot2}=5$. We proceed as Solution 2 does.
 
  
-
-
 
 
 
@@ -487,8 +449,6 @@ As in Solutions 2 and 3, we let $x_1>x_2>x_3>x_4>x_5>x_6$ where each $x_i$ is a 
  \[\frac{\binom{2n}{n}}{n+1}\]Thus, there are $\frac{\binom{6}{3}}{4}$ ways to pick which of $x_1,x_2,x_3,x_4,x_5,$ and $x_6$ are the dimensions of the box, and which are the dimensions of the brick, such that the condition is fulfilled.  There are $\binom{6}{3}$ total ways to choose which numbers make up the brick and box, so the probability of the condition being fulfilled is $\frac{\binom{6}{3}/4}{\binom{6}{3}}=\frac14\Longrightarrow \boxed{005}$.
 
  
-
-
 
 
 
@@ -513,8 +473,6 @@ In order (after rotation, of course), for the brick to fit in the box, we must h
  
 
 
-
-
 	\item (\textit{AIME I 1993}) Let $S\,$ be a set with six elements. In how many different ways can one select two not necessarily distinct subsets of $S\,$ so that the union of the two subsets is $S\,$?  The order of selection does not matter; for example, the pair of subsets $\{a, c\},\{b, c, d, e, f\}$ represents the same selection as the pair $\{b, c, d, e, f\},\{a, c\}.$
 
 
@@ -533,15 +491,11 @@ Call the two subsets $m$ and $n.$ For each of the elements in $S,$ we can assign
 
 
 
-
-
 \textbf{Solution 2 (Overcounting)}
 
 Given one of ${6 \choose k}$ subsets with $k$ elements, the other also has $2^k$ possibilities; this is because it must contain all of the "missing" $n - k$ elements and thus has a choice over the remaining $k.$ We want $\sum_{k = 0}^6 {6 \choose k}2^k = (2 + 1)^6 = 729$ by the Binomial Theorem. But the order of the sets doesn't matter, so we get $\dfrac{729 - 1}{2} + 1 = \boxed{365}.$
 
  
-
-
 
 
 
@@ -559,16 +513,12 @@ For all nonnegative integers $n,$ let $n$ be the number of elements in $S,$ and 
 
 
 
-
-
 \textbf{Solution 3.1 (Recursive Formula)}
 
 We evaluate $f(6)$ recursively:
  \begin{alignat*}{6} f(0)&=1, \\ f(1)&=3f(0)-1&&=2, \\ f(2)&=3f(1)-1&&=5, \\ f(3)&=3f(2)-1&&=14, \\ f(4)&=3f(3)-1&&=41, \\ f(5)&=3f(4)-1&&=122, \\ f(6)&=3f(5)-1&&=\boxed{365}. \end{alignat*}~MRENTHUSIASM
 
  
-
-
 
 
 
@@ -585,16 +535,12 @@ which resembles the result in Solutions 1 and 2. The answer is $f(6)=\boxed{365}
 
 
 
-
-
 \textbf{Solution 4 (Casework)}
 
 We can perform casework based on the number of overlapping elements. If no elements overlap, there is $\binom60=1$ way to choose the overlapping elements, and $2^{6-0}$ ways to distribute the remaining elements--each element can go in one subset or the other. We must also divide by $2$ because the order of the subsets does not matter. Proceeding similarly for the other cases, our sum is 
  \[\dbinom{6}0 \cdot 2^5+\dbinom{6}1 \cdot 2^4+\cdots +\dbinom{6}4 \cdot 2+\dbinom{6}5 \cdot 1+\dbinom{6}6 \cdot 1.\](Note that we have to be especially careful with the last case, as it does not follow the pattern of the other cases.) Adding these up gives a total of $\boxed{365}.$ 
 
  
-
-
 
 
 
@@ -615,8 +561,6 @@ Now we start computing, $0\rightarrow6$ is just $1$ case, $1\rightarrow5\mid6$ i
  Summing case by case, we have $1+12+60+150+120+21+1 = \boxed{365}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) Two thousand points are given on a circle. Label one of the points 1. From this point, count 2 points in the clockwise direction and label this point 2. From the point labeled 2, count 3 points in the clockwise direction and label this point 3. (See figure.) Continue this process until the labels $1,2,3\dots,1993\,$ are all used. Some of the points on the circle will have more than one label and some points will not have a label. What is the smallest integer that labels the same point as 1993? 
@@ -651,8 +595,6 @@ The label $1993$ will occur on the $\frac12(1993)(1994) \pmod{2000}$th point aro
 
 
 
-
-
 \textbf{Solution 2}
 
 Two labels $a$ and $b$ occur on the same point if $\ a(a+1)/2\equiv \ b(b+1)/2\pmod{2000}$. If we assume the final answer be $n$, then we have $\frac12(n)(n + 1)\equiv \frac12(1993)(1994) \pmod{2000}$.
@@ -662,8 +604,6 @@ Two labels $a$ and $b$ occur on the same point if $\ a(a+1)/2\equiv \ b(b+1)/2\p
  Which leads to four different cases: $1993-n\equiv 0\pmod{4000}$ ; $1994+n\equiv 0\pmod{4000}$ ; $1993-n\equiv 0\pmod{32}$ and $1994+n\equiv 0\pmod{125}$ ; $1993-n\equiv 0\pmod{125}$ and $1994+n\equiv 0\pmod{32}$. Which leads to $n\equiv 1993,2006,3881$ and $118\pmod{4000}$ respectively, and only $n=118$ satisfied.Therefore answer is $\boxed{118}$.(by ZJY)
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) Euler's formula states that for a convex polyhedron with $V\,$ vertices, $E\,$ edges, and $F\,$ faces, $V-E+F=2\,$. A particular convex polyhedron has 32 faces, each of which is either a triangle or a pentagon. At each of its $V\,$ vertices, $T\,$ triangular faces and $P^{}_{}$ pentagonal faces meet. What is the value of $100P+10T+V\,$? 
@@ -684,8 +624,6 @@ The convex polyhedron of the problem can be easily visualized; it corresponds to
 
 
 
-
-
 \textbf{Solution 2}
 
 As seen above, $E=V+30$. Every vertex $V$, there is a triangle for every $T$ and a pentagon for every $P$ by the given. However, there are three times every triangle will be counted and five times every pentagon will be counted because of their numbers of vertices. From this observation, $\frac{VT}3+\frac{VP}5=32\implies V(5T+3P)=480$. Also, at every vertex $V$, there are $T+P$ edges coming out from that vertex (one way to see this is to imagine the leftmost segment of each triangle and pentagon that is connected to the given vertex, and note that it includes every one of the edges exactly once), so $\frac{V(T+P)}2=E\implies V(T+P)=2E\implies V(5T+5P)=10E$, and subtracting the other equation involving the vertices from this gives$2VP=10E-480\implies VP=5E-240=5(V+30)-240=5V-90$$\implies V(5-P)=90$. Since $V|480$ from the first vertex-related observation and $P>0\implies5-P<5$, and it quickly follows that $V=30\implies E=60\implies P=2\implies T=2\implies100P+10T+V=\boxed{250}$.
@@ -694,8 +632,6 @@ As seen above, $E=V+30$. Every vertex $V$, there is a triangle for every $T$ and
 
 
  
-
-
 
 
 
@@ -711,8 +647,6 @@ Notice that at each human, we must have the sum of the angles be less than $360$
 
 
 
-
-
 \textbf{Solution 4}
 
 We know that $V-E = -30 \implies V = E-30$ based off the problem condition. Furthermore, if we draw out a few pentagons as well as triangles on each of side of the pentagons, it's clear that each vertex has 4 edges connected to it, with two triangles and two pentagons for each vertex. However, each edge is used for two vertices and thus counted twice. Therefore, we have that $E = \frac{4V}{2} = 2V$. Plugging this in, we have that $V=30$ and so our answer is $200+20+30 = \boxed{250}$.
@@ -720,8 +654,6 @@ We know that $V-E = -30 \implies V = E-30$ based off the problem condition. Furt
  \textbf{Note} The solid described in this problem is an icosidodecahedron.
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) Alfred and Bonnie play a game in which they take turns tossing a fair coin. The winner of a game is the first person to obtain a head. Alfred and Bonnie play this game several times with the stipulation that the loser of a game goes first in the next game. Suppose that Alfred goes first in the first game, and that the probability that he wins the sixth game is $m/n\,$, where $m\,$ and $n\,$ are relatively prime positive integers. What are the last three digits of $m+n\,$? 
@@ -763,8 +695,6 @@ The probability that the $n$th flip in each game occurs and is a head is $\frac{
  \textbf{Simpler Solution 1} Same as solution 1 except that $b_n=1-a_n$. So you don't need that extra calculation for $b_n$.
 
  
-
-
 
 
 
@@ -826,8 +756,6 @@ In order to begin this problem, we need to calculate the probability that Alfred
 
 
 
-
-
 \textbf{Solution 3}
 
 Rather than categorizing games as wins or losses, we can categorize them as starters (S), where Alfred starts, and non-starters (NS), where Bonnie starts. Game 1 is a starter, and since Alfred must win Game 6, Game 7 is a non-starter.
@@ -845,8 +773,6 @@ Rather than categorizing games as wins or losses, we can categorize them as star
  Add up all these probabilities to get $\frac{12+160+192}{729} = \frac{364}{729}$.   $364+729=1093$, so the answer is $\boxed{093}$.
 
  
-
-
 
 
 
@@ -876,8 +802,6 @@ In states problems like this, it is always good to find a relation between the f
  
 
 
-
-
 	\item (\textit{AIME I 1993}) The vertices of $\triangle ABC$ are $A = (0,0)\,$, $B = (0,420)\,$, and $C = (560,0)\,$.  The six faces of a die are labeled with two $A\,$'s, two $B\,$'s, and two $C\,$'s.  Point $P_1 = (k,m)\,$ is chosen in the interior of $\triangle ABC$, and points $P_2\,$, $P_3\,$, $P_4, \dots$ are generated by rolling the die repeatedly and applying the rule: If the die shows label $L\,$, where $L \in \{A, B, C\}$, and $P_n\,$ is the most recently obtained point, then $P_{n + 1}^{}$ is the midpoint of $\overline{P_n L}$.  Given that $P_7 = (14,92)\,$, what is $k + m\,$?
 
 
@@ -895,8 +819,6 @@ If we have points $(p,q)$ and $(r,s)$ and we want to find $(u,v)$ so $(r,s)$ is 
  So the answer is $\boxed{344}$.
 
  
-
-
 
 
 
@@ -957,8 +879,6 @@ Now, considering the $y$ coordinate, note that if any of $L_2,L_3,L_4$ are $(0,0
  
 
 
-
-
 	\item (\textit{AIME I 1993}) Jenny and Kenny are walking in the same direction, Kenny at 3 feet per second and Jenny at 1 foot per second, on parallel paths that are 200 feet apart. A tall circular building 100 feet in diameter is centered midway between the paths. At the instant when the building first blocks the line of sight between Jenny and Kenny, they are 200 feet apart. Let $t\,$ be the amount of time, in seconds, before Jenny and Kenny can see each other again. If $t\,$ is written as a fraction in lowest terms, what is the sum of the numerator and denominator?
 
 
@@ -981,8 +901,6 @@ Consider the unit cicle of radius 50. Assume that they start at points $(-50,100
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $A$ and $B$ be Kenny's initial and final points respectively and define $C$ and $D$ similarly for Jenny. Let $O$ be the center of the building. Also, let $X$ be the intersection of $AC$ and $BD$. Finaly, let $P$ and $Q$ be the points of tangency of circle $O$ to $AC$ and $BD$ respectively.  
@@ -992,7 +910,9 @@ Let $A$ and $B$ be Kenny's initial and final points respectively and define $C$ 
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1993_13_Solution_Figure_1.png}
                     \end{figure}
-                    From the problem statement, $AB=3t$, and $CD=t$. Since $\Delta ABX \sim \Delta CDX$, $CX=AC\cdot\left(\frac{CD}{AB-CD}\right)=200\cdot\left(\frac{t}{3t-t}\right)=100$. 
+                    
+
+ From the problem statement, $AB=3t$, and $CD=t$. Since $\Delta ABX \sim \Delta CDX$, $CX=AC\cdot\left(\frac{CD}{AB-CD}\right)=200\cdot\left(\frac{t}{3t-t}\right)=100$. 
 
  Since $PC=100$, $PX=200$. So, $\tan(\angle OXP)=\frac{OP}{PX}=\frac{50}{200}=\frac{1}{4}$. 
 
@@ -1003,8 +923,6 @@ Let $A$ and $B$ be Kenny's initial and final points respectively and define $C$ 
  Therefore, $t = CD = CX\cdot\tan(\angle BXA) = 100 \cdot \frac{8}{15} = \frac{160}{3}$, and the answer is $\boxed{163}$.
 
  
-
-
 
 
 
@@ -1038,8 +956,6 @@ And we obtain
  so we have $t=\frac{160}{3}$, and our answer is thus $160+3=\boxed{163}$.
 
  
-
-
 
 
 
@@ -1078,8 +994,6 @@ We can use areas to find the answer. Since Jenny and Kenny are 200 feet apart, w
 
 
 
-
-
 \textbf{Solution 5}
 
 
@@ -1098,16 +1012,12 @@ We can use areas to find the answer. Since Jenny and Kenny are 200 feet apart, w
 
 
 
-
-
 \textbf{Solution 6}
 
 Let the point where Jenny started be $A = (0,0)$. Then let $D = (t,0)$ the point Jenny is when she can see Kenny. Similarly, let $B = (0,200)$ be where Kenny started, and let $C = (3t,200)$ the point Kenny is when she can see Jenny. Then the equation of the line passing through $C, D$ is $100x-ty-100t=0$. Now, note that the center of the building is at $O = (50,100)$, and the distance from $O$ to $CD$ is $50$, so, using the distance from a point to a line formula, we get 
  \[\frac{|100\cdot50-100a-100a|}{\sqrt{10000+a^2}} = 50,\]which simplifies to $15a^2-800a = 0$ from clearing denominators, squaring to remove absolute value and radical, then cancelling and rearranging. But this is equivalent to $a = \frac{160}{3}$, so our answer is $\boxed{163}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) A rectangle that is inscribed in a larger rectangle (with one vertex on each side) is called \textit{unstuck} if it is possible to rotate (however slightly) the smaller rectangle about its center within the confines of the larger. Of all the rectangles that can be inscribed unstuck in a 6 by 8 rectangle, the smallest perimeter has the form $\sqrt{N}\,$, for a positive integer $N\,$. Find $N\,$.
@@ -1141,15 +1051,11 @@ Put the rectangle on the coordinate plane so its vertices are at $(\pm4,\pm3)$, 
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that the diagonal of the rectangle with minimum perimeter must have the diagonal along the middle segment of length 8 of the rectangle (any other inscribed rectangle can be rotated a bit, then made smaller; this one can't because then the rectangle cannot be inscribed since its longest diagonal is less than 8 in length). Then since a rectangle must have right angles, we draw a circle of radius 4 around the center of the rectangle. Picking the two midpoints on the sides of length 6 and opposite intersection points on the segments of length 8, we form a rectangle. Let $a$ and $b$ be the sides of the rectangle. Then $ab = 3(8) = 24$ since both are twice the area of the same right triangle, and $a^2+b^2 = 64$. So $(a+b)^2 = 64+2(24) = 112$, so $2(a+b) = \sqrt{\boxed{448}}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1993}) Let $\overline{CH}$ be an altitude of $\triangle ABC$. Let $R\,$ and $S\,$ be the points where the circles inscribed in the triangles $ACH\,$ and $BCH^{}_{}$ are tangent to $\overline{CH}$. If $AB = 1995\,$, $AC = 1994\,$, and $BC = 1993\,$, then $RS\,$ can be expressed as $m/n\,$, where $m\,$ and $n\,$ are relatively prime integers. Find $m + n\,$.
@@ -1208,8 +1114,6 @@ Now note that $RS=|HR-HS|$, $RH=\frac{AH+CH-AC}{2}$, and $HS=\frac{CH+BH-BC}{2}$
  Note: We can also just write it as $RS=\frac{|b-a|(a+b-c)}{2c}$ since $a+b-c \geq 0$ by the triangle inequality. ~\href{https://artofproblemsolving.com/wiki/index.php?title=User:Yiyj1&action=edit&redlink=1}{Yiyj1}
 
  
-
-
 
 
 \end{enumerate}

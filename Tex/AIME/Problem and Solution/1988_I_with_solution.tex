@@ -9,6 +9,8 @@
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1988_1_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }770
 
 
@@ -23,8 +25,6 @@ Note: A simpler way of thinking to get $2^{10}$ is thinking that each button has
  to be white.
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) For any positive integer $k$, let $f_1(k)$ denote the square of the sum of the digits of $k$.  For $n \ge 2$, let $f_n(k) = f_1(f_{n - 1}(k))$.  Find $f_{1988}(11)$.
@@ -54,8 +54,6 @@ We see that $f_{1}(11)=4$
  
 
 
-
-
 	\item (\textit{AIME I 1988}) Find $(\log_2 x)^2$ if $\log_2 (\log_8 x) = \log_8 (\log_2 x)$.
 
 
@@ -78,8 +76,6 @@ Raise both as \href{https://artofproblemsolving.com/wiki/index.php?title=Exponen
 
 
 
-
-
 \textbf{Solution 2: Substitution}
 
 We wish to convert this expression into one which has a uniform base. Let's scale down all the powers of 8 to 2. 
@@ -94,8 +90,6 @@ Solving, we get $y^2 = 27$, which is what we want. $\boxed{27}$
  Just a quick note- In this solution, we used 2 important rules of logarithm:1) $\log_a b^n=n\log_a b$.2) $\log_{a^n} b=\frac{1}{n}\log_a b$.
 
  
-
-
 
 
 
@@ -114,8 +108,6 @@ Now setting $y=\log_2x$, we have
 
 
 
-
-
 \textbf{Solution 4}
 
 Say that $\log_{2^3}x=a$ and $\log_2x=b$ so we have $\log_2a=\log_{2^3}b$. And we want $b^2$.
@@ -131,12 +123,12 @@ Say that $\log_{2^3}x=a$ and $\log_2x=b$ so we have $\log_2a=\log_{2^3}b$. And w
  
 
 
-
-
 	\item (\textit{AIME I 1988}) Suppose that $|x_i| < 1$ for $i = 1, 2, \dots, n$. Suppose further that
 
 
- $|x_1| + |x_2| + \dots + |x_n| = 19 + |x_1 + x_2 + \dots + x_n|$.What is the smallest possible value of $n$?
+ $|x_1| + |x_2| + \dots + |x_n| = 19 + |x_1 + x_2 + \dots + x_n|$.
+
+ What is the smallest possible value of $n$?
 
 
  
@@ -160,15 +152,11 @@ Since $|x_i| < 1$ then
 
 
 
-
-
 \textbf{Solution 2 (Motivating solution)}
 
 First off, one can test $1,-1,1$ and find that the $LHS$ is $3$ and the RHS is $1.$ Similarly testing $1,-1,-1,1$ yields $4$ on the LHS and $0$ on the RHS. It seems for every negative we gain twice of that negative on the LHS. However, when we test something like $1,-1,-1,-1,1$ we find the LHS to be $5$ and the RHS to be $1.$ What happened? There were more negatives than positives. Why does this mean that the LHS doesn't grow? There aren't enough positives to "cancel out!" Therefore if for every negative we need a positive for it to cancel out to grow. We can make the $LHS$ grow by approximately $2$ every time we choose a negative and a positive, so if we have $20$ numbers, namely $10$ positive and $10$ negative we can obtain the desired answer.
 
  
-
-
 
 
 
@@ -180,15 +168,11 @@ Straight off, we notice that the RHS must be greater than or equal to 19, becaus
 
 
 
-
-
 \textbf{Solution 4 (Similar to 3)}
 
 Note as long as $x_i < 1$ then we can set two terms $x_i, x_j$ as opposites on the number line and the result follows. That then implies for all even $n$ that $|x_1+\dots+x_n| + 19 = 19$ hence $\sum |x_i| \geq 19$. Equality holds if all $x_i = 1$ but we have the property $x_i < 1$. So, we must account for this with one more term $x_i$ making $n = \boxed{20} \quad \square$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) Let $\frac{m}{n}$, in lowest terms, be the probability that a randomly chosen positive divisor of $10^{99}$ is an integer multiple of $10^{88}$. Find $m + n$.
@@ -207,15 +191,11 @@ $10^{99} = 2^{99}5^{99}$, so it has $(99 + 1)(99 + 1) = 10000$ factors. Out of t
 
 
 
-
-
 \textbf{Solution 2}
 
 Like before there are \( (99+1)(99+1) = 100^2 = 10,000 \) positive divisors of \( 10^{99} \). Now we calculate the cases that satisfy the conditions. Notice that every multiple must be in the form \( 2^i 5^j \), where \( 88 \le i, j \le 99 \). Then, there are \( 12 \) choices for both \( i \) and \( j \). We can have any combination of \( i \) and \( j \) together, giving us \( 144 \) favorable outcomes. Thus our probability is \( \frac{144}{10,000} \), or \( \frac{9}{625} \), in which \( \frac{m}{n} = \frac{9}{625} \). Thus, \( m+n = 9+625 = \boxed{634} \)
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) It is possible to place positive integers into the vacant twenty-one squares of the 5 times 5 square shown below so that the numbers in each row and column form arithmetic sequences. Find the number that must occupy the vacant square marked by the asterisk (*).
@@ -227,6 +207,8 @@ Like before there are \( (99+1)(99+1) = 100^2 = 10,000 \) positive divisors of \
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1988_6_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }142
 
 
@@ -253,8 +235,6 @@ Let the coordinates of the square at the bottom left be $(0,0)$, the square to t
 
 
 
-
-
 \textbf{Solution 2 (general)}
 
 First, let $a =$ the number to be placed in the first column, fourth row.  Let $b =$ the number to be placed in the second column, fifth row.  We can determine the entire first column and fifth row in terms of $a$ and $b$:
@@ -271,15 +251,13 @@ First, let $a =$ the number to be placed in the first column, fourth row.  Let $
 
  We now have a system of equations.
 
- $3a + b + 3c = 74$
+ <div style="text-align:center;">$3a + b + 3c = 74$
 $2a + 4b + 8c = 186$
 
 
- $a + 2b + 2c = 103$Solving, we find that $(a,b,c) = (13,50, - 5)$.  The number in the square marked by the asterisk is $4a + 3b + 12c = \boxed{142}$
+ $a + 2b + 2c = 103$</div>Solving, we find that $(a,b,c) = (13,50, - 5)$.  The number in the square marked by the asterisk is $4a + 3b + 12c = \boxed{142}$
 
  
-
-
 
 
 
@@ -300,8 +278,6 @@ We begin with the table that was given to us and add in the following arithmetic
  
 
 
-
-
 	\item (\textit{AIME I 1988}) In triangle $ABC$, $\tan \angle CAB = 22/7$, and the altitude from $A$ divides $BC$ into segments of length $3$ and $17$. What is the area of triangle $ABC$?
 
 
@@ -317,13 +293,13 @@ We begin with the table that was given to us and add in the following arithmetic
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1988_7_Solution_Figure_1.png}
                     \end{figure}
-                    Call $\angle BAD$ $\alpha$ and $\angle CAD$ $\beta$. So, $\tan \alpha = \frac {17}{h}$ and $\tan \beta = \frac {3}{h}$. Using the tangent addition formula $\tan (\alpha + \beta) = \dfrac {\tan \alpha + \tan \beta}{1 - \tan \alpha \cdot \tan \beta}$, we get $\tan (\alpha + \beta) = \dfrac {\frac {20}{h}}{\frac {h^2 - 51}{h^2}} = \frac {22}{7}$. 
+                    
+
+ Call $\angle BAD$ $\alpha$ and $\angle CAD$ $\beta$. So, $\tan \alpha = \frac {17}{h}$ and $\tan \beta = \frac {3}{h}$. Using the tangent addition formula $\tan (\alpha + \beta) = \dfrac {\tan \alpha + \tan \beta}{1 - \tan \alpha \cdot \tan \beta}$, we get $\tan (\alpha + \beta) = \dfrac {\frac {20}{h}}{\frac {h^2 - 51}{h^2}} = \frac {22}{7}$. 
 
  Simplifying, we get $\frac {20h}{h^2 - 51} = \frac {22}{7}$. Cross-multiplying and simplifying, we get $11h^2-70h-561 = 0$. Factoring, we get $(11h+51)(h-11) = 0$, so we take the positive positive solution, which is $h = 11$. Therefore, the answer is $\frac {20 \cdot 11}{2} = 110$, so the answer is $\boxed {110}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) The function $f$, defined on the set of ordered pairs of positive integers, satisfies the following properties:
@@ -349,8 +325,6 @@ Using the properties of $f,$ we have
 
 
 
-
-
 \textbf{Solution 2 (Algebra)}
 
 Since all of the function's properties contain a recursive definition except for the first one, we know that $f(x,x) = x$ in order to obtain an integer answer. So, we have to transform $f(14,52)$ to this form by exploiting the other properties. The second one doesn't help us immediately, so we will use the third one. 
@@ -363,8 +337,6 @@ Since all of the function's properties contain a recursive definition except for
 
 
  
-
-
 
 
 
@@ -395,8 +367,6 @@ Hence, $f(x,y) = \mathrm{lcm}(x,y)$ is a solution to the functional equation.
  
 
 
-
-
 	\item (\textit{AIME I 1988}) Find the smallest positive integer whose \href{https://artofproblemsolving.com/wiki/index.php?title=Perfect\_cube}{cube} ends in $888$.
 
 
@@ -419,8 +389,6 @@ A little bit of checking tells us that the units digit must be 2. Now our cube m
 
 
 
-
-
 \textbf{Solution 2}
 
 $n^3 \equiv 888 \pmod{1000} \implies n^3 \equiv 0 \pmod 8$ and $n^3 \equiv 13 \pmod{125}$.$n \equiv 2 \pmod 5$ due to the last digit of $n^3$. Let $n = 5a + 2$. By expanding, $125a^3 + 150a^2 + 60a + 8 \equiv 13 \pmod{125} \implies 5a^2 + 12a \equiv 1 \pmod{25}$. 
@@ -435,8 +403,6 @@ $n^3 \equiv 888 \pmod{1000} \implies n^3 \equiv 0 \pmod 8$ and $n^3 \equiv 13 \p
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $x^3 = 1000a + 888$. We factor an $8$ out of the right hand side, and we note that $x$ must be of the form $x = 2y$, where $y$ is a positive integer. Then, this becomes $y^3 = 125a + 111$. Taking mod $5$, $25$, and $125$, we get $y^3 \equiv 1\pmod 5$, $y^3 \equiv 11\pmod{25}$, and $y^3 \equiv 111\pmod{125}$. 
@@ -444,8 +410,6 @@ Let $x^3 = 1000a + 888$. We factor an $8$ out of the right hand side, and we not
  We can work our way up, and find that $y\equiv 1\pmod 5$, $y\equiv 21\pmod{25}$, and finally $y\equiv 96\pmod{125}$. This gives us our smallest value, $y = 96$, so $x = \boxed{192}$, as desired. - Spacesam
 
  
-
-
 
 
 
@@ -464,8 +428,6 @@ Let this integer be $x.$ Note that
 
 
 
-
-
 \textbf{Solution 5}
 
 This number is in the form of $10k+2$, after binomial expansion, we only want $600k^2+120k\equiv 880 \pmod{1000}$. We realize that $600,120$ are both multiples of $8$, we only need that $600k^2+120k \equiv 5\pmod{125}$, so we write $600k^2+120k=125x+5; 120k^2+24k=25x+1, 24(5k^2+k)=25x+1, 5k^2+k\equiv -1\pmod{25}$
@@ -473,8 +435,6 @@ This number is in the form of $10k+2$, after binomial expansion, we only want $6
  Then, we write $5k^2+k=25m-1, 5k^2+k+1=25m$ so $k+1$ must be a multiple of $5$ at least, so $k\equiv {-1, -6, -11, -16, -21} \pmod {25}$ after checking, when $k=-6, 5k^2+k+1=175=25\cdot 7$. So $k\equiv -6 \pmod{25}$, smallest $k=19$, the number is $\boxed{192}$
 
  
-
-
 
 
 
@@ -489,8 +449,6 @@ We do know the unit digit has to be 2, So lets consider the number of the form o
  Therefore the smallest number is 192.~ Dubey619
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) A convex polyhedron has for its faces 12 squares, 8 regular hexagons, and 6 regular octagons. At each vertex of the polyhedron one square, one hexagon, and one octagon meet. How many segments joining vertices of the polyhedron lie in the interior of the polyhedron rather than along an edge or a face?
@@ -524,102 +482,19 @@ The polyhedron described looks like this, a truncated cuboctahedron.
 
 
 
-
-
 \textbf{Solution 2}
 
-We first find the number of vertices on the polyhedron:There are 4 corners per square, 6 corners per hexagon, and 8 corners per octagon. Each vertex is where 3 corners coincide, so we count the corners and divide by 3.  $\text{vertices} = \frac{12 \cdot 4 + 8 \cdot 6 + 6 \cdot 8}{3}=48$.
-
- We know that all vertices look the same (from the problem statement), so we should find the number of line segments originating from a vertex, and multiply that by the number of vertices, and divide by 2 (because each space diagonal is counted twice because it has two endpoints).
-
- Counting the vertices that are on the same face as an arbitrary vertex, we find that there are 13 vertices that aren't possible endpoints of a line originating from the vertex in the middle of the diagram. You can draw a diagram to count this better: 
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1988_10_Solution_Figure_2.png}
-                    \end{figure}
-                     Since 13 aren't possible endpoints, that means that there are 35 possible endpoints per vertex.The total number of segments joining vertices that aren't on the same face is $48\cdot 35\cdot \frac 12 = 24 \cdot 35 = \boxed{840}$
+We first find the number of vertices on the polyhedron:There are 4 corners per square, 6 corners per hexagon, and 8 corners per octagon. Each vertex is where 3 corners coincide, so
 
  
-
-
-
-
-
-\textbf{Solution 3}
-
-Since at each vertex there is one square, one hexagon, and one octagon that meet, then there are a total of $12 \cdot 4 = 8 \cdot 6 = 6 \cdot 8 = 48$ vertices. This means that for each segment we have $48$ choices of vertices for the first endpoint of the segment.
-
- 
-Since each vertex is the meeting point of a square, octagon, and hexagon, then there are $3$ other vertices of the square that are not the first one, and connecting the first point to any of these would result in a segment that lies on a face or edge. 
-
- 
-Similarly, there are $5$ points on the adjacent hexagon and $7$ points on adjoining octagon that, when connected to the first point, would result in a diagonal or edge. 
-
- 
-However, the square and hexagon share a vertex, as do the square and octagon, and the hexagon and octagon. 
-
- 
-Subtracting these from the $47$ vertices we have left to choose from, and adding the $3$ that we counted twice, we get
-
- 
- \[48 \cdot (47 - 3 - 5 - 7 + 3) = 48 \cdot 35 = 1680\] 
-
- We over-counted, however, as choosing vertex $A$ then $B$ is the same thing as choosing $B$ then $A$, so we must divide $1680 / 2 = \boxed{840}$.
-
- 
-
-
- 
-
-
- Alternatively, we could have noted from the diagram: 
-
- 
-
-
-  
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1988_10_Solution_Figure_2.png}
-                    \end{figure}
-                     
-Our first choice would be the vertex in the middle (there are $48$ of these), and our second choice would be any of the remaining 47 points minus the 12 that share a face without chosen vertex. Summing these we get 
- \[48 (47 - 12) = 1680\] And we divide by $2$ as before to get $\boxed{840}$
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-In the same ways as above, we find that there are 48 vertices. Now, notice that there are $\binom{48}{2}$ total possible ways to choose two vertices. However, we must remove the cases where the segments do not lie in the interior of the polyhedron. We get
-
- 
- \[\binom{48}{2}-12\binom{4}{2}-8\binom{6}{2}-6\binom{8}{2}=768\]
-
- We remover all the possible edges of the squares, hexagons, and octagons. However, we have undercounted! We must add back the number of edges because when we subtracted the three binomials from $\binom{48}{2}$ we removed each edge twice (each edge is shared by two polygons). This means that we need to add back the number of edges, 72. Thus, we get $768+72=\boxed{840}$.
-
- 
-
-
-
-
-
-\textbf{Solution 5}
-
-We can also use Euler's formula to find the number of vertices. For any polyhedron, it holds that $V - E + F = 2$. There are $12 + 8 + 6 = 26$ faces. Additionally, the shapes in total have $4 \cdot 12 + 6 \cdot 8 + 8 \cdot 6 = 144$ edges. At an edge of the polyhedron, exactly two of these edges coincide, so we divide by $2$ to get $\frac{144}{2} = 72$. Plugging in our numbers, we have that $V - 72 + 26 = 2$. When solved, this gives $V = 48$. Proceed using any of the methods above.
-
- 
-
-
 
 
 	\item (\textit{AIME I 1988}) Let $w_1, w_2, \dots, w_n$ be complex numbers. A line $L$ in the complex plane is called a mean line for the points $w_1, w_2, \dots, w_n$ if $L$ contains points (complex numbers) $z_1, z_2, \dots, z_n$ such that
 
 
- $\sum_{k = 1}^n (z_k - w_k) = 0.$For the numbers $w_1 = 32 + 170i$, $w_2 = -7 + 64i$, $w_3 = -9 +200i$, $w_4 = 1 + 27i$, and $w_5 = -14 + 43i$, there is a unique mean line with y-intercept $3$. Find the slope of this mean line.
+ $\sum_{k = 1}^n (z_k - w_k) = 0.$
+
+ For the numbers $w_1 = 32 + 170i$, $w_2 = -7 + 64i$, $w_3 = -9 +200i$, $w_4 = 1 + 27i$, and $w_5 = -14 + 43i$, there is a unique mean line with y-intercept $3$. Find the slope of this mean line.
 
 
  
@@ -642,8 +517,6 @@ $\sum_{k=1}^5 z_k - \sum_{k=1}^5 w_k = 0$
  Matching the real parts and the imaginary parts, we get that $\sum_{k=1}^5 x_k = 3$ and $\sum_{k=1}^5 (mx_k + 3) = 504$. Simplifying the second summation, we find that $m\sum_{k=1}^5 x_k = 504 - 3 \cdot 5 = 489$, and substituting, the answer is $m \cdot 3 = 489 \Longrightarrow m = 163$.
 
  
-
-
 
 
 
@@ -673,15 +546,11 @@ We know that
 
 
 
-
-
 \textbf{Solution 3}
 
 The mean line for $w_1, . . ., w_5$ must pass through the mean (the center of mass) of these points, which, if we graph them on the complex plane, is $(\frac{3}{5}, \frac{504i}{5})$. Since we now have two points, namely that one and $(0, 3i)$, we can simply find the slope between them, which is $\boxed{163}$ by the good ol' slope formula.
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) Let $P$ be an interior point of triangle $ABC$ and extend lines from the vertices through $P$ to the opposite sides. Let $a$, $b$, $c$, and $d$ denote the lengths of the segments indicated in the figure. Find the product $abc$ if $a + b + c = 43$ and $d = 3$. 
@@ -693,6 +562,8 @@ The mean line for $w_1, . . ., w_5$ must pass through the mean (the center of ma
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1988_12_Problem_Figure_1.png}
                     \end{figure}
                     
+
+ 
  \textbf{Answer: }441
 
 
@@ -718,63 +589,6 @@ Call the \href{https://artofproblemsolving.com/wiki/index.php?title=Cevian}{cevi
  \[9(a + b + c) + 54 = abc=\boxed{441}\]
 
  
-
-
-
-
-
-\textbf{Solution 2}
-
-Let $A,B,C$ be the weights of the respective vertices. We see that the weights of the feet of the cevians are $A+B,B+C,C+A$. By \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{mass points}, we have that: 
- \[\dfrac{a}{3}=\dfrac{B+C}{A}\] 
- \[\dfrac{b}{3}=\dfrac{C+A}{B}\] 
- \[\dfrac{c}{3}=\dfrac{A+B}{C}\]
-
- If we add the equations together, we get $\frac{a+b+c}{3}=\frac{A^2B+A^2C+B^2A+B^2C+C^2A+C^2B}{ABC}=\frac{43}{3}$
-
- If we multiply them together, we get $\frac{abc}{27}=\frac{A^2B+A^2C+B^2A+B^2C+C^2A+C^2B+2ABC}{ABC}=\frac{49}{3} \implies abc=\boxed{441}$
-
- 
-
-
-
-
-
-\textbf{Solution 3}
-
-You can use mass points to derive $\frac {d}{a + d} + \frac {d}{b + d} + \frac {d}{c + d}=1.$ Plugging it in yields $\frac{3}{a + 3} + \frac{3}{b + 3} + \frac{3}{c+3} = 1.$ We proceed as we did in Solution 1 - however, to make the equation look less messy, we do the substitution $a'=a+3,b'=b+3,c'=c+3.$
-
- Then we have $\frac{3}{a'}+\frac{3}{b'}+\frac{3}{c'}=1.$ Clearing fractions gives us $a'b'c'=3a'b'+3b'c'+3c'a'\to a'b'c'-3a'b'-3b'c'-3c'a'=0.$ Factoring yields $(a'-3)(b'-3)(c'-3)=9(a'+b'+c')-27,$ and the left hand side looks suspiciously like what we want to find. (It is.)
-
- Substituting yields our answer as $9\cdot 52-27=\boxed{441}.$
-
- 
-
-
-
-
-
-\textbf{Solution 4 (Ceva Identity)}
-
-A cool identity derived from Ceva's Theorem is that:
-
- 
- \[\frac{AP}{PA'}\frac{BP}{PB'}\frac{CP}{PC'} = 2 + \frac{AP}{PA'} + \frac{BP}{PB'} + \frac{CP}{PC'}\]
-
- To see this, we use another Ceva's Theorem identity (sometimes attributed to Gergonne): $\frac{AP}{PA'}=\frac{AC'}{C'B}+\frac{AB'}{B'C}$, and similarly for cevians $BB'$ and $CC'$.  And then:
-
- $\frac{AP}{PA'}\frac{BP}{PB'}\frac{CP}{PC'} =  \left(\frac{AB'}{B'C}+\frac{AC'}{C'B}\right) \left(\frac{BC'}{C'A}+\frac{BA'}{A'C}\right)  \left(\frac{CB'}{B'A}+\frac{CA'}{A'B}\right) = \\ \underbrace{\frac{AB'\cdot CA'\cdot BC'}{B'C\cdot A'B\cdot C'A}}_{Ceva} + \underbrace{\frac{AC'\cdot BA'\cdot CB'}{C'B\cdot A'C\cdot B'A}}_{Ceva} + \underbrace{\frac{AB'}{B'C} + \frac{AC'}{C'B}}_{Gergonne} + \underbrace{\frac{BA'}{A'C} + \frac{BC'}{C'A}}_{Gergonne} + \underbrace{\frac{CA'}{A'B} + \frac{CB'}{B'A}}_{Gergonne} = \\ 2 + \frac{AP}{PA'} + \frac{BP}{PB'} + \frac{CP}{PC'}$
-
- Inserting $a, b, c, d$ into our identity gives:
-
- 
- \[\frac{a}{d}\frac{b}{d}\frac{c}{d}=2+\frac{a}{d}+\frac{b}{d}+\frac{c}{d}\implies abc=d^3(2+\frac{a+b+c}{d})=3^3(2+\frac{43}{3})=\boxed{441}\]
-
- This problem is quite similar to the 1992 AIME problem 14, which also featured concurrent cevians and is trivialized by the identity used in this solution. For reference, below is a link.\href{https://artofproblemsolving.com/wiki/index.php/1992\_AIME\_Problems/Problem\_14}{https://artofproblemsolving.com/wiki/index.php/1992\_AIME\_Problems/Problem\_14}
-
- 
-
-
 
 
 	\item (\textit{AIME I 1988}) Find $a$ if $a$ and $b$ are integers such that $x^2 - x - 1$ is a factor of $ax^{17} + bx^{16} + 1$.
@@ -803,8 +617,6 @@ The above uses the similarity between the Fibonacci recursion|recursive definiti
 
 
 
-
-
 \textbf{Solution 2 (Fibonacci Numbers)}
 
 We can long divide and search for a pattern; then the remainder would be set to zero to solve for $a$. Writing out a few examples quickly shows us that the remainders after each subtraction follow the Fibonacci sequence. Carrying out this pattern, we find that the remainder is 
@@ -813,8 +625,6 @@ We can long divide and search for a pattern; then the remainder would be set to 
  There are various similar solutions which yield the same pattern, such as repeated substitution of $x^2 = x + 1$ into the polynomial with a higher degree, as shown in Solution 6.
 
  
-
-
 
 
 
@@ -838,8 +648,6 @@ Also, noticing our solutions from the previous systems of equations, we can crea
 
 
 
-
-
 \textbf{Solution 4 (Fibonacci Numbers: Not Rigorous)}
 
 Let's work backwards! Let $F(x) = ax^{17} + bx^{16} + 1$ and let $P(x)$ be the polynomial such that $P(x)(x^2 - x - 1) = F(x)$.
@@ -853,8 +661,6 @@ Let's work backwards! Let $F(x) = ax^{17} + bx^{16} + 1$ and let $P(x)$ be the p
 
 
 
-
-
 \textbf{Solution 5 (Fibonacci Numbers)}
 
 The roots of $x^2-x-1$ are $\phi$ (the Golden Ratio) and $1-\phi$. These two must also be roots of $ax^{17}+bx^{16}+1$. Thus, we have two equations: 
@@ -863,8 +669,6 @@ Subtract these two and divide by $\sqrt{5}$ to get
  \[\frac{a(\phi^{17}-(1-\phi)^{17})}{\sqrt{5}}+\frac{b(\phi^{16}-(1-\phi)^{16})}{\sqrt{5}}=0.\] Noting that the formula for the $n$th Fibonacci number is $\frac{\phi^n-(1-\phi)^n}{\sqrt{5}}$, we have $1597a+987b=0$. Since $1597$ and $987$ are coprime, the solutions to this equation under the integers are of the form $a=987k$ and $b=-1597k$, of which the only integral solutions for $a$ on $[0,999]$ are $0$ and $987$. $(a,b)=(0,0)$ cannot work since $x^2-x-1$ does not divide $1$, so the answer must be $\boxed{987}$. (Note that this solution would not be valid on an Olympiad or any test that does not restrict answers as integers between $000$ and $999$).
 
  
-
-
 
 
 
@@ -889,8 +693,6 @@ from which
 
 
 
-
-
 \textbf{Solution 7 (Uses the Roots)}
 
 For simplicity, let $f(x) =ax^{17} + bx^{16} + 1$ and $g(x) = x^2-x-1$. Notice that the roots of $g(x)$ are also roots of $f(x)$. Let these roots be $u,v$. We get the system 
@@ -905,15 +707,11 @@ Now subtracting, we get
 
 
 
-
-
 \textbf{Solution 8 (Engineer's Induction, only use if you don't have time left)}
 
 We see that $ax^{17} + bx^{16} + 1 = (x^2-x-1)P(x)$ for some polynomial $P(x)$. Working forwards, we notice that the constant term of $P(x)$ must equal $-1$, to multiply the constant term of $(x^2-x-1)$ into $1$. We can similarly continue to use this logic, by repeatedly cancelling out the middle term, and obtain the process:$(x^2-x-1)(-1) = -x^2 + x + 1$$(x^2-x-1)(-1 + x) = x^3 - 2x^2 + 1$$(x^2-x-1)(-1 + x - 2x^2) = -2x^4 + 3x^3 + 1$$(x^2-x-1)(-1 + x - 2x^2 + 3x^3) = 3x^5 - 5x^4 + 1$.By this time, you can hopefully notice that the coefficient of the $x^n$ term in $P(x)$ is equal to $(-1)^{n-1} * F_{n}$, where $F_n$ equals the $n$th number in the Fibonacci sequence. From here, we just need to find the coefficient of the $x^{15}$ term in $P(x)$, which happens to be $F_{15} = \boxed{987}$.Again, try to only use Engineer's Induction when you have no other options. A rigorous proof is usually not needed, but when you have extra time, checking a solution with a rigorous method is better than worrying about your Engineer's Induction solution.
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) Let $C$ be the graph of $xy = 1$, and denote by $C^*$ the reflection of $C$ in the line $y = 2x$. Let the equation of $C^*$ be written in the form
@@ -939,8 +737,6 @@ Given a point $P (x,y)$ on $C$, we look to find a formula for $P' (x', y')$ on $
 
 
 
-
-
 \textbf{Solution 2}
 
 The \href{https://artofproblemsolving.com/wiki/index.php?title=Asymptote}{asymptotes} of $C$ are given by $x=0$ and $y=0$. Now if we represent the line $y=2x$ by the complex number $1+2i$, then we find the direction of the reflection of the asymptote $x=0$ by multiplying this by $2-i$, getting $4+3i$. Therefore, the asymptotes of $C^*$ are given by $4y-3x=0$ and $3y+4x=0$.
@@ -951,8 +747,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Asymptote}{asympt
 
 
  
-
-
 
 
 
@@ -974,8 +768,6 @@ The matrix for a reflection about the polar line $\theta = \alpha, \alpha+\pi$ i
 
 
 
-
-
 \textbf{Solution 4}
 
 Find some simple points on the graph of C, reflect them and note down the new coordinates, and plug 'em into the given equation. After some plugging and chugging and solving the system of equations that follow, we get that  $b = -7$ and $c = -12$, so $bc = 84$. The answer is $\boxed{084}$.
@@ -983,8 +775,6 @@ Find some simple points on the graph of C, reflect them and note down the new co
  pi\_is\_3.141
 
  
-
-
 
 
 	\item (\textit{AIME I 1988}) In an office at various times during the day, the boss gives the secretary a letter to type, each time putting the letter on top of the pile in the secretary's in-box. When there is time, the secretary takes the top letter off the pile and types it. There are nine letters to be typed during the day, and the boss delivers them in the order 1, 2, 3, 4, 5, 6, 7, 8, 9.
@@ -1012,8 +802,6 @@ Re-stating the problem for clarity, let $S$ be a \href{https://artofproblemsolvi
 
 
 
-
-
 \textbf{Solution 2}
 
 (MAA official solution)
@@ -1034,8 +822,6 @@ Note. The reasoning in $\textbf{Case 2}$ can be extended to cover both cases by 
  \[\sum_{k=0}^{7}(k+2)\binom7k= \boxed{704}\]possible orderings, in agreement with the answer, found previously.
 
  
-
-
 
 
 
@@ -1074,8 +860,6 @@ We can think of this as a problem of arrangements.
  \textbf{Note} Problem 4.8 from the AoPS Intermediate Counting and Probability book is identical to this problem, except it is reworded and there are ten items to be dealt with (it is known that before lunch, the $9$th item has been dealt with).
 
  
-
-
 
 
 \end{enumerate}

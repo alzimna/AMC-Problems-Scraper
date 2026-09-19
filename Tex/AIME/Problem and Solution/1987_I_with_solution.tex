@@ -21,8 +21,6 @@ If you do not understand the above solution, consider this. For every \href{http
  
 
 
-
-
 	\item (\textit{AIME I 1987}) What is the largest possible distance between two points, one on the sphere of radius 19 with center $(-2,-10,5),$ and the other on the sphere of radius 87 with center $(12,8,-16)$?
 
 
@@ -39,15 +37,11 @@ The distance between the two centers of the spheres can be determined via the \h
 
 
 
-
-
 \textbf{Solution 2}
 
 Since you have a lot of time on the AIME, you could spend 3 hours drawing a paper 3-dimensional graph of the two circles. Then, you would guess and check two random points on the circles until you get the two farthest points, and you find the distance will be $\boxed{137}$. (However, this could be very inaccurate and may take up a lot of time, but very much recommended :)
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) By a proper divisor of a natural number we mean a positive integral divisor other than 1 and the number itself. A natural number greater than 1 will be called "nice" if it is equal to the product of its distinct proper divisors. What is the sum of the first ten nice numbers?
@@ -88,8 +82,6 @@ Let $p(n)$ denote the product of the distinct proper divisors of $n$. A number $
 
 
 
-
-
 \textbf{Solution 2}
 
 Alternatively, we could note that $n$ is only nice when it only has two proper divisors, which, when multiplied, clearly yield $n$. We know that when the \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorization}{prime factorization} of $n = a_1^{b_1} \cdot a_2^{b_2} \cdot a_3^{b_3} . . . \cdot a_m^{b_m}$, the number of factors $f(n)$ of $n$ is 
@@ -101,15 +93,11 @@ Alternatively, we could note that $n$ is only nice when it only has two proper d
 
 
 
-
-
 \textbf{Solution 3(Quick Brute Force)}
 
 The only numbers that are "nice" will contain four factors, including one and itself. The other two are a "factor pair", which, when multiplied, give the original number. Testing for "nice" numbers, we get:6, 8, 10, 14, 15, 21, 22, 26, 27, and 33.Adding them up gives $\boxed{182}$. ~Sigma\_Bob
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) Find the area of the region enclosed by the graph of $|x-60|+|y|=\left|\frac{x}{4}\right|.$
@@ -143,8 +131,6 @@ The only numbers that are "nice" will contain four factors, including one and it
 
 
 
-
-
 \textbf{Solution 2}
 
 Since $|y|$ is the only present $y$ "term" in this equation, we know that the area must be symmetrical about the x-axis.
@@ -166,8 +152,6 @@ Since $|y|$ is the only present $y$ "term" in this equation, we know that the ar
  
 
 
-
-
 	\item (\textit{AIME I 1987}) Find $3x^2 y^2$ if $x$ and $y$ are integers such that $y^2 + 3x^2 y^2 = 30x^2 + 517$.
 
 
@@ -186,8 +170,6 @@ If we move the $x^2$ term to the left side, it is factorable with \href{https://
  $507$ is equal to $3 \cdot 13^2$. Since $x$ and $y$ are integers, $3x^2 + 1$ cannot equal a multiple of three. $169$ doesn't work either, so $3x^2 + 1 = 13$, and $x^2 = 4$. This leaves $y^2 - 10 = 39$, so $y^2 = 49$. Thus, $3x^2 y^2 = 3 \times 4 \times 49 = \boxed{588}$.
 
  
-
-
 
 
 
@@ -226,8 +208,6 @@ First factor out the $y^2$ term on the left side.
  
 
 
-
-
 	\item (\textit{AIME I 1987}) Rectangle $ABCD$ is divided into four parts of equal area by five segments as shown in the figure, where $XY = YB + BC + CZ = ZW = WD + DA + AX$, and $PQ$ is parallel to $AB$.  Find the length of $AB$ (in cm) if $BC = 19$ cm and $PQ = 87$ cm.
 
 
@@ -259,15 +239,11 @@ Since $XY = WZ$, $PQ = PQ$ and the \href{https://artofproblemsolving.com/wiki/in
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $YB=a$, $CZ=b$, $AX=c$, and $WD=d$. First we drop a perpendicular from $Q$ to a point $R$ on $BC$ so $QR=h$. Since $XY = WZ$ and $PQ = PQ$ and the \href{https://artofproblemsolving.com/wiki/index.php?title=Area}{areas} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Trapezoid}{trapezoids} $PQZW$ and $PQYX$ are the same, the heights of the trapezoids are both $\frac{19}{2}$.From here, we have that $[BYQZC]=\frac{a+h}{2}*19/2+\frac{b+h}{2}*19/2=19/2* \frac{a+b+2h}{2}$. We are told that this area is equal to $[PXYQ]=\frac{19}{2}* \frac{XY+87}{2}=\frac{19}{2}* \frac{a+b+106}{2}$. Setting these equal to each other and solving gives $h=53$. In the same way, we find that the perpendicular from $P$ to $AD$ is $53$. So $AB=53*2+87=\boxed{193}$
 
  
-
-
 
 
 
@@ -280,8 +256,6 @@ Since $XY = YB + BC + CZ = ZW = WD + DA + AX$. Let $a = AX + DW = BY + CZ$. Sinc
  \[a = 87\] Since $a + CB = XY$, $XY = 19 + 87 = 106$, and $AB = 106 + 87 = \boxed{193}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) Let $[r,s]$ denote the least common multiple of positive integers $r$ and $s$.  Find the number of ordered triples $(a,b,c)$ of positive integers for which $[a,b] = 1000$, $[b,c] = 2000$, and $[c,a] = 2000$.
@@ -304,8 +278,6 @@ It's clear that we must have $a = 2^j5^k$, $b = 2^m 5^n$ and $c = 2^p5^q$ for so
 
 
 
-
-
 \textbf{Solution 2}
 
 $1000 = 2^35^3$ and $2000 = 2^45^3$. By \href{https://artofproblemsolving.com/wiki/index.php?title=LCM\#Using\_prime\_factorization}{looking at the prime factorization} of $2000$, $c$ must have a \href{https://artofproblemsolving.com/wiki/index.php?title=Factor}{factor} of $2^4$. If $c$ has a factor of $5^3$, then there are two \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{cases}: either (1) $a$ or $b = 5^32^3$, or (2) one of $a$ and $b$ has a factor of $5^3$ and the other a factor of $2^3$. For case 1, the other number will be in the form of $2^x5^y$, so there are $4 \cdot 4 = 16$ possible such numbers; since this can be either $a$ or $b$ there are a total of $2(16)-1=31$ possibilities. For case 2, $a$ and $b$ are in the form of $2^35^x$ and $2^y5^3$, with $x < 3$ and $y < 3$ (if they were equal to 3, it would overlap with case 1). Thus, there are $2(3 \cdot 3) = 18$ cases.
@@ -313,8 +285,6 @@ $1000 = 2^35^3$ and $2000 = 2^45^3$. By \href{https://artofproblemsolving.com/wi
  If $c$ does not have a factor of $5^3$, then at least one of $a$ and $b$ must be $2^35^3$, and both must have a factor of $5^3$. Then, there are $4$ solutions possible just considering $a = 2^35^3$, and a total of $4 \cdot 2 - 1 = 7$ possibilities. Multiplying by three, as $0 \le c \le 2$, there are $7 \cdot 3 = 21$. Together, that makes $31 + 18 + 21 = 70$ solutions for $(a, b, c)$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\frac{8}{15} < \frac{n}{n + k} < \frac{7}{13}$?
@@ -339,8 +309,6 @@ Multiplying out all of the \href{https://artofproblemsolving.com/wiki/index.php?
 
 
 
-
-
 \textbf{Solution 2}
 
 Flip all of the fractions for
@@ -354,8 +322,6 @@ Flip all of the fractions for
 
 
 
-
-
 \textbf{Solution 3}
 
 Flip the fractions and subtract one from all sides to yield 
@@ -366,8 +332,6 @@ Flip the fractions and subtract one from all sides to yield
 
 
 
-
-
 \textbf{Solution 4}
 
 Notice that in order for $k$ to be unique, $\frac{n}{n + k+ 1} \le \frac{8}{15}$ and $\frac{n}{n+ k-1} \ge \frac{7}{13}$ must be true. Solving these inequalities for $k$ yields $\frac{7}{6}(k-1) \le n \le \frac{8}{7}(k+1)$.
@@ -375,8 +339,6 @@ Notice that in order for $k$ to be unique, $\frac{n}{n + k+ 1} \le \frac{8}{15}$
  Thus, we want to find $k$ such that $\frac{7}{6}(k-1)\le \frac{8}{7}(k+1)$. Solving this inequality yields $k \le 97$, and plugging this into $\frac{n}{n+k} < \frac{7}{13}$ in the original equation yields $n \le 112$ so the answer is $\boxed{112}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) Triangle $ABC$ has right angle at $B$, and contains a point $P$ for which $PA = 10$, $PB = 6$, and $\angle APB = \angle BPC = \angle CPA$.  Find $PC$.
@@ -417,8 +379,6 @@ Let $PC = x$. Since $\angle APB = \angle BPC = \angle CPA$, each of them is equa
  
 
 
-
-
 	\item (\textit{AIME I 1987}) Al walks down to the bottom of an escalator that is moving up and he counts 150 steps. His friend, Bob, walks up to the top of the escalator and counts 75 steps. If Al's speed of walking (in steps per unit time) is three times Bob's walking speed, how many steps are visible on the escalator at a given time? (Assume that this value is constant.) 
 
 
@@ -441,8 +401,6 @@ Let the total number of steps be $x$, the speed of the escalator be $e$ and the 
 
 
 
-
-
 \textbf{Solution 2}
 
 Again, let the total number of steps be $x$, the speed of the escalator be $e$ and the speed of Bob be $b$ (all "per unit time").
@@ -454,8 +412,6 @@ Again, let the total number of steps be $x$, the speed of the escalator be $e$ a
  From these two equations, we arrive at $150=\frac{ex}{3b-e}=2\cdot75=\frac{2ex}{b+e}=\frac{6ex}{3b+3e}=\frac{(ex)-(6ex)}{(3b-e)-(3b+3e)}=\frac{5x}{4}$$\implies600=5x\implies x=\boxed{120}$, where we have used the fact that $\frac{a}{b}=\frac{c}{d}=\frac{a\pm c}{b\pm d}$ (the proportion manipulations are motivated by the desire to isolate $x$, prompting the isolation of the $150$ on one side, and the fact that if we could cancel out the $b$'s, then the $e$'s in the numerator and denominator would cancel out, resulting in an equation with $x$ by itself).
 
  
-
-
 
 
 
@@ -471,8 +427,6 @@ Let $e$ and $b$ be the speeds of the escalator and Bob, respectively.
  Finally, there is a total of $75+45=\boxed{120}$ steps in the length of the escalator.
 
  
-
-
 
 
 
@@ -502,15 +456,11 @@ Note that because the escalator is broken and is now a staircase, Al and Bob mus
 
 
 
-
-
 \textbf{Solution 5 (simple)}
 
 WLOG, let Al's speed be $15$ steps per second, so Bob's speed is $5$ steps per second. Then, Al was on the escalator for $\frac{150}{15}\ = 10$ seconds and Bob was on the escalator for $\frac{75}{5}\ = 15$ seconds. Let $r$ be the rate of the escalator, in steps per second. Then, the total amount of steps is $150 - 10r = 75 + 15r$. Al is getting $10$ seconds of resistance at rate $r$ from the escalator, while Bob is getting $15$ seconds of help at rate $r$. Solving for $r$, we have $r = 3$ steps per second. Then, we can plug $r$ into the previous equation or subtract/add it to Al/Bob's rate (respectively) then multiply by their respective time. Either way, we get $\boxed{120}$ and we are done.
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) Find the largest possible value of $k$ for which $3^{11}$ is expressible as the sum of $k$ consecutive positive integers.
@@ -533,8 +483,6 @@ Let us write down one such sum, with $m$ terms and first term $n + 1$:
 
 
 
-
-
 \textbf{Solution 2}
 
 First note that if $k$ is odd, and $n$ is the middle term, the sum equals $kn$. If $k$ is even, then we have the sum equal to $kn+k/2$, which will be even. Since $3^{11}$ is odd, we see that $k$ is odd. 
@@ -545,15 +493,11 @@ First note that if $k$ is odd, and $n$ is the middle term, the sum equals $kn$. 
 
 
 
-
-
 \textbf{Solution 3}
 
 Proceed as in Solution 1 until it is noted that $m$ is a divisor of $2\cdot 3^{11}$. The divisors of $2\cdot 3^{11}$ are $3^{1} , 2\cdot 3^{1} , 3^{2} , 2\cdot 3^{2} , \ldots , 2\cdot 3^{10} , 3^{11}$. Note that the factors of $m(2n + m + 1)$ are of opposite parity (if $m$ is odd, then $(2n + m + 1)$ is even and vice versa). Thus, one of the two factors will be a power of three, and the other will be twice a power of three. $(2n + m + 1)$ will represent the greater factor while $m$ will represent the lesser factor. Given this information, we need to find the factor pair that maximizes the lesser of the two factors, as this will maximize the value of $m$. The factor pair which maximizes the lesser factor is $2\cdot 3^{5}$ and $3^{6}$. It follows that $m$ = $2\cdot 3^{5}$ = $\boxed{486}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) Let $m$ be the smallest \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integer} whose cube root is of the form $n+r$, where $n$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integer} and $r$ is a positive real number less than $1/1000$. Find $n$.
@@ -576,8 +520,6 @@ In order to keep $m$ as small as possible, we need to make $n$ as small as possi
 
 
 
-
-
 \textbf{Solution 2}
 
 To minimize $m$, we should minimize $n$. We have that $(n + \frac{1}{1000})^3 = n^3 + \frac{3}{10^3} n^2 + \frac{3}{10^6} n + \frac{1}{10^9}$. For a given value of $n$, if $(n + \frac{1}{1000})^3 - n^3 > 1$, there exists an integer between $(n + \frac{1}{1000})^3$ and $n^3$, and the cube root of this integer would be between $n$ and $n + \frac{1}{1000}$ as desired. We seek the smallest $n$ such that $(n + \frac{1}{1000})^3 - n^3 > 1$. 
@@ -597,8 +539,6 @@ To minimize $m$, we should minimize $n$. We have that $(n + \frac{1}{1000})^3 = 
 
 
 
-
-
 \textbf{Solution 3 (Similar to Solution 2)}
 
 Since $r$ is less than $1/1000$, we have $\sqrt[3]{m} < n + \frac{1}{1000}$. Notice that since we want $m$ minimized, $n$ should also be minimized. Also, $n^3$ should be as close as possible, but not exceeding $m$. This means $m$ should be set to $n^3+1$. Substituting and simplifying, we get 
@@ -606,8 +546,6 @@ Since $r$ is less than $1/1000$, we have $\sqrt[3]{m} < n + \frac{1}{1000}$. Not
  \[n^3+1 < n^3+\frac{3}{1000}n^2+\frac{3}{1000^2}n+\frac{1}{1000^3}\]The last two terms in the right side can be ignored in the calculation because they are too small. This results in $1 < \frac{3}{1000}n^2 \Rightarrow n^2 > \frac{1000}{3}$. The minimum positive integer $n$ that satisfies this is $\boxed{019}$. ~ Hb10
 
  
-
-
 
 
 
@@ -620,15 +558,21 @@ Note that the cube root is increasing for positive reals while its derivative is
  
 
 
-
-
 	\item (\textit{AIME I 1987}) A given sequence $r_1, r_2, \dots, r_n$ of distinct real numbers can be put in ascending order by means of one or more "bubble passes".  A bubble pass through a given sequence consists of comparing the second term with the first term, and exchanging them if and only if the second term is smaller, then comparing the third term with the second term and exchanging them if and only if the third term is smaller, and so on in order, through comparing the last term, $r_n$, with its current predecessor and exchanging them if and only if the last term is smaller. 
 
 
  The example below shows how the sequence 1, 9, 8, 7 is transformed into the sequence 1, 8, 7, 9 by one bubble pass.  The numbers compared at each step are underlined.
 
 
- $\underline{1 \quad 9} \quad 8 \quad 7$$1 \quad {}\underline{9 \quad 8} \quad 7$$1 \quad 8 \quad \underline{9 \quad 7}$$1 \quad 8 \quad 7 \quad 9$Suppose that $n = 40$, and that the terms of the initial sequence $r_1, r_2, \dots, r_{40}$ are distinct from one another and are in random order.  Let $p/q$, in lowest terms, be the probability that the number that begins as $r_{20}$ will end up, after one bubble pass, in the $30^{\mbox{th}}$ place.  Find $p + q$.
+ $\underline{1 \quad 9} \quad 8 \quad 7$
+
+ $1 \quad {}\underline{9 \quad 8} \quad 7$
+
+ $1 \quad 8 \quad \underline{9 \quad 7}$
+
+ $1 \quad 8 \quad 7 \quad 9$
+
+ Suppose that $n = 40$, and that the terms of the initial sequence $r_1, r_2, \dots, r_{40}$ are distinct from one another and are in random order.  Let $p/q$, in lowest terms, be the probability that the number that begins as $r_{20}$ will end up, after one bubble pass, in the $30^{\mbox{th}}$ place.  Find $p + q$.
 
 
  
@@ -638,11 +582,98 @@ Note that the cube root is increasing for positive reals while its derivative is
 
 \textbf{Solution 1}
 
-If any of $r_1, \ldots, r_{19}$ is larger than $r_{20}$, one of these numbers will be compared with $r_{20}$ on the 19th step of the first bubble pass and $r_{20}$ will be moved back to the 19th position.  Thus, $r_{20}$ must be the large
+If any of $r_1, \ldots, r_{19}$ is larger than $r_{20}$, one of these numbers will be compared with $r_{20}$ on the 19th step of the first bubble pass and $r_{20}$ will be moved back to the 19th position.  Thus, $r_{20}$ must be the largest of the first 20 terms.  In addition, $r_{20}$ must be larger than $r_{21}, r_{22}, \ldots, r_{30}$ but smaller than $r_{31}$ in order that it move right to the 30th position but then not continue moving right to the 31st.
+
+ Thus, our problem can be restated: What is the probability that in a sequence of 31 distinct real numbers, the largest is in position 31 and the second-largest is in position 20 (the other 29 numbers are irrelevant)?
+
+ This is much easier to solve: there are $31!$ ways to order the first thirty-one numbers and $29!$ ways to arrange them so that the largest number is in the 31st position and the second-largest is in the 20th. This gives us a desired probability of $\frac{29!}{31!} = \frac{1}{31\cdot 30} = \frac{1}{930}$, so the answer is $\boxed{931}$.
+
+ \textbf{Remark} Note that you can solve the restated problem differently: 
+
+ We see that the numerator is $1$ because there is only $1$ way to make the $31^{\text{st}}$ term the largest and the $20^{\text{th}}$ the second-largest. To calculate the denominator, we note that there are $31\times30$ ways to pick the largest term and the second-largest term. Therefore, our answer is $\boxed{931}$.~Yiyj1
 
  
 
 
+
+\textbf{Solution 2 (Summations)}
+
+Assume we have a set of $40$ numbers, all distinct, that will be randomly shuffled. We wish to find the number of ways that the following conditions are satisfied:
+
+ $1.$ The greatest number out of the first $30$ terms is located at the $20$th place, and
+
+ $2.$ Term $31$ is greater than term $20$.
+
+ $3.$ The final $9$ terms can be in any order.
+
+ Let the resulting term $20$ be notated as $X$. We then set up a dummy variable $k$ such that $k$ describes the number of terms (out of $40$) that are less than $X$. For instance, if there were $29$ terms less than $X$, the dummy variable $k$ would be $29$. Now we can set up our summation.
+
+ $1.$ To make sure the first condition is met, we perform the following: We know that there are $k$ terms less than $X$, so thus there are $\frac{k!}{(k-29)!}$ ways to place $29$ of the $k$ terms in a specific order.
+
+ $2.$ For the second condition, there are $39-k$ terms greater than $X$, so there are $39-k$ ways to place the number greater than $X$ in the $31$st placement.
+
+ $3.$ Finally, since the final $9$ terms can be in any order, there are $9!$ ways to place these numbers.
+
+ (The three steps above all correspond to the three conditions given at the beginning of the solution.)
+
+ However, we need to set lower and upper bounds for $k$ in order to calculate our summation. Looking at the range of $k$, we see that there must be at least $29$ numbers less than $X$ in order for condition $1$ to be satisfied. There must be at least $1$ number greater than $X$ in order for condition $2$ to be satisfied as well, leaving a maximum of $38$ numbers less than $X$. Thus, $k$ ranges from $29$ to $38$.
+
+ Finally, we divide the entire value by $40!$ as there are $40!$ ways to arrange the $40$ terms. This step could also be performed at the very end. At this point, we are ready to calculate the summation.
+
+ 
+$\frac{1}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}(39-k)\cdot9!\right)$
+
+ $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}(39-k)\right)$
+
+ $=\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
+
+ Now we deal with each sum separately. Looking at the first sum, we see that the factorials inside the summation bear a close resemblance to ${k\choose29}$. Indeed, we are able to use this to our advantage:
+
+ $\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
+
+ $=\frac{9!\cdot39\cdot29!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!\cdot29!}\right)$
+
+ $=\frac{9!\cdot39\cdot29!}{40!}\sum_{k=29}^{38}{k\choose29}$
+
+ $=\frac{9!\cdot39\cdot29!}{40!}{39\choose30}$
+
+ (The last equality is thanks to the \href{https://artofproblemsolving.com/wiki/index.php?title=Hockey-Stick\_Identity}{Hockey-Stick Identity}.)
+
+ The second sum is similar to the first, but we must first replace $k$ with $(k+1)-1$:
+
+ $\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
+
+ $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot(k+1-1)}{(k-29)!}\right)$
+
+ $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot(k+1)}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
+
+ $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{(k+1)!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
+
+ $=\frac{9!\cdot30!}{40!}\sum_{k=29}^{38}{k+1\choose30}-\frac{9!\cdot29!}{40!}\sum_{k=29}^{38}{k\choose29}$
+
+ $=\frac{9!\cdot30!}{40!}{40\choose31}-\frac{9!\cdot29!}{40!}{39\choose30}$
+
+ We are finally able to calculate the end result:
+
+ $\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
+
+ $=\frac{9!\cdot39\cdot29!}{40!}{39\choose30}-\frac{9!\cdot30!}{40!}{40\choose31}+\frac{9!\cdot29!}{40!}{39\choose30}$
+
+ $=\frac{9!\cdot40\cdot29!}{40!}{39\choose30}-\frac{9!\cdot30!}{40!}{40\choose31}$
+
+ $=\frac{9!\cdot29!\cdot39!}{39!\cdot9!\cdot30!}-\frac{9!\cdot30!\cdot40!}{40!\cdot9!\cdot31!}$
+
+ $=\frac{29!}{30!}-\frac{30!}{31!}$
+
+ $=\frac{1}{30}-\frac{1}{31}$
+
+ $=\frac{31}{930}-\frac{30}{930}$
+
+ $=\frac{1}{930}$
+
+ Thus our answer is $1+930=\boxed{931}$.
+
+ 
 
 
 	\item (\textit{AIME I 1987}) Compute
@@ -667,8 +698,6 @@ so the original expression becomes
 
 
 
-
-
 \textbf{Solution 2 (Completing the Square and Difference of Squares)}
 
 In both the numerator and the denominator, each factor is of the form $N^4+324=N^4+18^2$ for some positive integer $N.$ 
@@ -682,8 +711,6 @@ The original expression now becomes
 
 
 
-
-
 \textbf{Solution 3 (Complex Numbers)}
 
 In both the numerator and the denominator, each factor is of the form $N^4+324=N^4+18^2$ for some positive integer $N.$ 
@@ -693,8 +720,6 @@ In both the numerator and the denominator, each factor is of the form $N^4+324=N
  Two solutions follow from here:
 
  
-
-
 
 
 
@@ -715,8 +740,6 @@ We rewrite $N$ to the polar form
 We continue with the last paragraph of Solution 2 to get the answer $\boxed{373}.$
 
  
-
-
 
 
 
@@ -747,8 +770,6 @@ We continue with the last paragraph of Solution 2 to get the answer $\boxed{373}
 
 
 
-
-
 \textbf{Solution 4}
 
 We use Sophie Germain's Identity to rewrite the first couple of multiplicands in the numerator and denominator. By Sophie Germain's: 
@@ -758,8 +779,6 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
  \[(16^4 + 324) = (16^2 + 2 \cdot 16 \cdot 3 + 2 \cdot 3^2)(16^2 - 2 \cdot 16 \cdot 3 + 2 \cdot 3^2) = (370)(178)\] If we only had these terms, then the fraction would rewrite to $\frac{(58)(178)(370)(634)}{(10)(58)(178)(370)}$. However, we notice most of the terms cancel, leaving us only with the largest term in the numerator and the smallest term in the denominator ($\frac{634}{10}$). We hypothesize that this will happen with the fraction as a whole. Then we will only be left with the largest term in the numerator, which is $(58^2 + 2 \cdot 58 \cdot 3 + 2 \cdot 3^2) = 3730$. The fraction simplifies to $\frac{3730}{10} = \boxed{373}$.
 
  
-
-
 
 
 	\item (\textit{AIME I 1987}) Squares $S_1$ and $S_2$ are inscribed in right triangle $ABC$, as shown in the figures below. Find $AC + CB$ if area $(S_1) = 441$ and area $(S_2) = 440$.
@@ -799,8 +818,6 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
  \textbf{Messy Trig Solution} Let $\theta$ be the smaller angle in the triangle. Then the sum of shorter and longer leg is $\sqrt{441}(2+\tan{\theta}+\cot{\theta})$. We observe that the short leg has length $\sqrt{441}(1+\tan{\theta}) = \sqrt{440}(\sec{\theta}+\sin{\theta})$. Grouping and squaring, we get $\sqrt{\frac{440}{441}} = \frac{\sin{\theta}+\cos{\theta}}{1+\sin{\theta}\cos{\theta}}$. Squaring and using the double angle identity for sine, we get, $110(\sin{2\theta})^2 + \sin{2\theta} - 1 = 0$. Solving, we get $\sin{2\theta} = \frac{1}{10}$. Now to find $\tan{\theta}$, we find $\cos{2\theta}$ using the PythagoreanIdentity, and then use the tangent double angle identity. Thus, $\tan{\theta} = 10-3\sqrt{11}$. Substituting into the original sum,we get $\boxed{462}$.
 
  
-
-
 
 
 
@@ -848,8 +865,6 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
  \[t=\boxed{462}\]
 
  
-
-
 
 
 \end{enumerate}

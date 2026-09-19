@@ -24,8 +24,6 @@ It is evident that $k$ has only 2s and 3s in its prime factorization, or $k = 2^
 
 
 
-
-
 \textbf{Solution 2}
 
 We want the number of $k$ such that $\operatorname{lcm}(6^6,8^8,k)=12^{12}$.
@@ -39,8 +37,6 @@ We want the number of $k$ such that $\operatorname{lcm}(6^6,8^8,k)=12^{12}$.
  Therefore, $a$ can be any integer from $0$ to $24$, for a total of $25$ values of $a$ and $\boxed{025}$ values of $k$. 
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Find the number of \href{https://artofproblemsolving.com/wiki/index.php?title=Ordered\_pair}{ordered pairs} $(x,y)$ of positive integers that satisfy $x \le 2y \le 60$ and $y \le 2x \le 60$.
@@ -71,8 +67,6 @@ $I = 421$Since the inequalities also include the equals case, we include the bou
 
 
 
-
-
 \textbf{Solution 2}
 
 First, note that all pairs of the form $(a,a)$, $1\le a\le30$ work.
@@ -94,8 +88,6 @@ First, note that all pairs of the form $(a,a)$, $1\le a\le30$ work.
  $\frac{(15)(16)}{2}+\frac{(14)(15)}{2}+\frac{(15)(16)}{2}+\frac{(14)(15)}{2}+30=480.$
 
  
-
-
 
 
 
@@ -121,8 +113,6 @@ $y\le2x\le60$
 
 
 
-
-
 \textbf{Solution 4 - Unrigorous engineers induction solution}
 
 We will try out small cases.
@@ -138,8 +128,6 @@ We will try out small cases.
 
 
 
-
-
 \textbf{Solution 5 - Counting Head on}
 
 Notice $x$ and $y$ both must be equal or less than 30. The inequalities given have no complicated qualities. We can recompile them by understanding: Two times the larger integer will also be larger than the smaller integer; Two times the smaller integer is greater or equal to the greater integer if and only if the greater integer is less or equal to the double of the smaller integer. Knowing this, we create a chart. We will first solve without order, then multiply pairs by 2 at the end. $x$ can be 1-30, so we'll start with 1. The only possible value for $y$ is 1. For $x = 2$, $y$ can be 2-4. For $x = 3$, $y$ can be 3-6. There is an obvious pattern here. For every integer after 1, the possible values for $y$ will be numbers $x$-$2x$. This predictably ends at $x = 15$ because $y$ will reach 30. When $x = 16$, then the number of possible values of $y$ will begin to drop again, equaling the amount when $x = 14$. Then when we finally sum the group together, for $x = 2$ to $x = 14$ there are 104 pairs with 2 distinct values, and 13 values with congruent values. These will not be multiplied by 2 later on. $x = 16$ to $x = 28$ gives the same amount. Then $x = 15$ and $x = 29$ gives 16 and 2 values respectively, with two congruent values each. Finally, $x = 1$ and $x = 30$ give 3 and 1 respectively.
@@ -150,8 +138,6 @@ Notice $x$ and $y$ both must be equal or less than 30. The inequalities given ha
 -jackshi2006
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) The graph of $y^2 + 2xy + 40|x|= 400$ partitions the plane into several regions.  What is the area of the bounded region?
@@ -195,15 +181,11 @@ The equation given can be rewritten as:
 
 
 
-
-
 \textbf{Solution 2}
 
 The equation can be rewritten as: $(x+y)^2=(|x|-20)^2$. Do casework as above.
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Nine tiles are numbered $1, 2, 3, \cdots, 9,$ respectively.  Each of three players randomly selects and keeps three of the tiles, and sums those three values.  The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that all three players obtain an \href{https://artofproblemsolving.com/wiki/index.php?title=Odd}{odd} sum is $m/n,$ where $m$ and $n$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime} \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integers}.  Find $m+n.$
@@ -228,15 +210,11 @@ In order for a player to have an odd sum, he must have an odd number of odd tile
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $O$ stand for an odd number and $E$ an even.Therefore, one person must pick $OOO$, the other person must pick $OEE$ and the last person must pick $OEE$. Since any permutation of the order of who is picking or change in the order of the even numbers (e.g. $EOE$ instead of $OEE$) doesn't change the probability, we just need to multiply the probability of one case by $\binom{3}{2}^3 = 27$ as there are 27 such cases (by cases I mean ordered triples of ordered multisets $A, B, C$ such that one of them has 3 $O$'s and the other two have two $E$'s and an $O$ in them, respectively.) . Let's do the case $OOO$, $OEE$, $OEE$.$\frac{5}{9} \times \frac{4}{8} \times \frac{3}{7} \times \frac{2}{6} \times \frac{4}{5} \times \frac{3}{4} \times \frac{1}{3} \times \frac{2}{2} \times \frac{1}{1} = \frac{1}{126}$. We now multiply by 27 to get $\frac{3}{14} \implies m + n = \boxed{017}$- whatRthose
 
  
-
-
 
 
 
@@ -270,16 +248,12 @@ For this problem, let's think about parity. There are $5$ odd numbers from $1-9$
 
 
 
-
-
 \textbf{Solution 4}
 
 All three sums are odd if and only if two players select $OEE$ and the other selects $OOO$. The number of possible scenarios for the three players (ignoring how each player chooses three tiles) is $3\times \dbinom{5}{3, 1, 1}\times\dbinom{4}{2, 2}$. The total number of configurations is $\dbinom{9}{3, 3, 3}$, and $\frac{3\times\dbinom{5}{3, 1, 1}\times\dbinom{4}{2, 2}}{\dbinom{9}{3, 3, 3}}=\frac{3}{14}$. The answer is thus 
  \[\boxed{017}\]-cretinouscretin
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Given that $A_k = \frac {k(k - 1)}2\cos\frac {k(k - 1)\pi}2,$ find $\left\lvert A_{19} + A_{20} + \cdots + A_{98}\right\rvert.$
@@ -305,8 +279,6 @@ Though the problem may appear to be quite daunting, it is actually not that diff
  
 
 
-
-
 	\item (\textit{AIME I 1998}) Let $ABCD$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelogram}.  Extend $\overline{DA}$ through $A$ to a point $P,$ and let $\overline{PC}$ meet $\overline{AB}$ at $Q$ and $\overline{DB}$ at $R.$  Given that $PQ = 735$ and $QR = 112,$ find $RC.$
 
 
@@ -326,28 +298,26 @@ Though the problem may appear to be quite daunting, it is actually not that diff
 
  There are several \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar triangles}. $\triangle PAQ\sim \triangle PDC$, so we can write the \href{https://artofproblemsolving.com/wiki/index.php?title=Proportion}{proportion}:
 
- $\frac{AQ}{CD} = \frac{PQ}{PC} = \frac{735}{112 + 735 + RC} = \frac{735}{847 + RC}$
+ <div style="text-align:center;">$\frac{AQ}{CD} = \frac{PQ}{PC} = \frac{735}{112 + 735 + RC} = \frac{735}{847 + RC}$
 
- Also, $\triangle BRQ\sim DRC$, so:
+ </div>Also, $\triangle BRQ\sim DRC$, so:
 
- $\frac{QR}{RC} = \frac{QB}{CD} = \frac{112}{RC} = \frac{CD - AQ}{CD} = 1 - \frac{AQ}{CD}$
+ <div style="text-align:center;">$\frac{QR}{RC} = \frac{QB}{CD} = \frac{112}{RC} = \frac{CD - AQ}{CD} = 1 - \frac{AQ}{CD}$
 
 
  $\frac{AQ}{CD} = 1 - \frac{112}{RC} = \frac{RC - 112}{RC}$
 
- Substituting,
+ </div>Substituting,
 
- $\frac{AQ}{CD} = \frac{735}{847 + RC} = \frac{RC - 112}{RC}$
+ <div style="text-align:center;">$\frac{AQ}{CD} = \frac{735}{847 + RC} = \frac{RC - 112}{RC}$
 
 
  $735RC = (RC + 847)(RC - 112)$
 $0 = RC^2 - 112\cdot847$
 
- Thus, $RC = \sqrt{112*847} = 308$.
+ </div>Thus, $RC = \sqrt{112*847} = 308$.
 
  
-
-
 
 
 
@@ -356,8 +326,6 @@ $0 = RC^2 - 112\cdot847$
 We have $\triangle BRQ\sim \triangle DRC$ so $\frac{112}{RC} = \frac{BR}{DR}$. We also have $\triangle BRC \sim \triangle DRP$ so $\frac{ RC}{847} = \frac {BR}{DR}$. Equating the two results gives $\frac{112}{RC} =  \frac{ RC}{847}$ and so $RC^2=112*847$ which solves to $RC=\boxed{308}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Let $n$ be the number of ordered quadruples $(x_1,x_2,x_3,x_4)$ of positive odd \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers} that satisfy $\sum_{i = 1}^4 x_i = 98.$  Find $\frac n{100}.$
@@ -377,8 +345,6 @@ We want $x_1 +x_2+x_3+x_4 =98$. This seems like it can be solved with stars and 
 
 
 
-
-
 \textbf{Solution 2}
 
 Define $x_i = 2y_i - 1$. Then $2\left(\sum_{i = 1}^4 y_i\right) - 4 = 98$, so $\sum_{i = 1}^4 y_i = 51$. 
@@ -386,8 +352,6 @@ Define $x_i = 2y_i - 1$. Then $2\left(\sum_{i = 1}^4 y_i\right) - 4 = 98$, so $\
  So we want to find four natural numbers that sum up to 51; we can imagine this as trying to split up 51 on the number line into 4 ranges. This is equivalent to trying to place 3 markers on the numbers 1 through 50; thus the answer is $n = {50\choose3} = \frac{50 * 49 * 48}{3 * 2} = 19600$, and $\frac n{100} = \boxed{196}$.
 
  
-
-
 
 
 
@@ -403,8 +367,6 @@ Another way we can approach this problem is by imagining a line of 98 stones. We
 
 
  
-
-
 
 
 
@@ -432,15 +394,11 @@ Let $x = a + b$ and $y = c + d$. Then $x + y = 98$, where $x, y$ are positive ev
 
 
 
-
-
 \textbf{Solution 5}
 
 We write the generating functions for each of the terms, and obtain $(x+x^3+x^5\cdots)^4$ as the generating function for the sum of the $4$ numbers. We seek the $x^{98}$ coefficient, or the $x^{94}$ coefficient in $(1+x^2+x^4...)^4.$ Now we simplify this as $\left(\frac{1}{1-x^2}\right)^4=\binom{3}{3} +\binom{4}{3}x^2+\binom{5}{3}x^4 \cdots$ and in general we want that the coefficient of $x^{2k}$ is $\binom{k+3}{3}.$ We see the $x^{94}$ coefficient so we let $k=47$ and so the coefficient is $\binom{50}{3}=19600$ in which $\frac{n}{100}=\boxed{196}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Except for the first two terms, each term of the sequence $1000, x, 1000 - x,\ldots$ is obtained by subtracting the preceding term from the one before that.  The last term of the sequence is the first \href{https://artofproblemsolving.com/wiki/index.php?title=Negative}{negative} term encountered.  What positive integer $x$ produces a sequence of maximum length?
@@ -456,8 +414,6 @@ We write the generating functions for each of the terms, and obtain $(x+x^3+x^5\
 The best way to start is to just write out some terms.
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Two mathematicians take a morning coffee break each day.  They arrive at the cafeteria independently, at random times between 9 a.m. and 10 a.m., and stay for exactly $m$ minutes.  The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that either one arrives while the other is in the cafeteria is $40 \%,$ and $m = a - b\sqrt {c},$ where $a, b,$ and $c$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, and $c$ is not divisible by the square of any \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}.  Find $a + b + c.$
@@ -477,16 +433,14 @@ Let the two mathematicians be $M_1$ and $M_2$.  Consider plotting the times that
                     \end{figure}
                     It's easier to compute the area of the unshaded region over the area of the total region, which is the probability that the mathematicians do not meet:
 
- $\frac{(60-m)^2}{60^2} = 0.6$
+ <div style="text-align:center;">$\frac{(60-m)^2}{60^2} = 0.6$
 $(60-m)^2 = 36\cdot 60$
 $60 - m = 12\sqrt{15}$
 $\Rightarrow m = 60-12\sqrt{15}$
 
- So the answer is $60 + 12 + 15 = 087$.
+ </div>So the answer is $60 + 12 + 15 = 087$.
 
  
-
-
 
 
 
@@ -522,9 +476,7 @@ Case 1:
             \end{enumerate}
             Solving this \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_equation}{quadratic}, we get two roots, $60 \pm 12\sqrt{15}$. However, $m < 60$, so we discard the greater root; and thus our answer $60 + 12 + 15 = 087$.
 
- \textbf{Video Solution} 
-
-
+ 
 
 
 	\item (\textit{AIME I 1998}) Eight \href{https://artofproblemsolving.com/wiki/index.php?title=Sphere}{spheres} of \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} 100 are placed on a flat \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{surface} so that each sphere is \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent}{tangent} to two others and their \href{https://artofproblemsolving.com/wiki/index.php?title=Center}{centers} are the vertices of a regular \href{https://artofproblemsolving.com/wiki/index.php?title=Octagon}{octagon}.  A ninth sphere is placed on the flat surface so that it is tangent to each of the other eight spheres.  The radius of this last sphere is $a +b\sqrt {c},$ where $a, b,$ and $c$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, and $c$ is not divisible by the square of any \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}.  Find $a + b + c$.
@@ -578,8 +530,6 @@ The key is to realize the significance that the figures are spheres, not \href{h
 
 
 
-
-
 \textbf{Solution 2}
 
 Isolate a triangle, with base length $200$ (a side of the octagon). This triangle is obviously isoceles. Denote the other side length as $x$. Since the interior angle is $45$ degrees (due to the shape being an octagon), then we can apply Law of Cosines to this triangle. We get: 
@@ -596,8 +546,6 @@ Isolate a triangle, with base length $200$ (a side of the octagon). This triangl
  And hence the answer is $100+50+2 = \boxed{152}$
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Three of the edges of a \href{https://artofproblemsolving.com/wiki/index.php?title=Cube}{cube} are $\overline{AB}, \overline{BC},$ and $\overline{CD},$ and $\overline{AD}$ is an interior \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal}.  Points $P, Q,$ and $R$ are on $\overline{AB}, \overline{BC},$ and $\overline{CD},$ respectively, so that $AP = 5, PB = 15, BQ = 15,$ and $CR = 10.$  What is the \href{https://artofproblemsolving.com/wiki/index.php?title=Area}{area} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Polygon}{polygon} that is the \href{https://artofproblemsolving.com/wiki/index.php?title=Intersection}{intersection} of \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{plane} $PQR$ and the cube?
@@ -617,7 +565,9 @@ Isolate a triangle, with base length $200$ (a side of the octagon). This triangl
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1998_11_Solution_Figure_1.png}
                     \end{figure}
-                    This approach uses \href{https://artofproblemsolving.com/wiki/index.php?title=Analytic\_Geometry}{analytic geometry}. Let $A$ be at the origin, $B$ at $(20,0,0)$, $C$ at $(20,0,20)$, and $D$ at $(20,20,20)$. Thus, $P$ is at $(5,0,0)$, $Q$ is at $(20,0,15)$, and $R$ is at $(20,10,20)$. 
+                    
+
+ This approach uses \href{https://artofproblemsolving.com/wiki/index.php?title=Analytic\_Geometry}{analytic geometry}. Let $A$ be at the origin, $B$ at $(20,0,0)$, $C$ at $(20,0,20)$, and $D$ at $(20,20,20)$. Thus, $P$ is at $(5,0,0)$, $Q$ is at $(20,0,15)$, and $R$ is at $(20,10,20)$. 
 
  Let the plane $PQR$ have the equation $ax + by + cz = d$. Using point $P$, we get that $5a = d$. Using point $Q$, we get 
  \[20a + 15c = d \Longrightarrow 4d + 15c = d \Longrightarrow d = -5c\]Using point $R$, we get 
@@ -637,11 +587,11 @@ Isolate a triangle, with base length $200$ (a side of the octagon). This triangl
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1998_11_Solution_Figure_2.png}
                     \end{figure}
-                    The height of the triangles at the top/bottom is $\frac{20\sqrt{2} - 15\sqrt{2}}{2} = \frac{5}{2}\sqrt{2}$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} gives that half of the base of the triangles is $\frac{15}{\sqrt{2}}$. We find that the middle \href{https://artofproblemsolving.com/wiki/index.php?title=Rectangle}{rectangle} is actually a \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square}, so the total area is $(15\sqrt{2})^2 + 4\left(\frac 12\right)\left(\frac 52\sqrt{2}\right)\left(\frac{15}{\sqrt{2}}\right) = 525$.
+                    
+
+ The height of the triangles at the top/bottom is $\frac{20\sqrt{2} - 15\sqrt{2}}{2} = \frac{5}{2}\sqrt{2}$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} gives that half of the base of the triangles is $\frac{15}{\sqrt{2}}$. We find that the middle \href{https://artofproblemsolving.com/wiki/index.php?title=Rectangle}{rectangle} is actually a \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square}, so the total area is $(15\sqrt{2})^2 + 4\left(\frac 12\right)\left(\frac 52\sqrt{2}\right)\left(\frac{15}{\sqrt{2}}\right) = 525$.
 
  
-
-
 
 
 
@@ -666,8 +616,6 @@ First, note that whenever the plane intersects two opposite faces of the cube, t
  We can now find that the hexagon has side lengths $15\sqrt {2}$, $5\sqrt {5}$, $5\sqrt {5}$, $15\sqrt {2}$, $5\sqrt {5}$, and $5\sqrt {5}$.  Moreover, opposite angles of this must be equal (by symmetry), so segment $RY$ divides the \href{https://artofproblemsolving.com/wiki/index.php?title=Hexagon}{hexagon} into two \href{https://artofproblemsolving.com/wiki/index.php?title=Isosceles\_trapezoid}{isosceles trapezoids}.  It is easy to find the length of $RY$ (they're midpoints of opposite edges, so the distance between the two points is equal to a face diagonal of the cube, or $20\sqrt {2}$), so it is now easy to finish the problem. From here, we can continue as in the first solution.
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Let $ABC$ be \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral}, and $D, E,$ and $F$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Midpoint}{midpoints} of $\overline{BC}, \overline{CA},$ and $\overline{AB},$ respectively.  There exist \href{https://artofproblemsolving.com/wiki/index.php?title=Point}{points} $P, Q,$ and $R$ on $\overline{DE}, \overline{EF},$ and $\overline{FD},$ respectively, with the property that $P$ is on $\overline{CQ}, Q$ is on $\overline{AR},$ and $R$ is on $\overline{BP}.$  The \href{https://artofproblemsolving.com/wiki/index.php?title=Ratio}{ratio} of the area of triangle $ABC$ to the area of triangle $PQR$ is $a + b\sqrt {c},$ where $a, b,$ and $c$ are integers, and $c$ is not divisible by the square of any \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}.  What is $a^{2} + b^{2} + c^{2}$?
@@ -716,8 +664,6 @@ The diagram below shows an incorrect version of the problem. To accurately follo
 
 
 
-
-
 \textbf{Solution 2}
 
 WLOG, let $\Delta ABC$ have side length $2.$ Then, $DE = EF = FD = 1.$ We also notice that $\angle CEP = \angle DEF = 60^{\circ},$ meaning $\angle CEF = \angle CEP + \angle DEF = 120^{\circ}.$
@@ -751,8 +697,6 @@ WLOG, let $\Delta ABC$ have side length $2.$ Then, $DE = EF = FD = 1.$ We also n
  
 
 
-
-
 	\item (\textit{AIME I 1998}) If $\{a_1,a_2,a_3,\ldots,a_n\}$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} of \href{https://artofproblemsolving.com/wiki/index.php?title=Real\_numbers}{real numbers}, indexed so that $a_1 < a_2 < a_3 < \cdots < a_n,$ its \textit{complex power sum} is defined to be $a_1i + a_2i^2+ a_3i^3 + \cdots + a_ni^n,$ where $i^2 = - 1.$  Let $S_n$ be the sum of the complex power sums of all nonempty \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subsets} of $\{1,2,\ldots,n\}.$  Given that $S_8 = - 176 - 64i$ and $S_9 = p + qi,$ where $p$ and $q$ are integers, find $\left\lvert p\right\rvert + \left\lvert q\right\rvert.$
 
 
@@ -770,11 +714,6 @@ We note that the number of subsets (for now, including the empty subset, which w
  If a subset of size 1 has a 9, then its power sum must be $9i$, and there is only $1$ of these such subsets. There are ${8\choose1}$ with $9\cdot i^2$, ${8\choose2}$ with $9\cdot i^3$, and so forth. So $T_9 =\sum_{k=0}^{8} 9{8\choose{k}}i^{k+1}$. This is exactly the \href{https://artofproblemsolving.com/wiki/index.php?title=Binomial\_expansion}{binomial expansion} of $9i \cdot (1+i)^8$. We can use \href{https://artofproblemsolving.com/wiki/index.php?title=De\_Moivre\%27s\_Theorem}{De Moivre's Theorem} to calculate the power: $(\sqrt{2})^8\cos{8\cdot45} = 16$. Hence $T_9 = 16\cdot9i = 144i$, and $S_9 = 2S_8 + 144i = 2(-176 -64i) + 144i = -352 + 16i$. Thus, $\left\lvert p\right\rvert + \left\lvert q\right\rvert = \left\lvert -352\right\rvert + \left\lvert 16\right\rvert = \boxed{368}$.
 
  
-
-
- 
-
-
 
 
 	\item (\textit{AIME I 1998}) An $m\times n\times p$ rectangular box has half the volume of an $(m + 2)\times(n + 2)\times(p + 2)$ rectangular box, where $m, n,$ and $p$ are integers, and $m\le n\le p.$  What is the largest possible value of $p$?
@@ -811,8 +750,6 @@ We note that the number of subsets (for now, including the empty subset, which w
 
 
 
-
-
 \textbf{Solution 2}
 
 Similarly as above, we solve for $p,$ but we express the denominator differently:
@@ -824,8 +761,6 @@ Similarly as above, we solve for $p,$ but we express the denominator differently
  \[\implies \dfrac{1}{p}=\dfrac{1}{2}-\dfrac{2(n+5)}{5(n+2)}=\dfrac{n-10}{10(n+2)},\] where we simply let $n=11$ to achieve $p=\boxed{130}.$
 
  
-
-
 
 
 	\item (\textit{AIME I 1998}) Define a \textit{domino} to be an ordered pair of \textit{distinct} positive integers. A \textit{proper sequence} of dominos is a list of distinct dominos in which the first coordinate of each pair after the first equals the second coordinate of the immediately preceding pair, and in which $(i,j)$ and $(j,i)$ do not \textit{both} appear for any $i$ and $j$.  Let $D_{40}$ be the set of all dominos whose coordinates are no larger than 40.  Find the length of the longest proper sequence of dominos that can be formed using the dominos of $D_{40}.$
@@ -852,8 +787,6 @@ We can draw a comparison between the domino a set of 40 points (labeled 1 throug
 
 
 
-
-
 \textbf{Solution 2}
 
 A proper sequence can be represented by writing the common coordinates of adjacent ordered pairs once. For example, represent (4,7),(7,3),(3,5) as $4,7,3,5 .$ Label the vertices of a regular $n$ -gon $1,2,3, \ldots, n .$ Each domino is thereby represented by a directed segment from one vertex of the $n$ -gon to another, and a proper sequence is represented as a path that retraces no segment. Each time that such a path reaches a non-terminal vertex, it must leave it. 
@@ -867,8 +800,6 @@ In this situation, a path can be found that traces every remaining segment exact
  \textbf{Note 1} When $n$ is odd, a proper sequence of length $\binom{n}{2}$ can be found using the dominos of $D_{n}$. In this case, the second coordinate of the final domino equals the first coordinate of the first domino. 
 
  
-
-
 
 
 
@@ -894,8 +825,6 @@ In particular, the longest proper sequence when $n=40$ is 761.
 
 
 
-
-
 \textbf{Solution 4}
 
 Consider the segments joining the vertices of a regular $n$-gon. For odd $n$, we see that the number of segments is quite easily $\binom{n-1}{2}$. This is because every vertex touches every other vertex the same number of times. ($\frac{n-1}{2}$ times to be exact). Hence the answer for odd cases is $n\frac{n-1}{2}=\binom{n-1}{2}$. (This is because a segment that starts at the first vertex also ends at the first vertex).For even $n$ however, every vertex touches $\frac{n-2}{2}$ vertices. However, one may be motivated to say that the answer (as in the odd case) is $n\frac{n-2}{2}$. But this is incorrect, because for the even case, it never ends at the vertex (the first vertex) you started at. So it must end at another vertex. But that vertex has already $\frac{n-2}{2}$ other segments touching it. So we have that the final answer is $1$ plus $n\frac{n-2}{2}$. The case for $n=40$, is $761$.
@@ -908,15 +837,11 @@ Consider the segments joining the vertices of a regular $n$-gon. For odd $n$, we
 
 
 
-
-
 \textbf{Solution 5}
 
 We can see that $|D_{40}| = 780$, since we are choosing 2 integers $[1,40]$, and order doesn't matter because $(i,j)$ and $(j,i)$ aren't both in the set. Then from doing a smaller example of $D_4$, we can note that non-endpoints must have an even number of pairs in $D$ in order for one domino's end to match another's beginning. Then, in order to maximize the length we want to minimize the number of dominoes we remove to make all pairs be even (except endpoints). Then we can see that for every two pairs with an odd number of pairs, we can connect single ends to form a circular chain (i.e. if we want to ensure that 2,3 have even pairs then we can imagine (3,1)(1,2)). Thus we can divide 40 by 4 to get the number of numbers to remove. Thus we need to remove 10 numbers. But each number is connected to another, so we remove 20 dominoes. Thus there are 780-20 = 760 dominoes not including endpoints. Finally, we can add one more domino at the end since it doesn't need to match up with the first of another to make it 761.
 
  
-
-
 
 
 
@@ -941,8 +866,6 @@ $\textbf{Lemma}$:
  We apply the Lemma with $n = 40$ to obtain $40 \cdot(20-1) + 1 = \boxed{761}$.
 
  
-
-
 
 
 \end{enumerate}

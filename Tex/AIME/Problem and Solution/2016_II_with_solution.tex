@@ -16,8 +16,6 @@ Let $r$ be the common ratio, where $r>1$. We then have $ar-9-(a-5)=a(r-1)-4=ar^{
 
 
 
-
-
 \textbf{Solution 2 (Quadratic Formula)}
 
 Let $a$ be Alex's peanuts and $k$ the common ratio. Then we have $a(k^2+k+1)=444$. Adding $k$ to both sides and factoring,
@@ -40,8 +38,6 @@ Substitute $k$ in the second equation to get $(\frac{144-a}{a})^2=\frac{12}{a}$.
 
 
 
-
-
 \textbf{Solution 3}
 
 Let the initial numbers of peanuts Alex, Betty and Charlie had be $a$, $b$, and $c$ respectively.Let the final numbers of peanuts, after eating, be $a'$, $b'$, and $c'$.
@@ -54,15 +50,11 @@ Let the initial numbers of peanuts Alex, Betty and Charlie had be $a$, $b$, and 
 
 
 
-
-
 \textbf{Solution 4}
 
 Bashing is not difficult. All we have to consider is the first equation. We can write it as $x*(1+r+r^2) = 444$. The variable $x$ must be an integer, and after trying all the factors of $444$, it's clear that $r$ is a fraction smaller than $10$. When calculating the coefficient of $x$, we must consider that the fraction produced will very likely have a numerator that divides $444$. Trying a couple will make it easier to find the fraction, and soon you will find that $\frac{4}{3}$ gives a numerator of $37$, a rather specific factor of $444$. Solving for the rest will give you an integer value of $\boxed{108}$. This is by no means a good solution, but it may be faster in a competition if you don't want to mess with several other equations. This is purely up to different individuals.
 
  
-
-
 
 
 
@@ -77,8 +69,6 @@ Let $b$ be the finish number of Betty's peanuts. Then
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) There is a $40\%$ chance of rain on Saturday and a $30\%$ chance of rain on Sunday. However, it is twice as likely to rain on Sunday if it rains on Saturday than if it does not rain on Saturday. The probability that it rains at least one day this weekend is $\frac{a}{b}$, where $a$ and $b$ are relatively prime positive integers. Find $a+b$.
@@ -97,15 +87,11 @@ Let $x$ be the probability that it rains on Sunday given that it doesn't rain on
 
 
 
-
-
 \textbf{Solution 2}
 
 Let Saturday $=6$ and Sunday $=7$. Then, $P(6) = 0.4$, $P(7) = 0.3$, and $P(7 \ | \ 6) = 2P(7 \ | \ 6^c)$. Consider the compliment, that is, $P(7^c \ | \ 6^c)$. This is exactly $1 - P(7 \ | \ 6^c)$. Note that $P(7) = P(7 \cap 6) + P(7 \cap 6^c)$ or $P(7) = P(7 \mid 6)P(6) + P(7 \mid 6^c)P(6^c)$. Let $P(7 \ | \ 6^c) = x$. Then, $P(7 \ | \ 6) = 2x$. So, $\frac{3}{10} = 2x(\frac{2}{5}) + x(\frac{3}{5}) \implies x = \frac{3}{14}$. We require $P(7^c \ | \ 6^c) = \frac{11}{14}$. Then, for $P(7^c \cup 6^c)$, we have $P(6^c) \cdot P(7^c \ | \ 6^c) = \frac{3}{5} \cdot \frac{11}{14} = \frac{33}{70}$. We need $P(7 \ | \ 6) \cup P(7 \ | \ 6^c) \cup P(7^c \ | \ 6) = 1 - P(7^c \cup 6^c) = 1 - \frac{33}{70} = \frac{37}{70} \implies \boxed{107}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) Let $x,y,$ and $z$ be real numbers satisfying the system
@@ -129,8 +115,6 @@ First, we get rid of logs by taking powers: $xyz-3+\log_5 x=2^{5}=32$, $xyz-3+\l
  
 
 
-
-
 	\item (\textit{AIME II 2016}) An $a \times b \times c$ rectangular box is built from $a \cdot b \cdot c$ unit cubes. Each unit cube is colored red, green, or yellow. Each of the $a$ layers of size $1 \times b \times c$ parallel to the $(b \times c)$ faces of the box contains exactly $9$ red cubes, exactly $12$ green cubes, and some yellow cubes. Each of the $b$ layers of size $a \times 1 \times c$ parallel to the $(a \times c)$ faces of the box contains exactly $20$ green cubes, exactly $25$ yellow cubes, and some red cubes. Find the smallest possible volume of the box.
 
 
@@ -147,8 +131,6 @@ By counting the number of green cubes $2$ different ways, we have $12a=20b$, or 
 
 
 
-
-
 \textbf{Solution 2}
 
 The total number of green cubes is given by $12a=20b\Longrightarrow a=\frac{5}{3}b$. 
@@ -162,8 +144,6 @@ The total number of green cubes is given by $12a=20b\Longrightarrow a=\frac{5}{3
  Since $abc^2$ is fixed, $abc$ is minimized when $c$ is maximized, which occurs when $a$, $b$ are minimized (since each of $ac$, $bc$ is fixed). Thus $(a,b,c)=(3,5,12)\Longrightarrow abc=\boxed{180}$
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) Triangle $ABC_0$ has a right angle at $C_0$. Its side lengths are pairwise relatively prime positive integers, and its perimeter is $p$. Let $C_1$ be the foot of the altitude to $\overline{AB}$, and for $n \geq 2$, let $C_n$ be the foot of the altitude to $\overline{C_{n-2}B}$ in $\triangle C_{n-2}C_{n-1}B$. The sum $\sum_{n=2}^\infty C_{n-2}C_{n-1} = 6p$. Find $p$.
@@ -186,8 +166,6 @@ The total number of green cubes is given by $12a=20b\Longrightarrow a=\frac{5}{3
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that by counting the area in 2 ways, the first altitude is $\dfrac{ab}{c}$. By similar triangles, the common ratio is $\dfrac{a}{c}$ for reach height, so by the geometric series formula, we have $6p=\dfrac{\dfrac{ab}{c}}{1-\dfrac{a}{c}}$. Multiplying by the denominator and expanding, the equation becomes $\dfrac{ab}{c}=6a+6b+6c-\dfrac{6a^2}{c}-\dfrac{6ab}{c}-6a$. Cancelling $6a$ and multiplying by $c$ yields $ab=6bc+6c^2-6a^2-6ab$, so $7ab = 6bc+6b^2$ and $7a=6b+6c$. Checking for Pythagorean triples gives $13,84,$ and $85$, so $p=13+84+85=\boxed{182}$
@@ -197,8 +175,6 @@ Note that by counting the area in 2 ways, the first altitude is $\dfrac{ab}{c}$.
  Solution modified/fixed from Shaddoll's solution.
 
  
-
-
 
 
 
@@ -237,8 +213,6 @@ Adding (1) and (2) together, we find that
 
 
 
-
-
 \textbf{Solution 4}
 
 
@@ -265,8 +239,6 @@ Adding (1) and (2) together, we find that
 
 
 
-
-
 \textbf{Solution 5}
 
 This solution proceeds from $\frac{\frac{ab}{c}}{1-\frac{a}{c}} = \frac{\frac{ab}{c}}{\frac{c-a}{c}} = \frac{ab}{c-a} = 6(a+b+c)$. Note the general from for a primitive pythagorean triple, $m^2-n^2, 2mn, m^2+n^2$ and after substitution, letting $a = m^2-n^2, b = 2mn, c = m^2+n^2$ into the previous equation simplifies down very nicely into $m = 13n$. Thus $a = 168n^2, b = 26n^2, c = 170n^2$. Since we know all three side lengths are relatively prime, we must divide each by 2 and let n = 1 giving $a = 84, b = 13, c = 85$ yielding $p = a + b + c = \boxed{182}$.
@@ -274,8 +246,6 @@ This solution proceeds from $\frac{\frac{ab}{c}}{1-\frac{a}{c}} = \frac{\frac{ab
  Alternate way to find a, b, and c (from VarunGotem) :  $7a=6b+6c$ implies that $6b=7a-6c$. Because $a^2+b^2=c^2$, $36a^2+(6b)^2=36c^2$. Plugging in gives $85a^2-84ac+36c^2=36c^2$. Simplifying gives $85a-84c=0$, and since $a$ and $c$ are relatively prime, $a=84$ and $c=85$. This means $b=13$ and $p=13+84+85=\boxed{182}$.
 
  
-
-
 
 
 
@@ -291,8 +261,6 @@ For this problem, first notice that its an infinite geometric series of $6(a+b+c
  Now this is just clear. Let $x=7m$ and $y=6m$ for $m$ to be a positive integer, the pythagorean triple is $13-84-85$ which yields $\boxed{182}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) For polynomial $P(x)=1-\dfrac{1}{3}x+\dfrac{1}{6}x^{2}$, define
@@ -313,8 +281,6 @@ Note that $P(n)$ substitutes $n$ as $x$ into $P(x)$. So, $P(x^3)$ substitutes $x
 
 
 
-
-
 \textbf{Solution 2}
 
 Note that all the coefficients of odd-powered terms is an odd number of odd degree terms multiplied together, and all coefficients of even-powered terms have an even number of odd degree terms multiplied together. Since every odd degree term is negative, and every even degree term is positive, the sum is just equal to $Q(-1)=P(-1)^{5}=\left( \dfrac{3}{2}\right)^{5}=\dfrac{243}{32}$, so the desired answer is $243+32=\boxed{275}$.
@@ -322,8 +288,6 @@ Note that all the coefficients of odd-powered terms is an odd number of odd degr
  [YINGLINWU] Just a quick comment: After multiplying out the product for Q(x) into the sum of monomials, the coefficient of a monomial of even degree is always positive while the coefficient of a monomial of odd degree is always negative. Therefore, as we are collecting similar terms, no coefficients of monomials cancel out. It follows that the sum of absolute values of coefficients of Q(x) is the same as that of Q(-x), which is given by Q(-1).
 
  
-
-
 
 
 
@@ -343,15 +307,11 @@ To find the sum of the absolute values of the coefficients of $Q(x)$, we can jus
 
 
 
-
-
 \textbf{Solution 4 (risky)}
 
 Multiply $P(x)P(x^3)$ and notice that the odd degree terms have a negative coefficient. Observing that this is probably true for all polynomials like this (including $P(x)P(x^3)P(x^5)P(x^7)P(x^9)$), we plug in $-1$ to get $\frac{243}{32} \implies \boxed{275}$.
 
  
-
-
 
 
 
@@ -364,8 +324,6 @@ We expand and add the numbers (I made two very easy mistakes and fixed them).
  -maxamc
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) Squares $ABCD$ and $EFGH$ have a common center and $\overline{AB} || \overline{EF}$. The area of $ABCD$ is 2016, and the area of $EFGH$ is a smaller positive integer. Square $IJKL$ is constructed so that each of its vertices lies on a side of $ABCD$ and each vertex of $EFGH$ lies on a side of $IJKL$. Find the difference between the largest and smallest positive integer values for the area of $IJKL$.
@@ -397,8 +355,6 @@ The minimum area is $1008$ (every square is half the area of the square whose si
  
 
 
-
-
 	\item (\textit{AIME II 2016}) Find the number of sets $\{a,b,c\}$ of three distinct positive integers with the property that the product of $a,b,$ and $c$ is equal to the product of $11,21,31,41,51,$ and $61$.
 
 
@@ -415,8 +371,6 @@ Note that the prime factorization of the product is $3^{2}\cdot 7 \cdot 11 \cdot
 
 
 
-
-
 \textbf{Solution 2}
 
 Again, notice that the prime factors of the product are $3, 3, 7, 11, 17, 31, 41, 61$. In this problem, we are asked to partition this set of distinct(ish) factors into three smaller indistinct sets. To do this, we can use Stirling numbers of the second kind, but Stirling numbers of the second kind would assume no empty parts, which isn't what we want. However, this is easy to fix. Denote Stirling numbers of the second kind with $S(n,k)$. We may start at the situation when all three sets are nonempty. Then, the number of partitions is simply $S(8,3)$. However, we are overcounting, since every time the two threes are in different sets, (unless they are both individually in their own sets), each one is double counted. To fix this, we can see that they were in different sets $S(8, 3) - S(7,3)$ times by complementary counting, but one of these times they were in their own individual sets, so the total overcount is $\dfrac{S(8,3) - S(7,3) - 1}{2}$. Similarly, we can do the cases for if two of the sets are nonempty and one of the sets are nonempty, (but in those last two cases the threes cannot be individually in their own sets). We then find that the "answer" is given by:
@@ -426,8 +380,6 @@ Again, notice that the prime factors of the product are $3, 3, 7, 11, 17, 31, 41
  - Aathreyakadambi
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) The sequences of positive integers $1,a_2, a_3,...$ and $1,b_2, b_3,...$ are an increasing arithmetic sequence and an increasing geometric sequence, respectively. Let $c_n=a_n+b_n$. There is an integer $k$ such that $c_{k-1}=100$ and $c_{k+1}=1000$. Find $c_k$.
@@ -446,8 +398,6 @@ Since all the terms of the sequences are integers, and 100 isn't very big, we sh
 
 
 
-
-
 \textbf{Solution 2 (Some trial and error)}
 
 We have $a_k=r^{k-1}$ and $b_k=(k-1)d$. First, $b_{k-1}<c_{k-1}=100$ implies $d<100$, so $b_{k+1}<300$. 
@@ -462,8 +412,6 @@ We have $a_k=r^{k-1}$ and $b_k=(k-1)d$. First, $b_{k-1}<c_{k-1}=100$ implies $d<
 
 
 
-
-
 \textbf{Solution 3}
 
 Using the same reasoning ($100$ isn't very big), we can guess which terms will work. The first case is $k=3$, so we assume the second and fourth terms of $c$ are $100$ and $1000$. We let $r$ be the common ratio of the geometric sequence and write the arithmetic relationships in terms of $r$.
@@ -475,8 +423,6 @@ Using the same reasoning ($100$ isn't very big), we can guess which terms will w
  Solution by rocketscience
 
  
-
-
 
 
 
@@ -500,8 +446,6 @@ The reason for bashing in this context can also be justified by the fact 100 isn
 
 
 
-
-
 \textbf{Solution 5 (Casework)}
 
 Let $a_n$ and $b_n$ be in the form of
@@ -514,8 +458,6 @@ Let $a_n$ and $b_n$ be in the form of
  \[c_{k-1} = 3^{k-2} + (k-2) a + 1 = 100, c_{k+1} = 3^k + ka + 1 = 1000\implies a = 450-4\cdot 3^{k-2} \implies 3^{k-4}(9-4k) +50k = 3\cdot 37  \implies \O.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) Triangle $ABC$ is inscribed in circle $\omega$. Points $P$ and $Q$ are on side $\overline{AB}$ with $AP<AQ$. Rays $CP$ and $CQ$ meet $\omega$ again at $S$ and $T$ (other than $C$), respectively. If $AP=4,PQ=3,QB=6,BT=5,$ and $AS=7$, then $ST=\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -547,8 +489,6 @@ Let $a_n$ and $b_n$ be in the form of
 
 
 
-
-
 \textbf{Solution 2 (Projective Geometry)}
 
 
@@ -560,8 +500,6 @@ Let $a_n$ and $b_n$ be in the form of
  \[\frac{3}{4}\times \frac{13}{6}=(A,Q;P,B)\stackrel{C}{=}(A,T;S,B)=\frac{ST}{7}\times \frac{13}{5}\] which easily gives $ST=\frac{35}{8}\Longrightarrow 35+8=\boxed{043}$.
 
  
-
-
 
 
 
@@ -590,8 +528,6 @@ Thus the answer is $\boxed{43}$.
 
 
 
-
-
 \textbf{Solution 4}
 
 Extend $\overline{AB}$ past $B$ to point $X$ so that $CPTX$ is cyclic. Then, by Power of a Point on $CPTX$, $(CQ)(QT) =  (PQ)(QX)$. By Power of a Point on $CATB$, $(CQ)(QT) = (AQ)(QB) = 42$. Thus, $(PQ)(QX) = 42$, so $BX = 8$. 
@@ -599,8 +535,6 @@ Extend $\overline{AB}$ past $B$ to point $X$ so that $CPTX$ is cyclic. Then, by 
  By the Inscribed Angle Theorem on $CPTX$, $\angle SCT = \angle BXT$. By the Inscribed Angle Theorem on $ASTC$, $\angle SCT = \angle SAT$, so $\angle BXT = \angle SAT$. Since $ASTB$ is cyclic, $\angle AST = \angle TBX$. Thus, $\triangle AST \sim \triangle XBT$, so $AS/XB = ST/BT$. Solving for $ST$ yields $ST = \frac{35}{8}$, for a final answer of $35+8 = \boxed{043}$.
 
  
-
-
 
 
 
@@ -625,8 +559,6 @@ Extend $\overline{AB}$ past $B$ to point $X$ so that $CPTX$ is cyclic. Then, by 
 
 
 
-
-
 \textbf{Solution 6}
 
 Connect $AT$ and $\angle{SCT}=\angle{SAT}, \angle{ACS}=\angle{ATS}, \frac{ST}{\sin \angle{SAT}}=\frac{AS}{\sin \angle{ATS}}$
@@ -639,16 +571,12 @@ Connect $AT$ and $\angle{SCT}=\angle{SAT}, \angle{ACS}=\angle{ATS}, \frac{ST}{\s
 
 
 
-
-
 \textbf{Solution 7 (no trig or projections)}
 
 Note that since $\triangle SAP~\triangle BCP$, $\frac{9}{SP}=\frac{BC}{7}=\frac{PC}{4}$. Furthermore, since $\triangle ACQ~\triangle TBQ$, we have $\frac{7}{TQ}=\frac{AC}{5}=\frac{QC}{6}$. From Stewart's on triangle $BCP$, we have $25CQ+BC^2\cdot TQ=TQ\cdot CQ\cdot TC+36TC$, and since $TQ\cdot CQ=6\cdot7=42$ by power of a point, this simplifies to $25CQ+BC^2\cdot TQ=78TC$. Similarly, $49CP+AC^2\cdot SP=52SC$. Finally, using Ptolemy's on quadrilateral $ACBS$ yields $13SC=7BC+SB\cdot AC$, and using Ptolemy's on quadrilateral $ACBT$ yields $13TC=5AC+TA\cdot BC$. From Ptolemy's on $ABTS$, we find $SB\cdot TA=13ST+35$, which is nice because it contains $ST$.We return to our first Stewart's equation: $25CQ+BC^2\cdot TQ=78TC$, and we notice that $CQ$ and $TQ$ can be related to $AC$ using our similar triangle conditions. Substituting gives us $30AC+\frac{35BC^2}{AC}=78TC$, which by four times our first Ptolemy's equation also equals $30AC+6TA\cdot BC$. Thus, $\frac{35BC^2}{AC}=6TA\cdot BC$ and $TA=\frac{35}{6}\cdot\frac{BC}{AC}$. Similarly, from our other Stewart's equation, we find $28BC+\frac{63AC^2}{BC}=52SC=28BC+4SB\cdot AC$, or $SB=\frac{63}{4}\cdot\frac{AC}{BC}$. Plugging this into our final Ptolemy's equation, we find 
  \[SB\cdot TA=13ST+35\Longrightarrow\frac{35\cdot63}{6\cdot4}=13ST+35\Longrightarrow ST=\frac{\frac{35\cdot21}{8}-35}{13}=\frac{35\cdot\frac{13}{8}}{13}=\frac{35}{8},\]giving us our final answer of $\boxed{043}$.
 
  
-
-
 
 
 
@@ -684,8 +612,6 @@ Let $\angle STB = \theta$. Since quadrilateral $STBA$ is cyclic, let $ST = x$ an
 
 
 
-
-
 \textbf{Solution 9 (Another Projective)}
 
 All lengths are directed. We have 
@@ -697,8 +623,6 @@ All lengths are directed. We have
  Solving yields that $ST = \frac{8}{35}$, so our answer is $\boxed {043}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) For positive integers $N$ and $k$, define $N$ to be $k$-nice if there exists a positive integer $a$ such that $a^{k}$ has exactly $N$ positive divisors. Find the number of positive integers less than $1000$ that are neither $7$-nice nor $8$-nice.
@@ -719,8 +643,6 @@ We claim that an integer $N$ is only $k$-nice if and only if $N \equiv 1 \pmod k
 
 
 
-
-
 \textbf{Solution 2}
 
 All integers $a$ will have factorization $2^a3^b5^c7^d...$. Therefore, the number of factors in $a^7$ is $(7a+1)(7b+1)...$, and for $a^8$ is $(8a+1)(8b+1)...$. The most salient step afterwards is to realize that all numbers $N$ not $1 \pmod{7}$ and also not $1 \pmod{8}$ satisfy the criterion. The cycle repeats every $56$ integers, and by PIE, $7+8-1=14$ of them are either $7$-nice or $8$-nice or both. Therefore, we can take $\frac{42}{56} * 1008 = 756$ numbers minus the $7$ that work between $1000-1008$ inclusive, to get $\boxed{749}$ positive integers less than $1000$ that are not nice for $k=7, 8$.
@@ -729,15 +651,11 @@ All integers $a$ will have factorization $2^a3^b5^c7^d...$. Therefore, the numbe
 
 
 
-
-
 \textbf{Solution 3}
 
 An easier way to get $N \equiv 1 \pmod k$. Notice that they define $k$-nice to be $a^k$ has $N$ positive divisors. This implies that if $a$ is prime, then $N$ is only $k$-nice if and only if $k+1 = N$. Thus, we have proved that $N \equiv 1 \pmod k$ for $a$ prime. Then, assume $a$ is composite. Then, $a$ itself can be split into multiple factors, each containing $kx+1$ per term for the prime factorization. Then, notice that this case becomes trivial! All factors split into multiples of $k$, and obviously sums of $k$ are divisible by $k$, EXCEPT for one, that being, 1 itself. Then, we have proved that $N$ is also $k$-nice if $N \equiv 1\pmod k$. Then, as said in prior solutions, we must not have $n \equiv 1 \pmod 7$ and $n \equiv 1 \pmod 8$. Counting all $1 \pmod 7$ between 1 and 1000, we have every number in the form $7N + 1$. There are then 143 numbers that satisfy that constraint. Then, for $1 \pmod 8$, we have $8N + 1$, and there are 125 number that satisfy that. Then, to deal with $1 \pmod {56}$ (we over counted), we have 18 numbers, and thus to total number of $7$ and $8$ nice numbers is $143+125 - 18 = 250$ numbers, and our answer is $999-250 = \boxed{749}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) The figure below shows a ring made of six small sections which you are to paint on a wall. You have four paint colors available and you will paint each of the six sections a solid color. Find the number of ways you can choose to paint the sections if no two adjacent sections can be painted with the same color.
@@ -771,8 +689,6 @@ Choose a section to start coloring. Assume, WLOG, that this section is color $1$
 
 
 
-
-
 \textbf{Solution 2}
 
 We use complementary counting. There are $4^6$ total colorings of the ring without restriction. To count the complement, we wish to count the number of colorings in which at least one set of adjacent sections are the same color. There are six possible sets of adjacent sections that could be the same color (think of these as borders). Call these $B_1,B_2,\dots,B_6$. Let $\mathcal{A}_1, \mathcal{A}_2,\dots,\mathcal{A}_6$ be the sets of colorings of the ring where the sections on both sides of $B_1,B_2,\dots,B_6$ are the same color. We wish to determine $|\mathcal{A}_1\cup\mathcal{A}_2\cup\cdots\cup\mathcal{A}_6|$. Note that all of these cases are symmetric, and in general, $|\mathcal{A}_i|=4^5$. There are $6$ such sets $\mathcal{A}_i$. Also, $|\mathcal{A}_i\cup\mathcal{A}_j|=4^4$, because we can only change colors at borders, so if we have two borders along which we cannot change colors, then there are four borders along which we have a choice of color. There are $\binom{6}{2}$ such pairs $\mathcal{A}_i\cup\mathcal{A}_j$. Similarly, $|\mathcal{A}_i\cup \mathcal{A}_j\cup \mathcal{A}_k|=4^3$, with $\binom{6}{3}$ such triples, and we see that the pattern will continue for 4-tuples and 5-tuples. For 6-tuples, however, these cases occur when there are no changes of color along the borders, i.e., each section has the same color. Clearly, there are four such possibilities.
@@ -785,8 +701,6 @@ We use complementary counting. There are $4^6$ total colorings of the ring witho
 
 
 
-
-
 \textbf{Solution 3}
 
 We use generating functions. Suppose that the colors are $0,1,2,3$.  Then as we proceed around a valid coloring of the ring in the clockwise direction, we know that between two adjacent sections with colors $s_i$ and $s_{i+1}$, there exists a number $d_i\in\{1,2,3\}$ such that $s_{i+1}\equiv s_i+d_i\pmod{4}$. Therefore, we can represent each border between sections by the generating function $(x+x^2+x^3)$, where $x,x^2,x^3$ correspond to increasing the color number by $1,2,3\pmod4$, respectively. Thus the generating function that represents going through all six borders is $A(x)=(x+x^2+x^3)^6$, where the coefficient of $x^n$ represents the total number of colorings where the color numbers are increased by a total of $n$ as we proceed around the ring. But if we go through all six borders, we must return to the original section, which is already colored. Therefore, we wish to find the sum of the coefficients of $x^n$ in $A(x)$ with $n\equiv 0\pmod4$.
@@ -796,8 +710,6 @@ We use generating functions. Suppose that the colors are $0,1,2,3$.  Then as we 
  \[\frac{A(1)+A(i)+A(-1)+A(-i)}{4}=\frac{3^6+(-1)^6+(-1)^6+(-1)^6}{4}=\frac{732}{4}.\]We multiply this by $4$ to account for the initial choice of color, so our answer is $\boxed{732}$.
 
  
-
-
 
 
 
@@ -815,15 +727,11 @@ Let $f(n)$ be the number of valid ways to color a ring with $n$ sections (which 
 
 
 
-
-
 \textbf{Solution 4b (solution for all values of n)}
 
 Do the same as solution 4 to get $f(n) = 4 \cdot 3^{n-1} - f(n-1)$. Then, multiply both sides by $(-1)^{n}$ to get $(-1)^{n}f(n) = (-1)^{n-1}f(n-1) - 4 \cdot (-3)^{n-1}$. Let $g(n) = (-1)^{n}f(n)$, $g(n) = g(n-1) - 4 \cdot (-3)^{n-1}$. $g(n) = g(2) - 4((-3)^{2}+(-3)^{3}+ \cdots + (-3)^{n-1}) = g(2) - 9(1-(-3)^{n-2})$. $f(n) = (-1)^{n}g(n) = (-1)^{n}g(2)-9(-1)^{n}+3^{n} = \boxed{3(-1)^{n}+3^{n}}$.
 
  
-
-
 
 
 
@@ -842,8 +750,6 @@ Label the sections 1, 2, 3, 4, 5, 6 clockwise. We do casework on the colors of s
  Solution by ADMathNoob
 
  
-
-
 
 
 
@@ -867,8 +773,6 @@ We will take a recursive approach to this problem. We can start by writing out t
 
 
 
-
-
 \textbf{Solution 7}
 
 WLOG, color the top left section $1$ and the top right section $2$. Then the left section can be colored $2$, $3$, or $4$, and the right section can be colored $1$, $3$, or $4$. There are $3 \cdot 3 = 9$ ways to color the left and right sections. We split this up into two cases.
@@ -883,8 +787,6 @@ WLOG, color the top left section $1$ and the top right section $2$. Then the lef
 
 
 
-
-
 \textbf{Solution 8}
 
 Label the four colors $1, 2, 3,$ and $4$, respectively.Now let's imagine a circle with the four numbers $1, 2, 3,$ and $4$ written clockwise. We'll say that a bug is standing on number $a$. It is easy to see that for the bug to move to a different number, it must walk $1, 2,$ or $3$ steps clockwise. (This is since adjacent numbers can't be the same, as stated in the problem). Note that the sixth number in the bug's walking sequence must not equal the first number. Thus, our total number of ways, $N$, given the bug's starting number $k$, is simply the number of ordered quintuplets of positive integers $(a_1, a_2, a_3, a_4, a_5)$ that satisfy $a_i \in \{1, 2, 3\}$ for all $1 \leq i \leq 5$ and
@@ -893,8 +795,6 @@ Label the four colors $1, 2, 3,$ and $4$, respectively.Now let's imagine a circl
  \[N = 4 \times (3^5 - 2 \times 30) = \boxed{732}.\]-fidgetboss\_4000
 
  
-
-
 
 
 
@@ -929,15 +829,11 @@ Let's number the regions $1,2,\dots 6$. Suppose we color regions $1,2,3$. Then, 
 
 
 
-
-
 \textbf{Solution 10 (chromatic polynomial-VERY HELPFUL)}
 
 We quickly notice that this is just the cycle graph with 6 vertices. The chromatic polynomial for a cycle is $(k-1)^n+(-1)^n (k-1)$ where we use $k$ colors on a cycle of $n$ vertices. Plugging in $k=4$ and $n=6$ we arrive at $\boxed{732}$.~chrisdiamond10
 
  
-
-
 
 
 
@@ -964,8 +860,6 @@ Let's label the regions as $1,2,3,4,5,6$ in that order. We start with region $1$
 
 
 
-
-
 \textbf{Solution 12 (Probability & Expected Value)}
 
 Let the top-right segment be segment $1,$ and remaining segments are numbered $2,3,4,5,6$ in clockwise order.We have $4$ choices for segment $1,$ and $3$ choices for segments $2,3,4,5.$ For segment $6,$ we wish to find the expected value of the number of choices for segment $6$'s color, which depends on whether segment $5$ is red. If we let $P(n)$ denote the probability of segment $P$ being the same color as segment $1$ (for simplicity, denote segment $1$'s color as red), we get the following recurrence relation:
@@ -977,6 +871,24 @@ Let the top-right segment be segment $1,$ and remaining segments are numbered $2
  
 
 
+
+\textbf{Solution 13 (Generating Functions)}
+
+Let $m$ denote the number of sections to color, and let $n$ denote the number of available colors. We assign value to the sections given their color, that is, $c_i\in\{0,1,\ldots, n-1\}$. And we define the difference $d_i=c_{i+1}-c_i\bmod{n}$, where $c_{n+1}=c_1$. Since $c_i$ and $c_{i+1}$ do not have the same value, We see that $d_i\in\{1,2,\ldots, n-1\}$. Also, $\sum_{i=1}^{m}d_i=0\bmod{n}$ by telescoping. We are interested in the total number of ways to assign the values of the sequence $\{d_i\}$, given the value of the first section $c_1\in\{0,1,\ldots, n-1\}$, such that $n$ divides the sum $\sum_{i=1}^{m}d_i$.
+
+ Using generating functions, this equates to finding the sum of the coefficients of the terms whose exponents are multiples of $n$ of the function:
+ \[f(x)=(x+x^2+\cdots+x^{n-1})^m=\sum_{k=m}^{(n-1)m}a_k x^k\]Let $\omega=e^{i\frac{2\pi}{n}}$. Note that for $n\nmid k\implies \omega^k\neq 1$, the sum
+ \[S_k=1+\omega^{k}+\omega^{2k}+\ldots+\omega^{(n-1)k}=\sum_{i=0}^{n-1}(\omega^k)^{i}=\frac{\omega^{nk}-1}{\omega^k -1}=0\]When $n\mid k$, we always have $\omega^k=1$. The same sum evaluates to 
+ \[S_k=1+\omega^{k}+\omega^2+\ldots+\omega^{(n-1)k}=\sum_{i=0}^{n-1}1=n\]It follows that
+ \[\sum_{k=0}^{n-1}f(\omega^{k})=\sum_{k=m}^{(n-1)m}S_k\cdot a_k=n\sum_{n\mid k}a_k\]Therefore, we want
+ \[\sum_{n\mid k}a_k=\frac{f(1)+f(\omega)+\ldots +f(\omega^{n-1})}{n}=\frac{(n-1)^m+f(\omega)+f(\omega^2)+\ldots +f(\omega^{n-1})}{n}\]For any $k\in\{1,2,\ldots, n-1\}$, the result of the sum
+ \[\omega^k+\omega^{2k}+\ldots +\omega^{(n-1)k}=\omega^k\cdot\frac{1-\omega^{(n-1)k}}{1-\omega^k}=\frac{\omega^k -1}{1-\omega^k}=-1\]implies that our desired sum of coefficients evaluates to
+ \[\sum_{n\mid k}a_k=\frac{(n-1)^m +(n-1)(-1)^m}{n}\]However, we realize that one valid sequence $\{d_i\}$ only specifies the relative order of the way to assign the colors. We need to multiply the sum by $n$ to ensure we obtain all available ways for coloring.
+
+ Thus, the number of ways to color $m$ sections using $n$ different colors where no adjacent sections have the same color is
+ \[(n-1)^m+(n-1)(-1)^m\]Plug-in $m=6, n=4$ gives $3^6+3=\boxed{732}$, as desired.
+
+ 
 
 
 	\item (\textit{AIME II 2016}) Beatrix is going to place six rooks on a $6 \times 6$ chessboard where both the rows and columns are labeled $1$ to $6$; the rooks are placed so that no two rooks are in the same row or the same column. The \textit{value} of a square is the sum of its row number and column number. The \textit{score} of an arrangement of rooks is the least value of any occupied square. The average score over all valid configurations is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -1027,8 +939,6 @@ We casework to find the number of ways to get each possible score. Note that the
 
 
 
-
-
 \textbf{Solution 2}
 
 If the score is $n+1$, then one of the rooks must appear in the $n$th antidiagonal, and this is the first antidiagonal in which a rook can appear. To demonstrate this, we draw the following diagram when $n=4$.
@@ -1052,8 +962,6 @@ If the score is $n+1$, then one of the rooks must appear in the $n$th antidiagon
 
 
 
-
-
 \textbf{Solution 3}
 
 So we first count the number of permutations with score $\ge 2$. This is obviously $6!=720$. Then, the number of permutations with score $\ge 3$ can also be computed: in the first column, there are five ways to place a rook- anywhere but the place with score $1$. In the next column, there are $5$ ways to place a rook- anywhere but the one in the same row as the previous row. We can continue this to obtain that the number of permutations with score $\ge 3$ is $600$. Doing the same for scores $\ge 4$, $\ge 5$, $\ge 6$, and $\ge 7$ we obtain that these respective numbers are $384$, $162$, $32$, $1$. 
@@ -1070,16 +978,12 @@ So we first count the number of permutations with score $\ge 2$. This is obvious
 
 
 
-
-
 \textbf{Solution 4 (builds off Solution 3)}
 
 The problem is asking us to compute $\mathbb{E}[S]$, where $S$ is the random variable that takes an arrangement of rooks and outputs its score, which is a non-negative integer quantity. For any random variable $S$ with non-negative integer values, we have the tail sum formula
  \[\mathbb{E}[S] = \sum_{n = 1}^{\infty}\mathbb{P}(S\geq n).\]These probabilities can be computed as in Solution 3, giving us the following table.
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) Equilateral $\triangle ABC$ has side length $600$. Points $P$ and $Q$ lie outside the plane of $\triangle ABC$ and are on opposite sides of the plane. Furthermore, $PA=PB=PC$, and $QA=QB=QC$, and the planes of $\triangle PAB$ and $\triangle QAB$ form a $120^{\circ}$ dihedral angle (the angle between the two planes). There is a point $O$ whose distance from each of $A,B,C,P,$ and $Q$ is $d$. Find $d$.
@@ -1098,15 +1002,11 @@ The inradius of $\triangle ABC$ is $100\sqrt 3$ and the circumradius is $200 \sq
 
 
 
-
-
 \textbf{Solution 2 (Short & Simple)}
 
 Draw a good diagram. Draw $CH$ as an altitude of the triangle. Scale everything down by a factor of $100\sqrt{3}$, so that $AB=2\sqrt{3}$. Finally, call the center of the triangle U. Draw a cross-section of the triangle via line $CH$, which of course includes $P, Q$. From there, we can call $OU=h$. There are two crucial equations we can thus generate. WLOG set $PU<QU$, then we call $PU=d-h, QU=d+h$. First equation: using the Pythagorean Theorem on $\triangle UOB$, $h^2+2^2=d^2$. Next, using the tangent addition formula on angles $\angle PHU, \angle UHQ$ we see that after simplifying $-d^2+h^2=-4, 2d=3\sqrt{3}$ in the numerator, so $d=\frac{3\sqrt{3}}{2}$. Multiply back the scalar and you get $\boxed{450}$. Not that hard, was it?
 
  
-
-
 
 
 
@@ -1138,8 +1038,6 @@ To make numbers more feasible, we'll scale everything down by a factor of $100$ 
 
 
 
-
-
 \textbf{Solution 4}
 
 We use the diagram from solution 3. From basic angle chasing,
@@ -1154,8 +1052,6 @@ We use the diagram from solution 3. From basic angle chasing,
  -EZmath2006
 
  
-
-
 
 
 
@@ -1190,8 +1086,6 @@ We use the diagram from solution 3.
 
 
 
-
-
 \textbf{Solution 6 (Geometry)}
 
 
@@ -1221,8 +1115,6 @@ We use the diagram from solution 3.
  \[r = 3b\implies d = \frac {3a}{2} = \boxed {450}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
-
-
 
 
 
@@ -1264,8 +1156,6 @@ Let $M$ be the midpoint of $\overline{AB}$ and $X$ the center of $\triangle ABC$
 
 
 
-
-
 \textbf{Solution 8 (Law of Cosines)}
 
 Let $Z$ be the center of $\triangle ABC$. Let $A’$ be the midpoint of $AB$. Let $ZA’ = c = 100\sqrt{3}$ and $ZA = 2c = 200\sqrt{3}$. Let $PZ = a$ and $QZ = b$. We will be working in the plane that contains the points: $A$, $P$, $A’$, $Q$, $O$, and $Z$.
@@ -1278,8 +1168,6 @@ Let $Z$ be the center of $\triangle ABC$. Let $A’$ be the midpoint of $AB$. Le
  \[a^2 + b^2 = 19c^2 = 570000\]. Adding $2ab = 8c^2$ to both sides we get $PQ = a + b = 900$. Since $O$ is the midpoint of $PQ$, $d = PO = \boxed{450}$
 
  
-
-
 
 
 
@@ -1301,8 +1189,6 @@ Set $AB = s, M$ as midpoint $BC, I$ as the center of equilateral $\triangle ABC,
 
 
 
-
-
 \textbf{Solution 10 (Coordinate Geometry)}
 
 We begin by scaling the entire diagram by a factor of $\frac{1}{50}$. We establish a coordinate system with $AC$ being the $x$-axis, where $A$ is the origin. Note that $P,Q,O$ all lie on the line $x=6, y=2\sqrt{3}$ in order to achieve the equidistant condition. Let $M$ be the midpoint of $AB$. Here is our setup:\begin{align*}A&=(0,0,0)\\B&=(6,6\sqrt{3},0)\\C&=(12,0,0)\\M&=(3,3\sqrt{3},0)\\P&=(6,2\sqrt{3},z_{1})\\Q&=(6,2\sqrt{3},z_{2})\\O&=(6,2\sqrt{3},\frac{z_{1}+z_{2}}{2})\end{align*}
@@ -1312,8 +1198,6 @@ We see that $z_1z_2=-48$, and the second equation simplifies to
  \[OP=\sqrt{\frac{(z_1-z_2)^2}{4}}=\sqrt{\frac{228+96}{4}}=9\]Scaling the distance by $50$ yields $d=9\cdot 50=\boxed{450}$, as desired.
 
  
-
-
 
 
 	\item (\textit{AIME II 2016}) For $1 \leq i \leq 215$ let $a_i = \dfrac{1}{2^{i}}$ and $a_{216} = \dfrac{1}{2^{215}}$. Let $x_1, x_2, ..., x_{216}$ be positive real numbers such that $\sum_{i=1}^{216} x_i=1$ and $\sum_{1 \leq i < j \leq 216} x_ix_j = \dfrac{107}{215} + \sum_{i=1}^{216} \dfrac{a_i x_i^{2}}{2(1-a_i)}$. The maximum possible value of $x_2=\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1336,8 +1220,6 @@ Substituting this into the second equation and collecting $x_i^2$ terms, we find
 
 
 
-
-
 \textbf{Solution 2}
 
 Squaring $\sum_{i=1}^{216}x_i$ yields\begin{gather*}\sum_{i=1}^{216}x_{i}^{2}+2\sum_{1\le i < j\le 216}x_{i}x_{j}=1\\\frac{214}{215}+\sum_{i=1}^{216}\frac{x_{i}^{2}}{1-a_{i}}=1\\\frac{4}{3}x_{2}^{2}=\frac{1}{215}-\sum_{i\neq 2}\frac{x_{i}^2}{1-a_{i}}\end{gather*}By the Cauchy-Schwarz Inequality,
@@ -1345,11 +1227,6 @@ Squaring $\sum_{i=1}^{216}x_i$ yields\begin{gather*}\sum_{i=1}^{216}x_{i}^{2}+2\
  \[\frac{4}{3}x_{2}^{2}=\frac{1}{215}-\frac{4(1-x_{2})^2}{857}\]Solving yields $x_{2}=\frac{3}{860}$, and the requested sum is $3+860=\boxed{863}$.
 
  
-
-
- 
-
-
 
 
 \end{enumerate}

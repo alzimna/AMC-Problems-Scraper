@@ -16,8 +16,6 @@ Suppose we have an arithmetic sequence of integers that includes $4, 24,$ and $3
  
 
 
-
-
 	\item (\textit{AIME II 2026}) The figure below shows a grid of $10$ squares in a row. Each square has a diagonal connecting its lower left vertex to its upper right vertex. A bug moves along the line segments from vertex to vertex, never traversing the same segment twice and never moving from right to left along a horizontal or diagonal segment. Let $N$ be the number of paths the bug can take from the lower left corner ($A$) to the upper right corner ($B$). One such path from $A$ to $B$ is shown by the thick line segments in the figure. Find $\sqrt{N}$.
 
 
@@ -36,7 +34,7 @@ Suppose we have an arithmetic sequence of integers that includes $4, 24,$ and $3
 
 \textbf{Solution 1}
 
-The key observation is that the path is $\textbf{completely determined by the choice of horizontal segments}$.Once the horizontal segments are chosen, the vertical and diagonal segments are fixed.
+<div style="line-height:2;">The key observation is that the path is $\textbf{completely determined by the choice of horizontal segments}$.Once the horizontal segments are chosen, the vertical and diagonal segments are fixed.
 
  For each of the $10$ squares, there are exactly $3$ choices for the horizontal segment:
  \[\text{the upper horizontal edge, the lower horizontal edge, or no horizontal edge}.\]Thus the total number of such paths is
@@ -45,9 +43,7 @@ The key observation is that the path is $\textbf{completely determined by the ch
  Then
  \[\sqrt{N} = \sqrt{3^{10}} = 3^{5} = \boxed{243}.\]
 
- 
-
-
+ </div>
 
 
 
@@ -72,8 +68,6 @@ Consider each of the ten instances of
 
 
 
-
-
 \textbf{Solution 3 (Straightforward Bijection of Solution 1)}
 
 On any given square, we can choose to go horizontally, vertically, or diagonally. When we go diagonally, we are automatically forced to go horizontally. However, if we choose to go vertically once more, then we can either move diagonally or horizontally. Call these unique moves $H, V, D, U$. We can replace every $U$ with a $H$ or a $D$. Similarly, we can replace every $V$ with an $H$. Notice that every $D$ is a combination of an $H$ and a $V$, but we already determined that $V$ is $H$. Therefore, every single move set is uniquely determined when $H$ is determined, so if we count the number of ways to move horizontally, then we have counted the number of paths.
@@ -81,8 +75,6 @@ On any given square, we can choose to go horizontally, vertically, or diagonally
  On any given grid, starting at $A$, we can either choose to move $H$, $H$ on the vertical grid, $H$ on the diagonal. Notice that we can neglect $H$ on the downward vertical as that move set is just the inverse of $H$ on the vertical which is $H$. So, every grid has 3 options. For ten squares, that is $3^{10}$. The requested value is $3^5 = \boxed{243}$.
 
  
-
-
 
 
 
@@ -105,8 +97,6 @@ Label the 11 columns of this grid as column 0 through column 11, with the upper 
 
 
 
-
-
 \textbf{Solution 5}
 
 Each square's options for the bug are independent of the previous square; it only matters whether the bug enters on the top or bottom vertex.
@@ -114,8 +104,6 @@ Each square's options for the bug are independent of the previous square; it onl
  For each of these cases, there are $3$ ways to get to the other side. Since there are $10$ squares, the total number of paths is:
 
  
-
-
 
 
 	\item (\textit{AIME II 2026}) Let $ABCDE$ be a nonconvex pentagon with internal angles $\angle A = \angle E = 90^\circ$ and $\angle B = \angle D = 45^\circ.$ Suppose that $DE < AB, AE = 20, BC = 14\sqrt2,$ and points $B,C,$ and $D$ lie on the same side of line $AE.$ Suppose further that $AB$ is an integer with $AB < 2026$ and the area of pentagon $ABCDE$ is an integer multiple of $16.$ Find the number of possible values of $AB.$
@@ -131,8 +119,6 @@ Each square's options for the bug are independent of the previous square; it onl
 Construct line $FG$ such that it passes through point $C$ and is parallel to line $AE$. Since $FG||AE$, $\angle BFC = \angle A = 90^\circ.$ Since $\angle B = 45^\circ$, triangle $\triangle BFC$ is a $45-45-90$ triangle, meaning that $FC=14,$ and $CG=6.$ Since $\angle B = 45^\circ$ and $\angle DGC=90^\circ$ from parallel lines, triangle $\triangle DCG \sim{\triangle BCF}.$ Therefore, $BF=FC=14$, and $CG=GD=6.$ If we set the length of segment $AF$ to $x$, we can get the area of pentagon $ABCDE$ as $116+20x.$ Since $116+20x$ must be a multiple of $16, x\equiv 3\mod{4}.$ Since $x+14<2026, x<2012.$ We can express $x$ as $4y+3,$ so therefore $4y+3<2012,$ so $4y<2009.$ Because $y\le0$ solving the first inequality gives $y<502\frac{1}{4},$ meaning that $0\le y \le 502.$ Since $y$ must be an integer, there are $503$ values of $y,$ giving $\boxed{503}$ possible values of $AB.$ 
 
  
-
-
 
 
 	\item (\textit{AIME II 2026}) For each positive integer $n$ let $f(n)$ be the value of the base-ten numeral $n$ viewed in base $b$, where $b$ is the least integer greater than the greatest digit in $n$. For example, if $n=72$, then $b=8$, and $72$ as a numeral in base $8$ equals $7\cdot 8+2=58$; therefore $f(72)=58$. Find the number of positive integers $n$ less than $1000$ such that $f(n)=n$.
@@ -159,8 +145,6 @@ Notice that if we consider each number in base $b<10$, then the value strictly d
 
 
 
-
-
 \textbf{Solution 2}
 
 $n$ is either $1$ digit, $2$ digits, or $3$ digitsSo take $n = a$.So $b = a + 1$. What is $a$ in base $a + 1$? obviously $a$. Therefore all $1$ digit numbers work.$n = 10a + c$ for the case of $2$ digits.Case 1: $a$ is greater than or equal to $c$ so $b = a + 1$.We need two digit number $ac$ in base $a+1$ which is simply $(a + 1)a + c = 10a + c$ so $a + 1 = 10$ and $a = 9$. So the two digit number $9c$ works.Case 2: $a$ is less than or equal to $c$ so $b = c + 1$.We need two digit number $ac$ in base $c + 1$ which is simply $(c + 1)a + c = 10a + c$ or $c = 9$ so the two digit number $a9$ works. In short, any two digit number with $9$ as a digit works.$n = 100a + 10c + d$ for the case of $3$ digits.Case 1: $a$ is the greatest so $b = a + 1$We have $(a + 1)^2 \cdot a + (a + 1)c + d = 100a + 10c + d$ or $(a + 1)^2 \cdot a + (a + 1)c = 100a + 10c$ therefore $a((a + 1)^2 - 100) + c(a - 9) = 0$ or in short the only way this could happen is if both summands are $0$ therefore $(a + 1)^2 = 100$ and $a - 9 = 0$ so $a = 9$ works in both cases.We can go through all the casework but by symmetry, we realize any three digit number that has $9$ has a digit also worksSo the number of one digit numbers are $1 to 9$ or $9$. The number of two digit numbers with $9$ in it could be all of $(1 to 9)9$ or $9(0 to 9)$ so $9 + 10 = 19$ ways subtracting $99$ since that's over counted so $18$ ways.Now for three digits and that could be $9(0 to 9)(0 to 9)$ so $10 \cdot 10 = 100$. Now $(1 to 9)9(0 to 9)$ so $9 \cdot 10 = 90$. And finally $(1 to 9)(0 to 9)9$ so $9 \cdot 10 = 90$. But we overcount $99(0 to 9)$ and $9(0 to 9)9$ and $(1 to 9)99$ and $999$ so we overcount $10 + 10 + 9 = 29$ numbers. But we're taking $999$ twice since $99(0 to 9)$ and $9(0 to 9)9$ and $(1 to 9)99$ all overcount three times, but adding the $999$ we overcount it twice so we need to add a further $1$ to only count it once. we have$9 + 18 + 100 + 90 + 90 - 29 + 1 = 27 + 280 - 29 + 1 = 280 - 2 + 1 = 280 - 1 = \boxed{279}$.
@@ -169,8 +153,6 @@ $n$ is either $1$ digit, $2$ digits, or $3$ digitsSo take $n = a$.So $b = a + 1$
 
 
  
-
-
 
 
 
@@ -211,8 +193,6 @@ For any positive integer $n < 1000$, let its digits be represented as $d_k d_{k-
  
 
 
-
-
 	\item (\textit{AIME II 2026}) An urn contains $n$ marbles. Each marble is either red or blue, and there are at least $7$ marbles of each color. When $7$ marbles are drawn randomly from the urn without replacement, the probability that exactly $4$ of them are red equals the probability that exactly $5$ of them are red. Find the sum of the five least values of $n$ for which this is possible.
 
 
@@ -223,7 +203,7 @@ For any positive integer $n < 1000$, let its digits be represented as $d_k d_{k-
 
 \textbf{Solution 1}
 
-Let $r$ be the number of red marbles and $b$ be the number of blue marbles in the urn.The total number of marbles is $n = r + b$, with the constraints
+<div style="line-height:2;">Let $r$ be the number of red marbles and $b$ be the number of blue marbles in the urn.The total number of marbles is $n = r + b$, with the constraints
  \[r \geq 7,\quad b \geq 7.\]
 
  Since the total number of ways to choose 7 marbles is $\dbinom{n}{7}$ for both events, their favorable outcomes satisfy:
@@ -250,9 +230,7 @@ Let $r$ be the number of red marbles and $b$ be the number of blue marbles in th
  Finally we sum the five values:
  \[22+30+38+46+54=\boxed{190}.\]
 
- 
-
-
+ </div>
 
 
 
@@ -263,8 +241,6 @@ Assuming there are $a$ red marbles, we write the original expression for the pro
  \[\dfrac{a!}{4!\cdot(a-4)!}\cdot\dfrac{(n-a)!}{3!\cdot(n-a-3)!}=\dfrac{a!}{5!\cdot(a-5)!}\cdot\dfrac{(n-a)!}{2!\cdot(n-a-2)!}.\]Simplifying yields $3(a-4)=5(n-a-2)$, i.e., $8a-2=5n$, with $a,n-a\ge7$. The smallest solution is easily found to be $a,n=14,22$, and the smallest $5$ values of $n$ are $22,30,38,46,54$, whose sum is the final answer $\fbox{190}$.~Confringo
 
  
-
-
 
 
 
@@ -290,6 +266,21 @@ Let there be $r$ red marbles and $b$ blue marbles. Consider the probability of g
  
 
 
+ 
+
+
+
+\textbf{Solution 4 (Similar to 3)}
+
+We first get a bashy-looking equation based on the condition of the problem. We find this equation by multiplying the probability of getting $4$ reds in a row followed by $3$ blues, and setting it equal to getting $5$ reds followed by $2$ blues. We then multiply each side by the number of ways to arrange the order.
+
+ $\binom{7}{4} \left( \frac{R}{R+B} \cdot \frac{R-1}{R+B-1} \cdot \frac{R-2}{R+B-2} \cdot \frac{R-3}{R+B-3} \cdot \frac{B}{R+B-4} \cdot \frac{B-1}{R+B-5} \cdot \frac{B-2}{R+B-6} \right) = \binom{7}{5} \left( \frac{R}{R+B} \cdot \frac{R-1}{R+B-1} \cdot \frac{R-2}{R+B-2} \cdot \frac{R-3}{R+B-3} \cdot \frac{R-4}{R+B-4} \cdot \frac{B}{R+B-5} \cdot \frac{B-1}{R+B-6} \right)$
+
+ We simplify this equation to get $3r-5b=2$. We want to find the $5$ smallest solutions for $r+b$ that satisfy this condition. We can see that the absolute smallest values of $r+b$ will not work, as the sum must be greater than $16$. We realize that the solution will be constrained by an integer $z$. By inspection, we see the smallest solution will be $(4,2)$, and this lets us generalize the solution set.
+
+ We say that $r$ is $4+5z$ and $b$ is $2+3z$ because the greatest common divisor of $3$ and $5$ is one. We add $r+b$ to get that $n$ equals $6+8z$. We find the least solution greater than $14$ and find our answer of $22+30+38+46+54$ or $\boxed{190}$.
+
+ 
 
 
 	\item (\textit{AIME II 2026}) Find the sum of all real numbers $r$ such that there is at least one point where the circle with radius $r$ centered at $(4, 39)$ is tangent to the parabola with equation $2y = x^2 - 8x + 12.$
@@ -315,11 +306,9 @@ The parabola has equation $y=\frac{1}{2}(x-2)(x-6)$, which has vertex $(4,-2)$ a
 
 
 
-
-
 \textbf{Solution 2}
 
-We start with the parabola \(2y = x^2 - 8x + 12\), which can be rewritten in vertex form as:
+<div style="line-height:2;">We start with the parabola \(2y = x^2 - 8x + 12\), which can be rewritten in vertex form as:
  \[y = \frac{1}{2}(x - 4)^2 - 2.\]The vertex of the parabola is at \((4, -2)\).
 
  The circle is centered at \((4, 39)\) with radius \(r\), so its equation is:
@@ -343,9 +332,7 @@ We start with the parabola \(2y = x^2 - 8x + 12\), which can be rewritten in ver
  Thus, the real numbers \(r\) are \(9\) and \(41\). The sum of all such \(r\) is:
  \[9 + 41 = \boxed{050}.\]
 
- 
-
-
+ </div>
 
 
 
@@ -370,15 +357,11 @@ We first substitute $2y = x^2 - 8x + 12$ into the circle $(x-4)^2 + (y-39)^2 = r
 
 
 
-
-
 \textbf{Solution 4 (Not a great solution, but simple)}
 
 Since the center of the circle is $(4,39),$ we know that the circle must be in the form $(x-4)^2+(y-39)^2=r^2.$ The vertex of the parabola $2y=x^2-8x+12$ is $(4,-2),$ so the circle must have a radius of $39-(-2)=41$ to be tangent to the vertex. Since the line from a circle's center to a tangent is always perpendicular to that tangent, and the slope of the parabola is very close to a vertical line as $x$ becomes further from $4,$ we can find the $x-$value of the horizontal line from the circle's center to where it intersects the parabola. This means that the $x-$value of the position where the parabola reaches $39$ is a great estimate for the $x-$value of the tangent point. Plugging $39$ in for $y,$ we get that the $x$ value is equal to $4\pm{\sqrt{82}}.$ This means that the radius of the circle must be very close to $\sqrt{82}.$ Since the radius must be an integer since this is an AIME problem, we find that $9=\sqrt{81},$ giving $9$ as a second radius. Adding these two values up, $41+9=50,$ so our answer is $\boxed{50}.$
 
  
-
-
 
 
 
@@ -409,6 +392,22 @@ We begin by noting $r=41$ as a trivial solution.
 
 
 
+\textbf{Solution 6}
+
+Case 1 – Smaller Circle Tangent at Two Points of Parabola
+
+ The circle of radius $r$ described has equation $(x-4)^2+(y-39)^2=r^2$. Completing the square and rearranging terms in the equation of the parabola gives $2y+4=(x-4)^2$. Substitution for $(x-4)^2$ in the equation of the circle yields $2y+4+(y-39)^2=r^2$. Completing the square on the left of this new equation gives $(y-38)^2+81=r^2$. Solving for $y$, we have $y=38 \pm \sqrt{r^2-81}$. When the smaller circle of radius $r$ is tangent to the parabola, this equation has only one solution and we conclude that $r=9$.
+
+ 
+Case 2 – Larger Circle Tangent at Parabola Vertex
+
+ The vertex of the parabola occurs at $(4,-2)$, and so $r=41$ for the larger circle.
+
+ 
+We conclude that the sum we are seeking is $50$, keyed as $\boxed{050}$.
+
+ 
+
 
 	\item (\textit{AIME II 2026}) A standard fair six-sided die is rolled repeatedly. Each time the die reads 1 or 2, Alice gets a coin; each time it reads 3 or 4, Bob gets a coin; and each time it reads 5 or 6, Carol gets a coin. The probability that Alice and Bob each receive at least two coins before Carol receives any coins can be written as $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $100m+n.$
 
@@ -432,8 +431,6 @@ Denote $A$, $B$, $C$ for Alice, Bob, and Carol respectively. Consider the situat
 
 
 
-
-
 \textbf{Solution 2}
 
 Let $P(a,b)$ be the probability that Alice and Bob recieve two coins before Carol receives any, given that Alice and Bob respectively start with $a$ and $b$ coins. Let $2$ be a placeholder for all integers greater than two. Also, by symmetry, we have $P(a,b)=P(b,a)$.
@@ -443,8 +440,6 @@ Let $P(a,b)$ be the probability that Alice and Bob recieve two coins before Caro
 Finally $P(0,0) = \frac{2}{3}P(1,0)=\frac{7}{54}$ and the requested sum is $\boxed{754}$. ~TThB0501
 
  
-
-
 
 
 
@@ -474,8 +469,6 @@ Consider the ordering of the first four draws. We must have $AABB$, or some perm
 
 
 
-
-
 \textbf{Solution 4 (Infinite Geometric Sums)}
 
 The problem is asking for the probability that both Alice and Bob have 2 coins before Carol gets her first coin. Thus, we only care about what happens before and up to the point where both Alice and Bob have 2 coins.
@@ -502,8 +495,6 @@ The problem is asking for the probability that both Alice and Bob have 2 coins b
  Note that we just talked about the case where Bob gets the last coin. But note that the case where Alice gets the last coin is symmetrical to this, and thus our answer is simply $2P = \frac{7}{54},$ and thus our requested answer would be $\boxed{754}.$-DuoDuoling0
 
  
-
-
 
 
 
@@ -570,8 +561,6 @@ Like solution 4 we will stop the sequence after getting two of each $A$ and $B$.
  
 
 
-
-
 	\item (\textit{AIME II 2026}) Isosceles triangle ${}\triangle ABC$ has $AB = BC.$ Let $I$ be the incenter of ${}\triangle ABC.$ The perimeters of ${}\triangle ABC$ and ${}\triangle AIC$ are in the ratio $125:6,$ and all the sides of both triangles have integer lengths. Find the minimum possible value of $AB.$
 
 
@@ -589,7 +578,7 @@ Like solution 4 we will stop the sequence after getting two of each $A$ and $B$.
                     \end{figure}
                     
 
- Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector, median, and altitude from $B$ to $AC$ coincide, which is the perpendicular bisector of $AC$. The incenter $I$ lies on this common line. Let $D$ be the intersection of this line with $AC$, so $D$ is the midpoint of $AC$ and $ID \perp AC$.
+ <div style="line-height:2;">Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector, median, and altitude from $B$ to $AC$ coincide, which is the perpendicular bisector of $AC$. The incenter $I$ lies on this common line. Let $D$ be the intersection of this line with $AC$, so $D$ is the midpoint of $AC$ and $ID \perp AC$.
 
  We set $AC = 2$, so $AD = DC = 1$. Let $ID = x$.
 
@@ -622,15 +611,13 @@ Like solution 4 we will stop the sequence after getting two of each $A$ and $B$.
  \[1 - x^2 = 1 - \frac{24}{25} = \frac{1}{25}, \quad AB = \frac{\frac{49}{25}}{\frac{1}{25}} = 49.\]In our initial setup, \(AC = 2\) and \(AI = \dfrac{7}{5}\). To make all sides integers, we scale by a factor of \(5\), so \(AC = 10\), \(AI = 7\), and:
  \[AB_{\text{min}} = 49 \times 5 = \boxed{245}.\]
 
- 
-
-
+ </div>
 
 
 
 \textbf{Solution 2}
 
-Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector and altitude from $B$ to $AC$ coincide, so $BI \perp AC$. Letting $BC=b$, it follows that $AB = \frac{b}{2\cos A}$ and $AI=\frac{b}{2\cos \frac{A}{2}}$. Substituting into perimeter, and letting $\cos \frac{A}{2}=x$, 
+Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector and altitude from $B$ to $AC$ coincide, so $BI \perp AC$. Letting $AC=b$, it follows that $AB = \frac{b}{2\cos A}$ and $AI=\frac{b}{2\cos \frac{A}{2}}$. Substituting into perimeter, and letting $\cos \frac{A}{2}=x$, 
  \[\dfrac{2AB+b}{2AI+b} = \dfrac{\frac{b}{\cos A}+b}{\frac{b}{\cos \frac{A}{2}}+b}=\dfrac{\frac{1}{2x^2-1}+1}{\frac{1}{x}+1}=\dfrac{125}{6}\] Expanding out that last in equality, we find that 
  \[238x^3+250x^2-125x-125=0\] Fortunately, we can make the substitutions $x = 5y$, then $y = \frac{1}{z}$, which simplifies the equations into 
  \[238x^3+250x^2-125x-125=0 \implies 238y^3+50y^2-5y-1=0 \implies z^3+5z^2-50z-238=0\] Much nicer. Checking via rational root theorem, we find that $z=7$ is one such solution, and there are no other rational solutions. Therefore, 
@@ -650,15 +637,11 @@ Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector and altitu
 
 
 
-
-
 \textbf{Solution 3 (Guess & Check)}
 
 Clearly, $AB$ and $AC$ must make up most of triangle $\triangle ABC$'s perimeter. We can set the perimeter of triangle $\triangle ABC$ to $125x,$ and the perimeter of triangle $\triangle AIC$ to $6x.$ We do not need to check many values of $x,$ because if $x$ was too large then side $AB$ would be greater than $1000.$ After checking values of $x,$ we can find that the value $x=4$ works if side $AB$ is $245,$ side $AC$ is $10,$ and side $IA=7.$ We can double check this by finding the inradius of triangle $\triangle ABC$ using the formula $\frac{A}{s},$ where $A$ is the area and $s$ is the semiperimeter. Using Heron's formula for the area, we can find that the inradius is equal to $\sqrt{24},$ or $2 \sqrt 6.$ If we draw the lines connecting the incircle to the sides of the triangle, we know that they form right angles with the sides from the tangent circle theorem. Using the Pythagorean Theorem on these sides, we can see that the side lengths do in fact work, giving us $AB=\boxed {245}$ as our answer.
 
  
-
-
 
 
 	\item (\textit{AIME II 2026}) Let $S$ denote the value of the infinite sum
@@ -681,8 +664,6 @@ Expressing $S$ algebraically, we can write
 
 
 
-
-
 \textbf{Solution 2 (Factors)}
 
 After a bit of thinking, you'll realize that for each digit after $0.\dots$ is the number of factors of that digit.
@@ -694,8 +675,6 @@ After a bit of thinking, you'll realize that for each digit after $0.\dots$ is t
  So, we get $669$ and $2$. The two doesn't carry a one, therefore the answer is $\boxed{669}.$
 
  
-
-
 
 
 
@@ -712,8 +691,6 @@ We can represent each of the terms as a recurring decimal.
  Therefore, the answer is $\boxed{669}$.
 
  
-
-
 
 
 
@@ -751,15 +728,11 @@ It is very well known that $\frac{a}{10^n-1}=0.\overline{\underbrace{00...00}_{\
 
 
 
-
-
 \textbf{Solution 5 (Intuition for Solution 1)}
 
 Like in solution 1, we see that we just have the sum $\sum_{k=1}^{\infty} \frac{1}{10^k - 1}$. We factor out $10^k$ at the bottom to obtain $\sum_{k=1}^{\infty} \frac{1}{10^k(1 - 10^{-k})}$. We replace $\frac{1}{10^k}$ as $10^{-k}$ and the result is $\sum_{k=1}^{\infty} \frac{10^{-k}}{1 - 10^{-k}}$. However, that result is just an infinite geometric series! We have that $r = 10^{-k}$ and $0 < |r| < 1$. The first term of this series is $r$ itself. Thus, the series is $r^l$ for some values $l$, and we can conclude the sum as $\sum_{l=1}^{\infty} (10^{-k})^l$. We determine the value for $k$ using an exterior nested sum to obtain the double sum found in solution 1. Continue as followed.
 
  
-
-
 
 
 	\item (\textit{AIME II 2026}) Let $\triangle ABC{}$ be a triangle with $D$ on $\overline{BC}$ such that $\overline{AD}{}$ bisects $\angle BAC.$ Let $\omega{}$ be the circle that passes through $A$ and is tangent to segment $\overline{BC}{}$ at $D.$ Let $E \neq A$ and $F \neq A$ be the intersections of $\omega{}$ with segments $\overline{AB}{}$ and $\overline{AC},$ respectively. Suppose that $AB = 200, AC = 225,$ and all of $AE, AF, BD,$ and $CD{}$ are positive integers. Find the greatest possible value of $BC.$
@@ -786,8 +759,6 @@ Like in solution 1, we see that we just have the sum $\sum_{k=1}^{\infty} \frac{
  Now, since $E$ is on $AB$ and $E\neq A$, we have $EB < AB\implies 8z^2< 200 \implies z < 5$. Using $F$ and $AC$ gives $z< 5$ as well. Thus, the maximum value of $BC$ is attained when $z=4$, or $BC = 4\cdot 85 = \boxed{340}$.
 
  
-
-
 
 
 
@@ -855,8 +826,6 @@ Like in solution 1, we see that we just have the sum $\sum_{k=1}^{\infty} \frac{
 
 
 
-
-
 \textbf{Solution 3}
 
 Let $AB=c=200$, $AC=b=225$, and $BC=a$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_Bisector\_Theorem}{Angle Bisector Theorem}, we have $BD:CD = c:b = 200:225 = 8:9$. Let $BD = 8k$ and $CD = 9k$ for some real number $k$. Then $BC = 17k$.
@@ -883,8 +852,6 @@ Let $AB=c=200$, $AC=b=225$, and $BC=a$. By the \href{https://artofproblemsolving
 
 
 
-
-
 \textbf{Solution 4}
 
 Let $BD = a, CD = b, AE  = c, AF = d$ so that $BE = 200 - c, CF = 225 - d$. By PoP, we have
@@ -896,8 +863,6 @@ Let $BD = a, CD = b, AE  = c, AF = d$ so that $BE = 200 - c, CF = 225 - d$. By P
  $\frac{200}{225} = \frac{8}{9} = \frac{a}{b}$ so $a = 8m, b = 9m$. We know $lcm(20, 8) = 40$ which implies $a = 40p$ and we also know $lcm(15, 9) = 45$ so $b = 45q$. But since $a = 8m, b = 9m$, we need $p = q$. Thus, $a = 40p, b = 45p$. So $BC = a + b = 85p$. Now note that $400 - 2c = (4p)^2 = 16p^2 \implies 200 - c = 8p^2 \implies c = 200 - 8p^2 \implies 8p^2 < 200$ and $225 - d = (3p)^2 = 9p^2 \implies d = 225 - 9p^2 \implies 9p^2 < 225$. Elegantly, solving $8p^2 < 200$ gives $p^2 < 25$ and solving $9p^2 < 225$ also gives $p^2 < 25$. Obviously $p < 5$ and note $p$ also has to be a positive integer. So all possible values are $p = 1,2,3,4$ and the maximum possible value is obviously $85(4) = \boxed{340}$.
 
  
-
-
 
 
 
@@ -939,8 +904,6 @@ Let the side lengths of $\triangle ABC$ be denoted by $AB = c$, $AC = b$, and $B
  
 
 
-
-
 	\item (\textit{AIME II 2026}) Find the greatest integer $n$ such that the cubic polynomial
  \[x^{3} -\frac{n}{6}x^{2} + (n - 11)x - 400\]has roots $\alpha^{2}$, $\beta^{2}$, and $\gamma^{2}$, where $\alpha$, $\beta$, and $\gamma$ are complex numbers, and there are exactly seven different possible values for $\alpha + \beta + \gamma$.
 
@@ -965,8 +928,6 @@ Notice that positive/negative values for $\alpha$, $\beta$, $\gamma$ give eight 
 
 
 
-
-
 \textbf{Solution 2}
 
 We continue with the first solution with $\alpha + \beta + \gamma = 0$. Then,let $P(x)$ be the polynomial with roots $\alpha$, $\beta$, and $\gamma$ and let $Q(x)$ be the polynomial in the problem.Then,
@@ -979,8 +940,6 @@ We continue with the first solution with $\alpha + \beta + \gamma = 0$. Then,let
  made by \href{https://artofproblemsolving.com/wiki/index.php/User:Binariouslyrandom}{BinariouslyRandom}
 
  
-
-
 
 
 	\item (\textit{AIME II 2026}) Consider a tetrahedron with two isosceles triangle faces with side lengths $5\sqrt{10}, \,5\sqrt{10},$ and $10$ and two isosceles triangle faces with side lengths $5\sqrt{10},\, 5\sqrt{10},$ and $18.$ The four vertices of the tetrahedron lie on a sphere with center $S,$ and the four faces of the tetrahedron are tangent to a sphere with center $R.$ The distance $RS$ can be written as $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find ${}m + n.$
@@ -1000,7 +959,7 @@ We continue with the first solution with $\alpha + \beta + \gamma = 0$. Then,let
                     \end{figure}
                     
 
- We place the tetrahedron in a coordinate system by symmetry:
+ <div style="line-height:2;">We place the tetrahedron in a coordinate system by symmetry:
  \[A(-5, 0, 0),\ B(5, 0, 0),\ C(0, 9, h),\ D(0, -9, h).\]Given $AC = 5\sqrt{10}$, we have\begin{align*}AC^2 &= 5^2 + 9^2 + h^2 = 250, \\h^2 &= 144 \implies h = 12.\end{align*}
 So the vertices are
  \[A(-5,0,0),\ B(5,0,0),\ C(0,9,12),\ D(0,-9,12).\]
@@ -1031,9 +990,7 @@ Thus
 Since $\gcd(175,48)=1$, we have $m=175$, $n=48$.
  \[m+n = 175+48=\boxed{223}.\]
 
- 
-
-
+ </div>
 
 
 
@@ -1081,8 +1038,6 @@ Since $\gcd(175,48)=1$, we have $m=175$, $n=48$.
 
 
 
-
-
 \textbf{Solution 3 (no coordinates)}
 
 We let $AB$ be the side of length $10$ and $CD$ of length $18$. Call midpoints of side $AB$ and $CD$ as $M$ and $N$. The faces of our tetrahedron are isosceles triangle so $AM=5$ and $CN=9$, along with $MN\perp AB$ and $MN\perp CD$. By symmetry we know both $R$ and $S$ locate on the segment $MN$.
@@ -1108,8 +1063,6 @@ We let $AB$ be the side of length $10$ and $CD$ of length $18$. Call midpoints o
  In summary, $RS=MS-MR=\dfrac{25}{3}-\dfrac{75}{16}=\dfrac{175}{48}$ so $m+n=\boxed{223}$.
 
  
-
-
 
 
 	\item (\textit{AIME II 2026}) Call finite sets of integers $S$ and $T$ cousins if
@@ -1149,8 +1102,6 @@ Firstly, notice that if we have an element in $S$, there will be exactly $2$ opt
 
 
 
-
-
 \textbf{Solution 2}
 
 
@@ -1171,8 +1122,6 @@ Firstly, notice that if we have an element in $S$, there will be exactly $2$ opt
  
 
 
-
-
 	\item (\textit{AIME II 2026}) For integers $a$ and $b,$ let $a \circ b = a - b$ if $a$ is odd and $b$ is even, and $a+b$ otherwise. Find the number of sequences $a_1, a_2, a_3, \ldots, a_n$ of positive integers such that
  \[a_1 + a_2 + a_3 + \cdots + a_n = 12 \quad \text{and} \quad a_1 \circ a_2 \circ a_3 \circ \cdots \circ a_n = 0\]where the operations are performed from left to right; that is, $a_1 \circ a_2 \circ a_3$ means $(a_1 \circ a_2) \circ a_3.$
 
@@ -1184,7 +1133,7 @@ Firstly, notice that if we have an element in $S$, there will be exactly $2$ opt
 
 \textbf{Solution 1}
 
-Let $A$ be the sum of all terms added when evaluating the operation, and $S$ be the sum of all terms subtracted.
+<div style="line-height:2;">Let $A$ be the sum of all terms added when evaluating the operation, and $S$ be the sum of all terms subtracted.
 Every term in the sequence is either added or subtracted, so the total sequence sum is:
  \[A + S = 12\]The final operation result equals the sum of added terms minus the sum of subtracted terms:
  \[A - S = 0\]We have the system:
@@ -1246,6 +1195,8 @@ Ways to split $6$ into 1 gap: $4$ ways. To see this, note the even compositions 
 
 
  Total: $3 \times 4 = 12$
+
+ 
 \textbf{Subcase 1b}: 4 odd terms
 Compositions of $6$ into 4 odd terms: $1+1+1+3, 1+1+3+1, 1+3+1+1, 3+1+1+1$ $\implies$ $4$ ways
 Number of odd-indexed gaps: $2$ ($G_1, G_3$)
@@ -1253,6 +1204,8 @@ Ways to split $6$ into 2 gaps: $12$ ways
 
 
  Total: $4 \times 12 = 48$
+
+ 
 \textbf{Subcase 1c}: 6 odd terms
 Compositions of $6$ into 6 odd terms: $1+1+1+1+1+1$ $\implies$ $1$ way
 Number of odd-indexed gaps: $3$ ($G_1, G_3, G_5$)
@@ -1261,8 +1214,12 @@ Ways to split $6$ into 3 gaps: $25$ ways
 
  Total: $1 \times 25 = 25$
 
+ 
+
 
  Total for Case $1$: $12 + 48 + 25 = 85$
+
+ 
 \textbf{Case 2}: Sum of Odd Terms $O = 4$
 Here, $E_{\text{add}} = 6 - 4 = 2$: we split $2$ extra even terms across even-indexed gaps. We count:
 
@@ -1279,6 +1236,8 @@ Even-indexed gaps: $2$ ($G_0, G_2$) $\implies$ $2$ ways to split $2$
 
 
  Total: $2 \times 4 \times 2 = 16$
+
+ 
 \textbf{Subcase 2b}: 4 odd terms
 Compositions of $4$ into 4 odd terms: $1+1+1+1$ $\implies$ $1$ way
 Odd-indexed gaps: $2$ $\implies$ $12$ ways to split $6$
@@ -1287,8 +1246,12 @@ Even-indexed gaps: $3$ ($G_0, G_2, G_4$) $\implies$ $3$ ways to split $2$
 
  Total: $1 \times 12 \times 3 = 36$
 
+ 
+
 
  Total for Case $2$: $16 + 36 = 52$
+
+ 
 \textbf{Case 3}: Sum of Odd Terms $O = 2$
 Here, $E_{\text{add}} = 6 - 2 = 4$: we split $4$ extra even terms across even-indexed gaps.
 It is only possible to have 2 odd terms.
@@ -1299,12 +1262,12 @@ More than $2$ odd terms is impossible, as the smallest sum of 4 positive odd ter
 
 
  Total for Case $3$: $1 \times 4 \times 5 = 20$
+
+ 
 We add the totals from all valid cases:
  \[85 + 52 + 20 = 157\]Hence, the number of valid sequences is $\boxed{157}$.
 
- 
-
-
+ </div>
 
 
 
@@ -1314,7 +1277,7 @@ Since the sum is even, the count of odd numbers is even, let it be $2k$.We can r
  \[e_{0, 1}, e_{0, 2}, \dots, e_{0, c_0}, o_1, e_{1, 1}, e_{1, 2}, \dots, e_{1, c_1}, o_2, \dots, o_{2k}, e_{2k, 1}, \dots, e_{2k, c_{2k}}\]where o stands for odd and e stands for even. Denote
  \[S_i= \sum_{j= 1}^{c_i} e_{i, j}\]and we can notice that:
  \[0= a_1 \circ a_2 \circ a_3 \circ \dots \circ a_n = \sum_{i= 1}^{2k} o_i+ \sum_{i= 0}^{2k} ((-1)^i S_i)\]From which we can deduce:
- \[\sum_{i= 1}^{k} S_{2i- 1}= 6 \text{ and }\sum_{i= 1}^{2k} o_i \leq 6\]which we see $1 \leq k \leq 3$, so let's starting counting.
+ \[\sum_{i= 1}^{k} S_{2i- 1}= 6 \text{ and }\sum_{i= 1}^{2k} o_i \leq 6\]which we see $1 \leq k \leq 3$, so let's start counting.
 
  $\textbf{Claim}$:The number of even sequences summing up to $k$ is $2^{\frac{k}{2}- 1}$, this can be proven easily using stars and bars.
 
@@ -1347,8 +1310,6 @@ Since the sum is even, the count of odd numbers is even, let it be $2k$.We can r
  \[4 \cdot (1 \cdot 5+ 2 \cdot 2+ 3 \cdot 1)+ 12 \cdot (1 \cdot 4+ 3 \cdot 1)+ 25 \cdot (1 \cdot 1)= \boxed{157}\]
 
  
-
-
 
 
 
@@ -1448,8 +1409,6 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
  
 
 
-
-
 	\item (\textit{AIME II 2026}) Find the number of ordered 7-tuples $(a_1, a_2, a_3, \ldots, a_7)$ having the following properties:
 
 
@@ -1468,7 +1427,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
 \textbf{Solution 1}
 
-We start by mapping each \(a_i \in \{1,2,3\}\) to \(x_i = a_i - 2\), so \(x_i \in \{-1, 0, 1\}\). The given conditions translate to:
+<div style="line-height:2;">We start by mapping each \(a_i \in \{1,2,3\}\) to \(x_i = a_i - 2\), so \(x_i \in \{-1, 0, 1\}\). The given conditions translate to:
  \[\sum_{k=1}^7 x_k \equiv 0 \pmod{3},\]
  \[S = \sum_{i=1}^7 x_i x_{i+1} x_{i+3} \equiv 0 \pmod{3},\]Let \(m\) be the number of \(0\)s. We analyze cases by the value of \(m\).
 
@@ -1571,9 +1530,7 @@ We start by mapping each \(a_i \in \{1,2,3\}\) to \(x_i = a_i - 2\), so \(x_i \i
  We sum all cases to get the total number of valid tuples:
  \[1 + 0 + 42 + 56 + 42 + 168 + 84 + 0 = \boxed{393}.\]
 
- 
-
-
+ </div>
 
 
 
@@ -1635,8 +1592,6 @@ We employ the method of exponential sums. Let $\omega = e^{\frac{2\pi i }{ 3}}$.
 
 
 
-
-
 \textbf{Solution 3}
 
 The $\subset$ sign means that the $a_i$ cannot span over all three values in $\{1,2,3\}$. Therefore, there are two cases.
@@ -1648,110 +1603,9 @@ The $\subset$ sign means that the $a_i$ cannot span over all three values in $\{
 \textbf{Case 2}: The $a_i$ take on two different values. We have two subcases.
 
  
-\textbf{Subcase 2.1}: The values are $1$ and $2$. Let $a$ of them be $1$ and $(7-a)$ of them be $2$. The second bullet point gives
-
- \begin{align*}a \cdot 1 + (7-a) \cdot 2 &\equiv 0 \pmod 3 \\\implies -a &\equiv 1 \pmod 3 \\\implies a &\equiv 2 \pmod 3.\end{align*}
-
-
- Thus, $a = 2$ or $5$. Note that the two cases are symmetric, since $7-a = 5$ and $2$, respectively, and thus negating all $a_i$ changes $2$s to $1$s and vice versa (in mod $3$). Thus, we will multiply by $2$ at the end and just consider $a = 2$.
-
- Without loss of generality, let $a_1$ be $1$. We will multiply at the end by an additional $7$. There is still one more $a_i$ that is $1$. The expression in the third bullet point becomes
- \[a_2a_4 + a_5a_6 + a_2a_3a_5 + a_3a_4a_6 + a_4a_5a_7 + a_6a_7a_2.\]Now we just test which of the leftover six $a_i$ can be $1$.Observe that $a_2,a_4,a_5,$ and $a_6$ are symmetric in this case. Letting any one of them be $1$, and all the other five $a_i$ be $2$, reduces the above expression to
- \[2+4+4+8+8+4 = 30 \pmod 3,\]so these four $a_i$ all work.Also, $a_3$ and $a_7$ are symmetrical, so letting any one of them be $1$, and all the other five $a_i$ be $2$, reduces the above expression to
- \[4+4+4+4+8+8 = 32,\]so these two $a_i$ don't work.
-
- Therefore, the number of valid seven-tuples in this subcase is $2 \cdot7 \cdot 4 = 56$.
+\textbf{Subcase 2.1}: The values are $1$ and 
 
  
-\textbf{Subcase 2.2}: One of the two values for which the $a_i$ take on is $3$. Without loss of generality, let the other value be $1$ (as above, we can always negate everything to switch $1$s and $2$s in mod $3$). We will multiply at the end by $2$.If there are $a$ $1$s and $(7-a)$ $3$s, then from the second bullet point, we see that $a = 6$ or $3$.
-
- 
-\textbf{Sub-subcase 2.2.1}: $a = 6$. Then there is only one $a_i$ with value $3$. Without loss of generality, let $a_1 = 3$. Then all other $a_i$ equal $1$, but this doesn't work at all, since the third bullet point is not satisfied. There are $0$ solutions in this sub-subcase.
-
- 
-\textbf{Sub-subcase 2.2.2}: $a = 3$. There are four $a_i$ with value $3$. Without loss of generality, let $a_1 = 3$. The congruence in the third bullet point reduces to
- \[a_2a_3a_5 + a_3a_4a_6 + a_4a_5a_7 + a_6a_7a_2 \equiv 0 \pmod 3\]Without loss of generality, let another one with value $3$ be $a_2$ (even though the expression isn't strictly symmetrical, it can be shown that using any $a_i$ as $3$ in the following steps will produce the same number of seven-tuples). Notice that we could've just picked $a_2$ and then $a_1$ to be $3$, so we actually need to multiply by $\binom{7}{2}$ for choosing $a_1$ and $a_2$ to be $3$.
-
- 
-After choosing these two to be $3$, the congruence reduces to
- \[a_4(a_3a_6 + a_5a_7) \equiv 0 \pmod 3.\]Notice that there are two more $a_i$ that are $3$.
-
- 
-\textbf{Sub-sub-subcase 2.2.2.1}: One of these two $a_i$ is $a_4$. Then note that the congruence is automatically satisfied. There are $4$ ways to pick the last $a_i$ that is $3$. This sub-sub-subcase gives $2 \cdot \binom{7}{2} \cdot 4 = 168$ seven-tuples.
-
- 
-\textbf{Sub-sub-subcase 2.2.2.1}: Both of the remaining two $a_i$s that are $3$ are not $a_4$. Then
- \[a_3a_6 + a_5a_7 \equiv 0 \pmod 3.\]There are two terms. Either one is a multiple of $3$, or both are a multiple of $3$. We want the latter. Therefore, exactly one factor of each term is $3$. Thus, there are $2 \cdot 2 = 4$ ways to choose the remaining two $a_i$s that are $3$. This sub-sub-subcase gives $2 \cdot \binom{7}{2} \cdot 4 = 168$ seven-tuples.
-
- 
-
-
- 
-
-
- Adding up all the cases gives a final answer of $1+56+0+168+168 = \boxed{393}$ seven-tuples that satisfy all three bullet points.
-
- 
-
-
-
-
-
-\textbf{Solution 4}
-
-Let's transform $a_k$ modulo $3$ to get residues of $0, 1, 2$. Let there be $x$ $0$'s and $y$ $1$'s and $z$ $2$'s. Then
-
- $3|0 \cdot x + 1 \cdot y + 2 \cdot z$ and $x + y + z = 7$
-
- So $3| y + 2z$ and $x + y + z = 7$. Simple casework yields
-
- $(x, y, z) = (7, 0, 0), (4, 0, 3), (5, 1, 1), (3, 2, 2), (4, 3, 0), (2, 4, 1), (0, 5, 2), (1, 6, 0), (2, 1, 4), (1, 3, 3)$
-
- Case 1: $(x, y, z) = (7, 0, 0)$
-
- This means all $a_k$ is congruent to $0$ modulo $3$ which clearly works for both the sum and product. Thus, everything is equal with gives $\binom{7}{7} = 1$ way.
-
- Case 2: $(x, y, z) = (4, 0, 3)$
-
- Now this means exactly three of $a_k$ are congruent to $2$ modulo $3$ and the rest are $0$ modulo $3$. From now on, let's change $0$ modulo $3$ to $3$ and $2$ modulo $3$ to 2 and $1$ modulo $3$ to 1 for their respective residues in the set $(1, 2, 3)$. The only way the product condition won't be satisfied is if we have one of the product factors to all be $2$. For instance, if $a_1 = a_2 = a_4 = 2$, that first product is $2 \cdot 2 \cdot 2 = 8$ and the rest are clearly divisible by $3$. Any other case works. Thus, since there are $7$ of these products where everything can be equal, we have$\binom{7}{3} - 7 = 28$ ways.
-
- Case 3: $(x, y, z) = (4, 3, 0)$
-
- As in Case 2, we have $4$ of them being $3$ and the remaining $3$ are equal to $1$. As noted in Case 2, this is exactly symmetric to Case 2 thus we can expect $28$ ways in this case as well. However, to justify this, we can note the only way the product condition won't work is if exactly one of the products have all the product factors to be equal to $1$. Thus, we again have$\binom{7}{4} - 7 = 28$ ways.
-
- Case 4: $(x, y, z) = (5, 1, 1)$
-
- Note that this means $5$ of $a_k$ are $3$ and the remaining $2$ have one $1$ and one $2$. Every product has $3$ factors so each product will have at least one factor of $3$ no matter how it's permuted. Thus everything works and we have$\binom{7}{5} = 21$ ways but this is only if we're setting exactly one of $a_k$ to be $1$ and one more to be $2$. We can switch these because order doesn't matter and our total is $2 \cdot 21 = 42$ ways.
-
- Case 5: $(x, y, z) = (2, 4, 1)$ and $(x, y, z) = (2, 1, 4)$.
-
- Essentially, we have $3, 3, 1, 1, 1, 1, 2$. Note that $(2, 4, 1)$ and $(2, 1, 4)$ are basically the same so we can treat it as one case. Now if we start the product condition with $a_1 = a_2 = 3$ and $a_4 = 2$, and the rest of the variables are $1$, we can bash it out and see that the result is $2$ modulo $3$. If we start with $a_1 = a_2 = 3$ and $a_4 = 1$ and one of the remaining variables is $2$ and the rest are $1$, we can bash it out and see this indeed works. There are $\binom{7}{1}$ ways to choose the variable that is $3$ and similarly $7 - 1 = 6$ ways to choose the variable that is next $3$ but only $4$ ways to choose the variable that is $2$. This can easily be found since if we assume $a_1 = a_2 = 3$, then only $a_3, a_5, a_6, a_7$ can be equal to $2$ since $a_4 = 1$. Thus $7 \cdot 6 \cdot 4 = 168$ ways.
-
- Case 6: $(x, y, z) = (1, 3, 3)$
-
- We have $3, 1, 1, 1, 2, 2, 2$.This is the hardest case. The analysis for this case will be a little different than those of the previous cases. Assume $a_7 = 3$ and because of symmetry, we will multiply by $7$ at the end. Then the product triples containing $a_7$ will vanish because they are already divisible by $3$. We would need to analyze $a_1 a_2 a_4 + a_2 a_3 a_5 + a_3 a_4 a_6 + a_5 a_6 a_1$. Note that the distinct variables among these products are $a_1, a_2, a_3, a_4, a_5, a_6$ and we have $1, 1, 1, 2, 2, 2$ or a total of $6$ numbers to hand out to each of these variables. Normally, we can easily count $\frac{6!}{3! \cdot 3!} = 20$ to hand these out but some cases don't work. Specifically, the cases$a_1 = 1, a_2 = 2, a_3 = 1, a_4 = 2, a_5 = 1, a_6 = 2$ and $a_1 = 2, a_2 = 1, a_3 = 2, a_4 = 1, a_5 = 2, a_6 = 1$ don't work(perform the bash and see that these indeed don't work). Thus, we have $20 - 2 = 18$ working cases for $a_7 = 3$ but we need to multiply that by $7$ to get $7 \cdot 18 = 126$ ways. 
-
- Now I claim that each of the triples $(x, y, z) = (3, 2, 2), (0, 5, 2), (1, 6, 0)$ each have $0$ cases. 
-
- Claim Case 1: $(x, y, z) = (3, 2, 2)$
-
- Note that since there are $4$ numbers that aren't equal to $3$ and since there are exactly $3$ factors in a triple by Pigeonhole Principle, there must be exactly $1$ triple that does not contain a $3$ at all which means that $1$ factor is not divisible by $3$. Everything else is divisible by $3$ and so the entire product sum isn't divisible by $3$ in this case. So we have $0$ cases.
-
- Claim Case 2: $(x, y, z) = (0, 5, 2)$
-
- Since we have $5$ numbers that are equal to $1$, we can again apply Pigeonhole Principle and get that we could have $2$ triples that only consist $1$(since each triple has $3$ factors, $2$ triples would cover $2 \cdot 3 = 6$ factors). So everything else consists of $2$'s. Here, the remainder modulo $3$ is $2 \cdot (1 \cdot 1 \cdot 1) = 2$ so this isn't divisible by $3$. Similarly by Pigeonhole Principle, we could have only $1$ triple that looks like this $(1, 2, 2)$ or $4$ triples that look like this $(1, 1, 2)$. Neither of these cases will give a remainder of $0$ modulo $3$ so again we have $0$ cases for this case.
-
- Claim Case 3: $(x, y, z) = (1, 6, 0)$
-
- Assume this case does indeed have a positive number of ways that work. WLOG, assume $a_1 = 3$ and we will multiply the result by $7$ because of symmetry. Then, since exactly $3$ triples contain $a_1$, those triples would vanish and we would be left with $4$ triples all of which have factors that are only equal to $1$. This gives $4 \cdot (1 \cdot 1 \cdot 1) = 4$ which isn't divisible by $3$. Thus, we have $0$ cases for $a_1 = 3$ and ultimately $0 \cdot 7 = 0$ cases in total.
-
- We have shown our claim is true. Finally, the answer is
-
- $1 + 28 + 28 + 42 + 168 + 126 + 0 + 0 + 0 = \boxed{393}$.
-
- 
-
-
 
 
 \end{enumerate}
