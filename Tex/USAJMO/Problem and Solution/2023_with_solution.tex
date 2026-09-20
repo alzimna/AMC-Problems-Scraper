@@ -1,0 +1,425 @@
+\section{USAJMO 2023}
+        \begin{enumerate}
+        	\item (\textit{USAJMO 2023}) Find all triples of positive integers $(x,y,z)$ that satisfy the equation
+
+ \begin{align*} 2(x+y+z+2xyz)^2=(2xy+2yz+2zx+1)^2+2023 \end{align*}
+
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We claim that the only solutions are $(2,3,3)$ and its permutations.
+
+ Factoring the above squares and canceling the terms gives you:
+
+ $8(xyz)^2 + 2(x^2 +y^2 + z^2) = 4((xy)^2 + (yz)^2 + (zx)^2) + 2024$
+
+ Jumping on the coefficients in front of the $x^2$, $y^2$, $z^2$ terms, we factor into: 
+
+ $(2x^2 - 1)(2y^2 - 1)(2z^2 - 1) = 2023$
+
+ Realizing that the only factors of 2023 that could be expressed as $(2x^2 - 1)$ are $1$, $7$, and $17$, we simply find that the only solutions are $(2,3,3)$ by inspection.
+
+ -Max
+
+ 
+Alternatively, a more obvious factorization is:
+
+ $2(x+y+z+2xyz)^2=(2xy+2yz+2zx+1)^2+2023$
+
+ $(\sqrt{2}x+\sqrt{2}y+\sqrt{2}z+2\sqrt{2}xyz)^2-(2xy+2yz+2zx+1)^2=2023$
+
+ $(2\sqrt{2}xyz+2xy+2yz+2zx+\sqrt{2}x+\sqrt{2}y+\sqrt{2}z+1)(2\sqrt{2}xyz-2xy-2yz-2zx+\sqrt{2}x+\sqrt{2}y+\sqrt{2}z-1)=2023$
+
+ $(\sqrt{2}x+1)(\sqrt{2}y+1)(\sqrt{2}z+1)(\sqrt{2}x-1)(\sqrt{2}y-1)(\sqrt{2}z-1)=2023$
+
+ $(2x^2-1)(2y^2-1)(2z^2-1)=2023$
+
+ Proceed as above. ~eevee9406
+
+ note: idk gang i think the first factorization is more readily apparent but the second factorization is very orz indeed~Aarush12
+
+ 
+
+
+	\item (\textit{USAJMO 2023}) In an acute triangle $ABC$, let $M$ be the midpoint of $\overline{BC}$. Let $P$ be the foot of the perpendicular from $C$ to $AM$. Suppose that the circumcircle of triangle $ABP$ intersects line $BC$ at two distinct points $B$ and $Q$. Let $N$ be the midpoint of $\overline{AQ}$. Prove that $NB=NC$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $D$ be the foot of the altitude from $A$ onto $BC$. We want to show that $DM=MQ$ for obvious reasons. 
+
+ Notice that $ADPC$ is cyclic and that $M$ lies on the radical axis of $(ABPQ)$ and $(ADPC)$. By Power of a Point, $(CM)(DM)=(BM)(MQ)$. As $BM=CM$, we have $DM=MQ$, as desired. 
+
+ - Leo.Euler
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Proceed by Barycentrics. $A=(1, 0, 0), B=(0, 1, 0), C=(0, 0, 1)$. Let D be the foot of the altitude from $A$ to $BC$, so $D=(0:S_C:S_B)$. Then, let $P= (t, 1, 1)$. The equation of $(ACP)$ is 
+ \[-a^2yz-b^2xz-c^2xy+(vy)(x+y+z)=0\]where $(t+2)v = t(b^2+c^2)+a^2$. Then, the equation of $(ABP)$ is 
+ \[-a^2yz-b^2xz-c^2xy+(wz)(x+y+z)=0\] where $(t+2)w = t(b^2+c^2)+a^2$. Thus, $v=w$. But D is also on $(ACP)$, so we find $w=v=S_B$. Then, if $Q = (0:y_1: z_1)$, we find $y_1 = \frac{w}{a^2} = \frac{S_B}{a^2}$. Therefore, $Q=(0:S_B:a^2-S_B)$. Note that $D+Q=(0:a^2:a^2)=M$, so $M$ is the midpoint of $DQ$. Thus, a homothety at Q of factor 2 maps $M \mapsto D$ and $N\mapsto A$, so $MN \perp BC$, as needed. 
+
+ Alternatively, one could continue with Barycentrics, finding $N=\left(1:\frac{S_B}{a^2}:1-\frac{S_B}{a^2}\right)$. Then, 
+ \[a^2(y-z)+x(b^2-c^2) = a^2(\frac{2S_B}{a^2}-1)+(b^2-c^2)=2S_B-(a^2+c^2-b^2)=0\] implying $N$ is on the perpendicular bisector, as desired.
+
+ -sillybone
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The condition is solved only if $\triangle{NBC}$ is isosceles, which in turn only happens if $\overline{MN}$ is perpendicular to $\overline{BC}$. Now, draw the altitude from $A$ to $\overline{BC}$, and call that point $X$. Because of the Midline Theorem, the only way that this condition is met is if $\triangle{AXQ} \sim \triangle{NMQ}$, or if $\overline{XM}=\overline{MQ}$.
+
+ By $AA$ similarity, $\triangle{AXM} \sim \triangle{CPM}$. Using similarity ratios, we get that $\frac{\overline{AM}}{\overline{XM}}=\frac{\overline{CM}}{\overline{PM}}$. Rearranging, we get that $\overline{AM} \cdot \overline{MP}=\overline{XM} \cdot \overline{MC}$. This implies that $AXPC$ is cyclic.
+
+ Now we start using Power of a Point. We get that $\overline{BX} \cdot \overline {XQ}= \overline{AM} \cdot \overline{MP}$, and $\overline{AM} \cdot \overline{MP}=\overline{XM} \cdot \overline{MC}$ from before. This leads us to get that $\overline{BX} \cdot \overline {XQ}=\overline{XM} \cdot \overline{MC}$. 
+
+ Now we assign variables to the values of the segments. Let $\overline{BX}=a, \overline{XM}=b, \overline{MQ}=c,$ and $\overline{QC}=d$. The equation from above gets us that $(a+b)c=b(c+d)$. As $a+b=c+d$ from the problem statements, this gets us that $b=c$ and $\overline{XC}=\overline{CQ}$, and we are done.
+
+ -dragoon and rhydon516 (:
+
+ note: i think a lot of places you used the wrong point names ~Aarush12
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 4 (Less technical bary)}
+
+We are going to use barycentric coordinates on $\triangle ABC$. Let $A=(1,0,0)$, $B=(0,1,0)$, $C=(0,0,1)$, and $a=BC$, $b=CA$, $c=AB$. We have $M=\left(0,\frac{1}{2},\frac{1}{2}\right)$ and $P=(x:1:1)$ so $\overrightarrow{CP}=\left(\frac{x}{x+2},\frac{1}{x+2},\frac{1}{x+2}-1\right)$ and $\overrightarrow{AM}=\left(-1,\frac{1}{2},\frac{1}{2}\right)$. Since $\overleftrightarrow{CP}\perp\overleftrightarrow{AM}$, it follows that
+ \begin{align*} a^2\left(\frac{1}{2}\cdot\frac{1}{x+2}+\frac{1}{2}\left(\frac{1}{x+2}-1\right)\right)+b^2\left(\frac{1}{2}\cdot\frac{x}{x+2}-\left(\frac{1}{x+2}-1\right)\right)\\ +c^2\left(\frac{1}{2}\cdot\frac{x}{x+2}-\frac{1}{x+2}\right)=0. \end{align*}
+Solving this gives
+ \[ x=\frac{2b^2-2c^2}{a^2-3b^2-c^2} \]so
+ \[ P=\left(\frac{b^2-c^2}{a^2-2b^2-2c^2},\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2},\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}\right). \]The equation for $(ABP)$ is
+ \[ -a^2yz-b^2zx-c^2xy+ux+vy+wz=0. \]Plugging in $A$ and $B$ gives $u=v=0$. Plugging in $P$ gives
+ \begin{align*} -a^2\left(\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}\right)^2-b^2\cdot\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}\cdot\frac{b^2-c^2}{a^2-2b^2-2c^2}\\ -c^2\cdot\frac{b^2-c^2}{a^2-2b^2-2c^2}\cdot\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}+w\cdot\frac{a^2-3b^2-c^2}{2a^2-4b^2-4c^2}=0 \end{align*}
+so
+ \[ w=\frac{2b^4-2c^4+a^4-3a^2b^2-a^2c^2}{2a^2-4b^2-4c^2}=\frac{a^2}{2}-\frac{b^2}{2}+\frac{c^2}{2}. \]Now let $Q=(0,t,1-t)$ where
+ \begin{align*} -a^2t(1-t)+w(1-t)&=0\\ \implies t&=\frac{w}{a^2} \end{align*}
+so $Q=\left(0,\frac{w}{a^2},1-\frac{w}{a^2}\right)$. It follows that $N=\left(\frac{1}{2},\frac{w}{2a^2},1-\frac{w}{2a^2}\right)$. It suffices to prove that $\overleftrightarrow{ON}\perp\overleftrightarrow{BC}$. Setting $\overrightarrow{O}=0$, we get $\overrightarrow{N}=\left(\frac{1}{2},\frac{w}{2a^2},1-\frac{w}{2a^2}\right)$. Furthermore we have $\overrightarrow{CB}=(0,1,-1)$ so it suffices to prove that
+ \begin{align*} a^2\left(-\frac{w}{2a^2}+\frac{1}{2}-\frac{u}{2a^2}\right)+b^2\left(-\frac{1}{2}\right)+c^2\left(\frac{1}{2}\right)=0\\ \implies w=\frac{a^2}{2}-\frac{b^2}{2}+\frac{c^2}{2} \end{align*}
+which is valid. $\square$
+
+ 
+
+
+
+\textbf{Solution 5 (Less bashy bary)}
+
+We employ barycentric coordinates. Set $AMC$ as the reference triangle with $A = (1, 0, 0)$, $M = (0, 1, 0)$, and $C = (0, 0, 1)$. We immediately have,
+ \[P = (S_B : S_A : 0); B = (0, 2, -1)\]Since it passes through $A$, for some $v, w$, the equation of circle $(ABP)$ is,
+ \[(ABP): -a^2 yz - b^2 zx - c^2 xy + (vy + wz)(x + y + z) = 0\]Plugging in $P$,
+ \[- c^2 S_{AB} + (v S_A)(c^2) = 0\]
+ \[\iff v = S_B\]Plugging in $B$,
+ \[2a^2 + (2v - w) = 0\]
+ \[\iff 2a^2 + 2 S_B = 3 a^2 - b^2 + c^2 = w\]In conclusion the circle has formula,
+ \[(ABP): -a^2 yz - b^2 zx - c^2 xy + ((S_B)y + (3 a^2 - b^2 + c^2) z)(x + y + z) = 0\]$Q$ is the second intersection of circle $(ABP)$ with $\overline{CM}$. We let $Q = (0, 1 - t, t)$ for some $t \neq -1$. Plugging this in,
+ \[-a^2 (1-t)t + ((S_B)(1-t) + (3 a^2 - b^2 + c^2) t) = 0\]We claim that $t = -\frac{S_B}{a^2}$ is the other solution. 
+ \[\left(1+ \frac{S_B}{a^2} \right) S_B + \left((S_B)\left(1+ \frac{S_B}{a^2}\right) - (3 a^2 - b^2 + c^2) \frac{S_B}{a^2}\right) = 0\]
+ \[\iff \left(\frac{3a^2 - b^2 + c^2}{2a^2} \right) + \left(\left(\frac{3a^2 - b^2 + c^2}{2a^2}\right) - (3 a^2 - b^2 + c^2) \frac{1}{a^2}\right) = 0\]Factoring out the $\frac{3a^2 - b^2 + c^2}{2a^2}$, this is clearly true.
+
+ We also check that, these are not the same value.
+ \[-\frac{S_B}{a^2} = -1\]
+ \[\iff a^2 - b^2 + c^2 = 2a^2\]
+ \[\iff c^2 = a^2 + b^2\]The triangle is acute, so this is impossible.
+
+ Since we had a quadratic in $t$ with at most two solutions, the second intersection $Q$ is indeed,
+ \[Q = \left( 0, 1 + \frac{S_B}{a^2}, -\frac{S_B}{a^2} \right)\]Therefore,
+ \[N = \frac{A + Q}{2} = \left( \frac{1}{2}, \frac{1}{2} - \frac{S_B}{2a^2}, \frac{S_B}{2a^2} \right)\]
+
+ 
+
+
+
+\textbf{Solution 6 (complex)}
+
+Set $\triangle AMC$ to be unit circle, where $\overline{CM}$ is horizontal.
+
+ $A=a, C=c, M=-\frac{1}{c}, P = \frac{1}{2}(a+c+\frac{a}{c^2}-\frac{1}{c}), B = \frac{-2}{c}-c$
+
+ Now we want to prove that $\overline{NB}=\overline{NC}$, which really means that $N$ lies on the perpendicular bisector of $\overline{BC}$. Now, shift the coordinate system by $+\frac{1}{c}$
+
+ $A = a+\frac{1}{c}, C = c+\frac{1}{c}, M=0, P = \frac{1}{2}(a+c+\frac{a}{c^2}+\frac{1}{c}), B = \frac{-1}{c}-c$
+
+ $N=ki$ for $k\in R$, $Q=2ki-a-\frac{1}{c}$
+
+ The imaginary part of $Q=0$, so $2ki=\frac{(a-\frac{1}{a}+-c+\frac{1}{c})}{2}$
+
+ $Q = \frac{-a-\frac{1}{a}-c-\frac{1}{c}}{2}$
+
+ 
+
+
+ 
+Now all we need to do is to check that $A,B,P,Q$ are conc-cyclic.
+
+ $\frac{(A-P)(B-Q)}{(A-Q)(B-P)} \in R$
+
+ Throwing out the half and some negative terms for simplicity.
+
+ $\frac{(a+\frac{1}{c}-c-\frac{a}{c^2})({a+\frac{1}{a}-c-\frac{1}{c}})}{(3a+\frac{3}{c}+\frac{1}{a} + c)(\frac{3}{c}+3c+a+\frac{a}{c^2})} \in R$
+
+ 
+So we need to prove that:
+
+ $\frac{(a+\frac{1}{c}-c-\frac{a}{c^2})({a+\frac{1}{a}-c-\frac{1}{c}})}{(3a+\frac{3}{c}+\frac{1}{a} + c)(\frac{3}{c}+3c+a+\frac{a}{c^2})} =\frac{(\frac{1}{a}+c-\frac{1}{c}-\frac{c^2}{a})({a+\frac{1}{a}-c-\frac{1}{c}})}{(\frac{3}{a}+3c+a + \frac{1}{c})(3c+\frac{3}{c}+\frac{1}{a}+\frac{c^2}{a})}$
+
+ 
+On the RHS, we can multiply the numerator and denominator by $\frac{a}{c}$ to get:
+
+ $(3a+\frac{3}{c}+\frac{1}{a} + c)(\frac{3}{c}+3c+a+\frac{a}{c^2})=(\frac{3}{a}+3c+a + \frac{1}{c})(3a+\frac{3a}{c^2}+\frac{1}{c}+c)$
+
+ $(3+\frac{c}{a})(a+\frac{1}{c})(3+\frac{a}{c})(c+\frac{1}{c})=(a+\frac{1}{c})(1+\frac{3c}{a})(c+\frac{1}{c})(\frac{3a}{c}+1)$
+
+ $(3+\frac{c}{a})(3+\frac{a}{c})=(1+\frac{3c}{a})(\frac{3a}{c}+1)$
+
+ Which is true if you multiply $ac$ on both sides. Thus, we are done (note we could have factored earlier which would have saved tremendous time).
+
+ 
+
+
+	\item (\textit{USAJMO 2023}) Consider an $n$-by-$n$ board of unit squares for some odd positive integer $n$. We say that a collection $C$ of identical dominoes is a maximal grid-aligned configuration on the board if $C$ consists of $(n^2-1)/2$ dominoes where each domino covers exactly two neighboring squares and the dominoes don't overlap: $C$ then covers all but one square on the board. We are allowed to slide (but not rotate) a domino on the board to cover the uncovered square, resulting in a new maximal grid-aligned configuration with another square uncovered. Let $k(C)$ be the number of distinct maximal grid-aligned configurations obtainable from $C$ by repeatedly sliding dominoes. Find the maximum value of $k(C)$ as a function of $n$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+To start off, we put the initial non-covered square in a corner (marked by the shaded square). Let's consider what happens when our first domino slides over the empty square. We will call such a move where we slide a domino over the uncovered square a "step":
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2023_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ When the vertically-oriented domino above the shaded square moved down to cover the shaded square, it had uncovered a new square two squares above the original one. Next, we consider the second another direction the uncovered square can move to:
+
+ 
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2023_3_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ In this case, the horizontally-oriented domino besides the shaded square moved to cover the previous shaded square. The new uncovered square, as a result, would be either two squares to the left, or to the right of the previous shaded square.
+
+ So, to summarize, during each "move", the uncovered square can move either two steps up, down, left, or right. We can make a path for which the shaded square takes:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2023_3_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ We put the original shaded square was in the corner, so, the possible number of squares that cound be uncovered is $\left(\dfrac{n+1}{2}\right)^2 = \frac{n^2+2n+1}{4}$, all of which can be connected by a single path. Let those $\frac{n^2+2n+1}{4}$ belong to a set $S$ of squares.
+
+ If the initial uncovered square was not an element of $S$, then it could either be $1$ or $\sqrt{2}$ away from a square in $S$. If the initial square was a distance of $1$ from a element of $S$, then there would be $\left(\dfrac{n+1}{2}\right)\left(\dfrac{n-1}{2}\right)$ possible uncovered squares:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2023_3_Solution_Figure_4.png}
+                    \end{figure}
+                    
+
+ If the initial square was a distance of $\sqrt{2}$ away from a square in $S$, then there would be $\left(\dfrac{n-1}{2}\right)^2$ possible squares that could be uncovered:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2023_3_Solution_Figure_5.png}
+                    \end{figure}
+                    
+
+ So, that means the maximal number of squares that can be uncovered is $\frac{n^2+2n+1}{4}$, thus making a maxmial of $k(C)=\boxed{\frac{n^2+2n+1}{4}}$ achievable configurations from $C$ ($C$'s uncovered square must belong in $S$).
+
+ Remark: I believe that this solution does not address the problem when two configurations lead to the same placement of the uncovered square. To address this problem, we can prove that the paths don't make a cycle, ~bebebe
+
+ 
+
+
+	\item (\textit{USAJMO 2023}) Two players, $B$ and $R$, play the following game on an infinite grid of unit squares, all initially colored white. The players take turns starting with $B$. On $B$'s turn, $B$ selects one white unit square and colors it blue. On $R$'s turn, $R$ selects two white unit squares and colors them red. The players alternate until $B$ decides to end the game. At this point, $B$ gets a score, given by the number of unit squares in the largest (in terms of area) simple polygon containing only blue unit squares. What is the largest score $B$ can guarantee?
+
+
+ (A simple polygon is a polygon (not necessarily convex) that does not intersect itself and has no holes.)
+
+
+ 
+
+
+
+\textbf{Solution}
+
+It is clear that $B$ can guarantee a score of $4$ squares. We will show that $R$ has a strategy to limit blue to $4$ squares, thus solving the problem.
+
+ Partition the grid into 2x2 squares. Red's strategy is as follows: 
+
+ - If $B$ plays in a 2x2 square, play the two adjacent squares to $B$'s square that are not in the 2x2 square.- If one (or both) of these moves are blocked, instead play a square a megaparsec away from the rest of the moves. This move can only benefit you and will not change the outcome of the game.
+
+ By induction, it is clear that no two blue squares that are adjacent are not in the same 2x2 square. Thus, we conclude that $R$ has limited blue to a maximum score of $2^2 = 4$, and the proof is complete. $\square$
+
+ 
+
+
+	\item (\textit{USAJMO 2023}) A positive integer $a$ is selected, and some positive integers are written on a board. Alice and Bob play the following game. On Alice's turn, she must replace some integer $n$ on the board with $n+a$, and on Bob's turn he must replace some even integer $n$ on the board with $n/2$. Alice goes first and they alternate turns. If on his turn Bob has no valid moves, the game ends.
+
+
+ After analyzing the integers on the board, Bob realizes that, regardless of what moves Alice makes, he will be able to force the game to end eventually. Show that, in fact, for this value of $a$ and these integers on the board, the game is guaranteed to end regardless of Alice's or Bob's moves.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We claim that the game will always end if and only if $\nu_{2}(n) < \nu_{2} (a)$ for all $n$ that are in the list of positive integers.
+
+ 
+First, we will prove the if direction. Notice that if Alice adds $a$ to $n,$ since we have 
+ \[\nu_{2} (ka+n) = \nu_{2} (n) < \nu_{2} (a)\] for all integers $k>0,$ eventually Bob will decrease $\nu_{2} (n)$ by $1,$ and Alice will not be able to change $\nu_{2} (n),$ and so $\nu_{2}(n)$ will eventually become $0.$ 
+
+ Similarly, all of the other numbers on the list will have the same fate as $n,$ and so, no matter what Bob or Alice do, the game will end.
+
+ 
+Now, we complete the only if direction, i.e. if $\nu_{2} (n) \ge \nu_{2} (a),$ where $n$ is one of the numbers in the list, we will prove that Alice can keep the game going forever. 
+
+ 
+Notice that Bob can only decrease $\nu_{2} (n)$ by $1$ at a time, and so if $\nu_{2} (n) \le \nu_{2} (a),$ we need $\nu_{2} (n) = \nu_{2} (a)$ at some point. But, then, if this is true, take $n = 2^{k}(2m+1),$ and $a = 2^{k}(2\ell+1),$ and notice that 
+ \[a+n = 2^{k}(2m+1)+2^{k}(2\ell+1) = 2^{k}(2m+2\ell+2) = 2^{k+1}(m+\ell+1),\] so$\nu_{2}(a+n) > \nu_{2} (n).$Thus, if Bob gets $\nu_{2} (n)$ equal to $\nu_{2} (a),$ Alice can simply add $a$ to $n,$ and then $\nu_{2} (n) > \nu_{2} (a)$ again. Thus, Alice can keep the game going forever, and hence we are done.
+
+ 
+
+
+	\item (\textit{USAJMO 2023}) Isosceles triangle $ABC$, with $AB=AC$, is inscribed in circle $\omega$. Let $D$ be an arbitrary point inside $BC$ such that $BD\neq DC$. Ray $AD$ intersects $\omega$ again at $E$ (other than $A$). Point $F$ (other than $E$) is chosen on $\omega$ such that $\angle DFE = 90^\circ$. Line $FE$ intersects rays $AB$ and $AC$ at points $X$ and $Y$, respectively. Prove that $\angle XDE = \angle EDY$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+All angle and side length names are defined as in the figures below. Figure 1 is the diagram of the problem while Figure 2 is the diagram of the Ratio Lemma. Do note that the point names defined in the Ratio Lemma are not necessarily the same defined points on Figure 1.
+
+ First, we claim the Ratio Lemma:
+
+ 
+ \[\frac{\sin{\theta_2}}{\sin{\theta_2’}}=\frac{PB}{PC}\cdot\frac{b}{c}.\]
+
+ We prove this as follows:
+
+ By the Law of Sines of $\triangle{ABP},$ we get:
+ \[\frac{\sin\theta_2}{BP}=\frac{\sin\theta_1}{c}=\frac{\sin B}{AP}.\]By the Law of Sines of $\triangle{ACP},$ we get:
+ \[\frac{\sin\theta_2’}{PC}=\frac{\sin\theta_1’}{b}=\frac{\sin C}{AP}.\]Dividing each of the corresponding equations, we get:
+ \[\frac{PC}{PB}\cdot\frac{\sin\theta_2}{\sin\theta_1}=\frac{b}{c}\cdot\frac{\sin\theta_1}{\sin\theta_1’}=\frac{\sin B}{\sin C}.\]Noting that $\sin \theta_1= \sin(180^\circ - \theta_1’)=\sin \theta_1’,$ we have:
+ \[\frac{\sin\theta_2}{\sin\theta_1}=\frac{PB}{PC}\cdot\frac{b}{c}.\]
+
+ We transition into our problem.
+
+ By Power of a Point on circle $\omega,$ we have:
+ \[XK\cdot XD=XF\cdot XE\]
+ \[YL\cdot YD=YF\cdot YE.\]By power of a point on circle $\omega_1,$ we have:
+ \[XB\cdot XA=XF\cdot XE\]
+ \[YC\cdot YA=YF\cdot YE.\]Using the transitive property, we have:
+ \[XK\cdot XD=XB\cdot XA\]
+ \[YC\cdot YA=YL\cdot YD.\]Thus, by reverse Power of a Point, we have that quadrilaterals $ADKB$ and $ACLD$ are cyclic.
+
+ Now, we move to angle chasing.
+
+ 
+                \begin{itemize}
+                    \item $\angle{ABD}=\angle{AKD}=\alpha$ (from cyclic $ADKB$)
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item $\angle{ABD}=\alpha=\angle{ACD}$ (from the isosceles triangle)
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item $\angle{ACD}=\alpha=\angle{ALD}$ (from cyclic $ACLD$)
+                \end{itemize}
+
+
+                It is from here in which we focus on quadrilateral $AKEL.$ 
+
+ Let $\angle KDE=\beta$ and $\angle EDL=\gamma.$ Now realize that all we want to show, as given by the problem statement, is $\beta=\gamma.$
+
+ Thus, $\angle{KED}=90^\circ-\beta, \angle{DEL}=90^\circ-\gamma.$
+
+ We also have:\begin{align*}\angle LAD&=180^\circ-(\angle ADL+\alpha)\\&=180^\circ-((180^\circ-\gamma)+\alpha))\\&=\gamma-\alpha.\end{align*}
+Similarly, $\angle{KAD}=\beta-\alpha.$ 
+
+ Calling back to what we want to show - if we want to show that $\beta=\gamma,$ it suffices to show that $\angle KAD=\angle LAD$ and $\angle KED=\angle LED.$ But this is equivalent to showing $\triangle{AKE}\sim\triangle{ALE}.$
+
+ However, applying our Ratio Lemma to $\triangle{AKE},$ we have:
+ \[\frac{\sin\alpha}{\sin 90^\circ}=\frac{AD}{DE}\cdot\frac{KE}{KA}.\]Applying our Ratio Lemma to $\triangle{ALE},$ we have:
+ \[\frac{\sin\alpha}{\sin 90^\circ}=\frac{AD}{DE}\cdot\frac{LE}{LA}.\]From the transitive property, we have:
+ \[\frac{KE}{KA}=\frac{LE}{LA}.\]Now, realize that we already have a shared side $AE$ and equivalent angles $\angle{ALE}=90^\circ+\alpha=\angle{AKE}.$ Thus, we establish a stronger bound between these two triangles - a congruence.
+
+ Thus, these two triangles are similar, and our proof is complete.
+
+ \textbf{mathboy282}
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2023_6_Solution_Figure_1.jpg}
+                    \end{figure}
+                    
+
+ 
+(cred. to v\_Enhance diagram)
+
+ 
+
+
+
+\textbf{Solution 2 (Inversion)}
+
+We realize that $\angle DFE = 90$ is quite annoying in calculations. Therefore, taking an inversion at $D$ will just make $AE\perp EF$, which is easier to incorporate. Also, many lines pass through $D$. Therefore, we have intuition to invert at $D$ with some radius. 
+
+ Take an inversion at $D$. We are not going to denote the inverted points with primes for simplicity. Note that $AE\perp EF$. Also, $X$ is the intersection of $(ABD)$ and $(DFE)$, which means it lies on the radical axis of $(ABD)$ and $(DFE)$. Likewise, $Y$ lies on the radical axis of $(ADC)$ and $(DFE)$. However, note that $\overline{EF}$ is the radical axis of $(ABC)$ and $(DEF)$, and $\overline{AC}$ is the radical axis of $(ABC)$ and $(ACD)$, so by concurrency of radical axis, $\overline{AC} \cup \overline{EF}$ lies on $\overline{AX}$ (wow)! Meaning, we don't need to consider circle intersections, just line intersections. Now, we need to analyze what happens to the isosceles triangle.
+
+ Consider $\triangle ACD$ before inversion. Once you invert it, angle $C$ goes to angle $A$. Same with $\triangle ADB$. However, angle $C$ is equal to angle $B$ by isosceles! This means $AD$ is now the angle bisector of $\angle BAC$.  A miracle!
+
+ Now we can phrase the question as follows:
+
+ For $\triangle ABC$, $\overline{AD}$ is the angle bisector of $\angle A$. Let $\overline{AD}$ intersect the circumcircle at $E$, and draw a line perpendicular to $\overline{AE}$ at $E$ and call it $l$. Let $\overline{AC}\cup l=X$, and let $\overline{AB} \cup l=Y$. Prove $\angle YDE = \angle XDE$
+
+ 
+One glance and one realizes the question is extremely easy. $\overline{AE}$ is a angle bisector and altitude of $\triangle AXY$, meaning that $\overline{YE}=\overline{EX}$
+
+ Therefore, $\overline{DE}$ is an altitude of $\triangle DYX$, and $\overline{YE}=\overline{EX}$, so of course $\overline{DE}$ is the angle bisector of $\angle YDX$! The problem is proven!
+
+ 
+
+
+\end{enumerate}

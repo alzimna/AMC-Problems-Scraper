@@ -144,17 +144,7 @@ Let a $k$-good sequence be a sequence of distinct integers $\{ a_i \}_{i=1}^k$ s
 
  \textit{Proof.} We induct on $k$.  For $k=1$, the lemma is trivially true.  Now, suppose the lemma holds for $k$.  If $\{ a_i \}_{i=1}^{k+1}$ is a $(k+1)$-good sequence, then $\{ a_i \}_{i=1}^k$ is a $k$-good sequence which starts on $a$, so it is a permutation of $k$ consecutive integers, say $m, \dotsc, M$.  Then the only possibilities for $a_{k+1}$ are $m-1$ and $M+1$; either way, $\{ a_i \}_{i=1}^{k+1}$ constitutes a permutation of $k+1$ consecutive integers.  Since there are $2^k$ possible sequences $\{a_i\}_{i=1}^k$, and 2 choices of $a_{k+1}$ for each of these sequences, it also follows that there are $2^k \cdot 2 = 2^{k+1}$ $(k+1)$-good sequences which start on $a$.  Thus the lemma holds by induction.  $\blacksquare$
 
- We now consider the number of desired positive integers with $k$ digits.  Evidently, $k$ must be less than or equal to $n$.  We also note that the digits of such an integer must constitute a $k$-good sequence.  Since the minimum of this sequence can be any of the digits $0, \dotsc, n-k$, unless the minimum is 0 and is the first digit (in which case the only possible sequence is an increasing arithmetic sequence), and there are $2^{k-1}$ $k$-good sequences up to translation, it follows that there are $(n-k+1) 2^{k-1}-1$ desired positive integers with $k$ digits.  Thus the total number of desired positive integers is
- \begin{align*} \sum_{k=1}^n \bigl[ (n-k+1) 2^{k-1}-1 \bigr] &= -n + \sum_{k=1}^n \sum_{j=k}^n 2^{k-1} = -n + \sum_{j=1}^n \sum_{k=1}^j 2^{k-1} \\ &= -n + \sum_{j=1}^n (2^k-1) = - 2n -1 + \sum_{j=0}^n 2^k, \end{align*}
-which is equal to $2^{n+1} - 2(n+1)$, our answer.  $\blacksquare$
-
- 
-
-
- The lemma in the above solution is wrong. A 3-term sequence starting on 1 will not comply, for instance.My solution is shown as follows.We call all qualified numbers ‘good numbers’, with k digits, 1<=k<=n. See any good number as a k-term sequence, m being the minimal term, a being the first term. Note that 0<=m<=n-k.Lemma. It is trivially true that any good number consists of consecutive digits. It can be proven with induction easily.Now pick any m, let f(i) be the number of sequences when a=i, we prove that f(i)=C(k-1,i-m), m<=i<=m+k-1.Per Lemma, a sequence consists of consecutive digits: m,m+1,\ldots,i,\ldots,m+k-1. The first term a=i determined, there are k-1 remaining spaces to be filled. The digits smaller than i are m,m+1,\ldots,i-1, their only link to i is i-1, then i-2, so on so forth, eventually we can know they can only enter the sequence in one order which is descending: i-1,i-2,\ldots,m. Likewise, the digits bigger than i can only enter the sequence in one order which is ascending: i+1,i+2,\ldots,m+k-1. Therefore, the number of sequences is equivalent to the number of ways in which the i-m digits smaller than i occupy the k-1 remaining spaces, i.e., C(k-1,i-m).So, for any given m, the total number of sequences is $\sum$(f(i),i=m~m+k-1)=$\sum$(C(k-1,i),i=0~k-1)=2\textasciicircum{}(k-1). Considering that there are n-k+1 possibilities for m, and deducting the one special case with m=0 and a=0 (because the first digit cannot be 0), we now can have the total number of sequences for any given k: (n-k+1)2\textasciicircum{}(k-1)-1. Now we can arrive at the grand total: $\sum$((n-k+1)2\textasciicircum{}(k-1)-1,k=1~n). It is trivial that the final sum is 2\textasciicircum{}(n+1)-2(n+1). Done.Tmath2024 2026.5.18
-
- 
-<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1990\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
+ We now consider 
 
  
 

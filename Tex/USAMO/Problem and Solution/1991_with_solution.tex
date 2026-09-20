@@ -19,6 +19,33 @@
  After drawing the triangle, also draw the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector}{angle bisector} of $\angle A$, and let it intersect $\overline{BC}$ at $D$. Notice that $\triangle ADC\sim \triangle BAC$, and let $AD=x$. Now from similarity,
  \[x=\frac{bc}{a}\]However, from the angle bisector theorem, we have 
  \[BD=\frac{ac}{b+c}\]but $\triangle ABD$ is isosceles, so
+ \[x=BD\Longrightarrow \frac{bc}{a}=\frac{ac}{b+c}\Longrightarrow a^2=b(b+c)\]so all sets of side lengths which satisfy the conditions also meet the boxed condition. 
+
+ Notice that $\text{gcd}(a, b, c)=1$ or else we can form a triangle by dividing $a, b, c$ by their \href{https://artofproblemsolving.com/wiki/index.php?title=Greatest\_common\_divisor}{greatest common divisor} to get smaller integer side lengths, contradicting the perimeter minimality. Since $a$ is squared, $b$ must also be a square because if it isn't, then $b$ must share a common factor with $b+c$, meaning it also shares a common factor with $c$, which means $a, b, c$ share a common factor—a contradiction. Thus we let $b = x^2, b+c = y^2$, so $a = xy$, and we want the minimal pair $(x,y)$. 
+
+ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines}, 
+ \[b^2 = a^2 + c^2 - 2ac\cos B\]
+
+ Substituting $a^2 = b^2 + bc$ yields $\cos B = \frac{b+c}{2a} = \frac{y}{2x}$. Since $\angle C > 90^{\circ}$, $0^{\circ} < \angle B < 30^{\circ} \Longrightarrow \sqrt{3} < \frac{y}{x} < 2$. For $x \le 3$ there are no integer solutions. For $x = 4$, we have $y = 7$ that works, so the side lengths are $(a, b, c)=(28, 16, 33)$ and the minimal perimeter is $\boxed{77}$.
+
+ \textbf{Alternate Solution} In $\triangle ABC$ let $\angle B = \beta, \angle A = 2\beta, \angle C = 180^{\circ} - 3\beta$. From the law of sines, we have
+ \[\frac{a}{\sin 2\beta} = \frac{b}{\sin \beta} = \frac{c} {\sin (180^{\circ} - 3\beta)} = \frac{c}{\sin 3\beta}\]Thus the ratio 
+ \[b : a : c = \sin\beta : \sin 2\beta : \sin 3\beta\]We can simplify
+ \[\frac{\sin 2\beta}{\sin\beta} = \frac{2\sin\beta\cos\beta}{\sin\beta} = 2\cos\beta\]Likewise, 
+ \[\frac{\sin 3\beta}{\sin\beta} = \frac{\sin 2\beta\cos\beta + \sin\beta\cos 2\beta}{\sin\beta} =  \frac{2\sin\beta\cos^2\beta + \sin\beta(\cos^2\beta - \sin^2\beta)}{\sin\beta}\]
+ \[= {2 \cos^2 \beta + \cos^2 \beta - \sin^2 \beta} = 4\cos^2 \beta - 1\]Letting $\gamma = \cos\beta$, rewrite 
+ \[b : a : c = 1 : 2\gamma : 4\gamma^2 - 1\]
+
+ We find that to satisfy the conditions for an obtuse triangle, $\beta \in (0^\circ, 30^\circ)$ and therefore $\gamma \in \left(\frac{\sqrt{3}}{2}, 1\right)$.
+
+ The rational number with minimum denominator (in order to minimize scaling to obtain integer solutions) above $\frac{\sqrt{3}}{2}$ is $\frac{7}{8}$, which also has a denominator divisible by 2 (to take advantage of the coefficients of 2 and 4 in the ratio and further minimize scaling).
+
+ Inserting $\gamma = \frac{7}{8}$ into the ratio, we find $b : a : c = 1 : \frac{7}{4} : \frac{33}{16}$. When scaled minimally to obtain integer side lengths, we find
+ \[b, a, c = 16, 28, 33\]and that the perimeter is $\boxed{77}$.
+
+ (note by integralarefun: The part of the solution about finding $\gamma$ is not rigorous and would likely require further proof in an actual test.)
+
+ <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
 
  
 

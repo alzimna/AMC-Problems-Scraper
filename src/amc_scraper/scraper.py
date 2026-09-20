@@ -69,15 +69,18 @@ def get_soup(source,
 
     if type == 'a' :
         selector = [(By.TAG_NAME, 'ol'),1]
+        t = MWAIT
     elif type == 'p' :
         selector = [(By.CLASS_NAME, 'mw-headline'),numprob]
+        t = MWAIT
     else :
         selector = [(By.CLASS_NAME,'wikitable'),1]
+        t = LWAIT
 
     for attempt in range(1,max_retries+1) :
         browser = webdriver.Chrome(options=options)
         wait = WebDriverWait(browser,
-                            timeout= MWAIT,
+                            timeout= t,
                             poll_frequency=1,
                             ignored_exceptions=[NoSuchElementException])
         try:
@@ -86,6 +89,7 @@ def get_soup(source,
                 wait.until(wait_for_visible_count(*selector))
                 html_source =  browser.page_source
             else :
+                browser.implicitly_wait(MWAIT) 
                 html_source = browser.execute_script("return document.body.textContent")
             soup = BeautifulSoup(html_source,'html.parser')
 

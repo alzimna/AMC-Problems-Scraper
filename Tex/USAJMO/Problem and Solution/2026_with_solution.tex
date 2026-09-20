@@ -1,0 +1,895 @@
+\section{USAJMO 2026}
+        \begin{enumerate}
+        	\item (\textit{USAJMO 2026}) Let $a,b,c$ be distinct positive integers such that $ab+c=c^2$. Prove that $(a-b)^2\ge 4c$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Write $ab=c^2-c=c(c-1)$. WLOG $a>b$, so $a>\sqrt{c(c-1)}>c-1$. Since $a$ and $c$ are positive integers, this implies $a\geq c$. However, $a\neq c$, so let $a = c+k$, where $k$ is a positive integer. We know that $c+k \mid c(c-1)$. Let $c+k = c_1 c_2$, such that $c_1 \mid c - 1$ and $c_2\mid c$. 
+
+ We have 
+ \[c_1 \leq \text{gcd }(c-1, c+k)\leq k+1\] 
+ \[c_2 \leq \text{gcd }(c, c+k)\leq k\] Thus, $c+k\leq k(k+1)\implies k\geq \sqrt{c}$. Finishing up, $a=c+k\geq c+\sqrt{c}$ and $b=\frac{c^2-c}{a}\leq c-\sqrt{c}$, so 
+ \[a-b\geq 2\sqrt{c}\implies (a-b)^2\geq 4c\] and the proof is complete. $\square$
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Rewrite the condition as $ab=c^2-c$. Then examine the LHS:
+ \[(a-b)^2=(a+b)^2-4ab=(a+b)^2+4c-4c^2\]
+
+ Given that $ab=c(c-1)$ and $a,b,c$ are distinct meaning one of $a,b$ is larger than $c$ and the other is smaller than $c$.Let $a=c+n,b=c+m$ where $nm<0$. So
+
+ 
+ \[ab=c^2+(n+m)c+nm=c^2-c\implies c=\frac{-nm}{n+m+1}\]
+
+ Since $c>0$ and $-nm>0$ thus $n+m+1>0$. $n,m$ are both integers which implies $n+m\ge 0$ so $a+b\ge 2c$.Plugging this in to the inequality gives
+
+ 
+ \[(a-b)^2=(a+b)^2-4ab=(a+b)^2+4c-4c^2\ge (2c)^2+4c-4c^2=4c\]
+
+ 
+
+
+
+\textbf{Solution 3 (easier)}
+
+By AM-GM,
+ \[a+b\ge 2\sqrt{c^2-c}\]If $a+b\le 2c-2$, then $2c-2\ge 2\sqrt{c^2-c}\implies 4c^2-8c+4\ge 4c^2-4c\implies c\le 1$. Hence $c=1$, so $ab=c^2-c=0$, contradiction.
+
+ Next, if $a+b=2c-1$, then $a,b$ are the roots of the quadratic
+ \[t^2-(2c-1)t+(c^2-c)=0\]which has roots at $t=c,c-1$. But then one of $a,b$ is equal to $c$, contradicting $a,b,c$ distinct, so we conclude that $a+b\ge 2c$. Then,
+ \[a+b\ge 2c\implies (a+b)^2\ge 4c^2\implies (a-b)^2\ge 4c^2-4ab=4c\]as desired.
+
+ 
+
+
+
+\textbf{Solution 4 (Easier AM-GM)}
+
+$\textbf{Lemma}$
+
+ For all real numbers $a$ and $b$ that satisfy $ab \le 0$, the following inequality suffices.
+
+ 
+ \[\frac{a-b}{2} \ge \sqrt{ab}\].
+
+ $\textbf{Proof of the Lemma}$
+
+ Substitute $-b$ in the AM-GM inequality.
+
+ 
+ \[\frac{a-b}{2} \ge \sqrt{-ab} ~~~~~~~~~~ \text{(1.1)}\]
+
+ Then the inequality $\sqrt{-ab}$ holds only if $ab \le 0$. Then the result becomes 
+
+ 
+ \[\frac{a-b}{2} \ge \sqrt{ab} ~~~~~~~~~~ \text{(1.2)}\] 
+
+ hence proven.
+
+ $\textbf{USAJMO Q1}$
+
+ AM-GM and rearrangement of the inequality states that
+
+ 
+ \[ab \le \frac{(a+b)^2}{4}\]
+
+ and thus
+
+ 
+ \[4ab \le (a+b)^2\].
+
+ The application of 1.1 gives
+
+ 
+ \[(a-b)^2 \ge -4ab\]
+ \[-(a-b)^2 \le 4ab\]
+
+ And thus the inequality
+
+ 
+ \[-(a-b)^2 \le 4ab \le (a+b)^2 ~~~~~~~~~~ \text{(1.3)}\]
+
+ Rearranging 1.3 gives
+
+ 
+ \[-(a^2 + b^2) \le 2ab \le a^2 + b^2\]
+ \[-(a-b)^2 \le 0 \le (a-b)^2\]
+
+ It then follows that $(a-b)^2 \ge 0 ~~~~~~~~~~ \text{(1.4)}$. 
+
+ Applying the lemma, particularly result 1.2 and rearranging gives
+
+ 
+ \[(a-b)^2 \ge 4ab\]
+
+ Note that then 
+ \[4ab \le 0\] as a direct result from 1.1. It is given that $ab = c(c-1)$. Thus, 
+
+ 
+ \[c(c-1) \le 0\] in which equality holds if one of $c$ or $c-1$ is 0, in which the result is trivial. Otherwise if $c-1 \neq 0$, division of $c-1$ into 0 gives $c \le 0$. This result then shows that $4c \le 0$. 
+
+ Given that $(a-b)^2 \ge 0$ and $4c \le 0$, it is proven that 
+ \[(a-b)^2 \ge 4c \quad \square\]
+
+ Question to author: How is 4c$\leq$0 if it is given that a,b,c are distinct positive integers?
+
+ Because we are under the condition of the Lemma, remember! We take an integer $b \mapsto -b$. The only reason the final inequality stands is because at the end, even after obtaining $4c \leq 0$ we can still formulate a map $-c \mapsto c$ such that we shift $4c$ by some $x$ so the inequality $4c +x \leq x$ holds. Similarly, we can shift the RHS $(a-b)^2 \geq 0$ by the same $x$. This unique $x$ is the equilibrium factor in respect to $4c$, which is why the Lemma still proves the claim correct.
+
+ It is hard to see at first, maybe I should have clarified... if required, I will rewrite the solution. But as I've heard from others it is fine as is, so if I get another question then I'll try to rewrite it. Too lazy rn though! :(. Nice question, I'll try to be more specific later on...
+
+ Same person who wrote the question: Ty, this really helped!
+
+ \textbf{Remark}
+
+ Another way one could have seen this inequality hold is the fact $(a-b)^2$ expands quadratically whereas $4c$ expands linearly. Both are centred correspondingly to the centre/origin  hence the inequality must hold true. Indeed, a graphical approach can be used along with the function $ab = c(c-1)$.
+
+ 
+
+
+
+\textbf{Solution 5 (0 tech)}
+
+Note that $4c = 4c^2-4ab$. Thus, it suffices to prove that $a+b \ge 2c$. 
+
+ Note that by common sense, since $a, b, c$ are positive integers, $ab = c(c-1)$ implies that $a + b \ge 2c-1$. However, since $a \ne b \ne c$, $a+b \ne 2c-1$, so $a+b \ge 2c$. 
+
+ Equality occurs a lot; for example, $(a, b, c) = (2, 6, 4) \quad \mathbb{Q.E.D}$.
+
+ 
+
+
+	\item (\textit{USAJMO 2026}) There are $m$ foxes and $n$ rabbits sitting in $m+n$ seats around a circular table, where all animals are distinguishable. If a fox and a rabbit are sitting next to each other, they may swap positions with each other. For a fixed starting configuration, determine the number of configurations that can be reached by a sequence of swaps.
+
+
+ Note: Rotations and reflections of a configuration are considered distinct.
+
+
+ 
+
+
+
+\textbf{Solution 2 (Fixed, Cyclic Orientation and Number Theory)}
+
+$\textbf{Preliminary}:$
+
+ Note that there are $\binom{m+n}{m}$ total possible configurations. Without loss of generality, let $m \ge n$.
+
+ Define an $z$-circle to be a partial circle consisting of $z$ members. The two foxes at the ends of the $z$-circle have the potential to swap. Such an example of a $z$-circle$:~z = 6$ is shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_2_Solution_Figure_1.png}
+                    \end{figure}
+                    $\textbf{Lemma 1}:$
+
+ The foxes arranged in an $m$-circle will have a minimum of 2 swaps. 
+
+ $\textbf{Proof of Lemma 1}:$
+
+ Trivial through definition of an $m$-circle, hence desired.
+
+ Letting $k$ denote the invariant number of possible swaps, it is given that $k$ satisfies the inequality $k \ge 2$. 
+
+ $\textbf{Lemma 2}:$
+
+ The upper bound of $k$ is $n$, and there are a total of $\operatorname{lcm}(m,n)$ swaps possible given $m$, $n$.
+
+ $\textbf{Proof of Lemma 2}:$
+
+ We label the foxes as $1,2,\dots,m$ and the rabbits as $1,2,\dots,n$. Consider pairings (or swaps) between foxes and rabbits.
+
+ If every fox can be paired with every rabbit independently, then the total number of possible pairings is simply
+ \[mn.\]
+
+ Now suppose the system imposes a \textbf{cyclical non-totient structure}, meaning foxes are arranged in a cycle of length $m$ and rabbits are arranged in a cycle of length $n$, and pairings are considered equivalent under a certain $\gcd \neq 1$ (In other words, $m$ and $n$ are not relatively prime)
+
+ In this case, we are no longer counting raw pairs but rotations under
+ \[(i,j) \rightarrow (i+1 \pmod m,\; j+1 \pmod n).\]
+
+ The idea is that through basic modular arithmetic, every single $i$ will map to every single $j$ (where $0 < i,j < m, n$) uniquely if $\gcd(i,j) = 1$. To prove that statement, the concept of the \href{https://artofproblemsolving.com/wiki/index.php?title=Chinese\_Remainder\_Theorem}{Chinese Remainder Theorem} immediately results in $mn$. However, if this is not the case, each cycle maps onto one another by some primitive root, in which every cycle is shortened by one factor of $\gcd{m}{n}$ from its parent. To prove this statement, imagine applying \href{https://artofproblemsolving.com/wiki/index.php?title=Chinese\_Remainder\_Theorem}{Chinese Remainder Theorem} to two elements $i$, $j$, whose elements satisfy $\gcd(i,j) \neq 1$. Obviously, to obtain some $k = \frac{i}{x}$ where $x \in \mathbb{Z}^+$ so that $\gcd(k,j) = 1$ to apply \href{https://artofproblemsolving.com/wiki/index.php?title=Chinese\_Remainder\_Theorem}{Chinese Remainder Theorem}, we need to find the minimal value of $x$ in primitive modulo that satisfies this. The smallest plausible that is apart of both primitive $\pmod{i}$ and $\pmod{j}$ is simply $\gcd(m,n)$, and thus the cases for this is $\frac{mn}{\gcd(m,n)} = \operatorname{lcm}(m,n)$.
+
+ As $\operatorname{lcm}(m,n) = mn$ holds for all $\gcd(m,n) = 1$, it follows for conveniency that every single case falls into 
+
+ 
+ \[\operatorname{lcm}(m,n)\]
+
+ and the upper bound of $k$ is indeed $n$.
+
+ (Note: While my previous interpretation failed to identify the idea of cyclicity and when the greatest common divisors of $m$ and $n$ are not 1, it does correctly hold the fact that $n$ is the upper bound as $n$ is not dependent on the cyclicity. The mistake I made when constructing my and incorrectly fixing the previous solution 2 was simply not accounting for when $m$ and $n$ were not relatively prime, which explains why I made the mistake. For that, I would like to apologize).
+
+ The diagram below is a visual interpretation of the upper bound of $k$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_2_Solution_Figure_2.png}
+                    \end{figure}
+                    $\textbf{Claim}:$
+
+ The problem statement, that is, "rotations are distinct", is negligible given the above criteria. 
+
+ $\textbf{Proof of Claim}:$
+
+ As we cyclically pair each fox and rabbit together, the rotations have already been accounted for, hence proved.
+
+ $\textbf{USAJMO Q2}:$
+
+ Thus the total number of such configurations is just the number of possible configurations, each of which multiplied by the number of distinct swaps per that given section. There are a total of $\operatorname{lcm}(m,n)$ distinct swaps through Lemma 2 and a total of  $\binom{m+n}{m}$ given distinct cases. Rearrangement using commutative property derives the count
+ \[\binom{m+n}{m} \cdot \operatorname{lcm}(m,n) ~~~~~~~~~ \square\]
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We start by considering which seats can have foxes while not changing $I(F),I(R)$. The claim is that all $\left(^{m+n}_m\right)$ different ways to arrange foxes are possible. Assume the smallest indexed fox not in the seat with its own index is $i$ who is currently in seat $j$. This implies that all seats $i,i+1...j-1$  are occupied by rabbits $1,2,3...j-i$. So we swap fox $i$ with rabbit $j-1$ then with rabbit $j-2$ so on until swapped with rabbit $1$, returning it to seat $i$. None of these swaps involves seat $m+n$ swapping seat 1 so the order is preserved. So by induction we can places all the foxes in their respective seats (call this state $T$). This means from any initial configuration we can reach $T$. So if we consider a random configuration $P$ we can also reach $T$. So if we reach $T$ from the initial configuration then reverse all the moves needed to reach $T$ from $P$ we actually end up in $P$ from the initial configuration. So all configurations are possible. Next we consider all possible orders of foxes and rabbits. we start from$I(F)=1,2,3...m$ and $I(R)=1,2,3...n$. The only way to change the order is to swap the first fox with the last rabbit resulting in $I(F)=2,3...m,1$ and $I(R)=n,1,2,3...n-1$. So each single change rotates $I(F),I(R)$ by 1 slot. Thus $I(F)$ rotates with period $m$ and $I(R)$ rotates with period $n$. So the combined period of foxes and rabbits is $\operatorname{lcm}(m,n)$. Combining the ways to seat the foxes and order the foxes & rabbits, we get  
+ \[\left(^{m+n}_m\right)\cdot \operatorname{lcm}(m,n)\]
+
+ 
+
+
+	\item (\textit{USAJMO 2026}) Let $ABC$ be an acute scalene triangle with no angle equal to $60^{\circ}$. Let $\omega$ be the circumcircle of $ABC$. Let $\triangle_B$ be the equilateral triangle with three vertices on $\omega$, one of which is $B$. Let $\ell_B$ be the line through the two vertices of $\triangle_B$ other than $B$. Let $\triangle_C$ and $\ell_C$ be defined analogously. Let $Y$ to be the intersection of $AC$ and $\ell_B$, and let $Z$ be the intersection of $AB$ and $\ell_C$.
+
+
+ Suppose that the circumcircle of $AYZ$ intersects $\omega$ at $P\neq A$, $BC$ intersects $YZ$ at $D$, and $PA$ intersects $YZ$ at $E$. Prove that $PE=PD$.
+
+
+ 
+
+
+
+\textbf{Solution 1 (Complex Numbers)}
+
+Put the problem on the complex plane, so $\omega$ is the unit circle, and let $O=0$ be the center of $\omega$. Define $\zeta^3=1, \zeta \neq 1$. 
+
+ Then, $B_1, B_2, C_1, C_2$ are $b\zeta$, $b\zeta^2$, $c\zeta$, $c\zeta^2$, respectively. Letting $S_1=a+b+c$ and $S_2=bc+ac+ab$, we find 
+ \[y=\frac{bS_2}{b^2-ac} \text{ and } z=\frac{cS_2}{c^2-ab} \text{ ,while } \overline{y}=-\frac{S_1}{b^2-ac} \text{ and } \overline{z}=-\frac{S_1}{c^2-ab}\] $P$ is the center of the spiral similarity sending $BC$ to $YZ$, so 
+ \[p = \frac{by-cz}{b+y-c-z}=\frac{\frac{b^2S_2}{b^2-ac}-\frac{c^2S_2}{c^2-ab}}{\frac{b^2S_1}{b^2-ac}-\frac{c^2S_1}{c^2-ab}}=\frac{S_2}{S_1}\]\textbf{Claim 1: $\overleftrightarrow{YZ}$ is the perpendicular bisector of $\overline{OP}$}
+
+ Proof: To see this, write 
+ \[|y-p|=|y| \iff \overline{p}y+p\overline{y}=1\] But, $\overline{p}=\frac{1}{p}=\frac{S_1}{S_2}$, so 
+ \[\overline{p}y+p\overline{y} = \frac{bS_1-S_2}{b^2-ac} = \frac{b^2-ac}{b^2-ac} = 1\] as needed. Similarly, we can show $|z-p|=|z|$, proving our claim.
+
+ Now, we move onto $D$. Let $K=\frac{1}{(b^2-ac)(c^2-ab)}$. With lots of help from factoring, we derive 
+ \[D=  \frac{(\overline{y}z-y\overline{z})(b-c) + (y-z)(\frac{c}{b}-\frac{b}{c})}{(\overline{y}-\overline{z})(b-c)+(y-z)(\frac{1}{b}-\frac{1}{c})} =\frac{(\overline{y}z-y\overline{z})bc + (y-z)(b+c)}{(\overline{y}-\overline{z})bc+(y-z)}\] 
+ \[= \frac{bcS_1S_2(b-c)K+(b+c)S_2S_2(c-b)K}{bcS_1S_1(b-c)K+S_2S_2(c-b)K}=\frac{(b+c)S_2^2-bcS_1S_2}{S_2^2-bcS_1^2}\] Similarly, 
+ \[E=\frac{(a+p)S_2^2-apS_1S_2}{S_2^2-apS_1^2}=\frac{pS_2}{S_2-aS_1}\] where we have used $p=\frac{S_2}{S_1}$. To finish, we write 
+ \[|D|=|E|\iff \left| \frac{S_2(S_2(b+c)-S_1)}{S_2^2-bcS_1^2} \right|=\left| \frac{S_2}{bc-a^2}\right|\] 
+ \[\iff \left| \frac{(bc-a^2)(b^2+bc+c^2)}{S_2^2-bcS_1^2}\right| = 1 \quad \quad (\ast)\] where we have used $S_2(b+c)-S_1bc=a(b^2+bc+c^2)$. But, 
+ \[S_2^2-bcS_1^2 = a^2b^2+a^2bc+ac^2-b^3c-b^2c^2-bc^3 = (a^2-bc)(b^2+bc+c^2)\] Thus, the fraction in $(\ast)$ is -1, and so we conclude $|D|=|E|$. Thus, 
+ \[PD=OD=OE=PE \quad \square\]
+
+ -sillybone
+
+ 
+
+
+
+\textbf{Solution 2 (Angle Chasing, Much Shorter, Come and Go Solution)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_3_Solution_Figure_1.png}
+                    \end{figure}
+                    The picture above is not to scale and is hand drawn. 
+
+ We wish to show that the median down from $P$ intersects $DE$ at $90^\circ$.
+
+ Both triangles $BB_1B_2$ and $CC_1C_2$ lie on the same circle $O$. Thus, each of their vertices are separated by 120 degree arcs, and thus their sides must be congruent. Through SSS, the two triangles are congruent.
+
+ Then, quadrilateral $BB_1C_2C_1$ is cyclic. Let angle $C_1C_2B_1 = (60+x)^\circ$ and angle $B_1BC_1 = (60+y)^\circ$. It follows that $x+y = 60^\circ$.
+
+ Lay the quadrilateral upon $BB_1$ as the $x$-axis in the coordinate plane. Without loss of generality, one can let $BC_1 = 1$. The equation for the diagonal $BB_2$ is $\tan(60^\circ)x = \sqrt{3}x$.
+
+ The two equilateral triangles are congruent. All partitions of segments are congruent to their opposing segments. Thus, their corresponding segments are symmetrical about the centre of circle $O$, and a translation of the line $BB_1$ up one unit correctly translates the line as the angle bisector of $CC_1C_2$. Then, the equation of the line $C_1C$ is $\tan(-30^\circ)x + 1 = -\frac{1}{\sqrt{3}}x + 1$. The two lines are negative reciprocals of one another, and thus $BB_2 \perp C_1C$.
+
+ Let the intersection of $BB_2$ and $C_1C$ be $V$. It follows that triangle $BVC_1$ is isosceles with the base angles measure $y$. Then, $(2y)^\circ+90^\circ = 180^\circ$ through the Triangle Angle Sum formula, and thus $y=45^\circ$. It follows through Opposite Angles of a Cyclic Quadrilateral that $x = 15^\circ$. 
+
+ Angle $C_1ZB = 30^\circ$, and $AZC_2 = 30^\circ$ through Vertical Angles. Let the intersection of $CC_2$ and $B_1B_2$ be $W$. It is then true that angle $B_2WC_2 = (2x)^\circ = 30^\circ$. Thus, angle $WYC = 30^\circ$, and angle $B_2YA = 30^\circ$.  
+
+ Let the intersection of $B_2B$ and $DE$ be $N$. Let the midpoint of $DE$ be $M$. Extend $PM$ through until it touches the circumcircle of $AYZ$ at point $J$. Extend $B_2$ through $Y$ until it touches the circumcircle of $AYZ$ at point $K$. Triangle $B_2YN$ is equilateral. The altitude down from $N$ bisects $B_2Y$ at $L$. Let the intersection of $PJ$ and $NL$ be $L'$. Let angle $ML'L$ be $a$, angle $L'MY$ be $b$, and $L'PB_2$ be $c$. Finding $b$ and showing $b = 90^\circ$ will prove the statement.
+
+ Let the intersection of $DE$ and $CC_2$ be $K'$. Extend $CY$ until intersection with line $CC_2$ at point $J'$. We know $B_2NL = 30^\circ$ and therefore $LNY = 30^\circ$. We also know triangle $YWK'$ is 30-60-90 with angle $YWK' = 30^\circ$ and angle $WK'Y = 90^\circ$. Thus, $YK'J' = 90^\circ$ and through AA similarity triangles $YK'J'$ and $WK'Y$ are similar, and therefore angle $ZYJ = 30^\circ$. Then, through the converse of the Alternate Exterior Angles theorem lines $LN$ and $YJ$ are parallel. 
+
+ Angle $PL'L = (180-a)^\circ$. Through Corresponding Angles Theorem, $\angle PJY \cong \angle PL'L = (180-a)^\circ$. Through Quadrilateral Angle Sum Formula, $b+a+150 = 360$ and thus $b+a = 210$. Also, through triangle sum formula, $(180-a)+b+30 = 180$, and thus $b-a = -30$. It then follows that $2b = 180$, and $b = 90^\circ$.
+
+ We needed to find the measure of angle $b$ to solve the problem, specifically showing $b = 90^\circ$, as because it is the angle inscribed within the median of $P$ to side $DE$, angle $b$ proves that the median $PM$ is also the altitude, which can only happen if triangle $DPE$ is isosceles, with $PE = PD$. $\square$.
+
+ 
+
+
+
+\textbf{Solution 3 (In thought process)}
+
+(Someone plz check if this is fakesolve :sob)We place the figure on the unit circle and compute the relevant ratios in coordinates.
+
+ The strategy is as follows.
+
+ First, we put $\omega$ on the unit circle and write $A,B,C$ in trigonometric form.Then we find the equations of the two special lines $\ell_B$ and $\ell_C$, and from these compute the ratios $\frac{AY}{YC}$ and $\frac{AZ}{ZB}$.Using Menelaus in $\triangle ABC$, we then obtain $\frac{BD}{DC}$.
+
+ Next, since $E=AP\cap YZ$ and $A,Y,P,Z$ are concyclic, we use power of a point together with another ratio computation to obtain $\frac{EY}{EZ}$.Comparing this with $\frac{BD}{DC}$ gives $BD\cdot DC=EY\cdot EZ$.This shows that $D$ and $E$ have the same power with respect to $\omega$, so $OD=OE$.
+
+ Finally, $D$ and $E$ lie on a circle centered at $O$.Comparing $\triangle ODP$ and $\triangle OEP$ then gives $PD=PE$.
+
+ Now we carry this out.
+
+ Let $\omega$ be the unit circle centered at $O=(0,0)$, and write$A=(1,0)$, $B=(\cos 2C,\sin 2C)$, and $C=(\cos 2B,-\sin 2B)$.Then $\angle AOB=2C$ and $\angle AOC=2B$, so indeed $\angle BAC=A$.
+
+ Let$B_1=(\cos(2C+120^\circ),\sin(2C+120^\circ))$ and$B_2=(\cos(2C-120^\circ),\sin(2C-120^\circ))$,and let $\ell_B=B_1B_2$.Similarly, let$C_1=(\cos(-2B+120^\circ),\sin(-2B+120^\circ))$ and$C_2=(\cos(-2B-120^\circ),\sin(-2B-120^\circ))$,and let $\ell_C=C_1C_2$.
+
+ Define$Y=AC\cap \ell_B$, $Z=AB\cap \ell_C$, and $D=YZ\cap BC$.Let $\Gamma=(AYZ)$, and let $P\ne A$ be the second point of intersection of $\omega$ and $\Gamma$.Finally let $E=AP\cap YZ$.We must prove that $PD=PE$.
+
+ We first determine the equations of $\ell_B$ and $\ell_C$.Since$\cos 2C\cos(2C\pm120^\circ)+\sin 2C\sin(2C\pm120^\circ)=\cos(\mp120^\circ)=-\frac12$,both $B_1$ and $B_2$ lie on the line$\cos 2C\,x+\sin 2C\,y=-\frac12$.Hence$\ell_B:\ \cos 2C\,x+\sin 2C\,y=-\frac12$.Similarly,$\ell_C:\ \cos 2B\,x-\sin 2B\,y=-\frac12$.
+
+ Now parametrize the sidelines.A point on $AC$ has the form$(x,y)=(1+t(\cos 2B-1),-t\sin 2B)$.Since $Y\in \ell_B$, substituting into the equation of $\ell_B$ gives$\cos 2C\bigl(1+t(\cos 2B-1)\bigr)-t\sin 2C\sin 2B=-\frac12$.Using$\cos 2C\cos 2B-\sin 2C\sin 2B=\cos 2(B+C)=\cos 2A$,we obtain$\cos 2C+t(\cos 2A-\cos 2C)=-\frac12$,so$t=\dfrac{-\frac12-\cos 2C}{\cos 2A-\cos 2C}$.Since $\dfrac{AY}{YC}=\dfrac{t}{1-t}$, a routine trigonometric simplification yields
+
+ $(1)\qquad \dfrac{AY}{YC}=-\dfrac{\sin A\sin 3C}{\sin C\sin 3A}$.
+
+ Similarly, a point on $AB$ has the form$(x,y)=(1+s(\cos 2C-1),s\sin 2C)$.Since $Z\in \ell_C$, substituting gives$\cos 2B\bigl(1+s(\cos 2C-1)\bigr)-s\sin 2B\sin 2C=-\frac12$.Again using$\cos 2B\cos 2C-\sin 2B\sin 2C=\cos 2A$,we get$\cos 2B+s(\cos 2A-\cos 2B)=-\frac12$,hence
+
+ $(2)\qquad \dfrac{AZ}{ZB}=\dfrac{s}{1-s}=-\dfrac{\sin A\sin 3B}{\sin B\sin 3A}$.
+
+ Now apply Menelaus to triangle $ABC$ with transversal $YDZ$:$\dfrac{AZ}{ZB}\cdot\dfrac{BD}{DC}\cdot\dfrac{CY}{YA}=1$.Substituting (1) and (2), we obtain
+
+ $(3)\qquad \dfrac{BD}{DC}=\dfrac{\sin C\sin 3B}{\sin B\sin 3C}$.
+
+ Next we turn to the point $E$.Since $A,Y,P,Z$ are concyclic and $E=AP\cap YZ$, the intersecting chords theorem gives
+
+ $(4)\qquad EA\cdot EP=EY\cdot EZ$.
+
+ To compute $\dfrac{EY}{EZ}$, we use the cyclic quadrilateral $ABPC$ together with $Y\in AC$ and $Z\in AB$.A sine-law chase gives
+
+ $(5)\qquad \dfrac{PY}{PZ}=\dfrac{CY}{BZ}$.
+
+ Also, from the complete quadrilateral through $A,Y,P,Z$, one gets
+
+ $(6)\qquad \dfrac{EY}{EZ}=\dfrac{AY\cdot PY}{AZ\cdot PZ}$.
+
+ Combining (5) and (6), we find
+
+ $(7)\qquad \dfrac{EY}{EZ}=\dfrac{AY\cdot CY}{AZ\cdot BZ}$.
+
+ Now using (1) and (2),$\dfrac{AY}{CY}=-\dfrac{\sin A\sin 3C}{\sin C\sin 3A}$and$\dfrac{AZ}{BZ}=-\dfrac{\sin A\sin 3B}{\sin B\sin 3A}$,so (7) simplifies to
+
+ $(8)\qquad \dfrac{EY}{EZ}=\dfrac{\sin B\sin 3C}{\sin C\sin 3B}$.
+
+ Comparing (3) and (8), we obtain$\dfrac{BD}{DC}\cdot\dfrac{EY}{EZ}=1$,hence
+
+ $(9)\qquad BD\cdot DC=EY\cdot EZ$.
+
+ Now $D\in BC$, so the power of $D$ with respect to $\omega$ is
+
+ $(10)\qquad \operatorname{Pow}_\omega(D)=DB\cdot DC$.
+
+ Also, $E\in AP$ with $A,P\in\omega$, so
+
+ $(11)\qquad \operatorname{Pow}_\omega(E)=EA\cdot EP$.
+
+ By (4) and (9),$EA\cdot EP=EY\cdot EZ=DB\cdot DC$.Therefore
+
+ $(12)\qquad \operatorname{Pow}_\omega(E)=\operatorname{Pow}_\omega(D)$.
+
+ Since $\omega$ is centered at $O$, equal powers imply equal distances from the center. Thus
+
+ $(13)\qquad OD=OE$.
+
+ So $D$ and $E$ lie on a circle centered at $O$.
+
+ Now compare triangles $ODP$ and $OEP$.They have $OD=OE$ by (13), and $OP$ is common.Thus it remains to compare the included angles at $O$.By the symmetry of the construction along the common line $AP$, the angles $\angle DOP$ and $\angle EOP$ are equal.Therefore, by the Law of Cosines,$PD^2=OP^2+OD^2-2(OP)(OD)\cos\angle DOP$and$PE^2=OP^2+OE^2-2(OP)(OE)\cos\angle EOP$are equal.Hence $PD^2=PE^2$, so $PD=PE$.
+
+ Therefore $PD=PE$, as desired.\textbf{Proof.}We use a direct coordinate bash.
+
+ The strategy is as follows.
+
+ First, we place $B$ and $C$ symmetrically on the $x$-axis and write the circumcircle $\omega$ in coordinates.Then we compute the equations of the two special lines $\ell_B$ and $\ell_C$, and from them determine the coordinates of $Y$ and $Z$.From the line $YZ$ we obtain the point $D=YZ\cap BC$.
+
+ Next, we write the equation of the circle $\Gamma=(AYZ)$.Since $A$ and $P$ are the two common points of $\omega$ and $\Gamma$, the line $AP$ is their radical axis, so we compute the equation of $AP$ directly.Intersecting $AP$ with $YZ$ gives $E$, and intersecting $AP$ with $\omega$ again gives $P$.
+
+ Finally, we prove two facts by explicit computation:first, $OD=OE$, so $O$ lies on the perpendicular bisector of $DE$;second, the midpoint $M$ of $DE$ lies on the line $OP$.Therefore $OP$ is the perpendicular bisector of $DE$, so $PD=PE$.
+
+ Now we carry this out.
+
+ Set$B=(-1,0)$, $C=(1,0)$, and $A=(u,v)$ with $v>0$.Write the circumcircle $\omega$ of $\triangle ABC$ in the form$x^2+y^2+by-1=0$.Since $A\in\omega$, we have
+
+ $(1)\qquad u^2+v^2+bv=1$.
+
+ The center of $\omega$ is$O=\left(0,-\dfrac b2\right)$.
+
+ Let $\ell_B$ be the line through the two points of $\omega$ which, together with $B$, form an equilateral triangle on $\omega$.Since $\ell_B$ is the chord subtending a central angle $120^\circ$, it is perpendicular to $OB$ and its distance from $O$ is half the radius of $\omega$.A routine computation gives
+
+ $(2)\qquad \ell_B:\ x-\dfrac b2 y=\dfrac12+\dfrac{3b^2}{8}$.
+
+ Similarly,
+
+ $(3)\qquad \ell_C:\ x+\dfrac b2 y=-\dfrac12-\dfrac{3b^2}{8}$.
+
+ The sidelines are
+
+ $(4)\qquad AC:\ vx-(u-1)y-v=0,$
+
+ $(5)\qquad AB:\ vx-(u+1)y+v=0.$
+
+ Since $Y=AC\cap \ell_B$, solving (2) and (4) yields
+
+ $(6)\qquad Y=\left( \frac{-3b^2u+3b^2+4bv-4u+4}{4(bv-2u+2)}, \frac{v(4-3b^2)}{4(bv-2u+2)} \right).$
+
+ Similarly, since $Z=AB\cap \ell_C$, solving (3) and (5) gives
+
+ $(7)\qquad Z=\left( \frac{-3b^2u-3b^2-4bv-4u-4}{4(bv+2u+2)}, \frac{v(4-3b^2)}{4(bv+2u+2)} \right).$
+
+ Now compute the equation of the line $YZ$.After simplification, it is
+
+ $(8)\qquad 2u(3b^2-4)x+(9b^3+10b^2v+20b+8v)y+\frac{(3b^2-4)(3b^2+4bv+4)}{4}=0.$
+
+ Since $D=YZ\cap BC$ and $BC$ is the line $y=0$, substituting $y=0$ into (8) gives
+
+ $(9)\qquad D=\left(-\frac{3b^2+4bv+4}{8u},\,0\right).$
+
+ Next let $\Gamma=(AYZ)$.Write its equation as$x^2+y^2+mx+ny+r=0$.Substituting the three points $A,Y,Z$ and solving for $m,n,r$, then subtracting the equation of $\omega$, we obtain the radical axis of $\omega$ and $\Gamma$.Since $\omega\cap\Gamma=\{A,P\}$, this radical axis is the line $AP$, and its equation is
+
+ $(10)\qquad 4bux+(3b^2+4bv+4)y+b^2v-4b-4v=0.$
+
+ Now $E=AP\cap YZ$, so solving (8) and (10) gives
+
+ $(11)\qquad E=\left( \frac{27b^4+36b^3v+8b^2v^2+72b^2+80bv+32v^2-16}{8u(9b^2+8bv+4)}, -\frac{(3b+2v)(3b^2-4)}{2(9b^2+8bv+4)} \right).$
+
+ Also, $P$ is the second intersection point of $AP$ with $\omega$.Solving (10) together with $x^2+y^2+by-1=0$, one root is $A=(u,v)$ and the other is
+
+ $(12)\qquad P=\left( \frac{u(3b^2-4)}{9b^2+8bv+4}, \frac{b^2v+8b+4v}{9b^2+8bv+4} \right).$
+
+ We now prove that $O$ lies on the perpendicular bisector of $DE$.From (9),
+
+ $OD^2=\left(\frac{3b^2+4bv+4}{8u}\right)^2+\left(\frac b2\right)^2.$
+
+ Using (1), this simplifies to
+
+ $(13)\qquad OD^2=\frac{(b^2+4)(9b^2+8bv+4)}{64u^2}.$
+
+ Now compute $OE^2$ from (11):$OE^2=E_x^2+\left(E_y+\dfrac b2\right)^2$.Again simplifying by means of (1), we obtain
+
+ $(14)\qquad OE^2=\frac{(b^2+4)(9b^2+8bv+4)}{64u^2}.$
+
+ Hence
+
+ $(15)\qquad OD=OE.$
+
+ So $O$ lies on the perpendicular bisector of $DE$.
+
+ Let $M$ be the midpoint of $DE$.From (9) and (11),
+
+ $M=\left(\dfrac{D_x+E_x}{2},\dfrac{E_y}{2}\right).$
+
+ A direct simplification using (1) yields
+
+ $(16)\qquad M=\left( \frac{u(3b^2-4)}{2(9b^2+8bv+4)}, -\frac{(3b+2v)(3b^2-4)}{4(9b^2+8bv+4)} \right).$
+
+ Now compare the slopes of $OM$ and $OP$.From (16),
+
+ $(17)\qquad \frac{M_y+\frac b2}{M_x} = \frac{9b^3+10b^2v+20b+8v}{2u(3b^2-4)}.$
+
+ From (12),
+
+ $(18)\qquad \frac{P_y+\frac b2}{P_x} = \frac{9b^3+10b^2v+20b+8v}{2u(3b^2-4)}.$
+
+ Thus the slopes are equal, so $O$, $M$, and $P$ are collinear.Hence $P$ lies on the line through $O$ and the midpoint of $DE$.
+
+ But by (15), $O$ lies on the perpendicular bisector of $DE$.Therefore the line $OP$ is exactly the perpendicular bisector of $DE$.It follows that
+
+ $PD=PE$.
+
+ Therefore $PD=PE$, as desired.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 4 (Complex Bash)}
+
+Place $(ABC)$ on the unit circle of the complex plane. Let $\zeta = e^{2\pi i/3}$. Then line $\ell_B$ passes through $b\zeta$ and $b\zeta^2$, and line $\ell_C$ passes through $c\zeta$ and $c\zeta^2$.
+
+ We compute $Y$ and $Z$ as follows. We have $Y=AC\cap \ell_B$, so we have the system \begin{align*}y + ac\overline y = a+c\\y+b^2\overline y = y + (b\zeta)(b\zeta^2)\overline y &= b\zeta + b\zeta^2 = -b.\end{align*}
+Solving gives 
+ \[y = \frac{b}{b^2-ac}(ab+bc+ca),\]and similarly
+ \[z = \frac{c}{c^2-ab}(ab+bc+ca).\]We also find that 
+ \[\overline y = -\frac{a+b+c}{b^2-ac},\quad \overline z = -\frac{a+b+c}{c^2-ab}.\]Notice that $\angle PYZ = \angle PAZ = \angle PAB = \angle PCB$ and $\angle PZY = \angle PAY = \angle PAC = \angle PBC$, where $\angle$ denotes a directed angle. Thus $\triangle PYZ\sim\triangle PCB$, and $P$ is the center of the spiral similarity $YZ\mapsto CB$. We compute $p$ as follows:\begin{align*}p &= \frac{by-cz}{b+y-c-z} = (ab+bc+ca)\cdot\frac{\frac{b^2}{b^2-ac}-\frac{c^2}{c^2-ab}}{b-c + (\frac{b}{b^2-ac}-\frac{c}{c^2-ab})(ab+bc+ca)}\\&= (ab+bc+ca)\cdot \frac{b^2(c^2-ab)-c^2(b^2-ac)}{(b-c)(b^2-ac)(c^2-ab)+(b(c^2-ab)-c(b^2-ac))(ab+bc+ca)}\\&= (ab+bc+ca)\cdot \frac{a(c^3-b^3)}{(c-b)((ab+bc+ca)^2 - (b^2-ac)(c^2-ab))}\\&= \frac{(ab+bc+ca)(b^2+bc+c^2)}{ab^2+ac^2+c^3+b^3+abc+2b^2c+2bc^2} =\frac{ab+bc+ca}{a+b+c}.\end{align*}
+Of course, $p$ is on the unit circle, so this checks out. Now we compute $d$ and $e$. We have $D=BC\cap YZ$ and $E=PA\cap YZ$, so we find that
+ \[d = \frac{(\overline yz-y\overline z)bc + (y-z)(b+c)}{(\overline y-\overline z)bc+(y-z)}, \quad e = \frac{(\overline yz-y\overline z)pa + (y-z)(p+a)}{(\overline y-\overline z)pa+(y-z)}.\]We first compute:\begin{align*}\overline yz-y\overline z &= \left(-\frac{a+b+c}{b^2-ac}\right)\left(\frac{c(ab+bc+ca)}{c^2-ab}\right) - \left(\frac{b(ab+bc+ca)}{b^2-ac}\right)\left(-\frac{a+b+c}{c^2-ab}\right)\\&= -\frac{(a+b+c)(ab+bc+ca)}{(b^2-ac)(c^2-ab)}\cdot (c-b)\\y-z &= \frac{b}{b^2-ac}(ab+bc+ca)-\frac{c}{c^2-ab}(ab+bc+ca)\\&= \frac{(ab+bc+ca)^2}{(b^2-ac)(c^2-ab)}\cdot (c-b)\\\overline y-\overline z &= \frac{a+b+c}{c^2-ab}-\frac{a+b+c}{b^2-ac}\\&= -\frac{(a+b+c)^2}{(b^2-ac)(c^2-ab)}\cdot (c-b).\end{align*}
+Then\begin{align*}d &= \frac{(ab+bc+ca)^2(b+c)-(a+b+c)(ab+bc+ca)bc}{(ab+bc+ca)^2 - (a+b+c)^2}\\&= (ab+bc+ca)\cdot \frac{ab^2+b^2c+abc+abc+bc^2+c^2a-abc-b^2c-bc^2}{a^2b^2+b^2c^2+c^2a^2+2a^2bc+2ab^2c+2abc^2 - a^2bc-b^3c-bc^3-2ab^2c-2abc^2-2b^2c^2}\\&= \frac{a(ab+bc+ca)(b^2+bc+c^2)}{a^2b^2+a^2c^2-b^2c^2+a^2bc-b^3c-bc^3} = \frac{a(ab+bc+ca)}{a^2-bc},\\\overline d &= -\frac{a+b+c}{a^2-bc},\end{align*}
+and \begin{align*}e &= \frac{(ab+bc+ca)^2(p+a) - (a+b+c)(ab+bc+ca)pa}{(ab+bc+ca)^2 - (a+b+c)^2pa}\\&= (ab+bc+ca)\cdot \frac{(ab+bc+ca)(p+a)-(ab+bc+ca)a}{(ab+bc+ca)^2 - (a+b+c)(ab+bc+ca)a}\\&= \frac{(ab+bc+ca)^2/(a+b+c)}{(ab+bc+ca)-(a+b+c)a}\\&= -\frac{(ab+bc+ca)^2}{(a+b+c)(a^2-bc)},\\\overline e &= \frac{a(a+b+c)^2}{(a^2-bc)(ab+bc+ca)}.\end{align*}
+At this point let $X=a+b+c$ and $Y=ab+bc+ca$. We wish to show that $PD=PE$. This is equivalent to the statement that 
+ \[(p-d)(\overline p-\overline d)=(p-e)(\overline p-\overline e)\iff p(\overline e-\overline d)+\overline p (e-d) = e\overline e-d\overline d.\]But indeed,\begin{align*}p(\overline e-\overline d)+\overline p (e-d) &= \frac{Y}{X}\left(\frac{aX^2}{(a^2-bc)Y}+\frac{X}{a^2-bc}\right) + \frac{X}{Y}\left(-\frac{Y^2}{(a^2-bc)X}-\frac{aY}{a^2-bc}\right) = 0\\e\overline e - d\overline d &= -\frac{Y^2}{(a^2-bc)X}\cdot \frac{aX^2}{(a^2-bc)Y} + \frac{aY}{a^2-bc}\cdot \frac{X}{a^2-bc} = 0,\end{align*}
+so both sides are equal. The result follows.
+
+ 
+
+
+	\item (\textit{USAJMO 2026}) Triangle $\triangle{ABC}$ has circumcircle $\omega$ and circumcenter $O$. Lines $AO$ and $BC$ meet at point $D$. Let $X$ be the $A$-excenter of $\triangle{ABD}$ and let $Y$ be the $A$-excenter of $\triangle{ACD}$. Prove that if $X$ lies on $\omega$, then $Y$ also lies on $\omega$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_4_Solution_Figure_1.png}
+                    \end{figure}
+                    The diagram is not drawn to scale on purpose.
+
+ We proceed with angle chasing. Note that $\angle CBX = \frac{180^\circ - B}{2}= 90^\circ -\frac{\angle B}{2}$, since $X$ is the $A$-excenter of $\triangle ABD$.Also, 
+ \[\angle CAX = \angle OAX + \angle OAC = \frac{(90^\circ - \angle C)}{2}+(90^\circ-\angle B)\] Since $X$ is on $(ABC)$, we have $\angle CBX = \angle CAX$, so 
+ \[90^\circ -\frac{\angle B}{2} = 135^\circ - \frac{\angle C}{2}-\angle B \implies \angle B +\angle C = 90^\circ\] Now we reverse the above logic, finding that $\angle BCY = 90^\circ -\frac{\angle C}{2}$ and $\angle BAY = 135^\circ - \frac{\angle B}{2}-\angle C$. Because $\angle B+ \angle C = 90^\circ$, these two are equal. Thus, quadrilateral $ABYC$ is cyclic, and $Y$ is on $(ABC)$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Connect segments OB,OC,AX,AY. Let N,M be points on AB,AC respectively on the opposite side of A. Let $\angle OBC=a, \angle ABO=b$. So $\angle OCB=a, \angle BAO=b, \angle OAC=90-a-b=\angle OCA$. Since AX, BY are the bisectors of $\angle BAO, \angle CAO$ respectively, 
+ \[\angle BAX=\frac{b}{2}, \angle YAC= \frac{90-a-b}{2}\]Since BX, CY are the bisectors of $\angle CBN, \angle BCM$ respectively,
+ \[\angle XBA= a+b+\frac{180-a-b}{2}=\frac{180+a+b}{2}, \angle YCA=135-\frac{b}{2}\]So 
+ \[\angle AXB=90-\frac{a}{2}-b, \angle AYC= \frac{a}{2}+b\]Since $X$ is on $\omega$, $\angle AXB=90-\frac{a}{2}-b=\angle ACB=90-b\implies a=0$This means that $\angle A=90$. Furthermore
+ \[\angle AYC= \frac{a}{2}+b=b=a+b=\angle ABC\]So $ABYC$ is a cyclic quadrilateral, thus $Y$ is on $\omega$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Draw the angle bisectors of $\angle BAD$ and $\angle DAC$. We are given that the $A$-excenter of $\triangle ABD$, $X$, is on $\omega$, and by definition, $X$ is on the angle bisector of $\angle BAD$. Label the intersection of the angle bisector of $\angle DAC$ and $\omega$ as $Y’$. Draw rays $AB$ and $AC$ with endpoint $A$, and place points $E$ and $F$ on $AB$ and $AC$, respectively, such that $B$ is between $A$ and $E$, and $C$ is between $A$ and $F$. Label angles $\angle CAY’$ and $\angle DAY’$ as $\alpha$, and angles $\angle BAX$ and $\angle DAX$ as $\beta$. Connect $CY’$, $XY’$, and $BX$.
+
+ 
+Using the inscribed angle theorem on circle $\omega$, we can derive that 
+ \[\angle CBX = \angle CAX = 2\alpha + \beta\] Since $X$ is the $A$-excenter of $\triangle ABD$, we know that $BX$ bisects $\angle CBE$, so 
+ \[\angle EBX=2\alpha + \beta\] Adding these two angles gives 
+ \[\angle CBE = 180^{\circ}-\angle ABC = \angle BAC+\angle ACB = 4\alpha + 2\beta\] By our definition, $\angle BAC = 2\alpha + 2\beta$, so we can subtract this from the previous equation, and we obtain 
+ \[\angle ACB = 2\alpha\]
+
+ 
+We already have $\angle DAC = 2\alpha$, so in $\triangle ACD$, $AD=CD$. By the definition of a circumcenter, $AO=CO$, and subtracting these two equations and rearranging gives us 
+ \[CO+OD=CD\] This is the segment addition postulate, which implies that $O$ lies on $CD$, and by extension, it is also on $BC$. Thus, $BC$ is a diameter of $\omega$, and it follows that 
+ \[\angle BAC = 2\alpha + 2\beta =90^{\circ}\]
+
+ 
+By the inscribed angle theorem, 
+ \[\angle BCY’ = \angle BAY’ = \alpha + 2\beta\] We add this to our result for $\angle ACB$ to get 
+ \[\angle ACY’ = 3\alpha + 2\beta\] As $F$ is on ray $AC$, $\angle ACF = 180^{\circ}$, which we can substitute for $4\alpha + 4\beta$. Subtracting the expression for $\angle ACY’$ from this, we can obtain 
+ \[\angle ECY’ = \alpha + 2\beta\] and therefore, 
+ \[\angle ECY’ = \angle BCY’\]
+
+ 
+This means $CY’$ bisects $\angle BCD$, which, since $AY’$ bisects $\angle CAD$, implies that $Y’$ is the $A$-excenter of $\triangle ACD$. The problem gives  $Y$ as the $A$-excenter of that triangle, so $Y’$ and $Y$ are the same point. From our definition, $Y$ must lie on $\omega$, so we have proven the problem statement.
+
+ 
+
+
+
+\textbf{Solution 4 (Incentre/Excentre Lemma)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_4_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ The diagram above is not to scale and is hand drawn.
+
+ $M$ is the incentre of triangle $ACD$, and $N$ is the incentre of triangle $ABD$. The blue and green circles are the circumcircles of triangles $ACD$ and $ABD$ respectively. The incentre/excentre lemma on $M$ and $X$ inscribe quadrilateral $MCXD$. The incentre/excentre lemma on $N$ and $Y$ inscribe quadrilateral $NBYD$. Points $P$ and $Q$ are the centres of said circumcircles of quadrilateral $MCXD$ and $NBYD$ respectively. 
+
+ $NY$ is the diameter of the $A$-excircle of quadrilateral $NBYD$. The point $A$ does not lie on the same circle but is collinear with the three points that lie on $NY$. $A$ also lies on the circumcircle of $ADB$, and also the circumcircle of $ABC$. Also, both quadrilaterals $MCXD$ and $NBYD$ share point $D$, implying their circumcircles are tangential at point $D$. Because that circumcircle is tangential at point $D$ common, both circles share $D$ as an internal point of similitude with respect to circles $P$ and $Q$. Thus, each circle is a projection of one another over the line through $D$ parallel to the radii of circles $P$ and $Q$, that being, $PX$ and some radius $QZ$ for some $Z$.
+
+ Now, realize point $A$ is very special, as it is the quadrilateral $MCXD$ and $NBYD$ point of homothety. We wish to show the tangent line through $D$ will pass through $A$. Both quadrilaterals $MBXD$ and $NBYD$ are similar, so by relating each quadrilateral to the point of homothety, we see it directly corresponds to the external point of similitude, that being $A$. Therefore, $A$ is the external point of similitude. By definition, that implies $A$ and $D$ lie on the same line. Extend such line to intersect $\omega$ at $V$. Also by definition, that means if $ABXV$ is cyclic, then $AVYC$ is also cyclic. Because all four points $A,B,X,V$ are on $\omega$, three of the four points $A, V, C$ are on $\omega$, and quadrilateral $AVYC$ is cyclic, $Y$ must also be on $\omega$.
+
+ So, if quadrilateral $ABXD$ intersects circle $\omega$ at $X$, quadrilateral $ADYC$ must also intersect circle $\omega$ at $Y$. $\square$
+
+ 
+
+
+
+\textbf{Solution 5}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_4_Solution_Figure_3.png}
+                    \end{figure}
+                    We draw the diameter $\overline{XF}$. Since $\overline{BF}\perp\overline{BX}$, we know that $\overline{BF}$ bisects $\angle ABD$. Let $I$ be the incenter of $\triangle ABD$. Since $A, I, X$ are collinear, we have $I=\overline{BF}\cap\overline{AX}$.
+
+ Since $BO=FO=AO$, we see that $\triangle BOF$ and $\triangle AOB$ are isosceles. Using the property of incenter and the inscribed angle theorem, we get
+ \[\angle IAO = \angle BAI = \angle BFO = \angle FBO\]Also, $\angle BAO = \angle ABO\iff \angle ABI +\angle FBO=\angle IAO +\angle BAI$, or
+ \[\angle ABI=\angle BAI\iff \angle ABI=\angle IBO\]This means that $I$ is also the incenter of $\triangle ABO$. We obtain $\angle IBO=\angle IBD$, and it is given that $A, O, D$ are collinear. Thus, $D=O$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_4_Solution_Figure_4.png}
+                    \end{figure}
+                    We extend $\overline{AO}$ meeting $\omega$ at $E$ other than $A$. Let $Y'$ be the intersection of the ray $IO$ and $\omega$.
+
+ $\overline{OI}$ bisects $\angle AOB$. It follows that
+ \[\angle AOI=\angle EOY'=\angle BOI =\angle COY',\]or $\overline{OY'}$ bisects $\angle COE$, and $\angle EOY'=\angle COY'\implies EY'=CY'\implies \angle EAY'=\angle CAY'$. We obtain that $AY'$ bisects $\angle CAO$. By the definition of the $A$-excenter of $\triangle ABO$,  $\overline{OX}$ bisects $\angle BOE$. We have
+ \[\angle BOX=\angle COF=\angle EOX =\angle AOF,\]or $\angle AOF=\angle COF$. Since $\overline{OF}$ is the angle bisector of $\angle AOC$, we have $I'=\overline{AY'}\cap\overline{OF}$ is the incenter of $\triangle AOC$.
+
+ We know that $A,I',Y$ are collinear, and $Y$ lies on $\overline{OY'}$, the external bisector of $\angle AOC$. Therefore, $Y'=Y$, as desired.
+
+ 
+
+
+	\item (\textit{USAJMO 2026}) A positive integer $n$ is called solitary if, for any nonnegative integers $a$ and $b$ such that $a+b=n$, either $a$ or $b$ contains the digit $1$ when written in base $10$. Determine, with proof, the number of solitary integers less than $10^{2026}$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+\textbf{Lemma 1: $n=2\cdot 10^k-1$ is solitary for all $k\in \mathbb{Z}_{\geq 0}$.}
+
+ Suppose $a+b=n$. WLOG, $a\geq b$. Then, $2a\geq a+b=n\implies a \geq \frac{n}{2}$. Since $a, n$ are integers, and $n$ is odd, this implies $a \geq \frac{n+1}{2}=10^k$. But, $a\leq n = 2\cdot 10^k-1$, so $10^k \leq a \leq 2\cdot 10^k-1$, so the leading digit of $a$ is $1$. Thus, $n$ is solitary. $\square$
+
+ 
+\textbf{Lemma 2: $m=2\cdot 10^k+n, n < 10^k$ is solitary if and only if $n$ is solitary.}
+
+ First, suppose $m$ is solitary and $n$ is not. We write $n=a+b$ for some $a, b$ with no $1$'s in their decimal representation. Then, let $a' = a +2\cdot 10^k$ and $b' = b$. It follows that 
+ \[a'+b' = a+2\cdot 10^k+b=2\cdot 10^k+n=m\]But $a'$ and $b'$ have no $1$'s in their decimal representation, since $10^k > n \geq a, b$, a contradiction. This proves the only if part.
+
+ 
+Now, suppose $n$ is solitary, and $m$ is not. Write $m=a+b$ for some $a, b$ with no $1$'s in their decimal representation.
+
+ Write $a = x\cdot 10^k+a', a'< 10^k$ (the leading digit of $a$ is $x$). Similarly, $b = y\cdot 10^k+b', b'< 10^k$. By definition, $a, b \neq 1$. But 
+ \[x=y=0\implies a+b< 2\cdot 10^k < n \text{ and } x + y > 2\implies a+b\geq 3\cdot 10^k > m\] Thus, one of $x, y$ is $2$, and the other is $0$. WLOG $x=2, y=0$. Consider $a'$ and $b'$. We have 
+ \[a'+b' = m- x\cdot 10^k -y\cdot 10^k =m - 2\cdot 10^k = n\] But $n$ is solitary, so either $a'$ or $b'$ has a $1$ in their decimal representation. But, that implies $a$ or $b$ also has a $1$, since $a', b' < 10^k$, a contradiction. This proves the if part. The lemma is complete. $\square$
+
+ 
+\textbf{Lemma 3: For any integer $m \in [10^k, 10^{k+1}-1]$, if $m$ is not of the form $2\cdot 10^k - 1$ and not of the form $2\cdot 10^k + n$ (where $n < 10^k$), then $m$ is not solitary.}
+
+ By Lemma 2, we can assume the leading digit of $m$ is not $2$. Now, take $a=10^k-1$ and $b = m-a$. 
+
+ Let the decimal representations of $a, b$ be $a_{k-1}a_{k-2}\dots a_0$ and $b_kb_{k-1}\dots b_0$, respectively. It follows that $a_i=9$ for all $i$. 
+
+ Also, $m\notin [2\cdot 10^k-1, 3\cdot 10^k-1]\implies b = m-a \notin [10^k, 2\cdot 10^k]$, so $b_k\neq 1$. 
+
+ 
+Now, suppose $b_i = 1, i\in \{0, 1, \dots, k-1\}$. Increase $b_i$ to $2$ and lower $a_i$ to $8$. This increases $b$ by $10^i$ while decreasing $a$ by $10^i$, so the sum stays the same. Repeating this for all $i$ such that $b_i=1$, we have $a, b$ such that none of the digits are 1, $a+b=m$, so $m$ is not solitary. $\square$
+
+ 
+Now, we use the lemmas to finish. Let $s_k$ be the number of solitary integers $< 10^k$, and let $S_k$ be the set of these integers, so $|S_k|=s_k$. By the lemmas 
+ \[S_{k+1} = \{2\cdot 10^k-1\} \cup \{2\cdot 10^k+n : n\in S_k \}\cup S_k\] Since no elements are shared, we have $s_{k+1} = 1 + s_k+s_k=2s_k+1$. Also, $S_1 = \{1\}$, so $s_1 = 1$. It follows by induction $s_k = 2^k-1$. Thus, the answer is $\boxed{2^{2026}-1}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Lemma 1: If $x$ is even, then $x$ can't be solitary.
+
+ Suppose $x$ is even. Then take $k$ such that $2k = x$. Also, let $k_1 = k$, and $k_2 = k$. Then, for each $1$ digit in $k$, change that digit in $k_1$ to be $0$, and change that digit in $k_2$ to be $2$. This preserves the sum $k_1 + k_2 = x$, but now $k_1$ and $k_2$ don't have the digit $1$, so $x$ can't be solitary.
+
+ Lemma 2: If $10q + r$ is solitary, where $r$ can be written as the sum of two non-1 digits (0 through 9) and $q > 0$, then $q$ is solitary.
+
+ Suppose for the sake of contradiction that $q$ isn't solitary. This means that we can take $a, b \ge 0$ such that $a + b = q$, and $a$ and $b$ don't contain any ones. Now we can also write $r$ as $d_1 + d_2$ where $0 \le d_1, d_2 \le 9$, and neither $d_1$ or $d_2$ are $1$. This gives us that 
+ \[r = 10q + r = 10(a + b) + d_1 + d_2 = (10a + d_1) + (10b + d_2).\]
+
+ Note that $10a + d_1$ can't contain any $1$'s, and neither can $10b + d_2$, so therefore $r$ isn't solitary, which is a contradiction.
+
+ Suppose $x$ is solitary. Then its units digit must be $1$ or $9$. Write $x$ as $10q + r$, where $0 \le r < 10$. Then if $r \in \{ 3,5,7\}$, we can write $x$ as $10q + a_1 + b_1$, or $10(q-1) + a_2 + b_2$, where $a_1, a_2, b_1, b_2$ are non-1 digits between $0$ and $9$ inclusively. Then both $q$ and $q-1$ must be solitary by Lemma 2. However, either $q$ or $q-1$ is even, which contradicts Lemma 1. Therefore, its unit digit must be either $1$ or $9$.
+
+ Claim: If $x > 11$ is solitary, then either $\frac{x-9}{10}$ is solitary or $\frac{x-11}{10}$ is solitary.
+
+ Suppose $x$ is solitary. The first case is that $x$ is $1$ mod $10$. Then we can write $x$ as $10k + (5 +6)$, where $k$ is positive. By Lemma 2, $k$ must also be solitary, so $k = \frac{x-11}{10}$ is solitary. The second case is that $x$ is $9$ mod $10$. Then we can write $x$ as $10k + ( 4 + 5)$ where $k > 0$, and by Lemma 2, $k$ is solitary. Thus, the second case yields that $k = \frac{k-9}{10}$ is solitary.
+
+ Now I will show the other direction, that if $k$ is solitary, then both $10k + 9$ and $10k + 11$ are solitary. 
+
+ Suppose $k$ is solitary. Then let's look at $10k+ 9$, and suppose we can find non-negative integers $a,b$ such that $a+ b = 10k + 9$ and neither $a$ nor $b$ contains a $1$. The units digits of $a$ and $b$ must add to either $9$ or $19$, but the latter is impossible, so they add to $9$. Therefore, we can write $a = 10a' + r_a$ and $b = 10b' + r_b$ where $r_a + r_b = 9$. The condition $a + b = 10k + 9$ turns into $10(a' + b') + 9 = 10k + 9$, which is equivalent to $a' + b' = k$. However, because $k$ is solitary, one of $a'$ and $b'$ must contain the digit $1$, which contradicts the fact that both $a$ and $b$ contain the digit $1$. 
+
+ The proof is identical for $10k + 11$, because if $a, b$ add to $10k+ 11$ with both $a$ and $b$ not containing a $1$, then the units digits of $a$ and $b$ add to either $1$ or $11$, but they can't add to $1$ because then the units digit of either $a$ or $b$ would be $1$, so they must add to $11$, and then we do the same thing as we did for $10k + 9$.
+
+ We have now established that $x > 11$ is solitary if and only if it can be written as $10k + 9$ or $10k + 11$ for some solitary $k$. This means for any solitary $x$, we can continually find smaller and smaller solitary integers by subtracting either $9$ or $11$ and dividing by $10$ until we have a solitary integer less than $12$. However, $1$ is the only solitary integer less than $12$, so therefore $x$ is solitary if and only if it can be expressed by repeated application of $10x + 9$ or $10x + 11$, starting from $1$.
+
+ Now let $S_1 = \{ 1 \}$, and define 
+
+ 
+ \[S_{k+1} = \{ 10 x + 9 \mid x \in S_k\} \cup \{ 10x + 11 \mid x \in S_k \}.\] 
+
+ Note that no elements are repeated, so we get that $\lvert S_{k+1} \rvert = 2 \lvert S_k \rvert$, and $\lvert S_{k} \rvert = 2^{k-1}$.
+
+ Now an integer is solitary if and only if it is in $S_k$ for some $k$. Now all that is left to prove is that $S_k$ is precisely the set of $k$ digit solitary integers. I will use induction to show that $\text{min}(S_k) \ge 10^{k-1}$, and $\text{max}(S_k) < 10^{k} -2$.
+
+ Base case: $k =1$. Then $1 \ge 10^0$, and $1 < 10 -2$.
+
+ Inductive Hypothesis: Assuming that $\text{min}(S_k) \ge 10^{k-1}$, and $\text{max}(S_k) < 10^k - 2$. Then
+
+ 
+ \[\text{min}(S_{k+1}) = 10 \text{min}(S_k) + 9 \ge 10^k + 9 \ge 10^k\]
+
+ and
+
+ 
+ \[\text{max}(S_{k+1}) = 10 \text{max}(S_k) + 11 < (10^k -2) \times 10 + 11 = 10^{k+1} - 9 < 10^{k+1} - 2.\]
+
+ Thus, by induction, $S_k$ is precisely the set of $k$ digit solitary integers, and the number of solitary integers less than $2026$ is
+
+ 
+ \[\sum_{k=1}^{2026} \lvert S_k \rvert = \sum_{k=1}^{2026} 2^{k-1} = 2^{2026} - 1\]
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Generalize to all positive integers. I claim all solitary numbers are of the form $2 \cdot 10^{a_n}+2 \cdot 10^{a_{n-1}}+ \ldots 2 \cdot 10^{a_1} \pm 1$ for some $1 \le a_1<a_2< \ldots a_n$ and 1.
+
+ First, we prove these work. Proceed via contradiction; suppose we have some $b \ge c$ with $b+c=2 \cdot 10^{a_n}+2 \cdot 10^{a_{n-1}}+ \ldots 2 \cdot 10^{a_1} \pm 1$ such that $b,c$ do not contain the digit $1$. It is not hard to see that the leading digit of $b$ must be $2$, ie $b=2 \cdot 10^{a_n}+k$ for some natural $k$, which means that $c+k=2 \cdot 10^{a_{n-1}}+2 \cdot 10^{a_{n-2}}+ \ldots 2 \cdot 10^{a_1} \pm 1$. Repeating this process recursively, each of $2 \cdot 10^{a_j}$ will be assigned to one of $b$ or $c$, and adding or subtracting $1$ at the end will make one of these two numbers have a $1$ appear in their decimal representation; contradiction. 
+
+ Call a number Ackerman if it is in the form $2 \cdot 10^{a_n}+2 \cdot 10^{a_{n-1}}+ \ldots 2 \cdot 10^{a_1} \pm 1$ (or $1$), and for the sake of convenience let $2 \cdot 10^k+2 \cdot 10^{k-1} + \ldots 2 \cdot 10^1+2=S_k$. 
+
+ It suffices to show that all non-Ackerman numbers are non-solitary.
+
+ \textbf{Claim}: If all non-Ackerman numbers $\le S_k$ are non-solitary, then all non-Ackerman numbers $\le S_{k+1}$ are non-solitary.
+
+ \textbf{Proof}: If a number $x$ is non-solitary, then so are $10x+2, 10x+3, \ldots 10x+11$, as if $x=y+z$, we can rewrite $10x+c$ for some $c \in \{2,3, \ldots 11 \}$ as $10y+l+10z+p$ for some $l,p \in \{0,2,3, \ldots 9 \}$. Consider the set $\{ S_{n-1}, S_{n-1}+1, \ldots S_n \}$. It follows that all numbers in the set $\{ 10S_{n-1}+2, 10S_{n-1}+3, \ldots 10S_n+11 \} \equiv \{S_n, S_n+1, \ldots S_{n+1}+9 \}$ are non-solitary, set aside the ones in the form $10x+c$ for some Ackerman $x$ and some $c \in \{2,3, \ldots 11 \}$. It follows that all of these numbers can be rewritten in the form $\sum_{k=1}^{n} 2 \cdot 10^{b_k}+m$ for some $2 \le b_1 <b_2< \ldots < b_n$, and some $m \in \{-8, -7, \ldots 1, 12, 13, \ldots 21 \}$. From here we can deduce that the only values of $m$ which yield solitary numbers here is $m=-1,1,19,21$, which all yield Ackerman numbers, finishing the inductive hypothesis. $\square$
+
+ As such, when constructing a solitary number $< 10^{2026}$, we effectively have $2026$ digit slots and in each one we must place a $0$ or $2$, and at the end we must choose to add or subtract $1$ from this number. Now, the units digit must be $0$, as it cannot be $2$, which means we have $2^{2025} \cdot 2=2^{2026}$ possible solitary numbers, but we must subtract $1$ to account for the case where all the digits are $0$ and we subtract $1$, ie the number of solitary numbers $< 10^{2026}$ is $\boxed{2^{2026}-1}$, and we are done. $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 4}
+
+\textbf{Lemma 1:} $n$ must contain 1, otherwise it is not solitary.
+
+ \textbf{Proof of Lemma 1:}
+
+ Definition of solitary, choose $a = 0$ and $b = n$ and the result shows $n$ is not solitary.
+
+ \textbf{Lemma 2:}: All such $n$ has the property all digits to the right of "1" are "9".
+
+ \textbf{Proof of Lemma 2:}
+
+ Consider vertical addition. Let $a_n$ and $b_n$ be the $n$th place value of such numbers $a$ and $b$. Then, $a_0 + b_0 = 9$. One can form such numbers using any orientation, either $a_n = 1$ and $b_n = 8$, vice versa, or some non-1 pair. Assume the worst case, where we construct sums of 9 that do not include 1. Then, if the leading digit itself is 1, then notice that one may "truncate" the 19 at the end of the string $1999\dots 9$. Because 9 is solitary, any single combination of $a_0$, $b_0$ result in one value being greater than 10, hence we must carry a value. Specifically, that implies the length of $a < b$ or vice versa. Hence, if the length $a < b$ is obtained, then notice that then one can let, at the end of the truncation, $b$ start with 9 and $a$ begin with 10, giving the 19 that was truncated at the beginning. This fulfills solitary properties.
+
+ \textbf{Lemma 3:} All such $n$ has the property all digits to the left of "1" are either "0" or "2" or a combination of both.
+
+ \textbf{Proof of Lemma 3:}
+
+ We continue from where we left off in Lemma 2. We realize that $b$ must start with a 0 then move through with 9's. Afterwards, $a$ and $b$ are uniquely determined toward the left side of $a$'s 1 and $b$'s 0. Consider forming a sum of 11 instead of 1, and we prove that a number can be formed that is solitary. More importantly, if $a_n$ and $b_n$ do not contain 1 at all yet still sum to 11, then that 1 carries over. Now, we still fulfill the properties of \textbf{Lemma 2}, but the number is not solitary! But if we were to carry over that extra 1, then $a_{n+1}$ or $b_{n+1}$ can have either 1 or 9, from which we terminate, or continue analogously. However, when we end, one of $a$ or $b$ has 1, hence the number $n$ is solitary.
+
+ \textbf{2026 USAJMO/Q5:}
+
+ Given the conditions, $n$ is \textit{solitary} if and only if
+
+ 
+                \begin{itemize}
+                    \item $n$ contains 1
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item All numbers to the right of the 1 in $n$ are 9
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item All numbers to the left of the 1 in $n$ are "2" or "0"
+                \end{itemize}
+
+
+                The last part is to count all such $n$. From any number, the digit 1 can be placed at an index $m$ from the left ($1 \leq m \leq 2026$). 
+
+ There are exactly $2026 - m$ positions to the right of 1 that are all 9. Otherwise, there are exactly $m-1$ positions to the left of 1. Those have two choices each, giving $2^{m-1}$ cases. So, on any given integer with $m$ digits, we may form $2^{m-1}$ solitary integers.
+
+ We sum over all $1 \leq m \leq 2026$, or
+
+ 
+ \[\sum_{m = 1}^{2026} 2^{m-1} = 1+2+\dots+2^{2025} = \boxed{2^{2026}-1} \quad \square\].
+
+ \textbf{Remark} REALLY annoying number theory problem
+
+ 
+
+
+	\item (\textit{USAJMO 2026}) Emily has a red sheet of paper. She draws 2026 circles (not necessarily of equal size) on the piece of paper. She chooses a circle to color black, then cuts the paper around the circumference of all 2026 circles. She then separates the pieces of paper, into at least 2 black pieces and some number of red pieces. Is it possible that all black pieces are congruent?
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Consider convexity. A circle is convex all throughout the perimeter, so any cut it makes is convex for half of the cut (the part closer to the circle's center) and is concave for the other part. So the main claim is that there always exists a purely convex black part as well as a part with both concave and convex sides. The prior can be proved by induction. 
+
+ We start off with a single circle which is convex. Take that as the base case. Now assume by induction we have a piece that is completely convex. A extra cut through that piece can separate it into 2 pieces, a piece with a hole through it or 3 pieces. If it is 2 pieces, it is easy to see that the piece closer to the center has a convex side added, which means the shape is purely convex. If there is a piece with a hole, the "hole" itself as a circle is purely convex. If 3 pieces are created, the middle piece has 2 extra convex sides, which maintains the purely-convexity. So by induction there exists a piece that is purely convex.
+
+ Next we can prove that there also exists a concave shape. There  are at least 2 black pieces, so there must be at least one cut of a circle through a circle which creates at least one concave piece. Then, no number of convex cuts can make the concave arc "no longer concave". So the concave arc always exists, meaning there is always a concave shape.
+
+ A concave shape is definitely not congruent to a convex shape, so it is impossible for all pieces to be congruent.
+
+ 
+
+
+
+\textbf{Solution 2 (Concordance, Another version of Convexity)}
+
+No, it is not possible.
+
+ The extrema case is when two pieces are formed. Showing that the minima does not work proves that no matter how the minima increases there will always be a way to evaluate the diagram like the minima, and thus no cases will be prevalent.
+
+ $\textbf{Lemma 1}$:
+
+ It must be the case that a Black and Red circle overlap.
+
+ $\textbf{Proof of Lemma 1}$:
+
+ There must exist two black pieces. Consider overlapping the red and black circles. Then, cutting the circumference of the red circle yields a black piece. Cutting the circumference of what remains of the black and red circle overlap yields another black piece. If the circles are disjoint, then there would only exist red pieces, contradicting the problem statement, hence proven.
+
+ $\textbf{Lemma 2 (Cross Sections, Theorem of Concordance: 2D Geometry)}$:
+
+ There will exist at least one black piece that is never congruent to all following black pieces.
+
+ $\textbf{Proof of Lemma 2}$
+
+ Through \textbf{Lemma 1} the circles must overlap.
+
+ Two figures are congruent if and only if they share the same shape and size. By proving that a figure would always yield a different shape or size, we show that no such configuration is possible.
+
+ Consider the diagram below, and assume the contrary.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_6_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ If a black circle is larger or smaller than its overlapping red circle. Here, consider the arc with measure $\theta$ that is linked to the centre of the constant red circle $\Omega$. It follows that if $\theta$ is the angle escribed within the two intersection points of the case 1 circle and $\Omega$ is arc measure (degrees) $2\theta$, then the contrary arc is $(360-2\theta)$ degrees. The curvature of the two black pieces do not yield the same shape, and thus are not congruent if $\theta \neq 90^\circ$. Then, consider the curvature of the red arc in terms of the black circle centre. The angle measure between the two points of intersection and the centre of the black circle is $180^\circ$. However, two intersection points of a circle, due and proven by the circle's curvature, if they truly do lie diametrically opposite, a small bound of one curvature will always lie below the diameter, as shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2026_6_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Thus the curvature of the bounded figure between the intersection of the black circle and red circle will never be the same size as the red circle, as that arc imposed by the red circle forces one black shape to look like a "crescent moon", whereas the other looks like a bounded region, hence contradicting congruency.
+
+ $\textbf{2026 USAJMO Q6}$:
+
+ The case never holds if two circles, one red and one black, lie on the plane overlapping. Then, if the number of circles increase to 2026, I can always choose a red circle and a black circle, and two red circles with a bounded black union, and through the direct result of \textbf{Lemma 2} imply that no such configuration exists.
+
+ Therefore, no matter how we arrange the circles on the plane, it will never be possible.
+
+ 
+
+
+\end{enumerate}

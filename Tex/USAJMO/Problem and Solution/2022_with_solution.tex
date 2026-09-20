@@ -1,0 +1,304 @@
+\section{USAJMO 2022}
+        \begin{enumerate}
+        	\item (\textit{USAJMO 2022}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ For which positive integers $m$ does there exist an infinite arithmetic sequence of integers $a_1,a_2,\cdots$ and an infinite geometric sequence of integers $g_1,g_2,\cdots$ satisfying the following properties?
+
+
+ $\bullet$ $a_n-g_n$ is divisible by $m$ for all integers $n>1$;
+
+
+ $\bullet$ $a_2-a_1$ is not divisible by $m$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let the arithmetic sequence be $\{ a, a+d, a+2d, \dots \}$ and the geometric sequence to be $\{ g, gr, gr^2, \dots \}$. Rewriting the problem based on our new terminology, we want to find all positive integers $m$ such that there exist integers $a,d,r$ with $m \nmid d$ and $m|a+(n-1)d-gr^{n-1}$ for all integers $n>1$.
+
+ Note that 
+ \[m | a+nd-gr^n \; (1),\]
+ \[m | a+(n+1)d-gr^{n+1} \; (2),\]
+ \[m | a+(n+2)d-gr^{n+2} \; (3),\]
+
+ for all integers $n\ge 1$. From (1) and (2), we have $m | d-gr^{n+1}+gr^n$ and from (2) and (3), we have $m | d-gr^{n+2}+gr^{n+1}$. Reinterpreting both equations,
+
+ 
+ \[m | gr^{n+1}-gr^n-d \; (4),\]
+ \[m | gr^{n+2}-gr^{n+1}-d \; (5),\]
+
+ for all integers $n\ge 1$. Thus, $m | gr^k - 2gr^{k+1} + gr^{k+2} = gr^k(r-1)^2 \; (6)$. Note that if $m|g,r$, then $m|gr^{n+1}-gr^n$, which, plugged into (4), yields $m|d$, which is invalid. Also, note that (4)$+$(5) gives
+
+ 
+ \[m | gr(r-1)(r+1) - 2d \; (7),\]
+
+ so if $r \equiv \pm 1 \pmod m$ or $gr \equiv 0 \pmod m$, then $m|d$, which is also invalid. Thus, according to (6), $m|g(r-1)^2$, with $m \nmid g,r$. Also from (7) is that $m \nmid g(r-1)$.
+
+ Finally, we can conclude that the only $m$ that will work are numbers in the form of $xy^2$, other than $1$, for integers $x,y$ ($x$ and $y$ can be equal), ie. $4,8,9,12,16,18,20,24,25,\dots$.
+
+ Note: This solution has some serious logical errors and never proves sufficiency. If this is ever solved, feel free to remove this note.
+
+ 
+
+
+
+\textbf{Solution 1}
+
+$m$ satisfies the conditions precisely when $m$ is not squarefree.
+
+ Consider three consecutive terms of the arithmetic sequence modulo $m$: $x - d$, $x$, and $x + d$. To satisfy the given conditions, the arithmetic and geometric sequences must match modulo $m$. Thus,
+ \[(x - d)(x + d) \equiv x^2 \pmod{m}\]which simplifies to
+ \[x^2 - d^2 \equiv x^2 \pmod{m} \implies d^2 \equiv 0 \pmod{m}.\]
+
+ If $m$ is squarefree, the congruence $d^2 \equiv 0 \pmod{m}$ implies $m \mid d$, so the conditions are not satisfied. Thus, no solution exists for squarefree $m$, and it remains for us to construct a solution for all other values of $m$ that are not squarefree.
+
+ Suppose $m$ is divisible by some prime square $p^2$. Consider the arithmetic sequence
+ \[1,\quad 1 + \frac{m}{p},\quad 1 + 2\frac{m}{p},\quad \dots\]and the geometric sequence
+ \[1,\quad 1 + \frac{m}{p},\quad \left(1 + \frac{m}{p}\right)^2,\quad \dots\]For the geometric sequence, the first two terms in the binomial expansion of each entry match the corresponding terms in the arithmetic sequence and subsequent terms are 0 mod m because $\frac{m}{p}$ raised to a power greater than 1 contains enough $p$'s in its factorization to ensure that it is a multiple of $m$. Therefore the construction works and as originally stated, solutions exist precisely when $m$ is not squarefree.
+
+ 
+
+
+	\item (\textit{USAJMO 2022}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ Let $a$ and $b$ be positive integers. The cells of an $(a + b + 1)\times (a + b + 1)$ grid are colored amber and bronze such that there are at least $a^2+ab-b$ amber cells and at least $b^2+ab-a$ bronze cells. Prove that it is possible to choose $a$ amber cells and $b$ bronze cells such that no two of the $a+b$ chosen cells lie in the same row or column.
+
+
+ 
+
+
+
+\textbf{Solution 1: Pigeonhole}
+
+Let $n=a+b+1$. There are $n!$ ways to select $n$ cells such that no two are in the same row or column. Each such selection can be specified by $p_i=(p_{i1},p_{i2},\cdots,p_{in})$, a permutation of $1,2,3,\cdots,n$, such that in the $k^\text{th}$ row, the cell in column $p_{ik}$ is selected. Let $A(p_i)$ be the number of amber cells in the selection $p_i$. We just need to prove there exists a $p_i$ such that
+ \[A(p_i)=a,\text{ or } A(p_i)=a+1.\]Using contradiction, assuming no such $p_i$ exists.
+
+ In calculating $\sum A(p_i)$, each amber cell is counted $(n-1)!$ times. We have
+ \[\sum A(p_i) \ge (n-1)!(a^2+ab-b).\]
+ \[\Rightarrow\max(A(p_i))\ge\left\lceil\frac{(n-1)!(a^2+ab-b)}{n!}\right\rceil=\left\lceil\frac{n(a-1)+1}{n}\right\rceil = a.\]WLOG, let $A(p_1)=\max(A(p_i))$. With the contradiction assumption
+ \[A(p_1)\ge a+2.\]Similarly, let $A(p_2)=\min(A(p_i))$.
+ \[\sum A(p_i) \le (n-1)![n^2-(b^2+ab-a)] \Rightarrow \min(A(p_i))\le a+1 \Rightarrow A(p_2)\le a-1.\]
+
+ One can always move from $p_1$ to $p_2$ via a path in $p$ space
+ \[p_1\rightarrow q_1 \rightarrow q_2 \rightarrow \cdots \rightarrow q_k \rightarrow p_2\]such that in each step two numbers in the starting permutation are swapped to get the next permutation. For example if
+ \[p_1=(5,4,3,1,2), p_2=(1,2,3,4,5)\]one such path is 
+ \[(5,4,3,1,2)\rightarrow (1,4,3,5,2) \rightarrow (1,2,3,5,4) \rightarrow (1,2,3,4,5).\]Then the value of $A$ along the path changes by at most 2 in each step. On the other hand since $A(p_i)\neq a, a+1$, there is a gap of at least width 3 in the range of $A$. A path starting above the gap and ending below the gap with max step size two should not exist. Contradiction. 
+
+ Therefore there must be an $i$ such that either $A(p_i)=a$ or $A(p_i)=a+1$.(Y)
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We claim that it is possible to choose $a$ amber cells such that no two lie in the same row or column.
+
+ Number the rows and columns from $1$ to $a+b+1.$ In cell $(x,y),$ write the number $x+y\pmod{a+b+1}.$  Then two same-numbered cells will be on different rows and columns.
+
+ There are $a+b+1$ different numbers and $\geq a^2+ab-b = (a-1)(a+b+1)+1$ amber cells. Using Pigeonhole, we have $a+b+1$ holes, and cells in the same hole are in different rows and columns, and $\geq(a-1)(a+b+1)+1$ pigeons, so there exists $a$ amber cells such that no two lie in the same row or column. Similarly, there exists b bronze cells such that no two lie in the same row or column.
+
+ Choose those $a$ amber cells and $b$ bronze cells. If no two chosen cells lie in the same row or column then we are done. Otherwise, since there are $a+b+1$ rows and columns, there exists a row and a column with no chosen cell. If their intersection is an amber cell, choose that cells and unchoose an amber cell that is in the same row or column as a bronze cell. If the intersection is a bronze cell, choose that cell and unchoose a chosen bronze cell that is in the same row or column as an amber cell. Repeating this process, we can obtain $a$ amber cells and $b$ bronze cells such that no two lie in the same row or column.
+
+ 
+
+
+
+\textbf{Solution 3: Graph Theoretic}
+
+We can prove this statement by using the Hall's marriage theorem. Let us define a bipartite graph $G = (A \cup B, E)$, where $A$ is the set of rows of the grid, $B$ is the set of columns of the grid, and $E$ is the set of edges between $A$ and $B$. We say that a row $a \in A$ is connected to a column $b \in B$ if and only if the cell in row $a$ and column $b$ is colored amber.
+
+ Now, we need to show that the conditions of Hall's marriage theorem are satisfied. That is, for any subset $S \subseteq A$, the number of columns connected to $S$ is at least $|S|$. To prove this, let $S$ be any subset of $A$, and let $T$ be the set of columns connected to $S$. Then, the number of amber cells in the rows of $S$ is at least $a|S|$, and the number of amber cells in the rows not in $S$ is at least $b(a+b+1)-a|S|$. Therefore, the total number of amber cells is at least $a|S| + b(a+b+1)-a|S| = ab + b(a+b)$, which is at least $a^2+ab-b$ by assumption. Hence, the number of columns connected to $S$ is at least $b$.
+
+ Similarly, we can define a bipartite graph $G' = (A \cup B', E')$, where $B'$ is the set of rows of the grid, and an edge between a row $a$ and a column $b' \in B'$ exists if and only if the cell in row $a$ and column $b'$ is colored bronze. We can show that the conditions of Hall's marriage theorem are also satisfied for $G'$.
+
+ Therefore, by Hall's marriage theorem, there exist matchings $M$ and $M'$ in $G$ and $G'$, respectively, such that each row and column in the grid is incident to at most one edge in $M$ or $M'$. Let $X$ be the set of cells in the grid that are covered by $M$, and $Y$ be the set of cells in the grid that are covered by $M'$. Then, $|X| = |Y| = a+b$, since each matching covers a total of $a+b$ cells. Moreover, no two cells in $X$ or $Y$ lie in the same row or column, since each row and column is incident to at most one edge in $M$ or $M'$.
+
+ Finally, we can choose $a$ amber cells and $b$ bronze cells from $X$ and $Y$, respectively, such that no two of the chosen cells lie in the same row or column. This is because $|X| = |Y| = a+b$, and there are at least $a^2+ab-b$ amber cells in the grid and at least $b^2+ab-a$ bronze cells in the grid. Therefore, there are at least $a^2+ab-b$ cells colored amber in $X$, and at least $b^2+ab-a$ cells colored bronze in $Y$. This implies that there are at least $a$ amber cells in $X$ and at least $b$ bronze cells in $Y$, so we can choose a subset of $a$ amber cells from $X$ and a subset of $b$ bronze cells from $Y$, such that no two of the chosen cells lie in the same row or column.
+
+ 
+
+
+	\item (\textit{USAJMO 2022}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ Let $b\geq2$ and $w\geq2$ be fixed integers, and $n=b+w$. Given are $2b$ identical black rods and $2w$ identical white rods, each of side length $1$.
+
+
+ We assemble a regular $2n$-gon using these rods so that parallel sides are the same color. Then, a convex $2b$-gon $B$ is formed by translating the black rods, and a convex $2w$-gon $W$ is formed by translating the white rods. An example of one way of doing the assembly when $b=3$ and $w=2$ is shown below, as well as the resulting polygons $B$ and $W$.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/USAJMO_I_2022_3_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ Prove that the difference of the areas of $B$ and $W$ depends only on the numbers $b$ and $w$, and not on how the $2n$-gon was assembled.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+First notice that the black rods and the white rods form polygons iff in the original $2n$-gon, if a side is a color $x$, then the side that is parallel to that side in the original $2n$-gon is also the color $x$. 
+
+ We can prove that the difference in areas is only affected by the values of $b$ and $w$ by showing that for any valid arrangement of $2b$ rods and $2w$ rods, we may switch any two adjacent black and white rods(and their "parallel pairs"), and end up with the same area difference. 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2022_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ In the figure above (click to expand), after the switch, we can see that after removing the mutually congruent parts, we are left with two parallelograms from each color. Let $x$, $\alpha{}$, $y$, and $\beta{}$ be defined as shown. Notice that if we angle chase, the sides of the other parallelogram are the same, but if the angles of the original $2n$-gon all have measure $2k$, the angles of the new parallelograms are $\alpha{}+180-2k$ and $\beta{}+180-2k$, as shown. We must prove that the differences between the areas are the same. 
+
+ Using area formulas, the change in the difference of areas is $x\sin{\alpha{}}-y\sin{\beta{}}+y\sin{(2k-\beta{})}-x\sin{(2k-\alpha{})}$, which is equal to $x(\sin{k}(2\cos^2{k})-2\sin{k}\cos{k}\cos{\alpha{}})-y(\sin{k}(2\cos^2{k}))+y(\sin{k}\cos{k}\cos{\beta{}})$, or $2\cos{k}(x\sin{(\alpha{}-k)}+y\sin{(k-\beta{}}))$. Since $\cos{k}$ is not $0$ because $n\geq{}3$, we are left with proving that $x\sin{(\alpha{}-k)}+y\sin{(k-\beta{}})=0$.
+
+ Now we rotate the polygon so that the vertex between the two sides that we switched is at the point $(0,0)$, the angle bisector of that vertex is $y=0$, and the black side is in the positive $y$-direction. Now think of all the sides as vectors, all pointing in the clockwise direction of the $2n$-gon.
+
+ Notice the part labeled $a$ in the black polygons. We have that the vector labeled $x$ is really just the sum of all of the vectors in the part labeled $a$ - or all the vectors in the $2n$-gon that are in the positive $y$-direction excluding the one that was interchanged. Also notice that the angle of this vector $x$ has a signed angle of $\alpha{}-k$ with $y=0$ and has length $x$ - meaning that the vertical displacement of the vector $x$ from $y=0$ is equal to $x\sin{(\alpha{}-k)}$! Similarly, we get that the vertical displacement of the vector $y$ is equivalent to $y\sin{(k-\beta{}})$. 
+
+ Adding these two together, we get that $x\sin{(\alpha{}-k)}+y\sin{(k-\beta{}})$ is simply the vertical displacement of the sum of the vectors $x$ and $y$. Since the sum of the vectors $x$ and $y$ is equivalent to the sum of the vectors in the positive half of the polygon minus the sum of the black vector that would be switched with the white vector(the leftmost vector in the positive half of the polygon) and the rightmost vector in the positive half(which is the parallel pair of the white vector that would be interchanged later), and we know that this sum happens to have a vertical displacement of $0$, along with the fact that the positive half of the polygon summed together also has a vertical displacement of $0$, we get that the total vertical displacement is $0$, meaning that $x\sin{(\alpha{}-k)}+y\sin{(k-\beta{}})=0$, and we are done.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Pick a pair of parallel sides of the regular $2n$-gon and flip their color. Let those two lines be the horizontal. The area of the polygon formed by rods of the original color decreases by a parallelogram with height equal to the sum of the vertical heights of the rods of that color divided by $2$ and base length $1$. Similarly, the area of the polygon formed by rods of the new color increases by the sum of the vertical heights of the rods of the new color divided by $2$. The sum of the heights of all the rod is equal to twice the height of the $2n$-gon, so the difference between the areas of $B$ and $W$ changes by the height of the $2n$-gon, which is fixed when $n$ is fixed.
+
+ If we pair two pairs different-colored pairs of parallel sides of the $2n$-gon and flip the colors of both pairs, then $b$ and $w$ and the difference in the areas of $B$ and $W$ will remain unchanged. Thus, the difference in the areas of $B$ and $W$ depends only on $b$ and $w$.
+
+ 
+
+
+	\item (\textit{USAJMO 2022}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ $(*)$ Let $ABCD$ be a rhombus, and let $K$ and $L$ be points such that $K$ lies inside the rhombus, $L$ lies outside the rhombus, and $KA=KB=LC=LD$. Prove that there exist points $X$ and $Y$ on lines $AC$ and $BD$ such that $KXLY$ is also a rhombus.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+(Image of the solution is here \href{https://wiki-images.artofproblemsolving.com//d/de/Usajmo2022-4.png}{[1]})
+
+ Let's draw ($\ell$) perpendicular bisector of $\overline{KL}$. Let $X, Y$ be intersections of $\ell$ with $AC$ and $BD$, respectively. $KXLY$ is a kite. Let $O$ mid-point of $\overline{KL}$. Let $M$ mid-point of $\overline{BD}$ (and also $M$ is mid-point of $\overline{AC}$). $X, O, Y$ are on the line $\ell$.
+
+ $BK=DL$, $BX=XD$, $XK=XL$ and so $\triangle BXK \cong \triangle DXL$ (side-side-side). By spiral similarity, $\triangle BXD \sim\triangle KXL$. Hence, we get
+ \[\angle XBD = \angle XDB = \angle XKL = \angle XLK = b .\]
+
+ Similarly, $AK =CL$, $YK = YL$, $YA=YC$ and so $\triangle AKY \cong \triangle CYL$ (side-side-side). From spiral similarity, $\triangle YKL\sim \triangle YAC$. Thus,
+
+ 
+ \[\angle YAC = \angle YCA = \angle YKL = \angle YLK = a .\]
+
+ If we can show that $a=b$, then the kite $KXLY$ will be a rhombus.
+
+ By spiral similarities, $\dfrac{BX}{BD} = \dfrac{XK}{KL}$ and $\dfrac{YA}{AC} = \dfrac{YK}{KL}$. Then, $KL = \dfrac{BD \cdot XK}{BX} = \dfrac{AC \cdot YK}{YA}$.
+
+ $\dfrac{XK}{YK} = \dfrac{AC \cdot BX}{AY \cdot BD}$. Then, $\dfrac{YK}{XK} = \dfrac{(BD/2) \cdot AY}{(AC/2) \cdot BX} = \dfrac{\sin b}{\sin a}$. Also, in the right triangles $\triangle KXO$ and $\triangle KYO$,  $\dfrac{YK}{XK} = \dfrac{OK/\cos a}{OK/\cos b} = \dfrac{\cos b}{\cos a}$. Therefore,
+ \[\dfrac{\sin b}{\sin a} = \dfrac{\cos b}{\cos a}.\]
+
+ $\sin a \cos b = \sin b \cos a \implies \sin a \cos b - \sin b \cos a = 0 \implies \sin(a-b) = 0$ and we get $a=b$.
+
+ (Lokman GÖKÇE)
+
+ 
+
+
+	\item (\textit{USAJMO 2022}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ Find all pairs of primes $(p,q)$ for which $p-q$ and $pq-q$ are both perfect squares.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We first consider the case where one of $p,q$ is even. If $p=2$, $p-q=0$ and $pq-q=2$ which doesn't satisfy the problem restraints. If $q=2$, we can set $p-2=x^2$ and $2p-2=y^2$ giving us $p=y^2-x^2=(y+x)(y-x)$. This forces $y-x=1$ so $p=2x+1\rightarrow 2x+1=x^2+2 \rightarrow x=1$ giving us the solution $(p,q)=(3,2)$.
+
+ 
+Now assume that $p,q$ are both odd primes. Set $p-q=x^2$ and $pq-q=y^2$ so $(pq-q)-(p-q)=y^2-x^2 \rightarrow p(q-1)$ $=(y+x)(y-x)$. Since $y+x>y-x$, $p | (x+y)$. Note that $q-1$ is an even integer and since $y+x$ and $y-x$ have the same parity, they both must be even. Therefore, $x+y=pk$ for some positive even integer $k$. On the other hand, $p>p-q=x^2 \rightarrow p>x$ and $p^2-p>pq-q=y^2 \rightarrow p>y$. Therefore, $2p>x+y$ so $x+y=p$, giving us a contradiction.
+
+ 
+Therefore, the only solution to this problem is $(p,q)=(3,2)$.
+
+ 
+
+
+	\item (\textit{USAJMO 2022}) $\textbf{Note:}$ For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
+
+
+ Let $a_0,b_0,c_0$ be complex numbers, and define
+
+
+ 
+ \[a_{n+1}=a_n^2+2b_nc_n\]
+
+ \[b_{n+1}=b_n^2+2c_na_n\]
+
+ \[c_{n+1}=c_n^2+2a_nb_n\]
+for all nonnegative integers $n$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let $S_n = a_n + b_n + c_n$. Summing the three given recurrences yields:
+ \[S_{n+1} = a_n^2 + b_n^2 + c_n^2 + 2a_nb_n + 2b_nc_n + 2c_na_n = (a_n + b_n + c_n)^2 = S_n^2\]
+
+ By induction, we have $S_n = S_0^{2^n}$. We are given that $\max(|a_n|, |b_n|, |c_n|) \le 2022$ for all $n$. By the triangle inequality, 
+ \[|S_n| \le |a_n| + |b_n| + |c_n| \le 3 \times 2022 = 6066.\]Since the sequence $|S_n|$ is bounded, we must have $|S_0| \le 1$. (If $|S_0| > 1$, then $|S_n| \to \infty$ as $n \to \infty$, which contradicts the boundedness condition).
+
+ Next, let $\omega = e^{2\pi i / 3}$ be a primitive cube root of unity, satisfying $\omega^3 = 1$ and $1 + \omega + \omega^2 = 0$. We define two new sequences:\begin{align*}T_n &= a_n + \omega b_n + \omega^2 c_n \\U_n &= a_n + \omega^2 b_n + \omega c_n\end{align*}
+
+
+ Squaring $U_n$, we obtain:\begin{align*}U_n^2 &= (a_n + \omega^2 b_n + \omega c_n)^2 \\&= a_n^2 + \omega^4 b_n^2 + \omega^2 c_n^2 + 2\omega^2 a_nb_n + 2\omega a_nc_n + 2\omega^3 b_nc_n \end{align*}
+Using $\omega^3 = 1$ and $\omega^4 = \omega$, this simplifies to:
+ \[U_n^2 = a_n^2 + \omega b_n^2 + \omega^2 c_n^2 + 2\omega^2 a_nb_n + 2\omega a_nc_n + 2b_nc_n\]
+
+ Now, let's evaluate $T_{n+1}$ using the given recurrences:\begin{align*}T_{n+1} &= a_{n+1} + \omega b_{n+1} + \omega^2 c_{n+1} \\&= (a_n^2 + 2b_nc_n) + \omega(b_n^2 + 2c_na_n) + \omega^2(c_n^2 + 2a_nb_n)\end{align*}
+Notice that $T_{n+1}$ matches the expansion of $U_n^2$ perfectly. Thus, $T_{n+1} = U_n^2$. By a symmetric calculation, $U_{n+1} = T_n^2$.
+
+ Combining these two relations, we find that for the even terms:\begin{align*}T_{n+2} &= U_{n+1}^2 = (T_n^2)^2 = T_n^4 \\U_{n+2} &= T_{n+1}^2 = (U_n^2)^2 = U_n^4\end{align*}
+This implies $T_{2k} = T_0^{4^k}$ and $U_{2k} = U_0^{4^k}$. Using the same boundedness argument as before, since the terms $a_n, b_n, c_n$ are bounded and $|\omega| = 1$, the sequences $|T_n|$ and $|U_n|$ are also strictly bounded. Therefore, their initial moduli must be at most $1$:
+ \[|T_0| \le 1 \quad \text{and} \quad |U_0| \le 1\]
+
+ Finally, we utilize the absolute value squared identity in the complex plane:
+ \[|S_0|^2 + |T_0|^2 + |U_0|^2 = S_0\overline{S_0} + T_0\overline{T_0} + U_0\overline{U_0}\]Expanding this sum, the coefficient of any squared term (such as $a_0\overline{a_0} = |a_0|^2$) is $1 + 1 + 1 = 3$. The coefficient of any cross term (such as $a_0\overline{b_0}$) is $1 + \omega + \omega^2 = 0$, meaning all cross terms cancel out completely. Thus, we obtain:
+ \[|S_0|^2 + |T_0|^2 + |U_0|^2 = 3(|a_0|^2 + |b_0|^2 + |c_0|^2)\]
+
+ Since $|S_0| \le 1$, $|T_0| \le 1$, and $|U_0| \le 1$, the maximum possible value of the left-hand side is $1^2 + 1^2 + 1^2 = 3$. Therefore:\begin{align*}3(|a_0|^2 + |b_0|^2 + |c_0|^2) &\le 3 \\|a_0|^2 + |b_0|^2 + |c_0|^2 &\le 1\end{align*}
+
+
+ This completes the proof.
+
+ 
+
+
+\end{enumerate}

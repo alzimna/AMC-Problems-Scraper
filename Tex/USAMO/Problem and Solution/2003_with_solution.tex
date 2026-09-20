@@ -221,7 +221,74 @@ Note that
 Setting $x = a$ and $y = b + c$ yields
  \[(2a + b + c)^2 + 2(a - b - c)^2 = 3(2a^2 + (b + c)^2).\]Thus, we have
  \[\frac{(2a + b + c)^2}{2a^2 + (b + c)^2} = \frac{3(2a^2 + (b + c)^2) - 2(a - b - c)^2}{2a^2 + (b + c)^2} = 3 - \frac{2(a - b - c)^2}{2a^2 + (b + c)^2},\]and its analogous forms. Thus, the desired inequality is equivalent to
- \[\frac{(a - b - c)^2}{2a^2 + (b + c)^2} + \frac{(b - c - a)^2}{2b^2 + (c + a)^2} + \frac{(c - a - b)^2}{2c^2 + (a + b)^2}\geq\frac{1}{2}.\]Because 
+ \[\frac{(a - b - c)^2}{2a^2 + (b + c)^2} + \frac{(b - c - a)^2}{2b^2 + (c + a)^2} + \frac{(c - a - b)^2}{2c^2 + (a + b)^2}\geq\frac{1}{2}.\]Because $(b + c)^2\leq 2(b^2 + c^2)$, we have $2a^2 + (b + c)^2\leq 2(a^2 + b^2 + c^2)$ and its analogous forms. It suffices to show that
+ \[\frac{(a - b - c)^2}{2(a^2 + b^2 + c^2)} + \frac{(b - c - a)^2}{2(a^2 + b^2 + c^2)} + \frac{(c - a - b)^2}{2(a^2 + b^2 + c^2)}\geq\frac{1}{2},\]or,
+ \[(a - b - c)^2 + (b - a - c)^2 + (c - a - b)^2\geq a^2 + b^2 + c^2.\qquad\qquad (*)\]Multiplying this out the left-hand side of the last inequality gives $3(a^2 + b^2 + c^2) - 2(ab + bc + ca)$. Therefore the inequality $(*)$ is equivalent to $2[a^2 + b^2 + c^2 - (ab + bc + ca)]\geq 0$, which is evident because
+ \[2[a^2 + b^2 + c^2 - (ab + bc + ca)] = (a - b)^2 + (b - c)^2 + (c - a)^2.\]Equality holds when $a = b = c$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Given a function $f$ of three variables, define the cyclic sum
+ \[\sum_{\text{cyc}}f(p,q,r) = f(p,q,r) + f(q,r,p) + f(r,p,q).\]We first convert the inequality into
+ \[\sum_{\text{cyc}}\frac{2a(a + 2b + 2c)}{2a^2 + (b + c)^2}\leq 5.\]Splitting the 5 among the three terms yields the equivalent form
+ \[\sum_{\text{cyc}}\frac{4a^2 - 12a(b + c) + 5(b + c)^2}{3[2a^2 + (b + c)^2]}\geq 0.\qquad\qquad (2)\]The numerator of the term shown factors as $(2a - x)(2a - 5x)$, where $x = b + c$. We will show that
+ \[\frac{(2a - x)(2a - 5x)}{3(2a^2 + x^2)}\geq -\frac{4(2a - x)}{3(a + x)}.\qquad\qquad (3)\]Indeed, $(3)$ is equivalent to
+ \[(2a - x)[(2a - 5x)(a + x) + 4(2a^2 + x^2)]\geq 0,\]which reduces to
+ \[(2a - x)(10a^2 - 3ax - x^2) = (2a - x)^2(5a + x)\geq 0,\]evident. We proved that
+ \[\frac{4a^2 - 12a(b + c) + 5(b + c)^2}{3[2a^2 + (b + c)^2]}\geq -\frac{4(2a - b - c)}{3(a + b + c)},\]hence $(2)$ follows. Equality holds if and only if $2a = b + c, 2b = c + a, 2c = a + b$, i.e., when $a = b = c$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Given a function $f$ of $n$ variables, we define the symmetric sum
+ \[\sum_{\text{sym}}f(x_1, \ldots, x_n) = \sum_{\sigma} f(x_{\sigma(1)}, \ldots, x_{\sigma(n)})\]where $\sigma$ runs over all permutations of $1, \ldots, n$ (for a total of $n!$ terms).
+
+ We combine the terms in the desired inequality over a common denominator and use symmetric sum notation to simplify the algebra. The numerator of the difference between the two sides is
+ \[\sum_{\text{sym}} 8a^6 + 8a^5 + 2a^4b^2 + 10a^4bc + 10a^3b^3 - 52a^3b^2c + 14a^2b^2c^2.\]Recalling Schur's Inequality, we have
+ \[a^3 + b^3 + c^3 + 3abc - (a^2b + b^2c + c^2a + ab^2 + bc^2 + ca^2) \\ = a(a - b)(a - c) + b(b - a)(b - c) + c(c - a)(c - b)\geq 0,\]or
+ \[\sum_{\text{sym}} a^3 - 2a^2b + abc\geq 0.\]Hence,
+ \[0\leq 14abc\sum_{\text{sym}} a^3 - 2a^2b + abc = \sum_{\text{sym}} 14a^4bc - 28a^3b^2c + 14a^2b^2c^2\]and by repeated AM-GM inequality,
+ \[0\leq\sum_{\text{sym}} 4a^6 - 4a^4bc\]and
+ \[0\leq\sum_{\text{sym}} 4a^6 + 8a^5b + 2a^4b^2 + 10a^3b^3 - 24a^3b^2c.\]Adding these three inequalities yields the desired result.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Since, the inequality is homogeneous we may assume that $a+b+c=1$ and $0<a,b, c<1$.
+
+ The first time on the LHS is the inequality will be: 
+ \[f(a)=\frac{(a+1)^2}{2a^2+(1-a)^2}=\frac{a^2+2a+1}{3a^2-2a+1}\]Note that equality holds when $a=b=c=1/3$. A simple sketch of $f(x)$ on $[0,1]$ shows that the curve lies below the tangent line at $1/3$.
+
+ Which has the equation of the form $y=\frac{12x+4}{3}$.
+
+ So we claim that 
+ \[f(a) = \frac{a^2+2a+1}{3a^2-2a+1} \leq \frac{12a+4}{3} \text{ for } 0 <a <1\]
+
+ Upon clearing the denominators, it is equivalent to: 
+ \[36a^3-15a^2-2a+1 \geq 0\]
+
+ Note that since the curve and the line intersect at $1/3, 3a-1$ would be a factor. 
+
+ 
+ \[36a^3-15a^2-2a+1 = (3a-1)^2(4a+1) \geq 0 \text{ for } 0<a<1\]
+
+ Adding the similar inequalities for $b$ and $c$ gives: 
+
+ 
+ \[f(a)+f(b)+f(c) \leq \frac{12(a+b+c) +12}{3} = 8\] 
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2003\_USAMO\_Problems/Problem\_5&action=edit}{add it} to this page.</i>
 
  
 
