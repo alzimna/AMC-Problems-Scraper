@@ -117,14 +117,21 @@ def get_contest_metadata_from_link(contest,elem) :
     problems_num = 0
 
     title = elem.get('title')
-    year = re.search(PATTERN_TITLE[contest],title).group(1)
+    year = re.search(PATTERN_TITLE,title).group(1)
 
     if contest == 'AIME' :
         temp = re.search(PATTERN_VERSION[contest],link)
         vers = temp.group(1) if (temp and temp.group(1)) else 'I'
-    elif contest == 'AMC_8' :
+    elif contest in ['AMC_8','AMC_10'] :
         temp = re.search(PATTERN_VERSION[contest],link)
-        vers = temp.group(1).split('_')[0]
+        vers = temp.group(1)
+        if contest == 'AMC_8' :
+            vers = vers.split('_')[0]
+        else :
+            if "fall" not in vers.lower() :
+                vers = vers.split('_')[-1]
+            else :
+                vers = vers.split('_')[-1]+"_Fall"           
     else :
         vers = 'I'
 

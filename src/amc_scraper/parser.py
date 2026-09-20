@@ -240,7 +240,10 @@ def cleaning_tex(statement):
     statement = re.sub(pattern, "cent", statement)
     return (
         statement
+        .replace(r'similar to 3 but way faster & cheese', r'similar to 3 but way faster \& cheese')
+        .replace(r'Answer Choices & Modular', r'Answer Choices \& Modular')
         .replace(r'\rm', r'\textrm')
+        .replace(r'\bf', r'\textbf')
         .replace(r'\tt', r'\texttt')
         .replace(r'\tfrac', r'\frac')
         .replace(r'&lt;',r'<')
@@ -270,8 +273,20 @@ def cleaning_tex(statement):
         .replace('\ufffd', '')
         .replace('\u2220', r'$\angle$')
         .replace('\u22a5', r'$\perp$')
+        .replace('\u03C0', r'$\pi$')
+        .replace('\U0001f9c0', '')
+        .replace('\U0001F601', '')
+        .replace('\U0001F443', '')
+        .replace('\u2500', '-')
+        .replace('\u2502', r'$\mid$')
+        .replace('\u2514', r'$\llcorner$')
+        .replace('\U0001F525', '')
+        .replace('\u25b3', r'$\triangle$')
+        .replace('\u223c', r'$\sim$')
         .replace('…', r'\ldots')
         .replace(r'\usepackage{gensymb}', '')
+        .replace(r'\documentclass{article}\usepackage{amsmath, amssymb}\usepackage{amsthm}\usepackage{enumitem}\usepackage{tcolorbox}\u00a0% Package to box the final answer\begin{document}','')
+        .replace(r'\documentclass{article}\usepackage{amsmath, amssymb}\usepackage{amsthm}\usepackage{enumitem}\usepackage{tcolorbox}\u00a0\% Package to box the final answer\begin{document}','')
         .replace(r'\begin{array}{lc}\text{Least number}',r'\begin{array}{lccccc}\text{Least number}')
     )
 
@@ -296,8 +311,8 @@ def parsing_prob_to_tex(contest) :
         prob_state_cleaned = cleaning_tex(prob_state_cleaned)
         year = df.loc[i,'year']
         ver = df.loc[i,'version']
-        if contest == 'AIME' :
-            header = rf'(\textit{{{contest} {ver} {year}}}) '
+        if contest in ['AIME','AMC_10','AMC_12'] :
+            header = rf'(\textit{{{contest.replace('_',' ')} {ver.replace("_"," ")} {year}}}) '
         else :
             header = rf'(\textit{{{contest.replace('_',' ')} {year}}}) '
         prob_tex.append(header+prob_state_cleaned)
@@ -367,6 +382,7 @@ def parsing_sol_to_tex(contest) :
 
     return df
 
+# ====================== HTML Parser =================================
 
 def decode_img_html(df,row,statement_html,type) :
     statement_soup = BeautifulSoup(statement_html,'html.parser')

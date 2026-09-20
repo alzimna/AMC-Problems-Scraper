@@ -1,0 +1,904 @@
+\section{AMC 10 10P 2002}
+        \begin{enumerate}
+        	\item (\textit{AMC 10 10P 2002}) The ratio $\frac{(2^4)^8}{(4^8)^2}$ equals
+
+
+ $\text{(A) }\frac{1}{4} \qquad \text{(B) }\frac{1}{2} \qquad \text{(C) }1 \qquad \text{(D) }2 \qquad \text{(E) }8$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+We can use basic rules of exponentiation to solve this problem.
+
+ $\frac{(2^4)^8}{(4^8)^2}  =\frac{(2^4)^8}{(2^{16})^2}  =\frac{2^{32}}{2^{32}}  =1$
+
+ Thus, our answer is $\boxed{\textbf{(C) } 1}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We can rearrange the exponents on the bottom to solve this problem:
+
+ $\frac{(2^4)^8}{(4^8)^2}  =\frac{(2^4)^8}{(4^{2})^8}  =\frac{16^{8}}{16^{8}}  =\boxed{\textbf{(C) } 1}$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) The sum of eleven consecutive integers is $2002.$ What is the least of these integers?
+
+
+ $\text{(A) }175 \qquad \text{(B) }177 \qquad \text{(C) }179 \qquad \text{(D) }180 \qquad \text{(E) }181$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+We can use the sum of an arithmetic series to solve this problem.
+
+ Let the first integer equal $a.$ The last integer in this string will be $a+10.$ Plugging in $n=11, a_1=a,$ and $a_n=a+10$ into $\frac{n(a_1 + a_n)}{2}=2002,$ we get:
+
+ \begin{align*}\frac{11(a + a+10)}{2}&=2002 \\11(2a+10)&=4004 \\2a+10&=364 \\2a&=354 \\a&=177\\\end{align*}
+
+
+ Thus, our answer is $\boxed{\textbf{(B) }177}$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We can directly add everything up since $1 + 2 + \; \dots \; + 10$ is so little.
+
+ Similar to the first solution, let the first integer equal $a.$ The last integer in this string will be $a+10.$
+
+ \begin{align*}a + (a + 1) + (a + 2) + \; \dots \; + (a + 10) &= 2002 \\11a + (1 + 2 + \; \dots \; + 10) &= 2002 \\11a + 55 &= 2002 \\11a &= 1947 \\a &= \frac{1947}{11} \\a &= 177 \\\end{align*}
+
+
+ Thus, our answer is $\boxed{\textbf{(B) }177}$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Mary typed a six-digit number, but the two $1$s she typed didn't show. What appeared was $2002.$ How many different six-digit numbers could she have typed?
+
+
+ $\text{(A) }4 \qquad \text{(B) }8 \qquad \text{(C) }10 \qquad \text{(D) }15 \qquad \text{(E) }20$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+This is equivalent to ${5 \choose 2} + 5$ since we are choosing $5$ spots (three in between $2002$ and two to the left and right with two $1$s). We also have to take into account "double $1$s," namely, $112002,  211002,  201102,  200112,$ and $200211$ in our $5$ spots.
+
+ Thus, our answer is ${5 \choose 2} + 5 = \boxed{\textbf{(D) } 15}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We can split this into a little bit of casework which is easy to do in our head.
+
+ Case 1: The first $1$ is ahead of the first $2.$Then the second $1$ has $5$ places.
+
+ Case 2: The first $1$ is below the first $2.$Then the second $1$ has $4$ places.
+
+ $\dots$
+
+ This continues as the answer comes to
+
+ $5 + 4 + 3 + 2 + 1 = \frac{5(6)}{2}=3(5)=15.$
+
+ Thus, our answer is $\boxed{\textbf{(D) } 15}.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can just count the cases directly since there are so little.
+
+ Thus, our answer is $\boxed{\textbf{(D) } 15}.$
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We can split into steps. $2002$ has $5$ spaces to place the first $1$, and WLOG $12002$ to find $6$ spaces for next $1$. As the $1$s are not distinct, we divide our answer by $2$ to get $\frac{5*6}{2}=\boxed{\textbf{(D) } 15}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Which of the following numbers is a perfect square?
+
+
+ $\text{(A) }4^4 5^5 6^6 \qquad \text{(B) }4^4 5^6 6^5 \qquad \text{(C) }4^5 5^4 6^6 \qquad \text{(D) }4^6 5^4 6^5 \qquad \text{(E) }4^6 5^5 6^4$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+For a positive integer to be a perfect square, all the primes in its prime factorization must have an even exponent. With a quick glance at the answer choices, we can eliminate options
+
+ $\textbf{(A)}$ because $5^5$ is an odd power
+
+ $\textbf{(B)}$ because $6^5 = 2^5 \cdot 3^5$ and $3^5$ is an odd power
+
+ $\textbf{(D)}$ because $6^5 = 2^5 \cdot 3^5$ and $3^5$ is an odd power, and
+
+ $\textbf{(E)}$ because $5^5$ is an odd power.
+
+ This leaves option $\textbf{(C)},$ in which $4^5=(2^{2})^{5}=2^{10}$, and since $10, 4,$ and $6$ are all even, $\textbf{(C)}$ is a perfect square. Thus, our answer is $\boxed{\textbf{(C) } 4^5 5^4 6^6}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Let $(a_n)_{n \geq 1}$ be a sequence such that $a_1 = 1$ and $3a_{n+1} - 3a_n = 1$ for all $n \geq 1.$ Find $a_{2002}.$
+
+
+ $\text{(A) }666 \qquad \text{(B) }667 \qquad \text{(C) }668 \qquad \text{(D) }669 \qquad \text{(E) }670$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The recursive rule is equal to $a_{n+1}=\frac{1}{3}+a_{n}$ for all $n \geq 1.$ By recursion, $a_{n+2}=\frac{1}{3}+a_{n+1}=\frac{1}{3}+\frac{1}{3}+a_n=\frac{1}{3}(2)+a_n.$ If we set $n=1$ and repeat this process $2001$ times, we will get $a_{2001+1}=a_{2002}=\frac{1}{3}(2001) + a_1=667+1=668.$
+
+ Thus, our answer is $\boxed{\textbf{(C) } 668}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Find the first few terms of the sequence and find a pattern.
+ \[\begin{tabular}{|c|c|c|c|c|c|}  \hline   n & 1 & 2 & 3 & 4 & 5 \\   \hline  an & 1 & 4/3 & 5/3 & 2 & 7/3 \\  \hline \end{tabular}\]
+
+ From here, we can deduce that $a_n=\frac{2}{3}+\frac{1}{3}n.$ Plugging in $n=2002,$ $a_{2002}=\frac{2}{3}+\frac{2002}{3}=668.$
+
+ Thus, our answer is $\boxed{\textbf{(C) } 668}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) The perimeter of a rectangle is $100$ and its diagonal has length $x.$ What is the area of this rectangle?
+$\text{(A) }625-x^2 \qquad \text{(B) }625-\frac{x^2}{2} \qquad \text{(C) }1250-x^2 \qquad \text{(D) }1250-\frac{x^2}{2} \qquad \text{(E) }2500-\frac{x^2}{2}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Let $l$ be the length of the rectangle and $w$ be the width of the rectangle. We are given $2l+2w=100$ and $l^2+w^2=x^2.$ We are asked to find the area, which is equivalent to $lw.$ Using a bit of algebraic manipulation:
+ \begin{align*} 2l+2w &= 100 \\ l+w &= 50 \\ (l+w)^2 &= 2500 \\ l^2 + w^2 +2lw &= 2500 \\ x^2 + 2lw &= 2500 \\ lw &= \frac{2500-x^2}{2} \\ lw &= 1250 - \frac{x^2}{2} \\ \end{align*}
+
+
+ Thus, our answer is $\boxed{\textbf{(D) } 1250 - \frac{x^2}{2}}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) The dimensions of a rectangular box in inches are all positive integers and the volume of the box is $2002$ in$^3$. Find the minimum possible sum of the three dimensions.
+
+
+ $\text{(A) }36 \qquad \text{(B) }38  \qquad \text{(C) }42 \qquad \text{(D) }44 \qquad \text{(E) }92$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Given an arbitrary product and an arbitrary amount of positive integers to multiply to get that product, make the terms as close to each other as possible to minimize the sum. (This is a corollary that follows from the $AM-GM$ proof.) 
+
+ A good rule of thumb is to memorize the prime factorization of the AMC year that you are doing, which is $2002= 2 \cdot 7 \cdot 11 \cdot 13$. The three terms that are closest to each other that multiply to $2002$ are $11, 13,$ and $14$, so our answer is $11+13+14=\boxed{\textbf{(B) } 38}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) How many ordered triples of positive integers $(x,y,z)$ satisfy $(x^y)^z=64?$
+
+
+ $\text{(A) }5 \qquad \text{(B) }6 \qquad \text{(C) }7 \qquad \text{(D) }8 \qquad \text{(E) }9$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+The given expression, $(x^y)^z=64$, is equivalent to $x^{yz}=2^6$. Next, notice how $x$ must be a power of $2$ less than $64$ and the exponent of its prime factorization must be a factor of $6,$ otherwise, $yz$ won't be an integer. We can use a bit of case work to solve this problem.
+
+ Case 1: $x=2^1$
+
+ $yz=6.$ Clearly, our only four solutions are $y=1, z=6$ and $y=6, z=1,$ along with $y=2, z=3$ and $y=3, z=2.$
+
+ Case 2: $x=2^2$
+
+ $yz=3.$ Clearly, our only two solutions are $y=1, z=3$ and $y=3, z=1.$
+
+ Case 3: $x=2^3$
+
+ $yz=2.$ Clearly, our only two solutions are $y=1, z=2$ and $y=2, z=1.$
+
+ Case 4: $x=2^6$
+
+ $yz=1.$ Clearly, our only solution is $y=z=1.$
+
+ Adding up all our cases gives $4 + 2 + 2 + 1 =9.$
+
+ Thus, our answer is $\boxed{\textbf{(E) }9}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) The function $f$ is given by the table
+
+
+ 
+ \[\begin{tabular}{|c||c|c|c|c|c|}  \hline   x & 1 & 2 & 3 & 4 & 5 \\   \hline  f(x) & 4 & 1 & 3 & 5 & 2 \\  \hline \end{tabular}\]
+
+
+ If $u_0=4$ and $u_{n+1} = f(u_n)$ for $n \ge 0$, find $u_{2002}$
+
+
+ $\text{(A) }1 \qquad \text{(B) }2 \qquad \text{(C) }3 \qquad \text{(D) }4 \qquad \text{(E) }5$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+We can guess that the series given by the problem is periodic in some way. Starting off, $u_0=4$ is given. $u_1=u_{0+1}=f(u_0)=f(4)=5,$ so $u_1=5.$ $u_2=u_{1+1}=f(u_1)=f(5)=2,$ so $u_2=2.$ $u_3=u_{2+1}=f(u_2)=f(2)=1,$ so $u_3=1.$ $u_4=u_{3+1}=f(u_3)=f(1)=4,$ so $u_4=4.$ Plugging in $4$ will give us $5$ as found before, and plugging in $5$ will give $2$ and so on. This means that our original guess of the series being periodic was correct. Summing up our findings in a nice table,
+
+ 
+ \[\begin{tabular}{|c||c|c|c|c|c|c|}  \hline   n & 0 & 1 & 2 & 3 & 4 & ...\\   \hline  un & 4 & 5 & 2 & 1 & 4 & ...\\  \hline \end{tabular}\]
+
+ in which the next $u_n$ is found by simply plugging in the number from the last box into $f(x).$ The function is periodic every $4$ terms. $2002 \equiv 2\pmod{4}$, and counting $4$ starting from $u_1$ will give us our answer of $\boxed{\textbf{(B) } 2}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Let $a$ and $b$ be distinct real numbers for which
+
+ \[\frac{a}{b} + \frac{a+10b}{b+10a} = 2.\]
+
+
+ Find $\frac{a}{b}$
+
+
+ $\text{(A) }0.6 \qquad \text{(B) }0.7 \qquad \text{(C) }0.8 \qquad \text{(D) }0.9 \qquad \text{(E) }1$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+For sake of speed, WLOG, let $b=1$. This means that the ratio $\frac{a}{b}$ will simply be $a$ because $\frac{a}{b}=\frac{a}{1}=a.$ Solving for $a$ with some very simple algebra gives us a quadratic which is $5a^2 -9a +4=0.$ Factoring the quadratic gives us $(5a-4)(a-1)=0$. Therefore, $a=1$ or $a=\frac{4}{5}=0.8.$ However, since $a$ and $b$ must be distinct, $a$ cannot be $1$ so the latter option is correct, giving us our answer of $\boxed{\textbf{(E) } 0.8}$ for the AMC 12P and $\boxed{\textbf{(C) } 0.8}$ for the AMC 10P.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The only tricky part about this equation is the fact that the left-hand side has fractions. Multiplying both sides by $b(b+10a)$ gives us $2ab+10a^2+10b^2=2b^2+20ab.$ Moving everything to the left-hand side and dividing by $2$ gives $5a^2-4b^2 -9ab,$ which factors into $(5a-4b)(a-b)=0.$ Because $a \neq b, 5a=4b \implies \frac{a}{b}=0.8$ giving us our answer of $\boxed{\textbf{(E) } 0.8}$ for the AMC 12P and $\boxed{\textbf{(C) } 0.8}$ for the AMC 10P.
+
+ \textbf{Note} For some unknown reason, the answer choices for the \href{https://artofproblemsolving.com/wiki/index.php?title=2002\_AMC\_10P}{2002 AMC 10P} are different from the answer choices for the \href{https://artofproblemsolving.com/wiki/index.php?title=2002\_AMC\_12P}{2002 AMC 12P}, even though the question is exactly the same. Indeed, $\boxed{\textbf{(C) }0.8}$ is the correct answer choice for the 2002 AMC 10P.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Let $P(x)=kx^3 + 2k^2x^2+k^3.$ Find the sum of all real numbers $k$ for which $x-2$ is a factor of $P(x).$
+
+
+ $\text{(A) }-8 \qquad \text{(B) }-4 \qquad \text{(C) }0 \qquad \text{(D) }5 \qquad \text{(E) }8$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+By the \href{https://artofproblemsolving.com/wiki/index.php?title=Factor\_Theorem}{ factor theorem}, $x-2$ is a factor of $P(x)$ if and only if $P(2)=0.$ Therefore, $x$ must equal $2.$ $P(2)=0=2^3k+2(2^2)k^2+k^3,$ which simplifies to $k(k^2+8k+8)=0.$ $k=0$ is a trivial real $0$. Since $8^2 -4(1)(8)=32 > 0,$ this polynomial does indeed have two real zeros, meaning we can use Vieta’s Formula to conclude that sum of the other two roots are $-8.$ 
+
+ Thus, our answer is $0-8=\boxed{\textbf{(A)}\ -8}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) For $f_n(x)=x^n$ and $a \neq 1$ consider
+
+
+ $\text{I. } (f_{11}(a)f_{13}(a))^{14}$
+
+
+ $\text{II. } f_{11}(a)f_{13}(a)f_{14}(a)$
+
+
+ $\text{III. } (f_{11}(f_{13}(a)))^{14}$
+
+
+ $\text{IV. } f_{11}(f_{13}(f_{14}(a)))$
+
+
+ Which of these equal $f_{2002}(a)?$
+
+
+ $\text{(A) I and II only} \qquad \text{(B) II and III only} \qquad \text{(C) III and IV only} \qquad \text{(D) II, III, and IV only} \qquad \text{(E) all of them}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+We can solve this problem with a case by case check of $\text{I., II., III.,}$ and $\text{IV.}$ Since $f_n=x^n,$ $f_{2002}(a)=a^{2002},$ all cases must equal $a^{2002}.$
+
+ $\text{I. } (f_{11}(a)f_{13}(a))^{14}$
+
+ $(f_{11}(a)f_{13}(a))^{14}  =(a^{11}a^{13})^{14}  = (a^{24})^14  = a^{336}  \neq a^{2002}$
+
+ $\text{II. } f_{11}(a)f_{13}(a)f_{14}(a)$
+
+ $f_{11}(a)f_{13}(a)f_{14}(a) =a^{11}a^{13}a^{14} =a^{38} \neq a^{2002}$
+
+ $\text{III. } (f_{11}(f_{13}(a)))^{14}$
+
+ $(f_{11}(f_{13}(a)))^{14} =((a^{13})^{11})^{14} =a^{13 \cdot 11 \cdot 14} =a^{2002}$
+
+ $\text{IV. } f_{11}(f_{13}(f_{14}(a)))$
+
+ $f_{11}(f_{13}(f_{14}(a))) =((a^{14})^{13})^{11} =a^{14 \cdot 13 \cdot 11} =a^{2002}$
+
+ Thus, our answer is $\boxed{\textbf{(C) }\text{ III and IV only}}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+This is the much more realistic and less-time-consuming approach.Notice that all answer choices except $\text{(C)}$ include $\text{II}.$ in them. Therefore, it is sufficient to prove that $\text{II}.$ is false. Similar to solution 1, a quick glance tells us:
+
+ $\text{II. } f_{11}(a)f_{13}(a)f_{14}(a)$
+
+ $f_{11}(a)f_{13}(a)f_{14}(a) =a^{11}a^{13}a^{14} =a^{38} \neq a^{2002}$
+
+ Therefore, by process of elimination, our answer is $\boxed{\textbf{(C) }\text{ III and IV only}}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Participation in the local soccer league this year is $10\%$ higher than last year. The number of males increased by $5\%$ and the number of females increased by $20\%$. What fraction of the soccer league is now female?
+
+
+ $\text{(A) }\frac{1}{3} \qquad \text{(B) }\frac{4}{11} \qquad \text{(C) }\frac{2}{5} \qquad \text{(D) }\frac{4}{9} \qquad \text{(E) }\frac{1}{2}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Let the amount of soccer players last year be $x$, the number of male players last year to be $m$, and the number of females players last year to be $f.$ We want to find $\frac{1.2f}{1.1x},$ since that's the fraction of female players now. From the problem, we are given 
+
+ \begin{align*}x&=m+f \\1.1x&=1.05m+1.2f \\\end{align*}
+
+
+ Eliminating $m$ and solving for $\frac{1.2f}{1.1x}$ gives us our answer of $\boxed{\textbf{(B) } \frac {4}{11}}.$
+
+ Also, you know the number has to be divisible by 11, and there’s only one answer that fits!:)
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) The vertex $E$ of a square $EFGH$ is at the center of square $ABCD.$ The length of a side of $ABCD$ is $1$ and the length of a side of $EFGH$ is $2.$ Side $EF$ intersects $CD$ at $I$ and $EH$ intersects $AD$ at $J.$ If angle $EID=60^{\circ},$ the area of quadrilateral $EIDJ$ is
+
+
+ $\text{(A) }\frac{1}{4} \qquad \text{(B) }\frac{\sqrt{3}}{6} \qquad \text{(C) }\frac{1}{3} \qquad \text{(D) }\frac{\sqrt{2}}{4} \qquad \text{(E) }\frac{\sqrt{3}}{2}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Draw a diagram. Split quadrilateral $EIDJ$ into $\triangle EIJ$ and $\triangle JDI.$ Let the perpendicular from point $E$ intersect $AD$ at $X$, and let the perpendicular from point $E$ intersect $CD$ at $Y.$ We know $\angle EJD=120^{\circ}$ because $\angle JDC=90^{\circ}$ since $ABCD$ is a square, $\angle EID=60^{\circ}$ as given, and $\angle CEJ = 90^{\circ},$ so $\angle EJD = 360^{\circ}-120^{\circ}-90^{\circ}-90^{\circ}-60^{\circ}=120^{\circ}.$ Since $E$ is at the center of square $ABCD$, $EX=EY=\frac{1}{2}.$ By $30^{\circ}-60^{\circ}-90^{\circ},$ $ED=\frac{EX}{\sqrt{3}}=EC=\frac{EY}{\sqrt{3}}=\frac{1}{3}.$ Additionally, we know $JD=AD-AX-XJ,$ so $JD=1-\frac{1}{2}-\frac{1}{2 \sqrt{3}}=\frac{1}{2}-\frac{1}{2 \sqrt{3}}$ and we know $ID=DY+IY,$ so $ID=\frac{1}{2}+\frac{1}{2 \sqrt{3}}.$ From here, we can sum the areas of $\triangle EIJ$ and $\triangle JDI.$ to get the area of quadrilateral $EIDJ.$ Therefore,
+
+ \begin{align*}[EIDJ]&=[EIJ]+[JDI] \\&=\frac{1}{2}(\frac{1}{\sqrt{3}})(\frac{1}{\sqrt{3}}) + \frac{1}{2} (\frac{1}{2}-\frac{1}{2 \sqrt{3}}) (\frac{1}{2}+\frac{1}{2 \sqrt{3}}) \\&=\frac{1}{2}(\frac{1}{3})+\frac{1}{2}(\frac{1}{4}-\frac{1}{12}) \\&=\frac{1}{6}+\frac{1}{12} \\&=\frac{1}{4} \\\end{align*}
+
+
+ Thus, our answer is $\boxed{\textbf{(A) } \frac{1}{4}}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+If we draw a diagram as explained by the prompt, $\angle EJD = 360^{\circ}-90^{\circ}-90^{\circ}-60^{\circ} = 120^{\circ}$ as $\angle IEJ$ and $\angle JDI$ are both $90^{\circ}$ because they are angles of the squares, and $\angle EID=60^{\circ}$ given by the question. Similar to solution 1, if we draw $EX$ and $EY$ perpendicular to $AD$ and $CD$ respectively, square $EXDY$ with a side length of $\frac{1}{2}$ will be formed. Looking at $\triangle JXE$, we will notice $\angle EJX = 180^{\circ}-120^{\circ}=60^{\circ}$. Therefore $\triangle EYI$ and $\triangle EXJ$ are congruent by $A.A.S.$ as they both have a $90^{\circ}$ and a $60^{\circ}$ angle and $EX=EY$. Thus, the area of quadrilateral $EIDJ$ is the same as the area of square $EXDY$, which equals $\frac{1}{2} \times \frac{1}{2} = \boxed{\textbf{(A) } \frac{1}{4}}.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Notice that $\triangle ICE \cong \triangle JDE$. This means calculating the area of $EIDJ$ is equivalent to calculating $[CED]$ (we can think of this as shifting $\triangle JDE$ to where $\triangle ICE$ is), so
+ \[[EIDJ] = [CED] = \frac{1}{4} [ABCD] = \boxed{\textbf{(A) } \frac{1}{4}}\]. ~LQS
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) What is the smallest integer $n$ for which any subset of $\{ 1, 2, 3, \; \dots \; , 20 \}$ of size $n$ must contain two numbers that differ by 8?
+
+
+ $\text{(A) }2 \qquad \text{(B) }8 \qquad \text{(C) }12 \qquad \text{(D) }13 \qquad \text{(E) }15$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+There are twelve pairs $\{ 1, 9 \}$, $\{ 2, 10 \}$, $\{ 3, 11 \}$, $\{ 4, 12 \}$, $\; \dots \; \{ 12, 20 \}$ in $\{ 1, 2, 3, \; \dots \; , 20 \}$ that differ by 8. If we take $n = 12$, it could be that we selected one element from each pair for the subset: the condition may not be fulfilled. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Pigeonhole\_principle}{Pigeonhole principle}, in order to select at least one pair, it is necessary to select $\boxed{\textbf{(D)} 13}$ elements.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Two walls and the ceiling of a room meet at right angles at point $P.$  A fly is in the air one meter from one wall, eight meters from the other wall, and nine meters from point $P$. How many meters is the fly from the ceiling?
+
+
+ $\text{(A) }\sqrt{13} \qquad \text{(B) }\sqrt{14} \qquad \text{(C) }\sqrt{15} \qquad \text{(D) }4 \qquad \text{(E) }\sqrt{17}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+We can use the formula for the diagonal of a rectangular prism, or $d=\sqrt{a^2+b^2+c^2}$ The problem gives us $a=1, b=8,$ and $d=9.$ Solving gives us: $9=\sqrt{1^2 + 8^2 + c^2} \implies c^2=9^2-8^2-1^2 \implies c^2=16  \implies c=\boxed{\textbf{(D) } 4}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) There are $1001$ red marbles and $1001$ black marbles in a box. Let $P_s$ be the probability that two marbles drawn at random from the box are the same color, and let $P_d$ be the probability that they are different colors. Find $|P_s-P_d|.$
+
+
+ $\text{(A) }0 \qquad \text{(B) }\frac{1}{2002} \qquad \text{(C) }\frac{1}{2001} \qquad \text{(D) }\frac {2}{2001} \qquad \text{(E) }\frac{1}{1000}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+First we find the value of $P_s$. Note that whatever color we choose on our first marble, there are exactly $1000$ of $2001$ marbles remaining that match that color. Therefore, $P_s = \frac {1000}{2001}$.
+
+ Now we find the value of $P_d$. Again, the actual color of the first marble does not matter, since there are always exactly $1001$ of $2001$ marbles remaining that don't match that color. Therefore, $P_d = \frac{1001}{2001}$.
+
+ The value of $|P_s - P_d|$ is therefore $\frac {|1000-1001|}{2001} = \boxed {\text{(C) }\frac{1}{2001}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) For how many positive integers $n$ is $n^3 - 8n^2 + 20n - 13$ a prime number?
+
+
+ $\text{(A) one} \qquad \text{(B) two} \qquad \text{(C) three} \qquad \text{(D) four} \qquad \text{(E) more than four}$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Since this is a number theory question, it is clear that the main challenge here is factoring the given cubic. In general, the rational root theorem will be very useful for these situations. 
+
+ The rational root theorem states that all rational roots of $n^3 - 8n^2 + 20n - 13$ will be among $1, 13, -1$, and $-13$. Evaluating the cubic at these values will give $n = 1$ as a root. Doing some synthetic division gives 
+ \[n^3 - 8n^2 + 20n - 13 = (n-1)(n^2 - 7n + 13)\]
+
+ Since $n > 0$, $n-1$ must be positive. Since $(n-1)(n^2 - 7n + 13)$ evaluates to a prime, it is clear that exactly one of $n-1$ and $n^2 - 7n - 13$ is $1$. We proceed by splitting the problem into 2 cases.
+
+ Case 1: $n-1 = 1$It is clear that $n = 2$.  We have $2^2 - 7(2) + 13 = 3$, so this case yields $n = 2$ as a solution.
+
+ Case 2: $n^2 - 7n + 13 = 1$Solving for $n$ gives $n^2 - 7n + 12 = 0$ or $(n-3)(n-4) = 0$. Therefore, $n = 3$ or $n = 4$.Since both $3-1 = 2$ and $4-1 = 3$ are prime, both $n = 3$ and $n = 4$ work, yielding 2 solutions.
+
+ Putting everything together, the answer is $1 + 2 = \boxed{\textbf{(C) }3}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) If $a,b,c$ are real numbers such that $a^2 + 2b =7$, $b^2 + 4c= -7,$ and $c^2 + 6a= -14$, find $a^2 + b^2 + c^2.$
+
+
+ $\text{(A) }14 \qquad \text{(B) }21 \qquad \text{(C) }28 \qquad \text{(D) }35 \qquad \text{(E) }49$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Adding all of the equations gives $a^2 + b^2 +c^2 + 6a + 2b + 4c=-14.$ Adding 14 on both sides gives $a^2 + b^2 +c^2 + 6a + 2b + 4c+14=0.$ Notice that 14 can split into $9, 1,$ and $4,$ which coincidentally makes $a^2 +6a, b^2+2b,$ and $c^2+4c$ into perfect squares. Therefore, $(a+3)^2 + (b+1)^2 + (c+2) ^2 =0.$ An easy solution to this equation is $a=-3, b=-1,$ and $c=-2.$ Plugging in that solution, we get $a^2+b^2+c^2=(-3)^2+(-1)^2+(-2)^2=\boxed{\textbf{(A) } 14}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) How many three-digit numbers have at least one $2$ and at least one $3$?
+
+
+ $\text{(A) }52 \qquad \text{(B) }54  \qquad \text{(C) }56 \qquad \text{(D) }58 \qquad \text{(E) }60$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+We can do this problem with some simple case work.
+
+ Case 1: The hundreds place is not $2$ or $3.$This means that the tens place and ones place must be $2$ and $3$ respectively or $3$ and $2$ respectively. This case covers $1, 4, 5, 6, 7, 8,$ and $9,$ so it gives us $2 \cdot 7 = 14$ cases.
+
+ Case 2: The hundreds place is $2.$This means that $3$ must be in the tens place or ones place. Starting with cases in which the tens place is not $3$, we get $203, 213, 223, 243, 253, 263, 273, 283,$ and $293.$  With cases in which the tens place is $3$, we have $230-239$, or $10$ more cases. This gives us $9 + 10=19$ cases.
+
+ Case 3: The hundreds place is $3.$This case is almost identical to the second case, just swap the $2$s with $3$s and $3$s with $2$s in the reasoning and it's the same, giving us an additional $19$ cases.
+
+ Adding up all of these cases gives $14+19+19=52$ cases, or $\boxed{\textbf{(A) }52}.$
+
+ 
+
+
+
+\textbf{Solution 2 (PIE)}
+
+We can solve this problem with the principle of inclusion-exclusion. Let $\#(A)$ be the number of three-digit numbers without the digit $2$, let $\#(B)$ be the number of three-digit numbers without the digit $3$, and let $\#(A \cap B)$ be the number of three-digit numbers without digits $2$ or $3$.
+
+ Notice that $\#(A)=\#(B)$ by symmetry. We use constructive counting to find that 
+ \[\#(A) = 8 \cdot 9 \cdot 9 = 648\] so $\#(A) = \#(B) = 648$. Similarly, 
+ \[\#(A \cap B) = 7 \cdot 8 \cdot 8 = 448.\]
+
+ Hence, by PIE, 
+ \[\#(A \cup B) = \#(A) + \#(B) - \#(A \cap B) = 648 + 648 - 448 = 848\] so the count of three-digit numbers that do not have a digit $2$ or a digit $3$ is $\#(A \cup B) = 848$.
+
+ There are $9 \cdot 10 \cdot 10 = 900$ ways to construct a three-digit number in total, so we have $900 - 848 = \boxed{\textbf{(A) }52}$ numbers that have at least one of digit $2$ and $3$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Let $f$ be a real-valued function such that
+
+
+ 
+ \[f(x) + 2f(\frac{2002}{x}) = 3x\]
+
+
+ for all $x>0.$ Find $f(2).$
+
+
+ $\text{(A) }1000 \qquad \text{(B) }2000 \qquad \text{(C) }3000 \qquad \text{(D) }4000 \qquad \text{(E) }6000$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+Setting $x = 2$ gives $f(2) + 2f(1001) = 6$.Setting $x = 1001$ gives $2f(2) + f(1001) = 3003$.
+
+ Adding these 2 equations and dividing by 3 gives$f(2) + f(1001) = \frac{6+3003}{3} = 1003$.
+
+ Subtracting these 2 equations gives$f(2) - f(1001) = 2997$.
+
+ Therefore, $f(2) = \frac{1003+2997}{2} = \boxed {\textbf{(B) }2000}$.
+
+ \textbf{Note} We can find a closed form expression for $f$ using this method. We have that 
+ \[f(x) + 2f(\frac{2002}{x}) = 3x\] and plugging in $\frac{2002}{x}$ gives 
+ \[f(\frac{2002}{x}) + 2f(x) = 3(\frac{2002}{x}).\]
+
+ Let $a = f(x)$ and $b = f(\frac{2002}{x})$. Then, we have 
+ \[a + 2b = 3x \tag{1}\] and 
+ \[2a + b = \frac{6006}{x} \tag{2}\]
+
+ We add equations $(1)$ and $(2)$ and divide by $3$ to get $a+b = x + \frac{2002}{x}$. Subtracting this from equation $(2)$ gives us the closed form 
+ \[f(x) = \frac{4004}{x} - x\]
+
+ Indeed, plugging in $x=2$ gives us $f(2) = \frac{4004}{2} - 2 = \boxed {\textbf{(B) }2000}$.
+
+ 
+
+
+
+\textbf{Solution 2(Similar to Sol 1)}
+
+Setting $x = 2$ in the given equation yields
+ \[f(2) + 2f(1001) = 6.\]Setting $x = 1001$ gives
+ \[2f(2) + f(1001) = 3003.\]
+
+ Adding these two equations and dividing by $3$ results in
+ \[f(2) + f(1001) = \frac{6 + 3003}{3} = 1003.\]
+
+ We now have the system:\begin{align*}f(2) + f(1001) &= 1003 \\2f(2) + f(1001) &= 3003\end{align*}
+
+
+ Subtracting the first equation from the second gives
+ \[f(2) = 3003 - 1003 = 2000.\]
+
+ Thus, $f(2) = \boxed{\textbf{(B) }2000}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) In how many zeroes does the number $\frac{2002!}{(1001!)^2}$ end?
+
+
+ $\text{(A) }0 \qquad \text{(B) }1 \qquad \text{(C) }2 \qquad \text{(D) }200 \qquad \text{(E) }400$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+We can solve this problem with an application of \href{https://artofproblemsolving.com/wiki/index.php?title=Legendre\%27s\_Formula}{Legendre's Formula}. 
+
+ We know that there will be an abundance of factors of $2$ compared to factors of $5,$ so finding the amount of factors of $5$ is equivalent to finding how many factors of $10$ there are, which is equivalent to how many zeroes there are at the end of the number. Additionally, squaring a number will multiply the exponent of each factor by $2.$ Therefore, we plug in $p=5$ and $n=2002,$ then plug in $p=5$ and $n=1001$ and multiply by $2$ in:
+
+ 
+ \[e_p(n!)=\sum_{i=1}^{\infty} \left\lfloor \dfrac{n}{p^i}\right\rfloor =\frac{n-S_{p}(n)}{p-1}\]
+
+ As such,
+
+ \begin{align*}e_5(2002!)=&\left\lfloor\frac{2002}{5}\right\rfloor+\left\lfloor\frac{2002}{5^2}\right\rfloor+\left\lfloor\frac {2002}{5^3}\right\rfloor+\left\lfloor\frac{2002}{5^4}\right\rfloor\\=&400+80+16+3 \\=&499\end{align*}
+
+
+ or alternatively,
+
+ $e_5(2002!)=\frac{2002-S_5(2002)}{5-1}=\frac{2002-S_5(31002_5)]}{4}=\frac{2002-6}{4}=499.$
+
+ Similarly, 
+
+ \begin{align*}e_5(1001!)=&\left\lfloor\frac{1001}{5}\right\rfloor+\left\lfloor\frac{1001}{5^2}\right\rfloor+\left\lfloor\frac {1001}{5^3}\right\rfloor+\left\lfloor\frac{1001}{5^4}\right\rfloor\\=&200+40+8+1 \\=&249\end{align*}
+
+
+ or alternatively,
+
+ $e_5(1001!)=\frac{1001-S_5(1001)}{5-1}=\frac{1001-S_5(13001_5)]}{4}=\frac{1001-5}{4}=249.$
+
+ In any case, our answer is $499-2(249)= \boxed{\textbf{(B) } 1}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+In case we have forgotten Legendre's formula or haven't learned it, this solution is equally viable. With similar reasoning to solution 1, all we need to find is the amount of multiples of $5$ in the problem.
+
+ Cancel $1001!$ from the top and bottom of the fraction. We get $\frac{2002!}{(1001)!^2}=\frac{1002 \cdot 1003 \cdot \; \dots \; \cdot 2002}{1 \cdot 2 \; \dots \; \cdot 1001}.$ We can set a bijection between the two sets of terms with a multiple of $5.$ Let $n$ be a number from $1001!$ that is a multiple of $5.$ Its corresponding multiple of $5$ from $\frac{2002!}{1001!}$ will be $n+1000.$ For clarity, $5$ will group with $1005,$ $10$ will group with $1010$ $\; \dots \;$ $1000$ will group with $2000.$ Our goal is to find number(s) where $\frac{n+1000}{n}$ for all $n \leq 1000, n \in 5\mathbb{Z}^{+}$ will result in a multiple of $5.$ Simplifying this equation, $1+\frac{1000}{n}=$ a multiple of $5.$ We can conclude that $n=250$ is the only solution to this equation since $1000$ is not divisible by any other number ending in a $4$ or $9$ (we can write the factors of $1000$ to confirm this; $2^1=2,$ $2^2=4,$ and $2^3=8$ are the only numbers that do not end in $5$ or $0$ because all multiples of $5$ end in $5$ or $0$). A quick check reveals $\frac{1250}{5}=250,$ which has $3$ multiples of $5$ and $\frac{250}{5}=50,$ which has $2$ multiples of $5.$ Thus, $n=250$ is the only instance where there is an extra multiple of $5$ at the top, meaning our answer is $\boxed{\textbf{(B) } 1}.$
+
+ 
+Note: this solution misses two pairs. n=625 has four 5's, while 1625 has three. This would decrease our total by one. But, n=875 has three 5's, while 1875 has four. This would increase our total by one, thus cancelling out the impact of the other number this solution missed! The answer is thus still $\boxed{\textbf{(B) } 1}.$ (LOL) \href{https://artofproblemsolving.com/wiki/index.php?title=User:Sailingdog&action=edit&redlink=1}{Sailingdog} (\href{https://artofproblemsolving.com/wiki/index.php?title=User\_talk:Sailingdog&action=edit&redlink=1}{talk}) 19:43, 20 February 2026 (EST)
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Let
+
+ \[a=\frac{1^2}{1} + \frac{2^2}{3} + \frac{3^2}{5} +  \; \dots \; + \frac{1001^2}{2001}\]
+
+
+ and
+
+
+ 
+ \[b=\frac{1^2}{3} + \frac{2^2}{5} + \frac{3^2}{7} +  \; \dots \; + \frac{1001^2}{2003}.\]
+
+
+ Find the integer closest to $a-b.$
+
+
+ $\text{(A) }500 \qquad \text{(B) }501 \qquad \text{(C) }999 \qquad \text{(D) }1000 \qquad \text{(E) }1001$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Start by subtracting $a$ and $b$ and group those with a common denominator together, leaving $\frac{1^2}{1}$ and $\frac{1001^2}{2003}$ to the side.
+
+ \begin{align*}a-b&=(\frac{1^2}{1} + \frac{2^2}{3} + \frac{3^2}{5} +  \; \dots \; + \frac{1001^2}{2001}) - (\frac{1^2}{3} + \frac{2^2}{5} + \frac{3^2}{7} +  \; \dots \; + \frac{1001^2}{2003}) \\&=\frac{(2^2-1^2)}{3}+\frac{(3^2-2^2)}{5}+\frac{4^2-3^2}{7} + \; \dots \; + \frac{1001^2-1000^2}{2001} + 1 - \frac{1001^2}{2003}. \\\end{align*}
+
+
+ Notice how $\frac{(2^2-1^2)}{3}=1, \frac{(3^2-2^2)}{5}=1, \frac{4^2-3^2}{7}=1, \; \dots \;, \frac{1001^2-1000^2}{2001}=1$. This is because all of these are in the form $\frac{n^2-(n-1)^2}{2n-1}=\frac{n^2-(n^2-2n+1)}{2n-1}=\frac{2n-1}{2n-1}=1$. There are $1000$ of these terms since it begins at $n=2$ and ends at $n=1001,$ so $1001-2+1=1000.$ Therefore, $a-b=1000+1 - \frac{1001^2}{2003}.$ We can either manually calculate $\frac{1001^2}{2003}$ or notice that $\frac{1001^2}{2003} \approx \frac{1001^2}{2002}.$ $\frac{1001^2}{2003} < \frac{1001^2}{2002}$, so $-\frac{1001^2}{2003} > -\frac{1001^2}{2002}.$ Therefore,
+
+ \begin{align*}a-b&=\frac{(2^2-1^2)}{3}+\frac{(3^2-2^2)}{5}+\frac{4^2-3^2}{7} + \; \dots \; + \frac{1001^2-1000^2}{2001} + 1 - \frac{1001^2}{2003} \\&=1001-\frac{1001^2}{2003} \\&>1001-\frac{1001^2}{2002} \\&=1001-\frac{1001}{2} \\&=\frac{1001}{2} \\&=500.5 \\\end{align*}
+
+
+ Since $a-b>500.5,$ we can conclude that $a-b$ is closer to $501$ than $500.$
+
+ Thus, our answer is  $\boxed{\textbf{(B) } 501}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+In sigma notation, $a$ and $b$ are $\sum_{k=1}^{1001} \frac{k^2}{2k-1}$ and $\sum_{k=1}^{1001} \frac{k^2}{2k+1}$ respectively. $a-b= \sum_{k=1}^{1001} \frac{k^2}{2k-1} - \sum_{k=1}^{1001} \frac{k^2}{2k+1} = \sum_{k=1}^{1001} (\frac{k^2}{2k-1} - \frac{k^2}{2k+1})$. Combining the fractions, $\frac{k^2}{2k-1} - \frac{k^2}{2k+1} = \frac{2k^2}{4k^2-1}$ and this can be rewritten as $\frac{1}{2}\cdot\frac{4k^2}{4k^2-1}=\frac{1}{2}\left(1+\frac{1}{4k^2-1}\right)$. Substituting back, we get $\sum_{k=1}^{1001}\left(\frac{1}{2}\left(1+\frac{1}{4k^2-1}\right)\right) = \frac{1}{2}\left(\sum_{k=1}^{1001} 1 + \sum_{k=1}^{1001}\left(\frac{1}{2k-1}-\frac{1}{2k+1}\right)\right)=\frac{1001}{2}+\frac{1001}{2003}\approx 501$. So, the answer is $\boxed{\textbf{(B) } 501}.$~J.zz.z
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) What is the maximum value of $n$ for which there is a set of distinct positive integers $k_1, k_2, ... k_n$ for which
+
+
+ 
+ \[k^2_1 + k^2_2 + ... + k^2_n = 2002?\]
+
+
+ $\text{(A) }14 \qquad \text{(B) }15 \qquad \text{(C) }16 \qquad \text{(D) }17 \qquad \text{(E) }18$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution}
+
+Note that $k^2_1 + k^2_2 + ... + k^2_n = 2002 \geq \frac{n(n+1)(2n+1)}{6}$
+
+ When $n = 17$, $\frac{n(n+1)(2n+1)}{6} = \frac{(17)(18)(35)}{6} = 1785 < 2002$.
+
+ When $n = 18$, $\frac{n(n+1)(2n+1)}{6} = 1785 + 18^2 = 2109 > 2002$.
+
+ Therefore, we know $n \leq 17$.
+
+ Now we must show that $n = 17$ works. We replace some integer $b$ within the set $\{1, 2, ... 17\}$ with an integer $a > 17$ to account for the amount under $2002$, which is $2002-1785 = 217$.
+
+ Essentially, this boils down to writing $217$ as a difference of squares. Assume there exist positive integers $a$ and $b$ where $a > 17$ and $b \leq 17$ such that $a^2 - b^2 = 217$.
+
+ We can rewrite this as $(a+b)(a-b) = 217$. Since $217 = 7 \cdot 31$, either $a+b = 217$ and $a-b = 1$ or $a+b = 31$ and $a-b = 7$. We analyze each case separately.
+
+ Case 1: $a+b = 217$ and $a-b = 1$
+
+ Solving this system of equations gives $a = 109$ and $b = 108$. However, $108 > 17$, so this case does not yield a solution.
+
+ Case 2: $a+b = 31$ and $a-b = 7$
+
+ Solving this system of equations gives $a = 19$ and $b = 12$. This satisfies all the requirements of the problem.
+
+ The list $1, 2 ... 11, 13, 14 ... 17, 19$ has $17$ terms whose sum of squares equals $2002$. Since $n \geq 18$ is impossible, the answer is $\boxed {\textbf{(D) }17}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10P 2002}) Under the new AMC $10, 12$ scoring method, $6$ points are given for each correct answer, $2.5$ points are given for each unanswered question, and no points are given for an incorrect answer. Some of the possible scores between $0$ and $150$ can be obtained in only one way, for example, the only way to obtain a score of $146.5$ is to have $24$ correct answers and one unanswered question. Some scores can be obtained in exactly two ways, for example, a score of $104.5$ can be obtained with $17$ correct answers, $1$ unanswered question, and $7$ incorrect, and also with $12$ correct answers and $13$ unanswered questions. There are (three) scores that can be obtained in exactly three ways. What is their sum?
+
+
+ 
+
+$\text{(A) }175 \qquad \text{(B) }179.5 \qquad \text{(C) }182 \qquad \text{(D) }188.5 \qquad \text{(E) }201$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Let $c$ denote the amount of correct answers, $u$ denote the amount of unanswered questions, and $w$ denote the amount of wrong answers. The conversion rate is what differentiates between two ways to get the same score.
+
+ There are two ways to realize the conversion rate of wrong answers to unanswered questions and correct answers to unanswered questions.
+
+ \textbf{Sub Solution 1.1} Notice how the way to get $104.5$ points directly tells us the conversion rate. $17$ correct questions, $1$ unanswered question, and $7$ wrong answers is equivalent to $12$ correct answers, $13$ unanswered questions, and $0$ wrong answers. Since $17-12=5, 1-13=-12,$ and $7-0=7$, the conversion rate is $c, u, w \implies c-5, u+12, w-7.$
+
+ \textbf{Sub Solution 1.2} The second way to find out the conversion rate is to actually do the math. If a wrong answer is converted to an unanswered question, the total value will be $2.5$ more than the total value. If a correct answer is converted to an unanswered question, the total value will be $6-2.5=3.5$ less than the total value. Thus, we want the "more than" to be equal to the "less than". 
+
+ Let $x$ denote the amount of correct answers converted to unanswered questions and $y$ denote the amount of wrong answers converted to unanswered questions. Since we want "more than" to be equal to the "less than", $3.5x=2.5y$, where $x$ and $y$ are integers. Multiply by $2$ on both sides, $7x=5y$ implies $x=5$ and $y=7.$ Again, the conversion rate is $c, u, w \implies c-5, u+12, w-7.$ 
+
+ \textbf{Sub Solutions Combine} Either way, we find $c, u, w \implies c-5, u+12, w-7.$ If there are three ways, this implies the first way $c, u, w$ the second way is $c, u, w \implies c-5, u+12, w-7,$ and the third way is $c, u, w \implies c-10, u+24, w-14.$ Since $c, u, w \geq0,$ it follows that our three cases' first ways are as follows:
+
+ 
+$11$ correct answers, $0$ unanswered questions, $14$ wrong answers
+
+ $10$ correct answers, $0$ unanswered questions, $15$ wrong answers
+
+ $10$ correct answers, $1$ unanswered questions, $14$ wrong answers.
+
+ 
+Thus, our answer is $6(11+10+10)+2.5(0+0+1)+0(14+15+14)=\boxed {\text{(D) }188.5}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+This solution is formulated in formal language rather than cheesy methods, though the idea is the same. Additionally, we do not need to take into account the amount of wrong answers, which is easier to deal with.
+
+ Let $c$ denote the amount of correct answers, $u$ denote the amount of unanswered questions. Then $c+u \leq 25.$ We want to find the LCM of $2.5$ and $6$ so we can convert between different ways, similar to solution $1.$ The LCM is equal to $30$, since $6 \cdot \textbf{5}=30$ and $2.5 \cdot \textbf{12}=30.$ 
+
+ The first way will take the form $(c,u).$ The second way will take the form $(c+5, u-12).$ The third way will take the form $(c+10, u-24).$ In particular, since we cannot have a negative amount of unanswered questions, $u \geq 24.$ Combined with $c+u \leq 25$, our three cases are $(0,24), (1,24),$ and $(0,25).$
+
+ Thus, our answer is $6(0+1+0) + 2.5(24+24+25)=\boxed {\text{(D) }188.5}.$
+
+ \textbf{Note} The conversion rate can either be $(c+5, u-12).$ or $(c-5, u+12).$ Both solutions use a different conversion rate to illustrate this point. The first solution defines the "first way" as the one with the most correct, while the second solution defines the "first way" as the one with the most unanswered.
+
+ 
+
+
+\end{enumerate}

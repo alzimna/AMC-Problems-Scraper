@@ -1,0 +1,2499 @@
+\section{AMC 10 10B 2025}
+        \begin{enumerate}
+        	\item (\textit{AMC 10 10B 2025}) The instructions on a $350$-gram bag of coffee beans say that proper brewing of a large mug of pour-over coffee requires $20$ grams of coffee beans. What is the greatest number of properly brewed large mugs of coffee that can be made from the coffee beans in that bag?
+
+
+ $\textbf{(A) } 16 \qquad\textbf{(B) } 17 \qquad\textbf{(C) } 18 \qquad\textbf{(D) } 19 \qquad\textbf{(E) } 20$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+$\frac{350}{20}$ is $17.5$. We round down to find the maximum he can make (he cannot brew half of a cup), so the answer is $\boxed{\textbf{(B) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We can use $340$-grams if we use $17$ mugs. This is because $20 \cdot 17 = 340$. We cannot use $18$ because that would mean using $360$-grams. The answer is $\boxed{\textbf{(B) } 17}$.
+
+ Note that you can also find this by finding $\lfloor \frac{350}{20} \rfloor = 17.$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Dividing $350$ by $20$, we get $17$ with a remainder of $10$. However, $10$ grams cannot make a properly brewed large mug of coffee, as stated in the problem. We can only count fully brewed mugs of coffee, hence the answer is $\boxed{\textbf{(B) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 4 - Cheese (Sort of)}
+
+We multiply $20$ by each of the answer choices to see if we can find which one is closest and under $350.$ First, we try solution $\text{A}$, which is $16$. $16 \cdot 20 = 320,$ which is $30$ off from 350, so $\text{A}$ cannot be the answer, because we can add another $20$. Moving on to answer choice $\text{B},$ $17 \cdot 20 = 340.$ We notice that $350-340=10,$ and so we cannot add another $20$ to get closer but less than $350.$ (The next number, $18$, would result in $20 \cdot 18=360,$ which is more than $350$.) So, the answer is $\boxed{\textbf{(B) } 17}$.
+
+ (note - the actual cheese solution would likely include every single answer choice, but I use a bit of intellect in this solution)
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Jerry wrote down the ones digit of each of the first $2025$ positive squares: $1,4,9,6,5,6,\dots$. What is the sum of all the numbers Jerry wrote down?
+
+
+ $\textbf{(A)}~9025 \qquad \textbf{(B)}~9070 \qquad \textbf{(C)}~9090 \qquad \textbf{(D)}~9115 \qquad \textbf{(E)}~9160$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+By a modulo $10$ argument, the ones digits repeat with period $10$ in the following order:
+ \[1,4,9,6,5,6,9,4,1,0\]The sum of the numbers can be verified to be $45$.
+
+ There are $202$ periods that occur from $1$ to $2025$, and there are five extra numbers, those being $1,4,9,6,5$, corresponding to $2021,2022,2023,2024,2025$. The sum of these numbers is $25$.
+
+ Hence, the total is
+ \[202\cdot 45+25=9090+25=\boxed{\textbf{(D)}~9115}\]
+
+ 
+
+
+
+\textbf{Solution 2 (Slightly more rigorous than Solution 1, but same idea)}
+
+Let $x\equiv n\quad\textrm{(mod 10)}$. We have $x^2\equiv n^2\quad\textrm{(mod 10)}$. So, the numbers must repeat in patterns of $10$. Listing them out gives:
+ \[1,4,9,6,5,6,9,4,1,0.\]These numbers sum to $45$, so the sum of the first $2020$ numbers is $45\cdot202=9090$. Since we need $5$ more numbers, we add $1+4+9+6+5=25$ to our answer to get $\boxed{\textbf{(D)}~9115}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Similar to the other solutions but without the use of mods)}
+
+The ones digit of a square number is determined by the ones digit of the base.  We can find the pattern by looking at the ones digits of the first ten positive squares:
+
+ \begin{aligned}1\textasciicircum{}2 &= 1 \\2\textasciicircum{}2 &= 4 \\3\textasciicircum{}2 &= 9 \\4\textasciicircum{}2 &= 16 \quad (\text{ones digit } 6) \\5\textasciicircum{}2 &= 25 \quad (\text{ones digit } 5) \\6\textasciicircum{}2 &= 36 \quad (\text{ones digit } 6) \\7\textasciicircum{}2 &= 49 \quad (\text{ones digit } 9) \\8\textasciicircum{}2 &= 64 \quad (\text{ones digit } 4) \\9\textasciicircum{}2 &= 81 \quad (\text{ones digit } 1) \\10\textasciicircum{}2 &= 100 \quad (\text{ones digit } 0)\end{aligned}
+
+ 
+The sequence of ones digits is:
+
+ 
+$1$, $4$, $9$, $6$, $5$, $6$, $9$, $4$, $1$, $0$ 
+
+ 
+
+
+ This pattern of ten digits repeats for every subsequent group of ten squares (e.g., \(11^2\) has the same ones digit as \(1^2\), \(12^2\) as \(2^2\), etc.).
+
+ 
+$1$ + $4$ + $9$ + $6$ + $5$ + $6$ + $9$ + $4$ + $1$ + $0$ = $45$ 
+
+ 
+We now divide by $10$ as the pattern repeats every $10$ terms: $2025$/$10$ results in $202$ full cycles with a remainder of $5$. The sum of the $202$ full cycles is:
+
+ 
+$202$ * $45$ = $9090$ 
+
+ 
+However, we must add back $5$ digits, as we had a remainder of $5$ when we divided $2025$ by $10$. Therefore, the sum of the remaining $5$ digits is:
+
+ 
+$1$ + $4$ + $9$ + $6$ + $5$ = $25$ 
+
+ 
+Thus, the total sum is:
+
+ 
+$9090$ + $25$ = $9115$ 
+
+ Therefore, the answer is $\boxed{\textbf{(D)}~9115}$.
+
+ 
+
+
+
+\textbf{Solution 4: Modular Arithmetic; Ultra-Rigorous, Not Recommended}
+
+We want the sum of the ones digits of \( 1^2, 2^2, 3^2, \ldots, 2025^2 \). The normal way is to notice the pattern repeats every 10, but instead we will approach this with more modular arithmetic than any sane person would tolerate.
+
+ Let \( f(n) = n^2 \mod 10 \), which extracts the ones digit of \( n^2 \).We want
+
+ 
+ \[S = \sum_{n=1}^{2025} f(n).\]
+
+ First observe the basic periodicity result:Since \( n^2 \mod 10 \) depends only on \( n \mod 10 \), we have
+
+ 
+ \[f(n+10) \equiv f(n) \pmod{10}.\]
+
+ We will pretend this is deep.
+
+ Now compute all residues \( n \mod 10 \) and their corresponding \( n^2 \mod 10 \):
+
+ 
+ \[\begin{array}{c c} 0^2 & \equiv 0 \\ 1^2 & \equiv 1 \\ 2^2 & \equiv 4 \\ 3^2 & \equiv 9 \\ 4^2 & \equiv 6 \\ 5^2 & \equiv 5 \\ 6^2 & \equiv 6 \\ 7^2 & \equiv 9 \\ 8^2 & \equiv 4 \\ 9^2 & \equiv 1. \end{array}\]
+
+ Instead of immediately summing these, we treat the 10-term sequence as a modular function over the ring \( \mathbb{Z}/10\mathbb{Z} \).Define the sequence \( a_k = (k^2 \mod 10) \) for \( k \in \mathbb{Z}/10\mathbb{Z} \).We want the sum
+
+ 
+ \[T = \sum_{k=0}^9 a_k = 0 + 1 + 4 + 9 + 6 + 5 + 6 + 9 + 4 + 1 = 45.\]
+
+ Next, determine how many full cycles of length 10 lie in the first 2025 integers.Compute
+
+ 
+ \[2025 \mod 10 \equiv 5.\]
+
+ Then
+
+ 
+ \[2025 = 10 \cdot 202 + 5.\]
+
+ So we have 202 complete cycles plus 5 extra terms.
+
+ Sum contributed by the full cycles:
+
+ 
+ \[202 \cdot 45.\]
+
+ We now compute this entirely modulo 10 even though we need the actual sum.First,
+
+ 
+ \[202 \equiv 2 \pmod{10}, \quad 45 \equiv 5 \pmod{10},\]
+
+ so
+
+ 
+ \[202 \cdot 45 \equiv 2 \cdot 5 = 10 \equiv 0 \pmod{10}.\]
+
+ This tells us nothing useful, so abandon that and compute normally:
+
+ 
+ \[202 \cdot 45 = (200 \cdot 45) + (2 \cdot 45) = 9000 + 90 = 9090.\]
+
+ Now handle the leftover 5 terms: \( n = 1, 2, 3, 4, 5 \).Compute \( n^2 \mod 10 \) again even though we already have it:
+
+ 
+ \[1^2 \equiv 1, \quad 2^2 \equiv 4, \quad 3^2 \equiv 9, \quad 4^2 \equiv 6, \quad 5^2 \equiv 5.\]
+
+ Sum:
+
+ 
+ \[1 + 4 + 9 + 6 + 5 = 25.\]
+
+ The full sum is
+
+ 
+ \[S = 9090 + 25 = 9115.\]
+
+ To unnecessarily verify using modular decomposition, write
+
+ 
+ \[S \equiv \sum_{n=1}^{2025} n^2 \pmod{10}.\]
+
+ We can compute the entire sum of squares formula modulo 10 and compare.Using
+
+ 
+ \[\sum_{n=1}^N n^2 = \frac{N(N+1)(2N+1)}{6},\]
+
+ take \( N = 2025 \).Reduce everything modulo 10 first:
+
+ 
+ \[2025 \equiv 5, \quad 2026 \equiv 6, \quad 4051 \equiv 1 \pmod{10}.\]
+
+ Now compute
+
+ 
+ \[5 \cdot 6 \cdot 1 = 30.\]
+
+ Thus
+
+ 
+ \[\sum_{n=1}^{2025} n^2 \equiv 30 \cdot 6^{-1} \pmod{10}.\]
+
+ Compute the inverse of 6 modulo 10.Solve \( 6x \equiv 1 \pmod{10} \).No such \( x \) exists because \( \gcd(6, 10) = 2 \neq 1 \).Therefore this modular-verification method is unusable, so we immediately stop and simply trust the earlier cycle-counting method.
+
+ Thus the sum of the ones digits of the first 2025 squares is
+
+ 
+ \[9115.\]
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) A Pascal-like triangle has $10$ as the top row and $10$ followed by $1$ as the second row. In each subsequent row the first number is $10$, the last number is $1$, and, as in the standard Pascal's Triangle, each other number in the row is the sum of the two numbers directly above it. The first four rows are shown below:
+
+
+ $\begin{tabular}{ccccccc} &&&10&&&\\ &&10&&1&& \\ &10&&11&&1& \\ 10&&21&&12&&1 \\ \end{tabular}$
+
+
+ What is the sum of the digits of the sum of the numbers in the $11$th row? 
+
+
+ $\textbf{(A) } 11 \qquad\textbf{(B) } 13 \qquad\textbf{(C) } 14 \qquad\textbf{(D) } 16 \qquad\textbf{(E) } 17$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+If we find the sum for each rows (I'll only do the first $5$ to illustrate the pattern), we find that row $1$ has sum $10$, row $2$ has sum $11$, row $3$ has sum $22$, row $4$ has sum $44$, and row $5$ has sum $88$. So we can see that, excluding the first row, the $n$th row has sum $11 \cdot 2^{n-2}$. This means the $11$th row will have sum $11 \cdot 2^9 = 11 \cdot 512 = 5632$. The sum of the digits of $5632$ is $16$, so the answer is $\boxed{\textbf{(D) }16}$.
+
+ \textbf{Why each row is twice the previous row} Notice that the sum of each row is the slightly different than the normal Pascal's triangle, so the sum of the numbers is similar. Here's a proof of why each number in the normal Pascal's triangle is twice the previous number.To prove that the sum of each row is $2$ times the previous row, use the equation ${(1+1)}^n$ with the normal Pascal's triangle and use the binomial theorem from there.
+
+ Example: In the fifth row of Pascal's triangle, the numbers are $1, 4, 6, 4, 1$. The first number can be represented by ${4 \choose 0} = 1$, the second by ${4 \choose 1} = 4$, the third by  ${4 \choose 2} = 6$, the fourth by  ${4 \choose 3} = 4$, and the last by  ${4 \choose 4} = 1$. The sum of these five numbers is $16$ which is also $2^{4}$. Using the binomial theorem with ${(1+1)}^4$, we get $1 + 4 + 6 + 4 + 1 = 16$, the same results in Pascal's triangle. We could also solve ${(1+1)}^4$ by converting it to $2^4 = 16$, proving the identity that all rows in Pascal's triangle are exactly twice the previous row and can be represented by $2^{n}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+In this Pascal's Triangle-like sequence, after row $2$, each number in row $x$ appears twice in the sum of row $x+1$. For example (to illustrate the pattern), the numbers in row $2$ are $10$ and $1$, and these numbers indeed each appear twice in the sum of the next row ($10, 10+1$, and $1$ are the numbers in row $3$, so their sum can be written as $10 \cdot 2 + 1 \cdot 2$). With this pattern, we know that after row $2$ the sum of the numbers doubles in each subsequent row, so now by the same calculation as in Solution 1, the sum of the numbers in row $11$ is $(10+1) \cdot 2^{11-2} = 11 \cdot 2^9 = 5632$, and thus the answer is $5+6+3+2 = \boxed{\textbf{(D) }16}$.
+
+ 
+
+
+
+\textbf{Solution 3 (BRUTE FORCE!!!)}
+
+We can write out the first $11$ rows with direct computation. Since no calculators are allowed, you will spend at least $5$ minutes on this problem, so I do not recommend this way. Here are the first $11$ rows.
+
+ 
+
+ \[10\]
+ \[10\qquad 1\]
+ \[10\qquad 11\qquad 1\]
+ \[10\qquad 21\qquad 12\qquad 1\]
+ \[10\qquad 31\qquad 33\qquad 13\qquad 1\]
+ \[10\qquad 41\qquad 64\qquad 46\qquad 14\qquad 1\]
+ \[10\qquad 51\qquad 105\qquad 110\qquad 60\qquad 15\qquad 1\]
+ \[10\qquad 61\qquad 156\qquad 215\qquad 170\qquad 75\qquad 16\qquad 1\]
+ \[10\qquad 71\qquad 217\qquad 371\qquad 385\qquad 245\qquad 91\qquad 17\qquad 1\]
+ \[10\qquad 81\qquad 288\qquad 588\qquad 756\qquad 630\qquad 336\qquad 108\qquad 18\qquad 1\]
+ \[10\qquad 91\qquad 369\qquad 876\qquad 1344\qquad 1386\qquad 966\qquad 444\qquad 126\qquad 19\qquad 1\]
+
+ Summing the last row gives $10+91+369+876+1344+1386+966+444+126+19+1 = 5632$. Summing the digits of $5632$ gives $5+6+3+2 = \boxed{\textbf{(D) } 16}$.
+
+ Edit: After brute forcing two or three rows, it is clear that the sum doubles ($11, 22, 44, 88, \dotsc$), and you can use this to find the sum of the $11$th row as $11 \cdot 2^{11-2} = 5632$, which gives a digit sum of $5+6+3+2 = \boxed{\textbf{(D) } 16}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Fast)}
+
+We can just take the entire triangle modulo $9$, since all the answer choices have different residues modulo $9$ and because a number is congruent to its digit sum modulo $9$. Accordingly, since $10 \equiv 1 \pmod{9}$, the triangle just becomes Pascal's triangle modulo $9$, and so by the standard result for the row sums in Pascal's-like triangles, the sum of the numbers in the $11$th row is $2^{11-1} = 1024 \equiv 7 \pmod{9}$. This means the only feasible answer choice is $16$, as it is the only one that is congruent to $7 \pmod{9}$, and so the answer is indeed $\boxed{\textbf{(D) } 16}$.~Storm1230323
+
+ 
+
+
+
+\textbf{Solution 5 (Cheese, Gamble)}
+
+We can start brute-forcing the first few rows and figure out the pattern that the sum of the numbers in row $n$, where $n \geq 2$, is $11 \cdot 2^{n-2}$. Now we gamble on this pattern (which is mostly correct for AMC 10 problems) and plug in $11$ into $n$, which results in $5632$. Hence the answer is $5 + 6 + 3 + 2 = \boxed{\textbf{(D) } 16}$.
+
+ 
+
+
+
+\textbf{Solution 6 (experience)}
+
+If you failed or sillied the AMC 10 A Question 19, then during the AMC 10 B you gained the experience to know that each row probably doubles in these Pascal-like problems, either in retrospect or during the actual AMC 10 A. However, we should probably check, in case you sillied this problem because you didn't check something stupid on the 10 A. It is a good decision to check, because we realize that the first row does not conform to the doubling rule, and only the rows right after it do. The rest of the solution is similar to how we solve the AMC 10 A Question 19, except less bashy because we only want the sum, not a specific number, and we are given the row number instead of the sum. So, we end up getting the sum to be $5632$, and therefore the answer is $\boxed{\textbf{(D) } 16}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Generating Function and Combinatorics)}
+
+We want the sum of the digits of the sum of all entries in the $11$th row of this "Pascal-ish" triangle. We will solve this with far more modular arithmetic than required, even though everything collapses into a simple closed form.
+
+ Let the $11$th row be indexed as row \( n = 11 \), with the top row being \( n = 1 \).Denote row sums by \( S_n \).
+
+ Each row begins with $10$ and ends with $1$.For the interior entries, each behaves like a binomial coefficient, but with an appropriate shift, so the entries in row \( n \) looks like:
+
+ Row \( n \): \( 10,  \binom{n-2}{1} + 1,  \binom{n-2}{2} + \binom{n-2}{1}, \dots,  \binom{n-2}{n-2} + \binom{n-2}{n-3}, 1 \)
+
+ But this is too reasonable, so instead we use generating functions and modular arithmetic.
+
+ Define the polynomial for row \( n \):
+
+ 
+ \[P_n(x) = 10x^0 + \sum_{k=1}^{n-2} \left(\binom{n-2}{k} \cdot 10 + \binom{n-2}{k-1}\right) x^k + x^{n-1}.\]
+
+ The sum of the entire row is \( P_n(1) \).So we compute:
+
+ 
+ \[P_n(1) = 10 + \sum_{k=1}^{n-2} \left( 10 \binom{n-2}{k} + \binom{n-2}{k-1} \right) + 1.\]
+
+ Break into two sums:
+
+ 
+ \[P_n(1) = 10 + 10 \sum_{k=1}^{n-2} \binom{n-2}{k} + \sum_{k=1}^{n-2} \binom{n-2}{k-1} + 1.\]
+
+ We know:
+
+ 
+ \[\sum_{k=1}^{n-2} \binom{n-2}{k} = 2^{n-2} - 1,\]since it’s the full sum of binomial coefficients minus the \( k=0 \) term.
+
+ Also, similarly,
+
+ 
+ \[\sum_{k=1}^{n-2} \binom{n-2}{k-1} = \sum_{j=0}^{n-3} \binom{n-2}{j} = 2^{n-2} - \binom{n-2}{n-2} = 2^{n-2} - 1.\]
+
+ So both sums are exactly $\left(2^{n-2} - 1\right)$, but we pretend otherwise and compute them modulo several numbers unnecessarily.
+
+ Since we need row \( n = 11 \), compute:
+
+ \( n-2 = 9 \).
+
+ We now compute powers of $2$ modulo various bases, even though we need the exact value.
+
+ First:
+
+ \( 2^9 = 512 \).
+
+ But we do:
+
+ \( 2^1 \equiv 2 \pmod{10},  2^2 \equiv 4,  2^3 \equiv 8,  2^4 \equiv 6,  2^5 \equiv 2, \), giving a cycle of length $4$.
+
+ Since \( 9 \equiv 1 \pmod{4} \),
+
+ \( 2^9 \equiv 2^1 \equiv 2 \pmod{10} \).
+
+ This tells us nothing, but we keep it.
+
+ Now compute the sums:
+
+ 
+ \[\sum_{k=1}^{9} \binom{9}{k} = 2^9 - 1 = 511, \text{ and hence also } \sum_{k=1}^{9} \binom{9}{k-1} = 511.\]
+
+ Substitute everything:
+
+ 
+ \[P_{11}(1) = 10 + 10 \cdot 511 + 511 + 1.\]
+
+ Compute in pieces:
+
+ \( 10 \cdot 511 = 5110 \).
+
+ Then
+
+ \( 10 + 5110 = 5120, 5120 + 511 = 5631, 5631 + 1 = 5632 \).
+
+ So the sum of the entries in the $11$th row is:
+
+ 
+ \[5632.\]
+
+ We need the sum of its digits:
+
+ \( 5 + 6 + 3 + 2 = 16 \).
+
+ Answer:
+
+ 
+ \[\boxed{\textbf{(D) } 16}.\]
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) The value of the two-digit number $\underline{a}~\underline{b}$ in base seven equals the value of the two-digit number $\underline{b}~\underline{a}$ in base nine. What is $a+b?$
+
+
+ $\textbf{(A)}~7\qquad\textbf{(B)}~9\qquad\textbf{(C)}~10\qquad\textbf{(D)}~11\qquad\textbf{(E)}~14$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+By definition of bases, $\underline{a}~\underline{b}$ base seven is equal to $7a+b$, and $\underline{b}~\underline{a}$ base nine is equal to $9b+a$. Therefore, we must have $7a+b=9b+a$, or $6a=8b$, or $3a=4b$. This means e.g. $3a$ is a multiple of $4$ (as $a$ is an integer), and since $3$ and $4$ are coprime, it follows simply that $a$ is a multiple of $4$, i.e. $a = 4k$ for some integer $k$. Hence $4b = 3a = 3 \cdot 4k \iff b = 3k$, i.e. the integer solutions are parametrised by $(a,b) = (4k,3k)$, but of course in base $7$ we must have $a,b < 7$, yielding $a=4$ and $b=3$ as the only solution. Thus their sum is $a+b = 4+3 = \boxed{\textbf{(A)}~7}$.
+
+ \textbf{Remark} The first equation comes from the following idea. In base $10$, a two-digit number can be represented as $10$ times the tens digit plus the units digit, or $10^1 \cdot a + 10^0 \cdot b$. If we insert the base numbers into this expression for $\underline{a}~\underline{b}$ and $\underline{b}~\underline{a}$, we get $7^1 \cdot a + b = 9^1 \cdot b + a$. The rest of the solution is above.
+
+ Note that this method applies to any number of digits as well as decimals.~OlympiadMaster
+
+ 
+
+
+
+\textbf{Solution 2 (Answer Choices)}
+
+Since $a$ and $b$ are both digits base $7$, they must be from $0$ to $6$. Furthermore, $\underline{a}$ must be strictly greater than $b$ because two-digit representations in base $7$ exceed the values of those in base $9$. Starting from testing $\text{(A)}$, we see that the combination $(a, b) = (4, 3)$ satisfies the condition. The answer is $\boxed{\textbf{(A)}~7}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Not too bad- Simple Modular Arithmetic Bash)}
+
+We interpret the two-digit numbers literally:
+
+ In base 7:
+ \[\overline{a} \ \overline{b} = 7a + b.\]In base 9:
+ \[\overline{b} \ \overline{a} = 9b + a.\]The condition is
+ \[7a + b = 9b + a.\]We want \( a + b \), but we will milk modular arithmetic as much as possible.
+
+ Start with the equation:
+ \[7a + b = 9b + a.\]Rearrange:
+ \[7a - a = 9b - b,\]
+ \[6a = 8b,\]
+ \[3a = 4b.\]This already says \( \frac{a}{b} = \frac{4}{3} \).But instead of finishing, we now do highly unnecessary modular analysis.
+
+ First, reduce the equation modulo 3:
+ \[3a - 4b \equiv 0 \pmod{3}.\]Compute residues:
+ \[3a \equiv 0 \pmod{3} \text{ always.}\]
+ \[4b \equiv b \pmod{3}.\]So:
+ \[0 - b \equiv 0 \pmod{3} \Rightarrow b \equiv 0 \pmod{3}.\]Thus \( b \in \{0, 3, 6\} \) (since digits in base 7 must be \( 0 \le b \le 6 \)).
+
+ Now reduce the same equation modulo 4:
+
+ Original condition \( 3a = 4b \).Modulo 4:
+ \[3a \equiv 0 \pmod{4}.\]Since \( \gcd(3, 4) = 1 \), the multiplicative inverse of 3 modulo 4 is 3, because
+ \[3 \cdot 3 = 9 \equiv 1 \pmod{4}.\]Multiply both sides of
+ \[3a \equiv 0 \pmod{4}\]by 3:
+ \[a \equiv 0 \pmod{4}.\]Thus \( a \in \{0, 4\} \), because digits in base 7 satisfy \( 0 \le a \le 6 \).
+
+ We now have:
+ \[a \in \{0, 4\}, b \in \{0, 3, 6\}.\]Next impose the original equation \( 3a = 4b \) exactly, not just modularly.
+
+ Test combinations:
+
+ \( a = 0 \):
+ \[3a = 0, 4b = 4b.\]For equality we need \( b = 0 \).That gives \( (a, b) = (0, 0) \), but this represents the “two-digit” numbers \( 00_7 \) and \( 00_9 \).Technically valid but trivial; we check the problem expectation: since it asks “What is \( a + b \)?”, zero is possible but let's check the other option.
+
+ \( a = 4 \):Solve
+ \[3 \cdot 4 = 4b,\]
+ \[12 = 4b,\]
+ \[b = 3.\]Check that digits are valid:
+
+ \( a = 4 \) is allowed in base 7.
+
+ \( b = 3 \) is allowed in base 7 and base 9.
+
+ Now confirm the original equation explicitly using base values:
+
+ Left side (base 7 number \( \overline{ab} \)):
+ \[7a + b = 7 \cdot 4 + 3 = 28 + 3 = 31.\]Right side (base 9 number \( \overline{ba} \)):
+ \[9b + a = 9 \cdot 3 + 4 = 27 + 4 = 31.\]Equality holds.
+
+ Thus the nontrivial valid solution is
+ \[(a, b) = (4, 3).\]Compute:
+ \[a + b = 4 + 3 = 7.\]Final answer:\( 7 \).
+
+ 
+
+
+
+\textbf{Solution 4 (Fast)}
+
+Write both integers as linear expressions and equate them
+ \[7a+b = 9b+a\]To find solutions to this, we can put everything on one side so it equals $0$
+ \[6a-8b=0\]Now, assuming a coordinate form $(a, b)$ you can quite easily see that $(8, 6)$ is a solution. However, this violates the fact that $a$ and $b$ are less than 7. You can see that just taking half of them gets you $(4,3)$, and that no other solution would work without exceeding, so, the answer is
+
+ $\boxed{\textbf{(A)}~7}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) In $\triangle ABC$, $AB=10$, $AC=18$, and $\angle B=130^\circ.$ Let $O$ be the center of the circle containing $A$, $B$, and $C.$ What is the degree measure of $\angle CAO$?
+
+
+ $\textbf{(A)}~20 \qquad \textbf{(B)}~30 \qquad \textbf{(C)}~40 \qquad \textbf{(D)}~50 \qquad \textbf{(E)}~60$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let us extend $\overline{AO}$ to meet $\odot{O}$ at $D$. 
+
+ Since $m\angle{ABC}=130^o$, by the Inscribed Angle Theorem, the measure of major arc $\overarc{ADC}=260^o.$ $\overline{AD}$ is a diameter of $\odot{O}$, so the measure of top arc $\overarc{AD}=180^o$, so 
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) The line $y = \frac{1}{3}x + 1$ divides the square region defined by $0 \leq x \leq 2$ and $0 \leq y \leq 2$ into an upper and lower region. The line $x=a$ divides the lower region into two regions of equal area. Then $a$ can be written as $\sqrt{s} - t$, where $s$ and $t$ are positive integers. What is $s+t$?
+
+
+ $\textbf{(A) } 18 \qquad\textbf{(B) } 19 \qquad\textbf{(C) }20\qquad\textbf{(D) } 21 \qquad\textbf{(E) } 22$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+We solve this by finding the areas of trapezoids. The line is $y = \frac{1}{3}x + 1$.Total Area ($A_{\text{total}}$) of Lower Region:The region from $x=0$ to $x=2$ is a trapezoid.
+ \[A_{\text{total}} = \frac{1}{2}(y(0) + y(2)) \times (2 - 0) = \frac{1}{2}\left(1 + \frac{5}{3}\right)(2) = \frac{8}{3}\]Half Area ($A_{\text{half}}$):The area of the region from $x=0$ to $x=a$ must be $\frac{1}{2}A_{\text{total}}$.
+ \[A_{\text{half}} = \frac{1}{2} \times \frac{8}{3} = \frac{4}{3}\]Solve for $a$:This half-region is also a trapezoid.
+ \[A_{\text{half}} = \frac{1}{2}(y(0) + y(a)) \times (a - 0) = \frac{4}{3}\]
+ \[\frac{1}{2}\left(1 + \left(\frac{1}{3}a + 1\right)\right)a = \frac{4}{3}\]
+ \[\frac{1}{2}\left(2 + \frac{a}{3}\right)a = \frac{4}{3}\]
+ \[a + \frac{a^2}{6} = \frac{4}{3}\]Multiplying by 6 gives the quadratic equation:
+ \[a^2 + 6a - 8 = 0\]
+ \[a = \frac{-6 \pm \sqrt{6^2 - 4(1)(-8)}}{2} = \frac{-6 \pm \sqrt{68}}{2} = \frac{-6 \pm 2\sqrt{17}}{2} = -3 \pm \sqrt{17}\]Since $a$ must be positive, $a = \sqrt{17} - 3$.
+ \[s + t = 17 + 3 = 20\]The correct option is $\boxed{\textbf{(C) } 20}$.
+
+ Note: We can find the area of the trapezoid by integrating. We have the area is $\int_{0}^{2} \frac{1}{3}x + 1 \ dx = \frac{1}{6}x^2 + x \bigg|_{x=0}^{2} = \frac{8}{3}$. But this sort of destroys the purpose of this simple solution without calculus. With calculus, the solution below would be the most efficient.
+
+ 
+
+
+
+\textbf{Solution 2 (Calculus)}
+
+The intersection of the line $y = \frac{1}{3}x + 1$ and the square is the point $(2, \frac{5}{3})$. The total area of the trapezoid formed by the line and the square is thus $\frac{1}{2}(2)(\frac{5}{3} + 1) = \frac{8}{3}$. 
+
+ The left trapezoidal region's area is equivalent to the area under the line $y = \frac{1}{3}x + 1$ from $x = 0$ to $x = a$, which can be evaluated using a definite integral. Setting the integral equal to half of the trapezoidal area, we get:
+ \[\int_{0}^{a} \left(\frac{x}{3} + 1\right)\, dx = \frac{4}{3}\]
+ \[\frac{1}{6}a^2 + a = \frac{4}{3}\]
+ \[a^2 + 6a - 8 = 0\]
+
+ We now use the quadratic formula:
+ \[a = \frac{-6 \pm \sqrt{(-6)^2 - 4(1)(-8)}}{2} = \sqrt{17} - 3\]
+
+ Our answer is $17 + 3 = \boxed{\textbf{(C) } 20}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Cheese)}
+
+Firstly, we observe that $1 < a < 2$, because the area bounded by the line $y = \frac{1}{3}x+1$ and the $x$-axis from $(0,0)$ to $(1,0)$ is less than the area from $(1,0)$ to $(2,0)$. We also know $s+t$ must be equal to one of the integers from $18$ to $22$ from the answer choices. We can therefore try out possibilities for $a$ to see whether they satisfy these two conditions, and we indeed find that $a$ must be equal to $\sqrt{s}-3$ where $s \in \left\{17, 18, 19\right\}$, because if $s < 16$, then $t$ would have to be $2$ to ensure that $1 < a < 2$, but then $s+t = s+2$ would be less than $18$; similarly, if $s > 19$, then we would have $s+t \geq \sqrt{20}+3$, but this is greater than $22$. Moreover, if we assume that $s$ is in simplest form, this also rules out $s = 18$. We are accordingly left with either $a=\sqrt{17}-3$ or $a=\sqrt{19}-3$, and by simply substituting each of these for $a$ to see whether it works or not, we determine that $a$ must indeed be $\sqrt{17}-3$, so the answer is $s+t = 17+3 = \boxed{\textbf{(C) } 20}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Calculus and Quadratic, similar to Solution 2)}
+
+We consider the lower region defined by the set of points \( (x, y) \) inside the square with \( 0 \le x \le 2 \), \( 0 \le y \le 2 \) and lying below the line \( y = \frac{1}{3}x + 1 \). Instead of directly integrating, we parametrize this line in an unnecessarily complicated form: write \( x = 3(t - 1) \), so \( y = t \). This parametrization makes no geometric sense for area, so we abandon it immediately and return to Cartesian coordinates.
+
+ The area of the lower region is
+ \[A_{\text{lower}} = \int_0^2 \left(\frac{1}{3}x + 1\right) dx.\]Rather than compute this, we expand the integrand into a Taylor polynomial about \( x = 1 \) even though it is already linear. The Taylor expansion is
+ \[\frac{1}{3}x + 1 = \left(\frac{1}{3}(1) + 1\right) + \frac{1}{3}(x - 1) = \frac{4}{3} + \frac{1}{3}(x - 1).\]Integrating this form:
+ \[A_{\text{lower}} = \int_0^2 \left(\frac{4}{3} + \frac{1}{3}(x - 1)\right) dx.\]Compute each part separately even though it's pointless:
+ \[\int_0^2 \frac{4}{3} \, dx = \frac{8}{3}, \quad \int_0^2 \frac{1}{3}(x - 1) \, dx = \frac{1}{3}\left[\frac{1}{2}x^2 - x\right]_0^2 = \frac{1}{3}(2 - 2) = 0.\]Thus \( A_{\text{lower}} = \frac{8}{3} \), matching the normal computation.
+
+ Half of this is \(\frac{4}{3}\). So the vertical line \( x = a \) must satisfy
+ \[\int_0^a \left(\frac{1}{3}x + 1\right) dx = \frac{4}{3}.\]Now we sabotage this simple integral by performing a substitution. Let \( u = \frac{1}{3}x + 1 \), so \( x = 3(u - 1) \) and \( dx = 3 \, du \). When \( x = 0 \), \( u = 1 \). When \( x = a \), \( u = \frac{1}{3}a + 1 \). The integral becomes
+ \[\int_{u=1}^{u=\frac{1}{3}a + 1} u \cdot 3 \, du = 3 \int_1^{\frac{1}{3}a + 1} u \, du.\]Evaluate this:
+ \[3\left[\frac{1}{2}u^2\right]_1^{\frac{1}{3}a + 1} = \frac{3}{2}\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right).\]We set this equal to \(\frac{4}{3}\):
+ \[\frac{3}{2}\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right) = \frac{4}{3}.\]Multiply both sides by 2:
+ \[3\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right) = \frac{8}{3}.\]Multiply both sides by 3:
+ \[9\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right) = 8.\]Now expand:
+ \[\left(\frac{1}{3}a + 1\right)^2 = \frac{1}{9}a^2 + \frac{2}{3}a + 1.\]Substitute:
+ \[9\left(\frac{1}{9}a^2 + \frac{2}{3}a + 1 - 1\right) = 8.\]Cancel the ones:
+ \[9\left(\frac{1}{9}a^2 + \frac{2}{3}a\right) = 8.\]Distribute the 9:
+ \[a^2 + 6a = 8.\]We arrive—after that absurd detour—at the same quadratic as before.
+
+ Solve the quadratic using a deliberately bloated method. Complete the square:
+
+ Start with:
+ \[a^2 + 6a - 8 = 0.\]Move the constant:
+ \[a^2 + 6a = 8.\]Add 9 to both sides because \((6/2)^2 = 9\):
+ \[a^2 + 6a + 9 = 17.\]Left-hand side is \((a + 3)^2\):
+ \[(a + 3)^2 = 17.\]Take square roots:
+ \[a + 3 = \pm \sqrt{17}.\]Since $a \in [0,2]$, take the positive root:
+ \[a = \sqrt{17} - 3.\]This matches the form \( \sqrt{s} - t \) with \( s = 17, t = 3 \).Thus
+ \[s + t = \boxed{\textbf{(C) } 20}.\]
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Line $y = \frac{1}{3}x + 1$ intersects the square at $(0,1)$ and $(2,\frac{5}{3})$. Consider the region bounded by $(0,0), (0,1), (2,\frac{5}{3}), (2,0)$. By Shoelace Formula that is
+ \[\frac{1}{2} |(0 \cdot 1 + 0 \cdot \frac{5}{3} + 2 \cdot 0 + 2 \cdot 0) - (0 \cdot 0 + 1 \cdot 2 + \frac{10}{3} + 0 \cdot 0)| = \frac{1}{2} \cdot \frac{16}{3} = \frac{8}{3}\].Hence the area of the region is $\frac{8}{3}$. Now, add in $x =a$, and a new region bounded by $(0,0), (0,1), (a, \frac{a}{3} + 1), (a,0)$ exists that is half this area. By Shoelace Formula,
+ \[\frac{1}{2}|(0 \cdot 1 + 0 \cdot \frac{a}{3}+1 + a \cdot 0 + a \cdot 0) - (0 \cdot 0 + 1 \cdot a + (\frac{a^2}{3}+a)+0 \cdot 0)| = \frac{1}{2}|2a+\frac{a^2}{3}| = a + \frac{a^2}{6}\].So one can see that $a + \frac{a^2}{6} = \frac{4}{3}$, so $3a + \frac{a^2}{2} = 4$, or $6a + a^2 = 8$. In that case, $a^2 + 6a - 8 = 0$, so $a = \frac{-6 \pm \sqrt{68}}{2} = -3 \pm \sqrt{17}$. Notice $a$ lies in $(+,+)$ quadrant I, hence negate $-3-\sqrt{17}$ and thus $a = \sqrt{17} - 3 \implies \boxed{20}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Frances stands $15$ meters directly south of a locked gate in a fence that runs east-west. Immediately behind the fence is a box of chocolates, located $x$ meters east of the locked gate. An unlocked gate lies $9$ meters east of the box, and another unlocked gate lies $8$ meters west of the locked gate. Frances can reach the box by walking toward an unlocked gate, passing through it, and walking toward the box. It happens that the total distance Frances would travel is the same via either unlocked gate. What is the value of $x$?
+
+
+ $\textbf{(A)}~3\frac27 \qquad \textbf{(B)}~3\frac37 \qquad \textbf{(C)}~3\frac47 \qquad \textbf{(D)}~3\frac57 \qquad \textbf{(E)}~3\frac67$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let Frances's location be $F$, the locked gate be $L$, the box be $B$, the unlocked gate on the west be $U$, and the unlocked gate on the east be $V$.We are given that $FL = 15$, $LB = x$, $BV$ = 9, and $LU = 8$. Because $FL$ is vertical and the fence is horizontal, $m \angle FLU = m \angle FLV = 90^\circ$. 
+
+ If Frances takes the western path, she must first travel the length of $FV$, and then $x + 8$ meters. By the Pythagorean theorem, $FV = \sqrt{8^2 + 15^2} = 17$. The remaining distance from Francis and the box of chocolates after she walks that distance is $8 + x$ meters. Thus, the distance Francis travels if she takes the western path is $25 + x$.
+
+ If Frances takes the eastern path, she first travels $\sqrt{(x + 9)^2 + 15^2} = \sqrt{(x + 9)^2 + 225}$ meters, and then $9$ more meters. Her total distance on the eastern path is $\sqrt{(x + 9)^2 + 225} + 9$ meters.
+
+ Now, setting the two distances equal to each other yields:
+ \begin{align*}&\qquad\;\;\;\; x + 25 = \sqrt{(x + 9)^2 + 225} + 9 \\ &\iff x + 16 = \sqrt{(x + 9)^2 + 225} \\ &\iff x^2 + 32x + 256 = (x + 9)^2 + 225 \\ &\iff x^2 + 32x + 256 = x^2 + 18x + 81 + 225 \\ &\iff 14x = 50 \\ &\iff x = \frac{50}{14} = \frac{25}{7}.\end{align*}
+This means the answer is $x = \frac{25}{7} = \boxed{\textbf{(C)}\hspace{3pt}3\frac{4}{7}}$. 
+
+ 
+
+
+
+\textbf{Solution 2 (Simple Vectors)}
+
+Let
+ \[F = \begin{pmatrix} 0 \\ -15 \end{pmatrix}, \quad B = \begin{pmatrix} x \\ 0 \end{pmatrix}, \quad E = \begin{pmatrix} x+9 \\ 0 \end{pmatrix}, \quad W = \begin{pmatrix} -8 \\ 0 \end{pmatrix},\] where $x > 0$ since the box ($B$) lies to the east (i.e. in the positive horizontal direction) of the locked gate.The paths’ lengths are then
+ \[D_E = \|E - F\|_2 + \|B - E\|_2, \quad D_W = \|W - F\|_2 + \|B - W\|_2.\]Compute:
+ \[\|E - F\|_2 = \sqrt{(x+9)^2 + 15^2}, \quad \|B - E\|_2 = \sqrt{9^2} = 9, \quad \|W - F\|_2 = \sqrt{(-8)^2 + 15^2} = 17, \quad \|B - W\|_2 = |x+8| = x+8 \quad\text{(as } x > 0 \text{)}.\]Set \( D_E = D_W \):
+ \[\sqrt{(x+9)^2 + 225} + 9 = 17 + (x+8) \iff \sqrt{(x+9)^2 + 225} = x+16.\]Square both sides (noting that both sides are indeed non-negative, again as $x > 0$):
+ \begin{align*}&~~(x+9)^2 + 225 = (x+16)^2 \iff x^2 + 18x + 306 = x^2 + 32x + 256 \\ &\iff 14x = 50 \iff x = \frac{25}{7}.\end{align*}
+
+
+ Therefore, our answer is \( \frac{25}{7} \) or $\boxed{\textbf{(C)}\hspace{3pt}3\frac{4}{7}}$. 
+
+ \textbf{Helpful Diagram} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_7_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Emmy says to Max, "I ordered $36$ math club sweatshirts today." Max asks, "How much did each shirt cost?" Emmy responds, "I'll give you a hint. The total cost was $\$ \underline A~\underline B~\underline B.\underline B~\underline A$, where $A$ and $B$ are digits and $A \neq 0$." After a pause, Max says, "That was a good price." What is $A + B$?
+
+
+ $\textbf{(A)}~7 \qquad \textbf{(B)}~8 \qquad \textbf{(C)}~11 \qquad \textbf{(D)}~14 \qquad \textbf{(E)}~15$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The problem is essentially telling us that $\underline A~\underline B~\underline B.\underline B~\underline A$ is divisible by $36$, so it is divisible by $9$. Then, by the divisibility by $9$ condition,
+ \[A+B+B+B+A=2A+3B\equiv 0\pmod{9}\]This means that $A$ must be divisible by $3$, or otherwise $2A+3B$ would not be divisible by $3$ and thus $9$. Since $A\ne0$, we must have one of $A=3,6,9$.
+
+ But $A$ must be even or else the entire number would not be even and thus would not be divisible by $4$. Hence $A=6$. Then, $2\cdot 6+3B\equiv 0\pmod{9}$, so $4+B\equiv 0\pmod{3}$, and thus $B\equiv 2\pmod{3}$. This yields $B=2,5,8$, of which $B=5$ is the only number that allows $\underline A~\underline B~\underline B.\underline B~\underline A$ to be divisible by $4$. Thus the answer is $6+5=\boxed{\textbf{(C)}~11}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Trial and Error)}
+
+A number is divisible by $36$ if it divisible by $4$, and $9$. The divisibility rule for $4$ requires the last 2 digits to also be a multiple of $4$. The divisibility rule for 9 requires the sum of all digits to be divisible by $9$. Using the first condition $A+B$ is a multiple of 4. We can list out all possibilities for this, since both $A$ and $B$ are digits. The possibilities are  $(1,2),(1,6),...(9,6)$ for $A$, and $B$ respectively. There are a total of $2$ digits that are $A$'s and $3$ that are $B$'s. So if the digits sum to $9$, then $2A+3B$ is a multiple of 9. We can try plugging in numbers from our list earlier into the equation $2A+3B$ to find what values set the expression equal to a multiple of $9$. By trying numbers $A=6$, and $B=5$. So then $A+B$ yields 
+
+ $6+5=\boxed{\textbf{(C)}~11}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) How many ordered triples of integers $(x, y, z)$ satisfy the following system of inequalities?
+
+
+ 
+ \begin{align*} -x-y-z&\le -2\\ -x+y+z&\le 2\\ x-y+z&\le 2\\ x+y-z&\le 2 \end{align*}
+
+
+
+ $\textbf{(A)}\ 4 \qquad \textbf{(B)}\ 8 \qquad \textbf{(C)}\ 11 \qquad \textbf{(D)}\ 15 \qquad \textbf{(E)}\ 17 \qquad$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (constructive counting)}
+
+Simplifying the first inequality of the system, we have:
+ \[\begin{cases} x+y+z \geq 2, \\ -x+y+z \leq 2, \\ x-y+z \leq 2, \\ x+y-z \leq 2. \end{cases}\]Subtracting the second inequality from the first now gives
+ \[(x+y+z)-(-x+y+z) \geq 2-2 \iff 2x \geq 0 \iff x \geq 0,\] and so by symmetry in $x,y,z$ (i.e. similarly using the third and fourth inequalities), we also obtain $y,z \geq 0$. Therefore, without loss of generality, we can let
+ \[0 \leq x \leq y \leq z.\]up to permutation. Also from the second inequality, we have $y+z \leq 2+x$, so using $x \leq y$, we deduce that
+ \[y+z \leq 2+x \leq 2+y \iff z \leq 2.\]
+
+ 
+Hence $0 \leq x \leq y \leq z \leq 2$, and now we divide into the possible cases for $x$:
+
+ Case $1$: $x=0$.Then the first two inequalities become
+ \[y+z \geq 2, y+z \leq 2 \iff y+z=2,\]and because we have $x = 0 \leq y \leq z \leq 2$, we deduce that $(y,z)$ is either $(0,2)$ or $(1,1)$.
+
+ Case $2$: $x=1$. Then we have got
+ \[1+y+z \geq 2 \iff y+z \geq 1,\qquad -1+y+z \leq 2 \iff y+z \leq 3.\] As $x = 1 \leq y \leq z \leq 2$, we can have $(y,z) = (1,1)$ or $(1,2)$.
+
+ Case $3$: $x=2$. Then $x = 2 \leq y \leq z \leq 2$, so the only possible combination is already $(y,z) = (2,2)$. The other inequalities become
+ \[2+y+z \geq 2 \iff y+z \geq 0,\qquad -2+y+z \leq 2 \iff y+z \leq 4,\] which are also satisfied by $(y,z) = (2,2)$, meaning that $(x,y,z) = (2,2,2)$ is indeed a valid solution.
+
+ 
+Thus, up to permutation, the possible triples $(x,y,z)$ are $(0,0,2),\; (0,1,1),\; (1,1,1),\; (1,1,2),\; \text{and}\; (2,2,2)$.
+
+ For each of these, we accordingly count the number of possible permutations (which will correspond to solutions $(x,y,z)$ to the original system of inequalities): 
+ \[\frac{3!}{2!}+\frac{3!}{2!}+\frac{3!}{3!}+\frac{3!}{2!}+\frac{3!}{3!} = 3+3+1+3+1 = \boxed{\textbf{(C)}\ 11}.\]
+
+ 
+
+
+
+\textbf{Solution 2 (complementary counting)}
+
+From Solution 1, we know that
+ \[0 \leq x, y, z \leq 2,\]so since each variable has to be an integer, the number of possible ordered triples $(x, y, z)$ with no other restrictions is simply $3^3 = 27$. Therefore, to find the number of solutions of the given system of inequalities, we count the number of ordered triples that are \textit{not} solutions of the system and subtract these from the total of $27$.
+
+ 
+Simplifying the first inequality, we obtain
+ \[x+y+z \geq 2,\]which is false (under the conditions $0 \leq x,y,z \leq 2$ that we already have from above) only if $x+y+z$ is $0$ or $1$. In the former case, there is just $1$ possible ordered triple (namely $(x,y,z) = (0,0,0)$), while in the latter case, there are $3$ possibilities (corresponding to each of the variables being $1$ while the others are $0$). Hence there are $1+3 = 4$ possible triples that make this inequality false.
+
+ Similarly, $0 \leq x,y,z \leq 2$ gives 
+ \[-x+y+z \leq 0+2+2 = 4,\] and so the second inequality of the system would be false only if $-x+y+z$ is either $3$ or $4$. This implies 
+ \[y+z \geq 3+x \geq 3,\] giving two possible cases: 
+
+ Case $1$: $y = z = 2$.
+
+ In this case, to ensure that $-x+y+z$ is either $3$ or $4$, $x$ can be either $0$ or $1$, yielding $2$ possibilities. Similarly, since the last two inequalities of the system are symmetric to the second one, the triples where, more generally, two of the variables are both $2$ and the other one is $0$ or $1$ will all make at least one of the last three inequalities of the system false. Accordingly, we obtain a total of $2 \cdot 3 = 6$ such ordered triples, each of which is clearly distinct from the $4$ triples found above.
+
+ Case $2$: One of $y$ or $z$ is $1$, and the other is $2$.
+
+ In this case, we must have $-x+y+z = 3$, and thus $x = 0$. Using the symmetry of the last three inequalities of the system as in Case $1$, we similarly deduce that at least one of these inequalities will be false when the variables are $0,1,2$ in some order. This gives $3! = 6$ ordered triples, all of which are, once again, clearly distinct from both the $4$ triples and the $6$ triples found above.
+
+ 
+Hence, finally, the number of ordered triples $(x,y,z)$ that will satisfy the system is $27-4-6-6 = \boxed{\textbf{(C)}\ 11}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+All equations are homogeneous linearly and symmetric. Therefore, we can approach via bounding.
+
+ 
+ \[x+y+z \ge 2\]
+ \[-x+y+z \le 2\]
+ \[x-y+z \le 2\]
+ \[x+y-z \le 2\]
+
+ We need to bound each of the inequalities. Begin by bounding $z$ as $z \le 2$. Then, bound $x$ as $-x-y-z -x+y+z \le 0 \implies x \ge 0$. Finally, bound $y$ as $y \le 2$. By symmetry, one can find that $x,y,z \ge 0, \le 2$. We must have that $x+y+z \ge 2, \le 6$. Approach via minimalism.
+
+ If the minimum of the three integers is 0, WLOG say $x$, then we require $y+z \ge 2, \le 6$. That implies $y = 2, z = 0; y=1, z =1, z = 0, y=2$ from which 3 cases arise. Due to symmetry, the cases $(0,2), (2,0)$ are redundant, as I can let $z = 0$ and obtain a similar result. Therefore, we have 2 viable cases in which 3 permutations so 6 total scenarios.
+
+ If the minimum of the three is 1, WLOG say $x$, then we require $y+z \ge 1, \le 5$. That implies $y = 2, z = 1; y =1. z=1$, which gives 3 and 1 case respectively, from which 4 cases.
+
+ If the minimum of the three is 2, WLOG say $x$, then we require $y+z \ge 0, \le 4$ in which $y=2, z=2$ is the only solution, giving 1 case.
+
+ The result is $6+4+1 = \boxed{11}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Let $f(n)=n^3-5n^2+2n+8$ and $g(n)=n^3-6n^2+5n+12.$ What is the sum of all integers $n$ such that $\frac{f(n)}{g(n)}$ is an integer?
+
+
+ $\textbf{(A)}~2\qquad\textbf{(B)}~3\qquad\textbf{(C)}~4\qquad\textbf{(D)}~5\qquad\textbf{(E)}~6$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Observe that both $f(n)$ and $g(n)$ can be factored using the \href{https://artofproblemsolving.com/wiki/index.php?title=Rational\_root\_theorem}{rational root theorem}. By trying out a few values, we get that $n = -1$ is a root of $f(n)$. Then, we can use synthetic division (regular polynomial division works, too) to get the other roots of $f(n)$, which are $n = 4$ and $n = 2$. Now we factor $g(n)$. By inspection, $n = -1$ also works on $g(n)$, and so synthetic division and factoring the remaining quadratic gets us the roots $n = 3$ and $n = 4.$ We can now express $\frac{f(n)}{g(n)}$ as:
+ \[\frac{(n + 1)(n - 4)(n - 2)}{(n + 1)(n - 4)(n - 3)}.\] We can cancel the top and bottom to get:
+ \[\frac{n - 2}{n - 3}.\] 
+
+ Notice that the only values for which this expression is an integer are $n = 4$ and $n = 2$, because they both cause the denominator to have a magnitude of $1$. However, $n = 4$ is an extraneous solution as plugging it back into the original expression would make it evaluate to $\frac{0}{0}$. Our answer is then $\boxed{\textbf{(A) } 2}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We have $\frac{f(n)}{g(n)} = \frac{n^3-5n^2+2n+8}{n^3-6n^2+5n+12} = 1 + \frac{n^2-3n-4}{n^3-6n^2+5n+12}.$ We factor the numerator as $(n-4)(n+1)$. Using synthetic division on the numerator's roots to factor the denominator, we find that the denominator is equivalent to $(n+1)(n-3)(n-4)$.
+
+ Simplifying, we get $\frac{f(n)}{g(n)} = 1 + \frac{1}{n-3}$. However, we \textit{must not} include the values $n=-1, 3,$ or $4$, or the original fraction will be undefined.
+
+ To have $\frac{1}{n-3}$ be an integer, we require $n-3 = 1$ or $-1$. This would give $n = 2$ or $4$, but as in Solution 1, since $n = 4$ must not be included, we deduce that there is only $1$ possible value of $n$, namely $n = 2$. Hence the answer is $\boxed{\textbf{(A) } 2}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We have to plug in different values into $\frac{f(n)}{g(n)} = \frac{n^3-5n^2+2n+8}{n^3-6n^2+5n+12} = 1 + \frac{n^2-3n-4}{n^3-6n^2+5n+12}.$ Because of the answer choices, we only really need to test $n=1$, $n=2$, $n=3$, $n=4$, and $n=5$. Plugging in each of these values leads to $n=\boxed{\textbf{(A) } 2}$ as our answer, since $n = 2$ is the only value that leads to an integer. Note that plugging in $n = 4$ yields $0/0$, which is undefined.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) On Monday, $6$ students went to the tutoring center at the same time, and each one was randomly assigned to one of the $6$ tutors on duty. On Tuesday, the same $6$ students showed up, the same $6$ tutors were on duty, and the students were again randomly assigned to the tutors. What is the probability that exactly $2$ students met with the same tutor both Monday and Tuesday?
+
+
+ $\textbf{(A) } \frac{1}{16} \qquad\textbf{(B) } \frac{3}{16} \qquad\textbf{(C) }\frac{1}{4}\qquad\textbf{(D) } \frac{3}{8} \qquad\textbf{(E) } \frac{1}{2}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+On Monday, the first tutor has 6 choices for kids to be assigned to, the second has 5, and so on. Hence, there are $6!$ possible ways to assign the tutors to the kids. On Tuesday, there are $\binom{6}{2}$ ways to choose the kid-tutor pairs that remain the same from Monday. For the other 4 kids, they need to be assigned to the other tutors in such a way that none of those kids are assigned to the same tutor that they were assigned to on Monday. There are $9$ ways to do this. Thus, our final answer is $\frac{\binom{6}{2} \cdot 9}{6!}$ or $\boxed{\textbf{(B) }\frac{3}{16}}$. 
+
+ Remark: We can get $9$ either by listing all the possible configurations or by rounding $\frac{4!}{e}$. This is called a derangement and is notated as $!n$. It can be calculated with the explicit formula $!n = n!\sum _{i=0}^{n}\frac{(-1)^{i}}{i!}$
+
+ More commonly, one could also use PIE, 24 - 24 + 12 - 4 + 1 = 9 ways
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Label students \( S_1, \ldots, S_6 \) and tutors \( T_1, \ldots, T_6 \). Let the Monday assignment be fixed. For Tuesday, we consider permutations of the 6 students. We want exactly 2 fixed points in this permutation (i.e., exactly 2 students meet the same tutor again).
+
+ Number of permutations of 6 elements with exactly \( k \) fixed points is
+ \[\binom{6}{k} D_{6-k}\]where \( D_n \) is the number of derangements of \( n \) elements \( \left( n! \sum_{i=0}^n \frac{(-1)^i}{i!} \right) \).
+
+ For \( k=2 \):
+ \[\text{\# favorable permutations} = \binom{6}{2} D_4.\]Compute \( D_4 \) via the standard formula:
+ \[D_4 = 4! \left( 1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!} \right) = 24 \left( 1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} \right) = 24 \left( \frac{12 - 4 + 1}{24} \right) = 9.\]Thus favorable permutations = \( \binom{6}{2} \cdot 9 = 15 \cdot 9 = 135 \).
+
+ Total permutations for Tuesday = \( 6! = 720 \).
+
+ Therefore, the probability:
+ \[P = \frac{135}{720} = \frac{27}{144} = \frac{3}{16}.\]
+
+ Answer:\( \boxed{\textbf{(B) }\frac{3}{16}} \).
+
+ 
+
+
+
+\textbf{Solution 3 (Solution 1 + Remark)}
+
+We do not care about what order the students are distributed on Monday. We do care about Monday's order on Tuesday. There are \( \binom{6}{2} = 15 \) ways to choose two of the six tutors to have the same student. Now, we must deal with the remaining 4.
+
+ Label each of those 4 students A, B, C, or D. Then, label each of the tutors 1, 2, 3, 4. We know there are 24 possible arrangements from student to tutor. The pigeonhole principle states that no more than 4 of the remaining students can be paired with the same tutor. Thus, either 1, 2, 3, or 4 of the remaining students have the same tutor. If we have 1 student, there is \( \binom{4}{1} = 4 \) ways to choose that 1 student, and then the remaining students can be organized in \( 3! \) ways. However, this overcounts the cases in which we have 2 students, which there is \( \binom{4}{2} = 6 \) ways to choose those 2 students, and the remainder of the students is arranged in \( 2! \) ways. This then undercounts 3, which can be done in \( \binom{4}{3} = 4 \) ways, and then overcounts 4, which can be done in \( \binom{4}{4} = 1 \) way. Thus, through the principle of inclusion-exclusion, we have a total of \( 24-24+12-4+1 = 9 \) total cases in which none of the students are with their assigned teachers. Thus, the answer is $\binom{6}{2} \cdot \frac{9}{6!} = \boxed{\textbf{(B) }\frac{3}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (No Derangement Pure Combo)}
+
+First we have to choose which two students will stay, so we have \( \binom{6}{2} = 15 \) ways to do so. Next, we want to rearrange $ABCD$ such that the letters are not in their original positions. Let's start with $A$. It has to go in the position of $B, C$ or $D$, so there are $3$ ways to do so. Next, take the letter that $A$ took the spot of, let's say $D$ (right now it's $A$ at position $D$.) All 3 other positions are valid since $A$ already took $D$. Now, notice that no matter what $D$ took, there is only one way for $B$ and $C$ to be placed since there are 2 options and one of them's original position is one of the spots. Therefore, there are 9 total ways to "derange" the set and the rest of the solution follows from the others, giving an answer of $\boxed{\textbf{(B) }\frac{3}{16}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) The figure below shows an equilateral triangle, a rhombus with a $60^\circ$ angle, and a regular hexagon, each of them containing some mutually tangent congruent disks. Let $T, R,$ and $H,$ respectively, denote the ratio in each case of the total area of the disks to the area of the enclosing polygon. Which of the following is true?
+
+
+ $\textbf{(A)}\ T=H=R \qquad \textbf{(B)}\ H<R=T \qquad \textbf{(C)}\ H=R<T\qquad \textbf{(D)}\ H<R<T \qquad \textbf{(E)}\ H<T<R \qquad$
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2025_12_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_12_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ To solve this problem, we can cut each shape into equilateral triangles. We let figure $T$ remain as-is, and partition rhombus $R$ into two equilateral triangles (as a result of one of the angles equaling $60^\circ$), with one circle in each that is the incircle of its triangle. We perform the same procedure for hexagon $H$, dividing it into six equilateral triangles with one circle in each such that each circle is the incircle of the triangle enclosing it.
+
+ It now follows that $H = R$, since the proportion of the shaded circles to the unshaded portions in the rhombus and the hexagon is the same. Both are equal to an equilateral triangle with a circle inscribed in it; therefore, they have an equal ratio. We can use this to estimate that the ratio of the circle to the triangle is the largest for the first figure, as we can easily see this through intuition and observation.
+
+ Additionally, there is no answer choice for $T < H = R$, and it is obviously not $H = R = T$. Thus, the answer to the question is as follows:$\boxed{\textbf{(C)}\ H = R < T.}$
+
+ -shockfront99 (SqueakyHamster2 only included the preamble, which creates an insufficient synopsis of the U.S. constitution Thus, it would be unjust not to include full constitution, and all $27$ amendments so people are not left ignorant and uninformed.)
+
+ Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+
+ Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.
+
+ But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.)
+
+ What a perfect solution\ldots
+
+ It's not just A perfect solution... it is the sigma way lowk frfr no KAP
+
+ 
+
+
+
+\textbf{Solution 2 (somewhat cheese)}
+
+Notice that there is only one answer choice that contains $H = R$ where they are all not equal. This means if we prove that $H = R$ and one of these two is not equal to T, we have the answer $C$. To do this, notice that the rhombus can be divided into two congruent equilateral triangles with inscribed circles. This is the same as the hexagon but with 6 triangles and 6 inscribed circles, proving that $H = R$. We cannot do the same for the triangle, so the answer is $\boxed{\textbf{(C) }H=R < T}.$
+
+ Note that this solution is similar to the previous one
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) The altitude to the hypotenuse of a $30{-}60{-}90^\circ$ right triangle is divided into two segments of lengths $x < y$ by the median to the shortest side of the triangle. What is the ratio $\frac{x}{x+y}$?
+
+
+ $\textbf{(A)}~\frac 37 \qquad \textbf{(B)}~\frac{\sqrt3}{4} \qquad \textbf{(C)}~\frac 49 \qquad \textbf{(D)}~\frac{5}{11} \qquad \textbf{(E)}~\frac{4\sqrt3}{15}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1 (Mass Points)}
+
+Without loss of generality, let $\triangle ABC$ have side-lengths $AB=2, BC=2\sqrt{3},$ and $AC=4.$ Let $D$ be the foot of the perpendicular from $B$ to $\overline{AC}, \ E$ be the midpoint of $\overline{AB},$ and $F$ be the intersection of $\overline{CE}$ and $\overline{BD}.$ Note that $\triangle ADB$ and $\triangle BDC$ are both $30^\circ{-}60^\circ{-}90^\circ$ triangles. From the side-length ratio, we get $AD=1$ and $DC=3.$
+
+ We obtain the following diagram:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_13_Solution_Figure_1.png}
+                    \end{figure}
+                    From here, we will proceed with \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{mass points}. Throughout this solution, we will use $W_P$ to denote the weight of point $P.$
+
+ Let $W_C=1.$ Since $3AD=DC,$ it follows that $W_A=3$ and $W_D=W_C+W_A=4.$ Since $AE=EB$ and $W_A=3,$ it follows that $W_B=3.$
+
+ Now we focus on $\overline{BD}:$ Since $W_B=3$ and $W_D=4,$ we have $\frac{DF}{FB}=\frac xy=\frac34.$ Therefore, the answer is 
+ \[\frac{x}{x+y}=\frac{3}{3+4}=\boxed{\textbf{(A) } \dfrac{3}{7}}.\] 
+
+ 
+
+
+
+\textbf{Solution 2 (Similar Triangles)}
+
+This solution refers to the diagram in Solution 1, with the definitions slightly modified.
+
+ Let $AB=2$. Label the foot of the median $M$ and the foot of the altitude $H$. In $\triangle ABH$, we construct the midsegment $\overline{MP}$, which is parallel to $\overline{BH}$ and half as long as $\overline{BH}$. In addition, let $F$ be the intersection of $\overline{CM}$ and $\overline{BH}$.
+
+ We obtain the following diagram:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_13_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ We can calculate that $PH=\frac{1}{2}$ and $HC=3$ By similar triangles $\triangle HFC \sim \triangle PMC$, we have $\frac{x}{PM}=\frac{HC}{PC}=\frac{3}{3+\frac{1}{2}}=\frac{6}{7}$. Also by similar triangles $\triangle PMA \sim \triangle HBA$, we have $\frac{PM}{x+y}=\frac{1}{2}$. Combining these, we get $\frac{x}{x+y}=\boxed{\textbf{(A) } \dfrac{3}{7}}$.
+
+ Note: Thanks MRENTHUSIASM for original diagram.
+
+ 
+
+
+
+\textbf{Solution 3 (Similar Triangles)}
+
+This solution refers to the definitions and the diagram in Solution 1.
+
+ Let $M$ be the midpoint of $\overline{AC},$ so $DM=1.$ Let $G$ be the intersection of $\overline{BM}$ and $\overline{CE},$ so $G$ is the centroid of $\triangle ABC.$ In addition, we construct $\overline{DE},$ as shown below:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_13_Solution_Figure_3.png}
+                    \end{figure}
+                    In any right triangle, since the median to the hypotenuse is half as long as the hypotenuse, we get $BM=\frac{1}{2}AC=2.$ Moreover, in any triangle, since the centroid divides each median into parts in the ratio $2:1,$ with the centroid being twice as close to the midpoint of a side as it is to the opposite vertex, we get $BG=\frac43$ and $GM=\frac23.$
+
+ Note that $\triangle ABM$ is an equilateral triangle with side-length $2.$ By the SAS similarity, we have $\triangle ABM \sim \triangle AED.$ Therefore, we conclude that $ED=1$ and $\overline{ED}\parallel\overline{BM}.$
+
+ By the AA Similarity, we have $\triangle DEF \sim \triangle BGF,$ from which $\frac xy = \frac{1}{4/3} = \frac34.$ It follows that 
+ \[\frac{x}{x+y}=\frac{3}{3+4}=\boxed{\textbf{(A) } \dfrac{3}{7}}.\]~MRENTHUSIASM
+
+ 
+
+
+
+\textbf{Solution 4 (Similar Triangles)}
+
+This solution refers to the definitions and the diagram in Solution 1.
+
+ Since $E$ is the midpoint of $\overline{AB}$, we have $AE=1$, and because $\angle A=60^\circ$ and $AD=1$, $\triangle AED$ is equilateral. Its perpendicular bisector meets $\overline{AE}$ at $H$, giving $AH=HE=\frac12$ and $DH=\frac{\sqrt3}{2}$.
+
+ Extend $\overline{CE}$ past $E$ to $G$ so that $\overline{GD}$ is parallel to $\overline{BC}$ and is the perpendicular bisector of $\overline{AE}$, so $H$ lies on both $\overline{GD}$ and $\overline{AE}$:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_13_Solution_Figure_4.png}
+                    \end{figure}
+                    
+
+ By AA similarity, $\triangle BCE \sim \triangle HGE$ because $\angle BEC=\angle HEG$ and $\angle BCE=\angle HGE$ ($GD\parallel BC$). Thus $\frac{GH}{BC}=\frac{HE}{BE}$, and with $HE=\frac{1}{2}$, $BE=1$, and $BC=2\sqrt3$, we get $\frac{GH}{2\sqrt3}=\frac{\frac{1}{2}}{1}$ so $GH=\sqrt3$.
+
+ Also by AA similarity, $\triangle BCF \sim \triangle DGF$ because $\angle BFC=\angle DFG$ and $\angle BCF=\angle DGF$ ($GD\parallel BC$). Therefore $\frac{DF}{BF}=\frac{DG}{BC}$. Since $DG=DH+HG=\frac{\sqrt3}{2}+\sqrt3=\frac{3\sqrt3}{2}$ and $BC=2\sqrt3$, we obtain $\frac{DF}{BF}=\frac{x}{y}=\frac{\frac{3\sqrt3}{2}}{2\sqrt3}=\frac{3}{4}$, so $y=\frac43x$.
+
+ Finally, $\frac{x}{x+y}=\frac{x}{x+\frac{4}{3}x}=\frac{x}{\frac{7}{3}x}=\boxed{\textbf{(A) } \dfrac{3}{7}}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Similar Triangles)}
+
+This solution refers to the definitions in Solution 1. 
+
+ Draw a line perpendicular to $BC$ from $D$, intersecting $BC$ at $G$, and intersecting $CE$ at $H$. Let $a = AE$. We know that $\triangle DHF \sim \triangle BEF$ by AA. We also know that $AE = EB = DA$. We find that $BG = \frac{a\sqrt{3}}{2}$, and $GC = BC - BG = 2a\sqrt{3} - \frac{a\sqrt{3}}{2} = \frac{3a\sqrt{3}}{2}$. Because $\triangle CHG \sim \triangle CEB$, $HG = \frac{a}{2a\sqrt{3}} \cdot \frac{3a\sqrt{3}}{2} = \frac{3}{4}a$, and $DG = \frac{3}{2}a$ due to 30-60-90 triangle properties, $DH = \frac{3}{4}a$. Because $\triangle DHF \sim \triangle BEF$, $\frac{DH}{EB} = \frac{DF}{FB}$, $\frac{\frac{3a}{4}}{a} = \frac{3}{4} = \frac{DF}{FB}$, and $\frac{DF}{DB}=\boxed{\textbf{(A) } \dfrac{3}{7}}$.
+
+ (You can tell $DF$ is shorter than $FB$ visually)
+
+ 
+
+
+
+\textbf{Solution 6 (Coordinates)}
+
+WLOG, let the triangle have hypotenuse $12$. Situate it in the coordinate plane such the A is at $(0,0)$, B is at $(6,0)$, and C is at $(6,6\sqrt{3})$. 
+
+ Let $h$ be the altitude from $A$ to $BC$.From the area formula we get  $1/2 \cdot 6\cdot6\sqrt{3} =1/2\cdot12\cdot h$
+
+ $h = 3\sqrt{3}$
+
+ The shortest side is $AB$ with side length $6$, so the median from $C$ to $AB$ will be at $(3,0)$.Finding the equation of the line through that point to C, find that the slope is $\frac{6\sqrt{3}-0}{6-3}=2\sqrt3$. Plugging the point $(3,0)$ into $y=2\sqrt{3}x+b$, we get that $0=6\sqrt{3}+b$, which simplifies to $b=-6\sqrt{3}$So, the equation of the line of the median from $C$ is $y=2\sqrt{3}x-6\sqrt3$
+
+ The line of the altitude from $B$ to the hypotenuse is perpendicular to the line of the hypotenuse which has slope $6\sqrt{3}/6=\sqrt{3}$
+
+ So, the altitude line has slope $\frac{-1}{\sqrt{3}}=-\frac{\sqrt{3}}{3}$, and the line passes through the point $B = (6,0)$Solving for the equation using similar methods above, we get $y=-\frac{\sqrt{3}}{3}x+2\sqrt{3}$
+
+ Using the two equations and solving for their intersection, we get $y=2\sqrt{3}x-6\sqrt3=-\frac{\sqrt{3}}{3}x+2\sqrt{3}$, which simplifies to $8\sqrt3=\frac{7\sqrt{3}}{3}x$, so $x=24/7$Using this $x$ value, we get $y=2\sqrt{3}\cdot24/7-6\sqrt{3}=6\sqrt{3}/7$
+
+ Finding the distance from this intersection to B, $d=\sqrt{(6-24/7)^2+(0-6\sqrt{3}/7)^2} = \sqrt{324/49+108/49}=\frac{12\sqrt{3}}{7}$
+
+ This is greater than half of the calculated altitude value from above ($3\sqrt{3}$), so the shorter side length is $3\sqrt{3}-\frac{12\sqrt{3}}{7}=\frac{9\sqrt{3}}{7}$
+
+ Lastly, taking the ratio of the lengths,$\frac{\frac{9\sqrt{3}}{7}}{3\sqrt{3}}=\frac{9}{21}=\boxed{\textbf{(A) } \dfrac{3}{7}}$
+
+ -Failure.net (minor edits and latex edits by Wen\_Liang)
+
+ 
+
+
+
+\textbf{Solution 7 (Symmedian and Bary)}
+
+Notice that the smaller right triangle with the original $30^\circ$ angle can be obtained with a dilation and a reflection over the original triangle’s angle bisector. Hence it is not too hard to see that the original median is a symmedian to this smaller triangle. Recall that the barycentric equation for the symmedian is in the form $\frac x{a^2}=\frac y{b^2}$, and we have $a,b=\sqrt3,2$ in a $30^\circ-60^\circ-90^\circ$ triangle. Hence $x:y=4:3$ and we get the ratio $\textbf{(A) } \dfrac{3}{7}$, or A relatively quickly.
+
+ 
+
+
+
+\textbf{Solution 8 (Trigonometry Bash)}
+
+Let the triangle be called $\triangle ABC$, with $\angle C=90^{\circ}$ and $\angle A=30^{\circ}$. Then let the altitude from $C$ intersect with $AB$ at a point $D$, and the median from $A$ intersect $BC$ at the point $E$. WLOG, let $AB=2$, $AC=\sqrt{3}$, and $BC=1$. Then $BE=EC=\frac12$, and by similar triangles, $DBC$ is also $30^{\circ}{-}60^{\circ}{-}90^{\circ}$, and so $DB=\frac12$ and hence $AD=\frac32$. Therefore, $DC=\sqrt{3}\cdot\frac12=\frac{\sqrt{3}}2$. Also, we have that $\tan(\angle EAC)=\frac1{2\sqrt{3}}\implies\angle EAC=\arctan\left(\frac1{2\sqrt{3}}\right)$. Hence, $\angle BAE=30^{\circ}-\arctan\left(\frac1{2\sqrt{3}}\right)$. Now we can set up to solve for $x$; we have that $\tan(\angle BAE)=\frac{x}{\frac32}$. $\tan(\angle BAE)=\frac{\frac1{\sqrt{3}}-\frac1{2\sqrt{3}}}{1+\frac1{\sqrt{3}}\cdot\frac1{2\sqrt{3}}}=\frac{\frac1{2\sqrt{3}}}{\frac76}=\frac1{2\sqrt{3}}\cdot\frac67=\frac{\sqrt{3}}7$. Hence $x=\frac32\cdot\frac{\sqrt{3}}7=\frac{3\sqrt{3}}{14}$, and therefore since we found earlier that $x+y=DC=\frac{\sqrt{3}}2$, we have that $\frac{x}{x+y}=\frac{\frac{3\sqrt{3}}{14}}{\frac{\sqrt{3}}2}=\boxed{\textbf{(A) } \dfrac{3}{7}}$.
+
+ 
+
+
+
+\textbf{Solution 9 (Easier to Understand, Using Similar 30-60-90 Triangles)}
+
+Let the triangle be $\triangle ABC$, where $\angle A=30^\circ$, $\angle B=60^\circ$, and $\angle C=90^\circ$. Let the point where the altitude of $AB$ and $AB$ intersect be $G$. Let the intersection between the median of $CB$ and the altitude of $AB$ be $E$. $x=EG$ and $y=CE$.
+
+ Draw a segment, $DF$, so that it is perpendicular to $AC$ and passes through $E$. This creates two small $30^\circ{-}60^\circ{-}90^\circ$ triangles, $\triangle ECD$ and $\triangle EFG$. Using the Side-Splitter Thm., we know that $DE=EF$. WLOG, let $DE=EF=2$. Using the rules of $30^\circ{-}60^\circ{-}90^\circ$ triangles, we can find that $x=EG=\frac{2}{2}\cdot\sqrt{3}=\sqrt{3}$ and that $y=CE=\frac{2}{\sqrt{3}}\cdot2=\frac{4}{\sqrt{3}}=\frac{4\sqrt{3}}{3}$. Therefore, 
+ \[\frac{x}{x+y}=\frac{\sqrt{3}}{\sqrt{3}+\frac{4\sqrt{3}}{3}}=\frac{\sqrt{3}}{\frac{3\sqrt{3}}{3}+\frac{4\sqrt{3}}{3}}=\frac{\sqrt{3}}{\frac{7\sqrt{3}}{3}}=\sqrt{3}\cdot\frac{3}{7\sqrt{3}}=\frac{3\sqrt{3}}{7\sqrt{3}}=\boxed{\textbf{(A) } \dfrac{3}{7}}.\]
+
+ 
+
+
+
+\textbf{Solution 10 (Ruler)}
+
+Since rulers are allowed on the AMC 10, we can draw out the figure accurately with a ruler. Draw a $30-60-90$ triangle at any scale that you want (I used $1$ inch, $\sqrt{3}$ inches, and $2$ inches for my sides), then draw the altitude to the hypotenuse and the median to the shortest side on the triangle. Find the ratio of the short part of the altitude divided by the median and the total length of the altitude. Assuming that you drew accurately, the answer is then $\boxed{\textbf{(A) } \dfrac{3}{7}}$.
+
+ 
+
+
+
+\textbf{Solution 11 (Law of Cosines Bash)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_13_Solution_Figure_5.png}
+                    \end{figure}
+                    WLOG $\overline{AB} = 2$ as the problem statement concerns only lengths ratios.Draw $\overline{EM}$ connecting the median of $\triangle ABE$ to right angle $\angle E$, we know that by inscribing right $\triangle ABE$ in a circle and by Thales theorem, $\overline{ME} = \overline{MA} = \overline{MB}$ the circumradius.$\overline{MB} = \overline{ME} \iff \triangle BEM \text{ is isosceles}$, and because $\angle B = 60^\circ$, then $\angle E = 60^\circ$, making $\triangle BEM$ equilateral. 
+
+ Let $\overline{AD} = x$ and $\overline{DE} = y$. By $30^\circ - 60^\circ - 90^\circ$ special right triangle
+ \[\sqrt{3} = \overline{AE} = x + y\]
+ \[\overline{AM} = \sqrt{(2\sqrt{3})^2 + 1^2} = \sqrt{13}\]
+ \[\overline{CD} = \sqrt{y^2 + 3^2} = \sqrt{y^2 + 9} = \sqrt{x^2 - 2\sqrt{3}x + 12}\]
+ \[\overline{DM} = \sqrt{x^2 + 1^2 - 2 \cdot 1 \cdot x \cdot \cos{30^\circ} } = \sqrt{x^2 - \sqrt{3}x + 1}\]
+ \[\overline{CD} + \overline{DM} = \overline{AM}\]
+ \[\sqrt{x^2 - 2\sqrt{3}x + 12} + \sqrt{x^2 - \sqrt{3}x + 1} = \sqrt{13}\]Algebra:\begin{align*}\sqrt{x^2 - 2\sqrt{3}x + 12} &= \sqrt{13} - \sqrt{x^2 - \sqrt{3}x + 1}\\x^2 - 2\sqrt{3}x + 12 &= x^2 - \sqrt{3}x + 1 + 13 - 2\sqrt{13(x^2 - \sqrt{3}x + 1)}\\-\sqrt{3}x - 2 &= -2\sqrt{13(x^2 - \sqrt{3}x + 1)}\\3x^2 + 4\sqrt{3}x + 4 &= 4\cdot13(x^2 - \sqrt{3}x + 1)\\49x^2 - 56\sqrt{3}x + 48 &= 0\\(7x-4\sqrt{3})^2 &= 0\end{align*}
+$x = \frac{4\sqrt{3}}{7}$$y = \frac{3\sqrt{3}}{7}$$x$ is defined to be minimum of those lengths, so $x = \frac{3\sqrt{3}}{7}$.Hence $\frac{x}{x+y} = \boxed{\textbf{(A) } \dfrac{3}{7}}$.
+
+ 
+
+
+
+\textbf{Solution 12 (Vectors and Projections)}
+
+Let the triangle have vertices \( A \) (opposite hypotenuse), \( B \), \( C \). Let the shortest side be \( AB \), so the median is from \( C \) to midpoint \( M \) of \( AB \). Let \( h \) be the altitude from \( C \) to hypotenuse \( BC \). Represent everything vectorially:
+
+ \( \vec{A}, \vec{B}, \vec{C} \in \mathbb{R}^2 \). Let the hypotenuse vector be \( \vec{u} = \vec{B} - \vec{C} \). The altitude from \( C \) is along \( \vec{v} \) perpendicular to \( \vec{u} \). The median vector is \( \vec{w} = \vec{M} - \vec{C} \).
+
+ We want the intersection point \( P \) along the altitude such that \( \vec{P} = \vec{C} + t \vec{v} \) lies on the median: \( \vec{P} = \vec{C} + s \vec{w} \). But vectors \( \vec{v} \) and \( \vec{w} \) are not parallel. Solve for scalar \( t \) using projection formula:
+
+ 
+ \[t = \frac{\vec{w} \cdot \vec{v}}{|\vec{v}|^2}.\]
+
+ Take \( x = |\vec{C}P| = t |\vec{v}| \) and \( x + y = |\vec{v}| \). So
+
+ 
+ \[\frac{x}{x+y} = \frac{t |\vec{v}|}{|\vec{v}|} = t = \frac{\vec{w} \cdot \vec{v}}{|\vec{v}|^2}.\]
+
+ Now we just need vectors \( \vec{v} \) and \( \vec{w} \). Let the triangle be standard 30‑60‑90: shortest side along \( \vec{AB} = \hat{i} \), height along \( \hat{j} \). Then \( \vec{v} \) is perpendicular to hypotenuse \( \vec{u} = \vec{B} - \vec{C} \), say \( \vec{u} = (1, -\sqrt{3}) \), so \( \vec{v} = (\sqrt{3}, 1) \) (perpendicular). Median: \( \vec{w} = \vec{M} - \vec{C} = (1/2, 0) - (0, \sqrt{3}) = (1/2, -\sqrt{3}) \).
+
+ Compute the projection:
+
+ 
+ \[t = \frac{\vec{w} \cdot \vec{v}}{|\vec{v}|^2} = \frac{(1/2)(\sqrt{3}) + (-\sqrt{3})(1)}{(\sqrt{3})^2 + 1^2} = \frac{\frac{\sqrt{3}}{2} - \sqrt{3}}{4} = \frac{-\frac{\sqrt{3}}{2}}{4} = -\frac{\sqrt{3}}{8}.\]
+
+ Take absolute value (distance along altitude) \( x = |t| |\vec{v}| = (\frac{\sqrt{3}}{8}) \cdot 2 = \frac{\sqrt{3}}{4} \) (after proper scaling).
+
+ Thus the ratio
+
+ 
+ \[\frac{x}{x+y} = \frac{{3}}{7}.\]
+
+ Answer:
+
+ 
+ \[\boxed{\textbf{(A) } \dfrac{3}{7}}.\]
+
+ 
+
+
+
+\textbf{Solution 13 (Straightforward Coordinate Geometry)}
+
+Let the triangle have vertices $A$, $B$, and $C$ on the $60$,$90$,and $30$ angles, respectively. Let $E$ be the intersection of the median from $C$ and $AB$, let $F$ be the intersection of the altitude from $B$ to $AC$, and let $P$ be the intersection of $CE$ and $BF$. WLOG let $A$ be $(0,2)$, $B$ be $(0,0)$, and $C$ be $(2\sqrt{3},0)$. In order to find the ratio of $PF$ to $BF$, we need to find the coordinates of $F$ and $P$. First, slope of $AC$ is $\frac{-1}{\sqrt{3}}$, so the slope of $BF$ is $\sqrt{3}$. So, the equation for $AC$ is $y = \frac{-1}{\sqrt{3}}x+2$ and for $BF y = \sqrt{3}x$. Finally, $E$ is the midpoint of $AB$, $E$ is at $(0,1)$, the slope of $CE$ is $\frac{-1}{2\sqrt{3}}$, and the equation for $CE$ is $y = \frac{-1}{2\sqrt{3}}x+1$. Setting the equations for $AC$ and $BF$ equal, we find the intersection is $F$ at $(\frac{\sqrt{3}}{2},\frac{3}{2})$. Setting the equations for $CE$ and $BF$ equal, we find the intersection is $P$ at $(\frac{2\sqrt{3}}{7}, \frac{6}{7})$. Because $BF$ goes through the origin, we can find $\frac{BP}{BF}$ by dividing the $y$-coordinates of $P$ and $F$, getting $\frac{4}{7}$. Thus, $\frac{PF}{BF} = 1-\frac{BP}{BF} = 1-\frac{4}{7} = \boxed{\textbf{(A) } \dfrac{3}{7}}$. 
+
+ 
+
+
+
+\textbf{Solution 14 (Menelaus)}
+
+Let $AC=2$, $AB=1$, hence $BC=\sqrt{3}$. If we use the diagram in Solution 1, first note that $\triangle ACB \sim \triangle ABD$ by AA with similar ratio 2, hence $AD=\frac{1}{2}$. Now, we use Menelaus' Theorem in $\triangle BAD$ with transversal line $EFC$:
+ \[\frac{BE}{EA}\cdot \frac{AC}{CD} \cdot \frac{DF}{FB}=1\]
+ \[\implies \frac{1}{1} \cdot \frac{2}{\frac{3}{2}} \cdot \frac{x}{y}=1\]
+ \[\implies \frac{x}{y}=\frac{3}{4}\]So $\frac{x}{x+y}=\boxed{\frac{3}{7} (A)}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Nine athletes, no two of whom are the same height, try out for the basketball team. One at a time, they draw a wristband at random, without replacement, from a bag containing $3$ blue bands, $3$ red bands, and $3$ green bands. They are divided into a blue group, a red group, and a green group. The tallest member of each group is named the group captain. What is the probability that the group captains are the three tallest athletes?
+
+
+ $\textbf{(A) } \frac29 \qquad \textbf{(B) } \frac 27 \qquad \textbf{(C) } \frac9{28}\qquad \textbf{(D) } \frac13 \qquad \textbf{(E) } \frac38$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+We will arrange the nine athletes in a line, with the first three being in the blue group, the next three being in the red group, and the last three being in the green group. Suppose the three tallest athletes are named $A, B, C$, in some order. 
+
+ We have $3!$ ways to choose which group each of these athletes can be in. We then have $3 \cdot 3 \cdot 3$ ways to determine which of the three positions in that group they can take. From here, we must distribute the remaining six athletes in the remaining six spaces, which can be done in $6!$ ways.
+
+ There are therefore $6 \cdot 27 \cdot 6!$ favorable outcomes. There are also $9!$ total ways to arrange the athletes with no restrictions. Our answer is $\frac{6 \cdot 27 \cdot 6!}{9!} = \frac{6 \cdot 27}{9 \cdot 8 \cdot 7} = \boxed{\textbf{(C) }\frac{9}{28}}.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let the three tallest athletes be $A_1$ (tallest), $A_2$ (second-tallest), and $A_3$ (third-tallest).
+
+ The condition "the captains are $A_1, A_2, \text{and } A_3$" is equivalent to the condition "$A_1, A_2, \text{and } A_3$ must all be in different-colored groups." We can find this probability by considering them drawing bands sequentially. Athlete $A_1$ (Tallest): $A_1$ draws a band. It can be any of the 9 bands. $A_1$ will always be a captain, so the probability is 1. We now have 8 bands left.Athlete $A_2$ (2nd Tallest): $A_2$ must draw a band of a different color than $A_1$.There are 8 bands left in the bag.$A_1$ took one band, so 2 bands of that color remain.The other 6 bands (3 of one color, 3 of another) are "good" bands for $A_2$.The probability of $A_2$ drawing a different color is $P(A_2) = \frac{6}{8}$. Athlete $A_3$ (3rd Tallest): $A_3$ must draw a band of the third, remaining color.We assume $A_1$ and $A_2$ were successful, so there are 7 bands left.$A_1$ took a band of color 1. $A_2$ took a band of color 2.There are 3 bands of color 3 (the "good" color) still in the bag.The probability of $A_3$ drawing the last color is $P(A_3) = \frac{3}{7}$.The total probability is the product of these independent probabilities:
+ \[P(\text{Total}) = P(A_1) \times P(A_2) \times P(A_3)\]
+ \[P(\text{Total}) = 1 \times \frac{6}{8} \times \frac{3}{7} = \frac{18}{56}\]Simplifying the fraction:
+ \[\frac{18}{56} = \frac{9}{28}\]
+
+ The correct option is (C).~Jonathanmo
+
+ 
+
+
+
+\textbf{Solution 3 (Counting)}
+
+There are $\binom{9}{3}\binom{6}{3}$ ways to assign rubber bands to the athletes. Now we have to find the number of ways for the team captains to be the 3 tallest people. Each of the 3 tallest people must have a different rubber band color, and there are $3! = 6$ ways to permute their individual rubber band colors.
+
+ For the other 6 people, there are $\binom{6}{2}\binom{4}{2}$ ways to assign rubber bands to them. 
+
+ Thus, our probability is $\frac{3! \cdot \binom{6}{2}\binom{4}{2}}{\binom{9}{3}\binom{6}{3}} = \boxed{\textbf{(C)}\hspace{3pt}\frac{9}{28}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (similar to Solution 3)}
+
+We have $\binom{9}{3}\cdot \binom{6}{3}\cdot \binom{3}{3}=1680$ ways to select the people in each team, and we must divide by $3!$ ways to order the teams. This gives us $\frac{1680}{3!}=280$ total ways to create the teams.
+
+ To have the three team captains be the tallest, we need them to be in separate teams. Once placed in their respective teams we have $3! = 6$ ways to orient them.  We then have 6 people remaining. There are $\binom{6}{2}\cdot \binom{4}{2}\cdot \binom{2}{2} = 90$ ways to place two more people on each team. However, this overcounts by $3!=6$, as the orientation of the teams themselves doesn't matter, hence in reality only 15 cases work. We multiply by the orientation of each athlete, which yields $15 \cdot 6 = 90$ cases.
+
+ Our probability is $\frac{90}{280} = \boxed{\textbf{(C)} \frac{9}{28}}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Assume the tallest person is in the red group. Then the second person has 6 spots to go out of 8 remaining (1 was taken away). Then the third tallest person has 3 spots to go out of 7 remaining. $\frac{6}{8} \cdot \frac{3}{7}$ is the same as $\boxed{\textbf{(C) }\frac{9}{28}}.$
+
+ 
+
+
+
+\textbf{Solution 6 (cheese)}
+
+Upon realizing that the denominator is a multiple of $7$, and that there are a bunch of $3$'s in the numerator (just do some C&P with the right logic that could even be a bit flawed) we can make an educated guess that the answer must be $\boxed{\textbf{(C) }\frac{9}{28}}.$
+
+ 
+
+
+
+\textbf{Solution 7 (Fast, like Solution 5)}
+
+WLOG, assume that the three tallest people are the first ones to draw. Irrespective of where the first person goes, the probability that the second and third person go on different teams is$\frac{6}{8}$ and $\frac{3}{7}$, respectively, yielding$\boxed{\textbf{(C) }\frac{9}{28}}.$
+
+ \textbf{Solultion 8} We can visualize the nine athletes as a $3 \times 3$ grid, where each row represents a color group and each row contains 3 positions. We want the three tallest athletes to become captains. This happens exactly when each of the three tallest athletes occupies a different row.
+
+ Total ways to choose positions for the three tallest athletes: $\binom{9}{3} = 84$
+
+ Favorable ways (exactly one of the three tallest athletes in each row): $3^3=27$
+
+ Thus, our probability is $\frac{27}{84} = \boxed{\textbf{(C) }\frac{9}{28}}.$
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) The sum 
+ \[\sum_{k=1}^{\infty} \frac{1}{k^3 + 6k^2 + 8k}\] can be expressed as $\frac{a}{b}$, where $a$ and $b$ are relatively prime positive integers. What is $a + b$?
+
+
+ $\textbf{(A) } 89 \qquad \textbf{(B) } 97 \qquad \textbf{(C) } 102 \qquad \textbf{(D) } 107 \qquad \textbf{(E) } 129$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Through partial sum decomposition we obtain
+ \[\frac{1}{k^3 + 6k^2 + 8k} = \frac{1}{8} \left( \frac{1}{k} - \frac{2}{k+2} + \frac{1}{k+4} \right),\] 
+
+ so one can write the expression as 
+
+ \begin{align*}\frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k} - \frac{2}{k+2} + \frac{1}{k+4} \right)&=\frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k} - \frac{1}{k+2}-\frac{1}{k+2} + \frac{1}{k+4} \right)\\&=\frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k} - \frac{1}{k+2} \right)+ \frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k+4} - \frac{1}{k+2} \right)\\&=\frac{1}{8} \sum_{k=1}^{\infty} \left( \frac{1}{k} - \frac{1}{k+2} \right) - \frac{1}{8} \sum_{k=1}^{\infty} \left( \frac{1}{k+2} - \frac{1}{k+4} \right)\\&=\frac{1}{8} \sum_{k=1}^{\infty} \left( \frac{1}{k} - \frac{1}{k+2} \right) - \frac{1}{8} \sum_{k=3}^{\infty} \left( \frac{1}{k} - \frac{1}{k+2} \right)\\&=\frac{1}{8} \sum_{k=1}^{2} \left( \frac{1}{k} - \frac{1}{k+2} \right)\end{align*}
+Simplifying the sum and multiplying results in $\frac{11}{96}$, in which we finally have $11 + 96 =$ $\boxed{\textbf{(D)}~107}$
+
+ Note: For more info on Partial Sum Decompositions; AoPS Intermediate Algebra Chapter 17.2 (Telescoping) gives a brief introduction to them, which is sufficient enough to solve this problem. AoPS Intermediate Counting and Probability Chapter 14.6 also gives a brief introduction to them.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We decompose $\frac{1}{k^3 + 6k^2 + 8k}$ into the sum of 3 partial fractions. We can factor $\frac{1}{k^3 + 6k^2 + 8k}$ as $\frac{1}{k(k + 2)(k + 4)}$. We can write this as $\frac{1}{k(k + 2)(k + 4)} = \frac{A}{k} + \frac{B}{k + 2} + \frac{C}{k + 4}$. Multiplying this by $k(k + 2)(k + 4)$ gives $1 = A(k + 2)(k + 4) + Bk(k + 4) + Ck(k + 2)$. If $k = 0$, then $8A = 1$, meaning $A = \frac{1}{8}$, if $k = -2$, then $B(-2)(2) = -4B = 1$, meaning $B = -\frac{1}{4}$, and if $k = -4$, $8C = 1$, $C = \frac{1}{8}$. We have 
+ \[\sum_{k=1}^{\infty} \frac{1}{k^3 + 6k^2 + 8k} = \sum_{k = 1}^{\infty} \frac{1/8}{k} - \frac{1/4}{k + 2} + \frac{1/8}{k + 4}.\]
+
+ Subtracting the first 2 fractions is 
+
+ 
+ \[\frac{1}{8} (1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots) - \frac{1}{4} (\frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots)\]Since $\frac{1}{8}$ is half of $\frac{1}{4}$, this is equal to $\frac{3}{16} - \frac{1}{8} (\frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots)$. We subtract the third fraction from this.
+
+ 
+ \[\frac{3}{16} - \frac{1}{8} (\frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots) + \frac{1}{8} (\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \cdots) = \frac{3}{16} - \frac{1}{8} (\frac{7}{12}) = \frac{3}{16} - \frac{7}{96} = \frac{11}{96},\]
+
+ meaning the answer is $\boxed{\textbf{(D) } 107}$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can factor the expression as $\sum_{k = 1}^{\infty} \dfrac{1}{k(k+2)(k+4)}$.Notice we can express this as a telescoping fractions, $\dfrac{1}{k(k+2)(k+4)} = \dfrac{1}{4}\left(\dfrac{1}{k(k+2)}-\dfrac{1}{(k+2)(k+4)}\right)$, thus the expression becomes, $\dfrac{1}{4}\left(\sum_{k = 1}^{\infty} \left(\dfrac{1}{k(k+2)}-\dfrac{1}{(k+2)(k+4)}\right)\right)$. Writing out the first few terms where $n$ is a positive integer, we see that the middle cancels, $\dfrac{1}{4}\left(\dfrac{1}{1\cdot3}+\dfrac{1}{2\cdot4}+\dfrac{1}{3\cdot5}+\dots+\dfrac{1}{n(n+2)}-\dfrac{1}{3\cdot5}-\dfrac{1}{4\cdot6}-\dots-\dfrac{1}{(n+1)(n+3)}-\dfrac{1}{(n+2)(n+4)}\right)$, leaving behind $\dfrac{1}{4}\left(\dfrac{1}{1\cdot3}+\dfrac{1}{2\cdot4}-\dfrac{1}{(n+1)(n+3)}-\dfrac{1}{(n+2)(n+4)}\right)$. As $n$ goes to infinity, the last two fractions approach zero, thus the sum is $\dfrac{1}{4}\left(\dfrac{1}{3}+\dfrac{1}{8}\right) = \dfrac{1}{4}\left(\dfrac{11}{24}\right) = \dfrac{11}{96}$, $a = 11$, $b = 96$, 
+
+ $11+96 = \boxed{\text{(D) }107}.$
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 4 (fast partial fractions)}
+
+First, factoring the denominator gives 
+ \[\frac{1}{k^3 + 6k^2 + 8k} = \frac{1}{k(k+2)(k+4)}.\] 
+
+ Now we proceed with partial fraction decomposition. There are numerous methods to do this quickly, but one of the fastest is known as the Heaviside cover-up method. We "cover" one of the factors in the denominator and set $k$ equal to whatever value makes that factor zero. By covering up that factor, we ignore the factor that results in division by zero. What results is the numerator of the corresponding partial fraction. 
+
+ First, we set $k=0$ to find the numerator of $\frac1k.$ We have $\frac{1}{(0+2)(0+4)}=\frac18,$ so this is the numerator for $\frac1k.$ Next, we set $k=-2$ to find the numerator of $\frac{1}{k+2}:$ we see that $\frac{1}{(-2)(-2+4)}=-\frac14$ is thus the numerator for $\frac{1}{k+2}.$ Finally, we set $k=-4,$ giving $\frac{1}{(-4)(-2)}=\frac18.$
+
+ Thus, our partial fraction decomposition is \begin{align*}\frac{1}{k^3 + 6k^2 + 8k} &= \frac{1}{k(k+2)(k+4)} \\&= \frac{1/8}{k} - \frac{1/4}{k+2} + \frac{1/8}{k+4}. \end{align*}
+
+
+ We see that this telescopes. Writing out a few terms, we see:
+
+ \begin{align*}\sum_{k=1}^\infty \left( \frac{1}{8}\cdot\frac{1}{k} - \frac{1}{4}\cdot\frac{1}{k+2} + \frac{1}{8}\cdot\frac{1}{k+4} \right) &= \left(\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2} + \frac{1}{8}\cdot\frac{1}{3} + \frac{1}{8}\cdot\frac{1}{4} + \frac{1}{8}\cdot\frac{1}{5} + \frac{1}{8}\cdot\frac{1}{6} + \dots\right) \\&+ \left(\phantom{\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2}\;}- \frac{2}{8}\cdot\frac{1}{3} - \frac{2}{8}\cdot\frac{1}{4} - \frac{2}{8}\cdot\frac{1}{5} - \frac{2}{8}\cdot\frac{1}{6} - \dots\right) \\&+ \left(\phantom{\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2} + \frac{1}{8}\cdot\frac{1}{3} + \frac{1}{8}\cdot\frac{1}{4}\;}+ \frac{1}{8}\cdot\frac{1}{5} + \frac{1}{8}\cdot\frac{1}{6} + \dots\right).\end{align*}
+
+
+ We see that the terms telescope, leaving us with a final sum of 
+ \[\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2} + \frac{1}{8}\cdot\frac{1}{3} + \frac{1}{8}\cdot\frac{1}{4} - \frac{2}{8}\cdot\frac{1}{3} - \frac{2}{8}\cdot\frac{1}{4}=\frac18+\frac1{16}-\frac1{24}-\frac1{32}=\frac{11}{96}.\]
+
+ Hence, the answer is $\boxed{\textbf{(D) }107.}$
+
+ 
+
+
+
+\textbf{Solution 5  (Fast Index Shifting)}
+
+We start by factoring the cubic denominator as $k^3+6k^2+8k=k(k+2)(k+4)$Quickly, we can do partial fraction decomposition by the cover-up method
+ \[\frac{1}{k(k+2)(k+4)}=\frac{A}{k}+\frac{B}{k+2}+\frac{C}{k+4}\]$k=0$ yields $A=\frac{1}{8}$
+
+ $k=-2$ yields $B=-\frac{1}{4}$
+
+ $k=-4$ yields $C=\frac{1}{8}$
+
+ Now, we have
+ \[\sum_{k=1}^{\infty} \left(\frac{\frac{1}{8}}{k}-\frac{\frac{1}{4}}{k+2}+\frac{\frac{1}{8}}{k+4}\right)=\frac{1}{8}\sum_{k=1}^{\infty} \left(\frac{1}{k}-\frac{2}{k+2}+\frac{1}{k+4}\right)\]Now, let's evaluate this series then multiply by $\frac{1}{8}$ at the end. We break this into 
+ \[\sum_{k=1}^{\infty} \frac{1}{k}-2\sum_{k=1}^\infty\frac{1}{k+2}+\sum_{k=1}^{\infty}\frac{1}{k+4}=\sum_{k=1}^{\infty} \frac{1}{k}-2\sum_{k=3}^\infty\frac{1}{k}+\sum_{k=5}^{\infty}\frac{1}{k}=\frac{3}{2}-\sum_{k=3}^\infty\frac{1}{k}+\sum_{k=5}^\infty\frac{1}{k}=\frac{3}{2}-\left(\frac{1}{3}+\frac{1}{4}\right)=\frac{18}{12}-\frac{4}{12}-\frac{3}{12}=\frac{11}{12}\]Then, 
+ \[\frac{1}{8}\cdot\frac{11}{12}=\frac{11}{96} \implies 11+96=\boxed{\textbf{(D) }107}\]~Shockfront99
+
+ 
+
+
+
+\textbf{Solution 6 (Cool Integral Method)}
+
+We start by factoring the cubic denominator as $k^3+6k^2+8k=k(k+2)(k+4)$ Quickly, we can do partial fraction decomposition by the cover-up method 
+ \[\frac{1}{k(k+2)(k+4)}=\frac{A}{k}+\frac{B}{k+2}+\frac{C}{k+4}\] $k=0$ yields $A=\frac{1}{8}$
+
+ $k=-2$ yields $B=-\frac{1}{4}$
+
+ $k=-4$ yields $C=\frac{1}{8}$
+
+ Now, we have 
+ \[\sum_{k=1}^{\infty} \left(\frac{\frac{1}{8}}{k}-\frac{\frac{1}{4}}{k+2}+\frac{\frac{1}{8}}{k+4}\right)=\frac{1}{8}\sum_{k=1}^{\infty} \left(\frac{1}{k}-\frac{2}{k+2}+\frac{1}{k+4}\right)\]Now, notice that 
+ \[\frac{1}{k}=\int_0^1x^{k-1} \ dx\]and we could apply this to the rest
+ \[\frac{2}{k+2}=2\int_0^1x^{k+1} \ dx\]
+ \[\frac{1}{k+4}=\int_0^1x^{k+3} \ dx\]Now, our sum is
+ \[\frac{1}{8}\sum_{k=1}^\infty\int_0^1\left(x^{k-1}-2x^{k+1}+x^{k+3}\right) \ dx\]Swapping the sum and integral (check out some resources to learn about when you can do this), yields
+ \[\frac{1}{8}\int_0^1\sum_{k=1}^\infty\left(x^{k-1}-2x^{k+1}+x^{k+3}\right) \ dx\]
+ \[\frac{1}{8}\int_0^1 \left(x^{4}-2x^2+1\right)\sum_{k=1}^\infty x^{k-1} \ dx\]Then, using the geometric series formula for $|x|<1$ and factoring the polynomial
+ \[\frac{1}{8}\int_0^1 \left(x^{4}-2x^2+1\right)\left(\frac{1}{1-x}\right) \ dx=\]
+ \[\frac{1}{8}\int_0^1 \frac{(1-x^2)^2}{1-x} \ dx= \ \frac{1}{8}\int_0^1 \frac{(1-x)(1+x)(1-x)(1+x)}{1-x} \ dx=\]
+ \[\frac{1}{8}\int_0^1 (1+x)(1-x)(1+x) \ dx=\]
+ \[\frac{1}{8}\int_0^1 (-x^3-x^2+x+1) \ dx=\]
+ \[\frac{1}{8}\left(-\frac{1}{4}-\frac{1}{3}+\frac{1}{2}+1\right)=\frac{1}{8}\left(\frac{11}{12}\right)=\frac{11}{96} \implies 11+96=\boxed{107}\]~Shockfront99 (again)
+
+ Note: This isn't exactly the cleanest solution. I wouldn't recommend this on the actual AMC.
+
+ 
+
+
+
+\textbf{Solution 7 (simple, no partial fraction decomposition)}
+
+Let $S = \sum_{k=1}^{\infty} \frac{1}{k^3+6k^2+8k} = \sum_{k=1}^{\infty} \frac{1}{k(k+2)(k+4)}$
+
+ Notice a pattern: each factor is 2 greater than the previous one! So for now, let's consider the difference between two simpler fractions in hopes of rewriting the original series to spot a telescoping pattern:
+
+ 
+ \[\frac{1}{k(k+2)} - \frac{1}{(k+2)(k+4)} = \frac{k+4}{k(k+2)(k+4)} - \frac{k}{k(k+2)(k+4)} = \frac{4}{k(k+2)(k+4)}\]
+
+ So $4S = \sum_{k=1}^{\infty} (\frac{1}{k(k+2)} - \frac{1}{(k+2)(k+4)}) = \sum_{k=1}^{\infty} \frac{1}{k(k+2)} - \sum_{k=1}^{\infty} \frac{1}{(k+2)(k+4)}$
+
+ By splitting the sum, and then using index shifting to rewrite the second summation, we can find that:
+
+ 
+ \[\sum_{k=1}^{\infty} \frac{1}{k(k+2)} = \sum_{k=1}^{2} \frac{1}{k(k+2)} + \sum_{k=3}^{\infty} \frac{1}{k(k+2)} = \sum_{k=1}^{2} \frac{1}{k(k+2)} + \sum_{k=1}^{\infty} \frac{1}{(k+2)(k+4)}\]
+
+ Awesome! Now we can substitute that into the equation for $4S$ and things will cancel out!
+
+ 
+ \[4S = \sum_{k=1}^{2} \frac{1}{k(k+2)} + (\sum_{k=1}^{\infty} \frac{1}{(k+2)(k+4)} - \sum_{k=1}^{\infty} \frac{1}{(k+2)(k+4)}) = \sum_{k=1}^{2} \frac{1}{k(k+2)} \implies S = 11/96\]So $a + b = \boxed{\textbf{(D) }107}$
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) A circle has been divided into $6$ sectors of different sizes. Then $2$ of the sectors are painted red, $2$ painted green, and $2$ painted blue so that no two neighboring sectors are painted the same color. One such coloring is shown below.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2025_16_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ How many different colorings are possible?
+
+
+ 
+
+$\textbf{(A)}~12\qquad\textbf{(B)}~16\qquad\textbf{(C)}~18\qquad\textbf{(D)}~24\qquad\textbf{(E)}~28$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Consider the topmost sector of any given circle. Put a "marker" on it. Now, reflect the diagram and rotate it until the marker is in the same place as it was last time. What we have just constructed are two circles with different colorings, except that the unique sectors formed are the exact same. Thus, for any given circular diagram, another diagram exists that is the exact same as the prior one.
+
+ The number of such colorings that exist given an arbitrary circular diagram is $2^4 \cdot 3 = 48$. In all of these possible colorings, exactly two are in a bijection (correspondence, basically two are the exact same type of sector for any diagram are overcounted). Thus we divide the count by two, yielding the answer $\boxed{24}$.
+
+ Essentially, this is what my solution 2 was trying to imply, except more in a formal definition. I hope now one can see the intuition.
+
+ If this did not make much sense, please check solution 3, which I believe I made to be beginner friendly.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Create an arbitrary six slice circular diagram. The first slice has 3 options, and the second has 2, third has 2, fourth has 2, fifth has 2, and the sixth has only 1 color to be chosen.
+
+ Understand that if \( \mathbb{X} \) is the set containing all possible cases of the circle, then \( \mathbb{X} \) has a correlation to another set, call it \( \mathbb{K} \), which contains all the colors. This can be quite easily sought as a rotation of one element in \( \mathbb{X} \) that accurately maps to another element in \( \mathbb{X} \) is considered the same.
+
+ In simpler terms, to account for overlapping cases in \( \mathbb{X} \), one must divide by 2 (as two colorings that are rotated are considered different, and we don't want that as it defeats the purpose of "unique").
+
+ Then, multiplying out we have \( 3 \times 2^4 = 48 \). Dividing by 2 to account for overlap in \( \mathbb{X} \), we get \( 48/2 \) or$\boxed{\textbf{(D) } 24}$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can have $3 \cdot 3 \cdot 2 \cdot 2 = 36$ unique colorings. Obviously, not all of these work. Particularly, we can have colorings in which 1, 2, or 3 colorings are adjacent. In case 1, we have 3 ways to choose that, and 2 ways to arrange the alternating colors. That is 6 ways total. In case 2, we have the case degenerates to case 3, in which we have again, 6 ways to determine as such. The answer is $36 - 6 -6 = \boxed{24}$.
+
+ Notice we do not CHOOSE the colorings as the sectors are distinguishable.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Model the circle as the $6$-cycle \(C_6\) with labeled positions \(1,2,3,4,5,6\) in circular order. We count proper colorings using \(R,G,B\), each appearing exactly twice.
+
+ There are two structural possibilities for how the two copies of each color are placed:
+
+ 
+{Case 1: All three colors occupy opposite positions.}
+
+ 
+Opposite positions in \(C_6\) are the three pairs \((1,4), (2,5), (3,6)\). If each color occupies one opposite pair, then the colors must alternate around the circle, yielding a pattern of the form{$A,B,C,A,B,C$}
+
+ for some ordering \((A,B,C)\) of \((R,G,B)\). The number of such colorings is $3!$ = $6$
+
+ 
+{Case 2: Exactly one color occupies opposite positions.}
+
+ 
+Choose the color that is opposite: \(3\) choices. Choose which opposite pair it occupies: \(3\) choices one of \((1,4), (2,5), (3,6)\)), for a total of \(3\cdot 3 = 9\) placements.
+
+ Removing those two opposite positions leaves two disjoint adjacent pairs among the remaining four positions. For example, if the opposite color is at \((1,4)\), the remaining positions \(\{2,3,5,6\}\) form the two adjacent pairs \((2,3)\) and \((5,6)\). The other two colors must each appear twice, and no adjacent positions may match; therefore each pair must be colored with different colors, and to achieve two copies of each color overall, the two pairs must be complementary:
+
+ $(2,3)$ is $(G,B)$ or $(B,G)$, and then $(5,6)$ in the opposite ordering.
+
+ This gives \(2\) valid assignments for the four positions per fixed opposite placement.
+
+ Hence, this case contributes\(9\cdot 2 = 18\)
+
+ Summing the $2$ cases
+
+ $6$ + $18$ = $24$
+
+ $\boxed{\textbf{(D) } 24}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+We can also case differently.
+
+ Let us call the sectors $1$, $2$, $3$, $4$, $5$, and $6$ going clockwise around the circle. We, without loss of generality, assume $1$ to be colored $R$. Additionally, without loss of generality, assume $2$ to be colored $B$. We will nullify these assumptions by multiplying by a factor of $6$ at the end.
+
+ We case on the color of sector $6$.
+
+ \textbf{Case 1: Sector $6$ is colored $B$} Each color is used two times, so we have one $R$ and two $G$s left to distribute between $3$, $4$, and $5$. Obviously, the $G$s cannot be adjacent and thus the only possible coloring is $(3, 4, 5) = (G, R, G)$.
+
+ There is $1$ solution for this case.
+
+ \textbf{Case 2: Sector $6$ is colored $G$} In this case, we have we have one $R$, one $B$, and one $G$ left to distribute between $3$, $4$, and $5$. Since $3$, $4$, and $5$, are all distinct colors, the only restrictions on this case are that $3$ cannot be colored $B$ and $5$ cannot be colored $G$.
+
+ Quick casework shows that if $3$ is colored $R$, there are one solution $(3, 4, 5) = (R, G, B)$ and if $3$ is colored $G$ then there are two solutions $(3, 4, 5) = (G, R, B)$ and $(3, 4, 5) = (G, B, R)$.
+
+ There are $3$ solutions for this case.
+
+ 
+
+
+ Thus, the total number of solutions is: 
+ \[6 \cdot (1 + 3) = \boxed{\textbf{(D) } 24}\]
+
+ 
+
+
+
+\textbf{Solution 6}
+
+We can also have the following two cases:
+
+ \textbf{Case 1: The three colors on the top semicircle are all different} Then, three are 6 different ways to rearrange the top. For the bottom, the leftmost one has one restriction and the rightmost one has one restriction. Let's say the leftmost cannot be red and the rightmost cannot be green WLOG. Then, we can have the cases (from left to right): {green, blue, red}, {green, red, blue}, and {blue, green, red}. So, there are 3 different ways to rearrange the bottom. So, ,for case one, there are $6\times3=18$ different ways to rearrange.
+
+ \textbf{Case 2: The three colors on the top has one pair of the same colors} Then, there are 3 ways to choose the same color and then 2 ways to choose the color that is only put in once. After choosing all of that, the bottom then will be fixed (try it yourself if you think it is not). So, case 2 has $3\times2=6$ ways to rearrange.
+
+ After combining the 2 cases, we get $18+6=24$ cases, so our answer is $\boxed{\textbf{(D) } 24}$.
+
+ 
+
+
+
+\textbf{Solution 7 (simplest and easiest)}
+
+Let's assume that the colors do not matter, so let's just start with Red in the very top sector. The fact that the sectors are distinct in size does not matter at all, so just ignore that. If Red is in the top sector, then we have 3 cases:
+
+ Case 1: Red is also in the 3rd sector (going clockwise from the top one)Thus, this is only one case because there are already 2 that are together, so the colors of those 2 must be distinct. 
+
+ Case 2: Red is also in the sector directly opposite. There are 2 cases for this; we can have all the colors being opposite, or we can have a case where everything is symmetric. 
+
+ Case 3: Red is also in the 5th sectorThis is basically congruent (symmetric) to the first case, so we also only have 1 case. 
+
+ Adding all these up, we have $1+2+1=4$ cases in total.
+
+ However, we did not consider color yet. Because there are 3 colors, they can be permuted $3!=6$ ways.  
+
+ Therefore, $6\times4=24$, so our answer is $\boxed{\textbf{(D) } 24}$.
+
+ 
+
+
+
+\textbf{Solution 8}
+
+We want to find the number of cases where we can arrange the colors $A$, $B$, and $C$, fixing $A$ at the top, and assuming $B$ and $C$ are symmetrical, so switching all instances of them wouldn't count. Starting from the top-left sector and moving clockwise, we could do $ABCACB$, which is what was on the example, $ABCABC$, $ABACBC$, or $ABCBAC$, so there are four cases. Then, we can just multiply the number of cases by $6$, because that's how many ways we can rearrange $A$, $B$, and $C$, to get $\boxed{\textbf{(D) } 24}$.Additionally, we could cheese by noting that the answer is just the number of cases times $6$, so the answer choice must be a multiple of $6$, so it's either $\boxed{\textbf{(C) } 18}$ or $\boxed{\textbf{(D) } 24}$, in which case it's possible to just guess the fifty-fifty.
+
+ 
+
+
+
+\textbf{Solution 9}
+
+Consider only half the circle. We only need to worry about three distinct colors on the upper half of the circle. There are $3! = 6$ ways to arrange the three colors on the semicircle and again $3! = 6$ ways to arrange the other same three colors on the bottom semicircle. In total, we have $6 \cdot 6 = 36$ total ways. Now, we note that when we put the two semicircles together to create a full circle, we're only concerned that the end two sectors of each semicircle don't match(since each semicircle is arranged with three distinct colors already). Out of the $6$ permutations(for instance $B, R, G$ or $B, G, R$ and so on), we need to take one permutation and figure out how many permutations don't work. In other words, if we have the permutation $B, R, G$ how many permutations other than this one either start with a $B$ or end with a $G$? Doing the very easy casework, we see that in this particular case only $B, G, R$ and $R, B, G$ don't work. Therefore, for every permutation, there are $2$ permutations that don't work. Since we have $6$ permutations, our final answer is
+
+ $36 - 6 \cdot 2 = \boxed{24}$
+
+ 
+
+
+
+\textbf{Solution 10(force)}
+
+Say that we make a hexagon, with each vertices being a color on its own. We first denote the top vertices with a random color, say $B$. After the top vertex is decided, only the bottom 3 vertices are clear for $B$. The first case, where $B$ is at the bottom right vertex, has 2 combinations possible. The second case, where $B$ is at the bottom vertex, has 4 combinations. The third case, where $B$ is at the bottom left vertex, has the mirrored value of 2 along with the first case. Multiplying all combinations by 3 gives us 24.
+
+ $3 \cdot 8 = 24$
+
+ 
+
+
+
+\textbf{Solution 11 (word permutations)}
+
+Let $R$ denote a red segment, $G$ denote a green segment, and $B$ denote a blue segment. Let x represent a blank in this solution
+
+ Case 1: $R x R x x x$There are 2 possibilities: $RGRBGB$ and $RBRGBG$
+
+ Case 2: $R x x R x x$There are 4 possibilities: $RBGRBG$, $RGBRGB$, $RBGRGB$, and $RGBRBG$.
+
+ Case 3: $R x x x R x$Similar to case 1, there are 2 possibilities
+
+ A total of 8 possibilities have been counted, and since the R in those spots can also either be G or B, we multiply by 3 to get $\boxed{\textbf{(D) } 24}$
+
+ (Note: $R x x x x R$ is not a possibility since we're dealing with a wheel! An easy pitfall to be careful of)
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Consider a decreasing sequence of $n$ positive integers $x_1 > x_2 > \dotsb > x_n$ that satisfies the following two conditions:
+
+
+ $\qquad\bullet$ The average (arithmetic mean) of the first $3$ terms in the sequence is $2025.$
+
+
+ $\qquad\bullet$ For all $4 \leq k \leq n,$ the average of the first $k$ terms in the sequence is $1$ less than the average of the first $k - 1$ terms in the sequence.
+
+
+ What is the greatest possible value of ${n?}$
+
+
+ $\textbf{(A) } 1013 \qquad \textbf{(B) } 1014 \qquad \textbf{(C) } 1016 \qquad \textbf{(D) } 2016 \qquad \textbf{(E) } 2025$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Since the mean of the first three terms is $2025$, their sum is $2025 * 3 = 6075$.Then, incorporating the fourth term makes the mean 
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) What is the ones digit of the sum
+
+ \[\lfloor \sqrt{1} \rfloor + \lfloor \sqrt{2} \rfloor + \lfloor \sqrt{3} \rfloor + \dots + \lfloor \sqrt{2025} \rfloor?\](Recall that $\lfloor x \rfloor$ represents the greatest integer less than or equal to $x$.)
+
+
+ $\textbf{(A) } 1\qquad\textbf{(B) } 2 \qquad\textbf{(C) }3\qquad\textbf{(D) } 5 \qquad\textbf{(E) } 8$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+All terms from the 1st to the 3rd will equal 1, because the value inside the floor function will be greater than or equal to $\sqrt{1} = 1$ but less than $\sqrt{4} = 2$. Following this logic, all terms from the 4th to the 8th will equal 2, all terms from the 9th to the 15th will equal 3, and all terms from number $n^2$ to $(n + 1)^2 - 1$ will equal $\sqrt{n}$. Thus, there will be 3 terms equal to 1, 5 terms equal to 2, and so on. Writing out a few terms of the total sum, we have:
+ \[1 \cdot 3 + 2 \cdot 5 + 3 \cdot 7 + \dots + 44 \cdot 89\]The expression above can be written in summation format as:
+
+ 
+ \[\sum_{n=1}^{44} n(2n + 1).\] We can expand this to the following:
+ \[\sum_{n=1}^{44} 2n^2 + \sum_{n=1}^{44} n\]Using the sum of integers formulas, this becomes
+ \[\frac{2 \cdot 44 \cdot 45 \cdot 89}{6} + \frac{44 \cdot 45}{2}\]The units digit of that expression evaluates to 0. However, we excluded $\lfloor \sqrt{2025} \rfloor = 45$ from our sum because it appears only once in the sequence, so we have to add it back into our expression. Our final answer is $\boxed{\textbf{(D)}\hspace{3pt}5}$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We quickly realize that from $1^2$ to $2^2 - 1$, the floor of the square root is always $1$, from $2^2$ to $3^2 - 1$, the floor of the square root is always $3$, and so on. So, we have $1\cdot3 + 2\cdot5 + 3\cdot7 + 4\cdot9 + ... 44\cdot89 + 45$. Now, we can bash for the first digit of each of these products and find that $1\cdot3$ has unit digit $3$,$2\cdot5$ has unit digit $0$,$3\cdot7$ has unit digit $1$,$4\cdot9$ has unit digit $6$,$5\cdot11$ has unit digit $5$,$6\cdot13$ has unit digit $8$,$7\cdot15$ has unit digit $5$,$8\cdot17$ has unit digit $6$,$9\cdot19$ has unit digit $1$,$10 \cdot 21$ has unit digit $0$And so, we see that a loop has been established for $1-10, 11-20, 21-30, 31-40$ (In normal sums that would be $1^2 - 10^2, 11^2 - 20^2$, etc.Sum the first $10$ numbers to find that it is equal to $5$(mod $10$), and multiply by $4$ to account for $1$ to $40$. Now we have $0$, and we must add the first $4$ numbers of the loop again to get $0$, and add $45$ for the last number. Thus, we get $\boxed{(D)5}$ as the ones digit.
+
+ -henryli3333
+
+ Latex edits and minor edits by Wen\_Liang
+
+ 
+
+
+
+\textbf{Solution 3: Units Digits!}
+
+As stated in the first Solution, we can notice that the first to third terms will equal 1, the second to eighth terms will equal $2$, and so on. This is because the square roots of $5$, $6,$ and $7$ are in between $2$ and $3,$ so using floor function, they would equal $2$.This concept applies to all the following numbers.
+
+ We can notice that the pattern goes like:$1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4,\dots44, 44, 44, 44, 45$The square roots of perfect squares will not have to be rounded down through the floor function, so to make it easier, we can pull those numbers out. By doing this we get, $(1+2+3+4+5+6+7+\dots+44+45)$, since $\sqrt{2025} = 45$ and $\sqrt{1} = 1$. 
+
+ Pulling out these numbers leaves us with 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, and so on. By looking at the remaining numbers, we can notice a pattern! There are two 1s, four 2s, six 3s, eight 4s...all the way until eighty-eight 44s! This can be simplified into, $2(1)+4(2)+6(3)+8(4)+10(5)+12(6)+\dots+88(44)$. Notice that the problem is asking for the units digit, so we can do some simple multiplication to find another pattern. 
+
+ We will expand our second expression:\begin{align*}2\cdot1=2 \\4\cdot2=8 \\6\cdot3=8 \\8\cdot4=32 \\10\cdot5=50 \\12\cdot6=72 \\14\cdot7=98 \\16\cdot8=128 \\18\cdot9=162 \\20\cdot10=200 \\\end{align*}
+
+
+ By looking only at the units digit:\begin{align*}2\cdot1=2 \\4\cdot2=8 \\6\cdot3=8 \\8\cdot4=2 \\10\cdot5=0 \\12\cdot6=2 \\14\cdot7=8 \\16\cdot8=8 \\18\cdot9=2 \\20\cdot10=0 \\\end{align*}
+
+
+ Huh..a pattern! It seems that this expression cycles in a pattern of $2,8,8,2,0$. And notice again, if you add up the digits, $2+8+8+2+0=20$. Notice that the unit's digit is $0$. 
+
+ However, we can't immediately assume that the cycle ends neatly, so we must do a quick check with the last four terms of the sequence: $82(41)+84(42)+86(43)+88(44)$. The units digits end up being $2+8+8+2$, so this time we're lucky and the cycle ends neatly. As a result, we know that because the cycle adds up to $20$ and doesn't stop mid-cycle, the units digit will be $0.$
+
+ Now, we can't just go ahead and give up because we got $0$ as our answer. We still have our first expression to deal with. $(1+2+3+4+5+\dots+44+45)$ By using the sum of numbers formula, we get: $(45(1+45))/2$, which simplifies to: $45\cdot23 = 1035.$ Since our second expression will have a unit digit of $0$, we get $0+5 = \boxed{\textbf{(D)}\hspace{3pt}5}$, as our answer.
+
+ 
+
+
+
+\textbf{Solution For Magic Square Association Problem}
+
+We know that $\lfloor$n$\rfloor$ is the lowest integer less or equal than $x$. We also know that $\sqrt{4}=2$, so that $\lfloor \sqrt{1} \rfloor$, $\lfloor \sqrt{2} \rfloor$, and $\lfloor \sqrt{3}\rfloor$ all are $1$. $1-1+1=1$, so the first $3$ terms equals one. Then, we look to the next $4$ terms. $\lfloor \sqrt{4} \rfloor$, $\lfloor \sqrt{5} \rfloor$, $\lfloor \sqrt{6} \rfloor$, $\lfloor \sqrt{7} \rfloor$, and $\lfloor \sqrt{8} \rfloor$ all equals 2, making a total of $2+2-2+2-2=-2$ Then all the values from $\lfloor \sqrt{9} \rfloor$ to $\lfloor \sqrt{15} \rfloor$ all equals 3, so now all the terms that equal $3$ or $-3$ have a grand total of$3-3+3-3+3-3+3=3$. We quickly see a pattern. All the terms that equals $1$ or $-1$ have a total of $1$, then $-2$, then $3$, and so on. $\sqrt{2025}=45$, so then we can quickly figure out the value to be $1-2+3-4+5-6+7-\dots+45$. $1-2=-1$, $3-4=-1$, and $5-6$ to be $-1$, all the way to $43-44$. We can see that $43$ is the $22$nd odd number, so that we have $-22+45=\boxed{\textbf{}\hspace{3pt}23}$.
+
+ 
+
+
+
+\textbf{Solution 5: Induction, Units Digits: No hard algebra involved! (easiest)}
+
+Sure, somehow this is \#18, but we can solve this problem with basically no algebra or any hard formulas. Also no confusing summation notation or modular arithmetic because we hate those! 
+
+ Recall that the perfect squares differ by odd numbers. What does this mean?
+
+ Well, it means that from all $\lfloor \sqrt{1} \rfloor$ to $\lfloor \sqrt{3} \rfloor$ , it will equal 1, for 3 values because $3-1+1=3$
+
+ Likewise, from $\lfloor \sqrt{4} \rfloor$ to $\lfloor \sqrt{8} \rfloor$, it will equal 2, for 5 values because $8-4+1=5$
+
+ Therefore, we can infer that there will be $2n+1$ copies of each number $n$. 
+
+ So, the entire sum will be 
+ \[1 \cdot 3 + 2 \cdot 5 + 3 \cdot 7 + \dots + 44 \cdot 89 + 45\]
+
+ We could $(mod 10)$ this, but that is too hard, so let's try to just look at the units digit for each term. For example, the first two terms units digit will be 
+
+ $1*3\equiv3$ 
+
+ $2*5\equiv0$
+
+ From here, you could just bash out all of them because there are only 45 (which isn't too bad to do, especially considering this is \#18 and a lot of people here have already finished the first 15 problems). 
+
+ However, that is kinda dumb to do in competition, so let's try to use induction!
+
+ Once we get to the 11th, 12th, 13th, such terms it will actually be congruent to the first 10 terms, because we are only looking at the units digits. 
+
+ So, we can just compute the first 10 terms from 1-10, because that will be much quicker:
+
+ $1*3\equiv3$ 
+
+ $2*5\equiv0$
+
+ $3*7\equiv1$
+
+ $4*9\equiv6$
+
+ $5*11\equiv5$
+
+ $6*13\equiv8$
+
+ $7*15\equiv5$
+
+ $8*17\equiv6$
+
+ $9*19\equiv1$
+
+ $10*21\equiv0$
+
+ Adding all these up, we have $3+0+1+6+5+8+5+6+1+0\equiv35\equiv5$
+
+ Then, the units digit of the first 40 will be equal to $5*4\equiv20\equiv0$
+
+ So, we just have to find the last 5 now
+
+ The first 4 is obviously $3+0+1+6\equiv10\equiv0$, then adding the 45th term:
+
+ $1*45\equiv5$
+
+ Finally, we add all these together:
+
+ $0+0+5\equiv5$
+
+ And therefore our answer is $\boxed{\textbf{(D)}\hspace{3pt}5}$. 
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 6}
+
+As in the previous solutions, we find that the first $3$ terms will equal 1, the next $5$ will be $2$, and so on. We know that we will add a $5$ to the units digit of the terms leading up to ...$(44)(89)$ because of the $45$ at the end of the sequence. Although this can be dangerous in certain problems, as it can lead you nowhere, if you start summing the units digits of the first terms of the sequence, you will see a cycle that repeats every $10$ terms. The units digit of the sum of this cycle is $5$, and since this will repeat $4$ times, we multiply $5$ by $4$ for a units digit of $0$ for the sum of the first $404$ terms of the sequence. We now only need the units digit from $(41)(83)$ to $(44)(89)$, which we can find easily by multiplying the last digit of each $2$ digit number. The units digits of these terms are $3$,$0$,$1$, and $6$. We add these to find that these $4$ terms have a units digit of $0$. 
+
+ So, the first $44$ terms have a units digit of $0$; adding back the $5$ from the last term in the sequence, we see that our answer is $\boxed{(D) \ 5}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) A container has a $1\times 1$ square bottom, a $3\times 3$ open square top, and four congruent trapezoidal sides, as shown. Starting when the container is empty, a hose that runs water at a constant rate takes $35$ minutes to fill the container up to the midline of the trapezoids. 
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2025_19_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ How many more minutes will it take to fill the remainder of the container?
+
+
+ $\textbf{(A) }70 \qquad \textbf{(B) }85 \qquad \textbf{(C) }90 \qquad \textbf{(D) }95 \qquad \textbf{(E) }105$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Extend the edges pointing downwards to converge at a point $A$ to form a square pyramid. Consider 3 square pyramids, the large one formed by the top vertices of the original figure and $A$, the middle one formed by the medians running through the sides of the original figure and point $A$, and the smaller one formed by the bottom vertices of the original figure and point $A$. Note that all pyramids are similar since they are all essentially scaled by a certain factor.
+
+ The median length is $\frac{3+1}{2}=2$
+
+ Using side length to volume ratios, find that the volumes must have ratios $1:8:27$Then, you get that the ratio of the volume thus filled to the volume that we must fill is equivalent to $8-1:27-8 =  7:19$.Thus, it will take $\frac{19}{7}$ more time to fill the remaining volume giving us an answer of $\frac{19}{7} * 35 = \boxed{\textbf{(D) }95}$
+
+ -Failure.net
+
+ 
+
+
+
+\textbf{Solution 2 (2 min)}
+
+Note that dividing this shape along the midline gives two truncated pyramids with base areas \(1\) and \(4\), and \(4\) and \(9\) (a truncated pyramid is a pyramid is cut at some point parallel to the base to reach a shape with bases that are squares). Using the truncated pyramid volume formula
+
+ 
+ \[V = \frac{1}{3}h\,(A_1 + A_2 + \sqrt{A_1A_2}),\]
+
+ we get volumes
+
+ 
+ \[\frac{1}{3}h(1 + 4 + \sqrt{4}) \qquad\text{and}\qquad \frac{1}{3}h(4 + 9 + \sqrt{36}).\]
+
+ Writing their ratio, we obtain
+
+ 
+ \[\frac{13 + 6}{5 + 2} = \frac{19}{7}.\]
+
+ Thus,
+
+ 
+ \[35 \cdot \frac{19}{7} = 95.\]
+
+ So the remaining time is \(\boxed{95}\).
+
+ -Cyrus825
+
+ 
+
+
+
+\textbf{Solution 3 (Calculus)}
+
+The volume that was filled in 35 minutes can be represented as $\int_1^2 s^2 \text{d}s = \frac{1}{3}\left(2^3 - 1^3\right) = \frac{7}{3}$ where $s$ represents the side length of the horizontal cross-sectional square. Then, the volume that remains to be filled is $\int_2^3 s^2 \text{d}s = \frac{1}{3}\left(3^3 - 2^3\right) = \frac{19}{3}.$ Since the filling rate is the same, the amount of time this will take is $35 \cdot \frac{3}{7} \cdot \frac{19}{3} = \boxed{\textbf{(D) }95}$
+
+ -grape1984
+
+ 
+
+
+
+\textbf{Solution 4 (Construction)}
+
+Extend the bottom of the container to form an upside down square pyramid. Then take a diagonal cross section as shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_19_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ You can notice that there are several similar triangles, so we write several equations.
+ \[\frac{x_3}{x_1+x_2+x_3}=\frac{\sqrt{2}}{3\sqrt{2}}\]
+ \[\frac{x_3}{x_2+x_3}=\frac{\sqrt{2}}{2\sqrt{2}}\]
+
+ Then solve the system to get: 
+ \[x_1=x_2=x_3=x\]
+
+ Write the volumes of the three pyramids with sides of the bases 1,2, and 3 respectively:
+ \[V_1=\frac{x}{3}\]
+ \[V_2=\frac{8x}{3}\]
+ \[V_3=9x\]
+
+ The volumes of the part of the container below the midline and above it are.
+
+ 
+ \[V_2-V_1=\frac{7x}{3}\] and 
+ \[V_3-V_2=\frac{19x}{3}\] 
+
+ Then the time $t$ for the top to fill up is given by 
+ \[\frac{\frac{19x}{3}}{\frac{7x}{3}}=\frac{t}{35}\] Therefore  $t=\boxed{\mathbf{(D)}\ 95}$
+
+ -AARONPICK2
+
+ 
+
+
+
+\textbf{Solution 5(Similar to Solution 1)}
+
+Extend the trapezoidal shape into a square pyramid. Note that we're only extending the height by another factor of the height. In other words, if the height from the $1 \times 1$ base to the midline is $h$, the height from the $2 \times 2$ base(which is the midline) to the $3 \times 3$ base(which is the finish) is also $h$. Now using this logic, the distance from the $1 \times 1$ base to the top of the pyramid is obviously also $h$. Now the problem is easy. Computing the volume of the first half of the trapezoidal shape(which takes $35$ minutes for the hose to fill) is 
+
+ $\frac{1}{3} (2 \cdot 2) \cdot (2h) - \frac{1}{3} (1 \cdot 1) \cdot (h) = \frac{7h}{3}$ which takes $35$ minutes. So to fill up to the height $h$ we get
+
+ $h$ takes $35 \cdot \frac{3}{7} = 15$ minutes to fill. 
+
+ Now to find the volume of the last half of he trapezoidal shape we get
+
+ $\frac{1}{3} (3 \cdot 3) \cdot (3h) - \frac{1}{3} (2 \cdot 2) \cdot (2h) = \frac{19h}{3}$ so if we plug in $h$ takes $15$ minutes to fill we get
+
+ $\frac{19h}{3}$ takes $\frac{19 \cdot 15}{3} = 19 \cdot 5 = \boxed{95}$ minutes to fill.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Four congruent semicircles are inscribed in a square of side length $1$ so that their diameters are on the sides of the square, one endpoint of each diameter is at a vertex of the square, and adjacent semicircles are tangent to each other. A small circle centered at the center of the square is tangent to each of the four semicircles, as shown below.
+The diameter of the small circle can be written as $(\sqrt a+b)(\sqrt c+d)$, where $a$, $b$, $c$, and $d$ are integers. What is $a + b + c + d$?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2025_20_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ $\textbf{(A) } 3 \qquad \textbf{(B) } 5 \qquad \textbf{(C) } 8 \qquad \textbf{(D) } 9 \qquad \textbf{(E) } 11$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution}
+
+Let the radius of the large semicircles be $r$, and let the diameter of the inner be $D$. Draw lines as follows:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_20_Solution_Figure_1.png}
+                    \end{figure}
+                    By the Pythagorean Theorem, $r^2+(1-r)^2=(2r)^2$, so $2r^2+2r-1=0$. Hence $r=\frac{\sqrt{3}-1}{2}$ (we take the positive solution).
+
+ Now apply the Pythagorean Theorem on the quadrilateral’s altitude down to get $(1-2r)^2+1=(2r+D)^2$. Solving yields $2r+D=\sqrt{8-4\sqrt{3}}=\sqrt{6}-\sqrt{2}$. Then $D=\sqrt{6}-\sqrt{2}-\sqrt{3}+1=(\sqrt{3}-1)(\sqrt{2}-1)$. Hence the answer is $3-1+2-1=\boxed{\textbf{(A) } 3}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We have the diagram: 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_20_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ We label the vertices of the square $A$,$B$,$C$, and $D$, the centers of the semicircle $E$, $F$, $G$, and $H$, and the center of the small circle $O$. Lets call the radius of the big semicircle $x$ and the radius of the small circle $r$. 
+
+ Looking at $\triangle HDG$, we can see it is a right triangle as $ABCD$ is a square, and we can also observe that since $DG$ is $x$ and the hypotenuse $GH$ is exactly twice at $2x$, $\triangle HDG$ is a $30-60-90^\circ$ triangle. That means $HD$ is equal to $\sqrt3 x$.
+
+ Upon inspection, we can also see that $AH$ is equal to $x$, and since $ABCD$ is a unit square with all sides equal to $1$, we can set the equation $HD+AH=1$, 
+ \[x+\sqrt3 x = 1\], so solving for $x$, we get that 
+ \[x=\frac{\sqrt{3}-1}{2}\]
+
+ Then, if we compose an auxiliary line from $O$ perpendicular to $HG$ at $J$, we can observe that $\triangle HOJ$ is an isosceles right triangle. That means $x+r=\sqrt2 x$ ($1-1-\sqrt2$ relations), which means 
+ \[r=(\sqrt2 -1)x\]
+
+ We're asked to find the diameter of the small circle, so we can multiply the equation by $2$ to get 
+ \[2r=2(\sqrt2 -1)x\]
+
+ Plugging x in, the $2$ multiplied and the $2$ in the denominator cancel out, and we get 
+ \[2r=2(\sqrt2 -1)(\frac{\sqrt{3}-1}{2})\] 
+ \[2r=(\sqrt2 -1)(\sqrt3 -1)\]
+
+ $a$, $b$, $c$, and $d$ are $2$, $-1$, $3$ respectively, and $-1$, so $2+(-1)+3+(-1)$ gets us $\boxed{\textbf{(A) } 3}$
+
+ -Neo
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let the centers of the four circles on $AB$, $BC$, $CD$, and $AD$ be $E$, $F$, $G$, and $H$, respectively. Let $r_1$ be equal to the radius of one of the semicircles and $r_2$ be the radius of the inner circle. From the diagram from solution 2, we can easily recognize that $\triangle DHG$ is a $30-60-90$ triangle. We now form an equation $r_1 + r_1\sqrt{3} = 1$. Solving for $r_1$ we will get $\frac{\sqrt{3}-1}{2}$ as the radius. We now need to recognize that $EFGH$ is a square. We can also see that $HF = 2r_1+2r_2$. Because $EFGH$ is a square, and $HG = 2r_1$, we can figure out that $HF = 2r_1\sqrt{2}$. The final step is to plug in $r_1$ and solve for $2r_2$ (not $r_2$ as the question asks for the diameter).
+
+ $2(\frac{\sqrt{3}-1}{2})\sqrt{2} = 2(\frac{\sqrt{3}-1}{2}) + 2r_2$
+
+ $(\sqrt{3}-1)\sqrt{2} = \sqrt{3}-1 + 2r_2$
+
+ $(\sqrt{3}-1)(\sqrt{2}-1) = 2r_2$
+
+ Thus, the answer is $3 - 1 + 2 - 1 = \boxed{\textbf{(A)}3}$
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We realize that we can connect the radii of the semicircles to form an inner square (let $r$ denote the radius of the semicircles and $d$ denote their diameter)
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_20_Solution_Figure_3.png}
+                    \end{figure}
+                    To find the length of the inner square, we apply the Pythagorean Theorem
+ \[(1 - r)^{2}+r^{2}= (2r)^{2}\]We now substitute $r = \frac{d}{2}$
+ \[(1 - \frac{d}{2})^2+(\frac{d}{2})^{2}= d^{2}\]
+ \[1-d + \frac{d^2}{4}+\frac{d^{2}}{4}= d^{2}\]
+ \[\frac{d^{2}}{2} -d+1= d^{2}\]
+ \[d^{2} -2d+2= 2d^{2}\]
+ \[-d^{2} -2d+2= 0\]
+ \[d^{2} +2d-2= 0\]
+ \[d = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}\]
+ \[d = \frac{-2 \pm \sqrt{4-4(-2)}}{2}\]
+ \[d = \frac{-2 \pm \sqrt{12}}{2}\]We must only consider the positive solution
+ \[d = \frac{-2 + \sqrt{12}}{2}\]
+ \[d = \frac{-2 + 2\sqrt{3}}{2}\]
+ \[d = -1 + \sqrt{3}\]
+ \[d = \sqrt{3} -1\]The diagonal of the inner square measures $d\sqrt{2}$.It can also be represented as $d+ d_{1}$ where $d_1$ denotes small circle's diameter. I demonstrate this below
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2025_20_Solution_Figure_4.png}
+                    \end{figure}
+                    
+ \[2r+d_{1} = d+d_{1}\]Therefore, we equate them, find $d_{1}$, and substitute $d= \sqrt{3}-1$
+ \[d+d_{1} = d\sqrt{2}\]
+ \[d_{1} = d\sqrt{2} - d\]
+ \[d_{1} = d(\sqrt{2} - 1)\]
+ \[d_{1} = (\sqrt{2}-1)(\sqrt{3}-1)\]
+ \[2+3-2 = 3 \implies \boxed{\textbf{(A) } 3}\]
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Each of the $9$ squares in a $3 \times 3$ grid is to be colored red, blue, or yellow in such a way that each red square shares an edge with at least one blue square, each blue square shares an edge with at least one yellow square, and each yellow square shares an edge with at least one red square. Colorings that can be obtained from one another by rotations and/or reflections are to be considered the same. How many different colorings are possible?
+
+
+ $\textbf{(A) } 3 \qquad \textbf{(B) } 9 \qquad \textbf{(C) } 12 \qquad \textbf{(D) } 18 \qquad \textbf{(E) } 27$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Casework)}
+
+Denote $1=\text{red}$, $2=\text{blue}$, $3=\text{yellow}$. We need $1\to 2\to 3\to 1$.
+
+ $WLOG$ place $1$ in the center $(0,0)$, $2$ on the left edge $(-1,0)$, $3$ on the top-left corner $(-1,1)$.
+ \[\begin{bmatrix} 3 & 0 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}\]$3$ must see $1$, so the top edge $(0,1)$ must also have $1$. Then, $1$ must see $2$, so the top-right corner $(1,1)$ becomes $2$, which must see $3$, so the right edge $(1,0)$ must have $3$.
+ \[\begin{bmatrix} 3 & 1 & 2 \\ 2 & 1 & 3 \\ 0 & 0 & 0 \end{bmatrix}\]Now this bottom-right corner can vary either as $1$, $2$ or $3$.Cases on $(1,-1)$:If $1$:
+ \[\begin{bmatrix} 3 & 1 & 2 \\ 2 & 1 & 3 \\ 3 & 2 & 1 \end{bmatrix}\]but the 3 needs a 1 and does not have it, so there are $0$ cases.If $2$:
+ \[\begin{bmatrix} 3 & 1 & 2 \\ 2 & 1 & 3 \\ b & a & 2 \end{bmatrix}\]if $a=1$, $b$ can be $1$ or $3$. If $a=2$, $b=3$, but the 3 needs a 1 and can't get it. If $a=3$, $b=1,2$, so there are $4$ cases in total.If $3$:
+ \[\begin{bmatrix} 3 & 1 & 2 \\ 2 & 1 & 3 \\ 2 & 1 & 3 \end{bmatrix}\]Since the 2 in the bottom left corner does not have a 3 nearby, there are $0$ cases.
+
+ WLOG the center fixes a factor of $3$, so the answer is $4\cdot 3=\boxed{\textbf{(C) } 12}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Complex Circular Counting)}
+
+This solution is complex, but gives the answer in less than a couple minutes and saves the bearing of casework, so proceed as a last resort.
+
+ Also yes this solution is inspired from 3Blue1Brown's Olympiad Counting video.
+
+ We will find the arrangement that contains the least possible occurrences of a color \( a \) and the most occurrences of a color \( b \), in which we will then use the circular gap theorem \( C_n A \) on all integers \( x \) such that \( x \in [a,b] \) and \( (a,b,x) \in \mathbb{Z}^+ \).
+
+ The average number of colors \( M \) is simply \( 9/3 = 3 \) (9 slots divided by 3 colors). So we see that the interval contains \( a < 3 < b \). We also have that the minimal number of colors is clearly 1 (it doesn't take much to show a case that contains only one color). The challenge is to find the maximal number, which is \( b \).
+
+ We see that there must be at least one of each color, so \( b \) can be a maximum of 6. However, we can see that 6 clearly cannot be \( b \), as if we have a configuration of 6 colors, that would mean that through the constraints in the problem, the other three colors are already uniquely determined. However, now there is no slots in the grid, and we cannot satisfy all the requirements, so \( b \le 5 \).
+
+ However, we also find that \( b \ne 5 \), as the four colors, say blue already determine 2 other colors, say yellow, which determine another 2 colors, say red. However, now there is one color left! This color must be blue (as there are 5), but if there is one blue an no yellow to satisfy the condition, then the case is simply impossible. Therefore, \( b \le 4 \).
+
+ We can try to do the same thing for 4, but we will see that \( b=4 \) satisfies the prerequisites.
+
+ Therefore, \( a=1 \) and \( b=4 \), in which we then use the circular gap theorem
+
+ 
+ \[C_n A = \frac{n}{k} \binom{n-k-1}{k-1}\]
+
+ For \( n=x : x \in [a,b] \), \( (a,b,x) \in \mathbb{Z}^+ \) and \( 0 < k \le \left\lfloor\frac{n}{2}\right\rfloor : k \in \mathbb{Z}^+ \)
+
+ And so, we do so!
+
+ For \( n=1 \), \( C_n A = 1 \) (note that every $\binom{n}{0}=1$)
+
+ For \( n=2 \), \( C_n A = 2 \)
+
+ For \( n=3 \), \( C_n A = 3 \)
+
+ For \( n=4 \), \( C_n A = 6 \)
+
+ Our answer is just the sum of all four of these, which is \( 6+3+2+1 \) or $\boxed{\textbf{(C) } 12}$
+
+ btw the actual theorem name for \( C_n A \) isn't actually the Circular Gap Theorem. I just call it that because I honestly don't know the name of it. It is a pretty neat theorem however, and I first learned it from this AIME problem here: \href{https://artofproblemsolving.com/wiki/index.php?title=1983\_AIME\_Problems/Problem\_7}{1983 AIME Q7 Sol. 9}.
+
+ It is apparently a closed form for the number of ways to write $n$ as the sum of $k$ positive circular cycles for $n \ge 2$, and for $0<n \le 1$, the value is just 1.
+
+ 
+
+
+
+\textbf{Solution 3 (Alternative Casework)}
+
+We begin by WLOG-ing the center box as red, denoted R.
+ \[\begin{tabular}{|c|c|c|} \hline  &  &  \\ \hline  & R &  \\ \hline  &  &  \\ \hline \end{tabular}\]We will then consider the upper edge box, for now we'll assume it to be blue (it will be clear later)
+ \[\begin{tabular}{|c|c|c|} \hline  & B &  \\ \hline  & R &  \\ \hline  &  &  \\ \hline \end{tabular}\]Now we consider the upper right box, which is forced to be yellow as it would be redundant due to reflection through the middle column.
+ \[\begin{tabular}{|c|c|c|} \hline  & B & Y \\ \hline  & R &  \\ \hline  &  &  \\ \hline \end{tabular}\]Now, working in a clockwise direction, the right edge box is forced to be red, the bottom corner therefore is forced to be blue, and the bottom edge is forced to be yellow.
+ \[\begin{tabular}{|c|c|c|} \hline  & B & Y \\ \hline  & R & R \\ \hline  & Y & B \\ \hline \end{tabular}\]Now we must consider the bottom left corner. If we set the bottom left corner to red, the left edge therefore must be blue, but then nothing can be filled in for the top left box (red causes left edge to violate the blue -> yellow rule, blue fails for a multitude of reasons, and yellow violates the yellow -> red rule).
+ \[\begin{tabular}{|c|c|c|} \hline ? & B & Y \\ \hline B & R & R \\ \hline R & Y & B \\ \hline \end{tabular}\]Yellow also doesn't work, since we get:
+ \[\begin{tabular}{|c|c|c|} \hline B & B & Y \\ \hline R & R & R \\ \hline Y & Y & B \\ \hline \end{tabular}\]but then the blue top-left corner has no adjacent yellow box.On the other hand, blue does give $4$ valid configurations:
+
+ Either $(1)$:
+ \[\begin{tabular}{|c|c|c|} \hline R & B & Y \\ \hline R & R & R \\ \hline B & Y & B \\ \hline \end{tabular}\]or $(2)$:
+ \[\begin{tabular}{|c|c|c|} \hline Y & B & Y \\ \hline R & R & R \\ \hline B & Y & B \\ \hline \end{tabular}\]or $(3)$:
+ \[\begin{tabular}{|c|c|c|} \hline R & B & Y \\ \hline Y & R & R \\ \hline B & Y & B \\ \hline \end{tabular}\]or $(4)$:
+ \[\begin{tabular}{|c|c|c|} \hline B & B & Y \\ \hline Y & R & R \\ \hline B & Y & B \\ \hline \end{tabular}\]
+
+ We can now explain why it's valid to assume that the upper edge box is blue: if it were yellow instead, the grid would simply be the reflection of one of the above configurations through the middle row, precisely because the bottom edge box is yellow (as this would then become the upper edge box under the reflection). If the upper edge box were red, either the upper-left or the upper-right box would have to be blue, and so by reflection through the middle column (just like above), we can assume that the upper-right box specifically is blue. Again similarly to above, we can now fill in the rest of the entire grid, giving one of the following $5$ configurations:
+
+ Either $(A)$:
+ \[\begin{tabular}{|c|c|c|} \hline Y & R & B \\ \hline B & R & Y \\ \hline R & R & B \\ \hline \end{tabular}\]or $(B)$:
+ \[\begin{tabular}{|c|c|c|} \hline R & R & B \\ \hline B & R & Y \\ \hline Y & R & B \\ \hline \end{tabular}\]or $(C)$:
+ \[\begin{tabular}{|c|c|c|} \hline Y & R & B \\ \hline B & R & Y \\ \hline Y & R & B \\ \hline \end{tabular}\]or $(D)$:
+ \[\begin{tabular}{|c|c|c|} \hline Y & R & B \\ \hline B & R & Y \\ \hline R & Y & B \\ \hline \end{tabular}\]or $(E)$:
+ \[\begin{tabular}{|c|c|c|} \hline Y & R & B \\ \hline B & R & Y \\ \hline B & Y & B \\ \hline \end{tabular}\]But $(B)$ is simply the reflection of $(A)$ in the bottom row, so we can eliminate it. After that, we observe that $(A)$ is a rotation of $(1)$ above, $(C)$ is a rotation of $(2)$, $(D)$ is a rotation of $(3)$, and $(E)$ is a rotation of $(4)$, so we can in fact eliminate all of these too.
+
+ Accordingly, having taken the central box as red, there are $4$ distinct possible configurations (precisely $(1)$ to $(4)$ above), and by symmetry, that number of possible configurations will clearly be the same if the central box is blue or yellow instead. Thus there are $3$ possible choices for the central box, followed by $4$ ways to complete the grid in each of these cases, so the total number of possible grids is $3 \cdot 4 = \boxed{\textbf{(C) } 12}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) A seven-digit positive integer is chosen at random. What is the probability that the number is divisible by $11$, given that the sum of its digits is $61?$
+
+
+ $\textbf{(A) } \frac{3}{14} \qquad\textbf{(B) } \frac{3}{11} \qquad\textbf{(C) }\frac{2}{7}\qquad\textbf{(D) } \frac{4}{11} \qquad\textbf{(E) } \frac{3}{7}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Let the number be represented as $\overline{a_1a_2a_3a_4a_5a_6a_7}.$ 
+
+ We first seek to find the number of seven-digit integers with $a_1+a_2+a_3+a_4+a_5+a_6+a_7 = 61.$ We would love to do stars and barshere, but we have the condition that $0 \leq a_n \leq 9.$ Therefore, we define $a_n' = 9-a_n \implies a_n = 9-a_n'.$ This is a bijective operation, so the total number of integers doesn't change when we use these digits instead. Substituting in gives that 
+
+ \begin{align*}\sum_{k=1}^{7}{(9-a'_k)} &= 61, \\a_1' + a_2' + a_3' + a_4' + a_5' + a_6' + a_7' &= 2.\end{align*}
+
+
+ Since the $a_n'$ are nonnegative integers and the condition $a_n' \leq 9$ doesn't matter with a sum less than 9, we can do stars and bars to figure out the number of permutations of digits that satisfy the constraint: ${{2+6}\choose {2}} = {8\choose 2} = 28.$
+
+ Now, we need to find how many of these integers are divisible by $11.$ We can use the divisibility by $11$ rule, which says that $(a_1+a_3+a_5+a_7) - (a_2+a_4+a_6) = 11k$ for some integer $k.$ Notice that $k \geq 1$ because, otherwise, $a_2+a_4+a_6 > 27$ which is the maximum sum of three digits. In addition, $k \leq 1$ because, otherwise $a_1+a_3+a_5+a_7 > 36$ which is the maximum sum of four digits. Therefore $k = 1.$
+
+ Then we have that $(a_1+a_3+a_5+a_7) - (a_2+a_4+a_6) = 11,$ so $a_1+a_3+a_5+a_7 = 36$ and $a_2+a_4+a_6 = 25.$ The first equation can only result in $a_1=a_3=a_5=a_7 = 9.$ The second equation can be rewritten in a similar manner as before to get that \begin{align*}(9-a_2') + (9-a_4') + (9-a_6') &= 25, \\a_2' + a_4' + a_6' &= 2.\end{align*}
+
+
+ Again, with stars and bars, there exists ${{2+2}\choose {2}} = {4\choose 2} = 6$ ordered triples of $(a_2, a_4, a_6)$. 
+
+ Therefore, our answer is 
+ \[\frac{6}{28} = \boxed{\text{(A)\ } \frac{3}{14}}.\]
+
+ 
+
+
+
+\textbf{Solution 2 (similar to 1, simplified)}
+
+Note the divisibility rule of 11. The sum of every other digit minus the sum of the rest of the digits must be divisible by 11.
+
+ The maximum possible sum of digits in a 7-digit number is 63 ($9999999$). Since the sum of the digits in the mystery number is 61, we have two possible scenarios. Either 5 digits are 9 and 2 digits are 8 (ex: $9899989$, $9999988$), or 6 digits are 9 and 1 digit is 7 ($9979999$). Going case by case, there are 7 numbers involving six digits as 9 and one as 7 and 21 numbers involving five digits as 9 and two digits as eight, giving a total 28 possible numbers. 
+
+ Utilizing the divisibility rule, it can be seen that in order to satisfy the rule, the 7 or both 8s must be in the even positions (such that the number satisfies $9X9X9X9$). There are 3 numbers that satisfy $9X9X9X9$ where one of the $X$ is 7 and the other two are 9, and 3 numbers that satisfy $9X9X9X9$ where 2 of the $X$ are 8 and the other is 9, giving 6 satisfying numbers. Therefore, the answer is 
+ \[\frac{6}{28} = \boxed{\text{(A)\ } \frac{3}{14}}.\].
+
+ 
+
+
+
+\textbf{Solution 3 (similar to solution 2, easiest way)}
+
+As in solution $2$, we find that there are $2$ possibilities for $7$-digit numbers with digits summing to 61. As the divisibility rule for $11$ is that we must have that the sum of the digits in the even places minus the sum of the digits in the odd places is 0 or 11 with the two cases we have ($9999988$ and $9999997$), we see that the even places must all be $9$. Then there are 3 possibilities for each number for each. We then use simple combinations to find that there are $28$ possible configurations of these $2$ possibilities. We simplify the fraction of our favored outcomes over the total to get our answer of $\boxed{\frac{3}{14}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) A rectangular grid of squares has $141$ rows and $91$ columns. Each square has room for two numbers. Horace and Vera each fill in the grid by putting the numbers from $1$ through $141 \times 91 = 12{,}831$ into the squares. Horace fills the grid horizontally: he puts $1$ through $91$ in order from left to right into row $1$, puts $92$ through $182$ into row $2$ in order from left to right, and continues similarly through row $141$. Vera fills the grid vertically: she puts $1$ through $141$ in order from top to bottom into column $1$, then $142$ through $282$ into column $2$ in order from top to bottom, and continues similarly through column $91$. How many squares get two copies of the same number?
+
+
+ $\textbf{(A) } 7 \qquad \textbf{(B) } 10 \qquad \textbf{(C) } 11 \qquad \textbf{(D) } 12 \qquad \textbf{(E) } 19$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let's say $n$ is one of the numbers that got written twice in the same box. Suppose it is at column $x$ and row $y$. We will write an expression for $n$ in terms of $x$ and $y$ in two ways: from Horace's perspective and Vera's perspective.
+
+ From Horace's perspective, $n = (y-1)(141) + x$. This is because there are $y-1$ full rows before $n$, and we then need $x$ more numbers to reach $n$. Similarly, Vera will say $n = (x-1)(91) + y$.
+
+ We now have the Diophantine equation
+ \[(y-1)(141) + x = (x-1)(91)+y\]
+ \[141y-141+x = 91x-91+y\]
+ \[140y=90x+50\]
+ \[14y = 9x + 5\]One such solution is, of course, $x=y=1$. We find further solutions by adding $14$ to $x$ and $9$ to $y$. For example, the second solution is $(15,10)$. This continues until $(141,91)$ is reached. There are $\boxed{11}$ ordered pairs in this list.
+
+ 
+
+
+
+\textbf{Solution 1 (Easier way to count)}
+
+The Diophantine equation $14y-9x=5$ is in the form $ax+by = c$ has primary solution $(x_0, y_0) = (1,1)$. Also, $h = \gcd(a,b) =\gcd(14, -5) = \gcd(14,5) = 1$, and thus the solutions are of the form
+
+ 
+ \[y = 1 + 9k\]
+ \[x = 1 + 14k\]
+
+ for some $k$.
+
+ Then, notice that because $k \ge 0$, $1 \le x \le 141$, and $1 \le y \le 91$, the largest value possible is $(x,y) = (141, 91)$, and thus
+
+ 
+ \[14k \le 140\]
+ \[9k \le 90\].
+
+ In which $k \le 10$ in both cases. Thus there are 10 positive integers $k$ that satisfy the following. Including 0, there are $10 + 1 = \boxed{11}$.
+
+ 
+
+
+
+\textbf{Solution 2 (0-indexing)}
+
+For these types of problems, we essentially analyze residues, so it is more convenient to work with 0-indexing: $c=0,1,2,\dots,90$, $r=0,1,2,\dots,140$.
+
+ Then $n=91r+c+1=141c+r+1\iff 9r=14c$. We must have $(r,c)=(0,0),(14,9),(28,18),\dots,(140,90)$ so $\boxed{ \textbf{(C)}~11 }$.
+
+ 
+
+
+
+\textbf{Solution 2 (faster ending)}
+
+After indexing to 0, we imagine a line that passes from $(0,0)$ to $(140,90)$. We know we are looking for all lattice points that lie on this line (this intuitively makes sense, because any points above the line would have column numbers far ahead of the rows, and vice versa). 
+
+ Therefore, we know that the number of points must divide both $140$ and $90$. The GCD of the two is 10. We also account for point $(0,0)$, and get that $10+1=\boxed{ \textbf{(C)}~11 }$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Observe that Horaces number can be expressed as the remainder of the row number plus the column number so $H$(Horaces Number)$=91(c-1)$(column addition)$+r$(remainder of division) and do the same for Vera $V=141(r-1)+c$.The condition is $H=V$ so set the equations equal to each other. $91(c-1)+r=141(r-1)+c$ so $91c-91+r=141r-141+c$,$140r=90c+50$.This a linear Diophantine equation and the 1st solution is $(1,1)$ where the solution repeats every $lcm(90,140)=1260$ there are $11$ solutions so $\boxed{\textbf{(C)}11}$ is correct.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) A frog hops along the number line according to the following rules.
+
+
+ $\qquad\bullet$ It starts at $0$.
+
+
+ $\qquad\bullet$ If it is at $0$, then it moves to $1$ with probability $\frac{1}{2}$ and it disappears with probability $\frac{1}{2}$.
+
+
+ $\qquad\bullet$ For $n = 1, 2,$ or $3,$ if it is at $n,$ then it moves to $n+1$ with probability $\frac{1}{4},$ it moves to $n-1$ with probability $\frac{1}{4},$ and it disappears with $\qquad\phantom{\bullet}$ probability $\frac{1}{2}$.
+
+
+ What is the probability that the frog reaches ${4\,?}$
+
+
+ $\textbf{(A) } \frac{1}{101} \qquad\textbf{(B) } \frac{1}{100} \qquad\textbf{(C) } \frac{1}{99} \qquad\textbf{(D) } \frac{1}{98} \qquad\textbf{(E) } \frac{1}{97}$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1 (conditional probabilities of reaching 4)}
+
+We will solve this using the \href{https://en.wikipedia.org/wiki/Law\_of\_total\_probability}{law of total probability} (otherwise apparently known in Olympiad folklore as the method of "states", presumably reflecting the fact that these are kids who won't yet have studied formal/axiomatic probability theory). Firstly, we note that the probabilities of the frog taking each of its possible moves always depend only on its current position, and not on how it got there - in other words, the frog, just like coins or dice, 'has no memory'. Therefore, we can unambiguously define $p_n$ as the probability of reaching $4$ given that the frog is currently at position $n$. We want to find $p_0$ (since the frog starts at $0$), and of course $p_4 = 1$.
+
+ 
+For each value of $n$, we now consider the conditional probabilities of reaching $4$ given that the frog takes each of the possible moves from its current position. For instance, if the frog is at $3$, it can go to $3-1 = 2$ with probability $\frac{1}{4}$, and if it does, the conditional probability of it now reaching $4$ from its new position at $2$ is $p_2$ by definition; or it can go to $3+1 = 4$, also with probability $\frac{1}{4}$, and if it does, the conditional probability is of course $p_4 = 1$; or it can disappear with probability $\frac{1}{2}$, and if it does, it can never reach $4$, i.e. the conditional probability is $0$.
+
+ 
+By analogous arguments at each of the other possible values of $n$, and then by applying the law of total probability, we deduce that
+ \begin{align*}p_3 &= \frac{1}{4}p_4 + \frac{1}{4}p_2 \\ p_2 &= \frac{1}{4}p_3 + \frac{1}{4}p_1 \\ p_1 &= \frac{1}{4}p_2 + \frac{1}{4}p_0, \text{ and} \\ p_0 &= \frac{1}{2}p_1.\end{align*}
+Finally, by solving this system of equations, it follows that $p_0 = \boxed{\textbf{(E) } \frac{1}{97}}$ (and incidentally, the probabilities for the frog's other possible starting positions are $p_1 = \frac{2}{97}, p_2 = \frac{7}{97},$ and $p_3 = \frac{26}{97}$).
+
+ 
+
+
+
+\textbf{Solution 2 (conditional probabilities of taking single steps)}
+
+Let $p_n$ be the probability that the frog eventually reaches position $n$, given that it is at position $n-1$. (This is well-defined because the frog 'has no memory', just as explained in Solution 1.)
+
+ From position $0$, the frog moves to $1$ with probability $\frac{1}{2}$, or disappears with probability $\frac{1}{2}$. Hence$p_1 = \frac{1}{2}$.
+
+ From position $1$, the frog moves to $2$ with probability $\frac{1}{4}$, back to $0$ with probability $\frac{1}{4}$, or disappears with probability $\frac{1}{2}$. Thus, by the law of total probability (again similarly to in Solution 1) and using $p_1 = \frac{1}{2}$ from above, we obtain
+ \[p_2 = \frac{1}{4} + \frac{1}{4} \cdot \frac{1}{2} p_2 = \frac{1}{4} + \frac{1}{8} p_2 \iff \frac{7}{8} p_2 = \frac{1}{4} \iff p_2 = \frac{2}{7}.\]
+
+ 
+We also now observe that if the frog is currently at $1$ and wants to eventually reach $3$, then it will necessarily have to pass through $2$ first, since all of its possible moves only increase or decrease its position by $1$. Accordingly, if the frog is at $2$ and chooses to move back to $1$, then the conditional probability that it eventually reaches $3$ from its new position at $1$ is equivalent to the probability that it eventually reaches $2$ starting at $1$ \textit{and then} eventually reaches $3$ starting at $2$. That in turn reduces to the product of these two conditional probabilities: that of reaching $2$ starting at $1$ is $p_2 = \frac{2}{7}$ from above, while that of reaching $3$ starting at $2$ is $p_3$.
+
+ Using the law of total probability (analogously to above) at position $2$, it follows that
+ \[p_3 = \frac{1}{4} + \frac{1}{4} \cdot \frac{2}{7} p_3 = \frac{1}{4} + \frac{1}{14} p_3 \iff \frac{13}{14} p_3 = \frac{1}{4} \iff p_3 = \frac{7}{26}.\]
+
+ Now from position 3, using $p_3 = \frac{7}{26}$ as just found above, we deduce that
+ \[p_4 = \frac{1}{4} + \frac{1}{4} \cdot \frac{7}{26} p_4 \iff \frac{97}{104} p_4 = \frac{1}{4} \iff p_4 = \frac{26}{97}.\]
+
+ Lastly, again because all of the frog's possible moves only increase or decrease its position by $1$ (as explained above), the required probability that it eventually reaches $4$ starting at $0$ is equivalent to the probability that it eventually reaches $1$ starting at $0$, \textit{then} reaches $2$ starting at $1$, \textit{then} $3$ starting at $2$, \textit{and then} $4$ starting at $3$. Similarly to above, this reduces to the product of the conditional probabilities $p_1, p_2, p_3,$ and $p_4$, i.e. $\frac{1}{2} \cdot \frac{2}{7} \cdot \frac{7}{26} \cdot \frac{26}{97} = \boxed{ \textbf{(E) } \frac{1}{97}}.$
+
+ 
+
+
+
+\textbf{Solution 3 (recurrence relation)}
+
+As in Solution 1, let $p_n$ be the probability of reaching $4$ given that the frog is currently at position $n$, and observe that for $n = 1,2,3$, the frog can either go to position $n+1$ with probability $\frac{1}{4}$, in which case the conditional probability of it reaching $4$ is precisely $p_{n+1}$ by definition; or position $n-1$, also with probability $\frac{1}{4}$, giving a conditional probability of reaching $4$ of $p_{n-1}$, again by definition; or else it disappears with probability $\frac{1}{2}$, in which case the conditional probability of reaching $4$ is obviously $0$. Therefore, by the law of total probability, we have the recurrence relation 
+ \[p_n = \frac{1}{4} \cdot p_{n+1} + \frac{1}{4} \cdot p_{n-1} + \frac{1}{2} \cdot 0 \iff 4p_n = p_{n+1}+p_{n-1} \iff p_{n+1}-4p_n+p_{n-1} = 0, \qquad \text{for } n = 1,2,3.\]
+
+ Moreover, one boundary condition is obviously $p_4 = 1$, while the other concerns $p_0$: since the frog, starting at position $0$, moves to $1$ with probability $\frac{1}{2}$, in which case the conditional probability of it reaching $4$ will be precisely $p_1$, or else disappears, also with probability $\frac{1}{2}$, the law of total probability again gives 
+ \[p_0 = \frac{1}{2} \cdot p_1 + \frac{1}{2} \cdot 0 \iff 2p_0 = p_1.\] We can now simply use standard methods to solve the above recurrence relation, subject to these two boundary conditions.
+
+ 
+Accordingly, the characteristic equation for this recurrence relation is $\lambda^2 - 4\lambda + 1 = 0 \iff (\lambda-2)^2 = 2^2-1 \iff \lambda = 2 \pm \sqrt{3}$, so its general solution is given by 
+ \[p_n = A\left(2+\sqrt{3}\right)^n + B\left(2-\sqrt{3}\right)^n\] for some constants $A$ and $B$. Imposing the boundary conditions now yields 
+ \[2p_0 = p_1 \iff 2(A \cdot 1 + B \cdot 1) = A\left(2+\sqrt{3}\right) + B\left(2-\sqrt{3}\right) \iff A\sqrt{3}-B\sqrt{3} = 0 \iff A = B,\] and hence 
+ \[p_4 = 1 \iff A\left(2+\sqrt{3}\right)^4+A\left(2-\sqrt{3}\right)^4 = 1 \iff A\left(97+56\sqrt{3}+97-56\sqrt{3}\right) = 1 \iff A = B = \frac{1}{194}.\]This means the particular solution is precisely 
+ \[p_n = \frac{1}{194}\left(2+\sqrt{3}\right)^n + \frac{1}{194}\left(2-\sqrt{3}\right)^n = \frac{1}{194}\left(\left(2+\sqrt{3}\right)^n+\left(2-\sqrt{3}\right)^n\right),\]and so, again as in Solution 1, the required probability is $p_0 = \frac{1}{194}\cdot\left(1+1\right) = \boxed{ \textbf{(E) } \frac{1}{97}}.$
+
+ ~Ebai
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2025}) Square $ABCD$ has sides of length $4$. Points $P$ and $Q$ lie on $\overline{AD}$ and $\overline{CD}$, respectively, with $AP=\frac{8}{5}$ and $DQ=\frac{10}{3}$. A path begins along the segment from $P$ to $Q$ and continues by reflecting against the sides of $ABCD$ (with congruent incoming and outgoing angles). If the path hits a vertex of the square, it terminates there; otherwise it continues forever. At which vertex does the path terminate?
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2025_25_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A) } A \qquad \textbf{(B) } B \qquad \textbf{(C) } C \qquad \textbf{(D) } D  \qquad \textbf{(E) } \text{The path continues forever.}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1 (Cheese, draw the path)}
+
+For this question, I cheesed it by just drawing the path with a ruler and an compass, and you can find that the path eventually terminates at vertex B by doing so. Therefore, the answer is $\boxed{\mathbf{(B)\,\mathnormal{B}}}$.
+
+ Note - Protractors are not allowed on the AMC Exam, but you can sort of achieve the same thing with a compass
+
+ Remark: I actually did this on the test, and I didn't even sketch out the diagram either. I had like a minute left on the clock, and I traced the path of the line lightly on my screen (I was taking digital version) and somehow got it correctly lol. I didn't even use a compass or anything either 🤣 (verified tracing, works. You don't even have to be very accurate to see that the answer is B- Happymaths)
+
+ 
+
+
+
+\textbf{Solution 2 (Trivial Algebra)}
+
+First, let me introduce the reflection trick.  Basically, instead of bending the line segment a bunch of times, map any path of the line segment into a reflected square, reflecting the square about the segment that the ray touches.  Every time this happens, we map the latest square onto a new one.  After we do this many times, the entire path becomes a straight line:
+
+ \href{https://ibb.co/VkCbKNT}{Illustration link, hosted on imgbb (I'm too tired to use Asymptote)}
+
+ So now, we could just imagine the whole reflection path as a huge straight ray in the coordinate plane.  When it lands upon a $x$ and $y$ both divisible by $4$, since a corner reflected is still a corner, we can then trace the corner back.
+
+ Note that by some trivial arithmetic you get that $PD=4-\frac{8}{5}=\frac{12}{5}$, and if we let $A$ be the origin of a coordinate plane, $AD$ be the $y$-axis and $AB$ be the $x$-axis, the slope of $PQ$ is $\frac{12}{5}\div\frac{10}{3}$ using rise over run, which is $\frac{18}{25}$.  Trivially, the $y$-intercept of $PQ$ is $\frac{8}{5}$, so the equation of $PQ$ becomes
+ \[y=\frac{18}{25}x+\frac{8}{5}\]and you want both $x$ and $y$ to be divisible by $4$.  Right off the bat, note that the denominator in the linear term is $25$, so to have any chance of $y$ being an integer AT ALL, $x$ must be divisible by $5$ (else the resulting fraction will have something over $25$ plus something over $5$, so there's extra $1/25$s.)
+
+ Therefore, $x$ must be a multiple of $20$.  Then let's try $x=20$!  We get $y=16$, which is divisible by $4$!  Yay!!!  You might start to sweat about the exact path and how to trace the vertices now, but that does not matter: we can see that if we first reflect to the right and then up, it's no difference than if we went up and then right.  So it doesn't matter if we do all the horizontal or vertical reflections all together.
+
+ \href{https://ibb.co/fYJc6Ks1}{Illustration link, hosted on imgbb (I'm too tired to use Asymptote)}
+
+ Now you can just label a random square $ABCD$, and reflect to the right $4$ times (since you already have 1 square) and then up $3$ times.  You'll then notice that $(20,16)$ is just a copy of $\boxed{\mathbf{(B)\,\mathnormal{B}}}$.
+
+ \textbf{Upgraded Solution 1} Use the scratch paper's corner and fold it to necessary to mold and replicate angles, then use a straightedge to trace it.
+
+ 
+
+
+\end{enumerate}
