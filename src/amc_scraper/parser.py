@@ -268,6 +268,8 @@ def cleaning_tex(statement):
         .replace('\u2212', '-')
         .replace('\u301c', r'$\sim$')
         .replace('\ufffd', '')
+        .replace('\u2220', r'$\angle$')
+        .replace('\u22a5', r'$\perp$')
         .replace('…', r'\ldots')
         .replace(r'\usepackage{gensymb}', '')
         .replace(r'\begin{array}{lc}\text{Least number}',r'\begin{array}{lccccc}\text{Least number}')

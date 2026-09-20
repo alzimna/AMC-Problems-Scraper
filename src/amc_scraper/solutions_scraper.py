@@ -81,6 +81,9 @@ def get_solutions_from_page(source,numprob,number) :
         if "wikitable" in (child.get("class") or []):
             break
 
+        if "print" in (child.get("class") or []) :
+            break
+
         span = child.find("span")
         if span is not None and span.get("id", "").lower() == "see_also":
             break

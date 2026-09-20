@@ -1,0 +1,620 @@
+\section{USAJMO 2010}
+        \begin{enumerate}
+        	\item (\textit{USAJMO 2010}) A permutation of the set of positive integers $[n] = \{1, 2, \ldots, n\}$ is a sequence $(a_1, a_2, \ldots, a_n)$ such that each element of $[n]$ appears precisely one time as a term of the sequence. For example, $(3, 5, 1, 2, 4)$ is a permutation of $[5]$. Let $P(n)$ be the number of permutations of $[n]$ for which $ka_k$ is a perfect square for all $1\leq k\leq n$. Find with proof the smallest $n$ such that $P(n)$ is a multiple of $2010$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We claim that the smallest $n$ is $67^2 = \boxed{4489}$.
+
+ Let $S = \{1, 4, 9, \ldots\}$ be the set of positive perfect squares. We claim that the relation $R = \{(j, k)\in [n]\times[n]\mid jk\in S\}$ is an equivalence relation on $[n]$.
+
+ 
+                \begin{itemize}
+                    \item It is reflexive because $k^2\in S$ for all $k\in [n]$.\item It is symmetric because $jk\in S\implies kj = jk\in S$.\item It is transitive because if $jk\in S$ and $kl\in S$, then $jk\cdot kl = jlk^2\in S\implies jl\in S$, since $S$ is closed under multiplication and a non-square times a square is always a non-square.
+                \end{itemize}
+
+
+                We are restricted to permutations for which $ka_k \in S$, in other words to permutations that send each element of $[n]$ into its equivalence class. Suppose there are $N$ equivalence classes: $C_1, \ldots, C_N$. Let $n_i$ be the number of elements of $C_i$, then $P(n) = \prod_{i=1}^{N} n_i!$.
+
+ Now $2010 = 2\cdot 3\cdot 5\cdot 67$. In order that $2010\mid P(n)$, we must have $67\mid n_m!$ for the class $C_m$ with the most elements. This means $n_m\geq 67$, since no smaller factorial will have $67$ as a factor. This condition is sufficient, since $n_m!$ will be divisible by $30$ for $n_m\geq 5$, and even more so $n_m\geq 67$.
+
+ The smallest element $g_m$ of the equivalence class $C_m$ is square-free, since if it were divisible by the square of a prime, the quotient would be a smaller element of $C_m$. Also, each prime $p$ that divides $g_m$ divides all the other elements $k$ of $C_m$, since $p^2\mid kg_m$ and thus $p\mid k$. Therefore $g_m\mid k$ for all $k\in C_m$. The primes that are not in $g_m$ occur an even number of times in each $k\in C_m$.
+
+ Thus the equivalence class $C_m = \{g_mk^2\leq n\}$. With $g_m = 1$, we get the largest possible $n_m$. This is just the set of squares in $[n]$, of which we need at least $67$, so $n\geq 67^2$. This condition is necessary and sufficient.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Solution 1 can also be rephrased as follows, in a longer way, but with fewer highly technical words such as "equivalence relation":
+
+ It is possible to write all positive integers $n$ in the form $p\cdot m^2$, where $m^2$ is the largest perfect square dividing $n$, so $p$ is not divisible by the square of any prime. Obviously, one working permutation of $[n]$ is simply $(1, 2, \ldots, n)$; this is acceptable, as $ka_k$ is always $k^2$ in this sequence.
+
+ \textbf{Lemma 1.} We can permute any numbers that, when each divided by the largest perfect square that divides it, yield equal quantities $p$.
+
+ \textit{Proof.} Let $p_k$ and $m_k$ be the values of $p$ and $m$, respectively, for a given $k$ as defined above, such that $p$ is not divisible by the square of any prime. We can obviously permute two numbers which have the same $p$, since if $p_j = p_w$ where $j$ and $w$ are 2 values of $k$, then $j\cdot w = p_j^2\cdot m_j^2\cdot m_w^2$, which is a perfect square. This proves that we can permute any numbers with the same value of $p$.
+
+ \textbf{End Lemma}
+
+ \textbf{Lemma 2.} We will prove the converse of Lemma 1: Let one number have a $p$ value of $\phi$ and another, $\gamma$. $\phi\cdot f$ and $\gamma\cdot g$ are both perfect squares.
+
+ \textit{Proof.} $\phi\cdot f$ and $\gamma\cdot g$ are both perfect squares, so for $\phi\cdot \gamma$ to be a perfect square, if $g$ is greater than or equal to $f$, $g/f$ must be a perfect square, too. Thus $g$ is $f$ times a square, but $g$ cannot divide any squares besides $1$, so $g = 1f$; $g = f$. Similarly, if $f\geq g$, then $f = g$ for our rules to keep working.
+
+ \textbf{End Lemma}
+
+ We can permute $l$ numbers with the same $p$ in $l!$ ways. We must have at least 67 numbers with a certain $p$ so our product will be divisible by 67. Obviously, then it will also be divisible by 2, 3, and 5, and thus 2010, as well. Toms as $h$, in general, we need numbers all the way up to $h\cdot 67^2$, so obviously, $67^2$ is the smallest such number such that we can get a $67!$ term; here 67 $p$ terms are 1. Thus we need the integers $1, 2, \ldots, 67^2$, so $67^2$, or $\boxed{4489}$, is the answer.
+
+ 
+
+
+
+\textbf{Solution 3 (Not a formal proof but understandable)}
+
+We claim the smallest $n$ is $67^2 = \boxed{4489}$Looking at small cases we see that $P(n)$ changes every time n increases to a perfect square. We find that we can not permute the non squares around because $n$ (not a perfect square) $*a_w$ where $w \neq n$ will not give a perfect square. But we can permute the perfect squares around to other perfect squares since a square times a square makes another square we can do this (\# of squares below $n$)! times. So now we need to find $n = a^2$ such that $a!$ is divisible by $2010$ which largest prime factor is $67$ so, $n$ is $n$ is $67^2 = \boxed{4489}$~bjump
+
+ 
+
+
+
+\textbf{Solution Number Sense}
+
+We have to somehow calculate the number of permutations for a given $n$. How in the world do we do this? Because we want squares, why not call a number $k=m*s^2$, where $s$ is the largest square that allows $m$ to be non-square?  $m=1$ is the only square $m$ can be, which only happens if $k$ is a perfect square.
+
+ For example, $126 = 14 * 3^2$, therefore in this case $k=126, m = 14, s = 3$.
+
+ I will call a permutation of the numbers $P$, while the original $1, 2, 3, 4, ...$ I will call $S$.
+
+ Note that essentially we are looking at "pairing up" elements between $P$ and $S$ such that the product of $P_k$ and $S_k$ is a perfect square. How do we do this? Using the representation above.
+
+ Each square has to have an even exponent of every prime represented in its prime factorization. Therefore, we can just take all exponents of the primes $mod 2$ and if there are any odd numbers, those are the ones we have to match- in effect, they are the $m$ numbers mentioned at the beginning.
+
+ By listing the $m$ values, in my search for "dumb" or "obvious" ideas I am pretty confident that only values with identical $m$s can be matched together. With such a solid idea let me prove it.
+
+ If we were to "pair up" numbers with different $m$s, take for example $S_{18}$ with an $m$ of $2$ and $P_{18}=26$ with an $m$ of $26$, note that their product gives a supposed $m$ of $13$ because the $2$ values cancel out. But then, what happens to the extra $13$ left? It doesn't make a square, contradiction. To finish up this easy proof, note that if a "pair" has different $m$ values, and the smaller one is $m_1$, in order for the product to leave a square, the larger $m$ value has to have not just $m_1$ but another square inside it, which is absurd because we stipulated at the beginning that $m$ was square-free except for the trivial multiplication identity, 1.
+
+ Now, how many ways are there to do this? If there are $c_1$ numbers with $m=1$, there are clearly $(c_1)!$ ways of sorting them. The same goes for $m=2, 3, etc.$ by this logic. Note that the $P(n)$ as stated by the problem requires a $67$ thrown in there because $2010=2*3*5*67$, so there has to be a $S_n$ with 67 elements with the same $m$. It is evident that the smallest $n$ will occur when $m=1$, because if $m$ is bigger we would have to expand $n$ to get the same number of $m$ values. Finally, realize that the only numbers with $m=1$ are square numbers! So our smallest $n=67^2=4489$, and we are done.
+
+ I relied on looking for patterns a lot in this problem. When faced with combo/number theory, it is always good to draw a sketch. Never be scared to try a problem on the USAJMO. It takes about 45 minutes. Well, it's 2010 and a number 1. Cheers!
+
+ -expiLnCalc
+
+ 
+
+
+
+\textbf{Solution 4}
+
+It's well known that there exists $f(n)$ and $g(n)$ such that $n = f(n) \cdot g(n)$, no square divides $f(n)$ other than 1, and $g(n)$ is a perfect square.
+
+ \begin{verbatim}
+Lemma: $k \cdot a_k$ is a perfect square if and only if $f(k) = f(a_k)$ 
+\end{verbatim}
+
+We prove first: If $f(k) = f(a_k)$, $k \cdot a_k$ is a perfect square. 
+
+ $k \cdot a_k = f(k) \cdot g(k) \cdot f(a_k) \cdot g(a_k) = f(k)^2 \cdot g(k) \cdot g(a_k)$, which is a perfect square. 
+
+ We will now prove: If $k \cdot a_k$ is a perfect square, $f(k) = f(a_k)$.
+
+ We do proof by contrapositive: If $f(k) \neq f(a_k)$, $k \cdot a_k$ is not a perfect square. 
+
+ $v_p(k)$ is the p-adic valuation of k. (Basically how many factors of p you can take out of k)
+
+ Note that if $f(k) \neq f(a_k)$, By the Fundamental Theorem of Arithmetic, $f(k)$ and $f(a_k)$'s prime factorization are different, and thus there exists a prime p, such that $v_p(f(k)) \neq v_p(f(a_k))$. Also, since $f(k)$ and $f(a_k)$ is squarefree, $v_p(k), v_p(a_k) \leq 1$. Thus, $v_p(k \cdot a_k) = 1$, making $k \cdot a_k$ not a square.
+
+ \begin{verbatim}
+End Lemma
+\end{verbatim}
+
+Thus, we can only match k with $a_k$ if they have the same f value. Thus, to find P(k), we can do it by f value, permuting the $a_k$ with f value 1, then 2, ... Thus, our answer is:
+
+ $P(n) = \prod_{1 \leq i \leq n, g(i) = 1} \left\lfloor \sqrt{\frac{n}{i}} \right \rfloor !$ 
+
+ For all $n < 67^2$, $P(n)$ doesn't have a factor of 67. However, if $n = 67^2$, the first term will be a multiple of 2010, and thus the answer is $67^2 = \boxed{4489}$
+
+ -Alexlikemath
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2010\_USAJMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
+
+ 
+
+
+
+\textbf{Solution 5(stupid but simple)}
+
+The answer is 4489.(67 squared)
+
+ Proof
+
+ We start with trying to fulfill ways to do $P(n)$. When n is 1 there is one way to do it and fulfill $ka_k$ as a perfect square. Same with the numbers 2 and 3. The order for both of these number are all in increasing order 
+ \[1,2\] 
+ \[1,2,3\] Now when it comes to 4 we could do 
+ \[1,2,3,4\] and 
+ \[4,2,3,1\] This means when n is a perfect square it increases where $k$ and $a_k$ are perfect squares. The prime factorization of 2010 is: 
+ \[2010=2*5*3*67\] Because we only care about 67, the biggest divisor we do 67 squared because $n$ has to be a square.
+ \[67^2=4489\] 
+
+ -Multpi12
+
+ 
+
+
+
+\textbf{Solution 6}
+
+We start by realizing that we could change this confusing set theory problem into a number theory problem. Notice that we have $(a_1, a_2, ... a_n)$ as our permutation of the set $(1, 2, ..., n)$. Essentially, the problem is asking us to find the number of permutations of this original set such that $a_1, 2a_2, ..., na_n$ are all perfect squares. From here, we realize that we could write the following:
+
+ $a_1 = (p_1)^{2}$
+
+ $a_2 = 2(p_2)^{2}$
+
+ .
+
+ .
+
+ .
+
+ $a_n = n(p_n)^{2}$
+
+ Thus, we just transformed this problem into the question that how many ways are there such that the elements of the form $n(p_n)^{2}$ are elements of the original set $[n]$. We could easily solve this by looking at ranges. First, we realize $1 \leq (p_1)^{2} \leq n$. Solving, we get $1 \leq p_1 \leq \left\lfloor \sqrt{n} \right\rfloor$. Thus, there are $\left\lfloor \sqrt{n} \right\rfloor$ possibilities for $p_1$. We can now see the pattern by solving the following inequalities and find the total number of permutations are:$\prod_{1 \leq i \leq n} \left\lfloor \sqrt{\frac{n}{i}} \right \rfloor$ Thus, we need $2010 = 2*3*5*67$ to divide that product. Notice this means we need the prime factors $2, 3, 5, 67$ to divide that product. Base cases tells us that the prime factors of $2, 3, 5$ are trivial but $67$ needs to be focused on. We need $67$ to divide that product. This tells us that $\left\lfloor \sqrt{\frac{n}{i}} \right \rfloor$ must be divisible by $67$. Already, we can tell that $n$ has to be at least $67^{2} = 4489$ for this to even hold. This would be the minimum $n$ for $67$ to divide that product. We can test out $4489$ and see that we get factors of $2, 3, 5$ in the product along with our intention of including the prime factor of $67$. Therefore, what we thought was the minimum actually holds and thus our answer should be $\boxed{4489}$. 
+
+ 
+
+
+
+\textbf{Solution 7}
+
+For a given sequence ${a_1,a_2,a_3,...,a_n}$ to obey all the requirements, we must have $a_i \cdot i$ equal to a perfect square for all i from $1$ to $n$ inclusive.
+
+ We first consider a simple permutation ${1,2,3,...,n}$ of ${1,2,3,...,n}$, which satisfies the condition.
+
+ $\textbf{Lemma 1.}$Starting from the sequence ${1,2,3,...n}$, we may swap any two elements whose indices multiply to equal a perfect square, and the resulting sequence will still satisfy all requirements.
+
+ 
+ \[\textit{Proof.}\]Suppose we swap the elements in positions $i$ and $j$. We are given that $i \cdot j$ is a perfect square. After the swap, the elements at position $i = j$ and the element at position $j = i$, so the products are $i \cdot j$ and $j \cdot i$, which are both perfect squares. For all other indices $k \neq i,j$, the product $k \cdot a_k$ remains unchanged (where $a_k$ represents the kth element in the permutation). Hence, the sequence remains valid.
+
+ $\textbf{Lemma 2.}$If two positive integers $a$ and $b$ satisfy that $ab$ is a perfect square, then there exists a positive integer $n$ and integers $x,y$ such that$a = nx^2$ and $b = ny^2$.
+
+ 
+ \[\textit{Proof.}\]Let $ab$ $=$ $\prod_{i=1}^{k} (p_i)^{2e_i}$ be the prime factorization of $ab$. Suppose the exponent of $p_i$ in $a$ is $m_i$ and in $b$ is $n_i$. Since $m_i + n_i = 2e_i$, both $m_i$ and $n_i$ have the same parity. Let $r_i$ = $min(m_i,n_i)$; then we can factor out $n$ and let it equal $(p_i)^{r_i}$. Hence, $m_i - r_i$ and $n_i - r_i$ are both even, so it is possible to write $a=nx^2$ and $b=ny^2$ for some integers $x,y$.
+
+ Let $G_i$ be the set of all numbers of the form $i \cdot a^2$ contained in ${1,2,...,n}$, where $i$ is a fixed positive integer.
+
+ $\textbf{Lemma 3.}$For each $G_i$, the elements can be permuted in any order while preserving validity of the sequence.
+
+ 
+ \[\textit{Proof.}\]The elements of $G_i$ are $i \cdot 1^2, i \cdot 2^2, i \cdot 3^2,..., i \cdot t^2$, where $i \cdot t^2 \leq n$. If we place $i \cdot x^2$ in the position originally occupied by $i \cdot y^2$, then the corresponding product is 
+ \[(i \cdot y^2)(i \cdot x^2) = i^2(xy)^2\], which is a perfect square. Hence, any permutation within $g_i$ still satisfies the given condition.
+
+ Therefore, each $G_i$ may be permuted independently, and the total number of valid sequences is 
+ \[p(n) = (\lfloor \sqrt{n} \rfloor)! \cdot (\lfloor \sqrt{n/2} \rfloor)! \cdot (\lfloor \sqrt{n/3} \rfloor)!... \cdot (\lfloor \sqrt{n/n} \rfloor)!\]We require $p(n)$ to be divisible by $2010 = 2 \cdot 3 \cdot 5 \cdot 67$. Since $67$ is the largest prime factor of $2010$, it suffices that $(\lfloor \sqrt(n) \rfloor)! \geq 67$, because then $67!$ contains all the prime factors of $2010$. To minimize n, we take $\sqrt{n} = 67$, giving 
+ \[n = 67^2 = \boxed{4489}.\]~Irfans123
+
+ 
+
+
+	\item (\textit{USAJMO 2010}) Let $n > 1$ be an integer. Find, with proof, all sequences $x_1, x_2, \ldots, x_{n-1}$ of positive integers with the following three properties:
+
+
+ 
+            \begin{enumerate}
+                
+\item  $x_1 < x_2 < \cdots < x_{n-1}$;
+\item  $x_i + x_{n-i} = 2n$ for all $i = 1, 2, \ldots, n - 1$;
+\item  given any two indices $i$ and $j$ (not necessarily distinct) for which $x_i + x_j < 2n$, there is an index $k$ such that $x_i + x_j = x_k$.
+
+            \end{enumerate}
+            
+
+
+
+\textbf{Solution}
+
+The sequence is $2, 4, 6, \ldots, 2n-2$.
+
+ \textbf{Proof 1} We will prove that any sequence $x_1, \ldots, x_{n-1}$, that satisfiesthe given conditions, is anarithmetic progression with $x_1$ as both the first term and theincrement. Once this is proved, condition (b) implies that$x_1 + x_{n-1} = x_1 + (n-1)x_1 = nx_1 = 2n$. Therefore $x_1 = 2$,and the sequence is just the even numbers from $2$ to $2n-2$. Thesequence of successive even numbers clearly satisfies all three conditions,and we are done.
+
+ First a degenerate case.If $n = 2$, there is only one element $x_1$, and condition (b) gives$x_1 + x_1 = 4$ or $x_1 = 2$. Conditions (a) and (c) are vacuouslytrue.
+
+ Otherwise, for $n > 2$, we will prove by induction on $m$ that thedifference $x_{n-m} - x_{n-1-m} = x_1$ for all $m \in [1, n-2]$,which makes all the differences $x_{n-1} - x_{n-2} = \ldots = x_2 - x_1 = x_1$, i.e. the sequence is an arithmetic progression with$x_1$ as the first term and increment as promised.
+
+ So first the $m=1$ case. With $n > 2$, $x_{n-2}$ exists and is lessthan $x_{n-1}$ by condition (a). Now since by condition (b) $x_1 + x_{n-1} = 2n$, we conclude that $x_1 + x_{n-2} < 2n$, and thereforeby condition (c) $x_1 + x_{n-2} = x_k$ for some $k$.  Now, since$x_1 > 0$, $x_k > x_{n-2}$ and can only be $x_{n-1}$.  So $x_1 + x_{n-2} = x_{n-1}$.
+
+ Now for the induction step on all values of $m$. Suppose we have shown that for all $i \le m$, $x_1 + x_{n-1-i} = x_{n-i}$.  If $m = n-2$ we are done, otherwise $m < n-2$, and bycondition (c) $x_1 + x_{n-2-m} = x_k$ for some $k$. This $x_k$ islarger than $x_{n-2-m}$, but smaller than $x_1 + x_{n-1-m} = x_{n-m}$by the inductive hypothesis. It then follows that $x_1 + x_{n-2-m} = x_{n-1-m}$, the only element of the sequence between $x_{n-2-m}$and $x_{n-m}$. This establishes the result for $i=m+1$.
+
+ So, by induction $x_1 + x_{n-1-m} = x_{n-m}$ for all $m \in [1, n-2]$,which completes the proof.
+
+ \textbf{Proof 2} Let $S=\{x_1,x_2,...,x_{n-1}\}$.Notice that 
+ \[x_1<x_1+x_1<x_1+x_2<\dots <x_1+x_{n-2}<2n.\] Then by condition (c), we must have $x_1,x_1+x_1,...,x_1+x_{n-2}\in S$. This implies that $x_1=x_1,x_1+x_1=x_2,...,x_1+x_{n-2}=x_{n-1}$, or that $x_k=kx_1$. Then we have $x_1+x_{n-1}=n(x_1)=2n\rightarrow x_1=2$, and the rest is trivial.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The claim is that in this sequence, if there are $2$ elements $a,b$ where $a,b<n$, such that $\gcd(a,b)=1$, then the sequence contains every number less than $2n$.
+
+ Proof: Let $a$ and $b$ be the numbers less than $n$ such that $\gcd(a,b)=1$.We take this sequence modulo $n$. This means that if $x_i$ is an element in this sequence then $-x_i$ is as well.$a,b,2n-a,2n-b$ are all elements in the sequence. Clearly, one of $2n-a+b$ and $2n-b+a$ is less than $2n$, which means that $\pm (a-b)$ are in this sequence modulo $n$.Now we want to show every number is achievable. We have already established that $a$ and $b$ are relatively prime, so by euclidean algorithm, if we take the positive difference of $a'$ and $b'$ every time, we will get that $1$ is in our sequence. Then, we can simply add or subtract $1$ as many times from $a$ as desired to get every single number.
+
+ We have proved that there are no two numbers that can be relatively prime in our sequence, implying that no two consecutive numbers can be in this sequence. Because our sequence has $n-1$ terms, our sequence must be one of $2,4,6,..,2(n-1)$ or $1,3,5,...$, the latter obviously fails, so $2,4,6...2(n-1)$ is our only possible sequence.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can add $x_1$ to every expression in property (a) to get 
+ \[2x_1<x_1+x_2<\dots<x_1+x_{n-1}=2n.\] Therefore, we have $n-2$ distinct (because all the $x_i$ are distinct) expressions of the form $x_1+x_i$ for $i = 1, 2, \dots n-1$ that are all less than $2n$, which means these $n-2$ expressions are also equal to some $x_k$. 
+
+ Now, we have that the $x_i$ are all positive, so $x_1>0$. Adding $x_1$ to both sides, $2x_1>x_1$. Therefore, since the $n-2$ expressions are all at least $2x_1$, they have to be equal to $x_2, x_3, \dots, x_{n-1}$.
+
+ Since there are $n-2$ distinct expressions $x_1+x_i$ equal to $n-2$ distinct expressions $x_j$, we have that each $x_1+x_i$ is equal to one $x_j$. Using the orders of the $x_1+x_i$ and the $x_j$, we find that
+ \begin{align*} x_1+x_1 &= x_2 \\ x_1+x_2 &= x_3 \\ ...& \\ x_1+x_{n-2} &= x_{n-1}. \end{align*}
+This gives us
+ \begin{align*} x_1 &= x_1 \\ x_2 &= 2x_1 \\ x_3 &= 3x_1 \\ &\text{ }...\\ x_{n-1} &= (n-1)x_1\\ \end{align*}
+Now, we can use property (b) with $i=1$, so $x_1 + x_{n-1} = 2n$, which means $x_1 = 2$. This gives the sequence 
+ \[\boxed{2, 4, 6, \dots, 2(n-1)}\]-sixeoneeight
+
+ 
+
+
+	\item (\textit{USAJMO 2010}) Let $AXYZB$ be a convex pentagon inscribed in a semicircle of diameter $AB$. Denote by $P, Q, R, S$ the feet of the perpendiculars from $Y$ onto lines $AX, BX, AZ, BZ$, respectively. Prove that the acute angle formed by lines $PQ$ and $RS$ is half the size of $\angle XOZ$, where $O$ is the midpoint of segment $AB$.
+
+
+ 
+
+
+
+\textbf{Solution 0 (play like a God)}
+
+Angles are directed mod 180 {don't worry}(take so that the solution can be applied to any configuration) Let the intersection of pq and rs is M.
+
+ $m\angle ARM=m\angle ZRS =m \angle ZYS =m\angle YZR = m\angle YZA = m \angle YXP = m \angle XYQ =m \angle XPQ = m \angle APM$ This implies APRM is cyclic So: $m \angle PMR = m \angle PAR =m \angle XAZ = \frac{m\angle XOZ}{2}$ and we are done. For any concern mail on harshsahu1098@gmail.com
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $\alpha = \angle BAZ$, $\beta = \angle ABX$.Since $XY$ is a chord of the circle with diameter $AB$,$\angle XAY = \angle XBY = \gamma$. From the chord $YZ$,we conclude $\angle YAZ = \angle YBZ = \delta$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2010_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+ Triangles $BQY$ and $APY$ are both right-triangles, and share theangle $\gamma$, therefore they are similar, and so the ratio $PY : YQ = AY : YB$. Now by \href{https://artofproblemsolving.com/wiki/index.php?title=Thales\%27\_theorem}{Thales' theorem} the angles $\angle AXB = \angle AYB = \angle AZB$ are all right-angles. Also, $\angle PYQ$,being the fourth angle in a quadrilateral with 3 right-angles isagain a right-angle.  Therefore $\triangle PYQ \sim \triangle AYB$ and$\angle YQP = \angle YBA = \gamma + \beta$.Similarly, $RY : YS = AY : YB$, and so $\angle YRS = \angle YAB = \alpha + \delta$.
+
+ Now $RY$ is perpendicular to $AZ$ so the direction $RY$ is $\alpha$ counterclockwise from the vertical, and since $\angle YRS = \alpha + \delta$ we see that $SR$ is $\delta$ clockwise from the vertical. (Draw an actual vertical line segment if necessary.)
+
+ Similarly, $QY$ is perpendicular to $BX$ so the direction $QY$ is $\beta$ clockwise from the vertical, and since $\angle YQP$ is $\gamma + \beta$ we see that $QY$ is $\gamma$ counterclockwise from the vertical.
+
+ Therefore the lines $PQ$ and $RS$ intersect at an angle $\chi = \gamma + \delta$. Now by the central angle theorem $2\gamma = \angle XOY$and $2\delta = \angle YOZ$, and so $2(\gamma + \delta) = \angle XOZ$,and we are done.
+
+ \textit{Note that $RTQY$ is a quadrilateral whose angles sum to 360°; can you find a faster approach using this fact?}
+
+ \textbf{Footnote} We can prove a bit more. Namely, the extensions of the segments$RS$ and $PQ$ meet at a point on the diameter $AB$ that is verticallybelow the point $Y$.
+
+ Since $YR = AY \sin(\delta)$ and is inclined $\alpha$ counterclockwisefrom the vertical, the point $S$ is $AY \sin(\delta) \sin(\alpha)$horizontally to the right of $Y$.
+
+ Now $AS = AY \cos(\delta)$, so $S$ is $AS \sin(\alpha) = AY \cos(\delta)\sin(\alpha)$ vertically above the diameter $AB$. Also,the segment $SR$ is inclined $\delta$ clockwise from the vertical,so if we extend it down from $S$ towards the diameter $AB$ it willmeet the diameter at a point which is$AY \cos(\delta)\sin(\alpha)\tan(\delta) = AY \sin(\delta)\sin(\alpha)$horizontally to the left of $S$. This places the intersection pointof $RS$ and $AB$ vertically below $Y$.
+
+ Similarly, and by symmetry the intersection point of $PQ$ and $AB$is directly below $Y$ on $AB$, so the lines through $PQ$ and $RS$meet at a point $T$ on the diameter that is vertically below $Y$.
+
+ \textbf{Footnote to the Footnote} The Footnote's claim is more easily proved as follows.
+
+ Note that because $\angle{QPY}$ and $\angle{YAB}$ are both complementary to $\beta + \gamma$, they must be equal. Now, let $PQ$ intersect diameter $AB$ at $T'$. Then $PYT'A$ is cyclic and so $\angle{YT'A} = 180^\circ - \angle{APY} = 90^\circ$. Hence $T'YSB$ is cyclic as well, and so we deduce that $\angle{YST'} = \angle{YBT'} = 90^\circ - \alpha - \delta = \angle{YSR}.$ Hence $S, R, T'$ are collinear and so $T = T'$. This proves the Footnote.
+
+ \textbf{Footnote to the Footnote to the Footnote} The Footnote's claim can be proved even more easily as follows.
+
+ Drop an altitude from $Y$ to $AB$ at point $T$.  Notice that $P, Q, T$ are collinear because they form the Simson line of $\triangle AXB$ from $Y$.  Also notice that $P, Q, T$ are collinear because they form the Simson line of $\triangle AZB$ from $Y$.  Since $T$ is at the diameter $AB$, lines $PQ$ and $SR$ must intersect at the diameter.
+
+ \textbf{Footnote to the Fourth Power} There is another, simpler solution using Simson lines. Can you find it?
+
+ \textbf{Operation Diagram} Of course, as with any geometry problem, DRAW A HUGE DIAGRAM spanning at least one page. And label all your right angles, noting rectangles $PXQY$ and $YSZR$. It looks like there are a couple of key angles we need to diagram. Let's take $\angle{ZAB} = \alpha, \angle{XBA} = \beta, \angle{YAZ} = \angle{YBZ} = \delta$. From there $\angle{XOZ}=180^\circ - \angle{XOA}-\angle{ZOB}=180-2(\beta + \alpha)$.
+
+ Move on to the part about the intersection of $PQ$ and $RS$. Call the intersection $J$. Note that by Simson Lines from point $Y$ to $\triangle{ABX}$ and $\triangle{AZB}$, $YJ$ is perpendicular to $AB$ and $J$ lies on $AB$. Immediately note that we are trying to show that $\angle{PJS} = 90 - \beta - \alpha$. 
+
+ It suffices to show that referencing quadrilateral $QR~J$, where $~$ represents the intersection of $XB, AZ$, we have reflex $\angle{Q~R} + \angle{BQJ} + \angle{ARJ} = 270 + \alpha + \beta$. Note that the reflex angle is $180^\circ + \angle{A~X} = 180^\circ + (90^\circ - \angle{XA*}) = 270^\circ - ((90 - \beta) - \alpha) = 180 ^\circ + \alpha + \beta$, therefore it suffices to show that $\angle{BQJ} + \angle{ARJ} = 90^\circ$. To make this proof more accessible, note that via (cyclic) rectangles $PXQY$ and $YSZR$, it suffices to prove $\angle{YPJ} + \angle{YSJ} = 90^\circ$.
+
+ Note $\angle{YPJ} = \angle{YPQ} = \angle{YXQ} = \angle{YXB} = \angle{YAB} = \alpha + \delta$.Note $\angle{YSJ} = \angle{YSR} = \angle{YZR} = \angle{YZA} = \angle{YBA} = \angle{YBX} + \angle{XBA} = ((90^\circ - \alpha) - \delta - \beta) + \beta = 90^\circ - \alpha - \delta$, which completes the proof.
+
+ \textbf{Footnote to Operation Diagram} For reference/feasibility records: took expiLnCalc ~56 minutes (consecutively).During the problem expiLnCalc realized that the inclusion of $\delta$ was necessary when trying to show that $\angle{YSJ}+\angle{YPJ}=90^\circ$. Don't be afraid to attempt several different strategies, and always be humble!
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2010_3_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Let $T$ be the foot of the perpendicular from $Y$ to $\overline{AB}$, let $O$ be the center of the semi-circle.
+
+ Since we have a semi-circle, if we were to reflect it over $\overline {AB}$, we would have a full circle, with $\triangle{AXB}$ and $\triangle{AZB}$ inscribed in it. Now, notice that $Y$ is a point on that full circle, so we can say that $T$ lies on the Simson Line $\overline{PQ}$ from $Y$ to $\triangle AXB$ and that it also lies on the Simson line $\overline {RS}$ from $Y$ to $\triangle AZB$. Thus, $T$ lies on two distinct lines in a plane, which means that $T=\overline{PQ}\cap\overline{RS}$. Therefore, it suffices to show that $\angle PTS=\frac{1}{2}\angle XOZ$. 
+
+ Since $m\angle YTA + m\angle YPA = 90^\circ + 90^\circ = 180^\circ$ and $m \angle YTB + m \angle YSB = 90^\circ + 90^\circ = 180^\circ$, we know that $TAPY$ and $TBSY$ are cyclic quadrilaterals. 
+
+ We use this fact to get 
+ \[\angle PTS=\angle PTY+\angle YTS=\angle PAY+\angle YBS=\angle XAY+\angle YBZ. \space \space (1)\] \\Now note that $\angle XAY$ is the inscribed angle of minor arc $\overset{\huge\frown}{PY}$, and $\angle XOY$ is the central angle of minor arc $\overset{\huge\frown}{AB}$, so $\angle XAY = \frac{\overset{\huge\frown}{PY}}{2} = \frac{\angle XOY}{2}$. Similarly, $\angle YBZ = \frac{\overset{\huge\frown}{YZ}}{2}=\frac{\angle YOZ}{2}$. Thus we can say 
+ \[\angle XAY + \angle YBZ = \frac{\angle XOY}{2} + \frac{\angle YOZ}{2}=\frac{\angle XOY + \angle YOZ}{2} = \frac{\angle XOZ}{2}. \space \space (2)\] 
+
+ 
+Combining statements $(1)$ and $(2)$, we can say that $\angle PTS = \frac{\angle XOZ}{2}$, as desired. $\square$ 
+
+ 
+
+
+	\item (\textit{USAJMO 2010}) A triangle is called a \textit{parabolic triangle} if its vertices lie on a parabola $y = x^2$. Prove that for every nonnegative integer $n$, there is an odd number $m$ and a parabolic triangle with vertices at three distinct points with integer coordinates with area $(2^nm)^2$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let the vertices of the triangle be $(a, a^2), (b, b^2), (c, c^2)$.The area of the triangle is the absolute value of $A$ in the equation:
+
+ 
+ \[A = \frac{1}{2}\det\left\vert         \begin{array}{c c}                 b-a & c - a\\                 b^2 - a^2 & c^2 - a^2         \end{array}\right\vert   = \frac{(b-a)(c-a)(c-b)}{2}\]
+
+ 
+
+ If we choose $a < b < c$, $A > 0$ and gives the actual area. Furthermore,we clearly see that the area does not change when we subtract the sameconstant value from each of $a$, $b$ and $c$. Thus, all possible areascan be obtained with $a = 0$, in which case $A = \frac{1}{2}bc(c-b)$.
+
+ If a particular choice of $b$ and $c$ gives an area $A = (2^nm)^2$,with $n$ a positive integer and $m$ a positive odd integer, then setting$b' = 4b$, $c' = 4c$ gives an area $A' = 4^3 A = 8^2 A = (2^{n+3}m)^2$.
+
+ Therefore, if we can find solutions for $n = 0$, $n = 1$ and $n = 2$,all other solutions can be generated by repeated multiplicationof $b$ and $c$ by a factor of $4$.
+
+ Setting $b=1$ and $c=2$, we get $A=1 = (2^0\cdot1)^2$, which yieldsthe $n=0$ case.
+
+ Setting $b=1$ and $c=9$, we get $A = 9\cdot4 = (2^1\cdot3)^2$, which yieldsthe $n=1$ case.
+
+ Setting $b=1$ and $c=5$, we get $A=1\cdot2\cdot5 = 10$. Multiplying thesevalues of $b$ and $c$ by $10$, we get $b'=10$, $c'=50$,$A'=10\cdot20\cdot50 = 100^2 = (2^2\cdot5^2)^2$,which yields the $n=2$ case. This completes the construction.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We proceed via induction on n. Notice that we prove instead a stronger result: there exists a parabolic triangle with area $(2^nm)^2$ with two of the vertices sharing the same y-coordinate.
+
+ BASE CASE:If $n = 0$, consider the parabolic triangle $ABC$ with $A(0, 0), B(1, 1), C(-1, 1)$ that has area $1/2 \cdot 1 \cdot 2 = 1$, so that $n = 0$ and $m = 1$.If $n = 1$, let $ABC = A(5, 25), B(4, 16), C(-4, 16)$. Because $ABC$ has area $1/2 \cdot 8 \cdot 9 = 36$, we set $n = 1$ and $m = 3$.If $n = 2$, consider the triangle formed by $A(21, 441), B(3, 9), C(-3, 9)$. It is parabolic and has area $1/2 \cdot 6 \cdot 432 = 1296 = 36^2$, so $n = 2$ and $m = 9$.
+
+ INDUCTIVE STEP:If $n = k$ produces parabolic triangle $ABC$ with $A(a, a^2), B(b, b^2),$ and $C(-b, b^2)$, consider $A$'$B$'$C$' with vertices $A(4a, 16a^2)$, $B(4b, 16b^2)$, and $C(-4b, 16b^2)$. If $ABC$ has area $(2^km)^2$, then $A$'$B$'$C$' has area $(2^{k+3}m)^2$, which is easily verified using the $1/2 \cdot\text{base} \cdot \text{height}$ formula for triangle area. This completes the inductive step for $k \implies k+3$.
+
+ Hence, for every nonnegative integer $n$, there exists an odd $m$ and a parabolic triangle with area $(2^nm)^2$ with two vertices sharing the same ordinate. The problem statement is a direct result of this result.         -MathGenius\_
+
+ 
+
+
+
+\textbf{Solution 3 (without induction)}
+
+First, consider triangle with vertices $(0,0)$, $(1,1)$, $(-1,1)$. This has area $1$ so $n=0$ case is satisfied.
+
+ Then, consider triangle with vertices $(a,a^2), (-a,a^2), (b,b^2)$, and set $a=2^{2n}$ and $b=2^{4n-2}+1$.The area of this triangle is $\frac{1}{2} \cdot base \cdot height=a(b^2-a^2)$.We have that $b^2-a^2=2^{8n-4}+2^{4n-1}+1-2^{4n}=2^{8n-4}-2^{4n-1}+1=(2^{4n-2}-1)^2$We desire $A=a(b^2-a^2)=2^{2n}m^2$, or $2^{4n-2}-1=m$, and $m$ is clearly always odd for positive $n$, completing the proof.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We simply need to provide an example for all $n$ that satisfies the condition, and we do so.
+
+ Let $a = 2^{2n+1}+1$. Then consider the triangle with coordinates $(0,0), (a,a^2), (a^2,a^4) = (x_1, y_1), (x_2, y_2), (x_3, y_3)$. 
+
+ 
+By the shoelace formula, this triangle has area 
+ \[\frac{1}{2}|x_1y_2 - y_1x_2 + x_2y_3 - y_2x_3|=\frac{1}{2}|a(a^4)-a^2(a^2)|=\frac{1}{2}|a^5 - a^4| = \frac{a^4(a-1)}{2}=2^{2n}(2^{2n+1}+1)^4\]which clearly can be written in the form $(2^n \times m)^2 = 2^{2n} \times m^2$, where $m^2 = (2^{2n+1}+1)^4$ or $m=(2^{2n+1}+1)^2$. Now, we just have to prove that $(2^{2n+1}+1)^2$ is always odd. This is true because $2^{2n+1}$ is even (because it's a power of $2$), so $2^{2n+1}+1$ is odd, and since an odd number squared is odd, the whole thing is odd as well. And we are done, since we have proved that for all $n$, we can show that there exists such a triangle by merely providing an example. $\square$
+
+ 
+
+
+	\item (\textit{USAJMO 2010}) Two permutations $a_1, a_2, \ldots, a_{2010}$ and $b_1, b_2, \ldots, b_{2010}$ of the numbers $1, 2, \ldots, 2010$ are said to intersect if $a_k = b_k$ for some value of $k$ in the range $1\leq k\leq 2010$. Show that there exist $1006$ permutations
+of the numbers $1, 2, \ldots, 2010$ such that any other such permutation is guaranteed to intersect at least one of these $1006$ permutations.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Let $n$ be a positive integer. Let $m$ be the smallest positive integer with$m > n - m$.  Since $n > n - n = 0$, $m \le n$. Let $N = \{1, \ldots, n\}$be the set of positive integers from $1$ to $n$.  Let $M \subset N$,be $M = \{1, \ldots, m\}$.
+
+ Let $P_n$ be the set of of permutations of $N$.
+
+ Let $C_m$ be the set of cyclic permutations of $M$, there are $m$cyclic permutations in all, and $C_m$ acts transitively on $M$, i.e.for every pair of elements $a,b \in M$, there is an element of $C_m$that maps $a$ to $b$.
+
+ Let $C'_m \subset P_n$ be the permutations in $P_n$ that leave $N\setminus M$fixed, and restricted to $M$ yield one of the permutations in $C_m$.There is a natural one-to-one correspondence between $C'_m$ and $C_m$.
+
+ We claim that the $m$ permutations $C'_m$ intersect every permutation in$P_n$.
+
+ Suppose, to the contrary, that there exists a permutation $p \in P_n$that does not intersect any permutation in $C'_m$. Since $C'_m$ actstransitively on $M \subset N$ the permutation $p$ cannot send any element of$M$ to any other element of $M$, therefore it must send all theelements of $M$ to $N\setminus M$, but since $N\setminus M$ has $n - m$ elements and $m > n - m$, this is impossibleby the pigeonhole principle. Therefore such a permutation cannotexist, and the permutations in $C'_m$ intersect every permutation in$P_n$.
+
+ For $n = 2010$ we get $m = 1006$, which is the required specialcase of the general result above.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+I construct the following permutations by continuously rotating the first 1006 numbers):
+
+ (1, 2, 3 ... 1005, 1006, 1007 ... 2009, 2010)
+
+ (2, 3, 4 ... 1006, 1, 1007 ... 2009, 2010)
+
+ ...
+
+ ...
+
+ ...
+
+ (1006, 1, 2 ... 1005, 1007, ... 2009, 2010)
+
+ 
+
+
+ I claim that these permutations above satisfy the property that any other permutation will intersect with at least one of them.
+
+ \textbf{Proof}:Assume for the sake of contradiction that there exists a permutation that won't intersect with these, say $(a_1, a_2, a_3 ... a_{2010})$.
+
+ \textbf{Lemma}:If there exists a k such that $1 \leq k \leq 1006$ $a_k \leq 1006$, we will get an intersection with the permutations. 
+
+ Note that for any 2 distinct permutations in our list, the numbers in kth index must be different, since each permutation is a rotation of an previous permutation. Also, the numbers can't exceed 1006, so, each number must occur exactly once in the kth index.
+
+ \textbf{End Lemma}
+
+ Using the lemma, in order to avoid intersections, we need $1007 \leq a_k \leq 2010$, for all $1 \leq k \leq 1006$.
+
+ But, there are 1004 numbers such that $1007 \leq n \leq 2010$, but we need to have 1004 numbers to fill in 1006 spots, and thus, by pigeonhole principle(the numbers are the holes, the spots are the pigeons), there must be 2 spots that have the same number! However, in a permutation, all numbers must be distinct, so we have a contradiction.
+
+ So, we have shown such a set of permutations exists satisfying that any permutation is guaranteed to intersect one of them, and the proof is complete. $\blacksquare$ 
+
+ -Alexlikemath
+
+ 
+
+
+	\item (\textit{USAJMO 2010}) Let $ABC$ be a triangle with $\angle A = 90^{\circ}$. Points $D$ and $E$ lie on sides $AC$ and $AB$, respectively, such that $\angle ABD = \angle DBC$ and $\angle ACE = \angle ECB$. Segments $BD$ and $CE$ meet at $I$.  Determine whether or not it is possible for segments $AB, AC, BI, ID, CI, IE$ to all have integer lengths.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We know that angle $BIC = 135^{\circ}$, as the other two angles in triangle $BIC$ add to $45^{\circ}$. Assume that only $AB, AC, BI$, and $CI$ are integers. Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Cosines}{Law of Cosines} on triangle BIC,
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2010_6_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+
+ $BC^2 = BI^2 + CI^2 - 2BI\cdot CI \cdot \cos 135^{\circ}$. Observing that $BC^2 = AB^2 + AC^2$ is an integer and that $\cos 135^{\circ} = -\frac{\sqrt{2}}{2},$ we have
+
+ 
+ \[BC^2 - BI^2 - CI^2 = BI\cdot CI\cdot \sqrt{2}\]
+
+ 
+
+ and therefore,
+
+ 
+ \[\sqrt{2} = \frac{BC^2 - BI^2 - CI^2}{BI\cdot CI}\]
+
+ 
+
+ The LHS ($\sqrt{2}$) is irrational, while the RHS is the quotient of the division of two integers and thus is rational. Clearly, there is a contradiction. Therefore, it is impossible for $AB, AC, BI$, and $CI$ to all be integers, which invalidates the original claim that all six lengths are integers, and we are done.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The answer is no.
+
+ Suppose otherwise. It is easy to see (through simple angle chasing) that $\angle DIC=45^{\circ}$. Also, since $I$ is the incenter, we have $\angle IAC = 45^{\circ}$. Using the Law of Cosines, we have 
+ \[CD^2=IC^2+ID^2-\sqrt{2}(IC)(ID),\] so that $CD$ is irrational. But $\triangle IAC \sim \triangle DIC$, thus $IC^2=CD\cdot AC$, implying that $CD$ is rational, contradiction. $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The result can be also proved without direct appeal to trigonometry,via just the angle bisector theorem and the structure of Pythagoreantriples. (This is a lot more work).
+
+ A triangle in which all the required lengths are integers exists if andonly if there exists a triangle in which $AB$ and $AC$ arerelatively-prime integers and the lengths of the segments $BI, ID, CI, IE$ are all rational(we divide all the lengths by the $\gcd(AB, AC)$ orconversely multiply all the lengths by the least common multipleof the denominators of the rational lengths).
+
+ Suppose there exists a triangle in which the lengths $AB$ and $AC$ arerelatively-prime integers and the lengths $IB, ID, CI, IE$ are all rational.
+
+ Since $CE$ is the bisector of $\angle ACB$, by the angle bisectortheorem, the ratio $IB : ID = CB : CD$, and since $BD$ is thebisector of $\angle ABC$, $CB : CD = (AB + BC) : AC$. Therefore,$IB : ID = (AB + BC) : AC$. Now $IB : ID$ is by assumption rational,so $(AB + BC) : AC$ is rational, but $AB$ and $AC$ are assumed integersso $BC : AC$ must also be rational. Since $BC$ is the hypotenuse ofa right-triangle, its length is the square root of an integer,and thus either an integer or irrational, so $BC$ must be an integer.
+
+ With $AB$ and $AC$ relatively-prime, we conclude that the sidelengths of $\triangle ABC$ must be a Pythagorean triple: $(2pq, p^2 - q^2, p^2 + q^2)$, with $p > q$ relatively-prime positive integersand $p+q$ odd.
+
+ Without loss of generality, $AC = 2pq, AB = p^2 - q^2, BC = p^2+q^2$.By the angle bisector theorem,
+
+ 
+ \begin{align*} AE &= \dfrac{AB \cdot AC}{AC + CB} = \dfrac{2pq(p^2-q^2)}{p^2 + q^2 + 2pq}    = \dfrac{2pq(p-q)}{p+q} \end{align*}
+
+
+ 
+
+ Since $\triangle CAE$ is a right-triangle, we have:
+
+ 
+ \begin{align*}   CE^2 &= AC^2 + AE^2        = 4p^2q^2 + \left(\dfrac{2pq(p-q)}{p+q}\right)^2        = 4p^2q^2\left[1 + \left(\dfrac{p-q}{p+q}\right)^2\right] \\        &= \frac{4p^2q^2}{(p+q)^2}\left[(p+q)^2 + (p-q)^2\right]        = \frac{4p^2q^2}{(p+q)^2}(2p^2 + 2q^2) \end{align*}
+
+
+ 
+
+ and so $CE$ is rational if and only if $2p^2 + 2q^2$ is a perfect square.
+
+ Also by the angle bisector theorem,
+
+ 
+ \begin{align*} AD &= \dfrac{AB \cdot AC}{AB + BC} = \dfrac{2pq(p^2-q^2)}{p^2 + q^2 + p^2 - q^2}     = \dfrac{q(p^2-q^2)}{p} \end{align*}
+
+
+ 
+
+ and therefore, since $\triangle DAB$ is a right-triangle, we have:
+
+ 
+ \begin{align*}   BD^2 &= AB^2 + AD^2        = (p^2-q^2)^2 + \left(\dfrac{q(p^2-q^2)}{p}\right)^2 \\        &= (p^2-q^2)^2\left[1 + \frac{q^2}{p^2}\right]        = \frac{(p^2-q^2)^2}{p^2}(p^2 + q^2) \end{align*}
+
+
+ 
+
+ and so $BD$ is rational if and only if $p^2 + q^2$ is a perfect square.
+
+ Combining the conditions on $CE$ and $BD$, we see that$2p^2+2q^2$ and $p^2+q^2$ must both be perfect squares. If it were so,their ratio, which is $2$, would be the square of a rational number,but $\sqrt{2}$ is irrational, and so the assumed triangle cannot exist.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We proceed by contradiction.
+
+ FTSOC, let $AB, BI, ID$ have integer lengths. Then $BD = BI + ID \in \mathbb{Z}$ as well. By trigonometry, 
+ \[BD = \frac{AB}{\cos{(\frac{\angle ABC}{2})}}.\]Rearranging we find $\cos{(\frac{\angle ABC}{2})} = \frac{AB}{BD} \in \mathbb{Q}$. As $0 < \angle ABC < \frac{\pi}{2}$ so $0 < \frac{\angle ABC}{2} < \frac{\pi}{4}$ but there are no possible angles in the interval that result in a rational cosine by Niven's theorem. So we have contradiction.
+
+ 
+
+
+\end{enumerate}

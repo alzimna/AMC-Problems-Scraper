@@ -140,7 +140,71 @@ Alice has a winning strategy: Choose $\mathcal S$ to be the set of of points str
 
 \textbf{Solution 1}
 
-Let AP intersects BC at D. Extend FC to the point E on the circumcircle $\omega$ of $FAP$. Since $H$ is the orthocenter of $\Delta ABC$, we know that $HD = DP$ or $HP = 2HD$, and $AH \cdot HD = CH \cdot HF$. Next we use the power of H in $\omega$: 
+Let AP intersects BC at D. Extend FC to the point E on the circumcircle $\omega$ of $FAP$. Since $H$ is the orthocenter of $\Delta ABC$, we know that $HD = DP$ or $HP = 2HD$, and $AH \cdot HD = CH \cdot HF$. Next we use the power of H in $\omega$: $AH \cdot HP = CH \cdot HE$. These relations imply that $HE = 2HF$.
+
+ Hence $C, D$ are midpoints of $HE, HP$ respectively. By midline theorem, $CD // EP$. Since $AD \perp CD$, we have $AD \perp EP$. This implies that $\angle APE = 90^{\circ}$. Consequently, $AE$ is the diameter of $\omega$. Let $G$ be the midpoint of $AE$ which is also the center of $\omega$. $G,C$ are midpoints of $AE, EH$ respectively. By the midline theorem again, we have $GC//AH$, consequently, $GC \perp BC$. This implies that $GC$ is the perpendicular bisector of the chord $XY$ hence $C$ is the midpoint of $XY$.    ~ Dr. Shi davincimath.com
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Denote $O_1$ as the center of $(ABC)$, $O_2$ as the center of $FAP$, $K$ as the midpoint of $AF$, $M$ as the midpoint of $AC$, and $N$ as the midpoint of $AP$. It suffices to show that $\angle{O_2CB}=90$.
+
+ Claim: $O_1MO_2C$ is cyclic. 
+
+ Proof: Since $AK=FK$ and $AM=MC$, KM is a midline of $\triangle{AFC}$ and $KM\parallel FC$. $KO_2\parallel FC$ as well since $\angle{AKO_2}=\angle{AFC}=90$, so $M$ lies on $KO_2$. Next, note that $P$ lies on $(ABC)$, so the perpendicular bisector of $AP$ through $N$ passes through $O_1$. In other words, $N, O_1$, and $O_2$ are collinear. Since $NO_2$ and $BC$ are both perpendicular to $AP$, it follows that they are parallel. Since $KO_2\parallel FC$ and $NO_2\parallel BC$, then $\angle KO_2N=\angle{FCB}$.Finally, we have that 
+ \[\angle{MO_2O_1}=\angle{KO_2N}=\angle{FCB}=90-B=\angle{MCO_1},\]and thus $O_1MO_2C$ is cyclic. It follows that $\angle O_1O_2C=\angle{O_1MC}=90$, so $\angle{O_2CB}=180-\angle{O_1MC}=90$, as desired.
+
+ -mop
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Connect $HP$ and have $HP$ intersect $XY$ at $W$. Also extend $FC$ past point $C$ and have it intersect with the circle at point $D$.
+
+ Since $P$ is the reflection of $H$ over $BC$, we know that $HP\perp XY$. Since $H$ is the orthocenter, we can draw the altitude and tell that $A$, $H$, and $P$ are collinear.We know $m\angle{AFH} = m\angle{CWH}=90^{\circ}$ and $m\angle{FHA} = m\angle{WHC}$, so $\triangle{AHF} \sim \triangle{CHW}$ by AA, so $m\angle{FAH} = m\angle{WCH}$.
+
+ $m\angle{FAP} = \frac{1}{2}m\overarc{FP} = \frac{1}{2}(m\overarc{FX} + m\overarc{XP})$ and $m\angle{FCX} = \frac{1}{2}(m\overarc{FX} + m\overarc{DY})$. From this, we can tell that $m\overarc{XP} = m\overarc{DY}$. Therefore, $m\overarc{XD} = m\overarc{PY}$ and $XD = PY$.
+
+ If we connect $HY$, we can tell that that $PY = HY$ due to $P$ being the reflection of $H$ and $WY$ being perpendicular to $HP$, so $XD = HY$. In addition, $m\angle{HYW} = m\angle{PYW} = \frac{1}{2} m\overarc{XP} = \frac{1}{2} m\overarc{DY} = m\angle{YXD}$. Also, $m\angle{HCY} = m\angle{XCD}$ because they are vertical angles.
+
+ So, $\triangle{HCY} \cong \triangle{XCD}$ because of SAA. From this we can conclude that $XC = CY$, so $C$ is the midpoint of $XY$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let $D$ be the foot of the altitude from $A$ to $BC.$ By Power of a Point, we have 
+ \[BF\cdot BA = BX \cdot BY = (BC-CX)(BC+CY) = BC^2 + BC(CY-CX) - CX\cdot CY\]and 
+ \[DB\cdot DC = DX\cdot DY = (CX-CD)(CD+CY) = CX\cdot CY - CD(CY-CX) - CD^2.\]Adding, we get
+ \[BF \cdot BA + DB\cdot DC = BC^2-DC^2 + (BC-CD)(CY-CX).\]It is well known that the reflection of $H$ over $AB,$ which we denote by $P,$ lies on $(ABC).$ Then, let $\angle{BAP} = \angle{BCP} = \angle{BCH} = \theta.$ We have 
+ \[BF\cdot BA + DB\cdot DC = (BC\sin\theta)\cdot BA + DB\cdot DC = BC\cdot (BA \sin\theta) + DB\cdot DC = DB\cdot (BC+DC) = (BC-DC)(BC+DC) = BC^2-DC^2.\]Thus, $(BC-CD)(CY-CX)=0,$ and since $BC\neq CD$ we have $CY=CX.$ Hence, $C$ is the midpoint of $XY.$~TThB0501
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Let Q be the antipode of B. Claim — AHQC is a parallelogram, and AP CQ is an isosceles trapezoid. 
+
+ Proof. As AH $\perp$ BC $\perp$ CQ and CF $\perp$ AB $\perp$ AQ. Let M be the midpoint of QC. 
+
+ Claim — Point M is the circumcenter of triangle AFP. 
+
+ Proof. It’s clear that MA = MP from the isosceles trapezoid. 
+
+ As for MA = MF, let N denote the midpoint of AF; then MN is a midline of the parallelogram, so MN $\perp$ AF. Since CM $\perp$ BC and M is the center of (AF P), it follows CX = CY .
 
  
 
@@ -248,7 +312,85 @@ Arbitrarily pick any one person — call her Pip — and her $n$ arcs. The initi
                 \end{itemize}
 
 
-                Since Pip is a universal vertex, it
+                Since Pip is a universal vertex, it’s impossible to delete Pip, so the algorithm does indeed terminate with nonempty $\mathcal{M}$. 
+
+ A cartoon of this picture is shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2025_6_Solution_Figure_1.jpeg}
+                    \end{figure}
+                    
+
+ We commit to assigning each of person in $\mathcal{M}$ their matched arc (in particular if there are no bad sets at all, the problem is already solved). Now we finish the problem by induction on $n$ (for the remaining people) by simply deleting the arcs used up by $\mathcal{M}$. To see why this deletion-induction works, consider any particular person Quinn not in $\mathcal{M}$. By definition, Quinn is not happy with any of the arcs in $\mathcal{M}$. So when an arc $\mathcal{A}$ of $\mathcal{M}$ is deleted, it had value less than 1 for Quinn so in particular it couldn’t contain entirely any of Quinn’s arcs. Hence at most one endpoint among Quinn’s arcs was in the deleted arc A. When this happens, this causes two arcs of Quinn to merge, and the merged value is 
+
+ 
+ \[(\geq 1) + (\geq 1) - (\leq 1) \geq 1\]
+
+ meaning the induction is OK. See below for a cartoon of the deletion, with Pip's arcs in blue and Quinn's in red, where here, $n=3$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2025_6_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ \textbf{Remark.} This deletion argument can be thought of in some special cases even before the realization of Hall, in the case where $\mathcal{M}$ has only one person (Pip). This amounts to saying that if one of Pip’s arcs isn’t liked by anybody, then that arc can be deleted and the induction carries through.
+
+ \textbf{Remark.} Conversely, it should be reasonable to expect Hall’s theorem to be helpful even before finding the deletion argument. While working on this problem, one of the first things I said was: “We should let Hall do the heavy lifting for us: find a way to make $n$ groups that satisfy Hall’s condition, rather than an assignment of $n$ groups to $n$ people.” As a general heuristic, for any type of “compatible matching” problem, Hall’s condition is usually the go-to tool. (It is much easier to verify Hall’s condition than actually find the matching yourself.) Actually in most competition problems, if one realizes one is in a Hall setting, one is usually close to finishing the problem. This is a relatively rare example in which one needs an additional idea to go alongside Hall’s theorem.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+If the jury scores a cupcake $\geq 1$ for all cupcakes then for all the $c$ cupcakes receiving score $k \in (1, \infty)$ we prove the problem for $n-c$ cupcake lovers and $m-c$ cupcakes. Hence, consider scores in the range $(0,1]$.
+
+ Suppose the cupcakes are $m_1, m_2, \dots, m_m$ flavored and the people $n_1, n_2, \dots, n_n$ are to rate each. 
+
+ \textbf{Lemma 1:} The score is always $S \geq \frac{n}{m}$.
+
+ \textbf{Proof of Lemma 1:}
+
+ If the $k$th cupcake is scored by the $o$th jury, then $s_{k,o}$ is the given score. Then,
+
+ 
+ \[S=\sum_{k=1}^m s_{k,P} \geq n\]
+
+ by the problem statement. Taking the average by dividing $\frac{1}{m}$ yields the result, as in general the sum of each value of individual scores that are not that average, when constructing $n$ groups of the same modulo $n$ cupcake, is always greater than the average. $\blacksquare$
+
+ \textbf{Lemma 2:} USAMO P6 Problem Statement
+
+ \textbf{Proof of the Lemma 2:}
+
+ Rearrangement Inequality is a great starter here.
+
+ Assume the $k$th cupcake is maximally liked by the $k$th contender in moduli order (modulo $n$ here). Then,
+ \[\text{Score Cupcake 1} : s_{1,n} \leq s_{1,n-1} \leq \dots \leq s_{1,1}\].
+ \[\text{Score Cupcake 2}: s_{2,n} \leq \dots \leq s_{2,1} \leq s_{2,2}\]
+ \[\dots\]
+ \[\text{Score Cupcake} \ n: s_{n,1} \leq \dots \leq s_{n,n}\]
+ \[\text{Score Cupcake} \ n+1: s_{n+1,n} \leq \dots \leq s_{n+1,1}\]
+ \[\dots\]
+
+ By \textbf{Lemma 1}, we can pair each of the cupcakes in respective modular $n$, so for example, Cupcake 1 is paired with Cupcake $n+1$, Cupcake 2 is paired with Cupcake $n+2$, ..., Cupcake $nk+m \ : \ k \in \mathbb{Z}^+$ is paired with Cupcake $m$. By Pigeonhole Principle it is certain the compiled scores of each cupcake must exceed or equal 1. All the remaining cupcakes can form the remainder of the $n$ groups. Now, say that after obtaining their groups, the said jury "leave" the junction. All of those left with one cupcake form a new compendium. We prove the following sub-lemma:
+
+ \textbf{Lemma 3:} These people must be the ones who like their own cupcake!
+
+ \textbf{Proof of Lemma 3:}
+
+ It's obvious! By the way we originally paired each person, (which is the minimum by Rearrangement Inequality), it is noticed that the remaining people have their liked cupcake! $\blacksquare$
+
+ \textbf{Proof of Lemma 2 Continued:}
+
+ A "likeable score", defined in \textbf{Lemma 1} must be any score $S \in (\frac{n}{m}, 1]$. Indeed, if each of the $n$ people rate this score, the remaining $m-nk, nk \leq m$ people score the cupcake greater-than or equal to the average, or $\frac{m-n}{m}$ by \textbf{Lemma 1}. But, this forces $\geq 1$, hence the Lemma is complete. $\blacksquare$
+
+ \textbf{2025 USAMO/P6:}
+
+ By \textbf{Lemma 2}, there will always exist a configuration of cupcakes and people who love cupcakes who can score and partition given the constraint held true in \textbf{Lemma 1} such that they each have a cupcake scored greater than or equal to 1. $\square$
 
  
 

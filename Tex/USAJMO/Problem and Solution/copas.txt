@@ -1,0 +1,17 @@
+\input{2010_with_solution.tex}
+\input{2011_with_solution.tex}
+\input{2012_with_solution.tex}
+\input{2013_with_solution.tex}
+\input{2014_with_solution.tex}
+\input{2015_with_solution.tex}
+\input{2016_with_solution.tex}
+\input{2017_with_solution.tex}
+\input{2018_with_solution.tex}
+\input{2019_with_solution.tex}
+\input{2020_with_solution.tex}
+\input{2021_with_solution.tex}
+\input{2022_with_solution.tex}
+\input{2023_with_solution.tex}
+\input{2024_with_solution.tex}
+\input{2025_with_solution.tex}
+\input{2026_with_solution.tex}

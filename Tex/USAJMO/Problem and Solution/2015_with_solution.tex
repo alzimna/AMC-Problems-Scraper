@@ -1,0 +1,246 @@
+\section{USAJMO 2015}
+        \begin{enumerate}
+        	\item (\textit{USAJMO 2015}) Given a sequence of real numbers, a move consists of choosing two terms and replacing each with their arithmetic mean. Show that there exists a sequence of 2015 distinct real numbers such that after one initial move is applied to the sequence -- no matter what move -- there is always a way to continue with a finite sequence of moves so as to obtain in the end a constant sequence.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We claim $\{-1007, -1006, \dots, 1006, 1007\}$ works. Let the original two swapped terms be $i$ and $j$ and let their average be $x$. 
+
+ Average out all pairs of inverses other than $\{-j, -i, x, x\}$, so we are left with at most 4 non-zero terms. 
+
+ $\textbf{Case 1: } i, j\neq 0$
+
+ If $i = -j$, then we are already done. Otherwise, average $-i, -j$, so the non-zero terms are $\{x, x, -x, -x\}$ and now we cancel inverses.
+
+ $\textbf{Case 2: } i=0$
+
+ Then, the non-zero terms are $\{\frac{j}{2}, \frac{j}{2}, -j\}$. Average $-j$ with 0, so now the non-zero terms are $\{x, x, -x, -x\}$, and cancel inverses. 
+
+ -sillybone
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let the set be ${-1007, -1006, ...0,1,2...1006, 1007}$, namely all the consecutive integers from $-1007$ to $1007$.  Notice that the operation we are applying 
+
+ 
+
+
+	\item (\textit{USAJMO 2015}) Solve in integers the equation
+
+ \[x^2+xy+y^2 = \left(\frac{x+y}{3}+1\right)^3.\]
+
+
+ 
+
+
+
+\textbf{Solution}
+
+We first notice that both sides must be integers, so $\frac{x+y}{3}$ must be an integer. 
+
+ We can therefore perform the substitution $x+y = 3t$ where $t$ is an integer. 
+
+ Then:
+
+ 
+ \begin{align*} (3t)^2 - xy &= (t+1)^3 \\ 9t^2 + x (x - 3t) &= t^3 + 3t^2 + 3t + 1 \\ 4x^2 - 12xt + 9t^2 &= 4t^3 - 15t^2 + 12t + 4 \\ (2x - 3t)^2 &= (t - 2)^2(4t + 1) \end{align*}
+
+
+ $4t+1$ is therefore the square of an odd integer and can be replaced with $(2n+1)^2 = 4n^2 + 4n +1$.
+
+ By substituting using $t = n^2 + n$ we get:
+
+ 
+ \begin{align*} (2x - 3n^2 - 3n)^2 &= [(n^2 + n - 2)(2n+1)]^2 \\ 2x - 3n^2 - 3n &= \pm (2n^3 + 3n^2 -3n -2) \\ x = n^3 + 3n^2 - 1 &\text{ or } x = - n^3 + 3n + 1 \end{align*}
+
+
+ Using substitution we get the solutions: $(n^3 + 3n^2 - 1, - n^3 + 3n + 1) \cup ( - n^3 + 3n + 1, n^3 + 3n^2 - 1)$
+
+ 
+
+
+	\item (\textit{USAJMO 2015}) Quadrilateral $APBQ$ is inscribed in circle $\omega$ with $\angle P = \angle Q = 90^{\circ}$ and $AP = AQ < BP$. Let $X$ be a variable point on segment $\overline{PQ}$. Line $AX$ meets $\omega$ again at $S$ (other than $A$). Point $T$ lies on arc $AQB$ of $\omega$ such that $\overline{XT}$ is perpendicular to $\overline{AX}$. Let $M$ denote the midpoint of chord $\overline{ST}$. As $X$ varies on segment $\overline{PQ}$, show that $M$ moves along a circle.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+We claim the $M$ lies on the circle centered at the midpoint of $\overline{AO}$ that passes through $P$. 
+
+ Proceed via complex numbers. $a=1, b=-1$ and $s, t$ are free parameters. Then, 
+ \[x = \frac{1}{2} (s+1+t-s\overline{t}) \text{ and } \Re (p) = \Re (x) \implies p+\overline{p}=x+\overline{x}\] Putting it together, 
+ \[\left| \frac{1}{2}-\left(\frac{s+t}{2}\right) \right| = \left| \frac{1}{2} - p \right| \iff (s+t-1)(\overline{s}+\overline{t}-1) = 5-2(p+\overline{p}) = 5 - 2(x+\overline{x})\] 
+ \[\iff 3+s\overline{t}+\overline{s}t-s-t-\overline{s}-\overline{t}=5-(s+1+t-s\overline{t}+\overline{s}+1+\overline{t}-\overline{s}t)\] which is clear by expanding. Thus, the proof is complete.
+
+ -sillybone
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We will use coordinate geometry.
+
+ Without loss of generality,let the circle be the unit circle centered at the origin, 
+ \[A=(1,0) P=(1-a,b), Q=(1-a,-b)\],where $(1-a)^2+b^2=1$.
+
+ Let angle $\angle XAB=A$, which is an acute angle, $\tan{A}=t$, then $X=(1-a,at)$.
+
+ Angle $\angle BOS=2A$, $S=(-\cos(2A),\sin(2A))$.Let $M=(u,v)$, then $T=(2u+\cos(2A), 2v-\sin(2A))$.
+
+ The condition $TX \perp AX$ yields: $(2v-\sin(2A)-at)/(2u+\cos(2A)+a-1)=\cot A.$     (E1)
+
+ Use identities $(\cos A)^2=1/(1+t^2)$,  $\cos(2A)=2(\cos A)^2-1= 2/(1+t^2) -1$, $\sin(2A)=2\sin A\cos A=2t^2/(1+t^2)$, we obtain $2vt-at^2=2u+a$.   (E1')
+
+ The condition that $T$ is on the circle yields $(2u+\cos(2A))^2+ (2v-\sin(2A))^2=1$, namely $v\sin(2A)-u\cos(2A)=u^2+v^2$.   (E2)
+
+ $M$ is the mid-point on the hypotenuse of triangle $STX$, hence $MS=MX$, yielding $(u+\cos(2A))^2+(v-\sin(2A))^2=(u+a-1)^2+(v-at)^2$.   (E3)
+
+ Expand (E3), using (E2) to replace $2(v\sin(2A)-u\cos(2A))$ with $2(u^2+v^2)$, and using (E1') to replace $a(-2vt+at^2)$ with $-a(2u+a)$, and we obtain$u^2-u-a+v^2=0$, namely $(u-\frac{1}{2})^2+v^2=a+\frac{1}{4}$, which is a circle centered at $(\frac{1}{2},0)$ with radius $r=\sqrt{a+\frac{1}{4}}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let the midpoint of $AO$ be $K$. We claim that $M$ moves along a circle with radius $KP$.
+
+ We will show that $KM^2 = KP^2$, which implies that $KM = KP$, and as $KP$ is fixed, this implies the claim.
+
+ $KM^2 = \frac{AM^2+OM^2}{2}-\frac{AO^2}{4}$ by the median formula on $\triangle AMO$.
+
+ $KP^2 = \frac{AP^2+OP^2}{2}-\frac{AO^2}{4}$ by the median formula on $\triangle APO$.
+
+ $KM^2-KP^2 = \frac{1}{2}(AM^2+OM^2-AP^2-OP^2)$.
+
+ As $OP = OT$, $OP^2-OM^2 = MT^2$ from right triangle $OMT$. $(1)$
+
+ By $(1)$, $KM^2-KP^2 = \frac{1}{2}(AM^2-MT^2-AP^2)$.
+
+ Since $M$ is the circumcenter of $\triangle XTS$, and $MT$ is the circumradius, the expression $AM^2-MT^2$ is the power of point $A$ with respect to $(XTS)$. However, as $AX*AS$ is also the power of point $A$ with respect to $(XTS)$, this implies that $AM^2-MT^2=AX*AS$. $(2)$
+
+ By $(2)$, $KM^2-KP^2 = \frac{1}{2}(AX*AS-AP^2)$
+
+ Finally, $\triangle APX \sim \triangle ASP$ by AA similarity ($\angle XAP = \angle SAP$ and $\angle APX = \angle AQP = \angle ASP$), so $AX*AS = AP^2$. $(3)$
+
+ By $(3)$, $KM^2-KP^2=0$, so $KM^2=KP^2$, as desired. $QED$
+
+ \textbf{More Solutions} \href{https://artofproblemsolving.com/wiki/index.php/2015\_USAMO\_Problems/Problem\_2}{https://artofproblemsolving.com/wiki/index.php/2015\_USAMO\_Problems/Problem\_2}
+
+ 
+
+
+	\item (\textit{USAJMO 2015}) Find all functions $f:\mathbb{Q}\rightarrow\mathbb{Q}$ such that
+ \[f(x)+f(t)=f(y)+f(z)\]for all rational numbers $x<y<z<t$ that form an arithmetic progression. ($\mathbb{Q}$ is the set of all rational numbers.)
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+According to the given, $f(x-a)+f(x+0.5a)=f(x-0.5a)+f(x)$, where x and a are rational. Likewise $f(x-0.5a)+f(x+a)=f(x+0.5a)+f(x)$. Hence $f(x+a)-f(x)= f(x)-f(x-a)$, namely $2f(x)=f(x-a)+f(x+a)$. Let $f(0)=C$, then consider $F(x)=f(x)-C$, where $F(0)=0,$ $2F(x)=F(x-a)+F(x+a)$. 
+
+ $F(2x)=F(x)+[F(x)-F(0)]=2F(x)$, $F(3x)=F(2x)+[F(2x)-F(x)]=3F(x)$.Easily, by induction, $F(nx)=nF(x)$ for all integers $n$.Therefore, for nonzero integer m, $(1/m)F(mx)=F(x)$ , namely $F(x/m)=(1/m)F(x)$Hence $F(n/m)=(n/m)F(1)$. Let $F(1)=k$, we obtain $F(x)=kx$, where $k$ is the slope of the linear functions, and $f(x)=kx+C$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We have 
+ \[f(x-3d)+f(x+3d)=f(x-d)+f(x+d)\] and 
+ \[f(x)+f(x+3d)=f(x+d)+f(x+2d).\] Subtracting these two and rearranging gives 
+ \[f(x-3d)+f(x+2d)=f(x)+f(x-d),\] and since $f(x+2d)=f(x+d)+f(x)-f(x-d)$ we get 
+ \[f(x-3d)+f(x+d)=2f(x-d)\] from which we get 
+ \[f(x-d)+f(x+d)=2f(x).\] Then we have $f(x)+f(y)=f(0)+f(x+y)=2f\left(\frac{x+y}{2}\right)$. Setting $f(0)=c$, we let $f(x)=g(x)+c$ to get $g(x)+g(y)=g(x+y)$. This is Cauchy's functional equation, so it has solutions at $g(x)=kx$, so the answer is $\boxed{f(x)=kx+c}$.
+
+ 
+
+
+	\item (\textit{USAJMO 2015}) Let $ABCD$ be a cyclic quadrilateral. Prove that there exists a point $X$ on segment $\overline{BD}$ such that $\angle BAC=\angle XAD$ and $\angle BCA=\angle XCD$ if and only if there exists a point $Y$ on segment $\overline{AC}$ such that $\angle CBD=\angle YBA$ and $\angle CDB=\angle YDA$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+Note that lines $AC, AX$ are isogonal in $\triangle ABD$, so an inversion centered at $A$ with power $r^2=AB\cdot AD$ composed with a reflection about the angle bisector of $\angle DAB$ swaps the pairs $(D,B)$ and $(C,X)$. Thus, 
+ \[\frac{AD}{XD}\cdot \frac{XD}{CD}=\frac{AC}{BC}\cdot \frac{AB}{CA}\Longrightarrow (A,C;B,D)=-1\]so that $ACBD$ is a harmonic quadrilateral. By symmetry, if $Y$ exists, then $(B,D;A,C)=-1$. We have shown the two conditions are equivalent, whence both directions follow$.\:\blacksquare\:$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+All angles are directed. Note that lines $AC, AX$ are isogonal in $\triangle ABD$ and $CD, CE$ are isogonal in $\triangle CDB$. From the law of sines it follows that 
+
+ 
+ \[\frac{DX}{XB}\cdot \frac{DE}{ED}=\left(\frac{AD}{DB}\right)^2=\left(\frac{DC}{BC}\right)^2.\]
+
+ Therefore, the ratio equals $\frac{AD\cdot DC}{DB\cdot BC}.$
+
+ Now let $Y$ be a point of $AC$ such that $\angle{ABE}=\angle{CBY}$. We apply the above identities for $Y$ to get that $\frac{CY}{YA}\cdot \frac{CE}{EA}=\left(\frac{CD}{DA}\right)^2$. So $\angle{CDY}=\angle{EDA}$, the converse follows since all our steps are reversible.
+
+ 
+Beware that directed angles, or angles $\bmod$ $180$, are not standard olympiad material. If you use them, provide a definition.
+
+ 
+
+
+	\item (\textit{USAJMO 2015}) Steve is piling $m\geq 1$ indistinguishable stones on the squares of an $n\times n$ grid. Each square can have an arbitrarily high pile of stones. After he finished piling his stones in some manner, he can then perform stone moves, defined as follows. Consider any four grid squares, which are corners of a rectangle, i.e. in positions $(i, k), (i, l), (j, k), (j, l)$ for some $1\leq i, j, k, l\leq n$, such that $i<j$ and $k<l$. A stone move consists of either removing one stone from each of $(i, k)$ and $(j, l)$ and moving them to $(i, l)$ and $(j, k)$ respectively, or removing one stone from each of $(i, l)$ and $(j, k)$ and moving them to $(i, k)$ and $(j, l)$ respectively.
+
+
+ Two ways of piling the stones are equivalent if they can be obtained from one another by a sequence of stone moves.
+
+
+ How many different non-equivalent ways can Steve pile the stones on the grid?
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let the number of stones in row $i$ be $r_i$ and let the number of stones in column $i$ be $c_i$. Since there are $m$ stones, we must have $\sum_{i=1}^n r_i=\sum_{i=1}^n c_i=m$
+
+ Lemma 1: If any $2$ pilings are equivalent, then $r_i$ and $c_i$ are the same in both pilings $\forall i$.
+
+ Proof: We suppose the contrary. Note that $r_i$ and $c_i$ remain invariant after each move, therefore, if any of the $r_i$ or $c_i$ are different, they will remain different.
+
+ Lemma 2: Any $2$ pilings with the same $r_i$ and $c_i$ $\forall i$ are equivalent.
+
+ Proof: Suppose piling 1 and piling 2 not the same piling. Call a stone in piling 1 wrong if the stone occupies a position such that there are more stones in that position in piling 1 than piling 2. Similarly define a wrong stone in piling 2. Let a wrong stone be at $(a, b)$ in piling 1. Since $c_b$ is the same for both pilings, we must have a wrong stone in piling 2 at column b, say at $(c, b)$, such that $c\not = a$. Similarly, we must have a wrong stone in piling 1 at row c, say at $(c, d)$ where $d \not = b$. Clearly, making the move $(a,b);(c,d) \implies (c,b);(a,d)$ in piling 1 decreases the number of wrong stones in piling 1. Therefore, the number of wrong stones in piling 1 must eventually be $0$ after a sequence of moves, so piling 1 and piling 2 are equivalent.
+
+ Lemma 3: Given the sequences $g_i$ and $h_i$ such that $\sum_{i=1}^n g_i=\sum_{i=1}^n h_i=m$ and $g_i, h_i\geq 0 \forall i$, there is always a piling that satisfies $r_i=g_i$ and $c_i=h_i$ $\forall i$.
+
+ Proof: We take the lowest $i$, $j$, such that $g_i, h_j >0$ and place a stone at $(i, j)$, then we subtract $g_i$ and $h_j$ by $1$ each, until $g_i$ and $h_i$ become $0$ $\forall i$, which will happen when $m$ stones are placed, because $\sum_{i=1}^n g_i$ and $\sum_{i=1}^n h_i$ are both initially $m$ and decrease by $1$ after each stone is placed. Note that in this process $r_i+g_i$ and $c_i+h_i$ remains invariant, thus, the final piling satisfies the conditions above.
+
+ By the above lemmas, the number of ways to pile is simply the number of ways to choose the sequences $r_i$ and $c_i$ such that $\sum_{i=1}^n r_i=\sum_{i=1}^n c_i=m$ and $r_i, c_i \geq 0 \forall i$. By stars and bars, the number of ways is $\binom{n+m-1}{m}^{2}$.
+
+ Solution by Shaddoll
+
+ 
+
+
+\end{enumerate}

@@ -1,0 +1,335 @@
+\section{USAJMO 2016}
+        \begin{enumerate}
+        	\item (\textit{USAJMO 2016}) The isosceles triangle $\triangle ABC$, with $AB=AC$, is inscribed in the circle $\omega$. Let $P$ be a variable point on the arc $\stackrel{\frown}{BC}$ that does not contain $A$, and let $I_B$ and $I_C$ denote the incenters of triangles $\triangle ABP$ and $\triangle ACP$, respectively.
+
+
+ Prove that as $P$ varies, the circumcircle of triangle $\triangle PI_BI_C$ passes through a fixed point.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2016_1_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ We claim that $M$ (midpoint of arc $BC$) is the fixed point.We would like to show that $M$, $P$, $I_B$, $I_C$ are cyclic.
+
+ We extend $PI_B$ to intersect $\omega$ again at R.We extend $PI_C$ to intersect $\omega$ again at S.
+
+ We invert around a circle centered at $P$ with radius $1$ (for convenience).(I will denote X' as the reflection of X for all the points)The problem then becomes: Prove $I_B'$, $I_C'$, and $M'$ are collinear.
+
+ Now we look at triangle $\triangle PR'S'$. We apply Menelaus (the version where all three points lie outside the triangle).It suffices to show that
+ \[\dfrac{PI_B'}{I_B'R'} \cdot \dfrac{R'M'}{M'S'} \cdot \dfrac{S'I_C'}{I_C'P} = 1\]
+
+ By inversion, we know $PX' = \dfrac{1}{PX}$ for any point $X$ and $X'Y' = \dfrac{XY}{PX \cdot PY}$ for any points $X$ and $Y$.
+
+ Plugging this into our Menelaus equation we obtain that it suffices to show
+ \[\dfrac{\dfrac{1}{PI_B}}{\dfrac{RI_B}{PI_B \cdot PR}} \cdot \dfrac{\dfrac{RM}{PR \cdot PM}}{\dfrac{SM}{PS \cdot PM}} \cdot \dfrac{\dfrac{SI_C}{PI_C \cdot PS}}{\dfrac{1}{PI_C}} = 1\]We cancel out the like terms and rewrite. It suffices to show
+ \[\dfrac{RM \cdot SI_C}{SM \cdot RI_B} = 1\]We know that $AM$ is the diameter of $\omega$ because $\triangle ABC$ is isosceles and $AM$ is the angle bisector. We also know $\angle RMA = \dfrac{\angle ACB}{2} = \dfrac{\angle ABC}{2} = \angle SMA$ so $R$ and $S$ are symmetric with respect to $AM$ so $RM = SM$.
+
+ Thus, it suffices to show $\dfrac{SI_C}{RI_B} = 1$.This is obvious because $RI_B = RA = SA = SI_C$.Therefore we are done. $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We will use complex numbers as mentioned \href{https://artofproblemsolving.comhttp://web.mit.edu/yufeiz/www/wc08/peng\_formula.pdf}{here}. Set the circumcircle of $\triangle ABC$ to be the unit circle. Let 
+ \[A=1, B=w^2,C=\frac{1}{w^2}, P=p^2,\] such that 
+ \[I_B=w+wp-p, I_C=p-\frac{p}{w}+\frac{1}{w}.\] We claim that the circumcircle of $\triangle PI_BI_C$ passes through $M=-1.$ This is true if 
+ \[k=\frac{(I_B-M)(I_C-P)}{(I_B-P)(I_C-M)}=\frac{(w+wp-p+1)(p+\frac{1}{w}-\frac{p}{w}-p^2)}{(w+wp-p-p^2)(p+\frac{1}{w}-\frac{p}{w}+1)}=\frac{(wp+1)(1-p)}{(p+1)(w-p)}\] is real. Now observe that 
+ \[\overline{k}=\frac{(1+\frac{1}{wp})(1-\frac{1}{p})}{(\frac{1}{p}+1)(\frac{1}{w}-\frac{1}{p})}=k,\] so $k$ is real and we are done. $\blacksquare$
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 3}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2016_1_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ Let $M$ be the midpoint of arc $BC$. Let $D$ be the midpoint of arc $AB$. Let $E$ be the midpoint of arc $AC$.Then, $P, I_B$, and $D$ are collinear and $P, I_C$, and $E$ are collinear.
+
+ We'll prove $MPI_B I_C$ is cyclic. (Intuition: we'll show that $M$ is the Miquel's point of quadrilateral $DE I_C I_B$.
+
+ $D$ is the center of the circle $A I_B B$ (the $P-$ excenter of $PAB$ is also on the same circle). Therefore $D I_B = DB$. Similarly $E I_C = EC$. Since $AB=AC$, $DB=EC$. Therefore $D I_B = E I_C$. Obviously $ME = MD$ and $\angle MEI_C = \angle MEP = \angle MDP = \angle MDI_B$. Thus by SAS, $\triangle MEI_C \cong \triangle MDI_B$.
+
+ Hence $\angle I_B M I_C = \angle DME = \angle DPE = \angle I_B P I_C$, so $MPI_B I_C$ is cyclic and we are done.
+
+ 
+
+
+	\item (\textit{USAJMO 2016}) Prove that there exists a positive integer $n < 10^6$ such that $5^n$ has six consecutive zeros in its decimal representation.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Let digit $1$ of a number be the units digit, digit $2$ be the tens digit, and so on. Let the 6 consecutive zeroes be at digits $k-5$ through digit $k$. The criterion is then obviously equivalent to 
+
+ 
+ \[5^n \bmod 10^k < 10^{k-6}\]
+
+ We will prove that $n = 20+2^{19}, k = 20$ satisfies this, thus proving the problem statement (since $n = 20+2^{19} < 10^6$). 
+
+ We want 
+
+ 
+ \[5^{20+2^{19}}\pmod{10^{20}}\]
+
+ We can split this into its prime factors. Obviously, it is a multiple of $5^{20}$, so we only need to consider it $\mod2^{20}$.
+
+ 
+ \[5^{20}\cdot5^{2^{19}}\pmod{2^{20}}\]
+
+ 
+ \[5^{20}\cdot5^{\varphi(2^{20})}\pmod{2^{20}}\]
+
+ ($\varphi$ is the Euler Totient Function.) By Euler's Theorem, since $\bigl(5, 2^{20}\bigr)=1$, 
+
+ 
+ \[5^{\varphi(2^{20})}\equiv1\pmod{2^{20}}\]
+
+ so
+
+ 
+ \[5^{20}\cdot5^{\varphi (2^{20})}\equiv5^{20}\pmod{2^{20}}\]
+
+ Since $2^{20} > 10^6, 5^{20} < 10^{14} = 10^{20-6}$,
+
+ 
+ \[5^n \bmod 10^k < 10^{k-6}\]
+
+ for $n = 20+2^{19}$ and $k = 20$, and thus the problem statement has been proven. $\blacksquare$
+
+ \textbf{Motivation for Solution} Modifying our necessary and sufficient inequality, we get:
+
+ 
+ \[5^n \mod 10^k < 10^{k-6}\]
+
+ 
+ \[5^k \left(5^{n-k} \mod 2^k\right) < 10^{k-6}\]
+
+ 
+ \[5^{n-k} \mod 2^k < \frac{2^{k-6}}{5^6}\]
+
+ Since gcd$\left(5^{n-k}, 2^k\right) = 1$ if $k \neq 0$ (which is obviously true) and $n \neq k$ which is also true given that $5^k < 10^k$, we need the RHS to be greater than $1$:
+
+ 
+ \[\frac{2^{k-6}}{5^6} > 1\]
+
+ 
+ \[2^{k-6} > 5^6\]
+
+ 
+ \[2^k > 10^6\]
+
+ The first $k$ that satisfies this inequality is $k = 20$, so we let $k = 20$:
+
+ 
+ \[5^{n-20} \mod 2^{20} < \frac{2^{14}}{5^6}\]
+
+ 
+ \[5^{n-20} \mod 2^{20} \leq 1\]
+
+ 
+ \[5^{n-20} \mod 2^{20} = 1\]
+
+ From this, Euler's Theorem comes to mind and we see that if $n-20 = \varphi\left(2^{20}\right)$, the equality is satisfied. Thus, we get that $n = 20 + 2^{19}$, which is less than $10^6$, and we should be done. However, this requires slightly more formalization, and can be proven directly more easily if $n = 20+2^{19}$ is known or suspected. 
+
+ 
+
+
+	\item (\textit{USAJMO 2016}) Let $X_1, X_2, \ldots, X_{100}$ be a sequence of mutually distinct nonempty subsets of a set $S$. Any two sets $X_i$ and $X_{i+1}$ are disjoint and their union is not the whole set $S$, that is, $X_i\cap X_{i+1}=\emptyset$ and $X_i\cup X_{i+1}\neq S$, for all $i\in\{1, \ldots, 99\}$. Find the smallest possible number of elements in $S$.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+The answer is that $|S| \ge 8$.
+
+ First, we provide a inductive construction for $S = \left\{ 1, \dots, 8 \right\}$. Actually, for $n \ge 4$ we will provide a construction for $S = \left\{ 1, \dots, n \right\}$ which has $2^{n-1} + 1$ elements in a line. (This is sufficient, since we then get $129$ for $n = 8$.) The idea is to start with the following construction for $|S| = 4$: 
+ \[\begin{array}{ccccccccc} 34 & 1 & 23 & 4 & 12 & 3 & 14 & 2 & 13 \end{array}.\]Then inductively, we do the following procedure to move from $n$ to $n+1$: take the chain for $n$ elements, delete an element, and make two copies of the chain (which now has even length). Glue the two copies together, joined by $\varnothing$ in between. Then place the element $n+1$ in alternating positions starting with the first (in particular, this hits $n+1$). For example, the first iteration of this construction gives: 
+ \[\begin{array}{ccccccccc} 345 & 1 & 235 & 4 & 125 & 3 & 145 & 2 & 5 \\ 34 & 15 & 23 & 45 & 12 & 35 & 14 & 25 & \end{array}\]Now let's check $|S| \ge 8$ is sufficient. Consider a chain on a set of size $|S| = 7$. (We need $|S| \ge 7$ else $2^{|S|} < 100$.) Observe that there are sets of size $\ge 4$ can only be neighbored by sets of size $\le 2$, of which there are $\binom 71 + \binom 72 = 28$. So there are $\le 30$ sets of size $\ge 4$. Also, there are $\binom 73 = 35$ sets of size $3$. So the total number of sets in a chain can be at most $30 + 28 + 35 = 93 < 100$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+My proof that $|S|\ge 8$ is basically the same as the one above. Here is another construction for $|S| = 8$ that I like because it works with remainders and it's pretty intuitive. The basic idea is to assign different subsets to different remainders when divided by particular numbers, and then to use the Chinese Remainder Theorem to show that all of the subsets are distinct. The motivation for this comes from the fact that we want $X_i$ and $X_{i+1}$ to always be disjoint, so remainders are a great way to systematically make that happen, since $i$ and $i+1$ do not have the same remainder modulo any positive integer greater than $1.$ Anyway, here is the construction:
+
+ Let $S = \left\{ {1, 2, ..., 8} \right\}.$ For $i = 1, 2, ..., 98,$ we will choose which elements of the set $\left\{ {1, 2, 3, 4} \right\}$ belong to $X_i$ based on the remainder of $i$ modulo $9,$ and we will choose which elements of the set $\left\{ {5, 6, 7, 8} \right\}$ belong to $X_i$ based on the remainder of $i$ modulo $11.$ We do this as follows:
+ \[X_i\cap\left\{ {1, 2, 3, 4} \right\} = \begin{array}{ll}       \emptyset & i\equiv 0 \text{ (mod } 9\text{)} \\       \left\{ {1, 2} \right\} & i\equiv 1 \text{ (mod } 9\text{)} \\       \left\{ {3} \right\} & i\equiv 2 \text{ (mod } 9\text{)} \\       \left\{ {1, 4} \right\} & i\equiv 3 \text{ (mod } 9\text{)} \\       \left\{ {2} \right\} & i\equiv 4 \text{ (mod } 9\text{)} \\       \left\{ {3, 4} \right\} & i\equiv 5 \text{ (mod } 9\text{)} \\       \left\{ {1} \right\} & i\equiv 6 \text{ (mod } 9\text{)} \\       \left\{ {2, 3} \right\} & i\equiv 7 \text{ (mod } 9\text{)} \\       \left\{ {4} \right\} & i\equiv 8 \text{ (mod } 9\text{)} \\ \end{array}\]
+ \[X_i\cap\left\{ {5, 6, 7, 8} \right\} = \begin{array}{ll}       \emptyset & i\equiv 0 \text{ (mod } 11\text{)} \\       \left\{ {5, 6} \right\} & i\equiv 1 \text{ (mod } 11\text{)} \\       \left\{ {7, 8} \right\} & i\equiv 2 \text{ (mod } 11\text{)} \\       \left\{ {5} \right\} & i\equiv 3 \text{ (mod } 11\text{)} \\       \left\{ {6, 8} \right\} & i\equiv 4 \text{ (mod } 11\text{)} \\       \left\{ {5, 7} \right\} & i\equiv 5 \text{ (mod } 11\text{)} \\       \left\{ {6} \right\} & i\equiv 6 \text{ (mod } 11\text{)} \\       \left\{ {5, 8} \right\} & i\equiv 7 \text{ (mod } 11\text{)} \\       \left\{ {6, 7} \right\} & i\equiv 8 \text{ (mod } 11\text{)} \\       \left\{ {8} \right\} & i\equiv 9 \text{ (mod } 11\text{)} \\       \left\{ {7} \right\} & i\equiv 10 \text{ (mod } 11\text{)} \\ \end{array}\]Finally, we specially define $X_{99} = \left\{ {1, 2, 3} \right\}$ and $X_{100} = \left\{ {5, 6, 7} \right\}.$
+
+ It is relatively easy to see that this configuration satisfies all of the desired conditions. We see that $X_{98} = \left\{ {4, 7} \right\},$ so $X_{98}$ and $X_{99}$ are disjoint, as are $X_{99}$ and $X_{100}.$ The remainder configuration above takes care of the rest, so any two consecutive sets are disjoint. Then, by the Chinese Remainder Theorem, no two integers from $1$ to $98$ have the same combination of residues modulo $9$ and modulo $11,$ so all of the sets $X_i$ are distinct for $i = 1, 2, ..., 98.$ It is also easy to verify that none of these match $X_{99}$ or $X_{100},$ since they all have at most two elements of $\left\{ {1, 2, 3, 4} \right\}$ and at most two elements of $\left\{ {5, 6, 7, 8} \right\},$ whereas $X_{99}$ and $X_{100}$ do not satisfy this; hence all of the sets are distinct. Finally, notice that, for any pair of consecutive sets, at least one of them has at most $3$ elements, while the other has at most $4.$ Thus, their union always has at most $7$ elements, so $X_i\cup X_{i+1}\neq S$ for all $i = 1, 2, ..., 99.$
+
+ All of the conditions are satisfied, so this configuration works. We thus conclude that $\text{min}\left(\left|S\right|\right) = 8.$
+
+ 
+
+
+	\item (\textit{USAJMO 2016}) Find, with proof, the least integer $N$ such that if any $2016$ elements are removed from the set $\{1, 2,\dots,N\}$, one can still find $2016$ distinct numbers among the remaining elements with sum $N$.
+
+
+ 
+
+
+
+\textbf{Solution}
+
+Since any $2016$ elements are removed, suppose we remove the integers from $1$ to $2016$. Then the smallest possible sum of $2016$ of the remaining elements is 
+ \[2017+2018+\cdots + 4032 = 1008 \cdot 6049 = 6097392\]so clearly $N\ge 6097392$. We will show that $N=6097392$ works.
+
+ $\vspace{0.2 in}$
+
+ $\{1,2\cdots 6097392\}$ contain the integers from $1$ to $6048$, so pair these numbers as follows:
+
+ 
+ \[1, 6048\]
+
+ 
+ \[2, 6047\]
+
+ 
+ \[3, 6046\]
+
+ 
+ \[\cdots\]
+
+ 
+ \[3024, 3025\]
+
+ When we remove any $2016$ integers from the set $\{1,2,\cdots N\}$, clearly we can remove numbers from at most $2016$ of the $3024$ pairs above, leaving at least $1008$ complete pairs. To get a sum of $N$, simply take these $1008$ pairs, all of which sum to $6049$. The sum of these $2016$ elements is $1008 \cdot 6049 = 6097392$, as desired.
+
+ $\vspace{0.2 in}$
+
+ We have shown that $N$ must be at least $6097392$, and that this value is attainable. Therefore our answer is $\boxed{6097392}$.
+
+ 
+
+
+ 
+
+
+	\item (\textit{USAJMO 2016}) Let $\triangle ABC$ be an acute triangle, with $O$ as its circumcenter. Point $H$ is the foot of the perpendicular from $A$ to line $\overleftrightarrow{BC}$, and points $P$ and $Q$ are the feet of the perpendiculars from $H$ to the lines $\overleftrightarrow{AB}$ and $\overleftrightarrow{AC}$, respectively.
+
+
+ Given that 
+ \[AH^2=2\cdot AO^2,\]prove that the points $O,P,$ and $Q$ are collinear.
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2016_5_Solution_Figure_1.png}
+                    \end{figure}
+                    Let $(ABC) = \Omega$ and the circle centered at $A$ passing through $H$ be $\omega$. Define 
+
+ 
+
+
+	\item (\textit{USAJMO 2016}) Find all functions $f:\mathbb{R}\rightarrow \mathbb{R}$ such that for all real numbers $x$ and $y$,
+
+ \[(f(x)+xy)\cdot f(x-3y)+(f(y)+xy)\cdot f(3x-y)=(f(x+y))^2.\]
+
+
+ 
+
+
+
+\textbf{Solution 1}
+
+\textbf{Step 1:} Set $x = y = 0$ to obtain $f(0) = 0.$
+
+ \textbf{Step 2:} Set $x = 0$ to obtain $f(y)f(-y) = f(y)^2.$
+
+ $\indent$ In particular, if $f(y) \ne 0$ then $f(y) = f(-y).$
+
+ $\indent$ In addition, replacing $y \to -t$, it follows that $f(t) = 0 \implies f(-t) = 0$ for all $t \in \mathbb{R}.$
+
+ \textbf{Step 3:} Set $x = 3y$ to obtain $\left[f(y) + 3y^2\right]f(8y) = f(4y)^2.$
+
+ $\indent$ In particular, replacing $y \to t/8$, it follows that $f(t) = 0 \implies f(t/2) = 0$ for all $t \in \mathbb{R}.$
+
+ \textbf{Step 4:} Set $y = -x$ to obtain $f(4x)\left[f(x) + f(-x) - 2x^2\right] = 0.$
+
+ $\indent$ In particular, if $f(x) \ne 0$, then $f(4x) \ne 0$ by the observation from Step 3, because $f(4x) = 0 \implies f(2x) = 0 \implies f(x) = 0.$ Hence, the above equation implies that $2x^2 = f(x) + f(-x) = 2f(x)$, where the last step follows from the first observation from Step 2.
+
+ $\indent$ Therefore, either $f(x) = 0$ or $f(x) = x^2$ for each $x.$
+
+ $\indent$ Looking back on the equation from Step 3, it follows that $f(y) + 3y^2 \ne 0$ for any nonzero $y.$ Therefore, replacing $y \to t/4$ in this equation, it follows that $f(t) = 0 \implies f(2t) = 0.$
+
+ \textbf{Step 5:} If $f(a) = f(b) = 0$, then $f(b - a) = 0.$
+
+ $\indent$ This follows by choosing $x, y$ such that $x - 3y = a$ and $3x - y = b.$ Then $x + y = \frac{b - a}{2}$, so plugging $x, y$ into the given equation, we deduce that $f\left(\frac{b - a}{2}\right) = 0.$ Therefore, by the third observation from Step 4, we obtain $f(b - a) = 0$, as desired.
+
+ \textbf{Step 6:} If $f \not\equiv 0$, then $f(t) = 0 \implies t = 0.$
+
+ $\indent$ Suppose by way of contradiction that there exists an nonzero $t$ with $f(t) = 0.$ Choose $x, y$ such that $f(x) \ne 0$ and $x + y = t.$ The following three facts are crucial:
+
+ $\indent$ 1. $f(y) \ne 0.$ This is because $(x + y) - y = x$, so by Step 5, $f(y) = 0 \implies f(x) = 0$, impossible.
+
+ $\indent$ 2. $f(x - 3y) \ne 0.$ This is because $(x + y) - (x - 3y) = 4y$, so by Step 5 and the observation from Step 3, $f(x - 3y) = 0 \implies f(4y) = 0 \implies f(2y) = 0 \implies f(y) = 0$, impossible.
+
+ $\indent$ 3. $f(3x - y) \ne 0.$ This is because by the second observation from Step 2, $f(3x - y) = 0 \implies f(y - 3x) = 0.$ Then because $(x + y) - (y - 3x) = 4x$, Step 5 together with the observation from Step 3 yield $f(3x - y) = 0 \implies f(4x) = 0 \implies f(2x) = 0 \implies f(x) = 0$, impossible.
+
+ $\indent$ By the second observation from Step 4, these three facts imply that $f(y) = y^2$ and $f(x - 3y) = \left(x - 3y\right)^2$ and $f(3x - y) = \left(3x - y\right)^2.$ By plugging into the given equation, it follows that
+ \begin{align*} \left(x^2 + xy\right)\left(x - 3y\right)^2 + \left(y^2 + xy\right)\left(3x - y\right)^2 = 0. \end{align*}
+ But the above expression miraculously factors into $\left(x + y\right)^4$! This is clearly a contradiction, since $t = x + y \ne 0$ by assumption. This completes Step 6.
+
+ \textbf{Step 7:} By Step 6 and the second observation from Step 4, the only possible solutions are $f \equiv 0$ and $f(x) = x^2$ for all $x \in \mathbb{R}.$ It's easy to check that both of these work, so we're done.
+
+ \textbf{Alternative Solution 1} From steps 1 and 2 of Solution 1 we have that $f(0)=0$, and $f(-y) \cdot f(y)=(f(y))^2$. Therefore, if $f(y) \ne 0$, then $f(y)=f(-y)$. Furthermore, setting $y=-x$ gives us $(f(x)-x^2) \cdot f(4x) + (f(-x)-x^2) \cdot f(4x) = f(0) = 0$. The LHS can be factored as $(f(x)+f(-x)-2x^2) \cdot f(4x) = 0$. In particular, if $f(4x) \ne 0$, then we have $f(x)+f(-x)=2x^2$. However, since we have from step 2 that $f(x)=f(-x)$, assuming $f(x) \ne 0$, the equation becomes $2f(x)=2x^2$, so for every $x$, $f(x)$ is equivalent to either $0$ or $x^2$. From step 6 of Solution 1, we can prove that $f(x)=0$, and $f(x)=x^2$ are the only possible solutions.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Step 1: $x=y=0 \implies f(0)=0$
+
+ Step 2: $x=0 \implies f(y)f(-y)=f(y)^{2}$. Now, assume $y \not = 0$. Then, if $f(y)=0$, we substitute in $-y$ to get $f(y)f(-y)=f(-y)^{2}$, or $f(y)=f(-y)=0$. Otherwise, we divide both sides by $f(y)$ to get $f(y)=f(-y)$. If $y=0$, we obviously have $f(0)=f(0)$. Thus, the function is even..Step 3: $y=-x \implies 2f(4x)(f(x)-x^{2})=0$. Thus, $\forall x$, we have $f(4x)=0$ or $f(x)=x^{2}$.
+
+ Step 4: We now assume $f(x) \not = 0$, $x\not = 0$. We have $f(\frac{x}{4})=\frac{x^{2}}{16}$. Now, setting $x=y=\frac{x}{4}$, we have $f(\frac{x}{2})=\frac{x^{2}}{4}$ or $f(\frac{x}{2})=0$. The former implies that $f(x)=0$ or $x^{2}$. The latter implies that $f(x)=0$ or $f(x)=\frac{x^{2}}{2}$. Assume the latter. $y=-2x \implies -\frac{3y^{2}}{2}f(7y)-{2y^{2}}f(5y)=\frac{x^{2}}{2}$. Clearly, this implies that $f(x)$ is negative for some $m$. Now, we have $f(\frac{m}{4})=\frac{m^{2}}{16} \implies f(\frac{m}{2})=0,\frac{m^{2}}{4} \implies f(m) \geq 0$, which is a contradiction. Thus, $\forall x$$f(x)=0$ or $f(x)=x^{2}$.
+
+ Step 5: We now assume $f(x)=0$, $f(y)=y^{2}$ for some $x,y \not = 0$. Let $m$ be sufficiently large integer, let $z=|4^{m}x|$ and take the absolute value of $y$(since the function is even). Choose $c$ such that $3z-c=y$. Note that we have $\frac{c}{z}$~$3$ and $\frac{y}{z}$~$0$. Note that $f(z)=0$. Now, $x=z, y=c \implies$ LHS is positive, as the second term is positive and the first term is nonnegative and thus the right term is equal to $(z+c)^{4}$~$256z^{4}$. Now if $f(z-3c)=0$, the second term of the LHS/RHS clearly ~0 as $m \to \infty$. if $f(z-3c)=0$, then we have LHS/RHS ~ $0$, otherwise, we have LHS/RHS~$\frac{8^{2}\cdot 3z^{4}}{256z^{4}}$~$\frac{3}{4}$, a contradiction, as we're clearly not dividing by $0$, and we should have LHS/RHS=1.
+
+ 
+
+
+ 
+
+
+\end{enumerate}

@@ -87,7 +87,6 @@ By Vieta's Formulas, $a = -(r+s+t)$ and $b = rs + st + rt$. $k = (r+s+t)^2 - 3(r
 For a given function $f$, consider the set of elements $Q \in P$ paired with elements $t \in S$ such that $f(Q) \ne t$. Call the set of pairs $(Q,t)$ set $R$.
 
  To employ the Pigeonhole Principle, we need a lower bound on $\lvert R \rvert$. There are $\binom{20}{9}$ elements $Q$ in $P$. If $f(Q) \in Q$, then there are $11$ choices for $t$ so that $f(Q) \ne t$. If $f(Q) \notin Q$, then there are $10$ choices for $t$ so that $f(Q) \ne t$. Therefore $\lvert R \rvert \ge 10 \cdot \binom{20}{9}$. These pairs $(Q,t)$ must be dispersed over all the $10$-element subsets of $S$. By the Pigeonhole Principle, some $10$-element subset of $S$ must contain at least 
- \[\lceil\frac{\lvert R \rvert}{\binom{20}{10}}\rceil = \lceil\frac{10\cdot\binom{20}{9}}{\binom{20}{10}}\rceil = \lceil\frac{100}{11}\rceil = 10\] pairs of a $9$-element subset $Q$ with the tenth element $t$ of that subset such that $f(Q) \ne t$, which satisfies the conditions of the problem.
 
  
 

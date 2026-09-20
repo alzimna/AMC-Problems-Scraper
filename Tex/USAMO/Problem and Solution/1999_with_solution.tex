@@ -129,7 +129,31 @@ First, suppose all the $a_i$ are positive.  Then
  \[\sum_{i=k+1}^n -a_i \le 2k-n .\]Since $-a_i$ is a positive real for all $k+1 \le i \le n$, it follows that
  \[\sum_{i=k+1}^n a_i^2 \le \left( \sum_{i=k+1}^n-a_i \right)^2 \le (2k-n)^2 .\]Then
  \begin{align*} \max(a_1, \dotsc, a_n)^2 &\ge \sum_{i=1}^k a_i^2 /k \\ &\ge \left( n^2 - \sum_{i=k+1}^n a_i^2 \right)/k \\ &\ge \frac{n^2 - (2k-n)^2}{k} = 4(n-k). \end{align*}
-Since $k<n$, 
+Since $k<n$, $4(n-k) > 4$.  It follows that $\max(a_1, \dotsc, a_n) \ge \sqrt{4} = 2$, as desired.  $\blacksquare$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Assume the contrary and suppose each $a_i$ is less than 2.
+
+ Without loss of generality let $a_1 \le a_2 \le a_3 \le ... \le a_n < 2$, and let $k$ be the largest integer such that $a_k \le 0$ and $0 \le a_{k+1}$ if it exists, or 0 if all the $a_i$ are non-negative. If $k = 0$, then (as $n \ge 4$) $\sum_{i=1}^n a_i^2 < \sum_{i=1}^n 4 = 4n \le n^2$, a contradiction. Hence, assume $n \ge k \ge 1$. Then
+ \[\sum_{i=1}^k a_i \ge n - \sum_{i=k+1}^n a_i > n - 2(n-k) = 2k - n.\]Because $a_i \le 0$ for $i \le k$, both sides of the inequality are non-positive, so squaring flips the sign. But we also know that $a_i a_j \ge 0$ for $i, j \le k$, so
+ \[\sum_{i=1}^k a_i^2 \le \left(\sum_{i=1}^k a_i \right)^2 < (2k - n)^2 = 4k^2 - 4kn + n^2,\]which results in
+ \[\sum_{i=1}^n a_i^2 = \sum_{i=1}^k a_i^2 + \sum_{i=k+1}^n a_i^2 < 4k^2 - 4kn + n^2 + 4(n-k) = n^2 - 4(k-1)(n-k) \le n^2,\]a contradiction to our given condition. The proof is complete.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Assume the contrary for maximum $M$ that $M < 2$. Then, all $a_i \leq M < 2$ hence $a_i < 2$. Note that $(a_i)(a_i - 2) < 0$ and therefore $a_i^2 < 2a_i$. When summing over all $n$, that implies $n^2 < 2\sum a_i$. Note that $\sum a_i < 2n$ and therefore $n^2 < 4n$ and thus $n < 4$. However $n \in \mathbb{Z}^+ \neq 1,2,3$ hence a contradiction arises, and so the maximum $M \ge 2$ as requested. $\square$
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1999\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
 
  
 

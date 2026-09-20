@@ -1,0 +1,17 @@
+\input{2010.tex}
+\input{2011.tex}
+\input{2012.tex}
+\input{2013.tex}
+\input{2014.tex}
+\input{2015.tex}
+\input{2016.tex}
+\input{2017.tex}
+\input{2018.tex}
+\input{2019.tex}
+\input{2020.tex}
+\input{2021.tex}
+\input{2022.tex}
+\input{2023.tex}
+\input{2024.tex}
+\input{2025.tex}
+\input{2026.tex}
