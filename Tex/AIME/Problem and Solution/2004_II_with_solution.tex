@@ -21,8 +21,6 @@ Let $r$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Length
 
 	\item (\textit{AIME II 2004}) A jar has 10 red candies and 10 blue candies. Terry picks two candies at random, then Mary picks two of the remaining candies at random. Given that the probability that they get the same color combination, irrespective of order, is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
-
- 
  \textbf{Answer: }441
 
 
@@ -46,8 +44,6 @@ In the above calculations, we treated the choices as ordered; that is, Terry cho
 
 	\item (\textit{AIME II 2004}) A solid rectangular block is formed by gluing together $N$ congruent 1-cm cubes face to face. When the block is viewed so that three of its faces are visible, exactly 231 of the 1-cm cubes cannot be seen. Find the smallest possible value of $N.$
 
-
- 
  \textbf{Answer: }384
 
 
@@ -219,21 +215,16 @@ Let $A,B,C$ be the fraction of bananas taken by the first, second, and third mon
  \[\frac{1}{8}A+\frac{3}{8}B+\frac{2}{24}C=\frac{1}{6}.\] Solve this your favorite way to get that
  \[(A,B,C)=\left( \frac{11}{51}, \frac{13}{51}, \frac{9}{17} \right).\] We need the amount taken by the first and second monkeys to be divisible by 8 and the third by 24 (but for the third, we already have divisibility by 9). Thus our minimum is $8 \cdot 51 = \boxed{408}.$
 
- 
 
 
 	\item (\textit{AIME II 2004}) $ABCD$ is a rectangular sheet of paper that has been folded so that corner $B$ is matched with point $B'$ on edge $AD.$ The crease is $EF,$ where $E$ is on $AB$ and $F$ is on $CD.$ The dimensions $AE=8, BE=17,$ and $CF=3$ are given. The perimeter of rectangle $ABCD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_II_2004_7_Problem_Figure_1.png}
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }293
 
 
@@ -293,7 +284,6 @@ Firstly, note that $B'E=BE=17$, so $AB'=\sqrt{17^2-8^2}=15$. Then let $\angle BE
 
  An even faster way to finish is, to draw a line segment $FF'$ where $F'$ is a point on $EB$ such that $FF'$ is perpendicular to $EB$. This makes right triangle $FF'E$, Also, note that $F'B$ has length of $3$ (draw the diagram out, and note the $F'B =FC$). From here, through $\tan \theta = \frac{5}{3}$, we can note that $\frac{FF'}{EF'} = \frac{5}{3} \implies \frac{FF'}{14} = \frac{5}{3} \implies FF' = \frac{70}{3}$. $FF'$ is parallel and congrurent to $CB$ and $AD$, and hence we can use this to calculate the perimeter. The perimeter is simply $\frac{70}{3} + \frac{70}{3} + 25 + 25 = \frac{290}{3} \Longrightarrow \boxed{293}$
 
- 
 
 
 
@@ -321,7 +311,6 @@ Call the intersection of $B'C'$, $BC$, and $EF$ $G$. Since $FCBE$ and $FC'B'E$ a
 
  Since $GBE$ and $G'B'E$ are congruent(SAS), their height from $EG$ is the same. $B'B=\sqrt{AB'^2+AB^2}=5\sqrt{34}$.$EG=\sqrt{EB^2+BG^2}=\sqrt{(\frac{17x}{14})^2+17^2}=17\sqrt{\frac{x^2}{196}+1}$
 
- 
  \[[FCBE]=\frac{1}{2} \cdot 17 \cdot \sqrt{\frac{x^2}{196}+1} \cdot \frac{5\sqrt{34}}{2}-\frac{9x}{28}\]
  \[280x+9x=7\cdot 5 \cdot \sqrt{34} \cdot 17 \cdot \sqrt{\frac{x^2}{196}+1}\]
  \[17^4 x^2=49 \cdot 25 \cdot 34 \cdot 17^2 \cdot (\frac{x^2}{196}+1)\]
@@ -343,16 +332,12 @@ Let the endpoint of the intersection of the fold near $F$ be $G$. Since trapezoi
  
  \[\frac {AE}{AB'} = \frac{DB}{DG}\]
 
- 
  \[\frac {8}{15} = \frac {x-15}{DG}\]
 
- 
  \[DG = \frac {15(x-15)}{8}\]
 
- 
  \[GF = DC-DG-FC\]
 
- 
  \[GF = \frac{-15x+401}{8}\]
 
  Since $\triangle ABE' \sim \triangle C'GF'$,
@@ -360,7 +345,6 @@ Let the endpoint of the intersection of the fold near $F$ be $G$. Since trapezoi
  
  \[\frac {AE}{B'E} = \frac {C'F}{GF}\]
 
- 
  \[\frac {8}{17} = \frac{3}{\frac {-15x+401}{8}}\]
 
  from which we get $x= \frac {70}{3}$.
@@ -459,16 +443,11 @@ we want $167^a \cdot 3^b \cdot 2^c$ such that this number has exactly $2004$ pos
 
 
  \textbf{Case 3:} $(x + 1) = 2004$
-
- 
-
-
- $x$ must be $2003$. We can let $x = a,b,$ or $c$, so this case gives us $3$ ways.
+$x$ must be $2003$. We can let $x = a,b,$ or $c$, so this case gives us $3$ ways.
 
  
 The answer is $21 + 30 + 3 = \boxed{54}.$
 
- 
 
 
 
@@ -491,8 +470,6 @@ The answer is $21 + 30 + 3 = \boxed{54}.$
 
 	\item (\textit{AIME II 2004}) A sequence of positive integers with $a_1=1$ and $a_9+a_{10}=646$ is formed so that the first three terms are in geometric progression, the second, third, and fourth terms are in arithmetic progression, and, in general, for all $n\ge1,$ the terms $a_{2n-1}, a_{2n}, a_{2n+1}$ are in geometric progression, and the terms $a_{2n}, a_{2n+1},$ and $a_{2n+2}$ are in arithmetic progression. Let $a_n$ be the greatest term in this sequence that is less than 1000. Find $n+a_n.$
 
-
- 
  \textbf{Answer: }973
 
 
@@ -512,7 +489,6 @@ and
  \begin{align*}a_{2n+1} &= \frac{a_{2n}^2}{a_{2n-1}} = \frac{f(n-1)^2f(n)^2}{f(n-1)^2} = f(n)^2 \\ \end{align*}
 
 
- 
 
 
 
@@ -530,7 +506,9 @@ We can find the value of $a_{9}$ by its bounds using three conditions:
 
  
             \begin{enumerate}
-                \item $0<a_{8} = 2a_{9}-a_{10}$\item $a_{10} < a_{11}$ (note that the sequence must be increasing on all terms, not monotonically increasing) $a_{10} < \frac{a_{10}^2}{a_{9}} \rightarrow a_{9} < a_{10}$\item $a_{11} = \frac{a_{10}^2}{a_{9}} = \frac{(646-a_{9})^2}{a_{9}}$, so necessarily $a_{9}$ is a factor of $646^2$, which factorizes to $2^2\cdot 17^2 \cdot 19^2$
+        \item $0<a_{8} = 2a_{9}-a_{10}$
+        \item $a_{10} < a_{11}$ (note that the sequence must be increasing on all terms, not monotonically increasing) $a_{10} < \frac{a_{10}^2}{a_{9}} \rightarrow a_{9} < a_{10}$
+        \item $a_{11} = \frac{a_{10}^2}{a_{9}} = \frac{(646-a_{9})^2}{a_{9}}$, so necessarily $a_{9}$ is a factor of $646^2$, which factorizes to $2^2\cdot 17^2 \cdot 19^2$
             \end{enumerate}
             Rearranging conditions 1 and 2, we get:
 
@@ -552,8 +530,6 @@ Let $a_2 = x$. We will write the first 10 terms in terms of $x$ (this will requi
 
 	\item (\textit{AIME II 2004}) Let $S$ be the set of integers between 1 and $2^{40}$ whose binary expansions have exactly two 1's. If a number is chosen at random from $S,$ the probability that it is divisible by 9 is $p/q,$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$
 
-
- 
  \textbf{Answer: }913
 
 
@@ -568,8 +544,7 @@ Any number from 1 to $2^{40}$ can be represented in binary with 40 digits (becau
 
  The numbers that satisfy the constraints are therefore equal to $2^{x}+2^{y} = 2^{x} \cdot (1+2^{y-x})$. The conditions say that this is divisible by 9. $2^{x}$ is clearly never divisible by 9, so we can just focus on $1+2^{y-x}$. 
  \[1+2^{y-x} \equiv 0 \pmod 9 \implies 2^{y-x} \equiv -1 \pmod 9 \implies 2^{y-x} \equiv 8 \pmod 9\]
-
- $y-x = 3$ clearly satisfies the congruence, but are there any more? Well, we see that any time we raise -1 (in the second congruence above) to an odd power we get -1 again, so if we raise $2^{3}$, which we know already works, to an odd power, we will also satisfy the congruence. Thus, $2^{3}, 2^{9}, 2^{15},$ etc. work; or, 
+$y-x = 3$ clearly satisfies the congruence, but are there any more? Well, we see that any time we raise -1 (in the second congruence above) to an odd power we get -1 again, so if we raise $2^{3}$, which we know already works, to an odd power, we will also satisfy the congruence. Thus, $2^{3}, 2^{9}, 2^{15},$ etc. work; or, 
  \[y-x \equiv 3 \pmod 6\]
 
  To count the numbers that satisfy the condition, we need to find the amount of numbers that satisfy $2^{x} \cdot (1+2^{y-x}) \leq 2^{40}$, and $y-x \equiv 3 \pmod 6 = 6n +3$ for some whole number $n$. 
@@ -579,12 +554,10 @@ Any number from 1 to $2^{40}$ can be represented in binary with 40 digits (becau
  \[\implies 2^{x} < \frac{2^{40}}{2^{6n+3}} \implies 2^{x} < 2^{40-(6n+3)}\implies 2^{x} < 2^{37-6n} \implies x < 37 - 6n\]
 
  Finally, the number of possible values of $x$ is $37-6n$ because $x$ can also be 0 and must be an integer.Therefore, as we increase $n$ from zero upwards, we get the total number of possibilities for $x$ is $37+31+25+\ldots+1 = 7 + 36 + 30 + 24 + \ldots + 6 + 0 = 7 + 6 \cdot (6 + 5 + 4\ldots + 1)$
-
- $= 7 + 6 \cdot 3 \cdot 7 = 7 + 18 \cdot 7 = 19 \cdot 7 = 133$.
+$= 7 + 6 \cdot 3 \cdot 7 = 7 + 18 \cdot 7 = 19 \cdot 7 = 133$.
 
  Since 133 and 780 are relatively prime, the answer is $\frac{133}{780}$ and our final answer is $133+780 = \boxed{913}$
 
- 
 
 
 
@@ -665,13 +638,10 @@ The easiest way is to unwrap the cone into a circular sector. Center the sector 
                     The angle $YVX$ is equal to $360^\circ \cdot \frac{1200\pi}{1600\pi} \cdot \frac{1}{2}$, or $135^\circ$. Therefore, the law of cosines could be utilized.
  \[AB = \sqrt{(375\sqrt{2})^2 + 125^2 - 2 \cdot (375\sqrt{2})(125)(\cos 135^\circ)} = \boxed{625}\]
 
- 
 
 
 	\item (\textit{AIME II 2004}) Let $ABCD$ be an isosceles trapezoid, whose dimensions are $AB = 6, BC=5=DA,$and $CD=4.$ Draw circles of radius 3 centered at $A$ and $B$ and circles of radius 2 centered at $C$ and $D.$ A circle contained within the trapezoid is tangent to all four of these circles. Its radius is $\frac{-k+m\sqrt{n}}p,$ where $k, m, n,$ and $p$ are positive integers, $n$ is not divisible by the square of any prime, and $k$ and $p$ are relatively prime. Find $k+m+n+p.$
 
-
- 
  \textbf{Answer: }134
 
 
@@ -701,8 +671,6 @@ Let the radius of the center circle be $r$ and its center be denoted as $O$.
 
 	\item (\textit{AIME II 2004}) Let $ABCDE$ be a convex pentagon with $AB || CE, BC || AD, AC || DE, \angle ABC=120^\circ, AB=3, BC=5,$ and $DE = 15.$ Given that the ratio between the area of triangle $ABC$ and the area of triangle $EBD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
-
- 
  \textbf{Answer: }484
 
 
@@ -845,15 +813,9 @@ It's obvious that we cannot have any number $\ge 7777$ because $7777 > 7000$ so 
  Like this we get the value of "distinct" $n$ by summing all the sub-values from the cases that we've solved.
 
  $n = 1 + 11 + (21 - 9) + (31 - 19) + (41 - 29) + \cdots + (91 - 79)$
+$\implies n = (1 + 11 + 21 + 31 + 41 + \cdots + 91) - (0 + 0 + 9 + 19 + 29 + \cdots + 79)$
+$\implies \boxed{n = 108}$
 
- $\implies n = (1 + 11 + 21 + 31 + 41 + \cdots + 91) - (0 + 0 + 9 + 19 + 29 + \cdots + 79)$
-
- $\implies \boxed{n = 108}$
-
- 
-
-
- 
 
 
 
@@ -864,7 +826,6 @@ First, we note that by the sun of digits and modulo 9 formula, $n \equiv 1000 \e
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2004\_AIME\_II\_Problems/Problem\_14&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{AIME II 2004}) A long thin strip of paper is 1024 units in length, 1 unit in width, and is divided into 1024 unit squares. The paper is folded in half repeatedly. For the first fold, the right end of the paper is folded over to coincide with and lie on top of the left end. The result is a 512 by 1 strip of double thickness. Next, the right end of this strip is folded over to coincide with and lie on top of the left end, resulting in a 256 by 1 strip of quadruple thickness. This process is repeated 8 more times. After the last fold, the strip has become a stack of 1024 unit squares. How many of these squares lie below the square that was originally the 942nd square counting from the left?
@@ -891,10 +852,8 @@ Number the squares $0, 1, 2, 3, ... 2^{k} - 1$.  In this case $k = 10$, but we w
  
  \[s_{82, 9} = 2s_{82, 8} = 4s_{82, 7} = 8s_{127 - 82, 6} = 8s_{45, 6}\]
 
- 
  \[s_{45, 6} = 2s_{63 - 45, 5} + 1 = 2s_{18, 5} + 1 = 4s_{31 - 18, 4} + 1 = 4s_{13, 4} + 1\]
 
- 
  \[s_{13, 4} = 2s_{15 - 13, 3} + 1 = 2s_{2, 3}+1\]
 
  We can easily calculate $s_{2, 3} = 4$ from a diagram.  Plugging back in,
@@ -903,7 +862,6 @@ Number the squares $0, 1, 2, 3, ... 2^{k} - 1$.  In this case $k = 10$, but we w
  \begin{align*} s_{13, 4} &= 9 \\ s_{45, 6} &= 37 \\ s_{82, 9} &= 296 \\ s_{941, 10} &= \boxed{593}\end{align*}
 
 
- 
 
 
 
@@ -914,9 +872,8 @@ More brute force / thinking about the question logically. If the number doesn't 
  Initially it is in position $942$ with $0$ squares below it. 
 
  
- \[\begin{array}{llll} \text{\bf Fold 1.} & 942 \text{ is to the right.} & 942 \mapsto 83 & \text{There is } 2^1 - 1 - 0=\boxed{1} \text{ square below it.} \\  &&& \\ \textbf{Fold 2.} & 83 \text{ is to the left.} & 83 \mapsto 83 & \text{There is } \boxed{1} \text{ square below it.} \\ &&& \\ \textbf{Fold 3.} & 83 \text{ is to the left.} & 83 \mapsto 83 & \text{There is } \boxed{1} \text{ square below it.} \\ &&& \\ \text{\bf Fold 4.} & 83 \text{ is to the right.} & 83 \mapsto 46 & \text{There are } 2^4 - 1 - 1 = \boxed{14} \text{ squares below it.}\\  &&& \\ \text{\bf Fold 5.} & 46 \text{ is to the right.} & 46 \mapsto 19 & \text{There are } 2^5 - 1 - 14 = \boxed{17} \text{ squares below it.}\\  &&& \\ \text{\bf Fold 6.} & 19 \text{ is to the right.} & 19 \mapsto 14 & \text{There are } 2^6 - 1 - 17 = \boxed{46} \text{ squares below it.}\\  &&& \\ \text{\bf Fold 7.} & 14 \text{ is to the right.} & 14 \mapsto 3 & \text{There are } 2^7 - 1 - 46 = \boxed{81} \text{ squares below it.}\\  &&& \\ \textbf{Fold 8.} & 3 \text{ is to the left.} & 3 \mapsto 3 & \text{There are } \boxed{81} \text{ squares below it.} \\ &&& \\ \text{\bf Fold 9.} & 3 \text{ is to the right.} & 3 \mapsto 2 & \text{There are } 2^9 - 1 - 81  = \boxed{430} \text{ squares below it.}\\  &&& \\ \text{\bf Fold 10.} & 2 \text{ is to the right.} & 2 \mapsto 1 & \text{There are } 2^{10} - 1 - 430 = \boxed{593} \text{ squares below it.}\\  \end{array}\]
+ \[\begin{array}{llll} \text{\textbf Fold 1.} & 942 \text{ is to the right.} & 942 \mapsto 83 & \text{There is } 2^1 - 1 - 0=\boxed{1} \text{ square below it.} \\  &&& \\ \textbf{Fold 2.} & 83 \text{ is to the left.} & 83 \mapsto 83 & \text{There is } \boxed{1} \text{ square below it.} \\ &&& \\ \textbf{Fold 3.} & 83 \text{ is to the left.} & 83 \mapsto 83 & \text{There is } \boxed{1} \text{ square below it.} \\ &&& \\ \text{\textbf Fold 4.} & 83 \text{ is to the right.} & 83 \mapsto 46 & \text{There are } 2^4 - 1 - 1 = \boxed{14} \text{ squares below it.}\\  &&& \\ \text{\textbf Fold 5.} & 46 \text{ is to the right.} & 46 \mapsto 19 & \text{There are } 2^5 - 1 - 14 = \boxed{17} \text{ squares below it.}\\  &&& \\ \text{\textbf Fold 6.} & 19 \text{ is to the right.} & 19 \mapsto 14 & \text{There are } 2^6 - 1 - 17 = \boxed{46} \text{ squares below it.}\\  &&& \\ \text{\textbf Fold 7.} & 14 \text{ is to the right.} & 14 \mapsto 3 & \text{There are } 2^7 - 1 - 46 = \boxed{81} \text{ squares below it.}\\  &&& \\ \textbf{Fold 8.} & 3 \text{ is to the left.} & 3 \mapsto 3 & \text{There are } \boxed{81} \text{ squares below it.} \\ &&& \\ \text{\textbf Fold 9.} & 3 \text{ is to the right.} & 3 \mapsto 2 & \text{There are } 2^9 - 1 - 81  = \boxed{430} \text{ squares below it.}\\  &&& \\ \text{\textbf Fold 10.} & 2 \text{ is to the right.} & 2 \mapsto 1 & \text{There are } 2^{10} - 1 - 430 = \boxed{593} \text{ squares below it.}\\  \end{array}\]
 
- 
 
 
 

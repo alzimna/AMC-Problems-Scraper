@@ -2,8 +2,6 @@
         \begin{enumerate}
         	\item (\textit{AIME I 2023}) Five men and nine women stand equally spaced around a circle in random order. The probability that every man stands diametrically opposite a woman is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }191
 
 
@@ -17,7 +15,6 @@ For simplicity purposes, we consider two arrangements different even if they onl
  Together, the requested probability is 
  \[\frac{\tbinom{7}{5}\cdot(10\cdot8\cdot6\cdot4\cdot2)\cdot9!}{14!} = \frac{21\cdot(10\cdot8\cdot6\cdot4\cdot2)}{14\cdot13\cdot12\cdot11\cdot10} = \frac{48}{143},\] from which the answer is $48+143 = \boxed{191}.$
 
- 
 
 
 
@@ -33,7 +30,6 @@ Arranging the 14 people in a circle, one could just see that the probability dep
 
  Our answer is simply \( 48 + 143 =\) $\boxed{191}.$
 
- 
 
 
 
@@ -46,7 +42,6 @@ We can simply just loop through each of the men and find the probability that th
  Multiplying these probabilities, we get a final answer of 
  \[\frac{9}{13}\cdot\frac{8}{11}\cdot\frac{7}{9}\cdot\frac{6}{7}\cdot\frac{5}{5}=\frac{48}{143}\longrightarrow 48+143 = \boxed{191}.\]
 
- 
 
 
 
@@ -61,7 +56,6 @@ This problem is equivalent to solving for the probability that no man is standin
  Multiplying these probabilities, we get, 
  \[\frac{12}{13}\cdot\frac{10}{12}\cdot\frac{8}{11}\cdot\frac{6}{10}=\frac{48}{143}\longrightarrow\boxed{191}.\]
 
- 
 
 
 
@@ -73,7 +67,6 @@ Assume that rotations and reflections are distinct arrangements, and replace men
 
  Therefore, the probability that an arrangement is valid is $\frac{672}{2002} = \frac{48}{143}$ for an answer of $\boxed{191}.$
 
- 
 
 
 
@@ -115,7 +108,6 @@ First pin one man on one seat (to ensure no rotate situations). Then there are $
 
  The answer is $48+143=\boxed{191}.$
 
- 
 
 
 
@@ -123,7 +115,6 @@ First pin one man on one seat (to ensure no rotate situations). Then there are $
 
 We get around the condition that each man can't be opposite to another man by simply considering all $7$ diagonals, and choosing $5$ where there will be a single man. For each diagonal, the man can go on either side, and there are $\binom{14}{5}$ ways to arrange the men and the women in total. Thus our answer is $\frac{\binom{7}{5}\cdot 2^5}{\binom{14}{5}} = \frac{48}{143}.$We get $48 + 143 = \boxed{191}$
 
- 
 
 
 
@@ -152,8 +143,6 @@ We can find the probability of one arrangement occurring, and multiply it by the
 	\item (\textit{AIME I 2023}) Positive real numbers $b \not= 1$ and $n$ satisfy the equations 
  \[\sqrt{\log_b n} = \log_b \sqrt{n} \qquad \text{and} \qquad b \cdot \log_b n = \log_b (bn).\] The value of $n$ is $\frac{j}{k},$ where $j$ and $k$ are relatively prime positive integers. Find $j+k.$
 
-
- 
  \textbf{Answer: }881
 
 
@@ -173,7 +162,6 @@ Solving the system gives $x = 4$ and $b = \frac{5}{4}$.Therefore,
 
 We can use the property that $\log(xy) = \log(x) + \log(y)$ on the first equation. We get $\log_b(bn) = 1 + \log_b(n)$. Then, subtracting $\log_b(n)$ from both sides, we get $(b-1) \log_b(n) = 1$, therefore $\log_b(n) = \frac{1}{b-1}$. Substituting that into our first equation, we get $\frac{1}{2b-2} = \sqrt{\frac{1}{b-1}}$. Squaring, reciprocating, and simplifying both sides, we get the quadratic $4b^2 - 9b + 5 = 0$. Solving for $b$, we get $\frac{5}{4}$ and $1$. Since the problem said that $b \neq 1$, $b = \frac{5}{4}$. To solve for $n$, we can use the property that $\log_b(n) = \frac{1}{b-1}$. $\log_\frac{5}{4}(n) = 4$, so $n = \frac{5^4}{4^4} = \frac{625}{256}$. Adding these together, we get $\boxed{881}$
 
- 
 
 
 
@@ -191,7 +179,6 @@ There is some $x$ such that $n=b^{4x^2}$. The first equation becomes $2x=2x^2$, 
 
 Squaring the first equation, we have $\log_b{n}=\left(\dfrac{1}{2}\log_b{n}\right)^2=\dfrac{1}{4}(\log_b{n})^2$, so $\log_b{n}=4$ and $b^4=n$. The second equation can be rearranged as stated in earlier solutions to $(b-1)\log_b{n}=1$, so $n^{b-1}=b$. Substituting, we have $b^{4b-4}=b$, so $b=\dfrac{5}{4}$ and thus $n=\left(\dfrac{5}{4}\right)^4=\dfrac{625}{256}$, and thus the answer is $\boxed{881.}$
 
- 
 
 
 
@@ -219,38 +206,28 @@ In this solution, let \textbf{$\boldsymbol{n}$-line points} be the points where 
  There are $\binom{40}{2}=780$ pairs of lines. Among them:
 
  
-                \begin{itemize}
-                    \item The $3$-line points account for $3\cdot\binom32=9$ pairs of lines.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item The $4$-line points account for $4\cdot\binom42=24$ pairs of lines.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item The $5$-line points account for $5\cdot\binom52=50$ pairs of lines.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item The $6$-line points account for $6\cdot\binom62=90$ pairs of lines.
-                \end{itemize}
-
-
-                It follows that the $2$-line points account for $780-9-24-50-90=\boxed{607}$ pairs of lines, where each pair intersect at a single point. 
+            \begin{itemize}
+        \item The $3$-line points account for $3\cdot\binom32=9$ pairs of lines.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item The $4$-line points account for $4\cdot\binom42=24$ pairs of lines.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item The $5$-line points account for $5\cdot\binom52=50$ pairs of lines.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item The $6$-line points account for $6\cdot\binom62=90$ pairs of lines.
+            \end{itemize}
+            It follows that the $2$-line points account for $780-9-24-50-90=\boxed{607}$ pairs of lines, where each pair intersect at a single point. 
 
  
 
 
 	\item (\textit{AIME I 2023}) The sum of all positive integers $m$ such that $\frac{13!}{m}$ is a perfect square can be written as $2^a3^b5^c7^d11^e13^f,$ where $a,b,c,d,e,$ and $f$ are positive integers. Find $a+b+c+d+e+f.$
 
-
- 
  \textbf{Answer: }012
 
 
@@ -280,7 +257,6 @@ The prime factorization of $13!$ is
  \begin{align*} 1 + 2 + 1 + 3 + 1 + 4 & = \boxed{012} . \end{align*}
 
 
- 
 
 
 
@@ -304,8 +280,6 @@ Try smaller cases. There is clearly only one $m$ that makes $\frac{2!}{m}$ a squ
 
 	\item (\textit{AIME I 2023}) Let $P$ be a point on the circle circumscribing square $ABCD$ that satisfies $PA \cdot PC = 56$ and $PB \cdot PD = 90.$ Find the area of $ABCD.$
 
-
- 
  \textbf{Answer: }106
 
 
@@ -406,7 +380,6 @@ Denote by $x$ the half length of each side of the square.We put the square to th
  \begin{align*} {\textrm Area} \ ABCD & = \left( 2 x \right)^2 \\ & = 4 \sqrt{\frac{28^2}{2 \left( 1 - 2 \cos \theta \sin \theta \right)}} \\ & = 2 \sqrt{45^2 + 28^2} \\ & = 2 \cdot 53 \\ & = \boxed{\textbf{(106) }} . \end{align*}
 
 
- 
 
 
 
@@ -478,7 +451,6 @@ WLOG, let $P$ be on minor arc $AD.$ Draw in $AP$, $BP$, $CP$, $DP$ and let $\ang
  \[\sin(45+x)\sin(45-x) = \frac{(\cos(x) + \sin(x))(\cos(x) - \sin(x))}{2} = \frac{\cos^{2}(x) - \sin^{2}(x)}{2} = \frac{\cos(2x)}{2}.\]  Therefore, $s^{2}\sin(2x) = 56$ and $s^{2}\cos(2x) = 90.$ Therefore, by the Pythagorean Identity, 
  \[s^{2} = \sqrt{(s^{2}\sin(2x))^{2} + (s^{2}\cos(2x))^{2}} = \sqrt{56^{2} + 90^{2}} = \boxed{106}.\]
 
- 
 
 
 
@@ -527,7 +499,6 @@ This solution is like solution 1, but with more algebra than actual geometry.
 
  Note that rearranging $(5.6)$ gives $(5.6R)~bs - cs\sqrt{2} = -ds$ and thus $(5.5) + (5.6R)$ results in $2bs + as\sqrt{2} - cs\sqrt{2} = 0$, or $2b + \sqrt{2}(a-c) = 0$, and thus $b = \frac{\sqrt{2}(c-a)}{2}$. It then becomes obvious that $b$'s companion $d$ is $d = \frac{\sqrt{2}(c+a)}{2}$. Thus $(5.2)$ can be arranged to become $\frac{1}{2} \cdot (c^2 - a^2) = 90$, and thus $c^2 -  a^2 = 180$. We have that $ab = 56$ and $c^2 - a^2 = 180$, in which we can then find $a$ and $c$ to be $4$ and $14$ (discard negative solutions as negative lengths do not exist in Plane Euclidean Geometry) respectively. Thus, we have for our final equation $a^2 + c^2 = 2s^2$, and we just need the result $s^2$ to solve the problem. Then our answer is simply $\frac{196+16}{2} = \frac{212}{2} = \boxed{106}$. $\square$
 
- 
 
 
 
@@ -540,13 +511,10 @@ Using $(PB)(PD)=90$, we get a very similar equation:
  \[2r^4-2xyr^2\sqrt2=90^2.\]Adding the equations, we have
  \[4r^4=90^2+56^2.\]Dividing both sides by $4$, we have $r^4=45^2+28^2$, Since $28,45,$ and $53$ form a Pythagorean Triple, we have $r^2=53$. Since the side length of the square is $r\sqrt2$, the area is thus $2r^2=\boxed{106}.$
 
- 
 
 
 	\item (\textit{AIME I 2023}) Alice knows that $3$ red cards and $3$ black cards will be revealed to her one at a time in random order. Before each card is revealed, Alice must guess its color. If Alice plays optimally, the expected number of cards she will guess correctly is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }051
 
 
@@ -570,36 +538,33 @@ We break the problem into stages, one for each card revealed, then further into 
  There are now $2$ cases:
 
  
-                \begin{itemize}
-                    \item  The guess from Stage 2 was correct, so there is now a $2$-$2$ split of cards and a $\frac{1}{2}$ probability of guessing the color of the third card correctly.\item  The guess from Stage 2 was incorrect, so the split is $3$-$1$ and the probability of guessing correctly is $\frac{3}{4}$. 
-                \end{itemize}
-
-
-                Thus, the overall probability of guessing correctly is $\frac{3}{5} \cdot \frac{1}{2} + \frac{2}{5} \cdot \frac{3}{4} = \frac{3}{5}$.
+            \begin{itemize}
+        \item  The guess from Stage 2 was correct, so there is now a $2$-$2$ split of cards and a $\frac{1}{2}$ probability of guessing the color of the third card correctly.
+        \item  The guess from Stage 2 was incorrect, so the split is $3$-$1$ and the probability of guessing correctly is $\frac{3}{4}$. 
+            \end{itemize}
+            Thus, the overall probability of guessing correctly is $\frac{3}{5} \cdot \frac{1}{2} + \frac{2}{5} \cdot \frac{3}{4} = \frac{3}{5}$.
 
  \textbf{Stage 4:}
 
  This stage has $2$ cases as well:
 
  
-                \begin{itemize}
-                    \item  The guesses from both Stage 2 and Stage 3 were incorrect. This occurs with probability $\frac{2}{5} \cdot \frac{1}{4} = \frac{1}{10}$ and results in a $3$-$0$ split and a certain correct guess at this stage.\item  Otherwise, there must be a $2$-$1$ split and a $\frac{2}{3}$ probability of guessing correctly.
-                \end{itemize}
-
-
-                The probability of guessing the fourth card correctly is therefore $\frac{1}{10} \cdot 1 + \frac{9}{10} \cdot \frac{2}{3} = \frac{7}{10}$.
+            \begin{itemize}
+        \item  The guesses from both Stage 2 and Stage 3 were incorrect. This occurs with probability $\frac{2}{5} \cdot \frac{1}{4} = \frac{1}{10}$ and results in a $3$-$0$ split and a certain correct guess at this stage.
+        \item  Otherwise, there must be a $2$-$1$ split and a $\frac{2}{3}$ probability of guessing correctly.
+            \end{itemize}
+            The probability of guessing the fourth card correctly is therefore $\frac{1}{10} \cdot 1 + \frac{9}{10} \cdot \frac{2}{3} = \frac{7}{10}$.
 
  \textbf{Stage 5:}
 
  Yet again, there are $2$ cases:
 
  
-                \begin{itemize}
-                    \item  In Stage 4, there was a $2$-$1$ split and the guess was correct. This occurs with probability $\frac{9}{10} \cdot \frac{2}{3} = \frac{3}{5}$ and results in a $1$-$1$ split with a $\frac{1}{2}$ chance of a correct guess here.\item  Otherwise, there must be a $2$-$0$ split, making a correct guess certain.
-                \end{itemize}
-
-
-                In total, the fifth card can be guessed correctly with probability $\frac{3}{5} \cdot \frac{1}{2} + \frac{2}{5} \cdot 1 = \frac{7}{10}$.
+            \begin{itemize}
+        \item  In Stage 4, there was a $2$-$1$ split and the guess was correct. This occurs with probability $\frac{9}{10} \cdot \frac{2}{3} = \frac{3}{5}$ and results in a $1$-$1$ split with a $\frac{1}{2}$ chance of a correct guess here.
+        \item  Otherwise, there must be a $2$-$0$ split, making a correct guess certain.
+            \end{itemize}
+            In total, the fifth card can be guessed correctly with probability $\frac{3}{5} \cdot \frac{1}{2} + \frac{2}{5} \cdot 1 = \frac{7}{10}$.
 
  \textbf{Stage 6:}
 
@@ -608,7 +573,6 @@ We break the problem into stages, one for each card revealed, then further into 
  In conclusion, the expected value of the number of cards guessed correctly is 
  \[\frac{1}{2} + \frac{3}{5} + \frac{3}{5} + \frac{7}{10} + \frac{7}{10} + 1 = \frac{5+6+6+7+7+10}{10} = \frac{41}{10},\] so the answer is $41 + 10 = \boxed{051}.$
 
- 
 
 
 
@@ -631,7 +595,6 @@ At any point in the game, Alice should guess whichever color has come up less fr
                     \end{figure}
                     Now we sum the tallies across orderings, obtaining $41$, and finally divide by the number of orderings ($10$) to obtain the expected number of correct guesses, $\frac{41}{10}$, which yields an answer of $41 + 10 = \boxed{051}.$
 
- 
 
 
 
@@ -734,7 +697,6 @@ There's a beautiful observation that for any particular game path, the expected 
  
  \[E=3 + \frac{\frac{N}{20}-1}{2}=3 + \frac{\frac{64}{20}-1}{2}=3+\frac{11}{10}=\frac{41}{10}\]
 
- 
 
 
 	\item (\textit{AIME I 2023}) Call a positive integer $n$ extra-distinct if the remainders when $n$ is divided by $2, 3, 4, 5,$ and $6$ are distinct. Find the number of extra-distinct positive integers less than $1000$.
@@ -754,8 +716,7 @@ $n$ can either be $0$ or $1$ (mod $2$).
  Then, $n \equiv 2 \pmod{4}$, which implies $n \equiv 1 \pmod{3}$ and $n \equiv 4 \pmod{6}$, and therefore $n \equiv 3 \pmod{5}$. Using \href{https://artofproblemsolving.com/wiki/index.php?title=Chinese\_Remainder\_Theorem}{CRT}, we obtain $n \equiv 58 \pmod{60}$, which gives $16$ values for $n$.
 
  Case 2: $n \equiv 1 \pmod{2}$
-
- $n$ is then $3 \pmod{4}$. If $n \equiv 0 \pmod{3}$, $n \equiv 3 \pmod{6}$, a contradiction. Thus, $n \equiv 2 \pmod{3}$, which implies $n \equiv 5 \pmod{6}$. $n$ can either be $0 \pmod{5}$, which implies that $n \equiv 35 \pmod{60}$ by CRT, giving $17$ cases; or $4 \pmod{5}$, which implies that $n \equiv 59 \pmod{60}$ by CRT, giving $16$ cases.
+$n$ is then $3 \pmod{4}$. If $n \equiv 0 \pmod{3}$, $n \equiv 3 \pmod{6}$, a contradiction. Thus, $n \equiv 2 \pmod{3}$, which implies $n \equiv 5 \pmod{6}$. $n$ can either be $0 \pmod{5}$, which implies that $n \equiv 35 \pmod{60}$ by CRT, giving $17$ cases; or $4 \pmod{5}$, which implies that $n \equiv 59 \pmod{60}$ by CRT, giving $16$ cases.
 
  The total number of extra-distinct numbers is thus $16 + 16 + 17 = \boxed{049}$.
 
@@ -838,8 +799,7 @@ $\textbf{Case 0:  } {\textrm Rem} \ \left( n, 6 \right) = 0$.
 We need to find that $35$, $58$, and $59$ are all extra-distinct numbers smaller than $61.$
 
  Let $k \in \left\{2, 3, 4, 5, 6 \right\}.$ Denote the remainder in the division of $a$ by $b$ as ${\textrm Rem} \ \left( a, b \right).$
-
- ${\textrm Rem} \ \left( -1, k \right) = k - 1 \implies {\textrm Rem} \ \left( 59, k \right) = k - 1 = \left\{1, 2, 3, 4, 5 \right\}\implies 59$ is extra-distinct.${\textrm Rem} \ \left( -2, k \right) = k - 2 \implies {\textrm Rem} \ \left( 58, k \right) = k - 2 = \left\{0, 1, 2, 3, 4 \right\} \implies 58$ is extra-distinct.
+${\textrm Rem} \ \left( -1, k \right) = k - 1 \implies {\textrm Rem} \ \left( 59, k \right) = k - 1 = \left\{1, 2, 3, 4, 5 \right\}\implies 59$ is extra-distinct.${\textrm Rem} \ \left( -2, k \right) = k - 2 \implies {\textrm Rem} \ \left( 58, k \right) = k - 2 = \left\{0, 1, 2, 3, 4 \right\} \implies 58$ is extra-distinct.
  \[{\textrm Rem} \ \left( x + 12y, k \right) = {\textrm Rem} \ \left(x, k \right) + \left\{0, 0, 0, {\textrm Rem} \ \left(12y, k \right), 0 \right\}.\]We need to check all of the remainders up to $12 - 3 = 9$ and remainders 
  \[{\textrm Rem} \ \left( 59 - 12, k \right) = {\textrm Rem} \ \left( 59 - 36, k \right) = \left\{1, 2, 3, 3, 5 \right\}, {\textrm Rem} \ \left( 59 - 48, k \right) = \left\{1, 2, 3, 1, 5 \right\},\]${\textrm Rem} \ \left( 59 - 24, k \right) ={\textrm Rem} \ \left(35, k \right) = \left\{1, 2, 3, 0, 5 \right\} \implies 35$ is extra-distinct.$58 - 12 = 46 \implies {\textrm Rem} \ \left( 46, 5 \right) = 1 = {\textrm Rem} \ \left( 46, 3 \right),$ $58 - 24 = 34 \implies {\textrm Rem} \ \left( 34, 5 \right) = 4 = {\textrm Rem} \ \left( 34, 6 \right),$ $58 - 36 = 22 \implies {\textrm Rem} \ \left( 22, 5 \right) = 2 = {\textrm Rem} \ \left( 22, 4 \right),$ $58 - 48 = 10 \implies {\textrm Rem} \ \left( 10, 5 \right) = 0 = {\textrm Rem} \ \left( 10, 2 \right).$
 
@@ -850,8 +810,6 @@ We need to find that $35$, $58$, and $59$ are all extra-distinct numbers smaller
 
 	\item (\textit{AIME I 2023}) Rhombus $ABCD$ has $\angle BAD < 90^\circ.$ There is a point $P$ on the incircle of the rhombus such that the distances from $P$ to the lines $DA,AB,$ and $BC$ are $9,5,$ and $16,$ respectively. Find the perimeter of $ABCD.$
 
-
- 
  \textbf{Answer: }125
 
 
@@ -885,7 +843,6 @@ We solve this system of equations to get $x=7$ and $y=12.$ Alternatively, we can
 
  Finally, the perimeter of $ABCD$ is $4AD = \boxed{125}.$
 
- 
 
 
 
@@ -930,18 +887,20 @@ This solution refers to the \textbf{Diagram} section.
                     \end{figure}
                     Note that the diameter of $\odot O$ is $HS=RT=25,$ so $OP=\frac{25}{2}.$ It follows that:
 
- <ol style="margin-left: 1.5em;"> \item In right $\triangle OMP,$ we have $MP=\frac{HS}{2}-PS=\frac{15}{2}$ by symmetry, from which $OM=10$ by the Pythagorean Theorem. 
+ 
+            \begin{enumerate} 
+        \item In right $\triangle OMP,$ we have $MP=\frac{HS}{2}-PS=\frac{15}{2}$ by symmetry, from which $OM=10$ by the Pythagorean Theorem.
 
- \item In right $\triangle ONP,$ we have $NP=\frac{RT}{2}-RP=\frac{7}{2}$ by symmetry, from which $ON=12$ by the Pythagorean Theorem.
+        \item In right $\triangle ONP,$ we have $NP=\frac{RT}{2}-RP=\frac{7}{2}$ by symmetry, from which $ON=12$ by the Pythagorean Theorem.
 
- </ol>Since $\overline{MO}\parallel\overline{AB}$ and $\overline{ON}\parallel\overline{DA},$ we conclude that $\angle A = \angle MON.$ We apply the Sine of a Sum Formula:
+            \end{enumerate}
+            Since $\overline{MO}\parallel\overline{AB}$ and $\overline{ON}\parallel\overline{DA},$ we conclude that $\angle A = \angle MON.$ We apply the Sine of a Sum Formula:
  \begin{align*} \sin\angle A &= \sin\angle MON \\ &= \sin(\angle MOP + \angle PON) \\ &= \sin\angle MOP \cos\angle PON + \cos\angle MOP \sin\angle PON \\ &= \frac{3}{5}\cdot\frac{24}{25} + \frac{4}{5}\cdot\frac{7}{25} \\ &= \frac{4}{5}. \end{align*}
 Note that 
  \[\sin\angle A = \frac{HS}{DA},\] from which $\frac{4}{5} = \frac{25}{DA}.$ We solve this equation to get $DA=\frac{125}{4}.$
 
  Finally, the perimeter of $ABCD$ is $4DA = \boxed{125}.$
 
- 
 
 
 
@@ -971,7 +930,6 @@ Label the points of the rhombus to be $X$, $Y$, $Z$, and $W$ and the center of t
  \begin{align*} \frac{OX}{OW}&=\tan{\angle{OWX}} \\ OX&=\frac{25\sqrt{5}}{4} \\ WX^2&=OW^2+OX^2 \\ WX&=\frac{125}{4} \\ 4WX&=\boxed{125}. \end{align*}
 
 
- 
 
 
 
@@ -1021,7 +979,6 @@ The center of the incircle is $O.$ Denote the points in which the incircle meets
  \[25^2 + 50WB + WB^2 = 25^2+\left(\frac{25}{2}\right)^2+\left(\frac{25}{2}\right)^2+WB^2.\] Solving for $WB,$ we get $WB = \frac{25}{4}.$ Now we find that each side of the rhombus $=AB=25+\frac{25}{4}=\frac{125}{4}.$ The perimeter of the rhombus would be that times $4.$ Our final answer is 
  \[\frac{125}{4}\cdot4=\boxed{125}.\]
 
- 
 
 
 
@@ -1045,8 +1002,6 @@ The center of the incircle is $O.$ Denote the points in which the incircle meets
 
 	\item (\textit{AIME I 2023}) Find the number of cubic polynomials $p(x) = x^3 + ax^2 + bx + c,$ where $a, b,$ and $c$ are integers in $\{-20,-19,-18,\ldots,18,19,20\},$ such that there is a unique integer $m \not= 2$ with $p(m) = p(2).$
 
-
- 
  \textbf{Answer: }738
 
 
@@ -1057,8 +1012,6 @@ Plugging $2$ and $m$ into the expression for $p(x)$ and equating them, we get $8
  \[(m^3-8) + (m^2 - 4)a + (m-2)b = 0.\] Note that the value of $c$ won't matter as it can be anything in the provided range, giving a total of $41$ possible choices for $c.$ So we only need to find the number of ordered pairs $(a, b)$ that work, and multiply it by $41.$We can start by first dividing both sides by $m-2.$ (Note that this is valid since $m\neq2:$ 
  \[m^2 + 2m + 4 + (m+2)a + b = 0.\] We can rearrange this so it is a quadratic in $m$: 
  \[m^2 + (a+2)m + (4 + 2a + b) = 0.\] Remember that $m$ has to be unique and not equal to $2.$ We can split this into two cases: case $1$ being that $m$ has exactly one solution, and it isn't equal to $2$; case $2$ being that $m$ has two solutions, one being $2,$ but the other is a unique solution not equal to $2.$
-
- 
 $\textbf{Case 1:}$
 
  There is exactly one solution for $m,$ and that solution is not $2.$ This means that the discriminant of the quadratic equation is $0,$ using that, we have $(a+2)^2 = 4(4 + 2a + b)$. Rearranging, we have 
@@ -1068,8 +1021,7 @@ $\textbf{Case 1:}$
 
  
 $\textbf{Case 2:}$
-
- $m$ has two solutions, but exactly one of them isn't equal to $2.$ This ensures that $1$ of the solutions is equal to $2.$
+$m$ has two solutions, but exactly one of them isn't equal to $2.$ This ensures that $1$ of the solutions is equal to $2.$
 
  Let $r$ be the other value of $m$ that isn't $2.$ By Vieta: 
  \begin{align*} r+2 &= -a-2\\ 2r &= 4+2a+b. \end{align*}
@@ -1113,14 +1065,12 @@ For the equation $p(x) = p(2)$ to have exactly two distinct real roots, the line
  In this case, the polynomial takes the form $p(x) - p(2) = (x-2)(x-m)^2$. Expanding this: $p(x) - p(2) = x^3 - (2m+2)x^2 + (m^2+4m)x - 2m^2.$ Matching the coefficients with $p(x) = x^3 + ax^2 + bx + c$, we have:
 
  $a = -2m - 2$
-
- $b = m^2 + 4m$
+$b = m^2 + 4m$
 
  For $a$ and $b$ to be integers, $m$ must be an integer. Testing values of $m$ such that $|a| \le 20$ and $|b| \le 20$: The condition $|a| \le 20$ gives $-11 \le m \le 9$. Within this range, checking $|m^2 + 4m| \le 20$ yields $m \in {-6, -5, -4, -3, -2, -1, 0, 1}$. Note that $m=2$ is excluded. This gives $8$ valid pairs of $(a, b)$. Combined with $41$ values of $c$, we have $8 \times 41 = 328$ polynomials.
 
  The total number of such polynomials is $410 + 328 = \boxed{738}.$
 
- 
 
 
 	\item (\textit{AIME I 2023}) There exists a unique positive integer $a$ for which the sum 
@@ -1152,8 +1102,6 @@ Since each fractional part is in $[0,1)$, the second sum is in $[0,2023)$. Thus,
 
 	\item (\textit{AIME I 2023}) Find the number of subsets of $\{1,2,3,\ldots,10\}$ that contain exactly one pair of consecutive integers. Examples of such subsets are $\{\mathbf{1},\mathbf{2},5\}$ and $\{1,3,\mathbf{6},\mathbf{7},10\}.$
 
-
- 
  \textbf{Answer: }235
 
 
@@ -1309,8 +1257,6 @@ We get a equation of $a_{10}$ = $a_8$ + $2$$a_7$ + $a_6$ + $2$$F_9$
 
  We compute the basic cases.$a_1$ = $0$$a_2$ = $1$$a_3$ = $2$$a_4$ = $5$
 
- 
-
  \[\begin{array}{rcl} a & F_a & Cases\\ \hline 1 & 1 & 0 \\ 2 & 1 & 1 \\ 3 & 2 & 2 \\ 4 & 3 & 5 \\ 5 & 5 & 10 \\ 6 & 8 & 20 \\ 7 & 13 & 38 \\ 8 & 21 & 71 \\ 9 & 34 & 130 \\ 10 & 55 & 235 \\ \end{array}\]
 
  
@@ -1376,7 +1322,6 @@ Note that there are $F_{n+2}$ subsets of a set of $n$ consecutive integers that 
  Summing this over for all $1 \leq i \leq 9$ yields 
  \[\sum_{i=1}^9 F_i F_{10-i} = F_1F_9 + F_2F_8 + F_3F_7 + F_4F_6 + F_5 F_5 + F_6 F_4 + F_7 F_3 + F_8 F_2 + F_9 F_1 = 2(F_1F_9 + F_2F_8 + F_3F_7+F_4F_6) + F_5^2 = 2(1 \cdot 34 + 1 \cdot 21 + 2 \cdot 13 + 3 \cdot 8) + 5^2 = 2 \cdot 105+25 = \boxed{235}.\]
 
- 
 
 
 
@@ -1389,14 +1334,10 @@ The problem is the same as laying out a line of  polynomoes to cover spots $0,1,
  $R + RG + RGG =$ Polyominoes $\rightarrow$ Orderings 
 
  $0 + 4 + 1 = 5 \rightarrow 5! / 0!4!1! = ~~~5$
-
- $2 + 3 + 1 = 6 \rightarrow 6! / 2!3!1! = ~60$
-
- $4 + 2 + 1 = 7 \rightarrow 7! / 4!2!1! = 105$
-
- $6 + 1 + 1 = 8 \rightarrow 8! / 6!1!1! = ~56$
-
- $8 + 0 + 1 = 9 \rightarrow 9! / 8!0!1! = ~~~9$
+$2 + 3 + 1 = 6 \rightarrow 6! / 2!3!1! = ~60$
+$4 + 2 + 1 = 7 \rightarrow 7! / 4!2!1! = 105$
+$6 + 1 + 1 = 8 \rightarrow 8! / 6!1!1! = ~56$
+$8 + 0 + 1 = 9 \rightarrow 9! / 8!0!1! = ~~~9$
 
  The sum is $\boxed{235}$.
 
@@ -1413,7 +1354,6 @@ Let $dp(i)$ be the number of subsets of a set $i$ consecutive integers such that
  
  \[dp2(i)=\sum_{j=1}^{i-2}(dp2(j))+1\]
 
- 
  \[dp(i)=dp2(i-1)+\sum_{j=1}^{i-2}dp(j)\]
 
  Note that $dp2$ is the Fibonacci numbers. 
@@ -1423,14 +1363,11 @@ Let $dp(i)$ be the number of subsets of a set $i$ consecutive integers such that
 
  Summing over $dp$ yields $1+1+3+5+10+18+33+59+105=\boxed{235}$
 
- 
 
 
 	\item (\textit{AIME I 2023}) Let $\triangle ABC$ be an equilateral triangle with side length $55.$ Points $D,$ $E,$ and $F$ lie on $\overline{BC},$ $\overline{CA},$ and $\overline{AB},$ respectively, with $BD = 7,$ $CE=30,$ and $AF=40.$ Point $P$ inside $\triangle ABC$ has the property that 
  \[\angle AEP = \angle BFP = \angle CDP.\] Find $\tan^2(\angle AEP).$
 
-
- 
  \textbf{Answer: }075
 
 
@@ -1453,8 +1390,7 @@ By Miquel's theorem, $P=(AEF)\cap(BFD)\cap(CDE)$ (intersection of circles)$\text
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_12_Solution_Figure_1.png}
                     \end{figure}
                     
-
- $\text{*}$Basic angle chasing gives $\angle BDP=180-\angle CDP.$ Because $\angle BFP+\angle BDP=180+\angle BFP-\angle CDP=180,$ which means that $BFPD$ is cyclic, and that $P$ passes through the circumcircle of triangle $BFD.$ Similar reasoning leads us to the fact that $P$ also passes through the circumcircles of triangles $AEF$ and $CDE,$ which means that $P=(AEF)\cap(BFD)\cap(CDE).$ Continue as above.
+$\text{*}$Basic angle chasing gives $\angle BDP=180-\angle CDP.$ Because $\angle BFP+\angle BDP=180+\angle BFP-\angle CDP=180,$ which means that $BFPD$ is cyclic, and that $P$ passes through the circumcircle of triangle $BFD.$ Similar reasoning leads us to the fact that $P$ also passes through the circumcircles of triangles $AEF$ and $CDE,$ which means that $P=(AEF)\cap(BFD)\cap(CDE).$ Continue as above.
 
  Note: Since $D$ and $P$ are the two intersections of $(BFD)$ and $(CDE),$ we know that $DP$ is perpendicular to the line between the centers of $(BFD)$ and $(CDE).$ Thus, after getting the coordinates of the centers of $(BFD)$ and $(CDE),$ we can then immediately find the slope of line $DP,$ and then get the answer from there.
 
@@ -1507,10 +1443,8 @@ Drop the perpendiculars from $P$ to $\overline{AB}$, $\overline{AC}$, $\overline
  Finally, $\tan AEP = \dfrac{PQ}{FQ} = \dfrac{PR}{ER} = \dfrac{PS}{DS} = \dfrac{PQ+PR+PS}{FQ+ER+DS} = 5 \sqrt{3}.$ 
 
  Thus, $\tan^2 AEP = \boxed{075}.$
+<i>\textbf{Claim}</i>
 
- <i>\textbf{Claim}</i>
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_12_Solution_Figure_2.png}
@@ -1529,7 +1463,6 @@ Drop the perpendiculars from $P$ to $\overline{AB}$, $\overline{AC}$, $\overline
  \[AQ^2 + BS^2 + CR^2 = AR^2 + BQ^2 + CS^2.\]b) $AQ + BQ = BS + CS = CR + AR = AB = AC = BC,$
  \[AQ^2 + BQ^2 + 2 AQ \cdot BQ + BS^2 + CS^2 + 2 BS \cdot CS + AR^2 + CR^2+ 2 AR \cdot CR = 3 AB^2.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_12_Solution_Figure_3.png}
@@ -1600,7 +1533,6 @@ This solution is inspired by AIME 1999 Problem 14 Solution 2 (a similar question
  Giving us 
  \[\tan^2{\alpha}=\boxed{075}\]
 
- 
 
 
 
@@ -1645,7 +1577,6 @@ By the law of cosines,
  \[\begin{cases}AP\cdot FE=AF\cdot PE+AE\cdot PF,\\CP\cdot ED=CE\cdot PD+CD\cdot PE,\\BP\cdot DF=BD\cdot PF+BF\cdot PD.\end{cases} \implies \begin{cases} 1225k=40e+25f,\\1764k=30d+48e,\\169k=15d+7f, \end{cases}\]We can solve out $d=\frac{54k}5$, $e=30k$, $f=k$. By the law of cosines in $\triangle PEF$, $FE=\sqrt{900k^2+k^2-60k\cdot\left(\frac{-1}2\right)}=\sqrt{931}k$. The law of sines yield $\frac{\sin\angle AEP}{\sin\angle FAE}=\frac{AP}{FE}=\frac{35k}{\sqrt{931}k}=\frac{35}{\sqrt{931}}$.Lastly, $\sin\angle AEP=\frac{5\sqrt{57}}{38}$, then $\tan\angle AEP=5\sqrt3$. The answer is
  \[\left(5\sqrt3\right)^2=\boxed{075}.\]
 
- 
 
 
 
@@ -1670,8 +1601,7 @@ Recall that if $\theta$ is the angle between two lines with slopes $m_1, m_2$, w
  We can similarly use the other angles and lines to come up with two more of these type of equations:
 
  $\tan(\theta) = \mid \frac{-\sqrt{3} - \frac{15\sqrt{3} - b}{40 - a}}{1 - \sqrt{3} \cdot \frac{15\sqrt{3} - b}{40 - a}} \mid$
-
- $\tan(\theta) = \mid \frac{b}{7 - a} \mid$
+$\tan(\theta) = \mid \frac{b}{7 - a} \mid$
 
  We have $3$ equations with $3$ variables and since we are trying to find $\tan(\theta)^{2}$, we can treat $\tan(\theta)$ as a variable. We solve to get $\tan(\theta) = 5\sqrt{3}$ and therefore our answer is just $\boxed{075}$.
 
@@ -1684,8 +1614,7 @@ Recall that if $\theta$ is the angle between two lines with slopes $m_1, m_2$, w
  Now we can write:
 
  $\frac{a\sqrt{3} - b}{a + b\sqrt{3} - 30} = \frac{b}{7 - a}$
-
- $\frac{a\sqrt{3} + b - 55\sqrt{3}}{-a + b\sqrt{3} - 5} = \frac{b}{7 - a}$
+$\frac{a\sqrt{3} + b - 55\sqrt{3}}{-a + b\sqrt{3} - 5} = \frac{b}{7 - a}$
 
  Here, we're going to change $a$ to $x$ and $b$ to $y$ just to make the solving more traditional. We can cross multiply the first equation and simplify to get 
 
@@ -1758,8 +1687,6 @@ Recall that if $\theta$ is the angle between two lines with slopes $m_1, m_2$, w
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }125
 
 
@@ -1922,7 +1849,6 @@ Since the two parallelepipeds have the same base, all we need to do is to find t
  Thus the height
  \[DP = \sqrt{AD^2 - AP^2} = \sqrt{13 - \frac{25}{31}} = \sqrt{\frac{378}{31}}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_13_Solution_Figure_2.png}
@@ -1958,10 +1884,8 @@ Since the two parallelepipeds have the same base, all we need to do is to find t
  In second parallelepiped $a$ and $b$ change the positions.
 
  Required ratio is $\frac {a^2 \cdot \sqrt {3b^2 - a^2}}{b^2 \cdot \sqrt {3a^2 - b^2}} = \frac {21 \sqrt {3 \cdot 31 - 21}}{31 \cdot \sqrt{3 \cdot 21 - 31}} = \frac {21 \sqrt {72}}{31 \sqrt {32}}= \frac {63}{62}.$
+<i>\textbf{Claim}</i>
 
- <i>\textbf{Claim}</i>
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_13_Solution_Figure_4.png}
@@ -2085,12 +2009,13 @@ Define a $12 \times 12$ matrix $X$.Each entry $x_{i, j}$ denotes the number of m
  We make the following observations:
 
  
-                \begin{itemize}
-                    \item  $x_{1, 1} = 0$ and $12 | x_{12, 12}$. These follow from the definition of $S_0$.\item  Each column of $R$ is a permutation of $\left\{ 0, 1, \cdots , 11 \right\}$. The reasoning is as follows. Suppose there exist $i < i'$, $j$, such that $r_{i, j} = r_{i', j}$. Then this entails that the positions of two hands after the $\left( 12 \left( i' - 1 \right) + \left( j - 1 \right) \right)$th movement coincide with their positions after the  $\left( 12 \left( i - 1 \right) + \left( j - 1 \right) \right)$th movement.\item  For any $j \in \left\{ 1, 2 ,\cdots , 11 \right\}$, $x_{i, j+1} - x_{i, j}$ is equal to either 0 for all $i$ or 1 for all $i$.     The reasoning is as follows. If this does not hold and the $j$th column in $R$ is a permutation of $\left\{ 0, 1, \cdots , 12 \right\}$, then the $j+1$th column is no longer a permutation of $\left\{ 0, 1, \cdots , 12 \right\}$. This leads to the infeasibility of the movements.\item  $x_{i+1, 1} = x_{i, 12}$ for any $i \in \left\{ 1, 2, \cdots , 11 \right\}$. This follows from the conditions that the $12$th column in $R$ excluding $r_{12, 12}$ and the first column in $R$ excluding $x_{1, 1}$ are both permutations of $\left\{ 1, 2, \cdots , 11 \right\}$.
-                \end{itemize}
-
-
-                All observations jointly imply that $x_{i, 12} = i \cdot x_{1, 12}$.Thus, $\left\{ r_{1, 12}, r_{2, 12} , \cdots , r_{11, 12} \right\}$ is a permutation of $\left\{ 1, 2, \cdots , 11 \right\}$.Thus, $x_{1, 12}$ is relatively prime to 12.
+            \begin{itemize}
+        \item  $x_{1, 1} = 0$ and $12 | x_{12, 12}$. These follow from the definition of $S_0$.
+        \item  Each column of $R$ is a permutation of $\left\{ 0, 1, \cdots , 11 \right\}$. The reasoning is as follows. Suppose there exist $i < i'$, $j$, such that $r_{i, j} = r_{i', j}$. Then this entails that the positions of two hands after the $\left( 12 \left( i' - 1 \right) + \left( j - 1 \right) \right)$th movement coincide with their positions after the  $\left( 12 \left( i - 1 \right) + \left( j - 1 \right) \right)$th movement.
+        \item  For any $j \in \left\{ 1, 2 ,\cdots , 11 \right\}$, $x_{i, j+1} - x_{i, j}$ is equal to either 0 for all $i$ or 1 for all $i$.     The reasoning is as follows. If this does not hold and the $j$th column in $R$ is a permutation of $\left\{ 0, 1, \cdots , 12 \right\}$, then the $j+1$th column is no longer a permutation of $\left\{ 0, 1, \cdots , 12 \right\}$. This leads to the infeasibility of the movements.
+        \item  $x_{i+1, 1} = x_{i, 12}$ for any $i \in \left\{ 1, 2, \cdots , 11 \right\}$. This follows from the conditions that the $12$th column in $R$ excluding $r_{12, 12}$ and the first column in $R$ excluding $x_{1, 1}$ are both permutations of $\left\{ 1, 2, \cdots , 11 \right\}$.
+            \end{itemize}
+            All observations jointly imply that $x_{i, 12} = i \cdot x_{1, 12}$.Thus, $\left\{ r_{1, 12}, r_{2, 12} , \cdots , r_{11, 12} \right\}$ is a permutation of $\left\{ 1, 2, \cdots , 11 \right\}$.Thus, $x_{1, 12}$ is relatively prime to 12.
 
  Because $x_{1, 1} = 0$ and $x_{1, 12} - x_{1, 1} \leq 11$, we have $x_{1, 12} = 1$, 5, 7, or 11.
 
@@ -2109,31 +2034,24 @@ Define a $12 \times 12$ matrix $X$.Each entry $x_{i, j}$ denotes the number of m
  In conclusion,
  \[{12\choose1}+{12\choose5}+{12\choose7}+{12\choose11}=1\boxed{608}.\]
 
- 
 
 
 	\item (\textit{AIME I 2023}) Find the largest prime number $p<1000$ for which there exists a complex number $z$ satisfying
 
 
  
-                \begin{itemize}
-                    \item the real and imaginary part of $z$ are both integers;
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $|z|=\sqrt{p},$ and
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item there exists a triangle whose three side lengths are $p,$ the real part of $z^{3},$ and the imaginary part of $z^{3}.$
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item the real and imaginary part of $z$ are both integers;
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $|z|=\sqrt{p},$ and
+            \end{itemize}
+            
+            \begin{itemize}
+        \item there exists a triangle whose three side lengths are $p,$ the real part of $z^{3},$ and the imaginary part of $z^{3}.$
+            \end{itemize}
+            
  \textbf{Answer: }349
 
 
@@ -2218,18 +2136,14 @@ and $p = a^2 + b^2$.
  We use the following criteria to quickly eliminate $a$ that make $a^2 + b^2$ a composite number.
 
  
-                \begin{itemize}
-                    \item For $b \equiv 1 \pmod{2}$, we eliminate $a$ satisfying $a \equiv 1 \pmod{2}$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item For $b \equiv \pm 1 \pmod{5}$ (resp. $b \equiv \pm 2 \pmod{5}$), we eliminate $a$ satisfying $a \equiv \pm 2 \pmod{5}$ (resp. $a \equiv \pm 1 \pmod{5}$).
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item For $b \equiv 1 \pmod{2}$, we eliminate $a$ satisfying $a \equiv 1 \pmod{2}$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item For $b \equiv \pm 1 \pmod{5}$ (resp. $b \equiv \pm 2 \pmod{5}$), we eliminate $a$ satisfying $a \equiv \pm 2 \pmod{5}$ (resp. $a \equiv \pm 1 \pmod{5}$).
+            \end{itemize}
+            
 \item For the remaining $\left( b, a \right)$, check whether (8) and the condition that $a^2 + b^2$ is prime are both satisfied.
 
  The first feasible solution is $b = 5$ and $a = 18$.Thus, $a^2 + b^2 = 349$.
@@ -2249,19 +2163,15 @@ Let $z = a + b i (a,b\in I)$. $a^2 + b^2 = prime < 1000$, $(a,b) = 1$.
  According to the question, ${\textrm Re} \left( z^3 \right)$, ${\textrm Im} \left( z^3 \right)$, and $|z^3|$ construct the side-lengths of a non-degenerate triangle.
 
  $z^3 = (a+bi)^3 = a^3+3a^2bi-3ab^2-b^3i = (a^3 - 3ab^2) + (3a^2b-b^3)i$
+${\textrm Re} \left( z^3 \right) = a^3 - 3ab^2 > 0 => a(a^2 - 3b^2) > 0$
 
- ${\textrm Re} \left( z^3 \right) = a^3 - 3ab^2 > 0 => a(a^2 - 3b^2) > 0$
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_15_Solution_Figure_1.png}
                     \end{figure}
                     
+${\textrm Im} \left( z^3 \right) = a^3 - 3ab^2 > 0 => a(a^2 - 3b^2) > 0$
 
- ${\textrm Im} \left( z^3 \right) = a^3 - 3ab^2 > 0 => a(a^2 - 3b^2) > 0$
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2023_15_Solution_Figure_2.png}
@@ -2280,24 +2190,18 @@ Let $z = a + b i (a,b\in I)$. $a^2 + b^2 = prime < 1000$, $(a,b) = 1$.
  Also
 
  ${\textrm Re} \left( z^3 \right) + {\textrm Im} \left( z^3 \right) > |z^3| > |z||z^2|>|z^2|$
-
- $|{\textrm Re} \left( z^3 \right) - {\textrm Im} \left( z^3 \right)| < |z|^2$
-
- $|a^3-3ab^2-(3a^2b-b^3)| < a^2+b^2$
-
- $=|a^3-3ab^2+b^3-3a^2b|$
-
- $=|a^3+b^3-3ab(a+b)|$
-
- $=|a+b||a^2-4ab+b^2|<a^2+b^2 (*)$
+$|{\textrm Re} \left( z^3 \right) - {\textrm Im} \left( z^3 \right)| < |z|^2$
+$|a^3-3ab^2-(3a^2b-b^3)| < a^2+b^2$
+$=|a^3-3ab^2+b^3-3a^2b|$
+$=|a^3+b^3-3ab(a+b)|$
+$=|a+b||a^2-4ab+b^2|<a^2+b^2 (*)$
 
  If $a<0,b>0$, $|a^2-4ab+b^2|>|a^2+b^2|$, making statement $(*)$ false.Combining with the former graph depicting possible ranges of $a,b$, by loss of generality, we assume $a,b$ both $>0$ and exists in the first $30^{\circ}$ of the circle.
 
  Let $\frac{a}{b} = \lambda > \sqrt{3}$.
 
  $(*) |b^3(1+\lambda)\cdot({\lambda}^{2}-4\lambda+1)| < b^2(1+{\lambda}^{2})$
-
- $b<|\frac{1+{\lambda}^2}{1+\lambda}|\cdot|\frac{1}{{\lambda}^{2}-4\lambda+1}|$
+$b<|\frac{1+{\lambda}^2}{1+\lambda}|\cdot|\frac{1}{{\lambda}^{2}-4\lambda+1}|$
 
  To clearly visualize, we graph out $|\frac{1+{\lambda}^2}{1+\lambda}|$ and $|{\lambda}^{2}-4\lambda+1|$ separately.
 
@@ -2311,16 +2215,13 @@ Let $z = a + b i (a,b\in I)$. $a^2 + b^2 = prime < 1000$, $(a,b) = 1$.
  When $\lambda$ is around $2+\sqrt{3}$, b reaches its maximum upper bound. 
 
  $b^2(1+{\lambda}^{2}) < 1000$
-
- $b^2<66$
-
- $b\le 8$
+$b^2<66$
+$b\le 8$
 
  Testing values of $b$ in decreasing order, starting from 8, we test out each corresponding value of $a$($b\cdot\lambda$)by trying the two whole numbers closest to the real value of $a$.
 
  We finally get that $b=5, a=18$ and $p = 5^2+18^2 = \boxed{349}$
 
- 
 
 
 \end{enumerate}

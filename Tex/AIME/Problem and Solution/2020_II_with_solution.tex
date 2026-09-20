@@ -15,7 +15,6 @@ In this problem, we want to find the number of ordered pairs $(m, n)$ such that 
  
 $20^{20} = 2^{40} \cdot 5^{20} = \left(2^2\right)^{20}\cdot\left(5^2\right)^{10}.$ Therefore, the answer is $21 \cdot 11 = \boxed{231}.$
 
- 
 
 
 
@@ -55,7 +54,6 @@ The line through the fixed point $\left(\frac58,\frac38\right)$ with slope $\fra
                     \end{figure}
                     
 
- 
 
 
 	\item (\textit{AIME II 2020}) The value of $x$ that satisfies $\log_{2^x} 3^{20} = \log_{2^{x+3}} 3^{2020}$ can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -101,22 +99,14 @@ Using the Change of Base Formula to convert the logarithms in the given equation
 \textbf{Solution 4}
 
 $\log_{2^x} 3^{20} = 2^{xy} = 3^{20}$
-
- $\log_{2^{x+3}} 3^{2020} = (2^{x+3})^y = 3^{2020}$
-
- $3^{2020} = (3^{20})^{101}$
-
- $(2^{xy})^{101} = (2^{x+3})^y = 3^{2020}$
-
- $(2^{xy})^{101} = (2^{x+3})^y \Rightarrow 2^{101xy} = 2^{xy+3y} \Rightarrow 101xy = xy + 3y \Rightarrow 101xy = y(x+3)$
-
- $101x = x + 3$
-
- $100x = 3$
-
- $x = \frac{3}{100}$
-
- $100 + 3 = \boxed{103}$ ~Airplanes2007
+$\log_{2^{x+3}} 3^{2020} = (2^{x+3})^y = 3^{2020}$
+$3^{2020} = (3^{20})^{101}$
+$(2^{xy})^{101} = (2^{x+3})^y = 3^{2020}$
+$(2^{xy})^{101} = (2^{x+3})^y \Rightarrow 2^{101xy} = 2^{xy+3y} \Rightarrow 101xy = xy + 3y \Rightarrow 101xy = y(x+3)$
+$101x = x + 3$
+$100x = 3$
+$x = \frac{3}{100}$
+$100 + 3 = \boxed{103}$ ~Airplanes2007
 
  
 
@@ -125,10 +115,8 @@ $\log_{2^x} 3^{20} = 2^{xy} = 3^{20}$
 \textbf{Solution 5}
 
 $\textbf{Lemma}:$
-
- $\log_{a^c}{b} = \frac{1}{c} \log_{a}{b}$
-
- $\textbf{Proof of the Lemma}:$
+$\log_{a^c}{b} = \frac{1}{c} \log_{a}{b}$
+$\textbf{Proof of the Lemma}:$
 
  Change of base and exponent property of logarithms on LHS gives $\frac{\log{b}}{c\log{a}}$ which simplifies to $\frac{1}{c} \cdot \frac{\log{b}}{\log{a}}$ in which converse of change of base gives $\frac{1}{c} \log_{a}{b}$ as desired.
 
@@ -186,7 +174,6 @@ Because the rotation sends the vertical segment $\overline{AB}$ to the horizonta
 
 For the above reasons, the transformation is simply a $90^\circ$ rotation. Proceed with complex numbers on the points $C$ and $C'$. Let $(x, y)$ be the origin. Thus, $C \rightarrow (16-x)+(-y)i$ and $C' \rightarrow (24-x)+(2-y)i$. The transformation from $C'$ to $C$ is a multiplication of $i$, which yields $(16-x)+(-y)i=(y-2)+(24-x)i$. Equating the real and complex terms results in the equations $16-x=y-2$ and $-y=24-x$. Solving, $(x, y) : (21, -3) \rightarrow 90+21-3=\boxed{108}$
 
- 
 
 
 
@@ -194,7 +181,6 @@ For the above reasons, the transformation is simply a $90^\circ$ rotation. Proce
 
 We know that the rotation point $P$ has to be equidistant from both $A$ and $A'$ so it has to lie on the line that is on the midpoint of the segment $AA'$ and also the line has to be perpendicular to $AA'$. Solving, we get the line is $y=\frac{-4}{3}x+25$. Doing the same for $B$ and $B'$, we get that $y=-6x+123$. Since the point $P$ of rotation must lie on both of these lines, we set them equal, solve and get: $x=21$,$y=-3$. We can also easily see that the degree of rotation is $90$ since $AB$ is initially vertical, and now it is horizontal. Also, we can just sketch this on a coordinate plane and easily realize the same. Hence, the answer is $21-3+90 = \boxed{108}$
 
- 
 
 
 	\item (\textit{AIME II 2020}) For each positive integer $n$, let $f(n)$ be the sum of the digits in the base-four representation of $n$ and let $g(n)$ be the sum of the digits in the base-eight representation of $f(n)$. For example, $f(2020) = f(133210_{\text{4}}) = 10 = 12_{\text{8}}$, and $g(2020) = \text{the digit sum of }12_{\text{8}} = 3$. Let $N$ be the least value of $n$ such that the base-sixteen representation of $g(n)$ cannot be expressed using only the digits $0$ through $9$. Find the remainder when $N$ is divided by $1000$.
@@ -219,7 +205,6 @@ First note that if $h_b(s)$ is the least positive integer whose digit sum, in so
  \[N = 13333333333_\text{four} = 2\cdot4^{10} - 1 = 2\cdot1024^2 - 1\]
  \[\equiv 2\cdot24^2 - 1 \equiv 151 \pmod{1000}.\]
 
- 
 
 
 	\item (\textit{AIME II 2020}) Define a sequence recursively by $t_1 = 20$, $t_2 = 21$, and
@@ -350,7 +335,6 @@ We graph this on graph paper, with the scale of $\sqrt{2}:1$. So, we can find $O
                     \end{figure}
                     
 
- 
 
 
 
@@ -487,15 +471,12 @@ Consider arrangements of numbers $1, 2, 3, ..., n$.
  
  \[f(n,k+1) = f(n,k) - d(n,k+1)  ......(1)\]
 
- 
  \[d(n,k+1) = 2f(n-1,k) + d(n-1,k)  ......(2)\]
 
  Hence,
  \[f(n,k+1)=f(n,k)-f(n-1,k)-f(n-1,k-1)\]
 
  And because $f(n,0) = f(n,1) = n!$, it's easy to get $f(6,6) = \boxed{090}$
-
- 
 
  \[\begin{tabular}{|c|c|c|c|c|c|c|}\hline k,n & n=1 & n=2 & n=3 & n=4 & n=5 & n=6\\\hline k=1 & 1 & 2 & 6 & 24 & 120 & 720\\\hline k=2 & & 0 & 2 & 12 & 72 & 480\\\hline k=3 & & & 0 & 4 & 36 & 288\\\hline k=4 & & & & 2 & 20 & 180\\\hline k=5 & & & & & 14 & 124\\\hline k=6 & & & & & & 90\\\hline \end{tabular}\]
 
@@ -590,7 +571,6 @@ Using the formula for  $\sum_{k=1}^n  k^3$,
  \[(n + 5) | (n^4 + 2 n^3 + n^2 - 68)\]Dividing polynomials,
  \[\frac{n^4 + 2 n^3 + n^2 - 68}{n + 5}\]
  \[= n^3 - 3 n^2 + 16n - 80 + \frac{332}{(n + 5)}\]$(n + 5)$ $|$ $(n^4 + 2 n^3 + n^2 - 68)$ $\iff$ $\frac{332}{(n + 5)}$ $\in$ $\mathbb{Z}$
-
 $\frac{332}{(n + 5)}$ $\in$$\mathbb{Z}$ $\iff$ $(n + 5) = \pm 1, \pm 2, \pm 4, \pm 83, \pm 166, \pm 332$
 
 Note that $n$ $\in$ $\mathbb{N}$ and $n + 5 > 17$ (because the remainder when dividing by $n + 5$ is $17$, so $n + 5$ must be greater than $17$), so all options $\leq 17$ can be eliminated.
@@ -674,7 +654,6 @@ We know that $P(x)=x^2-3x-7$.
  \[p = \frac{\sqrt{\left(-\frac52\right)\left(\frac{c-7}{2}\right)}}{\sqrt{\frac{c+2}{2}}}\]$\text{Recall th}\text{at }p=\frac32 \text{ and square both sides}$
  \[\frac94=\frac{\left(-\frac52\right)\left(\frac{c-7}{2}\right)}{\frac{c+2}{2}}\]$\text{Solving gives } c=\frac{52}{19}, \text{ so our answer is }\boxed{071}$
 
- 
 
 
 
@@ -757,7 +736,6 @@ Suppose that the circle intersects $\overline{AB}$, $\overline{BC}$, $\overline{
  
  \[(r^2 + 4ir - 4)(r^2 + 8ir -16)(r + 3i)\]
 
- 
  \[(r^4 + 12ir^3 - 52r^2 - 96ir + 64)(r + 3i)\]
 
  On the last expanding, we only multiply the reals with the imaginaries and vice versa, because we only care that the imaginary component equals 0.
@@ -765,13 +743,10 @@ Suppose that the circle intersects $\overline{AB}$, $\overline{BC}$, $\overline{
  
  \[15ir^4 - 252ir^2 + 192i = 0\]
 
- 
  \[5r^4 - 84r^2 + 64 = 0\]
 
- 
  \[(5r^2 - 4)(r^2 - 16) = 0\]
-
- $r$ must equal 4, as r cannot be negative or be approximately equal to 1. Thus, the area of $ABCDE$ is $4 \cdot (a + b + c + d + e) = 4 \cdot 15 = \boxed{60}$
+$r$ must equal 4, as r cannot be negative or be approximately equal to 1. Thus, the area of $ABCDE$ is $4 \cdot (a + b + c + d + e) = 4 \cdot 15 = \boxed{60}$
 
  -nihao4112
 
@@ -913,22 +888,17 @@ Note that the upper bound for our sum is $2019,$ and not $2020,$ because if it w
  
  \[\sum_{x=17}^{2019} \sum_{y=x}^{2019} \sum_{z=y}^{2019} 1\]
 
- 
  \[=\sum_{x=17}^{2019} \sum_{y=x}^{2019} \sum_{z=y}^{2019} \binom{z-y}{0}\]
 
- 
  \[=\sum_{x=17}^{2019} \sum_{y=x}^{2019} \binom{2020-y}{1}\]
 
- 
  \[=\sum_{x=17}^{2019} \binom{2021-x}{2}\]
 
- 
  \[=\binom{2005}{3}\]
 
  Hence, 
  \[N = \frac{2005 \cdot 2004 \cdot 2003}{3 \cdot 2\cdot 1} \equiv \boxed{010} (\mathrm{mod} \hskip .2cm 1000)\]
 
- 
 
 
 
@@ -952,7 +922,6 @@ To solve $f(f(f(x)))=17$, we need to solve $f(x) = y$ where $f(f(y))=17$, and to
 
  The total number of solutions to $x$ is $\binom{2004}{2} + \binom{2003}{2} + \binom{2002}{2} + ... + \binom{3}{2} + \binom{2}{2}$. Using the hockey stick theorem, we see this equals $\binom{2005}{3}$, and when we take the remainder of that number when divided by $1000$, we get the answer, $\boxed{10}$
 
- 
 
 
 
@@ -965,7 +934,6 @@ For any nonnegative integer $n$, the function $f$ increases on the interval $[n,
  Thus $f(f(f(x)))=17$ has exactly one solution $x$ with $0\leq x\leq 2020$ for each triple of integers $(a,b,c)$ with $17\leq a\leq b\leq c<2020$, noting that $x=2020$ is not a solution. This nondecreasing ordered triple can be identified with a multiset of three elements of the set of $2003$ integers $\{17,18,19,\ldots,2019\}$, which can be selected in $\binom{2005}3$ ways. Thus 
  \[N=\frac{2005\cdot 2004\cdot 2003}{6}\equiv 10\hskip -.2cm \pmod{1000}.\]
 
- 
 
 
 	\item (\textit{AIME II 2020}) Let $\triangle ABC$ be an acute scalene triangle with circumcircle $\omega$. The tangents to $\omega$ at $B$ and $C$ intersect at $T$. Let $X$ and $Y$ be the projections of $T$ onto lines $AB$ and $AC$, respectively. Suppose $BT = CT = 16$, $BC = 22$, and $TX^2 + TY^2 + XY^2 = 1143$. Find $XY^2$.
@@ -1015,7 +983,6 @@ Let $M$ denote the midpoint of $\overline{BC}$. The critical claim is that $M$ i
  \[TM^2 + XY^2 = 2(TX^2 + TY^2) = 2(1143-XY^2).\] But $TM^2 = TB^2 - BM^2 = 16^2 - 11^2 = 135$. Therefore 
  \[XY^2 = \frac13(2 \cdot 1143-135) = \boxed{717}.\]
 
- 
 
 
 
@@ -1061,10 +1028,6 @@ Let $H$ be the orthocenter of $\triangle AXY$.
  \[3 \cdot XY^2 = 2XT^2 + 2TY^2 + 2XY^2 –  4 DT^2,\]
  \[3 \cdot XY^2  = 2 \cdot 1143-153 = 2151 \implies XY^2 = \boxed{717}.\]
 
- 
-
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2020_15_Solution_Figure_4.png}
@@ -1074,12 +1037,10 @@ Let $H$ be the orthocenter of $\triangle AXY$.
  Let $\triangle ABC$ be an acute scalene triangle with circumcircle $\omega$. The tangents to $\omega$ at $B$ and $C$ intersect at $T$. Let $X$ be the projections of $T$ onto line $AB$. Let M be midpoint BC. Then triangle ABC is similar to triangle XTM.
 
  <i>\textbf{Proof}</i>
-
- $\angle BXT = \angle BMT = 90^o \implies$ the quadrilateral $MBXT$ is cyclic.
+$\angle BXT = \angle BMT = 90^o \implies$ the quadrilateral $MBXT$ is cyclic.
 
  $BM \perp MT, TX \perp AB \implies \angle MTX = \angle MBA.$
-
- $\angle CBT = \angle BAC = \frac {\overset{\Large\frown} {BC}}{ 2} \implies \triangle ABC \sim \triangle XTM.$
+$\angle CBT = \angle BAC = \frac {\overset{\Large\frown} {BC}}{ 2} \implies \triangle ABC \sim \triangle XTM.$
 
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 

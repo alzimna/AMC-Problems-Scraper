@@ -57,7 +57,6 @@ One might cleverly change the content of both Jars.
 
  So the answer is $80+2+3 = \boxed{085}$
 
- 
 
 
 
@@ -85,14 +84,12 @@ One may first combine all three jars in to a single container.  That container w
 Let us call the point where $\overline{EF}$ intersects $\overline{AD}$ point $G$, and the point where $\overline{EF}$ intersects $\overline{BC}$ point $H$. Since angles $FHB$ and $EGA$ are both right angles, and angles $BEF$ and $DFE$ are congruent due to parallelism, right triangles $BHE$ and $DGF$ are similar. This implies that $\frac{BH}{GD} = \frac{9}{8}$. Since $BC=10$, $BH+GD=BH+HC=BC=10$. ($HC$ is the same as $GD$ because they are opposite sides of a rectangle.) Now, we have a system:
 
  $\frac{BH}{GD}=\frac{9}8$
-
- $BH+GD=10$
+$BH+GD=10$
 
  Solving this system (easiest by substitution), we get that:
 
  $BH=\frac{90}{17}$
-
- $GD=\frac{80}{17}$
+$GD=\frac{80}{17}$
 
  Using the Pythagorean Theorem, we can solve for the remaining sides of the two right triangles:
 
@@ -106,7 +103,6 @@ Let us call the point where $\overline{EF}$ intersects $\overline{AD}$ point $G$
 
  $3+21+12=\boxed{36}$
 
- 
 
 
 
@@ -117,15 +113,10 @@ Extend lines $BE$ and $CD$ to meet at point $G$.Draw the altitude $GH$ from poin
  $GE=DF=8,$$GB=17$
 
  In right $\bigtriangleup GHB$, $GH=10$, $GB=17$, thus by Pythagoras Theorem we have:$HB=\sqrt{17^2-10^2}=3\sqrt{21}$
-
- $HA=EF=3\sqrt{21}-12$
+$HA=EF=3\sqrt{21}-12$
 
  Thus our answer is:$3+21+12=\boxed{36}$
 
- 
-
-
- 
 
 
 
@@ -242,10 +233,8 @@ Because $\angle CMI = \angle CNI = 90$, $CMIN$ is cyclic.
  Applying Ptolemy's theorem on CMIN:
 
  $CN \cdot MI+CM \cdot IN=CI \cdot MN$
-
- $CI^2(\cos \angle ICN \sin \angle ICM + \cos \angle ICM \sin \angle ICN) = CI \cdot MN$
-
- $MN = CI \sin \angle MCN$ by sine angle addition formula.
+$CI^2(\cos \angle ICN \sin \angle ICM + \cos \angle ICM \sin \angle ICN) = CI \cdot MN$
+$MN = CI \sin \angle MCN$ by sine angle addition formula.
 
  $\angle MCN = 180 - \angle MIN = 90 - \angle BCI$. 
 
@@ -286,18 +275,12 @@ Applying \href{https://artofproblemsolving.com/wiki/index.php?title=Ptolemy\%27s
  Finally, using the formulae $\sin\left(\frac{\alpha}{2}\right)=\sqrt{\frac{(s-b)(s-c)}{bc}}$ and $\cos\left(\frac{\alpha}{2}\right)=\sqrt{\frac{s(s-a)}{bc}}$ (where $s$ is half the perimeter of the triangle), we reach our final value:
 
  $MN = b\cdot\frac{\sqrt{\frac{(s-b)(s-c)}{bc}}\cdot\sqrt{\frac{s(s-c)}{ab}}}{\sqrt{\frac{s(s-b)}{ac}}}$
+$=\frac{\sqrt{s(s-b)(s-c)^2}}{\sqrt{s(s-b)}}$
+$=\sqrt{(s-c)^2}$
+$=s-c$
+$=181-125$
+$=\boxed{056}.$
 
- $=\frac{\sqrt{s(s-b)(s-c)^2}}{\sqrt{s(s-b)}}$
-
- $=\sqrt{(s-c)^2}$
-
- $=s-c$
-
- $=181-125$
-
- $=\boxed{056}.$
-
- 
 
 
 	\item (\textit{AIME I 2011}) The vertices of a regular nonagon (9-sided polygon) are to be labeled with the digits 1 through 9 in such a way that the sum of the numbers on every three consecutive vertices is a multiple of 3.  Two acceptable arrangements are considered to be indistinguishable if one can be obtained from the other by rotating the nonagon in the plane.  Find the number of distinguishable acceptable arrangements.
@@ -333,7 +316,6 @@ If the vertex is at $\left(\frac{1}{4}, -\frac{9}{8}\right)$, the equation of th
  \[y=ax^2-\frac{ax}{2}+\frac{a}{16}-\frac{9}{8}.\] From the problem, we know that the parabola can be expressed in the form $y=ax^2+bx+c$, where $a+b+c$ is an integer. From the above equation, we can conclude that $a=a$, $-\frac{a}{2}=b$, and $\frac{a}{16}-\frac{9}{8}=c$. Adding up all of these gives us 
  \[\frac{9a-18}{16}=a+b+c.\] We know that $a+b+c$ is an integer, so $9a-18$ must be divisible by $16$.  Let $9a=z$. If ${z-18}\equiv {0} \pmod{16}$, then ${z}\equiv {2} \pmod{16}$. Therefore, if $9a=2$, $a=\frac{2}{9}$. Adding up gives us $2+9=\boxed{011}$
 
- 
 
 
 
@@ -382,12 +364,9 @@ $\textbf{Appendix to Solution 5 (You don't remember differential calculus)}$
 \textbf{Solution 6 (No Words)}
 
 $y = ax^2 + bx + c$
-
- $y=a\left(x^2+\frac{b}{a}x\right)+c$
-
- $y=a\left(x^2+\frac{b}{a}x+\left(\frac{b}{2a}\right)^2\right)-a\left(\frac{b}{2a}\right)^2+c$
-
- $y=a\left(x+\frac{b}{2a}\right)^2-\frac{b^2}{4a}+c$.
+$y=a\left(x^2+\frac{b}{a}x\right)+c$
+$y=a\left(x^2+\frac{b}{a}x+\left(\frac{b}{2a}\right)^2\right)-a\left(\frac{b}{2a}\right)^2+c$
+$y=a\left(x+\frac{b}{2a}\right)^2-\frac{b^2}{4a}+c$.
 
  
 
@@ -396,8 +375,7 @@ $y = ax^2 + bx + c$
 
  
 $- \frac{b^2}{4a} + c= - \frac{9}{8}$
-
- $c=\frac{b^2}{4a}- \frac{9}{8} =\frac{b}{2} \cdot \frac{b}{2a} - \frac{9}{8} = -\frac{b}{8}-\frac{9}{8} = \frac{a}{16}-\frac{9}{8}$.
+$c=\frac{b^2}{4a}- \frac{9}{8} =\frac{b}{2} \cdot \frac{b}{2a} - \frac{9}{8} = -\frac{b}{8}-\frac{9}{8} = \frac{a}{16}-\frac{9}{8}$.
 
  
 
@@ -417,8 +395,6 @@ $- \frac{b^2}{4a} + c= - \frac{9}{8}$
 
  \[m^{x_0} = \sum_{k = 1}^{2011} m^{x_k}.\]
 
-
- 
  \textbf{Answer: }016
 
 
@@ -449,7 +425,6 @@ Let
  \[3^0 + 3^0 + 3^0 +3^1+3^1+3^2+3^2+\cdots+3^{1004} +3^{1004} = 3^1+3^1+3^1+3^2+3^2+\cdots+3^{1004} +3^{1004} = 3^2+3^2+3^2+\cdots+3^{1004} +3^{1004}\]
  \[=\cdots = 3^{1004} +3^{1004}+3^{1004} = 3^{1005}\]It's clearly seen we can use the same strategy for all $m-1 |2010$. We count all positive $m$ satisfying $m-1 |2010$, and see there are $\boxed{016}$
 
- 
 
 
 
@@ -543,7 +518,6 @@ Let $f(a)$ be a polynomial in terms of $a$, listed below, which has roots at the
                     \end{figure}
                     
 
- 
  \textbf{Answer: }318
 
 
@@ -556,7 +530,6 @@ Note that triangles $\triangle AUV, \triangle BYZ$ and $\triangle CWX$ all have 
  \begin{align} \frac{621h+810h}{2K}\leq 27, \\ \frac{690h+621h}{2K}\leq 23, \\ \frac{810h+690h}{2K}\leq 30. \end{align}must hold. Dividing both sides of each equation by the RHS, we have
  \begin{align} \frac{53h}{2K}\leq 1\, \text{since}\, \frac{1431}{27}=53, \\ \frac{57h}{2K}\leq 1\, \text{since}\, \frac{1311}{23}=57, \\ \frac{50h}{2K}\leq 1\, \text{since}\, \frac{1500}{30}=50. \end{align}It is relatively easy to see that $\frac{57h}{2K}\leq 1$ restricts us the most since it cannot hold if the other two do not hold. The largest possible value of $h$ is thus $\frac{2K}{57},$ and note that by Heron's formula the area of $\triangle ABC$ is $20\sqrt{221}$. Then $\frac{2K}{57}=\frac{40\sqrt{221}}{57},$ and the answer is $40+221+57=261+57=\boxed{318}$
 
- 
 
 
 
@@ -630,36 +603,26 @@ Inscribe the regular polygon inside a circle. A triangle inside this circle will
  Case 1: $2n$-sided polygon. There are clearly $\binom{2n}{3}$ different triangles total. To find triangles that meet the criteria, choose the left-most point. There are obviously $2n$ choices for this point. From there, the other two points must be within the $n-1$ points remaining on the same side of the diameter. So our desired probability is$\frac{2n\binom{n-1}{2}}{\binom{2n}{3}}$$=\frac{n(n-1)(n-2)}{\frac{2n(2n-1)(2n-2)}{6}}$$=\frac{6n(n-1)(n-2)}{2n(2n-1)(2n-2)}$$=\frac{3(n-2)}{2(2n-1)}$
 
  so $\frac{93}{125}=\frac{3(n-2)}{2(2n-1)}$
-
- $186(2n-1)=375(n-2)$.
+$186(2n-1)=375(n-2)$.
 
  $372n-186=375n-750$
-
- $3n=564$
-
- $n=188$ and so the polygon has $376$ sides.
+$3n=564$
+$n=188$ and so the polygon has $376$ sides.
 
  Case 2: $2n-1$-sided polygon. Similarly, $\binom{2n-1}{3}$ total triangles. Again choose the leftmost point, with $2n-1$ choices. For the other two points, there are again $\binom{n-1}{2}$ possibilities.
 
  The probability is $\frac{(2n-1)\binom{n-1}{2}}{\binom{2n-1}{3}}$
-
- $=\frac{3(2n-1)(n-1)(n-2)}{(2n-1)(2n-2)(2n-3)}$
-
- $=\frac{3(n-2)}{2(2n-3)}$
+$=\frac{3(2n-1)(n-1)(n-2)}{(2n-1)(2n-2)(2n-3)}$
+$=\frac{3(n-2)}{2(2n-3)}$
 
  so $\frac{93}{125}=\frac{3(n-2)}{2(2n-3)}$
-
- $186(2n-3)=375(n-2)$
-
- $375n-750=372n-558$
-
- $3n=192$
-
- $n=64$ and our polygon has $127$ sides.
+$186(2n-3)=375(n-2)$
+$375n-750=372n-558$
+$3n=192$
+$n=64$ and our polygon has $127$ sides.
 
  Adding, $127+376=\boxed{503}$
 
- 
 
 
 
@@ -732,7 +695,6 @@ Let the regular $n$-gon be inscribed in a circle, allowing the use of the inscri
 
  The total number of ways to choose 3 distinct vertices on the $n$-gon is $\binom{n}{3}$
 
- 
  \[\frac{n(c-2)(c-1)}{2 \dbinom{n}{3} } = \frac{93}{125}\]
 
  \begin{align*}125 \cdot \frac{n(c-2)(c-1)}{2} &= 93 \cdot \dbinom{n}{3}\\ 125 \cdot \frac{n(c-2)(c-1)}{2} &= 93 \cdot \frac{n(n-1)(n-2)}{6}\\125 (c-2)(c-1) &= 31 (n-1)(n-2)\\125 (\left \lfloor \frac{n}{2} \right \rfloor-2)(\left \lfloor \frac{n}{2} \right \rfloor-1) &= 31 (n-1)(n-2)\end{align*}
@@ -811,7 +773,6 @@ Notice that our sum of remainders looks like
 Then, since $T$ is divisible by $125$ and $8$, it follows that $T$ is divisible by $1000.$ Therefore, 
  \[S = R + T \equiv R \equiv \boxed{007} \pmod{1000}.\]
 
- 
 
 
 
@@ -822,7 +783,6 @@ Obviously, $2^i$ will have to repeat at some point, and our goal is just to find
  \[2^b\left(2^{a-b} - 1\right) \equiv 0 \mod 1000\]Now, let's apply CRT. Obviously, if it is 0 mod 1000, this means directly that it is 0 mod 8 and 0 mod 125. Since $2^{a-b} - 1$ has to be odd, this necessarily means $b \ge 3$ for $8 \mid 2^b.$ This means that 125 has to divide $2^{a-b} - 1.$ We wish to find the minimum $a - b$ such that this is true, or similarly, we just wish to find $\text{ord}_{125}(2).$ Note that by Euler's Totient Theorem, that $2^{100} \equiv 1 \mod 125.$ After checking, and seeing that $2^{50} \equiv -1 \mod 125$, this directly means that $\text{ord}_{125}(2) = 100$ or $a - b = 100.$ Since $b \ge 3$, the smallest $(a, b)$ pair is$(103, 3).$ What this really means is that the sequence of remainders will start repeating at $2^{103}$ or namely that $\{2^0, 2^1, ..., 2^{102}\}$ are all distinct residues mod 1000. Adding these yields 
  \[2^{103} - 1 \equiv 8 - 1 \equiv \boxed{7} \mod 1000\]
 
- 
 
 
 
@@ -853,7 +813,6 @@ We can simply list out the last $3$ digits of all the powers of $2$ until we fin
 
  We can see that after $496$ comes $992$ which can be written as $-8 \pmod {1000}$. That means that all the terms after $8$ will repeat but negated modulo $1000$. Note that $n \pmod m + -n \pmod m = 0 \pmod m$. As we are looking for the sum of all of the possible values mod $1000$, the answer is just $1 + 2 + 4 = \fbox{007}$
 
- 
 
 
 
@@ -983,7 +942,6 @@ Let the vertices with distance $10,11,12$ be $B,C,D$, respectively. An equilater
                     \end{figure}
                     
 
- 
 
 
 
@@ -1139,7 +1097,6 @@ Hence, $|a| = 49$, $a^2 -2011 = 390$. $b = 39$, $c = 10$.
 
  Answer: $\boxed{098}$
 
- 
 
 
 
@@ -1199,22 +1156,17 @@ Let us first note the obvious that is derived from Vieta's formulas: $a+b+c=0, a
 From \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formulas}{Vieta's Formulas} we have $a + b + c = 0$ and $a(b + c) + bc = -2011.$ $b + c = -a \implies -a^2 + bc = -2011.$ $a^2 = (b + c)^2 \implies bc + 2011 = (b + c)^2.$  So now we have a simple looking two-variable quadratic equation. From here, we can solve for $c$ in terms of $b$ using the \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_formula}{quadratic formula} and see if we can do something with the discriminant. $bc + 2011 = b^2 + 2bc + c^2.$ $c^2 + (b)c + (b^2 - 2011) = 0.$ So $c = \frac{-b \pm \sqrt{8044 - 3b^2}}{2}.$ So $8044 - 3b^2$ must be a perfect square. $8044$ is around $89^2$, so we can start from here and work downwards. Immediately, we see that if $8044 - 3b^2 = 88^2, b = 10.$ Will this work? If $b = 10,$ then $c$ can be $-49$ or $39$. So we have two cases: 
 
  
-\textbf{Case 1:} $c = -49$ 
-
- $b + c = -39$ and $bc = -490$ 
-
- $a(-39) - 490 = -2011 \implies a = -39.$ But this doesn't satisfy the equation $a + b + c = 0,$ so this case won't work.
+\textbf{Case 1:} $c = -49$
+$b + c = -39$ and $bc = -490$
+$a(-39) - 490 = -2011 \implies a = -39.$ But this doesn't satisfy the equation $a + b + c = 0,$ so this case won't work.
 
  
-\textbf{Case 2:} $c = 39$ 
-
- $b + c = 49$ and $bc = 390$ 
-
- $a(49) + 390 = -2011 \implies a = -49.$ Since $a + b + c = 10 + 39 - 49 = 0$ this works.
+\textbf{Case 2:} $c = 39$
+$b + c = 49$ and $bc = 390$
+$a(49) + 390 = -2011 \implies a = -49.$ Since $a + b + c = 10 + 39 - 49 = 0$ this works.
 
  So our answer is $10 + 39 + 49 = \boxed{98}.$
 
- 
 
 
 

@@ -2,16 +2,12 @@
         \begin{enumerate}
         	\item (\textit{AIME I 1995}) Square $S_{1}$ is $1\times 1.$  For $i\ge 1,$ the lengths of the sides of square $S_{i+1}$ are half the lengths of the sides of square $S_{i},$ two adjacent sides of square $S_{i}$ are perpendicular bisectors of two adjacent sides of square $S_{i+1},$ and the other two sides of square $S_{i+1},$ are the perpendicular bisectors of two adjacent sides of square $S_{i+2}.$  The total area enclosed by at least one of $S_{1}, S_{2}, S_{3}, S_{4}, S_{5}$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m-n.$
 
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1995_1_Problem_Figure_1.png}
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }255
 
 
@@ -40,8 +36,6 @@ The sum of the areas of the \href{https://artofproblemsolving.com/wiki/index.php
 	\item (\textit{AIME I 1995}) Find the last three digits of the product of the positive roots of
 $\sqrt{1995}x^{\log_{1995}x}=x^2.$
 
-
- 
  \textbf{Answer: }025
 
 
@@ -63,16 +57,13 @@ Alternatively, use Vieta's formula to find the sum of the roots for solutions of
 Instead of taking $\log_{1995}$, we take $\log_x$ of both sides and simplify:
 
  $\log_x(\sqrt{1995}x^{\log_{1995}x})=\log_x(x^{2})$
-
- $\log_x\sqrt{1995}+\log_x x^{\log_{1995}x}=2$
-
- $\dfrac{1}{2} \log_x 1995 + \log_{1995} x = 2$
+$\log_x\sqrt{1995}+\log_x x^{\log_{1995}x}=2$
+$\dfrac{1}{2} \log_x 1995 + \log_{1995} x = 2$
 
  We know that $\log_x 1995$ and $\log_{1995} x$ are reciprocals, so let $a=\log_{1995} x$.  Then we have $\dfrac{1}{2}\left(\dfrac{1}{a}\right) + a = 2$.  Multiplying by $2a$ and simplifying gives us $2a^2-4a+1=0$, as shown above.
 
  Because $a=\log_{1995} x$, $x=1995^a$. By the quadratic formula, the two roots of our equation are $a=\frac{2\pm\sqrt2}{2}$. This means our two roots in terms of $x$ are $1995^\frac{2+\sqrt2}{2}$ and $1995^\frac{2-\sqrt2}{2}.$ Multiplying these gives $1995^2$
-
- $1995^2\pmod{1000}\equiv 995^2\pmod{1000}\equiv (-5)^2\pmod{1000}\equiv 25\pmod{1000}$, so our answer is $\boxed{025}$.
+$1995^2\pmod{1000}\equiv 995^2\pmod{1000}\equiv (-5)^2\pmod{1000}\equiv 25\pmod{1000}$, so our answer is $\boxed{025}$.
 
  
 
@@ -118,8 +109,6 @@ Set \( y = \log_{1995}(x) \).
 
 	\item (\textit{AIME I 1995}) Starting at $(0,0),$ an object moves in the coordinate plane via a sequence of steps, each of length one.  Each step is left, right, up, or down, all four equally likely.  Let $p$ be the probability that the object reaches $(2,2)$ in six or fewer steps.  Given that $p$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
-
- 
  \textbf{Answer: }067
 
 
@@ -173,14 +162,12 @@ Let's let the object wander for 6 steps so we get a constant denominator of $4^{
 We label the points as following: the centers of the circles of radii $3,6,9$ are $O_3,O_6,O_9$ respectively, and the endpoints of the chord are $P,Q$. Let $A_3,A_6,A_9$ be the feet of the \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendiculars} from $O_3,O_6,O_9$ to $\overline{PQ}$ (so $A_3,A_6$ are the points of \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_(geometry)}{tangency}). Then we note that $\overline{O_3A_3} \parallel \overline{O_6A_6} \parallel \overline{O_9A_9}$, and $O_6O_9 : O_9O_3 = 3:6 = 1:2$. Thus, $O_9A_9 = \frac{2 \cdot O_6A_6 + 1 \cdot O_3A_3}{3} = 5$ (consider similar triangles). Applying the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_Theorem}{Pythagorean Theorem} to $\triangle O_9A_9P$, we find that 
  \[PQ^2 = 4(A_9P)^2 = 4[(O_9P)^2-(O_9A_9)^2] = 4[9^2-5^2] = \boxed{224}\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1995_4_Solution_Figure_1.png}
                     \end{figure}
                     
 
- 
 
 
 
@@ -202,8 +189,6 @@ We label the points as following: the centers of the circles of radii $3,6,9$ ar
 
 	\item (\textit{AIME I 1995}) For certain real values of $a, b, c,$ and $d_{},$  the equation $x^4+ax^3+bx^2+cx+d=0$ has four non-real roots.  The product of two of these roots is $13+i$ and the sum of the other two roots is $3+4i,$ where $i=\sqrt{-1}.$  Find $b.$
 
-
- 
  \textbf{Answer: }051
 
 
@@ -222,9 +207,6 @@ Since the \href{https://artofproblemsolving.com/wiki/index.php?title=Coefficient
 Let's assume that the 2 roots multiplied together are p+qi, and r+si, and the two roots added together are the conjugates of the previous roots. Using Vieta, we get 
  \[b = (p+qi)(r+si) + (p+qi)(r-si) + (p-qi)(r+si) + (p-qi)(r-si) + (p+qi)(p-qi) + (r+si)(r-si) =\]
 
- 
-
- 
 
 
 	\item (\textit{AIME I 1995}) Let $n=2^{31}3^{19}.$  How many positive integer divisors of $n^2$ are less than $n_{}$ but do not divide $n_{}$?
@@ -285,8 +267,6 @@ Consider divisors of $n^2: a,b$ such that $ab=n^2$.WLOG, let $b\ge{a}$ and $b=\f
 
  where $k, m,$ and $n_{}$ are positive integers with $m_{}$ and $n_{}$ relatively prime, find $k+m+n.$
 
-
- 
  \textbf{Answer: }027
 
 
@@ -316,8 +296,7 @@ We want $1+\sin t \cos t-\sin t-\cos t$. However, note that we only need to find
  From this we have $\sin t \cos t = \frac{y^2-1}{2}$ and $\sin t + \cos t = y$
 
  Substituting, we have $2y^2+4y-3=0 \rightarrow y = \frac {-2 \pm \sqrt{10}}{2}$
-
- $\frac{5}{4} - 2(\frac{-2+\sqrt{10}}{2}) = \frac{13}{4}-\sqrt{10} \rightarrow 13+10+4=\boxed{027}$.
+$\frac{5}{4} - 2(\frac{-2+\sqrt{10}}{2}) = \frac{13}{4}-\sqrt{10} \rightarrow 13+10+4=\boxed{027}$.
 
  
 
@@ -357,7 +336,6 @@ We know that $x \equiv 0 \mod y$ and  $x+1 \equiv 0 \mod y+1$.
 
  Finding all possible values of $a$ such that $y<x<100$, we get $49 + 16 + 8 + 4 + 3 + 2 + 1 + 1 + 1 = \boxed{085}.$
 
- 
 
 
 
@@ -394,16 +372,12 @@ We use casework:
 
 	\item (\textit{AIME I 1995}) Triangle $ABC$ is isosceles, with $AB=AC$ and altitude $AM=11.$  Suppose that there is a point $D$ on $\overline{AM}$ with $AD=10$ and $\angle BDC=3\angle BAC.$  Then the perimeter of $\triangle ABC$ may be written in the form $a+\sqrt{b},$ where $a$ and $b$ are integers.  Find $a+b.$
 
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_1995_9_Problem_Figure_1.png}
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }616
 
 
@@ -443,28 +417,21 @@ The triangle is symmetrical so we can split it in half ($\triangle ABM$ and $\tr
 
  
  \[\frac{\frac{5}{\cos y}}{\sin BMD} = \frac{1}{\sin 90^\circ - 3y}\]
-
- $\sin BMD = 1$ (as $\angle BMD$ is a right angle), so $\frac{1}{\sin 90^\circ - 3y} = \frac{5}{\cos y}$. Using the identity $\sin 90^\circ - x = \cos x$, we can turn the equation into::
+$\sin BMD = 1$ (as $\angle BMD$ is a right angle), so $\frac{1}{\sin 90^\circ - 3y} = \frac{5}{\cos y}$. Using the identity $\sin 90^\circ - x = \cos x$, we can turn the equation into::
 
  
  \[\frac{1}{\cos 3y} = \frac{5}{\cos y}\]
 
- 
  \[5\cos 3y = \cos y\]
 
- 
  \[5(4\cos ^3 y - 3\cos y) = \cos y\]
 
- 
  \[20\cos ^3 y = 16 \cos y\]
 
- 
  \[5\cos ^3 y = 4\cos y\]
 
- 
  \[5\cos ^2 y = 4\]
 
- 
  \[\cos ^2 y = \frac{4}{5}\]
 
  Now that we've found $\cos y$, we can look at the side lengths of $BM$ and $AB$ (since they are symmetrical, the perimeter of $\triangle ABC$ is $2(BM + AB)$.
@@ -474,13 +441,10 @@ The triangle is symmetrical so we can split it in half ($\triangle ABM$ and $\tr
  
  \[\sin ^2 y = 1 - \cos ^2 y\]
 
- 
  \[\sin ^2 y = \frac{1}{5}\]
 
- 
  \[\tan ^2 y = \frac{1}{4}\]
 
- 
  \[\tan y = \frac{1}{2}\]
 
  (Note it is positive since $BM > 0$).
@@ -488,19 +452,14 @@ The triangle is symmetrical so we can split it in half ($\triangle ABM$ and $\tr
  
  \[\sec ^2 y = \frac{5}{4}\]
 
- 
  \[\sec y = \frac{\sqrt{5}}{2}\]
 
- 
  \[BM + AB = 11\frac{\sqrt{5}+1}{2}\]
 
- 
  \[2(BM + AB) = 11(\sqrt{5} + 1)\]
 
- 
  \[2(BM + AB) = 11\sqrt{5} + 11\]
 
- 
  \[2(BM + AB) = \sqrt{605} + 11\]
 
  The answer is $\boxed{616}$.
@@ -595,8 +554,6 @@ Let $P'$ be the prism similar to $P$, and let the sides of $P'$ be of length $x,
 
 	\item (\textit{AIME I 1995}) Pyramid $OABCD$ has square base $ABCD,$ congruent edges $\overline{OA}, \overline{OB}, \overline{OC},$ and $\overline{OD},$ and $\angle AOB=45^\circ.$  Let $\theta$ be the measure of the dihedral angle formed by faces $OAB$ and $OBC.$  Given that $\cos \theta=m+\sqrt{n},$ where $m_{}$ and $n_{}$ are integers, find $m+n.$
 
-
- 
  \textbf{Answer: }005
 
 
@@ -617,8 +574,6 @@ Let $P'$ be the prism similar to $P$, and let the sides of $P'$ be of length $x,
 
 	\item (\textit{AIME I 1995}) Let $f(n)$ be the integer closest to $\sqrt[4]{n}.$  Find $\sum_{k=1}^{1995}\frac 1{f(k)}.$
 
-
- 
  \textbf{Answer: }400
 
 
@@ -643,13 +598,10 @@ When $\left(k - \frac {1}{2}\right)^4 \leq n < \left(k + \frac {1}{2}\right)^4$,
 
 This is a pretty easy problem just to bash. Since the max number we can get is $7$, we just need to test $n$ values for $1.5,2.5,3.5,4.5,5.5$ and $6.5$. Then just do how many numbers there are times $\frac{1}{\lfloor n \rfloor}$, which should be $5+17+37+65+101+145+30 = \boxed{400}$
 
- 
 
 
 	\item (\textit{AIME I 1995}) In a circle of radius 42, two chords of length 78 intersect at a point whose distance from the center is 18.  The two chords divide the interior of the circle into four regions.  Two of these regions are bordered by segments of unequal lengths, and the area of either of them can be expressed uniquely in the form $m\pi-n\sqrt{d},$ where $m, n,$ and $d_{}$ are positive integers and $d_{}$ is not divisible by the square of any prime number.  Find $m+n+d.$
 
-
- 
  \textbf{Answer: }378
 
 

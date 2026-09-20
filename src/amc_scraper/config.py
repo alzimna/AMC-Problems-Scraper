@@ -23,6 +23,7 @@ LWAIT = 10
 TABLE_SELECTOR = {
     'AIME' : "#mw-content-text > div > table",
     'AMC_10' : "#mw-content-text > div > table",
+    'AMC_12' : "#mw-content-text > div > table",
     'AMC_8' : "#mw-content-text > div > ul:nth-child(2)",
     'AHSME' : "#mw-content-text > div > ul:nth-child(2)",
     'USAMO' : "#mw-content-text > div > ul:nth-child(2)",
@@ -38,6 +39,7 @@ COLUMN_YEAR_SELECTOR = {
 LINK_SELECTOR = {
     'AIME' : '#mw-content-text > div > table > tbody > tr > td > a',
     'AMC_10' : '#mw-content-text > div > table > tbody > tr > td > a',
+    'AMC_12' : '#mw-content-text > div > table > tbody > tr > td > a',
     'AMC_8' : "#mw-content-text > div > ul:nth-child(2) > li > a",
     'AHSME' : "#mw-content-text > div > ul:nth-child(2) > li > a",
     'USAMO' : "#mw-content-text > div > ul:nth-child(2) > li > a",
@@ -49,7 +51,8 @@ PATTERN_TITLE = r'(^\d{4})'
 PATTERN_VERSION = {
     'AIME' : r'title=\d{4}_AIME_([IVX]+)?',
     'AMC_8' : r'title=\d{4}_(.*)',
-    'AMC_10' : r'title=\d{4}_(.*)'
+    'AMC_10' : r'title=\d{4}_(.*)',
+    'AMC_12' : r'title=\d{4}_(.*)'
 }
 
 CONTENT_SELECTOR = '#mw-content-text > div'

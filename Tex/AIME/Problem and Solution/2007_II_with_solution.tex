@@ -13,12 +13,11 @@
 There are 7 different characters that can be picked, with 0 being the only number that can be repeated twice.
 
  
-                \begin{itemize}
-                    \item If $0$ appears 0 or 1 times amongst the sequence, there are $\frac{7!}{(7-5)!} = 2520$ sequences possible.\item If $0$ appears twice in the sequence, there are ${5\choose2} = 10$ places to place the $0$s. There are $\frac{6!}{(6-3)!} = 120$ ways to place the remaining three characters. In total, that gives us $10 \cdot 120 = 1200$.
-                \end{itemize}
-
-
-                Thus, $N = 2520 + 1200 = 3720$, and $\frac{N}{10} = \boxed{372}$.
+            \begin{itemize}
+        \item If $0$ appears 0 or 1 times amongst the sequence, there are $\frac{7!}{(7-5)!} = 2520$ sequences possible.
+        \item If $0$ appears twice in the sequence, there are ${5\choose2} = 10$ places to place the $0$s. There are $\frac{6!}{(6-3)!} = 120$ ways to place the remaining three characters. In total, that gives us $10 \cdot 120 = 1200$.
+            \end{itemize}
+            Thus, $N = 2520 + 1200 = 3720$, and $\frac{N}{10} = \boxed{372}$.
 
  Note: We could also count cases by how many 0's there are, like No 0's, 1 0's, and 2 0's. We get the same answer.
 
@@ -118,7 +117,6 @@ Let $\angle FCD = \alpha$, so that $FB = \sqrt{12^2 + 13^2 + 2\cdot12\cdot13\sin
  \textbf{The sum of the squares of the sides of a parallelogram is the sum of the squares of the diagonals.}
  \[EF^2 = 2\cdot(5^2 + 433) - 338 = 578.\]
 
- 
 
 
 
@@ -132,8 +130,7 @@ Extend $\overline{AE}, \overline{DF}$ and $\overline{BE}, \overline{CF}$ to thei
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2007_3_Solution_Figure_1.png}
                     \end{figure}
                     
-
- $\overline{EF}$ is the diagonal of the square, with length $17\sqrt{2}$; the answer is $EF^2 = (17\sqrt{2})^2 = 578$.
+$\overline{EF}$ is the diagonal of the square, with length $17\sqrt{2}$; the answer is $EF^2 = (17\sqrt{2})^2 = 578$.
 
  
 
@@ -174,7 +171,6 @@ Based on the symmetry, we know that $F$ is a reflection of $E$ across the center
 
 Drawing $EF$, it clearly passes through the center of $ABCD$. Letting this point be $P$, we note that $AEBP$ and $CFDP$ are congruent cyclic quadrilaterals, and that $AP=BP=CP=DP=\frac{13}{\sqrt{2}}.$ Now, from Ptolemy's, $13\cdot EP=\frac{13}{\sqrt{2}}(12+5)\implies EP=\frac{17\sqrt{2}}{2}$. Since $EF=EP+FP=2\cdot EP$, the answer is $(17\sqrt{2})^2=\boxed{578}.$
 
- 
 
 
 
@@ -192,10 +188,8 @@ Place the vertices of the square as follows:\begin{align}D &= (0,\;0),\\C &= (13
 
  Computing distance between $E$ and $F$ = $17\sqrt{2}$
 
- 
  \[EF^2 = 578\]
 
- 
 
 
 
@@ -209,7 +203,6 @@ We first see that the whole figure is symmetrical and reflections across the cen
 
  Note that we are looking for $4EO^2$ so we multiply $EO^2 = 12^2 + \left(\frac{13\sqrt{2}}{2}\right)^2 - 2 \cdot 12 \cdot \left(\frac{13\sqrt{2}}{2}\right) \cdot \cos{\angle EAO}$ by $4$ obtaining $4EO^2 = 576 + 338 - 8 \cdot\left(\frac{13\sqrt{2}}{2}\right) \cdot 12 \cdot\frac{7\sqrt{2}}{26} = 576 + 338 - 4  \cdot 12 \cdot  7 = \boxed{578}.$
 
- 
 
 
 
@@ -242,12 +235,9 @@ Suppose that it takes $x$ hours for one worker to create one widget, and $y$ hou
  Therefore, we can write that (note that two hours is similar to having twice the number of workers, and so on):
 
  <div style="text-align:center;">$100 = 300x + 200y$
-
- $2(60) = 240x + 300y$
-
- $3(50) = 150x + my$
-
- </div>Solve the system of equations with the first two equations to find that $(x,y) = \left(\frac{1}{7}, \frac{2}{7}\right)$. Substitute this into the third equation to find that $1050 = 150 + 2m$, so $m = \boxed{450}$.
+$2(60) = 240x + 300y$
+$3(50) = 150x + my$
+</div>Solve the system of equations with the first two equations to find that $(x,y) = \left(\frac{1}{7}, \frac{2}{7}\right)$. Substitute this into the third equation to find that $1050 = 150 + 2m$, so $m = \boxed{450}$.
 
  
 
@@ -306,7 +296,6 @@ We know that the number of squares intersected in an $m\times{n}$ rectangle is $
 
  $\frac{2007 - 231}{2} = \frac{1776}{2} = \fbox{888}$
 
- 
 
 
 	\item (\textit{AIME II 2007}) An integer is called \textit{parity-monotonic} if its decimal representation $a_{1}a_{2}a_{3}\cdots a_{k}$ satisfies $a_{i}<a_{i+1}$ if $a_{i}$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Odd}{odd}, and $a_{i}>a_{i+1}$ if $a_{i}$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Even}{even}. How many four-digit parity-monotonic integers are there? 
@@ -343,8 +332,6 @@ This problem can be solved via recursion since we are "building a string" of num
 
  Find the maximum value of $\frac{n_{i}}{k}$ for $1\leq i \leq 70.$
 
-
- 
  \textbf{Answer: }553
 
 
@@ -424,8 +411,6 @@ Similar to solution 2, we need to maximise the equation $(x-1)(y-1)$. Starting f
 
 	\item (\textit{AIME II 2007}) \href{https://artofproblemsolving.com/wiki/index.php?title=Rectangle}{Rectangle} $ABCD$ is given with $AB=63$ and $BC=448.$ Points $E$ and $F$ lie on $AD$ and $BC$ respectively, such that $AE=CF=84.$ The \href{https://artofproblemsolving.com/wiki/index.php?title=Inscribed\_circle}{inscribed circle} of \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} $BEF$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent}{tangent} to $EF$ at point $P,$ and the inscribed circle of triangle $DEF$ is tangent to $EF$ at \href{https://artofproblemsolving.com/wiki/index.php?title=Point}{point} $Q.$ Find $PQ.$
 
-
- 
  \textbf{Answer: }259
 
 
@@ -439,7 +424,6 @@ Similar to solution 2, we need to maximise the equation $(x-1)(y-1)$. Starting f
                     \end{figure}
                     
 
- 
 
 
 
@@ -513,47 +497,41 @@ Scaling everything by 7, we have that $AE = 12, AB = 9, BF = 52$. Note that  if 
 Set the origin at $D(0,0)$ with $A(0, 448)$, $B(63, 448)$, and $C(63, 0)$.Points $E$ and $F$ are defined by $AE=CF=84$:
 
  
-                \begin{itemize}
-                    \item $E = (0, 448 - 84) = (0, 364)$\item $F = (63, 84)$
-                \end{itemize}
-
-
-                The vertices of $\triangle DEF$ are $D(0,0)$, $E(0, 364)$, and $F(63, 84)$. The side lengths are:
-
- 
-                \begin{itemize}
-                    \item $DE = 364$\item $DF = \sqrt{63^2 + 84^2} = 21\sqrt{3^2 + 4^2} = 105$\item $EF = \sqrt{(63-0)^2 + (84-364)^2} = \sqrt{63^2 + (-280)^2} = 7\sqrt{9^2 + 40^2} = 287$
-                \end{itemize}
-
-
-                Using the incenter formula $I = \left( \frac{ax_1 + bx_2 + cx_3}{a+b+c}, \frac{ay_1 + by_2 + cy_3}{a+b+c} \right)$, where $a, b, c$ are side lengths opposite to vertices $D, E, F$:
+            \begin{itemize}
+        \item $E = (0, 448 - 84) = (0, 364)$
+        \item $F = (63, 84)$
+            \end{itemize}
+            The vertices of $\triangle DEF$ are $D(0,0)$, $E(0, 364)$, and $F(63, 84)$. The side lengths are:
 
  
-                \begin{itemize}
-                    \item $a = EF = 287, \quad b = DF = 105, \quad c = DE = 364$\item Perimeter $P = 287 + 105 + 364 = 756$\item $I_1 = \left( \frac{287(0) + 105(0) + 364(63)}{756}, \frac{287(0) + 105(364) + 364(84)}{756} \right) = \left( \frac{22932}{756}, \frac{68796}{756} \right) = (30\frac{1}{3}, 91)$
-                \end{itemize}
-
-
-                Let $Q'$ be the tangency point of the incircle on side $DE$. Since $DE$ lies on the y-axis ($x=0$), $Q'$ is the projection of the incenter $I_1$ onto the y-axis, which is $(0, 91)$. By the properties of tangents from a vertex to an incircle, the distance from vertex $E$ to the tangency point $Q$ on segment $EF$ is equal to the distance from $E$ to $Q'$ on segment $DE$:
-
- 
-                \begin{itemize}
-                    \item $EQ = EQ' = |364 - 91| = 273$
-                \end{itemize}
-
-
-                By the symmetry of the rectangle and the identical construction of the two triangles, the distance $FP$ in $\triangle BEF$ must equal the distance $EQ$ in $\triangle DEF$:
+            \begin{itemize}
+        \item $DE = 364$
+        \item $DF = \sqrt{63^2 + 84^2} = 21\sqrt{3^2 + 4^2} = 105$
+        \item $EF = \sqrt{(63-0)^2 + (84-364)^2} = \sqrt{63^2 + (-280)^2} = 7\sqrt{9^2 + 40^2} = 287$
+            \end{itemize}
+            Using the incenter formula $I = \left( \frac{ax_1 + bx_2 + cx_3}{a+b+c}, \frac{ay_1 + by_2 + cy_3}{a+b+c} \right)$, where $a, b, c$ are side lengths opposite to vertices $D, E, F$:
 
  
-                \begin{itemize}
-                    \item $FP = EQ = 273$
-                \end{itemize}
+            \begin{itemize}
+        \item $a = EF = 287, \quad b = DF = 105, \quad c = DE = 364$
+        \item Perimeter $P = 287 + 105 + 364 = 756$
+        \item $I_1 = \left( \frac{287(0) + 105(0) + 364(63)}{756}, \frac{287(0) + 105(364) + 364(84)}{756} \right) = \left( \frac{22932}{756}, \frac{68796}{756} \right) = (30\frac{1}{3}, 91)$
+            \end{itemize}
+            Let $Q'$ be the tangency point of the incircle on side $DE$. Since $DE$ lies on the y-axis ($x=0$), $Q'$ is the projection of the incenter $I_1$ onto the y-axis, which is $(0, 91)$. By the properties of tangents from a vertex to an incircle, the distance from vertex $E$ to the tangency point $Q$ on segment $EF$ is equal to the distance from $E$ to $Q'$ on segment $DE$:
 
+ 
+            \begin{itemize}
+        \item $EQ = EQ' = |364 - 91| = 273$
+            \end{itemize}
+            By the symmetry of the rectangle and the identical construction of the two triangles, the distance $FP$ in $\triangle BEF$ must equal the distance $EQ$ in $\triangle DEF$:
 
-                Since $P$ and $Q$ both lie on segment $EF$ (length $287$):
+ 
+            \begin{itemize}
+        \item $FP = EQ = 273$
+            \end{itemize}
+            Since $P$ and $Q$ both lie on segment $EF$ (length $287$):
  \[PQ = |EF - (EQ + FP)| = |287 - (273 + 273)| = |287 - 546| = \boxed{259}\]
 
- 
 
 
 	\item (\textit{AIME II 2007}) Let $S$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} with six \href{https://artofproblemsolving.com/wiki/index.php?title=Element}{elements}. Let $\mathcal{P}$ be the set of all \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subsets} of $S.$ Subsets $A$ and $B$ of $S$, not necessarily distinct, are chosen independently and at random from $\mathcal{P}$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that $B$ is contained in one of $A$ or $S-A$ is $\frac{m}{n^{r}},$ where $m$, $n$, and $r$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, $n$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}, and $m$ and $n$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime}. Find $m+n+r.$ (The set $S-A$ is the set of all elements of $S$ which are not in $A.$)
@@ -569,30 +547,12 @@ Set the origin at $D(0,0)$ with $A(0, 448)$, $B(63, 448)$, and $C(63, 0)$.Points
 Use \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{casework}:
 
  
-                \begin{itemize}
-                    <li>$B$ has 6 elements:
-                \begin{itemize}
-                    \item Probability: $\frac{1}{2^6} = \frac{1}{64}$\item $A$ must have either 0 or 6 elements, probability: $\frac{2}{2^6} = \frac{2}{64}$.
-                \end{itemize}
-
-
-                </li><li>$B$ has 5 elements:
-                \begin{itemize}
-                    \item Probability: ${6\choose5}/64 = \frac{6}{64}$\item $A$ must have either 0, 6, or 1, 5 elements. The total probability is $\frac{2}{64} + \frac{2}{64} = \frac{4}{64}$.
-                \end{itemize}
-
-
-                </li><li>$B$ has 4 elements:
-                \begin{itemize}
-                    \item Probability: ${6\choose4}/64 = \frac{15}{64}$\item $A$ must have either 0, 6; 1, 5; or 2,4 elements. If there are 1 or 5 elements, the set which contains 5 elements must have four emcompassing $B$ and a fifth element out of the remaining $2$ numbers. The total probability is $\frac{2}{64}\left({2\choose0} + {2\choose1} + {2\choose2}\right) = \frac{2}{64} + \frac{4}{64} + \frac{2}{64} = \frac{8}{64}$.
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                We could just continue our casework. In general, the probability of picking B with $n$ elements is $\frac{{6\choose n}}{64}$. Since the sum of the elements in the $k$th row of \href{https://artofproblemsolving.com/wiki/index.php?title=Pascal\%27s\_Triangle}{Pascal's Triangle} is $2^k$, the probability of obtaining $A$ or $S-A$ which encompasses $B$ is $\frac{2^{7-n}}{64}$. In addition, we must count for when $B$ is the empty set (probability: $\frac{1}{64}$), of which all sets of $A$ will work (probability: $1$).
+            \begin{itemize}
+        \item $B$ has 6 elements:<ul><li>Probability: $\frac{1}{2^6} = \frac{1}{64}$</li><li>$A$ must have either 0 or 6 elements, probability: $\frac{2}{2^6} = \frac{2}{64}$.</li></ul>
+        \item $B$ has 5 elements:<ul><li>Probability: ${6\choose5}/64 = \frac{6}{64}$</li><li>$A$ must have either 0, 6, or 1, 5 elements. The total probability is $\frac{2}{64} + \frac{2}{64} = \frac{4}{64}$.</li></ul>
+        \item $B$ has 4 elements:<ul><li>Probability: ${6\choose4}/64 = \frac{15}{64}$</li><li>$A$ must have either 0, 6; 1, 5; or 2,4 elements. If there are 1 or 5 elements, the set which contains 5 elements must have four emcompassing $B$ and a fifth element out of the remaining $2$ numbers. The total probability is $\frac{2}{64}\left({2\choose0} + {2\choose1} + {2\choose2}\right) = \frac{2}{64} + \frac{4}{64} + \frac{2}{64} = \frac{8}{64}$.</li></ul>
+            \end{itemize}
+            We could just continue our casework. In general, the probability of picking B with $n$ elements is $\frac{{6\choose n}}{64}$. Since the sum of the elements in the $k$th row of \href{https://artofproblemsolving.com/wiki/index.php?title=Pascal\%27s\_Triangle}{Pascal's Triangle} is $2^k$, the probability of obtaining $A$ or $S-A$ which encompasses $B$ is $\frac{2^{7-n}}{64}$. In addition, we must count for when $B$ is the empty set (probability: $\frac{1}{64}$), of which all sets of $A$ will work (probability: $1$).
 
  Thus, the solution we are looking for is $\left(\sum_{i=1}^6 \frac{{6\choose i}}{64} \cdot \frac{2^{7-i}}{64}\right) + \frac{1}{64} \cdot \frac{64}{64}$ $=\frac{(1)(64)+(6)(64)+(15)(32)+(20)(16)+(15)(8)+(6)(4)+(1)(2)}{(64)(64)}$ $=\frac{1394}{2^{12}}$$=\frac{697}{2^{11}}$.
 
@@ -607,12 +567,13 @@ Use \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{casewor
 we need $B$ to be a subset of $A$ or $S-A$we can divide each element of $S$ into 4 categories:
 
  
-                \begin{itemize}
-                    \item it is in $A$ and $B$\item it is in $A$ but not in $B$\item it is not in $A$ but is in $B$\item or it is not in $A$ and not in $B$
-                \end{itemize}
-
-
-                these can be denoted as $+A+B$, $+A-B$,$-A+B$, and $-A-B$
+            \begin{itemize}
+        \item it is in $A$ and $B$
+        \item it is in $A$ but not in $B$
+        \item it is not in $A$ but is in $B$
+        \item or it is not in $A$ and not in $B$
+            \end{itemize}
+            these can be denoted as $+A+B$, $+A-B$,$-A+B$, and $-A-B$
 
  we note that if all of the elements are in $+A+B$, $+A-B$ or $-A-B$we have that $B$ is a subset of $A$which can happen in $\dfrac{3^6}{4^6}$ ways
 
@@ -670,8 +631,6 @@ To begin with, we note that there are $2^6$ subsets of $S$(which we can assume i
 
 	\item (\textit{AIME II 2007}) Two long \href{https://artofproblemsolving.com/wiki/index.php?title=Cylinder}{cylindrical} tubes of the same length but different \href{https://artofproblemsolving.com/wiki/index.php?title=Diameter}{diameters} lie \href{https://artofproblemsolving.com/wiki/index.php?title=Parallel}{parallel} to each other on a \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{flat surface}. The larger tube has \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} $72$ and rolls along the surface toward the smaller tube, which has radius $24$. It rolls over the smaller tube and continues rolling along the flat surface until it comes to rest on the same point of its \href{https://artofproblemsolving.com/wiki/index.php?title=Circumference}{circumference} as it started, having made one complete revolution. If the smaller tube never moves, and the rolling occurs with no slipping, the larger tube ends up a \href{https://artofproblemsolving.com/wiki/index.php?title=Distance}{distance} $x$ from where it starts. The distance $x$ can be expressed in the form $a\pi+b\sqrt{c},$ where $a,$ $b,$ and $c$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers} and $c$ is not divisible by the \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square} of any \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}. Find $a+b+c.$
 
-
- 
  \textbf{Answer: }179
 
 
@@ -706,8 +665,6 @@ To begin with, we note that there are $2^6$ subsets of $S$(which we can assume i
 
  find $\log_{3}(x_{14}).$
 
-
- 
  \textbf{Answer: }091
 
 
@@ -719,7 +676,6 @@ Let $y_n = \log_3 (x_n)$. The second equation tells us that $y_7 = 56$, since th
  Then, since $\{y_n\}$ is an arithmetic sequence, we find 
  \[\sum_{i=0}^{7}y_i=4(y_0+56)=308 \implies y_0=21 \implies y_{14}=2y_7-y_0=\boxed{091}\]
 
- 
 
 
 
@@ -808,8 +764,6 @@ Let $\log_3(x_n)=a_n$. Our goal is to find $a_{14}$. Since the sequence consists
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }640
 
 
@@ -850,8 +804,6 @@ If we label the bottom row of values $a_1,a_2,\ldots,a_11$ then the sum of the b
 
 	\item (\textit{AIME II 2007}) Let $f(x)$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Polynomial}{polynomial} with real \href{https://artofproblemsolving.com/wiki/index.php?title=Coefficient}{coefficients} such that $f(0) = 1,$ $f(2)+f(3)=125,$ and for all $x$, $f(x)f(2x^{2})=f(2x^{3}+x).$ Find $f(5).$
 
-
- 
  \textbf{Answer: }676
 
 
@@ -902,7 +854,6 @@ Let $\alpha$ be a root of $f(x)$, so $f(\alpha) = 0$. Substituting $\alpha$ into
  Finally, evaluate the polynomial at $x = 5$:
  \[f(5) = (5^2+1)^2 = 26^2 = \mathbf{676}\]
 
- 
 
 
 
@@ -930,7 +881,6 @@ Let $r$ be a root of $f(x).$ This means that $f(r)f(2r^2)=f(2r^3+r).$ In other w
 
  This means that $f(x)=c,$ for some constant $c.$ In other words, $c^2=c.$ We can easily find that this means that $c=0,1.$Combining all the cases, we conclude that $f(x)=(x^2+1)^n,0,1$ are the only polynomials that satisfy this equation.Now, we can test! $f(x)=0,1$ obviously don't satisfy $f(2)+f(3)=125.$ Thus, $f(x)=(x^2+1)^n.$ Substituting, we find that $5^n+10^n=125\Leftrightarrow n=2.$ We conclude that $f(5)=(5^2+1)^2=26^2=\boxed{676}.$
 
- 
 
 
 
@@ -944,13 +894,10 @@ We find $f(1)f(2)=f(3)$, so
  Thus, so does $f$, and our answer is 
  \[f(5)=g(5)^2=(5^2+1)^2=\boxed{676}\]
 
- 
 
 
 	\item (\textit{AIME II 2007}) Four \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circles} $\omega,$ $\omega_{A},$ $\omega_{B},$ and $\omega_{C}$ with the same \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} are drawn in the interior of \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} $ABC$ such that $\omega_{A}$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent}{tangent} to sides $AB$ and $AC$, $\omega_{B}$ to $BC$ and $BA$, $\omega_{C}$ to $CA$ and $CB$, and $\omega$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Externally\_tangent}{externally tangent} to $\omega_{A},$ $\omega_{B},$ and $\omega_{C}$. If the sides of triangle $ABC$ are $13,$ $14,$ and $15,$ the radius of $\omega$ can be represented in the form $\frac{m}{n}$, where $m$ and $n$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime} positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }389
 
 
@@ -1078,7 +1025,6 @@ According to the diagram, it is easily to see that there is a small triangle mad
 
  The homethety turned out to be $\mathcal{H} \left(I, \dfrac{64}{129}\right)$
 
- 
 
 
 

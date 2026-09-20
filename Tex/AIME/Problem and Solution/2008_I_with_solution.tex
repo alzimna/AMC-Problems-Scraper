@@ -49,14 +49,12 @@ Let the number of girls be $g$. Let the number of total people originally be $t$
  Now we can sub in $30t=50g$ by multiplying the first equation by $10$. We can plug this into our second equation.
 
  $30t=29t+580$
-
- $t=580$
+$t=580$
 
  We know that there were originally $580$ people. Of those, $\frac{2}{5}*580=232$ like to dance.
 
  We also know that with these people, $20$ boys joined, all of whom like to dance. We just simply need to add $20$ to get $232+20=\boxed{252}$
 
- 
 
 
 
@@ -65,7 +63,6 @@ Let the number of girls be $g$. Let the number of total people originally be $t$
 Let $p$ denote the total number of people at the party. Then, because we know the proportions of boys to $p$ both before and after 20 boys arrived, we can create the following equation:
  \[0.4p+20 = 0.42(p+20)\]Solving for p gives us $p=580$, so the solution is $0.4p+20 = \boxed{252}$
 
- 
 
 
 
@@ -161,21 +158,18 @@ We see that $y^2 \equiv x^2 + 4 \pmod{6}$. By \href{https://artofproblemsolving.
 
  Testing $x = 6$ and other multiples of $6$, we quickly find that $x = 18, y = 62$ is the solution. $18+62=\boxed{080}$
 
- 
 
 
 
 \textbf{Solution 4}
 
 We solve for x: $x^2 + 84x + 2008-y^2 = 0$
-
- $x=\dfrac{-84+\sqrt{84^2-4\cdot 2008+4y^2}}{2}=-42+\sqrt{y^2-244}$
+$x=\dfrac{-84+\sqrt{84^2-4\cdot 2008+4y^2}}{2}=-42+\sqrt{y^2-244}$
 
  So $y^2-244$ is a perfect square. Since 244 is even, the difference $\sqrt{y^2-244} -y^2$ is even, so we try $y^2-244=(y-2)^2$: $-244=-4y+4$, $y=62$.
 
  Plugging into our equation, we find that $x=18$, and $(x,y)=(18,62)$ indeed satisfies the original equation. $x+y=\boxed{080}$
 
- 
 
 
 
@@ -319,8 +313,6 @@ The difference between consecutive squares is $(x + 1)^2 - x^2 = 2x + 1$, which 
  
  \[\arctan\frac {1}{3} + \arctan\frac {1}{4} + \arctan\frac {1}{5} + \arctan\frac {1}{n} = \frac {\pi}{4}.\]
 
-
- 
  \textbf{Answer: }047
 
 
@@ -366,7 +358,6 @@ Adding a series of angles is the same as multiplying the complex numbers whose a
 
 You could always just bash out $\sin(a+b+c)$ (where a,b,c,n are the angles of the triangles respectively) using the sum identities again and again until you get a pretty ugly radical and use a triangle to get $\cos(a+b+c)$ and from there you use a sum identity again to get $\sin(a+b+c+n)$ and using what we found earlier you can find $\tan(n)$ by division that gets us $\frac{23}{24}$
 
- 
 
 
 
@@ -418,8 +409,7 @@ Let's make two observations. We are trying to find the number of ways we can add
  Case IV: 5 zeroes, 3 threes, and 2 ones.This is the same as case $3$, so also $2520$ possibilities.
 
  $90+2520+2520=5130$
-
- $5130$ has three powers of $3$, so $5130$ divided by $27$ is $\boxed{190}$.
+$5130$ has three powers of $3$, so $5130$ divided by $27$ is $\boxed{190}$.
 
  -jackshi2006
 
@@ -435,7 +425,6 @@ Note we are placing 10 crates where each "height" is 3, 4, 6 and we want all the
  \[\sum_{a+b+c=10}\binom{10}{a,b,c}1^ax^bx^{3c}\]If we want the coefficient of $x^{11}$ then we need $b + 3c = 11.$ with $b + c \le 10$(from the multinomial expansion).This has the solutions $(b, c) = \{8, 1\}, \{5, 2\}, \{2, 3\}.$ Note that the denominator of the answer is just $3^{10}$ since there are 3 ways to orientate every crate and there are 10 creates. Thus, our answer is 
  \[\frac{\binom{10}{8,1,1} + \binom{10}{5,2,3} + \binom{10}{2,3,5}}{3^{10}} = \frac{190}{3^7} \rightarrow \boxed{190}\]
 
- 
 
 
 	\item (\textit{AIME I 2008}) Let $ABCD$ be an isosceles trapezoid with $\overline{AD}||\overline{BC}$ whose angle at the longer base $\overline{AD}$ is $\dfrac{\pi}{3}$. The diagonals have length $10\sqrt {21}$, and point $E$ is at distances $10\sqrt {7}$ and $30\sqrt {7}$ from vertices $A$ and $D$, respectively. Let $F$ be the foot of the altitude from $C$ to $\overline{AD}$. The distance $EF$ can be expressed in the form $m\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$.
@@ -450,7 +439,6 @@ Note we are placing 10 crates where each "height" is 3, 4, 6 and we want all the
 
 
 
- 
 
 
 	\item (\textit{AIME I 2008}) Consider sequences that consist entirely of $A$'s and $B$'s and that have the property that every run of consecutive $A$'s has even length, and every run of consecutive $B$'s has odd length. Examples of such sequences are $AA$, $B$, and $AABAA$, while $BBAB$ is not such a sequence. How many such sequences have length 14?
@@ -577,7 +565,6 @@ Let $n$ be the number of car lengths that separates each car (it is easy to see 
 
 Disclaimer: This is for the people who may not understand calculus, and is also how I did it.First, we assume several things. First, we assume the speeds must be multiples of 15 to maximize cars, because any less will be a waste. Second, we start with one car in front of the photoelectric eye.We first set the speed of the cars as $15k$. Then, the distance between them is $\frac{4}{1000} \times k\text{km}$. Therefore, it takes the car closest to the eye not on the eye $\frac{\frac{k}{250}}{15k}$ hours to get to the eye. There is one hour, so the amount of cars that can pass is $\frac{1}{\frac{\frac{k}{250}}{15k}}$, or $3750$ cars. When divided by ten, you get the quotient of $\boxed{375}$
 
- 
 
 
 
@@ -638,7 +625,6 @@ So, $3a_1 + 3a_2 + 2a_4 = 0$, or equivalently $a_4 = -\frac{3(a_1 + a_2)}{2}$.
                     \end{figure}
                     
 
- 
 
 
 
@@ -656,14 +642,12 @@ Consider the cross section of $z = p(x, y)$ on the plane $z = 0$. We realize tha
 
  At this point, we consider that $p_1$ and $p_2$ both must have $\left(\frac{a}{c}, \frac{b}{c}\right)$ as a zero. A quick graph of the 4 lines and the ellipse used to create $p_1$ and $p_2$ gives nine intersection points. Eight of them are the given ones, and the ninth is $\left(\frac{5}{19}, \frac{16}{19}\right)$. The last intersection point can be found by finding the intersection points of $y = \frac{2}{3}x + \frac{2}{3}$ and $x^2 + xy + y^2 = 1$.Finally, just add the values of $a$, $b$, and $c$ to get $5 + 16 + 19 = \boxed{040}$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2008_13_Solution_Figure_2.png}
                     \end{figure}
                     
 
- 
 
 
 
@@ -674,25 +658,18 @@ We can plug in the values to obtain
  
  \[p(0,0)=0\Longrightarrow a_0=0\]
 
- 
  \[p(1,0)=0\Longrightarrow a_1+a_3+a_6=0\]
 
- 
  \[p(0,1)=0\Longrightarrow a_2+a_5+a_9=0\]
 
- 
  \[p(-1,0)=0\Longrightarrow a_1-a_3+a_6=0\]
 
- 
  \[p(0,-1)=0\Longrightarrow a_2-a-5+a_9=0\]
 
- 
  \[p(1,1)=0\Longrightarrow a_4+a_7+a_8=0\]
 
- 
  \[p(1,-1)=0\Longrightarrow a_4+a_7-a_8=0\]
 
- 
  \[p(2,2)=0\Longrightarrow2a_4=3a_6+3a_9\Leftrightarrow2a_4+3a_1+3a_2=0.\] 
 
  Now, this means that 
@@ -717,10 +694,6 @@ We can plug in the values to obtain
 
  Plugging this into the first equation, and factoring, and cancelling $(x+1)$, and simplifying, we get $19x^2 -43x+10=0$, so we find that $(x,y)=\left(\frac{5}{19},\frac{16}{19}\right)\Longrightarrow a+b+c=5+16+19=\boxed{40}.$
 
- 
-
-
- 
 
 
 	\item (\textit{AIME I 2008}) Let $\overline{AB}$ be a diameter of circle $\omega$. Extend $\overline{AB}$ through $A$ to $C$. Point $T$ lies on $\omega$ so that line $CT$ is tangent to $\omega$. Point $P$ is the foot of the perpendicular from $A$ to line $CT$. Suppose $\overline{AB} = 18$, and let $m$ denote the maximum possible length of segment $BP$. Find $m^{2}$.
@@ -833,7 +806,6 @@ Let $h$ be the distance from $A$ to $CT$. Observe that $h$ takes any value from 
 
  We compute $PT = \sqrt{r^2 - (r - h)^2} = \sqrt{h(2r - h)},$and so $BP^2 = PQ^2 + BQ^2 = 4PT^2 + BQ^2 = 4h(2r - h) + (2r-h)^2 = (2r-h)(2r + 3h)$.This is $\frac{1}{3}(6r - 3h)(2r + 3h) \le \frac{1}{3} \cdot \left( \frac{8r}{2} \right)^2$. Equality is attained, so thus we extract the answer of $\frac{16 \cdot 9^2}{3} = 27 \cdot 16 = \boxed{432}.$
 
- 
 
 
 
@@ -851,10 +823,8 @@ Let $h$ be the distance from $A$ to $CT$. Observe that $h$ takes any value from 
  We can see that $AP = \frac{9x}{x+9}$. From the Law of Cosines, we can now find the length of BP.
 
  $BP^2 = (\frac{9x}{x+9})^2 + 18^2 - 2(18)(\frac{9x}{x+9})(-\frac{9}{x+9})$
-
- $BP^2 = 81(\frac{x^2}{(x+9)^2} + 4 + \frac{36x}{(x+9)^2})$
-
- $BP^2 = 81(\frac{x^2+36x}{(x+9)^2}+4)$
+$BP^2 = 81(\frac{x^2}{(x+9)^2} + 4 + \frac{36x}{(x+9)^2})$
+$BP^2 = 81(\frac{x^2+36x}{(x+9)^2}+4)$
 
  From here, we see that the value we need to maximize is $\frac{x^2+36x}{(x+9)^2}$. We shall now do some calculus. Let $f(x) = \frac{x^2+36x}{(x+9)^2}$. We need to find the first derivative. Using the quotient rule $(\frac{u}{v})' = \frac{u'v - uv'}{v^2}$, we can find the derivative which is:
 
@@ -867,24 +837,19 @@ Let $h$ be the distance from $A$ to $CT$. Observe that $h$ takes any value from 
  Now we find the critical point by setting $f'(x)$ to zero and solve for x.
 
  $-18x + 324 = 0$
-
- $-18x = -324$
-
- $x = 18$
+$-18x = -324$
+$x = 18$
 
  We now plug this value of x back into the function to find the max value of f(x)
 
  $f(18) = \frac{18^2+36(18)}{27^2}$
-
- $f(18) = \frac{4}{3}$
+$f(18) = \frac{4}{3}$
 
  We now go back to the formula for $BP^2$ and plug in $\frac{4}{3}$ for that ugly fraction.
 
  $BP^2 = 81(\frac{4}{3}+4)$
-
- $BP^2 = 81(\frac{16}{3})$
-
- $BP^2 = 432$
+$BP^2 = 81(\frac{16}{3})$
+$BP^2 = 432$
 
  Thus, the value of $m^2$ (or $BP^2$) with the maximum value of $m$ is $\boxed{432}$.
 
@@ -901,7 +866,6 @@ Let $h$ be the distance from $A$ to $CT$. Observe that $h$ takes any value from 
                     \end{figure}
                     
 
- 
  \textbf{Answer: }871
 
 
@@ -920,7 +884,6 @@ In the original picture, let $P$ be the corner, and $M$ and $N$ be the two point
  \begin{align*}PG&=\frac{PR}{\sqrt{2}}=\frac{\sqrt{17}+\sqrt{51}}{2}\\ MG=PG-PM&=\frac{\sqrt{17}+\sqrt{51}}{2}-\sqrt{17}=\frac{\sqrt{51}-\sqrt{17}}{2}\end{align*}
 
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2008_15_Solution_Figure_1.png}
@@ -978,9 +941,8 @@ Let $A$ be a corner of the square. Let $B$ and $C$ be the points where the cuts 
  \[\begin{pmatrix} p_1 \\ p_2 \\ p_3 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}=\begin{pmatrix} p_1 \\ p_2 \\ p_3 \end{pmatrix}\cdot\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}=\sqrt{34}\cos 105^\circ.\]This leads to $p_1=p_2=\sqrt{34}\cos 105^\circ.$ Also, since $\|\overrightarrow{P}\|=\sqrt{34},$ we have \begin{align*}p_3^2&=34-(p_1^2+p_2^2)\\&=34-2\cdot(\sqrt{34}\cos 105^\circ)^2\\&=34(1-2\cos^2 105^\circ)\\&=-34\cos 210^\circ\\&=34\cos 30^\circ\\&=34\frac{\sqrt{3}}{2}\\&=17\sqrt{3}\\&=\sqrt{867}.\\\end{align*}
 
 
- Thus, $p_3=\sqrt[4]{867}$ and $m+n=\boxed{871}.$ 
+ Thus, $p_3=\sqrt[4]{867}$ and $m+n=\boxed{871}.$
 
- 
 
 
 \end{enumerate}

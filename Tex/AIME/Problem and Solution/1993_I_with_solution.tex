@@ -189,7 +189,6 @@ We can plug $93$ in for $bc - ad$ to get $186$ on the left side, and also observ
 
  Thus, the answer is $405 + 465 = \boxed{870}$
 
- 
 
 
 
@@ -239,7 +238,6 @@ Assume $d = x+m, a = x-m, c = x+n$, and $b = x-n$. This clearly satisfies the co
 
  This gives us either $47 < x < 453$ or $17 < x < 483$, and using simple counting, there are $405$ values for $x$ in the first case and $465$ values for $x$ in the second case, and hence our answer is $405+465 = \boxed{870}$
 
- 
 
 
 	\item (\textit{AIME I 1993}) Let $P_0(x) = x^3 + 313x^2 - 77x - 8\,$.  For integers $n \ge 1\,$, define $P_n(x) = P_{n - 1}(x - n)\,$.  What is the coefficient of $x\,$ in $P_{20}(x)\,$?
@@ -263,12 +261,12 @@ Using the formula for the sum of the first $n$ numbers, $1 + 2 + \cdots + 20 = \
  Substituting $x - 210$ into the function definition, we get $P_0(x-210) = (x - 210)^3 + 313(x - 210)^2 - 77(x - 210) - 8$. We only need the coefficients of the linear terms, which we can find by the \href{https://artofproblemsolving.com/wiki/index.php?title=Binomial\_theorem}{binomial theorem}. 
 
  
-                \begin{itemize}
-                    \item $(x-210)^3$ will have a linear term of ${3\choose1}210^2x = 630 \cdot 210x$.\item $313(x-210)^2$ will have a linear term of $-313 \cdot {2\choose1}210x = -626 \cdot 210x$.\item $-77(x-210)$ will have a linear term of $-77x$.
-                \end{itemize}
-
-
-                Adding up the coefficients, we get $630 \cdot 210 - 626 \cdot 210 - 77 = \boxed{763}$.
+            \begin{itemize}
+        \item $(x-210)^3$ will have a linear term of ${3\choose1}210^2x = 630 \cdot 210x$.
+        \item $313(x-210)^2$ will have a linear term of $-313 \cdot {2\choose1}210x = -626 \cdot 210x$.
+        \item $-77(x-210)$ will have a linear term of $-77x$.
+            \end{itemize}
+            Adding up the coefficients, we get $630 \cdot 210 - 626 \cdot 210 - 77 = \boxed{763}$.
 
  
 
@@ -332,15 +330,12 @@ Let the desired integer be $n$. From the information given, it can be determined
 
  This can be rewritten as the following congruences:
 
- $n \equiv 0 \pmod{9}$ 
-
- $n \equiv 5 \pmod{10}$
-
- $n \equiv 0 \pmod{11}$
+ $n \equiv 0 \pmod{9}$
+$n \equiv 5 \pmod{10}$
+$n \equiv 0 \pmod{11}$
 
  Since 9 and 11 are relatively prime, n is a multiple of 99. It can then easily be determined that the smallest multiple of 99 with a units digit 5 (this can be interpreted from the 2nd congruence) is $\boxed{495}$
 
- 
 
 
 
@@ -398,22 +393,24 @@ There is a total of $P(1000,6)$ possible ordered $6$-tuples $(a_1,a_2,a_3,b_1,b_
 
  There are $C(1000,6)$ possible sets $\{a_1,a_2,a_3,b_1,b_2,b_3\}.$ We have five valid cases for the increasing order of these six elements:
 
- <ol style="margin-left: 1.5em;"> \item $aaabbb$ 
+ 
+            \begin{enumerate} 
+        \item $aaabbb$
 
- \item $aababb$ 
+        \item $aababb$
 
- \item $aabbab$ 
+        \item $aabbab$
 
- \item $abaabb$ 
+        \item $abaabb$
 
- \item $ababab$
+        \item $ababab$
 
- </ol>Note that the $a$'s are different from each other, as there are $3!=6$ ways to permute them as $a_1,a_2,$ and $a_3.$ Similarly, the $b$'s are different from each other, as there are $3!=6$ ways to permute them as $b_1,b_2,$ and $b_3.$
+            \end{enumerate}
+            Note that the $a$'s are different from each other, as there are $3!=6$ ways to permute them as $a_1,a_2,$ and $a_3.$ Similarly, the $b$'s are different from each other, as there are $3!=6$ ways to permute them as $b_1,b_2,$ and $b_3.$
 
  So, there is a total of $C(1000,6)\cdot5\cdot6^2$ valid ordered $6$-tuples. The requested probability is 
  \[p=\frac{C(1000,6)\cdot5\cdot6^2}{P(1000,6)}=\frac{C(1000,6)\cdot5\cdot6^2}{C(1000,6)\cdot6!}=\frac14,\] from which the answer is $1+4=\boxed{005}.$
 
- 
 
 
 
@@ -422,12 +419,12 @@ There is a total of $P(1000,6)$ possible ordered $6$-tuples $(a_1,a_2,a_3,b_1,b_
 Call the six numbers selected $x_1 > x_2 > x_3 > x_4 > x_5 > x_6$. Clearly, $x_1$ must be a dimension of the box, and $x_6$ must be a dimension of the brick. 
 
  
-                \begin{itemize}
-                    \item If $x_2$ is a dimension of the box, then any of the other three remaining dimensions will work as a dimension of the box. That gives us $3$ possibilities.\item If $x_2$ is not a dimension of the box but $x_3$ is, then both remaining dimensions will work as a dimension of the box. That gives us $2$ possibilities.\item If $x_4$ is a dimension of the box but $x_2,x_3$ aren’t, there are no possibilities (same for $x_5$).
-                \end{itemize}
-
-
-                The total number of arrangements is ${6\choose3} = 20$; therefore, $p = \frac{3 + 2}{20} = \frac{1}{4}$, and the answer is $1 + 4 = \boxed{005}$.
+            \begin{itemize}
+        \item If $x_2$ is a dimension of the box, then any of the other three remaining dimensions will work as a dimension of the box. That gives us $3$ possibilities.
+        \item If $x_2$ is not a dimension of the box but $x_3$ is, then both remaining dimensions will work as a dimension of the box. That gives us $2$ possibilities.
+        \item If $x_4$ is a dimension of the box but $x_2,x_3$ aren’t, there are no possibilities (same for $x_5$).
+            \end{itemize}
+            The total number of arrangements is ${6\choose3} = 20$; therefore, $p = \frac{3 + 2}{20} = \frac{1}{4}$, and the answer is $1 + 4 = \boxed{005}$.
 
  Note that the $1000$ in the problem, is not used, and is cleverly bypassed in the solution, because we can call our six numbers $x_1,x_2,x_3,x_4,x_5,x_6$ whether they may be $1,2,3,4,5,6$ in some order or $999,5,3,998,997,891$ in some order.
 
@@ -475,8 +472,6 @@ In order (after rotation, of course), for the brick to fit in the box, we must h
 
 	\item (\textit{AIME I 1993}) Let $S\,$ be a set with six elements. In how many different ways can one select two not necessarily distinct subsets of $S\,$ so that the union of the two subsets is $S\,$?  The order of selection does not matter; for example, the pair of subsets $\{a, c\},\{b, c, d, e, f\}$ represents the same selection as the pair $\{b, c, d, e, f\},\{a, c\}.$
 
-
- 
  \textbf{Answer: }365
 
 
@@ -487,7 +482,6 @@ Call the two subsets $m$ and $n.$ For each of the elements in $S,$ we can assign
 
  Note: because we can order selections $A$ and $B$ in two ways, but since order does not matter in the problem, we should only count them once, ie we need to divide by two. We first need to subtract one for the count $3^6-1$ because there is one case in which $A$ and $B$ are identical and so while the rest of the “different” cases are counted twice, this one was only counted once so we should subtract one from the total count, divide by two, and add back that distinct one case. Or we could just add one, making all of the problem’s different cases counted twice, and divide it all by two, which is $\frac{3^6+1}{2}=365.$
 
- 
 
 
 
@@ -495,7 +489,6 @@ Call the two subsets $m$ and $n.$ For each of the elements in $S,$ we can assign
 
 Given one of ${6 \choose k}$ subsets with $k$ elements, the other also has $2^k$ possibilities; this is because it must contain all of the "missing" $n - k$ elements and thus has a choice over the remaining $k.$ We want $\sum_{k = 0}^6 {6 \choose k}2^k = (2 + 1)^6 = 729$ by the Binomial Theorem. But the order of the sets doesn't matter, so we get $\dfrac{729 - 1}{2} + 1 = \boxed{365}.$
 
- 
 
 
 
@@ -531,16 +524,14 @@ which resembles the result in Solutions 1 and 2. The answer is $f(6)=\boxed{365}
  As $f(0)=1,$ note that 
  \[f(n)=\frac{3^n-1}{2}+1\] holds for $n=0$ too. Therefore, this formula is true for all nonnegative integers $n.$
 
- 
 
 
 
 \textbf{Solution 4 (Casework)}
 
 We can perform casework based on the number of overlapping elements. If no elements overlap, there is $\binom60=1$ way to choose the overlapping elements, and $2^{6-0}$ ways to distribute the remaining elements--each element can go in one subset or the other. We must also divide by $2$ because the order of the subsets does not matter. Proceeding similarly for the other cases, our sum is 
- \[\dbinom{6}0 \cdot 2^5+\dbinom{6}1 \cdot 2^4+\cdots +\dbinom{6}4 \cdot 2+\dbinom{6}5 \cdot 1+\dbinom{6}6 \cdot 1.\](Note that we have to be especially careful with the last case, as it does not follow the pattern of the other cases.) Adding these up gives a total of $\boxed{365}.$ 
+ \[\dbinom{6}0 \cdot 2^5+\dbinom{6}1 \cdot 2^4+\cdots +\dbinom{6}4 \cdot 2+\dbinom{6}5 \cdot 1+\dbinom{6}6 \cdot 1.\](Note that we have to be especially careful with the last case, as it does not follow the pattern of the other cases.) Adding these up gives a total of $\boxed{365}.$
 
- 
 
 
 
@@ -560,7 +551,6 @@ Now we start computing, $0\rightarrow6$ is just $1$ case, $1\rightarrow5\mid6$ i
 
  Summing case by case, we have $1+12+60+150+120+21+1 = \boxed{365}.$
 
- 
 
 
 	\item (\textit{AIME I 1993}) Two thousand points are given on a circle. Label one of the points 1. From this point, count 2 points in the clockwise direction and label this point 2. From the point labeled 2, count 3 points in the clockwise direction and label this point 3. (See figure.) Continue this process until the labels $1,2,3\dots,1993\,$ are all used. Some of the points on the circle will have more than one label and some points will not have a label. What is the smallest integer that labels the same point as 1993? 
@@ -573,8 +563,6 @@ Now we start computing, $0\rightarrow6$ is just $1$ case, $1\rightarrow5\mid6$ i
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }118
 
 
@@ -680,15 +668,11 @@ The probability that the $n$th flip in each game occurs and is a head is $\frac{
 
  Using these \href{https://artofproblemsolving.com/wiki/index.php?title=Recursion}{recursive} equations: 
 
- $(a_2,b_2)=\left(\frac{4}{9}, \frac{5}{9}\right)$ 
-
- $(a_3,b_3)=\left(\frac{14}{27}, \frac{13}{27}\right)$
-
- $(a_4,b_4)=\left(\frac{40}{81}, \frac{41}{81}\right)$ 
-
- $(a_5,b_5)=\left(\frac{122}{243}, \frac{121}{243}\right)$ 
-
- $(a_6,b_6)=\left(\frac{364}{729}, \frac{365}{729}\right)$ 
+ $(a_2,b_2)=\left(\frac{4}{9}, \frac{5}{9}\right)$
+$(a_3,b_3)=\left(\frac{14}{27}, \frac{13}{27}\right)$
+$(a_4,b_4)=\left(\frac{40}{81}, \frac{41}{81}\right)$
+$(a_5,b_5)=\left(\frac{122}{243}, \frac{121}{243}\right)$
+$(a_6,b_6)=\left(\frac{364}{729}, \frac{365}{729}\right)$ 
 
  Since $a_6=\frac{364}{729}$, $m+n = 1093 \equiv \boxed{093} \pmod{1000}$.
 
@@ -848,8 +832,7 @@ Since $L_1$ is the only point that can possibly influence the $x$ coordinate oth
  If $L_1 = (0,0)$, then $k = 2^6\cdot14 = 64\cdot14 > 40\cdot14 = 560$, 
 
  so it can only be that $L_1 = (560,0)$, and $k + 560 = 2^6\cdot14$
-
- $\implies k = 64\cdot14 - 40\cdot14 = 24\cdot14 = 6\cdot56 = 336$.
+$\implies k = 64\cdot14 - 40\cdot14 = 24\cdot14 = 6\cdot56 = 336$.
 
  
 Now, considering the $y$ coordinate, note that if any of $L_2,L_3,L_4$ are $(0,0)$ ($L_2$ would influence the least, so we test that), 
@@ -859,20 +842,13 @@ Now, considering the $y$ coordinate, note that if any of $L_2,L_3,L_4$ are $(0,0
  which would mean that $P_1 > 2^6\cdot(92 - 80) = 64\cdot12 > 42\cdot10 = 420\ge m$, so $L_2,L_3,L_4 = (0,420)$, 
 
  and now $\frac {P_1}{64} + \frac {420}{2^5} + \frac {420}{2^4} + \frac {420}{2^3} = 92$
-
- $\implies P_1$
-
- $= 64\cdot92 - 420(2 + 4 + 8)$
-
- $= 64\cdot92 - 420\cdot14= 64(100 - 8) - 14^2\cdot30$
-
- $= 6400 - 512 - (200 - 4)\cdot30$
-
- $= 6400 - 512 - 6000 + 120$
-
- $= - 112 + 120$
-
- $= 8$, 
+$\implies P_1$
+$= 64\cdot92 - 420(2 + 4 + 8)$
+$= 64\cdot92 - 420\cdot14= 64(100 - 8) - 14^2\cdot30$
+$= 6400 - 512 - (200 - 4)\cdot30$
+$= 6400 - 512 - 6000 + 120$
+$= - 112 + 120$
+$= 8$, 
 
  and finally, $k + m = 336 + 8 = \boxed{344}$.
 
@@ -897,7 +873,6 @@ Consider the unit cicle of radius 50. Assume that they start at points $(-50,100
  \[y=\frac{xt}{100}\] into $(1)$ and solve for $t$ to get 
  \[t=\frac{160}{3}.\] Finally, the sum of the numerator and denominator is $160+3=\boxed{163}.$
 
- 
 
 
 
@@ -983,7 +958,6 @@ We can use areas to find the answer. Since Jenny and Kenny are 200 feet apart, w
  
  \[[OJK] + [AJOF] + [OFBK] = [ABKJ]\]
 
- 
  \[50 \sqrt{x^2 + 10000} + \frac{x+50}{2} \cdot 100 + \frac{3x+50}{2} \cdot 100 = \frac{x+3x}{2} \cdot 200\]
 
  After isolating the radical, dividing by 50, and squaring, we obtain: $15x^2 - 800x = 0 \Rightarrow x = \frac{160}{3}$.
@@ -1047,7 +1021,6 @@ Put the rectangle on the coordinate plane so its vertices are at $(\pm4,\pm3)$, 
  \[2\left(\sqrt{(4-\sqrt7)^2+3^2}+\sqrt{(4+\sqrt7)^2+3^2}\right)=4\left(\sqrt{8-2\sqrt7}+\sqrt{8+2\sqrt7}\right)\] 
  \[=4(\sqrt7-1+\sqrt7+1)=8\sqrt7=\sqrt{448}.\] Therefore $N$ would equal $\boxed{448}.$
 
- 
 
 
 

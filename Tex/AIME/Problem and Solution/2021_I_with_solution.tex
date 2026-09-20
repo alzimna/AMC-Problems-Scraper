@@ -12,17 +12,20 @@
 
 For the next five races, Zou wins four and loses one. Let $W$ and $L$ denote a win and a loss, respectively. There are five possible outcome sequences for Zou:
 
- <ol style="margin-left: 1.5em;"> \item $LWWWW$ 
+ 
+            \begin{enumerate} 
+        \item $LWWWW$
 
- \item $WLWWW$ 
+        \item $WLWWW$
 
- \item $WWLWW$ 
+        \item $WWLWW$
 
- \item $WWWLW$ 
+        \item $WWWLW$
 
- \item $WWWWL$
+        \item $WWWWL$
 
- </ol>We proceed with casework:
+            \end{enumerate}
+            We proceed with casework:
 
  \textbf{<u>Case (1): Sequences \#1-4, in which Zou does not lose the last race.</u>}
 
@@ -41,7 +44,6 @@ For the next five races, Zou wins four and loses one. Let $W$ and $L$ denote a w
  The requested probability is 
  \[4\left(\frac13\right)^2\left(\frac23\right)^3+\left(\frac13\right)^1\left(\frac23\right)^4=\frac{32}{243}+\frac{16}{243}=\frac{48}{243}=\frac{16}{81},\] from which the answer is $16+81=\boxed{097}.$
 
- 
 
 
 
@@ -79,7 +81,6 @@ We have $5$ cases, depending on which race Zou lost. Let $\text{W}$ denote a won
 
 Note that Chou wins one race. The probability that he wins the last race is $\left(\frac{2}{3}\right)^4\left(\frac{1}{3}\right)=\frac{16}{243}.$ Now, if he doesn't win the last race, then there must be two races where the winner of the previous race loses. We can choose any $4$ of the middle races for Chou to win. So the probability for this case is $4\left(\frac{2}{3}\right)^3\left(\frac{1}{3}\right)^2=\frac{32}{243}.$ Thus, the answer is $\frac{16}{243}+\frac{32}{243}=\frac{16}{81}\implies\boxed{097}.$
 
- 
 
 
 	\item (\textit{AIME I 2021}) In the diagram below, $ABCD$ is a rectangle with side lengths $AB=3$ and $BC=11$, and $AECF$ is a rectangle with side lengths $AF=7$ and $FC=9,$ as shown. The area of the shaded region common to the interiors of both rectangles is $\frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -92,8 +93,6 @@ Note that Chou wins one race. The probability that he wins the last race is $\le
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }109
 
 
@@ -107,8 +106,6 @@ Let
 
 	\item (\textit{AIME I 2021}) Find the number of positive integers less than $1000$ that can be expressed as the difference of two integral powers of $2.$
 
-
- 
  \textbf{Answer: }050
 
 
@@ -129,12 +126,10 @@ We want to find the number of positive integers $n<1000$ which can be written in
 
 
  
-                \begin{itemize}
-                    \item Note: The uniqueness of binary representation could be rather easily proven, but if you cannot convince yourself on the spot that this is the case, consider the following alternative proof. Let $(a_1,b_1) \neq (a_2,b_2)$ where $10 \ge a_1 > b_1 \ge 0$ and $10 \ge a_2 > b_2 \ge 0$ and $2^{a_1}-2^{b_1} = 2^{a_2} - 2^{b_2}$, for the sake of contradiction. Therefore $\deg_{2}(2^{a_1}-2^{b_1})=\deg_{2}(2^{a_2}-2^{b_2})$, or $b_1=b_2$. Plugging in, we see that $2^{a_1}=2^{a_2}$, or $a_1=a_2$, contradiction.
-                \end{itemize}
-
-
-                Note by Ross Gao
+            \begin{itemize}
+        \item Note: The uniqueness of binary representation could be rather easily proven, but if you cannot convince yourself on the spot that this is the case, consider the following alternative proof. Let $(a_1,b_1) \neq (a_2,b_2)$ where $10 \ge a_1 > b_1 \ge 0$ and $10 \ge a_2 > b_2 \ge 0$ and $2^{a_1}-2^{b_1} = 2^{a_2} - 2^{b_2}$, for the sake of contradiction. Therefore $\deg_{2}(2^{a_1}-2^{b_1})=\deg_{2}(2^{a_2}-2^{b_2})$, or $b_1=b_2$. Plugging in, we see that $2^{a_1}=2^{a_2}$, or $a_1=a_2$, contradiction.
+            \end{itemize}
+            Note by Ross Gao
 
  
 
@@ -167,14 +162,16 @@ We look for all positive integers of the form $2^a-2^b<1000,$ where $0\leq b<a.$
 
  We prove this statement as follows:
 
- <ol style="margin-left: 1.5em;"> \item The positive integers generated for each value of $a$ are clearly different. 
+ 
+            \begin{enumerate} 
+        \item The positive integers generated for each value of $a$ are clearly different.
 
- \item For all integers $k$ such that $1\leq k\leq9,$ the largest positive integer generated for $a=k$ is $1$ less than the smallest positive integer generated for $a=k+1.$
+        \item For all integers $k$ such that $1\leq k\leq9,$ the largest positive integer generated for $a=k$ is $1$ less than the smallest positive integer generated for $a=k+1.$
 
- </ol>Together, we have justified our claim in bold. The answer is 
+            \end{enumerate}
+            Together, we have justified our claim in bold. The answer is 
  \[1+2+3+4+5+6+7+8+9+5=\boxed{050}.\]
 
- 
 
 
 
@@ -184,7 +181,6 @@ Because the difference is less than $1000$, we can simply list out all numbers t
 
  Thus, the final answer is $\binom{10}{2} + 5 = \boxed{050}.$
 
- 
 
 
 
@@ -209,7 +205,6 @@ Suppose we have $1$ coin in the first pile. Then $(1, 2, 63), (1, 3, 62), \ldots
  \begin{align*} 31+29+28+26+25+\cdots+4+2+1 &= (31+28+25+22+\cdots+1)+(29+26+23+\cdots+2) \\ &= 176+155 \\ &= \boxed{331}. \end{align*}
 
 
- 
 
 
 
@@ -221,7 +216,6 @@ We make an equation: $a+b+c=66,$ where $a<b<c.$ We don't have a clear solution, 
 
  We then have to divide by $6$ because there are $3!=6$ ways to order $a, b,$ and $c.$ Therefore, we have $\dfrac{\dbinom{65}{2}-96+2}{6} = \dfrac{1986}{6} = \boxed{331}.$
 
- 
 
 
 
@@ -279,10 +273,6 @@ Suppose we start with an equal pile of coins with 21, 21, and 21. There is 3 ext
 
  $\frac{((2\cdot21 + 3\cdot(\frac{20*21}{2})) + -1(10))}{2} = \boxed{331}$
 
- 
-
-
- 
 
 
 
@@ -418,8 +408,6 @@ Following from previous solutions, we derive $3x^2+2a^2=xa^2.$ We divide both si
 
 	\item (\textit{AIME I 2021}) Segments $\overline{AB}, \overline{AC},$ and $\overline{AD}$ are edges of a cube and $\overline{AG}$ is a diagonal through the center of the cube. Point $P$ satisfies $BP=60\sqrt{10}$, $CP=60\sqrt{5}$, $DP=120\sqrt{2}$, and $GP=36\sqrt{7}$. Find $AP.$
 
-
- 
  \textbf{Answer: }192
 
 
@@ -462,7 +450,6 @@ Let $E$ be the vertex of the cube such that $ABED$ is a square.Using the \href{h
                     \end{figure}
                     
 
- 
 
 
 
@@ -474,17 +461,11 @@ where $x$ denotes the side length of the cube. Thus
  \begin{align*}  36\text{,}000+18\text{,}000+28\text{,}800-6x^{2}&=2PA^{2}-6x^{2}+9072 \\  82\text{,}800-6x^{2}&=2PA^{2}-6x^{2}+9072 \\  73\text{,}728&=2PA^{2} \\  36\text{,}864&=PA^{2} \\  PA&=\boxed{192}. \end{align*}
 
 
- 
-
-
- 
 
 
 	\item (\textit{AIME I 2021}) Find the number of pairs $(m,n)$ of positive integers with $1\le m<n\le 30$ such that there exists a real number $x$ satisfying
  \[\sin(mx)+\sin(nx)=2.\]
 
-
- 
  \textbf{Answer: }063
 
 
@@ -617,7 +598,6 @@ The equation implies that $\sin(mx)=\sin(nx)=1$. Therefore, we can write $mx$ as
 
  Adding all the cases up, we obtain $28+21+12+2=\boxed{063}$
 
- 
 
 
 
@@ -667,7 +647,6 @@ It is obvious that $f(x) = \sin(a) + \sin(b) \leq 2$ when equality holds if $a =
 
  Move the sliders around for $1\leq m \leq 29$ and $2\leq m+1\leq n\leq30$ to observe the geometric representation generated by each pair $(m,n).$
 
- 
 
 
 	\item (\textit{AIME I 2021}) Find the number of integers $c$ such that the equation
@@ -690,21 +669,15 @@ We take cases for the outermost absolute value, then rearrange:
                     \end{figure}
                     Since $f(x)=c\pm21$ has $12$ distinct real solutions, it is clear that each case has $6$ distinct real solutions geometrically. We shift the graphs of $y=\pm21$ up $c$ units, where $c\geq0:$
 
- 
-                \begin{itemize}
-                    \item For $f(x)=c+21$ to have $6$ distinct real solutions, we need $0\leq c<79.$
-                \end{itemize}
+            \begin{itemize}
+        \item For $f(x)=c+21$ to have $6$ distinct real solutions, we need $0\leq c<79.$
+            \end{itemize}
+            
+            \begin{itemize}
+        \item For $f(x)=c-21$ to have $6$ distinct real solutions, we need $21<c<121.$
+            \end{itemize}
+            Taking the intersection of these two cases gives $21<c<79,$ from which there are $79-21-1=\boxed{057}$ such integers $c.$
 
-
-                
-                \begin{itemize}
-                    \item For $f(x)=c-21$ to have $6$ distinct real solutions, we need $21<c<121.$
-                \end{itemize}
-
-
-                Taking the intersection of these two cases gives $21<c<79,$ from which there are $79-21-1=\boxed{057}$ such integers $c.$
-
- 
 
 
 
@@ -768,8 +741,6 @@ The discriminant of this equation is
 
 	\item (\textit{AIME I 2021}) Let $ABCD$ be an isosceles trapezoid with $AD=BC$ and $AB<CD.$ Suppose that the distances from $A$ to the lines $BC,CD,$ and $BD$ are $15,18,$ and $10,$ respectively. Let $K$ be the area of $ABCD.$ Find $\sqrt2 \cdot K.$
 
-
- 
  \textbf{Answer: }567
 
 
@@ -793,14 +764,12 @@ Let $\overline{AE}, \overline{AF},$ and $\overline{AG}$ be the perpendiculars fr
  By the Pythagorean Theorem on right $\triangle ADF,$ we have $DF^2+AF^2=AD^2,$ or 
  \[\left(x\cdot\frac{18-y}{y}\right)^2+18^2=\left(\frac{6}{5}x\right)^2. \hspace{7mm} (2)\]Solving this system of equations ($(1)$ and $(2)$), we get $x=\frac{45\sqrt2}{4}$ and $y=\frac{90}{7},$ so $AB=x=\frac{45\sqrt2}{4}$ and $CD=AB+2DF=x+2\left(x\cdot\frac{18-y}{y}\right)=\frac{81\sqrt2}{4}.$ Finally, the area of $ABCD$ is 
  \[K=\frac{AB+CD}{2}\cdot AF=\frac{567\sqrt2}{2},\] from which $\sqrt2 \cdot K=\boxed{567}.$
-
- <u>\textbf{Remark}</u>
+<u>\textbf{Remark}</u>
 
  Instead of solving the system of equations $(1)$ and $(2),$ which can be time consuming, by noting that $\triangle ACF \sim \triangle ABG$ by AA, we could find out $\frac{AB}{AG} = \frac{AC}{AF}$, which gives $AC = \frac{9}{5}x$. We also know that $EB = \sqrt{x^2 - 15^2}$ by Pythagorean Theorem on $\triangle ABE$. From $BC = AD = \frac{6}{5}x,$ we apply the Pythagorean Theorem to $\triangle ACE$ and obtain
  \[AC^2 = (EB+BC)^2 + AE^2.\]Substituting, we get
  \[\frac{81}{25}x^2 = \left(\sqrt{x^2 -225}+\frac{6}{5}x\right)^2+225 \iff x = 3\sqrt{x^2 - 15^2},\]from which $x = \frac{45\sqrt{2}}{4}.$
 
- 
 
 
 
@@ -986,7 +955,6 @@ By the given information, the height of the trapezoid is $18,$ but to avoid nume
  \[10 = \frac{|-ab - b(a+c) + bc|}{\sqrt{b^2 + (a+c)^2}},\]
  \[15 = \frac{|-ab - b(a-c) - bc|}{\sqrt{b^2 + (a-c)^2}}.\]Simplifying and remembering $a,b>0,$
 
- 
  \[10 = \frac{36a}{\sqrt{324+(a+c)^2}},\]
  \[15 = \frac{36a}{\sqrt{324+(a-c)^2}}.\]
 
@@ -996,10 +964,6 @@ By the given information, the height of the trapezoid is $18,$ but to avoid nume
 
  Subtracting the two equations yield $a = \frac{5}{9}c.$ Plugging that back into the first equation gives $324 + \left(\frac{14}{9}c\right)^2 = 4c^2$ or $\frac{128}{81}c^2 = 324, c^2 = \frac{81^2}{32} \rightarrow c = \frac{81}{4\sqrt{2}}.$ Hence $a = \frac{45}{4\sqrt{2}},$ and the area of the trapezoid is $18 \left( \frac{2a + 2c}{2}\right) = 18(a+c) = \frac{18 \cdot 63}{2\sqrt{2}}=\frac{567}{\sqrt{2}}.$ Answer extraction gives $\boxed{567}.$
 
- 
-
-
- 
 
 
 
@@ -1088,7 +1052,6 @@ We know that $a_{1}=\frac{t}{t+1}$ when $t=2020$ so $1$ is a possible value of $
 
  The reason we look for the least $q$ in each case is because after that $q$ or $j$ value, the fraction will simplify to $m/n$ again and it won't follow the condition we defined. For example, in the $a_{2+q}=\frac{1019+18q}{1020+19q}$ case, after $j = 8$, the equation becomes useless because the fraction has simplified to something different, so we "switch over" to $a_{8+q}=\frac{161+18q}{162+19q}.$
 
- 
 
 
 
@@ -1096,16 +1059,14 @@ We know that $a_{1}=\frac{t}{t+1}$ when $t=2020$ so $1$ is a possible value of $
 
 Let $a_{j_1}, a_{j_2}, a_{j_3}, \ldots, a_{j_u}$ be all terms in the form $\frac{t}{t+1},$ where $j_1<j_2<j_3<\cdots<j_u,$ and $t$ is some positive integer.
 
- We wish to find $\sum_{i=1}^{u}{j_i}.$ Suppose $a_{j_i}=\frac{m}{m+1}$ for some positive integer $m.$ 
-
- <i>\textbf{To find $\boldsymbol{a_{j_{i+1}},}$ we look for the smallest positive integer $\boldsymbol{k'}$ for which 
+ We wish to find $\sum_{i=1}^{u}{j_i}.$ Suppose $a_{j_i}=\frac{m}{m+1}$ for some positive integer $m.$
+<i>\textbf{To find $\boldsymbol{a_{j_{i+1}},}$ we look for the smallest positive integer $\boldsymbol{k'}$ for which 
  \[\boldsymbol{a_{j_{i+1}}=a_{j_i+k'}=\frac{m+18k'}{m+1+19k'}}\] is reducible:}</i>
 
  If $\frac{m+18k'}{m+1+19k'}$ is reducible, then there exists a common factor $d>1$ for $m+18k'$ and $m+1+19k'.$ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Euclidean\_algorithm}{Euclidean Algorithm}, we have
  \begin{align*} d\mid m+18k' \text{ and } d\mid m+1+19k' &\implies d\mid m+18k' \text{ and } d\mid k'+1 \\ &\implies d\mid m-18 \text{ and } d\mid k'+1. \end{align*}
 Since $m-18$ and $k'+1$ are not relatively prime, and $m$ is fixed, the smallest value of $k'$ such that $\frac{m+18k'}{m+1+19k'}$ is reducible occurs when $k'+1$ is the smallest prime factor of $m-18.$
-
- <i>\textbf{We will prove that for such value of $\boldsymbol{k',}$ the number $\boldsymbol{a_{j_{i+1}}}$ can be written in the form $\boldsymbol{\frac{t}{t+1}:}$}</i> 
+<i>\textbf{We will prove that for such value of $\boldsymbol{k',}$ the number $\boldsymbol{a_{j_{i+1}}}$ can be written in the form $\boldsymbol{\frac{t}{t+1}:}$}</i> 
  \[a_{j_{i+1}}=a_{j_i+k'}=\frac{m+18k'}{m+1+19k'}=\frac{(m-18)+18(k'+1)}{(m-18)+19(k'+1)}=\frac{\frac{m-18}{k'+1}+18}{\frac{m-18}{k'+1}+19}, \hspace{10mm} (*)\] where $t=\frac{m-18}{k'+1}+18$ must be a positive integer.
 
  We start with $m=2020$ and $a_{j_1}=a_1=\frac{2020}{2021},$ then find $a_{j_2}, a_{j_3}, \ldots, a_{j_u}$ by filling out the table below recursively:
@@ -1122,8 +1083,6 @@ Since $m-18$ and $k'+1$ are not relatively prime, and $m$ is fixed, the smallest
 
 	\item (\textit{AIME I 2021}) Let $ABCD$ be a cyclic quadrilateral with $AB=4,BC=5,CD=6,$ and $DA=7.$ Let $A_1$ and $C_1$ be the feet of the perpendiculars from $A$ and $C,$ respectively, to line $BD,$ and let $B_1$ and $D_1$ be the feet of the perpendiculars from $B$ and $D,$ respectively, to line $AC.$ The perimeter of $A_1B_1C_1D_1$ is $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }301
 
 
@@ -1145,13 +1104,15 @@ This solution refers to the \textbf{Diagram} section.
  \[\frac{A_1B_1}{AB}=\underbrace{\frac{A_1E}{AE}}_{\substack{\text{right} \\ \triangle A_1AE}}=\underbrace{\frac{B_1E}{BE}}_{\substack{\text{right} \\ \triangle B_1BE}}=\cos\theta. \hspace{15mm}(1)\]Similarly, we have $\angle EC_1D_1=\angle ECD$ (both supplementary to $\angle D_1C_1D$) and $\angle ED_1C_1=\angle EDC$ (both supplementary to $\angle C_1D_1C$), from which $\triangle C_1D_1E \sim \triangle CDE$ by AA, with the ratio of similitude 
  \[\frac{C_1D_1}{CD}=\underbrace{\frac{C_1E}{CE}}_{\substack{\text{right} \\ \triangle C_1CE}}=\underbrace{\frac{D_1E}{DE}}_{\substack{\text{right} \\ \triangle D_1DE}}=\cos\theta. \hspace{14.75mm}(2)\]We apply the Transitive Property to $(1)$ and $(2):$
 
- <ol style="margin-left: 1.5em;"> \item We get $\frac{B_1E}{BE}=\frac{C_1E}{CE}=\cos\theta,$ so $\triangle B_1C_1E \sim \triangle BCE$ by SAS, with the ratio of similitude 
- \[\frac{B_1C_1}{BC}=\frac{B_1E}{BE}=\frac{C_1E}{CE}=\cos\theta. \hspace{14.75mm}(3)\] 
+            \begin{enumerate} 
+        \item We get $\frac{B_1E}{BE}=\frac{C_1E}{CE}=\cos\theta,$ so $\triangle B_1C_1E \sim \triangle BCE$ by SAS, with the ratio of similitude 
+ \[\frac{B_1C_1}{BC}=\frac{B_1E}{BE}=\frac{C_1E}{CE}=\cos\theta. \hspace{14.75mm}(3)\]
 
- \item We get $\frac{D_1E}{DE}=\frac{A_1E}{AE}=\cos\theta,$ so $\triangle D_1A_1E \sim \triangle DAE$ by SAS, with the ratio of similitude 
+        \item We get $\frac{D_1E}{DE}=\frac{A_1E}{AE}=\cos\theta,$ so $\triangle D_1A_1E \sim \triangle DAE$ by SAS, with the ratio of similitude 
  \[\frac{D_1A_1}{DA}=\frac{D_1E}{DE}=\frac{A_1E}{AE}=\cos\theta. \hspace{14mm}(4)\]
 
- </ol>From $(1),(2),(3),$ and $(4),$ the perimeter of $A_1B_1C_1D_1$ is
+            \end{enumerate}
+            From $(1),(2),(3),$ and $(4),$ the perimeter of $A_1B_1C_1D_1$ is
  \begin{align*} A_1B_1+B_1C_1+C_1D_1+D_1A_1&=AB\cos\theta+BC\cos\theta+CD\cos\theta+DA\cos\theta \\ &=(AB+BC+CD+DA)\cos\theta \\ &=22\cos\theta. &&\hspace{5mm}(\bigstar) \end{align*}
 Two solutions follow from here:
 
@@ -1166,7 +1127,6 @@ Note that $\cos(180^\circ-\theta)=-\cos\theta$ holds for all $\theta.$ We apply 
  \begin{align*} 2\cdot AE\cdot BE\cdot\cos\theta+2\cdot BE\cdot CE\cdot\cos\theta+2\cdot CE\cdot DE\cdot\cos\theta+2\cdot DE\cdot AE\cdot\cos\theta&=22 \\ 2\cdot\cos\theta\cdot(\phantom{ }\underbrace{AE\cdot BE+BE\cdot CE+CE\cdot DE+DE\cdot AE}_{\text{Use the result from }\textbf{Remark}\text{.}}\phantom{ })&=22 \\ 2\cdot\cos\theta\cdot59&=22 \\ \cos\theta&=\frac{11}{59}. \end{align*}
 Finally, substituting this result into $(\bigstar)$ gives $22\cos\theta=\frac{242}{59},$ from which the answer is $242+59=\boxed{301}.$
 
- 
 
 
 
@@ -1174,14 +1134,17 @@ Finally, substituting this result into $(\bigstar)$ gives $22\cos\theta=\frac{24
 
 Let the brackets denote areas. We find $[ABCD]$ in two different ways:
 
- <ol style="margin-left: 1.5em;"> \item Note that $\sin(180^\circ-\theta)=\sin\theta$ holds for all $\theta.$ By area addition, we get
- \begin{align*} [ABCD]&=[ABE]+[BCE]+[CDE]+[DAE] \\ &=\frac12\cdot AE\cdot BE\cdot\sin\angle AEB+\frac12\cdot BE\cdot CE\cdot\sin\angle BEC+\frac12\cdot CE\cdot DE\cdot\sin\angle CED+\frac12\cdot DE\cdot AE\cdot\sin\angle DEA \\ &=\frac12\cdot AE\cdot BE\cdot\sin\theta+\frac12\cdot BE\cdot CE\cdot\sin\theta+\frac12\cdot CE\cdot DE\cdot\sin\theta+\frac12\cdot DE\cdot AE\cdot\sin\theta \\ &=\frac12\cdot\sin\theta\cdot(\phantom{ }\underbrace{AE\cdot BE+BE\cdot CE+CE\cdot DE+DE\cdot AE}_{\text{Use the result from }\textbf{Remark}\text{.}}\phantom{ }) \\ &=\frac12\cdot\sin\theta\cdot59. \end{align*}
  
+            \begin{enumerate} 
+        \item Note that $\sin(180^\circ-\theta)=\sin\theta$ holds for all $\theta.$ By area addition, we get
+ \begin{align*} [ABCD]&=[ABE]+[BCE]+[CDE]+[DAE] \\ &=\frac12\cdot AE\cdot BE\cdot\sin\angle AEB+\frac12\cdot BE\cdot CE\cdot\sin\angle BEC+\frac12\cdot CE\cdot DE\cdot\sin\angle CED+\frac12\cdot DE\cdot AE\cdot\sin\angle DEA \\ &=\frac12\cdot AE\cdot BE\cdot\sin\theta+\frac12\cdot BE\cdot CE\cdot\sin\theta+\frac12\cdot CE\cdot DE\cdot\sin\theta+\frac12\cdot DE\cdot AE\cdot\sin\theta \\ &=\frac12\cdot\sin\theta\cdot(\phantom{ }\underbrace{AE\cdot BE+BE\cdot CE+CE\cdot DE+DE\cdot AE}_{\text{Use the result from }\textbf{Remark}\text{.}}\phantom{ }) \\ &=\frac12\cdot\sin\theta\cdot59. \end{align*}
 
- \item By Brahmagupta's Formula, we get 
+
+        \item By Brahmagupta's Formula, we get 
  \[[ABCD]=\sqrt{(s-AB)(s-BC)(s-CD)(s-DA)}=2\sqrt{210},\] where $s=\frac{AB+BC+CD+DA}{2}=11$ is the semiperimeter of $ABCD.$
 
- </ol>Equating the expressions for $[ABCD],$ we have
+            \end{enumerate}
+            Equating the expressions for $[ABCD],$ we have
  \[\frac12\cdot\sin\theta\cdot59=2\sqrt{210},\] so $\sin\theta=\frac{4\sqrt{210}}{59}.$ Since $0^\circ<\theta<90^\circ,$ we have $\cos\theta>0.$ It follows that 
  \[\cos\theta=\sqrt{1-\sin^2\theta}=\frac{11}{59}.\]Finally, substituting this result into $(\bigstar)$ gives $22\cos\theta=\frac{242}{59},$ from which the answer is $242+59=\boxed{301}.$
 
@@ -1211,7 +1174,6 @@ We assume that the two quadrilateral mentioned in the problem are similar (due t
  \[49 - x^2 = 16 - \left(\sqrt{59} - x\right)^2 \implies 92 = 2\sqrt{59}x \implies x = \frac{46}{\sqrt{59}} = \frac{46\sqrt{59}}{59}.\] Now let $y$ be $C_1D.$ (thus making $C_1B = \sqrt{59} - y$). Similarly, we have 
  \[36 - y^2 = 25 - \left(\sqrt{59} - y\right)^2 \implies 70 = 2\sqrt{59}y \implies y = \frac{35}{\sqrt{59}} = \frac{35\sqrt{59}}{59}.\] We see that $A_1C_1$, the scaled down diagonal is just $x - y = \frac{11\sqrt{59}}{59},$ which is $\frac{\frac{11\sqrt{59}}{59}}{\sqrt{59}} = \frac{11}{59}$ times our original diagonal $BD,$ implying a scale factor of $\frac{11}{59}.$ Thus, due to perimeters scaling linearly, the perimeter of the new quadrilateral is simply $\frac{11}{59} \cdot 22 = \frac{242}{59},$ making our answer $242+59 = \boxed{301}.$
 
- 
  \[\]$*$Indeed, the diagonals do not have length $\sqrt{59}$. However, here's why it works out: Let the length of diagonal BD be a. Then, by the same logic as given in the solution by fidgetboss\_4000, $x=\frac{33+a^{2}}{2a}$, $y=\frac{11+a^{2}}{2a}$, so $x-y=\frac{11}{a}$. Then, why does dividing by a to get a ratio work? It's because the orientation of quadrilaterals is different! In other words, instead of diagonal BD corresponding to diagonal $B_1$ $D_1$, it corresponds to diagonal $A_1$ $C_1$. Thus, to get the right ratio, we can find the ratio of the multiplied diagonals, then take the square root (this square root part is crucial. It happens because we essentially are taking something two-dimensional on the numerator and denominator, so to make it a one-dimensional similarity ratio, we must take the square root to half the dimension on each part). This yields $\sqrt{\frac{121}{a^{2}\cdot b^{2}}}$=$\frac{11}{a\cdot b}$. However, by Ptolemy, $a\cdot b$=59. Thus, the ratio is indeed $\frac{11}{59}$. ~MATH-TITAN
 
  
@@ -1222,7 +1184,6 @@ We assume that the two quadrilateral mentioned in the problem are similar (due t
 
 <i>\textbf{Solution}</i>
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2021_11_Solution_Figure_2.png}
@@ -1234,28 +1195,23 @@ In accordance with \textbf{Claim 2,}
 
  \[2 \cdot 59 \cos \theta = |13 + 9|.\]
  \[s = 22\cos \theta = \frac{22 \cdot 11}{59} = \frac{242}{59}.\]Therefore, the answer is $242+59=\boxed{301}.$
+<i>\textbf{Claim 1}</i>
 
- <i>\textbf{Claim 1}</i>
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2021_11_Solution_Figure_3.png}
                     \end{figure}
                     In the triangle $ABC$, the points $B'$ and $C'$ are the bases of the heights dropped from the vertices $B$ and $C$, respectively.  $\angle A = \alpha$. Then
  \[B'C'=\begin{cases} BC \cos\alpha, & \textrm{if } \alpha < 90^\circ, \\ BC \cos (180^\circ – \alpha), & \textrm{if } \alpha >90^\circ. \end{cases}=|BC\cos{\alpha}|\]
-
- <i>\textbf{Proof}</i>
+<i>\textbf{Proof}</i>
 
  Denote the orthocenter by  $A'$. Quadrilateral $B'C'BC$ is inscribed in a circle with diameter $BC$, so the marked $\angle B = \angle B'.$
 
  If  $\alpha < 90^\circ,$ the $\triangle AB'C' \sim \triangle ABC,$ the similarity coefficient is $AC' : AC = \cos \alpha.$So $B'C' : BC = \cos \alpha.$ 
 
  If  $\alpha > 90^\circ,$ the $\triangle A'B'C' \sim \triangle A'BC,$ the similarity coefficient is $A'C' : A'C = \cos (180^\circ – \alpha).$ So $B'C' : BC = \cos (180^\circ – \alpha).$
+<i>\textbf{Claim 2}</i>
 
- <i>\textbf{Claim 2}</i>
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2021_11_Solution_Figure_4.png}
@@ -1266,7 +1222,6 @@ In accordance with \textbf{Claim 2,}
 
  Let the point $B'$ be symmetric to $B$ with respect to the perpendicular bisector $AC.$ Then the quadrilateral $AB'CD$ is an inscribed one, $AB' = b, B'C = a.$
 
- 
  \[2 \angle AEB = \overset{\Large\frown} {AB}  + \overset{\Large\frown} {CD}.\]
  \begin{align*} 2\angle B'AD = \overset{\Large\frown} {B'C} + \overset{\Large\frown} {CD} = \overset{\Large\frown} {AB} + \overset{\Large\frown} {CD} \implies \angle AEB = \angle B'AD\end{align*}
 
@@ -1299,13 +1254,16 @@ Define the \textbf{distance} between two frogs as the number of sides between th
 
  We wish to find $E(4,4,4).$ Note that:
 
- <ol style="margin-left: 1.5em;"> \item At any moment before the frogs stop jumping, the only possibilities for $(a,b,c)$ are $(4,4,4),(2,4,6),$ and $(2,2,8).$ 
+ 
+            \begin{enumerate} 
+        \item At any moment before the frogs stop jumping, the only possibilities for $(a,b,c)$ are $(4,4,4),(2,4,6),$ and $(2,2,8).$
 
- \item $E(a,b,c)$ does not depend on the actual positions of the frogs, but depends on the distances between the frogs. 
+        \item $E(a,b,c)$ does not depend on the actual positions of the frogs, but depends on the distances between the frogs.
 
- \item At the end of each minute, each frog has $2$ outcomes. So, there are $2^3=8$ outcomes in total.
+        \item At the end of each minute, each frog has $2$ outcomes. So, there are $2^3=8$ outcomes in total.
 
- </ol>We have the following system of equations:
+            \end{enumerate}
+            We have the following system of equations:
  \begin{align*} E(4,4,4)&=1+\frac{2}{8}E(4,4,4)+\frac{6}{8}E(2,4,6), \\ E(2,4,6)&=1+\frac{4}{8}E(2,4,6)+\frac{1}{8}E(4,4,4)+\frac{1}{8}E(2,2,8), \\ E(2,2,8)&=1+\frac{2}{8}E(2,2,8)+\frac{2}{8}E(2,4,6). \end{align*}
 Rearranging and simplifying each equation, we get
  \begin{align*} E(4,4,4)&=\frac{4}{3}+E(2,4,6), &(1) \\ E(2,4,6)&=2+\frac{1}{4}E(4,4,4)+\frac{1}{4}E(2,2,8), &\hspace{12.75mm}(2) \\ E(2,2,8)&=\frac{4}{3}+\frac{1}{3}E(2,4,6). &(3) \end{align*}
@@ -1314,7 +1272,6 @@ Substituting $(1)$ and $(3)$ into $(2),$ we obtain
 
  Therefore, the answer is $16+3=\boxed{019}.$
 
- 
 
 
 
@@ -1339,10 +1296,6 @@ Substituting $(1)$ and $(3)$ into $(2),$ we obtain
 
  By solving the above system of equations, $E(4) = 16$. The answer for the original problem is $\frac{16}{3}$, $16 + 3 = \boxed{\textbf{019}}$
 
- 
-
-
- 
 
 
 
@@ -1363,10 +1316,8 @@ Let $a_n$ to be the probability that the frogs are at $(3,3,3)$ Situation at the
 After listing all the $8$ movements, we get the recurrence
 
  $a_{n+1}=\frac{1}{4}a_n+\frac{1}{8}b_n$
-
- $b_{n+1}=\frac{3}{4}a_n+\frac{1}{2}b_n+\frac{1}{4}c_n$
-
- $c_{n+1}=\frac{1}{8}b_n+\frac{1}{4}c_n$
+$b_{n+1}=\frac{3}{4}a_n+\frac{1}{2}b_n+\frac{1}{4}c_n$
+$c_{n+1}=\frac{1}{8}b_n+\frac{1}{4}c_n$
 
  
 A $3,3,3$ Situation never leads to the end.
@@ -1380,22 +1331,15 @@ Then we calculate the probability of the process ending at the $n$th move.
 
  
 $P($ending at move $1)$$=0$
-
- $P($ending at move $2)$$=\frac{1}{4}b_1+\frac{1}{2}c_1=\frac{3}{16}$
-
- $P($ending at move $3)$$=\frac{1}{4}b_2+\frac{1}{2}c_2=\frac{3}{16}$
-
- $P($ending at move $4)$$=\frac{1}{4}b_3+\frac{1}{2}c_3$
-
- $=\frac{1}{4}(\frac{3}{4}a_2+\frac{1}{2}b_2+\frac{1}{4}c_2)+\frac{1}{2}(\frac{1}{8}b_2+\frac{1}{4}c_2)$ (by plugging in the equations above)
+$P($ending at move $2)$$=\frac{1}{4}b_1+\frac{1}{2}c_1=\frac{3}{16}$
+$P($ending at move $3)$$=\frac{1}{4}b_2+\frac{1}{2}c_2=\frac{3}{16}$
+$P($ending at move $4)$$=\frac{1}{4}b_3+\frac{1}{2}c_3$
+$=\frac{1}{4}(\frac{3}{4}a_2+\frac{1}{2}b_2+\frac{1}{4}c_2)+\frac{1}{2}(\frac{1}{8}b_2+\frac{1}{4}c_2)$ (by plugging in the equations above)
 
  $=\frac{3}{16}a_2+\frac{1}{8}b_2+\frac{1}{16}c_2+\frac{1}{16}b_2+\frac{1}{8}c_2$
-
- $=\frac{3}{16}a_2+\frac{3}{16}b_2+\frac{3}{16}c_2$
-
- $=\frac{3}{16}(a_2+b_2+c_2)$
-
- $a_2+b_2+c_2$ is the probability of the frogs being at a non-ending situation at the $2$nd move. This is equivalent to the process not ending on or before the $2$nd move.
+$=\frac{3}{16}a_2+\frac{3}{16}b_2+\frac{3}{16}c_2$
+$=\frac{3}{16}(a_2+b_2+c_2)$
+$a_2+b_2+c_2$ is the probability of the frogs being at a non-ending situation at the $2$nd move. This is equivalent to the process not ending on or before the $2$nd move.
 
  The probability here can be calculated reversely, it is equal to $1-$ (the probability of the process ending on or before the $2$nd move).
 
@@ -1408,45 +1352,28 @@ Then continue calculations like this.
 
  
 $P($ending at move $5)$$=\frac{1}{4}b_4+\frac{1}{2}c_4$
-
- $=\frac{3}{16}(a_3+b_3+c_3)$
-
- $=\frac{3}{16}$$P($the process not ending on or before the $3$rd move$)$
-
- $=\frac{3}{16}$$(1-P($the process ending on or before the $3$rd move$))$
-
- $=\frac{3}{16}$$(1-P($the process ending on the $1$st move$)$$-P($the process ending on the $2$nd move$)$$-P($the process ending on the $3$rd move$))$
-
- $=\frac{3}{16}(1-\frac{3}{16}-\frac{3}{16})$
-
- $=\frac{15}{128}$
-
- 
+$=\frac{3}{16}(a_3+b_3+c_3)$
+$=\frac{3}{16}$$P($the process not ending on or before the $3$rd move$)$
+$=\frac{3}{16}$$(1-P($the process ending on or before the $3$rd move$))$
+$=\frac{3}{16}$$(1-P($the process ending on the $1$st move$)$$-P($the process ending on the $2$nd move$)$$-P($the process ending on the $3$rd move$))$
+$=\frac{3}{16}(1-\frac{3}{16}-\frac{3}{16})$
+$=\frac{15}{128}$
 $P($ending at move $6)$$=\frac{1}{4}b_5+\frac{1}{2}c_5$
-
- $=\frac{3}{16}(a_4+b_4+c_4)$
-
- $=\frac{3}{16}$$P($the process not ending on or before the $4$th move$)$
-
- $=\frac{3}{16}$$(1-P($the process ending on or before the $4$th move$))$
-
- $=\frac{3}{16}(1-\frac{3}{16}-\frac{3}{16}-\frac{39}{256})$
-
- $=\frac{363}{4096}$
+$=\frac{3}{16}(a_4+b_4+c_4)$
+$=\frac{3}{16}$$P($the process not ending on or before the $4$th move$)$
+$=\frac{3}{16}$$(1-P($the process ending on or before the $4$th move$))$
+$=\frac{3}{16}(1-\frac{3}{16}-\frac{3}{16}-\frac{39}{256})$
+$=\frac{363}{4096}$
 
  
 .........
 
  
 In general, $P($ending at move ${n+1})$$=\frac{1}{4}b_n+\frac{1}{2}c_n$
-
- $=\frac{3}{16}(a_{n-1}+b_{n-1}+c_{n-1})$
-
- $=\frac{3}{16}$$P($the process not ending on or before the $n-1$th move$)$
-
- $=\frac{3}{16}$$(1-P($the process ending on or before the $n-1$th move$))$
-
- $=\frac{3}{16}$$(1-\sum_{i=1}^{n-1}P($the process ending at the $i$th move$))$
+$=\frac{3}{16}(a_{n-1}+b_{n-1}+c_{n-1})$
+$=\frac{3}{16}$$P($the process not ending on or before the $n-1$th move$)$
+$=\frac{3}{16}$$(1-P($the process ending on or before the $n-1$th move$))$
+$=\frac{3}{16}$$(1-\sum_{i=1}^{n-1}P($the process ending at the $i$th move$))$
 
  Notice that $P($ending at move ${n+2})$ has just one more term to minus than $P($ending at move ${n+1})$. Subtracting the equation for $n+2$ and the equation for $n+1$, we derive
 
@@ -1472,12 +1399,9 @@ Now we calculate $Q_1+Q_2+Q_3+Q_4+Q_5......$. We set this finite number equal to
  $S=Q_2+Q_3+Q_4+Q_5+......$ (because $Q_1$ is $0$)
 
  $S=\frac{3}{16}+Q_2-\frac{3}{16}Q_1+Q_3-\frac{3}{16}Q_2+Q_4-\frac{3}{16}Q_3+Q_5-\frac{3}{16}Q_4+......$
-
- $S=\frac{3}{16}+S-\frac{3}{16}S$
-
- $\frac{3}{16}-\frac{3}{16}S=0$
-
- $S=1$
+$S=\frac{3}{16}+S-\frac{3}{16}S$
+$\frac{3}{16}-\frac{3}{16}S=0$
+$S=1$
 
  
 Knowing $S=1$, we can find the expected value $Q_1+2Q_2+3Q_3+4Q_4+5Q_5+......$.
@@ -1486,20 +1410,13 @@ Knowing $S=1$, we can find the expected value $Q_1+2Q_2+3Q_3+4Q_4+5Q_5+......$.
 Set this finite value equal to $E$.
 
  $E=Q_1+2Q_2+3Q_3+4Q_4+5Q_5+......$
-
- $E=\frac{3}{8}+3(Q_2-\frac{3}{16}Q_1)+4(Q_3-\frac{3}{16}Q_2)+5(Q_4-\frac{3}{16}Q_3)+6(Q_5-\frac{3}{16}Q_4)+......$
-
- $E=\frac{3}{8}+3Q_2+4Q_3+5Q_4+6Q_5+......-\frac{3}{16}(3Q_1+4Q_2+5Q_3+6Q_4+......)$
-
- $E=\frac{3}{8}+E+S-\frac{3}{16}(4Q_2+5Q_3+6Q_4+7Q_5......)$
-
- $E=\frac{3}{8}+E+S-\frac{3}{16}(E+2S)$
-
- $E=\frac{3}{8}+E+1-\frac{3}{16}(E+2)$
-
- $3(E+2)=22$
-
- $E=\frac{16}{3}$
+$E=\frac{3}{8}+3(Q_2-\frac{3}{16}Q_1)+4(Q_3-\frac{3}{16}Q_2)+5(Q_4-\frac{3}{16}Q_3)+6(Q_5-\frac{3}{16}Q_4)+......$
+$E=\frac{3}{8}+3Q_2+4Q_3+5Q_4+6Q_5+......-\frac{3}{16}(3Q_1+4Q_2+5Q_3+6Q_4+......)$
+$E=\frac{3}{8}+E+S-\frac{3}{16}(4Q_2+5Q_3+6Q_4+7Q_5......)$
+$E=\frac{3}{8}+E+S-\frac{3}{16}(E+2S)$
+$E=\frac{3}{8}+E+1-\frac{3}{16}(E+2)$
+$3(E+2)=22$
+$E=\frac{16}{3}$
 
  
 The answer to the problem is $16+3=19$.
@@ -1518,60 +1435,42 @@ Solution 1 can be represented by the following \href{https://en.wikipedia.org/wi
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2021_12_Solution_Figure_2.png}
                     \end{figure}
                     
-                \begin{itemize}
-                    \item From state $(4, 4, 4)$ to state $(4, 4, 4)$: the $3$ frogs must jump in the same direction, $2 \cdot \frac18 = \frac14$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(4, 4, 4)$ to state $(2, 4, 6)$: $2$ frogs must jump in the same direction, and the other must jump in the opposite direction, $\binom32 \cdot 2 \cdot \frac18 = \frac34$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 4, 6)$ to state $(4, 4, 4)$: the $2$ frogs with a distance of $4$ in between must jump in the same direction so that they will be further away from the other frog, and the other frog must jump in the opposite direction as those $2$ frogs, $\frac18$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 4, 6)$ to state $(2, 4, 6)$: the $3$ frogs can all jump in the same direction; or the $2$ frogs with a distance of $2$ in between jumps away from each other and the other frog jumps closer to the closest frog; or the $2$ frogs with a distance of $6$ in between jump closer to each other and away from the third frog, the third frog jumps closer to the closest frog; $(2 + 1 + 1) \cdot \frac18 = \frac12$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 4, 6)$ to state $(2, 2, 8)$: the $2$ frogs with a distance of $2$ in between must jump closer to the other frog and the other frog must jump close to those $2$ frogs, $\frac18$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 2, 8)$ to state $(2, 4, 6)$: $2$ frogs that have no frogs in between must both jump in the same direction away from the other frog, the other frog must also jump away from those $2$ frogs, $2 \cdot \frac18 = \frac14$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 2, 8)$ to state $(2, 2, 8)$: the $3$ frogs must all jump in the same direction, $2 \cdot \frac18 = \frac14$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 2, 8)$ to state $(0, x, y)$: frogs with a distance of $2$ must jump closer to each other, the other frog can jump in any direction, $\frac12 \cdot \frac12 \cdot 2 = \frac12$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item From state $(2, 4, 6)$ to state $(0, x, y)$: the frogs with a distance of $2$ must jump closer to each other, the other frog can jump in any direction, $\frac12 \cdot \frac12 = \frac14$.
-                \end{itemize}
-
-
-                Because $a + b + c = 12$, we can use $(a, b)$ to represent the states which is simpler than using $(a, b, c)$ in Solution 1.
+            \begin{itemize}
+        \item From state $(4, 4, 4)$ to state $(4, 4, 4)$: the $3$ frogs must jump in the same direction, $2 \cdot \frac18 = \frac14$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(4, 4, 4)$ to state $(2, 4, 6)$: $2$ frogs must jump in the same direction, and the other must jump in the opposite direction, $\binom32 \cdot 2 \cdot \frac18 = \frac34$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 4, 6)$ to state $(4, 4, 4)$: the $2$ frogs with a distance of $4$ in between must jump in the same direction so that they will be further away from the other frog, and the other frog must jump in the opposite direction as those $2$ frogs, $\frac18$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 4, 6)$ to state $(2, 4, 6)$: the $3$ frogs can all jump in the same direction; or the $2$ frogs with a distance of $2$ in between jumps away from each other and the other frog jumps closer to the closest frog; or the $2$ frogs with a distance of $6$ in between jump closer to each other and away from the third frog, the third frog jumps closer to the closest frog; $(2 + 1 + 1) \cdot \frac18 = \frac12$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 4, 6)$ to state $(2, 2, 8)$: the $2$ frogs with a distance of $2$ in between must jump closer to the other frog and the other frog must jump close to those $2$ frogs, $\frac18$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 2, 8)$ to state $(2, 4, 6)$: $2$ frogs that have no frogs in between must both jump in the same direction away from the other frog, the other frog must also jump away from those $2$ frogs, $2 \cdot \frac18 = \frac14$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 2, 8)$ to state $(2, 2, 8)$: the $3$ frogs must all jump in the same direction, $2 \cdot \frac18 = \frac14$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 2, 8)$ to state $(0, x, y)$: frogs with a distance of $2$ must jump closer to each other, the other frog can jump in any direction, $\frac12 \cdot \frac12 \cdot 2 = \frac12$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item From state $(2, 4, 6)$ to state $(0, x, y)$: the frogs with a distance of $2$ must jump closer to each other, the other frog can jump in any direction, $\frac12 \cdot \frac12 = \frac14$.
+            \end{itemize}
+            Because $a + b + c = 12$, we can use $(a, b)$ to represent the states which is simpler than using $(a, b, c)$ in Solution 1.
 
  \textbf{Summary} The two above Markov Chains are \href{https://en.wikipedia.org/wiki/Absorbing\_Markov\_chain}{Absorbing Markov Chain}. The state of $2$ frogs meeting is the absorbing state. This problem asks for the \href{https://en.wikipedia.org/wiki/Absorbing\_Markov\_chain\#Expected\_number\_of\_steps}{Expected Number of Steps} before being absorbed in the absorbing state.
 
@@ -1580,8 +1479,7 @@ Solution 1 can be represented by the following \href{https://en.wikipedia.org/wi
  Let $e_i$ be the expected number of steps before being absorbed in the absorbing state when starting from transient state $i$.
 
  $e_i = \sum_{j} [p_{ij} \cdot ( 1 + e_{j})] = \sum_{j} (p_{ij} + p_{ij} \cdot e_{j}) = \sum_{j} p_{ij} + \sum_{j} (p_{ij} \cdot e_{j}) = 1 + \sum_{j} (p_{ij} \cdot e_{j})$
-
- $e_i$ is $1$ plus the sum of the products of $p_{ij}$ and $s_j$ of all the next state $j$, $\sum_{j} p_{ij} = 1$.
+$e_i$ is $1$ plus the sum of the products of $p_{ij}$ and $s_j$ of all the next state $j$, $\sum_{j} p_{ij} = 1$.
 
  \href{https://artofproblemsolving.com/wiki/index.php?title=2014\_AMC\_12B\_Problems/Problem\_22}{2014 AMC 12B Problem 22} and \href{https://artofproblemsolving.com/wiki/index.php?title=2017\_AMC\_12A\_Problems/Problem\_22}{2017 AMC 12A Problem 22} are similar problem with simpler states, both problems can be solved by Absorbing Markov Chain.
 
@@ -1707,8 +1605,7 @@ Like in other solutions, let $O$ be the center of $\omega$ with $r$ its radius; 
 
  
  \[\angle OCT = \angle ODT = \angle OET = 90^\circ \implies\]
-
- $OCTDE$ is cyclic (in $\Omega), OT$ is diameter $\Omega.$ $O_1O_2 \perp AB, OM \perp FO_1 \implies \angle FO_1O_2 = \angle OTE$$\angle OTE = \angle ODE$ as they intercept the same arc  $\overset{\Large\frown}{OE}$ in $\Omega.$
+$OCTDE$ is cyclic (in $\Omega), OT$ is diameter $\Omega.$ $O_1O_2 \perp AB, OM \perp FO_1 \implies \angle FO_1O_2 = \angle OTE$$\angle OTE = \angle ODE$ as they intercept the same arc  $\overset{\Large\frown}{OE}$ in $\Omega.$
  \[OE \perp AB, O_1O_2 \perp AB \implies O_1 O_2 || OE \implies\]
  \[\angle OO_2O_1 = \angle O_2 OE \implies \triangle ODE \sim \triangle O_2 O_1 F \implies\]
  \[\frac {OE}{OD} = \frac {O_2F}{O_1O_2} \implies \cos \frac {120^\circ}{2} = \frac{r_2 + r - r_1 -r} {O_1O_2}\implies {O_1O_2}= 2|r_2 – r_1|.\]
@@ -1742,7 +1639,6 @@ Let the \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circl
 
  Thus, the distance between the centers of $\omega_1$ and $\omega_2$ is $2(961-625)=\boxed{672}$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2021_13_Solution_Figure_5.png}
@@ -1892,7 +1788,6 @@ We begin with the following claim to simplify the problem down. Whenever some NT
 
  We can conclude similarly that $46\cdot 47\mid n$. Thus, the least possible value of $n$ is $\operatorname{lcm}(42,43,46,47),$ and our answer is $\boxed{125}.$
 
- 
 
 
 
@@ -1900,24 +1795,30 @@ We begin with the following claim to simplify the problem down. Whenever some NT
 
 $n$ only needs to satisfy $\sigma(a^n)\equiv 1 \pmod{43}$ and $\sigma(a^n)\equiv 1 \pmod{47}$ for all $a$. Let's work on the first requirement (mod 43) first. All $n$ works for $a=1$. If $a>1$, let $a$'s prime factorization be $a=p_1^{e_1}p_2^{e_2}\cdots p_k^{e_k}$. The following three statements are the same:
 
- <ol style="margin-left: 1.5em;"> \item For all $a$, we have $\sigma(a^n)=\prod_{i=1}^k(1+p_i+\cdots+p_i^{ne_i})\equiv1\pmod{43}$. 
+ 
+            \begin{enumerate} 
+        \item For all $a$, we have $\sigma(a^n)=\prod_{i=1}^k(1+p_i+\cdots+p_i^{ne_i})\equiv1\pmod{43}$.
 
- \item For all $e>0$ and prime $p$, we have $1+p+\cdots+p^{ne}\equiv1\pmod{43}$. 
+        \item For all $e>0$ and prime $p$, we have $1+p+\cdots+p^{ne}\equiv1\pmod{43}$.
 
- \item For all prime $p$, we have $p+p^2+\cdots+p^n \equiv 0 \pmod{43}$.
+        \item For all prime $p$, we have $p+p^2+\cdots+p^n \equiv 0 \pmod{43}$.
 
- </ol>We can show this by casework on $p$:
+            \end{enumerate}
+            We can show this by casework on $p$:
 
- <ol style="margin-left: 1.5em;"> \item For $p\equiv0\pmod{43}$, no matter what $n$ is, it is true that 
- \[p+p^2+\cdots+p^n \equiv 0 \pmod{43}.\] 
+ 
+            \begin{enumerate} 
+        \item For $p\equiv0\pmod{43}$, no matter what $n$ is, it is true that 
+ \[p+p^2+\cdots+p^n \equiv 0 \pmod{43}.\]
 
- \item For all $p\equiv1\pmod{43}$, it is true that 
- \[p+p^2+\cdots+p^n \equiv n \equiv 0 \pmod{43}.\] One can either use brute force or Dirichlet's Theorem to show such $p$ exists. Therefore, $43|n$. 
+        \item For all $p\equiv1\pmod{43}$, it is true that 
+ \[p+p^2+\cdots+p^n \equiv n \equiv 0 \pmod{43}.\] One can either use brute force or Dirichlet's Theorem to show such $p$ exists. Therefore, $43|n$.
 
- \item For all $p\not\equiv0,1\pmod{43}$, it is true that
+        \item For all $p\not\equiv0,1\pmod{43}$, it is true that
  \[p+p^2+\cdots+p^n \equiv 0 \pmod{43} \Leftrightarrow p^n-1\equiv0\pmod{43}.\] According to Fermat's Little Theorem, $42|n$ is sufficient. To show it's necessary, we just need to show $43$ has a prime primitive root. This can be done either by brute force or as follows. $43$ is prime and it must have a primitive root $t\neq 1$ that's coprime to $43$. All numbers of the form $43k+t$ are also primitive roots of $43$. According to Dirichlet's Theorem there must be infinitely many primes among them.
 
- </ol>Similar arguments for modulo $47$ lead to $46|n$ and $47|n$. Therefore, we get $n=\operatorname{lcm}[42,43,46,47]$. Following the last paragraph of Solution 1 gives the answer $\boxed{125}$.
+            \end{enumerate}
+            Similar arguments for modulo $47$ lead to $46|n$ and $47|n$. Therefore, we get $n=\operatorname{lcm}[42,43,46,47]$. Following the last paragraph of Solution 1 gives the answer $\boxed{125}$.
 
  
 
@@ -1927,47 +1828,44 @@ $n$ only needs to satisfy $\sigma(a^n)\equiv 1 \pmod{43}$ and $\sigma(a^n)\equiv
 
 We perform casework on $a:$
 
- <ol style="margin-left: 1.5em;"> <li>$a=1.$ For all positive integers $n,$ we have $\sigma\left(a^n\right)-1=0.$
-
- </li> <li>$a$ is a prime number. For all prime numbers $p,$ note that
+            \begin{enumerate} 
+        \item $a=1.$ For all positive integers $n,$ we have $\sigma\left(a^n\right)-1=0.$
+ 
+        \item $a$ is a prime number. For all prime numbers $p,$ note that
  \[\sigma\left(p^n\right)-1=\left(\sum_{i=0}^{n}p^i\right)-1=\sum_{i=1}^{n}p^i=\frac{p^{n+1}-p}{p-1}=\frac{p\left(p^n-1\right)}{p-1}\]by geometric series. 
 
  Recall that $2021=43\cdot47.$ Applying the Chinese Remainder Theorem, we get the following system of congruences:
  \begin{align*} \frac{p\left(p^n-1\right)}{p-1}&\equiv0\pmod{43}, &(1)\\ \frac{p\left(p^n-1\right)}{p-1}&\equiv0\pmod{47}. &(2) \end{align*}
 We perform casework on $(1):$
-
- <ol style="margin-left: 1.5em;" type="A"> <li>$p-1\not\equiv0\pmod{43}.$ We need $p\left(p^n-1\right)\equiv0\pmod{43}.$ 
+<ol style="margin-left: 1.5em;" type="A"> <li>$p-1\not\equiv0\pmod{43}.$ We need $p\left(p^n-1\right)\equiv0\pmod{43}.$ 
 
  If $p=43,$ then this congruence is true for all positive integers $n.$ 
 
  If $p\neq43,$ then this congruence becomes $p^n-1\equiv0\pmod{43}.$ By Fermat's Little Theorem, we obtain $n\equiv0\pmod{42}.$
-
- </li> <li>$p-1\equiv0\pmod{43}.$ We need $p^n-1$ to contain more factors of $43$ than $p-1$ does. More generally, for all positive integers $k,$ if $p-1\equiv0 \ \left(\operatorname{mod} \ 43^k\right),$ then $p^n-1\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right).$ 
+</li> <li>$p-1\equiv0\pmod{43}.$ We need $p^n-1$ to contain more factors of $43$ than $p-1$ does. More generally, for all positive integers $k,$ if $p-1\equiv0 \ \left(\operatorname{mod} \ 43^k\right),$ then $p^n-1\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right).$ 
 
  Let $p=43^km+1$ for some positive integer $m$ such that $m\not\equiv0\pmod{43}.$ We substitute this into $p^n-1\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right)$ and apply the Binomial Theorem:
  \begin{align*} \left(43^km+1\right)^n-1&\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right) \\ \Biggl[\binom{n}{0}\left(43^km\right)^0+\binom{n}{1}\left(43^km\right)^1+\phantom{ }\underbrace{\binom{n}{2}\left(43^km\right)^2+\cdots+\binom{n}{n}\left(43^km\right)^n}_{0 \ \left(\operatorname{mod} \ 43^{k+1}\right)}\phantom{ }\Biggr]-1 &\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right) \\ \left[1+43^kmn\right]-1&\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right) \\ 43^kmn&\equiv0 \ \left(\operatorname{mod} \ 43^{k+1}\right), \end{align*}
 from which $n\equiv0\pmod{43}.$
-
- </li></ol>For $(1),$ we find that $n\equiv0\pmod{42}$ and $n\equiv0\pmod{43}.$ For $(2),$ we find that $n\equiv0\pmod{46}$ and $n\equiv0\pmod{47}$ by a similar argument. 
+</li></ol>For $(1),$ we find that $n\equiv0\pmod{42}$ and $n\equiv0\pmod{43}.$ For $(2),$ we find that $n\equiv0\pmod{46}$ and $n\equiv0\pmod{47}$ by a similar argument. 
 
  Together, we conclude that $n=\operatorname{lcm}(42,43,46,47)$ is the least such positive integer $n$ for this case.
 
- </li> 
+ 
 
- <li>$a$ is a composite number. Let $a=\prod_{i=1}^{u}p_i^{e_i}$ be the prime factorization of $a.$ Note that $\sigma(a)$ is a multiplicative function: 
+        \item $a$ is a composite number. Let $a=\prod_{i=1}^{u}p_i^{e_i}$ be the prime factorization of $a.$ Note that $\sigma(a)$ is a multiplicative function: 
  \[\sigma(a)=\sigma\left(\prod_{i=1}^{u}p_i^{e_i}\right)=\prod_{i=1}^{u}\sigma\left(p_i^{e_i}\right)=\prod_{i=1}^{u}\left(\sum_{j=0}^{e_i}p_i^j\right),\] as this product of geometric series spans all positive divisors of $a.$ 
 
  At $n=\operatorname{lcm}(42,43,46,47),$ it follows that
  \begin{align*} \sigma\left(a^n\right)-1&=\left(\prod_{i=1}^{u}\sigma\left(p_i^{e_in}\right)\right)-1 \\ &\equiv\left(\prod_{i=1}^{u}1\right)-1 &&\pmod{2021} \\ &\equiv0 &&\pmod{2021}. \end{align*}
 
 
- </li>
 
- </ol>Finally, the least such positive integer $n$ for all cases is
+            \end{enumerate}
+            Finally, the least such positive integer $n$ for all cases is
  \begin{align*} n&=\operatorname{lcm}(42,43,46,47) \\ &=\operatorname{lcm}(2\cdot3\cdot7,43,2\cdot23,47) \\ &=2\cdot3\cdot7\cdot23\cdot43\cdot47, \end{align*}
 so the sum of its prime factors is $2+3+7+23+43+47=\boxed{125}.$
 
- 
 
 
 
@@ -2035,9 +1933,12 @@ The sum of the factors of a number with prime factorization $n = p_1^{a_1} p_2^{
 
 Note that $y=x^2-k$ is an upward-opening parabola with the vertex at $(0,-k),$ and $x=2(y-20)^2-k$ is a rightward-opening parabola with the vertex at $(-k,20).$ We consider each condition separately:
 
- <ol style="margin-left: 1.5em;"> \item The two parabolas intersect at four distinct points.
+ 
+            \begin{enumerate} 
+        \item The two parabolas intersect at four distinct points.
 
- By a quick sketch, we have two subconditions:<ol style="margin-left: 1.5em;" type="A"> <li>The point $(-k,20)$ is on or below the parabola $y=x^2-k.$We need $20\leq(-k)^2-k,$ from which $k\geq5.$ 
+ By a quick sketch, we have two subconditions:<ol style="margin-left: 1.5em;" type="A"> 
+        \item The point $(-k,20)$ is on or below the parabola $y=x^2-k.$We need $20\leq(-k)^2-k,$ from which $k\geq5.$ 
 
  Moreover, the point $(-k,20)$ is on the parabola $y=x^2-k$ when $k=5.$ We will prove that the two parabolas intersect at four distinct points at this value of $k:$
 
@@ -2045,34 +1946,36 @@ Note that $y=x^2-k$ is an upward-opening parabola with the vertex at $(0,-k),$ a
  \[2x^4-100x^2-x+1245=0. \hspace{20mm}(\bigstar)\]By either the graphs of the parabolas or the Rational Root Theorem, we conclude that $x=-5$ is a root of $(\bigstar).$ So, we factor its left side: 
  \[(x+5)\left(2x^3-10x^2-50x+249\right)=0.\]By either the graphs of the parabolas or Descartes' Rule of Signs, we conclude that $2x^3-10x^2-50x+249=0$ has two positive roots and one negative root such that $x\neq-5.$ So, $(\bigstar)$ has four distinct real roots, or the two parabolas intersect at four distinct points.
 
- For Subcondition A, we deduce that $k\geq5.$ 
-
- <u>Remark for Subcondition A</u>
+ For Subcondition A, we deduce that $k\geq5.$
+<u>Remark for Subcondition A</u>
 
  Recall that if $1\leq k\leq 4,$ then the point $(-k,20)$ is above the parabola $y=x^2-k.$ It follows that for $-k\leq x\leq0:$
 
- <ul style="list-style-type:square;">\item The maximum value of $y$ for the parabola $y=x^2-k$ occurs at $x=-k,$ from which $y=k^2-k\leq12.$
+            \begin{itemize}<li>The maximum value of $y$ for the parabola $y=x^2-k$ occurs at $x=-k,$ from which $y=k^2-k\leq12.$</li>
+<li>The minimum value of $y$ for the parabola $x=2(y-20)^2-k$ occurs at $x=0,$ from which $y=20-\sqrt{\frac k2}>18.$</li>
 
- \item The minimum value of $y$ for the parabola $x=2(y-20)^2-k$ occurs at $x=0,$ from which $y=20-\sqrt{\frac k2}>18.$
+            \end{itemize}
+            Clearly, the parabola $x=2(y-20)^2-k$ and the left half of the parabola $y=x^2-k$ do not intersect. Therefore, the two parabolas do not intersect at four distinct points.
 
- </ul>Clearly, the parabola $x=2(y-20)^2-k$ and the left half of the parabola $y=x^2-k$ do not intersect. Therefore, the two parabolas do not intersect at four distinct points.
-
- </li> \item The point $(0,-k)$ is on or below the parabola $x=2(y-20)^2-k.$The lower half of the parabola $x=2(y-20)^2-k$ is $y=20-\sqrt{\frac{x+k}{2}}.$ We need $-k\leq20-\sqrt{\frac k2},$ which holds for all values of $k.$
+  
+        \item The point $(0,-k)$ is on or below the parabola $x=2(y-20)^2-k.$The lower half of the parabola $x=2(y-20)^2-k$ is $y=20-\sqrt{\frac{x+k}{2}}.$ We need $-k\leq20-\sqrt{\frac k2},$ which holds for all values of $k.$
 
  For Subcondition B, we deduce that $k$ can be any positive integer.
 
  </ol>\textbf{For Condition 1, we obtain $\boldsymbol{k\geq5}$ by taking the intersection of Subconditions A and B.}
 
-  \item The four points of intersection lie on a circle with radius at most $21.$For equations of circles, the coefficients of $x^2$ and $y^2$ must be the same. So, we add the equation $y=x^2-k$ to half the equation $x=2(y-20)^2-k:$ 
+  
+        \item The four points of intersection lie on a circle with radius at most $21.$For equations of circles, the coefficients of $x^2$ and $y^2$ must be the same. So, we add the equation $y=x^2-k$ to half the equation $x=2(y-20)^2-k:$ 
  \[y+\frac12x=x^2+(y-20)^2-\frac32k.\]We expand, rearrange, and complete the squares:
  \begin{align*} y+\frac12x&=x^2+y^2-40y+400-\frac32k \\ \frac32k-400&=\left(x^2-\frac12x\right)+\left(y^2-41y\right) \\ \frac32k-400+\frac{1}{16}+\frac{1681}{4}&=\left(x-\frac14\right)^2+\left(y-\frac{41}{2}\right)^2. \end{align*}
 We need $\frac32k-400+\frac{1}{16}+\frac{1681}{4}\leq21^2,$ from which $k\leq\left\lfloor\frac{6731}{24}\right\rfloor=280.$
 
  \textbf{For Condition 2, we obtain $\boldsymbol{k\leq280.}$}
 
- </ol>Taking the intersection of Conditions 1 and 2 produces $5\leq k\leq280.$ Therefore, the answer is $5+280=\boxed{285}.$
-
  
+            \end{enumerate}
+            Taking the intersection of Conditions 1 and 2 produces $5\leq k\leq280.$ Therefore, the answer is $5+280=\boxed{285}.$
+
 
 
 
@@ -2087,12 +1990,10 @@ Make the translation $y \rightarrow y+20$ to obtain $20+y=x^2-k$ and $x=2y^2-k$.
  $k=5$ does work because the two graphs intersect at $(-5,20)$, and by drawing the graph, you realize this is not a tangent point and there is in fact another intersection nearby, due to slope. Therefore, the answer is $5+280=\boxed{285}$.
 
  
-                \begin{itemize}
-                    \item In general (assuming four intersections exist), when two conics intersect, if one conic can be written as $ax^2+by^2=f(x,y)$ and the other as $cx^2+dy^2=g(x,y)$ for polynomials $f$ and $g$ of degree at most $1$, whenever $(a,b),(c,d)$ are linearly independent (L.I.), we can combine the two equations and then complete the square to achieve $(x-p)^2+(y-q)^2=r^2$. We can also combine these two equations to form a parabola, or a hyperbola, or an ellipse. When $(a,b),(c,d)$ are not L.I., the intersection points instead lie on a line, which is a circle of radius infinity. When the two conics only have $3,2$ or $1$ intersection point(s), the statement that all these points lie on a circle is trivially true.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item In general (assuming four intersections exist), when two conics intersect, if one conic can be written as $ax^2+by^2=f(x,y)$ and the other as $cx^2+dy^2=g(x,y)$ for polynomials $f$ and $g$ of degree at most $1$, whenever $(a,b),(c,d)$ are linearly independent (L.I.), we can combine the two equations and then complete the square to achieve $(x-p)^2+(y-q)^2=r^2$. We can also combine these two equations to form a parabola, or a hyperbola, or an ellipse. When $(a,b),(c,d)$ are not L.I., the intersection points instead lie on a line, which is a circle of radius infinity. When the two conics only have $3,2$ or $1$ intersection point(s), the statement that all these points lie on a circle is trivially true.
+            \end{itemize}
+            
 
 
 
@@ -2100,7 +2001,6 @@ Make the translation $y \rightarrow y+20$ to obtain $20+y=x^2-k$ and $x=2y^2-k$.
 
 <i>\textbf{Claim}</i>
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2021_15_Solution_Figure_1.png}
@@ -2108,8 +2008,7 @@ Make the translation $y \rightarrow y+20$ to obtain $20+y=x^2-k$ and $x=2y^2-k$.
                     Let the axes of two parabolas be perpendicular, their focal parameters be  $p_1$ and $p_2$ and the distances from the foci to the point of intersection of the axes be  $x_2$ and $y_1$. Suppose that these parabolas intersect at four points.
 
  Then these points lie on the circle centered at point $(p_2, p_1)$ with radius $r = \sqrt{2(p_1^2 + p_2^2 + p_1 y_1 + p_2 x_2)}.$
-
- <i>\textbf{Proof}</i>
+<i>\textbf{Proof}</i>
 
  Let's introduce a coordinate system with the center at the point of intersection of the axes. Let the first (red) parabola have axis $x = 0,$ focal parameter  $p_1$ and focus at point $A(0, –y_1), y_1 > 0.$ Let second (blue) parabola have axis $y = 0,$ focal parameter $p_2$ and focus at point $B(–x_2,0), x_2  > 0.$Let us denote the angle between the vector connecting the focus of the first parabola and its point and the positive direction of the ordinate axis $2\theta,$ its length $\rho_1(\theta),$ the angle between the vector connecting the focus of the second parabola and its point and the positive direction of the abscissa axis $2\phi,$ its length $\rho_2(\phi).$ Then
  \[\rho_1(\theta) = \frac{p_1}{1 - \cos(2\theta)}, \rho_2(\phi) = \frac{p_2}{1 - \cos(2\phi)}.\]
@@ -2127,8 +2026,6 @@ The square of the distance from point of intersection to the point $(p_2, p_1)$ 
 After simple transformations, we get $r^2 = 2(p_1^2 + p_2^2 + p_1 y_1 + p_2 x_2).$
 
  Hence, any intersection point has the same distance $r$ from the point  $(p_2, p_1).$
-
- 
 <i>\textbf{Solution}</i>
 
  Parameters of the parabola $y = x^2 – k$ are $p_1 = \frac{1}{2}, y_1 = 20 + k – \frac{1}{2}.$
@@ -2158,40 +2055,28 @@ After simple transformations, we get $r^2 = 2(p_1^2 + p_2^2 + p_1 y_1 + p_2 x_2)
  When $k = 4$:
 
  $20 = x^2-4$ $x=-\sqrt{24}$
-
- $-\sqrt{24}<-4$ $\times$ 
+$-\sqrt{24}<-4$ $\times$ 
 
  When $k = 5$:
 
  $20 = x^2-5$ $x=-5$
-
- $-5 = -5$ $\checkmark$ 
-
- $\textbf{Max}:$
+$-5 = -5$ $\checkmark$
+$\textbf{Max}:$
 
  \begin{align*}\{ & \left.\begin{aligned}y &= x^2-k \\x &= 2y^2-80y+800-k\end{aligned} \right.\end{align*}
 
 
  
 $x = 2y^2+2y-82y+800-k$
-
- $x = 2y^2+2x^2-2k-82y+800-k$
-
- $2x^2+2y^2-x-82y+800-3k=0$
-
- $x^2+y^2-\frac{x}{2}-41y+400-\frac{3}{2}k = 0$
-
- $(x-\frac{1}{4})^2+(y-\frac{41}{2})^2+400-(\frac{1}{4})^2-(\frac{41}{2})^2 - \frac{3}{2}k = 0$
-
- $(x-\frac{1}{4})^2+(y-\frac{41}{2})^2 = (\frac{1}{4})^2+(\frac{41}{2})^2 + \frac{3}{2}k - 400 \leq 441$
-
- $\frac{1}{16}+\frac{1681}{4}+\frac{3}{2}k \leq 841$
-
- $1+6724+24k \leq 13456$
-
- $24k \leq 6631$
-
- $k \leq \frac{6631}{24}, \quad k_{max} = 280$
+$x = 2y^2+2x^2-2k-82y+800-k$
+$2x^2+2y^2-x-82y+800-3k=0$
+$x^2+y^2-\frac{x}{2}-41y+400-\frac{3}{2}k = 0$
+$(x-\frac{1}{4})^2+(y-\frac{41}{2})^2+400-(\frac{1}{4})^2-(\frac{41}{2})^2 - \frac{3}{2}k = 0$
+$(x-\frac{1}{4})^2+(y-\frac{41}{2})^2 = (\frac{1}{4})^2+(\frac{41}{2})^2 + \frac{3}{2}k - 400 \leq 441$
+$\frac{1}{16}+\frac{1681}{4}+\frac{3}{2}k \leq 841$
+$1+6724+24k \leq 13456$
+$24k \leq 6631$
+$k \leq \frac{6631}{24}, \quad k_{max} = 280$
 
  Therefore the answer is $280+5 = \boxed{285}$
 

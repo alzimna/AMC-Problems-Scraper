@@ -19,7 +19,6 @@ We have
  \[\implies |2(1+3+5+7+ \cdots +37)-1-39(37)|\]
  \[\implies |361(2)-1-39(37)|=|722-1-1443|=|-722|\implies \boxed{722}\]
 
- 
 
 
 
@@ -36,12 +35,9 @@ We see that
  Therefore,
 
  $B-A=-38+(2\times 2)+(2\times 4)+(2\times 6)+\cdots +(2\times 36)+(2\times 38)$
+$=-38+4\times (1+2+3+\cdots+19)$
+$=-38+4\times\frac{20\cdot 19}{2}=-38+760=\boxed{722}.$
 
- $=-38+4\times (1+2+3+\cdots+19)$
-
- $=-38+4\times\frac{20\cdot 19}{2}=-38+760=\boxed{722}.$
-
- 
 
 
 
@@ -55,10 +51,8 @@ For those that aren't shrewd enough to recognize the above, we may use Newton's 
 
  \[2, 12, 30, 56, 90...(39)\]
 
- 
  \[10, 18, 26, 34...\]
 
- 
  \[8, 8, 8...\]
 
  and
@@ -67,7 +61,6 @@ For those that aren't shrewd enough to recognize the above, we may use Newton's 
  \[(1) 6, 20, 42, 72...\]
  \[14, 22, 30...\]
 
- 
  \[8, 8, 8...\]
 
  
@@ -81,8 +74,6 @@ So,
  
 
  \[2\binom{19}{1}+10\binom{19}{2}+8\binom{19}{3}+1\]
-
- 
 
  \[6\binom{19}{1}+14\binom{19}{2}+8\binom{19}{3}+39\]
 
@@ -126,7 +117,6 @@ We have\begin{align*}A&=39+\sum_{k=1}^{19}(2k-1)2k\\&=39+\sum_{k=1}^{19}4k^2-2k\
 Therefore,
  \[B-A=\left(\sum_{k=1}^{19}(4k^2+2k)-(4k^2-2k)\right)-38=\left(\sum_{k=1}^{19}4k\right)-38=760-38=\boxed{722}\]
 
- 
 
 
 	\item (\textit{AIME I 2015}) The nine delegates to the Economic Cooperation Conference include $2$ officials from Mexico, $3$ officials from Canada, and $4$ officials from the United States. During the opening session, three of the delegates fall asleep. Assuming that the three sleepers were determined randomly, the probability that exactly two of the sleepers are from the same country is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -148,20 +138,20 @@ One of the best ways to solve this problem is to use PIE, or the Principle of In
  To start off, we know that the denominator, or the total ways to pick $3$ officials, is $\binom{9}{3} = 84$. Now, we find the number of ways that at least $2$ officials are from the same country and then subtract the number of ways all $3$ officials are from the same country. To start with at least $2$ officials, we know:
 
  
-                \begin{itemize}
-                    \item There are $7$ different ways to pick $3$ delegates such that $2$ are from Mexico, simply because there are $9-2=7$ "extra" delegates to choose to be the third sleeper once both from Mexico are sleeping.\item There are $3\times7=21$ ways to pick from Canada, as we choose $2$ of the $3$ Canadians ($\binom{3}{2} = 3$) and then there are $7$ other options for the third sleeper.\item Lastly, there are $6\times7=42$ ways to choose for the United States. We can choose two American officials with $\binom{4}{2} = 6$. Then, there are $7$ options for the third sleeper.
-                \end{itemize}
-
-
-                Now, we want to find the number of ways to have three sleepers from the same country.
+            \begin{itemize}
+        \item There are $7$ different ways to pick $3$ delegates such that $2$ are from Mexico, simply because there are $9-2=7$ "extra" delegates to choose to be the third sleeper once both from Mexico are sleeping.
+        \item There are $3\times7=21$ ways to pick from Canada, as we choose $2$ of the $3$ Canadians ($\binom{3}{2} = 3$) and then there are $7$ other options for the third sleeper.
+        \item Lastly, there are $6\times7=42$ ways to choose for the United States. We can choose two American officials with $\binom{4}{2} = 6$. Then, there are $7$ options for the third sleeper.
+            \end{itemize}
+            Now, we want to find the number of ways to have three sleepers from the same country.
 
  
-                \begin{itemize}
-                    \item There are no ways for the $3$ sleepers to be from Mexico because there are only $2$ Mexican officials. Hence, we get $0$ ways.\item There is only $1$ way to pick all $3$ from Canada because there are exactly $3$ Canadian officials. We now consider the number of times we originally counted this, which after inspection, is $3$, so we have $1 * 3 = 3$.\item Lastly, there are $4$ ways to choose all $3$ officials from the United States ($\binom{4}{3} = 4$). Once again, we counted this $3$ times, so we have $4*3 = 12$.
-                \end{itemize}
-
-
-                Thus, the fraction is $\frac{7+21+42-0-3-12}{84} = \frac{55}{84}$, and our answer is $55+84=\boxed{139}$.
+            \begin{itemize}
+        \item There are no ways for the $3$ sleepers to be from Mexico because there are only $2$ Mexican officials. Hence, we get $0$ ways.
+        \item There is only $1$ way to pick all $3$ from Canada because there are exactly $3$ Canadian officials. We now consider the number of times we originally counted this, which after inspection, is $3$, so we have $1 * 3 = 3$.
+        \item Lastly, there are $4$ ways to choose all $3$ officials from the United States ($\binom{4}{3} = 4$). Once again, we counted this $3$ times, so we have $4*3 = 12$.
+            \end{itemize}
+            Thus, the fraction is $\frac{7+21+42-0-3-12}{84} = \frac{55}{84}$, and our answer is $55+84=\boxed{139}$.
 
  Note: Similar to Solution 2, we could also have grouped each of the countries in terms of the ways we have for at least $2$ officials to sleep and for all $3$ to sleep. Mexico would have $7 - 0 = 7$ ways for exactly 2 officials to be there, Canada with $21 - 3 = 18$ ways, and the United States with $42 - 12 = 30$ ways.
 
@@ -176,12 +166,12 @@ One of the best ways to solve this problem is to use PIE, or the Principle of In
 The total number of ways to pick $3$ officials from $9$ total is $\binom{9}{3} = 84$, which will be our denominator. Now we can consider the number of ways for exactly two sleepers to be from the same country for each country individually and add them to find our numerator:
 
  
-                \begin{itemize}
-                    \item There are $7$ different ways to pick $3$ delegates such that $2$ are from Mexico, simply because there are $9-2=7$ "extra" delegates to choose to be the third sleeper once both from Mexico are sleeping.\item There are $3\times6=18$ ways to pick from Canada, as each Canadian can be left out once and each time one is left out there are $9-3=6$ "extra" people to select one more sleeper from.\item Lastly, there are $6\times5=30$ ways to choose for the United States. It is easy to count $6$ different ways to pick $2$ of the $4$ Americans, and each time you do there are $9-4=5$ officials left over to choose from.
-                \end{itemize}
-
-
-                Thus, the fraction is $\frac{7+18+30}{84} = \frac{55}{84}$. Since this does not reduce, the answer is $55+84=\boxed{139}$.
+            \begin{itemize}
+        \item There are $7$ different ways to pick $3$ delegates such that $2$ are from Mexico, simply because there are $9-2=7$ "extra" delegates to choose to be the third sleeper once both from Mexico are sleeping.
+        \item There are $3\times6=18$ ways to pick from Canada, as each Canadian can be left out once and each time one is left out there are $9-3=6$ "extra" people to select one more sleeper from.
+        \item Lastly, there are $6\times5=30$ ways to choose for the United States. It is easy to count $6$ different ways to pick $2$ of the $4$ Americans, and each time you do there are $9-4=5$ officials left over to choose from.
+            \end{itemize}
+            Thus, the fraction is $\frac{7+18+30}{84} = \frac{55}{84}$. Since this does not reduce, the answer is $55+84=\boxed{139}$.
 
  
 
@@ -192,12 +182,12 @@ The total number of ways to pick $3$ officials from $9$ total is $\binom{9}{3} =
 Like in the solution above, there are $84$ ways to pick  $3$ delegates. We can use casework to find the probability that there aren't exactly $2$ sleepers from a county, then subtract from $1$.
 
  
-                \begin{itemize}
-                    \item If no country has at least $2$ delegates sleeping, then every country must have $1$ delegate sleeping. There are $2*3*4=24$ ways for this to happen.\item If all $3$ sleeping delegates are from Canada, there are $\binom{3}{3} = 1$ way.\item If all $3$ are from the US, there are $\binom{4}{3} = 4$ ways.
-                \end{itemize}
-
-
-                So, the probability that there are not exactly $2$ sleepers from one country is $\frac{24+1+4}{84} = \frac{29}{84}$, and the probability that exactly $2$ are from the same country is $1- \frac{29}{84} = \frac{55}{84}.$ Our answer is $55+84=\boxed{139}$.
+            \begin{itemize}
+        \item If no country has at least $2$ delegates sleeping, then every country must have $1$ delegate sleeping. There are $2*3*4=24$ ways for this to happen.
+        \item If all $3$ sleeping delegates are from Canada, there are $\binom{3}{3} = 1$ way.
+        \item If all $3$ are from the US, there are $\binom{4}{3} = 4$ ways.
+            \end{itemize}
+            So, the probability that there are not exactly $2$ sleepers from one country is $\frac{24+1+4}{84} = \frac{29}{84}$, and the probability that exactly $2$ are from the same country is $1- \frac{29}{84} = \frac{55}{84}.$ Our answer is $55+84=\boxed{139}$.
 
  
 
@@ -215,7 +205,6 @@ Let us take this step-by-step.
 
  Thus, adding these up our total probability is $\frac{55}{84}$. Adding the numerator and denominator gives us our desired $55+84=\boxed{139}.$
 
- 
 
 
 	\item (\textit{AIME I 2015}) There is a prime number $p$ such that $16p+1$ is the cube of a positive integer.  Find $p$.
@@ -248,7 +237,6 @@ Let the positive integer mentioned be $a$, so that $a^3 = 16p+1$. Note that $a$ 
  \begin{align*} (a-1)(a^2+a+1) &= 16p\\ (17-1)(17^2+17+1) &=16p\\ p = 289+17+1 &= \boxed{307} \end{align*}
 
 
- 
 
 
 
@@ -318,7 +306,6 @@ Notice that the cube 16p+1 is congruent to 1 mod 16. The only cubic numbers that
 
 If $16p+1 =k$, we have $k \equiv 1 \mod 16$, so $k^3 \equiv 1 \mod 16$. If $k=1$ we have $p=0$, which is not prime. If $k=17$ we have $16p+1=4913$, or $p=\boxed{307}$
 
- 
 
 
 
@@ -392,7 +379,6 @@ Let $A$ be the origin, so $B=(16,0)$ and $C=(20,0).$ Using equilateral triangle 
 
  so $x^2=\boxed{507}.$
 
- 
 
 
 
@@ -439,16 +425,13 @@ Note: A much easier way to go about finding $BM$ without having to use Stewart's
                     $AB = BD, BE = BC, \angle ABE = \angle CBD \implies  \triangle ABE \cong \triangle DBC$
 
  Medians are equal, so $MB = BN, \angle ABM = \angle DBN \implies$$\angle MBN = \angle ABD - \angle ABM + \angle DBN = 60^\circ \implies$
-
- $\triangle MNB$ is  equilateral triangle.
+$\triangle MNB$ is  equilateral triangle.
 
  The height of $\triangle BCE$ is $2 \sqrt{3},$ distance from $A$ to midpoint $BC$ is $16 + 2 = 18 \implies \frac {AE^2}{4} =\frac{ (16 + 2)^2 +2^2 \cdot 3}{4} = 81 + 3 = 84.$
-
- $BM$ is the median of $\triangle ABE \implies$$BM^2 = \frac {AB^2}{2} + \frac {BE^2}{2} - \frac {AE^2}{4}=16 \cdot 8 + 4 \cdot 2 - 84 = 52.$ 
+$BM$ is the median of $\triangle ABE \implies$$BM^2 = \frac {AB^2}{2} + \frac {BE^2}{2} - \frac {AE^2}{4}=16 \cdot 8 + 4 \cdot 2 - 84 = 52.$ 
 
  The area of $\triangle BMN$
 
- 
  \[[BMN] = \frac{\sqrt{3}}{4} BM^2 =13 \sqrt{3} \implies \boxed{\textbf{507}}.\]
 
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
@@ -474,7 +457,6 @@ Take some time understanding that this solution is not a tautology of Solution 1
 
  Finally, Shoelace formula on figure $BMN$ yields the desired $\mathcal{X} = 13\sqrt{3}$, thus implying $\mathcal{X}^2 = \boxed{507}$. $\square$
 
- 
 
 
 	\item (\textit{AIME I 2015}) In a drawer Sandy has $5$ pairs of socks, each pair a different color.  On Monday, Sandy selects two individual socks at random from the $10$ socks in the drawer.  On Tuesday Sandy selects $2$ of the remaining $8$ socks at random, and on Wednesday two of the remaining $6$ socks at random.  The probability that Wednesday is the first day Sandy selects matching socks is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -500,7 +482,6 @@ The order of the days doesn't matter, therefore we can solve backwards.
  The only "hard" part is the third and fourth sock. But that is simple casework. If the third sock's color matches the color of one of the first two socks (which occurs with probability $\dfrac{2}{6} = \dfrac{1}{3}$), then the fourth sock can be arbitrary. Otherwise (with probability $\dfrac{2}{3}$), the fourth sock can be chosen with probability $\dfrac{4}{5}$ (5 socks left, 1 sock that can possibly match the third sock's color). The desired probability is thus
  \[\frac{1}{9} \cdot \frac{6}{7} \cdot \left(\dfrac{1}{3} + \dfrac{2}{3} \cdot \dfrac{4}{5}\right) = \frac{26}{315}.\]The sum is therefore $26+315=\boxed{341}.$
 
- 
 
 
 
@@ -524,7 +505,6 @@ For the first sock, note that to pick two different socks, can complementary cou
  $\frac{\binom{6}{2} - 3}{\binom{6}{2}}    \frac{6}{\binom{8}{2}}\frac{1}{\binom{6}{2}}.$Adding all the cases and multiplying by $\frac{\binom{10}{2} - 5}{\binom{10}{2}}$ yields
  \[\frac{\binom{10}{2} - 5}{\binom{10}{2}}\left(\frac{1}{\binom{8}{2}}\frac{3}{\binom{6}{2}}+\frac{6 + 6}{\binom{8}{2}}\frac{2}{\binom{6}{2}}+ \frac{\binom{6}{2} - 3}{\binom{6}{2}}\frac{6}{\binom{8}{2}}\frac{1}{\binom{6}{2}}\right) = \frac{26}{315} \rightarrow 26 + 315 = \boxed{341}\]
 
- 
 
 
 
@@ -536,7 +516,6 @@ This problem is very very similar to \href{https://artofproblemsolving.com/wiki/
  \[P(\text{ Monday,Tuesday mismatch AND Wednesday match}) = P(\text{ Monday,Tuesday mismatch)} \cdot P(\text{Wednesday match given Monday,Tuesday mismatch})\] 
  \[\implies P = \frac{8}{9} \cdot \frac{25}{28} \cdot \frac{13}{125} = \boxed{\frac{26}{315}}\]
 
- 
 
 
 	\item (\textit{AIME I 2015}) Point $A,B,C,D,$ and $E$ are equally spaced on a minor arc of a circle. Points $E,F,G,H,I$ and $A$ are equally spaced on a minor arc of a second circle with center $C$ as shown in the figure below. The angle $\angle ABD$ exceeds $\angle AHG$ by $12^\circ$. Find the degree measure of $\angle BAG$.
@@ -549,12 +528,6 @@ This problem is very very similar to \href{https://artofproblemsolving.com/wiki/
                     \end{figure}
                     
 
-
- 
-
-
-
- 
  \textbf{Answer: }058
 
 
@@ -606,10 +579,6 @@ Let $m$ be the degree measurement of $\angle GCH$. Since $G,H$ lie on a circle w
 
  The rest of the solution proceeds as in solution 1, which gives $\boxed{058}$
 
- 
-
-
- 
 
 
 
@@ -624,20 +593,14 @@ Let $m$ be the degree measurement of $\angle GCH$. Since $G,H$ lie on a circle w
  \[\overset{\Large\frown} {EF} = \overset{\Large\frown} {FG} = \overset{\Large\frown} {HI} = \overset{\Large\frown} {IA} = 2\varphi \implies\]
  \[\angle AGH = 2\varphi, \angle ACE = 10 \varphi.\]
 
- 
  \[BD||GH \implies \angle AJB = \angle AGH = 2 \varphi.\]
  \[\triangle AHG: \hspace{10mm}  \angle AHG = \beta = 180^\circ – 3 \varphi.\]$\hspace{10mm} \triangle ABJ:  \hspace{10mm} \angle BAG + \angle ABD = \alpha + \gamma = 180^\circ + 2 \varphi.$
 
  Let arc $\overset{\Large\frown} {AB} = 2\psi \implies$
-
- $\angle ACE = \frac {360^\circ – 8 \psi}{2}= 180^\circ – 4 \psi,  \angle ABD = \gamma =\frac {360^\circ – 6 \psi}{2} =180^\circ – 3 \psi.$$\gamma –  \beta = 3(\varphi – \psi) = 12^\circ \implies \psi = \varphi – 4^\circ \implies 10 \varphi = 180^\circ – 4(\varphi – 4^\circ) \implies 14 \varphi = 196^\circ \implies \varphi = 14^\circ.$
+$\angle ACE = \frac {360^\circ – 8 \psi}{2}= 180^\circ – 4 \psi,  \angle ABD = \gamma =\frac {360^\circ – 6 \psi}{2} =180^\circ – 3 \psi.$$\gamma –  \beta = 3(\varphi – \psi) = 12^\circ \implies \psi = \varphi – 4^\circ \implies 10 \varphi = 180^\circ – 4(\varphi – 4^\circ) \implies 14 \varphi = 196^\circ \implies \varphi = 14^\circ.$
 
  Therefore $\gamma = 180^\circ – 3 \cdot (14^\circ – 4^\circ) = 150^\circ \implies  \alpha = 180^\circ + 2 \cdot 14^\circ – 150^\circ = \boxed{\textbf{058}}.$
 
- 
-
-
- 
 
 
 	\item (\textit{AIME I 2015}) In the diagram below, $ABCD$ is a square. Point $E$ is the midpoint of $\overline{AD}$. Points $F$ and $G$ lie on $\overline{CE}$, and $H$ and $J$ lie on $\overline{AB}$ and $\overline{BC}$, respectively, so that $FGHJ$ is a square. Points $K$ and $L$ lie on $\overline{GH}$, and $M$ and $N$ lie on $\overline{AD}$ and $\overline{AB}$, respectively, so that $KLMN$ is a square. The area of $KLMN$ is 99. Find the area of $FGHJ$.
@@ -650,12 +613,6 @@ Let $m$ be the degree measurement of $\angle GCH$. Since $G,H$ lie on a circle w
                     \end{figure}
                     
 
-
- 
-
-
-
- 
  \textbf{Answer: }539
 
 
@@ -681,7 +638,6 @@ Now, examine $BC$. We know $BC=BJ+JC$, and triangles $\Delta BHJ$ and $\Delta JF
 
  Now, it is trivial to see that $[FJGH]=\left(\frac{x}{y}\right)^2[KLMN]=\left(\frac{7}{3}\right)^2\cdot 99=\boxed{539}.$
 
- 
 
 
 
@@ -719,19 +675,14 @@ Now, examine $BC$. We know $BC=BJ+JC$, and triangles $\Delta BHJ$ and $\Delta JF
  
  \[2 \cdot \frac{3\sqrt{11}}{\sqrt5} + \sqrt{5} \cdot \frac{\frac{4a\sqrt5}{7} - \frac{9\sqrt{11}}{2}}{2} = a\]
 
- 
  \[\Rightarrow 12\sqrt{11} + 5(\frac{4a\sqrt5}{7} - \frac{9\sqrt{11}}{2}) = 2\sqrt5a\]
 
- 
  \[\Rightarrow \frac{-21}{2}\sqrt{11} + \frac{20a\sqrt5}{7} = 2\sqrt5a\]
 
- 
  \[\Rightarrow -21\sqrt{11} = 2\sqrt5a\frac{14 - 20}{7}\]
 
- 
  \[\Rightarrow \frac{49\sqrt{11}}{4} = \sqrt5a\]
 
- 
  \[\Rightarrow 7\sqrt{11} = \frac{4a\sqrt{5}}{7}\]
 
  So our final answer is $(7\sqrt{11})^2 = \boxed{539}$.
@@ -799,8 +750,7 @@ You know whatever $n$ is, it has to have 3 digits, because if it had only two, t
 So the answer is $\boxed{695}$ which after a quick test, does indeed work.
 
  Note: This problem is VERY easy to bash out. I did this when I mocked this test, it gave me the answer in 5 min. Basically you just bash out all of the three digit numbers whose digit sum is 20 and you'll find (quickly) that the answer is $\boxed{695}$
-
- $\textcolor{red}{*}$ Note to author: Since we have $a_2+a_1+a_0=20$, this implies that $a_2$ must be at least $2$ (since $a_1+a_0 \le 18$), and therefore the first digit must ALWAYS carry. This is presumably the reason where the case where the second and third digits were carried but not the first was omitted, but for this reason cases (1) and (3) are also unnecessary.
+$\textcolor{red}{*}$ Note to author: Since we have $a_2+a_1+a_0=20$, this implies that $a_2$ must be at least $2$ (since $a_1+a_0 \le 18$), and therefore the first digit must ALWAYS carry. This is presumably the reason where the case where the second and third digits were carried but not the first was omitted, but for this reason cases (1) and (3) are also unnecessary.
 
  
 
@@ -969,20 +919,16 @@ Let $a_1=x, a_2=y, a_3=z$. First note that if any absolute value equals 0, then 
 Therefore, the only scenarios where $a_n=0$ is when any of the following are met:$|y-x|<2$ (280 options)$|z-y|<2$ (280 options, 80 of which coincide with option 1)$z=1$, $|y-x|=2$. (16 options, 2 of which coincide with either option 1 or option 2)Adding the total number of such ordered triples yields $280+280-80+16-2=\boxed{494}$.
 
  
-                \begin{itemize}
-                    \item Note to author:
-                \end{itemize}
-
-
-                Because $a_4 \ge 2z$, $a_5 \ge 4z$, $a_6 \ge 8z$, and $a_7 \ge 16z$ doesn't mean the function diverges. What if $z = 7$, $a_4 = 60$, and $a_5 = 30$ too?
+            \begin{itemize}
+        \item Note to author:
+            \end{itemize}
+            Because $a_4 \ge 2z$, $a_5 \ge 4z$, $a_6 \ge 8z$, and $a_7 \ge 16z$ doesn't mean the function diverges. What if $z = 7$, $a_4 = 60$, and $a_5 = 30$ too?
 
  
-                \begin{itemize}
-                    \item Note to the Note to author:
-                \end{itemize}
-
-
-                This isn't possible because the difference between is either 0, 1, or some number greater than 1. If $a_4 = 63\text{, then }a_5$ is either 0, 63, or some number greater than 63 (since it must be a multiple of $z$).
+            \begin{itemize}
+        \item Note to the Note to author:
+            \end{itemize}
+            This isn't possible because the difference between is either 0, 1, or some number greater than 1. If $a_4 = 63\text{, then }a_5$ is either 0, 63, or some number greater than 63 (since it must be a multiple of $z$).
 
  
 
@@ -1115,10 +1061,6 @@ Express $f(x)$ in terms of powers of $(x-4)$:
  \[a(2)^3 + c(2) = -12\]$a=2$ and $c=-14$
  \[|f(0)| = |2(-4)^3 - 14(-4)| = \boxed{072}\]
 
- 
-
-
- 
 
 
 
@@ -1272,8 +1214,7 @@ Angle bisectors motivate trig bash. Define angle $IBC = x$. Foot of perpendicula
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2015_11_Solution_Figure_1.png}
                     \end{figure}
                     Let $M$ be midpoint $BC, BM = x, AB = y, \angle IBM = \alpha.$
-
- $BI$ is the bisector of $\angle ABM$ in $\triangle ABM.$$BI = \frac {2 xy \cos \alpha}{x+y} = 8, \cos \alpha = \frac {x}{8} \implies \frac {x^2 y}{x+y} = 32.$
+$BI$ is the bisector of $\angle ABM$ in $\triangle ABM.$$BI = \frac {2 xy \cos \alpha}{x+y} = 8, \cos \alpha = \frac {x}{8} \implies \frac {x^2 y}{x+y} = 32.$
  \[y = \frac {32 x} {x^2 - 32}.\]$BC = 2x$ is integer, $5.5^2 < 32 \implies x \ge 6.$$BM < BI \implies x =\{ 6, 6.5, 7, 7.5 \}.$
 
  If $x > 6$ then $y$ is not integer. 
@@ -1444,25 +1385,19 @@ Let $x = \cos 1^\circ + i \sin 1^\circ$. Then from the identity
 
 Let $p=\sin1\sin3\sin5...\sin89$
 
- 
  \[p=\sqrt{\sin1\sin3\sin5...\sin177\sin179}\]
 
- 
  \[=\sqrt{\frac{\sin1\sin2\sin3\sin4...\sin177\sin178\sin179}{\sin2\sin4\sin6\sin8...\sin176\sin178}}\]
 
- 
  \[=\sqrt{\frac{\sin1\sin2\sin3\sin4...\sin177\sin178\sin179}{(2\sin1\cos1)\cdot(2\sin2\cos2)\cdot(2\sin3\cos3)\cdot....\cdot(2\sin89\cos89)}}\]
 
- 
  \[=\sqrt{\frac{1}{2^{89}}\frac{\sin90\sin91\sin92\sin93...\sin177\sin178\sin179}{\cos1\cos2\cos3\cos4...\cos89}}\]
-
- $=\sqrt{\frac{1}{2^{89}}}$ because of the identity $\sin(90+x)=\cos(x)$
+$=\sqrt{\frac{1}{2^{89}}}$ because of the identity $\sin(90+x)=\cos(x)$
 
  we want $\frac{1}{p^2}=2^{89}$
 
  Thus the answer is $2+89=\boxed{091}$
 
- 
 
 
 
@@ -1527,7 +1462,6 @@ Recall that $\sin\alpha\cdot \sin(60^{\circ}-\alpha)\cdot \sin(60^{\circ}+\alpha
  \begin{align*} P &=\frac{1}{4^{15}}\cdot \sin3^{\circ}\cdot \sin9^{\circ}\cdots\sin87^{\circ}\\ &=\frac{1}{4^{20}}\cdot \sin9^{\circ}\cdot \sin27^{\circ}\cdot \sin45^{\circ}\cdot \sin63^{\circ}\cdot \sin81^{\circ}\\ &=\frac{1}{4^{20}}\cdot \frac{\sqrt{2}}{2}\cdot \sin9^{\circ}\cdot \cos9^{\circ}\cdot \sin27^{\circ}\cdot \cos27^{\circ}\\ &=\frac{1}{4^{21}}\cdot \frac{\sqrt{2}}{2}\cdot \sin18^{\circ}\cdot \cos36^{\circ}=\frac{\sqrt{2}}{2^{45}} \end{align*}
 So we take reciprocal, $\frac 1P=2^{\frac{89}{2}}$, the desired answer is $\frac{1}{P^2}=2^{89}$ leads to answer $\boxed{091}$
 
- 
 
 
 
@@ -1543,7 +1477,6 @@ We have
  
  \[\left(\frac{\sin2^\circ \cdot \sin4^\circ \cdots \sin88^\circ}{\sin1^\circ \sin2^\circ \cdot \sin3^\circ \cdots \sin88^\circ \cdot \sin89^\circ}\right)^2\]
 
- 
  \[= \left(\frac{\sin2^\circ \cdot \sin4^\circ \cdots \sin88^\circ}{\sin1^\circ \sin2^\circ \cdot \sin3^\circ \cdots \sin 45^\circ \cdot \cos 44^\circ \cdot \cos 43^\circ \cdots \cos1^\circ}\right)^2.\]
 
  Using $\sin\alpha \cos\alpha = \frac{1}{2}\sin{2\alpha}$ gives
@@ -1551,15 +1484,12 @@ We have
  
  \[\left(\frac{\sin2^\circ \cdot \sin4^\circ \cdots \sin88^\circ}{\frac{1}{2} \sin2^\circ \cdot \frac{1}{2} \sin4^\circ \cdots \frac{1}{2} \sin88^\circ \cdot \sin45^\circ}\right) ^2\]
 
- 
  \[= \left(\frac{1}{(\frac{1}{2})^{44} \cdot \frac{\sqrt{2}}{2}}\right)^2\]
 
- 
  \[= 2^{89}.\]
 
  Thus, the answer is $2+89 = \boxed{091}.$
 
- 
 
 
 
@@ -1571,7 +1501,6 @@ Consider the product $\prod_{k=1}^{45} \csc^2(2k-1) = \prod_{k=45}^{1} \sec^2(2k
 
  From here, there are two ways to finish; the first is to recognize the well known sum $\sum_{n=0} ^{k} \binom{2k}{2n} = 2^(2k-1)$, from which we may plug in $k = 45$ to see $|P(-1)| = 2^(45*2-1) = 2^{89}$ to obtain the answer of $2+89=\boxed{091}$. Otherwise, you may split the previous sum; $\sum_{n=0} ^{45} \binom{90}{2n} = \sum_{n=0} ^{45} \binom{89}{2n-1} + \binom{89}{2n} = \sum_{n=0} ^{89} \binom{89}{n} = 2^{89}$, which also gives the correct answer. $\blacksquare$
 
- 
 
 
 
@@ -1588,7 +1517,6 @@ Let $g(x)=\frac{x^{90}-1}{x-1}$, we have
  \[\prod_{k=1}^{89}\sin{2k^{\circ}}=\frac{g(1)}{2^{89}}=\frac{90}{2^{89}}\]Therefore, the desired product evaluates to
  \[\prod_{k=1}^{45} \csc^2(2k-1)^\circ=\frac{\left(\prod_{k=1}^{45}\sin{2k^{\circ}}\right)^{2}}{\left(\prod_{k=1}^{90}\sin{k^{\circ}}\right)^2}=\frac{90}{2^{89}}\cdot \frac{2^{179}}{180}=2^{89}\]The requested sum is $2+89=\boxed{091}$
 
- 
 
 
 	\item (\textit{AIME I 2015}) For each integer $n \ge 2$, let $A(n)$ be the area of the region in the coordinate plane defined by the inequalities $1\le x \le n$ and $0\le y \le x \left\lfloor \sqrt x \right\rfloor$, where $\left\lfloor \sqrt x \right\rfloor$ is the greatest integer not exceeding $\sqrt x$. Find the number of values of $n$ with $2\le n \le 1000$ for which $A(n)$ is an integer.
@@ -1661,7 +1589,6 @@ By casework on $a\bmod{4}$, we find:\begin{array}{c|c|c|c}a \bmod 4 & \{S(a)\} &
  \[\sum_{k=0}^{7}4k+3=136\]However, we shall exclude $n=1$ and $n\in\{1002, 1004, \ldots, 1022\}$. The total number of values of $n$ is
  \[231+128+136-1-11=\boxed{483}\]
 
- 
 
 
 	\item (\textit{AIME I 2015}) A block of wood has the shape of a right circular cylinder with radius $6$ and height $8$, and its entire surface has been painted blue.  Points $A$ and $B$ are chosen on the edge of one of the circular faces of the cylinder so that $\overarc{AB}$ on that face measures $120^\text{o}$.  The block is then sliced in half along the plane that passes through point $A$, point $B$, and the center of the cylinder, revealing a flat, unpainted face on each half.  The area of one of these unpainted faces is $a\cdot\pi + b\sqrt{c}$, where $a$, $b$, and $c$ are integers and $c$ is not divisible by the square of any prime.  Find $a+b+c$.
@@ -1674,8 +1601,6 @@ By casework on $a\bmod{4}$, we find:\begin{array}{c|c|c|c}a \bmod 4 & \{S(a)\} &
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }053
 
 
@@ -1803,7 +1728,6 @@ We see that $B=0, D=-4C, D=3A$. WLOG, let $C=-3$. It follows that the equation f
  Therefore, the surface area element is
  \[\boxed{dS=\sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2}\,dx\,dy}.\]
 
- 
 
 
 \end{enumerate}

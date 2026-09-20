@@ -102,8 +102,6 @@ Let $A$ be Azar, $C$ be Carl, $J$ be Jon, and $S$ be Sergey. The $4$ circles rep
  $\textbf{Case 1:}$ $C$'s opponent for the semifinal is $A$
 
  The probability $C$'s opponent is $A$ is $\frac13$. Therefore the probability $C$ wins the semifinal in this case is $\frac13 \cdot \frac13$. The other semifinal game is played between $J$ and $S$, it doesn't matter who wins because $C$ has the same probability of winning either one. The probability of $C$ winning in the final is $\frac34$, so the probability of $C$ winning the tournament in case 1 is $\frac13 \cdot \frac13 \cdot \frac34$
-
- 
 $\textbf{Case 2:}$ $C$'s opponent for the semifinal is $J$ or $S$
 
  It doesn't matter if $C$'s opponent is $J$ or $S$ because $C$ has the same probability of winning either one. The probability $C$'s opponent is $J$ or $S$ is $\frac23$. Therefore the probability $C$ wins the semifinal in this case is $\frac23 \cdot \frac34$. The other semifinal game is played between $A$ and $J$ or $S$. In this case it matters who wins in the other semifinal game because the probability of $C$ winning $A$ and $J$ or $S$ is different. 
@@ -144,7 +142,6 @@ $\textbf{Case 2:}$ $C$'s opponent for the semifinal is $J$ or $S$
 
  Solve this equation will give us $l = \frac{17}{4},$ therefore $m+n=\boxed{021}.$
 
- 
 
 
 
@@ -163,8 +160,7 @@ To start, we find the height of the pyramid. By the volume of a pyramid formula,
 By the volume of a pyramid formula, we have that the height of the pyramid is $\frac{9}{2}$. Since the base is a square with side length 6, the simplest way to place it in the coordinate plane is to put the center of the square at the origin and let the base be on the $xy$ plane. Then, the vertices of the base would be $(3,3,0), (3,-3,0), (-3,3,0), (-3,-3,0)$ in some order. Also, let the vertex be  $(0,0,\frac{9}{2})$. Recall that the formula for a sphere is $(x-a)^2+(y-b)^2+(z-c)^2=r^2$ where the center is $(a,b,c)$ and the radius is $r$. Symmetry gives that $a=b=0$. Plug in $(3,3,0)$ and $(0,0,\frac{9}{2})$ and you get the system of equation 
 
  $18+c^2=r^2$
-
- $(\frac{9}{2}-c)^2=r^2$
+$(\frac{9}{2}-c)^2=r^2$
 
  Solving gives $c=1/4$ and $r=17/4$, so our answer is $17+4=\boxed{021}$.~\href{https://artofproblemsolving.com/wiki/index.php?title=Ddk001}{Ddk001}
 
@@ -281,7 +277,6 @@ Thus, we see that $\log_{10} \left(\dfrac{11}{101}\right) = a = \log_{20x} 22x$,
 
 By the change of base rule, we have $\frac{\log 22x}{\log 20x}=\frac{\log 202x}{\log 2x}$, or $\frac{\log 22 +\log x}{\log 20 +\log x}=\frac{\log 202 +\log x}{\log 2 +\log x}=k$. We also know that if $a/b=c/d$, then this also equals $\frac{a-c}{b-d}$. We use this identity and find that $k=\frac{\log 202 -\log 22}{\log 2 -\log 20}=-\log\frac{202}{22}=\log\frac{11}{101}$. The requested sum is $11+101=\boxed{112}.$
 
- 
 
 
 
@@ -312,8 +307,7 @@ Let $a$, $b$, and $c$ be the vertex of a triangle that satisfies this problem, w
  \[a - b = p_1\]
  \[b - c = p_2\]
  \[a - c = p_3\]
-
- $p_3 = a - c = a - b + b - c = p_1 + p_2$. Because $p_3$ is the sum of two primes, $p_1$ and $p_2$, $p_1$ or $p_2$ must be $2$. Let $p_1 = 2$, then $p_3 = p_2 + 2$. There are only $8$ primes less than $20$: $2, 3, 5, 7, 11, 13, 17, 19$. Only $3, 5, 11, 17$ plus $2$ equals another prime. $p_2 \in \{ 3, 5, 11, 17 \}$.
+$p_3 = a - c = a - b + b - c = p_1 + p_2$. Because $p_3$ is the sum of two primes, $p_1$ and $p_2$, $p_1$ or $p_2$ must be $2$. Let $p_1 = 2$, then $p_3 = p_2 + 2$. There are only $8$ primes less than $20$: $2, 3, 5, 7, 11, 13, 17, 19$. Only $3, 5, 11, 17$ plus $2$ equals another prime. $p_2 \in \{ 3, 5, 11, 17 \}$.
 
  Once $a$ is determined, $a = b+2$ and $b = c + p_2$. There are $18$ values of $a$ where $b+2 \le 20$, and $4$ values of $p_2$. Therefore the answer is $18 \cdot 4 = \boxed{\textbf{072}}$
 
@@ -347,10 +341,8 @@ As above, we must deduce that the sum of two primes must be equal to the third p
 To find the greatest value of $x_{76} - x_{16}$, $x_{76}$ must be as large as possible, and $x_{16}$ must be as small as possible. If $x_{76}$ is as large as possible, $x_{76} = x_{77} = x_{78} = \dots = x_{100} > 0$. If $x_{16}$ is as small as possible, $x_{16} = x_{15} = x_{14} = \dots = x_{1} < 0$. The other numbers between $x_{16}$ and $x_{76}$ equal to $0$. Let $a = x_{76}$, $b = x_{16}$. Substituting $a$ and $b$ into $|x_1| + |x_2| + \cdots + |x_{100}| = 1$ and $x_1 + x_2 + \cdots + x_{100} = 0$ we get:
  \[25a - 16b = 1\]
  \[25a + 16b = 0\]$a = \frac{1}{50}$, $b = -\frac{1}{32}$
+$x_{76} - x_{16} = a - b = \frac{1}{50} + \frac{1}{32} = \frac{41}{800}$. $m+n = \boxed{\textbf{841}}$
 
- $x_{76} - x_{16} = a - b = \frac{1}{50} + \frac{1}{32} = \frac{41}{800}$. $m+n = \boxed{\textbf{841}}$
-
- 
 
 
 
@@ -421,16 +413,12 @@ All positive terms sum to $\frac{1}{2}$ and all negative to $\frac{-1}{2}$.
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2022_7_Solution_Figure_1.png}
                     \end{figure}
                     
-
- $r_1 = O_1A = 24$, $r_2 = O_2B = 6$, $AG = BO_2 = r_2 = 6$, $O_1G = r_1 - r_2 = 24 - 6 = 18$, $O_1O_2 = r_1 + r_2 = 30$
-
- $\triangle O_2BD \sim \triangle O_1GO_2$, $\frac{O_2D}{O_1O_2} = \frac{BO_2}{GO_1}$,  $\frac{O_2D}{30} = \frac{6}{18}$, $O_2D = 10$
-
- $CD = O_2D + r_2 = 10 + 6 = 16$,
+$r_1 = O_1A = 24$, $r_2 = O_2B = 6$, $AG = BO_2 = r_2 = 6$, $O_1G = r_1 - r_2 = 24 - 6 = 18$, $O_1O_2 = r_1 + r_2 = 30$
+$\triangle O_2BD \sim \triangle O_1GO_2$, $\frac{O_2D}{O_1O_2} = \frac{BO_2}{GO_1}$,  $\frac{O_2D}{30} = \frac{6}{18}$, $O_2D = 10$
+$CD = O_2D + r_2 = 10 + 6 = 16$,
 
  $EF = 2EC = EA + EB = AB = GO_2 = \sqrt{(O_1O_2)^2-(O_1G)^2} = \sqrt{30^2-18^2} = 24$
-
- $DEF = \frac12 \cdot EF \cdot CD = \frac12 \cdot 24 \cdot 16 = \boxed{\textbf{192}}$
+$DEF = \frac12 \cdot EF \cdot CD = \frac12 \cdot 24 \cdot 16 = \boxed{\textbf{192}}$
 
  \textbf{Alternative Finish} Note that $\triangle{O_1 O_2 G} \sim \triangle{O_1 D A}$ by AA similarity. Setting up the ratio $\frac{18}{24}=\frac{24}{AB+8}$ and then substituting $AB$ with our known values will lead us to the same solution.
 
@@ -450,9 +438,8 @@ Let the center of the circle with radius $6$ be labeled $A$ and the center of th
  \[\frac{AP}{AP+30}=\frac14 \implies AP=10.\] Next, throw everything on a coordinate plane with $A=(0, 0)$ and $B = (30, 0)$. Then, $P = (-10, 0)$, and if $C = (x, y)$, we have 
  \[(x+10)^2+y^2=64,\] 
  \[x^2+y^2=36.\] Combining these and solving, we get $(x, y)=\left(-\frac{18}5, \frac{24}5\right)$. Notice now that $P$, $C$, and the intersections of the lines $x=6$ (the vertical tangent) with the tangent containing these points are collinear, and thus every slope between a pair of points will have the same slope, which in this case is $\frac{-\frac{18}5+10}{\frac{24}5}=\frac34$. Thus, the other two vertices of the desired triangle are $(6, 12)$ and $(6, -12)$. By the Shoelace Formula, the area of a triangle with coordinates $(-10, 0)$, $(6, 12)$, and $(6, -12)$ is 
- \[\frac12|-120-0-72-72+0-120|=\boxed{\textbf{192}}.\] 
+ \[\frac12|-120-0-72-72+0-120|=\boxed{\textbf{192}}.\]
 
- 
 
 
 
@@ -572,7 +559,6 @@ This is Solution 1 with a slick element included.  Solution 1 uses the concept t
 
  Adding all the cases and correcting for over-counting, we get $30 + 20 + 30 + 20 - 10 - 10 = \boxed {080}.$
 
- 
 
 
 
@@ -608,7 +594,6 @@ $2.$ $5 \mid n$, $24 \mid n+1$$n + 1= 5a + 1 = 24a$, $n = 24a - 1 = 20a + 4a - 1
 
 $30 + 20 + 30 + 20 - 10 - 10 = \boxed{\textbf{080}}$
 
- 
 
 
 
@@ -688,12 +673,11 @@ $n \in \{ 4, 5, 15, 24, 35, 44, 54, 55 \}$, there are $8$ values for $n \le 60$.
 Observe that if $1 \le n \le 60$ such that n is a solution to the desired equation, so is $n + 60\cdot m$, where m is an integer, $0 \le m \le 9$.So we only need to consider n from 1 to 60.As shown in Solution 2, there are 4 cases which we will split into 2 main cases:
 
  
-                \begin{itemize}
-                    \item Case 1: $4 \mid n$ or $6 \mid n$, $5 \mid (n+1)$\item Case 2: $4 \mid (n+1)$ or $6 \mid (n+1)$, $5 \mid n$
-                \end{itemize}
-
-
-                There are 4 values of n where $1 \le n \le 12$ satisfying $4 \mid n$ or $6 \mid n$.
+            \begin{itemize}
+        \item Case 1: $4 \mid n$ or $6 \mid n$, $5 \mid (n+1)$
+        \item Case 2: $4 \mid (n+1)$ or $6 \mid (n+1)$, $5 \mid n$
+            \end{itemize}
+            There are 4 values of n where $1 \le n \le 12$ satisfying $4 \mid n$ or $6 \mid n$.
 
  I claim that there are 4 values of $n \le 60$ satisfying Case 1. Suppose x is one value of n satisfying $4 \mid n$ or $6 \mid n$, and $n \le 12$.Hence the solutions satisfying $4 \mid n$ or $6 \mid n$, $n \le 60$ are of the form $x + 12m$, so the values of $n + 1$ are $x + 12m + 1 \equiv x + 2m + 1 \equiv 0$ (mod 5), so $2m \equiv 4 + 4x$ (mod 5) and hence the value of m is unique since $0 \le m \le 4$ to satisfy $1 \le n \le 60$ and 2 and 5 are relatively prime.
 
@@ -711,40 +695,31 @@ $n$ and $n + 1$ must be multiples of $4, 5,$ or $6.$ Note that multiples of $4$ 
 
  
 \textbf{Case 1:} $n \equiv 0 \pmod{4}$ and $n + 1 \equiv 0 \pmod{5}$
- \[n = 4x \implies 4x + 1 \equiv 0 \pmod{5} \implies x \equiv 1\pmod{5}.\] 
+ \[n = 4x \implies 4x + 1 \equiv 0 \pmod{5} \implies x \equiv 1\pmod{5}.\]
 
- 
  \[x = 5a_1 + 1 \implies n = 20a_1 + 4.\]
-
- $0 \leq a_1 \leq 29 \implies 30$ values for $n$ 
+$0 \leq a_1 \leq 29 \implies 30$ values for $n$ 
 
  
 \textbf{Case 2:} $n \equiv 0 \pmod{5}$ and $n + 1 \equiv 0 \pmod{4}$
  \[n = 5x \implies 5x + 1 \equiv 3 \pmod{4} \implies x \equiv 3\pmod{4}.\]
 
- 
  \[x = 4a_2 + 3 \implies n = 20a_2 + 15.\]
-
- $0 \leq a_2 \leq 29 \implies 30$ values for $n$ 
+$0 \leq a_2 \leq 29 \implies 30$ values for $n$ 
 
  
 \textbf{Case 3:} $n \equiv 0 \pmod{6}$ and $n + 1 \equiv 0 \pmod{5}$
  \[n = 6x \implies 6x \equiv 4 \pmod{5} \implies x \equiv 4\pmod{5}.\]
 
- 
- \[x = 5a_3 + 4 \implies n = 30a_3 + 24.\] 
-
- $0 \leq a_3 \leq 19 \implies 20$ values for $n$ 
+ \[x = 5a_3 + 4 \implies n = 30a_3 + 24.\]
+$0 \leq a_3 \leq 19 \implies 20$ values for $n$ 
 
  \textbf{Case 4:} $n \equiv 0 \pmod{5}$ and $n + 1 \equiv 0 \pmod{6}$
 
- 
  \[n = 5x \implies 5x \equiv 5 \pmod{6} \implies x \equiv 1\pmod{6}.\]
 
- 
  \[x = 6a_4 + 1 \implies n = 30a_4 + 5.\]
-
- $0 \leq a_4 \leq 19 \implies 20$ values for $n$ 
+$0 \leq a_4 \leq 19 \implies 20$ values for $n$ 
 
  
 \textbf{Case 1 and Case 3 overcount:} 
@@ -761,7 +736,6 @@ $n$ and $n + 1$ must be multiples of $4, 5,$ or $6.$ Note that multiples of $4$ 
  
 The answer is $30 + 30 + 20 + 20 - 10 - 10 = \boxed{80}.$
 
- 
 
 
 
@@ -790,8 +764,6 @@ Let $n = 60x + y$. Let $\lfloor \frac{n}{4} \rfloor = a$ and define the others a
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }244
 
 
@@ -819,7 +791,6 @@ We can use recursion to solve this problem:
 
  Note: we could deduce a general formula of this recursion: $f(n+1)=f(n)+N_a+\frac{n\cdot (N_a) \cdot (N_a-1)}{2}$, where $N_a$ is the number of points on $\ell_A$
 
- 
 
 
 
@@ -889,8 +860,7 @@ When a new point is added to a line, the number of newly bounded regions it crea
 We know the by Euler's Formula for planar graphs that $F-E+V=2$, where $F$ is the number of bounded faces, plus the outer region, $E$ is the number of edges, and $V$ is the number of vertices. Temporarily disregarding the intersections between the lines, we can easily calculate that:
 
  $V_{i}=7+5=12$
-
- $E_{i}=6+4+7\cdot5=45$
+$E_{i}=6+4+7\cdot5=45$
 
  However, the resulting graph is not planar, as the edges clearly intersect. To account for this, we must turn all intersection points into vertices, and update our values accordingly.
 
@@ -907,14 +877,11 @@ We know the by Euler's Formula for planar graphs that $F-E+V=2$, where $F$ is th
  $E=E_{i}+2\cdot210=465$
 
  Plugging these into Euler's Formula we get:$F-E+V=2$
-
- $F-465+222=2$
-
- $F=245$
+$F-465+222=2$
+$F=245$
 
  Disregarding the outer region, we conclude that our answer is $F-1=245-1=\boxed {244}$
 
- 
 
 
 	\item (\textit{AIME II 2022}) Find the remainder when
@@ -946,7 +913,6 @@ Doing simple algebra calculation will give the following equation:
  \[3 \cdot \sum_{i=3}^{40} \binom{i+1}{4} = 3 \binom{42}{5} = 42 \cdot 41 \cdot 39 \cdot 38\]
  \[=(40^2-2^2)(40^2-1^2) \equiv \boxed{004} ~(\text{mod}~ 1000)\]
 
- 
 
 
 
@@ -1038,8 +1004,6 @@ think about an n-gon. nc2= amount of ways to make an edge. (nc2)c2=amount of way
 
 	\item (\textit{AIME II 2022}) Let $ABCD$ be a convex quadrilateral with $AB=2, AD=7,$ and $CD=3$ such that the bisectors of acute angles $\angle{DAB}$ and $\angle{ADC}$ intersect at the midpoint of $\overline{BC}.$ Find the square of the area of $ABCD.$
 
-
- 
  \textbf{Answer: }180
 
 
@@ -1076,7 +1040,6 @@ think about an n-gon. nc2= amount of ways to make an edge. (nc2)c2=amount of way
 
  Finally, the square of the area is $(6\sqrt{5})^2=\boxed{180}$
 
- 
 
 
 
@@ -1158,14 +1121,12 @@ Denote by $M$ the midpoint of segment $BC$.Let points $P$ and $Q$ be on segment 
  Quadrilateral  $ABMC'$ is cyclic.Let $\angle A = 2\alpha.$ Then $\angle MBC' = \angle MC'B = \alpha.$
 
  Circle $BB'C'C$ centered at $M, BC$ is its diameter, $\angle BC'C = 90^\circ.$$\angle DMC' = \angle MC'B,$ since they both complete $\angle MC'C$ to $90^\circ.$
-
- $\angle MB'A = \angle MC'D,$ since they are the exterior angles of an isosceles $\triangle MB'C'.$$\triangle AMB' \sim \triangle MDC'$ by two angles.$\frac {AB'}{MC'} = \frac {MB'}{DC'}, MC' =\sqrt{AB' \cdot C'D} = \sqrt{6}.$
+$\angle MB'A = \angle MC'D,$ since they are the exterior angles of an isosceles $\triangle MB'C'.$$\triangle AMB' \sim \triangle MDC'$ by two angles.$\frac {AB'}{MC'} = \frac {MB'}{DC'}, MC' =\sqrt{AB' \cdot C'D} = \sqrt{6}.$
 
  The height dropped from $M$ to $AD$ is $\sqrt{MB'^2 - (\frac{B'C'}{2})^2} =\sqrt{6 - 1} = \sqrt{5}.$
 
  The areas of triangles $\triangle AMB'$ and $\triangle MC'B'$ are equal to $\sqrt{5},$ area of $\triangle MC'D$ is $\frac{3}{2} \sqrt{5}.$
 
- 
  \[\triangle AMB' = \triangle AMB, \triangle MC'D = \triangle MCD \implies\] The area of  $ABCD$ is $(1 + 2 + 3) \sqrt{5} = 6\sqrt{5} \implies 6^2 \cdot 5 = \boxed{180}.$
 
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
@@ -1263,8 +1224,6 @@ As in solution 4, let $X=AB\cap CD$, so $M$ is the incenter of $ADX$ and $XB=XC$
 	\item (\textit{AIME II 2022}) Let $a, b, x,$ and $y$ be real numbers with $a>4$ and $b>1$ such that
  \[\frac{x^2}{a^2}+\frac{y^2}{a^2-16}=\frac{(x-20)^2}{b^2-1}+\frac{(y-11)^2}{b^2}=1.\]Find the least possible value of $a+b.$
 
-
- 
  \textbf{Answer: }023
 
 
@@ -1293,7 +1252,6 @@ Denote $P = \left( x , y \right)$.
 
  Therefore, $a + b = \boxed{\textbf{(023) }}.$
 
- 
 
 
 	\item (\textit{AIME II 2022}) There is a polynomial $P(x)$ with integer coefficients such that
@@ -1341,7 +1299,6 @@ Because $0 < x < 1$, we have
 Note that $2022 = 210\cdot 9 +132$. Since the only way to express $132$ in terms of $105$, $70$, $42$, or $30$ is $132 = 30+30+30+42$, we are essentially just counting the number of ways to express $210*9$ in terms of these numbers. Since $210 = 2*105=3*70=5*42=7*30$, it can only be expressed as a sum in terms of only one of the numbers ($105$, $70$, $42$, or $30$). Thus, the answer is (by sticks and stones/stars and bars) 
  \[\binom{12}{3} = \boxed{\textbf{(220)}}\]
 
- 
 
 
 
@@ -1381,7 +1338,6 @@ Essentially we want the coefficient of $x^{2022}$ in the expansion
 
  This reduces to finding the coefficient of $x^{1890}$ for the expansion $(1 - x^{210})^{-4}$, which is $\binom{12}{3} = \fbox{220}$
 
- 
 
 
 
@@ -1463,16 +1419,11 @@ Therefore using $\lfloor \frac{999}{c} \rfloor$ stamps of value $c$, $\lfloor \f
  $\lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 = 97$. We can get the answer by solving this equation.
 
  $c > \lfloor \frac{c-1}{b} \rfloor + b-1$
-
- $\frac{999}{c} + c > \lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 = 97$
-
- $c^2 - 97c + 999 > 0$, $c > 85.3$ or $c < 11.7$
-
- $\lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 > \frac{999}{c}$
-
- $97 > \frac{999}{c}$, $c>10.3$
-
- \begin{verbatim}
+$\frac{999}{c} + c > \lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 = 97$
+$c^2 - 97c + 999 > 0$, $c > 85.3$ or $c < 11.7$
+$\lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 > \frac{999}{c}$
+$97 > \frac{999}{c}$, $c>10.3$
+\begin{verbatim}
 $\text{Case } 1:$ $10.3 < c < 11.7 \rightarrow c = 11 \rightarrow \lfloor \frac{999}{11} \rfloor + \lfloor \frac{10}{b} \rfloor + b-1 = 97$$\lfloor \frac{10}{b} \rfloor + b = 8$, $b=7$
 \end{verbatim}
 
@@ -1498,7 +1449,6 @@ $c = 89 \rightarrow$ $\lfloor \frac{999}{89} \rfloor + \lfloor \frac{88}{b} \rfl
 
 The $3$ least values of $c$ are $11$, $88$, $89$. $11 + 88+ 89 = \boxed{\textbf{188}}$
 
- 
 
 
 	\item (\textit{AIME II 2022}) Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and $O_2$, respectively. A third circle $\Omega$ passing through $O_1$ and $O_2$ intersects $\omega_1$ at $B$ and $C$ and $\omega_2$ at $A$ and $D$, as shown. Suppose that $AB = 2$, $O_1O_2 = 15$, $CD = 16$, and $ABO_1CDO_2$ is a convex hexagon. Find the area of this hexagon.
@@ -1509,8 +1459,6 @@ The $3$ least values of $c$ are $11$, $88$, $89$. $11 + 88+ 89 = \boxed{\textbf{
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }140
 
 
@@ -1542,7 +1490,6 @@ First observe that $AO_2 = O_2D$ and $BO_1 = O_1C$. Let points $A'$ and $B'$ be 
                     \end{figure}
                     
 
- 
 
 
 
@@ -1615,7 +1562,6 @@ In $\triangle O CD$,
  \begin{align*} {\textrm Area} \ ABO_1CDO_2 & = {\textrm Area} \ \triangle O_3 AB + {\textrm Area} \ \triangle O_3  BO_1 + {\textrm Area} \ \triangle O_3 O_1 C \\ & \quad + {\textrm Area} \ \triangle O_3 C D + {\textrm Area} \ \triangle O_3 D O_2 + {\textrm Area} \ \triangle O_3 O_2 A \\ & = \frac{1}{2} r^2 \left( \sin \left( 2 \theta - \alpha - \beta \right) + \sin \alpha + \sin \alpha + \sin \left( 360^\circ - 2 \theta - \alpha - \beta \right) + \sin \beta + \sin \beta \right) \\ & = \frac{1}{2} r^2 \left( \sin \left( 2 \theta - \alpha - \beta \right) - \sin \left( 2 \theta + \alpha + \beta \right) + 2 \sin \alpha + 2 \sin \beta  \right) \\ & = r^2 \left( - \cos 2 \theta \sin \left( \alpha + \beta \right) + \sin \alpha + \sin \beta \right) \\ & = r^2 \left( \left( 1 - 2 \cos^2 \theta \right) 2 \sin \frac{\alpha + \beta}{2} \cos \frac{\alpha + \beta}{2}  + \sin \alpha + \sin \beta \right) \\ & = \boxed{\textbf{(140) }} . \end{align*}
 
 
- 
 
 
 
@@ -1638,7 +1584,6 @@ In $\triangle O CD$,
 
  The height of this triangle is $\sqrt{15^2-9^2} = 12.$ The area of $A'CDB'$ is $108.$
 
- 
  \[\sin \angle B'CD  = \frac{12}{15} = \frac{4}{5},\]
  \[\angle B'CD +  \angle B'O_2 D = 180^o \implies \sin \angle B'O_2 D =  \frac{4}{5}.\]
 
@@ -1749,8 +1694,6 @@ eJMaSc
  \[BD\times x + 16x = BC\times DO_1\]
  \[BD\times (15-x) + 2(15-x) = AD\times BO_2\]
 
- 
-
  \[2CO_2 + BC\times (15-x) = AC\times BO_2\]
  \[2DO_1 + AD\times x = BD\times AO_1\]
  \[BO_2\times x + CO_2\times x = 15BC\]
@@ -1758,7 +1701,6 @@ eJMaSc
  \[BC\times (15-x) + 16BO_2 = BD\times CO_2\]
  \[AO_1\times (15-x) + DO_1\times (15-x) = 15AD\]
 
- 
  \[AO_1\times CO_2 + x(15-x) = 15AC\]
  \[BC\times AD + 2\times 16 = AC\times BD\]
  \[BO_2\times DO_1 + x(15-x) = 15BD\]

@@ -122,7 +122,7 @@ def get_contest_metadata_from_link(contest,elem) :
     if contest == 'AIME' :
         temp = re.search(PATTERN_VERSION[contest],link)
         vers = temp.group(1) if (temp and temp.group(1)) else 'I'
-    elif contest in ['AMC_8','AMC_10'] :
+    elif contest in ['AMC_8','AMC_10','AMC_12'] :
         temp = re.search(PATTERN_VERSION[contest],link)
         vers = temp.group(1)
         if contest == 'AMC_8' :

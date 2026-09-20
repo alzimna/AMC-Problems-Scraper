@@ -13,12 +13,12 @@
 Let our number be $10a + b$, $a,b \neq 0$. Then we have two conditions: $10a + b \equiv 10a \equiv 0 \pmod{b}$ and $10a + b \equiv b \pmod{a}$, or $a$ divides into $b$ and $b$ divides into $10a$. Thus $b = a, 2a,$ or $5a$ (note that if $b = 10a$, then $b$ would not be a digit).  
 
  
-                \begin{itemize}
-                    \item For $b = a$, we have $n = 11a$ for nine possibilities, giving us a sum of $11 \cdot \frac {9(10)}{2} = 495$.\item For $b = 2a$, we have $n = 12a$ for four possibilities (the higher ones give $b > 9$), giving us a sum of $12 \cdot \frac {4(5)}{2} = 120$.\item For $b = 5a$, we have $n = 15a$ for one possibility (again, higher ones give $b > 9$), giving us a sum of $15$.
-                \end{itemize}
-
-
-                If we ignore the case $b = 0$ as we have been doing so far, then the sum is $495 + 120 + 15 = \boxed{630}$.
+            \begin{itemize}
+        \item For $b = a$, we have $n = 11a$ for nine possibilities, giving us a sum of $11 \cdot \frac {9(10)}{2} = 495$.
+        \item For $b = 2a$, we have $n = 12a$ for four possibilities (the higher ones give $b > 9$), giving us a sum of $12 \cdot \frac {4(5)}{2} = 120$.
+        \item For $b = 5a$, we have $n = 15a$ for one possibility (again, higher ones give $b > 9$), giving us a sum of $15$.
+            \end{itemize}
+            If we ignore the case $b = 0$ as we have been doing so far, then the sum is $495 + 120 + 15 = \boxed{630}$.
 
  
 
@@ -29,7 +29,6 @@ Let our number be $10a + b$, $a,b \neq 0$. Then we have two conditions: $10a + b
 By testing every 2-digit number, we can list out all of the possibilities: 
  \[11+12+15+22+24+33+36+44+48+55+66+77+88+99=\boxed{630}.\]
 
- 
 
 
 
@@ -79,7 +78,6 @@ We plug that into our very first formula, and get:
  \begin{align*}\frac{49x+1}{50}&=x-13 \\ 49x+1&=50x-650 \\ x&=\boxed{651}.\end{align*}
 
 
- 
 
 
 
@@ -131,7 +129,6 @@ As in Solution 2, observe that if $r$ is a root, then $\left(\frac{1}{2}-r\right
  \[2\cdot\frac{1}{4}\cdot\binom{2001}{1}y^{2000}-0y^{1999}+\dotsb = 0,\] so by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's formulae}, the sum of the roots for $y$ is 0. Since the original equation in $x$ has degree $2000$, there are also $2000$ roots for $x$, all of which are distinct since there are no multiple roots. Therefore, letting these roots be $x_n = y_n+\frac{1}{4}$ for $1 \leq n \leq 2000$, their sum is 
  \[\sum_{n=1}^{2000}\left(y_n+\frac{1}{4}\right) = \sum_{n=1}^{2000}y_n + 2000 \cdot \frac{1}{4} = 0 + 500 =\boxed{500}.\]
 
- 
 
 
 
@@ -142,7 +139,6 @@ We begin by introducing a substitution. Let $x=\frac{1}{4}-y$. Substituting this
  \[2\left(\frac{1}{4}\right)^{2001}+2\binom{2001}{2}\left(\frac{1}{4}\right)^{1999}y^2+\cdots+2\binom{2001}{2000}\left(\frac{1}{4}\right)y^{2000}=0.\] We can clean it up by simply multiplying both sides by $2$, giving, 
  \[\frac{1}{4^{2000}}+\binom{2001}{2}\frac{y^2}{4^{1998}}+\binom{2001}{4}\frac{y^4}{4^{1996}}+\cdots+\binom{2001}{2000}y^{2000}.\] At first it may seem like we haven't progressed whatsoever, but we can revisit what the problem is asking. We aren't trying to find every root of this, but rather the sum of $\frac{1}{4}$ minus every root. Assume the roots were $r_1,r_2,...$. This means that our answer would be $\frac{1}{4}n-(r_1+r_2+...)$, where $n$ is the number of roots. By Vieta's formulas, $r_1+r_2+...=-\frac{0}{\binom{2001}{2000}}=0$. Thus all we need to find is $\frac{1}{4}n$, which is $\frac{1}{4}$ of the total number of roots. By the fundamental theorem of algebra, there are $2000$ roots of this polynomial. This gives us a final answer of $\frac{1}{4}\cdot 2000$, which is $\boxed{500}$
 
- 
 
 
 	\item (\textit{AIME I 2001}) In triangle $ABC$, angles $A$ and $B$ measure $60$ degrees and $45$ degrees, respectively. The bisector of angle $A$ intersects $\overline{BC}$ at $T$, and $AT=24$. The area of triangle $ABC$ can be written in the form $a+b\sqrt{c}$, where $a$, $b$, and $c$ are positive integers, and $c$ is not divisible by the square of any prime. Find $a+b+c$.
@@ -160,8 +156,7 @@ After chasing angles, $\angle ATC=75^{\circ}$ and $\angle TCA=75^{\circ}$, meani
  Using law of sines on $\triangle ABC$, we can create the following equation:
 
  $\frac{24}{\sin(\angle ABC)}$ $=$ $\frac{BC}{\sin(\angle BAC)}$
-
- $\angle ABC=45^{\circ}$ and $\angle BAC=60^{\circ}$, so $BC = 12\sqrt{6}$.
+$\angle ABC=45^{\circ}$ and $\angle BAC=60^{\circ}$, so $BC = 12\sqrt{6}$.
 
  We can then use the Law of Sines area formula $\frac{1}{2} \cdot BC \cdot AC \cdot \sin(\angle BCA)$ to find the area of the triangle.
 
@@ -170,12 +165,9 @@ After chasing angles, $\angle ATC=75^{\circ}$ and $\angle TCA=75^{\circ}$, meani
  $\sin(75)$ $=$ $\frac{\sqrt{6} + \sqrt{2}}{4}$
 
  Therefore, the area of the triangle is $\frac{\sqrt{6} + \sqrt{2}}{4}$ $\cdot$ $24$ $\cdot$ $12\sqrt{6}$ $\cdot$ $\frac{1}{2}$
+$72\sqrt{3} + 216$
+$72 + 3 + 216 =$ $\boxed{291}$
 
- $72\sqrt{3} + 216$
-
- $72 + 3 + 216 =$ $\boxed{291}$
-
- 
 
 
 
@@ -212,7 +204,6 @@ After drawing line $AT$, we see that we have two triangles: $\triangle ABT,$ wit
 
  Adding this to $\triangle ATC$ we get a total sum of $216 + 72\sqrt{3}.$ Thus, $a + b + c$ would be $216 + 72 + 3 = \boxed{291}.$
 
- 
 
 
 
@@ -225,7 +216,6 @@ Recall the triangle area via sine formula $\frac{ab\sin{C}}{2}$. We notice that 
  \[=216 + 72\sqrt{3}\]
  \[\Longrightarrow 216+72+3=\boxed{291}.\]
 
- 
 
 
 	\item (\textit{AIME I 2001}) An equilateral triangle is inscribed in the ellipse whose equation is $x^2+4y^2=4$. One vertex of the triangle is $(0,1)$, one altitude is contained in the y-axis, and the length of each side is $\sqrt{\frac mn}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -245,7 +235,6 @@ Recall the triangle area via sine formula $\frac{ab\sin{C}}{2}$. We notice that 
                     \end{figure}
                     
 
- 
 
 
 
@@ -262,7 +251,6 @@ Denote the vertices of the triangle $A,B,$ and $C,$ where $B$ is in \href{https:
  It is clear that the value of $y_{0}$ is irrelevant to the length of $BC$. Our answer is
  \[BC = 2 \cdot \frac {8\sqrt {3}}{13}=\sqrt {4\left(\frac {8\sqrt {3}}{13}\right)^{2}} = \sqrt {\frac {768}{169}}\implies m + n = \boxed{937}.\]
 
- 
 
 
 
@@ -298,8 +286,7 @@ Instead of using the distance between $(x,\frac {\sqrt{4-x^2}}{2})$ and $(0,1)$,
  \[4-x^2=12x^2-8\sqrt{3}x+4\]
  \[8\sqrt{3}x=13x^2\]
  \[x=\frac {8\sqrt{3}}{13}\]
-
- $x=\frac {8\sqrt{3}}{13}$, so $2x=\sqrt{\frac{768}{169}}$, and the answer is $768+169=\boxed{937}$.
+$x=\frac {8\sqrt{3}}{13}$, so $2x=\sqrt{\frac{768}{169}}$, and the answer is $768+169=\boxed{937}$.
 
  
 
@@ -318,10 +305,8 @@ Since the altitude goes along the $y$ axis, this means that the base is a horizo
  $x^2 + (y-1)^2 = 4x^2\implies (y-1)^2 = 3x^2$
 
  Now, with the equation of the ellipse:$x^2 + 4y^2 = 4$
-
- $x^2 = 4-4y^2$
-
- $3x^2 = 12-12y^2$
+$x^2 = 4-4y^2$
+$3x^2 = 12-12y^2$
 
  Substituting, 
 
@@ -355,7 +340,6 @@ Denote $(0,1)$ as vertex $A,$ $B$ as the vertex to the left of the $y$-axis and 
  \[4x_0^2=\frac{768}{169}\]which means our desired answer is
  \[768+169=\boxed{937}\]
 
- 
 
 
 
@@ -387,10 +371,6 @@ Denote $(0,1)$ as vertex $A,$ $B$ as the vertex to the left of the $y$-axis and 
  \[13mn=8n\sqrt{12mn}.\] Dividing both sides by $n$ gives us, $13m=8\sqrt{12mn}$. We can finally square both sides to get $169m^2=768mn$. Dividing both sides by $m$ gives $169m=768n$. Hence, 
  \[\frac{m}{n}=\frac{768}{169}.\] Since $m$ and $n$ are relatively prime, we see that $m=768$, and $n=169$. Therefore $m+n=768+169=\boxed{937}$
 
- 
-
-
- 
 
 
 
@@ -413,7 +393,6 @@ Notice that $x^2+4y^2=4$ can be rewritten as $(x)^2+(2y)^2=2^2$. The points of t
 Consider the transformation $(x,y)$ to $(x/2, y).$ This sends the ellipse to the unit circle. If we let $n$ be one-fourth of the side length of the triangle, the equilateral triangle is sent to an isosceles triangle with side lengths $2n, n\sqrt{13}, n\sqrt{13}.$ Let the triangle be $ABC$ such that $AB=AC.$ Let the foot of the altitude from A be $X.$ Then $BX=n,$ and $AX=2n\sqrt{3}.$ Let $C$ be a point such that $AC$ is a diameter of the unit circle. Then $XC=2-2n\sqrt{3}.$ Using power of a point on X,
  \[n^2=2n\sqrt{3}(2-2n\sqrt{3})\]Simplifying gets us to $13n^2=4n\sqrt{3}.$ Then, $n=\dfrac{4\sqrt{3}}{13}$ which means the side length is $\dfrac{16\sqrt{3}}{13}=\sqrt{\dfrac{768}{169}}.$Thus, the answer is $768+169=\boxed{937}.$
 
- 
 
 
 	\item (\textit{AIME I 2001}) A fair die is rolled four times. The probability that each of the final three rolls is at least as large as the roll preceding it may be expressed in the form $m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -472,12 +451,12 @@ If we take any \href{https://artofproblemsolving.com/wiki/index.php?title=Combin
 Call the dice rolls $a, b, c, d$. The difference between the $a$ and $d$ distinguishes the number of possible rolls there are. 
 
  
-                \begin{itemize}
-                    \item If $a - d = 0$, then the values of $b,\ c$ are set, and so there are $6$ values for $a,\ d$.\item If $a - d = 1$, then there are ${3\choose2} = 3$ ways to arrange for values of $b,\ c$, but only $5$ values for $a,\ d$.\item If $a - d = 2$, then there are ${4\choose2} = 6$ ways to arrange $b, c$, and there are only $6 - 2 = 4$ values for $a, d$.
-                \end{itemize}
-
-
-                Continuing, we see that the sum is equal to $\sum_{i = 0}^{5}{i+2\choose2}(6 - i) = 6 + 15 + 24 + 30 + 30 + 21 = 126$. The requested probability is $\frac{126}{6^4} = \frac{7}{72}$ and our answer is $\boxed{79}$.
+            \begin{itemize}
+        \item If $a - d = 0$, then the values of $b,\ c$ are set, and so there are $6$ values for $a,\ d$.
+        \item If $a - d = 1$, then there are ${3\choose2} = 3$ ways to arrange for values of $b,\ c$, but only $5$ values for $a,\ d$.
+        \item If $a - d = 2$, then there are ${4\choose2} = 6$ ways to arrange $b, c$, and there are only $6 - 2 = 4$ values for $a, d$.
+            \end{itemize}
+            Continuing, we see that the sum is equal to $\sum_{i = 0}^{5}{i+2\choose2}(6 - i) = 6 + 15 + 24 + 30 + 30 + 21 = 126$. The requested probability is $\frac{126}{6^4} = \frac{7}{72}$ and our answer is $\boxed{79}$.
 
  
 
@@ -497,7 +476,11 @@ AAAA
 
  
             \begin{enumerate}
-                \item Now, for the first case, there are ${6\choose4} = 15$ ways for this. We do not have to consider the order because the combination counts only one of the permutations; we can say that it counts the correct (ascending order) permutation.\item Second case: ${6\choose3} = 20$ ways to pick 3 numbers, ${3\choose1}$ ways to pick 1 of those 3 to duplicate. A total of 60 for this case.\item Third case: ${6\choose2}=15$ ways to pick 2 numbers. We will duplicate both, so nothing else in this case matters.\item Fourth case: ${6\choose2} = 15$ ways to pick 2 numbers. We pick one to duplicate with ${2\choose1} = 2$, so there are a total of 30 in this case.\item Fifth case: ${6\choose1} = 6$; all get duplicated so nothing else matters.
+        \item Now, for the first case, there are ${6\choose4} = 15$ ways for this. We do not have to consider the order because the combination counts only one of the permutations; we can say that it counts the correct (ascending order) permutation.
+        \item Second case: ${6\choose3} = 20$ ways to pick 3 numbers, ${3\choose1}$ ways to pick 1 of those 3 to duplicate. A total of 60 for this case.
+        \item Third case: ${6\choose2}=15$ ways to pick 2 numbers. We will duplicate both, so nothing else in this case matters.
+        \item Fourth case: ${6\choose2} = 15$ ways to pick 2 numbers. We pick one to duplicate with ${2\choose1} = 2$, so there are a total of 30 in this case.
+        \item Fifth case: ${6\choose1} = 6$; all get duplicated so nothing else matters.
             \end{enumerate}
             There are a total of $6^4$ possible dice rolls. 
 
@@ -505,7 +488,6 @@ AAAA
 
  $\frac{m}{n} = \frac{15 + 60 + 15 + 30 + 6}{6^4} = \frac{126}{6^4} = \frac{7}{72}$Therefore, our answer is $\boxed{079}$
 
- 
 
 
 
@@ -524,12 +506,11 @@ Consider the number of possible dice roll combinations which work after $1$ roll
 In a manner similar to the above solution, instead consider breaking it down into two sets of two dice rolls. The first \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subset} must have a maximum value which is $\le$ the minimum value of the second subset. 
 
  
-                \begin{itemize}
-                    \item If the first subset ends in a 1, there is $1$ such subset and there are $6 + 5 + 4 + 3 + 2 + 1 = \frac{6}{2}(6 + 1) = 21$ ways of making the second subset.\item If the first subset ends in a 2, there is $2$ such subsets and there are $5 + \ldots + 1 = \frac{5}{2}(5 + 1) = 15$ ways of making the second subset.
-                \end{itemize}
-
-
-                Thus, the number of combinations is $\sum_{i=1}^6 i \cdot \left(\frac{(7 - i)(8 - i)}{2}\right) = 21 + 30 + 30 + 24 + 15 + 6 = 126$, and the probability again is $\frac7{72}$, giving $m+n=\boxed{079}$.
+            \begin{itemize}
+        \item If the first subset ends in a 1, there is $1$ such subset and there are $6 + 5 + 4 + 3 + 2 + 1 = \frac{6}{2}(6 + 1) = 21$ ways of making the second subset.
+        \item If the first subset ends in a 2, there is $2$ such subsets and there are $5 + \ldots + 1 = \frac{5}{2}(5 + 1) = 15$ ways of making the second subset.
+            \end{itemize}
+            Thus, the number of combinations is $\sum_{i=1}^6 i \cdot \left(\frac{(7 - i)(8 - i)}{2}\right) = 21 + 30 + 30 + 24 + 15 + 6 = 126$, and the probability again is $\frac7{72}$, giving $m+n=\boxed{079}$.
 
  
 
@@ -546,7 +527,6 @@ If you're too tired to think about any of the above smart transformations of the
  \[N = \sum_{n=1}^{6} N_{3}(n)\]and
  \[P = \frac{N}{6^4}\]
 
- 
 
 
 
@@ -563,9 +543,8 @@ Lets try casework and observe the cases. Notice that if the last roll is a $1$, 
 This is equivalent to picking a four-element sequence of $\{1, 2, 3, 4, 5, 6\}$ with repetition. Notice that once the sequence is picked, there is one and only one way to order these so that they form a sequence of rolls satisfying our conditions. 
 
  Now count the number of such four-element sequences, let $a$ be the number of $1$s in the sequence, $b$ be the number of $2$s, $c$ $3$s, $d$ $4$s, $e$ $5$s, and $f$ $6$s. Now we see that we must have 
- \[a + b + c + d + e + f = 4\] with $a, b, c, d, e, f$ being nonnegative integers since there are a total of $4$ numbers picked. The number of solutions to this is $\dbinom{9}{4},$ so our total number is equal to $\dfrac{\binom{9}{4}}{6^4} = \dfrac{7}{72},$ making our answer $\boxed{079}.$ 
+ \[a + b + c + d + e + f = 4\] with $a, b, c, d, e, f$ being nonnegative integers since there are a total of $4$ numbers picked. The number of solutions to this is $\dbinom{9}{4},$ so our total number is equal to $\dfrac{\binom{9}{4}}{6^4} = \dfrac{7}{72},$ making our answer $\boxed{079}.$
 
- 
 
 
 
@@ -663,10 +642,6 @@ If we take the probability for only two rolls, we see that if the first roll is 
 More directly than Solution 2, we have 
  \[DE=BC\left(\frac{h_a-r}{h_a}\right)=20\left(1-\frac{r}{\frac{[ABC]}{\frac{BC}{2}}}\right)=20\left(1-\frac{10r}{sr}\right)=20\left(1-\frac{10}{\frac{63}{2}}\right)=\frac{860}{63}\implies \boxed{923}.\]
 
- 
-
-
- 
 
 
 
@@ -725,7 +700,6 @@ Because ${AP}$ is the angle bisector of $<A$, we can simply calculate it using S
 
  Now because $\triangle{APE} ~ \triangle{ABC}$, we can find ${DE}$ by $\frac{AO}{AP} \cdot 20$. Dividing and simplifying, we see that $\frac{1}{21}\cdot\frac{43}{3}\cdot20 = \frac{860}{63}$. So the answer is $\boxed{923}$
 
- 
 
 
 
@@ -845,7 +819,6 @@ By the barycentric area formula, our desired ratio is equal to
  \begin{align*} \begin{vmatrix} 1-p & p & 0 \\  0 & 1-q & q  \\  r & 0 & 1-r \notag \end{vmatrix} &=1-p-q-r+pq+qr+pr\\ &=1-(p+q+r)+\frac{(p+q+r)^2-(p^2+q^2+r^2)}{2}\\ &=1-\frac{2}{3}+\frac{\frac{4}{9}-\frac{2}{5}}{2}\\ &=\frac{16}{45}, \end{align*}
  so the answer is $\boxed{061}$
 
- 
 
 
 
@@ -860,8 +833,6 @@ Since the only conditions are that $p + q + r = \frac{2}{3}$ and $p^2 + q^2 + r^
 
 	\item (\textit{AIME I 2001}) Let $S$ be the set of points whose coordinates $x,$ $y,$ and $z$ are integers that satisfy $0\le x\le2,$ $0\le y\le3,$ and $0\le z\le4.$  Two distinct points are randomly chosen from $S.$  The probability that the midpoint of the segment they determine also belongs to $S$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
-
- 
  \textbf{Answer: }200
 
 
@@ -871,18 +842,15 @@ Since the only conditions are that $p + q + r = \frac{2}{3}$ and $p^2 + q^2 + r^
 The distance between the $x$, $y$, and $z$ coordinates must be even so that the midpoint can have integer coordinates. Therefore, 
 
  
-                \begin{itemize}
-                    \item For $x$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, $(0,2)$, and $(2,0)$, $5$ possibilities.\item For $y$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, 
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item For $x$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, $(0,2)$, and $(2,0)$, $5$ possibilities.
+        \item For $y$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, 
+            \end{itemize}
+            
 
 
 	\item (\textit{AIME I 2001}) In a rectangular array of points, with 5 rows and $N$ columns, the points are numbered consecutively from left to right beginning with the top row.  Thus the top row is numbered 1 through $N,$ the second row is numbered $N + 1$ through $2N,$ and so forth.  Five points, $P_1, P_2, P_3, P_4,$ and $P_5,$ are selected so that each $P_i$ is in row $i.$  Let $x_i$ be the number associated with $P_i.$  Now renumber the array consecutively from top to bottom, beginning with the first column.  Let $y_i$ be the number associated with $P_i$ after the renumbering.  It is found that $x_1 = y_2,$ $x_2 = y_1,$ $x_3 = y_4,$ $x_4 = y_5,$ and $x_5 = y_3.$  Find the smallest possible value of $N.$
 
-
- 
  \textbf{Answer: }149
 
 
@@ -902,8 +870,7 @@ Let each point $P_i$ be in column $c_i$. The numberings for $P_i$ can now be def
  \[18 c_2 \equiv 2 \pmod{31}\]
 
  Thus the smallest $c_2$ might be is $7$ and by substitution $N = 24 \cdot 7 - 19 = 149$
-
- \begin{verbatim}
+\begin{verbatim}
 Note: In this problem there are two "groups" of equations that are linked together, that is $(1) + (2)$ and $(3) + (4) + (5)$. For your second congruence used to narrow down $N$, you can use any one of $(3), (4), (5)$. Moreover, you can directly solve for N. The other two equations and the alternate continuation are given below:
 \end{verbatim}
 
@@ -921,8 +888,7 @@ $73N=124c_4-35$ [combined equation]
 
  
 $89N=124c_5-74$
-
- $N\equiv 50\pmod{124}$Continue as above.
+$N\equiv 50\pmod{124}$Continue as above.
 
  
 Check to make sure the values of each $c$ fit the conditions of the problem.The column values can also easily be found by substitution
@@ -952,8 +918,6 @@ As these are all positive and less than $N$, $\boxed{149}$ is the solution.
 
 	\item (\textit{AIME I 2001}) A sphere is inscribed in the tetrahedron whose vertices are $A = (6,0,0), B = (0,4,0), C = (0,0,2),$ and $D = (0,0,0).$  The radius of the sphere is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
-
- 
  \textbf{Answer: }005
 
 
@@ -980,8 +944,6 @@ As these are all positive and less than $N$, $\boxed{149}$ is the solution.
 
 	\item (\textit{AIME I 2001}) In a certain circle, the chord of a $d$-degree arc is 22 centimeters long, and the chord of a $2d$-degree arc is 20 centimeters longer than the chord of a $3d$-degree arc, where $d < 120.$  The length of the chord of a $3d$-degree arc is $- m + \sqrt {n}$ centimeters, where $m$ and $n$ are positive integers.  Find $m + n.$
 
-
- 
  \textbf{Answer: }174
 
 
@@ -1180,7 +1142,6 @@ Let $w_n$ be the number of possible ways if the last house has mail, and $b_n$ b
 
  Recursing all the way up to $b_{19}$ and $w_{19}$, we get $100 + 251 = \boxed{351}$
 
- 
 
 
 
@@ -1221,7 +1182,6 @@ Like the previous solutions we use $1$s and $0$s to indicate whether a house get
  
  \[\sum_n \binom{n-1}{26-2n} = \binom{12}{0} + \binom{11}{2} + \binom{10}{4} + \binom{9}{6} + \binom{8}{8} = 1 + 55 + 210 + 84 + 1 = 351.\]
 
- 
 
 
 
@@ -1235,8 +1195,6 @@ When we see this problem, we immediately think of recursion. Let $a_k$ be the po
 
 	\item (\textit{AIME I 2001}) The numbers $1, 2, 3, 4, 5, 6, 7,$ and $8$ are randomly written on the faces of a regular octahedron so that each face contains a different number.  The probability that no two consecutive numbers, where $8$ and $1$ are considered to be consecutive, are written on faces that share an edge is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
-
- 
  \textbf{Answer: }085
 
 
@@ -1252,42 +1210,30 @@ Choose one face of the octahedron randomly and label it with $1$.  There are thr
  From here it is easiest to brute force the $10$ possibilities for the $4$ numbers on the B and C faces:
 
  
-                \begin{itemize}
-                    \item 2348 (2678): 8(2) is the only one not adjacent to any of the others, so it goes on the C-face.  4(6) has only one B-face it can go to, while 2 and 3 (7 and 8) can be assigned randomly to the last two.  2 possibilities here.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item 2358 (2578): 5 cannot go on any of the B-faces, so it must be on the C-face.  3 and 8 (2 and 7) have only one allowable B-face, so just 1 possibility here.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item 2368 (2478): 6(4) cannot go on any of the B-faces, so it must be on the C-face.  3 and 8 (2 and 7) have only one allowable B-face, so 1 possibility here.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item 2458 (2568): All of the numbers have only one B-face they could go to.  2 and 4 (6 and 8) can go on the same, so one must go to the C-face.  Only 2(8) is not consecutive with any of the others, so it goes on the C-face.  1 possibility.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item 2378: None of the numbers can go on the C-face because they will be consecutive with one of the B-face numbers.  So this possibility is impossible.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item 2468: Both 4 and 6 cannot go on any B-face.  They cannot both go on the C-face, so this possibility is impossible.
-                \end{itemize}
-
-
-                There is a total of $10$ possibilities.  There are $3!=6$ permutations (rotations/reflections) of each, so $60$ acceptable ways to fill in the rest of the octahedron given the $1$.  There are $7!=5040$ ways to randomly fill in the rest of the octahedron.  So the probability is $\frac {60}{5040} = \frac {1}{84}$. The answer is $\boxed{085}$.
+            \begin{itemize}
+        \item 2348 (2678): 8(2) is the only one not adjacent to any of the others, so it goes on the C-face.  4(6) has only one B-face it can go to, while 2 and 3 (7 and 8) can be assigned randomly to the last two.  2 possibilities here.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item 2358 (2578): 5 cannot go on any of the B-faces, so it must be on the C-face.  3 and 8 (2 and 7) have only one allowable B-face, so just 1 possibility here.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item 2368 (2478): 6(4) cannot go on any of the B-faces, so it must be on the C-face.  3 and 8 (2 and 7) have only one allowable B-face, so 1 possibility here.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item 2458 (2568): All of the numbers have only one B-face they could go to.  2 and 4 (6 and 8) can go on the same, so one must go to the C-face.  Only 2(8) is not consecutive with any of the others, so it goes on the C-face.  1 possibility.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item 2378: None of the numbers can go on the C-face because they will be consecutive with one of the B-face numbers.  So this possibility is impossible.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item 2468: Both 4 and 6 cannot go on any B-face.  They cannot both go on the C-face, so this possibility is impossible.
+            \end{itemize}
+            There is a total of $10$ possibilities.  There are $3!=6$ permutations (rotations/reflections) of each, so $60$ acceptable ways to fill in the rest of the octahedron given the $1$.  There are $7!=5040$ ways to randomly fill in the rest of the octahedron.  So the probability is $\frac {60}{5040} = \frac {1}{84}$. The answer is $\boxed{085}$.
 
  
 
@@ -1338,7 +1284,6 @@ As in the previous solution, consider the cube formed by taking each face of the
 
  So, the probability is $\frac{60}{5040}=\frac{1}{84}.$ Therefore, our answer is $\boxed{085}$
 
- 
 
 
 

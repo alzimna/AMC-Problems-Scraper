@@ -86,7 +86,6 @@ Any \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subset} o
 
  Note ${n \choose 0}+{n \choose 1} + {n \choose 2} + \dots + {n \choose n}$ is equivalent to $2^n$
 
- 
 
 
 	\item (\textit{AIME I 1989}) Suppose $n_{}^{}$ is a positive integer and $d_{}^{}$ is a single digit in base 10. Find $n_{}^{}$ if
@@ -94,7 +93,6 @@ Any \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subset} o
 
  $\frac{n}{810}=0.d25d25d25\ldots$
 
- 
  \textbf{Answer: }750
 
 
@@ -105,7 +103,6 @@ We can express $0.\overline{d25}$ as $\frac{100d+25}{999}$. We set up the given 
  We then set up the following modular congruence to solve for $d:$ \begin{align*}9000d + 2250 &\equiv 0 \pmod {111}, \\ 9d + 30 &\equiv 0 \pmod {111}, \\ 3d + 10 &\equiv 0 \pmod {37}, \\ 36d + 120 &\equiv 0 \pmod {37}, \\ -d &\equiv -9 \pmod {37}, \\ d &\equiv 9 \pmod {37}.\end{align*}
  Since $d$ is a digit, it must be equal to $9$ based on our above constraint. When $d=9, n = \boxed{750}.$
 
- 
 
 
 
@@ -149,11 +146,7 @@ Write out these equations:
 
  
 $\frac{n}{810} = \frac{d25}{999}$
-
- 
 $\frac{n}{30} = \frac{d25}{37}$
-
- 
 $37n = 30(d25)$
 
  
@@ -164,7 +157,6 @@ Thus $n$ divides 25 and 30. The only solution for this under 1000 is $\boxed{750
 
  Note: We know $n < 810$ since $\frac{n}{810} < 1,$ so it suffices to check for numbers under $810$ not $1000.$
 
- 
 
 
 	\item (\textit{AIME I 1989}) If $a<b<c<d<e^{}_{}$ are consecutive positive integers such that $b+c+d$ is a perfect square and $a+b+c+d+e^{}_{}$ is a perfect cube, what is the smallest possible value of $c^{}_{}$?
@@ -199,11 +191,7 @@ Let $b$, $c$, $d$, and $e$ equal $a+1$, $a+2$, $a+3$, and $a+4$, respectively. C
 
  
 $10 + 5a = 15^3$
-
- 
 $2 + a = 675$
-
- 
 $c = \boxed{675}$
 
  
@@ -220,7 +208,6 @@ $c = \boxed{675}$
 
 Let the numbers be $a,a+1,a+2,a+3,a+4.$ When then know $3a+6$ is a perfect cube and $5a+10$ is perfect cube. Since $5a+10$ is divisible by $5$ we know that $5a+10 = (5k)^3$ since otherwise we get a contradiction. This means $a = 25k^3 - 2$ in which plugging into the other expression we know $3(25k^3 - 2) + 6 = 75k^3$ is a perfect square. We know $75 = 5^2 \cdot 3$ so we let $k = 3$ to obtain the perfect square. This means that $c = a+2 = (25 \cdot 27 - 2)+2 = 25 \cdot 27 = \boxed{675}.$
 
- 
 
 
 
@@ -235,22 +222,18 @@ Let the numbers be $a,a+1,a+2,a+3,a+4.$ When then know $3a+6$ is a perfect cube 
  Now, by the problem's given information, 
 
  $k \equiv 0   \text{(mod 2)}$
-
- $n \equiv 0   \text{(mod 3)}$ 
+$n \equiv 0   \text{(mod 3)}$ 
 
  and because ALL exponents have to be cubes/squares, 
 
  $k \equiv 2   \text{(mod 3)}$
-
- $n \equiv 1   \text{(mod 2)}$ 
+$n \equiv 1   \text{(mod 2)}$ 
 
  Therefore, 
 
  $k = 2$
-
- $n = 3$ 
-
- $c = 3^3 \cdot 5^2 = \boxed{675}$.
+$n = 3$
+$c = 3^3 \cdot 5^2 = \boxed{675}$.
 
  
 
@@ -291,7 +274,6 @@ Denote the probability of getting a heads in one flip of the biased coins as $h$
                     \end{figure}
                     
 
- 
  \textbf{Answer: }160
 
 
@@ -307,7 +289,6 @@ Label the point of \href{https://artofproblemsolving.com/wiki/index.php?title=In
                     \end{figure}
                     
 
- 
  \begin{align*}(7t)^2 &= (8t)^2 + 100^2 - 2 \cdot 8t \cdot 100 \cdot \cos 60^\circ\\ 0 &= 15t^2 - 800t + 10000 = 3t^2 - 160t + 2000\\ t &= \frac{160 \pm \sqrt{160^2 - 4\cdot 3 \cdot 2000}}{6} = 20, \frac{100}{3}.\end{align*}
 
 
@@ -365,10 +346,8 @@ We can define $x$ to be the time elapsed since both Allie and Billie moved away 
  We know this from the $30-60-90$ triangle that is formed. From this we get that: 
  \[(7x)^2 = (4 \sqrt{3} x)^2 + (100-4x)^2\]
 
- 
  \[\Longrightarrow 49x^2 - 48x^2 = x^2 = (100-4x)^2\]
 
- 
  \[\Longrightarrow 0=(100-4x)^2 - x^2 = (100-3x)(100-5x)\].
 
  Therefore, we get that $x = \frac{100}{3}$ or $x = 20$. Since $20< \frac{100}{3}$, we have that $x=20$ (since the problem asks for the quickest possible meeting point), so the distance Allie travels before meeting Billie would be $8 \cdot x = 8 \cdot 20 = \boxed{160}$ meters.
@@ -424,7 +403,6 @@ Since terms in an arithmetic progression have constant differences,
  \[\implies 64k = 59200\]
  \[\implies k = \boxed{925}\]
 
- 
 
 
 
@@ -465,7 +443,6 @@ By either substitution or elimination, we get $a=50$ and $b=-139.$ Substituting 
  Finally, the answer is 
  \[f(4)=16a+4b+c=\boxed{334}.\]
 
- 
 
 
 
@@ -478,7 +455,6 @@ Subtracting $(5)$ from $(6)$ and subtracting $(6)$ from $(7),$ we obtain the fol
  \begin{align*} 2x_1+2x_2+2x_3+2x_4+2x_5+2x_6+2x_7&=100, &(8) \\ 2x_1+2x_2+2x_3+2x_4+2x_5+2x_6+2x_7&=S-234. \hspace{20mm}&(9) \end{align*}
 Finally, applying the Transitive Property to $(8)$ and $(9)$ gives $S-234=100,$ from which $S=\boxed{334}.$
 
- 
 
 
 
@@ -525,7 +501,6 @@ where $c_1=1, c_2=12, c_3=123,$ and $c_4$ is what we are trying to find.
  Alternatively, applying finite differences, one obtains 
  \[c_4 = {3 \choose 2}f(2) - {3 \choose 1}f(1) + {3 \choose 0}f(0) =334.\]
 
- 
 
 
 
@@ -541,7 +516,6 @@ The idea is to multiply the first, second and third equations by $a,b,$ and $c,$
 
  Therefore, the answer is $1\cdot1+12\cdot(-3) + 123\cdot3 = \boxed{334}.$
 
- 
 
 
 
@@ -561,7 +535,6 @@ Let $s_n = n^2$ be the sequence of perfect squares.By either expanding or via fi
  \[s_n = 3s_{n-1} - 3s_{n-2} + s_{n-3}.\]Hence, the answer is simply
  \[3 \cdot 123 - 3 \cdot 12 + 1 = \boxed{334}.\]
 
- 
 
 
 	\item (\textit{AIME I 1989}) One of Euler's conjectures was disproved in the 1960s by three American mathematicians when they showed there was a positive integer such that 
@@ -589,7 +562,6 @@ from which $\left(\frac{n}{133}\right)^5<3.$
  \begin{align*} \left(\frac{n}{133}\right)^5&>1.3^5 \\ &=1.3^2\cdot1.3^2\cdot1.3 \\ &>1.6\cdot1.6\cdot1.3 \\ &=2.56\cdot1.3 \\ &>2.5\cdot1.2 \\ &=3, \end{align*}
 which arrives at a contradiction. Therefore, we conclude that $n=\boxed{144}.$
 
- 
 
 
 
@@ -599,7 +571,6 @@ Note that $n$ is even, since the LHS consists of two odd and two even numbers. B
  \[n\equiv3+0+4+2\equiv4\pmod{5}.\]Continuing, we examine the equation modulo $3,$ 
  \[n\equiv1-1+0+0\equiv0\pmod{3}.\]Thus, $n$ is divisible by three and leaves a remainder of four when divided by $5.$ It is obvious that $n>133,$ so the only possibilities are $n = 144$ or $n \geq 174.$ It quickly becomes apparent that $174$ is much too large, so $n$ must be $\boxed{144}.$
 
- 
 
 
 
@@ -627,7 +598,6 @@ Note that
  \begin{align*} 134^5&\equiv424\pmod{1000}, \\ 144^5&\equiv224\pmod{1000}, \\ 154^5&\equiv024\pmod{1000}, \\ 164^5&\equiv824\pmod{1000}, \\ 174^5&\equiv624\pmod{1000}, \\ 184^5&\equiv424\pmod{1000}, \\ 194^5&\equiv224\pmod{1000}. \end{align*}
 By observations, $n=194$ is obviously an overestimate. So, the answer is $n=\boxed{144}.$
 
- 
 
 
 
@@ -646,7 +616,6 @@ By CRT, $n\equiv 144\pmod{210}$, so $n$ is one of $144, 354, ...$. However, $133
 We have 
  \[n^5 = 133^5 + 110^5 + 84^5 +27^5 = 61917364224,\] for which $n = \sqrt [5]{61917364224} = \boxed{144}.$
 
- 
 
 
 
@@ -662,9 +631,8 @@ By approximation, $110 \approx \frac{5}{6}\cdot133$, $84 \approx \frac{7}{11}\cd
 
 \textbf{Solution 8 (Guesswork or Bash)}
 
-We know that $a^5 \equiv a \pmod{10}$ for all a. You can prove this later. So we know the number ends with 4. Since 133 is the biggest number, while everything else is small, we can safely assume that it is $\boxed{144}$, because 5th powers vary wildly. It is not 134 because $110^5$ plays a role in the sum.  We can also just take $130^5$ and the other numbers $110^5, 80^5,20^5$, add them up, and we realize that $140^5$ is close to this. Then we also get $\boxed{144}$ 
+We know that $a^5 \equiv a \pmod{10}$ for all a. You can prove this later. So we know the number ends with 4. Since 133 is the biggest number, while everything else is small, we can safely assume that it is $\boxed{144}$, because 5th powers vary wildly. It is not 134 because $110^5$ plays a role in the sum.  We can also just take $130^5$ and the other numbers $110^5, 80^5,20^5$, add them up, and we realize that $140^5$ is close to this. Then we also get $\boxed{144}$
 
- 
 
 
 
@@ -682,7 +650,6 @@ The number should be around 140, and since most solutions in the AIME are 'round
 
  $\frac{\cot \gamma}{\cot \alpha+\cot \beta}$
 
- 
  \textbf{Answer: }994
 
 
@@ -709,7 +676,6 @@ Adding the last two equations, subtracting the first, and dividing by 2, we get
  \begin{align*} \frac{\cot \gamma}{\cot \alpha + \cot \beta} &= \frac{(a^2 + b^2 - c^2)/(4K)}{c^2/(2K)} \\ &= \frac{a^2 + b^2 - c^2}{2c^2} \\ &= \frac{1989 c^2 - c^2}{2c^2} \\ &= \frac{1988}{2} = \boxed{994}. \end{align*}
 
 
- 
 
 
 
@@ -760,10 +726,6 @@ We start as in solution 1, though we'll write $A$ instead of $K$ for the area.  
  \begin{align*}\frac {\cot{\gamma}}{\cot{\alpha} + \cot{\beta}} &= \frac {\cot{\gamma}\sin{\alpha}\sin{\beta}}{\sin{\gamma}} = \frac {\cos{\gamma}\sin{\alpha}\sin{\beta}}{\sin^2{\gamma}} = \frac {ab}{c^2}\cos{\gamma} = \frac {ab}{c^2} \cdot \frac {994c^2}{ab}\\ &= \boxed{994}\end{align*}
 
 
- 
-
-
- 
 
 
 
@@ -787,8 +749,7 @@ Use Law of cosines to give us $c^2=a^2+b^2-2ab\cos(\gamma)$ or therefore $\cos(\
 \textbf{Solution 6}
 
 Let $\gamma$ be $(180-\alpha-\beta)$
-
- $\frac{\cot \gamma}{\cot \alpha+\cot \beta} = \frac{\frac{-\tan \alpha \tan \beta}{\tan(\alpha+\beta)}}{\tan \alpha + \tan \beta} = \frac{(\tan \alpha \tan \beta)^2-\tan \alpha \tan \beta}{\tan^2 \alpha + 2\tan \alpha \tan \beta +\tan^2 \beta}$
+$\frac{\cot \gamma}{\cot \alpha+\cot \beta} = \frac{\frac{-\tan \alpha \tan \beta}{\tan(\alpha+\beta)}}{\tan \alpha + \tan \beta} = \frac{(\tan \alpha \tan \beta)^2-\tan \alpha \tan \beta}{\tan^2 \alpha + 2\tan \alpha \tan \beta +\tan^2 \beta}$
 
  WLOG, assume that $a$ and $c$ are legs of right triangle $abc$ with $\beta = 90^o$ and $c=1$
 
@@ -837,7 +798,6 @@ As in Solution 1, drop an altitude $h$ to $c$. Let $h$ meet $c$ at $P$, and let 
 Since no additional information is given, we can assume that triangle ABC is right with the right angle at B.We can use the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_theorem}{Pythagorean theorem} to say 
  \[c^2+a^2=b^2\] We can now solve for $a$ in terms of $c$
 
- 
  \[c^2+a^2=1989c^2-a^2\]
  \[a^2=994c^2\]
  \[a=\sqrt{994}c\]
@@ -849,7 +809,6 @@ Since no additional information is given, we can assume that triangle ABC is rig
  \[cot(B)=cot(90)=0\]
  \[cot(C)=\frac{a}{c}=\sqrt{994}\]Plugging into our desired expression, we get $\boxed{994}$
 
- 
 
 
 
@@ -883,8 +842,7 @@ Let the mode be $x$, which we let appear $n > 1$ times. We let the arithmetic me
 As $S$ is essentially independent of $x$, it follows that we wish to minimize or maximize $x$ (in other words, $x \in \{1,1000\}$). Indeed, $D(x)$ is symmetric about $x = 500.5$; consider replacing all of numbers $x_i$ in the sample with $1001-x_i$, and the value of $D$ remains the same. So, \href{https://artofproblemsolving.com/wiki/index.php?title=Without\_loss\_of\_generality}{without loss of generality}, let $x=1$. Now, we would like to maximize the quantity 
 
  $\frac{S}{121}-\left(\frac{121-n}{121}\right)(1) = \frac{S+n}{121}-1$
-
- $S$ contains $121-n$ numbers that may appear at most $n-1$ times. Therefore, to maximize $S$, we would have 
+$S$ contains $121-n$ numbers that may appear at most $n-1$ times. Therefore, to maximize $S$, we would have 
 
  
 
@@ -921,7 +879,6 @@ Call the midpoint of $\overline{AB}$ $M$ and the midpoint of $\overline{CD}$ $N$
  
  \[d=\frac{\sqrt{548}}{2} \Longrightarrow d^2=\frac{548}{4}=\boxed{137}\]
 
- 
 
 
 
@@ -985,22 +942,18 @@ First, we find the first three powers of $-3+i$:
  The minimum the left-hand side can go is -54, so $1\leq a_3 \leq 2$ since $a_3$ can't equal 0, so we try cases:
 
  
-                \begin{itemize}
-                    \item Case 1: $a_3=2$
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Case 1: $a_3=2$
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item The only solution to that is $(a_1, a_2, a_3)=(2,9,2)$.
             \end{enumerate}
             
-                \begin{itemize}
-                    \item Case 2: $a_3=1$
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Case 2: $a_3=1$
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item The only solution to that is $(a_1, a_2, a_3)=(4,5,1)$.
             \end{enumerate}
@@ -1034,7 +987,6 @@ First, we find the first three powers of $-3+i$:
 
 Let $[RST]$ be the area of polygon $RST$.  We'll make use of the following fact: if $P$ is a point in the interior of triangle $XYZ$, and line $XP$ intersects line $YZ$ at point $L$, then $\dfrac{XP}{PL} = \frac{[XPY] + [ZPX]}{[YPZ]}.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1989_15_Solution_Figure_1.png}
@@ -1100,7 +1052,6 @@ We first assign masses:  Let $M(B) = 1$.  Then: $M(E) = 3$, $M(P) = 4$, $M(A) = 
  Plugging in our values for $y$ and $\sin(\theta)$:
  \[12 \cdot 3\sqrt{13} \cdot \frac{3}{\sqrt{13}} = \boxed{108}\]
 
- 
 
 
 
@@ -1181,7 +1132,6 @@ In Solution 5, instead of finding all of $x, y, z$, we only need $y, z$. This is
 
 Set $AF=x,$ and use \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{mass points} to find that $PF=5$ and $BF=2x.$ Using \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem} on $APB,$ we find that $AB=3\sqrt{13}.$ Then we notice that $APB$ is right, which means the area of $APB$ is $27.$ Because $CF=4\cdot PF,$ the area of $ABC$ is $4$ times the area of $APB,$ which means the area of $ABC=4\cdot 27=\boxed{108}.$
 
- 
 
 
 
@@ -1203,7 +1153,6 @@ We start with mass points as in Solution 2, and receive $BF:AF = 2$, $BD:CD = 1$
  \[36+x^2-12x\cos (180-\theta) = 36+x^2+12x\cos \theta = 225\]Adding them: $72+2x^2=306 \implies x=3\sqrt{13}$, so $BC = 6\sqrt{13}$. Similarly, $AB = 3\sqrt{13}$ and $AC = 9\sqrt{5}$. Using Heron's,
  \[[ \triangle ABC ]= \sqrt{\left(\dfrac{9\sqrt{13}+9\sqrt{5}}{2}\right)\left(\dfrac{9\sqrt{13}+9\sqrt{5}}{2}\right)\left(\dfrac{3\sqrt{13}+9\sqrt{5}}{2}\right)\left(\dfrac{-3\sqrt{13}+9\sqrt{5}}{2}\right)} = \boxed{108}.\]
 
- 
 
 
 

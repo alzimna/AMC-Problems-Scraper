@@ -79,7 +79,6 @@ Drop horizontal $E$ down to $BC$, $F$ down to $AD$, called lines $l, m$ respecti
 
 The average angle in an 18-gon is $160^\circ$. In an arithmetic sequence the average is the same as the median, so the middle two terms of the sequence average to $160^\circ$. Thus for some positive (the sequence is increasing and thus non-constant) integer $d$, the middle two terms are $(160-d)^\circ$ and $(160+d)^\circ$. Since the step is $2d$ the last term of the sequence is $(160 + 17d)^\circ$, which must be less than $180^\circ$, since the polygon is convex. This gives $17d < 20$, so the only suitable positive integer $d$ is 1. The first term is then $(160-17)^\circ = \fbox{143}.$
 
- 
 
 
 
@@ -145,7 +144,6 @@ We will use barycentric coordinates. Let $A = (1, 0, 0)$, $B = (0, 1, 0)$, $C = 
 Let $DC=x$. Then by the Angle Bisector Theorem, $BD=\frac{20}{11}x$. By the Ratio Lemma, we have that $\frac{PC}{AP}=\frac{\frac{31}{11}x\sin\angle PBC}{20\sin\angle ABP}.$ Notice that $[\triangle BAM]=[\triangle BMD]$ since their bases have the same length and they share a height. By the sin area formula, we have that 
  \[\frac{1}{2}\cdot20\cdot BM\cdot \sin\angle ABP=\frac{1}{2}\cdot \frac{20}{11}x\cdot BM\cdot\sin\angle PBC.\] Simplifying, we get that $\frac{\sin\angle PBC}{\sin\angle ABP}=\frac{11}{x}.$ Plugging this into what we got from the Ratio Lemma, we have that $\frac{PC}{AP}=\frac{31}{20}\implies\boxed{051.}$
 
- 
 
 
 
@@ -179,7 +177,6 @@ First, we will find $\frac{MP}{BP}$. By Menelaus on $\triangle BDM$ and the line
 
 Assume $ABC$ is a right triangle at $A$. Line $AD = x$ and $BC = \frac{-11}{20}x + 11$. These two lines intersect at $D$ which have coordinates $(\frac{220}{31},\frac{220}{31})$ and thus $M$ has coordinates $(\frac{110}{31},\frac{110}{31})$. Thus, the line $BM = \frac{11}{51} \cdot (20-x)$. When $x = 0$, $P$ has $y$ coordinate equal to $\frac{11\cdot20}{51} \frac{AP + CP}{AP} = 1 + \frac{CP}{AP}$ = $\frac{51}{20} = 1 + \frac{CP}{AP},$ which equals ${\frac{31}{20}},$ giving an answer of $\boxed{51}.$
 
- 
 
 
 
@@ -275,14 +272,14 @@ Rearranging the \href{https://artofproblemsolving.com/wiki/index.php?title=Inequ
  We find $N$ as a sum of 4 cases:
 
  
-                \begin{itemize}
-                    \item two parts equal to zero, $\binom82 = 28$ ways,\item two parts equal to one, $\binom62 = 15$ ways,\item two parts equal to two, $\binom42 = 6$ ways,\item two parts equal to three, $\binom22 = 1$ way.
-                \end{itemize}
+            \begin{itemize}
+        \item two parts equal to zero, $\binom82 = 28$ ways,
+        \item two parts equal to one, $\binom62 = 15$ ways,
+        \item two parts equal to two, $\binom42 = 6$ ways,
+        \item two parts equal to three, $\binom22 = 1$ way.
+            \end{itemize}
+            Therefore, $N = 28 + 15 + 6 + 1 = 50$ and our answer is $\frac{210 - 50}{2} = \fbox{080}$
 
-
-                Therefore, $N = 28 + 15 + 6 + 1 = 50$ and our answer is $\frac{210 - 50}{2} = \fbox{080}$
-
- 
 
 
 
@@ -313,7 +310,6 @@ We first start out when the value of $a=1$.
  
 $(1)+(2)+(1+3)+(2+4)+(1+3+5)+(2+4+6)+(1)+(2)+(1+3)+(2+4)$$+(1+3+5)+(1)+(2)+(1+3)+(2+4)+(1)+(2)+(1+3)+(1)+(2)+(1)=\boxed{080}$
 
- 
 
 
 
@@ -325,7 +321,6 @@ Notice that if $a+d>b+c$, then $(11-a)+(11-d)<(11-b)+(11-c)$, so there is a \hre
 
  Thus the answer is $\frac{\binom{10}{4}-50}{2} = \boxed{080}.$
 
- 
 
 
 
@@ -337,10 +332,6 @@ Think about a,b,c,and d as distinct objects, that we must place in 4 of 10 space
 
  So the answer will be $\frac{210-50}{2} = \boxed{080}.$
 
- 
-
-
- 
 
 
 
@@ -349,7 +340,6 @@ Think about a,b,c,and d as distinct objects, that we must place in 4 of 10 space
 Let $b = a+x$ and $c = a+x+y$ and $d = a+x+y+z$ for positive integers $x,y,z.$ In order to satisfy the other condition we need $z > x$ so we let $z = x+k.$ Now the only other condition we need to satisfy so $a+2x+y+k \le 10.$ This condition can be transformed into $a+2x+y+k+b  = 11$ for positive $a,x,y,k,b.$ Now we use generating functions to finish. We find the generating function of the whole expression is $(x + x^2 + \cdots)^4 \cdot (x^2+x^4 + \cdots)$ and we are looking for the $x^{11}$ coefficient. This simplifies to finding the $x^5$ coefficient of $(1+x+\cdots)^4 \cdot (1+x^2+\cdots) =\frac{1}{(1-x)^4} \cdot\frac{1}{1+x}.$ Now this expression simplifies to 
  \[\left(\binom{4}{4}+\binom{5}{4} + \cdots +\binom{4+k}{4}x^k\right)(1-x+x^2-x^3 \cdots).\] The $x^5$ coefficient ends up to be $\binom{9}{4} -\binom{8}{4} +\binom{7}{4} -\binom{6}{4} +\binom{5}{4} -\binom{4}{4} = 126 - 70 + 35 - 15 + 5 - 1 = \boxed{080}.$
 
- 
 
 
 
@@ -385,7 +375,6 @@ Either, $a+d > b+c$, $a+d < b+c$, or $a+d = b+c$. The first two cases are equiva
 
  Therefore, the number of ways is just $\frac{\binom{10}{4} - N}{2}$ where $N$ is the number of equivalent cases. We have $a+d = b+c$ so $d-c = b-a$. The spacing between the numbers is equivalent. So, denote them as $1 \le a < a+k < c < c+k \le 10$. That implies $1 \le a < c \le 10-k$ where $k$ is an integer. For $k=1$, we have $a+2 \le c \le 9$ so we have 3-9, 4-9, so on until just 9, which is $7+6+dots+1 = 28$ cases. For $k=2$, similar logic yields 15 cases, $k=3$, 6 cases, and $k=4$, 1 case. That is a total 50 cases that are invalidated, so the answer is $\frac{\binom{10}{4} - 50}{2} = \boxed{80}$
 
- 
 
 
 	\item (\textit{AIME II 2011}) Ed has five identical green marbles, and a large supply of identical red marbles. He arranges the green marbles and some of the red ones in a row and finds that the number of marbles whose right hand neighbor is the same color as themselves is equal to the number of marbles whose right hand neighbor is the other color. An example of such an arrangement is GGRRRGGRG. Let $m$ be the maximum number of red marbles for which such an arrangement is possible, and let $N$ be the number of ways he can arrange the $m+5$ marbles to satisfy the requirement. Find the remainder when $N$ is divided by $1000$.
@@ -509,7 +498,6 @@ Note that neither the constraint nor the expression we need to maximize involves
  \begin{align*} x_1 = x_3 = \frac{1}{3} \\ x_2 = \frac{19}{60}, \ x_5 = \frac{1}{60} \\ x_4 &= x_6 = 0 \end{align*}
 
 
- 
 
 
 
@@ -552,8 +540,7 @@ Let $E$ and $F$ be the midpoints of $\overline{AB}$ and $\overline{CD}$, respect
  Substituting for $a$ and $b$, and applying the Cosine of Sum formula:
 
  $144 = (x^2 - 400) + (x^2 - 576) - 2 \sqrt{x^2 - 400} \sqrt{x^2 - 576} \left( \cos \angle EPO \cos \angle FPO - \sin \angle EPO \sin \angle FPO \right)$
-
- $\angle EPO$ and $\angle FPO$ are acute angles in right triangles, so substitute opposite/hypotenuse for sines and adjacent/hypotenuse for cosines:
+$\angle EPO$ and $\angle FPO$ are acute angles in right triangles, so substitute opposite/hypotenuse for sines and adjacent/hypotenuse for cosines:
 
  $144 = 2x^2 - 976 - 2 \sqrt{(x^2 - 400)(x^2 - 576)} \left(\frac{\sqrt{x^2 - 400}}{x} \frac{\sqrt{x^2 - 576}}{x} - \frac{20}{x} \frac{24}{x} \right)$
 
@@ -589,14 +576,12 @@ We begin as in the first solution.  Once we see that $\triangle EOF$ has side le
 We begin as the first solution have $OE=20$ and $OF=24$. Because $\angle PEO+\angle PFO=180^{\circ}$, Quadrilateral $EPFO$ is inscribed in a Circle. Assume point $I$ is the center of this circle. 
 
  $\because \angle OEP=90^{\circ}$
-
- $\therefore$ point $I$ is on $OP$
+$\therefore$ point $I$ is on $OP$
 
  Link $EI$ and $FI$, Made line $IK\bot EF$, then $\angle EIK=\angle EOF$
 
  On the other hand, $\cos\angle EOF=\frac{EO^2+OF^2-EF^2}{2\cdot EO\cdot OF}=\frac{13}{15}=\cos\angle  EIK$
-
- $\sin\angle EOF=\sin\angle EIK=\sqrt{1-\frac{13^2}{15^2}}=\frac{2\sqrt{14}}{15}$
+$\sin\angle EOF=\sin\angle EIK=\sqrt{1-\frac{13^2}{15^2}}=\frac{2\sqrt{14}}{15}$
 
  As a result, $IE=IO=\frac{45}{\sqrt 14}$
 
@@ -604,7 +589,6 @@ We begin as the first solution have $OE=20$ and $OF=24$. Because $\angle PEO+\an
 
  As a result, $m+n=4057\equiv \boxed{057}\pmod{1000}$
 
- 
 
 
 
@@ -634,9 +618,8 @@ Let $M$ be the midpoint of $AB$ and $N$ of $CD$. As $\angle OMP = \angle ONP$, q
  The area of $\triangle MNP$ can be computed by Herons as 
  \[[MNO] = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{28\cdot 16\cdot 8\cdot 4} = 32\sqrt{14}.\] The area is also $\frac{1}{2}ON \cdot MN \sin{\angle MNO}$. Therefore, 
  \begin{align*} \sin{\angle MNO} &= \frac{2[MNO]}{ON \cdot MN}  \\ &= \frac{2}{9}\sqrt{14} \\ \sin{\angle MNO} &= \frac{OM}{OP} \\ &= \frac{2}{9}\sqrt{14} \\ OP &= \frac{90\sqrt{14}}{14} \\ OP^2 &= \frac{4050}{7} \implies \boxed{057}. \end{align*}
- 
 
- 
+
 
 
 
@@ -694,8 +677,7 @@ Define $M$ and $N$ as the midpoints of $AB$ and $CD$, respectively. Because $\an
  Since $P$ is the intersection of $\overline{AB}$ and $\overline{CD}$,
 
  $P_x = OF = 24$
-
- $P_y = E_y -\frac{1}{\tan \angle EOF} (OF - E_x) = - \frac{3\sqrt{14}}{7}$ (Negative means point $P$ is between point $F$ and $C$)
+$P_y = E_y -\frac{1}{\tan \angle EOF} (OF - E_x) = - \frac{3\sqrt{14}}{7}$ (Negative means point $P$ is between point $F$ and $C$)
 
  $OP^2 = P_x^2 + P_y^2 = \frac{4050}{7}$ and the answer is $\boxed{057}$. 
 
@@ -708,7 +690,6 @@ Define $M$ and $N$ as the midpoints of $AB$ and $CD$, respectively. Because $\an
                     \end{figure}
                     
 
- 
 
 
 
@@ -717,7 +698,6 @@ Define $M$ and $N$ as the midpoints of $AB$ and $CD$, respectively. Because $\an
 
  We work in the complex plane where \( O = 0 \). Let \( M_1, M_2 \), be midpoints of chords \( AB \), and \( CD \) respectively. \( AB=30 \rightarrow AM=15 \). Since \( AM=15 \), and \( OA=25 \), \( OM_1 = 20 \) by the Pythagorean theorem. WLOG, Let \( M_1 = 20 + 0i \).  Think about the locus of all points \( M_2 \). By similar logic as above it is any \( M_2 \), such that \( OM_2=24 \). Note that \( M_1M_2 = 12 \). Therefore by LoC on \( \triangle OM_1M_2 \), if \( \angle O = \theta \), \( \cos\theta = \frac{13}{15} \rightarrow \sin\theta = \frac{2\sqrt{14}}{15} \).  Note that a rotation by \( \theta \) and a scaling of \( \frac{24}{20} = \frac{6}{5} \) transforms \( AB \) to \( DC \).  This transformation = \( \text{cis}\theta \cdot \frac{6}{5} = \frac{2}{5} \cdot \frac{13 + 2\sqrt{14}i}{5} \).  Applying the transformation we on \( A,B \) respectively we find: (We are back in Cartesian coordinates now)  \[ D = \frac{2}{5} \cdot (52 - 6\sqrt{14}, 39 + 8\sqrt{14}), \] \[ C = \frac{2}{5} \cdot (52 + 6\sqrt{14}, -39 + 8\sqrt{14}). \]  To make bashing easier first ignore the \( \frac{2}{5} \).   e.g. let \( D = 0.4D' \) and \( C = 0.4C' \) and first find the equation of the line passing through \( C' \) and \( D' \).   After bashing a bit, we get  \[ y = \frac{-13}{2\sqrt{14}} \cdot x + \frac{225}{7}\sqrt{14}. \]  Now to account for the \( \frac{2}{5} \) thing we say the actual line is this: \[ y = \frac{-13}{2\sqrt{14}} \cdot x + \frac{2}{5} \cdot \frac{225}{7} \sqrt{14}, \] \[ y = \frac{-13}{2\sqrt{14}} \cdot x + \frac{90}{7} \sqrt{14}. \]  \( P \) is the intersection of \( CD \) and \( AB \). We have the equation of \( CD \), and \( AB \) is simply \( x = 20 \), so   Letting \( x = 20 \) we find  \[ y = \frac{25\sqrt{14}}{7}. \]   \[ OP^2 = 20^2 + \left( \frac{25\sqrt{14}}{7} \right)^2 = 5^2 \cdot \left( 4^2 + \left( \frac{5\sqrt{2}}{\sqrt{7}} \right)^2 \right) = 25 \cdot \frac{810}{7} = \frac{4050}{7}. \] Thus, the answer is \( \boxed{057} \).
 
- 
 
 
 
@@ -768,7 +748,6 @@ Place the circle of radius $25$ at the origin, $O=(0,0)$. Let chord $\overline{A
 
  Thus $m+n = 4050 + 7 = 4057$, and the remainder when divided by $1000$ is $\boxed{57}.$
 
- 
 
 
 	\item (\textit{AIME II 2011}) Let $M_n$ be the $n \times n$ matrix with entries as follows: for $1 \le i \le n$, $m_{i,i} = 10$; for $1 \le i \le n - 1$, $m_{i+1,i} = m_{i,i+1} = 3$; all other entries in $M_n$ are zero. Let $D_n$ be the determinant of matrix $M_n$. Then $\sum_{n=1}^{\infty} \frac{1}{8D_n+1}$ can be represented as $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p + q$. 
@@ -808,7 +787,6 @@ Place the circle of radius $25$ at the origin, $O=(0,0)$. Let chord $\overline{A
 
  Manually, we can find \( D_1 = 10 \), \( D_2 = 91 \), \( D_3 = 820 \).   \[ \frac{1}{8D_1+1} = \frac{1}{81}, \quad \frac{1}{8D_2+1} = \frac{1}{729}, \quad \frac{1}{8D_3+1} = \frac{1}{6561}. \]   We notice that \( 81 = 9^2 \), \( 729 = 9^3 \), and \( 6561 = 9^4 \), and believe that this cannot be a coincidence.    Assume \( \frac{1}{8D_n+1} = \frac{1}{9^{n+1}} \). Then this problem asks us to find the sum of a geometric series with first term \( \frac{1}{81} \) and common ratio \( \frac{1}{9} \).   \[ \frac{\frac{1}{81}}{1 - \frac{1}{9}} = \frac{\frac{1}{81}}{\frac{8}{9}} = \frac{1}{72}. \]    Thus, the answer is \(\boxed{73}\).
 
- 
 
 
 
@@ -1013,7 +991,6 @@ Use vectors. In an $xy$ plane, let $(-s,0)$ be $A$, $(0,s)$ be $B$, $(s,0)$ be $
  \[\vec{PO_1}\cdot\vec{PO_2}=|\vec{PO_1}|\cdot|\vec{PO_2}|\cos 120^\circ=-\frac{1}{2}|\vec{PO_1}|\cdot|\vec{PO_2}|\]Computation of both sides yields
  \[\frac{p^2-s^2}{p^2+s^2}=-\frac{1}{2}\]Solve for $p$ gives $p=s/\sqrt{3}=2\sqrt{6}$, so $AP=s+p=6\sqrt{2}+2\sqrt{6}=\sqrt{72}+\sqrt{24}$. The answer is 72+24$\Rightarrow\boxed{096}$
 
- 
 
 
 
@@ -1031,15 +1008,13 @@ Translate $\triangle{ABP}$ so that the image of $AB$ coincides $DC$. Let the ima
 
  This gives us $AP=AM+MP=\sqrt{72}+\sqrt{24}$, and the answer is $72+24=\boxed{096}.$
 
- 
 
 
 
 \textbf{Solution 6}
 
 Reflect $O_1$ across $AP$ to $O_1'$. By symmetry $O_1’$ is the circumcenter of $\triangle{ADP}$
-
- $\angle{DO_1’P}$ = $2*\angle{DAP} = 90^\circ$, so $\angle{O_1’PD}=45^\circ$
+$\angle{DO_1’P}$ = $2*\angle{DAP} = 90^\circ$, so $\angle{O_1’PD}=45^\circ$
 
  similarly $\angle{DO_2P}$ = $2*\angle{DCP} = 90^\circ$, so $\angle{O_2PD}=45^\circ$
 
@@ -1089,7 +1064,6 @@ Be wary of "position" versus "number" in the solution!
 
  Thus, $N = 30 \cdot 8 \cdot 3 \cdot 2=30 \cdot 48=1440$. Thus, the remainder when $N$ is divided by $1000$ is $\boxed{440}.$
 
- 
 
 
 
@@ -1106,7 +1080,6 @@ We observe that the condition on the permutations means that two numbers with in
 
  We have now established a bijection between valid permutations of the numbers 1 through 30 and permutations of the congruence classes modulo 2, 3, and 5, so $N$ is equal to the number of permutations of congruence classes. There are always $m$ congruence classes $\mod m,$ so $N = 2! \cdot 3! \cdot 5! = 2 \cdot 6 \cdot 120 = 1440 \equiv \framebox[1.3\width]{440} \mod 1000.$
 
- 
 
 
 
@@ -1167,7 +1140,6 @@ Note, for the purposes of this problem, it is easier to have our residue classes
 
  Therefore, the answer is $\boxed{440}$
 
- 
 
 
 	\item (\textit{AIME II 2011}) Let $P(x) = x^2 - 3x - 9$. A real number $x$ is chosen at random from the interval $5 \le x \le 15$. The probability that $\left\lfloor\sqrt{P(x)}\right\rfloor = \sqrt{P(\lfloor x \rfloor)}$ is equal to $\frac{\sqrt{a} + \sqrt{b} + \sqrt{c} - d}{e}$ , where $a$, $b$, $c$, $d$, and $e$ are positive integers. Find $a + b + c + d + e$.
@@ -1288,8 +1260,7 @@ Taking the difference between this second x-value and the start point for each o
  Doing so gives us:
 
  $\frac{\left( \frac{3 + \sqrt{61}}{2} - 5 \right) + \left( \frac{3 + \sqrt{109}}{2} - 6 \right) + \left( \frac{3 + \sqrt{621}}{2} - 13 \right)}{10} = \frac{\sqrt{61} + \sqrt{109} + \sqrt{621} - 39}{20}$
-
- $\implies{61 + 109 + 621 + 39 + 20 = \fbox{850}}$.
+$\implies{61 + 109 + 621 + 39 + 20 = \fbox{850}}$.
 
  
 
@@ -1299,7 +1270,6 @@ Taking the difference between this second x-value and the start point for each o
 
 Note that all the "bounds" have to be less than the number+1, otherwise it wouldn't fit the answer format. Therefore, the answer is $\frac{3*3+\sqrt{9+4(4+9)}-10+\sqrt{9+4(16+9)}-12+\sqrt{9+4(144+9)}}{20} \implies \boxed{850}$
 
- 
 
 
 \end{enumerate}

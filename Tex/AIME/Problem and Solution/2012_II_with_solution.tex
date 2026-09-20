@@ -12,7 +12,6 @@
 
 Solving for $m$ gives us $m = \frac{503-3n}{5},$ so in order for $m$ to be an integer, we must have $3n \equiv 503 \mod 5 \longrightarrow n \equiv 1 \mod 5.$ The smallest possible value of $n$ is obviously $1,$ and the greatest is $\frac{503 - 5}{3} = 166,$ so the total number of solutions is $\frac{166-1}{5}+1 = \boxed{034}$
 
- 
 
 
 
@@ -113,7 +112,6 @@ Let the ratio be \( r \). From \( \frac{a_{15}}{b_{11}} = \frac{a_{15}}{b_{11}} 
 
  $\boxed{363}$
 
- 
 
 
 	\item (\textit{AIME II 2012}) At a certain university, the division of mathematical sciences consists of the departments of mathematics, statistics, and computer science. There are two male and two female professors in each department. A committee of six professors is to contain three men and three women and must also contain two professors from each of the three departments. Find the number of possible committees that can be formed subject to these requirements.
@@ -146,7 +144,6 @@ There are two cases:
 
 Use \href{https://artofproblemsolving.com/wiki/index.php?title=Generating\_functions}{generating functions}. For each department, there is 1 way to pick 2 males, 4 ways to pick one of each, and 1 way to pick 2 females. Since there are three departments in total, and we wish for three males and three females, the answer will be equal to the coefficient of $x^3y^3$ in the expansion of $(x^2+4xy+y^2)^3$. The requested coefficient is $\boxed{088}$
 
- 
 
 
 	\item (\textit{AIME II 2012}) Ana, Bob, and Cao bike at constant rates of $8.6$ meters per second, $6.2$ meters per second, and $5$ meters per second, respectively. They all begin biking at the same time from the northeast corner of a rectangular field whose longer side runs due west. Ana starts biking along the edge of the field, initially heading west, Bob starts biking along the edge of the field, initially heading south, and Cao bikes in a straight line across the field to a point $D$ on the south edge of the field. Cao arrives at point $D$ at the same time that Ana and Bob arrive at $D$ for the first time. The ratio of the field's length to the field's width to the distance from point $D$ to the southeast corner of the field can be represented as $p : q : r$, where $p$, $q$, and $r$ are positive integers with $p$ and $q$ relatively prime. Find $p+q+r$.
@@ -205,7 +202,6 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
  
  \[\frac{2P + Q - R}{8.6} = \frac{Q + R}{6.2} = \frac{\sqrt{Q^2 + R^2}}{5}\]
 
- 
  \[\frac{2P + Q - R}{43} = \frac{Q + R}{31} = \frac{\sqrt{Q^2 + R^2}}{25}\]
 
  Looking at the last two parts of the equation:
@@ -213,22 +209,16 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
  
  \[\frac{Q + R}{31} = \frac{\sqrt{Q^2 + R^2}}{25}\]
 
- 
  \[25 (Q + R) = 31 \sqrt{Q^2 + R^2}\]
 
- 
  \[625 Q^2 + 1250 QR + 625 R^2 = 961 Q^2 + 961 R^2\]
 
- 
  \[336 Q^2 - 1250 QR + 336 R^2 = 0\]
 
- 
  \[168 (\frac{Q}{R})^2 - 625 \frac{Q}{R}+ 168 = 0\]
 
- 
  \[\frac{Q}{R} = \frac{625 \pm \sqrt{625^2 - 4 \cdot 168^2}}{336}\]
 
- 
  \[\frac{Q}{R} = 24/7\;or\;7/24\]
 
  Looking at the first two parts of the equation above:
@@ -236,10 +226,8 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
  
  \[\frac{2 P + Q - R}{43} = \frac{Q + R}{31}\]
 
- 
  \[62 P + 31 Q - 31 R = 43 Q + 43 R\]
 
- 
  \[P = \frac{6}{31}Q + \frac{37}{31} R\]
 
  If $\frac{Q}{R} = \frac{24}{7}$:
@@ -247,7 +235,6 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
  
  \[R = \frac{7}{24} Q\]
 
- 
  \[P = \frac{6}{31} Q + \frac{37}{31} \cdot \frac{7}{24} Q = \frac{13}{24} Q\]
 
  However, this makes P < Q, but we are given that P > Q.Therefore, $\frac{Q}{R} = \frac{7}{24}$, and:
@@ -255,10 +242,8 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
  
  \[R = \frac{24}{7} Q\]
 
- 
  \[P = \frac{6}{31} Q + \frac{37}{31} \cdot \frac{24}{7} Q = \frac{30}{7} Q\]
 
- 
  \[P : Q : R = 30 : 7 : 24\]
 
  The solution is $P + Q + R = \framebox{061}$.
@@ -276,7 +261,6 @@ Let P, Q, and R be the east-west distance of the field, the north-south distance
                     \end{figure}
                     
 
- 
  \textbf{Answer: }750
 
 
@@ -311,10 +295,8 @@ When the pyramid is made, you see that the height is the one of the legs of a ri
 Let's consider the maximization constraint first: we want to maximize the value of $|z^5 - (1+2i)z^3|$Simplifying, we have
 
  $|z^3| * |z^2 - (1+2i)|$
-
- $=|z|^3 * |z^2 - (1+2i)|$
-
- $=125|z^2 - (1+2i)|$
+$=|z|^3 * |z^2 - (1+2i)|$
+$=125|z^2 - (1+2i)|$
 
  Thus we only need to maximize the value of $|z^2 - (1+2i)|$.
 
@@ -322,7 +304,6 @@ Let's consider the maximization constraint first: we want to maximize the value 
 
  Squaring, we get $z^4 = 5 (25 - 100 + 100i) = -375 + 500i$. Finally, $c+d = -375 + 500 = \boxed{125}$
 
- 
 
 
 
@@ -335,8 +316,7 @@ WLOG, let $z_{1}=5(\cos{\theta_{1}}+i\sin{\theta_{1}})$ and
  This means that
 
  $z_{1}^3=125(\cos{3\theta_{1}}+i\sin{3\theta_{1}})$
-
- $z_{1}^4=625(\cos{4\theta_{1}}+i\sin{4\theta_{1}})$
+$z_{1}^4=625(\cos{4\theta_{1}}+i\sin{4\theta_{1}})$
 
  Hence, this means that
 
@@ -359,13 +339,8 @@ WLOG, let $z_{1}=5(\cos{\theta_{1}}+i\sin{\theta_{1}})$ and
  Then, we have that $\cos{2\theta_{2}}=\cos^2{\theta_{2}}-\sin^2{\theta_{2}}=-\frac{3}{5}$ and $\sin{2\theta_{2}}=2\sin{\theta_{2}}\cos{\theta_{2}}=\frac{4}{5}$
 
  Finally, plugging back in, we find that $z_{1}^4=625(-\frac{3}{5}+\frac{4i}{5})=-375+500i$
+$-375+500=\boxed{125}$
 
- $-375+500=\boxed{125}$
-
- 
-
-
- 
 
 
 
@@ -473,8 +448,7 @@ Examine the first term in the expression we want to evaluate, $\frac{\sin 2x}{\s
  Using the identity $\cos 2\theta = 1 - 2\sin^2\theta$, we can solve for $\frac{\cos 2x}{\cos 2y}$.
 
  $\cos 2x = 1 - 2\sin^2 x = 1 - 2\cdot\frac{27}{35} = 1 - \frac{54}{35} = -\frac{19}{35}$
-
- $\cos 2y = 1 - 2\sin^2 y = 1 - 2\cdot\frac{3}{35} = 1 - \frac{6}{35} = \frac{29}{35}$
+$\cos 2y = 1 - 2\sin^2 y = 1 - 2\cdot\frac{3}{35} = 1 - \frac{6}{35} = \frac{29}{35}$
 
  Thus, $\frac{\cos 2x}{\cos 2y} = \frac{-19/35}{29/35} = -\frac{19}{29}$.
 
@@ -494,7 +468,6 @@ As mentioned above, the first term is clearly $\frac{3}{2}.$ For the second term
  \begin{align*} 1-a &= 9-9b \\ 4a &= b \\ \end{align*}
 Multiplying the first equation by $4$ yields $4-4a = 36 - 36b$ and so $4-b =36 - 36b \implies b =\frac{32}{35}.$ We then find $a =\frac{8}{35}.$ Therefore the second fraction ends up being $\frac{\frac{64}{35}-1}{\frac{16}{35}-1} = -\frac{19}{29}$ so that means our desired sum is $\frac{49}{58}$ so the desired sum is $\boxed{107}.$
 
- 
 
 
 
@@ -534,7 +507,6 @@ Let $a = \sin(x), b = \sin(y)$The first equation yields $\frac{a}{b} = 3.$ Using
  \[\frac{\sin(2x)}{\sin(2y)} = \frac{2\sin{x}\cos{x}}{2\sin{y}\cos{y}} = 3 \cdot \frac{1}{2} = \frac{3}{2}\]Double angle for cosine is 
  \[\cos(2x) = 1-2\sin^2{x}\]so $\frac{\cos(2x)}{\sin(2x)} = \frac{1-2a^2}{1-2b^2} = -\frac{19}{29}.$Adding yields $\frac{49}{58} \rightarrow 49 + 58 = \boxed{107}$
 
- 
 
 
 
@@ -585,15 +557,12 @@ Let $x = a + \frac{b}{c}$ where $a,b,c$ are nonnegative integers and $0 \le b < 
  $a = 0 \implies$ nothing because n is positive
 
  $a = 1 \implies \frac{b}{c} = \frac{0}{1}$
-
- $a = 2 \implies \frac{b}{c} = \frac{0}{2},\frac{1}{2}$
-
- $a = 3 \implies\frac{b}{c} =\frac{0}{3},\frac{1}{3},\frac{2}{3}$
+$a = 2 \implies \frac{b}{c} = \frac{0}{2},\frac{1}{2}$
+$a = 3 \implies\frac{b}{c} =\frac{0}{3},\frac{1}{3},\frac{2}{3}$
 
  
 The pattern continues up to $a = 31$. Note that if $a = 32$, then $n > 1000$. However if $a = 31$, the largest possible $x$ is $31 + \frac{30}{31}$, in which $n$ is still less than $1000$. Therefore the number of positive integers for $n$ is equal to $1+2+3+...+31 = \frac{31 \cdot 32}{2} = \boxed{496}.$
 
- 
 
 
 
@@ -601,7 +570,6 @@ The pattern continues up to $a = 31$. Note that if $a = 32$, then $n > 1000$. Ho
 
 Notice that $x\lfloor x\rfloor$ is continuous over the region $x \in [k, k+1)$ for any integer $k$. Therefore, it takes all values in the range $[k\lfloor k\rfloor, (k+1)\lfloor k+1\rfloor) = [k^2, (k+1)k)$ over that interval. Note that if $k>32$ then $k^2 > 1000$ and if $k=31$, the maximum value attained is $31*32 < 1000$. It follows that the answer is $\sum_{k=1}^{31} (k+1)k-k^2  = \sum_{k=1}^{31} k = \frac{31\cdot 32}{2} = \boxed{496}.$
 
- 
 
 
 
@@ -627,7 +595,6 @@ $k^2\le n<(k+1)k$
 
 After a bit of experimenting, we let $n=l^2+s, s < 2n+1$. We claim that I (the integer part of $x$) = $l$ . (Prove it yourself using contradiction !) so now we get that $x=l+\frac{s}{l}$. This implies that solutions exist iff $s<l$, or for all natural numbers of the form $l^2+s$ where $s<l$. Hence, 1 solution exists for $l=1$! 2 for $l=2$ and so on. Therefore our final answer is $31+30+\dots+1= \boxed{496}$
 
- 
 
 
 
@@ -657,10 +624,6 @@ Notice we can write $\lfloor x \rfloor$ as $x - \{x\}$. Since $n$ is a positive 
  
  \[1+2+\cdots+31 = \frac{31 \cdot 32}{2} = \boxed{496}.\]
 
- 
-
-
- 
 
 
 
@@ -680,7 +643,6 @@ Let $x = a + \alpha$ where $a$ is a positive integer and $0 \leq \alpha < 1$. Th
 
  $1 + 2 + \cdots + 31 = \boxed{496}$
 
- 
 
 
 	\item (\textit{AIME II 2012}) Let $f_1(x) = \frac23 - \frac3{3x+1}$, and for $n \ge 2$, define $f_n(x) = f_1(f_{n-1}(x))$. The value of $x$ that satisfies $f_{1001}(x) = x-3$ can be expressed in the form $\frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -742,12 +704,10 @@ We see that a number $n$ is $p$-safe if and only if the residue of $n \mod p$ is
 
 
  
-                \begin{itemize}
-                    \item We can also say $\frac{2}{7}$ of all numbers are 7-safe, $\frac{6}{11}$ of all numbers are 11-safe, and $\frac{8}{13}$ of all numbers are 13-safe. We can multiply these to get that $\frac{96}{1001}$ of all numbers are simultaneously 7-safe, 11-safe, and 13-safe.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item We can also say $\frac{2}{7}$ of all numbers are 7-safe, $\frac{6}{11}$ of all numbers are 11-safe, and $\frac{8}{13}$ of all numbers are 13-safe. We can multiply these to get that $\frac{96}{1001}$ of all numbers are simultaneously 7-safe, 11-safe, and 13-safe.
+            \end{itemize}
+            
 
 
 
@@ -818,7 +778,6 @@ Angle $E_4AC = \theta$; by the Law of Cosines,
  \begin{align*} \sum_{k=1}^4(CE_k)^2 &= (E_1C)^2 + (E_3C)^2 + (E_2C)^2 + (E_4C)^2\\ &= 222(1 - \cos(120 + \theta)) + 222(1 - \cos(120 - \theta)) + 222(1 - \cos\theta) + 222(1 - \cos\theta)\\ &= 222((1 - (\cos120\cos\theta - \sin120\sin\theta)) + (1 - (\cos120\cos\theta + \sin120\sin\theta)) + 2(1 -\cos\theta))\\ &= 222(1 - \cos120\cos\theta + \sin120\sin\theta + 1 - \cos120\cos\theta - \sin120\sin\theta + 2 - 2\cos\theta)\\ &= 222(1 + \frac{1}{2}\cos\theta + 1 + \frac{1}{2}\cos\theta + 2 - 2\cos\theta)\\ &= 222(4 - \cos\theta)\\ &= 666 + 222(1 - \cos\theta) \end{align*}
 Substituting $11$ for $222(1 - \cos\theta)$ gives the solution $666 + 11 = \framebox{677}.$
 
- 
 
 
 
@@ -887,7 +846,6 @@ This method uses complex numbers with $A$ as the origin. Let $A=0$, $B=\sqrt{111
  
  \[22+444+2\sqrt{111}Re(x) = 22+444+211 = \framebox{677}.\]
 
- 
 
 
 
@@ -930,7 +888,6 @@ This method uses the observation that every point is equidistant from $A$. Witho
  
  \[11+11+655 = \framebox{677}.\]
 
- 
 
 
 
@@ -993,7 +950,6 @@ Therefore, our desired answer is\begin{align*}CE_1^2+CE_2^2+CE_3^2+CE_4^2&=CE_1^
  \[333=(CE_2)^2-\sqrt{11}(CE_2)+11\]
  \[CE_2=\frac{\sqrt{1299}-\sqrt{11}}{2}\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2012_13_Solution_Figure_3.png}
@@ -1036,7 +992,6 @@ Subtracting the equation of $\omega$ from the equation of $\Omega$, we see that
  \[x_1+x_2=\frac{11\sqrt{111}}{222},\quad y_1+y_2=\frac{33\sqrt{37}}{222}\]By $(1)$, we have
  \[\sum_{k=1}^{4}(CE_k)^2=710-3\sqrt{37}\cdot \frac{33\sqrt{37}}{222}-3\sqrt{111}\cdot\frac{11\sqrt{111}}{222}=\boxed{677}\]
 
- 
 
 
 	\item (\textit{AIME II 2012}) In a group of nine people each person shakes hands with exactly two of the other people from the group. Let $N$ be the number of ways this handshaking can occur. Consider two handshaking arrangements different if and only if at least two people who shake hands under one arrangement do not shake hands under the other arrangement. Find the remainder when $N$ is divided by $1000$.
@@ -1082,14 +1037,11 @@ Let $f_N$ be the number of ways a group of $N$ people can shake hands with exact
  $f_4$: There are $\dbinom{3}{2}=3$ possible ways for person $A$ to shake hands with two others (WLOG assume $A$ shakes hands with $B$ and $C$), and there is only one possible outcome thereon ($B$ and $C$ both shakes hands with $D$).
 
  Therefore, we can conclude that $f_4=3$
-
- $f_5$: There are $\dbinom{4}{2}=6$ possible ways for person $A$ to shake hands with two others (WLOG assume they are $B$ and $C$). Then, $B$ and $C$ must also shake hands with the remaining two people ($2$ ways), and those last $2$ people must shake hands with each other ($1$ way).Therefore, $f_5=\dbinom{4}{2}\ast(2)\ast(1)=12$
-
- $f_6$: There are $\dbinom{5}{2}=10$ possible ways for person $A$ to shake hands with two others (WLOG assume they are $B$ and $C$). However, $B$ and $C$ shake hands with each other, then there are $f_3$ ways for the rest of the people to shake hands. If $B$ and $C$ shake hands with two others out of the three remaining people (3$\ast$2 ways), those $2$ people must shake hands with the last person ($1$ way).Therefore, $f_6=\dbinom{5}{2}\ast(f_3)+3\ast(2)\ast(1)=70$
+$f_5$: There are $\dbinom{4}{2}=6$ possible ways for person $A$ to shake hands with two others (WLOG assume they are $B$ and $C$). Then, $B$ and $C$ must also shake hands with the remaining two people ($2$ ways), and those last $2$ people must shake hands with each other ($1$ way).Therefore, $f_5=\dbinom{4}{2}\ast(2)\ast(1)=12$
+$f_6$: There are $\dbinom{5}{2}=10$ possible ways for person $A$ to shake hands with two others (WLOG assume they are $B$ and $C$). However, $B$ and $C$ shake hands with each other, then there are $f_3$ ways for the rest of the people to shake hands. If $B$ and $C$ shake hands with two others out of the three remaining people (3$\ast$2 ways), those $2$ people must shake hands with the last person ($1$ way).Therefore, $f_6=\dbinom{5}{2}\ast(f_3)+3\ast(2)\ast(1)=70$
 
  Now we have enough information to find $f_9$
-
- $f_9$: There are $\dbinom{8}{2}=28$ possible ways for person $A$ to shake hands with two others (WLOG assume they are $B$ and $C$).
+$f_9$: There are $\dbinom{8}{2}=28$ possible ways for person $A$ to shake hands with two others (WLOG assume they are $B$ and $C$).
 
  \textbf{Case 1:} $B$ and $C$ shake hands with each other
 
@@ -1116,7 +1068,6 @@ Let $f_N$ be the number of ways a group of $N$ people can shake hands with exact
 
  which gives us the answer of $\boxed{016}$
 
- 
 
 
 	\item (\textit{AIME II 2012}) Triangle $ABC$ is inscribed in circle $\omega$ with $AB=5$, $BC=7$, and $AC=3$. The bisector of angle $A$ meets side $\overline{BC}$ at $D$ and circle $\omega$ at a second point $E$. Let $\gamma$ be the circle with diameter $\overline{DE}$. Circles $\omega$ and $\gamma$ meet at $E$ and a second point $F$. Then $AF^2 = \frac mn$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1210,9 +1161,8 @@ Use the angle bisector theorem to find $CD=\frac{21}{8}$, $BD=\frac{35}{8}$, and
 Use Law of Cosines in $\triangle ABC$ to get $\angle BAC=120^\circ$. Because $AE$ bisects $\angle A$, $E$ is the midpoint of major arc $BC$ so $BE=CE,$ and $\angle BEC=60^\circ.$ Thus $\triangle BEC$ is equilateral. Notice now that $\angle BFC=\angle BFE= 60^\circ.$ But $\angle DFE=90^\circ$ so $FD$ bisects $\angle BFC.$ Thus, 
  \[\frac{BF}{CF}=\frac{BD}{CD}=\frac{BA}{CA}=\frac{5}{3}.\]Let $BF=5k, CF=3k.$ Use Law of Cosines on $\triangle BFC$ to get
  \[25k^2+9k^2-15k^2 = 49 \qquad \Longrightarrow\qquad k=\frac 7{\sqrt{19}}\] Use Ptolemy's Theorem on $BFCA$, to get 
- \[15k+15k=7\cdot AF, \qquad \Longrightarrow\qquad AF= \frac{30}{\sqrt{19}},\] so $AF^2=\frac{900}{19}$ and the answer is $900+19=919$ 
+ \[15k+15k=7\cdot AF, \qquad \Longrightarrow\qquad AF= \frac{30}{\sqrt{19}},\] so $AF^2=\frac{900}{19}$ and the answer is $900+19=919$
 
- 
 
 
 
@@ -1232,24 +1182,19 @@ Use Law of Cosines in $\triangle ABC$ to get $\angle BAC=120^\circ$. Because $AE
  \[AE = AD + DE = AD + \frac {BD \cdot CD}{AD},\]
  \[AE =\frac {2 b c \cos \alpha}{b+c} + \frac {a^2 bc \cdot (b+c) }{(b+c)^2 \cdot 2 b c \cos \alpha} =\]
  \[=  \frac {b c \cos^2 \alpha + a^2}{2(b+c)\cos \alpha} =\frac {4bc \cos^2 \alpha  + b^2 +c^2 -2 b c \cos 2\alpha}{2(b+c) \cos \alpha} = \frac {b+c}{2} \implies AD \cdot AE = 2 bc \cos \alpha.\]We consider the inversion with respect $\theta.$
-
- $B$ swap $B' \implies AB' = AC, B'  \in AB \implies B'$ is symmetric to $C$ with respect to $AE.$
-
- $C$ swap $C' \implies AC' = AB, C'$ lies on line $AC \implies C'$ is symmetric to $B$ with respect to $AE.$
-
- $BC^2 = AB^2 + AC^2 + AB \cdot BC \implies \alpha = 60^\circ \implies AD \cdot AE = bc \implies D$ swap $E.$
+$B$ swap $B' \implies AB' = AC, B'  \in AB \implies B'$ is symmetric to $C$ with respect to $AE.$
+$C$ swap $C' \implies AC' = AB, C'$ lies on line $AC \implies C'$ is symmetric to $B$ with respect to $AE.$
+$BC^2 = AB^2 + AC^2 + AB \cdot BC \implies \alpha = 60^\circ \implies AD \cdot AE = bc \implies D$ swap $E.$
 
  Points $D$ and $E$ lies on $\Gamma \implies \Gamma$ swap $\Gamma.$
-
- $DE$ is diameter $\Gamma, \angle DME = 90^\circ \implies  M \in \Gamma.$ Therefore $M$ is crosspoint of $BC$ and $\Gamma.$
+$DE$ is diameter $\Gamma, \angle DME = 90^\circ \implies  M \in \Gamma.$ Therefore $M$ is crosspoint of $BC$ and $\Gamma.$
 
  Let $\Omega$ be circumcircle $AB'C'.  \Omega$ is image of line $BC.$Point $M$ maps into $M' \implies M' = \Gamma \cap \Omega.$
 
  Points $A, B',$ and $C'$ are symmetric to $A, C,$ and $B,$ respectively. 
 
  Point $M'$ lies on $\Gamma$ which is symmetric with respect to $AE$ and on $\Omega$ which is symmetric to $\omega$ with respect to $AE  \implies$
-
- <i>\textbf{$M'$ is symmetric $F$ with respect to $AE \implies AM' = AF.$}</i>
+<i>\textbf{$M'$ is symmetric $F$ with respect to $AE \implies AM' = AF.$}</i>
 
  We use Power of Point $A$ and get 
  \[AF = AM' = \frac {AD \cdot AE}{AM} = \frac {4b c}{\sqrt{2 b^2 + 2 c^2 – a^2}} = \frac {4 \cdot 3 \cdot 5}{\sqrt{ 50 + 18 – 49}} = \frac {30}{\sqrt{19}} \implies \boxed{\textbf{919}}.\]

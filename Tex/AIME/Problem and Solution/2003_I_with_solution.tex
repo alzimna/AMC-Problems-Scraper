@@ -7,8 +7,6 @@
 
  where $k$ and $n$ are positive integers and $n$ is as large as possible, find $k + n.$
 
-
- 
  \textbf{Answer: }839
 
 
@@ -23,8 +21,6 @@ Note that
 
 	\item (\textit{AIME I 2003}) One hundred concentric circles with radii $1, 2, 3, \dots, 100$ are drawn in a plane. The interior of the circle of radius 1 is colored red, and each region bounded by consecutive circles is colored either red or green, with no two adjacent regions the same color. The ratio of the total area of the green regions to the area of the circle of radius 100 can be expressed as $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
 
-
- 
  \textbf{Answer: }301
 
 
@@ -51,12 +47,13 @@ To get the green area, we can color all the circles of radius $100$ or below gre
  Alternatively, we can determine a pattern through trial-and-error using smaller numbers. 
 
  
-                \begin{itemize}
-                    \item For $2$ circles, the ratio is $3/4$.\item For $4$ circles, the ratio is $5/8$.\item For $6$ circles, the ratio is $7/12$.\item For $8$ circles, the ratio is $9/16$.
-                \end{itemize}
-
-
-                Now the pattern for each ratio is clear.  Given $x$ circles, the ratio is $\frac{x+1}{2x}$.For the $100$ circle case (which is what this problem is), $x=100$, and the ratio is $\frac{101}{200}$.
+            \begin{itemize}
+        \item For $2$ circles, the ratio is $3/4$.
+        \item For $4$ circles, the ratio is $5/8$.
+        \item For $6$ circles, the ratio is $7/12$.
+        \item For $8$ circles, the ratio is $9/16$.
+            \end{itemize}
+            Now the pattern for each ratio is clear.  Given $x$ circles, the ratio is $\frac{x+1}{2x}$.For the $100$ circle case (which is what this problem is), $x=100$, and the ratio is $\frac{101}{200}$.
 
  
 
@@ -71,7 +68,6 @@ To get the green area, we can color all the circles of radius $100$ or below gre
 
 We want to find $\frac{\sum\limits_{n=1}^{50} (4n-1)\pi}{10000\pi}=\frac{\sum\limits_{n=1}^{50} (4n-1)}{10000}=\frac{(\sum\limits_{n=1}^{50} (4n) )-50}{10000}=\frac{101}{200} \rightarrow 101+200=\boxed{301}$
 
- 
 
 
 
@@ -103,12 +99,17 @@ The sum of the areas of the green regions is
 Order the numbers in the set from greatest to least to reduce error: $\{34, 21, 13, 8, 5, 3, 2, 1\}.$Each \href{https://artofproblemsolving.com/wiki/index.php?title=Element}{element} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} will appear in $7$ two-element \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subsets}, once with each other number.
 
  
-                \begin{itemize}
-                    \item $34$ will be the greater number in $7$ subsets.\item $21$ will be the greater number in $6$ subsets.\item $13$ will be the greater number in $5$ subsets.\item $8$ will be the greater number in $4$ subsets.\item $5$ will be the greater number in $3$ subsets.\item $3$ will be the greater number in $2$ subsets.\item $2$ will be the greater number in $1$ subsets.\item $1$ will be the greater number in $0$ subsets.
-                \end{itemize}
-
-
-                Therefore the desired sum is $34\cdot7+21\cdot6+13\cdot5+8\cdot4+5\cdot3+3 \cdot2+2\cdot1+1\cdot0=\boxed{484}$.
+            \begin{itemize}
+        \item $34$ will be the greater number in $7$ subsets.
+        \item $21$ will be the greater number in $6$ subsets.
+        \item $13$ will be the greater number in $5$ subsets.
+        \item $8$ will be the greater number in $4$ subsets.
+        \item $5$ will be the greater number in $3$ subsets.
+        \item $3$ will be the greater number in $2$ subsets.
+        \item $2$ will be the greater number in $1$ subsets.
+        \item $1$ will be the greater number in $0$ subsets.
+            \end{itemize}
+            Therefore the desired sum is $34\cdot7+21\cdot6+13\cdot5+8\cdot4+5\cdot3+3 \cdot2+2\cdot1+1\cdot0=\boxed{484}$.
 
  Note: Note that $7+6+5+4+3+2+1=\binom{8}{2}$, so we have counted all the possible cases.
 
@@ -136,13 +137,10 @@ Thinking of this problem algorithmically, one can "sort" the array to give:
  
  \[609 - 125 = \boxed{484}\]
 
- 
 
 
 	\item (\textit{AIME I 2003}) Given that $\log_{10} \sin x + \log_{10} \cos x = -1$ and that $\log_{10} (\sin x + \cos x) = \frac{1}{2} (\log_{10} n - 1),$ find $n.$
 
-
- 
  \textbf{Answer: }012
 
 
@@ -229,13 +227,10 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
 
  Finally, we see that $n = \boxed{012}.$
 
- 
 
 
 	\item (\textit{AIME I 2003}) Consider the set of points that are inside or within one unit of a rectangular parallelepiped (box) that measures 3 by 4 by 5 units. Given that the volume of this set is $\frac{m + n \pi}{p},$ where $m, n,$ and $p$ are positive integers, and $n$ and $p$ are relatively prime, find $m + n + p.$
 
-
- 
  \textbf{Answer: }505
 
 
@@ -252,20 +247,19 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
  The set can be broken into several parts: the big $3\times 4 \times 5$ parallelepiped, $6$ external parallelepipeds that each share a face with the large parallelepiped and have a height of $1$, the $1/8$ \href{https://artofproblemsolving.com/wiki/index.php?title=Sphere}{spheres} (one centered at each \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{vertex} of the large parallelepiped), and the $1/4$ \href{https://artofproblemsolving.com/wiki/index.php?title=Cylinder}{cylinders} connecting each adjacent pair of spheres.
 
  
-                \begin{itemize}
-                    \item The volume of the parallelepiped is $3 \times 4 \times 5 = 60$ cubic units.\item The volume of the external parallelepipeds is $2(3 \times 4 \times 1)+2(3 \times 5 \times 1 )+2(4 \times 5 \times 1)=94$.\item There are $8$ of the $1/8$ spheres, each of radius $1$. Together, their volume is $\frac{4}{3}\pi$.\item There are $12$ of the $1/4$ cylinders, so $3$ complete cylinders can be formed. Their volumes are $3\pi$, $4\pi$, and $5\pi$, adding up to $12\pi$.
-                \end{itemize}
-
-
-                The combined volume of these parts is $60+94+\frac{4}{3}\pi+12\pi = \frac{462+40\pi}{3}$. Thus, the answer is $m+n+p = 462+40+3 = \boxed{505}$.
+            \begin{itemize}
+        \item The volume of the parallelepiped is $3 \times 4 \times 5 = 60$ cubic units.
+        \item The volume of the external parallelepipeds is $2(3 \times 4 \times 1)+2(3 \times 5 \times 1 )+2(4 \times 5 \times 1)=94$.
+        \item There are $8$ of the $1/8$ spheres, each of radius $1$. Together, their volume is $\frac{4}{3}\pi$.
+        \item There are $12$ of the $1/4$ cylinders, so $3$ complete cylinders can be formed. Their volumes are $3\pi$, $4\pi$, and $5\pi$, adding up to $12\pi$.
+            \end{itemize}
+            The combined volume of these parts is $60+94+\frac{4}{3}\pi+12\pi = \frac{462+40\pi}{3}$. Thus, the answer is $m+n+p = 462+40+3 = \boxed{505}$.
 
  
 
 
 	\item (\textit{AIME I 2003}) The sum of the areas of all triangles whose vertices are also vertices of a 1 by 1 by 1 cube is $m + \sqrt{n} + \sqrt{p},$ where $m, n,$ and $p$ are integers. Find $m + n + p.$
 
-
- 
  \textbf{Answer: }348
 
 
@@ -279,14 +273,12 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
                     \end{figure}
                     
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_6_Solution_Figure_2.png}
                     \end{figure}
                     
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2003_6_Solution_Figure_3.png}
@@ -310,8 +302,6 @@ Let $\log{x} = \log_{10}{x}.$ Through basic log properties, we see that $\log{a}
 
 	\item (\textit{AIME I 2003}) Point $B$ is on $\overline{AC}$ with $AB = 9$ and $BC = 21.$ Point $D$ is not on $\overline{AC}$ so that $AD = CD,$ and $AD$ and $BD$ are integers. Let $s$ be the sum of all possible perimeters of $\triangle ACD.$ Find $s.$
 
-
- 
  \textbf{Answer: }380
 
 
@@ -441,8 +431,7 @@ We ignore the requirement that the first digit is non-zero, and do casework on t
  If two digits $a$ and $b$ sum to $0$, we have $1$ possibility: $(a,b) = (0,0)$
 
  If $a+b = 1$, we have $2$ possibilities: $(a,b) = (0,1)$ and $(a,b) = (1,0)$
-
- $a+b = 2$: $(0,2)$, $(2,0)$, and $(1,1)$ are the only $3$ possibilities.
+$a+b = 2$: $(0,2)$, $(2,0)$, and $(1,1)$ are the only $3$ possibilities.
 
  We notice a pattern: for all $k \leq 9$, there are $k+1$ ordered pairs of digits $(a,b)$ such that $a+b = k$. Then, testing for $10 \leq k \leq 18$, we notice that there are $(18 - k) + 1$ ordered pairs with a sum of $k$.
 
@@ -460,8 +449,6 @@ We ignore the requirement that the first digit is non-zero, and do casework on t
 
 	\item (\textit{AIME I 2003}) Triangle $ABC$ is isosceles with $AC = BC$ and $\angle ACB = 106^\circ.$ Point $M$ is in the interior of the triangle so that $\angle MAC = 7^\circ$ and $\angle MCA = 23^\circ.$ Find the number of degrees in $\angle CMB.$
 
-
- 
  \textbf{Answer: }083
 
 
@@ -543,7 +530,6 @@ Noticing that we have three concurrent cevians, we apply Ceva's theorem:
 
  By inspection, $x=14^\circ$ works, so the answer is $180-83-14= \boxed{083}$
 
- 
 
 
 
@@ -583,8 +569,6 @@ Let $\angle{APC} = \theta^{\circ}$Using sine rule on $\triangle{APB}, \triangle{
 
 	\item (\textit{AIME I 2003}) An angle $x$ is chosen at random from the interval $0^\circ < x < 90^\circ.$ Let $p$ be the probability that the numbers $\sin^2 x, \cos^2 x,$ and $\sin x \cos x$ are not the lengths of the sides of a triangle. Given that $p = d/n,$ where $d$ is the number of degrees in $\arctan m$ and $m$ and $n$ are positive integers with $m + n < 1000,$ find $m + n.$
 
-
- 
  \textbf{Answer: }092
 
 
@@ -669,8 +653,7 @@ Next, we examine the third inequality, $\cos^2 x + \sin x \cos x > \sin^2 x$. On
  \[(AD^2 - BC^2) = 360(AD - BC) \cos A\]
  \[(AD - BC)(AD + BC) = 360(AD - BC) \cos A\]
  \[(AD + BC) = 360 \cos A\]We know that $AD + BC = 640 - 360 = 280$. $\cos A = \dfrac{280}{360} =  \dfrac{7}{9} = 0.777 \ldots$
-
- $\lfloor 1000 \cos  A \rfloor = \boxed{777}$.
+$\lfloor 1000 \cos  A \rfloor = \boxed{777}$.
 
  
 
@@ -704,7 +687,6 @@ Start the same as solution 1. We get
  \[x^2-360 \cos A \cdot x - c = 0\]has solutions $a$ and $b$. Therefore, by Vieta's, $a+b = 360 \cos A$. However, we know that the perimeter of $ABCD$ is $640$, so $a+b+180+180=640$, so $a+b=280$. Therefore, 
  \[360 \cos A = 280 \Rightarrow \cos A = \frac{280}{360} \Rightarrow \cos A = \frac{7}{9} \Rightarrow \lfloor 1000 \cos A \rfloor = \boxed{777}.\]
 
- 
 
 
 	\item (\textit{AIME I 2003}) Let $N$ be the number of positive integers that are less than or equal to 2003 and whose base-2 representation has more 1's than 0's. Find the remainder when $N$ is divided by 1000.
@@ -757,7 +739,6 @@ We seek the number of allowed numbers which have $k$ 1's, not including the lead
 
 We will count the number of it $< 2^{11}=2048$ instead of $2003$ (In other words, the length of the base-2 representation is at most $11$. If there are even digits, $2n$, then the leftmost digit is $1$, the rest, $2n-1$, has odd number of digits. In order for the base-2 representation to have more $1$'s, we will need more $1$ in the remaining $2n-1$ than $0$'s. Using symmetry, this is equal to$\frac{2^9+2^7+..+2^1}{2}$Using similar argument where there are odd amount of digits. The remaining even amount of digit must contains the number of $1$'s at least as the number of $0$'s. So it's equal to$\frac{\binom{10}{5}+2^{10}+\binom{8}{4}+2^8+\binom{6}{3}+2^6+...+\binom{0}{0}+2^0}{2}$Summing both cases, we have $\frac{2^0+2^1+..+2^{10}+\binom{0}{0}+..+\binom{10}{5}}{2} = 199$. There are $44$ numbers between $2004$ and $2047$ inclusive that satisfy it. So the answer is $199-44=\boxed{155}$
 
- 
 
 
 	\item (\textit{AIME I 2003}) The decimal representation of $m/n,$ where $m$ and $n$ are relatively prime positive integers and $m < n,$ contains the digits 2, 5, and 1 consecutively, and in that order. Find the smallest value of $n$ for which this is possible.
@@ -798,8 +779,6 @@ Rewrite the problem as having the smallest $n$ such that we can find an positive
 
 	\item (\textit{AIME I 2003}) In $\triangle ABC, AB = 360, BC = 507,$ and $CA = 780.$ Let $M$ be the midpoint of $\overline{CA},$ and let $D$ be the point on $\overline{CA}$ such that $\overline{BD}$ bisects angle $ABC.$ Let $F$ be the point on $\overline{BC}$ such that $\overline{DF} \perp \overline{BD}.$ Suppose that $\overline{DF}$ meets $\overline{BM}$ at $E.$ The ratio $DE: EF$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
 
-
- 
  \textbf{Answer: }289
 
 
@@ -841,7 +820,6 @@ By the Angle Bisector Theorem, we know that $[CBD]=\frac{169}{289}[ABC]$. Theref
 
  We can now use mass points on triangle CBD. Assign a mass of $240\cdot 49$ to point $C$. Then $D$ must have mass $240\cdot 289$ and $B$ must have mass $49\cdot 49$. This gives $F$ a mass of $240\cdot 49+49\cdot 49=289\cdot 49$. Therefore, $DE:EF=\frac{289\cdot 49}{240\cdot 289}=\frac{49}{240}$, giving us an answer of $\boxed{289}.$
 
- 
 
 
 
@@ -874,7 +852,6 @@ Firstly, angle bisector theorem yields $\frac{CD}{AD} = \frac{507}{360} = \frac{
  
  \[\frac{EF'}{EF} = \frac{ED+DF'}{EF} = \frac{EF+2DE}{EF} = 1\ +\ 2\left(\frac{DE}{EF}\right) \implies \frac{DE}{EF} = \frac{49}{240} \implies \boxed{289}\]
 
- 
 
 
 
@@ -882,7 +859,6 @@ Firstly, angle bisector theorem yields $\frac{CD}{AD} = \frac{507}{360} = \frac{
 
 Extend $DF$ to intersect with the extension of $AB$ at $G$. Notice that $\triangle{BDF} \cong \triangle{BDG}$, so $GD=DF$. We now use Menelaus on $\triangle{GBF}$, as $A$, $D$, and $C$ are collinear; this gives us $\frac{GA}{BA} \cdot \frac{BC}{FC} \cdot \frac{DF}{GD}=1$. As $GD=DF$, we have $\frac{GA}{AB}=\frac{FC}{BC}$, hence $\frac{GA}{120}=\frac{FC}{169}$. Reflect $G$ over $A$ to $G'$. Note that $\frac{G'A}{BA}=\frac{FC}{BC}$, and reflexivity, hence $\triangle{ABC} \sim \triangle{BG'F}$. It's easily concluded from this that $G'F \parallel AC$, hence $G'F \parallel AD$. As $GD=DF$, we have $AD$ is a midsegment of $\triangle{GG'F}$, thus $G'F = 2AD$. We now focus on the ratio $\frac{BF}{BC}$. From similarity, we have $\frac{BF}{BC}=\frac{G'F}{AC}=\frac{2AD}{AC}$. By the angle bisector theorem, we have $AD:DC=120:169$, hence $AD:AC=120:289$, so $\frac{BF}{BC}=\frac{240}{289}$. We now work out the ratio $\frac{DM}{MC}$. $\frac{DM}{MC}=\frac{CD-MC}{MC}=\frac{CD}{MC}-1=\frac{2CD}{AC}-1=\frac{338}{289}-1=\frac{49}{289}$. We now use mass points on $\triangle{BDC}$. We let the mass of $C$ be $240\cdot 49$, so the mass of $B$ is $49 \cdot 49$ and the mass of $D$ is $289\cdot 240$. Hence, the mass of $F$ is $289\cdot 49$, so the ratio $\frac{DE}{EF}=\frac{49}{240}$. Extracting gives $49+240=\boxed{289}.$
 
- 
 
 
 \end{enumerate}

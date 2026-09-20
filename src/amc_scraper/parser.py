@@ -207,31 +207,30 @@ def decode_dldd(statement) :
 
 def decode_list(statement) :
     statement_soup = BeautifulSoup(statement,'html.parser')
-    statement_cleaned = statement
-    for item in statement_soup.find_all('ol') :
-        temp = rf'''
-            \begin{{enumerate}}
-                {item.decode_contents()}
+    for ol in statement_soup.find_all('ol') :
+        temp = BeautifulSoup(rf'''
+            \begin{{enumerate}}{ol.decode_contents()}
             \end{{enumerate}}
-            '''
-        statement_cleaned = statement_cleaned.replace(str(item),temp)
+            ''','html.parser')
+        
+        ol.replace_with(temp)
+
 
     for item in statement_soup.find_all('ul') :
-        if item.find('li') :
-            temp = rf'''
-                \begin{{itemize}}
-                    {item.decode_contents()}
-                \end{{itemize}}
+        temp = BeautifulSoup(rf'''
+            \begin{{itemize}}{item.decode_contents()}
+            \end{{itemize}}
+            ''','html.parser')
+        
+        item.replace_with(temp)
 
+    for li in statement_soup.find_all('li') :
+        content = li.decode_contents()
+        temp = BeautifulSoup(f'''
+        \\item {content}''','html.parser')
+        li.replace_with(temp)
 
-                '''
-            statement_cleaned = statement_cleaned.replace(str(item),temp)
-        else :
-            continue
-
-
-    for item in statement_soup.find_all('li') :
-        statement_cleaned = statement_cleaned.replace(str(item),r'\item ' + item.decode_contents())
+    statement_cleaned = str(statement_soup)
     return statement_cleaned
 
 
