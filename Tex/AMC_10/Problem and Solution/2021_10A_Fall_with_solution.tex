@@ -1,0 +1,2123 @@
+\section{AMC 10 10A Fall 2021}
+        \begin{enumerate}
+        	\item (\textit{AMC 10 10A Fall 2021}) What is the value of $\frac{(2112-2021)^2}{169}$?
+
+
+ $\textbf{(A) } 7 \qquad\textbf{(B) } 21 \qquad\textbf{(C) } 49 \qquad\textbf{(D) } 64 \qquad\textbf{(E) } 91$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Laws of Exponents)}
+
+We have
+ \[\frac{(2112-2021)^2}{169}=\frac{91^2}{169}=\frac{91^2}{13^2}=\left(\frac{91}{13}\right)^2=7^2=\boxed{\textbf{(C) } 49}.\]~MRENTHUSIASM
+
+ 
+
+
+
+\textbf{Solution 2 (Difference of Squares)}
+
+We have
+ \[\frac{(2112-2021)^2}{169}=\frac{91^2}{169}=\frac{(10^2-3^2)^2}{13^2}=\frac{((10+3)(10-3))^2}{13^2}=\frac{(13\cdot7)^2}{13^2}=\frac{13^2 \cdot 7^2}{13^2}=7^2=\boxed{\textbf{(C) } 49}.\]
+
+ 
+
+
+
+\textbf{Solution 3 (Estimate)}
+
+We know that $2112-2021 = 91$. Approximate this as $100$ as it is pretty close to it. Also, approximate $169$ to $170$. We then have 
+ \[\frac{(2112 - 2021)^2}{169} \approx \frac{100^2}{170} \approx \frac{1000}{17} \approx 58.\]Now check the answer choices. The two closest answers are $49$ and $64$. As the numerator is actually bigger than it should be, it should be the smaller answer, or $\boxed{\textbf{(C) } 49}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Menkara has a $4 \times 6$ index card. If she shortens the length of one side of this card by $1$ inch, the card would have area $18$ square inches. What would the area of the card be in square inches if instead she shortens the length of the other side by $1$ inch?
+
+
+ $\textbf{(A) }16\qquad\textbf{(B) }17\qquad\textbf{(C) }18\qquad\textbf{(D) }19\qquad\textbf{(E) }20$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+We construct the following table:
+ \[\begin{array}{c||c|c||c} & & & \\ [-2.5ex] \textbf{Scenario} & \textbf{Length} & \textbf{Width} & \textbf{Area} \\ [0.5ex] \hline & & & \\ [-2ex] \text{Initial} & 4 & 6 & 24 \\ \text{Menkara shortens one side.} & 3 & 6 & 18 \\ \text{Menkara shortens other side instead.} & 4 & 5 & 20 \end{array}\]Therefore, the answer is $\boxed{\textbf{(E) } 20}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) What is the maximum number of balls of clay of radius $2$ that can completely fit inside a cube of side length $6$ assuming the balls can be reshaped but not compressed before they are packed in the cube?
+
+
+ $\textbf{(A) }3\qquad\textbf{(B) }4\qquad\textbf{(C) }5\qquad\textbf{(D) }6\qquad\textbf{(E) }7$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1 (Inequality)}
+
+The volume of the cube is $V_{\text{cube}}=6^3=216,$ and the volume of a clay ball is $V_{\text{ball}}=\frac43\cdot\pi\cdot2^3=\frac{32}{3}\pi.$
+
+ Since the balls can be reshaped but not compressed, the maximum number of balls that can completely fit inside a cube is 
+ \[\left\lfloor\frac{V_{\text{cube}}}{V_{\text{ball}}}\right\rfloor=\left\lfloor\frac{81}{4\pi}\right\rfloor.\]Approximating with $\pi\approx3.14,$ we have $12<4\pi<13,$ or $\left\lfloor\frac{81}{13}\right\rfloor \leq \left\lfloor\frac{81}{4\pi}\right\rfloor \leq \left\lfloor\frac{81}{12}\right\rfloor.$ We simplify to get 
+ \[6 \leq \left\lfloor\frac{81}{4\pi}\right\rfloor \leq 6,\]from which $\left\lfloor\frac{81}{4\pi}\right\rfloor=\boxed{\textbf{(D) }6}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Inequality)}
+
+As shown in Solution 1, we conclude that the maximum number of balls that can completely fit inside a cube is $\left\lfloor\frac{81}{4\pi}\right\rfloor.$
+
+ By an underestimation $\pi\approx3,$ we have $4\pi>12,$ or $\frac{81}{4\pi}<6\frac34.$
+
+ By an overestimation $\pi\approx\frac{22}{7},$ we have $4\pi<\frac{88}{7},$ or $\frac{81}{4\pi}>6\frac{39}{88}.$
+
+ Together, we get 
+ \[6 < 6\frac{39}{88} < \frac{81}{4\pi} < 6\frac34 < 7,\]from which $\left\lfloor\frac{81}{4\pi}\right\rfloor=\boxed{\textbf{(D) }6}.$
+
+ 
+
+
+
+\textbf{Solution 3 (Approximation)}
+
+As shown in Solution 1, we conclude that the maximum number of balls that can completely fit inside a cube is $\left\lfloor\frac{81}{4\pi}\right\rfloor.$
+
+ Approximating with $\pi\approx3,$ we have $\frac{81}{4\pi}\approx6\frac34.$ Since $\pi$ is about $5\%$ greater than $3,$ it is safe to claim that $\left\lfloor\frac{81}{4\pi}\right\rfloor=\boxed{\textbf{(D) }6}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Mr. Lopez has a choice of two routes to get to work. Route A is $6$ miles long, and his average speed along this route is $30$ miles per hour. Route B is $5$ miles long, and his average speed along this route is $40$ miles per hour, except for a $\frac{1}{2}$-mile stretch in a school zone where his average speed is $20$ miles per hour. By how many minutes is Route B quicker than Route A?
+
+
+ $\textbf{(A)}\ 2 \frac{3}{4}  \qquad\textbf{(B)}\  3 \frac{3}{4} \qquad\textbf{(C)}\  4 \frac{1}{2} \qquad\textbf{(D)}\  5 \frac{1}{2} \qquad\textbf{(E)}\ 6 \frac{3}{4}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+If Mr. Lopez chooses Route A, then he will spend $\frac{6}{30}=\frac{1}{5}$ hour, or $\frac{1}{5}\cdot60=12$ minutes.
+
+ If Mr. Lopez chooses Route B, then he will spend $\frac{9/2}{40}+\frac{1/2}{20}=\frac{11}{80}$ hour, or $\frac{11}{80}\cdot60=8\frac14$ minutes.
+
+ Therefore, Route B is quicker than Route A by $12-8\frac14=\boxed{\textbf{(B)}\  3 \frac{3}{4}}$ minutes.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We use the equation $d=st$ to solve this problem. Recall that $1$ mile per hour is equal to $\frac{1}{60}$ mile per minute.
+
+ For Route A, the distance is $6$ miles and the speed to travel this distance is $\frac{1}{2}$ mile per minute. Thus, the time it takes on Route A is $12$ minutes.
+
+ For Route B, we have to use the equation twice: once for the distance of $5- \frac{1}{2} = \frac{9}{2}$ miles with a speed of $\frac{2}{3}$ mile per minute and a distance of $\frac{1}{2}$ miles at a speed of $\frac{1}{3}$ mile per minute. Thus, the time it takes to go on Route B is $\frac{9}{2} \cdot \frac{3}{2} + \frac{1}{2} \cdot 3 = \frac{27}{4} + \frac{3}{2} = \frac{33}{4}$ minutes. Thus, Route B is $12 - \frac{33}{4} = \frac{15}{4} = 3\frac{3}{4}$ faster than Route A. Thus, the answer is $\boxed{\textbf{(B)}\  3 \frac{3}{4}}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) The six-digit number $\underline{2}\,\underline{0}\,\underline{2}\,\underline{1}\,\underline{0}\,\underline{A}$ is prime for only one digit $A.$ What is $A?$
+
+
+ $\textbf{(A)}\ 1 \qquad\textbf{(B)}\ 3 \qquad\textbf{(C)}\ 5 \qquad\textbf{(D)}\ 7 \qquad\textbf{(E)}\ 9$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+First, modulo $2$ or $5$, $\underline{20210A} \equiv A$.Hence, $A \neq 0, 2, 4, 5, 6, 8$.
+
+ Second modulo $3$, $\underline{20210A} \equiv 2 + 0 + 2 + 1 + 0 + A \equiv 5 + A$.Hence, $A \neq 1, 4, 7$.
+
+ Third, modulo $11$, $\underline{20210A} \equiv A + 1 + 0 - 0 - 2 - 2 \equiv A - 3$.Hence, $A \neq 3$.
+
+ Therefore, the answer is $\boxed{\textbf{(E)}\ 9}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Elimination)}
+
+Any number ending in $5$ is divisible by $5$. So we can eliminate option $\textbf{(C)}$.
+
+ If the sum of the digits of a number is divisible by $3$, the number is divisible by $3$. The sum of the digits of this number is $2 + 0 + 2 + 1 + 0 + A = 5 + A$. If $5 + A$ is divisible by $3$, the number is divisible by $3$. Thus we can eliminate options $\textbf{(A)}$ and $\textbf{(D)}$.
+
+ So the correct option is either $\textbf{(B)}$ or $\textbf{(E)}$. Let's try dividing the number with some integers.
+
+ $20210A/7 = 2887x$, where $x$ is $1A/7$. Since $13$ and $19$ are both indivisible by $7$, this does not help us narrow the choices down.
+
+ $20210A/11 = 1837x$, where $x$ is $3A/11$. Since $33/11 = 3$, option $\textbf{(B)}$ would make $20210A$ divisible by $11$. Thus, by elimination, the correct choice must be option $\boxed{\textbf{(E)}\ 9}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+$202100 \implies$ divisible by $2$.
+
+ $202101 \implies$ divisible by $3$.
+
+ $202102 \implies$ divisible by $2$.
+
+ $202103 \implies$ divisible by $11$.
+
+ $202104 \implies$ divisible by $2$.
+
+ $202105 \implies$ divisible by $5$.
+
+ $202106 \implies$ divisible by $2$.
+
+ $202107 \implies$ divisible by $3$.
+
+ $202108 \implies$ divisible by $2$.
+
+ This leaves only $A=\boxed{\textbf{(E)}\ 9}$.
+
+ \textbf{Sidenote} The divisibility test for $11$ is if the difference between the sum of the alternating digits is $0$ or $11$, then that number is divisible by $11$. For $202103$, we have $2$+$2$-$1$-$3$=$0$.
+
+ For $7$, the divisibility test can be slow. Take the last digit, double it, and subtract it from the rest of the number. If it is divisible by $7$, then the original number is divisible by $7$. If the number is too large to determine whether or not it is a multiple of $7$, then we repeat the process until we can determine whether or not the number is divisible by $7$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Elmer the emu takes $44$ equal strides to walk between consecutive telephone poles on a rural road. Oscar the ostrich can cover the same distance in $12$ equal leaps. The telephone poles are evenly spaced, and the $41$st pole along this road is exactly one mile ($5280$ feet) from the first pole. How much longer, in feet, is Oscar's leap than Elmer's stride?
+
+
+ $\textbf{(A) }6\qquad\textbf{(B) }8\qquad\textbf{(C) }10\qquad\textbf{(D) }11\qquad\textbf{(E) }15$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+There are $41-1=40$ gaps between the $41$ telephone poles, so the distance of each gap is $5280\div40=132$ feet.
+
+ Each of Oscar's leaps covers $132\div12=11$ feet, and each of Elmer's strides covers $132\div44=3$ feet.
+
+ Therefore, Oscar's leap is $11-3=\boxed{\textbf{(B) }8}$ feet longer than Elmer's stride.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+There are $41-1=40$ gaps between the $41$ telephone poles, so Elmer takes $44 \cdot 40 = 1760$ strides in total, and Oscar takes $12 \cdot 40 = 480$ leaps in total. Therefore, the answer is $(5280 \div 480) - (5280 \div 1760) = 11-3=\boxed{\textbf{(B) }8}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) As shown in the figure below, point $E$ lies on the opposite half-plane determined by line $CD$ from point $A$ so that $\angle CDE = 110^\circ$. Point $F$ lies on $\overline{AD}$ so that $DE=DF$, and $ABCD$ is a square. What is the degree measure of $\angle AFE$?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_Fall_2021_7_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ $\textbf{(A) }160\qquad\textbf{(B) }164\qquad\textbf{(C) }166\qquad\textbf{(D) }170\qquad\textbf{(E) }174$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+By angle subtraction, we have $\angle ADE = 360^\circ - \angle ADC - \angle CDE = 160^\circ.$ Note that $\triangle DEF$ is isosceles, so $\angle DFE = \frac{180^\circ - \angle ADE}{2}=10^\circ.$ Finally, we get $\angle AFE = 180^\circ - \angle DFE = \boxed{\textbf{(D) }170}$ degrees.
+
+ 
+
+
+
+\textbf{Solution 2 (Extension)}
+
+We can extend $\overline{AD}$ to $G$, making $\angle CDG$ a right angle. It follows that $\angle GDE$ is $110^\circ - 90^\circ = 20^\circ$, as shown below.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_7_Solution_Figure_1.png}
+                    \end{figure}
+                    Since $\angle DFE = \angle DEF$, we see that $\angle DFE = \angle DEF = \frac{20}{2} = 10^\circ$. Thus, $\angle AFE = 180^\circ - 10^\circ = \boxed{\textbf{(D)} ~170}$ degrees.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) A two-digit positive integer is said to be \textit{cuddly} if it is equal to the sum of its nonzero tens digit and the square of its units digit. How many two-digit positive integers are cuddly?
+
+
+ $\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }3\qquad\textbf{(E) }4$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Note that the number $\underline{xy} = 10x + y.$ By the problem statement, 
+ \[10x + y = x + y^2 \implies 9x = y^2 - y \implies 9x = y(y-1).\] From this we see that $y(y-1)$ must be divisible by $9.$ This only happens when $y=9.$ Then, $x=8.$ Thus, there is only $\boxed{\textbf{(B) }1}$ cuddly number, which is $89.$
+
+ 
+
+
+
+\textbf{Solution 2}
+
+If the tens digit is $a$ and the ones digit is $b$ then the number is $10a+b$ so we have the equation $10a + b = a + b^2$. We can guess and check after narrowing the possible cuddly numbers down to $13,14,24,25,35,36,46,47,57,68,78,89,$ and $99$. (We can narrow it down to these by just thinking about how $a$'s value affects $b$'s value and then check all the possiblities.) Checking all of these we get that there is only $\boxed{\textbf{(B) }1}$ 2-digit cuddly number, and it is $89$. Yay!!!
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) When a certain unfair die is rolled, an even number is $3$ times as likely to appear as an odd number. The die is rolled twice. What is the probability that the sum of the numbers rolled is even?
+
+
+ $\textbf{(A) }\dfrac38\qquad\textbf{(B) }\dfrac49\qquad\textbf{(C) }\dfrac59\qquad\textbf{(D) }\dfrac9{16}\qquad\textbf{(E) }\dfrac58$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+Since an even number is $3$ times more likely to appear than an odd number, the probability of an even number appearing is $\frac{3}{4}$. Since the problem states that the sum of the two die must be even, the numbers must both be even or both be odd. We either have EE or OO, so we have 
+ \[\frac{3}{4}\cdot \frac{3}{4} + \frac{1}{4} \cdot \frac{1}{4} = \frac {1}{16} + \frac {9}{16} = \frac{10}{16} = \boxed{\textbf{(E)}\ \frac{5}{8}}.\]
+
+ 
+
+
+
+\textbf{Solution 2 (Complementary Counting)}
+
+As explained in the above solution, the probability of an even number appearing is $\frac{3}{4}$, while the probability of an odd number appearing is $\frac{1}{4}$. Then the probability of getting an odd and an even (to make an odd number) is $\frac{3}{4} \cdot \frac{1}{4} \cdot 2 = \frac{3}{8}.$ Then the probability of getting an even number is $1 - \frac{3}{8} = \boxed{\textbf{(E)}\ \frac{5}{8}}.$
+
+ 
+
+
+
+\textbf{Solution 3 (Answer Choices)}
+
+As explained in the above solutions, the probability of an even number appearing is $\frac{3}{4}$. Getting two even numbers in a row would result in an even sum, and the probability of this happening is $\frac{3}{4} \cdot \frac{3}{4} = \frac{9}{16}.$ As an even sum can also be a result of the sum of two odd numbers, the probability of an even sum is slightly greater than $\frac{9}{16}$. The only answer choice with a probability greater than $\frac{9}{16}$ is $\boxed{\textbf{(E)}\ \frac{5}{8}}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) A school has $100$ students and $5$ teachers. In the first period, each student is taking one class, and each teacher is teaching one class. The enrollments in the classes are $50, 20, 20, 5,$ and $5$. Let $t$ be the average value obtained if a teacher is picked at random and the number of students in their class is noted. Let $s$ be the average value obtained if a student was picked at random and the number of students in their class, including the student, is noted. What is $t-s$?
+
+
+ $\textbf{(A)}\ {-}18.5  \qquad\textbf{(B)}\ {-}13.5 \qquad\textbf{(C)}\ 0 \qquad\textbf{(D)}\ 13.5 \qquad\textbf{(E)}\ 18.5$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+The formula for expected values is 
+ \[\text{Expected Value}=\sum(\text{Outcome}\cdot\text{Probability}).\]We have
+ \begin{align*} t &= 50\cdot\frac15 + 20\cdot\frac15 + 20\cdot\frac15 + 5\cdot\frac15 + 5\cdot\frac15 \\ &= (50+20+20+5+5)\cdot\frac15 \\ &= 100\cdot\frac15 \\ &= 20, \\ s &= 50\cdot\frac{50}{100} + 20\cdot\frac{20}{100} + 20\cdot\frac{20}{100} + 5\cdot\frac{5}{100} + 5\cdot\frac{5}{100} \\ &= 25 + 4 + 4 + 0.25 + 0.25 \\ &= 33.5. \end{align*}
+Therefore, the answer is $t-s=\boxed{\textbf{(B)}\ {-}13.5}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Emily sees a ship traveling at a constant speed along a straight section of a river. She walks parallel to the riverbank at a uniform rate faster than the ship. She counts $210$ equal steps walking from the back of the ship to the front. Walking in the opposite direction, she counts $42$ steps of the same size from the front of the ship to the back. In terms of Emily's equal steps, what is the length of the ship?
+
+
+ $\textbf{(A) }70\qquad\textbf{(B) }84\qquad\textbf{(C) }98\qquad\textbf{(D) }105\qquad\textbf{(E) }126$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1 (One Variable)}
+
+Let $x$ be the length of the ship.Then, in the time that Emily walks $210$ steps, the ship moves $210-x$ steps.Also, in the time that Emily walks $42$ steps, the ship moves $x-42$ steps.Since the ship and Emily have the same ratio of absolute speeds in either direction, $\frac{210}{210-x} = \frac{42}{x-42}$. Dividing both sides by $42$ and cross multiplying, we get $5(x-42) = 210-x$, so $6x = 420$, and $x = \boxed{\textbf{(A) }70}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Two Variables)}
+
+Let the speed at which Emily walks be $42$ steps per hour. Let the speed at which the ship is moving be $s$. Walking in the direction of the ship, it takes her $210$ steps, or $\frac {210}{42} = 5$ hours, to travel. We can create an equation: 
+ \[d = 5(42-s),\] where $d$ is the length of the ship. Walking in the opposite direction of the ship, it takes her $42$ steps, or $42/42 = 1$ hour. We can create a similar equation: 
+ \[d = 1(42+s).\] Now we have two variables and two equations. We can equate the expressions for $d$ and solve for $s$:
+ \begin{align*} 210-5s &= 42 + s \\ s &= 28. \\ \end{align*}
+Therefore, we have $d = 42 + s = \boxed{\textbf{(A) }70}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Three Variables)}
+
+Suppose that Emily and the ship take steps simultaneously such that Emily's steps cover a greater length than the ship's steps.
+
+ Let $L$ be the length of the ship, $E$ be Emily's step length, and $S$ be the ship's step length. We wish to find $\frac LE.$
+
+ When Emily walks from the back of the ship to the front, she walks a distance of $210E$ and the front of the ship moves a distance of $210S.$ We have $210E=L+210S$ for this scenario, which rearranges to 
+ \[210E-210S=L. \hspace{15mm}(1)\] When Emily walks in the opposite direction, she walks a distance of $42E$ and the back of the ship moves a distance of $42S.$ We have $42E=L-42S$ for this scenario, which rearranges to 
+ \[42E+42S=L. \hspace{19.125mm}(2)\]We multiply $(2)$ by $5$ and then add $(1)$ to get $420E=6L,$ from which $\frac LE = \boxed{\textbf{(A) }70}.$
+
+ 
+
+
+
+\textbf{Solution 4 (Using the Boat's "Step")}
+
+Every time Emily takes a step, the boat also "takes a step". Call the length of the boat's step $s$. Call the length of the boat $x$.
+
+ When Emily is walking in the same direction as the boat, every time she takes a step the boat moves an additional distance of $s$. This means that she travels a total distance of $x + 210 s$ to reach the other end of the boat.
+
+ When Emily is walking in the opposite direction of the boat, every time she takes a step the distance till the end of the boat reduces by $s$ (since the boat is coming towards her and moves a distance of $s$). This means that she travels a total distance of $x - 42 s$ to reach the other end of the boat. 
+
+ Taking Emily's step as a unit of distance, we now have two equations 
+ \begin{align*} 210 &= x + 210 s, \\ 42 &= x - 42s. \end{align*}
+Solving for $x$ you get $\boxed{\textbf{(A) }70}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Relative Speeds)}
+
+Call the speed of the boat $v_s$ and the speed of Emily $v_e$.
+
+ Consider the scenario when Emily is walking along with the boat. Relative to an observer on the boat, her speed is $v_e-v_s$.
+
+ Consider the scenario when Emily is walking in the opposite direction. Relative to an observer on the boat, her speed is $v_e+v_s$
+
+ Since Emily takes $210$ steps to walk along with the boat and $42$ steps to walk opposite the boat, that means it takes her $5$ times longer to walk the length of a stationary boat at $v_e-v_s$ compared to $v_e+v_s$.
+
+ This means that $5(v_e-v_s)=v_e+v_s$, so $v_s = \frac{2v_e}{3}$.
+
+ As Emily takes $210$ steps to walk the length of the boat at a speed of $v_e- \frac{2v_e}{3}=\frac{v_e}{3}$, she must take $\frac13$ of the time to walk the length of the boat at a speed of $v_e$, so our answer is $\frac{210}{3} = \boxed{\textbf{(A) }70}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) The base-nine representation of the number $N$ is $27{,}006{,}000{,}052_{\text{nine}}.$ What is the remainder when $N$ is divided by $5?$
+
+
+ $\textbf{(A) } 0\qquad\textbf{(B) } 1\qquad\textbf{(C) } 2\qquad\textbf{(D) } 3\qquad\textbf{(E) }4$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1 (Modular Arithmetic)}
+
+Recall that $9\equiv-1\pmod{5}.$ We expand $N$ by the definition of bases:
+ \begin{align*} N&=27{,}006{,}000{,}052_9 \\ &= 2\cdot9^{10} + 7\cdot9^9 + 6\cdot9^6 + 5\cdot9 + 2 \\ &\equiv 2\cdot(-1)^{10} + 7\cdot(-1)^9 + 6\cdot(-1)^6 + 2 &&\pmod{5} \\ &\equiv 2-7+6+2 &&\pmod{5} \\ &\equiv \boxed{\textbf{(D) } 3} &&\pmod{5}. \end{align*}
+~Aidensharp ~Kante314 ~MRENTHUSIASM ~anabel.disher
+
+ 
+
+
+
+\textbf{Solution 2 (Powers of 9)}
+
+We need to first convert $N$ into a regular base-$10$ number: 
+ \[N = 27{,}006{,}000{,}052_9 = 2\cdot9^{10} + 7\cdot9^9 + 6\cdot9^6 + 5\cdot9 + 2.\]
+
+ Now, consider how the last digit of $9$ changes with changes of the power of $9:$
+ \begin{align*} 9^0&=1, \\ 9^1&=9, \\ 9^2&=\ldots 1, \\ 9^3&=\ldots 9, \\ 9^4&=\ldots 1, \\ & \ \vdots \end{align*}
+Note that if $x$ is odd, then $9^x \equiv 4\pmod{5}.$ On the other hand, if $x$ is even, then $9^x \equiv 1\pmod{5}.$
+
+ Therefore, we have
+ \begin{align*} N&\equiv 2\cdot(1) + 7\cdot(4) + 6\cdot(1) + 5\cdot(4) + 2\cdot(1) &&\pmod{5} \\ &\equiv 2+28+6+20+2 &&\pmod{5} \\ &\equiv 58 &&\pmod{5} \\ &\equiv \boxed{\textbf{(D) } 3} &&\pmod{5}. \\ \end{align*}
+Note that for the odd case, $9^x \equiv -1\pmod{5}$ may simplify the process further, as given by Solution 1.
+
+ \textbf{Remark} By the long division algorithm, you can work from left to right accumulating the answer, and don't need to count the digits to get the power. You only need to take the current leading digit modulo $5$, negate it, and add it to the next digit, and repeat the process until you reach the units digit.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Each of $6$ balls is randomly and independently painted either black or white with equal probability. What is the probability that every ball is different in color from more than half of the other $5$ balls?
+
+
+ $\textbf{(A) } \frac{1}{64}\qquad\textbf{(B) } \frac{1}{6}\qquad\textbf{(C) } \frac{1}{4}\qquad\textbf{(D) } \frac{5}{16}\qquad\textbf{(E) }\frac{1}{2}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Note that for this restriction to be true, there must be $3$ balls of each color. There are a total of $2^6 = 64$ ways to color the balls, and there are ${6 \choose 3} = 20$ ways for three balls chosen to be painted white.  Thus, the answer is $\frac{20}{64} = \boxed{\textbf{(D) } \frac{5}{16}}$.
+
+ -Aidensharp
+
+ 
+
+
+
+\textbf{Solution 2}
+
+For this restriction to be upheld, there must be three black and three white balls. One such way for this to occur is the arrangement $BBBWWW$, which has a $\frac{1}{2^6}$ probability of occuring. However, there are $\frac{6!}{3!\cdot{3!}}$ ways to arrange the three black and three white balls, meaning that the answer is, $\frac{1}{64}\cdot{\frac{6!}{3!\cdot{3!}}} = \boxed{\textbf{(D) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+To get every ball different in color from more than half of the other 5 balls, we must have 3 black balls and 3 white balls.
+
+ Following from the binomial theorem, this happens with probability
+ \[ \binom{6}{3} \left( \frac{1}{2} \right)^3 \left( 1 - \frac{1}{2} \right)^{6-3} = \frac{5}{16} . \]
+
+ Therefore, the answer is $\boxed{\textbf{(D) }\frac{5}{16}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) How many ordered pairs $(x,y)$ of real numbers satisfy the following system of equations? 
+<mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="0" display="true" jax="CHTML" style="font-size: 117.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX" display="true" style="margin-left: 0px; margin-right: 0px;"><mjx-mtable style="min-width: 8.167em;"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0px; padding-bottom: 0.15em;"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0px; padding-bottom: 0.15em;"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c39"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0px; padding-top: 0.15em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo></mjx-texatom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo></mjx-texatom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-texatom space="3" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo></mjx-texatom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo></mjx-texatom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-script style="vertical-align: 0.413em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msup><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0px; padding-top: 0.15em;"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math><mjx-assistive-mml display="block" unselectable="on"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign="right left" columnspacing="0em" displaystyle="true" rowspacing="3pt"><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>y</mi></mtd><mtd><mi></mi><mo>=</mo><mn>9</mn></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>x</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mi>y</mi><mrow data-mjx-texclass="ORD"><mo stretchy="false">|</mo></mrow><mo>-</mo><mn>4</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mtd><mtd><mi></mi><mo>=</mo><mn>1</mn></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container>
+$\textbf{(A) } 1 \qquad\textbf{(B) } 2 \qquad\textbf{(C) } 3 \qquad\textbf{(D) } 5 \qquad\textbf{(E) } 7$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1 (Graphing)}
+
+The second equation is $(|x|+|y| - 4)^2 = 1$. We know that the graph of $|x| + |y|$ is a very simple diamond shape, so let's see if we can reduce this equation to that form: 
+ \[(|x|+|y| - 4)^2 = 1 \implies |x|+|y| - 4 = \pm 1 \implies |x|+|y| = \{3,5\}.\]We now have two separate graphs for this equation and one graph for the first equation, so let's put it on the coordinate plane:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_14_Solution_Figure_1.png}
+                    \end{figure}
+                    We see from the graph that there are $5$ intersections, so the answer is $\boxed{\textbf{(D) } 5}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Casework)}
+
+From the first equation, we can express $y$ in terms of $x$:
+
+ $3y = 9 - x^2$ which is $y = (9 - x^2)/3$
+
+ The second equation can be rewritten as:
+
+ 
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Isosceles triangle $ABC$ has $AB = AC = 3\sqrt6$, and a circle with radius $5\sqrt2$ is tangent to line $AB$ at $B$ and to line $AC$ at $C$. What is the area of the circle that passes through vertices $A$, $B$, and $C?$
+
+
+ $\textbf{(A) }24\pi\qquad\textbf{(B) }25\pi\qquad\textbf{(C) }26\pi\qquad\textbf{(D) }27\pi\qquad\textbf{(E) }28\pi$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Cyclic Quadrilateral)}
+
+Let $\odot O_1$ be the circle with radius $5\sqrt2$ that is tangent to $\overleftrightarrow{AB}$ at $B$ and to $\overleftrightarrow{AC}$ at $C.$ Note that $\angle ABO_1 = \angle ACO_1 = 90^\circ.$ Since the opposite angles of quadrilateral $ABO_1C$ are supplementary, quadrilateral $ABO_1C$ is cyclic.
+
+ Let $\odot O_2$ be the circumcircle of quadrilateral $ABO_1C.$ It follows that $\odot O_2$ 
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) The graph of 
+ \[f(x) = |\lfloor x \rfloor| - |\lfloor 1 - x \rfloor|\] is symmetric about which of the following? (Here $\lfloor x \rfloor$ is the greatest integer not exceeding $x$.)
+
+
+ <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="1" jax="CHTML" style="font-size: 117.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mtext class="mjx-b"><mjx-c class="mjx-c28 TEX-B"></mjx-c><mjx-c class="mjx-c1D400 TEX-B"></mjx-c><mjx-c class="mjx-c29 TEX-B"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mtext class="mjx-n"><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c68"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2D"></mjx-c><mjx-c class="mjx-c61"></mjx-c><mjx-c class="mjx-c78"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c73"></mjx-c></mjx-mtext><mjx-mstyle><mjx-mspace style="width: 2em;"></mjx-mspace></mjx-mstyle><mjx-mtext class="mjx-b"><mjx-c class="mjx-c28 TEX-B"></mjx-c><mjx-c class="mjx-c1D401 TEX-B"></mjx-c><mjx-c class="mjx-c29 TEX-B"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mtext class="mjx-n"><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c68"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c20"></mjx-c><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6E"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 2em;"></mjx-mspace></mjx-mstyle><mjx-mtext class="mjx-b"><mjx-c class="mjx-c28 TEX-B"></mjx-c><mjx-c class="mjx-c1D402 TEX-B"></mjx-c><mjx-c class="mjx-c29 TEX-B"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mtext class="mjx-n"><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c68"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c20"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c72"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c67"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6E"></mjx-c></mjx-mtext><mjx-mstyle><mjx-mspace style="width: 2em;"></mjx-mspace></mjx-mstyle><mjx-mtext class="mjx-b"><mjx-c class="mjx-c28 TEX-B"></mjx-c><mjx-c class="mjx-c1D403 TEX-B"></mjx-c><mjx-c class="mjx-c29 TEX-B"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c68"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c20"></mjx-c><mjx-c class="mjx-c70"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6E"></mjx-c><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mrow space="2"><mjx-mo class="mjx-s3"><mjx-c class="mjx-c28 TEX-S3"></mjx-c></mjx-mo><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-s3"><mjx-c class="mjx-c29 TEX-S3"></mjx-c></mjx-mo></mjx-mrow><mjx-mstyle><mjx-mspace style="width: 2em;"></mjx-mspace></mjx-mstyle><mjx-mtext class="mjx-b"><mjx-c class="mjx-c28 TEX-B"></mjx-c><mjx-c class="mjx-c1D404 TEX-B"></mjx-c><mjx-c class="mjx-c29 TEX-B"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mtext class="mjx-n"><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-c68"></mjx-c><mjx-c class="mjx-c65"></mjx-c><mjx-c class="mjx-c20"></mjx-c><mjx-c class="mjx-c70"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6E"></mjx-c><mjx-c class="mjx-c74"></mjx-c><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="bold">(A) </mtext><mtext>the </mtext><mi>y</mi><mtext>-axis</mtext><mstyle scriptlevel="0"><mspace width="2em"></mspace></mstyle><mtext mathvariant="bold">(B) </mtext><mtext>the line </mtext><mi>x</mi><mo>=</mo><mn>1</mn><mstyle scriptlevel="0"><mspace width="2em"></mspace></mstyle><mtext mathvariant="bold">(C) </mtext><mtext>the origin</mtext><mstyle scriptlevel="0"><mspace width="2em"></mspace></mstyle><mtext mathvariant="bold">(D) </mtext><mtext> the point </mtext><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">(</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mn>0</mn><mo data-mjx-texclass="CLOSE">)</mo></mrow><mstyle scriptlevel="0"><mspace width="2em"></mspace></mstyle><mtext mathvariant="bold">(E) </mtext><mtext>the point </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container>
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1 (Observations)}
+
+Note that 
+ \[f(1-x)=|\lfloor 1-x\rfloor|-|\lfloor x\rfloor|=-f(x),\]so $f\left(\frac12+x\right)=-f\left(\frac12-x\right)$.
+
+ This means that the graph is symmetric about $\boxed{\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Graphing)}
+
+Let $y_1=|\lfloor x \rfloor|$ and $y_2=|\lfloor 1 - x \rfloor|=|\lfloor -(x-1) \rfloor|.$ Note that the graph of $y_2$ is a reflection of the graph of $y_1$ about the $y$-axis, followed by a translation $1$ unit to the right.
+
+ The graph of $y_1$ is shown below:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_16_Solution_Figure_1.png}
+                    \end{figure}
+                    The graph of $y_2$ is shown below:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_16_Solution_Figure_2.png}
+                    \end{figure}
+                    The graph of $f(x)=y_1-y_2$ is shown below:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_16_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ Therefore, the graph of $f(x)$ is symmetric about $\boxed{\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)}.$
+
+ 
+
+
+
+\textbf{Solution 3 (Casework)}
+
+For all $x\in\mathbb{R}$ and $n\in\mathbb{Z},$ note that:
+
+ <ol style="margin-left: 1.5em;"> \item $\lfloor x+n \rfloor = \lfloor x \rfloor + n$ and $\lceil x+n \rceil = \lceil x \rceil + n$ 
+
+ \item $\lfloor -x \rfloor = -\lceil x \rceil$ 
+
+ \item $\lceil x \rceil - \lfloor x \rfloor = \begin{cases} 0 & \mathrm{if} \ x\in\mathbb{Z} \\  1 & \mathrm{if} \ x\not\in\mathbb{Z} \end{cases}$</ol>We rewrite $f(x)$ as
+ \begin{align*} f(x) &= |\lfloor x \rfloor| - |\lfloor 1 - x \rfloor| \\ &= |\lfloor x \rfloor| - |-\lceil x - 1 \rceil| \\ &= |\lfloor x \rfloor| - |-\lceil x \rceil + 1|. \end{align*}
+We apply casework to the value of $x:$
+
+ <ol style="margin-left: 1.5em;"> \item $x\in\mathbb{Z}^-$It follows that $f(x)=-x-(-x+1)=-1.$
+
+  
+
+ \item $x=0$It follows that $f(x)=0-1=-1.$
+
+  
+
+ \item $x\in\mathbb{Z}^+$It follows that $f(x)=x-(x-1)=1.$
+
+  
+
+ \item $x\not\in\mathbb{Z}$ and $x<0$It follows that $f(x)=-\lfloor x \rfloor - (-\lceil x\rceil+1)=(\lceil x \rceil - \lfloor x \rfloor)-1=0.$
+
+  
+
+ \item $x\not\in\mathbb{Z}$ and $0<x<1$It follows that $f(x)=0-0=0.$
+
+  
+
+ \item $x\not\in\mathbb{Z}$ and $x>1$It follows that $f(x)=\lfloor x \rfloor - (\lceil x\rceil-1)=(\lfloor x \rfloor - \lceil x \rceil)+1=0.$
+
+ 
+
+ </ol>Together, we have 
+ \[f(x)=\begin{cases} -1 & \mathrm{if} \ x\in\mathbb{Z}^{-}\cup\{0\} \\  1 & \mathrm{if} \ x\in\mathbb{Z}^{+} \\ 0 & \mathrm{if} \ x\not\in\mathbb{Z} \end{cases},\]so the graph of $f(x)$ is symmetric about $\boxed{\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)}.$
+
+ Alternatively, we can eliminate $\textbf{(A)}, \textbf{(B)}, \textbf{(C)},$ and $\textbf{(E)}$ once we finish with Case 3. This leaves us with $\textbf{(D)}.$
+
+ 
+
+
+
+\textbf{Solution 4 (Casework)}
+
+Denote $x = a + b$, where $a \in \Bbb Z$ and $b \in \left[ 0 , 1 \right)$.Hence, $a$ is the integer part of $x$ and $b$ is the decimal part of $x$.
+
+ \textbf{Case 1}: $b = 0$.
+
+ We have
+ \begin{align*} f \left( x \right) & = \left| \lfloor x \rfloor \right| - \left| \lfloor 1 - x \rfloor \right| \\ & = | a | - | 1 - a | \\ & = \left\{ \begin{array}{ll} a - \left( a - 1 \right) & \mbox{ if } a \in \Bbb Z \mbox{ and } a \geq 1 \\ -1 & \mbox{ if } a = 0 \\ - a - \left( 1 - a \right) & \mbox{ if } a \in \Bbb Z \mbox{ and } a \leq -1 \end{array} \right. \\ & = \left\{ \begin{array}{ll} 1 & \mbox{ if } a \in \Bbb Z \mbox{ and } a \geq 1 \\ -1 & \mbox{ if } a = 0 \\ -1 & \mbox{ if } a \in \Bbb Z \mbox{ and } a \leq -1 \end{array} \right. \\ & = \left\{ \begin{array}{ll} 1 & \mbox{ if } a \in \Bbb Z \mbox{ and } a \geq 1 \\ -1 & \mbox{ if } a \in \Bbb Z \mbox{ and } a \leq 0 \end{array} \right. \end{align*}
+
+
+ \textbf{Case 2}: $b \neq 0$.
+
+ We have
+ \begin{align*} f \left( x \right) & = \left| \lfloor x \rfloor \right| - \left| \lfloor 1 - x \rfloor \right| \\ & = | a | - | \lfloor 1 - a - b \rfloor | \\ & = | a | - | \lfloor - a + \left( 1 - b \right) \rfloor | \\ & = | a | - | - a | \\ & = 0 . \end{align*}
+
+
+ Therefore, the graph of $f \left( x \right)$ is symmetric through the point $\left( \frac{1}{2} , 0 \right)$.
+
+ Therefore, the answer is $\boxed{\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Semi-Fakesolve)}
+
+Suppose $x\in \mathbb{Z},$ making the equation equivalent to $f(x) = |x|-|1-x|.$ We consider the cases when $x\in (-\infty, 0), 0, 1, (1, \infty).$
+
+ 
+If $x\in (-\infty, 0)$, we have $|x| = -x$ and $|1-x| = 1-x,$ so $f(x) = -x - (1-x) = -1$. 
+
+ 
+If $x = 0$ or $x = 1$, we trivially get $f(x) = -1$ and $1$ respectively. 
+
+ 
+If $x\in (1, \infty)$, we have $|x| = x$ and $|1-x| = x - 1$, giving $f(x) = x-(x-1)= 1.$
+
+ 
+Since, for all $x\in \mathbb{Z} \leq 0$, $f(x)  =-1$ and $x\in \mathbb{Z} \geq 1, f(x) = 1$, we can conclude that it is symmetric across the coordinate pair 
+ \[\left(\frac{0 + 1}{2}, \frac{-1 + 1}{2}\right) = \boxed{\textbf{(D)}\ \left(\frac{1}{2}, 0\right)},\]the midpoint of the "endpoints" of these line segments. 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_16_Solution_Figure_4.png}
+                    \end{figure}
+                    
+
+ 
+
+
+ Just considering the integers is never a good idea when dealing with any function, especially one with floor functions. However, after dealing with the case "when $x\in \mathbb{Z}$", it becomes apparent that the graph of $f(x)$ is symmetric about $x = \frac{1}{2}$, or more specifically, the point $\left(\frac{1}{2}, 0\right).$
+
+ -Benedict T (countmath1)
+
+ 
+
+
+
+\textbf{Solution 6 (Ultra Fast if you have like 20 sec left)}
+
+Take some simple values of $x$. Here we can take $-2,-1,0,1,2$ and get $-1,-1,-1,1,1$ respectively. We easily see that choices $A,B,C,E$ is already false, so $\boxed{\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) An architect is building a structure that will place vertical pillars at the vertices of regular hexagon $ABCDEF$, which is lying horizontally on the ground. The six pillars will hold up a flat solar panel that will not be parallel to the ground. The heights of pillars at $A$, $B$, and $C$ are $12$, $9$, and $10$ meters, respectively. What is the height, in meters, of the pillar at $E$?
+
+
+ $\textbf{(A) }9 \qquad\textbf{(B) } 6\sqrt{3} \qquad\textbf{(C) } 8\sqrt{3} \qquad\textbf{(D) } 17 \qquad\textbf{(E) }12\sqrt{3}$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1 (Height From the Center)}
+
+The pillar at $B$ has height $9$ and the pillar at $A$ has height $12.$ Since the solar panel is flat, the inclination from pillar $B$ to pillar $A$ is $3.$ Call the center of the hexagon $G.$ Since $\overrightarrow{CG}\parallel\overrightarrow{BA},$ it follows that the solar panel has height $13$ at $G.$ Since the solar panel is flat, the heights of the solar panel at $B,G,$ and $E$ are collinear. Therefore, the pillar at $E$ has height $9+4+4=\boxed{\textbf{(D) } 17}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Height From Each Vertex)}
+
+Let the height of the pillar at $D$ be $x.$ Notice that the difference between the heights of pillar $C$ and pillar $D$ is equal to the difference between the heights of pillar $A$ and pillar $F.$ So, the height at $F$ is $x+2.$ Now, doing the same thing for pillar $E$ we get the height is $x+3.$ Therefore, we can see the difference between the heights at pillar $C$ and pillar $D$ is half the difference between the heights at $B$ and $E,$ so 
+ \begin{align*} x+3-9&=2 \cdot (x-10) \\  x-6&=2 \cdot (x-10) \\ x&=14. \end{align*}
+The answer is $x+3=\boxed{\textbf{(D) } 17}.$
+
+ 
+
+
+
+\textbf{Solution 3 (Extend the Sides)}
+
+We can extend $BA$ and $BC$ to $G$ and $H$, respectively, such that $AG = CH$ and $E$ lies on $\overline{GH}$:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_17_Solution_Figure_1.png}
+                    \end{figure}
+                    Because of hexagon proportions, $\frac{BA}{AG} = \frac{1}{3}$ and $\frac{BC}{CH} = \frac{1}{3}$. Let $g$ be the height of $G$. Because $A$, $B$ and $G$ lie on the same line, $\frac{12-9}{g-12} = \frac{1}{3}$, so $g-12 = 9$ and $g = 21$. Similarly, the height of $H$ is $13$. $E$ is the midpoint of $GH$, so we can take the average of these heights to get our answer, $\boxed{\textbf{(D) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Averages of Heights)}
+
+Denote by $h_X$ the height of any point $X$.
+
+ Denote by $M$ the midpoint of $A$ and $C$.Hence, 
+ \[h_M = \frac{h_A + h_C}{2} = 11.\]Denote by $O$ the center of $ABCDEF$. Because $ABCDEF$ is a regular hexagon, $O$ is the midpoint of $B$ and $E$.Hence, 
+ \[h_O = \frac{h_E + h_B}{2} = \frac{h_E + 9}{2}.\]Because $ABCDEF$ is a regular hexagon, $M$ is the midpoint of $B$ and $O$.Hence, 
+ \[h_M = \frac{h_B + h_O}{2} = \frac{9 + h_O}{2}.\]Solving these equations, we get $h_E = \boxed{\textbf{(D) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Vectors)}
+
+In this solution, we define \textbf{rise} as the change of height (in meters) from the solar panel to the ground. It follows that the rise from $B$ to $A$ is $12-9=3,$ and the rise from $B$ to $C$ is $10-9=1.$ Note that $\vec{BE}=2\vec{BA}+2\vec{BC},$ so the rise from $B$ to $E$ is $2\cdot3+2\cdot1=8.$
+
+ Together, the height of the pillar at $E$ is $9+8=\boxed{\textbf{(D) } 17}$ meters.
+
+ 
+
+
+
+\textbf{Solution 6 (Vectors)}
+
+WLOG, let the side length of the hexagon be $6$. 
+
+ Establish a 3D coordinate system, in which $A=(0,0,0)$. Let the coordinates of $B$ and $C$ be $(6,0,0)$, $\left(9,-3\sqrt{3},0\right)$, respectively. Then, the solar panel passes through $P=(0,0,12), Q=(6,0,9), R=\left(9,-3\sqrt{3},10\right)$. 
+
+ The vector $\vec{PQ}=\langle 6,0,-3\rangle$ and $\vec{PR}=\left\langle 9,-3\sqrt{3}, -2\right\rangle$. Computing $\vec{PQ} \times \vec{PR}$ by the matrix
+ \[\begin{bmatrix} i & j & k \\ 6 & 0 & -3 \\ 9 & -3\sqrt{3} & -2 \end{bmatrix}\]gives the result $-9\sqrt{3}i -15j -18\sqrt{3} k$. Therefore, a normal vector of the plane of the solar panel is $\left\langle -9\sqrt{3},-15,-18\sqrt{3}\right\rangle$, and the equation of the plane is $-9\sqrt{3}x-15y-18\sqrt{3}z=k$. Substituting $(x,y,z)=(0,0,12)$, we find that $k=-216\sqrt{3}$.
+
+ Since $E=\left(0,-6\sqrt{3}\right)$, we substitute $(x,y)=\left(0,-6\sqrt{3}\right)$ into $-9\sqrt{3}x-15y-18\sqrt{3}z=-216\sqrt{3}$, which gives $z=\boxed{\textbf{(D) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 7 (3D Slopes)}
+
+Let the pillars be $AA', BB', \ldots, FF'$. Since solar panel $A'B'C'D'E'F'$ is a hexagon, the line $B'E'$ hits the midpoint $M$ of $A'C'$. So, the 3D slope (change in $x$ : change in $y$ : change in $z$) of $BE$ is same as $BD$. If $a$ is side of the hexagonal solar panel, 
+ \[B'M' = \frac{1}{2}a, B'E' = a+2\cdot \frac{1}{2}a = 2a\]. So, $B'M:B'E'$ = $1:4$. Since the height of $M$ to ground $ABCDEF$ is $(10+12)/2 = 11$, the rise (in z) from $B'$ to $M$ is 2 meaning the rise from $B'$ to $E'$ is $8$. Thus, $EE' = 8+BB' = \boxed{\textbf{(D) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 8 (Midpoints, SIMPLE)}
+
+Set the midpoint of  $\overline{AC}$ as $M$:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_17_Solution_Figure_2.png}
+                    \end{figure}
+                    We know that the height of $M$ is $11$ as it is the midpoint of $\overline{AC}$, so the height is the average of $A$ and $C$, which is $\frac{10 + 12}{2}= 11$. Since $ABCDEF$ is a regular hexagon, $BE = 4\cdot BM$. Because the increase in height is proportional to the length of the line segments, and the increase in height from $B$ to $M$ is $2$, the increase in height from $B$ to $E$ is $2\cdot4=8.$ Adding to the height of $B$, we get $8+9=\boxed{\textbf{(D) } 17}$.
+
+ 
+
+
+
+\textbf{Solution 9 (Educated Guess)}
+
+Because the three points given are integers, it is likely that the answer is also an integer. This leaves us with $9$ or $17$. Because both $A$ and $C$ are greater than $9$ and closer to $E$ than $B$, we can assume that the height increases as the point gets closer to $E$. Thus, we know the answer is greater than $9$. The only choice that satisfies both these criteria is $\boxed{\textbf{(D) } 17}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) A farmer's rectangular field is partitioned into $2$ by $2$ grid of $4$ rectangular sections as shown in the figure. In each section the farmer will plant one crop: corn, wheat, soybeans, or potatoes. The farmer does not want to grow corn and wheat in any two sections that share a border, and the farmer does not want to grow soybeans and potatoes in any two sections that share a border. Given these restrictions, in how many ways can the farmer choose crops to plant in each of the four sections of the field?
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_Fall_2021_18_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A)}\ 12 \qquad \textbf{(B)}\ 64 \qquad \textbf{(C)}\ 84 \qquad \textbf{(D)}\ 90 \qquad \textbf{(E)}\ 144$
+
+
+ 
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Casework)}
+
+There are $4$ possibilities for the top-left section. It follows that the top-right and bottom-left sections each have $3$ possibilities, so they have $3^2=9$ combinations. We have two cases:
+
+ 
+            \begin{enumerate}
+                 \item \textbf{The top-right and bottom-left sections have the same crop.}Note that $3$ of the $9$ combinations of the top-right and bottom-left sections satisfy this case, from which the bottom-right section has $3$ possibilities. Therefore, there are $4\cdot3\cdot3=36$ ways in this case. 
+
+  
+
+ \item \textbf{The top-right and bottom-left sections have different crops.}Note that $6$ of the $9$ combinations of the top-right and bottom-left sections satisfy this case, from which the bottom-right section has $2$ possibilities. Therefore, there are $4\cdot6\cdot2=48$ ways in this case. 
+
+ 
+
+ 
+            \end{enumerate}
+            Together, the answer is $36+48=\boxed{\textbf{(C)}\ 84}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Casework)}
+
+We will do casework on the type of crops in the field.
+
+ \textbf{Case 1: all of a kind.}
+
+ If all four sections have the same type of crop, there are simply $\underline{4}$ ways to choose crops for the sections.
+
+ \textbf{Case 2: $\boldsymbol{3}$ of a kind, $\boldsymbol{1}$ of another kind.}
+
+ Since the one of another kind must be adjacent to two of the other crops, when choosing the type of crops in this case, we cannot choose soybeans and potatoes, or corn and wheat. Therefore, there are $4 \cdot 3 - 2 \cdot 2 = 8$ choices for the two crops we choose for the section (notice we did not choose by $2$, since the crop we pick first will be the unique one), and $4$ ways to choose which section the unique crop is planted on. This gives us a total of $4 \cdot 8 = \underline{32}$ ways to choose crops for the sections.
+
+ \textbf{Case 3: $\boldsymbol{2}$ of a kind, $\boldsymbol{2}$ of another kind.}
+
+ We cannot choose corn and wheat, or soybeans and potatoes, once again, because if we do, the two would have to be adjacent in some way, which the problem disallows. So, there are ${4 \choose 2} - 2 = 4$ ways to choose our two crops (notice that we did choose by $2$, since there are two of both crops). There are ${4 \choose 2} = 6$ ways to choose where one of the crops go, so there are $4 \cdot 6 = \underline{24}$ ways to choose crops for the sections.
+
+ \textbf{Case 4: $\boldsymbol{2}$ of a kind, $\boldsymbol{1}$ of another kind, $\boldsymbol{1}$ of another kind.}
+
+ In cases 2 and 3, we excluded the possibility of choosing bad pairs for our crops (i.e. soybeans and potatoes, or corn and wheat). In this case, it is inevitable that we choose a bad pair, because we are choosing $3$ crops this time. The two sections of the same kind must contain the crop that is not part of the bad pair in the trio: for example, if we choose corn, soybeans and potatoes as our three crop types, nor soybeans and potatoes can be the type which occupies two sections in this case; corn must be the one to do so. There are $4$ ways to choose the crop that is not part of the bad pair, and then $1$ way to choose the bad pair, giving us $4 \cdot 1 = 4$ ways to choose the crops. To separate the bad pair of crops, the two of a kind must be diagonally placed. There are $2$ ways to choose where the two of a kind go, and $2$ ways to choose which of the bad pair goes where, giving us $2 \cdot 2 = 4$ ways to choose the positions for the crops. In total, there are $4 \cdot 4 = \underline{16}$ ways to choose crops for the sections.
+
+ \textbf{Case 5: every single crop.}
+
+ Bad pairs must be on the same diagonal, so there are $2$ ways to choose which pair gets which diagonal, and $2 \cdot 2 = 4$ ways to choose which of each pair goes where on the diagonal, giving us $2 \cdot 4 = \underline{8}$ ways to choose crops for the sections.
+
+ Adding up all our values, we get our final answer of $4+32+24+16+8 = \boxed{\textbf{(C)}\ 84}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Casework)}
+
+To lighten notation, we use C, W, S, P to denote corn, wheat, soybeans, and potatoes, respectively.
+
+ We use I, II, III, IV to denote four quadrants, respectively.
+
+ We determine an arrangement in the following steps.
+
+ Step 1: Determine the crop planted in I.
+
+ The number of ways is $4$.
+
+ Step 2: Determine the crops planted in II, III, IV.
+
+ To find the number of arrangements in this step, without loss of generality, we assume that we plant C in I.
+
+ We do the following casework analysis.
+
+ Case 1: Both II and IV are planted with C.
+
+ In this case, the number of ways to plant in III is $3$.
+
+ Case 2: In II and IV, only one quadrant is planted with C, and another quadrant is planted with either S or P.
+
+ In this case, we determine an arrangement in the following steps.
+
+ Step 2.1: Determine whether C is planted in II or IV.
+
+ The number of ways is $2$.
+
+ Step 2.2: In II or IV not planted with C, determine whether it is planted with S or P.
+
+ The number of ways is $2$.
+
+ Step 2.3: Determine the crop planted in III.
+
+ The number of ways is $2$.
+
+ Following from the rule of product, the number of ways in this case is $2 \cdot 2 \cdot 2 = 8$.
+
+ Case 3: II and IV are both planted with S or W.
+
+ In this case, we determine an arrangement in the following steps.
+
+ Step 2.1: Determine whether S or W is planted in II and IV.
+
+ The number of ways is $2$.
+
+ Step 2.2: Determine the crop planted in III.
+
+ The number of ways is $3$.
+
+ Following from the rule of product, the number of ways in this case is $2 \cdot 3 = 6$.
+
+ Case 4: In II and IV, exactly one quadrant is planted with S and another one is planted with W.
+
+ Step 2.1: Determine which quadrant in II and IV is planted with S.
+
+ The number of ways is $2$.
+
+ Step 2.2: Determine the crop planted in III.
+
+ The number of ways is $2$.
+
+ Following from the rule of product, the number of ways in this case is $2 \cdot 2 = 4$.
+
+ Putting all cases together, the total number of arrangements in Step 2 is $3 + 8 + 6 + 4 = 21$.
+
+ Following from the rule of product, the total number of arrangements is $4 \cdot 21 = 84$.
+
+ Therefore, the answer is $\boxed{\textbf{(C)}\ 84}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Principle of Inclusion-Exclusion)}
+
+The number of cases with at least one pair of corn and wheat adjacent is $4 \cdot 2 \cdot 4^2 - 4 \cdot 2 \cdot 4 + 0 - 2 = 94$ possible fields (You can easily see this for yourself using PIE.), and WLOG, the same goes for soybean and potatoes. Now, applying PIE on both sets (number of cases with at least one pair of corn and wheat and the number of cases with at least one pair of soybeans and potatoes) yields $2\cdot94 - 16 = 172$. We want the number of cases \textbf{without} adjacent pairs of soybeans and potatoes or wheat and corn, so we subtract $256 - 172$, yielding an answer of $\boxed{\textbf{(C)}\ 84}.$
+
+ 
+
+
+
+\textbf{Solution 5 (Tree Diagram)}
+
+We can create a tree representing an arbitrary box we start with and the possibilities for other boxes around the grid. We can just designate the crop we start with as $1$, and the other crops as $2$, $3$, and $4$, where $1$ cannot be next to $2$ and $3$ cannot be next to $4$ in the grid. 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_18_Solution_Figure_1.png}
+                    \end{figure}
+                    As we can see, there are $21$ possibilities. We multiply this by the $4$ (the number of possibilities there are for the crop we started with), so our answer is $\boxed{\textbf{(C)}\ 84}$.
+
+ 
+
+
+
+\textbf{Solution 6 (Educated Guess)}
+
+The top right box has $4$ choices and the top left box has $3$ choices. Thus, it is reasonable to assume that the answer is a multiple of $12$. We know that the answer will not be too small or too large, so the answer is $\boxed{\textbf{(C)}\ 84}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Metasolve)}
+
+Estimation suggests B is too low, and clearly 90 is incorrect as it has a factor of $5$ which is impossible to achieve with combinations less than $5$. Thus, the answer is $\boxed{\textbf{(C)}\ 84}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) A disk of radius $1$ rolls all the way around the inside of a square of side length $s>4$ and sweeps out a region of area $A$. A second disk of radius $1$ rolls all the way around the outside of the same square and sweeps out a region of area $2A$. The value of $s$ can be written as $a+\frac{b\pi}{c}$, where $a,b$, and $c$ are positive integers and $b$ and $c$ are relatively prime. What is $a+b+c$?
+
+
+ $\textbf{(A)} ~10\qquad\textbf{(B)} ~11\qquad\textbf{(C)} ~12\qquad\textbf{(D)} ~13\qquad\textbf{(E)} ~14$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+The side length of the inner square traced out by the disk with radius $1$ is $s-4.$ However, there is a piece at each corner (bounded by two line segments and one $90^\circ$ arc) where the disk never sweeps out. The combined area of these four pieces is $(1+1)^2-\pi\cdot1^2=4-\pi.$ As a result, we have 
+ \[A=s^2-(s-4)^2-(4-\pi)=8s-20+\pi.\]Now, we consider the second disk. The part it sweeps is comprised of four quarter circles with radius $2$ and four rectangles with side lengths of $2$ and $s.$ When we add it all together, we have $2A=8s+4\pi,$ or 
+ \[A=4s+2\pi.\]We equate the expressions for $A,$ and then solve for $s:$ 
+ \[8s-20+\pi=4s+2\pi.\]We get $s=5+\frac{\pi}{4},$ so the answer is $5+1+4=\boxed{\textbf{(A)} ~10}.$
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) For how many ordered pairs $(b,c)$ of positive integers does neither $x^2+bx+c=0$ nor $x^2+cx+b=0$ have two distinct real solutions?
+
+
+ $\textbf{(A) } 4 \qquad \textbf{(B) } 6 \qquad \textbf{(C) } 8 \qquad \textbf{(D) } 12 \qquad \textbf{(E) } 16 \qquad$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1 (Casework)}
+
+A quadratic equation does not have two distinct real solutions if and only if the \href{https://artofproblemsolving.com/wiki/index.php?title=Discriminant}{discriminant} is nonpositive. We conclude that:
+
+ <ol style="margin-left: 1.5em;"> \item Since $x^2+bx+c=0$ does not have real solutions, we have $b^2\leq 4c.$ 
+
+ \item Since $x^2+cx+b=0$ does not have real solutions, we have $c^2\leq 4b.$
+
+ </ol>Squaring the first inequality, we get $b^4\leq 16c^2.$ Multiplying the second inequality by $16,$ we get $16c^2\leq 64b.$ Combining these results, we get 
+ \[b^4\leq 16c^2\leq 64b.\]Since $b^4\leq 64b,$ it follows that $b\leq4.$ We apply casework to the value of $b:$
+
+ 
+                \begin{itemize}
+                    \item If $b=1,$ then $1\leq 16c^2\leq 64,$ from which $c=1,2.$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If $b=2,$ then $16\leq 16c^2\leq 128,$ from which $c=1,2.$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If $b=3,$ then $81\leq 16c^2\leq 192,$ from which $c=3.$
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item If $b=4,$ then $256\leq 16c^2\leq 256,$ from which $c=4.$
+                \end{itemize}
+
+
+                Together, there are $\boxed{\textbf{(B) } 6}$ ordered pairs $(b,c),$ namely $(1,1),(1,2),(2,1),(2,2),(3,3),$ and $(4,4).$
+
+ 
+
+
+
+\textbf{Solution 2 (Graphing)}
+
+Similar to Solution 1, use the discriminant to get $b^2\leq 4c$ and $c^2\leq 4b$. These can be rearranged to $c\geq \frac{1}{4}b^2$ and $b\geq \frac{1}{4}c^2$. Now, we can roughly graph these two inequalities, letting one of them be the $x$ axis and the other be $y$. The graph of solutions should be above the parabola and under its inverse, meaning we want points on the graph or in the first area enclosed by the two graphs:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_20_Solution_Figure_1.png}
+                    \end{figure}
+                    We are looking for lattice points (since $b$ and $c$ are positive integers), of which we can count $\boxed{\textbf{(B) } 6}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Graphing)}
+
+We need to solve the following system of inequalities:
+ \[ \left\{ \begin{array}{ll} b^2 - 4 c \leq 0 \\ c^2 - 4 b \leq 0 \end{array} \right.. \]Feasible solutions are in the region formed between two parabolas $b^2 - 4 c = 0$ and $c^2 - 4 b = 0$.
+
+ Define $f \left( b \right) = \frac{b^2}{4}$ and $g \left( b \right) = 2 \sqrt{b}$.Therefore, all feasible solutions are in the region formed between the graphs of these two functions.
+
+ For $b = 1$, we have $f(b) = \frac{1}{4}$ and $g(b) = 2$.Hence, the feasible $c$ are $1, 2$.
+
+ For $b = 2$, we have $f(b) = 1$ and $g(b) = 2 \sqrt{2}$.Hence, the feasible $c$ are $1, 2$.
+
+ For $b = 3$, we have $f(b) = \frac{9}{4}$ and $g(b) = 2 \sqrt{3}$.Hence, the feasible $c$ is $3$.
+
+ For $b = 4$, we have $f(b) = 4$ and $g(b) = 4$.Hence, the feasible $c$ is $4$.
+
+ For $b > 4$, we have $f(b) > g(b)$. Hence, there is no feasible $c$.
+
+ Putting all cases together, the correct answer is $\boxed{\textbf{(B) } 6}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Oversimplified but Risky)}
+
+A quadratic equation $Ax^2+Bx+C=0$ has one real solution if and only if $B^2-4AC=0.$ Similarly, it has imaginary solutions if and only if $B^2-4AC<0.$ We proceed as following:
+
+ We want both $x^2+bx+c$ to be $1$ value or imaginary and $x^2+cx+b$ to be $1$ value or imaginary. $x^2+4x+4$ is one such case since $\sqrt {b^2-4ac}$ is $0.$ Also, $x^2+3x+3, x^2+2x+2, x^2+x+1$ are always imaginary for both $b$ and $c.$ We also have $x^2+x+2$ along with $x^2+2x+1$ since the latter has one solution, while the first one is imaginary. Therefore, we have $\boxed{\textbf{(B) } 6}$ total ordered pairs of integers.
+
+ 
+
+
+
+\textbf{Solution 5 (Quick and Easy)}
+
+We see that $b^2 \leq 4c$ and $c^2 \leq 4b.$ WLOG, assume that $b \geq c.$ Then we have that $b^2 \leq 4c \leq 4b$, so $b^2 \leq 4b$ and therefore $b \leq 4$, also meaning that $c \leq 4.$ This means that we only need to try 16 cases. Now we can get rid of the assumption that $b \geq c$, because we want ordered pairs. For $b = 1$ and $b = 2$, $c = 1$ and $c = 2$ work. When $b = 3$, $c$ can only be $3$, and when $b = 4$, only $c = 4$ works, for a total of $\boxed{\textbf{(B) } 6}$ ordered pairs of integers.
+
+ 
+
+
+
+\textbf{Solution 6 (Fastest)}
+
+We need both $b^2\leq 4c$ and $c^2\leq 4b$. 
+
+ If $b=c$ then the above become $b^2\leq 4b\iff b\leq 4$, so we have four solutions $(k,k)$, where $k=1$,$2$,$3$,$4$.
+
+ If $b<c$ then we only need $c^2\leq 4b$ since it implies $b^2< 4c$. Now$c^2\leq 4b\leq 4(c-1) \implies (c-2)^2\leq 0 \implies c=2$, so $b=1$. We plug $b=1$, $c=2$ back into $c^2\leq 4b$ and it works. So there is another solution $(1,2)$.
+
+ By symmetry, if $b>c$ then $(b,c)=(2,1)$.
+
+ Therefore the total number of solutions is $\boxed{\textbf{(B) } 6}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Shortest)}
+
+Since $b^{2} - 4c \le 0$ and $c^{2} - 4b \le 0$, adding the two together yields $b^{2} + c^{2} \le 4(c+b)$. Obviously, this is not true if either $b$ or $c$ get too large, and they are equal when $b = c = 4$, so the greatest pair is $(4,4)$ and both numbers must be lesser for further pairs. For there to be two distinct real solutions, we can test all these pairs where $(b,c)$ are less than 4 (except for the already valid solution) on the original quadratics, and we find the working pairs are $(1,1)$, $(2,1)$, $(1,2)$, $(2,2)$, $(3,3)$, $(4,4)$ meaning there are $\boxed{\textbf{(B) } 6}$ pairs.
+
+ - youtube.com/indianmathguy
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Each of the $20$ balls is tossed independently and at random into one of the $5$ bins. Let $p$ be the probability that some bin ends up with $3$ balls, another with $5$ balls, and the other three with $4$ balls each. Let $q$ be the probability that every bin ends up with $4$ balls. What is <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="2" jax="CHTML" style="font-size: 117.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mfrac><mjx-frac><mjx-num><mjx-nstrut></mjx-nstrut><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line></mjx-line><mjx-row><mjx-den><mjx-dstrut></mjx-dstrut><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>p</mi><mi>q</mi></mfrac></math></mjx-assistive-mml></mjx-container>?
+
+
+ $\textbf{(A)}\ 1 \qquad\textbf{(B)}\  4 \qquad\textbf{(C)}\  8 \qquad\textbf{(D)}\  12 \qquad\textbf{(E)}\ 16$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1 (Multinomial Coefficients)}
+
+For simplicity purposes, we assume that the balls and the bins are both distinguishable.
+
+ Recall that there are $5^{20}$ ways to distribute $20$ balls into $5$ bins. For $p,$ we choose one of the $5$ bins to have $3$ balls and another one of the $4$ bins to have $5$ balls. We get
+ \[p=\frac{5\cdot4\cdot\binom{20}{3,5,4,4,4}}{5^{20}} \text{ and } q=\frac{\binom{20}{4,4,4,4,4}}{5^{20}}.\] Therefore, the answer is 
+ \[\frac pq=\frac{5\cdot4\cdot\binom{20}{3,5,4,4,4}}{\binom{20}{4,4,4,4,4}}=\frac{5\cdot4\cdot\frac{20!}{3!\cdot5!\cdot4!\cdot4!\cdot4!}}{\frac{20!}{4!\cdot4!\cdot4!\cdot4!\cdot4!}}=\frac{5\cdot4\cdot(4!\cdot4!\cdot4!\cdot4!\cdot4!)}{3!\cdot5!\cdot4!\cdot4!\cdot4!}=\frac{5\cdot4\cdot4}{5}=\boxed{\textbf{(E)}\ 16}.\]~MRENTHUSIASM ~Jesshuang ~mathboy282
+
+ 
+
+
+
+\textbf{Solution 2}
+
+For simplicity purposes, we assume that the balls and the bins are both distinguishable.
+
+ Let $q=\frac{x}{a},$ where $a$ is the total number of combinations and $x$ is the number of cases where every bin ends up with $4$ balls.
+
+ We can take $1$ ball from one bin and place it in another bin so that some bin ends up with $3$ balls, another with $5$ balls, and the other three with $4$ balls each. Note that one configuration of $4{-}4{-}4{-}4{-}4$ corresponds to $5\cdot4\cdot4=80$ configurations of $3{-}5{-}4{-}4{-}4.$ On the other hand, one configuration of $3{-}5{-}4{-}4{-}4$ corresponds to $5$ configurations of $4{-}4{-}4{-}4{-}4.$
+
+ Therefore, we have 
+ \[p = \frac{80}{5}\cdot\frac{x}{a} = 16\cdot\frac{x}{a},\] from which $\frac{p}{q} = \boxed{\textbf{(E)}\ 16}.$
+
+ 
+
+
+
+\textbf{Solution 3 (Binomial Coefficients)}
+
+Since both of the cases will have $3$ bins with $4$ balls in them, we can leave those out. There are $2 \cdot \binom {5}{2} = 20$ ways to choose where to place the $3$ and the $5$. After that, there are $\binom {8}{3} = 56$ ways to put the $3$ and $5$ balls being put into the bins. For the $4,4,4,4,4$ case, after we canceled the $4,4,4$ out, we have $\binom {8}{4} = 70$ ways to put the $4$ balls inside the bins. Therefore, we have $\frac {56\cdot 20}{70}$ which is equal to $8 \cdot 2 = \boxed{\textbf{(E)}\ 16}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Set Theory / Graph Theory)}
+
+Construct the set $A$ consisting of all possible $3{-}5{-}4{-}4{-}4$ bin configurations, and construct set $B$ consisting of all possible $4{-}4{-}4{-}4{-}4$ configurations. If we let $N$ be the total number of configurations possible, it's clear we want to solve for $\frac{p}{q} = \frac{\frac{|A|}{N}}{\frac{|B|}{N}} = \frac{|A|}{|B|}$. 
+
+ Consider drawing an edge between an element in $A$ and an element in $B$ if it is possible to reach one configuration from the other by moving a single ball (Note this process is reversible.). Let us consider the total number of edges drawn.
+
+ For any element in $A$, we may choose one of the $5$ balls in the $5$-bin and move it to the $3$-bin to get a valid element in $B$. This implies the number of edges is $5|A|$. 
+
+ On the other hand, for any element in $B$, we may choose one of the $20$ balls and move it to one of the other $4$-bins to get a valid element in $A$. This implies the number of edges is $80|B|$.
+
+ We equate the expressions to get $5|A| = 80|B|$, from which $\frac{|A|}{|B|} = \frac{80}{5} = \boxed{\textbf{(E)}\ 16}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Inside a right circular cone with base radius $5$ and height $12$ are three congruent spheres with radius $r$. Each sphere is tangent to the other two spheres and also tangent to the base and side of the cone. What is $r$?
+
+
+ $\textbf{(A)}\ \frac{3}{2} \qquad\textbf{(B)}\ \frac{90-40\sqrt{3}}{11} \qquad\textbf{(C)}\ 2 \qquad\textbf{(D)}\ \frac{144-25\sqrt{3}}{44} \qquad\textbf{(E)}\ \frac{5}{2}$
+
+
+ 
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1 (Cross Sections and Angle Bisectors)}
+
+We can take half of a cross section of the sphere, as such:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_22_Solution_Figure_1.png}
+                    \end{figure}
+                    Notice that we chose a cross section where one of the spheres was tangent to the lateral surface of the cone at $D$.
+
+ To evaluate $r$, we will find $AE$ and $EC$ in terms of $r$; we also know that $AE+EC = 5$, so with this, we can solve $r$. Firstly, to find $EC$, we can take a bird's eye view of the cone:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_22_Solution_Figure_2.png}
+                    \end{figure}
+                    Note that $C$ is the centroid of equilateral triangle $EXY$. Also, since all of the medians of an equilateral triangle are also altitudes, we want to find two-thirds of the altitude from $E$ to $XY$; this is because medians cut each other into a $2$ to $1$ ratio. This equilateral triangle has a side length of $2r$, therefore it has an altitude of length $r \sqrt{3}$; two thirds of this is $\frac{2r \sqrt{3}}{3}$, so $EC = \frac{2r \sqrt{3}}{3}.$
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_22_Solution_Figure_3.png}
+                    \end{figure}
+                    To evaluate $AE$ in terms of $r$, we will extend $\overline{OE}$ past point $O$ to $\overline{AB}$ at point $F$.$\triangle AEF$ is similar to $\triangle ACB$. Also, $AO$ is the angle bisector of $\angle EAB$. Therefore, by the angle bisector theorem, $\frac{OE}{OF} = \frac{AE}{AF} = \frac{5}{13}$. Also, $OE = r$, so $\frac{r}{OF} = \frac{5}{13}$, so $OF = \frac{13r}{5}$. This means that
+ \[AE = \frac{5 \cdot EF}{12} = \frac{5 \cdot (OE + OF)}{12} = \frac{5 \cdot (r + \frac{13r}{5})}{12} = \frac{18r}{12} = \frac{3r}{2}.\]We have that $EC = \frac{2r \sqrt{3}}{3}$ and that $AE = \frac{3r}{2}$, so $AC = EC + AE = \frac{2r \sqrt{3}}{3} + \frac{3r}{2} = \frac{4r \sqrt{3} + 9r}{6}$. We also were given that $AC = 5$. Therefore, we have
+ \[\frac{4r \sqrt{3} + 9r}{6} = 5.\]This is a simple linear equation in terms of $r$. We can solve for $r$ to get $r = \boxed{\textbf{(B)}\ \frac{90-40\sqrt{3}}{11}}.$
+
+ 
+
+
+
+\textbf{Solution 2 (Cross Sections and Areas)}
+
+Denote by $O_1$, $O_2$, $O_3$ the centers of three spheres.
+
+ Because three congruent spheres are tangent to the base of the cone, the plane formed by $O_1$, $O_2$, $O_3$ (denoted as $\alpha$) is parallel to the base, with the distance $r$.
+
+ Let $D$ be the point that the sphere with center $O_1$ meets the base of the cone at. Hence, $O_1 D = r$.
+
+ Because three congruent spheres are mutually externally tangent to each other, $\triangle O_1 O_2 O_3$ is equilateral, with side length $2 r$.
+
+ Let $O$ be the center of the base, $V$ be the vertex of the cone.Let line $OV$ and plane $\alpha$ intersect at point $E$.By symmetry, $E$ is the center $\triangle O_1 O_2 O_3$.Hence, $O_1 E = \frac{\sqrt{3}}{3} O_1 O_2 = \frac{2 \sqrt{3}}{3} r$.
+
+ Let $F$ be the point that the sphere with center $O_1$ meets the side of the cone at. Hence, $O_1 F = r$.
+
+ Let line $VF$ and the base intersect at point $A$.
+
+ Hence, we only need to analyze the following 2-d geometry problem: In $\triangle VOA$ with $\angle O = 90^\circ$, $VO = 12$, $OA = 5$, there is an interior point $O_1$ whose distances to $OA$, $OV$, $VA$, are $r$, $\frac{2 \sqrt{3}}{3} r$, and $r$, respectively. What is $r$?
+
+ Now, we solve this problem.
+
+ We compute the area of $\triangle VOA$ in two ways.
+
+ First, we have
+ \begin{align*} {\textrm Area} \ \triangle VOA & = \frac{1}{2} OA \cdot OV = 30 . \end{align*}
+
+
+ Second, we have
+ \begin{align*} {\textrm Area} \ \triangle VOA & = {\textrm Area} \ \triangle O_1 OA +  {\textrm Area} \ \triangle O_1 OV +  {\textrm Area} \ \triangle O_1 VA \\ & = \frac{1}{2} \cdot OA \cdot O_1 D + \frac{1}{2} \cdot OV \cdot O_1 E + \frac{1}{2} \cdot VA \cdot O_1 F \\ & = \frac{1}{2} \cdot 5 \cdot r + \frac{1}{2}\cdot 12 \cdot\frac{2 \sqrt{3}}{3}\cdot r + \frac{1}{2} \cdot 13 \cdot r \\ & = \left( 9 + 4 \sqrt{3} \right) r . \end{align*}
+
+
+ These two approaches to compute ${\textrm Area} \ \triangle VOA$ should give me the same number.Hence,
+ \[r = \frac{30}{9 + 4 \sqrt{3}} = \boxed{\textbf{(B)}\ \frac{90-40\sqrt{3}}{11}}.\]
+
+ 
+
+
+
+\textbf{Solution 3 (Coordinate Geometry)}
+
+We will use coordinates. WLOG, let the coordinates of the center of the base of the cone be the origin. Then, let the center of one of the spheres be $\left(0, \frac{2r}{\sqrt{3}}, r\right)$. Note that the distance between this point and the plane given by $12y+5z=60$ is $r$. Thus, by the point-to-plane distance formula, we have
+ \[\frac{\left|12 \cdot \frac{2r}{\sqrt{3}} + 5r - 60\right|}{\sqrt{0^2+5^2+12^2}}=r.\]Solving for $r$ yields $r = \boxed{\textbf{(B)}\ \frac{90-40\sqrt{3}}{11}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Very Cheesy and Risky)}
+
+Clearly the answer must have square roots, leaving $\textbf{(B)}$ and $\textbf{(D)}.$ D has a lot of perfect squares, so we suspect it is a trap. This leads us to choose $\textbf{(B)}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) For each positive integer $n$, let $f_1(n)$ be twice the number of positive integer divisors of $n$, and for $j \ge 2$, let $f_j(n) = f_1(f_{j-1}(n))$. For how many values of $n \le 50$ is $f_{50}(n) = 12?$
+
+
+ $\textbf{(A) }7\qquad\textbf{(B) }8\qquad\textbf{(C) }9\qquad\textbf{(D) }10\qquad\textbf{(E) }11$
+
+
+ 
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+First, we can test values that would make $f(x)=12$ true. For this to happen $x$ must have $6$ divisors, which means its prime factorization is in the form $pq^2$ or $p^5$, where $p$ and $q$ are prime numbers. Listing out values less than $50$ which have these prime factorizations, we find $12,18,20,28,44,45,50$ for $pq^2$, and just $32$ for $p^5$. Here $12$ especially catches our eyes, as this means if one of $f_i(n)=12$, each of $f_{i+1}(n), f_{i+2}(n), ...$ will all be $12$. This is because $f_{i+1}(n)=f(f_i(n))$ (as given in the problem statement), so were $f_i(n)=12$, plugging this in we get $f_{i+1}(n)=f(12)=12$, and thus the pattern repeats. Hence, as long as for a $i$, such that $i\leq 50$ and $f_{i}(n)=12$, $f_{50}(n)=12$ must be true, which also immediately makes all our previously listed numbers, where $f_1(x)=12$, possible values of $n$.
+
+ We also know that if $f_1(x)$ were to be any of these numbers, $x$ would satisfy $f_{50}(n)$ as well. Looking through each of the possibilities aside from $12$, we see that $f_1(x)$ could only possibly be equal to $20$ and $18$, and still have $x$ less than or equal to $50$. This is because if $f_1(x)=20$ or $18$, $f_2 (x) = 12$. This would mean $x$ must have $10$, or $9$ divisors, and testing out, we see that $x$ will then be of the form $p^4q$, or $p^2q^2$. The only two values less than or equal to $50$ would be $48$ and $36$ respectively. From here there are no more possible values, so tallying our possibilities we count $\boxed{\textbf{(D) }10}$ values (Namely $12,18,20,28,32,36,44,45,48,50$).
+
+ 
+
+
+
+\textbf{Solution 2 (Rigorous reasoning on why there cannot be any other solutions)}
+
+First, take note that the maximum possible value of $f_1(n)$ for $1 \le n \le k$ increases as $k$ increases. When we increase $k$, we either include a new value of $n$ that has more divisors than any previous values of $n$, increasing the maximum of $f_1(x)$, or none of the new $n$ have more divisors, which would leave the maximum of $f_1(x)$ the same as before. In other words, $f_1(x)$ is increasing. This means that $f_1(x)$ decreases when we decrease $k$. 
+
+ Also, let $f_1(n) = 2d(n)$ where $d(n)$ is the number of divisors of n.
+
+ Since $n \le 50$, $f_1(n) \le 20$. This maximum occurs when $d(n) = 10 \implies n = 2^4 \cdot 3 = 48$. Next, since $f_1(n) \le 20$, $f_1(f_1(n)) \le 12 \implies f_2(n) \le 12$. This maximum occurs when $d(f_1(n)) = 6 \implies n = 2 \cdot 3^2 = 18, n = 2^2 \cdot 3 = 12$. Since $f_2(n) \le 12$, $f_1(f_2(n)) \le 12 \implies f_3(n) \le 12$, once again. This maximum again occurs when $d(f_2(n)) = 6 \implies f_2(n) = 2^2 \cdot 3 = 12$. Notice that, from this point on, for $k \geq 3$, $f_k(n) \leq 12$ by a straightforward induction argument.
+
+ On a hunch, we investigate what happens when $f_2(n) < 12$, as this is the first time when $f_k(n)$ is bounded to a maximum of 12.Suppose for the sake of contradiction that $f_2(n) < 12$. Then, $f_3(n) < 12$, as $f_2(n) = 12$ is the only number that would maximize $f_3(n))$ for $f_2(n) \le 12$. As a result, since $f_1(n)$ is increasing, and because $12$ is the only value for which $f_1$  is maximized, $f_1$ "steps down" from a maximum of $6 \cdot 2 = 12$ if $n < 12$. This means we must have that $f_1(f_3(n)) < f_1(12) = 12 \implies f_4(n) < 12$. We continue applying $f_1$ on both sides (which is possible since $f_1$ is increasing) until we reach $f_{50}$, giving us that $f_{50}(n) < 12$. However, $f_{50}(n) = 12$, which is a contradiction. Thus, $f_2(n) = 12$. 
+
+ Now, we can finally solve for the solutions with a clean conscience - we proceed similarly to Solution 1. $f_2(n) = 12 \implies f_1(f_1(n)) = 12 \implies d(f_1(n)) = 6$. $d(f_1(n)) = 6$. This gives us two cases. First, we have the case where $f_1(n) = p^2 \cdot q$ where $p$ and $q$ are primes. Second, we have the case where $f_1(n)=p^5$ where $p$ is a prime.  For both cases, since $f_1(n) \le 20$, $f_1(n)$ can only be $12$, $18$, or $20$.
+
+ If $f_1(n) = 12$, then $d(n) = 6 \implies n = p^5, p^2 \cdot q \implies n \in \{ 12, 18, 20, 28, 32, 44, 45, 50 \}$, resulting in 8 solutions. 
+
+ If $f_1(n) = 18$, then $d(n) = 9 \implies n = p^8, p^2 \cdot q^2 \implies n = 36$, giving us one more solution. Finally, $f_1(n) = 20 \implies d(n) = 10 \implies n = p^9, p^4 \cdot q \implies n = 48$. 
+
+ Thus, in total, we have $\boxed{\textbf{(D)} 10}$ solutions.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+$\textbf{Observation 1}$: $f_1 \left( 12 \right) = 12$.
+
+ Hence, if $n$ has the property that $f_j \left( n \right) = 12$ for some $j$, then $f_k \left( n \right) = 12$ for all $k > j$.
+
+ $\textbf{Observation 2}$: $f_1 \left( 8 \right) = 8$.
+
+ Hence, if $n$ has the property that $f_j \left( n \right) = 8$ for some $j$, then $f_k \left( n \right) = 8$ for all $k > j$.
+
+ $\textbf{Case 1}$: $n = 1$.
+
+ We have $f_1 \left( n \right) = 2$, $f_2 \left( n \right) = f_1 \left( 2 \right) = 4$, $f_3 \left( n \right) = f_1 \left( 4 \right) = 6$, $f_4 \left( n \right) = f_1 \left( 6 \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 2}$: $n$ is prime.
+
+ We have $f_1 \left( n \right) = 4$, $f_2 \left( n \right) = f_1 \left( 4 \right) = 6$, $f_3 \left( n \right) = f_1 \left( 6 \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 3}$: The prime factorization of $n$ takes the form $p_1^2$.
+
+ We have $f_1 \left( n \right) = 6$, $f_2 \left( n \right) = f_1 \left( 6 \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 4}$: The prime factorization of $n$ takes the form $p_1^3$.
+
+ We have $f_1 \left( n \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 5}$: The prime factorization of $n$ takes the form $p_1^4$.
+
+ We have $f_1 \left( n \right) = 10$, $f_2 \left( n \right) = f_1 \left( 10 \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 6}$: The prime factorization of $n$ takes the form $p_1^5$.
+
+ We have $f_1 \left( n \right) = 12$. Hence, Observation 1 implies $f_{50} \left( n \right) = 12$.
+
+ In this case the only $n$ is $2^5 = 32$.
+
+ $\textbf{Case 7}$: The prime factorization of $n$ takes the form $p_1 p_2$.
+
+ We have $f_1 \left( n \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 8}$: The prime factorization of $n$ takes the form $p_1 p_2^2$.
+
+ We have $f_1 \left( n \right) = 12$. Hence, Observation 1 implies $f_{50} \left( n \right) = 12$.
+
+ In this case, all $n$ are $12, 18, 20, 28, 44, 45,$ and $50$.
+
+ $\textbf{Case 9}$: The prime factorization of $n$ takes the form $p_1 p_2^3$.
+
+ We have $f_1 \left( n \right) = 16$, $f_2 \left( n \right) = f_1 \left( 16 \right) = 10$, $f_3 \left( n \right) = f_1 \left( 10 \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ $\textbf{Case 10}$: The prime factorization of $n$ takes the form $p_1 p_2^4$.
+
+ We have $f_1 \left( n \right) = 20$, $f_2 \left( n \right) = f_1 \left( 20 \right) = 12$. Hence, Observation 1 implies $f_{50} \left( n \right) = 12$.
+
+ In this case, the only $n$ is $48$.
+
+ $\textbf{Case 11}$: The prime factorization of $n$ takes the form $p_1^2 p_2^2$.
+
+ We have $f_1 \left( n \right) = 18$, $f_2 \left( n \right) = f_1 \left( 18 \right) = 12$. Hence, Observation 1 implies $f_{50} \left( n \right) = 12$.
+
+ In this case, the only $n$ is $36$.
+
+ $\textbf{Case 12}$: The prime factorization of $n$ takes the form $p_1 p_2 p_3$.
+
+ We have $f_1 \left( n \right) = 16$, $f_2 \left( n \right) = f_1 \left( 16 \right) = 10$, $f_3 \left( n \right) = f_2 \left( 10 \right) = 8$. Hence, Observation 2 implies $f_{50} \left( n \right) = 8$.
+
+ Putting all cases together, the number of feasible $n \leq 50$ is $\boxed{\textbf{(D) }10}$.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) Each of the $12$ edges of a cube is labeled $0$ or $1$. Two labelings are considered different even if one can be obtained from the other by a sequence of one or more rotations and/or reflections. For how many such labelings is the sum of the labels on the edges of each of the $6$ faces of the cube equal to $2$?
+
+
+ $\textbf{(A) } 8 \qquad\textbf{(B) } 10 \qquad\textbf{(C) } 12 \qquad\textbf{(D) } 16 \qquad\textbf{(E) } 20$
+
+
+ 
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+For simplicity, we will name this cube $ABCDEFGH$ by vertices, as shown below.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_1.png}
+                    \end{figure}
+                    Note that for each face of this cube, two edges are labeled $0,$ and two edges are labeled $1.$ For all twelve edges of this cube, we conclude that six edges are labeled $0,$ and six edges are labeled $1.$
+
+ We apply casework to face $ABCD.$ Recall that there are $\binom42=6$ ways to label its edges:
+
+ 
+            \begin{enumerate}
+                 \item \textbf{Opposite edges have the same label.}There are $2$ ways to label the edges of $ABCD.$ We will consider one of the ways, then multiply the count by $2.$ Without loss of generality, we assume that $\overline{AB},\overline{BC},\overline{CD},\overline{DA}$ are labeled $1,0,1,0,$ respectively:
+
+ We apply casework to the label of $\overline{AE},$ as shown below.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_2.png}
+                    \end{figure}
+                    We have $2\cdot2=4$ such labelings for this case.  
+
+ \item \textbf{Opposite edges have different labels.}There are $4$ ways to label the edges of $ABCD.$ We will consider one of the ways, then multiply the count by $4.$ Without loss of generality, we assume that $\overline{AB},\overline{BC},\overline{CD},\overline{DA}$ are labeled $1,1,0,0,$ respectively:
+
+ We apply casework to the labels of $\overline{AE}$ and $\overline{BF},$ as shown below.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_3.png}
+                    \end{figure}
+                    We have $4\cdot4=16$ such labelings for this case.
+
+ 
+            \end{enumerate}
+            Therefore, we have $4+16=\boxed{\textbf{(E) } 20}$ such labelings in total.
+
+ 
+
+
+
+\textbf{Solution 1.5}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_4.png}
+                    \end{figure}
+                    
+
+ We will do casework on face $ABCD.$ 
+
+ \textbf{Case 1:} Two adjacent edges on face $ABCD$ are both labeled $1$. 
+
+ There are $4$ ways to choose two adjacent edges on the top face. WLOG say we choose edges $BC$ and $CD$ to be labeled $1.$ Then $AB$ and $AD$ must be labeled $0.$ 
+
+ We have three subcases for face $BCGF:$ 
+
+ \textbf{SC1:} $FG$ is labeled $1$ 
+
+ Then the rest of the cube becomes uniquely determined.
+
+ \textbf{SC2:} $CG$ is labeled $1$ 
+
+ The cube still becomes uniquely determined.
+
+ \textbf{SC3:} $BF$ is labeled $1$ 
+
+ If $BF$ is labeled $1,$ we can choose either $DH$ or $GH$ to be labeled $1$ on face $CDHG.$ Then the rest of the cube is uniquely determined. 
+
+ In total we get $4(1 + 1 + 2) = 16$ ways for this case. 
+
+ \textbf{Case 2:} Two opposite edges on face $ABCD$ are both labeled $1$ 
+
+ There are $2$ ways to choose the opposite edges. WLOG say we choose edges $BC$ and $AD.$ Then for face $BCGF$ we can choose either $CG$ or $BF$ to be labeled $1$ (we can't choose $FG$ because that would force an invalid labeling). 
+
+ This case gives us $2 \cdot 2 = 4$ ways. 
+
+ So the answer is $16 + 4 = \boxed{20}.$ 
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Since we want the sum of the edges of each face to be $2$, we need there to be two $1$s and two $0$s on each face. Through experimentation, we find that either $2, 4,$ or all of them have $1$s adjacent to $1$s and $0$s adjacent to $0$ on each face. WLOG, let the first face (counterclockwise) be $0,0,1,1$. In this case we are trying to have all of them be adjacent to each other. First face: $0,0,1,1$. Second face: $2$ choices: $1,0,0,1$ or $0,0,1,1$. After that, it is basically forced and everything will fall in to place. Since we assumed WLOG, we need to multiply $2$ by $4$ to get a total of $8$ different arrangements. 
+
+ Secondly, $4$ of the faces have all of them adjacent and $2$ of the faces do not: WLOG counting counterclockwise, we have $0,0,1,1$. Then, we choose the other face next to it. There are two cases, which are $0,1,0,1$ and $1,0,1,0$. Therefore, this subcase has $4$ different arrangements. Then, we can choose the face at front to be $1,0,1,0$. This has $4$ cases. The sides can either be $0,1,1,0$ or $1,1,0,0$. Therefore, we have another $8$ cases.
+
+ Summing these up, we have $8+4+8 = 20$. Therefore, our answer is $\boxed{\textbf{(E) } 20}$.
+
+ <u>\textbf{Remark}</u>
+
+ It is very easy to get disorganized when counting, resulting in incorrect calculations, so when doing this problem, make sure to draw a diagram of the cube. Labeling is a bit harder, since we often confuse one side with another. Try doing the problem by labeling sides on the lines (literally letting the lines pass through your $0$s and $1$s.) I found that to be very helpful when solving this problem.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_5.png}
+                    \end{figure}
+                    
+
+ We see that each face has to have 2 1's and 2 0's. We can start with edges connecting to A. 
+
+ \textbf{Case 1} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_6.png}
+                    \end{figure}
+                    
+
+ This goes to: 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_7.png}
+                    \end{figure}
+                    
+
+ We can see that we choose $2$ diametrically opposite vertices to put $3$ $1$'s on the connecting edges. As a result, this case has $\frac{8}{2}=4$ orientations.
+
+ An alternate way to count would be to realize that you can rotate the configuration four times yielding four different configurations, but when you reflect horizontally and diagonally, you don't get another unique configuration, rather you get the same configuration as if you rotated it. ~mathboy282
+
+ \textbf{Case 2} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_8.png}
+                    \end{figure}
+                    
+
+ Filling out a bit more, we have: 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_9.png}
+                    \end{figure}
+                    
+
+ Let's try filling out $BC$ and $CD$ first. 
+
+ \textbf{Case 2.1} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_10.png}
+                    \end{figure}
+                    
+
+ This goes to: 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_11.png}
+                    \end{figure}
+                    
+
+ We can see that it consists of chains of three $1$'s, with the middle of each chain being opposite edges. As a result, this case has $\frac{12}{2}=6$ orientations.
+
+ \textbf{Case 2.2} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_12.png}
+                    \end{figure}
+                    
+
+ Oh no... We have different ways of filling out $FG$ and $GH$. More casework! 
+
+ \textbf{Case 2.2.1} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_13.png}
+                    \end{figure}
+                    
+
+ This goes to:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_14.png}
+                    \end{figure}
+                    
+
+ We can see that this is the inverse of case 1 (Define inverse to mean swapping $1$'s for $0$'s and $0$'s for $1$'s). Therefore, this should also have $4$ orientations.
+
+ \textbf{Case 2.2.2} 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_15.png}
+                    \end{figure}
+                    
+
+ This goes to:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_16.png}
+                    \end{figure}
+                    
+
+ This is the inverse of case 2.1, so this will also have $6$ orientations.
+
+ \textbf{Putting Them All Together} We see that if the $3$ edges connecting to $A$ has two $0$'s, and one $1$, it would have the same solutions as if it had two $1$'s, and one $0$. The solutions would just be inverted. As case 2.1 and case 2.2.2 are inverses, and case 2.2.1 has case 1 as an inverse, there would not be any additional solutions. 
+
+ Similarly, if the $3$ edges connecting to $A$ has three $0$'s, it would be the same as the inverse of case 1, or case 2.2.1, resulting in no new solutions. 
+
+ Putting all the cases together, we have $4+6+4+6=\boxed{\textbf{(E) } 20}$ solutions.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+The problem states the sum of the labels on the edges of each of the $6$ faces of the cube equal to $2$. That is, the sum of the labels on the $4$ edges of a face is equal to $2$. The labels can only be $0$ or $1$, meaning $2$ edges are labeled $1$, the other $2$ are labeled $0$.
+
+ This problem can be approached by \href{https://en.wikipedia.org/wiki/Graph\_coloring}{Graph Coloring} of \href{https://en.wikipedia.org/wiki/Graph\_theory}{Graph Theory}. Note that each face of the cube connects to $4$ other faces, each with a shared edge. We use the following graph to represent the problem. Each vertex represents a face, each edge represent the cube's edge. Each vertex has $4$ edges connecting to $4$ other vertices. The edges can be colored red or blue, with red as label $0$, and blue as label $1$. Each vertex must have $2$ red edges and $2$ blue edges.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_17.jpg}
+                    \end{figure}
+                    $\textbf{Case 1}$: $2$ adjacent red edges from vertex A. There are $4$ ways to choose $2$ red edges adjacent to each other and connect to $2$ vertices with an edge between them as shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_18.jpg}
+                    \end{figure}
+                    $\textbf{Case 1.1}$: $2$ adjacent red edges from vertex $A$ form a closed loop with a third red edge. There is only $1$ case as shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_19.jpg}
+                    \end{figure}
+                    $\textbf{Case 1.2}$: $2$ adjacent red edges from vertex $A$ does not form a closed loop with a third red edge. There are $3$ cases as shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_20.jpg}
+                    \end{figure}
+                    In case $1$, there are total $4 \cdot (1 + 3) = 16$ ways.
+
+ $\textbf{Case 2}$: $2$ red edges from vertex $A$ with $1$ blue edge in between. There are $2$ ways to choose $2$ red edges with $1$ blue edge in between.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_21.jpg}
+                    \end{figure}
+                    There are only $2$ cases as shown below.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_24_Solution_Figure_22.jpg}
+                    \end{figure}
+                    In case $2$, there are total $2 \cdot 2 = 4$ ways.
+
+ From both case $1$ and case $2$, there are $16 + 4 = \boxed{\textbf{(E) } 20}$ ways in total.
+
+ 
+
+
+	\item (\textit{AMC 10 10A Fall 2021}) A quadratic polynomial with real coefficients and leading coefficient $1$ is called \textit{disrespectful} if the equation $p(p(x))=0$ is satisfied by exactly three real numbers. Among all the disrespectful quadratic polynomials, there is a unique such polynomial $\tilde{p}(x)$ for which the sum of the roots is maximized. What is $\tilde{p}(1)$?
+
+
+ $\textbf{(A) } \frac{5}{16} \qquad\textbf{(B) } \frac{1}{2} \qquad\textbf{(C) } \frac{5}{8} \qquad\textbf{(D) } 1 \qquad\textbf{(E) } \frac{9}{8}$
+
+
+ 
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1 (Standard Form)}
+
+Let $r_1$ and $r_2$ be the roots of $\tilde{p}(x)$. Then, $\tilde{p}(x)=(x-r_1)(x-r_2)=x^2-(r_1+r_2)x+r_1r_2$. The solutions to $\tilde{p}(\tilde{p}(x))=0$ is the union of the solutions to 
+ \[\tilde{p}(x)-r_1=x^2-(r_1+r_2)x+(r_1r_2-r_1)=0\] and 
+ \[\tilde{p}(x)-r_2=x^2-(r_1+r_2)x+(r_1r_2-r_2)=0.\] Note that one of these two quadratics has one solution (a double root) and the other has two as there are exactly three solutions. WLOG, assume that the quadratic with one root is $x^2-(r_1+r_2)x+(r_1r_2-r_1)=0$. Then, the discriminant is $0$, so $(r_1+r_2)^2 = 4r_1r_2 - 4r_1$. Thus, $r_1-r_2=\pm 2\sqrt{-r_1}$, but for $x^2-(r_1+r_2)x+(r_1r_2-r_2)=0$ to have two solutions, it must be the case that $r_1-r_2=- 2\sqrt{-r_1} (*)$. It follows that the sum of the roots of $\tilde{p}(x)$ is $2r_1 + 2\sqrt{-r_1}$, whose maximum value occurs when $r_1 = - \frac{1}{4} (\star)$. Solving for $r_2$ yields $r_2 = \frac{3}{4}$. Therefore, $\tilde{p}(x)=x^2 - \frac{1}{2} x - \frac{3}{16}$, so $\tilde{p}(1)= \boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ <u>\textbf{Remarks}</u>
+
+ 
+                \begin{itemize}
+                    \item For $x^2-(r_1+r_2)x+(r_1r_2-r_2)=0$ to have two solutions, the discriminant $(r_1+r_2)^2-4r_1r_2+4r_2$ must be positive. From here, we get that $(r_1-r_2)^2>-4r_2$, so $-4r_1>-4r_2 \implies r_1<r_2$. Hence, $r_1-r_2$ is negative, so $r_1-r_2=-2\sqrt{-r_1}$.
+                \end{itemize}
+
+
+                
+                \begin{itemize}
+                    \item Set $\sqrt{-r_1}=x$. Now $r_1+\sqrt{-r_1}=-x^2+x$, for which the maximum occurs when $x=\frac{1}{2} \rightarrow r_1=-\frac{1}{4}$.
+                \end{itemize}
+
+
+                
+
+
+
+\textbf{Solution 2 (Vertex Form)}
+
+Let $p(x)=(x-h)^2+k$ for some real constants $h$ and $k.$ Suppose that $p(x)$ has real roots $r$ and $s.$
+
+ Since $p(p(x))=0,$ we conclude that $p(x)=r$ or $p(x)=s.$ Without loss of generality, we assume that $p(x)=r$ has two real solutions and $p(x)=s$ has one real solution. Therefore, we have $k=s,$ from which 
+ \[p(x)=(x-h)^2+s.\]As $p(s)=0,$ we expand the left side to obtain $(s-h)^2+s=0,$ or 
+ \[s^2-(2h-1)s+h^2=0. \hspace{15mm}(\bigstar)\]Since $(\bigstar)$ has real solutions for $s,$ the discriminant is nonnegative: $(2h-1)^2-4h^2\geq0.$ We solve this inequality to get $h\leq \frac14.$
+
+ Either by the axis of symmetry or Vieta's formulas, note that $r+s=2h.$ As we wish to maximize $2h,$ we maximize $h.$ Substituting $h=\frac14$ into $(\bigstar),$ we obtain $s^2+\frac12s+\frac{1}{16}=0.$ We factor the left side to get $\left(s+\frac14\right)^2=0,$ or $s=-\frac14.$
+
+ Finally, the unique such polynomial is 
+ \[\tilde{p}(x)=\left(x-\frac14\right)^2-\frac14,\] from which $\tilde{p}(1)=\boxed{\textbf{(A) } \frac{5}{16}}.$
+
+ 
+
+
+
+\textbf{Solution 2.5 (Vertex Form but Done Differently)}
+
+Continuing from the previous solution's reasoning, we know that the $y$-coordinate of the vertex must also be a root of the polynomial. Thus, $\tilde{p}(x) = \left(x - \frac{s + r}{2}\right)^2 + s$, where $r$ and $s$ are roots of the polynomial.
+
+ We also know that in order for $\tilde{p}(x) = r$ to have two solutions, $y = r$ must intersect $\tilde{p}(x)$ above its minimum/vertex. Thus, $r > s$. Let $r = s + a$. Then, $\tilde{p}(x) = \left(x - \frac {2s + a}{2}\right)^2 + s$. 
+
+ Since $s$ is a root, $\tilde{p}(s) = 0$ so $\left(s - \frac{2s + a}{2}\right)^2 +s = 0 \implies \frac{a^2}{4} + s = 0 \implies s = - \frac{1}{4} a^2$. We wish to maximize $s + s + a = 2s + a = - \frac{1}{2} a^2 + a$. 
+
+ This quadratic is maximized at $a = 1$ (when converting the quadratic to vertex form). Then, since $\tilde{p}(s + a) = 0 \implies \tilde{p}(s+1) = 0$, $\left(s + 1 - s - \frac12\right)^2 + s = 0 \implies \frac{1}{4} + s = 0 \implies s = -\frac{1}{4}$. 
+
+ Thus, $\tilde{p}(x) = \left(x - \frac{1}{4}\right)^2 - \frac{1}{4}$. So, $\tilde{p}(1) = \boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Symmetry)}
+
+Let $\tilde p(x)=(x-h)^2+k$. We seek to maximize the sum of the roots $2h$, so we maximize $h$.
+
+ Let $P(x)=\tilde p(\tilde p(x))=((x-h)^2+k-h)^2+k$. Note that $P(x)$ is symmetric about $x=h$. 
+
+ $P(x)=0$ has $3$ real solutions, Due to the complex conjugate theorem, $P(x$) must have $4$ real roots. Therefore, $P(x)$ must have exactly $1$ double root. 
+
+ This root cannot be to the left or to the right of $x=h$, as the symmetry of the function would mean that there would be another double root reflected across the $x=h$. It follows that the double root could only be situated at $x=h$. 
+
+ $0=P(h)=((h-h)^2+k-h)^2+k=(k-h)^2+k$. Expanding and writing this out in terms of k, $k^2+(1-2h)k+h^2=0$. 
+
+ In order for this to have a solution, the discriminant has to be non-negative. In other words, $(1-2h)^2-4h^2\geq0$. 
+
+ This simplifies to $1-4h\geq0$, or $h\leq\frac{1}{4}$. 
+
+ As we seek to maximize $h$, we set $h=\frac{1}{4}$ and see that $k=-\frac{1}{4}$. 
+
+ Therefore, $\tilde p(x)=\left(x-\frac{1}{4}\right)^2-\frac{1}{4}$, and $\tilde p(1)=\left(1-\frac{1}{4}\right)^2-\frac{1}{4}=\frac{9}{16}-\frac{1}{4}=\boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Discriminant)}
+
+Equation $p \left( p \left( x \right) \right) = 0$ is equivalent to the following system of equations:
+ \begin{align*} p \left( u \right) &= 0, \\ p \left( x \right) - u &= 0. \end{align*}
+
+
+ Denote $p \left( x \right) = x^2 + p x + q$.
+
+ Denote by $r_1$ and $r_2$ two roots of $p \left( x \right) = 0$.
+
+ Because $p \left( p \left( x \right) \right) = 0$ has three real roots, we must have the properties that $r_1$ and $_2$ are real with $r_1 \neq r_2$.Without loss of generality, we assume $r_1 < r_2$.
+
+ We notice that all roots of $p \left( p \left( x \right) \right) = 0$are the collection of all roots of $p \left( x \right) - r_1 = 0$ and all roots of $p \left( x \right) - r_2 = 0$.
+
+ Because each of these two equations is quadratic, it has two roots (may be identical).To get a total number of three roots, one equation must have two identical roots.
+
+ Because $r_1 < r_2$, equation $p \left( x \right) - r_1 = 0$  has two identical roots.Hence, the discriminant of this equation satisfies
+ \[ p^2 - 4 \left( q - r_1 \right) = 0 . \hspace{1cm} \]
+
+ Because $r_1 < r_2$, $r_1 = \frac{- p - \sqrt{p^2 - 4 q}}{2}$.
+
+ Hence, the above equation can be written as
+ \[ p^2 - 4 \left( q - \frac{- p - \sqrt{p^2 - 4 q}}{2} \right) = 0 . \]
+
+ This can be reorganized as
+ \[ \left( p^2 - 4 q \right) - 2 \sqrt{p^2 - 4 q} - 2 p = 0 . \hspace{1cm} (1) \]
+
+ Define $x = \sqrt{p^2 - 4 q}$.Hence, the value of $p$ should ensure that equation $x^2 - 2 x - 2 p = 0$ has at least one real nonnegative root.
+
+ This condition can be satisfied if the discriminant of this equation is nonnegative: $\left( -2 \right)^2 - 4 \cdot 1 \cdot \left( - 2 p \right) \geq 0$.Hence, $p \geq - \frac{1}{2}$.
+
+ Now, we are ready to find $\tilde p \left( x \right)$.
+
+ Following from Vieta's formula, $r_1 + r_2 = - p$.Hence, to get $r_1 + r_2$ maximized, we need to find smallest $p$.
+
+ Because $p \geq - \frac{1}{2}$, the smallest $p$ is $-\frac{1}{2}$.Plugging this value into Equation (1), we get $\sqrt{p^2 - 4 q} = 1$.Hence, $q = - \frac{3}{16}$.
+
+ Thus, $\tilde p \left( x \right) = x^2 - \frac{1}{2} x - \frac{3}{16}$.Therefore, $\tilde p \left( 1 \right) = \boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Factored Form)}
+
+The disrespectful function $p(x)$ has leading coefficient $1$, so it can be written in factored form as $(x-r)(x-s)$. Now the problem states that all $p(x)$ must satisfy $p(p(x)) = 0$. Plugging our form in, we get 
+ \[((x-r)(x-s)-r)((x-r)(x-s)-s) = 0.\] The roots of this equation are $(x-r)(x-s) = r$ and $(x-r)(x-s) = s$. By the fundamental theorem of algebra, each root must have two roots for a total of four possible values of $x$ yet the problem states that this equation is satisfied by three values of $x$. Therefore one equation must give a double root. Without loss of generality, let the equation $(x-r)(x-s) = r$ be the equation that produces the double root. Expanding gives $x^2-(r+s)x+rs-r = 0$. We know that if there is a double root to this equation, the discriminant must be equal to zero, so $(r+s)^2-4(rs-r) = 0 \implies r^2+2rs+s^2-4rs+4r = 0 \implies r^2-2rs+s^2+4r = 0$.
+
+ From here two solutions can progress.
+
+ 
+
+
+
+\textbf{Solution 5.1 (Quadratic Formula)}
+
+We can rewrite $r^2-2rs+s^2+4r = 0$ as $(r-s)^2+4r = 0$. Let's keep our eyes on the ball; we want to find the disrespectful quadratic that maximizes the sum of the roots, which is $r+s$. Let this be equal to a new variable, $m$, so that our problem is reduced to maximizing this variable. We can rewrite our equation in terms of $m$ as $(2r-m)^2 + 4r = 0 \implies m^2- 4rm + 4r^2+4r = 0$. 
+
+ This is a quadratic in $m$, so we can use the quadratic formula: 
+ \[m = \frac{4r \pm \sqrt{16r^2-4(4r^2+4r)}}{2} = 2r \pm \sqrt{-4r} = 2\left(r \pm \sqrt{-r}\right).\]It will be easier to think without the square root, so let $q = \sqrt{-r}$. We can rewrite the equation as $m = 2(-q^2 \pm q)$. We want to maximize $m$, so we take the plus value of the right-hand-side of the equation. Then,
+ \[m=2(-q^2+q) \implies m = -2q(q-1).\]To maximize $m$, we find the vertex of the right-hand side of the equation. The vertex of $-2q(q-1)$ is the average of the roots of the equation which is $\frac{0+1}{2} = \frac{1}{2}$. This means that $r = -q^2 \implies \boldsymbol{r = -\frac{1}{4}}$ and $m = -2q(q-1) \implies m = \frac{1}{2}$. Therefore, $m-r = s \implies \boldsymbol{s = \frac{3}{4}}$.
+
+ 
+
+
+
+\textbf{Solution 5.2 (Derivation-Rotated Conics)}
+
+We see that the equation $r^2-2rs+s^2+4r = 0$ is in the form of the general equation of a rotated conic 
+ \[Ax^2+Bxy+Cy^2+Dx+Ey+F = 0.\] Because $B^2 -4AC = (-2)^2 - 4(1)(1) = 0$, this rotated conic is a parabola. 
+
+ The definition of a parabola is the locus of all points that are equidistant from a point (focus) and line (directrix). Let the focus and directrix of this particular parabola be $(a,b)$ and $y = mx+c$. Then we can try to find the general form of a rotated parabola in terms of $a, b, m,$and$c$. 
+
+ The distance between two points $(x,y)$ and $(a,b)$ is $\sqrt{(x-a)^2+(y-b)^2}$. Therefore this is the distance from any point on the parabola to the focus. 
+
+ The distance from a point $(x,y)$ to a line $y = mx+c \implies mx-y+c = 0$ is $\frac{|mx-y+c|}{\sqrt{m^2+1}}$.
+
+ We can set these two equal to each other and we get 
+ \[\sqrt{(x-a)^2+(y-b)^2} = \frac{|mx-y+c|}{\sqrt{m^2+1}}.\]Squaring both sides of the equation, we get 
+ \[(x-a)^2+(y-b)^2 = \frac{(mx-y+c)^2}{m^2+1}.\]Expanding both sides of the equation gives 
+ \[x^2-2ax+a^2+y^2-2by+b^2 = \frac{m^2x^2+y^2+c^2+2mxc-2yc-2mxy}{m^2+1}.\]Multiplying both sides of the equation by $m^2+1$ and rearranging gives 
+ \[x^2+2mx+m^2y^2-2((m^2+1)a + mc)x-2((m^2+1)b - c)y +(m^2+1)(a^2+b^2)-c^2.\]Now we can compare to our rotated parabola, $r^2-2rs+s^2+4r = 0$. From this, $-2 = 2m$ or $m = -1$. From here we have a system of three equations:
+ \begin{align*} -2((m^2+1)a + mc) &= 4, \\ -2((m^2+1)b - c) &= 0, \\ (m^2+1)(a^2+b^2)-c^2 &= 0. \end{align*}
+Plugging in $m=-1$ we get
+ \begin{align*} -2(2a-c) &= 4, \\ -2(2b-c) &= 0, \\ 2(a^2+b^2) - c^2 &= 0. \end{align*}
+Solving for the first equation, $c = 2+2a$.
+
+ Subtracting the first two equations, $-4a+4b = 4 \implies b = a+1$.
+
+ Plugging into the third equation, $2a^2+2a^2+4a+2 = c^2 \implies 4a^2+4a+2 = c^2$.
+
+ Substituting $c$ in, we get $4a^2+4a+2 = 4a^2+8a+4 \implies 4a+2 = 0 \implies a = -\frac{1}{2}$.
+
+ Now $b = a+1 = \frac{1}{2}$ and $c = 2+2a = 1$.
+
+ This means that the focus of the parabola is $\left(-\frac{1}{2}, \frac{1}{2}\right)$ and the directrix is $y = -x+1$. The maximum value of $r+s$ would lie at the vertex of the parabola, which is the midpoint of the focus and the foot of the focus at the directrix. The line that the vertex and focus lie on is perpendicular to the directrix, so it has slope $1$. It can be written as $y = x+d$ and must go through $\left(-\frac{1}{2}, \frac{1}{2}\right)$ so $d = 1$. This perpendicular line intersects the directrix, so to find the point at which this foot occurs, we set the equation of the lines equal to each other:
+ \begin{align*} y &= x+1, \\ y &= -x+1. \end{align*}
+Adding, we get $2y = 2$ or $y = 1$ and $x = 0$. The vertex of the parabola is now at the midpoint of $\left(-\frac{1}{2}, \frac{1}{2}\right)$ and $(0, 1)$ which is $\left(-\frac{1}{4}, \frac{3}{4}\right)$.
+
+ Therefore, we have $\boldsymbol{r=-\frac{1}{4}}$ and $\boldsymbol{s=\frac{3}{4}}$.
+
+ 
+
+
+
+\textbf{Solutions 5.1 and 5.2 Rejoined}
+
+Now that we know the roots of $\tilde{p}(1)$, we can plug in our equation: 
+ \[(x-r)(x-s) = \left(1-\left(-\frac{1}{4}\right)\right)\left(1-\frac{3}{4}\right) = \frac{5}{4} \cdot \frac{1}{4} = \frac{5}{16} = \boxed{\textbf{(A) } \frac{5}{16}}.\]~KingRavi
+
+ 
+
+
+
+\textbf{Solution 6 (Factored Form)}
+
+Let $p(x)=(x-p)(x-q).$ Then, 
+ \[p(p(x))=((x-p)(x-q)-p)((x-p)(x-q)-q)=0,\] which means that either $(x-p)(x-q)-p=0$ or $(x-p)(x-q)-q=0$. Both of these equations are quadratics, so $p(p(x))$ has four roots, unless there's a double root. 
+
+ Without loss of generality, let $(x-p)(x-q)-p$ be the expression that produces the double root, so its discriminant is zero. When expanded, 
+ \[(x-p)(x-q)-p=x^2-(p+q)x+pq-p=0.\] The value of $x$ is irrelevant to the discriminant, which is $(-(p+q))^2-4(pq-p).$ Setting this equal to zero and simplifing, this equation becomes $p^2-2pq+q^2+4p=0,$ which is a quadratic in $p$.
+
+ 
+Now, we seek the value of $p$. The previous quadratic is equivalent to $p^2-(2q-4)p+q^2=0$. Using the quadratic formula by having $a=1, b=-(2q-4)$, and $c=q^2,$ we have
+ \[p = \frac{2q-4\pm\sqrt{(-(2q-4))^2-4(1(q^2))}}{2(1)} = \frac{2q-4\pm4\sqrt{1-q}}{2}=q-2+2\sqrt{1-q}.\]Our focus is on maximizing $p+q$, so we need the maximum values of $p$ and $q$ respectively (by taking the positive square root). Adding $q,$ we see that
+ \[p+q=2\left(q-1+\sqrt{1-q}\right).\]Let $k=\sqrt{1-q}.$ Then, $-k^2=q-1,$ so $p+q=2(-k^2+k).$ 
+
+ 
+The graph of $-k^2+k$ is a parabola that opens up downwards, and has its maximum value at $y$-value of the vertex. The $x$ coordinate of the vertex is the average of the two roots, which in this case, are $0$ and $1$, so the average of these two is $\frac{1}{2}$. This means that the maximum value of $-k^2+k$ occurs at $k=\frac{1}{2}.$ 
+
+ 
+Substituting $k=\sqrt{1-q},$ we see that $q=\frac{3}{4}.$ Since $p=q-2+2\sqrt{1-q},$ we can plug $q=\frac{3}{4}$ in, to see that $p=-\frac{1}{4}.$
+
+ 
+Because the roots of this quadratic are $\frac{3}{4}$ and $-\frac{1}{4},$ our quadratic is $\left(x-\frac{3}{4}\right)\left(x+\frac{1}{4}\right).$ $\tilde{p}(1)=\frac{5}{16}$, so the answer is $\boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Vieta’s Formulas)}
+
+Since $\tilde{p}(x)$ is a disrespectful polynomial, it must satisfy $\tilde{p}(\tilde{p}(x))$. Let $\tilde{p}(x)$ have roots $x_1, x_2$. So, the equation $\tilde{p}(\tilde{p}(x))$ becomes two separate equations:
+ \begin{align*} x^2+bx+c=x_1, \\ x^2+bx+c=x_2. \end{align*}
+Let $r_1,r_2,r_3,r_4$ be the roots of $\tilde{p}(\tilde{p}(x))$. Since there are $3$ real roots, then either one of them is complex, or two of them are the same. It is known that if complex number $w$ is a root to a certain polynomial, then so is $\overline{w}$. So, if one root to $\tilde{p}(\tilde{p}(x))$ is complex, then another root should also be complex — we can't have that. So, two roots are equal; WLOG, assume it is $r_3=r_4$. That means the roots to $\tilde{p}(\tilde{p}(x))$ are $r_1,r_2,r_3,r_3$.
+
+ Now, if the roots of $x^2+bx+c=x_1$ are $r_1$ and $r_3$ and the roots of $x^2+bx+c=x_2$ are $r_2$ and $r_3$, then we have $-b = r_1+r_3 = r_2+r_3$ giving $r_1=r_2$ by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formula}{Vieta's Formula}. That can't happen either. So, $x^2+bx+c=x_1$ must have roots $r_1, r_2$ and $x^2+bx+c=x_2$ must have a double root $r_3$. Again by Vieta's, we have
+ \begin{align*} r_1+r_2&=-b, \\ 2r_3&=-b. \end{align*}
+That implies $r_2-r_3=r_3-r_1$. So, let $r_1=r_3-k$ and $r_2=r_3+k$. Also, from $2r_3=-b$, we have $r_3=-\frac{b}{2}$. By Vieta's again, we have
+ \begin{align*} r_1\cdot r_2 &= c-x_1 = r_1\cdot r_2 = (r_3-k)(r_3+k) = r_3^2-k^2, \\ r_3^2&=c-x_2. \end{align*}
+Subtracting yields $x_1-x_2=k^2$. Adding that with $x_1+x_2=-b$ brings us to
+ \begin{align*} x_1 &= \frac{k^2-b}{2}, \\ x_2 &= \frac{-k^2-b}{2}. \end{align*}
+Thus, $c=x_1\cdot x_2=\frac{b^2-k^4}{4}$. Now, $c-x_2 = r_3^2$ by Vieta's. Plugging in $c, x_2, r_3=-\frac{b}{2}$ gives
+ \[\frac{b^2-k^4}{4} + \frac{k^2+b}{2} = \frac{b^2-k^4+2k^2-2b}{4} = \frac{b^2}{4}.\]Simplifying yields $2b=k^4-2k^2=(k^2-1)^2-1 \ge -1$ by \href{https://artofproblemsolving.com/wiki/index.php?title=Trivial\_Inequality}{Trivial Inequality}. Thus, $\text{min}(b) = -\frac{1}{2}$. Since $\tilde{p}(x)$ have the maximum value to the sum of the roots, which is $-b$, we want to minimize $b$. That means that $b$ for $\tilde{p}(x)$ is $\frac{1}{2}$. That means $k^2=1$ and $c=-\frac{3}{16}$, and thus giving us $\tilde{p}(1) = 1+b+c = 1-\frac{1}{2}-\frac{3}{16} = \boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 8 (Calculus)}
+
+Let $p(x)=(x-r_1)(x-r_2)$. Then 
+ \[p(p(x)) = ((x-r_1)(x-r_2)-r_1)((x-r_1)(x-r_2)-r_2)\]As noted in other solutions, in order for $p(p(x))$ to have three (distinct) real roots, one of the roots must be repeated twice.
+
+ For a general polynomial $q(x)$ with an $n$-times repeated root $s$, write $q(x)=(x-s)^n u(x)$, where $u(x)$ is another polynomial. Taking the derivative,
+ \begin{align*} q'(x)&= n(x-s)^{n-1} u(x) + (x-s)^n u'(x) \\ &= (x-s)^{n-1} \left[nu(x) + (x-s)u'(x)\right] \end{align*}
+This shows that a repeated root / linear factor will appear in the derivative as well.
+
+ Returning to the problem, consider the derivative of $p(p(x))$, which is
+ \[[p(p(x))]' = p'(p(x))p'(x) = \left[2(x-r_1)(x-r_2)-r_1-r_2\right] \left[2x-r_1-r_2\right]\]By the observation above, the repeated root of $p(p(x))$ must be a root of this derivative. Therefore, a search through its roots will eventually give information to resolve $r_1$ and $r_2$. Setting the derivative equal to zero yields the candidate equations
+ \[2(x-r_1)(x-r_2)-r_1-r_2 = 0 \hspace{.5cm}\text{or}\hspace{.5cm} 2x-r_1-r_2 = 0\]Case 1: Starting with the first equation, if $x_0$ is a solution, then rearrange to obtain
+ \[(x_0-r_1)(x_0-r_2) = \frac{r_1+r_2}{2}\]Then
+ \begin{align*} p(p(x_0)) &= ((x_0-r_1)(x_0-r_2)-r_1)((x_0-r_1)(x_0-r_2)-r_2) \\ &= \left(\frac{r_1+r_2}{2} - r_1\right)\left(\frac{r_1+r_2}{2} - r_2\right) \\ &= \frac{1}{4}(r_1-r_2)^2 = 0 \end{align*}
+This shows that $r_1=r_2$. However, this gives $p(x) = (x-r_1)^2$ and $p(p(x)) = \left[(x-r_1)^2-r_1\right]^2$, which only has at most two distinct real roots. This contradicts the three-root condition given by the problem.
+
+ Case 2: The failure of Case 1 shows that the second equation must contain the repeated root. The solution for the second equation is readily $x_0 = (r_1+r_2)/2$. Then,
+ \[p(p(x_0)) = \left[\left(\frac{r_1+r_1}{2}-r_1\right)\left(\frac{r_1+r_2}{2}-r_2\right)-r_1\right]\left[\left(\frac{r_1+r_2}{2}-r_1\right)\left(\frac{r_1+r_2}{2}-r_2\right)-r_2\right] = 0\]Solving for $r_1$ yields four candidate equations:
+ \[r_1 = r_2\pm 2\sqrt{-r_2} \hspace{.5cm}\text{or}\hspace{.5cm} r_1 = r_2\pm 2\sqrt{1-r_2} - 2\]Since it is desired to maximise the sum of roots, add $r_2$ to both sides to consider
+ \[r_1+r_2 = 2r_2\pm 2\sqrt{-r_2} \hspace{.5cm}\text{or}\hspace{.5cm} r_1+r_2 = 2r_2\pm 2\sqrt{1-r_2} - 2\]For the first family of solutions, the "plus" version is immediately larger, so maximise
+ \[f(r_2) = 2r_2 + 2\sqrt{-r_2}\]Taking the derivative and setting equal to zero,
+ \[f'(r_2) = 2 - \frac{1}{\sqrt{-r_2}} = 0\]yielding $r_2=-1/4$ and $f(-1/4)=1/2$, which can be verified to be a maximum. Since $f(r_2)=r_1+r_2$, $r_1=3/4$. A similar calculation on the second family of solutions yields the complementary version $r_1=-1/4$ and $r_2=3/4$.
+
+ In summary, this calculation shows that $\tilde{p}(x)=\left(x+\frac{1}{4}\right)\left(x-\frac{3}{4}\right)$. Finally, $\tilde{p}(1)=\left(1+\frac{1}{4}\right)\left(1-\frac{3}{4}\right)=\boxed{\textbf{(A) } \frac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 9 (Lagrange Multipliers)}
+
+First note that $p(x)$ must have two distinct roots, else $p(p(x))$ will have fewer than $3$ roots. Let these be $a,b.$ Since $p(x)$ has $3$ real roots, and complex roots come in pairs, there must be a double root. So there must be $a_1, a_2$ s.t $p(a_1) = p(a_2) = a$ and $b_1, b_2$ s.t $p(b_1) = p(b_2) = b$ but two of $a_1, a_2, b_1, b_2$ must be the same. WLOG either $a_1 = a_2$ or $a_1 = b_1$. In the latter, case, then, 
+ \begin{align*} p(x) &= a + (x - a_1)(x - a_2) \\ p(x) &= b + (x - b_1)(x-b_2) \\ &= b + (x - a_1)(x - b_2) \\ \implies -(a_1 + a_2)x &= -(a_1 + b_2)x \\ \implies a_2 &= b_2 \end{align*}
+which implies $a = b$ which is not possible. Hence assume WLOG $a_1 = a_2.$ Then note that
+ \begin{align*} p(x) &= (x-a)(x - b) \\  &= a + (x- a_1)^2 \\ -(a + b)x &= -2a_1x, \end{align*}
+so
+ \begin{align*} p(x) &= a + \left(x - \frac{a + b}{2}\right)^2 \\ x^2 - (a + b)x + ab &= x^2 - (a + b)x + \left(a + \frac{1}{4}(a^2 + 2ab + b^2)\right) \\ 0 &= a^2 - 2ab + b^2 + 4a. \end{align*}
+The problem wants us to maximize the sum of the roots, $a + b.$ Thus define $f(a,b) = a + b, g(a,b) = a^2 - 2ab + b^2 + 4a.$ By the method of Lagrange Multipliers, we need to solve,
+ \begin{align*} \vec{\nabla} f &= \lambda \vec{\nabla} g \\ g &= 0. \end{align*}
+In the first equation, note,
+ \begin{align*} \vec{\nabla} f &= \lambda \vec{\nabla} g \\ \langle 1, 1 \rangle &= \lambda \langle 2a - 2b + 4, -2a + 2b \rangle \\ 2a - 2b + 4 &= -2a + 2b \\ a - b &= -1. \end{align*}
+Substituting into the second equation, 
+ \begin{align*} g(a,b) &= (a-b)^2 + 4a \\ 0 &= 1 + 4a \\ a &= \frac{-1}{4}, b = \frac{3}{4} \\ \tilde{p}(1) &= \left(1 + \frac{1}{4}\right)\left(1 - \frac{3}{4}\right) = \boxed{\textbf{(A) } \dfrac{5}{16}}. \end{align*}
+~Aaryabhatta1
+
+ 
+
+
+
+\textbf{Solution 10 (Solution 8 but Simpler)}
+
+Let $p(x) = (x-r)(x-s)$, having roots $r, s$. WLOG, set $r<s$. The graph of $p(x)$ will have a vertex at $(\frac{r+s}{2}, p(\frac{r+s}{2}))$. Since $p(p(x)) = 0 \iff p(x) = r$ or $p(x) = s$ has exactly 3 distinct solutions, we know that $r = p(\frac{r+s}{2})$ and $s > p(\frac{r+s}{2})$ providing 1 and 2 solutions respectively for a total of 3 (if both $r,s > p(\frac{r+s}{2})$ there will be 4 solutions and if either $r,s<p(\frac{r+s}{2})$ there will be at most 2 solutions). Then,
+ \[r = p(\frac{r+s}{2}) = \left(\frac{s-r}{2}\right)\left(\frac{r-s}{2}\right) = -\frac{(s-r)^2}{4}\]
+ \[(s-r)^2 = -4r\]
+ \[s+r = 2r\pm\sqrt{-4r}\]The negative case clearly doesn't work (giving max $s+r=0$ where $r,s=0$), leaving us with $s+r = 2r+\sqrt{-4r}$. Finding the derivative we see that $s+r$ is maximized when $r = -\frac{1}{4}$, which gives $s = \frac{3}{4}$. Plugging these back into $p(x)$ we see that $\tilde{p}(x)=(x+\frac{1}{4})(x-\frac{3}{4})$. Then $\tilde{p}(1) = \boxed{\textbf{(A) } \dfrac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 11 (AM-GM Inequality)}
+
+Because $p(x)$ is a quadratic equation with a leading coefficient of 1, let $p(x) = x^2 + ax + b$. Moreover, let $r_1, r_2, r_3$ be the roots of the equation $p(p(x)) = 0$.
+ \begin{align*}     p(r_1) &= a \\     p(r_2) &= b \\     p(r_3) &= c     \\\\     p(a) = p(b) &= p(c) = 0 \\     p(x) &= (x - \alpha)(x - \beta) \end{align*}
+The following cases are the possible graphs for $p(x)$.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_Fall_2021_25_Solution_Figure_1.png}
+                    \end{figure}
+                    The second graph is the case that could provide the maximum sum of the roots.
+ \begin{align*}     \therefore \left( x - \frac{\alpha + \beta}{2} \right)^2 + \alpha &= (x - \alpha)(x - \beta) \\     x^2 - (\alpha + \beta)x + \frac{(\alpha + \beta)^2}{4} + \alpha &= x^2 - (\alpha + \beta)x + \alpha\beta \\     \frac{(\alpha + \beta)^2}{4} + \alpha &= \alpha\beta \\     (\alpha + \beta)^2 &= 4\alpha\beta - 4\alpha = 4\alpha(\beta - 1)     \\\\     \sqrt{\alpha(\beta - 1)} &\le \frac{\alpha + (\beta - 1)}{2} \\     &leads\ to \\     \alpha &= \beta - 1.     \\\\     (\alpha + \beta)^2 &= 4\alpha^2 \\     \alpha = \beta\ &or\ 3\alpha + \beta = 0     \\\\     \therefore \alpha = -\frac{1}{4}&, \beta = \frac{3}{4}     \\\\     p(1) = (1 - \alpha)(1 - \beta) &= \frac{5}{4} \cdot \frac{1}{4} = \boxed{\textbf{(A) } \frac{5}{16}} \end{align*}
+
+
+ 
+
+
+
+\textbf{Solution 12: 2 Ways}
+
+In this solution are really 2 solutions: my first one, that I did really fast, but was basically solution 1 except I showed that $\tilde p(\tilde p(x))$ can only have real roots and neither quadratic factor can share any roots. This is too simple, however, so I had to come up with something overkill and unnecessary. So in my second solution, I explicitly list root cases, use derivatives when the optimization could be done with algebra, etc.
+
+ 
+
+
+
+\textbf{Solution 12.1: The Sane Way}
+
+Let $a$ and $b$ be the roots of $\tilde{p}(x)$. We have that 
+ \[\tilde{p}(x) = (x - a)(x - b) \implies \tilde{p}(\tilde{p}(x)) = ((x - a)(x - b) - a)((x - a)(x - b) - b).\]  For this to have $3$ real solutions, one quadratic factor must have a discriminant of $0$ and the other discriminant must be positive. From this, it can quickly be shown that $a$ and $b$ must be real: Assume $a$ and $b$ are nonreal such that $a+b$ and $ab$ are real; then neither quadratic factor can have any real roots because $\tilde p(x)=x^2-(a+b)x+ab$ must be real for all $x\in\mathbb R,$ so for all $x\in\mathbb R$ the equations $\tilde p(x)=a$ and $\tilde p(x)=b$ cannot be satisfied. Then, it quite immediately follows that for the discriminants to differ, $a\neq b$ so $p(x)=a$ and $p(x)=b$ cannot be satisfied simultaneously, which ensures neither quadratic factor shares a root. Thus, without loss of generality:
+ \[x^2 - (a + b)x + ab - a=0\text{ for 2 distinct }x\in\mathbb R \implies (a + b)^2 - 4(ab - a) = a^2 + b^2 - 2ab + 4a = 0 \implies (a - b)^2 = -4a \implies a \le 0\]and
+ \[x^2 - (a + b)x + ab - b=0\text{ for 1 }x\in\mathbb R \implies (a + b)^2 - 4(ab - b) = a^2 + b^2 - 2ab + 4b > 0 \implies (a - b)^2=-4a > -4b \implies a < b.\] Hence,
+ \[b-a=2\sqrt{-a}\implies a+b=2(a+\sqrt{-a}.)\]We want to maximize $a+\sqrt{-a}$ for $a\le 0.$ Substitute $x=\sqrt{-a}$ so we maximize $-x^2+x$ for $x\ge 0.$ We have $-x^2+x=-x(x-1)$ which is maximized at $x=\frac12\implies  a=-\frac14\implies  \max(a+\sqrt{-a})=\frac14.$ Then $\max(a+b)=\frac12,\, a=-\frac14\implies b=\frac34.$ Hence
+ \[\tilde{p}(x)=x^2-\frac12 x-\frac3{16}\implies \tilde{p}(1)=\boxed{\textbf{(A) }\frac5{16}}\]~shockfront99
+
+ 
+
+
+
+\textbf{Solution 12.2: Projectile Motion and General Inefficiency}
+
+Let $q(x)$ be a disrespectful quadratic. It follows that the graph of $q(x)$ is a convex parabola, and thus the graph of $-q(x)$ is a concave parabola. Suppose $q(x)=(x-a)(x-b)$ where $a$ and $b$ are real numbers. Then:
+ \[q(q(x))=(q(x)-a)(q(x)-b).\]The graph of $q(q(x))$ can be viewed as essentially graphing $q(t)$ where $t\in \mathrm{ran}(q).$ The following cases yield different amounts of real numbers such that $q(q(x))=0:$
+
+ \textbf{Case 1: 4 real roots} We need the equations
+ \[q(x)=a\quad\text{and}\quad q(x)=b\]to have 2 real roots each.
+
+ \textbf{Case 2: 3 real roots} We need the equations 
+ \[q(x)=a\quad\text{and}\quad q(x)=b\]to have 2 real roots and 1 real root respectively, or 1 real root and 2 real roots respectively.
+
+ \textbf{Case 3: 2 real roots} We need the equations
+ \[q(x)=a\quad\text{and}\quad q(x)=b\]to have 1 real roots each.
+
+ \textbf{Case 4: 1 real root} We need the equations
+ \[q(x)=a\quad\text{and}\quad q(x)=b\]to have 1 real root and no real roots respectively, or no real roots and 1 real root respectively.\\
+
+ \textbf{=Case 5: no real roots} We need the equations
+ \[q(x)=a\quad\text{and}\quad q(x)=b\]to both have no real roots.
+
+ 
+Case 2 is what we want. For the $q(x)=a$ and $q(x)=b$ to have different amounts of real solutions, it immediately follows that $a\neq b.$ It can also be quickly shown that to have a disrespectful polynomial, $a$ and $b$ must be real: since any disrespectful quadratic has real coefficients, all real inputs yield real outputs and so the equations $q(x)=a$ and $q(x)=b$ can't have any real solutions unless $a$ and $b$ are real. Let 
+ \[\tilde p(x)=(x-\alpha)(x-\beta),\] and fix $\alpha<\beta$ for simplicity. Define the $k$-shift of $g(x)$ as $g(x-k).$ It follows that $-\tilde p(x)$ is concave parabola such that $\max(-\tilde p)>0,$ so $-\tilde p(x)$ is the $\alpha$-shift of the path of a projectile that experiences negligible air resistance launched from a horizontal surface with constant downward acceleration. A projectile launched with speed $u$ at an angle $\theta$ to the horizontal has initial horizontal velocity $u\cos(\theta),$ on which no relevant horizontal drag, friction, or gravitational force effects and thus the projectile has horizontal position 
+ \[p_h(t)=ut\cos(\theta)\] after $t$ seconds. Then, the projectile has initial vertical velocity $u\sin(\theta)$ and has a vertical acceleration $g$ downwards and thus a total vertical velocity of $u\sin(\theta)-gt$ and a vertical position of 
+ \[p_v(t)=ut\sin(\theta)-\frac12gt^2.\]  We can now see that setting $p^\prime_v(t)=0$ yields that $t=\frac{u\sin(\theta)}{g}$ so letting $H_{\max}=\max(p_v)$ denote the maximum height,
+ \[H_{\max}=\frac{u^2\sin^2(\theta)}{g}-\frac{u^2\sin^2(\theta)}{2g}=\frac{u^2\sin^2(\theta)}{2g}.\]Then, to find the range $R$ (horizontal distance the projectile travels) we need $p_v(t)=0$ such that $t\neq0$ so
+ \[u\sin(\theta)-\frac{gt}{2}=0\implies t=\frac{2u\sin(\theta)}{g}\implies R=\frac{2u^2\sin(\theta)\cos(\theta)}{g}=\frac{u^2\sin(2\theta)}{g}.\]Now, we can see that modeling $-\tilde p(x)$ as the $\alpha$-shift of such a trajectory, $\beta-\alpha$ is the range of the projectile and so we are maximizing
+ \[f(\alpha,\theta,u)=\alpha+(\alpha+R)=2\alpha+\frac{u^2\sin(2\theta)}{g}\]subject to some constraints where $g$ is a positive real constant. Then, the equation $\tilde p(\tilde p(x))=0$ can be rewritten as
+ \[-\tilde p(\tilde p(x))=-(\tilde p(x)-\alpha)\left(\tilde p(x)-\alpha-\frac{u^2\sin(2\theta)}{g}\right).\]We now use the constraints of case 2: we either have that $\tilde p(x)-\alpha$ has 2 real roots and $\tilde p(x)-\alpha-\frac{u^2\sin(2\theta)}{g}$ has 1, or vice versa. It can be seen that
+ \[-\alpha >-\alpha -\frac{u^2\sin(2\theta)}{g}\](which was immediate from $\alpha<\beta$ anyways) so the vertex of $\tilde p(x)-\alpha-\frac{u^2\sin(2\theta)}{g}$ lies below the vertex of $\tilde p(x)-\alpha.$ Thus $\tilde p(x)-\alpha$ has to have its vertex on the $x$-axis and $\tilde p(x)-\alpha -\frac{u^2\sin(2\theta)}{g}$ has to have its vertex below the $x$-axis. Since $\tilde p(x)-\alpha$ has its vertex on the $x$-axis it must be expressible in the form $(x-h)^2=x^2-2hx+h^2$ for some real $h,$ and be zero at this $h.$ Thus we'd have
+ \[0=x^2-\left(2\alpha +\frac{u^2\sin(2\theta)}{g}\right)x+\alpha^2+\frac{\alpha u^2\sin(2\theta)}{g}-\alpha=x^2-2hx+h^2.\]Comparing linear coefficients instantly yields 
+ \[h=\alpha+\frac{u^2\sin(2\theta)}{2g}.\]Comparing our constant term and using our expression for $h$ yields
+ \[h^2=\alpha^2+\frac{u^2\sin(2\theta)}{g}+\frac{u^4\sin^2(2\theta)}{4g^2}=\alpha^2+\frac{u^2\sin(2\theta)}{g}-\alpha\implies -4\alpha=\frac{u^2\sin^2(2\theta)}{g^2}\implies 2\sqrt{-\alpha} =\frac{u\sin(2\theta)}{g}\quad (\alpha\le0).\]Thus to maximize $f$ we can just maximize
+ \[f_1(\alpha)=2\alpha+2\sqrt{-\alpha}\qquad (\alpha\le 0)\]We used common derivatives/integrals for the projectile motion but we're not doing that here for no reason
+ \[\frac{\mathrm{d} f}{\mathrm{d} \alpha}=\lim_{h\to 0}\frac{2(\alpha+h)+2\sqrt{-\alpha -h}-2\alpha -2\sqrt{-a} }{h}=2+2\lim_{h\to 0}\frac{\sqrt{-\alpha-h}-\sqrt{-\alpha}}{h}=2+2\lim_{h\to 0}\frac{-h}{h(\sqrt{-\alpha-h}+\sqrt{-\alpha})}=2-\frac{1}{\sqrt {-\alpha}}.\]So
+ \[\frac{\mathrm{d} f}{\mathrm{d} \alpha}=0\implies \frac{1}{\sqrt{-\alpha}}=2\implies \sqrt{-\alpha}=\frac12\implies \alpha=-\frac14.\]We then have that $\max(f)=\alpha+\beta=-\frac12+1=\frac12$ so $\beta =\frac34.$ Thus
+ \[\tilde p(x)=\left(x+\frac14\right)\left(x-\frac34\right)\implies\tilde p(1)=\frac54\cdot \frac14=\boxed{\textbf{(A) }\frac5{16}}\]~shockfront99
+
+ 
+
+
+\end{enumerate}

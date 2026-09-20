@@ -28,6 +28,9 @@ def get_problems_from_source(s,vers,numprob,msg = True) :
     addi = []
     for child in content.children:
         if child.name == 'h3' :
+            if "note" in child.text.lower() :
+                break
+
             temp = child.find_previous_sibling('h2')
             headline = temp.select_one('.mw-headline')
             match = re.match(PATTERN_HEADLINE_ID, headline.get('id', '')) if headline else None
@@ -51,13 +54,20 @@ def get_problems_from_source(s,vers,numprob,msg = True) :
                     else :
                         break
             break
+
     for child in content.children :
         if child.name == 'h3' :
             headline = child.select_one('.mw-headline')
             match = re.match(PATTERN_HEADLINE_ID, headline.get('id', '')) if headline else None
-            current_number = int(match.group(1)) if match else None
-            problems_by_number.setdefault(current_number, [])
-            problems_by_number[current_number] +=addi
+
+            if "note" not in child.text.lower() :
+                current_number = int(match.group(1)) if match else None
+            else :
+                problems_by_number[current_number].append(str(child))
+
+            if current_number != None :
+                problems_by_number.setdefault(current_number, [])
+                problems_by_number[current_number] +=addi
             continue
 
         if child.name == 'h2':

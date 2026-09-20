@@ -101,9 +101,9 @@ def build_tex(type,contest,year,version,output) :
     df = pd.DataFrame(data)
 
     df = df[(df['contest'] == contest)  & (df['year'] == int(year)) & (df['version'] == version)].reset_index(drop = True)
-
-    if contest == 'AIME' :
-        section_name = " ".join([contest,version,str(year)])
+    
+    if contest in ['AIME','AMC_10','AMC_12'] :
+        section_name = " ".join([contest.replace("_"," "),version.replace("_"," "),str(year)])
     else :
         section_name = " ".join([contest.replace("_"," "),str(year)])
 
@@ -118,7 +118,7 @@ def build_tex(type,contest,year,version,output) :
             sols = df.loc[i,'solutions_statement_tex']
 
             if contest not in ['USAMO','USAJMO'] :
-                ans = + "\n" + r" \textbf{Answer: }"+ df.loc[i,'answer']
+                ans = "\n" + r" \textbf{Answer: }"+ df.loc[i,'answer']
             else :
                 ans = ""
 

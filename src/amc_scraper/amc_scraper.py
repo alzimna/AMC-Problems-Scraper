@@ -53,7 +53,7 @@ def generate_tex_folder(contest, type = 'nosol') :
 
     with open(folderpath / 'copas.txt','w',encoding = 'utf-8') as f :
         for rec in data[::-1]:
-            if contest == 'AIME' :
+            if contest in ['AIME','AMC_10','AMC_12'] :
                 filename = rec['year']+"_"+rec['version']+".tex"
                 if type == "withsolution" :
                     filename = rec['year']+"_"+rec['version']+"_with_solution.tex"
