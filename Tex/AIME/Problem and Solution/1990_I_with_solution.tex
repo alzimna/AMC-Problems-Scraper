@@ -101,7 +101,6 @@ Thus $S=\sqrt{685584}=\boxed{828}$.
  Our answer is
  \[a^3-b^3=(a-b)(a^2+b^2+ab)=6\cdot 138=\boxed{828.}\]
 
- 
 
 
 
@@ -117,7 +116,6 @@ Thus $S=\sqrt{685584}=\boxed{828}$.
 
  Note: We have that $\sqrt{52 - 6\sqrt{43}} = \sqrt{43} - 3$ because we need the square root to be positive and $\sqrt{43} > 3$ since $43$ is obviously greater than $9.$ So we have $\sqrt{52 - 6\sqrt{43}} = \sqrt{43} - 3.$
 
- 
 
 
 	\item (\textit{AIME I 1990}) Let $P_1^{}$ be a regular $r~\mbox{gon}$ and $P_2^{}$ be a regular $s~\mbox{gon}$ $(r\geq s\geq 3)$ such that each interior angle of $P_1^{}$ is $\frac{59}{58}$ as large as each interior angle of $P_2^{}$. What's the largest possible value of $s_{}^{}$?
@@ -148,17 +146,9 @@ Like above, use the formula for the interior angles of a regular sided \href{htt
 
  
 $\frac{(r-2)180}{r} = \frac{59}{58} * \frac{(s-2)180}{s}$
-
- 
 $59 * 180 * (s-2) * r = 58 * 180 * (r-2) * s$
-
- 
 $59 * (rs - 2r) = 58 * (rs - 2s)$
-
- 
 $rs - 118r = -116s$
-
- 
 $rs = 118r-116s$
 
  
@@ -166,8 +156,6 @@ This equation tells us $s$ divides $118r$. If $s$ specifically divides 118 then 
 
  
 $s * s * k = 118 * s * k - 116 * s$
-
- 
 $s * k = 118 * k - 116$
 
  
@@ -175,11 +163,7 @@ Now we now k divides 116. The larger k is, the larger s will be, so we set k to 
 
  
 $s * 116 = 118 * 116 - 116$
-
- 
 $s = 118 - 1$
-
- 
 $s = \boxed{117}$
 
  
@@ -196,7 +180,6 @@ $s = \boxed{117}$
 
 As in above, we have $rs = 118r - 116s.$ This means that $rs + 116s - 118r = 0.$ Using SFFT we obtain $s(r+116) - 118(r+116) = -118 \cdot 116 \implies (s-118)(r+116) = -118 \cdot 116.$ Since $r+116$ is always positive, we know that $s-118$ must be negative. Therefore the maximum value of $s$ must be $\boxed{117}$ which indeed yields an integral value of $r.$
 
- 
 
 
 	\item (\textit{AIME I 1990}) Find the positive solution to
@@ -204,7 +187,6 @@ As in above, we have $rs = 118r - 116s.$ This means that $rs + 116s - 118r = 0.$
 
  $\frac 1{x^2-10x-29}+\frac1{x^2-10x-45}-\frac 2{x^2-10x-69}=0$
 
- 
  \textbf{Answer: }013
 
 
@@ -237,10 +219,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorizat
 
  $\textbf{ Note: the smallest integer n which has 75 factors happens to be a multiple of 75 anyway  }$
 
- 
-
-
- 
 
 
 
@@ -275,7 +253,6 @@ First, we notice that there are 45 tags left, after 25\% of the original fish ha
 
  Since $\frac{3}{70}$ of the fish in September were tagged, $\frac{45}{5n/4} = \frac{3}{70}$, where $n$ is the number of fish in May. Solving for $n$, we see that $n = \boxed{840}$
 
- 
 
 
 
@@ -286,7 +263,6 @@ Let $k$ be the number of fish in the lake on May 1, and $n$ be the number of fis
  \[n=\frac{5}{4} \cdot k\] Then, since we have 3 out of 70 fishies tagged on September 1st, we can write the equality 
  \[\frac{3}{70}=\frac{60\cdot\frac{3}{4}}{\frac{5\cdot k}{4}}\] because 25\% of the 60 fishes tagged on May 1st are now gone, for the numerator, and for the deonominator we have $n$, which we found is $\frac{5}{4}\cdot k$. Solving, we get $k= \boxed{840}$
 
- 
 
 
 	\item (\textit{AIME I 1990}) A triangle has vertices $P_{}^{}=(-8,5)$, $Q_{}^{}=(-15,-19)$, and $R_{}^{}=(1,-7)$. The equation of the bisector of $\angle P$ can be written in the form $ax+2y+c=0_{}^{}$. Find $a+c_{}^{}$.
@@ -430,29 +406,30 @@ Clearly, the marksman must shoot the left column three times, the middle column 
 
  \textbf{Remark} We can count the letter arrangements of $LLLMMRRR$ in two ways:
 
- <ol style="margin-left: 1.5em;"> <li>There are $8!$ ways to arrange $8$ distinguishable letters. However: 
+ 
+            \begin{enumerate} 
+        \item There are $8!$ ways to arrange $8$ distinguishable letters. However: 
 
- <ul style="list-style-type:square;">\item Since there are $3$ indistinguishable $L$'s, we have counted each distinct arrangement of the $L$'s for $3!$ times. 
+ 
+            \begin{itemize}<li>Since there are $3$ indistinguishable $L$'s, we have counted each distinct arrangement of the $L$'s for $3!$ times. </li>
+<li>Since there are $2$ indistinguishable $M$'s, we have counted each distinct arrangement of the $M$'s for $2!$ times. </li>
+<li>Since there are $3$ indistinguishable $R$'s, we have counted each distinct arrangement of the $R$'s for $3!$ times. </li>
 
- \item Since there are $2$ indistinguishable $M$'s, we have counted each distinct arrangement of the $M$'s for $2!$ times. 
+            \end{itemize}
+            By the Multiplication Principle, we have counted each distinct arrangement of $LLLMMRRR$ for $3!\cdot2!\cdot3!$ times. As shown in the \textbf{Solution} section, we use division to fix the overcount. The answer is $\frac{8!}{3!\cdot2!\cdot3!} = 560.$ 
 
- \item Since there are $3$ indistinguishable $R$'s, we have counted each distinct arrangement of the $R$'s for $3!$ times. 
+ Alternatively, we can use a multinomial coefficient to obtain the answer directly: $\binom{8}{3,2,3}=\frac{8!}{3!\cdot2!\cdot3!} = 560.$
 
- </ul>By the Multiplication Principle, we have counted each distinct arrangement of $LLLMMRRR$ for $3!\cdot2!\cdot3!$ times. As shown in the \textbf{Solution} section, we use division to fix the overcount. The answer is $\frac{8!}{3!\cdot2!\cdot3!} = 560.$ 
 
- Alternatively, we can use a multinomial coefficient to obtain the answer directly: $\binom{8}{3,2,3}=\frac{8!}{3!\cdot2!\cdot3!} = 560.$ 
-
- </li> 
-
- <li>First, we have $\binom83$ ways to choose any $3$ from the $8$ positions for the $L$'s.Next, we have $\binom52$ ways to choose any $2$ from the $5$ remaining positions for the $M$'s.
+        \item First, we have $\binom83$ ways to choose any $3$ from the $8$ positions for the $L$'s.Next, we have $\binom52$ ways to choose any $2$ from the $5$ remaining positions for the $M$'s.
 
  Finally, we have $\binom33$ way to choose $3$ from the $3$ remaining positions for the $R$'s.
 
  By the Multiplication Principle, the answer is $\binom83\binom52\binom33=560.$
 
- </li>
 
- </ol>
+            \end{enumerate}
+            
 
 
 	\item (\textit{AIME I 1990}) A fair coin is to be tossed $10_{}^{}$ times. Let $i/j^{}_{}$, in lowest terms, be the probability that heads never occur on consecutive tosses. Find $i+j_{}^{}$. 
@@ -525,7 +502,6 @@ We can also split the problem into casework.
 
  $\textbf{-RootThreeOverTwo}$
 
- 
 
 
 	\item (\textit{AIME I 1990}) The sets $A = \{z : z^{18} = 1\}$ and $B = \{w : w^{48} = 1\}$ are both sets of complex roots of unity.  The set $C = \{zw : z \in A ~ \mbox{and} ~ w \in B\}$ is also a set of complex roots of unity.  How many distinct elements are in $C^{}_{}$?
@@ -604,10 +580,8 @@ Let the largest of the $n-3$ consecutive positive integers be $k$. Clearly $k$ c
  So the $n-a$ consecutive positive integers are $a+2, a+3, \ldots n+1$
 
  So we have $\frac{(n+1)!}{(a+1)!} = n!$$\Longrightarrow  n+1 = (a+1)!$$\Longrightarrow  n = (a+1)! -1$
+$Kris17$
 
- $Kris17$
-
- 
 
 
 	\item (\textit{AIME I 1990}) A regular 12-gon is inscribed in a circle of radius 12.  The sum of the lengths of all sides and diagonals of the 12-gon can be written in the form
@@ -635,14 +609,16 @@ Let the largest of the $n-3$ consecutive positive integers be $k$. Clearly $k$ c
  The easiest way to do this seems to be to find the length of each of the sides and diagonals. To do such, draw the \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radii} that meet the endpoints of the sides/diagonals; this will form \href{https://artofproblemsolving.com/wiki/index.php?title=Isosceles\_triangle}{isosceles triangles}. Drawing the \href{https://artofproblemsolving.com/wiki/index.php?title=Altitude}{altitude} of those \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangles} and then solving will yield the respective lengths.
 
  
-                \begin{itemize}
-                    \item The length of each of the 12 sides is $2 \cdot 12\sin 15$. $24\sin 15 = 24\sin (45 - 30) = 24\frac{\sqrt{6} - \sqrt{2}}{4} = 6(\sqrt{6} - \sqrt{2})$.\item The length of each of the 12 diagonals that span across 2 edges is $2 \cdot 12\sin 30 = 12$ (or notice that the triangle formed is \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral}).\item The length of each of the 12 diagonals that span across 3 edges is $2 \cdot 12\sin 45 = 12\sqrt{2}$ (or notice that the triangle formed is a $45 - 45 - 90$ \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}).\item The length of each of the 12 diagonals that span across 4 edges is $2 \cdot 12\sin 60 = 12\sqrt{3}$.\item The length of each of the 12 diagonals that span across 5 edges is $2 \cdot 12\sin 75 = 24\sin (45 + 30) = 24\frac{\sqrt{6}+\sqrt{2}}{4} = 6(\sqrt{6}+\sqrt{2})$.\item The length of each of the 6 \href{https://artofproblemsolving.com/wiki/index.php?title=Diameter}{diameters} is $2 \cdot 12 = 24$.
-                \end{itemize}
-
-
-                Adding all of these up, we get $12[6(\sqrt{6} - \sqrt{2}) + 12 + 12\sqrt{2} + 12\sqrt{3} + 6(\sqrt{6}+\sqrt{2})] + 6 \cdot 24$ 
-
- $= 12(12 + 12\sqrt{2} + 12\sqrt{3} + 12\sqrt{6}) + 144 = 288 + 144\sqrt{2} + 144\sqrt{3} + 144\sqrt{6}$. Thus, the answer is $144 \cdot 5 = \boxed{720}$.
+            \begin{itemize}
+        \item The length of each of the 12 sides is $2 \cdot 12\sin 15$. $24\sin 15 = 24\sin (45 - 30) = 24\frac{\sqrt{6} - \sqrt{2}}{4} = 6(\sqrt{6} - \sqrt{2})$.
+        \item The length of each of the 12 diagonals that span across 2 edges is $2 \cdot 12\sin 30 = 12$ (or notice that the triangle formed is \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral}).
+        \item The length of each of the 12 diagonals that span across 3 edges is $2 \cdot 12\sin 45 = 12\sqrt{2}$ (or notice that the triangle formed is a $45 - 45 - 90$ \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}).
+        \item The length of each of the 12 diagonals that span across 4 edges is $2 \cdot 12\sin 60 = 12\sqrt{3}$.
+        \item The length of each of the 12 diagonals that span across 5 edges is $2 \cdot 12\sin 75 = 24\sin (45 + 30) = 24\frac{\sqrt{6}+\sqrt{2}}{4} = 6(\sqrt{6}+\sqrt{2})$.
+        \item The length of each of the 6 \href{https://artofproblemsolving.com/wiki/index.php?title=Diameter}{diameters} is $2 \cdot 12 = 24$.
+            \end{itemize}
+            Adding all of these up, we get $12[6(\sqrt{6} - \sqrt{2}) + 12 + 12\sqrt{2} + 12\sqrt{3} + 6(\sqrt{6}+\sqrt{2})] + 6 \cdot 24$
+$= 12(12 + 12\sqrt{2} + 12\sqrt{3} + 12\sqrt{6}) + 144 = 288 + 144\sqrt{2} + 144\sqrt{3} + 144\sqrt{6}$. Thus, the answer is $144 \cdot 5 = \boxed{720}$.
 
  
 
@@ -652,13 +628,10 @@ Let the largest of the $n-3$ consecutive positive integers be $k$. Clearly $k$ c
 
 A second method involves drawing a triangle connecting the center of the 12-gon to two vertices of the 12-gon.  Since the distance from the center to a vertex of the 12-gon is $12$, the Law of Cosines can be applied to this isosceles triangle, to give:
 
- $a^2 = 12^2 + 12^2 - 2\cdot 12\cdot 12\cdot \cos \theta$ 
-
- $a^2 = 2\cdot 12^2 - 2\cdot 12^2 \cos \theta$
-
- $a^2 = 2\cdot 12^2 (1 -  \cos \theta)$
-
- $a = 12\sqrt{2} \cdot \sqrt{1 - \cos \theta}$
+ $a^2 = 12^2 + 12^2 - 2\cdot 12\cdot 12\cdot \cos \theta$
+$a^2 = 2\cdot 12^2 - 2\cdot 12^2 \cos \theta$
+$a^2 = 2\cdot 12^2 (1 -  \cos \theta)$
+$a = 12\sqrt{2} \cdot \sqrt{1 - \cos \theta}$
 
  There are six lengths of sides/diagonals, corresponding to $\theta = {30^{\circ}, 60^{\circ}, 90^{\circ}, 120^{\circ}, 150^{\circ}, 180^{\circ}}$
 
@@ -669,12 +642,8 @@ A second method involves drawing a triangle connecting the center of the 12-gon 
  
 
 
- $l = 12[12\sqrt{2} (\sqrt{1 - \cos 30^{\circ}}+\sqrt{1-\cos 60^{\circ}}+\sqrt{1-\cos 90^{\circ}}+\sqrt{1-\cos 120^{\circ}}+\sqrt{1 - \cos 150^{\circ}})] + 6 \cdot 24$ 
-
- 
+ $l = 12[12\sqrt{2} (\sqrt{1 - \cos 30^{\circ}}+\sqrt{1-\cos 60^{\circ}}+\sqrt{1-\cos 90^{\circ}}+\sqrt{1-\cos 120^{\circ}}+\sqrt{1 - \cos 150^{\circ}})] + 6 \cdot 24$
 $l = 144\sqrt{2} \left(\sqrt{1 - \frac{\sqrt{3}}{2}} + \sqrt{1 - \frac{1}{2}} + \sqrt{1-0} + \sqrt{1 + \frac{1}{2}} + \sqrt{1 + \frac{\sqrt{3}}{2}}\right) + 144$
-
- 
 $l = 144\sqrt{2} \left(\sqrt{1 - \frac{\sqrt{3}}{2}} + \frac{\sqrt{2}}{2} + 1 + \frac{\sqrt{6}}{2} + \sqrt{1 + \frac{\sqrt{3}}{2}}\right) + 144$
 
  
@@ -685,21 +654,16 @@ To simplify the two nested radicals, add them, and call the sum $x$:
  Squaring both sides, the F and L part of FOIL causes the radicals to cancel, leaving:
 
  $x^2 = 2 + 2\sqrt{\left(1 - \frac{\sqrt{3}}{2}\right)\left(1 + \frac{\sqrt{3}}{2}\right)}$
-
- $x^2 = 2 + 2\sqrt{1 - \frac{3}{4}}$
-
- $x^2 = 2 + 2\sqrt{\frac{1}{4}}$
-
- $x^2 = 2 + 2\cdot\frac{1}{2}$
-
- $x = \sqrt{3}.$
+$x^2 = 2 + 2\sqrt{1 - \frac{3}{4}}$
+$x^2 = 2 + 2\sqrt{\frac{1}{4}}$
+$x^2 = 2 + 2\cdot\frac{1}{2}$
+$x = \sqrt{3}.$
 
  
 Plugging that sum $x$ back into the equation for $l$, we find
 
  $l = 144\sqrt{2} \left(\frac{\sqrt{2}}{2} + 1 + \frac{\sqrt{6}}{2} + \sqrt{3}\right) + 144$
-
- $l = 144 + 144\sqrt{2} + 144\sqrt{3} + 144\sqrt{6} + 144$.
+$l = 144 + 144\sqrt{2} + 144\sqrt{3} + 144\sqrt{6} + 144$.
 
  
 Thus, the desired quantity is $144\cdot 5 = \boxed{720}$.
@@ -779,8 +743,6 @@ We know that $9$ is very close to $10$. But we also know that for all $k \in \ma
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }594
 
 
@@ -854,8 +816,6 @@ Let $X$ be the apex of the pyramid and $M$ be the midpoint of $\overline{CD}$. W
  \begin{align*} ax + by &= 3, \\ ax^2 + by^2 &= 7, \\ ax^3 + by^3 &= 16, \\ ax^4 + by^4 &= 42. \end{align*}
 
 
-
- 
  \textbf{Answer: }020
 
 
@@ -882,7 +842,6 @@ Set $S = (x + y)$ and $P = xy$. Then the relationship
  
  \begin{eqnarray*}(ax^4 + by^4)(x + y) & = & (ax^5 + by^5) + (xy)(ax^3 + by^3) \\ (42)(S) & = & (ax^5 + by^5) + (P)(16) \\ (42)( - 14) & = & (ax^5 + by^5) + ( - 38)(16) \\ ax^5 + by^5 & = & \boxed{020}\end{eqnarray*}
 
- 
 
 
 

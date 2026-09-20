@@ -26,9 +26,8 @@ A number is divisible by four if its last two digits are divisible by 4. Thus, w
 
 \textbf{Solution 3}
 
-For this number to fit the requirements $bc$ and $ba$ must be divisible by 4. So $bc = 00, 04, 08, 12, 16, ... , 92, 96$ and so must $ba$ for each two digits of $bc$. There are two possibilities for $ba$ if $b$ is odd and three possibilities if $b$ is even. So there are $2^{2} \cdot 5+3^{2} \cdot 4 = 65$ possibilities but this overcounts when $a$ or $c = 0$. So when $bc = 00, 20, 40, 60, 80$ and the corresponding $ba$ should be removed, so $65 - 5 \cdot 3 = 50$. But we are still overcounting when $b$ is even because then $a$ can be 0. So the answer is $50 - 10 \cdot 1 = \boxed{040}$ 
+For this number to fit the requirements $bc$ and $ba$ must be divisible by 4. So $bc = 00, 04, 08, 12, 16, ... , 92, 96$ and so must $ba$ for each two digits of $bc$. There are two possibilities for $ba$ if $b$ is odd and three possibilities if $b$ is even. So there are $2^{2} \cdot 5+3^{2} \cdot 4 = 65$ possibilities but this overcounts when $a$ or $c = 0$. So when $bc = 00, 20, 40, 60, 80$ and the corresponding $ba$ should be removed, so $65 - 5 \cdot 3 = 50$. But we are still overcounting when $b$ is even because then $a$ can be 0. So the answer is $50 - 10 \cdot 1 = \boxed{040}$
 
- 
 
 
 	\item (\textit{AIME I 2012}) The terms of an arithmetic sequence add to $715$. The first term of the sequence is increased by $1$, the second term is increased by $3$, the third term is increased by $5$, and in general, the $k$th term is increased by the $k$th odd positive integer. The terms of the new sequence add to $836$. Find the sum of the first, last, and middle term of the original sequence.
@@ -46,7 +45,6 @@ If the sum of the original sequence is $\sum_{i=1}^{n} a_i$ then the sum of the 
  
 Alternatively, notice that in the original sequence, $11a_1 + 55d = 715$, from which $a_1 + 5d = 65$. Since we are tasked to find $a_1 + a_6 + a_{11} = 3(a_1 + 5d)$, the desired answer is $3 \cdot 65 = \boxed{195}.$
 
- 
 
 
 
@@ -54,7 +52,6 @@ Alternatively, notice that in the original sequence, $11a_1 + 55d = 715$, from w
 
 After the adding of the odd numbers, the total of the sequence increases by $836 - 715 = 121 = 11^2$. Since the sum of the first $n$ positive odd numbers is $n^2$, there must be $11$ terms in the sequence, so the mean of the sequence is $\dfrac{715}{11} = 65$. Since the first, last, and middle terms are centered around the mean, our final answer is $65 \cdot 3 = \boxed{195}$
 
- 
 
 
 
@@ -88,14 +85,13 @@ Call a beef meal $B,$ a chicken meal $C,$ and a fish meal $F.$ Now say the nine 
  The problem we must solve is to distribute meals $\text{BBCCCFFF}$ to orders $\text{BBCCCFFF}$ with no matches. The two people who ordered $B$'s can either both get $C$'s, both get $F$'s, or get one $C$ and one $F.$ We proceed with casework.
 
  
-                \begin{itemize}
-                    \item  If the two $B$ people both get $C$'s, then the three $F$ meals left to distribute must all go to the $C$ people. The $F$ people then get $BBC$ in some order, which gives three possibilities. The indistinguishability is easier to see here, as we distribute the $F$ meals to the $C$ people, and there is only 1 way to order this, as all three meals are the same.\item  If the two $B$ people both get $F$'s, the situation is identical to the above and three possibilities arise. \item  If the two $B$ people get $CF$ in some order, then the $C$ people must get $FFB$ and the $F$ people must get $CCB.$ This gives $2 \cdot 3 \cdot 3 = 18$ possibilities. 
-                \end{itemize}
+            \begin{itemize}
+        \item  If the two $B$ people both get $C$'s, then the three $F$ meals left to distribute must all go to the $C$ people. The $F$ people then get $BBC$ in some order, which gives three possibilities. The indistinguishability is easier to see here, as we distribute the $F$ meals to the $C$ people, and there is only 1 way to order this, as all three meals are the same.
+        \item  If the two $B$ people both get $F$'s, the situation is identical to the above and three possibilities arise. 
+        \item  If the two $B$ people get $CF$ in some order, then the $C$ people must get $FFB$ and the $F$ people must get $CCB.$ This gives $2 \cdot 3 \cdot 3 = 18$ possibilities. 
+            \end{itemize}
+            Summing across the cases we see there are $24$ possibilities, so the answer is $9 \cdot 24 = \boxed{216.}$
 
-
-                Summing across the cases we see there are $24$ possibilities, so the answer is $9 \cdot 24 = \boxed{216.}$
-
- 
 
 
 
@@ -145,8 +141,6 @@ When $1$ is subtracted from a binary number, the number of digits will remain co
 
 	\item (\textit{AIME I 2012}) The complex numbers $z$ and $w$ satisfy $z^{13} = w,$ $w^{11} = z,$ and the imaginary part of $z$ is $\sin{\frac{m\pi}{n}}$, for relatively prime positive integers $m$ and $n$ with $m<n.$ Find $n.$
 
-
- 
  \textbf{Answer: }071
 
 
@@ -155,7 +149,6 @@ When $1$ is subtracted from a binary number, the number of digits will remain co
 
 Substituting the first equation into the second, we find that $(z^{13})^{11} = z$ and thus $z^{143} = z.$ We know that $z \neq 0,$ since we are given the imaginary part of $z$, so we can divide by $z$ to get $z^{142} = 1.$ So, $z$ must be a $142$nd root of unity, and thus, by De Moivre's theorem, the imaginary part of $z$ will be of the form $\sin{\frac{2k\pi}{142}} = \sin{\frac{k\pi}{71}},$ where $k \in \{1, 2, \ldots, 70\}.$ Note that $71$ is prime and $k<71$ by the conditions of the problem, so the denominator in the argument of this value will always be $71.$ Thus, $n = \boxed{071}.$
 
- 
 
 
 
@@ -189,7 +182,6 @@ Giving the same exponent of $w$ gives $z^{143}=w^{11}=z \Longrightarrow z^{143}=
                     \end{figure}
                     
 
- 
  \textbf{Answer: }280
 
 
@@ -206,13 +198,10 @@ Say the student in the center starts out with $a$ coins, the students neighborin
 
  Solving these equations, we see that $\frac{a}{5} = \frac{b}{3} = \frac{c}{4}.$ Also, the total number of coins is $a + 5b + 10c = 3360,$ so $a + 5 \cdot \frac{3a}{5} + 10 \cdot \frac{4a}{5} = 3360 \rightarrow a = \frac{3360}{12} = \boxed{280}.$
 
- 
-                \begin{itemize}
-                    \item One way to make this more rigorous (answering the concern in Solution 3) is to let $a$, $b$, and $c$ represent the $total$ number of coins in the rings. Then, you don't care about individual people in the passing, you just know that each ring gets some coins and loses some coins, which must cancel each other out.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item One way to make this more rigorous (answering the concern in Solution 3) is to let $a$, $b$, and $c$ represent the $total$ number of coins in the rings. Then, you don't care about individual people in the passing, you just know that each ring gets some coins and loses some coins, which must cancel each other out.
+            \end{itemize}
+            
 
 
 
@@ -224,7 +213,6 @@ Since the students give the same number of gifts of coins as they receive and st
  \begin{align*} 10(4x)+5(3x)+5x &= 3360\\ 40x+15x+5x &= 3360\\ 60x &= 3360\\ x &= 56 \end{align*}
 Therefore the answer is $5(56) = \boxed{280}.$
 
- 
 
 
 
@@ -256,20 +244,16 @@ Define $x$ as the number of coins the student in the middle has. Since this stud
 
  We defined $x$ to be the number of coins that the center person has, so the answer is $x$, which is $\boxed{280}$
 
- 
 
 
 	\item (\textit{AIME I 2012}) Cube $ABCDEFGH,$ labeled as shown below, has edge length $1$ and is cut by a plane passing through vertex $D$ and the midpoints $M$ and $N$ of $\overline{AB}$ and $\overline{CG}$ respectively. The plane divides the cube into two solids. The volume of the larger of the two solids can be written in the form $\frac{p}{q},$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$
 
-
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Problem/AIME_I_2012_8_Problem_Figure_1.png}
                     \end{figure}
                     
 
- 
  \textbf{Answer: }089
 
 
@@ -278,13 +262,10 @@ Define $x$ as the number of coins the student in the middle has. Since this stud
 
 Define a coordinate system with $D$ at the origin and $C,$ $A,$ and $H$ on the $x$, $y$, and $z$ axes respectively. Then $D=(0,0,0),$ $M=(.5,1,0),$ and $N=(1,0,.5).$ It follows that the plane going through $D,$ $M,$ and $N$ has equation $2x-y-4z=0.$ Let $Q = (1,1,.25)$ be the intersection of this plane and edge $BF$ and let $P = (1,2,0).$ Now since $2(1) - 1(2) - 4(0) = 0,$ $P$ is on the plane. Also, $P$ lies on the extensions of segments $DM,$ $NQ,$ and $CB$ so the solid $DPCN = DMBCQN + MPBQ$ is a right triangular pyramid. Note also that pyramid $MPBQ$ is similar to $DPCN$ with scale factor $.5$ and thus the volume of solid $DMBCQN,$ which is one of the solids bounded by the cube and the plane, is $[DPCN] - [MPBQ] = [DPCN] - \left(\frac{1}{2}\right)^3[DPCN] = \frac{7}{8}[DPCN].$ But the volume of $DPCN$ is simply the volume of a pyramid with base $1$ and height $.5$ which is $\frac{1}{3} \cdot 1 \cdot .5 = \frac{1}{6}.$ So $[DMBCQN] = \frac{7}{8} \cdot \frac{1}{6} = \frac{7}{48}.$ Note, however, that this volume is less than $.5$ and thus this solid is the smaller of the two solids. The desired volume is then $[ABCDEFGH] - [DMBCQN] = 1 - \frac{7}{48} = \frac{41}{48} \rightarrow p+q = \boxed{089.}$
 
- 
-                \begin{itemize}
-                    \item Another way to finish after using coordinates: Take the volume of DMBCNQ as the sum of the volumes of DMBQ and DBCNQ. Then, we have the sum of the volumes of a tetrahedron and a pyramid with a trapezoidal base. Their volumes, respectively, are $\frac{1}{48}$ and $\frac{1}{8}$, giving the same answer as above. $\blacksquare$ ~mathtiger6
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Another way to finish after using coordinates: Take the volume of DMBCNQ as the sum of the volumes of DMBQ and DBCNQ. Then, we have the sum of the volumes of a tetrahedron and a pyramid with a trapezoidal base. Their volumes, respectively, are $\frac{1}{48}$ and $\frac{1}{8}$, giving the same answer as above. $\blacksquare$ ~mathtiger6
+            \end{itemize}
+            
 
 
 
@@ -345,7 +326,6 @@ Same coordinate system, but we will use domains instead of using triple integral
                     \end{figure}
                     
 
- 
 
 
 
@@ -361,8 +341,6 @@ We use a coordinate system with $C = (0,0,0)$, $D = (1,0,0)$, $M = (\frac{1}{2},
  \[2\log_{x}(2y) = 2\log_{2x}(4z) = \log_{2x^4}(8yz) \ne 0.\]
 The value of $xy^5z$ can be expressed in the form $\frac{1}{2^{p/q}},$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$
 
-
- 
  \textbf{Answer: }049
 
 
@@ -374,7 +352,6 @@ Since there are only two dependent equations given and three unknowns, the three
  \begin{align*} 2\log_{x}(2y) = 2 &\implies x=2y\\ 2\log_{2x}(4z) = 2 &\implies 2x=4z\\ \log_{2x^4}(8yz) = 2 &\implies 4x^8 = 8yz \end{align*}
 Solving these equations, we quickly see that $4x^8 = (2y)(4z) = x(2x) \rightarrow x=2^{-1/6}$ and then $y=z=2^{-1/6 - 1} = 2^{-7/6}.$Finally, our desired value is $2^{-1/6} \cdot (2^{-7/6})^5 \cdot 2^{-7/6} = 2^{-43/6}$ and thus $p+q = 43 + 6 = \boxed{049.}$
 
- 
 
 
 
@@ -427,7 +404,6 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Mediant\_theor
  Multiplying the first two equations and dividing by the third, we find $C=1.$ Thus, 
  \[xy^5z=2^{-1/6} \cdot 2^{-65/12} \cdot 2^{-19/12}=2^{-43/6} \Rightarrow p+q=\boxed{049}.\]
 
- 
 
 
 
@@ -478,7 +454,6 @@ Thus, $xy^5z = 2^{-\frac{1}{6}} y^5 2^{-7}y^{-5} = 2^{-\frac{43}{6}} = \dfrac{1}
 
 It is apparent that for a perfect square $s^2$ to satisfy the constraints, we must have $s^2 - 256 = 1000n$ or $(s+16)(s-16) = 1000n.$ Now in order for $(s+16)(s-16)$ to be a multiple of $1000,$ at least one of $s+16$ and $s-16$ must be a multiple of $5,$ and since $s+16 \not\equiv s-16 \pmod{5},$ one term must have all the factors of $5$ and thus must be a multiple of $125.$ Furthermore, each of $s+16$ and $s-16$ must have at least two factors of $2,$ since otherwise $(s+16)(s-16)$ could not possibly be divisible by $8.$ So therefore the conditions are satisfied if either $s+16$ or $s-16$ is divisible by $500,$ or equivalently if $s = 500n \pm 16.$ Counting up from $n=0$ to $n=5,$ we see that the tenth value of $s$ is $500 \cdot 5 - 16 = 2484$ and thus the corresponding element in $\mathcal{T}$ is $\frac{2484^2 - 256}{1000} = 6170 \rightarrow \boxed{170.}$
 
- 
 
 
 
@@ -542,13 +517,10 @@ From the conditions, we can let every element in $\mathcal{S}$ be written as $y^
  In whole, the values of $x$ (i.e. the elements in $\mathcal{T}$) are of the form 
  \[x=2k(125k\pm8)\] where $k$ is any integer. It can easily be seen that if $k<0$, then $x$ is negative, thus $k\geq0$. Also, note that when $k=0$, there is only one value, because one of the factors is $0$ ($k$). Thus the $10^{th}$ smallest number in the set $\mathcal{T}$ is when the $\pm$ sign takes the minus side and $k=5$, giving $6170$, so the answer is $\boxed{170}$
 
- 
 
 
 	\item (\textit{AIME I 2012}) A frog begins at $P_0 = (0,0)$ and makes a sequence of jumps according to the following rule: from $P_n = (x_n, y_n),$ the frog jumps to $P_{n+1},$ which may be any of the points $(x_n + 7, y_n + 2),$ $(x_n + 2, y_n + 7),$ $(x_n - 5, y_n - 10),$ or $(x_n - 10, y_n - 5).$ There are $M$ points $(x, y)$ with $|x| + |y| \le 100$ that can be reached by a sequence of such jumps. Find the remainder when $M$ is divided by $1000.$
 
-
- 
  \textbf{Answer: }373
 
 
@@ -559,9 +531,8 @@ First of all, it is easy to see by induction that for any $P(x,y)$ in the frog's
 
  
  \begin{align*} (x+7)+(y+2) = x+y+9 \rightarrow 3(n+3) &\text{ and } (x+7)-(y+2) = x-y+5 \rightarrow 5(m+1)\\ (x+2)+(y+7) = x+y+9 \rightarrow 3(n+3) &\text{ and } (x+2)-(y+7) = x-y-5 \rightarrow 5(m-1)\\ (x-5)+(y-10) = x+y-15 \rightarrow 3(n-5) &\text{ and } (x-5)-(y-10) = x-y+5 \rightarrow 5(m+1)\\ (x-10)+(y-5) = x+y-15 \rightarrow 3(n-5) &\text{ and } (x-10)-(y-5) = x-y-5 \rightarrow 5(m-1).\\ \end{align*}
-So we know that any point the frog can reach will satisfy $x+y = 3n$ and $x-y = 5m.$ 
-
- $\textbf{Lemma:}$ Any point $(x,y)$ such that there exists 2 integers $m$ and $n$ that satisfy $x+y = 3n$ and $x-y = 5m$ is reachable. 
+So we know that any point the frog can reach will satisfy $x+y = 3n$ and $x-y = 5m.$
+$\textbf{Lemma:}$ Any point $(x,y)$ such that there exists 2 integers $m$ and $n$ that satisfy $x+y = 3n$ and $x-y = 5m$ is reachable. 
 
  
 $\textbf{Proof:}$ Denote the total amounts of each specific transformation in the frog's jump sequence to be $a,$ $b,$ $c,$ and $d$ respectively. Then
@@ -597,8 +568,6 @@ $\textbf{Proof:}$ Denote the total amounts of each specific transformation in th
 
 	\item (\textit{AIME I 2012}) Let $\triangle ABC$ be a right triangle with right angle at $C.$ Let $D$ and $E$ be points on $\overline{AB}$ with $D$ between $A$ and $E$ such that $\overline{CD}$ and $\overline{CE}$ trisect $\angle C.$ If $\frac{DE}{BE} = \frac{8}{15},$ then $\tan B$ can be written as $\frac{m \sqrt{p}}{n},$ where $m$ and $n$ are relatively prime positive integers, and $p$ is a positive integer not divisible by the square of any prime. Find $m+n+p.$
 
-
- 
  \textbf{Answer: }018
 
 
@@ -653,8 +622,7 @@ Without loss of generality, set $CB = 1$. Then, by the Angle Bisector Theorem on
  This simplifies to $\frac{8}{15} = \frac{\sin B}{\frac{\sqrt{3}\cos B}{2} + \frac{\sin B}{2}} = \frac{\sin B}{\frac{\sqrt{3} \cos B + \sin B}{2}} = \frac{2\sin B}{\sqrt{3}\cos B + \sin B}$
 
  This gives $8\sqrt{3}\cos B+8\sin B=30\sin B$Dividing by $\cos B$, we have ${8\sqrt{3}}= 22\tan B$
-
- $\tan{B} = \frac{8\sqrt{3}}{22} = \frac{4\sqrt{3}}{11}$. Our final answer is $4 + 3 + 11 = \boxed{018}$.
+$\tan{B} = \frac{8\sqrt{3}}{22} = \frac{4\sqrt{3}}{11}$. Our final answer is $4 + 3 + 11 = \boxed{018}$.
 
  
 
@@ -697,27 +665,22 @@ Without loss of generality, set $CB = 1$. Then, by the Angle Bisector Theorem on
 \textbf{Solution 6}
 
 Let $CB = 1$, and let the feet of the altitudes from $D$ and $E$ to $\overline{CB}$ be $D'$ and $E'$, respectively. Also, let $DE = 8k$ and $EB = 15k$. We see that $BD' = 15k\cos B$ and $BE' = 23k\cos B$ by right triangles $\triangle{BDD'}$ and $\triangle{BEE'}$. From this we have that $D'E' = 8k\cos B$. With the same triangles we have $DD' = 23k\sin B$ and $EE' = 15k\sin B$. From 30-60-90 triangles $\triangle{CDD'}$ and $\triangle{CEE'}$, we see that $CD' = \frac{23k\sqrt{3}\sin B}{3}$ and $CE' = 15k\sqrt{3}\sin B$, so $D'E' = \frac{22k\sqrt{3}\sin B}{3}$. From our two values of $D'E'$ we get:$8k\cos B = \frac{22k\sqrt{3}\sin B}{3}$
-
- $\frac{\sin B}{\cos B} = \frac{8k}{\frac{22k\sqrt{3}}{3}} = \tan B$
-
- $\tan B = \frac{8}{\frac{22\sqrt{3}}{3}} = \frac{24}{22\sqrt{3}} = \frac{8\sqrt{3}}{22} = \frac{4\sqrt{3}}{11}$Our answer is then $4+3+11 = \boxed{018}$.
+$\frac{\sin B}{\cos B} = \frac{8k}{\frac{22k\sqrt{3}}{3}} = \tan B$
+$\tan B = \frac{8}{\frac{22\sqrt{3}}{3}} = \frac{24}{22\sqrt{3}} = \frac{8\sqrt{3}}{22} = \frac{4\sqrt{3}}{11}$Our answer is then $4+3+11 = \boxed{018}$.
 
  
 
 
 	\item (\textit{AIME I 2012}) Three concentric circles have radii $3,$ $4,$ and $5.$ An equilateral triangle with one vertex on each circle has side length $s.$ The largest possible area of the triangle can be written as $a + \frac{b}{c} \sqrt{d},$ where $a,$ $b,$ $c,$ and $d$ are positive integers, $b$ and $c$ are relatively prime, and $d$ is not divisible by the square of any prime. Find $a+b+c+d.$
 
-
- 
  \textbf{Answer: }041
 
 
 
 \textbf{Solution 1}
 
-Reinterpret the problem in the following manner. Equilateral triangle $ABC$ has a point $X$ on the interior such that $AX = 5,$ $BX = 4,$ and $CX = 3.$ A $60^\circ$ counter-clockwise rotation about vertex $A$ maps $X$ to $X'$ and $B$ to $C.$ 
+Reinterpret the problem in the following manner. Equilateral triangle $ABC$ has a point $X$ on the interior such that $AX = 5,$ $BX = 4,$ and $CX = 3.$ A $60^\circ$ counter-clockwise rotation about vertex $A$ maps $X$ to $X'$ and $B$ to $C.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2012_13_Solution_Figure_1.png}
@@ -734,7 +697,6 @@ Reinterpret the problem in the following manner. Equilateral triangle $ABC$ has 
 
  so our final answer is $3+4+25+9 = \boxed{041}.$
 
- 
 
 
 
@@ -815,7 +777,6 @@ We note that this question is equivalent to finding the area of an equilateral t
 
  Thus, $[ABC] = 9+\dfrac{25\sqrt{3}}{4}$, $9+25+3+4 = \boxed{41}$
 
- 
 
 
 
@@ -838,13 +799,10 @@ Label the center of the circles $X$, and proceed with Solution 1 until out of th
  
  \[\frac{s^2\sqrt{3}}{4} = \frac{\sqrt{3}}{4}(25 + 12\sqrt{3}) = 9 + \frac{25\sqrt{3}}{4}, \Longrightarrow 9+25+3+4 = \boxed{041}.\]
 
- 
 
 
 	\item (\textit{AIME I 2012}) Complex numbers $a,$ $b,$ and $c$ are zeros of a polynomial $P(z) = z^3 + qz + r,$ and $|a|^2 + |b|^2 + |c|^2 = 250.$ The points corresponding to $a,$ $b,$ and $c$ in the complex plane are the vertices of a right triangle with hypotenuse $h.$ Find $h^2.$
 
-
- 
  \textbf{Answer: }375
 
 
@@ -865,9 +823,8 @@ Note that by vieta's, the sum of the roots is $0,$ so the centroid (at (a+b+c)/3
  \[3(AO^2+BO^2)=24k^2+(AC^2+BC^2)\]Because $AC^2+BC^2=AB^2=36k^2,$ we have
  \[AO^2+BO^2=20k^2.\]Because $CO=2k,$
  \[AO^2+BO^2+CO^2=24k^2.\]By the second condition, this must be equal to $250.$ Then, $k^2=\frac{125}{12},$ and the hypotenuse squared is 
- \[(6k^2)^2=36k^2=36\left(\dfrac{125}{12}\right)=\boxed{375}.\] 
+ \[(6k^2)^2=36k^2=36\left(\dfrac{125}{12}\right)=\boxed{375}.\]
 
- 
 
 
 
@@ -881,7 +838,6 @@ Assume $q$ and $r$ are real, so at least one of $a,$ $b,$ and $c$ must be real, 
 
  Now $h$ is the distance between $b$ and $c,$ so $h = 2y = -6x$ and thus $h^2 = 36x^2 = 36 \cdot \frac{250}{24} = \boxed{375.}$
 
- 
 
 
 
@@ -890,8 +846,7 @@ Assume $q$ and $r$ are real, so at least one of $a,$ $b,$ and $c$ must be real, 
 Let the roots $a$, $b$, and $c$ each be represented by complex numbers $m + ni$, $p + qi$, and $r + ti$. By Vieta's formulas, their sum is 0. Breaking into real and imaginary components, we get:
 
  $m + p + r = 0$
-
- $n + q + t = 0$
+$n + q + t = 0$
 
  And, we know that the sum of the squares of the magnitudes of each is 250, so
 
@@ -912,8 +867,7 @@ Let the roots $a$, $b$, and $c$ each be represented by complex numbers $m + ni$,
  Taking our original equations summing to 0, and squaring each we get:
 
  $n + q = -t$; $m + p = -r$
-
- $n^2 + 2nq + q^2 = t^2$; $m^2 + 2mp + p^2 = r^2$
+$n^2 + 2nq + q^2 = t^2$; $m^2 + 2mp + p^2 = r^2$
 
  Adding, we get: 
 
@@ -983,38 +937,27 @@ As shown in the other solutions, $a+b+c = 0$.
  Let $\Vec{a}$, $\Vec{b}$, and $\Vec{c}$ be the corresponding vectors to $a$, $b$, and $c$.
 
  Thus $\Vec{a} + \Vec{b} + \Vec{c} = \Vec{0}$
-
- $\Rightarrow 0 = \Vec{0}\cdot \Vec{0} = (\Vec{a} + \Vec{b} + \Vec{c})\cdot (\Vec{a} + \Vec{b} + \Vec{c}) = \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} + 2(\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c})$
+$\Rightarrow 0 = \Vec{0}\cdot \Vec{0} = (\Vec{a} + \Vec{b} + \Vec{c})\cdot (\Vec{a} + \Vec{b} + \Vec{c}) = \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} + 2(\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c})$
 
  Now $|a|^2 + |b|^2 + |c|^2 = 250$ implies that $\lVert \Vec{a}\rVert^2 + \lVert \Vec{b}\rVert^2 + \lVert \Vec{c}\rVert^2 = 250$
-
- $\Rightarrow \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} = \lVert \Vec{a}\rVert^2 + \lVert \Vec{b}\rVert^2 + \lVert \Vec{c}\rVert^2 = 250$
+$\Rightarrow \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} = \lVert \Vec{a}\rVert^2 + \lVert \Vec{b}\rVert^2 + \lVert \Vec{c}\rVert^2 = 250$
 
  Also note that because there is a right angle at $b$, $\Vec{a} - \Vec{b}$ and $\Vec{c} - \Vec{b}$ are perpendicular.
 
  $\Rightarrow (\Vec{a} - \Vec{b})\cdot (\Vec{c} - \Vec{b}) = 0$
-
- $\Rightarrow 0 = (\Vec{a} - \Vec{b})\cdot (\Vec{c} - \Vec{b}) = \Vec{a}\cdot \Vec{c} + \Vec{b} \cdot \Vec{b} - \Vec{a} \cdot \Vec{b} - \Vec{b} \cdot \Vec{c}$
+$\Rightarrow 0 = (\Vec{a} - \Vec{b})\cdot (\Vec{c} - \Vec{b}) = \Vec{a}\cdot \Vec{c} + \Vec{b} \cdot \Vec{b} - \Vec{a} \cdot \Vec{b} - \Vec{b} \cdot \Vec{c}$
 
  Note that $h^2 = |a-c|^2$
-
- $\Rightarrow h^2 = \lVert \Vec{a} - \Vec{c} \rVert^2 = (\Vec{a} - \Vec{c})\cdot (\Vec{a} - \Vec{c}) = \Vec{a} \cdot \Vec{a} + \Vec{c}\cdot \Vec{c} - \Vec{a}\cdot \Vec{c} - \Vec{a}\cdot \Vec{c} = \Vec{a} \cdot \Vec{a} + \Vec{c}\cdot \Vec{c} - 2\Vec{a}\cdot \Vec{c}$.
+$\Rightarrow h^2 = \lVert \Vec{a} - \Vec{c} \rVert^2 = (\Vec{a} - \Vec{c})\cdot (\Vec{a} - \Vec{c}) = \Vec{a} \cdot \Vec{a} + \Vec{c}\cdot \Vec{c} - \Vec{a}\cdot \Vec{c} - \Vec{a}\cdot \Vec{c} = \Vec{a} \cdot \Vec{a} + \Vec{c}\cdot \Vec{c} - 2\Vec{a}\cdot \Vec{c}$.
 
  $\Rightarrow 0 = \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} + 2(\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c}) = 250 + 2(\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c})$
+$\Rightarrow -250 = 2(\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c})$
+$\Rightarrow -125 = \Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c}$
+$\Rightarrow -125 = -125 + 0 = (\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c}) + (\Vec{a}\cdot \Vec{c} + \Vec{b} \cdot \Vec{b} - \Vec{a} \cdot \Vec{b} - \Vec{b} \cdot \Vec{c}) = 2\Vec{a}\cdot \Vec{c} + \Vec{b} \cdot \Vec{b}$
+$\Rightarrow 125 = - \Vec{b} \cdot \Vec{b} - 2\Vec{a}\cdot \Vec{c}$
+$\Rightarrow 375 = 250 + 125 = \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} - \Vec{b} \cdot \Vec{b} - 2\Vec{a}\cdot \Vec{c} = \Vec{a}\cdot \Vec{a} + \Vec{c}\cdot \Vec{c} - 2\Vec{a}\cdot \Vec{c} = h^2$
+$\Rightarrow h^2 = \boxed{375}$
 
- $\Rightarrow -250 = 2(\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c})$
-
- $\Rightarrow -125 = \Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c}$
-
- $\Rightarrow -125 = -125 + 0 = (\Vec{a}\cdot \Vec{b} + \Vec{a}\cdot \Vec{c} + \Vec{b}\cdot \Vec{c}) + (\Vec{a}\cdot \Vec{c} + \Vec{b} \cdot \Vec{b} - \Vec{a} \cdot \Vec{b} - \Vec{b} \cdot \Vec{c}) = 2\Vec{a}\cdot \Vec{c} + \Vec{b} \cdot \Vec{b}$
-
- $\Rightarrow 125 = - \Vec{b} \cdot \Vec{b} - 2\Vec{a}\cdot \Vec{c}$
-
- $\Rightarrow 375 = 250 + 125 = \Vec{a}\cdot \Vec{a} + \Vec{b}\cdot \Vec{b} + \Vec{c}\cdot \Vec{c} - \Vec{b} \cdot \Vec{b} - 2\Vec{a}\cdot \Vec{c} = \Vec{a}\cdot \Vec{a} + \Vec{c}\cdot \Vec{c} - 2\Vec{a}\cdot \Vec{c} = h^2$
-
- $\Rightarrow h^2 = \boxed{375}$
-
- 
 
 
 
@@ -1024,7 +967,6 @@ Note that the roots of the polynomial $(a,b,c)$ must sum to $0$ due to the $z^2$
 
  Note that terms similar to $\overline{a}b + \overline{b}a$ appear in $|a-b|^2$ so we decide to sum $|a-b|^2 + |b-c|^2 + |c-a|^2$ out of intuition. Note that this corresponds to the sum of the squares of the sidelengths of the right triangle and if WLOG the $|c-a|^2$ side is the hypotenuse then our sum is equal to $2|c-a|^2 = 2h^2.$
 
- 
  \[2|a|^2 + 2|b|^2 + 2|c|^2 -a\overline{b} - \overline{a}b - b\overline{c} - \overline{b}c - c\overline{a} - \overline{c}a = 500 + 250 = 2h^2\]
 
  As a result we know that $h^2 = \boxed{375}$~SailS
@@ -1048,14 +990,18 @@ We have established $\overline{AB}\perp \overline{BC}$, which means the dot prod
 	\item (\textit{AIME I 2012}) There are $n$ mathematicians seated around a circular table with $n$ seats numbered $1,$ $2,$ $3,$ $...,$ $n$ in clockwise order. After a break they again sit around the table. The mathematicians note that there is a positive integer $a$ such that
 
 
- <ul>
-($1$) for each $k,$ the mathematician who was seated in seat $k$ before the break is seated in seat $ka$ after the break (where seat $i + n$ is seat $i$);
-</ul><ul>
-($2$) for every pair of mathematicians, the number of mathematicians sitting between them after the break, counting in both the clockwise and the counterclockwise directions, is different from either of the number of mathematicians sitting between them before the break.
-</ul>Find the number of possible values of $n$ with $1 < n < 1000.$
-
-
  
+            \begin{itemize}
+($1$) for each $k,$ the mathematician who was seated in seat $k$ before the break is seated in seat $ka$ after the break (where seat $i + n$ is seat $i$);
+
+            \end{itemize}
+            
+            \begin{itemize}
+($2$) for every pair of mathematicians, the number of mathematicians sitting between them after the break, counting in both the clockwise and the counterclockwise directions, is different from either of the number of mathematicians sitting between them before the break.
+
+            \end{itemize}
+            Find the number of possible values of $n$ with $1 < n < 1000.$
+
  \textbf{Answer: }332
 
 
@@ -1099,7 +1045,6 @@ guarantees a solution for $a$ modulo $n$ residue that is relatively prime with $
  Counting the integers $n\in\{2,3,\ldots 999\}$ that are divisible by neither $2$ nor $3$, we have
  \[998-499-333+166=\boxed{332}\]
 
- 
 
 
 \end{enumerate}

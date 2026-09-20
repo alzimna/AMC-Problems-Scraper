@@ -13,12 +13,12 @@
 It is evident that $k$ has only 2s and 3s in its prime factorization, or $k = 2^a3^b$. 
 
  
-                \begin{itemize}
-                    \item $6^6 = 2^6\cdot3^6$\item $8^8 = 2^{24}$\item $12^{12} = 2^{24}\cdot3^{12}$
-                \end{itemize}
-
-
-                The \href{https://artofproblemsolving.com/wiki/index.php?title=LCM}{LCM} of any numbers an be found by writing out their factorizations and taking the greatest power for each factor. $[6^6,8^8] = 2^{24}3^6$. Therefore $12^{12} = 2^{24}\cdot3^{12} = [2^{24}3^6,2^a3^b] = 2^{\max(24,a)}3^{\max(6,b)}$, and $b = 12$.  Since $0 \le a \le 24$, there are $\boxed{25}$ values of $k$.
+            \begin{itemize}
+        \item $6^6 = 2^6\cdot3^6$
+        \item $8^8 = 2^{24}$
+        \item $12^{12} = 2^{24}\cdot3^{12}$
+            \end{itemize}
+            The \href{https://artofproblemsolving.com/wiki/index.php?title=LCM}{LCM} of any numbers an be found by writing out their factorizations and taking the greatest power for each factor. $[6^6,8^8] = 2^{24}3^6$. Therefore $12^{12} = 2^{24}\cdot3^{12} = [2^{24}3^6,2^a3^b] = 2^{\max(24,a)}3^{\max(6,b)}$, and $b = 12$.  Since $0 \le a \le 24$, there are $\boxed{25}$ values of $k$.
 
  
 
@@ -87,7 +87,6 @@ First, note that all pairs of the form $(a,a)$, $1\le a\le30$ work.
 
  $\frac{(15)(16)}{2}+\frac{(14)(15)}{2}+\frac{(15)(16)}{2}+\frac{(14)(15)}{2}+30=480.$
 
- 
 
 
 
@@ -190,8 +189,6 @@ The equation can be rewritten as: $(x+y)^2=(|x|-20)^2$. Do casework as above.
 
 	\item (\textit{AIME I 1998}) Nine tiles are numbered $1, 2, 3, \cdots, 9,$ respectively.  Each of three players randomly selects and keeps three of the tiles, and sums those three values.  The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that all three players obtain an \href{https://artofproblemsolving.com/wiki/index.php?title=Odd}{odd} sum is $m/n,$ where $m$ and $n$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Relatively\_prime}{relatively prime} \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integers}.  Find $m+n.$
 
-
- 
  \textbf{Answer: }017
 
 
@@ -258,8 +255,6 @@ All three sums are odd if and only if two players select $OEE$ and the other sel
 
 	\item (\textit{AIME I 1998}) Given that $A_k = \frac {k(k - 1)}2\cos\frac {k(k - 1)\pi}2,$ find $\left\lvert A_{19} + A_{20} + \cdots + A_{98}\right\rvert.$
 
-
- 
  \textbf{Answer: }040
 
 
@@ -281,8 +276,6 @@ Though the problem may appear to be quite daunting, it is actually not that diff
 
 	\item (\textit{AIME I 1998}) Let $ABCD$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelogram}{parallelogram}.  Extend $\overline{DA}$ through $A$ to a point $P,$ and let $\overline{PC}$ meet $\overline{AB}$ at $Q$ and $\overline{DB}$ at $R.$  Given that $PQ = 735$ and $QR = 112,$ find $RC.$
 
-
- 
  \textbf{Answer: }308
 
 
@@ -299,23 +292,16 @@ Though the problem may appear to be quite daunting, it is actually not that diff
  There are several \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar triangles}. $\triangle PAQ\sim \triangle PDC$, so we can write the \href{https://artofproblemsolving.com/wiki/index.php?title=Proportion}{proportion}:
 
  <div style="text-align:center;">$\frac{AQ}{CD} = \frac{PQ}{PC} = \frac{735}{112 + 735 + RC} = \frac{735}{847 + RC}$
-
- </div>Also, $\triangle BRQ\sim DRC$, so:
+</div>Also, $\triangle BRQ\sim DRC$, so:
 
  <div style="text-align:center;">$\frac{QR}{RC} = \frac{QB}{CD} = \frac{112}{RC} = \frac{CD - AQ}{CD} = 1 - \frac{AQ}{CD}$
-
-
- $\frac{AQ}{CD} = 1 - \frac{112}{RC} = \frac{RC - 112}{RC}$
-
- </div>Substituting,
+$\frac{AQ}{CD} = 1 - \frac{112}{RC} = \frac{RC - 112}{RC}$
+</div>Substituting,
 
  <div style="text-align:center;">$\frac{AQ}{CD} = \frac{735}{847 + RC} = \frac{RC - 112}{RC}$
-
-
- $735RC = (RC + 847)(RC - 112)$
+$735RC = (RC + 847)(RC - 112)$
 $0 = RC^2 - 112\cdot847$
-
- </div>Thus, $RC = \sqrt{112*847} = 308$.
+</div>Thus, $RC = \sqrt{112*847} = 308$.
 
  
 
@@ -325,13 +311,10 @@ $0 = RC^2 - 112\cdot847$
 
 We have $\triangle BRQ\sim \triangle DRC$ so $\frac{112}{RC} = \frac{BR}{DR}$. We also have $\triangle BRC \sim \triangle DRP$ so $\frac{ RC}{847} = \frac {BR}{DR}$. Equating the two results gives $\frac{112}{RC} =  \frac{ RC}{847}$ and so $RC^2=112*847$ which solves to $RC=\boxed{308}$
 
- 
 
 
 	\item (\textit{AIME I 1998}) Let $n$ be the number of ordered quadruples $(x_1,x_2,x_3,x_4)$ of positive odd \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers} that satisfy $\sum_{i = 1}^4 x_i = 98.$  Find $\frac n{100}.$
 
-
- 
  \textbf{Answer: }196
 
 
@@ -363,10 +346,6 @@ Another way we can approach this problem is by imagining a line of 98 stones. We
  \[\frac{50!}{47! \cdot 3!} = 19600\] 
  \[\frac{50 * 49 * 48}{3 * 2} = 19600\] Our answer is therefore $\frac{19600}{100} = \boxed{196}$
 
- 
-
-
- 
 
 
 
@@ -398,7 +377,6 @@ Let $x = a + b$ and $y = c + d$. Then $x + y = 98$, where $x, y$ are positive ev
 
 We write the generating functions for each of the terms, and obtain $(x+x^3+x^5\cdots)^4$ as the generating function for the sum of the $4$ numbers. We seek the $x^{98}$ coefficient, or the $x^{94}$ coefficient in $(1+x^2+x^4...)^4.$ Now we simplify this as $\left(\frac{1}{1-x^2}\right)^4=\binom{3}{3} +\binom{4}{3}x^2+\binom{5}{3}x^4 \cdots$ and in general we want that the coefficient of $x^{2k}$ is $\binom{k+3}{3}.$ We see the $x^{94}$ coefficient so we let $k=47$ and so the coefficient is $\binom{50}{3}=19600$ in which $\frac{n}{100}=\boxed{196}.$
 
- 
 
 
 	\item (\textit{AIME I 1998}) Except for the first two terms, each term of the sequence $1000, x, 1000 - x,\ldots$ is obtained by subtracting the preceding term from the one before that.  The last term of the sequence is the first \href{https://artofproblemsolving.com/wiki/index.php?title=Negative}{negative} term encountered.  What positive integer $x$ produces a sequence of maximum length?
@@ -418,8 +396,6 @@ The best way to start is to just write out some terms.
 
 	\item (\textit{AIME I 1998}) Two mathematicians take a morning coffee break each day.  They arrive at the cafeteria independently, at random times between 9 a.m. and 10 a.m., and stay for exactly $m$ minutes.  The \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} that either one arrives while the other is in the cafeteria is $40 \%,$ and $m = a - b\sqrt {c},$ where $a, b,$ and $c$ are \href{https://artofproblemsolving.com/wiki/index.php?title=Positive}{positive} \href{https://artofproblemsolving.com/wiki/index.php?title=Integer}{integers}, and $c$ is not divisible by the square of any \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime}.  Find $a + b + c.$
 
-
- 
  \textbf{Answer: }087
 
 
@@ -437,8 +413,7 @@ Let the two mathematicians be $M_1$ and $M_2$.  Consider plotting the times that
 $(60-m)^2 = 36\cdot 60$
 $60 - m = 12\sqrt{15}$
 $\Rightarrow m = 60-12\sqrt{15}$
-
- </div>So the answer is $60 + 12 + 15 = 087$.
+</div>So the answer is $60 + 12 + 15 = 087$.
 
  
 
@@ -512,14 +487,12 @@ The key is to realize the significance that the figures are spheres, not \href{h
  
  \[x^2 + (r-100)^2 = (r+100)^2 \Longrightarrow x = 20\sqrt{r}\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1998_10_Solution_Figure_3.png}
                     \end{figure}
                     
-
- $x$ is the distance from one of the vertices of the octagon to the center, so the diagonal of the octagon is of length $2x =40\sqrt{r}$. We can draw another \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle} as shown above. One leg has a length of $200$. The other can be found by partitioning the leg into three sections and using $45-45-90 \triangle$s to see that the leg is $100\sqrt{2} + 200 + 100\sqrt{2} = 200(\sqrt{2} + 1)$. Pythagorean Theorem:
+$x$ is the distance from one of the vertices of the octagon to the center, so the diagonal of the octagon is of length $2x =40\sqrt{r}$. We can draw another \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle} as shown above. One leg has a length of $200$. The other can be found by partitioning the leg into three sections and using $45-45-90 \triangle$s to see that the leg is $100\sqrt{2} + 200 + 100\sqrt{2} = 200(\sqrt{2} + 1)$. Pythagorean Theorem:
 
  
  \begin{eqnarray*} (40\sqrt{r})^2 &=& 200^2 + [200(\sqrt{2}+1)]^2\\ 1600r &=& 200^2[(1 + \sqrt{2})^2 + 1] \\ r &=& 100 + 50\sqrt{2} \end{eqnarray*}
@@ -545,7 +518,6 @@ Isolate a triangle, with base length $200$ (a side of the octagon). This triangl
 
  And hence the answer is $100+50+2 = \boxed{152}$
 
- 
 
 
 	\item (\textit{AIME I 1998}) Three of the edges of a \href{https://artofproblemsolving.com/wiki/index.php?title=Cube}{cube} are $\overline{AB}, \overline{BC},$ and $\overline{CD},$ and $\overline{AD}$ is an interior \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal}.  Points $P, Q,$ and $R$ are on $\overline{AB}, \overline{BC},$ and $\overline{CD},$ respectively, so that $AP = 5, PB = 15, BQ = 15,$ and $CR = 10.$  What is the \href{https://artofproblemsolving.com/wiki/index.php?title=Area}{area} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Polygon}{polygon} that is the \href{https://artofproblemsolving.com/wiki/index.php?title=Intersection}{intersection} of \href{https://artofproblemsolving.com/wiki/index.php?title=Plane}{plane} $PQR$ and the cube?
@@ -699,8 +671,6 @@ WLOG, let $\Delta ABC$ have side length $2.$ Then, $DE = EF = FD = 1.$ We also n
 
 	\item (\textit{AIME I 1998}) If $\{a_1,a_2,a_3,\ldots,a_n\}$ is a \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} of \href{https://artofproblemsolving.com/wiki/index.php?title=Real\_numbers}{real numbers}, indexed so that $a_1 < a_2 < a_3 < \cdots < a_n,$ its \textit{complex power sum} is defined to be $a_1i + a_2i^2+ a_3i^3 + \cdots + a_ni^n,$ where $i^2 = - 1.$  Let $S_n$ be the sum of the complex power sums of all nonempty \href{https://artofproblemsolving.com/wiki/index.php?title=Subset}{subsets} of $\{1,2,\ldots,n\}.$  Given that $S_8 = - 176 - 64i$ and $S_9 = p + qi,$ where $p$ and $q$ are integers, find $\left\lvert p\right\rvert + \left\lvert q\right\rvert.$
 
-
- 
  \textbf{Answer: }368
 
 
@@ -741,12 +711,10 @@ We note that the number of subsets (for now, including the empty subset, which w
  \[p = \frac{2(a+4)(b+4)}{ab-8} = \frac{2ab+8(a+b)+32}{ab-8} \le \frac{2ab+8(ab+1)+32}{ab-8} = 10 + \frac{120}{ab-8} \le 130\]Where we see $(m,n)=(3,11)$ gives us our maximum value of $\boxed{130}$.
 
  
-                \begin{itemize}
-                    \item Note that $0 \le (a-1)(b-1)$ assumes $m,n \ge 3$, but this is clear as $\frac{2m}{m+2} = \frac{(n+2)(p+2)}{np} > 1$ and similarly for $n$.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Note that $0 \le (a-1)(b-1)$ assumes $m,n \ge 3$, but this is clear as $\frac{2m}{m+2} = \frac{(n+2)(p+2)}{np} > 1$ and similarly for $n$.
+            \end{itemize}
+            
 
 
 
@@ -760,13 +728,10 @@ Similarly as above, we solve for $p,$ but we express the denominator differently
  Then since $\dfrac{m+n+2}{(m+2)(n+2)}>\dfrac{1}{2}$ for $m=1,2,$ we fix $m=3.$
  \[\implies \dfrac{1}{p}=\dfrac{1}{2}-\dfrac{2(n+5)}{5(n+2)}=\dfrac{n-10}{10(n+2)},\] where we simply let $n=11$ to achieve $p=\boxed{130}.$
 
- 
 
 
 	\item (\textit{AIME I 1998}) Define a \textit{domino} to be an ordered pair of \textit{distinct} positive integers. A \textit{proper sequence} of dominos is a list of distinct dominos in which the first coordinate of each pair after the first equals the second coordinate of the immediately preceding pair, and in which $(i,j)$ and $(j,i)$ do not \textit{both} appear for any $i$ and $j$.  Let $D_{40}$ be the set of all dominos whose coordinates are no larger than 40.  Find the length of the longest proper sequence of dominos that can be formed using the dominos of $D_{40}.$
 
-
- 
  \textbf{Answer: }761
 
 
@@ -860,8 +825,7 @@ $\textbf{Lemma}$:
  Now consider the section where the term $(n, \frac{n}{2} - 1)$ is obtained. This occurs in sequence $\frac{n}{2} - 1$. From here, the next term must increase by $\frac{n}{2}$, and we proceed until the term $(\frac{n}{2} - 1, n - 1)$ is obtained. The next term obtained is $(\frac{n}{2}, n)$. However, the next term of this sequence is $(\frac{n}{2} + 1, 1)$. We know that this term appeared before, particularly, when we were adding by $(\frac{n}{2}-1)$. Thus, the string ends here, at the $\frac{n}{2} - 1$ cycle. We have to account for the term before we found out where the string ends, particularly, $(\frac{n}{2}, n)$, and so there are $n(\frac{n}{2} -1) + 1$ elements.
 
  Thus, the longest string obtained falls into $n(\frac{n}{2} -1) + 1$ for all even $n$. $\square$
-
- $\textbf{1998 AIME Q15}$
+$\textbf{1998 AIME Q15}$
 
  We apply the Lemma with $n = 40$ to obtain $40 \cdot(20-1) + 1 = \boxed{761}$.
 

@@ -2,8 +2,6 @@
         \begin{enumerate}
         	\item (\textit{AIME I 2020}) In $\triangle ABC$ with $AB=AC,$ point $D$ lies strictly between $A$ and $C$ on side $\overline{AC},$ and point $E$ lies strictly between $A$ and $B$ on side $\overline{AB}$ such that $AE=ED=DB=BC.$ The degree measure of $\angle ABC$ is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }547
 
 
@@ -27,8 +25,6 @@
 
 	\item (\textit{AIME I 2020}) There is a unique positive real number $x$ such that the three numbers $\log_8(2x),\log_4x,$ and $\log_2x,$ in that order, form a geometric progression with positive common ratio. The number $x$ can be written as $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }017
 
 
@@ -36,8 +32,7 @@
 \textbf{Solution 1}
 
 Since these form a geometric series, $\frac{\log_2{x}}{\log_4{x}}$ is the common ratio. Rewriting this, we get $\frac{\log_x{4}}{\log_x{2}} = \log_2{4} = 2$ by base change formula. Therefore, the common ratio is 2. Now $\frac{\log_4{x}}{\log_8{2x}} = 2 \implies \log_4{x} = 2\log_8{2} + 2\log_8{x} \implies \frac{1}{2}\log_2{x} = \frac{2}{3} + \frac{2}{3}\log_2{x}$
-
- $\implies -\frac{1}{6}\log_2{x} = \frac{2}{3} \implies \log_2{x} = -4 \implies x = \frac{1}{16}$. Therefore, $1 + 16 = \boxed{017}$.
+$\implies -\frac{1}{6}\log_2{x} = \frac{2}{3} \implies \log_2{x} = -4 \implies x = \frac{1}{16}$. Therefore, $1 + 16 = \boxed{017}$.
 
  
 
@@ -80,7 +75,6 @@ Let $r$ be the common ratio, and let $a$ be the starting term ($a=\log_{8}{(2x)}
  \[3a-1=4a \implies a=-1\] Substituting this back into the first equation gives: 
  \[8^{-1}=2x \implies 2x=\frac{1}{8} \implies x=\frac{1}{16}\] Therefore, $m+n=1+16=\boxed{017}$
 
- 
 
 
 
@@ -204,7 +198,6 @@ We note that any number in $S$ can be expressed as $a(10,000) + 2,020$ for some 
 Suppose that $N$ has the required property. Then there are positive integers $k$ and $m$ such that $N = 10^4m + 2020 = k\cdot m$. Thus $(k - 10^4)m = 2020$, which holds exactly when $m$ is a positive divisor of $2020.$ The number $2020 = 2^2\cdot 5\cdot 101$ has $12$ divisors: $1, 2, 4, 5, 10, 20, 101, 202, 404, 505, 1010$, and $2020.$ The requested sum is therefore the sum of the digits in these divisors plus $12$ times the sum of the digits in $2020,$ which is
  \[(1+2+4+5+1+2+2+4+8+10+2+4)+12\cdot4 = 93.\]
 
- 
 
 
 
@@ -224,7 +217,6 @@ The property of all numbers will fall under the category $\mathcal{N}2020$ where
 
  Here, \textbf{Juxtaposition} is directly used in terms of altering the digits, showing that we may form a specific number $O^\mathcal{x}$ and remove the digits 2, 0, 2, 0 in the same order, and the resulting number must also divide the original number $O$ given that $\mathcal{N}$ is not altered. This forms a bijection, and one can then show by special usage of juxtapositions that a special orientation forces $\mathcal{N}$ as a factor of 2020, hence proven. $\square$
 
- 
 
 
 	\item (\textit{AIME I 2020}) Six cards numbered $1$ through $6$ are to be lined up in a row. Find the number of arrangements of these six cards where one of the cards can be removed leaving the remaining five cards in either ascending or descending order.
@@ -253,9 +245,8 @@ Similar to above, a $1-1$ correspondence between ascending and descending is est
 
  $12(345)6 \rightarrow 125346, 124536$
 
- It's not hard to see that no overcount is possible, and that the cycle is either $1$ "right" or $1$ "left." Therefore, we consider how many elements we flip by. If we flip $1$ or $2$ such elements, then there is one way to cycle them. Otherwise, we have $2$ ways. Therefore, the total number of ascending is $1 + 5 + 2(4 + 3 + 2 + 1) = 26$, and multiplying by two gives $\boxed{052}.$ 
+ It's not hard to see that no overcount is possible, and that the cycle is either $1$ "right" or $1$ "left." Therefore, we consider how many elements we flip by. If we flip $1$ or $2$ such elements, then there is one way to cycle them. Otherwise, we have $2$ ways. Therefore, the total number of ascending is $1 + 5 + 2(4 + 3 + 2 + 1) = 26$, and multiplying by two gives $\boxed{052}.$
 
- 
 
 
 
@@ -272,7 +263,6 @@ We create a table with each digit in a corresponding slot. A sample one is shown
 
  Notice (like said in Solution 1) that there is symmetry between the ascending and descending placements of the cards. This means we must multiply \( 26\) by \( 2\), giving us \( 26 \times 2 =\) $\boxed{052}.$
 
- 
 
 
 
@@ -286,9 +276,8 @@ Similarly to Solution 2, we find the number of ascending arrangements and multip
 
  $\text{Case 2: }$ Each time $2$ adjacent numbers of switched, there is one overcount. For example, if we have $213456$, both $1$ or $2$ could be removed. Since there are $5$ possible switches, we need to subtract $5$ cases of overcounting.
 
- Therefore, we have $36-5-5=26$ total arrangements of ascending numbers. We multiply by two (for descending) to get the answer of $\boxed{052}.$ 
+ Therefore, we have $36-5-5=26$ total arrangements of ascending numbers. We multiply by two (for descending) to get the answer of $\boxed{052}.$
 
- 
 
 
 
@@ -306,9 +295,8 @@ Like in previous solutions, we will count the number of ascending arrangements a
 
  Similarly, when cycling 5 cards, we find 2x2=4 arrangements, and when cycling 6 cards, we find 2x1=2 arrangements.
 
- Adding, we figure out that there are 1+5+8+6+4+2=26 ascending arrangements. Multiplying by 2, we get the answer $\boxed{052}.$ 
+ Adding, we figure out that there are 1+5+8+6+4+2=26 ascending arrangements. Multiplying by 2, we get the answer $\boxed{052}.$
 
- 
 
 
 
@@ -376,7 +364,6 @@ We start with five cards in ascending order, then insert the sixth card to obtai
 
  There are $26$ arrangements in which removing one card will leave the remaining five cards in ascending order. By symmetry, there are $26$ arrangements in which removing one card will leave the remaining five cards in descending order. So, the answer is $26\cdot2=\boxed{052}.$
 
- 
 
 
 
@@ -396,7 +383,6 @@ We first realize that as long as we have an ascending sequence of $5$ numbers, w
 
 Like the previous solutions, we calculate ascending possibilities then multiply by two. Then, the configuration can look like +++++ or +-+++ (the minus can go anywhere), where "+" indicates an increase, and "-" indicates a decrease. Obviously, for the first case, the only possibility is 123456. For the second case, we can start with 123456, and then take either a card after the "-" and put it before the "-", or we could take a card before the "-" and put it after the "-". This means that every card other than the one at the position of the "-" can be used in one way. There are five ways to have 4 plus's, and one minus, and for each way, there are 5 ways to rearrange 123456 to achieve that. So, our answer is $2(5\cdot5+1)=\boxed{052}$
 
- 
 
 
 
@@ -454,7 +440,6 @@ Therefore, our answer is $\boxed{173}$.
  Let $D$ be the point of tangency of the spheres common radius $R$ centered at $O$ and $O'.$ Let $\alpha$ be the angle between $OO'$ and flat board. In the plane, perpendicular to board 
  \[DC \perp OO', DC =  \frac {4}{7} \sqrt{30}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_6_Solution_Figure_4.png}
@@ -470,8 +455,6 @@ Therefore, our answer is $\boxed{173}$.
 
 	\item (\textit{AIME I 2020}) A club consisting of $11$ men and $12$ women needs to choose a committee from among its members so that the number of women on the committee is one more than the number of men on the committee. The committee could have as few as $1$ member or as many as $23$ members. Let $N$ be the number of such committees that can be formed. Find the sum of the prime numbers that divide $N.$
 
-
- 
  \textbf{Answer: }081
 
 
@@ -499,8 +482,6 @@ We casework on the amount of men on the committee.
 
 	\item (\textit{AIME I 2020}) A bug walks all day and sleeps all night. On the first day, it starts at point $O,$ faces east, and walks a distance of $5$ units due east. Each night the bug rotates $60^\circ$ counterclockwise. Each day it walks in this new direction half as far as it walked the previous day. The bug gets arbitrarily close to the point $P.$ Then $OP^2=\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }103
 
 
@@ -620,8 +601,6 @@ The bug's bearings on each traversal are $0^\circ, 60^\circ, 120^\circ,$ and so 
 
 	\item (\textit{AIME I 2020}) Let $S$ be the set of positive integer divisors of $20^9.$ Three numbers are chosen independently and at random with replacement from the set $S$ and labeled $a_1,a_2,$ and $a_3$ in the order they are chosen. The probability that both $a_1$ divides $a_2$ and $a_2$ divides $a_3$ is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m.$
 
-
- 
  \textbf{Answer: }077
 
 
@@ -683,7 +662,6 @@ Note that the prime factorization of $20^9$ is $2^{18}\cdot5^{9}.$ The problem r
  \[\frac{\binom{k+3}3}{(k+1)^3}.\]Thus the probability that three chosen divisors of $20^9$ satisfy the divisibility requirement is
  \[\frac{\binom{12}3}{10^3}\cdot\frac{\binom{21}3}{19^3}=\frac{12\cdot11\cdot10}{6\cdot10\cdot10\cdot10}\cdot\frac{21\cdot20\cdot19}{6\cdot19\cdot19\cdot19}=\frac{77}{1805}.\]The requested numerator is $77.$
 
- 
 
 
 
@@ -700,9 +678,7 @@ Let $S$ be the set of positive integer divisors of $20^9.$ Three numbers are cho
 
 
  $\quad\bullet\ \gcd(m+n,210)=1,$
-
-
- $\quad\bullet\ m^m$ is a multiple of $n^n,$ and
+$\quad\bullet\ m^m$ is a multiple of $n^n,$ and
 
 
  $\quad\bullet\ m$ is not a multiple of $n.$
@@ -710,8 +686,6 @@ Let $S$ be the set of positive integer divisors of $20^9.$ Three numbers are cho
 
  Find the least possible value of $m+n.$
 
-
- 
  \textbf{Answer: }407
 
 
@@ -735,9 +709,8 @@ This implies that one number must be odd and the other must be even so that they
 
  So far we have $m = 22$ and $n = 11.$ We need to add more factors so that $m$ is not a multiple of $n$ but $m^m$ is a multiple of $n^n.$ Note that no matter how many additional factors we add to $m,$ it will always be a multiple of $11,$ so we have to add another factor to $n$ to make sure it doesn't divide $m.$ Again the smallest option is $11,$ so $n$ becomes $121 \implies n^n = 11^{242},$ and $m^m = 2^{22} \cdot 11^{22}.$ All we need to do now is significantly increase the value of $m$ so that the exponent on $11$ becomes larger than $242.$ If we added another factor of $11$ to $m$ then it would be a multiple of $n$ again, so the next smallest option is $13.$ Then $m = 22\cdot 13 = 286.$ $m^m$ becomes $2^{286} \cdot 11^{286} \cdot 13^{286}$ which satisfies the problem's condition.
 
- Therefore, the least possible value of $m + n$ is $121 + 286 = \boxed{407}.$ 
+ Therefore, the least possible value of $m + n$ is $121 + 286 = \boxed{407}.$
 
- 
 
 
 
@@ -772,26 +745,19 @@ Let $m$ and $n$ be positive integers where $m^m$ is a multiple of $n^n$ and $m$ 
 \textbf{Solution 5}
 
 Because $210 = 2\times3\times5\times7$, the minimum factor of $m+n$ can have is $11$.Suppose $(m,n) = 11$
-
- $\left\{ 	\begin{aligned} 		&m=11a\\ 		&n=11b 	\end{aligned} \right.$$(a,b) = 1$
-
- $11b \mid 11a$
-
- $\textbf{Min} b = 11$
-
- $n=11^2$
+$\left\{ 	\begin{aligned} 		&m=11a\\ 		&n=11b 	\end{aligned} \right.$$(a,b) = 1$
+$11b \mid 11a$
+$\textbf{Min} b = 11$
+$n=11^2$
 
  So $a>22$
 
  We only need to test several more values of a to see whether the condition $\gcd(m+n,210)=1$ fits:
 
  $a=23, 2\mid a+b = 34$
-
- $a=24, 5\mid a+b = 35$
-
- $a=25, 2\mid a+b = 36$
-
- $a=26, a+b = 37$
+$a=24, 5\mid a+b = 35$
+$a=25, 2\mid a+b = 36$
+$a=26, a+b = 37$
 
  Therefore $\textbf{Min} (m+n) = 11(a+b) = 11\times37 = \boxed{407}$
 
@@ -802,8 +768,6 @@ Because $210 = 2\times3\times5\times7$, the minimum factor of $m+n$ can have is 
 
 	\item (\textit{AIME I 2020}) For integers $a,b,c$ and $d,$ let $f(x)=x^2+ax+b$ and $g(x)=x^2+cx+d.$ Find the number of ordered triples $(a,b,c)$ of integers with absolute values not exceeding $10$ for which there is an integer $d$ such that $g(f(2))=g(f(4))=0.$
 
-
- 
  \textbf{Answer: }510
 
 
@@ -883,8 +847,6 @@ First suppose that $12 + 2a = 0$, so $a = -6$. In this case there are $21$ choic
 
 	\item (\textit{AIME I 2020}) Let $n$ be the least positive integer for which $149^n-2^n$ is divisible by $3^3\cdot5^5\cdot7^7.$ Find the number of positive integer divisors of $n.$
 
-
- 
  \textbf{Answer: }270
 
 
@@ -978,7 +940,6 @@ For the $5^5$ case, we can see that the problem implies $149^n \equiv 2^n \pmod{
 
  Putting everything together we find the smallest value of $n$ to be $n = 2^2 \cdot 3^2 \cdot 5^4 \cdot 7^5,$ so the answer is $(2+1)(2+1)(4+1)(5+1) = \boxed{270}.$
 
- 
 
 
 
@@ -1049,12 +1010,12 @@ Let $M_A$, $M_B$, $M_C$ be the midpoints of arcs $BC$, $CA$, $AB$. By Fact 5, we
  Now observe that:
 
  
-                \begin{itemize}
-                    \item $\overline{M_BM_C}$ is the perpendicular bisector of $\overline{AI}$,\item $\overline{EF}$ is the perpendicular bisector of $\overline{AD}$, and\item $ID = AI/2$.
-                \end{itemize}
-
-
-                Combining these facts gives that $\overline{EF}$ is a midline in $\triangle IM_BM_C$, which proves the claim. $\blacksquare$
+            \begin{itemize}
+        \item $\overline{M_BM_C}$ is the perpendicular bisector of $\overline{AI}$,
+        \item $\overline{EF}$ is the perpendicular bisector of $\overline{AD}$, and
+        \item $ID = AI/2$.
+            \end{itemize}
+            Combining these facts gives that $\overline{EF}$ is a midline in $\triangle IM_BM_C$, which proves the claim. $\blacksquare$
 
  To finish, we compute $[M_AM_BM_C]$, noting that $[AEF] = [DEF] = \frac{1}{4}[M_AM_BM_C]$.
 
@@ -1199,14 +1160,10 @@ The desired answer is $15+7+14=\boxed{036}$ ~Imayormaynotknowcalculus
                     Trig values we use here:
 
  $\cos A = \frac{9}{16}$
-
- $\cos \frac{A}{2} = \frac{5}{4\sqrt2}$
-
- $\sin \frac{A}{2} = \frac{\sqrt7}{4\sqrt2}$
-
- $\cos \frac{B}{2} = \frac{3}{4}$
-
- $\cos \frac{C}{2} = \frac{\sqrt7}{2\sqrt2}$
+$\cos \frac{A}{2} = \frac{5}{4\sqrt2}$
+$\sin \frac{A}{2} = \frac{\sqrt7}{4\sqrt2}$
+$\cos \frac{B}{2} = \frac{3}{4}$
+$\cos \frac{C}{2} = \frac{\sqrt7}{2\sqrt2}$
 
  
 First let the incenter be $I$. Let $M$ be the midpoint of minor arc $BC$ on $(ABC)$ and let $K$ be the foot of $M$ to $BC$.
@@ -1273,7 +1230,6 @@ Firstly, it is easy to find $BD=2,CD=3$ with angle bisector theorem.
 
  Using LOC and some trig formulas we get all those values:$cos\angle{B}=\frac{1}{8},sin\angle{B}=\frac{3\sqrt{7}}{8},cos\angle{\frac{B}{2}}=\frac{3}{4},cos\angle{\frac{{ACB}}{2}}=\frac{\sqrt{14}}{4}$Now we find the coordinates of points $A,E,F$ and we apply shoelace theorem later. Point A's coordinates is $(4*\frac{1}{8},4*\frac{3\sqrt{7}}{8})=(\frac{1}{2},\frac{3\sqrt{7}}{2})$, Let $AJ$ is perpendicular to $BC$, $tan\angle{JAD}=\frac{2-\frac{1}{2}}{\frac{3\sqrt{7}}{2}}=\frac{\sqrt{7}}{7}$, which means the slope of $FE$ is $\frac{\sqrt{7}}{7}$. Find the coordinate of $M$, it is easy, $(\frac{5}{4},\frac{3\sqrt{7}}{4})$, the function $EF$ is $y=\frac{\sqrt{7}x}{7}+\frac{4\sqrt{7}}{7}$. Now find the intersection of $EF,EB$, $\frac{\sqrt{7}x}{7}+\frac{4\sqrt{7}}{7}=\frac{\sqrt{7}x}{3}$, getting that $x=3,E(3,\sqrt{7})$Now we look at line segment $CF$, since $cos\angle{\frac{ACB}{2}}=\frac{\sqrt{14}}{4},tan\angle{\frac{ACB}{2}}=\frac{\sqrt{7}}{7}$. Since the line passes $(5,0)$, we can set the equation to get the $CF:y=-\frac{\sqrt{7}}{7}+\frac{5\sqrt{7}}{7}$, find the intersection of $CF,EF$,$-\frac{\sqrt{7}x}{7}+\frac{5\sqrt{7}}{7}=\frac{\sqrt{7}x}{7}+\frac{4\sqrt{7}}{7}$, getting that $F:(\frac{1}{2},\frac{9\sqrt{7}}{14})$and in the end we use shoelace theorem with coordinates of $A,F,E$ getting the area $\frac{15\sqrt{7}}{14}$ leads to the final answer $\boxed{36}$
 
- 
 
 
 
@@ -1296,7 +1252,6 @@ Firstly, it is easy to find $BD=2,CD=3$ with angle bisector theorem.
  We use formulas for inradius and get 
  \[\tan \beta = \frac{r}{s – AC} = \frac {\sqrt {7}}{3} , \hspace{10mm} \tan \gamma  = \frac{r}{s – AB} = \frac {\sqrt {7}}{7}.\]The area $\hspace{30mm} [\triangle DEF] = \frac{15 \sqrt 7}{14}.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2020_13_Solution_Figure_10.png}
@@ -1377,10 +1332,6 @@ Firstly, let's compute the trig value of $\angle EFI$ and $\angle FEI$. Using th
  \[\dfrac{JM}{GI}=\dfrac{JF}{IF}=\dfrac{\frac{72}{55}}{\frac{12}{55}}=6.\]Similarly, we can see that $\triangle EJH \sim \triangle EIL$, so by the side length ratios, we have
  \[\dfrac{IL}{JK}=\dfrac{EI}{JE}=\dfrac{\frac{16}{15}}{\frac{4}{15}}=4.\]So, we can see that the length of $FE$ is $\dfrac{6}{7}+\dfrac{1}{3}=\dfrac{25}{21}$ times the length of $IJ$. However, the length of $IJ$ is $\dfrac{3\sqrt{14}}{5}$, so $FE=\dfrac{5\sqrt{14}}{7}$, and the area of $\triangle AFE$ is $\dfrac{1}{2}\times \dfrac{5\sqrt{14}}{7}\times \dfrac{3\sqrt2}{2}=\dfrac{15\sqrt7}{14}.$ Thus, the desired answer is $15+7+14=\boxed{036}.$
 
- 
-
-
- 
 
 
 
@@ -1389,8 +1340,7 @@ Firstly, let's compute the trig value of $\angle EFI$ and $\angle FEI$. Using th
 Set $B$ to be at $(0, 0)$. Then $C$ will be at $(5, 0)$. Let $A$ be at $(x, y)$. Hence, 
 
  $x^{2} + y^{2} = 16$
-
- $(x - 5)^{2} + y^{2} = 36$
+$(x - 5)^{2} + y^{2} = 36$
 
  Subtracting yields
 
@@ -1438,8 +1388,6 @@ Hence, $[AEF] = \frac{15\sqrt{7}}{14}$. Then the answer is just $15 + 7 + 14 = \
 
 	\item (\textit{AIME I 2020}) Let $P(x)$ be a quadratic polynomial with complex coefficients whose $x^2$ coefficient is $1.$ Suppose the equation $P(P(x))=0$ has four distinct solutions, $x=3,4,a,b.$ Find the sum of all possible values of $(a+b)^2.$
 
-
- 
  \textbf{Answer: }085
 
 
@@ -1506,9 +1454,8 @@ Let $P(x) = (x - r)(x - s)$ where $r$ and $s$ are its roots.
  WLOG, let $P(3) = P(a) = r$ and $P(4) = P(b) = s.$ So $(3 - r)(3 - s) = r = (a - r)(a - s)$ and $(4 - r)(4 - s) = s = (b - r)(b - s).$ Subtracting $(4 - r)(4 - s) = s$ from $(3 - r)(3 - s) = r$ gives $-7 + r + s = r -s$, so $s = \frac{7}{2}.$ Plugging this back into $(4-r)(4-s) = s$ gives $r = -3.$ The coefficient of the $x^3$ term in $P(P(x))$ is $-2(r+s)$, so by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formulas}{Vieta's Formulas} the sum of the roots of $P(P(x))$ is $2$ times that of $P(x).$ We know $r + s = \frac{1}{2}$, so $3 + 4 + a + b = \frac{1}{2} \cdot 2 = 1.$ Then $a + b = -6 \implies (a + b)^2 = 36.$ 
 
  
-The requested sum is $36 + 49 =\boxed{85}.$ 
+The requested sum is $36 + 49 =\boxed{85}.$
 
- 
 
 
 
@@ -1555,14 +1502,10 @@ Let $P(x) = (x-c)^2 - d$ for some $c$, $d$.
  We can square both sides and simplify:
 
  $\sqrt{d} + d + c - \sqrt{d} + d + c - 2\sqrt{(d + c + \sqrt{d})(d + c - \sqrt{d})} = 1$
-
- $2d + 2c - 2\sqrt{(d + c + \sqrt{d})(d + c - \sqrt{d})} = 1$
-
- $\sqrt{(d + c + \sqrt{d})(d + c - \sqrt{d})} = (d+c) - \frac{1}{2}$
-
- $\sqrt{(d+c)^2 - (\sqrt{d})^2} = (d+c) - \frac{1}{2}$
-
- $\sqrt{d^2 + 2dc + c^2 - d} = (d+c) - \frac{1}{2}$
+$2d + 2c - 2\sqrt{(d + c + \sqrt{d})(d + c - \sqrt{d})} = 1$
+$\sqrt{(d + c + \sqrt{d})(d + c - \sqrt{d})} = (d+c) - \frac{1}{2}$
+$\sqrt{(d+c)^2 - (\sqrt{d})^2} = (d+c) - \frac{1}{2}$
+$\sqrt{d^2 + 2dc + c^2 - d} = (d+c) - \frac{1}{2}$
 
  Squaring both sides again gives the following:
 
@@ -1584,8 +1527,6 @@ Let $P(x) = (x-c)^2 - d$ for some $c$, $d$.
 
 	\item (\textit{AIME I 2020}) Let $\triangle ABC$ be an acute triangle with circumcircle $\omega,$ and let $H$ be the intersection of the altitudes of $\triangle ABC.$ Suppose the tangent to the circumcircle of $\triangle HBC$ at $H$ intersects $\omega$ at points $X$ and $Y$ with $HA=3,HX=2,$ and $HY=6.$ The area of $\triangle ABC$ can be written in the form $m\sqrt{n},$ where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n.$
 
-
- 
  \textbf{Answer: }058
 
 
@@ -1667,7 +1608,6 @@ Extend $\overline{AH}$ to intersect $\omega$ again at $P$. The Power of a Point 
                     \end{figure}
                     
 
- 
 
 
 
@@ -1675,7 +1615,6 @@ Extend $\overline{AH}$ to intersect $\omega$ again at $P$. The Power of a Point 
 
 Note that $\overline{BC}$ bisects $\overline{OO'}$. Using the same method from Solution 3 we find $R = \frac{21}{2\sqrt{5}}$. Let the midpoint of $\overline{BC}$ be $N$, then by the Pythagorean Theorem we have $BN^2 = OB^2 - ON^2 = R^2 - \frac{3}{2}^2$, so $BN = \frac{3\sqrt{11}}{\sqrt{5}}$. Since $h_a = 5$ we have that the area of ABC is $3\sqrt{55}$ so the answer is $3 + 55 = \boxed{58}$
 
- 
 
 
 
@@ -1736,9 +1675,8 @@ Define points $D$ and $P$ as above, and note that $AD=5$ and $DH=PD=AD - AH = 2$
 
  (see here: \href{https://brilliant.org/wiki/triangles-orthocenter/}{https://brilliant.org/wiki/triangles-orthocenter/}or \href{https://en.wikipedia.org/wiki/Altitude\_(triangle)}{https://en.wikipedia.org/wiki/Altitude\_(triangle)} Russian)
 
- $P$ lies on $\omega \implies OA = OP = R,$ 
-
- $OA = O'H, OA || O'H \implies M$ lies on $OA.$
+ $P$ lies on $\omega \implies OA = OP = R,$
+$OA = O'H, OA || O'H \implies M$ lies on $OA.$
 
  We use properties of crossing chords and get 
  \[AH \cdot HP = XH \cdot HY = 2 \cdot 6 \implies HP = 4, AP = AH + HP = 7.\]We use properties of radius perpendicular chord and get

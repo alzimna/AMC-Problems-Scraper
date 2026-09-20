@@ -1,0 +1,426 @@
+[
+    {
+        "id": "AMC 12 12A 2025",
+        "contest": "AMC 12",
+        "year": "2025",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2025_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2025",
+        "contest": "AMC 12",
+        "year": "2025",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2025_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2024",
+        "contest": "AMC 12",
+        "year": "2024",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2024_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2024",
+        "contest": "AMC 12",
+        "year": "2024",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2024_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2023",
+        "contest": "AMC 12",
+        "year": "2023",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2023_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2023",
+        "contest": "AMC 12",
+        "year": "2023",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2023_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2022",
+        "contest": "AMC 12",
+        "year": "2022",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2022_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2022",
+        "contest": "AMC 12",
+        "year": "2022",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2022_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A_Fall 2021",
+        "contest": "AMC 12",
+        "year": "2021",
+        "version": "12A_Fall",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2021_Fall_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B_Fall 2021",
+        "contest": "AMC 12",
+        "year": "2021",
+        "version": "12B_Fall",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2021_Fall_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2021",
+        "contest": "AMC 12",
+        "year": "2021",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2021_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2021",
+        "contest": "AMC 12",
+        "year": "2021",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2021_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2020",
+        "contest": "AMC 12",
+        "year": "2020",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2020_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2020",
+        "contest": "AMC 12",
+        "year": "2020",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2020_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2019",
+        "contest": "AMC 12",
+        "year": "2019",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2019_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2019",
+        "contest": "AMC 12",
+        "year": "2019",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2019_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2018",
+        "contest": "AMC 12",
+        "year": "2018",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2018_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2018",
+        "contest": "AMC 12",
+        "year": "2018",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2018_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2017",
+        "contest": "AMC 12",
+        "year": "2017",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2017_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2017",
+        "contest": "AMC 12",
+        "year": "2017",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2017_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2016",
+        "contest": "AMC 12",
+        "year": "2016",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2016_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2016",
+        "contest": "AMC 12",
+        "year": "2016",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2016_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2015",
+        "contest": "AMC 12",
+        "year": "2015",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2015_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2015",
+        "contest": "AMC 12",
+        "year": "2015",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2015_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2014",
+        "contest": "AMC 12",
+        "year": "2014",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2014_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2014",
+        "contest": "AMC 12",
+        "year": "2014",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2014_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2013",
+        "contest": "AMC 12",
+        "year": "2013",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2013_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2013",
+        "contest": "AMC 12",
+        "year": "2013",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2013_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2012",
+        "contest": "AMC 12",
+        "year": "2012",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2012_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2012",
+        "contest": "AMC 12",
+        "year": "2012",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2012_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2011",
+        "contest": "AMC 12",
+        "year": "2011",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2011_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2011",
+        "contest": "AMC 12",
+        "year": "2011",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2011_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2010",
+        "contest": "AMC 12",
+        "year": "2010",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2010_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2010",
+        "contest": "AMC 12",
+        "year": "2010",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2010_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2009",
+        "contest": "AMC 12",
+        "year": "2009",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2009_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2009",
+        "contest": "AMC 12",
+        "year": "2009",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2009_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2008",
+        "contest": "AMC 12",
+        "year": "2008",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2008_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2008",
+        "contest": "AMC 12",
+        "year": "2008",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2008_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2007",
+        "contest": "AMC 12",
+        "year": "2007",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2007_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2007",
+        "contest": "AMC 12",
+        "year": "2007",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2007_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2006",
+        "contest": "AMC 12",
+        "year": "2006",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2006_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2006",
+        "contest": "AMC 12",
+        "year": "2006",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2006_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2005",
+        "contest": "AMC 12",
+        "year": "2005",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2005_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2005",
+        "contest": "AMC 12",
+        "year": "2005",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2005_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2004",
+        "contest": "AMC 12",
+        "year": "2004",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2004_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2004",
+        "contest": "AMC 12",
+        "year": "2004",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2004_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2003",
+        "contest": "AMC 12",
+        "year": "2003",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2003_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2003",
+        "contest": "AMC 12",
+        "year": "2003",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2003_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12A 2002",
+        "contest": "AMC 12",
+        "year": "2002",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2002_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2002",
+        "contest": "AMC 12",
+        "year": "2002",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2002_AMC_12B"
+    },
+    {
+        "id": "AMC 12 12P 2002",
+        "contest": "AMC 12",
+        "year": "2002",
+        "version": "12P",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2002_AMC_12P"
+    },
+    {
+        "id": "AMC 12 12 2001",
+        "contest": "AMC 12",
+        "year": "2001",
+        "version": "12",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2001_AMC_12"
+    },
+    {
+        "id": "AMC 12 12 2000",
+        "contest": "AMC 12",
+        "year": "2000",
+        "version": "12",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2000_AMC_12"
+    }
+]

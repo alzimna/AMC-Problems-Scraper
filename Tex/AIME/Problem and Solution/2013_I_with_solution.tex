@@ -22,13 +22,22 @@ Let $r$ represent the rate Tom swims in miles per minute. Then we have
 	\item (\textit{AIME I 2013}) Find the number of five-digit positive integers, $n$, that satisfy the following conditions:
 
 
- <ul>
+ 
+            \begin{itemize}
 (a) the number $n$ is divisible by $5,$
-</ul><ul>
+
+            \end{itemize}
+            
+            \begin{itemize}
 (b) the first and last digits of $n$ are equal, and
-</ul><ul>
+
+            \end{itemize}
+            
+            \begin{itemize}
 (c) the sum of the digits of $n$ is divisible by $5.$
-</ul>
+
+            \end{itemize}
+            
  \textbf{Answer: }200
 
 
@@ -37,7 +46,6 @@ Let $r$ represent the rate Tom swims in miles per minute. Then we have
 
 The number takes a form of $\overline{5xyz5}$, in which $5|(x+y+z)$. Let $x$ and $y$ be arbitrary digits. For each pair of $x,y$, there are exactly two values of $z$ that satisfy the condition of $5|(x+y+z)$. Therefore, the answer is $10\times10\times2=\boxed{200}$
 
- 
 
 
 
@@ -82,12 +90,6 @@ Again, from the first two conditions we know the number takes the form $\overlin
 
 	\item (\textit{AIME I 2013}) Let $ABCD$ be a square, and let $E$ and $F$ be points on $\overline{AB}$ and $\overline{BC},$ respectively. The line through $E$ parallel to $\overline{BC}$ and the line through $F$ parallel to $\overline{AB}$ divide $ABCD$ into two squares and two nonsquare rectangles. The sum of the areas of the two squares is $\frac{9}{10}$ of the area of square $ABCD.$ Find $\frac{AE}{EB} + \frac{EB}{AE}.$
 
-
- 
-
-
-
- 
  \textbf{Answer: }018
 
 
@@ -110,10 +112,6 @@ Let the side of the square be $1$.  Therefore the area of the square is also $1$
 
  $\frac{\frac{9}{10}}{\frac{1}{20}} \implies \boxed{018}$
 
- 
-
-
- 
 
 
 
@@ -121,7 +119,6 @@ Let the side of the square be $1$.  Therefore the area of the square is also $1$
 
 Let $AE$ be $x$, and $EB$ be $1$. Then we are looking for the value $x+\frac{1}{x}$. The areas of the smaller squares add up to $9/10$ of the area of the large square, $(x+1)^2$. Cross multiplying and simplifying we get $x^2-18x+1=0$. Rearranging, we get $x+\frac{1}{x}=\boxed{018}$
 
- 
 
 
 
@@ -145,7 +142,6 @@ Let $AE = x$ and $BE = y$. From this, we get $AB = x + y$. The problem is asking
 
 After we get the polynomial $x^2 - 18x + 1,$ we want to find $x + \frac 1 {x}.$ Since the product of the roots of the polynomial is 1, the roots of the polynomial are simply $x, \frac 1 {x}.$ Hence $x + \frac 1 {x}$ is just $18$ by Vieta's formula, or $\boxed{018}$
 
- 
 
 
 
@@ -155,7 +151,6 @@ We have the equation $x^2 + y^2$ = $\frac {9}{10} \cdot (x+y)^2$. We get $x^2 + 
 
  We have $9 + 4 \sqrt 5 + \frac {1}{9+4 \sqrt 5}$. Rationalizing the denominator gives us $9 + 4 \sqrt 5 + \frac {9 - 4 \sqrt 5}{81-80} = (9 + 4 \sqrt 5) + (9 - 4 \sqrt 5) = 18$. Our answer is $\boxed {018}$
 
- 
 
 
 
@@ -184,8 +179,6 @@ You can call the side length of the square 1. Call length AE x and solve the qua
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }429
 
 
@@ -198,7 +191,6 @@ When the array appears the same after a 90-degree rotation, the top formation mu
 
  $\frac{3}{\binom{13}{5}}$ = $\frac{1}{429}$ , so \textit{$n$} = $\boxed{429}$
 
- 
 
 
 
@@ -206,7 +198,6 @@ When the array appears the same after a 90-degree rotation, the top formation mu
 
 By the Pigeonhole Principle, if the middle square isn't blue, than any 90 degree rotation won't map onto itself because one extra blue square will be mapped onto a red square. Therefore, we have to have 1 blue square in the middle and 1 blue square in each of the 4 seperate containers(think if there is two in each a 90 degree rotation wouldn't move it to the other side). There are 3 places in each of the seperate tilings for it and everything else will be red. Therefore, there are only 3 good combinations. Now the total amount is 13choose5, so we lead to the answer: $\frac{3}{\binom{13}{5}}$ = $\frac{1}{429}$ , so \textit{$n$} = $\boxed{429}$
 
- 
 
 
 
@@ -357,7 +348,6 @@ Adding all these cases and dividing by the total number of ways yields $\frac{12
 
  \[\dfrac{\frac{9!}{(3-3)!4!5!} + \frac{9!}{3!(4-3)!5!} + \frac{9!}{3!4!(5-3)!}}{\frac{12!}{3!4!5!}} = \dfrac{3}{44}\implies\boxed{47}.\]
 
- 
 
 
 	\item (\textit{AIME I 2013}) A rectangular box has width $12$ inches, length $16$ inches, and height $\frac{m}{n}$ inches, where $m$ and $n$ are relatively prime positive integers. Three faces of the box meet at a corner of the box. The center points of those three faces are the vertices of a triangle with an area of $30$ square inches. Find $m+n$.
@@ -406,13 +396,10 @@ We may use vectors. Let the height of the box be $2h$. Without loss of generalit
  \[h=3.6\]
  \[2h=7.2\]
 
- 
  \[2h=36/5\]
 
- 
  \[m+n=\boxed{041}\]
 
- 
 
 
 
@@ -458,16 +445,11 @@ Let half the height be $a$ (we want to find $2a$), then we see that the three si
 
  You get $\sqrt{25a^2+576} = 30$, giving $a=\frac{18}{5}$. However, we must find $2a=\frac{36}{5}$ so our answer is $\boxed{041}$
 
- 
-                \begin{itemize}
-                    \item Note: You can also find the cosine of the angle formed by the sides $\sqrt{a^2+64}$ and $\sqrt{a^2+36}$ using vectors. Letting the midpoint of the height of the rectangle that we are using be the origin, it follows that the 2 sides forming the angle can be represented as $<8,0,k>$ and $<0,6,k>$. Using the formula $\cos(\theta)=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}$, we obtain $\cos(\theta)=\frac{a^2}{\sqrt{(a^2+36)(a^2+64)}}$.
-                \end{itemize}
+            \begin{itemize}
+        \item Note: You can also find the cosine of the angle formed by the sides $\sqrt{a^2+64}$ and $\sqrt{a^2+36}$ using vectors. Letting the midpoint of the height of the rectangle that we are using be the origin, it follows that the 2 sides forming the angle can be represented as $<8,0,k>$ and $<0,6,k>$. Using the formula $\cos(\theta)=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}$, we obtain $\cos(\theta)=\frac{a^2}{\sqrt{(a^2+36)(a^2+64)}}$.
+            \end{itemize}
+            
 
-
-                
-
-
- 
 
 
 
@@ -489,7 +471,6 @@ Let $x$ be $\frac12$ the height of the box. We will solve for $x$ and then multi
 
  Now multiplying by $2$, we get that the height is $\frac{36}5$, and $m+n=36+5=\boxed{041}$
 
- 
 
 
 
@@ -506,19 +487,14 @@ Let the rectangular prism be $ABCDEFGH$ with $AB=12$, $AC=16$, and $AD=\alpha$ e
  
  \[\frac{4}{5}\alpha=\frac{1}{\sqrt{\frac{1}{12^2}+\frac{1}{16^2}+\frac{1}{\alpha^2}}}\]
 
- 
  \[\sqrt{\frac{1}{12^2}+\frac{1}{16^2}+\frac{1}{\alpha^2}}=\frac{5}{4\alpha}\]
 
- 
  \[\frac{12^2+16^2}{12^2\cdot16^2}+\frac{1}{\alpha^2}=\frac{25}{16\alpha^2}\]
 
- 
  \[\frac{20^2}{192^2}=\frac{9}{16\alpha^2}\]
 
- 
  \[\frac{20}{192}=\frac{3}{4\alpha}\]
 
- 
  \[\alpha=\frac{3}{4}\cdot\frac{192}{20}=\frac{36}{5}\]
 
  Thus the answer is $36+5=\boxed{041}$.
@@ -587,8 +563,6 @@ We know that the domain of $\text{arcsin}$ is $[-1, 1]$, so
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }113
 
 
@@ -629,26 +603,20 @@ Let $P$ and $Q$ be the points on $\overline{AB}$ and $\overline{AC}$, respective
  Using the Law of Cosines on $BPD$:
 
  $a^{2} = (12 - a)^{2} + 9^{2} - 2 \times (12 - a) \times 9 \times \cos{60}$
-
- $a^{2} = 144 - 24a + a^{2} + 81 - 108 + 9a$
-
- $a = \frac{39}{5}$
+$a^{2} = 144 - 24a + a^{2} + 81 - 108 + 9a$
+$a = \frac{39}{5}$
 
  Using the Law of Cosines on $CQD$:
 
  $b^{2} = (12 - b)^{2} +3^{2} - 2 \times (12 - b) \times 3 \times \cos{60}$
-
- $b^{2} = 144 - 24b + b^{2} + 9 - 36 + 3b$
-
- $b = \frac{39}{7}$
+$b^{2} = 144 - 24b + b^{2} + 9 - 36 + 3b$
+$b = \frac{39}{7}$
 
  Using the Law of Cosines on $DPQ$:
 
  $x^{2} = a^{2} + b^{2} - 2ab \cos{60}$
-
- $x^{2} = (\frac{39}{5})^2 + (\frac{39}{7})^2 - (\frac{39}{5} \times \frac{39}{7})$
-
- $x = \frac{39 \sqrt{39}}{35}$
+$x^{2} = (\frac{39}{5})^2 + (\frac{39}{7})^2 - (\frac{39}{5} \times \frac{39}{7})$
+$x = \frac{39 \sqrt{39}}{35}$
 
  The solution is $39 + 39 + 35 = \boxed{113}$.
 
@@ -661,8 +629,7 @@ Let $P$ and $Q$ be the points on $\overline{AB}$ and $\overline{AC}$, respective
 Proceed with the same labeling as in Solution 1. 
 
  $\angle B = \angle C = \angle A = \angle PDQ = 60^\circ$
-
- $\angle PDB + \angle PDQ + \angle QDC = \angle QDC + \angle CQD + \angle C = 180^\circ$
+$\angle PDB + \angle PDQ + \angle QDC = \angle QDC + \angle CQD + \angle C = 180^\circ$
 
  Therefore, $\angle PDB = \angle CQD$.
 
@@ -677,10 +644,8 @@ Proceed with the same labeling as in Solution 1.
  Using the Law of Cosines on $APQ$:
 
  $x^{2} = a^{2} + b^{2} - 2ab \cos{60}$
-
- $x^{2} = (\frac{39}{5})^2 + (\frac{39}{7})^2 - (\frac{39}{5} \times \frac{39}{7})$
-
- $x = \frac{39 \sqrt{39}}{35}$
+$x^{2} = (\frac{39}{5})^2 + (\frac{39}{7})^2 - (\frac{39}{5} \times \frac{39}{7})$
+$x = \frac{39 \sqrt{39}}{35}$
 
  The solution is $39 + 39 + 35 = \boxed{113}$.
 
@@ -817,7 +782,6 @@ Thanks to Solution 1 for the diagram below:
  Since the problem asks for $m+n+p$ when the length is written as $\frac{m\sqrt{p}}{n}$, we have
  \[m+n+p=39+39+35=\boxed{113}.\]
 
- 
 
 
 	\item (\textit{AIME I 2013}) There are nonzero integers $a$, $b$, $r$, and $s$ such that the complex number $r+si$ is a zero of the polynomial $P(x)={x}^{3}-a{x}^{2}+bx-65$. For each possible combination of $a$ and $b$, let ${p}_{a,b}$ be the sum of the zeros of $P(x)$. Find the sum of the ${p}_{a,b}$'s for all possible combinations of $a$ and $b$.
@@ -845,10 +809,8 @@ Since $r+si$ is a root, by the Complex Conjugate Root Theorem, $r-si$ must be th
  So matching coefficients, we obtain
 
  $q(r^2 + s^2) = 65$
-
- $b = r^2 + s^2 + 2rq$
-
- $a = q + 2r$
+$b = r^2 + s^2 + 2rq$
+$a = q + 2r$
 
  By Vieta's each ${p}_{a,b} = a$ so we just need to find the values of $a$ in each pair.We proceed by determining possible values for $q$, $r$, and $s$ and using these to determine $a$ and $b$.
 
@@ -893,10 +855,8 @@ $N$ must be some multiple of $\text{lcm}(14, 15, 16)= 2^{4}\cdot 3\cdot 5\cdot 7
  We have the following three modulo equations:
 
  $nk\equiv 3\pmod{9}$
-
- $nk\equiv 3\pmod{11}$
-
- $nk\equiv 3\pmod{13}$
+$nk\equiv 3\pmod{11}$
+$nk\equiv 3\pmod{13}$
 
  To solve the equations, you can notice the answer must be of the form $9\cdot 11\cdot 13\cdot m + 3$ where $m$ is an integer. 
 
@@ -971,10 +931,6 @@ As the problem stated, the number of boxes is definitely a multiple of $lcm(14,1
 
  So the number of balls is $1680\cdot 131=2^4\cdot 3\cdot 5\cdot 7 \cdot 131$, the desired value is $2+3+5+7+131=\boxed{148}$
 
- 
-
-
- 
 
 
 
@@ -990,7 +946,6 @@ From part (a), we know that $2^4\cdot3\cdot5\cdot7 | N$. From part (b), we know 
  \[1680k \equiv 3k \equiv 3 \pmod {13}\]
  \[k \equiv 1 \pmod{13}\]CRT on the first and the third one results in $k \equiv 4 \pmod {117}$. Now doing the second one and the one we just made, $k \equiv 131 \pmod{1287}$. Thus, the smallest value that works for $k = 131$. Thus $N = 2^4\cdot3\cdot5\cdot7\cdot131$ $2+3+5+7+131 = \boxed{148}$
 
- 
 
 
 
@@ -1056,7 +1011,6 @@ Angle chasing yields that both triangles $PAF$ and $PQR$ are $75$-$60$-$45$ tria
 
  Evaluating and reducing, we get $\frac{9 + 5\sqrt{3}}{4},$thus the answer is $\boxed{021}$
 
- 
 
 
 
@@ -1078,14 +1032,12 @@ Angle chasing yields that both triangles $PAF$ and $PQR$ are $75$-$60$-$45$ tria
  $\overline{Pa}=\sqrt{3}\overline{Aa}$ (30-60-90 Right Triangle)
 
  $\overline{PA}=2\overline{Aa}$
-
- $\overline{Aa}+\overline{aF}=1$
+$\overline{Aa}+\overline{aF}=1$
 
  SOLVING:$\overline{Aa}+\sqrt{3}\overline{Aa}=1$
 
  so $\overline{Aa}(\sqrt{3}+1)=1$
-
- $\overline{Aa}=\frac{1}{\sqrt{3}+1}=\frac{\sqrt{3}-1}{2}$
+$\overline{Aa}=\frac{1}{\sqrt{3}+1}=\frac{\sqrt{3}-1}{2}$
 
  Finally, $\overline{PA}=2\cdot\frac{\sqrt{3}-1}{2}=\sqrt{3}-1$
 
@@ -1209,14 +1161,12 @@ For this problem, the key is to find the $\frac{[\triangle{B_nB_{n-1}C_n}]}{[\tr
 
  The desired answer is $90\cdot\frac{336\cdot289\cdot625^2}{625^2\cdot961\cdot289}=\frac{30240}{961}$ Which our answer is $\fbox{961}$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2013_13_Solution_Figure_1.png}
                     \end{figure}
                     
 
- 
 
 
 
@@ -1287,15 +1237,12 @@ after adding term-by-term. Similar term-by-term adding yields
  \[P \cos^2 \theta + Q \cos \theta(2 + \sin \theta) = 2 \cos \theta.\] Subtract the two and rearrange to get 
  \[\dfrac{P}{Q} = \dfrac{\cos \theta}{2 + \sin \theta} = \dfrac{2 \sqrt{2}}{7}.\] Then, square both sides and use Pythagorean Identity to get a quadratic in $\sin \theta.$ Factor that quadratic and solve for $\sin \theta = -17/19, 1/3.$ Since we're given $\pi\leq\theta<2\pi,$ $\sin\theta$ is nonpositive. We therefore use the negative solution, and our desired answer is $17 + 19 = \boxed{036}.$
 
- 
 
 
 
 \textbf{Solution 2}
 
 Use sum to product formulas to rewrite $P$ and $Q$
-
- 
 
  \[P \sin\theta\ + Q \cos\theta\ = \cos \theta\ - \frac{1}{4}\cos \theta + \frac{1}{8}\sin 2\theta + \frac{1}{16}\cos 3\theta - \frac{1}{32}\sin 4\theta + ...\]
 
@@ -1311,7 +1258,6 @@ Use sum to product formulas to rewrite $P$ and $Q$
  Then use the pythagorean identity to solve for $\sin\theta$, 
  \[\sin\theta = -\frac{17}{19} \implies \boxed{036}\]
 
- 
 
 
 
@@ -1348,7 +1294,6 @@ Note that
 
  $017+019=\boxed{036}$
 
- 
 
 
 
@@ -1359,8 +1304,7 @@ A bit similar to Solution 3. We use $\phi = \theta+90^\circ$ because the progres
  Similarly, $Q\in (\cos 0\theta,-\sin 1\theta,-\cos 2\theta,\sin 3\theta\dots)\implies Q\in(\cos 0\phi,\cos 1\phi, \cos 2\phi, \cos 3\phi\dots)$.
 
  Setting complex $z=q_1+p_1i$, we get $z=\frac{1}{2}\left(\cos\phi+\sin\phi i\right)$
-
- $(Q,P)=\sum_{n=0}^\infty z^n=\frac{1}{1-z}=\frac{1}{1-\frac{1}{2}\cos\phi-\frac{i}{2}\sin\phi}=\frac{1-0.5\cos\phi+0.5i\sin\phi}{\dots}$.
+$(Q,P)=\sum_{n=0}^\infty z^n=\frac{1}{1-z}=\frac{1}{1-\frac{1}{2}\cos\phi-\frac{i}{2}\sin\phi}=\frac{1-0.5\cos\phi+0.5i\sin\phi}{\dots}$.
 
  The important part is the ratio of the imaginary part $i$ to the real part. To cancel out the imaginary part from the denominator, we must add $0.5i\sin\phi$ to the numerator to make the denominator a difference (or rather a sum) of squares. The denominator does not matter. Only the numerator, because we are trying to find $\frac{P}{Q}=\tan\text{arg}(\Sigma)$ a PROPORTION of values. So denominators would cancel out.
 
@@ -1489,7 +1433,6 @@ The difference between $(4)$ and $(5)$ is $x+1$, which should be divisible by 3.
 
  So the answer is $32 + 30 + \cdots + 2 = \boxed{272}$
 
- 
 
 
 
@@ -1509,7 +1452,6 @@ Subtracting the two equations again, we find
  \[\left\lfloor \frac{101-A}{6}\right\rfloor=16+\left\lfloor\frac{5-A}{6}\right\rfloor\]For $A\in \{1,4,\ldots, 94\}$, the number of order-triples $(A,B,C)$ is
  \[16+16+15+15+\ldots+1+1=\boxed{272}\]
 
- 
 
 
 \end{enumerate}

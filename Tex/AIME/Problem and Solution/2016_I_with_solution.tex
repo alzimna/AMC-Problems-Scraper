@@ -64,7 +64,6 @@ Since the probability of rolling a $1$ is $\frac{1}{21}$, the probability of rol
 
  We have: $2 \cdot (\frac{1}{21} \cdot \frac{2}{7}$ $+$ $\frac{2}{21} \cdot \frac{5}{21}$ $+$ $\frac{1}{7} \cdot \frac{4}{21})$ $=$ $2 \cdot (\frac{2}{147} + \frac{10}{441} + \frac{4}{147})$ = $2 \cdot \frac{4}{63} = \frac{8}{63}$. Therefore, the answer is $8 + 63$ = $\boxed{071}$
 
- 
 
 
 	\item (\textit{AIME I 2016}) A \textit{regular icosahedron} is a $20$-faced solid where each face is an equilateral triangle and five triangles meet at every vertex. The regular icosahedron shown below has one vertex at the top, one vertex at the bottom, an upper pentagon of five vertices all adjacent to the top vertex and all in the same horizontal plane, and a lower pentagon of five vertices all adjacent to the bottom vertex and all in another horizontal plane. Find the number of paths from the top vertex to the bottom vertex such that each part of a path goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated.
@@ -75,8 +74,6 @@ Since the probability of rolling a $1$ is $\frac{1}{21}$, the probability of rol
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }810
 
 
@@ -186,7 +183,6 @@ We could see that both $374$ and $319$ are divisible by $11$ in the outset, and 
 
 If we let $k$ be equal to the number of days it took to read the book, the sum of $n$ through $n+k$ is equal to $(2n+k)(k+1)=748$ Similarly, $(2t+k)(k+1)=638$ We know that both factors must be integers and we see that the only common multiple of $748$ and $638$ not equal to $1$ that will get us positive integer solutions for $n$ and $t$ is $11$. We set $k+1=11$ so $k=10$. We then solve for $n$ and $t$ in their respective equations, getting $2n+10=68$.  $n=29$  We also get $2t+10=58$.  $t=24$. Our final answer is $29+24=\boxed{053}$
 
- 
 
 
 
@@ -194,7 +190,6 @@ If we let $k$ be equal to the number of days it took to read the book, the sum o
 
 Notice $374=34\cdot 11$ and $319=29\cdot 11$. Also, note the sum of an arithmetic series is $\frac{2n+k}{2} \cdot b$, where $n$ is our first term, $n+k$ is our final term, and $b$ is the number of terms. Since we know both sequences of $n$ and $t$ have the same length, and since $11$ is prime and shared by both $319$ and $374$, we deduce that $b=11$. Thus from here we know $2n+k=68$ and $2t+k=58$ by using our other factors $34$ and $29$. Finally, we add the two systems up and we get $2t+2k+2n=126$. But, notice that $k=b-1$, since the first term has $k=0$, and our last term has $k=b-1$. Plugging this back into our equation we get $2n+2t=106 \implies n+t=\boxed{053}$
 
- 
 
 
 
@@ -227,7 +222,6 @@ Denote $d$ to be the number of days it takes Ana to read her book. Now, notice t
 
  The possible ordered pairing is $d = 5, n-t = 11$, $d = 11, n-t = 5$, $d = 55, n-t = 1$, or $d=1, n-t = 55$. Obviously the latter case doesn't work as obviously $373 +374 \neq 374$, and the second to last case won't work as $n$ would be negative. The first case won't work as $n$ is not an integer. The last case gives $(n,t) = (29,24)$ which satisfies the constraints so the answer is $\boxed{053}$
 
- 
 
 
 	\item (\textit{AIME I 2016}) In $\triangle ABC$ let $I$ be the center of the inscribed circle, and let the bisector of $\angle ACB$ intersect $\overline{AB}$ at $L$. The line through $C$ and $L$ intersects the circumscribed circle of $\triangle ABC$ at the two points $C$ and $D$. If $LI=2$ and $LD=3$, then $IC= \frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -265,7 +259,6 @@ See the diagram in Solution 1.
 
 WLOG assume $\triangle ABC$ is isosceles. Then, $L$ is the midpoint of $AB$, and $\angle CLB=\angle CLA=90^\circ$. Draw the perpendicular from $I$ to $CB$, and let it meet $CB$ at $E$. Since $IL=2$, $IE$ is also $2$ (they are both inradii). Set $BD$ as $x$. Then, triangles $BLD$ and $CEI$ are similar, and $\frac{2}{3}=\frac{CI}{x}$. Thus, $CI=\frac{2x}{3}$. $\triangle CBD \sim \triangle CEI$, so $\frac{IE}{DB}=\frac{CI}{CD}$. Thus $\frac{2}{x}=\frac{(2x/3)}{(2x/3+5)}$. Solving for $x$, we have:$x^2-2x-15=0$, or $x=5, -3$. $x$ is positive, so $x=5$. As a result, $CI=\frac{2x}{3}=\frac{10}{3}$ and the answer is $\boxed{013}$
 
- 
 
 
 
@@ -359,7 +352,6 @@ We can just say that quadrilateral $ADBC$ is a right kite with right angles at $
                     \end{figure}
                     
 
- 
 
 
 
@@ -388,18 +380,13 @@ Perform a $\sqrt{bc}$ Inversion followed by a reflection along the angle bisecto
  \[\implies 7CI +10= 10CI\]
  \[\implies CI = \boxed{\dfrac{10}{3}}.\blacksquare\]
 
- 
-
-
- 
 
 
 
 \textbf{Solution 13}
 
-Without loss of generality, let $\triangle ABC$ be isosceles. Note that by the incenter-excenter lemma, $DI = DA = DB.$ Hence, $DA=DB=5.$ Let the point of tangency of the incircle and $\overline{BC}$ be $F$ and the point of tangency of the incircle and $\overline{AC}$ be $E.$ We note that $\angle ALC = \angle BLC = 90^\circ$ and $LA=LB=4,$ which immediately gives $AE=BF=4.$ Applying the Pythagorean Theorem on $\triangle ALC$ and $\triangle IEC$ gives $2^2+x^2=y^2$ and $4^2+(2+y)^2 = (4+x)^2.$ Solving for $y$ gives us $y=\frac{10}{3}.$ Therefore, $IC = \frac{10}{3}$ so the answer is $\boxed{13}.$ 
+Without loss of generality, let $\triangle ABC$ be isosceles. Note that by the incenter-excenter lemma, $DI = DA = DB.$ Hence, $DA=DB=5.$ Let the point of tangency of the incircle and $\overline{BC}$ be $F$ and the point of tangency of the incircle and $\overline{AC}$ be $E.$ We note that $\angle ALC = \angle BLC = 90^\circ$ and $LA=LB=4,$ which immediately gives $AE=BF=4.$ Applying the Pythagorean Theorem on $\triangle ALC$ and $\triangle IEC$ gives $2^2+x^2=y^2$ and $4^2+(2+y)^2 = (4+x)^2.$ Solving for $y$ gives us $y=\frac{10}{3}.$ Therefore, $IC = \frac{10}{3}$ so the answer is $\boxed{13}.$
 
- 
 
 
 
@@ -408,8 +395,7 @@ Without loss of generality, let $\triangle ABC$ be isosceles. Note that by the i
 Let $C_1\in AB$ be the point such that $IC_1\perp AB$, and let $D_1\in AB$ be defined similarly for $D$. We know that $\triangle IC_1L\sim\triangle DD_1L$, so by triangle ratios $DD_1=\frac{3}{2}r$, where $r$ is the inradius. Additionally, by cyclic quadrilaterals, we know that $\angle BAD=\angle DAB=\frac{\gamma}{2}$, where $\gamma$ is equivalent to $\angle ACB$. Thus $\triangle ADB$ is isosceles and $DD_1$ is the perpendicular bisector of the triangle, so $AD_1=\frac{c}{2}$. Since $\tan\left(\frac{\gamma}{2}\right)=\sqrt{\frac{(s-a)(s-b)}{s(s-c)}}$ from formulas (where $s$ is half the perimeter of $\triangle ABC$) and since $\tan\left(\frac{\gamma}{2}\right)=\frac{\frac{3}{2}r}{\frac{1}{2}c}$ from $\triangle ADB$, we can set up an equation:
 
  $\sqrt{\frac{(s-a)(s-b)}{s(s-c)}}=\frac{\frac{3}{2}r}{\frac{1}{2}c}\implies\frac{\sqrt{s(s-a)(s-b)(s-c)}}{s(s-c)}=\frac{3rs}{cs}\implies\frac{[ABC]}{s(s-c)}=\frac{3[ABC]}{cs}$
-
- $\implies\frac{1}{s-c}=\frac{3}{c}\implies \frac{s}{c}=\frac{4}{3}$
+$\implies\frac{1}{s-c}=\frac{3}{c}\implies \frac{s}{c}=\frac{4}{3}$
 
  Let $C_2\in AB$ such that $CC_2\perp AB$. Then $CC_2=\frac{2[ABC]}{c}$. Using the area formula $[ABC]=rs$ and our fact from above yields $CC_2=\frac{8}{3}r$. We then notice that $\triangle CC_2L\sim\triangle IC_1L$, so if we let $x=CI$, by triangle ratios we find that $\frac{\frac{8}{3}r}{x+2}=\frac{r}{2}$, leading to $x=\frac{10}{3}$. Thus the answer is $10+3=\boxed{013}$.
 
@@ -493,7 +479,6 @@ We note that $a_3 + a_6 + a_9 \equiv 0\mod 10$. Since the maximum possible sum o
 
  $|810 - 648| = \boxed{162}$
 
- 
 
 
 	\item (\textit{AIME I 2016}) Triangle $ABC$ has $AB=40,AC=31,$ and $\sin{A}=\frac{1}{5}$. This triangle is inscribed in rectangle $AQRS$ with $B$ on $\overline{QR}$ and $C$ on $\overline{RS}$. Find the maximum possible area of $AQRS$.
@@ -535,7 +520,6 @@ We start by drawing a diagram;
 
  Finally, $lw = xy + 31 \cdot 8 = 31 \cdot 16 + 31\cdot 8 = 31 \cdot 24 = \boxed{744}$
 
- 
 
 
 
@@ -587,10 +571,8 @@ Let $\alpha$ be the angle $\angle CAS$ and $\beta$ be the angle $\angle BAQ$. Th
  
  \[AS \geq BQ\]
 
- 
  \[31\cos\theta \geq 40\sin\theta\]
 
- 
  \[\frac{31}{40} \geq \tan\theta\]
 
  However, $\tan\theta = \tan(\frac{90-A}{2}) = \frac{\sin(90-A)}{\cos(90-A)+1} = \frac{\cos A}{\sin A + 1} = \frac{\frac{2\sqrt6}{5}}{\frac{6}{5}} = \frac{\sqrt6}{3} > \frac{31}{40}$, so the triangle does not actually fit in the rectangle: specifically, B is above R and thus in the line containing segment QR but not on the actual segment or in the rectangle.
@@ -669,7 +651,6 @@ Let $a_{2k-1}=s$ where $k=1$. Then, $a_{2k}=sr \Longrightarrow a_{2k+1}=sr^2$. C
 
  If $6r-5=2^1$, $r=\frac{7}{6}$. If $6r-5=2^2$, $r=\frac{3}{2}$. Note that the latter cannot work since $a_{2k+1}=s(\frac{9}{4}) \Longrightarrow 4\mid{s}$ but $N=1 \Longrightarrow s=2\cdot3^2\cdot7$ in this scenario. Therefore, $r=\frac{7}{6} \Longrightarrow s=\frac{2016}{2^2}=504$. Plugging back $k=1$, $a_1=s=\boxed{504}$
 
- 
 
 
 
@@ -831,7 +812,6 @@ For any other $y$ such that $0<y<23$, we can get the equation $E(y)=\frac{1}{2}(
 
  Adding all the equations and cancelling results in $E(23)=3+4(23)=95$. From the first equation, $E(22)=2\cdot 95-4=186$, and from the second equation, $E(21)=2\cdot 186-95-4=\boxed{273}.$
 
- 
 
 
 	\item (\textit{AIME I 2016}) Centered at each lattice point in the coordinate plane are a circle radius $\frac{1}{10}$ and a square with sides of length $\frac{1}{5}$ whose sides are parallel to the coordinate axes. The line segment from $(0,0)$ to $(1001, 429)$ intersects $m$ of the squares and $n$ of the circles. Find $m + n$.
@@ -868,7 +848,6 @@ See if you can solve the problem with the following.
                     \end{figure}
                     
 
- 
 
 
 
@@ -910,14 +889,12 @@ Using the radical axis theorem, the lines $\overline{AD}, \overline{BC}, \overli
  \[\dfrac{37}{2u+47}=\dfrac{2u+47}{67}\implies 2u+47=\sqrt{37\cdot 67}\implies u=\dfrac{1}{2}\left(\sqrt{37\cdot 67}-47\right).\] Now compute 
  \[AB^{2}=4AZ^{2}=4\cdot ZX\cdot ZY=4u(u+47)=37\cdot 67-47^{2}=\textbf{270}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2016_15_Solution_Figure_1.png}
                     \end{figure}
                     
 
- 
 
 
 
@@ -930,7 +907,6 @@ Let $Z = XY \cap AB$. By the radical axis theorem $AD, XY, BC$ are concurrent, s
  \[\frac 14 AB^2 = \frac 12 (y-47)\cdot \frac 12 (y+47) \qquad \implies\]
  \[\qquad AB ^ 2 = 37\cdot 67 - 47^2 = \boxed{270}\]
 
- 
 
 
 
@@ -943,7 +919,6 @@ By the Radical Axis Theorem $AD, XY, BC$ concur at point $E$.
  \[\angle XEB = \angle XAB = \angle XDA = \angle XYA.\]Thus $AY \parallel EB$ and $YB \parallel EA$, so $AEBY$ is a parallelogram. Hence $AS = SB$ and $SE = SY$. But notice that $DXE$ and $EXC$ are similar by $AA$ Similarity, so $XE^2 = XD \cdot XC = 37 \cdot 67$. But
  \[XE^2 - XY^2 = (XE + XY)(XE - XY) = EY \cdot 2XS = 2SY \cdot 2SX = 4SA^2 = AB^2.\]Hence $AB^2 = 37 \cdot 67 - 47^2 = \boxed{270}.$
 
- 
 
 
 
@@ -969,7 +944,6 @@ First, we note that as $\triangle XDY$ and $\triangle XYC$ have bases along the 
  \[37^2\cdot (67\cdot 30y)+67^2\cdot(37\cdot 30y)=(67\cdot 30y)\cdot (37\cdot 30y)\cdot (104\cdot 30y)+47^2\cdot (104\cdot 30y).\]We can cancel $30\cdot 104\cdot y$ from both sides, finding $37\cdot 67=30^2\cdot 67\cdot 37y^2+47^2$. Therefore, 
  \[AB^2=30^2\cdot 37\cdot 67y^2=37\cdot 67-47^2=\boxed{270}.\]
 
- 
 
 
 

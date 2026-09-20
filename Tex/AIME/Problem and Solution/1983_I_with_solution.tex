@@ -66,7 +66,6 @@ If we convert all of the equations into exponential form, we receive $x^{24}=w$,
 
 Converting all of the logarithms to exponentials gives $x^{24} = w, y^{40} =w,$ and $x^{12}y^{12}z^{12}=w.$ Thus, we have $y^{40} = x^{24} \Rightarrow z^3=y^2.$ We are looking for $\log_z w,$ which by substitution, is $\log_{y^{\frac{2}{3}}} y^{40} = 40 \div \frac{2}{3} = \boxed{060}.$
 
- 
 
 
 	\item (\textit{AIME I 1983}) Let $f(x)=|x-p|+|x-15|+|x-p-15|$, where $0 < p < 15$. Determine the \href{https://artofproblemsolving.com/wiki/index.php?title=Minimum}{minimum} value taken by $f(x)$ for $x$ in the \href{https://artofproblemsolving.com/wiki/index.php?title=Interval}{interval} $p \leq x\leq15$.
@@ -93,7 +92,6 @@ It is best to get rid of the \href{https://artofproblemsolving.com/wiki/index.ph
 
 Let $p$ be equal to $15 - \varepsilon$, where $\varepsilon$ is an almost neglectable value. Because of the small value $\varepsilon$, the \href{https://artofproblemsolving.com/wiki/index.php?title=Domain}{domain} of $f(x)$ is basically the \href{https://artofproblemsolving.com/wiki/index.php?title=Set}{set} ${15}$. plugging in $15$ gives $\varepsilon + 0 + 15 - \varepsilon$, or $15$, so the answer is $\boxed{015}$
 
- 
 
 
 	\item (\textit{AIME I 1983}) What is the product of the real roots of the equation $x^2 + 18x + 30 = 2 \sqrt{x^2 + 18x + 45}$?
@@ -169,8 +167,6 @@ We are given the equation
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }026
 
 
@@ -208,7 +204,6 @@ We'll use the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of
  We can find $\cos \angle OAB$ using angles $OAC$ and $BAC$.  First we note that by \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorean\_theorem}{ Pythagoras},
  \[AC = \sqrt{AB^2 + BC^2} = \sqrt{36 + 4} = \sqrt{40} = 2 \sqrt{10}.\]If we let $M$ be the midpoint of $AC$, that mean that $AM = \sqrt{10}$.  Since $\triangle OAC$ is isosceles ($OA = OC$ from the definition of a circle), $M$ is also the foot of the altitude from $O$ to $AC.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1983_4_Solution_Figure_3.png}
@@ -229,7 +224,6 @@ Meanwhile, from right triangle $ABC,$ we have
  \begin{align*} OB^2 &= AO^2 + AB^2 - 2 AO \cdot AB \cdot \cos \angle OAB \\ &= 50 + 36 - 2 \cdot 5 \sqrt{2} \cdot 6 \cdot \frac{1}{\sqrt{2}} \\ &= 86 - 2 \cdot 5 \cdot 6 \\ &= 26. \end{align*}
 
 
- 
 
 
 
@@ -263,7 +257,6 @@ Draw segment $OB$ with length $x$, and draw radius $OQ$ such that $OQ$ bisects c
  \[x^2=50+36-2(6)\sqrt{50}\frac{1}{\sqrt{2}}\]
  \[x^2=\boxed{026}.\]
 
- 
 
 
 
@@ -272,8 +265,7 @@ Draw segment $OB$ with length $x$, and draw radius $OQ$ such that $OQ$ bisects c
 We use coordinates. Let the circle have center $(0,0)$ and radius $\sqrt{50}$; this circle has equation $x^2 + y^2 = 50$. Let the coordinates of $B$ be $(a,b)$. We want to find $a^2 + b^2$. $A$ and $C$ with coordinates $(a,b+6)$ and $(a+2,b)$, respectively, both lie on the circle. From this we obtain the system of equations
 
  $a^2 + (b+6)^2 = 50$
-
- $(a+2)^2 + b^2 = 50$
+$(a+2)^2 + b^2 = 50$
 
  After expanding these terms, we notice by subtracting the first and second equations, we can cancel out $a^2$ and $b^2$. after substituting $a=3b+8$ and plugging back in, we realize that $(a,b)=(-7,-5)$ or $(5,-1)$. Since the first point is out of the circle, we find that $(5,-1)$ is the only relevant answer. This paragraph is written by ~hastapasta. 
 
@@ -295,20 +287,13 @@ We use coordinates. Let the circle have center $(0,0)$ and radius $\sqrt{50}$; t
  I will use the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_cosines}{law of cosines} in triangle $\triangle OAC$ and $\triangle OBC$.
 
  $AC = \sqrt{AB^2 + BC^2} = \sqrt{6^2 + 2^2} = 2 \sqrt{10}$
+$\cos \angle ACB = \frac{2}{2\sqrt{10}} = \frac{1}{\sqrt{10}}$
+$\cos \angle ACO = \frac{AC^2+OC^2-OA^2}{2 \cdot AC \cdot OC} = \frac{(2\sqrt{10})^2+(\sqrt{50})^2-(\sqrt{50})^2}{2 \cdot 2\sqrt{10} \cdot \sqrt{50}} = \frac{1}{\sqrt{5}}$
+$\sin \angle ACB = \sqrt{1-\cos^2 \angle ACB} = \sqrt{1-(\frac{1}{\sqrt{10}})^2} = \frac{3}{\sqrt{10}}$
+$\sin \angle ACO = \sqrt{1-\cos^2 \angle ACO} = \sqrt{1-(\frac{1}{\sqrt{5}})^2} = \frac{2}{\sqrt{5}}$
+$\cos \angle OCB = \cos (\angle ACB - \angle ACO) = \cos \angle ACB \cdot \cos \angle ACO + \sin \angle ACB \cdot \sin \angle ACO = \frac{1}{\sqrt{10}} \cdot \frac{1}{\sqrt{5}} + \frac{3}{\sqrt{10}} \cdot \frac{2}{\sqrt{5}} = \frac{7}{5\sqrt{2}}$
+$OB^2 = OC^2 + BC^2 - 2 \cdot OC \cdot BC \cdot \cos \angle OCB = (\sqrt{50})^2 + 2^2 - 2 \cdot \sqrt{50} \cdot 2 \cdot \frac{7}{5\sqrt{2}} = 50 + 4 - 28 = \boxed{026}$
 
- $\cos \angle ACB = \frac{2}{2\sqrt{10}} = \frac{1}{\sqrt{10}}$
-
- $\cos \angle ACO = \frac{AC^2+OC^2-OA^2}{2 \cdot AC \cdot OC} = \frac{(2\sqrt{10})^2+(\sqrt{50})^2-(\sqrt{50})^2}{2 \cdot 2\sqrt{10} \cdot \sqrt{50}} = \frac{1}{\sqrt{5}}$
-
- $\sin \angle ACB = \sqrt{1-\cos^2 \angle ACB} = \sqrt{1-(\frac{1}{\sqrt{10}})^2} = \frac{3}{\sqrt{10}}$
-
- $\sin \angle ACO = \sqrt{1-\cos^2 \angle ACO} = \sqrt{1-(\frac{1}{\sqrt{5}})^2} = \frac{2}{\sqrt{5}}$
-
- $\cos \angle OCB = \cos (\angle ACB - \angle ACO) = \cos \angle ACB \cdot \cos \angle ACO + \sin \angle ACB \cdot \sin \angle ACO = \frac{1}{\sqrt{10}} \cdot \frac{1}{\sqrt{5}} + \frac{3}{\sqrt{10}} \cdot \frac{2}{\sqrt{5}} = \frac{7}{5\sqrt{2}}$
-
- $OB^2 = OC^2 + BC^2 - 2 \cdot OC \cdot BC \cdot \cos \angle OCB = (\sqrt{50})^2 + 2^2 - 2 \cdot \sqrt{50} \cdot 2 \cdot \frac{7}{5\sqrt{2}} = 50 + 4 - 28 = \boxed{026}$
-
- 
 
 
 
@@ -363,8 +348,7 @@ An alternate way to solve this is to let $x=a+bi$ and $y=c+di$.
  Expanding $x^2+y^2=7+0i$ will give two equations, since the real and imaginary parts must match up.
 
  $(a+bi)^2+(c-bi)^2=7+0i$
-
- $(a^2+c^2-2b^2)+(2ab-2cb)i=7+0i$
+$(a^2+c^2-2b^2)+(2ab-2cb)i=7+0i$
 
  Looking at the imaginary part of that equation, $2ab-2cb=0$, so $a=c$, and $x$ and $y$ are actually complex conjugates.
 
@@ -373,16 +357,13 @@ An alternate way to solve this is to let $x=a+bi$ and $y=c+di$.
  Now, evaluating the real part of $(a+bi)^3+(a-bi)^3$, which equals $10$ (ignoring the odd powers of $i$, since they would not result in something in the form of $10+0i$):
 
  $a^3+3a(bi)^2+a^3+3a(-bi)^2=10$
-
- $2a^3-6ab^2=10$
+$2a^3-6ab^2=10$
 
  Since we know that $2b^2=2a^2-7$, it can be plugged in for $b^2$ in the above equation to yield:
 
  $2a^3-3a(2a^2-7)=10$
-
- $-4a^3+21a=10$
-
- $4a^3-21a+10=0$
+$-4a^3+21a=10$
+$4a^3-21a+10=0$
 
  Since the problem is looking for $x+y=2a$ to be a positive integer, only positive half-integers (and whole-integers) need to be tested.  From the Rational Roots theorem, $a=10, a=5, a=\frac{5}{2}$ all fail, but $a=2$ does work.  Thus, the real part of both numbers is $2$, and their sum is $\boxed{004}$.
 
@@ -402,7 +383,6 @@ Begin by assuming that $x$ and $y$ are roots of some polynomial of the form $w^2
 
 $x^3 + y^3 = 10 = (x+y)(x^2-xy+y^2) = (x+y)(7-xy) \implies xy = 7 - \frac{10}{x+y}.$  Also, $(x+y)^3 = x^3 + 3x^2y+3xy^2+y^3 = 10 + 3xy(x+y).$  Substituting our above into this, we get $10 + 3(7-\frac{10}{x+y})(x+y) = 21x+21y-20 = (x+y)^3$.  Letting $p = x+y$, we have that $p^3 - 21p + 20 = 0$.  Testing $p = 1$, we find that this is a root, to get $(p-1)(p^2+p-20) = 0 \implies p = -5, 1, 4 \implies \boxed{4}$
 
- 
 
 
 	\item (\textit{AIME I 1983}) Twenty five of King Arthur's knights are seated at their customary round table. Three of them are chosen - all choices being equally likely - and are sent off to slay a troublesome dragon. Let $P$ be the probability that at least two of the three had been sitting next to each other. If $P$ is written as a fraction in lowest terms, what is the sum of the numerator and denominator?
@@ -507,7 +487,6 @@ There are $\binom{25}{3}=\frac{25 \cdot 24 \cdot 23}{3 \cdot 2}=2300$ ways to ch
  To ensure at least $2$ adjacent knights are chosen, first choose $1$ of the $25$ pairs of adjacent knights. After choosing the adjacent pair of knights, there are $23$ ways to choose the third knight. There are $25$ choices of $3$ knights sitting consecutively, which are counted twice. For example, choosing $(1,2)$ first, then choosing $3$ is the same as choosing $(2,3)$ first, then choosing $1$. Therefore, there are $25 \cdot 23 -25=550$ ways to choose $3$ knights where at least $2$ of the $3$ had been sitting next to each other.
  \[P=\frac{550}{2300}=\frac{11}{46}\]The answer is $11+46=\boxed{\textbf{057}}$
 
- 
 
 
 
@@ -530,7 +509,6 @@ $\implies$ $Case_2:$ All three knights are next to each other
 
  So, we have $P = \frac{21 \cdot 25+25}{\binom{25}{3}}$$= \frac{22 \cdot 25 \cdot 6}{25 \cdot 24 \cdot 23}$$= \frac{11}{46}$, and our answer is $11+46=\boxed{057}$
 
- 
 
 
 
@@ -665,8 +643,7 @@ Let $y = x\sin{x}$ and rewrite the expression as $f(y) = 9y + \frac{4}{y}$, simi
  The derivative of $f(y)$, using the Power Rule, is
 
  $f'(y)$ = $9 - 4y^{-2}$
-
- $f'(y)$ is zero only when $y = \frac{2}{3}$ or $y = -\frac{2}{3}$. It can further be verified that $\frac{2}{3}$ and $-\frac{2}{3}$ are relative minima by finding the derivatives at other points near the critical points, or by checking that the second derivative $f''(y)=8y^{-3}$ is positive. However, since $x \sin{x}$ is always positive in the given domain, $y = \frac{2}{3}$. Therefore, $x\sin{x}$ = $\frac{2}{3}$, and the answer is $\frac{(9)(\frac{2}{3})^2 + 4}{\frac{2}{3}} = \boxed{012}$.
+$f'(y)$ is zero only when $y = \frac{2}{3}$ or $y = -\frac{2}{3}$. It can further be verified that $\frac{2}{3}$ and $-\frac{2}{3}$ are relative minima by finding the derivatives at other points near the critical points, or by checking that the second derivative $f''(y)=8y^{-3}$ is positive. However, since $x \sin{x}$ is always positive in the given domain, $y = \frac{2}{3}$. Therefore, $x\sin{x}$ = $\frac{2}{3}$, and the answer is $\frac{(9)(\frac{2}{3})^2 + 4}{\frac{2}{3}} = \boxed{012}$.
 
  
 
@@ -776,8 +753,6 @@ Let us proceed by casework.
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }288
 
 
@@ -856,8 +831,6 @@ From solution 1, the height of the solid is $6$. Construct a triangular prism wi
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }065
 
 
@@ -903,8 +876,6 @@ Let $S$ be a non-\href{https://artofproblemsolving.com/wiki/index.php?title=Empt
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }130
 
 
@@ -940,7 +911,6 @@ Now we have a kite $AQCP$ with $AQ=AP=8$, $CQ=CP=6$, and diagonal $AC=\sqrt{56}$
 
  Solving this equation, we find that $x^2=\frac{65}{2}$, so $PQ^2 = 4x^2 = \boxed{130}.$
 
- 
 
 
 
@@ -1064,8 +1034,7 @@ We use coordinate geometry to approach this problem. Let the center of larger ci
  Let point $P$ be $(a, b)$. Noting that it lies on both circles, we can plug the coordinates into both equations:
 
  $a^2 +b^2 = 64$
-
- $(a-12)^2+ b^2 \Rightarrow a^2-24a+144+b^2 = 64$
+$(a-12)^2+ b^2 \Rightarrow a^2-24a+144+b^2 = 64$
 
  Substituting $a^2+b^2 = 64$ into equation 2 and solving for $a$, we get $a = \frac{43}{6}$. The problem asks us to find $QP^2$, which is congruent to $PR^2$. Using the distance formula for $P(a, b)$ and $R(18, 0)$ (by Solution 7's collinear proof), we get $PR^2 = (18-a)^2 +b^2$. Using $a^2+b^2 = 64$, we find that $b^2 = \frac{455}{36}$. Plugging the variables $a$ and $b^2$ in, we get $PR^2 = QP^2 =  \boxed{130}$~SoilMilk
 
@@ -1077,7 +1046,6 @@ We use coordinate geometry to approach this problem. Let the center of larger ci
 
 Let the center of the circle with radius $8$ be $A,$ and let the center of the one with radius $6$ be $B.$ Also, let $QP = PR = x.$ Using law of cosines on triangle $\Delta APB,$ we have that $\cos{\angle{APB}} = -\frac{{11}}{24}.$ Angle chasing gives that $\angle{QAR} = \angle{APB},$ so their cosines are the same. Applying law of cosines again on triangle $\Delta QAR,$ we have $\left(2x^2\right)=64+324-2(8)(18)\left(-\frac{11}{24}\right),$ which gives that $x^2 = \boxed{130}$
 
- 
 
 
 
@@ -1099,7 +1067,6 @@ Let A and B denote the centers of the left and right circles respectively and $Q
 
  Subtracting $2*(1)$ from $(2),$ we get $196=2x^2-64,$ which gives $x^2=\boxed{130}$
 
- 
 
 
 	\item (\textit{AIME I 1983}) The adjoining figure shows two intersecting chords in a circle, with $B$ on minor arc $AD$. Suppose that the radius of the circle is $5$, that $BC=6$, and that $AD$ is bisected by $BC$. Suppose further that $AD$ is the only chord starting at $A$ which is bisected by $BC$. It follows that the sine of the central angle of minor arc $AB$ is a rational number. If this number is expressed as a fraction $\frac{m}{n}$ in lowest terms, what is the product $mn$?
@@ -1110,8 +1077,6 @@ Let A and B denote the centers of the left and right circles respectively and $Q
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }175
 
 
@@ -1315,7 +1280,6 @@ Let the center of the circle be O. O is at (0,0).Rotate the circle so that the l
 
  We can use complex numbers to find the angle between A and B, because arguments subtract when you divide complex numbers. $\frac{-4+3i}{-3+4i} = \frac{24+7i}{25}$ Which gives us $\frac{7}{25}$. $7 \cdot 25 = \boxed{175}$
 
- 
 
 
 \end{enumerate}

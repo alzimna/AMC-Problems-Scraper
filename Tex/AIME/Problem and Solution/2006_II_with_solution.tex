@@ -48,7 +48,6 @@ so $x^2=2116$, and $x=\boxed{046}$.
                     \end{figure}
                     
 
- 
 
 
 
@@ -72,22 +71,15 @@ Extend lines $AB$ and $CD$ to intersect at $G$ and $AF$ and $DE$ to intersect at
 By the \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle\_Inequality}{Triangle Inequality} and applying the well-known logarithmic property $\log_{c} a + \log_{c} b = \log_{c} ab$, we have that
 
  <div style="text-align:center;">$\log_{10} 12 + \log_{10} n > \log_{10} 75$
-
- $\log_{10} 12n > \log_{10} 75$
-
- $12n > 75$ 
-
- $n > \frac{75}{12} = \frac{25}{4} = 6.25$
-
- </div>Also, 
+$\log_{10} 12n > \log_{10} 75$
+$12n > 75$
+$n > \frac{75}{12} = \frac{25}{4} = 6.25$
+</div>Also, 
 
  <div style="text-align:center;">$\log_{10} 12 + \log_{10} 75 > \log_{10} n$
-
- $\log_{10} 12\cdot75 > \log_{10} n$
-
- $n < 900$ 
-
- </div>Combining these two inequalities: 
+$\log_{10} 12\cdot75 > \log_{10} n$
+$n < 900$
+</div>Combining these two inequalities: 
 
  
  \[6.25 < n < 900\]
@@ -148,7 +140,6 @@ We count the multiples of $3^k$ below 200 and subtract the count of multiples of
  \[\left\lfloor \frac{200}{3}\right\rfloor - \left\lfloor \frac{200}{6}\right\rfloor +\left\lfloor\frac{200}{9}\right\rfloor - \left\lfloor \frac{200}{18}\right\rfloor +\left\lfloor \frac{200}{27}\right\rfloor - \left\lfloor \frac{200}{54}\right\rfloor+\left\lfloor\frac{200}{81}\right\rfloor - \left\lfloor \frac{200}{162}\right\rfloor\]
  \[= 66 - 33 + 22 - 11 + 7 - 3 + 2 - 1 = 49.\]
 
- 
 
 
 
@@ -247,8 +238,6 @@ Case 2: $a_{12} = 12$
 
 	\item (\textit{AIME II 2006}) When rolling a certain unfair six-sided die with faces numbered $1, 2, 3, 4, 5$, and $6$, the probability of obtaining face $F$ is greater than $\frac{1}{6}$, the probability of obtaining the face opposite is less than $\frac{1}{6}$, the probability of obtaining any one of the other four faces is $\frac{1}{6}$, and the sum of the numbers on opposite faces is 7. When two such dice are rolled, the probability of obtaining a sum of 7 is $\frac{47}{288}$. Given that the probability of obtaining face $F$  is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$
 
-
- 
  \textbf{Answer: }029
 
 
@@ -290,7 +279,6 @@ We have that the cube probabilities to land on its faces are $\frac{1}{6}$, $\fr
  \[32+16(1-6x)(6x+1)=47 \Longrightarrow 16(1-36x^2)=15\]dividing by 16 and rearranging we get:
  \[\frac{1}{16}=36x^2 \longrightarrow x=\frac{1}{24}\]so the probability F  which is greater than $\frac{1}{6}$ is equal $\frac{1}{6}+\frac{1}{24}=\frac{5}{24}\longrightarrow 24+5=\boxed{29}$
 
- 
 
 
 
@@ -310,8 +298,6 @@ Let $p(a,b)$ denote the probability of obtaining $a$ on the first die and $b$ on
 
 	\item (\textit{AIME II 2006}) Square $ABCD$ has sides of length 1. Points $E$ and $F$ are on $\overline{BC}$ and $\overline{CD},$ respectively, so that $\triangle AEF$ is equilateral. A square with vertex $B$ has sides that are parallel to those of $ABCD$ and a vertex on $\overline{AE}.$ The length of a side of this smaller square is $\frac{a-\sqrt{b}}{c},$ where $a, b,$ and $c$ are positive integers and $b$ is not divisible by the square of any prime. Find $a+b+c.$
 
-
- 
  \textbf{Answer: }012
 
 
@@ -470,23 +456,21 @@ For every $a \in [1, 999]$, $(a, 1000 - a)$ is a potential candidate for a solut
  First, let's consider all viable $a$ that do not have a zero digit. As there are 9 non-zero digits, we have:
 
  
-                \begin{itemize}
-                    \item $9^1$ 1-digit numbers without a zero digit\item $9^2$ 2-digit numbers without a zero digit\item $9^3$ 3-digit numbers without a zero digit
-                \end{itemize}
-
-
-                However, we have still overlooked the cases where $1000 - a$ contains zero digits:
+            \begin{itemize}
+        \item $9^1$ 1-digit numbers without a zero digit
+        \item $9^2$ 2-digit numbers without a zero digit
+        \item $9^3$ 3-digit numbers without a zero digit
+            \end{itemize}
+            However, we have still overlooked the cases where $1000 - a$ contains zero digits:
 
  
-                \begin{itemize}
-                    \item \textbf{Case 1}: If the one's digit of $1000 - a$ is zero, then $a$ will trivially end in a zero, which we've already excluded.\item \textbf{Case 2}: If the ten's digit of $1000 - a$ is zero, with digital representation $\overline{X0Y}$, then $a$ has the digital representation $\overline{[9-X]9[10-Y]}$. $X$ and $Y$ can each take on any value in $[1, 9]$ to produce a value in our set of potential $a$. There are thus $9^2$ cases that we overlooked, where $a$ had no zero digits, but $1000 - a$ did.
-                \end{itemize}
-
-
-                Adding up the cases with $a \in [1, 999]$ with no zero digits and removing the cases with $1000 - a$ with zero digits gives us 
+            \begin{itemize}
+        \item \textbf{Case 1}: If the one's digit of $1000 - a$ is zero, then $a$ will trivially end in a zero, which we've already excluded.
+        \item \textbf{Case 2}: If the ten's digit of $1000 - a$ is zero, with digital representation $\overline{X0Y}$, then $a$ has the digital representation $\overline{[9-X]9[10-Y]}$. $X$ and $Y$ can each take on any value in $[1, 9]$ to produce a value in our set of potential $a$. There are thus $9^2$ cases that we overlooked, where $a$ had no zero digits, but $1000 - a$ did.
+            \end{itemize}
+            Adding up the cases with $a \in [1, 999]$ with no zero digits and removing the cases with $1000 - a$ with zero digits gives us 
  \[(9^1 + 9^2 + 9^3) - 9^2 = \boxed{738}\]
 
- 
 
 
 
@@ -512,8 +496,6 @@ Analyze three digit $a$ and $b$ is forced three digits. It follows that the poss
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }336
 
 
@@ -641,8 +623,6 @@ Consider any coloring of a triangle. Inclusive rotations and reflections, we hav
 
 	\item (\textit{AIME II 2006}) Circles $\mathcal{C}_1, \mathcal{C}_2,$ and $\mathcal{C}_3$ have their centers at $(0,0)$, $(12,0)$, and $(24,0)$, and have radii 1, 2, and 4, respectively. Line $t_1$ is a common internal tangent to $\mathcal{C}_1$ and $\mathcal{C}_2$ and has a positive slope, and line $t_2$ is a common internal tangent to $\mathcal{C}_2$ and $\mathcal{C}_3$ and has a negative slope. Given that lines $t_1$ and $t_2$ intersect at $(x,y),$ and that $x=p-q\sqrt{r},$ where $p, q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p+q+r.$
 
-
- 
  \textbf{Answer: }027
 
 
@@ -688,8 +668,6 @@ Consider any coloring of a triangle. Inclusive rotations and reflections, we hav
 
 	\item (\textit{AIME II 2006}) Seven teams play a soccer tournament in which each team plays every other team exactly once. No ties occur, each team has a $50\%$ chance of winning each game it plays, and the outcomes of the games are independent. In each game, the winner is awarded a point and the loser gets 0 points. The total points are accumulated to decide the ranks of the teams. In the first game of the tournament, team $A$ beats team $B.$ The probability that team $A$ finishes with more points than team $B$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }831
 
 
@@ -715,42 +693,30 @@ The results of the five remaining games are independent of the first game, so by
 You can break this into cases based on how many rounds $A$ wins out of the remaining $5$ games.
 
  
-                \begin{itemize}
-                    \item If $A$ wins 0 games, then $B$ must win 0 games and the probability of this is $\frac{{5 \choose 0}}{2^5} \frac{{5 \choose 0}}{2^5} = \frac{1}{1024}$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $A$ wins 1 games, then $B$ must win 1 or less games and the probability of this is $\frac{{5 \choose 1}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}}{2^5} = \frac{30}{1024}$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $A$ wins 2 games, then $B$ must win 2 or less games and the probability of this is $\frac{{5 \choose 2}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}}{2^5} = \frac{160}{1024}$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $A$ wins 3 games, then $B$ must win 3 or less games and the probability of this is $\frac{{5 \choose 3}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}}{2^5} = \frac{260}{1024}$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $A$ wins 4 games, then $B$ must win 4 or less games and the probability of this is $\frac{{5 \choose 4}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}+{5 \choose 4}}{2^5} = \frac{155}{1024}$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $A$ wins 5 games, then $B$ must win 5 or less games and the probability of this is $\frac{{5 \choose 5}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}+{5 \choose 4}+{5 \choose 5}}{2^5} = \frac{32}{1024}$.
-                \end{itemize}
-
-
-                Summing these 6 cases, we get $\frac{638}{1024}$, which simplifies to $\frac{319}{512}$, so our answer is $319 + 512 = \boxed{831}$.
+            \begin{itemize}
+        \item If $A$ wins 0 games, then $B$ must win 0 games and the probability of this is $\frac{{5 \choose 0}}{2^5} \frac{{5 \choose 0}}{2^5} = \frac{1}{1024}$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $A$ wins 1 games, then $B$ must win 1 or less games and the probability of this is $\frac{{5 \choose 1}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}}{2^5} = \frac{30}{1024}$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $A$ wins 2 games, then $B$ must win 2 or less games and the probability of this is $\frac{{5 \choose 2}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}}{2^5} = \frac{160}{1024}$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $A$ wins 3 games, then $B$ must win 3 or less games and the probability of this is $\frac{{5 \choose 3}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}}{2^5} = \frac{260}{1024}$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $A$ wins 4 games, then $B$ must win 4 or less games and the probability of this is $\frac{{5 \choose 4}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}+{5 \choose 4}}{2^5} = \frac{155}{1024}$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $A$ wins 5 games, then $B$ must win 5 or less games and the probability of this is $\frac{{5 \choose 5}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}+{5 \choose 4}+{5 \choose 5}}{2^5} = \frac{32}{1024}$.
+            \end{itemize}
+            Summing these 6 cases, we get $\frac{638}{1024}$, which simplifies to $\frac{319}{512}$, so our answer is $319 + 512 = \boxed{831}$.
 
  
 
@@ -887,8 +853,6 @@ By the Chinese remainder theorem, each number under 1000 is uniquely determined 
 
 	\item (\textit{AIME II 2006}) Equilateral $\triangle ABC$ is inscribed in a circle of radius 2. Extend $\overline{AB}$ through $B$ to point $D$ so that $AD=13,$ and extend $\overline{AC}$ through $C$ to point $E$ so that $AE = 11.$ Through $D,$ draw a line $l_1$ parallel to $\overline{AE},$ and through $E,$ draw a line $l_2$ parallel to $\overline{AD}.$ Let $F$ be the intersection of $l_1$ and $l_2.$ Let $G$ be the point on the circle that is collinear with $A$ and $F$ and distinct from $A.$ Given that the area of $\triangle CBG$ can be expressed in the form $\frac{p\sqrt{q}}{r},$  where $p, q,$ and $r$ are positive integers, $p$ and $r$  are relatively prime, and $q$ is not divisible by the square of any prime, find $p+q+r.$
 
-
- 
  \textbf{Answer: }865
 
 
@@ -972,12 +936,10 @@ Let the first odd integer be $2n+1$, $n\geq 0$. Then the final odd integer is $2
  Instead we do some casework:
 
  
-                \begin{itemize}
-                    \item If $N$ is odd, then $j$ must also be odd. For every odd value of $j$, $2n+j$ is also odd, making this case valid for all odd $j$. Looking at the forms above and the bound of $1000$, $N$ must be
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item If $N$ is odd, then $j$ must also be odd. For every odd value of $j$, $2n+j$ is also odd, making this case valid for all odd $j$. Looking at the forms above and the bound of $1000$, $N$ must be
+            \end{itemize}
+            
  \[(3^2\cdot5^2),\ (3^2\cdot7^2),\ (3^4\cdot5),\ (3^4\cdot7),\ (3^4\cdot 11)\]
 
  
@@ -985,12 +947,10 @@ Let the first odd integer be $2n+1$, $n\geq 0$. Then the final odd integer is $2
                 \item Those give $5$ possibilities for odd $N$.
             \end{enumerate}
             
-                \begin{itemize}
-                    \item If $N$ is even, then $j$ must also be even. Substituting $j=2k$, we get
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item If $N$ is even, then $j$ must also be even. Substituting $j=2k$, we get
+            \end{itemize}
+            
  \[N = 4k(n+k) \Longrightarrow \frac{N}{4} = k(n+k)\]
 
  
@@ -1089,8 +1049,6 @@ Consider \( n \ge 2 \), since clearly \( n = 1 \) doesn't work.
 
 and that $x+y+z = \frac{m}{\sqrt{n}},$ where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime, find $m+n.$
 
-
- 
  \textbf{Answer: }009
 
 
@@ -1172,7 +1130,6 @@ Note that none of $x,y,z$ can be zero.
 
  And thus the answer is $\boxed{009}$
 
- 
 
 
 \end{enumerate}

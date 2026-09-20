@@ -13,12 +13,15 @@
 The two-digit perfect squares are $16, 25, 36, 49, 64, 81$. We try making a sequence starting with each one:
 
  
-                \begin{itemize}
-                    \item $16 - 64 - 49$. This terminates since none of them end in a $9$, giving us $1649$.\item $25$.\item $36 - 64 - 49$, $3649$.\item $49$.\item $64 - 49$, $649$.\item $81 - 16 - 64 - 49$, $81649$.
-                \end{itemize}
-
-
-                The largest is $81649$, so our answer is $\boxed{816}$.
+            \begin{itemize}
+        \item $16 - 64 - 49$. This terminates since none of them end in a $9$, giving us $1649$.
+        \item $25$.
+        \item $36 - 64 - 49$, $3649$.
+        \item $49$.
+        \item $64 - 49$, $649$.
+        \item $81 - 16 - 64 - 49$, $81649$.
+            \end{itemize}
+            The largest is $81649$, so our answer is $\boxed{816}$.
 
  
 
@@ -76,9 +79,8 @@ We find that $x_5 = 267$ by the recursive formula. Summing the \href{https://art
  yields $x_{n} = -x_{n-5}$. Thus $x_n = (-1)^k x_{n-5k}$. Since $531 = 106 \cdot 5 + 1,\ 753 = 150 \cdot 5 + 3,\ 975 = 194 \cdot 5 + 5$, it follows that
 
  
- \[x_{531} + x_{753} + x_{975} = (-1)^{106} x_1 + (-1)^{150} x_3 + (-1)^{194} x_5 = 211 + 420 + 267 = \boxed{898}.\] 
+ \[x_{531} + x_{753} + x_{975} = (-1)^{106} x_1 + (-1)^{150} x_3 + (-1)^{194} x_5 = 211 + 420 + 267 = \boxed{898}.\]
 
- 
 
 
 
@@ -105,7 +107,6 @@ The recursive formula suggests telescoping. Indeed, if we add $x_n$ and $x_{n-1}
 
  At this point it is pretty clear that the sequence is periodic with period 10 (one may prove it quite easily like in solution 1) so our answer is obviously $211+420+267=\boxed{898}$
 
- 
 
 
 	\item (\textit{AIME II 2001}) Let $R = (8,6)$. The lines whose equations are $8y = 15x$ and $10y = 3x$ contain points $P$ and $Q$, respectively, such that $R$ is the midpoint of $\overline{PQ}$. The length of $PQ$ equals $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -144,8 +145,7 @@ Out of all ten-element subsets with distinct elements that do not possess the tr
 
  
  \[\mathcal{S} = \{\, 4,\, 5,\, 4+5, \,5+(4+5),\, \ldots\,\} = \{4, 5, 9, 14, 23, 37, 60, 97, 157, 254\}\]
-
- $\mathcal{S}$ is the "smallest" ten-element subset without the triangle property, and since the set $\{4, 5, 6, \ldots, 253\}$ is the largest set of consecutive integers that does not contain this subset, it is also the largest set of consecutive integers in which all ten-element subsets possess the triangle property. Thus, our answer is $n = \fbox{253}$.
+$\mathcal{S}$ is the "smallest" ten-element subset without the triangle property, and since the set $\{4, 5, 6, \ldots, 253\}$ is the largest set of consecutive integers that does not contain this subset, it is also the largest set of consecutive integers in which all ten-element subsets possess the triangle property. Thus, our answer is $n = \fbox{253}$.
 
  \textbf{Note} If we wanted to find this for a much larger number (say 2001), we could have noted that this is a "quasi-Fibonacci" sequence with initial terms $4,5$ and built up an explicit function to find the $nth$ term. (The latter part is generally pretty annoying).
 
@@ -366,7 +366,6 @@ We evaluate the first few terms of f(x) to try to find a pattern.
 
  We found that $\frac{y}{243}=\frac{429}{243}$, and solving this equation gives our answer $\boxed{429}$
 
- 
 
 
 	\item (\textit{AIME II 2001}) Each unit square of a 3-by-3 unit-square grid is to be colored either blue or red. For each square, either color is equally likely to be used. The probability of obtaining a grid that does not have a 2-by-2 red square is $\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.
@@ -382,42 +381,34 @@ We evaluate the first few terms of f(x) to try to find a pattern.
 We can use \href{https://artofproblemsolving.com/wiki/index.php?title=Complementary\_counting}{complementary counting}, counting all of the colorings that have at least one red $2\times 2$ square.
 
  
-                \begin{itemize}
-                    \item For at least one red $2 \times 2$ square:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item For at least one red $2 \times 2$ square:
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item There are four $2 \times 2$ squares to choose which one will be red. Then there are $2^5$ ways to color the rest of the squares. $4 \cdot 32=128$
             \end{enumerate}
             
-                \begin{itemize}
-                    \item For at least two $2 \times 2$ squares:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item For at least two $2 \times 2$ squares:
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item There are two cases: those with two $2 \times 2$ red squares on one side and those without red squares on one side but at two corners.\item The first case is easy: 4 ways to choose which the side the squares will be on, and $2^3$ ways to color the rest of the squares, so 32 ways to do that. For the second case, there will be only two ways to pick two squares, and $2^2$ ways to color the other squares. $32+8=40$
             \end{enumerate}
             
-                \begin{itemize}
-                    \item For at least three $2 \times 2$ squares:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item For at least three $2 \times 2$ squares:
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item Choosing three such squares leaves only one square left, with four places to place it. This is $2 \cdot 4 = 8$ ways.
             \end{enumerate}
             
-                \begin{itemize}
-                    \item For at least four $2 \times 2$ squares, we clearly only have one way.
-                \end{itemize}
-
-
-                By the \href{https://artofproblemsolving.com/wiki/index.php?title=Principle\_of\_Inclusion-Exclusion}{Principle of Inclusion-Exclusion}, there are (alternatively subtracting and adding) $128-40+8-1=95$ ways to have at least one red $2 \times 2$ square.
+            \begin{itemize}
+        \item For at least four $2 \times 2$ squares, we clearly only have one way.
+            \end{itemize}
+            By the \href{https://artofproblemsolving.com/wiki/index.php?title=Principle\_of\_Inclusion-Exclusion}{Principle of Inclusion-Exclusion}, there are (alternatively subtracting and adding) $128-40+8-1=95$ ways to have at least one red $2 \times 2$ square.
 
  There are $2^9=512$ ways to paint the $3 \times 3$ square with no restrictions, so there are $512-95=417$ ways to paint the square with the restriction. Therefore, the probability of obtaining a grid that does not have a $2 \times 2$ red square is $\frac{417}{512}$, and $417+512=\boxed{929}$.
 
@@ -436,16 +427,13 @@ We consider how many ways we can colour the $2 \times 2$ grid:
  $(3)$: Two unit squares are blue--one of the squares lies in the center of the bigger square, makes no $2 \times 2$ grid, $8$ cases. Or, two squares lie on second column, first row, second column third row; second row first column, second row third column, 2 extra cases. $\binom 9 2-8-2=26$ cases
 
  $(4)$ Three unit squares are blue. We find that if a $2 \times 2$ square is formed, there are 5 extra unit squares can be painted. But cases that three squares in the same column or same row is overcomunted. So in this case, there are $4\cdot (\binom 5 3)-4=36$
-
- $(5)$ Four unit squares are blue, no overcounted case will be considered. there are $4\cdot \binom 5 4=20$
-
- $(6)$ Five unit squares are blue, $4$ cases in all
+$(5)$ Four unit squares are blue, no overcounted case will be considered. there are $4\cdot \binom 5 4=20$
+$(6)$ Five unit squares are blue, $4$ cases in all
 
  Sum up those cases, there are $1+8+26+36+20+4=95$ cases that a $2 \times 2$ grid can be formed.
 
  In all, there are $2^9=512$ possible ways to paint the big square, so the answer is $1-\frac{95}{512}=\frac{417}{512}$ leads to $\boxed{929}$
 
- 
 
 
 
@@ -485,10 +473,8 @@ Case 4: The 3-by-3 unit-square grid has exactly $4$ 2-by-2 red squares
 In total, there are $68+22+4+1=95$ coloring methods with 2-by-2 red squares.
  \[\frac{m}{n}=1-\frac{95}{2^9}=\frac{417}{512}\]
 
- 
  \[m+n=417+512=\boxed{\textbf{929}}\]
 
- 
 
 
 	\item (\textit{AIME II 2001}) How many positive integer multiples of 1001 can be expressed in the form $10^{j} - 10^{i}$, where $i$ and $j$ are integers and $0\leq i < j \leq 99$?
@@ -584,7 +570,6 @@ At first, it wins $6$ games, only one way.
 
  The answer is $\frac{1+12+60+140+75+6}{3^6}=\frac{98}{243}$ leads to $\boxed{341}$
 
- 
 
 
 
@@ -601,13 +586,10 @@ This problem is symmetrical, and we should probably take advantage of that. We h
  
  \[C_1: 3/3/0 \Longrightarrow \binom{6}{3} \cdot \left(\frac{1}{3}\right)^6 = \frac{20}{729}\]
 
- 
  \[C_2: 2/2/2 \Longrightarrow \binom{6}{2}\binom{4}{2} \cdot \left(\frac{1}{3}\right)^6 = \frac{90}{729}\]
 
- 
  \[C_3: 1/1/4 \Longrightarrow \binom{6}{4} \cdot 2 \cdot \left(\frac{1}{3}\right)^6 = \frac{30}{729}\]
 
- 
  \[C_4: 0/0/6 \Longrightarrow \left(\frac{1}{3}\right)^6 = \frac{1}{729}\]
 
  Summing these up we get $\dfrac{141}{729} = \dfrac{47}{243}$. Now, we have $2x + \dfrac{47}{243} = 1$, where $x = P(\#\text{ of wins} > \text{losses})$. Solving, we get $x = \dfrac{98}{243} \Longrightarrow \boxed{341}$
@@ -665,7 +647,6 @@ Notice that $\angle BAD = \angle ADC$ and $\angle ABD = \angle DCB$, which motiv
  
 \textbf{Extension}: To Find $AD$, use Law of Cosines on $\triangle BCD$ to get $\cos(\angle BCD)=\frac{13}{20}$Then since $\angle BCD=\angle ABD$ use Law of Cosines on $\triangle ABD$ to find $AD=2\sqrt{15}$
 
- 
 
 
 

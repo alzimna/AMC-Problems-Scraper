@@ -35,12 +35,10 @@ For instances:
 and so on.
 
  From this symmetry, the arithmetic mean of all the three-digit palindromes is $\frac{1100}{2}=\boxed{550}.$
-
- <u>\textbf{Remark}</u>
+<u>\textbf{Remark}</u>
 
  By the Multiplication Principle, there are $9\cdot10=90$ three-digit palindromes in total. Their sum is $1100\cdot45=49500,$ as we can match them into $45$ pairs such that each pair sums to $1100.$
 
- 
 
 
 
@@ -60,7 +58,6 @@ We notice that a three-digit palindrome looks like this: $\underline{aba}.$
 
  We get a sum of $45\times{1100},$ but don't compute this! Divide this by $90$ and you will get $\boxed{550}.$
 
- 
 
 
 
@@ -68,7 +65,6 @@ We notice that a three-digit palindrome looks like this: $\underline{aba}.$
 
 The possible values of the first and last digits each are $1, 2, ..., 8, 9$ with a sum of $45$ so the average value is $5.$ The middle digit can be any digit from $0$ to $9$ with a sum of $45,$ so the average value is $4.5.$ The average of all three-digit palindromes is $5\cdot 10^2+4.5\cdot 10+5=\boxed{550}.$
 
- 
 
 
 
@@ -77,8 +73,7 @@ The possible values of the first and last digits each are $1, 2, ..., 8, 9$ with
 <i>\textbf{Case 1}</i>
 
  Consider palindromes of the form $5x5 = 505 + 10x.$ There are $10$ of them. The arithmetic mean of the first term is $505,$ and the second $\frac {10 \cdot(0 + 1 + ... + 9)}{10} = 45.$The arithmetic mean of the sum is $505 + 45 = 550.$
-
- <i>\textbf{Case 2}</i>
+<i>\textbf{Case 2}</i>
 
  Consider palindromes of the form $yxy,$ where $y= {1,2,3,4,6,7,8,9}.$Let $u = 10 – y, v = 9 – x.$Then $uvu$ is a symmetric palindrome that can be constructed for each $yxy.$The arithmetic mean of each such pair is $550.$ For example, $\frac{737 + 363}{2} = 550.$
 
@@ -101,8 +96,6 @@ The possible values of the first and last digits each are $1, 2, ..., 8, 9$ with
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }336
 
 
@@ -123,7 +116,6 @@ Since $0<x<840,$ it is clear that $\frac{x}{840-x}>0.$ Therefore, we take the po
  \begin{align*} \frac{x}{840-x}&=\frac23 \\ 3x&=1680-2x \\ 5x&=1680 \\ x&=\boxed{336}. \end{align*}
 
 
- 
 
 
 
@@ -143,7 +135,6 @@ To make further calculations easier, we scale everything down by $420$ (while ke
  \begin{align*} \frac{x^2}{\left(1-\frac{x}{2}\right)(2-x)} &= \frac{8}{9} \\ 8\left(1-\frac{x}{2}\right)(2-x) &= 9x^2 \\ 16-16x + 4x^2 &= 9x^2 \\ 5x^2 + 16x -16 &= 0 \\ (5x-4)(x+4) &= 0. \end{align*}
 Thus $x = \frac{4}{5}.$ Because we scaled down everything by $420,$ the actual value of $AF$ is $\frac{4}{5}(420) = \boxed{336}.$
 
- 
 
 
 
@@ -204,9 +195,8 @@ Drop an altitude from $F$ to $\overline{AG}$ which intersects $\overline{AG}$ at
 
  Since triangle $\triangle AEF$ is equilateral, $\overline{AE} = \overline{AF} = \frac{2}{3}  \overline{EB} \implies \overline{AE} + \overline{EB} = \frac{5}{3} \overline{EB} = 840$. 
 
- Therefore, $\overline{EB} = 540$, and $\overline{AB} = \boxed{336}$ 
+ Therefore, $\overline{EB} = 540$, and $\overline{AB} = \boxed{336}$
 
- 
 
 
 
@@ -225,7 +215,6 @@ Drop an altitude from $F$ to $BC$ and notice that the triangle is congruent to t
 
  Clearly the only value of x that works is $\boxed{336}$
 
- 
 
 
 	\item (\textit{AIME II 2021}) Find the number of permutations $x_1, x_2, x_3, x_4, x_5$ of numbers $1, 2, 3, 4, 5$ such that the sum of five products 
@@ -241,7 +230,6 @@ Drop an altitude from $F$ to $BC$ and notice that the triangle is congruent to t
 
 Since $3$ is one of the numbers, a product with a $3$ in it is automatically divisible by $3,$ so WLOG $x_3=3,$ and we will multiply by $5$ afterward since any of $x_1, x_2, \ldots, x_5$ would be $3,$ after some cancelation we see that now all we need to find is the number of ways that $x_5x_1(x_4+x_2)$ is divisible by $3,$ since $x_5x_1$ is never divisible by $3,$ now we just need to find the number of ways $x_4+x_2$ is divisible by $3.$ Note that $x_2$ and $x_4$ can be $(1, 2), (2, 1), (1, 5), (5, 1), (2, 4), (4, 2), (4, 5),$ or $(5, 4).$ We have $2$ ways to designate $x_1$ and $x_5$ for a total of $8 \cdot 2 = 16.$ So the desired answer is $16 \cdot 5=\boxed{080}.$
 
- 
 
 
 
@@ -249,16 +237,18 @@ Since $3$ is one of the numbers, a product with a $3$ in it is automatically div
 
 The expression $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_1 + x_5x_1x_2$ has symmetry. Without the loss of generality, let $x_1=3.$ It follows that $\{x_2,x_3,x_4,x_5\}=\{1,2,4,5\}.$ We have:
 
- <ol style="margin-left: 1.5em;"> \item $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_1 + x_5x_1x_2\equiv x_2x_3x_4 + x_3x_4x_5\pmod{3}.$ 
+ 
+            \begin{enumerate} 
+        \item $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_1 + x_5x_1x_2\equiv x_2x_3x_4 + x_3x_4x_5\pmod{3}.$
 
- \item $x_2,x_3,x_4,x_5$ are congruent to $1,2,1,2\pmod{3}$ in some order.
+        \item $x_2,x_3,x_4,x_5$ are congruent to $1,2,1,2\pmod{3}$ in some order.
 
- </ol>We construct the following table for the case $x_1=3,$ with all values in modulo $3:$
+            \end{enumerate}
+            We construct the following table for the case $x_1=3,$ with all values in modulo $3:$
  \[\begin{array}{c||c|c|c|c|c||c} & & & & & & \\ [-2.5ex] \textbf{Row} & \boldsymbol{x_2} & \boldsymbol{x_3} & \boldsymbol{x_4} & \boldsymbol{x_5} & \boldsymbol{x_2x_3x_4 + x_3x_4x_5} & \textbf{Valid?} \\ [0.5ex] \hline & & & & & & \\ [-2ex] 1 & 1 & 1 & 2 & 2 & 0 & \checkmark \\ 2 & 1 & 2 & 1 & 2 & 0 & \checkmark \\ 3 & 1 & 2 & 2 & 1 & 2 & \\ 4 & 2 & 1 & 1 & 2 & 1 & \\ 5 & 2 & 1 & 2 & 1 & 0 & \checkmark \\ 6 & 2 & 2 & 1 & 1 & 0 & \checkmark \end{array}\]For Row 1, $(x_2,x_3)$ can be either $(1,4)$ or $(4,1),$ and $(x_4,x_5)$ can be either $(2,5)$ or $(5,2).$ By the Multiplication Principle, Row 1 produces $2\cdot2=4$ permutations. Similarly, Rows 2, 5, and 6 each produce $4$ permutations.
 
  Together, we get $4\cdot4=16$ permutations for the case $x_1=3.$ By symmetry, the cases $x_2=3, x_3=3, x_4=3,$ and $x_5=3$ all have the same count. Therefore, the total number of permutations $x_1, x_2, x_3, x_4, x_5$ is $16\cdot5=\boxed{080}.$
 
- 
 
 
 
@@ -293,9 +283,8 @@ WLOG, let $x_{3} = 3$So, the terms $x_{1}x_{2}x_{3}, x_{2}x_{3}x_{4},x_{3}x_{4}x
 WLOG, let $x_{3} = 3$. Then:
  \[x_{1}x_{2}x_{3} + x_{2}x_{3}x_{4} + x_{3}x_{4}x_{5} + x_{4}x_{5}x_{1} + x_{5}x_{1}x_{2} = 3 (x_1 x_2 + x_2 x_4 + x_4 x_5) + x_5 x_1 (x_2  + x_4).\]The sum is divisible by $3$ if and only if  $x_2  + x_4$  is divisible by $3$.The possible sums of  $x_2  + x_4$ are $1 + 2, 1 + 4, 1 + 5, 2 + 4, 2 + 5, 4 + 5.$Two of them are not multiples of $3$, but four of them are multiples.
 
- A total number of  permutations is $5! = 120.$ 
-
- $\frac {2}{3}$ of this number, that is, $80,$ give sums that are multiples of $3.$
+ A total number of  permutations is $5! = 120.$
+$\frac {2}{3}$ of this number, that is, $80,$ give sums that are multiples of $3.$
 
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
@@ -327,13 +316,10 @@ We have $4$ possibilities from above. Since we can also have $5+1$ or $2+4,$ the
 
  Remember that $3$ can be any of $5$ different variables. So, we multiply by $5$ to get the answer $\boxed{080}.$
 
- 
 
 
 	\item (\textit{AIME II 2021}) There are real numbers $a, b, c,$ and $d$ such that $-20$ is a root of $x^3 + ax + b$ and $-21$ is a root of $x^3 + cx^2 + d.$ These two polynomials share a complex root $m + \sqrt{n} \cdot i,$ where $m$ and $n$ are positive integers and $i = \sqrt{-1}.$ Find $m+n.$
 
-
- 
  \textbf{Answer: }330
 
 
@@ -350,7 +336,6 @@ Applying Vieta's Formulas to $x^3+ax+b,$ we have $-20+z+\overline{z}=0.$ Substit
 
  Finally, the answer is $m+n=\boxed{330}.$
 
- 
 
 
 
@@ -359,8 +344,7 @@ Applying Vieta's Formulas to $x^3+ax+b,$ we have $-20+z+\overline{z}=0.$ Substit
 $(-20)^{3} + (-20)a + b = 0$, hence $-20a + b = 8000$
 
  Also, $(-21)^{3} + c(-21)^{2} + d = 0$, hence $441c + d = 9261$
-
- $m + i \sqrt{n}$ satisfies both $\Rightarrow$ we can put it in both equations and equate to 0.
+$m + i \sqrt{n}$ satisfies both $\Rightarrow$ we can put it in both equations and equate to 0.
 
  In the first equation, we get$(m + i \sqrt{n})^{3} + a(m + i \sqrt{n}) + b = 0$Simplifying this further, we get $(m^{3} - 3mn + am + b) + i(3m^{2} \sqrt{n} - n\sqrt{n} + a\sqrt{n}) = 0$
 
@@ -373,8 +357,7 @@ $(-20)^{3} + (-20)a + b = 0$, hence $-20a + b = 8000$
  Comparing (1) and (2),
 
  $a = 2mc$ and $am + b = m^{2}c - nc + d \rightarrow (3)$
-
- $b = 8000 + 20a \Rightarrow b = 40mc + 8000$; $d = 9261 - 441c$
+$b = 8000 + 20a \Rightarrow b = 40mc + 8000$; $d = 9261 - 441c$
 
  Substituting these in $(3)$ gives, $2m^{2}c + 8000 + 40mc = m^{2}c - nc + 9261 - 441c$
 
@@ -386,8 +369,7 @@ $(-20)^{3} + (-20)a + b = 0$, hence $-20a + b = 8000$
 Consider case of $c = 1$:
 
  $c = 1 \Rightarrow d = 8820$Also, $a = 2m, b = 8000 + 40m$
-
- $am + b = m^{2} - n + 8820$ (because c = 1)Also, $m^{2} + n + 40m = 820 \rightarrow (4)$Also, Equation (2) gives $3m^{2} - n + 2m = 0 \rightarrow (5)$
+$am + b = m^{2} - n + 8820$ (because c = 1)Also, $m^{2} + n + 40m = 820 \rightarrow (4)$Also, Equation (2) gives $3m^{2} - n + 2m = 0 \rightarrow (5)$
 
  Solving (4) and (5) simultaneously gives $m = 10, n = 320$
 
@@ -407,7 +389,6 @@ We start off by applying Vieta's, and we find that $a=m^2+n-40m$, $b=20m^2+20n$,
 
  With this property, we know that $-21m^2+1682m-8000$ is divisible by $21$, so $1682m-8000=0 \pmod{21}$. This results in $2m-20=0 \pmod{21}$, which finally gives us $m=10 \pmod{21}$. We can test the first obvious value of $m$, which is $10$, to find that this works, and we get $m=10$ and $n=320$. Therefore, the answer is $m + n = 10 + 320 = \boxed{330}.$
 
- 
 
 
 
@@ -477,18 +458,14 @@ We start by defining a triangle. The two small sides MUST add to a larger sum th
 If $a,b,$ and $c$ are the side-lengths of an obtuse triangle with $a\leq b\leq c,$ then both of the following must be satisfied:
 
  
-                \begin{itemize}
-                    \item \textit{Triangle Inequality Theorem:} $a+b>c$
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item \textit{Pythagorean Inequality Theorem:} $a^2+b^2<c^2$
-                \end{itemize}
-
-
-                For one such obtuse triangle, let $4,10,$ and $x$ be its side-lengths and $K$ be its area. We apply casework to its longest side:
+            \begin{itemize}
+        \item \textit{Triangle Inequality Theorem:} $a+b>c$
+            \end{itemize}
+            
+            \begin{itemize}
+        \item \textit{Pythagorean Inequality Theorem:} $a^2+b^2<c^2$
+            \end{itemize}
+            For one such obtuse triangle, let $4,10,$ and $x$ be its side-lengths and $K$ be its area. We apply casework to its longest side:
 
  \textbf{Case (1): The longest side has length $\boldsymbol{10,}$ so $\boldsymbol{0<x<10.}$}
 
@@ -515,7 +492,6 @@ If $a,b,$ and $c$ are the side-lengths of an obtuse triangle with $a\leq b\leq c
  It is possible for noncongruent obtuse triangles to have the same area. Therefore, all such positive real numbers $s$ are in exactly one of $\left(0,2\sqrt{84}\right)$ or $\left(0,20\right).$ By the exclusive disjunction, the set of all such $s$ is 
  \[[a,b)=\left(0,2\sqrt{84}\right)\oplus\left(0,20\right)=\left[2\sqrt{84},20\right),\] from which $a^2+b^2=\boxed{736}.$
 
- 
 
 
 
@@ -543,7 +519,6 @@ We have the diagram below.
  \[s\in [4\sqrt{21},20)\]giving 
  \[a^2+b^2=\boxed{736}.         \Box\]
 
- 
 
 
 
@@ -552,7 +527,6 @@ We have the diagram below.
 Note: Archimedes15 Solution which I added an answerhere are two cases. Either the $4$ and $10$ are around an obtuse angle or the $4$ and $10$ are around an acute triangle. If they are around the obtuse angle, the area of that triangle is $<20$ as we have $\frac{1}{2} \cdot 40 \cdot \sin{\alpha}$ and $\sin$ is at most $1$. Note that for the other case, the side lengths around the obtuse angle must be $4$ and $x$ where we have $16+x^2 < 100 \rightarrow x < 2\sqrt{21}$. Using the same logic as the other case, the area is at most $4\sqrt{21}$. Square and add $4\sqrt{21}$ and $20$ to get the right answer 
  \[a^2+b^2= \boxed{736}\Box\]
 
- 
 
 
 
@@ -567,28 +541,33 @@ For $\triangle ABC,$ we fix $AB=10$ and $BC=4.$ Without the loss of generality, 
                     \end{figure}
                     Note that:
 
- <ol style="margin-left: 1.5em;"> \item The region in which $\angle B$ is obtuse is determined by construction. 
+ 
+            \begin{enumerate} 
+        \item The region in which $\angle B$ is obtuse is determined by construction.
 
- \item The region in which $\angle C$ is obtuse is determined by the corollaries of the Inscribed Angle Theorem.
+        \item The region in which $\angle C$ is obtuse is determined by the corollaries of the Inscribed Angle Theorem.
 
- </ol>For any fixed value of $s,$ the height from $C$ is fixed. We need obtuse $\triangle ABC$ to be unique, so there can only be one possible location for $C.$ As shown below, all possible locations for $C$ are on minor arc $\widehat{C_1C_2},$ including $C_1$ but excluding $C_2.$
+            \end{enumerate}
+            For any fixed value of $s,$ the height from $C$ is fixed. We need obtuse $\triangle ABC$ to be unique, so there can only be one possible location for $C.$ As shown below, all possible locations for $C$ are on minor arc $\widehat{C_1C_2},$ including $C_1$ but excluding $C_2.$
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_5_Solution_Figure_3.png}
                     \end{figure}
                     Let the brackets denote areas: 
 
- <ul style="list-style-type:square;"> \item If $C=C_1,$ then $[ABC]$ will be minimized (attainable). By the same base and height and the Inscribed Angle Theorem, we have
- \begin{align*} [ABC]&=[ABD] \\ &=\frac12\cdot BD\cdot DA \\ &=\frac12\cdot BD\cdot \sqrt{AB^2-BD^2} \\ &=\frac12\cdot 4\cdot \sqrt{10^2-4^2} \\ &=2\sqrt{84}. \end{align*}
  
+            \begin{itemize} 
+        \item If $C=C_1,$ then $[ABC]$ will be minimized (attainable). By the same base and height and the Inscribed Angle Theorem, we have
+ \begin{align*} [ABC]&=[ABD] \\ &=\frac12\cdot BD\cdot DA \\ &=\frac12\cdot BD\cdot \sqrt{AB^2-BD^2} \\ &=\frac12\cdot 4\cdot \sqrt{10^2-4^2} \\ &=2\sqrt{84}. \end{align*}
 
- \item If $C=C_2,$ then $[ABC]$ will be maximized (unattainable). For this right triangle, we have
+
+        \item If $C=C_2,$ then $[ABC]$ will be maximized (unattainable). For this right triangle, we have
  \begin{align*} [ABC]&=\frac12\cdot AB\cdot BC \\ &=\frac12\cdot 10\cdot 4 \\ &=20. \end{align*}
 
 
- </ul>Finally, the set of all such $s$ is $[a,b)=\left[2\sqrt{84},20\right),$ from which $a^2+b^2=\boxed{736}.$
+            \end{itemize}
+            Finally, the set of all such $s$ is $[a,b)=\left[2\sqrt{84},20\right),$ from which $a^2+b^2=\boxed{736}.$
 
- 
 
 
 
@@ -647,8 +626,6 @@ If $4$ and $10$ are the shortest sides and $\angle C$ is the included angle, the
 
  \[|A| \cdot |B| = |A \cap B| \cdot |A \cup B|\]
 
-
- 
  \textbf{Answer: }454
 
 
@@ -714,7 +691,6 @@ We denote $\Omega = \left\{ 1 , 2 , 3 , 4 , 5 \right\}$.We denote $X = A \cap B$
  \begin{align*} \left( 3^5 - 2^5 \right) + \left( 3^5 - 2^5 \right) + 2^5 & = 2 \cdot 3^5 - 2^5 \\ & = \boxed{454} . \end{align*}
 
 
- 
 
 
 
@@ -726,18 +702,14 @@ By the \textbf{Principle of Inclusion-Exclusion (abbreviated as PIE)}, we have $
 from which at least one of the following is true: 
 
  
-                \begin{itemize}
-                    \item $|A|=|A \cap B|$
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $|B|=|A \cap B|$
-                \end{itemize}
-
-
-                Let $|A \cap B|=k.$ For each value of $k\in\{0,1,2,3,4,5\},$ we will use PIE to count the ordered pairs $(A,B):$
+            \begin{itemize}
+        \item $|A|=|A \cap B|$
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $|B|=|A \cap B|$
+            \end{itemize}
+            Let $|A \cap B|=k.$ For each value of $k\in\{0,1,2,3,4,5\},$ we will use PIE to count the ordered pairs $(A,B):$
 
  Suppose $|A|=k.$ There are $\binom{5}{k}$ ways to choose the elements for $A.$ These $k$ elements must also appear in $B.$ Next, there are $2^{5-k}$ ways to add any number of the remaining $5-k$ elements to $B$ (Each element has $2$ options: in $B$ or not in $B.$). There are $\binom{5}{k}2^{5-k}$ ordered pairs for $|A|=k.$ Similarly, there are $\binom{5}{k}2^{5-k}$ ordered pairs for $|B|=k.$ 
 
@@ -862,7 +834,6 @@ If $ab=6,$ then combining this with $(1),$ we know that $a$ and $b$ are the solu
  If $ab=-10,$ then combining this with $(1),$ we know that $a$ and $b$ are the solutions of the quadratic $x^2+3x-10=0,$ or $(x+5)(x-2)=0,$ from which $\{a,b\}=\{-5,2\}.$ Substituting $ab=-10$ into $(5)$ and $(6),$ we obtain $c=-2$ and $d=\frac32,$ respectively. Together, we have 
  \[a^2+b^2+c^2+d^2=\frac{141}{4},\] so the answer is $141+4=\boxed{145}.$
 
- 
 
 
 
@@ -873,7 +844,6 @@ Let the four equations from top to bottom be listed 1 through 4 respectively. We
  \[ab+c(a+b)=-4\]After plugging in equation 1, we get $ab-3c=-4$. Now we convert it into a quadratic to receive $3c^2-4c-abc=0$. The value of $abc$ will depend on $d$. So we obtain the discriminant $16+12abc$.Let $d = -5$.Then $abc = \frac{30}{-5}$, so $abc=-6$, discriminant is $16-72$, which makes this a dead end. Thus $d=\frac{3}{2}$For $d=\frac{3}{2}$, making $abc=20$. This means the discriminant is just $256$, so we obtain two values for $c$ as well. We get either $c=\frac{10}{3}$ or $c=-2$. So, we must AGAIN test which one is correct.We know $ab=3c-4$, and $a+b=-3$, so we use these values for testing.Let $c=\frac{10}{3}$.Then $ab=6$, so $a=\frac{6}{b}$. We thus get $\frac{6}{b}+b=-3$, which leads to the quadratic $b^2+3b+6$. The discriminant for this is $9-24$. That means this value of $c$ is wrong, so $c=-2$. Thus we get polynomial $b^2+3b-10$. The discriminant this time is $49$, so we get two values for $b$. Through simple inspection, you may see they are interchangeable, as if you take the value $b=2$, you get $a=-5$. If you take the value $b=-5$, you get $a=2$. So it doesn't matter. That means the sum of all their squares is
  \[\frac{9}{4}+4+4+25=\frac{141}{4},\]so the answer is $141+4=\boxed{145}.$
 
- 
 
 
 
@@ -888,8 +858,6 @@ Let the four equations from top to bottom be listed $(1)$ through $(4)$ respecti
 
 	\item (\textit{AIME II 2021}) An ant makes a sequence of moves on a cube where a move consists of walking from one vertex to an adjacent vertex along an edge of the cube. Initially the ant is at a vertex of the bottom face of the cube and chooses one of the three adjacent vertices to move to as its first move. For all moves after the first move, the ant does not return to its previous vertex, but chooses to move to one of the other two adjacent vertices. All choices are selected at random so that each of the possible moves is equally likely. The probability that after exactly $8$ moves that ant is at a vertex of the top face on the cube is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
 
-
- 
  \textbf{Answer: }049
 
 
@@ -899,50 +867,50 @@ Let the four equations from top to bottom be listed $(1)$ through $(4)$ respecti
 For all positive integers $k,$ let
 
  
-                \begin{itemize}
-                    \item $N(k,\mathrm{BB})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the bottom face to the bottom face.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $N(k,\mathrm{BT})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the bottom face to the top face.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $N(k,\mathrm{TB})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the top face to the bottom face.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $N(k,\mathrm{TT})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the top face to the top face.
-                \end{itemize}
-
-
-                The base case occurs at $k=1,$ from which $\left(N(1,\mathrm{BB}),N(1,\mathrm{BT}),N(1,\mathrm{TB}),N(1,\mathrm{TT})\right)=(2,1,0,0).$ 
+            \begin{itemize}
+        \item $N(k,\mathrm{BB})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the bottom face to the bottom face.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $N(k,\mathrm{BT})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the bottom face to the top face.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $N(k,\mathrm{TB})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the top face to the bottom face.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $N(k,\mathrm{TT})$ be the number of ways to make a sequence of exactly $k$ moves, where the last move is from the top face to the top face.
+            \end{itemize}
+            The base case occurs at $k=1,$ from which $\left(N(1,\mathrm{BB}),N(1,\mathrm{BT}),N(1,\mathrm{TB}),N(1,\mathrm{TT})\right)=(2,1,0,0).$ 
 
  Suppose the ant makes exactly $k$ moves for some $k\geq2.$ We perform casework on its last move:
 
- <ol style="margin-left: 1.5em;"> \item If its last move is from the bottom face to the bottom face, then its next move has
+ 
+            \begin{enumerate} 
+        \item If its last move is from the bottom face to the bottom face, then its next move has
 
- <ul style="margin-left: 1.5em; list-style-type: circle"> \item $1$ way to move from the bottom face to the bottom face. 
+            \begin{itemize} 
+        \item $1$ way to move from the bottom face to the bottom face.
 
- \item $1$ way to move from the bottom face to the top face.
+        \item $1$ way to move from the bottom face to the top face.
 
- </ul> \item If its last move is from the bottom face to the top face, then its next move has $2$ ways to move from the top face to the top face. 
+            \end{itemize}
+             
+        \item If its last move is from the bottom face to the top face, then its next move has $2$ ways to move from the top face to the top face.
 
- \item If its last move is from the top face to the bottom face, then its next move has $2$ ways to move from the bottom face to the bottom face. 
+        \item If its last move is from the top face to the bottom face, then its next move has $2$ ways to move from the bottom face to the bottom face.
 
- <li>If its last move is from the top face to the top face, then its next move has
+        \item If its last move is from the top face to the top face, then its next move has
 
- <ul style="margin-left: 1.5em; list-style-type: circle"> \item $1$ way to move from the top face to the bottom face. 
+ 
+            \begin{itemize} <li>$1$ way to move from the top face to the bottom face.</li>
+<li>$1$ way to move from the top face to the top face.</li>
 
- \item $1$ way to move from the top face to the top face.
-
- </ul></li></ol>Alternatively, this recursion argument is illustrated below, where each dashed arrow indicates $1$ way, and each solid arrow indicates $2$ ways:
+            \end{itemize}
+            
+            \end{enumerate}
+            Alternatively, this recursion argument is illustrated below, where each dashed arrow indicates $1$ way, and each solid arrow indicates $2$ ways:
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_8_Solution_Figure_1.png}
@@ -956,7 +924,6 @@ Using these equations, we recursively fill out the table below:
  Finally, the requested probability is 
  \[\frac{N(8,\mathrm{BT})+N(8,\mathrm{TT})}{N(8,\mathrm{BB})+N(8,\mathrm{BT})+N(8,\mathrm{TB})+N(8,\mathrm{TT})}=\frac{66+138}{118+66+62+138}=\frac{204}{384}=\frac{17}{32},\] from which the answer is $17+32=\boxed{049}.$
 
- 
 
 
 
@@ -974,7 +941,6 @@ Let the state from bottom to top be $B2T,$ from top to top be $T2T,$ from top to
 Those probabilities are calculated by \href{https://en.wikipedia.org/wiki/Dynamic\_programming}{Dynamic Programming} in the following table:
  \[\begin{array}{c|cccc}  &  &  &  & \\ [-2ex] n & B2T(n) & T2T(n) & T2B(n) & B2B(n) \\ [1ex] \hline  &  &  &  & \\ [-1ex] 1 & \frac13 & 0 & 0 & \frac23\\  &  &  &  & \\ 2 & \frac23 \cdot \frac12 = \frac13 & \frac13 & 0 & \frac23 \cdot \frac12 = \frac13 \\  &  &  &  & \\ 3 & \frac13 \cdot \frac12 = \frac16 & \frac13 + \frac13 \cdot \frac12 = \frac12 & \frac13 \cdot \frac12 = \frac16 & \frac13 \cdot \frac12 = \frac16 \\  &  &  &  & \\ 4 & \frac16 \cdot \frac12 = \frac{1}{12} & \frac16 + \frac12 \cdot \frac12 = \frac{5}{12} & \frac12 \cdot \frac12 = \frac14 & \frac16 + \frac16 \cdot \frac12 = \frac14 \\  &  &  &  & \\ 5 & \frac14 \cdot \frac12 = \frac18 & \frac{1}{12} + \frac{5}{12} \cdot \frac{1}{2} = \frac{7}{24} & \frac{5}{12} \cdot \frac12 = \frac{5}{24} & \frac14 + \frac14 \cdot \frac12 = \frac38 \\  &  &  &  & \\ 6 & \frac38 \cdot \frac12 = \frac{3}{16} & \frac18 + \frac{7}{24} \cdot \frac12 = \frac{13}{48} & \frac{7}{24} \cdot \frac12 = \frac{7}{48} & \frac{5}{24} + \frac38 \cdot \frac12 = \frac{19}{48} \\  &  &  &  & \\ 7 & \frac{19}{48} \cdot \frac12 = \frac{19}{96}&  \frac{3}{16} + \frac{13}{48} \cdot \frac{1}{2} = \frac{31}{96}& \frac{13}{48} \cdot \frac{1}{2} = \frac{13}{96} & \frac{7}{48} + \frac{19}{48} \cdot \frac12 = \frac{11}{32}\\  &  &  &  & \\ 8 & \frac{11}{32} \cdot \frac{1}{2} = \frac{11}{64} & \frac{19}{96} + \frac{31}{96} \cdot \frac12 = \frac{23}{64} & \frac{31}{96} \cdot \frac12 = \frac{31}{192} & \frac{13}{96} + \frac{11}{32} \cdot \frac12 = \frac{59}{192} \\ [1ex] \end{array}\]Finally, the requested probability is $\frac{11}{64} + \frac{23}{64} = \frac{17}{32},$ from which the answer is $17 + 32 = \boxed{049}.$
 
- 
 
 
 
@@ -999,15 +965,8 @@ On each move, we can either stay on the level we previously were (stay on the bo
 
  
             \begin{enumerate}
-                <li>\textbf{Case 1: one switch.} Our one switch can either happen at the start/end of our moves, or in the middle. There are $4 + 24 = 28$ ways to do this, outlined below.
-            \begin{enumerate}
-                \item \textbf{Subcase 1: switch happens at ends.} If our first move is a switch, then there are two ways to determine the direction we travel along the top layer. Multiply by $2$ to count for symmetry (last move is a switch) so this case yields $2^2 = 4$ possibilities.\item \textbf{Subcase 2: switch happens in the middle.} There are six places for the switch to happen; the switch breaks the sequences of moves into two chains, with each having $2$ ways to choose their direction of travel. This case yields $6 \cdot 2^2 = 24$ possibilities.
-            \end{enumerate}
-            </li><li>\textbf{Case 2: three switches.} Either two, one, or none of our switches occur at the start/end of our moves. There are $16 + 96 + 64 = 176$ ways to do this, outlined below. (Keep in mind we can't have two switches in a row.)
-            \begin{enumerate}
-                \item \textbf{Subcase 1: start and end with a switch.} Since our third switch can't be in moves $2$ or $7$, there are four ways to place our switch, breaking our sequence into two chains. This case yields $4 \cdot 2^2 = 16$ possibilities.\item \textbf{Subcase 2: one of our switches is at the start/end.} WLOG our first move is a switch; moves $2$ and $8$ cannot be switches. We can choose $2$ from any of the remaining $5$ moves to be switches, but we have to subtract the $4$ illegal cases where the two switches are in a row (3-4, 4-5, 5-6, 6-7). These three switches break our sequence into three chains; accounting for symmetry this case yields $2\left(\binom{5}{2} - 4\right) \cdot 2^3 = 96$ possibilities.\item \textbf{Subcase 3: all our switches are in the middle.} We choose $3$ from any of the $6$ middle moves to be our switches, but have to subtract the cases where at least two of them are in a row. If at least two switches are in a row, there are five places for the group of $2$ and four places for the third switch; however this overcounts the case where all three are in a row, which has $4$ possibilities. These three switches break our sequence into four chains, so this case yields $\left(\binom{6}{3} - 5 \cdot 4 + 4\right) \cdot 2^4 = 64$ possibilities.
-            \end{enumerate}
-            </li>
+        \item \textbf{Case 1: one switch.} Our one switch can either happen at the start/end of our moves, or in the middle. There are $4 + 24 = 28$ ways to do this, outlined below.<ol><li>\textbf{Subcase 1: switch happens at ends.} If our first move is a switch, then there are two ways to determine the direction we travel along the top layer. Multiply by $2$ to count for symmetry (last move is a switch) so this case yields $2^2 = 4$ possibilities.</li><li>\textbf{Subcase 2: switch happens in the middle.} There are six places for the switch to happen; the switch breaks the sequences of moves into two chains, with each having $2$ ways to choose their direction of travel. This case yields $6 \cdot 2^2 = 24$ possibilities.</li></ol>
+        \item \textbf{Case 2: three switches.} Either two, one, or none of our switches occur at the start/end of our moves. There are $16 + 96 + 64 = 176$ ways to do this, outlined below. (Keep in mind we can't have two switches in a row.)<ol><li>\textbf{Subcase 1: start and end with a switch.} Since our third switch can't be in moves $2$ or $7$, there are four ways to place our switch, breaking our sequence into two chains. This case yields $4 \cdot 2^2 = 16$ possibilities.</li><li>\textbf{Subcase 2: one of our switches is at the start/end.} WLOG our first move is a switch; moves $2$ and $8$ cannot be switches. We can choose $2$ from any of the remaining $5$ moves to be switches, but we have to subtract the $4$ illegal cases where the two switches are in a row (3-4, 4-5, 5-6, 6-7). These three switches break our sequence into three chains; accounting for symmetry this case yields $2\left(\binom{5}{2} - 4\right) \cdot 2^3 = 96$ possibilities.</li><li>\textbf{Subcase 3: all our switches are in the middle.} We choose $3$ from any of the $6$ middle moves to be our switches, but have to subtract the cases where at least two of them are in a row. If at least two switches are in a row, there are five places for the group of $2$ and four places for the third switch; however this overcounts the case where all three are in a row, which has $4$ possibilities. These three switches break our sequence into four chains, so this case yields $\left(\binom{6}{3} - 5 \cdot 4 + 4\right) \cdot 2^4 = 64$ possibilities.</li></ol>
             \end{enumerate}
             Our probability is then $\frac{176 + 28}{3 \cdot 2^7} = \frac{17}{32}$, so the answer is $17+32=\boxed{049}$.
 
@@ -1075,30 +1034,22 @@ WLOG we assume the ant starts from B1. After 8 moves, it will arrive on one of T
  \textbf{Remark (Markov Chain)} This problem is similar to the following problems:
 
  
-                \begin{itemize}
-                    \item \href{https://artofproblemsolving.com/wiki/index.php/1985\_AIME\_Problems/Problem\_12}{1985 AIME Problem 12}
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item \href{https://artofproblemsolving.com/wiki/index.php/2003\_AIME\_II\_Problems/Problem\_13}{2003 AIME II Problem 13}
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item \href{https://artofproblemsolving.com/wiki/index.php/2021\_AMC\_12A\_Problems/Problem\_23}{2021 AMC 12A Problem 23}
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item \href{https://artofproblemsolving.com/wiki/index.php/2022\_AMC\_8\_Problems/Problem\_25}{2022 AMC 8 Problem 25}
-                \end{itemize}
-
-
-                They can all be solved by \href{https://en.wikipedia.org/wiki/Markov\_chain}{Markov Chain} and \href{https://en.wikipedia.org/wiki/Dynamic\_programming}{Dynamic Programming}.
+            \begin{itemize}
+        \item \href{https://artofproblemsolving.com/wiki/index.php/1985\_AIME\_Problems/Problem\_12}{1985 AIME Problem 12}
+            \end{itemize}
+            
+            \begin{itemize}
+        \item \href{https://artofproblemsolving.com/wiki/index.php/2003\_AIME\_II\_Problems/Problem\_13}{2003 AIME II Problem 13}
+            \end{itemize}
+            
+            \begin{itemize}
+        \item \href{https://artofproblemsolving.com/wiki/index.php/2021\_AMC\_12A\_Problems/Problem\_23}{2021 AMC 12A Problem 23}
+            \end{itemize}
+            
+            \begin{itemize}
+        \item \href{https://artofproblemsolving.com/wiki/index.php/2022\_AMC\_8\_Problems/Problem\_25}{2022 AMC 8 Problem 25}
+            \end{itemize}
+            They can all be solved by \href{https://en.wikipedia.org/wiki/Markov\_chain}{Markov Chain} and \href{https://en.wikipedia.org/wiki/Dynamic\_programming}{Dynamic Programming}.
 
  Let $p_{ij} = P(X_{n+1} = j | X_n = i)$ be the probability that state $i$ transits to state $j$ on the next step, and $s_i$ be the probability of being in state $i$. It follows that $s_j$ is the sum of the products of $s_i$ and $p_{ij}$ of all the previous state $i$: 
  \[s_j = \sum_{i} (s_{i} \cdot p_{ij}).\]This formula can also be applied to solve \href{https://artofproblemsolving.com/wiki/index.php/2019\_AMC\_10B\_Problems/Problem\_22}{2019 AMC10B Problem 22}.
@@ -1126,15 +1077,18 @@ which implies that $n$ must have more factors of $2$ than $m$ does.
  We construct the following table for the first $30$ positive integers:
  \[\begin{array}{c|c|c} && \\ [-2.5ex] \boldsymbol{\#}\textbf{ of Factors of }\boldsymbol{2} & \textbf{Numbers} & \textbf{Count} \\ \hline && \\ [-2.25ex]  0 & 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29 & 15 \\  && \\ [-2.25ex]  1 & 2,6,10,14,18,22,26,30 & 8 \\ && \\ [-2.25ex]  2 & 4,12,20,28 & 4 \\    && \\ [-2.25ex]  3 & 8,24 & 2 \\  && \\ [-2.25ex]  4 & 16 & 1 \\ \end{array}\]To count the ordered pairs $(m,n),$ we perform casework on the number of factors of $2$ that $m$ has:
 
- <ol style="margin-left: 1.5em;"> \item If $m$ has $0$ factors of $2,$ then $m$ has $15$ options and $n$ has $8+4+2+1=15$ options. So, this case has $15\cdot15=225$ ordered pairs. 
-
- \item If $m$ has $1$ factor of $2,$ then $m$ has $8$ options and $n$ has $4+2+1=7$ options. So, this case has $8\cdot7=56$ ordered pairs. 
-
- \item If $m$ has $2$ factors of $2,$ then $m$ has $4$ options and $n$ has $2+1=3$ options. So, this case has $4\cdot3=12$ ordered pairs. 
-
- \item If $m$ has $3$ factors of $2,$ then $m$ has $2$ options and $n$ has $1$ option. So, this case has $2\cdot1=2$ ordered pairs.</ol>Together, the answer is $225+56+12+2=\boxed{295}.$
-
  
+            \begin{enumerate} 
+        \item If $m$ has $0$ factors of $2,$ then $m$ has $15$ options and $n$ has $8+4+2+1=15$ options. So, this case has $15\cdot15=225$ ordered pairs.
+
+        \item If $m$ has $1$ factor of $2,$ then $m$ has $8$ options and $n$ has $4+2+1=7$ options. So, this case has $8\cdot7=56$ ordered pairs.
+
+        \item If $m$ has $2$ factors of $2,$ then $m$ has $4$ options and $n$ has $2+1=3$ options. So, this case has $4\cdot3=12$ ordered pairs.
+
+        \item If $m$ has $3$ factors of $2,$ then $m$ has $2$ options and $n$ has $1$ option. So, this case has $2\cdot1=2$ ordered pairs.
+            \end{enumerate}
+            Together, the answer is $225+56+12+2=\boxed{295}.$
+
 
 
 
@@ -1199,17 +1153,19 @@ Note that $\operatorname{lcm}(6,7)=42.$ It is clear that $42\not\in S$ and $84\n
                     \end{figure}
                     From the second row of the table above, we perform casework on the possible maximum value of $S:$
  \[\begin{array}{c||c|c|l} & & & \\ [-2.5ex] \textbf{Max Value} & \boldsymbol{S} & \textbf{Valid?} & \hspace{16.25mm}\textbf{Reasoning/Conclusion} \\ [0.5ex] \hline & & & \\ [-2ex] 49 & \{46,47,48,49\} & & \text{The student who gets } 46 \text{ will reply yes.} \\ 50 & \{47,48,49,50\} & \checkmark & \text{Another possibility is } S=\{89,90,91,92\}. \\ 51 & \{48,49,50,51\} & & \text{The student who gets } 51 \text{ will reply yes.} \\ 56 & \{53,54,55,56\} & & \text{The student who gets } 53 \text{ will reply yes.} \\ 57 & \{54,55,56,57\} & & \text{The student who gets } 57 \text{ will reply yes.} \\ 63 & \{60,61,62,63\} & & \text{The students who get } 60,61,62 \text{ will reply yes.} \\ 66 & \{63,64,65,66\} & & \text{The students who get } 64,65,66 \text{ will reply yes.} \\ 72 & \{69,70,71,72\} & & \text{The student who gets } 69 \text{ will reply yes.} \\ 73 & \{70,71,72,73\} & & \text{The student who gets } 73 \text{ will reply yes.} \\ 78 & \{75,76,77,78\} & & \text{The student who gets } 75 \text{ will reply yes.} \\ 79 & \{76,77,78,79\} & \checkmark & \text{Another possibility is } S=\{34,35,36,37\}. \\ 80 & \{77,78,79,80\} & & \text{The student who gets } 80 \text{ will reply yes.} \end{array}\]Finally, all possibilities for $S$ are $\{34,35,36,37\}, \{47,48,49,50\}, \{76,77,78,79\},$ and $\{89,90,91,92\},$ from which the answer is $37+50+79+92=\boxed{258}.$
+<u>\textbf{Remarks}</u>
 
- <u>\textbf{Remarks}</u>
-
- <ol style="margin-left: 1.5em;"> \item Alternatively, we can reconstruct the second table in this solution as follows, where Y and N denote the replies of "yes" and "no", respectively. Notice that this table has some kind of symmetry!
+            \begin{enumerate} 
+        \item Alternatively, we can reconstruct the second table in this solution as follows, where Y and N denote the replies of "yes" and "no", respectively. Notice that this table has some kind of symmetry!
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_11_Solution_Figure_2.png}
                     \end{figure}
-                     \item As a confirmation, we can verify that each student will be able to deduce what $S$ is upon hearing the four replies of "no" in unison. For example, if $S=\{47,48,49,50\},$ then all students will know that no one gets $46$ or $51,$ otherwise that student will reply yes (as discussed). Therefore, all students will conclude that $S$ has only one possibility.
+                     
+        \item As a confirmation, we can verify that each student will be able to deduce what $S$ is upon hearing the four replies of "no" in unison. For example, if $S=\{47,48,49,50\},$ then all students will know that no one gets $46$ or $51,$ otherwise that student will reply yes (as discussed). Therefore, all students will conclude that $S$ has only one possibility.
 
- </ol>
+            \end{enumerate}
+            
 
 
 
@@ -1221,7 +1177,6 @@ We know right away that $42\not\in S$ and $84\not\in S$ as stated in Solution 1.
 
  Now we read the student input. Each student says they can’t figure out what $S$ is just based on the teacher’s information, which means each student has to have a number that would be in 2 or 3 of the possible sets (This is based off of the first line of student input). However, now that each student knows that all of them have numbers that fit into more than one possible set, this means that S cannot have two possible sets because otherwise, when shifting from one set to the other, one of the end numbers would not be in the shifted set, but we know each number has to fall in two or more possible sets. For example, take $\{11,12,13,14\}$ and $\{12,13,14,15\}$. The numbers at the end, 11 and 15, only fall in one set, but each number must fall in at least two sets. This means that there must be three possible sets of S, in which case the actual S would be the middle S.Take for example $\{33,34,35,36\}$, $\{34,35,36,37\}$, and $\{35,36,37,38\}$. 37 and 34 fall in two sets while 35 and 36 fall in all three sets, so the condition is met. Now, this means that the multiple of 6 and 7 must differ by 1. Since 42 means the difference is 0, when you add/subtract 6 and 7, you will obtain the desired difference of 1, and similarly adding/subtracting 6 or 7 from 84 will also obtain the difference of 1. Thus there are four possible sets of $S$; $\{34,35,36,37\}$, $\{47,48,49,50\}$, $\{76,77,78,79\}$ and $\{89,90,91,92.\}$. Therefore the sum of the greatest elements of the possible sets $S$ is $37+50+79+92=\boxed{258}$
 
- 
 
 
 
@@ -1257,9 +1212,8 @@ Consider the tuple $(a, a+1, a+2, a+3)$ as a possible $S$. If one of the values 
 
  Similarly, if  $1 \pmod{7}$ person is $0 \pmod{6}$ we find that $a \equiv 6 \pmod{7}$ (so a $2 \pmod{7}$ is in $S$) and $a \equiv 4 \pmod{6}.$
 
- By CRT, the possibilities are $a \equiv 5,  34 \pmod{42}.$ The sum of the greatest values of $S$ are the sum of $a + 3$ and so we get $(34 + 3) + (47 + 3) + (76 + 3) + (89 + 3) = \boxed{258}.$ 
+ By CRT, the possibilities are $a \equiv 5,  34 \pmod{42}.$ The sum of the greatest values of $S$ are the sum of $a + 3$ and so we get $(34 + 3) + (47 + 3) + (76 + 3) + (89 + 3) = \boxed{258}.$
 
- 
 
 
 
@@ -1325,7 +1279,6 @@ From right triangles $\triangle AEA'$ and $\triangle CEC',$ we have $\tan\theta=
  \begin{align*} \frac{h_1+h_2}{q+r}&=\frac{40}{7} \\ \frac{r\tan\theta+q\tan\theta}{q+r}&=\frac{40}{7} \hspace{15mm} &&\text{by }(1\star)\text{ and }(2\star)\\ \frac{(r+q)\tan\theta}{q+r}&=\frac{40}{7} \\ \tan\theta&=\frac{40}{7}, \end{align*}
 from which the answer is $40+7=\boxed{047}.$
 
- 
 
 
 
@@ -1339,7 +1292,6 @@ from which the answer is $40+7=\boxed{047}.$
                     Given quadrilateral $ABCD$, let, $a, b, c, d$, be the sides, $s$ the semiperimeter, and $u, v$, the diagonals. Then the area, $K$, is given by 
  \[K = \frac 14 \sqrt {4u^2v^2-(b^2+d^2-a^2-c^2)^2}\]
 
- 
 
 
 
@@ -1369,7 +1321,6 @@ By Bretschneider's Formula,
 
  Let the point $B'$ be symmetric to $B$ with respect to the perpendicular bisector $AC.$ Then the quadrilateral $AB'CD$ is an inscribed one, $AB' = b, B'C = a.$
 
- 
  \[2 \angle AEB = \overset{\Large\frown} {AB}  + \overset{\Large\frown} {CD}.\]
  \begin{align*} 2\angle B'AD = \overset{\Large\frown} {B'C} + \overset{\Large\frown} {CD} = \overset{\Large\frown} {AB} + \overset{\Large\frown} {CD} \implies \angle AEB = \angle B'AD.\end{align*}
 
@@ -1389,7 +1340,6 @@ By Bretschneider's Formula,
  \textbf{Note 1} By generalization, the tangent of the acute angle formed by the diagonals is 
  \[\left|\frac{4A}{a^2-b^2+c^2-d^2}\right|.\]
 
- 
 
 
 	\item (\textit{AIME II 2021}) Find the least positive integer $n$ for which $2^n + 5^n - n$ is a multiple of $1000$.
@@ -1447,11 +1397,12 @@ It is clear that $n\geq3,$ from which we simplify to
  \begin{align*} 5^n &\equiv n \pmod{8}, \hspace{15mm} &(1) \\ 2^n &\equiv n \pmod{125}. &(2) \end{align*}
 We solve each congruence separately:
 
- <ol style="margin-left: 1.5em;"> <li>For $(1),$ quick inspections produce that $5^1,5^2,5^3,5^4,\ldots$ are congruent to $5,1,5,1,\ldots$ modulo $8,$ respectively. More generally, $5^n \equiv 5 \pmod{8}$ if $n$ is odd, and $5^n \equiv 1 \pmod{8}$ if $n$ is even. As $5^n$ is always odd (so is $n$), we must have $n\equiv5\pmod{8}.$ <i>\textbf{That is, $\boldsymbol{n=8r+5}$ for some nonnegative integer $\boldsymbol{r.}$}</i>
+ 
+            \begin{enumerate} 
+        \item For $(1),$ quick inspections produce that $5^1,5^2,5^3,5^4,\ldots$ are congruent to $5,1,5,1,\ldots$ modulo $8,$ respectively. More generally, $5^n \equiv 5 \pmod{8}$ if $n$ is odd, and $5^n \equiv 1 \pmod{8}$ if $n$ is even. As $5^n$ is always odd (so is $n$), we must have $n\equiv5\pmod{8}.$ <i>\textbf{That is, $\boldsymbol{n=8r+5}$ for some nonnegative integer $\boldsymbol{r.}$}</i>
 
- </li> 
 
- \item For $(2),$ we substitute the result from $(1)$ and simplify:
+        \item For $(2),$ we substitute the result from $(1)$ and simplify:
  \begin{align*} 2^{8r+5}&\equiv8r+5\pmod{125} \\ \left(2^8\right)^r\cdot2^5&\equiv8r+5\pmod{125} \\ 256^r\cdot32&\equiv8r+5\pmod{125} \\ 6^r\cdot32&\equiv8r+5\pmod{125}. \end{align*}
 Note that $5^3=125$ and $6=5+1,$ so we apply the Binomial Theorem to the left side:
  \begin{align*} (5+1)^r\cdot32&\equiv8r+5\pmod{125} \\ \Biggl[\binom{r}{0}5^0+\binom{r}{1}5^1+\binom{r}{2}5^2+\phantom{ }\underbrace{\binom{r}{3}5^3+\cdots+\binom{r}{r}5^r}_{0\pmod{125}}\phantom{ }\Biggr]\cdot32&\equiv8r+5\pmod{125} \\ \left[1+5r+\frac{25r(r-1)}{2}\right]\cdot32&\equiv8r+5\pmod{125} \\ 32+160r+400r(r-1)&\equiv8r+5\pmod{125} \\ 32+35r+25r(r-1)&\equiv8r+5\pmod{125} \\ 25r^2+2r+27&\equiv0\phantom{r+5}\pmod{125}. \hspace{15mm} (*) \end{align*}
@@ -1461,7 +1412,8 @@ Since $125\equiv0\pmod{5},$ it follows that
  \begin{align*} 25(5s+4)^2+2(5s+4)+27&\equiv0\pmod{125} \\ 625s^2+1010s+435&\equiv0\pmod{125} \\ 10s+60&\equiv0\pmod{125} \\ 10(s+6)&\equiv0\pmod{125} \\ s+6&\equiv0\pmod{25}. \end{align*}
 <i>\textbf{Therefore, the least such nonnegative integer $\boldsymbol{s}$ is $\boldsymbol{19.}$}</i>
 
- </ol>Finally, combining the bolded results from above generates the least such positive integer $n$ at $s=19:$
+            \end{enumerate}
+            Finally, combining the bolded results from above generates the least such positive integer $n$ at $s=19:$
  \begin{align*} n&=8r+5 \\ &=8(5s+4)+5 \\ &=40s+37 \\ &=\boxed{797}. \end{align*}
 ~MRENTHUSIASM (inspired by Math Jams's \textbf{2021 AIME II Discussion})
 
@@ -1476,7 +1428,6 @@ Since $125\equiv0\pmod{5},$ it follows that
  \[2^{8a+5}=32\cdot 2^{8a} \equiv 7(1+15)^{2a} \equiv 7(1+30a)\pmod{25}\]So we have $7(1+30a) \equiv 8a+5\pmod{25} \implies 202a \equiv 23 \implies 2a \equiv 23+25 \implies a \equiv 24 \pmod{25}$.Combining $a\equiv 24\pmod{25}$ with $n \equiv 5 \pmod{8}$ gives that $n$ is in the form of $197+200k$, $n=197,397,597,797$. Note that since $\phi(125)=100$
  \[2^{197+200k} \equiv 2^{197} \equiv 2^{-3} \equiv \underbrace{47}_{\text{Extended Euclidean Algorithm}}\pmod{125}\]Easy to check that only $\boxed{797}\equiv 47\pmod{125},{1797}\equiv 47\pmod{125},{2797}\equiv 47\pmod{125},...$
 
- 
 
 
 
@@ -1495,8 +1446,7 @@ Since $125\equiv0\pmod{5},$ it follows that
  2. If the expression $2^n + 5^n – n$ is a multiple of $1000,$ the number $n$ is odd ($2^n$ is even, $5^n$ is odd), which means that $5^n$ ends in $125.$ Therefore, the number $2^n – n$ ends in $875.$
 
  3. $2^3 – 3 = 8 – 3 = 5.$ The tens digit is even $(0),$ it cannot be transformed into $7$ in several steps, since at each <i>\textbf{step}</i> this digit changes by $2.$
-
- $17 = 20 – 3,$ so $2^{17} + 2^3$ is a multiple of $10,$ $(2^{17} – 17) + (2^3 – 3) = 2^{17} + 2^3 – 20$ is a multiple of $10.$ 
+$17 = 20 – 3,$ so $2^{17} + 2^3$ is a multiple of $10,$ $(2^{17} – 17) + (2^3 – 3) = 2^{17} + 2^3 – 20$ is a multiple of $10.$ 
  \[2^{17} \pmod {100} = ((2^{10} \pmod {100}) \cdot (2^7 \pmod {100})) \pmod {100} = (24 \cdot 28) \pmod {100} = 72.\]
  \[(2^{17} – 17 ) \pmod {100}  = 55.\]The tens digit $5$ is odd, subtracting $2$ at each <i>\textbf{step}</i> in $4$ <i>\textbf{steps}</i> of $20$ will turn it into $7.$So 
  \[(2^{97} – 97 ) \pmod {100} = 75.\]
@@ -1504,8 +1454,7 @@ Since $125\equiv0\pmod{5},$ it follows that
  \[(2^{97} – 97 ) \pmod {1000} = 575.\]We transform $5$ into $8$ in $7$ <i>\textbf{STEPS}</i>, so  
  \[(2^{797} – 797 ) \pmod {1000} = 875.\]
  \[(5^{797} + 2^{797} – 797 ) \pmod {1000} = 0.\]Note, that for $n = 797 + 1000k, k$ is an integer, the expression $2^n + 5^n – n$ is a multiple of $1000.$
-
- <i>\textbf{Claim}</i>
+<i>\textbf{Claim}</i>
 
  The numbers  $2^{n+2\cdot 5^k}+2^n=2^n(2^{2\cdot 5^k}+1)$ and $2^{n+4\cdot 5^k}-2^n=2^n(2^{4\cdot 5^k}-1)$ 
 
@@ -1514,8 +1463,7 @@ Since $125\equiv0\pmod{5},$ it follows that
  <i>\textbf{Proof}</i>
 
  First, if $m \pmod{10} \equiv 4,$ then  $(m^4 – m^3 + m^2 – m + 1) \pmod{10} \equiv 6 – 4 + 6 – 4 + 1 = 5.$
-
- $2^{4n+2}\pmod{10} \equiv 4.$ So, if the number  $2^{4n+2}  + 1$ is a multiple of $5^k$, then $2^{20n+10} + 1$ is a multiple of $5^{k +1}.$
+$2^{4n+2}\pmod{10} \equiv 4.$ So, if the number  $2^{4n+2}  + 1$ is a multiple of $5^k$, then $2^{20n+10} + 1$ is a multiple of $5^{k +1}.$
 
  Really, denote $m =  2^{4n+2},$ then,  $2^{20n+10} + 1 =  m^5 + 1 = (m + 1)\cdot (m^4 – m^3 + m^2 – m + 1).$
 
@@ -1551,22 +1499,16 @@ Problem require us to find minimum $n$ where $2^n + 5^n - n$ is a multiple of $1
  Moreover, we might found that for every 20 consequtive integer, $2^n \mod 100$ will repeat in a loop. Thus, by adding $5^n$ to first twenty element, which is $n=3$ to $n=22$, we can get a pattern of last two digit of $2^n + 5^n \mod{1000}$, which is 
 
  $33{,}41{,}57{,}89{,}53{,}$
-
- $81{,}37{,}49{,}73{,}21{,}$
-
- $17{,}09{,}93{,}61{,}97{,}$
-
- $69{,}13{,}01{,}77{,}29$
+$81{,}37{,}49{,}73{,}21{,}$
+$17{,}09{,}93{,}61{,}97{,}$
+$69{,}13{,}01{,}77{,}29$
 
  By subtracting n, we can also get following sequence:
 
  $30{,}37{,}52{,}83{,}46{,}$
-
- $73{,}28{,}39{,}62{,}09{,}$
-
- $04{,}95{,}78{,}45{,}80{,}$
-
- $51{,}94{,}81{,}56{,}07$
+$73{,}28{,}39{,}62{,}09{,}$
+$04{,}95{,}78{,}45{,}80{,}$
+$51{,}94{,}81{,}56{,}07$
 
  Noticing that only when $n=3$ and $n=17$, $2^n+5^n-n \equiv 0 \mod{10}$, so $n=3+20k$ and $17+20k$ are our possible candidates. However, since the length of our pattern is 20, we know that $n=3+20k$ is definetely not answer, which only left us $n=17+20k$.
 
@@ -1582,7 +1524,6 @@ Problem require us to find minimum $n$ where $2^n + 5^n - n$ is a multiple of $1
 
  $119{,}975{,}745{,}111{,}650{,}476{,}385{,}411{,}555{,}010{,}245{,}228{,}283{,}196{,}935{,}699{,}128{,}663{,}834{,}$$986{,}755{,}809{,}416{,}868{,}468{,}175{,}224{,}221{,}677{,}450{,}271{,}793{,}186{,}899{,}399{,}171{,}810{,}240{,}$$468{,}879{,}630{,}691{,}320{,}210{,}517{,}618{,}332{,}910{,}064{,}430{,}017{,}422{,}410{,}572{,}497{,}874{,}327{,}$$116{,}662{,}273{,}049{,}144{,}209{,}532{,}072{,}513{,}248{,}821{,}826{,}125{,}454{,}909{,}131{,}367{,}242{,}561{,}$$087{,}064{,}439{,}357{,}641{,}814{,}942{,}784{,}478{,}465{,}638{,}163{,}997{,}895{,}630{,}266{,}780{,}260{,}171{,}$$070{,}180{,}244{,}384{,}687{,}160{,}174{,}154{,}618{,}815{,}254{,}719{,}975{,}476{,}350{,}789{,}415{,}969{,}908{,}$$281{,}131{,}044{,}034{,}581{,}864{,}573{,}596{,}962{,}567{,}993{,}948{,}922{,}431{,}587{,}652{,}735{,}290{,}158{,}$$293{,}666{,}986{,}616{,}531{,}419{,}688{,}663{,}485{,}548{,}648{,}995{,}509{,}247{,}893{,}796{,}528{,}146{,}109{,}$$144{,}143{,}744{,}650{,}882{,}271{,}050{,}771{,}309{,}301{,}498{,}467{,}898{,}226{,}649{,}089{,}924{,}520{,}539{,}$$820{,}344{,}035{,}886{,}481{,}987{,}499{,}589{,}845{,}734{,}228{,}834{,}491{,}187.$
 
- 
 
 
 	\item (\textit{AIME II 2021}) Let $\Delta ABC$ be an acute triangle with circumcenter $O$ and centroid $G$. Let $X$ be the intersection of the line tangent to the circumcircle of $\Delta ABC$ at $A$ and the line perpendicular to $GO$ at $G$. Let $Y$ be the intersection of lines $XG$ and $BC$. Given that the measures of $\angle ABC, \angle BCA,$ and $\angle XOY$ are in the ratio $13 : 2 : 17,$ the degree measure of $\angle BAC$ can be written as $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1601,15 +1542,16 @@ In this solution, all angle measures are in degrees.
 
  Note that:
 
- <ol style="margin-left: 1.5em;"> <li>Since $\angle OGX = \angle OAX = 90,$ quadrilateral $OGAX$ is cyclic by the Converse of the Inscribed Angle Theorem.It follows that $\angle OAG = \angle OXG,$ as they share the same intercepted arc $\widehat{OG}.$
+ 
+            \begin{enumerate} 
+        \item Since $\angle OGX = \angle OAX = 90,$ quadrilateral $OGAX$ is cyclic by the Converse of the Inscribed Angle Theorem.It follows that $\angle OAG = \angle OXG,$ as they share the same intercepted arc $\widehat{OG}.$
 
- </li> 
 
- <li>Since $\angle OGY = \angle OMY = 90,$ quadrilateral $OGYM$ is cyclic by the supplementary opposite angles.It follows that $\angle OMG = \angle OYG,$ as they share the same intercepted arc $\widehat{OG}.$
+        \item Since $\angle OGY = \angle OMY = 90,$ quadrilateral $OGYM$ is cyclic by the supplementary opposite angles.It follows that $\angle OMG = \angle OYG,$ as they share the same intercepted arc $\widehat{OG}.$
 
- </li>
 
- </ol>Together, we conclude that $\triangle OAM \sim \triangle OXY$ by AA, so $\angle AOM = \angle XOY = 17k.$
+            \end{enumerate}
+            Together, we conclude that $\triangle OAM \sim \triangle OXY$ by AA, so $\angle AOM = \angle XOY = 17k.$
 
  Next, we express $\angle BAC$ in terms of $k.$ By angle addition, we have
  \begin{align*} \angle AOM &= \angle AOB + \angle BOM \\ &= 2\angle BCA + \frac12\angle BOC \hspace{10mm} &&\text{by Inscribed Angle Theorem and Perpendicular Bisector Property} \\ &= 2\angle BCA + \angle BAC. &&\text{by Inscribed Angle Theorem} \end{align*}
@@ -1619,7 +1561,6 @@ Substituting back gives $17k=2(2k)+\angle BAC,$ from which $\angle BAC=13k.$
  \begin{align*} \angle ABC + \angle BCA + \angle BAC &= 180 \\ 13k+2k+13k&=180 \\ 28k&=180 \\ k&=\frac{45}{7}. \end{align*}
 Finally, we obtain $\angle BAC=13k=\frac{585}{7},$ from which the answer is $585+7=\boxed{592}.$
 
- 
 
 
 
@@ -1652,12 +1593,9 @@ Firstly, let $M$ be the midpoint of $BC$. Then, $\angle OMB = 90^o$. Now, note t
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_14_Solution_Figure_1.png}
                     \end{figure}
                     $\angle OAX = \angle OGX = 90^\circ \implies$ quadrilateral $XAGO$ is cyclic $\implies$
-
- $\angle GXO =  \angle GAO,$ as they share the same intersept  $\overset{\Large\frown} {GO}.$
-
- $\angle OGY = \angle OMY =  90^\circ \implies$ quadrilateral $OGYM$ is cyclic $\implies$
-
- $\angle GYO = \angle OMG,$ as they share the same intercept $\overset{\Large\frown} {GO}.$
+$\angle GXO =  \angle GAO,$ as they share the same intersept  $\overset{\Large\frown} {GO}.$
+$\angle OGY = \angle OMY =  90^\circ \implies$ quadrilateral $OGYM$ is cyclic $\implies$
+$\angle GYO = \angle OMG,$ as they share the same intercept $\overset{\Large\frown} {GO}.$
 
  In triangles $\triangle XOY$ and  $\triangle AOM,$ two pairs of angles are equal, which means that the third angles  $\angle XOY =  \angle AOM$ are also equal.
 
@@ -1667,7 +1605,6 @@ Firstly, let $M$ be the midpoint of $BC$. Then, $\angle OMB = 90^o$. Now, note t
  \[\angle ABC : \angle BCA : \angle BAC = 13 : 2 : 13.\]
  \[\angle BAC = \frac{13} {13 + 2 + 13} \cdot 180^\circ =  \frac {585^\circ}{7} \implies  585 + 7 = \boxed{592}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2021_14_Solution_Figure_2.png}
@@ -1681,14 +1618,11 @@ Firstly, let $M$ be the midpoint of $BC$. Then, $\angle OMB = 90^o$. Now, note t
  If $\angle AOM = 2\angle ACB + \angle ABC,$ then $AC = BC.$
 
  We define $\angle AOM$ as the sum of $\angle AOB + \angle BOM,$ this angle can be greater than $180^\circ.$
-
- <i>\textbf{Proof}</i>
-
- $\angle BAC = \angle BOM$  as they share the same intercept $\overset{\Large\frown} {BC}$ (an inscribed angle and half of central angle). 
+<i>\textbf{Proof}</i>
+$\angle BAC = \angle BOM$  as they share the same intercept $\overset{\Large\frown} {BC}$ (an inscribed angle and half of central angle). 
 
  $\angle AOB = 2\angle ACB$  as they share the same intercept $\overset{\Large\frown} {AB}.$
 
- 
  \[\angle AOM = \angle AOB +  \angle BOM = 2 \angle ACB +  \angle CAB.\]
 
  If  $\angle AOM = 2 \angle ACB +  \angle ABC,$ then  $\angle ABC =  \angle CAB, AC = BC.$
@@ -1742,23 +1676,23 @@ Consider what happens when we try to calculate $f(n)$ where n is not a square. I
 
 We consider $f(n)$ and $g(n)$ separately:
 
- <ul style="list-style-type:square;"> <li>$\boldsymbol{f(n)}$We restrict $n$ in which $k^2<n\leq(k+1)^2$ for some positive integer $k,$ or 
+ 
+            \begin{itemize} 
+        \item $\boldsymbol{f(n)}$We restrict $n$ in which $k^2<n\leq(k+1)^2$ for some positive integer $k,$ or 
  \[n=(k+1)^2-p\hspace{40mm}(1)\] for some integer $p$ such that $0\leq p<2k+1.$ By recursion, we get
  \begin{align*} f\left((k+1)^2\right)&=k+1, \\ f\left((k+1)^2-1\right)&=k+2, \\ f\left((k+1)^2-2\right)&=k+3, \\ & \ \vdots \\ f\bigl(\phantom{ }\underbrace{(k+1)^2-p}_{n}\phantom{ }\bigr)&=k+p+1. \hspace{19mm}(2) \\ \end{align*}
 
 
- </li> 
 
- <li>$\boldsymbol{g(n)}$If $n$ and $(k+1)^2$ have the same parity, then we get $g(n)=f(n)$ by a similar process from $g\left((k+1)^2\right)=k+1.$ This contradicts the precondition $\frac{f(n)}{g(n)} = \frac{4}{7}.$ Therefore, $n$ and $(k+1)^2$ must have different parities, from which $n$ and $(k+2)^2$ must have the same parity. 
+        \item $\boldsymbol{g(n)}$If $n$ and $(k+1)^2$ have the same parity, then we get $g(n)=f(n)$ by a similar process from $g\left((k+1)^2\right)=k+1.$ This contradicts the precondition $\frac{f(n)}{g(n)} = \frac{4}{7}.$ Therefore, $n$ and $(k+1)^2$ must have different parities, from which $n$ and $(k+2)^2$ must have the same parity. 
 
  It follows that $k^2<n<(k+2)^2,$ or 
  \[n=(k+2)^2-2q\hspace{38.25mm}(3)\] for some integer $q$ such that $0<q<2k+2.$ By recursion, we get
  \begin{align*} g\left((k+2)^2\right)&=k+2, \\ g\left((k+2)^2-2\right)&=k+4, \\ g\left((k+2)^2-4\right)&=k+6, \\ & \ \vdots \\ g\bigl(\phantom{ }\underbrace{(k+2)^2-2q}_{n}\phantom{ }\bigr)&=k+2q+2. \hspace{15.5mm}(4) \\ \end{align*}
 
 
- </li> 
 
- <li>\textbf{Answer}By $(2)$ and $(4),$ we have 
+        \item \textbf{Answer}By $(2)$ and $(4),$ we have 
  \[\frac{f(n)}{g(n)}=\frac{k+p+1}{k+2q+2}=\frac{4}{7}. \hspace{27mm}(5)\]From $(1)$ and $(3),$ equating the expressions for $n$ gives $(k+1)^2-p=(k+2)^2-2q.$ Solving for $k$ produces 
  \[k=\frac{2q-p-3}{2}. \hspace{41.25mm}(6)\]We substitute $(6)$ into $(5),$ then simplify, cross-multiply, and rearrange:
  \begin{align*} \frac{\frac{2q-p-3}{2}+p+1}{\frac{2q-p-3}{2}+2q+2}&=\frac{4}{7} \\ \frac{p+2q-1}{-p+6q+1}&=\frac{4}{7} \\ 7p+14q-7&=-4p+24q+4 \\ 11p-11&=10q \\ 11(p-1)&=10q. \hspace{29mm}(7) \end{align*}
@@ -1768,14 +1702,13 @@ Since $\gcd(11,10)=1,$ we know that $p-1$ must be divisible by $10,$ and $q$ mus
  \[0<p+1<q<2k+2. \hspace{28mm}(8)\]To minimize $n$ in either $(1)$ or $(3),$ we minimize $k,$ so we minimize $p$ and $q$ in $(8).$ From $(6)$ and $(7),$ we construct the following table:
  \[\begin{array}{c|c|c|c} & & & \\ [-2.5ex] \boldsymbol{p} & \boldsymbol{q} & \boldsymbol{k} & \textbf{Satisfies }\boldsymbol{(8)?} \\ [0.5ex] \hline & & & \\ [-2ex] 11 & 11 & 4 & \\ 21 & 22 & 10 & \\ 31 & 33 & 16 & \checkmark \\ \geq41 & \geq44 & \geq22 & \checkmark \\ \end{array}\]Finally, we have $(p,q,k)=(31,33,16).$ Substituting this result into either $(1)$ or $(3)$ generates $n=\boxed{258}.$
 
- </li> 
 
- <li>\textbf{Remark}We can verify that 
+        \item \textbf{Remark}We can verify that 
  \[\frac{f(258)}{g(258)}=\frac{1\cdot31+f(258+1\cdot31)}{2\cdot33+g(258+2\cdot33)}=\frac{31+\overbrace{f(289)}^{17}}{66+\underbrace{g(324)}_{18}}=\frac{48}{84}=\frac47.\]
 
- </li>
 
- </ul>
+            \end{itemize}
+            
 
 
 
@@ -1902,7 +1835,6 @@ Define a nonnegative integer $k$ such that $g(n)-f(n)$ = $k$. Since $\frac{f(n)}
 
 Let $n=k^2-x$, where $0 \leq x \leq 2k-2$. This means that $f(n)=k+x$.For $g(x)$, note that $x$ must be odd, otherwise $f(n)=g(n)$. This means that $g(n)$ must 'skip' one perfect square (being $k^2$), and go to $(k+1)^2$. This will take $(k+1)^2-k^2+x+k+1=3k+x+2$. We have $\frac{k+x}{3k+x+2}=\frac{4}{7}$. Cross multiplying and simplifying we get $3x-5k=8$. Taking $mod 5$ we have $3x=3 \mod 5$ or $x = 1 \mod 5$. Note that the inequality $0 \leq x \leq 2k-2$ when $x=5t+1$ and $t \geq 5$. Trying out $t=5$, we get $x=26$ which doesn't work as x is even. Trying out $t=6$, we get $x=31$ and $k=17$, which satisfies all conditions, meaning the answer is $17^2-31=\boxed{258}.$
 
- 
 
 
 \end{enumerate}

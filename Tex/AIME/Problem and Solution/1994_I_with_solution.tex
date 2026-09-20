@@ -46,9 +46,7 @@ One less than a perfect square can be represented by $n^2 - 1 = (n+1)(n-1)$. Eit
 
 
 	\item (\textit{AIME I 1994}) The function $f_{}^{}$ has the property that, for each real number $x,\,$
-
-
- $f(x)+f(x-1) = x^2\,$
+$f(x)+f(x-1) = x^2\,$
 
  .
 
@@ -252,8 +250,7 @@ Picturing the diagram in your head should give you an illustration similar to th
 
 
  $ax+by=1\,$
-
- $x^2+y^2=50\,$
+$x^2+y^2=50\,$
 
  has at least one solution, and each solution is an ordered pair $(x,y)\,$ of integers.  How many such ordered pairs $(a,b)\,$ are there?
 
@@ -281,7 +278,6 @@ The equation $x^2+y^2=50$ is that of a circle of radius $\sqrt{50}$, centered at
  Therefore, our final count of distinct lines which pass through one or two of the lattice points on the circle, but do not pass through the origin, is
  \[66-6+12=\boxed{72}.\]
 
- 
 
 
 	\item (\textit{AIME I 1994}) The points $(0,0)\,$, $(a,11)\,$, and $(b,37)\,$ are the vertices of an equilateral triangle.  Find the value of $ab\,$.
@@ -359,8 +355,6 @@ Just using the Pythagorean Theorem, we get that $a^2 + 11^2 = (b-a)^2 + 26^2 = b
 
 	\item (\textit{AIME I 1994}) A solitaire game is played as follows.  Six distinct pairs of matched tiles are placed in a bag.  The player randomly draws tiles one at a time from the bag and retains them, except that matching tiles are put aside as soon as they appear in the player's hand.  The game ends if the player ever holds three tiles, no two of which match; otherwise the drawing continues until the bag is empty.  The probability that the bag will be emptied is $p/q,\,$ where $p\,$ and $q\,$ are relatively prime positive integers.  Find $p+q.\,$
 
-
- 
  \textbf{Answer: }394
 
 
@@ -370,12 +364,12 @@ Just using the Pythagorean Theorem, we get that $a^2 + 11^2 = (b-a)^2 + 26^2 = b
 Let $P_k$ be the \href{https://artofproblemsolving.com/wiki/index.php?title=Probability}{probability} of emptying the bag when it has $k$ pairs in it. Let's consider the possible draws for the first three cards:
 
  
-                \begin{itemize}
-                    \item Case 1. We draw a pair on the first two cards. The second card is the same as the first with probability $\frac {1}{2k - 1}$, then we have $k - 1$ pairs left. So this contributes probability $\frac {P_{k - 1}}{2k - 1}$.\item Case 2. We draw a pair on the first and third cards. The second card is different from the first with probability $\frac {2k - 2}{2k - 1}$ and the third is the same as the first with probability $\frac {1}{2k - 2}$. We are left with $k - 1$ pairs but one card already drawn. However, having drawn one card doesn't affect the game, so this also contributes probability $\frac {P_{k - 1}}{2k - 1}$.\item Case 3. We draw a pair on the second and third cards. This is pretty much the same as case 2, so we get $\frac {P_{k - 1}}{2k - 1}$.
-                \end{itemize}
-
-
-                Therefore, we obtain the \href{https://artofproblemsolving.com/wiki/index.php?title=Recursion}{recursion} $P_k = \frac {3}{2k - 1}P_{k - 1}$. Iterating this for $k = 6,5,4,3,2$ (obviously $P_1 = 1$), we get $\frac {3^5}{11*9*7*5*3} = \frac {9}{385}$, and $p+q=\boxed{394}$.
+            \begin{itemize}
+        \item Case 1. We draw a pair on the first two cards. The second card is the same as the first with probability $\frac {1}{2k - 1}$, then we have $k - 1$ pairs left. So this contributes probability $\frac {P_{k - 1}}{2k - 1}$.
+        \item Case 2. We draw a pair on the first and third cards. The second card is different from the first with probability $\frac {2k - 2}{2k - 1}$ and the third is the same as the first with probability $\frac {1}{2k - 2}$. We are left with $k - 1$ pairs but one card already drawn. However, having drawn one card doesn't affect the game, so this also contributes probability $\frac {P_{k - 1}}{2k - 1}$.
+        \item Case 3. We draw a pair on the second and third cards. This is pretty much the same as case 2, so we get $\frac {P_{k - 1}}{2k - 1}$.
+            \end{itemize}
+            Therefore, we obtain the \href{https://artofproblemsolving.com/wiki/index.php?title=Recursion}{recursion} $P_k = \frac {3}{2k - 1}P_{k - 1}$. Iterating this for $k = 6,5,4,3,2$ (obviously $P_1 = 1$), we get $\frac {3^5}{11*9*7*5*3} = \frac {9}{385}$, and $p+q=\boxed{394}$.
 
  
 
@@ -405,7 +399,6 @@ Call the case that we begin with [ABCDEF]. It doesn't matter what letter we choo
 
  And hence [ABCDEF] = $1*\frac{3}{5}*\frac{3}{7}*\frac{3}{9}*\frac{3}{11} = \frac{9}{385}$ so our answer is $9+385=\boxed{394}$
 
- 
 
 
 
@@ -436,8 +429,6 @@ Let $a_{m,n}$ represent the situation in which $n$ tiles are in your hand and $m
 
 	\item (\textit{AIME I 1994}) In triangle $ABC,\,$ angle $C$ is a right angle and the altitude from $C\,$ meets $\overline{AB}\,$ at $D.\,$  The lengths of the sides of $\triangle ABC\,$ are integers, $BD=29^3,\,$ and $\cos B=m/n\,$, where $m\,$ and $n\,$ are relatively prime positive integers.  Find $m+n.\,$
 
-
- 
  \textbf{Answer: }450
 
 
@@ -533,7 +524,6 @@ Assume each partitioned square has a side length of $1$ (just so we can get a cl
 
  Now the rest is elementary, we do $\frac{52}{\frac{4}{3}} * \frac{24}{\frac{4}{3}} \Rightarrow 39*18 = \boxed{702}$
 
- 
 
 
 	\item (\textit{AIME I 1994}) The equation
@@ -546,7 +536,6 @@ Assume each partitioned square has a side length of $1$ (just so we can get a cl
 
  $\frac 1{r_1\overline{r_1}}+\frac 1{r_2\overline{r_2}}+\frac 1{r_3\overline{r_3}}+\frac 1{r_4\overline{r_4}}+\frac 1{r_5\overline{r_5}}.$
 
- 
  \textbf{Answer: }850
 
 
@@ -588,7 +577,6 @@ Divide both sides by $x^{10}$ to get
  However, note that $e^{i\pi/10}+\cdots +e^{i(9\pi/5+\pi/10)}=0$ from drawing the numbers on the complex plane, our answer is just 
  \[5\cdot 170=\boxed{850}\]
 
- 
 
 
 
@@ -601,7 +589,6 @@ Let us apply difference of squares, by writing this equation as $(x^5)^2-(i[13x-
  \[\text{equation 1:   }x^5-i[13x-1]^5=0\text{ or equation 2:    }x^5+i[13x-1]^5=0\] We find the trivial solution to the first equation $x^5=i[13x-1]^5$, and since a fifth root of $i=i^5$ is $i$, we can find this solution by taking the fifth root, or when $x=(13x-1)i$, which when solved, gives $x=\frac{i}{13i-1}=\frac{13-i}{170}$. By using a similar approach to the second equation, $x^5+i[13x-1]^5=0$, or $x=-i(13x-1)$, we get $\frac{i}{13i+1}=\frac{13+i}{170}$. We observe that these are conjugates. We also note that $z\overline{z}=|z|^2$. Hence, we find the magnitude of one of these two conjugates, which is $\frac{1}{\sqrt{170}}$, or as we are finding the reciprocal of the square value of this, this contributes $170$ to the final answer. We claim that each of the roots of equation one is a conjugate of one of equation 2. We also notice that, by an application of DeMoivre's, each of the roots has the same magnitude, just a different angle. Hence, as each of the reciprocals of product of conjugates has the value $170$, and there are 5 of these pairs of conjugates, the answer is 
  \[170\cdot 5 = \boxed{850}\]
 
- 
 
 
 	\item (\textit{AIME I 1994}) A beam of light strikes $\overline{BC}\,$ at point $C\,$ with angle of incidence $\alpha=19.94^\circ\,$ and reflects with an equal angle of reflection as shown.  The light beam continues its path, reflecting off line segments $\overline{AB}\,$ and $\overline{BC}\,$ according to the rule: angle of incidence equals angle of reflection.  Given that $\beta=\alpha/10=1.994^\circ\,$ and $AB=BC,\,$ determine the number of times the light beam will bounce off the two line segments.  Include the first reflection at $C\,$ in your count.
@@ -614,8 +601,6 @@ Let us apply difference of squares, by writing this equation as $(x^5)^2-(i[13x-
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }071
 
 

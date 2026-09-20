@@ -70,7 +70,6 @@ By properties of logarithms, we can simplify the given equation to $x\log_xy=4y\
  
  \[4xy=100\implies xy=\boxed{025}.\]
 
- 
 
 
 
@@ -84,7 +83,6 @@ Convert the two equations into exponents:
 
  Take $(1)$ to the power of $\frac{1}{x}$
 
- 
 
 
 	\item (\textit{AIME I 2024}) Alice and Bob play the following game. A stack of $n$ tokens lies before them. The players take turns with Alice going first. On each turn, the player removes $1$ token or $4$ tokens from the stack. The player who removes the last token wins. Find the number of positive integers $n$ less than or equal to $2024$ such that there is a strategy that guarantees that Bob wins, regardless of Alice’s moves.
@@ -105,7 +103,6 @@ Let's first try some experimentation. Alice obviously wins if there is one coin.
 
  So we have to find the number of numbers less than or equal to $2024$ that are either congruent to $0$ mod $5$ or $2$ mod $5$. There are $404$ numbers in the first category: $5, 10, 15, \dots, 2020$. For the second category, there are $405$ numbers. $2, 7, 12, 17, \dots, 2022$. So the answer is $404 + 405 = \boxed{809}$
 
- 
 
 
 
@@ -114,38 +111,23 @@ Let's first try some experimentation. Alice obviously wins if there is one coin.
 Let's use winning and losing positions, where $W$ marks a win for Alice.
 
  $1$ coin: $W$
-
- $2$ coins: $L$
-
- $3$ coins: $W$
-
- $4$ coins: $W$
-
- $5$ coins: $L$
-
- $6$ coin: $W$
-
- $7$ coins: $L$
-
- $8$ coins: $W$
-
- $9$ coins: $W$
-
- $10$ coins: $L$
-
- $11$ coin: $W$
-
- $12$ coins: $L$
-
- $13$ coins: $W$
-
- $14$ coins: $W$
-
- $15$ coins: $L$
+$2$ coins: $L$
+$3$ coins: $W$
+$4$ coins: $W$
+$5$ coins: $L$
+$6$ coin: $W$
+$7$ coins: $L$
+$8$ coins: $W$
+$9$ coins: $W$
+$10$ coins: $L$
+$11$ coin: $W$
+$12$ coins: $L$
+$13$ coins: $W$
+$14$ coins: $W$
+$15$ coins: $L$
 
  We can see that losing positions occur when $n$ is congruent to $0, 2 \mod{5}$ and winning positions occur otherwise. As $n$ ranges from $1$ to $2020$, $\frac{2}{5}$ of these values are losing positions where Bob will win. As $n$ ranges from $2021$ to $2024$, $2022$ is the only value where Bob will win. Thus, the answer is $2020\times\frac{2}{5}+1=\boxed{809}$
 
- 
 
 
 
@@ -196,35 +178,15 @@ Since the game Alice and Bob play is impartial (the only difference between play
 
  
 $\text{heap}(0) = \{\} = *\text{mex}(\emptyset) = 0$
-
- 
 $\text{heap}(1) = \{0\} = *\text{mex}(0) = *$
-
- 
 $\text{heap}(2) = \{*\} = *\text{mex}(1) = 0$
-
- 
 $\text{heap}(3) = \{0\} = *\text{mex}(0) = *$
-
- 
 $\text{heap}(4) = \{0, *\} = *\text{mex}(0, 1) = *2$
-
- 
 $\text{heap}(5) = \{*, *2\} = *\text{mex}(1, 2) = 0$
-
- 
 $\text{heap}(6) = \{0, 0\} = *\text{mex}(0, 0) = *$
-
- 
 $\text{heap}(7) = \{*, *\} = *\text{mex}(1, 1) = 0$
-
- 
 $\text{heap}(8) = \{*2, 0\} = *\text{mex}(0, 2) = *$
-
- 
 $\text{heap}(9) = \{0, *\} = *\text{mex}(0, 1) = *2$
-
- 
 $\text{heap}(10) = \{*, *2\} = *\text{mex}(1, 2) = 0$
 
  
@@ -232,17 +194,9 @@ We have proven the base case. We will now prove the inductive hypothesis: If $n 
 
  
 $\text{heap}(n+5) = \{\text{heap}(n+1), \text{heap}(n+4)\} = \{*, *2\} = *\text{mex}(1, 2) = 0$
-
- 
 $\text{heap}(n+6) = \{\text{heap}(n+2), \text{heap}(n+5)\} = \{0, 0\} = *\text{mex}(0, 0) = *$
-
- 
 $\text{heap}(n+7) = \{\text{heap}(n+3), \text{heap}(n+6)\} = \{*, *\} = *\text{mex}(1, 1) = 0$
-
- 
 $\text{heap}(n+8) = \{\text{heap}(n+4), \text{heap}(n+7)\} = \{*2, 0\} = *\text{mex}(2, 1) = *$
-
- 
 $\text{heap}(n+9) = \{\text{heap}(n+5), \text{heap}(n+8)\} = \{0, *\} = *\text{mex}(0, 1) = *2$
 
  
@@ -259,14 +213,12 @@ We have proven the inductive hypothesis. QED.
 We start with $n$ as some of the smaller values. After seeing the first 4 where Bob wins automatically, with trial and error we see that $2, 5, 7,$ and $10$ are spaced alternating in between 2 and 3 apart. This can also be proven with modular arithmetic, but  this is an easier solution for some people. We split them into 2 different sets with common difference 5: {2,7,12 ...} and {5,10,15...}. Counting up all the numbers in each set can be done as follows:
 
  Set 1 ${2,7,12...}$
-
- $2024-2=2022$ (because the first term is two)
+$2024-2=2022$ (because the first term is two)
 
  $\lfloor \frac{2024}{5} \rfloor = 404$
 
  Set 2 ${5,10,15}$
-
- $\lfloor \frac{2024}{5} \rfloor = 404$
+$\lfloor \frac{2024}{5} \rfloor = 404$
 
  
 And because we forgot 2022 we add 1 more.
@@ -344,7 +296,6 @@ For getting all $4$ right, there is only $1$ way.
 
  Therefore, the answer is $1+115 = \boxed{116}$
 
- 
 
 
 	\item (\textit{AIME I 2024}) Rectangle $ABCD$ has dimensions $AB = 107$ and $BC = 16$, and rectangle $EFGH$ has dimensions $EF = 184$ and $FG = 17$. Points $D$, $E$, $C$, and $F$ lie on line $DF$ in that order, and $A$ and $H$ lie on opposite sides of line $DF$, as shown. Points $A$, $D$, $H$, and $G$ lie on a common circle. Find $CE$.
@@ -357,8 +308,6 @@ For getting all $4$ right, there is only $1$ way.
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }104
 
 
@@ -433,7 +382,6 @@ One liner: $107-\sqrt{92^2+25^2-8^2}+92=\boxed{104}$
 
  The formula calculates the distance from $O$ to $H$ (or $G$), $\sqrt{92^2+25^2}$, then shifts it to $OD$ and the finds the distance from $O$ to $Q$, $\sqrt{92^2+25^2-8^2}$. $107$ minus that gives $CT$, and when added to $92$, half of $FE=TE$, gives $CT+TE=CE$
 
- 
 
 
 
@@ -445,7 +393,6 @@ Let $\angle{DHE} = \theta.$ This means that $DE = 17\tan{\theta}.$ Since quadril
 
  Since we want $CE = CD - DE = 107 - 17\tan{\theta},$ we only need to solve for $\tan{\theta}$ in this system of equations. Solving yields $\tan{\theta} = \frac{3}{17},$ so $CE = \boxed{104.}$
 
- 
 
 
 
@@ -478,8 +425,6 @@ Since ADHG is cyclic, AH*DG=AD*HG+DH*AG,let DE be x, we represent the equation i
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }294
 
 
@@ -504,7 +449,6 @@ Thus our answer is $7\cdot21\cdot2=\boxed{294}$.
 
 Draw a few examples of the path. However, notice one thing in common - if the path starts going up, there will be 3 "segments" where the path goes up, and two horizontal "segments." Similarly, if the path starts going horizontally, we will have three horizontal segments and two vertical segments. Those two cases are symmetric, so we only need to consider one. If our path starts going up, by stars and bars, we can have $\binom{7}{2}$ ways to split the 8 up's into 3 lengths, and have $\binom{7}{1}$ to split the 8-horizontals into 2 lengths. We multiply them together, and multiply by 2 for symmetry, giving us $2*\binom{7}{2}*\binom{7}{1}=294.$
 
- 
 
 
 
@@ -528,7 +472,6 @@ Notice that the $RURUR$ case and the $URURU$ case is symmetrical. WLOG, let's co
 
 Starting at the origin, you can either first go up or to the right. If you go up first, you will end on the side opposite to it (the right side) and if you go right first, you will end up on the top. It can then be observed that if you choose the turning points in the middle $7 \times 7$ grid, that will automatically determine your start and ending points. For example, in the diagram if you choose the point $(3,2)$ and $(5,3)$, you must first move three up or two right, determining your first point, and move 5 up or 3 right, determining your final point. Knowing this is helpful because if we first move anywhere horizontally, we have $7$ points on each column to choose from and starting from left to right, we have $6,5,4,3,2,1$ points on that row to choose from. This gives us $7(6)+7(5)+7(4)+7(3)+7(2)+7(1)$ which simplifies to $7\cdot21$. The vertical case is symmetrical so we have $7\cdot21\cdot2 = \boxed{294}$
 
- 
 
 
 
@@ -548,7 +491,6 @@ As in Solution 1, there are two cases: $RURUR$ or $URURU$. We will work with the
 
 We note that we either start with $R$ or $U$ and that these cases are symmetric, so we will simply consider the $R$ case and multiply by $2$ at the end. We make the key observation that making a path is the same as choosing two vertical lines and one horizontal line to mark our path; this gives us a unique path. Because we change directions exactly 4 times, we must travel at least 1 unit before turning, and we also must end by traveling at least one unit, so we cannot choose vertical lines that are on the edge of our grid. Similarly, we cannot do that for the horizontal line. Our final answer is simply choosing 2 vertical lines from 7 total, and choosing one horizontal line from 7 total, all multiplied by two. $2 \cdot \binom{7}{2} \cdot \binom{7}{1} = \boxed{294}.$
 
- 
 
 
 
@@ -623,7 +565,6 @@ Simplify rectangular form as in Solution 1 until we get $\text{Re}(w)=81x-108y =
  \begin{align*} \frac{k}{27\sqrt{3^2+4^2}}&=4 \\\frac{k}{135}&=4 \\k&=\boxed{540} \end{align*}
 
 
- 
 
 
 
@@ -632,15 +573,12 @@ Simplify rectangular form as in Solution 1 until we get $\text{Re}(w)=81x-108y =
 Let $z = a + bi.$ Simplify until we get to maximizing $81a - 108b$ given $a^2 +b^2 = 16.$ We can write $81a - 108b$ as the \href{https://artofproblemsolving.com/wiki/index.php/Vector?srsltid=AfmBOoqdT29SM62x\_yUNcVA7yUtSecmXlpmyOtury4Rl4Y\_Bo-6fLXh4}{Dot Product} of two vectors:  
  \[81a - 108b = \langle 81 , -108 \rangle \cdot \langle a, b \rangle.\] From this, we have the line $b = -\frac{108}{81}a =  -\frac{4}{3}a$ and the circle $a^2 + b^2 = 16.$ We need to find their intersection $(a,b)$ such that $a$ and $b$ are maximized. The line intersects the circle at two points, but to maximize $81a - 108b$ we want $b$ to be negative and $a$ to be positive. So the point that works has coordinates $a = 2.4$ and $b = -3.2$. We get $81\cdot 2.4 + 108 \cdot 3.2 = \boxed{540}.$
 
- 
-
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2024_7_Solution_Figure_1.png}
                     \end{figure}
                     
 
- 
 
 
 
@@ -652,12 +590,9 @@ Follow Solution 1 to get $81a-108b$. We can let $a=4\cos\theta$ and $b=4\sin\the
 Using the previous fact, we can use the \href{https://artofproblemsolving.com/wiki/index.php?title=Cauchy-Schwarz\_Inequality}{Cauchy-Schwarz Inequality} to calculate the maximum. By the inequality, we have:
 
  $(324^2+432^2)(\cos^2\theta+\sin^2\theta)\ge(324\cos\theta+432\sin\theta)^2$
+$540^2\cdot1\ge(324\cos\theta+432\sin\theta)^2$
+$\boxed{540}\ge324\cos\theta+432\sin\theta$
 
- $540^2\cdot1\ge(324\cos\theta+432\sin\theta)^2$
-
- $\boxed{540}\ge324\cos\theta+432\sin\theta$
-
- 
 
 
 
@@ -665,7 +600,6 @@ Using the previous fact, we can use the \href{https://artofproblemsolving.com/wi
 
 Similar to the solutions above, we find that $Re((75+117i)z+\frac{96+144i}{z})=81a-108b=27(3a-4b)$, where $z=a+bi$. To maximize this expression, we must maximize $3a-4b$. Let this value be $x$. Solving for $a$ yields $a=\frac{x+4b}{3}$. From the given information we also know that $a^2+b^2=16$. Substituting $a$ in terms of $x$ and $b$ gives us $\frac{x^2+8bx+16b^2}{9}+b^2=16$. Combining fractions, multiplying, and rearranging, gives $25b^2+8xb+(x^2-144)=0$. This is useful because we want the maximum value of $x$ such that this quadratic has real roots which is easy to find using the discriminant. For the roots to be real, $(8x)^2-4(25)(x^2-144) \ge 0$. Now all that is left to do is to solve this inequality. Simplifying this expression, we get $-36x^2+14400 \ge 0$ which means $x^2 \le 400$ and $x \le 20$. Therefore the maximum value of $x$ is $20$ and $27 \cdot 20 = \boxed{540}$
 
- 
 
 
 
@@ -684,13 +618,11 @@ First, recognize the relationship between the reciprocal of a complex number $z$
 
  Now, recognizing the 3 and 4 coefficients hinting at a 3-4-5 right triangle, we "complete the triangle" by rewriting our desired answer in terms of an angle of that triangle $\phi$ where $\cos\phi = \frac{3}{5}$ and $\sin\phi = \frac{4}{5}$
 
- 
  \begin{align*} 4\cdot 27 \cdot(3\cos\theta - 4\sin\theta) &= 4\cdot 27 \cdot 5 \cdot (\frac{3}{5}\cos\theta - \frac{4}{5}\sin\theta) \\                                                &= 540 \cdot (\cos\phi\cos\theta - \sin\phi\sin\theta) \\                                                &= 540 \cos(\theta + \phi) \end{align*}
 
 
  Since the simple trig ratio is bounded above by 1, our answer is $\boxed{540}$
 
- 
 
 
 
@@ -785,7 +717,6 @@ Proceeding as with Solution 10, we aim to maximize $27(3a-4b)$ under the constra
 
  QED. $\Box$
 
- 
 
 
 
@@ -811,30 +742,22 @@ Suppose $z = 4e^{i\theta}$
  \begin{align}& \phantom{\text{ = }}\mathrm{Re}\left((75 + 117i)z + \dfrac{96 + 144i}{z}\right)\\& = \mathrm{Re}\left((300 + 468i)e^{i\theta} + (24 + 36i)e^{-i\theta}\right)\\& = \mathrm{Re}\left((300 + 468i)e^{i\theta} + (24 - 36i)e^{i\theta}\right)\\& = \mathrm{Re}\left((324 + 432i)e^{i\theta}\right)\\& \leq \sqrt{324^2 + 432^2}\\& = \boxed{540}\end{align}
 
  \textbf{Remark 13.1} 
-                \begin{itemize}
-                    \item $\overline{z_1z_2} = \overline{z_1} \cdot \overline{z_2}$,
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $24 + 36i, 24 - 36i$ and $e^{-i\theta}, e^{i\theta}$ are conjugates,
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item The real parts of conjugates are equal,
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $\mathrm{Re}(z) \leq |z|$.
-                \end{itemize}
-
-
-                \textbf{Remark 13.2} The idea comes from the geometric meaning of this problem. The only difficulty is that the rotation directions are opposite. To make the rotations same, using conjugate is a good idea without changing the real part. Finally we can get a rotating parallelogram as shown in the following graph. Just find the length of the diagonal.
+            \begin{itemize}
+        \item $\overline{z_1z_2} = \overline{z_1} \cdot \overline{z_2}$,
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $24 + 36i, 24 - 36i$ and $e^{-i\theta}, e^{i\theta}$ are conjugates,
+            \end{itemize}
+            
+            \begin{itemize}
+        \item The real parts of conjugates are equal,
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $\mathrm{Re}(z) \leq |z|$.
+            \end{itemize}
+            \textbf{Remark 13.2} The idea comes from the geometric meaning of this problem. The only difficulty is that the rotation directions are opposite. To make the rotations same, using conjugate is a good idea without changing the real part. Finally we can get a rotating parallelogram as shown in the following graph. Just find the length of the diagonal.
 
  
                     \begin{figure}[H]
@@ -843,7 +766,6 @@ Suppose $z = 4e^{i\theta}$
                     \end{figure}
                     
 
- 
 
 
 
@@ -879,8 +801,6 @@ Let $z=4e^{i \theta}$. We have
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }197
 
 
@@ -907,7 +827,6 @@ A quadrilateral is a rhombus if and only if its two diagonals bisect each other 
  
 Plugging $y = mx$ into the equation for the hyperbola yields $x^2 = \frac{120}{6-5m^2}$ and $y^2 = \frac{120m^2}{6-5m^2}.$ By symmetry of the hyperbola, we know that $\left(\frac{BD}{2}\right)^2 = x^2 + y^2,$ so we wish to find a lower bound for $x^2 + y^2 = 120\left(\frac{1+m^2}{6-5m^2}\right).$ This is equivalent to minimizing $\frac{1+m^2}{6-5m^2} = -\frac{1}{5} + \frac{11}{5(6-5m^2)}$. It's then easy to see that this expression increases with $m^2,$ so we plug in $m^2 = \frac{5}{6}$ to get $x^2+y^2 > 120,$ giving $BD^2 > \boxed{480}.$
 
- 
 
 
 
@@ -915,7 +834,6 @@ Plugging $y = mx$ into the equation for the hyperbola yields $x^2 = \frac{120}{6
 
 Assume that $AC$ is the asymptote of the hyperbola, in which case $BD$ is minimized. The expression of $BD$ is $y=-\sqrt{\frac{5}{6}}x$. Thus, we could get $\frac{x^2}{20}-\frac{y^2}{24}=1\implies x^2=\frac{720}{11}$. The desired value is $4\cdot \frac{11}{6}x^2=480$. This case can't be achieved, so all $BD^2$ would be greater than $\boxed{480}$
 
- 
 
 
 	\item (\textit{AIME I 2024}) Let $\triangle ABC$ have side lengths $AB=5$, $BC=9$, $CA=10$. The tangents to circumcircle of $\triangle ABC$ at $B$ and $C$ intersect at point $D$, and $\overline{AD}$ intersects the circumcircle at $P \neq A$. The length of $AP$ is equal to $\frac{m}{n}$, where $m$ and $n$ are relatively prime integers. Find $m + n$.
@@ -949,7 +867,6 @@ We have $\let\angle BCD = \let\angle CBD = \let\angle A$ from the tangency condi
 
  By Apollonius's theorem, $AM=\frac{13}{2}$. Through similarity, $AP=\frac{100}{13}\implies \boxed{113}$
 
- 
 
 
 
@@ -968,7 +885,6 @@ We have $\let\angle BCD = \let\angle CBD = \let\angle A$ from the tangency condi
 
  Thus, we have $\frac{AP}{AC}=\frac{AB}{AM}, AP=\frac{100}{13}\implies \boxed{113}$
 
- 
 
 
 
@@ -1335,7 +1251,6 @@ Notice that \(41=4^2+5^2\), \(89=5^2+8^2\), and \(80=8^2+4^2\), let \(A~(0,0,0)\
 
  <font size="2">Solution by Quantum-Phantom</font>
 
- 
 
 
 
@@ -1394,7 +1309,6 @@ We use the formula for the volume of iscoceles tetrahedron. $V = \sqrt{(a^2 + b^
  \[[ABCI] + [ABDI] + [ACDI] + [BCDI] = V,\]  We have 
  \[V = \frac{4AR}{3}.\] Plugging in and simplifying, we get $R = \frac{20\sqrt{21}}{63}$ for an answer of $20 + 21 + 63 = \boxed{104}$
 
- 
 
 
 
@@ -1518,7 +1432,6 @@ Consider the following construction of the tetrahedron. Place $AB$ on the floor.
 
  Therefore the answer is, $\dfrac{3 \frac{160}{3}}{24 \sqrt{21}} = \frac{20\sqrt{21}}{63} \implies \boxed{104}.$
 
- 
 
 
 
@@ -1661,10 +1574,8 @@ Applying the Pythagorean theorem, we can establish that
  
  \[-b=l+w+h=m\]
 
- 
  \[c=lw+wh+lh=27\]
 
- 
  \[-d=lwh=23\]
 
  We can now rewrite the equation from before:
@@ -1730,7 +1641,6 @@ This question looks complex, but once converted into a number theory problem, it
  \[r^2=(128+529)/64\]so here, 
  \[p+q=657+64=721\]
 
- 
 
 
 
@@ -1741,7 +1651,6 @@ This problem essentially boils down to maximizing the value of $x+y+z$ (where $x
  \[1-27\cdot x^{-2}+46\cdot x^{-3}=0 \implies x^3-27x+46=0\]The roots of this can be found using the rational root theorem, yielding $x=2$ or $-1\pm 2\sqrt{6}$. Don't forget -- $x$ must be positive, so the only possible candidates of $x$ to maximize $f(x)$ are $2$ and $2\sqrt{6}-1$. Plugging both of them into $f(x)=x+27\cdot x^{-1}-23\cdot x^{-2}$, we find $x=2$ yields a greater result, $\frac{39}{4}$. Thus, the maximum value of $x+y+z=f(x)$ is $\frac{39}{4}$. Therefore, the value of $r^2$ is
  \[\frac{(\frac{39}{4})^2-54}{4}=\frac{657}{64} \implies p+q=\boxed{721}.\]
 
- 
 
 
 
@@ -1762,9 +1671,8 @@ From the previous solutions we can see that we have to maximize $m$ in the expre
 
  The discriminant of this expression is $-92r^3 + 729r^2 - 1232r + 529$, and after using the rational root theorem we can find $\frac{23}{4}$ as a root. 
 
- The remaining expression is $(x - \frac{23}{4})(-92x^2 + 200x - 92)$. We can quickly see using the quadratic formula that $\frac{23}{4}$ is the largest root, meaning that $r=\frac{23}{4}$ is the largest value that a root of $x^3 - mx^2 + 27x - 23 = 0$ can have for which $x^3 - mx^2 + 27x - 23=0$ has $3$ positive, real solutions. From here, we can substitute this value back into the expression for $m$, giving us $m = \frac{39}{4}$. The length of the radius squared is $\frac{m^2-54}{4}=\frac{657}{64}$ and $657+64=\boxed{721}$ 
+ The remaining expression is $(x - \frac{23}{4})(-92x^2 + 200x - 92)$. We can quickly see using the quadratic formula that $\frac{23}{4}$ is the largest root, meaning that $r=\frac{23}{4}$ is the largest value that a root of $x^3 - mx^2 + 27x - 23 = 0$ can have for which $x^3 - mx^2 + 27x - 23=0$ has $3$ positive, real solutions. From here, we can substitute this value back into the expression for $m$, giving us $m = \frac{39}{4}$. The length of the radius squared is $\frac{m^2-54}{4}=\frac{657}{64}$ and $657+64=\boxed{721}$
 
- 
 
 
 \end{enumerate}

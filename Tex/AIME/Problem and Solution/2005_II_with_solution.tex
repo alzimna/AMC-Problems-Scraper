@@ -2,8 +2,6 @@
         \begin{enumerate}
         	\item (\textit{AIME II 2005}) A game uses a deck of $n$ different cards, where $n$ is an integer and $n \geq 6.$ The number of possible sets of 6 cards that can be drawn from the deck is 6 times the number of possible sets of 3 cards that can be drawn. Find $n.$
 
-
- 
  \textbf{Answer: }013
 
 
@@ -25,8 +23,6 @@ The number of ways to draw six cards from $n$ is given by the \href{https://arto
 
 	\item (\textit{AIME II 2005}) A hotel packed breakfast for each of three guests. Each breakfast should have consisted of three types of rolls, one each of nut, cheese, and fruit rolls. The preparer wrapped each of the nine rolls and once wrapped, the rolls were indistinguishable from one another. She then randomly put three rolls in a bag for each of the guests. Given that the probability each guest got one roll of each type is $\frac mn,$ where $m$ and $n$ are relatively prime integers, find $m+n.$
 
-
- 
  \textbf{Answer: }079
 
 
@@ -36,18 +32,15 @@ The number of ways to draw six cards from $n$ is given by the \href{https://arto
 Use \href{https://artofproblemsolving.com/wiki/index.php?title=Construction}{construction}. We need only calculate the probability the first and second person all get a roll of each type, since then the rolls for the third person are determined. 
 
  
-                \begin{itemize}
-                    \item Person 1: $\frac{9 \cdot 6 \cdot 3}{9 \cdot 8 \cdot 7} = \frac{9}{28}$
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item Person 2: $\frac{6 \cdot 4 \cdot 2}{6 \cdot 5 \cdot 4} = \frac 25$\item Person 3: One roll of each type is left, so the probability here is $1$.
-                \end{itemize}
-
-
-                Our answer is thus $\frac{9}{28} \cdot \frac{2}{5} = \frac{9}{70}$, and $m + n = \boxed{79}$.
+            \begin{itemize}
+        \item Person 1: $\frac{9 \cdot 6 \cdot 3}{9 \cdot 8 \cdot 7} = \frac{9}{28}$
+            \end{itemize}
+            
+            \begin{itemize}
+        \item Person 2: $\frac{6 \cdot 4 \cdot 2}{6 \cdot 5 \cdot 4} = \frac 25$
+        \item Person 3: One roll of each type is left, so the probability here is $1$.
+            \end{itemize}
+            Our answer is thus $\frac{9}{28} \cdot \frac{2}{5} = \frac{9}{70}$, and $m + n = \boxed{79}$.
 
  
 
@@ -90,8 +83,6 @@ Let the objects be $A_1$, $A_2$, $A_3$ with similar labeling for $B$ and $C$. Th
 
 	\item (\textit{AIME II 2005}) An infinite geometric series has sum 2005. A new series, obtained by squaring each term of the original series, has 10 times the sum of the original series. The common ratio of the original series is $\frac mn$ where $m$ and $n$ are relatively prime integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }802
 
 
@@ -115,8 +106,6 @@ We can write the sum of the original series as $a + a\left(\dfrac{m}{n}\right) +
 
 	\item (\textit{AIME II 2005}) Find the number of positive integers that are divisors of at least one of $10^{10},15^7,18^{11}.$
 
-
- 
  \textbf{Answer: }435
 
 
@@ -160,8 +149,6 @@ We can rewrite the three numbers as $10^{10} = 2^{10}\cdot 5^{10}$, $15^7 = 3^7\
 
 	\item (\textit{AIME II 2005}) Determine the number of ordered pairs $(a,b)$ of integers such that $\log_a b + 6\log_b a=5, 2 \leq a \leq 2005,$ and $2 \leq b \leq 2005.$
 
-
- 
  \textbf{Answer: }054
 
 
@@ -171,12 +158,11 @@ We can rewrite the three numbers as $10^{10} = 2^{10}\cdot 5^{10}$, $15^7 = 3^7\
 The equation can be rewritten as $\frac{\log b}{\log a} + 6 \frac{\log a}{\log b} = \frac{(\log b)^2+6(\log a)^2}{\log a  \log b}=5$ Multiplying through by $\log a \log b$ and factoring yields $(\log b - 3\log a)(\log b - 2\log a)=0$. Therefore, $\log b=3\log a$ or $\log b=2\log a$, so either $b=a^3$ or $b=a^2$. 
 
  
-                \begin{itemize}
-                    \item For the case $b=a^2$, note that $44^2=1936$ and $45^2=2025$. Thus, all values of $a$ from $2$ to $44$ will work.\item For the case $b=a^3$, note that $12^3=1728$ while $13^3=2197$. Therefore, for this case, all values of $a$ from $2$ to $12$ work.
-                \end{itemize}
-
-
-                There are $44-2+1=43$ possibilities for the square case and $12-2+1=11$ possibilities for the cube case. Thus, the answer is $43+11= \boxed{054}$.
+            \begin{itemize}
+        \item For the case $b=a^2$, note that $44^2=1936$ and $45^2=2025$. Thus, all values of $a$ from $2$ to $44$ will work.
+        \item For the case $b=a^3$, note that $12^3=1728$ while $13^3=2197$. Therefore, for this case, all values of $a$ from $2$ to $12$ work.
+            \end{itemize}
+            There are $44-2+1=43$ possibilities for the square case and $12-2+1=11$ possibilities for the cube case. Thus, the answer is $43+11= \boxed{054}$.
 
  Note that Inclusion-Exclusion does not need to be used, as the problem is asking for ordered pairs $(a,b)$, and not for the number of possible values of $b$. Were the problem to ask for the number of possible values of $b$, the values of $b^6$ under $2005$ would have to be subtracted, which would just be $2$ values:  $2^6$ and $3^6$. However, the ordered pairs where b is to the sixth power are distinct, so they are not redundant. (For example, the pairs (4, 64) and (8, 64).)
 
@@ -228,13 +214,10 @@ Since a card from B is placed on the bottom of the new stack, notice that cards 
 If you index the final stack $1,2,\dots,2n$, you notice that pile A resides only in the odd indices and has maintained its original order aside from flipping over. The same has happened to pile B except replace odd with even. Thus, if 131 is still at index 131, an odd number, then 131 must be from pile A. The numbers in pile A are the consecutive integers $1,2,\dots, n$. This all leads us to the following equation.
  \[131=2n-2(131)+1\implies2n=\boxed{392}\]
 
- 
 
 
 	\item (\textit{AIME II 2005}) Let $x=\frac{4}{(\sqrt{5}+1)(\sqrt[4]{5}+1)(\sqrt[8]{5}+1)(\sqrt[16]{5}+1)}.$ Find $(x+1)^{48}.$
 
-
- 
  \textbf{Answer: }125
 
 
@@ -311,13 +294,10 @@ Like Solution $3$, let $z=\sqrt[16]{5}$Then, the expression becomes
 
  Hence, after some basic exponent rules, we find the answer is $\boxed{125}$
 
- 
 
 
 	\item (\textit{AIME II 2005}) Circles $C_1$ and $C_2$ are externally tangent, and they are both internally tangent to circle $C_3.$ The radii of $C_1$  and $C_2$ are 4 and 10, respectively, and the centers of the three circles are all collinear. A chord of $C_3$ is also a common external tangent of $C_1$ and $C_2.$ Given that the length of the chord is $\frac{m\sqrt{n}}p$ where $m,n,$ and $p$ are positive integers, $m$ and $p$ are relatively prime, and $n$ is not divisible by the square of any prime, find $m+n+p.$
 
-
- 
  \textbf{Answer: }405
 
 
@@ -442,9 +422,8 @@ Note that this looks like de Moivre's except switched around. Using de Moivre's 
 
 $(\sin\theta + i\cos\theta)^{n} = i^{n} (\cos\theta - i\sin\theta)^n$
 
- Hence the required condition is just $i^{n} = i$ which is true for exactly 1 in 4 consecutive numbers. Thus $\boxed{250}$ 
+ Hence the required condition is just $i^{n} = i$ which is true for exactly 1 in 4 consecutive numbers. Thus $\boxed{250}$
 
- 
 
 
 
@@ -465,8 +444,6 @@ Note that this equation is extremely similar to De Moivre's Theorem. If we can f
 
 	\item (\textit{AIME II 2005}) Given that $O$ is a regular octahedron, that $C$ is the cube whose vertices are the centers of the faces of $O,$ and that the ratio of the volume of $O$ to that of $C$ is $\frac mn,$ where $m$ and $n$ are relatively prime integers, find $m+n.$
 
-
- 
  \textbf{Answer: }011
 
 
@@ -480,7 +457,6 @@ Note that this equation is extremely similar to De Moivre's Theorem. If we can f
                     \end{figure}
                     
 
- 
 
 
 
@@ -506,13 +482,10 @@ Let the octahedron have vertices $(\pm 3, 0, 0), (0, \pm 3, 0), (0, 0, \pm 3)$. 
 
 Continue Solution 2 until realizing the volume of the cube is 8. The side length of the octahedron through distance formulae is $3\sqrt{2}$. One can quickly derive the volume of a octahedron by multiplying two times the volume of a tetrahedron. The height of the top tetrahedron is 3, and the area of the square is 18, so the volume of the top tetrahedron is 18, and the total volume of the octahedron is 36. So, the ratio is $\frac {36}{8} = \frac{9}{2}$ and so the answer is $\boxed{011}$
 
- 
 
 
 	\item (\textit{AIME II 2005}) Let $m$ be a positive integer, and let $a_0, a_1,\ldots,a_m$ be a sequence of reals such that $a_0 = 37, a_1 = 72, a_m = 0,$ and $a_{k+1} = a_{k-1} - \frac 3{a_k}$ for $k = 1,2,\ldots, m-1.$ Find $m.$
 
-
- 
  \textbf{Answer: }889
 
 
@@ -575,14 +548,11 @@ Note that $a_{k+1}\cdot a_{k} - a_{k}\cdot a_{k-1} = - 3$. Then, we can generate
 
 $\textbf{Lemma}:$
 
- 
  \[a_{2n} = 37 \prod_{i=0}^{n-1} \frac{887-2i}{888 - 2i}\]
  \[a_{2n+1} = 72 \prod_{i=0}^{n-1} \frac{886-2i}{887-2i}\].
  \[a_m = 0 \ \text{if and only if} \ m = \boxed{889}\]
+$\textbf{Proof of the Lemma}:$
 
- $\textbf{Proof of the Lemma}:$
-
- 
  \[a_{k+1} = a_{k-1} - \frac{3}{a_k}\]
  \[a_{k+1}a_{k} = a_{k-1}a_{k} - 3\]
 
@@ -596,7 +566,6 @@ $\textbf{Lemma}:$
  
  \[a_{2n} = a_0 \cdot \frac{b_1}{b_0} \cdot \frac{b_3}{b_2} \cdot \dots \cdot \frac{b_{2n-1}}{b_{2n-2}} = 37 \prod_{i=0}^{n-1} \frac{887-2i}{888 - 2i}\]
 
- 
  \[a_{2n+1} = a_1 \cdot \frac{b_2}{b_1} \cdot \frac{b_4}{b_3} \cdot \dots \cdot \frac{b_{2n}}{b_{2n-1}} = 72 \prod_{i=0}^{n-1} \frac{886-2i}{887-2i}\].
 
  We require the first term that makes the product 0, which will only happen if one of the terms in the sequence within the product simplifies to 0. In that case, it is required that the requested $a_m$ term has $m$ as an odd index, as otherwise no such product can exist (as then $m$ is not an integer). So, we must have that $m$ is an odd index, and that $886-2i = 0 \implies i = 443 \ \text{where} \ i = n-1$. Here, we have that the unique $n$ is $n = 444$, so the requested $m$ is then $m = 2(444) + 1 = \boxed{889}$.
@@ -606,8 +575,6 @@ $\textbf{Lemma}:$
 
 	\item (\textit{AIME II 2005}) Square $ABCD$ has center $O, AB=900, E$ and $F$ are on $AB$ with $AE<BF$ and $E$ between $A$ and $F, m\angle EOF =45^\circ,$ and $EF=400.$ Given that $BF=p+q\sqrt{r},$ where $p,q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p+q+r.$
 
-
- 
  \textbf{Answer: }307
 
 
@@ -679,7 +646,6 @@ Let $x = BF$, so $AE = 500-x$. Let $a = OE$, $b = OF$. Applying Stewart's Theore
  \[a^2+b^2- 2 ab \cos 45^{\circ} = 160000\] Solving for $ab$ from the sines equation and plugging into the law of cosines equation yields $a^2+b^2 = 290000$. We now finish by adding the two original stewart equations and obtaining: 
  \[2(450\sqrt{2})^2 = (500-x)(400+x)+x(900-x)+520000\] This is a quadratic which only takes some patience to solve for $x = 250 + 50\sqrt{7}$
 
- 
 
 
 
@@ -749,7 +715,6 @@ Let lower case letters be the complex numbers correspond to their respective upp
 
  This means that our answer would be $250+50+7=\boxed{307}$
 
- 
 
 
 
@@ -779,7 +744,6 @@ From AA similarity we have
 
 We use ratio lemma and Stewart's theorem:Connect $OA, OE, OF, OB$ and let $AE = x$ and $BF = 500 - x.$Let angle $AOE = y,$ hence $BOF = 45 - y.$Now, we apply Stewart's theorem in triangles $AOF$ and $BOE$ to get $OE$ and $OF$ in terms of $x$finally, calculate $x/400$ and $500-x/400$ using ratio lemma to find $x$ and $y$
 
- 
 
 
 
@@ -797,8 +761,6 @@ Draw AO, OB, and extend OB to D. Let $\angle{FOB} = \alpha.$ Then, after angle c
 
 	\item (\textit{AIME II 2005}) Let $P(x)$ be a polynomial with integer coefficients that satisfies $P(17)=10$ and $P(24)=17.$ Given that $P(n)=n+3$ has two distinct integer solutions $n_1$ and $n_2,$ find the product $n_1\cdot n_2.$
 
-
- 
  \textbf{Answer: }418
 
 
@@ -848,8 +810,6 @@ Based on the second part of the problem statement, $P(n)$ is at least a quadrati
 
 	\item (\textit{AIME II 2005}) In triangle $ABC, AB=13, BC=15,$ and $CA = 14.$ Point $D$ is on $\overline{BC}$ with $CD=6.$ Point $E$ is on $\overline{BC}$ such that $\angle BAE\cong \angle CAD.$ Given that $BE=\frac pq$ where $p$ and $q$ are relatively prime positive integers, find $q.$
 
-
- 
  \textbf{Answer: }463
 
 
@@ -932,10 +892,8 @@ Let $AK$ be the angle bisector of $\angle A$ such that $K$ is on $BC$.
  Alternate:By the ratio lemma,$BD/DC = (13/14)*(\sin BAD/\sin DAC)$$EC/EB = (14/13)*(\sin EAC/\sin BAE)$
 
  Combining these, we get$(BD/DC)(14/13) = (EC/EB)(13/14)$$(3/2)(14/13)(14/13) = (15-x)(x)$
+$x = 2535/463$Thus, $q = 463$
 
- $x = 2535/463$Thus, $q = 463$
-
- 
 
 
 
@@ -947,10 +905,6 @@ Since $AE$ and $AD$ are isogonal with respect to the $A$ angle bisector, we have
  \[\frac{BE}{EC}=\frac{AB\sin x}{AC\sin y}\] and multiplying these together proves the formula for isogonal lines. Hence, we have 
  \[\frac{BE}{15-BE}\cdot \frac{9}{6}=\frac{169}{196}\implies BE=\frac{2535}{463}\] so our desired answer is $\boxed{463}.$
 
- 
-
-
- 
 
 
 
@@ -969,7 +923,6 @@ Note: We first recall some helpful tips regarding 13, 14, 15 triangles. Drawing 
 
  We find this using $\tan{(EAG)} = \tan{(A - \alpha)} = \frac{\tan{A} - \tan{\alpha}}{1 + \tan{A}\tan{\alpha}}$, which is $\frac{\frac{12}{5} - \frac{6}{13}}{1 + \frac{12}{5} \cdot \frac{6}{13}}$ or $\frac{126}{137}$. Now we solve the equation $\tan{\angle EAG} = \frac{126}{137} = \frac{\frac{60-4x}{5}}{\frac{3x+25}{5}}$, so $x = \frac{2535}{463}$
 
- 
 
 
 
@@ -1012,7 +965,6 @@ Diagram borrowed from Solution 1.
  \[\frac{\sqrt{\frac{15BE^2-198BE+2535}{15}}}{\frac{56}{65}}=\frac{BE}{\frac{6\sqrt{205}}{205}}\]
  \[7605BE^2-32342BE+2535=0\]Solving the easy quadratic equation gets $BE=\frac{1632}{463}\Longrightarrow q=\boxed{463}$
 
- 
 
 
 
@@ -1028,7 +980,6 @@ Making perpendicular lines from $D$ to $AC$, meeting at $N$; from $E$ to $AB$, m
 
 First, apply Stewart's theorem to triangle $ABC$ with cevian $AD$, from which we receive $AD=\frac{4\sqrt{41}}{\sqrt{5}}$. Then, set $AE=y$ and $BE=x.$ Hence, $DE=9-x$. Applying Stewart's on triangle $ACE$, with cevian $AD$, we receive that $y^2-x^2=169-\frac{66}{5}x$. By also applying the sine ratio formula on triangles $ACD$ and $AEB$, since these triangles share the same height, we get that $\frac{6}{x}=\frac{\frac{1}{2} \cdot 14 \cdot \frac{4\sqrt{41}}{\sqrt{5}}}{\frac{1}{2} \cdot 13 \cdot y}$. Here, we can simplify to receive that $\frac{32144}{7605}x^2=y^2$. We plug this into our earlier equation, and get that $\frac{24539}{7605}x^2=169-\frac{66}{5}x \implies 24539x^2+66 \cdot 39^2x-169 - 169 \cdot 39^2 \cdot 5=0.$ We then apply the quadratic formula (which may seem computationally intensive, but factoring kills it), and get $\frac{-66 \cdot 39^2 + \sqrt{66^2 \cdot 39^4+4(24539)(169 \cdot39^2 \cdot 5)}}{2 \cdot 24539}$. (Note we only take the plus symbol instead of $\pm$ since $x > 0$.) After factoring heavily, we get the answer to be $\frac{-33 \cdot 39^2+39 \cdot 13 \cdot 364}{24539} = \frac{2535}{463}$, and the answer is $\boxed{463}.$
 
- 
 
 
 
@@ -1054,8 +1005,6 @@ First, apply Stewart's theorem to triangle $ABC$ with cevian $AD$, from which we
 
 	\item (\textit{AIME II 2005}) Let $w_1$ and $w_2$ denote the circles $x^2+y^2+10x-24y-87=0$ and $x^2 +y^2-10x-24y+153=0,$ respectively. Let $m$ be the smallest positive value of $a$ for which the line $y=ax$ contains the center of a circle that is externally tangent to $w_2$ and internally tangent to $w_1.$ Given that $m^2=\frac pq,$ where $p$ and $q$ are relatively prime integers, find $p+q.$
 
-
- 
  \textbf{Answer: }169
 
 
@@ -1158,7 +1107,6 @@ We use the same reflection as in Solution 2. As $OF_1'=OF_2=13$, we know that $\
  \[b=\frac{24\pm\sqrt{300-3a^2}}{2}\]We take the smaller root to minimize $\frac b a$.
  \[\frac b a=\frac{24-\sqrt{300-3a^2}}{2a}=\frac{24-\sqrt3\cdot\sqrt{100-a^2}}{2a}=\frac{12}a-\frac{\sqrt3}{2a}\sqrt{100-a^2}\]Now, let $10\cos\theta=a$.  This way, $\sqrt{100-a^2}=10\sin\theta$.Substitute this in.  $\frac{b}{a}=\frac{12}{10\cos\theta}-\frac{\sqrt3\cdot\sin\theta}{2\cos\theta}=\frac65\sec\theta-\frac{\sqrt3}{2}\tan\theta$Then, take the derivative of this and set it to 0 to find the minimum value.$\frac{6}{5}\sec\theta\tan\theta-\frac{\sqrt3}{2}\sec^2\theta=0\rightarrow\frac{6}{5}\sin\theta-\frac{\sqrt3}{2}=0\rightarrow\sin\theta=\frac{5\sqrt3}{12}$Then, use this value of $\sin\theta$ to find the minimum of $\frac65\sec\theta-\frac{\sqrt3}{2}\tan\theta$ to get $\frac{\sqrt{69}}{10}\rightarrow\left(\frac{\sqrt{69}}{10}\right)^2=\frac{69}{100}\rightarrow69+100=\boxed{169}$
 
- 
 
 
 
@@ -1178,7 +1126,6 @@ We proceed to find $m$ using the same method as Solution 1.
 
 First, obtain the equation of the ellipse as laid out in previous solutions. We now scale the coordinate plane in the $x$ direction by a factor of $\frac{\sqrt{3}}{2}$ centered at $x=0.$ This takes the ellipse to a circle centered at $(0,12)$ with radius $5\sqrt{3}$ and takes the line $y=ax$ to $y=\left( \frac{\sqrt{3}}{2} \right)^{-1} ax.$ The tangent point of our line to the circle with positive slope forms a right triangle with the origin and the center of the circle. Thus, the distance from this tangent point to the origin is $\sqrt{69}.$ By similar triangles, the slope of this line is then $\frac{\sqrt{69}}{5\sqrt{3}}.$ We multiply this by $\frac{\sqrt{3}}{2}$ to get $a=\frac{\sqrt{69}}{10},$ so our final answer is $\boxed{169.}$
 
- 
 
 
 \end{enumerate}

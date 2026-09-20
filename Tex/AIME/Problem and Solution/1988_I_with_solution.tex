@@ -10,7 +10,6 @@
                     \end{figure}
                     
 
- 
  \textbf{Answer: }770
 
 
@@ -38,16 +37,11 @@ Note: A simpler way of thinking to get $2^{10}$ is thinking that each button has
 \textbf{Solution}
 
 We see that $f_{1}(11)=4$
-
- $f_2(11) = f_1(4)=16$
-
- $f_3(11) = f_1(16)=49$
-
- $f_4(11) = f_1(49)=169$
-
- $f_5(11) = f_1(169)=256$
-
- $f_6(11) = f_1(256)=169$
+$f_2(11) = f_1(4)=16$
+$f_3(11) = f_1(16)=49$
+$f_4(11) = f_1(49)=169$
+$f_5(11) = f_1(169)=256$
+$f_6(11) = f_1(256)=169$
 
  Note that this revolves between the two numbers. Since $1988$ is even, we thus have $f_{1988}(11) = f_{4}(11) = \boxed{169}$.
 
@@ -208,7 +202,6 @@ Like before there are \( (99+1)(99+1) = 100^2 = 10,000 \) positive divisors of \
                     \end{figure}
                     
 
- 
  \textbf{Answer: }142
 
 
@@ -253,11 +246,8 @@ First, let $a =$ the number to be placed in the first column, fourth row.  Let $
 
  <div style="text-align:center;">$3a + b + 3c = 74$
 $2a + 4b + 8c = 186$
+$a + 2b + 2c = 103$</div>Solving, we find that $(a,b,c) = (13,50, - 5)$.  The number in the square marked by the asterisk is $4a + 3b + 12c = \boxed{142}$
 
-
- $a + 2b + 2c = 103$</div>Solving, we find that $(a,b,c) = (13,50, - 5)$.  The number in the square marked by the asterisk is $4a + 3b + 12c = \boxed{142}$
-
- 
 
 
 
@@ -336,7 +326,6 @@ Since all of the function's properties contain a recursive definition except for
  \begin{align*} f(14,52) & = f(14,14 + 38) \\ & = \frac{52}{38}\cdot f(14,38) \\ & = \frac{52}{38}\cdot \frac{38}{24}\cdot f(14,14 + 24) \\ & = \frac{52}{24}\cdot f(14,24) \\ & = \frac{52}{10}\cdot f(10,14) \\ & = \frac{52}{10}\cdot \frac{14}{4}\cdot f(10,4) \\ & = \frac{91}{5}\cdot f(4,10) \\ & = \frac{91}{3}\cdot f(4,6) \\ & = 91\cdot f(2,4) \\ & = 91\cdot 2 \cdot f(2,2) \\ & = \boxed{364}. \end{align*}
 
 
- 
 
 
 
@@ -380,12 +369,11 @@ Hence, $f(x,y) = \mathrm{lcm}(x,y)$ is a solution to the functional equation.
 A little bit of checking tells us that the units digit must be 2. Now our cube must be in the form of $(10k + 2)^3$; using the \href{https://artofproblemsolving.com/wiki/index.php?title=Binomial\_theorem}{binomial theorem} gives us $1000k^3 + 600k^2 + 120k + 8$. Since we are looking for the tens digit, $\mod{100}$ we get $20k + 8 \equiv 88 \pmod{100}$. This is true if the tens digit is either $4$ or $9$. Casework:
 
  
-                \begin{itemize}
-                    \item $4$: Then our cube must be in the form of $(100k + 42)^3 \equiv 3(100k)(42)^2 + 42^3 \equiv 200k + 88 \pmod{1000}$. Hence the lowest possible value for the hundreds digit is $4$, and so $442$ is a valid solution.\item $9$: Then our cube is $(100k + 92)^3 \equiv 3(100k)(92)^2 + 92^3 \equiv 200k + 688 \pmod{1000}$. The lowest possible value for the hundreds digit is $1$, and we get $192$. Hence, since $192 < 442$, the answer is $\fbox{192}$
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item $4$: Then our cube must be in the form of $(100k + 42)^3 \equiv 3(100k)(42)^2 + 42^3 \equiv 200k + 88 \pmod{1000}$. Hence the lowest possible value for the hundreds digit is $4$, and so $442$ is a valid solution.
+        \item $9$: Then our cube is $(100k + 92)^3 \equiv 3(100k)(92)^2 + 92^3 \equiv 200k + 688 \pmod{1000}$. The lowest possible value for the hundreds digit is $1$, and we get $192$. Hence, since $192 < 442$, the answer is $\fbox{192}$
+            \end{itemize}
+            
 
 
 
@@ -434,7 +422,6 @@ This number is in the form of $10k+2$, after binomial expansion, we only want $6
 
  Then, we write $5k^2+k=25m-1, 5k^2+k+1=25m$ so $k+1$ must be a multiple of $5$ at least, so $k\equiv {-1, -6, -11, -16, -21} \pmod {25}$ after checking, when $k=-6, 5k^2+k+1=175=25\cdot 7$. So $k\equiv -6 \pmod{25}$, smallest $k=19$, the number is $\boxed{192}$
 
- 
 
 
 
@@ -505,14 +492,12 @@ We first find the number of vertices on the polyhedron:There are 4 corners per s
 \textbf{Solution 1}
 
 $\sum_{k=1}^5 z_k - \sum_{k=1}^5 w_k = 0$
-
- $\sum_{k=1}^5 z_k = 3 + 504i$
+$\sum_{k=1}^5 z_k = 3 + 504i$
 
  Each $z_k = x_k + y_ki$ lies on the complex line $y = mx + 3$, so we can rewrite this as 
 
  $\sum_{k=1}^5 z_k = \sum_{k=1}^5 x_k + \sum_{k=1}^5 y_ki$
-
- $3 + 504i = \sum_{k=1}^5 x_k + i \sum_{k=1}^5 (mx_k + 3)$
+$3 + 504i = \sum_{k=1}^5 x_k + i \sum_{k=1}^5 (mx_k + 3)$
 
  Matching the real parts and the imaginary parts, we get that $\sum_{k=1}^5 x_k = 3$ and $\sum_{k=1}^5 (mx_k + 3) = 504$. Simplifying the second summation, we find that $m\sum_{k=1}^5 x_k = 504 - 3 \cdot 5 = 489$, and substituting, the answer is $m \cdot 3 = 489 \Longrightarrow m = 163$.
 
@@ -542,7 +527,6 @@ We know that
 
  Solving for $m$, the slope, we get $\boxed{163}$
 
- 
 
 
 
@@ -563,7 +547,6 @@ The mean line for $w_1, . . ., w_5$ must pass through the mean (the center of ma
                     \end{figure}
                     
 
- 
  \textbf{Answer: }441
 
 
@@ -588,7 +571,6 @@ Call the \href{https://artofproblemsolving.com/wiki/index.php?title=Cevian}{cevi
  \[3(ab + bc + ca) + 18(a + b + c) + 81 = abc + 3(ab + bc + ca) + 9(a + b + c) + 27\]
  \[9(a + b + c) + 54 = abc=\boxed{441}\]
 
- 
 
 
 	\item (\textit{AIME I 1988}) Find $a$ if $a$ and $b$ are integers such that $x^2 - x - 1$ is a factor of $ax^{17} + bx^{16} + 1$.
@@ -703,7 +685,6 @@ Now subtracting, we get
  \[a(u^{17}v^{16} -u^{16} v^{17}) = u^{16}-v^{16} \implies a = \frac{u^{16} - v^{16}}{u^{17}v^{16} -u^{16} v^{17}}.\]By Vieta's, $uv=-1$ so the denominator becomes $u-v$. By difference of squares and dividing out $u-v$ we get 
  \[a= (u^8+v^8)(u^4+v^4)(u^2+v^2)(u+v).\] A simple exercise of Vieta's gets us $a= \boxed{987}.$
 
- 
 
 
 
@@ -798,7 +779,6 @@ Re-stating the problem for clarity, let $S$ be a \href{https://artofproblemsolvi
 
  \textbf{A way to compute this quickly (by AlexLikeMath)} $1 \cdot 2 + 7 \cdot 3 + 21 \cdot 4 + 35 \cdot 5 + 35 \cdot 6 + 21 \cdot 7 + 7 \cdot 8 + 1 \cdot 9$ $=1 \cdot (2+9) + 7 \cdot (3+8) + 21 \cdot (4+7) + 35 \cdot (5+6) = 64 \cdot 11 = \boxed{704}$
 
- 
 
 
 

@@ -32,9 +32,8 @@ We can express $N$ as $0.78a$ and $1.16b$, where $a$ and $b$ are some positive i
 
  Obviously, we are just trying to find the LCM of $78$ and $116.$ They have no common factors but $2$, so we multiply $78$ and $116$ and divide by $2$ to get $4524.$ This is obviously not divisible by $100$, so this is not possible, as it would imply that $N=\dfrac{4524}{100},$ which is not an integer. This can be simplified to $\dfrac{1131}{25}$. 
 
- We know that any possible value of $N$ will be an integral multiple of this value; the smallest such $N$ is achieved by multiplying this value by $25.$ We arrive at $1131$, which is $\boxed{131}\mod1000.$ 
+ We know that any possible value of $N$ will be an integral multiple of this value; the smallest such $N$ is achieved by multiplying this value by $25.$ We arrive at $1131$, which is $\boxed{131}\mod1000.$
 
- 
 
 
 	\item (\textit{AIME II 2015}) In a new school, $40$ percent of the students are freshmen, $30$ percent are sophomores, $20$ percent are juniors, and $10$ percent are seniors. All freshmen are required to take Latin, and $80$ percent of sophomores, $50$ percent of the juniors, and $20$ percent of the seniors elect to take Latin. The probability that a randomly chosen Latin student is a sophomore is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -155,12 +154,13 @@ Let $m$ be the integer with digits $\overline{a_n a_{n-1} \dots a_1}$ such that 
  Reference Multiples of 17: $\{00, 17, 34, 51, 68, 85\}$ (Realistically, you should do the following part in your head.)
 
  
-                \begin{itemize}
-                    \item Case $a_3 = 1$: $\overline{a_2a_1} \equiv 2 \pmod{17}$. Resulting set: $\{02, 19, 36, 53, 70, 87\}$. Target sum $S = 17 - 1 = 16$. (None work)\item Case $a_3 = 2$: $\overline{a_2a_1} \equiv 4 \pmod{17}$. Resulting set: $\{04, 21, 38, 55, 72, 89\}$. Target sum $S = 17 - 2 = 15$. (None work)\item Case $a_3 = 3$: $\overline{a_2a_1} \equiv 6 \pmod{17}$. Resulting set: $\{06, 23, 40, 57, 74, 91\}$. Target sum $S = 17 - 3 = 14$. (None work)\item Case $a_3 = 4$: $\overline{a_2a_1} \equiv 8 \pmod{17}$. Resulting set: $\{08, 25, 42, 59, 76, 93\}$. Target sum $S = 17 - 4 = 13$.
-                \end{itemize}
-
-
-                For 76, the sum $7+6=13$ matches $S$. 
+            \begin{itemize}
+        \item Case $a_3 = 1$: $\overline{a_2a_1} \equiv 2 \pmod{17}$. Resulting set: $\{02, 19, 36, 53, 70, 87\}$. Target sum $S = 17 - 1 = 16$. (None work)
+        \item Case $a_3 = 2$: $\overline{a_2a_1} \equiv 4 \pmod{17}$. Resulting set: $\{04, 21, 38, 55, 72, 89\}$. Target sum $S = 17 - 2 = 15$. (None work)
+        \item Case $a_3 = 3$: $\overline{a_2a_1} \equiv 6 \pmod{17}$. Resulting set: $\{06, 23, 40, 57, 74, 91\}$. Target sum $S = 17 - 3 = 14$. (None work)
+        \item Case $a_3 = 4$: $\overline{a_2a_1} \equiv 8 \pmod{17}$. Resulting set: $\{08, 25, 42, 59, 76, 93\}$. Target sum $S = 17 - 4 = 13$.
+            \end{itemize}
+            For 76, the sum $7+6=13$ matches $S$. 
 
  The smallest integer is $\boxed{476}$.
 
@@ -183,10 +183,6 @@ Call the trapezoid $ABCD$ with $AB$ as the smaller base and $CD$ as the longer. 
 
  The perimeter is thus $\log 32 + \log 32 + \log 192 + \log 3$ which is $\log 2^{16} 3^2$. So $p + q = \boxed{018}$
 
- 
-
-
- 
 
 
 
@@ -211,10 +207,8 @@ Let $ABCD$ be the trapezoid, where $\overline{AB} || \overline{CD}$ and $AB = \l
  
  \[\log(xy) = \log x + \log y\]
 
- 
  \[\log(x^a) = a\log(x)\]
 
- 
  \[CD = \log 192 = \log (3 \cdot 2^6) = \log 3 + \log(2^6) = \log 3 + 6\log 2\]
 
  Thus, since $CD = DE + EF + FC = \log 3 + 6\log 2$, $CD - EF = \log 3 + 6\log 2 - \log 3 = 6\log 2 = DE + FC$.
@@ -483,7 +477,6 @@ $[PQRS]=\frac{3w}{5}(12-(\frac{12W}{25}))\implies \frac{3w}{5}(\frac{300-12W}{25
 
  Hence, $125+36=\boxed{161}$
 
- 
 
 
 
@@ -513,7 +506,8 @@ We are given that the area of rectangle $PQRS$ is a quadratic polynomial in term
 
  
             \begin{enumerate}
-                \item If $\omega = 0$, the rectangle collapses into a vertical line segment (the altitude), so $Area(0) = 0$.\item If $\omega = 25$ (the length of base $BC$), the rectangle collapses into the segment $BC$ itself, meaning its height $h = 0$, so $Area(25) = 0$.
+        \item If $\omega = 0$, the rectangle collapses into a vertical line segment (the altitude), so $Area(0) = 0$.
+        \item If $\omega = 25$ (the length of base $BC$), the rectangle collapses into the segment $BC$ itself, meaning its height $h = 0$, so $Area(25) = 0$.
             \end{enumerate}
             Since the roots are $0$ and $25$, the area polynomial must be of the form:
 
@@ -583,7 +577,6 @@ To avoid the possibility that $a = 1$, we want to find values of $b$ such that $
 
  \[\frac{ab + 1}{a + b} < \frac{3}{2} \rightarrow 2ab + 2 < 3a + 3b \rightarrow 4ab - 6a - 6b + 4 < 0 \rightarrow (2a - 3)(2b - 3) < 5.\]
 
- 
  \[2a - 3, 2b - 3 \in \{x \neq 2k, k \in Z \} \rightarrow\] $(2a-3)$ and $(2b-3)$ each cannot be even or else $a$ and $b$ will not be integers
  \[(2a - 3)(2b - 3) = 1, 3 \rightarrow (2a - 3, 2b - 3) = (1, 1), (1, 3), (3, 1).\]
  \[(a, b) = (2, 2), (2, 3), (3, 2).\]
@@ -626,7 +619,6 @@ Firstly, if we assume that $a=1$, we see that $\frac{a^{3}b^{3}+1}{a^{3}+b^{3}} 
 
  Starting with $\frac{ab+1}{a+b}<\frac{3}{2}$, cross multiply and move the variables to the right to obtain $2ab-3a-3b<-2$. After multiplying both sides by 2, Simon's favorite factoring trick (SFFT) is applicable, giving us $(2a-3)(2b-3)<5$. Now, we assume $a=2$. Then we see that $b$ can equal 2 or 3. If $a=3$, the only possible $b$ value is 2, and there are no other possible values for $b$ if $a>3$. So the possible ordered pairs for $(a,b)$ are $(2,2), (2,3)$, and $(3,2)$. It is easily noticeable that $(2,3)$ and $(3,2)$ both produce $\frac{a^{3}b^{3}+1}{a^{3}+b^{3}}=\frac{31}{5}$, which is the maximum value. We then add $31+5=\fbox{036}$
 
- 
 
 
 
@@ -654,8 +646,6 @@ Firstly, if we assume that $a=1$, we see that $\frac{a^{3}b^{3}+1}{a^{3}+b^{3}} 
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }384
 
 
@@ -680,12 +670,11 @@ Our aim is to find the volume of the part of the cube submerged in the cylinder.
  In this case, our base was one of the isosceles triangles (not the larger equilateral one). To calculate volume using the latter, note that the height would be $2\sqrt{2}$.
 
  
-                \begin{itemize}
-                    \item Note that in a 30-30-120 triangle, side length ratios are $1:1:\sqrt{3}$.\item Or, note that the altitude and the centroid of an equilateral triangle are the same point, so since the centroid is 4 units from the vertex (which is $\frac{2}{3}$ the length of the median), the altitude is 6, which gives a hypotenuse of $\frac{12}{\sqrt{3}}=4\sqrt{3}$ by $1:\frac{\sqrt{3}}{2}:\frac{1}{2}$ relationship for 30-60-90 triangles.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Note that in a 30-30-120 triangle, side length ratios are $1:1:\sqrt{3}$.
+        \item Or, note that the altitude and the centroid of an equilateral triangle are the same point, so since the centroid is 4 units from the vertex (which is $\frac{2}{3}$ the length of the median), the altitude is 6, which gives a hypotenuse of $\frac{12}{\sqrt{3}}=4\sqrt{3}$ by $1:\frac{\sqrt{3}}{2}:\frac{1}{2}$ relationship for 30-60-90 triangles.
+            \end{itemize}
+            
 
 
 
@@ -754,7 +743,6 @@ First, note the diagonal is vertical so that the tetrahedron of cube in water is
  \[v_{1} = v_{2} * (\frac{s_{1}}{s_{2}})^3 = 8\sqrt{6}\]
  \[v_{1}^2 = 384\]
 
- 
 
 
 	\item (\textit{AIME II 2015}) Call a permutation $a_1, a_2, \ldots, a_n$ of the integers $1, 2, \ldots, n$ \textit{quasi-increasing} if $a_k \leq a_{k+1} + 2$ for each $1 \leq k \leq n-1$. For example, $53421$ and $14253$ are quasi-increasing permutations of the integers $1, 2, 3, 4, 5$, but $45123$ is not. Find the number of quasi-increasing permutations of the integers $1, 2, \ldots, 7$.
@@ -914,7 +902,6 @@ Let $\omega$ be the circumcircle of $ABC$Let rays $OQ$ and $OP$ intersect $\omeg
  \[9-PO^2-9=PB(5-PB)-9 \Rightarrow 18-(PO^2+9)=PB(5-PB) \Rightarrow 18-(PO^2+BO^2)=PB(5-PB).\] Because $\angle POB = 90^\circ$, we have $PO^2+OB^2=PB^2$. Therefore, 
  \[18-PB^2=5PB-PB^2 \Rightarrow 18=5PB \Rightarrow PB=\frac{18}{5} \Rightarrow \boxed{23}.\]
 
- 
 
 
 	\item (\textit{AIME II 2015}) There are $2^{10} = 1024$ possible $10$-letter strings in which each letter is either an A or a B. Find the number of such strings that do not have more than $3$ adjacent letters that are identical.
@@ -932,12 +919,17 @@ Let $f(n)$ be the number of valid arrangements in a string of length $n$.
  A string can end in 8 ways:
 
  
-                \begin{itemize}
-                    \item ...AAA\item ...BBB\item ...AAB\item ...BBA\item ...BAB\item ...ABA\item ...ABB\item ...BAA
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item ...AAA
+        \item ...BBB
+        \item ...AAB
+        \item ...BBA
+        \item ...BAB
+        \item ...ABA
+        \item ...ABB
+        \item ...BAA
+            \end{itemize}
+            
 If it ends in ...AAA or ...BBB, the only condition is that the string of length $n-3$ preceding the 3 letters can't end with the same letters. If the string ends with ...AAA, the $n-3$ string must end with B in $f(n-3)/2$ ways, and if the string ends with ...BBB, the $n-3$ string must end with A in $f(n-3)/2$ ways, giving us a total of $f(n-3)$ ways.
 
  
@@ -990,18 +982,12 @@ Playing around with strings gives this approach: We have a certain number of As,
  We can have from 4 to 10 numbers in our parentheses. For each case, we will start with the largest number possible, usually a bunch of 3s, then go down systematically. Realize also that if we are left with just 2s and 1s, there is only one number of 2s and 1s that adds up to the leftover amount. Our final answer is the sum of all of these parenthetical sets [each set multiplied by its permutations, as order matters] multiplied by two [starting with either A or B, and alternating as we go along].
 
  $4 \rightarrow (3,3,3,1) = 4, (3,3,2,2) = 6$
-
- $5 \rightarrow (3, 3, 2, 1, 1) = 30, (3, 2, 2, 2, 1) = 20, (2,2,2,2,2)=1$
-
- $6 \rightarrow (3,3,1,1,1,1) = 15, (3,2,2,1,1,1) = 60, (2,2,2,2,1,1) = 15$
-
- $7 \rightarrow (3,2,1,1,1,1,1) = 42, (2,2,2,1,1,1,1) = 35$
-
- $8 \rightarrow (3,1...1) = 8, (2,2,1...1) = 28$
-
- $9 \rightarrow (2,1...1) = 9$
-
- $10 \rightarrow (1,1....1) =1$
+$5 \rightarrow (3, 3, 2, 1, 1) = 30, (3, 2, 2, 2, 1) = 20, (2,2,2,2,2)=1$
+$6 \rightarrow (3,3,1,1,1,1) = 15, (3,2,2,1,1,1) = 60, (2,2,2,2,1,1) = 15$
+$7 \rightarrow (3,2,1,1,1,1,1) = 42, (2,2,2,1,1,1,1) = 35$
+$8 \rightarrow (3,1...1) = 8, (2,2,1...1) = 28$
+$9 \rightarrow (2,1...1) = 9$
+$10 \rightarrow (1,1....1) =1$
 
  Adding them all up gives you 274; multiplying by 2 gives $\boxed{548}$.
 
@@ -1044,7 +1030,6 @@ Let $S_n$ be the number of n-letter strings satisfying the problem criteria. The
  The recursion simplifies to $S_n = 2S_{n-1} - S_{n-4}$ and we can now quickly compute the remaining values: 
  \[S_5 = 2S_4 - S_1 = 26, S_6 = 2(26)-4 = 48, S_7 = 2(48) - 8 = 88, S_8 = 2(88) - 14 = 162, S_9 = 2(162) - 26 = 298, S_{10} = 2S_9 - 48 = \boxed{548}\]
 
- 
 
 
 
@@ -1142,7 +1127,6 @@ Then $a_n < 0$ when $\cos \frac{1}{2} < \cos \frac{2n + 1}{2}.$ This occurs if a
  \[2 \pi k - \frac{1}{2} < \frac{2n + 1}{2} < 2 \pi k + \frac{1}{2}\]for some integer $k.$ Equivalently,
  \[2 \pi k - 1 < n < 2 \pi k.\]In other words, $n = \lfloor 2 \pi k \rfloor.$ The 100th index of this form is then $\lfloor 2 \pi \cdot 100 \rfloor = \boxed{628}.$
 
- 
 
 
 	\item (\textit{AIME II 2015}) Let $x$ and $y$ be real numbers satisfying $x^4y^5+y^4x^5=810$ and $x^3y^6+y^3x^6=945$. Evaluate $2x^3+(xy)^3+2y^3$.
@@ -1169,7 +1153,6 @@ The expression we want to find is $2(x^3+y^3) + x^3y^3$.
 
 Factor the given equations as $x^4y^4(x+y) = 810$ and $x^3y^3(x+y)(x^2-xy+y^2)=945$, respectively. By the first equation, $x+y=\frac{810}{x^4y^4}$. Plugging this in to the second equation and simplifying yields $(\frac{x}{y}-1+\frac{y}{x})=\frac{7}{6}$. Now substitute $\frac{x}{y}=a$. Solving the quadratic in $a$, we get $a=\frac{x}{y}=\frac{2}{3}$ or $\frac{3}{2}$ As both of the original equations were symmetric in $x$ and $y$, WLOG, let $\frac{x}{y}=\frac{2}{3}$, so $x=\frac{2}{3}y$. Now plugging this in to either one of the equations, we get the solutions $y=\frac{3(2^{\frac{2}{3}})}{2}$, $x=2^{\frac{2}{3}}$. Now plugging into what we want, we get $8+54+27=\boxed{089}$
 
- 
 
 
 
@@ -1206,7 +1189,6 @@ Factor the given equations as:
  \[s^3p^3=945+3(810)=3375\]
  \[sp=15\]
 
- 
  \[p^3=\frac{810}{sp}=54\]
  \[p=3\cdot2^{1/3}\]
  \[s=\frac{15}{p}=5\cdot2^{-1/3}\]
@@ -1247,10 +1229,6 @@ Take $w=x+y$ and $z=xy$. Remark that
  \begin{align*}2w^{3}-6wz+z^{3}&=2\left(\frac{125}{2}\right)-6(15)+54 \\ &=125-90+54 \\ &=\boxed{89}.\end{align*}
 
 
- 
-
-
- 
 
 
 
@@ -1262,7 +1240,6 @@ $x^4y^4(x+y)=810; x^3y^3(x^3+y^3)=945, \frac{x^2-xy+y^2}{xy}=\frac{7}{6}, \frac{
 
  The rest is easy, $2(x^3+y^3)+x^3y^3=216k^3+2[(x+y)^3-3xy(x+y)]=216k^3+2\cdot 35k^{\frac{3}{2}}=\boxed{89}$
 
- 
 
 
 
@@ -1299,8 +1276,6 @@ Let $x, y$ be roots of some polynomial $P(\alpha)$. Then we have that $P(\alpha)
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }129
 
 
@@ -1319,7 +1294,6 @@ Let $M$ be the intersection of $\overline{BC}$ and the common internal tangent o
  after angle addition identity.Setting the two areas equal, we get 
  \[\tan A = \frac{\sin A}{\cos A} = 8 \iff \sin A = \frac{8}{\sqrt{65}}, \cos A = \frac{1}{\sqrt{65}}\] after Pythagorean Identity. Now plug back in and the common area is $\frac{64}{65} \iff \boxed{129}.$
 
- 
 
 
 
@@ -1547,7 +1521,6 @@ We begin by extending $\overline{AB}$ upwards until it intersects Circle $\mathc
  \[\frac{1}{2}\cdot AC\cdot AF\cdot \sin{\theta}\]
  \[\frac{1}{2}\cdot \frac{8}{\sqrt{5}}\cdot \frac{16}{\sqrt{13}}\cdot \frac{1}{\sqrt{65}} = \frac{64}{65} = \boxed {129}\]
 
- 
 
 
 
@@ -1561,7 +1534,6 @@ Let the center of the larger circle be $O,$ and the center of the smaller circle
  \[3=2\sin\theta+3\cos\theta.\]Solving this equation we get that $\sin\theta=\frac{12}{13}$ and $\cos\theta=\frac{5}{13}.$ Doing a lot of substitution gives us 
  \[[ACE]=[DAB]=\dfrac{64}{65},\] which means the answer is $64+65=\boxed{129}.$
 
- 
 
 
 
@@ -1620,47 +1592,30 @@ Let the center of the larger circle be $O,$ and the center of the smaller circle
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2015_15_Solution_Figure_6.png}
                     \end{figure}
                     Let $BH=x$, $HC = 4-x$
-
- $x(4-x) = (\frac{8}{5})^2$
-
- $x^2-4x+\frac{64}{25} = 0$
-
- $25x^2-100x+64 - 0$
-
- $(5x-16)(5x-4) = 0$
+$x(4-x) = (\frac{8}{5})^2$
+$x^2-4x+\frac{64}{25} = 0$
+$25x^2-100x+64 - 0$
+$(5x-16)(5x-4) = 0$
 
  So $HC = \frac{16}{5}$, $BH = \frac{4}{5}$
-
- 
 $BC = \sqrt{(1+4)^2-(4-1)^2} = 4$
-
- $\frac{r_1}{r_2} = \frac{AD}{AE} = \frac{1}{4} => \frac{h_1}{h_2} = 4$
+$\frac{r_1}{r_2} = \frac{AD}{AE} = \frac{1}{4} => \frac{h_1}{h_2} = 4$
 
  Because $\triangle QIC \sim \triangle QGB$
-
- $\frac{QC}{QB} = \frac{1}{4}$
-
- $4QC = QB = QC+4$
-
- $QC = \frac{4}{3}$
+$\frac{QC}{QB} = \frac{1}{4}$
+$4QC = QB = QC+4$
+$QC = \frac{4}{3}$
 
  Because $O_1A = \frac{1}{5} O_2$
-
- $AH = \frac{4}{5} O_1B = \frac{1}{5} O_2C = \frac{4}{5}+\frac{4}{5} = \frac{8}{5}$
-
- $AQ = \sqrt{(\frac{8}{5})^2+(\frac{68}{15})^2} = \frac{4}{3}\sqrt{13}$
-
- $CQ^2 = EQ\cdot AQ => EQ = \frac{\frac{16}{9}}{\frac{4}{3}\sqrt{13}} = \frac{4}{39}\sqrt{13}$
-
- $AE = \frac{4}{3}\sqrt{13}-\frac{4}{39}\sqrt{13} = \frac{16}{13}\sqrt{13}$
-
- $\sin{Q} = \frac{AH}{AQ} = \frac{\frac{8}{5}}{\frac{4}{3}\sqrt{13}} = \frac{6}{5\sqrt{13}}$
-
- $CI = CQ\cdot \sin{Q} = \frac{4}{3}\frac{6}{5\sqrt{13}} = \frac{8}{5\sqrt{13}}$
+$AH = \frac{4}{5} O_1B = \frac{1}{5} O_2C = \frac{4}{5}+\frac{4}{5} = \frac{8}{5}$
+$AQ = \sqrt{(\frac{8}{5})^2+(\frac{68}{15})^2} = \frac{4}{3}\sqrt{13}$
+$CQ^2 = EQ\cdot AQ => EQ = \frac{\frac{16}{9}}{\frac{4}{3}\sqrt{13}} = \frac{4}{39}\sqrt{13}$
+$AE = \frac{4}{3}\sqrt{13}-\frac{4}{39}\sqrt{13} = \frac{16}{13}\sqrt{13}$
+$\sin{Q} = \frac{AH}{AQ} = \frac{\frac{8}{5}}{\frac{4}{3}\sqrt{13}} = \frac{6}{5\sqrt{13}}$
+$CI = CQ\cdot \sin{Q} = \frac{4}{3}\frac{6}{5\sqrt{13}} = \frac{8}{5\sqrt{13}}$
 
  So $S_{shaded} = \frac{1}{2}\cdot \frac{16}{13}\sqrt{13}\cdot \frac{8}{5\sqrt{13}} = \frac{64}{65}$
-
- $64+65 = \boxed{129}$
+$64+65 = \boxed{129}$
 
  -cassphe
 

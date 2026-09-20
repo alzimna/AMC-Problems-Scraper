@@ -90,10 +90,8 @@ Let $a$ represent the number of two-step jumps (hopping over two lily pads) and 
 
  
  \[\frac{1}{2^{3+0}} + 6 \cdot \frac{1}{2^{2 + 2}} + 5 \cdot \frac{1}{2^{1 +4}} + \frac{1}{2^{0 + 6}} = \frac{43}{64}\]
+$43 + 64 = \boxed{107}$
 
- $43 + 64 = \boxed{107}$
-
- 
 
 
 
@@ -139,8 +137,6 @@ We can solve this problem by looking at the probabilities of landing on each ind
 
  \[efg=72.\]
 
-
- 
  \textbf{Answer: }096
 
 
@@ -157,7 +153,6 @@ Note $c \mid 70, 71 \implies c \mid \text{gcd} (70, 71) = 1$ which implies $c=1$
 
 We know that any two consecutive numbers are coprime. Using this, we can figure out that $c=1$ and $e=1$. $d$ then has to be $71$. Now we have two equations left. $ab=70$ and $fg=72$. To solve these we just need to figure out all of the factors. Doing the prime factorization of $70$ and $72$, we find that they have $8$ and $12$ factors, respectively. The answer is $8 \times 12=\boxed{096}$
 
- 
 
 
 
@@ -229,8 +224,7 @@ We can solve this without finding the amount of cases. Notice when we roll a 1 o
 
  We multiply each probability of rolling k duds with the probability of getting a square product given k duds and then sum all the values.
  \[\left(\frac{1}{3}\right)^4  * 1 + 4 * \left(\frac{1}{3}\right)^3 * \frac{2}{3} * 0 + 6 * \left(\frac{1}{3}\right)^2 * \left(\frac{2}{3}\right)^2 * \frac{1}{4} + 4 * \frac{1}{3} * \left(\frac{2}{3}\right)^3 * \frac{3}{32} + \left(\frac{2}{3}\right)^4 * \frac{5}{32} = \frac{25}{162}.\]
-
- $25+162$ = $\boxed{187}$ 
+$25+162$ = $\boxed{187}$ 
 
  -dnaidu (silverlizard)
 
@@ -291,25 +285,18 @@ We can do recursion on the number of rolls to find the number of ways we can get
  
  \[A_{n} = S_{n-1}+B_{n-1}+D_{n-1}+E_{n-1}+2A_{n-1}\]
 
- 
  \[B_{n} = A_{n-1}+D_{n-1}+F_{n-1}+S_{n-1}+2B_{n-1}\]
 
- 
  \[C_{n} = S_{n-1}+E_{n-1}+F_{n-1}+G_{n-1}+2C_{n-1}\]
 
- 
  \[D_{n} = S_{n-1}+A_{n-1}+B_{n-1}+G_{n-1}+2D_{n-1}\]
 
- 
  \[E_{n} = A_{n-1}+C_{n-1}+F_{n-1}+G_{n-1}+2E_{n-1}\]
 
- 
  \[F_{n} = B_{n-1}+E_{n-1}+C_{n-1}+G_{n-1}+2F_{n-1}\]
 
- 
  \[G_{n} = C_{n-1}+D_{n-1}+F_{n-1}+E_{n-1}+2G_{n-1}\]
 
- 
  \[S_{n} = A_{n-1}+C_{n-1}+B_{n-1}+D_{n-1}+2S_{n-1}\]
 
  We have the following values after considering the possible values of the 1st roll:
@@ -322,7 +309,6 @@ We can do recursion on the number of rolls to find the number of ways we can get
  
  \[A_2 = B_2 = D_2 = 6, C_2 = 4, E_2 = F_2 = G_2 = 2, S_2 = 8\]
 
- 
  \[A_3 = B_3 = D_3 = 34, C_3 = 22, E_3 = F_3 = G_3 = 18, S_3 = 38\]
 
  Finally, we have $S_4 = 200$, $\frac{m}{n} = \frac{200}{1296} = \frac{25}{162}$meaning our answer is $\boxed{187}$.
@@ -425,24 +411,13 @@ We use casework:
  By listing these cases, we quickly see a pattern:
 
  $(1,1,2,2)$
-
- $(1,1,3,3)$
-
- $...$
-
- $(1,1,6,6)$
-
- 
-$(2,2,3,3)$
-
- $...$
-
- $(2,2,6,6)$
-
- 
+$(1,1,3,3)$
 $...$
-
- 
+$(1,1,6,6)$
+$(2,2,3,3)$
+$...$
+$(2,2,6,6)$
+$...$
 $(5,5,6,6)$
 
  There are a total of $5+4+3+2+1=15$ cases. Multiplying this by $6$ yields $15\cdot 6=90$ ways.
@@ -455,16 +430,11 @@ $(5,5,6,6)$
  A special case must be made for the number $4$ because $4$ itself is a perfect square.
 
  $(1,1,1,4)$ $4$
-
- $(2,2,1,4)$ $12$
-
- $(3,3,1,4)$ $12$
-
- $(4,4,1,4)$ $4$
-
- $(5,5,1,4)$ $12$
-
- $(6,6,1,4)$ $12$
+$(2,2,1,4)$ $12$
+$(3,3,1,4)$ $12$
+$(4,4,1,4)$ $4$
+$(5,5,1,4)$ $12$
+$(6,6,1,4)$ $12$
 
  
 Summing these up yields a total of $4+12+12+4+12+12=56$ ways.
@@ -477,8 +447,7 @@ Summing these up yields a total of $4+12+12+4+12+12=56$ ways.
  Note that the sets
 
  $(1,2,3,6)$
-
- $(2,3,4,6)$
+$(2,3,4,6)$
 
  Multiply to perfect square. The total of these cases are $24+24=48$.
 
@@ -492,8 +461,7 @@ Adding all these cases together yields $6+90+56+48=200$ ways that the product of
 Therefore the probability is
 
  $\frac{200}{1296}=\frac{25}{162}$
-
- $m+n = 25+162 = \boxed{187}$
+$m+n = 25+162 = \boxed{187}$
 
  -elchen3\_f
 
@@ -510,7 +478,6 @@ Recall that a number is a perfect square iff every prime in its prime factorizat
  \[\frac{g(1, c)+g(-1, c)}{2}=\frac{(c+5)^4+3(c+1)^4}{4}=h(c).\] Apply this one more time to get 
  \[\frac{h(1)+h(-1)}{2}=\frac{6^4+3(2)^4+4^4}{8}.\] The requested probability is $\frac{6^4+3(2)^4+4^4}{8\cdot 6^4}=\frac{25}{162} \implies \boxed{187}.$
 
- 
 
 
 	\item (\textit{AIME II 2019}) Four ambassadors and one advisor for each of them are to be seated at a round table with $12$ chairs numbered in order $1$ to $12$. Each ambassador must sit in an even-numbered chair. Each advisor must sit in a chair adjacent to his or her ambassador. There are $N$ ways for the $8$ people to be seated at the table under these conditions. Find the remainder when $N$ is divided by $1000$.
@@ -560,7 +527,9 @@ In the diagram, the seats are numbered 1...12.  Rather than picking seats for ea
 
  
             \begin{enumerate}
-                \item Choose a gap for team 1 ($12$ options)\item Choose 3 other gaps around the table with positive gap-gaps. Note that because the sum of the distances between the gaps must be equal to $8,$ we create a bijection - to partition the 8 balls into 4 urns, with each urn having a positive number of balls.  There is the same as partitioning 4 with 4 non-negative integers, and using stars-and-bars, this is $\dbinom{4+4-1}{4-1}=\dbinom{7}{3}=35$\item Place the other 3 teams in the chosen gaps ($6$ permutations)
+        \item Choose a gap for team 1 ($12$ options)
+        \item Choose 3 other gaps around the table with positive gap-gaps. Note that because the sum of the distances between the gaps must be equal to $8,$ we create a bijection - to partition the 8 balls into 4 urns, with each urn having a positive number of balls.  There is the same as partitioning 4 with 4 non-negative integers, and using stars-and-bars, this is $\dbinom{4+4-1}{4-1}=\dbinom{7}{3}=35$
+        \item Place the other 3 teams in the chosen gaps ($6$ permutations)
             \end{enumerate}
             So, the total is $12\cdot35\cdot6=2520$.
 
@@ -584,7 +553,8 @@ We see that for every 2 adjacent spots on the table, there is exactly one way fo
 
  
             \begin{enumerate}
-                \item There is an ambassador at the 12th chair and his or her partner at the 1st chair\item There is no pair that has their chairs numbered as 12 and 1
+        \item There is an ambassador at the 12th chair and his or her partner at the 1st chair
+        \item There is no pair that has their chairs numbered as 12 and 1
             \end{enumerate}
             For the first case, there are 3 pairs and 4 empty spaces, which results in $\frac{7!}{3!4!} = 35$ ways to arrange the pairs.
 
@@ -650,7 +620,6 @@ Using change of base on the second equation to base b,
  \[b^{36} = 6^{108}\]
  \[b = 6^3 = \boxed{216}\]
 
- 
 
 
 
@@ -786,7 +755,6 @@ The second equation implies that
  \[\log_{36} x=54 \implies x=36^{54}.\]Finally, 
  \[b=(36^{54})^{\frac{1}{36}}=36^{54\cdot\frac{1}{36}}=6^{2*\frac{3}{2}}=6^3=\boxed{216}.\]
 
- 
 
 
 	\item (\textit{AIME II 2019}) Triangle $ABC$ has side lengths $AB=120,BC=220$, and $AC=180$. Lines $\ell_A,\ell_B$, and $\ell_C$ are drawn parallel to $\overline{BC},\overline{AC}$, and $\overline{AB}$, respectively, such that the intersections of $\ell_A,\ell_B$, and $\ell_C$ with the interior of $\triangle ABC$ are segments of lengths $55,45$, and $15$, respectively. Find the perimeter of the triangle whose sides lie on lines $\ell_A,\ell_B$, and $\ell_C$.
@@ -854,26 +822,19 @@ Denote $\frac{1+\sqrt{3}i}{2}$ with $\omega$.
 Calculate the first few powers of $\frac{1+\sqrt{3}i}{2}$.
 
  $(\frac{1+\sqrt{3}i}{2})^1=\frac{1+\sqrt{3}i}{2}$
-
- $(\frac{1+\sqrt{3}i}{2})^2=\frac{-1+\sqrt{3}i}{2}$
-
- $(\frac{1+\sqrt{3}i}{2})^3=-1$
-
- $(\frac{1+\sqrt{3}i}{2})^4=\frac{-1-\sqrt{3}i}{2}$
-
- $(\frac{1+\sqrt{3}i}{2})^5=\frac{1-\sqrt{3}i}{2}$
-
- $(\frac{1+\sqrt{3}i}{2})^6=1$
+$(\frac{1+\sqrt{3}i}{2})^2=\frac{-1+\sqrt{3}i}{2}$
+$(\frac{1+\sqrt{3}i}{2})^3=-1$
+$(\frac{1+\sqrt{3}i}{2})^4=\frac{-1-\sqrt{3}i}{2}$
+$(\frac{1+\sqrt{3}i}{2})^5=\frac{1-\sqrt{3}i}{2}$
+$(\frac{1+\sqrt{3}i}{2})^6=1$
 
  We figure that the power of $\frac{1+\sqrt{3}i}{2}$ repeats in a cycle 6.
 
  $f(\frac{1+\sqrt{3}i}{2})=(a(\frac{1+\sqrt{3}i}{2})^2+b(\frac{1+\sqrt{3}i}{2})+c)(\frac{1+\sqrt{3}i}{2})^{2016}$
 
  Since 2016 is a multiple of 6, $(\frac{1+\sqrt{3}i}{2})^{2016}=1$
-
- $f(\frac{1+\sqrt{3}i}{2})=a(\frac{-1+\sqrt{3}i}{2})+b(\frac{1+\sqrt{3}i}{2})+c$
-
- $f(\frac{1+\sqrt{3}i}{2})=(-\frac{1}{2}a+\frac{1}{2}b+c)+(\frac{\sqrt{3}i}{2}a+\frac{\sqrt{3}i}{2}b)=2015+2019\sqrt{3}i$
+$f(\frac{1+\sqrt{3}i}{2})=a(\frac{-1+\sqrt{3}i}{2})+b(\frac{1+\sqrt{3}i}{2})+c$
+$f(\frac{1+\sqrt{3}i}{2})=(-\frac{1}{2}a+\frac{1}{2}b+c)+(\frac{\sqrt{3}i}{2}a+\frac{\sqrt{3}i}{2}b)=2015+2019\sqrt{3}i$
 
  Therefore, $-\frac{1}{2}a+\frac{1}{2}b+c=2015$ and $\frac{\sqrt{3}i}{2}a+\frac{\sqrt{3}i}{2}b=2019\sqrt{3}i$
 
@@ -885,7 +846,6 @@ Calculate the first few powers of $\frac{1+\sqrt{3}i}{2}$.
 
  $f(1)=a+b+c=2019+2019+2015=6053$, and the remainder when it divides $1000$ is $\boxed{053}.$
 
- 
 
 
 	\item (\textit{AIME II 2019}) Call a positive integer $n$ $k$-\textit{pretty} if $n$ has exactly $k$ positive divisors and $n$ is divisible by $k$. For example, $18$ is $6$-pretty. Let $S$ be the sum of the positive integers less than $2019$ that are $20$-pretty. Find $\frac{S}{20}$.
@@ -980,7 +940,6 @@ We have the number being $20k = 2^2 \cdot 5 \cdot k$. We will consider some case
 
  Finally, the answer is $372 + 100 = \boxed{472}$
 
- 
 
 
 	\item (\textit{AIME II 2019}) There is a unique angle $\theta$ between $0^\circ$ and $90^\circ$ such that for nonnegative integers $n,$ the value of $\tan(2^n\theta)$ is positive when $n$ is a multiple of $3$, and negative otherwise. The degree measure of $\theta$ is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -1000,8 +959,7 @@ Note that if $\tan \theta$ is positive, then $\theta$ is in the first or third q
 
  This is the case if $2^3\theta \equiv 2^0\theta \pmod{180^{\circ}}$, so $7\theta \equiv 0^{\circ} \pmod{180^{\circ}}$. Therefore, recalling that $0^{\circ}<\theta<90^{\circ},$ the possible $\theta$ are:
  \[\frac{180}{7}^{\circ}, \frac{360}{7}^{\circ}, \frac{540}{7}^{\circ}.\]
-
- $\frac{180}{7}^{\circ}$ does not work since $\tan\left(2 \cdot \frac{180}{7}^{\circ}\right)$ is positive.
+$\frac{180}{7}^{\circ}$ does not work since $\tan\left(2 \cdot \frac{180}{7}^{\circ}\right)$ is positive.
 
  $\frac{360}{7}^{\circ}$ does not work because $\tan\left(4 \cdot \frac{360}{7}^{\circ}\right)$ is positive.
 
@@ -1041,7 +999,6 @@ As in the previous solution, we note that $\tan \theta$ is positive when $\theta
 
 Since $\tan\left(\theta\right) > 0$, $0 < \theta < 90$.  Since $\tan\left(2\theta\right) < 0$, $\theta$ has to be in the second half of the interval (0, 90) ie (45, 90).  Since $\tan\left(4\theta\right) < 0$, $\theta$ has to be in the second half of that interval ie (67.5, 90).  And since $\tan\left(8\theta\right) > 0$, $\theta$ has to be in the first half of (67.5, 90).  Inductively, the pattern repeats: $\theta$ is in the second half of the second half of the first half of the second half of the second half... of the interval (0, 90).  Consider the binary representation of numbers in the interval (0, 1).  Numbers in the first half of the interval start with 0.0... and numbers in the second half start with 0.1... .  Similarly, numbers in the second half of the second half start with 0.11... etc.  So if we want a number in the first half of the second half of the second half... of the interval, we want its binary representation to be $0.11011011011..._2 = \frac{6}{7}_{10}$.  So we want the number which is 6/7 of the way through the interval (0, 90) so $\theta = \frac{6}{7}\cdot 90 = \frac{540}{7}$ and $p+q = 540 + 7 = \boxed{547}$
 
- 
 
 
 
@@ -1062,8 +1019,6 @@ Since $7$ is the only number n such that f(x) = $2^{\lfloor x\rfloor}$ $\text{(m
 
 	\item (\textit{AIME II 2019}) Triangle $ABC$ has side lengths $AB=7,BC=8,$ and $CA=9.$ Circle $\omega_1$ passes through $B$ and is tangent to line $AC$ at $A.$ Circle $\omega_2$ passes through $C$ and is tangent to line $AB$ at $A.$ Let $K$ be the intersection of circles $\omega_1$ and $\omega_2$ not equal to $A.$ Then $AK=\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
-
- 
  \textbf{Answer: }011
 
 
@@ -1099,15 +1054,12 @@ Since $7$ is the only number n such that f(x) = $2^{\lfloor x\rfloor}$ $\text{(m
 Note that from the tangency condition that the supplement of $\angle CAB$ with respects to lines $AB$ and $AC$ are equal to $\angle AKB$ and $\angle AKC$, respectively, so from tangent-chord, 
  \[\angle AKC=\angle AKB=180^{\circ}-\angle BAC\] Also note that $\angle ABK=\angle KAC$$^{(*)}$, so $\triangle AKB\sim \triangle CKA$. Using similarity ratios, we can easily find 
  \[AK^2=BK*KC\] However, since $AB=7$ and $CA=9$, we can use similarity ratios to get 
- \[BK=\frac{7}{9}AK, CK=\frac{9}{7}AK\] 
+ \[BK=\frac{7}{9}AK, CK=\frac{9}{7}AK\]
 
- 
-                \begin{itemize}
-                    \item Now we use Law of Cosines on $\triangle AKB$: From reverse Law of Cosines, $\cos{\angle BAC}=\frac{11}{21}\implies \cos{(180^{\circ}-\angle BAC)}=\angle AKB=-\frac{11}{21}$
-                \end{itemize}
-
-
-                Giving us 
+            \begin{itemize}
+        \item Now we use Law of Cosines on $\triangle AKB$: From reverse Law of Cosines, $\cos{\angle BAC}=\frac{11}{21}\implies \cos{(180^{\circ}-\angle BAC)}=\angle AKB=-\frac{11}{21}$
+            \end{itemize}
+            Giving us 
  \[AK^2+\frac{49}{81}AK^2+\frac{22}{27}AK^2=49\] 
  \[\implies \frac{196}{81}AK^2=49\] 
  \[AK=\frac{9}{2}\] so our answer is $9+2=\boxed{011}$.
@@ -1117,28 +1069,23 @@ Note that from the tangency condition that the supplement of $\angle CAB$ with r
  -franchester; $^{(*)}$ by firebolt360
 
  \textbf{Supplement} 
-                \begin{itemize}
-                    \item In order to get to the Law of Cosines first, we first apply the LOC to $\triangle{ABC},$ obtaining $\angle{BAC}.$\item We angle chase before applying the law of cosines to $\angle{AKB}.$
-                \end{itemize}
-
-
-                Note that $\angle{ABK}=\angle{KAC}$ and $\angle{KCA}=\angle{KAB}$ from tangent-chord. 
+            \begin{itemize}
+        \item In order to get to the Law of Cosines first, we first apply the LOC to $\triangle{ABC},$ obtaining $\angle{BAC}.$
+        \item We angle chase before applying the law of cosines to $\angle{AKB}.$
+            \end{itemize}
+            Note that $\angle{ABK}=\angle{KAC}$ and $\angle{KCA}=\angle{KAB}$ from tangent-chord. 
 
  Thus, $\angle{AKC}=\angle{AKB}=180^{\circ}-(\angle{ABK}+\angle{KAB}).$ 
 
  However from our tangent chord, note that:
- \[\angle{ABK}+\angle{KAB}=\angle{KAC}+\angle{KAB}=\angle{BAC}.\]Thus, $\angle{AKB}=180^\circ-\angle{BAC}.$ 
+ \[\angle{ABK}+\angle{KAB}=\angle{KAC}+\angle{KAB}=\angle{BAC}.\]Thus, $\angle{AKB}=180^\circ-\angle{BAC}.$
 
- 
-                \begin{itemize}
-                    \item As an alternative approach, note that the sum of the angles in quadrilateral $ABKC$ is $360^{\circ}$ and we can find $\angle{AKB}=\frac12$ of convex $\angle{BKC},$ which is just:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item As an alternative approach, note that the sum of the angles in quadrilateral $ABKC$ is $360^{\circ}$ and we can find $\angle{AKB}=\frac12$ of convex $\angle{BKC},$ which is just:
+            \end{itemize}
+            
  \[\frac12 \left(360^{\circ}-2(\angle{KAB}+\angle{KBA}\right) = 180^\circ - \angle{BAC}.\]
 
- 
 
 
 
@@ -1182,8 +1129,6 @@ Let the centers of the circles be $O_{1}$ and $O_{2}$ where the $O_{1}$ has the 
 
 	\item (\textit{AIME II 2019}) For $n\ge1$ call a finite sequence $(a_1,a_2,\ldots,a_n)$ of positive integers \textit{progressive} if $a_i<a_{i+1}$ and $a_i$ divides $a_{i+1}$ for $1\le i\le n-1$. Find the number of progressive sequences such that the sum of the terms in the sequence is equal to $360.$
 
-
- 
  \textbf{Answer: }047
 
 
@@ -1214,8 +1159,6 @@ Thus the answer is $N = 15+6+8+6+4+3+2+2+1 = \boxed{047}$.
 
 	\item (\textit{AIME II 2019}) Regular octagon $A_1A_2A_3A_4A_5A_6A_7A_8$ is inscribed in a circle of area $1.$ Point $P$ lies inside the circle so that the region bounded by $\overline{PA_1},\overline{PA_2},$ and the minor arc $\widehat{A_1A_2}$ of the circle has area $\frac{1}{7},$ while the region bounded by $\overline{PA_3},\overline{PA_4},$ and the minor arc $\widehat{A_3A_4}$ of the circle has area $\frac{1}{9}.$ There is a positive integer $n$ such that the area of the region bounded by $\overline{PA_6},\overline{PA_7},$ and the minor arc $\widehat{A_6A_7}$ of the circle is equal to $\frac{1}{8}-\frac{\sqrt2}{n}.$ Find $n.$
 
-
- 
  \textbf{Answer: }504
 
 
@@ -1304,30 +1247,26 @@ The requested integer is $n=\boxed{504}.$~TThB0501
 
 We will do casework on $n \pmod{5}$ and see which values work. 
 
- Case 1: $n \equiv 1 \pmod{5}$ 
-
- $n$ would have to be greater than $91$ because if it wasn't then we could just add denominations of $5$ until we got to $91.$ However, if $n$ is more than $91,$ then all the numbers from $91$ to $n$ which are not multiples of $5$ are also unrepresentable, which violates the problem's condition of $91$ being the largest unrepresentable number. So there are no values for this case. 
+ Case 1: $n \equiv 1 \pmod{5}$
+$n$ would have to be greater than $91$ because if it wasn't then we could just add denominations of $5$ until we got to $91.$ However, if $n$ is more than $91,$ then all the numbers from $91$ to $n$ which are not multiples of $5$ are also unrepresentable, which violates the problem's condition of $91$ being the largest unrepresentable number. So there are no values for this case. 
 
  
-Case 2: $n \equiv 2 \pmod{5}$ 
-
- $n + 1 \equiv 3 \pmod{5}$ is the smallest formable number 3 mod 5, so $n + 1 - 5 = n - 4$ is the largest unformable number 3 mod 5. $2n + 2 \equiv 1 \pmod{5}$ is the smallest formable number 1 mod 5, so $2n + 2 - 5 = 2n - 3$ is the largest unformable number 1 mod 5. Finally, $2n \equiv 4 \pmod{5}$ is the smallest formable number 4 mod 5, so $2n - 5$ is the largest unformable number 4 mod 5.
+Case 2: $n \equiv 2 \pmod{5}$
+$n + 1 \equiv 3 \pmod{5}$ is the smallest formable number 3 mod 5, so $n + 1 - 5 = n - 4$ is the largest unformable number 3 mod 5. $2n + 2 \equiv 1 \pmod{5}$ is the smallest formable number 1 mod 5, so $2n + 2 - 5 = 2n - 3$ is the largest unformable number 1 mod 5. Finally, $2n \equiv 4 \pmod{5}$ is the smallest formable number 4 mod 5, so $2n - 5$ is the largest unformable number 4 mod 5.
 
  Therefore, the largest unformable number overall is $2n - 3 \equiv 1 \pmod{5}.$ This satisfies the problem's condition!  $2n - 3 = 91 \implies n = 47.$ 
 
  
-Case 3: $n \equiv 3 \pmod{5}$ 
-
- $n + 1 \equiv 4 \pmod{5},$ which is the smallest representable number 4 mod 5, so the largest unrepresentable number 4 mod 5 is $n + 1 - 5 = n -4.$ 
+Case 3: $n \equiv 3 \pmod{5}$
+$n + 1 \equiv 4 \pmod{5},$ which is the smallest representable number 4 mod 5, so the largest unrepresentable number 4 mod 5 is $n + 1 - 5 = n -4.$ 
 
  Similarly, $2n \equiv 1 \pmod{5}$ is the smallest formable number 1 mod 5 and $2n + 1 \equiv 2 \pmod{5}$ (Yes ~Towerrocks, it was 2n + 1 my bad!) is the smallest formable number 2 mod 5, so the largest number 2 mod 5 that is unrepresentable is $2n + 1 - 5 = 2n - 4,$ but the largest number 1 mod 5 that is unrepresentable is $2n -5.$ $2n - 4 > 2n - 5,$ so there would be a larger unrepresentable number than $91$ if we were to set $2n - 5$ equal to it, which violates the problem's condition. And we can't set $2n - 4$ equal to $91$ because $91 \not\equiv 2 \pmod{5},$ so there are no valid values for this case.
 
  
 
 
- Case 4: $n \equiv 4 \pmod{5}$ 
-
- $n + 1$ would be a multiple of $5,$ so we would be left with denominations of $5$ and $n.$ Then it would just be a straightforward application of the Chicken Mcnugget Theorem: $5n - n - 5 = 91 \implies n = 24,$ which is indeed $4 \pmod{5}.$ So this value works.
+ Case 4: $n \equiv 4 \pmod{5}$
+$n + 1$ would be a multiple of $5,$ so we would be left with denominations of $5$ and $n.$ Then it would just be a straightforward application of the Chicken Mcnugget Theorem: $5n - n - 5 = 91 \implies n = 24,$ which is indeed $4 \pmod{5}.$ So this value works.
 
  
 Case 5: $n$ is a multiple of 5 
@@ -1337,7 +1276,6 @@ Case 5: $n$ is a multiple of 5
  
 The two valid values we found were $47$ and $24,$ so the answer is $47 + 24 = \boxed{71}.$
 
- 
 
 
 
@@ -1412,45 +1350,33 @@ Now for $n = 24$ clearly $91$ is unobtainable since we need a $4 \pmod {5}$ amou
 We can use the formula $g = \left( \max_{j \in \{1, 2, \ldots, a_1-1\}} R_j \right) - a_1$, where $g$ is the Frobenius Number (in this case 91), $a_1$ is the smallest denomination (which is 5), $j \in \{1, 2, \ldots, a_1-1\}$ represents a remainder (residue class) when you divide an integer by $a_1,$ and $R_j$ is the \textbf{smallest} nonnegative integer such that $a \cdot n + b \cdot (n + 1) \equiv j \pmod{5}$ where $a$ and $b$ are also nonnegative integers. So we have $91 = \left( \max_{j \in \{1, 2, 3, 4\}} R_j \right) - 5 \implies 96 = \left( \max_{j \in \{1, 2, 3, 4\}} R_j \right).$ This means that the largest of the $R_j$ values must be equal to exactly $96.$ We will do casework on $n \pmod{5}.$
 
  
-\textbf{Case 1:} $n \equiv 1 \pmod{5}.$ 
-
- $n + 1 \equiv 2 \pmod{5}.$ Plug this in:
+\textbf{Case 1:} $n \equiv 1 \pmod{5}.$
+$n + 1 \equiv 2 \pmod{5}.$ Plug this in:
 
  $R_1$: $a \cdot 1 + b \cdot 2 \equiv 1 \pmod{5} \implies a = 1, b = 0.$ So $R_1 = 1 \cdot n + 0 \cdot (n + 1) = n.$
-
- $R_2$: $a \cdot 1 + b \cdot 2 \equiv 2 \pmod{5} \implies a = 0, b = 1.$ So $R_2 = 0 \cdot n + 1 \cdot (n + 1) = n + 1.$
-
- $R_3$: $a \cdot 1 + b \cdot 2 \equiv 3 \pmod{5} \implies a = 1, b = 1.$ So $R_3 = 1 \cdot n + 1 \cdot (n + 1) = 2n + 1.$
-
- $R_4$: $a \cdot 1 + b \cdot 2 \equiv 4 \pmod{5} \implies a = 0, b = 2.$ So $R_4 = 2n + 2.$ This is the largest of the four $R_j$ values. Setting this equal to $96$ we get $n = 47.$ But this doesn't work because $47$ is not congruent to $1 \pmod{5}.$ 
+$R_2$: $a \cdot 1 + b \cdot 2 \equiv 2 \pmod{5} \implies a = 0, b = 1.$ So $R_2 = 0 \cdot n + 1 \cdot (n + 1) = n + 1.$
+$R_3$: $a \cdot 1 + b \cdot 2 \equiv 3 \pmod{5} \implies a = 1, b = 1.$ So $R_3 = 1 \cdot n + 1 \cdot (n + 1) = 2n + 1.$
+$R_4$: $a \cdot 1 + b \cdot 2 \equiv 4 \pmod{5} \implies a = 0, b = 2.$ So $R_4 = 2n + 2.$ This is the largest of the four $R_j$ values. Setting this equal to $96$ we get $n = 47.$ But this doesn't work because $47$ is not congruent to $1 \pmod{5}.$ 
 
  
 \textbf{Case 2:} $n \equiv 2 \pmod{5}.$
-
- $n + 1 \equiv 3 \pmod{5}.$ Plug this in:
+$n + 1 \equiv 3 \pmod{5}.$ Plug this in:
 
  $R_1$: $a \cdot 2 + b \cdot 3 \equiv 1 \pmod{5} \implies a = 0, b = 2.$ So $R_1 = 0 \cdot n + 2 \cdot (n + 1) = 2n + 2.$
-
- $R_2$: $a \cdot 2 + b \cdot 3 \equiv 2 \pmod{5} \implies a = 1, b = 0.$ So $R_2 = 1 \cdot n + 0 \cdot (n + 1) =  n.$
-
- $R_3$: $a \cdot 2 + b \cdot 3 \equiv 3 \pmod{5} \implies a = 0, b = 1.$ So $R_3 = 0 \cdot n + 1 \cdot (n + 1) = n + 1.$
-
- $R_4$: $a \cdot 2 + b \cdot 3 \equiv 4 \pmod{5} \implies a = 2, b = 0.$ So $R_4 = 2 \cdot n + 0 \cdot (n + 1) = 2n.$ 
+$R_2$: $a \cdot 2 + b \cdot 3 \equiv 2 \pmod{5} \implies a = 1, b = 0.$ So $R_2 = 1 \cdot n + 0 \cdot (n + 1) =  n.$
+$R_3$: $a \cdot 2 + b \cdot 3 \equiv 3 \pmod{5} \implies a = 0, b = 1.$ So $R_3 = 0 \cdot n + 1 \cdot (n + 1) = n + 1.$
+$R_4$: $a \cdot 2 + b \cdot 3 \equiv 4 \pmod{5} \implies a = 2, b = 0.$ So $R_4 = 2 \cdot n + 0 \cdot (n + 1) = 2n.$ 
 
  The largest of the four $R_j$ values is $R_1 = 2n + 2.$ Setting this equal to $96$ we get $2n + 2 = 96 \implies n = 47.$ Now this works! $47$ is indeed $2 \pmod{5}.$
 
  
-\textbf{Case 3:} $n \equiv 3 \pmod{5}.$ 
-
- $n + 1 \equiv 4 \pmod{5}.$ Plug this in:
+\textbf{Case 3:} $n \equiv 3 \pmod{5}.$
+$n + 1 \equiv 4 \pmod{5}.$ Plug this in:
 
  $R_1$: $a \cdot 3 + b \cdot 4 \equiv 1 \pmod{5} \implies a = 2, b = 0.$ So $R_1 = 2 \cdot n + 0 \cdot (n + 1) = 2n.$
-
- $R_2$: $a \cdot 3 + b \cdot 4 \equiv 2 \pmod{5} \implies a = 1, b = 1.$ So $R_2 = 1 \cdot n + 1 \cdot (n + 1) = 2n + 1.$
-
- $R_3$: $a \cdot 3 + b \cdot 4 \equiv 3 \pmod{5} \implies a = 1, b = 0.$ So $R_3 = 1 \cdot n + 0 \cdot (n + 1) = n.$
-
- $R_4$: $a \cdot 3 + b \cdot 4 \equiv 4 \pmod{5} \implies a = 0, b = 1.$ So $R_4 = 0 \cdot n + 1 \cdot (n + 1) = n + 1.$ 
+$R_2$: $a \cdot 3 + b \cdot 4 \equiv 2 \pmod{5} \implies a = 1, b = 1.$ So $R_2 = 1 \cdot n + 1 \cdot (n + 1) = 2n + 1.$
+$R_3$: $a \cdot 3 + b \cdot 4 \equiv 3 \pmod{5} \implies a = 1, b = 0.$ So $R_3 = 1 \cdot n + 0 \cdot (n + 1) = n.$
+$R_4$: $a \cdot 3 + b \cdot 4 \equiv 4 \pmod{5} \implies a = 0, b = 1.$ So $R_4 = 0 \cdot n + 1 \cdot (n + 1) = n + 1.$ 
 
  The largest of the four $R_j$ values is $R_2 = 2n + 1.$ Setting this equal to $96$ we get $n = 47.5,$ which is not an integer. So this doesn't work.
 
@@ -1466,7 +1392,6 @@ We can use the formula $g = \left( \max_{j \in \{1, 2, \ldots, a_1-1\}} R_j \rig
 
  The two valid values we found were $47$ and $24,$ so the sum is $\boxed{71}.$
 
- 
 
 
 	\item (\textit{AIME II 2019}) In acute triangle $ABC,$ points $P$ and $Q$ are the feet of the perpendiculars from $C$ to $\overline{AB}$ and from $B$ to $\overline{AC}$, respectively. Line $PQ$ intersects the circumcircle of $\triangle ABC$ in two distinct points, $X$ and $Y$. Suppose $XP=10$, $PQ=25$, and $QY=15$. The value of $AB\cdot AC$ can be written in the form $m\sqrt n$ where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n$.
@@ -1579,7 +1504,6 @@ Equating the two and simplifying, we arrive at the equation
  \[k^2+400=k\ell\cdot\frac{2k\ell}{2k^2-750} = \frac{k^2(k^2-125)}{k^2-375}.\]Solving, we obtain $k=\sqrt{1000}$ and $\ell = \sqrt{875}$. Then we evaluate:\begin{align*}AB\cdot AC &= (ck)(c\ell) = \frac{(k\ell)^3}{(k^2-375)^2}\\&= \frac{(\sqrt{875000})^3}{625^2} = \frac{(250\sqrt{14})^3}{625^2} \\&= \frac{(2\cdot 5^3)^3\cdot 14\sqrt{14}}{5^8}=560\sqrt{14}.\end{align*}
 The answer is $560+14 = \boxed{574}.$
 
- 
 
 
 
@@ -1596,8 +1520,7 @@ Let the circumcircle of $\triangle ABC$ be $\omega$. We know that
  $AP^2 + AQ^2 - 2\cdot AP \cdot AQ \cdot \cos(\angle BAC) = PQ^2 \implies a^2 + b^2 - 2ab\cos(\theta) = 25^2 = 625$.
 
  Also, we know that on $\triangle APC$
-
- $\cos(\theta) = \frac{AP}{AC} = \frac{a}{AQ + QC} = \frac{a}{b + \frac{525}{b}} = \frac{ab}{b^2 + 525}$.
+$\cos(\theta) = \frac{AP}{AC} = \frac{a}{AQ + QC} = \frac{a}{b + \frac{525}{b}} = \frac{ab}{b^2 + 525}$.
 
  And on $\triangle ABQ$ we know that
 

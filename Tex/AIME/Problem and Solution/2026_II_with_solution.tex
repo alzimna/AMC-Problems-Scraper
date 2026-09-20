@@ -26,8 +26,6 @@ Suppose we have an arithmetic sequence of integers that includes $4, 24,$ and $3
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }243
 
 
@@ -42,8 +40,7 @@ Suppose we have an arithmetic sequence of integers that includes $4, 24,$ and $3
 
  Then
  \[\sqrt{N} = \sqrt{3^{10}} = 3^{5} = \boxed{243}.\]
-
- </div>
+</div>
 
 
 
@@ -108,17 +105,14 @@ Each square's options for the bug are independent of the previous square; it onl
 
 	\item (\textit{AIME II 2026}) Let $ABCDE$ be a nonconvex pentagon with internal angles $\angle A = \angle E = 90^\circ$ and $\angle B = \angle D = 45^\circ.$ Suppose that $DE < AB, AE = 20, BC = 14\sqrt2,$ and points $B,C,$ and $D$ lie on the same side of line $AE.$ Suppose further that $AB$ is an integer with $AB < 2026$ and the area of pentagon $ABCDE$ is an integer multiple of $16.$ Find the number of possible values of $AB.$
 
-
- 
  \textbf{Answer: }503
 
 
 
 \textbf{Solution 1}
 
-Construct line $FG$ such that it passes through point $C$ and is parallel to line $AE$. Since $FG||AE$, $\angle BFC = \angle A = 90^\circ.$ Since $\angle B = 45^\circ$, triangle $\triangle BFC$ is a $45-45-90$ triangle, meaning that $FC=14,$ and $CG=6.$ Since $\angle B = 45^\circ$ and $\angle DGC=90^\circ$ from parallel lines, triangle $\triangle DCG \sim{\triangle BCF}.$ Therefore, $BF=FC=14$, and $CG=GD=6.$ If we set the length of segment $AF$ to $x$, we can get the area of pentagon $ABCDE$ as $116+20x.$ Since $116+20x$ must be a multiple of $16, x\equiv 3\mod{4}.$ Since $x+14<2026, x<2012.$ We can express $x$ as $4y+3,$ so therefore $4y+3<2012,$ so $4y<2009.$ Because $y\le0$ solving the first inequality gives $y<502\frac{1}{4},$ meaning that $0\le y \le 502.$ Since $y$ must be an integer, there are $503$ values of $y,$ giving $\boxed{503}$ possible values of $AB.$ 
+Construct line $FG$ such that it passes through point $C$ and is parallel to line $AE$. Since $FG||AE$, $\angle BFC = \angle A = 90^\circ.$ Since $\angle B = 45^\circ$, triangle $\triangle BFC$ is a $45-45-90$ triangle, meaning that $FC=14,$ and $CG=6.$ Since $\angle B = 45^\circ$ and $\angle DGC=90^\circ$ from parallel lines, triangle $\triangle DCG \sim{\triangle BCF}.$ Therefore, $BF=FC=14$, and $CG=GD=6.$ If we set the length of segment $AF$ to $x$, we can get the area of pentagon $ABCDE$ as $116+20x.$ Since $116+20x$ must be a multiple of $16, x\equiv 3\mod{4}.$ Since $x+14<2026, x<2012.$ We can express $x$ as $4y+3,$ so therefore $4y+3<2012,$ so $4y<2009.$ Because $y\le0$ solving the first inequality gives $y<502\frac{1}{4},$ meaning that $0\le y \le 502.$ Since $y$ must be an integer, there are $503$ values of $y,$ giving $\boxed{503}$ possible values of $AB.$
 
- 
 
 
 	\item (\textit{AIME II 2026}) For each positive integer $n$ let $f(n)$ be the value of the base-ten numeral $n$ viewed in base $b$, where $b$ is the least integer greater than the greatest digit in $n$. For example, if $n=72$, then $b=8$, and $72$ as a numeral in base $8$ equals $7\cdot 8+2=58$; therefore $f(72)=58$. Find the number of positive integers $n$ less than $1000$ such that $f(n)=n$.
@@ -229,8 +223,7 @@ For any positive integer $n < 1000$, let its digits be represented as $d_k d_{k-
 
  Finally we sum the five values:
  \[22+30+38+46+54=\boxed{190}.\]
-
- </div>
+</div>
 
 
 
@@ -263,10 +256,6 @@ Let there be $r$ red marbles and $b$ blue marbles. Consider the probability of g
 
  Now, we can use moduli to determine that $3r-5b \equiv -5b \equiv b \pmod{3}$, so $b \equiv 2 \pmod{3}$. This means that the smallest solution is $(r, b)=(4, 2)$. Now, if $(r, b)$ is a solution, then $(r+5, b+3)$ is also a solution because $3(r+5)-5(b+3)=3r-5b$. Thus, we can generate solutions, where the five smallest ones with $b \ge 7$ and $r \ge 7$ are $(14, 8)$, $(19, 11)$ $(24, 14)$, $(29, 17)$. and $(34, 20)$. This means the sum of the five smallest values of $n$ are $22+30+38+46+54=\fbox{190}$
 
- 
-
-
- 
 
 
 
@@ -285,8 +274,6 @@ We first get a bashy-looking equation based on the condition of the problem. We 
 
 	\item (\textit{AIME II 2026}) Find the sum of all real numbers $r$ such that there is at least one point where the circle with radius $r$ centered at $(4, 39)$ is tangent to the parabola with equation $2y = x^2 - 8x + 12.$
 
-
- 
  \textbf{Answer: }050
 
 
@@ -331,8 +318,7 @@ The parabola has equation $y=\frac{1}{2}(x-2)(x-6)$, which has vertex $(4,-2)$ a
 
  Thus, the real numbers \(r\) are \(9\) and \(41\). The sum of all such \(r\) is:
  \[9 + 41 = \boxed{050}.\]
-
- </div>
+</div>
 
 
 
@@ -346,14 +332,12 @@ We first substitute $2y = x^2 - 8x + 12$ into the circle $(x-4)^2 + (y-39)^2 = r
  \[=x^3-12x^2-32x+256\]Using \href{https://artofproblemsolving.com/wiki/index.php?title=Rational\_Root\_Theorem}{Rational Root Theorem}, we can factor the expression to get $(x-4)(x^2-8x-64)$. The solutions are $x=4,x=4+4\sqrt5,$ and $x=4-4\sqrt5$. Now we plug in the numbers back into $\frac{1}{4}x^4-4x^3-16x^2+256x+1105-r^2=0$.
 
  
-                \begin{itemize}
-                    \item Plug in $x=4$ we get $1681-r^2=0$, so $r=41$.\item Plug in $x=4\pm 4\sqrt5$ we get $81-r^2=0$, so $r=9$. (they are the same because it's symmetrical, the AoS passes through the center of circle)
-                \end{itemize}
+            \begin{itemize}
+        \item Plug in $x=4$ we get $1681-r^2=0$, so $r=41$.
+        \item Plug in $x=4\pm 4\sqrt5$ we get $81-r^2=0$, so $r=9$. (they are the same because it's symmetrical, the AoS passes through the center of circle)
+            \end{itemize}
+            Solution is $9+41=\boxed{050}$
 
-
-                Solution is $9+41=\boxed{050}$
-
- 
 
 
 
@@ -361,7 +345,6 @@ We first substitute $2y = x^2 - 8x + 12$ into the circle $(x-4)^2 + (y-39)^2 = r
 
 Since the center of the circle is $(4,39),$ we know that the circle must be in the form $(x-4)^2+(y-39)^2=r^2.$ The vertex of the parabola $2y=x^2-8x+12$ is $(4,-2),$ so the circle must have a radius of $39-(-2)=41$ to be tangent to the vertex. Since the line from a circle's center to a tangent is always perpendicular to that tangent, and the slope of the parabola is very close to a vertical line as $x$ becomes further from $4,$ we can find the $x-$value of the horizontal line from the circle's center to where it intersects the parabola. This means that the $x-$value of the position where the parabola reaches $39$ is a great estimate for the $x-$value of the tangent point. Plugging $39$ in for $y,$ we get that the $x$ value is equal to $4\pm{\sqrt{82}}.$ This means that the radius of the circle must be very close to $\sqrt{82}.$ Since the radius must be an integer since this is an AIME problem, we find that $9=\sqrt{81},$ giving $9$ as a second radius. Adding these two values up, $41+9=50,$ so our answer is $\boxed{50}.$
 
- 
 
 
 
@@ -383,8 +366,7 @@ We begin by noting $r=41$ as a trivial solution.
 
  and testing some roots by rational root theorem, we can factor this into 
  \[(x-4)(x^2-8x-64) = 0\]
-
- $x=4$ yields the solution $r = 39$, and so now we have two roots: $x = 4 \pm 4 \sqrt 5$, both of which lead to the same value of $r$. 
+$x=4$ yields the solution $r = 39$, and so now we have two roots: $x = 4 \pm 4 \sqrt 5$, both of which lead to the same value of $r$. 
 
  Plugging in $x = 4 + 4 \sqrt 5$ we have that $y = 38$. The center of the circle is at $(4, 39)$, so we finish by computing that $r = 9$. We win. 
 
@@ -411,8 +393,6 @@ We conclude that the sum we are seeking is $50$, keyed as $\boxed{050}$.
 
 	\item (\textit{AIME II 2026}) A standard fair six-sided die is rolled repeatedly. Each time the die reads 1 or 2, Alice gets a coin; each time it reads 3 or 4, Bob gets a coin; and each time it reads 5 or 6, Carol gets a coin. The probability that Alice and Bob each receive at least two coins before Carol receives any coins can be written as $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $100m+n.$
 
-
- 
  \textbf{Answer: }754
 
 
@@ -503,44 +483,36 @@ The problem is asking for the probability that both Alice and Bob have 2 coins b
 Like solution 4 we will stop the sequence after getting two of each $A$ and $B$. $A$ and $B$ are symmetric in terms of probability so lets first tackle the case where it ends in $A$.
 
  
-                \begin{itemize}
-                    \item \textbf{Case 1:} String of $B \dots A B \dots A$ where the strings of $B$'s are of length 1 or more.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \textbf{Case 1:} String of $B \dots A B \dots A$ where the strings of $B$'s are of length 1 or more.
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item The chance of this is $(P(B \dots)) \cdot (P(A)) \cdot (P(B \dots)) \cdot (P(A))$.\item The chance of a string of $B$'s can be evaluated using a geometric series:\item $P(B) = 1/3, \quad P(BB) = 1/9, \quad P(BBB) = 1/27 \dots$\item Add all of these up and you get $1/2$.\item The total probability for this case is:\item $(1/2) \cdot (2/6) \cdot (1/2) \cdot (2/6) = 1/36$
             \end{enumerate}
             
-                \begin{itemize}
-                    \item \textbf{Case 2 & 3:} There are 2 more cases, $ABB \dots A$ or $BB \dots AA$ where the strings of $B$'s is of length 2 or more.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \textbf{Case 2 & 3:} There are 2 more cases, $ABB \dots A$ or $BB \dots AA$ where the strings of $B$'s is of length 2 or more.
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item $P(BB) = 1/9, \quad P(BBB) = 1/27 \dots \implies P(BB \dots) = 1/6$\item So the total probability is:\item $(2/6)(1/6)(2/6) + (1/6)(2/6)(2/6) = 1/54 + 1/54 = 1/27$
             \end{enumerate}
             \textbf{Final Calculation:}
 
  
-                \begin{itemize}
-                    \item Chance of string ending in $A$ is equal to:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Chance of string ending in $A$ is equal to:
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item $1/27 + 1/36 = 7/108$
             \end{enumerate}
             
-                \begin{itemize}
-                    \item Chance of ending in $A$ or $B$ is:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Chance of ending in $A$ or $B$ is:
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item $7/108 \cdot 2 = 7/54$
             \end{enumerate}
@@ -563,8 +535,6 @@ Like solution 4 we will stop the sequence after getting two of each $A$ and $B$.
 
 	\item (\textit{AIME II 2026}) Isosceles triangle ${}\triangle ABC$ has $AB = BC.$ Let $I$ be the incenter of ${}\triangle ABC.$ The perimeters of ${}\triangle ABC$ and ${}\triangle AIC$ are in the ratio $125:6,$ and all the sides of both triangles have integer lengths. Find the minimum possible value of $AB.$
 
-
- 
  \textbf{Answer: }245
 
 
@@ -577,8 +547,7 @@ Like solution 4 we will stop the sequence after getting two of each $A$ and $B$.
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2026_8_Solution_Figure_1.png}
                     \end{figure}
                     
-
- <div style="line-height:2;">Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector, median, and altitude from $B$ to $AC$ coincide, which is the perpendicular bisector of $AC$. The incenter $I$ lies on this common line. Let $D$ be the intersection of this line with $AC$, so $D$ is the midpoint of $AC$ and $ID \perp AC$.
+<div style="line-height:2;">Since $\triangle ABC$ is isosceles with $AB = BC$, the angle bisector, median, and altitude from $B$ to $AC$ coincide, which is the perpendicular bisector of $AC$. The incenter $I$ lies on this common line. Let $D$ be the intersection of this line with $AC$, so $D$ is the midpoint of $AC$ and $ID \perp AC$.
 
  We set $AC = 2$, so $AD = DC = 1$. Let $ID = x$.
 
@@ -610,8 +579,7 @@ Like solution 4 we will stop the sequence after getting two of each $A$ and $B$.
  From \(AB = \dfrac{1 + x^2}{1 - x^2}\):
  \[1 - x^2 = 1 - \frac{24}{25} = \frac{1}{25}, \quad AB = \frac{\frac{49}{25}}{\frac{1}{25}} = 49.\]In our initial setup, \(AC = 2\) and \(AI = \dfrac{7}{5}\). To make all sides integers, we scale by a factor of \(5\), so \(AC = 10\), \(AI = 7\), and:
  \[AB_{\text{min}} = 49 \times 5 = \boxed{245}.\]
-
- </div>
+</div>
 
 
 
@@ -647,8 +615,6 @@ Clearly, $AB$ and $AC$ must make up most of triangle $\triangle ABC$'s perimeter
 	\item (\textit{AIME II 2026}) Let $S$ denote the value of the infinite sum
  \[\frac 19 + \frac 1{99} + \frac 1{999} + \frac 1{9999}  + \cdots\]Find the remainder when the greatest integer less than or equal to $10^{100} S$ is divided by $1000.$
 
-
- 
  \textbf{Answer: }669
 
 
@@ -674,7 +640,6 @@ After a bit of thinking, you'll realize that for each digit after $0.\dots$ is t
 
  So, we get $669$ and $2$. The two doesn't carry a one, therefore the answer is $\boxed{669}.$
 
- 
 
 
 
@@ -724,7 +689,6 @@ It is very well known that $\frac{a}{10^n-1}=0.\overline{\underbrace{00...00}_{\
  Since we are working mod 1000, all of the terms with $n\leq97$ will end up as $\sigma_0(n)*10^{(r\geq3)}$. So, all of the terms just disappear before n=98. We are then left with: 
  \[{\sigma_0(98)}*{10^{(100-98)}}+{\sigma_0(99)}*{10^{(100-99)}}+{\sigma_0(100)}*{10^{(100-100)}}=6*100+6*10+9=\boxed{669}\] Because $98=2*49=2^1*7^2\therefore\sigma_0(98)=2*3=6$ and $99=9*11=3^2*11^2\therefore\sigma_0(99)=2*3=6$ and $100=4*25=2^2*5^2\therefore\sigma_0(100)=3*3=9$
 
- 
 
 
 
@@ -737,8 +701,6 @@ Like in solution 1, we see that we just have the sum $\sum_{k=1}^{\infty} \frac{
 
 	\item (\textit{AIME II 2026}) Let $\triangle ABC{}$ be a triangle with $D$ on $\overline{BC}$ such that $\overline{AD}{}$ bisects $\angle BAC.$ Let $\omega{}$ be the circle that passes through $A$ and is tangent to segment $\overline{BC}{}$ at $D.$ Let $E \neq A$ and $F \neq A$ be the intersections of $\omega{}$ with segments $\overline{AB}{}$ and $\overline{AC},$ respectively. Suppose that $AB = 200, AC = 225,$ and all of $AE, AF, BD,$ and $CD{}$ are positive integers. Find the greatest possible value of $BC.$
 
-
- 
  \textbf{Answer: }340
 
 
@@ -944,8 +906,6 @@ We continue with the first solution with $\alpha + \beta + \gamma = 0$. Then,let
 
 	\item (\textit{AIME II 2026}) Consider a tetrahedron with two isosceles triangle faces with side lengths $5\sqrt{10}, \,5\sqrt{10},$ and $10$ and two isosceles triangle faces with side lengths $5\sqrt{10},\, 5\sqrt{10},$ and $18.$ The four vertices of the tetrahedron lie on a sphere with center $S,$ and the four faces of the tetrahedron are tangent to a sphere with center $R.$ The distance $RS$ can be written as $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find ${}m + n.$
 
-
- 
  \textbf{Answer: }223
 
 
@@ -958,8 +918,7 @@ We continue with the first solution with $\alpha + \beta + \gamma = 0$. Then,let
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2026_12_Solution_Figure_1.png}
                     \end{figure}
                     
-
- <div style="line-height:2;">We place the tetrahedron in a coordinate system by symmetry:
+<div style="line-height:2;">We place the tetrahedron in a coordinate system by symmetry:
  \[A(-5, 0, 0),\ B(5, 0, 0),\ C(0, 9, h),\ D(0, -9, h).\]Given $AC = 5\sqrt{10}$, we have\begin{align*}AC^2 &= 5^2 + 9^2 + h^2 = 250, \\h^2 &= 144 \implies h = 12.\end{align*}
 So the vertices are
  \[A(-5,0,0),\ B(5,0,0),\ C(0,9,12),\ D(0,-9,12).\]
@@ -989,8 +948,7 @@ Thus
  Hence, the distance $RS$ is:\begin{align*}RS &= \left|\frac{25}{3}-\frac{75}{16}\right|= \left|\frac{400-225}{48}\right|= \frac{175}{48}.\end{align*}
 Since $\gcd(175,48)=1$, we have $m=175$, $n=48$.
  \[m+n = 175+48=\boxed{223}.\]
-
- </div>
+</div>
 
 
 
@@ -1003,7 +961,6 @@ Since $\gcd(175,48)=1$, we have $m=175$, $n=48$.
                     \end{figure}
                     
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2026_12_Solution_Figure_3.png}
@@ -1069,14 +1026,14 @@ We let $AB$ be the side of length $10$ and $CD$ of length $18$. Call midpoints o
 
 
  
-                \begin{itemize}
-                    \item $S$ and $T$ have the same number of elements,
-\item $S$ and $T$ are disjoint, and
-\item the elements of $S$ can be paired with the elements of $T$ so that the elements in each pair differ by exactly $1$.
-                \end{itemize}
+            \begin{itemize}
+        \item $S$ and $T$ have the same number of elements,
 
+        \item $S$ and $T$ are disjoint, and
 
-                For example, $\{1,2,5\}$ and $\{0,3,4\}$ are cousins. Suppose that the set $S$ has exactly $4040$ cousins. Find the least number of elements the set $S$ can have.
+        \item the elements of $S$ can be paired with the elements of $T$ so that the elements in each pair differ by exactly $1$.
+            \end{itemize}
+            For example, $\{1,2,5\}$ and $\{0,3,4\}$ are cousins. Suppose that the set $S$ has exactly $4040$ cousins. Find the least number of elements the set $S$ can have.
 
 
  
@@ -1125,8 +1082,6 @@ Firstly, notice that if we have an element in $S$, there will be exactly $2$ opt
 	\item (\textit{AIME II 2026}) For integers $a$ and $b,$ let $a \circ b = a - b$ if $a$ is odd and $b$ is even, and $a+b$ otherwise. Find the number of sequences $a_1, a_2, a_3, \ldots, a_n$ of positive integers such that
  \[a_1 + a_2 + a_3 + \cdots + a_n = 12 \quad \text{and} \quad a_1 \circ a_2 \circ a_3 \circ \cdots \circ a_n = 0\]where the operations are performed from left to right; that is, $a_1 \circ a_2 \circ a_3$ means $(a_1 \circ a_2) \circ a_3.$
 
-
- 
  \textbf{Answer: }157
 
 
@@ -1143,7 +1098,8 @@ We know for any integers $x$ and $y$, $x - y \equiv x + y \pmod{2}$. Subtraction
 
  
             \begin{enumerate}
-                \item The sum of all terms before $a_k$ is odd;\item $a_k$ itself is even.
+        \item The sum of all terms before $a_k$ is odd;
+        \item $a_k$ itself is even.
             \end{enumerate}
             
 Even terms do not change the parity of the cumulative sum, only odd terms do. This allows us to partition the sequence into "gaps" of even terms between (and before/after) the odd terms, eliminating the need to track running parity for every term. Suppose a sequence has $m$ odd terms, in order: $o_1, o_2, \dots, o_m$. We split the sequence into $m+1$ gaps of even terms:
@@ -1158,7 +1114,9 @@ We split the total sequence sum into three non-negative parts:
 
  
             \begin{enumerate}
-                \item $O$: Sum of the odd terms in the sequence\item $E_{\text{add}}$: Sum of even terms in even-indexed gaps (added terms)\item $E_{\text{sub}}$: Sum of even terms in odd-indexed gaps (subtracted terms, which equals $6$)
+        \item $O$: Sum of the odd terms in the sequence
+        \item $E_{\text{add}}$: Sum of even terms in even-indexed gaps (added terms)
+        \item $E_{\text{sub}}$: Sum of even terms in odd-indexed gaps (subtracted terms, which equals $6$)
             \end{enumerate}
             
 From the total sequence sum:
@@ -1167,7 +1125,11 @@ From the total sequence sum:
 
  
             \begin{enumerate}
-                \item $O$ is the sum of positive odd terms. Recall that the sum of odd numbers is even if and only if there is an even number of terms, since odd + odd = even, and pairs of odd terms preserve evenness.\item $E_{\text{add}}$ is a sum of even terms, so it is even.\item $O + E_{\text{add}} = 6$, so $O$ must be even.\item $O = 0$ is impossible: no odd terms means no odd-indexed gaps, so $E_{\text{sub}} = 0 \neq 6$.\item $O > 6$ is impossible: $E_{\text{add}}$ cannot be negative.
+        \item $O$ is the sum of positive odd terms. Recall that the sum of odd numbers is even if and only if there is an even number of terms, since odd + odd = even, and pairs of odd terms preserve evenness.
+        \item $E_{\text{add}}$ is a sum of even terms, so it is even.
+        \item $O + E_{\text{add}} = 6$, so $O$ must be even.
+        \item $O = 0$ is impossible: no odd terms means no odd-indexed gaps, so $E_{\text{sub}} = 0 \neq 6$.
+        \item $O > 6$ is impossible: $E_{\text{add}}$ cannot be negative.
             \end{enumerate}
             
 Thus, the only valid values for $O$ are $\boldsymbol{2, 4, 6}$. We now count valid sequences for each value of $O$, breaking our work into subcases for clarity.
@@ -1176,7 +1138,8 @@ We will use two main counting rules for our analysis:
 
  
             \begin{enumerate}
-                \item Compositions: A composition of a number is an ordered sum of positive integers. For example, $1+5$ and $5+1$ are distinct compositions of $6$, since sequence order matters.\item Splitting Even Sums Across Gaps: To split an even sum $S = 2K$ across $t$ gaps, we allow empty gaps: Let the sum in gap $i$ be $2k_i$, so $k_1 + k_2 + \dots + k_t = K$, which can be counted using the stars and bars method. For a gap with $k_i = 0$: exactly $1$ way (no terms). For a gap with $k_i \geq 1$: the number of compositions of $2k_i$ into positive even terms is $2^{k_i - 1}$, since we double each part of a composition of $k_i$ to get an even composition.
+        \item Compositions: A composition of a number is an ordered sum of positive integers. For example, $1+5$ and $5+1$ are distinct compositions of $6$, since sequence order matters.
+        \item Splitting Even Sums Across Gaps: To split an even sum $S = 2K$ across $t$ gaps, we allow empty gaps: Let the sum in gap $i$ be $2k_i$, so $k_1 + k_2 + \dots + k_t = K$, which can be counted using the stars and bars method. For a gap with $k_i = 0$: exactly $1$ way (no terms). For a gap with $k_i \geq 1$: the number of compositions of $2k_i$ into positive even terms is $2^{k_i - 1}$, since we double each part of a composition of $k_i$ to get an even composition.
             \end{enumerate}
             
 \textbf{Case 1}: Sum of Odd Terms $O = 6$
@@ -1185,7 +1148,8 @@ Here, $E_{\text{add}} = 6 - 6 = 0$: no even terms in even-indexed gaps. We count
 
  
             \begin{enumerate}
-                \item Number of compositions of $6$ into an even number of positive odd terms\item Number of ways to split the subtracted sum $6$ into the odd-indexed gaps
+        \item Number of compositions of $6$ into an even number of positive odd terms
+        \item Number of ways to split the subtracted sum $6$ into the odd-indexed gaps
             \end{enumerate}
             
 \textbf{Subcase 1a}: 2 odd terms
@@ -1226,7 +1190,9 @@ Here, $E_{\text{add}} = 6 - 4 = 2$: we split $2$ extra even terms across even-in
 
  
             \begin{enumerate}
-                \item Number of compositions of $4$ into an even number of positive odd terms\item Number of ways to split the subtracted sum $6$ into odd-indexed gaps\item Number of ways to split the added sum $2$ into even-indexed gaps
+        \item Number of compositions of $4$ into an even number of positive odd terms
+        \item Number of ways to split the subtracted sum $6$ into odd-indexed gaps
+        \item Number of ways to split the added sum $2$ into even-indexed gaps
             \end{enumerate}
             
 \textbf{Subcase 2a}: 2 odd terms
@@ -1309,7 +1275,6 @@ Since the sum is even, the count of odd numbers is even, let it be $2k$.We can r
  Substituting back and we can finally get our answer:
  \[4 \cdot (1 \cdot 5+ 2 \cdot 2+ 3 \cdot 1)+ 12 \cdot (1 \cdot 4+ 3 \cdot 1)+ 25 \cdot (1 \cdot 1)= \boxed{157}\]
 
- 
 
 
 
@@ -1346,8 +1311,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  In both cases, no subtraction occurred for the last term. Thus:
  \[N(s, m) = \sum_{v \text{ even}} N(s-v, m) + \sum_{v \text{ odd}} N(s-v, m).\]
-
- $2$. If the current sum $s$ is odd:
+$2$. If the current sum $s$ is odd:
 
  The previous sum $s-v$ must have the opposite parity to $v$. 
 
@@ -1413,14 +1377,14 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
 
  
-                \begin{itemize}
-                    \item $a_k \in \{1,2,3\}$ for all $k.$
-\item $a_1+a_2+a_3+a_4+a_5+a_6+a_7$ is a multiple of $3.$
-\item $a_1a_2 a_4 + a_2a_3a_5 + a_3a_4 a_6 + a_4 a_5 a_7 + a_5 a_6 a_1 + a_6 a_7 a_2 + a_7 a_1 a_3$ is a multiple of $3.$
-                \end{itemize}
+            \begin{itemize}
+        \item $a_k \in \{1,2,3\}$ for all $k.$
 
+        \item $a_1+a_2+a_3+a_4+a_5+a_6+a_7$ is a multiple of $3.$
 
-                
+        \item $a_1a_2 a_4 + a_2a_3a_5 + a_3a_4 a_6 + a_4 a_5 a_7 + a_5 a_6 a_1 + a_6 a_7 a_2 + a_7 a_1 a_3$ is a multiple of $3.$
+            \end{itemize}
+            
  \textbf{Answer: }393
 
 
@@ -1437,15 +1401,13 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  
  \[\text{Number of tuples} = 1.\]
-
- $\textbf{Case 2}$: \(m = 6\)
+$\textbf{Case 2}$: \(m = 6\)
 
  There are \(6\) zeros and \(1\) non-zero \(x_i \in \{\pm 1\}\). The sum \(\sum x_k = \pm 1 \equiv \pm 1 \pmod{3}\), violating the first condition.
 
  
  \[\text{Number of tuples} = 0.\]
-
- $\textbf{Case 3}$: \(m = 5\)
+$\textbf{Case 3}$: \(m = 5\)
 
  There are \(5\) zeros and \(2\) non-zeros \(x_i, x_j \in \{\pm 1\}\) (\(i \neq j\)):
 
@@ -1457,8 +1419,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  
  \[\text{Number of tuples} = 21 \times 2 = 42.\]
-
- $\textbf{Case 4}$: \(m = 4\)
+$\textbf{Case 4}$: \(m = 4\)
 
  There are \(4\) zeros and \(3\) non-zeros:
 
@@ -1472,8 +1433,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  
  \[\text{Number of tuples} = 28 \times 2 = 56.\]
-
- $\textbf{Case 5}$: \(m = 3\)
+$\textbf{Case 5}$: \(m = 3\)
 
  There are \(3\) zeros and \(4\) non-zeros:
 
@@ -1483,8 +1443,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  
  \[\text{Number of tuples} = 7 \times 6 = 42.\]
-
- $\textbf{Case 6}$: \(m = 2\)
+$\textbf{Case 6}$: \(m = 2\)
 
  There are \(2\) zeros and \(5\) non-zeros \(x_i \in \{\pm 1\}\). The \(5\) non-zero positions form two "bad" triples \(\{i,i+1,i+3\}\) and \(\{j,j+1,j+3\}\) that share a common vertex \(x\). The product condition simplifies to:
 
@@ -1507,8 +1466,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  For each of the \(7\) possible \(x\) positions corresponding to rotation, there are \(3\) distinct ways to pair the bad triples. Therefore:
  \[\text{Number of tuples} = 7 \times 3 \times 8 = 168.\]
-
- $\textbf{Case 7}$: \(m = 1\)
+$\textbf{Case 7}$: \(m = 1\)
 
  Without loss of generality, set \(x_7 = 0\); by symmetry, the count will be multiplied by \(7\) for all positions of the zero. We need to enumerate all \(20\) sign combinations of \(x_1, x_2, x_3, x_4, x_5, x_6 \in \{\pm 1\}\) with exactly \(3\) ones and \(3\) negative ones, and check whether they satisfy the second condition
 
@@ -1519,8 +1477,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  We count \(12\) valid combinations for \(x_7 = 0\). By symmetry, this holds for any position of the zero. Thus:
  \[\text{Number of tuples} = 12 \times 7 = 84.\]
-
- $\textbf{Case 8}$: \(m = 0\)
+$\textbf{Case 8}$: \(m = 0\)
 
  All \(x_i \in \{\pm 1\}\). The first condition \(\sum x \equiv 0 \pmod{3}\) requires \(5\) ones and \(2\) negative ones, or \(2\) ones and \(5\) negative ones. Direct enumeration shows that for all these combinations, \(S \equiv \pm 1 \pmod{3}\). Thus, no valid tuples exist.
 
@@ -1529,8 +1486,7 @@ We begin by analyzing the parity of the partial sums resulting from the operatio
 
  We sum all cases to get the total number of valid tuples:
  \[1 + 0 + 42 + 56 + 42 + 168 + 84 + 0 = \boxed{393}.\]
-
- </div>
+</div>
 
 
 
@@ -1588,7 +1544,6 @@ We employ the method of exponential sums. Let $\omega = e^{\frac{2\pi i }{ 3}}$.
  \[S = 1 + 0 + 42 + 49 - 42 + 147 + 49 - 21 = 225.\]Finally, we substitute $S$ back into the expression for $N$:
  \[N = \frac{1}{3} (729 + 2(225)) = \frac{1}{3} (729 + 450) = \frac{1179}{3} = 393.\]
 
- 
 
 
 

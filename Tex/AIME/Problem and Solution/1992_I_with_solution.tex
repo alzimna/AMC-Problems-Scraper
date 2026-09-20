@@ -14,7 +14,6 @@ There are 8 \href{https://artofproblemsolving.com/wiki/index.php?title=Fraction}
 
  Their sum is 4. Note that there are also 8 terms between 1 and 2 which we can obtain by adding 1 to each of our first 8 terms. For example, $1+\frac{19}{30}=\frac{49}{30}.$ Following this pattern, our answer is $4(10)+8(1+2+3+\cdots+9)=\boxed{400}.$
 
- 
 
 
 
@@ -30,7 +29,6 @@ By \href{https://artofproblemsolving.com/wiki/index.php?title=Euler\%27s\_Totien
 
 Note that if $x$ is a solution, then $(300-x)$ is a solution. We know that $\phi(300) = 80.$ Therefore the answer is $\frac{80}{2} \cdot\frac{300}{30} = \boxed{400}.$
 
- 
 
 
 	\item (\textit{AIME I 1992}) A positive integer is called ascending if, in its decimal representation, there are at least two digits and each digit is less than any digit to its right. 
@@ -50,10 +48,6 @@ Note that an ascending number is exactly determined by its \href{https://artofpr
 
  However, we've counted one-digit numbers and the \href{https://artofproblemsolving.com/wiki/index.php?title=Empty\_set}{empty set}, so we must subtract them off to get our answer, $512-10=\boxed{502}.$
 
- 
-
-
- 
 
 
 	\item (\textit{AIME I 1992}) A tennis player computes her win ratio by dividing the number of matches she has won by the total number of matches she has played. At the start of a weekend, her win ratio is exactly $0.500$. During the weekend, she plays four matches, winning three and losing one. At the end of the weekend, her win ratio is greater than $.503$. What's the largest number of matches she could've won before the weekend began?
@@ -79,7 +73,6 @@ Let $n$ be the number of matches won, so that $\frac{n}{2n}=\frac{1}{2}$, and $\
 Let $n$ be the number of matches she won before the weekend began. Since her win ratio started at exactly .$500 = \frac{1}{2},$ she must have played exactly $2n$ games total before the weekend began. After the weekend, she would have won $n+3$ games out of $2n+4$ total. Therefore, her win ratio would be $(n+3)/(2n+4).$ This means that
  \[\frac{n+3}{2n+4} > .503 = \frac{503}{1000}.\]Cross-multiplying, we get $1000(n+3) > 503(2n+4),$ which is equivalent to $n < \frac{988}{6} = 164.\overline{6}.$ Since $n$ must be an integer, the largest possible value for $n$ is $\boxed{164}.$
 
- 
 
 
 	\item (\textit{AIME I 1992}) In Pascal's Triangle, each entry is the sum of the two entries above it. The first few rows of the triangle are shown below.
@@ -129,8 +122,7 @@ Call the row $x=t+k$, and the position of the terms $t-1, t, t+1$. Call the midd
  $\frac{t}{k+1} = \frac{3}{4}$ and $\frac{k}{t+1} = \frac{5}{4}$.
 
  $4t = 3k+3$ and $4k= 5t+5$
-
- $4t-3k=3$ $5t-4k=-5$ 
+$4t-3k=3$ $5t-4k=-5$ 
 
  Solve the equations to get $t= 27, k=35$ and $x = t+k = \boxed{062}$.
 
@@ -152,20 +144,14 @@ Call the row $x=t+k$, and the position of the terms $t-1, t, t+1$. Call the midd
 We consider the method in which repeating decimals are normally converted to fractions with an example:
 
  $x=0.\overline{176}$
-
- $\Rightarrow 1000x=176.\overline{176}$
-
- $\Rightarrow 999x=1000x-x=176$
-
- $\Rightarrow x=\frac{176}{999}$
+$\Rightarrow 1000x=176.\overline{176}$
+$\Rightarrow 999x=1000x-x=176$
+$\Rightarrow x=\frac{176}{999}$
 
  Thus, let $x=0.\overline{abc}$
-
- $\Rightarrow 1000x=abc.\overline{abc}$
-
- $\Rightarrow 999x=1000x-x=abc$
-
- $\Rightarrow x=\frac{abc}{999}$
+$\Rightarrow 1000x=abc.\overline{abc}$
+$\Rightarrow 999x=1000x-x=abc$
+$\Rightarrow x=\frac{abc}{999}$
 
  If $abc$ is not divisible by $3$ or $37$, then this is in lowest terms. Let us consider the other multiples: $333$ multiples of $3$, $27$ of $37$, and $9$ of both $3$ and $37$, so $999-333-27+9 = 648$, which is the amount that are neither. The $12$ numbers that are multiples of $81$ reduce to multiples of $3$. We have to count these since it will reduce to a multiple of $3$ which we have removed from $999$, but, this cannot be removed since the numerator cannot cancel the $3$.There aren't any numbers which are multiples of $37^2$, so we can't get numerators which are multiples of $37$. Therefore $648 + 12 = \boxed{660}$.
 
@@ -189,7 +175,6 @@ For one such pair of consecutive integers, let the smaller integer be $\underlin
  We wish to count the ordered triples $(A,B,C).$ By casework, we consider all possible forms of the larger integer, as shown below.
  \[\begin{array}{c|c|c|c|c|c|c} & & & & & & \\ [-2.5ex] \textbf{Case} & \textbf{Thousands} & \textbf{Hundreds} & \textbf{Tens} & \textbf{Ones} & \textbf{Conditions for No Carrying} & \boldsymbol{\#}\textbf{ of Ordered Triples} \\ [0.5ex] \hline & & & & & & \\ [-2ex] 0\leq C\leq 8 & 1 & A & B & C+1 & 0\leq A,B,C\leq 4 & 5^3 \\ 0\leq B\leq 8; \ C=9 & 1 & A & B+1 & 0 & 0\leq A,B\leq 4; \ C=9 & 5^2 \\ 0\leq A\leq 8; \ B=C=9 & 1 & A+1 & 0 & 0 & 0\leq A\leq 4; \ B=C=9 & 5 \\ A=B=C=9 & 2 & 0 & 0 & 0 & A=B=C=9 & 1 \end{array}\]Together, the answer is $5^3+5^2+5+1=\boxed{156}.$
 
- 
 
 
 
@@ -285,10 +270,8 @@ Let $\Delta^1 A=\Delta A$, and $\Delta^n A=\Delta(\Delta^{(n-1)}A)$.
  Then $a_n=a_1 +\binom{n-1}{1}\Delta a_1 +\binom{n-1}{2}\Delta^2 a_1 +\binom{n-1}{3}\Delta^3 a_1 + ...$
 
  Since $\Delta a_1 =a_2 -a_1$, $a_n=a_1 +\binom{n-1}{1}(a_2-a_1) +\binom{n-1}{2}\cdot 1=a_1 +n(a_2-a_1) +\binom{n-1}{2}$
-
- $a_{19}=0=a_1+18(a_2-a_1)+\binom{18}{2}=18a_2-17a_1+153$
-
- $a_{92}=0=a_1+91(a_2-a_1)+\binom{91}{2}=91a_2-90a_1+4095$
+$a_{19}=0=a_1+18(a_2-a_1)+\binom{18}{2}=18a_2-17a_1+153$
+$a_{92}=0=a_1+91(a_2-a_1)+\binom{91}{2}=91a_2-90a_1+4095$
 
  Solving, $a_1=\boxed{819}$.
 
@@ -364,7 +347,6 @@ Since all terms of $\Delta(\Delta A)$ are 1, we know that $\Delta A$ looks like 
 
 Since the result of two finite differences of some sequence is a constant sequence, we know that sequence is a quadratic. Furthermore, we know that $f(19) = f(92) = 0$ so the quadratic is $f(x) = a(x-19)(x-92)$ for some constant $a.$ Now we use the conditions that the finite difference is $1$ to find $a.$ We know $f(19) = 0$ and $f(20) = -72a$ and $f(18) = 74a.$ Therefore applying finite differences once yields the sequence $-74a,-72a$ and then applying finite differences one more time yields $2a$ so $a =\frac{1}{2}.$ Therefore $f(1) = 9 \cdot 91 = \boxed{819}.$
 
- 
 
 
 
@@ -380,7 +362,6 @@ Now, cross multiplying, we find that
  \begin{align*} 91\left(17a-\frac{17\cdot18}{2}\right)&=18\left(90a-\frac{90\cdot91}{2}\right)\\ 1547a-\frac{(18\cdot91)\cdot17}{2}&=1620-\frac{(18\cdot91)\cdot90}{2}\\ 73a&=\frac{18\cdot91}{2}\cdot(90-17=73)\\ a=\frac{18\cdot91}{2}=9\cdot91=\boxed{819}. \end{align*}
 
 
- 
 
 
 	\item (\textit{AIME I 1992}) Trapezoid $ABCD^{}_{}$ has sides $AB=92^{}_{}$, $BC=50^{}_{}$, $CD=19^{}_{}$, and $AD=70^{}_{}$, with $AB^{}_{}$ parallel to $CD^{}_{}$. A circle with center $P^{}_{}$ on $AB^{}_{}$ is drawn tangent to $BC^{}_{}$ and $AD^{}_{}$. Given that $AP^{}_{}=\frac mn$, where $m^{}_{}$ and $n^{}_{}$ are relatively prime positive integers, find $m+n^{}_{}$.
@@ -398,7 +379,6 @@ Let $AP=x$ so that $PB=92-x.$ Extend $AD, BC$ to meet at $X,$ and note that $XP$
  Then $XD=xy-70, XC=y(92-x)-50,$ thus 
  \[\frac{xy-70}{y(92-x)-50} = \frac{XD}{XC} = \frac{ED}{EC}=\frac{AP}{PB} = \frac{x}{92-x},\] which we can rearrange, expand and cancel to get $120x=70\cdot 92,$ hence $AP=x=\frac{161}{3}$. This gives us a final answer of $161+3=\boxed{164}$
 
- 
 
 
 	\item (\textit{AIME I 1992}) Consider the region $A^{}_{}$ in the complex plane that consists of all points $z^{}_{}$ such that both $\frac{z^{}_{}}{40}$ and $\frac{40^{}_{}}{\overline{z}}$ have real and imaginary parts between $0^{}_{}$ and $1^{}_{}$, inclusive. What is the integer that is nearest the area of $A^{}_{}$?
@@ -434,10 +414,8 @@ Let $z=a+bi \implies \frac{z}{40}=\frac{a}{40}+\frac{b}{40}i$. Since $0\leq \fra
  2. Consider that the circles can be converted into polar coordinates, and their equations are $r = 40sin\theta$ and $r = 40cos\theta$. Using calculus with the appropriate bounds, we can compute the overlapped area.
 
  Using either method, we compute the overlapped area to be $200\pi + 400$, and so the area of the intersection of those three graphs is $40^2-(200\pi + 400) \Rightarrow 1200 - 200\pi \approx 571.68$
+$\boxed{572}$
 
- $\boxed{572}$
-
- 
 
 
 	\item (\textit{AIME I 1992}) Lines $l_1^{}$ and $l_2^{}$ both pass through the origin and make first-quadrant angles of $\frac{\pi}{70}$ and $\frac{\pi}{54}$ radians, respectively, with the positive x-axis. For any line $l^{}_{}$, the transformation $R(l)^{}_{}$ produces another line as follows: $l^{}_{}$ is reflected in $l_1^{}$, and the resulting line is reflected in $l_2^{}$. Let $R^{(1)}(l)=R(l)^{}_{}$ and $R^{(n)}(l)^{}_{}=R\left(R^{(n-1)}(l)\right)$. Given that $l^{}_{}$ is the line $y=\frac{19}{92}x^{}_{}$, find the smallest positive integer $m^{}_{}$ for which $R^{(m)}(l)=l^{}_{}$.
@@ -490,7 +468,6 @@ By drawing possible examples of the subset, one can easily see that making one s
 
  Therefore, the total number of such paths is $\binom{12}{5}=\boxed{792}$
 
- 
 
 
 
@@ -549,7 +526,6 @@ Let $A, B$ be the endpoints of the side with length $9$. Let $\Gamma$ be the Apo
 
  Since the area is maximized when the altitude to $AB$ is maximized, clearly we want the last vertex to be the highest point of $\Gamma$, which just makes the altitude have length $180+\dfrac{20}{9}$. Thus, the area of the triangle is $\dfrac{9\cdot \left(180+\frac{20}{9}\right)}{2}=\boxed{820}$
 
- 
 
 
 
@@ -571,7 +547,6 @@ We can apply Heron's on this triangle after letting the two sides equal $40x$ an
 
  $\textbf{-RootThreeOverTwo}$
 
- 
 
 
 
@@ -579,7 +554,6 @@ We can apply Heron's on this triangle after letting the two sides equal $40x$ an
 
 We can start how we did above in solution 4 to get$\frac{9}{4} * \sqrt{(81x^2-1)(81-x^2)}$.Then, we can notice the inside is a quadratic in terms of $x^2$, which is$-81(x^2)^2+6562x^2-81$. This is maximized when $x^2 = \frac{3281}{81}$.If we plug it into the equation, we get $\frac{9}{4} \cdot \frac{3280}{9} = \boxed{820}$
 
- 
 
 
 	\item (\textit{AIME I 1992}) In triangle $ABC^{}_{}$, $A'$, $B'$, and $C'$ are on the sides $BC$, $AC^{}_{}$, and $AB^{}_{}$, respectively. Given that $AA'$, $BB'$, and $CC'$ are concurrent at the point $O^{}_{}$, and that $\frac{AO^{}_{}}{OA'}+\frac{BO}{OB'}+\frac{CO}{OC'}=92$, find $\frac{AO}{OA'}\cdot \frac{BO}{OB'}\cdot \frac{CO}{OC'}$.
@@ -601,7 +575,6 @@ Let $K_A=[BOC], K_B=[COA],$ and $K_C=[AOB].$  Due to triangles $BOC$ and $ABC$ h
  \[\frac{K_A^2K_B+K_AK_B^2+K_A^2K_C+K_AK_C^2+K_B^2K_C+K_BK_C^2}{K_AK_BK_C}=92.\] We desire $\frac{(K_B+K_C)(K_C+K_A)(K_A+K_B)}{K_AK_BK_C}.$ Expanding this gives 
  \[\frac{K_A^2K_B+K_AK_B^2+K_A^2K_C+K_AK_C^2+K_B^2K_C+K_BK_C^2}{K_AK_BK_C}+2=\boxed{094}.\]
 
- 
 
 
 
@@ -613,9 +586,8 @@ Using \href{https://artofproblemsolving.com/wiki/index.php?title=Mass\_points}{m
 
  Thus, $\frac{AO^{}_{}}{OA'} = \frac{b+c}{a}$, $\frac{BO^{}_{}}{OB'} = \frac{c+a}{b}$, and $\frac{CO^{}_{}}{OC'} = \frac{a+b}{c}$.
 
- Therefore:$\frac{AO}{OA'}\cdot \frac{BO}{OB'}\cdot \frac{CO}{OC'} = \frac{b+c}{a} \cdot \frac{c+a}{b} \cdot \frac{a+b}{c}$ $= \frac{2abc+b^2c+bc^2+c^2a+ca^2+a^2b+ab^2}{abc} =$ 
-
- $2+\frac{bc(b+c)}{abc}+\frac{ca(c+a)}{abc}+\frac{ab(a+b)}{abc} = 2 + \frac{b+c}{a} + \frac{c+a}{b} + \frac{a+b}{c}$ $= 2 + \frac{AO^{}_{}}{OA'}+\frac{BO}{OB'}+\frac{CO}{OC'} = 2+92 = \boxed{094}$.
+ Therefore:$\frac{AO}{OA'}\cdot \frac{BO}{OB'}\cdot \frac{CO}{OC'} = \frac{b+c}{a} \cdot \frac{c+a}{b} \cdot \frac{a+b}{c}$ $= \frac{2abc+b^2c+bc^2+c^2a+ca^2+a^2b+ab^2}{abc} =$
+$2+\frac{bc(b+c)}{abc}+\frac{ca(c+a)}{abc}+\frac{ab(a+b)}{abc} = 2 + \frac{b+c}{a} + \frac{c+a}{b} + \frac{a+b}{c}$ $= 2 + \frac{AO^{}_{}}{OA'}+\frac{BO}{OB'}+\frac{CO}{OC'} = 2+92 = \boxed{094}$.
 
  
 
@@ -637,7 +609,6 @@ A consequence of Ceva's theorem sometimes attributed to Gergonne is that $\frac{
  \begin{align*} \frac{AO}{OA'}\frac{BO}{OB'}\frac{CO}{OC'} &= \left(\frac{AB'}{B'C}+\frac{AC'}{C'B}\right) \left(\frac{BC'}{C'A}+\frac{BA'}{A'C}\right)  \left(\frac{CB'}{B'A}+\frac{CA'}{A'B}\right)\\ &=\underbrace{\frac{AB'\cdot CA'\cdot BC'}{B'C\cdot A'B\cdot C'A}}_{\text{Ceva}} + \underbrace{\frac{AC'\cdot BA'\cdot CB'}{C'B\cdot A'C\cdot B'A}}_{\text{Ceva}} + \underbrace{\frac{AB'}{B'C} + \frac{AC'}{C'B}}_{\text{Gergonne}} + \underbrace{\frac{BA'}{A'C} + \frac{BC'}{C'A}}_{\text{Gergonne}} + \underbrace{\frac{CA'}{A'B} + \frac{CB'}{B'A}}_{\text{Gergonne}}\\ &= 1 + 1 + \underbrace{\frac{AO}{OA'} + \frac{BO}{OB'} + \frac{CO}{OC'}}_{92} = \boxed{94} \end{align*}
 
 
- 
 
 
 	\item (\textit{AIME I 1992}) Define a positive integer $n^{}_{}$ to be a factorial tail if there is some positive integer $m^{}_{}$ such that the decimal representation of $m!$ ends with exactly $n$ zeroes. How many positive integers less than $1992$ are not factorial tails?

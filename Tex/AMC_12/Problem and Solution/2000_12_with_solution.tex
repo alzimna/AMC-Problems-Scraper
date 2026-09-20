@@ -1,0 +1,1116 @@
+\section{AMC 12 12 2000}
+        \begin{enumerate}
+        	\item (\textit{AMC 12 12 2000}) In the year $2001$, the United States will host the International Mathematical Olympiad. Let $I,M,$ and $O$ be distinct positive integers such that the product $I \cdot M \cdot O = 2001$. What is the largest possible value of the sum $I + M + O$?
+
+
+ $\textbf{(A)}\ 23 \qquad \textbf{(B)}\ 55 \qquad \textbf{(C)}\ 99 \qquad \textbf{(D)}\ 111 \qquad \textbf{(E)}\ 671$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+The prime factorization of $2001$ is $3 \cdot 23 \cdot 29$.  
+
+ The largest factor of $2001$ is $2001$.  The only way to write $2001$ as a product of three integers including $2001$ is $2001 \cdot 1 \cdot 1$, which is not allowed since $1$ is repeated.
+
+ The second largest factor of $2001$ is $23 \cdot 29 = 667$.  The only way to write $2001$ as a product of three integers including $667$ is $667 \cdot 3 \cdot 1$, which is allowed.  In this case, the sum is $667 + 3 + 1 = 671$.
+
+ The third largest factor of $2001$ is $3 \cdot 29 = 87$.  So, if $2001$ was written as a product of three integers without $2001$ or $667$, the largest of the integers would be at most $87$ and the sum must therefore be less than $671$.
+
+ Therefore, the largest possible sum of the three factors is $\boxed{\textbf{(E)}\ 671}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Verifying the dumb Statement)}
+
+First, we need to recognize that a number is going to be largest only if, of the $3$ \href{https://artofproblemsolving.com/wiki/index.php?title=Factor}{factors}, two of them are small. If we want to make sure that this is correct, we could test with a smaller number, like $30$. It becomes much more clear that this is true, and in this situation, the value of $I + M + O$ would be $18$. Now, we use this process on $2001$ to get $667 * 3 * 1$ as our $3$ factors.Hence, we have $667 + 3 + 1 = \boxed{\text{(E) 671.}}$
+
+
+
+
+\textbf{Solution 3}
+
+The sum is the highest if two \href{https://artofproblemsolving.com/wiki/index.php?title=Factor}{factors} are the lowest.
+
+ So, $1 \cdot 3 \cdot 667 = 2001$ and $1+3+667=671 \Longrightarrow \boxed{\text{(E) 671}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Answer Choices)}
+
+We see since $2 + 0 + 0 + 1$ is divisible by $3$, we can eliminate all of the first $4$ answer choices because they are way too small and get $\boxed{\text{(E) 671}}$ as our final answer.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) $2000(2000^{2000}) =$
+$\textbf{(A)}\ 2000^{2001} \qquad \textbf{(B)}\ 4000^{2000} \qquad \textbf{(C)}\ 2000^{4000} \qquad \textbf{(D)}\ 4,000,000^{2000} \qquad \textbf{(E)}\ 2000^{4,000,000}$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Recall that $a^{b}\cdot a^{c} = a^{b+c}$ for any positive real numbers $a, b, c$.
+
+ By rules of exponents, $2000\left(2000^{2000}\right) = \left(2000^{1}\right)\left(2000^{2000}\right) = 2000^{2000+1} = \boxed{\textbf{(A) } 2000^{2001}}$.
+
+ Solution edited by armang32324, integralarefun, j314andrews
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Since $2000^2000$ is the result of multiplying $2000$ copies of $2000$ together, $2000\left(2000^{2000}\right)$ must be the result of multiplying $2000 + 1 = 2001$ copies of $2000$ together, which results in $\boxed{\textbf{(A) } 2000^{2001}}$.
+
+ - itsj, edited by j314andrews
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Each day, Jenny ate $20\%$ of the jellybeans that were in her jar at the beginning of that day. At the end of the second day, $32$ remained. How many jellybeans were in the jar originally?
+
+
+ $\textbf{(A)}\ 40 \qquad \textbf{(B)}\ 50 \qquad \textbf{(C)}\ 55 \qquad \textbf{(D)}\ 60 \qquad \textbf{(E)}\ 75$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1 (Algebra)}
+
+Let $x$ be the number of jellybeans originally in the jar. Then after one day, there were $0.8x$ jellybeans left, while after two days, there were $0.8(0.8x)=0.64x$ jellybeans left.  So $0.64x = 32$ and thus $x = \boxed{\textbf{(B)}\ 50}$.
+
+ -armang32324, edited by j314andrews
+
+ 
+
+
+
+\textbf{Solution 2}
+
+At the end of the day, $80\% = \frac{4}{5}$ of the jellybeans from the start of the day remained.  So after one day, there were $32 \div \frac{4}{5} = 40$ jellybeans left, while at the start, there were $40 \div \frac{4}{5} = \boxed{\textbf{(B)}\ 50}$ jellybeans left.
+
+ 
+
+
+
+\textbf{Solution 3 (Answer Choices)}
+
+Starting with each answer choice (A) through (E) results in $25.6$, $32$, $35.2$, $38.4$, and $48$ jellybeans left after two days, respectively.  So $\boxed{\textbf{(B)} \ 50}$ is correct.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) The Fibonacci sequence $1,1,2,3,5,8,13,21,\ldots$ starts with two $1$'s, and each term afterwards is the sum of its two predecessors. Which one of the ten digits is the last to appear in the units position of a number in the Fibonacci sequence?
+
+
+ $\textbf{(A)}\ 0 \qquad \textbf{(B)}\ 4 \qquad \textbf{(C)}\ 6 \qquad \textbf{(D)}\ 7 \qquad \textbf{(E)}\ 9$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+The units digit of any term after the second term can be found by summing the units digits of the previous two terms and taking the units digit of that sum (i.e. taking the sum of the previous two terms modulo $10$).
+
+ The sequence of units digits therefore starts with $1,1,2,3,5,8,3,1,4,5,9,4,3,7,0,7,7,4,1,5,6$, and $\boxed{\mathbf{(C)}\ 6}$ appears last.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) If $|x - 2| = p,$ where $x < 2,$ then $x - p =$
+$\textbf{(A)}\ -2 \qquad \textbf{(B)}\ 2 \qquad \textbf{(C)}\ 2-2p \qquad \textbf{(D)}\ 2p-2 \qquad \textbf{(E)}\ |2p-2|$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+When $x < 2,$ $x-2$ is negative so $|x - 2| = 2-x = p$ and $x = 2-p$.
+
+ Thus $x-p = (2-p)-p = \boxed{\mathbf{(C)}\ \ensuremath{2-2p}}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Answer Choices)}
+
+Suppose $x = -10$.  Then $p = 12$, so $x - p = -22$.  Substituting $p = 12$ into choices (A) through (E) yields $-2$, $2$, $-22$, $22$, and $22$ respectively, so $\boxed{\mathbf{(C)}\ \ensuremath{2-2p}}$ is correct.
+
+ -Monkey\_King, edited by j314andrews
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Two different prime numbers between $4$ and $18$ are chosen. When their sum is subtracted from their product, which of the following numbers could be obtained?
+
+
+ $\textbf{(A)}\ 22 \qquad \textbf{(B)}\ 60 \qquad \textbf{(C)}\ 119 \qquad \textbf{(D)}\ 194 \qquad \textbf{(E)}\ 231$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Meta-solving)}
+
+Both prime numbers are odd, so their product is odd and their sum is even.  Therefore, the obtained number is odd, and (B) and (D) are incorrect. 
+
+ The largest two prime numbers between $4$ and $18$ are $13$ and $17$, and the obtained number must be less than the product of the two primes.  So any number obtained is less than $13 \cdot 17 = 221$, so (E) is too large and therefore incorrect.
+
+ If the prime numbers chosen are $a$ and $b$, then the required difference is $(a - 1)(b - 1) - 1$ so the minimum value is $4 \cdot 6 - 1 = 23$ so (A) is incorrect.
+
+ This leaves $\boxed{\textbf{(C)}\ 119}$, which is correct as $11 \cdot 13 - (11+13) = 119$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $p$ and $q$ be the two primes.  
+
+ Then the obtained number is $pq-(p+q)=pq-p-q=pq-p-q+1-1=(p-1)(q-1)-1$ by Simon's favorite factoring trick. 
+
+ Since $p$ and $q$ must be odd, $(p-1)(q-1)-1$ must be odd, so (A), (B), and (D) are incorrect.
+
+ If $(p-1)(q-1)-1 = 231$, then $(p-1)(q-1) = 232 = 2^3 \cdot 29$.  So either $p-1$ or $q-1$ must be divisible by $29$, and thus either $p$ or $q$ is at least $30$, which is too large.  So (E) is incorrect.
+
+ This leaves $\boxed{\textbf{(C)}\ 119}$, which is obtained if $(p, q) = (11, 13)$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) How many positive integers $b$ have the property that $\log_{b} 729$ is a positive integer?
+
+
+ $\textbf{(A)}\ 0 \qquad \textbf{(B)}\ 1 \qquad \textbf{(C)}\ 2 \qquad \textbf{(D)}\ 3 \qquad \textbf{(E)}\ 4$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+Let $n = \log_{b} 729$. Then $b^n = 729 = 3^6$.  
+
+ So $b$ must be a power of $3$, that is, $b=3^a$ for some positive integer $a$.  Therefore, $(3^a)^n = 3^{an} = 3^6$, and thus $an = 6$.  So $a$ is a factor of $6$.  
+
+ So $a \in \{1, 2, 3, 6\}$, and thus $b \in \{3, 9, 27, 729\}$, so there are $\boxed{\textbf{(E)}\ 4}$ possible values of $b$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Figures $0$, $1$, $2$, and $3$ consist of $1$, $5$, $13$, and $25$ nonoverlapping unit squares, respectively. If the pattern were continued, how many nonoverlapping unit squares would there be in figure 100?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_12_12_2000_8_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A)}\ 10401 \qquad\textbf{(B)}\ 19801 \qquad\textbf{(C)}\ 20201 \qquad\textbf{(D)}\ 39801 \qquad\textbf{(E)}\ 40801$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+
+
+
+
+	\item (\textit{AMC 12 12 2000}) Mrs. Walter gave an exam in a mathematics class of five students. She entered the scores in random order into a spreadsheet, which recalculated the class average after each score was entered. Mrs. Walter noticed that after each score was entered, the average was always an integer. The scores (listed in ascending order) were $71,76,80,82,$ and $91$. What was the last score Mrs. Walters entered?
+
+
+ $\textbf{(A)} \ 71 \qquad \textbf{(B)} \ 76 \qquad \textbf{(C)} \ 80 \qquad \textbf{(D)} \ 82 \qquad \textbf{(E)} \ 91$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The total of the $5$ scores is $71+76+80+82+91=400$.
+
+ Since the average of the first $4$ scores is an integer, the sum of the first $4$ scores is divisible by $4$.  Since $400$ is divisible by $4$, the last score is also divisible by $4$, so it is either $76$ or $80$.
+
+ If the last score is $76$, the sum of the first $4$ scores is $400-76=324$.  Since the average of the first $3$ scores is an integer, the sum of the first $3$ scores is divisible by $3$.  Since $324$ is divisible by $3$, the fourth score is also divisible by $3$.  But this is impossible since none of the test scores are divisible by $3$.
+
+ Therefore, the last score is $\boxed{\textbf{(C)}\ 80}$.  A possible order for the scores is $76,82,91,71,80$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We know the first sum of the first three numbers must be divisible by $3,$ so we write out all $5$ numbers $\pmod{3}$, which gives $2,1,2,1,1,$ respectively. Clearly, the only way to get a number divisible by $3$ by adding three of these is by adding the three ones. So those must go first. Now we have an odd sum, and since the next average must be divisible by $4, 71$ must be next. That leaves $80$ for last, so the answer is $\mathrm{C}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+we know that the average of the scores is an integer 
+
+ so that means s1+s2+s3+s4 must be an even number divisible by 4 
+
+ we have 3 even scores and 2 odd scores
+
+ which means that the last score cannot be odd because otherwise, we would get an odd number divided by an even number in the denominator.
+
+ so we have answers that are even 
+
+ 76,80,82
+
+ We see 3 cases where 76 is the last score, 80 is the last score, and 82 is the last score  76= 1 mod(5)which means 80+82+71+91= 0 mod(4)80+82+71+91= 4 mod(5)
+
+ 80= 0 mod(5)76+82+71+91= 0 mod(5)76+82+71+91= 0 mod(4)
+
+ 82= 2 mod(5)76+80+71+91= 0 mod(4)76+80+71+91= 3 mod(5)
+
+ Case 1: 76324 is divisible by 4 324 divided by 5 is 1which means 76 is not the last number
+
+ case 2:324-4=320320 is divisible by 4 320 is divisible by 5 which means this case is true. 
+
+ case 3:320-2=318318 is not divisible by 4 which makes it incorrect even though 
+
+ it has a remainder of 3 when divided by 5
+
+ 
+
+
+
+\textbf{Solution 4}
+
+The test numbers we have include 71, 76, 80, 82, 91 The answers are same numbers: 71, 76, 80, 82, 91 
+
+ You could either subtract everything by 66 to make things easier5,10,14,16,25getting 70 when adding up now add 5,10,13,16,25 and it easier to see which one is divisible by 6
+
+ or you could  perform the following action test number minus 6[test number/6]
+
+ 5,4,2,4,1add them up to get 6+6+4now we have to add another 2 for it to be divisible by 6
+
+ before the operation 2 was actually 80 thus 80 is the answer
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) The point $P = (1,2,3)$ is reflected in the $xy$-plane, then its image $Q$ is rotated $180^\circ$ about the $x$-axis to produce $R$, and finally, $R$ is translated  $5$ units in the positive-$y$ direction to produce $S$. What are the coordinates of $S$?
+
+
+ $\textbf {(A) } (1,7, - 3) \qquad \textbf {(B) } ( - 1,7, - 3) \qquad \textbf {(C) } ( - 1, - 2,8) \qquad \textbf {(D) } ( - 1,3,3) \qquad \textbf {(E) } (1,3,3)$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution}
+
+Step 1: Reflect in the $xy$-plane. Replace $z$ with its additive inverse: $(1,2,-3)$
+
+ Step 2: Rotate around $x$-axis 180 degrees. Replace $y$ and $z$ with their respective additive inverses. $(1, -2, 3)$
+
+ Step 3: Translate $5$ units in positive-$y$ direction. Replace $y$ with $y+5$. $(1,3,3) \Rightarrow \text {(E) }$
+
+
+
+	\item (\textit{AMC 12 12 2000}) Two non-zero real numbers, $a$ and $b,$ satisfy $ab = a - b$. Which of the following is a possible value of $\frac {a}{b} + \frac {b}{a} - ab$?
+
+
+ $\textbf{(A)} \ - 2 \qquad \textbf{(B)} \ \frac {- 1}{2} \qquad \textbf{(C)} \ \frac {1}{3} \qquad \textbf{(D)} \ \frac {1}{2} \qquad \textbf{(E)} \ 2$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+$\frac {a}{b} + \frac {b}{a} - ab = \frac{a^2 + b^2}{ab} - (a - b) = \frac{a^2 + b^2}{a-b} - \frac{(a-b)^2}{(a-b)} = \frac{2ab}{a-b} = \frac{2(a-b)}{a-b} =\boxed{\textbf{(E)}\ 2}$. 
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Adding $b$ to both sides of the equation relating $a$ and $b$ yields $ab + b = a$, so $b(a+1) = a$ and therefore $b = \frac{a}{a+1}$.  
+
+ Substituting $b=\frac{a}{a+1}$ into the desired expression yields $\frac{a}{\frac{a}{a+1}} + \frac{\frac{a}{a+1}}{a} - a \cdot{\frac{a}{a+1}}$ $= a+1+\frac{1}{a+1}-\frac{a^2}{a+1} = a+1+\frac{1-a^2}{a+1} = a+1+\frac{(1-a)(1+a)}{1+a}$ $=a+1+1-a=\boxed{\textbf{(E)}\ 2}$
+
+
+
+
+\textbf{Solution 3}
+
+This simplifies to $ab+b-a=0 \Rightarrow (a+1)(b-1) = -1$. The two integer solutions to this are $(-2,2)$ and $(0,0)$. The problem states than $a$ and $b$ are non-zero, so we consider the case of $(-2,2)$. So, we end up with $\frac{-2}{2} + \frac{2}{-2} - 2 \cdot -2 = 4 - 1 - 1 = 2 \Rightarrow \boxed{\text{E}}$
+
+
+
+
+\textbf{Solution 4}
+
+Just realize that two such numbers are $a = 1$ and $b = \frac{1}{2}$. You can see this by plugging in $a = 1$ and then solving for b. With this, you can solve and get $2 \Rightarrow\boxed{\text{E}}$
+
+
+
+
+\textbf{Solution 5}
+
+Set $a$ to some nonzero number. In this case, I'll set it to $4$. 
+
+ Then solve for $b$. In this case, $b=0.8$. 
+
+ Now just simply evaluate. In this case it's 2. So since 2 is a possible value of the original expression, select $\boxed{E}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+Notice that $a=\frac{a}{b}-1$ and $b=1-\frac{b}{a}$. Then, $\frac{a}{b}=1+a$ and $\frac{b}{a}=1-b$.
+
+ $\frac{a}{b}+\frac{b}{a}-ab=(1+a)+(1-b)-(a-b)=2$. The answer is $\boxed{E}$.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+We are told $ab=a-b$.
+
+ Dividing by $a$, we get $b = 1 - \frac{b}{a} \Rightarrow \boxed{ \frac{b}{a} = 1 - b}$.
+
+ We can also solve for $\frac{a}{b}$ by dividing by $b$. Dividing, we get $a = \frac{a}{b} - 1 \Rightarrow \boxed{ \frac{a}{b} = a + 1}$. 
+
+ Plugging these values into $\frac{a}{b} + \frac{b}{a} - ab$, we get:
+
+ 
+ \[(a + 1) + (1 - b) - (a - b) = 2\]
+
+ Therefore, the final answer is $\boxed{\text{E}}$
+
+ -Dustin\_Links
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Let $A, M,$ and $C$ be nonnegative integers such that $A + M + C=12$. What is the maximum value of $A \cdot M \cdot C + A \cdot M + M \cdot C + A \cdot C$?
+
+
+ $\textbf{(A)}\ 62 \qquad \textbf{(B)}\ 72 \qquad \textbf{(C)}\ 92 \qquad \textbf{(D)}\ 102 \qquad \textbf{(E)}\ 112$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+It is not hard to see that 
+ \[(A+1)(M+1)(C+1)=\]
+ \[AMC+AM+AC+MC+A+M+C+1\]Since $A+M+C=12$, we can rewrite this as
+ \[(A+1)(M+1)(C+1)=\]
+ \[AMC+AM+AC+MC+13\]So we wish to maximize
+ \[(A+1)(M+1)(C+1)-13\]Which is largest when all the factors are equal (consequence of AM-GM).  Since $A+M+C=12$, we set $A=M=C=4$Which gives us 
+ \[(4+1)(4+1)(4+1)-13=112\]so the answer is $\boxed{\textbf{(E) }112}.$
+
+
+
+
+\textbf{Solution 2 (Nonrigorous)}
+
+If you know that to maximize your result you \textit{usually} have to make the numbers as close together as possible, (e.g. to maximize the area for a polygon make it a square) you can then try to make $A,M$ and $C$ as close as possible. In this case, they would all be equal to $4$, so $AMC+AM+AC+MC=64+16+16+16=112$, $\boxed{\text{E}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Answer Choices)}
+
+Assume $A$, $M$, and $C$ are equal to $4$. Since the resulting value of $AMC+AM+AC+MC$ will be $112$ and this is the largest answer choice, our answer is $\boxed{\textbf{(E) }112}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Semi-rigorous)}
+
+Given that $A$, $M$, and $C$ are nonnegative integers, it should be intuitive that maximizing $AMC$ maximizes $AM + MC + CA$. We thus only need to maximize $AMC$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=AM-GM\_Inequality}{AM-GM Inequality}, 
+ \[\frac{A + M + C}{3} \geq \sqrt[3]{AMC},\] with equality if and only if $A = M = C$. Note that the maximum of $AMC$ occurs under the equality condition --- hence, all three variables are equal. The rest of the problem is smooth sailing; $A + M + C = 12$ implies that $A = M = C = 4$, so $AMC + AM + MC + CA = 4^3 + 3*4^2 = 112.$ The answer is thus $\boxed{\text{E}}$, as required.
+
+ 
+
+
+
+\textbf{Solution 5 (Double AM-GM)}
+
+We start off the same way as Solution 4, using AM-GM to observe that $AMC \leq 64$. We then observe that 
+
+ $(A + M + C)^2 = A^2 + M^2 + C^2 + 2(AM + MC + AC) = 144$, since $A + M + C = 12$.
+
+ We can use the AM-GM inequality again, this time observing that $\frac{A^2 + M^2 + C^2}{3} \geq \sqrt[3]{{(AMC)}^2}$
+
+ Since $AMC \leq 64$,  $3 \sqrt[3]{{(AMC)}^2} \leq 48$. We then plug this in to yield 
+
+ $A^2 + M^2 + C^2 + 2(AM + MC + AC) = 144 \geq 48 + 2(AM + MC + AC)$
+
+ Thus, $AM + MC + AC \leq 48$. We now revisit the original equation that we wish to maximize. Since we know $AMC \leq 64$, we now have upper bounds on both of our unruly terms. Plugging both in results in $48 + 64 = \boxed{\textbf{(E) }112}$
+
+
+
+	\item (\textit{AMC 12 12 2000}) One morning each member of Angela’s family drank an $8$-ounce mixture of coffee with milk. The amounts of coffee and milk varied from cup to cup, but were never zero. Angela drank a quarter of the total amount of milk and a sixth of the total amount of coffee. How many people are in the family?
+
+
+ $\textbf {(A)}\ 3 \qquad \textbf {(B)}\ 4 \qquad \textbf {(C)}\ 5 \qquad \textbf {(D)}\ 6 \qquad \textbf {(E)}\ 7$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+If Angela drank $\frac{1}{4}$ of the milk and $\frac{1}{4}$ of the coffee, she would have drunk $\frac{1}{4}$ of the ingredients.  However, she actually drank $\frac{1}{6}$ of the coffee, so she drank less than $\frac{1}{4}$ of the ingredients.
+
+ Similarly, if she drank $\frac{1}{6}$ of the milk and $\frac{1}{6}$ of the coffee, she would have drunk $\frac{1}{6}$ of the ingredients.  However, she actually drank $\frac{1}{4}$ of the milk, so she drank more than $\frac{1}{6}$ of the ingredients.
+
+ If there are $n$ people in the family, then each person drank $\frac{1}{n}$ of the ingredients.  So $\frac{1}{6} < \frac{1}{n} < \frac{1}{4}$, and thus $4 < n < 6$.  Since $n$ is an integer, $n = \boxed{\textbf{(C)}\ 5}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $c$ be the total amount of coffee, $m$ of milk, and $p$ the number of people in the family. Then each person drinks the same total amount of coffee and milk (8 ounces), so 
+ \[\left(\frac{c}{6} + \frac{m}{4}\right)p = c + m\]Regrouping, we get $2c(6-p)=3m(p-4)$. Since both $c,m$ are positive, it follows that $6-p$ and $p-4$ are also positive, which is only possible when $p = 5\ \mathrm{(C)}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Again, let $c,$ $m,$ and $p$ be the total amount of coffee, total amount of milk, and number of people in the family, respectively. Then the total amount that is drunk is $8p,$ and also $c+m.$ Thus, $c+m = 8p,$ so $m = 8p-c$ and $c = 8p-m.$
+
+ We also know that the amount Angela drank, which is $\frac{c}{6} + \frac{m}{4},$ is equal to $8$ ounces, thus $\frac{c}{6} + \frac{m}{4} = 8.$ Rearranging gives  
+ \[24p - c = 96.\] Now notice that $c > 0$ (by the problem statement). In addition, $m > 0,$ so $c = 8p-m < 8p.$ Therefore, $0 < c < 8p,$ and so $24p > 24p-c > 16p.$ We know that $24p-c = 96,$ so 
+ \[24p > 96 > 16p.\] From the leftmost inequality, we get $p > 4,$ and from the rightmost inequality, we get $p < 6.$ The only possible value of $p$ is $p = 5\ \mathrm{(C)}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let $c,$ $m,$ and $p$ be the total amount of coffee, total amount of milk, and number of people in the family, respectively. $c$ and $m$ obviously can't be $0$. We know $\frac{c}{6} + \frac{m}{4} = 8$ or $2c + 3m = 96$ and $c + m = 8p$ or $2c + 2m = 16p$. Then, 
+ \[(2c + 2m) + m = 16p + m = 96\]Because $16p$ and $96$ are both divisible by $16$, $m$ must also be divisible by $16$. Let $m = 16k$. Now, 
+ \[3(16k) + 2c = 48k + 2c = 96\] $k$ can't be $0$, otherwise $m$ is $0$, and $k$ can't be $2$, otherwise $c$ is $0$. Therefore $k$ must be $1$, $m = 16$ and $c = 24$. $c + m = 24 + 16 = 40 = 8p$. Therefore, $p = 5\ \mathrm{(C)}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Let $m$, $c$ be the total amounts of milk and coffee, respectively. In order to know the number of people, we first need to find the total amount of mixture $t = m + c$. We are given that 
+ \[\frac{m}{4} + \frac{c}{6} = 8\]Multiplying the equation by $4$ yields 
+ \[m + \frac{2}{3}c = (m + c) - \frac{1}{3}c = t - \frac{1}{3}c = 32\]Since $\frac{1}{3}c > 0$, we have $t > 32$. Now multiplying the equation by $6$ yields 
+ \[\frac{3}{2}m + c = (m+c) + \frac{1}{2}m = t + \frac{1}{2}m = 48\]Since $\frac{1}{2}m > 0$, we have $t < 48$. Thus, $32 < t < 48$.
+
+ Since $t$ is a multiple of $8$, the only possible value for $t$ in that range is $40$. Therefore, there are $\frac{40}{8} = 5$ people in Angela's family. $\mathrm{(C)}$.
+
+ 
+
+
+
+\textbf{Solution 6 (Constraints)}
+
+If there were 4 people in the family, and each of them drank exactly the same amount of coffee and milk as Angela, there would be too much coffee. If there were 6 people in the family, and each of them drank exactly the same amount of coffee and milk as Angela, there would be not enough milk. Thus, it has to be $\boxed{5}$.
+
+ (But how can we assume that each of them drank exactly the same amount of coffee and milk?)
+
+ 
+
+
+
+\textbf{Solution 7 (Guess and check)}
+
+The number of ounces that Angela's family drank has to be a multiple of 8, so we can find the right answer by guessing random values for the number of ounces of coffee and milk Angela drank. With Angela drinking 4 ounces of milk and 4 ounces of coffee, we get 40 total ounces Angela's family drank. Dividing that by 8(each person drank 8 ounces) we get 5 members who drank the coffee with milk, or $\boxed{C}$  ~ Mathyguy88
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) When the \href{https://artofproblemsolving.com/wiki/index.php?title=Mean}{mean}, \href{https://artofproblemsolving.com/wiki/index.php?title=Median}{median}, and \href{https://artofproblemsolving.com/wiki/index.php?title=Mode}{mode} of the list
+
+
+ 
+ \[10,2,5,2,4,2,x\]
+
+
+ are arranged in increasing order, they form a non-constant \href{https://artofproblemsolving.com/wiki/index.php?title=Arithmetic\_progression}{arithmetic progression}. What is the sum of all possible real values of $x$?
+
+
+ $\textbf {(A)}\ 3 \qquad \textbf {(B)}\ 6 \qquad \textbf{(C)}\ 9 \qquad \textbf {(D)}\ 17 \qquad \textbf {(E)}\ 20$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+
+            \begin{itemize}
+        \item The mean is $\frac{10+2+5+2+4+2+x}{7} = \frac{25+x}{7}$.
+        \item Arranged in increasing order, the list is $2,2,2,4,5,10$, so the median is either $2,4$ or $x$ depending upon the value of $x$.
+        \item The mode is $2$, since it appears three times.
+            \end{itemize}
+            We apply casework upon the median:
+
+ 
+            \begin{itemize}
+        \item If the median is $2$ ($x \le 2$), then the arithmetic progression must be constant.
+        \item If the median is $4$ ($x \ge 4$), because the mode is $2$, the mean can either be $0,3,6$ to form an arithmetic progression. Solving for $x$ yields $-25,-4,17$ respectively, of which only $17$ works because it is larger than $4$.
+        \item If the median is $x$ ($2 \le x \le 4$), we must have the arithmetic progression $2, x, \frac{25+x}{7}$.  Thus, we find that $2x=2+\frac{25+x}{7}$ so $x=3$.
+            \end{itemize}
+            The answer is $3 + 17 = \boxed{20\ \mathrm{(E)}}$.-Error fixed(BIGFOOT09) Changes Copyrighted©
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The mode will always be $2$, as there are already $3$ of them.  The median will be $2$, $3$, or $4$, as only $1$ new number is added.  The mean will be all the numbers added together divided by $7$.
+
+ However:The median can't actually be $2$, as that makes it no longer an arithmetic progression.  Therefore, the median has to be $3$ or $4$.
+
+ When the median is $3$, $x$ has to equal $3$ as well, as it becomes the median.  Therefore, the mean has to be $4$, which also happens to work when $x=3$.
+
+ When the median is $4$, $x$ has to be greater than $3$, as well as allowing the mean to equal $6$.  As the current values added together equal $25$, we need a number that will allow us to make the mean equal $6 \cdot 7 = 42$.  As $42-25=17$, $x=17$.
+
+ The question asks for the sum of all solutions for $x$, so the answer is $3 + 17 = \boxed{20\ \mathrm{(E)}}$.~Particle Physics
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Let $f$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Function}{function} for which $f(x/3) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.
+
+
+ $\textbf {(A)}\ -1/3 \qquad \textbf {(B)}\ -1/9 \qquad \textbf {(C)}\ 0 \qquad \textbf {(D)}\ 5/9 \qquad \textbf {(E)}\ 5/3$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Let $y = \frac{x}{3}$; then $f(y) = (3y)^2 + 3y + 1 = 9y^2 + 3y+1$. Thus $f(3z)-7=81z^2+9z-6=3(9z-2)(3z+1)=0$, and $z = -\frac{1}{3}, \frac{2}{9}$. These sum up to $\boxed{\textbf{(B) }-\frac19}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Similar)}
+
+This is quite trivially solved, as $3x = \dfrac{9x}{3}$, so $P(3x) = P(9x/3) = 81x^2 + 9x + 1 = 7$. $81x^2+9x-6 = 0$ has solutions $-\frac{1}{3}$ and $\frac{2}{9}$. Adding these yields a solution of $\boxed{\textbf{(B) }-\frac19}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Similar to Solution 1, we have $=81z^2+9z-6=0.$ The answer is the sum of the roots, which by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_Formulas}{Vieta's Formulas} is  $-\frac{b}{a}=-\frac{9}{81}=\boxed{\textbf{(B) }-\frac19}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Set $f\left(\frac{x}{3} \right) = x^2+x+1=7$ to get $x^2+x-6=0.$ From either finding the roots (-3 and 2), or using Vieta's formulas, we find the sum of these roots to be $-1.$ Each root of this equation is $9$ times greater than a corresponding root of $f(3z) = 7$ (because $\frac{x}{3} = 3z$ gives $x = 9z$), thus the sum of the roots in the equation $f(3z)=7$ is $-\frac{1}{9}$ or $\boxed{\textbf{(B) }-\frac19}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Since we have $f(x/3)$, $f(3z)$ occurs at $x=9z.$ Thus, $f(9z/3) = f(3z) = (9z)^2 + 9z + 1$. We set this equal to 7:
+
+ $81z^2 + 9z +1 = 7 \Longrightarrow 81z^2 + 9z - 6 = 0$. For any quadratic $ax^2 + bx +c = 0$, the sum of the roots is $-\frac{b}{a}$. Thus, the sum of the roots of this equation is $-\frac{9}{81} = \boxed{\textbf{(B) }-\frac19}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) A checkerboard of $13$ rows and $17$ columns has a number written in each square, beginning in the upper left corner, so that the first row is numbered $1,2,\ldots,17$, the second row $18,19,\ldots,34$, and so on down the board. If the board is renumbered so that the left column, top to bottom, is $1,2,\ldots,13$, the second column $14,15,\ldots,26$ and so on across the board, some squares have the same numbers in both numbering systems. Find the sum of the numbers in these squares (under either system). 
+
+
+ $\textbf {(A)}\ 222 \qquad \textbf {(B)}\ 333\qquad \textbf {(C)}\ 444 \qquad \textbf {(D)}\ 555 \qquad \textbf {(E)}\ 666$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Label the rows from $0$ to $12$ (from top to bottom) and the columns from $0$ to $16$ (from left to right). Consider the cell at the intersection of the row labeled $i$ and column labeled $j$. 
+
+ Under the first system, the cell is numbered $17i + j + 1$. Under the second system, the cell is numbered $i + 13j + 1$. 
+
+ So the cell is given the same number in both systems if and only if $17i + j + 1 = i + 13j + 1$, that is, $i = \frac{3}{4}j$. Since $i$ and $j$ are both integers, $j$ must be divisible by $4$.  So $(i, j)$ must be one of $\{(0, 0), (3, 4), (6, 8), (9, 12), (12, 16)\}$.
+
+ The numbers placed in these five cells are thus $1, 56, 111, 166, 221$, so their sum is $\boxed{\textbf{(D)}\ 555}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_12_12_2000_17_Problem_Figure_1.png}
+                    \end{figure}
+                    A \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circle} centered at $O$ has \href{https://artofproblemsolving.com/wiki/index.php?title=Radius}{radius} $1$ and contains the point $A$. The segment $AB$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_(geometry)}{tangent} to the circle at $A$ and $\angle AOB = \theta$. If point $C$ lies on $\overline{OA}$ and $\overline{BC}$ bisects $\angle ABO$, then $OC =$
+$\textbf {(A)}\ \sec^2 \theta - \tan \theta \qquad \textbf {(B)}\ \frac 12 \qquad \textbf {(C)}\ \frac{\cos^2 \theta}{1 + \sin \theta}\qquad \textbf {(D)}\ \frac{1}{1+\sin\theta} \qquad \textbf {(E)}\ \frac{\sin \theta}{\cos^2 \theta}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Since $\overline{AB}$ is tangent to the circle, $\triangle OAB$ is a right triangle. This means that $OA = 1$, $AB = \tan \theta$ and $OB = \sec \theta$. By the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_Bisector\_Theorem}{Angle Bisector Theorem}, 
+ \[\frac{OB}{OC} = \frac{AB}{AC} \Longrightarrow AC \sec \theta = OC \tan \theta\] We multiply both sides by $\cos \theta$ to simplify the trigonometric functions, 
+ \[AC=OC \sin \theta\] Since $AC + OC = 1$, $1 - OC = OC \sin \theta \Longrightarrow$ $OC = \dfrac{1}{1+\sin \theta}$. Therefore, the answer is $\boxed{\textbf{(D)} \dfrac{1}{1+\sin \theta}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Alternatively, one could notice that OC approaches the value 1/2 as theta gets close to 90 degrees.  The only choice that is consistent with this is (D).
+
+ 
+
+
+
+\textbf{Solution 3 (with minimal trig)}
+
+Let's assign a value to $\theta$ so we don't have to use trig functions to solve.  $60$ is a good value for $\theta$, because then we have a $30-60-90 \triangle$ -- $\angle BAC=90$ because $AB$ is tangent to Circle $O$.
+
+ Using our special right triangle, since $AO=1$, $OB=2$, and $AB=\sqrt{3}$.
+
+ Let $OC=x$.  Then $CA=1-x$.  since $BC$ bisects $\angle ABO$, we can use the angle bisector theorem:
+
+ $\frac{2}{x}=\frac{\sqrt{3}}{1-x}$
+$2-2x=\sqrt{3}x$
+$2=(\sqrt{3}+2)x$
+$x=\frac{2}{\sqrt{3}+2}$.
+
+ Now, we only have to use a bit of trig to guess and check: the only trig facts we need to know to finish the problem is:
+
+ $\sin\theta =\frac{\text{Opposite}}{\text{Hypotenuse}}$
+$\cos\theta =\frac{\text{Adjacent}}{\text{Hypotenuse}}$
+$\tan\theta =\frac{\text{Opposite}}{\text{Adjacent}}$.
+
+ With a bit of guess and check, we get that the answer is $\boxed{D}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let $OC$ = x, $OB$ = h, and $AB$ = y. $AC$ = $OA$ - $OC$.
+
+ Because $OC$ = x, and $OA$ = 1 (given in the problem), $AC$ = 1-x.
+
+ Using the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_Bisector\_Theorem}{Angle Bisector Theorem}, $\frac{h}{y}$ = $\frac{x}{1-x}$ $\Longrightarrow$ h(1-x) = xy. Solving for x gives us x = $\frac{h}{h+y}$.
+
+ $\sin\theta = \frac{opposite}{hypotenuse} = \frac{y}{h}$. Solving for y gives us y = $h \sin\theta$.
+
+ Substituting this for y in our initial equation yields x = $\dfrac{h}{h+h\sin \theta}$.
+
+ Using the distributive property, x = $\dfrac{h}{h(1+\sin \theta)}$ and finally $\dfrac{1}{1+\sin \theta}$ or $\boxed{\textbf{(D)}}$
+
+
+
+
+\textbf{Solution 5}
+
+Since $\overline{AB}$ is tangent to the circle, $\angle OAB=90^{\circ}$ and thus we can use trig ratios directly. 
+
+ 
+ \[\sin{\theta}=\frac{\overline{AB}}{\overline{BO}}, \cos{\theta}=\frac{1}{\overline{BO}}, \tan{\theta}=\overline{AB}\]
+
+ By the angle bisector theorem, we have 
+
+ 
+ \[\frac{\overline{OB}}{\overline{AB}}=\frac{\overline{OC}}{\overline{CA}}\]
+
+ Seeing the resemblance of the ratio on the left-hand side to $\sin{\theta},$ we turn the ratio around to allow us to plug in $\sin{\theta}.$ Another source of motivation for this also lies in the idea of somehow adding 1 to the right-hand side so that we can substitute for a given value, i.e. $\overline{OA}=1$, and flipping the fraction will preserve the $\overline{OC}$, whilst adding one right now would make the equation remain in direct terms of $\overline{CA}.$
+
+ \[\frac{\overline{AB}}{\overline{OB}}=\sin{\theta}=\frac{\overline{CA}}{\overline{OC}}\Rightarrow \sin{\theta}+1=\frac{\overline{CA}+\overline{OC}}{\overline{OC}}=\frac{1}{\overline{OC}}\]
+
+ \[\sin{\theta}+1=\frac{1}{\overline{OC}} \Rightarrow \boxed{\overline{OC}=\frac{1}{\sin{\theta}+1}}\]
+
+
+
+
+\textbf{Solution 6 (tangent half angle)}
+
+$\angle CBO = 45^{\circ} - \frac{\theta}{2}, \angle ACB = 45^{\circ} + \frac{\theta}{2}, OB = \frac{1}{\cos(\theta)}$.By sine law, $\frac{OC}{\sin(\angle CBO)} = \frac{OB}{\sin(\angle OCB)} = \frac{OB}{\sin(\angle ACB)}$
+
+ \[OC = \frac{\sin(45^{\circ} - \frac{\theta}{2})}{\sin(45^{\circ} + \frac{\theta}{2})}OB = \frac{\sin(45^{\circ} - \frac{\theta}{2})}{\cos(45^{\circ} - \frac{\theta}{2})}OB = \tan(45^{\circ} - \frac{\theta}{2})OB = \frac{1-\tan(\theta/2)}{1+\tan(\theta/2)}OB\]
+
+ Let $t = \tan(\theta/2)$. $OC = \frac{1-t}{1+t}OB = \frac{1-t^2}{1+2t+t^2}$. Because $\sin(\theta) = \frac{2t}{1+t^2}$ and $\cos(\theta) = \frac{1-t^2}{1+t^2}$, 
+ \[OC = \frac{\cos(\theta)}{1+\sin(\theta)}OB = \boxed{\textbf{(D)} \dfrac{1}{1+\sin \theta}}\]
+
+
+
+
+\textbf{Solution 7 (if you forgot angle bisector but remember LoS)}
+
+Let $x=\overline{OC}$, and let $\angle OBC=\angle ABC=\alpha$. We know that $\overline{AC}=\overline{OA}-\overline{OC}=1-x$. By the Law of Sines, 
+ \[\dfrac{\sin\alpha}x=\dfrac{\sin\theta}{BC}\]
+
+ and 
+
+ 
+ \[\dfrac{\sin\alpha}{1-x}=\dfrac{\sin90^\circ}{BC}=\dfrac1{BC}.\]
+
+ Combining the two give $\dfrac{\sin\alpha}x=\sin\theta\cdot\dfrac{\sin\alpha}{1-x}$. 
+
+ Solving, this gives $\boxed{x=\frac{1}{\sin{\theta}+1}}$. 
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) In year $N$, the $300$th day of the year is a Tuesday. In year $N+1$, the $200$th day is also a Tuesday. On what day of the week did the $100$th day of year $N-1$ occur?
+
+
+ $\textbf {(A)}\ \text{Thursday} \qquad \textbf {(B)}\ \text{Friday}\qquad \textbf {(C)}\ \text{Saturday}\qquad \textbf {(D)}\ \text{Sunday}\qquad \textbf {(E)}\ \text{Monday}$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+There are either 
+ \[65 + 200 = 265\] or 
+ \[66 + 200 = 266\] days between the first two dates depending upon whether or not year $N+1$ is a leap year (since the February 29th of the leap year would come between the 300th day of year $N$ and 200th day of year $N + 1$). Since $7$ divides into $266$ but not $265$, for both days to be a Tuesday, year $N$ must be a leap year.
+
+ Hence, year $N-1$ is not a leap year, and so since there are 
+ \[265 + 300 = 565\] days between the date in years $N,\text{ }N-1$, this leaves a remainder of $5$ upon division by $7$. Since we are subtracting days, we count 5 days before Tuesday, which gives us  $\boxed{\mathbf{(A)} \ \text{Thursday}.}$
+
+
+
+
+\textbf{Solution 2}
+
+The $300-29\cdot 7=97^{\text{th}}$ day of year $N$ and the $200-15\cdot 7=95^{\text{th}}$ day of year $N+1$ are Tuesdays. If there were the same number of days in year $N$ and year $N-1,$ the $99^{\text{th}}$ day of year $N-1$ will be a Tuesday. But year $N$ is a leap year because $97-95 \cong 366 \pmod{7},$ so the $98^{\text{th}}$ day of year $N-1$ is a Tuesday. It follows that the $100^{\text{th}}$ day of year $N-1$ is $\boxed{\mathbf{(A)} \ \text{Thursday}.}$
+
+
+
+	\item (\textit{AMC 12 12 2000}) In \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} $ABC$, $AB = 13$, $BC = 14$, $AC = 15$. Let $D$ denote the \href{https://artofproblemsolving.com/wiki/index.php?title=Midpoint}{midpoint} of $\overline{BC}$ and let $E$ denote the intersection of $\overline{BC}$ with the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_bisector}{bisector} of angle $BAC$. Which of the following is closest to the area of the triangle $ADE$?
+
+
+ $\textbf {(A)}\ 2 \qquad \textbf {(B)}\ 2.5 \qquad \textbf {(C)}\ 3 \qquad \textbf {(D)}\ 3.5 \qquad \textbf {(E)}\ 4$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The answer is exactly $3$, choice $\mathrm{(C)}$.We can find the area of triangle $ADE$ by using the simple formula $\frac{bh}{2}$. Dropping an altitude from $A$, we see that it has length $12$ (we can split the large triangle into a $9-12-15$ and a $5-12-13$ triangle). Then we can apply the \href{https://artofproblemsolving.com/wiki/index.php?title=Angle\_Bisector\_Theorem}{Angle Bisector Theorem} on triangle $ABC$ to solve for $BE$. Solving $\frac{13}{BE}=\frac{15}{14-BE}$, we get that $BE=\frac{13}{2}$. $D$ is the midpoint of $BC$ so $BD=7$. Thus we get the base of triangle $ADE, DE$, to be $\frac{1}{2}$ units long. Applying the formula $\frac{bh}{2}$, we get $\frac{12*\frac{1}{2}}{2}=3$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The area of $ADE$ is $\frac{DE\cdot h}{2}=\frac{DE}{BC} \cdot \frac{BC\cdot h}{2}=\frac{DE}{BC}[ABC]$ where $h$ is the height of triangle $ABC$. Using Angle Bisector Theorem, we find $\frac{13}{BE}=\frac{15}{14-BE}$, which we solve to get $BE=\frac{13}{2}$. $D$ is the midpoint of $BC$ so $BD=7$. Thus we get the base of triangle $ADE, DE$, to be $\frac{1}{2}$ units long. We can now use \href{https://artofproblemsolving.com/wiki/index.php?title=Heron\%27s\_Formula}{Heron's Formula} on $ABC$.
+ \[s=\frac{AB+BC+AC}{2}=21\]
+ \[[ABC]=\sqrt{(s)(s-AB)(s-BC)(s-AC)}=\sqrt{(21)(8)(7)(6)}=84\]
+ \[\frac{DE}{BC}[ABC]=\frac{\frac{1}{2}}{14}\cdot 84=3\]Therefore, the answer is $\mathrm{C}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) If $x,y,$ and $z$ are positive numbers satisfying $x + \frac{1}{y} = 4, y + \frac{1}{z} = 1,$ and $z + \frac{1}{x} = \frac73,$ then what is the value of $xyz$ ?
+
+
+ $\textbf {(A)}\ 2/3 \qquad \textbf {(B)}\ 1 \qquad \textbf {(C)}\ 4/3 \qquad \textbf {(D)}\ 2 \qquad \textbf {(E)}\ 7/3$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Multiplying all three equations yields: 
+ \[xyz + x + y + z + \frac{1}{x} + \frac{1}{y} + \frac{1}{z} + \frac{1}{xyz} = \frac{28}{3} \text{ (i)}\].
+
+ Adding all three equations yields: 
+ \[x + y + z + \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = \frac{22}{3} \text{ (ii)}\].
+
+ Substituting (ii) into (i) yields $xyz + \frac{22}{3} + \frac{1}{xyz} = \frac{28}{3}$, so $xyz + \frac{1}{xyz} = 2$.  Solving yields $xyz = \boxed{\textbf{(B)}\ 1}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We have a system of three equations and three variables, so we can apply repeated substitution. 
+
+ 
+ \[4 = x + \frac{1}{y} = x + \frac{1}{1 - \frac{1}{z}} = x + \frac{1}{1-\frac{1}{7/3-1/x}} = x + \frac{7x-3}{4x-3}\]
+
+ Multiplying out the denominator and simplification yields $4(4x-3) = x(4x-3) + 7x - 3 \Longrightarrow (2x-3)^2 = 0$, so $x = \frac{3}{2}$. Substituting leads to $y = \frac{2}{5}, z = \frac{5}{3}$, and the product of these three variables is $1$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Through a point on the \href{https://artofproblemsolving.com/wiki/index.php?title=Hypotenuse}{hypotenuse} of a \href{https://artofproblemsolving.com/wiki/index.php?title=Right\_triangle}{right triangle}, lines are drawn \href{https://artofproblemsolving.com/wiki/index.php?title=Parallel}{parallel} to the legs of the triangle so that the triangle is divided into a \href{https://artofproblemsolving.com/wiki/index.php?title=Square}{square} and two smaller right triangles. The area of one of the two small right triangles is $m$ times the area of the square. The \href{https://artofproblemsolving.com/wiki/index.php?title=Ratio}{ratio} of the area of the other small right triangle to the area of the square is 
+
+
+ $\textbf {(A)}\ \frac{1}{2m+1} \qquad \textbf {(B)}\ m \qquad \textbf {(C)}\ 1-m \qquad \textbf {(D)}\ \frac{1}{4m} \qquad \textbf {(E)}\ \frac{1}{8m^2}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_12_12_2000_21_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ WLOG, let a side of the square be $1$. Simple angle chasing shows that the two right triangles are \href{https://artofproblemsolving.com/wiki/index.php?title=Similar\_triangles}{similar}. Thus the ratio of the sides of the triangles are the same. Since $A = \frac{1}{2}bh = \frac{h}{2}$, the base of the triangle with area $m$ is $2m$. Therefore $\frac{2m}{1} = \frac{1}{x}$ where $x$ is the height of the other triangle. $x = \frac{1}{2m}$, and the area of that triangle is $\frac{1}{2} \cdot 1 \cdot \frac{1}{2m} = \frac{1}{4m}\ \text{\boxed{D}}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) The graph below shows a portion of the curve defined by the quartic polynomial $P(x) = x^4 + ax^3 + bx^2 + cx + d$. Which of the following is the smallest?
+
+
+ $\textbf{(A)}\ P(-1)\\ \textbf{(B)}\ \text{The\ product\ of\ the\ zeros\ of\ } P\\ \textbf{(C)}\ \text{The\ product\ of\ the\ non-real\ zeros\ of\ } P \\ \textbf{(D)}\ \text{The\ sum\ of\ the\ coefficients\ of\ } P \\ \textbf{(E)}\ \text{The\ sum\ of\ the\ real\ zeros\ of\ } P$
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_12_12_2000_22_Problem_Figure_1.png}
+                    \end{figure}
+                    
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution}
+
+Since $P$ has degree $4$, it may have at most $4-1=3$ turning points.  Therefore, $P$ has no turning points (and thus no real roots) which are not seen.
+
+ Approximate the value of each answer choice using the graph.
+
+ Choice (A): According to the graph, $P(-1) \approx 4$.
+
+ Choice (B): By Vieta's rules, the product of the roots of $P$ is $d = P(0) \approx 5$.
+
+ Choice (C): The product of the real roots of $P$ is approximately $1.5 \cdot 3.5 = 5.25$, so the product of the non-real roots is approximately $\frac{5}{5.25} < 1$.
+
+ Choice (D): The sum of the coefficients of $P$ is $P(1) \approx 4$.
+
+ Choice (E): The sum of the real roots of $P$ is greater than $1.5 + 3.5 = 5$.
+
+ Therefore, the smallest of these is $\boxed{\textbf{(C)}\ \text{The\ product\ of\ the\ non-real\ zeros\ of\ } P}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Professor Gamble buys a lottery ticket, which requires that he pick six different integers from $1$  through $46$, inclusive. He chooses his numbers so that the sum of the base-ten logarithms of his six numbers is an integer. It so happens that the integers on the winning ticket have the same property— the sum of the base-ten logarithms is an integer. What is the probability that Professor Gamble holds the winning ticket?
+
+
+ $\textbf {(A)}\ 1/5 \qquad \textbf {(B)}\ 1/4 \qquad \textbf {(C)}\ 1/3 \qquad \textbf {(D)}\ 1/2 \qquad \textbf {(E)}\ 1$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+Since the sum of the base $10$ logarithms of Gamble's numbers is an integer, the product of his numbers must be a power of $10$. So each of his numbers has no prime factors other than $2$ and $5$, and thus each of his numbers can be written as $2^m 5^n$, where $m$ and $n$ are nonnegative integers. Therefore, all his numbers are in $\{1, 2, 4, 5, 8, 10, 16, 20, 25, 32, 40\}$.
+
+ Define the function $f$ such that $f(2^m 5^n) = m - n$ whenever $m$ and $n$ are nonnegative integers.  Then:
+
+ 
+            \begin{itemize}
+        \item $f(25) = -2$
+        \item $f(5) = -1$
+        \item $f(1) = f(10) = 0$
+        \item $f(2) = f(20) = 1$
+        \item $f(4) = f(40) = 2$
+        \item $f(8) = 3$
+        \item $f(16) = 4$
+        \item $f(32) = 5$
+            \end{itemize}
+            Let $x_1 = 2^{a_1}5^{b_1}, ..., x_6 = 2^{a_6}5^{b_6}$ be Gamble's numbers (where all $a_i$ and $b_i$ are nonnegative integers).  
+
+ Then $x_1x_2...x_6 = 2^{a_1+a_2+...+a_6}5^{b_1+b_2+...+b_6}$ is a power of $10$, so $a_1 + a_2 + ... + a_6 = b_1 + b_2 + ... + b_6$ and thus $(a_1-b_1) + (a_2-b_2) + ... + (a_6-b_6) = f(x_1) + f(x_2) + ... + f(x_6) = 0$.  
+
+ The minimum possible sum of any five of $f(x_1), f(x_2), ..., f(x_6)$ is $(-2) + (-1) + 0 + 0 + 1 = -2$, so $f(x_i)\leq 2$ for each $x_i$.  This reduces the set of numbers Gamble could have chosen to $S = \{1, 2, 4, 5, 10, 20, 25, 40\}$, and Gamble chose all but two of these numbers.
+
+ Notice $f(1) + f(2) + f(4) + f(5) + f(10) + f(20) + f(25) + f(40) = 3$. So if $s_1$ and $s_2$ are the two numbers in $S$ that Gamble did not choose, then $f(s_1) + f(s_2) = 3$.  So Gamble chose all the numbers in $S$ except one of $\{2, 20\}$ and one of $\{4, 40\}$.
+
+ Therefore, there are $4$ possible sets of numbers Gamble could have chosen, so his probability of winning is $\boxed{\textbf{(B)}\ \frac{1}{4}}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_12_12_2000_24_Problem_Figure_1.png}
+                    \end{figure}
+                    If circular \href{https://artofproblemsolving.com/wiki/index.php?title=Arc}{arcs} $AC$ and $BC$ have \href{https://artofproblemsolving.com/wiki/index.php?title=Center}{centers} at $B$ and $A$, respectively, then there exists a \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circle} \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_(geometry)}{tangent} to both $\stackrel{\frown}{AC}$ and $\stackrel{\frown}{BC}$, and to $\overline{AB}$. If the length of $\stackrel{\frown}{BC}$ is $12$, then the \href{https://artofproblemsolving.com/wiki/index.php?title=Circumference}{circumference} of the circle is 
+
+
+ $\textbf {(A)}\ 24 \qquad \textbf {(B)}\ 25 \qquad \textbf {(C)}\ 26 \qquad \textbf {(D)}\ 27 \qquad \textbf {(E)}\ 28$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution (Pythagorean Theorem)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_12_12_2000_24_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Since $\triangle ABC$ is equilateral, arcs $AC$ and $BC$ are both $60^\circ$, or $\frac{1}{6}$ of a circle.  Let $R$ be the radius of these arcs.  Then $\frac{1}{6}(2\pi R) = 12$, so $R = \frac{36}{\pi}$.
+
+ Let $O$ be the center of the inscribed circle, $M$ be the midpoint of $\overline{AB}$, and $N$ be the intersection of line $AO$ and arc $BC$.  Let $r$ be the radius of the circle centered at $O$.  Then $AM = \frac{R}{2}$, $OM = r$, and $AO = R-r$.  By the Pythagorean theorem, $AM^2 + OM^2 = AO^2$, that is, $\left(\frac{R}{2}\right)^2 + r^2 = (R-r)^2$.  Solving this equation yields $r = \frac{3R}{4} = \frac{27}{\pi}$, so the circumference of the circle centered at $O$ is $2{\pi}\left(\frac{27}{2\pi}\right)=\boxed{\textbf{(D)}\ 27}$.
+
+ 
+
+
+	\item (\textit{AMC 12 12 2000}) Eight congruent \href{https://artofproblemsolving.com/wiki/index.php?title=Equilateral\_triangle}{equilateral triangles}, each of a different color, are used to construct a regular \href{https://artofproblemsolving.com/wiki/index.php?title=Octahedron}{octahedron}. How many distinguishable ways are there to construct the octahedron? (Two colored octahedrons are distinguishable if neither can be rotated to look just like the other.) 
+
+
+ $\textbf {(A)}\ 210 \qquad \textbf {(B)}\ 560 \qquad \textbf {(C)}\ 840 \qquad \textbf {(D)}\ 1260 \qquad \textbf {(E)}\ 1680$
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_12_12_2000_25_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+Since the octahedron is indistinguishable by rotations, without loss of generality fix a face to be red.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_12_12_2000_25_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ There are $7!$ ways to arrange the remaining seven colors, but there still are three possible rotations about the fixed face, so the answer is $7!/3 = 1680$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_12_12_2000_25_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+
+
+
+\textbf{Solution 2}
+
+We consider the dual of the octahedron, the \href{https://artofproblemsolving.com/wiki/index.php?title=Cube\_(geometry)}{cube}; a cube can be inscribed in an octahedron with each of its \href{https://artofproblemsolving.com/wiki/index.php?title=Vertex}{vertices} at a face of the octahedron. So the problem is equivalent to finding the number of ways to color the vertices of a cube.
+
+ Select any vertex and call it $A$; there are $8$ color choices for this vertex, but this vertex can be rotated to any of $8$ locations. After fixing $A$, we pick another vertex $B$ adjacent to $A$. There are seven color choices for $B$, but there are only three locations to which $B$ can be rotated to (since there are three edges from $A$). The remaining six vertices can be colored in any way and their locations are now fixed. Thus the total number of ways is $\frac{8}{8} \cdot \frac{7}{3} \cdot 6! = 1680 \Rightarrow \mathrm{(E)}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Probably the best and the one that could come in mind during a competition)}
+
+There are 8! ways to place eight colors on a fixed octahedron. An octahedron has six vertices, of which one can face the top, and for any vertex that faces the top, there are four different triangles around that vertex that can be facing you. Thus there are $6\cdot 4 = 24$ ways to orient an octahedron, and $8!/24 = 1680 \Rightarrow \mathrm{(E)}$
+
+
+
+
+\textbf{Solution 4}
+
+If we look at the base of an octahedron lying flat on a table, we can see there are 8 orbits since there are 8 colors to choose from as the base of the octahedron. We can also see that there are 3 stabilizers that keep the base the same color with the 0$^{\circ}$ rotation, 120$^{\circ}$ rotation, and 240$^{\circ}$ rotation about the base. Using the orbit-stabilizer theorem, we then know that the number of rotational symmetries of an octahedron is $8 \cdot 3 = 24$. There are 8! ways to color the octahedron, and since rotations are indistinguishable, the answer comes out to be $8!/24 \Rightarrow \mathrm{(E)}$
+
+
+
+
+\textbf{Solution 5 (Graph Theory)}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_12_12_2000_25_Solution_Figure_3.png}
+                    \end{figure}
+                    This problem can be approached by \href{https://en.wikipedia.org/wiki/Graph\_theory}{Graph Theory}. Note that each face of the octahedron is connected to 3 other faces. We use the above graph to represent the problem. Each vertex represents a face of the octahedron, each edge represent the octahedron's edge.
+
+ Now the problem becomes how many distinguishable ways to color the $8$ vertices such that two colored graphs are distinguishable if neither can be rotated and reflected to become the other.
+
+ Notice that once the outer 4 vertices are colored, no matter how the inner 4 vertices are colored, the resulting graphs are distinguishable graphs.
+
+ There are $8$ colors and $4$ outer vertices, therefore there are $\binom{8}{4}$ ways to color outer 4 vertices. Combination is used because the coloring has to be distinguishable when rotated and reflected. There are $4$ colors left, therefore there are $4!$ ways to color inner 4 vertices. Permutation is used because the coloring of the inner vertices have no restrictions. In total that is $\binom{8}{4} \cdot 4! = \boxed{\textbf{(E) } 1680 }$
+
+
+
+
+\textbf{Solution 6}
+
+Let the colors be $1$ to $8$ inclusive, then rotate the octahedron such that color $1$ is on top. You have $7$ choices of what color is on the bottom, WLOG $2$. Then, there's two rings of each $3$ colors on the top and bottom. For the top ring, you can choose any $3$ out of the $6$ remaining colors, and there's two ways to orient them. The octahedron is now fixed in place, so you can have $3!$ ways to put the three remaining colors in three spaces.In total this is $7 \cdot \binom{6}{3} \cdot 2 \cdot 3!=\boxed{\textbf{(E) } 1680 }$
+
+ -mathfan2020
+
+ 
+
+
+\end{enumerate}

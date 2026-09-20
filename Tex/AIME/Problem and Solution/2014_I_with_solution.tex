@@ -13,7 +13,6 @@
 The rectangle is divided into three smaller rectangles with a width of 50 mm and a length of $\dfrac{80}{3}$mm.  According to the Pythagorean Theorem (or by noticing the 8-15-17 Pythagorean triple), the diagonal of the rectangle is$\sqrt{50^2+\left(\frac{80}{3}\right)^2}=\frac{170}{3}$mm.  Since that on the lace, there are 6 of these diagonals, a width, and an extension of at least 200 mm on each side.  Therefore, the minimum of the lace in millimeters is
  \[6\times \dfrac{170}{3}+50+200\times 2=\boxed{790}.\]
 
- 
 
 
 	\item (\textit{AIME I 2014}) An urn contains $4$ green balls and $6$ blue balls. A second urn contains $16$ green balls and $N$ blue balls. A single ball is drawn at random from each urn. The probability that both balls are of the same color is $0.58$. Find $N$.
@@ -36,7 +35,6 @@ First, we find the probability both are green, then the probability both are blu
  \begin{align*} 20\cdot16+30\cdot N&=29(16+N)\\ 320+30N&=464+29N\\ N&=\boxed{144} \end{align*}
 
 
- 
 
 
 	\item (\textit{AIME I 2014}) Find the number of rational numbers $r$, $0<r<1,$ such that when $r$ is written as a fraction in lowest terms, the numerator and the denominator have a sum of $1000$.
@@ -89,12 +87,12 @@ We know that the set of these rational numbers is from $\dfrac{1}{999}$ to $\dfr
  We note there are $499$ numbers between $501$ and $999$, and
 
  
-                \begin{itemize}
-                    \item $249$ numbers are divisible by $2$\item $99$ numbers are divisible by $5$\item $49$ numbers are divisible by $10$
-                \end{itemize}
-
-
-                Using the Principle of Inclusion and Exclusion, we get that there are $499-249-99+49=200$ numbers between $501$ and $999$ are not divisible by either $2$ or $5$, so our answer is $\boxed{200}$.
+            \begin{itemize}
+        \item $249$ numbers are divisible by $2$
+        \item $99$ numbers are divisible by $5$
+        \item $49$ numbers are divisible by $10$
+            \end{itemize}
+            Using the Principle of Inclusion and Exclusion, we get that there are $499-249-99+49=200$ numbers between $501$ and $999$ are not divisible by either $2$ or $5$, so our answer is $\boxed{200}$.
 
  Euler's Totient Function can also be used to arrive at $400$ numbers relatively prime to $1000$, meaning $200$ possible fractions satisfying the necessary conditions. Solution 1 is a more detailed solution utilizing Euler's totient.
 
@@ -117,7 +115,6 @@ We notice that there are a total of $400$ fractions that are in simplest form wh
 Our fraction can be written in the form $\frac{1000 - a}{a} = \frac{1000}{a} - 1.$ Thus the fraction is reducible when $a$ divides $1000.$ We also want $500 < a < 1000.$ By \href{https://artofproblemsolving.com/wiki/index.php?title=PIE}{PIE}, the total values of $a$ that make the fraction reducible is, 
  \[249 + 99 - 49 = 299.\]By \href{https://artofproblemsolving.com/wiki/index.php?title=Complementary\_counting}{complementary counting}, the answer we want is $499 - 299 = \boxed{200}.$
 
- 
 
 
 
@@ -127,7 +124,6 @@ Suppose our fraction is $\frac{a}{b}$. The given condition means $a+b=1000$. Now
 
  There are $250$ fractions that aren’t even. From this, $50$ are divisible by $5$, which means the answer is $250-50=\boxed{200}$
 
- 
 
 
 
@@ -190,8 +186,7 @@ Let the length of the trains be $L$, let the rate of the westward train be $W_{R
  We have that
 
  $L=(\frac{1}{60})(W_{R}+20)$
-
- $L=(\frac{1}{60})(E_{R}-20)$.
+$L=(\frac{1}{60})(E_{R}-20)$.
 
  Adding both of the equations together, we get that 
 
@@ -200,8 +195,7 @@ Let the length of the trains be $L$, let the rate of the westward train be $W_{R
  Now, from the second part of the problem, we acquire that
 
  $L=(E_{T})(E_{R}+20)$
-
- $L=(10E_{T})(W_{R}-20)$
+$L=(10E_{T})(W_{R}-20)$
 
  Dividing the second equation by the first, we get that...$1=\frac{10(W_{R}-20)}{E_{R}+20}\implies E_{R}+20=10W_{R}-200\implies E_{R}+220=10W_{R}\implies E_{R}=10W_{R}-220$.
 
@@ -262,7 +256,6 @@ Begin by setting $x$ to 0, then set both equations to $h^2=\frac{2013-j}{3}$ and
  
 $\textbf{Can someone explain the logic of guessing 36?}$
 
- 
 
 
 
@@ -299,8 +292,7 @@ Similar to the first two solutions, we deduce that $\text{(-)}j$ and $\text{(-)}
  \[(h-b)(h+b)=1007=19\cdot 53\]Those are the only two prime factors of $671$ and $1007$, respectively. So we don't need any new factorizations for those numbers.
 
  $h+a=61,h-a=11\implies (h,a)=\{36,25\}$
-
- $h+b=53,h-b=19\implies (h,b)=\{36,17\}$
+$h+b=53,h-b=19\implies (h,b)=\{36,17\}$
 
  Thus the common integer value for $h$ is $\boxed{036}$.
 
@@ -308,7 +300,6 @@ Similar to the first two solutions, we deduce that $\text{(-)}j$ and $\text{(-)}
  \[y=3(x-h)^2+j\rightarrow y=3(x-11)(x-61)=3x^2-216x+2013\]
  \[y=2(x-h)^2+k\rightarrow y=2(x-19)(x-53)=2x^2-144x+2014\]
 
- 
 
 
 
@@ -358,7 +349,6 @@ We have the equation $y=3(x-h)^2 + j.$
 
 First, we start of exactly like solutions above and we find out that $j=2013-3h^2$ and $k=2014-2h^2$ We then plug j and k into $3(x-h)^2+j$ and $y=2(x-h)^2+k$ respectively. After that, we get two equations, $y=3x^2-6xh+2013$ and $y=2x^2-4xh+2014$. We can apply Vieta's. Let the roots of the first equation be $a, b$ and the roots of the second equation be $c, d$. Thus, we have that $a\cdot b=1007$, $a+b=2h$ and $c\cdot d=671$, $c+d=2h$. Simple evaluations finds that $\boxed{h=36}$
 
- 
 
 
 
@@ -381,7 +371,6 @@ Not my solution, please take it down if it violates rules but this is copied fro
  \[y = 3x^2 - 6xh + 2013 = 3(x^2-2hx+671) \quad \text{ and } \quad y = 2x^2 - 4hx + 2014 = 2(x^2 - 2hx + 1007).\]The left equation has positive integer roots, which must multiply to $671$ and sum to $2h.$ Similarly, the right equation has positive integer roots, which must multiply to $1007$ and sum to $2h.$ Since $671 = 61 \cdot 11$ and $1007 = 19 \cdot 53,$ we see that
  \[2h = 61 + 11 = 19 + 53 = 72,\]so $h = \boxed{36}.$
 
- 
 
 
 	\item (\textit{AIME I 2014}) Let $w$ and $z$ be complex numbers such that $|w| = 1$ and $|z| = 10$. Let $\theta = \arg \left(\frac{w-z}{z}\right)$. The maximum possible value of $\tan^2 \theta$ can be written as $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$. (Note that $\arg(w)$, for $w \neq 0$, denotes the measure of the angle that the ray from $0$ to $w$ makes with the positive real axis in the complex plane.)
@@ -432,7 +421,6 @@ Without the loss of generality, one can let $z$ lie on the positive x axis and s
 
  Note: You can also realize that the max $\theta$ is when the line from $0$ is tangent to the circle of radius $1$ centered at $10.$
 
- 
 
 
 
@@ -481,7 +469,6 @@ Thus, $10k=\sqrt{1+k^2}\cos{(x+\phi)}$. It follows that
  Note: If you are unfamiliar with the method above, note that we can also obtain the bound of $k\cdot \cos x-\sin x$ by the Cauchy-Schwarz inequality:
  \[(k\cdot \cos x-\sin x)^2\le (k^2+1)(\cos^2 x+\sin^2 x)\iff  -\sqrt{k^2+1}\le k\cdot \cos x-\sin x\le\sqrt{k^2+1}.\]
 
- 
 
 
 	\item (\textit{AIME I 2014}) The positive integers $N$ and $N^2$ both end in the same sequence of four digits $abcd$ when written in base 10, where digit $a$ is not zero. Find the three-digit number $abc$.
@@ -519,12 +506,10 @@ let $N= 10000t+1000a+100b+10c+d$ for positive integer values $t,a,b,c,d$.When we
  We can try to solve each case:
 
  
-                \begin{itemize}
-                    \item Case 1 $(d=1)$
-                \end{itemize}
-
-
-                Considering the tenths place, we have that:
+            \begin{itemize}
+        \item Case 1 $(d=1)$
+            \end{itemize}
+            Considering the tenths place, we have that:
 
  $20cd=20c\equiv 10c \pmod {100}$so $c= 0$.
 
@@ -536,13 +521,10 @@ let $N= 10000t+1000a+100b+10c+d$ for positive integer values $t,a,b,c,d$.When we
 
  $2000ad+2000bc = 2000a \equiv 1000a \pmod {10000}$so we get $a=0$ but $a$ cannot be equal to $0$ so we consider $d=5.$
 
- 
-                \begin{itemize}
-                    \item Case 2 $(d=5)$
-                \end{itemize}
-
-
-                considering the tenths placewe have that:
+            \begin{itemize}
+        \item Case 2 $(d=5)$
+            \end{itemize}
+            considering the tenths placewe have that:
 
  $20cd+20=100c+20\equiv 20 \equiv 10c \mod  {100}$( the extra $20$ is carried from $d^2$ which is equal to $25$)so $c=2$
 
@@ -555,12 +537,10 @@ let $N= 10000t+1000a+100b+10c+d$ for positive integer values $t,a,b,c,d$.When we
  $2000ad+2000bc +1000b= 10000a+24000+ 6000\equiv0\equiv 1000a \pmod {10000}$( the extra $1000b$ is carried from the hundreds place)so a is equal 0 again
 
  
-                \begin{itemize}
-                    \item Case 3$(d=6)$
-                \end{itemize}
-
-
-                considering the tenths placewe have that:
+            \begin{itemize}
+        \item Case 3$(d=6)$
+            \end{itemize}
+            considering the tenths placewe have that:
 
  $20cd+30=120c+30\equiv 30+20c \equiv 10c \pmod {100}$( the extra $20$ is carried from $d^2$ which is equal to $25$)if $c=7$ then we have 
 
@@ -590,7 +570,6 @@ let $N= 10000t+1000a+100b+10c+d$ for positive integer values $t,a,b,c,d$.When we
 
  so we have that the last 4 digits of $N$ are $9376$and  $abc$ is equal to $\boxed{937}$
 
- 
 
 
 
@@ -619,12 +598,10 @@ Since $N$ and $N-1$ are coprime, the only solutions are when $(N\mod{16},N\mod{6
 \textbf{Solution 4 (semi-bashing)}
 
 
-                \begin{itemize}
-                    \item Note - $\overline{abcd}$ means the number formed when the digits represented by $a$, $b$, $c$, and $d$ are substituted in. $\overline{abcd}\ne a\times b\times c\times d$.
-                \end{itemize}
-
-
-                WLOG, we can assume that $N$ is a 4-digit integer $\overline{abcd}$. Note that the only $d$ that will satisfy $N$ will also satisfy $d^2\equiv d\pmod{10}$, as the units digit of $\overline{abcd}^2$ is affected only by $d$, regardless of $a$, $b$, or $c$.
+            \begin{itemize}
+        \item Note - $\overline{abcd}$ means the number formed when the digits represented by $a$, $b$, $c$, and $d$ are substituted in. $\overline{abcd}\ne a\times b\times c\times d$.
+            \end{itemize}
+            WLOG, we can assume that $N$ is a 4-digit integer $\overline{abcd}$. Note that the only $d$ that will satisfy $N$ will also satisfy $d^2\equiv d\pmod{10}$, as the units digit of $\overline{abcd}^2$ is affected only by $d$, regardless of $a$, $b$, or $c$.
 
  By checking the numbers 0-9, we see that the only possible values of $d$ are $d=0, 1, 5, 6$.
 
@@ -746,7 +723,6 @@ Observing the equation, we notice that the coefficient for the middle term $-402
  \[{\sqrt{2014}}-{\sqrt{2016}}<\dfrac{1}{\sqrt{2014}}<{\sqrt{2014}}+{\sqrt{2016}}\]Therefore, 
  \[x_2(x_1+x_3)=\dfrac{1}{\sqrt{2014}}{2\sqrt{2014}}=\boxed{002}\]
 
- 
 
 
 
@@ -780,7 +756,6 @@ Let $x =\frac{y}{\sqrt{2014}}.$
 
  Therefore $x_{2}(x_{1}+x_{3}) =\frac{1}{\sqrt{2014}} \cdot\frac{4028}{\sqrt{2014}} = \boxed{002}.$
 
- 
 
 
 
@@ -798,7 +773,6 @@ $a=\sqrt{2014}$ looks arbitrary and related to $b=-4019$ ($b=-(2a^2+1)$), so let
 
  In the second case, $x^2 - 2\sqrt{2014} - 2 = 0$. The solutions are $\sqrt{2014} \pm \sqrt{2016}$. The sum of these 2 solutions is $2 \sqrt{2014}$, and $\frac{1}{\sqrt{2014}}$ is the middle solution, and thus, $(x_1 + x_3) \cdot x_2 = 2$
 
- 
 
 
 
@@ -811,10 +785,8 @@ Let $p(x) = \sqrt{2014}x^3-4029x^2+2=0$. We start by estimating $p(-1)$, $p(0)$,
 
  
 $p(-1)\approx -45-4029+2 \approx -4000$
-
- $p(0) = 2$
-
- $p(1) \approx 45-4029+2 \approx -4000$
+$p(0) = 2$
+$p(1) \approx 45-4029+2 \approx -4000$
 
  
 We conclude by Intermediate Value Theorem (or just common sense), that there is a root on $(-1, 0)$ and another root on $(0, 1)$.
@@ -973,48 +945,27 @@ Perform the coordinate transformation $(x, y)\rightarrow (x+y, x-y)$. Then we ca
 We have 4 possible moves: U, D, R, and L. The total number of paths that could be taken is $4^6$, or $4096$. There are 4 possible cases that land along the line $y = x$: $x,y = \pm 1; x,y = \pm 2; x,y = \pm 3;$ or $x = y = 0$. We will count the number of ways to end up at $(1,1), (2,2),$ and $(3,3)$, multiply them by 4 to account for the other quadrants, and add this to the number of ways to end up at $(0,0)$.
 
  
-                \begin{itemize}
-                    \item Case 1: The token ends at $(3, 3)$. In order for the token to end up here, it must have had 3 right moves, and 3 up moves. In other words, the total number of ways to get here is the ways to rearrange the letters in the sequence $RRRUUU$, which is ${6\choose 3} = 20.$
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item Case 2: The token ends at $(2,2)$. In order for the token to end up here, it could have had 2 up moves, 3 right moves, and 1 left move; or 2 right moves, 3 up moves, and 1 down move. Thus, the total number of ways to get here is sum of the ways to rearrange the letters in the sequences $RRRLUU$ and $UUUDRR$, both of which are ${6\choose 1}{5\choose 2} = 60$, for a total of $120$ possibilities.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    <li>Case 3: The token ends at $(1,1)$. In order for the token to end up here, it could have had:
-                \begin{itemize}
-                    \item 1 right move, 3 up moves, and 2 down moves. In this case, the number of ways to rearrange the letters in the sequence $RUUUDD$ is ${6\choose 1}{5\choose 2} = 60.$\item 1 up move, 3 right moves, and 2 left moves. In this case, the number of ways to rearrange the letters in the sequence $URRRLL$ is ${6\choose 1}{5\choose 2} = 60.$\item 2 right moves, 1 left move, 2 up moves, and 1 down move. In this case, the number of ways to rearrange the letters in the sequence $UUDRRL$ is ${6\choose 1}{5\choose 1}{4\choose 2} = 180.$
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                Thus, the total number of ways to end up at $(1,1)$ is $300$.
+            \begin{itemize}
+        \item Case 1: The token ends at $(3, 3)$. In order for the token to end up here, it must have had 3 right moves, and 3 up moves. In other words, the total number of ways to get here is the ways to rearrange the letters in the sequence $RRRUUU$, which is ${6\choose 3} = 20.$
+            \end{itemize}
+            
+            \begin{itemize}
+        \item Case 2: The token ends at $(2,2)$. In order for the token to end up here, it could have had 2 up moves, 3 right moves, and 1 left move; or 2 right moves, 3 up moves, and 1 down move. Thus, the total number of ways to get here is sum of the ways to rearrange the letters in the sequences $RRRLUU$ and $UUUDRR$, both of which are ${6\choose 1}{5\choose 2} = 60$, for a total of $120$ possibilities.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item Case 3: The token ends at $(1,1)$. In order for the token to end up here, it could have had:<ul><li>1 right move, 3 up moves, and 2 down moves. In this case, the number of ways to rearrange the letters in the sequence $RUUUDD$ is ${6\choose 1}{5\choose 2} = 60.$</li><li>1 up move, 3 right moves, and 2 left moves. In this case, the number of ways to rearrange the letters in the sequence $URRRLL$ is ${6\choose 1}{5\choose 2} = 60.$</li><li>2 right moves, 1 left move, 2 up moves, and 1 down move. In this case, the number of ways to rearrange the letters in the sequence $UUDRRL$ is ${6\choose 1}{5\choose 1}{4\choose 2} = 180.$</li></ul>
+            \end{itemize}
+            Thus, the total number of ways to end up at $(1,1)$ is $300$.
 
  
-                \begin{itemize}
-                    <li>Case 4: The token ends at $(0,0)$. In order for the token to end up here, it could have had:
-                \begin{itemize}
-                    \item 3 right moves and 3 left moves. In this case, the number of ways to rearrange the letters in the sequence $RRRLLL$ is ${6\choose 3} = 20.$\item 3 up moves and 3 down moves. In this case, the number of ways to rearrange the letters in the sequence $UUUDDD$ is ${6\choose 3} = 20.$\item 1 right move, 1 left move, 2 up moves, and 2 down moves. In this case, the number of ways to rearrange the letters in the sequence $RLUUDD$ is ${6\choose 1}{5\choose 1}{4\choose 2} = 180.$\item 1 up move, 1 down move, 2 right moves, and 2 left moves. In this case, the number of ways to rearrange the letters in the sequence $RRLLUD$ is ${6\choose 1}{5\choose 1}{4\choose 2} = 180.$
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                Thus, the total number of ways to end up at $(0,0)$ is $400$.
+            \begin{itemize}
+        \item Case 4: The token ends at $(0,0)$. In order for the token to end up here, it could have had:<ul><li>3 right moves and 3 left moves. In this case, the number of ways to rearrange the letters in the sequence $RRRLLL$ is ${6\choose 3} = 20.$</li><li>3 up moves and 3 down moves. In this case, the number of ways to rearrange the letters in the sequence $UUUDDD$ is ${6\choose 3} = 20.$</li><li>1 right move, 1 left move, 2 up moves, and 2 down moves. In this case, the number of ways to rearrange the letters in the sequence $RLUUDD$ is ${6\choose 1}{5\choose 1}{4\choose 2} = 180.$</li><li>1 up move, 1 down move, 2 right moves, and 2 left moves. In this case, the number of ways to rearrange the letters in the sequence $RRLLUD$ is ${6\choose 1}{5\choose 1}{4\choose 2} = 180.$</li></ul>
+            \end{itemize}
+            Thus, the total number of ways to end up at $(0,0)$ is $400$.
 
  Adding these cases together, we get that the total number of ways to end up on $y = x$ is $4(20 + 120 + 300) + 400 = 2160$. Thus, our probability is $\frac{2160}{4096}$. When this fraction is fully reduced, it is $\frac{135}{256}$, so our answer is $135 + 256 = \boxed{391}.$
 
- 
 
 
 
@@ -1032,7 +983,6 @@ We split this into cases by making a chart. In each row, the entries $(\pm1)$ be
 
  Thus, there are $800 + 840 + 480 + 40 = 2160$ possibilities where $|x|=|y|$. Because there are $4^6$ total possibilities, the probability is $\frac{2160}{4^6} = \frac{135}{256}$, so the answer is $\boxed{391}.$
 
- 
 
 
 
@@ -1109,75 +1059,59 @@ We note there are $4^4 = 256$ possibilities for each of $f$ and $g$ from $A$ to 
  We proceed with casework to determine the number of possible $f$ with range 1, 2, etc.
 
  
-                \begin{itemize}
-                    \item Range 1:
-                \end{itemize}
-
-
-                There are 4 possibilities: all elements output to 1, 2, 3, or 4.
+            \begin{itemize}
+        \item Range 1:
+            \end{itemize}
+            There are 4 possibilities: all elements output to 1, 2, 3, or 4.
 
  
-                \begin{itemize}
-                    \item Range 2:
-                \end{itemize}
-
-
-                We have ${{4}\choose {2}} = 6$ ways to choose the two output elements for $f$. At this point we have two possibilities: either $f$ has 3 of 1 element and 1 of the other, or 2 of each element. In the first case, there are 2 ways to pick the element which there are 3 copies of, and ${{4}\choose {1}} = 4$ ways to rearrange the 4 elements, for a total of $6 * 4 * 2 = 48$ ways for this case. For the second case, there are ${{4}\choose {2}} = 6$ ways to rearrange the 4 elements, for a total of $6 * 6 = 36$ ways for this case. Adding these two, we get a total of $36 + 48 = 84$ total possibilities.
+            \begin{itemize}
+        \item Range 2:
+            \end{itemize}
+            We have ${{4}\choose {2}} = 6$ ways to choose the two output elements for $f$. At this point we have two possibilities: either $f$ has 3 of 1 element and 1 of the other, or 2 of each element. In the first case, there are 2 ways to pick the element which there are 3 copies of, and ${{4}\choose {1}} = 4$ ways to rearrange the 4 elements, for a total of $6 * 4 * 2 = 48$ ways for this case. For the second case, there are ${{4}\choose {2}} = 6$ ways to rearrange the 4 elements, for a total of $6 * 6 = 36$ ways for this case. Adding these two, we get a total of $36 + 48 = 84$ total possibilities.
 
  
-                \begin{itemize}
-                    \item Range 3:
-                \end{itemize}
-
-
-                We have ${{4}\choose {3}} = 4$ ways to choose the three output elements for $f$. We know we must have 2 of 1 element and 1 of each of the others, so there are 3 ways to pick this element. Finally, there are ${{4}\choose{1}}*{{3}\choose{1}} = 12$ ways to rearrange these elements (since we can pick the locations of the 2 single elements in this many ways), and our total is $4 * 3 * 12 = 144$ ways.
+            \begin{itemize}
+        \item Range 3:
+            \end{itemize}
+            We have ${{4}\choose {3}} = 4$ ways to choose the three output elements for $f$. We know we must have 2 of 1 element and 1 of each of the others, so there are 3 ways to pick this element. Finally, there are ${{4}\choose{1}}*{{3}\choose{1}} = 12$ ways to rearrange these elements (since we can pick the locations of the 2 single elements in this many ways), and our total is $4 * 3 * 12 = 144$ ways.
 
  
-                \begin{itemize}
-                    \item Range 4:
-                \end{itemize}
-
-
-                Since we know the elements present, we have $4!$ ways to arrange them, or 24 ways.
+            \begin{itemize}
+        \item Range 4:
+            \end{itemize}
+            Since we know the elements present, we have $4!$ ways to arrange them, or 24 ways.
 
  (To check, $4 + 84 + 144 + 24 = 256$, which is the total number of possibilities).
 
  We now break $f$ down by cases, and count the number of $g$ whose ranges are disjoint from $f$'s.
 
  
-                \begin{itemize}
-                    \item Case 1: $f$'s range contains 1 element
-                \end{itemize}
-
-
-                We know that there are 3 possibilities for $g$ with 1 element. Since half the possibilities for $g$ with two elements will contain the element in $f$, there are $84/2 = 42$ possibilities for $g$ with 2 elements. Since $3/4$ the possibilities for $g$ with 3 elements will contain the element in $f$, there are $144/4 = 36$ possibilities for $g$ with 3 elements. Clearly, no 4-element range for $g$ is possible, so the total number of ways for this case to happen is $4(3 + 42 + 36) = 324$.
+            \begin{itemize}
+        \item Case 1: $f$'s range contains 1 element
+            \end{itemize}
+            We know that there are 3 possibilities for $g$ with 1 element. Since half the possibilities for $g$ with two elements will contain the element in $f$, there are $84/2 = 42$ possibilities for $g$ with 2 elements. Since $3/4$ the possibilities for $g$ with 3 elements will contain the element in $f$, there are $144/4 = 36$ possibilities for $g$ with 3 elements. Clearly, no 4-element range for $g$ is possible, so the total number of ways for this case to happen is $4(3 + 42 + 36) = 324$.
 
  
-                \begin{itemize}
-                    \item Case 2: $f$'s range contains 2 elements
-                \end{itemize}
-
-
-                We know that there are 2 possibilities for $g$ with 1 element. If $g$ has 2 elements in its range, they are uniquely determined, so the total number of sets with a range of 2 elements that work for $g$ is $84/6 = 14$. No 3-element or 4-element ranges for $g$ are possible. Thus, the total number of ways for this to happen is $84(2 + 14) = 1344$.
+            \begin{itemize}
+        \item Case 2: $f$'s range contains 2 elements
+            \end{itemize}
+            We know that there are 2 possibilities for $g$ with 1 element. If $g$ has 2 elements in its range, they are uniquely determined, so the total number of sets with a range of 2 elements that work for $g$ is $84/6 = 14$. No 3-element or 4-element ranges for $g$ are possible. Thus, the total number of ways for this to happen is $84(2 + 14) = 1344$.
 
  
 
 
  
-                \begin{itemize}
-                    \item Case 3:  $f$'s range contains 3 elements
-                \end{itemize}
-
-
-                In this case, there is only 1 possibility for $g$ - all the output values are the element that does not appear in $f$'s range. Thus, the total number of ways for this to happen is $144$.
+            \begin{itemize}
+        \item Case 3:  $f$'s range contains 3 elements
+            \end{itemize}
+            In this case, there is only 1 possibility for $g$ - all the output values are the element that does not appear in $f$'s range. Thus, the total number of ways for this to happen is $144$.
 
  
-                \begin{itemize}
-                    \item Summing the cases
-                \end{itemize}
-
-
-                We find that the probability of $f$ and $g$ having disjoint ranges is equal to:
+            \begin{itemize}
+        \item Summing the cases
+            \end{itemize}
+            We find that the probability of $f$ and $g$ having disjoint ranges is equal to:
 
  $\dfrac{324 + 1344 + 144}{256^2}=\dfrac{1812}{2^{16}}= \dfrac{453}{2^{14}}$
 
@@ -1192,10 +1126,6 @@ We note there are $4^4 = 256$ possibilities for each of $f$ and $g$ from $A$ to 
 As before, there are 4 functions with a range of size 1, 84 with a range of size 2, and 144 with a range of size 3. If the range of $f$ has size $k$, the codomain of $g$ is restricted to a set of size $4 - k$. Any function from $A$ into this codomain will do, so there are $(4 - k)^4$ possibilities for $g$ given a function $f$. The probability of $f$ and $g$ having disjoint ranges is then
  \[\frac{4\cdot 3^4 + 84\cdot 2^4 + 144\cdot 1^4}{(4^4)^2} = \frac{\boxed{453}}{2^{14}}.\]
 
- 
-
-
- 
 
 
 	\item (\textit{AIME I 2014}) On square $ABCD$, points $E,F,G$, and $H$ lie on sides $\overline{AB},\overline{BC},\overline{CD},$ and $\overline{DA},$ respectively, so that $\overline{EG} \perp \overline{FH}$ and $EG=FH = 34$. Segments $\overline{EG}$ and $\overline{FH}$ intersect at a point $P$, and the areas of the quadrilaterals $AEPH, BFPE, CGPF,$ and $DHPG$ are in the ratio $269:275:405:411.$ Find the area of square $ABCD$.
@@ -1208,8 +1138,6 @@ As before, there are 4 functions with a range of size 1, 84 with a range of size
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }850
 
 
@@ -1232,7 +1160,6 @@ Let $s$ be the side length of $ABCD$, let $Q$, and $R$ be the midpoints of $\ove
  \[\frac{\frac 1{400}\sin 2\theta}{\frac 3{10}}=\frac 3{408},\]from which we get $\sin 2\theta = \frac {15}{17}$. Note that $\theta =\angle RHT > \angle QAT = 45^\circ$, so $\cos 2\theta = -\sqrt{1-\sin^2 2\theta}= -\frac 8{17}$ and $\sin^2\theta = \frac{1}{2}(1-\cos 2\theta) = \frac{25}{34}$. Then 
  \[[ABCD]=s^2 = EG^2\sin^2\theta = 34^2 \cdot \frac {25}{34} = 850.\]
 
- 
 
 
 
@@ -1289,13 +1216,10 @@ Continue in the same way as solution 1 to get that $POK$ has area $3a$, and $OK 
  
  \[\frac{15^2 \cdot 34^2}{d^2} + d^2 = 34^2\]
 
- 
  \[d^4 - 34^2 d^2 + 15^2 \cdot 34^2 = 0\]
 
- 
  \[(d^2 - 34 \cdot 25)(d^2 - 34 \cdot 9) = 0\]
-
- $d^2 = 34 \cdot 9$ is extraneous, so $d^2 = 34 \cdot 25$. Since the area is $d^2$, we have it is equal to $34 \cdot 25 = \boxed{850}$
+$d^2 = 34 \cdot 9$ is extraneous, so $d^2 = 34 \cdot 25$. Since the area is $d^2$, we have it is equal to $34 \cdot 25 = \boxed{850}$
 
  -Alexlikemath
 
@@ -1351,7 +1275,6 @@ Pluging in the expressions for $p',q'$, we have
  \[\frac{40+u+80u^2+u^3+40u^4}{25(1+2u^2+u^4)}=\frac{55}{34}\]Recall that $u=\frac{k}{s}\in (0,1)$. Solving the palindrome equation gives $u=\frac{3}{5}$. Therefore,
  \[s^2=\frac{34^2}{1+u^2}=34^2\cdot\frac{25}{34}=\boxed{850}\]
 
- 
 
 
 	\item (\textit{AIME I 2014}) Let $m$ be the largest real solution to the equation
@@ -1391,13 +1314,10 @@ The first step is to notice that the 4 on the right hand side can simplify the t
  
  \[\frac{2}{z - 64} + \frac{2}{z - 36} = 1\]
 
- 
  \[2z - 128 + 2z - 72 = (z - 64)(z - 36)\]
 
- 
  \[4z -  200 = z^2 - 100z + 64(36)\]
 
- 
  \[z^2 - 104z + 2504 = 0\]
 
  Using the quadratic formula, we get that the largest solution for $z$ is $z = 52 + 10\sqrt{2}$. Then, repeatedly substituting backwards, we find that the largest value of $x$ is $11 + \sqrt{52 + \sqrt{200}}$. The answer is thus $11 + 52 + 200 = \boxed{263}$
@@ -1405,7 +1325,6 @@ The first step is to notice that the 4 on the right hand side can simplify the t
  
 Note: When $x$ is barely larger than $19$, then $\frac{19}{x-19}$ is very large, so the left side of the equation approaches infinity as $x$ approaches $19$ from the side greater than $19$. However, we also know as $x$ gets very large, the fractions get smaller as the left side approaches $0$. Since the quadratic on the right side is increasing and positive when $x=19$, the equation will be true at a certain $x>19.$ So, we don't have to assume there is an answer $x>0.$
 
- 
 
 
 
@@ -1414,16 +1333,13 @@ Note: When $x$ is barely larger than $19$, then $\frac{19}{x-19}$ is very large,
 Proceed as with Solution 1 until we get the following.
 
  $\frac{2y}{y^2 - 64} + \frac{2y}{y^2 - 36} = y \implies$
-
- $\frac{1}{y^2 - 64} + \frac{1}{y^2 - 36} = \frac{1}{2}.$
+$\frac{1}{y^2 - 64} + \frac{1}{y^2 - 36} = \frac{1}{2}.$
 
  Here, we may also use a slightly different substitution, $z = y^2 - 50.$ This gives:
 
  $\frac{1}{z - 14} + \frac{1}{z + 14} = \frac{1}{2} \implies$
-
- $\frac{2z}{z^2 - 196} = \frac{1}{2} \implies$
-
- $z^2 - 4z - 196 = 0.$
+$\frac{2z}{z^2 - 196} = \frac{1}{2} \implies$
+$z^2 - 4z - 196 = 0.$
 
  We now have a simpler quadratic, eliminating tedious and potentially error-prone calculations. Following through, we get $z = 2 + \sqrt{200} \implies y = \sqrt{52 + \sqrt{200}}$ as desired.
 
@@ -1495,7 +1411,6 @@ Also: $FG=\frac{20}{7}-\frac{5}{2}=\frac{5}{2}-\frac{15}{7}=\frac{5}{14}$. We ca
  \[d\cdot FG+\frac{3d}{5}\cdot \frac{d}{\sqrt{2}}=\frac{4d}{5}\cdot \frac{d}{\sqrt{2}}\]
  \[d\cdot FG+\frac{3d^2}{5\sqrt{2}}=\frac{4d^2}{5\sqrt{2}}\implies FG=\frac{d}{5\sqrt{2}}\]Thus $\frac{d}{5\sqrt{2}}=\frac{5}{14}\rightarrow d=5\sqrt{2}\cdot\frac{5}{14}=\frac{25\sqrt{2}}{14}$. $a+b+c=25+2+14= \boxed{041}$
 
- 
 
 
 
@@ -1525,8 +1440,7 @@ See inside the $\triangle DEF$, we can find that $AG>AF$ since if $AG<AF$, we ca
                     The main element of the solution is the proof that $BF$ is bisector of $\angle B.$
 
  Let $O$ be the midpoint of $DE.$ $\angle EBF = 90^\circ \implies$
-
- $O$ is the center of the circle $BDGFE.$ $\angle EOF = 90^\circ \implies \overset{\Large\frown} {EF} = 90^\circ \implies \angle EBF = 45^\circ \implies$BF is bisector of $\angle ABC\implies BF = \frac {2AB \cdot BC}{AB+BC} \cos 45^\circ =\frac {12 \cdot \sqrt{2}}{7}.$ 
+$O$ is the center of the circle $BDGFE.$ $\angle EOF = 90^\circ \implies \overset{\Large\frown} {EF} = 90^\circ \implies \angle EBF = 45^\circ \implies$BF is bisector of $\angle ABC\implies BF = \frac {2AB \cdot BC}{AB+BC} \cos 45^\circ =\frac {12 \cdot \sqrt{2}}{7}.$ 
  \[\angle EGD = 90^\circ, \frac {EG}{GD}=\frac{4}{3} \implies\]
  \[\angle GED = \angle GCD =\gamma \implies  \overset{\Large\frown} {DG} = 2\gamma.\]
  \[2\angle ACB =  \overset{\Large\frown} {BEF} -  \overset{\Large\frown} {DG} \implies  \overset{\Large\frown} {BEF} = 4 \gamma \implies\]
@@ -1548,12 +1462,10 @@ See inside the $\triangle DEF$, we can find that $AG>AF$ since if $AG<AF$, we ca
                     The main element of the solution is the proof that $G$ is midpoint of $AC.$
 
  As in Solution 5 we get $\angle GED = \angle DBG =\gamma \implies$
-
- $\triangle BCG$ is isosceles triangle with $BG=CG.$
+$\triangle BCG$ is isosceles triangle with $BG=CG.$
 
  Similarly $BG = AG \implies AG = CG = BG = \frac {AC}{2} =\frac {5}{2}.$
 
- 
  \[\overset{\Large\frown} {FG} = 90^\circ – \overset{\Large\frown} {GD} =  90^\circ – 2\gamma \implies\]
  \[\overset{\Large\frown} {BFG} = 4\gamma + 90^\circ – 2\gamma = 90^\circ + 2\gamma \implies\]
  \[\angle BOG = 90^\circ + 2\gamma \implies \angle BGO = \angle GBO = 45^\circ - \gamma.\] Let $\hspace{10mm} BO = EO = DO = r \implies$
@@ -1575,7 +1487,6 @@ Let $(BEFGD) = \omega$.By Incenter-Excenter(Fact $5$), $F$ is the angle bisector
 
  Then $EB = \frac{17}{14}$ and $DB = \frac{31}{14}$ and by Pythagorean we have $DE = \frac{25\sqrt{2}}{14}$, so our answer is $\boxed{\textbf{041}}.$
 
- 
 
 
 
@@ -1586,7 +1497,6 @@ Since $\angle EBD$ is right, $DE$ is clearly the diameter. Let $EF=DF=x, ED=x\sq
  Furthermore, $\angle FEG = \angle FDG = \angle EDG-\angle EDF=90^{\circ}-\alpha-45^{\circ}=45^{\circ}-\alpha$. Also, $\angle AEF=2\alpha$ in triangle $\triangle AEF$, thus $\angle BED=135^{\circ}-2\alpha$ since $\angle AEB=180^{\circ}$. Using $\cos \alpha=\frac{4}{5}$, it's relatively easy to derive that $\cos (135^{\circ}-2\alpha)=\frac{17\sqrt{2}}{50}$. Since $\cos(135^{\circ}-2\alpha)=\frac{BE}{DE}$, we get that $BE=\frac{17x}{25}$. Finally, since $AE+BE=x+\frac{17x}{25}=3$, we solve for 
  \[x=\frac{25}{14} \implies DE=x\sqrt{2}=\frac{25\sqrt{2}}{14},\] so our desired answer is $\boxed{041}.$
 
- 
 
 
 
@@ -1600,8 +1510,7 @@ Since $\angle EBD$ is right, $DE$ is clearly the diameter. Let $EF=DF=x, ED=x\sq
                     $\angle{B} = 90^\circ ==>$ $ED$ is the diameter of the circle $==> \angle{EGD} = 90^\circ$
 
  Because $\frac{GD}{GE} = \frac{AB}{BC} = \frac{3}{4}, \Delta DGE \sim \Delta ABC$
-
- $\angle{DFC} = \angle{DEG} = \angle{C} ==> CD = DF = EF$
+$\angle{DFC} = \angle{DEG} = \angle{C} ==> CD = DF = EF$
 
  We flip the triangle for easier calculation and let $C$ be the origin.
 
@@ -1611,35 +1520,25 @@ Since $\angle EBD$ is right, $DE$ is clearly the diameter. Let $EF=DF=x, ED=x\sq
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_2014_15_Solution_Figure_5.png}
                     \end{figure}
                     Let $x = CD$
-
- $DF = x\cdot e^{i2\alpha}, EF = x\cdot e^{-(90^\circ-2\alpha)}$
-
- $E$ is on $AB$, which means that $Re(E)$ = 4.
+$DF = x\cdot e^{i2\alpha}, EF = x\cdot e^{-(90^\circ-2\alpha)}$
+$E$ is on $AB$, which means that $Re(E)$ = 4.
 
  
  \[Re(x+x\cdot e^{i2\alpha}+x\cdot e^{-(90^\circ-2\alpha)}) = 4\]
 
- 
  \[Re(x+x(\cos{2\alpha}+i\sin{2\alpha})+x(\cos{(2\alpha-90^\circ)}+i\sin{(2\alpha-90^\circ)})) = 4\]
 
- 
  \[x(1+\cos{2\alpha}+\sin{2\alpha})=4\]
+$\cos{2\alpha} = \cos^2{\alpha} - \sin^2{\alpha} = \frac{7}{25}$
+$\sin{2\alpha} = 2\sin{\alpha}\cos{\alpha} = \frac{24}{25}$
 
- $\cos{2\alpha} = \cos^2{\alpha} - \sin^2{\alpha} = \frac{7}{25}$
-
- $\sin{2\alpha} = 2\sin{\alpha}\cos{\alpha} = \frac{24}{25}$
-
- 
  \[x\cdot \frac{56}{25} = 4\]
 
- 
  \[x = \frac{25}{14}\]
 
- Therefore $DE=\sqrt{2}\cdot \frac{25}{14} = \frac{25\sqrt{2}}{14}$ 
+ Therefore $DE=\sqrt{2}\cdot \frac{25}{14} = \frac{25\sqrt{2}}{14}$
+$25+2+14=\boxed{041}$
 
- $25+2+14=\boxed{041}$
-
- 
 
 
 
@@ -1684,16 +1583,12 @@ As noted in Solution 1, $DE$ is in fact the diameter of the circle. The proof is
  Now since $\triangle EBD$ is a right triangle with legs of $EB, BD$ and hypotenuse $ED = 5x$ we solve
 
  $(3 - \frac{5x}{\sqrt{2}})^{2} + (4 - \frac{5x}{\sqrt{2}})^{2} = (5x)^{2}$
-
- $9 - 6 \cdot \frac{5x}{\sqrt{2}} + \frac{25x^{2}}{2} + 16 - 8 \cdot \frac{5x}{\sqrt{2}} + \frac{25x^{2}}{2} = 25x^{2}$
-
- $25 - \frac{30x}{\sqrt{2}} - \frac{40x}{\sqrt{2}} = 0$
-
- $25 = \frac{70x}{\sqrt{2}} = 35x\sqrt{2}$. 
+$9 - 6 \cdot \frac{5x}{\sqrt{2}} + \frac{25x^{2}}{2} + 16 - 8 \cdot \frac{5x}{\sqrt{2}} + \frac{25x^{2}}{2} = 25x^{2}$
+$25 - \frac{30x}{\sqrt{2}} - \frac{40x}{\sqrt{2}} = 0$
+$25 = \frac{70x}{\sqrt{2}} = 35x\sqrt{2}$. 
 
  Now recall we're looking for $ED = 5x$ so we divide both sides by $7\sqrt{2}$
-
- $\frac{25}{7\sqrt{2}} = 5x \implies 5x = \frac{25\sqrt{2}}{14}$.
+$\frac{25}{7\sqrt{2}} = 5x \implies 5x = \frac{25\sqrt{2}}{14}$.
 
  Thus the answer is $25 + 2 + 14 = \boxed{41}$. 
 

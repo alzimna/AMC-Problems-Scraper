@@ -31,7 +31,6 @@ We want a number with no digits repeating, so we can only use the digits $0-9$ o
 
  Note: The number is $9876543120$
 
- 
 
 
 
@@ -63,7 +62,6 @@ We notice that the number doesn't matter after the thousands place because any p
 
  Now, taking adding that to the number, we get 9876543120. Getting the remainder mod 1000 gives $\boxed{120}$
 
- 
 
 
 	\item (\textit{AIME II 2003}) Define a $\text{good word}$ as a sequence of letters that consists only of the letters $A$, $B$, and $C$ - some of these letters may not appear in the sequence - and in which $A$ is never immediately followed by $B$, $B$ is never immediately followed by $C$, and $C$ is never immediately followed by $A$. How many seven-letter good words are there?
@@ -119,7 +117,6 @@ This restriction forces the letters to appear in $\emph{blocks}$ in a fixed cycl
                     \end{figure}
                     
 
- 
 
 
 
@@ -143,7 +140,6 @@ Embed the tetrahedron in 4-space to make calculations easier.Its vertices are$(1
 
 Let the large tetrahedron be $ABCD$, and the small tetrahedron be $WXYZ$, with $W$ on $ABC$, $X$ on $BCD$, $Y$ on $ACD$, and $Z$ on $ABD$. Clearly, the two regular tetrahedrons are similar, so if we can find the ratio of the sides, we can find the ratio of the volumes. Let $AB=1$, for our convenience. Dropping an altitude from $W$ to $BC$, and calling the foot $M$, we have $WM=XM=\frac{\sqrt3}{6}$. Since $\cos\angle{WMX}=\cos\angle{AMX}=MX/AM=1/3$. By Law of Cosines, we have $WX=\sqrt{1/12+1/12-2(1/12)(1/3)}=1/3$. Hence, the ratio of the volumes is $\left(\frac{1}{3}\right)^3=1/27$. $m+n=1+27=\boxed{028}$
 
- 
 
 
 
@@ -171,8 +167,6 @@ The volume of the wedge is half the volume of a cylinder with height $12$ and ra
 
 	\item (\textit{AIME II 2003}) In triangle $ABC,$ $AB = 13,$ $BC = 14,$ $AC = 15,$ and point $G$ is the intersection of the medians. Points $A',$ $B',$ and $C',$ are the images of $A,$ $B,$ and $C,$ respectively, after a $180^\circ$ rotation about $G.$ What is the area of the union of the two regions enclosed by the triangles $ABC$ and $A'B'C'?$
 
-
- 
  \textbf{Answer: }112
 
 
@@ -212,7 +206,6 @@ Let $\theta=\angle BDA$. Let $AB=BC=CD=x$. By the extended law of sines,
  \[x=25\frac{2}{\sqrt{5}}\implies x^2=500\]The height of the rhombus is $x\sin(2\theta)=2x\sin\theta\cos\theta$, so we want
  \[2x^2\sin\theta\cos\theta=\boxed{400}\]
 
- 
 
 
 	\item (\textit{AIME II 2003}) Find the eighth term of the sequence $1440,$ $1716,$ $1848,\ldots,$ whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.
@@ -228,10 +221,8 @@ Let $\theta=\angle BDA$. Let $AB=BC=CD=x$. By the extended law of sines,
 If you multiply the corresponding terms of two arithmetic sequences, you get the terms of a quadratic function. Thus, we have a quadratic $ax^2+bx+c$ such that $f(1)=1440$, $f(2)=1716$, and $f(3)=1848$. Plugging in the values for x gives us a system of three equations:
 
  $a+b+c=1440$
-
- $4a+2b+c=1716$
-
- $9a+3b+c=1848$
+$4a+2b+c=1716$
+$9a+3b+c=1848$
 
  Solving gives $a=-72, b=492,$ and $c=1020$. Thus, the answer is $-72(8)^2+492\cdot8+1020= \boxed{348}.$
 
@@ -261,16 +252,13 @@ Note: WHO WROTE THIS?! ITS THE BIG '26!!~Aarav22
 Use the same rationale as in solution 0.67; instead of using terms $1,2,3$, we use $-1,0,1$ and solve the $6$th term.
 
  $a-b+c=1440$
-
- $c=1716$
-
- $a+b+c=1848$
+$c=1716$
+$a+b+c=1848$
 
  Accordingly we will solve 
 
  $a=-72, b=204, c=1716$
-
- $36a+6b+c= \boxed{348}.$
+$36a+6b+c= \boxed{348}.$
 
  -maxamc
 
@@ -283,10 +271,8 @@ Use the same rationale as in solution 0.67; instead of using terms $1,2,3$, we u
 Setting one of the sequences as $a+nr_1$ and the other as $b+nr_2$, we can set up the following equalities
 
  $ab = 1440$
-
- $(a+r_1)(b+r_2)=1716$
-
- $(a+2r_1)(b+2r_2)=1848$
+$(a+r_1)(b+r_2)=1716$
+$(a+2r_1)(b+2r_2)=1848$
 
  We want to find $(a+7r_1)(b+7r_2)$
 
@@ -297,8 +283,7 @@ Setting one of the sequences as $a+nr_1$ and the other as $b+nr_2$, we can set u
  Plugging in $ab=1440$ and bringing the constant over yields
 
  $ar_2 + br_1 + r_1r_2 = 276$
-
- $ar_2 + br_1 + 2r_1r_2 = 204$
+$ar_2 + br_1 + 2r_1r_2 = 204$
 
  Subtracting the two yields $r_1r_2 = -72$ and plugging that back in yields $ar_2 + br_1 = 348$
 
@@ -363,38 +348,28 @@ Start by labeling the two sequences:
  Then, 
 
  $f(1)=ab,$
-
- $f(2)=(a+d_1)(b+d_2)=a+ad_2+d_1b+d_1d_2,$
-
- $f(3)=(a+2d_1)(b+2d_2)=ab+2ad_2+2bd_1+4d_1d_2,$
+$f(2)=(a+d_1)(b+d_2)=a+ad_2+d_1b+d_1d_2,$
+$f(3)=(a+2d_1)(b+2d_2)=ab+2ad_2+2bd_1+4d_1d_2,$
 
  and $f(8)=(a+7d_1)(b+7d_2)=ab+7ad_2+7bd_1+49d_1d_2$.
 
  In order to find $f(8)$ add $f(3)$ enough times to get the difference between the $d_1d_2$ and $ad_2+bd_1$ terms, then add $f(2)$ and $f(1)$ to get the other terms:
 
  $21f(3)=21ab+42ad_2+42bd_1+84d_1d_2$
-
- $21f(3)-35f(2)=21ab+42ad_2+42bd_1+84d_1d_2-35a-35ad_2-35d_1b-35d_1d_2=-14ab+7ad_2+7bd_1+49d_1d_2$
-
- $21f(3)-35f(2)+15f(1)=-14ab+7ad_2+7bd_1+49d_1d_2+15ab=ab+7ad_2+7bd_1+49d_1d_2$
+$21f(3)-35f(2)=21ab+42ad_2+42bd_1+84d_1d_2-35a-35ad_2-35d_1b-35d_1d_2=-14ab+7ad_2+7bd_1+49d_1d_2$
+$21f(3)-35f(2)+15f(1)=-14ab+7ad_2+7bd_1+49d_1d_2+15ab=ab+7ad_2+7bd_1+49d_1d_2$
 
  Now that the expression is in terms of the given values, insert values and solve:
 
- $21*1848-35*1716+15*1440=1848+20*132+(20*1716-35*1716+15*1716)+15*(-276)$ 
+ $21*1848-35*1716+15*1440=1848+20*132+(20*1716-35*1716+15*1716)+15*(-276)$
+$=1848+5*132+15(132-276)$
+$=1848+660+15(-144)$
+$=348$
 
- $=1848+5*132+15(132-276)$
-
- $=1848+660+15(-144)$
-
- $=348$
-
- 
 
 
 	\item (\textit{AIME II 2003}) Consider the polynomials $P(x) = x^{6} - x^{5} - x^{3} - x^{2} - x$ and $Q(x) = x^{4} - x^{3} - x^{2} - 1.$ Given that $z_{1},z_{2},z_{3},$ and $z_{4}$ are the roots of $Q(x) = 0,$ find $P(z_{1}) + P(z_{2}) + P(z_{3}) + P(z_{4}).$
 
-
- 
  \textbf{Answer: }006
 
 
@@ -409,18 +384,13 @@ When we use long division to divide $P(x)$ by $Q(x)$, the remainder is $x^2-x+1$
  \[P(z_2)+P(z_1)+P(z_3)+P(z_4)=z_1^2-z_1+1+z_2^2-z_2+1+z_3^2-z_3+1+z_4^2-z_4+1\]
 
  Now by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's} we know that $-z_4-z_3-z_2-z_1=-1$,so by \href{https://artofproblemsolving.com/wiki/index.php?title=Newton\%27s\_Sums}{Newton's Sums} we can find $z_1^2+z_2^2+z_3^2+z_4^2$
-
- $a_ns_2+a_{n-1}s_1+2a_{n-2}=0$
-
- $(1)(s_2)+(-1)(1)+2(-1)=0$
-
- $s_2-1-2=0$
-
- $s_2=3$
+$a_ns_2+a_{n-1}s_1+2a_{n-2}=0$
+$(1)(s_2)+(-1)(1)+2(-1)=0$
+$s_2-1-2=0$
+$s_2=3$
 
  So finally$P(z_2)+P(z_1)+P(z_3)+P(z_4)=3+4-1=\boxed{006}.$
 
- 
 
 
 
@@ -429,9 +399,8 @@ When we use long division to divide $P(x)$ by $Q(x)$, the remainder is $x^2-x+1$
 By using long division to divide $P(x)$ by $Q(x)$, we find that $P(x) = Q(x)(x^2 + 1) + (x^2 - x + 1)$
 
  For \href{https://artofproblemsolving.com/wiki/index.php?title=Polynomial\_Remainder\_Theorem}{Polynomial Remainder Theorem},  
- \[P(z_2)+P(z_1)+P(z_3)+P(z_4)=z_1^2-z_1+1+z_2^2-z_2+1+z_3^2-z_3+1+z_4^2-z_4+1\] 
+ \[P(z_2)+P(z_1)+P(z_3)+P(z_4)=z_1^2-z_1+1+z_2^2-z_2+1+z_3^2-z_3+1+z_4^2-z_4+1\]
 
- 
  \[\Rightarrow P(z_2)+P(z_1)+P(z_3)+P(z_4)=(z_1^2+z_2^2+z_3^2+z_4^2)-(z_1+z_2+z_3+z_4)+4\] 
 
  We know that for Vieta's Formula
@@ -448,21 +417,17 @@ By using long division to divide $P(x)$ by $Q(x)$, we find that $P(x) = Q(x)(x^2
  So, 
  \[S= \sum_{i=1}^{n=4} z_i^2 = \left( \sum_{i=1}^{n=4} z_i \right)^2 - 2 \sum_{i=1}^{n=4}z_i z_j\]
 
- 
  \[\Rightarrow S = (z_1+z_2+z_3+z_4)-2(x_1x_2 + x_1x_3 + x_1x_4 + x_2x_3 + x_2x_4 + x_3x_4)\]
 
- 
  \[\Rightarrow S= 1 -2\times (-1) \Rightarrow S = 3\]
 
  Therefore
 
  
- \[\Rightarrow P(z_2)+P(z_1)+P(z_3)+P(z_4)=(z_1^2+z_2^2+z_3^2+z_4^2)-(z_1+z_2+z_3+z_4)+4\] 
+ \[\Rightarrow P(z_2)+P(z_1)+P(z_3)+P(z_4)=(z_1^2+z_2^2+z_3^2+z_4^2)-(z_1+z_2+z_3+z_4)+4\]
 
- 
  \[\Rightarrow P(z_2)+P(z_1)+P(z_3)+P(z_4) = (3)- 1 + 4 \therefore \boxed{ P(z_2)+P(z_1)+P(z_3)+P(z_4)=6}\]
 
- 
 
 
 
@@ -508,22 +473,15 @@ Let $S_k$ = $z_1^k+z_2^k+z_3^k+z_4^k$
  By \href{https://artofproblemsolving.com/wiki/index.php?title=Newton\%27s\_Sums}{Newton's Sums},
 
  $S_1-1=0$
-
- $S_2-S_1-2=0$
-
- $S_3-S_2-S_1=0$
-
- $S_4-S_3-S_2-4=0$
-
- $S_5-S_4-S_3-S_1=0$
-
- $S_6-S_5-S_4-S_2=0$
+$S_2-S_1-2=0$
+$S_3-S_2-S_1=0$
+$S_4-S_3-S_2-4=0$
+$S_5-S_4-S_3-S_1=0$
+$S_6-S_5-S_4-S_2=0$
 
  Solving for $S_1,S_2,S_3,S_4,S_5,S_6$, we get $S_1=1, S_2=3, S_3=4, S_4=11, S_5=16, S_6=30$
+$P(z_1)+P(z_2)+P(z_3)+P(z_4)=S_6-S_5-S_3-S_2-S_1=\boxed{006}$
 
- $P(z_1)+P(z_2)+P(z_3)+P(z_4)=S_6-S_5-S_3-S_2-S_1=\boxed{006}$
-
- 
 
 
 
@@ -557,8 +515,6 @@ Call the two integers $b$ and $b+60$, so we have $\sqrt{b}+\sqrt{b+60}=\sqrt{c}$
 
 	\item (\textit{AIME II 2003}) Triangle $ABC$ is a right triangle with $AC = 7,$ $BC = 24,$ and right angle at $C.$ Point $M$ is the midpoint of $AB,$ and $D$ is on the same side of line $AB$ as $C$ so that $AD = BD = 15.$ Given that the area of triangle $CDM$ may be expressed as $\frac {m\sqrt {n}}{p},$ where $m,$ $n,$ and $p$ are positive integers, $m$ and $p$ are relatively prime, and $n$ is not divisible by the square of any prime, find $m + n + p.$
 
-
- 
  \textbf{Answer: }578
 
 
@@ -583,7 +539,6 @@ We use the \href{https://artofproblemsolving.com/wiki/index.php?title=Pythagorea
 
  Hence, the answer is $527+11+40=\boxed{578}.$
 
- 
 
 
 
@@ -636,7 +591,6 @@ Let $E$ be the intersection of lines $BC$ and $DM$.  Since triangles $\Delta CME
  \[[\triangle{ACD}]=\frac{7*15*\sin(\gamma)}{2}=\frac{7}{2}*\frac{120-7\sqrt{11}}{10}=42-\frac{49\sqrt{11}}{20}\]and thus:
  \[[\triangle{CMD}]=42-\frac{49\sqrt{11}}{20}+\frac{125\sqrt{11}}{8}-42=\frac{625\sqrt{11}-98\sqrt{11}}{40}=\frac{527\sqrt{11}}{40}\implies m+n+p = 527+11+40=\boxed{\textbf{578}}\]
 
- 
 
 
 	\item (\textit{AIME II 2003}) The members of a distinguished committee were choosing a president, and each member gave one vote to one of the $27$ candidates. For each candidate, the exact percentage of votes the candidate got was smaller by at least $1$ than the number of votes for that candidate. What is the smallest possible number of members of the committee?
@@ -691,8 +645,6 @@ Let $n$ be the total number of people in the committee, and $a_i$ be the number 
 
 	\item (\textit{AIME II 2003}) A bug starts at a vertex of an equilateral triangle. On each move, it randomly selects one of the two vertices where it is not currently located, and crawls along a side of the triangle to that vertex. Given that the probability that the bug moves to its starting vertex on its tenth move is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m + n.$
 
-
- 
  \textbf{Answer: }683
 
 
@@ -705,7 +657,6 @@ Let $P_n$ represent the probability that the bug is at its starting vertex after
 
  Thus the answer is $171+512=$$\boxed{683}$
 
- 
 
 
 
@@ -735,10 +686,8 @@ Let $Q_{N}$ be the probability of starting at one point and ending at another fo
  \[P_{6} = \frac{\frac{3}{8} + 1}{4} = \frac{11}{32}\] 
  \[P_{8} = \frac{\frac{11}{32} + 1}{4} = \frac{43}{128}\] 
  \[P_{10} = \frac{\frac{43}{128} + 1}{4} = \boxed{\frac{171}{512}}.\]
+$171 + 512 = \boxed{683}.$
 
- $171 + 512 = \boxed{683}.$
-
- 
 
 
 
@@ -850,8 +799,6 @@ Start of with any vertex, say $A$. Denote $a_n$ the number of paths ending where
 
 	\item (\textit{AIME II 2003}) Let $A = (0,0)$ and $B = (b,2)$ be points on the coordinate plane. Let $ABCDEF$ be a convex equilateral hexagon such that $\angle FAB = 120^\circ,$ $\overline{AB}\parallel \overline{DE},$ $\overline{BC}\parallel \overline{EF,}$ $\overline{CD}\parallel \overline{FA},$ and the y-coordinates of its vertices are distinct elements of the set $\{0,2,4,6,8,10\}.$ The area of the hexagon can be written in the form $m\sqrt {n},$ where $m$ and $n$ are positive integers and n is not divisible by the square of any prime. Find $m + n.$
 
-
- 
  \textbf{Answer: }051
 
 
@@ -909,25 +856,10 @@ The y-coordinate of $F$ must be $4$.  All other cases yield non-convex and/or de
 
 This is similar to solution 2 but faster and easier.First off we see that the y coordinate of F must be 4, the y coordinate of E must be 8, the y coordinate of D must be 10, and the y coordinate of C must be 6 (from the parallel sides of the hexagon).We then use the sine sum angle formula*** to find the x coordinate of B (lets call it $x$):  $2\cdot\cos(120)+x\sin(120)=\frac{x\sqrt3}{2}-1=4\rightarrow x=\frac{10\sqrt3}{3}$.Now that we know $x$ we can find the x coordinate of F in multiple ways, including using the cosine sum angle formula or using the fact that triangle AFE is isosceles and AE is on the y axis.  Either way, we find that the x coordinate of F is $-\frac{8\sqrt3}{3}$.Now, divide ABCDEF into two congruent triangles and a parallelogram:  AFE, BCD, and ABDE.  The areas of AFE and BCD are each $\frac12\cdot\frac{8\sqrt3}{3}\cdot8=\frac{32\sqrt3}{3}$.  The area of ABDE is $\frac12\cdot8\cdot\frac{10\sqrt3}{3}=\frac{80\sqrt3}3$.The total area of the hexagon is $2\cdot\frac{32\sqrt3}3+\frac{80\sqrt3}3=\frac{144\sqrt3}{3}=48\sqrt3\rightarrow48+3=\boxed{051}$
 
- 
-                \begin{itemize}
-                    <li>
-                \begin{itemize}
-                    <li>
-                \begin{itemize}
-                    \item 
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                The sine sum angle formula is calculated by the rotation matrix in 2D. Rotating a point counterclockwise around the origin yields new coordinates $(x' = x\cos\theta - y\sin\theta, y' = x\sin\theta + y\cos\theta)$.
+            \begin{itemize}
+        \item <ul><li><ul><li class="mw-empty-elt"></li></ul></li></ul>
+            \end{itemize}
+            The sine sum angle formula is calculated by the rotation matrix in 2D. Rotating a point counterclockwise around the origin yields new coordinates $(x' = x\cos\theta - y\sin\theta, y' = x\sin\theta + y\cos\theta)$.
 
  
 
@@ -944,7 +876,6 @@ This is similar to solution 2 but faster and easier.First off we see that the y 
 
  First, we see that the y-coordinates of F, E, D, and C must be $4$, $8$, and $10$, and $6$, respectively, as in the previous solutions. We can draw a rectangle around the hexagon ABCDEF and use negative space to find the area of the hexagon. If we call the distance from the foot of the perpendiculars of B and F to A $x$ and $z$, respectively, and the distance from the bottom left vertex of the rectangle to the foot of the perpendicular from B $y$. This tells us that the area of the entire rectangle is $10(x+y+z)$, since the opposite sides are parallel and thus the length of the rectangle is $4+4+2=10$. Then, if we find the area of the extra triangles and subtract, we find that the area of hexagon ABCDEF as $6x+8z+2y$. However, noticing that $x=y$, the area of ABCDEF can also be expressed as $8(x+z)$. Now we just need to find $x+z$. Since $AB=AF$ and $\angle BAF = 120$ degrees, $BF=AB\sqrt{3}$. However, we can find AB by using the Pythagorean Theorem on either of the right triangles formed by dropping perpendiculars from B and F to the x-axis (let's call them ABX and AFY).From triangle ABX we have that $AB=\sqrt{4+x^2}$, so $BF=\sqrt{3x^2+12}$. Since AB=AF, we can also form the equation $4+x^2=16+z^2$.We can also find BF by dropping a perpendicular from B to line FY and using the Pythagorean Theorem on the right triangle formed. This gives us $BF=\sqrt{4+(x+z)^2}$. Setting our two values of BF equal and substituting $x^2$ as $12+z^2$ and simplifying, we get the equation $3z^4-16z^2-1024=0$. Now we can use the quadratic formula to get that $z^2=\frac{64}{3}$ or $-18$, so $z^2=\frac{64}{3}$. Plugging this value back into the equation $x^2=12+z^2$, we get that $x^2=\frac{100}{3}$. Now we get that $x+z$ is $6\sqrt{3}$, so the area of the hexagon is $8 \cdot 6\sqrt{3}=48\sqrt{3}$, so the answer is $48+3=\boxed{051}$
 
- 
 
 
 	\item (\textit{AIME II 2003}) Let 
@@ -955,8 +886,6 @@ This is similar to solution 2 but faster and easier.First off we see that the y 
 
  where $m, n,$ and $p$ are integers and $p$ is not divisible by the square of any prime. Find $m + n + p.$
 
-
- 
  \textbf{Answer: }015
 
 
@@ -1004,18 +933,12 @@ Note that $x^k + x^{k-1} + \dots + x + 1 = \frac{x^{k+1} - 1}{x - 1}$. Our sum c
 
  So 
  \[\frac{x^{48} + x^{47} + x^{46} + \dots + x^{25} - x^{24} - x^{23} - \dots - x}{x-1} = 0\]
-
- $x(x^{47} + x^{46} + \dots - x - 1) = 0$
-
- $x^{47} + x^{46} + \dots - x - 1 = 0$
-
- $x^{47} + x^{46} + \dots + x + 1 = 2(x^{23} + x^{22} + \dots + x + 1)$
-
- $\frac{x^{48} - 1}{x - 1} = 2\frac{x^{24} - 1}{x - 1}$
-
- $x^{48} - 1 - 2x^{24} + 2 = 0$
-
- $(x^{24} - 1)^2 = 0$
+$x(x^{47} + x^{46} + \dots - x - 1) = 0$
+$x^{47} + x^{46} + \dots - x - 1 = 0$
+$x^{47} + x^{46} + \dots + x + 1 = 2(x^{23} + x^{22} + \dots + x + 1)$
+$\frac{x^{48} - 1}{x - 1} = 2\frac{x^{24} - 1}{x - 1}$
+$x^{48} - 1 - 2x^{24} + 2 = 0$
+$(x^{24} - 1)^2 = 0$
 
  And we can proceed as above.
 

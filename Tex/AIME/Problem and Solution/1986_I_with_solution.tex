@@ -23,8 +23,6 @@ Let $y = \sqrt[4]{x}$. Then we have\textbf{$y(7 - y) = 12$}, or, by simplifying,
 	\item (\textit{AIME I 1986}) Evaluate the product 
  \[\left(\sqrt{5}+\sqrt{6}+\sqrt{7}\right)\left(\sqrt{5}+\sqrt{6}-\sqrt{7}\right)\left(\sqrt{5}-\sqrt{6}+\sqrt{7}\right)\left(-\sqrt{5}+\sqrt{6}+\sqrt{7}\right).\]
 
-
- 
  \textbf{Answer: }104
 
 
@@ -65,7 +63,6 @@ Notice that in a triangle with side-lengths $2\sqrt5,2\sqrt6,$ and $2\sqrt7,$ by
  The area of the triangle is then
  \[\frac{\sin\theta}{2}\cdot 2\sqrt5\cdot 2\sqrt6=\sqrt{\frac{26}{30}}\cdot 2\sqrt{30}=\sqrt{104},\]so our answer is $\left(\sqrt{104}\right)^2=\boxed{104}.$
 
- 
 
 
 	\item (\textit{AIME I 1986}) If $\tan x+\tan y=25$ and $\cot x + \cot y=30$, what is $\tan(x+y)$?
@@ -115,7 +112,6 @@ Let $a=\tan x$ and $b=\tan y$. This simplifies the equations to:
  
  \[a + b = 25\]
 
- 
  \[\frac{1}{a} + \frac{1}{b} = 30\]
 
  Taking the tangent of a sum formula from Solution 2, we get $\tan(x+y) = \frac{25}{1 - ab}$. 
@@ -145,8 +141,6 @@ Let $a=\tan x$ and $b=\tan y$. This simplifies the equations to:
  \begin{align*} 2x_1+x_2+x_3+x_4+x_5&=6 \\ x_1+2x_2+x_3+x_4+x_5&=12 \\ x_1+x_2+2x_3+x_4+x_5&=24 \\ x_1+x_2+x_3+2x_4+x_5&=48 \\ x_1+x_2+x_3+x_4+2x_5&=96 \\ \end{align*}
 
 
-
- 
  \textbf{Answer: }181
 
 
@@ -168,7 +162,6 @@ Thus
 Using the previous equations,
  \[3x_4+2x_5=3(x_1+42)+2(x_1+90)=\boxed{181}\]
 
- 
 
 
 	\item (\textit{AIME I 1986}) What is that largest \href{https://artofproblemsolving.com/wiki/index.php?title=Positive\_integer}{positive integer} $n$ for which $n^3+100$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Divisible}{divisible} by $n+10$?
@@ -191,7 +184,6 @@ If $n+10 \mid n^3+100$, $\gcd(n^3+100,n+10)=n+10$. Using the \href{https://artof
 
 Let $n+10=k$, then $n=k-10$. Then $n^3+100 = k^3-30k^2+300k-900$ Therefore, $900$ must be divisible by $k$, which is largest when $k=900$ and $n=\boxed{890}$
 
- 
 
 
 
@@ -207,7 +199,6 @@ In a similar manner, we can apply synthetic division. We are looking for $\frac{
 
 The key to this problem is to realize that $n+10 \mid n^3 +1000$ for all $n$. Since we are asked to find the maximum possible $n$ such that $n+10 \mid n^3 +100$, we have: $n+10 \mid ((n^3 +1000) - (n^3 +100) \longrightarrow n+10 \mid 900$. This is because of the property that states that if $a \mid b$ and $a \mid c$, then $a \mid b \pm c$. Since, the largest factor of 900 is itself we have: $n+10=900 \Longrightarrow \boxed{n = 890}$
 
- 
 
 
 
@@ -216,7 +207,6 @@ The key to this problem is to realize that $n+10 \mid n^3 +1000$ for all $n$. Si
 Notice that $n\equiv -10 \pmod{n+10}$. Therefore 
  \[0 \equiv n^3+100\equiv(-10)^3+100=-900 \pmod{n+10} \Rightarrow n+10 | 900 \Rightarrow \max_{n+10 | n^3+100} {n} = \boxed{890}.\]
 
- 
 
 
 
@@ -276,7 +266,6 @@ Rewrite all of the terms in base 3. Since the numbers are sums of \textit{distin
 
 Notice that the first term of the sequence is $1$, the second is $3$, the fourth is $9$, and so on. Thus the $64th$ term of the sequence is $729$. Now out of $64$ terms which are of the form $729$ + $'''S'''$, $32$ of them include $243$ and $32$ do not. The smallest term that includes $243$, i.e. $972$, is greater than the largest term which does not, or $854$. So the $96$th term will be $972$, then $973$, then $975$, then $976$, and finally $\boxed{981}$
 
- 
 
 
 
@@ -284,7 +273,6 @@ Notice that the first term of the sequence is $1$, the second is $3$, the fourth
 
 After the $n$th power of 3 in the sequence, the number of terms after that power but before the $(n+1)$th power of 3 is equal to the number of terms before the $n$th power, because those terms after the $n$th power are just the $n$th power plus all the distinct combinations of powers of 3 before it, which is just all the terms before it. Adding the powers of $3$ and the terms that come after them, we see that the $100$th term is after $729$, which is the $64$th term. Also, note that the $k$th term after the $n$th power of 3 is equal to the power plus the $k$th term in the entire sequence. Thus, the $100$th term is $729$ plus the $36$th term. Using the same logic, the $36$th term is $243$ plus the $4$th term, $9$. We now have $729+243+9=\boxed{981}$
 
- 
 
 
 
@@ -292,7 +280,6 @@ After the $n$th power of 3 in the sequence, the number of terms after that power
 
 Writing out a few terms of the sequence until we reach the next power of 3 (27), we see that the $2^{nth}$ term is equal to $3^n$. From here, we can ballpark the range of the 100th term. The 64th term is $3^6$ = $729$ and the 128th term is $3^7$ = $2187$. Writing out more terms of the sequence until the next power of 3 again (81) we can see that the ($2^n$+$2^{n+1}$)/2 term is equal to $3^n$ + $3^{n-1}$. From here, we know that the 96th term is $3^6$ + $3^5$ = $972$. From here, we can construct the 100th term by following the sequence in increasing order. The 97th term is $972 + 1 = 973$, the 98th term is $972 + 3 = 975$, the 99th term is $972 + 3 + 1 = 976$, and finally the 100th term is $972 + 9 = \boxed{981}$
 
- 
 
 
 
@@ -337,7 +324,6 @@ The \href{https://artofproblemsolving.com/wiki/index.php?title=Prime\_factorizat
 
  \textbf{Simplification} The formula for the product of the divisors of $n$ is $n^{(d(n))/2}$, where $d(n)$ is the number of divisor of $n$.We know that $\log_{10} a + \log_{10} b + \log_{10} c + \log_{10} d...$ and so on equals $\log_{10} (abcd...)$ by sum-product rule of logs, so the problem is reduced to finding the logarithm base 10 of the product of the proper divisors of $10^6$. The product of the divisors, by the earlier formula, is ${(10^6)}^{49/2} = 10^{49*3}$, and since we need the product of only the proper divisors, which means the divisors NOT including the number, $10^6$, itself, we divide $10^{(49*3)}$ by $10^6$ to get $10^{(49*3-6)} = 10^{(141)}$. The base-10 logarithm of this value, in base 10, is clearly $\boxed{141}$
 
- 
 
 
 
@@ -359,7 +345,6 @@ Since the prime factorization of $10^6$ is $2^6 \cdot 5^6$, the number of factor
 
 Note that we can just pair terms up such that the product is $10^{6}.$ Now, however, note that $10^{3}$ is not included. Therefore we first exclude. We have $\displaystyle\frac{49-1}{2} = 24$ pairs that all multiply to $10^{6}.$ Now we include $10^{3}$ so our current product is $24 \cdot 6 - 3.$ However we dont want to include $10^6$ since we are considering proper factors only so the final answer is $144 + 3 - 6 = \boxed{141}.$
 
- 
 
 
 	\item (\textit{AIME I 1986}) In $\triangle ABC$, $AB= 425$, $BC=450$, and $AC=510$. An interior point $P$ is then drawn, and segments are drawn through $P$ parallel to the sides of the triangle. If these three segments are of an equal length $d$, find $d$.
@@ -407,7 +392,6 @@ Note that we can just pair terms up such that the product is $10^{6}.$ Now, howe
 
  $d = \frac{2}{\frac{1}{AB} + \frac{1}{BC} + \frac{1}{CA}} = \frac{2}{\frac{1}{510} + \frac{1}{450} + \frac{1}{425}} = \frac{10}{\frac{1}{85}+\frac{1}{90}+\frac{1}{102}}$$= \frac{10}{\frac{1}{5}\left(\frac{1}{17}+\frac{1}{18}\right)+\frac{1}{102}}=\frac{10}{\frac{1}{5}\cdot\frac{35}{306}+\frac{3}{306}}=\frac{10}{\frac{10}{306}} = \boxed{306}$
 
- 
 
 
 
@@ -480,13 +464,10 @@ Refer to the diagram in solution 2; let $a^2=[E'EP]$, $b^2=[D'DP]$, and $c^2=[F'
  $\triangle PEE'$ is also similar to $\triangle F'PF$. Since $EF'=d$, $EP=d-x$. We now have $\frac{PE}{EE'}=\frac{F'P}{FP}$, and $\frac{d-x}{450-d}=\frac{17}{18}$. Cross multiplying, we have $18d-18x=450 \cdot 17-17d$. Using the previous equation to substitute for $x$, we have: 
  \[18d-3\cdot2550+15d=450\cdot17-17d\] This is a linear equation in one variable, and we can solve to get $d=\boxed{306}$
 
- 
-                \begin{itemize}
-                    \item I did not show the multiplication in the last equation because most of it cancels out when solving.
-                \end{itemize}
-
-
-                (Note: I chose $F'P$ to be $x$ only because that is what I had written when originally solving. The solution would work with other choices for $x$.)
+            \begin{itemize}
+        \item I did not show the multiplication in the last equation because most of it cancels out when solving.
+            \end{itemize}
+            (Note: I chose $F'P$ to be $x$ only because that is what I had written when originally solving. The solution would work with other choices for $x$.)
 
  
 
@@ -537,7 +518,6 @@ Let $n=abc$ then
  \[3194<222(a+b+c)<4194\]
  \[14<a+b+c<19\]Checking each of the multiples of $222$ from $15\cdot222$ to $18\cdot222$ by subtracting $N$ from each $222(a+b+c)$, we quickly find $n=\boxed{358}$
 
- 
 
 
 
@@ -608,8 +588,7 @@ Let $f(x)=1-x+x^2-x^3+\cdots+x^{16}-x^{17}$ and $g(y)=a_0+a_1y+a_2y^2+\cdots +a_
  Similarly, $\frac{d^2g}{dy^2} = a_2(2\cdot 1) + a_3(3\cdot 2y)+\cdots+a_{17}(17\cdot 16y^{15})$
 
  Now, notice that if $x = -1$, then $y = 0$, so $f^{''}(-1) = g^{''}(0)$
-
- $g^{''}(0)= 2a_2$, and $f^{''}(-1) = 2\cdot 1 + 3\cdot 2 +\cdots + 16\cdot 17$.
+$g^{''}(0)= 2a_2$, and $f^{''}(-1) = 2\cdot 1 + 3\cdot 2 +\cdots + 16\cdot 17$.
 
  Now, we can use the hockey stick theorem to see that $2\cdot 1 + 3\cdot 2 +\cdots + 16\cdot 17 = 2\binom{18}{3}$
 
@@ -713,12 +692,10 @@ We need exactly four TH subsequences, so we can place additional T's and H's bet
  \[{8 \choose 3}{5 \choose 2}=(56)(10)=560\]ways do distribute the T's and H's. Hence, there are $\boxed {560}$ different sequences. 
 
  
-                \begin{itemize}
-                    \item [We want to divide $5$ T's among the spaces to form exactly five TT subsequences. Each time we divide the group of T's (TTTTT) to make an additional group, we lose one TT sequence. However, each of the first 4 spaces are adjacent to one T. So each time we divide the T's, if we place the group in one of the first four spaces, we gain back another TT sequence. We start with one group that has four TT sequences, so when we place them in the spaces, we get $1+4=5$ TT sequences. Since the number of TT sequences stays the same each time we divide the T's into smaller groups, we will always have $5$ TT sequences if we divide the additional T's among the first $4$ spaces. We can use identical logic to show why we can divide the two H's among the last four spaces to get exactly two HH subsequences.]
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item [We want to divide $5$ T's among the spaces to form exactly five TT subsequences. Each time we divide the group of T's (TTTTT) to make an additional group, we lose one TT sequence. However, each of the first 4 spaces are adjacent to one T. So each time we divide the T's, if we place the group in one of the first four spaces, we gain back another TT sequence. We start with one group that has four TT sequences, so when we place them in the spaces, we get $1+4=5$ TT sequences. Since the number of TT sequences stays the same each time we divide the T's into smaller groups, we will always have $5$ TT sequences if we divide the additional T's among the first $4$ spaces. We can use identical logic to show why we can divide the two H's among the last four spaces to get exactly two HH subsequences.]
+            \end{itemize}
+            
 
 
 	\item (\textit{AIME I 1986}) The shortest distances between an interior \href{https://artofproblemsolving.com/wiki/index.php?title=Diagonal}{diagonal} of a rectangular \href{https://artofproblemsolving.com/wiki/index.php?title=Parallelepiped}{parallelepiped}, $P$, and the edges it does not meet are $2\sqrt{5}$, $\frac{30}{\sqrt{13}}$, and $\frac{15}{\sqrt{10}}$. Determine the \href{https://artofproblemsolving.com/wiki/index.php?title=Volume}{volume} of $P$.
@@ -759,7 +736,6 @@ We need exactly four TH subsequences, so we can place additional T's and H's bet
 
  We see that $h = 15$, $l = 5$, $w = 10$. Therefore $V = 5 \cdot 10 \cdot 15 = \boxed{750}$
 
- 
 
 
 	\item (\textit{AIME I 1986}) Let triangle $ABC$ be a right triangle in the $xy$-plane with a right angle at $C_{}$. Given that the length of the hypotenuse $AB$ is $60$, and that the medians through $A$ and $B$ lie along the lines $y=x+3$ and $y=2x+4$ respectively, find the area of triangle $ABC$.
@@ -777,7 +753,6 @@ Let $\theta_1$ be the angle that the median through $A$ makes with the positive 
  Let $\theta$ be the angle between the medians through $A$ and $B$.  Then by the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\_identities\#Angle\_addition\_identities}{ tangent angle subtraction formula},
  \[\tan \theta = \tan (\theta_2 - \theta_1) = \frac{\tan \theta_2 - \tan \theta_1}{1 + \tan \theta_1 \tan \theta_2} = \frac{2-1}{1 + 2 \cdot 1 } = \frac{1}{3}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1986_15_Solution_Figure_1.png}

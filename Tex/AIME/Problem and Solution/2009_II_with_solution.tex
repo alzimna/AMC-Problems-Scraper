@@ -49,7 +49,6 @@ After the pink stripe is drawn, all three colors will be used equally so the pin
 
 We know that all the stripes are of equal size. We can then say that $r$ is the amount of paint per stripe. Then $130 - r$ will be the amount of blue paint left. Now for the other two stripes. The amount of white paint left after the white stripe and the amount of red paint left after the blue stripe are $188 - r$ and $164 - r$ respectively. The pink stripe is also r ounces of paint, but let there be $k$ ounces of red paint in the mixture and $r - k$ ounces of white paint. We now have two equations: $164 - r - k = 188 - r - (r-k)$ and $164 - r -  k = 130 - r$. Solving yields k = 34 and r = 92. We now see that there will be $130 - 92 = 38$ ounces of paint left in each can. $38 * 3 = \boxed{114}$
 
- 
 
 
 
@@ -75,15 +74,12 @@ Let $x$ be the number of ounces of paint needed for a single stripe. We know tha
 
 Just like in solution 1, we note that all colors will be used equally, except for the pink stripe. This must bring red and white down to $130$ each, so $34$ red and $58$ white are used, making for a total of $92$ for the pink stripe. Thus, the other stripes also use $92$. The answer is $130+164+188-4(92)=\boxed{114}$
 
- 
 
 
 	\item (\textit{AIME II 2009}) Suppose that $a$, $b$, and $c$ are positive real numbers such that $a^{\log_3 7} = 27$, $b^{\log_7 11} = 49$, and $c^{\log_{11}25} = \sqrt{11}$. Find
 
  \[a^{(\log_3 7)^2} + b^{(\log_7 11)^2} + c^{(\log_{11} 25)^2}.\]
 
-
- 
  \textbf{Answer: }469
 
 
@@ -125,7 +121,6 @@ We know from the first three equations that $\log_a27 = \log_37$, $\log_b49 = \l
  
  \[27^{\log_37} + 49^{\log_711} + \sqrt {11}^{\log_{11}25}\]
 
- 
  \[(3^{\log_37})^3 + (7^{\log_711})^2 + ({11^{\log_{11}25}})^{1/2}.\]
 
  The $3$ and the $\log_37$ cancel to make $7$, and we can do this for the other two terms. Thus, our answer is
@@ -135,7 +130,6 @@ We know from the first three equations that $\log_a27 = \log_37$, $\log_b49 = \l
  \[= 343 + 121 + 5\]
  \[= \boxed {469}.\]
 
- 
 
 
 
@@ -149,7 +143,6 @@ First, let us take the log base 3 of the first expression. We get $\log_3{a^{\lo
  \[c = (\sqrt{11})^\frac{1}{\log_ {11}{25}}\]. Raising $a$ to the power of $(\log_3{7})^2$, we get 
  \[3^{3\log_3{7}} = 3^{\log_3{343}} = 343\]. Repeating a similar process for the other ones(you have to turn the square root to a fractional power for c), we get $343+121+5 = \boxed{469}$
 
- 
 
 
 	\item (\textit{AIME II 2009}) In rectangle $ABCD$, $AB=100$. Let $E$ be the midpoint of $\overline{AD}$. Given that line $AC$ and line $BE$ are perpendicular, find the greatest integer less than $AD$.
@@ -196,7 +189,6 @@ Similarly to Solution 2, let the positive x-axis be in the direction of ray $BC$
  \[(AD/2)^2=5000\rightarrow AD^2=20000\]
  \[AD=100\sqrt2\]
 
- 
 
 
 
@@ -249,12 +241,13 @@ The total number of grapes eaten can be computed as the sum of the arithmetic pr
  The prime factorization of $2009$ is $2009=7^2 \cdot 41$. Hence there are $6$ ways how to factor $2009$ into two positive terms $c$ and $n-c+1$:
 
  
-                \begin{itemize}
-                    \item $c=1$, $n-c+1=2009$, then $n=2009$ is a solution.\item $c=7$, $n-c+1=7\cdot 41=287$, then $n=293$ is a solution.\item $c=41$, $n-c+1=7\cdot 7=49$, then $n=89$ is a solution.\item In each of the other three cases, $n$ will obviously be less than $2(c-1)$, hence these are not valid solutions.
-                \end{itemize}
-
-
-                The smallest valid solution is therefore $c=41$, $n=\boxed{089}$.
+            \begin{itemize}
+        \item $c=1$, $n-c+1=2009$, then $n=2009$ is a solution.
+        \item $c=7$, $n-c+1=7\cdot 41=287$, then $n=293$ is a solution.
+        \item $c=41$, $n-c+1=7\cdot 7=49$, then $n=89$ is a solution.
+        \item In each of the other three cases, $n$ will obviously be less than $2(c-1)$, hence these are not valid solutions.
+            \end{itemize}
+            The smallest valid solution is therefore $c=41$, $n=\boxed{089}$.
 
  
 
@@ -289,8 +282,6 @@ If the winner ate n grapes, then 2nd place ate $n+2-4=n-2$ grapes, 3rd place ate
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }032
 
 
@@ -417,10 +408,6 @@ Using the initial steps from Solution 1, $S=\sum_{i=1}^{2009} \dfrac{{2i\choose 
 
  Looking at the binary representations of some of the larger $i$ we see $2009 = 11111011001_2$ having eight $1$'s. So the power of two is $2 \cdot 2009 - 8 = 4010$. Experimenting with $2008, 2007, 2006$ we see that the power of two are all $< 4010$, and under $2005$ the power of two $2i -  v_2(\binom{2i}{i}) < 2i < 4010$. Therefore $a = 4010$ and $\frac{ab}{10} = \boxed{401}.$
 
- 
-
-
- 
 
 
 	\item (\textit{AIME II 2009}) Dave rolls a fair six-sided die until a six appears for the first time. Independently, Linda rolls a fair six-sided die until a six appears for the first time. Let $m$ and $n$ be relatively prime positive integers such that $\dfrac mn$ is the probability that the number of times Dave rolls his die is equal to or within one of the number of times Linda rolls her die. Find $m+n$.
@@ -486,28 +473,23 @@ Let's write out the probabilities with a set number of throws that Linda rolls b
 First, set the case where Linda rolls only once aside. It doesn't fit the same pattern as the rest, so we'll add it separately at the end. Next, let $a = (\frac{5}{6} * \frac{1}{6}) * (\frac{1}{6} + \frac{5}{6} * \frac{1}{6} + \frac{5}{6} * \frac{5}{6} * \frac{1}{6}) = \frac{455}{7776}$ as written above. Each probability where the number of tosses Linda makes increases by one will be $a * (\frac{25}{36})^{n+1}$. Let $S$ be the sum of all these probabilities. 
 
  $S = a + a * \frac{25}{36} + a * (\frac{25}{36})^2...$
-
- $S * \frac{25}{36} = a * \frac{25}{36} + a * (\frac{25}{36})^2 + a * (\frac{25}{36})^3...$
+$S * \frac{25}{36} = a * \frac{25}{36} + a * (\frac{25}{36})^2 + a * (\frac{25}{36})^3...$
 
  Subtract the second equation from the first to get
 
  $S * \frac{11}{36} = a$
-
- $S = a * \frac{36}{11}$
-
- $S = \frac{455}{2376}$
+$S = a * \frac{36}{11}$
+$S = \frac{455}{2376}$
 
  Don't forget to add the first case where Linda rolls once.
 
  $\frac{455}{2376} + \frac{11}{216} = \frac{8}{33}$
-
- $8 + 33 = \boxed{41}$
+$8 + 33 = \boxed{41}$
 
  -jackshi2006
 
  Note: this is equivalent to computing $\frac{1}{36}(\sum_{n=1}^{\infty} (\frac{5}{6})^n((\frac{5}{6})^{n-1}+(\frac{5}{6})^{n}+(\frac{5}{6})^{n+1})+1+\frac{5}{6})$
 
- 
 
 
 
@@ -522,31 +504,22 @@ Define $L_k = k$ that determines at the $k$th roll Linda rolls 6. Define $D_k=k$
  
  \[\sum_{k=2}^\infty (\frac{5}{6})^{k-1}(\frac{1}{6}) \cdot \frac{1}{6}((\frac{5}{6})^{k-2} + (\frac{5}{6})^{k-1} + (\frac{5}{6})^{k})\]
 
- 
  \[=\frac{1}{36}\sum_{k=2}^\infty (\frac{5}{6})^{k-1}((\frac{5}{6})^{k-2} + (\frac{5}{6})^{k-1} + (\frac{5}{6})^{k})\]
 
- 
  \[=\frac{1}{36}\sum_{k=2}^\infty (\frac{5}{6})^{k-1}(\frac{36 \cdot 5^{k-2}}{6^{k}} + \frac{6 \cdot 5^{k-1}}{6^{k}} + \frac{5^{k}}{6^{k}})\]
 
- 
  \[=\frac{1}{36}\sum_{k=2}^\infty (\frac{5}{6})^{k-1}(\frac{5}{6})^{k}(\frac{91}{25})\]
 
- 
  \[=\frac{91}{900} \cdot \sum_{k=2}^\infty (\frac{5}{6})^{k-1}(\frac{5}{6})^{k}\]
 
- 
  \[= \frac{91}{900} \cdot \sum_{k=2}^\infty (\frac{5}{6})^{2k-1}\]
 
- 
  \[=\frac{91}{900} \cdot \sum_{k=2}^\infty (\frac{5}{6})^{2k} \cdot (\frac{5}{6})^{-1}\]
 
- 
  \[=\frac{91}{750} \cdot \sum_{k=2}^\infty (\frac{5}{6})^{2k}\]
 
- 
  \[=\frac{91}{750} \cdot \frac{625}{396}\]
 
- 
  \[=\frac{455}{2376}\].
 
  The requested probability is
@@ -554,7 +527,6 @@ Define $L_k = k$ that determines at the $k$th roll Linda rolls 6. Define $D_k=k$
  
  \[\frac{11}{216} + \frac{455}{2376} = \frac{121}{2376} + \frac{455}{2376} = \frac{576}{2376} = \frac{1}{4.125} = \frac{8}{33} \implies \boxed{041}\]
 
- 
 
 
 
@@ -569,16 +541,13 @@ Let the number of times David rolls $=a$ and the number of times Linda rolls $=b
  1. If $a=b$, then
 
  $P(a=b)=\frac{1}{36}\left(1+\left(\frac{5}{6}\right)^2+\left(\frac{5}{6}\right)^4+\cdots\right)$
-
- $=\frac{1}{36}\left(\frac{1}{1-\left(\frac{5}{6}\right)^2}\right)=\frac{1}{36}\left(\frac{36}{11}\right)=\frac{1}{11}.$
+$=\frac{1}{36}\left(\frac{1}{1-\left(\frac{5}{6}\right)^2}\right)=\frac{1}{36}\left(\frac{36}{11}\right)=\frac{1}{11}.$
 
  2. If $a=b+1$, then
 
  $P(a=b+1)=\frac{1}{36}\left(\frac{5}{6}+\left(\frac{5}{6}\right)^3+\left(\frac{5}{6}\right)^5+\cdots\right)$
-
- $=\frac{5}{216}\left(1+\left(\frac{5}{6}\right)^2+\left(\frac{5}{6}\right)^4+\cdots\right)$
-
- $=\frac{5}{216}\left(\frac{36}{11}\right)=\frac{5}{66}.$
+$=\frac{5}{216}\left(1+\left(\frac{5}{6}\right)^2+\left(\frac{5}{6}\right)^4+\cdots\right)$
+$=\frac{5}{216}\left(\frac{36}{11}\right)=\frac{5}{66}.$
 
  By symmetry,
 
@@ -737,8 +706,7 @@ Let $CD$ and $AB$ meet at $A'$; then $\overline{AD}$ is an angle bisector of iso
  
  \begin{align*} AD  &= AE \cdot \dfrac{\sin(2\alpha)}{\sin(180^\circ-3\alpha)}\\     &= AE \cdot \dfrac{\sin(2\alpha)}{\sin(\alpha+2\alpha)}\\     &= 10 \cdot \dfrac{\sin(2\alpha)}{\sin(\alpha)\cos(2\alpha)+\cos(\alpha)\sin(2\alpha)}\\     &= 10 \cdot \dfrac{\sin(2\alpha)}{\sqrt{\dfrac{1-\cos(2\alpha)}{2}}\cdot\cos(2\alpha)+\sqrt{\dfrac{1+\cos(2\alpha)}{2}}\cdot\sin(2\alpha)}\\     &= 10 \cdot \dfrac{\dfrac{12}{13}}{\sqrt{\dfrac{8}{26}}\cdot\dfrac{5}{13}+\sqrt{\dfrac{18}{26}}\cdot\dfrac{12}{13}}\\     &= 10 \cdot \dfrac{12\sqrt{13}}{10+36} = \dfrac{60\sqrt{13}}{23} \end{align*}
 
-
- $\therefore$ the answer is $60+13+23=\boxed{096}$.
+$\therefore$ the answer is $60+13+23=\boxed{096}$.
 
  -m1sterzer0
 
@@ -785,12 +753,12 @@ We have $\log m - \log k = \log \left( \frac mk \right)$, hence we can rewrite t
  Remember that we must have $m\geq n$. However, for $n\geq 8$ we have $\dfrac{51n}{n^2-1} < n$, and hence $m<n$, which is a contradiction.This only leaves us with the cases $n\in\{2,3,4,5,6,7\}$.
 
  
-                \begin{itemize}
-                    \item For $n=2$ we have $\dfrac{100}3 < m \leq \dfrac{102}3$ with a single integer solution $m=\dfrac{102}3=34$.\item For $n=3$ we have $\dfrac{150}8 < m \leq \dfrac{153}8$ with a single integer solution $m=\dfrac{152}8=19$.\item For $n=4,5,6,7$ our inequality has no integer solutions for $m$.
-                \end{itemize}
-
-
-                Therefore the answer is $34\cdot 2 + 19\cdot 3 = 68 + 57 = \boxed{125}$.
+            \begin{itemize}
+        \item For $n=2$ we have $\dfrac{100}3 < m \leq \dfrac{102}3$ with a single integer solution $m=\dfrac{102}3=34$.
+        \item For $n=3$ we have $\dfrac{150}8 < m \leq \dfrac{153}8$ with a single integer solution $m=\dfrac{152}8=19$.
+        \item For $n=4,5,6,7$ our inequality has no integer solutions for $m$.
+            \end{itemize}
+            Therefore the answer is $34\cdot 2 + 19\cdot 3 = 68 + 57 = \boxed{125}$.
 
  
 
@@ -818,12 +786,13 @@ Suppose that we have a valid solution with $k$ pairs. As all $a_i$ and $b_i$ are
  Partition the numbers $1$ to $1606$ into four sequences:
 
  
-                \begin{itemize}
-                    \item $A=1,3,5,7,\dots,801,803$\item $B=1205,1204,1203,1202,\dots,805,804$\item $C=2,4,6,8,\dots,800,802$\item $D=1606,1605,1604,1603,\dots,1207,1206$
-                \end{itemize}
-
-
-                Sequences $A$ and $B$ have $402$ elements each, and the sums of their corresponding elements are $1206,1207,1208,1209,\dots,1606,1607$.Sequences $C$ and $D$ have $401$ elements each, and the sums of their corresponding elements are $1608,1609,1610,1611,\dots,2007,2008$.
+            \begin{itemize}
+        \item $A=1,3,5,7,\dots,801,803$
+        \item $B=1205,1204,1203,1202,\dots,805,804$
+        \item $C=2,4,6,8,\dots,800,802$
+        \item $D=1606,1605,1604,1603,\dots,1207,1206$
+            \end{itemize}
+            Sequences $A$ and $B$ have $402$ elements each, and the sums of their corresponding elements are $1206,1207,1208,1209,\dots,1606,1607$.Sequences $C$ and $D$ have $401$ elements each, and the sums of their corresponding elements are $1608,1609,1610,1611,\dots,2007,2008$.
 
  Thus we have shown that there is a solution for $k=\boxed{803}$ and that for larger $k$ no solution exists.
 
@@ -874,7 +843,6 @@ Let $O$ be the midpoint of $A$ and $B$. Assume $C_1$ is closer to $A$ instead of
 
  It can be shown that $\sin \frac {\pi}{7} \sin \frac {2\pi}{7} \sin \frac {3\pi}{7}$ = $\frac {\sqrt {7}}{8}$, so $n$ = $8^6(\frac {\sqrt {7}}{8})^2$ = $7(8^4)$ = $28672$, so the answer is $\boxed {672}$
 
- 
 
 
 
@@ -905,20 +873,13 @@ Note that for each $k$ the triangle $ABC_k$ is a right triangle. Hence the produ
 \textbf{Solution 4 (Product of Sines)}
 
 <i>\textbf{Lemma 1:} A chord $ab$ of a circle with center $O$ and radius $r$ has length $2r\sin\left(\dfrac{\angle AOB}{2}\right)$.</i>
-
- <i>\textbf{Proof:} Denote $H$ as the projection from $O$ to line $AB$. Then, by definition, $HA=HB=r\sin\left(\dfrac{\angle AOB}{2}\right)$. Thus, $AB = 2r\sin\left(\dfrac{\angle AOB}{2}\right)$, which concludes the proof.</i>
-
- <i>\textbf{Lemma 2:} $\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n} = \dfrac{n}{2^{n-1}}$</i>
-
- <i>\textbf{Proof:} Let $w=\text{cis}\;\dfrac{\pi}{n}$. Thus,
+<i>\textbf{Proof:} Denote $H$ as the projection from $O$ to line $AB$. Then, by definition, $HA=HB=r\sin\left(\dfrac{\angle AOB}{2}\right)$. Thus, $AB = 2r\sin\left(\dfrac{\angle AOB}{2}\right)$, which concludes the proof.</i>
+<i>\textbf{Lemma 2:} $\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n} = \dfrac{n}{2^{n-1}}$</i>
+<i>\textbf{Proof:} Let $w=\text{cis}\;\dfrac{\pi}{n}$. Thus,
  \[\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n} = \prod_{k=1}^{n-1} \dfrac{w^k-w^{-k}}{2i} = \dfrac{w^{\frac{n(n-1)}{2}}}{(2i)^{n-1}}\prod_{k=1}^{n-1} (1-w^{-2k}) = \dfrac{1}{2^{n-1}}\prod_{k=1}^{n-1} (1-w^{-2k})\]Since, $w^{-2k}$ are just the $n$th roots of unity excluding $1$, by Vieta's, $\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n}=\dfrac{1}{2^{n-1}}\prod_{k=1}^{n-1} (1-w^{-2k}) = \dfrac{n}{2^{n-1}}$, thus completing the proof.</i>
 
  By Lemma 1, the length $AC_k=2r\sin\dfrac{k\pi}{14}$ and similar lengths apply for $BC_k$. Now, the problem asks for $\left(\prod_{k=1}^6 \left(4\sin\dfrac{k\pi}{14}\right)\right)^2$. This can be rewritten, due to $\sin \theta = \sin (\pi-\theta)$, as $\prod_{k=1}^6 \left(4\sin\dfrac{k\pi}{14}\right) \cdot \prod_{k=8}^{13} \left(4\sin\dfrac{k\pi}{14}\right) = \dfrac{1}{\sin \dfrac{7\pi}{14}}\cdot \prod_{k=1}^{13} \left(4\sin\dfrac{k\pi}{14}\right) = \prod_{k=1}^{13} \left(4\sin\dfrac{k\pi}{14}\right).$ By Lemma 2, this furtherly boils down to $4^{12}\cdot \dfrac{14}{2^{13}} = 7\cdot 2^{12} = \boxed{672} \; \text{(mod }1000\text{)}$
 
- 
-
-
- 
 
 
 	\item (\textit{AIME II 2009}) The sequence $(a_n)$ satisfies $a_0=0$ and $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}$ for $n \geq 0$. Find the greatest integer less than or equal to $a_{10}$.
@@ -955,7 +916,6 @@ We can now simply start to compute the values $b_i$ by hand:
  \begin{align*} \lfloor a_{10} \rfloor & = \left\lfloor 2^{10} b_{10} \right\rfloor = \left\lfloor \dfrac{1024\cdot 24}{25} \right\rfloor  = \left\lfloor \dfrac{1025\cdot 24}{25} - \dfrac{24}{25} \right\rfloor  \\ &  = \left\lfloor 41\cdot 24 - \dfrac{24}{25} \right\rfloor = 41\cdot 24 - 1 = \boxed{983} \end{align*}
 
 
- 
 
 
 

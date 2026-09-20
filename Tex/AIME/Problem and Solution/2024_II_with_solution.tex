@@ -143,8 +143,6 @@ Since the median is not in the list, there must not be an odd number of elements
  
  \[\begin{array}{|c|c|c|} \hline 0 & 0 & 8 \\ \hline 9 & 9 & 1 \\ \hline \end{array}\]
 
-
- 
  \textbf{Answer: }045
 
 
@@ -194,20 +192,16 @@ Then the value of $\left|\log_2(x^4y^3z^2)\right|$ is $\frac{m}{n}$ where $m$ an
 First, let’s realize the rule that $\log{a}{b}=\log{a}+\log{b}$. If we add two equations at a time, and use this rule, we get:
 
  $\log_2{\frac{1}{z^2}} = \frac{1}{2}+\frac{1}{3}= \frac{5}{6}$
-
- $\log_2{\frac{1}{x^2}} = \frac{1}{3}+\frac{1}{4}= \frac{7}{12}$
-
- $\log_2{\frac{1}{y^2}} = \frac{1}{2}+\frac{1}{4}= \frac{3}{4}$
+$\log_2{\frac{1}{x^2}} = \frac{1}{3}+\frac{1}{4}= \frac{7}{12}$
+$\log_2{\frac{1}{y^2}} = \frac{1}{2}+\frac{1}{4}= \frac{3}{4}$
 
  Now we look into the rule $\log{\frac{b}{c}}=\log{b}-\log{c}$
 
  We can convert the equations above and setting them variables to:
 
  $a = \log_2{x^2}=\log_2{1}-\frac{7}{12}$
-
- $b = \log_2{y^2}=\log_2{1}-\frac{3}{4}$
-
- $c = \log_2{z^2}=\log_2{1}-\frac{5}{6}$
+$b = \log_2{y^2}=\log_2{1}-\frac{3}{4}$
+$c = \log_2{z^2}=\log_2{1}-\frac{5}{6}$
 
  Then, using the first rule $a^2bc = 4(\log_2{1})-\frac{11}{4}$Make sure you see why there is $a^2$! We are trying to get the absolute value equation. 
 
@@ -231,7 +225,6 @@ First, let’s realize the rule that $\log{a}{b}=\log{a}+\log{b}$. If we add two
 
  Therefore, $\log_2{x^4y^3z^2}$ is $-\frac{25}{8}$. After absolute value, it is just $\frac{25}{8}$. Summing $m$ and $n$, we obtain $\boxed{033}$
 
- 
 
 
 
@@ -250,22 +243,14 @@ Denote $\log_2(x) = a$, $\log_2(y) = b$, and $\log_2(z) = c$.
 \textbf{Solution 3}
 
 $\log_2(y/xz) + \log_2(z/xy) = \log_2(1/x^2) = -2\log_2(x) = \frac{7}{12}$
+$\log_2(x/yz) + \log_2(z/xy) = \log_2(1/y^2) = -2\log_2(y) = \frac{3}{4}$
+$\log_2(x/yz) + \log_2(y/xz) = \log_2(1/z^2) = -2\log_2(z) = \frac{5}{6}$
+$\log_2(x) = -\frac{7}{24}$
+$\log_2(y) = -\frac{3}{8}$
+$\log_2(z) = -\frac{5}{12}$
+$4\log_2(x) + 3\log_2(y) + 2\log_2(z) = -25/8$
+$25 + 8 = \boxed{033}$
 
- $\log_2(x/yz) + \log_2(z/xy) = \log_2(1/y^2) = -2\log_2(y) = \frac{3}{4}$
-
- $\log_2(x/yz) + \log_2(y/xz) = \log_2(1/z^2) = -2\log_2(z) = \frac{5}{6}$
-
- $\log_2(x) = -\frac{7}{24}$
-
- $\log_2(y) = -\frac{3}{8}$
-
- $\log_2(z) = -\frac{5}{12}$
-
- $4\log_2(x) + 3\log_2(y) + 2\log_2(z) = -25/8$
-
- $25 + 8 = \boxed{033}$
-
- 
 
 
 
@@ -300,7 +285,6 @@ You can think of the power of the powers of the expressions inside each logarith
 
  Finally,  $| \log_2{\left(x^4y^3z^2\right)} | = \frac{25}{8}$ and $25+8=\boxed{033}$
 
- 
 
 
 
@@ -460,32 +444,23 @@ We note that by changing a digit to $1$ for the number $\overline{abcd}$, we are
 Let our four digit number be $abcd$. Replacing digits with $1$, we get the following equations:
 
  $1000+100b+10c+d \equiv 0 \pmod{7}$
-
- $1000a+100+10c+d \equiv 0 \pmod{7}$
-
- $1000a+100b+10+d \equiv 0 \pmod{7}$
-
- $1000a+100b+10c+1 \equiv 0 \pmod{7}$
+$1000a+100+10c+d \equiv 0 \pmod{7}$
+$1000a+100b+10+d \equiv 0 \pmod{7}$
+$1000a+100b+10c+1 \equiv 0 \pmod{7}$
 
  Reducing, we get
 
  $6+2b+3c+d \equiv 0 \pmod{7}$ $(1)$
-
- $6a+2+3c+d \equiv 0 \pmod{7}$ $(2)$
-
- $6a+2b+3+d \equiv 0 \pmod{7}$ $(3)$
-
- $6a+2b+3c+1 \equiv 0 \pmod{7}$ $(4)$
+$6a+2+3c+d \equiv 0 \pmod{7}$ $(2)$
+$6a+2b+3+d \equiv 0 \pmod{7}$ $(3)$
+$6a+2b+3c+1 \equiv 0 \pmod{7}$ $(4)$
 
  Subtracting $(2)-(1), (3)-(2), (4)-(3), (4)-(1)$, we get:
 
  $3a-b \equiv 2 \pmod{7}$
-
- $2b-3c \equiv 6 \pmod{7}$
-
- $3c-d \equiv 2 \pmod{7}$
-
- $6a-d \equiv 5 \pmod{7}$
+$2b-3c \equiv 6 \pmod{7}$
+$3c-d \equiv 2 \pmod{7}$
+$6a-d \equiv 5 \pmod{7}$
 
  For the largest four-digit number, we test values for $a$ starting with $9$. When $a = 9$, $b = 4$, $c = 3$, and $d = 7$.  However, when switching the digits with $1$, we quickly notice this doesn't work. 
 
@@ -500,12 +475,9 @@ Let our four digit number be $abcd$. Replacing digits with $1$, we get the follo
 Let our four digit number be $\overline{abcd}$. Replacing digits with $1$, we get the following equations:
 
  $1000+100b+10c+d \equiv 0 \pmod{7}$
-
- $1000a+100+10c+d \equiv 0 \pmod{7}$
-
- $1000a+100b+10+d \equiv 0 \pmod{7}$
-
- $1000a+100b+10c+1 \equiv 0 \pmod{7}$
+$1000a+100+10c+d \equiv 0 \pmod{7}$
+$1000a+100b+10+d \equiv 0 \pmod{7}$
+$1000a+100b+10c+1 \equiv 0 \pmod{7}$
 
  Add the equations together, we get:
 
@@ -530,22 +502,16 @@ Let our four digit number be $\overline{abcd}$. Replacing digits with $1$, we ge
 Let our four digit number be $abcd$. Replacing digits with 1, we get the following equations:
 
  $1000+100b+10c+d \equiv 0 \pmod{7}$
-
- $1000a+100+10c+d \equiv 0 \pmod{7}$
-
- $1000a+100b+10+d \equiv 0 \pmod{7}$
-
- $1000a+100b+10c+1 \equiv 0 \pmod{7}$
+$1000a+100+10c+d \equiv 0 \pmod{7}$
+$1000a+100b+10+d \equiv 0 \pmod{7}$
+$1000a+100b+10c+1 \equiv 0 \pmod{7}$
 
  Then, we let x, y, z, t be the smallest whole number satisfying the following equations:
 
  $1000a \equiv x \pmod{7}$
-
- $100b \equiv y \pmod{7}$
-
- $10a \equiv z \pmod{7}$
-
- $d \equiv t \pmod{7}$
+$100b \equiv y \pmod{7}$
+$10a \equiv z \pmod{7}$
+$d \equiv t \pmod{7}$
 
  Since 1000, 100, 10, and 1 have a remainder of 6, 2, 3, and 1 when divided by 7, we can get the equations of:
 
@@ -573,7 +539,6 @@ Let our four digit number be $abcd$. Replacing digits with 1, we get the followi
 
  Using the same methods of simplification, we get that x=2, y=5, and z=6, which means that 1000a, 100b, 10c, and d has a remainder of 2, 5, 6, and 4, respectively. Since a, b, c, and d is the largest possible number between 0 to 9, we use casework to determine the answer is a=5, b=6, c=9, and d=4, which gives us an answer of $5+694=\boxed{699}$
 
- 
 
 
 	\item (\textit{AIME II 2024}) Torus $T$ is the surface produced by revolving a circle with radius $3$ around an axis in the plane of the circle that is a distance $6$ from the center of the circle (so like a donut). 
@@ -629,7 +594,6 @@ First, let's consider a section $\mathcal{P}$ of the solids, along the axis.By s
 
  Thereby, $r_i-r_o=\frac{33}{4}-\frac{33}{7}=\frac{99}{28}$. And there goes the answer, $99+28=\boxed{\mathbf{127} }$
 
- 
 
 
 
@@ -653,24 +617,18 @@ First, let's consider a section $\mathcal{P}$ of the solids, along the axis.By s
 
 
  
-                \begin{itemize}
-                    \item each cell contains at most one chip
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item all chips in the same row and all chips in the same column have the same color, and
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item any additional chip placed on the grid would violate one or more of the previous two conditions.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item each cell contains at most one chip
+            \end{itemize}
+            
+            \begin{itemize}
+        \item all chips in the same row and all chips in the same column have the same color, and
+            \end{itemize}
+            
+            \begin{itemize}
+        \item any additional chip placed on the grid would violate one or more of the previous two conditions.
+            \end{itemize}
+            
  \textbf{Answer: }902
 
 
@@ -691,7 +649,6 @@ Note that the answer is equivalent to the number of ways to choose rows and colu
 
  The number of sets of rows and columns that white can occupy are $2^{5} - 2 = 30$ each, accounting for the empty and full set.So, including the board with 25 white pieces and the board with 25 black pieces, the answer is $30^{2}+2 = \boxed{902}$
 
- 
 
 
 
@@ -715,13 +672,10 @@ Say the chips were distinct. Note that when we create rows or columns of these d
  
  \[\begin{array}{|c|c|c|c|c|} \hline & & \circ & & \\ \hline \bullet & \bullet & & \bullet & \bullet \\ \hline & & \circ & & \\ \hline & & \circ & & \\ \hline & & \circ & & \\ \hline \end{array}\]
 
- 
  \[\begin{array}{|c|c|c|c|c|} \hline & & \circ_{W_1} & & \\ \hline \bullet_{W_{5b}} & \bullet_{W_{6b}} & W_{9e} & \bullet_{W_{7b}} & \bullet_{W_{8b}} \\ \hline & & \circ_{W_2} & & \\ \hline & & \circ_{W_3} & & \\ \hline & & \circ_{W_4} & & \\ \hline \end{array}\]
 
- 
  \[\begin{array}{|c|c|c|c|c|} \hline & & \circ_{W_1} & & \\ \hline \circ_{W_{5b}} & \circ_{W_{6b}} & W_{9e} & \circ_{W_{7b}} & \circ_{W_{8b}} \\ \hline & & \circ_{W_2} & & \\ \hline & & \circ_{W_3} & & \\ \hline & & \circ_{W_4} & & \\ \hline \end{array}\]
 
- 
  \[\begin{array}{|c|c|c|c|c|} \hline & & \circ & & \\ \hline \circ & \circ & \circ & \circ & \circ \\ \hline & & \circ & & \\ \hline & & \circ & & \\ \hline & & \circ & & \\ \hline \end{array}\].
 
  This is exactly one of the cases, particularly $(1V,1H)$ in our bijective set.
@@ -775,7 +729,6 @@ We rely on 3 simple observations:
  \[~~~~~~~`\]Observation 3: Every row and column must have a defined color.Proof: If it didn't, there would be no chips in this row/column. Then, a chip could be placed in any intersection with this row/column in the intersecting row/column's color, violating rule \#3.
  \[~~~~~~~~~~~~~~\]From observations 1 and 2, we could tile the board given the colors of its rows and columns, and it is clear that every tiling must correspond to a selection of colors for the rows and columns. However, observation 3 means we can have all rows be the same color or all columns be the same color but we can have all rows and columns be the same color, as if all rows were white but a column was black, that column can't have any chips, and it doesn't have a defined color, which is not allowed. There are exactly $2^5-2=30$ ways we can color the rows such that they are not all the same color, and $30$ ways for the columns. We must add back $2$ for when all the rows and columns are the same color, so the answer is $30^2+2=\boxed{902}.$
 
- 
 
 
 
@@ -888,8 +841,7 @@ $\angle ALB \cong \angle DLC$ by vertical angles and $\angle LBA \cong \angle CD
 
  Substituting, we  get 
  \[AB \cdot AC = CD \cdot \frac{AL}{CL} \cdot BD \cdot \frac{AL}{BL}\]
-
- $\textbf{Lemma 1:}\quad$ $BD = CD = ID$
+$\textbf{Lemma 1:}\quad$ $BD = CD = ID$
 
  Proof: 
 
@@ -905,7 +857,6 @@ $\angle ALB \cong \angle DLC$ by vertical angles and $\angle LBA \cong \angle CD
  Now note that $BL$ and $CL$ are part of the same chord in the circle, so we can use Power of a point to express their product differently. 
  \[BL \cdot CL = AL \cdot LD \implies AB \cdot AC = ID^2 \cdot \frac{AL}{LD}\]
 
- 
 
 
 
@@ -934,7 +885,6 @@ Now we have some sort of expression for $AB \cdot AC$ in terms of $ID$ and $AL$.
 
  From $1.1$, $AB \cdot AC = 2 \cdot AL \cdot ID = 2 \cdot 3 \cdot IL \cdot 2 \cdot IL$
 
- 
  \[\implies AB \cdot AC = 3 \cdot (2 \cdot IL) \cdot (2 \cdot IL) = 3 \cdot ID^2\]
 
  Alternatively, from $1.2$, $AB \cdot AC = ID^2 \cdot \frac{AL}{DL}$
@@ -1013,7 +963,6 @@ Denote $AB=a, AC=b, BC=c$. By the given condition, $\frac{abc}{4A}=13; \frac{2A}
 
  Thus, we have $\frac{2A}{a+b+c}=\frac{2A}{3c}=6, A=9c$. Now, we have $\frac{abc}{4A}=\frac{abc}{36c}=\frac{ab}{36}=13\implies ab=\boxed{468}$
 
- 
 
 
 
@@ -1087,13 +1036,10 @@ Firstly, we can construct the triangle $\triangle ABC$ by drawing the circumcirl
                     Denote $E = \odot ABC \cap AI, AB = c, AC = b, BC=a, r$ is inradius.
  \[AO = EO = R \implies AI = EI.\]It is known that $\frac {AI}{EI} = \frac {b+c}{a} – 1 = 1 \implies b + c = 2a.$
 
- 
-                \begin{itemize}
-                    \item \href{https://artofproblemsolving.com/wiki/index.php?title=Barycentric\_coordinates}{ Points on bisectors}
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \href{https://artofproblemsolving.com/wiki/index.php?title=Barycentric\_coordinates}{ Points on bisectors}
+            \end{itemize}
+            
  \[[ABC] =\frac{ (a+b+c) r}{2} = \frac {3ar}{2} = \frac {abc}{4R} \implies bc = 6Rr = \boxed{468}.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  
@@ -1150,7 +1096,6 @@ We know that the area of $\triangle{ABC}$ is equal to $\frac{abc}{4R}$, but is a
 
 We know by Euler's theorem $OI^2=R^2-2Rr.$ Since $AO=R,$ we have $AI=\sqrt{2Rr}.$ Now, extend $AI$ to meet $BC$ at $A'$ and the circumcircle of $\Delta ABC$ at $L.$ By the Incenter-Excenter lemma, $BL=CL=IL=r_a.$ (Note that $OI \perp AL \rightarrow AI=IL=r_a\rightarrow r_a=\sqrt{2Rr}.$) Using Ptolemy in the cyclic quadrilateral $ABLC,$ we have $c\cdot r_a+b\cdot r_a=2r_a\cdot a \iff \frac{b+c}{a}=2.$ Also using the angle-bisector theorem we get, $\frac{c}{A'B}=\frac{b}{A'C}=\frac{b+c}{a}=2,$ so call $c=2m, b=2n, A'B=m, A'C=n.$ Since $\Delta AA'B \sim \Delta CA'L,$ $\frac{AB}{r_a}=\frac{A'B}{A'L}\rightarrow LA'=\frac{r_a}{2}.$ Thus, $AA'=\frac{3r_a}{2}$ (as $AL=2r_a$), and $mn=AA'\cdot LA'=\frac{3r_a^2}{4}=\frac{3Rr}{2}.$ In this problem, we want to find $4mn=6Rr,$ yielding an answer of $\boxed{468}.$
 
- 
 
 
 
@@ -1171,8 +1116,6 @@ We will use solution $1$'s second diagram, except we will drop the altitude from
  
  \[a^2 b + a^2 c + b^2 a + b^2 c + c^2 a + c^2 b = 6,000,000.\]
 
-
- 
  \textbf{Answer: }601
 
 
@@ -1183,7 +1126,6 @@ $ab(a+b)+bc(b+c)+ac(a+c)=300(ab+bc+ac)-3abc=6000000$$\implies 100(ab+bc+ac)-abc=
 
  Note that $(100-a)(100-b)(100-c)=1000000-10000(a+b+c)+100(ab+bc+ac)-abc=0$.Thus, one of $a, b, c =100$. There are $201$ cases for each but we need to subtract $2$ for $(100,100,100)$. The answer is $\boxed{601}$
 
- 
 
 
 
@@ -1191,7 +1133,6 @@ $ab(a+b)+bc(b+c)+ac(a+c)=300(ab+bc+ac)-3abc=6000000$$\implies 100(ab+bc+ac)-abc=
 
 $a^2(b+c)+b^2(a+c)+c^2(a+b) = 6000000$, thus $a^2(300-a)+b^2(300-b)+c^2(300-c) = 6000000$. Complete the cube to get $-(a-100)^3-(b-100)^3-(c-100)^3 = 9000000-30000(a+b+c)$, which so happens to be 0. Then we have $(a-100)^3+(b-100)^3+(c-100)^3 = 0$. We can use Fermat's last theorem here to note that one of $a, b, c$ has to be 100. We have $200+200+200+1 = 601.$
 
- 
 
 
 
@@ -1253,10 +1194,8 @@ We will use Vieta's formulas to solve this problem. We assume $a + b + c = 300$,
 \textbf{Solution 5}
 
 Let's define $a=100+x$, $b=100+y$, $c=100+z$. Then we have $x+y+z=0$ and $6000000 = \sum a^2(b+c)$
-
- $= \sum (100+x)^2(200-x) = \sum (10000+200x+x^2)(200-x) = \sum (20000 - 10000 x + x(40000-x^2))$
-
- $= \sum (20000 + 30000 x -x^3) = 6000000 - \sum x^3$, so we get $x^3 + y^3 + z^3 = 0$. Then from $x+y+z = 0$, we can find $0 = x^3+y^3+z^3 = x^3+y^3-(x+y)^3 = 3xyz$, which means that one of $a$, $b$,$c$ must be 0. There are 201 solutions for each of $a=0$, $b=0$ and $c=0$, and subtract the overcounting of 2 for solution $(200, 200, 200)$, the final result is $201 \times 3 - 2 = \boxed{601}$.
+$= \sum (100+x)^2(200-x) = \sum (10000+200x+x^2)(200-x) = \sum (20000 - 10000 x + x(40000-x^2))$
+$= \sum (20000 + 30000 x -x^3) = 6000000 - \sum x^3$, so we get $x^3 + y^3 + z^3 = 0$. Then from $x+y+z = 0$, we can find $0 = x^3+y^3+z^3 = x^3+y^3-(x+y)^3 = 3xyz$, which means that one of $a$, $b$,$c$ must be 0. There are 201 solutions for each of $a=0$, $b=0$ and $c=0$, and subtract the overcounting of 2 for solution $(200, 200, 200)$, the final result is $201 \times 3 - 2 = \boxed{601}$.
 
  
 
@@ -1474,7 +1413,6 @@ Let's try to find the general form of a line that is in $\mathcal{F}$ based on w
 
  For point $D$ we get $k = \tan^2 \theta.$
 
- 
  \[\tan \angle DOX = \tan \varphi = \frac {D_y}{D_x} = \frac{k \sin \theta}{k+1} : \frac{\cos \theta}{k+1} = k \cdot \tan \theta = \tan^3 \theta.\]
 
  For the line $AB  \tan \theta = \frac {B_y}{A_x} = \sqrt{3} \implies k = 3 \implies$
@@ -1577,19 +1515,14 @@ is divided by $1000$.
  
  \[((1 + i)^{13} - 1)((1 - i)^{13} - 1)\]
 
- 
  \[= (-64(1 + i) - 1)(-64(1 - i) - 1)\]
 
- 
  \[= (65 + 64i)(65 - 64i)\]
 
- 
  \[= 65^2 + 64^2\]
 
- 
  \[= \boxed{\textbf{321}}\]
 
- 
 
 
 
@@ -1605,10 +1538,6 @@ To find $\prod_{k=0}^{12} (2 - 2w^k + w^{2k})$, where $w\neq1$ and $w^{13}=1$, r
 
  The value $(rs)^{13} - (r^{13} + s^{13}) + 1 = 2^{13} - (-128) + 1= 8321$ so the answer is $\boxed{321}$
 
- 
-
-
- 
 
 
 
@@ -1694,8 +1623,6 @@ We write the base-$b$ two-digit integer as $\left( xy \right)_b$.Thus, this numb
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }315
 
 

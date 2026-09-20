@@ -110,12 +110,11 @@ Denote the planets $A, B, C$ respectively.  Let $a(t), b(t), c(t)$ denote the an
 Examine $F - 32$ modulo 9.
 
  
-                \begin{itemize}
-                    \item If $F - 32 \equiv 0 \pmod{9}$, then we can define $9x = F - 32$. This shows that $F = \left[\frac{9}{5}\left[\frac{5}{9}(F-32)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x) + 32\right] \Longrightarrow F = 9x + 32$. This case works.\item If $F - 32 \equiv 1 \pmod{9}$, then we can define $9x + 1 = F - 32$. This shows that $F = \left[\frac{9}{5}\left[\frac{5}{9}(F-32)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x + 1) + 32\right] \Longrightarrow$$F = \left[9x + \frac{9}{5}+ 32 \right] \Longrightarrow F = 9x + 34$. So this case doesn't work.
-                \end{itemize}
-
-
-                Generalizing this, we define that $9x + k = F - 32$. Thus, $F = \left[\frac{9}{5}\left[\frac{5}{9}(9x + k)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x + \left[\frac{5}{9}k\right]) + 32\right] \Longrightarrow F = \left[\frac{9}{5} \left[\frac{5}{9}k \right] \right] + 9x + 32$. We need to find all values $0 \le k \le 8$ that $\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k$. Testing every value of $k$ shows that $k = 0, 2, 4, 5, 7$, so $5$ of every $9$ values of $k$ work.
+            \begin{itemize}
+        \item If $F - 32 \equiv 0 \pmod{9}$, then we can define $9x = F - 32$. This shows that $F = \left[\frac{9}{5}\left[\frac{5}{9}(F-32)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x) + 32\right] \Longrightarrow F = 9x + 32$. This case works.
+        \item If $F - 32 \equiv 1 \pmod{9}$, then we can define $9x + 1 = F - 32$. This shows that $F = \left[\frac{9}{5}\left[\frac{5}{9}(F-32)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x + 1) + 32\right] \Longrightarrow$$F = \left[9x + \frac{9}{5}+ 32 \right] \Longrightarrow F = 9x + 34$. So this case doesn't work.
+            \end{itemize}
+            Generalizing this, we define that $9x + k = F - 32$. Thus, $F = \left[\frac{9}{5}\left[\frac{5}{9}(9x + k)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x + \left[\frac{5}{9}k\right]) + 32\right] \Longrightarrow F = \left[\frac{9}{5} \left[\frac{5}{9}k \right] \right] + 9x + 32$. We need to find all values $0 \le k \le 8$ that $\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k$. Testing every value of $k$ shows that $k = 0, 2, 4, 5, 7$, so $5$ of every $9$ values of $k$ work.
 
  There are $\lfloor \frac{1000 - 32}{9} \rfloor = 107$ cycles of $9$, giving $5 \cdot 107 = 535$ numbers that work. Of the remaining $6$ numbers from $995$ onwards, $995,\ 997,\ 999,\ 1000$ work, giving us $535 + 4 = \boxed{539}$ as the solution.
 
@@ -138,10 +137,8 @@ Notice that $\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k$ holds 
 
  Now we use the fact that $-\frac{2}{5} \leq z \leq \frac{2}{5}$
 
- 
  \[\left[ \frac{9}{5} \left[ x - \frac{5}{9}(\frac{2}{5}) \right] \right] \leq \left[ \frac{9}{5} \left[ x + \frac{5}{9}(z) \right] \right] \leq \left[ \frac{9}{5} \left[ x + \frac{5}{9}(\frac{2}{5}) \right] \right]\]
 
- 
  \[\left[ \frac{9}{5} x \right] \leq \left[ \frac{9}{5} \left[ x + \frac{5}{9}(z) \right] \right] = \left[ \frac{9}{5} \left[ \frac{5}{9}k \right] \right] \leq \left[ \frac{9}{5}x \right]\]
 
  Hence $\left[ \frac{9}{5} \left[ \frac{5}{9}k \right] \right] = \left[ \frac{9}{5}x \right] = k$ and we are done.
@@ -218,44 +215,17 @@ Let us keep a careful tree of the possible number of paths around every multiple
  From $0 \Rightarrow 13$, we can end at either $12$ (mult. of 3) or $13$ (mult. of 13). 
 
  
-                \begin{itemize}
-                    <li>Only $1$ path leads to $12$
-                \begin{itemize}
-                    \item Continuing from $12$, there is $1 \cdot 1 = 1$ way to continue to $24$\item There are $1 \cdot \left(\frac{24-15}{3} + 1\right) = 4$ ways to reach $26$.
-                \end{itemize}
+            \begin{itemize}
+        \item Only $1$ path leads to $12$<ul><li>Continuing from $12$, there is $1 \cdot 1 = 1$ way to continue to $24$</li><li>There are $1 \cdot \left(\frac{24-15}{3} + 1\right) = 4$ ways to reach $26$.</li></ul>
+        \item There are $\frac{12 - 0}{3} + 1 = 5$ ways to reach $13$.<ul><li>Continuing from $13$, there are $5 \cdot 1 = 5$ ways to get to $24$</li><li>There are $5 \cdot \left(\frac{24-15}{3} + 1 + 1\right) = 25$ ways (the first 1 to make it inclusive, the second to also jump from $13 \Rightarrow 26$) to get to $26$.</li></ul>
+            \end{itemize}
+            Regrouping, work from $24 | 26\Rightarrow 39$
 
-
-                </li><li>There are $\frac{12 - 0}{3} + 1 = 5$ ways to reach $13$.
-                \begin{itemize}
-                    \item Continuing from $13$, there are $5 \cdot 1 = 5$ ways to get to $24$\item There are $5 \cdot \left(\frac{24-15}{3} + 1 + 1\right) = 25$ ways (the first 1 to make it inclusive, the second to also jump from $13 \Rightarrow 26$) to get to $26$.
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                Regrouping, work from $24 | 26\Rightarrow 39$
-
- 
-                \begin{itemize}
-                    <li>There are $1 + 5 = 6$ ways to get to $24$
-                \begin{itemize}
-                    \item Continuing from $24$, there are $6 \cdot \left(\frac{39 - 27}{3}\right) = 24$ ways to continue to $39$.
-                \end{itemize}
-
-
-                </li><li>There are $4 + 25 = 29$ ways to reach $26$.
-                \begin{itemize}
-                    \item Continuing from $26$, there are $29 \cdot \left(\frac{39-27}{3} + 1\right) = 145$ (note that the 1 is not to inclusive, but to count $26 \Rightarrow 39$).
-                \end{itemize}
-
-
-                </li>
-                \end{itemize}
-
-
-                In total, we get $145 + 24 = 169$.
+            \begin{itemize}
+        \item There are $1 + 5 = 6$ ways to get to $24$<ul><li>Continuing from $24$, there are $6 \cdot \left(\frac{39 - 27}{3}\right) = 24$ ways to continue to $39$.</li></ul>
+        \item There are $4 + 25 = 29$ ways to reach $26$.<ul><li>Continuing from $26$, there are $29 \cdot \left(\frac{39-27}{3} + 1\right) = 145$ (note that the 1 is not to inclusive, but to count $26 \Rightarrow 39$).</li></ul>
+            \end{itemize}
+            In total, we get $145 + 24 = 169$.
 
  
 
@@ -287,7 +257,6 @@ The ceiling of a number minus the floor of a number is either equal to zero (if 
 
  Simplifying, we get$\left[1000\left(\frac{1000+1}{2}\right) -1023\right] \mod{1000} \equiv [500-23] \mod{1000} \equiv 477 \mod{1000}.$ The answer is $\boxed{477}$
 
- 
 
 
 	\item (\textit{AIME I 2007}) The polynomial $P(x)$ is cubic.  What is the largest value of $k$ for which the polynomials $Q_1(x) = x^2 + (k-29)x - k$ and $Q_2(x) = 2x^2+ (2k-43)x + k$ are both factors of $P(x)$?
@@ -314,7 +283,6 @@ We can see that $Q_1$ and $Q_2$ must have a \href{https://artofproblemsolving.co
 
  We now prove this must be the case. If the two balls were from the same quadratic, $P$ would have to be $(x-a)^2(x-b)(x-c)$ which is a quartic and impossible, as each $Q_i$ must fully divide the three roots of $P$, so we are done. $\square$
 
- 
 
 
 
@@ -369,7 +337,6 @@ Since $Q_1(x) = x^2 + (k - 29)x - k$ and $Q_2(x) = 2x^2 + (2k - 43)x + k$ are bo
 
  Finally, comparing the $x$ coefficients:$a(k - 29) - 2k = (2k - 43) b + k,$which becomes$5(k - 29) - 2k = (2k - 43)(-5) + k,$simplifying to$3k - 145 = -9k + 215.$Solving for $k$ yields$12k = 360 \implies \boxed{30}.$
 
- 
 
 
 	\item (\textit{AIME I 2007}) In right triangle $ABC$ with right angle $C$, $CA = 30$ and $CB = 16$.  Its legs $CA$ and $CB$ are extended beyond $A$ and $B$.  Points $O_1$ and $O_2$ lie in the exterior of the triangle and are the centers of two circles with equal radii.  The circle with center $O_1$ is tangent to the hypotenuse and to the extension of leg $CA$, the circle with center $O_2$ is tangent to the hypotenuse and to the extension of leg $CB$, and the circles are externally tangent to each other.  The length of the radius of either circle can be expressed as $p/q$, where $p$ and $q$ are relatively prime positive integers.  Find $p+q$.
@@ -464,12 +431,9 @@ Let the point where CB's extension hits the circle be G, and the point where the
  The linear dimensions of the new triangle are $\frac{46s}{34s}=\frac{23}{17}$ times the size of the original.  The problem's 16-30-34 triangle sits above the circles.  Equate heights and solve for $r=6s$:
 
  <div style="text-align:center;">$\frac{240s}{17}\times\frac{23}{17} =  \frac{240}{17}+12s$
-
- $20s\times 23 =  20\times 17+s\times 17\times 17$
-
- $s = \frac{340}{171}$
-
- $r = 6s = \frac{680}{57}$</div>The answer is $737$.
+$20s\times 23 =  20\times 17+s\times 17\times 17$
+$s = \frac{340}{171}$
+$r = 6s = \frac{680}{57}$</div>The answer is $737$.
 
  
 
@@ -493,8 +457,7 @@ Let the point where CB's extension hits the circle be G, and the point where the
 \textbf{Solution 7}
 
 A different approach is to plot the triangle on the Cartesian Plane with $C$ at $(0,0)$, $A$ at $(0,30)$, and $B$ at $(16,0)$. We wish to find the coordinates of $O_1$ and $O_2$ in terms of the radius, which will be expressed as $r$ in the rest of this solution. When we know the coordinates, we will set the distance between the 2 points equal to $2r$. All points $r$ units away from $\overline{AB}$ are on the line with slope $-\frac{15}{8}$, and y-intercept $30+ \frac{17}{8} r$
-
- $O_1$ will have x-coordinate $r$ and likewise $O_2$ will have y-coordinate $r$plugging this into the equation for the line mentioned in the sentence above gives us:
+$O_1$ will have x-coordinate $r$ and likewise $O_2$ will have y-coordinate $r$plugging this into the equation for the line mentioned in the sentence above gives us:
 
  $O_1 = \left(r,\frac14 r+30\right)$ and $O_2 = \left(\frac35 r+16,r\right)$
 
@@ -506,7 +469,6 @@ A different approach is to plot the triangle on the Cartesian Plane with $C$ at 
 
  Which simplifies to $\frac{680}{57}$. The sum of the numerator and the denominator is $\boxed{737}$
 
- 
 
 
 
@@ -541,8 +503,6 @@ Let the radius of the circle be $r$. It can be seen that $\Delta FHO_{1}$ and $\
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }860
 
 
@@ -554,24 +514,18 @@ Consider the first column.  There are ${6\choose3} = 20$ ways that the rows coul
  Now consider the 3x3 that is next to the 3 boxes we have filled in.  We must put one ball in each row (since there must be 2 balls in each row and we've already put one in each).  We split into three cases:
 
  
-                \begin{itemize}
-                    \item All three balls are in the same column.  In this case, there are $3$ choices for which column that is.  From here, the bottom half of the board is fixed.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item Two balls are in one column, and one is in the other.  In this case, there are 3 ways to choose which column gets 2 balls and 2 ways to choose which one gets the other ball.  Then, there are 3 ways to choose which row the lone ball is in.  Now, what happens in the bottom half of the board?  Well, the 3 boxes in the column with no balls in the top half must all be filled in, so there are no choices here.  In the column with two balls already, we can choose any of the 3 boxes for the third ball.  This forces the location for the last two balls.  So we have $3 \cdot 2 \cdot 3 \cdot 3 = 54$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item All three balls are in different columns.  Then there are 3 ways to choose which row the ball in column 2 goes and 2 ways to choose where the ball in column 3 goes.  (The location of the ball in column 4 is forced.)  Again, we think about what happens in the bottom half of the board.  There is 1 ball in each of the columns 1, 2, and 3 now, so in the 3x3 where we still have choices, each row and column has one square that is \textbf{not} filled in. Similar to the upper 3x3, there are 6 ways to do this.  So there are $3 \cdot 2 \cdot 6 = 36$ ways.
-                \end{itemize}
-
-
-                Therefore there are 
+            \begin{itemize}
+        \item All three balls are in the same column.  In this case, there are $3$ choices for which column that is.  From here, the bottom half of the board is fixed.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item Two balls are in one column, and one is in the other.  In this case, there are 3 ways to choose which column gets 2 balls and 2 ways to choose which one gets the other ball.  Then, there are 3 ways to choose which row the lone ball is in.  Now, what happens in the bottom half of the board?  Well, the 3 boxes in the column with no balls in the top half must all be filled in, so there are no choices here.  In the column with two balls already, we can choose any of the 3 boxes for the third ball.  This forces the location for the last two balls.  So we have $3 \cdot 2 \cdot 3 \cdot 3 = 54$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item All three balls are in different columns.  Then there are 3 ways to choose which row the ball in column 2 goes and 2 ways to choose where the ball in column 3 goes.  (The location of the ball in column 4 is forced.)  Again, we think about what happens in the bottom half of the board.  There is 1 ball in each of the columns 1, 2, and 3 now, so in the 3x3 where we still have choices, each row and column has one square that is \textbf{not} filled in. Similar to the upper 3x3, there are 6 ways to do this.  So there are $3 \cdot 2 \cdot 6 = 36$ ways.
+            \end{itemize}
+            Therefore there are 
 
  
 
@@ -608,10 +562,6 @@ $\left(k- \frac 12\right)^2=k^2-k+\frac 14$ and $\left(k+ \frac 12\right)^2=k^2+
                     \end{figure}
                     
 
- 
-
-
- 
 
 
 
@@ -695,38 +645,31 @@ Redefine the points in the same manner as the last time ($\triangle AB'C'$, inte
 From the given information, calculate the coordinates of all the points (by finding the equations of the lines, equating). Then, use the \href{https://artofproblemsolving.com/wiki/index.php?title=Shoelace}{shoelace} method to calculate the area of the intersection.
 
  
-                \begin{itemize}
-                    \item $\overline{AC}$: $y = (\tan 75) x = (2 + \sqrt{3})x$\item $\overline{AB'}$: $y = (\tan 15) x = (2 - \sqrt{3})x$\item $\overline{BC}$: It passes thru $(20,0)$, and has a slope of $-\tan75 = -(2 + \sqrt{3})$. The equation of its line is  $y = (2+\sqrt{3})(20 - x)$.\item $\overline{B'C'}$: $AC' = AC = \frac{10}{\cos 75} = 10\sqrt{6} + 10\sqrt{2}$, so it passes thru point $(0, 10\sqrt{6} + 10\sqrt{2})$. It has a slope of $-\tan 60 = -\sqrt{3}$. So the equation of its line is $y = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})$.
-                \end{itemize}
-
-
-                Now, we can equate the equations to find the intersections of all the points.
+            \begin{itemize}
+        \item $\overline{AC}$: $y = (\tan 75) x = (2 + \sqrt{3})x$
+        \item $\overline{AB'}$: $y = (\tan 15) x = (2 - \sqrt{3})x$
+        \item $\overline{BC}$: It passes thru $(20,0)$, and has a slope of $-\tan75 = -(2 + \sqrt{3})$. The equation of its line is  $y = (2+\sqrt{3})(20 - x)$.
+        \item $\overline{B'C'}$: $AC' = AC = \frac{10}{\cos 75} = 10\sqrt{6} + 10\sqrt{2}$, so it passes thru point $(0, 10\sqrt{6} + 10\sqrt{2})$. It has a slope of $-\tan 60 = -\sqrt{3}$. So the equation of its line is $y = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})$.
+            \end{itemize}
+            Now, we can equate the equations to find the intersections of all the points.
 
  
-                \begin{itemize}
-                    \item $A (0,0)$
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $D$ is the intersection of $\overline{BC},\ \overline{B'C'}$. $(2+\sqrt{3})(20-x) = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})$. Therefore, $x = 5(4 + 2\sqrt{3}-\sqrt{6}-\sqrt{2})$, $y = 5(3\sqrt{6} + 5\sqrt{2}-4\sqrt{3}-6)$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $E$ is the intersection of $\overline{AB'},\ \overline{BC}$. $(2 - \sqrt{3})x =(2+\sqrt{3})(20-x)$. Therefore, $x = 5(2+\sqrt{3})$, $y = 5$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $F$ is the intersection of $\overline{AC},\ \overline{B'C'}$. $(2+\sqrt{3})x = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})$. Therefore, $x = 5\sqrt{2}$, $y = 10\sqrt{2}+ 5\sqrt{6}$.
-                \end{itemize}
-
-
-                We take these points and tie them together by shoelace, and the answer should come out to be $\boxed{875}$.
+            \begin{itemize}
+        \item $A (0,0)$
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $D$ is the intersection of $\overline{BC},\ \overline{B'C'}$. $(2+\sqrt{3})(20-x) = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})$. Therefore, $x = 5(4 + 2\sqrt{3}-\sqrt{6}-\sqrt{2})$, $y = 5(3\sqrt{6} + 5\sqrt{2}-4\sqrt{3}-6)$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $E$ is the intersection of $\overline{AB'},\ \overline{BC}$. $(2 - \sqrt{3})x =(2+\sqrt{3})(20-x)$. Therefore, $x = 5(2+\sqrt{3})$, $y = 5$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $F$ is the intersection of $\overline{AC},\ \overline{B'C'}$. $(2+\sqrt{3})x = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})$. Therefore, $x = 5\sqrt{2}$, $y = 10\sqrt{2}+ 5\sqrt{6}$.
+            \end{itemize}
+            We take these points and tie them together by shoelace, and the answer should come out to be $\boxed{875}$.
 
  
 
@@ -798,8 +741,7 @@ Use the same coordinate system as above, and let the plane determined by $\trian
  Using the same principle, we can get that $|\triangle{IYR}|=\frac{1}{6}|\triangle{PHI}|$
 
  Therefore, the area of $PYRQX$ is $\frac{2}{3}\cdot|\triangle{PHI}|$
-
- $\overline{RQ}=2\sqrt{2}$, so $\overline{IH}=6\sqrt{2}$. Using the law of cosines, $\overline{PH}=\sqrt{28}$. The area of $\triangle{PHI}=\frac{1}{2}\cdot\sqrt{28-18}\cdot6\sqrt{2}=6\sqrt{5}$
+$\overline{RQ}=2\sqrt{2}$, so $\overline{IH}=6\sqrt{2}$. Using the law of cosines, $\overline{PH}=\sqrt{28}$. The area of $\triangle{PHI}=\frac{1}{2}\cdot\sqrt{28-18}\cdot6\sqrt{2}=6\sqrt{5}$
 
  Using this, we can get the area of $PYRQX = \sqrt{80}$ so the answer is $\fbox{080}$.
 
@@ -814,8 +756,6 @@ Use the same coordinate system as above, and let the plane determined by $\trian
 
  Find the greatest integer that does not exceed $\frac{a_{2006}^{2}+a_{2007}^{2}}{a_{2006}a_{2007}}$
 
-
- 
  \textbf{Answer: }224
 
 
@@ -896,10 +836,8 @@ The equation $a_{n+1}a_{n-1}-a_n^2=2007$ looks like the determinant
  
  \[\frac{a_{2007}^2+a_{2006}^2}{a_{2007}a_{2006}}=\frac{a_{2007}}{a_{2006}}+\frac{a_{2006}}{a_{2007}}=\frac{225a_{2006}-a_{2005}}{a_{2006}}+\frac{a_{2006}}{a_{2007}}.\]
 
- 
  \[=225+\frac{a_{2006}}{a_{2007}}-\frac{a_{2005}}{a_{2006}}=225+\frac{a_{2006}^2-a_{2005}a_{2007}}{a_{2005}a_{2006}}.\]
 
- 
  \[=225-\frac{2007}{a_{2005}a_{2006}}.\]
 
  The sequence certainly grows fast enough such that $\frac{2007}{a_{2005}a_{2006}}<1$. Therefore, the largest integer less than or equal to this value is $\boxed{224}$.
@@ -963,7 +901,6 @@ We will try to manipulate $\frac{a_0^2+a_1^2}{a_0a_1}$ to get $\frac{a_1^2+a_2^2
 
  The greatest number that does not exceed this is $\boxed{224}$
 
- 
 
 
 
@@ -1005,14 +942,10 @@ Let's start by computing the first couple terms of the given sequence so we know
  $\angle FEC$ is an \href{https://artofproblemsolving.com/wiki/index.php?title=Exterior\_angle}{exterior angle} to $\triangle AEF$, from which we find that $60 + \angle CED = 60 + \angle AFE$, so $\angle CED = \angle AFE$. Similarly, we find that $\angle EDC = \angle AEF$. Thus, $\triangle AEF \sim \triangle CDE$. Setting up a \href{https://artofproblemsolving.com/wiki/index.php?title=Ratio}{ratio} of sides, we get that $\frac{5}{x-y} = \frac{y}{2}$. Using the previous relationship between $x$ and $y$, we can solve for $x$.
 
  <div style="text-align:center;">$xy - y^2 = 10$
-
- $\frac{5}{3}x^2 - 22x - \left(\frac{5}{3}x - 22\right)^2 - 10 = 0$
-
- $\frac{5}{3}x^2 - \frac{25}{9}x^2 - 22x + 2 \cdot \frac{5 \cdot 22}{3}x - 22^2 - 10= 0$
-
- $10x^2 - 462x + 66^2 + 90 = 0$
-
- </div>Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_formula}{quadratic formula}, though we only need the root of the \href{https://artofproblemsolving.com/wiki/index.php?title=Discriminant}{discriminant}. This is $\sqrt{(7 \cdot 66)^2 - 4 \cdot 10 \cdot (66^2 + 90)} = \sqrt{49 \cdot 66^2 - 40 \cdot 66^2 - 4 \cdot 9 \cdot 100}$$= \sqrt{9 \cdot 4 \cdot 33^2 - 9 \cdot 4 \cdot 100} = 6\sqrt{33^2 - 100}$. The answer is $\boxed{989}$.
+$\frac{5}{3}x^2 - 22x - \left(\frac{5}{3}x - 22\right)^2 - 10 = 0$
+$\frac{5}{3}x^2 - \frac{25}{9}x^2 - 22x + 2 \cdot \frac{5 \cdot 22}{3}x - 22^2 - 10= 0$
+$10x^2 - 462x + 66^2 + 90 = 0$
+</div>Use the \href{https://artofproblemsolving.com/wiki/index.php?title=Quadratic\_formula}{quadratic formula}, though we only need the root of the \href{https://artofproblemsolving.com/wiki/index.php?title=Discriminant}{discriminant}. This is $\sqrt{(7 \cdot 66)^2 - 4 \cdot 10 \cdot (66^2 + 90)} = \sqrt{49 \cdot 66^2 - 40 \cdot 66^2 - 4 \cdot 9 \cdot 100}$$= \sqrt{9 \cdot 4 \cdot 33^2 - 9 \cdot 4 \cdot 100} = 6\sqrt{33^2 - 100}$. The answer is $\boxed{989}$.
 
  
 
@@ -1024,10 +957,6 @@ First of all, assume $EC=x,BD=m, ED=a, EF=b$, then we can find $BF=m-3, AE=2+m-x
 
  According to basic angle chasing, $\angle{A}=\angle{C}; \angle{AFE}=\angle{CED}$, so $\triangle{AFE}\sim \triangle{CED}$, the ratio makes $\frac{5}{x}=\frac{2+m-x}{2}$, getting that $x^2-(2+m)x+10=0$Now we have two equations with $m$, and $x$ values for both equations must be the same, so we can solve for $x$ in two equations.$x=\frac{2m+1 \pm \sqrt{4m^2+4m+1-16m+336}}{4}; x=\frac{4+2m \pm \sqrt{4m^2+16m-144}}{4}$, then we can just use positive sign to solve, simplifies to $3+\sqrt{4m^2+16m-144}=\sqrt{4m^2-12m+337}$, getting $m=\frac{211-3\sqrt{989}}{10}$, since the triangle is equilateral, $AB=BC=2+m=\frac{231-3\sqrt{989}}{10}$, and the desired answer is $\boxed{989}$
 
- 
-
-
- 
 
 
 \end{enumerate}

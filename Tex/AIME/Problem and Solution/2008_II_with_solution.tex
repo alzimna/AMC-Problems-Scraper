@@ -48,7 +48,6 @@ Since we want the remainder when $N$ is divided by $1000$, we may ignore the $10
  \begin{align*} N &= (99-98)(99+98) - (97-96)(97+96) + (95-94)(95 + 94) + \cdots + (3-2)(3+2) - 1 \\ &= \underbrace{197 - 193}_4 + \underbrace{189 - 185}_4 + \cdots + \underbrace{5 - 1}_4 \\  &= 4 \cdot \left(\frac{197-5}{8}+1\right) = \boxed{100} \end{align*}
 
 
- 
 
 
 
@@ -125,7 +124,6 @@ Let Rudolf bike at a rate $r$, so Jennifer bikes at the rate $\dfrac 34r$. Let t
  \begin{align*}50 \cdot \frac{3}{4(t-245)} &= 50 \cdot \frac{1}{t-120}\\ \frac{1}{3}t &= \frac{245 \cdot 4}{3} - 120\\ t &= \boxed{620}\ \text{minutes} \end{align*}
 
 
- 
 
 
 
@@ -169,7 +167,6 @@ A more intuitive way to solve it is by seeing that to keep the volume of the rec
 
  So the greatest possible volume is thus $9 \times 9 \times 9 = \boxed{729}$
 
- 
 
 
 	\item (\textit{AIME II 2008}) There exist $r$ unique nonnegative integers $n_1 > n_2 > \cdots > n_r$ and $r$ integers $a_k$ ($1\le k\le r$) with each $a_k$ either $1$ or $- 1$ such that
@@ -197,7 +194,6 @@ In base $3$, we find that $\overline{2008}_{10} = \overline{2202101}_{3}$. In ot
 
  Note : Solution by bounding is also possible, namely using the fact that $1+3+3^2 + \cdots + 3^{n} =\frac{3^{n+1}-1}{2}.$
 
- 
 
 
 
@@ -205,7 +201,6 @@ In base $3$, we find that $\overline{2008}_{10} = \overline{2202101}_{3}$. In ot
 
 Notice $2008$ has $7$ digits in base 3. Therefore, we can add $1093=1111111_3$ to get $3101=11020212_3$. Subtracting $1093$ back from this, we find $2008 = 1 0 (-1) 1 (-1) 1 0 1_3$. We need to sum the exponents of the non-zero digits of this number, so our answer is $7+5+4+3+2+0=\boxed{021}$
 
- 
 
 
 	\item (\textit{AIME II 2008}) In trapezoid $ABCD$ with $\overline{BC}\parallel\overline{AD}$, let $BC = 1000$ and $AD = 2008$. Let $\angle A = 37^\circ$, $\angle D = 53^\circ$, and $M$ and $N$ be the midpoints of $\overline{BC}$ and $\overline{AD}$, respectively. Find the length $MN$.
@@ -298,7 +293,6 @@ Now, if we can find $1004 - (EA + 500)$, and the height of the trapezoid, we can
  
  \[504\sqrt{\cos^2{106} + \sin^2{106}} =\fbox{504}.\]
 
- 
 
 
 
@@ -338,7 +332,6 @@ Obviously, these angles are random--the only special thing about them is that th
 Let the height be h. Note that if $\overline{NH} = x$ then if we draw perpendiculars like in solution 1, $\overline{FN} = 500 - x, \overline{AF} = 504 + x, \overline{HG} = 500, \overline{GD} = 504 - x.$ Note that we wish to find $\overline{MN} = \sqrt{x^2 + h^2}.$ Let's find $\tan(53)$ in two ways. Finding $\tan(53)$ from $\triangle BAF$ yields $\tan(53) = \frac{504+x}{h}.$ Finding it from $\triangle CDG$ yields $\frac{h}{504-x}.$ Setting these equal yields 
  \[\frac{504+x}{h}=\frac{h}{504-x} \rightarrow h^2 = 504^2-x^2 \rightarrow \sqrt{x^2+h^2} = \sqrt{504^2} = \boxed{504}\]
 
- 
 
 
 
@@ -346,10 +339,6 @@ Let the height be h. Note that if $\overline{NH} = x$ then if we draw perpendicu
 
 Rotate trapezoid $MNCD$ 180 degrees around point $N$ so that $AN$ coincides with $ND$. Let the image of trapezoid $MNCD$ be $ANM'C'$. Since angles are preserved during rotations, $\angle BAC' = 37^{\circ} + 53 ^{\circ} =90 ^{\circ}$. Since $BM=CM=C'M'$ and $BM || C'M'$, $BMM'C'$ is a parallelogram. Thus, $MM'=BC'$.Let the point where $BC'$ intersects $AD$ be $E$. Since $BMNE$ is a parallelogram, $AE=AN-BM=1004-500-504$. Since $BE=EC$ and $\angle BAC= 90^{\circ}$, $AE$ is a median to the hypotenuse of $BAC'$. Therefore, $BC'=2 AE= 1008$, and $BE=MN=\boxed{504}.$
 
- 
-
-
- 
 
 
 
@@ -434,7 +423,6 @@ By \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formul
  \[(r + s)^3 - r^3 - s^3 = 3r^2s + 3rs^2 = 3rs(r + s).\] Also by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's formulas} we have 
  \[rst = -rs(r + s) = -\dfrac{2008}{8} = -251\] so negating both sides and multiplying through by 3 gives our answer of $\boxed{753}.$
 
- 
 
 
 
@@ -443,7 +431,6 @@ By \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formul
 By \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's formulas}, we have $r+s+t = 0$, and so the desired answer is $(r+s)^3 + (s+t)^3 + (t+r)^3 = (0-t)^3 + (0-r)^3 + (0-s)^3 = -(r^3 + s^3 + t^3)$. Additionally, using the factorization
  \[r^3 + s^3 + t^3 - 3rst = (r+s+t)(r^2 + s^2 + t^2 - rs - st - tr) = 0\]we have that $r^3 + s^3 + t^3 = 3rst$. By Vieta's again, $rst = \frac{-2008}8 = -251 \Longrightarrow -(r^3 + s^3 + t^3) = -3rst = \boxed{753}.$
 
- 
 
 
 
@@ -472,7 +459,6 @@ Expanding, you get:
  \[0^3 - 6rst + r^3+s^3+t^3 =  -(r^3 + s^3 + t^3) \implies 2(r^3 + s^3 + t^3) = 6rst\]We are trying to find $-(r^3 + s^3 + t^3)$.Substituting:
  \[-(r^3 + s^3 + t^3) = -3srt = \frac{-2008*3}{8} = \boxed{753}.\]
 
- 
 
 
 
@@ -481,7 +467,6 @@ Expanding, you get:
 Write $(r+s)^3+(s+t)^3+(t+r)^3=-(r^3+s^3+t^3)$ and let $f(x)=8x^3+1001x+2008$. Then 
  \[f(r)+f(s)+f(t)=8(r^3+s^3+t^3)+1001(r+s+t)+6024=8(r^3+s^3+t^3)+6024=0.\] Solving for $r^3+s^3+t^3$ and negating the result yields the answer $\boxed{753}.$
 
- 
 
 
 
@@ -496,7 +481,6 @@ Here by \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_f
  So 
  \[a^3+b^3+c^3 = 3abc = 3(r+s)(s+t)(t+r) = 3(-t)(-r)(-s) = 3[-(-251)] = \boxed{753}.\]
 
- 
 
 
 
@@ -511,14 +495,12 @@ Let's construct a polynomial with the roots $(r+s), (s+t),$ and $(t+r)$.
  pairwise product of the roots:
 
  $(r+s)(s+t)+(s+t)(t+r)+(t+r)(r+s)=r^2+s^2+t^2+3(rs+st+tr)$
-
- $=(r+s+t)^2+rs+st+tr=0+\frac{1001}{8}$
+$=(r+s+t)^2+rs+st+tr=0+\frac{1001}{8}$
 
  product of the roots:
 
  $(r+s)(s+t)(t+r)=r^2t+r^2s+s^2r+s^2t+t^2r+t^2s+3rst$
-
- $=(rs+st+tr)(r+s+t)-3rst+2rst=-rst=-\frac{2008}{8}$
+$=(rs+st+tr)(r+s+t)-3rst+2rst=-rst=-\frac{2008}{8}$
 
  thus, the polynomial we get is
 
@@ -527,16 +509,13 @@ Let's construct a polynomial with the roots $(r+s), (s+t),$ and $(t+r)$.
  as $(r+s), (s+t),$ and $(t+r)$ are roots of this polynomial, we know that (using power reduction)
 
  $(r+s)^3+\frac{1001}{8}(r+s)-\frac{2008}{8}=0$
-
- $(s+t)^3+\frac{1001}{8}(s+t)-\frac{2008}{8}=0$
-
- $(t+r)^3+\frac{1001}{8}(t+r)-\frac{2008}{8}=0$
+$(s+t)^3+\frac{1001}{8}(s+t)-\frac{2008}{8}=0$
+$(t+r)^3+\frac{1001}{8}(t+r)-\frac{2008}{8}=0$
 
  adding all of the equations up, we see that
 
  $(r+s)^3+(s+t)^3+(t+r)^3=3\cdot\frac{2008}{8}-\frac{1001}{8}(2r+2s+2t)=251(3)+0=\boxed{753}$
 
- 
 
 
 
@@ -544,7 +523,6 @@ Let's construct a polynomial with the roots $(r+s), (s+t),$ and $(t+r)$.
 
 We want to find what is $-(r^3+s^3+t^3)$ which reminds us of Newton sum. So we can see that $8S_3+0\cdot S_2+1001\cdot S_1+3\cdot 2008=0$ Notice that $S_1=0$ so it is just $S_3=-\frac{2008\cdot 3}{8}=-753$, the desired answer is $\boxed{753}$
 
- 
 
 
 
@@ -570,7 +548,6 @@ This solution uses Vietas, as with everyone else's solution.Expanding the expres
  
  \[(r+s)^3+(s+t)^3+(t+r)^3=0-3rst+0=-3\cdot -251=\boxed{753}\]
 
- 
 
 
 
@@ -585,12 +562,10 @@ $8x^3+1001x+2008=0$
  Expanding and rearranging gives us $n=(r+s)^3+(s+t)^3+(t+r)^3=r^3+3r^2s+3rs^2+s^3+s^3+3s^2t+3st^2+t^3+t^3+3t^2r+3tr^2+r^3=2r^3+2s^3+3r^2s+3rs^2+3s^2t+3st^2+3t^2r+3tr^2=3(r^3+s^3+t^3-(r^2s+rs^2+s^2t+st^2+t^2r+tr^2))-(r^3+s^3+t^3)=3((r+s+t)(r^2+s^2+t^2))-((r+s+t)^3-3(r^2s+rs^2+s^2t+st^2+t^2r+tr^2)-6rst)=3(r+s+t)((r+s+t)^2-2(rs+st+tr))-((r+s+t)^3-3(r^2s+rs^2+s^2t+st^2+t^2r+tr^2)-6rst)$
 
  Let $k=r^2s+rs^2+s^2t+st^2+t^2r+tr^2$
-
- $k=r^2s+rs^2+s^2t+st^2+t^2r+tr^2=(r+s+t)(r^2+s^2+t^2)-(r^3+s^3+t^3)=(r+s+t)((r+s+t)^2-2(rs+st+tr))-((r+s+t)^3-3k-6rst)=(0)(0^2-2(1001/8))-(0^3-3k-6(-251))=0-(0-3k+1506)=3k-1506$
+$k=r^2s+rs^2+s^2t+st^2+t^2r+tr^2=(r+s+t)(r^2+s^2+t^2)-(r^3+s^3+t^3)=(r+s+t)((r+s+t)^2-2(rs+st+tr))-((r+s+t)^3-3k-6rst)=(0)(0^2-2(1001/8))-(0^3-3k-6(-251))=0-(0-3k+1506)=3k-1506$
 
  Solving gives us $k=753$
-
- $n=3(r+s+t)((r+s+t)^2-2(rs+st+tr))-((r+s+t)^3-3(r^2s+rs^2+s^2t+st^2+t^2r+tr^2)-6rst)=3(0)(0^2-2(1001/8))-(0^3-3k-6(-251))=0-(0-3(753)+1506)=753$
+$n=3(r+s+t)((r+s+t)^2-2(rs+st+tr))-((r+s+t)^3-3(r^2s+rs^2+s^2t+st^2+t^2r+tr^2)-6rst)=3(0)(0^2-2(1001/8))-(0^3-3k-6(-251))=0-(0-3(753)+1506)=753$
 
  Therefore, the answer is $753.$
 
@@ -625,24 +600,17 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Trigonometric\
 \textbf{Solution 2}
 
 We proceed with complex trigonometry. We know that for all $\theta$, we have $\cos \theta = \dfrac{1}{2} \left( z + \dfrac{1}{z} \right)$ and $\sin \theta = \dfrac{1}{2i} \left( z - \dfrac{1}{z} \right)$ for some complex number $z$ on the unit circle. Similarly, we have $\cos n \theta = \dfrac{1}{2} \left( z^n + \dfrac{1}{z^n} \right)$ and $\sin n \theta = \dfrac{1}{2i} \left(z^n - \dfrac{1}{z^n} \right)$. Thus, we have $\cos n^2 a \sin n a = \dfrac{1}{4i} \left( z^{n^2} + \dfrac{1}{z^{n^2}} \right) \left( z^{n} - \dfrac{1}{z^n} \right)$
-
- $= \dfrac{1}{4i} \left( z^{n^2 + n} - \dfrac{1}{z^{n^2 + n}} - z^{n^2 - n} + \dfrac{1}{z^{n^2 - n}} \right)$
-
- $= \dfrac{1}{2} \left( \dfrac{1}{2i} \left(z^{n^2 + n} - \dfrac{1}{z^{n^2 + n}} \right) - \dfrac{1}{2i} \left(z^{n^2 - n} - \dfrac{1}{z^{n^2 - n}} \right) \right)$
-
- $= \dfrac{1}{2} \left( \sin ((n^2 + n)a) - \sin ((n^2 - n)a) \right)$
-
- $= \dfrac{1}{2} \left( \sin(((n+1)^2 - (n+1))a) - \sin((n^2 - n)a) \right)$
+$= \dfrac{1}{4i} \left( z^{n^2 + n} - \dfrac{1}{z^{n^2 + n}} - z^{n^2 - n} + \dfrac{1}{z^{n^2 - n}} \right)$
+$= \dfrac{1}{2} \left( \dfrac{1}{2i} \left(z^{n^2 + n} - \dfrac{1}{z^{n^2 + n}} \right) - \dfrac{1}{2i} \left(z^{n^2 - n} - \dfrac{1}{z^{n^2 - n}} \right) \right)$
+$= \dfrac{1}{2} \left( \sin ((n^2 + n)a) - \sin ((n^2 - n)a) \right)$
+$= \dfrac{1}{2} \left( \sin(((n+1)^2 - (n+1))a) - \sin((n^2 - n)a) \right)$
 
  which clearly telescopes! Since the $2$ outside the brackets cancels with the $\dfrac{1}{2}$ inside, we see that the sum up to $n$ terms is 
 
  $\sin ((2^2 - 2)a) - \sin ((1^2 - 1)a) + \sin ((3^3 - 3)a) - \sin ((2^2 - 2)a) \cdots + \sin (((n+1)^2 - (n+1))a) - \sin ((n^2 - n)a)$
-
- $= \sin (((n+1)^2 - (n+1))a) - \sin(0)$
-
- $= \sin ((n^2 + n)a) - 0$
-
- $= \sin \left( \dfrac{n(n+1) \pi}{2008} \right)$.
+$= \sin (((n+1)^2 - (n+1))a) - \sin(0)$
+$= \sin ((n^2 + n)a) - 0$
+$= \sin \left( \dfrac{n(n+1) \pi}{2008} \right)$.
 
  This expression takes on an integer value iff $\dfrac{2n(n+1)}{2008} = \dfrac{n(n+1)}{1004}$ is an integer; that is, $1004 \mid n(n+1)$. Clearly, $1004 = 2^2 \cdot 251$, implying that $251 \mid n(n+1)$. Since we want the smallest possible value of $n$, we see that we must have ${n,n+1} = 251$. If $n+1 = 251 \rightarrow n=250$, then we have $n(n+1) = 250(251)$, which is clearly not divisible by $1004$. However, if $n = 251$, then $1004 \mid n(n+1)$, so our answer is $\boxed{251}$.
 
@@ -689,7 +657,6 @@ Let the particle's position be represented by a complex number. Recall that mult
 
  $5\sqrt {2} + 5(\sqrt {2} + 1) \approx 19.1 \Longrightarrow \boxed{019}$
 
- 
 
 
 
@@ -865,7 +832,6 @@ Call the two flagpoles Flagpole A and Flagpole B.Case 1:Flag distribution: 1|18B
 
 Let the number of blue flags on the first flagpole be $b$ and define $g$ similarly. Now note the bound $g \le b+1.$ Now we cannot have any two consecutive greens. This condition is the same as "there are $b+1$ spaces between each blue flag. How many ways can we put the $g$ green flags in the $b+1$ spaces?" Therefore given $b$ blue flags on the first flagpole and $g$ green flags on the first flagpole we have a total of $\binom{b+1}{g}.$ Similarly there are $\binom{11-b}{9-g}$ ways for the second flagpole. Summing over all possible possibilities we see the sum is $\sum_{g = 0}^{b+1} \sum_{b=0}^{10}\binom{b+1}{g}\binom{11-b}{9-g}.$ Swapping the sum we have $\sum_{g = 0}^{b+1} \sum_{b=0}^{10}\binom{b+1}{g}\binom{11-b}{9-g} = \sum_{b=0}^{10} \sum_{g = 0}^{b+1}\binom{b+1}{g}\binom{11-b}{9-g}.$ Then applying Vandermonde's yields $\sum_{b=0}^{10}\binom{12}{9}$ so the sum is $11 \cdot\binom{12}{9}.$ However, this answer overcounts. We cannot have no flags on a pole, so we subtract $2 \cdot\binom{11}{9}$ since we can have empty flags for the first or second flag. Therefore the answer is $11 \cdot\binom{12}{9} - 2 \cdot\binom{11}{9} \pmod{1000} \equiv \boxed{310} \pmod{1000}.$
 
- 
 
 
 
@@ -891,7 +857,6 @@ Consider this as arranging the flags on one big flagpole, then splitting the fla
  Thus the total number of ways is
  \[\binom{11}{2}\cdot 18 + \binom{11}{3}\cdot 8 = 2310 \equiv \boxed{310} \pmod{1000}.\]
 
- 
 
 
 
@@ -973,10 +938,8 @@ We can describe the line parallel to the imaginary axis $x=\frac{1}{2}$ using po
  Thankfully, this is a routine computation:
 
  $[S] = 12\int_{0}^{\frac{\pi}{6}}2(\cos\theta)^2 d\theta = 12\int_{0}^{\frac{\pi}{6}}(\cos{2\theta}+1)d\theta$
-
- $[S] = 12\int_{0}^{\frac{\pi}{6}}(\cos{2\theta}+1)d\theta = 12\left[\frac{1}{2}\sin{2\theta}+\theta\right]_0^{\frac{\pi}{6}}=12\left(\frac{\sqrt{3}}{4}+\frac{\pi}{6}\right)=2\pi+3\sqrt{3}=2\pi + \sqrt{27}$
-
- $a+b = \boxed{029}$.
+$[S] = 12\int_{0}^{\frac{\pi}{6}}(\cos{2\theta}+1)d\theta = 12\left[\frac{1}{2}\sin{2\theta}+\theta\right]_0^{\frac{\pi}{6}}=12\left(\frac{\sqrt{3}}{4}+\frac{\pi}{6}\right)=2\pi+3\sqrt{3}=2\pi + \sqrt{27}$
+$a+b = \boxed{029}$.
 
  
 
@@ -1052,7 +1015,6 @@ Consider a \href{https://artofproblemsolving.com/wiki/index.php?title=Cyclic\_qu
 
  \textbf{Note:} None of the above solutions point out clearly the importance of the restriction that $a$, $b$, $x$ and $y$ be positive. Indeed, larger values of p are obtained when the lower vertex of the equilateral triangle in Solution 2 dips below the x-axis. Take for example $-15= \theta$. This yields $p = (1 + \sqrt{3})/2 > 4/3$
 
- 
 
 
 
@@ -1062,7 +1024,6 @@ The problem is looking for an intersection in the said range between parabola $P
  \[(\sqrt{a^2 - b^2}-a)^2 + b^2-a^2 \geq 0\]Divide both side by $b^2$,
  \[(\sqrt{\rho^2 - 1}-\rho)^2 + 1-\rho^2 \geq 0\]which can be easily solved by moving $1-\rho^2$ to RHS and taking square roots. Final answer $\rho^2 \leq \frac{4}{3}$$\boxed{007}$
 
- 
 
 
 
@@ -1084,7 +1045,6 @@ Notice that by Pythagorean theorem, if we take a triangle with vertices $(0,0),$
  \[\frac{a}{b} = \frac{\cos (30^{\circ}-\alpha)}{\cos \alpha}.\] We see that this expression is maximized when $\alpha$ is maximized (at least when $\alpha$ is in the interval $(0,90^{\circ}),$ which it is). Then, $\alpha \ge 30^{\circ},$ so ew have that the maximum of $\frac{a}{b}$ is 
  \[\frac{\cos 0}{\cos 30^{\circ}} = \frac{2}{\sqrt{3}},\] and so our answer is $4+3 = 7.$
 
- 
 
 
 
@@ -1096,10 +1056,6 @@ As the previous solutions pointed out, we have that the triangle with vertices $
  \[(a,b)=\left(1,\dfrac{\sqrt{3}}{2}\right)\] is optimal, so our answer is
  \[\left(\dfrac{2}{\sqrt{3}}\right)^2=\dfrac{4}{3}\implies \boxed{007}.\]
 
- 
-
-
- 
 
 
 	\item (\textit{AIME II 2008}) Find the largest integer $n$ satisfying the following conditions:
@@ -1142,10 +1098,8 @@ Suppose that the consecutive cubes are $m$ and $m + 1$. We can use completing th
 Let us generate numbers $1$ to $1000$ for the second condition, for squares. We know for $N$ to be integer, the squares must be odd. So we generate $N = 1, 21, 45, 73, 105, 141, 181, 381, 441, 721, 801$. $N$ cannot exceed $1000$ since it is AIME problem. Now take the first criterion, let $a$ be the smaller consecutive cube. We then get:
 
  $N^2 = (A + 1)^3 - A^3$
-
- $N^2 - 1 = 3A^2 + 3A$
-
- $(N + 1)(N - 1) = 3A(A + 1)$
+$N^2 - 1 = 3A^2 + 3A$
+$(N + 1)(N - 1) = 3A(A + 1)$
 
  Now we know either $N + 1$ or $N - 1$ must be factor of $3$, hence $N = 1 \pmod 3$ or$N = 2 \pmod 3$. Only $1, 73, 181, 721$ satisfy this criterion. Testing each of the numbers in the condition yields $181$ as the largest that fits both, thus answer $= \boxed{181}$.
 

@@ -55,10 +55,8 @@ We need to solve for the lengths of $AB$, $BC$, $CD$, $DE$, and $EF$.  Let $AB =
  
  \[196 = 1600 + 900 - 2400 \cos(\angle CGD).\]
 
- 
  \[2400 \cos(\angle CGD) = 2500 - 196 = 2304.\]
 
- 
  \[\cos(\angle CGD) = \frac{24}{25}.\]
 
  Therefore, we can find $\sin(\angle CGD)$ using the identity $\sin^2 \theta + \cos^2 \theta = 1$:
@@ -107,8 +105,6 @@ We need to solve for the lengths of $AB$, $BC$, $CD$, $DE$, and $EF$.  Let $AB =
 
 	\item (\textit{AIME II 2025}) Find the sum of all positive integers $n$ such that $n+2$ divides the product $3(n+3)(n^2+9).$
 
-
- 
  \textbf{Answer: }049
 
 
@@ -116,20 +112,13 @@ We need to solve for the lengths of $AB$, $BC$, $CD$, $DE$, and $EF$.  Let $AB =
 \textbf{Solution 1}
 
 $\frac{3(n+3)(n^{2}+9) }{n+2} \in \mathbb{Z}$
-
- $\Rightarrow \frac{3(n+2+1)(n^{2}+9) }{n+2} \in \mathbb{Z}$
-
- $\Rightarrow \frac{3(n+2)(n^{2}+9) +3(n^{2}+9)}{n+2} \in \mathbb{Z}$
-
- $\Rightarrow 3(n^{2}+9)+\frac{3(n^{2}+9)}{n+2} \in \mathbb{Z}$ 
-
- $\Rightarrow \frac{3(n^{2}-4+13)}{n+2} \in \mathbb{Z}$
-
- $\Rightarrow \frac{3(n+2)(n-2)+39}{n+2} \in \mathbb{Z}$
-
- $\Rightarrow 3(n-2)+\frac{39}{n+2} \in \mathbb{Z}$
-
- $\Rightarrow \frac{39}{n+2} \in \mathbb{Z}$
+$\Rightarrow \frac{3(n+2+1)(n^{2}+9) }{n+2} \in \mathbb{Z}$
+$\Rightarrow \frac{3(n+2)(n^{2}+9) +3(n^{2}+9)}{n+2} \in \mathbb{Z}$
+$\Rightarrow 3(n^{2}+9)+\frac{3(n^{2}+9)}{n+2} \in \mathbb{Z}$
+$\Rightarrow \frac{3(n^{2}-4+13)}{n+2} \in \mathbb{Z}$
+$\Rightarrow \frac{3(n+2)(n-2)+39}{n+2} \in \mathbb{Z}$
+$\Rightarrow 3(n-2)+\frac{39}{n+2} \in \mathbb{Z}$
+$\Rightarrow \frac{39}{n+2} \in \mathbb{Z}$
 
  Since $n + 2$ is positive, the positive factors of $39$ are $1$, $3$, $13$, and $39$.
 
@@ -162,8 +151,7 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_3_Solution_Figure_1.png}
                     \end{figure}
                     
-
- $\textbf{Case 2:}$ Three center edges are used, meaning two squares are missing an edge. For each square, there are 2 ways to choose an edge, resulting in $2 \times 2 = 4$ ways. Additionally, considering the rotational symmetry of the arrangement, there are 4 possible rotations, giving a total of $4 \times 4 = 16$ configurations.
+$\textbf{Case 2:}$ Three center edges are used, meaning two squares are missing an edge. For each square, there are 2 ways to choose an edge, resulting in $2 \times 2 = 4$ ways. Additionally, considering the rotational symmetry of the arrangement, there are 4 possible rotations, giving a total of $4 \times 4 = 16$ configurations.
 
  
                     \begin{figure}[H]
@@ -171,8 +159,7 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_3_Solution_Figure_2.png}
                     \end{figure}
                     
-
- $\textbf{Case 3:}$ Two center edges are used. There are two sub-cases:
+$\textbf{Case 3:}$ Two center edges are used. There are two sub-cases:
 
  $\textbf{Scenario 1:}$ The two selected sides are perpendicular to each other. The square diagonally opposite its adjacent square has only one choice, while the other two squares each have two choices. This gives a total of $1 \times 2 \times 2 = 4$ choices. Considering the 4 possible rotations, the total number of configurations is $4 \times 4 = 16$.
 
@@ -182,8 +169,7 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_3_Solution_Figure_3.png}
                     \end{figure}
                     
-
- $\textbf{Scenario 2:}$ The two selected sides are aligned along the same straight line. Each of the four squares has 2 choices, yielding $2^4 = 16$ possible choices. Taking into account the 2 possible rotations, the total number of configurations is $16 \times 2 = 32$.
+$\textbf{Scenario 2:}$ The two selected sides are aligned along the same straight line. Each of the four squares has 2 choices, yielding $2^4 = 16$ possible choices. Taking into account the 2 possible rotations, the total number of configurations is $16 \times 2 = 32$.
 
  
                     \begin{figure}[H]
@@ -191,8 +177,7 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_3_Solution_Figure_4.png}
                     \end{figure}
                     
-
- $\textbf{Case 4:}$ Only one center edge is used. This case is similar to Case 2, yielding 16 possible configurations.
+$\textbf{Case 4:}$ Only one center edge is used. This case is similar to Case 2, yielding 16 possible configurations.
 
  
                     \begin{figure}[H]
@@ -200,8 +185,7 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2025_3_Solution_Figure_5.png}
                     \end{figure}
                     
-
- $\textbf{Case 5:}$ No center edge is used. This is similar to Case 1, with only 1 possible configuration.
+$\textbf{Case 5:}$ No center edge is used. This is similar to Case 1, with only 1 possible configuration.
 
  
                     \begin{figure}[H]
@@ -215,14 +199,11 @@ Let the red edges be "used" edges. In the digarams below, dashed lines are uncol
  
  \[1 + 16 + 16 + 32 + 16 + 1 = \boxed{\textbf{082}}\]
 
- 
 
 
 	\item (\textit{AIME II 2025}) The product
  \[\prod^{63}_{k=4} \frac{\log_k (5^{k^2 - 1})}{\log_{k + 1} (5^{k^2 - 4})} = \frac{\log_4 (5^{15})}{\log_5 (5^{12})} \cdot \frac{\log_5 (5^{24})}{\log_6 (5^{21})}\cdot \frac{\log_6 (5^{35})}{\log_7 (5^{32})} \cdots \frac{\log_{63} (5^{3968})}{\log_{64} (5^{3965})}\]is equal to $\frac mn,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
 
-
- 
  \textbf{Answer: }106
 
 
@@ -285,8 +266,6 @@ The product is equal to $\prod^{63}_{k=4} \frac{(k-1)(k+1)\log_k 5}{(k-2)(k+2)\l
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }336
 
 
@@ -358,8 +337,6 @@ Triangle $DEF$ is the median triangle of $ABC$. It's known that the circumcircle
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }293
 
 
@@ -429,7 +406,6 @@ Squaring the second equation above gives
 
  The desired area is $(GF)(GH)=2(GH)^2=\frac{2}{5}(144),$ which is $\frac{288}{5},$ so the answer is $\boxed{293}.$
 
- 
 
 
 
@@ -479,7 +455,6 @@ We split into different conditions:
 We take the complement and use PIE. Suppose the LCM of the elements of the set is NOT $2025$. Since $2025=3^4 \cdot 5^2$, it must be that no element $x$ in the subset satisfies $v_3(x)=4$ OR no element $x$ in the subset satisfies $v_5(x)=2$ (in this case, $v_p(n)$ gives the exponent of $p$ in the prime factorization of $n$). For the first case, there are $4 \cdot 3 = 12$ possible divisors that could be in our subset ($v_3(x)=0,1,2,3,v_5(x)=0,1,2$ are possible), for a total count of $2^{12}$ subsets. In the second case, there are $5 \cdot 2 = 10$ possible divisors that could be in our subset, for a total count of $2^{10}$ subsets. However, if both conditions are violated, then there are $4 \cdot 2 = 8$ divisors that could be in our subset, for a total count of $2^8$ subsets. Hence, by PIE, the number of subsets whose LCM is NOT $2025$ is equal to $2^{12}+2^{10}-2^8$. The answer is then 
  \[1-\frac{2^{12}+2^{10}-2^8}{2^{5 \cdot 3}}=\frac{109}{128} \implies \boxed{237}.\]
 
- 
 
 
 
@@ -508,8 +483,6 @@ We take $2$ cases, depending on whether $2025=3^4\cdot5^2$ is an element of $B$ 
 
  
 $\begin{array}{|c|c|c|c|} \hline Divisors  & 5^0=1  & 5^1=5  & 5^2=25  \\ \hline 3^0=1  & 1  & 5  & 25  \\ \hline 3^1=3  & 3 & 15 & 75 \\ \hline 3^2=9 & 9 & 45 & 225 \\ \hline 3^3=27 & 27 & 135 & 675 \\ \hline 3^4=81 & 81 & 405 & 2025 \\ \hline \end{array}$
-
- 
 $\textbf{Case 1}$: $2025$ is in $B$.
 
  If $2025$ is in $B$, then the choices of the rest of the elements doesn't matter, as the least common multiple of the elements of $B$ is already forced to be $2025$. We can either include or not include each of the remaining $14$ possible elements, giving $2$ possibilities for each of the $14$ elements or $2^{14}$ scenarios.
@@ -653,15 +626,13 @@ Notice that we can treat each chair as an empty space. If a person selects a cha
 
  Now the split string looks something like \_ \_ \_ \_ ... \_ \_ | 0 1 \_ \_ ... \_ \_ . The number of ways to choose the string to the left remains unchanged: $S(n-b, k-i)$ ways. Similarly, it would seem that the number of ways to choose the remainder of the string on the right is $S(b-2, i-1)$ (just as in the previous case but we've used up one of the $i$ $1$'s already). However we're overcounting, since if the remainder of the string on the right starts with 1 1 0 \_ \_ ... it makes a valid string by itself, but together with the 0 1 at the start, it makes 0 1 1 1 0, which is not allowed. Therefore we subtract the number of ways that we start with 0 1 1 1 0: there are $b-5$ spaces left and $i-3$ $1$'s left to allocate, so we subtract $S(b-5, i-3)$. So the total in this case is 
  \[S(n-b,k-i) \cdot (S(b-2, i-1)-S(b-5, i-3))\]
-
- $\textbf{Case 3: 10}$
+$\textbf{Case 3: 10}$
 
  Now the split string looks something like \_ \_ \_ \_ ... \_ \_ | 1 0 \_ \_ ... \_ \_ . Now the number of ways to fill in the empty slots to the right is unconstrained as it's following a $0$: there are $b-2$ spaces and $i-1$ $1$'s to allocate, so this gives $S(b-2, i-1)$ ways. Now for the left, we overcount just like in the previous case: filling $k-i$ $1$'s in $n-b$ slots can be done in $S(n-b, k-i)$ ways. However any way ending with 0 1 1 violates the three $1$'s in a row rule since in the center we have 0 1 1 1 0. The number of violations is the number of ways to fill in the empty slots to the left of \_ \_ \_ ... \_ \_ 0 1 1 |, which can be done in $S(n-b-3, k-i-2)$ ways since we've already allocated $2$ $1$'s and used up $3$ spaces. Therefore the total in this case is:
 
  
  \[S(b-2, i-1) \cdot (S(n-b, k-i)-S(n-b-3, k-i-2))\]
-
- $\textbf{Case 4: 11}$
+$\textbf{Case 4: 11}$
 
  In this case, we have something like \_ \_ \_ \_ ... \_ \_ | 1 1 \_ \_ ... \_ \_ . Since we can't have three $1$'s in a row, we can automatically fill $0$'s in: \_ \_ \_ \_ ... \_ 0 | 1 1 0 \_ ... \_ \_ . Now the number of ways to fill in the spaces on the left is $S(n-b-1, k-i)$ and the number of ways to fill in the spaces on the right is $S(b-3, i-2)$. So the number of ways for this case is
 
@@ -694,7 +665,6 @@ Let's start the computation through the earlier cases.
 
  $\textbf{Case 1}$
 
- 
  \[\sum_{i = 0}^{8} S(8,8-i)S(6,i) = \sum_{i = 2}^{4} S(8,8-i)S(6,i)\]
 
  This is because for $i = 5$, $S(6,5) = 0$ since the best we can do without three in a row is 1 1 0 1 1 0, which is four $1$'s, and it's impossible to achieve $5$ $1$'s without three back to back. Also if $i=5$ makes $S(6,i)$ $0$, then $i \geq 5$ makes $S(6,i)$ $0$. Similarly we can't fit $7$ $1$'s in $8$ slots without three back-to-back, so $i$ can't be $0$ or $1$. So $i$ must go from $2$ to $4$. In future cases, I'll skip the explanation of why we tighten our bounds on $i$ since the reasoning is the same as here.
@@ -711,30 +681,22 @@ Let's start the computation through the earlier cases.
  Therefore 
  \[\sum_{i = 0}^{8} S(8,8-i)S(6,i) = S(8,6)S(6,2) + S(8,5)S(6,3) + S(8,4)S(6,4)\]
  \[= 1 \cdot 15 + 16 \cdot 16 + 45 \cdot 6 = 541\]
-
- 
 $\textbf{Cases 2 and 3}$
 
  Rewrite 
  \[\sum_{i = 0}^{8} S(8,8-i) \cdot (S(6, i-1)-S(3, i-3)) + S(6, i-1) \cdot (S(8, 8-i)-S(5, 6-i))\]
  \[= \sum_{i = 0}^{8} 2S(8,8-i)S(6,i-1) - S(8,8-i)S(3,i-3) - S(6,i-1)S(5,6-i)\]
  \[= 2 \sum_{i=2}^{5} S(8,8-i)S(6,i-1) - \sum_{i=3}^{5} S(8,8-i)S(3,i-3) - \sum_{i=2}^{5} S(6,i-1)S(5,6-i)\]
+$\textbf{Case 2 and 3 a.}$
 
- $\textbf{Case 2 and 3 a.}$
-
- 
  \[\sum_{i=2}^{5} S(8,8-i)S(6,i-1) = S(8,6)S(6,1) + S(8,5)S(6,2) + S(8,4)S(6,3) + S(8,3)S(6,4)\]
  \[= 1 \cdot 6 + 16 \cdot 15 + 45 \cdot 16 + 50 \cdot 6 = 1266\]
+$\textbf{Case 2 and 3 b.}$
 
- $\textbf{Case 2 and 3 b.}$
-
- 
  \[\sum_{i=3}^{5} S(8,8-i)S(3,i-3) = S(8,5)S(3,0) + S(8,4)S(3,1)+S(8,3)S(3,2)\]
  \[= 16 \cdot 1 + 45 \cdot 3 + 50 \cdot 3 = 301\]
+$\textbf{Case 2 and 3 c.}$
 
- $\textbf{Case 2 and 3 c.}$
-
- 
  \[\sum_{i=2}^{5} S(6,i-1)S(5,6-i) = S(6,1)S(5,4) + S(6,2)S(5,3) + S(6,3)S(5,2) + S(6,4)S(5,1)\]
  \[= 6 \cdot 1 + 15 \cdot 7 + 16 \cdot 10 + 6 \cdot 5 = 301\]
 
@@ -742,8 +704,7 @@ $\textbf{Cases 2 and 3}$
 
  
  \[\sum_{i = 0}^{8} S(8,8-i)S(6,i-1) = 2 \cdot 1266 - 301 - 301 = 2 \cdot 965 = 1930\]
-
- $\textbf{Case 4}$
+$\textbf{Case 4}$
 
  Finally, 
  \[\sum_{i=0}^{8} S(7,8-i)S(5,i-2) = \sum_{i=3}^{6} S(7,8-i)S(5,i-2)\]
@@ -764,19 +725,13 @@ Finally,
  \[S(16,8) = \sum_{i = 0}^{8} S(8, 8-i)S(6, i) + S(8,8-i) \cdot (S(6, i-1)-S(3, i-3))\]
  \[+ S(6, i-1) \cdot (S(8, 8-i)-S(5, 6-i)) + S(7,8-i)S(5,i-2)\]
 
- 
  \[= \sum_{i = 2}^{4} S(8,8-i)S(6,i) + (2 \sum_{i=2}^{5} S(8,8-i)S(6,i-1) - \sum_{i=3}^{5} S(8,8-i)S(3,i-3) - \sum_{i=2}^{5} S(6,i-1)S(5,6-i)) + \sum_{i=3}^{6} S(7,8-i)S(5,i-2)\]
 
- 
  \[= 541 + 1930 + 436 = 2907\]
 
  Thus the answer is 
  \[\boxed{907}\]
 
- 
-
-
- 
 
 
 
@@ -803,8 +758,7 @@ Let's split the problem into a few cases:
  Case 5: $4$ groups of $2$, no groups are sitting next to each other: $^4C_4 \cdot ^9C_5 = 126$
 
  We have $N = 9 + 252 + 1260 + 1260 + 126 = 2907$
-
- $2907 \equiv \boxed{907} \pmod{1000}$
+$2907 \equiv \boxed{907} \pmod{1000}$
 
  
 
@@ -948,12 +902,10 @@ Taking the positive solution gives $m + n + p + q = 1 + 9 + 5 + 4 = \boxed{\text
 Let $A_1 A_2 = a_1, A_1 A_3 = a_2, ... A_1 A_{10} = a_9, A_1 A_11 a_{10}$. Now the area of each triangle is equal to half the product of two side lengths and the sine of the angle in between. This angle's cosine is given to us to be $\frac{12}{13}$. We recognize this as a $5-12-13$ triangle hence the sine of the angle will be simply $\frac{5}{13}$ (alternatively, one could use the Pythagorean Identity $\sin^2(\angle A_iA_1A_{i+1})+\cos^2(\angle A_iA_1A_{i+1})=1$). Hence each area will be $\frac{1}{2} \cdot a_n a_{n + 1} \cdot \frac{5}{13} = 1 \implies a_n a_{n+ 1} = \frac{26}{5}$. Therefore, we have:
 
  $a_1 a_2 = \frac{26}{5}$
-
- $a_2 a_3 = \frac{26}{5}$...
+$a_2 a_3 = \frac{26}{5}$...
 
  $a_9 a_{10} = \frac{26}{5}$
-
- $a_{10} a_1 = \frac{26}{5}$
+$a_{10} a_1 = \frac{26}{5}$
 
  Now note that the perimeter is the sum of all the other lengths. For instance, $A_2 A_3$ will be part of this perimeter which happens to be the only unknown side of $\triangle A_1 A_2 A_3$. By Law of Cosines
 
@@ -966,14 +918,11 @@ Let $A_1 A_2 = a_1, A_1 A_3 = a_2, ... A_1 A_{10} = a_9, A_1 A_11 a_{10}$. Now t
  Note that from the $a_1 a_2 = \frac{26}{5}$ system of equations, we can see clearly that
 
  $a_1 = a_3$
-
- $a_2 = a_4$...
+$a_2 = a_4$...
 
  $a_8 = a_{10}$
-
- $a_9 = a_1$
-
- $a_{10} = a_2$
+$a_9 = a_1$
+$a_{10} = a_2$
 
  So we see that $a_{2n + 1} = a_1$ and $a_{2n} = a_2$ so we can substitute this in to get
 
@@ -1081,8 +1030,6 @@ Note: this works, but why are we able to add the numerator and denominator? What
 	\item (\textit{AIME II 2025}) Let ${\triangle ABC}$ be a right triangle with $\angle A = 90^\circ$ and $BC = 38.$ There exist points $K$ and $L$ inside the triangle such
  \[AK = AL = BK = CL = KL = 14.\]The area of the quadrilateral $BKLC$ can be expressed as $n\sqrt3$ for some positive integer $n.$ Find $n.$
 
-
- 
  \textbf{Answer: }104
 
 
@@ -1128,12 +1075,9 @@ From the given condition, we get $\angle{LAK}=60^{\circ}$ and $\triangle{LCA}, \
 By drawing out the triangle, I set $A$ to be $(0, 0)$ in the coordinate plane. I set $C$ to be $(x, 0)$ and B to be $(0, y)$. I set $K$ to be $(a, b)$ and $L$ to be $(c, d)$. Then, since all of these distances are $14$, I used coordinate geometry to set up the following equations:$a^{2} + b^{2} = 196$; $a^{2} + (b - y)^{2} = 196$; $(a - c)^{2} + (b - d)^{2} = 196$; $c^{2} + d^{2} = 196$; $(c - x)^{2} + d^{2} = 196$. Notice by merging the first two equations, the only possible way for it to work is if $b - y = -b$ which means $y = 2b$. Next, since the triangle is right, and we know one leg is $2b$ as $y = 2b$, the other leg, $x$, is $\sqrt{38^{2} - (2b)^{2}}$.We now have:
 
  $a^{2} + b^{2} = 196  \hspace{1 cm} \textbf{(1)}$
-
- $(a - c)^{2} + (b - d)^{2} = 196 \hspace{1 cm} \textbf{(2)}$
-
- $c^{2} + d^{2} = 196  \hspace{1 cm} \textbf{(3)}$
-
- $(c - \sqrt{38^{2} - (2b)^{2}})^{2} + d^{2} = 196  \hspace{1 cm} \textbf{(4)}$
+$(a - c)^{2} + (b - d)^{2} = 196 \hspace{1 cm} \textbf{(2)}$
+$c^{2} + d^{2} = 196  \hspace{1 cm} \textbf{(3)}$
+$(c - \sqrt{38^{2} - (2b)^{2}})^{2} + d^{2} = 196  \hspace{1 cm} \textbf{(4)}$
 
  Expanding equation (4) and simplifying, we end with $38^{2} - 4b^{2} = 2c \cdot \sqrt{38^{2} - 4b^{2}}$. Next, squaring both sides and canceling terms, we have $4 \cdot 19^{2} - 4b^{2} = 4c^{2}$ which tells us that $c^{2} = 19^{2} - b^{2}$. Now, plugging this value in into equation (3) tells us that $d^{2} = 196 - 19^{2} + b^{2}$. We expand equation (2) to get $a^{2} - 2ac + c^{2} + b^{2} - 2bd + d^{2} = 196$. Using equation (1), we can cancel terms and shift things over to get $196 = 2ac + 2bd$ which means $98 = ac + bd$. From equation (1), we have $a^{2} = 196 - b^{2}$. Now, plugging in all of our variables in terms of $b$ to this new equation, we have $98 = \sqrt{(361 - b^{2})(196 - b^{2})} + b\sqrt{b^{2} - 165}$. We now move things over to get $98 - b\sqrt{b^{2} - 165} = \sqrt{(361 - b^{2})(196 - b^{2})}$. Squaring both sides and canceling, we have $98^{2} - 196b\sqrt{b^{2} - 165} = (361)(196) - 392b^{2}$. We can now divide both sides by $196$ to get $49 - b\sqrt{b^{2} - 165} = 361 - 2b^{2}$. Rearranging and simplifying, we now have $2b^{2} - 312 = b\sqrt{b^{2} - 165}$. Squaring both sides and combining like terms, we have $3b^{4} - 1083b^{2} + 312^{2} = 0$. This part will be a bit of a bash. Quadratic Formula tells us that $b^{2} = \frac{1083 \pm \sqrt{1083^{2} - 12 \cdot 312^{2}}}{6}$. The discriminant nicely simplifies to $\sqrt{4761} = 69$(this will be an extremely long bash but it's worth it). In fact, after computing, we end up with $b^{2} = 192, 169$. This leads us to solutions of $b = 8\sqrt{3}, 13$. If we choose $b = 8\sqrt{3}$, then $c^{2} = 361 - b^{2} = 361 - 192 = 169$ which tells us that $c = 13$.(In fact if you choose $b = 13$, then $c = 8\sqrt{3}$ so it's symmetrical and doesn't matter which one you choose). Next, $a^{2} = 196 - b^{2} = 196 - 192 = 4$ which tells us that $a = 2$. Finally, $d^{2} = 196 - c^{2} = 196 - 169 = 27$ which tells us that $d = 3\sqrt{3}$. Therefore, after all the bashing, our solution quadruple is $a = 2, b = 8\sqrt{3}, c = 13, d = 3\sqrt{3}$. Now plugging in all the points and using the Pythagorean Theorem, we get the coordinates of the quadrilateral which are $(0, 16\sqrt{3}), (2, 8\sqrt{3}), (13, 3\sqrt{3})$, and $(26, 0)$. By Shoelace, our area is $104\sqrt{3}$. Thus, the answer is $\boxed{104}$.
 
@@ -1252,8 +1196,7 @@ Consider a diagram to the original problem (credit to solution 4):
  Now, we know that $AB^2 + AD^2 = 19^2$, as the hypotenuse of the larger right triangle is $38$. However, we can also express $AB$ and $AD$ in terms of $\alpha$: $AB = 14(\cos(30^{\circ}-\alpha))$ and $AD = 14(\cos(\alpha))$. Thus, $\cos^2(\alpha) + \cos^2(30^{\circ}-\alpha) = 361/196$. We expand this using the cosine difference identity:
 
  $\cos^2(\alpha) + (\cos(30^{\circ})\cos(\alpha) + \sin(30^{\circ})\sin(\alpha))^2 = \frac{361}{196}$
-
- $\frac{7}{4}\cos^2(\alpha) + \frac{1}{4}\sin^2(\alpha) + \frac{\sqrt3}{2}\sin(\alpha)\cos(\alpha) = \frac{361}{196}$
+$\frac{7}{4}\cos^2(\alpha) + \frac{1}{4}\sin^2(\alpha) + \frac{\sqrt3}{2}\sin(\alpha)\cos(\alpha) = \frac{361}{196}$
 
  Using the fact that $\sin^2(\alpha) + \cos^2(\alpha) = 1$, then multiplying the entire equation by $2$,
 
@@ -1264,8 +1207,7 @@ Consider a diagram to the original problem (credit to solution 4):
  We have the following equations:
 
  $x^2 + y^2 = 1$
-
- $3y^2 + \sqrt3xy = \frac{156}{49}$
+$3y^2 + \sqrt3xy = \frac{156}{49}$
 
  Substituting $x$ for $y$, moving $3y^2$ to the left side, squaring, and dividing by 9, we end up with the quartic:
 
@@ -1278,16 +1220,13 @@ Consider a diagram to the original problem (credit to solution 4):
  Now, we could just compute $361^2 - 208^2\cdot3$, but instead, we can do this:
 
  $361^2 - 208^2\cdot3 = (129600 + 720 + 1) - (40000 + 3200 + 64)\cdot3$
-
- $(129600 + 721) - (43200 + 64)\cdot3$
-
- $(129600 + 721) - (129600 + 192) = 529 = 23^2$
+$(129600 + 721) - (43200 + 64)\cdot3$
+$(129600 + 721) - (129600 + 192) = 529 = 23^2$
 
  Thus, we have two cases:
 
  $1. \cos(\alpha) = \frac{13}{14}$
-
- $2. \cos(\alpha) = \frac{4\sqrt3}{7}$
+$2. \cos(\alpha) = \frac{4\sqrt3}{7}$
 
  Both lead to the same side lengths of the rectangle: $8\sqrt3$, and $13$. Referring back to our original rectangle diagram and plugging in our trigonometric values, we get that $CK = 13 - 2 = 11$, and $CL = 8\sqrt3 - 3\sqrt3 = 5\sqrt3$. Thus, the area of the original quadrilateral is $\frac{88\sqrt3 + 55\sqrt3 + 65\sqrt3}{2}$, or $\boxed{104}\sqrt3$.
 
@@ -1568,7 +1507,6 @@ We first do the same thing as Solution 1 did, but in mathematical language.
 
  $8+32+200=\boxed{240}$
 
- 
 
 
 

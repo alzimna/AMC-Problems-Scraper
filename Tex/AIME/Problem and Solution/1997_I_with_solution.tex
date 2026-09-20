@@ -12,13 +12,10 @@
 
 Notice that all odd numbers can be obtained by using $(a+1)^2-a^2=2a+1,$ where $a$ is a nonnegative integer. All multiples of $4$ can be obtained by using $(b+1)^2-(b-1)^2 = 4b$, where $b$ is a positive integer. Numbers congruent to $2 \pmod 4$ cannot be obtained because squares are $0, 1 \pmod 4.$ Thus, the answer is $500+250 = \boxed{750}.$
 
- 
 
 
 	\item (\textit{AIME I 1997}) The nine horizontal and nine vertical lines on an $8\times8$ checkerboard form $r$ rectangles, of which $s$ are squares.  The number $s/r$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
-
- 
  \textbf{Answer: }125
 
 
@@ -94,8 +91,6 @@ This is the most important part: Notice $(90a+9b-1)$ is $-1 \pmod{10a+b}$ and $1
 
  
 $(90a+9b-1)\times n(10a+b)= 1000(10a + b)$
-
- 
 $(90a+9b-1)\times n= 1000$
 
  
@@ -111,8 +106,6 @@ Now we have to find a number that divides 1000 using prime factors 2 or 5 and is
 
 	\item (\textit{AIME I 1997}) Circles of radii 5, 5, 8, and $m/n$ are mutually externally tangent, where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$
 
-
- 
  \textbf{Answer: }017
 
 
@@ -146,7 +139,6 @@ NOTE: It can be seen that there is no apparent need to use the variable x as a 5
 
 We may also use Descartes' theorem, $k_4=k_1+k_2+k_3\pm 2\sqrt{k_1k_2+k_2k_3+k_3k_1}$ where each of $k_i$ is the curvature of a circle with radius $r_i$, and the curvature is defined as $k_i=\frac{1}{r_i}$. The larger solution for $k_4$ will give the curvature of the circle externally tangent to the other circles, while the smaller solution will give the curvature for the circle internally tangent to each of the other circles. Using Descartes' theorem, we get $k_4=\frac15+\frac15+\frac18+2\sqrt{\frac{1}{40}+\frac{1}{40}+\frac{1}{25}}=\frac{21}{40}+2\sqrt{\frac{45}{500}}=\frac{45}{40}$. Thus, $r_4=\frac{1}{k_4}=\frac{40}{45}=\frac89$, and the answer is $\boxed{017}$
 
- 
 
 
 	\item (\textit{AIME I 1997}) The number $r$ can be expressed as a four-place decimal $0.abcd,$ where $a, b, c,$ and $d$ represent digits, any of which could be zero.  It is desired to approximate $r$ by a fraction whose numerator is 1 or 2 and whose denominator is an integer. The closest such fraction to $r$ is $\frac 27.$  What is the number of possible values for $r$?
@@ -205,7 +197,6 @@ As above, find that $mn - 6m - 6n = 0$ using the formula for the interior angle 
 
  Either way, minimizng $m$ will maximize $n$, and the smallest integer $m$ such that $n$ is positive is $m=7$, giving $n = \boxed{042}$
 
- 
 
 
 
@@ -213,7 +204,6 @@ As above, find that $mn - 6m - 6n = 0$ using the formula for the interior angle 
 
 From the formula for the measure for an individual angle of a regular n-gon, $180 - \frac{360}{n}$, the measure of $\angle A_2A_1A_n = 180 - \frac{360}{n}$. Together with the fact that an equilateral triangle has angles measuring 60 degrees, the measure of $\angle A_nA_1B = 120 + \frac{360}{n}$ (Notice that this value decreases as $n$ increases; hence, we are looking for the least possible value of $\angle A_nA_1B$). For $A_n, A_1, B$ to be vertices of a regular polygon, $\angle A_nA_1B$ must be of the form $180 - \frac{360}{n}$, where $n$ is a natural number greater than or equal to 3. It is obvious that $\angle A_nA_1B > 120$. The least angle satisfying this condition is $180 - \frac{360}{7}$. Equating this with $120 + \frac{360}{n}$ and solving yields $n = \boxed{042}$
 
- 
 
 
 	\item (\textit{AIME I 1997}) A car travels due east at $\frac 23$ miles per minute on a long, straight road. At the same time, a circular storm, whose radius is $51$ miles, moves southeast at $\frac 12\sqrt{2}$ miles per minute. At time $t=0$, the center of the storm is $110$ miles due north of the car. At time $t=t_1$ minutes, the car enters the storm circle, and at time $t=t_2$ minutes, the car leaves the storm circle. Find $\frac 12(t_1+t_2)$.
@@ -264,7 +254,6 @@ The problem asks for sum of solutions divided by 2 so sum is equal to:
 
  $-\frac{b}{a} = -\frac{-110}{\frac{5}{18}} = 110\cdot{\frac{18}{5}} = 396\cdot{\frac{1}{2}} = \boxed{198}$
 
- 
 
 
 
@@ -278,8 +267,7 @@ We only need to know how the storm and car move relative to each other, so we ca
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1997_7_Solution_Figure_1.png}
                     \end{figure}
                     
-
- $AB = 110$, so $CB = \frac{110}{3}$.  The Pythagorean Theorem then gives $AC = \frac{110\sqrt{10}}{3}$, and since $\bigtriangleup ABC \sim \bigtriangleup ADB$, $AD = (AB)\frac{AB}{AC} = 33\sqrt{10}$.  The Pythagorean Theorem now gives the car's speed as $\sqrt{\frac{5}{18}}$, and finally $\frac{33\sqrt{10}}{\sqrt{\frac{5}{18}}} = \boxed{198}$.
+$AB = 110$, so $CB = \frac{110}{3}$.  The Pythagorean Theorem then gives $AC = \frac{110\sqrt{10}}{3}$, and since $\bigtriangleup ABC \sim \bigtriangleup ADB$, $AD = (AB)\frac{AB}{AC} = 33\sqrt{10}$.  The Pythagorean Theorem now gives the car's speed as $\sqrt{\frac{5}{18}}$, and finally $\frac{33\sqrt{10}}{\sqrt{\frac{5}{18}}} = \boxed{198}$.
 
  
 
@@ -301,12 +289,12 @@ We only need to know how the storm and car move relative to each other, so we ca
             The problem is asking us for all configurations of $4\times 4$ grids with 2 1's and 2 -1's in each row and column. We do casework upon the first two columns:
 
  
-                \begin{itemize}
-                    \item The first two columns share no two numbers in the same row. There are ${4\choose2} = 6$ ways to pick two 1's in the first column, and the second column is determined. For the third and fourth columns, no two numbers can be in the same row (to make the sum of each row 0), so again there are ${4\choose 2}$ ways. This gives $6^2 = 36$.\item The first two columns share one number in the same row. There are ${4\choose 1} = 4$ ways to pick the position of the shared 1, then ${3\choose 2} = 3$ ways to pick the locations for the next two 1s, and then $2$ ways to orient the 1s. For the third and fourth columns, the two rows with shared 1s or -1s are fixed, so the only things that can be changed is the orientation of the mixed rows, in $2$ ways. This gives $4 \cdot 3 \cdot 2 \cdot 2 = 48$.\item The first two columns share two numbers in the same row. There are ${4\choose 2} = 6$ ways to pick the position of the shared 1s. Everything is then fixed.
-                \end{itemize}
-
-
-                Adding these cases up, we get $36 + 48 + 6 = \boxed{090}$.
+            \begin{itemize}
+        \item The first two columns share no two numbers in the same row. There are ${4\choose2} = 6$ ways to pick two 1's in the first column, and the second column is determined. For the third and fourth columns, no two numbers can be in the same row (to make the sum of each row 0), so again there are ${4\choose 2}$ ways. This gives $6^2 = 36$.
+        \item The first two columns share one number in the same row. There are ${4\choose 1} = 4$ ways to pick the position of the shared 1, then ${3\choose 2} = 3$ ways to pick the locations for the next two 1s, and then $2$ ways to orient the 1s. For the third and fourth columns, the two rows with shared 1s or -1s are fixed, so the only things that can be changed is the orientation of the mixed rows, in $2$ ways. This gives $4 \cdot 3 \cdot 2 \cdot 2 = 48$.
+        \item The first two columns share two numbers in the same row. There are ${4\choose 2} = 6$ ways to pick the position of the shared 1s. Everything is then fixed.
+            \end{itemize}
+            Adding these cases up, we get $36 + 48 + 6 = \boxed{090}$.
 
  
 
@@ -429,8 +417,7 @@ Find $a$ as shown above. Note that $a$ satisfies the equation $a^2 = a+1$ (this 
 As Solution 1 stated, $a^3 - 2a - 1 = 0$. $a^3 - 2a - 1 = a^3 - a^2 -a + a^2 -a -1 = (a+1)(a^2 - a - 1)$. So, $a^2 - a - 1 = 0$, $1 = a^2 - a$, $\frac1a = a-1$, $a^3 = 2a+1$, $a^2 = a+1$.
 
  $a^6 = (a^3)^2 = (2a+1)^2= 4a^2 + 4a +1= 4(a+1) + 4a + 1= 8a+5$
-
- $a^{12} = (a^6)^2 = (8a+5)^2 = 64a^2 + 80a + 25 = 64(a+1) + 80a + 25 = 144a + 89$
+$a^{12} = (a^6)^2 = (8a+5)^2 = 64a^2 + 80a + 25 = 64(a+1) + 80a + 25 = 144a + 89$
 
  Therefore, $a^{12} - 144 a^{-1} = 144a + 89 - 144(a-1) = 89 + 144 = \boxed{233}$
 
@@ -439,10 +426,6 @@ Another way to factor $a^3 - 2a - 1$:
 
  $a^3 - 2a - 1 = a^3 + 1 -2a -2 = (a+1)(a^2 - a + 1) - 2(a+1) = (a + 1)(a^2 - a - 1)$
 
- 
-
-
- 
 
 
 
@@ -478,12 +461,13 @@ We can estimate $a$ to 3 decimal levels of precision by plugging it in to $a^3 =
 \textbf{Solution 1}
 
 
-                \begin{itemize}
-                    \item \textbf{Case 1}: All three attributes are the same. This is impossible since sets contain distinct cards.\item \textbf{Case 2}: Two of the three attributes are the same. There are ${3\choose 2}$ ways to pick the two attributes in question. Then there are $3$ ways to pick the value of the first attribute, $3$ ways to pick the value of the second attribute, and $1$ way to arrange the positions of the third attribute, giving us ${3\choose 2} \cdot 3 \cdot 3 = 27$ ways.\item \textbf{Case 3}: One of the three attributes are the same. There are ${3\choose 1}$ ways to pick the one attribute in question, and then $3$ ways to pick the value of that attribute. Then there are $3!$ ways to arrange the positions of the next two attributes, giving us ${3\choose 1} \cdot 3 \cdot 3! = 54$ ways.\item \textbf{Case 4}: None of the three attributes are the same. We fix the order of the first attribute, and then there are $3!$ ways to pick the ordering of the second attribute and $3!$ ways to pick the ordering of the third attribute. This gives us $(3!)^2 = 36$ ways.
-                \end{itemize}
-
-
-                Adding the cases up, we get $27 + 54 + 36 = \boxed{117}$.
+            \begin{itemize}
+        \item \textbf{Case 1}: All three attributes are the same. This is impossible since sets contain distinct cards.
+        \item \textbf{Case 2}: Two of the three attributes are the same. There are ${3\choose 2}$ ways to pick the two attributes in question. Then there are $3$ ways to pick the value of the first attribute, $3$ ways to pick the value of the second attribute, and $1$ way to arrange the positions of the third attribute, giving us ${3\choose 2} \cdot 3 \cdot 3 = 27$ ways.
+        \item \textbf{Case 3}: One of the three attributes are the same. There are ${3\choose 1}$ ways to pick the one attribute in question, and then $3$ ways to pick the value of that attribute. Then there are $3!$ ways to arrange the positions of the next two attributes, giving us ${3\choose 1} \cdot 3 \cdot 3! = 54$ ways.
+        \item \textbf{Case 4}: None of the three attributes are the same. We fix the order of the first attribute, and then there are $3!$ ways to pick the ordering of the second attribute and $3!$ ways to pick the ordering of the third attribute. This gives us $(3!)^2 = 36$ ways.
+            \end{itemize}
+            Adding the cases up, we get $27 + 54 + 36 = \boxed{117}$.
 
  
 
@@ -501,7 +485,6 @@ Let's say we have picked two cards. We now compare their attributes to decide ho
 
 Treat the sets as ordered. Then for each of the three criterion, there are $3!=6$ choices if the attribute is different and there are $3$ choices is the attribute is the same. Thus all three attributes combine to a total of $(6+3)^3=729$ possibilities. However if all three attributes are the same then the set must be composed of three cards that are the same, which is impossible. This takes out $3^3=27$ possibilities. Notice that we have counted every set $3!=6$ times by treating the set as ordered. The final solution is then $\frac{729-27}{6}=\boxed{117}$
 
- 
 
 
 
@@ -813,7 +796,6 @@ The solutions of the equation $z^{1997} = 1$ are the $1997$th \href{https://arto
  \[|v + w|^2  =  (1+w)(1+\overline{w}) = 2+2\cos\theta_k\]We want $|v + w|^2\ge 2 + \sqrt {3}.$  From what we just obtained, this is equivalent to 
  \[\cos\theta_k\ge \frac {\sqrt {3}}2 \qquad \Leftrightarrow \qquad -\frac {\pi}6\le \theta_k \le  \frac {\pi}6\] which is satisfied by $k = 166,165,\ldots, - 165, - 166$ (we don't include 0 because that corresponds to $v$).  So out of the $1996$ possible $k$, $332$ work.  Thus, $m/n = 332/1996 = 83/499.$  So our answer is $83 + 499 = \boxed{582}.$
 
- 
 
 
 

@@ -13,7 +13,6 @@
 $2010^2 = 2^2\cdot3^2\cdot5^2\cdot67^2$. Thus there are $(2+1)^4$ divisors, $(1+1)^4$ of which are squares (the exponent of each prime factor must either be $0$ or $2$). Therefore the probability is
  \[\frac {2\cdot2^4\cdot(3^4 - 2^4)}{3^4(3^4 - 1)} = \frac {26}{81} \Longrightarrow 26+ 81 = \boxed{107}.\]
 
- 
 
 
 
@@ -24,7 +23,6 @@ The prime factorization of $2010^2$ is $67^2\cdot3^2\cdot2^2\cdot5^2$. Therefore
  Thus, the probability is 
  \[\frac {\binom{16}{1}\binom{81-16}{1}}{\binom{81}{2}} = \frac {16\cdot65}{81\cdot40} = \frac {26}{81} \Longrightarrow 26+ 81 = \boxed{107}.\]
 
- 
 
 
 
@@ -82,7 +80,6 @@ Substitute $y = \frac34x$ into $x^y = y^x$ and solve.
  \[x + y = \frac{448}{81}\]
  \[448 + 81 = \boxed{529}\]
 
- 
 
 
 
@@ -118,9 +115,8 @@ Taking the logarithm base $x$ of both sides, we arrive with:
  Then, $y = \left(\frac{4}{3}\right)^3$, and thus:
 
   
- \[x+y = \left(\frac{4}{3}\right)^3 \left(\frac{4}{3} + 1 \right) = \frac{448}{81} \Longrightarrow 448 + 81 = \boxed{529}\] 
+ \[x+y = \left(\frac{4}{3}\right)^3 \left(\frac{4}{3} + 1 \right) = \frac{448}{81} \Longrightarrow 448 + 81 = \boxed{529}\]
 
- 
 
 
 
@@ -162,7 +158,6 @@ This can be solved quickly and easily with \href{https://artofproblemsolving.com
 
  $123 + 392 = \boxed{515}$
 
- 
 
 
 
@@ -171,22 +166,18 @@ This can be solved quickly and easily with \href{https://artofproblemsolving.com
 We perform \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{casework} based upon the number of heads that are flipped. 
 
  
-                \begin{itemize}
-                    \item \textbf{Case 1}: No heads.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \textbf{Case 1}: No heads.
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item The only possibility is TTT (the third coin being the unfair coin). The probability for this to happen to Jackie is $\frac {1}{2} \cdot \frac {1}{2} \cdot \frac {3}{7} = \frac {3}{28}$ Thus the probability for this to happen to both players is $\left(\frac {3}{28}\right)^2 = \frac {9}{784}$
             \end{enumerate}
             
-                \begin{itemize}
-                    \item \textbf{Case 2}: One head.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \textbf{Case 2}: One head.
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item We can have either HTT, THT, or TTH. The first two happen to Jackie with the same $\frac {3}{28}$ chance, but the third happens $\frac {4}{28}$ of the time, since the unfair coin is heads instead of tails. With 3 possibilities for Jackie and 3 for Phil, there are a total of 9 ways for them both to have 1 head.
             \end{enumerate}
@@ -200,25 +191,20 @@ We perform \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{
                 \item overall chance for this case.
             \end{enumerate}
             
-                \begin{itemize}
-                    \item \textbf{Case 3}: Two heads.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \textbf{Case 3}: Two heads.
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item With HHT $\frac {4}{28}$, HTH $\frac {4}{28}$, and THH $\frac {3}{28}$ possible, we proceed as in Case 2, obtaining
             \end{enumerate}
             
  \[\frac {1(3 \cdot 3) + 4(3 \cdot 4) + 4(4 \cdot 4)}{28^{2}} = \frac {121}{784}.\]
 
- 
-                \begin{itemize}
-                    \item \textbf{Case 4}: Three heads.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item \textbf{Case 4}: Three heads.
+            \end{itemize}
+            
             \begin{enumerate}[label=(\roman*)]
                 \item Similar to Case 1, we can only have HHH, which has $\frac {4}{28}$ chance. Then in this case we get $\frac {16}{784}$
             \end{enumerate}
@@ -245,7 +231,6 @@ Note: We can also find that $b=a-1$ in another way. We know
 
  Therefore, one of $(a+b)(a-b-1)$ and $(c+d)(c-d-1)$ must be $0,$ because they are both non-negative if $a \geq b + 1$ and $c \geq d + 1$, which is the initial condition. Clearly, $a+b \neq 0$ since then one would be positive and negative, or both would be zero. Therefore, $a-b-1=0$ so $a=b+1$. Similarly, we can deduce that $c=d+1.$
 
- 
 
 
 
@@ -294,12 +279,10 @@ Let $x = a-b$, $y = b-c$, and $z = c-d$. Since $a > b > c > d \ge 1$, then $x, y
  Using the sequence $a > a-1 > c > c-1 \ge 1$:
 
  $a-1 > c \implies a-1 > 1006 - a \implies 2a > 1007 \implies a \ge 504$
-
- $c-1 \ge 1 \implies 1006 - a \ge 2 \implies a \le 1004$
+$c-1 \ge 1 \implies 1006 - a \ge 2 \implies a \le 1004$
 
  Total values = 1004 - 504 + 1 = $\boxed{501}$
 
- 
 
 
 	\item (\textit{AIME I 2010}) Let $P(x)$ be a quadratic polynomial with real coefficients satisfying $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$ for all real  numbers $x$, and suppose $P(11) = 181$. Find $P(16)$.
@@ -346,8 +329,7 @@ Let $y = x^2 - 2x + 2$; note that $2y - 1 = 2x^2 - 4x + 3$. Setting $y = 2y - 1$
  Let $Q(x) = P(x) - x$; clearly $Q(1) = 0$, so we can write $Q(x) = (x - 1)Q'(x)$, where $Q'(x)$ is some linear function. Plug $Q(x)$ into the given inequality:
 
  $x^2 - 3x + 2 \le Q(x) \le 2x^2 - 5x + 3$
-
- $(x - 1)(x - 2) \le (x - 1)Q'(x) \le (x - 1)(2x - 3)$, and thus
+$(x - 1)(x - 2) \le (x - 1)Q'(x) \le (x - 1)(2x - 3)$, and thus
 
  $x - 2 \le Q'(x) \le 2x - 3$
 
@@ -369,7 +351,6 @@ Let $Q(x) = P(x) - (x^2-2x+2)$, then $0\le Q(x) \le (x-1)^2$ (note this is deriv
 
  $Q(16)=15^2A=180 \Rightarrow P(16)-(16^2-32+2) = 180 \Rightarrow P(16)=180+226= \boxed{406}$
 
- 
 
 
 
@@ -437,7 +418,6 @@ The desired region consists of 12 boxes, whose lower-left corners are integers s
                     \end{figure}
                     
 
- 
 
 
 
@@ -519,12 +499,12 @@ Note that $a_2\cdot 10^2 + a_0$ is the base $100$ representation of any number f
 Note that $a_0 \equiv 2010\ (\textrm{mod}\ 10)$ and $a_1 \equiv 2010 - a_0\  (\textrm{mod}\ 100)$. It's easy to see that exactly 10 values in $0 \leq a_0 \leq 99$ that satisfy our first congruence. Similarly, there are 10 possible values of $a_1$ for each choice of $a_0$. Thus, there are $10 \times 10 = 100$ possible choices for $a_0$ and $a_1$. We next note that if $a_0$ and $a_1$ are chosen, then a valid value of $a_3$ determines $a_2$, so we dive into some simple casework:
 
  
-                \begin{itemize}
-                    \item If $2010 - 10a_1 - a_0 \geq 2000$, there are 3 valid choices for $a_3$. There are only 2 possible cases where $2010 - 10a_1 - a_0 \geq 2000$, namely $(a_1, a_0) = (1,0), (10,0)$. Thus, there are $3 \times 2 = 6$ possible representations in this case.\item If $2010 - 10a_1 - a_0 < 1000$, $a_3$ can only equal 0. However, this case cannot occur, as $10a_1+a_0\leq 990+99 = 1089$. Thus, $2010-10a_1-a_0 \geq 921$. However,  $2010-10a_1-a_0 = 1000a_3 + 100a_2 \equiv 0\  (\textrm{mod}\ 100)$. Thus, we have $2010-10a_1-a_0 \geq 1000$ always.\item If $1000 \leq 2010 - 10a_1 - a_0 < 2000$, then there are 2 valid choices for $a_3$. Since there are 100 possible choices for $a_0$ and $a_1$, and we have already checked the other cases, it follows that $100 - 2 - 0 = 98$ choices of $a_0$ and $a_1$ fall under this case. Thus, there are $2 \times 98 = 196$ possible representations in this case.
-                \end{itemize}
-
-
-                Our answer is thus $6 + 0 + 196 = \boxed{202}$.
+            \begin{itemize}
+        \item If $2010 - 10a_1 - a_0 \geq 2000$, there are 3 valid choices for $a_3$. There are only 2 possible cases where $2010 - 10a_1 - a_0 \geq 2000$, namely $(a_1, a_0) = (1,0), (10,0)$. Thus, there are $3 \times 2 = 6$ possible representations in this case.
+        \item If $2010 - 10a_1 - a_0 < 1000$, $a_3$ can only equal 0. However, this case cannot occur, as $10a_1+a_0\leq 990+99 = 1089$. Thus, $2010-10a_1-a_0 \geq 921$. However,  $2010-10a_1-a_0 = 1000a_3 + 100a_2 \equiv 0\  (\textrm{mod}\ 100)$. Thus, we have $2010-10a_1-a_0 \geq 1000$ always.
+        \item If $1000 \leq 2010 - 10a_1 - a_0 < 2000$, then there are 2 valid choices for $a_3$. Since there are 100 possible choices for $a_0$ and $a_1$, and we have already checked the other cases, it follows that $100 - 2 - 0 = 98$ choices of $a_0$ and $a_1$ fall under this case. Thus, there are $2 \times 98 = 196$ possible representations in this case.
+            \end{itemize}
+            Our answer is thus $6 + 0 + 196 = \boxed{202}$.
 
  
 
@@ -681,7 +661,6 @@ Consider $\{3,4,12\}$. We could have any two of the three be together in the sam
                     \end{figure}
                     
 
- 
 
 
 
@@ -696,8 +675,7 @@ The center of the semicircle is also the midpoint of $AB$. Let this point be O. 
  Let $X$, $Y$, and $Z$ be the areas of triangle $OUN$, sector $ONB$, and trapezoid $UBCT$ respectively.
 
  $X = \frac {1}{2}(UO)(NO)\sin{O} = \frac {1}{2}(1)(3)\sin{60^\circ} = \frac {3}{4}\sqrt {3}$
-
- $Y = \frac {1}{3}\pi(3)^2 = 3\pi$
+$Y = \frac {1}{3}\pi(3)^2 = 3\pi$
 
  To find $Z$ we have to find the length of $TC$. Project $T$ and $N$ onto $AB$ to get points $T'$ and $N'$. Notice that $UNN'$ and $TUT'$ are similar. Thus:
 
@@ -748,23 +726,15 @@ Let $O$ be the center of the semicircle. It follows that $AU + UO = AN = NO = 12
  $(x)(\frac{84+a}{2}) - \frac{252x}{3} = (63)(21)(\sqrt{3})$
 
  By adding and collecting like terms,$\frac{3ax - 252x}{6} = (63)(21)(\sqrt{3})$
-
- $\frac{(3x)(a-84)}{6} = (63)(21)(\sqrt{3})$.
+$\frac{(3x)(a-84)}{6} = (63)(21)(\sqrt{3})$.
 
  Since $a - 84 = \frac{x}{3\sqrt{3}}$,
 
  $\frac {(3x)(\frac{x}{3\sqrt{3}})}{6} = (63)(21)(\sqrt{3})$
+$\frac {x^2}{\sqrt{3}} = (63)(126)(\sqrt{3})$
+$x^2 = (63)(126)(3) = (2)(3^5)(7^2)$
+$x = AD = (7)(3^2)(\sqrt{6}) = 63\sqrt{6}$, so the answer is $\boxed{069}.$
 
- $\frac {x^2}{\sqrt{3}} = (63)(126)(\sqrt{3})$
-
- $x^2 = (63)(126)(3) = (2)(3^5)(7^2)$
-
- $x = AD = (7)(3^2)(\sqrt{6}) = 63\sqrt{6}$, so the answer is $\boxed{069}.$
-
- 
-
-
- 
 
 
 
@@ -785,10 +755,8 @@ Note that the total area of $\mathcal{R}$ is $252DA + \frac {126^2 \pi}{2}$ and 
  Equating, $\frac {126*42 * \frac {\sqrt{3}}{2}}{2} = \frac {DA^2}{6\sqrt{3}}$
 
  Solving, $63 * 21 * 3 * 6 = DA^2$
+$DA = 63 \sqrt{6} \longrightarrow \boxed {069}$
 
- $DA = 63 \sqrt{6} \longrightarrow \boxed {069}$
-
- 
 
 
 
@@ -812,7 +780,6 @@ Once we establish that $\Delta ANO$ is equilateral, we have
  Now, $UO=42, NU=21 \Rightarrow [UT'T]=[NUO]=2[NN'U]$. Also $\Delta UT'T \sim \Delta NN'U$. Therefore,
  \[DA=UT'=\sqrt{2} NN'=\sqrt{2} \left(\frac{\sqrt{3}}{2}\cdot 126\right)=63\sqrt{6}\longrightarrow \boxed {069}\]
 
- 
 
 
 	\item (\textit{AIME I 2010}) For each positive integer $n,$ let $f(n) = \sum_{k = 1}^{100} \lfloor \log_{10} (kn) \rfloor$. Find the largest value of $n$ for which $f(n) \le 300$.
@@ -882,8 +849,7 @@ Since we're working with base-$10$ logarithms, we can start by testing out $n$'s
 Let $AM = x$, then $CM = 15 - x$. Also let $BM = d$ Clearly, $\frac {[ABM]}{[CBM]} = \frac {x}{15 - x}$. We can also express each area by the rs formula. Then $\frac {[ABM]}{[CBM]} = \frac {p(ABM)}{p(CBM)} = \frac {12 + d + x}{28 + d - x}$. Equating and cross-multiplying yields $25x + 2dx = 15d + 180$ or $d = \frac {25x - 180}{15 - 2x}.$ Note that for $d$ to be positive, we must have $7.2 < x < 7.5$.
 
  By \href{https://artofproblemsolving.com/wiki/index.php?title=Stewart\%27s\_Theorem}{Stewart's Theorem}, we have $12^2(15 - x) + 13^2x = d^215 + 15x(15 - x)$ or $432 = 3d^2 + 40x - 3x^2.$ Brute forcing by plugging in our previous result for $d$, we have $432 = \frac {3(25x - 180)^2}{(15 - 2x)^2} + 40x - 3x^2.$ Clearing the fraction and gathering like terms, we get $0 = 12x^4 - 340x^3 + 2928x^2 - 7920x.$
-
- <i>Aside: Since $x$ must be rational in order for our answer to be in the desired form, we can use the \href{https://artofproblemsolving.com/wiki/index.php?title=Rational\_Root\_Theorem}{Rational Root Theorem} to reveal that $6x$ is an integer because we can divide the polynomial by $2$. The only such $x$ in the above-stated range is $\frac {22}3$.</i>
+<i>Aside: Since $x$ must be rational in order for our answer to be in the desired form, we can use the \href{https://artofproblemsolving.com/wiki/index.php?title=Rational\_Root\_Theorem}{Rational Root Theorem} to reveal that $6x$ is an integer because we can divide the polynomial by $2$. The only such $x$ in the above-stated range is $\frac {22}3$.</i>
 
  Legitimately solving that quartic, note that $x = 0$ and $x = 15$ should clearly be solutions, corresponding to the sides of the triangle and thus degenerate cevians. Factoring those out, we get $0 = 4x(x - 15)(3x^2 - 40x + 132) = x(x - 15)(x - 6)(3x - 22).$ The only solution in the desired range is thus $\frac {22}3$. Then $CM = \frac {23}3$, and our desired ratio $\frac {AM}{CM} = \frac {22}{23}$, giving us an answer of $\boxed{045}$.
 
@@ -910,7 +876,6 @@ Let $AM = 2x$ and $BM = 2y$ so $CM = 15 - 2x$. Let the \href{https://artofproble
  
  \[4y^2 - 100 = 0\implies y = 5\implies x = 11/3 \\ \implies AM/MC = (22/3)/(15 - 22/3) = 22/23 \implies \boxed{045}.\]
 
- 
 
 
 
@@ -942,8 +907,7 @@ Suppose the incircle of $ABM$ touches $AM$ at $X$, and the incircle of $CBM$ tou
  \[r = AX \tan(A/2) = CY \tan(C/2)\]
 
  We have $\cos A = \frac{12^2+15^2-13^2}{2\cdot 12\cdot 15} = \frac{200}{30\cdot 12}=\frac{5}{9}$, $\tan(A/2) = \sqrt{\frac{1-\cos A}{1+\cos A}} = \sqrt{\frac{9-5}{9+5}} = \frac{2}{\sqrt{14}}$
-
- $\cos C = \frac{13^2+15^2-12^2}{2\cdot 13\cdot 15} = \frac{250}{30\cdot 13} = \frac{25}{39}$, $\tan(C/2) = \sqrt{\frac{39-25}{39+25}}=\frac{\sqrt{14}}{8}$,
+$\cos C = \frac{13^2+15^2-12^2}{2\cdot 13\cdot 15} = \frac{250}{30\cdot 13} = \frac{25}{39}$, $\tan(C/2) = \sqrt{\frac{39-25}{39+25}}=\frac{\sqrt{14}}{8}$,
 
  Therefore $AX/CY = \tan(C/2)/\tan(A/2) = \frac{14}{2\cdot 8}= \frac{7}{8}.$
 
@@ -952,17 +916,14 @@ Suppose the incircle of $ABM$ touches $AM$ at $X$, and the incircle of $CBM$ tou
  
  \[\frac{12+AM-BM}{13+CM-BM} = \frac{7}{8}\]
 
- 
  \[96+8AM-8BM = 91 +7CM-7BM\]
 
- 
  \[BM= 5 + 8AM-7CM = 5 + 15AM - 7(CM+AM) = 5+15(AM-7) \dots\dots (1)\]
 
  Now,
 
  $\frac{AM}{CM} = \frac{[ABM]}{[CBM]} = \frac{\frac{1}{2}(12+AM+BM)r}{\frac{1}{2}(13+CM+BM)r}=\frac{12+AM+BM}{13+CM+BM}= \frac{12+BM}{13+BM} = \frac{17+15(AM-7)}{18+15(AM-7)}$
 
- 
  \[\frac{AM}{15} = \frac{17+15(AM-7)}{35+30(AM-7)} = \frac{15AM-88}{30AM-175}\]
  \[6AM^2 - 35AM = 45AM-264\]
  \[3AM^2 -40AM+132=0\]
@@ -1001,8 +962,7 @@ By drawing an altitude from $I_1$ down to a point $H_1$ and from $I_2$ to $H_2$,
  Adding these up, we get:
 
  $r \cdot (cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})) = \frac{25+y+z-2x}{2} = \frac{40-2x}{2} = 20-x$
-
- \begin{verbatim}
+\begin{verbatim}
 $r = \frac{20-x}{cot(\frac{\angle A}{2})+cot(\frac{\angle C}{2})}$
 \end{verbatim}
 
@@ -1056,7 +1016,6 @@ Let $CM=x, AM=rx, BM=d$. $x+rx=15\Rightarrow x=\frac{15}{1+r}$.
 
  Notice $\frac{12}{13} < r < 1$, so $\frac{13r-12}{1-r} = 10$ and $\boxed{r = \frac{22}{23}}.$
 
- 
 
 
 

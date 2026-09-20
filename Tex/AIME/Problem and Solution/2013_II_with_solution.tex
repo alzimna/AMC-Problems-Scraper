@@ -48,9 +48,8 @@ To simplify, we write this logarithmic expression as an exponential one. Just lo
 
 We proceed as in Solution 1, raising $2$ to both sides to achieve $\log_{2^a}(\log_{2^b}(2^{1000})) = 1.$ We raise $2^a$ to both sides to get $\log_{2^b}(2^{1000})=2^a$, then simplify to get $\dfrac{1000}b=2^a$. 
 
- At this point, we want both $a$ and $b$ to be integers. Thus, $2^a$ can only be a power of $2$. To help us see the next step, we factorize $1000$: $\dfrac{2^35^3}b=2^a.$ It should be clear that $a$ must be from $1$ to $3$; when $a=1$, $b=500$; when $a=2$, $b=250$; and finally, when $a=3$, $b=125.$ We sum all the pairs to get $\boxed{881}.$ 
+ At this point, we want both $a$ and $b$ to be integers. Thus, $2^a$ can only be a power of $2$. To help us see the next step, we factorize $1000$: $\dfrac{2^35^3}b=2^a.$ It should be clear that $a$ must be from $1$ to $3$; when $a=1$, $b=500$; when $a=2$, $b=250$; and finally, when $a=3$, $b=125.$ We sum all the pairs to get $\boxed{881}.$
 
- 
 
 
 	\item (\textit{AIME II 2013}) A large candle is $119$ centimeters tall.  It is designed to burn down more quickly when it is first lit and more slowly as it approaches its bottom.  Specifically, the candle takes $10$ seconds to burn down the first centimeter from the top, $20$ seconds to burn down the second centimeter, and $10k$ seconds to burn down the $k$-th centimeter.  Suppose it takes $T$ seconds for the candle to burn down completely.  Then $\frac{T}{2}$ seconds after it is lit, the candle's height in centimeters will be $h$.  Find $10h$.
@@ -112,7 +111,6 @@ We can also consider the slopes of the lines. Midpoint $M$ of $AB$ has coordinat
 
 Since $AC$ will be segment $AB$ rotated clockwise $60^{\circ}$, we can use a rotation matrix to find $C$. We first translate the triangle $1$ unit to the left, so $A'$ lies on the origin, and $B' = (1, 2\sqrt{3})$. Rotating clockwise $60^{\circ}$ is the same as rotating $300^{\circ}$ counter-clockwise, so our rotation matrix is $\begin{bmatrix} \cos{300^{\circ}} & -\sin{300^{\circ}}\\ \sin{300^{\circ}} & \cos{300^{\circ}}\\ \end{bmatrix} = \begin{bmatrix} \frac{1}{2} & \frac{\sqrt{3}}{2}\\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\\ \end{bmatrix}$. Then $C' = \begin{bmatrix} \frac{1}{2} & \frac{\sqrt{3}}{2}\\ -\frac{\sqrt{3}}{2} & \frac{1}{2}\\ \end{bmatrix} \cdot \begin{bmatrix} 1\\ 2\sqrt{3}\\ \end{bmatrix} = \begin{bmatrix} \frac{7}{2}\\ \frac{\sqrt{3}}{2}\\ \end{bmatrix}$. Thus, $C = (\frac{9}{2}, \frac{\sqrt{3}}{2})$. Since the triangle is equilateral, the center of the triangle is the average of the coordinates of the vertices. Then $P = (\frac{1 + 2 + \frac{9}{2}}{3}, \frac{2\sqrt{3} + \frac{\sqrt{3}}{2}}{3}) = (\frac{5}{2}, \frac{5\sqrt{3}}{6})$. Our answer is $\frac{5}{2} \cdot \frac{5\sqrt{3}}{6} = \frac{25\sqrt{3}}{12}$. $25 + 3 + 12 = \boxed{40}$
 
- 
 
 
 
@@ -121,8 +119,7 @@ Since $AC$ will be segment $AB$ rotated clockwise $60^{\circ}$, we can use a rot
 We construct point $C$ by drawing two circles with radius $r = AB = \sqrt{13}$.  One circle will be centered at $A$, while the other is centered at $B$.  The equations of the circles are:
 
  $(x - 1)^2 + y^2 = 13$
-
- $(x - 2)^2 + (y - 2\sqrt{3})^2 = 13$
+$(x - 2)^2 + (y - 2\sqrt{3})^2 = 13$
 
  Setting the LHS of each of these equations equal to each other and solving for $x$ yields after simplification:
 
@@ -190,7 +187,6 @@ Transform this into the complex plane and let $a=1, b=2+2\sqrt3 i$. We know that
 
 We find that, as before, $AE = \sqrt{7}$, and also the area of $\Delta DAE$ is $\dfrac{1}{3}$ the area of $\Delta ABC$. Thus, using the area formula, $\dfrac{1}{2} \cdot 7 \cdot \sin(\angle EAD) = \dfrac{3\sqrt{3}}{4}$, and  $\sin(\angle EAD) = \dfrac{3\sqrt{3}}{14}$. Therefore, $a + b + c = \boxed{020}.$
 
- 
 
 
 
@@ -198,7 +194,6 @@ We find that, as before, $AE = \sqrt{7}$, and also the area of $\Delta DAE$ is $
 
 Let A be the origin of the complex plane, B be $1+i\sqrt{3}$, and C be $2$. Also, WLOG, let D have a greater imaginary part than E. Then, D is $\frac{4}{3}+\frac{2i\sqrt{3}}{3}$ and E is $\frac{5}{3}+\frac{i\sqrt{3}}{3}$. Then, $\sin(\angle DAE) = Im\left(\dfrac{\frac{4}{3}+\frac{2i\sqrt{3}}{3}}{ \frac{5}{3}+\frac{i\sqrt{3}}{3}}\right) = Im\left(\frac{26+6i\sqrt{3}}{28}\right) =  \frac{3\sqrt{3}}{14}$. Therefore, $a + b + c = \boxed{020}$
 
- 
 
 
 
@@ -206,7 +201,6 @@ Let A be the origin of the complex plane, B be $1+i\sqrt{3}$, and C be $2$. Also
 
 Without loss of generality, say that the side length of triangle ABC is 3. EC is 1 and by the law of cosines, $AE^2=1+3^2-2(1)(3)\cos(\angle DAE)$ or $AE=\sqrt7$ The same goes for AD. DE equals 1 because AD and AE trisect BC. By the law of cosines, $\cos(\angle DAE)=(1-7-7)/-2(\sqrt7)(\sqrt7)=13/14$ Since $\sin^2(\angle DAE)=1-cos^2(\angle DAE)$ Then $\sin^2(\angle DAE)= 1-\frac{169}{196}=\frac{27}{196}$ So $\sin(\angle DAE)=\frac{3\sqrt{3}}{14}$. Therefore, $a + b + c = \boxed{020}$
 
- 
 
 
 
@@ -214,7 +208,6 @@ Without loss of generality, say that the side length of triangle ABC is 3. EC is
 
 Setting up a convinient coordinate system, we let $A$ be at point $(0, 0)$, $B$ be at point $(3, 3\sqrt3)$, and $C$ be at point $(6, 0)$. Then $D$ and $E$ will be at points $(4, 2\sqrt3)$ and $(5, \sqrt3)$. Then $\cos(\angle DAE) = \frac{\vec{AD}\cdot\vec{AE}}{\|\vec{AD}\| \|\vec{AE}\|} = \frac{4\cdot5 + 2\sqrt{3}\cdot\sqrt{3}}{28}=\frac{13}{14}$. From here, we see that $\sin(\angle DAE) = \sqrt{1-\cos^2(\angle DAE)} = \frac{3\sqrt3}{14}\Longrightarrow\boxed{020}$
 
- 
 
 
 
@@ -223,7 +216,6 @@ Setting up a convinient coordinate system, we let $A$ be at point $(0, 0)$, $B$ 
 We first drop the altitude from $A$ to $BC$, and that evaluates to a length of $5$. Now, we can find $AD$ by Pythag. We have $AD = \sqrt{7}$. Now, we can set $\angle{DAE}$ to be $\theta$, and now we we can solve for $\sin{\theta}$. We will take advantage of the different ways to find the area of a triangle. We have the area of the triangle is $\dfrac{\dfrac{1}{2} \cdot \dfrac{3\sqrt3}{2}}{2} = \dfrac{3\sqrt3}{4}$. We can also express it as $\dfrac{1}{2} \cdot 7 \cdot \sin{\theta}$, and solving for $\sin{\theta}$, we get 
  \[\dfrac{3\sqrt3}{14} \Longrightarrow \boxed{020}\]
 
- 
 
 
 	\item (\textit{AIME II 2013}) Find the least positive integer $N$ such that the set of $1000$ consecutive integers beginning with $1000\cdot N$ contains no square of an integer.
@@ -244,7 +236,6 @@ $3^2=9$, so $10=(x+3)^2=x^2+6x+9$. $x^2$ is small, so $10=6x+9$. $x=1/6\implies 
 
 Then, $n\approx 31.6$. $n^2<1000$, so $n$ could be $31$. Add 500 to get the first square and 501 to get the second. Then, the two integral squares are $531^2$ and $532^2$. Checking, $531^2=281961$ and $532^2=283024$. $282,000$ straddles the two squares, which have a difference of 1063. The difference has been minimized, so $N$ is minimized $N=282000\implies\boxed{282}$
 
- 
 
 
 
@@ -312,7 +303,6 @@ There are $x$ clerks at the beginning, and $t$ clerks are reassigned to another 
 
 We start with the same approach as solution 1 to get $19x-21t=355$. Then notice that $21t + 355 \equiv 0 \pmod{19}$, or $2t-6 \equiv 0 \pmod{19}$, giving the smallest solution at $t=3$. We find that $x=22$. Then the number of files they sorted will be $30x+15(x-t)=660+285=\boxed{945}.$
 
- 
 
 
 
@@ -340,10 +330,6 @@ From solution one, we can obtain $19x-21t=355$ where $x$ is the number of clerks
                     \end{figure}
                     
 
- 
-
-
- 
 
 
 
@@ -447,20 +433,24 @@ Let $\angle{AOB} = \theta$. So, we have $\sin \dfrac{\theta}{2} = \dfrac{11}{r}$
 Firstly, we consider how many different ways possible to divide the $7\times 1$ board.We ignore the cases of 1 or 2 pieces since we need at least one tile of each color.
 
  
-                \begin{itemize}
-                    \item Three pieces: $5+1+1$, $4+2+1$, $4+1+2$, etc, $\dbinom{6}{2}=15$ ways in total (just apply stars and bars here)\item Four pieces: $\dbinom{6}{3}=20$\item Five pieces: $\dbinom{6}{4}=15$\item Six pieces: $\dbinom{6}{5}=6$\item Seven pieces: $\dbinom{6}{6}=1$
-                \end{itemize}
-
-
-                Secondly, we use Principle of Inclusion-Exclusion to consider how many ways to color them:
+            \begin{itemize}
+        \item Three pieces: $5+1+1$, $4+2+1$, $4+1+2$, etc, $\dbinom{6}{2}=15$ ways in total (just apply stars and bars here)
+        \item Four pieces: $\dbinom{6}{3}=20$
+        \item Five pieces: $\dbinom{6}{4}=15$
+        \item Six pieces: $\dbinom{6}{5}=6$
+        \item Seven pieces: $\dbinom{6}{6}=1$
+            \end{itemize}
+            Secondly, we use Principle of Inclusion-Exclusion to consider how many ways to color them:
 
  
-                \begin{itemize}
-                    \item Three pieces: $3^3-3\times 2^3+3=6$\item Four pieces: $3^4-3\times 2^4+3=36$\item Five pieces: $3^5-3\times 2^5+3=150$\item Six pieces: $3^6-3\times 2^6+3=540$\item Seven pieces: $3^7-3\times 2^7+3=1806$
-                \end{itemize}
-
-
-                Finally, we combine them together: $15\times 6+20\times 36+15\times 150+6\times 540+1\times 1806= 8106$.
+            \begin{itemize}
+        \item Three pieces: $3^3-3\times 2^3+3=6$
+        \item Four pieces: $3^4-3\times 2^4+3=36$
+        \item Five pieces: $3^5-3\times 2^5+3=150$
+        \item Six pieces: $3^6-3\times 2^6+3=540$
+        \item Seven pieces: $3^7-3\times 2^7+3=1806$
+            \end{itemize}
+            Finally, we combine them together: $15\times 6+20\times 36+15\times 150+6\times 540+1\times 1806= 8106$.
 
  So the answer is $\boxed{106}$.
 
@@ -612,7 +602,6 @@ A rather easier solution is presented in the Girls' Angle WordPress:
 
 Let $N,M$ les on $AL$ such that $BM\bot AL, ON\bot AL$, call $BM=h, ON=k,LN=KN=d$ We call $\angle{LON}=\alpha$ By similar triangle, we have $\frac{h}{k}=\frac{4}{4+\sqrt{13}}, h=\frac{4k}{4+\sqrt{13}}$. Then, we realize the area is just $dh=d\cdot \frac{4K}{4+\sqrt{13}}$ As $\sin \alpha=\frac{d}{\sqrt{13}}, \cos \alpha=\frac{k}{\sqrt{13}}$. Now, we have to maximize $\frac{52\sin \alpha \cos \alpha}{4+\sqrt{13}}=\frac{26\sin 2\alpha}{4+\sqrt{13}}$, which is obviously reached when $\alpha=45^{\circ}$, the answer is $\frac{104-26\sqrt{13}}{3}$ leads to $\boxed{146}$
 
- 
 
 
 
@@ -671,10 +660,6 @@ Define the three layers as \href{https://artofproblemsolving.com/wiki/index.php?
 
  Multiplying that by the original $7$ for the choice of $c$, we have $7 \cdot 1057 = 7\boxed{399}.$
 
- 
-
-
- 
 
 
 
@@ -695,24 +680,16 @@ $\textbf{Case 1:}$ All $6$ of $2, 3, 4, 5, 6, 7$ lead to $1$.In this case, there
  Then, the other value that does not lead to $1$ should be one of the values that do: $5$ ways.
 
  $\binom{6}{5}\cdot5$
-
- $\textbf{Case 3:}$ $4$ of $6$ lead to $1$. Choose which lead to $1$: $6\choose4$ then the other values: $4^2$ ways
+$\textbf{Case 3:}$ $4$ of $6$ lead to $1$. Choose which lead to $1$: $6\choose4$ then the other values: $4^2$ ways
 
  $\binom{6}{4}\cdot4^2$
-
- $\textbf{Case 4:}$ $3$ of $6$ lead to $1$. $\binom{6}{3}\cdot3^3$
-
- $\textbf{Case 5:}$ $2$ of $6$ lead to $1$. $\binom{6}{2}\cdot2^4$
-
- $\textbf{Case 6:}$ $1$ of $6$ lead to $1$. $\binom{6}{1}\cdot1^5$
+$\textbf{Case 4:}$ $3$ of $6$ lead to $1$. $\binom{6}{3}\cdot3^3$
+$\textbf{Case 5:}$ $2$ of $6$ lead to $1$. $\binom{6}{2}\cdot2^4$
+$\textbf{Case 6:}$ $1$ of $6$ lead to $1$. $\binom{6}{1}\cdot1^5$
 
  
 Adding up all the cases, we have $1057$ cases. But don't forget to account for the WLOG and multiply by $7$, yielding us the final answer of $7\boxed{399}.$
 
- 
-
-
- 
 
 
 
@@ -758,38 +735,30 @@ Let $k$ be the element of set $A$ such that $f(f(a))=k$ for all $a \in A$. There
 Every cubic with real coefficients has to have either three real roots or one real and two nonreal roots which are conjugates. This follows from \href{https://artofproblemsolving.com/wiki/index.php?title=Vieta\%27s\_formulas}{Vieta's formulas}. 
 
  
-                \begin{itemize}
-                    \item Case 1:  $f(z)=(z-r)(z-\omega)(z-\omega^*)$, where $r\in \mathbb{R}$,  $\omega$ is nonreal, and $\omega^*$ is the complex conjugate of omega (note that we may assume that $\Im(\omega)>0$).
-                \end{itemize}
-
-
-                The real root $r$ must be one of $-20$, $20$, $-13$, or $13$. By Viète's formulas, $a=-(r+\omega+\omega^*)$, $b=|\omega|^2+r(\omega+\omega^*)$, and $c=-r|\omega|^2$. But $\omega+\omega^*=2\Re{(\omega)}$ (i.e., adding the conjugates cancels the imaginary part). Therefore, to make $a$ an integer, $2\Re{(\omega)}$ must be an integer. Conversely, if $\omega+\omega^*=2\Re{(\omega)}$ is an integer, then $a,b,$ and $c$ are clearly integers. Therefore $2\Re{(\omega)}\in \mathbb{Z}$ is equivalent to the desired property. Let $\omega=\alpha+i\beta$.
+            \begin{itemize}
+        \item Case 1:  $f(z)=(z-r)(z-\omega)(z-\omega^*)$, where $r\in \mathbb{R}$,  $\omega$ is nonreal, and $\omega^*$ is the complex conjugate of omega (note that we may assume that $\Im(\omega)>0$).
+            \end{itemize}
+            The real root $r$ must be one of $-20$, $20$, $-13$, or $13$. By Viète's formulas, $a=-(r+\omega+\omega^*)$, $b=|\omega|^2+r(\omega+\omega^*)$, and $c=-r|\omega|^2$. But $\omega+\omega^*=2\Re{(\omega)}$ (i.e., adding the conjugates cancels the imaginary part). Therefore, to make $a$ an integer, $2\Re{(\omega)}$ must be an integer. Conversely, if $\omega+\omega^*=2\Re{(\omega)}$ is an integer, then $a,b,$ and $c$ are clearly integers. Therefore $2\Re{(\omega)}\in \mathbb{Z}$ is equivalent to the desired property. Let $\omega=\alpha+i\beta$.
 
  
-                \begin{itemize}
-                    \item Subcase 1.1: $|\omega|=20$.
-                \end{itemize}
-
-
-                In this case, $\omega$ lies on a circle of radius $20$ in the complex plane. As $\omega$ is nonreal, we see that $\beta\ne 0$.  Hence $-20<\Re{(\omega)}< 20$, or rather $-40<2\Re{(\omega)}< 40$. We count $79$ integers in this interval, each of which corresponds to a unique complex number on the circle of radius $20$ with positive imaginary part.
+            \begin{itemize}
+        \item Subcase 1.1: $|\omega|=20$.
+            \end{itemize}
+            In this case, $\omega$ lies on a circle of radius $20$ in the complex plane. As $\omega$ is nonreal, we see that $\beta\ne 0$.  Hence $-20<\Re{(\omega)}< 20$, or rather $-40<2\Re{(\omega)}< 40$. We count $79$ integers in this interval, each of which corresponds to a unique complex number on the circle of radius $20$ with positive imaginary part.
 
  
-                \begin{itemize}
-                    \item Subcase 1.2: $|\omega|=13$.
-                \end{itemize}
-
-
-                In this case, $\omega$ lies on a circle of radius $13$ in the complex plane. As $\omega$ is nonreal, we see that $\beta\ne 0$.  Hence $-13<\Re{(\omega)}< 13$, or rather $-26<2\Re{(\omega)}< 26$. We count $51$ integers in this interval, each of which corresponds to a unique complex number on the circle of radius $13$ with positive imaginary part.
+            \begin{itemize}
+        \item Subcase 1.2: $|\omega|=13$.
+            \end{itemize}
+            In this case, $\omega$ lies on a circle of radius $13$ in the complex plane. As $\omega$ is nonreal, we see that $\beta\ne 0$.  Hence $-13<\Re{(\omega)}< 13$, or rather $-26<2\Re{(\omega)}< 26$. We count $51$ integers in this interval, each of which corresponds to a unique complex number on the circle of radius $13$ with positive imaginary part.
 
  Therefore, there are $79+51=130$ choices for $\omega$. We also have $4$ choices for $r$, hence there are $4\cdot 130=520$ total polynomials in this case.
 
  
-                \begin{itemize}
-                    \item Case 2: $f(z)=(z-r_1)(z-r_2)(z-r_3)$, where $r_1,r_2,r_3$ are all real.
-                \end{itemize}
-
-
-                In this case, there are four possible real roots, namely $\pm 13, \pm20$. Let $p$ be the number of times that $13$ appears among $r_1,r_2,r_3$, and define $q,r,s$ similarly for $-13,20$, and $-20$, respectively. Then $p+q+r+s=3$ because there are three roots. We wish to find the number of ways to choose nonnegative integers $p,q,r,s$ that satisfy that equation. By balls and urns, these can be chosen in $\binom{6}{3}=20$ ways.
+            \begin{itemize}
+        \item Case 2: $f(z)=(z-r_1)(z-r_2)(z-r_3)$, where $r_1,r_2,r_3$ are all real.
+            \end{itemize}
+            In this case, there are four possible real roots, namely $\pm 13, \pm20$. Let $p$ be the number of times that $13$ appears among $r_1,r_2,r_3$, and define $q,r,s$ similarly for $-13,20$, and $-20$, respectively. Then $p+q+r+s=3$ because there are three roots. We wish to find the number of ways to choose nonnegative integers $p,q,r,s$ that satisfy that equation. By balls and urns, these can be chosen in $\binom{6}{3}=20$ ways.
 
  Therefore, there are a total of $520+20=\boxed{540}$ polynomials with the desired property.
 
@@ -816,8 +785,7 @@ This combinatorics problem involves counting, and casework is most appropriate.T
 If the polynomial has one real root and two complex roots, then it can be factored as $(z-r)(z^2+pz+q),$ where $r$ is real with $|r|=13,20$ and $p,q$ are integers with $p^2 <4q.$ The roots $z_1$ and $z_2$ are conjugates. We have $|z_1|^2=|z_2|^2=z_1z_2=q.$ So $q$ is either $20^2$ or $13^2$. The only requirement for $p$ is $p<\sqrt{4q^2}=2q.$ All such quadratic equations are listed as follows:
 
  $z^2+pz+20^2,$ where $p=0,\pm1,\pm2,\cdots,\pm 39,$
-
- $z^2+pz+13^2,$ where $p=0,\pm1,\pm2,\cdots,\pm 25$.
+$z^2+pz+13^2,$ where $p=0,\pm1,\pm2,\cdots,\pm 25$.
 
  Total of 130 equations, multiplied by 4 (the number of cases for real $r$, we have 520 equations, as indicated in the solution.
 
@@ -844,12 +812,12 @@ There are two cases: either all the roots are real, or one is real and two are i
  \textbf{Case 2:} Two roots are imaginary and one is real.Let these roots be $p-qi$, $p+qi$, and $r$. Then by Vieta's formulas
 
  
-                \begin{itemize}
-                    \item $-(2p+r)=a$;\item $p^{2}+q^{2}+2pr=b$;\item $-\left(p^{2}+q^{2}\right)r=c$.
-                \end{itemize}
-
-
-                Since $a$, $b$, $c$, and $r$ are integers, we have that $p=\frac{1}{2}k$ for some integer $k$. Case two splits into two sub-cases now:
+            \begin{itemize}
+        \item $-(2p+r)=a$;
+        \item $p^{2}+q^{2}+2pr=b$;
+        \item $-\left(p^{2}+q^{2}\right)r=c$.
+            \end{itemize}
+            Since $a$, $b$, $c$, and $r$ are integers, we have that $p=\frac{1}{2}k$ for some integer $k$. Case two splits into two sub-cases now:
 
  \textbf{Sub-case 2.1:} $|p-qi|=|p+qi|=13$.Obviously, $|p|<13$. The $51$ cases in which $p$ is either $0,\pm\frac{1}{2},\pm\frac{2}{2},\pm\frac{3}{2},\ldots,\pm\frac{25}{2}$ are acceptable. Each can pair with one value of $q$ and four values of $r$, adding $51\cdot 4=204$ polynomials to $S$.
 
@@ -905,10 +873,8 @@ After drawing the figure, we suppose $BD=a$, so that $CD=3a$, $AC=4a$, and $AE=E
  
  \[b^2+9a^2-2\cdot 3a\cdot b\cdot \cos(\angle ADC)=7\qquad (5)\]
 
- 
  \[b^2+a^2+2\cdot a\cdot b\cdot \cos(\angle ADC)=9.\qquad (6)\]
-
- $(5)+(6)$, and according to $(4)$, we can get 
+$(5)+(6)$, and according to $(4)$, we can get 
  \[37a^2+2b^2=48. \qquad (7)\]
 
  Using $(3)$ and $(7)$, we can solve $a=1$ and $b=\frac{\sqrt{22}}{2}$.
@@ -989,11 +955,9 @@ Let ABC be the reference triangle, with $A=(1,0,0)$, $B=(0,1,0)$, and $C=(0,0,1)
  \begin{align*} \begin{cases} 7\cdot 64&=3\cdot 7\cdot a^2+b^2\cdot 4\cdot 7-c^2\cdot 4\cdot 3\\ 9\cdot 64&=5a^2-4b^2+4\cdot 5\cdot c^2 \\ \end{cases} \end{align*}
 
 
- 
  \begin{align*} \begin{cases} 7\cdot 64&=49a^2-12c^2 \\ 9\cdot 64&=a^2+20c^2 \\ \end{cases} \end{align*}
 
 
- 
  \begin{align*} \begin{cases} 5\cdot 7\cdot 64&=245a^2-60c^2 \\ 3\cdot 9\cdot 64&=3a^2+60c^2 \\ \end{cases} \end{align*}
 
 
@@ -1046,7 +1010,6 @@ Let $C=(0,0), A=(x,y),$ and $B=(-x,y)$.It is trivial to show that $D=\left(-\fra
  \[\frac {CF}{AF}= \frac {DE}{AE}  \cdot (\frac {CD}{BD} + 1) = 1 \cdot (3 + 1) = 4.\]
  \[\frac {FE }{BE}= \frac {CD}{BD}  : (\frac {CF}{AF} + 1) = \frac {3}{5} \implies FE = \frac {9}{5}.\]
 
- 
  \[\triangle BCF:\hspace{5mm} BC = x, CF =  \frac {4}{5}x,  EF = \frac {9}{5}, BF = 3, CE = \sqrt{7}.\]By Stewart's Theorem on $\triangle BCF$ and cevian $CE$, we get after simplification 
  \[x = 4 \implies BC^2 = CE^2 + BE^2 \implies \angle BEC = 90^\circ.\]
  \[AE = ED, AM = MB \implies EM ||BC.\]$\angle BEC = \angle CMB = 90^\circ \implies$ trapezium $BCEM$ is cyclic $\implies$
@@ -1060,7 +1023,6 @@ Let $C=(0,0), A=(x,y),$ and $B=(-x,y)$.It is trivial to show that $D=\left(-\fra
 
 Let $AB = 2x$ and let $y = BD.$ Then $CD = 3y$ and $AC = 4y.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_II_2013_13_Solution_Figure_4.png}
@@ -1100,24 +1062,17 @@ Applying Stewart's Theorem to median $\overline{BE}$ in triangle $ABD,$ we get
 \textbf{The Pattern} We can find that 
 
  $20\equiv 6 \pmod{7}$
-
- $21\equiv 5 \pmod{8}$
-
- $22\equiv 6 \pmod{8}$
-
- $23\equiv 7 \pmod{8}$
-
- $24\equiv 6 \pmod{9}$
-
- $25\equiv 7 \pmod{9}$
-
- $26\equiv 8 \pmod{9}$
+$21\equiv 5 \pmod{8}$
+$22\equiv 6 \pmod{8}$
+$23\equiv 7 \pmod{8}$
+$24\equiv 6 \pmod{9}$
+$25\equiv 7 \pmod{9}$
+$26\equiv 8 \pmod{9}$
 
  Observing these and we can find that the reminders are in groups of three continuous integers, considering this is true, and we get
 
  $99\equiv 31 \pmod{34}$
-
- $100\equiv 32 \pmod{34}$
+$100\equiv 32 \pmod{34}$
 
  So the sum is $6+3\times(6+...+31)+31+32=1512$,it is also 17+20+23+...+95, so the answer is $\boxed{512}$.By: Kris17
 

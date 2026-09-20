@@ -32,7 +32,6 @@ Let the linear factors be $(x+c)(x+d)$.
  Thus, the answer is: 
  \[\boxed{600}.\]
 
- 
 
 
 
@@ -41,7 +40,6 @@ Let the linear factors be $(x+c)(x+d)$.
 Similar to the previous solution, we plot the triangle and cut it in half. Then, we find the number of boundary points, which is $101+51+51-3$, or just $200$. Using Pick's theorem, we know that the area of the half-triangle, which is $2500$, is just $I+100-1$. That means that there are $2401$ interior points, plus $200$ boundary points, which is $2601$. However, $(0,0)$ does not work, so the answer is 
  \[\boxed{600}.\]
 
- 
 
 
 
@@ -102,7 +100,6 @@ Let's write the linear factors as $(x+n)(x+m)$.
  
 Remark : This solution works because no distinct $(a,b), (c,d)$ exist such that $a+b=c+d,ab=cd$ unless $a = d$ and $b = c$
 
- 
 
 
 
@@ -112,7 +109,6 @@ Let's say that the quadratic $x^2 + ax + b$ can be factored into $(x+c)(x+d)$ wh
  \[\left(\sum_{c=0}^{50} (100 - 2c + 1)\right) - 1\]This is an arithmetic progression. 
  \[\frac{(101 + 1)(51)}{2} - 1 = 2601 - 1 = 2600\] When divided by $1000$, it gives the remainder $\boxed{600}$
 
- 
 
 
 
@@ -150,7 +146,6 @@ Letting $-r$ and $-q$ be the roots, we must find the number of unordered pairs $
 The factoring condition is equivalent to the discriminant $a^2-4b$ being equal to $c^2$ for some integer $c.$ Because $b\ge 0,$ the equation $4b=(a-c)(a+c)$ shows that the existence of such a $b$ is equivalent to $a\equiv c\pmod 2$ with $0\le c\le a.$ Thus the number of ordered pairs is 
  \[S=\sum_{a=1}^{100}\left\lceil\frac{a+1}{2}\right\rceil=2600.\] The requested remainder is $600.$
 
- 
 
 
 
@@ -217,7 +212,6 @@ We know that $196a+14b+c=225a+15c+b=222a+37c$. Combining the first and third equ
 
 The problem is equivalent to finding a solution to the system of Diophantine equations $196a+14b+c=225a+15c+b$ and $225a+15c+b=216a+36c+6a+c,$ where $1\le a\le 5,\,0\le b\le 13,$ and $0\le c\le 5.$ Simplifying the second equation gives $b=22c-3a.$ Substituting for $b$ in the first equation and simplifying then gives $a=4c,$ so $a = 4$ and $c = 1,$ and the base-$10$ representation of $n$ is $222 \cdot 4 + 37 \cdot 1 = 925.$ It may be verified that $b=10\le 13.$
 
- 
 
 
 
@@ -225,7 +219,6 @@ The problem is equivalent to finding a solution to the system of Diophantine equ
 
 We're given that $196a+14b+c=225a+15c+b=222a+37c.$ By taking the difference of the first $2$ equalities, we receive $29a+14c=13b.$ Taking $\pmod{13}$, we receive $3a+c \equiv 0 \pmod{13}.$ We receive the following cases: $(a,c)=(4,1)$ or $(3,4).$ (Note that $(2,7)$ doesn't work since $a,c<6$ by third condition). We can just check these two, and find that $(a,b,c)=(4,10,1),$ and just plugging in $(a,c)$ into the third expression we receive $888+37=\boxed{925}.$
 
- 
 
 
 	\item (\textit{AIME I 2018}) Kathy has $5$ red cards and $5$ green cards. She shuffles the $10$ cards and lays out $5$ of the cards in a row in a random order. She will be happy if and only if all the red cards laid out are adjacent and all the green cards laid out are adjacent. For example, card orders $RRGGG$, $GGGGR$, or $RRRRR$ will make Kathy happy, but $RRRGR$ will not. The probability that Kathy will be happy is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$ .
@@ -309,7 +302,6 @@ Our probability will be $\dfrac{\text{number of "happy" configurations of cards}
 
  So the answer is $31+126=\boxed{157}$
 
- 
 
 
 
@@ -325,7 +317,6 @@ As the problem states, some examples of valid are $RRGGG$, $GGGGR$, and $RRRRR$.
 
  Thus, the total probability is $\frac{10}{63}+\frac{5}{63}+\frac{1}{126}=\frac{31}{126} \implies m+n=\boxed{157}$
 
- 
 
 
 
@@ -347,7 +338,6 @@ Suppose $k$ of the first $5$ cards are red. There are $\binom{5}{k}$ ways to ord
 
  The total number of orderings is $\binom{10}{5} = 252,$ so the answer is $\frac{62}{252} = \boxed{\frac{31}{126}}$
 
- 
 
 
 
@@ -362,7 +352,6 @@ Assume without loss of generality that the first card laid out is red. Then the 
  \[\overline{..........................}\] 
  \[\frac{31}{126}\] The requested sum is $31+126=\boxed{157}.$
 
- 
 
 
 	\item (\textit{AIME I 2018}) In $\triangle ABC, AB = AC = 10$ and $BC = 12$. Point $D$ lies strictly between $A$ and $B$ on $\overline{AB}$ and point $E$ lies strictly between $A$ and $C$ on $\overline{AC}$ so that $AD = DE = EC$. Then $AD$ can be expressed in the form $\dfrac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -459,14 +448,12 @@ As shown in the diagram, let $x$ denote $\overline{AD}$. Let us denote the foot 
 In isosceles triangle, draw the altitude from $D$ onto $\overline{AD}$. Let the point of intersection be $X$. Clearly, $AE=10-AD$, and hence $AX=\frac{10-AD}{2}$.
 
  Now, we recognise that the perpendicular from $A$ onto $\overline{AD}$ gives us two $6$-$8$-$10$ triangles. So, we calculate $\sin \angle ABC=\frac{4}{5}$ and $\cos \angle ABC=\frac{3}{5}$
-
- $\angle BAC = 180-2\cdot\angle ABC$. And hence,
+$\angle BAC = 180-2\cdot\angle ABC$. And hence,
 
  $\cos \angle BAC = \cos \angle (180-2\cdot\angle ABC) = -\cos (2\cdot\angle ABC) = \sin^2 \angle ABC - \cos^2 \angle ABC = 2\cos^2 \angle ABC - 1 = \frac{32}{25}-\frac{25}{25}=\frac{7}{25}$
 
  Inspecting $\triangle ADX$ gives us $\cos \angle BAC = \frac{\frac{10-x}{2}}{x} = \frac{10-x}{2x}$Solving the equation $\frac{10-x}{2x}=\frac{7}{25}$ gives $x= \frac{250}{39} \implies\boxed{289}$
 
- 
 
 
 
@@ -506,12 +493,10 @@ Doing law of cosines we know that $\cos A$ is $\frac{7}{25}.$* Dropping the perp
  -harsha12345
 
  
-                \begin{itemize}
-                    \item It is good to remember that doubling the smallest angle of a 3-4-5 triangle gives the larger (not right) angle in a 7-24-25 triangle.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item It is good to remember that doubling the smallest angle of a 3-4-5 triangle gives the larger (not right) angle in a 7-24-25 triangle.
+            \end{itemize}
+            
 
 
 
@@ -550,7 +535,6 @@ We start by labelling a few angles (all of them in degrees). Let $\angle{BAC}=2\
 
 We let $AD=x$. Then, angle $A$ is $2\sin^{-1}(\frac{3}{5})$ and so is angle $AED$. We note that $AE=10-x$. We drop an altitude from $D$ to $AE$, and we call the foot $F$. We note that $AF=\frac{10-x}{2}$. Using the double angle identity, we have $\sin(2\sin^{-1}(\frac{3}{5}))=2(\frac{3}{5})(\frac{4}{5})=\frac{24}{25}.$ Therefore, $DG=\frac{24}{25}AD.$ We now use the Pythagorean Theorem, which gives $(\frac{10-x}{2})^2+(\frac{24}{25}x)^2=x^2$. Rearranging and simplifying, this becomes $429x^2-12500x+62500=0$. Using the quadratic formula, this is $\frac{12500\pm\sqrt{12500^2-250000\cdot429}}{858}$. We take out a $10000$ from the square root and make it a $100$ outside of the square root to make it simpler. We end up with $\frac{12500\pm7000}{858}$. We note that this must be less than 10 to ensure that $10-x$ is positive. Therefore, we take the minus, and we get $\frac{5500}{858}=\frac{250}{39} \implies \fbox{289}.$
 
- 
 
 
 	\item (\textit{AIME I 2018}) For each ordered pair of real numbers $(x,y)$ satisfying
@@ -603,7 +587,6 @@ Do as done in Solution 1 to get
  \[\implies 126=6K\] 
  \[\implies K=21\]Hence our final answer is $21\cdot 9=\boxed{189}$-vsamc$\newline$
 
- 
 
 
 
@@ -613,7 +596,6 @@ Because $x^2+xy+7y^2=\left(x+\frac{y}{2}\right)^2+\frac{27}{4}y^2>0,$ the right 
  \[\log_2(2x+y)=\log_{2^2}(2x+y)^2=\log_4(4x^2+4xy+y^2).\] Thus $4x^2+4xy+y^2=x^2+xy+7y^2,$ which implies that $0=x^2+xy-2y^2=(x+2y)(x-y).$ Therefore either $x=-2y$ or $x=y,$ and because $2x+y>0,$ $x$ must be positive and $3x+y=x+(2x+y)>0.$ Similarly, 
  \[\log_3(3x+y)=\log_{3^2}(3x+y)^2=\log_9(9x^2+6xy+y^2).\] If $x=-2y\ne 0,$ then $9x^2+6xy+y^2=36y^2-12y^2+y^2=25y^2=3x^2+4xy+Ky^2$ when $K=21.$ If $x=y\ne 0,$ then $9x^2+6xy+y^2=16y^2=3x^2+4xy+Ky^2$ when $K=9.$ The requested product is $21\cdot9=189.$
 
- 
 
 
 	\item (\textit{AIME I 2018}) Let $N$ be the number of complex numbers $z$ with the properties that $|z|=1$ and $z^{6!}-z^{5!}$ is a real number. Find the remainder when $N$ is divided by $1000$.
@@ -684,10 +666,6 @@ Since $|z|=1$, let $z=\cos \theta + i\sin \theta$. For $z^{6!}-z^{5!}$ to be rea
 
 If $z$ satisfies the given conditions, there is a $\theta \in [0,2\pi]$ such that $z=e^{i\theta}$ and $e^{720\theta i-120\theta i}$ is real. This difference is real if and only if either the two numbers $720\theta$ and $120\theta$ represent the same angle or the two numbers represent supplementary angles. In the first case there is an integer $k$ such that $720\theta=120\theta+2k\pi,$ which implies that $\theta$ is a multiple of $\frac{\pi}{300}.$ In the second case there is an integer $k$ such that $720\theta=-120\theta+(2k+1)\pi,$ which implies that $\theta$ is $\frac{\pi}{840}$ plus a multiple of $\frac{\pi}{420}.$ In the interval $[0,2\pi]$ there are $600$ values of $\theta$ that are multiples of $\frac{\pi}{300},$ there are $840$ values that are $\frac{\pi}{840}$ plus a multiple of $\frac{\pi}{420},$ and there are no values of $\theta$ that satisfy both of these conditions. Therefore theremust be $600+840=1440$ complex numbers satisfying the given conditions. The requested remainder is $440.$
 
- 
-
-
- 
 
 
 
@@ -726,7 +704,6 @@ We can consider two cases: when the three vertices are on one base, and when the
 
 If there are two edges on a single diameter, there would be six diameters. There are four ways to put the third number, and four equilateral triangles. There are $4+ 2 \cdot 2\cdot 6 = 28$ ways. Then, if one length was $\sqrt{3}$ but no side on the diameter, there would be twelve was to put the $\sqrt{3}$ side, and two ways to put the other point. $2 \cdot 12 = 24$ for four ways to put the third point. Adding the number up, the final answer is $24+28 = \boxed{052}.$
 
- 
 
 
 
@@ -764,7 +741,6 @@ There are $2$ equilateral and $6$ other isosceles triangles on each base, provid
 
  The total number of isosceles triangles is $16+2(12+6)=52.$
 
- 
 
 
 
@@ -806,7 +782,6 @@ Like solution 1, draw out the large equilateral triangle with side length $24$. 
 
  Solving this equation gives $d=7\sqrt{3}$, and $d^2=\boxed{147}$
 
- 
 
 
 	\item (\textit{AIME I 2018}) Find the number of four-element subsets of $\{1,2,3,4,\dots, 20\}$ with the property that two distinct elements of a subset have a sum of $16$, and two distinct elements of a subset have a sum of $24$. For example, $\{3,5,13,19\}$ and $\{6,10,20,18\}$ are two such subsets.
@@ -849,10 +824,8 @@ This problem is tricky because it is the capital of a few "bashy" calculations. 
  This case includes:
 
  $(1,15,9,7)$ and $(7,9,15,1)$
-
- $(2,14,10,6)$ and $(6,10,14,2)$
-
- $(3,13,11,5)$ and $(5,11,13,3)$
+$(2,14,10,6)$ and $(6,10,14,2)$
+$(3,13,11,5)$ and $(5,11,13,3)$
 
  So we need to subtract $6$ overcounts. Thus, there are $170-6=164$ solutions for $\textrm{Case } 2$.
 
@@ -894,7 +867,6 @@ $\textrm{Case } 1 \textrm{:}$ $a+b = 16$ and $c+d = 24$.
 
  Adding these up, we get $46+164 = \boxed{210}.$
 
- 
 
 
 
@@ -919,8 +891,6 @@ There are two types of $\{a,b,c,d\} \subseteq \{1,2,3,4\dots,20\}$ that have the
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }004
 
 
@@ -969,7 +939,6 @@ So, the total number of ways is $1+2002+1001=3004$ which gives $\boxed{004}$ as 
 Note that the set of sequences of moves the bug makes is in bijective correspondence with the set of strings of $X$s and $Y$s of length $15$, where $X$ denotes a move which is either counterclockwise or inward along a spoke and $Y$ denotes a move which is either clockwise or outward along a spoke.  (The proof of this basically boils down to the fact that which one depends on whether the bug is on the inner wheel or the outer wheel.)  Now the condition that the bug ends at A implies that the difference between the number of $X$s and the number of $Y$s is a multiple of $5$, and so we must have either $4$, $9$, or $14$ $X$s within the first fourteen moves with the last move being an $X$.  This implies the answer is 
  \[\binom{14}4+\binom{14}9+\binom{14}{14} = 3004\equiv \boxed{004}\pmod{1000}.\]
 
- 
 
 
 
@@ -996,9 +965,8 @@ Let an $O$ signal a move that ends in the outer circle and $I$ signal a move tha
 \textbf{Solution 4 (Recursion)}
 
 Define $A_n$ to be the number of sequences of length $n$ that ends at $A$ and similarly for the other spokes. Also, let
- \[S_n=A_n+B_n+C_n+D_n+E_n+F_n+G_n+H_n+I_n+J_n\]At every point in the path, the bug has $2$ choices for its next move. Since $S_n$ represents the total number of paths we have $S_n=2^n$. We can create a recursive formula for $A_n:$ 
+ \[S_n=A_n+B_n+C_n+D_n+E_n+F_n+G_n+H_n+I_n+J_n\]At every point in the path, the bug has $2$ choices for its next move. Since $S_n$ represents the total number of paths we have $S_n=2^n$. We can create a recursive formula for $A_n:$
 
- 
  \begin{align*} A_n&=J_{n-1}+E_{n-1} \\ &=(I_{n-2}+A_{n-2})+(D_{n-2}+F_{n-2}) \\ &=(H_{n-3}+B_{n-3})+(J_{n-3}+E_{n-3})+(G_{n-3}+C_{n-3})+(J_{n-3}+E_{n-3}) \\ &=(B_{n-3}+C_{n-3}+E_{n-3}+G_{n-3}+H_{n-3}+J_{n-3})+(J_{n-3}+E_{n-3}) \\ &=(S_{n-3}-(I_{n-3}+A_{n-3}+D_{n-3}+F_{n-3}))+A_{n-2} \\ &=2^{n-3}-(J_{n-2}+E_{n-2})+A_{n-2} \\ &=2^{n-3}-A_{n-1}+A_{n-2} \\ \end{align*}
 $A_0=0$, $A_1=0$, $A_2=1$, $A_3=0$, $A_4=3$. Continuing the process yields $A_{15}=3\boxed{004}$.
 
@@ -1049,7 +1017,6 @@ We can view the diagram as a collection of points on the complex plane that are 
 
  We want the positive real terms or the ones that end on $1$ and those add up to $\dbinom{15}{5}(e^{2i\pi/5})^5(-1)^{10} + \dbinom{15}{15}(e^{2i\pi/5})^{15} = 3004 \equiv \boxed{004} \pmod{1000}.$
 
- 
 
 
 
@@ -1181,7 +1148,6 @@ As with the above solution, we are given $3^n \equiv 1 \pmod {143^2}.$ From CRT,
 
  All in all, we need $3, 5, 13 \mid n,$ and the minimum such value is $195.$
 
- 
 
 
 
@@ -1208,7 +1174,6 @@ The requested positive integer is the least value of $n>0$ such that $3^n\equiv 
 
  Because $11^2$ and $13^2$ are relatively prime, $3^n\equiv 1\pmod {143^2}$ if and only if $3^n\equiv 1\pmod{11^2}$ and $3^n \equiv 1\pmod {13^2}$. This occurs if and only if $n$ is a multiple of both of the relatively prime integers $5$ and $39$, so the least possible value of $n$ is $5\cdot 39=\boxed{195}.$
 
- 
 
 
 
@@ -1217,7 +1182,6 @@ The requested positive integer is the least value of $n>0$ such that $3^n\equiv 
 We first note that we wish to find $3^n \equiv 1 \pmod{11^2}$ and $3^n \equiv 1 \pmod{13^2}.$ Not thinking of anything else, we try a few numbers for the first condition to get that $5 \mid n.$ For the second condition, upon testing up to 729, we find that it doesn't yield a solution readily, so we use Lifting the Exponent from our toolkit to get that 
  \[v_{13}(27^m-1^m)=v_{13}(26)+v(m)=1+v(m), 3m = n\] which clearly implies $m=13$ and $39 | n.$ Our answer is then obviously $39 \cdot 5 = \boxed{195}.$
 
- 
 
 
 
@@ -1235,7 +1199,6 @@ We write $3^n = 143^{n + 1} \cdot a_n + \cdots + 143^2 \cdot a_1 + 143^1 \cdot 0
 
  All in all, we see that we can now write $k = 13j$ so $n = 15k = 15 \cdot 13j = 195j$ and this value satisfies all the conditions of the problem. The minimum positive integer value of $n$ occurs at $j = 1$ thus $\boxed{195}$
 
- 
 
 
 	\item (\textit{AIME I 2018}) For every subset $T$ of $U = \{ 1,2,3,\ldots,18 \}$, let $s(T)$ be the sum of the elements of $T$, with $s(\emptyset)$ defined to be $0$. If $T$ is chosen at random among all subsets of $U$, the probability that $s(T)$ is divisible by $3$ is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m$.
@@ -1343,14 +1306,10 @@ Consider the elements of $U$ modulo $3.$
  1. Counted twice because $a$ and $b$ can be switched:
 
  $6a$
-
- $6a,3b$
-
- $5a,2b$
-
- $4a,b$
-
- $3a$
+$6a,3b$
+$5a,2b$
+$4a,b$
+$3a$
 
  2. Counted once:
 
@@ -1358,7 +1317,6 @@ Consider the elements of $U$ modulo $3.$
 
  By \href{https://artofproblemsolving.com/wiki/index.php?title=Combinatorial\_identity}{ Vandermonde's Identity} on the second case, this is $2^6 \left( 2\left(1+20+90+90+20\right) + \binom{12}{6} \right)\implies \boxed{683}$
 
- 
 
 
 
@@ -1372,15 +1330,13 @@ Elements $0 \pmod{3}$ can either be included or excluded, for a total of $2^6$. 
  \[\binom{6}{0}\binom{6}{0} + \binom{6}{1}\binom{6}{1} + \cdots + \binom{6}{6} \binom{6}{6}\]
 
  Using the substitution $\binom{6}{k} = \binom{6}{6-k}$ on every second binomial coefficient, it is clear that the bottom numbers sum to $6$, and the ones above sum to $12$. Apply Vandermonde's, we obtain $\binom{12}{6}$
-
- $\>\>\>\> 2. \> a - b = \pm 3$
+$\>\>\>\> 2. \> a - b = \pm 3$
 
  For $a - b = 3$, using the same substitution and applying Vandermonde's, we get:
  \[\binom{6}{3} \binom{6}{0} + \binom{6}{4} \binom{6}{1} + \cdots + \binom{6}{6} \binom{6}{3} = \binom{12}{3}\]
 
  Then, for $a - b = -3$, it is completely symmetric with $a - b = 3$. We get $\binom{12}{3}$
-
- $\>\>\>\> 3. \> a - b = \pm 6$
+$\>\>\>\> 3. \> a - b = \pm 6$
 
  We have $\binom{6}{6} \binom{6}{0} + \binom{6}{0} \binom{6}{6} = 2$
 
@@ -1421,7 +1377,6 @@ Note that in general, the answer will be around $1/3$ of $2^{18}$. We will use t
 
  Therefore, we get $\frac{2^6 + \frac{1}{3}(2^{18} - 2^6)}{2^{18}} = \frac{683}{2^{11}} \implies m = \boxed{683}$
 
- 
 
 
 
@@ -1468,8 +1423,7 @@ Rewrite the set after mod 3 as above
  Case 17$111111222222$$1$
 
  Total $1+20+1+36+90+225+90+20+400+20+90+225+90+36+1+20+1=484+360+450+72=1366$
-
- $P=\frac{1366}{2^{12}}=\frac{683}{2^{11}}$
+$P=\frac{1366}{2^{12}}=\frac{683}{2^{11}}$
 
  ANS=$\boxed{683}$
 
@@ -1489,7 +1443,6 @@ Consider the numbers $\{1,4,7,10,13,16\}$. Each of those are congruent to $1 \pm
 
  So the probability is: $\frac{(22\cdot22+21\cdot21+21\cdot21)\cdot2^6}{2^{18}}=\frac{683}{2^{11}}$
 
- 
 
 
 
@@ -1541,7 +1494,6 @@ Define a set that "works" to be a set for which the sum of the terms is $0$ mod 
  \[w(18)=2( 2^{15} + 2( 2^{12} + 2( 2^9 + 2( 2^6 + 2( 2^3 + 4 ) ) ) ) )=87424.\]Because there are $2^{18}$ total possible subsets, the desired probability is
  \[\frac{w(18)}{2^{18}}=\frac{87424}{2^{18}}=\frac{683}{2048},\]so the answer is $\boxed{683}.$
 
- 
 
 
 
@@ -1625,7 +1577,6 @@ The total number of subsets is $\sum_{i=0}^{18}\tbinom{18}{i}=2^{18}$. If $s(T)\
 
  Putting all the cases together we obtain $2(22+126+315) + 440=1366$. Multiplying by $2^6$ gives $2^6\cdot1366=2^7\cdot683$. Since $n=2^{18}$, $\frac{m}{n}=\frac{683}{2^{11}}$. Therefore, $m=\boxed{683}$
 
- 
 
 
 	\item (\textit{AIME I 2018}) Let $\triangle ABC$ have side lengths $AB=30$, $BC=32$, and $AC=34$. Point $X$ lies in the interior of $\overline{BC}$, and points $I_1$ and $I_2$ are the incenters of $\triangle ABX$ and $\triangle ACX$, respectively. Find the minimum possible area of $\triangle AI_1I_2$ as $X$ varies along $\overline{BC}$.
@@ -1647,13 +1598,10 @@ First note that
  \begin{align*}bc\sin\frac A2\sin\frac B2\sin\frac C2&=bc\cdot\dfrac{(a-b+c)(b-c+a)(c-a+b)}{8abc}\\&=\dfrac{(30-32+34)(32-34+30)(34-30+32)}{8\cdot 32}=\boxed{126}.\end{align*}
 
 
- 
-                \begin{itemize}
-                    \item Notice that we truly did minimize the area for $[A I_1 I_2]$ because $b, c, \angle A, \angle B, \angle C$ are all constants while only $\sin \alpha$ is variable, so maximizing $\sin \alpha$ would minimize the area.
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Notice that we truly did minimize the area for $[A I_1 I_2]$ because $b, c, \angle A, \angle B, \angle C$ are all constants while only $\sin \alpha$ is variable, so maximizing $\sin \alpha$ would minimize the area.
+            \end{itemize}
+            
 
 
 
@@ -1679,10 +1627,6 @@ It's clear that $\angle I_{1}AI_{2}=\frac{1}{2}\angle BAX+\frac{1}{2}\angle CAX=
  \begin{align*} & 30\cdot 34\cdot\sqrt{\frac{3}{10}\cdot\frac{7}{34}\cdot\frac{21}{85}} \\ =&~30\cdot 34\cdot\sqrt{\frac{3}{2\cdot 5}\cdot\frac{7}{2\cdot 17}\cdot\frac{3\cdot 7}{5\cdot 17}} \\ =&~30\cdot 34\cdot\frac{3\cdot 7}{2\cdot 5\cdot 17} \\ =&~(2\cdot 3\cdot 5)\cdot(2\cdot 17)\cdot\frac{3\cdot 7}{2\cdot 5\cdot 17} \\ =&~2\cdot 3^{2}\cdot 7 \\ =&~\boxed{126}.\end{align*}
 
 
- 
-
-
- 
 
 
 
@@ -1776,10 +1720,8 @@ Computing a few terms we have $E_0=0$, $E_1=0$, $E_2=0$, $E_3=1$, and $E_4=1$.
 For vertices $S, P_1, P_2, P_5,$ the number of ways to get there after $n$ jumps is the sum of the number of ways to get to the adjacent vertices after $n-1$ jumps. For vertices $P_3,$ and $P_4,$ the number of ways to get there after $n$ jumps is he number of ways to get to $P_2$ and $P_5$ after $n-1$ jumps.
 
  $\begin{tabular}{|l|c|c|c|c|c|c|c|} \hline Jump \# & \(S\)   & \(P_1\) & \(P_2\) & \(P_3\) & \(E\)        & \(P_4\) & \(P_5\) \\ \hline 1       & 0       & 1       & 0       & 0       & \textbf{0}   & 0       & 1       \\ \hline 2       & 2       & 0       & 1       & 0       & \textbf{0}   & 1       & 0       \\ \hline 3       & 0       & 3       & 0       & 1       & \textbf{1}   & 0       & 3       \\ \hline 4       & 6       & 0       & 4       & 0       & \textbf{1}   & 3       & 0       \\ \hline 5       & 0       & 10      & 0       & 4       & \textbf{3}   & 0       & 9       \\ \hline 6       & 19      & 0       & 14      & 0       & \textbf{4}   & 9       & 0       \\ \hline 7       & 0       & 33      & 0       & 14      & \textbf{9}   & 0       & 28      \\ \hline 8       & 61      & 0       & 47      & 0       & \textbf{14}  & 28      & 0       \\ \hline 9       & 0       & 108     & 0       & 47      & \textbf{28}  & 0       & 89      \\ \hline 10      & 197     & 0       & 155     & 0       & \textbf{47}  & 89      & 0       \\ \hline 11      & 0       & 352     & 0       & 155     & \textbf{89}  & 0       & 286     \\ \hline 12      & 638     & 0       & 507     & 0       & \textbf{155} & 286     & 0       \\ \hline \end{tabular}$
+$0+0+1+1+3+4+9+14+28+47+89+155=\boxed{351}.$
 
- $0+0+1+1+3+4+9+14+28+47+89+155=\boxed{351}.$
-
- 
 
 
 	\item (\textit{AIME I 2018}) David found four sticks of different lengths that can be used to form three non-congruent convex cyclic quadrilaterals, $A,\text{ }B,\text{ }C$, which can each be inscribed in a circle with radius $1$. Let $\varphi_A$ denote the measure of the acute angle made by the diagonals of quadrilateral $A$, and define $\varphi_B$ and $\varphi_C$ similarly. Suppose that $\sin\varphi_A=\frac{2}{3}$, $\sin\varphi_B=\frac{3}{5}$, and $\sin\varphi_C=\frac{6}{7}$. All three quadrilaterals have the same area $K$, which can be written in the form $\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
@@ -1830,8 +1772,7 @@ Suppose the four side lengths of the quadrilateral cut out arc lengths of $2a$, 
  \[\varphi_A=a+b\]
  \[\varphi_B=b+c\]
  \[\varphi_C=a+c\]
-
- $(1)+(3)-(2)$, $(1)+(2)-(3)$, and $(2)+(3)-(1)$ yields
+$(1)+(3)-(2)$, $(1)+(2)-(3)$, and $(2)+(3)-(1)$ yields
 
  
  \[2a=\varphi_A+\varphi_C-\varphi_B\]

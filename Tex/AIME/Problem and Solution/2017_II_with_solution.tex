@@ -71,7 +71,6 @@ PIE is the principle of inclusion and exclusion. Denote $\{1, 2, 3, 4, 5, 6, 7, 
  By PIE, $|A \cup B| = |A| + |B| - |A \cap B|$. Notice that $A \cap B = \{4, 5\}$, so $|A \cap B| = 4$ (the number of subsets of $\{4,5\}$). Both $A$ and $B$ contain $2^5 = 32$ subsets, and $T$ contains $2^8 = 256$ subsets. The final answer is therefore
  \[256 - (32 + 32 - 4) = 256 - 60 = \boxed{196}.\]
 
- 
 
 
 	\item (\textit{AIME II 2017}) Teams $T_1$, $T_2$, $T_3$, and $T_4$ are in the playoffs. In the semifinal matches, $T_1$ plays $T_4$, and $T_2$ plays $T_3$. The winners of those two matches will play each other in the final match to determine the champion. When $T_i$ plays $T_j$, the probability that $T_i$ wins is $\frac{i}{i+j}$, and the outcomes of all the matches are independent. The probability that $T_4$ will be the champion is $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.
@@ -193,7 +192,6 @@ Draw the circumradii from the circumcenter to the three vertices. Drop perpendic
 
 Using the same graph and methods as Solution 1, find the coordinates of $P$, $X$, $B$, and $Z$. Also, note that angles $PXB$ and $PZB$ are right angles, so $PXBZ$ is a cyclic quadrilateral. Then, use Brahmagupta's formula to determine the area of the quadrilateral, which is $\frac{109}{5}$. Then find the area of triangle $ABC$, which is $60$. The probability is $\frac{109}{300}$. Finally, we get our answer of $\boxed{409}$
 
- 
 
 
 	\item (\textit{AIME II 2017}) Find the number of positive integers less than or equal to $2017$ whose base-three representation contains no digit equal to $0$.
@@ -225,7 +223,6 @@ Now we have to subtract out numbers from $2018$ to $2187$
 
  $2+4+8+16+32+64+128-2*16=256-2-32=\boxed{222}$
 
- 
 
 
 
@@ -312,7 +309,6 @@ There are two cases we can consider. Let the elements of our set be denoted $a,b
 
  See the first case has our largest $d$, so our answer will be $471+\frac{640}{2} = \boxed{791}$
 
- 
 
 
 	\item (\textit{AIME II 2017}) Find the sum of all positive integers $n$ such that $\sqrt{n^2+85n+2017}$ is an integer.
@@ -395,8 +391,7 @@ Label the entire given expression as $k^2$.
  Instinctively we can do a crude completion of the square, resulting in $k^2$ = $(n+42.5)^2+210.75$Rearrange the equation to get a difference of squares.
 
  $k^2-(n+42.5)^2 = 210.75$
-
- $(k+n+42.5)(k-n-42.5) = 210.75$
+$(k+n+42.5)(k-n-42.5) = 210.75$
 
  Factor $21,075$ to get $3^1$,$5^2$, and $281^1$
 
@@ -591,7 +586,6 @@ We count the two entities: The number of sets of eight cards that contain all se
 
  Thus, the probability of getting a good set given the first condition is $\frac{ 7! \cdot 42  }{ 7 \cdot 7 \cdot \left( 6C2 \cdot \frac{6!}{2!} + 6 \cdot 6! \right) } = \frac{4}{9},$ and the answer is $\boxed{013}.$
 
- 
 
 
 
@@ -701,7 +695,6 @@ Let $D = (0,0), C = (84,0), B = (84,42), A = (0,42)$. We can also find that $M =
  \[\dfrac{21}{-84} = -\dfrac{1}{4}\], and the y-int is just $21$, so our equation is: 
  \[y=-\dfrac{1}{4}x+21\], solving for $x$ and $y$, we get: $(12,18)$. Now, we use the fact that $\overline{BP}$ bisects the area of $BCON$. By shoelace, we find the area of $BCON$ to be $2184$. Now, we will use $\triangle{BPC}$. We have that its area is $\dfrac{2184}{2} = 1092$. So, by the area of a triangle formula the height $BCP$ is $52$. So, the $x$ coordinate of $P$ is $84-52 = 32$. Then, we use the fact that $P$ lies on $CM$, so using the equation of line $CM$ (which we found to be $y=-\dfrac{1}{4}x+21$, plugging $x=32$, we get $y = 13$, so we have the coordinates of $P$ to be $(32,13)$, so the height of $PCD$ is $13$, so the area is $\dfrac{13\cdot84}{2}=\boxed{546}$
 
- 
 
 
 
@@ -805,13 +798,10 @@ We use Claim 1 along with complementary counting.Then, the number of valid cases
 
  Thus, answer = $2^{10}-(5*2^6+5*2^6-5*4*2^3)$ = $544$
 
- 
-                \begin{itemize}
-                    \item Note: In this graph there can be at most one town with indegree 5 or outdegree 5.
-                \end{itemize}
-
-
-                Solution by ZHANALEX
+            \begin{itemize}
+        \item Note: In this graph there can be at most one town with indegree 5 or outdegree 5.
+            \end{itemize}
+            Solution by ZHANALEX
 
  \textbf{Claim 1} Claim: If and only if there is no town in this graph with a indegree or outdegree of 4, it is possible to reach all of the 4 other towns from any town in the graph.
 
@@ -923,8 +913,6 @@ Let $\mathbf{\Omega}_n$ denote the $n$-th total direction tournament set. Since 
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }110
 
 
@@ -1000,24 +988,19 @@ Let $A_0$ be the origin. Now note that the ratio of lengths of consecutive line 
 Considering $n \pmod{6}$, we have the following formulas:
 
  $n\equiv 0$: $\frac{n(n-4)}{2} + \frac{n}{3}$
-
- $n\equiv 2, 4$: $\frac{n(n-2)}{2}$
-
- $n\equiv 3$: $\frac{n(n-3)}{2} + \frac{n}{3}$
-
- $n\equiv 1, 5$: $\frac{n(n-1)}{2}$
+$n\equiv 2, 4$: $\frac{n(n-2)}{2}$
+$n\equiv 3$: $\frac{n(n-3)}{2} + \frac{n}{3}$
+$n\equiv 1, 5$: $\frac{n(n-1)}{2}$
 
  To derive these formulas, we note the following:Any isosceles triangle formed by the vertices of our regular $n$-sided polygon $P$ has its sides from the set of edges and diagonals of $P$. Notably, as two sides of an isosceles triangle must be equal, it is important to use the property that same-lengthed edges and diagonals come in groups of $n$, unless $n$ is even when one set of diagonals (those which bisect the polygon) comes in a group of $\frac{n}{2}$. Three properties hold true of $f(n)$:
 
  When $n$ is odd there are $\frac{n(n-1)}{2}$ satisfactory subsets (This can be chosen with $n$ choices for the not-base vertex, and $\frac{n-1}{2}$ for the pair of equal sides as we have $n-1$ edges to choose from, and we must divide by 2 for over-count).*
 
  
-                \begin{itemize}
-                    \item Another explanation: For any diagonal or side of the polygon chosen as the base of the isosceles triangle, there is exactly 1 isosceles triangle that can be formed. So, the total number of satisfactory subsets is $\dbinom{n}{2}=\dfrac{n(n-1)}{2}.$
-                \end{itemize}
-
-
-                When $n$ is even there are $\frac{n(n-2)}{2}$ satisfactory subsets (This can be chosen with $n$ choices for the not-base vertex, and $\frac{n-2}{2}$ for the pair of equal sides as we have $n-1$ edges to choose from, one of them which is not satisfactory (the bisecting edge), and we must divide by 2 for over-count).
+            \begin{itemize}
+        \item Another explanation: For any diagonal or side of the polygon chosen as the base of the isosceles triangle, there is exactly 1 isosceles triangle that can be formed. So, the total number of satisfactory subsets is $\dbinom{n}{2}=\dfrac{n(n-1)}{2}.$
+            \end{itemize}
+            When $n$ is even there are $\frac{n(n-2)}{2}$ satisfactory subsets (This can be chosen with $n$ choices for the not-base vertex, and $\frac{n-2}{2}$ for the pair of equal sides as we have $n-1$ edges to choose from, one of them which is not satisfactory (the bisecting edge), and we must divide by 2 for over-count).
 
  When $n$ is a multiple of three we additionally over-count equilateral triangles, of which there are $\frac{n}{3}$. As we count them three times, we are two times over, so we subtract $\frac{2n}{3}$.
 
@@ -1081,16 +1064,14 @@ We first notice that when a polygon has $s$ sides where $s\not\equiv 0\pmod{3}$,
  Case 1:
 
  $s\not\equiv 0\pmod{3}$, $s+1\not\equiv 0\pmod{3}$
-
- $s$ is even, $s+1$ is odd
+$s$ is even, $s+1$ is odd
 
  There are $\frac{s-2}{2}$ unique types of isosceles triangles in the polygon with $s$ sides. Each isosceles triangle has a unique point which connects the two congruent sides. Therefore, for each type of isosceles triangle, there exists $s$ of those triangles since the unique point can be any of the $s$ vertices. There are $\frac{s}{2}$ types of isosceles triangles in the polygon with $s+1$ sides and $s+1$ unique points for each type of triangle. Therefore, $\frac{s}{2}\cdot{(s+1)}-\frac{s-2}{2}\cdot{(s)}=78$. Solving, we get $s=52$.
 
  Case 2:
 
  $s\not\equiv 0\pmod{3}$, $s+1\not\equiv 0\pmod{3}$
-
- $s$ is odd, $s+1$ is even
+$s$ is odd, $s+1$ is even
 
  Using similar logic, there are $\frac{s-1}{2}\cdot{(s)}$ possible isosceles triangles in the $s$ sided polygon. There are $\frac{s-1}{2}\cdot{(s+1)}$ possible isosceles triangles in the $s+1$ sided polygon. The difference should be $78$, so $\frac{s-1}{2}\cdot{(s+1)}-\frac{s-1}{2}\cdot{(s)}=78$. Solving gives $s=157$.
 
@@ -1099,38 +1080,33 @@ We first notice that when a polygon has $s$ sides where $s\not\equiv 0\pmod{3}$,
  Case 3:
 
  $s\not\equiv 0\pmod{3}$, $s+1\equiv 0\pmod{3}$
-
- $s$ is even, $s+1$ is odd
+$s$ is even, $s+1$ is odd
 
  There are $\frac{s-2}{2}\cdot{(s)}$ possible isosceles triangles in the $s$ sided polygon. The $s+1$ case is a bit more complicated, as we have to consider equilateral triangles as well. In this case, there is one solution where $x=y$, which would produce an equilateral triangle. Therefore, we subtract that case to calculate only isosceles triangles with 2 congruent sides. Only isosceles triangles with exactly 2 congruent sides have a unique point, while there exist only $\frac{s+1}{3}$ distinct equilateral triangles in a polygon with $s+1$ sides, the rest are equivalent and symmetrical. Therefore, there are $(\frac{s}{2}-1)\cdot{(s+1)}+\frac{s+1}{3}$ isosceles triangles with at least 2 congruent sides in a polygon with $s+1$ sides. Putting it together, $\frac{s}{2}-1\cdot{(s+1)}+(\frac{s+1}{3})-\frac{s-2}{2}\cdot{(s)}=78$. Solving yields $5s=772$ which is impossible since $s$ has to be an integer. Therefore, this case is not valid.
 
  Case 4:
 
  $s\not\equiv 0\pmod{3}$, $s+1\equiv 0\pmod{3}$
-
- $s$ is odd, $s+1$ is even
+$s$ is odd, $s+1$ is even
 
  There are  $\frac{s-1}{2}\cdot{(s)}$ isosceles triangles in the $s$ sided polygon. Using the idea above, there are $(\frac{s-1}{2}-1)\cdot{(s+1)}$ isosceles triangles with 2 congruent sides in an $s+1$ sided polygon. There are $\frac{s+1}{3}$ equilateral triangles. Therefore,  $(\frac{s-1}{2}-1)\cdot{(s+1)}+(\frac{s+1}{3})-\frac{s-1}{2}\cdot{(s)}=78$. Looking at the left hand side, it is clear that $s$ has to be negative, which is not valid. Therefore, this case is not valid.
 
  Case 5:
 
  $s\equiv 0\pmod{3}$, $s+1\not\equiv 0\pmod{3}$
-
- $s$ is even, $s+1$ is odd
+$s$ is even, $s+1$ is odd
 
  There are a total of $(\frac{s-2}{2}-1)\cdot{(s)}+(\frac{s}{3})$ isosceles triangles in a polygon with $s$ sides. There are a total of $\frac{s}{2}\cdot{(s+1)}$ isosceles triangles in a polygon with $s+1$ sides. Therefore, $\frac{s}{2}\cdot{(s+1)}-(\frac{s-2}{2}-1)\cdot{(s)}-(\frac{s}{3})=78$. Simplifying, we get $s=36$.
 
  Case 6:
 
  $s\equiv 0\pmod{3}$, $s+1\not\equiv 0\pmod{3}$
-
- $s$ is odd, $s+1$ is even
+$s$ is odd, $s+1$ is even
 
  There are a total of $(\frac{s-1}{2}-1)\cdot{(s)}+(\frac{s}{3})$ isosceles triangles in the polygon with $s$ sides. There are $\frac{s-1}{2}\cdot{(s+1)}$ isosceles triangles in the polygon with $s+1$ sides. Therefore,$\frac{s-1}{2}\cdot{(s+1)}-(\frac{s-1}{2}-1)\cdot{(s)}-(\frac{s}{3})=78$. Simplifying, we get $7s=471$, which means $s$ is not an integer. Thus, this case is invalid.
 
  Adding all the valid cases, we obtain $52+157+36=\boxed{245}$
 
- 
 
 
 
@@ -1226,7 +1202,6 @@ Look at one pair of opposite faces of the cube. There are $4$ lines say $l_1, l_
 Considered the cases $(1, 2, ..., 8), (2, 3, ...,9), (3, 4, ..., 10)$ and reverse. Also, consider the constant subsequences of length 8 $(1, 1, ..., 1), (2, 2, ..., 2), ..., (10, 10, ..., 10)$. Of all the triplets that work they cannot be extended to form another point on the line in the $10 \times 10 \times 10$ grid but  we need to divide by 2 because reversing all the subsequences gives the same line. Thus the answer is 
  \[\frac{16^3 - 14^3 - 14^3 + 12^3}{2} = \boxed{168}\]
 
- 
 
 
 
@@ -1248,7 +1223,6 @@ The lines can be defined as starting from $(a, b, c)$ with "slope" (vector) $(d,
 
  Summing all of it up and dividing by two (since we over counted each line and its reversal), we get $\frac{24 + 24 + 288}{2} = \boxed{168}.$
 
- 
 
 
 	\item (\textit{AIME II 2017}) Tetrahedron $ABCD$ has $AD=BC=28$, $AC=BD=44$, and $AB=CD=52$. For any point $X$ in space, define $f(X)=AX+BX+CX+DX$. The least possible value of $f(X)$ can be expressed as $m\sqrt{n}$, where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n$.
@@ -1264,12 +1238,9 @@ The lines can be defined as starting from $(a, b, c)$ with "slope" (vector) $(d,
 Set $a=BC=28$, $b=CA=44$, $c=AB=52$. Let $O$ be the point which minimizes $f(X)$.
 
  $\boxed{\textrm{Claim 1: } O \textrm{ is the gravity center } \ \frac {1}{4}(\vec A + \vec B + \vec C + \vec D)}$
-
- $\textrm{Proof:}$ Let $M$ and $N$ denote the midpoints of $AB$ and $CD$. From $\triangle ABD \cong \triangle BAC$ and $\triangle CDA \cong \triangle DCB$, we have  $MC=MD$, $NA=NB$ an hence $MN$ is a perpendicular bisector of both segments $AB$ and $CD$. Then if $X$ is any point inside tetrahedron $ABCD$, its orthogonal projection onto line $MN$ will have smaller $f$-value; hence we conclude that $O$ must lie on $MN$. Similarly, $O$ must lie on the line joining the midpoints of $AC$ and $BD$. $\square$
-
- $\boxed{\textrm{Claim 2: The gravity center } O \textrm{ coincides with the circumcenter.} \phantom{\vec A}}$
-
- $\textrm{Proof:}$  Let $G_D$ be the centroid of triangle $ABC$; then $DO = \frac 34 DG_D$ (by vectors). If we define $G_A$, $G_B$, $G_C$ similarly, we get $AO = \frac 34 AG_A$ and so on. But from symmetry we have $AG_A = BG_B = CG_C = DG_D$, hence $AO = BO = CO = DO$. $\square$
+$\textrm{Proof:}$ Let $M$ and $N$ denote the midpoints of $AB$ and $CD$. From $\triangle ABD \cong \triangle BAC$ and $\triangle CDA \cong \triangle DCB$, we have  $MC=MD$, $NA=NB$ an hence $MN$ is a perpendicular bisector of both segments $AB$ and $CD$. Then if $X$ is any point inside tetrahedron $ABCD$, its orthogonal projection onto line $MN$ will have smaller $f$-value; hence we conclude that $O$ must lie on $MN$. Similarly, $O$ must lie on the line joining the midpoints of $AC$ and $BD$. $\square$
+$\boxed{\textrm{Claim 2: The gravity center } O \textrm{ coincides with the circumcenter.} \phantom{\vec A}}$
+$\textrm{Proof:}$  Let $G_D$ be the centroid of triangle $ABC$; then $DO = \frac 34 DG_D$ (by vectors). If we define $G_A$, $G_B$, $G_C$ similarly, we get $AO = \frac 34 AG_A$ and so on. But from symmetry we have $AG_A = BG_B = CG_C = DG_D$, hence $AO = BO = CO = DO$. $\square$
 
  Now we use the fact that an isosceles tetrahedron has circumradius $R = \sqrt{\frac18(a^2+b^2+c^2)}$. 
 
@@ -1309,7 +1280,6 @@ Inspired by this symmetry, one may test the solution when $\lvert  X-A\rvert=\lv
  Therefore,
  \[f_{min}(X)=4\sqrt{\left(\frac{x}{2}\right)^2+\left(\frac{y}{2}\right)^2+\left(\frac{z}{2}\right)^2}=4\sqrt{678}\]The requested sum is $4+678=\boxed{682}$
 
- 
 
 
 \end{enumerate}

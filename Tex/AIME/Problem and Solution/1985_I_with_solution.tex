@@ -28,7 +28,6 @@ Another way to do this is to realize that most of our numbers will be canceled o
  \[=\left (x_1\cdot\dfrac{2}{x_1} \right )\cdot \left (\dfrac{3}{\dfrac{2}{x_1}}\cdot\dfrac{4}{\dfrac{3}{\dfrac{2}{x_1}}} \right )\cdot \left (\dfrac{5}{\dfrac{4}{\dfrac{3}{\dfrac{2}{x_1}}}}\cdot\dfrac{6}{\dfrac{5}{\dfrac{4}{\dfrac{3}{\dfrac{2}{x_1}}}}} \right )\cdot \left (\dfrac{7}{\dfrac{6}{\dfrac{5}{\dfrac{4}{\dfrac{3}{\dfrac{2}{x_1}}}}}}\cdot\dfrac{8}{\dfrac{7}{\dfrac{6}{\dfrac{5}{\dfrac{4}{\dfrac{3}{\dfrac{2}{x_1}}}}}}} \right )\]
  \[=(2)\cdot (4)\cdot (6)\cdot (8)=\boxed{384}\]
 
- 
 
 
 	\item (\textit{AIME I 1985}) When a right triangle is rotated about one leg, the volume of the cone produced is $800\pi \;\textrm{cm}^3$. When the triangle is rotated about the other leg, the volume of the cone produced is $1920\pi \;\textrm{cm}^3$. What is the length (in cm) of the hypotenuse of the triangle?
@@ -61,7 +60,6 @@ Let $h$ be the hypotenuse then
  \begin{align*} h&=\sqrt{a^2+b^2}\\ &=\sqrt{(a+b)^2-2ab}\\ &=\sqrt{34^2-2\cdot240}\\ &=\sqrt{676}\\ &=\boxed{26} \end{align*}
 
 
- 
 
 
 
@@ -81,7 +79,6 @@ Let $a$ and $b$ be the two legs of the equation. We can find $\frac{a}{b}$ by do
 
 Continue solution 3 until we obtain, $\frac{x}{y} = \frac{12}{5}$. Let $x = 12$ and $y=5$, and $xy^2 = 300$. This is 8 times off. So, we wish to give a 2 to $x$ and a 4 to $y^2$, meaning that both $x$ and $y$ obtain a factor 2. Thus, $x= 12\cdot 2 = 24$ and $y = 5 \cdot 2 = 10$, and the result is just $\sqrt{676} = \boxed{026}$
 
- 
 
 
 	\item (\textit{AIME I 1985}) Find $c$ if $a$, $b$, and $c$ are positive integers which satisfy $c=(a + bi)^3 - 107i$, where $i^2 = -1$.
@@ -109,8 +106,6 @@ Expanding out both sides of the given \href{https://artofproblemsolving.com/wiki
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }032
 
 
@@ -226,8 +221,6 @@ We will start by letting the first 2 numbers in the sequence be $A$ and $B$.
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }315
 
 
@@ -259,7 +252,6 @@ Let the interior point be $P$, let the points on $\overline{BC}$, $\overline{CA}
  \[[\Delta ABC]=189+56+70\]
  \[[\Delta ABC]=\boxed{315}\]
 
- 
 
 
 
@@ -287,7 +279,6 @@ Let the interior point be $P$ and let the points on $\overline{BC}$, $\overline{
  \[10\left(\frac ba\right)^2-12\cdot \frac ba-16=0\]Factoring this gives $\left(\frac ba-2\right)\left(10\cdot \frac ba - 8\right)=0,$ so the area of $\triangle ABC$ is
  \[\left(1+\frac ba\right)(40+30+35)=3\cdot 105=\boxed{315.}\]
 
- 
 
 
 
@@ -341,7 +332,6 @@ Let \( \{x\} \) denote the fractional part of \( x \).
 
  Thus, \( M = 0.61 \), and \( 100M = 100 \times 0.61 = \)$\boxed{061}$
 
- 
 
 
 
@@ -411,12 +401,15 @@ Noting that all of the numbers are even, we can reduce this to any real number $
  We can match up the greatest integer functions with one of the partitions of the integer. If we let $x = \frac 12$ then we get the solution $10$; now consider when $x < \frac 12$: $\lfloor 2x \rfloor = 0$, $\lfloor 4x \rfloor \le 1$, $\lfloor 6x \rfloor \le 2$, $\lfloor 8x \rfloor \le 3$. But according to this the maximum we can get is $1+2+3 = 6$, so we only need to try the first 6 numbers.
 
  
-                \begin{itemize}
-                    \item $1$: Easily possible, for example try plugging in $x =\frac 18$.\item $2$: Also simple, for example using $\frac 16$.\item $3$: The partition must either be $1+1+1$ or $1+2$. If $\lfloor 4x \rfloor = 1$, then $x \ge \frac 14$, but then $\lfloor 8x \rfloor \ge 2$; not possible; and vice versa to show that the latter partition doesn't work. So we cannot obtain $3$.\item $4$: We can partition as $1+1+2$, and from the previous case we see that $\frac 14$ works.\item $5$: We can partition as $1+2+2$, from which we find that $\frac 13$ works.\item $6$: We can partition as $1+2+3$, from which we find that $\frac 38$ works.
-                \end{itemize}
-
-
-                Out of these 6 cases, only 3 fails. So between 1 and 10 we can reach only the integers $1,2,4,5,6,10$; hence our solution is $6 \cdot 100 = \boxed{600}$.
+            \begin{itemize}
+        \item $1$: Easily possible, for example try plugging in $x =\frac 18$.
+        \item $2$: Also simple, for example using $\frac 16$.
+        \item $3$: The partition must either be $1+1+1$ or $1+2$. If $\lfloor 4x \rfloor = 1$, then $x \ge \frac 14$, but then $\lfloor 8x \rfloor \ge 2$; not possible; and vice versa to show that the latter partition doesn't work. So we cannot obtain $3$.
+        \item $4$: We can partition as $1+1+2$, and from the previous case we see that $\frac 14$ works.
+        \item $5$: We can partition as $1+2+2$, from which we find that $\frac 13$ works.
+        \item $6$: We can partition as $1+2+3$, from which we find that $\frac 38$ works.
+            \end{itemize}
+            Out of these 6 cases, only 3 fails. So between 1 and 10 we can reach only the integers $1,2,4,5,6,10$; hence our solution is $6 \cdot 100 = \boxed{600}$.
 
  
 
@@ -427,30 +420,18 @@ Noting that all of the numbers are even, we can reduce this to any real number $
 As we change the value of $x$, the value of our \href{https://artofproblemsolving.com/wiki/index.php?title=Expression}{expression} changes only when $x$ crosses \href{https://artofproblemsolving.com/wiki/index.php?title=Rational\_number}{rational number} of the form $\frac{m}{n}$, where $n$ is divisible by 2, 4, 6 or 8.  Thus, we need only see what happens at the numbers of the form $\frac{m}{\textrm{lcm}(2, 4, 6, 8)} = \frac{m}{24}$.  This gives us 24 calculations to make; we summarize the results here:
 
  $\frac{1}{24}, \frac{2}{24} \to 0$
-
- $\frac{3}{24} \to 1$
-
- $\frac{4}{24}, \frac{5}{24} \to 2$
-
- $\frac{6}{24}, \frac{7}{24} \to 4$
-
- $\frac{8}{24} \to 5$
-
- $\frac{9}{24}, \frac{10}{24}, \frac{11}{24} \to 6$
-
- $\frac{12}{24}, \frac{13}{24}, \frac{14}{24} \to 10$
-
- $\frac{15}{24} \to 11$
-
- $\frac{16}{24},\frac{17}{24} \to 12$
-
- $\frac{18}{24}, \frac{19}{24} \to 14$
-
- $\frac{20}{24}\to 15$
-
- $\frac{21}{24}, \frac{22}{24}, \frac{23}{24} \to16$
-
- $\frac{24}{24} \to 20$
+$\frac{3}{24} \to 1$
+$\frac{4}{24}, \frac{5}{24} \to 2$
+$\frac{6}{24}, \frac{7}{24} \to 4$
+$\frac{8}{24} \to 5$
+$\frac{9}{24}, \frac{10}{24}, \frac{11}{24} \to 6$
+$\frac{12}{24}, \frac{13}{24}, \frac{14}{24} \to 10$
+$\frac{15}{24} \to 11$
+$\frac{16}{24},\frac{17}{24} \to 12$
+$\frac{18}{24}, \frac{19}{24} \to 14$
+$\frac{20}{24}\to 15$
+$\frac{21}{24}, \frac{22}{24}, \frac{23}{24} \to16$
+$\frac{24}{24} \to 20$
 
  Thus, we hit 12 of the first 20 integers and so we hit $50 \cdot 12 = \boxed{600}$ of the first $1000$.
 
@@ -462,7 +443,6 @@ As we change the value of $x$, the value of our \href{https://artofproblemsolvin
 
 Because $2,4,6,8$ are all multiples of $2$, we can speed things up. We only need to check up to $\frac{12}{24}$, and the rest should repeat. As shown before, we hit 6 integers ($1,2,4,5,6,10$) from $\frac{1}{24}$ to $\frac{12}{24}$. Similarly, this should repeat 100 times, for $\boxed{600}$
 
- 
 
 
 
@@ -470,7 +450,6 @@ Because $2,4,6,8$ are all multiples of $2$, we can speed things up. We only need
 
 We only need to check the numbers where it increments, namely $\frac{1}{8}, \frac{1}{6}, \frac{1}{4}, \frac{1}{3}, \frac{3}{8}, \frac{1}{2}$. As shown before, we hit 6 integers ($1,2,4,5,6,10$) from $\frac{1}{24}$ to $\frac{1}{2}$. Similarly, this should repeat 100 times, for $\boxed{600}$
 
- 
 
 
 
@@ -536,7 +515,6 @@ Imagine that we gradually increase $x$ from $0$ to $1$. At the beginning, the va
 Notice that 
  \[\lfloor 2(x+n) \rfloor + \lfloor 4(x+n)\rfloor + \lfloor 6(x+n) \rfloor+ \lfloor8(x+n) \rfloor= \lfloor 2x \rfloor+ \lfloor 4x \rfloor+ \lfloor 6x \rfloor+ \lfloor 8x \rfloor+ 20n\]. This conceptually means that the number of integers that can be expressed in the range $(i, j)$ is the same as the number of integers that can be expressed in the range $(i+x, j+x)$. Thus, because we can express $12$ integers in the range $(1, 20)$, we can cover $12*50 = \boxed{600}$ from 1 to 1000.$-\text{thinker123}$
 
- 
 
 
 
@@ -579,7 +557,6 @@ An ellipse is defined to be the \href{https://artofproblemsolving.com/wiki/index
 
 This assumes you know properties of ellipses.Like above, X is the point on the x-axis minimizing $XF_1+XF_2$.By reflection, this equals $F_1F_2'$...But this just equals the length of the major axis.Solving like above, we get $\boxed{085}$
 
- 
 
 
 
@@ -624,11 +601,14 @@ For all nonnegative integers $k,$ let $P(k)$ be the probability that the bug is 
 
  Clearly, we have $P(0)=1.$ For all $k\geq1,$ note that after $k-1$ crawls:
 
- <ol style="margin-left: 1.5em;"> \item The probability that the bug is at vertex $A$ is $P(k-1),$ and the probability that it crawls to vertex $A$ on the next move is $0.$ 
+ 
+            \begin{enumerate} 
+        \item The probability that the bug is at vertex $A$ is $P(k-1),$ and the probability that it crawls to vertex $A$ on the next move is $0.$
 
- \item The probability that the bug is not at vertex $A$ is $1-P(k-1),$ and the probability that it crawls to vertex $A$ on the next move is $\frac13.$
+        \item The probability that the bug is not at vertex $A$ is $1-P(k-1),$ and the probability that it crawls to vertex $A$ on the next move is $\frac13.$
 
- </ol>Together, the recursive formula for $P(k)$ is
+            \end{enumerate}
+            Together, the recursive formula for $P(k)$ is
  \[P(k) = \begin{cases} 1 & \mathrm{if} \ k=0 \\ \frac13(1-P(k-1)) & \mathrm{if} \ k\geq1 \end{cases}.\]Two solutions follow from here:
 
  
@@ -640,7 +620,6 @@ For all nonnegative integers $k,$ let $P(k)$ be the probability that the bug is 
 We evaluate $P(7)$ recursively:
  \begin{alignat*}{6} P(0)&=1, \\ P(1)&=\frac13(1-P(0))&&=0, \\ P(2)&=\frac13(1-P(1))&&=\frac13, \\ P(3)&=\frac13(1-P(2))&&=\frac29, \\ P(4)&=\frac13(1-P(3))&&=\frac{7}{27}, \\ P(5)&=\frac13(1-P(4))&&=\frac{20}{81}, \\ P(6)&=\frac13(1-P(5))&&=\frac{61}{243},\\ P(7)&=\frac13(1-P(6))&&=\frac{182}{729}. \end{alignat*}Therefore, the answer is $n=\boxed{182}.$
 
- 
 
 
 
@@ -655,7 +634,6 @@ Let $P(k)=Q(k)+c$ for some function $Q(k)$ and constant $c.$ For all $k\geq1,$ t
  \[Q(k)=\frac34\left(-\frac13\right)^k,\] and the explicit formula for $P(k)$ is 
  \[P(k)=\frac34\left(-\frac13\right)^k+\frac14.\] Finally, the requested probability is $p=P(7)=\frac{182}{729},$ from which $n=\boxed{182}.$
 
- 
 
 
 
@@ -677,10 +655,11 @@ where $S_k=A_k+B_k+C_k+D_k.$
  \[A_{k+2}=A_k+2S_k. \qquad\qquad (\spadesuit)\]For $S_k,$ note that
 
  
-            \begin{enumerate}
-                 \item Base Case:
+            \begin{enumerate} 
+        \item Base Case:
  \begin{align*} S_1&=A_1+B_1+C_1+D_1 \\ &=0+1+1+1 \\ &=3. \end{align*}
- \item Recursive Case:
+ 
+        \item Recursive Case:
  \begin{align*} S_{k+1}&=A_{k+1}+B_{k+1}+C_{k+1}+D_{k+1} \\ &=(B_k+C_k+D_k)+(A_k+C_k+D_k)+(A_k+B_k+D_k)+(A_k+B_k+C_k) \\ &=3(A_k+B_k+C_k+D_k) \\ &=3S_k. \end{align*}
 
             \end{enumerate}
@@ -692,7 +671,6 @@ where $S_k=A_k+B_k+C_k+D_k.$
  The requested probability is 
  \[p=\frac{A_7}{3^7}=\frac{2(3)+2\left(3^3\right)+2\left(3^5\right)}{3^7}=\frac{2(1)+2\left(3^2\right)+2\left(3^4\right)}{3^6}=\frac{182}{729},\] from which $n=\boxed{182}.$
 
- 
 
 
 
@@ -709,7 +687,6 @@ Using these equations, we recursively fill out the table below:
  The requested probability is 
  \[p=\frac{A_7}{3^7}=\frac{546}{2187}=\frac{182}{729},\] from which $n=\boxed{182}.$
 
- 
 
 
 
@@ -737,7 +714,6 @@ It follows that $A(n) = B(n-1) = C(n-1) = D(n-1).$
  We construct the following table:
  \[\begin{array}{c|cccc}  &  &  &  & \\ [-2ex] n & A(n) & B(n) & C(n) & D(n) \\ [1ex] \hline  &  &  &  & \\ [-1ex] 1 & 0 & \frac13 & \frac13 & \frac13 \\  &  &  &  & \\ 2 & \frac13 & \frac29 & \frac29 & \frac29 \\  &  &  &  & \\ 3 & \frac29 & \frac{7}{27} & \frac{7}{27} & \frac{7}{27} \\  &  &  &  & \\ 4 & \frac{7}{27} & \frac{20}{81} & \frac{20}{81} & \frac{20}{81}\\  &  &  &  & \\ 5 & \frac{20}{81} & \frac{61}{243} & \frac{61}{243} & \frac{61}{243} \\  &  &  &  & \\ 6 & \frac{61}{243} & \frac{182}{729} & \frac{182}{729} & \frac{182}{729} \\  &  &  &  & \\ 7 & \frac{182}{729} & \frac{547}{2187} & \frac{547}{2187} & \frac{547}{2187} \\ [1ex] \end{array}\]Therefore, the answer is $n = \boxed{182}.$
 
- 
 
 
 
@@ -752,7 +728,6 @@ The generating function for a problem with this general form ($4$ states, $n$ st
  \begin{align*} 0000122&=105\text{ arrangements}, \\ 0001112&=140\text{ arrangements}, \\ 0011111&=21\text{ arrangements}. \end{align*}
 Thus, the coefficient of the $x^5$ term is $105+140+21=266.$ From here, the desired probability is $\frac{2(7+266)}{2187}=\frac{546}{2187}=\frac{182}{729}.$ Thus, our answer is $\boxed{182}.$
 
- 
 
 
 
@@ -765,7 +740,6 @@ We can find the number of different times the bug reaches vertex $A$ before the 
  Now we need to find the number of cycles by which the bug can reach $A$ at the end. Since $f(1) = 0,$ we know that $f(6)$ cannot be used, as on the $7$th move the bug cannot move from $A$ to $A.$ So we need to find the number of \href{https://artofproblemsolving.com/wiki/index.php?title=Partition}{partitions} of $7$ using only $2,3,4,5,$ and $7.$ These are $f(2)f(2)f(3),f(2)f(5),f(3)f(4),$ and $f(7).$ We can calculate these and sum them up using our formula. Also, order matters, so we need to find the number of ways to arrange each partition:
  \[{3\choose1}f(2)f(2)f(3) + {2\choose1}f(2)f(5) + {2\choose1}f(3)f(4) + f(7) = 3(3)(3)(2\cdot3) + 2(3)(2^33) + 2(2\cdot3)(2^23) + (2^53) = 546.\]Finally, this is a probability question, so we divide by $3^7,$ or $\frac{546}{3^7} = \frac{182}{3^6}.$ The answer is $n=\boxed{182}.$
 
- 
 
 
 
@@ -789,7 +763,6 @@ Note that this problem is basically equivalent to the following:How many distinc
 
  Adding up our cases, we obtain $7 \cdot 32 + 35 \cdot 8 + 21 \cdot 2 = 546$ valid sequences.Dividing by the total number of paths without restrictions, $3^7 = 2187,$ our desired probability is $\frac{546}{2187} = \frac{182}{729},$ giving an answer of $\boxed{182}.$
 
- 
 
 
 
@@ -903,9 +876,8 @@ We can just plug in Euclidean algorithm, to go from $\gcd(n^2 + 100, n^2 + 2n + 
 
 \textbf{Solution 5}
 
-As clearly shown in the above solutions, we want to maximize $(100+n^2, 2n+1).$ Then the maximum of the GCD will be achieved with integers $a,b,c$ such that $a(100+n^2) + b(2n+1)=c$ by Bezout's identity. Note for the LHS to be constant, $b$ must be a linear function of $n,$ so $b=px+q.$ However, there cannot be a linear $n$ term in $b(2n+1),$ hence $b=2n-1$ by difference of squares. Changing $b$ to $-2n+1,$ we get $100a+an^2-4n^2+1=c,$ so $a=4,$ and the answer is $c=\boxed{401}.$ 
+As clearly shown in the above solutions, we want to maximize $(100+n^2, 2n+1).$ Then the maximum of the GCD will be achieved with integers $a,b,c$ such that $a(100+n^2) + b(2n+1)=c$ by Bezout's identity. Note for the LHS to be constant, $b$ must be a linear function of $n,$ so $b=px+q.$ However, there cannot be a linear $n$ term in $b(2n+1),$ hence $b=2n-1$ by difference of squares. Changing $b$ to $-2n+1,$ we get $100a+an^2-4n^2+1=c,$ so $a=4,$ and the answer is $c=\boxed{401}.$
 
- 
 
 
 	\item (\textit{AIME I 1985}) In a tournament each player played exactly one game against each of the other players. In each game the winner was awarded 1 point, the loser got 0 points, and each of the two players earned $\frac{1}{2}$ point if the game was a tie. After the completion of the tournament, it was found that exactly half of the points earned by each player were earned in games against the ten players with the least number of points. (In particular, each of the ten lowest scoring players earned half of her/his points against the other nine of the ten). What was the total number of players in the tournament?
@@ -983,8 +955,6 @@ Against any given person player \( p_1 \) has a \( 1/3 \) chance of obtaining \(
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }864
 
 
@@ -1000,7 +970,6 @@ Note that gluing two of the given polyhedra together along a hexagonal face (rot
                     \end{figure}
                     
 
- 
 
 
 

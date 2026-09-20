@@ -96,3 +96,13 @@ Since I have a full-time job and only code in my spare time, so far I have only 
 - Scrape other AMC competitions.
 - The TeX files for problems and solutions can already be compiled, but there are still many warnings caused by the variety of solution formats. Some minor errors still need to be fixed when compiling with a TeX compiler. Overall, however, the output is already readable, as you can see in the sample files.
 - I built much of the script with help from free-tier Claude and GPT. Sometimes they ruined my code, so I decided to rely mainly on my own logic. As a non-computer-science undergraduate, the efficiency of my code can probably still be improved.
+
+
+## Update (21/09/2026)
+
+- Previously, to reduce execution time, only the `solution_scraper` used a `ThreadPoolExecutor`. In the updated version, it is now used for the metadata, problems, and answers scrapers, reducing the aggregate execution time by **3×**.
+
+- Fixed the `decode_list` parser for `.tex` files. It currently supports a single `<ol>`/`<ul>` tag but does not yet support nested lists.
+
+- Retrieve all AMC contests and update the existing sample files across all contests.
+

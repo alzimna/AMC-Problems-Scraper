@@ -58,11 +58,12 @@ Let $p(n)$ denote the product of the distinct proper divisors of $n$. A number $
 
  
             \begin{enumerate}
-                \item It has exactly two distinct \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime} divisors.
+        \item It has exactly two distinct \href{https://artofproblemsolving.com/wiki/index.php?title=Prime}{prime} divisors.
             \begin{enumerate}[label=(\roman*)]
                 \item If we let $n = pq$, where $p,q$ are the prime factors, then its proper divisors are $p$ and $q$, and $p = p \cdot q = n$.
             \end{enumerate}
-            \item It is the cube of a prime number.
+            
+        \item It is the cube of a prime number.
             \begin{enumerate}[label=(\roman*)]
                 \item If we let $n=p^3$ with $p$ prime, then its proper divisors are $p$ and $p^2$, and $p = p \cdot p^2 =n$.
             \end{enumerate}
@@ -102,8 +103,6 @@ The only numbers that are "nice" will contain four factors, including one and it
 
 	\item (\textit{AIME I 1987}) Find the area of the region enclosed by the graph of $|x-60|+|y|=\left|\frac{x}{4}\right|.$
 
-
- 
  \textbf{Answer: }480
 
 
@@ -120,12 +119,11 @@ The only numbers that are "nice" will contain four factors, including one and it
  Since $|y|$ is \href{https://artofproblemsolving.com/wiki/index.php?title=Nonnegative}{nonnegative}, $\left|\frac{x}{4}\right| \ge |x - 60|$. Solving this gives us two equations: $\frac{x}{4} \ge x - 60\ \mathrm{and} \ -\frac{x}{4} \le x - 60$. Thus, $48 \le x \le 80$. The \href{https://artofproblemsolving.com/wiki/index.php?title=Maximum}{maximum} and \href{https://artofproblemsolving.com/wiki/index.php?title=Minimum}{minimum} y value is when $|x - 60| = 0$, which is when $x = 60$ and $y = \pm 15$. Since the graph is \href{https://artofproblemsolving.com/wiki/index.php?title=Symmetry}{symmetric} about the y-axis, we just need \href{https://artofproblemsolving.com/wiki/index.php?title=Casework}{casework} upon $x$. $\frac{x}{4} > 0$, so we break up the condition $|x-60|$:
 
  
-                \begin{itemize}
-                    \item $x - 60 > 0$. Then $y = -\frac{3}{4}x+60$.\item $x - 60 < 0$. Then $y = \frac{5}{4}x-60$.
-                \end{itemize}
-
-
-                The area of the region enclosed by the graph is that of the quadrilateral defined by the points $(48,0),\ (60,15),\ (80,0), \ (60,-15)$. Breaking it up into triangles and solving or using the \href{https://artofproblemsolving.com/wiki/index.php?title=Shoelace\_Theorem}{Shoelace Theorem}, we get $2 \cdot \frac{1}{2}(80 - 48)(15) = \boxed{480}$.
+            \begin{itemize}
+        \item $x - 60 > 0$. Then $y = -\frac{3}{4}x+60$.
+        \item $x - 60 < 0$. Then $y = \frac{5}{4}x-60$.
+            \end{itemize}
+            The area of the region enclosed by the graph is that of the quadrilateral defined by the points $(48,0),\ (60,15),\ (80,0), \ (60,-15)$. Breaking it up into triangles and solving or using the \href{https://artofproblemsolving.com/wiki/index.php?title=Shoelace\_Theorem}{Shoelace Theorem}, we get $2 \cdot \frac{1}{2}(80 - 48)(15) = \boxed{480}$.
 
  
 
@@ -166,8 +164,7 @@ If we move the $x^2$ term to the left side, it is factorable with \href{https://
 
  
  \[(3x^2 + 1)(y^2 - 10) = 517 - 10\]
-
- $507$ is equal to $3 \cdot 13^2$. Since $x$ and $y$ are integers, $3x^2 + 1$ cannot equal a multiple of three. $169$ doesn't work either, so $3x^2 + 1 = 13$, and $x^2 = 4$. This leaves $y^2 - 10 = 39$, so $y^2 = 49$. Thus, $3x^2 y^2 = 3 \times 4 \times 49 = \boxed{588}$.
+$507$ is equal to $3 \cdot 13^2$. Since $x$ and $y$ are integers, $3x^2 + 1$ cannot equal a multiple of three. $169$ doesn't work either, so $3x^2 + 1 = 13$, and $x^2 = 4$. This leaves $y^2 - 10 = 39$, so $y^2 = 49$. Thus, $3x^2 y^2 = 3 \times 4 \times 49 = \boxed{588}$.
 
  
 
@@ -194,8 +191,7 @@ First factor out the $y^2$ term on the left side.
  Due to the fact that $x$ and $y$ are integers $507/(3x^2 + 1)$ must be a integer too.
 
  We thus prime factorize and list the factors of $507$
-
- $507 = 13^2 \times 3$
+$507 = 13^2 \times 3$
 
  The factors of $507$ are $1, 3, 13, 39, 169, 507$
 
@@ -218,8 +214,6 @@ First factor out the $y^2$ term on the left side.
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }193
 
 
@@ -243,7 +237,6 @@ Since $XY = WZ$, $PQ = PQ$ and the \href{https://artofproblemsolving.com/wiki/in
 
 Let $YB=a$, $CZ=b$, $AX=c$, and $WD=d$. First we drop a perpendicular from $Q$ to a point $R$ on $BC$ so $QR=h$. Since $XY = WZ$ and $PQ = PQ$ and the \href{https://artofproblemsolving.com/wiki/index.php?title=Area}{areas} of the \href{https://artofproblemsolving.com/wiki/index.php?title=Trapezoid}{trapezoids} $PQZW$ and $PQYX$ are the same, the heights of the trapezoids are both $\frac{19}{2}$.From here, we have that $[BYQZC]=\frac{a+h}{2}*19/2+\frac{b+h}{2}*19/2=19/2* \frac{a+b+2h}{2}$. We are told that this area is equal to $[PXYQ]=\frac{19}{2}* \frac{XY+87}{2}=\frac{19}{2}* \frac{a+b+106}{2}$. Setting these equal to each other and solving gives $h=53$. In the same way, we find that the perpendicular from $P$ to $AD$ is $53$. So $AB=53*2+87=\boxed{193}$
 
- 
 
 
 
@@ -351,8 +344,6 @@ Notice that in order for $k$ to be unique, $\frac{n}{n + k+ 1} \le \frac{8}{15}$
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }033
 
 
@@ -565,12 +556,9 @@ Note that the cube root is increasing for positive reals while its derivative is
 
 
  $\underline{1 \quad 9} \quad 8 \quad 7$
-
- $1 \quad {}\underline{9 \quad 8} \quad 7$
-
- $1 \quad 8 \quad \underline{9 \quad 7}$
-
- $1 \quad 8 \quad 7 \quad 9$
+$1 \quad {}\underline{9 \quad 8} \quad 7$
+$1 \quad 8 \quad \underline{9 \quad 7}$
+$1 \quad 8 \quad 7 \quad 9$
 
  Suppose that $n = 40$, and that the terms of the initial sequence $r_1, r_2, \dots, r_{40}$ are distinct from one another and are in random order.  Let $p/q$, in lowest terms, be the probability that the number that begins as $r_{20}$ will end up, after one bubble pass, in the $30^{\mbox{th}}$ place.  Find $p + q$.
 
@@ -622,54 +610,37 @@ Assume we have a set of $40$ numbers, all distinct, that will be randomly shuffl
 
  
 $\frac{1}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}(39-k)\cdot9!\right)$
-
- $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}(39-k)\right)$
-
- $=\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
+$=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}(39-k)\right)$
+$=\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
 
  Now we deal with each sum separately. Looking at the first sum, we see that the factorials inside the summation bear a close resemblance to ${k\choose29}$. Indeed, we are able to use this to our advantage:
 
  $\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
-
- $=\frac{9!\cdot39\cdot29!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!\cdot29!}\right)$
-
- $=\frac{9!\cdot39\cdot29!}{40!}\sum_{k=29}^{38}{k\choose29}$
-
- $=\frac{9!\cdot39\cdot29!}{40!}{39\choose30}$
+$=\frac{9!\cdot39\cdot29!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!\cdot29!}\right)$
+$=\frac{9!\cdot39\cdot29!}{40!}\sum_{k=29}^{38}{k\choose29}$
+$=\frac{9!\cdot39\cdot29!}{40!}{39\choose30}$
 
  (The last equality is thanks to the \href{https://artofproblemsolving.com/wiki/index.php?title=Hockey-Stick\_Identity}{Hockey-Stick Identity}.)
 
  The second sum is similar to the first, but we must first replace $k$ with $(k+1)-1$:
 
  $\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
-
- $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot(k+1-1)}{(k-29)!}\right)$
-
- $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot(k+1)}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
-
- $=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{(k+1)!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
-
- $=\frac{9!\cdot30!}{40!}\sum_{k=29}^{38}{k+1\choose30}-\frac{9!\cdot29!}{40!}\sum_{k=29}^{38}{k\choose29}$
-
- $=\frac{9!\cdot30!}{40!}{40\choose31}-\frac{9!\cdot29!}{40!}{39\choose30}$
+$=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot(k+1-1)}{(k-29)!}\right)$
+$=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot(k+1)}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
+$=\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{(k+1)!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)$
+$=\frac{9!\cdot30!}{40!}\sum_{k=29}^{38}{k+1\choose30}-\frac{9!\cdot29!}{40!}\sum_{k=29}^{38}{k\choose29}$
+$=\frac{9!\cdot30!}{40!}{40\choose31}-\frac{9!\cdot29!}{40!}{39\choose30}$
 
  We are finally able to calculate the end result:
 
  $\frac{9!\cdot39}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}\right)-\frac{9!}{40!}\sum_{k=29}^{38}\left(\frac{k!\cdot k}{(k-29)!}\right)$
-
- $=\frac{9!\cdot39\cdot29!}{40!}{39\choose30}-\frac{9!\cdot30!}{40!}{40\choose31}+\frac{9!\cdot29!}{40!}{39\choose30}$
-
- $=\frac{9!\cdot40\cdot29!}{40!}{39\choose30}-\frac{9!\cdot30!}{40!}{40\choose31}$
-
- $=\frac{9!\cdot29!\cdot39!}{39!\cdot9!\cdot30!}-\frac{9!\cdot30!\cdot40!}{40!\cdot9!\cdot31!}$
-
- $=\frac{29!}{30!}-\frac{30!}{31!}$
-
- $=\frac{1}{30}-\frac{1}{31}$
-
- $=\frac{31}{930}-\frac{30}{930}$
-
- $=\frac{1}{930}$
+$=\frac{9!\cdot39\cdot29!}{40!}{39\choose30}-\frac{9!\cdot30!}{40!}{40\choose31}+\frac{9!\cdot29!}{40!}{39\choose30}$
+$=\frac{9!\cdot40\cdot29!}{40!}{39\choose30}-\frac{9!\cdot30!}{40!}{40\choose31}$
+$=\frac{9!\cdot29!\cdot39!}{39!\cdot9!\cdot30!}-\frac{9!\cdot30!\cdot40!}{40!\cdot9!\cdot31!}$
+$=\frac{29!}{30!}-\frac{30!}{31!}$
+$=\frac{1}{30}-\frac{1}{31}$
+$=\frac{31}{930}-\frac{30}{930}$
+$=\frac{1}{930}$
 
  Thus our answer is $1+930=\boxed{931}$.
 
@@ -680,8 +651,6 @@ $\frac{1}{40!}\sum_{k=29}^{38}\left(\frac{k!}{(k-29)!}(39-k)\cdot9!\right)$
 
  \[\frac{(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324)}{(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324)}.\]
 
-
- 
  \textbf{Answer: }373
 
 
@@ -694,7 +663,6 @@ so the original expression becomes
  \[\frac{[(10(10-6)+18)(10(10+6)+18)][(22(22-6)+18)(22(22+6)+18)]\cdots[(58(58-6)+18)(58(58+6)+18)]}{[(4(4-6)+18)(4(4+6)+18)][(16(16-6)+18)(16(16+6)+18)]\cdots[(52(52-6)+18)(52(52+6)+18)]},\] which simplifies to 
  \[\frac{(10(4)+18)(10(16)+18)(22(16)+18)(22(28)+18)\cdots(58(52)+18)(58(64)+18)}{(4(-2)+18)(4(10)+18)(16(10)+18)(16(22)+18)\cdots(52(46)+18)(52(58)+18)}.\]Almost all of the terms cancel out! We are left with $\frac{58(64)+18}{4(-2)+18} = \frac{3730}{10} = \boxed{373}.$
 
- 
 
 
 
@@ -731,15 +699,17 @@ We rewrite $N$ to the polar form
  By \textbf{De Moivre's Theorem}, we have 
  \[N^4=r^4\operatorname{cis}(4\theta)=18^2(-1),\] from which
 
- <ol style="margin-left: 1.5em;"> \item $r^4=18^2,$ so $r=3\sqrt2.$ 
+ 
+            \begin{enumerate} 
+        \item $r^4=18^2,$ so $r=3\sqrt2.$
 
- \item $\begin{cases} \begin{aligned} \cos(4\theta) &= -1 \\ \sin(4\theta) &= 0 \end{aligned}, \end{cases}$ so $\theta=\frac{\pi}{4},\frac{3\pi}{4},\frac{5\pi}{4},\frac{7\pi}{4}.$
+        \item $\begin{cases} \begin{aligned} \cos(4\theta) &= -1 \\ \sin(4\theta) &= 0 \end{aligned}, \end{cases}$ so $\theta=\frac{\pi}{4},\frac{3\pi}{4},\frac{5\pi}{4},\frac{7\pi}{4}.$
 
- </ol>By the \textbf{Factor Theorem}, we get
+            \end{enumerate}
+            By the \textbf{Factor Theorem}, we get
  \begin{align*} N^4+18^2&=\biggl(N-3\sqrt2\operatorname{cis}\frac{\pi}{4}\biggr)\biggl(N-3\sqrt2\operatorname{cis}\frac{3\pi}{4}\biggr)\biggl(N-3\sqrt2\operatorname{cis}\frac{5\pi}{4}\biggr)\biggl(N-3\sqrt2\operatorname{cis}\frac{7\pi}{4}\biggr) \\ &=\biggl[\biggl(N-3\sqrt2\operatorname{cis}\frac{\pi}{4}\biggr)\biggl(N-3\sqrt2\operatorname{cis}\frac{7\pi}{4}\biggr)\biggr]\biggl[\biggl(N-3\sqrt2\operatorname{cis}\frac{3\pi}{4}\biggr)\biggl(N-3\sqrt2\operatorname{cis}\frac{5\pi}{4}\biggr)\biggr] \\ &=\left[(N-(3+3i))(N-(3-3i))\right]\left[(N-(-3+3i))(N-(-3-3i))\right] \\ &=\left[((N-3)-3i)((N-3)+3i)\right]\left[((N+3)-3i)((N+3)+3i)\right] \\ &=\left[(N-3)^2+9\right]\left[(N+3)^2+9\right]. \end{align*}
 We continue with the last paragraph of Solution 2 to get the answer $\boxed{373}.$
 
- 
 
 
 
@@ -750,23 +720,23 @@ We rewrite $N$ to the rectangular form
 
  Note that $N^2=\pm18i,$ so there are two cases:
 
- <ol style="margin-left: 1.5em;"> <li>$N^2=18i$We have
+ 
+            \begin{enumerate} 
+        \item $N^2=18i$We have
  \begin{align*} (a+bi)^2&=18i \\ a^2-b^2+2abi&=18i. \end{align*}
 We need $\begin{cases} \begin{aligned} a^2-b^2 &= 0 \\ 2ab &= 18 \end{aligned}, \end{cases}$ from which $(a,b)=(3,3),(-3,-3),$ or $N=3+3i,-3-3i.$
 
- </li> 
 
- <li>$N^2=-18i$We have
+        \item $N^2=-18i$We have
  \begin{align*} (a+bi)^2&=-18i \\ a^2-b^2+2abi&=-18i. \end{align*}
 We need $\begin{cases} \begin{aligned} a^2-b^2 &= 0 \\ 2ab &= -18 \end{aligned}, \end{cases}$ from which $(a,b)=(3,-3),(-3,3),$ or $N=3-3i,-3+3i.$
 
- </li>
 
- </ol>By the \textbf{Factor Theorem}, we get
+            \end{enumerate}
+            By the \textbf{Factor Theorem}, we get
  \begin{align*} N^4+18^2&=(N-(3+3i))(N-(-3-3i))(N-(3-3i))(N-(-3+3i)) \\ &=\left[(N-(3+3i))(N-(3-3i))\right]\left[(N-(-3+3i))(N-(-3-3i))\right] \\ &=\left[((N-3)-3i)((N-3)+3i)\right]\left[((N+3)-3i)((N+3)+3i)\right] \\ &=\left[(N-3)^2+9\right]\left[(N+3)^2+9\right]. \end{align*}
 We continue with the last paragraph of Solution 2 to get the answer $\boxed{373}.$
 
- 
 
 
 
@@ -791,8 +761,6 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
                     \end{figure}
                     
 
-
- 
  \textbf{Answer: }462
 
 
@@ -830,7 +798,6 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
                     \end{figure}
                     
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/AIME_I_1987_15_Solution_Figure_3.png}
@@ -840,20 +807,14 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
  Label points as above. Let $x=AC$, $y=BC$, $s_1 = 21$ be the side length of $S_1$, and $s_2 = \sqrt{440}$ be the side length of $S_2$.
 
  Since $\triangle ABC\sim\triangle AED$, we have $\frac{x}{y} = \frac{x-s_1}{s_1}$
-
- $\implies xs_1=xy-ys_1$
-
- $\implies xy=s_1(x+y)$
-
- $\implies xy=21(x+y) \qquad \qquad (*)$.
+$\implies xs_1=xy-ys_1$
+$\implies xy=s_1(x+y)$
+$\implies xy=21(x+y) \qquad \qquad (*)$.
 
  Since $\triangle ABC\sim\triangle AWX\sim\triangle ZBY$, we have $s_2 + \frac{s_2x}{y} + \frac{s_2y}{x}=\sqrt{x^2+y^2}$
-
- $\implies s_2(x^2+xy+y^2)=xy\sqrt{x^2+y^2}$
-
- $\implies s_2^2(x^2+xy+y^2)^2 = x^2y^2(x^2+y^2)$
-
- $\implies 440(x^2+xy+y^2)^2 = x^2y^2(x^2+y^2)$
+$\implies s_2(x^2+xy+y^2)=xy\sqrt{x^2+y^2}$
+$\implies s_2^2(x^2+xy+y^2)^2 = x^2y^2(x^2+y^2)$
+$\implies 440(x^2+xy+y^2)^2 = x^2y^2(x^2+y^2)$
 
  Let $t=x+y$. Repeatedly applying $(*)$, we get
  \[440(t^2-21t)^2 = 441t^2(t^2 - 42t)\]
@@ -864,7 +825,6 @@ We use Sophie Germain's Identity to rewrite the first couple of multiplicands in
  \[t-21=441\]
  \[t=\boxed{462}\]
 
- 
 
 
 \end{enumerate}
