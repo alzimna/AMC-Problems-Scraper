@@ -16,6 +16,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -40,6 +41,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -60,6 +62,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -84,6 +87,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -108,6 +112,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -128,6 +133,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -148,6 +154,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -172,6 +179,7 @@
                 "headline":"Solution 2 (Greater detail and more straightforward)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -192,6 +200,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -228,6 +237,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -252,6 +262,7 @@
                 "headline":"Solution 2 (combinatorial via Burnside\u2019s lemma)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -276,6 +287,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -301,6 +313,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -321,6 +334,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -341,6 +355,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -361,6 +376,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -385,6 +401,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -405,6 +422,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -433,6 +451,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -453,6 +472,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -473,6 +493,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -493,6 +514,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -513,6 +535,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -537,6 +560,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -560,6 +584,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -584,6 +609,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
             "USAMO_I_2022_2_Problem_Figure_1.png"
         ],
@@ -604,6 +630,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -632,6 +659,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -652,6 +680,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -672,6 +701,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -692,6 +722,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -709,6 +740,7 @@
         "solutions":{
 
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -729,6 +761,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":9,
         "figures_problem":[
             "USAMO_I_2021_3_Problem_Figure_1.png"
         ],
@@ -746,6 +779,7 @@
         "solutions":{
 
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -766,6 +800,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -790,6 +825,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -812,6 +848,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -832,6 +869,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -852,6 +890,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -876,6 +915,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -896,6 +936,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -916,6 +957,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -936,6 +978,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -964,6 +1007,7 @@
                 "headline":"Solution 3 (Only Simple Concepts, w\/ Video)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -985,6 +1029,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1013,6 +1058,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1033,6 +1079,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1053,6 +1100,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1081,6 +1129,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1101,6 +1150,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1121,6 +1171,7 @@
                 "headline":"Solution (NO FORMATTING)"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1145,6 +1196,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1165,6 +1217,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1185,6 +1238,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1221,6 +1275,7 @@
                 "headline":"Solution 5 (Motivation for Solution)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1238,6 +1293,7 @@
         "solutions":{
 
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1258,6 +1314,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1284,6 +1341,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1312,6 +1370,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1332,6 +1391,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1356,6 +1416,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1392,6 +1453,7 @@
                 "headline":"Solution 5 (Structural Proof without polynomials)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1416,6 +1478,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1443,6 +1506,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1471,6 +1535,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1496,6 +1561,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1520,6 +1586,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1552,6 +1619,7 @@
                 "headline":"Solution 4(synthetic)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1572,6 +1640,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1592,6 +1661,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1620,6 +1690,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1640,6 +1711,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1660,6 +1732,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1692,6 +1765,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1720,6 +1794,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1740,6 +1815,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1764,6 +1840,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1784,6 +1861,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1820,6 +1898,7 @@
                 "headline":"Solution 5 (Simple Rotational Homotethy)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1851,6 +1930,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1876,6 +1956,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1900,6 +1981,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1924,6 +2006,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -1944,6 +2027,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -1968,6 +2052,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -1988,6 +2073,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2008,6 +2094,7 @@
                 "headline":"Solution that involves a non-elementary result"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2032,6 +2119,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2060,6 +2148,7 @@
                 "headline":"Solution 3, Cartesian"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2084,6 +2173,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2116,6 +2206,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2136,6 +2227,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2168,6 +2260,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2192,6 +2285,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2224,6 +2318,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2252,6 +2347,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2280,6 +2376,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2305,6 +2402,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2325,6 +2423,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2357,6 +2456,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2377,6 +2477,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2397,6 +2498,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2417,6 +2519,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2441,6 +2544,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2461,6 +2565,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
             "USAMO_I_2009_3_Problem_Figure_1.png"
         ],
@@ -2485,6 +2590,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2509,6 +2615,7 @@
                 "headline":"Solution 2 (Projective)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2530,6 +2637,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2574,6 +2682,7 @@
                 "headline":"Solution 6"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2638,6 +2747,7 @@
                 "headline":"Solution 11 (Bary from EGMO)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2674,6 +2784,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2696,6 +2807,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2723,6 +2835,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2759,6 +2872,7 @@
                 "headline":"Solution 4 (proving only existence of solution)"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2807,6 +2921,7 @@
                 "headline":"Solution 7(A simpler version of Solution 1)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -2835,6 +2950,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2867,6 +2983,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2899,6 +3016,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7,
         "figures_problem":[
             "USAMO_I_2007_4_Problem_Figure_1.PNG"
         ],
@@ -2928,6 +3046,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -2952,6 +3071,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -2976,6 +3096,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3000,6 +3121,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3028,6 +3150,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3052,6 +3175,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3080,6 +3204,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3112,6 +3237,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3140,6 +3266,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3172,6 +3299,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3204,6 +3332,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3236,6 +3365,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3264,6 +3394,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3284,6 +3415,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3308,6 +3440,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3328,6 +3461,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3348,6 +3482,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3376,6 +3511,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3396,6 +3532,7 @@
                 "headline":"Solutions"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3416,6 +3553,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3448,6 +3586,7 @@
                 "headline":"Solution 3 (Construct digits of exemplar.)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3468,6 +3607,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3488,6 +3628,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3516,6 +3657,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3557,6 +3699,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3577,6 +3720,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3607,6 +3751,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3631,6 +3776,7 @@
                 "headline":"Solution 2 (Lagrange Multipliers)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3659,6 +3805,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3687,6 +3834,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3727,6 +3875,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3759,6 +3908,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3787,6 +3937,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3823,6 +3974,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3855,6 +4007,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3903,6 +4056,7 @@
                 "headline":"Solution 7"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -3923,6 +4077,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -3943,6 +4098,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -3979,6 +4135,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4003,6 +4160,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4023,6 +4181,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4047,6 +4206,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4075,6 +4235,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4099,6 +4260,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4123,6 +4285,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4143,6 +4306,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4163,6 +4327,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4195,6 +4360,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4215,6 +4381,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4235,6 +4402,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4255,6 +4423,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4279,6 +4448,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4299,6 +4469,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4319,6 +4490,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4339,6 +4511,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4359,6 +4532,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4380,6 +4554,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4408,6 +4583,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4428,6 +4604,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4448,6 +4625,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4476,6 +4654,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4496,6 +4675,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4528,6 +4708,7 @@
                 "headline":"Solution 3 -hashtagmath"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4552,6 +4733,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4572,6 +4754,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4592,6 +4775,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4624,6 +4808,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4644,6 +4829,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4664,6 +4850,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4684,6 +4871,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4708,6 +4896,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4728,6 +4917,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4748,6 +4938,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4776,6 +4967,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4796,6 +4988,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4816,6 +5009,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4842,6 +5036,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4862,6 +5057,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4894,6 +5090,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4914,6 +5111,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4934,6 +5132,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -4954,6 +5153,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -4974,6 +5174,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -4994,6 +5195,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5030,6 +5232,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5050,6 +5253,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5078,6 +5282,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5098,6 +5303,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5122,6 +5328,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5142,6 +5349,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5166,6 +5374,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5186,6 +5395,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5210,6 +5420,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
             "USAMO_I_1991_5_Problem_Figure_1.png"
         ],
@@ -5234,6 +5445,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5258,6 +5470,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5278,6 +5491,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5298,6 +5512,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5330,6 +5545,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5350,6 +5566,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5386,6 +5603,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5406,6 +5624,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5430,6 +5649,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5450,6 +5670,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5478,6 +5699,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5510,6 +5732,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5530,6 +5753,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5566,6 +5790,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5598,6 +5823,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5618,6 +5844,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5638,6 +5865,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5658,6 +5886,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5678,6 +5907,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5698,6 +5928,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5718,6 +5949,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5738,6 +5970,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5762,6 +5995,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5782,6 +6016,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5806,6 +6041,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5826,6 +6062,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5846,6 +6083,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5866,6 +6104,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -5886,6 +6125,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5906,6 +6146,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5942,6 +6183,7 @@
                 "headline":"Solution 5 (If You Don't Know Vieta)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -5966,6 +6208,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -5986,6 +6229,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6006,6 +6250,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6026,6 +6271,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6046,6 +6292,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6070,6 +6317,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6090,6 +6338,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6110,6 +6359,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6130,6 +6380,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6150,6 +6401,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6170,6 +6422,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6190,6 +6443,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6210,6 +6464,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6230,6 +6485,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6250,6 +6506,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6270,6 +6527,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6290,6 +6548,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6310,6 +6569,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6330,6 +6590,7 @@
                 "headline":"Solution(due to Pavel Zatitskiy)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6350,6 +6611,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6374,6 +6636,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6394,6 +6657,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6414,6 +6678,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6434,6 +6699,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6458,6 +6724,7 @@
                 "headline":"Solution  2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6478,6 +6745,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6498,6 +6766,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6522,6 +6791,7 @@
                 "headline":"Solution (trig bash)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6542,6 +6812,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6574,6 +6845,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6598,6 +6870,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
             "USAMO_I_1978_2_Problem_Figure_1.png"
         ],
@@ -6618,6 +6891,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6638,6 +6912,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6658,6 +6933,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6686,6 +6962,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6703,6 +6980,7 @@
         "solutions":{
 
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6723,6 +7001,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6747,6 +7026,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6767,6 +7047,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6791,6 +7072,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
             "USAMO_I_1976_1_Problem_Figure_1.png"
         ],
@@ -6816,6 +7098,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
             "USAMO_I_1976_2_Problem_Figure_1.png"
         ],
@@ -6836,6 +7119,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6860,6 +7144,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6892,6 +7177,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6909,6 +7195,7 @@
         "solutions":{
 
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -6945,6 +7232,7 @@
                 "headline":"Solution 4 (Vector bash)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -6970,6 +7258,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -6990,6 +7279,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
             "USAMO_I_1975_4_Problem_Figure_1.png"
         ],
@@ -7022,6 +7312,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -7062,6 +7353,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -7118,6 +7410,7 @@
                 "headline":"Solution 10"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -7142,6 +7435,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -7162,6 +7456,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -7194,6 +7489,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":8,
         "figures_problem":[
             "USAMO_I_1974_5_Problem_Figure_1.png"
         ],
@@ -7225,6 +7521,7 @@
                 "headline":"Solution 2 (similar to solution 1, but full proof)"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -7253,6 +7550,7 @@
                 "headline":"Solution 3 (simple)"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -7273,6 +7571,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -7297,6 +7596,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -7321,6 +7621,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -7357,6 +7658,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -7401,6 +7703,7 @@
                 "headline":"Solution 6"
             }
         },
+        "difficulty":8,
         "figures_problem":[
 
         ],
@@ -7425,6 +7728,7 @@
                 "headline":"Solution 2 (Recursion)"
             }
         },
+        "difficulty":9,
         "figures_problem":[
 
         ],
@@ -7445,6 +7749,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7,
         "figures_problem":[
 
         ],
@@ -7465,6 +7770,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":8,
         "figures_problem":[
             "USAMO_I_1972_5_Problem_Figure_1.png"
         ],

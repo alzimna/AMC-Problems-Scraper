@@ -79,3 +79,46 @@ FIG_CONDITION = lambda tag : ((tag.name == 'img') and
                             ((tag.get('class') == ['mw-file-element']) or
                             ((tag.get('class') == ['latexcenter']) and '[asy]' in tag.get('alt')))
                             )
+
+DIFFICULTY_LEVEL = dict()
+
+def buildList(contest,start,end,lvl) :
+    for i in range(start,end+1) :
+        DIFFICULTY_LEVEL[(contest,i)] = lvl
+
+CONTEST_DIFF = [
+    ('AMC_8',1,10,1),
+    ('AMC_8',11,20,1.5),
+    ('AMC_8',21,25,2),
+    ('AMC_10',1,5,1),
+    ('AMC_10',6,20,2),
+    ('AMC_10',21,25,3),
+    ('AMC_12',1,10,2),
+    ('AMC_12',11,20,3),    
+    ('AMC_12',21,25,4),
+    ('AHSME',1,10,1),
+    ('AHSME',11,20,2),    
+    ('AHSME',21,40,3),
+    ('AHSME',31,50,4),
+    ('AIME',1,5,3),
+    ('AIME',6,9,4),
+    ('AIME',10,12,5),
+    ('AIME',13,15,6),
+    ('USAMO',1,1,7),
+    ('USAMO',2,2,8),
+    ('USAMO',3,3,9),
+    ('USAMO',4,4,7),
+    ('USAMO',5,5,8),
+    ('USAMO',6,6,9),
+    ('USAJMO',1,1,6),
+    ('USAJMO',2,2,6.5),
+    ('USAJMO',3,3,7),
+    ('USAJMO',4,4,6),
+    ('USAJMO',5,5,6.5),
+    ('USAJMO',6,6,7),
+]
+
+for p in CONTEST_DIFF :
+    buildList(*p)
+
+CONTESTS = ['AHSME', 'AIME', 'AMC_10', 'AMC_12', 'AMC_8', 'USAJMO', 'USAMO']
