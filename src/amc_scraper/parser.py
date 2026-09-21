@@ -48,10 +48,6 @@ ACT_PROB = {
     'hr': lambda target,item : target.replace(str(item),''),
 }
 
-ACT_PROB_HTML = {
-    'a' : lambda target,item : decode_link_html(target,item),
-}
-
 FIG_CONDITION = lambda tag : ((tag.name == 'img') and 
                             ((tag.get('class') == ['mw-file-element']) or
                             ((tag.get('class') == ['latexcenter']) and '[asy]' in tag.get('alt')))
@@ -331,6 +327,7 @@ def parsing_sol_statement_to_tex(statement) :
         decode_list,
         decode_verbatim
     ]
+
     statement_tex = statement
 
     soup = BeautifulSoup(statement_tex,'html.parser')
@@ -383,6 +380,10 @@ def parsing_sol_to_tex(contest) :
 
 # ====================== HTML Parser =================================
 
+ACT_PROB_HTML = {
+    'a' : lambda target,item : decode_link_html(target,item),
+}
+
 def decode_img_html(df,row,statement_html,type) :
     statement_soup = BeautifulSoup(statement_html,'html.parser')
     if type == 'p' :
@@ -408,7 +409,6 @@ def decode_img_html(df,row,statement_html,type) :
             statement_html = statement_html.replace(str(tag),temp)
     return statement_html
 
-
 def decode_tag_html(statement) :
     statement_soup = BeautifulSoup(statement,'html.parser')
     statement_cleaned = statement
@@ -424,10 +424,13 @@ def decode_link_html(target,item) :
     else :
         href = item.get("href")        
         temp = r"https://artofproblemsolving.com"
-        if href is not None and (temp in href or "https" in href):
-            temp = href
+        if href is not None :
+            if (temp in href or "https" in href) :
+                temp = href
+            else :
+                temp = temp + href
         else :
-            temp = temp + href
+            return target.replace(str(item),'')
         item_cleaned = copy.copy(item)
         item_cleaned['href'] = temp
         return target.replace(str(item),str(item_cleaned))
@@ -485,7 +488,7 @@ def parsing_sol_to_html(contest) :
         for key,value in solutions.items() :
             headline = value['headline']
             solution = value['content']
-            if len(solution) == 0 :
+            if (len(solution) == 0):
                 subs+=1
                 continue
             countrev = int(key.split("_")[-1])-subs

@@ -34,6 +34,11 @@ def build_full(contest = 'AIME') :
                             how = 'left',
                             on = ['year','version','problem_number']))
 
+    for i in range(len(df_full)) :
+        p = (df_full.loc[i,'contest'],df_full.loc[i,'problem_number'])
+        lvl = DIFFICULTY_LEVEL[p]
+        df_full.loc[i,'difficulty'] = lvl
+
     fullpath = DATA_PATH / contest / FULL_NAME
     (df_full.to_json(fullpath,orient = 'records',indent=4)
         )

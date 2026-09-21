@@ -98,11 +98,17 @@ Since I have a full-time job and only code in my spare time, so far I have only 
 - I built much of the script with help from free-tier Claude and GPT. Sometimes they ruined my code, so I decided to rely mainly on my own logic. As a non-computer-science undergraduate, the efficiency of my code can probably still be improved.
 
 
-## Update (21/09/2026)
+## Update (21/09/2026) - Final Version V2.0
 
 - Previously, to reduce execution time, only the `solution_scraper` used a `ThreadPoolExecutor`. In the updated version, it is now used for the metadata, problems, and answers scrapers, reducing the aggregate execution time by **3×**.
 
 - Fixed the `decode_list` parser for `.tex` files. It currently supports a single `<ol>`/`<ul>` tag but does not yet support nested lists.
 
-- Retrieve all AMC contests and update the existing sample files across all contests.
+- Retrieved all AMC contests and updated the existing sample files across all contests.
+
+- Added difficulty data based on [AoPS's difficulty breakdown](https://artofproblemsolving.com/wiki/index.php?title=AoPS_Wiki:Competition_ratings).
+
+- Compiled a total of **6,957 problems with solutions** from forum discussions on AoPS across all AMC contests, presented in `AMC_full.xlsx`.
+
+- Built `html.json` for all contests for my [Math Dojo](https://alzimna.github.io/Math-Dojo/) project.
 

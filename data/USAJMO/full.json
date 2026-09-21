@@ -28,6 +28,7 @@
                 "headline":"Solution 5 (0 tech)"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -52,6 +53,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -85,6 +87,7 @@
                 "headline":"Solution 4 (Complex Bash)"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -121,6 +124,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -156,6 +160,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -180,6 +185,7 @@
                 "headline":"Solution 2 (Concordance, Another version of Convexity)"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -201,6 +207,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -221,6 +228,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -245,6 +253,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -269,6 +278,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -305,6 +315,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -325,6 +336,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -365,6 +377,7 @@
                 "headline":"Solution 5 (Euclidean)"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -390,6 +403,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -410,6 +424,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -434,6 +449,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -474,6 +490,7 @@
                 "headline":"Solution 6"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -498,6 +515,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -518,6 +536,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -558,6 +577,7 @@
                 "headline":"Solution 6 (complex)"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -578,6 +598,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -602,6 +623,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -622,6 +644,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -646,6 +669,7 @@
                 "headline":"Solution 2 (Inversion)"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -670,6 +694,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -698,6 +723,7 @@
                 "headline":"Solution 3: Graph Theoretic"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -722,6 +748,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
             "USAJMO_I_2022_3_Problem_Figure_1.png"
         ],
@@ -742,6 +769,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -762,6 +790,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -782,6 +811,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -810,6 +840,7 @@
                 "headline":"Solution 3 (clear Solution 2)"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -830,6 +861,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -850,6 +882,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
             "USAJMO_I_2021_3_Problem_Figure_1.png"
         ],
@@ -870,6 +903,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -890,6 +924,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -910,6 +945,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -930,6 +966,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -954,6 +991,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -974,6 +1012,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1014,6 +1053,7 @@
                 "headline":"Solution 6"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1038,6 +1078,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1055,6 +1096,7 @@
         "solutions":{
 
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1087,6 +1129,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1111,6 +1154,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1135,6 +1179,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1167,6 +1212,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1191,6 +1237,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1211,6 +1258,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1247,6 +1295,7 @@
                 "headline":"Solution 5"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1275,6 +1324,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1307,6 +1357,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1328,6 +1379,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1348,6 +1400,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1368,6 +1421,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1408,6 +1462,7 @@
                 "headline":"Solution 6 (Motivation for Solution)"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1440,6 +1495,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1480,6 +1536,7 @@
                 "headline":"Solution 6 Without the nasty computations"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1505,6 +1562,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1537,6 +1595,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1564,6 +1623,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1592,6 +1652,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1613,6 +1674,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1637,6 +1699,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1657,6 +1720,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1677,6 +1741,7 @@
                 "headline":"Solution 1"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1701,6 +1766,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1725,6 +1791,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1745,6 +1812,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1773,6 +1841,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1797,6 +1866,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1821,6 +1891,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1841,6 +1912,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1861,6 +1933,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1885,6 +1958,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1917,6 +1991,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -1941,6 +2016,7 @@
                 "headline":"Solution 2 (Simple)"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -1961,6 +2037,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -1985,6 +2062,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2033,6 +2111,7 @@
                 "headline":"Solution 8"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2053,6 +2132,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2089,6 +2169,7 @@
                 "headline":"Solution 5 (Simple Rotational Homotethy)"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2116,6 +2197,7 @@
                 "headline":"Solution with Explanations"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2152,6 +2234,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2172,6 +2255,7 @@
                 "headline":"Solution with Thought Process"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2196,6 +2280,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2220,6 +2305,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2260,6 +2346,7 @@
                 "headline":"Solution 6"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2280,6 +2367,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2316,6 +2404,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2344,6 +2433,7 @@
                 "headline":"Solution 3, Cartesian"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2384,6 +2474,7 @@
                 "headline":"Solution 6"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2416,6 +2507,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2448,6 +2540,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2468,6 +2561,7 @@
                 "headline":"Solution"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2504,6 +2598,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2528,6 +2623,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2576,6 +2672,7 @@
                 "headline":"Solution 7"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2604,6 +2701,7 @@
                 "headline":"Solution 3"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2632,6 +2730,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
@@ -2665,6 +2764,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":6.0,
         "figures_problem":[
 
         ],
@@ -2689,6 +2789,7 @@
                 "headline":"Solution 2"
             }
         },
+        "difficulty":6.5,
         "figures_problem":[
 
         ],
@@ -2721,6 +2822,7 @@
                 "headline":"Solution 4"
             }
         },
+        "difficulty":7.0,
         "figures_problem":[
 
         ],
