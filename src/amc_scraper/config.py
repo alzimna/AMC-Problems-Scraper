@@ -1,19 +1,31 @@
 from pathlib import Path
 from selenium import webdriver
+from seleniumbase import Driver
+options = {
+    "browser" : "chrome",
+    "uc" : True,
+    "headless" : True,
+    "locale" : "en",
+    "page_load_strategy" : "eager",
+}
 
-USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
+# USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
 
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument(f'--user-agent={USER_AGENT}') 
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-gpu')
-options.add_argument('--window-size=1420,1080')
-options.page_load_strategy = 'eager'
-options.add_argument("--disable-extensions")
-options.add_argument("--disable-dev-shm-usage")
-
-
+# options = webdriver.ChromeOptions()
+# # options.add_argument('--headless')
+# options.add_argument(f'--user-agent={USER_AGENT}')
+# options.add_argument("--headless=new")         # Run without a visible UI
+# options.add_argument("--start-maximized")      # Open browser maximized
+# options.add_argument("--incognito")            # Start in incognito mode
+# options.add_argument("--disable-notifications") # Block browser pop-up noti
+# # options.add_argument('--no-sandbox')
+# # options.add_argument('--disable-gpu')
+# # options.add_argument("start-maximized")
+# # options.page_load_strategy = 'eager'
+# # options.add_argument("--disable-extensions")
+# # options.add_argument("--disable-dev-shm-usage")
+# # options.add_argument("--disable-blink-features=AutomationControlled")
+# # options.add_experimental_option("excludeSwitches", ["enable-automation"])
 
 VSWAIT = 1
 SWAIT = 3
