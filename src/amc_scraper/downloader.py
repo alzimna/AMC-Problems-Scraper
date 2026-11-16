@@ -103,7 +103,7 @@ def download_figures(download, type, contest) :
         for attempt in range(3) :
             try :
                 if Path(url.split('/')[-1]).suffix == '.gif' :
-                    browser = webdriver.Chrome(options=options)
+                    browser = Driver(**options)
                     browser.get(url)
 
                     img_element = browser.find_element(By.XPATH, "//img")
@@ -121,7 +121,7 @@ def download_figures(download, type, contest) :
                     success = True
                     break
             except Exception as e :
-                browser = webdriver.Chrome(options=options)
+                browser = Driver(**options)
                 browser.get(url)
 
                 img_element = browser.find_element(By.XPATH, "//img")

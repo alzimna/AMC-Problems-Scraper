@@ -21,14 +21,13 @@ from .utils import *
 
 def get_first_soup(contest = 'AIME') :
     URL = f"https://artofproblemsolving.com/wiki/index.php/{contest}_Problems_and_Solutions"
-    browser = webdriver.Chrome(options=options)
+    browser = Driver(**options)
     selector = TABLE_SELECTOR[contest]
-    
     print_message(f"Retrieving {contest} Wiki Page Using Selenium",'\r')
     try:
         browser.get(URL)
         wait = WebDriverWait(browser,
-                            timeout=SWAIT,
+                            timeout=MWAIT,
                             poll_frequency=2, 
                             ignored_exceptions=[NoSuchElementException])
         element = wait.until(
@@ -78,7 +77,7 @@ def get_soup(source,
         t = LWAIT
 
     for attempt in range(1,max_retries+1) :
-        browser = webdriver.Chrome(options=options)
+        browser = Driver(**options)
         wait = WebDriverWait(browser,
                             timeout= t,
                             poll_frequency=1,
@@ -136,7 +135,7 @@ def get_contest_metadata_from_link(contest,elem) :
         vers = 'I'
 
     for attempt in range(1,4) :
-        browser = webdriver.Chrome(options=options)
+        browser = Driver(**options)
         wait = WebDriverWait(browser,
                         timeout=5,
                         poll_frequency=1, 
