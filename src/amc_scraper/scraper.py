@@ -27,7 +27,7 @@ def get_first_soup(contest = 'AIME') :
     try:
         browser.get(URL)
         wait = WebDriverWait(browser,
-                            timeout=MWAIT,
+                            timeout=5,
                             poll_frequency=2, 
                             ignored_exceptions=[NoSuchElementException])
         element = wait.until(
@@ -79,15 +79,19 @@ def get_soup(source,
     for attempt in range(1,max_retries+1) :
         browser = Driver(**options)
         wait = WebDriverWait(browser,
-                            timeout= t,
-                            poll_frequency=1,
+                            timeout= MWAIT,
+                            poll_frequency=attempt,
                             ignored_exceptions=[NoSuchElementException])
         try:
-            browser.get(url)
+            
             if type != 's' :
+                browser.get(url)
                 wait.until(wait_for_visible_count(*selector))
                 html_source =  browser.page_source
             else :
+                browser.get(source)
+                browser.sleep(1)
+                browser.get(url)
                 browser.implicitly_wait(MWAIT) 
                 html_source = browser.execute_script("return document.body.textContent")
             soup = BeautifulSoup(html_source,'html.parser')
@@ -100,9 +104,11 @@ def get_soup(source,
                     return content
             else :
                 print_message(f"Retrieving {problem_title} Failed: content selector not found, retrying...({attempt})",'\r')
+                time.sleep(2**attempt)
                 
         except Exception as e :
             print_message(f"Retrieving {problem_title} Failed Retrying...({attempt})",'\r')
+            time.sleep(2**attempt)
             soup = None
         finally:
             browser.quit()

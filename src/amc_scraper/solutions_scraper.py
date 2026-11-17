@@ -76,7 +76,7 @@ def get_solutions_from_page(source,numprob,number) :
             continue
 
         if video_condition(child) :
-            break
+            continue
         
         if "wikitable" in (child.get("class") or []):
             break
