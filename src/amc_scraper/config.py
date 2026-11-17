@@ -2,7 +2,7 @@ from pathlib import Path
 from selenium import webdriver
 from seleniumbase import Driver
 options = {
-    "browser" : "chrome",
+    "browser" : "chrome" ,
     "uc" : True,
     "headless" : True,
     "locale" : "en",
