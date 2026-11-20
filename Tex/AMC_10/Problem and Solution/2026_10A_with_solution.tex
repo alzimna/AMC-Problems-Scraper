@@ -1,0 +1,2542 @@
+\section{AMC 10 10A 2026}
+        \begin{enumerate}
+        	\item (\textit{AMC 10 10A 2026}) Helena's vinyl record collection contains $33$ LP records and $45$ EP records. An LP record plays for three times as long as an EP record. How many more EP records must Helena buy so that the total playing time of her EP records equals the total playing time of her LP records?
+$\textbf{(A) } 45 \qquad \textbf{(B) } 54 \qquad \textbf{(C) } 63 \qquad \textbf{(D) } 78 \qquad \textbf{(E) } 87$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Let $t$ be the playing time of one EP record. Then one LP record plays for $3t$, so the 33 LP records have a total playing time of $33 \cdot 3t = 99t$.
+
+ Let $x$ be the number of additional EP records needed. The total playing time of the EP collection is then $(45 + x)\,t$. Setting the two playing times equal gives
+
+ 
+ \[33 \cdot 3t = (45 + x)\,t \implies 99 = 45 + x \implies x = \boxed{\text{(B) } 54}.\]
+
+
+
+
+\textbf{Solution 2}
+
+Let an EP record play for 1 minute. Then LP plays for three, hence the total time is 99. We have $99-45 = \boxed{54}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Because the option choices all have different unit digits, we can just analyze the unit digits. $33*3$ which can be $3*3=9$, and we have $45$ minutes already, which is $5$, so $9-5=4$ so the answer choices all have must end in a $4$, so the answer is $\boxed{54}$ Note that this is basically solution $2$.
+
+ Commented by ~Bluedolphinn36, a friend of Horseneck3
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We can use the method of back-solving to find the answer to the problem. We have multiple-choice options available to us for use, so simply plug in the options into Total EPs = $45$ + (Answer Choice). Since $1$ LP = $3$ EPs, the total number must be divisible by three and must equal $33$. So, starting with A, $45$+$45$=$90$; $90$/$3$ = $30$ LPs. It cannot be A (we need $33$ LPs). We now must try B: $45+54=99$; $\frac{99}{3} = 33$ LPs. Therefore, the answer is $\boxed{54}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Sentence-long)}
+
+33 LP records are like 99 EP records, and with 45 EP records, we subtract $99-45 = \boxed{54}$.
+
+ Note: This is basically solution $2$, except it's a sentence.
+
+ 
+
+
+
+\textbf{Solution 6 (Calculus)}
+
+Let $t>0$ be the playing time of one EP. Then the total playing time of Helena's LPs is $33(3t)=99t$.
+
+ For real $x\geq 0$, define
+ \[f(x)=(45+x)t-99t.\]For integer $x$, this is the total EP playing time minus the total LP playing time after Helena adds $x$ EPs. Thus we seek an integer $x$ for which $f(x)=0$.
+
+ Since $f(0)=-54t$ and $f'(x)=t$, the Fundamental Theorem of Calculus gives
+ \[0=f(x)=f(0)+\int_0^x f'(u)\,du=-54t+\int_0^x t\,du=-54t+xt.\]Dividing by $t$ gives $x=54$, so Helena needs $\boxed{\textbf{(B) }54}$ additional EPs.
+
+ Note: the problem where this is linked is covered 0:10-0:55
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) A sign in a parking lot states that the total price includes a $27\%$ tax. To the nearest whole number, what percentage of the amount a customer pays is this tax?
+
+
+ $\textbf{(A)}\ 21\% \qquad \textbf{(B)}\ 22\% \qquad \textbf{(C)}\ 27\% \qquad \textbf{(D)}\ 37\% \qquad \textbf{(E)}\ 73\%$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Let the original ticket be $\$100$. Then the tax would be $\$100 \cdot 27\% = \$27$. The customer pays $100+27=\$127$, so the percentage is $\frac{27}{127}=\fbox{\textbf{(A)}\ 21\%}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $a$ represent the cost of the ticket. Then, the total cost (with tax) is $\frac{127}{100} a$. The tax is $\frac{27}{100}a$. Thus tax takes up $\frac{27}{127}$. Through long division to three decimals, this is 0.213, or 21.3\%, and so the answer is $\fbox{\textbf{(A)}\ 21\%}$.Note: in this problem, don't take the shortcut by estimating unless you're really good at it.
+
+ 
+
+
+
+\textbf{Solution 3 (estimation of 27/127)}
+
+Let us say that you want to estimate $\frac{27}{127}$ because high risk, high reward (so basically you're a maniac).
+
+ We wish to figure out what percent of 127 is 27. First, we know that $10\%$ of $127$ is $12.7$. Multiplying by two gives $20\%$ of $127$, which we find to be $25.4$. This means we are very close to the answer. Because $1\%$ of $127$ is $1.27$, we know that $21\%$ is $26.67$. On the contrary, $22\%$ is $1.27$ more, so it would be farther away from $27$ than $26.67$. Thus, our answer is $\fbox{\textbf{(A)}\ 21\%}$.
+
+ Note: the problem where this is linked is covered 1:00-1:20
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Square $ABCD$ has side length $24$. Let $E$ be the midpoint of $\overline{BC}$, and let $\overline{F}$ be the intersection of $\overline{AE}$ and $\overline{BD}$.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_2026_3_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ What is the area of $\triangle$$BEF$?
+
+
+ $\textbf{(A)}~36\qquad\textbf{(B)}~40\qquad\textbf{(C)}~45\qquad\textbf{(D)}~48\qquad\textbf{(E)}~52$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Draw the diagram. Let the height of $BEF$ be $x$. Then, the height of $FAD$ is two times that of $BEF$, because $BEF$ and $FAD$ are similar and $FAD$'s base is twice that of $BEF$, hence $3x = 24 \implies x = 8$. The area is thus $12 \cdot 4 = \boxed{48}$.
+
+ Clarification ~ Yolandayu
+
+ 
+
+
+
+\textbf{Solution 2 (Analytic Geometry / Coordbash)}
+
+This problem is easy if we use analytic geometry. Then $B$ would be $(0, 0)$, $E$ would be $(12, 0)$, $A$ would be $(0, 24)$, and $D$ would be $(24, 24)$. Since $F$ is the intersection of $\overline{BD}$ and $\overline{AE}$, we can set up the equation: $-2x + 24 = x \implies x = 8$. Thus, the area of $\triangle$$BEF$ is $\frac{12 \times 8}{2} = \boxed{48}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Without Similar Triangles)}
+
+When solving such problems, it is almost always helpful to set variables for the quantities you need. Here, we need the height of $\bigtriangleup BEF$, so let its height be $x$. Therefore, the height of $\bigtriangleup FAD$ is $24 - x$.
+
+ The area of square $ABCD$ is $24 \cdot 24 = 576$. The area of $\bigtriangleup ABE$ is $\frac{24 \cdot 12}{2} = 144$, the area of $\bigtriangleup BCD$ is $\frac{24 \cdot 24}{2} = 288$, and the area of $\bigtriangleup AFD$ is $\frac{24(24-x)}{2} = 12(24-x)$. The area of $\bigtriangleup BEF$ is $\frac{12x}{2} = 6x$.
+
+ Adding the areas of [$ABE$], $[BCD]$, and $[AFD]$ gives the area of $[ABCD]$ plus the area of $[BEF]$. Therefore, we can set up and simplify the equation to solve for $x$:
+
+ 
+ \[[ABE] + [BCD] + [AFD] = [ABCD] + [BEF]\]
+ \[144 + 288 + 12(24 - x) = 576 + 6x\]
+ \[144 + 288 - 576 + 288 = 18x\]
+ \[144 = 18x \implies x = 8.\]
+
+
+
+
+\textbf{Solution 4 (Bad idea: Guessing)}
+
+This is problem number 3 and questions near the beginning are usually simpler. The area of a triangle is $\frac{1}{2}\times 12 \times h$ with h being the height of the triangle. This points to the answer being multiple of 6. So it has to be A:36 or D:48. At this point, the average outcome will be 3 if you guess or 1.5 if you don't. So at this point, you should pick A or D.~Phoexnix8017
+
+ 
+
+
+
+\textbf{Solution 5 (Cheese)}
+
+Measure the base and height, and scale it to match the quantities in the problem. Then calculate the area. WARNING!!! - Only do this if you have 30 seconds left. $\newline$$\sim$MATH\_1S\_AWESOME
+
+ 30 seconds left after doing 1 and 2 :skull:The long division on 2 took 74.5 mins
+
+ 
+
+
+
+\textbf{Solution 6 (Similar Triangles; basically Solution 1 but deeper)}
+
+We are given that $ABCD$ is a square of side length $24$. Since $E$ is the midpoint of segment $BC$, we know that $BE = 12$.
+
+ $BE \parallel AD$, which implies that $\angle BEF = \angle DAF$ by the alternate interior angle theorem. Furthermore, we know that $\angle BFE = \angle DFA$ by the vertical angles theorem. Therefore, we can conclude that $\triangle BFE \sim \triangle DFA$ by AA similarity.
+
+ The ratio of the corresponding base side lengths is $2$, which also means that the heights of $\triangle BFE$ and $\triangle DFA$ are $h$ and $2h$, respectively, since $\frac{AD}{BE} = \frac{24}{12} = 2$.
+
+ 
+ \[h + 2h = 24 \implies 3h = 24 \implies h = 8.\]
+
+ Thus, the height of $\triangle BFE$ is $8$. Therefore, the area of $\triangle BFE$ is
+
+ 
+ \[\text{Area} = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times 12 \times 8 = \boxed{48}.\]
+
+
+
+
+\textbf{Solution 7 (Also Similar Triangles; Utilizing Altitude B to AE)}
+
+One may notice quickly that $24 \times 6 = 144 = \text{Area}(\triangle ABE)$ and $FE:AE = 1:3$, so $\text{Area}(\triangle FBE) = \frac{144}{3} = \boxed{48}$. $\newline$-Not much of a solution, I know... Edit it how you like. Thanks!
+
+ 
+
+
+
+\textbf{Solution 8 (Shoelace Theorem)}
+
+We place $B$ at the origin. Because $ABCD$ is a square with side length $24$ and $E$ is the midpoint of $\overline{BC}$ we have $B=(0,0),\ E=(12,0),\ A=(0,24),\ D=(24,24).$
+
+ The equation of line $BD$ is $y=x$. The slope of line $AE$ is $\frac{0-24}{12-0}=-2,$ so its equation is $y=-2x+24$. Since $F$ is the intersection of $BD$ and $AE$, we solve $x=-2x+24 \implies 3x=24 \implies x=8.$
+
+ Thus, $F=(8,8)$.
+
+ Using the Shoelace Theorem, we obtain
+
+ $\begin{aligned} [BEF]&=\frac12\left|(0\cdot0+12\cdot8+8\cdot0)-(0\cdot12+0\cdot8+8\cdot0)\right|\\ &=\frac12|96|\\ &=\boxed{48}. \end{aligned}$
+
+ Therefore, the area of $\triangle BEF$ is $\boxed{48}$.
+
+ ◡̈
+
+ 
+
+
+
+\textbf{Solution 9 (Centroid)}
+
+We draw a line from $A$ to $C$, letting it intersect $BD$ at $G$. Then, triangle $ABC$ has medians $BG$ and $AE$, so its centroid is $F$. Thus, $FE = \frac{AE}{3}$, so $[BEF] = \frac{1}{3} (\frac{1}{2}\cdot 12 \cdot 24) = 48$, so the solution is $\boxed{D}$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_3_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+
+
+
+\textbf{Solution 10}
+
+First, we find that the area of $BAE$ is $24 * 6 = 144$, the area of $BCD$ is $24 * 12 = 188$, and the area of $ABCD$ is $24 * 24 = 576$. 
+
+ Let the area of $ABCDF$ be $x$ and the area of $BEF$ be $y$. Since $BEF$ and $ADF$ are similar with a scale factor of $2$, $x = 144 + 288 - y$, and then $576 = 4y + 432$, so $y = 48$.
+
+ 
+
+
+
+\textbf{Solution 11 (Trapezoid area ratios)}
+
+Since $ABCD$ is a square, $\overline{AD} \parallel \overline{BE}$, so quadrilateral $ABED$ is a trapezoid with bases $AD = 24$ and $BE = 12$.
+
+ Because the ratio of the bases is $AD : BE = 24 : 12 = 2 : 1$, the diagonals $\overline{AE}$ and $\overline{BD}$ divide trapezoid $ABED$ into four triangles whose areas are in the ratio 
+ \[[\triangle AFD] : [\triangle ABF] : [\triangle EFD] : [\triangle BEF] = 2^2 : (2 \cdot 1) : (2 \cdot 1) : 1^2 = 4 : 2 : 2 : 1.\]
+
+ Let $[\triangle BEF] = u$. Then $[\triangle AFD] = 4u$ and $[\triangle ABF] = 2u$. Since $\triangle ABD$ represents half the area of square $ABCD$, we have 
+ \[[\triangle ABD] = [\triangle AFD] + [\triangle ABF] = 4u + 2u = 6u.\]
+
+ Setting this equal to half the area of the square yields 
+ \[6u = \frac{1}{2} \cdot 24^2 = 288 \implies u = 48.\]
+
+ Therefore, $[\triangle BEF] = \boxed{\textbf{(D) } 48}$. 
+
+ Note: the problem where this is linked is covered 1:20-2:05
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Half of the internal angles of a polygon measure $150^{\circ}$ each, and the other half of its internal angles measure $190^{\circ}$ each. How many sides does the polygon have?
+
+
+ $\textbf{(A)}~36\qquad\textbf{(B)}~40\qquad\textbf{(C)}~60\qquad\textbf{(D)}~72\qquad\textbf{(E)}~180$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Let $n$ be the number of sides. Then, $150 \cdot \frac{n}{2} + 190 \cdot \frac{n}{2} = 170n$ is the total sum of all angles. This is equivalent to $180(n-2)$ hence $10n = 360$ and $n = \boxed{36}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+This is similar to solution 1
+
+ Let the polygon have $2n$ sides. Then $n$ angles measure $150^\circ$ and $n$ angles measure $190^\circ$ meaning that the total interior angle sum is $150n+190n=340n$ Since every polygon has interior angle sum $180(Sides-2)$, the polygon has interior angle sum $180(2n-2)=360n-360$. Therefore, $340n=360n-360$, so $20n=360$ meaning $n=18$ Hence, the polygon has $2n=\fbox{36}$ sides.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Notice that the arithmetic mean of the measures of the angles is $170^\circ$. The arithmetic mean of the angles in a polygon is $\frac{180(n-2)}{n}$, meaning $\frac{180n-360}{n}=170 \to n=\boxed{36}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+The arithmetic mean of the angles is 170°. Since the sum of the angles in a n-gon is 180(n-2), the average of the angles should be $\frac{180(n-2)}{n}$. Setting $170=\frac{180(n-2)}{n}$ gets $\frac{17}{18}=\frac{34}{36}=\frac{n-2}{n}$. Therefore, $n=36$ will satisfy this equation, and the answer is $\fbox{\textbf{(A)}\ 36}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Emergency Bashing)}
+
+If any logical solution fails, we could always plug in the values of all answer choices from A-E. Doing so, we see that $150 \times 18 + 190 \times 180 = 180(36 - 2)$, giving us $\fbox{\textbf{(A)}\ 36}$.
+
+ -PointlessTriangle ~minor edits by Squishy64
+
+ Note: the problem where this is linked is covered 2:05-2:35
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Let $a_1,a_2,a_3,\dots$ be a sequence with $a_1=94, a_2=190,$ and $a_n$ equal to the arithmetic mean of the previous $n-1$ terms for $n\geq 3$. What is the value of $a_{10}$?
+
+
+ $\mathbf{(A)}~47\qquad\mathbf{(B)}~95\qquad\mathbf{(C)}~142\qquad\mathbf{(D)}~284\qquad\mathbf{(E)}~564$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The key idea is that $94 + 190 = 284$. Thus, $a_3 = 142$. We now prove that all other values equal 142. This is simple however, as since $a_k = \frac{\sum \text{other terms}}{k}$ it is obvious that $\frac{142 + 142 + \dots + 142}{k} = \frac{142k}{k} = 142$, hence $a_{10} = \boxed{142}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+As soon as one sees the problem, it is obvious that the average must be a number between $94$ and $190$. We can see that option $B$, $95$, is just one above $94$, which doesn't make much sense as there is almost no way the average can be lowered so much by the time it gets to $a_{10}$. Now there is only one option choice left, which is $142$, so $\boxed{142}$ is our answer.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can start off by finding the average of $94$ and $190$ which is $142$. If you didn't figure out that this is the answer, we can find the average of these numbers, which is $142$, again. If you still aren't sure, you can do this again with $94$, $190$, $142$, and $142$, which is $142$. If you would like to go on again, you can, however the answer is clearly $\boxed{142}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+The average of $94$ and $190$ is $142$. For values $a_3, a_4, \dots$ the mean won't change because the mean of the previous numbers is added, and adding a mean's value to a list leaves the mean unchanged. Therefore, the solution is $\boxed{142}$.
+
+ Note: The previous n - 1 terms of the nth term just mean that you're performing the operation on all previous terms.
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) A triangle with sides $16$, $30$, and $34$ is inscribed in a circle, dividing the interior of the circle into four regions. Let $A$, $B$, and $C$ be the areas of the non-triangular regions, with $C$ being the greatest. What is the value of $A+B$?
+
+
+ $\mathbf{(A)}\ \frac{289\pi}{2}-240 \qquad \mathbf{(B)}\ \frac{289\pi}{2}-210 \qquad \mathbf{(C)}\ 289\pi-480 \qquad \mathbf{(D)}\ 289\pi-360 \qquad \mathbf{(E)}\ 289\pi- 240$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+The triangle is an 8-15-17 Pythagorean Triplet. Therefore, the area of it is 240.
+
+ Since it is a right triangle, the side of length 34 forces the circle of radius 17, and therefore the area of the circle is $289 \pi$. The semicircle is $C$, hence its area is $\frac{289 \pi}{2}$.
+
+ The answer must then be the area of the circle as a whole minus the triangle area minus $C$, which is $\boxed{\text{(A) }\frac{289 \pi}{2} - 240}$.
+
+ Note that the reason that 34 is the diameter of the circle is because of the Thales' Theorem, specifically the converse of that theorem: \href{https://en.wikipedia.org/wiki/Thales\%27s\_theorem?scrlybrkr=181e6b6b}{https://en.wikipedia.org/wiki/Thales\%27s\_theorem?scrlybrkr=181e6b6b}.~rwpiano
+
+ Note that the triangle's area is 240 because it is a 8-15-17 Pythagorean Triplet, meaning the area is $\frac{b \cdot h}{2} = \frac{16\cdot30}{2}$, or $240$. ~Squishy64
+
+ 
+
+
+
+\textbf{Solution 2 (Deeper explanation)}
+
+Draw triangle $\triangle PQR$, circumscribed by circle $\odot O$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_6_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ 
+Since $\triangle PQR$ satisfies the converse of the Pythagorean Theorem, $\triangle PQR$ is a right triangle. According to the converse of Thales' Theorem, if a triangle is a right triangle, its circumcircle has the hypotenuse as its diameter. Therefore, the center $O$ of the circle lies on the midpoint of $\overline{PQ}$. 
+
+ We are asked to find the total area of the shaded region, which is outside $\triangle PQR$ but inside the circle with center $O$. We can find this region by subtracting the area of $\triangle PQR$ from half the area of $\circ O$.
+
+ The area of half of $\circ O$ can be calculated with the area of a circle formula. This comes down to $\frac{289\pi}{2}$.
+
+ The area of $\triangle PQR$ can be calculated with the area of a triangle formula. This comes down to $240$.
+
+ Therefore, the solution is $\boxed{\text{(A) }\frac{289 \pi}{2} - 240}$.
+
+ there cannot be this many errors ~Sharkbluehorse
+
+ 
+
+
+ \textbf{Solved Diagram In Full Color} \href{https://docs.google.com/presentation/d/1kqdwjAAa7g4zzxnVIU5sBHgGdRD0q52Wi5DjpvmiqeU/edit?slide=id.p\#slide=id.p}{https://docs.google.com/presentation/d/1kqdwjAAa7g4zzxnVIU5sBHgGdRD0q52Wi5DjpvmiqeU/edit?slide=id.p\#slide=id.p}
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) How many ordered triples of positive integers $(x,y,z)$ satisfy both the following equations?
+
+
+ 
+ \[x+y+z=31\]
+ \[x+3y+3z=41\]
+$\textbf{(A) } 4 \qquad\textbf{(B) } 5 \qquad\textbf{(C) } 6 \qquad\textbf{(D) } 7 \qquad\textbf{(E) } 8$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Subtract the two equations to obtain $2y + 2z = 10 \implies y+z = 5$. Since $y,z \geq 1$, we have restricted Stars and Bars to obtain $\binom{5-1}{2-1} = \boxed{4}$.
+
+ \textbf{Note} Instead of doing stars and bars, you could just list out the pairs that work, namely $(1,4), (2,3), (3,2), (4,1)$. Here, order matters, because $y$ and $z$ are different. Also, $x$ is irrelevant to the number of solutions because plugging $y + z = 5$ into equation 2 gives $x=26$ so every solution has $x=26$, it doesn't change anything.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+$x$ is the same in both equations so its value wont matter, so to get rid of it we subtract the top equation from the bottom, resulting in $2y + 2z = 10$. We find that the only 3 combinations that make this possible are 0, 5; 1, 4; and 2, 3. 0, 5 cannot be used because it has to be positive, so we are left with 1, 4 and 2, 3 (Which is 2 possibilities). We multiply this 2 by 2 because 1, 4 can be swapped to give us 4, 1 which also works, and 2, 3 can do the same (becoming 3, 2). We now notice we have 4 solutions, so $\boxed{4}$ is our answer.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Subtracting the first equation from the second and dividing by $2$, we get $y+z=5$, and trivially, there are $4$ cases where this is true, namely $(1,4),(2,3),(3,2),(4,1)$ so we get $\boxed{4}$ as the answer.
+
+ Note: To add a bit more detail, $x$ is already set to be $26$. Then, we remember that y and z are positive. We can assign $4$ values for $y$. A general formula is $S-1$ where $S$ is the sum of the two positive integers that are not required to be distinct.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) A driver sees an electronic highway sign stating that the next exit is $7$ miles away and it will take $5$ minutes to reach it. Assume both numbers have been rounded to the nearest integer. Among the following options, what is the lowest speed limit (in miles per hour) that would possibly allow the driver to legally reach the exit within the given time frame?
+
+
+ $\textbf{(A)}\ 65 \qquad \textbf{(B)}\ 70 \qquad \textbf{(C)}\ 75 \qquad \textbf{(D)}\ 80 \qquad \textbf{(E)}\ 85$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Since the values are rounded, we must minimize the distance and maximize the time (as speed is distance over time). Thus, it is obvious the distance is $6.5$ miles. For the time, we take $5.4\overline{9} = 5.5$ minutes, and thus we have $\frac{13}{11} \cdot 60 = 70.9\dots$ minimum speed. The smallest answer choice above that is $\boxed{(C)75}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Minimizing the speed means minimizing the distance and maximizing the time. Hence, let the distance be $6.5$ miles, and the time be $5.5$ minutes. The corresponding minimum speed is thus $\frac{6.5\text{ mi}}{5.5\text{ min}}\approx 70.9\text{ mph},$ which is legal when the speed limit is $\boxed{\text{(C) }75}$ (it cannot be ${\text{(B) }70}$) because $70.9$ is larger than $70$)
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Because they say that the numbers are rounded, let the distance be $6.5$ and the time be $5.5$. In the real competition, it's easiest to first remove $60$ mph from each answer choice. Then you have $5.5$ minutes and just $1$ mile to go. Solving approximately, you get that you need to go $11$ mph minimum, and $15$ is the smallest option choice larger than $11$, we get that $60+15$ $= \boxed{75}$
+
+
+
+
+\textbf{Solution 4}
+
+We use the most favorable rounding cases, the distance will be $6.5$ and our time will be $5.5$. We calculate the approximate fraction of an hour this time period is. Dividing 60 by 5.5 is not too pleasant in the competition, so we simplify it to 12 divided by 1.1 Then, we multiply it by 6.5. Since 6.5 is around 1.1 times 6, we get the speed is around 72 mph. Riskily guessing, the limit should be $\boxed{75}$
+
+
+
+	\item (\textit{AMC 10 10A 2026}) Two similar but not congruent scalene triangles each have a side with length $9$ and a side with length $12$. What is the length of the longest side of the larger triangle?
+
+
+ $\textbf{(A)} 12 \qquad \textbf{(B)} 14 \qquad \textbf{(C)} 15 \qquad \textbf{(D)} 16 \qquad \textbf{(E)} 17$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+First of all, the longest leg of the smaller triangle must be 12. The medium leg should be 9. For the larger triangle, the smallest leg is 9 and the medium leg is 12. The ratio between the mediums is $\frac{12}{9} = \frac{4}{3}$, hence the largest side must be $12 \cdot \frac{4}{3} = \boxed{16}$. 
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We can make the side lengths of the smaller triangle $a$, $b$, and $c$, with $a<b<c$. We also make the side lengths of the larger triangle $x$, $y$, and $z$, with $x<y<z$. We already know that $b=9$ and $c=12$ and that $x=9$ and $y=12$. With this, we can see that the ratio of the side lengths of the larger triangle over the side lengths of the smaller triangle is $\frac{12}{9} = \frac{4}{3}$. We can then say that $z$, or the longest side of the larger triangle's length, is $12 \cdot \frac{4}{3} = \boxed{16}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The side lengths of the small triangle are $a, 9, 12$ and the large triangle has side lengths $9, 12, b$. The two triangles are similar, so $\frac{9}{12}=\frac{12}{b}$. Solving gives $b=16$.~BOTNATE
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) For what odd positive integer $n$ is the mean of $1, 4, 9, 16, \dots, n^2$ exactly $32\%$ greater than its median?
+
+
+ $\textbf{(A) } 19 \qquad\textbf{(B) } 39 \qquad\textbf{(C) } 49 \qquad\textbf{(D) } 89 \qquad\textbf{(E) } 169$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let $n=2k-1.$ The median of the sequence would then be $k^2,$ while the mean would be $\frac{1^2+2^2+3^2+...+(2k-1)^2}{2k-1}=\frac{(2k-1)(2k)(4k-1)}{6(2k-1)}=\frac{(k)(4k-1)}{3}.$ 
+
+ Equating, we get $\frac{(k)(4k-1)}{3}=1.32(k^2)\implies 4k-1=3.96k\implies k=25\implies n=\boxed{\text{(C) }49}$ ~Tacos\_are\_yummy\_1
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The sum of the first $n$ squares is $\frac{n(n+1)(2n+1)}{6}$, so the average of the first $n$ squares is $\frac{n(n+1)(2n+1)}{6n} = \frac{(n+1)(2n+1)}{6}$. The median of the first $n$ squares is $\left( \frac{n+1}{2} \right)^2 = \frac{(n+1)^2}{4}$. We want to find when $\frac{\frac{(n+1)(2n+1)}{6}}{\frac{(n+1)^2}{4}} = \frac{(n+1)(2n+1)}{6} \cdot \frac{4}{(n+1)^2} = \frac{2(2n+1)}{3(n+1)} = \frac{33}{25}$. Solving this equation (or just testing values) gives us $\boxed{49}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Formula race car)}
+
+We use the squares addition formula $\frac{{n}(n+1)(2n+1)}{6}$. We realize that this is a multiple of 11 considering that the mean is 132\% (33/25) of the median which is an integer multiple of 25. Then, we see that 49 is the first answer choice that causes this sum to be a multiple of 11. We test it and it indeed works, so the answer is $\boxed{49}$.
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Gary writes down six distinct positive integers: $2, 5, 24, 60, 240$, and a three-digit number $n$.
+One of those six numbers is the least common multiple of all six of them. What is the sum
+of all possible values of $n$ ?
+
+
+ $\textbf{(A) } 960 \qquad\textbf{(B) } 1680 \qquad\textbf{(C) } 2160 \qquad\textbf{(D) } 2280 \qquad\textbf{(E) } 2400$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Note that the LCM of the given numbers, excluding $n,$ is $240.$ Consider two cases:
+
+ $\textbf{Case 1: } n<240$
+$n$ must be a three-digit proper divisor of $240,$ of which the only possible value is $n=120.$
+$\textbf{Case 2: } n>240$
+$n$ must be a three-digit multiple of $240,$ of which the possible values are $n=480,720,960.$
+
+ The answer is thus $120+480+720+960=\boxed{\text{(D) }2280}$
+
+ 
+Also consider the following;Since N can only be a 3 digit number and it cannot be 240 it would be good to consider the values <1000 that leave a remainder of 0 when divided by 240. Those numbers are the following, 240, 480 and 960. The only smaller 2 digit number than 240 that works is 120, so summing up you get 2280 (Quite similar to solution 2)
+
+ 
+
+
+
+\textbf{Solution 2}
+
+The LCM of the given numbers excluding $n$ is 240. Hence, with $n$ included, either it is $n$ itself or 240.
+
+ If 240, that implies $n = 120,240$. Obviously, the latter isn't allowed.
+
+ If $n$, then $n$ must be a multiple of 240, hence consider $240 \cdot 2 = 480, 240 \cdot 3 = 720, 240 \cdot 4 = 960$.
+
+ Thus $\sum n = 120+480+720 + 960 = 120 + 240(2+3+4 )= 120 + 240 \cdot 9 = \boxed{2280}$.
+
+ \textbf{Remark} $n=240$ isn't possible because the problem specifies "$\textbf{distinct}$ positive integers". ~Bros1
+
+ 
+
+
+
+\textbf{Solution 3 (Using Prime Factorization, Longer explanation)}
+
+First, observe that$\operatorname{lcm}(2,5,24,60,240)=240=2^4\cdot3\cdot5$.
+
+ Since the LCM of all six numbers must be one of the six distinct numbers, it must be either $240$ or $n$.
+
+ \textbf{Case 1: The LCM is $240$.}
+
+ In this case, $n\mid240$, so we may write
+ \[n=2^a3^b5^c,\]where $0\le a\le4$ and $0\le b,c\le1$.
+
+ Since $n$ is a three-digit number, we must have $b=c=1$. Indeed, if either exponent were $0$, then
+ \[n\le 2^4\cdot5=80<100,\]which is impossible.
+
+ Thus $n=15\cdot2^a$. Since $n\ne240$ and $100\le n<240$,
+ \[\frac{100}{15}\le2^a<16.\]
+
+ The only possible exponent is $a=3$, giving $\boxed{n=120}$.
+
+ \textbf{Case 2: The LCM is $n$.}
+
+ Since $240\mid n$, the prime factorization of $n$ must contain at least $2^4\cdot3\cdot5$.
+
+ Furthermore, $n$ cannot contain any additional prime factor $p\ge7$, since
+ \[n\ge240p\ge1680>999.\]
+
+ Hence
+ \[n=2^a3^b5^c,\]where $a\ge4$, $b\ge1$, and $c\ge1$.
+
+ We now bound the exponents using $n\le999$.
+
+ If $c\ge2$, then
+ \[n\ge2^4\cdot3\cdot5^2=1200>999,\]so $c=1$.
+
+ If $b\ge3$, then
+ \[n\ge2^4\cdot3^3\cdot5=2160>999,\]so $b\in\{1,2\}$.
+
+ If $a\ge7$, then
+ \[n\ge2^7\cdot3\cdot5=1920>999,\]so $a\in\{4,5,6\}$.
+
+ We now check the remaining possibilities:
+
+ 
+            \begin{itemize}
+        \item If $b=2$, only $a=4$ works, giving $n=2^4\cdot3^2\cdot5=720$.
+        \item If $b=1$, then $a=5$ or $a=6$ gives $n=480$ or $n=960$. The case $a=4$ gives $n=240$, which is excluded because the six numbers are distinct.
+            \end{itemize}
+            Therefore, the possible values are $120$, $480$, $720$, and $960$.
+
+ The required sum is
+ \[\boxed{120+480+720+960=2280}.\]
+
+ The answer is therefore $\boxed{\textbf{(D)}}$.
+
+ ～ PeetahUndebrethale
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) A drawer has $100$ red socks and $100$ blue socks. Pippi randomly removes one sock at a time, without replacement, until all the socks of one color have been removed. What is the probability that there are exactly $2$ socks left in the drawer once that happens?
+
+
+ $\textbf{(A) } \frac{27}{196} \qquad\textbf{(B) } \frac{49}{198} \qquad\textbf{(C) } \frac{247}{990} \qquad\textbf{(D) } \frac{50}{199} \qquad\textbf{(E) } \frac{25}{99}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+The last 2 socks must be the same color, and the 3rd to last sock must be the opposite color, so the probability is $2\cdot\frac{\binom{197}{99}}{\binom{200}{100}}$. We multiply by $2$ because there are two possibilities for the sock color left in the drawer. 
+
+ Evaluating, we get that $2\cdot\frac{\binom{197}{99}}{\binom{200}{100}}=\frac{\frac{197!}{99!\cdot98!}}{\frac{200!}{100!\cdot100!}}=\frac{2\cdot 197! \cdot 100! \cdot 100!}{200! \cdot 99! \cdot 98!}=\boxed{\text{(D) }\frac{50}{199}}$~Nioronean~Improvements and $LaTeX$ formatting by gorigo, IMDROWNINGINMATH minor edits~Intermediate steps added by redcar2020
+
+ 
+
+
+
+\textbf{Solution 1.1 (Explained)}
+
+The last two socks must be of the same color. Suppose Pippi chooses a sock and records its color, $R$ or $B$. There are $\binom{200}{100}$ total cases for the recordings.
+
+ The sequence of 200 must end in $RBB$ or $BRR$. These are the same, hence multiply by two and analyze one case.
+
+ We consider the string of 197 that is truncated. We have 99 $R$ remaining and 98 $B$ remaining, hence we have a total $\frac{197!}{99!98!}$ cases. Multiply by two to get the total.
+
+ Thus, the probability is 
+
+ 
+ \[\frac{\frac{2 \cdot 197!}{99!98!}}{\frac{200!}{100!100!}} = \frac{2 \cdot 197!}{99!98!} \cdot \frac{100!100!}{200!} = \frac{2 \cdot 100 \cdot 100 \cdot 99}{200 \cdot 199 \cdot 198} = \boxed{\frac{50}{199}}.\]
+
+
+
+
+\textbf{Solution 2}
+
+The last $2$ socks must be the same color, while the third-last sock must be of the other color.  
+
+ The probability that the second-last sock is the same color as the last sock is $\frac{99}{199}$.
+
+ Given that the last $2$ socks are the same color, the probability that the third-last sock is the other color is $\frac{100}{198} = \frac{50}{99}$.
+
+ Therefore, the probability of Pippi stopping when exactly $2$ socks remain is $\frac{99}{199}\cdot\frac{50}{99}= \boxed{\textbf{(D)}\ \frac{50}{199}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Last 30 seconds and if you’re desperate)}
+
+We know that the number of choices/denominator is ${200 \choose 198} = 19900$. Based on this, if we look at the answer choices, $199$ is the only one that is a factor of our denominator. Therefore, we could make an educated guess that the answer is $\boxed{\text{(D) }\frac{50}{199}}$.~Orange12345
+
+ 
+
+
+
+\textbf{Solution 4 (Cheese)}
+
+There are $2$ possible options for the last sock being chosen, a red sock or a blue sock. This means that the numerator of the solution is divisible by 2. This means that the only possible answer is $\frac{50}{199}.$~Sincostan0~hothost59
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Two bicycle clubs, with disjoint memberships, go on a tour together. On the morning of
+the tour, members greet each other with a handshake. Everyone shakes hands with
+everyone else exactly once. There were $119$ handshakes between members of the same
+club and $112$ handshakes between members of different clubs. How many more people
+came from the larger club than from the smaller club?
+
+
+ $\mathbf{(A)}~0\qquad\mathbf{(B)}~4\qquad\mathbf{(C)}~6\qquad\mathbf{(D)}~7\qquad\mathbf{(E)}~8$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let there be $m$ people in the first club and $n$ in the second. The two equations hold simultaneously.
+
+ 
+ \[\binom{m}{2} + \binom{n}{2} = 119\]
+ \[mn = 112\]
+
+ Since $m$ and $n$ must be positive integers, we can guess and check the prime factorization of $112 = 2^4 \times 7$ to find a valid factor pair. We see that if $n = 112, 56, 28$ it makes the binomial exceed $119$, and thus $n = 14$ is plausible. This implies $m = 8$. We can double check and see this holds true since $\binom{8}{2} + \binom{14}{2} = 28 + 91 = 119$. The answer is $14 - 8 = \boxed{6}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let there be $x$ and $y$ people in the two clubs. Because the amount of handshakes among the two clubs members with the other is $112$, $xy = 112$. Now, we can look at the factors of $112$ to see what values $x$ and $y$ can be. Assuming that $x<y$, the possible pairings are $(1,112),(2,56),(4,28),(7,16),$ and $(8,14)$. Looking at the differences in each pair and the awnser choices, the only valid option is $(8,14)$, meaning the answer is $14 -8 = \boxed{6}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let $m$ and $n$ be the number of members in the two clubs. We are given that the number of cross club handshakes is:
+ \[mn = 112\]
+
+ The total number of handshakes is the sum of same-club handshakes and cross-club handshakes:
+ \[119 + 112 = 231\]
+
+ If the total number of people is $S = m+n$, then the total number of handshakes can also be written as $\binom{S}{2} = 231$:
+ \[\frac{S(S-1)}{2} = 231 \implies S(S-1) = 462\]
+
+ Since $21 \times 22 = 462$, we find that the total number of people is $S = m+n = 22$. 
+
+ We want to find the difference between the sizes of the two clubs which is $|m-n|$. Then we use the identity:
+ \[(m-n)^2 = (m+n)^2 - 4mn\]
+
+ Substituting values $m+n = 22$ and $mn = 112$:
+ \[(m-n)^2 = 22^2 - 4(112)\]
+ \[(m-n)^2 = 484 - 448 = 36\]
+
+ Taking the square root:
+ \[|m-n| = \sqrt{36} = \boxed{\textbf{(C) } 6}\]
+
+
+
+
+\textbf{Solution 5}
+
+Since a total of $112$ handshakes happened between members of different clubs, and $119$ handshakes happened between members of the same club, we can just add them to get the total number of handshakes without worrying about overcounting handshakes. Therefore, the total number of handshakes was $112+119=231$. 
+
+ Now that we have the total number of handshakes, we can use the fact that a handshake happens between exactly two people at a time. Let $x$ be the total number of people. In order to count total handshakes, we set up this equation and solve for $x$:
+ \[{x\choose 2}=231\]
+ \[\frac{(x)(x-1)}{2}=231\]Now we can factorize $231$. Notice that $231=11 \cdot 21$. Since $11 \cdot 21 = \frac{x(x-1)}{2}$, then by multiplying by $2$ on both sides
+ \[(x)(x-1)=22 \cdot 21\]Therefore, there are a total of $22$ people in both clubs. Now we let $p$ and $q$ be the number of people in the two clubs. Now we use the fact that there were $119$ handshakes between members of the same club
+ \[{p\choose2}+{q\choose2}=119\]Now we can merely test answer choices.
+
+ Test $\text{(A)}$. This would mean that $p=q=11$
+ \[{11\choose2}+{11\choose2}=55+55 \neq 119\]Thus, we can eliminate answer choice $\text{(A)}$.
+
+ Test $\text{(B)}$. This would mean that $p=13$, $q=9$. Keep in mind that which value you assign to which variable does not matter as long as they sum to $22$
+ \[{13 \choose 2}+{9 \choose 2}= 55+78 \neq 119\]Thus, we can eliminate answer choice $\text{(B)}$.
+
+ Test $\text{(C)}$. This would mean that $p=14$,$q=8$.
+ \[{14 \choose 2}+{8 \choose 2}=91+28=119\]Therefore, we can bubble in $\boxed{\text{(C)} 6}$.
+
+ \textbf{Note} Instead of testing if $p$ choose $2$ plus $q$ choose $2$ is 119, we can test if $pq=112$ which is a lot faster because we can factor $112$ and quickly see if the values for $p$ and $q$ work.
+
+ 
+
+
+
+\textbf{Solution 6 (Cheese)}
+
+Let there be $m$ people in the first club and $n$ in the second, where $m>n$. We can see that $mn=112=2^4\cdot7$. This means that there are a few possible values for the pair $(m,n)$:
+
+ $(112,1)~\rightarrow$ Difference of $111$, which is not an answer choice.
+
+ $(56,2)~\rightarrow$ Difference of $54$, which is not an answer choice.
+
+ $(28,4)~\rightarrow$ Difference of $24$, which is not an answer choice.
+
+ $(14,8)~\rightarrow$ Difference of $6$, which is $\text{(C)}$.
+
+ $(16,7)~\rightarrow$ Difference of $9$, which is not an answer choice.
+
+ Therefore, the only answer choice is $\boxed{\text{(C)}~6}$.
+
+ 
+
+
+
+\textbf{Solution 7 (similar solution to Solution 5)}
+
+Suppose there is $x$ people in Bike Club 1, and $y$ people in Bike Club 2. That means in total, there was $\binom{x+y}{2}$ handshakes. We find $119+112=231$ total handshakes from the question. $231=21 \cdot 11$, so therefore $x+y=22$. During the exam, I was too tired to solve $\binom{x}{2}+\binom{y}{2}=119$, so instead I decided to plug in values from the question. In general, if there are a group of option choices that are very close, it usually is one of those options, so I started with $\text{(C)}$ [also it's not $\text{(D)}$ because it's odd]. If it was $\text{(C) 6}$, then:
+ \[x=8\]
+ \[y=14\]
+ \[\binom{8}{2}+\binom{14}{2}=28+91=119\]This is equal to the total number of handshakes in the problem within the teams, so we get our answer as $\boxed{\text{(C) }6}$.~namish dour
+
+ 
+
+
+
+\textbf{Solution 8 (Easy Cheese)}
+
+In any group of people, the total number of handshakes will always be a triangle number. Since the 2 groups added together total handshake amount is 119, 119 must be the sum of 2 triangle numbers. If we list out the triangle numbers:1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120... we find that only the set 28, 91 works. 28 is in the 7th spot meaning it is group of 8 people, while 91 is in the 13th spot, meaning the larger group is made of 14 people. $14-8=\boxed{\text{(C) }6}$
+
+ 
+
+
+ \textbf{Note} This isn't a fast cheese as it requires listing out many numbers and finding a pair that matches. You could look at units digits to speed up the process, but it still isn't a wise choice. A faster cheese is Solution 6, which only requires factoring a number. This is an early-ish question so it is not recommended to spend so much time on it.~BOTNATE
+
+ 
+
+
+
+\textbf{Solution 9 (Straightforward)}
+
+Let the number of people in the large club be $L$ and the number of people in the small club be $S$. Thus, the number of handshakes between people in the large club is $\binom{L}{2} = \frac{L (L-1)}{2}$, the number of handshakes between people in the small club is $\binom{S}{2} = \frac{S (S-1)}{2}$, and the number of handshakes between people from the different clubs is $L \times S$. We're given that 
+ \[\textbf{i. }\frac{L (L-1)}{2} + \frac{S (S-1)}{2} = 119\] and 
+ \[\textbf{ii. } L \times S = 112\] 
+
+ Expanding out $\textbf{i. }$ gives $L^2 - L +S^2 - S^2=238 \to (L+S)^2 -2LS - (L+S)=238 \to (L+S)^2 -(L+S)= 238+224= 462$, since we know from $\textbf{ii. }$ that $LS=112$. $\newline$ $(L+S)^2 -(L+S)= 462$ tells us that $L+S$ is the larger of two consecutive integers who's product is $462$. Since $20^2 =400$, we can try numbers that are a bit larger than $20$, giving $L+S= 22$. $LS=112$ and $112$ factors as $2^4 \times 7= 8 \times 14$. This tells us that $L=14$ and $S=8$, giving a final answer of $L-S= \boxed{\textbf{(C) 6}}$
+
+
+
+	\item (\textit{AMC 10 10A 2026}) Consider a triangle with positive area whose side lengths are functions of $t$ given by $a = t^2 + 1$, $b = 5t + 7$, and $c = 4t + 4$. How many different integer values of $t$ are possible?
+
+
+ $\textbf{(A)} ~0 \qquad \textbf{(B)} ~7 \qquad \textbf{(C)} ~9 \qquad \textbf{(D)} ~10 \qquad \textbf{(E)} ~\text{ infinitely many}$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+The triangle inequality requires $a+b>c$, $a+c>b$, and $b+c>a$. This gives three inequalities:
+
+ 
+ \begin{align*} &t^2+1+5t+7>4t+4 \\ &t^2+1+4t+4>5t+7 \\ &5t+7+4t+4>t^2+1 \end{align*}
+
+
+ Simplifying each of them gives
+
+ 
+ \begin{align*} &t^2+t+4>0 \\ &t^2-t-2>0 \\ &t^2-9t-10<0 \end{align*}
+
+
+ The first inequality is true for all real $t$, since $t^2+t+4$ has a negative discriminant ($1-16<0$).
+
+ Factoring the other two:
+
+ 
+ \[(t-2)(t+1)>0 \implies t>2 \text{ or } t<-1\]
+ \[(t-10)(t+1)<0 \implies -1<t<10\]
+
+ Combining these gives $2<t<10$. The integers in this range are $3,4,5,6,7,8,9$, so there are $\boxed{\textbf{(B) }7}$ possible values of $t$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We see that from $b$ and $c$, that $t > -\frac{7}{5}$ and $t > -1$. Choose the stricter inequality.
+
+ Thus, $t > -1$, and we use triangle inequality.
+
+ \textbf{Case 1:}
+
+ If $t^2 + 1 < 5t+7 + 4t+4$, then $t^2 - 9t - 10 > 0$ so $(t+1)(t-10) < 0$. The interval is $-1 < t < 10$.
+
+ \textbf{Case 2:}
+
+ If $5t+7 < t^2 + 1 + 4t + 4$ then $t + 2 < t^2$ and thus $t^2 - t - 2 > 0$, hence $(t-2)(t+1) > 0$ so we have $t < -1, t > 2$. Reject the former and thus $t > 2$.
+
+ \textbf{Case 3:}
+
+ If $4t+4 < t^2 + 1 + 5t + 7$, then $0 < t^2+t +4$. Since $t^2 + t$ at minimum has vertex at $\frac{1}{2}$, when we add 4 to this result we always obtain something greater than 0, hence we have no bound here.
+
+ \textbf{Conjoinment:}
+
+ Therefore, $-1 < t < 10$, and $t > 2$, hence all $2 < t < 10$ work, so $[3,9]$, and thus $9-3 + 1 =\boxed{7}$ values.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 3: Guess and Check (Uh oh)}
+
+If $t=0$, $a=0^2 + 1 = 1$, $b=5(0) + 7 = 7$, $c=4(0) + 4 = 4$, test: $1 + 4 = 5 \ngtr 7$, doesn't work.
+
+ If $t=1$, $a=1^2 + 1 = 2$, $b=5(1) + 7 = 12$, $c=4(1) + 4 = 8$, test: $2 + 8 = 10 \ngtr 12$, doesn't work. 
+
+ If $t=2$, $a=2^2 + 1 = 5$, $b=5(2) + 7 = 17$, $c=4(2) + 4 = 12$, test: $5 + 12 = 17 \ngtr 17$, doesn't work. 
+
+ If $t=3$, $a=3^2 + 1 = 10$, $b=5(3) + 7 = 22$, $c=4(3) + 4 = 16$, test: $10 + 16 = 26 > 22$, works. 
+
+ If $t=4$, $a=4^2 + 1 = 17$, $b=5(4) + 7 = 27$, $c=4(4) + 4 = 20$, test: $17 + 20 = 37 > 27$, works. 
+
+ If $t=5$, $a=5^2 + 1 = 26$, $b=5(5) + 7 = 32$, $c=4(5) + 4 = 24$, test: $26 + 24 = 50 > 32$, works. 
+
+ If $t=6$, $a=6^2 + 1 = 37$, $b=5(6) + 7 = 37$, $c=4(6) + 4 = 28$, test: $37 + 28 = 65 > 37$, works. 
+
+ If $t=7$, $a=7^2 + 1 = 50$, $b=5(7) + 7 = 42$, $c=4(7) + 4 = 32$, test: $42 + 32 = 74 > 50$, works. 
+
+ If $t=8$, $a=8^2 + 1 = 65$, $b=5(8) + 7 = 47$, $c=4(8) + 4 = 36$, test: $47 + 36 = 83 > 65$, works. 
+
+ If $t=9$, $a=9^2 + 1 = 82$, $b=5(9) + 7 = 52$, $c=4(9) + 4 = 40$, test: $52 + 40 = 92 > 82$, works. 
+
+ If $t=10$, $a=10^2 + 1 = 101$, $b=5(10) + 7 = 57$, $c=4(10) + 4 = 44$, test: $57 + 44 = 101 \ngtr 101$, doesn't work. 
+
+ Counting, there are $\boxed{7}$ values that work.
+
+ \textbf{Note} If you plan on testing values, you can quickly eliminate that possibility of $t$ being $0$ or negative by testing $0$ and looking at $c=4t+4$. ~BOTNATE
+
+ 
+
+
+
+\textbf{Solution 4 (time optimized)}
+
+We calculate the side lengths for $t=1$, $2$, and $3$, which are $(2, 12, 8)$, $(5, 17, 12)$, and $(10, 22, 16)$. Notice that $t=3$ is satisfactory, so the answer is not $0$. We can assume that the satisfactory $t$ form a contiguous range.
+
+ 
+If the answer is $7$, $t=10$ must not be satisfactory. Checking, the lengths are $(101, 57, 44)$, which indeed do not satisfy the triangle inequality. Therefore, the answer is $\boxed{\textbf{(B)} 7}$. (If B was not the answer, we would then check t=12 and t=13).
+
+ 
+
+
+
+\textbf{Solution 5 (similar to solution 1 but fastest)}
+
+You always know that $b>c$, since $5t+7>4t+4$ for all $t$. This means that $c$ cannot be the longest side in the triangle. Now we set up two inequalities based on what the longest side length is. The two possible longest sides are $a$ and $b$.
+
+ First make an inequality where $a=t^2+1$ is the longest side.
+ \[t^2+1<5t+7+4t+4\]
+ \[t^2-9t-10<0\]
+ \[(t-10)(t+1)<0\]Solving this, we get $t<10$, since the negative solution doesn't mean anything in this context, we can just ignore it. Now we set up our other inequality where $b=5t+7$ is the longest side (and solve it):
+ \[5t+7<t^1+1+4t+4\]
+ \[0<t^2-t-2\]
+ \[0<(t-2)(t+1)\]Solving this, we get $t>2$. Again, the other negative solution does not matter.Now our two inequalities for $t$ are $t<10$ and $t>2$. This means the valid integers are $t=3,4,5,6,7,8,9$, which amounts to a total of $7$ possible values of $t$, so our answer is $\boxed{\text{(B) } 7}$.
+
+ 
+
+
+
+\textbf{Solution 6 (Similar to Solution 4)}
+
+Notice that the quadratic side $a = t^2 + 1$ will eventually skyrocket past the sum of the other two sides, $b + c = 9t + 11$. 
+
+ Checking small integer values of $t$, $t = 3$ is the first one that works ($a = 10, b = 22, c = 16$). 
+
+ Now we check the answer choices (skipping \textbf{(A) 0}). Testing \textbf{(B) 7} means $t$ would range from $3$ to $9$. To verify this upper bound, the condition $b + c > a$ simplifies to $9t + 10 > t^2$:
+
+ 
+            \begin{itemize}
+        \item $t = 9$: $9(9) + 10 = 91 > 81$ (works)
+        \item $t = 10$: $9(10) + 10 = 100 \le 100$ (fails)
+            \end{itemize}
+            Since $t = 9$ is indeed the upper limit, there are exactly $7$ valid values, giving \textbf{$\text{(B)}$}. ~Faris (Usernamepasswordpassword)
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) A pyramid of fractions starts with $\frac{1}{2}$ in row 0. Each successive row has $\frac{a}{a+b}$ and $\frac{b}{a+b}$; for instance, in row 1, $\frac{1}{3}$ and $\frac{2}{3}$ appear. In which row will $\frac{20}{27}$ appear?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_2026_15_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\mathbf{(A)} 5 \qquad\mathbf{(B)} 8 \qquad\textbf{(C)}\   12  \qquad 	\textbf{(D)}\   26  \qquad 	\textbf{(E)}\   \text{The node } \dfrac{20}{27} \text{ does not appear in the diagram.}$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+We work backwards. $\frac{20}{27}$ must be below $\frac{7}{20},$ since $\frac{7}{20}$ splits into $\frac{7}{27}$ and $\frac{20}{27}.$ Likewise, we have the chain 
+ \[\frac{20}{27}\implies\frac{7}{20}\implies\frac{7}{13}\implies\frac{6}{7}\implies\frac{1}{6}\implies\frac{1}{5},\]where, in the diagram, $\frac{1}{5}$ appears in level $3.$ Thus, $\frac{20}{27}$ appears in level $\boxed{\text{(B) 8}}$ ~Arjun\_Jetti
+
+ Note: You could try to solve your way down, but it would take a lot of time and effort, which you don't want to waste on this competition ~ hellokindsir
+
+ Other Note: However, if you work from left to right, the first node you would work on would be 1/5, so you get lucky there. ~Starlight\_128
+
+ 
+
+
+
+\textbf{Solution 2}
+
+If $\frac{a}{a+b}$ is emerged from a node, so is $\frac{b}{a+b}$.
+
+ Hence, since $\frac{20}{27}$ comes from a node, so does $\frac{7}{27}$. The result is $\frac{7}{20}$.
+
+ Since $\frac{7}{20}$ is a node, so is $\frac{13}{20}$, so it emerges from $\frac{7}{13}$.
+
+ Since $\frac{7}{13}$ is a node, so is $\frac{6}{13}$, so it emerges from $\frac{6}{7}$.
+
+ Since $\frac{6}{7}$ is a node, so is $\frac{1}{7}$, hence $\frac{1}{6}$.
+
+ From here, it is easy to see we have $\frac{1}{5}, \frac{1}{4}, \frac{1}{3},$ and finally $\frac{1}{2}$.
+
+ Therefore, counting down from 0, it appears on layer $\boxed{8}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+First, let's define neighboring fractions as fractions that have the same number above them (like $1/3$ and $2/3$, or $1/4$ and $3/4$). Each fraction $\frac{a}{b}$ sprouts two fractions $\frac{a}{a+b}$ and $\frac{b}{a+b}$ that add up to $\frac{a+b}{a+b}=1$.
+
+ From this, we see that the neighbor of $\frac{20}{27}$ is $\frac{7}{27}$. Working backwards, the fraction above it is the ratio of the two fractions' numerators, $\frac{7}{20}$.
+
+ We repeat this process:
+
+ 
+            \begin{itemize}
+        \item $7/20$'s neighbor: $13/20$<ul><li>The fraction above: $7/13$</li></ul>
+        \item $7/13$'s neighbor: $6/13$<ul><li>The fraction above: $6/7$</li></ul>
+        \item $6/7$'s neighbor: $1/7$<ul><li>The fraction above: $1/6$</li></ul>
+        \item $1/6$'s neighbor: $5/6$<ul><li>The fraction above: $1/5$</li></ul>
+            \end{itemize}
+            We see that $1/5$ appears in our diagram in level 3.Therefore, working backwards, $20/27$ appears in level 8, so the answer is $\boxed{\text{(B) 8}}$.
+
+ 
+
+
+
+\textbf{Solution 3.1}
+
+Each fraction has only one possible fraction it can originate from, so if we start with $\dfrac{20}{27}$, it can only come from $\dfrac{7}{13}$, and that comes from $\dfrac{6}{7}$ which comes from $\dfrac{1}{6}$ which comes from $\dfrac{1}{5}$. (This is just here because I felt the above solution was somewhat confusing)
+
+ 
+
+
+
+\textbf{Solution 4 (Cheese)}
+
+Notice that answer choice $B$ is exactly 3 more than $A$. The original problem had three pre-established "levels" in the branch, so we can imply that MAA (or ai or whoever made the test) was trying to trick the people who didn't add the original three "levels". Therefore, the answer is $\boxed{\text{(B) 8}}$.
+
+ 
+
+
+
+\textbf{Solution 5 (Analyzing Option Choices)}
+
+At level $n$, any node $\frac{a}{b}$ satisfies the denominator bounds:
+ \[n + 2 \leq b \leq F_{n+3}\]where $F_3 = 2, F_4 = 3, F_5 = 5, \dots$ are the Fibonacci numbers. Testing $b = 27$ against the options:
+
+ 
+            \begin{itemize}
+        \item \textbf{Eliminate (E):} Since $\gcd(20, 27) = 1$ and $20 < 27$, Euclidean subtraction reduces $\frac{20}{27}$ to $\frac{1}{2}$, so it must appear in the tree.
+        \item \textbf{Eliminate (D) $26$:} The minimum denominator at level $26$ is $26 + 2 = 28 > 27$.
+        \item \textbf{Eliminate (A) $5$:} The maximum denominator at level $5$ is $F_8 = 21 < 27$.
+        \item \textbf{Eliminate (C) $12$:} Reaching $b = 27$ at level $12$ requires staying near the leftmost path ($\frac{1}{14}$), which keeps the numerator far below $20$.
+            \end{itemize}
+            Thus, $\boxed{8}$ is the only possible answer.
+
+ 
+
+
+
+\textbf{Solution 6 (No more time left)}
+
+Using the established diagram, we figure the largest possible denominator in level 5 is 21. We immediately eliminate $A$. If we do understand how quickly this pattern moves forward, row 8 should probably cover $\frac{20}{27}$, so we can guess $\boxed{\text{(B) 8}}$. If you are skeptical, you may consider how inflated the numerator and denominator values may be in row 12 and that many AMC 10 questions won't have an answer like $E$ be correct.
+
+ \textbf{Remark} This setup is very similar to the \href{https://en.wikipedia.org/wiki/Calkin\%E2\%80\%93Wilf\_tree}{Calkin-Wilf Tree}, which also contains all rational numbers, but rather than having $\frac{b}{a+b}$, it uses $\frac{a+b}{b}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Engineer's Induction)}
+
+Looking at the fractions on the far right of the diagram, we can quickly see that the difference in between the numerator and denominator is increasing by $1$. For example, the difference in $\frac{2}{3}$ is $1$, because $3 - 2 = 1$. Likewise, the difference in $\frac{3}{5}$ is 2, and the difference in $\frac{5}{8}$ is 3, because $5 - 3 = 2$ and $8 - 5 = 3$. Let us now use engineer's induction and assume this pattern continues on for this problem. We can also notice that the difference corresponds to the layer/row that the fraction is on by the relationship $n + 1$ (where $n$ is the row). For example, taking the same nodes as before, $\frac{2}{3}$ appears in the second row with a difference of $1$ and therefore $1 + 1 = 2$. Looking at the node $\frac{20}{27}$, we can quickly discern the difference is $7$, and therefore it is on row $7 + 1 = 8$ , making the solution $\boxed{\text{(B) 8}}$
+
+
+
+	\item (\textit{AMC 10 10A 2026}) An urn contains $6$ red balls, $4$ black balls, and $4$ white balls. Suppose $7$ balls are drawn at random without replacement and a score is computed as follows:
+
+
+ $\cdot$ $1$ point is given for each red ball up to a maximum of $3$ points. 
+
+
+ $\cdot$ $1$ point is given for each black ball up to a maximum of $2$ points. 
+
+
+ $\cdot$ $1$ point is given for each white ball up to a maximum of $2$ points.
+
+
+ For example, drawing $1$ red ball, $4$ black balls, and $2$ white balls would earn a score of $1+2+2=5$. What is the probability of getting the lowest possible score?
+
+
+ $\mathbf{(A)}\frac1{858}\qquad\mathbf{(B)}\frac5{3432}\qquad\mathbf{(C)}\frac1{312}\qquad\mathbf{(D)}\frac2{429}\qquad\mathbf{(E)}\frac5{264}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+We first find the $\min$. This is simple, just maximize the number of balls taken first (so 3 points total), then take one more (one more point), for a minimum four points.
+
+ There are $\binom{14}{7} = 3432$ total ways to pick these balls. We now figure out how many ways we can obtain four points.
+
+ \textbf{Case 1:}
+
+ We pick red balls then one of the other balls. We pick all six red balls in $\binom{6}{6}$ ways and one of the four other balls in $\binom{4}{1}$, for a total 4 cases. Since we have two possibilities for which ball color can be chosen, we have 8 cases total.
+
+ \textbf{Case 2:}
+
+ We solely use the eight balls. Consider them as one group one point each, for four total points. We choose seven from this pool of 8, done in $\binom{8}{7} = 8$ ways.
+
+ \textbf{Conjoinment:}
+
+ Therefore, we have 16 total cases, so $\frac{16}{3432}$ total ways, which simplifies to is $\boxed{\frac{2}{429}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $r,b,w$ denote the numbers of red, black, and white balls drawn, respectively. The score is $\min(r,3)+\min(b,2)+\min(w,2)$.
+
+ 
+We count the possible draws that result in a score of 4 by considering the value of $r$.
+
+ 
+If $r=0$, then $b+w=7$. Since there are only 4 black and 4 white balls, the only possibilities are $(b,w)=(3,4)$ or $(4,3)$. This gives $2\binom{4}{3}\binom{4}{4}=8$ ways.
+
+ 
+If $1\leq r\leq5$, then $b+w=7-r\geq2$. The black and white balls contribute at least 2 points, while the red balls contribute at least 1 point. Checking the possible values of $r$ shows that the total score cannot equal 4.
+
+ 
+If $r=6$, then $b+w=1$. The red balls contribute 3 points and the remaining ball contributes 1 point, giving $\binom{6}{6}\binom{8}{1}=8$ ways.
+
+ 
+Therefore, there are $8+8=16$ favorable draws out of $\binom{14}{7}=3432$ total draws. The desired probability is $\boxed{\frac{16}{3432}=\frac{2}{429}}$, which is choice $\boxed{\text{(D)}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (fakesolve)}
+
+Okay since there are two major cases for this problem: 3 white balls, 4 black balls or visa versa, the numerator must be even so therefore it's $\boxed{\text{(D)}}$.
+
+ Note: I know there may be other cases but it just making stuff more complex.
+
+ Addendum: There are two more cases possible, choosing 6 red and 1 black or 6 red and 1 white, which still keeps the total cases even, and so the answer should still be $\boxed{\text{(D)}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Very Easy)}
+
+We can see that the minimum amount of points obtained is 4, which can be obtained in two cases. The first case is using all 6 red balls and one of the black or white balls. Since there are 8 black or white balls, there are 8 cases for that. The second case is using only black and white balls. Since we are picking 7 out of the 8 black or white balls, we leave one ball out, and there are 8 ball choices to leave out. Since case 1 has 8 possibilities and case 2 has another 8, and the total possibilities is $\binom{14}{7}$, we get $\boxed{\frac{16}{3432}=\frac{2}{429}}$, which is choice $\boxed{\text{(D)}}$.-Neo
+
+ 
+
+
+
+\textbf{Solution 5}
+
+We first see the minimum is either 6 reds and one other or 7 out of the blacks/whites. We add the probabilities of drawing either case as follows:
+
+ \textbf{Case 1:}
+
+ For 6 reds and one other, the probability of drawing a red first is $\frac{6}{14}$ then $\frac{5}{13}$ for the second red, and so on. The final probability for this case is $\frac{6}{14} \cdot \frac{5}{13} \cdot \frac{4}{12} \cdot \frac{3}{11} \cdot \frac{2}{10} \cdot \frac{1}{9} \cdot \frac{8}{8} \cdot \binom{7}{1}$.Here, we multiplied by the $\frac{8}{8}$ because the last ball can be any of the ones left (white or blacks) and we multiplied by $\binom{7}{1}$ because the one ball of another color could have been drawn in any place.
+
+ \textbf{Case 2:}
+
+ For the probability of choosing all 7 from black or white, we get:$\frac{8}{14}\cdot\frac{7}{13}\cdot\frac{6}{12}\cdot\frac{5}{11}\cdot\frac{4}{10}\cdot\frac{3}{9}\cdot\frac{2}{8}$ and the order we pick the balls in didn't matter, since they are all from the same group of 8.
+
+ 
+Adding, we get $\frac{6}{14} \cdot \frac{5}{13} \cdot \frac{4}{12} \cdot \frac{3}{11} \cdot \frac{2}{10} \cdot \frac{1}{9} \cdot \frac{8}{8} \cdot \binom{7}{1} + \frac{8}{14}\cdot\frac{7}{13}\cdot\frac{6}{12}\cdot\frac{5}{11}\cdot\frac{4}{10}\cdot\frac{3}{9}\cdot\frac{2}{8} = \frac{2}{429}$, or $\boxed{\text{(D)}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) For each edge of a regular hexagon with side length $1$, a square is constructed inside the hexagon with that edge as one of its sides. The region interior to all six squares is the interior of a smaller hexagon, shown shaded in the figure below.
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_2026_17_Problem_Figure_1.png}
+                    \end{figure}
+                    
+The area of the smaller hexagon can be expressed in the form $\frac{a\sqrt{b}}{c} - d$, where $a, b, c$ and $d$ are all positive integers, $a$ and $c$ are relatively prime, and $b$ is not divisible by the square of any prime. What is $a+b+c+d$? 
+
+
+ $\textbf{(A)} 16 \qquad \textbf{(B)} 17 \qquad \textbf{(C)} 18 \qquad \textbf{(D)} 19 \qquad \textbf{(E)} 20$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Triangles)}
+
+Looking at the distance between opposite edges of the large hexagon, we can find this distance to be $\sqrt{3}$, due to the hexagon being able to be divided into 12 $30-60-90$ triangles with hypotenuse $1$. Shifting our focus to the overlapping area formed by the squares on the top and bottom edges, we can find the height of that area to be $2-\sqrt{3}$, as we can just subtract the height of the hexagon from the combined height of the two squares. Therefore, the height of the hexagon we are solving for is $2-\sqrt{3}$. Reversing the process of deriving the height from side length, we can find the longer leg of each $30-60-90$ triangle in the smallest hexagon to be $\frac{2-\sqrt{3}}{2}$, meaning the shorter leg will be $\frac{\frac{2-\sqrt{3}}{2}}{\sqrt{3}}\Rightarrow\frac{2\sqrt{3}-3}{6}$. Therefore, the area of that triangle will be $\frac{\frac{2-\sqrt{3}}{2}\cdot\frac{2\sqrt{3}-3}{6}}{2}\Rightarrow\frac{7\sqrt{3}-12}{24}$. Multiplying that by $12$, we find the area of the innermost hexagon to be $\frac{7\sqrt{3}}{2}-6$. As this now matches the form $\frac{a\sqrt{b}}{c}-d$, $a=7$, $b=3$, $c=2$, and $d=6$. Our answer then will be $7+3+2+6 = \fbox{C (18)}$-rainjs
+
+ 
+
+
+
+\textbf{Solution 2}
+
+We find the distance between opposite edges as $\sqrt{3}$ so therefore the distance between opposite edges of the smaller hexagon is $2-\sqrt{3}$. Therefore the ratio of the side lengths of the smaller hexagon to the larger one is $\frac{2-\sqrt{3}}{\sqrt{3}}$ and the ratio of the areas is $\frac{(2-\sqrt{3})^2}{3}=\frac{4+3-4\sqrt{3}}{3}=\frac{7-4\sqrt{3}}{3}$. Now we can find the area of the larger hexagon as $\frac{3\sqrt{3}}{2}s^2=\frac{3\sqrt{3}}{2}$ and using the ratio we find that the area of the smaller hexagon is $(\frac{7-4\sqrt{3}}{3})(\frac{3\sqrt{3}}{2})=\frac{21\sqrt{3}}{6}-\frac{12\cdot3}{6}=\frac{7\sqrt{3}}{2}-6$. Putting our answer in the desired form gives $\fbox{C (18)}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_17_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Consider the blue rectangle. The length of this rectangle is $\sqrt{3}$, and its width is 1. Thus, its area is $\sqrt{3}$.
+
+ The two squares of side length 1 completely cover the rectangle, with some overlap. Since the combined area is 2, the overlap has area $2-\sqrt{3}$.
+
+ Since one side of this small overlap rectangle is 1, the other side must be $2-\sqrt{3}$. Now, the three rectangles overlap at the hexagon, hence, we can just consider this figure:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_17_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+ The blue line is just the width of the smaller rectangle, which is $2-\sqrt{3}$. Since this is a regular hexagon, it follows that the side length must then be $\frac{2-\sqrt{3}}{\sqrt{3}} = \frac{2\sqrt{3} - 3}{3}$.
+
+ Alas, the area must be
+
+ 
+ \[\frac{3\sqrt{3}}{2} \cdot (\frac{2\sqrt{3}-3}{3})^2\]
+ \[\frac{3\sqrt{3}}{2} \cdot \frac{7 -4\sqrt{3}}{3}\]
+ \[= \frac{7\sqrt{3} - 12}{2}\]
+ \[= \frac{7\sqrt{3}}{2} - 6\]
+
+ And thus the answer is $\boxed{18}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Connect two adjacent vertices of the larger hexagon to the center of the hexagon to form an equilateral triangle. The distance from the midpoint of the side between those two vertices to the center of the hexagon is $\frac{\sqrt{3}}{2}$ because the side length of the equilateral triangle is $1$, half of that is $\frac{1}{2}$ and using a 30-60-90 triangle we can calculate the height. 
+
+ Now observe that one of the sides of the small hexagon is pressed against the side of a square, so the distance from the midpoint of that same edge of the large hexagon to the edge of the small hexagon that is pressed against the square is $1$. 
+
+ Now we know that the distance from the center of the small hexagon to the midpoint of its side is $1-\frac{\sqrt{3}}{2}$, and once again using our knowledge of 30-60-90 triangles we find that the side length of the small hexagon is $\frac{2\sqrt{3}}{3}-1$. The formula for the area of a hexagon using its side length is $\frac{3\sqrt{3}}{2}s^2$ so plugging our side length in we get $\frac{7\sqrt{3}}{2}-6$. The question asks $a+b+c+d$, so we do $7+3+2+6$ which gives $\fbox{C (18)}$
+
+
+
+
+\textbf{Solution 5}
+
+If two squares coming from opposite sides did not overlap, the total length of the sides of two adjacent squares would be $2$ units. However, now that they do overlap, they only take up $\sqrt{3}$ units. This is because the area across (two opposite sides) of a regular hexagon of side $s$ is $s\sqrt{3}$. Since the squares only take up $\sqrt{3}$ units, the length across the middle hexagon is $2-\sqrt{3}$ units. now we solve for side length of the middle hexagon.
+ \[s\sqrt{3}=2-\sqrt{3}\]
+ \[s=\frac{2\sqrt{3}}{3}-1\]
+
+ Now we can get the area using the formula for the regular hexagon $A=\frac{3\sqrt{3}}{2}s^2$
+ \[A=\left(\frac{2\sqrt{3}}{3}-1 \right)^2 \cdot \frac{3\sqrt{3}}{2}\]
+ \[A=\frac{21\sqrt{3}}{6}-6=\frac{7\sqrt{3}}{2}-6\]Summing up $a$, $b$, $c$, $d$ as asked for in the problem, we get
+ \[7+3+2+6=\boxed{ \text{(C) } 18}\]
+
+
+
+
+\textbf{Solution 6}
+
+Refer to the diagram in Solution 3. Notice that the hexagon is regular, which means that each of its interior angles is $120^{\circ}$. By the Law of Cosines, the blue rectangle's length is $\sqrt{3}$. This means that the overlap between the two squares is $2-\sqrt{3}$, because each square has a side length of $1$. This is the length of the horizontal line across the small rectangle. Reverse engineering the Law of Cosines: $(2+\sqrt{3})^{2} = 2x^{2} - 2x^{2}\cos{120^\circ}$, which after simplifying gives the final answer.
+ \[\boxed{\text{(C)\ }18}\]
+
+
+
+	\item (\textit{AMC 10 10A 2026}) The strictly decreasing sequence of $11$ positive integers $(a_0,a_1,a_2,\ldots,a_{10})$ is defined by the recursive rule $a_k=\frac{1}{2}a_{k-1}+2$, for $k \geq 1$. Let $N$ be the minimum possible value of $a_0$. What is the sum of the digits of $N$?
+
+
+ $\textbf{(A)}~8\qquad\textbf{(B)}~9\qquad\textbf{(C)}~10\qquad\textbf{(D)}~11\qquad\textbf{(E)}~12$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Solving for $a_{k-1},$ we get $a_{k-1}=2a_k-4.$ The minimum $a_0$ occurs with the minimum $a_{10},$ which is $5,$ since $a_{10}=4\implies a_9=4$ and the sequence wouldn't be strictly decreasing. With $a_{10}=5,$ we can work back up to find $N=a_0=1028\implies\boxed{\text{(D) }11}$
+$\textbf{Alternate Path after }a_{10}=5$
+
+ On the other hand, instead of bashing out terms, we can use linear combinations. $a_{k-1}=2a_k-4\implies a_{k-2}=2a_{k-1}-4\implies a_{k-1}-a_{k-2}=2a_k-2a_{k-1}\implies 2a_k-3a_{k-1}+a_{k-2}=0.$
+
+ Letting $a_k=c^k,$ we get $2c^2-3c+1=0\implies c=1,\frac{1}{2}\implies a_k=\lambda_1 (1)^k+\lambda_2 \left(\frac{1}{2}\right)^k.$
+
+ Plugging in $a_{10}=5$ and $a_9=6,$ we find $(\lambda_1,\lambda_2)=(4,1024)\implies a_k=4+1024 \left(\frac{1}{2}\right)^k\implies  N=a_{0}=1028\implies\boxed{\text{(D) }11}$~Tacos\_are\_yummy\_1
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 1 Alternate/Note}
+
+After we get $a=5,$ we can just use induction to quickly recursify *cue sparkles ✨* 
+
+ so $a_9 = 6, a_8 = 8, a_7 = 12, a_6 = 20, a_5 = 36, a_4 = 68, a_3 = 132, a_2 = 260, a_1 = 516, a_0 = 1028$
+
+ so $1+0+2+8=11$
+
+ and get    ->  $\boxed{\text{(D) }11}$
+
+
+
+
+\textbf{Solution 1 Another Alternative (Modulo 9)}
+
+After we figure out the minimum value of $a_{10} = 5$, we can work modulo 9 backwards, which is faster as all the answer choices are different modulo 9 and the sum of digits of a number is congruent to the number modulo 9. 
+
+ We get $a_9 \equiv 6 \pmod{9}, a_8 \equiv 8 \pmod{9}, a_7 \equiv 3 \pmod{9}, a_6 \equiv 2 \pmod{9}, a_5 \equiv 0 \pmod{9}, a_4 \equiv 5 \pmod{9}, a_3 \equiv 6 \pmod{9}$ and from here the pattern of 6, 8, 3, 2, 0, 5 repeats so we get $a_0 \equiv 2 \pmod{9}$. Looking at our answer choices, we see that only $\boxed{\text{(D) }11}$ is congruent to 2 modulo 9, so it must be our answer.
+
+ 
+
+
+
+\textbf{Solution 1 Alternatively-er Ending}
+
+Similar to the first alternative way, we see that counting backwards, the last few terms go $5, 6, 8, 12, ...$ andnow we can observe that each successive term increases by a consecutive powers of 2. Since there are 10 of these jumps from $a_{10}$  to $a_0$ (backwards), the sum of the jumps is $2^{10}-1=1023$. Adding this to the last term, 5, we get $a_0=1028$ and $1+0+2+8$ gives us $\boxed{\text{(D) }11}$
+
+
+
+
+\textbf{Solution 2}
+
+If we set $a_{10}$ = $2$, then the sequence would be strictly increasing. If we set $a_{10}$ = $4$, then $a_0$, $a_1$, ... ,$a_9$ would all be equal to 4. If $a_{10}$ = $5$, though, then this would work, as $a_9$ would be equal to $6$, by plugging and chugging. We slowly work our way up, getting that $a_8$ = $8$, $a_7$ = $12$, $a_6$ = $20$, $a_5$ = $36$, $a_4$ = $68$, $a_3$ = $132$, $a_2$ = $260$, $a_1$ = $516$, and $a_0$ = $1028$. Summing the digits of $a_0$ we get that $1$ + $0$ + $2$ + $8$ equals $11$. Therefore, our answer is $11$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The given recursive rule is $a_k = \frac{1}{2}a_{k-1} + 2$. We can find the fixed point of this recurrence by solving $x = \frac{1}{2}x + 2$, which gives $x = 4$.
+
+ Let us define a new sequence $b_k = a_k - 4$. Substituting $a_k = b_k + 4$ into the original recurrence gives:
+ \[b_k + 4 = \frac{1}{2}(b_{k-1} + 4) + 2 \implies b_k = \frac{1}{2}b_{k-1}\]
+
+ This means $b_k$ is a geometric sequence with a common ratio of $\frac{1}{2}$. Then we can express $b_k$ in terms of $b_0$:
+ \[b_k = \frac{b_0}{2^k} \implies a_k - 4 = \frac{a_0 - 4}{2^k}\]
+
+ Solving for $a_k$, we get the formula:
+ \[a_k = 4 + \frac{a_0 - 4}{2^k}\]
+
+ For $k = 10$, this yields:
+ \[a_{10} = 4 + \frac{a_0 - 4}{1024} \implies a_0 = 1024(a_{10} - 4) + 4\]
+
+ We are given that the sequence consists of positive integers and is strictly decreasing. For $a_k$ to be strictly decreasing, the term $\frac{a_0 - 4}{2^k}$ must be strictly positive, meaning $a_0 > 4$, which implies $a_{10} > 4$.
+
+ To minimize $a_0$, we must minimize the integer $a_{10}$. The smallest integer greater than $4$ is $a_{10} = 5$. Plugging this in gives:
+ \[a_0 = 1024(5 - 4) + 4 = 1028\]
+
+ The sum of the digits of $N = 1028$ is $1 + 0 + 2 + 8 = \boxed{\textbf{(D) } 11}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Explained CLEARLY)}
+
+This problem looks scary but is easy if you look for a pattern. We know that the sequence is strictly decreasing, and since we are looking for the smallest value of $a_0$, the terminal term $a_{10}$ must also be as small as possible. 
+
+ To find our backward rule, we start with the forward recurrence given from the problem:
+ \[a_k = \frac{1}{2}a_{k-1} + 2\]
+
+ We isolate $a_{k-1}$ by subtracting $2$ from both sides:
+ \[a_k - 2 = \frac{1}{2}a_{k-1}\]
+
+ Then, multiplying the entire equation by $2$ gives our backward formula:
+ \[a_{k-1} = 2a_k - 4\]
+
+ In other words, each preceding term is equal to twice the current term minus $4$.
+
+ Now that we have our backward formula, let's test small values for $a_{10}$:
+
+ 
+            \begin{itemize}
+        \item If $a_{10} = 1$, then $a_9 = 2(1) - 4 = -2$ (not positive).
+        \item If $a_{10} = 4$, then $a_9 = 2(4) - 4 = 4$ ($4$ $=$ $4$, so the sequence is flat).
+        \item If $a_{10} = 5$, then $a_9 = 2(5) - 4 = 6$. This works! Here, $a_{10}$ is positive and less than $a_{9}$, so the min value of $a_{10}$ is $5$.
+            \end{itemize}
+            Now we can find the preceding terms:
+ \begin{align*} a_{10} &= 5 \\ a_9 &= 2(5) - 4 = 6 && (\text{difference of } 1) \\ a_8 &= 2(6) - 4 = 8 && (\text{difference of } 2) \\ a_7 &= 2(8) - 4 = 12 && (\text{difference of } 4) \\ a_6 &= 2(12) - 4 = 20 && (\text{difference of } 8) \\ a_5 &= 2(20) - 4 = 36 && (\text{difference of } 16) \end{align*}
+
+
+ From here, you can see that the difference from $a_{10}$ to $a_9$ is $1$, then the difference from $a_9$ to $a_8$ doubles and is $2$, then the difference from $a_8$ to $a_7$ doubles again and is $4$, etc.
+
+ We are asked to find $a_0$. Since the difference doubles, we can add $a_{10}$ to the total common difference which would be:$1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 = 1023$, and $1023 + 5$ (to account for $a_{10}$) gives $1028$.
+
+ Or you could use the formula to add $x$ powers of $2$, which is $2^{x} - 1$, so: $2^{10}$ $-$ $1$ $=$ $1023$, and $1023$ $+$ $5$ $=$ $1028$
+
+ Either way, $a_0$ is $1028$, and $1 + 0 + 2 + 8 = \boxed{\textbf{(D) } 11}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Set $a_{10} = k$, and work backwards. Since $a_k = \frac{1}{2} a_{k-1} + 2$,
+
+ 
+ \[2k-4 = a_{9}\]
+ \[4k-12 = a_{8}\]
+ \[8k-28 = a_{7}\]
+ \[16k-60 = a_6\]
+ \[32k-124=a_5\]
+ \[64k-252 = a_4\]
+ \[128k-508= a_3\]
+ \[256k - 1020 = a_2\]
+ \[512k - 2044 = a_1\]
+ \[1024k - 4092 = a_0.\]
+
+ These are positive integers, hence at minimum $k = 4$, which forces $a_0 = 4$. This however defies the problem statement, hence we consider $k = 5$, in which $a_0 = N = 1028$, and thus the answer is $\boxed{11}$.
+
+ 
+
+
+
+\textbf{Solution 6:}
+
+Step 1: Invert the Flow (Time-Reversal)Instead of propagating forward with divisions by $2$, invert the recurrence to express $a_{k-1}$ as a function of $a_k$:
+ \[a_k = \frac{1}{2}a_{k-1} + 2 \implies a_{k-1} = 2a_k - 4\]Define the backward step operator $\Delta a_k = a_{k-1} - a_k$. Evaluating $\Delta a_k$:
+ \[\Delta a_k = (2a_k - 4) - a_k = a_k - 4\]Step 2: The Integer Gap PrincipleThe problem specifies that $a_k \in \mathbb{Z}^+$ and the sequence is strictly decreasing:
+ \[a_{k-1} > a_k \implies \Delta a_k > 0\]Substituting $\Delta a_k = a_k - 4$:
+ \[a_k - 4 > 0 \iff a_k > 4\]Since $a_k$ is constrained to the integer lattice $\mathbb{Z}$, the smallest permissible value for the terminal term $a_{10}$ is:
+ \[a_{10} \ge 5 \implies \min(a_{10}) = 5\]Step 3: Backward Telescoping via ScalingNotice the geometric doubling of the step sizes:
+ \[\Delta a_{k-1} = a_{k-1} - 4 = 2(a_k - 4) = 2 \Delta a_k\]Hence, by induction for $j = 1, 2, \dots, 10$:
+ \[\Delta a_{10 - j} = 2^j \Delta a_{10}\]Now, express $a_0$ directly as a backward telescope from $a_{10}$:
+ \[a_0 = a_{10} + \sum_{j=1}^{10} \Delta a_j = a_{10} + \Delta a_{10} \sum_{j=1}^{10} 2^{10-j} = a_{10} + \Delta a_{10} (2^{10} - 1)\]Substitute $\Delta a_{10} = a_{10} - 4$:
+ \[a_0 = a_{10} + (a_{10} - 4)(2^{10} - 1) = 4 + 2^{10}(a_{10} - 4)\]Step 4: Minimization and Digit SumBecause $a_0$ is strictly increasing with respect to $a_{10}$, the global minimum $N$ occurs precisely at the lower boundary $\min(a_{10}) = 5$:
+ \[N = 4 + 2^{10}(5 - 4) = 4 + 1024 = 1028\]The sum of the digits of $N$ is:
+ \[1 + 0 + 2 + 8 = 11\](D) 11
+
+ By-ADHRIT\_MOHANSAHAI
+
+ 
+
+
+
+\textbf{Solution 7}
+
+We test $a _ {10} = 2, 3, 4, 5$, and realize that $5$ is the first that works and satisfies the sequence. Thus, were write out the sequence and observe that $a_0=1028$ and the answer is $\boxed{11}$.~jamespudi
+
+ 
+
+
+
+\textbf{Solution 8 (Noticing a pattern)}
+
+If we look at the equation closely we can see that the way to get from the 0th term to the 10th term is to do $(1/2(1/2(F_0)+2)+2) ...$ we can see through here that the final coefficient for $F_0$ will be $1/1024$ meaning that this system has something to do with powers of two. After finding the smallest possible last term as 5 (you can do 1/2x+2=x, so x is at east 4 and since all terms are distinct x has to be 5 or greater.) we can see that term 9 is 6 and term 8 is 8. Now we can see a correlation between the powers of two and the numbers so we have a pattern. The term is just $2^{10-x}+2$ so now the smallest 0th term is $2^{10}+4=1028$ and 1+0+2+8=11 so our answer is 11.~SShreyas
+
+ 
+
+
+
+\textbf{Solution 9}
+
+After noticing that the coefficient of $a_0$ is $\frac{1}{2^{10}} = \frac{1}{1024}$ as done in Solution 8, you can notice that the constant is:
+
+ $2 + 1 + 1/2 + 1/4 + ... + 1/256 = 3 + \frac{1 + 2 + 4 + ... + 128}{256}$ 
+
+ as each new layer adds $2 \cdot \frac{1}{2^n}$ for $1 \leq n \leq 10$. Using the standard sum of the first $n$ powers of $2$ ($2^{n + 1} - 1$) we get that the constant is $3 + \frac{255}{256}$. That means $\frac{a_0}{1024} = \frac{257}{256}$ (it cannot equal $\frac{1}{256}$ as that would give $a_0 = 4$, which would result in fractions later in the pattern, so we move onto the next possible fraction, $\frac{257}{256}$). Solving gives $\boxed{\mathbf{a_0 = 257 \cdot 4 = 1028}}$ which is option $\textbf{D}$.
+
+ 
+
+
+
+\textbf{Solution 10}
+
+We can find the inverse of the rule and work backwards starting from $a_{10}$. 
+ \begin{align*} a_k &= \frac{1}{2}a_{k-1} + 2 \\ a_k - 2 &= \frac{1}{2}a_{k-1} \\ a_{k-1} &= 2a_k - 4 \\ a_k &= 2a_{k+1} - 4 \end{align*}
+If $a_{10} = k$, then $a_9 = 2k-4$, $a_8$ will be $4k-12$, and $a_7$ is $8k-28$. Notice that the coefficient of $k$ is always $2^{10-k}$ and the last term always is $2^{12-k}-4$. This gives us $a_0 = 1024k - (2^{12}-4)$. Because the sequence contains positive integers, the minimum value of $k$ is $5$ so $a_0$ has to be at least $1024(5) - 4092 = 1,028$. $1+0+2+8 = 11$ so the answer is $11$ (D).~eva.c~$\LaTeX$ edits hothost59
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Three $2 \times 2 \times 2$ cubes sit on a table so that two of the cubes share a face, and a face of the
+third cube is centered along a shared edge of the other two cubes, as shown.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_2026_19_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ A hemispherical cover is placed over the cubes so that its circumference rests on the table
+and the cubes are under the cover. What is the least possible value of the radius of the cover?
+
+
+ $\mathbf{(A)}~3 \qquad \mathbf{(B)}~\frac{\sqrt{357}}{6} \qquad \mathbf{(C)}~\frac{\sqrt{681}}{8}  \qquad \mathbf{(D)} ~\frac{\sqrt{178}}{4} \qquad \mathbf{(E)}~2\sqrt{3}$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Examine the top face of the cubes, and this forms an isosceles trapezoid with top length $2$, bottom length $4$, and height $4$. This is a cyclic quadrilateral and the circumscribed circle on this is one cross-section of the hemisphere. Because the isosceles trapezoid is cyclic (meaning all four of its corners lie on a single perfect circle), the circumcircle of the trapezoid is the exact same circle as the circumcircle of any triangle formed by picking three of its four corners. Now, we can find the radius of the circumscribed circle by looking at a triangle with the three sides and applying the area formula $A = \frac{abc}{4R}$ on the triangle with base 4 and top point being one of the far corners of the top square. Using $A=\frac{1}{2}bh$ tells us that the area of the triangle is $8$. Now, we can find the three sides to be $4$, $5$, and $\sqrt{17}$ (We know the 3 sides of the triangle by using symmetry and seeing that the altitude of 4 splits the base at 3(respective to the top point chosen)) and we get $8=\frac{20\sqrt{17}}{4R}$ so $R=\frac{5\sqrt{17}}{8}$. Now we can look at the vertical cross section which is a hemisphere with a chord of length $R=\frac{5\sqrt{17}}{4}$ and the chord is 2 units away from the diameter of the semicircle. Using the Pythagorean theorem on the triangle with legs $R=\frac{5\sqrt{17}}{8}$ and $2$ results in $\sqrt{\frac{25\cdot17}{64}+\frac{256}{64}}=\sqrt{\frac{681}{64}}$ so the answer is $\boxed{(C) \frac{\sqrt{681}}{8}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_19_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ For now ignoring the 3D and looking from the top in 2D, we want a point equally far away from $S$ or $P$ as $R$ or $Q$, which we will call point $O$. We can find the exact place $O$ is at by setting $x$ to be $\overline{OA}$ via
+
+ $(2-x)^2+2^2 = (x+2)^2+1^2$. This equation is saying that $\overline{PO}=\overline{OQ}$ using the Pythagorean theorem. Once we find $x$ we will know where the center of the circle is, and then how far it is from the corner of the square, and then apply the pythagorean theorem to the diagonal and the height of a cube to get the radius of the sphere. Solving, we find that $x = \frac{3}{8}$, so $\overline{PO}$ is $\sqrt{(2-\frac{3}{8})^2+2^2}=\frac{5\sqrt{17}}{8}$ then do $\sqrt{\frac{5\sqrt{17}}{8}^2 + 2^2}$ for 3D. Upon evaluating that, we get $(C) \frac{\sqrt{681}}{8}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Below is a diagram of what the three cubes look like from above.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_19_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ In order to minimize the radius, the hemisphere will just barely touch the outside top corners of the cubes.Let $O$ be the center of the hemisphere. Since the three cubes are the same exact height, $\overline{OS}$, $\overline{OP}$, $\overline{OR}$, and $\overline{OQ}$ will have the same length. Since $O$ lies on the center line of the figure, $\overline{OS}=\overline{OP}$, and $\overline{OR}=\overline{OQ}$.Intuitively, if $O$ is the center, then $\overline{AW}=\overline{AZ}=1$. This also means that if we extend $\overline{OA}$ down to $\overline{RQ}$ (suppose they will intersect at $N$), then $\overline{RN}=\overline{NQ}=1$. Also, $\overline{NA}= 2$
+
+ Now assign a variable and call the length $\overline{OX}$ $x$. This means that $\overline{OA}=2-x$, so $\overline{ON}=(2-x)+2=4-x$.By the pythagorean theorem, $\overline{OS}^2=\overline{OP}^2=\overline{OX}^2+\overline{XS}^2=x^2+2^2$.Similarly, $\overline{OR}^2=\overline{OQ}^2=\overline{ON}^2+\overline{RN}^2=(4-x)^2+1^2$.Recalling from earlier that $\overline{OS}$, $\overline{OP}$, $\overline{OR}$, and $\overline{OQ}$ will have the same length. If they are all equal, then their squares are all equal. So we set $\overline{OS}^2=\overline{OR}^2$
+ \[x^2+2^2=(4-x)^2+1^2\]
+ \[x^2+4=x^2-8x+17\]
+ \[8x=13\]
+ \[x=\frac{13}{8}\]Therefore, $\overline{OX}=\frac{13}{8}$. Now we use pythagorean theorem to find $\overline{OS}^2$
+ \[\overline{OS}^2=\left(\frac{13}{8} \right)^2 + 2^2 = \frac{169}{64}+\frac{256}{64}=\frac{425}{64}\]Now to find the actual radius $r$, we need to factor in the height $h$ of the cube, so we use the pythagorean theorem again to calulate $r^2$ and solve for $r$.
+ \[r^2=\overline{OS}^2+h^2=\frac{425}{64}+2^2=\frac{425}{64}+\frac{256}{64}=\frac{681}{64}\]
+ \[r=\sqrt{\frac{681}{64}}=\frac{\sqrt{681}}{8}\]
+
+ This gives us answer choice $\boxed{\text{(C) } \frac{\sqrt{681}}{8}}$. 
+
+ Wording edits~Calvin67
+
+ 
+
+
+
+\textbf{Solution 4 (Coordinate Geometry)}
+
+Let's take a cross section at $z=2$ of the figure, where the circle skims the vertexes of the three $2\times 2\times2$ cubes. (Yes I had to use ChatGPT to make the figure because my actual figure is illegible and also I don't like coding in Asymptote.)
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_19_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ Set the center of the circle as point $O$ with coordinates $(0,y)$. Our radius from this cross section is $r$. Via the distance formula:
+ \[(2-y)^2+2^2=r^2\]
+ \[(y+2)^2+1^2=r^2\]We can set these equations equal to each other.
+ \[y^2-4y+8=y^2+4y+5\]
+ \[y=\frac{3}{8}\]We now plug $y$ into the second equation.
+ \[(\frac{19}{8})^2+1=\frac{361}{64}+1=\frac{425}{64}=r^2\]We get our large radius as $\sqrt{r^2+2^2}$ because we set $z=2$ in the beginning. Solving gives us the large radius as $\sqrt{\frac{681}{64}}$, or
+ \[\boxed{\text{(C) } \frac{\sqrt{681}}{8}}\]
+
+ 
+
+
+ \textbf{Manim Solution by MathInMotionPy} 
+
+
+	\item (\textit{AMC 10 10A 2026}) Boxes with dimensions $77 \times 78 \times 85$ or $2 \times 3 \times 85085$ have volume $510,510$. How
+many different boxes with integer side lengths at least $2$, including these two, have
+volume $510,510$? Boxes are considered different if they have different dimensions.
+
+
+ $\mathbf{(A)}~63\qquad\mathbf{(B)}~90\qquad\mathbf{(C)}~301\qquad\mathbf{(D)}~377\qquad\mathbf{(E)}~966$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Note that the prime factorization of $510,510$ is
+
+ 
+ \[510,510=2\cdot3\cdot5\cdot7\cdot11\cdot13\cdot17.\]
+
+ Without any restrictions, there are $3^7$ ways to distribute the seven distinct prime factors among the height, width, and length, since each prime can be assigned to any of the three dimensions.
+
+ However, we must account for two restrictions: all three dimensions must be greater than $1$, and the order of the dimensions does not matter.
+
+ We first count arrangements where the order of the dimensions matters, and then divide by $3!$.
+
+ Case 1: Exactly two dimensions equal 1.
+
+ There are $\binom{3}{2}=3$ ways to choose which two dimensions equal $1$. The remaining dimension contains all seven prime factors.
+
+ Thus, this case contributes $3$ arrangements.
+
+ Case 2: Exactly one dimension equals 1.
+
+ There are $\binom{3}{1}=3$ ways to choose which dimension equals $1$.
+
+ Each of the seven prime factors can then be assigned to either of the remaining two dimensions, giving $2^7=128$ arrangements. However, we must exclude the two arrangements in which all seven primes go into the same dimension, since these would make another dimension equal to $1$.
+
+ Thus, this case contributes
+
+ 
+ \[3(2^7-2)=3(126)=378\]
+
+ arrangements.
+
+ Therefore, the number of valid ordered arrangements is
+
+ 
+ \[3^7-3-378=1806.\]
+
+ Finally, since all three dimensions are distinct (each is greater than $1$), every unordered arrangement is counted exactly $3!$ times. Dividing by $3!$, we obtain
+
+ 
+ \[\frac{1806}{6}=\boxed{301}.\]
+
+
+
+
+\textbf{Solution 2}
+
+We need to first find the prime factorization of 510,510. This is quite simple, because it is just $510\cdot1001$, which is $2\cdot3\cdot5\cdot7\cdot11\cdot13\cdot17$. It is helpful to know the prime factorization of $1001$, but if you don't, you could also just break apart $77$, $78$, and $85$. We now need to find how many different possible dimensions (where order does matter) of boxes there are. We have 7 different factors, and 3 different places (Length x Width x Height), so $3^7$ or $2187$ is the amount of permutations of box dimensions. To find the number of combinations (order doesn't matter), we must divide this number by $6$, since there are $3\cdot2\cdot1$ ways of arranging any $3$ given factors. You may notice that $\frac{2187}{6}$ is not a integer, and this is because before dividing, we need to add 3 to 2187, because the dimensions 510,510 x 1 x 1 only is counted 3 times right now, not $6$ (510,510 x 1 x 1, 1 x 510,510 x 1, 1 x 1 x 510,510). Adding $3$ turns $2187$ into $2190$, and $\frac{2190}{6}$ is $365$. Now the last step we have to do is subtract the boxes with dimensions $a$ x $b$ x $1$, since all lengths have to be greater than or equal to $2$. since we have $7$ prime factors, and $2$ places, there are a total of $2^7$ or $64$ boxes that contain a length of $1$. $365-64$ gives us our answer, $\boxed{\textbf{(C) } 301}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+$510510$ is $2\cdot 3\cdot 5\cdot 7\cdot 11\cdot 13\cdot 17$. Thus, all boxes with dimensions $p\times q\times r$ has $pqr=510510$. If you assume that order matters, then there are a total of $3^7$ ways to order $(p,q,r)$ with $p,q,r\ge 1$, since each prime divisor can go $3$ ways, either $p$, $q$, or $r$. However, we need $p,q,r\ge 2$, so we need to consider the cases with $1$ as a dimension. If $p=1$, there are $2^7$ ways possible. Similarly, if $q=1$ or $r=1$, there are both $2^7$ ways each. If $p=q=1$, there is only $1^7=1$ way, $p=q=1, r=510510$. Similarly, if $p=r=1$ or $q=r=1$, there is 1 case each. $p=q=r$ is not possible, so by PIE, there is a total of $3^7-3\cdot 2^7+3\cdot 1=2187-3\cdot 128+3=1806$ ways to do this if order matters.
+
+ However, order doesn’t matter. Since each prime divisor only appears once in the factorization of $510510$, there are $3!=6$ occurrences of each case if order doesn’t matter. Thus, there is a total of $\frac{1806}{6}=\fbox{301}$ possible unordered arrangements of $p,q,r$.
+
+ 
+
+
+
+\textbf{Solution 4 (Casework + Counting)}
+
+We are given that the volume of the box is $510510$. From the prime factorization, we can see that
+
+ 
+ \[510510=2\cdot3\cdot5\cdot7\cdot11\cdot13\cdot17.\]
+
+ Since all seven prime factors are distinct, each prime factor must be assigned to exactly one of the three dimensions. Furthermore, since all dimensions must be integers greater than or equal to $2$, each dimension must contain at least one prime factor.
+
+ We can divide this problem into four cases based on the number of prime factors assigned to each dimension.
+
+ 
+Case 1: $1+1+5$
+
+ We choose two of the seven prime factors to form the two dimensions containing one prime factor each. There are $\binom{7}{1}\binom{6}{1} =42$ ways to do this. The remaining five prime factors must form the third dimension.
+
+ Since the two dimensions containing one prime factor each are interchangeable, we divide by 2! to cancel out the overlap.Thus, there are
+
+ 
+ \[\frac{\binom{7}{1}\binom{6}{1}}{2!}=21\]
+
+ possible boxes.
+
+ 
+Case 2: $1+2+4$
+
+ We first choose one prime factor to form the first dimension. There are $\binom{7}{1}=7$ choices.
+
+ Next, we choose two of the remaining six prime factors to form the second dimension. There are $\binom{6}{2}=15$ choices. The remaining four prime factors must form the third dimension.
+
+ Since all three dimensions contain different numbers of prime factors, there is no overcounting.
+
+ Thus, there are
+
+ 
+ \[\binom{7}{1}\binom{6}{2}=7\cdot15=105\]
+
+ possible boxes.
+
+ 
+Case 3: $1+3+3$
+
+ We first choose one prime factor to form the first dimension. There are $\binom{7}{1}=7$ choices.
+
+ Next, we choose three of the remaining six prime factors to form the second dimension. There are $\binom{6}{3}=20$ choices. The remaining three prime factors form the third dimension.
+
+ However, since the two dimensions containing three prime factors each are interchangeable, we have counted every box twice. Therefore, we divide by $2!$.
+
+ Thus, there are
+
+ 
+ \[\frac{\binom{7}{1}\binom{6}{3}}{2!}=\frac{7\cdot20}{2}=70\]
+
+ possible boxes.
+
+ 
+Case 4: $2+2+3$
+
+ We first choose three prime factors to form the dimension containing three prime factors. There are $\binom{7}{3}=35$ choices.
+
+ Next, we choose two of the remaining four prime factors to form the second dimension. There are $\binom{4}{2}=6$ choices. The remaining two prime factors form the third dimension.
+
+ However, since the two dimensions containing two prime factors each are interchangeable, we have counted every box twice. Therefore, we divide by $2!$.
+
+ Thus, there are
+
+ 
+ \[\frac{\binom{7}{3}\binom{4}{2}}{2!}=\frac{35\cdot6}{2}=105\]
+
+ possible boxes.
+
+ Combining all four cases, we obtain
+
+ 
+ \[21+105+70+105=\boxed{301}.\]
+
+ Therefore, there are $\boxed{301}$ different boxes with integer side lengths at least $2$ and volume $510510$.
+
+ 
+
+
+
+\textbf{Solution 5 (Analyzing the Option Choices)}
+
+We can look at the upper bound and units digit to quickly identify that $301$ is the only possible correct answer
+ \[\textbf{Upper Bound:} \quad \frac{3^7}{3!} = \frac{2187}{6} = 364.5 \implies \text{Answer} < 364.5 \text{ (eliminates D, E)}\]
+
+ \[\textbf{Units Digit:} \quad \frac{3^7 - 3(2^7) + 3}{6} = \frac{3^6 - 2^7 + 1}{2} \equiv \frac{9 - 8 + 1}{2} \equiv \mathbf{1} \text{ or } \mathbf{6} \pmod{10}\]
+
+ \[\text{Only \textbf{(C) 301} ends in } 1 \text{ or } 6.\]
+
+
+
+
+\textbf{Solution 6 (Stirling Numbers)}
+
+Firstly, note that $510,510$ can be factored as $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17$. Note the $3$ sides are indistinguishable, and the side lengths of each side can be considered as the product of several factors of $510,510$, where no side can have length $1$. Therefore, the problem reduces to the number of partitions of $7$ distinct balls into $3$ indistinguishable urns, where each urn must contain at least $1$ ball, or $\left\{ \begin{matrix} n \\ k \end{matrix} \right\}$ (denoting the Stirling numbers of the second kind). Using the explicit formula for Stirling numbers, this evaluates to $\frac{1}{6} \cdot [0+3(1)-3(128)+1(2187)]=\boxed{301}$.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+We do casework on the number of prime factors we "group" together. 
+
+ Case $1$: We group together $5$ prime factors; there are clearly $\binom{7}{5}$ cases.
+
+ Case $2$:We group together $4$ prime factors; after picking the $4$, we must group the remaining $3$ into one group of $1$ and one group of $2$. There are $\binom{7}{4}*\binom{3}{2}$ ways to do this.
+
+ Case $3$:We group together $3$ prime factors.
+
+ 
+Subcase $1$: $(3,3,1)$. For this subcase, there are $\binom{7}{3}*\binom{4}{3}$ ways. However, we must divide by $2$ to account for the fact that $2$ side lengths will have the same number of factors.
+
+ Subcase $2$:$(3,2,2)$, we will again divide by $2$ as 2 side lengths will have $2$ factors, there are $\frac{\binom{7}{3} *\binom{4}{2}}{2}$. ways for this case.
+
+ We now sum up our $3$ cases: $21+105+70+105=\boxed{301}$.~jamespudi
+
+ 
+
+
+
+\textbf{Solution 8}
+
+The prime factorization of $510,510$ is $2^1 \cdot 3^1 \cdot 5^1 \cdot 7^1 \cdot 11^1 \cdot 13^1 \cdot 17^1$. We can create boxes with a volume of $510,510$ and $3$ integer side lengths $> 2$ by grouping the $7$ prime factors into $3$ groups, with at least $1$ factor in each group. There are only $4$ ways to decide how many factors go in a group:
+$1, 1, 5$
+$1, 2, 4$
+$1, 3, 3$ and
+$2, 2, 3$
+In the first scenario, there are $\frac{7 \cdot 6}{2} = 21$ arrangements, because there are $7$ ways to pick which number goes in the first group, $6$ ways to pick which goes in group two, and the remaining $5$ go to the last. Divide by $2!$ to account for the repeat in group one and two. Using this same method we can calculate the other scenarios.
+In the second case, there are $\frac{7 \cdot 6 \cdot 5}{2} = 105$ arrangements.
+For the third, there are $\frac{7 \cdot 6 \cdot 5 \cdot 4}{3 \cdot 2 \cdot 1 \cdot 2} = 70$ arrangements.
+And finally, the fourth case has $\frac{7 \cdot 6 \cdot 5 \cdot 4}{(2 \cdot 1)(2 \cdot 1)(2 \cdot 1)} = 105$ arrangements.
+Adding all of them up gives us $301$ total ways to distribute the numbers, so the answer is $\boxed{\textbf{(C)}}$. ~eva.c 
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Gerry is playing the Triples Game. Her task is to partition the 3 × 3 grid of squares
+shown on the left into three sections, each containing three adjoining squares. (Three
+squares are adjoining if each shares an edge with at least one of the other two.) One
+point will be awarded for each section containing more X’s than O’s. Shown on the right
+is a sample partition that will earn one point in total. A partition that earns two or more
+points will win the game. What fraction of the possible partitions of this particular grid
+will result in a win for Gerry?
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_2026_21_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A)}~\frac{3}{10} \qquad \textbf{(B)}~\frac{1}{3} \qquad \textbf{(C)}~\frac{2}{5} \qquad \textbf{(D)}~\frac{4}{9} \qquad \textbf{(E)}~\frac{1}{2}$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+There are four corner squares but only three sections, so some section contains two corners. A connected section of three squares containing two corners must be a complete outer row or column.
+
+ Removing it leaves a $2\times3$ rectangle, which splits into either two straight sections or two L-shaped sections. There are $2$ all-straight partitions (rows or columns). Otherwise, choose the single straight section on one of the $4$ sides, then split the remaining rectangle into two L-shapes in $2$ ways. Thus there are
+ \[2+4\cdot2=10\]partitions in total.
+
+ Since there are only $4$ X's, a win requires exactly $2$ X's in each of two sections. All $10$ partitions are shown below; exactly $4$ win.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_21_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Therefore, the requested fraction is
+ \[\frac{4}{10}=\boxed{\frac25},\]We choose $\boxed{\textbf{(C)}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Consider the section that includes the bottom-right square. Note that it will always have two O's, so whatever section contains it will be invalid. We casework over all the possible sections, and look at how we can split the remaining 6 tiles for each. This makes it easier to count, as now both the other sections must have more X's than O's to win, and we are sure that we have covered all the cases. Proceed as Solution 1.
+
+ 
+
+
+
+\textbf{Solution 3 (similar to Solution 2)}
+
+Consider the section that includes the bottom-right square. Note that it will always have two O's.  If you really want to know how you can immediately get 10, you can split it into casework that either there are 3 rows which satisfy this, one row which satisfies this (and the rest are weird L's), three columns which satisfy this, and one column which satisfies this. To create three rows and three columns, it's obviously just 1 for both of them, which is 2 in total. For the L's case the one row can either be the first row or the third row by logic and the L's can have 2 different positions to be in to satisfy the 2x3 remaining rectangle. Therefore it is 2x2, which is 4, and by columns, the answer remains the same. Therefore, the number of permutations in total is 10. It's better to see the answer choices to make sure we're correct. the 9 in 4/9 is awfully close to our 10, but under further inspection none of our cases intersect. That too, we got 4 for both of them, meaning we eventually get $\boxed{\textbf{(C)}}$. Proceed as above.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Consider the section that includes the bottom-right square. Note that it will always have two O's, so whatever section contains it will be invalid. We casework over all the possible sections, and look at how we can split the remaining 6 tiles for each. This makes it easier to count, as now both the other sections must have more X's than O's to win, and we are sure that we have covered all the cases. Proceed as Solution 1.
+
+ GoldemGem4848: solution 2 achieved mitosis
+
+ 
+
+
+
+\textbf{Solution 5}
+
+First, we count the number of total partitions. Consider the "$l$" shape formed by three squares. We see that if we fix any "$l$" that contains the center square, the rest is uniquely determined. There are 8 such "$l$"s, but we have to also account for the case where there are 3 vertical lines and 3 horizontal lines. These account for 10 partitions in total.
+
+ Now, we count the number of winning partitions. Let the square directly to the left of the center square be called the penguin square.
+
+ Case 1: Center and penguin square are together in a winning partition. We can see it either has to be horizontal or containing the bottom-left square, and the rest are uniquely determined, for a total of 2 cases.
+
+ Case 2: Center and penguin square are disjoint in a partition. We see that the center square has to be in the partition with the top-right square, and then the rest are uniquely determined, for a total of 2 cases.
+
+ $\frac{2+2}{10} = \boxed{\textbf{(C)}~\frac{2}{5}}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+Consider the section that includes the bottom-right square. Note that it will always have two O's, so whatever section contains it will be invalid. We casework over all the possible sections, and look at how we can split the remaining 6 tiles for each. This makes it easier to count, as now both the other sections must have more X's than O's to win, and we are sure that we have covered all the cases. Proceed as Solution 1.~Moonwatcher22
+
+ 
+
+
+
+\textbf{Solution 7}
+
+For each section that gains a point, it must have atleast 2 X's as if it only has maximum one X, it will have at least 2 O's and not count. So that means (a) max 2 points can be gained and (b) there must be one section with only O's as otherwise there are only maximum 3 X's and only one point can be gained. There are 2 ways this can be achieved: either you use the bottom row of O's and then you have 3 ways, either 3 rows, or the bottom row and 2 L-shapes which can be oriented in 2 ways. The 3 rows and one orientation of the L-shapes work, so we get 2 cases. The other case is the bottom L-shape of 3 O's and any of the 2 ways from here works. So in total there are 4 ways that work, and to count the total ways, we have 2 ways of only 3 rows or 3 columns, and then we have the ones with the L-shapes: one line in any direction gives 2 orientations of the L-shapes and there are 2 rows and 2 columns that allow L-shapes, which makes $2\cdot4=8$ ways so in total we have $2+8=10$ ways so our answer is $\frac{4}{10}$ which simplifies to $\boxed{\text{(C) }\frac{2}{5}}$.~keyo
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) An engineer is designing a closely packed field of $7$ wind turbines for electricity production. Each turbine, whose center is marked by a labeled dot in the figure, occupies one of $7$ congruent elliptical regions. Turbines in the same row have centers that are $4$ units apart, and turbines in the same column have centers that are $9$ units apart, as shown in the figure below: 
+
+
+ 
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10A_2026_22_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ The major axis of each ellipse is $m\sqrt{p}$, where $m$ and $p$ are positive integers and $p$ is not divisible by the square of any prime. What is $m + p$?
+$\textbf{(A)}~6 \qquad \textbf{(B)}~8 \qquad \textbf{(C)}~9 \qquad \textbf{(D)}~10 \qquad \textbf{(E)}~12$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+Let $L$ be the major axis length. Each ellipse has horizontal semiaxis $2$, and adjacent rows are $\frac{9}{2}$ apart. Place the middle center at $O=(0,0)$; then the upper-right center is $A=(2,\frac{9}{2})$.
+
+ Let $T$ be their point of tangency. A half-turn about the midpoint of $OA$ swaps the two ellipses, so it fixes their unique common point $T$. Thus $T$ is the midpoint of $OA$.
+
+ Dilating the middle ellipse by a factor of $2$ about $O$ sends $T$ to $A$. The resulting ellipse, drawn with a blue dashed curve, has semiaxes $4$ and $L$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_22_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Since $A=(2,\frac{9}{2})$ lies on this ellipse,
+ \[\frac{2^2}{4^2}+\frac{(9/2)^2}{L^2}=1 \quad\Longrightarrow\quad L^2=27 \quad\Longrightarrow\quad L=3\sqrt3.\]Therefore $m+p=3+3=\boxed{\text{(A)}\ 6}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_22_Solution_Figure_2.png}
+                    \end{figure}
+                    Let $O$ be the origin, at $(0,0)$. Also, let the major axis of an ellipse, which is what we're looking for, be $a$. Then the equation of the ellipse centered at $O$ is
+ \[\frac{x^2}{4} + \frac{y^2}{(\frac{a}{2})^2}=1.\]
+
+ Notice that if we could find one pair that lies on the ellipse, we could plug it into the equation and solve for $a$.
+
+ Let's focus on the ellipse centered at $A$. It has coordinates $(2, \frac{9}{2})$. Notice that the midpoint of $O$ and $A$ ($M$ in the above diagram) lies on the central ellipse. The coordinates of that midpoint are $(1, \frac94)$ (by the midpoint formula). We now have a point that lies on the ellipse. Plugging it in, we get
+
+ 
+ \[\frac{1^2}{4} + \frac{(\frac94)^2}{(\frac{a}{2})^2}=1.\]
+ \[a^2 + 81 = 4a^2\]
+ \[a^2 = 27.\]
+
+ Thus, $a = 3\sqrt3$, and our answer is $\boxed{\text{(A) }6}.$
+
+ Hi, would you want a diagram added to your solution?
+
+ Hi, yes.
+
+ Hi, I have added the diagram (though i'm not the person who asked the original question) ~sujoybec51
+
+ 
+
+
+
+\textbf{Solution 3 (Easiest)}
+
+We can view the given figure of ellipses as a vertical stretch of this figure of seven tangent circles of radius $2$ by some scale factor: 
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_22_Solution_Figure_3.png}
+                    \end{figure}
+                    
+
+ By connecting three centers as shown, we create an isosceles triangle with equal legs of length $4$ and deduce $h=4\sqrt3.$ Since this vertical distance was given as $9$ in the problem, we conclude that the stretch factor between this diagram and the given one is $\frac{9}{4\sqrt3}.$ 
+
+ Thus, the major axis of one of the ellipses is simply the diameter of one of these circles multiplied by the stretch factor, or $m\sqrt{p}=(4)\left(\frac{9}{4\sqrt3}\right)=3\sqrt{3}\implies m+n=\boxed{\text{(A) } 6}$
+
+
+
+
+\textbf{Solution 4 (Ruler Cheese)}
+
+You can ruler bash. Very risky but works. Edit: By ruler, we get the length of one major axis to be around $5.125$, which is very close to $3 \sqrt3$, so $3+3=$ $\boxed{\text{(A) }6}.$
+
+ It would be so orz if someone actually got the answer by this :sob:
+
+ \textbf{Note} Yay, a fellow cheese enthusiast!
+
+ A way to justify the radical approximation 5.125 is as follows:
+
+ Due to the hexagonal nature (and rightfully so, to maximize electricity, "hexagons are the bestagons") of the turbines, the simplified number under the radical is almost certainly $p=3$. From there, you can 3 from the answer choices to obtain $m$: $
+ \[\textbf{(A)}~m=3 \qquad \textbf{(B)}~m=4 \qquad \textbf{(C)}~m=6 \qquad \textbf{(D)}~m=7 \qquad \textbf{(E)}~m=9\]
+
+ Also, here are some calculations to show the diagram is intended to be to scale for the ruler cheese:
+
+ You can verify that the ratio of the small to the long line segment on your test sheet is indeed approximately 4:9. For example, the measurement on my test sheet, to the rounding error in my 0.1 cm ruler, is 1.4 cm:3.4 cm; using the same ruler, the measurement on the diagram on this webpage above at 100\% zoom is 2.7 cm: 6.7 cm.
+
+ Since the scale on both axes is similar to the given values with negligible error, we conclude the graph is almost certainly to scale.
+
+ 
+
+
+
+\textbf{Solution 5 (Transformations)}
+
+We apply the transformation to the diagram 
+ \[T(x, y) \implies \left( \frac{x}{a}, \frac{y}{b} \right)\]So that the center turbine maps to a unit circle.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10A_2026_22_Solution_Figure_4.png}
+                    \end{figure}
+                    Since each of the outer circles are contacting each other and the center circle, hexagon ABCDEF is a regular hexagon with a side length of 2. On the original hexagon, the distance $\overline{AE}$ is 9. Under $T(x, y)$, the distance AE becomes $\frac{9}{a}$.The distance between AE is also equal to 
+
+ $\overline{AE}= 2*2\sin(60) = 2\sqrt{3}$. 
+
+ Therefore, 
+
+ $\frac{9}{a} = 2\sqrt{3} \implies a= \frac{3\sqrt{3}}{2}$ 
+
+ Hence the major axis is $2a = 3\sqrt{3}$. The answer is $3 + 3 = \boxed{\text{(A) }6}.$
+
+
+
+	\item (\textit{AMC 10 10A 2026}) In a list of one or more consecutive integers, there are <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="0" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></mjx-assistive-mml></mjx-container> multiples of <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="1" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></mjx-assistive-mml></mjx-container> and <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="2" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> multiples of <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="3" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></mjx-assistive-mml></mjx-container>. How many ordered pairs <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="4" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container> are possible for this list if <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="5" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></mjx-assistive-mml></mjx-container> and <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="6" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> are between <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="7" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></mjx-assistive-mml></mjx-container> and <mjx-container class="MathJax CtxtMenu\_Attached\_0" ctxtmenu\_counter="8" jax="CHTML" style="font-size: 118.4\%; position: relative;" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>100</mn></math></mjx-assistive-mml></mjx-container>, inclusive?
+
+
+ $\textbf{(A) } 232\qquad\textbf{(B) }233\qquad\textbf{(C) }234\qquad\textbf{(D) }235\qquad\textbf{(E) }236$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+We can see that the amount of multiples of twos is more restricting on the multiples of 3's than the other way around, and it is just easier in general.
+
+ we start with 1 multiple of two:
+
+ you can easily see you can have 0 or 1 multiples of 3 
+
+ 2 multiples of two:
+
+ you can see that you can have 1 or 2 multiples of 3
+
+ 3 multiples of two:
+
+ you can see that you can have 1, 2, or 3 multiples of 3.
+
+ From here, there are two ways to proceed:
+
+ Way 1:
+
+ you keep doing this and engineers induct that the pattern of 2, 2, 3 will keep repeating. So the total amount is $33(2+2+3)+2+2=\boxed{235}$ (the two extra twos are from when there are 0 and 100 multiples of two.)
+
+ Way 2:
+
+ We can see that the lower bound can be achieved by minimizing the length of the sequence (even, odd, even, ... , odd, even) , with a length of 2n-1 and the minimal amount of 3's is $\lfloor \frac{2n-1}{3} \rfloor$
+
+ And we can see that the upper bound can be achieved by maximizing the length of the sequence (odd, even, odd, ...., even, odd), with a length of 2n+1 and the maximum amount of 3's being $\lceil \frac{2n+1}{3} \rceil$
+
+ I hope it is clear enough to the reader for why we take the floor for the minimum, and ceiling for maximum.
+
+ Now, if we plug in 3k, we get that $\lceil \frac{2n+1}{3} \rceil- \lfloor \frac{2n-1}{3} \rfloor+1=3$ (note that 0 is special and only has two)
+
+ and if we plug in 3k+1, and 3k+2 we get that $\lceil \frac{2n+1}{3} \rceil- \lfloor \frac{2n-1}{3} \rfloor+1=2$and then we can proceed as Method 1.
+
+ -Happymaths
+
+ 
+
+
+
+\textbf{Solution 2 (Simple Math)}
+
+We first have to notice that there are only 3 possible starting sets. We have the set where the first multiple of 2 appears right before the first multiple of 3 (an example would be starting with 1), the set where the first multiple of 3 appears right before the first multiple of 2 (An example of this is starting from 3), and finally the set where the first multiple of 2 appears 2 steps before the first multiple of 3, (an example of this is starting from 4). 
+
+ Let us name these sets by their starting numbers, so the first set is Set 1, the second set is Set 3, and the third set is Set 4. In set 1, our maximum number we can get to is 201, since 202 would lead to p being 101. (Number, P value, Q value)
+ \[201, 100, 67\] 
+ \[200, 100, 66\] 
+ \[199, 99, 66\]
+ \[198, 99, 66\]
+ \[197, 98, 65\] 
+ \[196, 98, 65\]
+ \[195, 97, 65\] ... We can see the pattern that for every value of q, we have 2 different possible values of p, which means all we have to do is $67\cdot2=134$, and then add 1 to account for the p = 100, q = 67, giving us 135 pairs for Set 1. 
+
+ Now we do this again with set 3 (the second set i mentioned), but this time we don't count pairs that have already been found from set 1. We start with 
+ \[202, 100, 67\]
+ \[201, 99, 67\]
+ \[200, 99, 66\]
+ \[199, 98, 66\]
+ \[198, 98, 66\]
+ \[197, 97, 65\]
+ \[196, 97, 65\]
+ \[195, 96, 65\]
+ \[194, 96, 64\]
+ \[193, 95, 64\]
+ \[192, 95, 64\]
+ \[191, 94, 63\]and we can see the pattern is Old, New, Old, New, Repeated, Old; so for every 6 numbers we will get 2 new pairs. $202/6=33$ remainder 4, and we need to subtract 2 from the remainder since we are starting from 3, meaning we have only the first 2 from our pattern at the end, which is "Old, New" so we add 1 to $33\cdot2$ giving us 67 for Set 3.
+
+ Lastly we have to do Set 4, (And we don't count pairs from sets 1 and 3)
+ \[202, 100, 66\]
+ \[201, 99, 66\]
+ \[200, 99, 65\]
+ \[199, 98, 65\]
+ \[198, 98, 65\]
+ \[197, 97, 64\]
+ \[196, 97, 64\]
+ \[195, 96, 64\]
+ \[194, 96, 63\]
+ \[193, 95, 63\]
+ \[192, 95, 63\]
+ \[191, 94, 62\](Found in set 1 will be represented by F1, and found in set 2 will be represented by F2, and found in both will be F12)We see the pattern is F1, F12, New, F1, F1, F1; meaning every 6 we have 1 new pair. We do $202-3=199$ since we start from 4 instead of 1, and we do $199/6=33$ remainder 1, and since remainder 1 corresponds with F1, we dont add anything meaning we have 33 new pairs from Set 4.
+
+ Adding all 3 Set's pairs together we have $135+67+33=\boxed{\text{(D) }235}$
+
+
+
+
+\textbf{Solution 3 (rigorous)}
+
+Notice that if the list has length $3k$ for an integer $k$, $q=k$. Also, if the list has length $3k+1$ or $3k+2$, $q=k$ or $q=k+1$.
+
+ We will first assume $p>0$ and do casework on the remainder of $p$ modulo $3$.
+
+ Case 1: $p$ is one more than a multiple of $3$
+
+ There are either $2p-1$, $2p$, or $2p+1$ numbers in the list. We know $2p+1$ is a multiple of $3$, so $2p-2$ is a multiple of $3$. There can then be $\frac{2p-2}{3}$ or $\frac{2p+1}{3}$ multiples of $3$, giving $2$ values for $q$.
+
+ 
+Case 2: $p$ is two more than a multiple of $3$
+
+ Similarly, there are $2p-1$, $2p$, or $2p+1$ numbers in the list, and $2p-1$ is divisible by $3$. Then, $2p+2$ is also divisible by $3$. We find that $q$ can be $\frac{2p-1}{3}$ or $\frac{2p+2}{3}$, giving $2$ values for $q$.
+
+ 
+Case 3: $p$ is a multiple of $3$
+
+ Again, there are $2p-1$, $2p$, or $2p+1$ numbers, and $2p$ is divisible by $3$. This means $q$ is equal to $\frac{2p-3}{3}$, $\frac{2p}{3}$, or $\frac{2p+3}{3}$, giving $3$ values for $q$.
+
+ 
+The special case $p=0$ gives only $q=0$ and $q=1$.
+
+ 
+There are at least $2$ values of $q$ for every value of $p$, and an additional value of $q$ when $p$ is a multiple of $3$ greater than $0$. The answer is then $2 \cdot 101 + 33 = \boxed{\textbf{(D)} 235}$.
+
+ Remark: this is a horrible solution to use in contest, you’re much better off finding the 2, 2, 3 pattern through trial and error
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Since shifting every element in a list of consecutive integers by a multiple of $6$ preserves the counts of multiples of $2$ and $3$, we may assume without loss of generality that the list starts at $a \in \{1, 2, 3, 4, 5, 6\}$.
+
+ Write the length of the list as $n = 6k + r$ with $k \geq 0$ and $r \in \{1, 2, 3, 4, 5, 6\}$. Since every block of $6$ consecutive integers contains $3$ multiples of $2$ and $2$ multiples of $3$, we have
+ \[(p, q) = (3k + p_0, \, 2k + q_0),\]where $(p_0, q_0)$ is the count for the prefix $\{a, a+1, \dots, a+r-1\}$ of length $r \leq 6$.
+
+ Checking all $a, r \in \{1, 2, 3, 4, 5, 6\}$ gives the possible base pairs $(p_0, q_0)$:
+ \[(0,0),\; (0,1),\; (1,0),\; (1,1),\; (2,1),\; (2,2),\; (3,1),\; (3,2).\]Since $(3,2) = (0,0) + (3,2)$, it overlaps with $k=1$ from $(0,0)$, whereas $(3,1)$ cannot be formed by adding $(3k, 2k)$ to any pair with $p_0 < 3$. Thus, every valid $(p, q)$ is uniquely represented as $(p_0, q_0) + (3k, 2k)$ for $k \geq 0$ and a minimal base pair
+ \[(p_0, q_0) \in B = \{(0,0), (0,1), (1,0), (1,1), (2,1), (2,2), (3,1)\}.\]
+
+ Counting integers $k \geq 0$ such that $0 \leq 3k + p_0 \leq 100$ (which automatically ensures $q = 2k + q_0 \leq 68 \leq 100$):
+
+ 
+            \begin{itemize}
+        \item For $p_0 \in \{0, 1\}$ ($4$ base pairs in $B$): $0 \leq k \leq 33$, giving $34$ solutions each.
+        \item For $p_0 \in \{2, 3\}$ ($3$ base pairs in $B$): $0 \leq k \leq 32$, giving $33$ solutions each.
+            \end{itemize}
+            Summing over all $7$ base pairs yields
+ \[4(34) + 3(33) = 136 + 99 = \mathbf{235}.\]
+
+
+
+
+\textbf{Solution 5 (Count. Them. All.)}
+
+There are exactly $\boxed{\text{(D) }235}$ pairs.Here are all of them:
+
+ (00,00) (01,00) (01,01) (02,01) (03,02) (04,02) (04,03) (05,03) (06,04) (07,04) (07,05) (08,05) (09,06) (10,06) (10,07) (11,07) (12,08) (13,08) (13,09) (14,09) (15,10) (16,10) (16,11) (17,11) (18,12) (19,12) (19,13) (20,13) (21,14) (22,14) (22,15) (23,15) (24,16) (25,16) (25,17) (26,17) (27,18) (28,18) (28,19) (29,19) (30,20) (31,20) (31,21) (32,21) (33,22) (34,22) (34,23) (35,23) (36,24) (37,24) (37,25) (38,25) (39,26) (40,26) (40,27) (41,27) (42,28) (43,28) (43,29) (44,29) (45,30) (46,30) (46,31) (47,31) (48,32) (49,32) (49,33) (50,33) (51,34) (52,34) (52,35) (53,35) (54,36) (55,36) (55,37) (56,37) (57,38) (58,38) (58,39) (59,39) (60,40) (61,40) (61,41) (62,41) (63,42) (64,42) (64,43) (65,43) (66,44) (67,44) (67,45) (68,45) (69,46) (70,46) (70,47) (71,47) (72,48) (73,48) (73,49) (74,49) (75,50) (76,50) (76,51) (77,51) (78,52) (79,52) (79,53) (80,53) (81,54) (82,54) (82,55) (83,55) (84,56) (85,56) (85,57) (86,57) (87,58) (88,58) (88,59) (89,59) (90,60) (91,60) (91,61) (92,61) (93,62) (94,62) (94,63) (95,63) (96,64) (97,64) (97,65) (98,65) (99,66) (100,66) (100,67)(00,01) (02,02) (03,03) (05,04) (06,05) (08,06) (09,07) (11,08) (12,09) (14,10) (15,11) (17,12) (18,13) (20,14) (21,15) (23,16) (24,17) (26,18) (27,19) (29,20) (30,21) (32,22) (33,23) (36,25) (38,26) (39,27) (41,28) (42,29) (44,30) (45,31) (47,32) (48,33) (50,34) (51,35) (53,36) (54,37) (56,38) (57,39) (59,40) (60,41) (62,42) (63,43) (65,44) (66,45) (68,46) (69,47) (71,48) (72,49) (74,50) (75,51) (77,52) (78,53) (80,54) (81,55) (83,56) (84,57) (86,58) (87,59) (89,60) (90,61) (92,62) (93,63) (95,64) (96,65) (98,66) (99,67) (03,01) (06,03) (09,05) (12,07) (15,09) (18,11) (21,13) (24,15) (27,17) (30,19) (33,21) (36,23) (39,25) (42,27) (45,29) (48,31) (51,33) (54,35) (57,37) (60,39) (63,41) (66,43) (69,45) (72,47) (75,49) (78,51) (81,53) (84,55) (87,57) (90,59) (93,61) (96,63) (99,65) 
+
+ 
+ \[\text{Take good care of them.}\]
+
+ While you couldn't do this in the actual exam, it might have been easier to just use Python ~GoldemGem4848
+
+ With some changes, this would've been a nice USACO problem -RZ1729
+
+ \textasciicircum{}\textasciicircum{} I did consider coding something to do this for me but that is not as fun. ~ToxicWaste
+
+ 
+
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) How many polynomials $f(x)$ of degree $3$ satisfying
+ \[f\left( 3+\sqrt{5} \right) = f\left( 3 - \sqrt{5} \right)\]are there that have leading coefficient equal to $1$ and all of whose coefficients are integers between $-10$ and $10$, inclusive?
+
+
+ $\textbf{(A) } 21 \qquad\textbf{(B) } 42 \qquad\textbf{(C) } 63 \qquad\textbf{(D) } 84 \qquad\textbf{(E) } 105$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Let the polynomial be $f(x)=x^3+ax^2+bx+c$ as the leading coefficient is 1. Substituting yields
+ \[\left(3-\sqrt{5}\right)^3+a\left(3-\sqrt{5}\right)^2+b\left(3-\sqrt{5}\right)+c= \left(3+\sqrt{5}\right)^3+a\left(3+\sqrt{5}\right)^2+b\left(3+\sqrt{5}\right)+c\]Expanding yields
+ \[(27-27\sqrt{5}+45-5\sqrt{5})+a(9-6\sqrt{5}+5)+b(3-\sqrt{5})+c\]
+ \[=(27+27\sqrt{5}+45+5\sqrt{5})+a(9+6\sqrt{5}+5)+b(3+\sqrt{5})+c\]Mass cancelling yields
+ \[32\sqrt{5}+6\sqrt{5}a+\sqrt{5}b=0\implies 6a+b=-32\]Notice that since $-10\le b\le 10$, we get
+ \[-42= -32-10\le -32-b\le -32+10=-22\]Hence,
+ \[-7\le a\le -\frac{11}{3}\implies -7\le a\le -4\]Substituting yields the valid solutions $(a,b)=(-4,-8),(-5,-2),(-6,4),(-7,10)$. Noting that $c$ cancels and can thus take on any of the $21$ integers from $-10$ to $10$, inclusive, our answer is $21\cdot 4=84$, or $\boxed{\textbf{(D)}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $f\left(3+\sqrt 5\right)=f\left(3-\sqrt 5\right)=c$. Now define a new function $g(x)\coloneqq f(x)-c$. Clearly $g$ is still a cubic, and the 2 of the roots of $g$ will be $r_1, r_2=3+\sqrt 5, 3-\sqrt 5$. Hence $g(x)=(x-d)(x-r_1)(x-r_2)+c$. We work backwards to get 
+ \[x=3\pm\sqrt 5\implies x-3=\pm\sqrt 5\implies (x-3)^2=5\implies x^2-6x+9=5\implies x^2-6x+4=0.\] So $g(x)=(x-d)(x^2-6x+4)+c$. Now we just need to apply our given condition. Expanding we have that $g(x)=x^3-(6+d)x^2+(4+6d)x-4d+c$. The most restrictive inequality would be applied to the coefficient of $x$, to yield 
+ \[-10\le 4+6d\le 10\implies -14\le 6d\le 6\implies -\frac73\le d\le 1.\]So $d\in\{-2, -1, 0, 1\}$. We can choose $c$ freely as long as $|-4d+c|\le 10$, which gives 21 valid $c$ for each case. Hence there are $4\cdot 21=\boxed{84\hspace{1mm}\textbf{(D)}}$ such functions. 
+
+ Also note that $c$ can have 21 choices because it cancels out in the initial equality of $f\left(3+\sqrt 5\right)=f\left(3-\sqrt 5\right)$~Amon26
+
+ Note: If you are stuck on which answer to choose, once you have gotten to the restrictions on $d$, you can clearly note that the answer has to be divisible by 4, in which $\textbf{(D)}$ is the only option.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+First let $x_1=3+\sqrt5$ and $x_2=3-\sqrt5.$ 
+
+ Next, let $f(x)=x^3+ax^2+bx+c$ since $f$ is monic. From the problem statement, 
+ \[x_1^3+ax^2_1+bx_1+c=x_2^3+ax_2^2+bx_2+c.\]
+
+ Clearly, the value of $c$ is irrelevent since subtracting $c$ from both sides retains the equation. So, there are $21$ choices. (A check is that the answer choices are multiples of $21$)
+
+ Now, substitute for $x_1$ and $x_2.$
+$x_1^2=14+6\sqrt5$ and $x_2^2=14-6\sqrt5$ next$x_1^3=72+32\sqrt5$ and $x_2^3=72-32\sqrt5$.
+
+ So, substituting one gets 
+ \[(72+32\sqrt5)+a(14+6\sqrt5)+b(3+\sqrt5)=(72-32\sqrt5)+a(14-6\sqrt5)+b(3-\sqrt5).\]
+
+ Cancelling terms and rearranging gives 
+
+ 
+ \begin{align*} 64\sqrt5+12a\sqrt5+2b\sqrt5&=0 \Rightarrow \\ 32+6a+b&=0. \end{align*}
+
+
+ Take the equation$\pmod 6$ yields $2+b\equiv 0 \pmod 6$ so $b \equiv 4 \pmod 6$ and $b=-8, -2, 4, 10.$
+
+ Substituting yields $a=-4, -5, -6, -7$ respectively. 
+
+ Thus, since there are only four pairs $(a, b)$ and $21$ choices of $c$ for each pair there are $4\cdot21=\boxed{84\hspace{1mm}\textbf{(D)}}$ total pairs.
+
+ Note this solution follows similar to solution $1$ but finishes with a quick modulo inspection.Some motivation of using the form $x^3+ax^2+bx+c$ rather than a function like $(x-r_1)(x-r_2)(x-r_3)$ is because the problem references the coefficients.
+
+ 
+
+
+
+\textbf{Solution 4 (Similar to Solution 2)}
+
+Let $f\left( 3+\sqrt{5}\right) = f\left( 3-\sqrt{5}\right) = c$ for some constant $c$. Consider the function $f(x)-c$. This function has roots at $3 \pm \sqrt{5}$ and is monic (leading coefficient $1$), so it is divisible by the monic quadratic which also has these two roots.
+
+ 
+We rewrite $3 \pm \sqrt{5}$ as $\frac{6\pm \sqrt{20}}{2}$. By the quadratic formula, the coefficient of the linear term is $-6$ and the leading coefficient is $1$. We can then find that the constant is $4$. We can now set $f(x)-c=(x^2-6x+4)(x-k)$.
+
+ 
+We expand the right hand side and rearrange to get $f(x)=x^3-(k+6)x^2+(6k+4)x-4k+c$. We bound the linear coefficient $6k+4$ between $[-10, 10]$ to get $k=-2, -1, 0, 1$. For any of these four values of $k$, there are $21$ values of $c$ such that the constant is in $[-10, 10]$. Furthermore, the quadratic coefficient is always in this range for all choices of $k$. 
+
+ 
+To finish, we multiply the number of valid $k$ by the number of valid $c$ to get $4 \cdot 21= \boxed{\textbf{(D) } 84}$
+
+ \textbf{Note} You can also find the coefficients of the polynomial using Vietas Formulas. Because $f$ is monic, the leading coefficient of this quadratic is 1. The sum of the values is $6$, and the product of the values is $(3-\sqrt{5})(3+\sqrt{5})=3^2-(\sqrt{5})^2=9-5=4$. Thus by Vietas, resulting in the same polynomial, $x^2-6x+4$, but just a little bit quicker. ~Voidling
+
+ 
+
+
+
+\textbf{Solution 5 (Quick Calculus)}
+
+Let the polynomial be $f(x)=x^3+ax^2+bx+c$. First, note that if a cubic polynomial $f(x)$ has the same value at $a-b$ and $a+b$, then the derivative of the polynomial is always equal to $-b^2$. We can then take the derivative of the polynomial and make it equal to $-5$ at $x=3$.
+
+ 
+Taking the derivative yields $f'(x)=3x^2+2ax+b=-5$. Plugging in $x=3$ gives $f'(3)=3(3)^2+2a(3)+b=-5$ and this gives the equation $27+6a+b=-5$, and therefore, $b=-6a-32$. Plugging this value into the given inequality yields:
+
+ 
+ \[-10\le -6a-32\le 10\implies 22\le -6a\le 42\implies -7\le a\le -\frac{11}{3}\]Therefore, $a\in\{-7, -6, -5, -4\}$. Notice that these values of $a$ also satisfy the inequality. Then, we multiply the number of valid $a$ by the number of valid $c$ and this gives $4 \cdot 21= \boxed{\textbf{(D) } 84}$ total polynomials.
+
+ 
+
+
+
+\textbf{Solution 6 (No Cubing Radicals)}
+
+Let $f(x) = x^3 + ax^2 + bx + c$, and let $p = 3 + \sqrt{5}$ and $q = 3 - \sqrt{5}$. Note that $p + q = 6$ and $pq = 9 - 5 = 4$.
+
+ Substituting $p$ and $q$ has the condition $f(p) = f(q)$ become
+ \[p^3 + ap^2 + bp + c = q^3 + aq^2 + bq + c,\]so
+ \[(p^3 - q^3) + a(p^2 - q^2) + b(p - q) = 0.\]
+
+ Since $p \neq q$, we can divide by $p - q$ to get
+ \[(p^2 + pq + q^2) + a(p + q) + b = 0.\]
+
+ We have $p^2 + q^2 = (p + q)^2 - 2pq = 36 - 8 = 28$, so $p^2 + pq + q^2 = 28 + 4 = 32$. The equation becomes
+ \[32 + 6a + b = 0, \quad\text{so}\quad b = -32 - 6a.\]
+
+ We need $-10 \le b \le 10$, which means $-10 \le -32 - 6a \le 10$. This gives $-7 \le a \le -\frac{11}{3}$, so $a \in \{-7, -6, -5, -4\}$, with corresponding $b = 10, 4, -2, -8$, and note that each pair is unique.
+
+ Finally, since the constant $c$ cancels out, $c$ can be any of the $21$ integers from $-10$ to $10$. The number of polynomials is $4 \cdot 21 = \boxed{\textbf{(D)}~84}$.
+
+ 
+
+
+ \textbf{Note} If we solve for $a$ in terms of $b$ instead of solving for $b$ in terms of $a$ for the final inequality, we will get $-10 \le \frac{-32 - b}{6} \le 10$. Simplifying gives $-92 \le b \le 28$. This is entirely correct, however it is not useful in our situation given that $-10 \le b \le 10$. Aside from solving for $a$ in terms of $b$ being simpler, we also note that if we solve for $a$ in terms of $b$ and treat $a$ as $y$ and $b$ as $x$ in a graph, the slope will be $-\frac{1}{6}$. The boundaries the problem gives us are $-10 \le a \le 10$, so our slope that is close to $0$ will make the line travel for a long distance on the $b$ axis before reaching the other boundary, making it so that inequality will not provide much new information to us. If we do this quick check, we can realize that solving for $b$ in terms of $a$ is the correct thing to do.
+
+ \textbf{Another Note} Due to $a$ and $b$ being integers, once we found the values of $a$ that work it is guaranteed that each value of $a$ has a corresponding value of $b$ which is just $-32-6a$, which is what we solved for, and that is an integer. We also know that $-32-6a$ is between $-10$ and $10$ because by definition it is the same as $b$ which has the same restriction.
+
+ 
+
+
+	\item (\textit{AMC 10 10A 2026}) Chris the squirrel has $20$ rooms in his cavern for storing food. The first room contains $1$ nut,
+the second room contains $2$ nuts, the third room contains $3$ nuts, and so on, with the $20$th
+room containing $20$ nuts. Starting from today, Chris will collect $18$additional nuts each day
+and store them one per room in 18 distinct rooms in his cavern. His goal is to have all the
+rooms contain the same number of nuts once he is finished. What is the minimum number
+of days required to accomplish this goal?
+
+
+ $\textbf{(A) } 75\qquad\textbf{(B) }95\qquad\textbf{(C) }105\qquad\textbf{(D) }190\qquad\textbf{(E) }195$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+First note that we can add or remove the same number of nuts from each room without affecting the problem; we do this to make the nut counts go from $0$ to $19$. Now, we notice that adding a nut to $18$ distinct rooms is the same as adding a nut to each room, then removing a nut from $2$ distinct rooms. Since, as above, adding a nut to the rooms does nothing, so we are left with removing a nut from $2$ distinct rooms. Then, the total number of nuts in rooms is equal to $\frac{19\cdot20}{2}=190$, and therefore the number of moves needed is $\frac{190}{2}= \boxed{\textbf{(B) }95}$
+
+ It is also important to note that we can do $\frac{190}{2}$ because we are able to subtract 1 from 2 rooms everyday.
+
+ (If you check yourself you'll see this is the case; the proof is trivial and hence omitted.)
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $n$ be the number of day and let $N$ be the final number of nuts in each room. Initially there are $1+2+\cdots+20=210$ nuts, and $18n$ nuts are added, so we have
+ \[20N=210+18n.\]
+
+ Room $1$ starts with $1$ nut and needs $N-1$ more. Since at most one nut is added to a room each day, room $1$ gains at most $n$ nuts, so $N-1\le n$. Substituting $N=\frac{210+18n}{20}$ gives
+ \[\frac{210+18n}{20}-1\le n\implies 190+18n\le 20n\implies n\ge 95.\]
+
+ If we take $n=95$, Then $N=\frac{210+18\cdot 95}{20}=96$, so room $i$ must receive $96-i$ nuts, which is between $76$ and $95$. These amounts total to $18\cdot 95$. List the rooms in order, writing room $i$ exactly $96-i$ times, and assign the $k$th entry in the list to day $k \pmod{95}$. Since every room appears at most $95$ times, no room is chosen twice on the same day, and each day receives exactly $18$ entries, i.e. $18$ distinct rooms. 
+
+ Therefore the minimum number of days is $\boxed{\textbf{(B) }95}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The $18$ nuts in different rooms condition is equivalent to subtracting a nut in two different rooms a day, since the pairwise differences between the nuts in each room will be the same. Thus, to minimize the days it takes, you keep room $1$ the same. Define a room have n extra nuts as having $n+1$ nuts $($aka having n more nuts than room $1)$. For room n, there are initially $n-1$ extra nuts. Thus, there are a total of $\frac{19\cdot 20}{2}=190$ extra nuts. The squirrel takes $2$ nuts each day, so it would take $\frac{190}{2}=\fbox{95}$ days to make the number of nuts in each room equal. Now, we just have to show that this is possible. 
+
+ Consider rooms $n, n+1, n+2, n+3$. Take out $n+1$ nuts from rooms $n+2$ and $n+3$. Thus, you have $n-1$ extra nuts in room n, n extra nuts in room $n+1$, $0$ extra nuts in room $n+3$, and $1$ extra nut in room $n+3$. Now, you take $1$ nut each from rooms $n+1$ and $n+3$. Then take $n-1$ nuts each from rooms n and $n+1$. This results in $0$ extra nuts in all 4 rooms. Thus, you can do this process on rooms $17$ to $20$, $13$ to $16$, $9$ to $12$, and $5$ to $8$. Now you only have $6$ extra nuts: $1$ in room $2$, $2$ in room $3$, and $3$ in room $4$.Take $1$ nut each from room $2$ and $4$, and then $2$ each from room $3$ and $4$. This results in the number of nuts in each room to be the same
+
+ 
+
+
+
+\textbf{Solution 4 (Cheese)}
+
+Suppose the room that starts with $1$ nut receives $N$ additional nuts. Following the pattern, the room starting with $2$ nuts receives $N - 1$ additional nuts, the room starting with $3$ nuts receives $N - 2$ additional nuts, and so on, down to the room starting with $20$ nuts which receives $N - 19$ additional nuts.
+
+ The total number of additional nuts distributed is given by the arithmetic series:
+ \[\sum_{i=0}^{19} (N - i) = 20N - \frac{19 \times 20}{2} = 20N - 190\]
+
+ Since Chris places $18$ acorns at a time, the total number of nuts added must be a multiple of $18$. Therefore, we have the divisibility condition:
+ \[18 \mid 20N - 190\]
+
+ Dividing both sides by $2$, this simplifies to:
+ \[9 \mid 10N - 95\]
+
+ In modular arithmetic, this can be written as:\begin{align*}10N - 95 &\equiv 0 \pmod 9 \\N - 5 &\equiv 0 \pmod 9 \\N &\equiv 5 \pmod 9\end{align*}
+
+
+ Let $d$ be the total number of days. Since a room can receive at most $1$ nut per day, the room starting with $1$ nut can receive at most $1$ nut each day, meaning $N \le d$. To achieve the absolute minimum number of days, we look at the boundary where a nut is placed in this room every single day, giving $d = N$. While we can't be completely sure this will give us the right answer, we can be pretty confident that this is the case. This is not a great solution path though, and you should really try using the above solutions. 
+
+ Regardless, substituting our answer choice options for $N$ into $N \equiv 5 \pmod 9$ uniquely leaves $\boxed{\textbf{(B) } 95}$ as the solution.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+The number of nuts in the 20 rooms can be written from $1$ to $20$. We notice that room $1$ needs $19$ nuts, room $2$ needs $18$ nuts, and so on for every room to reach $20$ nuts. The total number of nuts needed is $190$, and we need to somehow make the number $190$ divisible by $18$ so that the number of nuts needed can be achieved without any left over. Also notice that every time we go over $20$ per room. Since we are adding $0$ nuts to room $20$ every time, we can create a new order so that room $20$ gets nuts until every room can get the same \# of nuts with one order. With this order changing in mind, we notice that $190$ have prime factors of $2$, $5$, and $19$, and multiplying $190$ by $9$ (since $2$ is already a factor) and dividing by $18$, gives us $190/2 = 95$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 6 (More Intuitive)}
+
+Let $n$ be the minimum number of days it takes Chris. Note that Chris would add $n$ to the first room, $n- 1$ to the second room and so on until he adds $n - 19$ to the twentieth room. This is done to minimize $n$, as he would always add the most nuts to the first room, which can be achieved by adding one each day. The amount of nuts he added is:
+
+ $n + (n - 1) + (n - 2) + ... + (n - 19) = 20n - (1 + 2 + 3 + ... + 19)$
+
+ Plugging in the Gauss formula (sum of first $n$ numbers is $\frac{n(n + 1)}{2}$) yields:
+
+ $20n - \frac{19(20)}{2} = 20n - 190$ nuts added.
+
+ Note that he adds $18$ nuts each day (given), so he adds $18n$ total. Setting this equal to our above total amount:
+
+ $18n = 20n - 195 \implies -2n = -190 \implies \mathbf{n = 95}$.
+
+ Therefore, it takes Chris a minimum of $\boxed{\mathbf{95}}$ days, which is option $\textbf{B}$.
+
+ 
+
+
+
+\textbf{Solution 7}
+
+Chris skips $2$ rooms each day.  To accomplish his goal, for each $n \geq 2$, Chris must skip the $n^{th}$ room exactly $n-1$ more times than he skips the first room.  Since Chris skips the first room at least $0$ times, he must skip a total of $0+1+2+...+19 = \frac{19\cdot20}{2} = 190$ rooms across all the days.  Therefore, it takes him at least $190 \div 2 = \boxed{\textbf{(B)}\ 95}$ days to accomplish his goal.  (There are many ways in which he could do this.)
+
+ -j314andrews
+
+ 
+
+
+ 
+
+
+\end{enumerate}
