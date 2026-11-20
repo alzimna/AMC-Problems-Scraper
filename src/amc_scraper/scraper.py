@@ -67,7 +67,10 @@ def get_soup(source,
         print_message(f"Retrieving {problem_title} Using Selenium",'\r')
 
     if type == 'a' :
-        selector = [(By.TAG_NAME, 'ol'),1]
+        if source == 'https://artofproblemsolving.com/wiki/index.php?title=2026_AMC_10A' :
+            selector = [(By.CLASS_NAME, 'mw-content-ltr'),1]
+        else :
+            selector = [(By.TAG_NAME, 'ol'),1]
         t = MWAIT
     elif type == 'p' :
         selector = [(By.CLASS_NAME, 'mw-headline'),numprob]

@@ -1,0 +1,2502 @@
+\section{AMC 10 10B 2026}
+        \begin{enumerate}
+        	\item (\textit{AMC 10 10B 2026}) What is the value of 
+ \[\frac{2^{2026}+2^{2025}-2^{2023}}{2^{2024}-2^{2023}}?\]
+$\textbf{(A) } 5 \qquad \textbf{(B) } 7 \qquad \textbf{(C) } 9 \qquad \textbf{(D) } 11 \qquad \textbf{(E) } 13$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+We see the common factor $2^{2023}$ in both the numerator and denominator. In the numerator, we have $2^{2023}(2^{3}+2^{2}-1)$, and in the denominator, we have $2^{2023}(2-1)$. They cancel out, and after expanding the powers of $2$, we get $\frac{8+4-1}{1}$, giving us a final answer of $\boxed{11}$.
+
+ 
+ \[\frac{2^{2026}+2^{2025}-2^{2023}}{2^{2024}-2^{2023}} = \frac{2^{2023}\left(2^3+2^2-1\right)}{2^{2023}\left(2-1\right)} = \frac{8+4-1}{1} = \boxed{11}\]
+
+ edits made by ~erickim\_
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $2^{{2023}}=a$, $2^{{2024}}=a \times 2^{{1}}$, $2^{{2025}}=a \times 2^{{2}}$, $2^{{2026}}=a \times 2^{{3}}$, then we can turn the original expression into: 
+ \[\frac{2^{{3}}a+2^{{2}}a-a}{2a-a}=2^{{3}}+2^{{2}}-1=11\]So the correct answer is $\textbf{(D) } 11$.
+
+ 
+
+
+
+\textbf{Solution 3 (Generalized)}
+
+Let $a=2023$, $b=2024=a+1$, $c=2025=a+2$, and $d=2026=a+3$. Then our equation becomes, 
+ \[\frac{2^{d}+2^{c}-2^{a}}{2^b-2^a}\] As we know, $a<b<c<d$, so the optimal thing to do with an expression like this would be to factor out $2^a$. This gives us 
+ \[\frac{2^a(2^{d-a}+2^{c-a}-1)}{2^a(2^{b-a}-1)}\] Canceling, our expression becomes 
+ \[\frac{2^{d-a}+2^{c-a}-1}{2^{b-a}-1}\] Since $d=a+3$, $c=a+2$, and $b=a+1$, we see that this simplifies to 
+ \[\frac{2^3+2^2-1}{2-1}=\boxed{11}\]
+
+
+
+
+\textbf{Solution 4 (What not to do)}
+
+If one was to evaluate $2^{2026}$, $2^{2025}$, $2^{2024}$, and $2^{2023}$, they would find that
+
+ $2^{2026}=$
+ \[77049746683385389568125907632517700101003891634262762146306861466228139731569030030243876961524280223104\]
+ \[28133230661873696832551753638010286113775345432348995351531198742380360961431861852770106306213470420998\]
+ \[49766920141850142420807323001465434115045209323370942188511583227131734148456718338107853872867947081168\]
+ \[50606640396611332292236437070247082138903768588497109548075938849275313861707455124684910228651188459485\]
+ \[01734393495555761223558535347947353394587724760120214664246607326805966142957046803163715702487603897893\]
+ \[53846852386712703279382030103072484861279043062503243600206012393224751518620456125988864\]
+$2^{2025}=$
+ \[38524873341692694784062953816258850050501945817131381073153430733114069865784515015121938480762140111552\]
+ \[14066615330936848416275876819005143056887672716174497679576559937119018048071593092638505315310673521049\]
+ \[92488346007092507121040366150073271705752260466168547109425579161356586707422835916905392693643397354058\]
+ \[42530332019830566614611821853512354106945188429424855477403796942463765693085372756234245511432559422974\]
+ \[25086719674777788061177926767397367669729386238006010733212330366340298307147852340158185785124380194894\]
+ \[676923426193356351639691015051536242430639521531251621800103006196612375759310228062994432\]
+$2^{2024}=$
+ \[19262436670846347392031476908129425025250972908565690536576715366557034932892257507560969240381070055776\]
+ \[07033307665468424208137938409502571528443836358087248839788279968559509024035796546319252657655336760524\]
+ \[96244173003546253560520183075036635852876130233084273554712789580678293353711417958452696346821698677029\]
+ \[21265166009915283307305910926756177053472594214712427738701898471231882846542686378117122755716279711487\]
+ \[12543359837388894030588963383698683834864693119003005366606165183170149153573926170079092892562190097447\]
+ \[338461713096678175819845507525768121215319760765625810900051503098306187879655114031497216\]
+$2^{2023}=$
+ \[96312183354231736960157384540647125126254864542828452682883576832785174664461287537804846201905350278880\]
+ \[35166538327342121040689692047512857642219181790436244198941399842797545120178982731596263288276683802624\]
+ \[81220865017731267802600915375183179264380651165421367773563947903391466768557089792263481734108493385146\]
+ \[06325830049576416536529554633780885267362971073562138693509492356159414232713431890585613778581398557435\]
+ \[62716799186944470152944816918493419174323465595015026833030825915850745767869630850395464462810950487236\]
+ \[69230856548339087909922753762884060607659880382812905450025751549153093939827557015748608\]
+
+ Let$a=2^{2026}+2^{2025}-2^{2023}=$
+ \[10594340168965491065617312299471183763888035099711129795117193451606369213090741629158533082209588530676\]
+ \[83868319216007633314475866125226414340644109996947986861883553982707729963219688100475588961710435218288\]
+ \[72934295151950439458286100691270149719081871628196350455092034269373061344541279877148982990751934272366\]
+ \[06695841305453405819018251009715897379409926818091835256286044159177535565598477507964417515643953841317\]
+ \[91898847910563891716823929861034276109175581215451652951633390850743582034465659393543501090909204553596\]
+ \[0361539422031729967009150291391724666684258684210941959950283267040684033338103127173234688\]
+
+ And, $b=2^{2024}-2^{2023}=$
+ \[96312183354231736960157384540647125126254864542828452682883576832785174664461287537804846201905350278880\]
+ \[35166538327342121040689692047512857642219181790436244198941399842797545120178982731596263288276683802624\]
+ \[81220865017731267802600915375183179264380651165421367773563947903391466768557089792263481734108493385146\]
+ \[06325830049576416536529554633780885267362971073562138693509492356159414232713431890585613778581398557435\]
+ \[62716799186944470152944816918493419174323465595015026833030825915850745767869630850395464462810950487236\]
+ \[69230856548339087909922753762884060607659880382812905450025751549153093939827557015748608\]We see that $\frac{a}{b}$ is exactly $11$, after doing an immense division. Therefore the answer is $\boxed{\textbf{(D) } 11}$.
+
+ Remark: Where did you even find all these numbers? Most calculators break after 32 bits, let alone 2026! Also, if I were to multiply $2$ that many times, I would mess up by $2\cdot2$. ~Squishy64
+
+ 
+
+
+
+\textbf{Solution 5 (Wrong steps, yet right answer)}
+
+\begin{align*}\frac{2^{2026}+2^{2025}-2^{2023}}{2^{2024}-2^{2023}} &= \frac{6+5-3}{4-3} \text{ (Canceling out }2^{202}\text{)} \\&= \frac{(4+2)+(7-2)-3}{(2+2)-3} \\&= \frac{(4+\cancel{2})+(7-\cancel{2})-\cancel{3}}{(\cancel{2}+\cancel{2})-\cancel{3}} \\&= 4+7 \\&= \boxed{11}\end{align*}
+
+
+ POV when you solve the math problem the wrong way but end up getting the right answer
+
+ 
+
+
+
+\textbf{Solution 6 (Long Division)}
+
+Using long division, we can simplify the expression to 
+ \[4 + \frac{2^{2026} - 2^{2023}}{2^{2024} - 2^{2023}}\]. 
+
+ 
+
+ \[\frac{2^{2026} - 2^{2023}}{2^{2024} - 2^{2023}}\] 
+
+ simplifies to $7$, because we can factor out  $2^{2023}$ from both the numerator and denominator:
+
+ 
+ \[=\frac{2^{2023}(2^3-1)} {2^{2023}(2^1-1)}\]
+
+ 
+Cancel the common factor:
+ \[=\frac{8-1}{2-1} =\frac{7}{1}=7\]
+
+ Substituting this into our original equation gives 
+ \[4+\frac{2^{2026} - 2^{2023}}{2^{2024} - 2^{2023}}=4+7=\boxed{11}\]  ~littlefun
+
+ edits by ~cowbunga (Added more clarity on the steps)
+
+ More edits by ~littleduckysteve
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) A souvenir shop sells solid metal sculptures of Achilles in two sizes. One is $6$ cm tall and one is $8$ cm tall. Proportions between the two sculptures are preserved. The smaller sculpture has a mass of $486$ grams. What is the mass, in grams, of the larger sculpture?
+
+
+ $\textbf{(A) } 648 \qquad \textbf{(B) } 864 \qquad \textbf{(C) } 972 \qquad \textbf{(D) } 1152 \qquad \textbf{(E) } 1458$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1 (Multiplication)}
+
+If the sculpture is scaled up to become $8\text{ cm}$, the scaling factor is $\frac{8\text{ cm}}{6\text{ cm}} = \frac{4}{3}$. To conserve the shape of the object, we must scale the width, length, and height by that factor. Therefore, the volume will scale by $\left(\frac{4}{3}\right)^3$, which is $\frac{64}{27}$. 
+
+ Thus, the new volume $V$ is:
+ \[V = 486 \cdot \left(\frac{4}{3}\right)^3 = 486 \cdot \frac{64}{27}\]
+
+ We then notice that $486 = 18 \times 27$. Substituting this in gives:
+ \[V = (18 \times 27) \cdot \frac{64}{27} = 18 \times 64 = 1152\]
+
+ So the answer is $\boxed{\textbf{(D)} \ 1152}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Powers of 2)}
+
+Since proportions are preserved, mass scales with the cube of height. If $M$ is the mass of the larger sculpture, then
+ \[\frac{M}{486} = \left(\frac{8}{6}\right)^3 = \frac{4^3}{3^3}, \quad\text{so}\quad 27M = 486\cdot 64.\]Since $\gcd(27, 64) = 1$, $64$ must divide $M$.
+
+ Checking the answer choices by powers of $2$:
+ \[648 = 2^3\cdot 3^4,\quad 864 = 2^5\cdot 3^3,\quad 972 = 2^2\cdot 3^5,\quad 1152 = 2^7\cdot 3^2,\quad 1458 = 2\cdot 3^6.\]Only $1152$ is divisible by $2^6 = 64$, so the answer is $\boxed{\textbf{(D) }1152}$.
+
+ (Indeed, $486 = 2\cdot 3^5$, so $M = 2\cdot 3^5\cdot\frac{2^6}{3^3} = 2^7\cdot 3^2 = 1152$.)
+
+ 
+
+
+
+\textbf{Solution 3 (WLOG)}
+
+Without the Loss of Generality, let the smaller sculpture be a rectangular prism with height 6 cm, width 9 cm, depth 9 cm.  The volume of this very blocky sculpture of Achilles is $6 \text{cm}\times 9\text{cm}\times 9\text{cm}=486\text{cm}^3$.  We therefore see that the volume is equal to the mass, or one cubic centimeter is equivalent to one gram.  Since the larger sculpture is similar with a scale factor of $\frac{8 \text{cm}}{6\text{cm}}=\frac{4}{3}$, our dimensions for the larger rectangular prism are 8 cm by 12 cm by 12 cm.  The volume of this sculpture is $8 \text{cm}\times 12\text{cm}\times 12\text{cm}=1152\text{cm}^3$.  Since with the first statue, we saw that the volume was equal to the mass, and we are using the same material for our larger statue, our mass is $\boxed{\textbf{(D) } 1152}$ grams.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Bees occupy the $8$ corners of a $1\times 2\times 3$ rectangular box. The bees can fly inside the box, but cannot fly farther than $\frac{1}{2}$ units from their respective corners. What is the volume, in cubic units, of the region inside the box that cannot be reached by any bee?
+
+
+ $\textbf{(A) } 6-\frac{\pi}{3} \qquad \textbf{(B) } 6-\frac{\pi}{4} \qquad \textbf{(C) } 6-\frac{\pi}{6} \qquad \textbf{(D) } 6-\frac{\pi}{8} \qquad \textbf{(E) } 6-\frac{\pi}{12}$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+The volume of the rectangular prism is $1 \cdot 2 \cdot 3 = 6$.
+
+ At each of the $8$ corners, the bee cannot reach a region shaped like one-eighth of a sphere with radius $\frac{1}{2}$. Each of these regions has volume
+ \[\frac{1}{8} \cdot \frac{4}{3}\pi\left(\frac{1}{2}\right)^3 = \frac{\pi}{48}.\]
+
+ None of these regions overlap, so together they have volume $8 \cdot \frac{\pi}{48} = \frac{\pi}{6}$.
+
+ Thus, the volume the bee can travel in is $\boxed{6 - \frac{\pi}{6}}$.
+
+ Remark: None of the corners overlap because the smallest dimension is 1, and each bee can only fly 1/2 units away from the corner, which means that the closest they get to each other is touching, not overlap. ~Squishy64
+
+ Reformatting and clarifications made by ~erickim\_
+
+ 
+
+
+
+\textbf{Solution 2 (Simple)}
+
+The total volume of the rectangular box is
+ \[V_{\text{box}} = 1 \times 2 \times 3 = 6.\]
+
+ Each bee can reach points inside the box within a distance of $r = \frac{1}{2}$ from its corner. Because the shortest side length of the box is $1$ and $\frac{1}{2} + \frac{1}{2} = 1$, the regions reachable by the $8$ bees do not overlap.
+
+ At each corner of the rectangular box, they form one-eighth of a sphere of radius $r = \frac{1}{2}$. Since there are $8$ corners, they combine to form one complete sphere of radius $r = \frac{1}{2}$.
+
+ The total volume reachable by the bees is therefore
+ \[V_{\text{bees}} = 8 \times \left(\frac{1}{8} \cdot \frac{4}{3}\pi r^3\right) = \frac{4}{3}\pi \left(\frac{1}{2}\right)^3 = \frac{4}{3}\pi \left(\frac{1}{8}\right) = \frac{\pi}{6}.\]
+
+ Subtracting this from the total volume of the box gives:
+ \[V_{\text{unreachable}} = 6 - \frac{\pi}{6} = \boxed{\textbf{(C) } 6 - \frac{\pi}{6}}.\]
+
+
+
+
+\textbf{Solution 3 (EASIEST EVER Quick Solution)}
+
+The total volume of the box is $1 \times 2 \times 3 = 6$.
+
+ Each bee is trapped in a corner and can reach $\frac{1}{8}$ of a sphere with radius $r = \frac{1}{2}$. Because the shortest side of the box is $1$ (and $\frac{1}{2} + \frac{1}{2} = 1$), the bees' zones never touch. 
+
+ Putting all $8$ corner pieces together forms $1$ complete sphere:
+ \[V_{\text{sphere}} = \frac{4}{3}\pi \left(\frac{1}{2}\right)^3 = \frac{\pi}{6}.\]
+
+ Subtracting the reachable sphere from the box gives the unreachable volume:
+ \[6 - \frac{\pi}{6}.\]
+
+
+
+
+\textbf{Solution 4 (Coordinate Geometry and Calculus)}
+
+Embed the rectangular box in a three-dimensional Cartesian coordinate system so that its vertices lie at $(x, y, z) \in \{0, 1\} \times \{0, 2\} \times \{0, 3\}$. Thus, the interior of the box is defined by the region:
+ \[B = [0,1] \times [0,2] \times [0,3].\]
+
+ The total volume of the box is given by the triple integral:
+ \[V(B) = \int_0^3 \int_0^2 \int_0^1 1 \, dx \, dy \, dz = 1 \cdot 2 \cdot 3 = 6.\]
+
+ For any vertex $P_i = (x_i, y_i, z_i)$ of the box, the region $R_i$ reachable by the bee starting at $P_i$ is the intersection of the closed ball of radius $r = \frac{1}{2}$ centered at $P_i$ with the box $B$:
+ \[R_i = \left\{ (x, y, z) \in B \;\middle|\; (x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2 \leq \frac{1}{4} \right\}.\]
+
+ To ensure the regions $R_i$ are pairwise disjoint in the interior of $B$, consider the Euclidean distance between any two distinct vertices $P_i$ and $P_j$:
+ \[d(P_i, P_j) = \sqrt{(x_i - x_j)^2 + (y_i - y_j)^2 + (z_i - z_j)^2} \geq \min(1, 2, 3) = 1.\]By the triangle inequality, for any point $Q \in R_i \cap R_j$ with $i \neq j$, we must have:
+ \[1 \leq d(P_i, P_j) \leq d(P_i, Q) + d(Q, P_j) \leq \frac{1}{2} + \frac{1}{2} = 1.\]Equality holds only when $Q$ is the midpoint of an edge of length $1$ connecting $P_i$ and $P_j$. Therefore, the intersections $R_i \cap R_j$ have Lebesgue measure (volume) zero, meaning:
+ \[V\left(\bigcup_{i=1}^8 R_i\right) = \sum_{i=1}^8 V(R_i).\]
+
+ 
+By transactional and reflection symmetry, all eight regions $R_i$ have the exact same volume as $R_1$, the region associated with the origin $(0,0,0)$. Since $\frac{1}{2} < 1$, the sphere centered at $(0,0,0)$ does not cross the opposite faces $x=1$, $y=2$, or $z=3$. Thus, $R_1$ is strictly bounded by the coordinate planes $x \geq 0$, $y \geq 0$, and $z \geq 0$.
+
+ Converting to spherical coordinates $(x, y, z) = (\rho \sin\phi \cos\theta, \rho \sin\phi \sin\theta, \rho \cos\phi)$, the bounds for $R_1$ are $0 \leq \rho \leq \frac{1}{2}$, $0 \leq \phi \leq \frac{\pi}{2}$, and $0 \leq \theta \leq \frac{\pi}{2}$. Evaluating the volume integral yields:
+ \[V(R_1) = \int_0^{\pi/2} \int_0^{\pi/2} \int_0^{1/2} \rho^2 \sin\phi \, d\rho \, d\phi \, d\theta = \left(\int_0^{\pi/2} d\theta\right) \left(\int_0^{\pi/2} \sin\phi \, d\phi\right) \left(\int_0^{1/2} \rho^2 \, d\rho\right).\]
+
+ Computing each factor independently:
+ \[V(R_1) = \left(\frac{\pi}{2}\right) \cdot \Big[-\cos\phi\Big]_0^{\pi/2} \cdot \left[\frac{\rho^3}{3}\right]_0^{1/2} = \frac{\pi}{2} \cdot 1 \cdot \frac{1}{24} = \frac{\pi}{48}.\]
+
+ Summing over all $8$ vertices gives the total reachable volume:
+ \[V\left(\bigcup_{i=1}^8 R_i\right) = 8 \cdot \frac{\pi}{48} = \frac{\pi}{6}.\]
+
+ Finally, the volume of the unreachable complement $B \setminus \bigcup_{i=1}^8 R_i$ is:
+ \[V(B) - V\left(\bigcup_{i=1}^8 R_i\right) = 6 - \frac{\pi}{6} \implies \boxed{\textbf{(C)}\ 6 - \frac{\pi}{6}}.\]
+
+
+
+
+\textbf{Solution 5 (Indicator Functions, Inclusion-Exclusion, Spherical Measure, and Steiner Consistency)}
+
+\textbf{Conventions.} The bees fly at most $\frac12$ unit, so $r=\frac12$. Let $\lambda$ denote Lebesgue measure on $\mathbb{R}^3$, and let $\|\cdot\|$ be the Euclidean norm. Set
+ \[B=[0,1]\times[0,2]\times[0,3],\qquad \mathcal{V}=\{0,1\}\times\{0,2\}\times\{0,3\}.\]For $v\in\mathcal{V}$ let $\overline{\mathbb{B}}(v,r)=\{p\in\mathbb{R}^3:\|p-v\|\le r\}$, and let $R_v=B\cap\overline{\mathbb{B}}(v,r)$ be the region reachable from $v$. The unreachable region is $U=B\setminus\bigcup_{v\in\mathcal{V}}R_v$.
+
+ \textbf{Part I: Lemmas}
+
+ \textbf{Lemma 1 (Gaussian integral).} $J:=\int_{-\infty}^{\infty}e^{-t^2}\,dt=\sqrt{\pi}$.
+
+ \textit{Proof.} The integrand is positive and integrable, so $J>0$ and by Tonelli
+ \[J^2=\int_{\mathbb{R}}\int_{\mathbb{R}}e^{-(x^2+y^2)}\,dx\,dy=\int_0^{2\pi}\int_0^{\infty}e^{-\rho^2}\,\rho\,d\rho\,d\theta=2\pi\left[-\frac12e^{-\rho^2}\right]_0^{\infty}=\pi,\]where we used polar coordinates. Hence $J=\sqrt{\pi}$. $\blacksquare$
+
+ \textbf{Lemma 2 ($\Gamma(3/2)$).} $\Gamma(s)=\int_0^\infty u^{s-1}e^{-u}\,du$ satisfies $\Gamma\left(\frac32\right)=\dfrac{\sqrt{\pi}}{2}$.
+
+ \textit{Proof.} Integrating by parts with $f=u^{s}$, $dg=e^{-u}du$ gives, for $s>0$,
+ \[\Gamma(s+1)=\left[-u^{s}e^{-u}\right]_0^\infty+s\int_0^\infty u^{s-1}e^{-u}\,du=s\,\Gamma(s).\]Substituting $u=t^2$ ($du=2t\,dt$) gives
+ \[\Gamma\left(\frac12\right)=\int_0^\infty u^{-1/2}e^{-u}\,du=2\int_0^\infty e^{-t^2}\,dt=J=\sqrt{\pi}\]by evenness of the integrand and Lemma 1. Therefore $\Gamma\left(\frac32\right)=\frac12\Gamma\left(\frac12\right)=\frac{\sqrt{\pi}}{2}$. $\blacksquare$
+
+ \textbf{Lemma 3 (indicator form of inclusion-exclusion).} For finitely many measurable sets $A_1,\dots,A_n$,
+ \[\chi_{\bigcup_{i}A_i}=\sum_{k=1}^{n}(-1)^{k+1}\sum_{|S|=k}\chi_{\bigcap_{i\in S}A_i}.\]
+
+ \textit{Proof.} A point lies outside $\bigcup_i A_i$ if and only if it lies outside every $A_i$, so $1-\chi_{\bigcup_i A_i}=\prod_{i=1}^n(1-\chi_{A_i})$. Expanding the product,
+ \[\prod_{i=1}^n(1-\chi_{A_i})=\sum_{S\subseteq\{1,\dots,n\}}(-1)^{|S|}\prod_{i\in S}\chi_{A_i}=1+\sum_{k=1}^{n}(-1)^{k}\sum_{|S|=k}\chi_{\bigcap_{i\in S}A_i},\]because $\prod_{i\in S}\chi_{A_i}=\chi_{\bigcap_{i\in S}A_i}$. Rearranging gives the claim. $\blacksquare$
+
+ \textbf{Lemma 4 (equality in the triangle inequality).} If $\mathbf{a},\mathbf{b}\in\mathbb{R}^3$ with $\|\mathbf{a}\|\le\frac12$, $\|\mathbf{b}\|\le\frac12$ and $\|\mathbf{a}+\mathbf{b}\|=1$, then $\mathbf{a}=\mathbf{b}$ and $\|\mathbf{a}\|=\frac12$.
+
+ \textit{Proof.} We have $1=\|\mathbf{a}+\mathbf{b}\|\le\|\mathbf{a}\|+\|\mathbf{b}\|\le1$, so $\|\mathbf{a}\|=\|\mathbf{b}\|=\frac12$. Now
+ \[\|\mathbf{a}-\mathbf{b}\|^2=2\|\mathbf{a}\|^2+2\|\mathbf{b}\|^2-\|\mathbf{a}+\mathbf{b}\|^2=\frac12+\frac12-1=0\]by the parallelogram law, so $\mathbf{a}=\mathbf{b}$. $\blacksquare$
+
+ \textbf{Lemma 5 (spherical Jacobian).} Under $(x,y,z)=(\rho\sin\phi\cos\theta,\ \rho\sin\phi\sin\theta,\ \rho\cos\phi)$ with $\rho\ge0$, $\phi\in[0,\pi]$, $\theta\in[0,2\pi)$, the volume element is $dx\,dy\,dz=\rho^2\sin\phi\,d\rho\,d\phi\,d\theta$.
+
+ \textit{Proof.} The Jacobian matrix has columns
+ \[\partial_\rho=\begin{pmatrix}\sin\phi\cos\theta\\ \sin\phi\sin\theta\\ \cos\phi\end{pmatrix},\quad \partial_\phi=\begin{pmatrix}\rho\cos\phi\cos\theta\\ \rho\cos\phi\sin\theta\\ -\rho\sin\phi\end{pmatrix},\quad \partial_\theta=\begin{pmatrix}-\rho\sin\phi\sin\theta\\ \rho\sin\phi\cos\theta\\ 0\end{pmatrix}.\]Expanding the determinant along the third row gives
+ \[\cos\phi\cdot\rho^2\sin\phi\cos\phi\,(\cos^2\theta+\sin^2\theta)+\rho\sin\phi\cdot\rho\sin^2\phi\,(\cos^2\theta+\sin^2\theta)=\rho^2\sin\phi\,(\cos^2\phi+\sin^2\phi)=\rho^2\sin\phi.\]Since $\sin\phi\ge0$ on $[0,\pi]$, the absolute value is $\rho^2\sin\phi$. $\blacksquare$
+
+ \textbf{Part II: The Solution}
+
+ \textbf{Step 1: Reduction to the reachable volume.} Since $R_v\subseteq B$ for every $v$, we have $U\subseteq B$ and
+ \[\lambda(U)=\lambda(B)-\lambda\left(\bigcup_{v}R_v\right),\qquad \lambda(B)=1\cdot2\cdot3=6.\]
+
+ \textbf{Step 2: Indicator formulation.} Since $U\subseteq B$,
+ \[\lambda(U)=\int_{\mathbb{R}^3}\chi_B\left(1-\chi_{\bigcup_v R_v}\right)d\lambda=\lambda(B)-\int_{\mathbb{R}^3}\chi_{\bigcup_v R_v}\,d\lambda.\]
+
+ \textbf{Step 3: Inclusion-exclusion expansion.} Applying Lemma 3 to the eight sets $R_v$ and integrating,
+ \[\lambda\left(\bigcup_vR_v\right)=\sum_{k=1}^{8}(-1)^{k+1}\sum_{\substack{S\subseteq\mathcal{V}\\|S|=k}}\lambda\left(\bigcap_{v\in S}R_v\right).\]
+
+ \textbf{Step 4: Pairwise distances.} Two distinct vertices differ in at least one coordinate, and each coordinate gap is $1$, $2$, or $3$. Therefore $\|u-v\|^2\ge1$, that is,
+ \[\|u-v\|\ge1\qquad\text{for all distinct }u,v\in\mathcal{V}.\]
+
+ \textbf{Step 5: Pairwise intersections are single points or empty.} Let $u\ne v$ and suppose $Q\in R_u\cap R_v$. Put $\mathbf{a}=Q-u$ and $\mathbf{b}=v-Q$, so $\|\mathbf{a}\|,\|\mathbf{b}\|\le\frac12$ and $\|\mathbf{a}+\mathbf{b}\|=\|v-u\|$. By the triangle inequality and Step 4,
+ \[1\le\|v-u\|\le\|\mathbf{a}\|+\|\mathbf{b}\|\le1.\]Hence $\|v-u\|=1$, and Lemma 4 gives $\mathbf{a}=\mathbf{b}$, i.e. $Q=\frac{u+v}{2}$. So $R_u\cap R_v\subseteq\left\{\frac{u+v}{2}\right\}$ and
+ \[\lambda(R_u\cap R_v)=0\qquad\text{for all }u\ne v.\]There are $\binom82=28$ such pairs, and only the $12$ pairs joined by an edge of length $1$ can actually touch.
+
+ \textbf{Step 6: Higher intersections are null.} If $|S|\ge2$, choose distinct $u,v\in S$. Then $\bigcap_{w\in S}R_w\subseteq R_u\cap R_v$, so by monotonicity and Step 5 it has measure $0$. Every term with $k\ge2$ in Step 3 vanishes, leaving
+ \[\lambda\left(\bigcup_vR_v\right)=\sum_{v\in\mathcal{V}}\lambda(R_v).\]
+
+ \textbf{Step 7: Only the three faces through $v$ cut the ball.} Fix $v=(a,b,c)\in\mathcal{V}$ and let $p\in\overline{\mathbb{B}}(v,r)$. For each coordinate $i$,
+ \[|p_i-v_i|\le\|p-v\|\le\frac12<1\le\text{(side length in direction }i).\]Thus $p_i$ cannot reach the face of $B$ opposite to $v$ in direction $i$, and the constraint from that face holds automatically. Define signs $s_1=+1$ if $a=0$ and $-1$ if $a=1$; $s_2=+1$ if $b=0$ and $-1$ if $b=2$; $s_3=+1$ if $c=0$ and $-1$ if $c=3$. Then
+ \[R_v=\overline{\mathbb{B}}(v,r)\cap\left\{p:\ s_1(p_1-a)\ge0,\ s_2(p_2-b)\ge0,\ s_3(p_3-c)\ge0\right\},\]so each $R_v$ is exactly one octant of a ball of radius $\frac12$.
+
+ \textbf{Step 8: All eight octants are congruent.} Let $D_+=\overline{\mathbb{B}}(0,r)\cap\mathbb{R}^3_{\ge0}$ and define the affine map
+ \[T_v(p)=v+\operatorname{diag}(s_1,s_2,s_3)\,p.\]It is a bijection of $\mathbb{R}^3$ with $|\det DT_v|=|s_1s_2s_3|=1$, so it preserves $\lambda$ by the change-of-variables theorem. If $p\in D_+$ then $q=T_v(p)$ satisfies $s_i(q_i-v_i)=p_i\ge0$ and $\|q-v\|=\|p\|\le r$, so $T_v(D_+)\subseteq R_v$. Conversely, applying $T_v^{-1}$ to a point of $R_v$ lands in $D_+$ by Step 7. Hence $T_v(D_+)=R_v$ and
+ \[\lambda(R_v)=\lambda(D_+)\qquad\text{for all }v\in\mathcal{V}.\]
+
+ \textbf{Step 9: Eight octants make one ball.} The eight images $\sigma_\varepsilon(D_+)$ under sign flips $\sigma_\varepsilon(x,y,z)=(\varepsilon_1x,\varepsilon_2y,\varepsilon_3z)$, $\varepsilon\in\{\pm1\}^3$, cover $\overline{\mathbb{B}}(0,r)$, since the ball is invariant under each $\sigma_\varepsilon$. They overlap only on the coordinate planes, which have measure zero, and each $\sigma_\varepsilon$ preserves $\lambda$. Therefore $\lambda\left(\overline{\mathbb{B}}(0,r)\right)=8\lambda(D_+)$, and combining with Steps 6 and 8,
+ \[\lambda\left(\bigcup_vR_v\right)=8\,\lambda(D_+)=\lambda\left(\overline{\mathbb{B}}\left(0,\frac12\right)\right).\]
+
+ \textbf{Step 10: Two evaluations of a Gaussian integral.} Let $I=\int_{\mathbb{R}^3}e^{-\|p\|^2}\,d\lambda(p)$. By Tonelli and Lemma 1,
+ \[I=\left(\int_{-\infty}^{\infty}e^{-t^2}dt\right)^3=\pi^{3/2}.\]By Lemma 5, with $\sigma:=\int_0^{2\pi}\!\!\int_0^{\pi}\sin\phi\,d\phi\,d\theta$ (the total solid angle),
+ \[I=\sigma\int_0^\infty\rho^2e^{-\rho^2}\,d\rho.\]
+
+ \textbf{Step 11: The radial integral.} Substituting $u=\rho^2$, $d\rho=\dfrac{du}{2\sqrt u}$, and using Lemma 2,
+ \[\int_0^\infty\rho^2e^{-\rho^2}\,d\rho=\frac12\int_0^\infty u^{1/2}e^{-u}\,du=\frac12\,\Gamma\left(\frac32\right)=\frac{\sqrt{\pi}}{4}.\]
+
+ \textbf{Step 12: The solid angle.} Equating Steps 10 and 11 gives $\pi^{3/2}=\sigma\cdot\dfrac{\sqrt{\pi}}{4}$, so
+ \[\sigma=4\pi.\](This agrees with the direct computation $\sigma=2\pi\cdot\left[-\cos\phi\right]_0^{\pi}=4\pi$, which serves as a consistency check.)
+
+ \textbf{Step 13: Volume of the ball of radius $\frac12$.} By Lemma 5 and Step 12,
+ \[\lambda\left(\overline{\mathbb{B}}\left(0,\frac12\right)\right)=\sigma\int_0^{1/2}\rho^2\,d\rho=4\pi\cdot\frac13\left(\frac12\right)^3=\frac{\pi}{6}.\]
+
+ \textbf{Step 14: Steiner-formula consistency check.} For a box with side lengths $a,b,c$, the outer parallel body at distance $t$ has volume given by the Steiner polynomial
+ \[abc+2(ab+bc+ca)\,t+\pi(a+b+c)\,t^2+\frac43\pi t^3.\]The $t^3$ term is contributed by the eight vertex regions, which assemble into one full ball. At $t=\frac12$ it equals $\frac43\pi\cdot\frac18=\frac\pi6$, agreeing with Step 13.
+
+ \textbf{Step 15: Conclusion.} Combining Steps 1, 9, and 13,
+ \[\lambda(U)=6-\frac{\pi}{6}\implies\boxed{\textbf{(C)}\ 6-\frac{\pi}{6}}.\]
+
+ Remark: Who actually did this on the test? ~Squishy64
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) What positive real number $x$ satisfies the equation 
+ \[\frac{3}{x+4}-\frac{4}{x+3}=\frac{4}{x-3}-\frac{3}{x-4}?\]
+$\textbf{(A) } \sqrt{21} \qquad \textbf{(B) } 3+\sqrt{7} \qquad \textbf{(C) } 6 \qquad \textbf{(D) } \sqrt{37} \qquad \textbf{(E) } 4+\sqrt{13}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Group as follows:
+
+ 
+ \[\frac{3}{x+4} + \frac{3}{x-4} = \frac{4}{x+3} + \frac{4}{x-3}\]
+ \[\frac{3(x-4) + 3(x+4)}{(x+4)(x-4)} = \frac{4(x-3) + 4(x+3)}{(x+3)(x-3)}\]
+ \[\frac{6x}{x^2 - 16} = \frac{8x}{x^2 - 9}\]
+ \[6x(x^2 - 9) = 8x(x^2 - 16)\]
+ \[6x^3 - 54x = 8x^3 - 128x\]
+ \[-2x^3+74x = 0\]
+ \[2x^3 - 74x = 0\]
+ \[2x(x^2 - 37) = 0\]
+
+ Thus $x = \boxed{\sqrt{37}}$.
+
+ 
+
+
+
+\textbf{Solution 2 ()}
+
+By subsituting the only integer answer choice in, $6$, into $\frac{3}{x+4}-\frac{4}{x+3}=\frac{4}{x-3}-\frac{3}{x-4}$, it simplifies to $\frac{3}{10}-\frac{4}{9}=\frac{4}{3}-\frac{3}{2}$, or $-\frac{13}{90}=-\frac{15}{90}$. This is really close to equal, and looking at the deviation from 6 of the other answer choices, we note that $\sqrt{37}$ the closest, and the other answer choices are really far off. Thus, the answer is $\boxed{{\text{(D) }}\sqrt{37}}$.
+
+ 
+Remark: If you approximate the next closest answer choices, $\text{(B) }$ and $\text{(E) }$, they approximate to $5$ and $7$, and plugging those in gives $-\frac{1}{6}=-1$ for the former and $-\frac{7}{55}=0$ for the latter, which the difference between the two sides are much greater than plugging in $6$ gives. ~Squishy64
+
+ 
+
+
+
+\textbf{Solution 3 (🧮)}
+
+\textbf{Just calculate it, it won't take too much time.}
+
+ Remark: Was this meant to be a remark to my solution? ~Squishy64
+
+ Step 1. Combine the fractions on each side.
+
+ Left side:
+ \[\frac{3(x+3)-4(x+4)}{(x+4)(x+3)}\]
+
+ Simplify the numerator:
+ \[=\frac{3x+9-4x-16}{(x+4)(x+3)}\]
+
+ \[=\frac{-x-7}{(x+4)(x+3)}\]
+
+ Right side:
+ \[\frac{4(x-4)-3(x-3)}{(x-3)(x-4)}\]
+
+ \[=\frac{4x-16-3x+9}{(x-3)(x-4)}\]
+
+ \[=\frac{x-7}{(x-3)(x-4)}\]
+
+ Therefore:
+ \[\frac{-x-7}{(x+4)(x+3)} = \frac{x-7}{(x-3)(x-4)}\]
+
+ Step 2. Cross multiply.
+ \[(-x-7)(x-3)(x-4)\]
+
+ \[=(x-7)(x+4)(x+3)\]
+
+ Expand the left side:
+ \[-(x+7)(x^2-7x+12)\]
+
+ \[=-x^3+37x-84\]
+
+ Expand the right side:
+ \[(x-7)(x^2+7x+12)\]
+
+ \[=x^3-37x-84\]
+
+ Step 3. Equate and simplify.
+ \[-x^3+37x-84=x^3-37x-84\]
+
+ Move everything to one side:
+ \[-2x^3+74x=0\]
+
+ Factor:
+
+ 
+ \[-2x(x^2-37)=0\]
+
+ \[x(x^2-37)=0\]Thus:
+ \[x=0,\quad x=\sqrt{37},\quad x=-\sqrt{37}\]Since we only want positive values:Answer
+ \[\boxed{x=\sqrt{37}}\]~Soulution written by cowbunga.
+
+ like this?
+
+ Remark: This solution is much better, cowbunga. ~Squishy64
+
+ 
+
+
+
+\textbf{Solution 4 (non-cheese, if you don't see the grouping method)}
+
+Start by multiplying both sides of the equation by all of the denominators to get 
+
+ $3(x+3)(x-3)(x-4)-4(x+4)(x-4)(x-3) = 4(x-4)(x+4)(x+3)-3(x-3)(x+3)(x+4)$.
+
+ Now, notice that each term contains either $(x-3)(x+3)$ or $(x+4)(x-4)$. Because of this, we think to use difference of squares to simplify the expansion and get
+
+ $3(x^2-9)(x-4)-4(x^2-16)(x-3) = 4(x^2-16)(x+3)-3(x^2-9)(x+4)$. 
+
+ We now notice that both sides look pretty similar, so we move similar terms to the same side of the equation to get
+
+ $3(x^2-9)(x-4)+3(x^2-9)(x+4) = 4(x^2-16)(x+3)+4(x^2-16)(x-3)$.
+
+ Rewriting both sides now because of the common factors, we get
+
+ $3(x^2-9)(2x) = 4(x^2-16)(2x)$
+$3(x^2-9) = 4(x^2-16)$. 
+
+ This is now a simple linear equation in $x^2$, and expanding and solving gives us $x^2 = 37$, so since $x$ must be positive, we get that $x = \boxed{{\text{(D) }}\sqrt{37}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) There are $2026$ equally spaced points that all lie on a circle. A line segment is drawn between two points if there is exactly one point between them along the circle. Into how many regions will this divide the interior of the circle? The figure below shows an example with $10$ equally spaced points, in which case there are $21$ interior regions.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2026_5_Problem_Figure_1.png}
+                    \end{figure}
+                    
+$\textbf{(A) } 4052 \qquad \textbf{(B) } 4053 \qquad \textbf{(C) } 4054 \qquad \textbf{(D) } 6079 \qquad \textbf{(E) } 6081$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+We can notice that the amount of interior regions is $2n+1$ where n is the number of points so plugging $2026$ in gets $\boxed{\textbf{(B) } 4053}$.
+
+ Remark: He explicitly said not to move his solution but it still got moved T\_T ~Squishy64
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Notice that adding $1$ line adds $1$ region for the line itself, plus $1$ region for each intersection it makes with existing lines. 
+
+ The $2026$ points give $2026$ chords, which add $2026$ regions. Since each chord intersects $2$ other chords, there are $\dfrac{2026 \cdot 2}{2} = 2026$ intersection points, adding another $2026$ regions. 
+
+ Since we start with $1$ region, we have a total of $1 + 2026 + 2026 = \boxed{\textbf{(B) } 4053}$ regions.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We can find a pattern by testing small even numbers of points $n$ and counting the resulting interior regions:
+
+ 
+            \begin{itemize}
+        \item For $n = 4$: Connecting every second point draws $2$ perpendicular diameters, which divides the circle into $4$ regions.
+        \item For $n = 6$: Connecting every second point forms two overlapping equilateral triangles (a Star of David). This creates $1$ central hexagon, $6$ outer triangles around the star, and $6$ circular segments along the boundary, giving $1 + 6 + 6 = 13$ regions.
+        \item For $n = 8$: We get $1$ central octagon, $8$ triangles, and $8$ boundary segments, giving $1 + 8 + 8 = 17$ regions.
+        \item For $n = 10$: As given in the problem, there are $1 + 10 + 10 = 21$ regions.
+            \end{itemize}
+            Using this, we can construct a postulate; for any even $n \ge 4$, the chords form $1$ central $n$-gon, $n$ triangular regions around the central polygon, and $n$ circular segments between the chords and the circumference. Thus, the total number of interior regions is:
+ \[2n + 1\]
+
+ Substituting $n = 2026$ gives:
+ \[2(2026) + 1 = 4053\]
+
+ Therefore, the correct answer is $\boxed{\textbf{(B) } 4053}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+The region inside the circle is administered into three parts: the $n$ gon, the $n$ triangles as the extensions of the $n$-gon, and the circular regions inscribed between the triangle. The total count of regions is $n+n+1 = 2n+1$ hence the answer is $\boxed{\textbf{(B) }4053}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Each of the 2026 points on the circle is a vertex of exactly one triangular region and two circular regions. Since each circular region has exactly two vertices lying on the circle, we can associate each point with one circular region and the triangular region, giving us two regions per point. Thus, we get $2026\cdot 2=4052$. However, this does not account for the 2026-gon in the middle, so we add 1 to obtain $\boxed{\textbf{(B) }4053}$.
+
+ -C8c8c8c8c-Edits by Happymaths
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) For how many integers $n$ is
+
+ \[\frac{n^2-1}{n+2}\]
+also an integer?
+
+
+ $\textbf{(A) } 2 \qquad \textbf{(B) } 3 \qquad \textbf{(C) } 4 \qquad \textbf{(D) } 6 \qquad \textbf{(E) } \text{infinitely many}$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+By difference of squares, this is equivalent to $\frac{(n+2)(n-2)+3}{n+2}=n-2+\frac{3}{{n+2}}$. Since n-2 is an integer if n is an integer, we just need $\frac{3}{n+2}$ to be an integer. The factors of $3$ are $-1, 1, -3, 3$. Therefore, we have $\boxed{\textbf{(C) } 4}$ values of $n$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $d = n + 2$, so $d \neq 0$. Since $n \equiv -2 \pmod{d}$, we have
+ \[n^2 - 1 \equiv (-2)^2 - 1 = 3 \pmod{d}.\]So $d \mid n^2 - 1$ if and only if $d \mid 3$, which means $d \in \{-3, -1, 1, 3\}$ and $n \in \{-5, -3, -1, 1\}$.
+
+ Checking each value:
+ \[n = -5: \frac{24}{-3} = -8, \qquad n = -3: \frac{8}{-1} = -8, \qquad n = -1: \frac{0}{1} = 0, \qquad n = 1: \frac{0}{3} = 0.\]All four work, so the answer is $\boxed{\textbf{(C) }4}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Algebra)}
+
+Let $\frac{n^{2}-1}{n+2}$ equal $k$, where $k$ is an integer as necessitated by the problem.  We then can get \begin{align*}\frac{n^{2}-1}{n+2}&=k \\ n^{2}-1&=kn+2k \\ n^{2}-kn-(2k+1)&=0 \end{align*}
+ Using the quadratic formula, we get \begin{align*}n&=\frac{k\pm \sqrt{k^{2}+4(2k+1)}}{2}\\&=\frac{k\pm \sqrt{k^{2}+8k+4}}{2}\end{align*}
+  Since $n$ is defined as an integer in this problem, we need to find integer values of $k$ that lead to integer values of $n$.  We start by looking for values of $k$ that lead to $k^{2}+8k+4$ being a perfect square.  If we set $k^{2}+8k+4$ equal to $x^{2}$, after rearranging to get 
+ \[k^{2}+8k+4-x^{2}=0\] we can use the quadratic formula to find that \begin{align*}k&=\frac{-8\pm \sqrt{64-4(4-x^{2})}}{2}\\ &=\frac{-8\pm \sqrt{48+4x^{2}}}{2}\\ &=\frac{-8\pm 2\sqrt{12+x^{2}}}{2}\\ &=-4 \pm \sqrt{12+x^{2}} \end{align*}
+Since we want $k$ to be an integer, we need $\sqrt{12+x^{2}}$ to be an integer, and $12+x^{2}$ to be a perfect square.  Thus, we need to find two perfect squares with a difference of 12.  A little trial and error for the first several squares yields $4$ and $16$ as potential candidates.  Are there any other squares in the infinite supply that have this special difference?  No, we conclude, since 36 and 49 have a difference of 13, and the gap between adjacent squares increases by 2 each time we go up.  So, $x^{2}$ must equal 4, and $12+x^{2}=16$.  We plug back in with our new values to find that 
+ \[k=-4\pm 4,\] so our two options for $k$ are $-8$ and $0$.  
+
+ Finally, time to plug into the equation that we found for $n$, 
+ \[n=\frac{k\pm \sqrt{k^{2}+8k+4}}{2},\] with our values for $k$.  Starting with $k=0$, we get 
+ \[n=\frac{0\pm \sqrt{4}}{2}=\pm 1\] Next, we enter in $k=-8$, getting 
+ \[n=\frac{-8\pm \sqrt{64-64+4}}{2}=\frac{-8\pm 2}{2}=-4\pm 1\] So, we have four solutions for $n$: $-5, -3, -1, 1$.  Our answer therefore is $\boxed{\textbf{(C) }4}$.
+
+ 
+
+
+ \textbf{Alternative shortcut} Note that we didn't actually need to find all four values for $n$ to solve this problem algebraically.  We could have noticed earlier that for each value of $k$, we would have two integer values for $n$ (unless $k^{2}+8k+4=0$, but we can quickly rule that out since we need an integer value of $k$).  Using a similar route as in the above solution, we find that the only square that we can set $k^{2}+8k+4$ equal to is $4$.  This gives us two values for $k$, and since we have $2$ integer values of $n$ per value of $k$, we get the same answer of $\boxed{\textbf{(C) }4}$ values that work for $n$.
+
+ 
+
+
+
+\textbf{Solution 4 (Impossible to Prove)}
+
+Start by plugging in some values. Eventually, the values $-5$, $-3$, $-1$, and $1$ will result in integer solutions, which is $\boxed{\textbf{(C) } 4}$.
+
+ This is incorrect. Plugging in 3 yields $\frac{8}{5}$.
+
+ Indeed, the writer only states that $x+2$ must be the divisors of three. Maybe a misconception, perhaps?
+
+ I think the values are wrong here. If you plug values in, you should eventually get $-5$, $-3$, $-1$, and $1$ as solutions
+
+ edits by
+
+ can we just remove this solution?  It feels just a teensy bit simple/unhelpful... ~WRA2030
+
+ The page is getting deleted anyways... ~Squishy64
+
+ 
+
+
+
+\textbf{Solution 5 (Polynomial Division)}
+
+We start by using long polynomial division to simplify the given expression:
+ \[\frac{n^2-1}{n+2}=n+\frac{n^2-1-(n^2+2n)}{n+2}=n+\frac{-2n-1}{n+2}=n-2+\frac{-2n-1-(-2n-4)}{n+2}=n-2+\frac{3}{n+2}\]This means that $n+2$ is a divisor of $3$, which means $n+2=\pm 1, \pm 3$. Note that $n \neq -2$, because that would cause division by zero. Fortunately, none of the possible values of $n$ cause this, so there are $\boxed{\textbf{(C) } 4}$ integers $n$.
+
+ 
+
+
+
+\textbf{Solution 6 (Count them all)}
+
+Yeah its really not hard this time.there are exactly $\boxed{\textbf{(C) } 4}$
+
+ -5, which results in $\frac{(-5)^2-1}{(-5)+2}=\frac{24}{-3}=8$
+
+ -3, which results in $\frac{(-3)^2-1}{(-3)+2}=\frac{8}{-1}=-8$ again
+
+ -1, which results in $\frac{(-1)^2-1}{(-1)+2}=\frac{0}{1}=0$
+
+ and 1, which results in $\frac{1^2-1}{1+2}=\frac{0}{3}=0$ again
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 7 (Kind of cheese, I guess)}
+
+The goal is to make the numerator $0$ or the denominator $1$, and find the rest. $3$ makes the denominator 1. $1$ and $-1$ make the numerator 0. After trying a few more numbers, we can find out that $-5$ also works. So there are $\fbox{4}$ numbers
+
+ 
+
+
+
+\textbf{Solution 8 (Number Theory)}
+
+Factoring the numerator as the difference of squares, we have 
+ \[\frac{n^2 - 1}{n+2} = \frac{(n+1)(n-1)}{n+2}.\]
+
+ For this expression to be an integer, $n+2$ must divide $(n+1)(n-1)$. Since any two consecutive integers are relatively prime, $\gcd(n+1, n+2) = 1$, which implies that $n+2$ must divide $n-1$.
+
+ Rewriting the numerator of $\frac{n-1}{n+2}$ in terms of the denominator gives 
+ \[\frac{n-1}{n+2} = \frac{(n+2)-3}{n+2} = 1 - \frac{3}{n+2}.\]
+
+ Thus, $\frac{n-1}{n+2}$ is an integer if and only if $n + 2$ is a divisor of $3$. The integer divisors of $3$ are $-3, -1, 1, -3$, yielding $n = -5, -3, -1,$ and $1$, respectively.
+
+ Therefore, there are $\boxed{\textbf{(C) } 4}$ such integers $n$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) A circle in the coordinate plane passes through $(0,0)$, $(3,0)$, and $(0,4)$. The equation of the circle can be written in the form $x^2 + y^2 + ax + by + c = 0$ for some constants $a$, $b$, and $c$. What is $a + b + c$?
+
+
+ $\textbf{(A) } -7 \qquad \textbf{(B) } -2 \qquad \textbf{(C) } 0 \qquad \textbf{(D) } 5 \qquad \textbf{(E) } 7$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+We are given that the equation of the circle is
+ \[x^2 + y^2 + ax + by + c = 0,\]and that it passes through the points $(0,0)$, $(3,0)$, and $(0,4)$. We can substitute each point into the equation to solve for the constants $a$, $b$, and $c$.
+
+ Substituting $(0,0)$ gives:
+ \[0^2 + 0^2 + a(0) + b(0) + c = 0 \implies c = 0.\]
+
+ Substituting $(3,0)$ and $c = 0$ gives:
+ \[3^2 + 0^2 + a(3) + b(0) + 0 = 0 \implies 9 + 3a = 0 \implies a = -3.\]
+
+ Substituting $(0,4)$ and $c = 0$ gives:
+ \[0^2 + 4^2 + a(0) + b(4) + 0 = 0 \implies 16 + 4b = 0 \implies b = -4.\]
+
+ Thus, we get:
+ \[a + b + c = -3 + (-4) + 0 = \boxed{\textbf{(A) }-7}.\]
+
+
+
+
+\textbf{Solution 2}
+
+We graph the problem on the coordinate plane, and translate to a geometric problem.  It essentially asks for the equation of the circumcircle of the triangle composed of points $(0,0)$, $(3,0)$, and $(0,4)$.  To find the center, we want to find the circumcenter. Noting that this is a right triangle, the circumcenter is located at the midpoint of the hypotenuse (Converse of Thales' Theorem), which is $(1.5, 2)$ by midpoint formula.
+
+ We know the radius is one half of the hypotenuse, so since the hypotenuse is $5$ (by $3-4-5$ pythagorean triple), the radius is $2.5$.
+
+ We substitute our values into the circle formula:$(x-\frac{3}{2})^2+(y-2)^2=(\frac{5}{2})^2$
+
+ Expanding gives us:$x^2-3x+\frac{9}{4}+y^2-4y+\frac{16}{4}=\frac{25}{4}$
+
+ Canceling the constant factor gives:$x^2+y^2-3x-4y=0$
+
+ Thus, $a+b+c=-3+(-4)+0=\boxed{\textbf{(A)}-7}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Let the center of the circle be $P (x, y)$.
+
+ From the fundamental property of a circle, we know that the distance from $(x, y)$ to any of the three points below are equal. Hence using the distance formula, we have the following equalities:
+
+ 
+ \[\sqrt{(x)^2 + (y)^2} = \sqrt{(x-3)^2 + (y)^2} = \sqrt{(x)^2 + (y-4)^2}\]
+
+ Squaring, we get:
+
+ 
+ \[x^2 + y^2 = (x-3)^2 + y^2 = x^2 + (y-4)^2\]
+
+ Now, we have a system of equations:
+
+ 
+ \[\begin{array}{r}   \textcircled{1} \\   \textcircled{2} \end{array} \begin{cases}    x^2 + y^2 = (x-3)^2 + y^2 \\    (x-3)^2 + y^2 = x^2 + (y-4)^2 \end{cases}\]
+
+ Expanding and simplifying $\textcircled{1}$, we have:
+
+ 
+ \[x^2 + y^2 = x^2 - 6x + 9 + y^2\]
+ \[x^2 = x^2 - 6x + 9\]
+ \[6x = 9\]
+ \[x = \frac{3}{2}\]
+
+ Plugging the $x$ value into $\textcircled{2}$, we have:
+
+ 
+ \[(\frac{3}{2} - 3)^2 + y^2 = (\frac{3}{2})^2 + (y-4)^2\]
+ \[(-\frac{3}{2})^2 + y^2 = (\frac{3}{2})^2 + (y-4)^2\]
+ \[y^2 = y^2 - 8y + 16\]
+ \[8y = 16\]
+ \[y = 2\]
+
+ Hence, the center of the circle $P$ has coordinates $(\frac{3}{2}, 2)$.
+
+ Using the distance formula above, we find the radius $r$ of the circle:
+
+ 
+ \[r = \sqrt{(\frac{3}{2})^2 + (2)^2}\]
+ \[r = \sqrt{\frac{9}{4} + 4}\]
+ \[r = \sqrt{\frac{25}{4}}\]
+ \[r = \frac{5}{2}\]
+
+ Plugging the above values into the circle formula and simplifying, we have:
+ \[(x - \frac{3}{2})^2 + (y - 2)^2 = \frac{25}{4}\]
+ \[x^2 - 3x + \frac{9}{4} + y^2 - 4y + 4 = \frac{25}{4}\]
+ \[x^2 + y^2 - 3x - 4y = 0\]
+
+ Hence, $a + b + c = -3 + (-4) + 0 = \boxed{\textbf{(A)}-7}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Consider the infinite sequence of sets $\{1\}$, $\{2, 4\}$, $\{3, 5, 7\}$, $\{4, 6, 8, 10\}$, $\{5, 7, 9, 11, 13\}, \dots$. Here, the $k$-th set contains one more element than the previous set, and its members are the terms of an arithmetic sequence beginning with $k$ and having common difference $2$. Let $N$ be the number of these sets that contain the number $2026$. What is the sum of the digits of $N$?
+
+
+ $\textbf{(A) } 10 \qquad \textbf{(B) } 14 \qquad \textbf{(C) } 16 \qquad \textbf{(D) } 19 \qquad \textbf{(E) } 20$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Note that each set ends with $3k - 2$ (through arithmetic sequence). We want to find all sets such that $k \le 2026$ and $3k - 2 \ge 2026$, which simplifies to $k \ge 676$.
+
+ There are $\frac{2026 - 676}{2} + 1 = 676$ such sets. Summing the digits of $676$ gives $6 + 7 + 6 = 19$, which corresponds to $\boxed{\textbf{(D) } 19}$.
+
+ 
+-badhairnerd
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Suppose $2026$ is the $j$-th element of the $k$-th set, where $1 \le j \le k$. The $j$-th element of the $k$-th set is $k + 2(j-1)$, so
+ \[k + 2(j - 1) = 2026 \implies k = 2028 - 2j.\]So each position $j$ determines exactly one set, and we only need to count the valid values of $j$.
+
+ The condition $j \le k$ becomes $j \le 2028 - 2j$, or $j \le 676$. Also, every $j \ge 1$ gives $k \le 2026$, and $j \le 676$ gives $k \ge 676 \ge 1$, so every $j$ from $1$ to $676$ works.
+
+ Therefore $N = 676$, and the sum of its digits is $6 + 7 + 6 = \boxed{\textbf{(D) }19}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Obviously, the largest possible value of $k$ is 2026, since every element of the $k$-th set is at least $k$.
+
+ To find the smallest, say the sum begins with $k$. Then, $k + (n-1)2 = 2026$. The last term of the sequence must be 2026, so $k+2k-2 = 2026$, hence $3k = 2028, k = 676$.
+
+ All even $k \in [676,2026]$ satisfy the condition. Since $2026-676+1 = 1351$, exactly 675 are odd and 676 are even, hence $6 + 7 + 6 = \boxed{\textbf{(D) }19}$.~Pinotation
+
+ SuperVince1 - I changed the first sentence from "Obviously the largest set that contains 2026 is 2026 itself." to "Obviously, the largest possible value of $k$ is 2026, since every element of the $k$-th set is at least $k$." I didn't accidentally ruin it, right?
+
+ Not at all! Thanks for the change! ~Pinotation
+
+ 
+
+
+
+\textbf{Solution 4}
+
+We first aim to find the smallest starting value of a sequence so that $2026$ is included, and we know that the last sequence that has $2026$ will be the one starting with $2026$. We know that the starting value must be even. We can now say that for some starting number $k$, $k+2(k-1)=2026$. We solve for $k=676$ and proceed as we did in solution $3$. 
+
+ An alternate way to solve this problem would simply be to test values, and you should be able to find $676$ very quickly.~jamespudi
+
+ 
+
+
+
+\textbf{Solution 5}
+
+Notice the number on the end of every set, they all have a difference of $3$, and we start at $1$, so by doing 
+ \[\frac{2026-1}{3} ~= 675\] but that is just an estimate, so we have to compensate it by adding an $1$, so the answer is $676$, and by adding their digits, we get $6+7+6 = \boxed{\textbf{(D) }19}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+$1, 2, 3$ are in the sequence $3$ times. $4, 5, 6$ are in the sequence $2$ times. In general, $x$ is in the sequence $\lceil x \rceil$ times. So $2026$ is in the sequence $\lceil 2026 \rceil$ times = $676$. So $N = 6+7+6=\fbox{19}$Note: $\lceil x \rceil$] means taking $\frac{x}{3}$ and rounding it up to the next integer
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) A library offers 5 desks arranged in a row from left to right for quiet studying. Students arrive
+one at a time and sit down at a desk. If possible, each student avoids sitting next to another
+student. Otherwise they will, if possible, sit next to one student rather than two. How many
+possible seating configurations (which seats are occupied) for one to five students are there?
+
+
+ $\textbf{(A) } 14 \qquad \textbf{(B) } 17 \qquad \textbf{(C) } 20 \qquad \textbf{(D) } 22 \qquad \textbf{(E) } 24$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+If there is one student, there are $5$ ways of seating. When there are only two people, they will not sit together, since students will prioritize sitting by themselves; so, there are $6$ ways to sit two people. When there are three students, we do $\binom{5}{3}$ minus the ways they all sit together (in one big superblock, which are FFFEE, EFFFE, and EEFFF), which is $10 - 3 = 7$ ways (Notice that these cases are possible because the person in the middle of the F-block can sit down first, then people sit down adjacent to him.) Likewise, there will be $3$ ways to sit four people (once again, they can't all sit together, so FFFFE or EFFFF are both invalid). There is $1$ way to sit if there are five people. Therefore, there are $5+6+7+3+1=$ $\boxed{\text{(D) }{22}}$ ways for the students to sit down.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let us start with how many ways one person may sit. There are 5 seats, and 1 person, so there are obviously $5$ ways for one person. 
+
+ 5 people may only sit one way since there is only one way to put 5 students into 5 seats, which is filling all the seats up.
+
+ 4 people can also only sit 3 ways since its just which of the 5 seats will not have a person, but we need to subtract the side seats since those are always next to one person, and sitting elsewhere would mean someone chose to 2 people instead of 1 which isn't allowed.
+
+ Now we have the problem children: 2 people and 3 people.2 people is quite simple.there are 5 possibilities for where the 1st person sat: S \_ \_ \_ \_, \_ S \_ \_ \_, \_ \_ S \_ \_, and the 1st 2 flipped around.In the case of S \_ \_ \_ \_, there are 3 possible ways for the 2nd person to sit. In the case of \_ S \_ \_ \_, there are 2 places for the 2nd person, and in the case of \_ \_ S \_ \_ there are 2 places again, but one of them is a repeat (S \_ S \_ \_) so we subtract one. $3+2+1=6$ for 2 people. (It is important to note that the flipped versions possibilities are all repeats of ones I've already mentioned due to students being presumably indistinguishable so they don't matter)
+
+ 3 People is a bit more complex but not really.We have 6 CasesS \_ S \_ \_, S \_ \_ S \_, S \_ \_ \_ S, \_ S \_ S \_, \_ S \_ \_ S, \_ \_ S \_ S. Cases 1, 3, and 6 give the same possibility (S \_ S \_ S), Cases 2, and 5 each have 2 unique possibilities but each share one with 4, and case 4 has 1 unique possibility (but that one violates the choose to sit next to 2 people last rule, so we throw it out), and shares a case with 2 and 5 each. that means we have a total of $1+2+2+2=7$ cases.
+
+ So, there are a total of $5+3+6+7+1=\boxed{\text{(D) }{22}}$ ways to arrange the students.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+We'll notate the seating positions using F-E-F-E-F, where an F represents a Filled chair, and E represents and Empty chair
+
+ 
+Case 1: One seat is occupied.The one person that sits down can choose any seat, since there is nobody ready sitting down to effect where he goes.  There are $\boxed{5}$ cases that work here.
+
+ 
+Case 2: Two seats are occupied.There are $\begin{pmatrix} 5\\2\end{pmatrix} = 10$ possibilities for seating arrangements, but they cannot sit next to each other, as occurs in $4$ cases, so we have $\boxed{6}$ possibilities here.
+
+ 
+Case 3: Three seats are occupied.Remember, the students do not wish to sit next to each other, but will if they have to.  However, here we do not have any situations that force any person to sit next to two others, a case which they will avoid.
+
+ Using our notation, we see that the only scenario where no students sit next to each other is F-E-F[-E-F.
+
+ Otherwise, there will be a pair of students forced to sit next to each other.  We go through the pairs of consecutive chairs that will be filled and find the number of other seats that the other student can take with out forcing another student to sit by two people (note that the 'other student' mentioned here, however, will not be the last student to take a seat, since otherwise, the first two would not have chosen to sit by each other.  However, there will be a situation in which each permutation is possible because of the limited number of seats).
+
+ When the first pair of seats are occupied (F-F-E-E-E) there are two other seats that don't make one student sit next to two others.
+
+ When the second pair of seats are occupied (E-F-F-E-E) there is only one seat that works.
+
+ By symmetry, the third and fourth pair of seats have one and two cases that work, respectively.  
+
+ Adding all these up, we have $\boxed{7}$ possible seating positions with three chairs occupied.
+
+ 
+Case 4: Four seats are occupied.When $4$ seats are occupied, there will be one seat left empty.  We go through the possible chairs left empty and try to find sequences of sitting down that will satisfy the rules given to us.
+
+ When the first seat is left empty, (E-F-F-F-F), we see that one person will either have to choose to sit next to two people rather than taking the empty seat by one person, or will have to choose to sit to a person rather than taking a seat by no people.  Both of these cases cannot exist, so we have $0$ sequences of choosing chairs that will lead to this permutation.  By symmetry, the case where the last seat is unoccupied is also impossible.
+
+ When the second seat is empty, we have a case that works to form this permutation: seat 1 is chosen -> seat 4 is chosen -> seat 5 is chosen -> seat 3 is chosen.  By symmetry, the fourth seat can be validly left empty too.
+
+ We have a sequence that leads to the middle seat being left empty too: seat 1 is chosen -> seat 4 is chosen -> seat 2 is chosen -> seat 5 is chosen.  
+
+ We already showed that there is a case with seat 4 being left empty, and there is no case with seat 5 being left empty.  Counting these up, we have $\boxed{3}$ cases with four seats chosen that work.
+
+ 
+Case 5: Five seats are chosen.Since we have at least 1 case where four seats are chosen, there is a case where the last seat is picked, and the entire row is filled, giving us $\boxed{1}$ last case.
+
+ 
+Therefore, we have $5+6+7+3+1=\boxed{\text{(D) }{22}}$ possible sitting arrangements.
+
+ 
+
+
+
+\textbf{Solution 4 (Complementary Counting)}
+
+There are $2^5 - 1 = 31$ non-empty subsets of the $5$ desks. Let $1$ denote an occupied desk and $0$ denote an empty desk. We count the invalid configurations where a student chooses a seat with more neighbors than necessary:
+
+ 
+            \begin{itemize}
+        \item \textbf{$2$ students:} The second student will never sit next to the first, eliminating the $4$ adjacent pairs ($11000, 01100, 00110, 00011$).
+        \item \textbf{$3$ students:} The third student always has an available desk with at most $1$ neighbor, so three consecutive occupied desks ($11100, 01110, 00111$) cannot occur, eliminating $3$ configurations.
+        \item \textbf{$4$ students:} When the fourth student arrives, there are two empty desks. If an outer desk is left empty ($01111$ or $11110$), the fourth student must have skipped that outer desk (which has $1$ neighbor) to sit in an inner desk (which has $2$ neighbors), eliminating $2$ configurations.
+        \item \textbf{$1$ or $5$ students:} All $5$ single-seat configurations and the $1$ full-row configuration ($11111$) are valid.
+            \end{itemize}
+            Subtracting the invalid cases from the total gives:
+ \[31 - (4 + 3 + 2) = \boxed{\text{(D) }{22}}\]
+
+
+
+
+\textbf{Solution 5 (State Transition with Symmetry)}
+
+We trace valid configurations step-by-step using binary strings, grouping mirror-image states together:
+
+ 
+            \begin{itemize}
+        \item \textbf{$1$ student:} $10000$ ($2$ ways), $01000$ ($2$ ways), and $00100$ ($1$ way), giving $2 + 2 + 1 = 5$ configurations.
+        \item \textbf{$2$ students:} Avoiding adjacent seats from the previous states yields $10100$ ($2$), $10010$ ($2$), $10001$ ($1$), and $01010$ ($1$), giving $2 + 2 + 1 + 1 = 6$ configurations.
+        \item \textbf{$3$ students:} Filling $0$-neighbor seats first (or $1$-neighbor seats if none exist) yields $10101$ ($1$), $11010$ ($2$), $10110$ ($2$), and $10011$ ($2$), giving $1 + 2 + 2 + 2 = 7$ configurations.
+        \item \textbf{$4$ students:} Choosing $1$-neighbor seats over $2$-neighbor seats (and only picking a $2$-neighbor seat from $10101$) yields $11101$ ($2$) and $11011$ ($1$), giving $2 + 1 = 3$ configurations.
+        \item \textbf{$5$ students:} All valid $4$-student states lead to $11111$, giving $1$ configuration.
+            \end{itemize}
+            Summing all valid configurations gives $5 + 6 + 7 + 3 + 1 = \boxed{\text{(D) }{22}}$.
+
+ Remark: $0$ is empty while $1$ is occupied. Also, let's be honest; most of the solutions are same.
+
+ 
+
+
+
+\textbf{Solution 6 (Counting Empty Desks / Stars and Bars)}
+
+Instead of occupied desks, we count the valid placements of empty desks:
+
+ 
+            \begin{itemize}
+        \item \textbf{$0$ empty desks ($5$ students):} $\binom{5}{0} = 1$ way.
+        \item \textbf{$1$ empty desk ($4$ students):} The empty desk cannot be on either end, leaving the $3$ middle positions, for $3$ ways.
+        \item \textbf{$2$ empty desks ($3$ students):} Out of $\binom{5}{2} = 10$ total placements, the two empty desks cannot leave three consecutive occupied desks ($00111$, $11100$, or $01110$), leaving $10 - 3 = 7$ ways.
+        \item \textbf{$3$ empty desks ($2$ students):} The $2$ students require at least $1$ empty desk between them. Distributing the remaining $3 - 1 = 2$ empty desks into the $3$ regions around the students via Stars and Bars gives $\binom{2 + 3 - 1}{3 - 1} = \binom{4}{2} = 6$ ways.
+        \item \textbf{$4$ empty desks ($1$ student):} $\binom{5}{4} = 5$ ways.
+            \end{itemize}
+            Adding the cases together gives $1 + 3 + 7 + 6 + 5 = \boxed{\text{(D) }{22}}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Count. Them. All)}
+
+Hey it's me again, the count them all guy. I will try to make one of these from every question where its possible so keep an eye out!
+
+ there are exactly $\boxed{\text{(D) }22}$ different possibilities. Here are all of them:
+
+ S \_ \_ \_ \_, \_ S \_ \_ \_, \_ \_ S \_ \_, \_ \_ \_ S \_, \_ \_ \_ \_ S, 
+
+ S \_ S \_ \_, S \_ \_ S \_, S \_ \_ \_ S, \_ S \_ S \_, \_ S \_ \_ S, \_ \_ S \_ S, 
+
+ S \_ S \_ S, S S \_ S \_, S \_ S S \_, S \_ \_ S S, \_ S \_ S S, \_ S S \_ S, S S \_ \_ S, 
+
+ S \_ S S S, S S \_ S S, S S S \_ S, 
+
+ S S S S S.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) What is the area of the region bounded by the graphs of $|x+y| \leq 4$ and $x^2+y^2-4(x-y) \leq 2xy$?
+
+
+ $\textbf{(A) } 4 \qquad \textbf{(B) } 8 \qquad \textbf{(C) } 10 \qquad \textbf{(D) } 12 \qquad \textbf{(E) } 16$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+The inequality $|x+y| \leq 4$ is equivalent to
+
+ 
+ \[-4\leq x+y\leq 4.\]
+
+ Simplifying the second inequality gives us
+
+ 
+ \[x^2+y^2-4(x-y)\leq 2xy.\]
+
+ Rearranging, we get
+
+ 
+ \[x^2+y^2-2xy-4x+4y\leq 0.\]
+
+ Factoring gives
+
+ 
+ \[(x-y)^2-4(x-y)\leq 0.\]
+
+ Finally, we obtain
+
+ 
+ \[(x-y)(x-y-4)\leq 0.\]
+
+ For this product to be nonpositive, either $x-y$ must be nonpositive and $x-y-4$ must be nonnegative, or $x-y$ must be nonnegative and $x-y-4$ must be nonpositive.
+
+ $\textbf{Case 1:}$ Suppose that $x-y\leq 0$ and $x-y-4\geq 0$. Then
+
+ 
+ \[x-y\leq 0,\quad x-y\geq 4.\]
+
+ This is impossible, so there are no solutions in this case.
+
+ $\textbf{Case 2:}$ Suppose that $x-y\geq 0$ and $x-y-4\leq 0$. Then
+
+ 
+ \[0\leq x-y\leq 4.\]
+
+ Therefore, the intersection is defined by the inequalities
+
+ 
+ \[-4\leq x+y\leq 4\]
+
+ and
+
+ 
+ \[0\leq x-y\leq 4.\]
+
+ The first pair of inequalities is bounded by the lines $x+y=-4$ and $x+y=4$, while the second pair is bounded by the lines $x-y=0$ and $x-y=4$.
+
+ Graphing these four boundary lines, we have a rectangle with vertices $(2,2)$, $(4,0)$, $(0,-4)$, and $(-2,-2)$.
+
+ The side lengths of this rectangle are $2\sqrt{2}$ and $4\sqrt{2}$, which can be calculated using the distance formula (or the Pythagorean theorem). We know that the figure is a rectangle because the slopes of adjacent sides are $-1$ and $1$, whose product is $-1$. Therefore, adjacent sides are perpendicular.
+
+ Thus, the area of the intersection is
+ \[2\sqrt{2}\cdot 4\sqrt{2}=16.\]
+
+ \[\boxed{\text{E}}\]
+
+
+
+	\item (\textit{AMC 10 10B 2026}) In $\triangle ABC,$ point $D$ is $\frac{1}{3}$ of the way from $A$ to $B,$ point $F$ is $\frac{1}{4}$ of the way from $B$ to $C,$ and point $E$ is $\frac{1}{5}$ of the way from $C$ to $A.$ What is the ratio of the area of $\triangle DFE$ to the area of $\triangle ABC$?
+
+
+ $\textbf{(A) } \frac{1}{3} \qquad \textbf{(B) } \frac{5}{12} \qquad \textbf{(C) } \frac{7}{15} \qquad \textbf{(D) } \frac{1}{2} \qquad \textbf{(E) } \frac{3}{5}$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution}
+
+By the trignometric area formula $\frac{1}{2}ab\sin c$, we have
+ \begin{align*} [AED] &= \frac{4}{5} \cdot \frac{1}{3}[ABC] = \frac{4}{15}[ABC] \\ [FBD] &= \frac{1}{4} \cdot \frac{2}{3}[ABC] = \frac{1}{6}[ABC] \\ [ECF] &= \frac{3}{4} \cdot \frac{1}{5}[ABC] = \frac{3}{20}[ABC] \end{align*}
+.
+
+ Summing, $[AED] + [FBD] + [ECF] = \dfrac{35}{60}[ABC] = \dfrac{7}{12}[ABC]$.
+
+ Therefore, $[DFE] = \dfrac{5}{12}[ABC]$, so $\dfrac{[DFE]}{[ABC]} = \boxed{\textbf{(B) } \dfrac{5}{12}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Suppose the triangle is $3-4-5$. Set $AB = 3, BC = 4, AC = 5$ and so $B(0,0)$, $A(0,3)$, $C(4,0)$. Then, $F(0,2), E(1,0)$. To find $D$, note it lies on $AC$ and is $1$ away from $C$, thus its coordinates are $(\frac{16}{5}, \frac{3}{5})$. The area through Shoelace Theorem is $\frac{5}{2}$. 
+
+ The area of the triangle is 6, hence the ratio is $\boxed{\frac{5}{12}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Barycentrics)}
+
+
+ \[\frac{\triangle DEF}{\triangle ABC} =  \begin{vmatrix} \frac{2}{3} & \frac{1}{3} & 0 \\ 0 & \frac{3}{4} & \frac{1}{4} \\  \frac{1}{5} & 0 & \frac{4}{5}  \end{vmatrix} = \boxed{ \textbf{(B)}\frac{5}{12}}\]- sillybone
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Since the ratio of areas is preserved under affine transformations, we can assume without loss of generality that $\triangle ABC$ is an equilateral triangle with side length $60$. Using the given fractions along each side, we find the lengths of the segments:
+ \begin{align*} AD &= \frac{1}{3} \cdot 60 = 20 \quad \text{and} \quad DB = 60 - 20 = 40, \\ BF &= \frac{1}{4} \cdot 60 = 15 \quad \text{and} \quad FC = 60 - 15 = 45, \\ CE &= \frac{1}{5} \cdot 60 = 12 \quad \text{and} \quad EA = 60 - 12 = 48. \end{align*}
+
+
+ Recall that if two triangles share an angle, the ratio of their areas equals the product of the ratios of their adjacent sides. (This is the bird head model.) Applying this to each of the three outer triangles gives:
+ \begin{align*} \frac{[\triangle ADE]}{[\triangle ABC]} &= \frac{AD}{AB} \cdot \frac{AE}{AC} = \frac{20}{60} \cdot \frac{48}{60} = \frac{1}{3} \cdot \frac{4}{5} = \frac{4}{15}, \\ \frac{[\triangle BDF]}{[\triangle ABC]} &= \frac{BD}{BA} \cdot \frac{BF}{BC} = \frac{40}{60} \cdot \frac{15}{60} = \frac{2}{3} \cdot \frac{1}{4} = \frac{1}{6}, \\ \frac{[\triangle CEF]}{[\triangle ABC]} &= \frac{CE}{CA} \cdot \frac{CF}{CB} = \frac{12}{60} \cdot \frac{45}{60} = \frac{1}{5} \cdot \frac{3}{4} = \frac{3}{20}. \end{align*}
+
+
+ Finally, we subtract the sum of the areas of these three outer triangles from the total area of $\triangle ABC$:
+ \[\frac{[\triangle DFE]}{[\triangle ABC]} = 1 - \left(\frac{4}{15} + \frac{1}{6} + \frac{3}{20}\right) = 1 - \left(\frac{16}{60} + \frac{10}{60} + \frac{9}{60}\right) = 1 - \frac{35}{60} = 1 - \frac{7}{12} = \frac{5}{12}.\]Thus, the correct answer is $\boxed{\textbf{(B) } \dfrac{5}{12}}$.~hothost59~hamsandwich (minor edit)
+
+ 
+
+
+
+\textbf{Solution 5 (Vectors)}
+
+Let $\vec{u} = \overrightarrow{BA}$ and $\vec{v} = \overrightarrow{BC}$. Expressing the positions of $D, F,$ and $E$ from $B$ gives:
+ \[\overrightarrow{BD} = \frac{2}{3}\vec{u}, \qquad \overrightarrow{BF} = \frac{1}{4}\vec{v}, \qquad \overrightarrow{BE} = \frac{1}{5}\vec{u} + \frac{4}{5}\vec{v}.\]Subtracting $\overrightarrow{BF}$ yields the two side vectors of $\triangle DFE$ originating at $F$:
+ \[\overrightarrow{FD} = \frac{2}{3}\vec{u} - \frac{1}{4}\vec{v}, \qquad \overrightarrow{FE} = \frac{1}{5}\vec{u} + \frac{11}{20}\vec{v}.\]The ratio of the area of $\triangle DFE$ to $\triangle ABC$ is the absolute value of the determinant of their coefficients:
+ \[\frac{[\triangle DFE]}{[\triangle ABC]} = \left|\det \begin{pmatrix} \frac{2}{3} & -\frac{1}{4} \\ \frac{1}{5} & \frac{11}{20} \end{pmatrix}\right| = \frac{2}{3} \cdot \frac{11}{20} + \frac{1}{4} \cdot \frac{1}{5} = \frac{11}{30} + \frac{1}{20} = \frac{25}{60} = \boxed{\textbf{(B) } \dfrac{5}{12}}.\]
+
+
+
+
+\textbf{Solution 6 (Inscribed Triangle Area Formula)}
+
+Let $x = \frac{AD}{DB} = \frac{1}{2}$, $y = \frac{BF}{FC} = \frac{1}{3}$, and $z = \frac{CE}{EA} = \frac{1}{4}$. By the inscribed triangle area formula (a corollary of Routh's Theorem),
+ \[\frac{[\triangle DFE]}{[\triangle ABC]} = \frac{xyz + 1}{(x + 1)(y + 1)(z + 1)}.\]Substituting $x = \frac{1}{2}$, $y = \frac{1}{3}$, and $z = \frac{1}{4}$ gives:
+ \[\frac{[\triangle DFE]}{[\triangle ABC]} = \frac{\frac{1}{2} \cdot \frac{1}{3} \cdot \frac{1}{4} + 1}{\left(1 + \frac{1}{2}\right)\left(1 + \frac{1}{3}\right)\left(1 + \frac{1}{4}\right)} = \frac{\frac{25}{24}}{\frac{3}{2} \cdot \frac{4}{3} \cdot \frac{5}{4}} = \frac{\frac{25}{24}}{\frac{5}{2}} = \frac{25}{60} = \boxed{\textbf{(B) } \dfrac{5}{12}}.\]WOOGA LOOGA THEOREM~\href{https://artofproblemsolving.com/wiki/index.php?title=User\%EF\%BC\%9AIcosahedron0288\#Created\_Pages}{Icosahedron0288}
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Sharon tosses a fair coin six times and keeps track of how many heads she has gotten. Her first toss is heads. What is the probability that after every toss Sharon's count of heads differs from her count of tails?
+
+
+ $\textbf{(A) } \frac{1}{8} \qquad \textbf{(B) } \frac{3}{16} \qquad \textbf{(C) } \frac{1}{4} \qquad \textbf{(D) } \frac{5}{16} \qquad \textbf{(E) } \frac{3}{8}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+This means that the second flip must be heads, so our sequence starts with $\text{HH\_ \_ \_ \_}$. In the remaining $4$ spots, we must have at least $2$ heads. This gives
+ \[\binom{4}{2} + \binom{4}{3} + \binom{4}{4} = 6 + 4 + 1 = 11\]arrangements. The only arrangement that does not work is $\text{HHTTHH}$, leaving $11 - 1 = 10$ valid ways. 
+
+ Therefore, the probability is $\dfrac{10}{2^5} = \boxed{\textbf{(D) } \dfrac{5}{16}}$.
+
+ 
+
+
+
+\textbf{Solution 2 (Tree Diagram)}
+
+Let $d = H - T$ be the difference between the number of heads and tails after each toss. Because the counts of heads and tails can never be equal, $d$ must remain strictly positive ($d > 0$) at every step. 
+
+ We construct a grid-aligned tree diagram tracking $d$ after each toss, pruning any branch that hits $d = 0$:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_12_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Each node shows the difference $d = H - T$, and the number in parentheses above it counts how many valid sequences reach that state (the sum of the incoming arrows).
+
+ At Toss $6$, there are $1 + 4 + 5 = 10$ valid sequences out of $2^5 = 32$ possible outcomes for the last five tosses. Thus, the desired probability is
+ \[\frac{10}{32} = \boxed{\textbf{(D) } \dfrac{5}{16}}.\]
+
+
+
+
+\textbf{Solution 3 (Casework by number of tails)}
+
+If $0$ tails: This must be $\text{HHHHHH}$.This give us $1$ valid sequence.
+
+ If $1$ tail: The single tail must be in the position of one of the underlined spot of $\text{HH\_H\_H\_H\_}$. This give us $4$ valid sequence.
+
+ If $2$ tails with the third toss being a tail: This means that the fourth toss must be head. The leftover tail must be in the position of one of the underlined spot of $\text{HHTH\_H\_}$ This gives $2$ valid sequence.
+
+ If $2$ tails with the third toss being head: Then, wejust have to choose two spot out of the remaining three for the tails which gives $3$ valid sequence.
+
+ Because only 5 tosses with unknown results made (the first one is given heads), we have 
+ \[\frac{1+4+2+3}{2^5}=\boxed{\textbf{(D) } \frac{5}{16}}\]
+
+
+
+
+\textbf{Solution 4 (Casework on the third and fourth flips)}
+
+Note that the second flip must be heads for the counts to remain different. Now, we take a look at the possibilities per each permutation of the third and fourth flips:
+
+ $\text{Case 1 - HHHH \_ \_: }$ In this case, the last two flips can be anything, so there are $4$ permutations.
+
+ $\text{Case 2 - HHHT \_ \_ or HHTH \_ \_: }$ In both of these cases, the last two flips can be HH, HT, or TH, so there are $2 \cdot 3 = 6$ possible permutations.
+
+ In total, there are $4+6=10$ permutations that satisfy the requirement, and $2^5=32$ total cases. Therefore, the answer is $\frac{10}{32}=\boxed{\textbf{(D) } \dfrac{5}{16}}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Two points $P$ and $Q$ are chosen independently and uniformly at random on the circle $x^2+y^2=4$ in the coordinate plane. What is the probability that no point on $\overline{PQ}$ lies less than $1$ unit from the origin?
+
+
+ $\textbf{(A) } \frac{1}{3} \qquad \textbf{(B) } 1-\frac{\pi}{6} \qquad \textbf{(C) } \frac{1}{2} \qquad \textbf{(D) } \frac{\pi}{6} \qquad \textbf{(E) } \frac{2}{3}$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+The radius of the circle is $\sqrt{4}=2$. For any point on a line to be at least $1$ unit from the origin the line must not be closer than a line that is tangent to a circle of radius 1 centered at the origin. Now let there be circle $B$ with radius $1$ centered at $(0,0)$ with an equilateral triangle whose $3$ sides are tangent to circle $B$. If you pick $1$ vertex that makes up the equilateral triangle, the farthest point from the vertex is a different vertex that makes up the equilateral triangle and is tangent to circle $B$. The arc that $2$ points of an equilateral triangle inscribed in a circle is $120$ degrees and that's the arc opposite to the vertex we choose that cannot have a point so the degree of the arc for any point of the circle of radius $2$ is $240$ degrees and a circle is $360$ degrees so the probability that no point $\overline{PQ}$ lies less than 1 unit from the origin is $\frac{240}{360}=$$\boxed{\textbf{(E) } \frac{2}{3}}$.
+
+ Fixed minor spelling errors ~ goodpikachu777
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 2}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_13_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ By symmetry, we may place $P$ anywhere on the circle, so let $P = (-2,0)$. Only the position of $Q$ matters.
+
+ The segment $\overline{PQ}$ stays at least $1$ unit from the origin $O$ exactly when the line $PQ$ is at distance at least $1$ from $O$. The boundary cases are the two lines through $P$ that are tangent to the circle of radius $1$ centered at $O$. Let them touch the small circle at $M_1$ and $M_2$, and let them meet the big circle again at $Q_1$ and $Q_2$.
+
+ Since $\overline{OM_1} \perp \overline{PM_1}$, triangle $OM_1P$ is a right triangle with $OM_1 = 1$ and $OP = 2$. Thus$\cos \angle POM_1 = \frac{OM_1}{OP} = \frac{1}{2} \implies \angle POM_1 = 60^\circ.$Triangle $OPQ_1$ is isosceles with $OP = OQ_1 = 2$, and $M_1$ is the midpoint of $\overline{PQ_1}$ (the foot of the perpendicular from the center bisects the chord). So $\overline{OM_1}$ bisects $\angle POQ_1$, giving$\angle POQ_1 = 2 \cdot 60^\circ = 120^\circ.$By symmetry, $\angle POQ_2 = 120^\circ$ as well.
+
+ The points $Q_1$ and $Q_2$ lie $120^\circ$ from $P$ in each direction. If $Q$ is on the shorter arc from $Q_1$ to $Q_2$ through $P$ (the part of the circle within $120^\circ$ of $P$), then the line $PQ$ is at distance $\ge 1$ from $O$ and the segment avoids the unit disk. If $Q$ is on the remaining arc $Q_1Q_2$, the segment passes within $1$ unit of $O$.
+
+ The good arc has measure:$360^\circ - 120^\circ = 240^\circ.$
+
+ Since $Q$ is uniformly distributed on the circle,$\Pr = \frac{240^\circ}{360^\circ} = \boxed{\frac{2}{3}}.$
+
+ Slightly edited diagram ~ Infinitrixx
+
+ 
+
+
+
+\textbf{Solution 3 (Inscribed Angle Theorem)}
+
+Proceed as in Solution 2, noting that we can fix $P$ to a point on the circle without loss of generality. After using the same diagram to observe that both $OM_1P$ and $OM_2P$ are $30-60-90$ triangles, we have $m\angle{Q_1PQ_2} = m\angle{OPM_1} + m\angle{OPM_2} = 30^{\circ} + 30^{\circ} = 60^{\circ}$. By the inscribed angle theorem, we have $m\angle{Q_1OQ_2} = 2m\angle{Q_1PQ_2} = 120^{\circ}$, which is equal to the measure of the minor arc $\overset{\frown}{Q_1Q_2}$. This gives the desired length of major arc $\overset{\frown}{Q_1Q_2}$ as $240^{\circ}$, which represents the valid positions of $Q$. Thus, random $Q$ gives probability $\frac{240}{360} = \boxed{\textbf{(E) } \frac{2}{3}}$.
+
+ 
+
+
+
+\textbf{Solution 4 (Point to Line)}
+
+WLOG point P is $(0, 2)$. Then, we can describe the line as $y - 2 = m(x - 0)$ or in standard form $mx - y + 2 = 0$. Then, by Point-to-Line distance formula, the distance from $(0, 0)$ to $mx - y + 2 = 0$ is 
+ \[\dfrac{\lvert m \cdot 0 + (-1) \cdot 0 + 2 \rvert}{\sqrt{1 + m^2}}\]Setting this equal to $1$ and solving for $m$ results in $\pm \sqrt{3}$.
+
+ Next, call the origin $O$ and the point where the line of slope $\sqrt{3}$ is exactly $1$ unit away from $O$ as $M$, and the point where the line of slope $-\sqrt{3}$ is $1$ unit away as $N$. Let these $2$ lines hit the circle at $Q_1$ and $Q_2$, and note how $MOP, NOP, MOQ_1, NOQ_2$ are all congruent $30-60-90$ triangles (the intuition is the $\sqrt{3}$ slopes, and we can solve for $MP = NP = \sqrt{3}$. Another way is to note that a slope of $-\sqrt{3}$ forms a 60 degree angle of depression). Then, $Q_1OQ_2 = 120^\circ$, meaning that minor arc $Q_1Q_2$, or the failed region accounts for $\dfrac{1}{3}$rd of possibilities, so our answer is $1 - \dfrac{1}{3} = \boxed{\dfrac{2}{3}} = \boxed{\textbf{(E)}}$
+
+ --aditya.a
+
+ \textbf{Remark} This question is essentially identical to \href{https://artofproblemsolving.com/wiki/index.php/2014\_AMC\_10B\_Problems/Problem\_19?srsltid=AYCX9vKbbj8maRYA9MC7XylocHkZuKkOfb6QyB3uCHPitRsM2Xg4p\_Bz}{2014 AMC 10B \#19}. 
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Real numbers $r$ and $s$ satisfy the equations $r+s=2$ and $2^r+2^s=7.$ What is $8^r+8^s$?
+
+
+ $\textbf{(A) } 199 \qquad \textbf{(B) } 209 \qquad \textbf{(C) } 221 \qquad \textbf{(D) } 237 \qquad \textbf{(E) } 259$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+Cubing the second equation, we get 
+ \[(2^r+2^s)^3=343\]
+ \[(2^r)^3+3(2^r)^2(2^s)+3(2^r)(2^s)^2+(2^s)^3=343\]
+ \[8^r+3(2^r)(2^s)(2^r+2^s)+8^s=343.\]From this, we get $8^r+8^s=343-3(2^r)(2^s)(2^r+2^s),$ and by substituting the initial conditions we get $343-3(2^{r+s})(2^r+2^s)=343-3(2^2)(7)=343-84=\boxed{\textbf{(E) }259}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Set variables $a=2^r$ and $b=2^s$. Now, we know that
+ \[8^r+8^s=2^{3r}+2^{3s}=a^3+b^3\]We can factorize this into 
+ \[(a+b)(a^2-ab+b^2)\]Then, the problem states that $a+b=7$, so we can find
+ \[(a+b)^2=a^2+2ab+b^2=49\]$ab$ is equal to $2^r\cdot2^s=2^{(r+s)}$, and $r+s=2$, so $ab=4$. Plug all the values in to get
+ \[(a^2-ab+b^2)=(a+b)^2-3ab=49-3\cdot4 = 37\]Finally, multiply the two expressions to get $7\cdot37 = \boxed{\textbf{(E) }259}$
+
+
+
+
+\textbf{Solution 3 (slightly different from 2)}
+
+We can rewrite $8^r+8^s$ as $2^{3r}+2^{3s}$, which can then be factored by sum of cubes to get 
+ \[(2^r+2^s)(2^{2r}-2^r2^s+2^{2s}) = 7(2^{2r}-2^r2^s+2^{2s})\].Notice that $2^r2^s=2^{r+s}=2^2=4$, so we can further rewrite the expression as 
+ \[7(2^{2r}2^{2s}-4)\].Now, focus on $2^{2r}2^{2s}$. Since $a^2+b^2=(a+b)^2-2ab$, we can rewrite it as $(2^r+2^s)^2-2(2^r2^s)$, which evaluates to $7^2-2\cdot4=41$.Thus, the whole expression evaluates to 
+ \[7(41-4)=7\cdot37=\boxed{\textbf{(E) }259}\].
+
+ 
+
+
+
+\textbf{Solution 4 (Logarithm)}
+
+Let $a = 2^r$ and $b = 2^s$. These means that $r = \log_2{b}$ and $s = \log_2{a}$. From the first condition, we have that \begin{align*}\log_2{b}+\log_2{a} &=2 \\\log_2{ab} &=2 \\ab &= 4\end{align*}
+
+
+ Additionally, $a+b = 7$. We are trying to find $8^r+8^s = a^3+b^3 = (a+b)(a^2-ab+b^2) = (a+b)((a+b)^2-3ab) = 7(7^2-3\cdot4) = 7(37) =\boxed{\textbf{(E) }259}$. 
+
+ 
+
+
+
+\textbf{Solution 5 (similar to 1)}
+
+First, square the second equation, obtaining:
+ \[4^r+4^s+2 \cdot 2^{r+s}=49\]Substituting $r+s=2$, we obtain
+ \[4^r+4^s=41\] Then multiply by the second equation:
+ \[(4^r+4^s)(2^r+2^s)=41\cdot 7\]
+ \[8^r+8^s+4^r2^s+2^r4^s=287\]Isolating the answer and factoring,\begin{align*}8^r+8^s&=287 - 2^{r+s}(2^r+2^s) \\&=287 - 4\cdot 7 \\&=\boxed{\textbf{(E) }259}.\end{align*}
+
+
+ 
+
+
+
+\textbf{Solution 6 (Vieta's Formulas)}
+
+Let $a = 2^r$ and $b = 2^s$. We have $a + b = 7$ and $ab = 2^{r+s} = 2^2 = 4$. By Vieta's Formulas, $a$ and $b$ are the roots if
+ \[t^2 - 7t + 4 = 0 \implies t^2 = 7t - 4.\]Let $S_n = a^n + b^n$. Multiplying the quadratic by $t^{n-2}$ and summing over $t = a, b$ gives the 
+ \[S_n = 7S_{n-1} - 4S_{n-2}.\]Using $S_0 = a^0 + b^0 = 2$ and $S_1 = a + b = 7$:
+
+ 
+            \begin{itemize}
+        \item $S_2 = 7S_1 - 4S_0 = 7(7) - 4(2) = 41$
+        \item $S_3 = 7S_2 - 4S_1 = 7(41) - 4(7) = 287 - 28 = 259$
+            \end{itemize}
+            Hence, $8^r + 8^s = S_3 = \boxed{\textbf{(E) } 259}$.
+
+ 
+
+
+
+\textbf{Solution 7 (Symmetric Substitution)}
+
+Since $r + s = 2$, write $r = 1 + d$ and $s = 1 - d$, and let $x = 2^d$. Substituting into the second equation gives:
+ \[2^{1+d} + 2^{1-d} = 7 \implies 2\left(x + \frac{1}{x}\right) = 7 \implies x + \frac{1}{x} = \frac{7}{2}.\]We wish to find
+ \[8^r + 8^s = 8^{1+d} + 8^{1-d} = 8\left(x^3 + \frac{1}{x^3}\right).\]Using $x^3 + \frac{1}{x^3} = \left(x + \frac{1}{x}\right)^3 - 3\left(x + \frac{1}{x}\right)$:
+ \[8^r + 8^s = 8\left[\left(\frac{7}{2}\right)^3 - 3\left(\frac{7}{2}\right)\right] = 8\left(\frac{343}{8} - \frac{21}{2}\right) = 343 - 84 = \boxed{\textbf{(E) } 259}.\]~\href{https://artofproblemsolving.com/wiki/index.php?title=User\%EF\%BC\%9AIcosahedron0288\#Created\_Pages}{Icosah edron0288}
+
+ 
+
+
+
+\textbf{Solution 8(basically 5)}
+
+Since $2^r + 2^s = 7$, So 
+ \[(2^r + 2^s)^2 = 49\] and it can be expanded into 
+ \[2^2r + 2(2^{r+s}) + 2^2s = 49\] since we know that $r + s = 2$, then 
+ \[2^{2r} + 2^{2s} = 41\] Now multiply it by $2^r+2^s$, which will give 
+ \[(2^2r + 2^2s)(2^r+2^s) = 287\] and expanding this one last time 
+ \[8^r + 2^{2r+s} + 2^{2s+r} + 8^s = 289\] We have what the question is asking now, only with the extra $2^{2r+s} + 2^{2s+r}$, which can be simplified to $2^{2+s} + 2^{2+s}$, and expanding it to $4 \cdot (2^r + 2^s)$, which equates to $28$, now $287 - 28 = \boxed{\textbf{(E) } 259}.$
+
+
+
+	\item (\textit{AMC 10 10B 2026}) Real numbers $u$ and $v$ are chosen independently and uniformly at random, with $0\leq u\leq 30$ and $0\leq v\leq 10.$ What is the probability that the equation $x^2+ux+v^2=0$ has a real solution?
+
+
+ $\textbf{(A) } \frac{1}{4} \qquad \textbf{(B) } \frac{1}{3} \qquad \textbf{(C) } \frac{1}{2} \qquad \textbf{(D) } \frac{2}{3} \qquad \textbf{(E) } \frac{3}{4}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+Completing the square gives the following steps:
+ \begin{align} x^2 + ux + v^2 &= 0 \\ x^2 + ux + \frac{u^2}{4} - \frac{u^2}{4} + v^2 &= 0 \\ \left(x + \frac{u}{2}\right)^2 &= \frac{u^2}{4} - v^2 \end{align}Solving for $x$, we get:
+ \[x = -\frac{u}{2} \pm \sqrt{\frac{u^2}{4} - v^2}\]For $x$ to be real, the expression inside the square root must be nonnegative. Therefore, we require $\frac{u^2}{4} - v^2 \geq 0$. Factoring this as a difference of squares gives:
+ \[\left(\frac{u}{2} - v\right)\left(\frac{u}{2} + v\right) \geq 0\]Since $u, v \geq 0$, we know that $\frac{u}{2} + v \geq 0$, so the only factor that determines the sign is $\frac{u}{2} - v \geq 0$, which simplifies to $v \leq \frac{u}{2}$.
+
+ From here, we split the range of $u$ into two cases:
+
+ 
+            \begin{itemize}
+        \item Case 1 ($20 \leq u \leq 30$): Since $\frac{u}{2} \geq 10$ and $v \leq 10$, every value of $v$ satisfies $v \leq \frac{u}{2}$. This gives a probability of $1$ for this interval, which occurs $\frac{10}{30} = \frac{1}{3}$ of the time.
+        \item Case 2 ($0 \leq u \leq 20$): For $u = 10 + \epsilon$ (where $0 \leq \epsilon \leq 10$), the condition $v \leq \frac{10 + \epsilon}{2}$ holds with probability $\frac{10 + \epsilon}{20}$. Similarly, for $u = 10 - \epsilon$, the probability is $\frac{10 - \epsilon}{20}$. The average of these two symmetric probabilities is $\frac{1}{2}$. Because the distribution of $u$ on $[0, 20]$ is symmetric about $10$, the overall probability for this interval is $\frac{1}{2}$, and this case occurs $\frac{20}{30} = \frac{2}{3}$ of the time.
+            \end{itemize}
+            Combining both cases, the total probability is:
+ \[\frac{1}{3}(1) + \frac{2}{3}\left(\frac{1}{2}\right) = \frac{1}{3} + \frac{1}{3} = \frac{2}{3}\]Therefore, the answer is $\boxed{\textbf{(D)}}$. ~ln56455
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Because the equation $x^2 + ux + v^2 = 0$ needs to have real solutions,the discriminant $(u^2 - 4v^2)$ must be non-negative. So, $u^2 \geq 4v^2$. Take the square root of both sides to get $u>2|v|$ or $u<-2|v|$. Both are the same, so we can solve for one to find the total probability.Because $0 \leq u \leq 30$ and $0 \leq v \leq 10$, you can form a geometric probability problem. Set $u=x$ and $v=y$, so you get three equations:
+
+ $0 \leq x \leq 30$, $0 \leq y \leq 10$, and $y \leq \frac{1}{2} * x$. The desired area is 20, while the total area is 30, so the final answer is $\boxed{\text{D}}$ $\frac{2}{3}$.
+
+ This is a valid approach, just check your region of determination.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+The discriminant yields $u \geq 2v$. To find the probability given $0 \leq u \leq 30$ and $0 \leq v \leq 10$ we approach using geometric probability. At the maximum $u$ we have $v$ lies at the centre of the rectangle, meaning that the line passing through $v$ must intersect 10 away from maximum $u$. The requested region is a right trapezoid, height 10, base 10, 30, yielding area 200. Over the total area 300, the answer is $\boxed{\frac{2}{3}}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+There are $31 \cdot 11 = 341$ possible combinations for $u$ and $v$. Notice that $x^2 + ux + v^2$ takes the form of a quadratic equation. For $x^2 + ux + v^2 = 0$ to have a real solution, the discriminant $\Delta = b^2 - 4ac$ must be greater than or equal to $0$ so $u^2-4v^2 \geq 0$. Notice that $u \geq 2v$. When $20 \leq u \geq 30$, there are $11 \cdot 11 = 121$ possibilities. When $0 \leq u \geq 19$, there are $2 \cdot \frac{(9+1)(9)}{2} = 90$ possibilities. The number of valid possibilities is $121+90=211$. Therefore the probability that the equation $x^2 + ux + v^2$ has a real solution is $\frac{211}{341} \approx \boxed{\textbf{(D) } \frac{2}{3}}$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 5 (Super simple using geometry!)}
+
+Using the quadratic equation, we get 
+ \[x=\frac{-u\pm \sqrt{u^{2}-4v^{2}}}{2}\] We see that if $\sqrt{u^{2}-4v^{2}}$ is a real number, then $x$ will be too, resulting in a real solution.  That means we have $u^{2}-4v^{2}\ge 0$, which we turn into $u^{2}\ge 4v^{2}$, and since we are told that $u$ and $v$ are non-negative, we take the square root of both sides and end up with $u\ge 2v$.  Graphing this line alongside the limits we are given for our variables gives us the following graph:
+
+ 
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_15_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ The ratio of the the area of the region that satisfies all of the boundaries, shaded blue, to the rectangle made by the original limits is our answer, is simply $\frac{\frac{20\cdot10}{2}+10\cdot10}{10\cdot30}$, which simplifies to $\boxed{\textbf{(D) }\frac{2}{3}}$.
+
+ Remark: The reason why as long as the discriminant is $\ge0$, the number is real, is because there are no other parts that have a square root and could produce an imaginary number. ~Squishy64
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) The $4$ squares in a $2 \times 2$ grid of squares are each colored either solid red, white, or blue. In how many ways can this be done so that no square colored red shares a side with a square colored blue?
+
+
+ $\textbf{(A) } 29 \qquad \textbf{(B) } 30 \qquad \textbf{(C) } 32 \qquad \textbf{(D) } 34 \qquad \textbf{(E) } 35$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1 (Casework)}
+
+We can see that if red and blue were together, there are a very limited amount of cases, so we first find the amount of cases where the reds and blues are not together
+
+ Case 1 (reds and whites only):
+
+ there are two choices for each square leading to $2^4=16$ cases
+
+ Case 2 (blue and whites only):
+
+ Again, there are only two choices for each square leading to $2^4=16$ cases
+
+ But we are overcounting the case where the whole square is white, so there are a total of $16+16-1=31$ cases where the red and blue are not together
+
+ Case 3 (Reds and Blues and Whites):
+
+ we have 4 ways to place our first red. The blue must be in the opposite corner, and the other two squares must be white. So for each placement of red there is a unique grid pattern.
+
+ In total we have $31+4=\boxed{\text{(E) }35}$
+
+
+
+
+\textbf{Solution 2}
+
+We use casework to solve. The $2 \times 2$ grid can have $1$, $2$, or $3$ colors inside of it so we calculate how many cases there are for those scenarios. 
+
+ For $1$ color, there can only be full red, full blue, or full white so there are $\textbf{3}$ cases. 
+
+ For $2$ colors, there can only be red and white or blue and white as blue and red can't work. Each case has the exact same number of combinations so solve for either case to get $4$ ($3$ of red/blue and $1$ of white) + $6$ ($2$ of red/blue and $2$ of white) + $4$ ($1$ of red/blue and $3$ of white) = $14$ cases. We have to multiply by $2$ to take into account for the other case to get $\textbf{28}$ cases.
+
+ For $3$ colors, we know that red and blue must be on opposite corners so there can only be $1$ red and $1$ blue. Each of red/blue can take up $1$ corner and there are 4 corners in the $2 \times 2$ grid so there are $\textbf{4}$ cases.
+
+ Add up $3+28+4$ to get $\boxed{\textbf{(E) } 35}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+
+            \begin{itemize}
+        \item $0$ Whites: We have $2$ ways to choose red or blue and the whole grid must be that color, giving $2$ ways.
+        \item $1$ White: We have $4$ ways to choose where the $1$ white goes and $2$ ways to choose red or blue, giving $2 \times 4 = 8$ ways.
+        \item $2$ Whites: If the whites are adjacent, we have $4$ ways to choose the "bar" it occupies and $2$ ways to choose blue or red, giving $2 \times 4 = 8$ ways. Otherwise, if the whites are diagonally adjacent, we have $2$ ways to choose where the whites go and $2 \times 2 = 4$ ways to choose red or blue for the remaining squares, giving $2 \times 4 = 8$ ways. This gives a total of $8 + 8 = 16$ ways.
+        \item $3$ Whites: We have $4$ ways to choose the non-white square and $2$ ways to choose red or blue, giving $2 \times 4 = 8$ ways.
+        \item $4$ Whites: We have $1$ way.
+            \end{itemize}
+            Therefore, there are a total of $2 + 8 + 8 + 16 + 1 = \boxed{\textbf{(E) } 35}$ ways.
+
+ 
+
+
+
+\textbf{Solution 4 (Reds instead of whites)}
+
+
+            \begin{itemize}
+        \item $0$ Red: Every block can be chosen as white or blue, so there are $16$ ways.
+        \item $1$ Red: We have $4$ ways to choose where the $1$ red goes, and the adjacent blocks must be occupied by white. The last block has $2$ options, giving $4\cdot 2 = 8$ ways.
+        \item $2$ Reds: If the reds are adjacent, we have $4$ ways to choose the "bar" it occupies and the adjacent rows must be white. If the reds are not adjacent, then there are 2 ways to choose the diagonal, and the other 2 blocks must be white. This leaves $4+2=6$ ways.
+        \item $3$ Reds: We have $4$ ways to choose the Red square, and White must be the last square, so it there are $4$ ways.
+        \item $4$ Reds: We have $1$ way.
+            \end{itemize}
+            Therefore, there are a total of $16 + 8 + 6 + 4 + 1 = \boxed{\textbf{(E) } 35}$ ways. 
+
+ 
+
+
+
+\textbf{Solution 5 (White Barriers)}
+
+First, notice that in a $2 \times 2$ grid, every square shares a side with its $2$ adjacent neighbors, but not with its diagonal square. Think of the white squares as barriers that separate the red and blue squares from touching. Because of this, we can split the problem into $2$ cases:
+
+ 
+            \begin{itemize}
+        \item \textbf{Case 1: At most $2$ colors are used (no red and blue together).}
+            \end{itemize}
+            We can have a combination of only blue and white, or only red and white. (Note: we are not counting grids where blue and red appear together yet—only $1$ or $2$ colors at a time.) Thus, there are $2^4 = 16$ choices for each, giving $16 + 16 = 32$ grids. However, we double-counted the grid that is completely white, so we subtract $1$:
+ \[32 - 1 = 31.\]
+
+            \begin{itemize}
+        \item \textbf{Case 2: All $3$ colors are used.}
+            \end{itemize}
+            Recall from the beginning that if both red and blue appear on the grid, they must be diagonal to each other so they do not share a side. This forces the $2$ white barrier squares to form the other diagonal, leaving blue and red to take up only $1$ square each:
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_16_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ We can place the white diagonal in $2$ ways (top-left to bottom-right, or top-right to bottom-left). For each white diagonal, we can also swap the placements of the red and blue squares in $2$ ways. Since these choices are independent, this gives:
+ \[2 \times 2 = 4.\]
+
+ Combining both cases, we get a grand total of $31 + 4 = \boxed{\textbf{(E) } 35}$ ways.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 6 (more casework)}
+
+We do casework on the number of cells colored blue.
+
+ 
+            \begin{itemize}
+        \item \textbf{Case 1: No blue cells}
+            \end{itemize}
+            Since there will be no restriction, we simply have $2$ color choices for $4$ cells, so there are $2^4=16$ ways for this case.
+
+ 
+            \begin{itemize}
+        \item \textbf{Case 2: One blue cell}
+            \end{itemize}
+            We first have $\binom{4}{1}=4$ ways to choose the blue cell. Additionally, the two vertically and horizontally adjacent cells must be white by the problem condition (and this case). For the diagonally adjacent cell, it can be red or white, so we have $2 \cdot 4 = 8$ ways for this case.
+
+ 
+            \begin{itemize}
+        \item \textbf{Case 3/4/5: Two/three/four blue cell}
+            \end{itemize}
+            Note that if two or more blue cells are present, then every cell will be adjacent to a blue cell, so every non-blue cell must be white. Thus, cases $3$, $4$, $5$, yield $\binom{4}{2}+\binom{4}{3}+\binom{4}{4}=11$ ways.
+
+ Summing up, our final answer is $16+11+8=35 \Rightarrow \boxed{E}$.~rz1729
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) A list contains $2026$ statements, each of which is either true or false. The first statement is "The number of false statements in this list is at least $1001$." The second statement is "The number of false statements in this list is at least $1002$." In general, the $k$th statement in the list is "The number of false statements in this list is at least $k + 1000$." How many statements in the list are true?
+
+
+ $\textbf{(A) } 342 \qquad \textbf{(B) } 513 \qquad \textbf{(C) } 1013 \qquad \textbf{(D) } 1026 \qquad \textbf{(E) } 1513$
+
+ \textbf{Answer: }B
+
+
+
+\textbf{Solution 1}
+
+Let $F$ be the number of false statements. If $F\le1000$, every statement would be false, giving $F=2026$, a contradiction. Thus $F>1000$.
+
+ The $k$th statement is true exactly when $k+1000\le F$, so precisely the first $F-1000$ statements are true. Therefore,
+ \[F+(F-1000)=2026\implies F=1513.\]The number of true statements is
+ \[F-1000=\boxed{\textbf{(B)}\ 513}.\]
+
+
+
+
+\textbf{Solution 2}
+
+If statement $k$ is true, then statement $k - 1$ is also true, since it makes a weaker claim. So by the same logic, once a statement is false, every statement after it must be false too. This means the first $x$ statements are true and the remaining $2026 - x$ statements are all false.
+
+ Since statement $x$ is true and statement $x + 1$ is false, we conclude that
+ \[x + 1000 = 2026 - x.\]Solving gives $x = \boxed{513}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Notice that we can subtract $1000$ from the conditions listed meaning instead of $2026$ statements we have $1026$ statements. Similarly, the $k$th statement is "The number of false statements in this list is at least $k$". We can now see that by using the first $k$ statements, answer choices $C$, $D$, and $E$ can be eliminated because they are too great and $A$ contradicts itself so the answer is $\boxed{\textbf{(B) } 513}$.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Someone might want to add a bit of clarity; I am not used to making formal proof of logic problems.
+
+ The last statement says $3037$ statements are false. This is obviously false, hence rewind until $k + 1000 = 2026$ so $k = 1026$. This does NOT mean all 1026 are true, in fact, this implies that $1000$ are false.
+
+ Now, since not all 2026 are false (obvious), it follows that through backward induction the statements will continue to be false until when $k = 1026-k$. For those who don't understand,  think of it this way. We guarantee that $1000+k$ for some $k$ is false, and suppose $1 \leq j \leq k$ are all true. It follows $1000+k = 1026-k + 1000$, granting the result. Thus the answer is $\boxed{513}$.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+First, we make a table. We have a column for the assumed number of false statements. We realize that if we have (for example) 1001 false statements, the first statement must be true, and all other 2025 statements must be false. If we have 1002 false statements, the first two statements must be true, and all other 2024 statements must be false. We organize the data into a table, as shown below.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) What is the least positive integer $n$ such that $2026!$ is \textbf{not} a multiple of $2025^n$?
+
+
+ $\textbf{(A) }251 \qquad \textbf{(B) }252 \qquad \textbf{(C) }253 \qquad \textbf{(D) }254 \qquad \textbf{(E) }255$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+We want the smallest positive integer $n$ such that $2025^n$ does not divide $2026!$.
+
+ We have $2025 = 3^4 \cdot 5^2$, so we need at least $4n$ factors of 3 and $2n$ factors of 5 in $2026!$. 
+
+ Using Legendre's formula, for $p = 5$ (we only need to check p = 5 because 2026! has at least twice as many factors of 3 as factors of 5, which covers the 2-to-1 ratio of $4n$ factors of 3 to $2n$ factors of 5
+
+ \begin{align*}v_5(2026!) &= \left\lfloor\frac{2026}{5}\right\rfloor + \left\lfloor\frac{2026}{25}\right\rfloor + \left\lfloor\frac{2026}{125}\right\rfloor + \left\lfloor\frac{2026}{625}\right\rfloor \\[1em]& = 405+81+16+3 = 505.\end{align*}
+
+
+ Now we find the maximum possible exponent.
+
+ Since $2025=3^4\cdot5^2$, we need:
+
+ $4n\leq1010\implies n\leq252.5$
+$2n\leq505\implies n\leq252.5$
+
+ Thus, the largest integer $n$ for which $2025^n$ divides $2026!$ is $252$.
+
+ Consequently, the smallest positive integer for which it does not divide $2026!$ is $\boxed{\textbf{(C) }253}$. -Happymaths-Minor edits by jackhu42\_
+
+ -Major edits by Imperial Films
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Note that $2025 = 45^2 = 3^4 \cdot 5^2$. Using the base-$p$ digit sum form of Legendre's Formula, $v_p(k!) = \frac{k - s_p(k)}{p - 1}$, where $s_p(k)$ is the sum of the base-$p$ digits of $k$.
+
+ Since $2026 = 2025 + 1$, we quickly convert $2026$ into base $3$ and base $5$:
+ \[2026 = 25 \cdot 3^4 + 1 = (2 \cdot 3^2 + 2 \cdot 3 + 1)3^4 + 1 = 2210001_3 \implies s_3(2026) = 2+2+1+1 = 6\]
+ \[2026 = 81 \cdot 5^2 + 1 = (3 \cdot 5^2 + 1 \cdot 5 + 1)5^2 + 1 = 31101_5 \implies s_5(2026) = 3+1+1+1 = 6\]
+
+ Applying the formula gives $v_3(2026!) = \frac{2026 - 6}{3 - 1} = 1010$ and $v_5(2026!) = \frac{2026 - 6}{5 - 1} = 505$. For $2025^n$ to divide $2026!$, we require $4n \le 1010$ and $2n \le 505$, both of which yield $n \le 252.5$. Thus, the maximum possible integer is $n = 252$, making the least positive integer for which it does not divide $\boxed{\textbf{(C) }253}$.
+
+ 
+
+
+
+\textbf{Solution 3}
+
+Since $2026 = 2\cdot 1013$ and $1013$ is prime, $2026$ has no factors of $3$ or $5$. Therefore $v_3(2026!) = v_3(2025!)$ and $v_5(2026!) = v_5(2025!)$, so we only need to work with $2025!$.
+
+ Suppose $N = m\cdot p^k$. For $j \le k$, we have $\left\lfloor \frac{N}{p^j} \right\rfloor = m\cdot p^{k-j}$ exactly, and for $j > k$, we have $\left\lfloor \frac{N}{p^j} \right\rfloor = \left\lfloor \frac{m}{p^{j-k}} \right\rfloor$. The first group of terms is a geometric series and the second group is Legendre's Formula for $m!$, so
+ \[v_p\big((m\cdot p^k)!\big) = m\cdot\frac{p^k-1}{p-1} + v_p(m!).\]
+
+ Since $2025 = 25\cdot 3^4 = 81\cdot 5^2$, we get
+ \[v_3(2025!) = 25\cdot\frac{3^4-1}{2} + v_3(25!) = 1000 + (8+2) = 1010,\]
+ \[v_5(2025!) = 81\cdot\frac{5^2-1}{4} + v_5(81!) = 486 + (16+3) = 505.\]
+
+ Now note that $2025^n = 45^{2n}$, and each factor of $45 = 3^2\cdot 5$ uses two $3$s and one $5$. The $3$s allow $\left\lfloor \frac{1010}{2} \right\rfloor = 505$ factors of $45$, and the $5$s also allow $505$. Thus $45^{505}$ is the largest power of $45$ dividing $2026!$, so $45^{2n}$ divides $2026!$ exactly when $2n \le 505$, or $n \le 252$.
+
+ The least $n$ for which $2026!$ is not a multiple of $2025^n$ is $\boxed{\textbf{(C) }253}$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Interestingly,
+ \[2026=(2210001)_3=(31101)_5.\]Both representations have digit sum $6$.According to the digit-sum form of Legendre's formula, for a prime $p$, the exponent of $p$ in $N!$ is
+ \[v_p(N!)=\frac{N-s_p(N)}{p-1},\]where $s_p(N)$ denotes the digit sum of $N$ in base $p$.Therefore,
+ \[v_3(2026!)=\frac{2026-6}{2}=1010,\]
+ \[v_5(2026!)=\frac{2026-6}{4}=505.\]Since
+ \[2025=3^4\cdot 5^2=45^2,\]the factorial contains exactly $505$ complete factors of $45$.Pairing these factors gives $252$ complete factors of $2025$, with one factor of $45$ remaining.Hence, the least positive integer $n$ for which $2025^n$ does not divide $2026!$ is
+ \[252+1=\boxed{\textbf{(C) }253}.\]
+
+
+
+	\item (\textit{AMC 10 10B 2026}) A jar contains $12$ green marbles and $8$ red marbles. In a game, Anika and Ben take turns drawing a random marble from the jar, with replacement. If Ben ever draws a red marble, he wins, and if Anika ever draws a green marble, she wins. Otherwise, the game continues with the next player's turn. The probability that Ben eventually wins is $A$ if Anika goes first and $B$ if Ben goes first. What is $B - A$?
+
+
+ $\textbf{(A) }\frac{2}{25} \qquad \textbf{(B) }\frac{4}{25} \qquad \textbf{(C) }\frac{4}{19} \qquad \textbf{(D) }\frac{6}{19} \qquad \textbf{(E) }\frac{9}{20}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+With replacement, the jar is unchanged after each draw. If Anika starts, Ben needs her to draw red; if Ben starts, he wins on red and returns to Anika's turn on green. Therefore,
+ \[A=\frac25B,\qquad B=\frac25+\frac35A.\]
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_19_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ Substituting the first equation into the second gives
+ \[B=\frac25+\frac6{25}B \implies B=\frac{10}{19},\qquad A=\frac4{19}.\]Hence,
+ \[B-A=\boxed{\textbf{(D)}\ \frac6{19}}.\]
+
+
+
+
+\textbf{Solution 2}
+
+The chances of drawing a red and green marble are $\frac{2}{5}$ and $\frac{3}{5}$, respectively. Notice that $A$ and $B$ can be calculated as the sum of an infinite geometric sequence, or $\frac{a_1}{1-r}$. Start with the probability $A$. If Anika goes first, there is a $\frac{2}{5}$ chance that she picks red and a $\frac{2}{5}$ chance that Ben picks red, so $a_1$ for $A$ is $\frac{4}{25}$. The common ratio, or $r$ of the probability that the turns will come back to Ben is $\frac{2}{5} \cdot \frac{3}{5}$, or $\frac{6}{25}$. Plugging these 2 values into $\frac{a_1}{1-r}$ gets $A=\frac{4}{19}$. For probability B, $a_1$ is $\frac{2}{5}$ and again, the ratio is $\frac{6}{25}$ so plugging it into $\frac{a_1}{1-r}$ gets $B=\frac{10}{19}$. Subtract $B$ and $A$ to get $B-A=\boxed{\textbf{(D) } \frac{6}{19}}$.
+
+ 
+
+
+
+\textbf{Solution 3 (Probability States)}
+
+At any time, the probability of drawing a red marble is 
+ \[P(\text{red})=\frac{8}{20}=\frac{2}{5}\]And the probability of drawing a green marble is:
+ \[P(\text{green}) = \frac{12}{20}=\frac{3}{5}\]Let $A$ be the probability that Ben wins if Anika goes first. Then $1-A$ must be the probability that Anika wins if she goes first. Now let $B$ be the probability that Ben wins if he goes first. Then $1-B$ must be the probability that Anika wins when Ben goes first. Now we can set up a systems of equations. The probability $B$ that ben wins if he goes first is:
+ \[B=\frac{2}{5}+\frac{3}{5}A\]This is because there is a $\frac{2}{5}$ chance that Ben gets a red marble on the first try, and a $\frac{3}{5}$ chance that it will be Anika's turn next. Therefore, we must multiply the $\frac{3}{5}$ by $A$ because we would then need the probability that Ben wins when Anika goes first, since it would then be Anika's turn.
+
+ The probability of Ben winning on Anika's first turn is:
+ \[A=\frac{2}{5} B\]This is because you need Anika to draw a red marble to make it Ben's turn, and from there it will just be the probability that Ben wins from his first turn, which is just $B$.
+
+ Now we have our systems of equations to solve:
+ \[B=\frac{2}{5}+\frac{3}{5}A\]
+ \[A=\frac{2}{5}B\]
+ \[B=\frac{2}{5}+\frac{3}{5}{\left(\frac{2}{5}B \right)}\]
+ \[\frac{19}{25}B=\frac{2}{5}\]
+ \[B=\frac{10}{19}\]Therefore, $A=\frac{2}{5} \cdot \frac{10}{19}=\frac{4}{19}$. Now we have $A$ and $B$, so we can calculate our final answer and find $B-A$, which gives use $\frac{10}{19}-\frac{4}{19}=\frac{6}{19}$, corresponding to answer choice:
+ \[\boxed{\text{(D) } \frac{6}{19}}\]
+
+
+
+
+\textbf{Solution 4(Estimation)}
+
+$\textbf{Cheese Method}$
+
+ You can realize that $A + B$ is the total probability that Ben can win. By estimating, you realize it should be around $\frac{2}{5}$ because he must draw a red marble to win, and the ratio of red to total marbles is $8$ to $20$. 
+
+ You can list out what $A$ equals:
+ \[A = \frac{8}{20} \cdot \frac{7}{19} + \frac{8}{20} \cdot \frac{12}{19} \cdot \frac{7}{18} \cdot \frac{6}{17} + \dots\]The first product, $\frac{8}{20} \cdot \frac{7}{19}$, is for when Ben wins on his first draw, followed by $\frac{8}{20} \cdot \frac{12}{19} \cdot \frac{7}{18} \cdot \frac{6}{17}$, and so on. The terms after this are very small and thus insignificant, as each fraction is roughly $\frac{1}{2}$, so six terms is approximately $\frac{1}{64}$. 
+
+ For $B$, we have:
+ \[B = \frac{8}{20} + \frac{12}{20} \cdot \frac{8}{19} \cdot \frac{7}{18} + \frac{12}{20} \cdot \frac{8}{19} \cdot \frac{11}{18} \cdot \frac{7}{17} \cdot \frac{6}{16} + \dots\]
+
+ Subtracting gives:
+ \[\left(\frac{8}{20}\right)\left(\frac{12}{19}\right) + \left(\frac{8}{20}\right)\left(\frac{12}{19}\right)\left(\frac{7}{18}\right)\left(\frac{11}{17}\right) + \dots\]One of the options is greater than $\frac{2}{5}$, so we can eliminate that. The first term is $\frac{24}{95}$, which is approximately $\frac{1}{4}$, and the second is close to $\frac{1}{20}$, which gives $\frac{6}{20}$. 
+
+ Therefore, the answer is $\boxed{\textbf{(D) }\frac{6}{19}}$.~Carlmont Hatsune Miku
+
+ 
+
+
+
+\textbf{Solution 5 (Cheese)}
+
+$\textbf{Cheese Method}$
+
+ You can realize that $A+B$ is the total probability that Ben can win. By estimating, you realize it should be around $\frac{2}{5}$ because he must draw a red marble to win and the ratio of red to total is $8$ to $20$. You can list out what $A$ equals. For the first fraction product it is $\frac{8}{20} \cdot \frac{7}{19}$ for when Ben wins on his first draw, then it is $\frac{8}{20} \cdot \frac{12}{19} \cdot \frac{7}{18} \cdot \frac{6}{17}$ and so on. The fractions after this are very small and thus insignificant as each fraction is more or less $\frac{1}{2}$ so six terms is roughly $\frac{1}{64}$. For $B$ we have $\frac{8}{20} + \frac{12}{20} \cdot \frac{8}{19} \cdot \frac{7}{18} + \frac{12}{20} \cdot \frac{8}{19} \cdot \frac{11}{18} \cdot \frac{7}{17} \cdot \frac{6}{16}$ and so on. Subtracting gives $\left(\frac{8}{20}\right)\left(\frac{12}{19}\right) + \left(\frac{8}{20}\right)\left(\frac{12}{19}\right)\left(\frac{7}{18}\right)\left(\frac{11}{17}\right)$ and so on. One of the options is greater than $\frac{2}{5}$ so we can eliminate that. The first fraction is $\frac{24}{95}$ which is approximately $\frac{1}{4}$ and the second is close to $\frac{1}{20}$ which gives $\frac{6}{20}$. So the answer is $\boxed{\textbf{(D) }\frac{6}{19}}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+If Anika goes first, the probability she wins a given round is $\frac{3}{5}$, while the probability Ben wins the round $\frac{2}{5}\cdot\frac{2}{5}=\frac{4}{25}$.  Therefore, the probability that Ben wins the round, given that someone wins it, is $\frac{\frac{4}{25}}{\frac{3}{5}+\frac{4}{25}} = \frac{4}{19}$.  Since rounds where no one wins are ignored, it follows that $A = \frac{4}{19}$.  
+
+ If Ben goes first, the probability he wins a given round is $\frac{2}{5}$, while the probability Anika wins the round is $\frac{3}{5}\cdot\frac{3}{5}=\frac{9}{25}$.  Therefore, the probability that Ben wins the round, given that someone wins it, is $\frac{\frac{2}{5}}{\frac{2}{5}+\frac{9}{25}} = \frac{10}{19}$.  Thus $B = \frac{10}{19}$.
+
+ Therefore, $B-A = \boxed{\textbf{(D) } \frac{6}{19}}$.
+
+ -j314andrews
+
+ 
+
+
+
+\textbf{Solution 7 (Infinite Geometric Series explained in detail)}
+
+Case 1: Anika goes first 
+
+ Then, we consider the probability that Ben wins on his first draw, his second draw, and so on, and sum up all the values. For him to win on his first draw, we must have that Anika fails to draw a green marble, or draws a red marble, which happens with probability $\dfrac{2}{5}$. After that, we also need Ben to draw a red marble, which happens with probability $\dfrac{2}{5}$. Therefore, the probability he wins on his first draw is $\dfrac{2}{5} \cdot \dfrac{2}{5} = \dfrac{4}{25}$, which is our $a$ value.  
+
+ 
+For our $r$ value, we need Ben to have his chance on his second draw. For this to happen, we need Anika to fail on her first draw, Ben to fail on his first draw, Anika to fail on her second draw, and finally for Ben to succeed on his second draw. Anika fails a given draw with probability $\dfrac{2}{5}$, and Ben fails a given draw with probability $\dfrac{3}{5}$, so the probability of Ben winning on his 2nd draw is $\dfrac{2}{5} \cdot \dfrac{3}{5} \cdot \dfrac{2}{5} \cdot \dfrac{2}{5} = \dfrac{24}{625}$. 
+
+ 
+Note how the ratio of Ben winning on his $n$th draw to winning on his $n + 1$th draw is constant, because we can construct Ben losing and Anika losing, giving Ben a second chance, which happens with the same probability each time of $\dfrac{3}{5} \cdot \dfrac{2}{5} = \dfrac{6}{25}$, which is our $r$ value (which can also be found out by dividing our 2 probabilities of Ben winning on his 1st and 2nd draw). Using $\dfrac{a}{1 - r}$ results in $A = \dfrac{4}{19}$
+
+ 
+Case 2: Ben goes first
+
+ Note how the $r$ value would stay the same, because the same thing needs to happen -- Ben fails his $n$th draw, and Anika fails her $n + 1$th draw, so $r = \dfrac{6}{25}$. However, this time, the probability Ben wins immediately or $a$ is $\dfrac{2}{5}$. Using the infinite geometric series, we get that $B = \dfrac{10}{19}$Lastly, $B - A = \dfrac{10}{19} - \dfrac{4}{19} = \boxed{\dfrac{6}{19}} = \boxed{D}$ 
+
+ -- aditya.a
+
+ \textbf{Similar Problems} \href{https://artofproblemsolving.com/wiki/index.php?title=1981\_AHSME\_Problems/Problem\_26}{1981 AHSME \#26}
+
+ \href{https://artofproblemsolving.com/wiki/index.php?title=2015\_AMC\_12B\_Problems/Problem\_9}{2015 AMC 12B \#9}
+
+ \href{https://artofproblemsolving.com/wiki/index.php?title=2017\_AMC\_10A\_Problems/Problem\_18}{2017 AMC 10A \#18}
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Annie, Bobby, and Casey each receive an integer, not necessarily distinct, from $1$ through $10.$ In how many ways can the numbers be given so that their sum is divisible by $7?$
+$\textbf{(A) } 139 \qquad \textbf{(B) } 140 \qquad \textbf{(C) } 142 \qquad \textbf{(D) } 143 \qquad \textbf{(E) } 145$
+
+ \textbf{Answer: }E
+
+
+
+\textbf{Solution 1}
+
+Once two numbers are fixed, exactly one number from $1$ through $7$ makes the sum divisible by $7$.
+
+ Count by the first person, in the order Annie, Bobby, Casey, who receives a number at most $7$. Everyone before that person must receive $8$, $9$, or $10$, so
+ \[\begin{array}{c|c} \text{First such person}&\text{Valid assignments}\\ \hline \text{Annie}&10\cdot10=100\\ \text{Bobby}&3\cdot10=30\\ \text{Casey}&3\cdot3=9 \end{array}\]
+
+ If all three numbers exceed $7$, their sum must be $28$. The only possibilities are permutations of $(8,10,10)$ and $(9,9,10)$, giving $3+3=6$ more assignments.
+
+ Thus the answer is
+ \[100+30+9+6=\boxed{\textbf{(E)}\ 145}.\]
+
+
+
+
+\textbf{Solution 2}
+
+We know the closed form for the sum of geometric series
+ \[\frac{1}{1-x}=\sum_{k=0}^\infty x^k\quad (\lvert x\rvert < 1).\]Differentiating the above equation $n-1$ times on both sides, we have\begin{align*}\frac{(n-1)!}{(1-x)^n}\cdot(-1)^{n-1}\cdot(-1)^{n-1}&=\sum_{k=n-1}^\infty\frac{k!}{(k-n+1)!}\cdot x^{k-n+1}\iff\\\frac{(n-1)!}{(1-x)^n}&=\sum_{k=0}^\infty\frac{(k+n-1)!}{k!}\cdot x^k\iff\\\frac{1}{(1-x)^n}&=\sum_{k=0}^\infty\binom{k+n-1}{n-1}\cdot x^k\tag{1}\end{align*}
+
+
+ It suffices to determine the sum coefficients of $x^7, x^{14}, x^{21}, x^{28}$ of the function
+ \[f(x)=(x+x^2+\ldots+x^{10})^3.\]Simplifying by $(1)$, we see that
+ \[f(x)=\left(\frac{x(1-x^{10})}{1-x}\right)^3=x^3(1-x^{10})^3\sum_{k=0}^\infty\binom{k+2}{2}x^k.\]Or $f(x)=x^3(1-3x^{10}+3x^{20}-x^{30})\sum_{k=0}^\infty\binom{k+2}{2}x^k$.Thus, the sum we are interested in is 
+ \[\binom{6}{2}+\binom{13}{2}-3\cdot\binom{3}{2}+\binom{20}{2}-3\cdot\binom{10}{2}+\binom{27}{2}-3\cdot\binom{17}{2}+3\binom{7}{2}=\boxed{145}\]
+
+
+
+
+\textbf{Solution 3}
+
+Note that the maximum possible sum is $10+10+10=30,$ so sum must be either $7,$ $14,$ $21,$ or $28.$We now proceed with casework based on the sum.
+
+ Case 1: The sum is $7.$ Let $(a,b,c)$ be Annie’s, Bobby’s, and Casey’s numbers, respectively. Notice that for every possible value of $a+b$ between $2$ (the minimum possible value) and $6,$ there is exactly one possible value of $c$ that would make $a+b+c=7.$ We can then find the number of ways to get $a+b$ between $2$ and $7$ (this is easily bashable so we can just bash): $1+2+3+4+5+6=15.$
+
+ Another way is to realize that all numbers are smaller than 10 with stars and bars, so we get $\binom{6}{2}=15$-Happymaths
+
+ Case 2: The sum is $14.$ Using similar logic, we find the number of ways for $a+b$ to be between $4$ and $13:$ 
+ \[3+4+5+6+7+8+9+10+9+8=69.\]
+
+ Case 3: The sum is $21.$ We find the number of ways for $a+b$ to be between $11$ and $20:$ 
+ \[10+9+8+7+6+5+4+3+2+1=\frac{10(10+1)}{2}=55.\]
+
+ Case 4: The sum is $28.$ We find the number of ways for $a+b$ to be between $18$ and $20$ (the maximum possible value of $a+b$): 
+ \[3+2+1=6.\]
+
+ Adding up our cases yields $15+69+55+6=\boxed{\textbf{(E) }145}$.
+
+ -Bocabulary142857
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Assume first that $1 \le c \le 7$. After $a$ and $b$ are picked, there will always be exactly one value of $c$ that can make it sum to a multiple of $7$ (namely, $-a-b \pmod 7$). Therefore this case has $10 \cdot 10=100$ possibilities. Next, we'll assume $c>7$, so $c \pmod 7 \in \{ 1, 2, 3\}$. This implies that $a+b \pmod 7 \in \{ 4, 5, 6\}$. We can do casework on the value of $a$ modulo $7$. Notice that there are $2$ possible numbers that are $1$, $2$, or $3$ mod $7$, and $1$ possible number for every other residue class. 
+
+ Case 1, $a \equiv 0$: There is $1$ value of $a$ with this remainder, and $b$ has remainder $4$, $5$, or $6$, which can be done in $1 \cdot (1+1+1)=3$ ways.
+
+ Case 2, $a \equiv 1$: There are $2$ values of $a$ with this remainder, and $b$ has remainder $3$, $4$, or $5$, which can be done in $2 \cdot (2+1+1)=8$ ways.
+
+ Case 3, $a \equiv 2$: There are $2$ values of $a$ with this remainder, and $b$ has remainder $2$, $3$, or $4$, which can be done in $2 \cdot (2+2+1)=10$ ways.
+
+ Case 4, $a \equiv 3$: There are $2$ values of $a$ with this remainder, and $b$ has remainder $1$, $2$, or $3$, which can be done in $2 \cdot (2+2+2)=12$ ways.
+
+ Case 5, $a \equiv 4$: There is $1$ value of $a$ with this remainder, and $b$ has remainder $0$, $1$, or $2$, which can be done in $1 \cdot (1+2+2)=5$ ways.
+
+ Case 6, $a \equiv 5$: There is $1$ value of $a$ with this remainder, and $b$ has remainder $6$, $0$, or $1$, which can be done in $1 \cdot (1+1+2)=4$ ways.
+
+ Case 7, $a \equiv 6$: There is $1$ value of $a$ with this remainder, and $b$ has remainder $5$, $6$, or $0$, which can be done in $1 \cdot (1+1+1)=3$ ways.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 5}
+
+This is a logical, straightforward approach that is test-realistic.We split up into casework using stars and bars. However, we will have to account for overcounting in some cases.
+
+ $a+b+c=7$ has $\dbinom62=15$ ways.
+
+ $a+b+c=14$ has $\dbinom{13}{2}-3-6=69$ ways, since we exclude the permutations of cases $(12,1,1)$ and $(11,1,2).$
+$a+b+c=21,$ we can list out based on the largest number:
+
+ $\begin{aligned} 10&: (10,10,1),(10,9,2),(10,8,3),(10,7,4),(10,6,5)\\ 9&: (9,9,3),(9,8,4),(9,7,5),(9,6,6)\\ 8&: (8,8,5),(8,7,6)\\ 7&: (7,7,7) \end{aligned}$
+
+ This gives a total of $55$ ways.
+
+ $a+b+c=28,$ we can also list out:
+
+ $(10,10,8),(10,9,9)$ are the only permutations. This gives $6$ ways.
+
+ Our final answer is $15+69+55+6=\boxed{145}$ ways, or choice $\textbf{\text{(E)}.}$
+
+
+
+
+\textbf{Solution 6}
+
+Take the set $\{1, 2, 3, ... , 10\} \pmod{7}$ to get $\{1, 2, 3, 4, 5, 6, 0, 1, 2, 3\}$.Let $A$, $B$, and $C$ be elements of the new set. We want $A+B+C \equiv 0 \pmod{7}$.$A+B+C = 0$ or $7$ or $14$.
+
+ Let $A \leq B \leq C$ then account for ordering.
+
+ Case 1: $A+B+C = 0$
+$(0, 0, 0) \rightarrow 1$ way
+
+ Case 2: $A+B+C = 7$
+$(0, 1, 6) \rightarrow 12$
+$(0, 2, 5)$ or $(1, 1, 5) \rightarrow 12 + 12$
+$(1, 2, 4)$ or $(0, 3, 4) \rightarrow 24 + 12$
+$(1, 3, 3)$ or $(2, 2, 3) \rightarrow 24 + 24$
+
+ Case 3: $A+B+C = 14$
+$(2, 6, 6)$ or $(3, 5, 6)$ or $(4, 4, 6) \rightarrow 6 + 12 + 3$
+$(4, 5, 5) \rightarrow 3$
+
+ Explanation:Normally there are $3!$ ways to order each set. Cases that have multiple of the same number like $(4, 5, 5)$ will only have $\binom{3}{1}$ ways to order the set. For sets with numbers $1$, $2$, or $3$ there are two choices to pick from (1 or 8) (2 or 9) (3 or 10) which adds a factor of $2$. For example, there are $24$ ways to make $(1, 3, 3)$. $2 \cdot 3!$ ways if the two 3’s are different, and $2 \cdot 2 \cdot 3$ ways if the two 3’s are the same. Here are the sets before taking $\pmod{7}$:
+
+ $(1, 3, 3) \rightarrow 3$
+$(1, 3, 10) \rightarrow 6$
+$(1, 10, 10) \rightarrow 3$
+$(8, 3, 3) \rightarrow 3$
+$(8, 3, 10) \rightarrow 6$
+$(8, 10, 10) \rightarrow 3$
+
+ We see that $1 + 12(12) = \boxed{\textbf{(E) }145}$
+
+
+
+
+\textbf{Solution 7 (Count. Them. All.)}
+
+You know what time it is!!there are exactly $\boxed{\textbf{(E) }145}$ triplets that work, here are all of them:
+
+ (1, 2, 4) (1, 4, 2) (2, 1, 4) (2, 4, 1) (4, 2, 1) (4, 1, 2) (1, 3, 3) (3, 1, 3) (3, 3, 1) (2, 2, 3) (2, 3, 2) (3, 2, 2)(1, 1, 5) (1, 5, 1) (5, 1, 1) (9, 4, 1) (9, 1, 4) (1, 4, 9) (1, 9, 4) (4, 9, 1) (4, 1, 9) (8, 5, 1) (8, 1, 5) (1, 5, 8)(1, 8, 5) (5, 8, 1) (5, 1, 8) (7, 6, 1) (7, 1, 6) (1, 6, 7) (1, 7, 6) (6, 1, 7) (6, 7, 1) (9, 3, 2) (9, 2, 3) (2, 3, 9)(2, 9, 3) (3, 9, 2) (3, 2, 9) (8, 4, 2) (8, 2, 4) (2, 4, 8) (2, 8, 4) (4, 8, 2) (4, 2, 8) (7, 5, 2) (7, 2, 5) (2, 5, 7)(2, 7, 5) (5, 7, 2) (5, 2, 7) (6, 6, 2) (6, 2, 6) (2, 6, 6) (8, 3, 3) (3, 8, 3) (8, 3, 3) (7, 4, 3) (7, 3, 4) (3, 4, 7)(3, 7, 4) (4, 7, 3) (4, 3, 7) (6, 5, 3) (6, 3, 5) (3, 5, 6) (3, 6, 5) (5, 6, 3) (5, 3, 6) (6, 4, 4) (4, 6, 4) (4, 4, 6)(5, 5, 4) (4, 5, 5) (5, 4, 5) (9, 9, 3) (9, 3, 9) (3, 9, 9) (9, 8, 4) (9, 4, 8) (4, 8, 9) (4, 9, 8) (8, 9, 4) (8, 4, 9)(9, 7, 5) (9, 5, 7) (5, 7, 9) (5, 9, 7) (7, 9, 5) (7, 5, 9) (9, 6, 6) (6, 9, 6) (6, 6, 9) (8, 8, 5) (8, 5, 8) (5, 8, 8)(8, 7, 6) (8, 6, 7) (6, 7, 8) (6, 8, 7) (7, 6, 8) (7, 8, 6) (10, 3, 1) (10, 1, 3) (3, 1, 10) (3, 10, 1) (1, 3, 10) (1, 10, 3) (10, 2, 2) (2, 10, 2) (2, 2, 10) (10, 9, 2) (10, 2, 9) (2, 9, 10) (2, 10, 9) (9, 10, 2) (9, 2, 10) (10, 8, 3) (10, 3, 8) (3, 8, 10) (3, 10, 8) (8, 3, 10) (8, 10, 3) (10, 7, 4) (10, 4, 7) (4, 7, 10) (4, 10, 7) (7, 4, 10) (7, 10, 4) (10, 6, 5) (10, 5, 6) (5, 6, 10) (5, 10, 6) (6, 10, 5) (6, 5, 10) (10, 9, 9) (9, 10, 9) (9, 9, 10) (10, 10, 1) (10, 1, 10) (1, 10, 10) (10, 10, 8) (10, 8, 10) (8, 10, 10)
+
+ \begin{verbatim}
+and our special guy, $(7, 7, 7)$
+\end{verbatim}
+
+
+ \[Take\] 
+ \[good\] 
+ \[care\] 
+ \[of\] 
+ \[them.\]
+
+
+
+
+\textbf{Solution 8 (Roots of Unity Filter (most optimal))}
+
+Since we are choosing $3$ integers $\in [1,10]$, our generating function is $P(x)=(x+x^2+\dots+x^{10})^3$. Applying the roots of unity filter yields the number of valid triplets as $\frac{1}{7} \cdot \sum_{k=1}^{7} P(\omega^k)$, where $\omega$ is a primitive $7$th root of unity. 
+
+ 
+Substituting, $f(\omega^7)=f(1)=1000$. For $f(\omega')$, where $\omega'=\omega^k$ for some integer $k$, we can simplify the expression as $(\omega+\omega^2+\omega^3)^3$ (since the sum of the $7$th roots of unity is zero by Vieta's formulas). This simplifies to $P(\omega')=7\omega^{'6}+6\omega^{'5}+3\omega^{'4}+\omega^{'3}+\omega^{'2}+3\omega'+6$ (since $\omega^7=1$). 
+
+ 
+Summing across all $6$ of the $7$th primitive roots of unity, this evaluates to $-7-6-3-1-1-3+6\cdot6=15$, since exponentiating all primitive $n$th roots of unity to an integer power that isn't a factor of $n$ simply permutates them, and the sum of all of all $7$ primitive roots of unity is equal to the sum of all $7$ nontrivial roots of unity, which equals $-1$ by Vieta's formulas.
+
+ 
+Therefore, our final answer is $\frac{1}{7} \cdot (1000+15)=\boxed{145}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Rectangle $ABCD$ has $AB = 6$ and $BC = 3$. Inside the rectangle are two congruent semicircles, the first with diameter $\overline{AE}$, where $E$ lies on $\overline{AB}$, and the second with diameter $\overline{CF}$, where $F$ lies on $\overline{CD}$. The two semicircles are tangent at $T$. See the figure.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2026_21_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ What is the radius of the semicircles?
+
+
+ $\textbf{(A) }\frac{13}{8} \qquad \textbf{(B) }\frac{7}{4} \qquad \textbf{(C) }\frac{15}{8} \qquad \textbf{(D) }2 \qquad \textbf{(E) }\frac{17}{8}$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1 (Coordinates)}
+
+The centers are $(r,0)$ and $(6-r,3)$. Setting their distance equal to $2r$ gives $45 = 24r$, so $r =$ $\boxed{\text{(C) } \frac{15}{8}}$.~Kaito4887
+
+ 
+
+
+
+\textbf{Solution 2 (Symmetry and the Diagonal)}
+
+A $180^\circ$ rotation about the rectangle’s center swaps the two semicircles, so $T$ is the midpoint of $AC$. Then $\angle ATE = 90^\circ$ gives $AE = \frac{15}{4}$, so the radius is $\boxed{\text{(C) } \frac{15}{8}}$.~Kaito4887
+
+ 
+
+
+
+\textbf{Solution 3 (Connecting Radii + Right Triangle)}
+
+We first draw the line between the centers of the semi-circles.  Since the semicircles are tangent, this line will pass through the point of tangency and be of length $2r$, where $r$ is the radius of the semicircles.  Drawing the altitude from the center of one semicircle to the opposite side of the rectangle, we have a right triangle composed of lengths $2r$, $6-2r$, and $3$.  We use the Pythagorean Theorem to calculate 
+ \begin{align*}(2r)^2&=(6-2r)^2+(3)^2\\ 4r^{2}&=36-24r+4r^{2}+9\\24r&=45\\r&=\frac{45}{24}=\boxed{\frac{15}{8}}\end{align*}
+
+
+
+
+
+\textbf{Solution 4 (Ruler Bash)}
+
+Use your allotted ruler to make a to-scale drawing. Then, test each answer choice using your compass (or, you could simply measure the side length and figure it out). Therefore, the answer is $\boxed{\text{(C) } \frac{15}{8}}.$
+
+ Remark: By plugging the sum of the lengths of the semicircle, the length of the diagonal comes out to be $\frac{15}{4}$, and knowing the other side is $3=\frac{12}{4}$, it is possible to conclude that the final side length is $\frac{9}{4}$ on the bottom using the fact that the triangle is right and this is a $3-4-5$ pythagorean triple with the scale factor of $\frac{3}{4}$. Adding up the side lengths on the bottom, $\frac{15}{8}+\frac{15}{8}+\frac{9}{4}=2$, proves that my ruler didn't lie. ~Squishy64, who rulerbashed this problem and then checked it using the method in the remark.
+
+ 
+
+
+
+\textbf{Solution 5 (same equation, different triangle than Solution 3)}
+
+Let center of the semicircle with diameter $AE$ be $O$. Let $X$ be the point where the vertical line going through $T$ meets $AB$. We see that $\Delta OXT$ is a right triangle. Let $r$ be the radius. By pythagorean theorem, we get 
+ \[(3-r)^2 + \left(\frac{3}{2}\right)^2 = r^2\] Solve to get $\boxed{\text{(C) } \frac{15}{8}}$.
+
+ 
+
+
+ 
+
+
+
+\textbf{Solution 6}
+
+Let $r$ be the radius of each semicircle, and let $P$ and $Q$ be the centers of the upper and lower semicircles, respectively. Draw altitude $PS$, with $S$ on $BQ$. From the diagram, we get:
+
+ $PQ$ $=$ $2r$
+$PS$ $=$ $3$
+$BS$ $=$ $r$
+$BQ$ $=$ $6 - r$
+
+ Then we get $QS$ $=$ $\sqrt{4r^2 - 9}$. Because $QS$ $+$ $SB$ $=$ $BQ$, we get the equation:
+
+ 
+$\sqrt{4r^2 - 9}$ $+$ $r$ $=$ $6$ $-$ $r$
+
+ 
+Solving, we get $\boxed{\text{(C) } \frac{15}{8}}.$
+
+
+
+
+\textbf{Solution 7 (Similar Triangles)}
+
+Consider the large right triangle $\triangle CBA$. Since $BC = 3$ and $AB = 6 = 2(3)$, its legs are in a $1 : 2$ ratio. By the Pythagorean Theorem, $AC = \sqrt{3^2 + 6^2} = 3\sqrt{5}$, so $\triangle CBA$ is a $1 : 2 : \sqrt{5}$ right triangle ($BC : AB : AC = 1 : 2 : \sqrt{5}$).
+
+ By $180^\circ$ rotational symmetry around the center of rectangle $ABCD$, the two congruent semicircles swap with each other. This means their point of tangency $T$ must lie on diagonal $\overline{AC}$ at its midpoint, giving
+
+ 
+ \[AT = \frac{AC}{2} = \frac{3\sqrt{5}}{2}.\]
+
+ Next, compare $\triangle ATE$ to the large triangle $\triangle CBA$:
+
+ 
+            \begin{itemize}
+        \item Since $\overline{AE}$ is the diameter of the lower semicircle, an angle inscribed in a semicircle is a right angle, so
+            \end{itemize}
+            $\angle ATE = 90^\circ = \angle CBA$.
+
+ 
+            \begin{itemize}
+        \item Both triangles also share $\angle A$ ($\angle EAT = \angle CAB$).
+            \end{itemize}
+            Therefore, $\triangle ATE \sim \triangle CBA$.
+
+ Because the two triangles are similar, $\triangle ATE$ also has side lengths in a $1 : 2 : \sqrt{5}$ ratio ($TE : AT : AE = 1 : 2 : \sqrt{5}$). In $\triangle ATE$, $AT$ is the longer leg (corresponding to $AB$) and $AE$ is the hypotenuse (corresponding to $AC$), so $\frac{AE}{AT} = \frac{\sqrt{5}}{2}$. Multiplying $AT$ by $\frac{\sqrt{5}}{2}$ gives the diameter:
+ \[AE = \frac{3\sqrt{5}}{2} \cdot \frac{\sqrt{5}}{2} = \frac{15}{4}.\]
+
+ Finally, dividing the diameter by $2$ gives the radius of each semicircle:
+
+ 
+ \[r = \frac{15}{4} \div 2 = \boxed{\text{(C) } \frac{15}{8}}.\]
+
+
+
+	\item (\textit{AMC 10 10B 2026}) Belinda follows a path on the plane that is entirely contained within the square region $0 \leq x,y \leq 4.$ Call her path $\textit{dignified}$ if and only if all of the following conditions are satisfied.
+
+
+ 
+            \begin{itemize}
+        \item Each step is one unit up, down, or to the right.
+
+        \item The path does not revisit any vertex.
+
+        \item The path starts at $(a,0)$ and ends at $(b,0)$, where $a$ and $b$ are integers with $a<b$, and touches the $x$-axis only at these two points.
+            \end{itemize}
+            The following figure shows some examples of dignified and not dignified paths.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2026_22_Problem_Figure_1.png}
+                    \end{figure}
+                    
+How many dignified paths can Belinda follow?
+
+
+ $\textbf{(A) } 174\qquad \textbf{(B) } 340\qquad \textbf{(C) } 448\qquad \textbf{(D) } 512\qquad \textbf{(E) }  970$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Let $k=b-a$, so the path has exactly $k$ rightward steps, where $1\le k\le4$.
+
+ Each rightward step has height $1$, $2$, $3$, or $4$. Within any column, reversing vertical direction would revisit a vertex, so these $k$ heights uniquely determine the path. Conversely, any choice of heights gives a valid path: connect consecutive rightward steps vertically, starting and ending on the $x$-axis.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_22_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+ For each $k$, there are $5-k$ choices of the starting column and $4^k$ choices of heights. Thus the total is
+ \[\sum_{k=1}^{4}(5-k)4^k =4\cdot4+3\cdot16+2\cdot64+256 =\boxed{\textbf{(C)}\ 448}.\]
+
+
+
+
+\textbf{Solution 2 (Simpler)}
+
+At some point the x value must increase from 0 to 1, 1 to 2, ..., 3 to 4.since these crossing overs must always occur, and the path up or down will be determined by where these crossing overs occur, we can just calculate how many of these crossing overs happen instead of how many paths there are. If a = 0 and b = 4, then we will have 4 crossing overs, so we will have $4^4=256$ paths. when a = 0 and b = 3 we will have $4^3=64$ paths, and so on. going off of this we find that when a=0, there are a total of $4^4+4^3+4^2+4^1=256+64+16+4=340$ paths. if a = 1 we do the same thing and but start with $4^3$ because when b = 4 (the max), there is a 3 choices of heights instead of 4. So,a = 1: $4^3+4^2+4^1=64+16+4=84$.a = 2: $4^2+4^1=16+4=20$.a = 3: $4^1=4$
+$340+84+20+4=\boxed{\text{(C) }448}$
+
+
+
+	\item (\textit{AMC 10 10B 2026}) The eight vertices of a cube are randomly and independently colored red, white, or blue. What is the expected number of faces of the cube that have at least two blue vertices?
+
+
+ $\textbf{(A) }\frac{16}{27} \qquad \textbf{(B) }2 \qquad \textbf{(C) }\frac{58}{27} \qquad \textbf{(D) }\frac{22}{9} \qquad \textbf{(E) }\frac{212}{81}$
+
+ \textbf{Answer: }D
+
+
+
+\textbf{Solution 1}
+
+By linearity of expectation, the expected number of faces with at least two blue vertices is $6$ times the probability that a single face has at least two blue vertices.
+
+ Each vertex is blue with probability $\frac{1}{3}$ and not blue with probability $\frac{2}{3}$. For a single face with $4$ vertices, we find the probability of having fewer than $2$ blue vertices ($0$ or $1$ blue vertex):
+
+ 
+$P(0 \text{ blue}) = \binom{4}{0} \left(\frac{1}{3}\right)^0 \left(\frac{2}{3}\right)^4 = \frac{16}{81}$
+$P(1 \text{ blue}) = \binom{4}{1} \left(\frac{1}{3}\right)^1 \left(\frac{2}{3}\right)^3 = 4 \cdot \frac{1}{3} \cdot \frac{8}{27} = \frac{32}{81}$
+
+ 
+Subtracting from $1$ gives the probability that a face has at least two blue vertices:
+ \[P(\text{at least } 2 \text{ blue}) = 1 - \left(\frac{16}{81} + \frac{32}{81}\right) = 1 - \frac{48}{81} = \frac{33}{81} = \frac{11}{27}\]
+
+ Multiplying by the $6$ faces of the cube gives the expected value:
+ \[6 \times \frac{11}{27} = \frac{66}{27} = \frac{22}{9}\] $\boxed{D}$-Happymaths
+
+ 
+
+
+
+\textbf{Solution 2}
+
+By linearity of expectation, the answer is $6p$, where $p$ is the probability that a fixed face has at least two blue vertices.
+
+ Walk around the face's four vertices in order and wait for the second blue vertex. The face has at least two blue vertices exactly when the second blue appears at or before the $4$th vertex.
+
+ For the second blue to appear at vertex $j$, vertex $j$ must be blue, exactly one of the first $j-1$ vertices must be blue, and the other $j-2$ must be non-blue. Hence
+ \[P(\text{second blue at vertex } j) = (j-1)\left(\frac{1}{3}\right)^2\left(\frac{2}{3}\right)^{j-2}.\]
+
+ Summing over $j = 2, 3, 4$:
+ \[p = \frac{1}{9} + 2\cdot\frac{1}{9}\cdot\frac{2}{3} + 3\cdot\frac{1}{9}\cdot\frac{4}{9} = \frac{9}{81} + \frac{12}{81} + \frac{12}{81} = \frac{33}{81} = \frac{11}{27}.\]
+
+ Therefore the expected number of faces is
+ \[6\cdot\frac{11}{27} = \boxed{\textbf{(D) }\frac{22}{9}}.\]
+
+
+
+
+\textbf{Solution 3}
+
+Suppose each vertex is distinguishable. We can find the expected value by dividing the total amount of valid pairs by the number of colorings. First, we pick a specific face of the cube. To make it have at least 2 blue vertices, count the valid colorings of its 4 vertices.
+
+ 2 blue: $\binom{4}{2} \times 2^2$ = $6*4$ = $24$
+
+ 3 blue: $\binom{4}{3} \times 2^1$ = $4*2$ = $8$
+
+ 4 blue: $\binom{4}{4} \times 2^0$ = $1*1$ = $1$
+
+ Therefore, there are $24+8+1$ = $33$ ways to color that specific face. The other four vertices on the opposite face can be colored in $3^4$ = $81$ ways.
+
+ Each of the six faces contributes $33*3^4$ valid pairs. Dividing the valid pairs by total colorings gives:
+
+ 
+$\frac{6 \times 33 \times 3^4}{3^8}$ = $\boxed{\textbf{(D) }\frac{22}{9}}$
+
+ \textbf{Youtube Short by SpreadTheMathLove} 
+
+
+	\item (\textit{AMC 10 10B 2026}) Starting with a list of three numbers, form a sequence in which each subsequent term is the average of the previous three terms. For example, starting with the sequence $(2,4,9)$, the next two terms are $\frac{2+4+9}{3} = 5$ and $\frac{4+9+5}{3} = 6$. Which of the following initial three terms will produce a sequence that has the greatest $2026$th term?
+
+
+ $\textbf{(A) }(1,2,3) \qquad \textbf{(B) }(2,1,1) \qquad \textbf{(C) }(3,4,8) \qquad \textbf{(D) }(4,4,7) \qquad \textbf{(E) }(4,5,6)$
+
+ \textbf{Answer: }C
+
+
+
+\textbf{Solution 1}
+
+Averaging preserves inequalities. Since the initial triple in (C) is larger in every position than those in (A) and (B), its sequence stays larger than both.
+
+ For the remaining choices, compute only the third, fourth, and fifth terms:
+ \[\begin{array}{c|ccc} & a_3 & a_4 & a_5\\ \hline \text{(C)} & 8 & 5 & \frac{17}{3}\\ \text{(D)} & 7 & 5 & \frac{16}{3}\\ \text{(E)} & 6 & 5 & \frac{16}{3} \end{array}\]In this three-term window, (C) is at least as large in every position and strictly larger in the last. Its next term is therefore strictly larger, and the same argument repeats forever. Hence its $2026$th term is the greatest:
+ \[\boxed{\textbf{(C)}\ (3,4,8)}.\]
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_24_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+
+
+
+\textbf{Solution 2}
+
+The first three terms of series (E) are all greater than the terms of series (A) and series (B), meaning all subsequent terms are greater in series (E), so you can eliminate them. Series (C), (D), and (E) all have the same sum, so their fourth terms are also equal. Because the sum of the second, third, and fourth terms of series (C) are the greatest among the remaining options, series (C) has the greatest 5th term. Since series (C) has its 3rd, 4th, and 5th terms equal to or greater than series (D)'s and series (E)'s, all subsequent terms of series (C) are greater, you can eliminate them, leaving the only remaining answer choice $\boxed{\textbf{(C)}\ (3, 4, 8)}.$
+
+
+
+
+\textbf{Solution 3}
+
+It is pretty easy to see that the terms get closer to a limiting valueLet the first three terms be $a,b,c$, and let the fourth term be $d=\frac{a+b+c}{3}$.
+
+ Notice that $a+2b+3c$ remains constant.$b+2c+3d =b+2c+3\left(\frac{a+b+c}{3}\right)\\ =a+2b+3c.$
+
+ Since the sequence converges to a limiting value $L$, all terms eventually approach $L$. Therefore,
+
+ $L+2L+3L=a+2b+3c$
+
+ and thus
+
+ $L=\frac{a+2b+3c}{6}$.
+
+ Comparing the limiting values of the five choices,
+
+ 
+ \[\begin{array}{c|c} \text{Choice}&\text{Limiting value}\\ \hline \text{A}&\frac{14}{6}\\ \text{}&\text{}\\ \text{B}&\frac{7}{6}\\ \text{}&\text{}\\ \text{C}&\frac{35}{6}\\ \text{}&\text{}\\ \text{D}&\frac{33}{6}\\ \text{}&\text{}\\ \text{E}&\frac{32}{6} \end{array}\]The largest limiting value is from choice C. Since the sequence converges geometrically, by the $2026$th term, the sequence is sufficiently close to its limit.
+
+ $\boxed{\textbf{(C)}}$- Happymaths
+
+ 
+
+
+
+\textbf{Solution 4(Easiest and Fastest)}
+
+We can see that $C$,$D$, and $E$ have the highest 4th term, which is 5, compared to $A$ and $B$. Then out of $C$,$D$, and $E$, $C$ has the highest 5th term compared to $D$ and $E$ as $C$'s 5th term is $\frac{4+8+5}{3}=\frac{17}{3}$ compared to $D$ and $E$'s 5th term of $\frac{16}{3}$. Since $C$ has the highest head start out of the $5$, and starting with higher numbers will always result in higher averages, the other answer choices can never catch up to $C$, meaning $\boxed{C}$ is the correct answer. 
+
+ -Neo
+
+ 
+
+
+
+\textbf{Solution 5 (Elimination)}
+
+First, we eliminate options by looking at the maximum possible value. Since each term is the average of the previous three terms, every term must not exceed the largest term in the sequence nor dip below the smallest term of the previous 3 terms. Thus, we can find the range of all the sequences.
+
+ $A$: $(1, 3)$
+$B$: $(1, 2)$
+$C$: $(3, 8)$
+$D$: $(4, 7)$
+$E$: $(4, 6)$
+
+ Immediately, we can eliminate $A$ and $B$, since their maximum is already less than the minimums of the other options.
+
+ Next, we continue listing out the sequences for $C$, $D$, and $E$. (rounded to the nearest hundredth)
+
+ $C$: $3, 4, 8, 5, 5.67, 6.22$
+$D$: $4, 4, 7, 5, 5.33, 5.78$
+$E$: $4, 5, 6, 5, 5.33, 5.44$
+
+ From this, we can eliminate $D$ because $(4, 8, 5)$ will always result in a larger average than $(4, 7, 5)$. Finally, $E$ can be eliminated because $(5, 5.67, 6.22)$ will always result in a larger average than $(5, 5.33, 5.44)$.
+
+ This leaves $\boxed{C}$ as our final answer.
+
+ -littlefun
+
+ \textbf{"Solution" 6 (Cheese)} Firstly, it should be clear that a sequence with larger initial values will likely result in a sequence with larger final values. Therefore, we can eliminate choices A and B. Additionally, note that MAA likely included a "trap" method meant to trick students - in this case, both D and E may likely be the result of trying to maximize the arithmetic mean of the first three terms. Additionally, C has the unique property that its last term is the largest out of the 5 answer choices. Therefore, we can guess $\boxed{C}$.
+
+ 
+
+
+	\item (\textit{AMC 10 10B 2026}) Rectangular card $ABCD$ has $AB = 1$ and $AC = 2$. As shown in the figure, a second card, $AEFG$, congruent to the first, is stacked onto it so that $\overline{AG}$ lies on $\overline{AC}$ and the two cards share corner $A$.
+
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Problem/AMC_10_10B_2026_25_Problem_Figure_1.png}
+                    \end{figure}
+                    
+
+
+ Additional cards are added, following the same pattern (with shared corner $A$), creating a fan of cards. The process stops when a new card fits exactly atop $ABCD$. The shape then created is a nonconvex polygon with rotational symmetry. What is the area of this polygon?
+
+
+ $\textbf{(A) }20\sqrt{3}-24\qquad\textbf{(B) }34\sqrt{3}-48\qquad\textbf{(C) }6+3\sqrt{3}\qquad\textbf{(D) }12\qquad\textbf{(E) }8\sqrt{3}$
+
+ \textbf{Answer: }A
+
+
+
+\textbf{Solution 1}
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/AMC_10_10B_2026_25_Solution_Figure_1.png}
+                    \end{figure}
+                    Note that $\triangle CAD$ is a 30-60-90 triangle. Let $H = \overline{BC} \cap \overline{GH}$. Then,$\triangle ADC \sim \triangle CGH$, so 
+ \[[\triangle CGH] = \left(\frac{CG}{AD}\right)^2 [\triangle ADC] = \left(\frac{2-\sqrt{3}}{\sqrt{3}}\right)^2 \cdot \frac{\sqrt{3}}{2} = \frac{7\sqrt{3}-12}{6}\] Therefore, due to the rotational symmetry, the total area of the polygon is 
+ \[12[ADCHG] = 12([\triangle ADC]+[\triangle CGH]) = 12\left( \frac{\sqrt{3}}{2} + \frac{7\sqrt{3} - 12}{6}\right) =  \boxed{\textbf{(A)} 20\sqrt{3} - 24}\]-sillybone
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Since $AB = 1$ and $AC = 2$, we have $BC = \sqrt{3}$ and $\angle CAD = 30^\circ$, so each new card is the previous one rotated $30^\circ$ about $A$. That makes $12$ cards in total.
+
+ Place $A$ at the origin with $B = (1, 0)$, $C = (1, \sqrt{3})$, and $D = (0, \sqrt{3})$. Each card has two "short" edges (like $\overline{BC}$) at distance $1$ from $A$ and two "long" edges (like $\overline{DC}$) at distance $\sqrt{3}$ from $A$, and every edge of the polygon lies on one of these.
+
+ Since the polygon is star-shaped from $A$, we can split it into triangles with apex $A$, one for each side. Each triangle's height is the distance from $A$ to that side, so
+ \[[\text{polygon}] = \frac{1}{2}\sum (\text{side length})\cdot(\text{distance from } A).\]
+
+ Going from $C$ to $F$, the boundary runs down $\overline{BC}$ (the line $x = 1$) to a point $H$, then along $\overline{GF}$ to $F$. Line $GF$ is line $DC$ ($y = \sqrt{3}$) rotated $30^\circ$ clockwise, so its equation is $\frac{1}{2}x + \frac{\sqrt{3}}{2}y = \sqrt{3}$. Setting $x = 1$ gives $H = \left(1,\ 2 - \frac{\sqrt{3}}{3}\right)$. Also $F = (\sqrt{3}, 1)$. Then
+ \[CH = \sqrt{3} - 2 + \frac{\sqrt{3}}{3} = \frac{4\sqrt{3} - 6}{3},\]
+ \[HF = \sqrt{(\sqrt{3}-1)^2 + \left(\frac{\sqrt{3}-1}{\sqrt{3}}\right)^2} = (\sqrt{3}-1)\cdot\frac{2}{\sqrt{3}} = \frac{6 - 2\sqrt{3}}{3}.\]
+
+ By rotational symmetry, the boundary consists of $12$ copies of $\overline{CH}$ (at distance $1$) and $12$ copies of $\overline{HF}$ (at distance $\sqrt{3}$). Therefore
+ \[[\text{polygon}] = \frac{1}{2}\cdot 12\left(1\cdot\frac{4\sqrt{3}-6}{3} + \sqrt{3}\cdot\frac{6-2\sqrt{3}}{3}\right) = 2\left(10\sqrt{3} - 12\right) = \boxed{\textbf{(A) }20\sqrt{3}-24}.\]
+
+
+
+\end{enumerate}

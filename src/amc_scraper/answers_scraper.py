@@ -14,25 +14,29 @@ from .scraper import *
 
 def get_answers_from_url(s,vers,numprob,msg = True) :
     content,problem_title,url = get_soup(s,'a',numprob,msg)
-    
+
     if content is None:
         print(f"Failed to get soup: {url}")
         return None
-    
-    ol_elem = content.find('ol')
-    li_list = ol_elem.find_all('li')
 
+    if s != 'https://artofproblemsolving.com/wiki/index.php?title=2026_AMC_10A' :
+        ol_elem = content.find('ol')
+        li_list = ol_elem.find_all('li')
 
-    if(len(li_list)>=numprob and msg):
-        print_message(f"{problem_title} Answer Key Retrieved")
-
+        if(len(li_list)>=numprob and msg):
+            print_message(f"{problem_title} Answer Key Retrieved")
+    else :
+        li_list = [item.decode_contents().strip()[-1] for item in content.find_all('p') if '.' not in item.decode_contents().strip()[-1]]
     answers = []
     for number,answer in enumerate(li_list):
         ans = dict()
         ans['source'] = url
         ans['version'] = vers
         ans['problem_number'] = number+1
-        ans['answer'] = answer.decode_contents()
+        if s != 'https://artofproblemsolving.com/wiki/index.php?title=2026_AMC_10A' :
+            ans['answer'] = answer.decode_contents()
+        else :
+            ans['answer'] = answer
         answers.append(ans)
     return answers 
 
