@@ -1,5 +1,21 @@
 [
     {
+        "id": "AMC 12 12A 2026",
+        "contest": "AMC 12",
+        "year": "2026",
+        "version": "12A",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2026_AMC_12A"
+    },
+    {
+        "id": "AMC 12 12B 2026",
+        "contest": "AMC 12",
+        "year": "2026",
+        "version": "12B",
+        "number of problems": 25,
+        "source": "https://artofproblemsolving.com/wiki/index.php?title=2026_AMC_12B"
+    },
+    {
         "id": "AMC 12 12A 2025",
         "contest": "AMC 12",
         "year": "2025",
