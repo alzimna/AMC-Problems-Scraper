@@ -7,15 +7,12 @@
                     \end{figure}
                     
 
+            \begin{itemize}
+        \item (a) Suppose that each square of a $4\times 7$ chessboard, as shown above, is colored either black or white. Prove that with \textit{any} such coloring, the board must contain a rectangle (formed by the horizontal and vertical lines of the board such as the one outlined in the figure) whose four distinct unit corner squares are all of the same color.
 
- 
-                \begin{itemize}
-                    \item (a) Suppose that each square of a $4\times 7$ chessboard, as shown above, is colored either black or white. Prove that with \textit{any} such coloring, the board must contain a rectangle (formed by the horizontal and vertical lines of the board such as the one outlined in the figure) whose four distinct unit corner squares are all of the same color.
-\item (b) Exhibit a black-white coloring of a $4\times 6$ board in which the four corner squares of every rectangle, as described above, are not all of the same color.
-                \end{itemize}
-
-
-                
+        \item (b) Exhibit a black-white coloring of a $4\times 6$ board in which the four corner squares of every rectangle, as described above, are not all of the same color.
+            \end{itemize}
+            
 
 
 
@@ -34,10 +31,6 @@ There are many ways to prove the first part, we will show one.
                     \end{figure}
                     
 
- 
-
-
- 
 
 
 
@@ -53,11 +46,8 @@ We will prove the first part by the pigeonhole principle. To form a rectangle, t
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1976_1_Solution_Figure_2.png}
                     \end{figure}
                     
-
- 
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1976\_USAMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1976}) If $A$ and $B$ are fixed points on a given circle and $XY$ is a variable diameter of the same circle, determine the locus of the point of intersection of lines $AX$ and $BY$. You may assume that $AB$ is not a diameter.
@@ -70,8 +60,6 @@ We will prove the first part by the pigeonhole principle. To form a rectangle, t
                     \end{figure}
                     
 
-
- 
 
 
 
@@ -98,7 +86,6 @@ Notice that $m\angle AYP=\frac{1}{2}m\overarc{AB}$ (Inscried angle theorem) and 
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1976\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1976}) Determine all integral solutions of $a^2+b^2+c^2=a^2b^2$.
@@ -124,10 +111,6 @@ Either $a^2=0$ or $a^2>0$. If $a^2=0$, then $b^2=c^2=0$. Symmetry applies for $b
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1976\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- 
-
-
- 
 
 
 	\item (\textit{USAMO 1976}) If the sum of the lengths of the six edges of a trirectangular tetrahedron $PABC$ (i.e., $\angle APB=\angle BPC=\angle CPA=90^o$) is $S$, determine its maximum volume.
@@ -144,8 +127,7 @@ Let the side lengths of $AP$, $BP$, and $CP$ be $a$, $b$, and $c$, respectively.
  Note that $(a-b)^2\geq 0$ implies $\frac{a^2-2ab+b^2}{2}\geq 0$, which means $\frac{a^2+b^2}{2}\geq ab$, which implies $a^2+b^2\geq ab+\frac{a^2+b^2}{2}$, which means $a^2+b^2\geq \frac{(a+b)^2}{2}$, which implies $\sqrt{a^2+b^2}\geq \frac{1}{\sqrt{2}} \cdot (a+b)$. Equality holds only when $a=b$. Therefore
 
  $S\geq a+b+c+\frac{1}{\sqrt{2}} \cdot (a+b)+\frac{1}{\sqrt{2}} \cdot (c+b)+\frac{1}{\sqrt{2}} \cdot (a+c)$
-
- $=(a+b+c)(1+\sqrt{2})$.
+$=(a+b+c)(1+\sqrt{2})$.
 
  $\frac{a+b+c}{3}\geq \sqrt[3]{abc}$ is true from AM-GM, with equality only when $a=b=c$. So $S\geq (a+b+c)(1+\sqrt{2})\geq 3(1+\sqrt{2})\sqrt[3]{abc}=3(1+\sqrt{2})\sqrt[3]{6V}$. This means that $\frac{S}{3(1+\sqrt{2})}=\frac{S(\sqrt{2}-1)}{3}\geq \sqrt[3]{6V}$, or $6V\leq \frac{S^3(\sqrt{2}-1)^3}{27}$, or $V\leq \frac{S^3(\sqrt{2}-1)^3}{162}$, with equality only when $a=b=c$. Therefore the maximum volume is $\frac{S^3(\sqrt{2}-1)^3}{162}$.
 
@@ -165,7 +147,6 @@ Note that by AM-GM
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1976\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1976}) If $P(x)$, $Q(x)$, $R(x)$, and $S(x)$ are all \href{https://artofproblemsolving.com/wiki/index.php?title=Polynomial}{polynomials} such that
@@ -187,7 +168,6 @@ In general we will show that if $m$ is an integer less than $n$ and $P_0, \dotsc
  \[\sum_{k=0}^{m-1} \omega_i^k P_k(\omega_i^n) = \sum_{k=0}^{m-1} \omega_i^k P_k(1) = \sum_{k=0}^{n-1} \omega_i^k S(\omega_i) = \frac{\omega_i^{n-1} - 1}{\omega_i - 1} S(\omega_i) = 0 ,\]for all integers $1 \le i \le n$.  This means that the $(m-1)$th degree polynomial
  \[\sum_{k=0}^{m-1} x^k P_k(1)\]has $n-1 > m-1$ distinct roots.  Therefore all its coefficients must be zero, so $P_k = 0$ for all integers $0 \le k \le m-1$, as desired.  $\blacksquare$
 
- 
 
 
 
@@ -201,7 +181,6 @@ These equations imply that
  \[Q(1) = - (\zeta + \rho)R(1) .\]Since $\xi \neq \rho$, it follows that $Q(1) = R(1) = 0$.  Then, as noted above,
  \[P(1) = P(1) + \zeta Q(1) + \zeta^2 R(1) = 0,\]so $(x-1)$ is a factor of $P(x)$, as desired.  $\blacksquare$
 
- 
 
 
 

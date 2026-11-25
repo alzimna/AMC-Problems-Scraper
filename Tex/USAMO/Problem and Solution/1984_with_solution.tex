@@ -38,7 +38,6 @@ We start as before: $ab=-32$ and $cd=62$. We now observe that a and b must be th
 
  Equating the coefficients of $x^3$ and $x$ with their known values, we are left with essentially the same linear equations as in Solution \#1, which we solve in the same way. Then we compute the coefficient of $x^2$ and get $k=\boxed{86}.$
 
- 
 
 
 
@@ -49,12 +48,9 @@ Let $r_1, r_2, r_3, r_4$ be the roots of the polynomial $x^4 - 18x^3 + kx^2 + 20
  By Vieta's formulas, we have:
 
  $r_1+r_2+r_3+r_4 = 18$
-
- $r_1r_2+r_1r_3+r_1r_4+r_2r_3+r_2r_4+r_3r_4 = k$
-
- $r_1r_2r_3+r_1r_2r_4+r_1r_3r_4+r_2r_3r_4 = -200$
-
- $r_1r_2r_3r_4 = -1984$
+$r_1r_2+r_1r_3+r_1r_4+r_2r_3+r_2r_4+r_3r_4 = k$
+$r_1r_2r_3+r_1r_2r_4+r_1r_3r_4+r_2r_3r_4 = -200$
+$r_1r_2r_3r_4 = -1984$
 
  Since $r_1r_2 = -32$, we have $(-32)r_3r_4 = -1984$, so $r_3r_4 = \frac{-1984}{-32} = 62$.
 
@@ -70,7 +66,6 @@ Let $r_1, r_2, r_3, r_4$ be the roots of the polynomial $x^4 - 18x^3 + kx^2 + 20
 
  Final Answer: The final answer is $\boxed{86}$
 
- 
 
 
 
@@ -82,7 +77,6 @@ Since two of the roots have product $-32,$ the equation can be factored in the f
 Then $c = \frac{-1984}{-32} = 62,$ so $62a - 32b = 200.$ With $a + b = -18,$ we can solve to find $a = -4$ and $b = -14.$ Then
  \[k = ab + c - 32 = \boxed{86}.\]
 
- 
 
 
 
@@ -174,10 +168,8 @@ Greatest value is achieved when all the points are as close as possible to all b
  and the inequality for this problem is:
 
  $0 < \angle APC + \angle BPD < \pi$
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1984\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1984\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
-
- 
 
 
 	\item (\textit{USAMO 1984}) A difficult mathematical competition consisted of a Part I and a Part II with a combined total of $28$ problems. Each contestant solved $7$ problems altogether. For each pair of problems, there were exactly two contestants who solved both of them. Prove that there was a contestant who, in Part I, solved either no problems or at least four problems.
@@ -234,11 +226,14 @@ By Lagrange Interpolation Formula $f(x) = 2\sum_{p=0}^{n}\left ( \prod_{0\leq r\
  Lemma: If $p$ is even  $\binom{p}{0}- \binom{p}{3}+ \binom{p}{6}- \cdots = \frac{2^{p+1}sin^{p}\left ( \frac{\pi}{3} \right )(i)^{p}\left ( cos\left ( \frac{p\pi}{3} \right ) \right )}{3}$
 
  and if  $p$ is odd  $\binom{p}{0}- \binom{p}{3}+ \binom{p}{6}- \cdots = \frac{-2^{p+1}sin^{p}\left ( \frac{\pi}{3} \right )(i)^{p+1}\left ( sin\left ( \frac{p\pi}{3} \right ) \right )}{3}$
+$i$ is $\sqrt{-1}$Using above lemmas we do not get any solution when $n$ is odd, but when $n$ is even $3n+1=13$ satisfies the required condition, hence $n=4$
 
- $i$ is $\sqrt{-1}$Using above lemmas we do not get any solution when $n$ is odd, but when $n$ is even $3n+1=13$ satisfies the required condition, hence $n=4$
 
- 
 
+
+\textbf{Solution}
+
+The (3n+1)th differences of the polynomial are zero. Call it p(x), so we have p(3n+1) - (3n+1)C1 p(3n) + (3n+1)C2 p(3n-1) - ... + (-1)3n+1 p(0) = 0, where rCs is the binomial coefficient. Hence p(3n+1) = 2( (3n+1)C1 - (3n+1)C4 + ... ) + ( (3n+1)C3 - (3n+1)C6 + ... ). Putting n = 1, we get: p(4) = 2( 4C1 - 4C4) + 4C3 = 6 + 4 = 10. So n is not 1. Putting n = 2, we get: p(7) = 2( 7C1 - 7C4 + 7C7) + ( 7C3 - 7C6) = 2( 7 - 35 + 1) + (35 - 7) = -26. So n is not 2. Putting n = 3, we get: p(10) = 2( 10C1 - 10C4 + 10C7 - 10C10) + ( 10C3 - 10C6 + 10C9) = 2(10 - 210 + 120 - 1) + (120 - 210 + 10) = -162 -100 = -262. So n is not 3. Putting n = 4, we get: p(13) = 2( 13C1 - 13C4 + 13C7 - 13C10 + 13C13) + ( 13C3 - 13C6 + 13C9 - 13C12) = 2(13 - 715 + 1716 - 286 + 1) + (286 - 1716 + 715 - 13) = 1458 - 728 = 730. So n = 4 works.
 
  
 

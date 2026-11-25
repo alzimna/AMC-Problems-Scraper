@@ -7,8 +7,6 @@
  \[d_2-d_1 \leq d_3-d_2 \leq \cdots \leq d_k-d_{k-1}.\]
 
 
- 
-
 
 
 \textbf{Solution (Explanation of Video Solution)}
@@ -68,6 +66,34 @@ Let's determine the smallest possible number of elements that appear in at least
  Since there are $\binom{100}{50}$ different ways to choose 50 positions for ones in the signature, and each such signature must correspond to at least 50 elements, the minimum number of elements appearing in at least 50 sets is $50 \binom{100}{50}$.
 
  Therefore, the answer is $\boxed{50 \binom{100}{50}}$.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Given a $T$, let $a_k$ be the intersection set of all elements in $T$, that is, $a_k = \bigcap_{\text{all elements}} T$. Then, $|a_k|$ is the size of the intersection set of $T$. Then, $|T|$ is the number of elements, so $|a_k| = |T|m$ for an integer $m$. Consider the conditional operator $\mathbf{1}: \ \{x \} \rightarrow \{0,1 \}$ if in or not in $S_i$ and $T$ respectively. Then, define an \textit{encoded sequence} to be a string of 100 consisting of some number of 1's and 0's. 
+
+ \textbf{Lemma:} The number of viable \textbf{encoded sequences} is bijective to the problem statement.
+
+ By the statement, if $E$ denotes the \textit{encoded sequence}, then $E(x) = (\{\}_{k=1}^{100} \mathbf{1}_{x \in S_k}) \in \{0,1 \}^{100}$. Define the \textit{support} sequence to be $\operatorname{supp}(E) = \{S_i \ : \ x \in S_i \}$. By convention the correspondence $x \mapsto E(x) \mapsto \operatorname{supp}(E(x))$. We just need to prove $\operatorname{supp}(E(x))$ contains the same number of elements as $T$. 
+
+ Luckily, this correspondence already situates $\{i \ : \ \mathbf{1}_{x \in S_i}  \iff \operatorname{supp}(E(x))$. By definition then the number of ones in $E(x)$ is equivalent to the size of the support of $E(x)$. Thus, if $T$ is our support set, the bijection is developed, that is, $\mathbf{1}(E(x)) = |T|$. 
+
+ The last part is to expand this to what we defined an encoded sequence to be, particularly $x \in \bigcap_{S_i \in T} S_i  \iff T \subseteq \operatorname{supp}(E(x))$ by the definition of $E$. However, we established that because $\mathbf{1}(E(x))= |\operatorname{supp}(E(x))| = |T|$, it is given that $T= \operatorname{supp}(E(x))$, which is what we desired. $\blacksquare$
+
+ \textbf{2024 USAMO P2:}
+
+ In the encoded sequence, we choose 50 to be 1 and the rest 0, in $\binom{100}{50}$ ways.
+
+ At this minimality,  all elements of this set share the support set that contains $\sum \mathbf{1}(x) = 50$. Thus the minimum number of elements in every given passage is 50, yielding the minimalist value $50 \binom{100}{50}$.
+
+ By \textbf{Lemma}, there is a bijection, and thus, the count is $\boxed{50 \binom{100}{50}} \qquad \square$.
+
+ \textbf{Remark:} 
+
+ Solution 1 contains much handwaving and cannot be deemed a proper proof, which is why I created this.
 
  
 

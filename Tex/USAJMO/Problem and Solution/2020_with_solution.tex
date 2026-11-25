@@ -24,10 +24,6 @@ Without loss of generality, let the books have widths and heights of 1, 2, 3,...
 
  From the claim, the ith book must be shorter than the $(i+1)$th book. But since the ith book is also wider by definition (as $f(i)>f(i+1)$), Carl can swap those two books, so he still has legal moves and we arrive at a contradiction, so we are done. $\blacksquare$
 
- 
-
-
- 
 
 
 	\item (\textit{USAJMO 2020}) \textbf{Note:} For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
@@ -112,6 +108,22 @@ Because we defined both M and N to be possible locations for R, $\fbox{R can onl
  
 
 
+
+\textbf{Solution 3}
+
+We establish a complex plane with $\omega$ being the unit circle, where the complex number representing the intersections of $\omega$ and $AB, BC, CA$ are $1,\varepsilon,\varepsilon^2$, respectively ($\varepsilon=e^{i\frac{2\pi}{3}}$). When not specified, we denote $x$ as the corresponding complex number for $\overrightarrow{OX}$, where $O$ is the origin and $X$ is a point. Let $t$ be the complex number representing the tangency point of $\ell$ with $\omega$. We have the equations for the lines:\begin{align*}AB&: z+\overline z = 2\\BC&: z+\varepsilon^2\overline z=2\varepsilon\\CA&: z+\varepsilon\overline z=2\varepsilon^2\\\ell&: z+t^2\overline z=2t\end{align*}
+Note that $a=-2\varepsilon, b=-2\varepsilon^2, c=-2$, and solving for the other variables yields\begin{gather*}p=\frac{2\varepsilon t}{t+\varepsilon},\quad\overline p=\frac{2}{t+\varepsilon}\\q=\frac{2\varepsilon^2t}{t+\varepsilon^2},\quad\overline q=\frac{2}{t+\varepsilon^2}\end{gather*}Since $R$ satisfies $PR=PA$, we have $\lvert r-p\rvert^2=\lvert p-a\rvert^2\iff r\overline r-\overline rp-r\overline p=4-\overline ap-a\overline p$. Similarly,\begin{align*}\lvert r-q\rvert^2=\lvert q-b\rvert^2\iff r\overline r-\overline rq-r\overline q=4-\overline bq-b\overline q\end{align*}
+Subtracting the two equations, we have\begin{align*}(\overline p-\overline q)r+(p-q)\overline r=\overline ap+a\bar p-\bar bq-b\bar q\tag{1}\end{align*}
+where $\bar ap+a\bar p=\bar bq+b\bar q=-4$, and
+ \[\bar p-\bar q=\frac{2\varepsilon(\varepsilon-1)}{(t+\varepsilon)(t+\varepsilon^2)},\quad p-q=\frac{2\varepsilon t^2(1-\varepsilon)}{(t+\varepsilon)(t+\varepsilon^2)}.\]Thus, $(1)$ simplifies to $r=t^2\overline r\iff r\overline t=t\overline r\iff\frac{r}{t}=\frac{\overline r}{\bar t}\iff\frac{r}{t}\in\mathbb{R}$.Let $r=\lambda t$. Substituting, we have $\lambda^2-\lambda(\frac{p}{t}+t\bar p)=8$, or $\lambda^2-2\lambda-8=0$. Hence, the possible values of $r$ are $r=4t$ and $r=-2t$
+
+ Let $t=e^{i\theta}$, and we know that $\theta\in\left(\frac{2\pi}{3},\frac{4\pi}{3}\right)$.
+
+ We construct the circumcircle of $\triangle ABC$ and circle $\Gamma$ with radius $4$ and is concentric with $\omega$. Let $X, Y$ be the intersection of the perpendicular bisector of $BC,CA$ with $\Gamma$. We conclude that the possible locations of $R$ is the arc $\overset{\frown}{AB}$ (excluding the endpoints) and the arc $\overset{\frown}{XY}$ (excluding the endpoints).
+
+ 
+
+
 	\item (\textit{USAJMO 2020}) \textbf{Note:} For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
 
 
@@ -119,14 +131,14 @@ Because we defined both M and N to be possible locations for R, $\fbox{R can onl
 
 
  
-                \begin{itemize}
-                    \item The two $1 \times 1$ faces of each beam coincide with unit cells lying on opposite faces of the cube. (Hence, there are $3 \cdot {2020}^2$ possible positions for a beam.)
-\item No two beams have intersecting interiors.
-\item The interiors of each of the four $1 \times 2020$ faces of each beam touch either a face of the cube or the interior of the face of another beam.
-                \end{itemize}
+            \begin{itemize}
+        \item The two $1 \times 1$ faces of each beam coincide with unit cells lying on opposite faces of the cube. (Hence, there are $3 \cdot {2020}^2$ possible positions for a beam.)
 
+        \item No two beams have intersecting interiors.
 
-                What is the smallest positive number of beams that can be placed to satisfy these conditions?
+        \item The interiors of each of the four $1 \times 2020$ faces of each beam touch either a face of the cube or the interior of the face of another beam.
+            \end{itemize}
+            What is the smallest positive number of beams that can be placed to satisfy these conditions?
 
 
  
@@ -145,7 +157,6 @@ Place the cube in the xyz-coordinate, with the positive x-axis pointing forward,
 
  Thus, we have shown that 3030 beams suffices, so we will now show that 3030 beams is the minimum. Let there be $A$ x-oriented beams, $B$ y-oriented beams, and $C$ z-oriented beams. Now look each $2020 \times 1 \times 2020$ slice of the cube, parallel to the xz-plane. Note there are 2020 such slices. There are two cases. Either $B=2020^2$, or at least one of A or C is nonzero. In the first case, we clearly have at least $2020^2>3030$ beams as desired. In the second case, we must have at least one beam in each $2020 \times 1 \times 2020$ slice, in order to satisfy condition 3. If there is some slice without a beam, then there will be some x- or z-oriented beam with no beams touching its top or bottom face. Additionally, notice that only x- or z-oriented beams can fit in a $2020 \times 1 \times 2020$ slice, so $A+C\geq 2020$. Similarly, we must have $A=2020^2$, $C=2020^2$, or both $A+B\geq 2020$ and $B+C\geq 2020$. In every case, the number of beams, $A+B+C$, will be at least 3030 as desired.$\blacksquare$
 
- 
 
 
 	\item (\textit{USAJMO 2020}) \textbf{Note:} For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.
@@ -168,7 +179,6 @@ Let $G$ be the intersection of $AE$ and $(ABCD)$ and $H$ be the intersection of 
 
  Note that since all cyclic trapezoids are isosceles, $HB = GC$. Since $AB = BC$ and $EB \perp AC$, we know that $EA = EC$, from which we have that $DGCA$ is an isosceles trapezoid and $DA = GC$. It follows that $DA = GC = HB$, so $BHAD$ is an isosceles trapezoid, from which $FB = FD$, as desired. $\blacksquare$
 
- 
 
 
 
@@ -190,7 +200,6 @@ Let $G=\overline{FE}\cap\overline{BC}$, and let $G=\overline{AC}\cap\overline{BE
 
  Thus, $\angle FDB = \angle FBD$, so $\boxed{FB=FD}$ as desired.$\blacksquare$
 
- 
 
 
 
@@ -301,7 +310,6 @@ Call the pair $(i, j)$ good if $1\leq i < j \leq 100$ and $|a_ib_j-a_jb_i|=1$. N
 
  The sequence $(1,1), (1,2), (2,3),\ldots ,(99,100)$ has 197 good pairs - namely, $(1, n)$ is good for all $1<n\leq 100$, and $(i, i+1)$ is good for all $1<i<100$. This adds up for a total of 197 good pairs, so we are done. $\blacksquare$
 
- 
 
 
 

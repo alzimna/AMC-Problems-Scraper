@@ -14,12 +14,9 @@
 \textbf{Solution}
 
 Let $f^r(x)$ denote the result when $f$ is applied to $f^{r-1}(x)$, where $f^1(x)=f(x)$.$\hfill \break \hfill \break$If $f(p)=f(q)$, then $f^2(p)=f^2(q)$ and $f^{f(p)}(p)=f^{f(q)}(q)$
-
- $\implies p^2=f^2(p)\cdot f^{f(p)}(p)=f^2(q)\cdot f^{f(q)}(q)=q^2$
-
- $\implies p=\pm q$
-
- $\implies p=q$ since $p,q>0$.
+$\implies p^2=f^2(p)\cdot f^{f(p)}(p)=f^2(q)\cdot f^{f(q)}(q)=q^2$
+$\implies p=\pm q$
+$\implies p=q$ since $p,q>0$.
 
  Therefore, $f$ is injective. It follows that $f^r$ is also injective.
 
@@ -40,12 +37,9 @@ Proof:
  Let $f(m)=k$. Since $f^2(m)=m$, $f(k)=m$. So, $f^2(k)=k$. $\newline f^2(k)\cdot f^{f(k)}(k)=k^2$.
 
  Since $k\neq0$, $f^{f(k)}(k)=k$
-
- $\implies f^m(k)=k$
-
- $\implies f^{gcd(m, 2)}(k)=k$
-
- $\implies f(k)=k$
+$\implies f^m(k)=k$
+$\implies f^{gcd(m, 2)}(k)=k$
+$\implies f(k)=k$
 
  This proves Lemma 2.
 
@@ -106,7 +100,6 @@ as desired. $\square$
 
  Since $P$ is the isogonal conjugate of $N$, $\measuredangle PEA = \measuredangle MEC = \measuredangle BEN$. However $\measuredangle MEC = \measuredangle BEN$ implies that $M$ is the midpoint of $CD$ from similar triangles, so we are done. $\square$
 
- 
 
 
 
@@ -131,8 +124,7 @@ as desired. $\square$
  \[AB' \cdot AB = AD^2,  \angle ACB = \angle AB'C'.\]
  \[A'= I_\Omega (A), D'= I_\Omega (D), C = I_\Omega (C) \implies\]
  \[BA' \cdot AB = BC^2,  \angle BDA = \angle BA'D'.\]Let $\theta$ be the circle $ABCD.$
-
- $I_\omega (\theta) = B'C'D,$ straight line, therefore 
+$I_\omega (\theta) = B'C'D,$ straight line, therefore 
  \[\angle AB'C' = \angle AB'D' = \angle ACB.\] $I_\Omega (\theta) = A'D'C,$ straight line, therefore
  \[\angle BA'D' = \angle BA'C = \angle BDA.\]$ABCD$ is cyclic $\implies \angle BA'C = \angle AB'D.$
  \[AB' + BA' = \frac {AD^2 + BC^2 }{AB} = AB \implies\] points $A'$ and $B'$ are coincide.
@@ -142,13 +134,45 @@ as desired. $\square$
  Suppose, we move point $Q$ from $A$ to $B.$ Then $\angle AQD$ decreases monotonically, $\angle BQC$ increases monotonically. So, there is only one point where 
  \[\angle AQD = \angle BQC \implies P = Q.\]
 
- 
  \[B = I_\omega (P), D' = I_\omega (D'), C' = I_\omega (C), A = I_\omega (\infty) \implies\]$\hspace{19mm} I_\omega (CD'P) = AC'D'B$ is cyclic.
  \[\angle ACD = \angle ABD = \angle CC'D \implies C' D' || CD \implies\]$\hspace{19mm} C'D'CD$ is  trapezoid.
 
  It is known that the intersection of the diagonals, intersection point of the lines containing the lateral sides of the trapezoid and the midpoints of two parallel sides are collinear.
 
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
+
+ 
+
+
+
+\textbf{Solution 3 (Only Simple Concepts, w/ Video)}
+
+This solution is divided into two parts: proving that $P = Q$, and proving that $Q$, $E$, and $M$ are collinear.
+
+ \textbf{Part 1}
+
+ Denote by $\Omega$ the circumcircle of $ABC$, $\omega$ the circle with diameter $AB$, $\alpha$ the circle with center $A$ and radius $AD$, and $\beta$ the circle with center $B$ and radius $BD$. Denote by $S \neq C$ the intersection between $\Omega$ and $\beta$ and $T \neq D$ the intersection between $\Omega$ and $\alpha$.
+
+ The two points of intersection between $\alpha$ and $\beta$ are symmetric about $\omega$, and if we let one of them be $X$, we have that\begin{align*}AX^2 + BX^2 = AD^2 + BC^2 = AB^2\end{align*}
+so $\angle AXB = \frac{\pi}{2}$ by Pythagorean's Theorem and so $X$ lies $\omega$. In other words, $\omega$, $\alpha$, and $\beta$ concur on the two symmetric points and the three circle's radical axes are all $AB$.
+
+ Denote by $Q$ the intersection between $DT$ and $AB$. Since $DT$ is the radical axis of $\Omega$ and $\alpha$, $Q$ has equal powers to $\Omega$, $\alpha$, and hence all four circles. Thus, $Q$ is the radical center of the four circles and hence it also lies on $CS$, the radical axis of $\Omega$ and $\beta$.
+
+ To prove that $P = Q$, as $P$'s angle condition makes it unique on the line $AB$, it suffices to show that\begin{align*}\angle AQD = \angle BQC \\\\\Longleftrightarrow \angle QAD + \angle QDA = \angle QBC + \angle QCB \\\\\Longleftrightarrow \angle BAD + \angle ADT = \angle ABC + \angle BCS \\\\\Longleftrightarrow \angle BAD + \angle ABD = \angle ABC + \angle BAC \\\\\Longleftrightarrow \angle ADB = \angle ACB\end{align*}
+
+
+ \textbf{Part 2}
+
+ Let $K = DT \cap AC$, $L = CS \cap DB$, and $M' = QE \cap DC$. By Ceva's theorem on triangle $QDC$,\begin{align*}\frac{CM'}{M'D} * \frac{DK}{KQ} * \frac{QL}{LC} = 1\end{align*}
+Since we want $M' = M$, which is equivalent to $\frac{CM'}{M'D} = 1$. It suffices to show\begin{align*}\frac{DK}{KQ} =  \frac{CL}{LQ}\end{align*}
+It is well known by Law of Sines on triangle $AQD$ and $BQC$ that\begin{align*}\frac{DK}{KQ} = \frac{\sin \angle DAK}{\sin \angle KAQ} * \frac{AD}{AQ} \\\\\frac{CL}{LQ} = \frac{\sin \angle CBL}{\sin \angle LBQ} * \frac{BC}{BQ}\end{align*}
+Equating the two expressions, we now want to show that\begin{align*}\frac{\sin \angle DAK}{\sin \angle KAQ} * \frac{AD}{AQ} = \frac{\sin \angle CBL}{\sin \angle LBQ} * \frac{BC}{BQ} \\\\\Longleftrightarrow \frac{AD}{AQ * BC} = \frac{BC}{BQ * AD} \\\\\Longleftrightarrow \frac{AQ}{AD^2} = \frac{BQ}{BC^2} \\\\\Longleftrightarrow \frac{AQ}{AX^2} = \frac{BQ}{BX^2}\end{align*}
+
+
+ We are now looking at the right triangle $XBQA$, in which we can let $\angle XBA = \angle ABQ = \theta$. Then, the expression simplifies to\begin{align*}\Longleftrightarrow \frac{\sin \theta}{AX} = \frac{cos \theta}{BX} \\\\\Longleftrightarrow \tan \theta = \frac{AX}{BX}\end{align*}
+
+
+ QED.
 
  
 
@@ -246,7 +270,6 @@ Therefore $b_{ij}, a_{i(j+1)}$ is a permutation of $a_{ij}, b_{(i+1)j}$ for $i <
  In total, there are $(2n)(2n-1)\cdots (n+1)$ ways to find $C_0$ and for each $C_{j}$ there are $2^n(n-j+1)$ ways for $1 \le j \le n$. So the answer is, 
  \[\frac{2n!}{n!}(2^nn)(2^{n}(n-1)) \cdots (2^{n}1) = \boxed{2^{n^2} \cdot (2n)!}.\]
 
- 
 
 
 	\item (\textit{USAMO 2019}) \textbf{Note:} For any geometry problem whose statement begins with an asterisk $(*)$, the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction.

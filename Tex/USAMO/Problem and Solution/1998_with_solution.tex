@@ -72,8 +72,6 @@ Prove that
  \[\tan a_0\tan a_1 \cdots \tan a_n\geq n^{n+1}.\]
 
 
- 
-
 
 
 \textbf{Solution}
@@ -81,12 +79,12 @@ Prove that
 Let $y_i = \tan{\left(a_i - \dfrac{\pi}{4}\right)}$, where $0 \leqslant i \leqslant n$. Then we have:
 
  
-                \begin{itemize}
-                    \item $y_0 + y_1 + \cdots + y_n \geqslant n - 1$,\item $1 + y_i \geqslant \sum_{j \neq i}{(1 - y_j)}$,\item $\frac{1 + y_i}{n} \geqslant \frac{1}{n}\sum_{j \neq i}{(1 - y_j)}$.
-                \end{itemize}
-
-
-                By AM-GM:
+            \begin{itemize}
+        \item $y_0 + y_1 + \cdots + y_n \geqslant n - 1$,
+        \item $1 + y_i \geqslant \sum_{j \neq i}{(1 - y_j)}$,
+        \item $\frac{1 + y_i}{n} \geqslant \frac{1}{n}\sum_{j \neq i}{(1 - y_j)}$.
+            \end{itemize}
+            By AM-GM:
 
  
  \begin{align*} \frac{1}{n}\sum_{j \neq i}{(1 - y_j)} &\geqslant \prod_{j \neq i}{(1 - y_j)^{\frac{1}{n}}} \\ \frac {1 + y_i}{n} &\geqslant \prod_{j \neq i}{(1 - y_j)^{\frac{1}{n}}} \\ \prod_{i = 0}^n\frac{1 + y_i}{n} &\geqslant \prod_{i = 0}^{n} {\prod_{j \neq i}{(1 - y_j)}^{\frac{1}{n}}} \\ \prod_{i = 0}^n\frac{1 + y_i}{n} &\geqslant \prod_{i = 0}^n{(1 - y_i)} \\ \prod_{i = 0}^n\frac{1 + y_i}{1 - y_i} &\geqslant \prod_{i = 0}^n{n} \\ \prod_{i = 0}^n\frac{1 + y_i}{1 - y_i} &\geqslant n^{n + 1}. \end{align*}
@@ -99,7 +97,6 @@ Let $y_i = \tan{\left(a_i - \dfrac{\pi}{4}\right)}$, where $0 \leqslant i \leqsl
 
  So $\prod_{i = 0}^n{\frac{1 + y_i}{1 - y_i}} = \tan{(a_0)}\tan{(a_1)} \cdots \tan{(a_n)} \geqslant n^{n + 1}$, as desired. $\blacksquare$
 
- 
 
 
 	\item (\textit{USAMO 1998}) A computer screen shows a $98 \times 98$ chessboard, colored in the usual way. One can select with a mouse any rectangle with sides on the lines of the chessboard and click the mouse button: as a result,  the colors in the selected rectangle switch (black becomes white, white becomes black). Find, with proof, the minimum number of mouse clicks needed to make the chessboard all one color.

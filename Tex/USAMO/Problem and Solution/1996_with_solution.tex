@@ -13,7 +13,6 @@ First, as $180\sin{180^\circ}=0,$ we omit that term. Now, we multiply by $\sin 1
 
  $\Box$
 
- 
 
 
 
@@ -24,7 +23,6 @@ Notice that for every $n\sin n^\circ$ there exists a corresponding pair term $(1
 
  $\Box$
 
- 
 
 
 
@@ -77,7 +75,6 @@ We know that the average of a list of numbers is the sum of all the terms, divid
 
  Now we notice that we have $\cos 1^\circ$ on both sides. Thus we can subtract $\cos 1^\circ$ from both sides to get $- \cos 89^\circ + \sin 1^\circ = 0$. Now we can add $\cos 89^\circ$ to both sides and get $\sin 1^\circ = \cos 89^\circ$. Now we also know that $\sin (\omega)^\circ = \cos(90-\omega)$. Thus we know that $\sin 1^\circ = \cos 89^\circ$. Hence, our proof is complete. $\square$
 
- 
 
 
 	\item (\textit{USAMO 1996}) For any nonempty set $S$ of real numbers, let $\sigma(S)$ denote the sum of the elements of $S$. Given a set $A$ of $n$ positive integers, consider the collection of all distinct sums $\sigma(S)$ as $S$ ranges over the nonempty subsets of $A$.  Prove that this collection of sums can be partitioned into $n$ classes so that in each class, the ratio of the largest sum to the smallest sum does not exceed 2.
@@ -185,14 +182,14 @@ Clearly, $\angle AMB = 150^\circ$ and $\angle AMC = 110^\circ$. Now by the Law o
 
  
 
- By the law of sines, $\frac{BM}{sin(10^\circ)}=\frac{AM}{sin(20^\circ)}$ and $\frac{CM}{sin(40^\circ)}=\frac{AM}{sin(30^\circ)}$, so $\frac{BM}{CM}=\frac{sin(10^\circ)sin(30^\circ)}{sin(20^\circ)sin(40^\circ)}$.
+ By the law of sines, $\frac{BM}{\sin(10^\circ)}=\frac{AM}{\sin(20^\circ)}$ and $\frac{CM}{\sin(40^\circ)}=\frac{AM}{\sin(30^\circ)}$, so $\frac{BM}{CM}=\frac{\sin(10^\circ)\sin(30^\circ)}{\sin(20^\circ)\sin(40^\circ)}$.
 
- Let $\angle MBC=x$. Then, $\angle MCB=80^\circ-x$. By the law of sines, $\frac{BM}{CM}=\frac{sin(80^\circ-x)}{sin(x)}$.
+ Let $\angle MBC=x$. Then, $\angle MCB=80^\circ-x$. By the Law of Sines, $\frac{BM}{CM}=\frac{\sin(80^\circ-x)}{\sin(x)}$.
 
- Combining, we have $\frac{sin(80^\circ-x)}{sin(x)}=\frac{sin(10^\circ)sin(30^\circ)}{sin(20^\circ)sin(40^\circ)}$. From here, we can use the given trigonometric identities at each step:
+ Combining, we have $\frac{\sin(80^\circ-x)}{\sin(x)}=\frac{\sin(10^\circ)\sin(30^\circ)}{\sin(20^\circ)\sin(40^\circ)}$. From here, we can use the given trigonometric identities at each step:
 
  
- \begin{align*} \frac{sin(80^\circ-x)}{sin(x)}&=\frac{sin(10^\circ)sin(30^\circ)}{sin(20^\circ)sin(40^\circ)}\\ sin(80^\circ-x)sin(20^\circ)sin(40^\circ)&=sin(10^\circ)sin(30^\circ)sin(x)\\ sin(80^\circ-x)sin(20^\circ)sin(40^\circ)&=\frac{1}{2}sin(10^\circ)sin(x)&[sin(30^\circ)=1/2]\\ sin(80^\circ-x)sin(30^\circ-10^\circ)sin(30^\circ+10^\circ)&=\frac{1}{2}sin(10^\circ)sin(x)\\ sin(80^\circ-x)(cos^2(10^\circ)-cos^2(30^\circ))&=\frac{1}{2}sin(10^\circ)sin(x)&[sin(A-B)sin(A+B)=cos^2 B-cos^2 A]\\ sin(80^\circ-x)(cos^2(10^\circ)-\frac{3}{4})&=\frac{1}{2}sin(10^\circ)sin(x)&[cos(30^\circ)=\frac{\sqrt{3}}{2}]\\ sin(80^\circ-x) \frac{4cos^3(10^\circ)-3cos(10^\circ)}{4cos(10^\circ)}&=\frac{1}{2}sin(10^\circ)sin(x)\\ sin(80^\circ-x) \frac{cos(30^\circ)}{4cos(10^\circ)}&=\frac{1}{2}sin(10^\circ)sin(x)&[cos(3A)=4cos^3 A-3cos A]\\ sin(80^\circ-x)cos(30^\circ)&=2sin(10^\circ)cos(10^\circ)sin(x)\\ sin(80^\circ-x)cos(30^\circ)&=sin(20^\circ)sin(x)&[sin(2A)=2sin A cos A ]\\ sin(80^\circ-x)sin(60^\circ)&=sin(20^\circ)sin(x)&[cos(30^\circ)=sin(60^\circ)]\\ \frac{1}{2}(cos(20^\circ-x)-cos(140^\circ-x))&=\frac{1}{2}(cos(20^\circ-x)-cos(20^\circ+x))&[sin A sin B=\frac{1}{2}(cos(A-B)-cos(A+B))]\\ cos(140^\circ-x)&=cos(20^\circ+x) \end{align*}
+ \begin{align*} \frac{\sin(80^\circ-x)}{\sin(x)}&=\frac{\sin(10^\circ)\sin(30^\circ)}{\sin(20^\circ)\sin(40^\circ)}\\ \sin(80^\circ-x)\sin(20^\circ)\sin(40^\circ)&=\sin(10^\circ)\sin(30^\circ)\sin(x)\\ \sin(80^\circ-x)\sin(20^\circ)\sin(40^\circ)&=\frac{1}{2}\sin(10^\circ)\sin(x)&[\sin(30^\circ)=1/2]\\ \sin(80^\circ-x)\sin(30^\circ-10^\circ)\sin(30^\circ+10^\circ)&=\frac{1}{2}\sin(10^\circ)\sin(x)\\ \sin(80^\circ-x)(\cos^2(10^\circ)-\cos^2(30^\circ))&=\frac{1}{2}\sin(10^\circ)\sin(x)&[\sin(A-B)\sin(A+B)=\cos^2 B-\cos^2 A]\\ \sin(80^\circ-x)(\cos^2(10^\circ)-\frac{3}{4})&=\frac{1}{2}\sin(10^\circ)\sin(x)&[\cos(30^\circ)=\frac{\sqrt{3}}{2}]\\ \sin(80^\circ-x) \frac{4\cos^3(10^\circ)-3\cos(10^\circ)}{4\cos(10^\circ)}&=\frac{1}{2}\sin(10^\circ)\sin(x)\\ \sin(80^\circ-x) \frac{\cos(30^\circ)}{4\cos(10^\circ)}&=\frac{1}{2}\sin(10^\circ)\sin(x)&[\cos(3A)=4\cos^3 A-3\cos A]\\ \sin(80^\circ-x)\cos(30^\circ)&=2\sin(10^\circ)\cos(10^\circ)\sin(x)\\ \sin(80^\circ-x)\cos(30^\circ)&=\sin(20^\circ)\sin(x)&[\sin(2A)=2\sin A \cos A ]\\ \sin(80^\circ-x)\sin(60^\circ)&=\sin(20^\circ)\sin(x)&[\cos(30^\circ)=\sin(60^\circ)]\\ \frac{1}{2}(\cos(20^\circ-x)-\cos(140^\circ-x))&=\frac{1}{2}(\cos(20^\circ-x)-\cos(20^\circ+x))&[\sin A \sin B=\frac{1}{2}(\cos(A-B)-\cos(A+B))]\\ \cos(140^\circ-x)&=\cos(20^\circ+x) \end{align*}
 
 
  The only acute angle satisfying this equality is $x=60^\circ$. Therefore, $\angle ACB=80^\circ-x+30^\circ=50^\circ$ and $\angle BAC=10^\circ+40^\circ=50^\circ$. Thus, $\triangle ABC$ is isosceles.

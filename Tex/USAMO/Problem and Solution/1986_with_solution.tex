@@ -64,8 +64,6 @@ We shall assume to the contrary that there was never a time when three mathemati
  \[\left[\frac{a_1^2 + a_2^2 + \cdots + a_n^2}n\right]^{1/2}\]
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -114,7 +112,14 @@ Let's first obtain an algebraic expression for the root mean square of the first
 
 \textbf{Solution}
 
-<i>This problem needs a solution. If you have a solution for it, please help us out by \href{https://artofproblemsolving.com/wiki/index.php?title=1986\_USAMO\_Problems/Problem\_4&action=edit}{adding it}.</i> 
+Extend line $AP$ to meet $K_1$ again at $M$. Draw perpendicular from $M$ onto $AB$ and let it intersect $K_1$ again at $N$. Let $\ell_1$ denote the perpendicular from $P$ onto $AB$ and let $P'=AN \cap \ell_1$ (Note that: $P, P'$ are reflections of each other with respect to $AB$). Draw a line $\ell_2$ perpendicular to $\ell_1$ at $P'$ and let $\ell_2$ intersect $K_2$ at $Z$ such that $A, Z$ are on the same side of $\ell_2$. Let $X = PZ \cap AB$. Draw a line $\ell_3$ perpendicular to $AB$ at $X$ meeting $K_1$ at $C, D$. We claim we found points $C, D$ with $\angle CPD = 90^\circ$.
+
+ We will prove that the construction works: 
+
+ Note that: $P, P'$ are reflections of each other with respect to $AB$. Thus: $P, P', Z$ have same perpendicular distance from line $AB$. Note: $PX=XZ$ and $XC=XD$. 
+
+ Due to Power of Point: 
+ \[PX^2 = PX \cdot XZ = AX \cdot XB = CX \cdot XD = XC^2.\] Thus: $XP=XC=XD$ with $X, C, D$ are collinear. Thus: $P$ lies on the circle with diameter $CD$ or $\angle CPD = 90^\circ$.
 
  
 
@@ -153,7 +158,6 @@ Let $S(n) = \sum\limits_{\pi} A(\pi)$ and let $T(n) = \sum\limits_{\pi} B(\pi).$
 
  Consider the power series $G(x)=(x+2x^2+3x^3+4x^4+\ldots)F(x).$
 
- 
  \begin{align*} G(x) &= (x+2x^2+3x^3+4x^4+\ldots)(c_0+c_1x+c_2x^2+c_3x^3+\ldots)\\ &= x(1+2x+3x^2+4x^3+\ldots) \prod\limits_{i=2}^{\infty}\frac{1}{1-x^i}\\ &= x\cdot\frac{1}{(1-x)^2} \prod\limits_{i=2}^{\infty}\frac{1}{1-x^i}\\ &= \frac{x}{1-x} \prod\limits_{i=1}^{\infty}\frac{1}{1-x^i} \end{align*}
 
 
@@ -177,7 +181,6 @@ Let $S(n) = \sum\limits_{\pi} A(\pi)$ and let $T(n) = \sum\limits_{\pi} B(\pi).$
 
  Consider the power series $H(x)=(x+x^2+x^3+x^4+\ldots)P(x).$
 
- 
  \begin{align*} H(x) &= (x+x^2+x^3+x^4+\ldots)(d_0+d_1x+d_2x^2+d_3x^3+\ldots) \\ &= x(1+x+x^2+x^3+\ldots) \prod\limits_{i=1}^{\infty} \frac{1}{1-x^i}\\ &= x\cdot \frac{1}{1-x}\prod\limits_{i=1}^{\infty} \frac{1}{1-x^i}\\ &= \frac{x}{1-x} \prod\limits_{i=1}^{\infty} \frac{1}{1-x^i} \end{align*}
 
 

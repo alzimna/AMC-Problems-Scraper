@@ -26,7 +26,6 @@ We define a remainder operation $\,a \bmod b\,$ to be the remainder when $a$ is 
 
  As $n$ grows large, $\bigl\lfloor n / 2^{\,k-1}\bigr\rfloor$  becomes arbitrarily big, so each digit $a_i$ eventually exceeds any fixed $d.$  Hence there exists an integer $N$ such that for all odd $n > N,$ the digits $a_i$ in the base-$(2n)$ representation of $n^k$ are all $> d.$
 
- 
 
 
 	\item (\textit{USAMO 2025}) Let $n$ and $k$ be positive integers with $k<n$. Let $P(x)$ be a polynomial of degree $n$ with real coefficients, nonzero constant term, and no repeated roots. Suppose that for any real numbers $a_0,\,a_1,\,\ldots,\,a_k$ such that the polynomial $a_kx^k+\cdots+a_1x+a_0$ divides $P(x)$, the product $a_0a_1\cdots a_k$ is zero. Prove that $P(x)$ has a nonreal root.
@@ -84,7 +83,6 @@ For the sake of contradiction, assume all roots of $P(x)$ are real. Then, there 
 
  Because no such $k$ exists, no such subset of $k$ roots can exist, and therefore no such polynomial $Q(x)$ can exist, which implies no such $P(x)$ can exist, and therefore it follows $P(x)$ has at least one nonreal root, and so the proof is complete. $\square$
 
- 
 
 
 	\item (\textit{USAMO 2025}) Alice the architect and Bob the builder play a game. First, Alice chooses two points $P$ and $Q$ in the plane and a subset $\mathcal{S}$ of the plane, which are announced to Bob. Next, Bob marks infinitely many points in the plane, designating each a city. He may not place two cities within distance at most one unit of each other, and no three cities he places may be collinear. Finally, roads are constructed between the cities as follows: for each pair $A,\,B$ of cities, they are connected with a road along the line segment $AB$ if and only if the following condition holds:
@@ -106,7 +104,8 @@ Alice has a winning strategy: Choose $\mathcal S$ to be the set of of points str
 
  
             \begin{enumerate}
-                \item No roads cross, and\item All cities are connected.
+        \item No roads cross, and
+        \item All cities are connected.
             \end{enumerate}
             We first prove (1). Suppose for the sake of contradiction that there are roads between $A$ and $C$ and between $B$ and $D$, and that these roads cross. Then $ABCD$ is a convex quadrilateral, because its diagonals intersect. Now, recall our condition for the existence of roads between $A$ and $C$ and between $B$ and $D$: We must have that the angles $\angle ABC$, $\angle BCD$, $\angle CDA$, and $\angle DAB$ are all acute. Because $ABCD$ is a convex quadrilateral, these angles are the interior angles. Then the sum of the interior angles of $ABCD$ is less than $360^\circ$, a contradiction with the fact that the sum of the interior angles of a quadrilateral is always $360^\circ$. $\rightarrow \leftarrow$
 
@@ -209,11 +208,147 @@ Let Q be the antipode of B. Claim — AHQC is a parallelogram, and AP CQ is an i
  
 
 
+
+\textbf{Solution 6}
+
+Quick angle chasing gives $\angle FAP = \angle BCF = \angle BCP = \alpha$. Let $O$ be the circumcenter of $\triangle AFP$.  
+
+ Thus $\angle FOP= 2 \angle FAP = 2\alpha$ (because O and A lie on the same side of segment $AF$).
+
+ As $\angle FOP = \angle FCP = 2 \alpha$, the quadrilateral FOCP is cyclic.
+
+ Observe that $2\angle FPO = 180-2\alpha$, so $\angle FPO = 90^{\circ} - \alpha$.
+
+ From the properties of cyclic quadrilaterals, $\angle FCO = \angle FPO$
+
+ Thus $\angle BCO = \angle BCF + \angle FCO = \alpha + (90^{\circ} - \alpha) =90^{\circ}$.Therefore $OC$ is perpendicular to chord $XY$, $XC=CY$.
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2025_4_Solution_Figure_1.png}
+                    \end{figure}
+                    
+
+
+
+\textbf{Solution 7}
+
+(Point P is labeled J in the diagram oops)
+
+ Let the line perpendicular to $BC$ and going through $C$ be line $l$. Let the midpoint of $AF$ be $M$, and let the line perpendicular to $AF$ and going through $M$ be line $n$. Let $O$ be the intersection of $l$ and $n$, and let $D$ be the intersections of $n$ and $AH$.
+
+ Because $AH\parallel l$ and $CF\parallel n$, $CODH$ is a parallelogram. From this, we get $OC=DH$. Looking at triangle $\triangle{FAP}$, because $n\parallel HF$, and $M$ is the midpoint of $AF$, it is clear that $D$ is the midpoint of $AH$.
+
+ Let the intersection of $HP$ and $BC$ be $Z$. $PZ=ZH$ because $P$ is a reflection of $H$ across $BC$.$AP=AH+HP=2DH+2PZ$
+
+ Substituting the equation from earlier, we get$AP=2OC+2PZ$
+
+ Let line $OI$ be perpendicular to $OC$ through $O$, and point $I$ lies on $AP$.
+
+ $BC\parallel OI$ since they are perpendicular to the same line. 
+
+ Similarily, $AP\parallel OC$. This means $OCZI$ is a rectangle. 
+
+ Therefore $IZ=OC$. 
+
+ $IP=IZ+PZ$
+
+ By substitution, $IP=OC+PZ$
+$2IP=(2OC)+(2PZ)=(AD+DH)+(HZ+PZ)=AP$
+
+ Since $2IP=AP$, $I$ is the midpoint of $AP$
+
+ This means $OI$ is the perpendicular bisector of $AP$, and because $AP$ is a chord of the circumcircle of $\triangle{FAP}$, $OI$ goes through the center of the circle. 
+
+ By the same logic, $n$ also goes through the center of the circle, which implies the center of the circle is $O$. 
+
+ Because $O$ is on line $OC$ and $OC\perp BC$, line $OC$ must bisect the chord of circle $O$ that lies on line $BC$. In other words, $OC$ must perpendicularly bisect $XY$. This means $C$ is the midpoint of $XY$.
+
+ -Nolan Lin
+
+ 
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2025_4_Solution_Figure_2.png}
+                    \end{figure}
+                    
+
+
+
+\textbf{Solution 8 (fast, similar to Solution 7)}
+
+Construct the point $O$ such that $OC\perp BC$ and $OC=AH/2$.
+
+ Claim 1: $O$ passes through the perpendicular bisector of $AP$. Let $N$ be the foot of the altitude from $O$ to $AP$ and $D$ be the foot of the altitude from $A$ to $BC$. Indeed, we have $2NP=2(ND+DP)=2(\frac{AH}{2}+DP)=AH+HP=AP$.
+
+ Claim 2: $O$ passes through the perpendicular bisector of $AF$. Let the perpendicular bisector of $AF$ intersect $AH$ at $K$ and the line passing through $C$ perpendicular to $BC$ at $O'$. Clearly, $O'CHK$ is a parallelogram, so $O'C=HK=\frac{AH}{2}$. Thus, $O'=O$.
+
+ Hence, $O$ is the unique circumcenter of $\triangle AFP$ and has the property that $OC\perp BC$. Combined, this means that $OX=OY$, as desired.
+
+ 
+
+
+
+\textbf{Solution 9}
+
+We proceed with complex numbers. Let the circumcenter be the origin and circumradius = $1$.
+
+ $B=b, C=\frac{1}{b}, A = a, F = \frac{1}{2}(a+b+\frac{1}{b}-ab^2), P = -\frac{1}{a}$
+
+ We claim that the circumradius of $\triangle AFP$ is $O=\frac{\frac{1}{b}-b}{2}$
+
+ It is easy to check the distances are the same (divide the two relative vectors, check that the inverse conjugates are equal).
+
+ Now, $O-C$ is real, and $\overline{BC}$ is a vertical line, meaning that $\overline{OX}=\overline{OY}$. Thus, we are done.
+
+ Note that the hard part of the solution was finding the center. Without it, one would have to shift the coordinate system such that $C$ is the origin and show that the circumcenter is purely real using the circumcenter formula.
+
+ 
+
+
+
+\textbf{Solution 10 (zero iq)}
+
+Unlike my previous solution, this is a no iq complex bash.
+
+ We proceed with complex numbers. Let the circumcenter be the origin and circumradius = $1$.
+
+ $B=b, C=\frac{1}{b}, A = a, F = \frac{1}{2}(a+b+\frac{1}{b}-ab^2), P = -\frac{1}{a}$
+
+ Now shift the coordinate system by $C$.
+
+ $C=0, A=a-\frac{1}{b}, F = \frac{a+b-\frac{1}{b}-ab^2}{2}, P=-\frac{1}{a}-\frac{1}{b}$
+
+ We aim to prove that the circumcenter of $\triangle AFP$ is purely real. That is, in the circumcenter formula, we can take the conjugate and it won't change the location. Note that the denominator in the circumcenter formula is simply negated by conjugation. Therefore, we aim to prove:
+
+ 
+$\det(\begin{bmatrix} A+\bar{A}& A\bar{A} & 1\\ F+\bar{F}& F\bar{F} & 1\\ P+\bar{P}&P\bar{P}&1 \end{bmatrix})=0$
+
+ 
+Now we begin the long journey of simplification
+
+ $\det(\begin{bmatrix} a+\frac{1}{a}-b-\frac{1}{b}& 2-ab-\frac{1}{ab} & 1\\ 2(a+\frac{1}{a}-ab^2-\frac{1}{ab^2})& 4+ab^3+\frac{1}{ab^3}-2ab-\frac{2}{ab}+\frac{b}{a}+\frac{a}{b}-2b^2-\frac{2}{b^2}& 4\\ -a-\frac{1}{a}-b-\frac{1}{b}&2+\frac{a}{b}+\frac{b}{a}&1 \end{bmatrix})$
+$\det(\begin{bmatrix} a+\frac{1}{a}-b-\frac{1}{b}& 2-ab-\frac{1}{ab} & 1\\ 2(a+\frac{1}{a}-ab^2-\frac{1}{ab^2})& 4+ab^3+\frac{1}{ab^3}-2ab-\frac{2}{ab}+\frac{b}{a}+\frac{a}{b}-2b^2-\frac{2}{b^2}& 4\\ -2a-\frac{2}{a}&ab+\frac{1}{ab}+\frac{a}{b}+\frac{b}{a}&0 \end{bmatrix})$
+$\det(\begin{bmatrix} a+\frac{1}{a}-b-\frac{1}{b}& 2-ab-\frac{1}{ab} & 1\\ 2(-a-\frac{1}{a}-ab^2-\frac{1}{ab^2}+2b+\frac{2}{b})& -4+ab^3+\frac{1}{ab^3}+2ab+\frac{2}{ab}+\frac{b}{a}+\frac{a}{b}-2b^2-\frac{2}{b^2}& 0\\ -2a-\frac{2}{a}&ab+\frac{1}{ab}+\frac{a}{b}+\frac{b}{a}&0 \end{bmatrix})$
+$\det(\begin{bmatrix} -a-\frac{1}{a}-ab^2-\frac{1}{ab^2}+2b+\frac{2}{b}& -4+ab^3+\frac{1}{ab^3}+2ab+\frac{2}{ab}+\frac{b}{a}+\frac{a}{b}-2b^2-\frac{2}{b^2}&\\ -a-\frac{1}{a}&ab+\frac{1}{ab}+\frac{a}{b}+\frac{b}{a} \end{bmatrix})$
+$\det(\begin{bmatrix} -ab^2-\frac{1}{ab^2}+2b+\frac{2}{b}& -4+ab^3+\frac{1}{ab^3}+ab+\frac{1}{ab}-2b^2-\frac{2}{b^2}&\\ -a-\frac{1}{a}&ab+\frac{1}{ab}+\frac{a}{b}+\frac{b}{a} \end{bmatrix})$
+$2$nd column becomes $2$nd column plus $b$ times the first column:
+
+ 
+$\det(\begin{bmatrix} -ab^2-\frac{1}{ab^2}+2b+\frac{2}{b}& -2+\frac{1}{ab^3}+ab-\frac{2}{b^2}&\\ -a-\frac{1}{a}&\frac{1}{ab}+\frac{a}{b} \end{bmatrix})$
+$2$nd column becomes $2$nd column plus $\frac{1}{b}$ times the first column:
+
+ $\det(\begin{bmatrix} -ab^2-\frac{1}{ab^2}+2b+\frac{2}{b}& 0&\\ -a-\frac{1}{a}&0 \end{bmatrix})$
+
+ The determinant is obviously $0$, so we have proven the problem (clearly this brainless strategy was a lot more tedious than guessing the circumcenter. However, if one really manages to guess the circumcenter, a synthetic solution would finish it off a lot cleaner than the complex proof).
+
+ 
+
+
 	\item (\textit{USAMO 2025}) Determine, with proof, all positive integers $k$ such that
  \[\frac{1}{n+1} \sum_{i=0}^n \binom{n}{i}^k\]is an integer for every positive integer $n.$
 
-
- 
 
 
 
@@ -274,7 +409,6 @@ Let
 
  $A_k(n)\in\mathbb Z\text{ for all }n\ge1\iff k\text{ even.}$
 
- 
 
 
 	\item (\textit{USAMO 2025}) Let $m$ and $n$ be positive integers with $m\geq n$. There are $m$ cupcakes of different flavors arranged around a circle and $n$ people who like cupcakes. Each person assigns a nonnegative real number score to each cupcake, depending on how much they like the cupcake. Suppose that for each person $P$, it is possible to partition the circle of $m$ cupcakes into $n$ groups of consecutive cupcakes so that the sum of $P$'s scores of the cupcakes in each group is at least $1$. Prove that it is possible to distribute the $m$ cupcakes to the $n$ people so that each person $P$ receives cupcakes of total score at least $1$ with respect to $P$.
@@ -289,30 +423,22 @@ Let
 Arbitrarily pick any one person — call her Pip — and her $n$ arcs. The initial idea is to try to apply Hall’s marriage lemma to match the $n$ people with Pip’s arcs (such that each such person is happy with their matched arc). To that end, construct the obvious bipartite graph $\mathcal{G}$ between the people and the arcs for Pip. We now consider the following algorithm, which takes several steps.  
 
  
-                \begin{itemize}
-                    \item If a perfect matching of $\mathcal{G}$ exists, we’re done!
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item We’re probably not that lucky. Per Hall’s condition, this means there is a \textit{bad} set $\mathcal{B}_1$ of people, who are compatible with fewer than $|\mathcal{B}_1|$ of the arcs. Then delete $\mathcal{B}_1$ and the neighbors of $\mathcal{B}_1$, then try to find a matching on the remaining graph.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If a matching exists now, terminate the algorithm. Otherwise, that means there’s another \textit{bad} set $\mathcal{B}_2$ for the remaining graph. We again delete $\mathcal{B}_2$and the fewer than $\mathcal{B}_2$ neighbors.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item Repeat until some perfect matching $\mathcal{M}$ is possible in the remaining graph, i.e. there are no more bad sets (and then terminate once that occurs).
-                \end{itemize}
-
-
-                Since Pip is a universal vertex, it’s impossible to delete Pip, so the algorithm does indeed terminate with nonempty $\mathcal{M}$. 
+            \begin{itemize}
+        \item If a perfect matching of $\mathcal{G}$ exists, we’re done!
+            \end{itemize}
+            
+            \begin{itemize}
+        \item We’re probably not that lucky. Per Hall’s condition, this means there is a \textit{bad} set $\mathcal{B}_1$ of people, who are compatible with fewer than $|\mathcal{B}_1|$ of the arcs. Then delete $\mathcal{B}_1$ and the neighbors of $\mathcal{B}_1$, then try to find a matching on the remaining graph.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If a matching exists now, terminate the algorithm. Otherwise, that means there’s another \textit{bad} set $\mathcal{B}_2$ for the remaining graph. We again delete $\mathcal{B}_2$and the fewer than $\mathcal{B}_2$ neighbors.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item Repeat until some perfect matching $\mathcal{M}$ is possible in the remaining graph, i.e. there are no more bad sets (and then terminate once that occurs).
+            \end{itemize}
+            Since Pip is a universal vertex, it’s impossible to delete Pip, so the algorithm does indeed terminate with nonempty $\mathcal{M}$. 
 
  A cartoon of this picture is shown below.
 
@@ -392,7 +518,6 @@ If the jury scores a cupcake $\geq 1$ for all cupcakes then for all the $c$ cupc
 
  By \textbf{Lemma 2}, there will always exist a configuration of cupcakes and people who love cupcakes who can score and partition given the constraint held true in \textbf{Lemma 1} such that they each have a cupcake scored greater than or equal to 1. $\square$
 
- 
 
 
 \end{enumerate}

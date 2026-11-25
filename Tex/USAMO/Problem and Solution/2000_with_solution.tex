@@ -95,6 +95,23 @@ Assume, for contradiction, that $f:\mathbb{R}\to\mathbb{R}$ satisfies
  Therefore no function $f:\mathbb{R}\to\mathbb{R}$ satisfies
  \[\frac{f(x)+f(y)}{2}\geq f\!\left(\frac{x+y}{2}\right)+|x-y| \qquad \text{for all } x,y\in\mathbb{R}.\]
 
+
+
+
+\textbf{Solution 5}
+
+Let $x=a-h, y=a+h,$ where $a,h>0$. For a \textit{very convex} function $f$, it follows that\begin{equation}f(a+h)+f(a-h)-2f(a)\ge 4h\tag{1}\end{equation}Let $D_{h}(t)=f(t+h)-f(t)$. We have $D_{h}(a)\ge D_{h}(a-h)+4h$. 
+
+ Consider a positive integer $N$ and let $h=\frac{1}{N}$. For $k\in\{0,1,\ldots, N-1\}$, we define
+ \[D_{k}=f((k+1)h)-f(kh)\]We get $D_k\ge D_0+4kh$ by the above inequality. Hence\begin{align*}f(1)-f(0)&=\sum_{k=0}^{N-1}D_k\\&\ge \sum_{k=0}^{N-1}D_0+4kh\\&=ND_0+2(N-1)\end{align*}
+Or $D_0\le -2+\frac{f(1)-f(0)+2}{N}$. We see that $f(h)-f(0)=D_0\le -2+\frac{f(1)-f(0)+2}{N}\quad (2)$. 
+
+ Note that $g(x)=f(-x)$ satisfies
+ \[\frac{g(x)+g(y)}{2}=\frac{f(-x)+f(-y)}{2}\ge f\left(\frac{(-x)+(-y)}{2}\right)+\lvert x-y\rvert =g\left(\frac{x+y}{2}\right)+\lvert x-y\rvert,\]which means $g(x)$ is \textit{very convex} too. We obtain $f(-h)-f(0)\le -2+\frac{f(-1)-f(0)+2}{N}$. Adding $(2)$ yields\begin{align*}f(h)+f(-h)-2f(0)\le -4+\frac{f(1)+f(-1)-2f(0)+4}{N}\tag{3}\end{align*}
+However, by $(1)$, the given property of a \textit{very convex} function,
+ \[f(h)+f(-h)-2f(0)\ge 4h=\frac{4}{N}\]Along with the upper bound of the same expression obtained from $(3)$, let $C=f(1)+f(-1)-2f(0)$, we have
+ \[\frac{4}{N}\le -4+\frac{4+C}{N}\iff\frac{C}{N}\ge 4\]In this regard, having an arbitrarily large $N$-value results in a contradiction. Hence, no such \textit{very convex} $f$ exists, as desired.
+
  
 
 
@@ -146,7 +163,6 @@ Note that $(*)$ is homogeneous in $x,y,z$, so without loss of generality, scale 
 
  Then $s = x+y+z = 9x$, and $s-a = x, s-b = 4x, s-c = 4x$ yields $a:b:c = 8:5:5$. Thus, we have proved that all possible ABC are isosceles (as b = c), and that they are similar to a 5-5-8 triangle.$\blacksquare$
 
- 
 
 
 
@@ -244,8 +260,6 @@ I claim that we can color at minimality 1999 squares and end up with one triangl
 	\item (\textit{USAMO 2000}) Let $A_1A_2A_3$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Triangle}{triangle} and let $\omega_1$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Circle}{circle} in its plane passing through $A_1$ and $A_2.$ Suppose there exist circles $\omega_2, \omega_3, \dots, \omega_7$ such that for $k = 2, 3, \dots, 7,$ $\omega_k$ is externally \href{https://artofproblemsolving.com/wiki/index.php?title=Tangent\_(geometry)}{tangent} to $\omega_{k - 1}$ and passes through $A_k$ and $A_{k + 1},$  where $A_{n + 3} = A_{n}$ for all $n \ge 1$. Prove that $\omega_7 = \omega_1.$
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -285,12 +299,6 @@ Using the collinearity of certain points and the fact that $A_k A_{k+1} O_k$ is 
  
  \[\sum_{i, j = 1}^{n} \min\{a_ia_j, b_ib_j\} \le \sum_{i, j = 1}^{n} \min\{a_ib_j, a_jb_i\}.\]
 
-
- 
-
-
-
- 
 
 
 
@@ -393,7 +401,6 @@ WLOG let both sequences be increasing. Furthermore allow the sequence $a_i \leq 
 
  as desired. $\square$
 
- 
 
 
 \end{enumerate}

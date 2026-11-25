@@ -6,6 +6,18 @@
  
 
 
+
+\textbf{Solution 2}
+
+We proceed with induction. Base case: $a=b=1$. We fill in a 3x3 grid that has at least one bronze and one amber cell. We choose one bronze and one amber cell. Note that if the given bronze and amber cells are not in the same row or column, we are done. However, if they are, consider a cell that is not in the same row or column as either cell. Regardless of the color of the cell, we can match it with an opposing color cell, hence proved. 
+
+ Induction case: Given the assertion for $(a, b)$ is true, then $(a+1, b)$ is true as well.Label each cell in the $(a+b+1)(a+b+1)$ grid as either red, blue, or white. There must be exactly $a^2+ab-b$ red cells, $b^2+ab-a$ blue cells, and $(a+b+1)(a+b+1)-(a^2+ab-b)-(b^2+ab-a) = 3(a+b) + 1$ white cells. We show that we can achieve a combination regardless of the amber/bronze of the white cells.
+
+ Case 1: There are three or more white cells present in either the bottommost row or rightmost column.Let's ignore the bottom most row and rightmost column, and focus on the $(a+b+1)(a+b+1)$ grid of squares on the topleft. By the induction assumption, we know that this grid must have $a$ amber and $b$ bronze not in the same row or column pairwise. [cont]
+
+ 
+
+
 	\item (\textit{USAMO 2022}) Let $b\geq2$ and $w\geq2$ be fixed integers, and $n=b+w$. Given are $2b$ identical black rods and $2w$ identical white rods, each of side length 1.
 
 
@@ -70,8 +82,6 @@ Pick a pair of parallel sides of the regular $2n$-gon and flip their color. Let 
 
  \[f(x) = f(f(f(x)) + y) + f(xf(y)) f(x+y).\]
 
-
- 
 
 
 
@@ -152,12 +162,12 @@ Since $q(p-1)$ is a perfect square and $q$ is prime, we should have $p - 1 = qb^
  \[p = \frac{a^2b^2 - 1}{b^2 - 1} = a^2 + \frac{a^2 - 1}{b^2 - 1}\]and so $b^2 - 1 | a^2 - 1$. We run through the cases
 
  
-                \begin{itemize}
-                    \item $a = 1$: Then $p - q = 1$ so $(p, q) = (3, 2)$, which works.\item $a = b$: This means $p = a^2 + 1$, so $q = 1$, a contradiction.\item $a > b$: This means that $b^2 - 1 < ab - 1$. Since $b^2 - 1$ can be split up into two factors $F_1, F_2$ such that $F_1 | ab - 1$ and $F_2 | ab + 1$, we get
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item $a = 1$: Then $p - q = 1$ so $(p, q) = (3, 2)$, which works.
+        \item $a = b$: This means $p = a^2 + 1$, so $q = 1$, a contradiction.
+        \item $a > b$: This means that $b^2 - 1 < ab - 1$. Since $b^2 - 1$ can be split up into two factors $F_1, F_2$ such that $F_1 | ab - 1$ and $F_2 | ab + 1$, we get
+            \end{itemize}
+            
  \[p = \frac{ab - 1}{F_1} \cdot \frac{ab + 1}{F_2}\]and each factor is greater than $1$, contradicting the primality of $p$.
 
  Thus, the only solution is $(p, q) = (3, 2)$.
@@ -170,8 +180,7 @@ Since $q(p-1)$ is a perfect square and $q$ is prime, we should have $p - 1 = qb^
 
 Let $p-q = a^2$, $pq - q = b^2$, where $a, b$ are positive integers. $b^2 - a^2 = pq - q - (p-q) = pq -p$. So,
  \[b^2 - a^2 = p(q-1) \tag{1}\]
-
- $\bullet$ For $q=2$, $p = b^2 - a^2 = (b-a)(b+a)$. Then $b-a=1$ and $b+a=p$. $a=\dfrac{p-1}{2}$ and $p-q = a^2$. Thus, $p - 2 = \left( \dfrac{p-1}{2} \right)^2 \implies p^2 - 6p + 9 = 0$ and we find $p=3$. Hence $(p,q) = (3,2)$.
+$\bullet$ For $q=2$, $p = b^2 - a^2 = (b-a)(b+a)$. Then $b-a=1$ and $b+a=p$. $a=\dfrac{p-1}{2}$ and $p-q = a^2$. Thus, $p - 2 = \left( \dfrac{p-1}{2} \right)^2 \implies p^2 - 6p + 9 = 0$ and we find $p=3$. Hence $(p,q) = (3,2)$.
 
  
 $\bullet$ For $q=4k+3$, ($k\geq 0$ integer), by $(1)$, $p(4k+2) = b^2 - a^2$. Let's examine in $\mod 4$, $b^2 - a^2 \equiv 2 \pmod{4}$. But we know that $b^2 - a^2 \equiv 0, 1 \text{ or } 3 \pmod{4}$. This is a contradiction and no solution for $q = 4k + 3$.
@@ -214,8 +223,6 @@ We claim that the only solution is $(p,q) = (3,2)$. First, this clearly works, s
  \[f_1(n) + f_2(n) + \cdots + f_k(n) = x_n\qquad \text{for every } n= 1,2,\ldots 2022.\]
 
 
- 
-
 
 
 \textbf{Solution}
@@ -223,49 +230,34 @@ We claim that the only solution is $(p,q) = (3,2)$. First, this clearly works, s
 
  \[\textbf{Answer: } k = 1011.\]
 
- 
  \[\textbf{Explanation:}\]
 
- 
  \[\text{A function } f:\mathbb{R}\to\mathbb{R} \text{ is essentially increasing if } f(s)\le f(t) \text{ whenever } s\le t \text{ and } f(s)\ne 0,\, f(t)\ne 0.\]
 
- 
  \[\text{We want the smallest } k \text{ such that for any } x_1,\dots,x_{2022}, \text{ we can write }\]
 
- 
  \[f_1(n)+f_2(n)+\cdots+f_k(n)=x_n \quad \text{for all } n.\]
 
- 
  \[\textbf{Lower bound:}\]
 
- 
  \[\text{Consider } x_1 > x_2 > \cdots > x_{2022}.\]
 
- 
  \[\text{Each essentially increasing function can contribute nonzero values}\]
 
- 
  \[\text{on at most 2 positions (otherwise monotonicity is violated).}\]
 
- 
  \[\Rightarrow k \ge \left\lceil \frac{2022}{2} \right\rceil = 1011.\]
 
- 
  \[\textbf{Upper bound:}\]
 
- 
  \[\text{Group indices as } (1,2), (3,4), \dots, (2021,2022).\]
 
- 
  \[\text{For each pair, define one function that matches } x_{2i-1}, x_{2i}\]
 
- 
  \[\text{and is zero elsewhere. This satisfies the condition.}\]
 
- 
  \[\Rightarrow k \le 1011.\]
 
- 
 
 
 	\item (\textit{USAMO 2022}) There are 2022 users on a social network called Mathbook, and some of them are Mathbook-friends. (On Mathbook, friendship is always mutual and permanent.)

@@ -133,8 +133,7 @@ Given three angles that add to $180^\circ$, one can construct a triangle from th
  Let us suppose that $(x,y,z)$ is the selection of $x,y,z$ given the above constraints with the largest value of $\sin (x) + \sin (y) + \sin (z)$. We shall see that, given these constraints, this value increases when the distance between two of these variables decreases, and it is maximized when $x=y=z$.
 
  $\textbf{Lemma:}$ If $f(x)$ is well-behaved and $f'(x)$ is strictly decreasing over an open interval $(a, b)$, then, for any $x,y$ selected from that interval with $x \ne y$, then $2f\left(\frac{x + y}{2}\right) > f(x) + f(y).$
-
- $\textbf{Proof of lemma:}$ It is true that, for any well-behaved function $f(x)$, $f(x+d) = f(x) + \int_{x}^{x+d} f'(u)\,du$, and likewise, $f(x-d) = f(x) - \int_{x-d}^x f'(u)\,du$. Without loss of generality, suppose $x < y$; let $d = \frac{1}{2}(y-x)$.  Since $f'(u)$ is given to be strictly decreasing over the relevant interval, we have $f'(u) > f'(x+d)$ for all $u\in(x, x+d)$; therefore
+$\textbf{Proof of lemma:}$ It is true that, for any well-behaved function $f(x)$, $f(x+d) = f(x) + \int_{x}^{x+d} f'(u)\,du$, and likewise, $f(x-d) = f(x) - \int_{x-d}^x f'(u)\,du$. Without loss of generality, suppose $x < y$; let $d = \frac{1}{2}(y-x)$.  Since $f'(u)$ is given to be strictly decreasing over the relevant interval, we have $f'(u) > f'(x+d)$ for all $u\in(x, x+d)$; therefore
  \[f(x+d) = f(x) + \int_x^{x+d} f'(u)\,du > f(x) + \int_x^{x+d} f'(x+d)\,du = f(x) + d\cdot f'(x+d)\]Likewise, $f'(u) < f'(y-d)$ for all $u\in(y-d, y)$; therefore
  \[f(y-d) = f(y) - \int_{y-d}^y f'(u)\,du > f(y) - \int_{y-d}^y f'(y-d)\,du = f(y) - d\cdot f'(y-d)\]Therefore, adding our inequalities together,
  \[f(x+d) + f(y-d) > f(x) + d\cdot f'(x+d) + f(y) - d\cdot f'(y-d)\]But $x+d = y-d = \frac{x+y}{2}$. In that case, the $d\cdot f'(x+d)$ and $-d\cdot f'(y-d)$ terms cancel, and we get our desired result: $2 f\left(\frac{x+y}{2}\right) > f(x) + f(y)$.
@@ -183,7 +182,6 @@ First of all we write $[kx]=kx-\{kx\}$. So, we need to prove that$\sum_{1}^{n}\l
  Let's take $m$ such that $\frac{a_m}{m}$ is minimal. If $m=n$ then our inequality is obvious. So, $m<n$. Then, by induction, $\sum_{1}^{n-m}\left(\frac{a_k}{k}\right)\geq a_{n-m}$ and $\sum_{n-m+1}^{n}\left(\frac{a_k}{k}\right)\geq m\cdot \frac{a_m}{m}=a_m$. Now we can add these two inequalities and get
  \[\sum_{1}^{n}\left(\frac{a_k}{k}\right) \geq a_{n-m}+a_m \geq a_n\]
 
- 
 
 
 \end{enumerate}

@@ -31,7 +31,6 @@ My proof that $|S|\ge 8$ is basically the same as the one above. Here is another
 
  All of the conditions are satisfied, so this configuration works. We thus conclude that $\text{min}\left(\left|S\right|\right) = 8.$
 
- 
 
 
 	\item (\textit{USAMO 2016}) Prove that for any positive integer $k,$
@@ -156,26 +155,21 @@ To prove $N$ is an integer, it suffices to show that for every prime $p$, the ex
 
  Specifically, the \textit{extra} multiple ($q+1$) occurs exactly when the interval \textit{wraps around} a multiple of $d$ in the remainder arithmetic. Thus:
  \[\sum_{j=0}^{k-1} \left( \left\lfloor \frac{j+k}{d} \right\rfloor - \left\lfloor \frac{j}{d} \right\rfloor \right)= k \cdot q + \max(0, 2r - d)\]
-
- $M_U(d)$'s leading term $\lfloor \frac{k^2}{d} \rfloor$ is:
+$M_U(d)$'s leading term $\lfloor \frac{k^2}{d} \rfloor$ is:
  \[\left\lfloor \frac{k^2}{d} \right\rfloor = \left\lfloor \frac{(qd+r)^2}{d} \right\rfloor = q^2 d + 2qr + \left\lfloor \frac{r^2}{d} \right\rfloor = k \cdot q + qr + \left\lfloor \frac{r^2}{d} \right\rfloor\]
 
  Thus the condition $\left[M_U(d) = \left(k \cdot q + qr + \left\lfloor \frac{r^2}{d} \right\rfloor\right) -  \left(k \cdot q + \max(0, 2r - d) \ge 0\right)\right]$ is equivalent to:
  \[qr + \left\lfloor \frac{r^2}{d} \right\rfloor \ge \max(0, 2r - d)\]We analyze two cases:
 
  
-                \begin{itemize}
-                    \item \textbf{Case 1 ($2r \le d$):} The RHS is 0. Since $q, r, d \ge 0$, the LHS is clearly $\ge 0$. The inequality holds.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item \textbf{Case 2 ($2r > d$):} The RHS is $2r - d$. We need to show $\lfloor \frac{r^2}{d} \rfloor \ge 2r - d$.
-                \end{itemize}
-
-
-                Since the LHS is an integer, this is equivalent to showing $\frac{r^2}{d} \ge 2r - d$, or $r^2 \ge 2rd - d^2$. Rearranging gives:
+            \begin{itemize}
+        \item \textbf{Case 1 ($2r \le d$):} The RHS is 0. Since $q, r, d \ge 0$, the LHS is clearly $\ge 0$. The inequality holds.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item \textbf{Case 2 ($2r > d$):} The RHS is $2r - d$. We need to show $\lfloor \frac{r^2}{d} \rfloor \ge 2r - d$.
+            \end{itemize}
+            Since the LHS is an integer, this is equivalent to showing $\frac{r^2}{d} \ge 2r - d$, or $r^2 \ge 2rd - d^2$. Rearranging gives:
  \[(r - d)^2 \ge 0\]This is the Trivial Inequality.
 
  
@@ -220,7 +214,6 @@ This problem can be proved in the following two steps.
 
  Let $\omega$ be circumcircle of $\triangle ABC$ centered at $O.$ Let $Y_1,$ and $Z_1$ be crosspoints of $\omega$ and $BY,$ and $CZ,$ respectively.Let $T$ be crosspoint of $YZ$ and $Y_1 Z_1.$In accordance the Pascal theorem for pentagon $AZ_1BCY_1,$ $AT$ is tangent to $\omega$ at $A.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2016_3_Solution_Figure_2.png}
@@ -229,12 +222,9 @@ This problem can be proved in the following two steps.
  \[a = BC, b = AC, c = AB, 2\alpha = \angle CAB, 2\beta = \angle ABC, 2\gamma = \angle ACB,\]
  \[\psi = 90^\circ – \gamma + \beta, X = AI_A \cap \omega, X_1 = BC \cap AI_A,\]
  \[I = BI_B  \cap CI_C, U= YZ \cap AI_A, W = Y_1Z_1 \cap AI_A,\]$V$ is the foot ot perpendicular from $O$ to $AI_A.$
-
- $I$ is ortocenter of $\triangle I_A I_B I_C$ and incenter of $\triangle ABC.$
-
- $\omega$ is the Nine–point circle of $\triangle I_A I_B I_C.$
-
- $Y_1$ is the midpoint of $II_B, Z_1$ is the midpoint of $II_C$ in accordance with property of Nine–point circle $\implies$
+$I$ is ortocenter of $\triangle I_A I_B I_C$ and incenter of $\triangle ABC.$
+$\omega$ is the Nine–point circle of $\triangle I_A I_B I_C.$
+$Y_1$ is the midpoint of $II_B, Z_1$ is the midpoint of $II_C$ in accordance with property of Nine–point circle $\implies$
  \[Y_1Z_1 || I_B AI_C || VO, IW = AW \implies TW \perp AI.\]
  \[\angle AXC = 180 ^\circ – 2\gamma – \alpha = 90 ^\circ – \gamma + \beta = \psi.\] 
  \[\angle TAI = \angle VOA = 2\beta + \alpha = 90 ^\circ – \gamma + \beta = \psi.\] 
@@ -245,7 +235,6 @@ This problem can be proved in the following two steps.
  \[\frac {AU}{UX} = \frac{2a}{b+c} \implies  AU = AX \cdot \frac {b+c}{2a +b +c}.\]
  \[\frac {AU – AW}{AW} = \frac {b+c} {2a + b + c}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2016_3_Solution_Figure_3.png}
@@ -257,10 +246,8 @@ This problem can be proved in the following two steps.
  \[TW \perp AI_A \implies TYZ \perp OI_A.\]
 
  Let $\triangle II_B I_C$ be the base triangle with orthocenter $I_A,$ center of Nine-points circle $O \implies OI_A$ be the Euler line of $\triangle II_B I_C.$
-
- $\triangle ABC$ is orthic triangle of $\triangle II_B I_C,$
-
- $\triangle DEF$ is orthic-of-orthic triangle.
+$\triangle ABC$ is orthic triangle of $\triangle II_B I_C,$
+$\triangle DEF$ is orthic-of-orthic triangle.
 
  $P$ is perspector of base triangle and orthic-of-orthic triangle. 
 
@@ -288,8 +275,6 @@ This problem can be proved in the following two steps.
  \[(f(x)+xy)\cdot f(x-3y)+(f(y)+xy)\cdot f(3x-y)=(f(x+y))^2.\]
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -297,30 +282,23 @@ This problem can be proved in the following two steps.
 \textbf{Step 1:} Set $x = y = 0$ to obtain $f(0) = 0.$
 
  \textbf{Step 2:} Set $x = 0$ to obtain $f(y)f(-y) = f(y)^2.$
-
- $\indent$ In particular, if $f(y) \ne 0$ then $f(y) = f(-y).$
-
- $\indent$ In addition, replacing $y \to -t$, it follows that $f(t) = 0 \implies f(-t) = 0$ for all $t \in \mathbb{R}.$
+$\indent$ In particular, if $f(y) \ne 0$ then $f(y) = f(-y).$
+$\indent$ In addition, replacing $y \to -t$, it follows that $f(t) = 0 \implies f(-t) = 0$ for all $t \in \mathbb{R}.$
 
  \textbf{Step 3:} Set $x = 3y$ to obtain $\left[f(y) + 3y^2\right]f(8y) = f(4y)^2.$
-
- $\indent$ In particular, replacing $y \to t/8$, it follows that $f(t) = 0 \implies f(t/2) = 0$ for all $t \in \mathbb{R}.$
+$\indent$ In particular, replacing $y \to t/8$, it follows that $f(t) = 0 \implies f(t/2) = 0$ for all $t \in \mathbb{R}.$
 
  \textbf{Step 4:} Set $y = -x$ to obtain $f(4x)\left[f(x) + f(-x) - 2x^2\right] = 0.$
-
- $\indent$ In particular, if $f(x) \ne 0$, then $f(4x) \ne 0$ by the observation from Step 3, because $f(4x) = 0 \implies f(2x) = 0 \implies f(x) = 0.$ Hence, the above equation implies that $2x^2 = f(x) + f(-x) = 2f(x)$, where the last step follows from the first observation from Step 2.
+$\indent$ In particular, if $f(x) \ne 0$, then $f(4x) \ne 0$ by the observation from Step 3, because $f(4x) = 0 \implies f(2x) = 0 \implies f(x) = 0.$ Hence, the above equation implies that $2x^2 = f(x) + f(-x) = 2f(x)$, where the last step follows from the first observation from Step 2.
 
  $\indent$ Therefore, either $f(x) = 0$ or $f(x) = x^2$ for each $x.$
-
- $\indent$ Looking back on the equation from Step 3, it follows that $f(y) + 3y^2 \ne 0$ for any nonzero $y.$ Therefore, replacing $y \to t/4$ in this equation, it follows that $f(t) = 0 \implies f(2t) = 0.$
+$\indent$ Looking back on the equation from Step 3, it follows that $f(y) + 3y^2 \ne 0$ for any nonzero $y.$ Therefore, replacing $y \to t/4$ in this equation, it follows that $f(t) = 0 \implies f(2t) = 0.$
 
  \textbf{Step 5:} If $f(a) = f(b) = 0$, then $f(b - a) = 0.$
-
- $\indent$ This follows by choosing $x, y$ such that $x - 3y = a$ and $3x - y = b.$ Then $x + y = \frac{b - a}{2}$, so plugging $x, y$ into the given equation, we deduce that $f\left(\frac{b - a}{2}\right) = 0.$ Therefore, by the third observation from Step 4, we obtain $f(b - a) = 0$, as desired.
+$\indent$ This follows by choosing $x, y$ such that $x - 3y = a$ and $3x - y = b.$ Then $x + y = \frac{b - a}{2}$, so plugging $x, y$ into the given equation, we deduce that $f\left(\frac{b - a}{2}\right) = 0.$ Therefore, by the third observation from Step 4, we obtain $f(b - a) = 0$, as desired.
 
  \textbf{Step 6:} If $f \not\equiv 0$, then $f(t) = 0 \implies t = 0.$
-
- $\indent$ Suppose by way of contradiction that there exists an nonzero $t$ with $f(t) = 0.$ Choose $x, y$ such that $f(x) \ne 0$ and $x + y = t.$ The following three facts are crucial:
+$\indent$ Suppose by way of contradiction that there exists an nonzero $t$ with $f(t) = 0.$ Choose $x, y$ such that $f(x) \ne 0$ and $x + y = t.$ The following three facts are crucial:
 
  $\indent$ 1. $f(y) \ne 0.$ This is because $(x + y) - y = x$, so by Step 5, $f(y) = 0 \implies f(x) = 0$, impossible.
 
@@ -361,8 +339,6 @@ Step 1: $x=y=0 \implies f(0)=0$
 
  Prove that $\overline{OI}$ is parallel to $\ell,$ where $O$ is the circumcenter of triangle $ABC,$ and $I$ is the incenter of triangle $ABC.$
 
-
- 
 
 
 
@@ -432,31 +408,25 @@ Write $\angle{JKL} = K$ for all $J,K,L$ chosen as distinct vertices of triangle 
  Therefore $O$ is the circumcenter of triangle $A'B'C'.$
 
  Points $A, I, E,$ and $A'$ are collinear.$\angle A'EB' = \frac {\overset{\Large\frown} {AC'}+\overset{\Large\frown} {B'C} +\overset{\Large\frown} {CA'}}{2} = 90^\circ \implies AA' \perp B'C'$$\implies I$ is orthocenter of $\triangle A'B'C' \implies$
-
- $IO$ is the Euler line of $\triangle A'B'C'.$
+$IO$ is the Euler line of $\triangle A'B'C'.$
 
  Let $G$ be the centroid of $\triangle A'B'C' \implies G$ lies on line $IO$$\implies \overline {OG} = \frac {\overline{OA'} + \overline{OB'} + \overline{OC'}}{3}$ is paraller to $\overline{OI}.$ $\overline{OB'} \perp \overline{AC} \implies \overline{OB'} \perp \overline{QA}.$
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2016_5_Solution_Figure_2.png}
                     \end{figure}
-                    Similarly $\overline{OC'} \perp \overline{AM}, \overline{OA'} \perp \overline{NP},$ rotation from $\overline{OA'}$ to $\overline{NP}$, from $\overline{OB'}$ to $\overline{QA},$ and from $\overline{OC'}$ to $\overline{AM}$ is in clockwise direction, $|\overline{QA}|=| \overline{AM}| =|\overline{NP}|, |\overline{OA'}| = |\overline{OB'}| = |\overline{OC'}| \implies$ 
-
- $\overline{QA} + \overline{AM} + \overline{NP} = \overline{QM} + \overline{NP}$ is perpendicular to $|\overline{OI}.$
-
- $|\overline{MN}| = |\overline{QP}|$ therefore in accordance with <i>\textbf{Claim}</i> $\overline{MN} + \overline{QP}$ is parallel to $\overline{OI}.$
+                    Similarly $\overline{OC'} \perp \overline{AM}, \overline{OA'} \perp \overline{NP},$ rotation from $\overline{OA'}$ to $\overline{NP}$, from $\overline{OB'}$ to $\overline{QA},$ and from $\overline{OC'}$ to $\overline{AM}$ is in clockwise direction, $|\overline{QA}|=| \overline{AM}| =|\overline{NP}|, |\overline{OA'}| = |\overline{OB'}| = |\overline{OC'}| \implies$
+$\overline{QA} + \overline{AM} + \overline{NP} = \overline{QM} + \overline{NP}$ is perpendicular to $|\overline{OI}.$
+$|\overline{MN}| = |\overline{QP}|$ therefore in accordance with <i>\textbf{Claim}</i> $\overline{MN} + \overline{QP}$ is parallel to $\overline{OI}.$
 
  This sum is parallel to $\ell,$, so we are done.
 
  <i>\textbf{Claim}</i>
 
  Let $|\overline{BA}|= |\overline{CD}|, \overline{CB} + |\overline{BA} + |\overline{AD} = |\overline{CD}.$Then $(\overline{BA} + \overline{CD}) \perp (\overline{CB} + \overline{AD}).$
-
- <i>\textbf{Proof}</i>
-
- $(\overline{BA} + \overline{CD}) \cdot (\overline{CB} + \overline{AD}) = (\overline{BA} + \overline{CD}) \cdot (\overline{CB} + \overline{CD} – \overline{CB} – \overline{BA}) = |\overline{CD}|^2 – |\overline{BA}|^2 = 0.$
+<i>\textbf{Proof}</i>
+$(\overline{BA} + \overline{CD}) \cdot (\overline{CB} + \overline{AD}) = (\overline{BA} + \overline{CD}) \cdot (\overline{CB} + \overline{CD} – \overline{CB} – \overline{BA}) = |\overline{CD}|^2 – |\overline{BA}|^2 = 0.$
 
  \textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
@@ -512,7 +482,6 @@ Write $\angle{JKL} = K$ for all $J,K,L$ chosen as distinct vertices of triangle 
 
  We therefore conclude that the game is not winnable if $n=k.$ We proved earlier that the game is winnable if $n>k,$ so the game is winnable if and only if $n>k\ge 2.$
 
- 
 
 
 

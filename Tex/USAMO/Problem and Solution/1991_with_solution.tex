@@ -47,7 +47,6 @@
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1991}) For any nonempty set $\,S\,$ of numbers, let $\,\sigma(S)\,$ and $\,\pi(S)\,$ denote the sum and product, respectively, of the elements of $\,S\,$.  Prove that
@@ -79,11 +78,8 @@ By inductive hypothesis,
  \begin{align*} \frac{a+2}{a+1} \sum_{S \subseteq N(a)} \frac{\sigma(S)}{\pi(S)} &= \frac{a+2}{a+1} \left[ (a+1)^2 -1 - (a+1) \sum_{k=1}^a \frac{1}{k} \right] \\ &= (a+2)(a+1)  - \frac{a+2}{a+1} - (a+2) \sum_{k=1}^a \frac{1}{k} \\ &= (a+2)(a+1) - (a+2) \sum_{k=1}^{a+1} \frac{1}{k}, \end{align*}
 and by the lemma,
  \[\sum_{S \subseteq N(a)} \frac{1}{\pi(S)} = a+1 .\]Since $(a+2)(s+1) = (a+3)(a+1) = (a+2)^2 -1$, our equation thus holds by induction.  Thus the problem statement is proven.  $\blacksquare$
-
- 
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1991}) Show that, for any fixed integer $\,n \geq 1,\,$ the sequence
@@ -173,11 +169,8 @@ Let us assume without loss of generality that $m\ge n$.  We then note that
  \[n^n \frac{(m-n)}{m^m+n^n} \sum_{i=0}^{m-1} a^i m^{m-1-i} \le m^m \frac{(m-n)}{m^m+n^n} \sum_{i=0}^{n-1} a^i n^{n-1-i} .\]It then follows that
  \begin{align*} m^m - a^m &= (m-a) \sum_{i=0}^{m-1} a^i m^{m-1-i} = n^n \frac{m-n}{m^m+n^n} \sum_{i=0}^{m-1} a^i m^{m-1-i} \\ &\le m^m \frac{m-n}{m^m+n^n} \sum_{i=0}^{n-1} a^i n^{n-1-i} = (a-n) \sum_{i=0}^{n-1} a^i n^{n-1-i} \\ &= a^n - n^n . \end{align*}
 Rearranging this inequality, we find that $a^m + a^n \ge m^m + n^n$, as desired.  $\blacksquare$
-
- 
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1991}) Let $\, D \,$ be an arbitrary point on side $\, AB \,$ of a given triangle $\, ABC, \,$ and let $\, E \,$ be the interior point where $\, CD \,$ intersects the external common tangent to the incircles of triangles $\, ACD \,$ and $\, BCD$. As $\, D \,$ assumes all positions between $\, A \,$ and $\, B \,$, prove that the point $\, E \,$ traces the arc of a circle.
@@ -191,11 +184,6 @@ Rearranging this inequality, we find that $a^m + a^n \ge m^m + n^n$, as desired.
                     \end{figure}
                     
 
-
- 
-
-
- 
 
 
 
@@ -221,7 +209,6 @@ Let the incircle of $ACD$ and the incircle of $BCD$ touch line $AB$ at points $D
  \begin{align*} CE &= \frac{CC_a + CC_b - D_aD - DD_b}{2} = \frac{AC + BC - (AD+DB)}{2} \\ &= \frac{AC + BC - AB}{2} . \end{align*}
 Thus $E$ lies on the arc of the circle with center $C$ and radius $(AB+BC-AB)/2$ intercepted by segments $CA$ and $CB$.  If we choose an arbitrary point $X$ on this arc and let $D$ be the intersection of lines $CX$ and $AB$, then $X$ becomes point $E$ in the diagram, so every point on this arc is in the locus of $E$. $\blacksquare$
 
- 
 
 
 
@@ -234,6 +221,10 @@ Define the same points as in the first solution.  First extend $T_aT_b$ to inter
  \[CC_a + CC_b - CD = CC_a - C_bD \stackrel{(*)}= CC_a - C_aE = CE\]is a constant equal to $r := \frac{AC+BC-AB}2$, and so $C$ lies on the circle with center $C$ and radius $r$.
 
  
+
+
+ <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1991\_USAMO\_Problems/Problem\_5&action=edit}{add it} to this page.</i>
+
 
 
 \end{enumerate}

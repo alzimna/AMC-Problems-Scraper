@@ -108,7 +108,6 @@ Suppose $p$ is a positive integer dividing both $a^{2}+a+1$ and $a^{2}-a+1$. The
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2008\_USAMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 2008}) (\textit{Zuming Feng}) Let $ABC$ be an acute, \href{https://artofproblemsolving.com/wiki/index.php?title=Scalene}{scalene} triangle, and let $M$, $N$, and $P$ be the midpoints of $\overline{BC}$, $\overline{CA}$, and $\overline{AB}$, respectively. Let the \href{https://artofproblemsolving.com/wiki/index.php?title=Perpendicular}{perpendicular} \href{https://artofproblemsolving.com/wiki/index.php?title=Bisect}{bisectors} of $\overline{AB}$ and $\overline{AC}$ intersect ray $AM$ in points $D$ and $E$ respectively, and let lines $BD$ and $CE$ intersect in point $F$, inside of triangle $ABC$. Prove that points $A$, $N$, $F$, and $P$ all lie on one circle.
@@ -268,7 +267,6 @@ Invert the figure about a circle centered at $A$, and let $X'$ denote the image 
                     \end{figure}
                     
 
- 
 
 
 
@@ -338,7 +336,6 @@ First, we find the coordinates of $D$. As $D$ lies on $AM$, we know $D=(t:1:1)$ 
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2008\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 2008}) (\textit{Gabriel Carroll}) Let $n$ be a positive integer. Denote by $S_n$ the set of points $(x, y)$ with integer coordinates such that
@@ -418,7 +415,6 @@ We induct on $n$ to prove that an $n - 1$-path partition is impossible. This can
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2008\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 2008}) (\textit{Gregory Galparin}) Let $\mathcal{P}$ be a \href{https://artofproblemsolving.com/wiki/index.php?title=Convex\_polygon}{convex polygon} with $n$ sides, $n\ge3$. Any set of $n-3$ diagonals of $\mathcal{P}$ that do not intersect in the interior of the polygon determine a \textit{triangulation} of $\mathcal{P}$ into $n - 2$ triangles. If $\mathcal{P}$ is regular and there is a triangulation of $\mathcal{P}$ consisting of only isosceles triangles, find all the possible values of $n$.
@@ -456,13 +452,10 @@ $k=8$</td><td>An isosceles triangle containing
 We now claim that this condition is sufficient. Suppose without loss of generality that $a+1 \ge b$; then we rewrite this as 
  \[n = 2^{b}(2^{a-b+1}+1).\]
 
- 
-                \begin{itemize}
-                    \item \textit{Lemma 1}: All regular polygons with $n = 2^k + 1$ or $n=4$ have triangulations that meet the conditions.
-                \end{itemize}
-
-
-                By \href{https://artofproblemsolving.com/wiki/index.php?title=Induction}{induction}, it follows that we can cover all the desired $n$.
+            \begin{itemize}
+        \item \textit{Lemma 1}: All regular polygons with $n = 2^k + 1$ or $n=4$ have triangulations that meet the conditions.
+            \end{itemize}
+            By \href{https://artofproblemsolving.com/wiki/index.php?title=Induction}{induction}, it follows that we can cover all the desired $n$.
 
  For $n = 3,4$, this is trivial. For $k>1$, we construct the diagonals of equal length $\overline{P_0P_{2^{k-1}}}$ and $\overline{P_{2^{k-1}+1}P_0}$. This partitions $\mathcal{P}$ into $3$ regions: an isosceles $\triangle P_0P_{2^{k-1}}P_{2^{k-1}+1}$, and two other regions. For these two regions, we can recursively construct the isosceles triangles defined above in the second paragraph. It follows that we have constructed $2(2^{k-1}-1) + (1) = 2^k-1 = n-2$ isosceles triangles with non-intersecting diagonals, as desired.  
 
@@ -474,13 +467,10 @@ We now claim that this condition is sufficient. Suppose without loss of generali
                     
 An example for $n=17 = 2^{4}+1$
 
- 
-                \begin{itemize}
-                    \item \textit{Lemma 2}: If a regular polygon with $n$ sides has a working triangulation, then the regular polygon with $2n$ sides also has a triangulation that meets the conditions.
-                \end{itemize}
-
-
-                We construct the diagonals $\overline{P_0P_2},\ \overline{P_2P_4},\ \ldots \overline{P_{2n-2}P_0}$. This partitions $\mathcal{P}$ into $n$ isosceles triangles of the form $\triangle P_{2k}P_{2k+1}P_{2k+2}$, as well as a central regular polygon with $n$ sides. However, we know that there exists a triangulation for the $n$-sided polygon that yields $n-2$ isosceles triangles. Thus, we have created $(n) + (n-2) = 2n-2$ isosceles triangles with non-intersecting diagonals, as desired. 
+            \begin{itemize}
+        \item \textit{Lemma 2}: If a regular polygon with $n$ sides has a working triangulation, then the regular polygon with $2n$ sides also has a triangulation that meets the conditions.
+            \end{itemize}
+            We construct the diagonals $\overline{P_0P_2},\ \overline{P_2P_4},\ \ldots \overline{P_{2n-2}P_0}$. This partitions $\mathcal{P}$ into $n$ isosceles triangles of the form $\triangle P_{2k}P_{2k+1}P_{2k+2}$, as well as a central regular polygon with $n$ sides. However, we know that there exists a triangulation for the $n$-sided polygon that yields $n-2$ isosceles triangles. Thus, we have created $(n) + (n-2) = 2n-2$ isosceles triangles with non-intersecting diagonals, as desired. 
 
  
                     \begin{figure}[H]
@@ -609,7 +599,6 @@ By induction on the number of mathematicians, assuming solution exists for $n\le
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2008\_USAMO\_Problems/Problem\_6&action=edit}{add it} to this page.</i>
 
- 
 
 
 \end{enumerate}

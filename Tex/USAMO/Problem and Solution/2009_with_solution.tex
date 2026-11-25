@@ -82,24 +82,18 @@ This is sufficient, because the only two elements that may be in $M_{2k}$ that a
 (B): We prove this statement with another induction. We see that the statement easily holds true for $k=1$ or $2$, so suppose it is true for $k-1$, but [for sake of contradiction] false for $k$. Let $P_{2k-3} = P_{2k-1} \setminus \{2k-2, 2k-1\}$, and similarly for $Q_{2k-3}$. Again WLOG $|P_{2k-3}| \ge |Q_{2k-3}|$. Then we have $|P_{2k-1}| + |Q_{2k-1}| \le |P_{2k-3}| + |Q_{2k-3}| + 4$.
 
  
-                \begin{itemize}
-                    \item If $|P_{2k-3}| + |Q_{2k-3}| \ge 2k-2$, then by inductive hypothesis, we must have $|P_{2k-3}| = |Q_{2k-3}| = k-1$. But (A) implies that we cannot add $2k-2$ or $-2k+2$. So to satisfy $|P_{2k-1}| = |Q_{2k-1}| \ge 2k$ we must have $2k-1, -2k+1$ added, but then $|P_{2k-1}| = |Q_{2k-1}| = k$ contradiction.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $|P_{2k-3}| + |Q_{2k-3}| = 2k-3$, then at least three of $\{2k-2, 2k-1, -2k+2, -2k + 1\}$ added. But $|P_{2k-3}| \ge k-1$, and by (A) we have that $-2k+2$ cannot be added. If $|P_{2k-3}| \ge k$, then another grouping similar to (A) shows that $-2k+1$ canno be added, contradiction. So $|P_{2k-3}| = k-1$, $|Q_{2k-3}| = k-2$, and adding the three remaining elements gives $|P_{2k-1}| = |Q_{2k-1}| = k$ contradiction.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item If $|P_{2k-3}| + |Q_{2k-3}| = 2k-4$, then all four of $\{2k-2, 2k-1, -2k+2, -2k + 1\}$ must be added, and furthermore $|P_{2k-3}| > |Q_{2k-3}|$. Then $|P_{2k-3}| \ge k-1$, and by previous paragraph we cannot add $-2k+2$. $\square$
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item If $|P_{2k-3}| + |Q_{2k-3}| \ge 2k-2$, then by inductive hypothesis, we must have $|P_{2k-3}| = |Q_{2k-3}| = k-1$. But (A) implies that we cannot add $2k-2$ or $-2k+2$. So to satisfy $|P_{2k-1}| = |Q_{2k-1}| \ge 2k$ we must have $2k-1, -2k+1$ added, but then $|P_{2k-1}| = |Q_{2k-1}| = k$ contradiction.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $|P_{2k-3}| + |Q_{2k-3}| = 2k-3$, then at least three of $\{2k-2, 2k-1, -2k+2, -2k + 1\}$ added. But $|P_{2k-3}| \ge k-1$, and by (A) we have that $-2k+2$ cannot be added. If $|P_{2k-3}| \ge k$, then another grouping similar to (A) shows that $-2k+1$ canno be added, contradiction. So $|P_{2k-3}| = k-1$, $|Q_{2k-3}| = k-2$, and adding the three remaining elements gives $|P_{2k-1}| = |Q_{2k-1}| = k$ contradiction.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item If $|P_{2k-3}| + |Q_{2k-3}| = 2k-4$, then all four of $\{2k-2, 2k-1, -2k+2, -2k + 1\}$ must be added, and furthermore $|P_{2k-3}| > |Q_{2k-3}|$. Then $|P_{2k-3}| \ge k-1$, and by previous paragraph we cannot add $-2k+2$. $\square$
+            \end{itemize}
+            
 So we have $\begin{cases} s_1 &= 2 \\ s_{2k} &= s_{2k-1} \\ s_{2k-1} &\le s_{2k-2} + 2 \\  \end{cases}$ and by induction, that $s_n \le \boxed{2\left\lceil \frac n2 \right \rceil} = 2k$, which we showed is achievable above.
 
  
@@ -127,9 +121,8 @@ So we have $\begin{cases} s_1 &= 2 \\ s_{2k} &= s_{2k-1} \\ s_{2k-1} &\le s_{2k-
 
 \textbf{Solution}
 
-<i>This problem needs a solution. If you have a solution for it, please help us out by \href{https://artofproblemsolving.com/wiki/index.php?title=2009\_USAMO\_Problems/Problem\_3&action=edit}{adding it}.</i> 
+<i>This problem needs a solution. If you have a solution for it, please help us out by \href{https://artofproblemsolving.com/wiki/index.php?title=2009\_USAMO\_Problems/Problem\_3&action=edit}{adding it}.</i>
 
- 
 
 
 	\item (\textit{USAMO 2009}) For $n \ge 2$ let $a_1$, $a_2$, ..., $a_n$ be positive real numbers such that 

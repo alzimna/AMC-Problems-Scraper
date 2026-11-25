@@ -6,8 +6,6 @@
  Prove that there are infinitely many distinct pairs $(a,b)$ of relatively prime positive integers $a > 1$ and $b > 1$ such that $a^b + b^a$ is divisible by $a + b.$
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -46,7 +44,6 @@ Take $a=2n-1, b=2n+1, n\geq 2$. It is obvious (use the Euclidean Algorithm, if y
  
  \[a^2 = 4n^2-4n+1 \equiv 1 \pmod{4n}\]
 
- 
  \[b^2 = 4n^2+4n+1 \equiv 1 \pmod{4n}\]
 
  So
@@ -87,9 +84,8 @@ Note that
  \[a^b-a^a+a^a+b^a\equiv a^b-a^a+(a+b)(\text{an integer})\equiv a^b-a^a \equiv a^a\left(a^{b-a}-1\right)\pmod{a+b}.\]Because $a$ and $b$ are relatively prime, $a+b$ cannot divide $a^a.$ Thus, we have to show that there exists an integer $b$ such that for odd $a,$
  \[a^{b-a}\equiv 1 \pmod{a+b}.\]Suppose that $a=2n-1.$ To keep the powers small, we try $b=2n+k$ for small values of $k.$ We can find that $b=2n$ does not work. $b=2n+1$ works though, as $a+b=4n$ and
  \[(2n-1)^{2n+1-2n+1}\equiv (2n-1)^2\equiv 4n^2-4n+1\equiv 4n(n-1)+1 \equiv 1 \pmod{4n}.\]Because $a$ is odd, $b=a+2$ is relatively prime to $a.$ Thus, 
- \[(a,b)=(2n-1,2n+1)\] is a solution for positive $n\ge 2.$ There are infinitely many possible values for $n,$ so the proof is complete. $\blacksquare$ 
+ \[(a,b)=(2n-1,2n+1)\] is a solution for positive $n\ge 2.$ There are infinitely many possible values for $n,$ so the proof is complete. $\blacksquare$
 
- 
 
 
 	\item (\textit{USAMO 2017}) Note: For any geometry problem whose statement begins with an asterisk ($*$), the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction. 
@@ -136,40 +132,32 @@ Show that, for any two sequences of integers $A = (a_1, \ldots, a_n)$ and $B = (
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2017_3_Solution_Figure_3.png}
                     \end{figure}
                     Let $X$ be the point on circle $\Omega$ opposite $M$. This means $\angle MAX = 90^\circ, BC \perp XM.$
-
- $\angle XKM = \angle DKM = 90^\circ \implies$ the points $X, D,$ and $K$ are collinear.
+$\angle XKM = \angle DKM = 90^\circ \implies$ the points $X, D,$ and $K$ are collinear.
 
  Let $D' = BC \cap XM \implies DD' \perp XM \implies$
-
- $S$ is the orthocenter of $\triangle DMX \implies$ the points $X, A,$ and $S$ are collinear.
+$S$ is the orthocenter of $\triangle DMX \implies$ the points $X, A,$ and $S$ are collinear.
 
  Let $\omega$ be the circle centered at $S$ with radius $R = \sqrt {SK \cdot SM}.$
 
  We denote $I_\omega$ inversion with respect to $\omega.$
 
  Note that the circle $\Omega$ has diameter $MX$ and contain points $A, B, C,$ and $K.$
-
- $I_\omega (K) = M \implies$ circle $\Omega \perp \omega \implies C = I_\omega (B), X = I_\omega (A).$ 
-
- $I_\omega (K) = M \implies$ circle $KMD \perp \omega \implies D' = I_\omega (D) \in KMD \implies$$\angle DD'M = 90^\circ \implies$  the points $X, D',$ and $M$ are collinear.
+$I_\omega (K) = M \implies$ circle $\Omega \perp \omega \implies C = I_\omega (B), X = I_\omega (A).$
+$I_\omega (K) = M \implies$ circle $KMD \perp \omega \implies D' = I_\omega (D) \in KMD \implies$$\angle DD'M = 90^\circ \implies$  the points $X, D',$ and $M$ are collinear.
 
  Let $F \in AM, MF = MI.$ It is well known that $MB = MI = MC \implies$
-
- $\Theta = BICF$ is circle  centered at $M.$ $C = I_\omega (B) \implies \Theta \perp \omega.$
+$\Theta = BICF$ is circle  centered at $M.$ $C = I_\omega (B) \implies \Theta \perp \omega.$
 
  Let $I' =  I_\omega (I ) \implies I' \in \Theta \implies \angle II'M =  90^\circ.$ $I' =  I_\omega (I ), X =  I_\omega (A ) \implies AII'X$ is cyclic.
 
  $\angle XI'I = \angle XAI =  90^\circ \implies$  the points $X, I' ,$ and $F$ are collinear.
 
  $I'IDD'$ is cyclic $\implies \angle I'D'M = \angle I'D'C + 90^\circ =  \angle I'ID + 90^\circ,$$\angle XFM = \angle I'FI = 90^\circ – \angle I'IF = 90^\circ – \angle I'ID  \implies$
-
- $\angle XFM +  \angle I'D'M = 180^\circ \implies I'D'MF$ is cyclic.
+$\angle XFM +  \angle I'D'M = 180^\circ \implies I'D'MF$ is cyclic.
 
  Therefore point $F$ lies on  $I_\omega (IDK).$
-
- $FA \perp SX, SI' \perp FX \implies I$ is orthocenter of $\triangle FSX.$
-
- $N$ is midpoint $SI, M$ is midpoint $FI, I$ is orthocenter of $\triangle FSX, A$ is root of height $FA \implies AMN$ is the nine-point circle of $\triangle FSX \implies I' \in AMN.$ 
+$FA \perp SX, SI' \perp FX \implies I$ is orthocenter of $\triangle FSX.$
+$N$ is midpoint $SI, M$ is midpoint $FI, I$ is orthocenter of $\triangle FSX, A$ is root of height $FA \implies AMN$ is the nine-point circle of $\triangle FSX \implies I' \in AMN.$ 
 
  Let $N' = I_\omega (N) \implies R^2 = SN \cdot SN' = SI \cdot  SI' \implies$
  \[\frac {SN'}{SI'} = \frac {SI}{SN} =2 \implies\]$\angle XN'I' = \angle XSI' = 90^\circ – \angle AXI' = \angle IFX \implies N'XIF$ is cyclic. 
@@ -181,8 +169,7 @@ Show that, for any two sequences of integers $A = (a_1, \ldots, a_n)$ and $B = (
  Point $I$ is orthocenter $\triangle FSX \implies XI \perp SF, \angle ILS = \angle SI'F = 90^\circ$$\implies$ The points $X, I, E,$ and $L$ are collinear.
 
  $AXFL$ is circle $\implies AI \cdot IF = IL \cdot XI\implies$
-
- $AI \cdot \frac {IF}{2} = \frac {IL}{2} \cdot IX \implies AI \cdot IM = EI \cdot IX \implies AEMX$ is cyclic.
+$AI \cdot \frac {IF}{2} = \frac {IL}{2} \cdot IX \implies AI \cdot IM = EI \cdot IX \implies AEMX$ is cyclic.
  \[E \in \Omega.\]\textbf{vladimir.shelomovskii@gmail.com, vvsss}
 
  \textbf{Contact} Contact v\_Enhance at \href{https://www.facebook.com/v.Enhance}{https://www.facebook.com/v.Enhance}.
@@ -215,12 +202,10 @@ I define a sequence to be, starting at $(1,0)$ and tracing the circle counterclo
  Suppose I first choose $R_1$ such that $B_1$ is to the right of $R_1$ in the sequence. This implies that $\stackrel{\frown}{R_1B_1}$ does not cross $(1,0)$. But, neither $R_1$ nor $B_1$ is a commencing $B$ or terminating $R$. These numbers remain constant, and now after this move we have a sequence of length $2n$. Hence, by assumption, the total amount of arcs is $0+\text{max}(j,k)=\text{max}(j,k)$.
 
  
-                \begin{itemize}
-                    \item Here is a counter-case. $BRR_{1}B_{1}RR$ : j = 1, k = 2 => $BRRR$ : j = 1, k = 3. These numbers may not remain constant.
-                \end{itemize}
-
-
-                Thus, this solution probably doesn't work.
+            \begin{itemize}
+        \item Here is a counter-case. $BRR_{1}B_{1}RR$ : j = 1, k = 2 => $BRRR$ : j = 1, k = 3. These numbers may not remain constant.
+            \end{itemize}
+            Thus, this solution probably doesn't work.
 
  Now suppose that $R_1$ appears to the right of $B_1$, but $B_1$ is not a commencing $B$. This implies that there are no commencing $B$s in the series, because there are no $B$s to the left of $B_1$, so $j=0$. Note that this arc does intersect $(1,0)$, and $R_1$ must be a terminating $R$. $R_1$ must be a terminating $R$ because there are no $B$s to the right of $R_1$, or else that $B$ would be $B_1$. The $2n$ length sequence that remains has $0$ commencing $B$s and $k-1$ terminating $R$s. Hence, by assumption, the total amount of arcs is $1+\text{max}(0,k-1)=1+k-1=k=\text{max}(j,k)$.
 

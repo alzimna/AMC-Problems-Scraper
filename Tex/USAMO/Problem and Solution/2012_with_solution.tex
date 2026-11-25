@@ -42,6 +42,9 @@ Without loss of generality, assume that the set $\{a\}$ is ordered from least to
  
 
 
+ 
+
+
 	\item (\textit{USAMO 2012}) A circle is divided into $432$ congruent arcs by $432$ points.  The points are colored in four colors such that $108$ points are colored red,  $108$ points are colored green, $108$ points are colored blue  and the remaining $108$ points are colored yellow.  Prove that one can choose three points of each color in such a way that the four triangles formed by the chosen points of the same color are congruent.
 
 
@@ -61,10 +64,8 @@ If you rotate the red points 431 times, they will overlap with blue points $108\
 
  
  \[108\longrightarrow 28\longrightarrow 8\longrightarrow 3\]
+$\left \lceil{\left \lceil{\left \lceil{108\cdot \frac{108}{431}}\right \rceil \cdot \frac{108}{431}}\right \rceil \cdot \frac{108}{431}}\right \rceil =\left \lceil{\left \lceil{28\cdot \frac{108}{431}}\right \rceil \cdot \frac{108}{431}}\right \rceil =\left \lceil{8\cdot \frac{108}{431}}\right \rceil =3$
 
- $\left \lceil{\left \lceil{\left \lceil{108\cdot \frac{108}{431}}\right \rceil \cdot \frac{108}{431}}\right \rceil \cdot \frac{108}{431}}\right \rceil =\left \lceil{\left \lceil{28\cdot \frac{108}{431}}\right \rceil \cdot \frac{108}{431}}\right \rceil =\left \lceil{8\cdot \frac{108}{431}}\right \rceil =3$
-
- 
 
 
 	\item (\textit{USAMO 2012}) Determine which integers $n > 1$ have the property that there exists an infinite sequence $a_1$, $a_2$, $a_3$, $\dots$ of nonzero integers such that the equality
@@ -211,18 +212,14 @@ Let $f(n) = c$ and notice $c! = c \implies (c-1)! = 1 \implies c = 1,2$, hence t
  One can assume that $f(n)$ is a polynomial here rather than an arbitrary function as 
 
  
-                \begin{itemize}
-                    \item the statement $f(n!) = (f(n))!$ is nested
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $f(x)$ has the property for all $m,n$, $m-n \mid f(m) - f(n)$.
-                \end{itemize}
-
-
-                The second condition is true for all polynomials, and the \textbf{second uniqueness lemma}, makes the first condition true. If $f(x)$ was not a polynomial, then it follows that both properties cannot hold simultaneously, particularly $m-n \mid f(m) - f(n)$ as I can construct a non-continuous function that satisfies rule 1 but breaks rule 2 or vice versa.
+            \begin{itemize}
+        \item the statement $f(n!) = (f(n))!$ is nested
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $f(x)$ has the property for all $m,n$, $m-n \mid f(m) - f(n)$.
+            \end{itemize}
+            The second condition is true for all polynomials, and the \textbf{second uniqueness lemma}, makes the first condition true. If $f(x)$ was not a polynomial, then it follows that both properties cannot hold simultaneously, particularly $m-n \mid f(m) - f(n)$ as I can construct a non-continuous function that satisfies rule 1 but breaks rule 2 or vice versa.
 
  
 
@@ -240,7 +237,6 @@ By the \href{https://artofproblemsolving.com/wiki/index.php?title=Law\_of\_Sines
  \[\frac{AB'}{\sin \angle APB'} = \frac{AP}{\sin \angle AB'P},\]so
  \[AB' = AP \cdot \frac{\sin \angle APB'}{\sin \angle AB'P}.\]
 
- 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_2012_5_Solution_Figure_1.png}
@@ -282,12 +278,32 @@ We will perform barycentric coordinates on the triangle $PCC'$, with $P=(1,0,0)$
 
 
 
-\textbf{Solution 3, Cartesian}
+\textbf{Solution 3 (Cartesian)}
 
 We will use Cartesian coordinates. Without loss of generality, let $P = (0,0)$ and let $\gamma$ be the line $x = 0$. Let $A = (x_1,y_1)$, $B = (x_2,y_2)$, and $C = (x_3,y_3)$. Then $A'$ is the intersection of the lines\begin{align*}y &= -\frac{y_1}{x_1}x \\y - y_2 &= \frac{y_2 - y_3}{x_2 - x_3}(x - x_2).\end{align*}
 Solving the system of equations, we see it is
  \[\left(\frac{x_1(x_2y_3 - y_2x_3)}{x_1y_2 + y_1x_2 - x_1y_3 - x_3y_1},\frac{y_1(y_2x_3 - x_2y_3)}{x_1y_2 + y_1x_2 - x_1y_3 - x_3y_1}\right).\]To check collinearity, we need the determinant of the matrix
  \[\begin{bmatrix} x_1(x_2y_3 - y_2x_3) & y_1(y_2x_3 - x_2y_3) & x_1y_2 + y_1x_2 - x_1y_3 - x_3y_1 \\ x_2(x_3y_1 - y_3x_1) & y_2(y_3x_1 - x_3y_1) & x_2y_3 + y_2x_3 - x_2y_1 - x_1y_2 \\ x_3(x_1y_2 - y_1x_2) & y_3(y_1x_2 - x_1y_2) & x_3y_1 + y_3x_1 - x_3y_2 - x_2y_3 \end{bmatrix}\]to be zero, which is true because the columns sum to zero.
+
+ 
+
+
+
+\textbf{Solution 4 (Complex)}
+
+We establish a complex plane with $p=0$ and the equation of $\gamma$ being $\operatorname{Im}(z)=0$ (the real axis). Let the lowercase letter of each point denote its complex coordinate. Thus, we have the equation of $BC$ and the reflection of $PA$:\begin{gather*}\frac{z}{\overline z}=\frac{\overline a}{a}\\\frac{b-z}{\overline b-\overline z}=\frac{c-z}{\overline c-\overline z}\end{gather*}Solving yields $a'=\frac{\overline{a}(\overline{b}c-b\overline{c})}{\overline{a}(\overline{b}-\overline{c})-a(b-c)}$. Using the identity $z-\overline{z}=2i\cdot \operatorname{Im}(z)$, this simplifies to
+ \[a'=\frac{\overline{a}\operatorname{Im}(\overline{b}c)}{\operatorname{Im}\bigl(\overline{a}(\overline{b}-\overline{c})\bigr)}\]By symmetry,
+ \[b'=\frac{\overline{b}\operatorname{Im}(\overline{c}a)}{\operatorname{Im}\bigl(\overline{b}(\overline{c}-\overline{a})\bigr)},\quad c'=\frac{\overline{c}\operatorname{Im}(\overline{a}b)}{\operatorname{Im}\bigl(\overline{c}(\overline{a}-\overline{b})\bigr)}\]We are interested whether the collinear determinant satisfies
+ \[\begin{vmatrix} 1 & a' & \overline{a'} \\ 1 & b' & \overline{b'} \\ 1 & c' & \overline{c'} \end{vmatrix}=0\]Let \begin{gather*}p_{bc}=\operatorname{Im}(\overline b c),\quad q_{ca}=\operatorname{Im}(\overline c a), \quad r_{ab}=\operatorname{Im}(\overline a b)\\p_a=\operatorname{Im}(\overline a(\overline b-\overline c)),\quad q_b=\operatorname{Im}(\overline b(\overline c-\overline a)),\quad r_c=\operatorname{Im}(\overline c(\overline a-\overline b))\end{gather*} We proceed by solving 
+ \[\begin{vmatrix} 1 & \overline a\cdot\frac{p_{bc}}{p_a} & a\cdot\frac{p_{bc}}{p_a} \\ 1 & \overline b\cdot\frac{q_{ca}}{q_b} & b\cdot\frac{q_{ca}}{q_b} \\ 1 & \overline c\cdot\frac{r_{ab}}{r_c} & c\cdot\frac{r_{ab}}{r_c} \end{vmatrix}.\]
+
+ Evaluating the determinant yields\begin{align*}&\frac{p_{bc}}{p_a}\cdot\frac{q_{ca}}{q_b}(\overline a b-a\overline b)+\frac{q_{ca}}{q_b}\cdot\frac{r_{ab}}{r_c}(\overline b c-b\overline c)-\frac{r_{ab}}{r_c}\cdot\frac{p_{bc}}{p_a}(\overline a c-a\overline c)=0\iff\\&\frac{p_{bc}}{p_a}\cdot\frac{q_{ca}}{q_b}\cdot \operatorname{Im}(\overline a b)+\frac{q_{ca}}{q_b}\cdot\frac{r_{ab}}{r_c}\operatorname{Im}(\overline b c)-\frac{r_{ab}}{r_c}\cdot\frac{p_{bc}}{p_a}\operatorname{Im}(\overline a c)=0\\\end{align*}
+But $-\operatorname{Im}(\overline a c)=\operatorname{Im}(\overline c a)$, continuing simplifying:\begin{align*} &\quad\,\,\frac{p_{bc}}{p_a}\cdot\frac{q_{ca}}{q_b}\cdot \operatorname{Im}(\overline a b)+\frac{q_{ca}}{q_b}\cdot\frac{r_{ab}}{r_c}\operatorname{Im}(\overline b c)+\frac{r_{ab}}{r_c}\cdot \frac{p_{bc}}{p_a}\operatorname{Im}(\overline c a)\\&=p_{bc}\cdot q_{ca}\cdot r_{ab}\left(\frac{1}{p_a\cdot q_b}+\frac{1}{q_b\cdot r_c}+\frac{1}{r_c\cdot p_a}\right)\\&=\frac{p_{bc}}{p_a}\cdot\frac{q_{ca}}{q_b}\cdot \frac{r_{ab}}{r_c}(p_a+q_b+r_c)\end{align*}
+We have $\operatorname{Im}(\overline a(\overline b-\overline c))+\operatorname{Im}(\overline b(\overline c-\overline a))+\operatorname{Im}(\overline c(\overline a-\overline b))=0$, as desired.
+
+ Note (not necessarily a portion of the formal proof): We assume $p_a\cdot q_b\cdot r_c\neq 0$, since
+ \[\operatorname{Im}(\overline a(\overline b-\overline c))=0\iff \overline a(\overline b-\overline c)\in\mathbb{R}\iff a(b-c)\in\mathbb{R}\]We know that $a'$ is collinear with $\overline a$. Therefore, $\arg{a'}=\arg{\overline a}=-\arg{a}$. Also, $\arg{\frac{1}{b-c}}=-\arg{b-c}$. It follows that
+ \[\frac{a'}{b-c}\in\mathbb{R}\]The geometric interpretation of the above statement is that the reflection of $PA$ across $\gamma$ is parallel to $BC$, which does not result in an intersection point $A'$ in an Euclidean plane. The same logic applies to $q_b$ and $r_c$.
 
  
 
@@ -342,7 +358,6 @@ Let $x_i=x_1,x_2,...,x_n$ It is evident that $x_i = \frac{(-1)^i}{\sqrt{n}}$ for
  \[\sum_{k=1}^{\frac{n}{2}} \binom{\frac{n}{2}}{k} \sum_{i=0}^{k-1} \binom{\frac{n}{2}}{i} \le n2^{n-3}\]must be true for all $n \ge 8$(because if we rewrite this we get $2^{\frac{n}{2}}\left(8-n\right) \le 8$.) For all $2 \le n < 8$ however, we may use some logic to first layout a plan. Since for $n=6,n=4,$ and $n=2$, $2^{n} - 2^{\frac{n}{2}} = n2^{n-3} + 1$, we may say that whole sum will be less than $n2^{n-3}$ because $\sum_{k=1}^{\frac{n}{2}} \binom{\frac{n}{2}}{k} \sum_{i=k}^{\frac{n}{2}} \binom{\frac{n}{2}}{i} \ge 1$ for all $n \ge 2$ Plugging this inequality back in gives us:
  \[2^{n} - 2^{\frac{n}{2}} - \sum_{k=1}^{\frac{n}{2}} \binom{\frac{n}{2}}{k} \sum_{i=k}^{\frac{n}{2}} \binom{\frac{n}{2}}{i} \le 2^{n} - 2^{\frac{n}{2}} - 1 = n2^{n-3}\] because of the fact that $- \sum_{k=1}^{\frac{n}{2}} \binom{\frac{n}{2}}{k} \sum_{i=k}^{\frac{n}{2}} \binom{\frac{n}{2}}{i} \le -1$
 
- 
 
 
 \end{enumerate}

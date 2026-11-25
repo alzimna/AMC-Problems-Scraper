@@ -111,7 +111,6 @@ We know that since $k_{n+1}$ are not consecutive, $k_n+1\leq k_{n+1}-1,$ hence, 
  
 But this contradicts the statement $P(n)$ which was proved earlier.$\square$
 
- 
 
 
 	\item (\textit{USAMO 1994}) The sides of a 99-gon are initially colored so that consecutive sides are red, blue, red, blue, ...  red, blue, yellow. We make a sequence of modifications in the coloring, changing the color of one side at a time to one of the three given colors (red, blue, yellow), under the constraint that no two adjacent sides may be the same color. By making a sequence of such modifications, is it possible to arrive at the coloring in which consecutive sides 
@@ -152,10 +151,7 @@ Let the diagonals $AD$, $BE$, $CF$ meet at $Q$.
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1994_3_Solution_Figure_1.png}
                     \end{figure}
                     
-
- 
-
- $\angle ACE=\angle ADE$ because $A$,$C$,$D$ and $E$ all lie on the circle, and $\angle ADE=\angle QDE$. $\angle AEB=\angle CED$ because $AB=CD$, and $A$,$B$,$C$,$D$ and $E$ all lie on the circle. Then,
+$\angle ACE=\angle ADE$ because $A$,$C$,$D$ and $E$ all lie on the circle, and $\angle ADE=\angle QDE$. $\angle AEB=\angle CED$ because $AB=CD$, and $A$,$B$,$C$,$D$ and $E$ all lie on the circle. Then,
 
  $\angle AEB=\angle CED \rightarrow \angle AEB+\angle BEC=\angle CED+\angle BEC \rightarrow \angle AEC=\angle QED$
 
@@ -169,10 +165,7 @@ Let the diagonals $AD$, $BE$, $CF$ meet at $Q$.
                         \includegraphics[width=0.5\textwidth]{Solution/USAMO_I_1994_3_Solution_Figure_2.png}
                     \end{figure}
                     
-
- 
-
- $\angle AEC=\angle ADC$ because $A$,$C$,$D$ and $E$ all lie on the circle, and $\angle ADC=\angle CDQ$. $\angle EAD=\angle ECD$ because $A$,$C$,$D$ and $E$ all lie on the circle. $\angle DAC=\angle ECF$ because $CD=EF$, and $A$,$C$,$D$,$E$ and $F$ all lie on the circle. Then,
+$\angle AEC=\angle ADC$ because $A$,$C$,$D$ and $E$ all lie on the circle, and $\angle ADC=\angle CDQ$. $\angle EAD=\angle ECD$ because $A$,$C$,$D$ and $E$ all lie on the circle. $\angle DAC=\angle ECF$ because $CD=EF$, and $A$,$C$,$D$,$E$ and $F$ all lie on the circle. Then,
 
  $\angle EAC=\angle EAD+\angle DAC=\angle ECD+\angle ECF=\angle DCQ$
 
@@ -200,12 +193,8 @@ Let the diagonals $AD$, $BE$, $CF$ meet at $Q$.
 
 	\item (\textit{USAMO 1994}) Let $\, a_1, a_2, a_3, \ldots \,$ be a sequence of positive real numbers satisfying $\, \sum_{j = 1}^n a_j \geq \sqrt {n} \,$ for all $\, n \geq 1$. Prove that, for all $\, n \geq 1, \,$
 
-
- 
  \[\sum_{j = 1}^n a_j^2 > \frac {1}{4} \left( 1 + \frac {1}{2} + \cdots + \frac {1}{n} \right).\]
 
-
- 
 
 
 
@@ -233,7 +222,6 @@ Consider a sequence $b_n = \sqrt{n} - \sqrt{n-1}$.
 
  Consider $a_j$. Notice that $\sqrt j-\sqrt{j-1}=\frac{j-(j-1)}{\sqrt j+\sqrt{j-1}}=\frac1{\sqrt j+\sqrt{j-1}}$. Squaring, $(\sqrt j-\sqrt{j-1})^2=\frac1{(\sqrt j+\sqrt{j-1})^2}$. Also, $\sqrt j+\sqrt{j-1}<2\sqrt j$ is trivial by $\sqrt{j-1}<\sqrt j$ hence $(\sqrt j+\sqrt{j-1})^2<4j$. Also, $(\sqrt j-\sqrt{j-1})^2=\frac1{(\sqrt j+\sqrt{j-1})^2}$ and thus $\frac1{(\sqrt j+\sqrt{j-1})^2}>\frac1{4j}$. Therefore, $(\sqrt j-\sqrt{j-1})^2>\frac1{4j}$. Taking the sum 1 through $n$ gives the desired result. $\square$
 
- 
 
 
 	\item (\textit{USAMO 1994}) Let $\, |U|, \, \sigma(U) \,$ and $\, \pi(U) \,$ denote the number of elements, the sum, and the product, respectively, of a finite set $\, U \,$ of positive integers.  (If $\, U \,$ is the empty set, $\, |U| = 0, \, \sigma(U) = 0, \, \pi(U) = 1$.) Let $\, S \,$ be a finite set of positive integers. As usual, let $\, \binom{n}{k} \,$ denote $\, n! \over k! \, (n-k)!$. Prove that 
@@ -256,7 +244,6 @@ Let, for $|S|\geq k \geq 1$, $A_k$ be a collection of sets such that $\left|\big
 
  The number of ways to pick $1$'s $|S|$ times from $m$ places is $\binom{m}{|S|}$. But we don't want for the $1$'s to fill every block, since this is not in the union. We have $\pi(S)$ ways to put the $1$'s $|S|$ times, where each $1$ is in exacty one block ($x_1$ places $\times$ $x_2$ places and so on). So, we find that $| \bigcup_{k \in U}A_k | = \binom{m}{|S|}-\pi(S)$. Which implies, by the Principle of Inclusion Exclusion, $\binom{m}{|S|}-\pi(S) = \sum_{\emptyset \neq U \subseteq S} (-1)^{|U|+1}\binom{m- \sigma(U)}{|S|} \iff \pi(S) = \sum_{U \subseteq S} (-1)^{|U|}\binom{m- \sigma(U)}{|S|}$
 
- 
 
 
 \end{enumerate}

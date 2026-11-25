@@ -16,10 +16,6 @@ Write $ab=c^2-c=c(c-1)$. WLOG $a>b$, so $a>\sqrt{c(c-1)}>c-1$. Since $a$ and $c$
  \[c_2 \leq \text{gcd }(c, c+k)\leq k\] Thus, $c+k\leq k(k+1)\implies k\geq \sqrt{c}$. Finishing up, $a=c+k\geq c+\sqrt{c}$ and $b=\frac{c^2-c}{a}\leq c-\sqrt{c}$, so 
  \[a-b\geq 2\sqrt{c}\implies (a-b)^2\geq 4c\] and the proof is complete. $\square$
 
- 
-
-
- 
 
 
 
@@ -38,7 +34,6 @@ Rewrite the condition as $ab=c^2-c$. Then examine the LHS:
  
  \[(a-b)^2=(a+b)^2-4ab=(a+b)^2+4c-4c^2\ge (2c)^2+4c-4c^2=4c\]
 
- 
 
 
 
@@ -150,6 +145,14 @@ Note that $4c = 4c^2-4ab$. Thus, it suffices to prove that $a+b \ge 2c$.
  
 
 
+
+\textbf{Solution 6 (easiest)}
+
+Notice that $ab+c=c^2 \implies ab=c(c-1) \implies a+b \geq 2c-1$ where equality is achieved by $\{a,b\}=\{c-1,c\}$, but this violates distinctness, thus $a+b \ge 2c$. We can finish with 
+ \[(a-b)^2 = (a+b)^2 - 4ab \ge (2c)^2 - 4c(c-1) = 4c\]as desired. $\blacksquare$
+
+
+
 	\item (\textit{USAJMO 2026}) There are $m$ foxes and $n$ rabbits sitting in $m+n$ seats around a circular table, where all animals are distinguishable. If a fox and a rabbit are sitting next to each other, they may swap positions with each other. For a fixed starting configuration, determine the number of configurations that can be reached by a sequence of swaps.
 
 
@@ -230,7 +233,6 @@ $\textbf{Preliminary}:$
  Thus the total number of such configurations is just the number of possible configurations, each of which multiplied by the number of distinct swaps per that given section. There are a total of $\operatorname{lcm}(m,n)$ distinct swaps through Lemma 2 and a total of  $\binom{m+n}{m}$ given distinct cases. Rearrangement using commutative property derives the count
  \[\binom{m+n}{m} \cdot \operatorname{lcm}(m,n) ~~~~~~~~~ \square\]
 
- 
 
 
 
@@ -239,10 +241,12 @@ $\textbf{Preliminary}:$
 We start by considering which seats can have foxes while not changing $I(F),I(R)$. The claim is that all $\left(^{m+n}_m\right)$ different ways to arrange foxes are possible. Assume the smallest indexed fox not in the seat with its own index is $i$ who is currently in seat $j$. This implies that all seats $i,i+1...j-1$  are occupied by rabbits $1,2,3...j-i$. So we swap fox $i$ with rabbit $j-1$ then with rabbit $j-2$ so on until swapped with rabbit $1$, returning it to seat $i$. None of these swaps involves seat $m+n$ swapping seat 1 so the order is preserved. So by induction we can places all the foxes in their respective seats (call this state $T$). This means from any initial configuration we can reach $T$. So if we consider a random configuration $P$ we can also reach $T$. So if we reach $T$ from the initial configuration then reverse all the moves needed to reach $T$ from $P$ we actually end up in $P$ from the initial configuration. So all configurations are possible. Next we consider all possible orders of foxes and rabbits. we start from$I(F)=1,2,3...m$ and $I(R)=1,2,3...n$. The only way to change the order is to swap the first fox with the last rabbit resulting in $I(F)=2,3...m,1$ and $I(R)=n,1,2,3...n-1$. So each single change rotates $I(F),I(R)$ by 1 slot. Thus $I(F)$ rotates with period $m$ and $I(R)$ rotates with period $n$. So the combined period of foxes and rabbits is $\operatorname{lcm}(m,n)$. Combining the ways to seat the foxes and order the foxes & rabbits, we get  
  \[\left(^{m+n}_m\right)\cdot \operatorname{lcm}(m,n)\]
 
+ Note: The solution is incorrect but ~Continuum Math emphasized he will make an updated solution soon.
+
  
 
 
-	\item (\textit{USAJMO 2026}) Let $ABC$ be an acute scalene triangle with no angle equal to $60^{\circ}$. Let $\omega$ be the circumcircle of $ABC$. Let $\triangle_B$ be the equilateral triangle with three vertices on $\omega$, one of which is $B$. Let $\ell_B$ be the line through the two vertices of $\triangle_B$ other than $B$. Let $\triangle_C$ and $\ell_C$ be defined analogously. Let $Y$ to be the intersection of $AC$ and $\ell_B$, and let $Z$ be the intersection of $AB$ and $\ell_C$.
+	\item (\textit{USAJMO 2026}) Let $ABC$ be an acute scalene triangle with no angle equal to $60^{\circ}$. Let $\omega$ be the circumcircle of $ABC$. Let $\triangle_B$ be the equilateral triangle with three vertices on $\omega$, one of which is $B$. Let $\ell_B$ be the line through the two vertices of $\triangle_B$ other than $B$. Let $\triangle_C$ and $\ell_C$ be defined analogously. Let $Y$ be the intersection of $AC$ and $\ell_B$, and let $Z$ be the intersection of $AB$ and $\ell_C$.
 
 
  Suppose that the circumcircle of $AYZ$ intersects $\omega$ at $P\neq A$, $BC$ intersects $YZ$ at $D$, and $PA$ intersects $YZ$ at $E$. Prove that $PE=PD$.
@@ -421,8 +425,7 @@ Put the problem on the complex plane, so $\omega$ is the unit circle, and let $O
  The sidelines are
 
  $(4)\qquad AC:\ vx-(u-1)y-v=0,$
-
- $(5)\qquad AB:\ vx-(u+1)y+v=0.$
+$(5)\qquad AB:\ vx-(u+1)y+v=0.$
 
  Since $Y=AC\cap \ell_B$, solving (2) and (4) yields
 
@@ -606,7 +609,6 @@ This means $CY’$ bisects $\angle BCD$, which, since $AY’$ bisects $\angle CA
 
  So, if quadrilateral $ABXD$ intersects circle $\omega$ at $X$, quadrilateral $ADYC$ must also intersect circle $\omega$ at $Y$. $\square$
 
- 
 
 
 
@@ -634,7 +636,7 @@ This means $CY’$ bisects $\angle BCD$, which, since $AY’$ bisects $\angle CA
  \[\angle AOI=\angle EOY'=\angle BOI =\angle COY',\]or $\overline{OY'}$ bisects $\angle COE$, and $\angle EOY'=\angle COY'\implies EY'=CY'\implies \angle EAY'=\angle CAY'$. We obtain that $AY'$ bisects $\angle CAO$. By the definition of the $A$-excenter of $\triangle ABO$,  $\overline{OX}$ bisects $\angle BOE$. We have
  \[\angle BOX=\angle COF=\angle EOX =\angle AOF,\]or $\angle AOF=\angle COF$. Since $\overline{OF}$ is the angle bisector of $\angle AOC$, we have $I'=\overline{AY'}\cap\overline{OF}$ is the incenter of $\triangle AOC$.
 
- We know that $A,I',Y$ are collinear, and $Y$ lies on $\overline{OY'}$, the external bisector of $\angle AOC$. Therefore, $Y'=Y$, as desired.
+ We know that $A,I',Y$ are collinear, and $Y$ lies on $\overrightarrow{OY'}$, the external bisector of $\angle AOC$. Therefore, $Y'=Y$, as desired.
 
  
 
@@ -738,7 +740,6 @@ Lemma 1: If $x$ is even, then $x$ can't be solitary.
  
  \[\sum_{k=1}^{2026} \lvert S_k \rvert = \sum_{k=1}^{2026} 2^{k-1} = 2^{2026} - 1\]
 
- 
 
 
 
@@ -758,7 +759,6 @@ Generalize to all positive integers. I claim all solitary numbers are of the for
 
  As such, when constructing a solitary number $< 10^{2026}$, we effectively have $2026$ digit slots and in each one we must place a $0$ or $2$, and at the end we must choose to add or subtract $1$ from this number. Now, the units digit must be $0$, as it cannot be $2$, which means we have $2^{2025} \cdot 2=2^{2026}$ possible solitary numbers, but we must subtract $1$ to account for the case where all the digits are $0$ and we subtract $1$, ie the number of solitary numbers $< 10^{2026}$ is $\boxed{2^{2026}-1}$, and we are done. $\blacksquare$
 
- 
 
 
 
@@ -787,24 +787,18 @@ Generalize to all positive integers. I claim all solitary numbers are of the for
  Given the conditions, $n$ is \textit{solitary} if and only if
 
  
-                \begin{itemize}
-                    \item $n$ contains 1
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item All numbers to the right of the 1 in $n$ are 9
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item All numbers to the left of the 1 in $n$ are "2" or "0"
-                \end{itemize}
-
-
-                The last part is to count all such $n$. From any number, the digit 1 can be placed at an index $m$ from the left ($1 \leq m \leq 2026$). 
+            \begin{itemize}
+        \item $n$ contains 1
+            \end{itemize}
+            
+            \begin{itemize}
+        \item All numbers to the right of the 1 in $n$ are 9
+            \end{itemize}
+            
+            \begin{itemize}
+        \item All numbers to the left of the 1 in $n$ are "2" or "0"
+            \end{itemize}
+            The last part is to count all such $n$. From any number, the digit 1 can be placed at an index $m$ from the left ($1 \leq m \leq 2026$). 
 
  There are exactly $2026 - m$ positions to the right of 1 that are all 9. Otherwise, there are exactly $m-1$ positions to the left of 1. Those have two choices each, giving $2^{m-1}$ cases. So, on any given integer with $m$ digits, we may form $2^{m-1}$ solitary integers.
 

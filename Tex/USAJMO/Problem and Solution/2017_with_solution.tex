@@ -6,8 +6,6 @@
  Prove that there are infinitely many distinct pairs $(a,b)$ of relatively prime positive integers $a > 1$ and $b > 1$ such that $a^b + b^a$ is divisible by $a + b.$
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -53,7 +51,6 @@ Let $a = 2x + 1$ and $b = 2x-1$, where $x$ leaves a remainder of $1$ when divide
 
  Claim 3: $(2x+1)^{2x-1} + (2x-1)^{2x+1} \equiv 0 \mod 4x$Trivial given claim $1,2$. $\boxed{}$
 
- 
 
 
 
@@ -76,8 +73,7 @@ Since there are infinitely many integers larger than or equal to 2, there are in
  We can expand $a^b + b^a = (2n-1)^{2n+1} + (2n+1)^{2n-1}$ using binomial theorem. However, since $a + b = 2n-1 + 2n+1 = 4n$, all the $2n$ terms (with more than 2 powers of) when evaluated modulo $4n$ equal to 0, and thus can be omitted. We are left with the terms: $(2n+1)(2n)^1-1+(2n-1)(2n)^1+1 = 4n \cdot 2n$, which is divisible by $4n$.
 
  $(2n-1)^{2n+1} + (2n+1)^{2n-1} \equiv (2n+1)(2n)-1+(2n-1)(2n)+1 = 4n \cdot 2n \equiv 0 \pmod{4n}$
-
- \begin{verbatim}
+\begin{verbatim}
 The proof is complete. $\blacksquare$
 \end{verbatim}
 
@@ -203,9 +199,8 @@ and change the RHS to $b^7$. Therefore $\biggl(\dfrac{a}{b}\biggr)^6=4b+1$. Let 
 
  Since $a-b$ is odd,  $gcd(16, a-b) = 1$
 
- Since $gcd(a, a-b) = 1$, $gcd(a^6, a-b) = 1$ 
+ Since $gcd(a, a-b) = 1$, $gcd(a^6, a-b) = 1$
 
- 
  \[ab(a^2 + 3b^2)(3a^2 + b^2) \equiv  16a^6 \neq 0 \pmod{a-b}\]contradiction.  So, $a-b = 1$. 
 
  If $a-b=1$, obviously (*) will work, d will be an integer. 
@@ -266,7 +261,6 @@ Part a:
 
  For this to be integral, the expression in brackets must be a multiple of $8$. However, there are three terms that are odd in this expression, $p^5$, $15p^3$, and $15p$. Thus, we have a contradiction, and we conclude that the only solutions $(x, y)$ are of the form stated above. $\square$
 
- 
 
 
 	\item (\textit{USAJMO 2017}) Note: For any geometry problem whose statement begins with an asterisk ($*$), the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction. 
@@ -542,7 +536,6 @@ The answer is no. Substitute $x=a-2,y=b-2,z=c-2$. This means that $x,y,z\geq -1$
  \[\frac{AB}{AA'}=\frac{AO}{AC}\rightarrow AA'\cdot AO=AB\cdot AC.\] Therefore, it suffices to show that 
  \[AB\cdot AC=AN'\cdot AD\rightarrow \frac{AB}{AN'}=\frac{AD}{AC}.\] But it is easy to show that $\triangle BAN'\sim \triangle DAC$, implying the result. $\blacksquare$
 
- 
 
 
 
@@ -591,7 +584,6 @@ Therefore, $PD\cdot PA = PN\cdot PO$ is indeed true, and $ADNO$ is concyclic. $\
  At last, we can complete the proof through a walk in the park. As both $AH,ON\perp BC$, $AH \parallel ON$, so $\angle HAN = \angle ANO$. Furthermore, the inscribed angle theorem in $ADNO$ implies $\angle ANO = \angle ADO$.
  \[\boxed{\therefore\angle HAN = \angle ADO}\]$\blacksquare$
 
- 
 
 
 	\item (\textit{USAJMO 2017}) Note: For any geometry problem whose statement begins with an asterisk ($*$), the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction. 
@@ -619,12 +611,10 @@ I define a sequence to be, starting at $(1,0)$ and tracing the circle counterclo
  Suppose I first choose $R_1$ such that $B_1$ is to the right of $R_1$ in the sequence. This implies that $\stackrel{\frown}{R_1B_1}$ does not cross $(1,0)$. But, neither $R_1$ nor $B_1$ is a commencing $B$ or terminating $R$. These numbers remain constant, and now after this move we have a sequence of length $2n$. Hence, by assumption, the total amount of arcs is $0+\text{max}(j,k)=\text{max}(j,k)$.
 
  
-                \begin{itemize}
-                    \item Here is a counter-case. $BRR_{1}B_{1}RR$ : j = 1, k = 2 => $BRRR$ : j = 1, k = 3. These numbers may not remain constant.
-                \end{itemize}
-
-
-                Thus, this solution probably doesn't work.
+            \begin{itemize}
+        \item Here is a counter-case. $BRR_{1}B_{1}RR$ : j = 1, k = 2 => $BRRR$ : j = 1, k = 3. These numbers may not remain constant.
+            \end{itemize}
+            Thus, this solution probably doesn't work.
 
  Now suppose that $R_1$ appears to the right of $B_1$, but $B_1$ is not a commencing $B$. This implies that there are no commencing $B$s in the series, because there are no $B$s to the left of $B_1$, so $j=0$. Note that this arc does intersect $(1,0)$, and $R_1$ must be a terminating $R$. $R_1$ must be a terminating $R$ because there are no $B$s to the right of $R_1$, or else that $B$ would be $B_1$. The $2n$ length sequence that remains has $0$ commencing $B$s and $k-1$ terminating $R$s. Hence, by assumption, the total amount of arcs is $1+\text{max}(0,k-1)=1+k-1=k=\text{max}(j,k)$.
 

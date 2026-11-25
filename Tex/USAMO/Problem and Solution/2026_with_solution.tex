@@ -57,31 +57,25 @@ Because of this periodicity, we can restrict our analysis to $x \in [0, 1)$ and 
  Accounting for the periodicity of 1 established in Step 1, the maximal value is sustained across all intervals shifted by integers.
 
  
-                \begin{itemize}
-                    \item Maximal value:
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Maximal value:
+            \end{itemize}
+            
  \[\sum_{k=1}^n \frac{1}{k} - 1\]
 
- 
-                \begin{itemize}
-                    \item Real numbers $x$ that achieve this: 
-                \end{itemize}
-
-
-                
+            \begin{itemize}
+        \item Real numbers $x$ that achieve this: 
+            \end{itemize}
+            
  \[x \in \bigcup_{p \in \mathbb{Z}} \left[p - \frac{1}{n}, p\right)\]
 
- 
 
 
 
 \textbf{Solution 2}
 
 After some manipulation (see Solution 1), let $x\in \left[\frac{m}{n}, \frac{m+1}{n}\right)$, where $m\in\{0,1,2,\ldots, n-1\}$. We proceed by maximizing
- \[f(x)\le f\left(\frac{m}{n}\right)=\frac{1}{n}\sum_{k=1}^{n}\frac{km\bmod{n}}{k}\]The maximal is clearly not achievable when $m=0$. Let $a_k=km\bmod n$.
+ \[f(x)\le f\left(\frac{m}{n}\right)=\frac{1}{n}\sum_{k=1}^{n}\frac{km\bmod{n}}{k}\]The maximal is clearly not achievable when $m=0$. We assume that $m\ge 1$. Let $a_k=km\bmod n$.
 
  \textbf{Case 1: }$\gcd(m,n)=1$. 
 
@@ -114,7 +108,6 @@ We see that all real $x\in \left[1-\frac{1}{n}, 1\right)$ yields the maximal.
  $f(x)$ has a period of 1. Thus, the real $x$ that attains the maximal satisfies
  \[x\in\bigcup_{j\in\mathbb{Z}}\left[j-\frac{1}{n}, \, j\right)\]
 
- 
 
 
 	\item (\textit{USAMO 2026}) Annie is playing a game where she starts with a row of positive integers, written on a blackboard, each of which is a power of $2$. On each turn, she can erase two adjacent numbers and replace them with a power of $2$ that is greater than either of the erased numbers. This shortens the row of numbers, and she continues to take turns until only one number remains. Annie wins the game if the final remaining number is less than $4$ times the sum of the original numbers. Is it always possible for Annie to win, regardless of the starting row of numbers?
@@ -161,18 +154,14 @@ Let $X = (x_1, x_2, \dots, x_n)$ where $\forall i, x_i \in \{2^k \mid k \in \mat
  Sequential adjacent applications of $\omega$ on $X \iff$ Construction of a full alphabetic (left-to-right) binary tree $T$.
 
  
-                \begin{itemize}
-                    \item $\forall \text{ leaf } i \in T$: $\text{value} = x_i$, $\text{depth} = d_i$.
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item $\forall \text{ internal node with children } u, v$: $\text{value} = \omega(u,v) = \max(2u, 2v)$.
-                \end{itemize}
-
-
-                By induction, the root value $R$ is given by:
+            \begin{itemize}
+        \item $\forall \text{ leaf } i \in T$: $\text{value} = x_i$, $\text{depth} = d_i$.
+            \end{itemize}
+            
+            \begin{itemize}
+        \item $\forall \text{ internal node with children } u, v$: $\text{value} = \omega(u,v) = \max(2u, 2v)$.
+            \end{itemize}
+            By induction, the root value $R$ is given by:
  \[R = \max_{1 \le i \le n} (x_i 2^{d_i})\]Winning condition $W \iff \exists \text{ valid tree } T \text{ such that } R < 4S$.
 
  $\because \forall i, x_i \in \{2^k\} \land \text{closure of } \omega \implies R \in \{2^k \mid k \in \mathbb{Z}\}$.
@@ -210,7 +199,6 @@ Let $X = (x_1, x_2, \dots, x_n)$ where $\forall i, x_i \in \{2^k \mid k \in \mat
 
  $\implies \forall i \in T, \text{ final depth } d_i \le L_i      \implies R = \max_{i=1}^n (x_i 2^{d_i}) \le \max_{i=1}^n (x_i 2^{L_i}) = M < 4S      \implies W \text{ is mathematically guaranteed}.$ $\square$
 
- 
 
 
 	\item (\textit{USAMO 2026}) Let $ABC$ be an acute scalene triangle with no angle equal to $60^\circ$. Let $\omega$ be the circumcircle of $ABC$. Let $\triangle_B$ be the equilateral triangle with three vertices on $\omega$, one of which is $B$. Let $\ell_B$ be the line through the two vertices of $\triangle_B$ other than $B$. Let $\triangle_C$ and $\ell_C$ be defined analogously. Let $Y$ be the intersection of $AC$ and $\ell_B$, and let $Z$ be the intersection of $AB$ and $\ell_C$.
@@ -325,24 +313,18 @@ Now, we use the lemmas to finish. Let $s_k$ be the number of solitary integers $
  Given the conditions, $n$ is \textit{solitary} if and only if
 
  
-                \begin{itemize}
-                    \item $n$ contains 1
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item All numbers to the right of the 1 in $n$ are 9
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item All numbers to the left of the 1 in $n$ are "2" or "0"
-                \end{itemize}
-
-
-                The last part is to count all such $n$. From any number, the digit 1 can be placed at an index $m$ from the left ($1 \leq m \leq 2026$). 
+            \begin{itemize}
+        \item $n$ contains 1
+            \end{itemize}
+            
+            \begin{itemize}
+        \item All numbers to the right of the 1 in $n$ are 9
+            \end{itemize}
+            
+            \begin{itemize}
+        \item All numbers to the left of the 1 in $n$ are "2" or "0"
+            \end{itemize}
+            The last part is to count all such $n$. From any number, the digit 1 can be placed at an index $m$ from the left ($1 \leq m \leq 2026$). 
 
  There are exactly $2026 - m$ positions to the right of 1 that are all 9. Otherwise, there are exactly $m-1$ positions to the left of 1. Those have two choices each, giving $2^{m-1}$ cases. So, on any given integer with $m$ digits, we may form $2^{m-1}$ solitary integers.
 
@@ -455,7 +437,6 @@ We claim that all solutions are of the form $(a, b) = (F_i, F_{i-2})$ or $(F_{i-
  
 Putting all this together finishes the second case. Finally, the proof is complete $\square$
 
- 
 
 
 \end{enumerate}

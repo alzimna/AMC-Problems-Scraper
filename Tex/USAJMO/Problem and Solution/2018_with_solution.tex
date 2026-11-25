@@ -118,14 +118,15 @@ Let $a_n$ be the number of $n$-digit numbers that satisfy the condition that mos
  
 
 
+ 
+
+
 	\item (\textit{USAJMO 2018}) Note: For any geometry problem whose statement begins with an asterisk ($*$), the first page of the solution must be a large, in-scale, clearly labeled diagram. Failure to meet this requirement will result in an automatic 1-point deduction. 
 
 
  Let $a,b,c$ be positive real numbers such that $a+b+c=4\sqrt[3]{abc}$. Prove that 
  \[2(ab+bc+ca)+4\min(a^2,b^2,c^2)\ge a^2+b^2+c^2.\]
 
-
- 
 
 
 
@@ -342,8 +343,7 @@ Notice that
 \textbf{Solution}
 
 $\textbf{Lemma: }$ For fixed $i\neq j,$ where $i, j\in\{1, 2, ..., p\},$ the statement $a_i + ik\equiv a_j + jk\text{ (mod } p\text{)}$ holds for exactly one $k\in {1, 2, ..., p}.$
-
- $\textbf{Proof: }$ Notice that the left side minus the right side is congruent to $(a_i - a_j) + (i - j)k$ modulo $p.$ For this difference to equal $0,$ there is a unique solution for $k$ modulo $p$ given by $k\equiv (a_j - a_i)(i - j)^{-1}\text{ (mod } p\text{)},$ where we have used the fact that every nonzero residue modulo $p$ has a unique multiplicative inverse. Therefore, there is exactly one $k\in {1, 2, ..., p}$ that satisfies $a_i + ik\equiv a_j + jk\text{ (mod } p\text{)}$ for any fixed $i\neq j. \textbf{ End Lemma}$
+$\textbf{Proof: }$ Notice that the left side minus the right side is congruent to $(a_i - a_j) + (i - j)k$ modulo $p.$ For this difference to equal $0,$ there is a unique solution for $k$ modulo $p$ given by $k\equiv (a_j - a_i)(i - j)^{-1}\text{ (mod } p\text{)},$ where we have used the fact that every nonzero residue modulo $p$ has a unique multiplicative inverse. Therefore, there is exactly one $k\in {1, 2, ..., p}$ that satisfies $a_i + ik\equiv a_j + jk\text{ (mod } p\text{)}$ for any fixed $i\neq j. \textbf{ End Lemma}$
 
  Suppose that you have $p$ graphs $G_1, G_2, ..., G_p,$ and graph $G_k$ consists of the vertices $(i, k)$ for all $1\le i\le p.$ Within any graph $G_k,$ vertices $(i_1, k)$ and $(i_2, k)$ are connected by an edge if and only if $a_{i_1} + i_1k\equiv a_{i_2} + i_2k\text{ (mod } p\text{)}.$ Notice that the number of disconnected components of any graph $G_k$ equals the number of distinct remainders when divided by $p$ given by the numbers $a_1 + k, a_2 + 2k, ..., a_p + pk.$
 

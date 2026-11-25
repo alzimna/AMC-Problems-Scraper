@@ -61,7 +61,26 @@ Claim Both $m,n$ can not be even.
 
  $S_8=2$ and $S_4=2$ so $S_8 \neq 2 S_4^2$.
 
- This is contradiction. So, at least one of $m,n$ must be odd. WLOG assume 
+ This is contradiction. So, at least one of $m,n$ must be odd. WLOG assume $n$ is odd and m is even. The coefficient of $y^{m+n-1}$ in $\frac{S_{m+n}}{m+n}$ is $\frac{\binom{m+n}{1} }{m+n} =1$
+
+ The coefficient of $y^{m+n-1}$ in $\frac{S_m\cdot S_n}{m\cdot n}$ is $\frac{2}{m}$.
+
+ Therefore, $\boxed{m=2}$.
+
+ Now choose $x=y=\frac1,z=(-2)$. (sic)
+
+ Since $\frac{S_{n+2}}{2+n}=\frac{S_2}{2}\frac{S_n}{n}$ holds for all real $x,y,z$ such that $x+y+z=0$.
+
+ We have $\frac{2^{n+2}-2}{n+2} = 3\cdot\frac{2^n-2}{n}$. Therefore,
+
+ \begin{equation*}\label{eq:l2}\frac{2^{n+1}-1}{n+2} =3\cdot\frac{2^{n-1}-1}{n}\ldots\tag{**}\end{equation*}
+
+ Clearly $(\ref{eq:l2})$ holds for $n\in\{5,3\}$.And one can say that for $n\ge 6$,$\text{RHS of (\ref{eq:l2})}<\text{LHS of (\ref{eq:l2})}$.
+
+ 
+So our answer is $(m,n)=(5,2),(2,5),(3,2),(2,3)$.
+
+ -ftheftics (edited by integralarefun)
 
  
 
@@ -77,8 +96,6 @@ Claim Both $m,n$ can not be even.
 
  $I.Q.(F) = \frac{\text{Area (F)}}{\text{[Perimeter (F)]}^2}$
 
-
- 
 
 
 
@@ -126,7 +143,6 @@ Indeed, $\boxed{k=2935363331541925531}$ has the requisite property.
 
  And $k>>3,5,17,257,65537,6700417,641$ so the relevant values will, in fact, always be composite. $\blacksquare$
 
- 
 
 
 	\item (\textit{USAMO 1982}) $A,B$, and $C$ are three interior points of a sphere $S$ such that $AB$ and $AC$ are perpendicular to the diameter of $S$ through $A$, and so that two spheres can be constructed through $A$, $B$, and $C$ which are both tangent to $S$. Prove that the sum of their radii is equal to the radius of $S$.
@@ -160,11 +176,8 @@ Let $a \top b$ denote line $a$ bisecting line segment $b$.
  Since $O_1 O_2 || MN$ it follows that $OY \, \top \, \overline{MN} \Rightarrow OY \, \top \,  \overline{O_1 O_2}$. Similarly we have that $O_1 O_2 \, \top \, \overline{YM} \Rightarrow O_1 O_2 \, \top \,  \overline{OY}$.
 
  And so $O_1 O O_2 Y$ is a parallelogram because $\overline{OY}$ and $\overline{O_1 O_2}$ bisect each other, meaning $R = \overline{OZ} = \overline{O O_2} + \overline{O_2 Z} = \overline{O_1 Y}+ R_2 = R_1 + R_2$
-
- 
 $Quod \enspace Erat \enspace Demonstrandum$
 
- 
 
 
 \end{enumerate}

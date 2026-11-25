@@ -15,7 +15,6 @@ It suffices to show that if $a,b,c$ are integers such that $P(a) = b$, $P(b)=c$,
  \[a-b \mid P(a) - P(b) = b-c \mid P(b)-P(c) = c-a \mid P(c) - P(a) = a-b ,\]so the quanitities $(a-b), (b-c), (c-a)$ must be equal in absolute value.  In fact, two of them, say $(a-b)$ and $(b-c)$, must be equal.  Then
  \[0 = \lvert (a-b) + (b-c) + (c-a) \rvert = \lvert 2(a-b) + (c-a) \rvert \ge 2 \lvert a-b \rvert - \lvert c-a \rvert = \lvert a-b \rvert ,\]so $a=b= P(a)$, and $c= P(b) = P(a) = b$, so $a$, $b$, and $c$ are equal, as desired.  $\blacksquare$
 
- 
 
 
 
@@ -49,7 +48,6 @@ Assume for the sake of contradiction that is possible for unique integers $a,b,c
  \[c-a=P(b)-P(c)=d_1(b^n-c^n)+d_2(b^{n-1}-c^{n-1})+\cdots +d_{n-1}(b-c)\]
  \[a-b=P(c)-P(a)=d_1(c^n-a^n)+d_2(c^{n-1}-a^{n-1})+\cdots +d_{n-1}(c-a)\] By the RHS, note that $a-b\mid P(a)-P(b)$ so $\lvert{a-b}\rvert\leq\lvert{b-c}\rvert.$  Similarly, $\lvert{b-c}\rvert\leq\lvert{c-a}\rvert$ and $\lvert{c-a}\rvert\leq\lvert{a-b}\rvert.$  Hence, $\lvert{a-b}\rvert\leq\lvert{b-c}\rvert\leq\lvert{c-a}\rvert\leq\lvert{a-b}\rvert$ so $\lvert{a-b}\rvert=\lvert{b-c}\rvert=\lvert{c-a}\rvert.$  Assume WLOG that $a>b>c$ so $a-b=a-c$ and $b-c=c-a.$  From the first equation, we get $b=c$ and substituting this in the second gives $c=a.$  Hence, $a=b=c$, contradicting the uniqueness of $a,b,c.$ $\blacksquare$
 
- 
 
 
 
@@ -65,7 +63,6 @@ Assume that $a, b$ and $c$ are distinct integers which satisfy the given conditi
 
 We get that $a-b|b-c, b-c|c-a, c-a|a-b$. Thus, we can say that $(b-c) = (a-b)k, (c-a) = (b-c)j, (a-b) = (c-a)m$, for non zero integers, not necesarily positive, k, j, and m. Multiplying these equations and canceling, we get that $kjm$=1. This means that either k=1, m=1, j=1, or two of the variables are equal to 1 and the other is equal to -1. If all of the variables are equal to zero, plugging in gives us that $a=b=c$, contradictory to the conditions given in the problem statement. If two of the variables are equal to -1, and the other is equal to 1, then WLOG let $k=m=-1, j=1$. But this implies that the distinct integer condition is not satisfied, and hence, this case is invalid. Thus, it is impossible. $\blacksquare$<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1974}) Prove that if $a$, $b$, and $c$ are positive real numbers, then
@@ -73,7 +70,6 @@ We get that $a-b|b-c, b-c|c-a, c-a|a-b$. Thus, we can say that $(b-c) = (a-b)k, 
 
  $a^ab^bc^c\ge (abc)^{(a+b+c)/3}$
 
- 
 
 
 
@@ -142,12 +138,9 @@ WLOG let $a\ge b\ge c$. Let $b = ax$ and $c = ay$, where $x \ge 1$ and $y \ge 1$
  WLOG, let $y \ge x$ and $y =kx$ for $k \ge 1$. Then our expression becomes 
 
  $x^{x}(xk)^{xk} \ge x^{xk}(xk)^{x}$
-
- $x^{x+xk}k^{xk} \ge x^{x+xk}k^{x}$
-
- $k^{xk} \ge k^{x}$
-
- $k^k \ge k$
+$x^{x+xk}k^{xk} \ge x^{x+xk}k^{x}$
+$k^{xk} \ge k^{x}$
+$k^k \ge k$
 
  This is clearly true for $k \ge 1$.
 
@@ -202,7 +195,6 @@ Replacing $a$ with $ak$, $b$ with $bk$, and $c$ with $ck$, for some positive rea
 
 Let $\log_2a=x$, $\log_2b=y$ and $\log_2c=z$, and WLOG $a\ge b\ge c >0$. Then we have both $a\ge b\ge c$ and $x\ge y \ge z$.By the rearrangement inequality, $ax+by+cz\ge ay + bz +cx$ and $ax+by +cz\ge az+bx+cy$.Summing, $2(ax+by+cz)\ge a(y+z)+b(x+z)+c(x+y)$Adding $ax+by+cz$,we get$ax+by+cz\ge \frac{(a+b+c)(x+y+z)}{3}$.Now we substitute back for $x,y,z$ to get:$\log_2a^ab^bc^c\ge \log_2(abc)^{\frac{a+b+c}{3}}$.Raising $2$ to the power of each side, we get$a^ab^bc^c\ge (abc)^{\frac{a+b+c}{3}}$
 
- 
 
 
 
@@ -255,6 +247,10 @@ As in solution 2:
  
 
 
+ <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
+
+
+
 	\item (\textit{USAMO 1974}) Two boundary points of a ball of radius 1 are joined by a curve contained in the ball and having length less than 2. Prove that the curve is contained entirely within some hemisphere of the given ball.
 
 
@@ -284,7 +280,6 @@ Let the curve intersect the sphere at points A and B. Let B' be the point diamet
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1974}) A father, mother and son hold a family tournament, playing a two person board game with no ties. The tournament rules are:
@@ -376,10 +371,8 @@ By the pigeonhole principle, there may be no more than 4 games; once the 4th gam
  $P(B) > P'(C)$:  Calculating $P(B) / P'(C)$, we get $x^2(1-y)z / xy(1-y)z$, which simplifies to $x/y$.  
 
  Since $x > y$
-
- $x/y > 1$
-
- $P(B) / P'(C) > 1$
+$x/y > 1$
+$P(B) / P'(C) > 1$
 
  so $P(B) > P'(C)$.
 
@@ -406,18 +399,14 @@ By the pigeonhole principle, there may be no more than 4 games; once the 4th gam
  Evidently $P(1)>P(3)$, so all that is left is to prove that $P(1)>P(2)$.
 
  $P(1)>P(2)$
-
- $ab+b^2(1-a)(1-c)+(1-b)abc>ab+a^2c(1-b)+ab(1-a)(1-c)$
-
- $b^2(1-a)(1-c)+(1-b)abc>a^2c(1-b)+ab(1-a)(1-c)$
-
- $b(b-a)(1-a)(1-c)>ac(a-b)(1-b)$
+$ab+b^2(1-a)(1-c)+(1-b)abc>ab+a^2c(1-b)+ab(1-a)(1-c)$
+$b^2(1-a)(1-c)+(1-b)abc>a^2c(1-b)+ab(1-a)(1-c)$
+$b(b-a)(1-a)(1-c)>ac(a-b)(1-b)$
 
  Using the fact that $a<b$, we easily find that the LHS is positive while the RHS is negative, proving the inequality.
 
  <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1974}) Consider the two triangles $\triangle ABC$ and $\triangle PQR$ shown in Figure 1.  In $\triangle ABC$, $\angle ADB = \angle BDC = \angle CDA = 120^\circ$.  Prove that $x=u+v+w$.
@@ -428,8 +417,6 @@ By the pigeonhole principle, there may be no more than 4 games; once the 4th gam
                     \end{figure}
                     
 
-
- 
 
 
 
@@ -452,7 +439,6 @@ We rotate figure $PRQM$ by a clockwise angle of $\pi/3$ about $Q$ to obtain figu
  \begin{align*}  \frac{(u+v+w)^2 \sqrt{3}}{2} &= 3 \frac{(wv+vu+uw)\sqrt{3}}{4} + \frac{\bigl[2(u^2+w^2+v^2) + wv + vu + uw \bigr] \sqrt{3}}{4} \\ &= 3 [ABC] + \frac{(a^2+b^2+c^2)\sqrt{3}}{4} = 2[PQR] . \end{align*}
 But the area of triangle $PQR$ is $x^2 \sqrt{3}/4$.  It follows that $u+v+w=x$, as desired.  $\blacksquare$
 
- 
 
 
 
@@ -497,7 +483,6 @@ Finally, $RQ = RX+XQ = u+v+w$, as desired.
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1974\_USAMO\_Problems/Problem\_5&action=edit}{add it} to this page.</i>
 
- 
 
 
 \end{enumerate}

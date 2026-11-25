@@ -28,7 +28,16 @@ Expanding both sides,
 
 \textbf{Solution}
 
-Let two new segments $FD$ and $BE$ intersect at point $X$ and let $AD$ and $CF$ intersect at $Y$ .Consider quadrilateral $AFDC$. Then we get that the cross ratio $(B,Y;X,E)=-1$.Thus the condition $\angle FDE=90°$ implies $\angle FDA$=$\angle FDB$. Hence F is the A-excenter of the triangle $ADC$. Thus we get $\angle TAF$=$\angle FAD$=$\angle DAC$, where  $T$ is intersection of $FD$ and $AC$.Then we get $\angle BAC=120^\circ$
+Let $\beta=\angle ABC$ and $\gamma=\angle ACB$, and assume $\angle BAC=120^\circ$. Erect equilateral triangles $DBS$ and $DCK$ on $DB$ and $DC$, both on the same side of $BC$ as $A$. We claim that $S$ is the circumcentre of $\triangle DBE$ and $K$ is the circumcentre of $\triangle DCF$.
+
+ By the angle bisector theorem $DB/DC=AB/AC$, and $DS=DB$, so $DS/DC=AB/AC$. Also $\angle SDC=120^\circ=\angle BAC$. Hence $\triangle SDC\sim\triangle BAC$ by SAS, so $S$ lies on line $CA$. Since $\angle CDA=120^\circ-\gamma<120^\circ=\angle CDS$, $S$ lies on $CA$ extended beyond $A$. So the rays $ES$ and $EA$ coincide.
+
+ Now $\angle SBE=\angle DBS-\angle DBE=60^\circ-\dfrac{\beta}{2}$. In triangle $ABE$ we get $\angle BES=\angle BEA=180^\circ-120^\circ-\dfrac{\beta}{2}=60^\circ-\dfrac{\beta}{2}$. Thus $\angle SBE=\angle BES$, so $SE=SB=SD$. Hence $S$ is the circumcentre of $\triangle DBE$. Similarly for $K$, $\angle KCF=60^\circ-\dfrac{\gamma}{2}=\angle CFK$, so $KF=KC=KD$, and hence $K$ is the circumcentre of $\triangle DCF$.
+
+ Then $\angle DSE=2\angle DBE=\beta$, and since $SD=SE$ we get $\angle SDE=90^\circ-\dfrac{\beta}{2}$. Similarly $\angle KDF=90^\circ-\dfrac{\gamma}{2}$. Also $\angle SDK=180^\circ-60^\circ-60^\circ=60^\circ$.
+
+ Measuring from $DC$ we have $\angle CDE=30^\circ+\dfrac{\beta}{2}$, $\angle CDK=60^\circ$, $\angle CDS=120^\circ$ and $\angle CDF=150^\circ-\dfrac{\gamma}{2}$. Since $\beta,\gamma<60^\circ$, the rays occur in the order $DE,DK,DS,DF$, so $\angle SDE$ and $\angle KDF$ overlap exactly in $\angle SDK$. Therefore
+ \[\angle EDF=\left(90^\circ-\dfrac{\beta}{2}\right)+\left(90^\circ-\dfrac{\gamma}{2}\right)-60^\circ=120^\circ-\dfrac{\beta+\gamma}{2}.\]But $\beta+\gamma=60^\circ$, so $\angle EDF=90^\circ$. Q.E.D.
 
  
 
@@ -74,7 +83,7 @@ Let $s(x)$ be an arbitrary polynomial in $X.$ Then $0<s(x)<1$ when $0<x<1.$ Defi
 
 \textbf{Solution}
 
-<i>This problem needs a solution. If you have a solution for it, please help us out by \href{https://artofproblemsolving.com/wiki/index.php?title=1987\_USAMO\_Problems/Problem\_4&action=edit}{adding it}.</i> 
+Let $O$ be the center of $C_1$ and $C_2$. The line $\overleftrightarrow{AB}$ intersects $C_2$ at the points $D$ and $C$, where $A$ is located between the points $D$ and $B$, and line $\overleftrightarrow{XY}$ intersects $C_2$ for the second time at the point $Z$. Since points $X$ and $Y$ are located on different sides of the point $B$, the point $Z$ would be between the points $B$ and $Y$. Observe that $OA=OB=\frac{1}{2}$, $OC=OD=\frac{k}{2}$ and $DA=BC=\frac{k-1}{2}$. Since $AY=k$ and $OZ=\frac{k}{2}$, then $Z$ is the midpoint of the segment $BY$. So, $BZ=ZY$. Power of a Point in $C_2$ gives $\frac{k+1}{2}\cdot \frac{k-1}{2}=DB\cdot BC=XB\cdot BZ=\dfrac{XB\cdot BY}{2}$. By AM-GM, $\dfrac{XB\cdot BY}{2}\le\dfrac{(XB+BY)^2)}{8}\Rightarrow XY\geq\sqrt{2k^2-2}$. Equality occurs iff $XB/BY=1$. It remains to show that such a segment exists.  Let $\theta$ be the angle between $XY$ and $AB$.Then $XB=\dfrac{\cos\theta+\sqrt{k^2-\sin^2\theta}}{2}$ and $BY=\sqrt{k^2-\sin^2\theta}-\cos\theta$, so the ratio $\dfrac{XB}{BY}$ is continuous in $\theta$ (as the denominator is nonzero for $1<k<3$). At $\theta=0$, $\frac{XB}{BY}=\frac{\frac{1+\sqrt{k^2}}{2}}{\sqrt{k^2}-1}=\frac{k+1}{2k-2}$ (which always exceeds $1$ for $k\in (1,3)$). Then at $\theta=\frac{\pi}{2}$, $\frac{XB}{BY}=\frac{\frac{0+\sqrt{k^2-1}}{2}}{\sqrt{k^2-1}-0}=\frac{1}{2}$. By the Intermediate Value Theorem, there must exist a value of $\theta$ such that $\frac{XB}{BY}=1$.
 
  
 

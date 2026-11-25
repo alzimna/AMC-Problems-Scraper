@@ -14,12 +14,12 @@ We claim that the smallest $n$ is $67^2 = \boxed{4489}$.
  Let $S = \{1, 4, 9, \ldots\}$ be the set of positive perfect squares. We claim that the relation $R = \{(j, k)\in [n]\times[n]\mid jk\in S\}$ is an equivalence relation on $[n]$.
 
  
-                \begin{itemize}
-                    \item It is reflexive because $k^2\in S$ for all $k\in [n]$.\item It is symmetric because $jk\in S\implies kj = jk\in S$.\item It is transitive because if $jk\in S$ and $kl\in S$, then $jk\cdot kl = jlk^2\in S\implies jl\in S$, since $S$ is closed under multiplication and a non-square times a square is always a non-square.
-                \end{itemize}
-
-
-                We are restricted to permutations for which $ka_k \in S$, in other words to permutations that send each element of $[n]$ into its equivalence class. Suppose there are $N$ equivalence classes: $C_1, \ldots, C_N$. Let $n_i$ be the number of elements of $C_i$, then $P(n) = \prod_{i=1}^{N} n_i!$.
+            \begin{itemize}
+        \item It is reflexive because $k^2\in S$ for all $k\in [n]$.
+        \item It is symmetric because $jk\in S\implies kj = jk\in S$.
+        \item It is transitive because if $jk\in S$ and $kl\in S$, then $jk\cdot kl = jlk^2\in S\implies jl\in S$, since $S$ is closed under multiplication and a non-square times a square is always a non-square.
+            \end{itemize}
+            We are restricted to permutations for which $ka_k \in S$, in other words to permutations that send each element of $[n]$ into its equivalence class. Suppose there are $N$ equivalence classes: $C_1, \ldots, C_N$. Let $n_i$ be the number of elements of $C_i$, then $P(n) = \prod_{i=1}^{N} n_i!$.
 
  Now $2010 = 2\cdot 3\cdot 5\cdot 67$. In order that $2010\mid P(n)$, we must have $67\mid n_m!$ for the class $C_m$ with the most elements. This means $n_m\geq 67$, since no smaller factorial will have $67$ as a factor. This condition is sufficient, since $n_m!$ will be divisible by $30$ for $n_m\geq 5$, and even more so $n_m\geq 67$.
 
@@ -124,7 +124,6 @@ Thus, we can only match k with $a_k$ if they have the same f value. Thus, to fin
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=2010\_USAJMO\_Problems/Problem\_1&action=edit}{add it} to this page.</i>
 
- 
 
 
 
@@ -153,8 +152,7 @@ The answer is 4489.(67 squared)
 We start by realizing that we could change this confusing set theory problem into a number theory problem. Notice that we have $(a_1, a_2, ... a_n)$ as our permutation of the set $(1, 2, ..., n)$. Essentially, the problem is asking us to find the number of permutations of this original set such that $a_1, 2a_2, ..., na_n$ are all perfect squares. From here, we realize that we could write the following:
 
  $a_1 = (p_1)^{2}$
-
- $a_2 = 2(p_2)^{2}$
+$a_2 = 2(p_2)^{2}$
 
  .
 
@@ -206,10 +204,12 @@ For a given sequence ${a_1,a_2,a_3,...,a_n}$ to obey all the requirements, we mu
 
  
             \begin{enumerate}
-                
-\item  $x_1 < x_2 < \cdots < x_{n-1}$;
-\item  $x_i + x_{n-i} = 2n$ for all $i = 1, 2, \ldots, n - 1$;
-\item  given any two indices $i$ and $j$ (not necessarily distinct) for which $x_i + x_j < 2n$, there is an index $k$ such that $x_i + x_j = x_k$.
+
+        \item  $x_1 < x_2 < \cdots < x_{n-1}$;
+
+        \item  $x_i + x_{n-i} = 2n$ for all $i = 1, 2, \ldots, n - 1$;
+
+        \item  given any two indices $i$ and $j$ (not necessarily distinct) for which $x_i + x_j < 2n$, there is an index $k$ such that $x_i + x_j = x_k$.
 
             \end{enumerate}
             
@@ -360,9 +360,8 @@ Let $\alpha = \angle BAZ$, $\beta = \angle ABX$.Since $XY$ is a chord of the cir
  \[\angle XAY + \angle YBZ = \frac{\angle XOY}{2} + \frac{\angle YOZ}{2}=\frac{\angle XOY + \angle YOZ}{2} = \frac{\angle XOZ}{2}. \space \space (2)\] 
 
  
-Combining statements $(1)$ and $(2)$, we can say that $\angle PTS = \frac{\angle XOZ}{2}$, as desired. $\square$ 
+Combining statements $(1)$ and $(2)$, we can say that $\angle PTS = \frac{\angle XOZ}{2}$, as desired. $\square$
 
- 
 
 
 	\item (\textit{USAJMO 2010}) A triangle is called a \textit{parabolic triangle} if its vertices lie on a parabola $y = x^2$. Prove that for every nonnegative integer $n$, there is an odd number $m$ and a parabolic triangle with vertices at three distinct points with integer coordinates with area $(2^nm)^2$.
@@ -431,7 +430,6 @@ We simply need to provide an example for all $n$ that satisfies the condition, a
 By the shoelace formula, this triangle has area 
  \[\frac{1}{2}|x_1y_2 - y_1x_2 + x_2y_3 - y_2x_3|=\frac{1}{2}|a(a^4)-a^2(a^2)|=\frac{1}{2}|a^5 - a^4| = \frac{a^4(a-1)}{2}=2^{2n}(2^{2n+1}+1)^4\]which clearly can be written in the form $(2^n \times m)^2 = 2^{2n} \times m^2$, where $m^2 = (2^{2n+1}+1)^4$ or $m=(2^{2n+1}+1)^2$. Now, we just have to prove that $(2^{2n+1}+1)^2$ is always odd. This is true because $2^{2n+1}$ is even (because it's a power of $2$), so $2^{2n+1}+1$ is odd, and since an odd number squared is odd, the whole thing is odd as well. And we are done, since we have proved that for all $n$, we can show that there exists such a triangle by merely providing an example. $\square$
 
- 
 
 
 	\item (\textit{USAJMO 2010}) Two permutations $a_1, a_2, \ldots, a_{2010}$ and $b_1, b_2, \ldots, b_{2010}$ of the numbers $1, 2, \ldots, 2010$ are said to intersect if $a_k = b_k$ for some value of $k$ in the range $1\leq k\leq 2010$. Show that there exist $1006$ permutations
@@ -519,10 +517,7 @@ We know that angle $BIC = 135^{\circ}$, as the other two angles in triangle $BIC
                         \includegraphics[width=0.5\textwidth]{Solution/USAJMO_I_2010_6_Solution_Figure_1.png}
                     \end{figure}
                     
-
- 
-
- $BC^2 = BI^2 + CI^2 - 2BI\cdot CI \cdot \cos 135^{\circ}$. Observing that $BC^2 = AB^2 + AC^2$ is an integer and that $\cos 135^{\circ} = -\frac{\sqrt{2}}{2},$ we have
+$BC^2 = BI^2 + CI^2 - 2BI\cdot CI \cdot \cos 135^{\circ}$. Observing that $BC^2 = AB^2 + AC^2$ is an integer and that $\cos 135^{\circ} = -\frac{\sqrt{2}}{2},$ we have
 
  
  \[BC^2 - BI^2 - CI^2 = BI\cdot CI\cdot \sqrt{2}\]
@@ -549,7 +544,6 @@ The answer is no.
  Suppose otherwise. It is easy to see (through simple angle chasing) that $\angle DIC=45^{\circ}$. Also, since $I$ is the incenter, we have $\angle IAC = 45^{\circ}$. Using the Law of Cosines, we have 
  \[CD^2=IC^2+ID^2-\sqrt{2}(IC)(ID),\] so that $CD$ is irrational. But $\triangle IAC \sim \triangle DIC$, thus $IC^2=CD\cdot AC$, implying that $CD$ is rational, contradiction. $\blacksquare$
 
- 
 
 
 

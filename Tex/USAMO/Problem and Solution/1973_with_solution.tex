@@ -58,8 +58,7 @@ Let the side length of the regular tetrahedron $ABCD$ be $s$.
 
 
   $X_0=1$, $X_1=1$, $X_{n+1}=X_n+2X_{n-1}$ $(n=1,2,3,\dots),$
-
- $Y_0=1$, $Y_1=7$, $Y_{n+1}=2Y_n+3Y_{n-1}$ $(n=1,2,3,\dots)$.
+$Y_0=1$, $Y_1=7$, $Y_{n+1}=2Y_n+3Y_{n-1}$ $(n=1,2,3,\dots)$.
 
  Thus, the first few terms of the sequences are:
 
@@ -84,20 +83,16 @@ We can look at each sequence $\bmod{8}$:
  $Y$: $1$, $7$, $1$, $7$, $1$, $7$, $\dots$.
 
  
-                \begin{itemize}
-                    \item Proof that $X$ repeats $\bmod{8}$:
-                \end{itemize}
-
-
-                The third and fourth terms are $3$ and $5$ $\bmod{8}$. Plugging into the formula, we see that the next term is $11\equiv 3\bmod{8}$, and plugging $5$ and $3$, we get that the next term is $13\equiv 5\bmod{8}$. Thus the sequence $X$ repeats, and the pattern is $3,5,3,5,\dots$.
+            \begin{itemize}
+        \item Proof that $X$ repeats $\bmod{8}$:
+            \end{itemize}
+            The third and fourth terms are $3$ and $5$ $\bmod{8}$. Plugging into the formula, we see that the next term is $11\equiv 3\bmod{8}$, and plugging $5$ and $3$, we get that the next term is $13\equiv 5\bmod{8}$. Thus the sequence $X$ repeats, and the pattern is $3,5,3,5,\dots$.
 
  
-                \begin{itemize}
-                    \item Proof that $Y$ repeats $\bmod{8}$:
-                \end{itemize}
-
-
-                The first and second terms are $1$ and $7$ $\bmod{8}$. Plugging into the formula, we see that the next term is $17\equiv 1\bmod{8}$, and plugging $7$ and $1$, we get that the next term is $23\equiv 7\bmod{8}$. Thus the sequence $Y$ repeats, and the pattern is $1,7,1,7,\dots$.
+            \begin{itemize}
+        \item Proof that $Y$ repeats $\bmod{8}$:
+            \end{itemize}
+            The first and second terms are $1$ and $7$ $\bmod{8}$. Plugging into the formula, we see that the next term is $17\equiv 1\bmod{8}$, and plugging $7$ and $1$, we get that the next term is $23\equiv 7\bmod{8}$. Thus the sequence $Y$ repeats, and the pattern is $1,7,1,7,\dots$.
 
  
 
@@ -118,16 +113,13 @@ We can solve this problem by finding a particular solution for each linear recur
  $X_{n+1} - X_n - 2X_{n-1} = 0$ with characteristic polynomial
 
  $X^2 - X - 2 = (X - 2)(X + 1)$, so $X = -1, 2$
-
- $X_n = A(2)^n + B(-1)^n$
+$X_n = A(2)^n + B(-1)^n$
 
  After plugging in to find the particular solution:
 
  $X_0 = 1 = A + B$
-
- $X_1 = 1 = 2A - B$
-
- $A = \frac{1}{3}$ and $B = \frac{2}{3}$, so
+$X_1 = 1 = 2A - B$
+$A = \frac{1}{3}$ and $B = \frac{2}{3}$, so
 
  $X_n = \frac{1}{3}(2)^n + \frac{2}{3}(-1)^n$
 
@@ -138,10 +130,8 @@ We can solve this problem by finding a particular solution for each linear recur
  We know they're equal at $n = 0$, so let's set them equal and compare.
 
  $2(3)^n - (-1)^n = \frac{1}{3}((2)^n + 2(-1)^n)$
-
- $6(3)^n - 3(-1)^n = (2)^n + 2(-1)^n$
-
- $6(3)^n - 2^n = 5(-1)^n$
+$6(3)^n - 3(-1)^n = (2)^n + 2(-1)^n$
+$6(3)^n - 2^n = 5(-1)^n$
 
  By induction, we know in general that $(\alpha + 1)^n > \alpha^n$ for all $\alpha, n > 0$, so $6(3)^n > 2^n$ for all $n > 1$. 
 
@@ -163,7 +153,6 @@ First, $X_n$ and $Y_n$ are both positive for all nonnegative integers $n$. This 
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1973\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1973}) Three distinct vertices are chosen at random from the vertices of a given regular polygon of $(2n+1)$ sides. If all such choices are equally likely, what is the probability that the center of the given polygon lies in the interior of the triangle determined by the three chosen random points?
@@ -190,7 +179,6 @@ There are $\binom{2n+1}{3}$ ways how to pick the three vertices. We will now cou
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1973\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1973}) Determine all the \href{https://artofproblemsolving.com/wiki/index.php?title=Root}{roots}, \href{https://artofproblemsolving.com/wiki/index.php?title=Real}{real} or \href{https://artofproblemsolving.com/wiki/index.php?title=Complex}{complex}, of the system of simultaneous \href{https://artofproblemsolving.com/wiki/index.php?title=Equation}{equations}
@@ -215,12 +203,123 @@ Let $x$, $y$, and $z$ be the \href{https://artofproblemsolving.com/wiki/index.ph
 
 
 
-\textbf{Solution 2}
+\textbf{Solution 2 (Newton's Sums)}
 
-Let $P(t)=t^3-at^2+bt-c$ have roots x, y, and z. Then 
- \[0=P(x)+P(y)+P(z)=3-3a+3b-3c\] using our system of equations, so 
+Given 
+ \[x+y+z = 3, x^2 + y^2 + z^2 = 3\], we have
+ \[(x+y+z)^2 - 2(xy+yz+xz) = x^2 +y^2+z^2\]
+ \[\implies 9-2(xy+yz+xz) = 3\]
+ \[\implies xy+yz+xz = 3.\]
+
+ Therefore, define a monic cubic with roots $x,y,z$ such that $x^3 - 3x^2 + 3x - R$, where $R$ is a constant. Then, if $S_n = x^n + y^n + z^n$, we have that $S_{n+3} = 3S_{n+2} - 3S_{n-1} + RS_n$. Substituting $n = 0$, that is $3 = 9 - 9 + 3R \implies R = 1$. Thus the unique monic polynomial is $x^3 - 3x^2 + 3x - 1$, which is $(x-1)^3$. Since $x,y,z$ are roots, the only triple is $(1,1,1) \qquad \square$.
 
  
+
+
+
+\textbf{Solution 3}
+
+Let $P(t)=t^3-at^2+bt-c$ have roots x, y, and z. Then 
+ \[0=P(x)+P(y)+P(z)=3-3a+3b-3c\] using our system of equations, so $P(1)=0$. Thus, at least one of x, y, and z is equal to 1; without loss of generality, let $x=1$. Then we can use the system of equations to find that $y=z=1$ as well, and so $\boxed{(1,1,1)}$ is the only solution to the system of equations.
+
+ 
+
+
+
+\textbf{Solution 4}
+
+Let $a=x-1,$ $b=y-1$ and $c=z-1.$ Then 
+ \[a+b+c=0,\]
+ \[a^2+b^2+c^2=0,\]
+ \[a^3+b^3+c^3=0.\]We have
+ \begin{align*} 0&=(a+b+c)^3\\ &=(a^3+b^3+c^3)+3a^2(b+c)+3b^2(a+c)+3c^2(a+b)+6abc\\ &=0-3a^3-3b^3-3c^3+6abc\\ &=6abc. \end{align*}
+Then one of $a, b$ and $c$ has to be 0, and easy to prove the other two are also 0. So $\boxed{(1,1,1)}$ is the only solution to the system of equations.
+
+ J.Z.
+
+ 
+
+
+
+\textbf{Solution 5}
+
+We are going to use Intermediate Algebra Techniques to solve this equation.
+
+ Let's start with the first one: $x+y+z=3$. This will be referred as the FIRST equation.
+
+ We are going to use the first equation to relate to the SECOND one ($x^2+y^2+z^2=3$) and the THIRD one ($x^3+y^3+z^3=3)$.
+
+ Squaring this equation: $x^2+y^2+z^2+2xy+2yz+2xz=9$
+
+ Subtracting this equation from the 2nd equation in the problem, we have $2xy+2yz+2xz=6$, so $xy+xz+yz=3$.
+
+ Now we try the same idea with the cubed terms. Cube the first equation:
+
+ $x^3+y^3+z^3+3xy^2+3xz^2+3yx^2+3yz^2+3zx^2+3zy^2=27$. Plug in $x^3+y^3+z^3=3$ and factor partially:
+
+ $3+3(x^2(y+z)+y^2(x+z)+z^2(x+y))+6xyz=27$.
+
+ Now here is the key step. Note that $z=3-x-y, y=3-x-z, x=3-y-z$. So we are going to substitute $y+z, x+z, x+y$ for each of the expressions and we get: $-x^3+3x^2-y^3+3y^2-z^3+3z^2=8-2xyz$ (I rearranged it a bit).
+
+ Resubstituting in the second and third equation: $-3+3(3)=8-2xyz$. So $xyz=1$.
+
+ So now we have three equations for the elementary symmetric sums of $x,y,z$:
+
+ Equation 4: $x+y+z=3$ (this is also equation 1)
+
+ Equation 5: $xy+yz+xz=3$
+
+ Equation 6: $xyz=1$.
+
+ If we call the solutions of $t^3-3t^2+3t-1=0$ (Equation 7) $a,b,c$, then $x,y,z$ are the three roots $a,b,c$ but in some order. Notice that Equation 7 can be factored as $(t-1)^3=0$, which means that $t=1$. Therefore $(x,y,z)$ are permutations of $(1,1,1)$ in some order, which can be only $(1,1,1)$. (This step uses Vieta's formulas)
+
+ Therefore, the only solution is $\boxed{(x,y,z)=(1,1,1)}$.
+
+ 
+
+
+
+\textbf{Solution 6}
+
+From the question
+
+ Equation 1 : $x+y+z=3$
+
+ Equation 2 : $x^2+y^2+z^2=3$
+
+ Equation 3 : $x^3+y^3+z^3=3$
+
+ From Eq(1) and Eq(2),
+
+ Equation 4 : $(x+y+z)^2=9 \implies x^2+y^2+z^2+2\sum xy = 9 \implies \sum xy = 3$
+
+ From Eq(1), Eq(3), and the fact that $(x+y+z)^3=x^3+y^3+z^3+3\prod(x+y)$,
+
+ Equation 5 : $(x+y+z)^3=x^3+y^3+z^3+3\prod(x+y)= 27 \implies \prod(x+y)=8$
+
+ As from Eq(1),  $\ x+y=3-z$,$\ y+z=3-x$,  $\ z+x = 3- y$
+
+ Equation 6 : $\prod(3-x) =8$
+
+ Now let there be a cubic function $f(t)$ with the roots $x,y,z$ so from the relation between roots and coefficients,
+
+ Equation 7 : $f(t)= t^3-3t^2+3t-d$   (As we don't know the product let the constant be $d$)
+
+ As $f(t) = (t-x)(t-y)(t-z)$ then at $t=3$,
+
+ Equation 8 : $f(3)=9-d=(3-x)(3-y)(3-z)$
+
+ And from Eq(6),
+
+ Equation 9 : $d= -1$
+
+ So finally,
+
+ Equation 10 : $f(t)=t^3-3t^2+3t-1=(t-1)^{3}$
+
+ So, $\ (x,y,z)=(1,1,1)$
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1973\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
+
 
 
 	\item (\textit{USAMO 1973}) Show that the cube roots of three distinct prime numbers cannot be three terms (not necessarily consecutive) of an arithmetic progression.
@@ -239,7 +338,6 @@ Assume that the cube roots of three distinct prime numbers can be three terms of
  
  \[q^{\dfrac{1}{3}}=p^{\dfrac{1}{3}}+md\]
 
- 
  \[r^{\dfrac{1}{3}}=p^{\dfrac{1}{3}}+nd\]
 
  where $m$, $n$ are distinct integers, and $d$ is the common difference in the progression. Then we have

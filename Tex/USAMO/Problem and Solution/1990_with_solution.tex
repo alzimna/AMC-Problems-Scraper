@@ -17,15 +17,13 @@ Consider license plates of $n$ digits, for some fixed $n$, issued with the same 
 
  It then follows that $10^{n-1}$ is the greatest number of license plates the state can issue.  For $n=6$, as in the problem, this number is $10^5$.  $\blacksquare$
 
- 
 
 
 
 \textbf{Solution 2}
 
 $\text{Constructive Induction for } n=6$
-
- \begin{verbatim}
+\begin{verbatim}
 
  \[n=1 \quad \text{1 element} \quad n=2 \quad \text{10 elements}\]  Suppose for $n$, we have a set $\left\{ \left( a_1, \ldots, a_n \right) \right\}$ that satisfies the condition. We need to construct $S_{n+1}$ such that it does not contain $\left( a_1, \ldots, a_n \right)$, denoted as $\left( b_1, \ldots, b_n \right)$.  Construct:  
  \[S_{n+1} = \left\{ \left( a_1, a_2, \ldots, a_{n-k}, k \right) \mid k = 1, 2, \ldots, 10, \left( a_1, \ldots, a_n \right) \in S_n \right\}\]  If $\left( a_1 + k, \ldots, a_{n+k}, k \right)$ and $\left( b_1, \ldots, b_{n+\ell}, \ell \right)$ have exactly one difference:  1. Case 1: $k \neq \ell$     
@@ -65,7 +63,6 @@ To prove this claim, we induct on $n$.  The statement evidently holds for our ba
  \begin{align*} f_{n+1}(x) &= \sqrt{x^2 + 6f_n(x)} < \sqrt{x^2+12x} < \sqrt{4x^2} = 2x, \text{ if } x>4 ; \\ f_{n+1}(x) &= \sqrt{x^2 + 6f_n(x)} = \sqrt{x^2 + 12x} = \sqrt{4x^2} = 2x, \text{ if } x=4 ; \\ f_{n+1}(x) &= \sqrt{x^2 + 6f_n(x)} > \sqrt{x^2+12x} > \sqrt{4x^2} = 2x, \text{ if } x<4 . \end{align*}
 The claim therefore holds by induction.  It then follows that for all nonnegative integers $n$, $x=4$ is the unique solution to the equation $f_n(x) = 2x$.  $\blacksquare$
 
- 
 
 
 
@@ -122,11 +119,8 @@ so that each integer is used once, and adjacent beads correspond to relatively p
  \[\gcd(n+b+1, n+b+14) = \gcd \bigl[ n+b+1, (n+b+14)-(n+b+1) \bigr] = \gcd( n+b+1, 13) ,\]so $n+b+1$ is relatively prime to $n+b+14$.  Finally, $b \le a+15 \le 17$.  It follows that setting $k=b$ satisfies the lemma.  $\blacksquare$
 
  Let $k$ be an integer as described in the lemma.  We place the integers $n, \dotsc, n+k, n+k+15, \dotsc, n+32$ on the necklace with 19 beads, and the integers $n+k+1, \dotsc, n+k+14$ on the necklace with 14 beads, in those orders.  Since $n$ is odd, $n$ is relatively prime to $n+32 = n+2^5$.  By definition, $n+k$ and $n+k+15$ are relatively prime, as are $n+k+1$ and $n+k+14$; finally, $a$ and $a+1$ are relatively prime for all integers $a$.  It follows that each bead in this arrangement is relatively prime to its neighbors.  $\blacksquare$
-
- 
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1990\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1990}) Find, with proof, the number of positive integers whose base-$n$ representation consists of distinct digits with the property that, except for the leftmost digit, every digit differs by $\pm 1$ from some digit further to the left. (Your answer should be an explicit function of $n$ in simplest form.)
@@ -144,9 +138,18 @@ Let a $k$-good sequence be a sequence of distinct integers $\{ a_i \}_{i=1}^k$ s
 
  \textit{Proof.} We induct on $k$.  For $k=1$, the lemma is trivially true.  Now, suppose the lemma holds for $k$.  If $\{ a_i \}_{i=1}^{k+1}$ is a $(k+1)$-good sequence, then $\{ a_i \}_{i=1}^k$ is a $k$-good sequence which starts on $a$, so it is a permutation of $k$ consecutive integers, say $m, \dotsc, M$.  Then the only possibilities for $a_{k+1}$ are $m-1$ and $M+1$; either way, $\{ a_i \}_{i=1}^{k+1}$ constitutes a permutation of $k+1$ consecutive integers.  Since there are $2^k$ possible sequences $\{a_i\}_{i=1}^k$, and 2 choices of $a_{k+1}$ for each of these sequences, it also follows that there are $2^k \cdot 2 = 2^{k+1}$ $(k+1)$-good sequences which start on $a$.  Thus the lemma holds by induction.  $\blacksquare$
 
- We now consider 
+ We now consider the number of desired positive integers with $k$ digits.  Evidently, $k$ must be less than or equal to $n$.  We also note that the digits of such an integer must constitute a $k$-good sequence.  Since the minimum of this sequence can be any of the digits $0, \dotsc, n-k$, unless the minimum is 0 and is the first digit (in which case the only possible sequence is an increasing arithmetic sequence), and there are $2^{k-1}$ $k$-good sequences up to translation, it follows that there are $(n-k+1) 2^{k-1}-1$ desired positive integers with $k$ digits.  Thus the total number of desired positive integers is
+ \begin{align*} \sum_{k=1}^n \bigl[ (n-k+1) 2^{k-1}-1 \bigr] &= -n + \sum_{k=1}^n \sum_{j=k}^n 2^{k-1} = -n + \sum_{j=1}^n \sum_{k=1}^j 2^{k-1} \\ &= -n + \sum_{j=1}^n (2^k-1) = - 2n -1 + \sum_{j=0}^n 2^k, \end{align*}
+which is equal to $2^{n+1} - 2(n+1)$, our answer.  $\blacksquare$
 
  
+
+
+ The lemma in the above solution is wrong. A 3-term sequence starting on 1 will not comply, for instance.My solution is shown as follows.We call all qualified numbers ‘good numbers’, with k digits, 1<=k<=n. See any good number as a k-term sequence, m being the minimal term, a being the first term. Note that 0<=m<=n-k.Lemma. It is trivially true that any good number consists of consecutive digits. It can be proven with induction easily.Now pick any m, let f(i) be the number of sequences when a=i, we prove that f(i)=C(k-1,i-m), m<=i<=m+k-1.Per Lemma, a sequence consists of consecutive digits: m,m+1,\ldots,i,\ldots,m+k-1. The first term a=i determined, there are k-1 remaining spaces to be filled. The digits smaller than i are m,m+1,\ldots,i-1, their only link to i is i-1, then i-2, so on so forth, eventually we can know they can only enter the sequence in one order which is descending: i-1,i-2,\ldots,m. Likewise, the digits bigger than i can only enter the sequence in one order which is ascending: i+1,i+2,\ldots,m+k-1. Therefore, the number of sequences is equivalent to the number of ways in which the i-m digits smaller than i occupy the k-1 remaining spaces, i.e., C(k-1,i-m).So, for any given m, the total number of sequences is $\sum$(f(i),i=m~m+k-1)=$\sum$(C(k-1,i),i=0~k-1)=2\textasciicircum{}(k-1). Considering that there are n-k+1 possibilities for m, and deducting the one special case with m=0 and a=0 (because the first digit cannot be 0), we now can have the total number of sequences for any given k: (n-k+1)2\textasciicircum{}(k-1)-1. Now we can arrive at the grand total: $\sum$((n-k+1)2\textasciicircum{}(k-1)-1,k=1~n). It is trivial that the final sum is 2\textasciicircum{}(n+1)-2(n+1). Done.Tmath2024 2026.5.18
+
+ 
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1990\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
+
 
 
 	\item (\textit{USAMO 1990}) An acute-angled triangle $ABC$ is given in the plane. The circle with diameter $\, AB \,$ intersects altitude $\, CC' \,$ and its extension at points $\, M \,$ and $\, N \,$, and the circle with diameter $\, AC \,$ intersects altitude $\, BB' \,$ and its extensions at $\, P \,$ and $\, Q \,$. Prove that the points $\, M, N, P, Q \,$ lie on a common circle.
@@ -181,7 +184,6 @@ Define $A'$ as the foot of the altitude from $A$ to $BC$. Then, $AA' \cap BB' \c
 Let $\omega_1$ be the circumcircle with diameter $AB$ and $\omega_2$ be the circumcircle with diameter $AC$.  We claim that the second intersection of $\omega_1$ and $\omega_2$ other than $A$ is $A'$, where $A'$ is the feet of the perpendicular from $A$ to segment $BC$.  Note that 
  \[\angle AA'B=90^{\circ}=\angle AB'B\] so $A'$ lies on $\omega_1.$  Similarly, $A'$ lies on $\omega_2$.  Hence, $AA'$ is the radical axis of $\omega_1$ and $\omega_2$.  By the Radical Lemma, it suffices to prove that the intersection of lines $MN$ and $PQ$ lie on $AA'$.  But, $MN$ is the same line as $CC'$ and $PQ$ is the same line as $BB'$.  Since $AA', BB'$, and $CC'$ intersect at the orthocenter $H$, $H$ lies on the radical axis $AA'$ and we are done. $\blacksquare$
 
- 
 
 
 
@@ -190,12 +192,9 @@ Let $\omega_1$ be the circumcircle with diameter $AB$ and $\omega_2$ be the circ
 We know that $BCB'C'$ is a cyclic quadrilateral. Hence, 
 
  $HB \cdot HB' = HC \cdot HC'$
-
- $\implies Pow_{\omega_{1}} = Pow_{\omega_{2}}$
-
- $\implies HM \cdot HN = HP \cdot HQ$
-
- $\implies MPNQ$ is cyclic $\raggedright\blacksquare$.
+$\implies Pow_{\omega_{1}} = Pow_{\omega_{2}}$
+$\implies HM \cdot HN = HP \cdot HQ$
+$\implies MPNQ$ is cyclic $\raggedright\blacksquare$.
 
  
 

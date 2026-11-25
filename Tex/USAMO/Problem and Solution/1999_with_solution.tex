@@ -40,7 +40,6 @@ For the proof let's look at the checkers board as a graph $G$, where the checker
 
  $\textit{Proof.}$ $2 \times V -2$ is the sum of ranks of the spanning tree created by decircuiting the graph $G$. Since the circuit rank of $G$ is $R$, $2R$ is the sum of ranks removed from $G$. Thus,  $2V -2 + 2R = 2 E.$ $\blacksquare$
 
- 
 
 
 
@@ -55,14 +54,11 @@ Call a square of the checkerboard “good” if it either has a checker on it or
  So the total number of good squares when we’ve put back every checker is at most $5 + 3(k - 1) = 3k + 2$. In order to satisfy condition (a), we have to make each of the $n^2$ squares good. In other words, we need $3k + 2 \geq n^2$, or 
  \[k \geq \frac{n^2 - 2}{3}.\]
 
- 
 
 
 	\item (\textit{USAMO 1999}) Let $ABCD$ be a cyclic quadrilateral. Prove that 
  \[|AB - CD| + |AD - BC| \geq 2|AC - BD|.\]
 
-
- 
 
 
 
@@ -131,7 +127,6 @@ First, suppose all the $a_i$ are positive.  Then
  \begin{align*} \max(a_1, \dotsc, a_n)^2 &\ge \sum_{i=1}^k a_i^2 /k \\ &\ge \left( n^2 - \sum_{i=k+1}^n a_i^2 \right)/k \\ &\ge \frac{n^2 - (2k-n)^2}{k} = 4(n-k). \end{align*}
 Since $k<n$, $4(n-k) > 4$.  It follows that $\max(a_1, \dotsc, a_n) \ge \sqrt{4} = 2$, as desired.  $\blacksquare$
 
- 
 
 
 
@@ -151,11 +146,8 @@ Assume the contrary and suppose each $a_i$ is less than 2.
 \textbf{Solution 3}
 
 Assume the contrary for maximum $M$ that $M < 2$. Then, all $a_i \leq M < 2$ hence $a_i < 2$. Note that $(a_i)(a_i - 2) < 0$ and therefore $a_i^2 < 2a_i$. When summing over all $n$, that implies $n^2 < 2\sum a_i$. Note that $\sum a_i < 2n$ and therefore $n^2 < 4n$ and thus $n < 4$. However $n \in \mathbb{Z}^+ \neq 1,2,3$ hence a contradiction arises, and so the maximum $M \ge 2$ as requested. $\square$
-
- 
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1999\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1999}) The Y2K Game is played on a $1 \times 2000$ grid as follows. Two players in turn write either an S or an O in an empty square. The first player who produces three consecutive boxes that spell SOS wins. If all boxes are filled without producing SOS then the game is a draw. Prove that the second player has a winning strategy.
@@ -174,12 +166,11 @@ Label the squares $1$ through $2000$. The first player writes a letter in any sq
  Now the second player repeats the following algorithm:
 
  
-                \begin{itemize}
-                    \item If he can complete SOS on his turn, he does so.\item Otherwise, since there are an odd number of empty squares at the beginning of his turn, there must be either one empty square surrounded by two filled squares or one empty square surrounded by two empty squares. In both cases, the player places an O in that square. In both situations, it is easy to verify that the first player cannot win on the next turn.
-                \end{itemize}
-
-
-                Eventually, assuming the second player has not won yet (and since the first player does not have a winning opportunity yet), this algorithm must stop. It follows that all of the empty squares are now in pairs. Since there are an even number of empty squares, it is the first player's turn. If the first player plays on one of any pair of empty squares that does not have Ss on both its sides, then the second player plays any letter in the other square of the pair. Then, we will only have pairs of empty squares with Ss on both sides remaining (since from the first moves we have constructed at least one, and no one has played between them otherwise the game will have ended), and the first player will have to play between them, so that the second player will win.  
+            \begin{itemize}
+        \item If he can complete SOS on his turn, he does so.
+        \item Otherwise, since there are an odd number of empty squares at the beginning of his turn, there must be either one empty square surrounded by two filled squares or one empty square surrounded by two empty squares. In both cases, the player places an O in that square. In both situations, it is easy to verify that the first player cannot win on the next turn.
+            \end{itemize}
+            Eventually, assuming the second player has not won yet (and since the first player does not have a winning opportunity yet), this algorithm must stop. It follows that all of the empty squares are now in pairs. Since there are an even number of empty squares, it is the first player's turn. If the first player plays on one of any pair of empty squares that does not have Ss on both its sides, then the second player plays any letter in the other square of the pair. Then, we will only have pairs of empty squares with Ss on both sides remaining (since from the first moves we have constructed at least one, and no one has played between them otherwise the game will have ended), and the first player will have to play between them, so that the second player will win.  
 
  
 

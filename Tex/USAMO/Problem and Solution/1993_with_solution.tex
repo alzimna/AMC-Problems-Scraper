@@ -18,7 +18,6 @@ First, note that $a, b > 1$, since otherwise $a^n-a$ or $b^{2n}-b$ would be nonp
  \begin{align*} (a-1)^2>0 \implies a^2+2a+1>4a \implies a^{2n}>4a \\  \implies a^{2n}-a>3a \implies f(a)> 3a = f(b) \implies a> b && \square \end{align*}
 
 
- 
 
 
 
@@ -64,7 +63,45 @@ Define $f(x)=x^n-x-1$ and $g(x)=x^{2n}-x-3a$. By Descarte's Rule of Signs, both 
  
 
 
- \textbf{Work} Let $X$, $Y$, $Z$, $W$ be the foot of the altitude from point $E$ of $\triangle AEB$, $\triangle BEC$, $\triangle CED$, 
+ \textbf{Work} Let $X$, $Y$, $Z$, $W$ be the foot of the altitude from point $E$ of $\triangle AEB$, $\triangle BEC$, $\triangle CED$, $\triangle DEA$.
+
+ Note that reflection of $E$ over all the points of $XYZW$ is similar to $XYZW$ with a scale of $2$ with center $E$. Thus, if $XYZW$ is cyclic, then the reflections are cyclic.
+
+ 
+$\angle EWA$ is right angle and so is $\angle EXA$. Thus, $EXAW$ is cyclic with $EA$ being the diameter of the circumcircle.
+
+ Follow that, $\angle EWX\cong\angle EAX\cong \angle EAB$ because they inscribe the same angle.
+
+ Similarly $\angle EWZ\cong \angle EDC$,  $\angle EYX\cong \angle EBA$,  $\angle EYZ\cong \angle ECD$.
+
+ 
+Futhermore, $m\angle XYZ+m\angle XWZ= m\angle EWX+m\angle EYX+m\angle EYZ+m\angle EWZ=$$360^\circ-m\angle CED-m\angle AEB=180^\circ$.
+
+ 
+Thus, $\angle XYZ$ and $\angle XWZ$ are supplementary and follows that, $XYZW$ is cyclic.
+
+ $\mathbb{Q.E.D}$
+
+
+
+
+\textbf{Solution 2}
+
+Suppose the reflection of E over AB is W, and similarly define X, Y, and Z. $\bigtriangleup BEA \cong \bigtriangleup BWA$ by reflection gives $BE = BW$ $\bigtriangleup BEC \cong \bigtriangleup BXC$ by reflection gives $BE = BX$These two tell us that E, W, and X belong to a circle with center B. Similarly, we can get that: E, Z, and W belong to a circle with center A, E, X, and Y belong to a circle with center C, E, Y, and Z belong to a circle with center D. 
+
+ To prove that W, X, Y, Z are concyclic, we want to prove $\angle XWZ + \angle XYZ = 180^o$ $\angle XWZ + \angle XYZ = \angle XWE + \angle EWZ + \angle XYE + \angle EYZ$ $= \frac{1}{2} \angle XBE + \frac{1}{2} \angle EAZ + \frac{1}{2} \angle XCE + \frac{1}{2} \angle EDZ$ $= \frac{1}{2} (\angle XBE + \angle XCE) + \frac{1}{2} (\angle EAZ + \angle EDZ)$
+$\angle AED = 90^o$ and $\angle AED = \angle AZD$ tells us that $\angle EAZ + \angle EDZ = 180^o$ Similarly, $\angle XBE + \angle XCE = 180^o$ Thus, $\angle XWZ + \angle XYZ = \frac{1}{2} \cdot 180^o + \frac{1}{2} \cdot 180^o = 180^o$, and we are done. -- Lucas.xue (someone pls help with a diagram)
+
+ 
+
+
+
+\textbf{Solution 3}
+
+E lies on the isoptic cubic of ABCD, so it has an isogonal conjugate in ABCD.
+
+ 
+
 
  
 
@@ -99,8 +136,7 @@ My claim: $c\ge2$
  For $n=0$, $f(1)=1$ (ii)
 
  Assume that it is true for $n-1$, then $f\left(\left(\frac{1}{2}\right)^{n}\right)+f\left(\left(\frac{1}{2}\right)^{n}\right)\le f\left(\left(\frac{1}{2}\right)^{n-1}\right)\le \left(\frac{1}{2}\right)^{n-1}$
-
- $f\left(\left(\frac{1}{2}\right)^{n}\right)\le \left(\frac{1}{2}\right)^{n}$
+$f\left(\left(\frac{1}{2}\right)^{n}\right)\le \left(\frac{1}{2}\right)^{n}$
 
  By principle of induction, \textbf{lemma 1 is proven}.
 
@@ -129,14 +165,11 @@ My claim: $c\ge2$
 
 
  $\lim_{x\rightarrow\frac{1}{2}^+} cx \ge \lim_{x\rightarrow\frac{1}{2}^+} g(x)=1$
-
- $\frac{1}{2}c>1$
-
- $c>2$ but approach to $2$ when $x$ is extremely close to $\frac{1}{2}$ from the right side.
+$\frac{1}{2}c>1$
+$c>2$ but approach to $2$ when $x$ is extremely close to $\frac{1}{2}$ from the right side.
 
  $\mathbb{Q.E.D}$
 
- 
 
 
 	\item (\textit{USAMO 1993}) Let $a$, $b$ be odd positive integers. Define the sequence $(f_n)$ by putting $f_1 = a$,
@@ -187,8 +220,7 @@ Thus, assume for contradiction, $\nexists n$, $f_n=f_{n-1}$.
  $f_{n+1}=\frac{f_n+f_{n-1}}{2^n}$ for some $n\in \mathbb{Z}^+$ such that $f_{n+1}$ is odd.
 
  $(2^n)f_{n+1}-f_n=f_{n-1}$
-
- $d(p+q)=f_{n-1}$, where $p$ and $q$ is another integer.
+$d(p+q)=f_{n-1}$, where $p$ and $q$ is another integer.
 
  Thus, $f_{n-1}$ is divisible by $d$ which contradicts with the assumption that $\gcd(f_n,f_{n-1})=1$.
 
@@ -201,7 +233,6 @@ Thus, assume for contradiction, $\nexists n$, $f_n=f_{n-1}$.
 
  $\mathbb{Q.E.D}$
 
- 
 
 
 	\item (\textit{USAMO 1993}) Let $a_0, a_1, a_2,\cdots$ be a sequence of positive real numbers satisfying $a_{i-1}a_{i+1}\le a^2_i$

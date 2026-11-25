@@ -24,8 +24,6 @@
  \[AC^2+BD^2+AD^2+BC^2\ge AB^2+CD^2.\]
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -60,7 +58,6 @@ $a^2+b^2$ is a function of $\theta$, so we take the derivative with respect to $
  \begin{align*} (p-q-2m^2)^2 &= 4m^2(2q-n^2) \\ p^2+q^2+4m^4-4m^2p+4m^2q-2pq &= 8m^2q-4m^2n^2 \\ p^2+q^2+4m^4-4m^2p-4m^2q-2pq &= -4m^2n^2 \\ p^2-2pq+q^2-4m^2(p+q) &= -4m^2(m^2+n^2) \\ \frac{(p-q)^2}{m^2} &= p+q-m^2-n^2\geq 0 \\ a^2+b^2+c^2+d^2 &\geq m^2+n^2 \\ \end{align*}
 
 
- 
 
 
 
@@ -111,7 +108,6 @@ Let $a$, $b$, $c$, $d$ correspond to the position vectors of points A, B, C, and
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1975}) If $P(x)$ denotes a polynomial of degree $n$ such that $P(k)=k/(k+1)$ for $k=0,1,2,\ldots,n$, determine $P(n+1)$.
@@ -149,7 +145,6 @@ Let $Q(x) = (x+1)P(x) - x$, and clearly, $Q(x)$ has a degree of $n+1$.
 
  If $n$ is even, this simplifies to $P(n+1) = \dfrac{n}{n+2}$. If $n$ is odd, this simplifies to $P(n+1) = 1$. $\Box$
 
- 
 
 
 
@@ -160,10 +155,8 @@ It is fairly natural to use Lagrange's Interpolation Formula on this problem:
  
  \begin{align*} P(n+1) &= \sum_{k=0}^n \frac{k}{k+1} \prod_{j \ne k} \frac{n+1-j}{k-j} \\ &= \sum_{k=0}^n \frac{k}{k+1} \cdot \frac{\frac{(n+1)!}{n+1-k}}{k(k-1)(k-2) \dots 1\cdot (-1)(-2) \dots (k-n)} \\ &= \sum_{k=0}^n \frac{k}{k+1} (-1)^{n-k}\cdot \frac{(n+1)!}{k!(n+1-k)!} \\ &= \sum_{k=0}^n (-1)^{n-k} \binom{n+1}{k} - \sum_{k=0}^n \frac{(n+1)!(-1)^{n-k}}{(k+1)!(n+1-k)!} \\ &= -\left(\sum_{k=0}^{n+1} (-1)^{n+1-k} \binom{n+1}{k} - 1\right) + \frac{1}{n+2} \cdot \sum_{k=0}^n (-1)^{n+1-k} \binom{n+2}{k+1} \\ &= 1 + \frac{1}{n+2} \left(\sum_{k=-1}^{n+1} (-1)^{n+2 - (k+1)} \binom{n+2}{k+1} - (-1)^{n+2} - 1\right) \\ &= \boxed{1 - \frac{(-1)^n + 1}{n+2}} \end{align*}
 through usage of the Binomial Theorem. $\square$
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
 
- <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_3&action=edit}{add it} to this page.</i>
-
- 
 
 
 	\item (\textit{USAMO 1975}) Two given circles intersect in two points $P$ and $Q$. Show how to construct a segment $AB$ passing through $P$ and terminating on the two circles such that $AP\cdot PB$ is a maximum.
@@ -176,8 +169,6 @@ through usage of the Binomial Theorem. $\square$
                     \end{figure}
                     
 
-
- 
 
 
 
@@ -193,8 +184,7 @@ A maximum $AP \cdot PB$ cannot be attained if $AB$ intersects segment $O_1O_2$ b
 
  
  \[AP \times PB = 2r \cos{\alpha} \times 2R \cos{\epsilon} = 4 rR \cos{\alpha} \cos{\epsilon}\]
-
- $AP\times PB$ is maximum when the product $\cos{\alpha} \cos{\epsilon}$ is a maximum.
+$AP\times PB$ is maximum when the product $\cos{\alpha} \cos{\epsilon}$ is a maximum.
 
  We have $\cos{\alpha} \cos{\epsilon}= \frac{1}{2} [\cos(\alpha +\epsilon) + \cos(\alpha -\epsilon)]$
 
@@ -210,7 +200,6 @@ A maximum $AP \cdot PB$ cannot be attained if $AB$ intersects segment $O_1O_2$ b
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_4&action=edit}{add it} to this page.</i>
 
- 
 
 
 	\item (\textit{USAMO 1975}) A deck of $n$ playing cards, which contains three aces, is shuffled at random (it is assumed that all possible card distributions are equally likely). The cards are then turned up one by one from the top until the second ace appears. Prove that the expected (average) number of cards to be turned up is $(n+1)/2$.
@@ -258,7 +247,6 @@ Like Solution 2, this solution is also a direct solution.
  
 <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1975\_USAMO\_Problems/Problem\_5&action=edit}{add it} to this page.</i>
 
- 
 
 
 \end{enumerate}

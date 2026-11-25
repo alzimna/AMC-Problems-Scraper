@@ -64,64 +64,50 @@ In base $16$, this equation would look like:
  To calculate each of these vectors we shall use the cross product as follows:
 
  $\overrightarrow{V_{CN}}=(\overrightarrow{C}\times\overrightarrow{N})\times\overrightarrow{C}$
-
- $\overrightarrow{V_{CN}}=(\left\langle cos(\theta),sin(\theta),0 \right\rangle\times\left\langle 0,0,1 \right\rangle)\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
-
- $\overrightarrow{V_{CN}}=\left\langle sin(\theta),-cos(\theta),0 \right\rangle\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
-
- $\overrightarrow{V_{CN}}=\left\langle 0,0,sin^{2}(\theta)+cos^{2}(\theta) \right\rangle$
-
- $\overrightarrow{V_{CN}}=\left\langle 0,0,1 \right\rangle$
+$\overrightarrow{V_{CN}}=(\left\langle cos(\theta),sin(\theta),0 \right\rangle\times\left\langle 0,0,1 \right\rangle)\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
+$\overrightarrow{V_{CN}}=\left\langle sin(\theta),-cos(\theta),0 \right\rangle\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
+$\overrightarrow{V_{CN}}=\left\langle 0,0,sin^{2}(\theta)+cos^{2}(\theta) \right\rangle$
+$\overrightarrow{V_{CN}}=\left\langle 0,0,1 \right\rangle$
 
  Vector $\overrightarrow{V_{CA}}$:
 
  $\overrightarrow{V_{CA}}=(\overrightarrow{C}\times\overrightarrow{A})\times\overrightarrow{C}$
-
- $\overrightarrow{V_{CA}}=(\left\langle cos(\theta),sin(\theta),0 \right\rangle\times\left\langle cos(\phi),0,sin(\phi) \right\rangle)\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
-
- $\overrightarrow{V_{CA}}=\left\langle sin(\theta)sin(\phi),-cos(\theta)sin(\phi),-sin(\theta)cos(\phi) \right\rangle\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
+$\overrightarrow{V_{CA}}=(\left\langle cos(\theta),sin(\theta),0 \right\rangle\times\left\langle cos(\phi),0,sin(\phi) \right\rangle)\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
+$\overrightarrow{V_{CA}}=\left\langle sin(\theta)sin(\phi),-cos(\theta)sin(\phi),-sin(\theta)cos(\phi) \right\rangle\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
 
  Since we're only interested in the $z$ component of the vector
 
  $\overrightarrow{V_{CA}}=\left\langle V_{CA_{x}},V_{CA_{y}},sin^{2}(\theta)sin(\phi)+cos^{2}(\theta)sin(\phi) \right\rangle$
-
- $\overrightarrow{V_{CA}}=\left\langle V_{CA_{x}},V_{CA_{y}},sin(\phi) \right\rangle$
+$\overrightarrow{V_{CA}}=\left\langle V_{CA_{x}},V_{CA_{y}},sin(\phi) \right\rangle$
 
  Vector $\overrightarrow{V_{CB}}$:
 
  $\overrightarrow{V_{CB}}=(\overrightarrow{C}\times\overrightarrow{b})\times\overrightarrow{C}$
-
- $\overrightarrow{V_{CB}}=(\left\langle cos(\theta),sin(\theta),0 \right\rangle\times\left\langle -cos(\phi),0,sin(\phi) \right\rangle)\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
-
- $\overrightarrow{V_{CB}}=\left\langle sin(\theta)sin(\phi),-cos(\theta)sin(\phi),sin(\theta)cos(\phi) \right\rangle\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
+$\overrightarrow{V_{CB}}=(\left\langle cos(\theta),sin(\theta),0 \right\rangle\times\left\langle -cos(\phi),0,sin(\phi) \right\rangle)\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
+$\overrightarrow{V_{CB}}=\left\langle sin(\theta)sin(\phi),-cos(\theta)sin(\phi),sin(\theta)cos(\phi) \right\rangle\times \left\langle cos(\theta),sin(\theta),0 \right\rangle$
 
  Since we're only interested in the $z$ component of the vector
 
  $\overrightarrow{V_{CB}}=\left\langle V_{CB_{x}},V_{CB_{y}},sin^{2}(\theta)sin(\phi)+cos^{2}(\theta)sin(\phi) \right\rangle$
-
- $\overrightarrow{V_{CB}}=\left\langle V_{CB_{x}},V_{CB_{y}},sin(\phi) \right\rangle$
+$\overrightarrow{V_{CB}}=\left\langle V_{CB_{x}},V_{CB_{y}},sin(\phi) \right\rangle$
 
  Since we're working with unit vectors, then we can use dot products on the vectors with their angles as follows:
 
  $cos(\angle ACN) = \overrightarrow{V_{CA}}\cdot \overrightarrow{V_{CN}}$
-
- $cos(\angle ACN) = \left\langle V_{CA_{x}},V_{CA_{y}},sin(\phi) \right\rangle \cdot \left\langle 0,0,1 \right\rangle = 0*V_{CA_{x}}+0*V_{CA_{y}}+1*sin(\phi)=sin(\phi)$
+$cos(\angle ACN) = \left\langle V_{CA_{x}},V_{CA_{y}},sin(\phi) \right\rangle \cdot \left\langle 0,0,1 \right\rangle = 0*V_{CA_{x}}+0*V_{CA_{y}}+1*sin(\phi)=sin(\phi)$
 
  Likewise,
 
  $cos(\angle BCN) = \overrightarrow{V_{CB}}\cdot \overrightarrow{V_{CN}}$
-
- $cos(\angle BCN) = \left\langle V_{CB_{x}},V_{CB_{y}},sin(\phi) \right\rangle \cdot \left\langle 0,0,1 \right\rangle = 0*V_{CB_{x}}+0*V_{CB_{y}}+1*sin(\phi)=sin(\phi)$
+$cos(\angle BCN) = \left\langle V_{CB_{x}},V_{CB_{y}},sin(\phi) \right\rangle \cdot \left\langle 0,0,1 \right\rangle = 0*V_{CB_{x}}+0*V_{CB_{y}}+1*sin(\phi)=sin(\phi)$
 
  Therefore,
 
  $cos(\angle ACN) = cos(\angle BCN)$ and thus $\angle ACN = \angle BCN$
 
- Since those angles are equal, it proves that the great circle through $C$ and $N$ bisects the $\angle ACB$ in the spherical triangle $ABC$ 
+ Since those angles are equal, it proves that the great circle through $C$ and $N$ bisects the $\angle ACB$ in the spherical triangle $ABC$
+<i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1979\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
 
- <i>Alternate solutions are always welcome. If you have a different, elegant solution to this problem, please \href{https://artofproblemsolving.com/wiki/index.php?title=1979\_USAMO\_Problems/Problem\_2&action=edit}{add it} to this page.</i>
-
- 
 
 
 	\item (\textit{USAMO 1979}) $a_1, a_2, \ldots, a_n$ is an arbitrary sequence of positive integers. A member of the sequence is picked at 
@@ -156,7 +142,6 @@ Perform the inversion with center $P$ and radius $\overline{PO}.$ Lines $OA,OB$ 
 
  Thus, it suffices to find the line through $P$ that maximizes the length of the  segment $\overline{Q'R'}.$ If $M,N$ are the midpoints of $PQ',PR',$ i.e. the projections of $O_1,O_2$ onto $QR,$ then from the right trapezoid $O_1O_2NM,$ we deduce that $O_1O_2 \ge MN = \frac{_1}{^2}Q'R'.$ Consequently, $2 \cdot O_1O_2$ is the greatest possible length of $Q'R',$ which obviously occurs when $O_1O_2NM$ is a rectangle. Hence, $Q,R$ are the intersections of $OA,OB$ with the perpendicular to $PO$ at $P.$
 
- 
 
 
 
@@ -191,6 +176,16 @@ Perform the inversion with center $P$ and radius $\overline{PO}.$ Lines $OA,OB$ 
 Suppose the problem statement does not hold. It is clear that $n \ge 4$. Choose the smallest $n$ such that $|A_i \cap A_j| \neq 1$ for each $\{i, j\}$.
 
  First, the $(n+1)$ subsets have $3(n+1)$ elements (some repeated) in conjunction. Because there are $n$ elements of $[n]$ total, by the Pigeonhole Principle one element of $[n]$, say $k$, is in at least four subsets. Let these subsets be $A_1, A_2, A_3, A_4$, without loss of generality, and let $A_1$ have elements $k, m, n$. Then without loss of generality let $A_2$ have elements $k, m, p$. If set $A_3$ has elements $k, n, p$, then simple casework shows that it is impossible to create $A_4$ without having $A_4$ intersect one of $A_1, A_2, A_3$ at exactly one element. Thus assume $A_3$ has elements $k, m, q$. Then $A_4$ has elements $k, m, r$. Consider each remaining set $A_i$. Then $A_i$ either contains both $k, m$ or none of them. Because there are $(n-2)$ distinct elements of $[n]$ apart from $k, m$, at most $(n-2)$ subsets can contain $k, m$. Then at least 3 subsets do not contain $k, m$, and it is easy to see that they are disjoint from those subsets that do contain $k, m$. Thus, we can partition $[n]$ into two subsets, one of which is the union of the $t$ subsets that do contain $k, m$, and the other is the union of the $(n+1)-t$ subsets that do not contain $k, m$. Because the latter subset has $(n-t-2) < (n+1)-t - 1$ elements, we may use infinite descent to contradict the minimality of $n$. The proof is complete.
+
+ 
+
+
+
+\textbf{Solution 2}
+
+Let $S$ be a collection of distinct subsets of $[n]$ such that for all $A_i, A_j \in S, i \neq j$, $|A_i| = 3$ and $|A_i \cap A_j| \neq 1$ (in other words, either $|A_i \cap A_j| = 2$ or $|A_i \cap A_j| = 0$). We will find an explicit solution for the maximal size of $S$, which will be strictly less than $n+1$.
+
+ Let's define the relation $\sim$ on $S$ as $A_i \sim A_j \iff |A_i \cap A_j| \ge 2$. Notice that $A_i \not\sim A_j \iff |A_i \cap A_j| = 0$. Suppose $A_i \sim A_j$. Notice that if $A_k$ shares 2 elements with $A_i$, at least one of those elements must also be in $A_j$, and thus $A_k$ must share 2 elements with $A_j$ as well. so either $|A_i \cap A_k| = |A_j \cap A_k| = 2$ or $|A_i \cap A_k| = |A_j \cap A_k| = 0$. Thus $A_k \sim A_i \sim A_j \implies A_k \sim A_j$, so $\sim$ is transitive. Observe that $\sim$ also satisfies reflexivity and symmetry. We can think of $\sim$ as an equivalence relation on $S$, and thus its equivalence classes partition $S$. Let $C_1,...,C_p$ be the equivalence classes of $S$ under $\sim$. Since no elements are shared between subsets in different equivalence classes, the unions $\bigcup C_1,..., \bigcup C_p$ are disjoint. Suppose for some $i$ that $|\bigcup C_i| = m$. For $m\neq 4$, the maximal number of distinct subsets in $C_i$ is $m-2$, as you first choose two elements which will be shared across all the subsets in $C_i$ and then one distinct element for each of those subsets. In the special case of $m=4$, the maximal number of subsets in $C_i$ is 3 because you can use a triangular structure like $\{1,2,3\}, \{1,2,4\}, \{2,3,4\}$, but it is fairly obvious that you cannot use a similar strategy to get more than $m-2$ for other values of $m$. In any case, considering that $|\bigcup C_1| + ... + |\bigcup C_p| \leq n$, the best strategy to maximize the overall number of subsets is to have all the subsets in a single equivalence class. Thus, the maximal size of $S$ is $n-2$, except for when $n=4$ in which case it is $n-1$.
 
  
 

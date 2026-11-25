@@ -7,8 +7,6 @@
  \[2(ab+bc+ca)+4\min(a^2,b^2,c^2)\ge a^2+b^2+c^2.\]
 
 
- 
-
 
 
 \textbf{Solution 1}
@@ -61,8 +59,6 @@ WLOG, let $a \le b$ and $a \le c$ and add $2(ab+bc+ca)$ to both sides to make th
 for all $x,y,z >0$ with $xyz =1.$
 
 
- 
-
 
 
 \textbf{Solution}
@@ -107,8 +103,6 @@ We now know that $h(x)=kx$ for all $0<x<\frac13$. Since $h(-x)=-h(x)$ for $|x|<\
  For a given integer $n\ge 2,$ let $\{a_1,a_2,\ldots,a_m\}$ be the set of positive integers less than $n$ that are relatively prime to $n.$ Prove that if every prime that divides $m$ also divides $n,$ then $a_1^k+a_2^k + \dots + a_m^k$ is divisible by $m$ for every positive integer $k.$
 
 
- 
-
 
 
 \textbf{Solution (NO FORMATTING)}
@@ -132,8 +126,7 @@ We now know that $h(x)=kx$ for all $0<x<\frac13$. Since $h(-x)=-h(x)$ for $|x|<\
 \textbf{Solution}
 
 $\textbf{Lemma: }$ For fixed $i\neq j,$ where $i, j\in\{1, 2, ..., p\},$ the statement $a_i + ik\equiv a_j + jk\text{ (mod } p\text{)}$ holds for exactly one $k\in {1, 2, ..., p}.$
-
- $\textbf{Proof: }$ Notice that the left side minus the right side is congruent to $(a_i - a_j) + (i - j)k$ modulo $p.$ For this difference to equal $0,$ there is a unique solution for $k$ modulo $p$ given by $k\equiv (a_j - a_i)(i - j)^{-1}\text{ (mod } p\text{)},$ where we have used the fact that every nonzero residue modulo $p$ has a unique multiplicative inverse. Therefore, there is exactly one $k\in {1, 2, ..., p}$ that satisfies $a_i + ik\equiv a_j + jk\text{ (mod } p\text{)}$ for any fixed $i\neq j. \textbf{ End Lemma}$
+$\textbf{Proof: }$ Notice that the left side minus the right side is congruent to $(a_i - a_j) + (i - j)k$ modulo $p.$ For this difference to equal $0,$ there is a unique solution for $k$ modulo $p$ given by $k\equiv (a_j - a_i)(i - j)^{-1}\text{ (mod } p\text{)},$ where we have used the fact that every nonzero residue modulo $p$ has a unique multiplicative inverse. Therefore, there is exactly one $k\in {1, 2, ..., p}$ that satisfies $a_i + ik\equiv a_j + jk\text{ (mod } p\text{)}$ for any fixed $i\neq j. \textbf{ End Lemma}$
 
  Suppose that you have $p$ graphs $G_1, G_2, ..., G_p,$ and graph $G_k$ consists of the vertices $(i, k)$ for all $1\le i\le p.$ Within any graph $G_k,$ vertices $(i_1, k)$ and $(i_2, k)$ are connected by an edge if and only if $a_{i_1} + i_1k\equiv a_{i_2} + i_2k\text{ (mod } p\text{)}.$ Notice that the number of disconnected components of any graph $G_k$ equals the number of distinct remainders when divided by $p$ given by the numbers $a_1 + k, a_2 + 2k, ..., a_p + pk.$
 
@@ -141,7 +134,6 @@ $\textbf{Lemma: }$ For fixed $i\neq j,$ where $i, j\in\{1, 2, ..., p\},$ the sta
 
  $\textbf{Note: This is the same problem as 2018 USAJMO Problem 5.}$
 
- 
 
 
 
@@ -172,8 +164,6 @@ So it is clear that $\exists k$ s.t $x_k \ge \frac{p}{2}$.
  In convex cyclic quadrilateral $ABCD,$ we know that lines $AC$ and $BD$ intersect at $E,$ lines $AB$ and $CD$ intersect at $F,$ and lines $BC$ and $DA$ intersect at $G.$ Suppose that the circumcircle of $\triangle ABE$ intersects line $CB$ at $B$ and $P$, and the circumcircle of $\triangle ADE$ intersects line $CD$ at $D$ and $Q$, where $C,B,P,G$ and $C,Q,D,F$ are collinear in that order. Prove that if lines $FP$ and $GQ$ intersect at $M$, then $\angle MAC = 90^{\circ}.$
 
 
- 
-
 
 
 \textbf{Solution}
@@ -185,7 +175,6 @@ So it is clear that $\exists k$ s.t $x_k \ge \frac{p}{2}$.
                     \end{figure}
                     
 
- 
  \begin{align*} &\mathrel{\phantom{=}}\angle DEQ+\angle AED+\angle AEP\\ &=\angle DAQ+\angle AQD+\angle AEP\\ &=180-\angle ADC+\angle AEP\\ &=180-\angle ADC+\angle ABP\\ &=\angle ABP+\angle ABC\\ &=180 \end{align*}
 so $P,E,Q$ are collinear. Furthermore, note that $DQBP$ is cyclic because:
  \[\angle EDQ = \angle BAE = BPE.\]Notice that since $A$ is the intersection of $(EDQ)$ and $(BPE)$, it is the Miquel point of $DQBP$. 
@@ -200,8 +189,6 @@ so $P,E,Q$ are collinear. Furthermore, note that $DQBP$ is cyclic because:
 
  Let $a_n$ be the number of permutations $(x_1, x_2, \dots, x_n)$ of the numbers $(1,2,\dots, n)$ such that the $n$ ratios $\frac{x_k}{k}$ for $1\le k\le n$ are all distinct. Prove that $a_n$ is odd for all $n\ge 1.$
 
-
- 
 
 
 
@@ -220,7 +207,6 @@ Case 1:  $n$ is odd.  If $n$ is odd then there must be exactly one $k$ such that
 
  Case 2:  $n$ is even.  If $n$ is even then can be no $k$ so that $x_k=k$, or else there must be at least two distinct numbers $k$ and $j$ so that $x_k=k$ and $x_j=j$ which violates the given conditions.  Denote a pair of numbers that are swapped to arrive at the final permutation as the pair $(a,b)$.  Then if a permutation yields an invalid arrangement there must be two pairs $(a,b)$ and $(c,d)$ such that $\frac{a^2}{b^2} = \frac{c^2}{d^2}$.  But notice that the two pairs $(a,c)$ and $(b,d)$ will also result in an invalid arrangement. So, there must be an even number of invalid arrangements (\textbf{Note: This proof doesn't work, as no specific pairing of invalid arrangements is constructed. Indeed, when three pairs all with the same fraction are present, this doesn't work.}), meaning the parity we desire is just the number of ways to separate $n$ objects into $\frac n2$ pairs!  However, this is quite simply just $(n-1)(n-3)(n-5)\cdots(3)(1)$, which is clearly the product of odd numbers.  So we conclude that there are an odd number of valid permutations $(x_1,x_2,x_3,\dots,x_n)$.  $\blacksquare$
 
- 
 
 
 \end{enumerate}

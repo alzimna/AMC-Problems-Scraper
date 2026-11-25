@@ -282,18 +282,14 @@ Remark: I think this is a very cool NT problem.
 
 
  
-                \begin{itemize}
-                    \item no matter how Rowan permutes the rows of the coloring, Colin can then permute the columns to restore the original grid coloring; and
-                \end{itemize}
-
-
-                
-                \begin{itemize}
-                    \item no matter how Colin permutes the columns of the coloring, Rowan can then permute the rows to restore the original grid coloring;
-                \end{itemize}
-
-
-                In terms of $n$, how many orderly colorings are there?
+            \begin{itemize}
+        \item no matter how Rowan permutes the rows of the coloring, Colin can then permute the columns to restore the original grid coloring; and
+            \end{itemize}
+            
+            \begin{itemize}
+        \item no matter how Colin permutes the columns of the coloring, Rowan can then permute the rows to restore the original grid coloring;
+            \end{itemize}
+            In terms of $n$, how many orderly colorings are there?
 
 
  
@@ -302,102 +298,15 @@ Remark: I think this is a very cool NT problem.
 
 \textbf{Solution 1}
 
-We focus on the leftmost column for simplicity. Let $m$ be the number of red squares in this column. We then have five cases:
+We focus on the leftmost column for simplicity. Let $m$ be the number of red squares in this column, and by symmetry, we may assume that $m\le \frac{n}{2}$. We then have three cases:
 
- 
-1. $m=1$
+ \textbf{Case 1.} $m=1$. When Rowan permutes the rows of the coloring, we consider only the first column, which by the above contains $m=1$ red colors, so there are ${n \choose 1}=n$ ways to permute the first column’s rows. Thus every other column will have to contain one different permutation of the first column; otherwise, there will be at least one permutation of which there is no corresponding column. Furthermore, each permutation will be different, so each row will contain one and only one red square, which also fulfills the case of if Colin permutes the coloring first. Thus there are $n\cdot (n-1)\cdot(n-2)\cdot\cdot\cdot2\cdot1=n!$ different colorings for this case (the same as choosing squares such as no square is in the same row or column as any other square).
 
- When Rowan permutes the rows of the coloring, we consider only the first column, which by the above contains $m=1$ red colors, so there are ${n \choose 1}=n$ ways to permute the first column’s rows. Thus every other column will have to contain one different permutation of the first column; otherwise, there will be at least one permutation of which there is no corresponding column.
+ \textbf{Case 2.} $m=0$. Since we have an entirely blue column, we are unable to have a column with $1$ red square only as doing so would leave one permutation that is not covered by at least one column (that space is being taken for the blank column). We are also unable to have a completely blue column as doing so would allow for Colin to shift the columns and in doing so fail for Rowan to shift back the columns. We also cannot have a column with any other number of red squares other than $0$ as will be shown below, so there is $1$ case here in which the entire coloring is red.
 
- 
-Furthermore, each permutation will be different, so each row will contain one and only one red square, which also fulfills the case of if Colin permutes the coloring first. Thus there are $n\cdot (n-1)\cdot(n-2)\cdot\cdot\cdot2\cdot1=n!$ different colorings for this case (the same as choosing squares such as no square is in the same row or column as any other square).
+ \textbf{Case 3.} $m>1$. This is the final case and is equivalent to permuting for ${n \choose m}$ different ways. We must prove that this is greater than $n$ to show that the columns are not able to contain every possible permutation of this column for all values of $n$ such that $n>3$ (when $n=3$, there is no such positive integer $m$ that satisfies the conditions). But this follows since $\binom{n}{m}$ increases as $m$ increases from $0$ to $\left\lfloor \frac{n}{2}\right\rfloor$, so $\binom{n}{m}>\binom{n}{1}=n$ and we are done. As a result, there are always more permutations of the columns than the number of columns itself, so there will always exist a permutation of the column such that there are no corresponding original columns of which to match with. Thus there are no solutions for this case.
 
- 
-
-
- 2. $m=n-1$
-
- This is essentially the same as case 1 except for the coloring; now there is one blue square and the rest are red squares. Thus there are also $n!$ different colorings for this case.
-
- 
-
-
- 3. $m=0$
-
- Since we have an entirely blue column, we are unable to have a column with $1$ red square only as doing so would leave one permutation that is not covered by at least one column (that space is being taken for the blank column). We are also unable to have a completely blue column as doing so would allow for Colin to shift the columns and in doing so fail for Rowan to shift back the columns. We also cannot have a column with any other number of red squares other than $0$ as will be shown below, so there is $1$ case here in which the entire coloring is red.
-
- 
-
-
- 4. $m=n$
-
- This is the same is an entire blue column, and, similar to above, we have $1$ coloring.
-
- 
-
-
- 5. $1<m<n-1$
-
- This is the final case and is equivalent to permuting for ${n \choose m}$ different ways. We must prove that this is greater than $n$ to show that the columns are not able to contain every possible permutation of this column for all values of $n$ such that $n>3$ (when $n=3$, there is no such positive integer $m$ that satisfies the conditions). Note that if we have any column with a different number of red squares, it is an unattainable column and is thus not optimal.
-
- 
-Lemma: Given that $m$ and $n$ are positive integers such that $1<m<n-1$ and $n>3$, it is true for all $m$ and $n$ that ${n \choose m}>n$.
-
- Proof: Assume that $m<\frac{n-1}{2}$.
-
- $\Leftrightarrow$ $m+1<n-m$
-
- $\Leftrightarrow$ $(m+1)!(n-m-1)!<m!(n-m)!$
-
- $\Leftrightarrow$ $\frac{n!}{m!(n-m)!}<\frac{n!}{(m+1)!(n-m-1)!}$
-
- $\Leftrightarrow$ ${n \choose m}<{n \choose m+1}$
-
- Similarly, we can prove that ${n \choose m}>{n \choose m+1}$ for $m>\frac{n-1}{2}$.
-
- Now we split our proof into two cases.
-
- Case 1: $n$ is even.
-
- The largest integer less than $\frac{n-1}{2}$ is $\frac{n}{2}-1$, so we know that:
-
- ${n \choose \frac{n}{2}}>{n \choose \frac{n}{2}-1}>\cdot\cdot\cdot>{n \choose 2}$
-
- by induction. On the other hand, the smallest integer greater than $\frac{n-1}{2}$ is $\frac{n}{2}$, so we know that:
-
- ${n \choose \frac{n}{2}}>{n \choose \frac{n}{2}+1}>\cdot\cdot\cdot>{n \choose n-2}$
-
- also by induction. Thus out of the given range for $m$ we know that ${n \choose 2}$ and ${n \choose n-2}$ are the minimum values, and all that is left is to prove that they are both greater than $n$. Furthermore, since ${n \choose 2}={n \choose n-2}$, we only have to prove that ${n \choose 2}>n$.
-
- We start with the given: $n>3$
-
- $\Leftrightarrow$ $\frac{n-1}{2}>1$
-
- $\Leftrightarrow$ $\frac{n(n-1)}{2}>n$
-
- $\Leftrightarrow$ $\frac{n!}{2!(n-2)!}>n$
-
- $\Leftrightarrow$ ${n \choose 2}>n$
-
- Thus we have proven the inequality for all even $n$.
-
- Case 2: $n$ is odd.
-
- The greatest integer less than $\frac{n-1}{2}$ is $\frac{n-3}{2}$, so we know that:
-
- ${n \choose \frac{n-1}{2}}>{n \choose \frac{n-3}{2}}>\cdot\cdot\cdot>{n \choose 2}$
-
- by induction. On the other hand, the smallest integer greater than $\frac{n-1}{2}$ is $\frac{n+1}{2}$, so we know that:
-
- ${n \choose \frac{n+1}{2}}>{n \choose \frac{n+3}{2}}>\cdot\cdot\cdot>{n \choose n-2}$
-
- also by induction. Since ${n \choose \frac{n+1}{2}}={n \choose \frac{n-1}{2}}$, we know that once again, ${n \choose n-2}={n \choose 2}$ is the minimum of the given range for $m$, and the same proof applies. Thus, the inequality holds true for odd and in turn all positive integers $n>3$.
-
- 
-As a result, due to our lemma, there are always more permutations of the columns than the number of columns itself, so there will always exist a permutation of the column such that there are no corresponding original columns of which to match with. Thus there are no solutions for this case.
-
- 
-In conclusion, there are a total of $2\cdot n!+2$ different colorings for which the above apply.
+ Note that the case of $m=\frac{n}{2}$ is never attained since $m>1$ fails. As a result, we account for symmetry by doubling the total, so there are a total of $\boxed{2\cdot n!+2}$ orderly colorings.
 
  
 
@@ -429,24 +338,17 @@ Lemma 3: If a permutation satisfies $m=0,1,n-1,n$ and satisfies lemma $1,$ it is
 
  
 Finally, there is $1$ coloring for the $m=0$ case, and $n!$ ways to permute the red squares to see which column values are assigned to the rows in the $m=1$ case. There are similarly $n!$ colorings for the $m=n-1$ case, and $1$ coloring for the $m=0$ case. Thus, the answer is $\boxed{2n!+2}.$
-
- 
-
-
- $\text{*}$ Specifically, $\frac{C(n,k)}{C(n,k-1)}=\frac{n-k+1}{k-1}$ which is greater than $1$ for $2\le n \le \lfloor0.5n\rfloor.$
+$\text{*}$ Specifically, $\frac{C(n,k)}{C(n,k-1)}=\frac{n-k+1}{k-1}$ which is greater than $1$ for $2\le n \le \lfloor0.5n\rfloor.$
 
  \textbf{Another way to prove that $\binom{n}{m}>n$} Suppose we have $2\le{m}\le\lfloor{\frac{n}{2}}\rfloor$. Our goal is to show that
 
  
  \[\binom{n}{m}>n\]
 
- 
  \[\frac{n}{m}\cdot\frac{n-1}{m-1}\cdot\frac{n-2}{m-2}\cdots\frac{n-m+1}{1}>n\]
 
- 
  \[\frac{1}{m}\cdot\frac{n-1}{m-1}\cdot\frac{n-2}{m-2}\cdots\frac{n-m+1}{1}>1\]
 
- 
  \[\frac{n-1}{m-1}\cdot\frac{n-2}{m-2}\cdots\frac{n-m+1}{m}>1\].
 
  Each of the above fractions is greater than one because $2\le{m}\le\lfloor{\frac{n}{2}}\rfloor$, so we are done.
@@ -508,10 +410,8 @@ Plugging in $y$ as $0:$\begin{equation}f(x^2)=f(f(x))+f(0) \text{ } (1)\end{equa
 Let our equation be $P(x,y)$. We start by plugging in some initial values:
 
  $y=x^2:\; f(0)+2x^2f(x) = f(f(x))+f(x^2) \;\;\;\; (1)$
-
- $y=0:\; f(x^2) = f(f(x))+f(0) \;\;\;\; (2)$
-
- $x=0:\; f(-y) + 2yf(0) = f(f(0)) + f(y) \;\;\;\; (3)$
+$y=0:\; f(x^2) = f(f(x))+f(0) \;\;\;\; (2)$
+$x=0:\; f(-y) + 2yf(0) = f(f(0)) + f(y) \;\;\;\; (3)$
 
  Plugging in $x=1$ into $(3)$ gives
  \[f(1) = f(f(1)) + f(0) \;\;\;\; (4).\]From $(1)$, we get
@@ -611,12 +511,10 @@ We will show $x^2 f(x) = f(f(x))$. First, the original equation is
  $f(x^2 - y) + 2yf(x) = f(f(x)) + f(y)$
 
  We will make the substitution $y = x^2 - 1$
-
- $f(1) + 2(x^2 - 1)f(x) = f(f(x)) + f(x^2 - 1)$
+$f(1) + 2(x^2 - 1)f(x) = f(f(x)) + f(x^2 - 1)$
 
  We will now take the original equation again and substitute $y = 1$
-
- $f(x^2 - 1) + 2f(x) = f(f(x)) + f(1) \implies f(x^2 - 1) = f(f(x)) + f(1) - 2f(x)$
+$f(x^2 - 1) + 2f(x) = f(f(x)) + f(1) \implies f(x^2 - 1) = f(f(x)) + f(1) - 2f(x)$
 
  Now we will substitute this new representation of $f(x^2 - 1)$ into our equation to get
 
@@ -627,8 +525,7 @@ We will show $x^2 f(x) = f(f(x))$. First, the original equation is
  $f(x^2 - y) + 2yf(x) = f(f(x)) + f(y) \implies f(x^2 - y) + 2yf(x) = x^2 f(x) + f(y) \implies f(x^2 - y) - f(y) = f(x)(x^2 - 2y)$. 
 
  Now we will make the substitution $x = y$
-
- $f(x^2 - x) - f(x) = f(x)(x^2 - 2x) \implies f(x^2 - x) = f(x)(x^2 - 2x + 1) \implies f(x(x - 1)) = f(x)(x - 1)^2$. This immediately raises a conjecture. If we have two real numbers $a, b$ where $f$ is defined at these two real numbers, then
+$f(x^2 - x) - f(x) = f(x)(x^2 - 2x) \implies f(x^2 - x) = f(x)(x^2 - 2x + 1) \implies f(x(x - 1)) = f(x)(x - 1)^2$. This immediately raises a conjecture. If we have two real numbers $a, b$ where $f$ is defined at these two real numbers, then
 
  $f(ab) = f(a) b^2$ 
 
@@ -674,7 +571,6 @@ We will show $x^2 f(x) = f(f(x))$. First, the original equation is
 
  $f(x) = c \implies c + 2yc = x^2 c + c \implies 2yc = x^2 c \implies c = 0$ is a solution. Hence $f(x) = 0$ is also a solution and so $f(x) = x^2, -x^2, 0$
 
- 
 
 
 
@@ -685,7 +581,6 @@ Denote $P(x,y)$ as the problem statement's assertion. Denoting $a=f(0)$, We have
 Since the choice of $x,y$ was arbitrary, we find that $f(x)/x^2$ is constant for all $x$, so $f(x)=cx^2$ for some constant $c$. Plugging into the original functional equation, we have \begin{align*}c(x^2-y)^2+2y(cx^2)&=c(cx^2)^2+cy^2\\\iff cx^4-2cx^2y+cy^2+2cx^2y&=c^3x^4+cy^2\\\iff (c-c^3)x^4&=0\end{align*}
 for all $x,y$. Thus, it must be that $c\in \{-1,0,1\}$, so the only valid solutions are $\boxed{f(x)=0, \pm x^2}$. $\blacksquare$
 
- 
 
 
 	\item (\textit{USAJMO 2024}) Point $D$ is selected inside acute triangle $ABC$ so that $\angle DAC=\angle ACB$ and $\angle BDC=90^\circ+\angle BAC$. Point $E$ is chosen on ray $BD$ so that $AE=EC$. Let $M$ be the midpoint of $BC$. Show that line $AB$ is tangent to the circumcircle of triangle $BEM$.
